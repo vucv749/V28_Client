@@ -5,15 +5,15 @@ local g_Dahua_Incom_RewardShow_round = 1
 local g_Dahua_Incom_RewardShow_id = {0,0,0,0,0,0,0,0,0,0}
 local g_Dahua_Incom_RewardShow_type = 1
 local g_Dahua_Incom_isanimate = 0 
-local g_Dahua_Incom_RewardShow_ButtonCDTime = 1; --按钮冷却时间
+local g_Dahua_Incom_RewardShow_ButtonCDTime = 1; --??????
 local g_Dahua_Incom_RewardShow_ButtonLastTime = 0;
 local g_Dahua_Incom_RewardShow_YinJiAnimateTick = 0
 --=========
 -- PreLoad()
 --=========
 function Dahua_Incom_RewardShow_PreLoad()
-	this:RegisterEvent("UI_COMMAND", true)--打开or刷新界面
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--进场景关闭界面
+	this:RegisterEvent("UI_COMMAND", true)--??or????
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
 	this:RegisterEvent("ADJEST_UI_POS",false) 
 end
@@ -153,7 +153,7 @@ function Dahua_Incom_RewardShow_Updata()
         Dahua_Incom_RewardShow_Page10:Show()
     end 
     Dahua_Incom_RewardShow_ClientBk:SetProperty("Alpha",0)
-    SetTimer("Dahua_Incom_RewardShow","Dahua_Incom_RewardShow_AlphaAnimateTimer()", 50)--计时器
+    SetTimer("Dahua_Incom_RewardShow","Dahua_Incom_RewardShow_AlphaAnimateTimer()", 50)--???
     
 end 
 
@@ -161,7 +161,7 @@ end
 function Dahua_Incom_RewardShow_ChouJiang_Clicked(type)
     local curTime = OSAPI:GetTickCount();
 	if ( curTime - g_Dahua_Incom_RewardShow_ButtonLastTime < g_Dahua_Incom_RewardShow_ButtonCDTime * 1000) then 
-   	    PushDebugMessage("#{DHLS_240611_33}"); --不可连续点击，请稍等片刻后再点击
+   	    PushDebugMessage("#{DHLS_240611_33}"); --??????,?????????
 		return
 	end
     g_Dahua_Incom_RewardShow_ButtonLastTime = curTime;

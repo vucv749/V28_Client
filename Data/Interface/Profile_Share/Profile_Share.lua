@@ -7,9 +7,9 @@ local g_Distance = 1
 local g_Distance_Ori = 2
 local g_Distance_Max = 4
 
-local g_CameraHeight = 1     --摄影机高度
-local g_CameraDistance = 2   --摄影机距离
-local g_CameraPitch = 3      --摄影机角度
+local g_CameraHeight = 1     --?????
+local g_CameraDistance = 2   --?????
+local g_CameraPitch = 3      --?????
 local g_CameraPosition =
 {
 	--女性相关位置
@@ -28,7 +28,7 @@ local g_CameraPosition =
 	},
 }
 
-local g_Profile_Share_ViewMode = 0 --0是角色 1是上坐骑
+local g_Profile_Share_ViewMode = 0 --0??? 1????
 
 local g_Profile_Share_Button = {}
 
@@ -84,8 +84,8 @@ function Profile_Share_OnEvent(event)
 		return
 	end
 	
-	if event == "OPEN_STALL_SALE"			-- 开始摆摊，还原试穿
-		or event == "PROGRESSBAR_SHOW"		-- 读进度条中，还原试穿
+	if event == "OPEN_STALL_SALE"			-- ????,????
+		or event == "PROGRESSBAR_SHOW"		-- ?????,????
 		then
 			Profile_Share_Close()	
 		return
@@ -281,7 +281,7 @@ function Profile_Share_On_ResetPos()
 	
 end
 
---关闭按钮
+--关睜按钮
 function Profile_Share_Close()	
 		
 	this:Hide()

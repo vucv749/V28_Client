@@ -54,7 +54,7 @@ function PS_Message_OnEvent(event)
 		if(tonumber(arg0) ~= objCared) then
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			this:Hide();
 
@@ -75,10 +75,10 @@ function PS_Message_UpdateFrame()
 	
 	
 	if( g_szMseeageType == "exchange") then
-		PS_Message_DragTitle:SetText("½»Ò×¼ÇÂ¼");
+		PS_Message_DragTitle:SetText("Ghi chép giao d¸ch");
 		g_AllPage = math.floor((PlayerShop:GetMessageNum("exchange")-1)/MESSAGE_EACH_PAGE)+1;
 	else
-		PS_Message_DragTitle:SetText("¹ÜÀí¼ÇÂ¼");
+		PS_Message_DragTitle:SetText("Ghi chép quän lý");
 		g_AllPage = math.floor((PlayerShop:GetMessageNum("manage")-1)/MESSAGE_EACH_PAGE)+1;
 	end
 	
@@ -131,7 +131,7 @@ function PS_Message_Next_Clicked()
 end
 
 --===============================================
--- ¹Ø±Õ
+-- ¹Ø± 
 --===============================================
 function PS_Message_Close1_Clicked()
 

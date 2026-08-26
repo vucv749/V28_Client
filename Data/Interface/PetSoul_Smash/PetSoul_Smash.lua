@@ -24,14 +24,14 @@ function PetSoul_Smash_PreLoad()
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
 
-    this:RegisterEvent("OBJECT_CARED_EVENT");           --某逻辑对象的某些发生改变，用于距离NPC够远则关闭界面
+    this:RegisterEvent("OBJECT_CARED_EVENT");           --????????????,????NPC???????
 
-    this:RegisterEvent("UNIT_MONEY")					--金钱变化
-	this:RegisterEvent("MONEYJZ_CHANGE")			    --交子变化
+    this:RegisterEvent("UNIT_MONEY")					--????
+	this:RegisterEvent("MONEYJZ_CHANGE")			    --????
 	
-	this:RegisterEvent("PETSOUL_SMASH_PUTIN_ITEM"); --放入物品
-	this:RegisterEvent("PACKAGE_ITEM_CHANGED")			--背包中物品改变
-	this:RegisterEvent("RESUME_ENCHASE_GEM"); --拖拽回背包
+	this:RegisterEvent("PETSOUL_SMASH_PUTIN_ITEM"); --????
+	this:RegisterEvent("PACKAGE_ITEM_CHANGED")			--???????
+	this:RegisterEvent("RESUME_ENCHASE_GEM"); --?????
 end
 
 function PetSoul_Smash_OnLoad()
@@ -44,15 +44,15 @@ function PetSoul_Smash_OnEvent(event)
 	if ( event == "UI_COMMAND" and tonumber(arg0) == 80012706 ) then
 		local bIsShow = Get_XParam_INT(0);
 		if bIsShow == 1 then
-			this:Show()--打开界面
-            OpenWindow("Packet")--打开背包
+			this:Show()--????
+            OpenWindow("Packet")--????
         end
 
         if this:IsVisible() then
 			g_PetSoul_Smash_TargetId = Get_XParam_INT( 1 )
             PetSoul_Smash_BeginCareObject( g_PetSoul_Smash_TargetId )
             PetSoul_Smash_FrameInit() 
-            PetSoul_Smash_MoneyUpdate()--金钱交子 数量刷新
+            PetSoul_Smash_MoneyUpdate()--???? ????
 		end
 
 		return
@@ -63,7 +63,7 @@ function PetSoul_Smash_OnEvent(event)
 
 		return
 	elseif( event == "RESUME_ENCHASE_GEM" and this:IsVisible() ) then
-		if(arg0~=nil) then---xml里配置的是W31
+		if(arg0~=nil) then---xml?????W31
 			PetSoul_Smash_Resume_Equip()
 		end
 
@@ -77,7 +77,7 @@ function PetSoul_Smash_OnEvent(event)
 			PetSoul_Smash_ItemUpdate(-1)
 		end 
 		
-		PetSoul_Smash_MoneyUpdate()--界面钱数刷新
+		PetSoul_Smash_MoneyUpdate()--??????
 
 		return
     elseif event == "OBJECT_CARED_EVENT" and this : IsVisible() then
@@ -85,14 +85,14 @@ function PetSoul_Smash_OnEvent(event)
 			return;
 		end
 		
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if arg1 == "distance" and tonumber( arg2 ) > MAX_OBJ_DISTANCE or arg1 == "destroy" then
 			PetSoul_Smash_Close()
 		end
 
         return
     elseif event == "UNIT_MONEY" or event == "MONEYJZ_CHANGE" then
-        PetSoul_Smash_MoneyUpdate()--金钱交子 数量刷新
+        PetSoul_Smash_MoneyUpdate()--???? ????
         return
     elseif event == "ADJEST_UI_POS" or event == "VIEW_RESOLUTION_CHANGED" then
 		PetSoul_Smash_On_ResetPos()
@@ -124,11 +124,11 @@ end
 
 function PetSoul_Smash_ItemUpdate(bagPos)
 
-	--bagPos为-1，表示要初始化界面  关闭界面 右键取出物品时调用
+	--bagPos为-1，表示要初始化界面  关睜界面 右键取出物品时调用
 	if bagPos == -1 then
 		--确认按钮不能用
 		PetSoul_Smash_OK:Disable()
-		--物品置空
+		--物品置繝
 		PetSoul_Smash_Object:SetActionItem(-1);
 		if g_PetSoul_Smash_ItemBagIndex ~= -1 then
 			LifeAbility : Lock_Packet_Item(g_PetSoul_Smash_ItemBagIndex,0);
@@ -200,7 +200,7 @@ function PetSoul_Smash_ItemUpdate(bagPos)
 			PetSoul_Smash_Explain:SetText(ScriptGlobal_Format("#{SHXT_20211230_135}",tostring(piecesNumber)))
 		end
 		
-		PetSoul_Smash_OK:Enable()--确认按钮能用
+		PetSoul_Smash_OK:Enable()--??????
 	end
 end
 
@@ -242,7 +242,7 @@ end
 
 --=========================================================
 --开始关心NPC，
---在开始关心之前需要先确定这个界面是不是已经有“关心”的NPC，
+--在开始关心之前需要先确定犫个界面是不是已经有“关心”的NPC，
 --如果有的话，先取消已经有的“关心”
 --=========================================================
 function PetSoul_Smash_BeginCareObject( objCaredId )

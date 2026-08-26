@@ -4,13 +4,13 @@
 local MAX_OBJ_DISTANCE = 3.0
 local g_CaredNpc = -1
 
-local g_DWShengji_Item = -1--可有雕纹的装备，在背包中的位置
+local g_DWShengji_Item = -1--???????,???????
 
 local g_DWShengji_Frame_UnifiedPosition;
 local g_DWShengji_BindConfirmed = 0
 
 
--- 金蚕丝, 强化用的道具, 按照 绑定 -> 元宝交易 -> 随便交易 顺序使用
+-- 金蚕丝, 强化用的道具, 按牋 绑定 -> 元宝交易 -> 随便交易 顺序使用
 local g_DWQIANGHUA_ToolItem = {20310168, 20310166, 20310167}
 local g_DWQIANGHUA_UnbindItem = {20310166, 20310167}
 --=========================================================
@@ -95,7 +95,7 @@ function DWShengji_OnEvent(event)
 		BeginCareObject_DWShengji()
 		DWShengji_Clear()
 		DWShengji_UpdateBasic()
-		--调整界面位置
+		--调狖界面位置
 		if tostring(arg2) ~= nil then
 			DWShengji_Frame:SetProperty("UnifiedPosition", tostring(arg2));
 		end
@@ -112,7 +112,7 @@ function DWShengji_UpdateBasic()
 	--拥有元宝
 	DWShengji_Yuanbao_Text:SetText(tostring(Player:GetData("YUANBAO")));
 	--背包内未锁定的金蚕丝
-	local toolNumInBag = 0		-- 背包里强化材料的个数
+	local toolNumInBag = 0		-- ??????????
 	for i, tbIndex in ipairs(g_DWQIANGHUA_ToolItem) do
 		toolNumInBag = toolNumInBag + PlayerPackage:CountAvailableItemByIDTable(tonumber(tbIndex))
 	end
@@ -130,7 +130,7 @@ function DWShengji_Clear()
 	end
 	DWShengji_Type1_name:SetText("#{DWSJ_141202_51}")
 	DWShengji_Type1_Level:ResetList()
-	DWShengji_Type1_Level:AddTextItem("#{DWSJ_141202_5}" ,0)--尚未选择
+	DWShengji_Type1_Level:AddTextItem("#{DWSJ_141202_5}" ,0)--????
 	DWShengji_Type1_Level:SetCurrentSelect(0);
 	--DWShengji_Type1_Level:Disable()
 	DWShengji_Type1_Info:SetText("")
@@ -147,7 +147,7 @@ end
 --=========================================================
 function DWShengji_Update(itemIndex,bNotice)
 	g_DWShengji_BindConfirmed = 0
-	local index = tonumber(itemIndex)--背包位置
+	local index = tonumber(itemIndex)--????
 	local theAction = EnumAction(index, "packageitem")
 
 	if theAction:GetID() ~= 0 then
@@ -181,7 +181,7 @@ function DWShengji_Update(itemIndex,bNotice)
 				PushDebugMessage("#{DWSJ_141202_19}")
 			else
 				DWShengji_Type1_Level:ResetList()
-				DWShengji_Type1_Level:AddTextItem("#{DWSJ_141202_6}" ,0)--雕纹已满级
+				DWShengji_Type1_Level:AddTextItem("#{DWSJ_141202_6}" ,0)--?????
 				DWShengji_Type1_Level:SetCurrentSelect(0);
 				--DWShengji_Type1_Level:Disable()
 				DWShengji_Type1_Info:SetText("")
@@ -191,7 +191,7 @@ function DWShengji_Update(itemIndex,bNotice)
 		end
 		--不检测加锁
 
-		-- 如果空格内已经有图样了, 替换之
+		-- 如果繝格内已经有图样了, 替换之
 		if g_DWShengji_Item ~= -1 then
 			LifeAbility:Lock_Packet_Item(g_DWShengji_Item, 0)
 		end
@@ -215,12 +215,12 @@ function DWShengji_Update(itemIndex,bNotice)
 			--10级
 			if dwlevel==10 then
 				DWShengji_Type1_Level:ResetList()
-				DWShengji_Type1_Level:AddTextItem("#{DWSJ_141202_6}" ,0)--雕纹已满级
+				DWShengji_Type1_Level:AddTextItem("#{DWSJ_141202_6}" ,0)--?????
 				DWShengji_Type1_Level:SetCurrentSelect(0);
 				--DWShengji_Type1_Level:Disable()
 			else
 				DWShengji_Type1_Level:ResetList()
-				DWShengji_Type1_Level:AddTextItem("#{DWSJ_141202_5}" ,0)--尚未选择
+				DWShengji_Type1_Level:AddTextItem("#{DWSJ_141202_5}" ,0)--????
 				for i=dwlevel+1,10 do
 					DWShengji_Type1_Level:AddTextItem(tostring(i) ,i)
 				end
@@ -302,7 +302,7 @@ function DWShengji_OK_Clicked()
 	local dwId,dwlevel = LifeAbility:GetEquitDiaowenID(g_DWShengji_Item)
 	--选择等级
 	local sToLevelSel,iToLevelSel =  DWShengji_Type1_Level:GetCurrentSelect()
-	if iToLevelSel<=0 then--未选择升级哪个
+	if iToLevelSel<=0 then--???????
 		PushDebugMessage("#{DWSJ_141202_23}")
 		return
 	end
@@ -314,7 +314,7 @@ function DWShengji_OK_Clicked()
 	end
 
 	--require for jcs count
-	local requireJCS1,newDWID1=LifeAbility:GetReqMatforEquipDWLevelUp(g_DWShengji_Item,iToLevelSel)--参数1、2是必须的
+	local requireJCS1,newDWID1=LifeAbility:GetReqMatforEquipDWLevelUp(g_DWShengji_Item,iToLevelSel)--??1?2????
 	--校验略去，服务器端做严格检测
 	if requireJCS1<=0 then
 		return
@@ -327,7 +327,7 @@ function DWShengji_OK_Clicked()
 	if equipBindState~=1 then
 		--非绑定的金蚕丝够否
 		--判断玩家背包内未锁定的非绑定的金蚕丝数量是否大于等于本次升级所需要的金蚕丝数量
-		local unbindNumInBag = 0		-- 背包里强化材料的个数
+		local unbindNumInBag = 0		-- ??????????
 		for i, tbIndex in ipairs(g_DWQIANGHUA_UnbindItem) do
 			unbindNumInBag = unbindNumInBag + PlayerPackage:CountAvailableItemByIDTable(tonumber(tbIndex))
 		end
@@ -362,7 +362,7 @@ function DWShengji_OK_Clicked()
 	local UserBYBCnt=0
 	local UserYBCnt=0
 	--各种够不？
-	local toolNumInBag = 0		-- 背包里强化材料的个数
+	local toolNumInBag = 0		-- ??????????
 	for i, tbIndex in ipairs(g_DWQIANGHUA_ToolItem) do
 		toolNumInBag = toolNumInBag + PlayerPackage:CountAvailableItemByIDTable(tonumber(tbIndex))
 	end
@@ -388,7 +388,7 @@ function DWShengji_OK_Clicked()
 				UserYBCnt=leftyuanbao
 			else
 				--钱不够啊
-				PushDebugMessage("#{DWSJ_141202_33}")--元宝不足，请确认后再操作。
+				PushDebugMessage("#{DWSJ_141202_33}")--????,????????
 				return
 			end
 		end
@@ -436,7 +436,7 @@ end
 
 function DWShengji_UpdateRequireMat()
 	local sToLevelSel,iToLevelSel =  DWShengji_Type1_Level:GetCurrentSelect()
-	local requireJCS1,newDWID1=LifeAbility:GetReqMatforEquipDWLevelUp(g_DWShengji_Item,iToLevelSel)--参数1、2是必须的
+	local requireJCS1,newDWID1=LifeAbility:GetReqMatforEquipDWLevelUp(g_DWShengji_Item,iToLevelSel)--??1?2????
 	if requireJCS1>0 then
 		DWShengji_JCSneed_Text:SetText(requireJCS1)
 	else
@@ -444,7 +444,7 @@ function DWShengji_UpdateRequireMat()
 	end
 end
 --=========================================================
--- 关闭界面
+-- 关睜界面
 --=========================================================
 function DWShengji_Close()
 	this:Hide()
@@ -462,7 +462,7 @@ end
 
 --=========================================================
 -- 开始关心NPC，
--- 在开始关心之前需要先确定这个界面是不是已经有“关心”的NPC，
+-- 在开始关心之前需要先确定犫个界面是不是已经有“关心”的NPC，
 -- 如果有的话，先取消已经有的“关心”
 --=========================================================
 function BeginCareObject_DWShengji()

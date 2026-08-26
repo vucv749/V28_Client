@@ -4,18 +4,18 @@ local g_SelectFacestyle_Frame_UnifiedPosition
 local g_SelectFacestyle_YuanbaoPay = 1
 
 local g_clientNpcId = -1
-local g_ExteriorType = 0 						--Á³ÐÍ
+local g_ExteriorType = 0 						--??
 
 local g_InitList = 0
 local g_NeedChangeScrollSize = 1
 
 local g_MaxBarNum = 0
 local g_BarList = {}
-local g_CurSelExteriorID = 0					--µ±Ç°Ñ¡ÔñµÄÍâ¹ÛID£¬´Ó1¿ªÊ¼
+local g_CurSelExteriorID = 0					--???????ID,?1??
 local g_OriCharFace = 0
 
-local SelectFacestyle_CameraHeight = 1			--ÉãÓ°»ú¸ß¶È
-local SelectFacestyle_CameraDistance = 2		--ÉãÓ°»ú¾àÀë
+local SelectFacestyle_CameraHeight = 1			--?????
+local SelectFacestyle_CameraDistance = 2		--?????
 local SelectFacestyle_CameraPitch = 3
 local g_SelectFacestyle_CameraLevel = 0
 local g_SelectFacestyle_CameraPosition =
@@ -102,7 +102,7 @@ function SelectFacestyle_OnEvent(event)
 	end
 	
 	-- FakeObjectÄ£ÐÍ½çÃæ»¥³â
-	if ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then   --Ê±×°Ô¤ÀÀ
+	if ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then   --????
 		if (this:IsVisible()) then
 			this:Hide()
 			return
@@ -206,7 +206,7 @@ function SelectFacestyle_SetItem(index, max_count)
 		bar:GetSubItem("SelectFacestyle_SuperListItemActionDef"):Hide()
 
 		if nExteriorID == Exterior:LuaFnGetExteriorInUse(g_ExteriorType) then
-			--µ±Ç°ÕýÔÚ×°±¸µÄ
+			--µ±Ç° ýÔÚ×°±¸µÄ
 			bar:GetSubItem("SelectFacestyle_SuperListItemActionDef"):Show()
 		end
 
@@ -291,21 +291,21 @@ function SelectFacestyle_ShowDetail()
 		end
 		
 		if g_CurSelExteriorID == Exterior:LuaFnGetExteriorInUse(g_ExteriorType) then
-			--µ±Ç°ÕýÔÚ×°±¸µÄ
+			--µ±Ç° ýÔÚ×°±¸µÄ
 			SelectFacestyle_WarningText:SetText("#{WGYH_210827_01}")
 		end
 	else
 		SelectFacestyle_Accept:SetText("#{GXHDZ_141121_10}")
 		if reqMenPai == -1 then
-			SelectFacestyle_WarningText:SetText("ÐèÒªµÀ¾ß£º#G"..name.."#r#WÐèÒª½ðÇ®£º#Y#{_EXCHG"..CostMoney.."}#r".."#{GXHDZ_141121_05}")
+			SelectFacestyle_WarningText:SetText("C¥n ðÕo cø: #G"..name.."#r#Wc?n ti«n tài: #Y#{_EXCHG"..CostMoney.."}#r".."#{GXHDZ_141121_05}")
 		elseif player_menpai ==  reqMenPai then
 			local menpainame = SelectFacestyle_GetMenpaiString(reqMenPai)
 			local scriptglobal = ScriptGlobal_Format("#{HWMP_200619_04}", menpainame)
-			SelectFacestyle_WarningText : SetText("ÐèÒªµÀ¾ß£º#G"..name.."#r#WÐèÒª½ðÇ®£º#Y#{_EXCHG"..CostMoney.."}".."#r"..scriptglobal.."#r".."#{GXHDZ_141121_05}")		
+			SelectFacestyle_WarningText : SetText("C¥n ðÕo cø: #G"..name.."#r#Wc?n ti«n tài: #Y#{_EXCHG"..CostMoney.."}".."#r"..scriptglobal.."#r".."#{GXHDZ_141121_05}")		
 		else 
 			local menpainame = SelectFacestyle_GetMenpaiString(reqMenPai)
 			local scriptglobal = ScriptGlobal_Format("#{HWMP_200619_03}", menpainame)
-			SelectFacestyle_WarningText:SetText("ÐèÒªµÀ¾ß£º#G"..name.."#r#WÐèÒª½ðÇ®£º#Y#{_EXCHG"..CostMoney.."}".."#r"..scriptglobal.."#r".."#{GXHDZ_141121_05}")	
+			SelectFacestyle_WarningText:SetText("C¥n ðÕo cø: #G"..name.."#r#Wc?n ti«n tài: #Y#{_EXCHG"..CostMoney.."}".."#r"..scriptglobal.."#r".."#{GXHDZ_141121_05}")	
 		end
 	end
 
@@ -455,7 +455,7 @@ function SelectFacestyle_GetMenpaiString(menpai)
 	elseif 8 == menpai then
 		strName = "#{GMItem_12}"
 	elseif 9 == menpai then
-		strName = "ÎÞÃÅÅÉ"
+		strName = "Tñ do"
 	elseif 10 == menpai then
 		strName = "#{GMItem_17}"
 	elseif 11 == menpai then--MPTODO menpai11

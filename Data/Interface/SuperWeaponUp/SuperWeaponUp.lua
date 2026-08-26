@@ -88,12 +88,12 @@ function SuperWeaponUp_Buttons_Clicked()
     --Deleted By ChangHua 2010-03-01 TT:66410
     --ÉñÆ÷±»¼ÓËøÊ±Ò²¿ÉÒÔ½øĞĞÉı¼¶²Ù×÷
 	--	if PlayerPackage : IsLock( g_ItemPos ) == 1 then
-	--		PushDebugMessage( "ÎïÆ·²»´æÔÚ»òÕßÒÑ¼ÓËø£¡" )
+	--		PushDebugMessage( "ÎïÆ·²»´æÔÚ»ò ßÒÑ¼ÓËø£¡" )
 	--		return
 	--	end
 
 		--Ç®ÊÇ·ñ¹»....
-		local selfMoney = Player:GetData("MONEY") + Player:GetData("MONEY_JZ") --½»×ÓÆÕ¼° Vega
+		local selfMoney = Player:GetData("MONEY") + Player:GetData("MONEY_JZ") --???? Vega
 		if selfMoney < g_NeedMoney then
 			PushDebugMessage( "#{JKBS_081021_011}" )
 			return
@@ -130,7 +130,7 @@ function SuperWeaponUp_Buttons_Clicked()
 		end
 
 	else
-		PushDebugMessage( "Çë·ÅÈëĞèÒªÔÙÔìµÄÉñÆ÷£¡" )
+		PushDebugMessage( "Thïnh ğ¬ vào c¥n tái tÕo Ğích th¥n khí!" )
 	end
 end
 
@@ -152,13 +152,13 @@ function SuperWeaponUp_Update( pos_packet )
 	local MenpaiID = Player : GetData( "MEMPAI" )
 	local ItemID = PlayerPackage : GetItemTableIndex( BagIndex )
 	if ItemID <= 0 then
-		PushDebugMessage("Õâ¸öÎïÆ·²»ÊÇ¿É¶Ò»»µÄÉñÆ÷£¡")
+		PushDebugMessage("Này v§t ph¦m không phäi Khä ğ±i Ğích th¥n khí!")
 		return
 	end
 
 	g_NewId, g_NeedMoney = ShenqiUpgrade : GetShenqiUpgradeInfo( ItemID, MenpaiID )
 	if g_NewId == -1 then
-		PushDebugMessage("Çë·ÅÈë¿ÉÒÔ¶Ò»»µÄÉñÆ÷£¡")
+		PushDebugMessage("Thïnh ğ¬ vào có th¬ ğ±i Ğích th¥n khí!")
 		return
 	end
 
@@ -193,7 +193,7 @@ end
 
 
 --=========================================================
---¹Ø±Õ
+--¹Ø± 
 --=========================================================
 function SuperWeaponUp_Close()
 	this : Hide()
@@ -211,7 +211,7 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØĞÄNPC£¬
---ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 --Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function BeginCareObject_SuperWeaponUp()

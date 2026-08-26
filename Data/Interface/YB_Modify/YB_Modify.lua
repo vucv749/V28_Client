@@ -93,7 +93,7 @@ function YB_Modify_Accept_Clicked()
 		end
 		
 	else
-		PushDebugMessage("ÇëÊäÈëÕıÈ·µÄ¼Û¸ñ")
+		PushDebugMessage("Hãy nh§p giá chính xác")
 	end
 end
 

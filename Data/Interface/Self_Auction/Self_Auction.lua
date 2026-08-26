@@ -146,7 +146,7 @@ end
 
 --Update
 function Self_Auction_Update()
-	-- 清空现有得数据信息
+	-- 清繝现有得数据信息
 	Self_Auction_List_CleanUp()
 
 	-- 设置当前列数
@@ -175,7 +175,7 @@ function Self_Auction_AddItem(idx,nId)
 	local uItemNum = 1
 	--最高出价
 	local nHighPrice = DataPool:LuaFnGetWorldAuctionBiddingInfo(nId, "TOPBID")
-	--最高出价人姓名
+	--最高出价人袪名
 	local nHighName = DataPool:LuaFnGetWorldAuctionBiddingInfo(nId, "NAME")
 	--最高出价人的世界号
 	local nHighZoneWorld = DataPool:LuaFnGetWorldAuctionBiddingInfo(nId,"TOPWORLD")
@@ -332,8 +332,8 @@ function Self_Auction_OpenBidUI(idx)
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name("OpenBidUI")
 		Set_XSCRIPT_ScriptID(999799)
-		Set_XSCRIPT_Parameter(0, 1)				--打开
-		Set_XSCRIPT_Parameter(1, nId)	--索引
+		Set_XSCRIPT_Parameter(0, 1)				--??
+		Set_XSCRIPT_Parameter(1, nId)	--??
 		Set_XSCRIPT_Parameter(2, 0)
 		Set_XSCRIPT_ParamCount(3)
 	Send_XSCRIPT()
@@ -383,11 +383,11 @@ function Self_Auction_Preview(idx)
 
 
 	if tonumber(nItemTableIndex) ~= nil then
-		local nExteriorRideId = Exterior:LuaFnGetExteriorIdByItem(tonumber(nItemTableIndex)) -- 坐骑
+		local nExteriorRideId = Exterior:LuaFnGetExteriorIdByItem(tonumber(nItemTableIndex)) -- ??
 		if(nExteriorRideId ~= 0) then
 			PushEvent("OPEN_RIDE_PREVIEW", nExteriorRideId)
 		else
-			PushEvent("OPEN_DRESSPREVIEW", tonumber(nItemTableIndex), 111, 75) --时装\发型\脸型
+			PushEvent("OPEN_DRESSPREVIEW", tonumber(nItemTableIndex), 111, 75) --??\??\??
 		end
 	end
 end
@@ -431,7 +431,7 @@ function Self_Auction_Shuaxin()
 		Set_XSCRIPT_Function_Name("TryOpenWorldAuction")
 		Set_XSCRIPT_ScriptID(999799)
 		Set_XSCRIPT_Parameter(0, 0)
-		Set_XSCRIPT_Parameter(1, 1) --是否收刷新cd限制
+		Set_XSCRIPT_Parameter(1, 1) --?????cd??
 		Set_XSCRIPT_ParamCount(2)
 	Send_XSCRIPT()
 end
@@ -457,7 +457,7 @@ end
 
 function Self_Auction_Preview_Click()
 
-	PushEvent("OPEN_DRESSPREVIEW", g_SelfCloth, 111, 75) --时装\发型\脸型
+	PushEvent("OPEN_DRESSPREVIEW", g_SelfCloth, 111, 75) --??\??\??
 end
 --================================================
 -- 恢复界面的默认相对位置

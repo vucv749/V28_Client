@@ -8,7 +8,7 @@ local g_Frame_UnifiedPosition
 function Peak_GuideLetter_PreLoad()
 
 	this:RegisterEvent("UI_COMMAND",true)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--½ø³¡¾°¹Ø±Õ½çÃæ
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
 	this:RegisterEvent("ADJEST_UI_POS",false)
 
@@ -35,12 +35,12 @@ function Peak_GuideLetter_OnEvent(event)
 			--´ò¿ª½çÃæ
 			this:Show()
 		elseif param == 2 then
-			--×Ô¶¯Ñ°Â·£ºÕÒnpc
+			--×Ô¶¯Ñ°Â·£º Ònpc
 			Peak_GuideLetter_GoToFindNpc()
-			--¹Ø±Õ½çÃæ
+			--¹Ø± ½çÃæ
 			Peak_GuideLetter_OnClose()			
 		elseif param == 3 then
-			--¹Ø±Õ½çÃæ
+			--¹Ø± ½çÃæ
 			Peak_GuideLetter_OnClose()
 		elseif param == 4 then
 			--´ò¿ªáÛ·åÏµÍ³µÄ½çÃæ
@@ -63,7 +63,7 @@ function Peak_GuideLetter_OnEvent(event)
 
 end
 
---µã»÷£ºÇ°ÍùserverÅĞ¶Ï£¬ÊÇ·ñ¿ÉÒÔÑ°Â·ÕÒnpc
+--µã»÷£ºÇ°ÍùserverÅĞ¶Ï£¬ÊÇ·ñ¿ÉÒÔÑ°Â· Ònpc
 function Peak_GuideLetter_OnGoButtonClicked()
 
 	Clear_XSCRIPT();
@@ -75,21 +75,21 @@ function Peak_GuideLetter_OnGoButtonClicked()
 	
 end
 
---ÏìÓ¦£ºÍ¨¹ıserverÅĞ¶Ï£¬¿ÉÒÔÑ°Â·ÕÒnpc
+--ÏìÓ¦£ºÍ¨¹ıserverÅĞ¶Ï£¬¿ÉÒÔÑ°Â· Ònpc
 function Peak_GuideLetter_GoToFindNpc()
 	
-	AutoRuntoTargetExWithName(219, 43, 2, "ĞşÖÇ·¨Ê¦") --Ìæ´ú
+	AutoRuntoTargetExWithName(219, 43, 2, "Huy«n Trí pháp sß") --??
 	
 end
 
---µ÷Õû£º½çÃæÎ»ÖÃ
+--µ÷ û£º½çÃæÎ»ÖÃ
 function Peak_GuideLetter_ResetPos()
 
 	Peak_GuideLetter_Frame:SetProperty("UnifiedPosition", g_Frame_UnifiedPosition)
 
 end
 
---¹Ø±Õ£º½çÃæ
+--¹Ø± £º½çÃæ
 function Peak_GuideLetter_OnClose()
 	this:Hide()
 end

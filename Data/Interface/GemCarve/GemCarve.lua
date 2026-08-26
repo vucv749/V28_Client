@@ -7,7 +7,7 @@ local g_NeedItemPos = -1;
 local g_NeedItemID = -1;
 local g_NeedMoney = 0;
 local g_RightGem = 0;
-local EB_BINDED = 1;				-- ÒÑ¾­°ó¶¨
+local EB_BINDED = 1;				-- ????
 
 local g_LastGemItemID = -1;
 local g_LastNeedItemID = -1;
@@ -25,7 +25,7 @@ function GemCarve_PreLoad()
 	this:RegisterEvent("PACKAGE_ITEM_CHANGED");
 	this:RegisterEvent("UNIT_MONEY");
 	this:RegisterEvent("RESUME_ENCHASE_GEM")
-	this:RegisterEvent("MONEYJZ_CHANGE")		--½»×ÓÆÕ¼° Vega
+	this:RegisterEvent("MONEYJZ_CHANGE")		--???? Vega
 	
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
@@ -42,7 +42,7 @@ function GemCarve_OnEvent(event)
 			local xx = Get_XParam_INT(0);
 			ObjCaredID = DataPool : GetNPCIDByServerID(xx);
 			if ObjCaredID == -1 then
-					PushDebugMessage("server´«¹ýÀ´µÄÊý¾ÝÓÐÎÊÌâ¡£");
+					PushDebugMessage("Dæ li®u máy chü có v¤n ð«");
 					return;
 			end
 			ObjCaredIDID = xx
@@ -56,7 +56,7 @@ function GemCarve_OnEvent(event)
 			return;
 		end
 
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			GemCarve_Close()
 		end
@@ -155,7 +155,7 @@ function GemCarve_Update( pos_ui, pos_packet )
 		--±ØÐëÊÇ±¦Ê¯....
 		local Item_Class = PlayerPackage : GetItemSubTableIndex(pos_packet,0)
 		if Item_Class ~= 5 then
-			PushDebugMessage("Ö»ÓÐ±¦Ê¯²Å¿É±»µñ×Á")
+			PushDebugMessage("Chï có bäo thÕch tài khä B¸ tÕo hình")
 			return
 		end
 
@@ -181,14 +181,14 @@ function GemCarve_Update( pos_ui, pos_packet )
 		ProductID, g_NeedItemID, g_NeedMoney = GemCarve:GetGemCarveInfo( GemItemID )
 		if -1 == ProductID then
 			g_RightGem = 0
-			GemCarve_State : SetText("´Ë±¦Ê¯ÎÞ·¨±»µñ×Á¡£")
+			GemCarve_State : SetText("ThØ bäo thÕch không th¬ B¸ tÕo hình.")
 			return
 		else
 			g_RightGem = 1
 		end
 
 		--ÉèÖÃ²úÆ·ActionButton....
-		GemCarve_State : SetText("µñ×ÁºóµÄ²úÎï£º")
+		GemCarve_State : SetText("TÕo hình H§u Ðích kªt quä:")
 		GemCarve_ProductItem:Show()
 		local ProductAction = GemCarve:UpdateProductAction( ProductID )
 		if ProductAction and ProductAction:GetID() ~= 0 then
@@ -198,12 +198,12 @@ function GemCarve_Update( pos_ui, pos_packet )
 		end
 
 		--ÉèÖÃËùÐèÎïÆ·Tooltips....
-		GemCarve_NeedItem : SetToolTip("ÐèÒª·ÅÈë#{_ITEM"..g_NeedItemID.."}")
+		GemCarve_NeedItem : SetToolTip("C¥n ð¬ vào#{_ITEM"..g_NeedItemID.."}")
 
 		--ÉèÖÃËùÐèÇ®Êý....
 		GemCarve_Money : SetProperty("MoneyNumber", tostring(g_NeedMoney));
 		
-		--Èç¹ûÕâ´ÎµÄËùÐèÎïÆ·ÓëÉÏ´ÎµÄÏàÍ¬....ÔòÖ±½Ó°ÑÉÏ´ÎµÄËùÐèÎïÆ··Åµ½ËùÐèÎïÆ·À¸ÄÚ....
+		--Èç¹û â´ÎµÄËùÐèÎïÆ·ÓëÉÏ´ÎµÄÏàÍ¬....ÔòÖ±½Ó°ÑÉÏ´ÎµÄËùÐèÎïÆ··Åµ½ËùÐèÎïÆ·À¸ÄÚ....
 		if lastNeedItemID ~= -1 and lastNeedItemID == g_NeedItemID then
 			GemCarve_Update( 2, lastNeedItemPos )
 		end
@@ -215,13 +215,13 @@ function GemCarve_Update( pos_ui, pos_packet )
 		end
 
 		if -1 == g_GemItemPos or g_RightGem == 0 then
-			PushDebugMessage("ÇëÏÈ·ÅÈëÐèÒªµñ×ÁµÄ±¦Ê¯")
+			PushDebugMessage("Thïnh Tiên ð¬ vào c¥n tÕo hình Ðích bäo thÕch")
 			return
 		end
 
 		--²»ÊÇÐèÇóµÄÎïÆ·....
 		if PlayerPackage:GetItemTableIndex( pos_packet ) ~= g_NeedItemID then
-			PushDebugMessage("ÕâÀïÖ»ÄÜ·ÅÈë#{_ITEM"..g_NeedItemID.."}")
+			PushDebugMessage("N½i này chï có th¬ ð¬ vào#{_ITEM"..g_NeedItemID.."}")
 			return
 		end
 
@@ -233,8 +233,8 @@ function GemCarve_Update( pos_ui, pos_packet )
 		LifeAbility : Lock_Packet_Item(g_NeedItemPos,1);
 		GemCarve_NeedItem:SetActionItem(theAction:GetID());
 
-		--Èç¹ûÎïÆ·¶¼ÕýÈ·ÁË²¢ÇÒÇ®Ò²¹»¾ÍEnableµñ×Á°´Å¥....
-		local selfMoney = Player:GetData("MONEY") + Player:GetData("MONEY_JZ")  --½»×ÓÆÕ¼° Vega
+		--Èç¹ûÎïÆ·¶¼ ýÈ·ÁË²¢ÇÒÇ®Ò²¹»¾ÍEnableµñ×Á°´Å¥....
+		local selfMoney = Player:GetData("MONEY") + Player:GetData("MONEY_JZ")  --???? Vega
 		if selfMoney >= g_NeedMoney then
 			GemCarve_Accept:Enable();
 		end
@@ -277,7 +277,7 @@ function GemCarve_Buttons_Clicked()
 	if(g_LastGemItemID ~= g_GemItemID or g_LastNeedItemID ~= g_NeedItemID) then
 	  g_LastGemItemID = g_GemItemID
 	  g_LastNeedItemID = g_NeedItemID
-	  --¸ù¾Ý±¦Ê¯ÊÇ·ñ°ó¶¨ºÍ±¦Ê¯µñ×Á·ûÊÇ·ñ°ó¶¨£¬¾ö¶¨Õª³ýºóµÄ±¦Ê¯ÊÇ·ñ°ó¶¨
+	  --¸ù¾Ý±¦Ê¯ÊÇ·ñ°ó¶¨ºÍ±¦Ê¯µñ×Á·ûÊÇ·ñ°ó¶¨£¬¾ö¶¨ ª³ýºóµÄ±¦Ê¯ÊÇ·ñ°ó¶¨
 	  if (GetItemBindStatus(g_GemItemPos) == EB_BINDED or GetItemBindStatus(g_NeedItemPos) == EB_BINDED) then
 	    ShowSystemInfo("INTERFACE_XML_GemCarve_7");
 	    --LifeAbility:Carve_Confirm("OnGemCarve",800117,g_GemItemPos,g_NeedItemPos,2);
@@ -342,7 +342,7 @@ function GemCarve_RefreshItem()
 			GemCarve_GemItem:SetActionItem(theAction:GetID());
 			
 			if -1 ~= ProductID then
-				GemCarve_State : SetText("µñ×ÁºóµÄ²úÎï£º")
+				GemCarve_State : SetText("TÕo hình H§u Ðích kªt quä:")
 				GemCarve_ProductItem:Show()
 				local ProductAction = GemCarve:UpdateProductAction( ProductID )
 				if ProductAction and ProductAction:GetID() ~= 0 then
@@ -353,7 +353,7 @@ function GemCarve_RefreshItem()
 			end
 			
 			--ÉèÖÃËùÐèÎïÆ·Tooltips....
-			GemCarve_NeedItem : SetToolTip("ÐèÒª·ÅÈë#{_ITEM"..g_NeedItemID.."}")
+			GemCarve_NeedItem : SetToolTip("C¥n ð¬ vào#{_ITEM"..g_NeedItemID.."}")
 
 			--ÉèÖÃËùÐèÇ®Êý....
 			GemCarve_Money : SetProperty("MoneyNumber", tostring(g_NeedMoney));
@@ -379,7 +379,7 @@ function GemCarve_RefreshItem()
 		
 end
 --=========================================================
---¹Ø±Õ
+--¹Ø± 
 --=========================================================
 function GemCarve_Close()
 	this:Hide();
@@ -397,7 +397,7 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØÐÄNPC£¬
---ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
 --Èç¹ûÓÐµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓÐµÄ¡°¹ØÐÄ¡±
 --=========================================================
 function BeginCareObject_GemCarve()
@@ -415,7 +415,7 @@ end
 --Íæ¼Ò½ðÇ®±ä»¯
 --=========================================================
 function GemCarve_UserMoneyChanged()
-	local selfMoney = Player:GetData("MONEY") + Player:GetData("MONEY_JZ") --½»×ÓÆÕ¼° Vega
+	local selfMoney = Player:GetData("MONEY") + Player:GetData("MONEY_JZ") --???? Vega
 	if selfMoney < g_NeedMoney then
 		GemCarve_Accept:Disable();
 	else

@@ -5,7 +5,7 @@
 local g_ValentineRoseTopList_UnifiedPosition = nil
 
 --¼ÆÊ±Æ÷
-local g_ValentineRoseTopList_CooldownDur = 4*1000	--4sÀäÈ´
+local g_ValentineRoseTopList_CooldownDur = 4*1000	--4s??
 local g_ValentineRoseTopList_Cooldown = 
 {
 	[1] = 0,
@@ -16,8 +16,8 @@ local g_ValentineRoseTopList_Cooldown =
 }
 
 --Ò³Ç©ÏÔÊ¾
-local g_ValentineRoseTopList_CurPage = 0--Ä¬ÈÏÏÔÊ¾Ò³Ç©--×¢£º1-3±êÊ¾ÅÅĞĞ°ñ 4-5±êÊ¾¶Ò»»½±Àø
-local g_ValentineRoseTopList_MaxPage = 4--×î´óÒ³Ç©Êı
+local g_ValentineRoseTopList_CurPage = 0--??????--?:1-3????? 4-5??????
+local g_ValentineRoseTopList_MaxPage = 4--?????
 
 --ÅÅĞĞ°ñÏà¹Ø¿Ø¼ş
 local g_ValentineRoseTopList_Btn_Page = {}
@@ -36,23 +36,23 @@ local g_ValentineRoseTopList_Count = 5
 local g_ValentineRoseTopList_State = -1
 
 --°ñµ¥ĞÅÏ¢
-local g_ValentineRoseTopList_Info = --´ıĞŞ¸Ä
+local g_ValentineRoseTopList_Info = --???
 {
---ÈıÉúÖ¿ÁµËÍ»¨°ñ ÈıÉúÖ¿ÁµÊÕ»¨°ñ
+--ÈıÉúÖ¿ÁµËÍ»¨°ñ ÈıÉúÖ¿ÁµÊ »¨°ñ
 	[1] = {desc = "#{MGCQ_151230_38}", count = 3, sendmd = 546, receivemd = 547, 
 			sendtitle = "#{MGCQ_151230_39}", receivetitle = "#{MGCQ_151230_40}", 
 			strsend = "#{MGCQ_151230_23}", strreceive = "#{MGCQ_151230_24}", 
 			strsendNum = "#{MGCQ_151230_41}", strreceiveNum = "#{MGCQ_151230_42}", 
 			stateing = "#{MGCQ_151230_149}", stateend = "#{MGCQ_151230_150}"
 			},
---Ò«ÊÀ´«ÇéËÍ»¨°ñ Ò«ÊÀ´«ÇéÊÕ»¨°ñ
+--Ò«ÊÀ´«ÇéËÍ»¨°ñ Ò«ÊÀ´«ÇéÊ »¨°ñ
 	[2] = {desc = "#{MGCQ_151230_12}", count = 3, sendmd = 550, receivemd = 551, 
 			sendtitle = "#{MGCQ_151230_19}", receivetitle = "#{MGCQ_151230_20}", 
 			strsend = "#{MGCQ_151230_23}", strreceive = "#{MGCQ_151230_24}", 
 			strsendNum = "#{MGCQ_151230_25}", strreceiveNum = "#{MGCQ_151230_26}", 
 			stateing = "#{MGCQ_151230_13}", stateend = "#{MGCQ_151230_18}"
 			},
---ÍòÇ§³è°®ËÍ»¨°ñ ÍòÇ§³è°®ÊÕ»¨°ñ
+--ÍòÇ§³è°®ËÍ»¨°ñ ÍòÇ§³è°®Ê »¨°ñ
 	[3] = {desc = "#{MGCQ_151230_31}", count = 3, sendmd = 548, receivemd = 549, 
 			sendtitle = "#{MGCQ_151230_34}", receivetitle = "#{MGCQ_151230_35}", 
 			strsend = "#{MGCQ_151230_23}", strreceive = "#{MGCQ_151230_24}", 
@@ -62,20 +62,20 @@ local g_ValentineRoseTopList_Info = --´ıĞŞ¸Ä
 }
 
 --°ñµ¥ĞÅÏ¢
-local g_ValentineRoseTopList_Tip = --´ıĞŞ¸Ä
+local g_ValentineRoseTopList_Tip = --???
 {
---MGCQ_151230_127	»î¶¯ÕıÔÚ½øĞĞÖĞ£¬ÇëÓÚ2021Äê2ÔÂ10ÈÕ24µãºóÔÙÀ´ÁìÈ¡£¡
---MGCQ_151230_72	»î¶¯ÕıÔÚ½øĞĞÖĞ£¬ÇëÓÚ2021Äê2ÔÂ13ÈÕ24µãºóÔÙÀ´ÁìÈ¡£¡
---MGCQ_151230_126	»î¶¯ÕıÔÚ½øĞĞÖĞ£¬ÇëÓÚ2021Äê2ÔÂ14ÈÕ24µãºóÔÙÀ´ÁìÈ¡£¡
+--MGCQ_151230_127	»î¶¯ ıÔÚ½øĞĞÖĞ£¬ÇëÓÚ2021Äê2ÔÂ10È 24µãºóÔÙÀ´ÁìÈ¡£¡
+--MGCQ_151230_72	»î¶¯ ıÔÚ½øĞĞÖĞ£¬ÇëÓÚ2021Äê2ÔÂ13È 24µãºóÔÙÀ´ÁìÈ¡£¡
+--MGCQ_151230_126	»î¶¯ ıÔÚ½øĞĞÖĞ£¬ÇëÓÚ2021Äê2ÔÂ14È 24µãºóÔÙÀ´ÁìÈ¡£¡
 	[1] = {tip1 = "#{MGCQ_151230_71}", tip2 = "#{MGCQ_151230_127}", tip3 = "#{MGCQ_151230_73}"},
 	[2] = {tip1 = "#{MGCQ_151230_71}", tip2 = "#{MGCQ_151230_72}", tip3 = "#{MGCQ_151230_73}"},
 	[3] = {tip1 = "#{MGCQ_151230_71}", tip2 = "#{MGCQ_151230_126}", tip3 = "#{MGCQ_151230_73}"},
 }
 
 --°ñµ¥½±Àø
-local g_ValentineRoseTopList_SendJiangli = {}--ËÍ»¨½±ÀøÏÔÊ¾Òş²Ø
-local g_ValentineRoseTopList_ReceiveJiangli = {}--ÊÕ»¨½±ÀøÏÔÊ¾Òş²Ø
-local g_ValentineRoseTopList_SendBonus = --ËÍ»¨½±Àø¾ßÌåÎïÆ·
+local g_ValentineRoseTopList_SendJiangli = {}--????????
+local g_ValentineRoseTopList_ReceiveJiangli = {}--????????
+local g_ValentineRoseTopList_SendBonus = --????????
 {
 	[1] = {action = "", itemid = 39920061, count = 3},--1
 	[2] = {action = "", itemid = 39920061, count = 2},
@@ -85,12 +85,12 @@ local g_ValentineRoseTopList_SendBonus = --ËÍ»¨½±Àø¾ßÌåÎïÆ·
 	[5] = {action = "", itemid = 39920059, count = 1},
 	[6] = {action = "", itemid = 39920058, count = 1},
 	
-	[7] = {action = "", itemid = 39920060, count = 1},--3 ×øÆï£ºÃÎÁéÏÉ¾Ô£¨ÓÀ¾Ã£©
-	[8] = {action = "", itemid = 39920068, count = 1},		--³ÕĞÄ²»Íü¡¤×íÊÀÇéÊ¥	
+	[7] = {action = "", itemid = 39920060, count = 1},--3 ??:????(??)
+	[8] = {action = "", itemid = 39920068, count = 1},		--????·????	
 	[9] = {action = "", itemid = 39920080, count = 1},
 	[10] = {action = "", itemid = 39920079, count = 1},
 }
-local g_ValentineRoseTopList_ReceiveBonus = --ÊÕ»¨½±Àø¾ßÌåÎïÆ·
+local g_ValentineRoseTopList_ReceiveBonus = --????????
 {
 	[1] = {action = "", itemid = 39920061, count = 3},--1
 	[2] = {action = "", itemid = 39920061, count = 2},
@@ -100,8 +100,8 @@ local g_ValentineRoseTopList_ReceiveBonus = --ÊÕ»¨½±Àø¾ßÌåÎïÆ·
 	[5] = {action = "", itemid = 39920059, count = 1},
 	[6] = {action = "", itemid = 39920058, count = 1},
 	
-	[7] = {action = "", itemid = 39920060, count = 1},--3 ×øÆï£ºÃÎÁéÏÉ¾Ô£¨ÓÀ¾Ã£©
-	[8] = {action = "", itemid = 39920069, count = 1},		--ÉØ»ªç²ÃÎ¡¤Ãµ¹åÇéÈË	
+	[7] = {action = "", itemid = 39920060, count = 1},--3 ??:????(??)
+	[8] = {action = "", itemid = 39920069, count = 1},		--????·????	
 	[9] = {action = "", itemid = 39920080, count = 1},
 	[10] = {action = "", itemid = 39920079, count = 1},
 }
@@ -115,20 +115,20 @@ local ValentineRoseTopList_Exchange_Chiqingyu_Text = {}
 
 local g_ValentineRoseTopList_Qingrenjie_Bonus =
 {
-	[1] = {neednum = 1314, itemid = 39920078, count = 1, name = "ÕäÊŞÁı£ºÆßÇÉÀêÃ¨"},
-	[2] = {neednum = 521, itemid = 39920062, count = 1, name = "ÕäÊŞµ°£ºÆßÇÉÀêÃ¨"},
-	[3] = {neednum = 300, itemid = 39920063, count = 1, name = "É½é«±ùÌÇºùÂ«"},
-	[4] = {neednum = 300, itemid = 39920064, count = 1, name = "´ó·ç³µ"},
-	[5] = {neednum = 120, itemid = 39920065, count = 1, name = "ÂşÌì»¨Óê"},
-	[6] = {neednum = 120, itemid = 39920083, count = 1, name = "ÂşÌì»¨Óê¡¤ĞÄÏàÓ¡"},
+	[1] = {neednum = 1314, itemid = 39920078, count = 1, name = "Trân Thú Lung: Th¤t Xäo Li Miêu"},
+	[2] = {neednum = 521, itemid = 39920062, count = 1, name = "TrÑng Trân Thú: Thông Thiên Nhân Ngçu"},
+	[3] = {neednum = 300, itemid = 39920063, count = 1, name = "S½n Tra Bång Ğß¶ng H° Lô"},
+	[4] = {neednum = 300, itemid = 39920064, count = 1, name = "ĞÕi Phong Xa"},
+	[5] = {neednum = 120, itemid = 39920065, count = 1, name = "MÕn Thiên Hoa Vû"},
+	[6] = {neednum = 120, itemid = 39920083, count = 1, name = "Mãn Thiên Hoa Vû-Tâm Tß½ng ?N"},
 }
 
 local g_ValentineRoseTopList_Chiqingyu_Bonus =
 {
-	[1] = {neednum = 1, itemid = 39920070, itemid2 = 39920074, count = 1, name = "ÆøÓî²»·²", namewoman = "Èç»¨ËÆÓñ"},
-	[2] = {neednum = 3, itemid = 39920071, itemid2 = 39920075, count = 1, name = "·çÁ÷ÙÃÙÎ", namewoman = "¹úÉ«ÌìÏã"},
-	[3] = {neednum = 10, itemid = 39920072, itemid2 = 39920076, count = 1, name = "ÓñÊ÷ÁÙ·ç", namewoman = "Çã¹úÇã³Ç"},
-	[4] = {neednum = 16, itemid = 39920073, itemid2 = 39920077, count = 1, name = "ÁúÕÂ·ï×Ë", namewoman = "¾øÊÀ¼ÑÈË"},
+	[1] = {neednum = 1, itemid = 39920070, itemid2 = 39920074, count = 1, name = "Khí vû b¤t phàm", namewoman = "Nhß hoa nhß ng÷c"},
+	[2] = {neednum = 3, itemid = 39920071, itemid2 = 39920075, count = 1, name = "Phong lßu phóng khoáng", namewoman = "Qu¯c s¡c thiên hß½ng"},
+	[3] = {neednum = 10, itemid = 39920072, itemid2 = 39920076, count = 1, name = "Ng÷c thø lâm phong", namewoman = "Khuynh Qu¯c Khuynh Thành"},
+	[4] = {neednum = 16, itemid = 39920073, itemid2 = 39920077, count = 1, name = "Long Chß½ng Phøng Tß", namewoman = "Tuy®t thª giai nhân"},
 }
 
 --===============================================
@@ -298,7 +298,7 @@ function ValentineRoseTopList_Rank_ShowState(state)
 	g_ValentineRoseTopList_State = state
 end
 
---ÏÔÊ¾ÊÕËÍ»¨ÊıÁ¿
+--ÏÔÊ¾Ê ËÍ»¨ÊıÁ¿
 function ValentineRoseTopList_Rank_ShowRoseNum()
 	if g_ValentineRoseTopList_CurPage < 1 or g_ValentineRoseTopList_CurPage > 3 then
 		--PushDebugMessage("µ±Ç°Ò³Ç©²»ÊÇÅÅĞĞ°ñ")
@@ -340,7 +340,7 @@ function ValentineRoseTopList_Rank_ShowTopList()
 	local nNumStr = ScriptGlobal_Format(g_ValentineRoseTopList_Info[g_ValentineRoseTopList_CurPage].strsendNum, nSendNum)
 	ValentineRoseTopList_Present_Me:SetText(nNumStr)
 	
-	--ÏÔÊ¾ÊÕ»¨ÊıÁ¿
+	--ÏÔÊ¾Ê »¨ÊıÁ¿
 	ValentineRoseTopList_Receive_TitleName:SetText(g_ValentineRoseTopList_Info[g_ValentineRoseTopList_CurPage].receivetitle)
 	local nReceiveNum =  DataPool:GetPlayerMission_DataRound(g_ValentineRoseTopList_Info[g_ValentineRoseTopList_CurPage].receivemd)
 	local nReceiveNumStr = ScriptGlobal_Format(g_ValentineRoseTopList_Info[g_ValentineRoseTopList_CurPage].strreceiveNum, nReceiveNum)
@@ -353,27 +353,27 @@ function ValentineRoseTopList_Rank_ShowTopList()
 	local strDefName = ValentineRoseTopList_Rank_DefaultName()
 	for i=1, g_ValentineRoseTopList_Count do
 		--³õÊ¼»¯Ä¬ÈÏÖµ
-		g_ValentineRoseTopList_Present_Name[i]:SetText(strDefName)--¡°ĞéÎ»ÒÔ´ı¡±»òÕß¡°Î´ÄÜ¾ö³ö¡±
-		g_ValentineRoseTopList_Present_Score[i]:SetText("#{QRPHB_150113_21}")--¡°ËÍ»¨¶äÊı£º¡±»òÕß¡°ÊÕ»¨¶äÊı£º¡±
+		g_ValentineRoseTopList_Present_Name[i]:SetText(strDefName)--“????”??“????”
+		g_ValentineRoseTopList_Present_Score[i]:SetText("#{QRPHB_150113_21}")--“????:”??“????:”
 		--¸üĞÂÊı¾İ
 		local index,name,score = DataPool:Lua_GetRoseSendTopListInfo(i-1)
 		if index ~= nil and index >= 0 and name ~= "" then
 			g_ValentineRoseTopList_Present_Name[i]:SetText("#cfff263"..name)
 			local scoreStr = ScriptGlobal_Format(g_ValentineRoseTopList_Info[g_ValentineRoseTopList_CurPage].strsend, tostring(score))
-			g_ValentineRoseTopList_Present_Score[i]:SetText(scoreStr)--¡°ËÍ»¨¶äÊı£ºXXX¡±»òÕß¡°ÊÕ»¨¶äÊı£ºXXX¡±
+			g_ValentineRoseTopList_Present_Score[i]:SetText(scoreStr)--“????:XXX”??“????:XXX”
 		end
 	end
 	
 	for i=1, g_ValentineRoseTopList_Count do
 		--³õÊ¼»¯Ä¬ÈÏÖµ
-		g_ValentineRoseTopList_Receive_Name[i]:SetText(strDefName)--¡°ĞéÎ»ÒÔ´ı¡±»òÕß¡°Î´ÄÜ¾ö³ö¡±
-		g_ValentineRoseTopList_Receive_Score[i]:SetText("#{QRPHB_150113_30}")--¡°ËÍ»¨¶äÊı£º¡±»òÕß¡°ÊÕ»¨¶äÊı£º¡±
+		g_ValentineRoseTopList_Receive_Name[i]:SetText(strDefName)--“????”??“????”
+		g_ValentineRoseTopList_Receive_Score[i]:SetText("#{QRPHB_150113_30}")--“????:”??“????:”
 		--¸üĞÂÊı¾İ
 		local index,name,score = DataPool:Lua_GetRoseReceiveTopListInfo(i-1)
 		if index ~= nil and index >= 0 and name ~= "" then
 			g_ValentineRoseTopList_Receive_Name[i]:SetText("#cfff263"..name)
 			local scoreStr = ScriptGlobal_Format(g_ValentineRoseTopList_Info[g_ValentineRoseTopList_CurPage].strreceive, tostring(score))
-			g_ValentineRoseTopList_Receive_Score[i]:SetText(scoreStr)--¡°ËÍ»¨¶äÊı£ºXXX¡±»òÕß¡°ÊÕ»¨¶äÊı£ºXXX¡±
+			g_ValentineRoseTopList_Receive_Score[i]:SetText(scoreStr)--“????:XXX”??“????:XXX”
 		end
 	end
 end
@@ -474,9 +474,9 @@ end
 --===============================================
 -- ÒÔÏÂÎªÊÂ¼şÏìÓ¦
 --===============================================
---µã»÷¹Ø±Õ
+--µã»÷¹Ø± 
 function ValentineRoseTopList_Close_Click()
-	--Êı¾İÇå¿Õ
+	--Êı¾İÇå¿ 
 	ValentineRoseTopList_Clear()
 	--½çÃæÒş²Ø
 	this:Hide()
@@ -498,7 +498,7 @@ function ValentineRoseTopList_Page_Click(index)
 		--Ë¢ĞÂÅÅĞĞ°ñ
 		local flag = ValentineRoseTopList_RankClick_Refresh()
 		if flag == 0 and nPage >= 1 and nPage <= 5 then
-			g_ValentineRoseTopList_Btn_Page[nPage]:SetCheck(1)--ÇĞ»ØÔ­À´Ò³Ãæ
+			g_ValentineRoseTopList_Btn_Page[nPage]:SetCheck(1)--??????
 		end
 	elseif g_ValentineRoseTopList_CurPage == 4 then
 		ValentineRoseTopList_Exchange_Qingrenjie_Update()
@@ -527,7 +527,7 @@ function ValentineRoseTopList_RankClick_Refresh()
 	--ÇëÇó·şÎñÆ÷Êı¾İ
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name( "ClientAskRoseTopList" )
-		Set_XSCRIPT_ScriptID( 891049 )--´ıĞŞ¸Ä½Å±¾ºÅ£º891049
+		Set_XSCRIPT_ScriptID( 891049 )--??????:891049
 		Set_XSCRIPT_Parameter(0,g_ValentineRoseTopList_CurPage)
 		Set_XSCRIPT_ParamCount(1)
 	Send_XSCRIPT()
@@ -545,7 +545,7 @@ function ValentineRoseTopList_Present_Zhanshi(index)
 	PushEvent("OPEN_ROSETOPLIST_ZHANSHI",index, g_ValentineRoseTopList_CurPage)
 end
 
---ÊÕ»¨µã»÷Ô¤ÀÀ
+--Ê »¨µã»÷Ô¤ÀÀ
 function ValentineRoseTopList_Receive_Zhanshi(index)
 	--²ÎÊıÅĞ¶Ï
 	if index < 1 or index > 3 then
@@ -569,21 +569,21 @@ function ValentineRoseTopList_Prize_Present(pos)
 	end
 	
 	--ÅĞ¶ÏÁì½±Ê±¼ä
-	if g_ValentineRoseTopList_State == 0 then--ÀíÂÛÉÏ²»´æÔÚ
+	if g_ValentineRoseTopList_State == 0 then--??????
 		PushDebugMessage(g_ValentineRoseTopList_Tip[g_ValentineRoseTopList_CurPage].tip1)
 		return
-	elseif g_ValentineRoseTopList_State >= 1 and g_ValentineRoseTopList_State <= 5 then--ÅÅĞĞ°ñ¼ÆÊ±ÖĞ
+	elseif g_ValentineRoseTopList_State >= 1 and g_ValentineRoseTopList_State <= 5 then--??????
 		PushDebugMessage(g_ValentineRoseTopList_Tip[g_ValentineRoseTopList_CurPage].tip2)
 		return
-	elseif g_ValentineRoseTopList_State == 6 then--¿ÉÒÔÁì½±
-	else--ÀíÂÛÉÏ²»´æÔÚ
+	elseif g_ValentineRoseTopList_State == 6 then--????
+	else--??????
 		PushDebugMessage(g_ValentineRoseTopList_Tip[g_ValentineRoseTopList_CurPage].tip3)
 		return
 	end
 	
 	--ÅĞ¶Ï°²È«Ê±¼ä
 	if (tonumber(DataPool:GetLeftProtectTime()) > 0) then
-		PushDebugMessage("#{MGCQ_151230_77}")--ÔÚ°²È«Ê±¼äÄÚÎŞ·¨½øĞĞ´Ë²Ù×÷¡£´ò¿ª°ü¹üÀ¸£¬µã»÷·ÀµÁºÅ°´Å¥¿ÉÒÔ×ÔĞĞÉèÖÃ°²È«Ê±¼ä¡£
+		PushDebugMessage("#{MGCQ_151230_77}")--???????????????????,??????????????????
 		return
 	end
 	
@@ -595,7 +595,7 @@ function ValentineRoseTopList_Prize_Present(pos)
 	--Áì½±
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name( "ClientGetRoseSendTopListPrize" )
-		Set_XSCRIPT_ScriptID( 891049 )--´ıĞŞ¸Ä½Å±¾ºÅ£º891049
+		Set_XSCRIPT_ScriptID( 891049 )--??????:891049
 		Set_XSCRIPT_Parameter(0,g_ValentineRoseTopList_CurPage)
 		Set_XSCRIPT_Parameter(1,pos)
 		Set_XSCRIPT_ParamCount(2)
@@ -603,7 +603,7 @@ function ValentineRoseTopList_Prize_Present(pos)
 
 end
 
---µã»÷ÊÕ»¨°ñÁì½±
+--µã»÷Ê »¨°ñÁì½±
 function ValentineRoseTopList_Prize_Receive(pos)
 	--ÓĞĞ§ĞÔÅĞ¶Ï
 	if g_ValentineRoseTopList_CurPage < 1 or g_ValentineRoseTopList_CurPage > 3 then
@@ -617,21 +617,21 @@ function ValentineRoseTopList_Prize_Receive(pos)
 	end
 	
 	--ÅĞ¶ÏÁì½±Ê±¼ä
-	if g_ValentineRoseTopList_State == 0 then--ÀíÂÛÉÏ²»´æÔÚ
+	if g_ValentineRoseTopList_State == 0 then--??????
 		PushDebugMessage(g_ValentineRoseTopList_Tip[g_ValentineRoseTopList_CurPage].tip1)
 		return
-	elseif g_ValentineRoseTopList_State >= 1 and g_ValentineRoseTopList_State <= 5 then--ÅÅĞĞ°ñ¼ÆÊ±ÖĞ
+	elseif g_ValentineRoseTopList_State >= 1 and g_ValentineRoseTopList_State <= 5 then--??????
 		PushDebugMessage(g_ValentineRoseTopList_Tip[g_ValentineRoseTopList_CurPage].tip2)
 		return
-	elseif g_ValentineRoseTopList_State == 6 then--¿ÉÒÔÁì½±
-	else--ÀíÂÛÉÏ²»´æÔÚ
+	elseif g_ValentineRoseTopList_State == 6 then--????
+	else--??????
 		PushDebugMessage(g_ValentineRoseTopList_Tip[g_ValentineRoseTopList_CurPage].tip3)
 		return
 	end
 	
 	--ÅĞ¶Ï°²È«Ê±¼ä
 	if (tonumber(DataPool:GetLeftProtectTime()) > 0) then
-		PushDebugMessage("#{MGCQ_151230_77}")--ÔÚ°²È«Ê±¼äÄÚÎŞ·¨½øĞĞ´Ë²Ù×÷¡£´ò¿ª°ü¹üÀ¸£¬µã»÷·ÀµÁºÅ°´Å¥¿ÉÒÔ×ÔĞĞÉèÖÃ°²È«Ê±¼ä¡£
+		PushDebugMessage("#{MGCQ_151230_77}")--???????????????????,??????????????????
 		return
 	end
 	
@@ -643,7 +643,7 @@ function ValentineRoseTopList_Prize_Receive(pos)
 	--Áì½±
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name( "ClientGetRoseReceiveTopListPrize" )
-		Set_XSCRIPT_ScriptID( 891049 )--´ıĞŞ¸Ä½Å±¾ºÅ£º891049
+		Set_XSCRIPT_ScriptID( 891049 )--??????:891049
 		Set_XSCRIPT_Parameter(0,g_ValentineRoseTopList_CurPage)
 		Set_XSCRIPT_Parameter(1,pos)
 		Set_XSCRIPT_ParamCount(2)
@@ -654,11 +654,11 @@ end
 --===============================================
 -- ÒÔÏÂÎª»ù´¡º¯Êı
 --===============================================
---×´Ì¬Çå¿Õ
+--×´Ì¬Çå¿ 
 function ValentineRoseTopList_Clear()
- 	--µ±Ç°Ò³ÂëÇå¿Õ
+ 	--µ±Ç°Ò³ÂëÇå¿ 
 	g_ValentineRoseTopList_CurPage = 0
-	--»î¶¯×´Ì¬Çå¿Õ
+	--»î¶¯×´Ì¬Çå¿ 
 	g_ValentineRoseTopList_State = -1
 end
 
@@ -695,7 +695,7 @@ function ValentineRoseTopList_Exchange_Qingrenjie_Update()
 	
 end
 
---³ÕÇéÓñ¶Ò»»½±Àø´°¿Ú
+--³ ÇéÓñ¶Ò»»½±Àø´°¿Ú
 function ValentineRoseTopList_Exchange_Chiqingyu_Update()
 	--ValentineRoseTopList_Ranking_Frame:Hide()
 	--ValentineRoseTopList_Exchange_Client:Show()
@@ -741,7 +741,7 @@ function ValentineRoseTopList_Exchange_Qingrenjie_Click(i)
 	PushEvent("ROSERANK_EXCHANGE_CONFIRM", 1, i, str)
 end
 
---³ÕÇéÓñ¶Ò»»½±Àø
+--³ ÇéÓñ¶Ò»»½±Àø
 function ValentineRoseTopList_Exchange_Chiqingyu_Click(i)
 	local MySex =Player:GetMySex()
 	local itemname

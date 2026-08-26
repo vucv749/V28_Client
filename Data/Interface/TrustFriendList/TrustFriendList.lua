@@ -47,11 +47,11 @@ function TrustFriendList_Update()
 		local isEachOther = DataPool : GetTrustFriend( index, "ISEACHOTHER" )
 		
 		local icon = ""
-		if ( leftTime > 0 ) then						-- 时间还未到
+		if ( leftTime > 0 ) then						-- ?????
 			icon="#-21"
-		elseif( isEachOther ~= 0 ) then			-- 是互为信任伙伴
+		elseif( isEachOther ~= 0 ) then			-- ???????
 			icon="#-19"
-		else																-- 本方时间到，但是是单向
+		else																-- ?????,?????
 			icon="#-20"				
 		end
 		

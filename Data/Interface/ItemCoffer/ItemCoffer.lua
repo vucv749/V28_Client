@@ -12,7 +12,7 @@ local g_CurSelect			= -1;
 local g_CurSelectPet	= -1;
 local g_PetIndex = {};
 
-local PET_MAX_NUMBER = 6+4	--◊Ó¥Û’‰ ﬁ–Ø¥¯…œœﬁ(∞¸¿® ﬁ¿∏)--add by xindefeng
+local PET_MAX_NUMBER = 6+4	--????????(????)--add by xindefeng
 
 -- ΩÁ√Êµƒƒ¨»œœ‡∂‘Œª÷√
 local g_ItemCoffer_Frame_UnifiedXPosition;
@@ -110,9 +110,9 @@ function ItemCoffer_OnLoad()
 	}
 	
 	PACKAGE_TAB_TEXT = {
-		[0] = "µ¿æﬂ",
-		"≤ƒ¡œ",
-		"’‰ ﬁ",
+		[0] = "–’o c¯",
+		"T‡i liÆu",
+		"Tr‚n Th˙",
 	};
 	
 	-- ±£¥ÊΩÁ√Êµƒƒ¨»œœ‡∂‘Œª÷√
@@ -308,7 +308,7 @@ function ItemCoffer_UpDateItem(szPacketName)
 end
 
 --===============================================
--- ∏¸–¬’‰ ﬁ
+-- ∏¸–¬†‰ ﬁ
 --===============================================
 function ItemCoffer_UpDatePet()
 
@@ -328,7 +328,7 @@ function ItemCoffer_UpDatePet()
 				if( nUnlockElapsedTime == 0 ) then
 					szPetName = szPetName.. "  #-05";
 					
-					strToolTips =  "“—º”À¯" ;
+					strToolTips =  "–„ khÛa" ;
 				else
 					szPetName = szPetName.. "  #-10";
 					
@@ -349,14 +349,14 @@ end
 
 
 --===============================================
--- —°÷–’‰ ﬁ
+-- —°÷–†‰ ﬁ
 --===============================================
 function ItemCoffer_ListSelected()
 	
 end
 
 --===============================================
--- ”“º¸—°÷–’‰ ﬁ
+-- ”“º¸—°÷–†‰ ﬁ
 --===============================================
 function ItemCoffer_ShowTargetPet()
 	local nIndex = ItemCoffer_PetList:GetFirstSelectItem();
@@ -380,7 +380,7 @@ end
 --===============================================
 function ItemCoffer_Lock_Clicked()
 
-	if( g_nTheTabIndex == 2 )  then  -- ’‰ ﬁΩÁ√Ê
+	if( g_nTheTabIndex == 2 )  then  -- ????
 		local nPetIndex = ItemCoffer_PetList:GetFirstSelectItem();
 		if(nPetIndex == -1)  then
 			PlayerPackage:Lock("lock", "pet", -1);
@@ -403,7 +403,7 @@ end
 --===============================================
 function ItemCoffer_Unlock_Clicked()
 
-	if( g_nTheTabIndex == 2 )  then  -- ’‰ ﬁΩÁ√Ê
+	if( g_nTheTabIndex == 2 )  then  -- ????
 		local nPetIndex = ItemCoffer_PetList:GetFirstSelectItem();
 		if(nPetIndex == -1)  then
 			PlayerPackage:Lock("unlock", "pet", -1);

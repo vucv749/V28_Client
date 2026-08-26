@@ -1,11 +1,11 @@
--- 新6v6 战队锁定确认UI
--- 战队成员数量
+-- 新6v6 牻队锁定确认UI
+-- 牻队成员数量
 local HuaShanLunJian_LockTeam_TeamMember_Max = 6
 -- 霸剑段位id
 local HuaShanLunJian_LockTeam_BaJianDuanWei = 6
 -- 脚本id
 local HuaShanLunJian_LockTeam_SvrScriptId = 998497
--- 关闭标记
+-- 关睜标记
 local HuaShanLunJian_LockTeam_CloseFlag = 0
 -- 关注NPC
 local HuaShanLunJian_LockTeam_CareObjId = -1
@@ -19,17 +19,17 @@ local HuaShanLunJian_LockTeam_CtrlList = nil
 -- 门派
 local HuaShanLunJian_LockTeam_MenPaiName =
 {
-	[0] = "#{XQ_MP_1}",    	--少林
-	[1] = "#{XQ_MP_2}",    	--明教
-	[2] = "#{XQ_MP_3}",    	--丐帮
-	[3] = "#{XQ_MP_4}",    	--武当
-	[4] = "#{XQ_MP_5}",    	--峨眉
-	[5] = "#{XQ_MP_6}",    	--星宿
-	[6] = "#{XQ_MP_7}",    	--天龙
-	[7] = "#{XQ_MP_8}",    	--天山
-	[8] = "#{XQ_MP_9}",    	--逍遥
-	[9] = "#{JZGN_20230710_138}",	--无门派
-	[10] = "#{WCBZ_220809_53}",		--曼陀山庄 
+	[0] = "#{XQ_MP_1}",    	--??
+	[1] = "#{XQ_MP_2}",    	--??
+	[2] = "#{XQ_MP_3}",    	--??
+	[3] = "#{XQ_MP_4}",    	--??
+	[4] = "#{XQ_MP_5}",    	--??
+	[5] = "#{XQ_MP_6}",    	--??
+	[6] = "#{XQ_MP_7}",    	--??
+	[7] = "#{XQ_MP_8}",    	--??
+	[8] = "#{XQ_MP_9}",    	--??
+	[9] = "#{JZGN_20230710_138}",	--???
+	[10] = "#{WCBZ_220809_53}",		--???? 
 } -- end HuaShanLunJian_LockTeam_MenPaiName
 
 -- 段位1显示
@@ -60,8 +60,8 @@ function HuaShanLunJian_LockTeam_PreLoad()
 	this:RegisterEvent("XBW_UPDATELOCKCONFIRM", true)
 	this:RegisterEvent("XBW_CLOSELOCKCONFIRM", true)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 	this:RegisterEvent("OBJECT_CARED_EVENT", false)
 end -- end func HuaShanLunJian_LockTeam_PreLoad()
 
@@ -80,13 +80,13 @@ function HuaShanLunJian_LockTeam_OnEvent(event)
 	elseif (event == "ADJEST_UI_POS") then
 		HuaShanLunJian_LockTeam_UnifiedPos()
 	elseif (event == "OBJECT_CARED_EVENT") then
-		-- 这个事件目前已经被干掉了
-		-- 要调整关注距离直接去改代码吧 ObjectManager.cpp CObjectManager::Tick(VOID)
+		-- 犫个事件目前已经被干掉了
+		-- 要调狖关注距离直接去改代码吧 ObjectManager.cpp CObjectManager::Tick(VOID)
 		if(HuaShanLunJian_LockTeam_CareObjId < 0 or tonumber(arg0) ~= HuaShanLunJian_LockTeam_CareObjId) then
 			return
 		end
 
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if((arg1 == "distance" and tonumber(arg2) > HuaShanLunJian_LockTeam_MAX_OBJ_DISTANCE) or arg1=="destroy") then
 			--取消关心
 			HuaShanLunJian_LockTeam_Hide()
@@ -156,7 +156,7 @@ end -- end func HuaShanLunJian_LockTeam_OnHidden()
 function HuaShanLunJian_LockTeam_List_BtnOK(arg)
 end -- end func HuaShanLunJian_LockTeam_List_BtnOK()
 
--- 关闭按钮事件
+-- 关睜按钮事件
 function HuaShanLunJian_LockTeam_CloseClicked()
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name("Team_CCallBack_LockCancel")
@@ -232,7 +232,7 @@ function HuaShanLunJian_LockTeam_ResetUITeamInfo()
 		HuaShanLunJian_LockTeam_InitCtrlList()
 	end
 
-	-- 战队成员
+	-- 牻队成员
 	for i=1, 6, 1 do
 		if (HuaShanLunJian_LockTeam_CtrlList.member[i] ~= nil) then
 			HuaShanLunJian_LockTeam_CtrlList.member[i].leaderflag:Hide()
@@ -268,7 +268,7 @@ function HuaShanLunJian_LockTeam_UpdateTeamInfo()
 	local msg = ScriptGlobal_Format("#{HSLJ_190919_410}", beginYear, beginMonth, beginDay, endMonth, endDay)
 	HuaShanLunJian_LockTeam_TopText:SetText(msg)
 
-	-- 刷新战队成员信息
+	-- 刷新牻队成员信息
 	for i=1, HuaShanLunJian_LockTeam_TeamMember_Max, 1 do
 		local guid, memMenPai, memLevel, pos, consume, duanwei1, duanwei2, dunawei3, memName = NewXBW:GetMyTeamMemberInfo(i-1)
 		if (HuaShanLunJian_LockTeam_CtrlList.member[i] ~= nil) then
@@ -318,7 +318,7 @@ function HuaShanLunJian_LockTeam_UpdateTeamInfo()
 					end
 				end
 				-- 确认状态
-				-- 这里应该都是默认未确认状态 所以不需要处理
+				-- 犫里应该都是默认未确认状态 所以不需要处理
 			end
 		end
 	end -- end for

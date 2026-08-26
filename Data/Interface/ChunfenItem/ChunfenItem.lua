@@ -2,11 +2,11 @@
 
 --//
 --¿Ø¼þÁÐ±í
-local m_Controls = {} 				--¿Ø¼þÁÐ±í
-local g_rolltype = 1				--ÃüÔË×ªÅÌÀàÐÍ				
-local g_ItemInd = 0					--³éÈ¡ÎïÆ·Ë÷Òý
-local g_MaxRollCount = 0			--×î´ó³éÈ¡´ÎÊý
-local g_levRollCount = 0			--Ê£Óà³éÈ¡´ÎÊý
+local m_Controls = {} 				--????
+local g_rolltype = 1				--??????				
+local g_ItemInd = 0					--??????
+local g_MaxRollCount = 0			--??????
+local g_levRollCount = 0			--??????
 
 local g_Frame_UnifiedPosition
 local g_targetID = -1
@@ -14,15 +14,15 @@ local g_objCared = -1
 local MAX_OBJ_DISTANCE = 3.0
 
 --×ªÅÌ¿ØÖÆ
-local g_Lightindex = 8	--Æô¶¯ÆðÊ¼Î»ÖÃ
-local g_Step = 1		--Æô¶¯ÆðÊ¼²½Êý
-local g_MaxStep = 4		--×î´ó²½Êý
-local g_SumStep = 0		--²½ÊýÀÛ¼Ó
-local g_RollStep = 1	--³é½±²½Öè(1:¿É³éÈ¡ 2:×ª¶¯ÖÐ 3:¿ÉÁìÈ¡)
-local m_Lights = {}		--ÉÁ¹âµÆ¿Ø¼þÁÐ±í
-local m_Steps = {}		--²½ÊýÁÐ±í
-local m_Rates = {}		--ÆµÂÊÁÐ±í
-local g_AddStep = 0	--ÐèÒªÔö¼ÓµÄ²½Êý
+local g_Lightindex = 8	--??????
+local g_Step = 1		--??????
+local g_MaxStep = 4		--????
+local g_SumStep = 0		--????
+local g_RollStep = 1	--????(1:??? 2:??? 3:???)
+local m_Lights = {}		--???????
+local m_Steps = {}		--????
+local m_Rates = {}		--????
+local g_AddStep = 0	--???????
 
 local g_GiftBox = {}
 local g_ItemID = {}
@@ -68,14 +68,14 @@ function ChunfenItem_OnLoad()
 	
 	g_ItemID =
 	{
-		[1] = {itemid = 30607001, count = 1, name = "ÕäÊÞ»Ø´ºµ¤"},
-		[2] = {itemid = 38002533, count = 3, name = "´ã»êÒº"},
-		[3] = {itemid = 30503132, count = 2, name = "°Ù´ãÉñÓñ"},
-		[4] = {itemid = 38002524, count = 1, name = "Â¹Êñ»êÓñ"},
-		[5] = {itemid = 30501361, count = 1, name = "¹¦Á¦µ¤"},
-		[6] = {itemid = 10124625, count = 1, name = "ÇàÑôÉ½É«£¨7Ìì£©"},
-		[7] = {itemid = 30900006, count = 2, name = "Ììî¸Ç¿»¯¾«»ª"},
-		[8] = {itemid = 30008034, count = 2, name = "½ð¸ÕÉ°"},
+		[1] = {itemid = 30607001, count = 1, name = "Trân Thú H°i Xuân Ðan"},
+		[2] = {itemid = 38002533, count = 3, name = "Tôi H°n D¸ch"},
+		[3] = {itemid = 30503132, count = 2, name = "Bách Th¯i Th¥n Ng÷c"},
+		[4] = {itemid = 38002524, count = 1, name = "Lµc Thøc H°n Ng÷c"},
+		[5] = {itemid = 30501361, count = 1, name = "Công Lñc Ðan"},
+		[6] = {itemid = 10124625, count = 1, name = "Thanh Dß½ng S½n S¡c(7Thiên)"},
+		[7] = {itemid = 30900006, count = 2, name = "Thiên Canh Cß¶ng Hóa Tinh Hoa"},
+		[8] = {itemid = 30008034, count = 2, name = "Kim Cß½ng Sa"},
 	}
 	
 	m_Steps = {
@@ -101,19 +101,19 @@ function ChunfenItem_OnEvent(event)
 			--´ò¿ªÃüÔËÖ®ÂÖ
 			--local g_MaxRollCount = 0			--×î´ó³éÈ¡´ÎÊý
 			--local g_levRollCount = 0			--Ê£Óà³éÈ¡´ÎÊý
-			g_levRollCount = Get_XParam_INT(1)		--Ê£Óà³é½±´ÎÊý
-			g_MaxRollCount = Get_XParam_INT(2)		--×î´ó³é½±´ÎÊý
+			g_levRollCount = Get_XParam_INT(1)		--??????
+			g_MaxRollCount = Get_XParam_INT(2)		--??????
 			g_targetID = Get_XParam_INT(3)		
-			g_ItemInd = Get_XParam_INT(4)			--½±Æ·Ë÷Òý
+			g_ItemInd = Get_XParam_INT(4)			--????
 			
 			if g_ItemInd > 0 and g_RollStep ~= 2 then
-				g_RollStep = 3						--ÓÐÎïÆ·ÓÖÃ»ÓÐÔÚRollµÄ²½ÖèÔòÖ±½Ó×ßÁìÈ¡Á÷³Ì
+				g_RollStep = 3						--???????Roll???????????
 			end
 			
 			g_objCared = DataPool : GetNPCIDByServerID(g_targetID)
 			
 			if g_objCared == -1 then
-				PushDebugMessage("server´«¹ýÀ´µÄÊý¾ÝÓÐÎÊÌâ¡£")
+				PushDebugMessage("Dæ li®u máy chü có v¤n ð«")
 				return
 			end
 			ChunfenItem_OpenFateRoll(g_levRollCount, g_MaxRollCount, g_ItemInd)
@@ -228,7 +228,7 @@ function ChunfenItem_Frame_On_ResetPos()
 end
 
 function ChunfenItem_Roll_Effect()	
-	-- Õý³£×ª¶¯
+	--  ý³£×ª¶¯
 	local lightnow = g_Lightindex
 	local lightnext = g_Lightindex + 1
 	if lightnext == 9 then
@@ -293,7 +293,7 @@ function ChunfenItem_TimerBegin( ind )
 	--m_Controls.m_Note:SetText(msgStr)
 	
 	ChunfenItem_CalcAddStep(ind)
-	g_RollStep = 2 --Ò¡½±ÖÐ
+	g_RollStep = 2 --???
 	m_Lights[g_Lightindex] : PlayWarning( 0 )
 	g_Lightindex = 8
 	g_Step = 1
@@ -327,7 +327,7 @@ function ChunfenItem_CalcAddStep(Ind)
 	g_AddStep = math.mod((8 + (Ind - currInd)), 8)
 end
 
---»Øµ÷º¯Êý-¹Ø±Õ
+--»Øµ÷º¯Êý-¹Ø± 
 function ChunfenItem_OnClosed()
 	ChunfenItem_CloseRoll()
 end

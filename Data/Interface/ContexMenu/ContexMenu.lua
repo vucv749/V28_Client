@@ -1,5 +1,5 @@
 
---µ±¶ÔÏóÏûÊ§µÄÊ±ºò£¬×Ô¶¯¹Ø±ÕÕâ¸ö´°¿Ú
+--µ±¶ÔÏóÏûÊ§µÄÊ±ºò£¬×Ô¶¯¹Ø±  â¸ö´°¿Ú
 local objCared = -1;
 
 local g_MenuType = "";
@@ -19,7 +19,7 @@ local g_Menu_ObjId = 0;
 
 local g_TeamBoard_Guid = -1;
 
---- ÀŞÌ¨¹ÛÕ½ÕßbuffµÄImpact,Èç¹ûÓĞÕâ¸öBUFF,ÆÁ±ÎÓÒ¼ü²Ëµ¥
+--- ÀŞÌ¨¹Û ½ ßbuffµÄImpact,Èç¹ûÓĞ â¸öBUFF,ÆÁ±ÎÓÒ¼ü²Ëµ¥
 local g_LEITAI_VIEWER_BUFF = 2711  
 
 local currentRankListIndex;
@@ -88,7 +88,7 @@ function ContexMenu_OnEvent(event)
 
 		local isChalView = DataPool:IfHaveBuffByID(g_LEITAI_VIEWER_BUFF)
 	    if isChalView == 1 then
-	        -- Èç¹ûÕıÔÚ¹ÛÕ½,²»ÄÜµ¯³öÓÒ¼ü²Ëµ¥
+	        -- Èç¹û ıÔÚ¹Û ½,²»ÄÜµ¯³öÓÒ¼ü²Ëµ¥
 	        return
 	    end
 	
@@ -199,7 +199,7 @@ function ContexMenu_OnEvent(event)
 				ContexMenu_TeamLeader:Show();
 			end
 			
-			AxTrace(0, 0, "¶Ó³¤²Ëµ¥ menu enter: " ..tostring( arg4 ) );
+			AxTrace(0, 0, "Ğµi trß·ng thái ğ½n menu enter:" ..tostring( arg4 ) );
 			currentSelectMember = tonumber( arg4 );
 
 			return;
@@ -229,7 +229,7 @@ function ContexMenu_OnEvent(event)
 		
 		--------------------------------------------------------------------------------------------------------------------------
 		--
-		-- Èç¹ûÊÇ¶ÓÔ±³öÕ½ÕäÊŞµÄÓÒ¼üµ¯³ö²Ëµ¥
+		-- Èç¹ûÊÇ¶ÓÔ±³ö ½ äÊŞµÄÓÒ¼üµ¯³ö²Ëµ¥
 		-- add by WTT
 		--
 		if(arg0 == "Team_Member_Pet") then
@@ -263,10 +263,10 @@ function ContexMenu_OnEvent(event)
 				Myself_DisbondRide:Disable();
 			elseif( tonumber( horse ) == 1 ) then
 				Myself_DisbondRide:Enable();
-				Myself_DisbondRide:SetText("ÑûÇëÍ¬Æï");
+				Myself_DisbondRide:SetText("M¶i Ğ°ng KÜ");
 			else
 				Myself_DisbondRide:Enable();
-				Myself_DisbondRide:SetText("È¡ÏûÍ¬Æï");
+				Myself_DisbondRide:SetText("Hüy bö Ğ°ng KÜ");
 			end
 			
 			local Level = Player:GetData( "LEVEL" );
@@ -297,10 +297,10 @@ function ContexMenu_OnEvent(event)
 				Myself_InTeam_DisbondRide:Disable();
 			elseif( tonumber( horse ) == 1 ) then
 				Myself_InTeam_DisbondRide:Enable();
-				Myself_InTeam_DisbondRide:SetText("ÑûÇëÍ¬Æï");
+				Myself_InTeam_DisbondRide:SetText("M¶i Ğ°ng KÜ");
 			else
 				Myself_InTeam_DisbondRide:Enable();
-				Myself_InTeam_DisbondRide:SetText("È¡ÏûÍ¬Æï");
+				Myself_InTeam_DisbondRide:SetText("Hüy bö Ğ°ng KÜ");
 			end
 		
 			local Level = Player:GetData( "LEVEL" );
@@ -338,10 +338,10 @@ function ContexMenu_OnEvent(event)
 				ContexMenu_Model_Open_Other_Invite_Ride:Disable();
 			elseif( tonumber( horse ) == 1 ) then
 				ContexMenu_Model_Open_Other_Invite_Ride:Enable();
-				ContexMenu_Model_Open_Other_Invite_Ride:SetText("ÑûÇëÍ¬Æï");
+				ContexMenu_Model_Open_Other_Invite_Ride:SetText("M¶i Ğ°ng KÜ");
 			else
 				ContexMenu_Model_Open_Other_Invite_Ride:Enable();
-				ContexMenu_Model_Open_Other_Invite_Ride:SetText("È¡ÏûÍ¬Æï");
+				ContexMenu_Model_Open_Other_Invite_Ride:SetText("Hüy bö Ğ°ng KÜ");
 			end
 			
 			if Player : GetData( "GUILD" ) == -1 then
@@ -373,10 +373,10 @@ function ContexMenu_OnEvent(event)
 				ContexMenu_Model_Open_Other_Not_teammer_Invite_Ride:Disable();
 			elseif( tonumber( horse ) == 1 ) then
 				ContexMenu_Model_Open_Other_Not_teammer_Invite_Ride:Enable();
-				ContexMenu_Model_Open_Other_Not_teammer_Invite_Ride:SetText("ÑûÇëÍ¬Æï");
+				ContexMenu_Model_Open_Other_Not_teammer_Invite_Ride:SetText("M¶i Ğ°ng KÜ");
 			else
 				ContexMenu_Model_Open_Other_Not_teammer_Invite_Ride:Enable();
-				ContexMenu_Model_Open_Other_Not_teammer_Invite_Ride:SetText("È¡ÏûÍ¬Æï");
+				ContexMenu_Model_Open_Other_Not_teammer_Invite_Ride:SetText("Hüy bö Ğ°ng KÜ");
 			end
 			
 			if Player : GetData( "GUILD" ) == -1 then
@@ -407,10 +407,10 @@ function ContexMenu_OnEvent(event)
 				ContexMenu_Model_Open_Other_teammer_me_Ride:Disable();
 			elseif( tonumber( horse ) == 1 ) then
 				ContexMenu_Model_Open_Other_teammer_me_Ride:Enable();
-				ContexMenu_Model_Open_Other_teammer_me_Ride:SetText("ÑûÇëÍ¬Æï");
+				ContexMenu_Model_Open_Other_teammer_me_Ride:SetText("M¶i Ğ°ng KÜ");
 			else
 				ContexMenu_Model_Open_Other_teammer_me_Ride:Enable();
-				ContexMenu_Model_Open_Other_teammer_me_Ride:SetText("È¡ÏûÍ¬Æï");
+				ContexMenu_Model_Open_Other_teammer_me_Ride:SetText("Hüy bö Ğ°ng KÜ");
 			end
 			
 			if Player : GetData( "GUILD" ) == -1 then
@@ -496,13 +496,13 @@ function ContexMenu_OnEvent(event)
 
 		--------------------------------------------------------------------------------------------------------------------------
 		--
-		-- µã»÷Õ÷ÓÑÍ¶Æ±ÈËºó , µ¯³öµÄ²Ëµ¥
+		-- µã»÷ ÷ÓÑÍ¶Æ±ÈËºó , µ¯³öµÄ²Ëµ¥
 		--
 		if(arg0 == "findfrind_vote") then
 			ContexMenu_HideAll();
 			this:Show();
 			g_MenuType = arg1;
-			g_Voteinfo_index = tonumber(arg4);   --ÏÖÔÚÊÇµÚ¼¸Ìõ
+			g_Voteinfo_index = tonumber(arg4);   --??????
 			ContexMenu_FindFriend_VoteInfo:Show();
 			ContexMenu_FindFriend_VoteInfo:SetPopMenuPos(arg2,arg3);
 
@@ -549,9 +549,9 @@ function ContexMenu_OnEvent(event)
 				for i = 0 , 3 do
 					local strGroupName = DataPool:GetGroupingName(i)
 					if strGroupName ~= "" then
-						g_MoveToMenuItem[i + 1]:SetText("ÒÆ¶¯µ½"..strGroupName)
+						g_MoveToMenuItem[i + 1]:SetText("Di ğµng Ğáo"..strGroupName)
 					else
-						g_MoveToMenuItem[i + 1]:SetText("ÒÆ¶¯µ½"..g_GroupingName[i + 1])
+						g_MoveToMenuItem[i + 1]:SetText("Di ğµng Ğáo"..g_GroupingName[i + 1])
 					end
 				end
 				ContexMenu_FriendMenu:Show()
@@ -577,9 +577,9 @@ function ContexMenu_OnEvent(event)
 			for i = 0 , 3 do
 				local strGroupName = DataPool:GetGroupingName(i)
 				if strGroupName ~= "" then
-					g_MoveToMenuItem[i + 1]:SetText("ÒÆ¶¯µ½"..strGroupName)
+					g_MoveToMenuItem[i + 1]:SetText("Di ğµng Ğáo"..strGroupName)
 				else
-					g_MoveToMenuItem[i + 1]:SetText("ÒÆ¶¯µ½"..g_GroupingName[i + 1])
+					g_MoveToMenuItem[i + 1]:SetText("Di ğµng Ğáo"..g_GroupingName[i + 1])
 				end
 			end
 
@@ -691,15 +691,15 @@ function ContexMenu_OnEvent(event)
 		--add by xindefeng
 		if( arg0 == "OfficialPopMenu" ) then
 			currentGuildListIndex = arg2
-			local type = tonumber(arg5)--Ñ¡ÔñÀàĞÍ
-			if(type == 0)  then	--×Ô¼º
+			local type = tonumber(arg5)--????
+			if(type == 0)  then	--??
 				return;
-			elseif(type == 1) then	--ÔÚÏß
+			elseif(type == 1) then	--??
 				ContexMenuFrame_Close();
 				this:Show();
 				ContexMenu_OfficialPopMenu:Show();
 				ContexMenu_OfficialPopMenu:SetPopMenuPos(arg3,arg4);
-			elseif(type == 2) then	--²»ÔÚÏß
+			elseif(type == 2) then	--???
 				return
 			end
 			
@@ -754,10 +754,10 @@ function ContexMenu_OnEvent(event)
 				Raider_NotTeamerNotRaider_InviteToRide:Disable();
 			elseif( tonumber( horse ) == 1 ) then
 				Raider_NotTeamerNotRaider_InviteToRide:Enable();
-				Raider_NotTeamerNotRaider_InviteToRide:SetText("ÑûÇëÍ¬Æï");
+				Raider_NotTeamerNotRaider_InviteToRide:SetText("M¶i Ğ°ng KÜ");
 			elseif( tonumber( horse ) == 2 ) then
 				Raider_NotTeamerNotRaider_InviteToRide:Enable();
-				Raider_NotTeamerNotRaider_InviteToRide:SetText("È¡ÏûÍ¬Æï");
+				Raider_NotTeamerNotRaider_InviteToRide:SetText("Hüy bö Ğ°ng KÜ");
 			end
 			this:Show();
 			--¹ØĞÄNPC
@@ -784,10 +784,10 @@ function ContexMenu_OnEvent(event)
 				NotTeamerNotRaider_Raider_InviteToRide:Disable();
 			elseif( tonumber( horse ) == 1 ) then
 				NotTeamerNotRaider_Raider_InviteToRide:Enable();
-				NotTeamerNotRaider_Raider_InviteToRide:SetText("ÑûÇëÍ¬Æï");
+				NotTeamerNotRaider_Raider_InviteToRide:SetText("M¶i Ğ°ng KÜ");
 			elseif( tonumber( horse ) == 2 ) then
 				NotTeamerNotRaider_Raider_InviteToRide:Enable();
-				NotTeamerNotRaider_Raider_InviteToRide:SetText("È¡ÏûÍ¬Æï");
+				NotTeamerNotRaider_Raider_InviteToRide:SetText("Hüy bö Ğ°ng KÜ");
 			end
 			this:Show();
 			--¹ØĞÄNPC
@@ -855,7 +855,7 @@ function ContexMenu_OnEvent(event)
 		if(arg0 == "groupwindow_show") then
 			--¶ÁÈ¡²ÎÊı
 			g_RaidSquadIndex = tonumber(arg1)
-			--¹Ø±Õ¾É´°¿Ú
+			--¹Ø± ¾É´°¿Ú
 			if (g_RaidSquadIndex == 0) or (g_RaidSquadIndex == 1) or (g_RaidSquadIndex == 2) or (g_RaidSquadIndex == 3) or (g_RaidSquadIndex == 4) then
 			else
 				return
@@ -926,7 +926,7 @@ function ContexMenu_OnEvent(event)
 		if(tonumber(arg0) ~= objCared) then
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(arg1=="destroy") then
 			ContexMenuFrame_Close();
 
@@ -989,7 +989,7 @@ function ContexMenu_HideAll()
 	ContexMenu_FriendMenu:ClosePopMenu();
 	ContexMenu_EnmeyListMenu:ClosePopMenu();
 	
-	-- Òş²Ø×é¶Ó½çÃæÉÏµÄ¶ÓÓÑÕäÊŞ°´Å¥ÓÒ¼ü²Ëµ¥
+	-- Òş²Ø×é¶Ó½çÃæÉÏµÄ¶ÓÓÑ äÊŞ°´Å¥ÓÒ¼ü²Ëµ¥
 	ContexMenu_MemberPetMenu:ClosePopMenu();
 	
 	-- Òş²Ø×Ô¼º³èÎï´°¿Ú²Ëµ¥
@@ -1147,7 +1147,7 @@ end
 --*******************************************************************************************************************************
 function ContexMenu_DismissTeam_Clicked()
 
-	Player:OpenDismissTeamMsgbox();			-- ´ò¿ª½âÉ¢¶ÓÎéµÄ¶ş´ÎÈ·ÈÏ´°¿Ú			add by WTT	20090218	
+	Player:OpenDismissTeamMsgbox();			-- ?????????????			add by WTT	20090218	
 	ContexMenuFrame_Close();
 end
 
@@ -1324,7 +1324,7 @@ function ContexMenu_OnAskTeam()
 	Friend:AskTeam(DataPool:GetFriend(tonumber(currentSelectChannal), tonumber(currentIndex), "NAME"))
 end
 
-----add:lby20071207ÃÔÓ°¸ú×Ù¹ØÏµĞÅÏ¢ÖĞ²éÕÒ28818
+----add:lby20071207ÃÔÓ°¸ú×Ù¹ØÏµĞÅÏ¢ÖĞ²é Ò28818
 function ContexMenu_OnFriendInfoEx()
 	DataPool:LookupOtherParticularInfo(tonumber(currentSelectChannal), tonumber(currentIndex))
 	ContexMenuFrame_Close()
@@ -1375,7 +1375,7 @@ function ContexMenu_ThrowList( nGroup )
 		local name = DataPool:GetFriend(tonumber(currentSelectChannal), tonumber(currentIndex), "NAME")
 		DataPool:AddFriend(nGroup, name, 1)		
 		if tonumber(nGroup) == 5 then
-		    PushDebugMessage("ÔİÊ±ÎŞ·¨¼ÓÈëºÚÃûµ¥")
+		    PushDebugMessage("TÕm th¶i không th¬ gia nh§p s± ğen")
 		end
 	else
 		DataPool:ThrowToList( tonumber( currentSelectChannal ), tonumber( currentIndex ), tonumber( nGroup ) );
@@ -1476,7 +1476,7 @@ end
 
 --Í¬ÃË³ÉÔ±°ï»áÏêÏ¸ĞÅÏ¢´¦Àí
 function ContexMenu_GuildLeagueMember_DetailInfo_Clicked()
-	Guild:AskAnyGuildDetailInfo(g_LeagueMemberID) --²éÑ¯Ö¸¶¨ID°ï»áÏêÏ¸ĞÅÏ¢
+	Guild:AskAnyGuildDetailInfo(g_LeagueMemberID) --????ID??????
 	Guild:CloseKickGuildBox()
 	
 	ContexMenuFrame_Close();
@@ -1559,7 +1559,7 @@ function ContexMenu_PVP_Challenge_Clicked()
 		ContexMenuFrame_Close();
 		return
 	end
-	Player:PVP_Challenge( 1 );     --1Îªµ¯³öĞûÕ½È·ÈÏ¶Ô»°¿ò
+	Player:PVP_Challenge( 1 );     --1??????????
 	ContexMenuFrame_Close();
 end
 
@@ -1576,7 +1576,7 @@ function ContexMenu_OnPrivate_FromInc()
 	ContexMenuFrame_Close();
 end
 
---add:lby20071207ÃÔÓ°¸ú×ÙÁÄÌìĞÅÏ¢ÖĞ²éÕÒ28818
+--add:lby20071207ÃÔÓ°¸ú×ÙÁÄÌìĞÅÏ¢ÖĞ²é Ò28818
 function ContexMenu_ChatBoard_LookPos_Clicked()
 	ContexMenuFrame_Clicked();
 	local szName = Talk:HandleMenuAction("Name");
@@ -1599,9 +1599,9 @@ end
 
 --"¹ÙÔ±ÁĞ±í":·¢ËÍÓÊ¼ş--add by xindefeng
 function ContexMenu_OfficialPopMenu_SendMail_Clicked()
-	ContexMenuFrame_Close()	--¹Øµô²Ëµ¥
+	ContexMenuFrame_Close()	--????
 
-	local szName = Guild:GetAnyGuildMembersInfo(tonumber(currentGuildListIndex), "Name")	--»ñÈ¡¶Ô·½Ãû×Ö
+	local szName = Guild:GetAnyGuildMembersInfo(tonumber(currentGuildListIndex), "Name")	--??????
 	if(nil ~= szName) then
 		DataPool:OpenMail(szName)
 	end
@@ -1609,17 +1609,17 @@ end
 
 --"¹ÙÔ±ÁĞ±í":Ë½ÁÄ--add by xindefeng
 function ContexMenu_OfficialPopMenu_PrivateTalk_Clicked()
-	ContexMenuFrame_Close()	--¹Øµô²Ëµ¥
+	ContexMenuFrame_Close()	--????
 	
-	local szName = Guild:GetAnyGuildMembersInfo(tonumber(currentGuildListIndex), "Name")	--»ñÈ¡¶Ô·½Ãû×Ö
+	local szName = Guild:GetAnyGuildMembersInfo(tonumber(currentGuildListIndex), "Name")	--??????
 	Talk:ContexMenuTalk(szName)
 end
 
 --"¹ÙÔ±ÁĞ±í":²é¿´ÏêÏ¸--add by xindefeng
 function ContexMenu_OfficialPopMenu_CheckInfo_Clicked()
-	ContexMenuFrame_Close()	--¹Øµô²Ëµ¥
+	ContexMenuFrame_Close()	--????
 	
-	local szName = Guild:GetAnyGuildMembersInfo(tonumber(currentGuildListIndex), "Name")	--»ñÈ¡¶Ô·½Ãû×Ö
+	local szName = Guild:GetAnyGuildMembersInfo(tonumber(currentGuildListIndex), "Name")	--??????
 	if(nil ~= szName) then
 		if(Friend:IsPlayerIsFriend(szName) == 1) then	
 			local nGroup,nIndex;
@@ -1634,17 +1634,17 @@ end
 
 --"¹ÙÔ±ÁĞ±í":¼ÓÎªºÃÓÑ--add by xindefeng
 function ContexMenu_OfficialPopMenu_AddFriend_Clicked()
-	ContexMenuFrame_Close()	--¹Øµô²Ëµ¥
+	ContexMenuFrame_Close()	--????
 		
-	local szName = Guild:GetAnyGuildMembersInfo(tonumber(currentGuildListIndex), "Name")	--»ñÈ¡¶Ô·½Ãû×Ö
+	local szName = Guild:GetAnyGuildMembersInfo(tonumber(currentGuildListIndex), "Name")	--??????
 	DataPool:AddFriendAndGrouping(szName)
 end
 
 --"¹ÙÔ±ÁĞ±í":ÑûÇëÈë¶Ó--add by xindefeng
 function ContexMenu_OfficialPopMenu_Invite_Clicked()
-	ContexMenuFrame_Close()	--¹Øµô²Ëµ¥
+	ContexMenuFrame_Close()	--????
 	
-	local szName = Guild:GetAnyGuildMembersInfo(tonumber(currentGuildListIndex), "Name")	--»ñÈ¡¶Ô·½Ãû×Ö
+	local szName = Guild:GetAnyGuildMembersInfo(tonumber(currentGuildListIndex), "Name")	--??????
 	if(nil ~= szName) then
 		Target:SendTeamRequest(szName);
 	end	
@@ -1652,9 +1652,9 @@ end
 
 --"¹ÙÔ±ÁĞ±í":ÉêÇëÈë¶Ó--add by xindefeng
 function ContexMenu_OfficialPopMenu_Apply_Clicked()
-	ContexMenuFrame_Close()	--¹Øµô²Ëµ¥
+	ContexMenuFrame_Close()	--????
 	
-	local szName = Guild:GetAnyGuildMembersInfo(tonumber(currentGuildListIndex), "Name")	--»ñÈ¡¶Ô·½Ãû×Ö
+	local szName = Guild:GetAnyGuildMembersInfo(tonumber(currentGuildListIndex), "Name")	--??????
 	if(nil ~= szName) then
 		Target:SendTeamApply(szName)
 	end

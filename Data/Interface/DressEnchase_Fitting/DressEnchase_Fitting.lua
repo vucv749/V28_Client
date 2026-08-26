@@ -34,23 +34,23 @@ function DressEnchase_Fitting_OnEvent(event)
 		end
 	end
 	
-	-- ÏâÇ¶³É¹¦£¬Èç¹ûÊÔÒÂ¼ä¿ª×Å£¬¾ÍÏÈ¹Ø±Õ
+	-- ÏâÇ¶³É¹¦£¬Èç¹ûÊÔÒÂ¼ä¿ª×Å£¬¾ÍÏÈ¹Ø± 
 	if event == "UI_COMMAND" and tonumber(arg0) == 09111602 then		
 		if this:IsVisible() then
-			DressEnchase_Fitting_OnHiden();										-- ¹Ø±Õ¡°ÏâÇ¶Ô¤ÀÀ¡±ÊÔÒÂ¼ä£¬ÕâÀïÏà¹ØÊÔÒÂÎïÆ·µÄÊı¾İ¶¼Ã»ÁË£¬ËùÒÔ²»ÄÜ¼¤»î¡°ÏâÇ¶Ô¤ÀÀ¡±°´Å¥
+			DressEnchase_Fitting_OnHiden();										-- ??“????”???,??????????????,??????“????”??
 		end
 	end
 	
-	-- ¹Ø±ÕÊÔÒÂ¼ä
+	-- ¹Ø± ÊÔÒÂ¼ä
 	if (event == "CLOSE_DRESS_ENCHASE_FITTING") then		
 		if this:IsVisible() then
-			DressEnchase_Fitting_OnHiden();										-- ÕâÀïÊÇÓÉÓÚÂß¼­²»ºÏÀí¡¢ÎïÆ·²»ºÏ¸ñ¹Ø±ÕµÄÊÔÒÂ¼ä£¬ËùÒÔ²»ÄÜ¼¤»î¡°ÏâÇ¶Ô¤ÀÀ¡±°´Å¥
+			DressEnchase_Fitting_OnHiden();										-- ??????????????????????,??????“????”??
 		end
 	end
 	
 	-- FakeObjectÄ£ĞÍ½çÃæ»¥³â
-	if ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 )  --±äĞÔ
-		then   --Ê±×°Ô¤ÀÀ
+	if ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 )  --??
+		then   --????
 		if (this:IsVisible()) then
 			DressEnchase_Fitting_OnClosed()
 			return
@@ -60,28 +60,28 @@ function DressEnchase_Fitting_OnEvent(event)
 	-- ¿ªÊ¼°ÚÌ¯
 	if ( event == "OPEN_STALL_SALE" ) then
 		if (this:IsVisible()) then
-			DressEnchase_Fitting_OnClosed();										-- ¹Ø±Õ¡°ÏâÇ¶Ô¤ÀÀ¡±ÊÔÒÂ¼ä£¬ÖØĞÂ¼¤»î¡°ÏâÇ¶Ô¤ÀÀ¡±°´Å¥
+			DressEnchase_Fitting_OnClosed();										-- ??“????”???,????“????”??
 		end
 	end
 	
 	-- ¶Á½ø¶ÈÌõÖĞ
 	if ( event == "PROGRESSBAR_SHOW" ) then
 		if (this:IsVisible()) then
-			DressEnchase_Fitting_OnClosed();									-- ¹Ø±Õ¡°ÏâÇ¶Ô¤ÀÀ¡±ÊÔÒÂ¼ä£¬ÖØĞÂ¼¤»î¡°ÏâÇ¶Ô¤ÀÀ¡±°´Å¥
+			DressEnchase_Fitting_OnClosed();									-- ??“????”???,????“????”??
 		end
 	end
 	
 	-- ÊÔÒÂµÄÊ±ºò²»ÄÜ´ò¿ª½ÇÉ«×ÊÁÏ´°¿Ú
 	if ( event == "OPEN_EQUIP" ) then
 		if (this:IsVisible()) then
-			DressEnchase_Fitting_OnClosed();									-- ¹Ø±Õ¡°ÏâÇ¶Ô¤ÀÀ¡±ÊÔÒÂ¼ä£¬ÖØĞÂ¼¤»î¡°ÏâÇ¶Ô¤ÀÀ¡±°´Å¥
+			DressEnchase_Fitting_OnClosed();									-- ??“????”???,????“????”??
 		end
 	end
 	
 	-- ÊÔÒÂµÄÊ±ºò²»ÄÜ´ò¿ªÒÂ¹ñ´°¿Ú
 	if ( event == "YIGUI_OPEN" ) then
 		if (this:IsVisible()) then
-			DressEnchase_Fitting_OnClosed();									-- ¹Ø±Õ¡°ÏâÇ¶Ô¤ÀÀ¡±ÊÔÒÂ¼ä£¬ÖØĞÂ¼¤»î¡°ÏâÇ¶Ô¤ÀÀ¡±°´Å¥
+			DressEnchase_Fitting_OnClosed();									-- ??“????”???,????“????”??
 		end
 	end
 	
@@ -121,10 +121,10 @@ function DressEnchase_Fitting_OnEvent(event)
 			return;
 		end
 		
-		--Èç¹ûºÍÉÌÈËµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍÉÌÈËµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			if this:IsVisible() then
-				DressEnchase_Fitting_OnHiden();								-- ¹Ø±Õ¡°ÏâÇ¶Ô¤ÀÀ¡±ÊÔÒÂ¼ä£¬ÓÉÓÚ¾àÀëNPC½ÏÔ¶£¬ÏâÇ¶½çÃæ¿ÉÄÜÒÑ¾­¹Ø±ÕÁË£¬ËùÒÔ²»ĞèÒª¼¤»î¡°ÏâÇ¶Ô¤ÀÀ¡±°´Å¥ÁË¡£
+				DressEnchase_Fitting_OnHiden();								-- ??“????”???,????NPC??,???????????,???????“????”????
 			end
 		end
 	end
@@ -146,9 +146,9 @@ end
 
 --*******************************************************************************
 -- ×¢Òâ£¡£¡£¡
--- OnHiden() º¯Êı¹Ø±Õ½çÃæµÄÊ±ºò£¬²»»áÔÙ´Î¼¤»î¡°ÏâÇ¶Ô¤ÀÀ¡±°´Å¥
--- OnClosed() º¯Êı¹Ø±Õ½çÃæµÄÊ±ºò£¬»áÔÙ´Î¼¤»î¡°ÏâÇ¶Ô¤ÀÀ¡±°´Å¥
--- ÕâÁ½¸öº¯Êı²»ÄÜÍ¨ÓÃ~~
+-- OnHiden() º¯Êı¹Ø± ½çÃæµÄÊ±ºò£¬²»»áÔÙ´Î¼¤»î¡°ÏâÇ¶Ô¤ÀÀ¡±°´Å¥
+-- OnClosed() º¯Êı¹Ø± ½çÃæµÄÊ±ºò£¬»áÔÙ´Î¼¤»î¡°ÏâÇ¶Ô¤ÀÀ¡±°´Å¥
+--  âÁ½¸öº¯Êı²»ÄÜÍ¨ÓÃ~~
 --*******************************************************************************
 
 ----------------------------------------------------------------------------------
@@ -170,7 +170,7 @@ end
 
 ----------------------------------------------------------------------------------
 --
--- ¹Ø±Õ
+-- ¹Ø± 
 --
 function DressEnchase_Fitting_OnClosed()
 	

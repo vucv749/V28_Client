@@ -107,7 +107,7 @@ function CoupleZone_RecordDiary_OnClicked_OK()
 	local diaryText = g_CoupleZone_RecordDiary_UI_NoteEditText:GetText()
 
 	if diaryText == "" then
-		PushDebugMessage("#{QLKJ_230331_25}")  --记录内容不能为空。
+		PushDebugMessage("#{QLKJ_230331_25}")  --?????????
 	end
 	
 	if CoupleZone_RecordDiary_CheckState(2) ~= 1 then

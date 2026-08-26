@@ -27,7 +27,7 @@ function FeedYuTu_PreLoad()
 	this:RegisterEvent("ADJEST_UI_POS", false)
 	this:RegisterEvent("OBJECT_CARED_EVENT", false)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED", false)
-	this:RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- 离开场景
+	this:RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- ????
 
 end
 
@@ -59,7 +59,7 @@ end
 --=========================================================
 function FeedYuTu_OnEvent(event)
 
-	if (event == "UI_COMMAND" and tonumber(arg0) == 89117001) then --打开界面
+	if (event == "UI_COMMAND" and tonumber(arg0) == 89117001) then --????
 		FeedYuTu_Clear()
 		g_Total = Get_XParam_INT(0)
 		for i = 1, 4 do
@@ -71,7 +71,7 @@ function FeedYuTu_OnEvent(event)
 		FeedYuTu_ShowFrame()
 		
 
-	elseif (event == "UI_COMMAND" and tonumber(arg0) == 89117002) then --刷新界面
+	elseif (event == "UI_COMMAND" and tonumber(arg0) == 89117002) then --????
 
 		if(not this:IsVisible()) then
     		return
@@ -184,7 +184,7 @@ end
 
 
 --=========================================================
--- 关闭界面
+-- 关睜界面
 --=========================================================
 function FeedYuTu_OnHiden()
 	if g_ObjCared ~= -1 then

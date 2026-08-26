@@ -5,8 +5,8 @@ local g_MVPname;
 local g_menpai;
 local g_type;
 local g_rate;
-local g_MVPType_Damage = 1;--ÉËº¦MVP
-local g_MVPType_Treatment =2;--ÖÎÁÆMVP
+local g_MVPType_Damage = 1;--??MVP
+local g_MVPType_Treatment =2;--??MVP
 
 
 
@@ -17,7 +17,7 @@ function Higntlight_Link_PreLoad()
 	--Íæ¼ÒÀë¿ªÊÀ½ç
 	this:RegisterEvent("PLAYER_LEAVE_WORLD");
 	--³¬Á´
-	this:RegisterEvent("HIGHLIGHT_MVP_TOOLTIP");--»á´«Èë ½ÇÉ«Ãû×Ö ÃÅÅÉ mvpÀàĞÍ mvpÕ¼±È
+	this:RegisterEvent("HIGHLIGHT_MVP_TOOLTIP");--??? ???? ?? mvp?? mvp??
 	--Ìí¼ÓºÃÓÑ³É¹¦
 	this:RegisterEvent("HIGHLIGHT_ADDFRIEND_OK"); 
 	-- ÓÎÏ·´°¿Ú³ß´ç·¢ÉúÁË±ä»¯
@@ -62,7 +62,7 @@ end
 
 --Ìí¼ÓºÃÓÑ°´Å¥	
 function Higntlight_Link_AddFriend1()
-	if (g_MVPname == Player:GetName()) then  --ÕâÀïÖ®ËùÒÔÓÃÃû×ÖÅĞ¶Ï ÊÇÒòÎª ³¬Á´µã¿ªµÄ½çÃæ ±íÀïÃæÃ»ÓĞ´æguid Ö»´æÁËÃû×Ö
+	if (g_MVPname == Player:GetName()) then  --?????????? ??? ??????? ??????guid ?????
 		PushDebugMessage("#{GGSK_221221_49}");
 		return;
 	end
@@ -77,7 +77,7 @@ end
 
 --·ÖÏí×Ô¼º°´Å¥	
 function Higntlight_Link_Share_Clicked()
-	--guid ½ÇÉ«Ãû×Ö ½ÇÉ«ÃÅÅÉ ½ÇÉ«MVPÀàĞÍ ½ÇÉ«MVPÕ¼±È
+	--guid ½ÇÉ«Ãû×Ö ½ÇÉ«ÃÅÅÉ ½ÇÉ«MVPÀàĞÍ ½ÇÉ«MVP ¼±È
 	HighLight:Lua_ShareHLMVP(Player:GetGUID(),
 							g_MVPname,
 							g_menpai,
@@ -85,7 +85,7 @@ function Higntlight_Link_Share_Clicked()
 							g_rate)
 end
 
---¹Ø±Õ°´Å¥
+--¹Ø± °´Å¥
 function Higntlight_Link_OnClose()
     this:Hide();
 end
@@ -93,23 +93,23 @@ end
 --ÏÔÊ¾³¬Á´ĞÅÏ¢
 function Higntlight_Link_ShowHYPERLINK(name,menpai,mvpType,mvpRate)
 	this:Hide();
-	if (mvpType == g_MVPType_Damage) then--ÉËº¦mvp³¬Á´
-		-- ÉèÖÃÃû×Ö ÃÅÅÉ Õ¼±È ÒÔ¼° ×óÏÂ½Ç±êÓï
+	if (mvpType == g_MVPType_Damage) then--??mvp??
+		-- ÉèÖÃÃû×Ö ÃÅÅÉ  ¼±È ÒÔ¼° ×óÏÂ½Ç±êÓï
 		--:SetText("#{GGSK_221221_18}");
-		--Higntlight_Link_TreatmentPercent:Hide();--¹Ø±ÕÖÎÁÆÕ¼±ÈÏÔÊ¾
-		--Higntlight_Link_Title_Treatment:Hide();--¹Ø±ÕÖÎÁÆ±êÓï
+		--Higntlight_Link_TreatmentPercent:Hide();--¹Ø± ÖÎÁÆ ¼±ÈÏÔÊ¾
+		--Higntlight_Link_Title_Treatment:Hide();--¹Ø± ÖÎÁÆ±êÓï
 
 		Higntlight_Link_DamageCount:Show();
 		Higntlight_Link_DamageCount_Text2:SetText(mvpRate);
 
 		Higntlight_Link_Title_Damage:Show();
-		Higntlight_Link_ImageMenpai:SetText(Higntlight_Link_GetMenPai(menpai));--ÃÅÅÉ
+		Higntlight_Link_ImageMenpai:SetText(Higntlight_Link_GetMenPai(menpai));--??
 		Higntlight_Link_RoleName_Text2:SetText(name);
 		
 	end
 
-	if (mvpType == g_MVPType_Treatment) then--ÖÎÁÆmvp³¬Á´
-		-- ÉèÖÃÃû×Ö ÃÅÅÉ Õ¼±È ÒÔ¼° ×óÏÂ½Ç±êÓï
+	if (mvpType == g_MVPType_Treatment) then--??mvp??
+		-- ÉèÖÃÃû×Ö ÃÅÅÉ  ¼±È ÒÔ¼° ×óÏÂ½Ç±êÓï
 		--:SetText("#{GGSK_221221_22}");
 		--Higntlight_Link_DamageCount:Hide();
 		--Higntlight_Link_Title_Damage:Hide();
@@ -128,7 +128,7 @@ function Higntlight_Link_ShowHYPERLINK(name,menpai,mvpType,mvpRate)
 	Higntlight_Link_AddFriend:Show()
 	Higntlight_Link_Share:Hide()
 	--´ò¿ª½çÃæµÄÎª±¾ÈË Ôò Òş²ØÌí¼Ó°´Å¥ ÏÔÊ¾·ÖÏí°´Å¥
-	if (name == Player:GetName()) then --ÕâÀïÖ®ËùÒÔÓÃÃû×ÖÅĞ¶Ï ÊÇÒòÎª ³¬Á´µã¿ªµÄ½çÃæ ±íÀïÃæÃ»ÓĞ´æguid Ö»´æÁËÃû×Ö
+	if (name == Player:GetName()) then --?????????? ??? ??????? ??????guid ?????
 		Higntlight_Link_AddFriend:Hide()
 		--´ò¿ª·ÖÏí°´Å¥
 		Higntlight_Link_Share:Show()
@@ -156,27 +156,27 @@ function Higntlight_Link_GetMenPai( menpai )
 	local strName = "";
 	-- µÃµ½ÃÅÅÉÃû³Æ.
 	if(0 == menpai) then
-		strName = "ÉÙÁÖ";
+		strName = "Thiªu Lâm";
 	elseif(1 == menpai) then
-		strName = "Ã÷½Ì";
+		strName = "Minh Giáo";
 	elseif(2 == menpai) then
-		strName = "Ø¤°ï";
+		strName = "Cái Bang";
 	elseif(3 == menpai) then
-		strName = "Îäµ±";
+		strName = "Võ Ğang";
 	elseif(4 == menpai) then
-		strName = "¶ëáÒ";
+		strName = "Nga Mi";
 	elseif(5 == menpai) then
-		strName = "ĞÇËŞ";
+		strName = "Tinh Túc";
 	elseif(6 == menpai) then
-		strName = "ÌìÁú";
+		strName = "Thiên Long";
 	elseif(7 == menpai) then
-		strName = "ÌìÉ½";
+		strName = "Thiên S½n";
 	elseif(8 == menpai) then
-		strName = "åĞÒ£";
+		strName = "Tiêu dao";
 	elseif(9 == menpai) then
-		strName = "ÎŞÃÅÅÉ";
+		strName = "Tñ do";
 	elseif(10== menpai) then
-		strName = "ÂüÍÓÉ½×¯";
+		strName = "MÕn Ğà S½n Trang";
 	end
 	return strName
 end

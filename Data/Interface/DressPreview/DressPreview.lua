@@ -22,9 +22,9 @@ local g_DressButton = ""
 local g_HairButton = ""
 local g_FaceButton = ""
 
-local g_CameraHeight = 1     --摄影机高度
-local g_CameraDistance = 2   --摄影机距离
-local g_CameraPitch = 3      --摄影机角度
+local g_CameraHeight = 1     --?????
+local g_CameraDistance = 2   --?????
+local g_CameraPitch = 3      --?????
 
 local g_CameraPosition =
 {
@@ -51,8 +51,8 @@ local g_previewDressViusal = 0
 local g_previewFace = 3
 local g_previewHair = 3
 local g_curSex = 0
-local g_curDressColorType = 0   ---时装类型 0默认 1可染色
-local g_curDressActionType = 0   ---时装类型 0无动作 1有动作
+local g_curDressColorType = 0   ---???? 0?? 1???
+local g_curDressActionType = 0   ---???? 0??? 1???
 
 local g_selectColorIdx = g_dressColorMax
 
@@ -68,7 +68,7 @@ function DressPreview_PreLoad()
 	---this:RegisterEvent("SEX_CHANGED");
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED");
 
-	this:RegisterEvent("FASHION_DEPOT_OP");				-- 华裳阁
+	this:RegisterEvent("FASHION_DEPOT_OP");				-- ???
 	this:RegisterEvent("OPEN_STALL_SALE");
 	this:RegisterEvent("MODELID_CHANGE" );
 	this:RegisterEvent("OPEN_EQUIP");
@@ -108,7 +108,7 @@ function DressPreview_OnEvent(event)
 		end
 		
 		if( tonumber( IsInStall() ) == 1 ) then
-			PushDebugMessage("#{SZYL_230625_07}")			--摆摊状态无法进行这种操作。
+			PushDebugMessage("#{SZYL_230625_07}")			--?????????????
 			return
 		end		
 		PushEvent( "CLOSE_GEMEFFECTPREVIEW")
@@ -136,7 +136,7 @@ function DressPreview_OnEvent(event)
 	elseif (event == "OPEN_DRESSPREVIEW" ) then
 				
 		if( tonumber( IsInStall() ) == 1 ) then
-			PushDebugMessage("#{SZYL_230625_07}")			--摆摊状态无法进行这种操作。
+			PushDebugMessage("#{SZYL_230625_07}")			--?????????????
 			return
 		end		
 		PushEvent( "CLOSE_GEMEFFECTPREVIEW")
@@ -189,13 +189,13 @@ function DressPreview_OnEvent(event)
 		if (this:IsVisible()) then 
 			DressPreview_OnHiden();
 		end
-	elseif (event == "FASHION_DEPOT_OP" and tonumber(arg0) == 1) then --华裳阁
+	elseif (event == "FASHION_DEPOT_OP" and tonumber(arg0) == 1) then --???
 		if (this:IsVisible()) then 
 			DressPreview_OnHiden();
 		end
 	end
 	
-	if (event == "CLOSE_DRESSPREVIEW") then --华裳阁
+	if (event == "CLOSE_DRESSPREVIEW") then --???
 		if (this:IsVisible()) then 
 			DressPreview_OnHiden();
 		end
@@ -406,7 +406,7 @@ function DressPreview_OnAction(nIndex)
 	end
 	
 	if g_curDressActionType ~= 1 then
-		PushDebugMessage("#{SZDZ_231110_06}")  --该时装没有配套时装动作。
+		PushDebugMessage("#{SZDZ_231110_06}")  --????????????
 		for i = 1, table.getn(g_ActionButtonList) do
 			g_ActionButtonList[i]:Hide()
 		end
@@ -475,7 +475,7 @@ function DressPreview_ColorChanged()
 
 end
 --模型
-function DressPreview_UpdateObj(param)   --1预览 0取消
+function DressPreview_UpdateObj(param)   --1?? 0??
 	
 	---PushDebugMessage("DressPreview_UpdateObj")
 	---PushDebugMessage("param = "..param.."   visualID ="..g_previewDressViusal.."  face ="..g_previewFace.."  hair ="..g_previewHair.." sex = "..g_curSex)

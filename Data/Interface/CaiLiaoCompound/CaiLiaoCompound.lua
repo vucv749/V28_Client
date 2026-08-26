@@ -4,34 +4,34 @@ local MAX_OBJ_DISTANCE = 3.0
 local objCared = -1
 local npcObjId = -1
 
-local g_CaiLiaoCompound_Num 	= 0		-- 二级选项总个数
-local g_CaiLiaoCompound_Select 	= -1	-- 默认选中二级菜单的总下标,从0开始
-local g_CaiLiaoCompound_Index 	= {}	-- 默认选中二级菜单下标对应的类型和二级下标
+local g_CaiLiaoCompound_Num 	= 0		-- ???????
+local g_CaiLiaoCompound_Select 	= -1	-- ????????????,?0??
+local g_CaiLiaoCompound_Index 	= {}	-- ????????????????????
 
-local g_MaxNum_PerTime 			= 7500	-- 合成最大数量
-local g_CurNum_PerTime			= 1		-- 当前合成数量
-local g_FunControl				= 0		-- 防止循环调用的函数控制参数
+local g_MaxNum_PerTime 			= 7500	-- ??????
+local g_CurNum_PerTime			= 1		-- ??????
+local g_FunControl				= 0		-- ?????????????
 
 local g_CaiLiaoCompoundFrame_UnifiedPosition
 
 -- 选项信息
 local g_CaiLiaoCompound_Info = 
 {
-	[1] = {		--		秘银
+	[1] = {		--		??
 		name = "#{CLHC_170824_04}", bShow = 0, bCanCompound = 0,
 		[1] = { subname = "#{CLHC_170824_05}", bCanCompound = 0},
 		[2] = { subname = "#{CLHC_170824_06}", bCanCompound = 0},
 		[3] = { subname = "#{CLHC_170824_07}", bCanCompound = 0},
 		[4] = { subname = "#{CLHC_170824_08}", bCanCompound = 0},
 		},
-	[2] = {		--		棉布
+	[2] = {		--		??
 		name = "#{CLHC_170824_09}", bShow = 0, bCanCompound = 0,
 		[1] = { subname = "#{CLHC_170824_10}", bCanCompound = 0},
 		[2] = { subname = "#{CLHC_170824_11}", bCanCompound = 0},
 		[3] = { subname = "#{CLHC_170824_12}", bCanCompound = 0},
 		[4] = { subname = "#{CLHC_170824_13}", bCanCompound = 0},
 		},
-	[3] = {		--		精铁
+	[3] = {		--		??
 		name = "#{CLHC_170824_14}", bShow = 0, bCanCompound = 0,
 		[1] = { subname = "#{CLHC_170824_15}", bCanCompound = 0},
 		[2] = { subname = "#{CLHC_170824_16}", bCanCompound = 0},
@@ -43,7 +43,7 @@ local g_CaiLiaoCompound_Info =
 -- 合成数值
 local g_CaiLiaoCompound_Data = 
 {
-	-- level1为碎片，level4为3级材料，这样
+	-- level1为碎片，level4为3级材料，犫样
 	[1] = { newlevel = 2, needlevel = 1, needcount = 5, needmoney = 500, },
 	[2] = { newlevel = 3, needlevel = 2, needcount = 5, needmoney = 1000, },
 	[3] = { newlevel = 4, needlevel = 3, needcount = 5, needmoney = 1500, },
@@ -55,29 +55,29 @@ local g_CaiLiaoCompound_Item =
 {
 	[1]=
 	{
-		{nItemID = 20502000, strShowName = "#{CLHC_170904_74}"},	--秘银碎片
-		{nItemID = 20502001, strShowName = "#{CLHC_170904_77}"},	--1级秘银
-		{nItemID = 20502002, strShowName = "#{CLHC_170904_78}"},	--2级秘银
-		{nItemID = 20502003, strShowName = "#{CLHC_170904_79}"},	--3级秘银
-		{nItemID = 20502004, strShowName = "#{CLHC_170904_80}"},	--4级秘银
+		{nItemID = 20502000, strShowName = "#{CLHC_170904_74}"},	--????
+		{nItemID = 20502001, strShowName = "#{CLHC_170904_77}"},	--1???
+		{nItemID = 20502002, strShowName = "#{CLHC_170904_78}"},	--2???
+		{nItemID = 20502003, strShowName = "#{CLHC_170904_79}"},	--3???
+		{nItemID = 20502004, strShowName = "#{CLHC_170904_80}"},	--4???
 	},
 	
 	[2]=
 	{
-		{nItemID = 20501000, strShowName = "#{CLHC_170904_75}"},	--棉布碎片
-		{nItemID = 20501001, strShowName = "#{CLHC_170904_81}"},	--1级棉布
-		{nItemID = 20501002, strShowName = "#{CLHC_170904_82}"},	--2级棉布
-		{nItemID = 20501003, strShowName = "#{CLHC_170904_83}"},	--3级棉布
-		{nItemID = 20501004, strShowName = "#{CLHC_170904_84}"},	--4级棉布
+		{nItemID = 20501000, strShowName = "#{CLHC_170904_75}"},	--????
+		{nItemID = 20501001, strShowName = "#{CLHC_170904_81}"},	--1???
+		{nItemID = 20501002, strShowName = "#{CLHC_170904_82}"},	--2???
+		{nItemID = 20501003, strShowName = "#{CLHC_170904_83}"},	--3???
+		{nItemID = 20501004, strShowName = "#{CLHC_170904_84}"},	--4???
 	},
 	
 	[3]=
 	{
-		{nItemID = 20500000, strShowName = "#{CLHC_170904_76}"},	--精铁碎片
-		{nItemID = 20500001, strShowName = "#{CLHC_170904_85}"},	--1级精铁
-		{nItemID = 20500002, strShowName = "#{CLHC_170904_86}"},	--2级精铁
-		{nItemID = 20500003, strShowName = "#{CLHC_170904_87}"},	--3级精铁
-		{nItemID = 20500004, strShowName = "#{CLHC_170904_88}"},	--4级精铁
+		{nItemID = 20500000, strShowName = "#{CLHC_170904_76}"},	--????
+		{nItemID = 20500001, strShowName = "#{CLHC_170904_85}"},	--1???
+		{nItemID = 20500002, strShowName = "#{CLHC_170904_86}"},	--2???
+		{nItemID = 20500003, strShowName = "#{CLHC_170904_87}"},	--3???
+		{nItemID = 20500004, strShowName = "#{CLHC_170904_88}"},	--4???
 	},
 }
 
@@ -110,7 +110,7 @@ function CaiLiaoCompound_OnEvent(event)
 	if ( event == "UI_COMMAND" and tonumber(arg0) == 920170825 ) then
 		local nOpType 	= Get_XParam_INT(0)
 		local objid 	= Get_XParam_INT(1)
-		-- 关闭界面
+		-- 关睜界面
 		if objid == nil or objid < 0 then
 			if this:IsVisible() then
 				CaiLiaoCompound_Close()
@@ -142,13 +142,13 @@ function CaiLiaoCompound_OnEvent(event)
 		if(tonumber(arg0) ~= objCared) then
 			return
 		end
-		-- 如果和NPC的距离大于一定距离或者被删除，自动关闭
+		-- 如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
-			-- 关闭界面
+			-- 关睜界面
 			CaiLiaoCompound_Close()
 		end	
 	elseif ( event == "SCENE_TRANSED" ) then
-		-- 关闭界面
+		-- 关睜界面
 		CaiLiaoCompound_Close()
 	-- 金钱变更
 	elseif event == "UNIT_MONEY" or event == "MONEYJZ_CHANGE" then
@@ -164,13 +164,13 @@ function CaiLiaoCompound_OnEvent(event)
 end
 
 --=========================================================
--- 关闭界面：脚本各种关闭逻辑调用n次 点击关闭界面调用一次
+-- 关睜界面：脚本各种关睜逻辑调用n次 点击关睜界面调用一次
 --=========================================================
 function CaiLiaoCompound_Close()
-	-- 数据清空
-	g_CaiLiaoCompound_Num = 0--二级选项总个数
-	g_CaiLiaoCompound_Select = -1--默认选中二级菜单下标
-	g_CaiLiaoCompound_Index = {}--默认选中二级菜单下标对应的类型和二级下标
+	-- 数据清繝
+	g_CaiLiaoCompound_Num = 0--???????
+	g_CaiLiaoCompound_Select = -1--??????????
+	g_CaiLiaoCompound_Index = {}--????????????????????
 	g_CurNum_PerTime = 1
 	for i=1, table.getn(g_CaiLiaoCompound_Info) do	
 		g_CaiLiaoCompound_Info[i].bShow = 0
@@ -191,7 +191,7 @@ function CaiLiaoCompound_MoneyUpdate()
 end
 
 --=========================================================
--- 界面更新：服务器端打开或者更新界面调用一次
+-- 界面更新：服务器端打开或犨更新界面调用一次
 --=========================================================
 function CaiLiaoCompound_Update(bInit)	
 	-- 金钱显示
@@ -222,7 +222,7 @@ function CaiLiaoCompound_LeftLoad(bInit)
 		if nil == tInfo then
 			return
 		end
-		-- 先清空可合成数据
+		-- 先清繝可合成数据
 		tInfo.bCanCompound = 0
 		for nLevel = 1, table.getn(tItem) - 1 do
 			local nHaveCount = PlayerPackage:CountAvailableItemByIDTable(tItem[nLevel].nItemID)
@@ -330,11 +330,11 @@ function CaiLiaoCompound_ListBox_Selected()
 		-- 一级选项
 		local tInfo = g_CaiLiaoCompound_Info[nIndex]
 		if tInfo ~= nil then
-			-- 改变一级选项打开关闭状态
+			-- 改变一级选项打开关睜状态
 			if tInfo.bShow == 1 then
 				tInfo.bShow = 0
 			else
-				-- 关闭其他列表
+				-- 关睜其他列表
 				for i=1, table.getn(g_CaiLiaoCompound_Info) do	
 					g_CaiLiaoCompound_Info[i].bShow = 0
 				end
@@ -361,10 +361,10 @@ function CaiLiaoCompound_ListBox_Selected()
 end
 
 --=========================================================
--- 清空右侧合成信息
+-- 清繝右侧合成信息
 --=========================================================
 function CaiLiaoCompound_ClearDetail()
-	-- 显示空内容
+	-- 显示繝内容
 	CaiLiaoCompound_ChoiceInfo:SetText( "#{CLHC_170824_20}" )
 	CaiLiaoCompound_Item:SetActionItem(-1)
 	CaiLiaoCompound_Need_Info:SetText( "#{CLHC_170824_22}" )
@@ -385,7 +385,7 @@ end
 -- 右侧合成信息：选中左侧列表调用一次
 --=========================================================
 function CaiLiaoCompound_ShowDetail(bInit)
-	-- 清空信息
+	-- 清繝信息
 	CaiLiaoCompound_ClearDetail()
 	
 	-- 选中项检测
@@ -451,7 +451,7 @@ function CaiLiaoCompound_ShowDetail(bInit)
 	local szChoiceInfo  = ScriptGlobal_Format("#{CLHC_170824_19}", newItemName)
 	CaiLiaoCompound_ChoiceInfo:SetText( szChoiceInfo )
 
-	-- 道具展示区域
+	-- 道具牴示区域
 	local theAction = DataPool:CreateActionItemForShow(newItemId, 1)
 	if theAction:GetID() ~= 0 then
 		CaiLiaoCompound_Item:SetActionItem(theAction:GetID())
@@ -480,7 +480,7 @@ function CaiLiaoCompound_ShowDetail(bInit)
 	-- 数量最小为1 小于1的情况自动转成1
 	if nCanCompoundNum < 1 then
 		nCanCompoundNum = 1
-		-- 拥有个数颜色判断
+		-- 拥有个数褷色判断
 		if nHaveCount < 5 then
 			szHaveCount = ScriptGlobal_Format("#{CLHC_170904_54}", nHaveCount)
 			CaiLiaoCompound_Have_Number:SetText( szHaveCount )
@@ -504,7 +504,7 @@ function CaiLiaoCompound_ShowDetail(bInit)
 		-- 初始化操作
 		g_CurNum_PerTime = 1
 		
-		-- 拥有个数颜色判断
+		-- 拥有个数褷色判断
 		if nHaveCount < 5 then
 			szHaveCount = ScriptGlobal_Format("#{CLHC_170904_54}", nHaveCount)
 			CaiLiaoCompound_Have_Number:SetText( szHaveCount )
@@ -609,10 +609,10 @@ function CaiLiaoCompound_Do()
 		Set_XSCRIPT_Function_Name( "CaiLiaoCompound_New" )
 		Set_XSCRIPT_ScriptID(701602)
 		Set_XSCRIPT_Parameter(0,npcObjId)			--npcid
-		Set_XSCRIPT_Parameter(1,g_CurNum_PerTime)	--每次合成的数量
-		Set_XSCRIPT_Parameter(2,nIndex)				--类型
-		Set_XSCRIPT_Parameter(3,nSubIndex)			--子类型
-		Set_XSCRIPT_Parameter(4,0)					--二次确认
+		Set_XSCRIPT_Parameter(1,g_CurNum_PerTime)	--???????
+		Set_XSCRIPT_Parameter(2,nIndex)				--??
+		Set_XSCRIPT_Parameter(3,nSubIndex)			--???
+		Set_XSCRIPT_Parameter(4,0)					--????
 		Set_XSCRIPT_ParamCount(5)
 	Send_XSCRIPT()
 	

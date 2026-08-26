@@ -1,8 +1,8 @@
--- 新6v6 组建战队UI
+-- 新6v6 组建牻队UI
 
 -- 服务器端回调脚本ID
 local HuaShanLunJian_CreateTeam_ServerScriptId = 998497
--- 战队名称最大长度
+-- 牻队名称最大长度
 local HuaShanLunJian_CreateTeam_NameLen_Max = 12
 local HuaShanLunJian_CreateTeam_TeamMember_Max = 6
 -- 霸剑段位id
@@ -38,17 +38,17 @@ local HuaShanLunJian_CreateTeam_DuanWei2Str =
 -- 门派
 local HuaShanLunJian_CreateTeam_MenPaiName =
 {
-	[0] = "#{XQ_MP_1}",    	--少林
-	[1] = "#{XQ_MP_2}",    	--明教
-	[2] = "#{XQ_MP_3}",    	--丐帮
-	[3] = "#{XQ_MP_4}",    	--武当
-	[4] = "#{XQ_MP_5}",    	--峨眉
-	[5] = "#{XQ_MP_6}",    	--星宿
-	[6] = "#{XQ_MP_7}",    	--天龙
-	[7] = "#{XQ_MP_8}",    	--天山
-	[8] = "#{XQ_MP_9}",    	--逍遥
-	[9] = "#{JZGN_20230710_138}",	--无门派
-	[10] = "#{WCBZ_220809_53}",		--曼陀山庄 
+	[0] = "#{XQ_MP_1}",    	--??
+	[1] = "#{XQ_MP_2}",    	--??
+	[2] = "#{XQ_MP_3}",    	--??
+	[3] = "#{XQ_MP_4}",    	--??
+	[4] = "#{XQ_MP_5}",    	--??
+	[5] = "#{XQ_MP_6}",    	--??
+	[6] = "#{XQ_MP_7}",    	--??
+	[7] = "#{XQ_MP_8}",    	--??
+	[8] = "#{XQ_MP_9}",    	--??
+	[9] = "#{JZGN_20230710_138}",	--???
+	[10] = "#{WCBZ_220809_53}",		--???? 
 } -- end HuaShanLunJian_CreateTeam_MenPaiName
 
 
@@ -57,8 +57,8 @@ function HuaShanLunJian_CreateTeam_PreLoad()
 	this:RegisterEvent("XBW_CLOSECREATETEAM", true)
 	this:RegisterEvent("XBW_CLOSEUI", true)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 	this:RegisterEvent("OBJECT_CARED_EVENT", false)
 end -- end func HuaShanLunJian_CreateTeam_PreLoad()
 
@@ -82,7 +82,7 @@ function HuaShanLunJian_CreateTeam_OnEvent(event)
 			return
 		end
 
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if((arg1 == "distance" and tonumber(arg2) > HuaShanLunJian_CreateTeam_MAX_OBJ_DISTANCE) or arg1=="destroy") then
 			--取消关心
 			HuaShanLunJian_CreateTeam_Hide()
@@ -174,12 +174,12 @@ function HuaShanLunJian_CreateTeam_InitCtrlList()
 	HuaShanLunJian_CreateTeam_CtrlList.member[6].duanwei = HuaShanLunJian_CreateTeam_List6_4
 end -- end func HuaShanLunJian_CreateTeam_InitCtrlList()
 
--- 关闭按钮事件
+-- 关睜按钮事件
 function HuaShanLunJian_CreateTeam_CloseClicked()
 	HuaShanLunJian_CreateTeam_Hide()
 end -- end func HuaShanLunJian_CreateTeam_CloseClicked()
 
--- 创建战队按钮事件
+-- 创建牻队按钮事件
 function HuaShanLunJian_CreateTeam_Accept_Clicked()
 	local teamName = HuaShanLunJian_CreateTeam_Top_NameInput:GetText()
 	if (teamName == nil or teamName == "") then
@@ -210,17 +210,17 @@ function HuaShanLunJian_CreateTeam_ResetUIInfo()
 		HuaShanLunJian_CreateTeam_InitCtrlList()
 	end
 
-	-- 战队名称
+	-- 牻队名称
 	HuaShanLunJian_CreateTeam_Top_NameInputNull:Hide()
 	HuaShanLunJian_CreateTeam_Top_NameInput:SetText("")
 
 	-- 设置焦点
 	HuaShanLunJian_CreateTeam_Top_NameInput:SetProperty("DefaultEditBox", "True")
 
-	-- 战队人数
+	-- 牻队人数
 	local numText = ScriptGlobal_Format("#{JZGN_20230710_29}", 0)
 	HuaShanLunJian_CreateTeam_Top_Text3:SetText(numText)
-	-- 战队成员
+	-- 牻队成员
 	for i=0, 6, 1 do
 		if (HuaShanLunJian_CreateTeam_CtrlList.member[i] ~= nil) then
 			HuaShanLunJian_CreateTeam_CtrlList.member[i].leaderflag:Hide()
@@ -232,12 +232,12 @@ function HuaShanLunJian_CreateTeam_ResetUIInfo()
 	end -- end for
 end -- end func HuaShanLunJian_CreateTeam_ResetUIInfo()
 
--- 刷新战队信息
+-- 刷新牻队信息
 function HuaShanLunJian_CreateTeam_UpdateTeamInfo()
 	HuaShanLunJian_CreateTeam_ResetUIInfo()
 
 	local memCount = 0
-	-- 刷新战队成员信息
+	-- 刷新牻队成员信息
 	for i=1, HuaShanLunJian_CreateTeam_TeamMember_Max, 1 do
 		--local memName, memMenPai, memLevel, memDeadFlag, memLinkFlag, memSex, memZoneWorld = DataPool:GetTeamMemInfoByIndex(i-1)
 		--local playerName, playerGUID, playerIcon, leaderFlag, isDead = DataPool:GetTeamMemInfoExByIndex(i-1)
@@ -294,7 +294,7 @@ function HuaShanLunJian_CreateTeam_UpdateTeamInfo()
 		end
 	end -- end for
 
-	-- 战队人数
+	-- 牻队人数
 	local numText = ScriptGlobal_Format("#{JZGN_20230710_29}", memCount)
 	HuaShanLunJian_CreateTeam_Top_Text3:SetText(numText)
 end -- end func HuaShanLunJian_CreateTeam_UpdateTeamInfo()

@@ -72,7 +72,7 @@ end
 
 function JinBiJiaoZi_Hide( )
 
-	-- 关闭窗口
+	-- 关睜窗口
 	this : Hide( )
 
 end
@@ -109,7 +109,7 @@ function JinBiJiaoZiAccept_Clicked( )
 	-- 一定不能直接在脚本里加，9999金99银99铜以后就不精确了
 	local bAvailability, money = Bank : GetInputMoney( jin , yin, tong )
 	
-	-- 玩家输入0，直接关闭
+	-- 玩家输入0，直接关睜
 	if money == 0 then
 		JinBiJiaoZi_Hide( )
 		return
@@ -160,7 +160,7 @@ function JinBiJiaoZiAccept_Clicked( )
 	Send_XSCRIPT( )
 	
 	
-	-- 都执行完了关闭窗口（操作成功由服务器端提示）
+	-- 都执行完了关睜窗口（操作成功由服务器端提示）
 	JinBiJiaoZi_Hide( )
 end
 

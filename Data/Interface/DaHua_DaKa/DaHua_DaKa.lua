@@ -52,7 +52,7 @@ function DaHua_DaKa_OnEvent(event)
 		end
 		DaHua_DaKa_Open()
 	elseif (event == "UI_COMMAND" and tonumber(arg0) == 99913703) then
-		AutoRuntoTargetExWithName(158, 110, 0, "ÆĞÌáĞ¡×æ")
+		AutoRuntoTargetExWithName(158, 110, 0, "B° Ğ« Ti¬u T±")
 		DaHua_DaKa_OnClose()
 	end
     -- ÓÎÏ·´°¿Ú³ß´ç·¢ÉúÁË±ä»¯

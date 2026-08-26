@@ -56,7 +56,7 @@ function Frozen_PVPXuanRen_OnShow()
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function Frozen_PVPXuanRen_OnClose()
 	this:Hide()
@@ -67,7 +67,7 @@ function Frozen_PVPXuanRen_Close()
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function Frozen_PVPXuanRen_CloseClicked()
 	this:Hide()

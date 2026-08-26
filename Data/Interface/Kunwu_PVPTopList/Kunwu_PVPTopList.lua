@@ -1,4 +1,4 @@
--- 雪人大作战，个人榜单界面
+-- 雪人大作牻，个人榜单界面
 local g_unifiedposistion
 
 local g_ui_list = {}
@@ -109,7 +109,7 @@ function Kunwu_PVPTopList_GetCampName(campIndex)
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function Kunwu_PVPTopList_CloseClick()
 	this:Hide()

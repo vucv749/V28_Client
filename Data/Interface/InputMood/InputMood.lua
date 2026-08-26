@@ -49,7 +49,7 @@ function InputMood_EventCancel()
 end
 
 --===============================================
--- 关闭自动执行
+-- 关睜自动执行
 --===============================================
 function InputMood_OnHiden()
 	InputMood_Input:SetProperty("DefaultEditBox", "False")

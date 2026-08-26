@@ -11,7 +11,7 @@ local g_TargetProfile_MaxBtn = 6
 local g_TargetProfile_DressCurSel = 0
 local g_TargetProfile_WeaponCurSel = 0
 local g_TargetProfile_RideCurSel = 0
-local g_TargetProfile_ViewMode = 0	--0是角色 1是上坐骑
+local g_TargetProfile_ViewMode = 0	--0??? 1????
 
 local g_TargetProfile_Tag_Text = {}
 local g_TargetProfile_Dress_Btn = {}
@@ -26,11 +26,11 @@ local g_Distance = 1
 local g_Distance_Ori = 2
 local g_Distance_Max = 4
 
-local m_PlayerfashionDepotType = 1 	--仓库类型 1 玩家时装仓库 2 子女时装仓库
+local m_PlayerfashionDepotType = 1 	--???? 1 ?????? 2 ??????
 
-local g_CameraHeight = 1     --摄影机高度
-local g_CameraDistance = 2   --摄影机距离
-local g_CameraPitch = 3      --摄影机角度
+local g_CameraHeight = 1     --?????
+local g_CameraDistance = 2   --?????
+local g_CameraPitch = 3      --?????
 local g_CameraPosition =
 {
 	--女性相关位置
@@ -97,7 +97,7 @@ function TargetProfile_OnLoad()
 	g_TargetProfile_Tag_Text[4] = TargetProfile_Frame_Tag_TagText4
 	g_TargetProfile_Tag_Text[5] = TargetProfile_Frame_Tag_TagText5
 	g_TargetProfile_Tag_Text[6] = TargetProfile_Frame_Tag_TagText6
-	--展示
+	--牴示
 	g_TargetProfile_Dress_Btn[1] = TargetProfile_Frame_Dress_Object1
 	g_TargetProfile_Dress_Btn[2] = TargetProfile_Frame_Dress_Object2
 	g_TargetProfile_Dress_Btn[3] = TargetProfile_Frame_Dress_Object3
@@ -179,13 +179,13 @@ function TargetProfile_OnEvent(event)
 		end
 		
 		if not CachedTarget:CanGetTargetEquip() then
-			PushDebugMessage ("#{JSCK_90507_1}")				-- 距离该玩家太远，无法查看资料。
+			PushDebugMessage ("#{JSCK_90507_1}")				-- ???????,???????
 			return
 		end
 		
 		local objCaredId = CachedTarget:GetData("NPCID", 1)
 		if type(objCaredId) ~= "number" then
-			PushDebugMessage ("#{JSCK_90507_1}")				-- 距离该玩家太远，无法查看资料。
+			PushDebugMessage ("#{JSCK_90507_1}")				-- ???????,???????
 			return
 		end
 		
@@ -517,7 +517,7 @@ function TargetProfile_Frame_LikeBtn_Clicked()
 	Exterior:LuaFnDianZan()
 end
 
---关闭按钮
+--关睜按钮
 function TargetProfile_CloseClick()	
 
 	TargetProfile_OnHidden()
@@ -575,7 +575,7 @@ function TargetProfile_CleanUp_Weapon()
 	
 end
 
---清空搭配展示
+--清繝搭配牴示
 function TargetProfile_CleanUp()
 
 	TargetProfile_FakeObject:SetFakeObject("")
@@ -710,7 +710,7 @@ function TargetProfile_TargetData_Down()
 	SystemSetup:OpenPrivatePage("other")
 end
 
--- 珍兽
+-- 犱兽
 --
 function TargetProfile_OtherPet_Down()
 	Variable:SetVariable("OtherUnionPos", TargetProfile_Frame:GetProperty("UnifiedPosition"), 1);
@@ -800,35 +800,35 @@ function TargetProfile_ShowPage()
 end
 
 function TargetProfile_CheckPage(idx)
-	if idx == 1 then--装备
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--资料
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--珍兽
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--武魂
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--灵玉
+	elseif idx == 5 then--??
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
 		end
 		return 1
-	elseif idx == 6 then--神兵
+	elseif idx == 6 then--??
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
 		end
 		return 1
-	elseif idx == 7 then--雕文进阶
+	elseif idx == 7 then--????
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
 		end
 		return 1
-	elseif idx == 8 then--巅峰 
+	elseif idx == 8 then--?? 
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
 		end
 		return 1
-	elseif idx == 9 then--雕文进阶
+	elseif idx == 9 then--????
 		return 1
 	end
 	return 0
@@ -843,19 +843,19 @@ function TargetProfile_OnPageClicked(idx)
 	Variable:SetVariable("TargetPageNumber", tostring(idx), 1);
 	idx = g_PageOrder[idx]
 
-	if idx == 1 then--装备
+	if idx == 1 then--??
 		TargetProfile_OtherEquip_Page_Switch()
-	elseif idx == 2 then--资料
+	elseif idx == 2 then--??
 		TargetProfile_TargetData_Down()
-	elseif idx == 3 then--珍兽
+	elseif idx == 3 then--??
 		TargetProfile_OtherPet_Down()
-	elseif idx == 4 then--武魂
+	elseif idx == 4 then--??
 		TargetProfile_TargetWuhun_Switch()
-	elseif idx == 5 then--灵玉
+	elseif idx == 5 then--??
 		TargetProfile_TargetLingyu_Switch()
-	elseif idx == 6 then--神兵
+	elseif idx == 6 then--??
 		TargetProfile_ShenBing_Switch()
-	elseif idx == 7 then--雕文进阶
+	elseif idx == 7 then--????
 		TargetProfile_DWJinJie_Switch()
 	elseif idx == 8 then
 		TargetProfile_TargetPeak_Switch()

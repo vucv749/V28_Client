@@ -3,13 +3,13 @@ local YbMarket_UICommand_SubId = 1
 local objCared = -1;
 
 local YbMarket_nSelectTable = 2		--2 is item, 1 is pet, 3 is equip
-local YbMarket_nSelectSubType = 1 --×ÓÀà°´Å¥Ñ¡Ôñ£¬ ÒÀ´Î´Ó1µ½8
-local YbMarket_nSearch = 1         --ÅÅÐò·½Ê½
+local YbMarket_nSelectSubType = 1 --??????, ???1?8
+local YbMarket_nSearch = 1         --????
 
-local YbMarket_Page_Total = 0		-- ±¾´Î²éÑ¯×ÜÒ³Êý
-local YbMarket_Page_Cur	= 0			-- ±¾´Î²éÑ¯µÄÒ³Êý   Èç£º  1/10   Ò»¹²10Ò³£¬ µ±Ç°µÚÒ»Ò³£¬ ÏÂ´ÎÔò·¢ËÍÒ³ÃæÎª2µÄÇëÇó
+local YbMarket_Page_Total = 0		-- ???????
+local YbMarket_Page_Cur	= 0			-- ???????   ?:  1/10   ??10?, ?????, ????????2???
 
-local YbMarket_Cur_Select = 0  		--µ±Ç°Ñ¡ÖÐµÄÉÌÆ·
+local YbMarket_Cur_Select = 0  		--???????
 	
 local YbMarket_ctrlAllSubBtns = {}
 local YbMarket_ctrlItemSubBtns = {}
@@ -24,10 +24,10 @@ local YbMarket_ctrlPetActions = {}
 local YbMarket_ctrlEquipActions = {}
 
 local YbMarket_ctrlItemChecks = {}
-local YbMarket_ItemCount_Show = 0 		-- µ±Ç°ÏÔÊ¾µÄÎïÆ·Êý
-local YbMarket_ItemIndex_Show = {}		-- ÏÔÊ¾µÄÎïÆ·ÏÂ±ê
-local YbMarket_ItemCount_Select = 0 	-- µ±Ç°Ñ¡ÖÐµÄÎïÆ·Êý
-local YbMarket_ItemIndex_Select = {} 	-- Ñ¡ÖÐµÄÎïÆ·ÏÂ±ê
+local YbMarket_ItemCount_Show = 0 		-- ????????
+local YbMarket_ItemIndex_Show = {}		-- ???????
+local YbMarket_ItemCount_Select = 0 	-- ????????
+local YbMarket_ItemIndex_Select = {} 	-- ???????
 
 local YbMarket_PetViewBtn = {}
 
@@ -83,21 +83,21 @@ function YbMarket_OnLoad()
 	
 	YbMarket_ctrlItemSubBtns = 
 	{
-		[1] = { ctrl = YbMarket_btnSubType1, text = "#{YBSC_XML_13}", realIdx = 2, },  --×°±¸´òÔì
-		[2] = { ctrl = YbMarket_btnSubType2, text = "#{YBSC_XML_14}", realIdx = 3, },  --ÕäÊÞ´òÔì
-		[3] = { ctrl = YbMarket_btnSubType3, text = "#{YBSC_XML_15}", realIdx = 4, },  --Îä»ê´òÔì
-		[4] = { ctrl = YbMarket_btnSubType4, text = "#{YBSC_XML_16}", realIdx = 5, },  --ÆäËû
+		[1] = { ctrl = YbMarket_btnSubType1, text = "#{YBSC_XML_13}", realIdx = 2, },  --????
+		[2] = { ctrl = YbMarket_btnSubType2, text = "#{YBSC_XML_14}", realIdx = 3, },  --????
+		[3] = { ctrl = YbMarket_btnSubType3, text = "#{YBSC_XML_15}", realIdx = 4, },  --????
+		[4] = { ctrl = YbMarket_btnSubType4, text = "#{YBSC_XML_16}", realIdx = 5, },  --??
 	}	
 	
 	YbMarket_ctrlPetSubBtns = 
 	{
-		[1] = { ctrl = YbMarket_btnSubType1, text = "#{YBSC_XML_23}", realIdx = 2, }, --5¼¶¿ÉÐ¯´ø 
-		[2] = { ctrl = YbMarket_btnSubType2, text = "#{YBSC_XML_24}", realIdx = 3, }, --45¼¶¿ÉÐ¯´ø
-		[3] = { ctrl = YbMarket_btnSubType3, text = "#{YBSC_XML_25}", realIdx = 4, }, --55¼¶¿ÉÐ¯´ø
-		[4] = { ctrl = YbMarket_btnSubType4, text = "#{YBSC_XML_26}", realIdx = 5, }, --65¼¶¿ÉÐ¯´ø
-		[5] = { ctrl = YbMarket_btnSubType5, text = "#{YBSC_XML_27}", realIdx = 6, }, --75¼¶¿ÉÐ¯´ø
-		[6] = { ctrl = YbMarket_btnSubType6, text = "#{YBSC_XML_28}", realIdx = 7, }, --85¼¶¿ÉÐ¯´ø
-		[7] = { ctrl = YbMarket_btnSubType7, text = "#{YBSC_XML_29}", realIdx = 8, }, --95¼¶¿ÉÐ¯´ø
+		[1] = { ctrl = YbMarket_btnSubType1, text = "#{YBSC_XML_23}", realIdx = 2, }, --5???? 
+		[2] = { ctrl = YbMarket_btnSubType2, text = "#{YBSC_XML_24}", realIdx = 3, }, --45????
+		[3] = { ctrl = YbMarket_btnSubType3, text = "#{YBSC_XML_25}", realIdx = 4, }, --55????
+		[4] = { ctrl = YbMarket_btnSubType4, text = "#{YBSC_XML_26}", realIdx = 5, }, --65????
+		[5] = { ctrl = YbMarket_btnSubType5, text = "#{YBSC_XML_27}", realIdx = 6, }, --75????
+		[6] = { ctrl = YbMarket_btnSubType6, text = "#{YBSC_XML_28}", realIdx = 7, }, --85????
+		[7] = { ctrl = YbMarket_btnSubType7, text = "#{YBSC_XML_29}", realIdx = 8, }, --95????
 	}
 	
 	YbMarket_ctrlItemTexts = 
@@ -194,59 +194,59 @@ function YbMarket_OnLoad()
 
 	YbMarket_CboSearchItem = 
 	{
-		[1] = "#{YBSC_100111_69}",		--°´µ¥¼Û´ÓµÍÖÁ¸ßÅÅÁÐ
-		[2] = "#{YBSC_100111_68}",		--°´µ¥¼Û´Ó¸ßÖÁµÍÅÅÁÐ
-		[3] = "#{YBSC_100111_70}",		--°´ÉÌÆ·Ãû³Æ½µÐòÅÅÁÐ
-		[4] = "#{YBSC_100111_71}",		--°´ÉÌÆ·Ãû³ÆÉýÐòÅÅÁÐ
-		[5] = "#{YBSC_XML_111}",		--°´×°±¸ÐÇ¼¶½µÐòÅÅÁÐ
-		[6] = "#{YBSC_XML_112}",		--°´×°±¸ÐÇ¼¶ÉýÐòÅÅÁÐ
+		[1] = "#{YBSC_100111_69}",		--?????????
+		[2] = "#{YBSC_100111_68}",		--?????????
+		[3] = "#{YBSC_100111_70}",		--?????????
+		[4] = "#{YBSC_100111_71}",		--?????????
+		[5] = "#{YBSC_XML_111}",		--?????????
+		[6] = "#{YBSC_XML_112}",		--?????????
 	}
 
-	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_86}", 1)	--È«²¿
-	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_87}", 2)	--Ã±×Ó
-	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_88}", 3)	--»¤¼ç
-	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_89}", 4)	--»¤Íó
-	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_90}", 5)	--ÊÖÌ×
-	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_91}", 6)	--Ñü´ø
-	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_92}", 7)	--Ð¬×Ó
-	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_93}", 8)	--½äÖ¸
-	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_94}", 9)	--»¤·û
-	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_95}", 10)	--ÎäÆ÷
-	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_96}", 11)	--ÒÂ·þ
-	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_97}", 12)	--ÏîÁ´
-	YbMarket_EquipType1:AddTextItem("#{SBFW_20230707_304}", 13)	--ÆßÇéÈÐ aka Éñ±ø
+	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_86}", 1)	--??
+	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_87}", 2)	--??
+	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_88}", 3)	--??
+	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_89}", 4)	--??
+	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_90}", 5)	--??
+	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_91}", 6)	--??
+	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_92}", 7)	--??
+	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_93}", 8)	--??
+	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_94}", 9)	--??
+	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_95}", 10)	--??
+	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_96}", 11)	--??
+	YbMarket_EquipType1:AddTextItem("#{YBSC_XML_97}", 12)	--??
+	YbMarket_EquipType1:AddTextItem("#{SBFW_20230707_304}", 13)	--??? aka ??
 	
-	YbMarket_EquipType2:AddTextItem("#{YBSC_XML_86}", 1)	--È«²¿
-	YbMarket_EquipType2:AddTextItem("#{YBSC_XML_99}", 2)	--1¼¶~9¼¶
-	YbMarket_EquipType2:AddTextItem("#{YBSC_XML_113}", 3)	--10¼¶~19¼¶
-	YbMarket_EquipType2:AddTextItem("#{YBSC_XML_114}", 4)	--20¼¶~29¼¶
-	YbMarket_EquipType2:AddTextItem("#{YBSC_XML_115}", 5)	--30¼¶~39¼¶
-	YbMarket_EquipType2:AddTextItem("#{YBSC_XML_116}", 6)	--40¼¶~49¼¶
-	YbMarket_EquipType2:AddTextItem("#{YBSC_XML_117}", 7)	--50¼¶~59¼¶
-	YbMarket_EquipType2:AddTextItem("#{YBSC_XML_118}", 8)	--60¼¶~69¼¶
-	YbMarket_EquipType2:AddTextItem("#{YBSC_XML_100}", 9)	--70¼¶~79¼¶
-	YbMarket_EquipType2:AddTextItem("#{YBSC_XML_101}", 10)	--80¼¶~89¼¶
-	YbMarket_EquipType2:AddTextItem("#{YBSC_XML_102}", 11)	--90¼¶~100¼¶
+	YbMarket_EquipType2:AddTextItem("#{YBSC_XML_86}", 1)	--??
+	YbMarket_EquipType2:AddTextItem("#{YBSC_XML_99}", 2)	--1?~9?
+	YbMarket_EquipType2:AddTextItem("#{YBSC_XML_113}", 3)	--10?~19?
+	YbMarket_EquipType2:AddTextItem("#{YBSC_XML_114}", 4)	--20?~29?
+	YbMarket_EquipType2:AddTextItem("#{YBSC_XML_115}", 5)	--30?~39?
+	YbMarket_EquipType2:AddTextItem("#{YBSC_XML_116}", 6)	--40?~49?
+	YbMarket_EquipType2:AddTextItem("#{YBSC_XML_117}", 7)	--50?~59?
+	YbMarket_EquipType2:AddTextItem("#{YBSC_XML_118}", 8)	--60?~69?
+	YbMarket_EquipType2:AddTextItem("#{YBSC_XML_100}", 9)	--70?~79?
+	YbMarket_EquipType2:AddTextItem("#{YBSC_XML_101}", 10)	--80?~89?
+	YbMarket_EquipType2:AddTextItem("#{YBSC_XML_102}", 11)	--90?~100?
 	
-	YbMarket_EquipType3:AddTextItem("#{YBSC_XML_86}", 1)	--È«²¿
-	YbMarket_EquipType3:AddTextItem("#{YBSC_XML_119}", 2)	--Î´¼ø¶¨
-	YbMarket_EquipType3:AddTextItem("#{YBSC_XML_103}", 3)	--1ÐÇÒÔÉÏ
-	YbMarket_EquipType3:AddTextItem("#{YBSC_XML_104}", 4)	--2ÐÇÒÔÉÏ
-	YbMarket_EquipType3:AddTextItem("#{YBSC_XML_105}", 5)	--3ÐÇÒÔÉÏ
-	YbMarket_EquipType3:AddTextItem("#{YBSC_XML_106}", 6)	--4ÐÇÒÔÉÏ
-	YbMarket_EquipType3:AddTextItem("#{YBSC_XML_107}", 7)	--5ÐÇÒÔÉÏ
-	YbMarket_EquipType3:AddTextItem("#{YBSC_XML_108}", 8)	--6ÐÇÒÔÉÏ
-	YbMarket_EquipType3:AddTextItem("#{YBSC_XML_109}", 9)	--7ÐÇÒÔÉÏ
-	YbMarket_EquipType3:AddTextItem("#{YBSC_XML_110}", 10)	--8ÐÇÒÔÉÏ
+	YbMarket_EquipType3:AddTextItem("#{YBSC_XML_86}", 1)	--??
+	YbMarket_EquipType3:AddTextItem("#{YBSC_XML_119}", 2)	--???
+	YbMarket_EquipType3:AddTextItem("#{YBSC_XML_103}", 3)	--1???
+	YbMarket_EquipType3:AddTextItem("#{YBSC_XML_104}", 4)	--2???
+	YbMarket_EquipType3:AddTextItem("#{YBSC_XML_105}", 5)	--3???
+	YbMarket_EquipType3:AddTextItem("#{YBSC_XML_106}", 6)	--4???
+	YbMarket_EquipType3:AddTextItem("#{YBSC_XML_107}", 7)	--5???
+	YbMarket_EquipType3:AddTextItem("#{YBSC_XML_108}", 8)	--6???
+	YbMarket_EquipType3:AddTextItem("#{YBSC_XML_109}", 9)	--7???
+	YbMarket_EquipType3:AddTextItem("#{YBSC_XML_110}", 10)	--8???
 	
-	YbMarket_CboSearchMode:AddTextItem("#{YBSC_100111_66}" ,1)			--°´Ê±¼ä´ÓÐÂÖÁ¾ÉÅÅÐò
-	YbMarket_CboSearchMode:AddTextItem("#{YBSC_100111_67}" ,2)			--°´Ê±¼ä´Ó¾ÉÖÁÐÂÅÅÐò
-	YbMarket_CboSearchMode:AddTextItem("#{YBSC_100111_68}" ,3)			--°´µ¥¼Û´Ó¸ßÖÁµÍÅÅÁÐ
-	YbMarket_CboSearchMode:AddTextItem("#{YBSC_100111_69}" ,4)			--°´µ¥¼Û´ÓµÍÖÁ¸ßÅÅÁÐ
-	YbMarket_CboSearchMode:AddTextItem("#{YBSC_100111_70}" ,5)			--°´ÉÌÆ·Ãû³Æ½µÐòÅÅÁÐ
-	YbMarket_CboSearchMode:AddTextItem("#{YBSC_100111_71}" ,6)			--°´ÉÌÆ·Ãû³ÆÉýÐòÅÅÁÐ
-	YbMarket_CboSearchMode:AddTextItem("#{YBSC_100111_72}" ,7)			--°´Âô¼ÒÐÕÃû½µÐòÅÅÁÐ
-	YbMarket_CboSearchMode:AddTextItem("#{YBSC_100111_73}" ,8)			--°´Âô¼ÒÐÕÃûÉýÐòÅÅÁÐ
+	YbMarket_CboSearchMode:AddTextItem("#{YBSC_100111_66}" ,1)			--?????????
+	YbMarket_CboSearchMode:AddTextItem("#{YBSC_100111_67}" ,2)			--?????????
+	YbMarket_CboSearchMode:AddTextItem("#{YBSC_100111_68}" ,3)			--?????????
+	YbMarket_CboSearchMode:AddTextItem("#{YBSC_100111_69}" ,4)			--?????????
+	YbMarket_CboSearchMode:AddTextItem("#{YBSC_100111_70}" ,5)			--?????????
+	YbMarket_CboSearchMode:AddTextItem("#{YBSC_100111_71}" ,6)			--?????????
+	YbMarket_CboSearchMode:AddTextItem("#{YBSC_100111_72}" ,7)			--?????????
+	YbMarket_CboSearchMode:AddTextItem("#{YBSC_100111_73}" ,8)			--?????????
 
 	YbMarket_btnWeb:SetToolTip("#{YBSC_XML_81}")
 	YbMarket_btnUsage:SetToolTip("#{YBSC_XML_80}")
@@ -258,7 +258,7 @@ function YbMarket_OnEvent(event)
 	end
 	
 	if event == "UI_COMMAND" and tonumber(arg0) == YbMarket_UICommand_Id then
-		if this:IsVisible() == true then --·ÀÖ¹ÖØÈë?
+		if this:IsVisible() == true then --?????
 			return
 		end
 		
@@ -403,7 +403,7 @@ function YbMarket_Update(curPage , totalPage)
 				local strHead = Auction:GetPetPortraitByIndex(i - 1 , 0)
 				local nEra = Auction:GetPetEraCount(i - 1 , 0)
 				if nEra == 1 then
-					pName = "¶þ´ú"..pName
+					pName = "Ð¶i thÑ 2"..pName
 				end
 				_YbMarket_InsertPetList(i, pName, pSeller, pYB , strHead)
 			end
@@ -434,7 +434,7 @@ function YbMarket_Update(curPage , totalPage)
 	
 end
 
--- ÇÐ»»ÎïÆ·ºÍÕäÊÞ£¬ 0ÎïÆ·£¬ 1ÕäÊÞ
+-- ÇÐ»»ÎïÆ·ºÍ äÊÞ£¬ 0ÎïÆ·£¬ 1 äÊÞ
 function OnYbMarket_ChangeTabIndex(index)
 	if index == YbMarket_nSelectTable then
 		return
@@ -469,7 +469,7 @@ function OnYbMarket_ChangeTabIndex(index)
 		_YbMarket_ClearPetList()
 		_YbMarket_ChangeToPetList()
 	else
-		YbMarket_nSelectSubType = 10101	--×éºÏ×Ö¶Î£º×°±¸²¿Î»Ñ¡Ïî*10000+×°±¸µÈ¼¶Ñ¡Ïî*100+×°±¸ÐÇ¼¶Ñ¡Ïî
+		YbMarket_nSelectSubType = 10101	--????:??????*10000+??????*100+??????
 		_YbMarket_ClearEquipList()
 		_YbMarket_ChangeToEquipList()
 	end
@@ -539,7 +539,7 @@ function OnYbMarket_btnSubTypeClicked(index)
 	--__TestOutPutMsg(YbMarket_nSelectTable , YbMarket_nSelectSubType,nIndex , strKey , 1)
 end
 
--- ÉÏ¼ÜÕäÊÞ
+-- ÉÏ¼Ü äÊÞ
 function OnYbMarket_btnUpPetClieked()
 	if IsWindowShow("YbMarketUpPet") then
 		Auction:CloseUpPetWindow()
@@ -584,7 +584,7 @@ function OnYbMarket_ActionItemClicked(index)
 	YbMarket_Cur_Select = index
 end
 
--- ÕäÊÞÁÐ±íÖÐ£¬ actionµã»÷£¬ ´Ó1¿ªÊ¼Ë÷Òý£¬ µ½10
+--  äÊÞÁÐ±íÖÐ£¬ actionµã»÷£¬ ´Ó1¿ªÊ¼Ë÷Òý£¬ µ½10
 function OnYbMarket_ActionPetClicked(index)
 	for i = 1 , 10 do
 		YbMarket_ctrlPetActions[i]:SetPushed(0)
@@ -604,7 +604,7 @@ function OnYbMarket_ActionEquipClicked(index)
 	YbMarket_Cur_Select = index
 end
 
--- ÕäÊÞÁÐ±íÖÐ£¬ ²é¿´°´Å¥£¬ ´Ó1¿ªÊ¼Ë÷Òý£¬ µ½10
+--  äÊÞÁÐ±íÖÐ£¬ ²é¿´°´Å¥£¬ ´Ó1¿ªÊ¼Ë÷Òý£¬ µ½10
 function OnYbMarket_btnDetailClicked(index)
 	if index > 0 and index <= 10 then
 		Auction:ShowYBMarketCurPage_PetInfo(index - 1)
@@ -618,7 +618,7 @@ end
 
 --Ñ¡ÖÐÉÌÆ·
 function OnYbMarket_AllBKClicked(index)
-	--²»ÔÊÐíÑ¡ÖÐ¿ÕµÄ
+	--²»ÔÊÐíÑ¡ÖÐ¿ µÄ
 	if YbMarket_nSelectTable == 1 then
 		local pName, pSeller, pYB = Auction:GetPetAuctionInfo(index - 1)
 		if pSeller == nil or pYB == nil then
@@ -631,7 +631,7 @@ function OnYbMarket_AllBKClicked(index)
 		end
 	end
 
-	if YbMarket_nSelectTable == 2 then--ÎïÆ·ÌØÐ´£¬ºóÐø´úÂë²»Ö´ÐÐ
+	if YbMarket_nSelectTable == 2 then--????,???????
 		YbMarket_ItemCheck(index)	
 		return
 	end
@@ -719,10 +719,10 @@ function OnYbMarket_btnBuyClicked()
 		return
 	end
 
-	if YbMarket_nSelectTable == 2 then--ÎïÆ·ÌØÐ´£¬ºóÐø´úÂë²»Ö´ÐÐ
+	if YbMarket_nSelectTable == 2 then--????,???????
 		--ÎïÆ·Ñ¡ÖÐ
 		if YbMarket_ItemCount_Select <= 0 then
-			PushDebugMessage("#{SHPLGM_150428_05}")--ÇëÑ¡ÔñÄúÒª¹ºÂòµÄÎïÆ·
+			PushDebugMessage("#{SHPLGM_150428_05}")--??????????
 			return
 		end		
 		--°²È«Ê±¼ä
@@ -736,7 +736,7 @@ function OnYbMarket_btnBuyClicked()
 		end
 		--¸öÊýÅÐ¶Ï
 		if YbMarket_ItemCount_Select > 10 then
-			PushDebugMessage("#{SHPLGM_150428_11}")--ÎÞ·¨¹ºÂò£¬Ã¿´Î×î¶àÖ»ÄÜ¹ºÂò10ÏîÎïÆ·
+			PushDebugMessage("#{SHPLGM_150428_11}")--????,????????10???
 			return
 		end	
 		--Ö»¹ºÂòÒ»¼þÎïÆ·
@@ -1133,25 +1133,25 @@ function YbMarket_ItemCheck(index)
 
 	--ÅÐ¶Ïµ±Ç°Ñ¡ÖÐ×´Ì¬
 	local bCheck = YbMarket_ItemIndex_Select[index]
-	if bCheck == 1 then--ÒÑ¾­Ñ¡ÖÐµÄÈ¡ÏûÑ¡ÖÐ
+	if bCheck == 1 then--?????????
 		--YbMarket_ctrlItemFlash[index]:Hide()
-		YbMarket_ctrlItemChecks[index] : SetCheck(0)--È¡ÏûÑ¡ÖÐ
+		YbMarket_ctrlItemChecks[index] : SetCheck(0)--????
 		YbMarket_ItemIndex_Select[index] = 0
-		YbMarket_ItemCount_Select = YbMarket_ItemCount_Select - 1--ÊýÁ¿×Ô¼õ
-		if YbMarket_ItemCount_Select ~= YbMarket_ItemCount_Show then--²»Âú×ã¹´Ñ¡ÉÏÏÞ
-			YbMarket_DX:SetCheck(0)--È¡ÏûÈ«Ñ¡
+		YbMarket_ItemCount_Select = YbMarket_ItemCount_Select - 1--????
+		if YbMarket_ItemCount_Select ~= YbMarket_ItemCount_Show then--???????
+			YbMarket_DX:SetCheck(0)--????
 		end
-	else	--Î´Ñ¡ÖÐµÄ½øÈë¹´Ñ¡Âß¼­
-		if YbMarket_ItemCount_Select >= 10 then--³¬¹ý¹´Ñ¡ÉÏÏÞ
-			PushDebugMessage("#{SHPLGM_150428_01}")--¹´Ñ¡ÒÑ´ïÉÏÏÞ£¬Ã¿´Î×î¶à¿É¹´Ñ¡10ÏîÎïÆ·¡£
+	else	--??????????
+		if YbMarket_ItemCount_Select >= 10 then--??????
+			PushDebugMessage("#{SHPLGM_150428_01}")--??????,???????10????
 			return
-		else--¿ÉÒÔÑ¡ÖÐ
+		else--????
 			--YbMarket_ctrlItemFlash[index]:Show()
-			YbMarket_ctrlItemChecks[index] : SetCheck(1)--Ñ¡ÖÐ
+			YbMarket_ctrlItemChecks[index] : SetCheck(1)--??
 			YbMarket_ItemIndex_Select[index] = 1
-			YbMarket_ItemCount_Select = YbMarket_ItemCount_Select + 1--ÊýÁ¿×ÔÔö
-			if YbMarket_ItemCount_Select == YbMarket_ItemCount_Show then--´ïµ½¹´Ñ¡ÉÏÏÞ
-				YbMarket_DX:SetCheck(1)--Ñ¡ÖÐÈ«Ñ¡
+			YbMarket_ItemCount_Select = YbMarket_ItemCount_Select + 1--????
+			if YbMarket_ItemCount_Select == YbMarket_ItemCount_Show then--??????
+				YbMarket_DX:SetCheck(1)--????
 			end
 		end
 	end
@@ -1159,27 +1159,27 @@ end
 
 function OnYbMarket_ItemCheckAll()
 	local bCheck = YbMarket_DX : GetCheck()
-	if bCheck == 1 then--ÒÑ¾­Ñ¡ÖÐµÄÈ¡ÏûÑ¡ÖÐ
+	if bCheck == 1 then--?????????
 		--YbMarket_DX : SetCheck(0)--È¡ÏûÑ¡ÖÐ
-		YbMarket_ItemCount_Select = 0--ÊýÁ¿Çå¿Õ		
-		for i=1,10 do--È«²¿È¡ÏûÑ¡ÖÐ
+		YbMarket_ItemCount_Select = 0--????		
+		for i=1,10 do--??????
 			if YbMarket_ItemIndex_Show[i] == 1 and YbMarket_ItemIndex_Select[i] == 1 then
 				--YbMarket_ctrlItemFlash[i] : Hide()
-				YbMarket_ctrlItemChecks[i] : SetCheck(0)--Ñ¡ÖÐ
+				YbMarket_ctrlItemChecks[i] : SetCheck(0)--??
 				YbMarket_ItemIndex_Select[i] = 0
 			end
 		end
-	else	--Î´Ñ¡ÖÐµÄ½øÈë¹´Ñ¡Âß¼­
-		if YbMarket_ItemCount_Show > 10 then--³¬¹ý¹´Ñ¡ÉÏÏÞ
-			PushDebugMessage("#{SHPLGM_150428_01}")--¹´Ñ¡ÒÑ´ïÉÏÏÞ£¬Ã¿´Î×î¶à¿É¹´Ñ¡10ÏîÎïÆ·¡£
+	else	--??????????
+		if YbMarket_ItemCount_Show > 10 then--??????
+			PushDebugMessage("#{SHPLGM_150428_01}")--??????,???????10????
 			return
-		else--¿ÉÒÔÑ¡ÖÐ
+		else--????
 			--YbMarket_DX : SetCheck(1)--Ñ¡ÖÐÈ«Ñ¡
-			YbMarket_ItemCount_Select = YbMarket_ItemCount_Show--ÊýÁ¿ÉèÖÃ
-			for i=1,10 do--È«²¿Ñ¡ÖÐ
+			YbMarket_ItemCount_Select = YbMarket_ItemCount_Show--????
+			for i=1,10 do--????
 				if YbMarket_ItemIndex_Show[i] == 1 and YbMarket_ItemIndex_Select[i] ~= 1 then
 					--YbMarket_ctrlItemFlash[i] : Show()
-					YbMarket_ctrlItemChecks[i] : SetCheck(1)--Ñ¡ÖÐ
+					YbMarket_ctrlItemChecks[i] : SetCheck(1)--??
 					YbMarket_ItemIndex_Select[i] = 1
 				end
 			end

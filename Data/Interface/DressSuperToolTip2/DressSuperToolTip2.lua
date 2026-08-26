@@ -65,7 +65,7 @@ end
 
 function DressSuperToolTip2_Update()
 		g_NeedClickHide = 0;
-		-- 先清空以前显示的文字
+		-- 先清繝以前显示的文字
 		DressSuperToolTip2_ClearText();
 		
 		if(SuperTooltips2:IsTransferItem()) then
@@ -124,7 +124,7 @@ function DressSuperToolTip2_Update()
 			toDisplay = toDisplay .. ";DressSuperToolTip2_Property";
 		end
 
-		--作者
+		--作犨
 		if(szAuthor ~= nil) then 
 			toDisplay = toDisplay .. ";DressSuperToolTip2_Manufacturer_Frame";
 		end
@@ -264,7 +264,7 @@ end
 
 -------------------------------------------------------------------------------------------------------------------------------
 --
--- 清空显示文本
+-- 清繝显示文本
 --
 function DressSuperToolTip2_ClearText()
 		DressSuperToolTip2_StaticPart_Title:SetText("");

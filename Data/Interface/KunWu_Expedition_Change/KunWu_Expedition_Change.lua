@@ -23,7 +23,7 @@ function KunWu_Expedition_Change_PreLoad()
 	this:RegisterEvent("OPEN_PET_PAIQIAN_CHANGEPET")
 	this:RegisterEvent("CLOSE_PET_PAIQIAN_CHANGEPET",false)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--½ø³¡¾°¹Ø±Õ½çÃæ
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("ADJEST_UI_POS",false)
 	this:RegisterEvent("REFRESH_PET_PAIQIAN_CHOSE",false)
 end
@@ -255,9 +255,9 @@ function KunWu_Expedition_Change_PetItem_Check(index)
 	KunWu_Expedition_ChangeFakeObject_PetKaiwu:SetText(tostring(g_KunWu_Expedition_Change_KWText[active_count]))
 
 	local iGrowRate = Pet:GetGrowRate(g_KunWu_Expedition_Change_SelectedPetIndex-1)
-	KunWu_Expedition_ChangeFakeObject_PetGrowth:SetText("#cff0000Î´Öª")
+	KunWu_Expedition_ChangeFakeObject_PetGrowth:SetText("#cff0000không biªt")
 	local nGrowLevel = Pet:GetPetGrowLevel(g_KunWu_Expedition_Change_SelectedPetIndex-1, tonumber(iGrowRate))
-	local strTbl = {"ÆÕÍ¨", "ÓÅÐã", "½Ü³ö", "×¿Ô½", "ÍêÃÀ"}
+	local strTbl = {"S½ C¤p", "Xu¤t S¡c", "Ki®t Xu¤t", "Trác Vi®t", "Toàn MÛ"}
 	
 	if nGrowLevel >= 0 then
 		nGrowLevel = nGrowLevel + 1

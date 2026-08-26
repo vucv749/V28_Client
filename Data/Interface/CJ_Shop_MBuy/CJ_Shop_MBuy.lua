@@ -26,16 +26,16 @@ local g_CJ_Shop_MBuy_ExchangeType = {
 }
 -- 获得类型
 local g_CJ_Shop_MBuy_BagType = {
-    bag = 1,        -- 道具栏
-    mat = 2,        -- 材料栏
+    bag = 1,        -- ???
+    mat = 2,        -- ???
 }
 local g_CJ_Shop_MBuy_CareObjSvrId = -1
 function CJ_Shop_MBuy_PreLoad()
     this:RegisterEvent("TLCJ_OPENSHOPBUY", true)
     this:RegisterEvent("TLCJ_REFRESHSHOPINFO", false)
     this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)
-    this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-    this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+    this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+    this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end -- end func CJ_Shop_MBuy_PreLoad()
 
 function CJ_Shop_MBuy_OnEvent(event)
@@ -95,7 +95,7 @@ function CJ_Shop_MBuy_Close_Clicked()
     CJ_Shop_MBuy_Hide()
 end -- end func CJ_Shop_MBuy_Close_Clicked()
 
--- 关闭按钮
+-- 关睜按钮
 function CJ_Shop_MBuy_CloseShop()
     CJ_Shop_MBuy_Hide()
 end -- end func CJ_Shop_MBuy_CloseShop()

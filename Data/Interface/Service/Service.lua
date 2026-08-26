@@ -23,9 +23,9 @@ end
 
 function Service_OnLoad()
 	EQUIP_BUTTONS = Service_Item
-	Prompt_Text[1] = "  Äã¿ÉÒÔÔÚÖıÔìÌ¨ĞŞÀíÄÍ¾Ã½µµÍµÄÎäÆ÷¡£ÒªĞŞÀíµÄÎäÆ÷µÄĞèÇóµÈ¼¶ÖÁÉÙÒª>=40¼¶¡£40¼¶ÒÔÏÂÎäÆ÷ÇëÕÒÊÛ»õÉÌÈËÖ±½ÓĞŞÀí¡£#r  ĞŞÀíÎäÆ÷ĞèÒªÄãµÄÖıÔì¼¼ÄÜµÈ¼¶*12²»Ğ¡ÓÚÎäÆ÷µÄĞèÇóµÈ¼¶¡£#r  ĞŞÀíÓĞ¿ÉÄÜÊ§°Ü£¬ÀÛ¼ÆÊ§°Ü3´ÎÎäÆ÷±¨·Ï¡£ÄãµÄÖıÔì¼¼ÄÜµÈ¼¶Ô½¸ß£¬Ê§°ÜµÄ¿ÉÄÜĞÔÔ½Ğ¡¡£#r  Çë°ÑÒªĞŞÀíµÄÎäÆ÷ÍÏ¶¯µ½ÏÂÃæµÄÎïÆ·À¸ÖĞ£¬µã»÷¡°ĞŞÀí¡±¡£#r  Ã¿´ÎĞŞÀíÏûºÄ»îÁ¦=ÎäÆ÷µÈ¼¶+4¡£#r  ÎäÆ÷µÈ¼¶=ÎäÆ÷ĞèÇóµÈ¼¶/10+1ºóÈ¡Õû¡£"
-	Prompt_Text[2] = "  Äã¿ÉÒÔÔÚ·ìÈÒÌ¨ĞŞÀíÄÍ¾Ã½µµÍµÄ·À¾ß¡£ÒªĞŞÀíµÄ·À¾ßµÄĞèÇóµÈ¼¶ÖÁÉÙÒª>=40¼¶¡£40¼¶ÒÔÏÂ·À¾ßÇëÕÒÊÛ»õÉÌÈËÖ±½ÓĞŞÀí¡£#r  ĞŞÀí·À¾ßĞèÒªÄãµÄ·ìÈÒ¼¼ÄÜµÈ¼¶*12²»Ğ¡ÓÚ·À¾ßµÄĞèÇóµÈ¼¶¡£#r  ĞŞÀíÓĞ¿ÉÄÜÊ§°Ü£¬ÀÛ¼ÆÊ§°Ü3´Î·À¾ß±¨·Ï¡£ÄãµÄ·ìÈÒ¼¼ÄÜµÈ¼¶Ô½¸ß£¬Ê§°ÜµÄ¿ÉÄÜĞÔÔ½Ğ¡¡£#r  Çë°ÑÒªĞŞÀíµÄ·À¾ßÍÏ¶¯µ½ÏÂÃæµÄÎïÆ·À¸ÖĞ£¬µã»÷¡°ĞŞÀí¡±¡£#r  Ã¿´ÎĞŞÀíÏûºÄ»îÁ¦=·À¾ßµÈ¼¶+4¡£#r  ·À¾ßµÈ¼¶=·À¾ßĞèÇóµÈ¼¶/10+1ºóÈ¡Õû¡£"
-	Prompt_Text[3] = "  Äã¿ÉÒÔÔÚ¹¤ÒÕÌ¨ĞŞÀíÄÍ¾Ã½µµÍµÄÊÎÆ·¡£ÒªĞŞÀíµÄÊÎÆ·µÄĞèÇóµÈ¼¶ÖÁÉÙÒª>=40¼¶¡£40¼¶ÒÔÏÂÊÎÆ·ÇëÕÒÊÛ»õÉÌÈËÖ±½ÓĞŞÀí¡£#r  ĞŞÀíÊÎÆ·ÒªÇóÄãµÄ¹¤ÒÕ¼¼ÄÜµÈ¼¶*12²»Ğ¡ÓÚÊÎÆ·µÄĞèÇóµÈ¼¶¡£#r  ĞŞÀíÓĞ¿ÉÄÜÊ§°Ü£¬ÀÛ¼ÆÊ§°Ü3´ÎÊÎÆ·±¨·Ï¡£ÄãµÄ¹¤ÒÕ¼¼ÄÜµÈ¼¶Ô½¸ß£¬Ê§°ÜµÄ¿ÉÄÜĞÔÔ½Ğ¡¡£#r  Çë°ÑÒªĞŞÀíµÄÊÎÆ·ÍÏ¶¯µ½ÏÂÃæµÄÎïÆ·À¸ÖĞ£¬µã»÷¡°ĞŞÀí¡±¡£#r  Ã¿´ÎĞŞÀíÏûºÄ»îÁ¦=ÊÎÆ·µÈ¼¶+4¡£#r  ÊÎÆ·µÈ¼¶=ÊÎÆ·ĞèÇóµÈ¼¶/10+1ºóÈ¡Õû¡£"
+	Prompt_Text[1] = "Nhî có th¬ TÕi ğúc Ğài sØa chæa b«n r½i ch§m lÕi Ğích vû khí. Yêu sØa chæa Ğích vû khí Ğích nhu c¥u c¤p b§c ít nh¤t Yêu>=C¤p 40. C¤p 40 dß¾i vû khí Thïnh Träo Thø Hoá thß½ng nhân trñc tiªp sØa chæa. #r sØa chæa vû khí c¥n cüa ngß½i ğúc kÛ nång c¤p b§c*12không nhö Vu vû khí Ğích nhu c¥u c¤p b§c. #r sØa chæa m¾i có th¬ th¤t bÕi, luy kª th¤t bÕi 3ThÑ vû khí báo höng. Cüa ngß½i ğúc kÛ nång c¤p b§c càng cao, th¤t bÕi Ğích có th¬ Tính càng nhö. #r Thïnh Bä Yêu sØa chæa Ğích vû khí Ğà Ğµng khi ğªn Di®n Ğích v§t ph¦m Lan Trung, Ği¬m Kích'sØa chæa'. #r m²i l¥n sØa chæa tiêu hao sÑc s¯ng =vû khí c¤p b§c +4. #r vû khí c¤p b§c =vû khí nhu c¥u c¤p b§c/10+1H§u Thü Chïnh."
+	Prompt_Text[2] = "Nhî có th¬ TÕi may Ğài sØa chæa b«n r½i ch§m lÕi Ğích Phòng Cø. Yêu sØa chæa Ğích Phòng Cø Ğích nhu c¥u c¤p b§c ít nh¤t Yêu>=C¤p 40. C¤p 40 dß¾i Phòng Cø Thïnh Träo Thø Hoá thß½ng nhân trñc tiªp sØa chæa. #r sØa chæa Phòng Cø c¥n cüa ngß½i may kÛ nång c¤p b§c*12không nhö Vu Phòng Cø Ğích nhu c¥u c¤p b§c. #r sØa chæa m¾i có th¬ th¤t bÕi, luy kª th¤t bÕi 3ThÑ Phòng Cø báo höng. Cüa ngß½i may kÛ nång c¤p b§c càng cao, th¤t bÕi Ğích có th¬ Tính càng nhö. #r Thïnh Bä Yêu sØa chæa Ğích Phòng Cø Ğà Ğµng khi ğªn Di®n Ğích v§t ph¦m Lan Trung, Ği¬m Kích'sØa chæa'. #r m²i l¥n sØa chæa tiêu hao sÑc s¯ng =Phòng Cø c¤p b§c +4. #r Phòng Cø c¤p b§c =Phòng Cø nhu c¥u c¤p b§c/10+1H§u Thü Chïnh."
+	Prompt_Text[3] = "Nhî có th¬ TÕi công ngh® Ğài sØa chæa b«n r½i ch§m lÕi Ğích v§t ph¦m trang sÑc. Yêu sØa chæa Ğích v§t ph¦m trang sÑc Ğích nhu c¥u c¤p b§c ít nh¤t Yêu>=C¤p 40. C¤p 40 dß¾i v§t ph¦m trang sÑc Thïnh Träo Thø Hoá thß½ng nhân trñc tiªp sØa chæa. #r sØa chæa v§t ph¦m trang sÑc yêu c¥u cüa ngß½i công ngh® kÛ nång c¤p b§c*12không nhö Vu v§t ph¦m trang sÑc Ğích nhu c¥u c¤p b§c. #r sØa chæa m¾i có th¬ th¤t bÕi, luy kª th¤t bÕi 3ThÑ v§t ph¦m trang sÑc báo höng. Cüa ngß½i công ngh® kÛ nång c¤p b§c càng cao, th¤t bÕi Ğích có th¬ Tính càng nhö. #r Thïnh Bä Yêu sØa chæa Ğích v§t ph¦m trang sÑc Ğà Ğµng khi ğªn Di®n Ğích v§t ph¦m Lan Trung, Ği¬m Kích'sØa chæa'. #r m²i l¥n sØa chæa tiêu hao sÑc s¯ng =v§t ph¦m trang sÑc c¤p b§c +4. #r v§t ph¦m trang sÑc c¤p b§c =v§t ph¦m trang sÑc nhu c¥u c¤p b§c/10+1H§u Thü Chïnh."
 end
 
 function Service_OnEvent(event)
@@ -37,7 +37,7 @@ function Service_OnEvent(event)
 			objCared = DataPool : GetNPCIDByServerID(xx);
 			AxTrace(0,1,"xx="..xx .. " objCared="..objCared)
 			if objCared == -1 then
-					PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£");
+					PushDebugMessage("Dæ li®u máy chü có v¤n ğ«");
 					return;
 			end
 			BeginCareObject_Service(objCared)
@@ -48,7 +48,7 @@ function Service_OnEvent(event)
 			return;
 		end
 		
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			
 			--È¡Ïû¹ØĞÄ
@@ -132,7 +132,7 @@ function Service_Buttons_Clicked()
 			Set_XSCRIPT_ParamCount(2);
 		Send_XSCRIPT();
 	else
-		PushDebugMessage("Çë°ÑÒªĞŞÀíµÄ×°±¸ÍÏ¶¯µ½ÎïÆ·¿òÖĞ¡£")
+		PushDebugMessage("Thïnh Bä Yêu sØa chæa Ğích trang b¸ Ğà Ğµng Ğáo v§t ph¦m Khuông Trung.")
 	end
 	
 end
@@ -156,7 +156,7 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØĞÄNPC£¬
---ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 --Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function BeginCareObject_Service(objCaredId)

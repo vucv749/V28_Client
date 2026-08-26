@@ -306,7 +306,7 @@ function SelRecycleItem_OK_Clicked()
 		
 		local num = SelRecycleItem_Name_Text0_Input:GetText();
 		if(tonumber(num)==nil or tonumber(num)<=0) then
-			PushDebugMessage("ÊýÁ¿ÊäÈë²»ÄÜÎª¿Õ");
+			PushDebugMessage("S¯ lßþng ðßa vào không th¬ Vi Không");
 			return
 		end
 		if(  tonumber(szGold)==nil or tonumber(szGold)<0 ) then
@@ -319,7 +319,7 @@ function SelRecycleItem_OK_Clicked()
 			szCopperCoin = 0;
 		end
 		if(szGold == 0 and szSilver == 0 and szCopperCoin == 0) then
-			PushDebugMessage("½ðÇ®ÊäÈë²»ÄÜÎª0");
+			PushDebugMessage("Ti«n tài ðßa vào không th¬ Vi 0");
 			return
 		end
 		--ÔÚ³ÌÐòÀïÍ·ÔÙ¼ì²âÊäÈë×Ö·ûµÄÓÐÐ§ÐÔºÍÊýÖµ
@@ -332,14 +332,14 @@ function SelRecycleItem_OK_Clicked()
 				PlayerShop:SendAddRecycleItemMsg(Type,ItemtableIdxs[CurSelItemIdx],tonumber(num),nMoney);
 				this:Hide();
 			else
-				PushDebugMessage("¶Ô²»Æð£¬ÄúÉÌµêµÄÓ¯Àû×Ê½ð²»¹»£¬ÎÞ·¨ÊÕ¹º£¡");		
+				PushDebugMessage("Thñc xin l²i, Nhçm cØa hàng Ðích lþi nhu§n tài chính không ðü, không th¬ thu mua!");		
 			end
 			
 		else
-			PushDebugMessage("ÊýÁ¿»òÕß½ðÇ®ÊäÈë²»·ûºÏÌõ¼þ£¡");
+			PushDebugMessage("S¯ lßþng ho£c là ti«n tài ðßa vào không phù hþp ði«u ki®n!");
 		end
 	else
-		PushDebugMessage("ÇëÑ¡ÔñÒ»¸ö²ÄÁÏ£¡");
+		PushDebugMessage("Thïnh lña ch÷n mµt cái tài li®u!");
 	end
 end
 

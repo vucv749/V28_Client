@@ -1,12 +1,12 @@
 
-local MenPaiFirstOne_Progress_Battle_OneTimeBegin = 10090  --MenPaiFirstOne_Progress.lua ÀïÃæÓÐÒ»ÑùµÄºê
+local MenPaiFirstOne_Progress_Battle_OneTimeBegin = 10090  --MenPaiFirstOne_Progress.lua ???????
 local MenPaiFirstOne_Progress_Battle_OneTimeEnd = 10390
 local MenPaiFirstOne_Progress_Battle_TwoTimeBegin = 10450
 local MenPaiFirstOne_Progress_Battle_TwoTimeEnd = 10750
 local MenPaiFirstOne_Progress_Battle_ThreeTimeBegin = 10810
 local MenPaiFirstOne_Progress_Battle_ThreeTimeEnd = 11110
 local MenPaiFirstOne_Progress_Battle_FourTimeBegin = 11170
-local MenPaiFirstOne_Progress_Battle_FourTimeEnd = 11470--MenPaiFirstOne_Progress.lua ÀïÃæÓÐÒ»ÑùµÄºê
+local MenPaiFirstOne_Progress_Battle_FourTimeEnd = 11470--MenPaiFirstOne_Progress.lua ???????
 
 local MenPaiFirstOne_Progress_Lost = "set:HSLJ_01 image:HSLJ_Lost"
 local MenPaiFirstOne_Progress_Winer = "set:HSLJ_01 image:HSLJ_Winer"
@@ -23,17 +23,17 @@ function MenPaiFirstOne_Progress_PreLoad()
 end
 
 local g_enPaiFirstOne_Progress_menpaiInfo = {
-	"ÉÙÁÖ",
-	"Ã÷½Ì",
-	"Ø¤°ï",
-	"Îäµ±",
-	"¶ëáÒ",
-	"ÐÇËÞ",
-	"ÌìÁú",
-	"ÌìÉ½",
-	"åÐÒ£",
-	"ÎÞÃÅÅÉ",
-	"ÂüÍÓ"
+	"Thiªu Lâm",
+	"Minh Giáo",
+	"Cái Bang",
+	"Võ Ðang",
+	"Nga Mi",
+	"Tinh Túc",
+	"Thiên Long",
+	"Thiên S½n",
+	"Tiêu dao",
+	"Tñ do",
+	"MÕn Ðà"
 };
 
 function MenPaiFirstOne_Progress_OnLoad()
@@ -51,7 +51,7 @@ function MenPaiFirstOne_Progress_OnEvent(event)
 			return
 		end
 		
-		if arg0=="Hjyanmenguan_PVP" then --½øÕ½³¡¾Í¿ªÕâ¸ö½çÃæ
+		if arg0=="Hjyanmenguan_PVP" then --?????????
 			local myRet, myName, myCamp, myHp, myMaxHp = CMenPaiDiYiData:GetMyScore()
 	        if myRet == 1 then
 				MenPaiFirstOne_Progress_Left1PlayerHP:SetProgress(myHp, myMaxHp)
@@ -111,7 +111,7 @@ function MenPaiFirstOne_Progress_Battle_Fresh()
 
 	local nTick = CMenPaiDiYiData:GetTick()
 	local szMsg = g_enPaiFirstOne_Progress_menpaiInfo[myMenpai+1];
-	local unitId= CMenPaiDiYiData:GetUnitId() --unitId=0´ú±í16Ç¿ unitId=1´ú±í8Ç¿ unitId=2´ú±í4Ç¿ unitId=3´ú±í¾öÈü
+	local unitId= CMenPaiDiYiData:GetUnitId() --unitId=0??16? unitId=1??8? unitId=2??4? unitId=3????
 	local tips
 	if unitId == 0 then
 		tips = ScriptGlobal_Format("#{DYRCN_220427_10}",szMsg,"16","8")

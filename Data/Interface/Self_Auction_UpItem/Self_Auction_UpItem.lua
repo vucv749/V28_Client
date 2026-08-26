@@ -133,7 +133,7 @@ function Self_Auction_UpItem_Update(itemIdx)
 	if theAction:GetID() ~= 0 then
 		
 		if PlayerPackage:IsLock( itemIdx ) == 1 then
-			PushDebugMessage("ÎïÆ·ÒÑ¼ÓËø")	--µÀ¾ßÒÑÉÏËø
+			PushDebugMessage("V§t ph¦m Dî Gia Toä")	--?????
 			return
 		end
 

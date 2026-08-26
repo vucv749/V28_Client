@@ -8,22 +8,22 @@ local validCheckSetting = {}
 local curViewSetupBackup = {}
 
  -- ËÙ¶ÈÓÅÏÈ1¡¢¾ùºâÉèÖÃ2¡¢»­ÖÊÓÅÏÈ3¡¢³¬¸ß»­ÖÊ4
-local defaultSetting = 1 		-- »Ö¸´Ä¬ÈÏ°´Å¥Ê¹ÓÃ
+local defaultSetting = 1 		-- ????????
 -- ¸ü¸Ä´Ë´¦ĞèÒªÍ¬²½ĞŞ¸Ä CVariableSystem::FitVideoOptionTypeClassic()
 local settingSets = { 
-		[2] =	{0,0,0,1},  	--È«ÆÁ¿¹¾â³İ
-		[3] =	{0,2,2,2},  	--ÎïÌå¶¯»­
-		[4] =	{0,1,2,2},  	--ÈËÎïÒõÓ°
+		[2] =	{0,0,0,1},  	--?????
+		[3] =	{0,2,2,2},  	--????
+		[4] =	{0,1,2,2},  	--????
 --		[5] =	{2,2,2,2},  	--ÏÔÊ¾Ä£ĞÍÊı
-		[6] =	{0,2,2,2},  	--½ÇÉ«¶¯»­
-		[8] =	{0,2,2,2},  	--²ÉÑù
-		[9] =	{0,2,2,2},  	--Á£×ÓĞ§¹û
-		[11] =	{0,0,1,1}, 		--È«ÆÁ·º¹â
-		[13] =	{1,1,1,1},  	--ÏÔÊ¾ÃÔÎí
-		[15] =	{0,0,0,0},  	--È«ÆÁÄ£Ê½
-		[16] =	{1,1,1,0},  	--´¹Ö±Í¬²½
-		[17] =	{0,1,1,1}, 		--Ä£ĞÍÌØĞ§
-	 -- [14] =	{0,0,1,1},  	--ÕÚµ²°ëÍ¸
+		[6] =	{0,2,2,2},  	--????
+		[8] =	{0,2,2,2},  	--??
+		[9] =	{0,2,2,2},  	--????
+		[11] =	{0,0,1,1}, 		--????
+		[13] =	{1,1,1,1},  	--????
+		[15] =	{0,0,0,0},  	--????
+		[16] =	{1,1,1,0},  	--????
+		[17] =	{0,1,1,1}, 		--????
+	 -- [14] =	{0,0,1,1},  	-- Úµ²°ëÍ¸
 	}
 local allSettings = {}
 local settingByIndex = {}
@@ -47,26 +47,26 @@ end
 function ViewSetup_OnLoad()
 	allSettings =
 	{
-		{index = 2, ctrltype = "check" , docSize = 0, default = 0, ctrl = ViewSetup_Item_Check2 	,str = "fhj"},			--È«ÆÁ¿¹¾â³İ			View_Fanhunjiao
-		{index = 3, ctrltype = "slider" , docSize = 2, default = 2, ctrl = ViewSetup_Item3_Control 	,str = "wtdh"},			--ÎïÌå¶¯»­				View_ObjectMove
-		{index = 4, ctrltype = "slider" , docSize = 2, default = 1, ctrl = ViewSetup_Item9_Control 	,str = "rwyy"},			--ÈËÎïÒõÓ°				View_HumanLightmap
-		{index = 5, ctrltype = "slider" , docSize = 170, default = 170, ctrl = ViewSetup_Item10_Control 	,str = "ksfw"},		--ÏÔÊ¾Ä£ĞÍÊı ¿ÉÊÓ·¶Î§	View_VisibleModelNum
+		{index = 2, ctrltype = "check" , docSize = 0, default = 0, ctrl = ViewSetup_Item_Check2 	,str = "fhj"},			--?????			View_Fanhunjiao
+		{index = 3, ctrltype = "slider" , docSize = 2, default = 2, ctrl = ViewSetup_Item3_Control 	,str = "wtdh"},			--????				View_ObjectMove
+		{index = 4, ctrltype = "slider" , docSize = 2, default = 1, ctrl = ViewSetup_Item9_Control 	,str = "rwyy"},			--????				View_HumanLightmap
+		{index = 5, ctrltype = "slider" , docSize = 170, default = 170, ctrl = ViewSetup_Item10_Control 	,str = "ksfw"},		--????? ????	View_VisibleModelNum
 		--{index = 5, ctrltype = "slider" , docSize = 2, default = 2, ctrl = ViewSetup_Item10_Control 	,str = "ksfw"},		--ÏÔÊ¾Ä£ĞÍÊı ¿ÉÊÓ·¶Î§	View_VisibleRangeLevelNew
-		{index = 6, ctrltype = "slider" , docSize = 2, default = 2, ctrl = ViewSetup_Item11_Control 	,str = "dhgxzl"},	--½ÇÉ«¶¯»­				View_UpdateQuality
-		{index = 8, ctrltype = "slider" , docSize = 2, default = 2, ctrl = ViewSetup_Item7_Control 	,str = "cy"},			--²ÉÑù					View_TextureFiltering
-		{index = 9, ctrltype = "slider" , docSize = 2, default = 2, ctrl = ViewSetup_Item14_Control 	,str = "txdjsz"},	--Á£×ÓĞ§¹û				View_EffectLevel
-		{index = 10, ctrltype = "slider" , docSize = 2, default = 2, ctrl = ViewSetup_Item17_Control 	,str = "mxxslj"},	--Ä£ĞÍÏÔÊ¾				View_ModelShowLogic
-		{index = 11, ctrltype = "check" , docSize = 0, default = 0, ctrl = ViewSetup_Item_Check4 		,str = "qpfg"},		--È«ÆÁ·º¹â				View_HDRFilter
-		{index = 13, ctrltype = "check" , docSize = 0, default = 1, ctrl = ViewSetup_Item_Miwu 		,str = "miwu"},			--ÏÔÊ¾ÃÔÎí				View_EnableFog
-		{index = 14, ctrltype = "check" , docSize = 0, default = 0, ctrl = ViewSetup_Item_Bantou 		,str = "zdbt"},		--ÕÚµ²°ëÍ¸				View_Transparency
-		{index = 15, ctrltype = "check" , docSize = 0, default = 0, ctrl = ViewSetup_Item_Check7 		,str = "qpms"},		--È«ÆÁÄ£Ê½				View_FullScreen
-		{index = 16, ctrltype = "check" , docSize = 0, default = 1, ctrl = ViewSetup_Item_Check5 		,str = "cztb"},		--´¹Ö±Í¬²½				View_Aplomb
-		{index = 17, ctrltype = "check" , docSize = 0, default = 1, ctrl = ViewSetup_Item_SetEffect 		,str = "mxtx"},		--Ä£ĞÍÌØĞ§				View_ModelEffect
+		{index = 6, ctrltype = "slider" , docSize = 2, default = 2, ctrl = ViewSetup_Item11_Control 	,str = "dhgxzl"},	--????				View_UpdateQuality
+		{index = 8, ctrltype = "slider" , docSize = 2, default = 2, ctrl = ViewSetup_Item7_Control 	,str = "cy"},			--??					View_TextureFiltering
+		{index = 9, ctrltype = "slider" , docSize = 2, default = 2, ctrl = ViewSetup_Item14_Control 	,str = "txdjsz"},	--????				View_EffectLevel
+		{index = 10, ctrltype = "slider" , docSize = 2, default = 2, ctrl = ViewSetup_Item17_Control 	,str = "mxxslj"},	--????				View_ModelShowLogic
+		{index = 11, ctrltype = "check" , docSize = 0, default = 0, ctrl = ViewSetup_Item_Check4 		,str = "qpfg"},		--????				View_HDRFilter
+		{index = 13, ctrltype = "check" , docSize = 0, default = 1, ctrl = ViewSetup_Item_Miwu 		,str = "miwu"},			--????				View_EnableFog
+		{index = 14, ctrltype = "check" , docSize = 0, default = 0, ctrl = ViewSetup_Item_Bantou 		,str = "zdbt"},		--????				View_Transparency
+		{index = 15, ctrltype = "check" , docSize = 0, default = 0, ctrl = ViewSetup_Item_Check7 		,str = "qpms"},		--????				View_FullScreen
+		{index = 16, ctrltype = "check" , docSize = 0, default = 1, ctrl = ViewSetup_Item_Check5 		,str = "cztb"},		--????				View_Aplomb
+		{index = 17, ctrltype = "check" , docSize = 0, default = 1, ctrl = ViewSetup_Item_SetEffect 		,str = "mxtx"},		--????				View_ModelEffect
 		-- {index = 18, ctrltype = "check" , docSize = 0, default = 0, ctrl = ViewSetup_Item_HDR 			,str = "hdr"},		--HDR					View_HDRFilter
-		{index = 21, ctrltype = "check" , docSize = 0, default = 0, ctrl = ViewSetup_Item_INSTEADMODEL	,str = "tm"},		--ÌæÄ£Ä£Ê½ 				View_InsteadModel
-		{index = 22, ctrltype = "check" , docSize = 0, default = 1, ctrl = ViewSetup_Item_Check11		,str = "tksj"}, 	--Ìì¿ÕÊÓ½Ç 				View_UseSkyCamera
-		{index = 23, ctrltype = "check" , docSize = 0, default = 1, ctrl = ViewSetup_Item_shijiao		,str = "sjbc"}, 	--ÊÓ½Ç±£³Ö 				Camera_RestoreView
-		{index = 24, ctrltype = "check" , docSize = 0, default = 1, ctrl = ViewSetup_Item_Check_ShijJu	,str = "mrsj"}, 	--¾­µäÊÓ¾à 				View_DefaultCamera
+		{index = 21, ctrltype = "check" , docSize = 0, default = 0, ctrl = ViewSetup_Item_INSTEADMODEL	,str = "tm"},		--???? 				View_InsteadModel
+		{index = 22, ctrltype = "check" , docSize = 0, default = 1, ctrl = ViewSetup_Item_Check11		,str = "tksj"}, 	--???? 				View_UseSkyCamera
+		{index = 23, ctrltype = "check" , docSize = 0, default = 1, ctrl = ViewSetup_Item_shijiao		,str = "sjbc"}, 	--???? 				Camera_RestoreView
+		{index = 24, ctrltype = "check" , docSize = 0, default = 1, ctrl = ViewSetup_Item_Check_ShijJu	,str = "mrsj"}, 	--???? 				View_DefaultCamera
 		-- {index = 25, ctrltype = "check" , docSize = 0, default = 0, ctrl = ViewSetup_Item_MARS			,str = "WaveWater"}, --MarsË®-ĞÂË® 			View_WaveWater
 		-- {index = 26, ctrltype = "check" , docSize = 0, default = 0, ctrl = ViewSetup_Item_Checkfps		,str = "zhenlv"}, 	--¸ßÖ¡ÂÊ(60Ö¡) 			View_GaoZhenLv
 	}
@@ -86,7 +86,7 @@ function ViewSetup_OnLoad()
 		end
 	end
 
-	ViewSetup_Item15:ComboBoxAddItem("-µ±Ç°-", 0);
+	ViewSetup_Item15:ComboBoxAddItem("-trß¾c m£t-", 0);
 	ViewSetup_Item15:ComboBoxAddItem("800X600", 1);
 	ViewSetup_Item15:ComboBoxAddItem("1024X768", 2);
 	ViewSetup_Item15:ComboBoxAddItem("1280X720", 3);
@@ -280,7 +280,7 @@ end
 -- ¸üĞÂÊÓ½Ç±£³Ö¸´Ñ¡¿ò×´Ì¬
 function ViewSetup_Sjbc_ClickEx()
 
-	-- ÈôÌì¿ÕÊÓ½Ç´ò¿ª£¬ÔòÊÓ½Ç±£³ÖÏÔÊ¾
+	-- ÈôÌì¿ ÊÓ½Ç´ò¿ª£¬ÔòÊÓ½Ç±£³ÖÏÔÊ¾
 	if ViewSetup_Item_Check11:GetCheck() == 1 then
 		ViewSetup_Item_shijiao:Show()
 		ViewSetup_shijiao_Text:Show()
@@ -340,13 +340,13 @@ end
 function ViewSetup_ResetComboList(nXX)
 
 	ViewSetup_SelSettings:ResetList()
-	ViewSetup_SelSettings:AddTextItem("#{XSYH_XML_7}",	1)			--ËÙ¶ÈÓÅÏÈ
-	ViewSetup_SelSettings:AddTextItem("#{XSYH_XML_8}",	2)			--¾ùºâÉèÖÃ	Ä¬ÈÏÅäÖÃ
-	ViewSetup_SelSettings:AddTextItem("#{XSYH_XML_9}",	3)			--»­ÖÊÓÅÏÈ
-	ViewSetup_SelSettings:AddTextItem("#{XSYH_XML_10}",	4)			--³¬¸ß»­ÖÊ
+	ViewSetup_SelSettings:AddTextItem("#{XSYH_XML_7}",	1)			--????
+	ViewSetup_SelSettings:AddTextItem("#{XSYH_XML_8}",	2)			--????	????
+	ViewSetup_SelSettings:AddTextItem("#{XSYH_XML_9}",	3)			--????
+	ViewSetup_SelSettings:AddTextItem("#{XSYH_XML_10}",	4)			--????
 
 	if nXX == 0 then
-		ViewSetup_SelSettings:AddTextItem("#{XSYH_XML_2}",5)			--×Ô¶¨Òå
+		ViewSetup_SelSettings:AddTextItem("#{XSYH_XML_2}",5)			--???
 	end
 end
 
@@ -360,7 +360,7 @@ function ViewSetup_CheckSetting_Clicked(nIndex)
 			ViewSetup_Item15:Enable();
 		end
 	elseif nIndex == 22 then 
-		-- Ìì¿ÕÊÓ½Ç
+		-- Ìì¿ ÊÓ½Ç
 		ViewSetup_Sjbc_ClickEx()
 	elseif nIndex == 11 then 
 		-- È«ÆÁ·º¹â
@@ -449,16 +449,16 @@ function ViewSetup_YingYong_Clicked()
         return
     end
 
-    --- ÎªÊ²Ã´Õâ¾ä»°Òª·ÅÔÚÕâÀï£¬ÒòÎªÒªÇó¡°ÄúµÄÉèÖÃÒÑ¾­ÉúĞ§¡±·ÅÔÚ¡°²¿·ÖÉèÖÃĞèÒªÖØÆô¡±Ç°Ãæ
+    --- ÎªÊ²Ã´ â¾ä»°Òª·ÅÔÚ âÀï£¬ÒòÎªÒªÇó¡°ÄúµÄÉèÖÃÒÑ¾­ÉúĞ§¡±·ÅÔÚ¡°²¿·ÖÉèÖÃĞèÒªÖØÆô¡±Ç°Ãæ
     PushDebugMessage( "#{XTSZYH_111220_10}" )
 
    --ÊÇ·ñĞèÒªÖØĞÂÆô¶¯
-    local tabinfo = settingByIndex[16] -- ´¹Ö±Í¬²½
+    local tabinfo = settingByIndex[16] -- ????
 	local bNeedReset2 = false;
 	if tabinfo and settingByIndex[ctrlName].ctrl then bNeedReset2 = tonumber(SystemSetup:View_GetData(tabinfo.str)) ~= (tonumber(tabinfo.ctrl:GetCheck())); end
 
 	if(bNeedReset2) then
-		PushDebugMessage("´¹Ö±Í¬²½ĞèÒªÖØÆô");
+		PushDebugMessage("Vuông góc ğ°ng bµ c¥n Trùng Khäi");
 	end
 
 	for i, v in pairs(allSettings) do 

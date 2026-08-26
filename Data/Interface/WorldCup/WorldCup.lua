@@ -4,14 +4,14 @@
 --球队名，此数据在运行时无需修改
 local g_WorldCup_Player =
 {
-	"#{SJB_XML_50}",		"#{SJB_XML_51}",		"#{SJB_XML_52}",		"#{SJB_XML_53}",	--A(1)组
-	"#{SJB_XML_54}",		"#{SJB_XML_55}",		"#{SJB_XML_56}",		"#{SJB_XML_57}",	--B(2)组
-	"#{SJB_XML_58}",		"#{SJB_XML_59}",		"#{SJB_XML_60}",		"#{SJB_XML_61}",	--C(3)组
-	"#{SJB_XML_62}",		"#{SJB_XML_63}",		"#{SJB_XML_64}",		"#{SJB_XML_65}",	--D(4)组
-	"#{SJB_XML_66}",		"#{SJB_XML_67}",		"#{SJB_XML_68}",		"#{SJB_XML_69}",	--E(5)组
-	"#{SJB_XML_70}",		"#{SJB_XML_71}",		"#{SJB_XML_72}",		"#{SJB_XML_73}",	--F(6)组
-	"#{SJB_XML_74}",		"#{SJB_XML_75}",		"#{SJB_XML_76}",		"#{SJB_XML_77}",	--G(7)组
-	"#{SJB_XML_78}",		"#{SJB_XML_79}",		"#{SJB_XML_80}",		"#{SJB_XML_81}",	--H(8)组
+	"#{SJB_XML_50}",		"#{SJB_XML_51}",		"#{SJB_XML_52}",		"#{SJB_XML_53}",	--A(1)?
+	"#{SJB_XML_54}",		"#{SJB_XML_55}",		"#{SJB_XML_56}",		"#{SJB_XML_57}",	--B(2)?
+	"#{SJB_XML_58}",		"#{SJB_XML_59}",		"#{SJB_XML_60}",		"#{SJB_XML_61}",	--C(3)?
+	"#{SJB_XML_62}",		"#{SJB_XML_63}",		"#{SJB_XML_64}",		"#{SJB_XML_65}",	--D(4)?
+	"#{SJB_XML_66}",		"#{SJB_XML_67}",		"#{SJB_XML_68}",		"#{SJB_XML_69}",	--E(5)?
+	"#{SJB_XML_70}",		"#{SJB_XML_71}",		"#{SJB_XML_72}",		"#{SJB_XML_73}",	--F(6)?
+	"#{SJB_XML_74}",		"#{SJB_XML_75}",		"#{SJB_XML_76}",		"#{SJB_XML_77}",	--G(7)?
+	"#{SJB_XML_78}",		"#{SJB_XML_79}",		"#{SJB_XML_80}",		"#{SJB_XML_81}",	--H(8)?
 	"#{SJB_XML_82}",		"#{SJB_XML_83}",		"#{SJB_XML_84}",		"#{SJB_XML_85}",
 	"#{SJB_XML_86}",		"#{SJB_XML_87}",		"#{SJB_XML_88}",		"#{SJB_XML_89}",
 	"#{SJB_XML_90}",		"#{SJB_XML_91}",		"#{SJB_XML_92}",		"#{SJB_XML_93}",
@@ -21,7 +21,7 @@ local g_WorldCup_Player =
 	"#{SJB_XML_106}",		"#{SJB_XML_107}",		"#{SJB_XML_108}",		"#{SJB_XML_109}",
 	"#{SJB_XML_110}",		"#{SJB_XML_111}",		"#{SJB_XML_112}",		"#{SJB_XML_113}",
 }
-g_WorldCup_Player[0] = ""		--补两个容错用的数据
+g_WorldCup_Player[0] = ""		--?????????
 g_WorldCup_Player[255] = ""
 --比赛类型名，此数据在运行时无需修改
 local g_WorldCup_MatchTypeName =
@@ -67,15 +67,15 @@ local g_WorldCup_MatchTypeScore =
 --各场类型，此数据在运行时无需修改
 local g_WorldCup_MatchType =
 {
-	1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8,	1, 1, 2, 2, 4, 3, 3, 4, 5, 5, 6, 6, 7, 7, 8, 8,	1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8,	--小组赛
-	9, 9, 9, 9, 9, 9, 9, 9,	--1/8决赛
-	10, 10, 10, 10,	--1/4决赛
-	11, 11,	--半决赛
-	12,	--三四名决赛
-	13, --决赛
+	1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8,	1, 1, 2, 2, 4, 3, 3, 4, 5, 5, 6, 6, 7, 7, 8, 8,	1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8,	--???
+	9, 9, 9, 9, 9, 9, 9, 9,	--1/8??
+	10, 10, 10, 10,	--1/4??
+	11, 11,	--???
+	12,	--?????
+	13, --??
 }
 
---数据正确校验标识
+--数据狚确校验标识
 local g_WorldCup_DataValid = 0
 --玩家得分，注意此数据只能使用WorldCup_DataInit函数修改！
 local g_WorldCup_Score = 0
@@ -274,7 +274,7 @@ function WorldCup_OnEvent(event)
 		end
 	--刷新数据事件
 	elseif event == "WORLDCUP_READY" then
-		if WorldCup_DataInit() < 0 then	--世界杯数据有误
+		if WorldCup_DataInit() < 0 then	--???????
 			this:Hide()
 			return
 		end
@@ -290,29 +290,29 @@ function WorldCup_DataInit()
 	--比赛数据
 	g_WorldCup_MatchData = {}
 	for i = 1, g_WorldCup_MaxMatchIndex do
-		local index, month, day, hour, minute, player1, player2, score1, score2, started, finished, display1, display2, bidResult, bidScore = GetWorldCupMatch(i - 1)	--下标从0开始
+		local index, month, day, hour, minute, player1, player2, score1, score2, started, finished, display1, display2, bidResult, bidScore = GetWorldCupMatch(i - 1)	--???0??
 		if index <= 0 then
 			return -1
 		end
 		g_WorldCup_MatchData[i] = {}
-		g_WorldCup_MatchData[i]["Index"] = index			--场次 1~64
-		g_WorldCup_MatchData[i]["Month"] = month			--比赛日期（月）
-		g_WorldCup_MatchData[i]["Day"] = day				--比赛日期（日）
-		g_WorldCup_MatchData[i]["Hour"] = hour				--比赛时间（时）
-		g_WorldCup_MatchData[i]["Minute"] = minute			--比赛时间（分）
-		g_WorldCup_MatchData[i]["Player1"] = player1		--主场队伍索引
-		g_WorldCup_MatchData[i]["Player2"] = player2		--客场队伍索引
-		g_WorldCup_MatchData[i]["Score1"] = score1			--主场队伍得分
-		g_WorldCup_MatchData[i]["Score2"] = score2			--客场队伍得分
-		g_WorldCup_MatchData[i]["Started"] = started		--比赛是否开始标记
-		g_WorldCup_MatchData[i]["Finished"] = finished		--比赛是否完成标记
-		g_WorldCup_MatchData[i]["Display1"] = display1		--比赛是否显示在竞猜区
-		g_WorldCup_MatchData[i]["Display2"] = display2		--比赛是否显示在观战区
-		g_WorldCup_MatchData[i]["BidResult"] = bidResult	--玩家竞猜这场比赛的结果，若没有竞猜返回-1
-		g_WorldCup_MatchData[i]["BidScore"] = bidScore		--玩家竞猜这场比赛的下注，若没有竞猜返回-1
-		g_WorldCup_MatchData[i]["Result"] = 0				--比赛的真实结果 0 比赛未完成 1 主场胜 2 主场负 3 平局
-		g_WorldCup_MatchData[i]["Winner"] = ""				--胜利者的名字，用于淘汰赛
-		if finished > 0 then	--比赛已完成，可以计算结果
+		g_WorldCup_MatchData[i]["Index"] = index			--?? 1~64
+		g_WorldCup_MatchData[i]["Month"] = month			--????(?)
+		g_WorldCup_MatchData[i]["Day"] = day				--????(?)
+		g_WorldCup_MatchData[i]["Hour"] = hour				--????(?)
+		g_WorldCup_MatchData[i]["Minute"] = minute			--????(?)
+		g_WorldCup_MatchData[i]["Player1"] = player1		--??????
+		g_WorldCup_MatchData[i]["Player2"] = player2		--??????
+		g_WorldCup_MatchData[i]["Score1"] = score1			--??????
+		g_WorldCup_MatchData[i]["Score2"] = score2			--??????
+		g_WorldCup_MatchData[i]["Started"] = started		--????????
+		g_WorldCup_MatchData[i]["Finished"] = finished		--????????
+		g_WorldCup_MatchData[i]["Display1"] = display1		--??????????
+		g_WorldCup_MatchData[i]["Display2"] = display2		--??????????
+		g_WorldCup_MatchData[i]["BidResult"] = bidResult	--???????????,???????-1
+		g_WorldCup_MatchData[i]["BidScore"] = bidScore		--???????????,???????-1
+		g_WorldCup_MatchData[i]["Result"] = 0				--??????? 0 ????? 1 ??? 2 ??? 3 ??
+		g_WorldCup_MatchData[i]["Winner"] = ""				--??????,?????
+		if finished > 0 then	--?????,??????
 			if score1 > score2 then
 				g_WorldCup_MatchData[i]["Result"] = 1
 				g_WorldCup_MatchData[i]["Winner"] = g_WorldCup_Player[player1]
@@ -323,24 +323,24 @@ function WorldCup_DataInit()
 				g_WorldCup_MatchData[i]["Result"] = 3
 			end
 		end
-		g_WorldCup_MatchData[i]["Name1"] = g_WorldCup_Player[player1]											--主场队名
-		g_WorldCup_MatchData[i]["Name2"] = g_WorldCup_Player[player2]											--客场队名
-		g_WorldCup_MatchData[i]["Name"] = g_WorldCup_Player[player1] .. " VS " .. g_WorldCup_Player[player2]	--对战双方名，如 XXXX VS YYYY
-		g_WorldCup_MatchData[i]["Type"] = g_WorldCup_MatchType[index]											--比赛类型值
-		g_WorldCup_MatchData[i]["TypeName"] = g_WorldCup_MatchTypeName[g_WorldCup_MatchType[index]]				--比赛类型名
-		g_WorldCup_MatchData[i]["MaxScore"] = g_WorldCup_MatchTypeScore[g_WorldCup_MatchType[index]]			--比赛下注上限
-		g_WorldCup_MatchData[i]["BidName"] = g_WorldCup_BidName[bidResult]										--下注项描述
+		g_WorldCup_MatchData[i]["Name1"] = g_WorldCup_Player[player1]											--????
+		g_WorldCup_MatchData[i]["Name2"] = g_WorldCup_Player[player2]											--????
+		g_WorldCup_MatchData[i]["Name"] = g_WorldCup_Player[player1] .. " VS " .. g_WorldCup_Player[player2]	--?????,? XXXX VS YYYY
+		g_WorldCup_MatchData[i]["Type"] = g_WorldCup_MatchType[index]											--?????
+		g_WorldCup_MatchData[i]["TypeName"] = g_WorldCup_MatchTypeName[g_WorldCup_MatchType[index]]				--?????
+		g_WorldCup_MatchData[i]["MaxScore"] = g_WorldCup_MatchTypeScore[g_WorldCup_MatchType[index]]			--??????
+		g_WorldCup_MatchData[i]["BidName"] = g_WorldCup_BidName[bidResult]										--?????
 		local scoreStr = "#{SJB_XML_47}"
-		if started > 0 then	--比赛已经开始，可以显示比分
+		if started > 0 then	--??????,??????
 			scoreStr = tostring(score1) .. " : " .. tostring(score2)
 		end
-		g_WorldCup_MatchData[i]["Score"] = scoreStr																--对战双方得分，如 3 : 0
+		g_WorldCup_MatchData[i]["Score"] = scoreStr																--??????,? 3 : 0
 		local dateStr = tostring(month) .. "#{SJB_XML_49}"
 		if day < 10 then
 			dateStr = dateStr .. " "
 		end
 		dateStr = dateStr .. tostring(day) .. "#{SJB_XML_48}"
-		g_WorldCup_MatchData[i]["Date"] = dateStr																--比赛日期，如 7月 1日
+		g_WorldCup_MatchData[i]["Date"] = dateStr																--????,? 7? 1?
 		local timeStr = ""
 		if hour < 10 then
 			timeStr = timeStr .. "0"
@@ -350,47 +350,47 @@ function WorldCup_DataInit()
 			timeStr = timeStr .. "0"
 		end
 		timeStr = timeStr .. tostring(minute)
-		g_WorldCup_MatchData[i]["Time"] = timeStr																--比赛时间，如02:30
+		g_WorldCup_MatchData[i]["Time"] = timeStr																--????,?02:30
 	end
 
 	--队伍数据
 	g_WorldCup_PlayerData = {}
 	for id = 1, g_WorldCup_MaxPlayerId do
 		g_WorldCup_PlayerData[id] = {}
-		g_WorldCup_PlayerData[id]["Id"] = id							--队伍编号（内部使用）
-		g_WorldCup_PlayerData[id]["Name"] = g_WorldCup_Player[id]		--队伍名称
-		g_WorldCup_PlayerData[id]["Group"] = math.floor((id + 3) / 4)	--队伍所在小组
+		g_WorldCup_PlayerData[id]["Id"] = id							--????(????)
+		g_WorldCup_PlayerData[id]["Name"] = g_WorldCup_Player[id]		--????
+		g_WorldCup_PlayerData[id]["Group"] = math.floor((id + 3) / 4)	--??????
 		local playerMatch = 0
 		local playerScore = 0
 		local playerGoal = 0
 		local otherGoal = 0
-		for i = 1, g_WorldCup_MaxMatchIndex do	--计算已参加小组赛场数、积分和净胜球
-			if g_WorldCup_MatchData[i]["Type"] <= 8 and g_WorldCup_MatchData[i]["Finished"] > 0 and (g_WorldCup_MatchData[i]["Player1"] == id or g_WorldCup_MatchData[i]["Player2"] == id) then	--是已经比完的小组赛且有这个队伍的比赛
+		for i = 1, g_WorldCup_MaxMatchIndex do	--?????????????????
+			if g_WorldCup_MatchData[i]["Type"] <= 8 and g_WorldCup_MatchData[i]["Finished"] > 0 and (g_WorldCup_MatchData[i]["Player1"] == id or g_WorldCup_MatchData[i]["Player2"] == id) then	--??????????????????
 				playerMatch = playerMatch + 1
-				if g_WorldCup_MatchData[i]["Player1"] == id then	--俺是主场滴~ PS: 世界杯不分主客场，暂且这么叫吧，前面那个叫主场(^-^)
+				if g_WorldCup_MatchData[i]["Player1"] == id then	--?????~ PS: ????????,??????,???????(^-^)
 					playerGoal = playerGoal + g_WorldCup_MatchData[i]["Score1"]
 					otherGoal = otherGoal + g_WorldCup_MatchData[i]["Score2"]
-					if g_WorldCup_MatchData[i]["Result"] == 1 then	--俺（主场）赢了
+					if g_WorldCup_MatchData[i]["Result"] == 1 then	--?(??)??
 						playerScore = playerScore + 3
-					elseif g_WorldCup_MatchData[i]["Result"] == 3 then	--平了
+					elseif g_WorldCup_MatchData[i]["Result"] == 3 then	--??
 						playerScore = playerScore + 1
 					end
-				else	--俺是客场滴~
+				else	--?????~
 					playerGoal = playerGoal + g_WorldCup_MatchData[i]["Score2"]
 					otherGoal = otherGoal + g_WorldCup_MatchData[i]["Score1"]
-					if g_WorldCup_MatchData[i]["Result"] == 2 then	--对方（主场）输了
+					if g_WorldCup_MatchData[i]["Result"] == 2 then	--??(??)??
 						playerScore = playerScore + 3
-					elseif g_WorldCup_MatchData[i]["Result"] == 3 then	--平了
+					elseif g_WorldCup_MatchData[i]["Result"] == 3 then	--??
 						playerScore = playerScore + 1
 					end
 				end
 			end
 		end
-		g_WorldCup_PlayerData[id]["Match"] = playerMatch				--已参加小组赛场数
-		g_WorldCup_PlayerData[id]["Score"] = playerScore				--小组赛积分
-		g_WorldCup_PlayerData[id]["PlayerGoal"] = playerGoal			--小组赛进球数
-		g_WorldCup_PlayerData[id]["OtherGoal"] = otherGoal				--小组赛失球数
-		g_WorldCup_PlayerData[id]["Goal"] = playerGoal - otherGoal		--小组赛净胜球
+		g_WorldCup_PlayerData[id]["Match"] = playerMatch				--????????
+		g_WorldCup_PlayerData[id]["Score"] = playerScore				--?????
+		g_WorldCup_PlayerData[id]["PlayerGoal"] = playerGoal			--??????
+		g_WorldCup_PlayerData[id]["OtherGoal"] = otherGoal				--??????
+		g_WorldCup_PlayerData[id]["Goal"] = playerGoal - otherGoal		--??????
 	end
 
 	--所有数据成功准备完毕
@@ -467,7 +467,7 @@ function WorldCup_DateFrame_Show()
 	WorldCup_SetDateFrame_Winner(60, 12)
 	WorldCup_SetDateFrame_Winner(61, 13)
 	WorldCup_SetDateFrame_Winner(62, 14)
-	--WorldCup_SetDateFrame_Winner(63, -1)	--第三名争夺赛没有对应控件，不写了
+	--WorldCup_SetDateFrame_Winner(63, -1)	--第三名狔夺赛没有对应控件，不写了
 	WorldCup_SetDateFrame_Winner(64, 15)
 end
 
@@ -482,10 +482,10 @@ function WorldCup_ViewFrame_Show()
 	WorldCup_Frame_ViewFrame_ResultSet:RemoveAllItem()
 	for i = 1, g_WorldCup_MaxMatchIndex do
 		local matchData = g_WorldCup_MatchData[i]
-		local textColor = "#W"	--文字颜色
-		if matchData["Finished"] > 0 then		--已完成的用绿色
+		local textColor = "#W"	--????
+		if matchData["Finished"] > 0 then		--???????
 			textColor = "#G"
-		elseif matchData["Started"] > 0 then	--已开始未完成的用红色
+		elseif matchData["Started"] > 0 then	--??????????
 			textColor = "#Y"
 		end
 		--注：列表控件要求行数和列数从下标0开始
@@ -548,7 +548,7 @@ function WorldCup_BetFrame_Show()
 			ui_BetFrame_TimeLabel[counter1]:SetText(matchData["Time"])
 			ui_BetFrame_NameLabel[counter1]:SetText(matchData["Name"])
 			ui_BetFrame_IndexLabel[counter1]:SetText(matchData["Index"])
-			if matchData["BidScore"] > 0 then	--已竞猜
+			if matchData["BidScore"] > 0 then	--???
 				for j = 1, 3 do
 					ui_BetFrame_BetCheckBoxLabel[counter1][j]:Hide()
 					ui_BetFrame_BetCheckBox[counter1][j]:Hide()
@@ -558,13 +558,13 @@ function WorldCup_BetFrame_Show()
 				ui_BetFrame_ScoreTextBox[counter1]:Hide()
 				ui_BetFrame_ScoreLabel[counter1]:SetText(matchData["BidScore"])
 				ui_BetFrame_SubmitButton[counter1]:Hide()
-			else	--未竞猜
+			else	--???
 				for j = 1, 3 do
 					ui_BetFrame_BetCheckBoxLabel[counter1][j]:Show()
 					ui_BetFrame_BetCheckBox[counter1][j]:Show()
 					ui_BetFrame_BetCheckBox[counter1][j]:Enable()
 					ui_BetFrame_BetCheckBox[counter1][j]:SetCheck(0)
-					if matchData["Index"] > g_WorldCup_MaxGroupMatchIndex then	--淘汰赛没有平局
+					if matchData["Index"] > g_WorldCup_MaxGroupMatchIndex then	--???????
 						ui_BetFrame_BetCheckBox[counter1][3]:Disable()
 					end
 				end
@@ -581,10 +581,10 @@ function WorldCup_BetFrame_Show()
 			if counter2 > 4 then
 				break
 			end
-			local textColor = "#W"	--文字颜色
-			if matchData["Finished"] > 0 then		--已完成的用绿色
+			local textColor = "#W"	--????
+			if matchData["Finished"] > 0 then		--???????
 				textColor = "#G"
-			elseif matchData["Started"] > 0 then	--已开始未完成的用红色
+			elseif matchData["Started"] > 0 then	--??????????
 				textColor = "#Y"
 			end
 			WorldCup_Frame_BetFrame_ResultTitle:AddNewItem(" " .. textColor .. matchData["Date"], 0, counter2 - 1)
@@ -695,9 +695,9 @@ function WorldCup_GetPlayer(id)
 	return nil
 end
 
---将某场比赛对战双方的名字写到两个控件上去
+--将某场比赛对牻双方的名字写到两个控件上去
 function WorldCup_SetDateFrame_Player(matchIndex, control1, control2)
-	if matchIndex > g_WorldCup_MaxGroupMatchIndex and matchIndex <= 56 then	--只有1/8决赛才能使用这个函数，比赛未结束也写
+	if matchIndex > g_WorldCup_MaxGroupMatchIndex and matchIndex <= 56 then	--??1/8??????????,???????
 		local matchData = WorldCup_GetMatch(matchIndex)
 		if matchData == nil then
 			return
@@ -707,9 +707,9 @@ function WorldCup_SetDateFrame_Player(matchIndex, control1, control2)
 	end
 end
 
---将某场比赛的胜利者名字写到一个控件上去
+--将某场比赛的胜利犨名字写到一个控件上去
 function WorldCup_SetDateFrame_Winner(matchIndex, control)
-	if matchIndex > g_WorldCup_MaxGroupMatchIndex and matchIndex <= g_WorldCup_MaxMatchIndex then	--只有淘汰赛才能使用这个函数，比赛未结束不写
+	if matchIndex > g_WorldCup_MaxGroupMatchIndex and matchIndex <= g_WorldCup_MaxMatchIndex then	--?????????????,???????
 		local matchData = WorldCup_GetMatch(matchIndex)
 		if matchData == nil then
 			return

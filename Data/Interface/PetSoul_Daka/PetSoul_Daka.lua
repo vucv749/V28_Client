@@ -1,18 +1,18 @@
 local g_PetSoul_Daka_Frame_UnifiedPosition	= nil 
 
-local g_PetSoul_Daka_Tick_Time				= 0.5		-- 定时器时间(秒)
-local g_PetSoul_Daka_ReadyTime				= 5			-- 等待时间
-local g_PetSoul_Daka_AnswerTime				= 7.5		-- 答题时间
-local g_PetSoul_Daka_QuestionTime			= 7.5		-- 题目时间
-local g_PetSoul_Daka_ResultTime				= 8			-- 结果显示时间
-local g_PetSoul_Daka_QuestionMax			= 16		-- 最多16道题
+local g_PetSoul_Daka_Tick_Time				= 0.5		-- ?????(?)
+local g_PetSoul_Daka_ReadyTime				= 5			-- ????
+local g_PetSoul_Daka_AnswerTime				= 7.5		-- ????
+local g_PetSoul_Daka_QuestionTime			= 7.5		-- ????
+local g_PetSoul_Daka_ResultTime				= 8			-- ??????
+local g_PetSoul_Daka_QuestionMax			= 16		-- ??16??
 
-local g_PetSoul_Daka_Tick_Logic				= 0			-- 计时
-local g_PetSoul_Daka_Status					= 0			-- 状态
-local g_PetSoul_Daka_Tick_Logic_End			= 0			-- 结束tick
-local g_PetSoul_Daka_Tick_Logic_TimeOut		= g_PetSoul_Daka_ReadyTime + g_PetSoul_Daka_AnswerTime	-- 超时
+local g_PetSoul_Daka_Tick_Logic				= 0			-- ??
+local g_PetSoul_Daka_Status					= 0			-- ??
+local g_PetSoul_Daka_Tick_Logic_End			= 0			-- ??tick
+local g_PetSoul_Daka_Tick_Logic_TimeOut		= g_PetSoul_Daka_ReadyTime + g_PetSoul_Daka_AnswerTime	-- ??
 local g_PetSoul_Daka_Ani_Info				= string.format("curve:Liner mode:Once duration:%s startx:0 starty:0 endx:496 endy:0", g_PetSoul_Daka_AnswerTime)
-local g_PetSoul_Daka_Ani_Pos				= nil		-- 滑块位置
+local g_PetSoul_Daka_Ani_Pos				= nil		-- ????
 local g_PetSoul_Daka_Subject				= ""
 local g_PetSoul_Daka_Key					= ""
 local g_PetSoul_Daka_CaredNpc				= -1		-- NpccareID
@@ -110,7 +110,7 @@ function PetSoul_Daka_OnShow()
 	-- 更新处理
 	PetSoul_Daka_OnUpdate()
 
-	-- 关闭NPC对话界面
+	-- 关睜NPC对话界面
 	PushEvent("UI_COMMAND", 1000)
 
 	-- 屏蔽NPC
@@ -284,7 +284,7 @@ function PetSoul_Daka_OnResultUpdate()
 
 	local image = g_PetSoul_Daka_AnswerIcon.fail
 	if ret == 0 and succeed > 0 then
-		--PushDebugMessage("答题普通")
+		--PushDebugMessage("答题茽通")
 		image = g_PetSoul_Daka_AnswerIcon.normal
 	elseif ret == 1 and succeed > 0 then
 		--PushDebugMessage("答题卓越")
@@ -332,7 +332,7 @@ function PetSoul_Daka_OnResultCalculate()
 
 		local image = g_PetSoul_Daka_AnswerIcon.fail
 		if ret == 0 and succeed > 0 then
-			--PushDebugMessage("答题普通")
+			--PushDebugMessage("答题茽通")
 			image = g_PetSoul_Daka_AnswerIcon.normal
 		elseif ret == 1 and succeed > 0 then
 			--PushDebugMessage("答题卓越")
@@ -381,7 +381,7 @@ end
 
 -- QTE变化显示
 function PetSoul_Daka_OnUpdate()
-	-- 优先关闭定时器
+	-- 优先关睜定时器
 	KillTimer( "PetSoul_Daka_OnTimer()" )
 	-- 启动定时器
 	SetTimer("PetSoul_Daka","PetSoul_Daka_OnTimer()", g_PetSoul_Daka_Tick_Time*1000)

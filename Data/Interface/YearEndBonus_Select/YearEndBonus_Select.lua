@@ -45,9 +45,9 @@ function YearEndBonus_Select_PreLoad()
 	this : RegisterEvent( "UPDATE_HKCJ_INFO" );					--  
 	this : RegisterEvent( "UI_COMMAND" );		 
 	this : RegisterEvent(" ADJEST_UI_POS",false)
-	this : RegisterEvent( "VIEW_RESOLUTION_CHANGED" );		-- 游戏分辨率发生了变化
-	this : RegisterEvent( "GAMELOGIN_SELECTCHARACTER" );	-- 选择人物
-	this : RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- 离开场景 
+	this : RegisterEvent( "VIEW_RESOLUTION_CHANGED" );		-- ??????????
+	this : RegisterEvent( "GAMELOGIN_SELECTCHARACTER" );	-- ????
+	this : RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- ???? 
 end
 
 --*********************************
@@ -98,7 +98,7 @@ function YearEndBonus_Select_OnEvent( event )
     end
 end
 --**********************************
--- 关闭
+-- 关睜
 --**********************************
 function YearEndBonus_Select_Close() 
     g_YearEndBonus_Select_Shopid = -1
@@ -183,7 +183,7 @@ function YearEndBonus_Select_Incom_Eye(yuid)
     else
         local FACEID = Exterior:LuaFnGetCurrentExteriorSetInfo("FACE")
         local HAIRID, HAIRIDIndex = Exterior:LuaFnGetCurrentExteriorSetInfo("HAIR")
-        PushEvent("OPEN_DRESSPREVIEW", itemid, HAIRID, FACEID)  --时装\发型\脸型
+        PushEvent("OPEN_DRESSPREVIEW", itemid, HAIRID, FACEID)  --??\??\??
     end 
 end 
 

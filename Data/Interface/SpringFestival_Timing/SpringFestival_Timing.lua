@@ -62,7 +62,7 @@ end
 function SpringFestival_Timing_Animate_Close()
 	KillTimer("SpringFestival_Timing_Animate_Close()")
 	--停止倒计时动画
-	PushDebugMessage("#{CJDG_221110_38}")--请少侠准备，即将上工！
+	PushDebugMessage("#{CJDG_221110_38}")--?????,????!
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name( "OnDaGongBegin" )
 		Set_XSCRIPT_ScriptID(810115)

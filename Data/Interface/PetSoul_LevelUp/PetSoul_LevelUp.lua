@@ -15,9 +15,9 @@ function PetSoul_LevelUp_PreLoad()
 	this:RegisterEvent("PETSOUL_LEVELUP_CONFIRM");
 	this:RegisterEvent("PETSOUL_LEVELUP_PUTIN_ITEM");
 	this:RegisterEvent("RESUME_ENCHASE_GEM")
-	this:RegisterEvent("PACKAGE_ITEM_CHANGED")			--背包中物品改变需要判断
-	this:RegisterEvent("UNIT_MONEY")					--金钱变化
-	this:RegisterEvent("MONEYJZ_CHANGE")					--交子变化
+	this:RegisterEvent("PACKAGE_ITEM_CHANGED")			--???????????
+	this:RegisterEvent("UNIT_MONEY")					--????
+	this:RegisterEvent("MONEYJZ_CHANGE")					--????
 	this:RegisterEvent("OBJECT_CARED_EVENT");
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
@@ -88,7 +88,7 @@ function PetSoul_LevelUp_OnEvent(event)
 			return;
 		end
 		
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if arg1 == "distance" and tonumber( arg2 ) > MAX_OBJ_DISTANCE or arg1 == "destroy" then
 			PetSoul_LevelUp_Close()
 		end
@@ -205,7 +205,7 @@ end
 
 --=========================================================
 --开始关心NPC，
---在开始关心之前需要先确定这个界面是不是已经有“关心”的NPC，
+--在开始关心之前需要先确定犫个界面是不是已经有“关心”的NPC，
 --如果有的话，先取消已经有的“关心”
 --=========================================================
 function PetSoul_LevelUp_BeginCareObject( objCaredId )

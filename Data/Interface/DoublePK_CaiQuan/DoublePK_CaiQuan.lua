@@ -91,7 +91,7 @@ end
 
 -- 选择答案
 function DoublePK_CaiQuan_OnSelectClick(nSelect)
-    -- 验证选择的号是否正确
+    -- 验证选择的号是否狚确
     if nSelect < DoublePK_CaiQuan_Type.Type_A or nSelect > DoublePK_CaiQuan_Type.Type_C then
         PushDebugMessage("#{SRPK_230331_67}")
         return
@@ -116,7 +116,7 @@ end
 
 function DoublePK_CaiQuan_OnClickOk(nSelect)
     --local nSelect = DoublePK_CaiQuan_Select
-    -- 验证选择的号是否正确
+    -- 验证选择的号是否狚确
     if nSelect < DoublePK_CaiQuan_Type.Type_A or nSelect > DoublePK_CaiQuan_Type.Type_C then
         PushDebugMessage("#{SRPK_230331_67}")
         return
@@ -146,14 +146,14 @@ function DoublePK_CaiQuan_OnTimerEnd()
 end
 
 function DoublePK_CaiQuan_Hide()
-    -- 关闭关联UI
+    -- 关睜关联UI
     if IsWindowShow("DoublePK_CaiQuanGuiZe") then
 		CloseWindow("DoublePK_CaiQuanGuiZe", true)
 	end
     this:Hide()
 end
 
--- 关闭按钮点击事件
+-- 关睜按钮点击事件
 function DoublePK_CaiQuan_Clicked_Close()
     DoublePK_CaiQuan_Hide()
 end

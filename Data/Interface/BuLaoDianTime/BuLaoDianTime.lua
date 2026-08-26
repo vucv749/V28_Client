@@ -3,9 +3,9 @@ local g_BuLaoDianTime_UnifiedPosition
 
 local g_BuLaoDianTime_UICommand = 89011701
 local g_BuLaoDianTime_opType = {
-	show = 1,						-- 显示UI
-	init = 2,						-- 初始化UI
-	close = 1000,					-- 关闭UI
+	show = 1,						-- ??UI
+	init = 2,						-- ???UI
+	close = 1000,					-- ??UI
 }
 
 local g_BuLaoDianTime_TimerInfo = {
@@ -14,7 +14,7 @@ local g_BuLaoDianTime_TimerInfo = {
 }
 
 local g_Data = {}
-local g_KeyMax = 40					-- 钥匙最大数量
+local g_KeyMax = 40					-- ??????
 local g_BuLaoDianTime_Str = {
 	[0] = "#{BLDPVP_221214_67}",
 	[1] = "#{BLDPVP_221214_63}",
@@ -25,7 +25,7 @@ local g_BuLaoDianTime_Str = {
 }
 function BuLaoDianTime_PreLoad()
 	this:RegisterEvent("UI_COMMAND", true)
-	--离开场景，自动关闭
+	--离开场景，自动关睜
 	this:RegisterEvent("PLAYER_LEAVE_WORLD", false)	
 	-- 游戏窗口尺寸发生了变化
 	this:RegisterEvent("ADJEST_UI_POS", false)

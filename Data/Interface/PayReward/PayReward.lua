@@ -1,5 +1,5 @@
 --ĞÂ¹¹¼Ü:ÎŞĞè¸Ä¶¯UI×ÔÊÊÓ¦server¸üĞÂÄ£Ê½
---Ã¿ÈÕºÀÀñ
+--Ã¿È ºÀÀñ
 --´úÂëĞÅÌõ£ºÈ«Ãæ£¬¼ò½à£¬È«¶¼Òª
 --***************************************************
 --*¡¾For Entertainment or Communication Only¡¿ *
@@ -26,14 +26,14 @@ local RankListInfo = {
 	[6] = {"XinShouNew_WDC",0,0,0,0,0,0,0},
 	[7] = {"XinShouNew_WDC",0,0,0,0,0,0,0},
 	[8] = {"XinShouNew_WDC",0,0,0,0,0,0,0},
-}--{Î´´ï³ÉÍ¼±ê,ĞèÒªµãÊı,Ñ¡Ôñ1,Ñ¡Ôñ2,Ñ¡Ôñ3,Ñ¡Ôñ4,ÁìÈ¡Çé¿ö0Î´´ï³É1¿ÉÁìÈ¡2ÒÑÁìÈ¡}
+}--{?????,????,??1,??2,??3,??4,????0???1???2???}
 
 local MuDingPayRewardItems = {}
 local MuDingPayRewardPlayerPoint = 0
 local MuDingPlayerMissionData = {391, 392, 393, 394}
 
-local g_rechargeMissionId = 389  -- ³äÖµµãÊıÈÎÎñID
-local g_dateCheckMissionId = 390  -- ÈÕÆÚ¼ì²éÈÎÎñID
+local g_rechargeMissionId = 389  -- ??????ID
+local g_dateCheckMissionId = 390  -- ??????ID
 
 function PayReward_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
@@ -43,36 +43,36 @@ function PayReward_PreLoad()
 end
 function PayReward_OnEvent(event)
 	if event == "UI_COMMAND" and tonumber(arg0) == 418042021 then
-		local PayRItemIDStr = Get_XParam_STR(0);--ÎïÆ·ID
-		local PayRItemCountStr = Get_XParam_STR(1);--ÎïÆ·ÊıÁ¿
-		local PayRPointInfo = Get_XParam_STR(2); --Ã¿ÈÕ³äÖµµÄµµÎ»
+		local PayRItemIDStr = Get_XParam_STR(0);--??ID
+		local PayRItemCountStr = Get_XParam_STR(1);--????
+		local PayRPointInfo = Get_XParam_STR(2); --???????
 		local PayRInfoStr = {}
 		MuDingPayRewardPlayerPoint = DataPool:GetPlayerMission_DataRound(g_rechargeMissionId)
-		if PayRItemIDStr == nil then PushDebugMessage("PayRItemIDStr´íÎó!") return end
-		if PayRItemCountStr == nil then PushDebugMessage("PayRItemCountStr´íÎó!") return end
-		if PayRPointInfo == nil then PushDebugMessage("PayRPointInfo´íÎó!") return end
+		if PayRItemIDStr == nil then PushDebugMessage("PayRItemIDStrsai l¥m!") return end
+		if PayRItemCountStr == nil then PushDebugMessage("PayRItemCountStrsai l¥m!") return end
+		if PayRPointInfo == nil then PushDebugMessage("PayRPointInfosai l¥m!") return end
 
-		PayRItemIDStr = Split(PayRItemIDStr,",")	--ÎïÆ·ID
-		PayRItemCountStr = Split(PayRItemCountStr,",")	--ÎïÆ·ÊıÁ¿
-		for i =1,4 do--°üº¬Ñ¡ÔñµÄË÷Òı,¶ÔÓ¦µÄÁìÈ¡Çé¿ö(10203042)
+		PayRItemIDStr = Split(PayRItemIDStr,",")	--??ID
+		PayRItemCountStr = Split(PayRItemCountStr,",")	--????
+		for i =1,4 do--???????,???????(10203042)
 			PayRInfoStr[i]=DataPool:GetPlayerMission_DataRound(MuDingPlayerMissionData[i])
 		end		
-		PayRPointInfo =  Split(PayRPointInfo,",")	--Ã¿ÈÕ³äÖµµÄµµÎ»
+		PayRPointInfo =  Split(PayRPointInfo,",")	--???????
 		local tempNum = table.getn(PayRPointInfo)
 		local tempPlayerDataInfo = {}
 		
 		for i=1,tempNum do
-			RankListInfo[i][2]=tonumber(PayRPointInfo[i])--ĞèÇóµãÊı
-			tempPlayerDataInfo=PayReward_PlayerNumToData(tonumber(PayRInfoStr[i])) --{Ñ¡Ôñ1,Ñ¡Ôñ2,Ñ¡Ôñ3,Ñ¡Ôñ4,ÁìÈ¡Çé¿ö0Î´´ï³É1¿ÉÁìÈ¡2ÒÑÁìÈ¡}
-			RankListInfo[i][3]=tonumber(tempPlayerDataInfo[1]) --Ñ¡Ôñ1
-			RankListInfo[i][4]=tonumber(tempPlayerDataInfo[2]) --Ñ¡Ôñ2
-			RankListInfo[i][5]=tonumber(tempPlayerDataInfo[3]) --Ñ¡Ôñ3
-			RankListInfo[i][6]=tonumber(tempPlayerDataInfo[4]) --Ñ¡Ôñ4
-			RankListInfo[i][7]=tonumber(tempPlayerDataInfo[5])--ÁìÈ¡Çé¿ö
+			RankListInfo[i][2]=tonumber(PayRPointInfo[i])--????
+			tempPlayerDataInfo=PayReward_PlayerNumToData(tonumber(PayRInfoStr[i])) --{??1,??2,??3,??4,????0???1???2???}
+			RankListInfo[i][3]=tonumber(tempPlayerDataInfo[1]) --??1
+			RankListInfo[i][4]=tonumber(tempPlayerDataInfo[2]) --??2
+			RankListInfo[i][5]=tonumber(tempPlayerDataInfo[3]) --??3
+			RankListInfo[i][6]=tonumber(tempPlayerDataInfo[4]) --??4
+			RankListInfo[i][7]=tonumber(tempPlayerDataInfo[5])--????
 			if MuDingPayRewardPlayerPoint >= RankListInfo[i][2] and RankListInfo[i][7] == 0 then
 				RankListInfo[i][7]=1
 			end
-			MuDingPayRewardItems[i] = {--Ã¿¸öµµÎ»µÄÏêÏ¸ÎïÆ·ĞÅÏ¢(ÎïÆ·ID,ÎïÆ·ÊıÁ¿)
+			MuDingPayRewardItems[i] = {--???????????(??ID,????)
 				{tonumber(PayRItemIDStr[i*4-3]),tonumber(PayRItemCountStr[i*4-3])},
 				{tonumber(PayRItemIDStr[i*4-2]),tonumber(PayRItemCountStr[i*4-2])},
 				{tonumber(PayRItemIDStr[i*4-1]),tonumber(PayRItemCountStr[i*4-1])},
@@ -127,27 +127,27 @@ function PayReward_OpenUI()
 		this:Show()
 	end
 	PayReward_CloseOptionalAward()
-	local opencount = 0	--ÓÃÓÚ¸ß¶È±ê¼Ç
+	local opencount = 0	--??????
 	local nTempText = ""
 	for i=1,8 do
-		if RankListInfo[i][2] ~= 0 then--ĞèÒªµÄµãÊı ´óÓÚ0¾ÍÏÔÊ¾³öÀ´¶ÔÓ¦µÄĞĞ
+		if RankListInfo[i][2] ~= 0 then--????? ??0?????????
 			opencount = opencount + 1
 			PayReward_Istrue[i]:Show()
 			PayReward_GetSelfSelect(i,1,1)
 			PayReward_GetSelfSelect(i,2,2)
 			PayReward_GetSelfSelect(i,3,3)
 			PayReward_GetSelfSelect(i,4,4)
-			if RankListInfo[i][7] == 1 then--ÁìÈ¡Çé¿ö0Î´´ï³É1¿ÉÁìÈ¡2ÒÑÁìÈ¡
+			if RankListInfo[i][7] == 1 then--????0???1???2???
 				PayReward_Receive[i]:Enable()
-				nTempText = string.format("#GĞèÇóµãÊı:%s/%s",tostring(MuDingPayRewardPlayerPoint),tostring(RankListInfo[i][2]))
+				nTempText = string.format("#GnHu c¥u ğªm: %s/%s",tostring(MuDingPayRewardPlayerPoint),tostring(RankListInfo[i][2]))
 			elseif RankListInfo[i][7] == 2 then
 				PayReward_Receive[i]:Disable()
 				PayReward_Receive[i]:SetProperty("DisabledImage","set:XinShouNewBK image:XinShouNew_YLQ");
-				nTempText = string.format("#GĞèÇóµãÊı:%s/%s",tostring(MuDingPayRewardPlayerPoint),tostring(RankListInfo[i][2]))
+				nTempText = string.format("#GnHu c¥u ğªm: %s/%s",tostring(MuDingPayRewardPlayerPoint),tostring(RankListInfo[i][2]))
 			else
 				PayReward_Receive[i]:Disable()
 				PayReward_Receive[i]:SetProperty("DisabledImage","set:XinShouNewBK image:XinShouNew_WDC");
-				nTempText = string.format("#cff0000ĞèÇóµãÊı:%s/%s",tostring(MuDingPayRewardPlayerPoint),tostring(RankListInfo[i][2]))
+				nTempText = string.format("#cff0000nhu c¥u ğªm: %s/%s",tostring(MuDingPayRewardPlayerPoint),tostring(RankListInfo[i][2]))
 			end
 			
 			PayReward_Need[i]:SetText(nTempText)
@@ -173,12 +173,12 @@ function PayReward_GetSelfSelect(index,idx,value)
 		else
 			PayReward_CurSelectCount[index][idx]:SetText("")
 		end
-		if RankListInfo[index][7] == 0 then --Î´´ï³ÉÍ¼±ê
+		if RankListInfo[index][7] == 0 then --?????
 			PayReward_NotSelect[index][idx]:SetProperty("Image","set:UIIcons image:Icon_Lock");
 			PayReward_NotSelect[index][idx]:Show()
-		elseif RankListInfo[index][7] == 1 then --¿ÉÁìÈ¡
+		elseif RankListInfo[index][7] == 1 then --???
 			PayReward_NotSelect[index][idx]:Hide()
-		elseif RankListInfo[index][7] == 2 then --ÒÑÁìÈ¡
+		elseif RankListInfo[index][7] == 2 then --???
 			PayReward_NotSelect[index][idx]:SetProperty("Image","set:Seven image:Seven_ke");
 			PayReward_NotSelect[index][idx]:Show()
 		end
@@ -250,7 +250,7 @@ function PayReward_OpenOptionalAward(index)
 		PayReward_OpenOptionalAward1(index)
 		return
 	end
-	Clear_XSCRIPT() --»ñÈ¡ÕâĞĞ»ØÀ¡µÄÏêÏ¸ÎïÆ·
+	Clear_XSCRIPT() --???????????
 		Set_XSCRIPT_Function_Name( "MuDingOpenPagePayReward" );
 		Set_XSCRIPT_ScriptID( 330083 );	
 		Set_XSCRIPT_Parameter(0,tonumber(index))
@@ -261,14 +261,14 @@ end
 
 function PayReward_SelectClickTwo(index)
 	if PayReward_SelectIndex == 0 then
-		PushDebugMessage("ÇëÏÈ¹´Ñ¡ÉÏ·½µÄÎ»ÖÃÑ¡Ôñ¿ò")
+		PushDebugMessage("Thïnh Tiên Câu Tuy¬n phía trên Ğích v¸ trí lña ch÷n Khuông")
 		return
 	elseif PayReward_SelectGrade == 0 then
 		PushDebugMessage("error")
 		return
 	end
 	if RankListInfo[PayReward_SelectGrade][7] and RankListInfo[PayReward_SelectGrade][7] == 2 then
-		PushDebugMessage("ÁìÈ¡¹ıÁË!")
+		PushDebugMessage("Lînh qua!")
 		return
 	end
 	local GradeArrCount = table.getn(MuDingPayRewardItems[PayReward_SelectGrade])
@@ -307,12 +307,12 @@ function PayReward_SubmitSecect()
 	end
 	for i = 1,4 do
 		if RankListInfo[PayReward_SelectGrade][i+2] == 0 then 
-			PushDebugMessage("ÇëÑ¡Ôñ½±ÀøÎïÆ·!")
+			PushDebugMessage("Thïnh lña ch÷n thß·ng cho v§t ph¦m!")
 			return 
 		end
 		for k = 1,4 do 
 			if i ~= k and RankListInfo[PayReward_SelectGrade][i+2] == RankListInfo[PayReward_SelectGrade][k+2] then
-				PushDebugMessage("ÎŞ·¨Ñ¡ÔñÍ¬Ò»¼şÎïÆ·»òÃ»ÓĞÑ¡ÔñÎïÆ·!")
+				PushDebugMessage("Không th¬ lña ch÷n cùng Ki®n v§t ph¦m Ho£c không có lña ch÷n v§t ph¦m!")
 				return
 			end
 		end
@@ -412,7 +412,7 @@ function PayReward_SelectClick(index)
 		return
 	end
 	if RankListInfo[PayReward_SelectGrade][7] and RankListInfo[PayReward_SelectGrade][7] == 2 then
-		PushDebugMessage("ÁìÈ¡¹ıÁË!")
+		PushDebugMessage("Lînh qua!")
 		return
 	end
 	if PayReward_SelectIndex ~= 0 then
@@ -420,21 +420,21 @@ function PayReward_SelectClick(index)
 	end
 	PayReward_SelectIndex = index
 	PayReward_SelectIconG[PayReward_SelectIndex]:Show()
-	PushDebugMessage("Î»ÖÃÒÑ¹´Ñ¡£¬ÇëÔÚÏÂ·½Ñ¡ÔñÒ»Ïî½±Àø")
+	PushDebugMessage("V¸ trí Dî Câu Tuy¬n, Thïnh tÕi hÕ Phß½ng lña ch÷n hÕng nh¤t thß·ng cho")
 end
 
 
 function PayReward_AwardClicked(index)
 	if index < 1 or index > 8 then return end
 	if RankListInfo[index][7] and RankListInfo[index][7] == 2 then
-		PushDebugMessage("ÁìÈ¡¹ıÁË!")
+		PushDebugMessage("Lînh qua!")
 		return
 	end
 	local PlayerSelectItem = {RankListInfo[index][3],RankListInfo[index][4],RankListInfo[index][5],RankListInfo[index][6]}
 	for i = 1 ,4 do
 		for k = 1 , 4 do
 			if i~=k and PlayerSelectItem[i] == PlayerSelectItem[k] then
-				PushDebugMessage("ÎŞ·¨Ñ¡ÔñÍ¬Ò»¼şÎïÆ·!")
+				PushDebugMessage("Không th¬ lña ch÷n cùng Ki®n v§t ph¦m!")
 				return
 			end
 		end

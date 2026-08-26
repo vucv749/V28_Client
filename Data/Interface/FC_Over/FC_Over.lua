@@ -9,8 +9,8 @@ local FC_Over_Frame_UnifiedPosition = nil
 function FC_Over_PreLoad()
   
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-    this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+    this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 	this:RegisterEvent("UI_COMMAND")
 
 end -- end func FC_Over_Frame_PreLoad()
@@ -29,14 +29,14 @@ function FC_Over_OnEvent(event)
         FC_Over_Frame_UnifiedPos()
     elseif (event == "ADJEST_UI_POS") then
         FC_Over_Frame_UnifiedPos()
-	elseif event == "UI_COMMAND" and (tonumber(arg0) == 331170001) then	--服务端传数据
+	elseif event == "UI_COMMAND" and (tonumber(arg0) == 331170001) then	--??????
 	
 		local str = Get_XParam_STR(0)
 		local bSuc = Get_XParam_INT(0)
 		local nRound = Get_XParam_INT(1)
 		FC_Over_AwardBK_Text:SetText(str)
 		if nRound ~= 5 then
-			if bSuc == 1 then --输了
+			if bSuc == 1 then --??
 				FC_Over_AwardBK_ExitBtn:Show()
 				FC_Over_AwardBK_Fail:Show()
 				FC_Over_AwardBK_YesBtn:Hide()
@@ -50,7 +50,7 @@ function FC_Over_OnEvent(event)
 			FC_Over_AwardBK_No1:Hide()
 			FC_Over_AwardBK_No2:Hide()
 		else
-			if bSuc == 1 then --输了
+			if bSuc == 1 then --??
 				FC_Over_AwardBK_ExitBtn:Show()
 				FC_Over_AwardBK_No2:Show()
 				FC_Over_AwardBK_YesBtn:Hide()
@@ -67,7 +67,7 @@ function FC_Over_OnEvent(event)
 		
 		
 		this:Show()
-	elseif event == "UI_COMMAND" and (tonumber(arg0) == 331170005) then	--服务端传数据
+	elseif event == "UI_COMMAND" and (tonumber(arg0) == 331170005) then	--??????
 		this:Hide()
 	end
 end -- end func FC_Over_Frame_OnEvent()
@@ -88,7 +88,7 @@ function FC_Over_Frame_Hide()
     this:Hide()
 end -- end func FC_Over_Frame_Hide()
 
--- 关闭按钮点击事件
+-- 关睜按钮点击事件
 function FC_Over_Frame_Close_Clicked()
 	FC_Over_Frame_Hide()
 end  -- end func FC_Over_Frame_Close_Clicked()

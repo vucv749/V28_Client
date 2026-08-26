@@ -1,8 +1,8 @@
 --ProtectGoodsDel.lua
 --销毁贵重物品对话框
 
-local	g_btnItem				--物品栏
-local	g_posItem	= -1	--物品在背包中的位置
+local	g_btnItem				--???
+local	g_posItem	= -1	--?????????
 
 local	MAX_OBJ_DISTANCE	= 3.0
 local	g_objCared 				= -1
@@ -49,7 +49,7 @@ function ProtectGoodsDel_OnEvent( event )
 		if( tonumber(arg0) ~= g_objCared ) then
 			return;
 		end
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if( arg1 == "distance" and tonumber(arg2) > MAX_OBJ_DISTANCE or arg1 == "destroy" ) then
 			ProtectGoodsDel_OnClose()
 		end
@@ -76,7 +76,7 @@ function ProtectGoodsDel_OnOpen()
 		this:Show()
 	end
 	
-	--获得当前申请删除贵重物品的状态，0：未申请；1：正在申请；2：获得删除资格
+	--获得当前申请删除贵重物品的状态，0：未申请；1：狚在申请；2：获得删除资格
 	local	state = Get_XParam_INT( 1 )
 	DelProtectGoodsOps("SET_STATE", state)
 	if state == 1 or state == 2 then
@@ -89,7 +89,7 @@ function ProtectGoodsDel_OnOpen()
 	ProtectGoodsDel_Clear()
 end
 
---关闭界面
+--关睜界面
 function ProtectGoodsDel_OnClose()
 	this:Hide()
 	
@@ -152,7 +152,7 @@ function ProtectGoodsDel_Update( pos_taskitem )
 			LifeAbility : Lock_Packet_Item( g_posItem, 0 )
 		end
 
-		--在背包中锁住这个物品
+		--在背包中锁住犫个物品
 		g_posItem	= pos
 		LifeAbility : Lock_Packet_Item( g_posItem, 1 )
 		ProtectGoodsDel_Button_Accept:Enable()
@@ -166,7 +166,7 @@ end
 
 --=========================================================
 --开始关心NPC，
---在开始关心之前需要先确定这个界面是不是已经有“关心”的NPC，
+--在开始关心之前需要先确定犫个界面是不是已经有“关心”的NPC，
 --如果有的话，先取消已经有的“关心”
 --=========================================================
 function BeginCareObject_ProtectGoodsDel( objCaredId )

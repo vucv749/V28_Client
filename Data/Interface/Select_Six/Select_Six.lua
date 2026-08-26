@@ -2,9 +2,9 @@
 
 local g_Select_Six_Frame_UnifiedXPosition
 local g_Select_Six_Frame_UnifiedYPosition
-local g_Select_Six_CurBagPos = -1 --Àñ°üÔÚÍæ¼Ò±³°üÖÐµÄÎ»ÖÃ
-local g_Select_Six_CurSelIndex = 0 --µ±Ç°Ñ¡ÖÐ¼¸¸öitem
-local g_Select_Six_CurLiBaoItemIndex = 0 --Ê¹ÓÃµÄÀñ°üid
+local g_Select_Six_CurBagPos = -1 --???????????
+local g_Select_Six_CurSelIndex = 0 --??????item
+local g_Select_Six_CurLiBaoItemIndex = 0 --?????id
 local g_Select_Six_TotalNum = 6
 
 -- ¿Ø¼þ±í
@@ -14,7 +14,7 @@ local g_Select_Six_UI_ItemName = {}
 
 local g_Select_Six_ItemId ={
 	[1] = {
-		title = "#{SHYBJ_20210805_29}", --¹ÌÁéÏÉÂ¶×ÔÑ¡ÀñºÐ¡¤6½×
+		title = "#{SHYBJ_20210805_29}", --????????·6?
 		gift_id = 38003677,
 		item_id = {
 			38003475,
@@ -116,13 +116,13 @@ function Select_Six_Update(itemTable)
 	end
 end
 
--- ¹Ø±Õ½çÃæ
+-- ¹Ø± ½çÃæ
 function Select_Six_CloseShop()
 	Select_Six_CleanUp()
 	this:Hide()
 end
 
--- Çå¿ÕÊý¾Ý£¬½âËøÎïÆ·
+-- Çå¿ Êý¾Ý£¬½âËøÎïÆ·
 function Select_Six_CleanUp()
 	for i = 1, g_Select_Six_TotalNum do	
 		g_Select_Six_UI_ActionItem[i]:SetActionItem(-1)
@@ -171,7 +171,7 @@ function Select_Six_OnItemClicked(index)
 	g_Select_Six_UI_ActionChosenMask[index]:Show()
 end
 
--- µ÷ÕûÎ»ÖÃ
+-- µ÷ ûÎ»ÖÃ
 function Select_Six_UpdateUIPos()
 	Select_Six_Frame:SetProperty("UnifiedXPosition", g_Select_Six_Frame_UnifiedXPosition)
 	Select_Six_Frame:SetProperty("UnifiedYPosition", g_Select_Six_Frame_UnifiedYPosition)

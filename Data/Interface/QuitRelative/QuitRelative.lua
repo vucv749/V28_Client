@@ -1,8 +1,8 @@
 
--- 1-ÕıÔÚÍË³öÓÎÏ·...
+-- 1- ıÔÚÍË³öÓÎÏ·...
 -- 2-ºÍ·şÎñÆ÷µÄÁ¬½Ó±»¶Ï¿ª£¬ÊÇ·ñ³¢ÊÔÖØĞÂÁ´½Ó? 
--- 3-ÕıÔÚÖØĞÂÁ¬½Ó·şÎñÆ÷...
--- 4-Á¬½Ó³É¹¦£¬ÕıÔÚÖØĞÂ½øÈë³¡¾°...
+-- 3- ıÔÚÖØĞÂÁ¬½Ó·şÎñÆ÷...
+-- 4-Á¬½Ó³É¹¦£¬ ıÔÚÖØĞÂ½øÈë³¡¾°...
 -- 5-Á¬½ÓÊ§°Ü
 local QuitRelative_Status = 0;
 
@@ -30,11 +30,11 @@ function QuitRelative_OnEvent(event)
 			this:Show();
 			QuitRelative_OK_Button:Hide();
 			QuitRelative_Cancel_Button:Hide();
-			QuitRelative_Text:SetText("ÕıÔÚÍË³öÓÎÏ·...");
+			QuitRelative_Text:SetText("Ğang · r¶i khöi trò ch½i. . .");
 			QuitRelativeSelectUpdateRect();
 			QuitRelative_Status=1;
 		elseif(arg0 == "AskReconnect") then
-			--Çå¿Õ×î½ü¹ºÂòÔª±¦ÉÌµê
+			--Çå¿ ×î½ü¹ºÂòÔª±¦ÉÌµê
 			ClearRecentBuyYuanbaoShop();
 
 			this:Show();
@@ -42,19 +42,19 @@ function QuitRelative_OnEvent(event)
 			QuitRelative_OK_Button:Enable();
 			QuitRelative_Cancel_Button:Show();
 			QuitRelative_Cancel_Button:Enable();
-			QuitRelative_Text:SetText("ºÍ·şÎñÆ÷µÄÁ¬½Ó±»¶Ï¿ª£¬ÊÇ·ñ³¢ÊÔÖØĞÂÁ¬½Ó?");
+			QuitRelative_Text:SetText("Ki-mô-nô Vø Khí Ğích liên tiªp B¸ ngån ra, hay không nªm thØ mµt l¥n næa liên tiªp?");
 			QuitRelativeSelectUpdateRect();
 			QuitRelative_Status=2;
 		elseif(arg0 == "EnterScene") then
 			if(this:IsVisible()) then
-				QuitRelative_Text:SetText("Á¬½Ó³É¹¦£¬ÕıÔÚÖØĞÂ½øÈë³¡¾°...");
+				QuitRelative_Text:SetText("Liên tiªp thành công, ğang · mµt l¥n næa tiªn vào trß¶ng cänh. . .");
 				QuitRelative_Status=4;
 			end
 		elseif(arg0 == "ConnFailed") then
 			this:Show();
 			QuitRelative_OK_Button:Disable();
 			QuitRelative_Cancel_Button:Enable();
-			QuitRelative_Text:SetText("Á¬½ÓÊ§°Ü£¬´íÎóÔ­Òò:#r" .. arg1);
+			QuitRelative_Text:SetText("Liên tiªp th¤t bÕi, sai l¥m nguyên nhân: #r" .. arg1);
 			QuitRelative_Status=5;
 		end
 		
@@ -68,7 +68,7 @@ function QuitRelative_OK_Clicked()
 		--½øÈë¶ÏÏßÖØÁ¬
 		QuitRelative_OK_Button:Hide();
 		QuitRelative_Cancel_Button:Enable();
-		QuitRelative_Text:SetText("ÕıÔÚÖØĞÂÁ¬½Ó·şÎñÆ÷...");
+		QuitRelative_Text:SetText("Ğang · mµt l¥n næa liên tiªp phøc vø Khí. . .");
 		QuitRelativeSelectUpdateRect();
 		QuitRelative_Status=3;
 		EnterReconnect(true);
@@ -76,7 +76,7 @@ function QuitRelative_OK_Clicked()
 end
 
 function QuitRelative_Cancel_Clicked()
-	--ÕıÔÚÑ¯ÎÊÊÇ·ñÖØÁ¬»òÕßÕıÔÚÖØÁ¬
+	-- ıÔÚÑ¯ÎÊÊÇ·ñÖØÁ¬»ò ß ıÔÚÖØÁ¬
 	if(QuitRelative_Status == 2 or QuitRelative_Status == 3) then
 		--·ÅÆúÖØÁ¬£¬Ö±½ÓÍË³ö
 		EnterReconnect(false);

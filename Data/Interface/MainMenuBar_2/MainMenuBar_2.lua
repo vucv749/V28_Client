@@ -107,7 +107,7 @@ function MainMenuBar_2_Clicked(nIndex)
 	if DataPool:IsCanDoAction() then
 		MAIN_2_BUTTONS[nIndex]:DoAction();
 	else
-		PushDebugMessage("Äã²»ÄÜÕâÃ´×ö¡£")
+		PushDebugMessage("Nhî không th¬ làm nhß v§y.")
 		return;
 	end
 end
@@ -140,7 +140,7 @@ function MainMenuBar_2_UnInstallChatActionButton(index)
 	local realActionID = DataPool : Get_RMB_ChatActionRealID(actionID);
 	if realActionID > 0 and actionCount > 0 and actionMinIndex > 0 and actionType > 0 then
 		local tmpItem = -1
-		-- Çå¿Õ¿ì½ÝÀ¸ÉÏÃ¿Ò»¸ö°üº¬¶¯×÷°ü°´Å¥µÄÐÅÏ¢
+		-- Çå¿ ¿ì½ÝÀ¸ÉÏÃ¿Ò»¸ö°üº¬¶¯×÷°ü°´Å¥µÄÐÅÏ¢
 		for i = 1, MAIN_2_BUTTON_NUM do
 			-- µÃµ½µ±Ç°ActionItemÔÚActionItem×Ü±íÖÐµÄ±àºÅ
 		  tmpItem = MAIN_2_BUTTONS[i+30]:GetActionItem();
@@ -154,8 +154,8 @@ function MainMenuBar_2_UnInstallChatActionButton(index)
 						theAction = Talk : EnumChatMood(actionMinIndex + j - 2);
 					end
 					if (theAction:GetID() ~= 0) and (theAction:GetID() == tmpItem) then
-						MAIN_2_BUTTONS[i+30] : SetActionItem(-1);								-- È¡Ïû°´Å¥ÉÏµÄActionItem
-						DataPool : UnInstall_RMB_ChatAction_BarItem(i+29);			-- É¾³ýMainMenuBarÖÐ±£´æµÄActionItem¶ÔÓ¦¼ÇÂ¼£¨±àºÅ¶ÔÓ¦DragName£©				
+						MAIN_2_BUTTONS[i+30] : SetActionItem(-1);								-- ??????ActionItem
+						DataPool : UnInstall_RMB_ChatAction_BarItem(i+29);			-- ??MainMenuBar????ActionItem????(????DragName)				
 					end
 				end
 		  end
@@ -179,7 +179,7 @@ function MainMenuBar_2_ClearChatActionButton(index, nID, nData)
 	local realActionID = DataPool : Get_RMB_ChatActionRealID(actionID)	
 	if realActionID > 0 and actionCount > 0 and actionMinIndex > 0 and actionType > 0 then
 		local tmpItem = -1
-		-- Çå¿Õ¿ì½ÝÀ¸ÉÏÃ¿Ò»¸ö°üº¬¶¯×÷°ü°´Å¥µÄÐÅÏ¢
+		-- Çå¿ ¿ì½ÝÀ¸ÉÏÃ¿Ò»¸ö°üº¬¶¯×÷°ü°´Å¥µÄÐÅÏ¢
 		for i = 1, MAIN_2_BUTTON_NUM do
 			-- µÃµ½µ±Ç°ActionItemÔÚActionItem×Ü±íÖÐµÄ±àºÅ
 		  tmpItem = MAIN_2_BUTTONS[i+30]:GetActionItem();
@@ -193,8 +193,8 @@ function MainMenuBar_2_ClearChatActionButton(index, nID, nData)
 						theAction = Talk : EnumChatMood(actionMinIndex + j - 2);
 					end
 					if (theAction:GetID() ~= 0) and (theAction:GetID() == tmpItem) then
-						MAIN_2_BUTTONS[i+30] : SetActionItem(-1);								-- È¡Ïû°´Å¥ÉÏµÄActionItem
-						DataPool : UnInstall_RMB_ChatAction_BarItem(i+29);			-- É¾³ýMainMenuBarÖÐ±£´æµÄActionItem¶ÔÓ¦¼ÇÂ¼£¨±àºÅ¶ÔÓ¦DragName£©				
+						MAIN_2_BUTTONS[i+30] : SetActionItem(-1);								-- ??????ActionItem
+						DataPool : UnInstall_RMB_ChatAction_BarItem(i+29);			-- ??MainMenuBar????ActionItem????(????DragName)				
 					end
 				end
 		  end

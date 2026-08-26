@@ -1,14 +1,14 @@
 --Create By MD
-local g_FrameInfo = -1				--当前窗口确认的类型
-local g_FrameEvent = -1       --当前使用哪个窗口事件
+local g_FrameInfo = -1				--?????????
+local g_FrameEvent = -1       --??????????
 local g_YIMIN_OBJ_DISTANCE = 3.0
 local g_Yimin_Gain_NPCID = -1
 local FrameInfoList = {
-	CONFIRM_IMMIGRATION  = 1,				 			 -- 确认
-	CONFIRM_IMMIGRATION_SPOUSE  = 2,			 -- 夫妻 确认
-	CONFIRM_ODERIMMIGRATION  = 3,				 	 -- 订制移民确认
+	CONFIRM_IMMIGRATION  = 1,				 			 -- ??
+	CONFIRM_IMMIGRATION_SPOUSE  = 2,			 -- ?? ??
+	CONFIRM_ODERIMMIGRATION  = 3,				 	 -- ??????
 }
---确认框缓存变量，用于点击确定和取消时做处理, 每个变量的意义，根据界面不同各不相同，请使用者用到时自己注释
+--确认框缓存变量，用于点击确定和取消时做处理, 每个变量的意义，根据界面不同各不相同，请使用犨用到时自己注释
 local g_FrameVar = {
 	[1] = 0,
 	[2] = 0,
@@ -41,7 +41,7 @@ end
 function YiMin_ReadMe_OnEvent(event)
 	--******************************
 	--建议：处理不同的event，请在读出参数后，将逻辑自己写在一个函数内
-	--这样可以尽可能的使OnEvent函数能简洁一些不至于像MessageBox界面一样
+	--犫样可以尽可能的使OnEvent函数能简洁一些不至于像MessageBox界面一样
 	--注意：一定要先将参数读出来再传给自己写的函数
 	--参考：event == "YBMARKET_UP_ITEM_COMFIRM"
 	--*******************************
@@ -72,7 +72,7 @@ function YiMin_ReadMe_OnEvent(event)
 		local targetServerName = Get_XParam_STR(1)	;		
 		local ImmgTime = Get_XParam_STR(2)	;		
 		local msg =ScriptGlobal_Format( "#{FWQYM_160622_273}", targetServerName,ImmgTime)
-		YiMin_ReadMe_Info_text:SetText( msg );	-- 设置内容
+		YiMin_ReadMe_Info_text:SetText( msg );	-- ????
 		g_FrameInfo = FrameInfoList.CONFIRM_IMMIGRATION ;
 		YiMin_ReadMeUpdateRect();
 		DataPool:SetCanUseHotKey(0)
@@ -96,7 +96,7 @@ function YiMin_ReadMe_OnEvent(event)
 		local targetServerName = Get_XParam_STR(1)	;		
 		local ImmgTime = Get_XParam_STR(2)	;		
 		local msg =ScriptGlobal_Format( "#{FWQYM_160622_274}", targetServerName,ImmgTime)
-		YiMin_ReadMe_Info_text:SetText( msg );	-- 设置内容
+		YiMin_ReadMe_Info_text:SetText( msg );	-- ????
 		g_FrameInfo = FrameInfoList.CONFIRM_IMMIGRATION_SPOUSE ;
 		YiMin_ReadMeUpdateRect();
 		DataPool:SetCanUseHotKey(0)
@@ -120,7 +120,7 @@ function YiMin_ReadMe_OnEvent(event)
 		local targetServerName = Get_XParam_STR(1)	;		
 		local ImmgTime = Get_XParam_STR(2)	;		
 		local msg =ScriptGlobal_Format( "#{FWQYM_160622_274}", targetServerName,ImmgTime)
-		YiMin_ReadMe_Info_text:SetText( msg );	-- 设置内容
+		YiMin_ReadMe_Info_text:SetText( msg );	-- ????
 		g_FrameInfo = FrameInfoList.CONFIRM_IMMIGRATION_SPOUSE ;
 		YiMin_ReadMeUpdateRect();
 		DataPool:SetCanUseHotKey(0)
@@ -132,7 +132,7 @@ function YiMin_ReadMe_OnEvent(event)
         if( tonumber(arg0) ~= g_Yimin_Gain_NPCID ) then
 			return
 		end
-       		 --- 如果和NPC的距离大于一定的距离或者被删除，自动关闭
+       		 --- 如果和NPC的距离大于一定的距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2) > g_YIMIN_OBJ_DISTANCE or arg1=="destroy") then
             		YiMin_ReadMe_Close()
 		end
@@ -146,7 +146,7 @@ function YiMin_ReadMe_OnEvent(event)
 		------------------------------------------------
 		
 		local msg =ScriptGlobal_Format( "#{FWQYM_160622_275}",ImmgTime)
-		YiMin_ReadMe_Info_text:SetText( msg );	-- 设置内容
+		YiMin_ReadMe_Info_text:SetText( msg );	-- ????
 		YiMin_ReadMeUpdateRect();
 		YiMin_ReadMe_BtnOK:SetProperty("Visible","False")
 		YiMin_ReadMe_BtnCancel:SetProperty("Visible","False")
@@ -162,7 +162,7 @@ function YiMin_ReadMe_OnEvent(event)
 		------------------------------------------------
 		
 		local msg =ScriptGlobal_Format( "#{DZYM_20220831_109}",ImmgTime)
-		YiMin_ReadMe_Info_text:SetText( msg );	-- 设置内容
+		YiMin_ReadMe_Info_text:SetText( msg );	-- ????
 		YiMin_ReadMeUpdateRect();
 		YiMin_ReadMe_BtnOK:SetProperty("Visible","False")
 		YiMin_ReadMe_BtnCancel:SetProperty("Visible","False")
@@ -187,7 +187,7 @@ function YiMin_ReadMe_OnEvent(event)
 			local ImmgTime = Get_XParam_STR(2)	;		
 			local msg =ScriptGlobal_Format( "#{DZYM_20220831_108}", targetServerName,ImmgTime)
 			YiMin_ReadMe_DragTitle:SetText("#{DZYM_20220831_107}")
-			YiMin_ReadMe_Info_text:SetText( msg );	-- 设置内容
+			YiMin_ReadMe_Info_text:SetText( msg );	-- ????
 			g_FrameInfo = FrameInfoList.CONFIRM_ODERIMMIGRATION ;
 			YiMin_ReadMeUpdateRect();
 			DataPool:SetCanUseHotKey(0)
@@ -241,7 +241,7 @@ function YiMin_ReadMe_Bn1Click()
 end
 -- 按钮2 点击事件
 function YiMin_ReadMe_Bn2Click()
-	--由服务器记统计日志
+	--由服务器记统计葼志
 
 	if (g_FrameInfo == FrameInfoList.CONFIRM_IMMIGRATION_SPOUSE) then
 		--移民取消
@@ -259,7 +259,7 @@ function YiMin_ReadMe_Bn2Click()
 end
 
 function YiMin_ReadMe_Frame_OnHiden()
-	if(IsWindowShow("AntiJDY")) then    --简单游互斥界面显示时，不激活快捷键 for 69994
+	if(IsWindowShow("AntiJDY")) then    --??????????,?????? for 69994
 	else
 		DataPool:SetCanUseHotKey(1);
 	end

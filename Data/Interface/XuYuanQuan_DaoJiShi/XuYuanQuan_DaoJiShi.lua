@@ -10,9 +10,9 @@ local g_XuYuanQuan_DaoJiShi_Frame_UnifiedPosition = 0
 function XuYuanQuan_DaoJiShi_PreLoad()
 
 	this:RegisterEvent("UI_COMMAND")
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)		--离开场景
-	this:RegisterEvent("ADJEST_UI_POS",false)				-- 游戏窗口尺寸发生了变化
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)	-- 游戏分辨率发生了变化
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)		--????
+	this:RegisterEvent("ADJEST_UI_POS",false)				-- ???????????
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)	-- ??????????
 	
 end
 --===============================================

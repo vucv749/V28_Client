@@ -1,5 +1,5 @@
 --UI COMMAND ID 100
---UI COMMAND ID 103 ÔÝÊ±²âÊÔ½«´óÆìÐÞ¸Ä·ÅÔÚÕâÀï
+--UI COMMAND ID 103 ÔÝÊ±²âÊÔ½«´óÆìÐÞ¸Ä·ÅÔÚ âÀï
 local g_clientNpcId = -1;
 local MAX_OBJ_DISTANCE = 3.0;
 local g_MembersCtl = {};
@@ -14,12 +14,12 @@ function Interior_PreLoad()
 end
 
 function Interior_OnLoad()
-	g_NeedVal[0] = "¹¤ÒµÖµ£º"
-	g_NeedVal[1] = "Å©ÒµÖµ£º"
-	g_NeedVal[2] = "ÉÌÒµÖµ£º"
-	g_NeedVal[3] = "¹ú·ÀÖµ£º"
-	g_NeedVal[4] = "¿Æ¼¼Öµ£º"
-	g_NeedVal[5] = "À©ÕÅÖµ£º"
+	g_NeedVal[0] = "Công nghi®p Tr¸:"
+	g_NeedVal[1] = "Nông nghi®p Tr¸:"
+	g_NeedVal[2] = "Buôn bán Tr¸:"
+	g_NeedVal[3] = "Qu¯c phòng Tr¸:"
+	g_NeedVal[4] = "Khoa h÷c kÛ thu§t Tr¸:"
+	g_NeedVal[5] = "Khuªch trß½ng Tr¸:"
 end
   
 function Interior_OnEvent(event)
@@ -44,29 +44,29 @@ function City_Manage_SetCtl()
 	g_MembersCtl = {
 									--Left
 									guildname = 		{txt = "",							ctl = Interior_Text1},
-									mainbuilding = 	{txt = "µÈ¼¶£º",				ctl = Interior_Text2},
+									mainbuilding = 	{txt = "C¤p b§c:",				ctl = Interior_Text2},
 									
-									guildmoney = 		{txt = "°ï»á×Ê½ð£º",		ctl = Interior_Text3},
+									guildmoney = 		{txt = "Bang hµi tài chính:",		ctl = Interior_Text3},
 									degree = {
-																	{txt = "¹¤ÒµÖµ£º",			ctl = Interior_Text4},
-																	{txt = "Å©ÒµÖµ£º",			ctl = Interior_Text5},
-																	{txt = "ÉÌÒµÖµ£º",			ctl = Interior_Text6},
-																	{txt = "¹ú·ÀÖµ£º",			ctl = Interior_Text7},
-																	{txt = "¿Æ¼¼Öµ£º",			ctl = Interior_Text8},
-																	{txt = "À©ÕÅÖµ£º",			ctl = Interior_Text9},
+																	{txt = "Công nghi®p Tr¸:",			ctl = Interior_Text4},
+																	{txt = "Nông nghi®p Tr¸:",			ctl = Interior_Text5},
+																	{txt = "Buôn bán Tr¸:",			ctl = Interior_Text6},
+																	{txt = "Qu¯c phòng Tr¸:",			ctl = Interior_Text7},
+																	{txt = "Khoa h÷c kÛ thu§t Tr¸:",			ctl = Interior_Text8},
+																	{txt = "Khuªch trß½ng Tr¸:",			ctl = Interior_Text9},
 													 },
 									
-									curbuilding = 	{txt = "µ±Ç°½¨Éè£º",		ctl = Interior_Text10},
-									progress = 			{txt = "½¨Éè½ø¶È£º",		ctl = Interior_Text11},
+									curbuilding = 	{txt = "Trß¾c m£t kiªn thiªt:",		ctl = Interior_Text10},
+									progress = 			{txt = "Kiªn thiªt tiªn ðµ:",		ctl = Interior_Text11},
 									                
 									--Right         
 									buildinglist = 	Interior_Info,
 									                
 									--RightBottom   
-									needmsg = 			{txt = "½¨Éè£º",				ctl = Interior_Text12},
-									needmoney = 		{txt = "×Ê½ð£º",				ctl = Interior_Text13},
+									needmsg = 			{txt = "Kiªn thiªt:",				ctl = Interior_Text12},
+									needmoney = 		{txt = "Tài chính:",				ctl = Interior_Text13},
 									needval = 			{txt = "",							ctl = Interior_Text14},
-									needmission =  	{txt = "ÈÎÎñ£º",				ctl = Interior_Text15},
+									needmission =  	{txt = "Nhi®m vø:",				ctl = Interior_Text15},
 								 };
 end
 
@@ -151,7 +151,7 @@ function City_Manage_Update()
 			if(bd[k+2] > 0) then
 				g_MembersCtl.buildinglist:AddNewItem(bDisplayLevel,1,listIdx);
 			else
-				g_MembersCtl.buildinglist:AddNewItem("Î´½¨",1,listIdx);
+				g_MembersCtl.buildinglist:AddNewItem("V¸ Kiªn",1,listIdx);
 				--AxTrace(0,0,"default not exist building:"..tostring(bdidx));
 			end
 			g_MembersCtl.buildinglist:SetRowUserData(listIdx, bdidx);
@@ -195,14 +195,14 @@ function City_Manage_SelectChanged()
 		if(bExist > 0) then
 		txt = txt..tostring(bName).."->"..tostring(bNextName);
 		else
-			txt = txt.."Î´½¨->"..tostring(bNextName);
+			txt = txt.."V¸ Kiªn->"..tostring(bNextName);
 		end
 	end
 	g_MembersCtl.needmsg.ctl:SetText(txt);
 	--½¨ÉèÌõ¼þ
 	local cd = {City:GetBuildingInfo(g_selIdx, "condition")};
 	if(cd[1] == -2) then
-		--Ã»ÓÐ½¨ÖþÌõ¼þµÄ£¬Çå¿ÕÏÔÊ¾
+		--Ã»ÓÐ½¨ÖþÌõ¼þµÄ£¬Çå¿ ÏÔÊ¾
 		g_MembersCtl.needmsg.ctl:SetText("");
 		g_MembersCtl.needmoney.ctl:SetText("");
 		g_MembersCtl.needval.ctl:SetText("");
@@ -221,7 +221,7 @@ function City_Manage_SelectChanged()
 	--1.ÏûºÄÖµ
 	local nt,nv = cd[3], cd[4];
 	txt = g_MembersCtl.needval.txt..tostring(City_Manage_GetNeedTxt(nt));
-	txt = txt.."£º"..tostring(nv);
+	txt = txt..":"..tostring(nv);
 	g_MembersCtl.needval.ctl:SetText(txt);
 	--2.ÈÎÎñÊý
 	local mn = cd[2];
@@ -231,17 +231,17 @@ end
 
 function City_Manage_GetNeedTxt(nt)
 	if( tonumber(nt) == 0 ) then
-		return "¹¤ÒµÖµ";
+		return "Công nghi®p Tr¸";
 	elseif( tonumber(nt) == 1 ) then
-		return "Å©ÒµÖµ";
+		return "Nông nghi®p Tr¸";
 	elseif( tonumber(nt) == 2 ) then
-		return "ÉÌÒµÖµ";
+		return "Buôn bán Tr¸";
 	elseif( tonumber(nt) == 3 ) then
-		return "¹ú·ÀÖµ";
+		return "Qu¯c phòng Tr¸";
 	elseif( tonumber(nt) == 4 ) then
-		return "¿Æ¼¼Öµ";
+		return "Khoa h÷c kÛ thu§t Tr¸";
 	elseif( tonumber(nt) == 5 ) then
-		return "À©ÕÅÖµ";
+		return "Khuªch trß½ng Tr¸";
 	else
 		return "";
 	end
@@ -259,7 +259,7 @@ function City_Manage_CareEventHandle(careId, op, distance)
 		if(tonumber(careId) ~= g_clientNpcId) then
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(op == "distance" and tonumber(distance)>MAX_OBJ_DISTANCE or op=="destroy") then
 			City_Manage_Hide();
 		end
@@ -267,7 +267,7 @@ end
 
 function City_Manage_DoBuilding(act)
 	if(tonumber(g_selIdx) < 0) then 
-		PushDebugMessage("ÇëÏÈÑ¡ÔñÒ»ÖÖ½¨Öþ¡£"); 
+		PushDebugMessage("Thïnh Tiên lña ch÷n mµt loÕi kiªn trúc."); 
 		return;
 	end
 

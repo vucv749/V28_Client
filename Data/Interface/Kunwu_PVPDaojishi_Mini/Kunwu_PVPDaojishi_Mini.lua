@@ -1,4 +1,4 @@
--- 珍兽PVP 休息室信息展示UI最小化
+-- 犱兽PVP 休息室信息牴示UI最小化
 -- 默认位置
 local Kunwu_PVPDaojishi_Mini_UnifiedPosition = nil
 
@@ -8,8 +8,8 @@ function Kunwu_PVPDaojishi_Mini_PreLoad()
     this:RegisterEvent("PETPVP_UI_OPENRESTINFOMINI", true)
     this:RegisterEvent("PETPVP_UI_CLOSERESTINFOMINI", true)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end -- end func Kunwu_PVPDaojishi_Mini_PreLoad()
 
 function Kunwu_PVPDaojishi_Mini_OnEvent(event)

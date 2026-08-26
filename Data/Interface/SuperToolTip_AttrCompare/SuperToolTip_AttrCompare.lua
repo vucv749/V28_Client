@@ -4,7 +4,7 @@ local SuperToolTip_AttrCompare_g_WidthOfCompare = 0
 --PreLoad==
 --=========
 function SuperToolTip_AttrCompare_PreLoad()
-	--第二个参数表示界面关闭时是否响应事件 默认为TRUE
+	--第二个参数表示界面关睜时是否响应事件 默认为TRUE
 	this:RegisterEvent("SHOW_SP_CMP1")
 	this:RegisterEvent("CLOSE_SP_CMP1")
 end
@@ -58,7 +58,7 @@ end
 --Update UI
 --=========
 function SuperToolTip_AttrCompare_Update()
-	-- 先清空以前显示的文字
+	-- 先清繝以前显示的文字
 	SuperToolTip_AttrCompare_ClearText()
 
 	local cmptype = SuperTooltips_Cmp1:LuaFnGetCmpType()--enum EQUIPCOMPARE_TYPE
@@ -127,7 +127,7 @@ end
 
 -------------------------------------------------------------------------------------------------------------------------------
 --
--- 清空显示文本
+-- 清繝显示文本
 --
 function SuperToolTip_AttrCompare_ClearText()
 	SuperToolTip_AttrCompare_Property:SetText("")

@@ -1,5 +1,5 @@
 
--- 端午应景 煮粽子
+-- 端午应景 煮魻子
 
 local g_Zongzi_ThreeChoice_Frame_UnifiedPosition;
 

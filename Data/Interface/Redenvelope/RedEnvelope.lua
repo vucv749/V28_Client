@@ -45,8 +45,8 @@ function Redenvelope_OnEvent(event)
 				Set_XSCRIPT_Parameter(3,m_nChannel);
 				Set_XSCRIPT_Parameter(4,m_nChannelParam);
 				Set_XSCRIPT_Parameter(5,nCurrencyUnit);
-				Set_XSCRIPT_Parameter(6,0);--判断是否领取过,此处为红包提醒,没领过
-				Set_XSCRIPT_Parameter(7,0);--判断是否为空,此处默认为非空
+				Set_XSCRIPT_Parameter(6,0);--???????,???????,???
+				Set_XSCRIPT_Parameter(7,0);--??????,???????
 				Set_XSCRIPT_ParamCount(8);
 			Send_XSCRIPT()
 		end

@@ -1,21 +1,21 @@
 --CaiLing界面
 local g_CaiLing_Str_LingqiState =
 {
-	[1] = "#{CLCW_240328_72}", --充盈
-	[2] = "#{CLCW_240328_73}", --缺稀
-	[3] = "#{CLCW_240328_74}", --均衡
+	[1] = "#{CLCW_240328_72}", --??
+	[2] = "#{CLCW_240328_73}", --??
+	[3] = "#{CLCW_240328_74}", --??
 }
 local g_CaiLing_Str_TDRFlag =
 {
-	[1] = "#{CLCW_240328_84}", --天
-	[2] = "#{CLCW_240328_85}", --地
-	[3] = "#{CLCW_240328_86}", --人
+	[1] = "#{CLCW_240328_84}", --?
+	[2] = "#{CLCW_240328_85}", --?
+	[3] = "#{CLCW_240328_86}", --?
 }
-local g_CaiLing_Str_NowLingqi = "#{CLCW_240328_71}" --全队累计灵气值
+local g_CaiLing_Str_NowLingqi = "#{CLCW_240328_71}" --???????
 --变量
 local g_CaiLing_Param_NowLingqi = 0
 local g_CaiLing_Param_LingqiState = 0
-local g_CaiLing_Param_Flag = 0 --天地人标记 1-3
+local g_CaiLing_Param_Flag = 0 --????? 1-3
 --控件
 local g_CaiLing_Frame_UnifiedXPosition
 local g_CaiLing_Frame_UnifiedYPosition
@@ -27,7 +27,7 @@ function CaiLing_PreLoad()
 	-- uicommand
 	this:RegisterEvent("UI_COMMAND")
 	-- 游戏窗口尺寸发生了变化
-	this:RegisterEvent("ADJEST_UI_POS", false) --第二个参数代表界面隐藏时事件是否有效,默认为true
+	this:RegisterEvent("ADJEST_UI_POS", false) --??????????????????,???true
 	-- 游戏分辨率发生了变化
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED", false)
 	-- 切换场景
@@ -45,8 +45,8 @@ function CaiLing_OnEvent(event)
 	if event == "UI_COMMAND" and tonumber(arg0) == g_CaiLing_Uicmd then
 		local uicmdOp = Get_XParam_INT(0)
 		if uicmdOp == g_CaiLing_Uicmd_Op.open then
-			local lingqiState = Get_XParam_INT(1) --可能为0
-			local flag = Get_XParam_INT(2) --可能为0
+			local lingqiState = Get_XParam_INT(1) --???0
+			local flag = Get_XParam_INT(2) --???0
 			if lingqiState < 1 or lingqiState > 3 or flag < 1 or flag > 3 then
 				return 0
 			end
@@ -62,7 +62,7 @@ function CaiLing_OnEvent(event)
 				if lingqi < 0 then
 					lingqi = 0
 				end
-				if lingqi > g_CaiLing_Param_NowLingqi then--有增加才更新 免得因为延迟问题出现增加又减少的情况
+				if lingqi > g_CaiLing_Param_NowLingqi then--?????? ??????????????????
 					g_CaiLing_Param_NowLingqi = lingqi
 					CaiLing_UpdateUI()
 				end
@@ -106,7 +106,7 @@ function CaiLing_OnOpen(lingqiState, flag)
 	g_CaiLing_Param_Flag = flag
 end
 
---关闭界面初始化变量
+--关睜界面初始化变量
 function CaiLing_OnClose()
 	g_CaiLing_Param_NowLingqi = 0
 	g_CaiLing_Param_LingqiState = 0

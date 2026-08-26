@@ -262,7 +262,7 @@ function CJ_XuanRen_TransformName(name, zoneid)
 end
 
 --================================================
--- ¹Ø±Õ
+-- ¹Ø± 
 --================================================
 function CJ_XuanRen_CloseClicked()
 	this:Hide()

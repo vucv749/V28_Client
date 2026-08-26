@@ -47,7 +47,7 @@ function MonopolyGame_PreLoad()
 
 	this:RegisterEvent("UI_COMMAND")
 	
-	--离开场景，自动关闭
+	--离开场景，自动关睜
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)
 
 	this:RegisterEvent("ADJEST_UI_POS")

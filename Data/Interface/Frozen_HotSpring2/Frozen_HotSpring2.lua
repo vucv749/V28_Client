@@ -10,23 +10,23 @@ local g_Frozen_HotSpring2_Frame_UnifiedPosition;
 --ÌåÎÂ¶ÔÓ¦·ÖÊý
 local g_Frozen_HotSpring2_Temp =
 {
-	[1] = {nInfo="Ì«ÀäÁË",nMin=0,nMax=20,nPoint=50,nTips="#{BXPWQ_240927_106}",nImg="set:Frozen_HotSpring image:Frozen_HotSpring_GGL",nShowImg="set:Frozen_HotSpring image:Frozen_HotSpring_GGL1",}, --[nMin,nMax)
-	[2] = {nInfo="Õý³£",nMin=20,nMax=70,nPoint=120,nTips="#{BXPWQ_240927_107}",nImg="set:Frozen_HotSpring image:Frozen_HotSpring_ST",nShowImg="set:Frozen_HotSpring image:Frozen_HotSpring_ST10",},
-	[3] = {nInfo="ºìÎÂ",nMin=70,nMax=80,nPoint=260,nTips="#{BXPWQ_240927_109}",nImg="set:Frozen_HotSpring image:Frozen_HotSpring_ZTK",nShowImg="set:Frozen_HotSpring image:Frozen_HotSpring_ZTK60",},
-	[4] = {nInfo="Ì«ÈÈÁË",nMin=80,nMax=100,nPoint=50,nTips="#{BXPWQ_240927_110}",nImg="set:Frozen_HotSpring image:Frozen_HotSpring_ZLR",nShowImg="set:Frozen_HotSpring image:Frozen_HotSpring_ZLR1",},
+	[1] = {nInfo="Thái lÕnh",nMin=0,nMax=20,nPoint=50,nTips="#{BXPWQ_240927_106}",nImg="set:Frozen_HotSpring image:Frozen_HotSpring_GGL",nShowImg="set:Frozen_HotSpring image:Frozen_HotSpring_GGL1",}, --[nMin,nMax)
+	[2] = {nInfo="Bình thß¶ng",nMin=20,nMax=70,nPoint=120,nTips="#{BXPWQ_240927_107}",nImg="set:Frozen_HotSpring image:Frozen_HotSpring_ST",nShowImg="set:Frozen_HotSpring image:Frozen_HotSpring_ST10",},
+	[3] = {nInfo="H°ng Ôn",nMin=70,nMax=80,nPoint=260,nTips="#{BXPWQ_240927_109}",nImg="set:Frozen_HotSpring image:Frozen_HotSpring_ZTK",nShowImg="set:Frozen_HotSpring image:Frozen_HotSpring_ZTK60",},
+	[4] = {nInfo="Quá nóng Li­u",nMin=80,nMax=100,nPoint=50,nTips="#{BXPWQ_240927_110}",nImg="set:Frozen_HotSpring image:Frozen_HotSpring_ZLR",nShowImg="set:Frozen_HotSpring image:Frozen_HotSpring_ZLR1",},
 }
 
 --½±Àø
 local g_Frozen_HotSpring2_Award =
 {
-	[1] = {nInfo="Ò»µÈ½±",nTime=3*60,nHappy=1000,nImgok="set:Frozen_HotSpring image:RY_Hover",nImgNo="set:Frozen_HotSpring image:RY_Disabled",},
-	[2] = {nInfo="¶þµÈ½±",nTime=5*60,nHappy=1000,nImgok="set:Frozen_HotSpring image:QY_Hover",nImgNo="set:Frozen_HotSpring image:QY_Disabled",},
-	[3] = {nInfo="ÈýµÈ½±",nTime=100*60,nHappy=1000,nImgok="set:Frozen_HotSpring image:SY_Hover",nImgNo="set:Frozen_HotSpring image:SY",},
+	[1] = {nInfo="Nh¤t ðÆng Tß·ng",nTime=3*60,nHappy=1000,nImgok="set:Frozen_HotSpring image:RY_Hover",nImgNo="set:Frozen_HotSpring image:RY_Disabled",},
+	[2] = {nInfo="Giäi nhì",nTime=5*60,nHappy=1000,nImgok="set:Frozen_HotSpring image:QY_Hover",nImgNo="set:Frozen_HotSpring image:QY_Disabled",},
+	[3] = {nInfo="Tam ÐÆng Tß·ng",nTime=100*60,nHappy=1000,nImgok="set:Frozen_HotSpring image:SY_Hover",nImgNo="set:Frozen_HotSpring image:SY",},
 }
 
 --¿Ø¼þ
-local g_Frozen_HotSpring2_AwardList = {}	--½±Àø
-local g_Frozen_HotSpring2_ShowImgList = {}	--ÎÂ¶ÈÏÔÊ¾
+local g_Frozen_HotSpring2_AwardList = {}	--??
+local g_Frozen_HotSpring2_ShowImgList = {}	--????
 
 --===============================================
 -- PreLoad()
@@ -95,7 +95,7 @@ function Frozen_HotSpring2_OnEvent(event)
 			Frozen_HotSpring2_Open(Get_XParam_INT(1),Get_XParam_INT(2),Get_XParam_INT(3),Get_XParam_INT(4),Get_XParam_INT(5))
 		end
 	elseif(event == "UI_COMMAND" and tonumber(arg0) == 99957502) then
-		--¹Ø±Õ½çÃæ
+		--¹Ø± ½çÃæ
 		if(IsWindowShow("Frozen_HotSpring2")) then
 			 Frozen_HotSpring2_OnHiden()
 		end
@@ -149,7 +149,7 @@ function Frozen_HotSpring2_Open(mOkTick,mBodyTemp,mHappyNum,mBuffTick,mPatrolFla
 	--ÏÔÊ¾½ø¶ÈÌõ
 	local  nLength = table.getn(g_Frozen_HotSpring2_Temp)
 	Frozen_HotSpring2_EXP:SetProgress( mBodyTemp , g_Frozen_HotSpring2_Temp[nLength].nMax );
-	--½ø¶ÈÌõbgÑÕÉ«
+	--½ø¶ÈÌõbgÑ É«
 	if mIdx == 1 then
 		--Ì«ÀäÁË À¶É«
 		Frozen_HotSpring2_Blue:Show()
@@ -159,7 +159,7 @@ function Frozen_HotSpring2_Open(mOkTick,mBodyTemp,mHappyNum,mBuffTick,mPatrolFla
 		Frozen_HotSpring2_Blue:Hide()
 		Frozen_HotSpring2_Red:Show()
 	else
-		--Õý³£
+		-- ý³£
 		Frozen_HotSpring2_Blue:Hide()
 		Frozen_HotSpring2_Red:Hide()
 	end
@@ -191,13 +191,13 @@ function Frozen_HotSpring2_Open(mOkTick,mBodyTemp,mHappyNum,mBuffTick,mPatrolFla
 
 	if mHappyNum >= g_Frozen_HotSpring2_Award[3].nHappy then
 		if mBuffTick <= g_Frozen_HotSpring2_Award[1].nTime then
-			--Õ¹Ê¾½±Àø
+			-- ¹Ê¾½±Àø
 			g_Frozen_HotSpring2_AwardList[1]:SetProperty( "Image", g_Frozen_HotSpring2_Award[1].nImgok )
 		elseif mBuffTick <= g_Frozen_HotSpring2_Award[2].nTime then
-			--Õ¹Ê¾½±Àø
+			-- ¹Ê¾½±Àø
 			g_Frozen_HotSpring2_AwardList[2]:SetProperty( "Image", g_Frozen_HotSpring2_Award[2].nImgok )
 		else
-			--Õ¹Ê¾½±Àø
+			-- ¹Ê¾½±Àø
 			g_Frozen_HotSpring2_AwardList[3]:SetProperty( "Image", g_Frozen_HotSpring2_Award[3].nImgok )
 		end
 	end
@@ -217,5 +217,5 @@ end
 --°ïÖú
 --=========================================================
 function Frozen_HotSpring2_Help()
-	PushEvent("QUEST_HELPINFO", "È±×Öµä")
+	PushEvent("QUEST_HELPINFO", "Khuyªt tñ ði¬n")
 end

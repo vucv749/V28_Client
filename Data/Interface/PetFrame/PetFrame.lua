@@ -5,7 +5,7 @@ local PET_HP = 0;
 local PET_MAXHP = 1;
 local PET_EXP = 0;
 local PET_MAXEXP = 1;
-local MousePos = 0;		--0,鼠标不在窗体内 1,鼠标在窗体内
+local MousePos = 0;		--0,??????? 1,??????
 
 local PET_IMPACT_CTL = {};
 local g_FightPet = -1;
@@ -36,7 +36,7 @@ function PetFrame_OnEvent( event )
 end
 
 function PetFrame_Update()
-	--查找战斗珍兽
+	--查犚牻斗犱兽
 	local nPetCount = Pet : GetPet_Count();
 		
 	if nPetCount < 1 then
@@ -60,15 +60,15 @@ function PetFrame_Update()
 		return;
 	end
 	
-	--战斗珍兽头像
+	--牻斗犱兽头像
 	local szPortrait = Pet:GetPetPortraitByIndex(g_FightPet);
 	if(nil ~= szPortrait and "" ~= szPortrait) then
 		PetFrame_Header:SetProperty("Image", tostring(szPortrait));
-		--AxTrace(0,0, "珍兽头像" .. szPortrait);
+		--AxTrace(0,0, "犱兽头像" .. szPortrait);
 		PetFrame_Header:Show();
 	end
 	
-	--战斗珍兽的HP/HPMAX
+	--牻斗犱兽的HP/HPMAX
 	PET_HP = Pet : GetHP(g_FightPet);
 	PET_MAXHP = Pet:	GetMaxHP(g_FightPet);
 
@@ -84,7 +84,7 @@ function PetFrame_Update()
 	PetFrame_Update_Tooltip( 1 );	
 	
 	
-	--战斗珍兽的Buf
+	--牻斗犱兽的Buf
 	local nBuffNum = Pet:GetPetImpactNum(g_FightPet);
 	if(nBuffNum > PET_BUFF_MAX) then nBuffNum = PET_BUFF_MAX; end
 	
@@ -143,8 +143,8 @@ function PetFrame_HP_Text_MouseLeave()
 end
 
 function PetFrame_Update_Tooltip( arg )
-	PetFrame_HP:SetToolTip("血:"..tostring( PET_HP ) .. "/" .. tostring( PET_MAXHP).."#r".."经验:"..tostring( PET_EXP ).."/"..tostring( PET_MAXEXP ) );
-	PetFrame_Exp:SetToolTip("血:"..tostring( PET_HP ) .. "/" .. tostring( PET_MAXHP).."#r".."经验:"..tostring( PET_EXP ).."/"..tostring( PET_MAXEXP ) );
+	PetFrame_HP:SetToolTip("Huy猼:"..tostring( PET_HP ) .. "/" .. tostring( PET_MAXHP).."#r".."Kinh nghi甿:"..tostring( PET_EXP ).."/"..tostring( PET_MAXEXP ) );
+	PetFrame_Exp:SetToolTip("Huy猼:"..tostring( PET_HP ) .. "/" .. tostring( PET_MAXHP).."#r".."Kinh nghi甿:"..tostring( PET_EXP ).."/"..tostring( PET_MAXEXP ) );
 	
 end
 

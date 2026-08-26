@@ -9,12 +9,12 @@ local g_MonthPVP_Score_TeamRankPic = {};
 local g_MonthPVP_Score_ItemIcon = {};
 
 local g_MonthPVP_Score_DaiBiNum = {10,8,5}
---阵营图片
+--狊营图片
 local g_MonthPVP_Result_TeamPIC = 
 {
-	[1] = {image = "set:DaHua_PVP image:DaHua_PVP_Bai"}, --白晶晶
-	[2] = {image = "set:DaHua_PVP image:DaHua_PVP_Zi"},	 --紫霞
-	[3] = {image = "set:DaHua_PVP image:DaHua_PVP_Niu"}, --牛夫人
+	[1] = {image = "set:DaHua_PVP image:DaHua_PVP_Bai"}, --???
+	[2] = {image = "set:DaHua_PVP image:DaHua_PVP_Zi"},	 --??
+	[3] = {image = "set:DaHua_PVP image:DaHua_PVP_Niu"}, --???
 }
 local g_MonthPVP_Score_ItemList = 
 {
@@ -23,7 +23,7 @@ local g_MonthPVP_Score_ItemList =
 	[3] = { itemid = 39920144, itemnum = 1},
 }
 
---预加载函数，可以而且只能在这里注册脚本关心的事件
+--预加载函数，可以而且只能在犫里注册脚本关心的事件
 function MonthPVP_Result_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
 	-- 游戏窗口尺寸发生了变化
@@ -142,7 +142,7 @@ function MonthPVP_Result_Update(nTeam,nBelong,nTime,nPlayerScore)
 		end
 	end
 
-	-- 展示奖励
+	-- 牴示奖励
 	for i = 1, table.getn(g_MonthPVP_Score_ItemList) do
 		-- info
 		local GiftItemID = g_MonthPVP_Score_ItemList[i].itemid

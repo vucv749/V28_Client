@@ -24,9 +24,9 @@ end
 
 function Dress_SplitGem_OnLoad()
 
-	Dress_BUTTON	 = Dress_SplitGem_Item --时装按钮
-	Dress_CHARM_BUTTON	 = Dress_SplitGem_Gem4			 --配饰摘除符按钮
-	Dress_GEM_BUTTONS[1] = Dress_SplitGem_Gem1			 --配饰按钮	
+	Dress_BUTTON	 = Dress_SplitGem_Item --????
+	Dress_CHARM_BUTTON	 = Dress_SplitGem_Gem4			 --???????
+	Dress_GEM_BUTTONS[1] = Dress_SplitGem_Gem1			 --????	
 	Dress_GEM_BUTTONS[2] = Dress_SplitGem_Gem2
 	Dress_GEM_BUTTONS[3] = Dress_SplitGem_Gem3
 	
@@ -51,7 +51,7 @@ function Dress_SplitGem_OnEvent(event)
 			return;
 		end
 		
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			
 			--取消关心
@@ -158,7 +158,7 @@ function Dress_SplitGem_Update(arg0,arg1)
 	local bagPos = tonumber(arg1)
 	
 	local theActionItem = EnumAction(bagPos, "packageitem")
-	if ui_Index == 23 then --时装
+	if ui_Index == 23 then --??
 		if theActionItem:GetID() ~= 0 then
 			local dressEquipPoint = LifeAbility : Get_Equip_Point(bagPos)
 			if dressEquipPoint~=16 then
@@ -167,7 +167,7 @@ function Dress_SplitGem_Update(arg0,arg1)
 			end
 			local dress_GemNum = LifeAbility : GetEquip_GemCount(bagPos)
 						
-			if dress_GemNum > 3 then--逻辑上不会出现这种情况
+			if dress_GemNum > 3 then--???????????
 				return
 			end
 			
@@ -186,7 +186,7 @@ function Dress_SplitGem_Update(arg0,arg1)
 		end
 		--放上宝石
 		--设置DataPool中的m_vGemSeparateList
-		if not LifeAbility:SplitGem_Update(bagPos) then --设置失败
+		if not LifeAbility:SplitGem_Update(bagPos) then --????
 			for i=1,3 do
 				Dress_GEM_BUTTONS[i] : SetActionItem(-1)
 			end
@@ -205,12 +205,12 @@ function Dress_SplitGem_Update(arg0,arg1)
 		end
 		GEM_SELECTED = -1
 		
-	elseif ui_Index == 25 then --摘除符
+	elseif ui_Index == 25 then --???
 		if PlayerPackage : GetItemTableIndex( bagPos ) ~= 30503136 then
 			PushDebugMessage("#{SZPR_091023_78}")
 			return
 		else
-			--解锁之前的摘除符
+			--解锁之前的牚除符
 
 			if(Dress_CHARM_QUALITY ~= -1) then
 				LifeAbility : Lock_Packet_Item(Dress_CHARM_QUALITY,0)
@@ -283,7 +283,7 @@ function Dress_SplitGem_Buttons_Clicked()
 	end
 	
 	DressEnchasing : Do_Dress_SeparateGem(Dress_QUALITY,GEM_SELECTED-1,Dress_CHARM_QUALITY);
-	Resume_Dress_Split_Gem(23)--清空界面
+	Resume_Dress_Split_Gem(23)--????
 	Resume_Dress_Split_Gem(25)
 	Dress_CHARM_QUALITY = -1
 

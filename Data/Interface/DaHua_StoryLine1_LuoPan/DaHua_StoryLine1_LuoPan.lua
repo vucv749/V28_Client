@@ -4,12 +4,12 @@
 local g_DaHua_StoryLine1_LuoPan_UnifiedXPosition;
 local g_DaHua_StoryLine1_LuoPan_UnifiedYPosition;
 
-local g_DaHua_StoryLine1_LuoPan_SelectedClueIndex=-1;	-- 当前线索位置
-local g_DaHua_StoryLine1_LuoPan_SelectedClueID=-1;	-- 当前线索ID
+local g_DaHua_StoryLine1_LuoPan_SelectedClueIndex=-1;	-- ??????
+local g_DaHua_StoryLine1_LuoPan_SelectedClueID=-1;	-- ????ID
 local g_DaHua_StoryLine1_LuoPan_PosX=-1;
 local g_DaHua_StoryLine1_LuoPan_PosZ=-1;
 local g_DaHua_StoryLine1_LuoPan_MaxDist=5;
-local g_DaHua_StoryLine1_LuoPan_isInArea=false;	-- 是否在目标区域
+local g_DaHua_StoryLine1_LuoPan_isInArea=false;	-- ???????
 local g_DaHua_StoryLine1_LuoPan_Offsetx=0;
 local g_DaHua_StoryLine1_LuoPan_Offsety=0;
 
@@ -22,7 +22,7 @@ function DaHua_StoryLine1_LuoPan_PreLoad()
 	-- 游戏分辨率发生了变化
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
 	
-	--离开场景，自动关闭
+	--离开场景，自动关睜
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false);
 	
 	this:RegisterEvent("UPDATE_MAP",false)
@@ -202,7 +202,7 @@ function DaHua_StoryLine1_LuoPan_OnHiden()
 end
 
 --================================================
--- 关闭界面
+-- 关睜界面
 --================================================
 function DaHua_StoryLine1_LuoPan_Close()
 	this:Hide()

@@ -9,23 +9,23 @@ local g_ShaXing_KF_TopList_Frame_UnifiedYPosition;
 
 local g_MaxPlayer = 10
 local g_NeedLevel = 60
-local g_MD_Point = 791    --新杀星副本，排行榜上的积分
+local g_MD_Point = 791    --?????,???????
 local g_TargetId = -1
 local g_nType = -1
 local g_State = -1
 
 local g_MenPaiName = {
-		[0] = "#{XQ_MP_1}",    --少林
-		[1] = "#{XQ_MP_2}",    --明教
-		[2] = "#{XQ_MP_3}",    --丐帮
-		[3] = "#{XQ_MP_4}",    --武当
-		[4] = "#{XQ_MP_5}",    --峨眉
-		[5] = "#{XQ_MP_6}",    --星宿
-		[6] = "#{XQ_MP_7}",    --天龙
-		[7] = "#{XQ_MP_8}",    --天山
-		[8] = "#{XQ_MP_9}",    --逍遥
-		[9] = "",         --无门派
-		[10] = "#{MPDYR_20220427_190}",    --曼陀
+		[0] = "#{XQ_MP_1}",    --??
+		[1] = "#{XQ_MP_2}",    --??
+		[2] = "#{XQ_MP_3}",    --??
+		[3] = "#{XQ_MP_4}",    --??
+		[4] = "#{XQ_MP_5}",    --??
+		[5] = "#{XQ_MP_6}",    --??
+		[6] = "#{XQ_MP_7}",    --??
+		[7] = "#{XQ_MP_8}",    --??
+		[8] = "#{XQ_MP_9}",    --??
+		[9] = "",         --???
+		[10] = "#{MPDYR_20220427_190}",    --??
 }
 
 function ShaXing_KF_TopList_PreLoad()
@@ -284,9 +284,9 @@ function ShaXing_KF_TopList_PrizeInfo()
 
 	local nDataCount = DataPool:lua_GetJSRankingListDataCount(g_nType)
 	if nDataCount <= 0 then
-		ShaXing_KF_TopList_ReachNum:SetText("#{XSX_220705_304}") --积分
-		ShaXing_KF_TopList_ReachTop:SetText("#{XSX_220705_318}")	--排名：暂未上榜
-		ShaXing_KF_TopList_MyNumber:SetText("#{XSX_220705_178}")	--活动结算时间
+		ShaXing_KF_TopList_ReachNum:SetText("#{XSX_220705_304}") --??
+		ShaXing_KF_TopList_ReachTop:SetText("#{XSX_220705_318}")	--??:????
+		ShaXing_KF_TopList_MyNumber:SetText("#{XSX_220705_178}")	--??????
 		ShaXing_KF_TopList_ReachNum:Show()
 		ShaXing_KF_TopList_ReachTop:Show()
 		ShaXing_KF_TopList_Btn:Disable()
@@ -313,7 +313,7 @@ function ShaXing_KF_TopList_PrizeInfo()
 	end
 
 	if myRank == -1 then
-		ShaXing_KF_TopList_ReachTop:SetText("#{XSX_220705_318}")--排名：暂未上榜
+		ShaXing_KF_TopList_ReachTop:SetText("#{XSX_220705_318}")--??:????
 		ShaXing_KF_TopList_ReachTop:Show()
 	else
 		ShaXing_KF_TopList_ReachTop:SetText(ScriptGlobal_Format("#{XSX_220705_307}",myRank+1))
@@ -322,7 +322,7 @@ function ShaXing_KF_TopList_PrizeInfo()
 	--积分
 	local myPoint = math.floor(DataPool:GetPlayerMission_DataRound(g_MD_Point)/10000)
 	if myPoint == 0 then
-		ShaXing_KF_TopList_ReachNum:SetText("#{XSX_220705_304}") --积分
+		ShaXing_KF_TopList_ReachNum:SetText("#{XSX_220705_304}") --??
 		ShaXing_KF_TopList_ReachNum:Show()
 	else
 		ShaXing_KF_TopList_ReachNum:SetText(ScriptGlobal_Format("#{XSX_220705_303}",myPoint))
@@ -331,7 +331,7 @@ function ShaXing_KF_TopList_PrizeInfo()
 
 	--未结算时显示
 	if state == 0 or state == 1 then 
-		ShaXing_KF_TopList_MyNumber:SetText("#{XSX_220705_178}") --结算时间
+		ShaXing_KF_TopList_MyNumber:SetText("#{XSX_220705_178}") --????
 		ShaXing_KF_TopList_Btn:Disable()
 		return
 	end
@@ -341,16 +341,16 @@ function ShaXing_KF_TopList_PrizeInfo()
 	
 	--已结算
 	if myRank < 0 then
-		ShaXing_KF_TopList_MyNumber:SetText("#{XSX_220705_179}")--您未进入排名，无可领取奖励
+		ShaXing_KF_TopList_MyNumber:SetText("#{XSX_220705_179}")--??????,??????
 		ShaXing_KF_TopList_Btn:Disable()
 		return
 	else
 		if myrewardflag == 0 then
-			local msg = ScriptGlobal_Format("#{XSX_220705_180}", myRank+1)--恭喜您的排名第%s0，可领取排名奖励
+			local msg = ScriptGlobal_Format("#{XSX_220705_180}", myRank+1)--???????%s0,???????
 			ShaXing_KF_TopList_MyNumber:SetText(msg)
 			ShaXing_KF_TopList_Btn:Enable()
 		else
-			local msg = ScriptGlobal_Format("#{XSX_220705_180}", myRank+1) --恭喜您以第%s0名的成绩成功登榜！
+			local msg = ScriptGlobal_Format("#{XSX_220705_180}", myRank+1) --?????%s0????????!
 			ShaXing_KF_TopList_MyNumber:SetText(msg)
 			ShaXing_KF_TopList_Btn:Enable()
 		end
@@ -395,7 +395,7 @@ end
 
 function ShaXing_KF_TopList_Close()
 	this:Hide()
-	--同时关闭预览界面
+	--同时关睜预览界面
 	if IsWindowShow("ShaXing_KF_TopListAward") then
 		CloseWindow("ShaXing_KF_TopListAward", true)
 	end

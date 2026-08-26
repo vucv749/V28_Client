@@ -1,16 +1,16 @@
 --MissionObjDel.lua
 --Ïú»ÙÈÎÎñÎïÆ·¶Ô»°¿ò
 
-local	g_btnItem				--ÎïÆ·À¸
-local	g_txtItem				--ÎïÆ·ÃèÊö
-local	g_posItem	= -1	--ÎïÆ·ÔÚ±³°üÖĞµÄÎ»ÖÃ
+local	g_btnItem				--???
+local	g_txtItem				--????
+local	g_posItem	= -1	--?????????
 
 local	MAX_OBJ_DISTANCE	= 3.0
 local	g_objCared 				= -1
 
 local	g_SpecialItemTable = 
 {
-	30900076,	--ÇàÍ­ÎäÁÖÓ¡
+	30900076,	--?????
 }
 
 function MissionObjDel_PreLoad()
@@ -35,7 +35,7 @@ function MissionObjDel_OnEvent( event )
 		g_objCared	= DataPool : GetNPCIDByServerID( xx )
 		AxTrace( 0, 1, "xx="..xx .. " objCared="..g_objCared )
 		if g_objCared == -1 then
-				PushDebugMessage( "Server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£" )
+				PushDebugMessage( "Servertruy®n t¾i Ğích s¯ li®u có v¤n ğ«." )
 				return
 		end
 
@@ -58,7 +58,7 @@ function MissionObjDel_OnEvent( event )
 		if( tonumber(arg0) ~= g_objCared ) then
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if( arg1 == "distance" and tonumber(arg2) > MAX_OBJ_DISTANCE or arg1 == "destroy" ) then
 			MissionObjDel_OnClose()
 		end
@@ -84,7 +84,7 @@ function MissionObjDel_OnOpen()
 	this:Show()
 end
 
---¹Ø±Õ½çÃæ
+--¹Ø± ½çÃæ
 function MissionObjDel_OnClose()
 	this:Hide()
 	
@@ -102,7 +102,7 @@ function MissionObjDel_OnDestroy()
 			Set_XSCRIPT_ParamCount( 1 )
 		Send_XSCRIPT()
 	else
-		PushDebugMessage( "Çë°ÑÒªÏú»ÙµÄÈÎÎñÎïÆ·ÍÏ¶¯µ½ÎïÆ·¿òÖĞ" )
+		PushDebugMessage( "Thïnh Bä Yêu tiêu hüy Ğích nhi®m vø v§t ph¦m Ğà Ğµng Ğáo v§t ph¦m Khuông Trung" )
 	end
 end
 
@@ -114,7 +114,7 @@ end
 --ÇåÀíÎïÆ·
 function MissionObjDel_Clear()
 	g_btnItem : SetActionItem( -1 );
-	g_txtItem : SetText( "ĞèÒªÏú»ÙµÄÈÎÎñÎïÆ·" )
+	g_txtItem : SetText( "C¥n tiêu hüy Ğích nhi®m vø v§t ph¦m" )
 	LifeAbility : Lock_Packet_Item( g_posItem, 0 )
 	g_posItem	= -1
 end
@@ -135,7 +135,7 @@ function MissionObjDel_Update( pos_taskitem )
 		end
 
 		if bExclude ~= 1 and LifeAbility : GetItem_Class( pos ) ~= 4 then
-			PushDebugMessage( "Ö»ÄÜÏú»ÙÈÎÎñÎïÆ·" )
+			PushDebugMessage( "Chï có th¬ tiêu hüy nhi®m vø v§t ph¦m" )
 			return
 		end
 
@@ -145,7 +145,7 @@ function MissionObjDel_Update( pos_taskitem )
 			LifeAbility : Lock_Packet_Item( g_posItem, 0 )
 		end
 
-		--ÔÚ±³°üÖĞËø×¡Õâ¸öÎïÆ·
+		--ÔÚ±³°üÖĞËø×¡ â¸öÎïÆ·
 		g_posItem	= pos
 		LifeAbility : Lock_Packet_Item( g_posItem, 1 )
 
@@ -158,7 +158,7 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØĞÄNPC£¬
---ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 --Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function BeginCareObject_MisObjDel( objCaredId )

@@ -2,7 +2,7 @@
 local Higntlight_List_Frame_UnifiedPosition
 local Higntlight_List_DpsTable =
 {
-	--角色GUID	角色名字	角色门派	enum HigntLightDPSType		角色的占比
+	--角色GUID	角色名字	角色门派	enum HigntLightDPSType		角色的牸比
 	[1] = { guid = 0, name = 0, menpai = 0, DPSType = 0, DPSRate = 0 },
 	[2] = { guid = 0, name = 0, menpai = 0, DPSType = 0, DPSRate = 0 },
 	[3] = { guid = 0, name = 0, menpai = 0, DPSType = 0, DPSRate = 0 },
@@ -16,7 +16,7 @@ local Higntlight_List_ui_hurtText = {}
 local Higntlight_List_ui_progress = {}
 
 function Higntlight_List_PreLoad()
-	--第二个参数表示界面关闭时是否响应事件 默认为TRUE
+	--第二个参数表示界面关睜时是否响应事件 默认为TRUE
 	this:RegisterEvent("UI_COMMAND", true)
 	this:RegisterEvent("SHOW_HIGHLIGHT_DAMAGE", true)
 	this:RegisterEvent("SHOW_HIGHLIGHT_DAMAGE_MINI", true)
@@ -54,19 +54,19 @@ end
 function Higntlight_List_OnEvent(event)
 	if (event == "UI_COMMAND" and tonumber(arg0) == 20250716) then
 		local op = Get_XParam_INT(0)
-		if op == 1 then --进入副本打开界面
+		if op == 1 then --????????
 			this:Show()
 			Higntlight_List_Update()
 		elseif op == 0 then
 			Higntlight_List_OnClose()
 		end
-	elseif event == "SHOW_HIGHLIGHT_DAMAGE" then --刷新数据 不会打开界面
+	elseif event == "SHOW_HIGHLIGHT_DAMAGE" then --???? ??????
 		Higntlight_List_Update()
-	elseif event == "SHOW_HIGHLIGHT_DAMAGE_MINI" then --点击最小化按钮 此界面暂时关闭
+	elseif event == "SHOW_HIGHLIGHT_DAMAGE_MINI" then --??????? ???????
 		this:Hide()
-	elseif event == "SHOW_HIGHLIGHT_DAMAGE_MAX" then --点击最大化按钮 此界面显示
+	elseif event == "SHOW_HIGHLIGHT_DAMAGE_MAX" then --??????? ?????
 		this:Show()
-	elseif event == "ON_SCENE_TRANSING" then --客户端开始切换场景
+	elseif event == "ON_SCENE_TRANSING" then --?????????
 		Higntlight_List_OnClose()
 	elseif event == "PLAYER_LEAVE_WORLD" then
 		Higntlight_List_OnClose()
@@ -79,7 +79,7 @@ end
 
 --刷新界面
 function Higntlight_List_Update()
-	--清空界面数据
+	--清繝界面数据
 	Higntlight_List_CleanLocalData()
 	--填充数据
 	for i = 1, Higntlight_List_DpsMaxCount, 1 do
@@ -126,14 +126,14 @@ function Higntlight_List_OpenMini()
 	PushEvent("SHOW_HIGHLIGHT_DAMAGE_MINI")
 end
 
---关闭
+--关睜
 function Higntlight_List_OnClose()
-	-- --清空界面数据 清空C++数据
+	-- --清繝界面数据 清繝C++数据
 	-- Higntlight_List_CleanData()
 	-- this:Hide()
 end
 
---清空界面数据
+--清繝界面数据
 function Higntlight_List_CleanLocalData()
 	for i = 1, Higntlight_List_DpsMaxCount, 1 do
 		Higntlight_List_DpsTable[i].guid = 0
@@ -144,7 +144,7 @@ function Higntlight_List_CleanLocalData()
 	end
 end
 
---清空界面数据 清空C++数据
+--清繝界面数据 清繝C++数据
 function Higntlight_List_CleanData()
 	Higntlight_List_CleanLocalData()
 	HighLight:ClearDamageUnitData()

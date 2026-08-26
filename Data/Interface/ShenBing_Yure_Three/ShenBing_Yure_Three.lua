@@ -81,10 +81,10 @@ end
 --=========================================================
 function ShenBing_Yure_Three_OnEvent(event)
 	if ( event == "UI_COMMAND" and tonumber(arg0) == g_nUICommandID ) then
-		-- 0 关闭, 1 打开, 2 刷新, 3 二次确认框
+		-- 0 关睜, 1 打开, 2 刷新, 3 二次确认框
 		local nOpType 	= Get_XParam_INT(0)
 
-		-- 关闭界面
+		-- 关睜界面
 		if 0 == nOpType then	
 			if this:IsVisible() then
 				ShenBing_Yure_Three_OnClose()
@@ -107,7 +107,7 @@ function ShenBing_Yure_Three_OnEvent(event)
 			end
 
 			-- 显示界面
-			-- 为了解决界面被遮挡的问题，先把界面关了
+			-- 为了解决界面被犣挡的问题，先把界面关了
 			-- if this:IsVisible() then
 			-- 	ShenBing_Yure_Three_OnClose()
 			-- end
@@ -153,9 +153,9 @@ function ShenBing_Yure_Three_OnEvent(event)
 		if(tonumber(arg0) ~= g_nObjCaredIDClient) then
 			return
 		end
-		-- 如果和NPC的距离大于一定距离或者被删除，自动关闭
+		-- 如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
-			-- 关闭界面
+			-- 关睜界面
 			ShenBing_Yure_Three_OnClose()
 		end	
 
@@ -305,7 +305,7 @@ function ShenBing_Yure_Three_Update(bOpen)
 	-- 	end	
 	-- end
 
-	-- 清空所有ActionButton
+	-- 清繝所有ActionButton
 	for i = 1, table.getn(g_cActionButton) do
 		g_cActionButton[i] : SetActionItem(-1)
 	end
@@ -348,7 +348,7 @@ function ShenBing_Yure_Three_ConfirmClick()
 end
 
 --=========================================================
--- 关闭界面
+-- 关睜界面
 --=========================================================
 function ShenBing_Yure_Three_OnClose()	
 	this:Hide()

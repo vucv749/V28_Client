@@ -19,17 +19,17 @@ end
 
 function EquipChange_OnLoad()
 
-	List_String[1]  = "¿É±äÍâĞÎÒ»"
-	List_String[2]  = "¿É±äÍâĞÎ¶ş"
-	List_String[3]  = "¿É±äÍâĞÎÈı"
-	List_String[4]  = "¿É±äÍâĞÎËÄ"
-	List_String[5]  = "¿É±äÍâĞÎÎå"
+	List_String[1]  = "Có th¬ biªn ğ±i ngoÕi hình Nh¤t"
+	List_String[2]  = "Có th¬ biªn ğ±i ngoÕi hình Nh¸"
+	List_String[3]  = "Có th¬ biªn ğ±i ngoÕi hình Tam"
+	List_String[4]  = "Có th¬ biªn ğ±i ngoÕi hình TÑ"
+	List_String[5]  = "Có th¬ biªn ğ±i ngoÕi hình Ngû"
 
-	List_String[6]  = "¿É±äÍâĞÎÁù"
-	List_String[7]  = "¿É±äÍâĞÎÆß"
-	List_String[8]  = "¿É±äÍâĞÎ°Ë"
-	List_String[9]  = "¿É±äÍâĞÎ¾Å"
-	List_String[10] = "¿É±äÍâĞÎÊ®"
+	List_String[6]  = "Có th¬ biªn ğ±i ngoÕi hình Løc"
+	List_String[7]  = "Có th¬ biªn ğ±i ngoÕi hình Th¤t"
+	List_String[8]  = "Có th¬ biªn ğ±i ngoÕi hình Bát"
+	List_String[9]  = "Có th¬ biªn ğ±i ngoÕi hình CØu"
+	List_String[10] = "Có th¬ biªn ğ±i ngoÕi hình Th§p"
 	
 end
 
@@ -49,7 +49,7 @@ function EquipChange_OnEvent(event)
 				objCared = DataPool : GetNPCIDByServerID(xx);
 				AxTrace(0,1,"xx="..xx .. " objCared="..objCared)
 				if objCared == -1 then
-						PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£");
+						PushDebugMessage("Dæ li®u máy chü có v¤n ğ«");
 						return;
 				end
 				BeginCareObject_EquipChange(objCared)
@@ -68,7 +68,7 @@ function EquipChange_OnEvent(event)
 			return;
 		end
 		
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			
 			--È¡Ïû¹ØĞÄ
@@ -129,14 +129,14 @@ function EquipChange_Update(UI_index,Item_index)
 				local EquipPoint = LifeAbility : Get_Equip_Point(i_index)
 				if EquipPoint == -1 or EquipPoint == 8 or EquipPoint == 9 or EquipPoint == 10 then
 					if EquipPoint ~= -1 then
-						PushDebugMessage("²»ÄÜ·ÅÈëÕâÖÖ×°±¸¡£")
+						PushDebugMessage("Không th¬ ğ£t trang b¸ này vào")
 					end
 					return
 				end
 				Original_Visual_ID = LifeAbility : Get_Equip_VisualID(i_index);
 
 				if Original_Visual_ID < 10000 then
-					PushDebugMessage("Õâ¼ş×°±¸²»ÄÜ¸Ä±äÍâĞÎ¡£")
+					PushDebugMessage("Cái này trang b¸ không th¬ thay ğ±i ngoÕi hình.")
 					EquipChange_Resume_Gem(23)
 					return
 
@@ -167,7 +167,7 @@ function EquipChange_Update(UI_index,Item_index)
 		if theAction:GetID() ~= 0 then
 		
 				if PlayerPackage : GetItemTableIndex( i_index ) ~= 30900004 then
-					PushDebugMessage("Ö»ÄÜ·ÅÈë±äĞÎ·û¡£")
+					PushDebugMessage("Chï có th¬ ğ¬ vào biªn hình Phù.")
 					return
 				end
 
@@ -205,17 +205,17 @@ function EquipChange_Buttons_Clicked()
 	local nSelIndex = EquipChange_EquiptShapeList:GetFirstSelectItem();
 	
 	if Change_Item1 == -1 then
-		PushDebugMessage("Çë·ÅÈëÒª¸Ä±äÍâĞÎµÄ×°±¸¡£")
+		PushDebugMessage("Thïnh ğ¬ vào Yêu thay ğ±i ngoÕi hình Ğích trang b¸.")
 		return
 	end
 	
 	if Change_Item2 == -1 then
-		PushDebugMessage("Çë·ÅÈë±äĞÎ·û¡£")
+		PushDebugMessage("Thïnh ğ¬ vào biªn hình Phù.")
 		return
 	end
 	
 	if nSelIndex== -1 then
-		PushDebugMessage("ÇëÑ¡ÔñÒ»ÖÖÍâĞÎ¡£")
+		PushDebugMessage("Thïnh lña ch÷n mµt loÕi ngoÕi hình.")
 		return
 	end
 	
@@ -258,7 +258,7 @@ function EquipChange_OnHidden()
 end
 --=========================================================
 --¿ªÊ¼¹ØĞÄNPC£¬
---ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 --Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function BeginCareObject_EquipChange(objCaredId)

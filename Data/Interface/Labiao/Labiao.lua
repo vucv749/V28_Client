@@ -53,7 +53,7 @@ end
 function Labiao_OnEvent(event)
 
 		if event == "UI_COMMAND" and arg0 == "88816201" then
-				if Get_XParam_INT(0) == 1 then-- 打开
+				if Get_XParam_INT(0) == 1 then-- ??
 						local cartype = tonumber(Get_XParam_INT(1))
 						local clientId = tonumber(Get_XParam_INT(2))
 						local x = tonumber(Get_XParam_INT(3))
@@ -61,7 +61,7 @@ function Labiao_OnEvent(event)
 						local isRobed = tonumber(Get_XParam_INT(5))
 						local lefttime = tonumber(Get_XParam_INT(6))
 						Labiao_OnShow(cartype, clientId, x, z, isRobed, lefttime)
-				elseif Get_XParam_INT(0) == 2 then-- 关闭				
+				elseif Get_XParam_INT(0) == 2 then-- ??				
 						if this:IsVisible() then
 								Labiao_OnClose()
 						end						
@@ -116,7 +116,7 @@ function Labiao_OnShow(cartype, clientId, x, z, isRobed, lefttime)
 					Labiao_Time_OverText:SetText(ScriptGlobal_Format("#{LBZC_220810_90}",tCarData.dsname))
 				end
 				KillTimer("Labiao_ShowCountDownProc()")
-				-- 收益
+				-- 薁益
 				Labiao_Shouyi:SetText("#{LBZC_220810_89}")
 				-- 镖车位置
 				Labiao_Weizhi:SetText("#{LBZC_220810_161}")
@@ -138,7 +138,7 @@ function Labiao_OnShow(cartype, clientId, x, z, isRobed, lefttime)
 				g_LeftTime = lefttime
 				KillTimer("Labiao_ShowCountDownProc()")
 				SetTimer("Labiao","Labiao_ShowCountDownProc()", 1000)
-				-- 收益
+				-- 薁益
 				Labiao_Shouyi:SetText(ScriptGlobal_Format("#{LBZC_220810_82}",tCarData.money))
 				-- 镖车位置
 				local curname = GetSceneNameByResID(clientId)
@@ -153,7 +153,7 @@ function Labiao_OnShow(cartype, clientId, x, z, isRobed, lefttime)
 end
 
 --**********************************
--- 关闭界面
+-- 关睜界面
 --**********************************
 function Labiao_OnClose()
 		KillTimer("Labiao_ShowCountDownProc()")
@@ -186,7 +186,7 @@ function Labiao_ShowCountDownProc()
 			Labiao_Time_OverText:SetText("")
 		end
 		KillTimer("Labiao_ShowCountDownProc()")
-		-- 收益
+		-- 薁益
 		Labiao_Shouyi:SetText("#{LBZC_220810_89}")
 		-- 镖车位置
 		Labiao_Weizhi:SetText("#{LBZC_220810_161}")

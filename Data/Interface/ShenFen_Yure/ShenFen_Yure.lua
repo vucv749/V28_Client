@@ -75,11 +75,11 @@ function ShenFen_Yure_OnEvent(event)
 			local bFlag2 = Get_XParam_INT(5)
 			local bFlag3 = Get_XParam_INT(6)
 			local bFlag4 = Get_XParam_INT(7)
-			if opt == 1 then--打开+刷新
+			if opt == 1 then--??+??
 				this:Show()
 				ShenFen_Yure_ResetPos()
 				ShenFen_Yure_Open(nStage,isFinish,nPoint,bFlag1,bFlag2,bFlag3,bFlag4)
-			else--仅刷新
+			else--???
 				if this:IsVisible() then
 					ShenFen_Yure_Open(nStage,isFinish,nPoint,bFlag1,bFlag2,bFlag3,bFlag4)
 				end
@@ -111,7 +111,7 @@ end
 -- 关界面
 --===============================================
 function ShenFen_Yure_OnClose()
-	--数据清空
+	--数据清繝
 	ShenFen_Yure_Clear()
 	--隐藏界面
 	this:Hide()
@@ -147,19 +147,19 @@ function ShenFen_Yure_Open(nStage,isFinish,nPoint,bFlag1,bFlag2,bFlag3,bFlag4)
 		local theAction = DataPool:CreateBindActionItemForShow(g_PrizeData[i].itemid, g_PrizeData[i].itemnum)
 		if theAction:GetID() ~= 0 then
 			g_PrizeCtrl[i].btn:SetActionItem(theAction:GetID())
-			if nPoint >= g_PrizeData[i].count then--可领奖
-				if bFlag[i] == 1 then-- 已领奖
+			if nPoint >= g_PrizeData[i].count then--???
+				if bFlag[i] == 1 then-- ???
 					g_PrizeCtrl[i].getflag:Show()
 					-- 动画不播放
 					g_PrizeCtrl[i].animate:Hide()
 					g_PrizeCtrl[i].animate:Play(false)
-				else-- 未领奖
+				else-- ???
 					g_PrizeCtrl[i].getflag:Hide()
 					-- 动画播放
 					g_PrizeCtrl[i].animate:Show()
 					g_PrizeCtrl[i].animate:Play(true)
 				end
-			else--不可领奖
+			else--????
 				-- 动画不播放
 				if bFlag[i] == 1 then
 					g_PrizeCtrl[i].getflag:Show()

@@ -10,17 +10,17 @@ local g_nType = -1
 local g_State = -1
 
 local g_MenPaiName = {
-		[0] = "#{XQ_MP_1}",    --少林
-		[1] = "#{XQ_MP_2}",    --明教
-		[2] = "#{XQ_MP_3}",    --丐帮
-		[3] = "#{XQ_MP_4}",    --武当
-		[4] = "#{XQ_MP_5}",    --峨眉
-		[5] = "#{XQ_MP_6}",    --星宿
-		[6] = "#{XQ_MP_7}",    --天龙
-		[7] = "#{XQ_MP_8}",    --天山
-		[8] = "#{XQ_MP_9}",    --逍遥
-		[9] = "",         --无门派
-		[10] = "#{MPDYR_20220427_190}",    --曼陀
+		[0] = "#{XQ_MP_1}",    --??
+		[1] = "#{XQ_MP_2}",    --??
+		[2] = "#{XQ_MP_3}",    --??
+		[3] = "#{XQ_MP_4}",    --??
+		[4] = "#{XQ_MP_5}",    --??
+		[5] = "#{XQ_MP_6}",    --??
+		[6] = "#{XQ_MP_7}",    --??
+		[7] = "#{XQ_MP_8}",    --??
+		[8] = "#{XQ_MP_9}",    --??
+		[9] = "",         --???
+		[10] = "#{MPDYR_20220427_190}",    --??
 }
 
 local g_relationtext = {
@@ -308,15 +308,15 @@ function DoublePK_TopList_PrizeInfo()
 		DoublePK_TopList_ReachNum:Show()
 	else
 		if bindname ~= "" then
-			if scoretype > 0 and g_TopListType[scoretype] == g_nType then --属于当前组别
+			if scoretype > 0 and g_TopListType[scoretype] == g_nType then --??????
 				DoublePK_TopList_ReachNum:SetText(ScriptGlobal_Format("#{SRPK_230331_272}",bindname,myscore))
 				DoublePK_TopList_ReachNum:Show()
-			else--不属于当前组别
+			else--???????
 				DoublePK_TopList_ReachNum:SetText(ScriptGlobal_Format("#{SRPK_230331_292}",bindname))
 				DoublePK_TopList_ReachNum:Show()			
 			end
 
-		else --未绑定
+		else --???
 			DoublePK_TopList_ReachNum:SetText("#{SRPK_230331_274}")
 			DoublePK_TopList_ReachNum:Show()
 		end

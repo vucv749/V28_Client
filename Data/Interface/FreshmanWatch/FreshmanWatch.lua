@@ -20,7 +20,7 @@ function FreshmanWatch_OnEvent(event)
 	if ( event == "UI_COMMAND" and tonumber(arg0) == 889103 ) then
 			local state = Get_XParam_INT(0)
 			local countDownMinute = Get_XParam_INT(1)
-			local isPlayerJustLogin = Get_XParam_INT(2)--表示该UICommand是玩家登陆时发送的，还是领奖成功后发送的
+			local isPlayerJustLogin = Get_XParam_INT(2)--???UICommand?????????,??????????
 			g_State = state
 			if state == 0 then
 				this:Hide();
@@ -40,11 +40,11 @@ function FreshmanWatch_OnEvent(event)
 				FreshmanWatch_Min_Bk:Show()
 				FreshmanWatch_Time_Text1:SetProperty("Timer",tostring(countDownMinute*60 - 10));
 				FreshmanWatch_Time_Text:SetProperty("Timer",tostring(countDownMinute*60));
-				FreshmanWatch_Time_Text:SetProperty("Flash",tostring(0));--停止闪烁
-				FreshmanWatch_Time_Text:SetProperty("TextColor","ff00ffff");--颜色改回蓝色
+				FreshmanWatch_Time_Text:SetProperty("Flash",tostring(0));--????
+				FreshmanWatch_Time_Text:SetProperty("TextColor","ff00ffff");--??????
 				--弹出新手指引以及背包闪烁，只能在领奖后才发生
-				if state == 3 and isPlayerJustLogin ~= 1 then --第二次领到坐骑后，需要弹出新手指引界面
-					OpenFreshmanIntro(10) --弹出的是第10套新手指引
+				if state == 3 and isPlayerJustLogin ~= 1 then --????????,??????????
+					OpenFreshmanIntro(10) --?????10?????
 				end
 				if state ~= 1  and isPlayerJustLogin ~= 1 then
 					FlashPacketButton()
@@ -53,7 +53,7 @@ function FreshmanWatch_OnEvent(event)
 			end
 	elseif ( event == "OPEN_NORMAL_WATCH") then
 		this:Show()
-	elseif ( event == "COUNTDOWN_10SEC") then--倒数最后十秒变色、闪烁
+	elseif ( event == "COUNTDOWN_10SEC") then--???????????
 		FreshmanWatch_Time_Text:SetProperty("TextColor","ffff0000");
     	FreshmanWatch_Time_Text:SetProperty("Flash",tostring(1));
 	end
@@ -82,7 +82,7 @@ end
 
 function FreshmanWatch_Bn2Click()
     local isInHell = IsInHell()
-    if isInHell == 1 then--在地府中不能领取奖品
+    if isInHell == 1 then--??????????
     	return
     end
 	Clear_XSCRIPT()

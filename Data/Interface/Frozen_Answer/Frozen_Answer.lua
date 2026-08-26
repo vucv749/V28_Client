@@ -11,7 +11,7 @@ function Frozen_Answer_PreLoad()
 	this:RegisterEvent("UI_COMMAND", true)
 	this:RegisterEvent("ADJEST_UI_POS", false)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED", false)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)	--???????
 end
 
 --=========
@@ -127,7 +127,7 @@ function Frozen_Answer_Open(flag,nStep,nCurNum,nValue,nState,delTime,szQuestion,
 end
 
 --=========
--- 关闭
+-- 关睜
 --=========
 function Frozen_Answer_Close()
 	this:Hide()

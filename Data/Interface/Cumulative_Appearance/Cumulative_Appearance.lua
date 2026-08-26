@@ -9,7 +9,7 @@ local g_ActivateState = {}
 -- 累计领奖状态 0 不可领取，1 可领取，2 已领取
 local g_PrizeState = {}
 
--- 外观展示图片
+-- 外观牴示图片
 local g_WaiguanWidgets = {}
 
 -- 奖励按钮
@@ -67,7 +67,7 @@ end
 --===============================================
 function Cumulative_Appearance_OnEvent(event)
 	if (event  == "UI_COMMAND") and (tonumber(arg0) == 29203501) then
-		--打开/关闭/刷新界面
+		--打开/关睜/刷新界面
 		local flag = Get_XParam_INT(0)
 		if not flag then
 			return
@@ -113,16 +113,16 @@ function Cumulative_Appearance_Update()
 		local cfg = g_WaiGuanCfg[i]
 		local widget = g_WaiguanWidgets[i]
 		local state = g_ActivateState[i]
-		if state == g_ActivateState_ToBeActivated then -- 可激活
+		if state == g_ActivateState_ToBeActivated then -- ???
 			widget.lock:Hide()
 			widget.get:Hide()
-		elseif state == g_ActivateState_Activated then -- 已激活
+		elseif state == g_ActivateState_Activated then -- ???
 			-- if i <= 3 then
 				activatedCount = activatedCount + 1
 			-- end
 			widget.lock:Hide()
 			widget.get:Show()
-		else -- 不可激活
+		else -- ????
 			widget.lock:Show()
 			widget.get:Hide()
 		end
@@ -136,11 +136,11 @@ function Cumulative_Appearance_Update()
 	for i = 1, table.getn(g_PrizeButtons) do
 		local btn = g_PrizeButtons[i]
 		local state = g_PrizeState[i]
-		if state == g_GetPrizeState_Got then -- 已领取
+		if state == g_GetPrizeState_Got then -- ???
 			btn.redPoint:Hide()
 			btn.received:Show()
 			btn.prizeBtn:Hide()
-		else -- 不可/未领取
+		else -- ??/???
 			if i <= activatedCount then
 				btn.redPoint:Show()
 			else
@@ -160,7 +160,7 @@ function Cumulative_Appearance_ResetPos()
 end
 
 --===============================================
---关闭
+--关睜
 --===============================================
 function Cumulative_Appearance_OnClose()
 	--界面隐藏
@@ -212,12 +212,12 @@ function Cumulative_Appearance_OnView(index)
 	if not cfg then
 		return
 	end
-	if cfg.type == g_ExteriorType_Ride then -- 坐骑
+	if cfg.type == g_ExteriorType_Ride then -- ??
 		local nExteriorRideId = Exterior:LuaFnGetExteriorIdByItem(cfg.itemId)
 		PushEvent("OPEN_RIDE_PREVIEW", nExteriorRideId)
-	elseif cfg.type == g_ExteriorType_Weapon then -- 幻武
+	elseif cfg.type == g_ExteriorType_Weapon then -- ??
 		-- PushEvent("OPEN_GEMEFFECTPREVIEW", cfg.itemId)
-	elseif cfg.type == g_ExteriorType_Fashion then -- 时装
+	elseif cfg.type == g_ExteriorType_Fashion then -- ??
 		Clear_XSCRIPT()
 			Set_XSCRIPT_ScriptID(292035)
 			Set_XSCRIPT_Function_Name("DressPreview")

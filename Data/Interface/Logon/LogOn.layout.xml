@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>
+﻿<?xml version="1.0" ?>
 <GUILayout>
 	<Window Type="DefaultWindow" Name="LogOn_Frame">
 		<Property Name="Position" Value="x:0.0 y:0.0"/>
@@ -170,7 +170,7 @@
 					<Window Type="TLBB_ComboList" Name="LogOn_Region">
 						<Property Name="AbsolutePosition" Value="x:137.000000 y:90.000000"/>
 						<Property Name="AbsoluteSize" Value="w:131.000000 h:19.000000"/>
-						<Property Name="Text" Value="输入其他后缀账号"/>
+						<Property Name="Text" Value="Đưa vào mặt khác hậu tố tài khoản"/>
 						<Property Name="ReadOnly" Value="True"/>
 						<Event Name="MouseEnter" Function="LogOn_Region_MouseEnter();"/>
 						<Event Name="MouseLeave" Function="LogOn_MouseLeave();"/>
@@ -180,22 +180,22 @@
 					<Window Type="TLBB_ButtonCommon" Name="LogOn_LiShiJiLu">
 						<Property Name="UnifiedPosition" Value="{{0.000000,229.000000},{0.000000,159.000000}"/>
 						<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,19.000000}"/>
-						<Property Name="Text" Value="清空"/>
-						<Property Name="Tooltip" Value="点击清空保存的账号和密码！"/>
+						<Property Name="Text" Value="Thanh Không"/>
+						<Property Name="Tooltip" Value="Điểm Kích Thanh Không bảo tồn Đích tài khoản Hoà mật mã!"/>
 						<Event Name="Clicked" Function="LogOn_EmptyContent()"/>
 					</Window>
 					<Window Type="TLBB_ButtonCommon" Name="LogOn_GuanLi">
 						<Property Name="UnifiedPosition" Value="{{0.000000,195.000000},{0.000000,159.000000}"/>
 						<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,19.000000}"/>
-						<Property Name="Text" Value="管理"/>
-						<Property Name="Tooltip" Value="自定义删除历史账号！"/>
+						<Property Name="Text" Value="Quản lý"/>
+						<Property Name="Tooltip" Value="Tự định nghĩa xóa bỏ lịch sử tài khoản!"/>
 						<Event Name="Clicked" Function="LogOn_GuanLiAcc()"/>
 					</Window>
 					<!-- <Window Type="TLBB_SimpleText" Name="LogOn_Quit_Text">
 						<Property Name="AbsolutePosition" Value="x:33.000000 y:129.000000"/>
 						<Property Name="UnifiedSize" Value="{{0.3,0.000000},{0.000000,20.000000}"/>
 						<Property Name="TextColor" Value="FFFEE601"/>
-						<Property Name="Text" Value="历史账号"/>
+						<Property Name="Text" Value="Lịch sử tài khoản"/>
 						<Property Name="HorzFormatting" Value="HorzCentred"/>
 						<Property Name="VertFormatting" Value="VertCentred"/>
 						<Property Name="RiseOnClick" Value="False"/>
@@ -203,7 +203,7 @@
 					<Window Type="TLBB_ComboList" Name="LogOn_Quit_List">
 						<Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,159.000000}"/>
 						<Property Name="UnifiedSize" Value="{{0.000000,165.000000},{0.000000,20.000000}}"/>
-						<Property Name="Text" Value="选择账号"/>
+						<Property Name="Text" Value="Lựa chọn tài khoản"/>
 						<Property Name="AlwaysOnTop" Value="True"/>
 						<Event Name="ListSelectionAccepted" Function="Logon_QuitLogin()"/>
 					</Window>

@@ -1,6 +1,6 @@
 local g_InitiativeClose = 0;
 
---Ö÷¶¯¹Ø±Õ´°¿ÚµÄÒ»¸ö±êÖ¾
+--Ö÷¶¯¹Ø± ´°¿ÚµÄÒ»¸ö±êÖ¾
 local g_CloseSign;		-- 
 
 --buttonµÄ¸öÊý
@@ -17,11 +17,11 @@ local MAX_OBJ_DISTANCE = 6.0;
 
 --½»Ò×ÄÜ·ÅÈëµÄ×î¶àµÄ³èÎïÊýÁ¿
 local MAX_PET_NUM  = 5;
-local g_nSelfPetID = {};				--³èÎïID±í
-local g_nOtherPetID = {};				--³èÎïID±í
+local g_nSelfPetID = {};				--??ID?
+local g_nOtherPetID = {};				--??ID?
 
 local g_LastLockTime = 0;
-local LOCK_TIME_DIFF = 10000           --10Ãë
+local LOCK_TIME_DIFF = 10000           --10?
 
 local g_Exchange_Frame_UnifiedPosition;
 
@@ -130,7 +130,7 @@ function Exchange_OnEvent(event)
 		if(tonumber(arg0) ~= objCared) then
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			g_InitiativeClose = 1;
 			this:Hide();
@@ -152,7 +152,7 @@ function Exchange_OnEvent(event)
 		this:CareObject(objCared, 0, "Exchange");
 	end
 
-	if event == "EXCHANGE_ENABLE_ACCBTN" then	--·þÎñ¶Ë·µ»ØÑéÖ¤ÊÇ·ñÍ¨¹ý....
+	if event == "EXCHANGE_ENABLE_ACCBTN" then	--???????????....
 
 		if not this:IsVisible() then
 			return;
@@ -259,19 +259,19 @@ function Exchange_UpdateFrame()
 	local bIsSelfLocked = Exchange:IsLocked("self");
 	if( bIsSelfLocked == true ) then
 		Exchange_Checkbox_Locked:SetCheck(1);
-		Exchange_Locked_Button:SetText("È¡ÏûËø¶¨");
+		Exchange_Locked_Button:SetText("Hüy bö b¸ khóa");
 	elseif ( bIsSelfLocked == false) then
 		Exchange_Checkbox_Locked:SetCheck(0);
-		Exchange_Locked_Button:SetText("Ëø¶¨½»Ò×");
+		Exchange_Locked_Button:SetText("B¸ khóa giao d¸ch");
 	end
 	
 	--¶Ô·½µÄ
 	if( bIsOtherLocked == true ) then
 		Exchange_Checkbox_other_Locked:SetCheck(1);
-		Exchange_Other_Locked_Button:SetText("ÒÑ¾­Ëø¶¨");
+		Exchange_Other_Locked_Button:SetText("Ðã b¸ khóa");
 	elseif ( bIsOtherLocked == false) then
 		Exchange_Checkbox_other_Locked:SetCheck(0);
-		Exchange_Other_Locked_Button:SetText("ÉÐÎ´Ëø¶¨");
+		Exchange_Other_Locked_Button:SetText("Chßa b¸ khóa");
 	end
 	
 	--=======================
@@ -306,7 +306,7 @@ function Exchange_UpdateFrame()
 end
 
 --===============================================
--- ´°¿Ú¹Ø±ÕÖ´ÐÐµÄ   Hidden
+-- ´°¿Ú¹Ø± Ö´ÐÐµÄ   Hidden
 --===============================================
 function Exchange_Cancel()
 
@@ -326,9 +326,9 @@ function Exchange_Lock_Button_Clicked()
 	local nNowTickCount = Exchange:GetTickCount();
 	local bSelfIsLock = Exchange:IsLocked("self");
 	
-	if (bSelfIsLock == true) then	    --Ô­À´ÊÇËø¶¨£¬×¼±¸È¡ÏûËø¶¨
+	if (bSelfIsLock == true) then	    --?????,??????
 		g_LastLockTime = nNowTickCount;		
-	else                               --Ô­À´Î´Ëø¶¨£¬×¼±¸Ëø¶¨
+	else                               --?????,????
 		if(g_LastLockTime >0 and (nNowTickCount - g_LastLockTime) < LOCK_TIME_DIFF) then
 			Exchange_Checkbox_Locked:SetCheck(0);
 			PushDebugMessage("#{JYTX_090303_1}");
@@ -358,9 +358,9 @@ function Exchange_Open_InputMoney_Clicked()
 	local ret = Exchange:GetWeGameLimit()
 	if ret == 0 then
 		Exchange:OpenPetFrame();
-	elseif ret == 1 then -- Ê¹ÓÃWeGameµÇÂ½µÄÍæ¼ÒÔÝÊ±ÎÞ·¨Óë²»Ê¹ÓÃWeGameµÇÂ½µÄÍæ¼ÒÃæ¶ÔÃæ½»Ò×½ð±Ò¡£
+	elseif ret == 1 then -- ??WeGame?????????????WeGame?????????????
 		PushDebugMessage( "#{XZJY_231206_1}" )
-	elseif ret == 2 then -- ²»Ê¹ÓÃWeGameµÇÂ½µÄÍæ¼ÒÔÝÊ±ÎÞ·¨ÓëÊ¹ÓÃWeGameµÇÂ½µÄÍæ¼ÒÃæ¶ÔÃæ½»Ò×½ð±Ò¡£
+	elseif ret == 2 then -- ???WeGame????????????WeGame?????????????
 		PushDebugMessage( "#{XZJY_231206_3}" )
 	end
 end
@@ -405,7 +405,7 @@ function Exchange_Self_PetList_RClick()
 end
 
 function ExchangeValidate_TimeReach1()
-    PushDebugMessage("½»Ò×³¬Ê±£¬ÇëÖØÐÂ½»Ò×¡£");
+    PushDebugMessage("Giao d¸ch Siêu Th¶i, Thïnh mµt l¥n næa giao d¸ch.");
     Exchange_Cancel();
     ExchangeValidate_StopWatch1:SetProperty("Timer", "-1");
 end

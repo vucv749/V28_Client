@@ -1,6 +1,6 @@
 
 local g_Shanhebaojian_Month = 10
-local g_Shanhebaojian_Last_Lock_Day = 6 --10月7日解锁第1个宝鉴，10月8日解锁第2个，依次类推
+local g_Shanhebaojian_Last_Lock_Day = 6 --10?7????1???,10?8????2?,????
 
 local g_Shanhebaojian_Frame_UnifiedPosition
 
@@ -45,34 +45,34 @@ local g_Shanhebaojian_Frame = {
 local g_Shanhebaojian_Items = {
 	[1] = {
 		-- 道具id，数量，是否需要强绑
-		{ 38002401, 1, 1 }, --宝藏2
-		{ 20800013, 5, 1 }, --绘金尘
-		{ 38002524, 3, 1 }, --鹿蜀魂玉
-		{ 38002176, 1, 1 }  --150绑定元宝
+		{ 38002401, 1, 1 }, --??2
+		{ 20800013, 5, 1 }, --???
+		{ 38002524, 3, 1 }, --????
+		{ 38002176, 1, 1 }  --150????
 	},
 	[2] = {
-		{ 38002402, 1, 1 }, --宝藏3
-		{ 30503133, 3, 1 }, --千淬神玉
-		{ 30700241, 3, 1 }, --回天神石
-		{ 38002176, 1, 1 }  --150绑定元宝
+		{ 38002402, 1, 1 }, --??3
+		{ 30503133, 3, 1 }, --????
+		{ 30700241, 3, 1 }, --????
+		{ 38002176, 1, 1 }  --150????
 	},
 	[3] = {
-		{ 38002403, 1, 1 }, --宝藏4
-		{ 30900045, 1, 1 }, --天罡强化露
-		{ 38002221, 1, 1 }, --3级晶石礼盒
-		{ 38002176, 1, 1 }  --150绑定元宝
+		{ 38002403, 1, 1 }, --??4
+		{ 30900045, 1, 1 }, --?????
+		{ 38002221, 1, 1 }, --3?????
+		{ 38002176, 1, 1 }  --150????
 	},
 	[4] = {
-		{ 38002404, 1, 1 }, --宝藏5
-		{ 38002519, 2, 1 }, --九尾魂玉
-		{ 38002532, 3, 1 }, --淬魂髓
-		{ 38002176, 1, 1 }  --150绑定元宝
+		{ 38002404, 1, 1 }, --??5
+		{ 38002519, 2, 1 }, --????
+		{ 38002532, 3, 1 }, --???
+		{ 38002176, 1, 1 }  --150????
 	},
 	[5] = {
-		{ 38002425, 1, 1 }, --黑天马礼包
-		{ 20502003, 1, 1 }, --3级秘银
-		{ 20501003, 1, 1 }, --3级棉布
-		{ 38002176, 1, 1 }  --150绑定元宝
+		{ 38002425, 1, 1 }, --?????
+		{ 20502003, 1, 1 }, --3???
+		{ 20501003, 1, 1 }, --3???
+		{ 38002176, 1, 1 }  --150????
 	}
 }
 
@@ -183,7 +183,7 @@ function Shanhebaojian_UpdateActionItems()
 				-- 设置icon图标
 				if g_Shanhebaojian_Items[i][j] ~= nil then
 					local theAction = nil
-					if g_Shanhebaojian_Items[i][j][3] == 1 then --需要强绑
+					if g_Shanhebaojian_Items[i][j][3] == 1 then --????
 						theAction = DataPool:CreateBindActionItemForShow(g_Shanhebaojian_Items[i][j][1], g_Shanhebaojian_Items[i][j][2])
 					else
 						theAction = DataPool:CreateActionItemForShow(g_Shanhebaojian_Items[i][j][1], g_Shanhebaojian_Items[i][j][2])
@@ -203,23 +203,23 @@ function Shanhebaojian_Update(idx, id_unlock, id_can_get)
 	end
 
 	for i = 1, 5 do
-		if id_can_get > i then --已解锁的
+		if id_can_get > i then --????
 			g_Shanhebaojian_Frame[i].button:Disable()
 			g_Shanhebaojian_Frame[i].text:SetText("#{SHYBJ_20210805_10}")
 			g_Shanhebaojian_Frame[i].info:Hide()
 			g_Shanhebaojian_Frame[i].frame:SetProperty("Image", "set:Shanhebaojian image:SHBJ_Frame3")
-		elseif i == id_can_get and id_unlock >= i then --可解锁
+		elseif i == id_can_get and id_unlock >= i then --???
 			g_Shanhebaojian_Frame[i].button:Enable()
 			g_Shanhebaojian_Frame[i].text:SetText("#{SHYBJ_20210805_08}")
-			g_Shanhebaojian_Frame[i].info:SetText( ScriptGlobal_Format("#{SHYBJ_20210805_20}", tostring(6)) ) --消耗6个代币
+			g_Shanhebaojian_Frame[i].info:SetText( ScriptGlobal_Format("#{SHYBJ_20210805_20}", tostring(6)) ) --??6???
 			g_Shanhebaojian_Frame[i].info:Show()
 			g_Shanhebaojian_Frame[i].frame:SetProperty("Image", "set:Shanhebaojian image:SHBJ_Frame1")
-		elseif id_unlock >= i then --锁定状态 已经到开启时间
+		elseif id_unlock >= i then --???? ???????
 			g_Shanhebaojian_Frame[i].button:Disable()
 			g_Shanhebaojian_Frame[i].text:SetText("#{SHYBJ_20210805_19}")
 			g_Shanhebaojian_Frame[i].info:Hide()
 			g_Shanhebaojian_Frame[i].frame:SetProperty("Image", "set:Shanhebaojian image:SHBJ_Frame2")
-		else --不到开启时间
+		else --??????
 			g_Shanhebaojian_Frame[i].button:Disable()
 			g_Shanhebaojian_Frame[i].text:SetText("#{SHYBJ_20210805_19}")
 			g_Shanhebaojian_Frame[i].info:SetText( ScriptGlobal_Format("#{SHYBJ_20210805_11}", tostring(g_Shanhebaojian_Month), tostring(g_Shanhebaojian_Last_Lock_Day + i)) )

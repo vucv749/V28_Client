@@ -1,5 +1,5 @@
 --UI COMMAND ID 555 ¸üÐÂÉý¼¶Éú»î¼¼ÄÜµÄÒªÇó£¬²¢ÏÔÊ¾
---UI COMMAND ID 556 ¹Ø±ÕÉú»î¼¼ÄÜ½çÃæ
+--UI COMMAND ID 556 ¹Ø± Éú»î¼¼ÄÜ½çÃæ
 
 local g_serverScriptId = 600022;
 local g_MembersCtl = {};
@@ -50,12 +50,12 @@ function ConfraternitySkillsStudy_OnEvent(event)
 		if(g_serverAbilityId and g_serverBuildingId) then
 			if(g_serverAbilityId > 0 and g_serverBuildingId > 0) then
 				Guild_Ability_Update(
-					Get_XParam_INT(2),	--Éý¼¶ÐèÒªµÄ¼¼ÄÜÊìÁ·¶È
-					Get_XParam_INT(3),	--Éý¼¶ÐèÒªµÄÇ®
-					Get_XParam_INT(4),	--Éý¼¶ÐèÒªµÄÈËÎïµÈ¼¶
-					Get_XParam_INT(5),	--Éý¼¶ÐèÒªµÄÈËÎï¾­ÑéÖµ
-					Get_XParam_INT(6),	--Éý¼¶ÐèÒªµÄÈËÎï°ï»á¹±Ï×¶È
-					Get_XParam_INT(8)		--ÈËÎïµ±Ç°µÄ°ï»á¹±Ï×¶È
+					Get_XParam_INT(2),	--??????????
+					Get_XParam_INT(3),	--??????
+					Get_XParam_INT(4),	--?????????
+					Get_XParam_INT(5),	--??????????
+					Get_XParam_INT(6),	--????????????
+					Get_XParam_INT(8)		--??????????
 				);
 				
 				this:CareObject(g_clientNpcId, 1, "CityAbilityUp");
@@ -117,16 +117,16 @@ function Guild_Ability_SetCtl()
 										--1.¼¼ÄÜÃèÊöÏà¹Ø
 										icon		= ConfraternitySkillsStudy_Icon,
 										name 		=	{txt = "", 							ctl = ConfraternitySkillsStudy_SkillName},
-										level		=	{txt = "¼¼ÄÜµÈ¼¶:", 		ctl = ConfraternitySkillsStudy_SkillLevel},
-										aexp		=	{txt = "µ±Ç°ÊìÁ·¶È:", 	ctl = ConfraternitySkillsStudy_skilledDegree},
-										hlevel	=	{txt = "Íæ¼ÒµÈ¼¶ÒªÇó:", ctl = ConfraternitySkillsStudy_PlayerLevel},
+										level		=	{txt = "C¤p:", 		ctl = ConfraternitySkillsStudy_SkillLevel},
+										aexp		=	{txt = "Thành thÕo:", 	ctl = ConfraternitySkillsStudy_skilledDegree},
+										hlevel	=	{txt = "C¤p:", ctl = ConfraternitySkillsStudy_PlayerLevel},
 										--2.¼¼ÄÜËµÃ÷
 										desc		=	{txt = "  ",						ctl = ConfraternitySkillsStudy_Explain_Desc},
 										--3.¾­Ñé¡¢°ï¹±¡¢½ðÇ®
-										curexp	=	{txt = "µ±Ç°¾­Ñé:", 		ctl = ConfraternitySkillsStudy_CurrentlyExp_Character_Text},
-										demexp	=	{txt = "ËùÐè¾­Ñé:", 		ctl = ConfraternitySkillsStudy_DemandExp_Character_Text},
-										curcon	=	{txt = "µ±Ç°°ï¹±:", 		ctl = ConfraternitySkillsStudy_CurrentlyContribute_Character_Text},
-										demcon	=	{txt = "ËùÐè°ï¹±:",			ctl = ConfraternitySkillsStudy_DemandContribute_Character_Text},
+										curexp	=	{txt = "EXP có:", 		ctl = ConfraternitySkillsStudy_CurrentlyExp_Character_Text},
+										demexp	=	{txt = "EXP c¥n:", 		ctl = ConfraternitySkillsStudy_DemandExp_Character_Text},
+										curcon	=	{txt = "Trß¾c m£t Bang C¯ng:", 		ctl = ConfraternitySkillsStudy_CurrentlyContribute_Character_Text},
+										demcon	=	{txt = "CH Bang c¥n:",			ctl = ConfraternitySkillsStudy_DemandContribute_Character_Text},
 										curmon	=	ConfraternitySkillsStudy_Currently_Money,
 										curmonjz = ConfraternitySkillsStudy_Currently_Jiaozi,
 										--demmon	=	ConfraternitySkillsStudy_Demand_Money,
@@ -157,7 +157,7 @@ function Guild_Ability_Clear()
 	--g_MembersCtl.demmon:SetProperty("MoneyNumber", 0);
 	g_MembersCtl.demmonjz:SetProperty("MoneyNumber", 0);
 	
-	--g_MembersCtl.btn:Disable(); --2006-9-19 19:58 yangjun ³öÓÚÎÈ¶¨ÐÔ¿¼ÂÊ£¬ÔÝ²»¿ØÖÆÕâ¸ö°´Å¥µÄ×´Ì¬¡£
+	--g_MembersCtl.btn:Disable(); --2006-9-19 19:58 yangjun ³öÓÚÎÈ¶¨ÐÔ¿¼ÂÊ£¬ÔÝ²»¿ØÖÆ â¸ö°´Å¥µÄ×´Ì¬¡£
 end
 
 function Guild_Ability_Update(anexp, money, level, exp, contribute, curcon)
@@ -265,7 +265,7 @@ function Guild_Ability_LevelUp_Click()
 	Set_XSCRIPT_Parameter(0,g_serverNpcId);
 	Set_XSCRIPT_Parameter(1,g_serverAbilityId);
 	Set_XSCRIPT_Parameter(2,g_serverBuildingId);
-	Set_XSCRIPT_Parameter(3,3);			--±êÊ¶¿Í»§¶Ëµ÷ÓÃ
+	Set_XSCRIPT_Parameter(3,3);			--???????
 	Set_XSCRIPT_ParamCount(4);
 	Send_XSCRIPT();
 end
@@ -278,7 +278,7 @@ function Guild_Ability_CareEventHandle(careId, op, distance)
 		if(tonumber(careId) ~= g_clientNpcId) then
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(op == "distance" and tonumber(distance)>MAX_OBJ_DISTANCE or op=="destroy") then
 			this:Hide();
 		end

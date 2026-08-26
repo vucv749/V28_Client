@@ -49,7 +49,7 @@ function DWChaichu_OnEvent(event)
 		local xx = Get_XParam_INT(0)
 		g_CaredNpc = DataPool:GetNPCIDByServerID(xx)
 		if g_CaredNpc == -1 then
-			PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£")
+			PushDebugMessage("Dæ li®u máy chü có v¤n ğ«")
 			return
 		end
 		BeginCareObject_DWChaichu()
@@ -169,13 +169,13 @@ function DWChaichu_Update(uiIndex, itemIndex)
 			return
 		end
 		
-		-- ÅĞ¶ÏÎïÆ·ÊÇ·ñ¼ÓËø(Ö´ĞĞµ½ÕâÀïÖ®Ç°, ÒÑ¾­±»ÅĞ¶ÏÁË)
+		-- ÅĞ¶ÏÎïÆ·ÊÇ·ñ¼ÓËø(Ö´ĞĞµ½ âÀïÖ®Ç°, ÒÑ¾­±»ÅĞ¶ÏÁË)
 		if PlayerPackage:IsLock(i_index) == 1 then
 			PushDebugMessage("#{ZBDW_091105_3}")
 			return
 		end
 
-		-- Èç¹û¿Õ¸ñÄÚÒÑ¾­ÓĞ¶ÔÓ¦ÎïÆ·ÁË, Ìæ»»Ö®
+		-- Èç¹û¿ ¸ñÄÚÒÑ¾­ÓĞ¶ÔÓ¦ÎïÆ·ÁË, Ìæ»»Ö®
 		if g_DWCHAICHU_Item[u_index] ~= -1 then
 			LifeAbility:Lock_Packet_Item(g_DWCHAICHU_Item[u_index], 0)
 		end
@@ -208,7 +208,7 @@ end
 
 --=========================================================
 -- ÅĞ¶ÏÊÇ·ñËùÓĞÎïÆ·¶¼ÒÑ·ÅºÃ
--- Ö»ÔÚµã»÷ OK °´Å¥µÄÊ±ºòµ÷ÓÃÕâ¸öº¯Êı
+-- Ö»ÔÚµã»÷ OK °´Å¥µÄÊ±ºòµ÷ÓÃ â¸öº¯Êı
 --=========================================================
 function DWChaichu_Check_AllItem()
 	DWChaichu_UpdateBasic()
@@ -257,7 +257,7 @@ function DWChaichu_OK_Clicked()
 end
 
 --=========================================================
--- ¹Ø±Õ½çÃæ
+-- ¹Ø± ½çÃæ
 --=========================================================
 function DWChaichu_Close()
 	this:Hide()
@@ -275,7 +275,7 @@ end
 
 --=========================================================
 -- ¿ªÊ¼¹ØĞÄNPC£¬
--- ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+-- ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 -- Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function BeginCareObject_DWChaichu()

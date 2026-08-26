@@ -1,4 +1,4 @@
--- 珍兽PVP 休息室信息展示UI
+-- 犱兽PVP 休息室信息牴示UI
 -- mini UI打开状态
 local Kunwu_PVPDaojishi_MiniUIOpenState = 0
 -- 保存UI默认位置
@@ -7,9 +7,9 @@ local Kunwu_PVPDaojishi_UnifiedPosition = nil
 -- 场景逻辑状态
 local Kunwu_PVPDaojishi_LogicState =
 {
-    before_act = 2,             -- 逻辑开启 但是活动还未开启
-    in_act = 3,                 -- 活动开启
-    after_act = 4,              -- 活动结束 但是逻辑还未结束
+    before_act = 2,             -- ???? ????????
+    in_act = 3,                 -- ????
+    after_act = 4,              -- ???? ????????
 } -- end Kunwu_PVPDaojishi_LogicState
 
 
@@ -20,7 +20,7 @@ function Kunwu_PVPDaojishi_PreLoad()
     this:RegisterEvent("PETPVP_UI_CLOSERESTINFO")
     this:RegisterEvent("PETPVP_UI_RESTORERESTINFO")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--???????
 	this:RegisterEvent("ADJEST_UI_POS")
 end -- end func Kunwu_PVPDaojishi_PreLoad()
 

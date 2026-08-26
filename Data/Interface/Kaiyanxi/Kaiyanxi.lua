@@ -12,10 +12,10 @@ local g_Kaiyanxi_ItemInfo = {
 	--粤菜
 	[5] = {id=38002322, itype=3, cost=3,},
 	[6] = {id=38002323, itype=3, cost=3,},	
-	--苏菜
+	--藸菜
 	[7] = {id=38002324, itype=4, cost=3,},
 	[8] = {id=38002325, itype=4, cost=3,},
-	--浙菜
+	--犮菜
 	[9] = {id=38002326, itype=5, cost=3,},
 	[10] = {id=38002327, itype=5, cost=3,},	
 	--闽菜
@@ -24,7 +24,7 @@ local g_Kaiyanxi_ItemInfo = {
 	--湘菜
 	[13] = {id=38002330, itype=7, cost=3,},
 	[14] = {id=38002331, itype=7, cost=3,},		
-	--徽菜
+	--粻菜
 	[15] = {id=38002332, itype=8, cost=3,},
 	[16] = {id=38002333, itype=8, cost=3,},	
 }
@@ -35,7 +35,7 @@ local g_Kaiyanxi_ItemInfo = {
 function Kaiyanxi_PreLoad()
 
 	this:RegisterEvent("UI_COMMAND",true)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
 	this:RegisterEvent("ADJEST_UI_POS",false)
 	this:RegisterEvent("OBJECT_CARED_EVENT",false)
@@ -81,7 +81,7 @@ function Kaiyanxi_OnEvent(event)
 		if(tonumber(arg0) ~= g_objCared) then
 			return
 		end
-		-- 如果和NPC的距离大于一定距离或者被删除，自动关闭
+		-- 如果和NPC的距离大于一定距离或犨被删除，自动关睜
         if(arg1 == "distance" and tonumber(arg2)>3 or arg1=="destroy") then
             Kaiyanxi_OnHiden()
         end

@@ -82,7 +82,7 @@ function CoupleZone_Mood_OnClicked_OK()
 	local calendarText = g_CoupleZone_Mood_UI_NoteEditText:GetText()
 
 	if calendarText == "" then
-		PushDebugMessage("#{QLKJ_230331_25}")  --记录内容不能为空。
+		PushDebugMessage("#{QLKJ_230331_25}")  --?????????
 	end
 	
 	if CoupleZone_Mood_CheckState(2) ~= 1 then

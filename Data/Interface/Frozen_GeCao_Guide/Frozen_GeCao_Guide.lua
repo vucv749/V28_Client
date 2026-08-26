@@ -17,7 +17,7 @@ local m_opType = 0
 local m_selectIndex = 1
 local m_totalPage = 0
 
---预加载函数，可以而且只能在这里注册脚本关心的事件
+--预加载函数，可以而且只能在犫里注册脚本关心的事件
 function Frozen_GeCao_Guide_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
 	-- 游戏窗口尺寸发生了变化

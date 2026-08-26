@@ -4,18 +4,18 @@ local g_SelectHairstyle_Frame_UnifiedPosition
 local g_SelectHairstyle_YuanbaoPay = 1
 
 local g_clientNpcId = -1
-local g_ExteriorType = 1 						--·¢ÐÍ
+local g_ExteriorType = 1 						--??
 
 local g_InitList = 0
 local g_NeedChangeScrollSize = 1
 
 local g_MaxBarNum = 0
 local g_BarList = {}
-local g_CurSelExteriorID = 0					--µ±Ç°Ñ¡ÔñµÄÍâ¹ÛID£¬´Ó1¿ªÊ¼
+local g_CurSelExteriorID = 0					--???????ID,?1??
 local g_OriCharHair = 0
 
-local SelectHairstyle_CameraHeight = 1			--ÉãÓ°»ú¸ß¶È
-local SelectHairstyle_CameraDistance = 2		--ÉãÓ°»ú¾àÀë
+local SelectHairstyle_CameraHeight = 1			--?????
+local SelectHairstyle_CameraDistance = 2		--?????
 local SelectHairstyle_CameraPitch = 3
 local g_SelectHairstyle_CameraLevel = 0
 local g_SelectHairstyle_CameraPosition =
@@ -93,7 +93,7 @@ function SelectHairstyle_OnEvent(event)
 	end
 	
 	-- FakeObjectÄ£ÐÍ½çÃæ»¥³â
-	if ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then   --Ê±×°Ô¤ÀÀ
+	if ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then   --????
 		if (this:IsVisible()) then
 			this:Hide()
 			return
@@ -195,7 +195,7 @@ function SelectHairstyle_SetItem(index, max_count)
 		bar:GetSubItem("SelectHairstyle_SuperListItemActionDef"):Hide()
 		
 		if nExteriorID == Exterior:LuaFnGetExteriorInUse(g_ExteriorType) then
-			--µ±Ç°ÕýÔÚ×°±¸µÄ
+			--µ±Ç° ýÔÚ×°±¸µÄ
 			bar:GetSubItem("SelectHairstyle_SuperListItemActionDef"):Show()
 		end
 
@@ -280,7 +280,7 @@ function SelectHairstyle_ShowDetail()
 		end
 		
 		if g_CurSelExteriorID == Exterior:LuaFnGetExteriorInUse(g_ExteriorType) then
-			--µ±Ç°ÕýÔÚ×°±¸µÄ
+			--µ±Ç° ýÔÚ×°±¸µÄ
 			SelectHairstyle_WarningText:SetText("#{WGYH_210827_02}")
 		end
 	else
@@ -288,15 +288,15 @@ function SelectHairstyle_ShowDetail()
 		SelectHairstyle_Accept:SetText("#{GXHDZ_141121_10}")
 		
 		if reqMenPai == -1 then
-			SelectHairstyle_WarningText:SetText("ÐèÒª"..name.." : "..ItemCount.."#rÐèÒª½ðÇ®: #{_EXCHG"..CostMoney.."}#r#{GXHDZ_141121_83}")
+			SelectHairstyle_WarningText:SetText("C¥n"..name.." : "..ItemCount.."#rc¥n ti«n tài: #{_EXCHG"..CostMoney.."}#r#{GXHDZ_141121_83}")
 		elseif  player_menpai ==  reqMenPai then
 			local menpainame = SelectHairstyle_GetMenpaiString(reqMenPai)
 			local scriptglobal = ScriptGlobal_Format("#{HWMP_200619_11}",menpainame)
-			SelectHairstyle_WarningText:SetText("ÐèÒª"..name.." : "..ItemCount.."#rÐèÒª½ðÇ®: #{_EXCHG"..CostMoney.."}#r"..scriptglobal.."#r#{GXHDZ_141121_83}")			
+			SelectHairstyle_WarningText:SetText("C¥n"..name.." : "..ItemCount.."#rc¥n ti«n tài: #{_EXCHG"..CostMoney.."}#r"..scriptglobal.."#r#{GXHDZ_141121_83}")			
 		else
 			local menpainame = SelectHairstyle_GetMenpaiString(reqMenPai)
 			local scriptglobal = ScriptGlobal_Format("#{HWMP_200619_10}",menpainame)
-			SelectHairstyle_WarningText:SetText("ÐèÒª"..name.." : "..ItemCount.."#rÐèÒª½ðÇ®: #{_EXCHG"..CostMoney.."}#r"..scriptglobal.."#r#{GXHDZ_141121_83}")			
+			SelectHairstyle_WarningText:SetText("C¥n"..name.." : "..ItemCount.."#rc¥n ti«n tài: #{_EXCHG"..CostMoney.."}#r"..scriptglobal.."#r#{GXHDZ_141121_83}")			
 		end		
 	end
 
@@ -446,7 +446,7 @@ function SelectHairstyle_GetMenpaiString(menpai)
 	elseif 8 == menpai then
 		strName = "#{GMItem_12}"
 	elseif 9 == menpai then
-		strName = "ÎÞÃÅÅÉ"
+		strName = "Tñ do"
 	elseif 10 == menpai then
 		strName = "#{GMItem_17}"
 	elseif 11 == menpai then--MPTODO menpai11

@@ -16,12 +16,12 @@ local TargetKfs_AttrEx_Mask_L = {}
 local	TargetKfs_AttrEx_Mask_R	=	{}
 
 local g_EffectDic = {
-	"#{WH_210223_142}",	--内功攻击
-	"#{WH_210223_143}",	--外功攻击
-	"#{WH_210223_138}",	--冰属性
-	"#{WH_210223_139}",	--火属性
-	"#{WH_210223_140}",	--玄属性
-	"#{WH_210223_141}",	--毒属性
+	"#{WH_210223_142}",	--????
+	"#{WH_210223_143}",	--????
+	"#{WH_210223_138}",	--???
+	"#{WH_210223_139}",	--???
+	"#{WH_210223_140}",	--???
+	"#{WH_210223_141}",	--???
 }
 
 local g_AttrNameCtrl = {}
@@ -203,13 +203,13 @@ function TargetWuhun_OnEvent(event)
 		end
 
 		if not CachedTarget:CanGetTargetEquip() then
-			PushDebugMessage ("#{JSCK_90507_1}")				-- 距离该玩家太远，无法查看资料。
+			PushDebugMessage ("#{JSCK_90507_1}")				-- ???????,???????
 			return
 		end
 		
 		g_objCared = CachedTarget:GetData("NPCID", 1)
 		if type(g_objCared) ~= "number" then
-			PushDebugMessage ("#{JSCK_90507_1}")				-- 距离该玩家太远，无法查看资料。
+			PushDebugMessage ("#{JSCK_90507_1}")				-- ???????,???????
 			return
 		end
 		
@@ -698,35 +698,35 @@ function TargetWuhun_ShowPage()
 end
 
 function TargetWuhun_CheckPage(idx)
-	if idx == 1 then--装备
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--资料
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--珍兽
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--武魂
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--灵玉
+	elseif idx == 5 then--??
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
 		end
 		return 1
-	elseif idx == 6 then--神兵
+	elseif idx == 6 then--??
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
 		end
 		return 1
-	elseif idx == 7 then--雕文进阶
+	elseif idx == 7 then--????
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
 		end
 		return 1
-	elseif idx == 8 then--巅峰 
+	elseif idx == 8 then--?? 
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
 		end
 		return 1
-	elseif idx == 9 then--个人
+	elseif idx == 9 then--??
 		return 1
 
 	end
@@ -766,19 +766,19 @@ function TargetWuhun_OnPageClicked(idx)
 	Variable:SetVariable("TargetPageNumber", tostring(idx), 1);
 	idx = g_PageOrder[idx]
 
-	if idx == 1 then--装备
+	if idx == 1 then--??
 		TargetWuhun_OtherEquip_Page_Switch()
-	elseif idx == 2 then--资料
+	elseif idx == 2 then--??
 		TargetWuhun_OtherData_Page_Switch()
-	elseif idx == 3 then--珍兽
+	elseif idx == 3 then--??
 		TargetWuhun_OtherPet_Page_Switch()
-	elseif idx == 4 then--武魂
+	elseif idx == 4 then--??
 		TargetWuhun_ClearPage()
-	elseif idx == 5 then--灵玉
+	elseif idx == 5 then--??
 		TargetWuhun_TargetLingyu_Switch()
-	elseif idx == 6 then--神兵
+	elseif idx == 6 then--??
 		TargetWuhun_ShenBing_Switch()
-	elseif idx == 7 then--雕文进阶
+	elseif idx == 7 then--????
 		TargetWuhun_DWJinJie_Switch()
 	elseif idx == 8 then
 		TargetWuhun_OtherDFeng_Switch()

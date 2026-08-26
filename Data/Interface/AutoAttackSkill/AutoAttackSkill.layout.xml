@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>
+﻿<?xml version="1.0" ?>
 <GUILayout>
 	<Window Type="TLBB_MainFrame3" Name="AutoAttackSkill_Frame">
 		<Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,508.000000}}"/>
@@ -133,7 +133,7 @@
 						<Property Name="MouseMoveHollow" Value="True"/>
 						<Property Name="MouseLButtonHollow" Value="True"/>
 						<Property Name="MouseHollow" Value="True"/>
-						<Property Name="Text" Value="禁"/>
+						<Property Name="Text" Value="Cấm"/>
 						<Property Name="AlwaysOnTop" Value="True"/>
 					</Window>
 					<Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_OK1">
@@ -165,7 +165,7 @@
 						<Property Name="MouseMoveHollow" Value="True"/>
 						<Property Name="MouseLButtonHollow" Value="True"/>
 						<Property Name="MouseHollow" Value="True"/>
-						<Property Name="Text" Value="禁"/>
+						<Property Name="Text" Value="Cấm"/>
 						<Property Name="AlwaysOnTop" Value="True"/>
 					</Window>
 					<Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_OK2">
@@ -197,7 +197,7 @@
 						<Property Name="MouseMoveHollow" Value="True"/>
 						<Property Name="MouseLButtonHollow" Value="True"/>
 						<Property Name="MouseHollow" Value="True"/>
-						<Property Name="Text" Value="禁"/>
+						<Property Name="Text" Value="Cấm"/>
 						<Property Name="AlwaysOnTop" Value="True"/>
 					</Window>
 					<Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_OK3">
@@ -229,7 +229,7 @@
 						<Property Name="MouseMoveHollow" Value="True"/>
 						<Property Name="MouseLButtonHollow" Value="True"/>
 						<Property Name="MouseHollow" Value="True"/>
-						<Property Name="Text" Value="禁"/>
+						<Property Name="Text" Value="Cấm"/>
 						<Property Name="AlwaysOnTop" Value="True"/>
 					</Window>
 					<Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_OK4">
@@ -261,7 +261,7 @@
 						<Property Name="MouseMoveHollow" Value="True"/>
 						<Property Name="MouseLButtonHollow" Value="True"/>
 						<Property Name="MouseHollow" Value="True"/>
-						<Property Name="Text" Value="禁"/>
+						<Property Name="Text" Value="Cấm"/>
 						<Property Name="AlwaysOnTop" Value="True"/>
 					</Window>
 					<Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_OK5">
@@ -677,21 +677,21 @@
 				<Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_AutoLevelUpBtn">
 					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
 					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-6.000000}}"/>
-					<Property Name="Tooltip" Value="选中此选项后，自动战斗时经验满了会自动升级。"/>
+					<Property Name="Tooltip" Value="Lựa chọn Thử Tuyển Hạng Hậu, tự động chiến đấu Thời kinh nghiệm đầy Hội tự động thăng cấp."/>
 					<Event Name="MouseButtonUp" Function="AutoAttackSkill_AutoLevelUpBtn_Click()"/>
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="AutoAttackSkill_AutoLevelUp">
 					<Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,16.000000}}"/>
 					<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.500000,-8.000000}}"/>
 					<Property Name="TextColor" Value="FFFFF263"/>
-					<Property Name="Text" Value="#cfff263自动升级"/>
-					<Property Name="Tooltip" Value="选中此选项后，自动战斗时经验满了会自动升级。"/>
+					<Property Name="Text" Value="#cfff263tự động thăng cấp"/>
+					<Property Name="Tooltip" Value="Lựa chọn Thử Tuyển Hạng Hậu, tự động chiến đấu Thời kinh nghiệm đầy Hội tự động thăng cấp."/>
 				</Window>
 			</Window>
 			<Window Type="TLBB_ButtonExpCheck1" Name="AutoAttackSkill_Fight">
 				<Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,40.000000}}"/>
 				<Property Name="UnifiedPosition" Value="{{1.000000,-105.000000},{1.000000,-40.000000}}"/>
-				<Property Name="Text" Value="开启自动战斗"/>
+				<Property Name="Text" Value="Mở ra tự động chiến đấu"/>
 				<Event Name="Clicked" Function="AutoAttackSkill_OnStartClick();"/>
 			</Window>
 		</Window>

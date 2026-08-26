@@ -91,7 +91,7 @@ function Frozen_PVPDaoJuBao_OnShow()
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function Frozen_PVPDaoJuBao_OnItemShow()
 	for _, ui in (g_item_list or {}) do
@@ -130,7 +130,7 @@ function Frozen_PVPDaoJuBao_OnItemShow()
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function Frozen_PVPDaoJuBao_Hide_OnClick()
 	this:Hide()
@@ -138,7 +138,7 @@ function Frozen_PVPDaoJuBao_Hide_OnClick()
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function Frozen_PVPDaoJuBao_CloseClicked()
 	this:Hide()

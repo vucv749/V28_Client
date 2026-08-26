@@ -20,9 +20,9 @@ function PetSoul_Addlife_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
 	this:RegisterEvent("PETSOUL_ADDLIFE_PUTIN_ITEM");
 	this:RegisterEvent("RESUME_ENCHASE_GEM")
-	this:RegisterEvent("PACKAGE_ITEM_CHANGED")			--背包中物品改变需要判断
-	this:RegisterEvent("UNIT_MONEY")					--金钱变化
-	this:RegisterEvent("MONEYJZ_CHANGE")					--交子变化
+	this:RegisterEvent("PACKAGE_ITEM_CHANGED")			--???????????
+	this:RegisterEvent("UNIT_MONEY")					--????
+	this:RegisterEvent("MONEYJZ_CHANGE")					--????
 	this:RegisterEvent("OBJECT_CARED_EVENT");
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
@@ -91,7 +91,7 @@ function PetSoul_Addlife_OnEvent(event)
 			return;
 		end
 		
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if arg1 == "distance" and tonumber( arg2 ) > MAX_OBJ_DISTANCE or arg1 == "destroy" then
 			PetSoul_Addlife_Close()
 		end
@@ -108,7 +108,7 @@ function PetSoul_Addlife_OnEvent(event)
 	
 end
 
--- uiPos:0放到兽魂格; 1~8 放到魂玉格; -1 寻找空闲的魂玉格
+-- uiPos:0放到兽魂格; 1~8 放到魂玉格; -1 寻犚繝闲的魂玉格
 function PetSoul_Addlife_Update( uiPos, bagPos, bItemChanged )
 
 	if bItemChanged == nil then
@@ -120,7 +120,7 @@ function PetSoul_Addlife_Update( uiPos, bagPos, bItemChanged )
 		return
 	end
 		
-	-- 寻找空闲的魂玉格
+	-- 寻犚繝闲的魂玉格
 	if uiPos == -1 then
 		if g_PetSoul_Addlife_PetSoulBagIndex >= 0 then
 			uiPos = 1;
@@ -174,7 +174,7 @@ function PetSoul_Addlife_Update( uiPos, bagPos, bItemChanged )
 		
 		--检查是否加锁
 		if PlayerPackage:IsLock( bagPos ) == 1 then
-			PushDebugMessage("#{SHXT_20211230_65}")	--道具已上锁
+			PushDebugMessage("#{SHXT_20211230_65}")	--?????
 			return
 		end
 				
@@ -317,7 +317,7 @@ end
 
 --=========================================================
 --开始关心NPC，
---在开始关心之前需要先确定这个界面是不是已经有“关心”的NPC，
+--在开始关心之前需要先确定犫个界面是不是已经有“关心”的NPC，
 --如果有的话，先取消已经有的“关心”
 --=========================================================
 function PetSoul_Addlife_BeginCareObject( objCaredId )

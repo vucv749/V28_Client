@@ -56,9 +56,9 @@ local SweepChoose_g_UiCommand_Type = {
 }
 local SweepChoose_g_Condition1 = 0
 local SweepChoose_g_Condition2 = 0
-local SweepChoose_g_QiYuTag = 0--0未拾取 1已拾取
-local SweepChoose_g_YinFuDaiBi = 0--显示用的银符数量
-local SweepChoose_g_YinFuDaiBiMax = 500 --最大银符数量 增加了个根据银符是否达到上限来决定出不出红点的机制 只能在客户端这里也写死一个500上限了。
+local SweepChoose_g_QiYuTag = 0--0??? 1???
+local SweepChoose_g_YinFuDaiBi = 0--????????
+local SweepChoose_g_YinFuDaiBiMax = 500 --?????? ????????????????????????? ?????????????500????
 
 function SweepChoose_PreLoad()
 	-- 游戏窗口尺寸发生了变化
@@ -77,8 +77,8 @@ end
 function SweepChoose_OnEvent(event)
 	if (event == "UI_COMMAND") then
 		if tonumber(arg0) == SweepChoose_g_UiCommand then
-			if Get_XParam_INT(0) == SweepChoose_g_UiCommand_Type.openUI then--打开界面
-				SweepChoose_Clean() --开启界面要刷新数据
+			if Get_XParam_INT(0) == SweepChoose_g_UiCommand_Type.openUI then--????
+				SweepChoose_Clean() --?????????
 				SweepChoose_g_NowDaily = Get_XParam_INT(1)
 				SweepChoose_g_IsBtn1Disable = Get_XParam_INT(2)
 				SweepChoose_g_IsBtn2Disable = Get_XParam_INT(3)
@@ -89,9 +89,9 @@ function SweepChoose_OnEvent(event)
 				this:Show()
 				SweepChoose_Update()
 				SweepChoose_UpdateDaiBiText()
-			elseif Get_XParam_INT(0) == SweepChoose_g_UiCommand_Type.UpdateUI then--刷新界面
+			elseif Get_XParam_INT(0) == SweepChoose_g_UiCommand_Type.UpdateUI then--????
 				if this:IsVisible() then
-					SweepChoose_Clean() --刷新界面要刷新数据
+					SweepChoose_Clean() --?????????
 					SweepChoose_g_NowDaily = Get_XParam_INT(1)
 					SweepChoose_g_IsBtn1Disable = Get_XParam_INT(2)
 					SweepChoose_g_IsBtn2Disable = Get_XParam_INT(3)
@@ -102,7 +102,7 @@ function SweepChoose_OnEvent(event)
 					SweepChoose_Update()
 					SweepChoose_UpdateDaiBiText()
 				end
-			elseif Get_XParam_INT(0) == SweepChoose_g_UiCommand_Type.disableBtn then--领取奖励后刷新奖励按钮状态
+			elseif Get_XParam_INT(0) == SweepChoose_g_UiCommand_Type.disableBtn then--?????????????
 				if this:IsVisible() then
 					local index = Get_XParam_INT(1)
 					if index == 1 then
@@ -127,20 +127,20 @@ function SweepChoose_OnEvent(event)
 		SweepChoose_Frame_On_ResetPos()
 	elseif (event == "HIDE_ON_SCENE_TRANSED") then
 		SweepChoose_OnClosed()
-	elseif( event == "REFRESH_SECKILL_YINBI") then--开着界面时进行消耗银符操作，用这里刷新当前银符数量和红点
+	elseif( event == "REFRESH_SECKILL_YINBI") then--?????????????,??????????????
 		if this:IsVisible() then
 			SweepChoose_UpdateDaiBiText2()
 		end
 	end
 end
 
-function SweepChoose_UpdateDaiBiText()--用server发回的数量更新
+function SweepChoose_UpdateDaiBiText()--?server???????
 	local uYinbi = SweepChoose_g_YinFuDaiBi
 	local strYinbi = ScriptGlobal_Format("#{YBSD_231107_37}",tostring(uYinbi))
 	SweepChoose_Explain3_NumText:SetText(strYinbi)
 end
 
-function SweepChoose_UpdateDaiBiText2()--用客户端的数量更新
+function SweepChoose_UpdateDaiBiText2()--?????????
 	local _,_,_,_,_,_,_,_,_,uYinbi = GetSecKillData()
 	SweepChoose_g_YinFuDaiBi = uYinbi
 	local strYinbi = ScriptGlobal_Format("#{YBSD_231107_37}",tostring(uYinbi))
@@ -214,10 +214,10 @@ function SweepChoose_Update()
 	if condition1 >= FubenTbl1.FConNeed then
 		condition1 = FubenTbl1.FConNeed
 		SweepChoose_LevelItem1_RewardBtn_Tips:Show()
-		conTextStr1 = FubenTbl1.FFinText--完成时显示异色
+		conTextStr1 = FubenTbl1.FFinText--???????
 	else
 		SweepChoose_LevelItem1_RewardBtn_Tips:Hide()
-		conTextStr1 = FubenTbl1.FConText--未完成时显示原色
+		conTextStr1 = FubenTbl1.FConText--????????
 	end
 	local condition2 = SweepChoose_g_Condition2
 	if condition2 >= FubenTbl2.FConNeed then
@@ -233,10 +233,10 @@ function SweepChoose_Update()
 	SweepChoose_LevelItem1_FinishText:SetText(FinishText1)
 	SweepChoose_LevelItem2_FinishText:SetText(FinishText2)
 	--奇遇tag
-	SweepChoose_QiyuTag:SetProperty("Image", "set:SweepChoose image:Lucky_Light")--保持亮
-	if SweepChoose_g_QiYuTag == 0 then--未拾取
+	SweepChoose_QiyuTag:SetProperty("Image", "set:SweepChoose image:Lucky_Light")--???
+	if SweepChoose_g_QiYuTag == 0 then--???
 		SweepChoose_QiyuTag:SetToolTip("#{QYFB_20231110_43}")
-	else--已拾取	
+	else--???	
 		SweepChoose_QiyuTag:SetToolTip("#{QYFB_20231110_44}")
 	end
 	--可获得：

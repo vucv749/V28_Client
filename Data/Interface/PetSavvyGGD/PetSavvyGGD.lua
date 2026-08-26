@@ -1,16 +1,16 @@
 -- PetSavvyGGD.lua
--- ÕäÊŞÌáÉıÎòĞÔ£¨ÓÃ¸ù¹Çµ¤£©
+--  äÊŞÌáÉıÎòĞÔ£¨ÓÃ¸ù¹Çµ¤£©
 
 local mainPet = { idx = -1, guid = { high = -1, low = -1 } }
 local assisPet = { idx = -1, guid = { high = -1, low =-1 } }
 
-local theNPC = -1													-- ¹¦ÄÜ NPC
+local theNPC = -1													-- ?? NPC
 local MAX_OBJ_DISTANCE = 3.0
 local g_PetSavvyGGD_YuanbaoPay=1
 
 local currentChoose = -1
 
-local moneyCosts = {													-- Ë÷ÒıÊÇÕäÊŞµÄµ±Ç°ÎòĞÔÖµ
+local moneyCosts = {													-- ???????????
 	[0] = 100,
 	[1] = 110,
 	[2] = 121,
@@ -51,16 +51,16 @@ local g_PetSavvyGGD_Frame_UnifiedPosition;
 
 function PetSavvyGGD_PreLoad()
 	this : RegisterEvent( "UI_COMMAND" )
-	this : RegisterEvent( "REPLY_MISSION_PET" )				-- Íæ¼Ò´ÓÁĞ±íÑ¡¶¨Ò»Ö»ÕäÊŞ
-	this : RegisterEvent( "UPDATE_PET_PAGE" )					-- Íæ¼ÒÉíÉÏµÄÕäÊŞÊı¾İ·¢Éú±ä»¯
-	this : RegisterEvent( "DELETE_PET" )							-- Íæ¼ÒÉíÉÏ¼õÉÙÒ»Ö»ÕäÊŞ
-	this : RegisterEvent( "OBJECT_CARED_EVENT" )			-- ¹ØĞÄ NPC µÄ´æÔÚºÍ·¶Î§
+	this : RegisterEvent( "REPLY_MISSION_PET" )				-- ???????????
+	this : RegisterEvent( "UPDATE_PET_PAGE" )					-- ?????????????
+	this : RegisterEvent( "DELETE_PET" )							-- ??????????
+	this : RegisterEvent( "OBJECT_CARED_EVENT" )			-- ?? NPC ??????
 	this : RegisterEvent( "UNIT_MONEY" );
-	this : RegisterEvent( "MONEYJZ_CHANGE" )					--½»×ÓÆÕ¼° Vega
-	this : RegisterEvent( "OPEN_EXCHANGE_FRAME" );		--´ò¿ª½»Ò×½çÃæ
+	this : RegisterEvent( "MONEYJZ_CHANGE" )					--???? Vega
+	this : RegisterEvent( "OPEN_EXCHANGE_FRAME" );		--??????
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
-	this : RegisterEvent("QUICKUP_PET_SENDMSG",true)				--¶ş´ÎÈ·ÈÏ
+	this : RegisterEvent("QUICKUP_PET_SENDMSG",true)				--????
 end
 
 function PetSavvyGGD_OnLoad()
@@ -70,10 +70,10 @@ end
 
 
 function PetSavvyGGD_OK_Clicked()
-	-- Ê×ÏÈÅĞ¶¨Íæ¼ÒÊÇ·ñ·ÅÈëĞèÒªÌáÉıµÄÕäÊŞ£¬Èç¹ûÃ»ÓĞ·ÅÈëNPC½«»áµ¯³ö¶Ô»°²¢·µ»Ø£º
+	-- Ê×ÏÈÅĞ¶¨Íæ¼ÒÊÇ·ñ·ÅÈëĞèÒªÌáÉıµÄ äÊŞ£¬Èç¹ûÃ»ÓĞ·ÅÈëNPC½«»áµ¯³ö¶Ô»°²¢·µ»Ø£º
 	if mainPet.idx == -1 then
-	-- Çë·ÅÈëÄúÒªÌáÉıÎòĞÔµÈ¼¶µÄÕäÊŞ¡£
-		ShowSystemTipInfo( "Çë·ÅÈëÄúÒªÌáÉıÎòĞÔµÈ¼¶µÄÕäÊŞ¡£" )
+	-- Çë·ÅÈëÄúÒªÌáÉıÎòĞÔµÈ¼¶µÄ äÊŞ¡£
+		ShowSystemTipInfo( "Nh§p Trân Thú c¥n tång c¤p ngµ tính." )
 		return
 	end
 
@@ -85,30 +85,30 @@ function PetSavvyGGD_OK_Clicked()
 	end	
 
 	-- ÄúµÄ½ğÇ®²»×ã£¬ÇëÈ·ÈÏ
-	local selfMoney = Player:GetData("MONEY") + Player:GetData("MONEY_JZ");	--½»×ÓÆÕ¼° Vega
+	local selfMoney = Player:GetData("MONEY") + Player:GetData("MONEY_JZ");	--???? Vega
 	if selfMoney < cost then
-		ShowSystemTipInfo( "ÄúµÄ½ğÇ®²»×ã£¬ÇëÈ·ÈÏ¡£" )
+		ShowSystemTipInfo( "Ngân lßşng không ğü, hãy xác nh§n." )
 		return
 	end
 	
 	--¼ì²é¸ù¹Çµ¤
 	local nSavvyNeed = savvy+1;	
 	local nItemIdGenGuDan = 0;
-	local nItemIdGenGuDanBind = 0; --°ó¶¨µÄ¸ù¹Çµ¤
+	local nItemIdGenGuDanBind = 0; --??????
 	local msgTemp;
 	
 	if nSavvyNeed >= 1 and nSavvyNeed <= 3 then
-		msgTemp = "µÍ";
+		msgTemp = "Th¤p";
 		nItemIdGenGuDan = 30502000;
 		nItemIdGenGuDanBind = 30504038;
 	elseif nSavvyNeed >= 4 and nSavvyNeed <= 6 then
-		msgTemp = "ÖĞ"
+		msgTemp = "Trung"
 		nItemIdGenGuDan = 30502001;
 	elseif nSavvyNeed >= 7 and nSavvyNeed <= 10 then
-		msgTemp = "¸ß"
+		msgTemp = "Cao"
 		nItemIdGenGuDan = 30502002;
 	elseif nSavvyNeed >= 11 and nSavvyNeed <= 15 then
-		msgTemp = "³¬"
+		msgTemp = "Siêu"
 		nItemIdGenGuDan = 30502004;
 	end
 	
@@ -118,7 +118,7 @@ function PetSavvyGGD_OK_Clicked()
 	end
 	
 	if bExist <= 0 then
-		local msg = "ÌáÉı¸ÃÕäÊŞÎòĞÔµ½"..nSavvyNeed.."ĞèÒª"..msgTemp.."¼¶¸ù¹Çµ¤¡£";
+		local msg = "Nâng ngµ tính ğªn"..nSavvyNeed.."C¥n"..msgTemp.."C¤p cån c¯t ğan.";
 		PetSavvyGGD_GGD : SetText( msg );
 		-- SetNotifyTip( msg );
 		-- return;
@@ -136,18 +136,18 @@ function PetSavvyGGD_OK_Clicked()
 	
 end
 
--- ¹Ø±Õ¡¢È¡Ïû
+-- ¹Ø± ¡¢È¡Ïû
 function PetSavvyGGD_Cancel_Clicked()
 	this : Hide()
 end
 
--- Ñ¡ÔñÕäÊŞ
+-- Ñ¡Ôñ äÊŞ
 function PetSavvyGGD_SelectPet( petIdx )
 	if -1 == petIdx then
 		return
 	end
 	
-	--ÕäÊŞÒÑ±»ÆäËü½çÃæÑ¡ÖĞ
+	-- äÊŞÒÑ±»ÆäËü½çÃæÑ¡ÖĞ
 	if (Pet:GetPetLocation(petIdx) ~= -1) then
 		return;
 	end
@@ -157,7 +157,7 @@ function PetSavvyGGD_SelectPet( petIdx )
 
 
 	-- Èç¹ûÔ­À´ÒÑ¾­Ñ¡ÔñÁËÒ»¸ö±»ÌáÉıµÄ³è
-	-- ÔòÇå¿ÕÔ­À´µÄÊı¾İ
+	-- ÔòÇå¿ Ô­À´µÄÊı¾İ
 	PetSavvyGGD_RemoveMainPet()
 	
 	local savvy = Pet : GetSavvy( petIdx )
@@ -165,17 +165,17 @@ function PetSavvyGGD_SelectPet( petIdx )
 	
 	if UI_TYPE == WX_10 then
 		if savvy <=9 then
-			-- ½«ÕäÊŞÃû×ÖÌîµ½ÎÄ±¾¿òÖĞ
+			-- ½« äÊŞÃû×ÖÌîµ½ÎÄ±¾¿òÖĞ
 			PetSavvyGGD_Pet : SetText( petName )
-			-- ¸øÕäÊŞÉÏËø£¬ÉèÖÃÕäÊŞÒÑ¾­Ìá½»µ½3ºÅ½çÃæÈİÆ÷
+			-- ¸ø äÊŞÉÏËø£¬ÉèÖÃ äÊŞÒÑ¾­Ìá½»µ½3ºÅ½çÃæÈİÆ÷
 			Pet : SetPetLocation( petIdx, 3 )
-			-- ¸üĞÂÕäÊŞÁĞ±í½çÃæ
+			-- ¸üĞÂ äÊŞÁĞ±í½çÃæ
 			Pet:UpdatePetList()	
 		else
 			PetSavvyGGD_Pet : SetText( "" )
 			PetSavvyGGD_GGD : SetText( "" )
 			PetSavvyGGD_NeedMoney : SetProperty( "MoneyNumber", 0 )
-			PetSavvyGGD_Text2 : SetText( "ÎŞ·¨ÌáÉı" )
+			PetSavvyGGD_Text2 : SetText( "Không th¬ tång" )
 			PetSavvyGGD_OK:Disable();
 			PetSavvyGGD_Quick:Disable()
 			PetSavvyGGD_Quick:SetText( "#{ZSKJT_130507_1}" )
@@ -195,28 +195,28 @@ function PetSavvyGGD_SelectPet( petIdx )
 		PetSavvyGGD_Quick:SetText( "#{ZSKJT_130507_1}" )
 		PetSavvyGGD_Quick_Up_Animate:Play(false)
 		
-		--»Ã»¯ÕäÊŞ
+		--»Ã»¯ äÊŞ
 		if nGen >= 100 then
 			if savvy < 15 then
 				if savvy >= 10 then
-					-- ½«ÕäÊŞÃû×ÖÌîµ½ÎÄ±¾¿òÖĞ
+					-- ½« äÊŞÃû×ÖÌîµ½ÎÄ±¾¿òÖĞ
 					PetSavvyGGD_Pet : SetText( petName )
-					-- ¸øÕäÊŞÉÏËø£¬ÉèÖÃÕäÊŞÒÑ¾­Ìá½»µ½3ºÅ½çÃæÈİÆ÷
+					-- ¸ø äÊŞÉÏËø£¬ÉèÖÃ äÊŞÒÑ¾­Ìá½»µ½3ºÅ½çÃæÈİÆ÷
 					Pet : SetPetLocation( petIdx, 3 )
-					-- ¸üĞÂÕäÊŞÁĞ±í½çÃæ
+					-- ¸üĞÂ äÊŞÁĞ±í½çÃæ
 					Pet:UpdatePetList()
 				else
-					SetNotifyTip("#{RXZS_090804_26}")	--ÎòĞÔ¡İ10µÄÕäÊŞ²ÅÄÜÊ¹ÓÃ³¬¼¶¸ù¹Çµ¤ÌáÉıÎòĞÔ¡£
+					SetNotifyTip("#{RXZS_090804_26}")	--??=10?????????????????
 					return
 				end
 			else
-				--»Ã»¯ÕäÊŞÎòĞÔ´óÓÚ14¾Í²»ÄÜÔÙÌáÉıÁË....
-				SetNotifyTip("#{RXZS_090804_27}")	--ÄãµÄÕäÊŞÎòĞÔÒÑÌáÉıµ½15£¬²»ÄÜÔÙÏòÉÏÌáÉıÁË¡£
+				--»Ã»¯ äÊŞÎòĞÔ´óÓÚ14¾Í²»ÄÜÔÙÌáÉıÁË....
+				SetNotifyTip("#{RXZS_090804_27}")	--??????????15,?????????
 				return
 			end
 		else
-			--·Ç»Ã»¯ÕäÊŞ
-			SetNotifyTip("#{RXZS_090804_25}")	--Ö»ÓĞ»Ã»¯ºó£¬ÇÒÎòĞÔ¡İ10µÄÕäÊŞ²ÅÄÜÊ¹ÓÃ³¬¼¶¸ù¹Çµ¤ÌáÉıÎòĞÔ¡£
+			--·Ç»Ã»¯ äÊŞ
+			SetNotifyTip("#{RXZS_090804_25}")	--?????,???=10?????????????????
 			return
 		end
 	end
@@ -235,19 +235,19 @@ function PetSavvyGGD_SelectPet( petIdx )
 	local msgTemp;
 	
 	if nSavvyNeed >= 1 and nSavvyNeed <= 3 then
-		msgTemp = "µÍ";		
+		msgTemp = "Th¤p";		
 	elseif nSavvyNeed >= 4 and nSavvyNeed <= 6 then
-		msgTemp = "ÖĞ"		
+		msgTemp = "Trung"		
 	elseif nSavvyNeed >= 7 and nSavvyNeed <= 10 then
-		msgTemp = "¸ß"		
+		msgTemp = "Cao"		
 	elseif nSavvyNeed >= 11 and nSavvyNeed <= 15 then
-		msgTemp = "³¬"		
+		msgTemp = "Siêu"		
 	end
 	
 	local bExist = IsItemExist( nItemIdGenGuDan );
 	
 	if bExist <= 0 then
-		local msg = "ÌáÉı¸ÃÕäÊŞÎòĞÔµ½"..nSavvyNeed.."ĞèÒª"..msgTemp.."¼¶¸ù¹Çµ¤¡£";
+		local msg = "Nâng ngµ tính ğªn"..nSavvyNeed.."C¥n"..msgTemp.."C¤p cån c¯t ğan.";
 		PetSavvyGGD_GGD : SetText( msg );		
 		return;
 	end
@@ -258,8 +258,8 @@ function PetSavvyGGD_OnEvent(event)
 
 	--PushDebugMessage("PetSavvyGGD : "..event);
 
-	if event == "UI_COMMAND" and tonumber( arg0 ) == 19820425 then	-- ´ò¿ª½çÃæ
-		if this : IsVisible() then									-- Èç¹û½çÃæ¿ª×Å£¬Ôò²»´¦Àí
+	if event == "UI_COMMAND" and tonumber( arg0 ) == 19820425 then	-- ????
+		if this : IsVisible() then									-- ??????,????
 			return
 		end
 		UI_TYPE = WX_10
@@ -284,7 +284,7 @@ function PetSavvyGGD_OnEvent(event)
 	end
 
 	if event == "UI_COMMAND" and tonumber(arg0) == 20090812 then
-		if this : IsVisible() then									-- Èç¹û½çÃæ¿ª×Å£¬Ôò²»´¦Àí
+		if this : IsVisible() then									-- ??????,????
 			return
 		end
 		UI_TYPE = WX_15
@@ -309,7 +309,7 @@ function PetSavvyGGD_OnEvent(event)
 
 	end
 
-	-- Íæ¼ÒÑ¡ÁËÒ»Ö»ÕäÊŞ
+	-- Íæ¼ÒÑ¡ÁËÒ»Ö» äÊŞ
 	if ( event == "REPLY_MISSION_PET" and this:IsVisible() )then
 		--PetSavvyGGD_GGD : SetText( "" );
 		PetSavvyGGD_SelectPet( tonumber( arg0 ) )
@@ -319,7 +319,7 @@ function PetSavvyGGD_OnEvent(event)
 		return
 	end
 
-	-- Íæ¼ÒÉíÉÏµÄÕäÊŞÊı¾İ·¢Éú±ä»¯£¬°üÀ¨ÕäÊŞ³öÕ½¡¢ĞİÏ¢¡¢Ôö¼ÓÒ»Ö»ÕäÊŞ
+	-- Íæ¼ÒÉíÉÏµÄ äÊŞÊı¾İ·¢Éú±ä»¯£¬°üÀ¨ äÊŞ³ö ½¡¢ĞİÏ¢¡¢Ôö¼ÓÒ»Ö» äÊŞ
 	if event == "UPDATE_PET_PAGE" and this : IsVisible() then
 		PetSavvyGGD_UpdateSelected()
 		PetSavvyGGD_SelfMoney:SetProperty("MoneyNumber", tostring(Player:GetData("MONEY")));
@@ -327,7 +327,7 @@ function PetSavvyGGD_OnEvent(event)
 		return
 	end
 
-	-- Íæ¼ÒÉíÉÏ¼õÉÙÒ»Ö»ÕäÊŞ
+	-- Íæ¼ÒÉíÉÏ¼õÉÙÒ»Ö» äÊŞ
 	if event == "DELETE_PET" and this : IsVisible() then
 		PetSavvyGGD_UpdateSelected()
 		PetSavvyGGD_SelfMoney:SetProperty("MoneyNumber", tostring(Player:GetData("MONEY")));
@@ -342,7 +342,7 @@ function PetSavvyGGD_OnEvent(event)
 			return
 		end
 
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if arg1 == "distance" and tonumber( arg2 ) > MAX_OBJ_DISTANCE or arg1 == "destroy" then			
 			PetSavvyGGD_Cancel_Clicked()
 		end
@@ -357,7 +357,7 @@ function PetSavvyGGD_OnEvent(event)
 		PetSavvyGGD_SelfJiaozi:SetProperty("MoneyNumber", tostring(Player:GetData("MONEY_JZ")));
 	end
 	
-	-- ´ò¿ª½»Ò×½çÃæµÄÍ¬Ê±¹Ø±Õ¸Ã½çÃæ£¬µ«ÊÇĞèÒªË¢ĞÂÒ»ÏÂÕäÊŞÁĞ±í
+	-- ´ò¿ª½»Ò×½çÃæµÄÍ¬Ê±¹Ø± ¸Ã½çÃæ£¬µ«ÊÇĞèÒªË¢ĞÂÒ»ÏÂ äÊŞÁĞ±í
 	if (event == "OPEN_EXCHANGE_FRAME" and this:IsVisible()) then
 		StopCareObject()
 		PetSavvyGGD_Clear()
@@ -380,7 +380,7 @@ end
 
 function PetSavvyGGD_Choose_Clicked( type )
 
-	-- ¹ØÒ»ÏÂÔÙ¿ª£¬Çå¿ÕÊı¾İ
+	-- ¹ØÒ»ÏÂÔÙ¿ª£¬Çå¿ Êı¾İ
 	Pet : ShowPetList( 0 )
 	Pet : ShowPetList( 1 )
 end
@@ -395,7 +395,7 @@ end
 function PetSavvyGGD_RemoveMainPet()
 	if mainPet.idx ~= -1 then
 		Pet : SetPetLocation( mainPet.idx, -1 )
-		-- ¸üĞÂÕäÊŞÁĞ±í½çÃæ
+		-- ¸üĞÂ äÊŞÁĞ±í½çÃæ
 		Pet:UpdatePetList()
 	end
 
@@ -408,7 +408,7 @@ function PetSavvyGGD_Clear()
 	PetSavvyGGD_RemoveMainPet()
 	PetSavvyGGD_GGD : SetText( "" );
 	PetSavvyGGD_Pet : SetText( "" );
-	PetSavvyGGD_Text2 : SetText( "#cFF0000³É¹¦ÂÊ" )
+	PetSavvyGGD_Text2 : SetText( "#cFF0000xác xu¤t thành công" )
 	PetSavvyGGD_NeedMoney : SetProperty( "MoneyNumber", tostring( 0 ) )
 
 	PetSavvyGGD_OK : Disable()
@@ -421,7 +421,7 @@ end
 -- ¼ÆËã³É¹¦ÂÊ
 function PetSavvyGGD_CalcSuccOdds()
 	if mainPet.idx == -1 then
-		PetSavvyGGD_Text2 : SetText( "#cFF0000³É¹¦ÂÊ" )
+		PetSavvyGGD_Text2 : SetText( "#cFF0000xác xu¤t thành công" )
 		PetSavvyGGD_OK : Disable()
 		PetSavvyGGD_Quick:Disable()
 		PetSavvyGGD_Quick:SetText( "#{ZSKJT_130507_1}" )
@@ -429,7 +429,7 @@ function PetSavvyGGD_CalcSuccOdds()
 		return
 	end
 
-	succOdds = {													-- Ë÷ÒıÊÇÕäÊŞµÄµ±Ç°ÎòĞÔÖµ
+	succOdds = {													-- ???????????
 		[0] = 1000,
 		[1] = 850,
 		[2] = 750,
@@ -452,7 +452,7 @@ function PetSavvyGGD_CalcSuccOdds()
 	local str = "#cFF0000"
 	local odds = succOdds[savvy]
 	if not odds then
-		str = "ÎŞ·¨ÌáÉı"
+		str = "Không th¬ tång"
 		PetSavvyGGD_OK : Disable()
 		PetSavvyGGD_Quick:Disable()
 		PetSavvyGGD_Quick:SetText( "#{ZSKJT_130507_1}" )
@@ -487,7 +487,7 @@ end
 
 function PetSavvyGGD_UpdateSelected()
 	
-	-- ÅĞ¶Ï±»Ñ¡ÖĞµÄÕäÊŞÊÇ·ñ»¹ÔÚ±³°üÀï
+	-- ÅĞ¶Ï±»Ñ¡ÖĞµÄ äÊŞÊÇ·ñ»¹ÔÚ±³°üÀï
 	if mainPet.idx ~= -1 then
 		local newIdx = Pet : GetPetIndexByGUID( mainPet.guid.high, mainPet.guid.low )
 		Pet : SetPetLocation( mainPet.idx, -1 )
@@ -497,12 +497,12 @@ function PetSavvyGGD_UpdateSelected()
 			mainPet.guid.high = -1
 			mainPet.guid.low = -1
 			PetSavvyGGD_Pet : SetText( "" )
-			PetSavvyGGD_Text2 : SetText( "#cFF0000³É¹¦ÂÊ" )
+			PetSavvyGGD_Text2 : SetText( "#cFF0000xác xu¤t thành công" )
 			PetSavvyGGD_OK : Disable()
 			PetSavvyGGD_Quick:Disable()
 			PetSavvyGGD_Quick:SetText( "#{ZSKJT_130507_1}" )
 			PetSavvyGGD_Quick_Up_Animate:Play(false)
-		-- ·ñÔòÅĞ¶ÏÕäÊŞµÄÎ»ÖÃÊÇ·ñ·¢Éú±ä»¯
+		-- ·ñÔòÅĞ¶Ï äÊŞµÄÎ»ÖÃÊÇ·ñ·¢Éú±ä»¯
 		elseif newIdx ~= mainPet.idx then
 			-- Èç¹û·¢Éú±ä»¯Ôò¶ÔÎ»ÖÃ½øĞĞ¸üĞÂ
 			mainPet.idx = newIdx
@@ -515,13 +515,13 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØĞÄNPC£¬
---ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 --Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function BeginCareObject( objCaredId )
 	theNPC = DataPool : GetNPCIDByServerID( objCaredId )
 	if theNPC == -1 then
-		PushDebugMessage("Î´·¢ÏÖ NPC")
+		PushDebugMessage("Chßa phát hi®n NPC")
 		this : Hide()
 		return
 	end
@@ -568,25 +568,25 @@ function PetSavvyGGD_check()
 	end
 	--ÔİÊ±Ã»ÓĞ°²È«ÊÂ¼şºÍÃÜ±£µÄapi
 
-	--Íæ¼Òµ±Ç°ÊÇ·ñÒÑ¾­Ñ¡ÔñÁËÒ»Ö»ÕäÊŞ
+	--Íæ¼Òµ±Ç°ÊÇ·ñÒÑ¾­Ñ¡ÔñÁËÒ»Ö» äÊŞ
 	if mainPet.idx == -1 then
 		PushDebugMessage("#{ZSKJT_130428_3}")
 		return 1
 	end
 
-	--µ±Ç°ËùÑ¡ÔñµÄÕäÊŞÊÇ·ñ´¦ÓÚËø¶¨×´Ì¬
+	--µ±Ç°ËùÑ¡ÔñµÄ äÊŞÊÇ·ñ´¦ÓÚËø¶¨×´Ì¬
 	if (Pet:IsProtect(mainPet.idx) == 1) then
 		PushDebugMessage("#{ZSKSSJ_081113_06}")
 		return 1
 	end
 
-	--µ±Ç°ËùÑ¡ÔñµÄÕäÊŞÊÇ·ñ´¦ÓÚ³öÕ½×´Ì¬
+	--µ±Ç°ËùÑ¡ÔñµÄ äÊŞÊÇ·ñ´¦ÓÚ³ö ½×´Ì¬
 	local petname,status = Pet:GetPetList_Appoint(mainPet.idx)
 	if (status == "on_fight") then
 		PushDebugMessage("#{ZSKJT_130428_23}")
 		return 1
 	end
-	--µ±Ç°ËùÑ¡ÔñÕäÊŞµÄÎòĞÔÊÇ·ñĞ¡ÓÚ10
+	--µ±Ç°ËùÑ¡Ôñ äÊŞµÄÎòĞÔÊÇ·ñĞ¡ÓÚ10
 	local savvy = Pet : GetSavvy( mainPet.idx )
 	if savvy >= 10 then 
 		PushDebugMessage("#{ZSKJT_130428_4}")

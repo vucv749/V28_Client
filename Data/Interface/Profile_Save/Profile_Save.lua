@@ -104,7 +104,7 @@ function Profile_Save_InitAction()
 	
 end
 
--- 保存对应展示方案
+-- 保存对应牴示方案
 function Profile_Save_SavePlanClicked( nIdx )
 	
 	if nIdx >= 1 and nIdx <= 6 then
@@ -114,7 +114,7 @@ function Profile_Save_SavePlanClicked( nIdx )
 		
 end
 
--- 前往个人展示界面
+-- 前往个人牴示界面
 function Profile_Save_GotoClicked()
 
 	local ret = Exterior:LuaFnExteriorPlayerOpenProfileUI()
@@ -133,7 +133,7 @@ end
 function Profile_Save_HelpClick()
 end
 
---关闭按钮
+--关睜按钮
 function Profile_Save_CloseClick()	
 
 	Profile_Save_CleanUp()

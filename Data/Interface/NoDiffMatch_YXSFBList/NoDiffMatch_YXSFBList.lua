@@ -1,8 +1,8 @@
 
 local g_unifiedposistion
-local g_last_optime		= 1		-- 最后操作的时间
-local g_op_cd			= 1000	-- 操作CD
-local g_list_max		= 16	-- 最多一次显示16个
+local g_last_optime		= 1		-- ???????
+local g_op_cd			= 1000	-- ??CD
+local g_list_max		= 16	-- ??????16?
 
 function NoDiffMatch_YXSFBList_PreLoad()
     this:RegisterEvent("ZBS_REST_BATTLEINFO_SHOW")

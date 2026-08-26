@@ -24,21 +24,21 @@ local g_controlIndexButton	= {}
 -- 魂冰石
 local g_tableHunBingItemID = 
 {
-	20310117,	--魂冰珠（1级）
-	20310118,	--魂冰珠（2级）
-	20310119,	--魂冰珠（3级）
-	20310120,	--魂冰珠（4级）
-	20310121,	--魂冰珠（5级）
+	20310117,	--???(1?)
+	20310118,	--???(2?)
+	20310119,	--???(3?)
+	20310120,	--???(4?)
+	20310121,	--???(5?)
 }
 
 -- 绑定魂冰石
 local g_tableHunBingBindItemID = 
 {
-	20310161,	--魂冰珠（1级）
-	20310162,	--魂冰珠（2级）
-	20310163,	--魂冰珠（3级）
-	20310164,	--魂冰珠（4级）
-	20310165,	--魂冰珠（5级）
+	20310161,	--???(1?)
+	20310162,	--???(2?)
+	20310163,	--???(3?)
+	20310164,	--???(4?)
+	20310165,	--???(5?)
 }
 
 -- 魂冰珠消耗道具数量
@@ -92,10 +92,10 @@ end
 --=========================================================
 function HunbingzhuCompound_OnEvent(event)
 	if ( event == "UI_COMMAND" and tonumber(arg0) == g_nUICommandID ) then
-		-- 0 关闭, 1 打开, 2 刷新, 3 二次确认框
+		-- 0 关睜, 1 打开, 2 刷新, 3 二次确认框
 		local nOpType 	= Get_XParam_INT(0)
 
-		-- 关闭界面
+		-- 关睜界面
 		if 0 == nOpType then	
 			if this:IsVisible() then
 				HunbingzhuCompound_OnClose()
@@ -118,7 +118,7 @@ function HunbingzhuCompound_OnEvent(event)
 			end
 
 			-- 显示界面
-			-- 为了解决界面被遮挡的问题，先把界面关了
+			-- 为了解决界面被犣挡的问题，先把界面关了
 			-- if this:IsVisible() then
 			-- 	HunbingzhuCompound_OnClose()
 			-- end
@@ -162,9 +162,9 @@ function HunbingzhuCompound_OnEvent(event)
 		if(tonumber(arg0) ~= g_nObjCaredIDClient) then
 			return
 		end
-		-- 如果和NPC的距离大于一定距离或者被删除，自动关闭
+		-- 如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
-			-- 关闭界面
+			-- 关睜界面
 			HunbingzhuCompound_OnClose()
 		end	
 
@@ -260,7 +260,7 @@ function HunbingzhuCompound_Update(bOpen)
 		HunbingzhuCompound_ChoiceInfo : SetText( ScriptGlobal_Format("#{HBZHC_210923_37}", nTargetLevel) )
 	end
 
-	-- 道具展示区域
+	-- 道具牴示区域
 	local theAction = DataPool:CreateActionItemForShow(g_tableHunBingItemID[nTargetLevel], 1)
 	if 0 ~= theAction:GetID() then
 		HunbingzhuCompound_Item : SetActionItem(theAction:GetID())
@@ -364,7 +364,7 @@ function HunbingzhuCompound_ConfirmClick(bComfirmed)
 end
 
 --=========================================================
--- 关闭界面
+-- 关睜界面
 --=========================================================
 function HunbingzhuCompound_OnClose()	
 	this:Hide()

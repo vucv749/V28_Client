@@ -38,7 +38,7 @@ function MengQianChen_Time_OnEvent(event)
 		if(tonumber(arg0) ~= g_objCared) then
 			return;
 		end
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MengQianChen_Time_MAX_OBJ_DISTANCE or arg1=="destroy") then
 			MengQianChen_Time_OnClose()
 			--取消关心
@@ -56,7 +56,7 @@ end
 --游戏时间结束
 function MengQianChen_Time_TimeOut()
 	--倒计时结束后的逻辑处理，放在server触发了
-	--弹这个界面的同时，Server也在自动计时，防止客户端出错
+	--弹犫个界面的同时，Server也在自动计时，防止客户端出错
 	Clear_XSCRIPT();
 		Set_XSCRIPT_Function_Name("DaoJiShiOver")
 		Set_XSCRIPT_ScriptID(998417)

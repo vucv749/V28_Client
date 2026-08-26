@@ -8,7 +8,7 @@
 --   UICommand_AddString(sceneId, "Öµ1,Öµ2,Öµ3,...,Öµ32")
 --   EndUICommand(sceneId)
 --   DispatchUICommand(sceneId, selfId, 20220902)
--- ¿Í»§¶Ë½ÓÊÕ:
+-- ¿Í»§¶Ë½ÓÊ :
 --   Get_XParam_STR(0) -> "Öµ1,Öµ2,...,Öµ32"
 --   Split(str, ",") -> {Öµ1, Öµ2, ..., Öµ32}
 --===================================================
@@ -38,41 +38,41 @@ local MenPaiId = -1
 -- MDEX_CHUANCI_SH=266  MDEX_CHUANCI_JM=267
 --===================================================
 local ATTR_CONFIG = {
-    {522, 44},  -- ÑªÁ¿(MAX_HP)
-    {523, 45},  -- Á¦Á¿(STR)
-    {524, 46},  -- ÁéÆø(SPR)
-    {525, 47},  -- ÌåÁ¦(CON)
-    {526, 48},  -- ¶¨Á¦(INT)
-    {527, 49},  -- Éí·¨(DEX)
-    {528, 50},  -- Íâ¹¦¹¥»÷(WG)
-    {529, 51},  -- ÄÚ¹¦¹¥»÷(NG)
-    {530, 52},  -- Íâ¹¦·ÀÓù(WF)
-    {531, 53},  -- ÄÚ¹¦·ÀÓù(NF)
-    {532, 54},  -- »áÐÄ¹¥»÷(HUIXINGONG)
-    {533, 55},  -- »áÐÄ·ÀÓù(HUIXINFANG)
-    {534, 56},  -- ±ù¹¥(ICE_ATTR)
-    {535, 57},  -- »ð¹¥(FIRE_ATTR)
-    {536, 58},  -- Ðþ¹¥(LIGHT_ATTR)
-    {537, 59},  -- ¶¾¹¥(POSION_ATTR)
-    {538, 60},  -- ±ù¿¹(ICE_DEC)
-    {539, 61},  -- »ð¿¹(FIRE_DEC)
-    {540, 62},  -- Ðþ¿¹(LIGHT_DEC)
-    {541, 63},  -- ¶¾¿¹(POSION_DEC)
-    {542, 64},  -- ¼õ±ù¿¹(ICE_SUB_DEC)
-    {543, 65},  -- ¼õ»ð¿¹(FIRE_SUB_DEC)
-    {544, 66},  -- ¼õÐþ¿¹(LIGHT_SUB_DEC)
-    {545, 67},  -- ¼õ¶¾¿¹(POSION_SUB_DEC)
-    {546, 68},  -- ¼õ±ù¿¹ÏÂÏÞ(ICE_SUB_LIMIT)
-    {547, 69},  -- ¼õ»ð¿¹ÏÂÏÞ(FIRE_SUB_LIMIT)
-    {548, 70},  -- ¼õÐþ¿¹ÏÂÏÞ(LIGHT_SUB_LIMIT)
-    {549, 71},  -- ¼õ¶¾¿¹ÏÂÏÞ(POSION_SUB_LIMIT)
-    {550, 72},  -- ÃüÖÐ(HIT)
-    {551, 73},  -- ÉÁ±Ü(MISS)
-    {552, 74},  -- ´©´ÌÉËº¦(CHUANCI_SH)
-    {553, 75},  -- ´©´Ì¼õÃâ(CHUANCI_JM)
+    {522, 44},  -- ??(MAX_HP)
+    {523, 45},  -- ??(STR)
+    {524, 46},  -- ??(SPR)
+    {525, 47},  -- ??(CON)
+    {526, 48},  -- ??(INT)
+    {527, 49},  -- ??(DEX)
+    {528, 50},  -- ????(WG)
+    {529, 51},  -- ????(NG)
+    {530, 52},  -- ????(WF)
+    {531, 53},  -- ????(NF)
+    {532, 54},  -- ????(HUIXINGONG)
+    {533, 55},  -- ????(HUIXINFANG)
+    {534, 56},  -- ??(ICE_ATTR)
+    {535, 57},  -- ??(FIRE_ATTR)
+    {536, 58},  -- ??(LIGHT_ATTR)
+    {537, 59},  -- ??(POSION_ATTR)
+    {538, 60},  -- ??(ICE_DEC)
+    {539, 61},  -- ??(FIRE_DEC)
+    {540, 62},  -- ??(LIGHT_DEC)
+    {541, 63},  -- ??(POSION_DEC)
+    {542, 64},  -- ???(ICE_SUB_DEC)
+    {543, 65},  -- ???(FIRE_SUB_DEC)
+    {544, 66},  -- ???(LIGHT_SUB_DEC)
+    {545, 67},  -- ???(POSION_SUB_DEC)
+    {546, 68},  -- ?????(ICE_SUB_LIMIT)
+    {547, 69},  -- ?????(FIRE_SUB_LIMIT)
+    {548, 70},  -- ?????(LIGHT_SUB_LIMIT)
+    {549, 71},  -- ?????(POSION_SUB_LIMIT)
+    {550, 72},  -- ??(HIT)
+    {551, 73},  -- ??(MISS)
+    {552, 74},  -- ????(CHUANCI_SH)
+    {553, 75},  -- ????(CHUANCI_JM)
 }
 
-local ATTR_COUNT = 32  -- ÊôÐÔ×ÜÊý£¬ÓëATTR_CONFIG³¤¶ÈÒ»ÖÂ
+local ATTR_COUNT = 32  -- ????,?ATTR_CONFIG????
 
 --===================================================
 -- Í¨ÓÃ¹¤¾ßº¯Êý
@@ -82,7 +82,7 @@ local ATTR_COUNT = 32  -- ÊôÐÔ×ÜÊý£¬ÓëATTR_CONFIG³¤¶ÈÒ»ÖÂ
 local function GetTargetGuidSafe()
     local guid = GetTargetPlayerGUID()
     if guid == nil then
-        PushDebugMessage("Äú»¹Ã»ÓÐÑ¡ÔñÄ¿±êÍæ¼Ò£¬ÇëÏÈÑ¡ÖÐÍæ¼ÒÍ·Ïñ£¡")
+        PushDebugMessage("Nhçm còn không có lña ch÷n møc tiêu ngß¶i ch½i, Thïnh Tiên lña ch÷n ngß¶i ch½i hình cái ð¥u!")
         return 0
     end
     return guid
@@ -124,7 +124,7 @@ end
 local function RefreshFromServerString()
     local attrStr = Get_XParam_STR(0)
     if attrStr == nil or attrStr == "" then
-        PushDebugMessage("·þÎñ¶Ë·µ»ØÊý¾ÝÎª¿Õ")
+        PushDebugMessage("Phøc vø Ðoan phän h°i s¯ li®u Vi Không")
         return
     end
     local values = Split(attrStr, ",")

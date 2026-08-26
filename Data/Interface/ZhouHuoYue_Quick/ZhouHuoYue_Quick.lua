@@ -6,8 +6,8 @@ local g_Frame_UnifiedPosition
 --=========
 function ZhouHuoYue_Quick_PreLoad()
 
-	this:RegisterEvent("UI_COMMAND")--打开or刷新界面
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--进场景关闭界面
+	this:RegisterEvent("UI_COMMAND")--??or????
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("ZHOUHUOYUE_HOTPOINT")

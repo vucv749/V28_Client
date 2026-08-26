@@ -1,4 +1,4 @@
--- пёЁ║╧шу╫List
+-- пёЁ║╧ш═╫List
 
 local g_Timers = 0
 local g_Seconds = 2
@@ -10,12 +10,12 @@ local g_List_PageCount = 20;
 local g_Challenge_CurPage = 0;
 
 
-local CHALLENGE_TYPE_ICON_LEFT = {};		--	╠ххЭюЮпмм╪╠Й
+local CHALLENGE_TYPE_ICON_LEFT = {};		--	??????
 local CHALLENGE_TYPE_ICON_RIGHT = {};
 
--- SJBW_210415_01	#HгКох╫╚уДйчйу╩ь╨Сты╫Ьпп╧шу╫
--- SJBW_210415_02	#HгКохх║оШдЗ╣дфОЁкв╢л╛ты╫Ьпп╧шу╫
--- SJBW_210415_03	#HвИ╤с╦ЗкФв╢л╛обнч╥╗╫Ьпп╧шу╫
+-- SJBW_210415_01	#HгКох╫╚═Дйчй═╩ь╨Сты╫Ьпп╧ш═╫
+-- SJBW_210415_02	#HгКохх║оШдЗ╣дфОЁкв╢л╛ты╫Ьпп╧ш═╫
+-- SJBW_210415_03	#HвИ╤с╦ЗкФв╢л╛обнч╥╗╫Ьпп╧ш═╫
 -- SJBW_210415_04	иыаж
 -- SJBW_210415_05	цВ╫л
 -- SJBW_210415_06	ь╓╟О
@@ -26,24 +26,24 @@ local CHALLENGE_TYPE_ICON_RIGHT = {};
 -- SJBW_210415_11	лЛи╫
 -- SJBW_210415_12	Епрё
 -- SJBW_210415_13	нчцееи
--- SJBW_210415_14	#Hд©г╟ц╩сплТу╫╣дмФ╪рё╛дЗнч╥╗╧шу╫
+-- SJBW_210415_14	#Hд©г╟ц╩сплТ═╫╣дмФ╪рё╛дЗнч╥╗╧ш═╫
 -- SJBW_210415_15	тщнч╠ххЭ
 
-local g_MenPaiCount = 10; -- цееииооч 
+local g_MenPaiCount = 10; -- ???? 
 
 local CHALLENGE_MENPAISTRINFO = 
 {
-	[0]	=	"#{SJBW_210415_04}",	--"иыаж",
-	[1]	=	"#{SJBW_210415_05}",	--"цВ╫л",
-	[2]	=	"#{SJBW_210415_06}",	--"ь╓╟О",
-	[3]	=	"#{SJBW_210415_07}",	--"нД╣╠",
-	[4]	=	"#{SJBW_210415_08}",	--"╤Кц╪",
-	[5]	=	"#{SJBW_210415_09}",	--"пгкч",
-	[6]	=	"#{SJBW_210415_10}",	--"лЛаЗ",
-	[7]	=	"#{SJBW_210415_11}",	--"лЛи╫",
-	[8]	=	"#{SJBW_210415_12}",	--"Епрё",
-	[9]	=	"#{SJBW_210415_13}",	--"нчцееи"
-	[10]=	"#{GMGameInterface_Script_DataPool_Info_ManTuoShanZhuang}",--"бЭмси╫в╞",
+	[0]	=	"#{SJBW_210415_04}",	--"Thi╙u LБm",
+	[1]	=	"#{SJBW_210415_05}",	--"Minh GiАo",
+	[2]	=	"#{SJBW_210415_06}",	--"CАi Bang",
+	[3]	=	"#{SJBW_210415_07}",	--"VУ пang",
+	[4]	=	"#{SJBW_210415_08}",	--"Nga Mi",
+	[5]	=	"#{SJBW_210415_09}",	--"Tinh TЗc",
+	[6]	=	"#{SJBW_210415_10}",	--"ThiЙn Long",
+	[7]	=	"#{SJBW_210415_11}",	--"ThiЙn S╫n",
+	[8]	=	"#{SJBW_210415_12}",	--"TiЙu dao",
+	[9]	=	"#{SJBW_210415_13}",	--"TЯ do"
+	[10]=	"#{GMGameInterface_Script_DataPool_Info_ManTuoShanZhuang}",--"Mуn пЮ S╫n Trang",
 	-- [11]="#{}",--"лфце",
 	-- [12]="#{}",--"╧М╧х",
 	-- [13]="#{}",--"лр╩╗╣╨",
@@ -202,8 +202,8 @@ function TJiaochang_PK_List_FillListData()
 			break
 		end
 		
-		-- 10TL ╡╩╢Фтзим╫Пу╫ уБюОмЁр╩сцд╛хо╣д
-		-- SJBW_130823_31	вИ╤слТу╫
+		-- 10TL ╡╩╢Фтзим╫П═╫ ═БюОмЁр╩сцд╛хо╣д
+		-- SJBW_130823_31	вИ╤слТ═╫
 		-- CHALLENGE_TYPE_ICON_LEFT[curpos+1]:SetProperty("Image","set:UIIcons image:LeaderOpening")
 		-- CHALLENGE_TYPE_ICON_LEFT[curpos+1]:SetToolTip( "#{SJBW_130823_31}" )
 		-- CHALLENGE_TYPE_ICON_LEFT[curpos+1]:Show()
@@ -218,7 +218,7 @@ function TJiaochang_PK_List_FillListData()
 		 	CHALLENGE_TYPE_ICON_LEFT[curpos+1]:Show()
 		end
 
-		-- 10TL ╩╧ц╩сплЛмБё╛уБ©Ибъ╪╜тщй╠в╒йм╣Т
+		-- 10TL ╩╧ц╩сплЛмБё╛═Б©Ибъ╪╜тщй╠в╒йм╣Т
 		local selfZoneWorldID = DataPool:GetSelfZoneWorldID()
 		if selfZoneWorldID ~= 0 and selfZoneWorldID ~= zoneWorldIdA then
 			local serverName = DataPool:GetServerName( zoneWorldIdA )
@@ -235,8 +235,8 @@ function TJiaochang_PK_List_FillListData()
 		TJiaochang_PK_List_PkList:AddNewItem(tostring(levelA),3,curpos)
 		TJiaochang_PK_List_PkList:AddNewItem("#RVS",4,curpos)
 		
-		-- 10TL ╡╩╢Фтзим╫Пу╫ уБюОмЁр╩сцд╛хо╣д
-		-- SJBW_130823_31	вИ╤слТу╫
+		-- 10TL ╡╩╢Фтзим╫П═╫ ═БюОмЁр╩сцд╛хо╣д
+		-- SJBW_130823_31	вИ╤слТ═╫
 		-- CHALLENGE_TYPE_ICON_RIGHT[curpos+1]:SetProperty("Image","set:UIIcons image:LeaderOpening")
 		-- CHALLENGE_TYPE_ICON_RIGHT[curpos+1]:SetToolTip( "#{SJBW_130823_31}" )
 		-- CHALLENGE_TYPE_ICON_RIGHT[curpos+1]:Show()
@@ -251,7 +251,7 @@ function TJiaochang_PK_List_FillListData()
 		 	CHALLENGE_TYPE_ICON_RIGHT[curpos+1]:Show()
 		end
 		
-		-- 10TL ╩╧ц╩сплЛмБё╛уБ©Ибъ╪╜тщй╠в╒йм╣Т
+		-- 10TL ╩╧ц╩сплЛмБё╛═Б©Ибъ╪╜тщй╠в╒йм╣Т
 		if selfZoneWorldID ~= 0 and selfZoneWorldID ~= zoneWorldIdB then
 			local serverName = DataPool:GetServerName( zoneWorldIdB )
 			nameB = nameB.."@"..tostring(serverName)
@@ -291,7 +291,7 @@ end
 function TJiaochang_PK_List_WatchButtonClicked()
 	local nIndex = TJiaochang_PK_List_PkList:GetSelectItem()
 	if nIndex == -1 then
-		-- SJBW_210415_14	#Hд©г╟ц╩сплТу╫╣дмФ╪рё╛дЗнч╥╗╧шу╫
+		-- SJBW_210415_14	#Hд©г╟ц╩сплТ═╫╣дмФ╪рё╛дЗнч╥╗╧ш═╫
 		PushDebugMessage("#{SJBW_210415_14}")
 		return
 	end

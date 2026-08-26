@@ -3,9 +3,9 @@ local XiaRi_HanBing_Frame_UnifiedPosition;
 local g_LimitLV = 30
 local g_Reward = 
 {
-	[1] = {itemId = 20310168, num = 10, times = 8,},--金蚕丝*10
-	[2] = {itemId = 50313004, num = 1, times = 20,},--红宝石3级
-	[3] = {itemId = 38002221, num = 1, times = 32,},--晶石3级礼盒
+	[1] = {itemId = 20310168, num = 10, times = 8,},--???*10
+	[2] = {itemId = 50313004, num = 1, times = 20,},--???3?
+	[3] = {itemId = 38002221, num = 1, times = 32,},--??3???
 }
 local g_Button = {}
 local g_MF = {}
@@ -24,7 +24,7 @@ function XiaRi_HanBing_PreLoad()
 	this:RegisterEvent("ADJEST_UI_POS", false)
 	this:RegisterEvent("OBJECT_CARED_EVENT", false)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED", false)
-	this:RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- 离开场景
+	this:RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- ????
 
 end
 
@@ -57,7 +57,7 @@ end
 --=========================================================
 function XiaRi_HanBing_OnEvent(event)
 
-	if (event == "UI_COMMAND" and tonumber(arg0) == 89115901) then --打开界面
+	if (event == "UI_COMMAND" and tonumber(arg0) == 89115901) then --????
 		XiaRi_HanBing_Clear()
 		g_Total = Get_XParam_INT(0)
 		for i = 1, 3 do
@@ -68,7 +68,7 @@ function XiaRi_HanBing_OnEvent(event)
 		XiaRi_HanBing_ShowFrame()
 		this:Show()
 
-	elseif (event == "UI_COMMAND" and tonumber(arg0) == 89115902) then --刷新界面
+	elseif (event == "UI_COMMAND" and tonumber(arg0) == 89115902) then --????
 
 		if(not this:IsVisible()) then
     		return
@@ -158,7 +158,7 @@ end
 
 
 --=========================================================
--- 关闭界面
+-- 关睜界面
 --=========================================================
 function XiaRi_HanBing_OnHiden()
 	if g_ObjCared ~= -1 then

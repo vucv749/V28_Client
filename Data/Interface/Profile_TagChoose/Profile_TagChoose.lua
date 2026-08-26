@@ -282,7 +282,7 @@ function Profile_TagChoose_HelpClick()
 	
 end
 
---关闭按钮
+--关睜按钮
 function Profile_TagChoose_CloseClick()	
 
 	this:Hide()

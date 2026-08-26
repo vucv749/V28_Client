@@ -1,17 +1,17 @@
 local g_Agname_Frame_UnifiedPosition;
-local g_Agname_MapIndex = {}	--1.titleµÄË÷Òý£¬2.×ÜÊýµÄË÷Òý
+local g_Agname_MapIndex = {}	--1.title???,2.?????
 local g_Agname_LogicTypeTable = {}
 local g_Agname_curselect = -1
 local g_Agname_Curname = ""
 local g_Agname_Time =
 {
-	[1] = "Ò»",	[2] = "¶þ",	[3] = "Èý",	[4] = "ËÄ",	[5] = "Îå",	[6] = "Áù",	[7] = "ÈÕ",
+	[1] = "Mµt",	[2] = "Nh¸",	[3] = "Tam",	[4] = "TÑ",	[5] = "Ngû",	[6] = "Løc",	[7] = "Ngày",
 }
 local g_Agname_Image =
 {
-	[1] = "set:AgnameLayout image:AgnameLayout_Inuse",	--Ê¹ÓÃÖÐ
-	[2] = "",	--ÒÑÓµÓÐ
-	[3] = "set:AgnameLayout image:AgnameLayout_Notgain"	--Î´ÓµÓÐ
+	[1] = "set:AgnameLayout image:AgnameLayout_Inuse",	--???
+	[2] = "",	--???
+	[3] = "set:AgnameLayout image:AgnameLayout_Notgain"	--???
 
 }
 
@@ -66,17 +66,17 @@ function Agname_Init()
 	local Show_Hide = Lua_Get_IsShow_Hide_Flag()
 	if Show_Hide == 1 then
 
-		Agname_Button_Show:SetText("#{XCHXT_180124_12}") --ÏÔÊ¾³ÆºÅ
+		Agname_Button_Show:SetText("#{XCHXT_180124_12}") --????
 	else
 
-		Agname_Button_Show:SetText("#{XCHXT_180124_17}") --Òþ²Ø³ÆºÅ
+		Agname_Button_Show:SetText("#{XCHXT_180124_17}") --????
 	end
 
 end
 
 ----------------------------------------------------------------------------------------
 --
--- ¹Ø±Õ½çÃæ
+-- ¹Ø± ½çÃæ
 --
 
 function Agname_CloseUI()
@@ -96,7 +96,7 @@ function Agname_LeftLoad()
 	--ÒÑÓµÓÐ³ÆºÅÇ°ÅÅÏÔÊ¾
 	g_Agname_LogicTypeTable = {}
 	local alltitlelist = {}
-	local count = Player:GetAllTitlesNum();    --»ñÈ¡µ±Ç°µÄÀàÐÍÊýÁ¿
+	local count = Player:GetAllTitlesNum();    --?????????
 	local index = 0
 	local name = ""
 	local valid = 1
@@ -122,7 +122,7 @@ function Agname_LeftLoad()
 				end
 			else
 				if bhave == 1 and bflag == 2 then
-					if curstr == strname then	--ÒªÇóÏÔÊ¾**,ÅÐ¶ÏÊÇ·ñÅå´÷¾Í»á³öÎÊÌâ£¬ËùÒÔÕâÔÙ¼ÓÒ»ÏÂ
+					if curstr == strname then	--????**,???????????,???????
 						bwear = 1
 					end
 					name = shorname
@@ -165,7 +165,7 @@ function Agname_LeftLoad()
 	local havetypelist = {}
 	for i, v in ipairs(alltitlelist) do 
 		Agname_InsertData(i,v)
-		if v.bhave == 1  then	--´¦Àí¾É±í³ÆºÅµÄÎÊÌâ
+		if v.bhave == 1  then	--?????????
 			g_Agname_LogicTypeTable[v.logictype] = v.level
 		end
 
@@ -447,7 +447,7 @@ function Agname_ShowTitle(nIndex)
 
 end
 function Agname_UpdateFrame()
-	--Çå¿Õ
+	--Çå¿ 
 	Agname_LeftLoad()
 	Agname_TitlteInfoOnChoice(1)
 
@@ -526,9 +526,9 @@ function Agname_SHOW_HIDE_Format()
 	if str and string.len(str) > 0 then
 		local Show_Hide = Lua_Get_IsShow_Hide_Flag()
 		if Show_Hide == 1 then
-			Agname_Button_Show:SetText("#{XCHXT_180124_12}") --ÏÔÊ¾³ÆºÅ
+			Agname_Button_Show:SetText("#{XCHXT_180124_12}") --????
 		else
-			Agname_Button_Show:SetText("#{XCHXT_180124_17}") --Òþ²Ø³ÆºÅ
+			Agname_Button_Show:SetText("#{XCHXT_180124_17}") --????
 		end
 	else
 		--PushDebugMessage("#{XCHXT_180124_15}")
@@ -584,7 +584,7 @@ end
 
 function Agname_HideTitle_Clicked()
 
-	Agname_Currently:SetText( "µ±Ç°³ÆºÅ:");
+	Agname_Currently:SetText( "Trß¾c m£t danh hi®u:");
 	Player:SetNullAgname();
 end
 
@@ -598,7 +598,7 @@ end
 
 function Agname_CloseUI()
 
-	-- ´ò¿ª»òÕß¹Ø±Õ³ÆºÅ½çÃæ
+	-- ´ò¿ª»ò ß¹Ø± ³ÆºÅ½çÃæ
 
 
 

@@ -1,4 +1,4 @@
-local objCared = -1;								--关心NPC的Obj的编号（Server传过来）
+local objCared = -1;								--??NPC?Obj???(Server???)
 
 --UI
 local g_CoupleZone_Zhanbu_UI_Animate = ""
@@ -25,7 +25,7 @@ local g_CoupleZone_Zhanbu_Info =
 	[4] = { tips1 = "#{QLKJ_230331_42}", tips2 = "#{QLKJ_230331_46}", imgset = "set:CoupleZone3 image:Zhanbu_Image4"  },
 }
 
-local g_CoupleZone_Zhanbu_Animate_Time = 5*1000  --毫秒
+local g_CoupleZone_Zhanbu_Animate_Time = 5*1000  --??
 
 --!!!reloadscript =CoupleZone_Zhanbu
 
@@ -131,10 +131,10 @@ end
 function CoupleZone_Zhanbu_AskCoupleZone_ZhanbuData()
 	CoupleZone_Zhanbu_Debug("CoupleZone_Zhanbu_AskCoupleZone_ZhanbuData")
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "OnAskCoupleZone_ZhanbuData" ); 		-- 函数名
-		Set_XSCRIPT_ScriptID( 998324 );						-- 脚本编号
-		Set_XSCRIPT_Parameter(0, 1);    					-- 请求类型  1  打开空间主界面前请求
-		Set_XSCRIPT_ParamCount( 1 );						-- 参数个数
+		Set_XSCRIPT_Function_Name( "OnAskCoupleZone_ZhanbuData" ); 		-- ???
+		Set_XSCRIPT_ScriptID( 998324 );						-- ????
+		Set_XSCRIPT_Parameter(0, 1);    					-- ????  1  ??????????
+		Set_XSCRIPT_ParamCount( 1 );						-- ????
 	Send_XSCRIPT()
 end
 
@@ -167,7 +167,7 @@ end
 
 --=========================================================
 --开始关心NPC，
---在开始关心之前需要先确定这个界面是不是已经有“关心”的NPC，
+--在开始关心之前需要先确定犫个界面是不是已经有“关心”的NPC，
 --如果有的话，先取消已经有的“关心”
 --=========================================================
 function BeginCareObject_CoupleZone_Zhanbu(objCaredId)

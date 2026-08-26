@@ -6,7 +6,7 @@ local m_cambat4UI = {}
 local m_cambat2UI = {}
 local m_cambat1UI = {}
 local m_cambatUI = {}
---预加载函数，可以而且只能在这里注册脚本关心的事件
+--预加载函数，可以而且只能在犫里注册脚本关心的事件
 function FC_BattleTable_PreLoad()
 	this:RegisterEvent("ZJZDPVP_UIOP", true)
 	-- 游戏窗口尺寸发生了变化

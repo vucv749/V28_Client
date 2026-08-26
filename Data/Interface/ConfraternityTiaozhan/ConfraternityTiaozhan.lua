@@ -1,6 +1,6 @@
 
 local g_ConfraternityTiaozhan_Frame_UnifiedPosition;
---帮派征讨接受挑战界面
+--帮派狑讨接受挑牻界面
 
 function ConfraternityTiaozhan_PreLoad()
 	this:RegisterEvent("GUILD_SHOW_TIAOZHAN");

@@ -131,7 +131,7 @@ function Talent_Shop_OnEvent(event)
 		g_ServerCareID = Get_XParam_INT(1)
 		objCared = DataPool:GetNPCIDByServerID(g_ServerCareID);
 		if( 0 > objCared ) then
-			PushDebugMessage("server´«¹ýÀ´µÄÊý¾ÝÓÐÎÊÌâ¡£");
+			PushDebugMessage("Dæ li®u máy chü có v¤n ð«");
 			return
 		end
 		this:CareObject(objCared, 1, "Talent_Shop");
@@ -151,7 +151,7 @@ function Talent_Shop_OnEvent(event)
 			return;
 		end
 		
-		--Èç¹ûºÍÉÌÈËµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍÉÌÈËµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			--È¡Ïû¹ØÐÄ
 			SetDefaultMouse();

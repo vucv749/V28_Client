@@ -10,11 +10,11 @@ local g_HeroMemory_MaxValue = 28
 local g_LimitLV = 30
 local g_Reward = 
 {
-	[1] = {itemId = 30900006, num = 2, times = 2,},--天罡强化精华*2
-	[2] = {itemId = 20310168, num = 5, times = 6,},--金蚕丝*5
-	[3] = {itemId = 20800013, num = 5, times = 12,},--地元石*5
-	[4] = {itemId = 50313004, num = 1, times = 20,},--红宝石3级
-	[5] = {itemId = 38002221, num = 1, times = 28,},--晶石3级礼盒
+	[1] = {itemId = 30900006, num = 2, times = 2,},--??????*2
+	[2] = {itemId = 20310168, num = 5, times = 6,},--???*5
+	[3] = {itemId = 20800013, num = 5, times = 12,},--???*5
+	[4] = {itemId = 50313004, num = 1, times = 20,},--???3?
+	[5] = {itemId = 38002221, num = 1, times = 28,},--??3???
 }
 local g_FinishTimes = 0
 local g_MF = {0,0,0,0,0}
@@ -27,7 +27,7 @@ function HerosMemory_PreLoad()
 
 	this:RegisterEvent("ADJEST_UI_POS", false)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED", false)
-	this:RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- 离开场景
+	this:RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- ????
 
 end
 
@@ -75,12 +75,12 @@ end
 --=========================================================
 function HerosMemory_OnEvent(event)
 
-	if (event == "UI_COMMAND" and tonumber(arg0) == 89112401) then --打开界面
+	if (event == "UI_COMMAND" and tonumber(arg0) == 89112401) then --????
 		HerosMemory_Clear()
 		HerosMemory_Init()
 		this:Show()
 
-	elseif (event == "UI_COMMAND" and tonumber(arg0) == 89112402) then --刷新界面
+	elseif (event == "UI_COMMAND" and tonumber(arg0) == 89112402) then --????
 		HerosMemory_Init()
 	elseif (event == "ADJEST_UI_POS" ) then
 		HerosMemory_On_ResetPos()
@@ -122,7 +122,7 @@ function HerosMemory_Init(sex)
 			g_Button[i]:SetActionItem( -1 );
 		end
 
-		if g_MF[i] == 1 then--已经领取过
+		if g_MF[i] == 1 then--?????
 			g_ButtonMask[i]:Show()
 			g_Animate[i]:Hide()
 		else
@@ -143,7 +143,7 @@ end
 
 
 --=========================================================
--- 关闭界面
+-- 关睜界面
 --=========================================================
 function HerosMemory_Close()
 	HerosMemory_Clear()

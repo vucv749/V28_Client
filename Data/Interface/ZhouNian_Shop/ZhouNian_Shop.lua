@@ -7,16 +7,16 @@ local g_ZhouNian_Shop_ConvId = {}
 local g_ZhouNian_Shop_DayLimitID = 19
 local g_ZhouNian_Shop_WeekLimitID = 20
 local g_ZhouNian_Shop_MaskToolTip = {
-	{ Id = 1, ToolTip = "#{WYSD_20250807_77}" },		-- ´äÖñÓÆÓÆ¡¤×Á»ª
-	{ Id = 2, ToolTip = "#{WYSD_20250807_99}" },		-- ÎåÖÜÄêÍ·ÊÎ
-	{ Id = 3, ToolTip = "#{WYSD_20250807_100}" },		-- ÎåÖÜÄêÍ·ÊÎ
+	{ Id = 1, ToolTip = "#{WYSD_20250807_77}" },		-- ????·??
+	{ Id = 2, ToolTip = "#{WYSD_20250807_99}" },		-- ?????
+	{ Id = 3, ToolTip = "#{WYSD_20250807_100}" },		-- ?????
 }
 
 --=========
 -- PreLoad()
 --=========
 function ZhouNian_Shop_PreLoad()
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--½ø³¡¾°¹Ø±Õ½çÃæ
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("OPEN_5YEARS_SHOP")
@@ -196,7 +196,7 @@ function ZhouNian_Shop_OnLoad()
 	ZhouNian_Shop_ItemUpPage:SetText ("#{WYSD_20250807_23}")
 	-- ÏÂÒ»Ò³
 	ZhouNian_Shop_ItemDownPage:SetText ("#{WYSD_20250807_25}")
-	-- ÈÕÏÞ¹º tip
+	-- È ÏÞ¹º tip
 	ZhouNian_Shop_Currency_MaxDay:SetToolTip ("#{WYSD_20250807_74}")
 	-- ÖÜÏÞ¹º tip
 	ZhouNian_Shop_Currency_MaxWeek:SetToolTip ("#{WYSD_20250807_27}")
@@ -268,7 +268,7 @@ function ZhouNian_Shop_On_ResetPos()
 end
 
 --=========
--- ¹Ø±Õ
+-- ¹Ø± 
 --=========
 function ZhouNian_Shop_OnClose()
 	this:Hide()
@@ -310,7 +310,7 @@ function ZhouNian_Shop_UpdateToken ()
 
 	local dayLimitId, _1, _2, _3, dayLimitNum = Lua_GetLimitShopTable (g_ZhouNian_Shop_DayLimitID)
 	local weekLimitId, _1, _2, _3, weekLimitNum = Lua_GetLimitShopTable (g_ZhouNian_Shop_WeekLimitID)
-	-- ÉèÖÃÈÕÏÞ¹ºÊý¾Ý
+	-- ÉèÖÃÈ ÏÞ¹ºÊý¾Ý
 	if dayLimitId > 0 then
 		local daylimitstrtip = ScriptGlobal_Format ("#{WYSD_20250807_73}", dayLimitNum - daylimit)
 		ZhouNian_Shop_Currency_MaxDay:SetText (daylimitstrtip)
@@ -352,7 +352,7 @@ function ZhouNian_Shop_Update ()
 	local end_index = math.min (beg_index + g_itemCountPerPage - 1, sumcount)
 	local ui_index = 1
 	local curDay = tonumber(DataPool:GetServerDayTime())
-	-- Çå¿Õ id ×ª»» table
+	-- Çå¿  id ×ª»» table
 	g_ZhouNian_Shop_ConvId = {}
 
 	for i = beg_index, end_index do
@@ -423,7 +423,7 @@ function ZhouNian_Shop_Update ()
 			ui.LimitBackground:Hide()
 		end
 
-		-- CostIcon Õâ¸öÔÝÊ±²»ÓÃ¸Ä...
+		-- CostIcon  â¸öÔÝÊ±²»ÓÃ¸Ä...
 		-- CostText
 		local strcost = ScriptGlobal_Format("#{WYSD_20250807_20}", one.mCostNum)
 		ui.CostText:SetText (strcost)
@@ -433,7 +433,7 @@ function ZhouNian_Shop_Update ()
 	ZhouNian_Shop_UpdateToken ()
 end
 
--- ÓÃ Update ¹Ø±Õ×Ó½çÃæ
+-- ÓÃ Update ¹Ø± ×Ó½çÃæ
 function ZhouNian_Shop_On_Hide ()
 	-- PushEvent ("UPDATE_5YEARS_SHOP")
 	if(IsWindowShow("ZhouNian_Shop_CurrencyBuy")) then
@@ -442,7 +442,7 @@ function ZhouNian_Shop_On_Hide ()
 	if(IsWindowShow("ZhouNian_Shop_MBuy")) then
 		CloseWindow("ZhouNian_Shop_MBuy", true)
 	end
-	-- ÓÃÕâ¸ö¹Ø±Õ ´ò¿ªµÄ¶þ´ÎÈ·ÈÏ½çÃæ
+	-- ÓÃ â¸ö¹Ø±  ´ò¿ªµÄ¶þ´ÎÈ·ÈÏ½çÃæ
 	PushEvent ("OPEN_5YEARS_CURRENCY_SHOP_CONFIRM", -1, -1)
 end
 
@@ -451,5 +451,5 @@ function ZhouNian_Shop_Currency_BuyClicked()
 end
 
 function ZhouNian_Shop_ReviewClicked()
-	PushEvent("OPEN_DRESSPREVIEW", 10126621, 128, 86) --Ê±×°\·¢ÐÍ\Á³ÐÍ
+	PushEvent("OPEN_DRESSPREVIEW", 10126621, 128, 86) --??\??\??
 end

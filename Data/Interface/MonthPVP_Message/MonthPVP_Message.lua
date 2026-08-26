@@ -4,9 +4,9 @@ local g_MonthPVP_Message_StrTeamName =
 {
 	[1] = {str = "#{LLKC_240517_50}"},
 	[2] = {str = "#{LLKC_240517_51}"},
-    [3] = {str = "#{LLKC_240517_274}"}, --高级采集物
-    [4] = {str = "#{LLKC_240517_275}"}, --小怪
-    [5] = {str = "#{LLKC_240517_313}"}, --至尊宝预告
+    [3] = {str = "#{LLKC_240517_274}"}, --?????
+    [4] = {str = "#{LLKC_240517_275}"}, --??
+    [5] = {str = "#{LLKC_240517_313}"}, --?????
 }
 
 local g_MonthPVP_Message_StrPos =

@@ -14,14 +14,14 @@ end
 function AccusationStudio_OnLoad()
 	g_AccusationStudio_Frame_UnifiedPosition = AccusationStudio_Frame:GetProperty("UnifiedPosition")
 	
-	g_AccusationStudio_Check[1] = AccusationStudio_Dailian_Bind;	--µØ¹¬´úÁ·
-	g_AccusationStudio_Check[2] = AccusationStudio_Pianzi_Bind;		--Ç®×¯Ð¡ÍµºÍÇ®×¯Æ­×Ó
-	g_AccusationStudio_Check[3] = AccusationStudio_Datu_Bind;			--³ÑÐ×´òÍ¼¹¤×÷ÊÒ
-	g_AccusationStudio_Check[4] = AccusationStudio_Dacailiao_Bind;--Ò°Íâ´óÅúÁ¿ÕÊºÅË¢²ÄÁÏ
-	g_AccusationStudio_Check[5] = AccusationStudio_Shuama_Bind;		--Ë¢Âí¹¤×÷ÊÒ
-	g_AccusationStudio_Check[6] = AccusationStudio_Qiangzhan_Bind;--ÇÀÕ¼¸±±¾×ÊÔ´
-	g_AccusationStudio_Check[7] = AccusationStudio_Weigui_Bind;		--½ÇÉ«Ãû»òÐÄÇéÐû´«Ë½·þµÈ·Ç·¨ÐÅÏ¢
-	g_AccusationStudio_Check[8] = AccusationStudio_Qita_Bind;			--ÆäËû
+	g_AccusationStudio_Check[1] = AccusationStudio_Dailian_Bind;	--????
+	g_AccusationStudio_Check[2] = AccusationStudio_Pianzi_Bind;		--?????????
+	g_AccusationStudio_Check[3] = AccusationStudio_Datu_Bind;			--???????
+	g_AccusationStudio_Check[4] = AccusationStudio_Dacailiao_Bind;--??????????
+	g_AccusationStudio_Check[5] = AccusationStudio_Shuama_Bind;		--?????
+	g_AccusationStudio_Check[6] = AccusationStudio_Qiangzhan_Bind;--??????
+	g_AccusationStudio_Check[7] = AccusationStudio_Weigui_Bind;		--???????????????
+	g_AccusationStudio_Check[8] = AccusationStudio_Qita_Bind;			--??
 end
 
 function AccusationStudio_OnEvent(event)
@@ -32,9 +32,9 @@ function AccusationStudio_OnEvent(event)
 		local bHaveMaskBuff = tonumber(arg4);		
 		local szMenpai = AccusationStudio_GetMenPai(nMenpai);		
 		if bHaveMaskBuff == 1 then
-			AccusationStudio_Text:SetText( "#{ZDJB_170517_13}#G"..g_AccusationStudio_WaiguaName.."#cfff263£¨µÈ¼¶£º#G".."?".."#cfff263£¬ÃÅÅÉ£º#G"..szMenpai.."#cfff263£©")		--´Ë´¦µÄÑÕÉ«
+			AccusationStudio_Text:SetText( "#{ZDJB_170517_13}#G"..g_AccusationStudio_WaiguaName.."#cfff263(c¤p b§c: #G".."?".."#cfff263, môn phái: #G"..szMenpai.."#cfff263)")		--?????
 		else
-			AccusationStudio_Text:SetText( "#{ZDJB_170517_13}#G"..g_AccusationStudio_WaiguaName.."#cfff263£¨µÈ¼¶£º#G"..nLevel.."#cfff263£¬ÃÅÅÉ£º#G"..szMenpai.."#cfff263£©")		--´Ë´¦µÄÑÕÉ«
+			AccusationStudio_Text:SetText( "#{ZDJB_170517_13}#G"..g_AccusationStudio_WaiguaName.."#cfff263(c¤p b§c: #G"..nLevel.."#cfff263, môn phái: #G"..szMenpai.."#cfff263)")		--?????
 		end
 		for i=1,8 do
 			g_AccusationStudio_Check[i]:SetCheck(0);
@@ -94,37 +94,37 @@ function AccusationStudio_GetMenPai( menpai )
 	
 	-- µÃµ½ÃÅÅÉÃû³Æ.
 	if(0 == menpai) then
-		strName = "ÉÙÁÖ";
+		strName = "Thiªu Lâm";
 
 	elseif(1 == menpai) then
-		strName = "Ã÷½Ì";
+		strName = "Minh Giáo";
 
 	elseif(2 == menpai) then
-		strName = "Ø¤°ï";
+		strName = "Cái Bang";
 
 	elseif(3 == menpai) then
-		strName = "Îäµ±";
+		strName = "Võ Ðang";
 
 	elseif(4 == menpai) then
-		strName = "¶ëáÒ";
+		strName = "Nga Mi";
 
 	elseif(5 == menpai) then
-		strName = "ÐÇËÞ";
+		strName = "Tinh Túc";
 
 	elseif(6 == menpai) then
-		strName = "ÌìÁú";
+		strName = "Thiên Long";
 
 	elseif(7 == menpai) then
-		strName = "ÌìÉ½";
+		strName = "Thiên S½n";
 
 	elseif(8 == menpai) then
-		strName = "åÐÒ£";
+		strName = "Tiêu dao";
 
 	elseif(9 == menpai) then
-		strName = "ÎÞÃÅÅÉ";
+		strName = "Tñ do";
 
 	elseif(10== menpai) then
-		strName = "ÂüÍÓÉ½×¯";
+		strName = "MÕn Ðà S½n Trang";
 		
 	end
 		

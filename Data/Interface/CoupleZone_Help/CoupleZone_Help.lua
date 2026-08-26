@@ -4,7 +4,7 @@ local g_CoupleZone_Help_ContentText = ""
 
 local g_CoupleZone_TextDic = 
 {
-	[1] = { title = "占卜标题", content = "占卜说明"}
+	[1] = { title = "B骾 to醤 ti陁 皤", content = "B骾 to醤 thuy猼 minh"}
 }
 
 local g_CoupleZone_Help_IsDebug = 0

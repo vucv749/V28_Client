@@ -15,17 +15,17 @@ local g_Page = {
 }
 
 local g_menpai = {
-	[1] = {Text = "ÉÙÁÖ",}, --ÉÙÁÖ
-	[2] = {Text = "Ã÷½Ì",}, --Ã÷½Ì
-	[3] = {Text = "Ø¤°ï",}, --Ø¤°ï
-	[4] = {Text = "Îäµ±",}, --Îäµ±
-	[5] = {Text = "¶ëáÒ",}, --¶ëÃ¼
-	[6] = {Text = "ĞÇËŞ",}, --ĞÇËŞ
-	[7] = {Text = "ÌìÁú",}, --ÌìÁú
-	[8] = {Text = "ÌìÉ½",}, --ÌìÉ½
-	[9] = {Text = "åĞÒ£",}, --åĞÒ£
-	[10] = {Text = "ÂüÍÓÉ½×¯",}, --ÂüÍÓÉ½×¯
-	[11] = {Text = "¶ñÈË¹È",}, --¶ñÈË¹È
+	[1] = {Text = "Thiªu Lâm",}, --??
+	[2] = {Text = "Minh Giáo",}, --??
+	[3] = {Text = "Cái Bang",}, --??
+	[4] = {Text = "Võ Ğang",}, --??
+	[5] = {Text = "Nga Mi",}, --??
+	[6] = {Text = "Tinh Túc",}, --??
+	[7] = {Text = "Thiên Long",}, --??
+	[8] = {Text = "Thiên S½n",}, --??
+	[9] = {Text = "Tiêu dao",}, --??
+	[10] = {Text = "MÕn Ğà S½n Trang",}, --????
+	[11] = {Text = "Ác Nhân C¯c",}, --???
 }
 
 
@@ -166,12 +166,12 @@ function TargetPeak_Update()
 
 	for i=1,3 do
 		TargetPeak_WuxueLearn_Attack[i] = _G[string.format("TargetPeak_WuxueLearn_Attack%d",i)]
-		TargetPeak_WuxueLearn_Attack[i]:SetText("#cff0000ÉĞÎ´Ñ¡ÔñÃÅÅÉ")
+		TargetPeak_WuxueLearn_Attack[i]:SetText("#cff0000chßa lña ch÷n môn phái")
 		TargetPeak_WuxueLearn_Attack[i]:SetProperty("HorzFormatting","HorzCentred")
 		TargetPeak_WuxueLearn_Attack[i]:SetToolTip("")
 		TargetPeak_WuxueLearn_Attack[i]:Hide()
 		TargetPeak_WuxueLearn_Defence[i] = _G[string.format("TargetPeak_WuxueLearn_Defence%d",i)]
-		TargetPeak_WuxueLearn_Defence[i]:SetText("#cff0000ÉĞÎ´Ñ¡ÔñÃÅÅÉ")
+		TargetPeak_WuxueLearn_Defence[i]:SetText("#cff0000chßa lña ch÷n môn phái")
 		TargetPeak_WuxueLearn_Defence[i]:SetProperty("HorzFormatting","HorzCentred")
 		TargetPeak_WuxueLearn_Defence[i]:SetToolTip("")
 		TargetPeak_WuxueLearn_Defence[i]:Hide()
@@ -231,7 +231,7 @@ function TargetPeak_Update()
 			end
 			TargetPeak_WuxueLearn_Attack[i]:SetText(szJinGongMenPai)
 			TargetPeak_WuxueLearn_Attack[i]:SetProperty("HorzFormatting","LeftAligned")
-			TargetPeak_WuxueLearn_Attack[i]:SetToolTip("#cfff263×î¶à¿É¶Ô#G"..szJinGongMenPai.."#cfff263ÃÅÅÉÔì³ÉµÄÉËº¦Ôö¼Ó#G"..tostring(nAttackMenPaiXDD_ex).."#cfff263£¨Ğè¼ÆËã¶Ô·½µÄÊØÓùÎä¾÷£©")
+			TargetPeak_WuxueLearn_Attack[i]:SetToolTip("#cfff263nhi«u nh¤t có ğúng không#G"..szJinGongMenPai.."#cfff263môn phái tÕo thành Ğích thß½ng t±n gia tång#G"..tostring(nAttackMenPaiXDD_ex).."#cfff263(Nhu tính toán ğ¯i phß½ng Ğích Thü Ngñ Võ Quyªt)")
 			TargetPeak_WuxueLearn_Attack[i]:Show()
 			TargetPeak_WuxueLearn_Attack_Num[i]:SetText(AttackMenPaiXDD[i])
 			TargetPeak_WuxueLearn_Attack_Locked[i]:Hide()
@@ -248,7 +248,7 @@ function TargetPeak_Update()
 			end
 			TargetPeak_WuxueLearn_Defence[i]:SetText(szFangYuMenPai)
 			TargetPeak_WuxueLearn_Defence[i]:SetProperty("HorzFormatting","LeftAligned")
-			TargetPeak_WuxueLearn_Defence[i]:SetToolTip("#G"..szFangYuMenPai.."#cfff263ÃÅÅÉ¶Ô×ÔÉíÔì³ÉµÄÉËº¦×î¶à½µµÍ#G"..tostring( nDefenceMenPaiXDD_ex).."#cfff263£¨Ğè¼ÆËã¶Ô·½µÄ¹¥»÷Îä¾÷£©")
+			TargetPeak_WuxueLearn_Defence[i]:SetToolTip("#G"..szFangYuMenPai.."#cfff263môn phái Ğ¯i tñ thân tÕo thành Ğích thß½ng t±n nhi«u nh¤t r½i ch§m lÕi#G"..tostring( nDefenceMenPaiXDD_ex).."#cfff263(Nhu tính toán ğ¯i phß½ng Ğích công kích Võ Quyªt)")
 			TargetPeak_WuxueLearn_Defence[i]:Show()
 			TargetPeak_WuxueLearn_Defence_Num[i]:SetText(DfenceMenPaiXDD[i])
 			TargetPeak_WuxueLearn_Defence_Locked[i]:Hide()
@@ -260,7 +260,7 @@ end
 
 function TargetPeak_DealData()
 
-	local shuxing = {"Á¦Á¿","ÁéÆø","¶¨Á¦","Éí·¨","Íâ¹¦¹¥»÷","ÄÚ¹¦¹¥»÷","Íâ¹¦·ÀÓù","ÄÚ¹¦·ÀÓù","ÌåÁ¦"}
+	local shuxing = {"Lñc lßşng","Nµi Lñc","Ğ¸nh lñc","Thân pháp","NgoÕi công công kích","Nµi công công kích","NgoÕi công phòng ngñ","Nµi công phòng ngñ","Th¬ lñc"}
 	for i=1, table.getn(shuxing) do
 		local key = shuxing[i]
 		local ShuxingCache = g_TargetPeak_shuxing_INT_Cache[key]
@@ -400,35 +400,35 @@ function TargetPeak_ShowPage()
 	end
 end
 function TargetPeak_CheckPage(idx)
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--ÕäÊŞ
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--ÁéÓñ
+	elseif idx == 5 then--??
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
 		end
 		return 1
-	elseif idx == 6 then--Éñ±ø
+	elseif idx == 6 then--??
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
 		end
 		return 1
-	elseif idx == 7 then--µñÎÄ½ø½×
+	elseif idx == 7 then--????
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
 		end
 		return 1
-	elseif idx == 8 then--áÛ·å 
+	elseif idx == 8 then--?? 
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
 		end
 		return 1
-	elseif idx == 9 then--¸öÈË
+	elseif idx == 9 then--??
 		return 1
 	end
 	return 0
@@ -452,19 +452,19 @@ function TargetPeak_OnPageClicked(idx)
 	Variable:SetVariable("TargetPageNumber", tostring(idx), 1);
 	idx = g_PageOrder[idx]
 
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		TargetPeak_TargetEquip_Switch()
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		TargetPeak_TargetData_Switch()
-	elseif idx == 3 then--ÕäÊŞ
+	elseif idx == 3 then--??
 		TargetPeak_OtherPet_Switch()
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		TargetPeak_TargetWuhun_Switch()
-	elseif idx == 5 then--ÁéÓñ
+	elseif idx == 5 then--??
 		TargetPeak_TargetLingyu_Switch()
-	elseif idx == 6 then--Éñ±ø
+	elseif idx == 6 then--??
 		TargetPeak_ShenBing_Switch()
-	elseif idx == 7 then--µñÎÄ½ø½×
+	elseif idx == 7 then--????
 		TargetPeak_DWJinJie_Switch()
 	elseif idx == 8 then
 		TargetPeak_ClearPage()
@@ -495,7 +495,7 @@ function TargetPeak_InsertData(index)
 end
 
 function TargetPeak_InsertData_DFengQND(index)
-	local attrstr = "Ç±ÄÜµã"
+	local attrstr = "Ti«m nång Ği¬m"
 	local QNDValue = GetDFengDFengQNDValueINT(index)
 	if  QNDValue > 0 then
 		if g_TargetPeak_shuxing_INT_Cache[attrstr] and g_TargetPeak_shuxing_INT_Cache[attrstr] > 0 then

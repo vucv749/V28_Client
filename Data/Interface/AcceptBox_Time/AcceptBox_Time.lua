@@ -15,8 +15,8 @@ local g_AcceptBox_Time_FrameVar = {
 }
 
 local FrameInfoList = {
-	JIHESHAO_USE_CONFIRM = 1;	--集合哨
-	JIHESHAO_RET_CONFIRM = 2;	--集合哨
+	JIHESHAO_USE_CONFIRM = 1;	--???
+	JIHESHAO_RET_CONFIRM = 2;	--???
 }
 
 local AcceptBox_Time_FrameSize_Original = 0
@@ -34,7 +34,7 @@ function AcceptBox_Time_PreLoad()
 	this:RegisterEvent("ADJEST_UI_POS");
     -- 游戏分辨率发生了变化
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED");
-	this:RegisterEvent("PLAYER_LEAVE_WORLD");--切场景
+	this:RegisterEvent("PLAYER_LEAVE_WORLD");--???
 	this:RegisterEvent("PLAYER_ENTERING_WORLD")
 end
 
@@ -102,7 +102,7 @@ function AcceptBox_Time_OnEvent(event)
 			
 			local str = Get_XParam_STR(0);
 			
-			AcceptBox_Time_Text:SetText( str );	-- 设置内容
+			AcceptBox_Time_Text:SetText( str );	-- ????
 			
 			g_AcceptBox_Time_Time_FrameInfo = FrameInfoList.JIHESHAO_USE_CONFIRM
 			
@@ -126,7 +126,7 @@ function AcceptBox_Time_OnEvent(event)
 			g_AcceptBox_Time_FrameVar[2] = Get_XParam_INT(1);
 			g_AcceptBox_Time_FrameVar[3] = Get_XParam_INT(2);
 					
-			if g_AcceptBox_Time_FrameVar[1] == 242 then  --雪景洛阳- -
+			if g_AcceptBox_Time_FrameVar[1] == 242 then  --????- -
 				g_AcceptBox_Time_FrameVar[1] = 0
 			end
 			
@@ -137,8 +137,8 @@ function AcceptBox_Time_OnEvent(event)
 				str = ScriptGlobal_Format("#{SFDJ_240117_59}", namestr, scenename, g_AcceptBox_Time_FrameVar[2], g_AcceptBox_Time_FrameVar[3])
 			end
 			
-			AcceptBox_Time_PageHeader_Name:SetText( "#{SFDJ_240117_58}" );	-- 设置题目
-			AcceptBox_Time_Text:SetText( str );	-- 设置内容
+			AcceptBox_Time_PageHeader_Name:SetText( "#{SFDJ_240117_58}" );	-- ????
+			AcceptBox_Time_Text:SetText( str );	-- ????
 			
 			g_AcceptBox_Time_Time_FrameInfo = FrameInfoList.JIHESHAO_RET_CONFIRM
 			

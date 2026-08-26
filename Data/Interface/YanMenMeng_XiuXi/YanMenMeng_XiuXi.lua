@@ -10,13 +10,13 @@ local MAX_OBJ_DISTANCE = 3.0
 local objCared = -1
 local g_Object = -1
 --当前选择休息室id
-local g_YanMenMeng_XiuXiMax = 20 --最多20个休息室
+local g_YanMenMeng_XiuXiMax = 20 --????20??????
 local g_YanMenMeng_XiuXiIdx = -1
 local g_YanMenMeng_Object = -1
 -- 控件表
 local g_YanMenMeng_XiuXi_Self = nil
-local g_YanMenMeng_XiuXi_OtherList = {}		--其他跨服
-local g_YanMenMeng_XiuXi_TxtList = {}		--文本显示
+local g_YanMenMeng_XiuXi_OtherList = {}		--??????
+local g_YanMenMeng_XiuXi_TxtList = {}		--??????
 --服务器名
 local g_YanMenMeng_XiuXi_NameList = 
 {
@@ -194,7 +194,7 @@ end
 function YanMenMeng_XiuXi_Open(nState1,nState2,nState3,nState4,nPreIdx)
 	--PushDebugMessage("test nState1="..nState1.." nState2="..nState2.." nState3="..nState3.." nState4="..nState4.." nPreIdx="..nPreIdx)
 	--初始化数据 0未开放 1畅通 2正常 3拥挤 4爆满 五个服合一个数据
-	local nStateList = {}--其他跨服
+	local nStateList = {}--??????
 	--floor 取整 mod取余
 	nStateList[1] = math.floor( (math.mod(nState1,100000))/10000 )  
 	nStateList[2] = math.floor( (math.mod(nState1,10000))/1000 )  

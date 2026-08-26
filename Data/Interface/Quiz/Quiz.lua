@@ -11,7 +11,7 @@ local g_Object = -1;
 -- 1 = Ç®ÁúÐÂÊÖÈÎÎñ´ðÌâ½çÃæ....
 -- 2 = 2007Ê¥µ®Ôªµ©--ÐÂÊÖ³é½±´ðÌâ½çÃæ....
 -- 3 = 2007Ê¥µ®Ôªµ©--µ¹¼ÆÊ±´ðÌâ....
--- 4 = 2007ÔªÏü½Ú--µÆÃÕ´ðÌâ½çÃæ....
+-- 4 = 2007ÔªÏü½Ú--µÆÃ ´ðÌâ½çÃæ....
 local g_UIType = 0
 
 local g_UIServerScript = { 311100, 050021, 050029, 050042, 808093, 250042 }
@@ -57,7 +57,7 @@ function Quiz_OnEvent(event)
 		if(tonumber(arg0) ~= objCared) then
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			Quiz_Cancel_Clicked()
 		end
@@ -80,7 +80,7 @@ function Quiz_OnShown()
 
 			Quiz_Text : SetText( Get_XParam_STR(1) );
 			Quiz_Button_1 : Show();
-			Quiz_Button_1 : SetText("¿ªÊ¼´ðÌâ")
+			Quiz_Button_1 : SetText("Trä l¶i")
 			Quiz_Button_2 : Hide();
 			Quiz_Button_3 : Hide();
 			Quiz_Pageheader : SetText( Get_XParam_STR(0) );
@@ -88,7 +88,7 @@ function Quiz_OnShown()
 			local xx = Get_XParam_INT(1);
 			objCared = DataPool : GetNPCIDByServerID(xx);
 			if objCared == -1 then
-					PushDebugMessage("ServerÊý¾ÝÎÊÌâ£¬Ë­¸ÄServer½Å±¾À²£¡");
+					PushDebugMessage("L²i s¯ li®u!");
 					return;
 			end
 			BeginCareObject_Quiz(objCared)
@@ -103,12 +103,12 @@ function Quiz_OnShown()
 			if Question_Sequence == 1 then
 				str = "";
 			else
-				str = "¹§Ï²Äã»Ø´ðÕýÈ·£¡#rÇë¼ÌÐø´ðÌâ¡£#r";
+				str = "Chính xác!#rM¶i tiªp tøc trä l¶i#r";
 			end
 			if(Variable:GetVariable("System_CodePage") == "1258") then
-				Quiz_Text : SetText(str .. "Ìâ" .. "µÚ" .. Question_Sequence .. Get_XParam_STR(0) .. "#rÏÂÁÐ´ð°¸ÖÐÖ»ÓÐ1¸öÊÇÕýÈ·µÄ£¬ÇëÑ¡Ôñ");
+				Quiz_Text : SetText(str .. "Ð«" .. "Câu" .. Question_Sequence .. Get_XParam_STR(0) .. "#rdß¾i ðây ðáp án Trung chï có 1Cá Th¸ chính xác Ðích, Thïnh lña ch÷n");
 			else
-				Quiz_Text : SetText(str .. "µÚ" .. Question_Sequence .."Ìâ£º#r" .. Get_XParam_STR(0) .. "#rÏÂÁÐ´ð°¸ÖÐÖ»ÓÐ1¸öÊÇÕýÈ·µÄ£¬ÇëÑ¡Ôñ");
+				Quiz_Text : SetText(str .. "Câu" .. Question_Sequence .."Ð«: #r" .. Get_XParam_STR(0) .. "#rdß¾i ðây ðáp án Trung chï có 1Cá Th¸ chính xác Ðích, Thïnh lña ch÷n");
 			end
 		
 			Quiz_StopWatch : SetProperty("Timer","30");
@@ -133,7 +133,7 @@ function Quiz_OnShown()
 			Quiz_Text : SetText( Get_XParam_STR(0) );
 			Question_Sequence = 0;
 			Quiz_Button_1 : Show();
-			Quiz_Button_1 : SetText("ÖØÐÂ¿ªÊ¼");
+			Quiz_Button_1 : SetText("B¡t ð¥u lÕi");
 			Quiz_Button_2 : Hide();
 			Quiz_Button_3 : Hide();
 			Current = UI_ID;
@@ -142,7 +142,7 @@ function Quiz_OnShown()
 	elseif UI_ID == 4 then
 
 			Quiz_Text : SetText( Get_XParam_STR(0) );
-			Quiz_Button_2 : SetText("ÔÙ¼û")
+			Quiz_Button_2 : SetText("TÕm bi®t")
 			Quiz_Button_2 : Show();
 			Quiz_Button_1 : Hide();
 			Quiz_Button_3 : Hide();
@@ -203,7 +203,7 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØÐÄNPC£¬
---ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
 --Èç¹ûÓÐµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓÐµÄ¡°¹ØÐÄ¡±
 --=========================================================
 function BeginCareObject_Quiz(objCaredId)

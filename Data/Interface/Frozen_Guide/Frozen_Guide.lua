@@ -1,8 +1,8 @@
---Frozenxiyou 整合界面
+--Frozenxiyou 狖合界面
 local g_Frozen_Guide_Frame_UnifiedPosition
 
 local g_Frozen_Guide_Event = {
-	--冰雪大作战
+	--冰雪大作牻
 	[1] = { begtime = 20241212, endtime = 20250108,	StageTime = {{20241212,20250108,},},
 			btntips_unbeg = "#{BXJZH_240927_05}", btntips_doing = {"#{BXJZH_240927_06}",}, btntips_end = "#{BXJZH_240927_10}",
 	},
@@ -26,7 +26,7 @@ local g_Frozen_Guide_Event = {
 	[6] = { begtime = 20241212, endtime = 20250108,	StageTime = {{20241212,20250108,},}, 
 			btntips_unbeg = "#{BXJZH_240927_05}", btntips_doing = {"#{BXJZH_240927_28}",},	btntips_end = "#{BXJZH_240927_10}",
 	},
-	--猛兽战车
+	--猛兽牻车
 	[7] = { begtime = 20241226, endtime = 20250108,	StageTime = {{20241226,20250108,},},
 			btntips_unbeg = "#{BXJZH_240927_05}", btntips_doing = {"#{BXJZH_240927_29}",},	btntips_end = "#{BXJZH_240927_10}",
 	},
@@ -54,7 +54,7 @@ local g_Frozen_Guide_Event = {
 	[13] = { begtime = 20250101, endtime = 20250101, StageTime = {{20250101,20250101,},}, 
 			btntips_unbeg = "#{BXJZH_240927_05}", btntips_doing = {"#{BXJZH_240927_61}",}, btntips_end = "#{BXJZH_240927_10}",
 	}, 
-	--整合领奖 点数奖励
+	--狖合领奖 点数奖励
 	[14] = { begtime = 20241212, endtime = 20250108,	StageTime = {{20241212,20250108,},},
 			btntips_unbeg = "#{BXJZH_240927_05}", btntips_doing = {"#{BXJD_241118_2}",},	btntips_end = "#{BXJZH_240927_10}",
 	},
@@ -77,7 +77,7 @@ function Frozen_Guide_PreLoad()
 	--第二个参数代表界面隐藏时事件是否有效,默认为true
 	this:RegisterEvent("UI_COMMAND", true)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED", false)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false) --进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false) --???????
 	this:RegisterEvent("ADJEST_UI_POS", false)
 
 end
@@ -159,7 +159,7 @@ function Frozen_Guide_OnHidden()
 	Frozen_Guide_Close()
 end
 
--- 关闭
+-- 关睜
 function Frozen_Guide_Close() 
 	this:Hide()
 end
@@ -190,7 +190,7 @@ function Frozen_Guide_Update()
 		local event = g_Frozen_Guide_Event[index]
 
 		if isButtonShow == 1 then
-			--跟阶段这个属性无所谓了 按钮的显隐完全交给GetButtonState传回的值
+			--跟阶段犫个属性无所谓了 按钮的显隐完全交给GetButtonState传回的值
 			if g_Frozen_Guide_image[index] == 1 then
 				g_Frozen_Guide_ImageCtl[index]:Show()
 			end
@@ -299,7 +299,7 @@ function Frozen_Guide_Clicked(clickId)
 		end
 		
 		if IsInHell() == 1 then
-			PushDebugMessage("#{ZQPM_240402_04}")	--当前场景无法进行此操作
+			PushDebugMessage("#{ZQPM_240402_04}")	--???????????
 			return
 		end
 		Clear_XSCRIPT()
@@ -307,7 +307,7 @@ function Frozen_Guide_Clicked(clickId)
 			Set_XSCRIPT_ScriptID(888818)
 			Set_XSCRIPT_Parameter(0, 0)
 			Set_XSCRIPT_Parameter(1, 0)
-			Set_XSCRIPT_Parameter(2, 0) --是否收刷新cd限制
+			Set_XSCRIPT_Parameter(2, 0) --?????cd??
 			Set_XSCRIPT_ParamCount(3)
 		Send_XSCRIPT()
 	elseif clickId == 12 then

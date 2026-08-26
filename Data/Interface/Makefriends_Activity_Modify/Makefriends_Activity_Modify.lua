@@ -1,5 +1,5 @@
 local makefriend_lastSendMsgTime = 0
-local makefriend_sendMsgCD = 5  --发送留言冷却时间 5秒
+local makefriend_sendMsgCD = 5  --???????? 5?
 --交友宣言
 local Makefriends_Activity_Modify_Array = {
 	"#{JYHD_230331_52}",
@@ -26,9 +26,9 @@ end
 -- OnEvent()
 --===============================================
 function Makefriends_Activity_Modify_OnEvent(event)
-	if ( event == "UI_COMMAND" and tonumber(arg0) == 891180 ) then --打开界面
-		Makefriends_Activity_Modify_Ensure:SetText("确定")
-		Makefriends_Activity_Modify_Cancel:SetText("关闭")
+	if ( event == "UI_COMMAND" and tonumber(arg0) == 891180 ) then --????
+		Makefriends_Activity_Modify_Ensure:SetText("X醕 nh")
+		Makefriends_Activity_Modify_Cancel:SetText("畜ng c豠")
 		local cnt = table.getn(Makefriends_Activity_Modify_Array)
 		local randomIndex = math.random(1,cnt)
 		Makefriends_Activity_Modify_Edit:SetText(Makefriends_Activity_Modify_Array[randomIndex])
@@ -46,7 +46,7 @@ end
 function Makefriends_Activity_Modify_SendMessage_Clicked()
 	local curTime = FindFriendDataPool:GetTickCount();
 	if ( curTime - makefriend_lastSendMsgTime < makefriend_sendMsgCD * 1000) then
-		PushDebugMessage("#{ZYPT_081127_2}"); --不可连续点击，请稍等片刻后再点击
+		PushDebugMessage("#{ZYPT_081127_2}"); --??????,?????????
 	    return;
 	else
 	    makefriend_lastSendMsgTime = curTime;

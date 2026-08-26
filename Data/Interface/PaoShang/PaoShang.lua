@@ -2,15 +2,15 @@ local g_Frame_UnifiedXPosition;
 local g_Frame_UnifiedYPosition;
 local g_PaoShangScene =
 {
-	[0]={sceneid=0,name="ÂåÑô"},
-	[1]={sceneid=3,name="áÔÉ½"},
-	[2]={sceneid=4,name="Ì«ºş"},
-	[3]={sceneid=1,name="ËÕÖİ"},
-	[4]={sceneid=5,name="¾µºş"},
-	[5]={sceneid=6,name="ÎŞÁ¿É½"},
-	[6]={sceneid=2,name="´óÀí"},
-	[7]={sceneid=7,name="½£¸ó"},
-	[8]={sceneid=8,name="¶Ø»Í"},
+	[0]={sceneid=0,name="LÕc Dß½ng"},
+	[1]={sceneid=3,name="Tung S½n"},
+	[2]={sceneid=4,name="Thái H°"},
+	[3]={sceneid=1,name="Tô Châu"},
+	[4]={sceneid=5,name="Kính K°"},
+	[5]={sceneid=6,name="Vô Lßşng S½n"},
+	[6]={sceneid=2,name="ĞÕi Lı"},
+	[7]={sceneid=7,name="Kiªm Các"},
+	[8]={sceneid=8,name="Ğôn Hoàng"},
 }
 local objCared = -1;
 local g_MaxBuyNum = 250
@@ -28,23 +28,23 @@ local g_CurItemIndex = 1
 local g_CurSellItemIndex = 4
 
 -- Ìá¹©³¤°´×ó¼ü½øĞĞÁ¬¼ÓµÄ¹¦ÄÜ	-- HenryFour@2010-04-16
-local g_AutoClick_BtnFlag = -1			-- ¼ÇÂ¼µ±Ç°Êó±ê×ó¼üÊÇÔÚÄÄ¸ö°´Å¥°´ÏÂ
-local g_AutoClickTimer_Step = 144		-- ¶àÉÙÊ±¼ä(ºÁÃë)Ä£ÄâÒ»´Î Click ²Ù×÷
-local g_AutoClick_FunList = {}			-- ½«¹«ÓÃÒ»¸ö Timer µÄ»Øµ÷¹¦ÄÜº¯Êı·Åµ½Ò»¸öÊı×é
-local g_AutoClick_Going = -1			-- ±êÖ¾ÊÇ·ñ¿ªÊ¼×Ô¶¯µã»÷²Ù×÷(µÚÒ»´ÎLButtonºó¾­¹ıX¸öTimer²ÅËã¿ªÊ¼, Ò²¾ÍÊÇËµÊÇ g_AutoClickTimer_Step * X µÄÊ±ºò¿ªÊ¼½øĞĞ×Ô¶¯¼Ó, ÕâÑùÎªÁË·ÀÖ¹±¾À´Òªµã»÷Ò»ÏÂµÄ½á¹ûµãÁËºÃ¶àÏÂ)
+local g_AutoClick_BtnFlag = -1			-- ????????????????
+local g_AutoClickTimer_Step = 144		-- ????(??)???? Click ??
+local g_AutoClick_FunList = {}			-- ????? Timer ?????????????
+local g_AutoClick_Going = -1			-- ????????????(???LButton???X?Timer????, ????? g_AutoClickTimer_Step * X ??????????, ?????????????????????)
 
 
 local g_PaoShangSellItem ={}
 local g_PaoShangSellItemText ={}
 local g_PaoShangSellItemPrice ={}
 
-local g_PaoShang_Zijin = 0 -- Íæ¼Ò×Ê½ğ
+local g_PaoShang_Zijin = 0 -- ????
 local g_PaoShang_Item_Num = 1
-local g_PaoShang_Item1 = 2 -- ÎïÆ·1
+local g_PaoShang_Item1 = 2 -- ??1
 local g_PaoShang_Item1_Price = 3
-local g_PaoShang_Item2 = 4 -- ÎïÆ·2
+local g_PaoShang_Item2 = 4 -- ??2
 local g_PaoShang_Item2_Price = 5
-local g_PaoShang_Item3 = 6 -- ÎïÆ·3
+local g_PaoShang_Item3 = 6 -- ??3
 local g_PaoShang_Item3_Price = 7
 
 local g_PaoShangIndex_Item =
@@ -338,7 +338,7 @@ end
 
 
 --***************************************************
--- Çå¿ÕÊó±ê³¤°´±ê¼Ç
+-- Çå¿ Êó±ê³¤°´±ê¼Ç
 --***************************************************
 function PaoShang_AutoClick_Clear(id)
 	id = tonumber(id)
@@ -353,7 +353,7 @@ end
 --***************************************************
 function PaoShang_AutoClick_Timer()
 	if (g_AutoClick_BtnFlag ~= -1) then
-		-- µÚÒ»´ÎLButtonºó¾­¹ıX¸öTimer²ÅËã¿ªÊ¼, Ò²¾ÍÊÇËµÊÇ g_AutoClickTimer_Step * X µÄÊ±ºò¿ªÊ¼½øĞĞ×Ô¶¯¼Ó, ÕâÑùÎªÁË·ÀÖ¹±¾À´Òªµã»÷Ò»ÏÂµÄ½á¹ûµãÁËºÃ¶àÏÂ
+		-- µÚÒ»´ÎLButtonºó¾­¹ıX¸öTimer²ÅËã¿ªÊ¼, Ò²¾ÍÊÇËµÊÇ g_AutoClickTimer_Step * X µÄÊ±ºò¿ªÊ¼½øĞĞ×Ô¶¯¼Ó,  âÑùÎªÁË·ÀÖ¹±¾À´Òªµã»÷Ò»ÏÂµÄ½á¹ûµãÁËºÃ¶àÏÂ
 		if (g_AutoClick_Going < 4) then
 			g_AutoClick_Going = g_AutoClick_Going + 1
 		else
@@ -368,7 +368,7 @@ end
 
 --***************************************************
 -- Êó±ê×ó¼üËÉ¿ª²Ù×÷
---    ×¢ÒâÕâÀïÆäÊµÊÇ´úÌæ Click, ËùÒÔĞèÒªÖ´ĞĞÒ»´Î Click ²Ù×÷
+--    ×¢Òâ âÀïÆäÊµÊÇ´úÌæ Click, ËùÒÔĞèÒªÖ´ĞĞÒ»´Î Click ²Ù×÷
 --***************************************************
 function PaoShang_AutoClick_LButtonUp(id)
 	id = tonumber(id)

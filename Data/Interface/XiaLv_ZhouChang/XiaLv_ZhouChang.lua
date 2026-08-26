@@ -13,19 +13,19 @@ local g_MissionIndexs = {
 }
 
 local g_Mission1SubInfo = {
-    [1] = {path = {cliectScene=2,x=191,z=131,npc="ÃÏœ…√√√√"},gotoText = "#{FQZC_230331_45}"},
-    [2] = {path = {cliectScene=260,x=65,z=164,npc="≤◊¿Ω"},gotoText = "#{FQZC_230331_45}"},
-    [3] = {path = {cliectScene=592,x=225,z=149,npc="ª®’’ÀÆ"},gotoText = "#{FQZC_230331_45}"},
-    [4] = {path = {cliectScene=4,x=158,z=190,npc="Ω≠ÀºËØ"},gotoText = "#{FQZC_230331_45}"},
-    [5] = {path = {cliectScene=164,x=271,z=175,npc="ÍÀ∂À¿Ò"},gotoText = "#{FQZC_230331_45}"},
+    [1] = {path = {cliectScene=2,x=191,z=131,npc="ThiÍn SΩn Muµi Muµi"},gotoText = "#{FQZC_230331_45}"},
+    [2] = {path = {cliectScene=260,x=65,z=164,npc="ThﬂΩng Lan"},gotoText = "#{FQZC_230331_45}"},
+    [3] = {path = {cliectScene=592,x=225,z=149,npc="Hoa Chi™u Thu÷"},gotoText = "#{FQZC_230331_45}"},
+    [4] = {path = {cliectScene=4,x=158,z=190,npc="Giang Tﬂ Tuy´n"},gotoText = "#{FQZC_230331_45}"},
+    [5] = {path = {cliectScene=164,x=271,z=175,npc="Tri´u –oan L≠"},gotoText = "#{FQZC_230331_45}"},
 }
 
 local g_MissionInfo = {
     [1] = {title="#{FQZC_230331_37}"},
-    [2] = {title="#{FQZC_230331_38}",path = {cliectScene=164,x=79,z=45,npc="¡Ë’Ò"}},
-    [3] = {title="#{FQZC_230331_39}",path = {cliectScene=1,x=170,z=134,npc="À’Ã’"}},
-    [4] = {title="#{FQZC_230331_40}",path = {cliectScene=1,x=97,z=204,npc="À’È¯"}},
-    [5] = {title="#{FQZC_230331_41}",path = {cliectScene=0,x=40,z=60,npc="ª®œ…"}},
+    [2] = {title="#{FQZC_230331_38}",path = {cliectScene=164,x=79,z=45,npc="LÂng Ch§n"}},
+    [3] = {title="#{FQZC_230331_39}",path = {cliectScene=1,x=170,z=134,npc="TÙ –‡o"}},
+    [4] = {title="#{FQZC_230331_40}",path = {cliectScene=1,x=97,z=204,npc="TÙ Th—c"}},
+    [5] = {title="#{FQZC_230331_41}",path = {cliectScene=0,x=40,z=60,npc="Hoa TiÍn"}},
 }
 
 local g_Mission1BKImg = {

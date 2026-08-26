@@ -3,33 +3,33 @@
 --create by xindefeng
 -------------------------------------------------------
 
-local g_OfficialCtls = nil		--¹ÙÔ±ÁÐ±í½çÃæ¿Ø¼þ½á¹¹
-local g_ListIdx2IDTbl = nil		--List¿Ø¼þÉÏÐòÁÐºÅÓë³ÉÔ±IDºÅ¶ÔÓ¦±í
+local g_OfficialCtls = nil		--??????????
+local g_ListIdx2IDTbl = nil		--List?????????ID????
 
 local g_positionInfo = {
-	"´ýÅú×¼¡¡",
-	"°ïÖÚ¡¡¡¡",
-	"¾«Ó¢¡¡¡¡",
-	"ÉÌÈË¡¡¡¡",
-	"ºë»¯Ê¹¡¡",
-	"¹¤ÎñÊ¹¡¡",
-	"ÄÚÎñÊ¹¡¡",
-	"¸±°ïÖ÷¡¡",
-	"°ïÖ÷¡¡¡¡",
+	"Ðãi phê chu¦n",
+	"Bang Chúng  ",
+	"Tinh Anh  ",
+	"Thß½ng Nhân  ",
+	"Ho¢ng Hóa SÑ ",
+	"Công Vø SÑ ",
+	"Nµi Vø SÑ ",
+	"Phó Bang Chü ",
+	"Bang Chü  ",
 };
 
 local g_menpaiInfo = {
-	"ÉÙÁÖ",
-	"Ã÷½Ì",
-	"Ø¤°ï",
-	"Îäµ±",
-	"¶ëáÒ",
-	"ÐÇËÞ",
-	"ÌìÁú",
-	"ÌìÉ½",
-	"åÐÒ£",
-	"ÎÞÃÅÅÉ",
-	"ÂüÍÓÉ½×¯",
+	"Thiªu Lâm",
+	"Minh Giáo",
+	"Cái Bang",
+	"Võ Ðang",
+	"Nga Mi",
+	"Tinh Túc",
+	"Thiên Long",
+	"Thiên S½n",
+	"Tiêu dao",
+	"Tñ do",
+	"MÕn Ðà S½n Trang",
 }
 
 local g_Confraternity_OfficialPositionList_Frame_UnifiedPosition;
@@ -51,14 +51,14 @@ end
 
 --ÊÂ¼þÏìÓ¦
 function Confraternity_OfficialPositionList_OnEvent(event)
-	Confraternity_OfficialPositionList_SetCtl()--ÏÈÉèÖÃÒ»ÏÂ¿Ø¼þ
+	Confraternity_OfficialPositionList_SetCtl()--???????
 
 	if(event == "GUILD_SHOW_OFFICIALLIST") then
 		Confraternity_OfficialPositionList_Close()
 		Confraternity_OfficialPositionList_Clear()
 		Confraternity_OfficialPositionList_Update()
 		Confraternity_OfficialPositionList_Show()
-	elseif(event == "GUILD_ANY_SORTDATE") then	--À´ÐÂÊý¾ÝÖ®Ç°×ª·¢Í¨ÖªC´úÂëÅÅÒ»ÏÂÐò
+	elseif(event == "GUILD_ANY_SORTDATE") then	--??????????C??????
 		Guild:SortAnyGuildMembersByPosition()
 	elseif(event == "GUILD_FORCE_CLOSE") then
 		Confraternity_OfficialPositionList_Close()
@@ -77,28 +77,28 @@ end
 --½«ËùÓÐµÄÏÔÊ¾ÐÅÏ¢µÄ¿Ø¼þ·ÅÈë½á¹¹ÖÐ,±ãÓÚ²Ù×Ý
 function Confraternity_OfficialPositionList_SetCtl()
 	g_OfficialCtls = {
-										list = Confraternity_OfficialPositionList_MemberList,	--¹ÙÔ±ÁÐ±í
-										officalname = Confraternity_OfficialPositionList_Info1_Text,--¹ÙÔ±Ãû×Ö
-										info_menpai = {txt = Confraternity_OfficialPositionList_Info2_Text, msg = Confraternity_OfficialPositionList_Info2},--ÃÅÅÉ
-										info_level = {txt = Confraternity_OfficialPositionList_Info3_Text, msg = Confraternity_OfficialPositionList_Info3},	--µÈ¼¶
-										info_gongxiandu = {txt = Confraternity_OfficialPositionList_Info4_Text, msg = Confraternity_OfficialPositionList_Info4},--¹±Ï×¶È
-										info_benzhougongxiandu = {txt = Confraternity_OfficialPositionList_Info7_Text, msg = Confraternity_OfficialPositionList_Info7},--±¾ÖÜ¹±Ï×¶È
-										info_rubangdate =	{txt = Confraternity_OfficialPositionList_Info5_Text, msg = Confraternity_OfficialPositionList_Info5},--Èë°ïÊ±¼ä
-										info_lixiandate =	{txt = Confraternity_OfficialPositionList_Info6_Text, msg = Confraternity_OfficialPositionList_Info6},--ÀëÏßÊ±¼ä
-										desc = Confraternity_OfficialPositionList_Tenet,			--°ï»á×ÚÖ¼
-										edit = Confraternity_OfficialPositionList_EditTenet		--°ï»á×ÚÖ¼µÄÄÚÈÝ
+										list = Confraternity_OfficialPositionList_MemberList,	--????
+										officalname = Confraternity_OfficialPositionList_Info1_Text,--????
+										info_menpai = {txt = Confraternity_OfficialPositionList_Info2_Text, msg = Confraternity_OfficialPositionList_Info2},--??
+										info_level = {txt = Confraternity_OfficialPositionList_Info3_Text, msg = Confraternity_OfficialPositionList_Info3},	--??
+										info_gongxiandu = {txt = Confraternity_OfficialPositionList_Info4_Text, msg = Confraternity_OfficialPositionList_Info4},--???
+										info_benzhougongxiandu = {txt = Confraternity_OfficialPositionList_Info7_Text, msg = Confraternity_OfficialPositionList_Info7},--?????
+										info_rubangdate =	{txt = Confraternity_OfficialPositionList_Info5_Text, msg = Confraternity_OfficialPositionList_Info5},--????
+										info_lixiandate =	{txt = Confraternity_OfficialPositionList_Info6_Text, msg = Confraternity_OfficialPositionList_Info6},--????
+										desc = Confraternity_OfficialPositionList_Tenet,			--????
+										edit = Confraternity_OfficialPositionList_EditTenet		--???????
 								 	 }
 end
 
---Çå¿Õ½çÃæ
+--Çå¿ ½çÃæ
 function Confraternity_OfficialPositionList_Clear()
-	--Çå¿Õ¹ÙÔ±ÁÐ±í
+	--Çå¿ ¹ÙÔ±ÁÐ±í
 	g_OfficialCtls.list:ClearListBox()
 
-	--Çå¿Õ¹ÙÔ±Ãû×Ö
+	--Çå¿ ¹ÙÔ±Ãû×Ö
 	g_OfficialCtls.officalname:SetText("")
 
-	--Çå¿ÕËùÓÐinfo¿Ø¼þ
+	--Çå¿ ËùÓÐinfo¿Ø¼þ
 	g_OfficialCtls.info_menpai.txt:SetText("")
 	g_OfficialCtls.info_level.txt:SetText("")
 	g_OfficialCtls.info_gongxiandu.txt:SetText("")
@@ -113,7 +113,7 @@ function Confraternity_OfficialPositionList_Clear()
 	g_OfficialCtls.info_rubangdate.msg:SetText("")
 	g_OfficialCtls.info_lixiandate.msg:SetText("")
 
-	--Çå¿Õ°ï»á×ÚÖ¼
+	--Çå¿ °ï»á×ÚÖ¼
 	g_OfficialCtls.desc:SetText("")
 	g_OfficialCtls.desc:Show()
 
@@ -121,7 +121,7 @@ function Confraternity_OfficialPositionList_Clear()
 	g_OfficialCtls.edit:SetProperty("CaratIndex", 1024)
 	g_OfficialCtls.edit:Hide()
 
-	--Çå¿ÕË÷ÒýID¶ÔÓ¦±í
+	--Çå¿ Ë÷ÒýID¶ÔÓ¦±í
 	g_ListIdx2IDTbl = nil
 end
 
@@ -135,65 +135,65 @@ function Confraternity_OfficialPositionList_Flush(selected)
 	end
 
 	--¹ÙÔ±Ãû³Æ
-	str = Guild:GetAnyGuildMembersInfo(selectedID, "Name")--Ä¬ÈÏÑ¡ÖÐÁÐ±íÀïµÄµÚÒ»¸öÈË
+	str = Guild:GetAnyGuildMembersInfo(selectedID, "Name")--????????????
 	local guid = ""
-	_, guid = Guild:GetAnyGuildMembersInfo(selectedID, "GUID")--»ñÈ¡guidÊ®Áù½øÖÆ×Ö·û´®
+	_, guid = Guild:GetAnyGuildMembersInfo(selectedID, "GUID")--??guid???????
 	g_OfficialCtls.officalname:SetText(str.."("..guid..")")
 
 	--ÃÅÅÉ
 	str = Guild:GetAnyGuildMembersInfo(selectedID, "MenPai")
-	g_OfficialCtls.info_menpai.txt:SetText("ÃÅÅÉ:")
+	g_OfficialCtls.info_menpai.txt:SetText("Môn phái:")
 	g_OfficialCtls.info_menpai.msg:SetText(g_menpaiInfo[str+1])
 
 	--µÈ¼¶
 	str = Guild:GetAnyGuildMembersInfo(selectedID, "Level")
-	g_OfficialCtls.info_level.txt:SetText("µÈ¼¶:")
+	g_OfficialCtls.info_level.txt:SetText("C¤p b§c:")
 	g_OfficialCtls.info_level.msg:SetText(str)
 
 	--¹±Ï×¶È
 	szMsg = Guild:GetAnyGuildMembersInfo(selectedID, "CurCon").."/"..Guild:GetAnyGuildMembersInfo(selectedID, "MaxCon")
-	g_OfficialCtls.info_gongxiandu.txt:SetText("¹±Ï×¶È:")
+	g_OfficialCtls.info_gongxiandu.txt:SetText("C¯ng hiªn Ðµ:")
 	g_OfficialCtls.info_gongxiandu.msg:SetText(szMsg)
 
 	--±¾ÖÜ¹±Ï×¶È
 	szMsg = Guild:GetAnyGuildMembersInfo(selectedID, "ContriPerWeek")
-	g_OfficialCtls.info_benzhougongxiandu.txt:SetText("±¾ÖÜ¹±Ï×¶È:")
+	g_OfficialCtls.info_benzhougongxiandu.txt:SetText("B±n Chu c¯ng hiªn Ðµ:")
 	g_OfficialCtls.info_benzhougongxiandu.msg:SetText(szMsg)
 
 	--Èë°ïÊ±¼ä
 	szMsg = Guild:GetAnyGuildMembersInfo(selectedID, "JoinTime");
-	g_OfficialCtls.info_rubangdate.txt:SetText("Èë°ïÊ±¼ä:")
+	g_OfficialCtls.info_rubangdate.txt:SetText("Nh§p Bang th¶i gian:")
 	g_OfficialCtls.info_rubangdate.msg:SetText(szMsg)
 
 	--ÀëÏßÊ±¼ä
 	szMsg = Guild:GetAnyGuildMembersInfo(selectedID, "LogOutTime")
-	g_OfficialCtls.info_lixiandate.txt:SetText("ÀëÏßÊ±¼ä:")
+	g_OfficialCtls.info_lixiandate.txt:SetText("Li Tuyªn th¶i gian:")
 	g_OfficialCtls.info_lixiandate.msg:SetText(szMsg)
 end
 
 --Ë¢ÐÂÏÔÊ¾"¹ÙÔ±ÁÐ±í"List
 function Confraternity_OfficialPositionList_ShowList()
 	--List Ctl
-	local OfficialsCount = 0			--¹ÙÔ±ÊýÁ¿
-	local UnSortIdx = 0						--Î´ÅÅÐòÇ°Ë÷ÒýºÅ
-	local Color = nil							--ÏÔÊ¾ÑÕÉ«
-	local Position = nil					--Ö°Î»(ºÅ)
-	local Name = nil							--Ãû×Ö
+	local OfficialsCount = 0			--????
+	local UnSortIdx = 0						--???????
+	local Color = nil							--????
+	local Position = nil					--??(?)
+	local Name = nil							--??
 
-	local listidx = 0	--listÖÐÏÔÊ¾Ë÷ÒýºÅ
+	local listidx = 0	--list??????
 	local i = 0
 
-	g_ListIdx2IDTbl = nil	--ÏÈÇå¿Õ
+	g_ListIdx2IDTbl = nil	--???
 
-	OfficialsCount = Guild:GetAnyGuildMembersInfo(0, "OfficialsNum")	--»ñÈ¡¹ÙÔ±ÊýÁ¿(Ê×²ÎÎÞÐ§)
+	OfficialsCount = Guild:GetAnyGuildMembersInfo(0, "OfficialsNum")	--??????(????)
 	while i < OfficialsCount do
 		--»ñÈ¡Î´ÅÅÐòÇ°Ë÷ÒýºÅ
 		UnSortIdx = Guild:Sort2UnSortIndex(i)
 
 		--»ñÈ¡Êý¾Ý
-		Color = Guild:GetAnyGuildMembersInfo(UnSortIdx, "ShowColor") 	--»ñÈ¡ÏÔÊ¾ÑÕÉ«
-		Position = Guild:GetAnyGuildMembersInfo(UnSortIdx, "Position")--Ö°Î»
-		Name = Guild:GetAnyGuildMembersInfo(UnSortIdx, "Name")				--»ñÈ¡³ÉÔ±Ãû×Ö
+		Color = Guild:GetAnyGuildMembersInfo(UnSortIdx, "ShowColor") 	--??????
+		Position = Guild:GetAnyGuildMembersInfo(UnSortIdx, "Position")--??
+		Name = Guild:GetAnyGuildMembersInfo(UnSortIdx, "Name")				--??????
 
 		--¸ø¿Ø¼þ¼ÓÒ»Ïî
 		g_OfficialCtls.list:AddItem(Color..g_positionInfo[Position]..Name, listidx);
@@ -206,7 +206,7 @@ function Confraternity_OfficialPositionList_ShowList()
 		i = i + 1
 	end
 
-	g_OfficialCtls.list:SetItemSelectByItemID(0)	--Ä¬ÈÏÑ¡ÖÐÁÐ±íÀïµÄµÚÒ»¸öÈË
+	g_OfficialCtls.list:SetItemSelectByItemID(0)	--????????????
 
 
 end
@@ -214,7 +214,7 @@ end
 --ÏÔÊ¾Êý¾Ý
 function Confraternity_OfficialPositionList_Update()
 	--title
-	Confraternity_OfficialPositionList_DragTitle:SetText("#gFF0FA0¹ÙÔ±ÁÐ±í")
+	Confraternity_OfficialPositionList_DragTitle:SetText("#gFF0FA0Quan Viên Li®t Bi¬u")
 
 	--Ë¢ÐÂÏÔÊ¾"¹ÙÔ±ÁÐ±í"List
 	Confraternity_OfficialPositionList_ShowList()
@@ -223,28 +223,28 @@ function Confraternity_OfficialPositionList_Update()
 	Confraternity_OfficialPositionList_Selected()
 
 	--°ï»á×ÚÖ¼
-	local str = Guild:GetAnyGuildMembersInfo(0, "Desc")--Ê×²ÎÎÞÐ§
+	local str = Guild:GetAnyGuildMembersInfo(0, "Desc")--????
 	g_OfficialCtls.desc:SetText(str)
 end
 
 --ÓÃ»§Ñ¡Ôñ·¢Éú¸Ä±ä,Ë¢ÐÂÒ»ÏÂ
 function Confraternity_OfficialPositionList_Selected()
-	local idx = g_OfficialCtls.list:GetFirstSelectItem()	--µÃµ½Ñ¡ÖÐÏîË÷ÒýºÅ
+	local idx = g_OfficialCtls.list:GetFirstSelectItem()	--????????
 	if (idx == -1) then
 		return
 	end
 
-	Confraternity_OfficialPositionList_Flush(idx)--Ë¢ÐÂ
+	Confraternity_OfficialPositionList_Flush(idx)--??
 end
 
 --ÏÔÊ¾ÓÒ¼ü²Ëµ¥
 function Confraternity_OfficialPositionList_PopMenu()
-	local idx = g_OfficialCtls.list:GetFirstSelectItem()	--µÃµ½Ñ¡ÖÐÏîË÷ÒýºÅ
+	local idx = g_OfficialCtls.list:GetFirstSelectItem()	--????????
 	if( idx == -1 ) then
 		return
 	end
 
-	Guild:Show_OfficialPopMenu(tonumber(g_ListIdx2IDTbl[idx])) --Í¨ÖªC´úÂëÒªÏÔÊ¾ÓÒ¼ü²Ëµ¥
+	Guild:Show_OfficialPopMenu(tonumber(g_ListIdx2IDTbl[idx])) --??C?????????
 end
 
 --ÏÔÊ¾½çÃæ
@@ -252,7 +252,7 @@ function Confraternity_OfficialPositionList_Show()
 	this:Show()
 end
 
---¹Ø±Õ½çÃæ
+--¹Ø± ½çÃæ
 function Confraternity_OfficialPositionList_Close()
 	this:Hide()
 end

@@ -56,63 +56,63 @@ end
 function SelfData_OnLoad()
 	--ÉúĞ¤
 	SelfData_YearAnimal:ComboBoxAddItem("-",0);
-	SelfData_YearAnimal:ComboBoxAddItem("Êó",1); 
-	SelfData_YearAnimal:ComboBoxAddItem("Å£",2); 
-	SelfData_YearAnimal:ComboBoxAddItem("»¢",3); 
-	SelfData_YearAnimal:ComboBoxAddItem("ÍÃ",4); 
-	SelfData_YearAnimal:ComboBoxAddItem("Áú",5); 
-	SelfData_YearAnimal:ComboBoxAddItem("Éß",6); 
-	SelfData_YearAnimal:ComboBoxAddItem("Âí",7); 
-	SelfData_YearAnimal:ComboBoxAddItem("Ñò",8); 
-	SelfData_YearAnimal:ComboBoxAddItem("ºï",9);
-	SelfData_YearAnimal:ComboBoxAddItem("¼¦",10);
-	SelfData_YearAnimal:ComboBoxAddItem("¹·",11);
-	SelfData_YearAnimal:ComboBoxAddItem("Öí",12);
+	SelfData_YearAnimal:ComboBoxAddItem("ThØ",1); 
+	SelfData_YearAnimal:ComboBoxAddItem("Ngßu",2); 
+	SelfData_YearAnimal:ComboBoxAddItem("H±",3); 
+	SelfData_YearAnimal:ComboBoxAddItem("Th¯",4); 
+	SelfData_YearAnimal:ComboBoxAddItem("Thìn",5); 
+	SelfData_YearAnimal:ComboBoxAddItem("Xà",6); 
+	SelfData_YearAnimal:ComboBoxAddItem("Mã",7); 
+	SelfData_YearAnimal:ComboBoxAddItem("Dß½ng",8); 
+	SelfData_YearAnimal:ComboBoxAddItem("H¥u",9);
+	SelfData_YearAnimal:ComboBoxAddItem("Kê",10);
+	SelfData_YearAnimal:ComboBoxAddItem("C¦u",11);
+	SelfData_YearAnimal:ComboBoxAddItem("Trß",12);
 	
 	--Ê¡·İ
 	SelfData_Province:ComboBoxAddItem("-",		 0);
-	SelfData_Province:ComboBoxAddItem("±±¾©",  1); 
-	SelfData_Province:ComboBoxAddItem("Ìì½ò",  2); 
-	SelfData_Province:ComboBoxAddItem("ÉÏº£",  3); 
-	SelfData_Province:ComboBoxAddItem("ÖØÇì",  4); 
-	SelfData_Province:ComboBoxAddItem("ºÓ±±",  5); 
-	SelfData_Province:ComboBoxAddItem("ÁÉÄş",  6); 
-	SelfData_Province:ComboBoxAddItem("É½¶«",  7); 
-	SelfData_Province:ComboBoxAddItem("ºÚÁú½­",8); 
-	SelfData_Province:ComboBoxAddItem("É½Î÷",  9); 
-	SelfData_Province:ComboBoxAddItem("¼ªÁÖ",  10);
-	SelfData_Province:ComboBoxAddItem("ÉÂÎ÷",  11);
-	SelfData_Province:ComboBoxAddItem("ºÓÄÏ",  12);
-	SelfData_Province:ComboBoxAddItem("°²»Õ",  13);
-	SelfData_Province:ComboBoxAddItem("½­ËÕ",  14);
-	SelfData_Province:ComboBoxAddItem("ºş±±",  15);
-	SelfData_Province:ComboBoxAddItem("Õã½­",  16);
-	SelfData_Province:ComboBoxAddItem("ºşÄÏ",  17);
-	SelfData_Province:ComboBoxAddItem("½­Î÷",  18);
-	SelfData_Province:ComboBoxAddItem("¸£½¨",  19);
-	SelfData_Province:ComboBoxAddItem("Ì¨Íå",  20);
-	SelfData_Province:ComboBoxAddItem("ÄÚÃÉ¹Å",21);
-	SelfData_Province:ComboBoxAddItem("¸ÊËà",  22);
-	SelfData_Province:ComboBoxAddItem("ÄşÏÄ",  23);
-	SelfData_Province:ComboBoxAddItem("ËÄ´¨",  24);
-	SelfData_Province:ComboBoxAddItem("¹óÖİ",  25);
-	SelfData_Province:ComboBoxAddItem("ÔÆÄÏ",  26);
-	SelfData_Province:ComboBoxAddItem("¹ãÎ÷",  27);
-	SelfData_Province:ComboBoxAddItem("¹ã¶«",  28);
-	SelfData_Province:ComboBoxAddItem("º£ÄÏ",  29);
-	SelfData_Province:ComboBoxAddItem("ĞÂ½®",  30);
-	SelfData_Province:ComboBoxAddItem("Çàº£",  31);
-	SelfData_Province:ComboBoxAddItem("Î÷²Ø",  32);
-	SelfData_Province:ComboBoxAddItem("°ÄÃÅ",  33);
-	SelfData_Province:ComboBoxAddItem("Ïã¸Û",  34);
-	SelfData_Province:ComboBoxAddItem("ÆäËû",  35);
+	SelfData_Province:ComboBoxAddItem("B¡c Kinh",  1); 
+	SelfData_Province:ComboBoxAddItem("Thiên Tân",  2); 
+	SelfData_Province:ComboBoxAddItem("Thßşng Häi",  3); 
+	SelfData_Province:ComboBoxAddItem("Trùng Khánh",  4); 
+	SelfData_Province:ComboBoxAddItem("Hà B¡c",  5); 
+	SelfData_Province:ComboBoxAddItem("Liêu Ninh",  6); 
+	SelfData_Province:ComboBoxAddItem("S½n Ğông",  7); 
+	SelfData_Province:ComboBoxAddItem("H¡c Long Giang",8); 
+	SelfData_Province:ComboBoxAddItem("S½n Tây",  9); 
+	SelfData_Province:ComboBoxAddItem("Cát Lâm",  10);
+	SelfData_Province:ComboBoxAddItem("Thi¬m Tây",  11);
+	SelfData_Province:ComboBoxAddItem("Hà Nam",  12);
+	SelfData_Province:ComboBoxAddItem("An Huy",  13);
+	SelfData_Province:ComboBoxAddItem("Giang Tô",  14);
+	SelfData_Province:ComboBoxAddItem("H° B¡c",  15);
+	SelfData_Province:ComboBoxAddItem("Chiªt Giang",  16);
+	SelfData_Province:ComboBoxAddItem("H° Nam",  17);
+	SelfData_Province:ComboBoxAddItem("Giang Tây",  18);
+	SelfData_Province:ComboBoxAddItem("Phúc Kiªn",  19);
+	SelfData_Province:ComboBoxAddItem("Ğài Loan",  20);
+	SelfData_Province:ComboBoxAddItem("Nµi Mông C±",21);
+	SelfData_Province:ComboBoxAddItem("Cam Túc",  22);
+	SelfData_Province:ComboBoxAddItem("Ninh HÕ",  23);
+	SelfData_Province:ComboBoxAddItem("TÑ Xuyên",  24);
+	SelfData_Province:ComboBoxAddItem("Quı Châu",  25);
+	SelfData_Province:ComboBoxAddItem("Vân Nam",  26);
+	SelfData_Province:ComboBoxAddItem("Quäng Tây",  27);
+	SelfData_Province:ComboBoxAddItem("Quäng Ğông",  28);
+	SelfData_Province:ComboBoxAddItem("Häi Nam",  29);
+	SelfData_Province:ComboBoxAddItem("Tân Cß½ng",  30);
+	SelfData_Province:ComboBoxAddItem("Thanh Häi",  31);
+	SelfData_Province:ComboBoxAddItem("Tây TÕng",  32);
+	SelfData_Province:ComboBoxAddItem("Macao",  33);
+	SelfData_Province:ComboBoxAddItem("H°ng Kông",  34);
+	SelfData_Province:ComboBoxAddItem("M£t khác",  35);
 	
 	 --°ÄÃÅ  Ïã¸Û ºÍÆäËû
 	                                          
 	--ĞÔ±ğ
 	SelfData_Sex:ComboBoxAddItem("-",0);
-	SelfData_Sex:ComboBoxAddItem("ÄĞ",1);
-	SelfData_Sex:ComboBoxAddItem("Å®",2);
+	SelfData_Sex:ComboBoxAddItem("Nam",1);
+	SelfData_Sex:ComboBoxAddItem("Næ",2);
 
 	--ÑªĞÍ
 	SelfData_BloodType:ComboBoxAddItem("-",0);
@@ -124,18 +124,18 @@ function SelfData_OnLoad()
 
 	--ĞÇ×ù
 	SelfData_Constellation:ComboBoxAddItem("-",0); 
-	SelfData_Constellation:ComboBoxAddItem("Ä§ôÉ×ù",1);
-	SelfData_Constellation:ComboBoxAddItem("Ë®Æ¿×ù",2); 
-	SelfData_Constellation:ComboBoxAddItem("Ë«Óã×ù",3); 
-	SelfData_Constellation:ComboBoxAddItem("°×Ñò×ù",4); 
-	SelfData_Constellation:ComboBoxAddItem("½ğÅ£×ù",5); 
-	SelfData_Constellation:ComboBoxAddItem("Ë«×Ó×ù",6); 
-	SelfData_Constellation:ComboBoxAddItem("¾ŞĞ·×ù",7); 
-	SelfData_Constellation:ComboBoxAddItem("Ê¨×Ó×ù",8); 
-	SelfData_Constellation:ComboBoxAddItem("´¦Å®×ù",9); 
-	SelfData_Constellation:ComboBoxAddItem("Ìì³Ó×ù",10);
-	SelfData_Constellation:ComboBoxAddItem("ÌìĞ«×ù",11);
-	SelfData_Constellation:ComboBoxAddItem("ÉäÊÖ×ù",12);
+	SelfData_Constellation:ComboBoxAddItem("Ma HÕt ToÕ",1);
+	SelfData_Constellation:ComboBoxAddItem("Chòm Thüy Bình",2); 
+	SelfData_Constellation:ComboBoxAddItem("Chòm Song Ngß",3); 
+	SelfData_Constellation:ComboBoxAddItem("Chòm BÕch Dß½ng",4); 
+	SelfData_Constellation:ComboBoxAddItem("Chòm Kim Ngßu",5); 
+	SelfData_Constellation:ComboBoxAddItem("Chòm song nam",6); 
+	SelfData_Constellation:ComboBoxAddItem("Chòm cñ giäi",7); 
+	SelfData_Constellation:ComboBoxAddItem("Chòm Sß TØ",8); 
+	SelfData_Constellation:ComboBoxAddItem("XØ næ ToÕ",9); 
+	SelfData_Constellation:ComboBoxAddItem("Chòm Thiên Bình",10);
+	SelfData_Constellation:ComboBoxAddItem("Chòm sao bò cÕp",11);
+	SelfData_Constellation:ComboBoxAddItem("XÕ thü ToÕ",12);
 	
 	CTRL[1] = SelfData_Age;
 	CTRL[2] = SelfData_Sex;
@@ -150,10 +150,10 @@ function SelfData_OnLoad()
 	CTRL[11] = SelfData_MessageBoard;
 	
 	SELFDATA_TAB_TEXT = {
-		[0] = "×°±¸",
-		"×ÊÁÏ",
-		"ÕäÊŞ",
-		"ÆäËû",
+		[0] = "Trang b¸",
+		"Tß li®u",
+		"Trân Thú",
+		"M£t khác",
 	};
 	
 	-- ±£´æ½çÃæµÄÄ¬ÈÏÏà¶ÔÎ»ÖÃ
@@ -281,7 +281,7 @@ function SelfData_OnEvent(event)
 		if(tonumber(arg0) ~= objCared) then
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(arg1=="destroy") then
 			g_InitiativeClose = 1;
 			Variable:SetVariable("PageNumber", tostring(0), 1);
@@ -615,7 +615,7 @@ function SelfData_Talent_Switch()
 	end
 end
 
---ÇĞ»»¸öÈËÕ¹Ê¾½çÃæ
+--ÇĞ»»¸öÈË ¹Ê¾½çÃæ
 function SelfData_Profile_Switch()
 	Variable:SetVariable("SelfUnionPos", SelfData_Frame:GetProperty("UnifiedPosition"), 1);	
 	Exterior:LuaFnExteriorPlayerOpenProfileUI()	
@@ -705,57 +705,57 @@ end
 function SelfData_OnPageClicked(idx)
 	Variable:SetVariable("PageNumber", tostring(idx), 1);
 	idx = g_PageOrder[idx]
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		SelfData_SelfEquip_Down(0);
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		--Pet_Page_SelfData()
 		SelfData_ClearPage()
-	elseif idx == 3 then--ÕäÊŞ
+	elseif idx == 3 then--??
 		SelfData_Pet_Down()
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		SelfData_Wuhun_Switch()
-	elseif idx == 5 then--ĞŞÁ¶
+	elseif idx == 5 then--??
 		SelfData_Xiulian_Switch()
-	elseif idx == 6 then--ÎäµÀ
+	elseif idx == 6 then--??
 		SelfData_Talent_Switch()
-	elseif idx == 7 then--ÁéÓñ
+	elseif idx == 7 then--??
 		SelfData_Page_LingYu()
-	elseif idx == 8 then--Éñ±ø
+	elseif idx == 8 then--??
 		SelfData_Page_ShenBing()
-	elseif idx == 9 then--µñÎÄ½ø½×
+	elseif idx == 9 then--????
 		SelfData_Page_DWJinJie()
-	elseif idx == 10 then--áÛ·å 
+	elseif idx == 10 then--?? 
 		SelfData_Page_Peak()
-	elseif idx == 11 then--¸öÈË
+	elseif idx == 11 then--??
 		SelfData_Profile_Switch()
-	elseif idx == 11 then--ÆäËû
+	elseif idx == 11 then--??
 		SelfData_Other_Info_Page_Switch()
 	end
 end
 
 function SelfData_CheckPage(idx)
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--ÕäÊŞ
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--ĞŞÁ¶
+	elseif idx == 5 then--??
 		return 1
-	elseif idx == 6 then--ÎäµÀ
+	elseif idx == 6 then--??
 		return DataPool:Lua_CheckIsShowTalent()
-	elseif idx == 7 then--ÁéÓñ
+	elseif idx == 7 then--??
 		return 1
-	elseif idx == 8 then--Éñ±ø
+	elseif idx == 8 then--??
 		return 1
-	elseif idx == 9 then--µñÎÄ½ø½×
+	elseif idx == 9 then--????
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
 		end
 		return 1
-	elseif idx == 10 then--áÛ·å
+	elseif idx == 10 then--??
 
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
@@ -765,51 +765,51 @@ function SelfData_CheckPage(idx)
 			return 1
 		end
 
-	elseif idx == 11 then--¸öÈË
+	elseif idx == 11 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 15 then
 			return 1
 		end
-	elseif idx == 12 then--ÆäËû
+	elseif idx == 12 then--??
 		return 1
 	end
 	return 0
 end
 
 function SelfData_IsPageEnable(idx)
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--ÕäÊŞ
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--ĞŞÁ¶
+	elseif idx == 5 then--??
 		return 1
-	elseif idx == 6 then--ÎäµÀ
+	elseif idx == 6 then--??
 		return 1
-	elseif idx == 7 then--ÁéÓñ
+	elseif idx == 7 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 8 then--Éñ±ø
+	elseif idx == 8 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 65 then
 			return 1
 		end
-	elseif idx == 9 then--µñÎÄ½ø½×
+	elseif idx == 9 then--????
 		return 1
-	elseif idx == 10 then--áÛ·å
+	elseif idx == 10 then--??
 	
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 11 then--¸öÈË
+	elseif idx == 11 then--??
 		return 1
-	elseif idx == 12 then--ÆäËû
+	elseif idx == 12 then--??
 		return 1
 	end
 	return 0

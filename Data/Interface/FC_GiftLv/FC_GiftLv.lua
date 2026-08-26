@@ -4,7 +4,7 @@ local m_Frame_UnifiedYPosition
 
 local m_AwardData = 
 {
-	[1] = { --第一名
+	[1] = { --???
 		{ItemId=38003555, Num=1, Bind=1,},
 		{ItemId=38003553, Num=20, Bind=1,},
 		{ItemId=38003165, Num=2, Bind=1,},
@@ -12,7 +12,7 @@ local m_AwardData =
 		{ItemId=20502004, Num=4, Bind=1,},
 		{ItemId=20501004, Num=4, Bind=1},
 	},
-	[2] = { --第二名
+	[2] = { --???
 		{ItemId=38003556, Num=1, Bind=1,},
 		{ItemId=38003553, Num=16, Bind=1,},
 		{ItemId=38003166, Num=2, Bind=1,},
@@ -20,7 +20,7 @@ local m_AwardData =
 		{ItemId=20502013, Num=4, Bind=1,},
 		{ItemId=20501009, Num=4, Bind=1},
 	},
-	[3] = { --第3到4名
+	[3] = { --?3?4?
 		{ItemId=38003557, Num=1, Bind=1,},
 		{ItemId=38003553, Num=12, Bind=1,},
 		{ItemId=38003164, Num=2, Bind=1,},
@@ -28,19 +28,19 @@ local m_AwardData =
 		{ItemId=20502013, Num=3, Bind=1,},
 		{ItemId=20501009, Num=3, Bind=1},
 	},
-	[4] = { --第5到8名
+	[4] = { --?5?8?
 		{ItemId=38003553, Num=10, Bind=1,},
 		{ItemId=20502013, Num=2, Bind=1,},
 		{ItemId=20501009, Num=2, Bind=1},
 		{ItemId=38003164, Num=2, Bind=1},
 	},
-	[5] = { --第9到16名
+	[5] = { --?9?16?
 		{ItemId=38003553, Num=8, Bind=1,},
 		{ItemId=20502003, Num=2, Bind=1,},
 		{ItemId=20501003, Num=2, Bind=1},
 		{ItemId=38003163, Num=2, Bind=1},
 	},
-	[6] = { --第17到32名
+	[6] = { --?17?32?
 		{ItemId=38003553, Num=6, Bind=1,},
 		{ItemId=20502003, Num=1, Bind=1,},
 		{ItemId=20501003, Num=1, Bind=1},
@@ -48,7 +48,7 @@ local m_AwardData =
 	},
 }
 local m_AwardIconUI = {}
---预加载函数，可以而且只能在这里注册脚本关心的事件
+--预加载函数，可以而且只能在犫里注册脚本关心的事件
 function FC_GiftLv_PreLoad()
 	this:RegisterEvent("ZJZDPVP_UIOP", true)
 	-- 游戏窗口尺寸发生了变化

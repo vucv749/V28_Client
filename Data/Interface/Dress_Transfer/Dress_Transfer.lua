@@ -99,7 +99,7 @@ function Dress_Transfer_OnEvent(event)
 	end
 	
 	if event == "DRESS_TRANSFER_DONE" and this:IsVisible() then
-		--关闭“配饰转移”试衣间
+		--关睜“配饰转移”试衣间
 		if IsWindowShow("Dress_Transfer_Fitting") then
 			CloseWindow("Dress_Transfer_Fitting", true)
 		end
@@ -108,7 +108,7 @@ function Dress_Transfer_OnEvent(event)
 	end
 	
 	-- FakeObject模型界面互斥
-	if ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then   --时装预览
+	if ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then   --????
 		if (this:IsVisible()) then
 			Dress_Transfer_OnCloseClicked()
 			return
@@ -135,7 +135,7 @@ function Dress_Transfer_Show()
 	Dress_Transfer_CleanUp()
 	this:Show()	
 end
---关闭 或 打开 UI时 ，清空一次
+--关睜 或 打开 UI时 ，清繝一次
 function Dress_Transfer_CleanUp()
 
 	m_ActionButton_Dress_A:SetActionItem(-1)
@@ -170,12 +170,12 @@ end
 --刷新界面
 function Dress_Transfer_Refresh()
 	
-	--关闭“配饰转移”试衣间
+	--关睜“配饰转移”试衣间
 	if IsWindowShow("Dress_Transfer_Fitting") then
 		CloseWindow("Dress_Transfer_Fitting", true)
 	end
 	
-	--没有源装备直接清空
+	--没有源装备直接清繝
 	if m_DressBagIndex_A == -1 then
 		
 		m_ActionButton_Dress_A:SetActionItem(-1)
@@ -219,7 +219,7 @@ function Dress_Transfer_Refresh()
 	
 	end
 		
-	--没有目标装备直接清空
+	--没有目标装备直接清繝
 	if m_DressBagIndex_B == -1 then
 		
 		m_ActionButton_Dress_B:SetActionItem(-1)
@@ -325,12 +325,12 @@ end
 --从背包内右键点击
 function Dress_Transfer_OnBagItemRClicked(iBagIndex)
 	
-	--源装备槽空着 ，相当于拖入源装备槽
+	--源装备槽繝着 ，相当于拖入源装备槽
 	if m_DressBagIndex_A == -1 then
 		Dress_Transfer_OnItemDragedDropFromBag(iBagIndex , 0)
 		return
 	else
-		--源装备没空 ，相当于拖入目标装备槽
+		--源装备没繝 ，相当于拖入目标装备槽
 		Dress_Transfer_OnItemDragedDropFromBag(iBagIndex , 1)
 		return
 	end
@@ -403,7 +403,7 @@ function Dress_Transfer_OnItemDragedDropFromBag(iBagIndex , iSlotIdx)
 			return
 		end
 
-		--该时装上没有空的配饰点缀位，无法进行配饰转移
+		--该时装上没有繝的配饰点缀位，无法进行配饰转移
 		local nGemCount = LifeAbility:GetEquip_GemCount(iBagIndex)
 		if nGemCount >= nHoleCount then
 			PushDebugMessage("#{SZPSZY_160314_22}")	
@@ -554,7 +554,7 @@ function Dress_Transfer_OnHiden()
 
 	Dress_Transfer_CleanUp()
 	
-	--关闭“配饰转移”试衣间
+	--关睜“配饰转移”试衣间
 	if IsWindowShow("Dress_Transfer_Fitting") then
 		CloseWindow("Dress_Transfer_Fitting", true)
 	end

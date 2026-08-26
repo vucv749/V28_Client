@@ -40,7 +40,7 @@ function Kunwu_PVPScoreMini_OnShow()
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function Kunwu_PVPScoreMini_OnClose()
 	this:Hide()
@@ -48,7 +48,7 @@ function Kunwu_PVPScoreMini_OnClose()
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function Kunwu_PVPScoreMini_CloseClicked()
 	this:Hide()

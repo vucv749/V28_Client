@@ -1,4 +1,4 @@
--- 跨服爬塔夺宝 龙塔三层奖励（神龙祝福）宝箱信息展示UI
+-- 跨服爬塔夺宝 龙塔三层奖励（神龙祝福）宝箱信息牴示UI
 
 -- 默认位置
 local TowerBox_Award_UnifiedPosition = nil
@@ -19,8 +19,8 @@ function TowerBox_Award_PreLoad()
 	this:RegisterEvent("PTDB_UI_BOXINFORESUME", true)
 	this:RegisterEvent("UI_COMMAND", true)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end -- end func TowerBox_Award_PreLoad()
 
 function TowerBox_Award_OnEvent(event)
@@ -38,13 +38,13 @@ function TowerBox_Award_OnEvent(event)
 			TowerBox_Award_Show()
 		end
 	elseif (event == "PTDB_UI_CLOSEBOXINFO") then
-		-- MiniUI 关闭
+		-- MiniUI 关睜
 		TowerBox_Award_MiniUIFlag = 0
 		TowerBox_Award_OpenFlag = 0
 
 		TowerBox_Award_Hide()
 	elseif (event == "PTDB_UI_BOXINFORESUME") then
-		-- MiniUI 关闭
+		-- MiniUI 关睜
 		TowerBox_Award_MiniUIFlag = 0
 		TowerBox_Award_OpenFlag = 0
 
@@ -58,7 +58,7 @@ function TowerBox_Award_OnEvent(event)
 		TowerBox_Award_Goto(targetSceneId, posX, posZ)
 	elseif (event == "HIDE_ON_SCENE_TRANSED") then
 		if (TowerBox_Award_OpenFlag <= 0) then
-			-- MiniUI 关闭
+			-- MiniUI 关睜
 			TowerBox_Award_MiniUIFlag = 0
 			TowerBox_Award_Hide()
 		else

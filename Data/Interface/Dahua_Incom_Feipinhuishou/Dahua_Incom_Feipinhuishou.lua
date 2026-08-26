@@ -16,10 +16,10 @@ local g_Dahua_Incom_Iteminfo = {
 --===============================================
 function Dahua_Incom_Feipinhuishou_PreLoad()
 	this:RegisterEvent("OPEN_DAHUA_INCOM_FEIPINHUISHOU")
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)		--离开场景
-	this:RegisterEvent("ADJEST_UI_POS",false)				-- 游戏窗口尺寸发生了变化
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)		-- 游戏分辨率发生了变化 
-	this:RegisterEvent("DAHUA_INCOM_FEIPINHUISHOU_ITEM",false)	-- 从背包放入道具  
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)		--????
+	this:RegisterEvent("ADJEST_UI_POS",false)				-- ???????????
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)		-- ?????????? 
+	this:RegisterEvent("DAHUA_INCOM_FEIPINHUISHOU_ITEM",false)	-- ???????  
 end
 
 --===============================================
@@ -71,7 +71,7 @@ function Dahua_Incom_Feipinhuishou_UpdateItem(index)
 			return
 		end
 
-		--判断 是否是可回收道具
+		--判断 是否是可回薁道具
 		local itemid = PlayerPackage:GetItemTableIndex(BagPos)
 		if(itemid < 0)then
 			return

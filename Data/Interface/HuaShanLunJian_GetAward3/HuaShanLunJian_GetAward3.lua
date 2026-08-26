@@ -1,4 +1,4 @@
---测试赛 by yuanpeilong：每日领奖
+--测试赛 by yuanpeilong：每葼领奖
 
 local g_HuaShanLunJian_GetAward3_ActionItem = {}
 local g_HuaShanLunJian_GetAward3_HaveGetFlag = {}
@@ -44,8 +44,8 @@ function HuaShanLunJian_GetAward3_OnLoad()
 	g_HuaShanLunJian_GetAward3_GetPrizeButton[2] = HuaShanLunJian_GetAward3_Pic2Btn
 	--g_HuaShanLunJian_GetAward3_GetPrizeButton[3] = HuaShanLunJian_GetAward3_Pic3Btn
   
-	g_HuaShanLunJian_GetAward3_PrizeItem[1] = {id=30505281, num=1} --替代
-	g_HuaShanLunJian_GetAward3_PrizeItem[2] = {id=38002448, num=1} --替代
+	g_HuaShanLunJian_GetAward3_PrizeItem[1] = {id=30505281, num=1} --??
+	g_HuaShanLunJian_GetAward3_PrizeItem[2] = {id=38002448, num=1} --??
 	--g_HuaShanLunJian_GetAward3_PrizeItem[3] = {id=30008027, num=3} --替代
  
 	g_HuaShanLunJian_GetAward3_MD = 0
@@ -72,7 +72,7 @@ end
 -- OnEvent
 function HuaShanLunJian_GetAward3_OnEvent(event)
 	--
-	if ( event == "UI_COMMAND" and tonumber(arg0) == 89289102 ) then --打开界面
+	if ( event == "UI_COMMAND" and tonumber(arg0) == 89289102 ) then --????
 		HuaShanLunJian_GetAward3_BeginCare( Get_XParam_INT(0) )
 		g_HuaShanLunJian_GetAward3_MD = Get_XParam_INT(1)
 		g_HuaShanLunJian_GetAward3_MF_1 = Get_XParam_INT(2)
@@ -126,10 +126,10 @@ function HuaShanLunJian_GetAward3_Update( )
 
 	local nDayTotalCnt = g_HuaShanLunJian_GetAward3_MD
 	if nDayTotalCnt == 0 then
-		local dayCntText = ScriptGlobal_Format("#{HSLJ_190919_297}", nDayTotalCnt) --红色
+		local dayCntText = ScriptGlobal_Format("#{HSLJ_190919_297}", nDayTotalCnt) --??
 		HuaShanLunJian_GetAward3_Text:SetText(dayCntText)
 	else
-		local dayCntText = ScriptGlobal_Format("#{HSLJ_190919_281}", nDayTotalCnt) --正常色
+		local dayCntText = ScriptGlobal_Format("#{HSLJ_190919_281}", nDayTotalCnt) --???
 		HuaShanLunJian_GetAward3_Text:SetText(dayCntText)
 	end
 	

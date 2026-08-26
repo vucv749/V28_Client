@@ -2,8 +2,8 @@
 local g_UnifiedPosition;
 
 local g_ItemList =  {
-[1]  = {itemid = 10125836, showid = 10125836, }, --90天
-[2]  = {itemid = 10125838, showid = 10125838, }, --永久 
+[1]  = {itemid = 10125836, showid = 10125836, }, --90?
+[2]  = {itemid = 10125838, showid = 10125838, }, --?? 
 }
 local g_Action_Item ={}
 local g_Action_Item_BagPos = -1
@@ -13,7 +13,7 @@ function DaHua_Shop_DoubleChoice_PreLoad()
 	this:RegisterEvent("UI_COMMAND",true); 
 	this:RegisterEvent("ADJEST_UI_POS",false)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 end
 
 function DaHua_Shop_DoubleChoice_OnLoad()
@@ -95,7 +95,7 @@ function DaHua_Shop_DoubleChoice_UnLock()
 end
 
 --=========================================================
---关闭
+--关睜
 --=========================================================
 function DaHua_Shop_DoubleChoice_OnClose()
 	this:Hide()
@@ -106,7 +106,7 @@ end
 --=========================================================
 function DaHua_Shop_DoubleChoice_OnHidden()
 	DaHua_Shop_DoubleChoice_UnLock()
-	PushEvent("CLOSE_DAHUAQIXI_SHOP_MSGBOX") -- 关闭二次确认界面
+	PushEvent("CLOSE_DAHUAQIXI_SHOP_MSGBOX") -- ????????
 end
 
 --=========================================================

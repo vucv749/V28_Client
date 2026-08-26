@@ -1,26 +1,26 @@
 --兽魂染色
 
 local EXTERIORFILTTING_TOTALKIND = 0
-local g_TargetExteriorIndex = 0			--定位的外观索引，从1开始
-local g_TargetExteriorID = 0			--定位的外观ID
+local g_TargetExteriorIndex = 0			--???????,?1??
+local g_TargetExteriorID = 0			--?????ID
 
-local g_CurSelExteriorID = 0			--当前选择的外观ID，从1开始
+local g_CurSelExteriorID = 0			--???????ID,?1??
 
-local g_CurPossVisualIndex = 0 --当前魂镜
+local g_CurPossVisualIndex = 0 --????
 local g_TargetPlan = 0
 local g_Distance = 1
 local g_Distance_Ori = 1
 local g_Distance_Max = 4
 local g_InitList = 0
-local g_ExteriorType = 4 --融魂外观
+local g_ExteriorType = 4 --????
 local g_MaxBarNum = 0
 local g_BarList = {}
 local g_PlanButton = {}
 local g_NeedChangeScrollSize = 1
 
-local g_CameraHeight = 1     --摄影机高度
-local g_CameraDistance = 2   --摄影机距离
-local g_CameraPitch = 3      --摄影机角度
+local g_CameraHeight = 1     --?????
+local g_CameraDistance = 2   --?????
+local g_CameraPitch = 3      --?????
 local g_CameraPosition =
 {
 	--女性相关位置
@@ -73,7 +73,7 @@ function PetSoul_RanSe_PreLoad()
 	this:RegisterEvent("UPDATE_PETSOUL_RANSE", false)
 	this:RegisterEvent("ADJEST_UI_POS", false)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED", false)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)	--离开场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)	--????????
 	this:RegisterEvent("UNIT_MONEY", false)
 	this:RegisterEvent("MONEYJZ_CHANGE", false)
 	this:RegisterEvent("PETSOUL_RANSE_ZIDONG_CONFIRM_BACK", false)
@@ -200,7 +200,7 @@ end
 
 
 function PetSoul_RanSe_OnShow()
-	if this : IsVisible() then	-- 如果界面开着，则不处理
+	if this : IsVisible() then	-- ??????,????
 		return
 	end
 	
@@ -359,7 +359,7 @@ function PetSoul_RanSe_UpdateObj()
 		end
 		PetSoul_RanSe_Text2:SetText(strdic)
 	else
-		PetSoul_RanSe_Text2:SetText("原始风格")
+		PetSoul_RanSe_Text2:SetText("Nguy阯 th鼀 phong c醕h")
 	end
 	PetSoul_RanSe_UpdateCamera()
 end
@@ -678,7 +678,7 @@ function PetSoul_RanSe_UpdateColorItem()
 		local planstr
 
 		if (nColor <= 0) then
-			planstr = "原始风格"
+			planstr = "Nguy阯 th鼀 phong c醕h"
 			g_RanSeButtonLock[j]:Show()
 			g_RanSeButtonQuality[j]:Hide()
 			local strIcon = Exterior:LuaFnGetExteriorPossInfo(g_CurSelExteriorID, "Icon")
@@ -740,12 +740,12 @@ end
 --初始化自动状态 并构造数据
 function PetSoul_RanSe_Zidong_ALLChoice_Init() 
 	PetSoul_RanSe_Zidong_ALLChoice:ResetList()  	
-	PetSoul_RanSe_Zidong_ALLChoice:SetText("#{SHRS_230621_149}")--选择目标染色风格  
+	PetSoul_RanSe_Zidong_ALLChoice:SetText("#{SHRS_230621_149}")--????????  
 
 	if ( g_CurSelExteriorID <= 0 ) then  
 		
 		PetSoul_RanSe_Zidong_ALLChoice:Disable()
-		PetSoul_RanSe_Zidong_ALLChoice:SetText("#{SHRS_230621_149}")--选择目标染色风格  
+		PetSoul_RanSe_Zidong_ALLChoice:SetText("#{SHRS_230621_149}")--????????  
 		PetSoul_RanSe_Zidong_Animate:Play(false)
 		PetSoul_RanSe_Zidong:SetText("#{SHRS_230621_152}")
 		PetSoul_RanSe_Zidong:Disable()
@@ -771,7 +771,7 @@ end
 function PetSoul_RanSe_UpdateAutoList()
 
 	PetSoul_RanSe_Zidong_ALLChoice:ResetList()  	
-	PetSoul_RanSe_Zidong_ALLChoice:SetText("#{SHRS_230621_149}")--选择目标染色风格  
+	PetSoul_RanSe_Zidong_ALLChoice:SetText("#{SHRS_230621_149}")--????????  
 	PetSoul_RanSe_Zidong_ALLChoice:Disable()
 	PetSoul_RanSe_Zidong_Animate:Play(false)
 	PetSoul_RanSe_Zidong:SetText("#{SHRS_230621_152}")
@@ -840,7 +840,7 @@ function PetSoul_RanSe_AutoListChanged()
 end
 
 --点击自动染色事件
-function PetSoul_RanSe_Zidong_Clicked()			--自动开启  开启timer事件
+function PetSoul_RanSe_Zidong_Clicked()			--????  ??timer??
 	if g_ZiDongState == 0 then 
 		
 		if g_SelectPlan <= 0 then
@@ -904,7 +904,7 @@ function PetSoul_RanSe_TimerEvent()
 				Set_XSCRIPT_Parameter(0, g_TargetId)
 				Set_XSCRIPT_Parameter(1, g_SelectPlan)
 				Set_XSCRIPT_Parameter(2, g_CurSelExteriorID)
-				Set_XSCRIPT_Parameter(3, g_IsFirstAuto)			--是否是第一次自动染色  为了区别显示不同内容  1 代表第一次 0不是
+				Set_XSCRIPT_Parameter(3, g_IsFirstAuto)			--??????????  ??????????  1 ????? 0??
 				Set_XSCRIPT_ParamCount(4)
 			Send_XSCRIPT() 
 		g_RecvGRespState    = 0 
@@ -912,7 +912,7 @@ function PetSoul_RanSe_TimerEvent()
  	end 
 end
 
---重置自动状态 1.点击停止 关闭窗口时
+--重置自动状态 1.点击停止 关睜窗口时
 function PetSoul_RanSe_ResetZiDongState()
 	local _name,ComIdx = PetSoul_RanSe_Zidong_ALLChoice:GetCurrentSelect()
 	if ComIdx > 0 then
@@ -920,7 +920,7 @@ function PetSoul_RanSe_ResetZiDongState()
 		PetSoul_RanSe_Zidong:Disable()
 		PetSoul_RanSe_Zidong_Animate:Play(false)
 		PetSoul_RanSe_Zidong_ALLChoice:Enable() 
-		PetSoul_RanSe_Zidong_ALLChoice:SetText("#{SHRS_230621_149}")--选择目标染色风格  
+		PetSoul_RanSe_Zidong_ALLChoice:SetText("#{SHRS_230621_149}")--????????  
 	end 
 
 	PetSoul_RanSe_Zidong:SetText("#{SHRS_230621_152}")
@@ -935,7 +935,7 @@ function PetSoul_RanSe_ResetZiDongState()
 	g_Confirm 			= 0
 end	
 
---染出目标颜色
+--染出目标褷色
 function PetSoul_RanSe_SuccDestMode()
 	
 	Clear_XSCRIPT()
@@ -952,7 +952,7 @@ function PetSoul_RanSe_JianClicked()
 	PushEvent("OPEN_PETSOUL_RANSE_JIAN", g_CurSelExteriorID)
 end
 
--- 将按钮设置成终止状态
+-- 将按钮设置成譅止状态
 function PetSoul_RanSe_RetSetZidongButtonText()
 	PetSoul_RanSe_Zidong:SetText("#{SHRS_230621_153}")
 end

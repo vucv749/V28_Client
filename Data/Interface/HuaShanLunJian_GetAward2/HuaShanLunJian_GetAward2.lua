@@ -63,20 +63,20 @@ function HuaShanLunJian_GetAward2_OnLoad()
 	g_HuaShanLunJian_GetAward2_GetPrizeButton[5] = HuaShanLunJian_GetAward2_Pic5Btn
   
 	g_HuaShanLunJian_GetAward2_PrizeItem[1] = {}
- 	g_HuaShanLunJian_GetAward2_PrizeItem[1][1] = {id=20310168, num=8} --替代
-	g_HuaShanLunJian_GetAward2_PrizeItem[1][2] = {id=30900006, num=4} --替代
+ 	g_HuaShanLunJian_GetAward2_PrizeItem[1][1] = {id=20310168, num=8} --??
+	g_HuaShanLunJian_GetAward2_PrizeItem[1][2] = {id=30900006, num=4} --??
 	g_HuaShanLunJian_GetAward2_PrizeItem[2] = {}
-	g_HuaShanLunJian_GetAward2_PrizeItem[2][1] = {id=20310116, num=3} --替代
-	g_HuaShanLunJian_GetAward2_PrizeItem[2][2] = {id=30502002, num=5} --替代
+	g_HuaShanLunJian_GetAward2_PrizeItem[2][1] = {id=20310116, num=3} --??
+	g_HuaShanLunJian_GetAward2_PrizeItem[2][2] = {id=30502002, num=5} --??
 	g_HuaShanLunJian_GetAward2_PrizeItem[3] = {}
-	g_HuaShanLunJian_GetAward2_PrizeItem[3][1] = {id=30501361, num=2} --替代
-	g_HuaShanLunJian_GetAward2_PrizeItem[3][2] = {id=30700241, num=2} --替代
+	g_HuaShanLunJian_GetAward2_PrizeItem[3][1] = {id=30501361, num=2} --??
+	g_HuaShanLunJian_GetAward2_PrizeItem[3][2] = {id=30700241, num=2} --??
 	g_HuaShanLunJian_GetAward2_PrizeItem[4] = {}
-	g_HuaShanLunJian_GetAward2_PrizeItem[4][1] = {id=30503140, num=2} --替代
-	g_HuaShanLunJian_GetAward2_PrizeItem[4][2] = {id=30503020, num=1} --替代
+	g_HuaShanLunJian_GetAward2_PrizeItem[4][1] = {id=30503140, num=2} --??
+	g_HuaShanLunJian_GetAward2_PrizeItem[4][2] = {id=30503020, num=1} --??
 	g_HuaShanLunJian_GetAward2_PrizeItem[5] = {}
-	g_HuaShanLunJian_GetAward2_PrizeItem[5][1] = {id=50231001, num=1} --替代
-	g_HuaShanLunJian_GetAward2_PrizeItem[5][2] = {id=30103064, num=1} --替代
+	g_HuaShanLunJian_GetAward2_PrizeItem[5][1] = {id=50231001, num=1} --??
+	g_HuaShanLunJian_GetAward2_PrizeItem[5][2] = {id=30103064, num=1} --??
 	
 	g_HuaShanLunJian_GetAward2_MD = 0
 	g_HuaShanLunJian_GetAward2_MF_1 = 0
@@ -112,7 +112,7 @@ end
 -- OnEvent
 function HuaShanLunJian_GetAward2_OnEvent(event)
 	--
-	if ( event == "UI_COMMAND" and tonumber(arg0) == 89289103 ) then --打开界面
+	if ( event == "UI_COMMAND" and tonumber(arg0) == 89289103 ) then --????
 		HuaShanLunJian_GetAward2_BeginCare( Get_XParam_INT(0) )
 		g_HuaShanLunJian_GetAward2_MD = Get_XParam_INT(1)
 		g_HuaShanLunJian_GetAward2_MF_1 = Get_XParam_INT(2)

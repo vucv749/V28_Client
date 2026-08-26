@@ -5,8 +5,8 @@ local g_unifiedposistion = nil
 local g_ServerNpc = -1
 local g_MaxPlaneLevel = 3
 
-local g_UICommand_HunShu = 80600305		--婚书界面
-local g_UICommand_HunShu_CoupleZone = 80600306		--婚书界面
+local g_UICommand_HunShu = 80600305		--????
+local g_UICommand_HunShu_CoupleZone = 80600306		--????
 
 local g_normal_plane = 1
 local g_high_plane = 2
@@ -17,7 +17,7 @@ function XiaLv_Wedding_Confirm_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
 	this:RegisterEvent("FILLDATA_HUNSHU")
 	
-	this:RegisterEvent("PLAYER_ENTERING_WORLD")		-- 进入游戏世界
+	this:RegisterEvent("PLAYER_ENTERING_WORLD")		-- ??????
 
 	this:RegisterEvent("ADJEST_UI_POS");
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED");
@@ -54,7 +54,7 @@ end
 -- OnEvent
 function XiaLv_Wedding_Confirm_OnEvent(event)
 
-	if ( event == "UI_COMMAND" and tonumber(arg0) == g_UICommand_HunShu ) then --打开界面
+	if ( event == "UI_COMMAND" and tonumber(arg0) == g_UICommand_HunShu ) then --????
 		g_ServerNpc = Get_XParam_INT(0)
 		local caredNpc = DataPool:GetNPCIDByServerID( g_ServerNpc )
 		if caredNpc ~= -1 then
@@ -63,7 +63,7 @@ function XiaLv_Wedding_Confirm_OnEvent(event)
 		
 		XiaLv_Wedding_Confirm_Open(1)
 
-	elseif ( event == "UI_COMMAND" and tonumber(arg0) == g_UICommand_HunShu_CoupleZone ) then --打开界面
+	elseif ( event == "UI_COMMAND" and tonumber(arg0) == g_UICommand_HunShu_CoupleZone ) then --????
 		XiaLv_Wedding_Confirm_Open(2)
 		
 	elseif( event == "PLAYER_ENTERING_WORLD") then
@@ -123,7 +123,7 @@ function XiaLv_Wedding_Confirm_FillData()
 	ControlList.man_text:SetText(malVow)
 	ControlList.woman_text:SetText(femalVow)
 	
-	--	结婚日期
+	--	结婚葼期
 	local year = Get_XParam_INT(1)
 	local month = Get_XParam_INT(2)
 	local day = Get_XParam_INT(3)
@@ -220,7 +220,7 @@ function XiaLv_Wedding_Confirm_Open(nType)
 end
 
 
---只关闭界面
+--只关睜界面
 function XiaLv_Wedding_Confirm_Close()
 
 	this:Hide()

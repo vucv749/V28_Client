@@ -16,8 +16,8 @@ local g_RoundImage = {
 function FC_GameInfo_PreLoad()
   
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-    this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+    this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 	this:RegisterEvent("UI_COMMAND")
 
 end -- end func FC_GameInfo_Frame_PreLoad()
@@ -36,7 +36,7 @@ function FC_GameInfo_OnEvent(event)
         FC_GameInfo_Frame_UnifiedPos()
     elseif (event == "ADJEST_UI_POS") then
         FC_GameInfo_Frame_UnifiedPos()
-	elseif event == "UI_COMMAND" and (tonumber(arg0) == 331170003) then	--服务端传数据
+	elseif event == "UI_COMMAND" and (tonumber(arg0) == 331170003) then	--??????
 	
 		local strSelfName = Get_XParam_STR(0)
 		local strOppoName = Get_XParam_STR(1)
@@ -49,7 +49,7 @@ function FC_GameInfo_OnEvent(event)
 		end
 		
 		this:Show()
-	elseif event == "UI_COMMAND" and (tonumber(arg0) == 331170004) then	--服务端传数据
+	elseif event == "UI_COMMAND" and (tonumber(arg0) == 331170004) then	--??????
 	
 		
 		

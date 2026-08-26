@@ -38,7 +38,7 @@ function Packet_PreLoad()
 	this:RegisterEvent("UPDATE_BIND_YUANBAO");
 	this:RegisterEvent("CITY_SHOW_SHOP");
 	
-	-- ¿ªÊ¼ÕûÀíºÍ½áÊøÕûÀí
+	-- ¿ªÊ¼ ûÀíºÍ½áÊø ûÀí
 	this:RegisterEvent("BEGIN_PACKUP_PACKET");
 	this:RegisterEvent("END_PACKUP_PACKET");
 	this:RegisterEvent("PLAYER_LEAVE_WORLD");
@@ -103,9 +103,9 @@ function Packet_OnLoad()
 						}
 		
 	PACKAGE_TAB_TEXT = {
-		[0] = "µÀ¾ß",
-		"²ÄÁÏ",
-		"ÈÎÎñ",
+		[0] = "ĞÕo cø",
+		"Tài li®u",
+		"Nhi®m vø",
 	};
 	
 	PACKAGE_TAB = {
@@ -135,7 +135,7 @@ function Packet_Close()
 	nTheTabIndex = 0;
 	PACKAGE_TAB[nTheTabIndex]:SetCheck(1);
 	
-	--¹Ø±Õ½çÃæÊ±£¬ÏòServerÇëÇó±³°üÍ¬²½
+	--¹Ø± ½çÃæÊ±£¬ÏòServerÇëÇó±³°üÍ¬²½
 	--AskMyBagListº¯Êı±¾ÉíÓĞ¼ÆÊ±¿ØÖÆ
 	DataPool:AskMyBagList();
 	NotifyPacketStatus(0)
@@ -167,7 +167,7 @@ function Packet_OnEvent( event )
 		if( arg0 == "Packet") then
 			Packet_Open();
 		end
-	--Ëø¶¨ÕıÔÚ²Ù×÷µÄ±³°üÖĞµÄÎïÆ·
+	--Ëø¶¨ ıÔÚ²Ù×÷µÄ±³°üÖĞµÄÎïÆ·
 	elseif ( event == "LOCK_PACKET_ITEM" ) then 
 
 	elseif ( event == "REPLY_MISSION" ) then 
@@ -183,17 +183,17 @@ function Packet_OnEvent( event )
 	elseif ( event == "RESET_EXT_BAG" ) then
 		Packet_ResetExtBag();
 	elseif (event == "UPDATE_YUANBAO" and this:IsVisible()) then
-		Packet_YuanBao2:SetText("Ôª±¦:"..tostring(Player:GetData("YUANBAO")));
+		Packet_YuanBao2:SetText("Nguyên bäo:"..tostring(Player:GetData("YUANBAO")));
 	elseif (event == "UPDATE_BIND_YUANBAO" and this:IsVisible()) then
 		Packet_BangdingYuanbao:SetText("#{BDYB_090714_01}"..tostring(Player:GetData("BIND_YUANBAO")));
 	elseif (event == "MONEYJZ_CHANGE" and this:IsVisible()) then
 		Packet_Jiaozi:SetProperty("MoneyNumber", tostring(Player:GetData("MONEY_JZ")));
 	
-	--Ëø¶¨¡°ÕûÀí°´Å¥¡±
+	--Ëø¶¨¡° ûÀí°´Å¥¡±
 	elseif ( event == "BEGIN_PACKUP_PACKET" )   then		
 		Packet_Classify:Disable()
 	
-	--´ò¿ª¡°ÕûÀí°´Å¥¡±
+	--´ò¿ª¡° ûÀí°´Å¥¡±
 	elseif ( event == "END_PACKUP_PACKET" )	    then		
 		Packet_Classify:Enable()
   --ÃË»á²ÄÁÏ×ª»¯
@@ -259,13 +259,13 @@ function Packet_OnEvent( event )
   	PACKAGE_TAB[nTheTabIndex]:SetCheck(1)
   	Packet_Open()
   
-  -- ±¦Ê¯Õª³ı
+  -- ±¦Ê¯ ª³ı
   elseif ( event == "UI_COMMAND" and tonumber(arg0) == 27 ) then
   	nTheTabIndex = 0
   	PACKAGE_TAB[nTheTabIndex]:SetCheck(1)
   	Packet_Open()
   	
-  -- ±¦Ê¯¼«ÏŞÕª³ı
+  -- ±¦Ê¯¼«ÏŞ ª³ı
   elseif ( event == "UI_COMMAND" and tonumber(arg0) == 25702 ) then
   	nTheTabIndex = 0
   	PACKAGE_TAB[nTheTabIndex]:SetCheck(1)
@@ -327,7 +327,7 @@ function Packet_OnEvent( event )
   	PACKAGE_TAB[nTheTabIndex]:SetCheck(1)
 	  Packet_Open()
 	
-	--ÅäÊÎÕª³ı
+	--ÅäÊÎ ª³ı
 	elseif( event == "UI_COMMAND" and tonumber(arg0) == 19851274 ) then   	
   	nTheTabIndex = 0
   	PACKAGE_TAB[nTheTabIndex]:SetCheck(1)
@@ -338,7 +338,7 @@ function Packet_OnEvent( event )
 	elseif( event == "UI_COMMAND" and tonumber(arg0) == 99850605 ) then
 		Packet_Open()
 	elseif( event == "UI_COMMAND" and tonumber(arg0) == 89106201 ) then
-		--É¨µ´ÔÂ¿¨&ÈÕ¿¨
+		--É¨µ´ÔÂ¿¨&È ¿¨
 		Packet_Open()
 	elseif( event == "UI_COMMAND" and tonumber(arg0) == 89021506 ) then
 		
@@ -434,12 +434,12 @@ function Packet_OnUpdateShow()
 	end
 	
 	local nMaxLine = math.floor( CurrNum / PACKAGE_NUM_PER_LINE );
-	--Èç¹ûÊÇÕû³ıÁË
+	--Èç¹ûÊÇ û³ıÁË
 	if( nMaxLine * PACKAGE_NUM_PER_LINE == CurrNum ) then
 	else
 		nMaxLine = nMaxLine + 1;
 	end
-	AxTrace( 8,0,"ÒÑ¾­ÓĞµÄ°ü¸ñÊı"..tostring( CurrNum ).."  ĞèÒªÏÔÊ¾µÄĞĞÊı"..tostring( nMaxLine ) );
+	AxTrace( 8,0,"Ğã có Bao Cách S±"..tostring( CurrNum ).."C¥n bi¬u hi®n Ğích Hành S±"..tostring( nMaxLine ) );
 	--Èç¹û³¬¹ıµ±Ç°ÏÔÊ¾µÄ×î´ó·¶Î§ÁË£¬¾Í¸üĞÂ°üµÄĞĞÊı
 	Packet_UpdateBagLine( nMaxLine );
 	local nMaxDisplayNumber = nMaxLine * PACKAGE_NUM_PER_LINE;
@@ -460,7 +460,7 @@ function Packet_OnUpdateShow()
 				PACKAGE_BUTTONS[i]:Enable();
 			end
 
-		else  --ÕâĞ©ÊÇĞèÒªÒş²ØµÄ
+		else  --????????
 			PACKAGE_BUTTONS[ i ]:SetActionItem( -1 );
 			PACKAGE_BUTTONS[ i ]:Hide();
 		end
@@ -479,7 +479,7 @@ function Packet_OnUpdateShow()
   end
 	Packet_Money:SetProperty("MoneyNumber", tostring(Player:GetData("MONEY")));
 	--YuanBao
-	Packet_YuanBao2:SetText("Ôª±¦:"..tostring(Player:GetData("YUANBAO")));
+	Packet_YuanBao2:SetText("Nguyên bäo:"..tostring(Player:GetData("YUANBAO")));
 	--BindYuanBao
 	Packet_BangdingYuanbao:SetText("#{BDYB_090714_01}"..tostring(Player:GetData("BIND_YUANBAO")));
 	--Money_JZ
@@ -532,7 +532,7 @@ function Packet_ItemBtnClicked( nLine, nRow )
 		--ÉñÆ÷¹¦ÄÜ
 		"SuperWeapon9_ShengJie","SuperWeapon9_ShengXing","SuperWeapon9_TuPo","SuperWeaponChange","SuperWeaponJJ","SuperWeaponQH","SuperWeaponSoulless","SuperWeaponTL",
 		"SuperWeapon9_Change","SuperWeapon9_JieMeng",
-		--½ğ¸Õï±
+		--½ğ¸ ï±
 		"JinGangCuo_AddNum",
 		--¾«Í¨¹¦ÄÜ
 		"EquipEducation_Update","EquipEducation_Transfer","EquipEducation_Temper","EquipEducation_Decompose","EquipAttributeTransfer",
@@ -590,9 +590,9 @@ end
 -- ¶ş¼¶ÃÜÂë
 function Packet_OpenDlgForErjimima()
 	local isSetMinorPwd = IsMinorPwdSetup();
-	if(tonumber(isSetMinorPwd) == 1) then		--ÒÑÉèÖÃ
+	if(tonumber(isSetMinorPwd) == 1) then		--???
 		OpenChangeMinorPasswordDlg();
-	else		--Î´ÉèÖÃ
+	else		--???
 		OpenSetMinorPasswordDlg();
 	end
 	
@@ -611,7 +611,7 @@ end
 function Packet_OnChongZhi()
 	-- Chongzhi()
 	
-	PushDebugMessage("µÚÒ»¸öX64º¯Êı");
+	PushDebugMessage("Ngß¶i thÑ nh¤t X64hàm s¯");
 	 PushDebugMessage(XueWu(1,3));
 end
 

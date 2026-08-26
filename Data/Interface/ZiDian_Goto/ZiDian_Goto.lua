@@ -3,10 +3,10 @@ local g_ZiDian_Goto_Frame_UnifiedYPosition
 
 local g_ZiDian_Goto_Xunlu =
 {
-	[1] = {PosX = 177, PosZ = 179, Scene = 1, Name = "张择端"},
+	[1] = {PosX = 177, PosZ = 179, Scene = 1, Name = "Tr呓ng Tr誧h 衞an"},
 }
 
---预加载函数，可以而且只能在这里注册脚本关心的事件
+--预加载函数，可以而且只能在犫里注册脚本关心的事件
 function ZiDian_Goto_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
 	-- 游戏窗口尺寸发生了变化

@@ -102,7 +102,7 @@ function Fashion_AuctionBidding_Update()
 	local uItemNum = DataPool:LuaFnGetFashionAuctionBiddingInfo(g_CurSection, g_CurGroupIndex, "ITEMNUM")
 	--最高出价
 	local nHighPrice = DataPool:LuaFnGetFashionAuctionBiddingInfo(g_CurSection, g_CurGroupIndex, "TOPBID")
-	--最高出价人姓名
+	--最高出价人袪名
 	local nHighName = DataPool:LuaFnGetFashionAuctionBiddingInfo(g_CurSection, g_CurGroupIndex, "NAME")
 	--最高出价人的世界号
 	local nHighZoneWorld = DataPool:LuaFnGetFashionAuctionBiddingInfo(g_CurSection, g_CurGroupIndex, "TOPWORLD")	
@@ -388,9 +388,9 @@ function Fashion_AuctionBidding_Refresh()
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name("OpenBidUI")
 		Set_XSCRIPT_ScriptID(888818)
-		Set_XSCRIPT_Parameter(0, 1)								--打开
-		Set_XSCRIPT_Parameter(1, tonumber(g_CurSection))		--索引
-		Set_XSCRIPT_Parameter(2, tonumber(g_CurGroupIndex))		--索引
+		Set_XSCRIPT_Parameter(0, 1)								--??
+		Set_XSCRIPT_Parameter(1, tonumber(g_CurSection))		--??
+		Set_XSCRIPT_Parameter(2, tonumber(g_CurGroupIndex))		--??
 		Set_XSCRIPT_Parameter(3, 1)
 		Set_XSCRIPT_ParamCount(4)
 	Send_XSCRIPT()
@@ -441,8 +441,8 @@ function Fashion_AuctionBidding_DoBidding()
 		Set_XSCRIPT_Function_Name("NewBidding")
 		Set_XSCRIPT_ScriptID(888818)
 		Set_XSCRIPT_Parameter(0, tonumber(g_CurSection))		--
-		Set_XSCRIPT_Parameter(1, tonumber(g_CurGroupIndex))		--索引
-		Set_XSCRIPT_Parameter(2, tonumber(nString))				--索引
+		Set_XSCRIPT_Parameter(1, tonumber(g_CurGroupIndex))		--??
+		Set_XSCRIPT_Parameter(2, tonumber(nString))				--??
 		Set_XSCRIPT_ParamCount(3)
 	Send_XSCRIPT()
 end

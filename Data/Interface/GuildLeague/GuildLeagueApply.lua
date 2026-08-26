@@ -130,7 +130,7 @@ end
 function GuildLeagueApply_DoAnswer(answer)
 	local index=GuildLeagueApply_List:GetSelectItem()
 	if index==-1 then
-		PushDebugMessage("请先选择一个帮会同盟！")
+		PushDebugMessage("H銀 ch鱪 tr呔c m祎 Bang H礽 邪ng Minh!")
 		return
 	end
 	

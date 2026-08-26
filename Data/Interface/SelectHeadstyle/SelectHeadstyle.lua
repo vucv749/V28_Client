@@ -4,14 +4,14 @@ local g_SelectHeadstyle_YuanbaoPay = 1
 local g_SelectHeadstyle_Frame_UnifiedPosition
 
 local g_clientNpcId = -1
-local g_ExteriorType = 2 			--头像
+local g_ExteriorType = 2 			--??
 
 local g_InitList = 0
 local g_NeedChangeScrollSize = 1
 
 local g_MaxBarNum = 0
 local g_BarList = {}
-local g_CurSelExteriorID = 0		--当前选择的外观ID，从1开始
+local g_CurSelExteriorID = 0		--???????ID,?1??
 
 local g_YB_Clicked = 0
 
@@ -158,7 +158,7 @@ function SelectHeadstyle_SetItem(index, max_count)
 		bar:GetSubItem("SelectHeadGroup_SuperListItemActionDef"):Hide()
 		
 		if nExteriorID == Exterior:LuaFnGetExteriorInUse(g_ExteriorType) then
-			--当前正在装备的
+			--当前狚在装备的
 			bar:GetSubItem("SelectHeadGroup_SuperListItemActionDef"):Show()
 		end
 
@@ -229,7 +229,7 @@ function SelectHeadstyle_ShowDetail()
 		SelectHeadstyle_Accept:SetText("#{GXHDZ_141121_04}")
 
 		if g_CurSelExteriorID == Exterior:LuaFnGetExteriorInUse(g_ExteriorType) then
-			--当前正在装备的
+			--当前狚在装备的
 			SelectHeadstyle_WarningText:SetText("#{WGYH_210827_04}")
 		end
 	else

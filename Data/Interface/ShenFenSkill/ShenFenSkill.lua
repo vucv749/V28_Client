@@ -210,7 +210,7 @@ function ShenFenSkill_UpdateIdentityAttr( nIdx )
 			-- ÊìÁ·¶È
 			local max_exp;
 			if nlevel > 11 or nlevel < 1 then
-				max_exp = "¡Þ"
+				max_exp = "8"
 			else
 				max_exp = LifeAbility : GetLifeAbility_LimitExp(g_ShenFenSkill_CurSkillId, nlevel);
 			end
@@ -243,7 +243,7 @@ function ShenFenSkill_UpdateIdentityAttr( nIdx )
 				-- ÊìÁ·¶È
 				local max_exp;
 				if nlevel > 11 or nlevel < 1 then
-					max_exp = "¡Þ"
+					max_exp = "8"
 				else
 					max_exp = LifeAbility : GetLifeAbility_LimitExp(SkillId, nlevel);
 				end
@@ -284,7 +284,7 @@ function ShenFenSkill_Action_Page_Switch()
 		ShenFenSkill_LifeSkill : SetCheck(0);
 		ShenFenSkill_ActionSkill : SetCheck(0);
 		ShenFenSkill_ShenFenSkill : SetCheck(1);
-		PushDebugMessage("Äã»¹Ã»ÓÐ°ÝÈëÃÅÅÉ¡£");
+		PushDebugMessage("Nhî còn không có Bái nh§p môn Phái.");
 		return; 
 	end;
 	OpenSkillBook();
@@ -333,10 +333,10 @@ function ShenFenSkill_SetTabColor()
 							};
 
 	local TAB_TEXT = {
-		[0] = "ÆÕÍ¨",
-		"ÃÅÅÉ",
-		"Éú»î",
-		"ÃË»á",
+		[0] = "S½ C¤p",
+		"Môn phái",
+		"Cuµc s¯ng",
+		"Minh Hµi",
 	};
 
 	tab[0]:SetText(noselColor..TAB_TEXT[0]);

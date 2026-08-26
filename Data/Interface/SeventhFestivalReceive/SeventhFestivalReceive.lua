@@ -1,4 +1,4 @@
---¿€º∆ ’ª®Ω±¿¯ΩÁ√Ê
+--¿€º∆ †ª®Ω±¿¯ΩÁ√Ê
 
 local g_SeventhFestivalReceive_UnifiedPosition;
 
@@ -75,7 +75,7 @@ end
 --=========================================================
 function SeventhFestivalReceive_OnEvent(event)
 
-	if (event == "UI_COMMAND" and tonumber(arg0) == 89116401) then --¥Úø™ΩÁ√Ê
+	if (event == "UI_COMMAND" and tonumber(arg0) == 89116401) then --????
 		
 		if Get_XParam_INT( 0 ) <= 0 then
 			SeventhFestivalReceive_Close()
@@ -86,7 +86,7 @@ function SeventhFestivalReceive_OnEvent(event)
 		g_ServerCareID = Get_XParam_INT(1)
 		g_ObjCareID = DataPool:GetNPCIDByServerID(g_ServerCareID);
 		if (g_ObjCareID == -1) then
-			PushDebugMessage("server¥´π˝¿¥µƒ ˝æ›”–Œ Ã‚°£");
+			PushDebugMessage("DÊ liÆu m·y ch¸ cÛ v§n ´");
 			return
 		end
 		SeventhFestivalReceive_BeginCareObject()
@@ -106,7 +106,7 @@ function SeventhFestivalReceive_OnEvent(event)
 		
 		SeventhFestivalReceive_OnShow()
 		
-	elseif (event == "UI_COMMAND" and tonumber(arg0) == 89116402 and this:IsVisible()) then --À¢–¬ΩÁ√Ê
+	elseif (event == "UI_COMMAND" and tonumber(arg0) == 89116402 and this:IsVisible()) then --????
 				
 		g_SeventhFestivalReceive_Value = Get_XParam_INT( 2 )
 		g_SeventhFestivalReceive_77Day = Get_XParam_INT( 3 )
@@ -233,7 +233,7 @@ end
 
 --*************************************************
 --ø™ ºπÿ–ƒNPC£¨æÕ «»∑»œÕÊº“µ±«∞≤Ÿ◊˜µƒNPC£¨»Áπ˚¿ÎNPC
---Ã´‘∂æÕª·πÿ±’¥∞ø⁄‘⁄ø™ ºπÿ–ƒ÷Æ«∞–Ë“™œ»»∑∂®’‚∏ˆΩÁ√Ê
+--Ã´‘∂æÕª·πÿ±†¥∞ø⁄‘⁄ø™ ºπÿ–ƒ÷Æ«∞–Ë“™œ»»∑∂®†‚∏ˆΩÁ√Ê
 -- «≤ª «“—æ≠”–°∞πÿ–ƒ°±µƒNPC£¨»Áπ˚”–µƒª∞£¨œ»»°œ˚“—æ≠
 --”–µƒ°∞πÿ–ƒ°±
 --*************************************************
@@ -250,7 +250,7 @@ function SeventhFestivalReceive_StopCareObject()
 end
 
 --=========================================================
--- πÿ±’ΩÁ√Ê
+-- πÿ±†ΩÁ√Ê
 --=========================================================
 function SeventhFestivalReceive_OnHiden()
 
@@ -261,7 +261,7 @@ function SeventhFestivalReceive_OnHiden()
 end
 
 --=========================================================
--- πÿ±’ΩÁ√Ê
+-- πÿ±†ΩÁ√Ê
 --=========================================================
 function SeventhFestivalReceive_Close()
 

@@ -6,13 +6,13 @@ local g_unifiedposistion = nil
 local g_ServerNpc = -1
 local g_IsZhuDong = 1
 
-local g_DivorceType = { invalid=0, ziYuan=1, qiangZhi=2, } --1:双方同意离婚 2:强制离婚
+local g_DivorceType = { invalid=0, ziYuan=1, qiangZhi=2, } --1:?????? 2:????
 local g_DivorceValue = 0
 
-local g_UICommand_Open = 80600501		--打开界面
-local g_UICommand_Update = 80600502		--更新界面
-local g_UICommand_Close = 80600503		--关闭界面
-local g_UICommand_UnMarry = 80600504	--离婚成功
+local g_UICommand_Open = 80600501		--????
+local g_UICommand_Update = 80600502		--????
+local g_UICommand_Close = 80600503		--????
+local g_UICommand_UnMarry = 80600504	--????
 
 local g_ServerData = {
 	marryYear = 0,
@@ -26,7 +26,7 @@ function XiaLv_Divorce_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
 	this:RegisterEvent("FILLDATA_VOW")
 	
-	this:RegisterEvent("PLAYER_ENTERING_WORLD")		-- 进入游戏世界
+	this:RegisterEvent("PLAYER_ENTERING_WORLD")		-- ??????
 
 	this:RegisterEvent("ADJEST_UI_POS");
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED");
@@ -40,7 +40,7 @@ end
 -- OnEvent
 function XiaLv_Divorce_OnEvent(event)
 
-	if ( event == "UI_COMMAND" and tonumber(arg0) == g_UICommand_Open ) then --打开界面
+	if ( event == "UI_COMMAND" and tonumber(arg0) == g_UICommand_Open ) then --????
 		g_ServerNpc = Get_XParam_INT(0)
 		local CaredNpc = DataPool:GetNPCIDByServerID( g_ServerNpc )
 		if CaredNpc == -1 then
@@ -52,14 +52,14 @@ function XiaLv_Divorce_OnEvent(event)
 		
 		XiaLv_Divorce_Open()
 
-	elseif ( event == "UI_COMMAND" and tonumber(arg0) == g_UICommand_Update ) then --一人同意离婚
+	elseif ( event == "UI_COMMAND" and tonumber(arg0) == g_UICommand_Update ) then --??????
 		XiaLv_Divorce_Update_One()
 	
-	elseif ( event == "UI_COMMAND" and tonumber(arg0) == g_UICommand_UnMarry ) then --两人同意离婚/强制离婚
+	elseif ( event == "UI_COMMAND" and tonumber(arg0) == g_UICommand_UnMarry ) then --??????/????
 		g_IsZhuDong = 0
 		XiaLv_Divorce_Divorce_Success()
 			
-	elseif ( event == "UI_COMMAND" and tonumber(arg0) == g_UICommand_Close ) then --服务器要求关闭界面
+	elseif ( event == "UI_COMMAND" and tonumber(arg0) == g_UICommand_Close ) then --?????????
 		g_IsZhuDong = 0
 		XiaLv_Divorce_Close_Click()
 	
@@ -111,7 +111,7 @@ function XiaLv_Divorce_FillData()
 	local spouseHead = DataPool:GetFriend(group, index, "PORTRAIT")
 	
 	local mySex = Player:GetMySex()
-	if mySex == 0 then --女
+	if mySex == 0 then --?
 		XiaLv_Divorce_Man_Head:SetProperty("Image", spouseHead )
 		XiaLv_Divorce_Man_Name:SetText(spouseName)
 
@@ -134,7 +134,7 @@ function XiaLv_Divorce_FillData()
 		XiaLv_Divorce_ConfirmText:SetText(msg)
 	end
 		
-	--AAA年BBB月CCC日，你与DDD于携手在月老处，立下共度余生的誓言。
+	--AAA年BBB月CCC葼，你与DDD于携手在月老处，立下共度余生的誓言。
 	g_ServerData.marryYear = Get_XParam_INT(2)
 	g_ServerData.marryMonth = Get_XParam_INT(3)
 	g_ServerData.marryDay = Get_XParam_INT(4)
@@ -146,7 +146,7 @@ function XiaLv_Divorce_FillData()
 end
 
 function XiaLv_Divorce_Update_Vow()
-	--AAA年BBB月CCC日，你与DDD于携手在月老处，立下共度余生的誓言。
+	--AAA年BBB月CCC葼，你与DDD于携手在月老处，立下共度余生的誓言。
 	local msg1 = ScriptGlobal_Format("#{JHYH_230330_77}", tostring(g_ServerData.marryYear), 
 				tostring(g_ServerData.marryMonth), tostring(g_ServerData.marryDay), g_ServerData.spouseName)
 	
@@ -162,13 +162,13 @@ function XiaLv_Divorce_Update_Vow()
 	local mySex = Player:GetMySex()
 	
 	local msg2 = ""
-	if mySex == 0 then --女		
-		msg2 = ScriptGlobal_Format("#{JHYH_230330_78}", "他", szMaleVow)
+	if mySex == 0 then --?		
+		msg2 = ScriptGlobal_Format("#{JHYH_230330_78}", "Huynh ", szMaleVow)
 	else
-		msg2 = ScriptGlobal_Format("#{JHYH_230330_78}", "她", szFemaleVow)
+		msg2 = ScriptGlobal_Format("#{JHYH_230330_78}", "Mu礽 ", szFemaleVow)
 	end
 	
-	--在EEE个日夜里，你们携手同行。
+	--在EEE个葼夜里，你们携手同行。
 	local msg3 = ""
 	if g_ServerData.diffDay > 0 then
 		msg3 = ScriptGlobal_Format("#{JHYH_230330_79}", g_ServerData.diffDay)
@@ -201,7 +201,7 @@ function XiaLv_Divorce_Update_One()
 		return
 	end
 	
-	local agreeSex = Get_XParam_INT(0) --同意离婚方性别
+	local agreeSex = Get_XParam_INT(0) --???????
 	
 	if agreeSex  == 0 then
 		XiaLv_Divorce_WomanHeart:Hide()
@@ -271,7 +271,7 @@ function XiaLv_Divorce_OkBtn_Click(  )
 	
 end
 
---客户端主动关闭界面,给服务器发消息
+--客户端主动关睜界面,给服务器发消息
 function XiaLv_Divorce_OnHiden(index)
 	
 	if this:IsVisible() == false then
@@ -290,10 +290,10 @@ function XiaLv_Divorce_OnHiden(index)
 		Send_XSCRIPT()
 	end
 	
-	PushDebugMessage("#{JHYH_230330_75}") --您已取消缔结侠侣
+	PushDebugMessage("#{JHYH_230330_75}") --????????
 end
 
---只关闭界面，不发消息
+--只关睜界面，不发消息
 function XiaLv_Divorce_Close_Click()
 	
 	this:Hide()

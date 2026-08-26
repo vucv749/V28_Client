@@ -1,16 +1,16 @@
--- Õ÷ÓÑÆ½Ì¨ : Õ÷ÓÑÒªÇó£¬ cuiyinjie 2008.10.21
+--  ÷ÓÑÆ½Ì¨ :  ÷ÓÑÒªÇó£¬ cuiyinjie 2008.10.21
 
-local OPT_ADD = 0;  -- ·¢²¼ÐÅÏ¢
-local OPT_EDIT = 1; -- ¸ü¸ÄÐÅÏ¢
+local OPT_ADD = 0;  -- ????
+local OPT_EDIT = 1; -- ????
 local g_CurStatus = OPT_EDIT;
 local g_FriendType = 1;
 
 -- ´ËÌõ¼þºÍPlayerZhengyouPT.luaÀï¶¨ÒåÒ»ÖÂ£¬ÒªÍ¬Ê±¸ü¸Ä
 local g_Conditions = {
-	MenPai = {"²»ÏÞ", "ÉÙÁÖ", "Ã÷½Ì", "Ø¤°ï", "Îäµ±", "¶ëáÒ", "ÐÇËÞ", "ÌìÁú", "ÌìÉ½", "åÐÒ£", "ÂüÍÓÉ½×¯"},
-	Level = {"²»ÏÞ", "10¼¶ÒÔÏÂ", "10µ½20¼¶", "20µ½30¼¶", "30µ½40¼¶", "40µ½50¼¶", "50µ½60¼¶", "60µ½70¼¶", "70µ½80¼¶", "80µ½90¼¶", "90µ½100¼¶", "100¼¶ÒÔÉÏ"},
-	Sexy = {"²»ÏÞ", "ÄÐ", "Å®"},
-	Mudi = { {"²»ÏÞ","°ïÅÉÊÕÈË","Ñ°ÕÒ°ïÅÉ",}, {"²»ÏÞ","°ÝÊ¦","ÊÕÍ½",}, },
+	MenPai = {"Không gi¾i hÕn", "Thiªu Lâm", "Minh Giáo", "Cái Bang", "Võ Ðang", "Nga Mi", "Tinh Túc", "Thiên Long", "Thiên S½n", "Tiêu dao", "MÕn Ðà S½n Trang"},
+	Level = {"Không gi¾i hÕn", "Dß¾i c¤p 10", "C¤p 10 ðªn 20", "C¤p 20 ðªn 30", "C¤p 30 ðªn 40", "C¤p 40 ðªn 50", "C¤p 50 ðªn 60", "C¤p 60 ðªn 70", "C¤p 70 ðªn 80", "C¤p 80 ðªn 90", "C¤p 90 ðªn 100", "Trên c¤p 100"},
+	Sexy = {"Không gi¾i hÕn", "Nam", "Næ"},
+	Mudi = { {"Không gi¾i hÕn","Bang phái Thu Nhân","Tìm kiªm bang phái",}, {"Không gi¾i hÕn","Bái sß","Thu ð° ð®",}, },
 }
 
 local g_Ctrls = {};
@@ -39,7 +39,7 @@ function ZhengyouYaoqiu_OnEvent(event)
 		end
 
 	elseif ("ZHENGYOUPT_NOTIFY_INPUT_YAOQIU" == event ) then
-	  ZhengyouYaoqiu_ShowWindow( arg0, arg2 );	-- arg1ÎÞÓÃ
+	  ZhengyouYaoqiu_ShowWindow( arg0, arg2 );	-- arg1??
 	end
 end
 
@@ -77,12 +77,12 @@ function ZhengyouYaoqiu_OnInitDialog()
 	ZhengyouYaoqiu_DragTitle:SetText("#{ZYPT_081103_064}");
 end
 
---Õ÷ÓÑÄ¿µÄ¸ù¾Ý°ÝÊ¦ºÍ°ïÅÉ¶ø²»Í¬£¬ÆäËüÎª¿Õ
+-- ÷ÓÑÄ¿µÄ¸ù¾Ý°ÝÊ¦ºÍ°ïÅÉ¶ø²»Í¬£¬ÆäËüÎª¿ 
 function ZhengyouYaoqiu_ResetMudiCombo()
    g_Ctrls.MudiCombo:ResetList();
    g_Ctrls.MudiCombo:SetText("");
    local i = 1;
-   if ( 2 == tonumber(g_FriendType) ) then -- À²°ï
+   if ( 2 == tonumber(g_FriendType) ) then -- ??
    		ZhengyouYaoqiu_Mudi:Show();
         ZhengyouYaoqiu_Text6:Show();
         for i = 1, table.getn(g_Conditions.Mudi[1]) do
@@ -117,7 +117,7 @@ function ZhengyouYaoqiu_ResetMudiCombo()
    			iSexyNeed = 0;
    		end
 
-   		if ( 2 == tonumber(g_FriendType) ) then -- À²°ï
+   		if ( 2 == tonumber(g_FriendType) ) then -- ??
    			 if ((iZhengyouMudi - 1) >= 0 and (iZhengyouMudi - 1) <= table.getn(g_Conditions.Mudi[1])) then
         		g_Ctrls.MudiCombo:SetCurrentSelect(iZhengyouMudi - 1);
        		 else

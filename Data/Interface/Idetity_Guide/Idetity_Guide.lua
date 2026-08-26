@@ -8,13 +8,13 @@ local g_Ctrl = {}
 
 local g_NpcList = 
 {
-	[1] = {posx=184,posz=214,sceneid=0,npcname="艾方",image="set:Idetity_Guide image:Title_L_LXL",pic="set:Idetity_Guide image:BK_S_LXL",--烹饪NPC
+	[1] = {posx=184,posz=214,sceneid=0,npcname="Ng鋓 Ph呓ng",image="set:Idetity_Guide image:Title_L_LXL",pic="set:Idetity_Guide image:BK_S_LXL",--??NPC
 				 title="#{SFYD_231227_332}",desc="#{SFYD_231227_10}",skilldesc="#{SFYD_231227_17}",autotip="#{SFYD_231227_23}",},
-	[2] = {posx=201,posz=214,sceneid=0,npcname="辛夷",image="set:Idetity_Guide image:Title_L_XHZ",pic="set:Idetity_Guide image:BK_S_XHZ",--制药NPC
+	[2] = {posx=201,posz=214,sceneid=0,npcname="M礳 lan",image="set:Idetity_Guide image:Title_L_XHZ",pic="set:Idetity_Guide image:BK_S_XHZ",--??NPC
 				 title="#{SFYD_231227_333}",desc="#{SFYD_231227_11}",skilldesc="#{SFYD_231227_18}",autotip="#{SFYD_231227_24}",},
-	[3] = {posx=237,posz=214,sceneid=0,npcname="承影",image="set:Idetity_Guide image:Title_L_ZQZ",pic="set:Idetity_Guide image:BK_S_ZQZ",--攻具NPC
+	[3] = {posx=237,posz=214,sceneid=0,npcname="Th譨 膎h",image="set:Idetity_Guide image:Title_L_ZQZ",pic="set:Idetity_Guide image:BK_S_ZQZ",--??NPC
 				 title="#{SFYD_231227_335}",desc="#{SFYD_231227_13}",skilldesc="#{SFYD_231227_20}",autotip="#{SFYD_231227_25}",},
-	[4] = {posx=230,posz=208,sceneid=0,npcname="公输琢",image="set:Idetity_Guide image:Title_L_QZT",pic="set:Idetity_Guide image:BK_S_ZQT",--工程NPC
+	[4] = {posx=230,posz=208,sceneid=0,npcname="C鬾g Th鈛 Tr醕",image="set:Idetity_Guide image:Title_L_QZT",pic="set:Idetity_Guide image:BK_S_ZQT",--??NPC
 				 title="#{SFYD_231227_337}",desc="#{SFYD_231227_15}",skilldesc="#{SFYD_231227_22}",autotip="#{SFYD_231227_26}",},
 }
 
@@ -41,7 +41,7 @@ end
 --===============================================
 function Idetity_Guide_OnEvent(event)
 	if (event  == "UI_COMMAND") and (tonumber(arg0) == 99865501) then
-		--打开/关闭/刷新界面
+		--打开/关睜/刷新界面
 		local flag = Get_XParam_INT(0) 
 		if flag ~= nil and flag == 2 then
 			--关界面
@@ -52,10 +52,10 @@ function Idetity_Guide_OnEvent(event)
 			-- 开界面or刷新界面
 			local bShow = Get_XParam_INT(1)
 			local nPage = Get_XParam_INT(2)
-			if flag == 1 then--开界面
+			if flag == 1 then--???
 					this:Show()
 					Idetity_Guide_Open(bShow,nPage)
-			else--仅刷新
+			else--???
 				if( this:IsVisible() ) then
 					Idetity_Guide_Open(bShow,nPage)
 				end
@@ -96,7 +96,7 @@ end
 -- 关界面
 --===============================================
 function Idetity_Guide_CloseClicked()
-	--数据清空
+	--数据清繝
 	Idetity_Guide_OnHidden()
 	--隐藏界面
 	this:Hide()
@@ -112,12 +112,12 @@ function Idetity_Guide_Open(bShow,nPage)
 	if nPage == nil or nPage < 0 or nPage > g_MaxPage then
 		return
 	end	
-	if bShow == 0 then--0初始页面
-		Idetity_Guide_JoinClient:Show()--显示窗口1
-		Idetity_Guide_GuideClient:Hide()--隐藏窗口2
-	elseif bShow == 1 then--1身份页面
-		Idetity_Guide_JoinClient:Hide()--隐藏窗口1
-		Idetity_Guide_GuideClient:Show()--显示窗口2
+	if bShow == 0 then--0????
+		Idetity_Guide_JoinClient:Show()--????1
+		Idetity_Guide_GuideClient:Hide()--????2
+	elseif bShow == 1 then--1????
+		Idetity_Guide_JoinClient:Hide()--????1
+		Idetity_Guide_GuideClient:Show()--????2
 		if nPage == 0 then
 			g_CurPage = 1
 		else
@@ -131,8 +131,8 @@ end
 -- 点击-加入身份
 --===============================================
 function Idetity_Guide_JoinClicked()
-	Idetity_Guide_JoinClient:Hide()--隐藏窗口1
-	Idetity_Guide_GuideClient:Show()--显示窗口2
+	Idetity_Guide_JoinClient:Hide()--????1
+	Idetity_Guide_GuideClient:Show()--????2
 	g_CurPage = 1
 	Idetity_Guide_PageClicked(g_CurPage)
 end

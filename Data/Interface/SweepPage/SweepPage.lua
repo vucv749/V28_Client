@@ -3,7 +3,7 @@ local SweepPage_Frame_UnifiedXPosition;
 local SweepPage_Frame_UnifiedYPosition;
 
 local SweepPage_open_fubenId = -1
-local SweepPage_SpecialSweep = -1 --1金币扫荡 2特权扫荡 3银币扫荡
+local SweepPage_SpecialSweep = -1 --1???? 2???? 3????
 
 --格子及其编号
 local SweepPage_ITEM_NUM = 12;
@@ -298,7 +298,7 @@ function SweepPage_Update(InSeckill)
 		SweepPage_ExplainTeQuanBK:Hide()
 		local strTemp = ScriptGlobal_Format("#{JBSD_220210_03}",FubenName,numMoney).."#{JBSD_220210_04}"
 		SweepPage_ExplainJinBi1:SetText(strTemp)
-		SweepPage_GoOn:SetText("再次进行扫荡")
+		SweepPage_GoOn:SetText("L読 ti猲 h鄋h c鄋 qu閠")
 
 	elseif SweepPage_SpecialSweep == 2 then
 		--特权扫荡
@@ -306,7 +306,7 @@ function SweepPage_Update(InSeckill)
 		SweepPage_ExplainJinBiBK:Hide()
 		SweepPage_ExplainTeQuanBK:Show()
 		SweepPage_ExplainTeQuan1:SetText("#{TQJF_221108_27}")
-		SweepPage_GoOn:SetText("再次特权扫荡")
+		SweepPage_GoOn:SetText("L読 穑c quy玭 c鄋 qu閠")
 		strTemp = ScriptGlobal_Format("#{TQJF_221108_07}",FubenName)
 	    SweepPage_DragTitle:SetText(strTemp)
 
@@ -326,19 +326,19 @@ function SweepPage_Update(InSeckill)
 		SweepPage_ExplainBK:Hide()
 		SweepPage_ExplainJinBiBK:Show()
 		SweepPage_ExplainTeQuanBK:Hide()
-		costYinbi = math.floor(costYinbi/10000)--显示时做个转换
+		costYinbi = math.floor(costYinbi/10000)--???????
 		local strTemp = ScriptGlobal_Format("#{YBSD_231107_03}",FubenName,costYinbi).."#{YBSD_231107_04}"
 		SweepPage_ExplainJinBi1:SetText(strTemp)
-		SweepPage_GoOn:SetText("再次进行扫荡")
+		SweepPage_GoOn:SetText("L読 ti猲 h鄋h c鄋 qu閠")
 	else
-		--普通扫荡
+		--茽通扫荡
 		SweepPage_ExplainBK:Show()
 		SweepPage_Explain3:Hide()
 		SweepPage_ExplainJinBiBK:Hide()
 		SweepPage_ExplainTeQuanBK:Hide()
 		local strTemp = ScriptGlobal_Format("#{FBSD_210129_01}", numYuanbao)
 		SweepPage_Explain:SetText(strTemp)
-		SweepPage_GoOn:SetText("再次进行扫荡")
+		SweepPage_GoOn:SetText("L読 ti猲 h鄋h c鄋 qu閠")
 
 		--SweepPage_Sweepcoin:Hide()
 		SweepPage_Sweepcoin :SetText("")
@@ -484,7 +484,7 @@ function SweepPage_OnBossButton(index)
 		end
 		
 		if SweepPage_SpecialSweep ~= 1 and  SweepPage_SpecialSweep ~= 2 and SweepPage_SpecialSweep ~= 3 then
-			--普通扫荡判断点数
+			--茽通扫荡判断点数
 			
 			if SecKillNum < SecKillNeedNum then
 				

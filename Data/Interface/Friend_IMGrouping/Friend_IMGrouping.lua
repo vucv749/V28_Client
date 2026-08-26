@@ -38,7 +38,7 @@ function Friend_IMGrouping_Show()
 		while index < number do
 		 	local name =  DataPool:GetFriend(currentList, tonumber(index), "NAME")
 		 	if name == g_Name then
-				PushDebugMessage("#{GCRelationHandler_Info_Is_Firend}") --("¸ÃÍæ¼ÒÒÑ¾­ÊÇÄúµÄºÃÓÑ¡£")
+				PushDebugMessage("#{GCRelationHandler_Info_Is_Firend}") --("Cai ngß¶i ch½i ðã Th¸ Nhçm th§t là t¯t Hæu.")
 		 		return
 		 	end
 			index = index + 1
@@ -46,7 +46,7 @@ function Friend_IMGrouping_Show()
 		friendnumber = friendnumber + number
 	end
 		
-	if friendnumber >= 80 then	--ºÃÓÑÒÑ´ïÉÏÏÞ
+	if friendnumber >= 80 then	--??????
 		PushDebugMessage("#{KDHYYH_20211025_1}")
 		return
 	end

@@ -6,9 +6,9 @@ local m_PetIndex = -1
 function YbMarketUpPet_PreLoad()
 	this : RegisterEvent( "OPEN_UP_PET" )
 	this : RegisterEvent( "CLOSE_UP_PET" )		
-	this : RegisterEvent( "REPLY_MISSION_PET" )						--玩家从列表选定一只珍兽
+	this : RegisterEvent( "REPLY_MISSION_PET" )						--???????????
 	this : RegisterEvent( "UPDATE_UP_PET_PAGE" )
-	this : RegisterEvent("DELETE_PET");								--出售的珍兽数据变化了
+	this : RegisterEvent("DELETE_PET");								--??????????
 	this : RegisterEvent( "UPDATE_PET_PAGE" )
 end
 
@@ -55,7 +55,7 @@ function YbMarketUpPet_OK_Clicked()
 			PushDebugMessage("#{YBSC_100111_42}")
 			return
 		end
-		--是贵重珍兽
+		--是贵重犱兽
 		if PlayerPackage:IsGoodsProtect_Pet(m_PetIndex) == 1 then
 			PushDebugMessage("#{YBSC_100111_07}")
 			return
@@ -133,7 +133,7 @@ function YbMarketUpPet_OnSelectPet(petIndex)
 		return;
 	end
 	
-	--珍兽已被其它界面选中
+	--犱兽已被其它界面选中
 	if (Pet:GetPetLocation(petIndex) ~= -1) then
 		return;
 	end
@@ -143,12 +143,12 @@ function YbMarketUpPet_OnSelectPet(petIndex)
 
 	YbMarketUpPet_FakeObject:SetFakeObject( "My_PetStudySkill" );
 	
-	--切换珍兽的时候，释放上一个珍兽
+	--切换犱兽的时候，释放上一个犱兽
 	if(m_PetIndex ~= -1) then
 		Pet:SetPetLocation(m_PetIndex,-1);
 	end
 	
-	m_PetIndex = petIndex;	--已经选好了珍兽
+	m_PetIndex = petIndex;	--???????
 	Pet:SetPetLocation(m_PetIndex,14);
 	
 	YbMarketUpPet_Refresh_Bn_and_Money()

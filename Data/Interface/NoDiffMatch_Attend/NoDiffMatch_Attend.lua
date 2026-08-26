@@ -1,4 +1,4 @@
--- 争霸赛上阵界面
+-- 狔霸赛上狊界面
 
 local g_ObjCareID = 0
 local m_targetId = 0
@@ -13,20 +13,20 @@ local m_upDataMenPeiList = {}
 
 local m_MenPaiNameList =
 {
-	[0]  ={name="#{WCBZ_180128_59}",color="#cff6600"},	--少林
-	[1]  ={name="#{WCBZ_180128_65}",color="#cffcc00"},	--明教
-	[2]  ={name="#{WCBZ_180128_67}",color="#c00ff00"},	--丐帮
-	[3]  ={name="#{WCBZ_180128_61}",color="#c0000ff"},	--武当
-	[4]  ={name="#{WCBZ_180128_68}",color="#cff99cc"},	--峨嵋
-	[5]  ={name="#{WCBZ_180128_66}",color="#c007700"},	--星宿
-	[6]  ={name="#{WCBZ_180128_60}",color="#cffff00"},	--天龙
-	[7]  ={name="#{WCBZ_180128_63}",color="#cffffff"},	--天山
-	[8]  ={name="#{WCBZ_180128_64}",color="#c7700ff"},	--逍遥
-	[9]  ={name="#{WCBZ_180128_57}",color="#c999999"},	--无门派
-	[10] ={name="#{WCBZ_180128_62}",color="#cffffb3"},	--曼陀
+	[0]  ={name="#{WCBZ_180128_59}",color="#cff6600"},	--??
+	[1]  ={name="#{WCBZ_180128_65}",color="#cffcc00"},	--??
+	[2]  ={name="#{WCBZ_180128_67}",color="#c00ff00"},	--??
+	[3]  ={name="#{WCBZ_180128_61}",color="#c0000ff"},	--??
+	[4]  ={name="#{WCBZ_180128_68}",color="#cff99cc"},	--??
+	[5]  ={name="#{WCBZ_180128_66}",color="#c007700"},	--??
+	[6]  ={name="#{WCBZ_180128_60}",color="#cffff00"},	--??
+	[7]  ={name="#{WCBZ_180128_63}",color="#cffffff"},	--??
+	[8]  ={name="#{WCBZ_180128_64}",color="#c7700ff"},	--??
+	[9]  ={name="#{WCBZ_180128_57}",color="#c999999"},	--???
+	[10] ={name="#{WCBZ_180128_62}",color="#cffffb3"},	--??
 }
 
---预加载函数，可以而且只能在这里注册脚本关心的事件
+--预加载函数，可以而且只能在犫里注册脚本关心的事件
 function NoDiffMatch_Attend_PreLoad()
 	this:RegisterEvent("UI_COMMAND",true)
 	this:RegisterEvent("ADJEST_UI_POS",false)
@@ -74,7 +74,7 @@ end
 
 function NoDiffMatch_Attend_CommandEvent()
 	local nType = Get_XParam_INT(0)
-	if nType == 1 then --打开上阵界面
+	if nType == 1 then --??????
 		local targetId = Get_XParam_INT(1)
 		m_targetId = targetId
 		m_round = Get_XParam_INT(2)
@@ -103,9 +103,9 @@ function NoDiffMatch_Attend_CommandEvent()
 		g_ObjCareID = DataPool:GetNPCIDByServerID(targetId)
 		NoDiffMatch_Attend_Show()
 		NoDiffMatch_Attend_Update()
-	elseif nType == 2 or --上阵成功刷新界面
-		nType == 3 or --上阵数量达到刷新界面
-		nType == 4 then  --下阵成功刷新界面
+	elseif nType == 2 or --????????
+		nType == 3 or --??????????
+		nType == 4 then  --????????
 		if (this:IsVisible()) then
 			m_round = Get_XParam_INT(1)
 			m_remainTime = Get_XParam_INT(2)
@@ -181,7 +181,7 @@ function NoDiffMatch_Attend_Update()
 	NoDiffMatch_Attend_MenPai_Text3:Hide()
 	NoDiffMatch_Attend_KongQue_Text3:Hide()
 	
-	local lixianText = ScriptGlobal_Format("#{WCBZ_230605_33}", "离线")
+	local lixianText = ScriptGlobal_Format("#{WCBZ_230605_33}", "Li Tuy猲")
 	local fillIndex = 0
 	if m_round == 1 or m_round == 2 then
 		NoDiffMatch_Attend_HeadBK1:Show()
@@ -266,7 +266,7 @@ function NoDiffMatch_Attend_ClickClose()
 	NoDiffMatch_Attend_Hide()
 end
 
---我要上阵
+--我要上狊
 function NoDiffMatch_Attend_ClickOk()
 	-- PushDebugMessage("NoDiffMatch_Attend_ClickOk")
 	Clear_XSCRIPT()
@@ -275,7 +275,7 @@ function NoDiffMatch_Attend_ClickOk()
 		Set_XSCRIPT_ParamCount(0)
 	Send_XSCRIPT()
 end
---取消上阵
+--取消上狊
 function NoDiffMatch_Attend_ClickCancel()
 	-- PushDebugMessage("NoDiffMatch_Attend_ClickCancel")
 	Clear_XSCRIPT()

@@ -62,7 +62,7 @@ function ShuYou_Progress_OnEvent(event)
 			return
 		end
 		this:CareObject(objCared, 1, "ShuYou_Progress")
-		--打开/关闭/刷新界面
+		--打开/关睜/刷新界面
 		local flag = Get_XParam_INT(1) 
 		if flag ~= nil and flag == 2 then
 			--关界面
@@ -76,11 +76,11 @@ function ShuYou_Progress_OnEvent(event)
 			local bFlag2 = Get_XParam_INT(4)
 			local bFlag3 = Get_XParam_INT(5)
 			local bFlag4 = Get_XParam_INT(6)
-			if flag == 1 then--开界面
+			if flag == 1 then--???
 					this:Show()
 					--ShuYou_Progress_ResetPos()				
 					ShuYou_Progress_Open(nCount,bFlag1,bFlag2,bFlag3,bFlag4)
-			else--仅刷新
+			else--???
 				if( this:IsVisible() ) then
 					--ShuYou_Progress_ResetPos()				
 					ShuYou_Progress_Open(nCount,bFlag1,bFlag2,bFlag3,bFlag4)
@@ -91,9 +91,9 @@ function ShuYou_Progress_OnEvent(event)
 		if(tonumber(arg0) ~= objCared) then
 				return
 		end
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
-				--关闭界面
+				--关睜界面
 				ShuYou_Progress_Close()
 		end
 	elseif (event == "ADJEST_UI_POS") then
@@ -127,7 +127,7 @@ end
 -- 关界面
 --===============================================
 function ShuYou_Progress_Close()
-	--数据清空
+	--数据清繝
 	ShuYou_Progress_OnHiden()
 	--隐藏界面
 	this:Hide()
@@ -164,19 +164,19 @@ function ShuYou_Progress_Open(nCount,bFlag1,bFlag2,bFlag3,bFlag4)
 		if theAction:GetID() ~= 0 then
 			g_PrizeCtrl[i].btn:SetActionItem(theAction:GetID())
 			g_PrizeCtrl[i].text:SetText(g_PrizeData[i].count)
-			if nCount >= g_PrizeData[i].count then--可领奖
-				if bFlag[i] == 1 then-- 已领奖
+			if nCount >= g_PrizeData[i].count then--???
+				if bFlag[i] == 1 then-- ???
 					g_PrizeCtrl[i].flag:Show()
 					-- 动画不播放
 					g_PrizeCtrl[i].animate:Hide()
 					g_PrizeCtrl[i].animate:Play(false)
-				else-- 未领奖
+				else-- ???
 					g_PrizeCtrl[i].flag:Hide()
 					-- 动画播放
 					g_PrizeCtrl[i].animate:Show()
 					g_PrizeCtrl[i].animate:Play(true)
 				end
-			else--不可领奖
+			else--????
 				-- 动画不播放
 				g_PrizeCtrl[i].animate:Hide()
 				g_PrizeCtrl[i].animate:Play(false)

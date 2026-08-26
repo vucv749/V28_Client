@@ -127,7 +127,7 @@ function QiXi_Activity_Click(nIndex)
 	end
 
 	if nIndex == 1 then
-		AutoRuntoTargetExWithName(163,111,2,"Â∏ùÈôµÊ∏∏Âåª")
+		AutoRuntoTargetExWithName(163,111,2,"N∏nh ? L∏ch VÓ C‰o ?")
 	end
 	if nIndex == 2 then
 		Clear_XSCRIPT();

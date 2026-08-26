@@ -1,4 +1,4 @@
---卡级服 废品回收 
+--卡级服 废品回薁 
 --!!!reloadscript =WH_DanYinYaoCheng_Back
 local g_WH_DanYinYaoCheng_Back_Frame_UnifiedPosition = 0
 
@@ -10,20 +10,20 @@ local g_ItemPos = -1
 
 local g_activItemList = {
 	38003146,38003147,38003149,38003150,38003152,38003153,
-}--各类口味冰淇淋,对应等级为mod(index-1,3)+1
+}--???????,?????mod(index-1,3)+1
 local g_icecreamLevel = 0
 --===============================================
 -- PreLoad()
 --===============================================
 function WH_DanYinYaoCheng_Back_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)		--离开场景
-	this:RegisterEvent("ADJEST_UI_POS",false)				-- 游戏窗口尺寸发生了变化
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)	-- 游戏分辨率发生了变化
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)		--????
+	this:RegisterEvent("ADJEST_UI_POS",false)				-- ???????????
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)	-- ??????????
 	
-	this:RegisterEvent("WH_DanYinYaoCheng_Back_ITEM",false)	-- 从背包放入道具
+	this:RegisterEvent("WH_DanYinYaoCheng_Back_ITEM",false)	-- ???????
 
-	this:RegisterEvent("OBJECT_CARED_EVENT",false);           --某逻辑对象的某些发生改变，用于距离NPC够远则关闭界面
+	this:RegisterEvent("OBJECT_CARED_EVENT",false);           --????????????,????NPC???????
 end
 
 --===============================================
@@ -50,7 +50,7 @@ function WH_DanYinYaoCheng_Back_OnEvent(event)
 			return;
 		end
 		
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if arg1 == "distance" and tonumber( arg2 ) > MAX_OBJ_DISTANCE or arg1 == "destroy" then
 			WH_DanYinYaoCheng_Back_OnClose()
 		end
@@ -94,7 +94,7 @@ function WH_DanYinYaoCheng_Back_UpdateItem(index)
 	else
 		local BagPos = tonumber(index)
 
-		--判断 是否是可回收道具
+		--判断 是否是可回薁道具
 		local itemid = PlayerPackage:GetItemTableIndex(BagPos)
 
 		if(itemid < 0)then
@@ -107,8 +107,8 @@ function WH_DanYinYaoCheng_Back_UpdateItem(index)
 				break;
 			end
 			if i == table.getn(g_activItemList) then
-				PushDebugMessage("#{XRBG_20240412_74}") -- 您放入的道具不对，仅可放入丹药道具。
-				--进入这里说明放入的道具不是活动道具，取消操作
+				PushDebugMessage("#{XRBG_20240412_74}") -- ????????,?????????
+				--进入犫里说明放入的道具不是活动道具，取消操作
 				return
 			end
 		end
@@ -174,7 +174,7 @@ end
 
 --=========================================================
 --开始关心NPC，
---在开始关心之前需要先确定这个界面是不是已经有“关心”的NPC，
+--在开始关心之前需要先确定犫个界面是不是已经有“关心”的NPC，
 --如果有的话，先取消已经有的“关心”
 --=========================================================
 function WH_DanYinYaoCheng_Back_BeginCareObject( objCaredId )

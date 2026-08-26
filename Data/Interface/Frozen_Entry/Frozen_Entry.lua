@@ -5,13 +5,13 @@ local g_Frozen_Entry_Frame_UnifiedXPosition;
 local g_Frozen_Entry_Frame_UnifiedYPosition;
 
 --UI
-local g_Frozen_Entry_Btn  --°´Å¥
+local g_Frozen_Entry_Btn  --??
 
 --NPC
 local g_Frozen_Entry_NPCPosX = 109
 local g_Frozen_Entry_NPCPosZ = 251
 local g_Frozen_Entry_SceneId = 728
-local g_Frozen_Entry_Name = "ÕÔ±ùÇå"
+local g_Frozen_Entry_Name = "Tri®u Bång Thanh"
 
 --===============================================
 -- OnLoad()

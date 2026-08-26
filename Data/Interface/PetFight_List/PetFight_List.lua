@@ -52,7 +52,7 @@ function PetFight_List_OnEvent(event)
 		if this:IsVisible() then
 			PlayerFrame_Fight_Update()
 		end
-	elseif event == "TOGLE_PET_PAGE" then --和pet界面互斥
+	elseif event == "TOGLE_PET_PAGE" then --?pet????
 		this:Hide()
 	elseif event == "ACCELERATE_KEYSEND" then
 		PetFight_List_HandleAccKey(arg0)
@@ -83,17 +83,17 @@ function PlayerFrame_Fight_Update()
 			end
 			szPetName = Pet:GetPetList_Appoint(i - 1)
 			local times = 0--Pet:Lua_GetCooldownRemainTime(i - 1,160)
-			if Pet:GetIsFighting(i - 1) then --出战
+			if Pet:GetIsFighting(i - 1) then --??
 				PetFight_ListBox:AddItem(szPetName, i - 1, "FF0A9605")
-			elseif Pet:GetIsPossession(i -1 ) then --附体
+			elseif Pet:GetIsPossession(i -1 ) then --??
 				PetFight_ListBox:AddItem(szPetName, i - 1, "FF996699");
-			elseif times > 0 then --收回/阵亡 cd
+			elseif times > 0 then --??/?? cd
 				PetFight_ListBox:AddItem(szPetName, i - 1, "FF858985");
 				local str = ScriptGlobal_Format("#{ZSCZ_241217_04}",math.floor((times+1000)/1000))
 				local index = PetFight_ListBox:GetItemNumByItemId(i-1)
 				PetFight_ListBox:SetItemTooltip(index,str)
 			else
-				PetFight_ListBox:AddItem(szPetName, i - 1) --拥有
+				PetFight_ListBox:AddItem(szPetName, i - 1) --??
 			end
 		end
 	end
@@ -117,7 +117,7 @@ end
 function PetFight_List_Selected()
 	PETNUM = PetFight_ListBox:GetFirstSelectItem()
 	local nPetCount = Pet:GetPet_Count()
-	if Pet:GetIsFighting(PETNUM) then --出战
+	if Pet:GetIsFighting(PETNUM) then --??
 		return
 	end
 	if PETNUM < 0 and nPetCount > 0 then
@@ -129,11 +129,11 @@ function PetFight_List_Selected()
 	--Pet:NotifySelChange(PETNUM)
 end
 function PetFight_List_Clicked()
-	-- 已经提交到指定界面容器的珍兽不能出战
-	if (IsWindowShow("PetSavvy") and Pet:GetPetLocation(PETNUM) == 12)				-- 用成年珍兽提升珍兽悟性
-		or (IsWindowShow("PetSavvyGGD")	and Pet:GetPetLocation(PETNUM) == 3)		-- 用根骨丹提升珍兽悟性
-		or (IsWindowShow("MissionReply") and Pet:GetPetLocation(PETNUM) == 7) then	-- 任务提交物品或珍兽
-		-- "珍兽处于提交状态，无法出战。"
+	-- 已经提交到指定界面容器的犱兽不能出牻
+	if (IsWindowShow("PetSavvy") and Pet:GetPetLocation(PETNUM) == 12)				-- ???????????
+		or (IsWindowShow("PetSavvyGGD")	and Pet:GetPetLocation(PETNUM) == 3)		-- ??????????
+		or (IsWindowShow("MissionReply") and Pet:GetPetLocation(PETNUM) == 7) then	-- ?????????
+		-- "犱兽处于提交状态，无法出牻。"
 		PushDebugMessage("#{ZSTJZT_090904}")
 		return		
 	end

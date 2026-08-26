@@ -101,7 +101,7 @@ function RongYu_Shop_OnEvent(event)
 	if 	 event == "UI_COMMAND" and tonumber(arg0) == 502023 then	
 		g_CurSelect = 1
 		g_obj_target = Get_XParam_INT(0)
-		objCared = DataPool : GetNPCIDByServerID(g_obj_target); --targetid £º¿Í»§¶Ë
+		objCared = DataPool : GetNPCIDByServerID(g_obj_target); --targetid :???
 		RongYu_Shop_BeginCareObject()
 		RongYu_Shop_Clear()
 		RongYu_Shop_OnShow()

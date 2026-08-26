@@ -21,7 +21,7 @@ local g_CoupleZone_JiShi_Frame_UnifiedYPosition = 0
 --SpecialData
 local g_CoupleZone_JiShi_AnnalType = 2
 
-local g_CoupleZone_JiShi_AnnalInfo_1 =    --有几个就是几级
+local g_CoupleZone_JiShi_AnnalInfo_1 =    --???????
 {
 	[1] = { count = 100 },
 	[2] = { count = 300 },
@@ -30,7 +30,7 @@ local g_CoupleZone_JiShi_AnnalInfo_1 =    --有几个就是几级
 	[5] = { count = 4000 },
 }
 
-local g_CoupleZone_JiShi_AnnalInfo_2 =    --有几个就是几级
+local g_CoupleZone_JiShi_AnnalInfo_2 =    --???????
 {
 	[1] = { count = 200 },
 	[2] = { count = 600 },
@@ -155,7 +155,7 @@ end
 
 function CoupleZone_JiShi_UpdateAnnalData()
 		
-	local activityData1 = CoupleZone:LuaFnGetCoupleZoneData_Annal_WithId(1)   --1开始
+	local activityData1 = CoupleZone:LuaFnGetCoupleZoneData_Annal_WithId(1)   --1??
 	if type(activityData1) ~= "table" then
 		CoupleZone_JiShi_Debug("CoupleZone_JiShi_UpdateAnnalData : activityData1 not table")
 		return
@@ -186,7 +186,7 @@ function CoupleZone_JiShi_UpdateAnnalData()
 	g_CoupleZone_JiShi_UI_Activity_CurCount_1:SetText(ScriptGlobal_Format("#{QLKJ_230331_38}", currentCount1))
 	---g_CoupleZone_JiShi_UI_Activity_CurCount_1:SetText(currentCount1)
 	
-	local activityData2 = CoupleZone:LuaFnGetCoupleZoneData_Annal_WithId(2)   --1开始
+	local activityData2 = CoupleZone:LuaFnGetCoupleZoneData_Annal_WithId(2)   --1??
 	if type(activityData2) ~= "table" then
 		CoupleZone_JiShi_Debug("CoupleZone_JiShi_UpdateAnnalData : activityData2 not table")
 		return

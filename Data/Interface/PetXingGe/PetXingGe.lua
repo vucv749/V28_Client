@@ -10,10 +10,10 @@ local CareNpcID = -1
 --===============================================
 function PetXingGe_PreLoad()
 	this : RegisterEvent( "UI_COMMAND" )
-	this : RegisterEvent( "REPLY_MISSION_PET" )						-- 玩家从列表选定一只珍兽
-	this : RegisterEvent( "UPDATE_PET_PAGE" )						-- 玩家身上的珍兽数据发生变化，包括增加一只珍兽
-	this : RegisterEvent( "DELETE_PET" )							-- 玩家身上减少一只珍兽
-	this : RegisterEvent( "OBJECT_CARED_EVENT" )					-- 关心 NPC 的存在和范围
+	this : RegisterEvent( "REPLY_MISSION_PET" )						-- ???????????
+	this : RegisterEvent( "UPDATE_PET_PAGE" )						-- ?????????????,????????
+	this : RegisterEvent( "DELETE_PET" )							-- ??????????
+	this : RegisterEvent( "OBJECT_CARED_EVENT" )					-- ?? NPC ??????
 	this : RegisterEvent("UNIT_MONEY");
 end
 
@@ -40,13 +40,13 @@ function PetXingGe_OnEvent(event)
 		--AxTrace( 3, 3, "REPLY_MISSION_PET" )
 		PetXingGe_OnSelectPet( tonumber( arg0 ) )
 
-	elseif event == "OBJECT_CARED_EVENT" and this : IsVisible() then	-- 关心 NPC 的存在和范围
+	elseif event == "OBJECT_CARED_EVENT" and this : IsVisible() then	-- ?? NPC ??????
 		Pet : ShowPetList( 0 )
 		if tonumber( arg0 ) ~= CareNpcID then
 			return
 		end
 
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		local MAX_OBJ_DISTANCE = 3.0
 		if arg1 == "distance" and tonumber( arg2 ) > MAX_OBJ_DISTANCE or arg1 == "destroy" then
 			PetXingGe_Cancel_Clicked()
@@ -70,12 +70,12 @@ function PetXingGe_OnSelectPet( PetIndex )
 		return
 	end
 	
-	--珍兽已被其它界面选中
+	--犱兽已被其它界面选中
 	if (Pet:GetPetLocation(PetIndex) ~= -1) then
 		return;
 	end
 	
-	--切换珍兽的时候，释放上一个珍兽
+	--切换犱兽的时候，释放上一个犱兽
 	if(Index_Pet ~= -1) then
 		Pet:SetPetLocation(Index_Pet,-1);
 	end
@@ -87,13 +87,13 @@ function PetXingGe_OnSelectPet( PetIndex )
 	--AxTrace( 3, 3, "PetXingGe_OnSelectPet"..(Guid_Pet_H)..(Guid_Pet_L) )
 	
 	PetXingGe_Pet1_Text : SetText( SelectPetName )
-	-- 给珍兽上锁
+	-- 给犱兽上锁
 	Pet : SetPetLocation( Index_Pet, 6 )
 				
 end
 
 function PetXingGe_SelectPet_Clicked()
-	-- 关一下再开，清空数据
+	-- 关一下再开，清繝数据
 	Pet : ShowPetList( 0 )
 	Pet : ShowPetList( 1 )
 end
@@ -125,7 +125,7 @@ end
 
 --=========================================================
 --开始关心NPC，
---在开始关心之前需要先确定这个界面是不是已经有“关心”的NPC，
+--在开始关心之前需要先确定犫个界面是不是已经有“关心”的NPC，
 --如果有的话，先取消已经有的“关心”
 --=========================================================
 function PetXingGe_BeginCareObject( objCaredId )

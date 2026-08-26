@@ -9,13 +9,13 @@ local g_Talent_Studyup_Line = {}
 local g_Talent_Studyup_saveid = -1
 local g_Talent_Studyup_layer = -1
 local g_Talent_Studyup_col = -1
-local g_Talent_Studyup_StudyTree = {}	--存当前流派需要有前置天赋的数据
+local g_Talent_Studyup_StudyTree = {}	--???????????????
 local g_Talent_Studyup_LearnedList = {}
 local g_Talent_Studyup_curToplayer = 0
 local g_Talent_Studyup_Schema = nil
 local g_Talent_Studyup_subSchema = nil
 local g_Talent_Studyup_curFenye = 1
-local g_Talent_Studyup_poslist = {}		--根据ID快查位置
+local g_Talent_Studyup_poslist = {}		--??ID????
 local g_Talent_Studyup_Info =
 {
 	[0] =
@@ -149,12 +149,12 @@ function Talent_Studyup_OnEvent(event)
 		--
 		--必需先读取样式
 		Talent_Studyup_InitSchema(menpai,secttype)
-		--根据点数算出来该展示哪一页了
+		--根据点数算出来该牴示哪一页了
 		local totallevel = DataPool:Lua_GetSectTotalLevel(0)
-		local maxlayer = 4;		--目前4层
+		local maxlayer = 4;		--??4?
 		local showlayer = math.floor(totallevel/20)+1;
 		if showlayer > maxlayer then
-			showlayer = maxlayer	--防止点满了的情况
+			showlayer = maxlayer	--????????
 		end
 
 
@@ -255,7 +255,7 @@ function Talent_Studyup_GetposByID(id)
 end
 
 
---这个是自动选中将要可以学习的技能~
+--犫个是自动选中将要可以学习的技能~
 function Talent_Studyup_ShowSkill(menpai,secttype)
 	if g_Talent_Studyup_curToplayer == 1 then
 		return 2,1
@@ -263,11 +263,11 @@ function Talent_Studyup_ShowSkill(menpai,secttype)
 	list = g_Talent_Studyup_subSchema
 	local learnedinfo = g_Talent_Studyup_LearnedList[g_Talent_Studyup_curToplayer];
 	if learnedinfo ~= nil then
-		if learnedinfo.level < 5 or g_Talent_Studyup_curToplayer == 5 then	--第五层了或者没够5级
+		if learnedinfo.level < 5 or g_Talent_Studyup_curToplayer == 5 then	--????????5?
 			return learnedinfo.line,learnedinfo.col
 		else
 
-			--这里好像不对
+			--犫里好像不对
 			--第二顺位			
 			for i,v in ipairs(list[g_Talent_Studyup_curToplayer+1]) do
 			--下一排的需要挨个检验
@@ -623,7 +623,7 @@ function Talent_Studyup_DebugList(head,list)
 end
 
 
---这个特点是已经学过的技能，同级和下级铁锁定
+--犫个特点是已经学过的技能，同级和下级铁锁定
 function Talent_Studyup_ShowLearnTree(layer,col)
 
 	--工具函数，移出table
@@ -722,14 +722,14 @@ function Talent_Studyup_SkillTreeClicked(layer,col)
 
 	local totallevel = DataPool:Lua_GetSectTotalLevel(0)
 
-	local id = g_Talent_Studyup_subSchema[layer][col]; --呀，这个直接取不就行了？
+	local id = g_Talent_Studyup_subSchema[layer][col]; --?,??????????
 	g_Talent_Studyup_saveid = id 
 	g_Talent_Studyup_layer = layer
 	g_Talent_Studyup_col = col
 	Talent_Studyup_Skillup_Up:Enable()
 
 	if totallevel <= 0 then
-		--什么都没学的状态下需要展示冲突树
+		--什么都没学的状态下需要牴示冲突树
 		Talent_Studyup_ShowTree()
 	else
 		Talent_Studyup_ShowLearnTree(layer,col)
@@ -827,7 +827,7 @@ function Talent_Studyup_SkillTreeClicked(layer,col)
 				if v > 0 and v ~= id then
 					local infocname = DataPool:TBSearch_Index_EQU("DBC_SECT_DESC",v,"szName")	
 
-					conflictstr = conflictstr..infocname.."、"
+					conflictstr = conflictstr..infocname..","
 				end
 			end
 			if string.len(conflictstr) > 0 then

@@ -20,8 +20,8 @@ local g_CurStatus = 0
 
 local g_imgStatus = {}
 
-local g_FriendBlank = "      "		--3个空格缩进，好友优化要展示头像，再加两个空格缩进，
-local g_RemarkBlank = ""		--2个空格缩进
+local g_FriendBlank = "      "		--3?????,?????????,????????,
+local g_RemarkBlank = ""		--2?????
 
 local g_Current_Clicked = -1
 
@@ -34,7 +34,7 @@ local g_SpecialFriendOutLine = {}
 
 local g_CurSelListItemID = -1
 
-local g_ImageArr = {}--图素对应关系定义在wowanimate.xml-FaceMotionID="-32"，顺序为夫妻>情缘>师傅>徒弟>结拜
+local g_ImageArr = {}--?????????wowanimate.xml-FaceMotionID="-32",?????>??>??>??>??
 
 --===============================================
 -- OnLoad()
@@ -73,9 +73,9 @@ function Friend_OnLoad()
 							"#{KDHYYH_211025_38}",
 							"#{KDHYYH_211025_39}",
 							"#{KDHYYH_211025_40}",
-							"#{KDHYYH_20211025_11}",		--黑名单
-							"#{KDHYYH_20211025_12}",		--仇人
-							"#{KDHYYH_20211025_10}",		--临时好友
+							"#{KDHYYH_20211025_11}",		--???
+							"#{KDHYYH_20211025_12}",		--??
+							"#{KDHYYH_20211025_10}",		--????
 						}
 
 
@@ -252,16 +252,16 @@ function Friend_UpdateFriendInfo(nChannel, nIndex)
 	local bShine = ""
 	local imageIdx = 0
 	
-	if relationtype == 7 then	-- 7：师傅 8：徒弟
+	if relationtype == 7 then	-- 7:?? 8:??
 		namecolor = "#cFF6600"
 		imageIdx = 3
 	elseif relationtype == 8 then
 		namecolor = "#cFF6600"
 		imageIdx = 4
-	elseif relationtype == 3 then					-- 3：情侣
+	elseif relationtype == 3 then					-- 3:??
 		namecolor = "#cF246F0"
 		imageIdx = 1
-	elseif relationtype == 2 then					-- 2：结拜
+	elseif relationtype == 2 then					-- 2:??
 		imageIdx = 5
 		namecolor = "#c007EFF"
 	elseif friendship >= 10 then
@@ -291,7 +291,7 @@ function Friend_UpdateFriendInfo(nChannel, nIndex)
 	local playerIcon = g_RemarkBlank
 
 	if DataPool:GetFriend(nChannel, nIndex, "ONLINE") then
-		if nChannel == 6 then 								--仇人
+		if nChannel == 6 then 								--??
 			namecolor = "#cFF0000"
 		end
 		
@@ -339,8 +339,8 @@ function Friend_Update()
 	
 	Friend_List:ClearListBoxEx()	
 	
-	local FriendCount = 0 			--好友总数
-	local OnlineFriendCount = 0 	--在线好友总数
+	local FriendCount = 0 			--????
+	local OnlineFriendCount = 0 	--??????
 	local FriendInfo = {}
 	
 	Friend_AddTopFriendItem()
@@ -348,13 +348,13 @@ function Friend_Update()
 	for i = 1, 7 do		
 		local fGroupIndex = i
 		if i == 7 then
-			fGroupIndex = 8	--临时好友分组的索引特殊
+			fGroupIndex = 8	--???????????
 		end
 		
 		FriendInfo[i] = ""
 		if fGroupIndex >= 1 and fGroupIndex <= 4 then
-			local groupCount = DataPool:GetFriendNumber(fGroupIndex)				--每组人数
-			local onlienCount= DataPool:GetFriendOnlineNumber(fGroupIndex)			--每组在线人数
+			local groupCount = DataPool:GetFriendNumber(fGroupIndex)				--????
+			local onlienCount= DataPool:GetFriendOnlineNumber(fGroupIndex)			--??????
 				
 			local groupCommonCount = DataPool:GetFriendNumberCommon(fGroupIndex)
 			local onlienCommonCount= DataPool:GetFriendOnlineNumberCommon(  fGroupIndex)
@@ -431,16 +431,16 @@ function Friend_AddFriendItem(nChannel, nIndex)
 	local moodColor = "#cFFCC7A"
 	local playerIcon = g_RemarkBlank	
 	local imageIdx = 0
-	if relationtype == 7 then	-- 7：师傅 8：徒弟
+	if relationtype == 7 then	-- 7:?? 8:??
 		namecolor = "#cFF6600"
 		imageIdx = 3
 	elseif relationtype == 8 then
 		namecolor = "#cFF6600"
 		imageIdx = 4
-	elseif relationtype == 3 then					-- 3：情侣
+	elseif relationtype == 3 then					-- 3:??
 		namecolor = "#cF246F0"
 		imageIdx = 1
-	elseif relationtype == 2 then					-- 2：结拜
+	elseif relationtype == 2 then					-- 2:??
 		imageIdx = 5
 		namecolor = "#c007EFF"
 	elseif friendship >= 10 then
@@ -462,10 +462,10 @@ function Friend_AddFriendItem(nChannel, nIndex)
 		nameWithImage = name..g_ImageArr[imageIdx]
 	end
 	
-	local isbindapp = 0--DataPool:GetFriend(nChannel, nIndex, "FRIEND_ISAPPBIND") --0未绑定，1绑定
+	local isbindapp = 0--DataPool:GetFriend(nChannel, nIndex, "FRIEND_ISAPPBIND") --0???,1??
 	
 	if DataPool:GetFriend(nChannel, nIndex, "ONLINE") then
-		if nChannel == 6 then 								--仇人
+		if nChannel == 6 then 								--??
 			namecolor = "#cFF0000"
 		end
 		
@@ -493,7 +493,7 @@ function Friend_AddFriendItem(nChannel, nIndex)
 	else
 		namecolor = "#cC4B299"
 		if nChannel == 6 then
-			namecolor = "#cc7b299"		--仇人
+			namecolor = "#cc7b299"		--??
 		end
 		
 		local listName = ""
@@ -542,11 +542,11 @@ function Friend_FriendSelect()
 		
 		local iMod = math.mod(index, 10000)
 		local iFloor = math.floor(index / 10000)
-		if iFloor == 5 then		--黑名单
+		if iFloor == 5 then		--???
 			return			
 		end
 		
-		if iFloor == 6 then		--仇人
+		if iFloor == 6 then		--??
 			PushDebugMessage("#{KDHYYH_211025_49}")
 			return
 		end
@@ -678,16 +678,16 @@ function Friend_List_SearchResult()
 			local playerIcon = g_RemarkBlank
 			local imageIdx = 0
 			
-			if relationtype == 7 then	-- 7：师傅 8：徒弟
+			if relationtype == 7 then	-- 7:?? 8:??
 				namecolor = "#cFF6600"
 				imageIdx = 3
 			elseif relationtype == 8 then
 				namecolor = "#cFF6600"
 				imageIdx = 4
-			elseif relationtype == 3 then					-- 3：情侣
+			elseif relationtype == 3 then					-- 3:??
 				namecolor = "#cF246F0"
 				imageIdx = 1
-			elseif relationtype == 2 then					-- 2：结拜
+			elseif relationtype == 2 then					-- 2:??
 				imageIdx = 5
 				namecolor = "#c007EFF"
 			elseif friendship >= 10 then
@@ -710,7 +710,7 @@ function Friend_List_SearchResult()
 			end
 			
 			if DataPool:GetFriend(nChannel, nIndex, "ONLINE") then
-				if nChannel == 6 then 								--仇人
+				if nChannel == 6 then 								--??
 					namecolor = "#cFF0000"
 				end
 				
@@ -782,16 +782,16 @@ function Friend_Update_SearchResult(nIndex)
 		local playerIcon = g_RemarkBlank
 		local imageIdx = 0
 		
-		if relationtype == 7 then	-- 7：师傅 8：徒弟
+		if relationtype == 7 then	-- 7:?? 8:??
 			namecolor = "#cFF6600"
 			imageIdx = 3
 		elseif relationtype == 8 then
 			namecolor = "#cFF6600"
 			imageIdx = 4
-		elseif relationtype == 3 then					-- 3：情侣
+		elseif relationtype == 3 then					-- 3:??
 			namecolor = "#cF246F0"
 			imageIdx = 1
-		elseif relationtype == 2 then					-- 2：结拜
+		elseif relationtype == 2 then					-- 2:??
 			imageIdx = 5
 			namecolor = "#c007EFF"
 		elseif friendship >= 10 then
@@ -814,7 +814,7 @@ function Friend_Update_SearchResult(nIndex)
 		end
 		
 		if DataPool:GetFriend(nChannel, nIndex, "ONLINE") then
-			if nChannel == 6 then 								--仇人
+			if nChannel == 6 then 								--??
 				namecolor = "#cFF0000"
 			end
 			
@@ -881,16 +881,16 @@ function Friend_Recent_List()
 			local playerIcon = g_RemarkBlank
 			local imageIdx = 0
 			
-			if relationtype == 7 then	-- 7：师傅 8：徒弟
+			if relationtype == 7 then	-- 7:?? 8:??
 				namecolor = "#cFF6600"
 				imageIdx = 3
 			elseif relationtype == 8 then
 				namecolor = "#cFF6600"
 				imageIdx = 4
-			elseif relationtype == 3 then					-- 3：情侣
+			elseif relationtype == 3 then					-- 3:??
 				namecolor = "#cF246F0"
 				imageIdx = 1
-			elseif relationtype == 2 then					-- 2：结拜
+			elseif relationtype == 2 then					-- 2:??
 				imageIdx = 5
 				namecolor = "#c007EFF"
 			elseif friendship >= 10 then
@@ -913,7 +913,7 @@ function Friend_Recent_List()
 			end
 			
 			if DataPool:GetFriend(nChannel, nIndex, "ONLINE") then
-				if nChannel == 6 then 								--仇人
+				if nChannel == 6 then 								--??
 					namecolor = "#cFF0000"
 				end
 				
@@ -986,16 +986,16 @@ function Friend_Update_Recent(nIndex)
 		local playerIcon = g_RemarkBlank
 		local imageIdx = 0
 		
-		if relationtype == 7 then	-- 7：师傅 8：徒弟
+		if relationtype == 7 then	-- 7:?? 8:??
 			namecolor = "#cFF6600"
 			imageIdx = 3
 		elseif relationtype == 8 then
 			namecolor = "#cFF6600"
 			imageIdx = 4
-		elseif relationtype == 3 then					-- 3：情侣
+		elseif relationtype == 3 then					-- 3:??
 			namecolor = "#cF246F0"
 			imageIdx = 1
-		elseif relationtype == 2 then					-- 2：结拜
+		elseif relationtype == 2 then					-- 2:??
 			imageIdx = 5
 			namecolor = "#c007EFF"
 		elseif friendship >= 10 then
@@ -1018,7 +1018,7 @@ function Friend_Update_Recent(nIndex)
 		end
 		
 		if DataPool:GetFriend(nChannel, nIndex, "ONLINE") then
-			if nChannel == 6 then 								--仇人
+			if nChannel == 6 then 								--??
 				namecolor = "#cFF0000"
 			end
 			
@@ -1160,16 +1160,16 @@ function Friend_AddTopFriendItem()
 	local moodColor = "#cFFCC7A"
 	local playerIcon = g_RemarkBlank	
 	local imageIdx = 0
-	if relationtype == 7 then	-- 7：师傅 8：徒弟
+	if relationtype == 7 then	-- 7:?? 8:??
 		namecolor = "#cFF6600"
 		imageIdx = 3
 	elseif relationtype == 8 then
 		namecolor = "#cFF6600"
 		imageIdx = 4
-	elseif relationtype == 3 then					-- 3：情侣
+	elseif relationtype == 3 then					-- 3:??
 		namecolor = "#cF246F0"
 		imageIdx = 1
-	elseif relationtype == 2 then					-- 2：结拜
+	elseif relationtype == 2 then					-- 2:??
 		imageIdx = 5
 		namecolor = "#c007EFF"
 	elseif friendship >= 10 then

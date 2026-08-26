@@ -114,7 +114,7 @@ function PlayerList_SetItem(idx, flag)
 	if bp == "" then bp = "N/A" end
 			
 	local mp = pl[idx].menpai
-	if mp == "" then mp= "ÎÞ" end
+	if mp == "" then mp= "Vô" end
 	
 	if pl[idx].iconstr == "ENEMY" then
 		icostr = "#-18"
@@ -128,14 +128,14 @@ function PlayerList_SetItem(idx, flag)
 	end
 
 	bar:GetSubItem("PlayerList_List_ItemText1"):SetText(icostr..color_real..na)
-	bar:GetSubItem("PlayerList_List_ItemText2"):SetText("#cFFFFFF"..tostring(lv).."¼¶")
+	bar:GetSubItem("PlayerList_List_ItemText2"):SetText("#cFFFFFF"..tostring(lv).."C¤p")
 	
 
 	bar:GetSubItem("PlayerList_List_ItemText3"):SetText("#c00B0F0"..bp)
 	bar:GetSubItem("PlayerList_List_ItemText4"):SetText("#cFFFF00"..mp)
 
 	if pl[idx].havemskbuff == 1 then
-		bar:GetSubItem("PlayerList_List_ItemText2"):SetText("#cFFFFFF".."?".."¼¶")
+		bar:GetSubItem("PlayerList_List_ItemText2"):SetText("#cFFFFFF".."?".."C¤p")
 	        bar:GetSubItem("PlayerList_List_ItemText3"):SetText("?")
 	end
 
@@ -157,7 +157,7 @@ function PlayerList_PlayerSelect(isAttack, idx)
 	end
 end
 
---¹Ø±Õ
+--¹Ø± 
 function PlayerList_Hide()
 	this:Hide()
 end

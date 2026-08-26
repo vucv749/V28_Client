@@ -37,7 +37,7 @@ end
 -- OnEvent
 function HuaShanLunJian_GetAward_OnEvent(event)
 	--
-	if ( event == "UI_COMMAND" and tonumber(arg0) == 89289101 ) then --打开界面
+	if ( event == "UI_COMMAND" and tonumber(arg0) == 89289101 ) then --????
 		HuaShanLunJian_GetAward_BeginCare( Get_XParam_INT(0) )
 		this:Show()
 		

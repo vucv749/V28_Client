@@ -107,7 +107,7 @@ local g_tabRewardItemInfo			=
 		-- 	奖项	数量	奖励	id
 		-- 一等奖	1	坐骑：绝地（永久，拾取绑定）	10141936
 		-- 二等奖	3	坐骑：绝地（180天，拾取绑定）	10141935
-		-- 普照奖	参与即得	礼包1	38002640
+		-- 茽牋奖	参与即得	礼包1	38002640
 		[1] = {nItemID = 10141936, nItemNum = 1, nNeedBagSpace = 1, nNeedMatSpace = 0, bCast = 0, },
 		[2] = {nItemID = 10141935, nItemNum = 1, nNeedBagSpace = 1, nNeedMatSpace = 0, bCast = 0, },
 		[3] = {nItemID = 38002640, nItemNum = 1, nNeedBagSpace = 1, nNeedMatSpace = 0, bCast = 0, },
@@ -118,12 +118,12 @@ local g_tabRewardItemInfo			=
 		-- 奖项	数量	奖励	id
 		-- 一等奖	1	新时装特殊染色（永久，拾取绑定）	10124811
 		-- 二等奖	3	新时装（永久，拾取绑定）	10124810
-		-- 普照奖	参与即得	礼包2	38002641
+		-- 茽牋奖	参与即得	礼包2	38002641
 
 		-- 奖项	数量	奖励	id
 		-- 一等奖	1	新时装（永久，拾取绑定）	10124876
 		-- 二等奖	3	新时装（180天，拾取绑定）	10124875
-		-- 普照奖	参与即得	礼包2	38002641
+		-- 茽牋奖	参与即得	礼包2	38002641
 
 		[1] = {nItemID = 10124876, nItemNum = 1, nNeedBagSpace = 1, nNeedMatSpace = 0, bCast = 0, },
 		[2] = {nItemID = 10124875, nItemNum = 1, nNeedBagSpace = 1, nNeedMatSpace = 0, bCast = 0, },
@@ -135,7 +135,7 @@ local g_tabRewardItemInfo			=
 		-- 奖项	数量	奖励	id
 		-- 一等奖	1	九尾魂玉*40	38002519 （强绑）
 		-- 二等奖	3	九尾魂玉*20	38002519 （强绑）
-		-- 普照奖	参与即得	礼包3	38002642
+		-- 茽牋奖	参与即得	礼包3	38002642
 		[1] = {nItemID = 38002519, nItemNum = 40, nNeedBagSpace = 1, nNeedMatSpace = 0, bCast = 0, },
 		[2] = {nItemID = 38002519, nItemNum = 20, nNeedBagSpace = 1, nNeedMatSpace = 0, bCast = 0, },
 		[3] = {nItemID = 38002642, nItemNum = 1, nNeedBagSpace = 1, nNeedMatSpace = 0, bCast = 0, },
@@ -339,7 +339,7 @@ function ZNQ_ChouJiang_OnEvent(event)
 
 	elseif ( event == "ANN_ONLINE_MAIN_UI_OPEN" ) then
 		-- 显示界面
-		-- 为了解决界面被遮挡的问题，先把界面关了
+		-- 为了解决界面被犣挡的问题，先把界面关了
 		-- if this:IsVisible() then
 		-- 	ZNQ_ChouJiang_OnClose()
 		-- end
@@ -369,9 +369,9 @@ function ZNQ_ChouJiang_OnEvent(event)
 		if(tonumber(arg0) ~= g_nObjCaredIDClient) then
 			return
 		end
-		-- 如果和NPC的距离大于一定距离或者被删除，自动关闭
+		-- 如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
-			-- 关闭界面
+			-- 关睜界面
 			ZNQ_ChouJiang_OnClose()
 		end	
 
@@ -530,8 +530,8 @@ end
 -- !!!reloadscript =ZNQ_ChouJiang
 function ZNQ_ChouJiang_Update(bOpen)
 
-	-- 获得活动的阶段信息 1 仅展示界面阶段; 2 抽奖当天; 3 抽奖过后的可领奖阶段; -1 未开启活动; -2 活动结束第一天; -3 活动已结束;
-	-- 自校验关闭
+	-- 获得活动的阶段信息 1 仅牴示界面阶段; 2 抽奖当天; 3 抽奖过后的可领奖阶段; -1 未开启活动; -2 活动结束第一天; -3 活动已结束;
+	-- 自校验关睜
 	if g_nHuoDongDayStep < 0 then
 		ZNQ_ChouJiang_OnClose()
 	end
@@ -552,7 +552,7 @@ function ZNQ_ChouJiang_Update(bOpen)
 	-- 自动选择页面
 	local nAutoSelectPage = 1
 
-	-- 左侧的券展示
+	-- 左侧的券牴示
 	local theAction = DataPool:CreateBindActionItemForShow(g_nTicketItemID, 1)
 	ZNQ_ChouJiang_Piao_Icon : SetActionItem(theAction:GetID())
 
@@ -684,7 +684,7 @@ function ZNQ_ChouJiang_UpdateRight(bOpen, nCurMinute, nAutoSelectPage)
 			g_hJoinAndGetButtonTips[nPage] : Show()	
 		end
 
-		-- 右侧奖励展示缺省状态
+		-- 右侧奖励牴示缺省状态
 		for i = 1, g_nMaxRewardLevel do
 			local nItemID = tRewardItemInfoCurPage[i].nItemID
 			local nItemNum = tRewardItemInfoCurPage[i].nItemNum
@@ -695,13 +695,13 @@ function ZNQ_ChouJiang_UpdateRight(bOpen, nCurMinute, nAutoSelectPage)
 			local theAction = DataPool:CreateBindActionItemForShow(nItemID, nItemNum)
 			hActionButton : SetActionItem(theAction:GetID())
 
-			-- 奖励状态先全部隐藏 后面的逻辑会选择性展示
+			-- 奖励状态先全部隐藏 后面的逻辑会选择性牴示
 			hTabRewardGetedCurPage[i] 	: Hide()
 			hTabRewardDisableCurPage[i] : Hide()
 			hTabRewardAnimateCurPage[i] : Hide()
 		end
 
-		-- 右侧中奖者名单缺省状态
+		-- 右侧中奖犨名单缺省状态
 		g_hRewardPlayerInfo[1][nPage] 	: SetText( "#{ZNQCJ_20220616_71}" )
 		g_hRewardPlayerInfo[2][nPage] 	: SetText( "#{ZNQCJ_20220616_72}" )
 		-- g_hRewardPlayerInfo[3][nPage] 	: SetText( "#{ZNQCJ_20220616_72}" )
@@ -728,7 +728,7 @@ function ZNQ_ChouJiang_UpdateRight(bOpen, nCurMinute, nAutoSelectPage)
 
 		-- 可投奖券期间
 		if 1 == nCurPageChouJiangProcess then
-			-- 右侧抽奖提示信息 这里只计算分钟差 这个阶段的天和小时是一致的
+			-- 右侧抽奖提示信息 犫里只计算分钟差 犫个阶段的天和小时是一致的
 			local tStepInfoCurPage = g_tabRewardStepInfo[nPage]
 			local nShowCountMinute = tStepInfoCurPage.nRewardTimeMinute - nCurMinute
 			g_hRewardIntroText[nPage] : SetText( ScriptGlobal_Format("#{ZNQCJ_20220616_18}", nShowCountMinute ) )
@@ -809,7 +809,7 @@ function ZNQ_ChouJiang_UpdateRight(bOpen, nCurMinute, nAutoSelectPage)
 				end
 			end
 
-			-- 右侧奖励展示
+			-- 右侧奖励牴示
 			for i = 1, g_nMaxRewardLevel do
 
 				-- PushDebugMessage("g_tHaveRewardInfo[nPage]"..g_tHaveRewardInfo[nPage])
@@ -822,14 +822,14 @@ function ZNQ_ChouJiang_UpdateRight(bOpen, nCurMinute, nAutoSelectPage)
 					else
 						-- 没领
 					end	
-					-- 现在这个表示中奖了
+					-- 现在犫个表示中奖了
 					hTabRewardAnimateCurPage[i] : Show()
 				else
 					hTabRewardDisableCurPage[i] :Show()
 				end				
 			end
 
-			-- 右侧中奖者名单
+			-- 右侧中奖犨名单
 			-- local tabStrDic = {"#{ZNQCJ_20220616_26}", "#{ZNQCJ_20220616_54}", "#{ZNQCJ_20220616_54}", "#{ZNQCJ_20220616_54}"}
 			
 			-- 一等奖
@@ -849,7 +849,7 @@ function ZNQ_ChouJiang_UpdateRight(bOpen, nCurMinute, nAutoSelectPage)
 					if "" == strAllName then
 						strAllName = strPlayerName
 					else
-						strAllName = strAllName.."、"..strPlayerName
+						strAllName = strAllName..","..strPlayerName
 					end
 				end
 			end
@@ -1040,7 +1040,7 @@ function ZNQ_ChouJiang_Reset()
 end
 
 --=========================================================
--- 关闭界面
+-- 关睜界面
 --=========================================================
 function ZNQ_ChouJiang_OnClose()	
 	this:Hide()

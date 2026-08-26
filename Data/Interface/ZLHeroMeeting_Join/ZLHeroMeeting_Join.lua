@@ -6,17 +6,17 @@ local g_ZLHeroMeeting_Join_NPCID = -1;
 local g_ZLHeroMeeting_Join_Min =  200; 
 local g_ZLHeroMeeting_Join_listitem = {}
 local g_ZLHeroMeeting_Join_MenPaiList = {
-	[0] = "#{GMGameInterface_Script_DataPool_Info_ShaoLin}",    --少林
-	[1] = "#{GMGameInterface_Script_DataPool_Info_Mingjiao}",    --明教
-	[2] = "#{GMGameInterface_Script_DataPool_Info_GaiBang}",    --丐帮
-	[3] = "#{GMGameInterface_Script_DataPool_Info_WuDang}",    --武当
-	[4] = "#{GMGameInterface_Script_DataPool_Info_EMei}",    --峨眉
-	[5] = "#{GMGameInterface_Script_DataPool_Info_XingXiu}",    --星宿
-	[6] = "#{GMGameInterface_Script_DataPool_Info_DaLi}",    --天龙
-	[7] = "#{GMGameInterface_Script_DataPool_Info_TianShan}",    --天山
-	[8] = "#{GMGameInterface_Script_DataPool_Info_XiaoYao}" ,    --逍遥
-	[9] = "#{GMGameInterface_Script_DataPool_Info_WuMenPai}",     --无门派
-	[10] = "#{GMGameInterface_Script_DataPool_Info_ManTuoShanZhuang}",     --曼陀
+	[0] = "#{GMGameInterface_Script_DataPool_Info_ShaoLin}",    --??
+	[1] = "#{GMGameInterface_Script_DataPool_Info_Mingjiao}",    --??
+	[2] = "#{GMGameInterface_Script_DataPool_Info_GaiBang}",    --??
+	[3] = "#{GMGameInterface_Script_DataPool_Info_WuDang}",    --??
+	[4] = "#{GMGameInterface_Script_DataPool_Info_EMei}",    --??
+	[5] = "#{GMGameInterface_Script_DataPool_Info_XingXiu}",    --??
+	[6] = "#{GMGameInterface_Script_DataPool_Info_DaLi}",    --??
+	[7] = "#{GMGameInterface_Script_DataPool_Info_TianShan}",    --??
+	[8] = "#{GMGameInterface_Script_DataPool_Info_XiaoYao}" ,    --??
+	[9] = "#{GMGameInterface_Script_DataPool_Info_WuMenPai}",     --???
+	[10] = "#{GMGameInterface_Script_DataPool_Info_ManTuoShanZhuang}",     --??
 }
 
 function ZLHeroMeeting_Join_PreLoad()
@@ -43,7 +43,7 @@ function ZLHeroMeeting_Join_OnEvent(event)
 		if(tonumber(arg0) ~= g_ZLHeroMeeting_Join_NPCID) then
 			return;
 		end 
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if arg1 == "distance" and tonumber(arg2) > MAX_OBJ_DISTANCE or arg1=="destroy" then
 			ZLHeroMeeting_Join_OnClose()
 		end
@@ -153,7 +153,7 @@ function ZLHeroMeeting_Join_Click()
 	Clear_XSCRIPT()
 	Set_XSCRIPT_Function_Name("Apply")
 	Set_XSCRIPT_ScriptID(891119) 
-    Set_XSCRIPT_Parameter( 0, g_ZLHeroMeeting_Join_TargetID ); -- 参数一 
+    Set_XSCRIPT_Parameter( 0, g_ZLHeroMeeting_Join_TargetID ); -- ??? 
 	Set_XSCRIPT_ParamCount(1)
 	Send_XSCRIPT()
  

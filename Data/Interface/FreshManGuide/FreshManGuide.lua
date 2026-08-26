@@ -6,9 +6,9 @@ local g_Frame_SizeRaw = ""
 local g_Lace_SizeRaw = "" 
 local g_Ctl_Corner = {}
    
-local g_X_Offset = 0  --相对目标窗口的偏移
-local g_Y_Offset = 0  --同上
-local g_Direct   = "" --相对目标窗口的方位
+local g_X_Offset = 0  --?????????
+local g_Y_Offset = 0  --??
+local g_Direct   = "" --?????????
 local g_cached_textstr = -1 
 local g_Text = {
     [1] = { dict ="#{}", flashtime = 5000},
@@ -28,7 +28,7 @@ function FreshManGuide_OnLoad()
 	g_Frame_SizeRaw = FreshManGuide_Frame:GetProperty("UnifiedSize")
 	g_Lace_SizeRaw = FreshManGuide_Lace:GetProperty("UnifiedSize")
 
-	g_Ctl_Corner = {  --顺时针,四个角
+	g_Ctl_Corner = {  --???,???
         FreshManGuide_UpLeft,
         FreshManGuide_UpRight,
         FreshManGuide_DownRight,
@@ -39,12 +39,12 @@ end
 function FreshManGuide_OnEvent(event)
 	if event == "OPEN_FRESHMAN_GUIDE" then
 	    if 1 ~= FreshManGuide_CheckSize(tonumber(arg4), tonumber(arg5)) then
-	        return  -- 客户端主窗口比本界面还小,不予显示了就
+	        return  -- ????????????,??????
 	    end
 	    if "" == GetFreshManGuideOwner() or "PlayerQuicklyEnter" ~= GetFreshManGuideOwner() then
 			assert("" == GetFreshManGuideOwner())
 			assert("PlayerQuicklyEnter" ~= GetFreshManGuideOwner())
-			return  -- 必须要有目标窗口
+			return  -- ????????
 	    end
 	    if 1 == tonumber(arg0) then
             FreshManGuide_Reset(tonumber(arg0),tonumber(arg1), tonumber(arg2), tonumber(arg3), tonumber(arg4), tonumber(arg5), arg6)
@@ -96,40 +96,40 @@ function FreshManGuide_Reset(ntype, nTextID, nTipPosX, nTipPosY, nClientWidth, n
 	this:Show()
 end
 
---szCorner代表调用者期望的显示方位
+--szCorner代表调用犨期望的显示方位
 --如期望方位显示不下本窗口,才进入自由选择
 function FreshManGuide_Modify(nTipPosX, nTipPosY, nClientWidth, nClientHight, szCorner)  
 	 
-	if nTipPosX ~= -1 or nTipPosY ~= -1 then             --都为-1，表示不改变相对位置
-        g_X_Offset = nTipPosX                            --本tip相对于目标窗口的偏移
+	if nTipPosX ~= -1 or nTipPosY ~= -1 then             --??-1,?????????
+        g_X_Offset = nTipPosX                            --?tip??????????
         g_Y_Offset = nTipPosY
     end
-    if szCorner ~= "" then                               --空串,表示方位不变
+    if szCorner ~= "" then                               --??,??????
         g_Direct = szCorner
 	end
 	FreshManGuide_CrackSize()
-    local OffsetX, OffsetY = GetWindowPos(GetFreshManGuideOwner()) --得到目标窗口相对于底板的偏移
-    OffsetX = OffsetX + g_X_Offset                       --本tip相对于客户端窗口底板的偏移
+    local OffsetX, OffsetY = GetWindowPos(GetFreshManGuideOwner()) --??????????????
+    OffsetX = OffsetX + g_X_Offset                       --?tip?????????????
     OffsetY = OffsetY + g_Y_Offset  
 	
 	if "northwest" == g_Direct and 
         OffsetX - g_Frame_Width > 0 and OffsetY - g_Frame_Height > 0 then
         FreshManGuide_To(OffsetX - g_Frame_Width, OffsetY - g_Frame_Height)
-        FreshManGuide_Show_Corner(3)   --左上显示，show右下角
+        FreshManGuide_Show_Corner(3)   --????,show???
     elseif "northeast" == g_Direct and
         OffsetX + g_Frame_Width - nClientWidth < 0 and OffsetY - g_Frame_Height > 0 then
         FreshManGuide_To(OffsetX, OffsetY - g_Frame_Height)
-		FreshManGuide_Show_Corner(4)   --右上显示，show左下角
+		FreshManGuide_Show_Corner(4)   --????,show???
 		Lua_TDU_Log("FreshManGuide_Modify northeast: "..OffsetX )
 		Lua_TDU_Log("FreshManGuide_Modify northeast: "..OffsetY - g_Frame_Height )
     elseif "southeast" == g_Direct and
         OffsetX + g_Frame_Width - nClientWidth < 0 and OffsetY + g_Frame_Height - nClientHight < 0 then
         FreshManGuide_To(OffsetX, OffsetY)
-        FreshManGuide_Show_Corner(1)   --右下显示，show左上角
+        FreshManGuide_Show_Corner(1)   --????,show???
     elseif "southwest" == g_Direct and
         OffsetX - g_Frame_Width > 0 and OffsetY + g_Frame_Height - nClientHight < 0 then
         FreshManGuide_To(OffsetX - g_Frame_Width, OffsetY)
-        FreshManGuide_Show_Corner(2)   --左下显示，show右上角
+        FreshManGuide_Show_Corner(2)   --????,show???
     else
         if OffsetX - g_Frame_Width < 0 then
             if OffsetY - g_Frame_Height < 0 then

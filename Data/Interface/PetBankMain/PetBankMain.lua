@@ -1,36 +1,36 @@
-local PETBANK_CURRENT_SELECT = 0; --µ±Ç°Ñ¡ÖĞ
-local PETBANK_MAX_COUNT  =10 ;--ÒøĞĞÈİÆ÷µÄ´óĞ¡
-local PETBANK_CURRENT_NUM =0; --ÒøĞĞÏÖÔÚ´æ´¢Á¿
-local PETBANKMAX_CURRNET_SIZE =0 ;--µ±Ç°ÕäÊŞÒøĞĞµÄ×î´ósize
+local PETBANK_CURRENT_SELECT = 0; --????
+local PETBANK_MAX_COUNT  =10 ;--???????
+local PETBANK_CURRENT_NUM =0; --???????
+local PETBANKMAX_CURRNET_SIZE =0 ;--?????????size
 local MAX_OBJ_DISTANCE = 3.0;
 local objCared = -1;
 
 local PETBANK_AITYPE = {};
 
 function PetBankMain_PreLoad()
-	this:RegisterEvent("TOGLE_PETBANK"); --´ò¿ªÕäÊŞÒøĞĞ½çÃæÊÂ¼ş
+	this:RegisterEvent("TOGLE_PETBANK"); --??????????
 	this:RegisterEvent("TOGLE_PETLIST_PETNUM_CHNAGE");
-	this:RegisterEvent("TOGLE_PET_PAGE"); --¸üĞÂÑ¡ÖĞÊÂ¼ş
+	this:RegisterEvent("TOGLE_PET_PAGE"); --??????
 	--this:RegisterEvent("TOGLE_GETBANKSIZE_PETBANK"); --¸üĞÂÑ¡ÖĞÊÂ¼ş 
-	this:RegisterEvent("OBJECT_CARED_EVENT",false); --½çÃæÃô¸ĞÊÂ¼ş
+	this:RegisterEvent("OBJECT_CARED_EVENT",false); --??????
 	this:RegisterEvent("UPDATE_PET_PAGE");
-	this:RegisterEvent("PLAYER_LEAVE_WORLD")	--½øÈë³¡¾°¹Ø±Õ½çÃæ
+	this:RegisterEvent("PLAYER_LEAVE_WORLD")	--????????
 end
 
 
 function PetBankMain_OnLoad()
 
-	PETBANK_AITYPE[0] = "µ¨Ğ¡";
-	PETBANK_AITYPE[1] = "½÷É÷";
-	PETBANK_AITYPE[2] = "ÖÒ³Ï";
-	PETBANK_AITYPE[3] = "¾«Ã÷";
-	PETBANK_AITYPE[4] = "ÓÂÃÍ";
+	PETBANK_AITYPE[0] = "Nhát gan";
+	PETBANK_AITYPE[1] = "C¦n th§n";
+	PETBANK_AITYPE[2] = "Trung thñc";
+	PETBANK_AITYPE[3] = "Nhanh nh©n";
+	PETBANK_AITYPE[4] = "Dûng mãnh";
 
 end
 
 function PetBankMain_OnEvent(event)
      -- PushDebugMessage("event".. "  "..event) 
-        if ( event == "TOGLE_PETBANK" ) then--´ò¿ªÕäÊŞÒøĞĞ½çÃæÊÂ¼ş
+        if ( event == "TOGLE_PETBANK" ) then--??????????
 		local nMaxbanksize = tonumber(arg2)
   	 	if nMaxbanksize ~= nil and 0 < nMaxbanksize and nMaxbanksize <= 10 then
   	 	  PETBANKMAX_CURRNET_SIZE = nMaxbanksize
@@ -48,7 +48,7 @@ function PetBankMain_OnEvent(event)
 		 if(IsWindowShow("YouLongKa2")) then
 		  CloseWindow("YouLongKa2", true);
 		 end
-			--¹Ø±ÕÒÑ´ò¿ª½çÃæ
+			--¹Ø± ÒÑ´ò¿ª½çÃæ
 			if(IsWindowShow("TargetPet")) then
 				CloseWindow("TargetPet", true);
 			end	
@@ -67,14 +67,14 @@ function PetBankMain_OnEvent(event)
 				CloseWindow("YueKa", true)
 			end
 			 
-		 objCared = Bank:GetNpcId(); --Ì×ÓÃbankµÄÊı¾İ
+		 objCared = Bank:GetNpcId(); --??bank???
 		 this:CareObject(objCared, 1, "PetBankMain");
 		 this:Show()
 		 PetBankMain_UpDataPetList()
 		 
 		 	--¹ØĞÄÉÌÈËObj
 		--if( 0 > objCared ) then
-			--Shop_Text:SetText("#{VIPTQ_110908_11}");	--ÏÈÕâÑù°É£¬ÓĞÎÊÌâÔÙĞŞ
+			--Shop_Text:SetText("#{VIPTQ_110908_11}");	--ÏÈ âÑù°É£¬ÓĞÎÊÌâÔÙĞŞ
 			
 			--PetBankMain_Watch_Text:SetText("#{VIPTQ3_120517_29}")
 			--PetBankMain_StopWatch:SetProperty("Timer", tostring(5*60))
@@ -85,11 +85,11 @@ function PetBankMain_OnEvent(event)
 			--PetBankMain_Watch_Text:Hide()
 			--PetBankMain_StopWatch:Hide()
 		--end
-	elseif( event == "TOGLE_PETLIST_PETNUM_CHNAGE" ) then--´ò¿ªÕäÊŞÒøĞĞ½çÃæÊÂ¼ş
+	elseif( event == "TOGLE_PETLIST_PETNUM_CHNAGE" ) then--??????????
 	 	PetBankMain_UpDataPetList();
 	elseif( event == "UPDATE_PET_PAGE" ) then
 	 	PetBankMain_UpDataPetList();
-	elseif( event == "TOGLE_PET_PAGE" ) then--´ò¿ªÕäÊŞÒøĞĞ½çÃæÊÂ¼ş
+	elseif( event == "TOGLE_PET_PAGE" ) then--??????????
 	 	local nSelectArg0 = tonumber(arg0)
 	 	local nPetCount = Pet:GetPet_Count_PetBank()
 	 	if 0<=nSelectArg0  and nSelectArg0 < nPetCount then
@@ -104,7 +104,7 @@ function PetBankMain_OnEvent(event)
 		if(tonumber(arg0) ~= objCared) then
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			this:Hide();
 			CloseWindow("PetBankMain", true);
@@ -132,18 +132,18 @@ function PetBankMain_UpDataPetList()
 
 	PetBankMain_List : ClearListBox();
 	local nPetCount = Pet:GetPet_Count_PetBank()
-	PetBankMain_TheHaveList:SetText("#{ZSYH_120503_18}"..nPetCount.."/"..PETBANKMAX_CURRNET_SIZE) --ZSYH_120503_18 ¿É´æÕäÊŞ
+	PetBankMain_TheHaveList:SetText("#{ZSYH_120503_18}"..nPetCount.."/"..PETBANKMAX_CURRNET_SIZE) --ZSYH_120503_18 ????
 	if nPetCount < 1 then
 		PETBANK_CURRENT_SELECT = -1;
-		PetBankMain_NeedLevel:SetText(" ") --¿ÉĞ¯´ø
-		PetBankMain_Level:SetText(" ") --µÈ¼¶
+		PetBankMain_NeedLevel:SetText(" ") --???
+		PetBankMain_Level:SetText(" ") --??
 		PetBankMain_FakeObject : SetFakeObject( "" );
 		return;
 	else 
 	   local szCharName = Pet:GetPetList_Appoint_PetBank(PETBANK_CURRENT_SELECT);
 	   if szCharName ==" " or szCharName ==nil then
 		PETBANK_CURRENT_SELECT = Pet :GetFirstPetPosInBank_PetBank();
-		--°ÑÒøĞĞ±³°üÊı¾İ¸üĞÂÁËµÄ²Ù×÷¸æËßÕäÊŞ±³°ülist
+		--°ÑÒøĞĞ±³°üÊı¾İ¸üĞÂÁËµÄ²Ù×÷¸æËß äÊŞ±³°ülist
 		Pet : PetBank_PetListSelectChange( tonumber(PETBANK_CURRENT_SELECT),0);
 	   end
 	    
@@ -159,13 +159,13 @@ function PetBankMain_UpDataPetList()
 			if 1==Pet:IsPresent_PetBank(i-1) then
 				local	szPetName, xiedaiLevl,CurrentLevel,szOn = Pet:GetPetList_Appoint_PetBank(i-1);
 				if(szPetName~= "")then
-				  	-- ÕäÊŞ²»ÔÚ±³°üÀï
+				  	--  äÊŞ²»ÔÚ±³°üÀï
 					if ( szOn == "on_packa" ) then 
 						if (PlayerPackage:IsPetLock(i-1,1) == 1)  then
 							local nUnlockElapsedTime = PlayerPackage:GetPUnlockElapsedTime_Pet(i-1 ,1);
 							if( nUnlockElapsedTime == 0 ) then
 								szPetName = szPetName.. "#-05";
-								strToolTips =  "ÒÑ¼ÓËø" ;
+								strToolTips =  "Ğã khóa" ;
 							else
 								szPetName = szPetName.. "#-10";
 								local strLeftTime = g_GetUnlockingStr(nUnlockElapsedTime);			
@@ -187,43 +187,43 @@ function PetBankMain_UpDataPetList()
 		         end
 	end
 	
-	-- PushDebugMessage("num " .." " ..num ) --ÇëÑ¡ÔñÒªÈ¡³öµÄÕäÊŞ
+	-- PushDebugMessage("num " .." " ..num ) --ÇëÑ¡ÔñÒªÈ¡³öµÄ äÊŞ
 	if  -1<PETBANK_CURRENT_SELECT  and PETBANK_CURRENT_SELECT < PETBANK_MAX_COUNT and 1== bSelect then
 	  local PetName , xiedaiLevel ,PetLevel = Pet:GetPetList_Appoint_PetBank(PETBANK_CURRENT_SELECT)
 	  local strNeedLevelColor = "#c00FF00"
 	  if(PetName~= "")then
 	  	PetBankMain_UpdateType()
-			PetBankMain_NeedLevel:SetText(strNeedLevelColor..xiedaiLevel.."#{ZSYH_120503_47}") --ZSYH_120503_18  ¿ÉĞ¯´ø
-			PetBankMain_Level:SetText("#{ZSYH_120503_48}"..PetLevel) --µÈ¼¶
+			PetBankMain_NeedLevel:SetText(strNeedLevelColor..xiedaiLevel.."#{ZSYH_120503_47}") --ZSYH_120503_18  ???
+			PetBankMain_Level:SetText("#{ZSYH_120503_48}"..PetLevel) --??
 			PetBankMain_List : SetItemSelectByItemID(PETBANK_CURRENT_SELECT);
 			PetBankMain_FakeObject : SetFakeObject( "" );
 			Pet : SetModel_PetBank(PETBANK_CURRENT_SELECT);
 			PetBankMain_FakeObject :SetFakeObject( "My_PetBank" );
 		else	
 			PetBankMain_List : SetItemSelectByItemID(-1);
-			PetBankMain_NeedLevel:SetText("#c00FF00".."0".."#{ZSYH_120503_47}") --¿ÉĞ¯´ø
-			PetBankMain_Level:SetText("#{ZSYH_120503_48}".."0") --µÈ¼¶
+			PetBankMain_NeedLevel:SetText("#c00FF00".."0".."#{ZSYH_120503_47}") --???
+			PetBankMain_Level:SetText("#{ZSYH_120503_48}".."0") --??
 			PetBankMain_FakeObject : SetFakeObject( "" );
 	   end
 	 else
 		PETBANK_CURRENT_SELECT = Pet :GetFirstPetPosInBank_PetBank();
-		--°ÑÒøĞĞ±³°üÊı¾İ¸üĞÂÁËµÄ²Ù×÷¸æËßÕäÊŞ±³°ülist
+		--°ÑÒøĞĞ±³°üÊı¾İ¸üĞÂÁËµÄ²Ù×÷¸æËß äÊŞ±³°ülist
 		Pet : PetBank_PetListSelectChange( tonumber(PETBANK_CURRENT_SELECT),0);
 		local  PetName1 , xiedaiLevel1 ,PetLevel1 = Pet:GetPetList_Appoint_PetBank(PETBANK_CURRENT_SELECT)
 		local strNeedLevelColor1 = "#c00FF00"
 		
 		if bHasPet ==1 and PetName1~= "" then
 			PetBankMain_UpdateType()
-			PetBankMain_NeedLevel:SetText(strNeedLevelColor1..xiedaiLevel1.."#{ZSYH_120503_47}") --ZSYH_120503_18  ¿ÉĞ¯´ø
-			PetBankMain_Level:SetText("#{ZSYH_120503_48}"..PetLevel1) --µÈ¼¶
+			PetBankMain_NeedLevel:SetText(strNeedLevelColor1..xiedaiLevel1.."#{ZSYH_120503_47}") --ZSYH_120503_18  ???
+			PetBankMain_Level:SetText("#{ZSYH_120503_48}"..PetLevel1) --??
 			PetBankMain_List : SetItemSelectByItemID(PETBANK_CURRENT_SELECT);
 			PetBankMain_FakeObject : SetFakeObject( "" );
 			Pet : SetModel_PetBank(0); 
 			PetBankMain_FakeObject :SetFakeObject( "My_PetBank" );
 		else    
 			PetBankMain_List : SetItemSelectByItemID(-1);
-			PetBankMain_NeedLevel:SetText("#c00FF00".."0".."#{ZSYH_120503_47}") --¿ÉĞ¯´ø
-			PetBankMain_Level:SetText("#{ZSYH_120503_48}".."0") --µÈ¼¶
+			PetBankMain_NeedLevel:SetText("#c00FF00".."0".."#{ZSYH_120503_47}") --???
+			PetBankMain_Level:SetText("#{ZSYH_120503_48}".."0") --??
 			PetBankMain_FakeObject : SetFakeObject( "" );
 		end
 	 end 	
@@ -231,7 +231,7 @@ function PetBankMain_UpDataPetList()
 end
 
 --
--- Ğı×ªÕäÊŞÄ£ĞÍ£¨Ïò×ó)
+-- Ğı×ª äÊŞÄ£ĞÍ£¨Ïò×ó)
 --
 function PetBankMain_TurnLeft(start)
 	--Ïò×óĞı×ª¿ªÊ¼
@@ -245,7 +245,7 @@ end
 
 ------------------------------------------------------------------------------------
 ----
---Ğı×ªÕäÊŞÄ£ĞÍ£¨ÏòÓÒ)
+--Ğı×ª äÊŞÄ£ĞÍ£¨ÏòÓÒ)
 --
 function PetBankMain_TurnRight(start)
 	--ÏòÓÒĞı×ª¿ªÊ¼
@@ -261,7 +261,7 @@ end
 --´ÓÊŞÀ¸µ½ÒøĞĞ²Ù×÷ ´ÓÒøĞĞµ½±³°ü²Ù×÷
 function PetBankMain_Refuse_Click()
 	if PETBANK_CURRENT_SELECT < 0 or PETBANK_CURRENT_SELECT >= PETBANK_MAX_COUNT then
-		PushDebugMessage("ÇëÏÈÑ¡ÖĞÒ»Ö»ÕäÊŞ")
+		PushDebugMessage("Thïnh Tiên lña ch÷n Nh¤t Chích Trân Thú")
 		return
 	end
 	
@@ -269,16 +269,16 @@ function PetBankMain_Refuse_Click()
 	 	CloseWindow("TargetPet2", true);
 	end		
 	
-	Pet:SavePetIntoBank_PetBank(PETBANK_CURRENT_SELECT,0); --ÒøĞĞµ½±³°ü
+	Pet:SavePetIntoBank_PetBank(PETBANK_CURRENT_SELECT,0); --?????
 	PETBANK_CURRENT_SELECT = Pet :GetFirstPetPosInBank_PetBank();
-	--°ÑÒøĞĞ±³°üÊı¾İ¸üĞÂÁËµÄ²Ù×÷¸æËßÕäÊŞ±³°ülist
+	--°ÑÒøĞĞ±³°üÊı¾İ¸üĞÂÁËµÄ²Ù×÷¸æËß äÊŞ±³°ülist
 	Pet : PetBank_PetListSelectChange( tonumber(PETBANK_CURRENT_SELECT),0);
 	
 end
 
 --
 --
---²é¿´ÕäÊŞÏêÏ¸ĞÅÏ¢
+--²é¿´ äÊŞÏêÏ¸ĞÅÏ¢
 function  PetBankMain_Choose_Click()
 	if  -1<PETBANK_CURRENT_SELECT  and PETBANK_CURRENT_SELECT < PETBANK_MAX_COUNT then
 		if(IsWindowShow("TargetPet")) then
@@ -293,7 +293,7 @@ function  PetBankMain_Choose_Click()
 end
 
 
---¹Ø±ÕÕäÊŞÒøĞĞ½çÃæ
+--¹Ø±  äÊŞÒøĞĞ½çÃæ
 function PetBankMain_Close_Click()
 	 this:Hide()
 	 if(IsWindowShow("PetBankList")) then
@@ -339,10 +339,10 @@ function PetBankMain_List_Selected()
 		Pet : SetModel_PetBank(PETNUM);
 		PetBankMain_FakeObject : SetFakeObject( "My_PetBank" );
 		--PetBankMain_NeedLevel:SetText(TakeLevel .."#{ZSYH_120503_47}") --Ğ¯´øµÈ¼¶
-		PetBankMain_NeedLevel:SetText(strNeedLevelColor..TakeLevel.."#{ZSYH_120503_47}") --ZSYH_120503_18  ¿ÉĞ¯´ø
-		PetBankMain_Level:SetText("#{ZSYH_120503_48}"..Level)   --µÈ¼¶
+		PetBankMain_NeedLevel:SetText(strNeedLevelColor..TakeLevel.."#{ZSYH_120503_47}") --ZSYH_120503_18  ???
+		PetBankMain_Level:SetText("#{ZSYH_120503_48}"..Level)   --??
 	end
-	--	°ÑÒøĞĞ±³°üÊı¾İ¸üĞÂÁËµÄ²Ù×÷¸æËßÕäÊŞ±³°ülist
+	--	°ÑÒøĞĞ±³°üÊı¾İ¸üĞÂÁËµÄ²Ù×÷¸æËß äÊŞ±³°ülist
 	Pet : PetBank_PetListSelectChange( tonumber(PETBANK_CURRENT_SELECT),0);
 
 end
@@ -379,7 +379,7 @@ end
 
 
 
---´ò¿ªÕäÊŞÁĞ±í
+--´ò¿ª äÊŞÁĞ±í
 function PetBankMain_OpenBagList_Click()
 
 	if(IsWindowShow("PetBankList")) then

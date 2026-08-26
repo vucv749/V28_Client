@@ -13,10 +13,10 @@ local g_selidx		= -1
 local g_ItemID		= -1
 local g_Contrl		= false
 local MAX_OBJ_DISTANCE = 3.0
-local g_DefaultTxt = "Çë½«ÒªÊ¹ÓÃµÄµÀ¾ßÍÏ×§µ½Ç°ÃæµÄµÀ¾ß¿òÖĞ¡£"
+local g_DefaultTxt = "Thïnh s¡p sØa sØ døng Ğích ğÕo cø Ğà Du® Ğáo phía trß¾c Ğích ğÕo cø Khuông Trung."
 local g_Model1IsEnabel = 0
 local g_Model2IsEnabel = 0
---³¬¼¶ÕäÊŞ»¹Í¯ÌìÊé
+--³¬¼¶ äÊŞ»¹Í¯ÌìÊé
 local g_HuanTongCJTS = {30503016,30503017,30503018,30503019,30503020}
 --ÄÜ¹»·ÅÈë½çÃæÖĞµÄÎïÆ· ¿ªÊ¼
 local g_HuanTongMin1 = 30503011
@@ -26,7 +26,7 @@ local g_HuanTongMax2 = 30309500
 local g_HuanTongCD = 1000
 local g_HuanTongLastTime = 0
 --ÄÜ¹»·ÅÈë½çÃæÖĞµÄÎïÆ· ½áÊø
---¸÷¸öµÈ¼¶»¹Í¯µÄÕäÊŞËùĞèÒªµÄ½ğÇ®
+--¸÷¸öµÈ¼¶»¹Í¯µÄ äÊŞËùĞèÒªµÄ½ğÇ®
 local g_tbabaymoney  = {
 							[5]		= 5000,
 							[15]	= 6000,
@@ -93,8 +93,8 @@ function Pethuantong_PreLoad()
 	this : RegisterEvent( "NEW_DEBUGMESSAGE" )
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
-	this : RegisterEvent("QUICKUP_PET_SENDMSG")				--¶ş´ÎÈ·ÈÏ
-	this:RegisterEvent("BUY_ITEM")				--add:lby×¢²á¹ºÂòÉÌÆ·ÏûÏ¢£¬¸üĞÂ»¹Í¯½çÃæ
+	this : RegisterEvent("QUICKUP_PET_SENDMSG")				--????
+	this:RegisterEvent("BUY_ITEM")				--add:lby????????,??????
 end
 
 --****************************************
@@ -221,7 +221,7 @@ function Pethuantong_UiCommand(Param)
 end
 
 --*************************************************
---ÏÔÊ¾ÕäÊŞ»¹Í¯½çÃæ
+--ÏÔÊ¾ äÊŞ»¹Í¯½çÃæ
 --*************************************************
 function Pethuantong_Open()
 	g_HuanTongLastTime = 0
@@ -253,7 +253,7 @@ function Pethuantong_Open()
 end
 
 --*************************************************
---¹Ø±ÕÕäÊŞ»¹Í¯½çÃæ
+--¹Ø±  äÊŞ»¹Í¯½çÃæ
 --*************************************************
 function Pethuantong_Hide()
 	if (this : IsVisible() == false) then
@@ -272,7 +272,7 @@ function Pethuantong_Hide()
 	end
 	g_selidx = -1
 
-	--¹Ø±Õ¶ş´ÎÈ·ÈÏ½çÃæ
+	--¹Ø± ¶ş´ÎÈ·ÈÏ½çÃæ
 	PushEvent("CONVENIENT_BUY_CONFIRM_CLOSE");
 end
 
@@ -292,7 +292,7 @@ function Pethuantong_Do()
 		return 0
 	end
 	
-	--ÊÇ·ñÑ¡ÔñÕäÊŞ
+	--ÊÇ·ñÑ¡Ôñ äÊŞ
 	if (-1 == g_selidx) then
 		PushDebugMessage("#{HTQR_091010_5}")
 		return 0
@@ -304,7 +304,7 @@ function Pethuantong_Do()
 		return 0
 	end
 
-	--ÊÇ·ñÔÚ³öÕ½
+	--ÊÇ·ñÔÚ³ö ½
 	local petname,status = Pet:GetPetList_Appoint(g_selidx)
 	if (status == "on_fight") then
 		PushDebugMessage("#{ZSKJT_130428_23}")
@@ -313,7 +313,7 @@ function Pethuantong_Do()
 
 	--ÊÇ·ñ»Ã»¯
 	local gen = Pet:GetType(g_selidx)
-	if gen == nil or gen >= 100 then	--100ÒÔÉÏÎª»Ã»¯ÕäÊŞ
+	if gen == nil or gen >= 100 then	--100???????
 		PushDebugMessage("#{RXZS_090804_29}")
 		return 0
 	end
@@ -325,7 +325,7 @@ function Pethuantong_Do()
 		return 0
 	end
 
-	--ÊÇ·ñÓĞÕäÊŞ×°±¸
+	--ÊÇ·ñÓĞ äÊŞ×°±¸
 	if Pet:IsPetHaveEquip(g_selidx) == 1 then
 		PushDebugMessage("#{ZSZB_090211_18}")
 		return 0
@@ -356,7 +356,7 @@ function Pethuantong_Do()
 		end
 	end
 
-	if (-1 == g_ItemPos) then --Èç¹ûÃ»ÓĞÑ¡Ôñ²ÄÁÏ¾ÍÓÃÔª±¦¹ºÂòadd:lby2015
+	if (-1 == g_ItemPos) then --??????????????add:lby2015
 --		PushDebugMessage("ĞèÒª»¹Í¯¾íÖá¡£")
 		PetHuantong_PetYuanbaoBuyTSAsk()
 		return 0
@@ -425,7 +425,7 @@ function Pethuantong_Quick_check()
 		return 0
 	end
 
-	--ÊÇ·ñÑ¡ÔñÕäÊŞ
+	--ÊÇ·ñÑ¡Ôñ äÊŞ
 	if (-1 == g_selidx) then
 		PushDebugMessage("#{HTQR_091010_5}")
 		return 0
@@ -437,7 +437,7 @@ function Pethuantong_Quick_check()
 		return 0
 	end
 
-	--ÊÇ·ñÔÚ³öÕ½
+	--ÊÇ·ñÔÚ³ö ½
 	local petname,status = Pet:GetPetList_Appoint(g_selidx)
 	if (status == "on_fight") then
 		PushDebugMessage("#{ZSKJT_130428_23}")
@@ -446,7 +446,7 @@ function Pethuantong_Quick_check()
 
 	--ÊÇ·ñ»Ã»¯
 	local gen = Pet:GetType(g_selidx)
-	if gen == nil or gen >= 100 then	--100ÒÔÉÏÎª»Ã»¯ÕäÊŞ
+	if gen == nil or gen >= 100 then	--100???????
 		PushDebugMessage("#{RXZS_090804_29}")
 		return 0
 	end
@@ -458,7 +458,7 @@ function Pethuantong_Quick_check()
 		return 0
 	end
 
-	--ÊÇ·ñÓĞÕäÊŞ×°±¸
+	--ÊÇ·ñÓĞ äÊŞ×°±¸
 	if Pet:IsPetHaveEquip(g_selidx) == 1 then
 		PushDebugMessage("#{ZSZB_090211_18}")
 		return 0
@@ -488,10 +488,10 @@ function Pethuantong_Quick_Do()
 		local growrate = Pet : GetGrowRate(g_selidx);
 		local nGrowLevel = Pet : GetPetGrowLevel(g_selidx,tonumber(growrate));
 		local strTbl = {"#{ZSKJT_130513_1}","#{ZSKJT_130513_2}","#{ZSKJT_130513_3}","#{ZSKJT_130513_4}","#{ZSKJT_130513_5}"}
-		 --{"ÆÕÍ¨","ÓÅĞã","½Ü³ö","×¿Ô½","ÍêÃÀ"};
+		 --{"Æ Í¨","ÓÅĞã","½Ü³ö","×¿Ô½","ÍêÃÀ"};
 		local strgrow
 		if(nGrowLevel >= 0) then
-			nGrowLevel = nGrowLevel + 1;	--cÀïÊÇ´Ó0¿ªÊ¼µÄÃ¶¾Ù
+			nGrowLevel = nGrowLevel + 1;	--c???0?????
 			if(strTbl[nGrowLevel]) then
 				strgrow = strTbl[nGrowLevel]..growrate
 			end
@@ -559,7 +559,7 @@ end
 
 
 --*************************************************
---Ñ¡Ôñ²»Í¬ÕäÊŞÊ±£¬ÉèÖÃ²»Í¬µÄÕäÊŞÄ£ĞÍ
+--Ñ¡Ôñ²»Í¬ äÊŞÊ±£¬ÉèÖÃ²»Í¬µÄ äÊŞÄ£ĞÍ
 --*************************************************
 function Pethuantong_Selected(selidx)
 	local nSeletedIndex = tonumber(selidx)
@@ -571,7 +571,7 @@ function Pethuantong_Selected(selidx)
 		return
 	end
 	
-	--ÕäÊŞÒÑ±»ÆäËü½çÃæÑ¡ÖĞ
+	-- äÊŞÒÑ±»ÆäËü½çÃæÑ¡ÖĞ
 	if (Pet:GetPetLocation(nSeletedIndex) ~= -1) then
 		return
 	end
@@ -613,7 +613,7 @@ function Pethuantong_Selected(selidx)
 end
 
 --*************************************************
---ÕäÊŞ»¹Í¯»¨·ÑµÄ½ğÇ®
+-- äÊŞ»¹Í¯»¨·ÑµÄ½ğÇ®
 --*************************************************
 function Pethuantong_GetHuanTongCostMoney(petlevel, itemId)
 
@@ -626,10 +626,10 @@ function Pethuantong_GetHuanTongCostMoney(petlevel, itemId)
 	end
 
 	local costMoney = g_tbabaymoney[petlevel]
-	--ÖÕ¼¶»¹Í¯¾íÖáÊÕ·Ñ½µÖÁ90%
+	--Ö ¼¶»¹Í¯¾íÖáÊ ·Ñ½µÖÁ90%
 	if 	   (itemId == 30503011 or
 			itemId == 30503012) then
-	--ÕäÊŞ»¹Í¯¾íÖá/¸ß¼¶ÕäÊŞ»¹Í¯¾íÖá
+	-- äÊŞ»¹Í¯¾íÖá/¸ß¼¶ äÊŞ»¹Í¯¾íÖá
 	elseif (itemId == 30503016 or
 			itemId == 30503017 or
 			itemId == 30503018 or
@@ -740,7 +740,7 @@ function Pethuantong_Update( pos_packet )
 		return
 	end
 
-	--¸üĞÂÕäÊŞ»¹Í¯²ÄÁÏ½çÃæ
+	--¸üĞÂ äÊŞ»¹Í¯²ÄÁÏ½çÃæ
 	local ItemID = PlayerPackage : GetItemTableIndex( BagPos )
 	if ( ItemID <= 0) then
 		PushDebugMessage("#{GMActionSystem_Item_CantUseInPetSkillStudy}")
@@ -760,7 +760,7 @@ function Pethuantong_Update( pos_packet )
 	LifeAbility : Lock_Packet_Item( BagPos, 1 )
 	g_ItemPos = BagPos
 
-	--¸üĞÂÕäÊŞ»¹Í¯µÄÕäÊŞ½çÃæ
+	--¸üĞÂ äÊŞ»¹Í¯µÄ äÊŞ½çÃæ
 	local theAction = EnumAction( BagPos, "packageitem" )
 	if (theAction : GetID() == 0) then
 		return
@@ -768,7 +768,7 @@ function Pethuantong_Update( pos_packet )
 
 	Pethuantong_Object : SetActionItem( theAction : GetID() )
 
-	--¸üĞÂÕäÊŞ»¹Í¯ĞèÒª»¨·ÑµÄ½ğÇ®
+	--¸üĞÂ äÊŞ»¹Í¯ĞèÒª»¨·ÑµÄ½ğÇ®
 	if (-1 ~= g_selidx) then
 		local petlevel = Pet : GetTakeLevel(g_selidx)
 		local nCostMoney = Pethuantong_GetHuanTongCostMoney(petlevel, ItemID)
@@ -779,11 +779,11 @@ function Pethuantong_Update( pos_packet )
 end
 
 --*************************************************
---¹Ø±Õ½çÃæ
+--¹Ø± ½çÃæ
 --*************************************************
 function Pethuantong_Frame_OnHiden()
 
-	--¹Ø±Õ¶ş´ÎÈ·ÈÏ½çÃæ
+	--¹Ø± ¶ş´ÎÈ·ÈÏ½çÃæ
 	PushEvent("CONVENIENT_BUY_CONFIRM_CLOSE");
 	Pethuantong_Hide()
 	Pethuantong_Clear(0)
@@ -791,7 +791,7 @@ function Pethuantong_Frame_OnHiden()
 end
 
 --*************************************************
---Ïò×óĞı×ªÕäÊŞ
+--Ïò×óĞı×ª äÊŞ
 --*************************************************
 function Pethuantong_Modle_TurnLeft(start)
 	--Ïò×óĞı×ª¿ªÊ¼
@@ -804,7 +804,7 @@ function Pethuantong_Modle_TurnLeft(start)
 end
 
 --*************************************************
---ÏòÓÒĞı×ªÕäÊŞ
+--ÏòÓÒĞı×ª äÊŞ
 --*************************************************
 function Pethuantong_Modle_TurnRight(start)
 	--ÏòÓÒĞı×ª¿ªÊ¼
@@ -830,7 +830,7 @@ end
 
 function Pethuantong_DisableModel()
 	if (nil ~= g_selidx and g_selidx ~= -1 and nil ~= g_ItemPos and g_ItemPos ~= -1) then
-		--Èç¹û²ÄÁÏÊÇ³¬¼¶ÕäÊŞ»¹Í¯ÌìÊé
+		--Èç¹û²ÄÁÏÊÇ³¬¼¶ äÊŞ»¹Í¯ÌìÊé
 		local ItemID = PlayerPackage : GetItemTableIndex( g_ItemPos )
 		if (ItemID == 30503017 or ItemID == 30503018 or
 			ItemID == 30503019 or ItemID == 30503020) then
@@ -868,12 +868,12 @@ function Pethuantong_Frame_On_ResetPos()
 end
 
 function Pethuantong_Pet_Attr_Update()
-	Pethuantong_Zizhi_Text1:SetText("#{ZSHTYH_150615_1}")--³É³¤ÂÊ
-	Pethuantong_Zizhi_Text2:SetText("#{ZSHTYH_150615_8}")--Á¦Á¿×ÊÖÊ
-	Pethuantong_Zizhi_Text3:SetText("#{ZSHTYH_150615_9}")--ÁéÆø×ÊÖÊ
-	Pethuantong_Zizhi_Text4:SetText("#{ZSHTYH_150615_10}")--ÌåÁ¦×ÊÖÊ
-	Pethuantong_Zizhi_Text5:SetText("#{ZSHTYH_150615_11}")--¶¨Á¦×ÊÖÊ
-	Pethuantong_Zizhi_Text6:SetText("#{ZSHTYH_150615_12}")--Éí·¨×ÊÖÊ
+	Pethuantong_Zizhi_Text1:SetText("#{ZSHTYH_150615_1}")--???
+	Pethuantong_Zizhi_Text2:SetText("#{ZSHTYH_150615_8}")--????
+	Pethuantong_Zizhi_Text3:SetText("#{ZSHTYH_150615_9}")--????
+	Pethuantong_Zizhi_Text4:SetText("#{ZSHTYH_150615_10}")--????
+	Pethuantong_Zizhi_Text5:SetText("#{ZSHTYH_150615_11}")--????
+	Pethuantong_Zizhi_Text6:SetText("#{ZSHTYH_150615_12}")--????
 	if g_selidx == -1 then
 		Pethuantong_Zizhi_Text1_1:SetText("")
 		Pethuantong_Zizhi_Text1_1:SetToolTip("#{INTERFACE_XML_986}")
@@ -890,7 +890,7 @@ function Pethuantong_Pet_Attr_Update()
 		local nGrowLevel = Pet : GetPetGrowLevel(g_selidx,tonumber(strName));
 		local strTbl = {"#{ZSHTYH_150615_3}","#{ZSHTYH_150615_4}","#{ZSHTYH_150615_5}","#{ZSHTYH_150615_6}","#{ZSHTYH_150615_7}"};
 		if(nGrowLevel >= 0) then
-			nGrowLevel = nGrowLevel + 1;	--cÀïÊÇ´Ó0¿ªÊ¼µÄÃ¶¾Ù
+			nGrowLevel = nGrowLevel + 1;	--c???0?????
 			local nGrowRate = Pet : GetGrowRate(g_selidx);
 			if(strTbl[nGrowLevel]) then
 				Pethuantong_Zizhi_Text1_1 : SetText("#G"..strTbl[nGrowLevel]..nGrowRate)
@@ -1009,7 +1009,7 @@ function Pethuantong_Pet_Attr_Update()
 	end
 end
 
-function PetHuantong_YBPay_Clicked() --add:lby2015Ôö¼ÓÔª±¦È·ÈÏ¹ºÂò
+function PetHuantong_YBPay_Clicked() --add:lby2015????????
 
 	local check  = tonumber(Pet:GetYuanbaoBuyState(0));
 	

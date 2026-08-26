@@ -175,11 +175,11 @@ local g_SBHotPoint = {
 --=========
 function ZhouHuoYue_PreLoad()
 
-	this:RegisterEvent("ZHOUHUOYUE_UPDATE")--打开or刷新界面
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--进场景关闭界面
+	this:RegisterEvent("ZHOUHUOYUE_UPDATE")--??or????
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
 	this:RegisterEvent("ADJEST_UI_POS")
-	this:RegisterEvent("YUEKA_UPDATE")--打开or刷新界面
+	this:RegisterEvent("YUEKA_UPDATE")--??or????
 	this:RegisterEvent("PLAYER_LEAVE_WORLD")
 
 end
@@ -296,7 +296,7 @@ function ZhouHuoYue_OnEvent(event)
 		local nType = tonumber( arg1 )
 		local nAwardProcess = tonumber( arg2 )
 
-		-- 这个每日活跃点数也同步到了封魂录界面，如果这里参数要变，需要同步修改封魂录的界面逻辑 PetSoul_FengHunLu
+		-- 犫个每葼活跃点数也同步到了封魂录界面，如果犫里参数要变，需要同步修改封魂录的界面逻辑 PetSoul_FengHunLu
 		local nHuoYueZhiDay = tonumber( arg4 )
 		local nPlayerLevel = Player:GetLevel()
 		if nType == 0 then
@@ -357,7 +357,7 @@ function ZhouHuoYue_OnEvent(event)
 		end
 		
 		
-		-- 这个每日活跃点数也同步到了封魂录界面，如果这里参数要变，需要同步修改封魂录的界面逻辑 PetSoul_FengHunLu
+		-- 犫个每葼活跃点数也同步到了封魂录界面，如果犫里参数要变，需要同步修改封魂录的界面逻辑 PetSoul_FengHunLu
 		local nHuoYueZhiDay = tonumber( arg4 )
 		g_CurHuoYueZhiDay = nHuoYueZhiDay
 		local nPlayerLevel = Player:GetLevel()
@@ -647,7 +647,7 @@ function  ZhouHuoYue_ZhanLing_UpdataTop(page, num, nAwardProcess, nRMBAwardProce
 	
 	
 	for i = 1, table.getn(g_ZhouHuoYue_ZhanLingPregerssText) do
-		g_ZhouHuoYue_ZhanLingPregerssText[i]:SetText("#c6a3906"..(i+(page-1)*g_PerpageProgressNunMax).."级")
+		g_ZhouHuoYue_ZhanLingPregerssText[i]:SetText("#c6a3906"..(i+(page-1)*g_PerpageProgressNunMax).."C")
 	end
 	
 	for i = 1, table.getn(g_ZhouHuoYue_ZhanLingPregerssTextNum) do
@@ -702,7 +702,7 @@ function ZhouHuoYue_UpdataBottom(index, nPlayerLevel)
 	local curDay = tonumber(DataPool:GetServerDayTime());
 	local times = 1
 	if curDay >= g_StartTime and curDay <= g_EndTime then
-		--times = 2 --周活跃国庆这次不是活跃值翻倍，是奖励翻倍了 所以这地方注销掉了
+		--times = 2 --周活跃国庆犫次不是活跃值翻倍，是奖励翻倍了 所以犫地方注销掉了
 	end
 	
 	if index == 0 then
@@ -798,7 +798,7 @@ function ZhouHuoYue_UpdataBottom(index, nPlayerLevel)
 			end
 		end
 
-		g_ZhouHuoYuePageTips[6]:Hide()--全部的红点
+		g_ZhouHuoYuePageTips[6]:Hide()--?????
 		local mark = 0
 		for i = 1, 5 do
 			if g_isShowTips[i] == 1 then
@@ -943,9 +943,9 @@ function ZhouHuoYue_GotoClick(index)
 	local nIndex, nBigClass, nSmallClass, nSmallClassIndex, strName, strDesc, strTubiao, nNeedTimes, nHuoYueZhi, nGotoType, nParam1, nParam2, nParam3, nParam4, nLevel = Lua_GetZhouHuoYueInfo(index-1)
 	-- 1需要特殊处理 因为是打开界面
 	if nGotoType == 1 then
-		if nSmallClass == 8 then -- 打开元宝商店
+		if nSmallClass == 8 then -- ??????
 			ToggleYuanbaoShop()
-		elseif nSmallClass == 9 then -- 打开绑定元宝商店
+		elseif nSmallClass == 9 then -- ????????
 			PushEvent("OPEN_BINDYUANBAOSHOP")
 		end
 	elseif nGotoType == 2 then

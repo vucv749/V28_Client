@@ -36,7 +36,7 @@ function FuQi_Title_OnEvent(event)
 		FuQi_Title_XiuGai_Frame:Hide();
 		
 		FuQi_Title_ZidingYi_PlayerName:SetText(FuQiName)
-		FuQi_Title_ZidingYi_info:SetText( "µÄ" )
+		FuQi_Title_ZidingYi_info:SetText( "Ğích" )
 		FuQi_Title_OK:SetText("#{FQCH_20230330_29}")
 		FuQi_Title_Text:SetText("#{FQCH_20230330_54}")
 		FuQi_Title_BeginCareObject(FuQi_Title_Target)
@@ -51,7 +51,7 @@ function FuQi_Title_OnEvent(event)
 		FuQi_Title_XiuGai_Text:SetText(FuQiName)
 		FuQi_Title_XiuGai_Frame:Show();
 		FuQi_Title_ZiDingYi_Frame:Hide();
-		FuQi_Title_XiuGai_Info:SetText( "µÄ" )
+		FuQi_Title_XiuGai_Info:SetText( "Ğích" )
 		FuQi_Title_Text:SetText("#{FQCH_20230330_27}")
 		FuQi_Title_OK:SetText("#{FQCH_20230330_29}")
 		FuQi_Title_BeginCareObject(FuQi_Title_Target)
@@ -77,20 +77,20 @@ function FuQi_Title_Accept()
 	if EVENT_TYPE == 1 then
 		local msg = FFuQi_Title_ZidingYi_Input:GetText();
 		if msg == "" then
-			AxTrace(0,0,"³ÆºÅ´íÁË1")
-			PushDebugMessage( "³ÆºÅÊäÈë´íÎó" )
+			AxTrace(0,0,"Danh hi®u sai l¥m r°i 1")
+			PushDebugMessage( "Danh hi®u ğßa vào sai l¥m" )
 			return
 		end
 
 		local	buf	= FuQi_Title_ZidingYi_PlayerName:GetText()..FuQi_Title_ZidingYi_info:GetText()..FFuQi_Title_ZidingYi_Input:GetText()
 		if string.len( FFuQi_Title_ZidingYi_Input:GetText() ) > 8 then
-			AxTrace(0,0,"³ÆºÅ´íÁË9")
+			AxTrace(0,0,"Danh hi®u sai l¥m r°i 9")
 			PushDebugMessage( "#{FQCH_20230330_31}" )
 			return
 		end
 
 		if Player:CheckSwearTitle(buf) == 0 then
-			PushDebugMessage( "³ÆºÅÊäÈë´íÎó" )
+			PushDebugMessage( "Danh hi®u ğßa vào sai l¥m" )
 			return
 		end
 			
@@ -101,20 +101,20 @@ function FuQi_Title_Accept()
 	if EVENT_TYPE == 2 then
 		local msg = FuQi_Title_XiuGai_Input:GetText();
 		if msg == "" then
-			AxTrace(0,0,"³ÆºÅ´íÁË4")
-			PushDebugMessage( "³ÆºÅÊäÈë´íÎó" )
+			AxTrace(0,0,"Danh hi®u sai l¥m r°i 4")
+			PushDebugMessage( "Danh hi®u ğßa vào sai l¥m" )
 			return
 		end
 		local	buf	= FuQi_Title_XiuGai_Text:GetText()..FuQi_Title_XiuGai_Info:GetText()..FuQi_Title_XiuGai_Input:GetText()
 
 		if string.len( FuQi_Title_XiuGai_Input:GetText() ) > 8 then
-			AxTrace(0,0,"³ÆºÅ´íÁË9£º"..buf)
+			AxTrace(0,0,"Danh hi®u sai l¥m r°i 9:"..buf)
 			PushDebugMessage( "#{FQCH_20230330_31}" )
 			return
 		end
 
 		if Player:CheckSwearTitle(buf) == 0 then
-				PushDebugMessage( "³ÆºÅÊäÈë´íÎó" )
+				PushDebugMessage( "Danh hi®u ğßa vào sai l¥m" )
 				return
 		end
 

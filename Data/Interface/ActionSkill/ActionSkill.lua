@@ -25,16 +25,16 @@ local MenPai_MainAttr = {
 [4] = {image = "set:UIIcons image:Poison_Repellency_Normal", Tooltip = "MPZSX_20071221_14" } };
 
 local MenPai_UsedAttr = {
-[0] = {image = "set:Menpaishuxing image:Shuxing_Dark", Tooltip = "MPZSX_20071221_13", },			--ÉÙÁÖ
-[1] = {image = "set:Menpaishuxing image:Shuxing_Fire", Tooltip = "MPZSX_20071221_12",},				--Ã÷½Ì
-[2] = {image = "set:Menpaishuxing image:Shuxing_PoisonFire", Tooltip = "MPZSX_20071221_15",},		--Ø¤°ï
-[3] = {image = "set:Menpaishuxing image:Shuxing_DarkIce", Tooltip = "MPZSX_20071221_16",},			--Îäµ±
-[4] = {image = "set:Menpaishuxing image:Shuxing_IceDark", Tooltip = "MPZSX_20071221_17",},			--¶ëáÒ
-[5] = {image = "set:Menpaishuxing image:Shuxing_Poison", Tooltip = "MPZSX_20071221_14",},			--ÐÇËÞ
-[6] = {image = "set:Menpaishuxing image:Shuxing_FIPD", Tooltip = "MPZSX_20071221_18",},				--ÌìÁú
-[7] = {image = "set:Menpaishuxing image:Shuxing_Ice", Tooltip = "MPZSX_20071221_11",},				--ÌìÉ½
-[8] = {image = "set:Menpaishuxing image:Shuxing_FirePoison", Tooltip = "MPZSX_20071221_19",},		--åÐÒ£
-[9] = {image = "", Tooltip = "ÎÞÃÅÅÉ",},															--ÎÞÃÅÅÉ
+[0] = {image = "set:Menpaishuxing image:Shuxing_Dark", Tooltip = "MPZSX_20071221_13", },			--??
+[1] = {image = "set:Menpaishuxing image:Shuxing_Fire", Tooltip = "MPZSX_20071221_12",},				--??
+[2] = {image = "set:Menpaishuxing image:Shuxing_PoisonFire", Tooltip = "MPZSX_20071221_15",},		--??
+[3] = {image = "set:Menpaishuxing image:Shuxing_DarkIce", Tooltip = "MPZSX_20071221_16",},			--??
+[4] = {image = "set:Menpaishuxing image:Shuxing_IceDark", Tooltip = "MPZSX_20071221_17",},			--??
+[5] = {image = "set:Menpaishuxing image:Shuxing_Poison", Tooltip = "MPZSX_20071221_14",},			--??
+[6] = {image = "set:Menpaishuxing image:Shuxing_FIPD", Tooltip = "MPZSX_20071221_18",},				--??
+[7] = {image = "set:Menpaishuxing image:Shuxing_Ice", Tooltip = "MPZSX_20071221_11",},				--??
+[8] = {image = "set:Menpaishuxing image:Shuxing_FirePoison", Tooltip = "MPZSX_20071221_19",},		--??
+[9] = {image = "", Tooltip = "Tñ do",},															--???
 [10]= {image = "set:CommonFrame38 image:Shuxing_ManTuoDarkPoison", Tooltip = "MPZSX_20071221_20", },			--mtsz
 };
 
@@ -48,7 +48,7 @@ local g_actionskill_longrangeskill = {
 	_end = 3269,
 }
 
---ActionskillStudyºÍ×Ô¶¯Õ½¶·ÒªÍ¬²½ÐÞ¸Ä
+--ActionskillStudyºÍ×Ô¶¯ ½¶·ÒªÍ¬²½ÐÞ¸Ä
 local g_Actionskill_sectskill = 
 {
 	787,
@@ -232,7 +232,7 @@ function ActionSkill_Update()
 	elseif(Current_Skill ~= -1 and SKILL_BUTTONS[Current_Skill] ~= -1) then
 		ActionSkill_Update_Cliecked(Current_Skill,2);
 	end
-	ActionSkill_UpdateMenPaiText();		--¸üÐÂÏÔÊ¾ÎÄ×Ö£¬Èç¹ûÍæ¼Ò¸Ä±äÁËÃÅÅÉ
+	ActionSkill_UpdateMenPaiText();		--??????,?????????
 end
 
 function ActionSkill_Update_Cliecked(nIndex, Actiontype)
@@ -261,12 +261,12 @@ function ActionSkill_Update_Cliecked(nIndex, Actiontype)
 	 	strName2= Player:GetXinfaInfo(nXinfaId,"level");
 	 	Current_Xinfa_Level = strName2;
 
-		ActionSkill_Name : SetText( strName .."\n" .. "ÐÄ·¨µÈ¼¶:" .. strName2);
+		ActionSkill_Name : SetText( strName .."\n" .. "Tâm pháp c¤p b§c:" .. strName2);
 		ActionSkill_Name : SetProperty("TextColours","tl:FFEFEFEF tr:FFEFEFEF bl:FFEFEFEF br:FFEFEFEF");
 		ActionSkill_Name : SetProperty("VertFormatting","VertCentred")
 		ActionSkill_XinfaTarget : Enable();
 --		XINFA_LEVEL[nIndex] : SetText(tostring(strName2));
-		AxTrace(0,1,"XINFA_LEVEL["..nIndex.."] µÈ¼¶="..strName2);
+		AxTrace(0,1,"XINFA_LEVEL["..nIndex.."] c¤p b§c ="..strName2);
 --		AxTrace(0,1,"GET XINFA_LEVEL["..nIndex.."] µÈ¼¶="..XINFA_LEVEL[nIndex]:GetText());
 
 	 	strName = Player:GetXinfaInfo(nXinfaId,"explain");
@@ -430,7 +430,7 @@ function ActionSkill_Update_Cliecked(nIndex, Actiontype)
 		 	ActionSkill_ZhaoshiTarget : Disable();
 		end
 
-	 	ActionSkill_Name : SetText( strName .."\n" .. "Å­Æø¼¼ÄÜ");
+	 	ActionSkill_Name : SetText( strName .."\n" .. "TÑc gi§n kÛ nång");
 
 	 	strName = Player:GetSkillInfo(nNuqiId,"explain");
 	 	strName2 = Player:GetSkillInfo(nNuqiId,"skilldata");
@@ -529,10 +529,10 @@ function ActionSkill_SetTabColor()
 							};
 
 	local TAB_TEXT = {
-		[0] = "ÆÕÍ¨",
-		"ÃÅÅÉ",
-		"Éú»î",
-		"ÃË»á",
+		[0] = "S½ C¤p",
+		"Môn phái",
+		"Cuµc s¯ng",
+		"Minh Hµi",
 	};
 
 	tab[0]:SetText(noselColor..TAB_TEXT[0]);
@@ -552,11 +552,11 @@ function ActionSkill_ClearStaticImage()
 end
 
 function ActionSkill_UpdateMenPaiText()
-	local menpaiID = Player : GetData("MEMPAI");		--»ñÈ¡Íæ¼ÒÃÅÅÉID
+	local menpaiID = Player : GetData("MEMPAI");		--??????ID
 	if menpaiID ~= nil and menpaiID >=0 and menpaiID <=10 then
 		if (menpaiID == 9) then
 			ActionSkill_ClearStaticImage();
-			ActionSkill_MenPai_Attr_Intro : SetText(""); --Ò»°ãÀ´ËµÕâÀï²»»á±»µ÷µ½
+			ActionSkill_MenPai_Attr_Intro : SetText(""); --???????????
 			return;
 		end
 		local	str = GetDictionaryString( "MPZSX_20071221_0" .. (menpaiID +1) );

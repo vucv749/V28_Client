@@ -1,11 +1,11 @@
-local	gOpType						= 0; --²Ù×÷ÀàÐÍ
-local	gExp							= 0; --×î´ó¾­Ñé
-local	gAssExp						= 0; --¿ÉÒÔ¶Ò»»µÄ×î´ó¾­Ñé
-local	gGBValue					= 0; --×î´óÉÆ¶ñÖµ
-local	gAssGBValue				= 0; --¶Ò»»µÄ×î´óÉÆ¶ñÖµ
-local	gGPValue					= 0; --×î´ó°ïÅÉ¹±Ï×¶È
-local	gAssGPValue				= 0; --¶Ò»»µÄ×î´ó°ïÅÉ¹±Ï×¶È
-local	gMasterLevel			= 0; --Ê¦¸µµÈ¼¶
+local	gOpType						= 0; --????
+local	gExp							= 0; --????
+local	gAssExp						= 0; --?????????
+local	gGBValue					= 0; --?????
+local	gAssGBValue				= 0; --????????
+local	gGPValue					= 0; --???????
+local	gAssGPValue				= 0; --??????????
+local	gMasterLevel			= 0; --????
 local	gBasePoint				= 0;
 local	objCared					= -1;
 local	MAX_OBJ_DISTANCE	= 3.0;
@@ -31,7 +31,7 @@ function ExpAssign_OnEvent(event)
 		this:Show();
 		objCared = DataPool:GetCurDialogNpcId();
 		if objCared == -1 then
-				PushDebugMessage("server´«¹ýÀ´µÄÊý¾ÝÓÐÎÊÌâ¡£");
+				PushDebugMessage("Dæ li®u máy chü có v¤n ð«");
 				return;
 		end
 		this:CareObject(objCared, 1, "ExpAssign");
@@ -40,7 +40,7 @@ function ExpAssign_OnEvent(event)
 			return
 		end
 		
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			--È¡Ïû¹ØÐÄ
 			this:CareObject(objCared, 0, "ExpAssign");
@@ -69,15 +69,15 @@ function ExpAssign_Update()
 	
 	--ÉÆ¶ñÖµ¶Ò»»
 	if gOpType == 1 then
-		ExpAssign_Info2:SetText("Ã¿´Î×î´óÄÜ¶Ò»»µÄÉÆ¶ñÖµÎª5000µã¡£");
+		ExpAssign_Info2:SetText("M²i l¥n l¾n nh¤t Nång ð±i Ðích thi®n ác Tr¸ Vi 5000Ði¬m.");
 		if gMasterLevel == 1 then
-			gBasePoint = 30; 		--1¼¶Ê¦¸µµÈ¼¶
+			gBasePoint = 30; 		--1?????
 		elseif gMasterLevel == 2 then
-			gBasePoint = 35;		--2¼¶Ê¦¸µµÈ¼¶
+			gBasePoint = 35;		--2?????
 		elseif gMasterLevel == 3 then
-			gBasePoint = 50;		--3¼¶Ê¦¸µµÈ¼¶
+			gBasePoint = 50;		--3?????
 		elseif gMasterLevel == 4 then
-			gBasePoint = 70;		--4¼¶Ê¦¸µµÈ¼¶
+			gBasePoint = 70;		--4?????
 		end
 		
 		if(gBasePoint ==0)then
@@ -103,20 +103,20 @@ function ExpAssign_Update()
 				end
 			end
 		end
-		str0	= "ÄúÏÖÔÚ¿ÉÒÔÌáÈ¡µÄ¾­ÑéÎª"..tostring( gExp )..",ÄúÓµÓÐµÄÉÆ¶ñÖµÎª"..tostring( gGBValue )
-		str1	= "ÐèÒªÉÆ¶ñµã:0"
+		str0	= "Nhçm hi®n tÕi có th¬ l¤y ra Ðích kinh nghi®m Vi"..tostring( gExp )..", Nhçm có ðßþc Ðích thi®n ác Tr¸ Vi"..tostring( gGBValue )
+		str1	= "C¥n thi®n ác Ði¬m: 0"
 
 	--°ïÅÉ¹±Ï×¶È¶Ò»»
 	elseif gOpType == 2 then
-		ExpAssign_Info2:SetText("Ã¿ÌìÓÃ°ï¹±×î¶à¿ÉÁìÈ¡µÄ¾­ÑéÎª12Íòµã¡£");
+		ExpAssign_Info2:SetText("M²i ngày Døng Bang C¯ng nhi«u nh¤t Khä lînh Ðích kinh nghi®m Vi 12M£c Ði¬m.");
 		if gMasterLevel == 1 then
-			gBasePoint = 250;		--1¼¶Ê¦¸µµÈ¼¶
+			gBasePoint = 250;		--1?????
 		elseif gMasterLevel == 2 then
-			gBasePoint = 300;		--2¼¶Ê¦¸µµÈ¼¶
+			gBasePoint = 300;		--2?????
 		elseif gMasterLevel == 3 then
-			gBasePoint = 400;		--3¼¶Ê¦¸µµÈ¼¶
+			gBasePoint = 400;		--3?????
 		elseif gMasterLevel == 4 then
-			gBasePoint = 600;		--4¼¶Ê¦¸µµÈ¼¶
+			gBasePoint = 600;		--4?????
 		end
 		gAssGPValue		= gGPValue
 		gAssExp				= gGPValue * gBasePoint
@@ -124,8 +124,8 @@ function ExpAssign_Update()
 			gAssExp			= gExp
 			gAssGBValue	= math.ceil( gAssExp / gBasePoint )
 		end
-		str0	= "ÄúÏÖÔÚ¿ÉÒÔÌáÈ¡µÄ¾­ÑéÎª"..tostring( gExp )..",ÄúÓµÓÐµÄ°ïÅÉ¹±Ï×¶ÈÎª"..tostring( gGPValue )
-		str1	= "ÐèÒª°ïÅÉ¹±Ï×¶È:0"
+		str0	= "Nhçm hi®n tÕi có th¬ l¤y ra Ðích kinh nghi®m Vi"..tostring( gExp )..", Nhçm có ðßþc Ðích bang phái c¯ng hiªn Ðµ Vi"..tostring( gGPValue )
+		str1	= "C¥n bang phái c¯ng hiªn Ðµ: 0"
 
 	else
 		return
@@ -148,10 +148,10 @@ function ExpAssign_Button_Max_Click()
 	local	str
 	--ÉÆ¶ñÖµ¶Ò»»
 	if gOpType == 1 then
-		str	= "ÐèÒªÉÆ¶ñµã:"..tostring(gAssGBValue)
+		str	= "C¥n thi®n ác Ði¬m:"..tostring(gAssGBValue)
 	--°ïÅÉ¹±Ï×¶È¶Ò»»
 	elseif gOpType == 2 then
-		str	= "ÐèÒª°ïÅÉ¹±Ï×¶È:"..tostring(gAssGPValue)
+		str	= "C¥n bang phái c¯ng hiªn Ðµ:"..tostring(gAssGPValue)
 	else
 		return
 	end
@@ -179,10 +179,10 @@ function ExpAssign_Value_Change()
 	end
 	--ÉÆ¶ñÖµ¶Ò»»
 	if gOpType == 1 then
-		str	= "ÐèÒªÉÆ¶ñµã:"..tostring( math.ceil( nCurExp / gBasePoint ) )
+		str	= "C¥n thi®n ác Ði¬m:"..tostring( math.ceil( nCurExp / gBasePoint ) )
 	--°ïÅÉ¹±Ï×¶È¶Ò»»
 	elseif gOpType == 2 then
-		str	= "ÐèÒª°ïÅÉ¹±Ï×¶È:"..tostring( math.ceil( nCurExp / gBasePoint ) )
+		str	= "C¥n bang phái c¯ng hiªn Ðµ:"..tostring( math.ceil( nCurExp / gBasePoint ) )
 	else
 		return
 	end

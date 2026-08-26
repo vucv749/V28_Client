@@ -8,16 +8,16 @@ local g_OB_Pad_UI = {}
 local g_OB_Pad_JoinUI = {}
 
 local g_OB_Pad_Def = {
-    teammax = 2,                -- 队伍最大数量
-    membermax = 6,              -- 成员最大数量
-    skillmax = 9,               -- 技能最大数量
-    buffmax = 9,                -- Buff最大数量
-    hpflash = 20,               -- 血条闪烁条件
+    teammax = 2,                -- ??????
+    membermax = 6,              -- ??????
+    skillmax = 9,               -- ??????
+    buffmax = 9,                -- Buff????
+    hpflash = 20,               -- ??????
 
-    result_invalid = -1,        -- 结果
-    result_equal = 0,           -- 平局
-    result_teamfst = 1,         -- A队
-    result_teamsec = 2,         -- B队
+    result_invalid = -1,        -- ??
+    result_equal = 0,           -- ??
+    result_teamfst = 1,         -- A?
+    result_teamsec = 2,         -- B?
 }
 local g_OB_Pad_Type = {
     zbs = 1,
@@ -27,17 +27,17 @@ local g_OB_Pad_ScnID = {
     607,
 }
 local g_OB_Pad_MP = {
-    [0]  ={name="#{WCBZ_180128_59}",color="#cff6600"},    --少林
-    [1]  ={name="#{WCBZ_180128_65}",color="#cffcc00"},    --明教
-    [2]  ={name="#{WCBZ_180128_67}",color="#c00ff00"},    --丐帮
-    [3]  ={name="#{WCBZ_180128_61}",color="#c0000ff"},    --武当
-    [4]  ={name="#{WCBZ_180128_68}",color="#cff99cc"},    --峨嵋
-    [5]  ={name="#{WCBZ_180128_66}",color="#c007700"},    --星宿
-    [6]  ={name="#{WCBZ_180128_60}",color="#cffff00"},    --天龙
-    [7]  ={name="#{WCBZ_180128_63}",color="#cffffff"},    --天山
-    [8]  ={name="#{WCBZ_180128_64}",color="#c7700ff"},    --逍遥
-    [9]  ={name="#{WCBZ_180128_57}",color="#c999999"},    --无门派
-    [10] ={name="#{WCBZ_180128_62}",color="#cffffb3"},    --曼陀
+    [0]  ={name="#{WCBZ_180128_59}",color="#cff6600"},    --??
+    [1]  ={name="#{WCBZ_180128_65}",color="#cffcc00"},    --??
+    [2]  ={name="#{WCBZ_180128_67}",color="#c00ff00"},    --??
+    [3]  ={name="#{WCBZ_180128_61}",color="#c0000ff"},    --??
+    [4]  ={name="#{WCBZ_180128_68}",color="#cff99cc"},    --??
+    [5]  ={name="#{WCBZ_180128_66}",color="#c007700"},    --??
+    [6]  ={name="#{WCBZ_180128_60}",color="#cffff00"},    --??
+    [7]  ={name="#{WCBZ_180128_63}",color="#cffffff"},    --??
+    [8]  ={name="#{WCBZ_180128_64}",color="#c7700ff"},    --??
+    [9]  ={name="#{WCBZ_180128_57}",color="#c999999"},    --???
+    [10] ={name="#{WCBZ_180128_62}",color="#cffffb3"},    --??
 }
 
 function OB_Pad_PreLoad()
@@ -383,14 +383,14 @@ function OB_Pad_MemberShow_Common()
             end
         end
 
-        -- 对需要的区域进行展示
+        -- 对需要的区域进行牴示
         local bgui = g_OB_Pad_UI.player[i]
         if bgui ~= nil then
             bgui.pk:Show()
         end
     end
 
-    -- 待上阵的
+    -- 待上狊的
     for i=1, g_OB_Pad_Def.teammax do
         local teamui = g_OB_Pad_JoinUI[i]
         if teamui == nil then
@@ -549,7 +549,7 @@ function OB_Pad_Hide()
     this:Hide()
 end
 
--- 关闭按钮点击事件
+-- 关睜按钮点击事件
 function OB_Pad_Clicked_Close()
     OB_Pad_Hide()
 end

@@ -21,8 +21,8 @@ function PetSoul_QQSkill_PreLoad()
 	this:RegisterEvent("OBJECT_CARED_EVENT" ,false)
 	this:RegisterEvent("ADJEST_UI_POS" ,false)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED" ,false)
-	this:RegisterEvent("UNIT_MONEY" ,false)					--½ðÇ®±ä»¯
-	this:RegisterEvent("MONEYJZ_CHANGE" ,false)					--½»×Ó±ä»¯
+	this:RegisterEvent("UNIT_MONEY" ,false)					--????
+	this:RegisterEvent("MONEYJZ_CHANGE" ,false)					--????
 end
 
 --=========================================================
@@ -46,7 +46,7 @@ function PetSoul_QQSkill_OnEvent(event)
 		g_CaredNpc = DataPool : GetNPCIDByServerID(g_TargetId);
 		AxTrace(0,1,"g_TargetId="..g_TargetId .. " g_CaredNpc="..g_CaredNpc)
 		if g_CaredNpc == -1 then
-			PushDebugMessage("server´«¹ýÀ´µÄÊý¾ÝÓÐÎÊÌâ¡£");
+			PushDebugMessage("Dæ li®u máy chü có v¤n ð«");
 			return;
 		end
 
@@ -237,7 +237,7 @@ function PetSoul_QQSkill_OK_Clicked()
 end
 
 --=========================================================
--- ¹Ø±Õ½çÃæ
+-- ¹Ø± ½çÃæ
 --=========================================================
 --=========================================================
 -- ½çÃæÒþ²Ø
@@ -253,7 +253,7 @@ end
 
 --=========================================================
 -- ¿ªÊ¼¹ØÐÄNPC£¬
--- ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
+-- ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
 -- Èç¹ûÓÐµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓÐµÄ¡°¹ØÐÄ¡±
 --=========================================================
 function BeginCareObject_PetSoul_QQSkill()

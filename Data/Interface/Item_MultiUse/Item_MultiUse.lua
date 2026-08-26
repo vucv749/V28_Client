@@ -7,23 +7,23 @@
 --g_MultiIseUse_ScriptId：g_ItemID的脚本号
 
 --控件列表
-local m_Controls = {} 				--控件列表
+local m_Controls = {} 				--????
 local g_Frame_UnifiedPosition
 local g_MultiIseUse_ScriptId = -1
 local g_nItemBagPos = -1
 
 local g_ItemID = -1
 
-local g_max = 1 --最大使用数量
-local defaultNum = 1 --默认使用数量
+local g_max = 1 --??????
+local defaultNum = 1 --??????
 
 
 function Item_MultiUse_PreLoad()
 
     this:RegisterEvent("UI_COMMAND")
-    this:RegisterEvent("ADJEST_UI_POS",false)           -- 游戏窗口尺寸发生了变化
-    this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)	-- 游戏分辨率发生了变化
-    this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)		    -- 离开场景
+    this:RegisterEvent("ADJEST_UI_POS",false)           -- ???????????
+    this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)	-- ??????????
+    this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)		    -- ????
     this:RegisterEvent("UPDATE_Item_MultiUse_NAME",false )
 
 end
@@ -42,14 +42,14 @@ end
 function Item_MultiUse_OnEvent(event)
 
     if ( event == "UI_COMMAND" and tonumber(arg0) == 88991501 ) then
-		g_ItemID = Get_XParam_INT(0) --批量使用物品ID
-		g_max = Get_XParam_INT(1)	--可以使用最大数
-		g_MultiIseUse_ScriptId = Get_XParam_INT(2) --脚本号
-		g_nItemBagPos = Get_XParam_INT(3) -- 道具背包位置
-		defaultNum = g_max --默认使用数量
+		g_ItemID = Get_XParam_INT(0) --??????ID
+		g_max = Get_XParam_INT(1)	--???????
+		g_MultiIseUse_ScriptId = Get_XParam_INT(2) --???
+		g_nItemBagPos = Get_XParam_INT(3) -- ??????
+		defaultNum = g_max --??????
 		Item_MultiUse_InputNum:SetText(defaultNum)
 
-		-- 增加界面互斥关闭逻辑MessageBox_Self
+		-- 增加界面互斥关睜逻辑MessageBox_Self
 		if(IsWindowShow("MessageBox_Self")) then
 			CloseWindow("MessageBox_Self", true)
 		end
@@ -81,13 +81,13 @@ function Item_MultiUse_Open(g_ItemID, g_ItemCount, g_max)
 	local theAction1 = DataPool:CreateActionItemForShow(g_ItemID, 1)
 	local g_ActionItemID = theAction1:GetID()
 	if g_ActionItemID ~= 0 then
-        Item_MultiUse_Item:SetActionItem(g_ActionItemID) --展示道具
+        Item_MultiUse_Item:SetActionItem(g_ActionItemID) --????
     end
 
 	local g_ActionItemName = theAction1:GetName()
 	
-	Item_MultiUse_ItemInfo_Text:SetText(g_ActionItemName) --道具名字
-	Item_MultiUse_ItemInfo_GB:SetText(ScriptGlobal_Format("#{CLDHDB_210510_48}",g_max)) --拥有最大数量
+	Item_MultiUse_ItemInfo_Text:SetText(g_ActionItemName) --????
+	Item_MultiUse_ItemInfo_GB:SetText(ScriptGlobal_Format("#{CLDHDB_210510_48}",g_max)) --??????
 
 	Item_MultiUse_InputNum:SetProperty("DefaultEditBox", "True")
 	Item_MultiUse_InputNum:SetSelected(0, -1)

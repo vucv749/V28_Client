@@ -42,18 +42,18 @@ function CampaignItemTip_OnEvent( event )
 	--end
 
 end
---清空文本
+--清繝文本
 function CampaignItemTip_ClearText( )
-	CampaignItemTip_StaticPart_Title:SetText("") --道具名称
-	CampaignItemTip_StaticPart_Icon:SetImage("") --道具图标
-	CampaignItemTip_StaticPart_Item1:SetText("") --物品等级
+	CampaignItemTip_StaticPart_Title:SetText("") --????
+	CampaignItemTip_StaticPart_Icon:SetImage("") --????
+	CampaignItemTip_StaticPart_Item1:SetText("") --????
 
-	CampaignItemTip_StaticPart_Item2:SetText("") --使用等级
-	CampaignItemTip_ShortDesc_Text:SetText("") --道具类型
-	CampaignItemTip_StaticPart_Zhuangtai:SetText("") --绑定规则
-	CampaignItemTip_StaticPart_Yuanbaojiaoyi:SetText("") --元宝交易
-	CampaignItemTip_StaticPart_KvkSpecial:SetText("") --天方古境交易
-	CampaignItemTip_Explain:SetText("") --道具说明
+	CampaignItemTip_StaticPart_Item2:SetText("") --????
+	CampaignItemTip_ShortDesc_Text:SetText("") --????
+	CampaignItemTip_StaticPart_Zhuangtai:SetText("") --????
+	CampaignItemTip_StaticPart_Yuanbaojiaoyi:SetText("") --????
+	CampaignItemTip_StaticPart_KvkSpecial:SetText("") --??????
+	CampaignItemTip_Explain:SetText("") --????
 end
 
 function CampaignItemTip_Update()
@@ -117,9 +117,9 @@ function CampaignItemTip_Update()
 	--绑定规则
 	if takeBound ~= nil and takeBound ~= 0 then
 		if takeBound == 1 then
-			CampaignItemTip_StaticPart_Zhuangtai:SetText("#{KPWFS_131112_76}") --#cccffff拾取时绑定
+			CampaignItemTip_StaticPart_Zhuangtai:SetText("#{KPWFS_131112_76}") --#cccffff?????
 		elseif takeBound == 2 then
-			CampaignItemTip_StaticPart_Zhuangtai:SetText("#{KPWFS_131112_77}") --#cccffff装备时绑定
+			CampaignItemTip_StaticPart_Zhuangtai:SetText("#{KPWFS_131112_77}") --#cccffff?????
 		end
 	end
 	--元宝交易

@@ -21,13 +21,13 @@ local g_HerosReturns_Mission_HlLevelIamge={
 	[3] = "#{HLYH_220613_52}",
 }
 
---预加载函数，可以而且只能在这里注册脚本关心的事件
+--预加载函数，可以而且只能在犫里注册脚本关心的事件
 function HerosReturns_Mission_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
 
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--???????
 end
 
 --加载窗口的时候调用的函数，加载窗口时调用一次
@@ -213,7 +213,7 @@ function HerosReturns_Mission_OnSwitchPage( nDay )
 	local sortData={};
 				
 	-- 提取数据
-	local nCount = GetHerosReturnsRoadCountByDay( nDay-1 )  --需要新接口
+	local nCount = GetHerosReturnsRoadCountByDay( nDay-1 )  --?????
 	for i=1, nCount do
 		
 		local nIndex, Desc,TargetNum,BounsNum,Isspecial,Image1,Image2,nType,param0,param1,param2 = GetHerosReturnsRoadInfo(nDay-1, i-1)
@@ -268,21 +268,21 @@ function HerosReturns_Mission_OnSwitchPage( nDay )
 		
 		-- 图片更换
 		if sortData[i].nFinishNum >= sortData[i].TargetNum then
-			if sortData[i].bGotPrize > 0 then 	-- 已领取
+			if sortData[i].bGotPrize > 0 then 	-- ???
 				bar1:GetSubItem("HerosReturns_Mission_CoinAItemButton"):SetProperty("DisabledImage", "set:XinShouNewBK image:XinShouNew_YLQ");	
 				bar1:GetSubItem("HerosReturns_Mission_CoinAItemButton"):Disable();
-			else	-- 领取
+			else	-- ??
 				bar1:GetSubItem("HerosReturns_Mission_CoinAItemButton"):Enable();
 			end
 			bar1:GetSubItem("HerosReturns_Mission_CoinAItemButton"):SetEvent( "Clicked", string.format("HerosReturns_Mission_GetPrize_Clicked(%d)", sortData[i].nIndex))
 			bar1:GetSubItem("HerosReturns_Mission_CoinAItemGoto"):Hide();
 			bar1:GetSubItem("HerosReturns_Mission_CoinAItemButton"):Show();
 		else
-			if sortData[i].nType > 0 then	--前往
+			if sortData[i].nType > 0 then	--??
 				bar1:GetSubItem("HerosReturns_Mission_CoinAItemGoto"):SetEvent( "Clicked", string.format("HerosReturns_Mission_GoTo_Clicked(%d,%d)", nDay-1, sortData[i].nDayIdx-1))
 				bar1:GetSubItem("HerosReturns_Mission_CoinAItemGoto"):Show();
 				bar1:GetSubItem("HerosReturns_Mission_CoinAItemButton"):Hide();
-			else	-- 未达成
+			else	-- ???
 				bar1:GetSubItem("HerosReturns_Mission_CoinAItemButton"):SetProperty("DisabledImage", "set:XinShouNewBK image:XinShouNew_WDC");	
 				bar1:GetSubItem("HerosReturns_Mission_CoinAItemButton"):SetEvent( "Clicked", string.format("HerosReturns_Mission_GetPrize_Clicked(%d)", sortData[i].nIndex))
 				bar1:GetSubItem("HerosReturns_Mission_CoinAItemButton"):Disable();
@@ -405,10 +405,10 @@ function HerosReturns_Mission_FenYe_Clicked(index)
 	end
 	
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "OnOpenUI" ); 		-- 脚本号
-		Set_XSCRIPT_ScriptID( 808110 );						-- 脚本编号
+		Set_XSCRIPT_Function_Name( "OnOpenUI" ); 		-- ???
+		Set_XSCRIPT_ScriptID( 808110 );						-- ????
 		Set_XSCRIPT_Parameter(0, index)
-		Set_XSCRIPT_ParamCount( 1 );						-- 参数个数
+		Set_XSCRIPT_ParamCount( 1 );						-- ????
 	Send_XSCRIPT()
 	
 	
@@ -417,10 +417,10 @@ end
 
 function HerosReturns_Mission_OnClickHelp()
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "OnShowHelp" ); 		-- 脚本号
-		Set_XSCRIPT_ScriptID( 808110 );						-- 脚本编号
+		Set_XSCRIPT_Function_Name( "OnShowHelp" ); 		-- ???
+		Set_XSCRIPT_ScriptID( 808110 );						-- ????
 		Set_XSCRIPT_Parameter(0, 1)
-		Set_XSCRIPT_ParamCount( 1 );						-- 参数个数
+		Set_XSCRIPT_ParamCount( 1 );						-- ????
 	Send_XSCRIPT()
 end
 

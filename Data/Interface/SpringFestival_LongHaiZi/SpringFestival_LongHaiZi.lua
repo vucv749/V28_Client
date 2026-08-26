@@ -6,9 +6,9 @@ local g_UICOMMAND = 89029101
 
 local g_Camera_ClickNum = 3;
 local g_DistanceMin = 3;
-local g_CameraHeight = 1     --摄影机高度
-local g_CameraDistance = 2   --摄影机距离
-local g_CameraPitch = 3      --摄影机角度
+local g_CameraHeight = 1     --?????
+local g_CameraDistance = 2   --?????
+local g_CameraPitch = 3      --?????
 local g_CameraPosition =
 {
 	[1] = {

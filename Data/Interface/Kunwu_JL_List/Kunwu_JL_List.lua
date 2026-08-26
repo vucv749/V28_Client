@@ -2,7 +2,7 @@
 
 local g_nSelect_Index = -1
 
-local PET_MAX_NUMBER = 10	--最大珍兽携带上限
+local PET_MAX_NUMBER = 10	--????????
 local g_Kunwu_JL_List_Frame_UnifiedPosition
 
 function Kunwu_JL_List_PreLoad()
@@ -28,7 +28,7 @@ end
 --===============================================
 function Kunwu_JL_List_OnEvent(event)
 
-	-- 打开珍兽列表界面	
+	-- 打开犱兽列表界面	
 	if event == "OPEN_PET_LIST_JL" then
 		g_nSelect_Index = -1
 		this:Show()
@@ -42,13 +42,13 @@ function Kunwu_JL_List_OnEvent(event)
 		return
 	end
 
-	-- 玩家身上的珍兽数据发生变化，包括珍兽出战、休息、增加一只珍兽
+	-- 玩家身上的犱兽数据发生变化，包括犱兽出牻、休息、增加一只犱兽
 	if event == "UPDATE_PET_PAGE" then
 		Kunwu_JL_List_UpdateFrame()
 		return
 	end
 	
-	-- 玩家身上减少1只珍兽
+	-- 玩家身上减少1只犱兽
 	if event == "DELETE_PET" then
 		Kunwu_JL_List_UpdateFrame()
 		return
@@ -75,7 +75,7 @@ end
 -- 更新界面
 function Kunwu_JL_List_UpdateFrame()
 
-	-- 先清空当前列表
+	-- 先清繝当前列表
 	Kunwu_JL_List_List:ClearListBox()
 	
 	local PetInListIndex = 0;
@@ -84,9 +84,9 @@ function Kunwu_JL_List_UpdateFrame()
 		local strToolTips = ""
 
 		if szPetName ~= "" then
-			--珍兽不在背包里
+			--犱兽不在背包里
 			if szOn ~= "on_packa" then 
-				szPetName = "#c808080" .. szPetName		-- 灰色显示
+				szPetName = "#c808080" .. szPetName		-- ????
 			elseif Pet:GetPetLocation(i) ~= -1 then
 			--	szPetName = "#c808080" .. szPetName		-- 灰色显示
 			end
@@ -95,7 +95,7 @@ function Kunwu_JL_List_UpdateFrame()
 				local nUnlockElapsedTime = PlayerPackage:GetPUnlockElapsedTime_Pet(i)
 				if nUnlockElapsedTime == 0 then
 					szPetName = szPetName.. "  #-05"
-					strToolTips = "已加锁"
+					strToolTips = "秀 kh骯"
 				else
 					szPetName = szPetName.. "  #-10"
 					local strLeftTime = g_GetUnlockingStr(nUnlockElapsedTime)		
@@ -118,7 +118,7 @@ function Kunwu_JL_List_Choose_Click()
 
 	local NeedCheckLock = 1
 	if NeedCheckLock == 1 and PlayerPackage:IsPetLock(g_nSelect_Index) == 1 then
-	--	PushDebugMessage("珍兽已加锁")
+	--	PushDebugMessage("犱兽已加锁")
 	--	return
 	end
 
@@ -130,12 +130,12 @@ function Kunwu_JL_List_Refuse_Click()
 	this:Hide()
 end
 
--- 选中列表中的珍兽
+-- 选中列表中的犱兽
 function Kunwu_JL_List_Selected()
 	g_nSelect_Index = Kunwu_JL_List_List:GetFirstSelectItem()
 end
 
---根据选择的珍兽，显示相应的详细信息
+--根据选择的犱兽，显示相应的详细信息
 function Kunwu_JL_List_ShowTargetPet()
 	g_nSelect_Index = Kunwu_JL_List_List:GetFirstSelectItem()
 

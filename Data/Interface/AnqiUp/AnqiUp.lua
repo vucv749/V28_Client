@@ -44,7 +44,7 @@ function AnqiUp_OnEvent(event)
 		objCared = DataPool : GetNPCIDByServerID(xx);
 		AxTrace(0,1,"xx="..xx .. " objCared="..objCared)
 		if objCared == -1 then
-				PushDebugMessage("server´«¹ýÀ´µÄÊý¾ÝÓÐÎÊÌâ¡£");
+				PushDebugMessage("Dæ li®u máy chü có v¤n ð«");
 				return;
 		end
 		AnqiUp_SelfMoney:SetProperty("MoneyNumber", tostring(Player:GetData("MONEY")));
@@ -70,7 +70,7 @@ function AnqiUp_OnEvent(event)
 			return;
 		end
 		
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			
 			--È¡Ïû¹ØÐÄ
@@ -174,7 +174,7 @@ function Anqi_Update(UI_index,Item_index)
 	end
 
 	if Bind_Item1 ~= -1 and Bind_Item2 ~= -1 then
-		AnqiUp_OK:Enable()   --¶ÍÔì°´Å¥¿ÉÓÃ
+		AnqiUp_OK:Enable()   --??????
 	end
 
 end
@@ -209,7 +209,7 @@ function AnqiUp_Buttons_Clicked()
 			Set_XSCRIPT_Parameter( 1, Bind_Item2 )
 			Set_XSCRIPT_ParamCount(2)
 			Send_XSCRIPT()
-			g_Accept_Clicked_Num = 0; 													-- µÚ2´Îµã»÷¡°È·¶¨¡±ºó£¬»Ö¸´ Accept_Clicked_Num ÎªÎ´°´¹ý¡°È·¶¨¡±°´Å¥¡£
+			g_Accept_Clicked_Num = 0; 													-- ?2???“??”?,?? Accept_Clicked_Num ????“??”???
 			this:Hide();
 	end
 

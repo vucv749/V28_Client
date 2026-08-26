@@ -1,8 +1,8 @@
 
-local cooldownTime =15*1000;		--½áÊ¶ÀäÈ´Ê±¼ä
-local pageCoolDownTime = 5*1000;	--·­Ò³ÀäÈ´Ê±¼ä£¬·­Ò³ÏûºÄ½Ï´ó
+local cooldownTime =15*1000;		--??????
+local pageCoolDownTime = 5*1000;	--??????,??????
 local PET_AITYPE = {};
-local FlashTextHeader = "#ecc33cc#cffcccc";		--µ÷½ÚÕâ¸öÀ´¿ØÖÆÎÄ×ÖÑÕÉ«ºÍÉÁË¸
+local FlashTextHeader = "#ecc33cc#cffcccc";		--??????????????
 local showPrevPage = true;
 local showNextPage = true;
 
@@ -12,11 +12,11 @@ function PetFriendSearch_PreLoad()
 end
 
 function PetFriendSearch_OnLoad()
-	PET_AITYPE[0] = "µ¨Ð¡";
-	PET_AITYPE[1] = "½÷É÷";
-	PET_AITYPE[2] = "ÖÒ³Ï";
-	PET_AITYPE[3] = "¾«Ã÷";
-	PET_AITYPE[4] = "ÓÂÃÍ";
+	PET_AITYPE[0] = "Nhát gan";
+	PET_AITYPE[1] = "C¦n th§n";
+	PET_AITYPE[2] = "Trung thñc";
+	PET_AITYPE[3] = "Nhanh nh©n";
+	PET_AITYPE[4] = "Dûng mãnh";
 end
 
 function PetFriendSearch_OnEvent(event)
@@ -46,7 +46,7 @@ end
 function PetFriendSearch_ShowWindow()
 	local num = PetInviteFriend:GetInviteNum("search")
 	if( num <= 0 ) then
-		PushDebugMessage("Ã»ÓÐÕÒµ½ºÏÊÊµÄÕäÊÞÊý¾Ý");
+		PushDebugMessage("Không có tìm ðßþc thích hþp Ðích Trân Thú s¯ li®u");
 		return;
 	end
 	PetFriendSearch_Clear_All();
@@ -69,53 +69,53 @@ function PetFriendSearch_Update( idx )
 	end
 	idx = idx + 4;
 
-	--»ñÈ¡ÕäÊÞÖ÷ÈËÐÅÏ¢
+	--»ñÈ¡ äÊÞÖ÷ÈËÐÅÏ¢
 	local humanName = PetInviteFriend:GetHumanINFO(idx, "NAME");
 	local humanMenPai = PetInviteFriend:GetHumanINFO(idx, "MENPAI");
 	local humanLevel = PetInviteFriend:GetHumanINFO(idx, "LEVEL");
 	local humanSex  = PetInviteFriend:GetHumanINFO(idx, "SEX");
 	humanMenPai = PetFriendSearch_ConvertNumToMenPai(humanMenPai);
 	if( humanSex == 0 ) then
-		humanSex = "Å®";
+		humanSex = "Næ";
 	else
-		humanSex = "ÄÐ";
+		humanSex = "Nam";
 	end
 
-	--»ñÈ¡ÕäÊÞÐÅÏ¢
+	--»ñÈ¡ äÊÞÐÅÏ¢
 	local petName = PetInviteFriend:GetPetINFO(idx, "NAME");
 	local petGrow = PetInviteFriend:GetPetINFO(idx, "GROW");
 	local petLevel = PetInviteFriend:GetPetINFO(idx, "LEVEL");
 	local petSex  = PetInviteFriend:GetPetINFO(idx, "SEX");
 	local petAI   = PetInviteFriend:GetPetINFO(idx, "AITYPE");
 	local petTypeName = PetInviteFriend:GetPetINFO(idx, "TYPENAME");
-	petTypeName = FlashTextHeader .. petTypeName .. "±¦±¦";
+	petTypeName = FlashTextHeader .. petTypeName .. "Cøc cßng";
 	if( petSex == 0 ) then
-		petSex = "´Æ";
+		petSex = "Thß";
 	else
-		petSex = "ÐÛ";
+		petSex = "Hùng";
 	end
-	local strTbl = {"ÆÕÍ¨","ÓÅÐã","½Ü³ö","×¿Ô½","ÍêÃÀ"};
+	local strTbl = {"S½ C¤p","Xu¤t S¡c","Ki®t Xu¤t","Trác Vi®t","Toàn MÛ"};
 
 	if(petGrow >= 0) then
-		petGrow = petGrow + 1;	--cÀïÊÇ´Ó0¿ªÊ¼µÄÃ¶¾Ù
+		petGrow = petGrow + 1;	--c???0?????
 		if(strTbl[petGrow]) then
 			petGrow = strTbl[petGrow];
 		else
-			petGrow = "Î´Öª";
+			petGrow = "Không biªt";
 		end
 	else
-		petGrow = "Î´Öª";
+		petGrow = "Không biªt";
 	end
 
 	if(petAI>4 or petAI <0) then
-		petAI = "´íÎóµÄ";
+		petAI = "Sai l¥m Ðích";
 	else
 		petAI =	PET_AITYPE[petAI];
 	end
 
 
 	if( idx == 5 ) then
-	  --ÉèÖÃÕäÊÞÐÅÏ¢
+	  --ÉèÖÃ äÊÞÐÅÏ¢
 		PetFriendSearch_Master1Pet_NameInfo:SetText(petName);
 		PetFriendSearch_Master1Pet_GenderInfo:SetText(petSex);
 		PetFriendSearch_Master1Pet_ChenZhangInfo:SetText(petGrow);
@@ -145,7 +145,7 @@ function PetFriendSearch_Update( idx )
 
 
 	elseif( idx == 6 ) then
-	  --ÉèÖÃÕäÊÞÐÅÏ¢
+	  --ÉèÖÃ äÊÞÐÅÏ¢
 		PetFriendSearch_Master2Pet_NameInfo:SetText(petName);
 		PetFriendSearch_Master2Pet_GenderInfo:SetText(petSex);
 		PetFriendSearch_Master2Pet_ChenZhangInfo:SetText(petGrow);
@@ -270,37 +270,37 @@ function PetFriendSearch_ConvertNumToMenPai( MenPaiId )
 	local strMenPai = "???";
 	-- µÃµ½ÃÅÅÉÃû³Æ.
 	if(0 == MenPaiId) then
-		strMenPai = "ÉÙÁÖ";
+		strMenPai = "Thiªu Lâm";
 
 	elseif(1 == MenPaiId) then
-		strMenPai = "Ã÷½Ì";
+		strMenPai = "Minh Giáo";
 
 	elseif(2 == MenPaiId) then
-		strMenPai = "Ø¤°ï";
+		strMenPai = "Cái Bang";
 
 	elseif(3 == MenPaiId) then
-		strMenPai = "Îäµ±";
+		strMenPai = "Võ Ðang";
 
 	elseif(4 == MenPaiId) then
-		strMenPai = "¶ëáÒ";
+		strMenPai = "Nga Mi";
 
 	elseif(5 == MenPaiId) then
-		strMenPai = "ÐÇËÞ";
+		strMenPai = "Tinh Túc";
 
 	elseif(6 == MenPaiId) then
-		strMenPai = "ÌìÁú";
+		strMenPai = "Thiên Long";
 
 	elseif(7 == MenPaiId) then
-		strMenPai = "ÌìÉ½";
+		strMenPai = "Thiên S½n";
 
 	elseif(8 == MenPaiId) then
-		strMenPai = "åÐÒ£";
+		strMenPai = "Tiêu dao";
 
 	elseif(9 == MenPaiId) then
-		strMenPai = "ÎÞÃÅÅÉ";
+		strMenPai = "Tñ do";
 
 	elseif(10== MenPaiId) then
-		strMenPai = "ÂüÍÓÉ½×¯";
+		strMenPai = "MÕn Ðà S½n Trang";
 
 	end
 
@@ -308,7 +308,7 @@ function PetFriendSearch_ConvertNumToMenPai( MenPaiId )
 end
 ----------------------------------------------------------------------------------
 --
--- Ðý×ªÕäÊÞÄ£ÐÍ£¨Ïò×ó)
+-- Ðý×ª äÊÞÄ£ÐÍ£¨Ïò×ó)
 --
 function PetFriendSearch_Modle_TurnLeft(modelIdx,start)
 
@@ -333,7 +333,7 @@ end
 
 ----------------------------------------------------------------------------------
 --
---Ðý×ªÕäÊÞÄ£ÐÍ£¨ÏòÓÒ)
+--Ðý×ª äÊÞÄ£ÐÍ£¨ÏòÓÒ)
 --
 function PetFriendSearch_Modle_TurnRight(modelIdx, start)
 	if( modelIdx == 5 ) then
@@ -354,7 +354,7 @@ function PetFriendSearch_Modle_TurnRight(modelIdx, start)
 	end
 end
 
---²éÑ¯ÉÏÒ»ÆªµÄÕäÊÞÕ÷ÓÑÐÅÏ¢
+--²éÑ¯ÉÏÒ»ÆªµÄ äÊÞ ÷ÓÑÐÅÏ¢
 function PetFriendSearch_PrevPage()
 	PetInviteFriend:ShowSearchPage(-1);
 	PetFriendSearch_PageUp:Disable();
@@ -368,7 +368,7 @@ function PetFriendSearch_CoolPageUp()
 	KillTimer("PetFriendSearch_CoolPageUp();");
 end
 
---²éÑ¯ÏÂÒ»ÆªµÄÕäÊÞÕ÷ÓÑÐÅÏ¢
+--²éÑ¯ÏÂÒ»ÆªµÄ äÊÞ ÷ÓÑÐÅÏ¢
 function PetFriendSearch_NextPage()
 	PetInviteFriend:ShowSearchPage(1);
 	PetFriendSearch_PageDown:Disable();
@@ -381,17 +381,17 @@ function PetFriendSearch_CoolPageDown()
 	KillTimer("PetFriendSearch_CoolPageDown();");
 end
 
---¸øÕäÊÞÖ÷ÈË·¢ÓÊ¼þ£¬ËµÃ÷ÏëÕ÷ÓÑ
+--¸ø äÊÞÖ÷ÈË·¢ÓÊ¼þ£¬ËµÃ÷Ïë ÷ÓÑ
 function PetFriendSearch_SendMail( idx )
 	if( idx == 5 or idx == 6 ) then
 		local owner = PetInviteFriend:GetHumanINFO(idx, "NAME");
 		local player = Player:GetName();
 		if(owner == player) then
-			PushDebugMessage("²»ÄÜºÍ×Ô¼ºµÄÕäÊÞ½áÊ¶");
+			PushDebugMessage("Không th¬ Hoà chính mình Ðích Trân Thú kªt các\\u0020hÕ");
 			return;
 		end
-			--¸ø¸ÃÕäÊÞÖ÷ÈË·¢ËÍÓÊ¼þ¸æËßËûËýÄãµÄÕäÊÞÏëºÍËûËýµÄÕäÊÞ½áÊ¶
-		DataPool:OpenMail( owner,"ÎÒÏë½áÊ¶ÄãµÄ±¦±¦" );
+			--¸ø¸Ã äÊÞÖ÷ÈË·¢ËÍÓÊ¼þ¸æËßËûËýÄãµÄ äÊÞÏëºÍËûËýµÄ äÊÞ½áÊ¶
+		DataPool:OpenMail( owner,"Ta nghî kªt các\\u0020hÕ cüa ngß½i cøc cßng" );
 	end
 
 	if( idx == 5 ) then

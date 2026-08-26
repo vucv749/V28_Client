@@ -1,4 +1,4 @@
--- 雪人大作战，个人榜单界面
+-- 雪人大作牻，个人榜单界面
 local g_unifiedposistion
 
 local g_ui_list = {}
@@ -64,7 +64,7 @@ function Frozen_PVPTopList_InitUIData(lastTime)
 	
 	Frozen_PVPTopList_List:RemoveAllItem()
 	
-	-- 刷新阵营信息
+	-- 刷新狊营信息
 	local teamCount = XRZPVP:GetBattlePlayerRankInfo("num")
 	if (teamCount > 0) then
 		local listIndex = 0
@@ -111,7 +111,7 @@ function Frozen_PVPTopList_GetCampName(campIndex)
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function Frozen_PVPTopList_Close()
 	this:Hide()

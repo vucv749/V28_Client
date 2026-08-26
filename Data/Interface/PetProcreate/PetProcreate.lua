@@ -29,7 +29,7 @@ function PetProcreate_OnEvent(event)
 		objCared = DataPool : GetNPCIDByServerID(xx);
 		AxTrace(0,1,"xx="..xx .. " objCared="..objCared)
 		if objCared == -1 then
-				PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£");
+				PushDebugMessage("Dæ li®u máy chü có v¤n ğ«");
 				return;
 		end
 		BeginCareObject_PetProcreate(objCared)
@@ -37,11 +37,11 @@ function PetProcreate_OnEvent(event)
 		PetProcreate_OnUICommand();
 
 	elseif  ( event == "PETPROCREATE_MYSELF" ) then
-		--ÕäÊŞÒÑ±»ÆäËü½çÃæÑ¡ÖĞ
+		-- äÊŞÒÑ±»ÆäËü½çÃæÑ¡ÖĞ
 		if (Pet:GetPetLocation(tonumber(arg0)) ~= -1) and (Pet:GetPetLocation(tonumber(arg0)) ~= 16) then
 			return;
 		end
-		--ÇĞ»»ÕäÊŞµÄÊ±ºò£¬ÊÍ·ÅÉÏÒ»¸öÕäÊŞ
+		--ÇĞ»» äÊŞµÄÊ±ºò£¬ÊÍ·ÅÉÏÒ»¸ö äÊŞ
 		if(myPetIdx ~= -1) then
 			Pet:SetPetLocation(myPetIdx,-1);
 		end
@@ -85,10 +85,10 @@ function PetProcreate_OnEvent(event)
 
 	elseif  ( event == "PETPROCREATE_OTHER_OK" ) then
 		if tonumber(arg0) == 1 then
-			PushDebugMessage("¶Ô·½È·ÈÏÁË·±Ö³¡£")
+			PushDebugMessage("Ğ¯i phß½ng ğã ğ°ng ı sinh sän.")
 			PetProcreate_Refresh_Confirm_Ok()
 		else
-			PushDebugMessage("·±Ö³±»È¡Ïû¡£")
+			PushDebugMessage("Hüy sinh sän.")
 			PetProcreate_Close2(1)
 		end
 	elseif ( event == "PETPROCREATE_KEY_STATE")then
@@ -102,7 +102,7 @@ function PetProcreate_OnEvent(event)
 			return;
 		end
 
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			--È¡Ïû¹ØĞÄ
 			PetProcreate_OK_Clicked(0)
@@ -181,7 +181,7 @@ function PetProcreate_Close()
 end
 
 --===============================================
--- ÓÒ¼üµã»÷(²é¿´¶Ô·½µÄÕäÊŞ×ÊÁÏ)
+-- ÓÒ¼üµã»÷(²é¿´¶Ô·½µÄ äÊŞ×ÊÁÏ)
 --===============================================
 function PetProcreate_Other_PetList_RClick()
 	if PetProcreate_Other_Pet:GetText() ~= "" then
@@ -190,7 +190,7 @@ function PetProcreate_Other_PetList_RClick()
 end
 
 --===============================================
--- ÓÒ¼üµã»÷(²é¿´×Ô¼ºµÄÕäÊŞ×ÊÁÏ)
+-- ÓÒ¼üµã»÷(²é¿´×Ô¼ºµÄ äÊŞ×ÊÁÏ)
 --===============================================
 function PetProcreate_Self_PetList_RClick()
 	if PetProcreate_Self_Pet:GetText() ~= "" then
@@ -200,7 +200,7 @@ end
 
 ----------------------------------------------------------------------------------
 --
--- Ğı×ªÕäÊŞÄ£ĞÍ£¨Ïò×ó)
+-- Ğı×ª äÊŞÄ£ĞÍ£¨Ïò×ó)
 --
 function PetProcreate_Self_TurnLeft(start)
 	--Ïò×óĞı×ª¿ªÊ¼
@@ -214,7 +214,7 @@ end
 
 ----------------------------------------------------------------------------------
 --
---Ğı×ªÕäÊŞÄ£ĞÍ£¨ÏòÓÒ)
+--Ğı×ª äÊŞÄ£ĞÍ£¨ÏòÓÒ)
 --
 function PetProcreate_Self_TurnRight(start)
 	--ÏòÓÒĞı×ª¿ªÊ¼
@@ -229,7 +229,7 @@ end
 
 ----------------------------------------------------------------------------------
 --
--- Ğı×ªÕäÊŞÄ£ĞÍ£¨Ïò×ó)
+-- Ğı×ª äÊŞÄ£ĞÍ£¨Ïò×ó)
 --
 function PetProcreate_Other_TurnLeft(start)
 	--Ïò×óĞı×ª¿ªÊ¼
@@ -243,7 +243,7 @@ end
 
 ----------------------------------------------------------------------------------
 --
---Ğı×ªÕäÊŞÄ£ĞÍ£¨ÏòÓÒ)
+--Ğı×ª äÊŞÄ£ĞÍ£¨ÏòÓÒ)
 --
 function PetProcreate_Other_TurnRight(start)
 	--ÏòÓÒĞı×ª¿ªÊ¼
@@ -284,7 +284,7 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØĞÄNPC£¬
---ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 --Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function BeginCareObject_PetProcreate(objCaredId)

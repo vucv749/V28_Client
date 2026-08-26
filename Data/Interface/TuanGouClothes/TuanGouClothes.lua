@@ -58,7 +58,7 @@ end
 function TuanGouClothes_OnHiden()
 	--取消关心
 	this:CareObject(objCared, 0, "TuanGouClothes")
-	--关闭时装预览
+	--关睜时装预览
 	PushEvent("CLOSE_DRESSPREVIEW") 
 	PushEvent( "CLOSE_GEMEFFECTPREVIEW")
 end
@@ -67,7 +67,7 @@ end
 -- 关界面
 --***********************************************************************************************************************************************
 function TuanGouClothes_Close()
-	--数据清空
+	--数据清繝
 	TuanGouClothes_OnHiden()
 	--隐藏界面
 	this:Hide()
@@ -77,5 +77,5 @@ end
 -- 时装预览
 --***********************************************************************************************************************************************
 function TuanGouClothes_OnPreviewClick()
-	PushEvent("OPEN_DRESSPREVIEW", 10125293, 76, 48) --时装\发型\脸型
+	PushEvent("OPEN_DRESSPREVIEW", 10125293, 76, 48) --??\??\??
 end

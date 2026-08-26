@@ -34,7 +34,7 @@ function EquipUnBind_OnEvent(event)
 		objCared = DataPool : GetNPCIDByServerID(xx);
 		AxTrace(0,1,"xx="..xx .. " objCared="..objCared)
 		if objCared == -1 then
-				PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£");
+				PushDebugMessage("Dæ li®u máy chü có v¤n ğ«");
 				return;
 		end
 		EquipUnBind_SelfMoney:SetProperty("MoneyNumber", tostring(Player:GetData("MONEY")));
@@ -59,7 +59,7 @@ function EquipUnBind_OnEvent(event)
 			return;
 		end
 		
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			
 			--È¡Ïû¹ØĞÄ
@@ -122,7 +122,7 @@ function EquipUnBind_Update(UI_index,Item_index)
 				local EquipPoint = LifeAbility : Get_Equip_Point(i_index)
 				if EquipPoint == -1 or EquipPoint == 8 or EquipPoint == 9 or EquipPoint == 10 then
 					if EquipPoint ~= -1 then
-						PushDebugMessage("²»ÄÜ·ÅÈëÕâÖÖ×°±¸¡£")
+						PushDebugMessage("Không th¬ ğ£t trang b¸ này vào")
 					end
 					return
 				end
@@ -144,7 +144,7 @@ function EquipUnBind_Update(UI_index,Item_index)
 	elseif u_index == 2 then
 		if theAction:GetID() ~= 0 then
 				if PlayerPackage : GetItemTableIndex( i_index ) ~= 30900049 then
-					PushDebugMessage("ÕâÀï±ØĞë·ÅÈë³ıÃú·û¡£")
+					PushDebugMessage("N½i này phäi ğ¬ vào Tr× Minh Phù.")
 					return
 				end
 				if Bind_Item2 ~= -1 then
@@ -164,11 +164,11 @@ end
 
 function EquipUnBind_Buttons_Clicked()
 	if Bind_Item1 == -1 then 
-		PushDebugMessage("¶Ô²»Æğ£¬ÇëÏÈ·ÅÈëÄãÏë¿ÌÃúµÄ×°±¸¡£")
+		PushDebugMessage("Thñc xin l²i, Thïnh Tiên ğ¬ vào Nhî Tß·ng kh¡c minh Ğích trang b¸.")
 		return
 	end
 	if Bind_Item2 == -1 then
-		PushDebugMessage("×°±¸³ıÃúĞèÒª³ıÃú·û¡£")
+		PushDebugMessage("Trang b¸ Tr× Minh c¥n Tr× Minh Phù.")
 		return
 	end
 	Clear_XSCRIPT();
@@ -196,7 +196,7 @@ function EquipUnBind_OnHiden()
 end
 --=========================================================
 --¿ªÊ¼¹ØĞÄNPC£¬
---ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 --Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function BeginCareObject_EquipUnBind(objCaredId)

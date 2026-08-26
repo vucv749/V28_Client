@@ -9,18 +9,18 @@ local PlayerMaxMP = 0;
 local PlayerRage = 0;
 local PlayerMaxRage = 100;
 
-local iMouseInPos = 0;	-- 0 :¿Õ°×´¦
+local iMouseInPos = 0;	-- 0 :???
 												-- 1 : ÔÚÑªÌõ´¦
 												-- 2 : ÔÚ·¨Á¦Ìõ´¦
                         -- 3 : ÔÚÅ­ÆøÌõ´¦
 local DoubleHit = {}
 local EngHit = {}
 
---local PetFlashTime = 10*1000			--ÕäÊŞ°´Å¥ÉÁË¸Ê±¼ä10ÃëÖÓ£¬µ¥Î»ÊÇºÁÃë£¬ËùÒÔ³ËÒÔ1000×ª»»ÎªÃë
-local HuoDongTime  = 30*1000      --»î¶¯°´Å¥ÉÁË¸Ê±¼ä30ÃëÖÓ
+--local PetFlashTime = 10*1000			-- äÊŞ°´Å¥ÉÁË¸Ê±¼ä10ÃëÖÓ£¬µ¥Î»ÊÇºÁÃë£¬ËùÒÔ³ËÒÔ1000×ª»»ÎªÃë
+local HuoDongTime  = 30*1000      --????????30??
 
 
-local LEVEL_LIMIT = 10;						--10¼¶ÒÔÏÂÎŞ·¨´ò¿ª
+local LEVEL_LIMIT = 10;						--10???????
 
 --OnLoad
 
@@ -31,7 +31,7 @@ function PlayerFrame_PreLoad()
 	this:RegisterEvent("UNIT_MANA");
 	this:RegisterEvent("UNIT_HP_PERCENT");
 	this:RegisterEvent("UNIT_MP_PERCENT");
-	this:RegisterEvent("UNIT_RAGE");			-- ×¢²áÅ­Æø
+	this:RegisterEvent("UNIT_RAGE");			-- ????
 	
 	this:RegisterEvent("UNIT_MAX_HP");
 	this:RegisterEvent("UNIT_MP");
@@ -77,7 +77,7 @@ function PlayerFrame_OnLoad()
 	PlayerFrame_Captain:Hide();
 	--PlayerFrame_ZhengShouZhenYouFlash:Hide();
 	--PlayerFrame_UpdateBtnFlash:Hide();
-	--Ó¦¸Ã²ß»®Ğ´µ½×ÖµäºÍxml²¼¾ÖÎÄ¼şÀï PlayerFrame_ZhenShouZhengYou:SetToolTip("´ò¿ªÕ÷ÓÑ½»»¥½çÃæ");
+	--Ó¦¸Ã²ß»®Ğ´µ½×ÖµäºÍxml²¼¾ÖÎÄ¼şÀï PlayerFrame_ZhenShouZhengYou:SetToolTip("´ò¿ª ÷ÓÑ½»»¥½çÃæ");
 	--PlayerFrame_ZhenShouZhengYou:SetToolTip("#{ZYPT_081103_001}");
 	
 end
@@ -348,7 +348,7 @@ function PlayerFrame_Update()
 	
 end
 
---ÓÃ»§µ¥»÷ÁËÕ÷ÓÑÆ½Ì¨µÄ°´Å¥ modified by dun.liu
+--ÓÃ»§µ¥»÷ÁË ÷ÓÑÆ½Ì¨µÄ°´Å¥ modified by dun.liu
 function PlayerFrame_HitZhengShou()
 
 	--if DataPool:Lua_IsInTServer() == 1 then
@@ -362,7 +362,7 @@ function PlayerFrame_HitZhengShou()
 	--	return;
 	--end
 	--OpenWindow("ZhengyouWindow")
-	--RequestServerNoteLog(0);      --Ïòserver·¢ËÍÇëÇó£¬¼ÇÂ¼Ò»ÌõÈÕÖ¾
+	--RequestServerNoteLog(0);      --Ïòserver·¢ËÍÇëÇó£¬¼ÇÂ¼Ò»ÌõÈ Ö¾
 end
 
 function PlayerFrame_ShouJiOnClicked()
@@ -428,7 +428,7 @@ function PlayerFrame_SelectMyselfAsTarget()
 	
 end
 function PlayerFrame_ShowTooltip( type )
-	local strTooltip = "Ñª:"..tostring( PlayerHP ) .. "/" .. tostring( PlayerMaxHP).."#r".."Æø:"..tostring( PlayerMP ) .. "/" .. tostring( PlayerMaxMP).."#r".."Å­:"..tostring( PlayerRage ) .. "/" .. tostring( 1000);
+	local strTooltip = "Huyªt:"..tostring( PlayerHP ) .. "/" .. tostring( PlayerMaxHP).."#r".."Khí:"..tostring( PlayerMP ) .. "/" .. tostring( PlayerMaxMP).."#r".."Nµ:"..tostring( PlayerRage ) .. "/" .. tostring( 1000);
 	if( type == 1 )	then
 		PlayerFrame_HP:SetToolTip( strTooltip );
 	elseif( type == 2 ) then
@@ -445,7 +445,7 @@ end
 
 function PlayerFrame_YueKaBtnOnClicked()
 	local isInHell = IsInHell()
-	if isInHell == 1 then--ÔÚµØ¸®ÖĞ²»ÄÜÁìÈ¡½±Æ·
+	if isInHell == 1 then--??????????
 		PushDebugMessage("#{HJYK_201223_46}")
     	return
 	end

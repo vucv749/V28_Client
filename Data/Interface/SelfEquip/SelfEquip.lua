@@ -43,42 +43,42 @@ local g_PageOrder = {}
 --------------------------------------------------------------------------------
 -- ×°±¸°´Å¥Êý¾Ý¶¨Òå
 --
-local  g_WEAPON;		--ÎäÆ÷
-local  g_ARMOR;			--ÒÂ·þ
-local  g_CAP;				--Ã±×Ó
-local  g_CUFF;			--ÊÖÌ×
-local  g_BOOT;			--Ð¬
-local  g_RING;			--½äÖ¸
-local  g_SASH;			--Ñü´ø
-local  g_NECKLACE;	--ÏîÁ´
-local  g_Dark;			--°µÆ÷
-local  g_RING_2;		--½äÖ¸2
-local  g_CHARM;			--»¤·û
-local  g_CHARM_2;		--»¤·û2
-local  g_WRIST;			--»¤Íó
-local  g_SHOULDER;	--»¤¼ç
+local  g_WEAPON;		--??
+local  g_ARMOR;			--??
+local  g_CAP;				--??
+local  g_CUFF;			--??
+local  g_BOOT;			--?
+local  g_RING;			--??
+local  g_SASH;			--??
+local  g_NECKLACE;	--??
+local  g_Dark;			--??
+local  g_RING_2;		--??2
+local  g_CHARM;			--??
+local  g_CHARM_2;		--??2
+local  g_WRIST;			--??
+local  g_SHOULDER;	--??
 
 local  g_EquipMask ={}
 ---------------------------------------------------------------------------------
 -- µãÊý¶¨Òå
 --
 
-local g_RemainPoint 			= 0;	-- Ê£ÓàµãÊý
-local g_CurExperience 	  = 0;	-- µ±Ç°Ê£Óà¾­Ñé
-local g_RequireExperience = 0;  -- Éý¼¶ËùÐè¾­Ñé
+local g_RemainPoint 			= 0;	-- ????
+local g_CurExperience 	  = 0;	-- ??????
+local g_RequireExperience = 0;  -- ??????
 
-local g_AddStr = 0;					-- ·ÖÅäÔÚÁ¦Á¿ÉÏµÄÊ£ÓàµãÊý.
-local g_AddSpr = 0;					-- ·ÖÅäÔÚÁéÆøÉÏµÄÊ£ÓàµãÊý.
-local g_AddCon = 0;					-- ·ÖÅäÔÚÌåÖÊÉÏµÄÊ£ÓàµãÊý.
-local g_AddInt = 0;					-- ·ÖÅäÔÚ¶¨Á¦ÉÏµÄÊ£ÓàµãÊý.
-local g_AddDex = 0;					-- ·ÖÅäÔÚÉí·¨ÉÏµÄÊ£ÓàµãÊý.
+local g_AddStr = 0;					-- ???????????.
+local g_AddSpr = 0;					-- ???????????.
+local g_AddCon = 0;					-- ???????????.
+local g_AddInt = 0;					-- ???????????.
+local g_AddDex = 0;					-- ???????????.
 
-local g_CurRemainPoint = 0;				-- ·ÖÅäºóµÄÊ£ÓàµãÊý
+local g_CurRemainPoint = 0;				-- ????????
 
 -- ÊÇ·ñ´ò¿ª³ÆºÅ½çÃæ
 local g_bOpenTitleDlg = 0;
 local SELFEQUIP_TAB_TEXT = {};
-local LEVEL_MAX_ENABLE =119;	--×î´óÔÊÐíµÈ¼¶
+local LEVEL_MAX_ENABLE =119;	--??????
 
 local g_PropertyTable = {}
 
@@ -89,20 +89,20 @@ local g_XiulianTipTable = {"#{XL_XML_90}","#{XL_XML_91}","#{XL_XML_92}","#{XL_XM
 
 --------------------------------------------
 -- Ìá¹©³¤°´×ó¼ü½øÐÐÁ¬¼ÓµÄ¹¦ÄÜ	-- HenryFour@2010-04-16
-local g_AutoClick_BtnFlag = -1			-- ¼ÇÂ¼µ±Ç°Êó±ê×ó¼üÊÇÔÚÄÄ¸ö°´Å¥°´ÏÂ
-local g_AutoClickTimer_Step = 100		-- ¶àÉÙÊ±¼ä(ºÁÃë)Ä£ÄâÒ»´Î Click ²Ù×÷
-local g_AutoClick_FunList = {}			-- ½«¹«ÓÃÒ»¸ö Timer µÄ»Øµ÷¹¦ÄÜº¯Êý·Åµ½Ò»¸öÊý×é
-local g_AutoClick_Going = -1			-- ±êÖ¾ÊÇ·ñ¿ªÊ¼×Ô¶¯µã»÷²Ù×÷(µÚÒ»´ÎLButtonºó¾­¹ýX¸öTimer²ÅËã¿ªÊ¼, Ò²¾ÍÊÇËµÊÇ g_AutoClickTimer_Step * X µÄÊ±ºò¿ªÊ¼½øÐÐ×Ô¶¯¼Ó, ÕâÑùÎªÁË·ÀÖ¹±¾À´Òªµã»÷Ò»ÏÂµÄ½á¹ûµãÁËºÃ¶àÏÂ)
+local g_AutoClick_BtnFlag = -1			-- ????????????????
+local g_AutoClickTimer_Step = 100		-- ????(??)???? Click ??
+local g_AutoClick_FunList = {}			-- ????? Timer ?????????????
+local g_AutoClick_Going = -1			-- ????????????(???LButton???X?Timer????, ????? g_AutoClickTimer_Step * X ??????????, ?????????????????????)
 
 function SelfEquip_PreLoad()
 
 	-- ´ò¿ª½çÃæ
 	this:RegisterEvent("OPEN_EQUIP");
 
-	-- ¹Ø±Õ½çÃæ
+	-- ¹Ø± ½çÃæ
 	this:RegisterEvent("CLOSE_EQUIP");	
 	
-	--Àë¿ª³¡¾°£¬×Ô¶¯¹Ø±Õ
+	--Àë¿ª³¡¾°£¬×Ô¶¯¹Ø± 
 	this:RegisterEvent("PLAYER_LEAVE_WORLD");
 
 	-- ¸üÐÂ×°±¸
@@ -112,7 +112,7 @@ function SelfEquip_PreLoad()
 	this:RegisterEvent("UNIT_MAX_HP");
 	this:RegisterEvent("UNIT_MP");
 	this:RegisterEvent("UNIT_MAX_MP");
-	this:RegisterEvent("UNIT_RAGE");			-- ×¢²áÅ­Æø
+	this:RegisterEvent("UNIT_RAGE");			-- ????
 
 
 	this:RegisterEvent("UNIT_EXP");
@@ -138,7 +138,7 @@ function SelfEquip_PreLoad()
 	this:RegisterEvent("UNIT_MISS");
 	this:RegisterEvent("UNIT_CRITICAL_ATTACK");
 	this:RegisterEvent("UNIT_CRITICAL_DEFENCE");
-	this:RegisterEvent("CUR_TITLE_CHANGED"); 		--µ±Ç°³ÆºÅ¸Ä±ä
+	this:RegisterEvent("CUR_TITLE_CHANGED"); 		--??????
 	this:RegisterEvent("UNIT_XIULIAN_ATT_PHYSICS");
 	this:RegisterEvent("UNIT_XIULIAN_ATT_MAGIC");
 	this:RegisterEvent("UNIT_XIULIAN_DEF_PHYSICS");
@@ -146,31 +146,31 @@ function SelfEquip_PreLoad()
 	this:RegisterEvent("UNIT_XIULIAN_HIT");
 	this:RegisterEvent("UNIT_XIULIAN_MISS");
 
-	this:RegisterEvent("UNIT_DEF_COLD");				--·ÀÓùÊôÐÔ
+	this:RegisterEvent("UNIT_DEF_COLD");				--????
 	this:RegisterEvent("UNIT_DEF_FIRE");
 	this:RegisterEvent("UNIT_DEF_LIGHT");
 	this:RegisterEvent("UNIT_DEF_POSION");
 	this:RegisterEvent("UNIT_MENPAI");
 
-	this:RegisterEvent("UNIT_ATT_COLD");				--¹¥»÷ÊôÐÔ
+	this:RegisterEvent("UNIT_ATT_COLD");				--????
 	this:RegisterEvent("UNIT_ATT_FIRE");
 	this:RegisterEvent("UNIT_ATT_LIGHT");
 	this:RegisterEvent("UNIT_ATT_POSION");
 
-	this:RegisterEvent("UNIT_RESISTOTHER_COLD");			--¼õ¿¹ÊôÐÔ
+	this:RegisterEvent("UNIT_RESISTOTHER_COLD");			--????
 	this:RegisterEvent("UNIT_RESISTOTHER_FIRE");
 	this:RegisterEvent("UNIT_RESISTOTHER_LIGHT");
 	this:RegisterEvent("UNIT_RESISTOTHER_POSION");
 
-	this:RegisterEvent("UNIT_VIGOR");		-- ×¢²á»îÁ¦Öµ
-	this:RegisterEvent("UNIT_ENERGY");	-- ×¢²á¾«Á¦Öµ
+	this:RegisterEvent("UNIT_VIGOR");		-- ?????
+	this:RegisterEvent("UNIT_ENERGY");	-- ?????
 	this:RegisterEvent("UINT_IBPOWER")
 
 
-	this:RegisterEvent("GUILD_SHOW_MYGUILDNAME"); --°ï»áÐÅÏ¢¸üÐÂ
+	this:RegisterEvent("GUILD_SHOW_MYGUILDNAME"); --??????
 
 
-	-- ÊÖ¶¯µ÷ÕûµãÊý³É¹¦
+	-- ÊÖ¶¯µ÷ ûµãÊý³É¹¦
 	this:RegisterEvent("MANUAL_ATTR_SUCCESS_EQUIP");
 
 	this:RegisterEvent("UPDATE_DUR");
@@ -178,9 +178,9 @@ function SelfEquip_PreLoad()
 	this:RegisterEvent("SEX_CHANGED");
 
 	-- FakeObjectÄ£ÐÍ½çÃæ»¥³â
-	this:RegisterEvent("OPEN_SHOP_FITTING");						-- Ôª±¦ÉÌµêÊÔÒÂ¼ä
-	this:RegisterEvent("OPEN_DRESS_PAINT_FITTING");			-- Ê±×°È¾É«ÊÔÒÂ¼ä
-	this:RegisterEvent("OPEN_DRESS_ENCHASE_FITTING");		-- Ê±×°ÏâÇ¶ÊÔÒÂ¼ä
+	this:RegisterEvent("OPEN_SHOP_FITTING");						-- ???????
+	this:RegisterEvent("OPEN_DRESS_PAINT_FITTING");			-- ???????
+	this:RegisterEvent("OPEN_DRESS_ENCHASE_FITTING");		-- ???????
 
 	this:RegisterEvent("UPDATE_EXTERIOR_TIP")
 	this:RegisterEvent("FINISH_MISSION")	
@@ -192,20 +192,20 @@ end
 function SelfEquip_OnLoad()
 
 	-- action buttion °´Å¥
-	g_WEAPON   = SelfEquip_11;		--ÎäÆ÷
-	g_ARMOR    = SelfEquip_12;		--ÒÂ·þ
-	g_CAP      = SelfEquip_1;		--Ã±×Ó
-	g_CUFF     = SelfEquip_4;		--ÊÖÌ×
-	g_BOOT     = SelfEquip_6;		--Ð¬
-	g_RING     = SelfEquip_7;		--½äÖ¸
-	g_SASH     = SelfEquip_5;		--Ñü´ø
-	g_NECKLACE = SelfEquip_13;		--ÏîÁ´
-	g_Dark	   = SelfEquip_14;		--°µÆ÷
-	g_RING_2	 = SelfEquip_8;		--½äÖ¸2
-	g_CHARM		 = SelfEquip_9;		--»¤·û
-	g_CHARM_2	 = SelfEquip_10;		--»¤·û2
-	g_WRIST		 = SelfEquip_3;		--»¤Íó
-	g_SHOULDER = SelfEquip_2;		--»¤¼ç
+	g_WEAPON   = SelfEquip_11;		--??
+	g_ARMOR    = SelfEquip_12;		--??
+	g_CAP      = SelfEquip_1;		--??
+	g_CUFF     = SelfEquip_4;		--??
+	g_BOOT     = SelfEquip_6;		--?
+	g_RING     = SelfEquip_7;		--??
+	g_SASH     = SelfEquip_5;		--??
+	g_NECKLACE = SelfEquip_13;		--??
+	g_Dark	   = SelfEquip_14;		--??
+	g_RING_2	 = SelfEquip_8;		--??2
+	g_CHARM		 = SelfEquip_9;		--??
+	g_CHARM_2	 = SelfEquip_10;		--??2
+	g_WRIST		 = SelfEquip_3;		--??
+	g_SHOULDER = SelfEquip_2;		--??
 
 	g_EquipMask[0]	= SelfEquip_11_Mask;
 	g_EquipMask[2]	= SelfEquip_12_Mask;
@@ -235,10 +235,10 @@ function SelfEquip_OnLoad()
     g_PropertyTable[11] = SelfEquip_Perporty6_Plus;
 
 	SELFEQUIP_TAB_TEXT = {
-		[0] = "×°±¸",
-		"×ÊÁÏ",
-		"ÕäÊÞ",
-		"ÆäËû",
+		[0] = "Trang b¸",
+		"Tß li®u",
+		"Trân Thú",
+		"M£t khác",
 	};
 
 	g_AutoClick_FunList[1] = SelfEquip_Add1_Click
@@ -302,13 +302,13 @@ function SelfEquip_OnEvent(event)
 	SelfEquip_SetStateTooltip();
 
 	-- FakeObjectÄ£ÐÍ½çÃæ»¥³â
-	if ( event == "OPEN_SHOP_FITTING" ) or								-- Ôª±¦ÉÌµêÊÔÒÂ¼ä
-		 ( event == "OPEN_DRESS_PAINT_FITTING" ) or					-- Ê±×°È¾É«ÊÔÒÂ¼ä
+	if ( event == "OPEN_SHOP_FITTING" ) or								-- ???????
+		 ( event == "OPEN_DRESS_PAINT_FITTING" ) or					-- ???????
 		 ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or 
 		 ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) or 
-		 ( event == "OPEN_DRESSPREVIEW") or --Ê±×°Ô¤ÀÀ
-		 ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or --±äÐÔ
-		 ( event == "OPEN_DRESS_ENCHASE_FITTING" ) then			-- Ê±×°ÏâÇ¶ÊÔÒÂ¼ä
+		 ( event == "OPEN_DRESSPREVIEW") or --????
+		 ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or --??
+		 ( event == "OPEN_DRESS_ENCHASE_FITTING" ) then			-- ???????
 		if (this:IsVisible()) then
 			SelfEquip_CloseUI();
 			return
@@ -332,7 +332,7 @@ function SelfEquip_OnEvent(event)
 		Equip_OnUpdateShow();
 		Equip_RefreshEquip();
 
-		--ÔÚ´ò¿ªµÄÊ±ºò£¬½«ÊôÐÔÒ³µÄÈ±Ê¡Ò³½øÐÐµ÷Õû
+		--ÔÚ´ò¿ªµÄÊ±ºò£¬½«ÊôÐÔÒ³µÄÈ±Ê¡Ò³½øÐÐµ÷ û
 		SelfEquip_SelfEquip:SetCheck(1);
 		SelfEquip_SelfData:SetCheck(0);
 		SelfEquip_Pet:SetCheck(0);
@@ -348,7 +348,7 @@ function SelfEquip_OnEvent(event)
 		SelfEquip_UpdateRedPoint()
 	end
 
-	-- ¹Ø±Õ½çÃæ
+	-- ¹Ø± ½çÃæ
 	if ( event == "CLOSE_EQUIP" ) then
 		if (this:IsVisible()) then
 			SelfEquip_CloseUI();
@@ -439,8 +439,8 @@ function SelfEquip_OnEvent(event)
 			SelfEquip_Exp1:SetText( "#cC8B88E"..tostring( g_RequireExperience ) );
 			SelfData_Exp1_UpdateTips();
 
-			SelfData_LevelUpLock_UpdateTip()--Éý¼¶tip¸ü¸Ä Éý¼¶Ëø
-			-- ¸ù¾Ý¾­Ñé½ûÖ¹»òÕß´ò¿ªÉý¼¶
+			SelfData_LevelUpLock_UpdateTip()--??tip?? ???
+			-- ¸ù¾Ý¾­Ñé½ûÖ¹»ò ß´ò¿ªÉý¼¶
 			if(nNumber >= g_RequireExperience and tonumber(Player:GetData("LEVEL"))<LEVEL_MAX_ENABLE) then
 
 				SelfEquip_UpLevel:Enable();
@@ -541,7 +541,7 @@ function SelfEquip_OnEvent(event)
 		--DEF_PHYSICS
 		elseif(event == "UNIT_DEF_PHYSICS" and arg0 == "player") then
 			nNumber = Player:GetData("DEF_PHYSICS");
-			if nNumber > 999999 then --Îª°ïÕ½ÐÞ¸ÄµÄ modified by hukai
+			if nNumber > 999999 then --?????? modified by hukai
 				SelfEquip_Perporty3:SetText( "??????" );
 			else
 				SelfEquip_Perporty3:SetText( tostring( nNumber ) );
@@ -572,7 +572,7 @@ function SelfEquip_OnEvent(event)
 		--DEF_MAGIC
 		elseif(event == "UNIT_DEF_MAGIC" and arg0 == "player") then
 			nNumber = Player:GetData("DEF_MAGIC");
-			if nNumber > 999999 then --Îª°ïÕ½ÐÞ¸ÄµÄ modified by hukai
+			if nNumber > 999999 then --?????? modified by hukai
 				SelfEquip_Perporty4:SetText( "??????" );
 			else
 				SelfEquip_Perporty4:SetText( tostring( nNumber ) );
@@ -690,7 +690,7 @@ function SelfEquip_OnEvent(event)
 			SelfEquip_UpdateMask();
 		else
 
-			-- ²»ÒªÄ¬ÈÏµÄÇé¿öÏÂµ÷ÓÃÕâ¸öº¯Êý£¬ »áÔì³ÉÊôÐÔµãÊýÄªÃûÆäÃîµÄË¢ÐÂ¡£
+			-- ²»ÒªÄ¬ÈÏµÄÇé¿öÏÂµ÷ÓÃ â¸öº¯Êý£¬ »áÔì³ÉÊôÐÔµãÊýÄªÃûÆäÃîµÄË¢ÐÂ¡£
 			-- 2006-3-23
 			--Equip_OnUpdateShow();
 		end
@@ -722,16 +722,16 @@ function Equip_OnUpdateShow()
 
 
 
-	g_RemainPoint 			= 0;	-- Ê£ÓàµãÊý
-	g_CurExperience 	  = 0;	-- µ±Ç°Ê£Óà¾­Ñé
-	g_RequireExperience = 0;  -- Éý¼¶ËùÐè¾­Ñé
+	g_RemainPoint 			= 0;	-- ????
+	g_CurExperience 	  = 0;	-- ??????
+	g_RequireExperience = 0;  -- ??????
 
-	g_AddStr = 0;					-- ·ÖÅäÔÚÁ¦Á¿ÉÏµÄÊ£ÓàµãÊý.
-	g_AddSpr = 0;					-- ·ÖÅäÔÚÁéÆøÉÏµÄÊ£ÓàµãÊý.
-	g_AddCon = 0;					-- ·ÖÅäÔÚÌåÖÊÉÏµÄÊ£ÓàµãÊý.
-	g_AddInt = 0;					-- ·ÖÅäÔÚ¶¨Á¦ÉÏµÄÊ£ÓàµãÊý.
-	g_AddDex = 0;					-- ·ÖÅäÔÚÉí·¨ÉÏµÄÊ£ÓàµãÊý.
-	g_CurRemainPoint = 0;	-- ·ÖÅäºóµÄÊ£ÓàµãÊý
+	g_AddStr = 0;					-- ???????????.
+	g_AddSpr = 0;					-- ???????????.
+	g_AddCon = 0;					-- ???????????.
+	g_AddInt = 0;					-- ???????????.
+	g_AddDex = 0;					-- ???????????.
+	g_CurRemainPoint = 0;	-- ????????
 
 
 	local nNumber=0;
@@ -800,8 +800,8 @@ function Equip_OnUpdateShow()
 	SelfEquip_Exp1:SetText( NeedExpText );
 	SelfData_Exp1_UpdateTips();
 
-	SelfData_LevelUpLock_UpdateTip()--Éý¼¶tip¸ü¸Ä Éý¼¶Ëø
-	-- ¸ù¾Ý¾­Ñé½ûÖ¹»òÕß´ò¿ªÉý¼¶
+	SelfData_LevelUpLock_UpdateTip()--??tip?? ???
+	-- ¸ù¾Ý¾­Ñé½ûÖ¹»ò ß´ò¿ªÉý¼¶
 	if(g_CurExperience >= g_RequireExperience) then
 
 		SelfEquip_UpLevel:Enable();
@@ -812,7 +812,7 @@ function Equip_OnUpdateShow()
 
 	-- µÃµ½µÈ¼¶
 	nNumber = Player:GetData( "LEVEL" );
-	local LevelText = tostring( nNumber ).." ¼¶";
+	local LevelText = tostring( nNumber ).." C¤p";
 	LevelText = "#cC8B88E"..LevelText;
 	SelfEquip_Level:SetText( LevelText );
 
@@ -869,7 +869,7 @@ function Equip_OnUpdateShow()
 
 	-- ÎïÀí·ÀÓù
 	nNumber = Player:GetData("DEF_PHYSICS");
-	if nNumber > 999999 then --Îª°ïÕ½ÐÞ¸ÄµÄ modified by hukai
+	if nNumber > 999999 then --?????? modified by hukai
 		SelfEquip_Perporty3:SetText( "??????" );
 	else
 		SelfEquip_Perporty3:SetText( tostring( nNumber ) );
@@ -881,7 +881,7 @@ function Equip_OnUpdateShow()
 
 	-- Ä§·¨·ÀÓù
 	nNumber = Player:GetData("DEF_MAGIC");
-	if nNumber > 999999 then --Îª°ïÕ½ÐÞ¸ÄµÄ modified by hukai
+	if nNumber > 999999 then --?????? modified by hukai
 		SelfEquip_Perporty4:SetText( "??????" );
 	else
 		SelfEquip_Perporty4:SetText( tostring( nNumber ) );
@@ -980,37 +980,37 @@ function Equip_OnUpdateShow()
 	SelfEquip_PeakLevel:SetText(ScriptGlobal_Format("#{DFJC_250709_67}",GetDFengLevel()))
 	-- µÃµ½ÃÅÅÉÃû³Æ.
 	if(0 == menpai) then
-		strName = "ÉÙÁÖ";
+		strName = "Thiªu Lâm";
 
 	elseif(1 == menpai) then
-		strName = "Ã÷½Ì";
+		strName = "Minh Giáo";
 
 	elseif(2 == menpai) then
-		strName = "Ø¤°ï";
+		strName = "Cái Bang";
 
 	elseif(3 == menpai) then
-		strName = "Îäµ±";
+		strName = "Võ Ðang";
 
 	elseif(4 == menpai) then
-		strName = "¶ëáÒ";
+		strName = "Nga Mi";
 
 	elseif(5 == menpai) then
-		strName = "ÐÇËÞ";
+		strName = "Tinh Túc";
 
 	elseif(6 == menpai) then
-		strName = "ÌìÁú";
+		strName = "Thiên Long";
 
 	elseif(7 == menpai) then
-		strName = "ÌìÉ½";
+		strName = "Thiên S½n";
 
 	elseif(8 == menpai) then
-		strName = "åÐÒ£";
+		strName = "Tiêu dao";
 
 	elseif(9 == menpai) then
-		strName = "ÎÞÃÅÅÉ";
+		strName = "Tñ do";
 
 	elseif(10== menpai) then
-		strName = "ÂüÍÓÉ½×¯";
+		strName = "MÕn Ðà S½n Trang";
 	end
 	
 	local secttype = DataPool:GetSectType()
@@ -1023,10 +1023,10 @@ function Equip_OnUpdateShow()
 			SelfEquip_MenPai:SetText(strName);
 		else
 			if menpai == 10 then
-				strName = "ÂüÍÓ";
+				strName = "MÕn Ðà";
 			end
 			local sectname = DataPool:Lua_GetSectName(menpai,secttype)
-			SelfEquip_MenPai:SetText(strName.."¡¤"..sectname);
+			SelfEquip_MenPai:SetText(strName.."·"..sectname);
 		end
 
 	end
@@ -1046,21 +1046,21 @@ end
 function Equip_RefreshEquip()
 
 
-	--  Çå¿Õ°´Å¥ÏÔÊ¾Í¼±ê
-	g_WEAPON:SetActionItem(-1);			--ÎäÆ÷
-	g_CAP:SetActionItem(-1);				--Ã±×Ó
-	g_ARMOR:SetActionItem(-1);			--¿ø¼×
-	g_CUFF:SetActionItem(-1);				--ÊÖÌ×
-	g_BOOT:SetActionItem(-1);				--Ð¬
-	g_SASH:SetActionItem(-1);				--Ñü´ø
-	g_RING:SetActionItem(-1);				--½äÖ¸
-	g_NECKLACE:SetActionItem(-1);		--ÏîÁ´
-	g_Dark:SetActionItem(-1);			--°µÆ÷
-	g_RING_2:SetActionItem(-1);			--½äÖ¸2
-	g_CHARM:SetActionItem(-1);			--»¤·û
-	g_CHARM_2:SetActionItem(-1);		--»¤·û2
-	g_WRIST:SetActionItem(-1);			--»¤Íó
-	g_SHOULDER:SetActionItem(-1);		--»¤¼ç
+	--  Çå¿ °´Å¥ÏÔÊ¾Í¼±ê
+	g_WEAPON:SetActionItem(-1);			--??
+	g_CAP:SetActionItem(-1);				--??
+	g_ARMOR:SetActionItem(-1);			--??
+	g_CUFF:SetActionItem(-1);				--??
+	g_BOOT:SetActionItem(-1);				--?
+	g_SASH:SetActionItem(-1);				--??
+	g_RING:SetActionItem(-1);				--??
+	g_NECKLACE:SetActionItem(-1);		--??
+	g_Dark:SetActionItem(-1);			--??
+	g_RING_2:SetActionItem(-1);			--??2
+	g_CHARM:SetActionItem(-1);			--??
+	g_CHARM_2:SetActionItem(-1);		--??2
+	g_WRIST:SetActionItem(-1);			--??
+	g_SHOULDER:SetActionItem(-1);		--??
 	SelfEquip_15:SetActionItem(-1)
 	
 	local ActionWeapon 		= EnumAction(0, "equip");
@@ -1079,20 +1079,20 @@ function Equip_RefreshEquip()
 	local ActionShoulder  = EnumAction(15, "equip");
 
 	-- ÏÔÊ¾ÈËÉíÉÏµÄÎäÆ÷×°±¸
-	g_WEAPON:SetActionItem(ActionWeapon:GetID());			--ÎäÆ÷
-	g_CAP:SetActionItem(ActionCap:GetID());						--Ã±×Ó
-	g_ARMOR:SetActionItem(ActionArmor:GetID());				--¿ø¼×
-	g_CUFF:SetActionItem(ActionCuff:GetID());					--»¤Íó
-	g_BOOT:SetActionItem(ActionBoot:GetID());					--Ð¬
-	g_SASH:SetActionItem(ActionSash:GetID());					--Ñü´ø
-	g_RING:SetActionItem(ActionRing:GetID());					--½ä×Ó
-	g_NECKLACE:SetActionItem(ActionNecklace:GetID());	--ÏîÁ´
-	g_Dark:SetActionItem(ActionMount:GetID());				--°µÆ÷
-	g_RING_2:SetActionItem(ActionRing_2:GetID());			--½äÖ¸2
-	g_CHARM:SetActionItem(ActionCharm:GetID());			--»¤·û
-	g_CHARM_2:SetActionItem(ActionCharm_2:GetID());		--»¤·û2
-	g_WRIST:SetActionItem(ActionWrist:GetID());			--»¤Íó
-	g_SHOULDER:SetActionItem(ActionShoulder:GetID());		--»¤¼ç
+	g_WEAPON:SetActionItem(ActionWeapon:GetID());			--??
+	g_CAP:SetActionItem(ActionCap:GetID());						--??
+	g_ARMOR:SetActionItem(ActionArmor:GetID());				--??
+	g_CUFF:SetActionItem(ActionCuff:GetID());					--??
+	g_BOOT:SetActionItem(ActionBoot:GetID());					--?
+	g_SASH:SetActionItem(ActionSash:GetID());					--??
+	g_RING:SetActionItem(ActionRing:GetID());					--??
+	g_NECKLACE:SetActionItem(ActionNecklace:GetID());	--??
+	g_Dark:SetActionItem(ActionMount:GetID());				--??
+	g_RING_2:SetActionItem(ActionRing_2:GetID());			--??2
+	g_CHARM:SetActionItem(ActionCharm:GetID());			--??
+	g_CHARM_2:SetActionItem(ActionCharm_2:GetID());		--??2
+	g_WRIST:SetActionItem(ActionWrist:GetID());			--??
+	g_SHOULDER:SetActionItem(ActionShoulder:GetID());		--??
 	
 	local ActionSB  = EnumAction(37, "equip")
 	SelfEquip_15:SetActionItem(ActionSB:GetID())
@@ -1106,93 +1106,93 @@ function SelfEquip_Equip_Click( nTypeIn,buttonIn )
 	local button = tonumber( buttonIn );
 	if( nType == 11 ) then
 		if( button == 1 ) then
-			g_WEAPON:DoAction();	--ÎäÆ÷
+			g_WEAPON:DoAction();	--??
 		else
-			g_WEAPON:DoSubAction();	--ÎäÆ÷
+			g_WEAPON:DoSubAction();	--??
 		end
 	elseif( nType == 12 ) then
 		if( button == 1 ) then
-			g_ARMOR:DoAction();	--ÒÂ·þ
+			g_ARMOR:DoAction();	--??
 		else
-			g_ARMOR:DoSubAction();	--ÒÂ·þ
+			g_ARMOR:DoSubAction();	--??
 		end
 	elseif( nType == 1 ) then
 		if( button == 1 ) then
-			g_CAP:DoAction();	--Ã±×Ó
+			g_CAP:DoAction();	--??
 		else
-			g_CAP:DoSubAction();	--Ã±×Ó
+			g_CAP:DoSubAction();	--??
 		end
 	elseif( nType == 4 ) then
 		if( button == 1 ) then
-			g_CUFF:DoAction();	--ÊÖÌ×
+			g_CUFF:DoAction();	--??
 		else
-			g_CUFF:DoSubAction();	--ÊÖÌ×
+			g_CUFF:DoSubAction();	--??
 		end
 	elseif( nType == 6 ) then
 		if( button == 1 ) then
-			g_BOOT:DoAction();	--Ð¬
+			g_BOOT:DoAction();	--?
 		else
-			g_BOOT:DoSubAction();	--Ð¬
+			g_BOOT:DoSubAction();	--?
 		end
 	elseif( nType == 7 ) then
 		if( button == 1 ) then
-			g_RING:DoAction();	--½äÖ¸
+			g_RING:DoAction();	--??
 		else
-			g_RING:DoSubAction();	--½äÖ¸
+			g_RING:DoSubAction();	--??
 		end
 	elseif( nType == 5 ) then
 		if( button == 1 ) then
-			g_SASH:DoAction();	--Ñü´ø
+			g_SASH:DoAction();	--??
 		else
-			g_SASH:DoSubAction();	--Ñü´ø
+			g_SASH:DoSubAction();	--??
 		end
 	elseif( nType == 13) then
 		if( button == 1 ) then
-			g_NECKLACE:DoAction();	--ÏîÁ´
+			g_NECKLACE:DoAction();	--??
 		else
-			g_NECKLACE:DoSubAction();	--ÏîÁ´
+			g_NECKLACE:DoSubAction();	--??
 		end
 	elseif( nType == 14 ) then
 		if( button == 1 ) then
-			g_Dark:DoAction();	--°µÆ÷
+			g_Dark:DoAction();	--??
 		else
-			g_Dark:DoSubAction();	--°µÆ÷
+			g_Dark:DoSubAction();	--??
 		end
 	elseif( nType == 2 ) then
 		if( button == 1 ) then
-			g_SHOULDER:DoAction();	--»¤¼ç
+			g_SHOULDER:DoAction();	--??
 		else
-			g_SHOULDER:DoSubAction();	--»¤¼ç
+			g_SHOULDER:DoSubAction();	--??
 		end
 	elseif( nType == 3 ) then
 		if( button == 1 ) then
-			g_WRIST:DoAction();	--»¤Íó
+			g_WRIST:DoAction();	--??
 		else
-			g_WRIST:DoSubAction();	--»¤Íó
+			g_WRIST:DoSubAction();	--??
 		end
 	elseif( nType == 8 ) then
 		if( button == 1 ) then
-			g_RING_2:DoAction();	--½äÖ¸2
+			g_RING_2:DoAction();	--??2
 		else
-			g_RING_2:DoSubAction();	--½äÖ¸
+			g_RING_2:DoSubAction();	--??
 		end
 	elseif( nType == 9 ) then
 		if( button == 1 ) then
-			g_CHARM:DoAction();	--»¤·û
+			g_CHARM:DoAction();	--??
 		else
-			g_CHARM:DoSubAction();	--»¤·û
+			g_CHARM:DoSubAction();	--??
 		end
 	elseif( nType == 10 ) then
 		if( button == 1 ) then
-			g_CHARM_2:DoAction();	--»¤·û2
+			g_CHARM_2:DoAction();	--??2
 		else
-			g_CHARM_2:DoSubAction();	--»¤·û2
+			g_CHARM_2:DoSubAction();	--??2
 		end
 	elseif nType == 15 then
 		if button == 1 then
-			SelfEquip_15:DoAction()	--Éñ±ø
+			SelfEquip_15:DoAction()	--??
 		else
-			SelfEquip_15:DoSubAction()	--Éñ±ø
+			SelfEquip_15:DoSubAction()	--??
 		end
 	end
 end
@@ -1669,15 +1669,15 @@ end
 
 ---------------------------------------------------------------------------------
 --
--- ÊÖ¶¯µ÷Õû³É¹¦
+-- ÊÖ¶¯µ÷ û³É¹¦
 --
 function SelfEquip_ManualAttr_Success()
 
-	g_AddStr = 0;					-- ·ÖÅäÔÚÁ¦Á¿ÉÏµÄÊ£ÓàµãÊý.
-	g_AddSpr = 0;					-- ·ÖÅäÔÚÁéÆøÉÏµÄÊ£ÓàµãÊý.
-	g_AddCon = 0;					-- ·ÖÅäÔÚÌåÖÊÉÏµÄÊ£ÓàµãÊý.
-	g_AddInt = 0;					-- ·ÖÅäÔÚ¶¨Á¦ÉÏµÄÊ£ÓàµãÊý.
-	g_AddDex = 0;					-- ·ÖÅäÔÚÉí·¨ÉÏµÄÊ£ÓàµãÊý.
+	g_AddStr = 0;					-- ???????????.
+	g_AddSpr = 0;					-- ???????????.
+	g_AddCon = 0;					-- ???????????.
+	g_AddInt = 0;					-- ???????????.
+	g_AddDex = 0;					-- ???????????.
 
 	-- ½ûÖ¹ËùÓÐ¼õÉÙµãÊý°´Å¥
 	DisablePointDecButtion();
@@ -1710,7 +1710,7 @@ end
 --
 function OpenConfraternity_click()
 
-	-- ´ò¿ª»ò¹Ø±Õ°ï»á½çÃæ
+	-- ´ò¿ª»ò¹Ø± °ï»á½çÃæ
 	Guild:ToggleGuildDetailInfo();
 end
 
@@ -1807,10 +1807,10 @@ function SelfEquip_SetStateTooltip()
 	local iThunderResistLimit = Player:GetData("SUBRESISTLIMITLIGHT")
 	local iPoisonResistLimit = Player:GetData("SUBRESISTLIMITPOISON")
 	
-	SelfEquip_IceFastness:SetToolTip("±ù¹¥:"..tostring(iIceAttack).."#r±ù¿¹:"..tostring(iIceDefine).."#r¼õ±ù¿¹:"..tostring(iIceResistOther).."#{JKXX_091228_1}"..tostring(iIceResistLimit) );
-	SelfEquip_FireFastness:SetToolTip("»ð¹¥:"..tostring(iFireAttack).."#r»ð¿¹:"..tostring(iFireDefine).."#r¼õ»ð¿¹:"..tostring(iFireResistOther).."#{JKXX_091228_2}"..tostring(iFireResistLimit) );
-	SelfEquip_ThunderFastness:SetToolTip("Ðþ¹¥:"..tostring(iThunderAttack).."#rÐþ¿¹:"..tostring(iThunderDefine).."#r¼õÐþ¿¹:"..tostring(iThunderResistOther).."#{JKXX_091228_3}"..tostring(iThunderResistLimit) );
-	SelfEquip_PoisonFastness:SetToolTip("¶¾¹¥:"..tostring(iPoisonAttack).."#r¶¾¿¹:"..tostring(iPoisonDefine).."#r¼õ¶¾¿¹:"..tostring(iPoisonResistOther).."#{JKXX_091228_4}"..tostring(iPoisonResistLimit) );
+	SelfEquip_IceFastness:SetToolTip("Bång công:"..tostring(iIceAttack).."#rBång Kháng:"..tostring(iIceDefine).."#rGiäm Bång Kháng:"..tostring(iIceResistOther).."#{JKXX_091228_1}"..tostring(iIceResistLimit) );
+	SelfEquip_FireFastness:SetToolTip("Höa công:"..tostring(iFireAttack).."#rHoä Kháng:"..tostring(iFireDefine).."#rGiäm Hoä Kháng:"..tostring(iFireResistOther).."#{JKXX_091228_2}"..tostring(iFireResistLimit) );
+	SelfEquip_ThunderFastness:SetToolTip("Huy«n công:"..tostring(iThunderAttack).."#rHuy«n Kháng:"..tostring(iThunderDefine).."#rGiäm Huy«n Kháng:"..tostring(iThunderResistOther).."#{JKXX_091228_3}"..tostring(iThunderResistLimit) );
+	SelfEquip_PoisonFastness:SetToolTip("Ðµc công:"..tostring(iPoisonAttack).."#rÐµc Kháng:"..tostring(iPoisonDefine).."#rGiäm Ðµc Kháng:"..tostring(iPoisonResistOther).."#{JKXX_091228_4}"..tostring(iPoisonResistLimit) );
 
 end
 
@@ -1855,12 +1855,12 @@ end
 
 ----------------------------------------------------------------------------------------
 --
--- ¹Ø±Õ½çÃæ
+-- ¹Ø± ½çÃæ
 --
 
 function SelfEquip_CloseUI()
 
-	-- ´ò¿ª»òÕß¹Ø±Õ³ÆºÅ½çÃæ
+	-- ´ò¿ª»ò ß¹Ø± ³ÆºÅ½çÃæ
 	CloseTitleList()
 	SelfEquip_FakeObject:SetFakeObject("")
 	SelfEquip_Close()
@@ -2010,7 +2010,7 @@ function SelfEquip_AskLevelup()
 
     local strMasterName = GetMasterName()
 
-    if "" ~= strMasterName then   --¿Õ´®±íÊ¾ÔÚºÃÓÑÁÐ±íÖÐÃ»ÓÐÕÒµ½Ê¦¸¸Ãû×Ö,ôßÃ»ÓÐÊ¦¸¸
+    if "" ~= strMasterName then   --??????????????????,?????
         local ListSize = table.getn( EvaluateLevelList )
 		for i = 1, ListSize do
 			if EvaluateLevelList[ i ] == ( PlayerLevel+1 ) and PlayerLevel < 45 then
@@ -2053,7 +2053,7 @@ function SelfEquip_Page_Talent()
 	end
 end
 
---ÇÐ»»¸öÈËÕ¹Ê¾½çÃæ
+--ÇÐ»»¸öÈË ¹Ê¾½çÃæ
 function SelfEquip_Profile_Switch()
 	Variable:SetVariable("SelfUnionPos", SelfEquip_Frame:GetProperty("UnifiedPosition"), 1);	
 	Exterior:LuaFnExteriorPlayerOpenProfileUI()	
@@ -2111,11 +2111,11 @@ end
 
 -- ÖØÖÃÈËÎï½ÇÉ«µÄÊ£ÓàÊôÐÔµãºÍÒÑ¾­·ÖÅäµÄÊôÐÔµã
 function SelfEquip_ResetCharRemainPoint()
-	g_AddStr = 0;					-- ·ÖÅäÔÚÁ¦Á¿ÉÏµÄÊ£ÓàµãÊý.
-	g_AddSpr = 0;					-- ·ÖÅäÔÚÁéÆøÉÏµÄÊ£ÓàµãÊý.
-	g_AddCon = 0;					-- ·ÖÅäÔÚÌåÖÊÉÏµÄÊ£ÓàµãÊý.
-	g_AddInt = 0;					-- ·ÖÅäÔÚ¶¨Á¦ÉÏµÄÊ£ÓàµãÊý.
-	g_AddDex = 0;					-- ·ÖÅäÔÚÉí·¨ÉÏµÄÊ£ÓàµãÊý.
+	g_AddStr = 0;					-- ???????????.
+	g_AddSpr = 0;					-- ???????????.
+	g_AddCon = 0;					-- ???????????.
+	g_AddInt = 0;					-- ???????????.
+	g_AddDex = 0;					-- ???????????.
 
 	-- ½ûÓÃÊôÐÔµãµÄÔö¼ÓºÍ¼õÉÙ²Ù×÷
 	DisablePointAddButtion();
@@ -2143,7 +2143,7 @@ function SelfEquip_ResetCharRemainPoint()
 end
 
 --***************************************************
--- Çå¿ÕÊó±ê³¤°´±ê¼Ç
+-- Çå¿ Êó±ê³¤°´±ê¼Ç
 --***************************************************
 function SelfEquip_AutoClick_Clear(id)
 	id = tonumber(id)
@@ -2158,7 +2158,7 @@ end
 --***************************************************
 function SelfEquip_AutoClick_Timer()
 	if (g_AutoClick_BtnFlag ~= -1) then
-		-- µÚÒ»´ÎLButtonºó¾­¹ýX¸öTimer²ÅËã¿ªÊ¼, Ò²¾ÍÊÇËµÊÇ g_AutoClickTimer_Step * X µÄÊ±ºò¿ªÊ¼½øÐÐ×Ô¶¯¼Ó, ÕâÑùÎªÁË·ÀÖ¹±¾À´Òªµã»÷Ò»ÏÂµÄ½á¹ûµãÁËºÃ¶àÏÂ
+		-- µÚÒ»´ÎLButtonºó¾­¹ýX¸öTimer²ÅËã¿ªÊ¼, Ò²¾ÍÊÇËµÊÇ g_AutoClickTimer_Step * X µÄÊ±ºò¿ªÊ¼½øÐÐ×Ô¶¯¼Ó,  âÑùÎªÁË·ÀÖ¹±¾À´Òªµã»÷Ò»ÏÂµÄ½á¹ûµãÁËºÃ¶àÏÂ
 		if (g_AutoClick_Going < 4) then
 			g_AutoClick_Going = g_AutoClick_Going + 1
 			--Ä¿Ç°ÏÈÉèÖÃ 6 Step µÄµÈ´ýÊ±¼ä, ÏÂÃæ×¢ÊÍµÄ´úÂë¿ÉÒÔºóÀ´ÓÃÓÚÊµÏÖÂýÆô¶¯, Öð½¥¼ÓËÙÐ§¹û.
@@ -2173,7 +2173,7 @@ end
 
 --***************************************************
 -- Êó±ê×ó¼üËÉ¿ª²Ù×÷
---    ×¢ÒâÕâÀïÆäÊµÊÇ´úÌæ Click, ËùÒÔÐèÒªÖ´ÐÐÒ»´Î Click ²Ù×÷
+--    ×¢Òâ âÀïÆäÊµÊÇ´úÌæ Click, ËùÒÔÐèÒªÖ´ÐÐÒ»´Î Click ²Ù×÷
 --***************************************************
 function SelfEquip_AutoClick_LButtonUp(id)
 	id = tonumber(id)
@@ -2245,101 +2245,101 @@ function SelfEquip_OnPageClicked(idx)
 	Variable:SetVariable("PageNumber", tostring(idx), 1);
 	idx = g_PageOrder[idx]
 
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		SelfEquip_ClearPage()
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		SelfEquip_Page_SelfData()
-	elseif idx == 3 then--ÕäÊÞ
+	elseif idx == 3 then--??
 		SelfEquip_Page_Pet()
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		SelfEquip_Page_Wuhun()
-	elseif idx == 5 then--ÐÞÁ¶
+	elseif idx == 5 then--??
 		SelfEquip_Page_XiuLian()
-	elseif idx == 6 then--ÎäµÀ
+	elseif idx == 6 then--??
 		SelfEquip_Page_Talent()
-	elseif idx == 7 then--ÁéÓñ
+	elseif idx == 7 then--??
 		SelfEquip_Page_LingYu()
-	elseif idx == 8 then--Éñ±ø
+	elseif idx == 8 then--??
 		SelfEquip_Page_ShenBing()
-	elseif idx == 9 then--µñÎÄ½ø½×
+	elseif idx == 9 then--????
 		SelfEquip_Page_DWJinJie()
-	elseif idx == 10 then--áÛ·å
+	elseif idx == 10 then--??
 		SelfEquip_Page_Peak()
-	elseif idx == 11 then--¸öÈË
+	elseif idx == 11 then--??
 		SelfEquip_Profile_Switch()
-	elseif idx == 12 then--ÆäËû
+	elseif idx == 12 then--??
 		SelfEquip_Page_OtherInfo()
 	end
 end
 
 function SelfEquip_CheckPage(idx)
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--ÕäÊÞ
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--ÐÞÁ¶
+	elseif idx == 5 then--??
 		return 1
-	elseif idx == 6 then--ÎäµÀ
+	elseif idx == 6 then--??
 		return DataPool:Lua_CheckIsShowTalent()
-	elseif idx == 7 then--ÁéÓñ
+	elseif idx == 7 then--??
 		return 1
-	elseif idx == 8 then--Éñ±ø
+	elseif idx == 8 then--??
 		return 1
-	elseif idx == 9 then--µñÎÄ½ø½×
+	elseif idx == 9 then--????
 		return 1
-	elseif idx == 10 then--Îä¾³
+	elseif idx == 10 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 11 then--¸öÈË
+	elseif idx == 11 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 15 then
 			return 1
 		end
-	elseif idx == 12 then--ÆäËû
+	elseif idx == 12 then--??
 		return 1
 	end
 	return 0
 end
 
 function SelfEquip_IsPageEnable(idx)
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--ÕäÊÞ
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--ÐÞÁ¶
+	elseif idx == 5 then--??
 		return 1
-	elseif idx == 6 then--ÎäµÀ
+	elseif idx == 6 then--??
 		return 1
-	elseif idx == 7 then--ÁéÓñ
+	elseif idx == 7 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 8 then--Éñ±ø
+	elseif idx == 8 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 65 then
 			return 1
 		end
-	elseif idx == 9 then--µñÎÄ½ø½×
+	elseif idx == 9 then--????
 		return 1
-	elseif idx == 10 then--Îä¾³
+	elseif idx == 10 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 11 then--¸öÈË
+	elseif idx == 11 then--??
 		return 1
-	elseif idx == 12 then--ÆäËû
+	elseif idx == 12 then--??
 		return 1
 	end
 	return 0

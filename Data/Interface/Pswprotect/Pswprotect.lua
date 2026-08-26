@@ -36,9 +36,9 @@ function MiBao_Update()
 	OpenWindow( "SoftKeyBoard" );
 	--AxTrace( 0,0, "MiBao_Update"..key1..key2..key3);
 	--µÚ3ÐÐ£¬µÚ4ÁÐµÄÊý×ÖÊÇ
-	Pswprotect_Text1:SetText("µÚ"..string.upper(string.sub(key1,1,1)).."ÐÐ£¬µÚ"..string.sub(key1,-1).."ÁÐµÄÊý×ÖÊÇ");
-	Pswprotect_Text2:SetText("µÚ"..string.upper(string.sub(key2,1,1)).."ÐÐ£¬µÚ"..string.sub(key2,-1).."ÁÐµÄÊý×ÖÊÇ");
-	Pswprotect_Text3:SetText("µÚ"..string.upper(string.sub(key3,1,1)).."ÐÐ£¬µÚ"..string.sub(key3,-1).."ÁÐµÄÊý×ÖÊÇ");
+	Pswprotect_Text1:SetText("Câu"..string.upper(string.sub(key1,1,1)).."Hành, Ð®"..string.sub(key1,-1).."Li®t Ðích con s¯ Th¸");
+	Pswprotect_Text2:SetText("Câu"..string.upper(string.sub(key2,1,1)).."Hành, Ð®"..string.sub(key2,-1).."Li®t Ðích con s¯ Th¸");
+	Pswprotect_Text3:SetText("Câu"..string.upper(string.sub(key3,1,1)).."Hành, Ð®"..string.sub(key3,-1).."Li®t Ðích con s¯ Th¸");
 	
 	Pswprotect_Input1:SetProperty("DefaultEditBox", "True");
 end

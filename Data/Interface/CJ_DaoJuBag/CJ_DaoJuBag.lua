@@ -9,7 +9,7 @@ local g_TLCJ_EQUIPBAG_NUM = 12
 function CJ_DaoJuBag_PreLoad()
 	--this:RegisterEvent("UI_COMMAND")
 	this:RegisterEvent("TLCJ_OPENPLAYERBAG")
-	--离开场景，自动关闭
+	--离开场景，自动关睜
 	this:RegisterEvent("PLAYER_LEAVE_WORLD", false)	
 	-- 游戏窗口尺寸发生了变化
 	this:RegisterEvent("ADJEST_UI_POS")

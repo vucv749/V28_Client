@@ -201,7 +201,7 @@ function PetSoul_XuanWuDao_OnEvent(event)
 			return
 		end
 		
-		if arg0 == "petisland" or arg0 == "petislandHJ02" then 	--ÐþÎäµº »ò ÐþÎäµº¾µ
+		if arg0 == "petisland" or arg0 == "petislandHJ02" then 	--??? ? ????
 			
 			Clear_XSCRIPT()
 				Set_XSCRIPT_Function_Name( "OnOpenXuanWuDaoUI" )

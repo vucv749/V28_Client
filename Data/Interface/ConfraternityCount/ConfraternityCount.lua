@@ -1,6 +1,6 @@
---°ïÕ½»ý·Ö
+--°ï ½»ý·Ö
 g_ConfraternityCounttabId = 0;
-g_ConfraternityCountTankName ={"ÎÞÕ½³µ","#{INTERFACE_XML_1239}","#{INTERFACE_XML_1240}","#{INTERFACE_XML_1241}","#{INTERFACE_XML_1242}","#{INTERFACE_XML_1243}"};
+g_ConfraternityCountTankName ={"Vô chiªn xa","#{INTERFACE_XML_1239}","#{INTERFACE_XML_1240}","#{INTERFACE_XML_1241}","#{INTERFACE_XML_1242}","#{INTERFACE_XML_1243}"};
 local g_ConfraternityCount_Frame_UnifiedPosition;
 
 function ConfraternityCount_PreLoad()

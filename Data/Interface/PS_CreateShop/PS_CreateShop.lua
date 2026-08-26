@@ -65,7 +65,7 @@ function PS_CreateShop_OnEvent(event)
 		if ( CreateType == 0 ) then
 			PS_CreateShop_Demand_Text : SetText("#{RCYH_180606_99}".. szCommercialFactor .."#{RCYH_180606_100}");
 			PS_CreateShop_DragTitle : SetText( "#{INTERFACE_XML_45}" );
-		elseif (CreateType == 2) then --合服抢先开店
+		elseif (CreateType == 2) then --??????
 			PS_CreateShop_Demand_Text : SetText("#{HFBC_90611_11}".. szCommercialFactor .."#{HFBC_90611_19}");
 			PS_CreateShop_DragTitle : SetText( "#{HFBC_90611_10}" );
 		else
@@ -84,7 +84,7 @@ function PS_CreateShop_OnEvent(event)
 		if(tonumber(arg0) ~= objCared) then
 			return;
 		end
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			g_InitiativeClose = 1;
 			this:Hide();

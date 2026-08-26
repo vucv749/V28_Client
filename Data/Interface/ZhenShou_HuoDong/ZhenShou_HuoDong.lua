@@ -1,5 +1,5 @@
 ------------------------------------
--- 2022珍兽预热活动
+-- 2022犱兽预热活动
 -- 活动界面
 ------------------------------------
 
@@ -56,7 +56,7 @@ function ZhenShou_HuoDong_OnEvent(event)
 	if ( event == "UI_COMMAND" and tonumber(arg0) == 89306903 ) then
 		local objid = Get_XParam_INT(0)
 		if objid == nil or objid < 0 then
-			-- 关闭界面
+			-- 关睜界面
 			if this:IsVisible() then
 				ZhenShou_HuoDong_Close()
 			end
@@ -70,11 +70,11 @@ function ZhenShou_HuoDong_OnEvent(event)
 			local bFlag1 = Get_XParam_INT(3)
 			local bFlag2 = Get_XParam_INT(4)
 			local bFlag3 = Get_XParam_INT(5)
-			if bUpdate == 1 then--仅刷新
+			if bUpdate == 1 then--???
 				if this:IsVisible() then
 					ZhenShou_HuoDong_Update(nData,bFlag1,bFlag2,bFlag3)
 				end
-			else--打开+刷新
+			else--??+??
 				-- 打开界面
 				this:Show()
 				ZhenShou_HuoDong_Update(nData,bFlag1,bFlag2,bFlag3)
@@ -92,9 +92,9 @@ function ZhenShou_HuoDong_OnEvent(event)
 		if(tonumber(arg0) ~= objCared) then
 			return
 		end
-		-- 如果和NPC的距离大于一定距离或者被删除，自动关闭
+		-- 如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
-			-- 关闭界面
+			-- 关睜界面
 			ZhenShou_HuoDong_Close()
 		end
 	end
@@ -110,7 +110,7 @@ function ZhenShou_HuoDong_OnHiden()
 end
 
 --================================================
--- 关闭界面
+-- 关睜界面
 --================================================
 function ZhenShou_HuoDong_Close()
 	ZhenShou_HuoDong_OnHiden()
@@ -125,7 +125,7 @@ function ZhenShou_HuoDong_Update(nData,bFlag1,bFlag2,bFlag3)
 	--显示进度
 	ZhenShou_HuoDong_Num:SetText( ScriptGlobal_Format("#{ZSYR_211227_25}",nData) )
 	--显示任务
-	local bFlag = {bFlag1,bFlag2,bFlag3}--完成标记
+	local bFlag = {bFlag1,bFlag2,bFlag3}--????
 	for i=1,table.getn(g_CtrlList) do
 		--奖励显示
 		local theAction = DataPool:CreateActionItemForShow(g_ItemList[i], 1)
@@ -133,17 +133,17 @@ function ZhenShou_HuoDong_Update(nData,bFlag1,bFlag2,bFlag3)
 			g_CtrlList[i].item:SetActionItem(theAction:GetID())
 		end
 		--背景显示
-		if i <= nData then--已开启
+		if i <= nData then--???
 			g_CtrlList[i].bk1:Show()
 			g_CtrlList[i].bk2:Hide()
-			if bFlag[i] > 0 then--已完成
+			if bFlag[i] > 0 then--???
 				g_CtrlList[i].btn:Hide()
 				g_CtrlList[i].finish:Show()
-			else--未完成
+			else--???
 				g_CtrlList[i].btn:Show()
 				g_CtrlList[i].finish:Hide()
 			end
-		else--未开启
+		else--???
 			g_CtrlList[i].bk1:Hide()
 			g_CtrlList[i].bk2:Show()
 		end
@@ -151,7 +151,7 @@ function ZhenShou_HuoDong_Update(nData,bFlag1,bFlag2,bFlag3)
 end
 
 --================================================
--- 点击寻找珍兽
+-- 点击寻犚犱兽
 --================================================
 function ZhenShou_HuoDong_BtnClicked()
 	Clear_XSCRIPT()

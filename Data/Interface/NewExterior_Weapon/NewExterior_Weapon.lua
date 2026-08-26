@@ -2,10 +2,10 @@
 local g_NewExterior_Weapon_UnifiedPosition = ""
 
 local EXTERIORFILTTING_TOTALKIND = 0
-local g_TargetExteriorIndex = 0			--¶¨Î»µÄÍâ¹ÛË÷Òý£¬´Ó1¿ªÊ¼
-local g_TargetExteriorID = 0			--¶¨Î»µÄÍâ¹ÛID
+local g_TargetExteriorIndex = 0			--???????,?1??
+local g_TargetExteriorID = 0			--?????ID
 
-local g_CurSelExteriorID = 0			--µ±Ç°Ñ¡ÔñµÄÍâ¹ÛID£¬´Ó1¿ªÊ¼
+local g_CurSelExteriorID = 0			--???????ID,?1??
 
 local g_CurWeaponLevel = 0
 
@@ -13,15 +13,15 @@ local g_Distance = 1
 local g_Distance_Ori = 2
 local g_Distance_Max = 4
 local g_InitList = 0
-local g_ExteriorType = 4 --ÈÚ»êÍâ¹Û
+local g_ExteriorType = 4 --????
 local g_MaxBarNum = 0
 local g_BarList = {}
 
 local g_NeedChangeScrollSize = 1
 
-local g_CameraHeight = 1     --ÉãÓ°»ú¸ß¶È
-local g_CameraDistance = 2   --ÉãÓ°»ú¾àÀë
-local g_CameraPitch = 3      --ÉãÓ°»ú½Ç¶È
+local g_CameraHeight = 1     --?????
+local g_CameraDistance = 2   --?????
+local g_CameraPitch = 3      --?????
 local g_CameraPosition =
 {
 	--Å®ÐÔÏà¹ØÎ»ÖÃ
@@ -43,19 +43,19 @@ local g_CameraPosition =
 }
 
 local g_SpecialWeaponCamera = {
- [1] = {	-- ÈçÒâ½ð¹¿°ô
+ [1] = {	-- ?????
 			[0] = {startid = 31, endid = 31, fHeight = 1.25, fDistance = 23, fPitch = -1, timecount = 17280},
 			[1] = {startid = 31, endid = 31, fHeight = 1.25, fDistance = 23, fPitch = -1, timecount = 17280},
  		},
- [2] = {	-- ×ÏÇà±¦½£
+ [2] = {	-- ????
 			[0] = {startid = 32, endid = 32, fHeight = 1.25, fDistance = 24, fPitch = 0.5, timecount = 10000},
 			[1] = {startid = 32, endid = 32, fHeight = 1.25, fDistance = 24, fPitch = 0.5, timecount = 10000},
  		},
-[3] =  {	-- °Å½¶ÁéÉÈ
+[3] =  {	-- ????
 			[0] = {startid = 33, endid = 33, fHeight = 1.25, fDistance = 16, fPitch = -1, timecount = 7400},
 			[1] = {startid = 33, endid = 33, fHeight = 1.25, fDistance = 18, fPitch = -1, timecount = 7400},
 		},
-[4] = {	-- °×¹Ç±Þ
+[4] = {	-- ???
 			[0] = {startid = 28, endid = 28, fHeight = 1.25, fDistance = 16, fPitch = -1, timecount = 6800},
 			[1] = {startid = 28, endid = 28, fHeight = 1.25, fDistance = 18, fPitch = -1, timecount = 6800},
 		},
@@ -96,12 +96,12 @@ local g_strRank = {
 local g_PetSoulLevelLimit = 85
 local EXTERIORFILTTING_WEAPONKIND = 5
 
-local g_OrnamentState				= {		-- ×´Ì¬
-	INVALID	= 0,							-- ÎÞÐ§
-	EMPTY	= 1,							-- ¿ÕÏÐ
-	TIME	= 2,							-- ÏÞÊ±
-	TIMEOUT	= 3,							-- ¹ýÆÚ
-	FOREVER	= 4,							-- ÓÀ¾Ã
+local g_OrnamentState				= {		-- ??
+	INVALID	= 0,							-- ??
+	EMPTY	= 1,							-- ??
+	TIME	= 2,							-- ??
+	TIMEOUT	= 3,							-- ??
+	FOREVER	= 4,							-- ??
 }
 --=========
 --PreLoad==
@@ -191,9 +191,9 @@ function NewExterior_Weapon_OnEvent(event)
 		return
 	end
 		
-	if event == "OPEN_STALL_SALE" -- ¿ªÊ¼°ÚÌ¯£¬»¹Ô­ÊÔ´©
-		or event == "PROGRESSBAR_SHOW"	-- ¶Á½ø¶ÈÌõÖÐ£¬»¹Ô­ÊÔ´©
-		or event == "MODELID_CHANGE" -- ±äÉí ¹Ø±Õ½çÃæ
+	if event == "OPEN_STALL_SALE" -- ????,????
+		or event == "PROGRESSBAR_SHOW"	-- ?????,????
+		or event == "MODELID_CHANGE" -- ?? ????
 		then
 		NewExterior_Weapon_CloseClick()
 		return
@@ -278,7 +278,7 @@ function NewExterior_Weapon_OnEvent(event)
 	end
 	
 		-- FakeObjectÄ£ÐÍ½çÃæ»¥³â
-	if ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then   --Ê±×°Ô¤ÀÀ
+	if ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then   --????
 		if (this:IsVisible()) then
 			this:Hide()
 			return
@@ -931,7 +931,7 @@ function NewExterior_Weapon_RemovePreview()
 end
 
 function NewExterior_Weapon_Goto()
-	AutoRuntoTargetExWithName(252, 130, 0, "ÑÕÈçÓñ")
+	AutoRuntoTargetExWithName(252, 130, 0, "Nhan Nhß Ng÷c")
 end
 
 function NewExterior_Weapon_CloseClick()

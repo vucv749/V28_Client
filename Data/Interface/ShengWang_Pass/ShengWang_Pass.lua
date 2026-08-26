@@ -1,12 +1,12 @@
---Õ½Áî
+-- ½Áî
 --PrizeÓÃµ½µÄ³£Á¿
-local g_MAX_LEVEL = 12 --×îda½×Î»
+local g_MAX_LEVEL = 12 --?da??
 local g_MAX_TODAY_GET_POINT = 200
 
 --ÆäËûÒ³Ãæ±äÁ¿
 local g_bIsNewServerGiftsForLevelUpValid = 0
 local nCharCreateDate = 0
-local CreateDate = 904691712			-- 2013Äê08ÔÂ22ÈÕ08:00:00
+local CreateDate = 904691712			-- 2013?08?22?08:00:00
 
 local g_NowCheck = 0
 
@@ -14,7 +14,7 @@ local g_NowCheck = 0
 local g_ShengWang_Pass_Frame_UnifiedPosition;
 local g_MonthActivePoint = 0
 local g_ServerYearMonth = -1
-local g_LevelPoint = {	-- ÈÕ»î-½×¼¶ 
+local g_LevelPoint = {	-- ??-?? 
 	[0] = 0, [1] = 0, [2] = 0, [3] = 0, [4] = 0, [5] = 0,[6] = 0,[7] = 0,[8] = 0,[9] = 0,[10] = 0
 }
 local g_ShengWang_Pass_ActionBtn = {}
@@ -25,16 +25,16 @@ local g_IsAroused = 0
 local g_IsAroused2 = 0
 local g_TodayGetPoint = 0
 local g_SeasonLeftDays = 0
-local g_PointLevel = 0 --Íæ¼Òµ±Ç°µÄ½×Î»
+local g_PointLevel = 0 --???????
 local g_IsShowRedPoint = 0
 
-local nFullLevel = 0 --ÊÇ·ñÂú·ÖÁË
+local nFullLevel = 0 --?????
 
 local g_LevelPrizeinfo = {}
 
 local g_EachLeveActivePoint = 10
 
-local g_MAX_MISSION_NUM = 5 --×î´óÈÎÎñ
+local g_MAX_MISSION_NUM = 5 --????
 
 local g_MissionInfoList = {
 	[1] = {name = "#{SWXT_221213_125}", maxtime = 12, notfinshtext = "#{SWXT_221213_126}" ,finshtext = "#{SWXT_221213_127}", addpoint = 8},
@@ -52,9 +52,9 @@ local g_Position_Scroll = 0;
 --===============================================
 function ShengWang_Pass_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)		--Àë¿ª³¡¾°
-	this:RegisterEvent("ADJEST_UI_POS",false)				-- ÓÎÏ·´°¿Ú³ß´ç·¢ÉúÁË±ä»¯
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)	-- ÓÎÏ··Ö±æÂÊ·¢ÉúÁË±ä»¯
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)		--????
+	this:RegisterEvent("ADJEST_UI_POS",false)				-- ???????????
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)	-- ??????????
 	this:RegisterEvent("OPEN_ZHANLING")
 	this:RegisterEvent("UPDATE_REDPOINT_IN_UI")
 end
@@ -77,15 +77,15 @@ function ShengWang_Pass_OnEvent(event)
 		Set_XSCRIPT_ParamCount(0)
 		Send_XSCRIPT()
 
-	elseif event == "UI_COMMAND" and (tonumber(arg0) == 89021501) then	--·þÎñ¶Ë´«Êý¾Ý
+	elseif event == "UI_COMMAND" and (tonumber(arg0) == 89021501) then	--??????
 	
-		local nOper = Get_XParam_INT(0)	--½çÃæ²Ù×÷ÀàÐÍ£¨0 ¹Ø±Õ£¬1´ò¿ª£¬ 2Ë¢ÐÂ£©
-		local nTime  = Get_XParam_INT(1) --·þÎñÆ÷µ±Ç°ÌìÊýÊ±¼ä
-		g_MonthActivePoint = Get_XParam_INT(2) --Íæ¼Òµ±ÔÂÕ½ÁîµãÊý
-		g_TodayGetPoint = Get_XParam_INT(3) --Íæ¼Òµ±ÈÕÕ½ÁîµãÊý
-		g_IsAroused = Get_XParam_INT(6) --ÊÇ·ñ¼¤»îRMB1
-		g_IsShowRedPoint = Get_XParam_INT(7) --ÊÇ·ñÏÔÊ¾ºìµã
-		g_IsAroused2 = Get_XParam_INT(9) --ÊÇ·ñ¼¤»îRMB2
+		local nOper = Get_XParam_INT(0)	--??????(0 ??,1??, 2??)
+		local nTime  = Get_XParam_INT(1) --?????????
+		g_MonthActivePoint = Get_XParam_INT(2) --????????
+		g_TodayGetPoint = Get_XParam_INT(3) --????????
+		g_IsAroused = Get_XParam_INT(6) --????RMB1
+		g_IsShowRedPoint = Get_XParam_INT(7) --??????
+		g_IsAroused2 = Get_XParam_INT(9) --????RMB2
 		local nEndTime =  Get_XParam_INT(10)
 		g_ServerYearMonth = -1
 		g_SeasonLeftDays = ShengWang_Pass_GetMonthLeftDays(nTime, nEndTime)
@@ -102,7 +102,7 @@ function ShengWang_Pass_OnEvent(event)
 				return 
 			end
 			-- Ö»ÓÐ´ò¿ªÒ³ÃæÊ±Ë¢ÐÂÒ³Ãæ²Å¼ÇÂ¼ÉÏÒ»´ÎµÄ¹ö¶¯Ìõ
-			g_Position_Scroll = ShengWang_Pass_RewardList:GetScrollPosition()	--±£´æÉÏÒ»´Î¹ö¶¯ÌõÎ»ÖÃ
+			g_Position_Scroll = ShengWang_Pass_RewardList:GetScrollPosition()	--??????????
 		end
 		ShengWang_Pass_PrizePageOpen()
 		ShengWang_Pass_RewardListBK:Show()
@@ -121,10 +121,10 @@ function ShengWang_Pass_OnEvent(event)
 			ShengWang_Pass_PlusBK:Hide()
 			ShengWang_Pass_Plus:Enable()
 		end
-	elseif event == "UI_COMMAND" and (tonumber(arg0) == 89021505) then	--·þÎñ¶Ë´«Êý¾Ý
+	elseif event == "UI_COMMAND" and (tonumber(arg0) == 89021505) then	--??????
 	
-		local nMissionData = Get_XParam_INT(0)	--ÈÎÎñÊý¾Ý
-		local nMissionGetAwardData  = Get_XParam_INT(1) --ÈÎÎñÁìÈ¡½±ÀøÊý¾Ý
+		local nMissionData = Get_XParam_INT(0)	--????
+		local nMissionGetAwardData  = Get_XParam_INT(1) --????????
 		
 		ShengWang_Pass_MissionPageOpen(nMissionData, nMissionGetAwardData)
 		ShengWang_Pass_RewardListBK:Hide()
@@ -223,9 +223,9 @@ function ShengWang_Pass_GetPrizeInfo()
 			nFullLevel = 0
 		end
 
-		local prizeB_MD = Get_XParam_INT(4) --ÆÕÍ¨½±ÀøMD
-		local prizeA_MD = Get_XParam_INT(5) --¸¶·Ñ1½±ÀøMD
-		local prizeC_MD = Get_XParam_INT(8) --¸¶·Ñ2½±ÀøMD
+		local prizeB_MD = Get_XParam_INT(4) --????MD
+		local prizeA_MD = Get_XParam_INT(5) --??1??MD
+		local prizeC_MD = Get_XParam_INT(8) --??2??MD
 
 		g_PrizeStateA = ShengWang_Pass_GetBitTable(prizeA_MD)
 		g_PrizeStateB = ShengWang_Pass_GetBitTable(prizeB_MD)
@@ -234,10 +234,10 @@ function ShengWang_Pass_GetPrizeInfo()
 		return 1
 end
 
---´ò¿ªÕ½Áî½±Àø½çÃæ
+--´ò¿ª ½Áî½±Àø½çÃæ
 function ShengWang_Pass_PrizePageOpen()	
-	if 1 ~= ShengWang_Pass_GetPrizeInfo() then  --¼ÓÔØ½±Àø±íÐÅÏ¢
-		PushDebugMessage("Ò³ÃæÊý¾Ý¼ÓÔØÊ§°Ü£¬ÇëÖØÐÂ´ò¿ªÒ³Ãæ¡£")
+	if 1 ~= ShengWang_Pass_GetPrizeInfo() then  --???????
+		PushDebugMessage("Di®p Di®n s¯ li®u Gia Täi th¤t bÕi, Thïnh mµt l¥n næa Tá Khai Di®p Di®n.")
 		return
 	end
 	
@@ -270,7 +270,7 @@ function ShengWang_Pass_PrizePageOpen()
 	for i = 1 , g_MAX_LEVEL do
 
 		if nil == g_LevelPrizeinfo[i] or nil == g_PrizeStateA[i] or nil ==g_PrizeStateB[i] then
-			PushDebugMessage("Ò³ÃæÊý¾Ý¼ÓÔØÊ§°Ü£¬ÇëÖØÐÂ´ò¿ªÒ³Ãæ¡£")
+			PushDebugMessage("Di®p Di®n s¯ li®u Gia Täi th¤t bÕi, Thïnh mµt l¥n næa Tá Khai Di®p Di®n.")
 			return 
 		end
 
@@ -524,7 +524,7 @@ end
 
 
 
---´ò¿ªÕ½ÁîÈÎÎñ½çÃæ
+--´ò¿ª ½ÁîÈÎÎñ½çÃæ
 function ShengWang_Pass_MissionPageOpen(nMissionData, nMissionGetAwardData)	
 	
 	--List
@@ -614,20 +614,20 @@ end
 
 function ShengWang_Pass_Arouse()
 	Clear_XSCRIPT()
-			Set_XSCRIPT_Function_Name("AskActRMBReward")  --½Å±¾½Ó¿Ú
+			Set_XSCRIPT_Function_Name("AskActRMBReward")  --????
 			Set_XSCRIPT_Parameter(0,0)
 			Set_XSCRIPT_Parameter(1,1)
-			Set_XSCRIPT_ScriptID(890215) --½Å±¾±àºÅ 
+			Set_XSCRIPT_ScriptID(890215) --???? 
 			Set_XSCRIPT_ParamCount(2)
 	Send_XSCRIPT()
 end
 
 function ShengWang_Pass_Arouse2()
 	Clear_XSCRIPT()
-			Set_XSCRIPT_Function_Name("AskActRMBReward")  --½Å±¾½Ó¿Ú
+			Set_XSCRIPT_Function_Name("AskActRMBReward")  --????
 			Set_XSCRIPT_Parameter(0,0)
 			Set_XSCRIPT_Parameter(1,2)
-			Set_XSCRIPT_ScriptID(890215) --½Å±¾±àºÅ 
+			Set_XSCRIPT_ScriptID(890215) --???? 
 			Set_XSCRIPT_ParamCount(2)
 	Send_XSCRIPT()
 end
@@ -635,8 +635,8 @@ end
 --ÁìÈ¡ nType£ºÇàÁú-1 ÖìÈ¸-2
 function ShengWang_Pass_GetPrize(nIndex,nType)
 	Clear_XSCRIPT()
-			Set_XSCRIPT_Function_Name("AskGetReward")  --½Å±¾½Ó¿Ú
-			Set_XSCRIPT_ScriptID(890215) --½Å±¾±àºÅ 
+			Set_XSCRIPT_Function_Name("AskGetReward")  --????
+			Set_XSCRIPT_ScriptID(890215) --???? 
 			Set_XSCRIPT_Parameter(0,nIndex)
 			Set_XSCRIPT_Parameter(1,nType)
 			Set_XSCRIPT_ParamCount(2)

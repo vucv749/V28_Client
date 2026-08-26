@@ -47,7 +47,7 @@ local g_LandReward_NotReach = {}
 
 function LandReward_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
-	--离开场景，自动关闭
+	--离开场景，自动关睜
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED");
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")

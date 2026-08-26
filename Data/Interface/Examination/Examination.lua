@@ -56,7 +56,7 @@ function Examination_OnEvent(event)
 			return
 		end
 		
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then			
 			--取消关心
 			Examination_Cancel_Clicked()
@@ -83,16 +83,16 @@ function Examination_OnShown()
 		Question = Get_XParam_INT(2)
 			
 		local strquest = Get_XParam_STR(0)
-		str = ScriptGlobal_Format("#{KJYH_221013_119}", strquest) -- 题目
+		str = ScriptGlobal_Format("#{KJYH_221013_119}", strquest) -- ??
 		Examination_Text:SetText( str );
 		Examination_Text:Show();
 			
 		local strtype = Get_XParam_STR(7)
-		str = ScriptGlobal_Format("#{KJYH_221013_120}", strtype) -- 类型：
+		str = ScriptGlobal_Format("#{KJYH_221013_120}", strtype) -- ??:
 		Examination_Type_Text:SetText( str )
 		Examination_Type_Text:Show();
 			
-		str = ScriptGlobal_Format("#{KJYH_221013_121}", Question_Sequence) -- 第X题
+		str = ScriptGlobal_Format("#{KJYH_221013_121}", Question_Sequence) -- ?X?
 		Examination_Number_Text:SetText( str )
 		Examination_Number_Text:Show();
 					
@@ -112,7 +112,7 @@ function Examination_OnShown()
 			
 		g_Examination_Type = Get_XParam_INT(9);
 		local NPCName =	Target:GetDialogNpcName();
-		local str = ScriptGlobal_Format("#{KJYH_221013_117}", NPCName) -- NPCName..(共5题)  
+		local str = ScriptGlobal_Format("#{KJYH_221013_117}", NPCName) -- NPCName..(?5?)  
 		if g_Examination_Type == 2 then
 			str = ScriptGlobal_Format("#{KJYH_221013_131}", NPCName)
 		end
@@ -249,7 +249,7 @@ end
 
 --=========================================================
 --开始关心NPC，
---在开始关心之前需要先确定这个界面是不是已经有“关心”的NPC，
+--在开始关心之前需要先确定犫个界面是不是已经有“关心”的NPC，
 --如果有的话，先取消已经有的“关心”
 --=========================================================
 function BeginCareObject_Examination(objCaredId)

@@ -2,14 +2,14 @@ local TBL_TextFrame = {}
 local TBL_NotChat_Button = {}
 local TBL_Chat_Button = {}
 
-local AcceArryEx = 10   --×Ô¶¨Òå¿ì½İ¼üÊı×éÖĞÇ°11¸öÔªËØ²»ÔÊĞíÍæ¼Ò×Ô¶¨Òå
+local AcceArryEx = 10   --??????????11???????????
 
 local ControlMaxNum = 54
 
 local PageStart = 0
 local PageEnd = 0
 
-local AcceSeting = 0   --¿ì½İ¼üÉèÖÃÖĞ
+local AcceSeting = 0   --??????
 --===============================================
 -- OnLoad()
 --===============================================
@@ -217,22 +217,22 @@ end
 function AcceSetup_OnEvent(event)
 
 	if ( event == "TOGLE_INPUTSETUP" ) then
-    if(arg0 == "show") then -- ´ò¿ªÏûÏ¢
+    if(arg0 == "show") then -- ????
 	    --PushDebugMessage("´ò¿ªÏûÏ¢");
 		  this:Show();		
 		  AcceSetup_UpdateFrame();
-		else -- ×Ö·ûÏûÏ¢
-			if(tonumber(arg2) > 54) then--ÁÙÊ±ÆÁ±Î
+		else -- ????
+			if(tonumber(arg2) > 54) then--????
 				return
 			end 
 			if (tostring( arg0 ) == "") then
-				TBL_NotChat_Button[tonumber(arg2)]:SetProperty("Text", "ÎŞ");
+				TBL_NotChat_Button[tonumber(arg2)]:SetProperty("Text", "Vô");
 			else
 				TBL_NotChat_Button[tonumber(arg2)]:SetProperty("Text", tostring( arg0 ));
 			end
 	    
 			if (tostring( arg1 ) == "") then
-				TBL_Chat_Button[tonumber(arg2)]:SetProperty("Text", "ÎŞ");
+				TBL_Chat_Button[tonumber(arg2)]:SetProperty("Text", "Vô");
 			else
 				TBL_Chat_Button[tonumber(arg2)]:SetProperty("Text", tostring( arg1 ));
 			end
@@ -263,13 +263,13 @@ function AcceSetup_UpdateFrame()
      if(TBL_TextFrame[i] ~= nil and TBL_NotChat_Button[i] ~= nil and TBL_Chat_Button[i] ~= nil) then
         key1,key2 = SystemSetup:GetInputSetup(i + AcceArryEx);
         if(key1 == "") then
-          TBL_NotChat_Button[i]:SetProperty("Text", "ÎŞ");
+          TBL_NotChat_Button[i]:SetProperty("Text", "Vô");
         else
           TBL_NotChat_Button[i]:SetProperty("Text", key1);
         end
       
         if(key2 == "") then
-          TBL_Chat_Button[i]:SetProperty("Text", "ÎŞ");
+          TBL_Chat_Button[i]:SetProperty("Text", "Vô");
         else
           TBL_Chat_Button[i]:SetProperty("Text", key2);   
         end
@@ -282,7 +282,7 @@ end
 --===============================================
 function AcceSetup_Accept_Clicked()
   if(AcceSeting == 1) then
-     PushDebugMessage("²Ù×÷Ê§°Ü£¬ÇëÏÈÍê³Éµ±Ç°¼¤»î¿ì½İ¼üµÄ¶¨ÒåºóÔÙ½øĞĞÆäËû²Ù×÷");
+     PushDebugMessage("Thao tác th¤t bÕi, Thïnh Tiên hoàn thành trß¾c m£t kích hoÕt mau l© Ki®n Ğích ğ¸nh nghîa H§u Tái tiªn hành m£t khác thao tác");
      return;
   end
   --Ó¦ÓÃĞÂµÄ¿ì½İ¼üÉèÖÃ
@@ -304,7 +304,7 @@ end
 
 function ZiDingYi_shangyiye_Clicked()
     if(AcceSeting == 1) then
-     PushDebugMessage("²Ù×÷Ê§°Ü£¬ÇëÏÈÍê³Éµ±Ç°¼¤»î¿ì½İ¼üµÄ¶¨ÒåºóÔÙ½øĞĞÆäËû²Ù×÷");
+     PushDebugMessage("Thao tác th¤t bÕi, Thïnh Tiên hoàn thành trß¾c m£t kích hoÕt mau l© Ki®n Ğích ğ¸nh nghîa H§u Tái tiªn hành m£t khác thao tác");
      return;
     end
     
@@ -313,7 +313,7 @@ end
 
 function ZiDingYi_xiayiye_Clicked()
     if(AcceSeting == 1) then
-     PushDebugMessage("²Ù×÷Ê§°Ü£¬ÇëÏÈÍê³Éµ±Ç°¼¤»î¿ì½İ¼üµÄ¶¨ÒåºóÔÙ½øĞĞÆäËû²Ù×÷");
+     PushDebugMessage("Thao tác th¤t bÕi, Thïnh Tiên hoàn thành trß¾c m£t kích hoÕt mau l© Ki®n Ğích ğ¸nh nghîa H§u Tái tiªn hành m£t khác thao tác");
      return;
     end
     
@@ -322,8 +322,8 @@ end
 
 function PageChange(type)
 
-    if(type == 0) then  --ÉÏÒ»Ò³ 
-      if((PageStart - 10) < 1) then--¼ìÑéÊÇ·ñÔ½½ç
+    if(type == 0) then  --??? 
+      if((PageStart - 10) < 1) then--??????
          return
       elseif((PageStart - 10) < 11) then
          ZiDingYi_shangyiye:SetProperty("Disabled", "True");
@@ -331,8 +331,8 @@ function PageChange(type)
       PageStart = PageStart - 10;  
       --»Ö¸´ÏÂÒ»Ò³°´Å¥µÄ¿ÉÓÃĞÔ 
       ZiDingYi_xiayiye:SetProperty("Disabled", "False");
-    elseif(type == 1) then  --ÏÂÒ»Ò³
-      if((PageStart + 10) > 51) then--¼ìÑéÊÇ·ñÔ½½ç
+    elseif(type == 1) then  --???
+      if((PageStart + 10) > 51) then--??????
          return
       elseif((PageStart + 10) > 41) then
          ZiDingYi_xiayiye:SetProperty("Disabled", "True");
@@ -354,7 +354,7 @@ function PageChange(type)
     end
     
     for i = 1,ControlMaxNum do
-      if(i >= RealPageStart and i < RealPageEnd) then   --ÔÚ¸ÃÒ³·¶Î§ÄÚµÄ¿Ø¼şÏÔÊ¾·ñÔòÒş²Ø
+      if(i >= RealPageStart and i < RealPageEnd) then   --???????????????
          if(TBL_TextFrame[i] ~= nil and TBL_NotChat_Button[i] ~= nil and TBL_Chat_Button[i] ~= nil) then
           TBL_TextFrame[i]:Show()
           TBL_NotChat_Button[i]:Show()
@@ -372,12 +372,12 @@ end
 
 function Chat_Button_Clicked(ButtonId)
     if(AcceSeting == 1) then
-     PushDebugMessage("²Ù×÷Ê§°Ü£¬ÇëÏÈÍê³Éµ±Ç°¼¤»î¿ì½İ¼üµÄ¶¨ÒåºóÔÙ½øĞĞÆäËû²Ù×÷");
+     PushDebugMessage("Thao tác th¤t bÕi, Thïnh Tiên hoàn thành trß¾c m£t kích hoÕt mau l© Ki®n Ğích ğ¸nh nghîa H§u Tái tiªn hành m£t khác thao tác");
      return;
     end
     --½øÈëÉèÖÃ¿ì½İ¼ü×´Ì¬
     SystemSetup:InputSetup_OnOff(true,true,ButtonId);
-    TBL_Chat_Button[ButtonId]:SetText("#GÇëÊäÈë");
+    TBL_Chat_Button[ButtonId]:SetText("#GTHïnh ğßa vào");
    	
     AcceSeting = 1;
 end
@@ -385,12 +385,12 @@ end
 function NoChat_Button_Clicked(ButtonId)
 
    if(AcceSeting == 1) then
-     PushDebugMessage("²Ù×÷Ê§°Ü£¬ÇëÏÈÍê³Éµ±Ç°¼¤»î¿ì½İ¼üµÄ¶¨ÒåºóÔÙ½øĞĞÆäËû²Ù×÷");
+     PushDebugMessage("Thao tác th¤t bÕi, Thïnh Tiên hoàn thành trß¾c m£t kích hoÕt mau l© Ki®n Ğích ğ¸nh nghîa H§u Tái tiªn hành m£t khác thao tác");
      return;
    end
    --½øÈëÉèÖÃ¿ì½İ¼ü×´Ì¬
    SystemSetup:InputSetup_OnOff(true,false,ButtonId);
-   TBL_NotChat_Button[ButtonId]:SetText("#GÇëÊäÈë");
+   TBL_NotChat_Button[ButtonId]:SetText("#GTHïnh ğßa vào");
    	
    AcceSeting = 1;
 end
@@ -399,13 +399,13 @@ end
 function ComeBackAcce_Clicked()
 
    if(AcceSeting == 1) then
-     PushDebugMessage("²Ù×÷Ê§°Ü£¬ÇëÏÈÍê³Éµ±Ç°¼¤»î¿ì½İ¼üµÄ¶¨ÒåºóÔÙ½øĞĞÆäËû²Ù×÷");
+     PushDebugMessage("Thao tác th¤t bÕi, Thïnh Tiên hoàn thành trß¾c m£t kích hoÕt mau l© Ki®n Ğích ğ¸nh nghîa H§u Tái tiªn hành m£t khác thao tác");
      return;
    end
    --½øÈëÉèÖÃ¿ì½İ¼ü×´Ì¬
    SystemSetup:ComeBackAcce();
    AcceSetup_UpdateFrame();
    
-   PushDebugMessage("»Ö¸´³É¹¦£¡ÄúµÄ¼üÎ»ÒÑ¾­»Ö¸´ÎªÄ¬ÈÏÉèÖÃ¡£");
+   PushDebugMessage("Tr¸ li®u thành công! Nhçm Ğích Ki®n V¸ ğã tr¸ li®u Vi cam ch¸u thiªt trí.");
    	
 end

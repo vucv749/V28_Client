@@ -253,7 +253,7 @@ function MenPaiFirstOne_BattleTable_OnEvent(event)
 
 	elseif event == "DDZ_OPEN_RANKINGCHARTS" then
 
-		g_CurMenPai = Player : GetData("MEMPAI");		--获取玩家门派ID
+		g_CurMenPai = Player : GetData("MEMPAI");		--??????ID
 		if g_CurMenPai == 9 then
 			g_CurMenPai = 0
 		end

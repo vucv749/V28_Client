@@ -32,7 +32,7 @@ function HerosMemory_SixChoices_PreLoad()
 
 	this:RegisterEvent("ADJEST_UI_POS", false)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED", false)
-	this:RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- 离开场景
+	this:RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- ????
 
 end
 
@@ -71,22 +71,22 @@ end
 --=========================================================
 function HerosMemory_SixChoices_OnEvent(event)
 
-	if (event == "UI_COMMAND" and tonumber(arg0) == 34000501) then --打开界面
+	if (event == "UI_COMMAND" and tonumber(arg0) == 34000501) then --????
 		HerosMemory_SixChoices_Clear()
 		g_Sex = 0
 		HerosMemory_SixChoices_Init()
 		this:Show()
 
-	elseif (event == "UI_COMMAND" and tonumber(arg0) == 34000401) then --打开界面
+	elseif (event == "UI_COMMAND" and tonumber(arg0) == 34000401) then --????
 		HerosMemory_SixChoices_Clear()
 		g_Sex = 1
 		HerosMemory_SixChoices_Init()
 		this:Show()
 
-	elseif (event == "UI_COMMAND" and tonumber(arg0) == 34000502) then --关闭界面
+	elseif (event == "UI_COMMAND" and tonumber(arg0) == 34000502) then --????
 		HerosMemory_SixChoices_OnClose()
 
-	elseif (event == "UI_COMMAND" and tonumber(arg0) == 34000402) then --关闭界面
+	elseif (event == "UI_COMMAND" and tonumber(arg0) == 34000402) then --????
 		HerosMemory_SixChoices_OnClose()
 
 	elseif (event == "ADJEST_UI_POS" ) then
@@ -143,7 +143,7 @@ end
 
 
 --=========================================================
--- 关闭界面
+-- 关睜界面
 --=========================================================
 function HerosMemory_SixChoices_OnClose()
 	HerosMemory_SixChoices_Clear()

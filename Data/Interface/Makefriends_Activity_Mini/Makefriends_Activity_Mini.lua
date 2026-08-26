@@ -34,7 +34,7 @@ function Makefriends_Activity_Mini_OnEvent(event)
 		this:Show();
 	elseif (event == "HIDE_ON_SCENE_TRANSED") then
 		this:Hide()
-	elseif event == "UI_COMMAND" and (tonumber(arg0) == 998329003) then	--±ÈÈü½áÊø
+	elseif event == "UI_COMMAND" and (tonumber(arg0) == 998329003) then	--????
 		this:Hide()
 	end
 	

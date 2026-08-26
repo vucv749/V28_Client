@@ -1,4 +1,4 @@
---卡级服 废品回收 
+--卡级服 废品回薁 
 --!!!reloadscript =Feipinhuishou
 local g_Feipinhuishou_Frame_UnifiedPosition = 0
 
@@ -13,13 +13,13 @@ local g_ItemPos = -1
 --===============================================
 function Feipinhuishou_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)		--离开场景
-	this:RegisterEvent("ADJEST_UI_POS",false)				-- 游戏窗口尺寸发生了变化
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)	-- 游戏分辨率发生了变化
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)		--????
+	this:RegisterEvent("ADJEST_UI_POS",false)				-- ???????????
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)	-- ??????????
 	
-	this:RegisterEvent("FEIPINHUISHOU_ITEM",false)	-- 从背包放入道具
+	this:RegisterEvent("FEIPINHUISHOU_ITEM",false)	-- ???????
 
-	this:RegisterEvent("OBJECT_CARED_EVENT",false);           --某逻辑对象的某些发生改变，用于距离NPC够远则关闭界面
+	this:RegisterEvent("OBJECT_CARED_EVENT",false);           --????????????,????NPC???????
 end
 
 --===============================================
@@ -46,7 +46,7 @@ function Feipinhuishou_OnEvent(event)
 			return;
 		end
 		
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if arg1 == "distance" and tonumber( arg2 ) > MAX_OBJ_DISTANCE or arg1 == "destroy" then
 			Feipinhuishou_OnClose()
 		end
@@ -107,7 +107,7 @@ function Feipinhuishou_UpdateItem(index)
 			return
 		end
 
-		--判断 是否是可回收道具
+		--判断 是否是可回薁道具
 		local itemid = PlayerPackage:GetItemTableIndex(BagPos)
 		if(itemid < 0)then
 			PushDebugMessage("#{KJTZ_230706_15}")
@@ -193,7 +193,7 @@ end
 
 --=========================================================
 --开始关心NPC，
---在开始关心之前需要先确定这个界面是不是已经有“关心”的NPC，
+--在开始关心之前需要先确定犫个界面是不是已经有“关心”的NPC，
 --如果有的话，先取消已经有的“关心”
 --=========================================================
 function Feipinhuishou_BeginCareObject( objCaredId )

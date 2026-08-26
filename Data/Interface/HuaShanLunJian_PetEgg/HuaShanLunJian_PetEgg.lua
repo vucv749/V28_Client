@@ -1,9 +1,9 @@
 
 local g_PetEgg_Frame_UnifiedPosition = nil
 local g_PetEgg_UICommand_Normal = 999261001
-local g_PetEgg_nBagIndex = -1    		--背包中的位置 
-local g_PetEgg_nItemIndex = -1   		--物品ID 
-local g_PetEgg_nCanSelectTotal = 0     	--可选按钮个数 
+local g_PetEgg_nBagIndex = -1    		--?????? 
+local g_PetEgg_nItemIndex = -1   		--??ID 
+local g_PetEgg_nCanSelectTotal = 0     	--?????? 
 local g_PetEgg_strPetName = ""
 local g_PetEgg_strBtnName = {}
 local g_PetEgg_nScriptID = -1

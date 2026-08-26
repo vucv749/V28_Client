@@ -52,28 +52,28 @@ local g_ShenFen_CaiLiaoZhuanHua_Quality =
 local g_ShenFen_CaiLiaoZhuanHua_Qual_Dest=
 {
 	[1] = {
-		[1] ="¾¬µ¾",
-		[2] ="ÏãÆÑ",
-		[3] ="ÇàÍ­",
-		[4] ="èëÖ¦",
+		[1] ="Lúa të",
+		[2] ="Cây hß½ng b°",
+		[3] ="Thanh Ğ°ng",
+		[4] ="Hoa Chi",
 	},
 	[2] = {
-		[1] ="Üú°×",
-		[2] ="Ö¥À¼",
-		[3] ="ĞşÌú",
-		[4] ="ËªÖñ",
+		[1] ="Giao bÕch",
+		[2] ="Cö chi và cö lan",
+		[3] ="Huy«n thiªt",
+		[4] ="Sß½ng Trúc",
 	},
 	[3] = {
-		[1] ="Ó¯ÔÂËñ",
-		[2] ="ÑªÜòÜß",
-		[3] ="¶ÍÔÂÒø",
-		[4] ="ÕêÔÆËÉ",
+		[1] ="Doanh Nguy®t Du¦n",
+		[2] ="Huyªt Phøc Linh",
+		[3] ="ĞoÕn Nguy®t Ngân",
+		[4] ="Trinh Vân Tùng",
 	},
 	[4] = {
-		[1] ="Á÷»ªËÉÂ¶",
-		[2] ="±Ë°¶Áé»¨",
-		[3] ="Ïö»ªöÌ½ğ",
-		[4] ="»³ÑÅÌ´Ä¾",
+		[1] ="Lßu Hoa Tùng Lµ",
+		[2] ="Bï NgÕn Linh Hoa",
+		[3] ="Tiêu Hoa Lßu Kim",
+		[4] ="Hoài Nha Ğàn Mµc",
 	},
 }
 
@@ -82,7 +82,7 @@ function ShenFen_CaiLiaoZhuanHua_PreLoad()
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
 	this:RegisterEvent("MENGHUI_ZHUANHUA_UPDATE")
-	this:RegisterEvent("PACKAGE_ITEM_CHANGED")			--±³°üÖĞÎïÆ·¸Ä±äĞèÒªÅĞ¶Ï
+	this:RegisterEvent("PACKAGE_ITEM_CHANGED")			--???????????
 end
 
 function ShenFen_CaiLiaoZhuanHua_OnLoad()
@@ -197,7 +197,7 @@ function ShenFen_CaiLiaoZhuanHua_Update(uiPos, bagPos, bItemChanged)
 
 	--¼ì²éÊÇ·ñ¼ÓËø
 	if PlayerPackage:IsLock( bagPos ) == 1 then
-		PushDebugMessage("#{SZSW_230402_24}")	--µÀ¾ßÒÑÉÏËø
+		PushDebugMessage("#{SZSW_230402_24}")	--?????
 		return
 	end
 

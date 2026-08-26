@@ -38,7 +38,7 @@ function Recycle_InputBox_EventOK()
 	end
 	local strMood = Recycle_InputBox_Input:GetText();
 	if( strMood == "" ) then 
-		PushDebugMessage("¹ã¸æ´Ê²»ÄÜÎª¿Õ£¡");
+		PushDebugMessage("T× quäng cáo không th¬ bö tr¯ng");
 		return;
 	end
 	PlayerShop:SendSetRecycleShopADMsg(g_Type, strMood );
@@ -53,7 +53,7 @@ function Recycle_InputBox_EventCancel()
 end
 
 --===============================================
--- ¹Ø±Õ×Ô¶¯Ö´ÐÐ
+-- ¹Ø± ×Ô¶¯Ö´ÐÐ
 --===============================================
 function Recycle_InputBox_OnHiden()
 	Recycle_InputBox_Input:SetProperty("DefaultEditBox", "False");

@@ -21,8 +21,8 @@ local g_HuaShanLunJian_Shop_CtrlList = nil
 function HuaShanLunJian_Shop_PreLoad()
     this:RegisterEvent("XBW_OPENSHOP", true)
     this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-    this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-    this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+    this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+    this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end -- end func HuaShanLunJian_Shop_PreLoad()
 
 function HuaShanLunJian_Shop_OnEvent(event)
@@ -123,7 +123,7 @@ function HuaShanLunJian_Shop_Hide()
     this:Hide()
 end -- end func HuaShanLunJian_Shop_Hide()
 
--- 关闭按钮
+-- 关睜按钮
 function HuaShanLunJian_Shop_CloseShop()
     HuaShanLunJian_Shop_Hide()
 end -- end func HuaShanLunJian_Shop_CloseShop()

@@ -1,5 +1,5 @@
 --*********************************************
---ÕäÊŞÌ××°²ğ½â½çÃæ
+-- äÊŞÌ××°²ğ½â½çÃæ
 --*********************************************
 local PetEquipSuitDepartName = "PetEquipSuitDepart"
 local g_PetEquipItemPos  = -1
@@ -9,7 +9,7 @@ local g_ServerCareID	 = -1
 local g_ProductNeedMoney =  0
 local MAX_OBJ_DISTANCE 	 = 3.0;
 local g_PetEquipDepartiIndex = 19831205
-local g_PetEquipFunCtrl  = -1	--¹¦ÄÜ¿ØÖÆ
+local g_PetEquipFunCtrl  = -1	--????
 
 local g_PetEquipSuitDepart_Frame_UnifiedPosition;
 
@@ -20,7 +20,7 @@ function PetEquipSuitDepart_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
 	this:RegisterEvent("RESUME_ENCHASE_GEM")
 	this:RegisterEvent("OBJECT_CARED_EVENT")
-	this:RegisterEvent("UPDATE_PETEQUIP_DEPART") --ĞÂ½¨Ò»¸öÕâÑùµÄÊÂ¼ş
+	this:RegisterEvent("UPDATE_PETEQUIP_DEPART") --?????????
 	this:RegisterEvent("PACKAGE_ITEM_CHANGED")
 	this:RegisterEvent("UNIT_MONEY")
 	this:RegisterEvent("MONEYJZ_CHANGE")
@@ -69,7 +69,7 @@ end
 --È·¶¨°´Å¥
 --**********************************************
 function PetEquipSuitDepart_Buttons_Clicked()
-	--ÊÇ·ñ¾É³èÎï×°±¸Õı³£·ÅÈë
+	--ÊÇ·ñ¾É³èÎï×°±¸ ı³£·ÅÈë
 	if (g_PetEquipItemPos == -1) then
 		return
 	end
@@ -133,12 +133,12 @@ function PetEquipSuitDepart_UiCommand(arg0)
 	g_ServerCareID = targetId
 	g_ObjCareID = DataPool:GetNPCIDByServerID(targetId);
 	if (g_ObjCareID == -1) then
-		PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£");
+		PushDebugMessage("Dæ li®u máy chü có v¤n ğ«");
 		return
 	end
 
 	--»ñÈ¡ÊÇÄÇ¸ö·ÖÖ§¹¦ÄÜµÄ¿ØÖÆ·û
-	--1 ÎªÕäÊŞ×°±¸ÉıĞÇ¹¦ÄÜ
+	--1 Îª äÊŞ×°±¸ÉıĞÇ¹¦ÄÜ
 	g_PetEquipFunCtrl = Get_XParam_INT(1)
 	PetEquipSuitDepart_BeginCareObject()
 	PetEquipSuitDepart_Clear()
@@ -262,7 +262,7 @@ end
 
 --*************************************************
 --¿ªÊ¼¹ØĞÄNPC£¬¾ÍÊÇÈ·ÈÏÍæ¼Òµ±Ç°²Ù×÷µÄNPC£¬Èç¹ûÀëNPC
---Ì«Ô¶¾Í»á¹Ø±Õ´°¿ÚÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæ
+--Ì«Ô¶¾Í»á¹Ø± ´°¿ÚÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæ
 --ÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­
 --ÓĞµÄ¡°¹ØĞÄ¡±
 --*************************************************
@@ -279,7 +279,7 @@ function PetEquipSuitDepart_StopCareObject()
 end
 
 --*************************************************
---¹Ø±Õ½çÃæ
+--¹Ø± ½çÃæ
 --*************************************************
 function PetEquipSuitDepart_Close()
 	this:Hide()

@@ -6,7 +6,7 @@ local g_QinHuangTime2_state= 0
 local g_QinHuangTime2_count = 0
 function QinHuangTime2_PreLoad()
 	-- this:RegisterEvent("UI_COMMAND")
-	-- --离开场景，自动关闭
+	-- --离开场景，自动关睜
 	-- this:RegisterEvent("PLAYER_LEAVE_WORLD", false)	
 	-- this:RegisterEvent("QIHUANTIME_SWITCH")
 	-- -- 游戏窗口尺寸发生了变化
@@ -83,7 +83,7 @@ function QinHuangTime2_InitFrame(index)
 
 		if g_QinHuangTime2_state == 0 then
 			QinHuangTime2_Num:SetText("#{MJXZ_210510_14}")
-		elseif g_QinHuangTime2_state == 1 then		--0应该关闭界面先这么写着
+		elseif g_QinHuangTime2_state == 1 then		--0???????????
 			QinHuangTime2_Num:SetText("#{MJXZ_210510_130}")
 		elseif g_QinHuangTime2_state == 2 then
 			QinHuangTime2_Num:SetText("#{MJXZ_210510_131}")

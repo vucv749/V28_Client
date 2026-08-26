@@ -1,8 +1,8 @@
 
-local YuanbaoStall_DefPrice = 1; --Ôª±¦ÉÌÆ·¶¨¼Û
-local YuanbaoStall_RePrice = 2; --Ôª±¦ÉÌÆ·¸Ä¼Û
-local YuanbaoStall_PetPrice = 3;  --ÕäÊÞÉÏ¼Ü¶¨¼Û
-local YuanbaoStall_PetRePrice = 4;  --ÕäÊÞÐÞ¸Ä¼ÛÇ®
+local YuanbaoStall_DefPrice = 1; --??????
+local YuanbaoStall_RePrice = 2; --??????
+local YuanbaoStall_PetPrice = 3;  --??????
+local YuanbaoStall_PetRePrice = 4;  --??????
 
 
 local g_YuanbaoInputWindowType = YuanbaoStall_DefPrice;
@@ -34,19 +34,19 @@ function InputYuanbao_OnOpen(arg0)
 	
 	if ( arg0 == "price" ) then
 		InputYuanbao_Title:SetText("#{INTERFACE_XML_1182}");
-		InputYuanbao_Accept_Button:SetText("ÉÏ¼Ü");
+		InputYuanbao_Accept_Button:SetText("Thßþng Giá");
 		g_YuanbaoInputWindowType = YuanbaoStall_DefPrice;
 	elseif ( arg0 == "reprice" ) then
-		InputYuanbao_Accept_Button:SetText("¸ü¸Ä");
+		InputYuanbao_Accept_Button:SetText("Ð±i");
 		g_YuanbaoInputWindowType = YuanbaoStall_RePrice;
 		InputYuanbao_Title:SetText("#{INTERFACE_XML_1182}");
 	elseif (arg0 == "pet_price") then
 		InputYuanbao_Title:SetText("#{INTERFACE_XML_1182}");
-		InputYuanbao_Accept_Button:SetText("ÉÏ¼Ü");
+		InputYuanbao_Accept_Button:SetText("Thßþng Giá");
 		g_YuanbaoInputWindowType = YuanbaoStall_PetPrice;
 	elseif (arg0 == "pet_reprice") then
 		InputYuanbao_Title:SetText("#{INTERFACE_XML_1182}");
-		InputYuanbao_Accept_Button:SetText("¸ü¸Ä");
+		InputYuanbao_Accept_Button:SetText("Ð±i");
 		g_YuanbaoInputWindowType = YuanbaoStall_PetRePrice;
 	end
 	

@@ -3,18 +3,18 @@
 --create by xindefeng
 -------------------------------------------------------
 
-local g_CustomPosition = nil	--ĞèÒªÓÃµ½µÄ¿Ø¼ş±í
+local g_CustomPosition = nil	--????????
 
 --±ê×¼°ï»áÖ°Î»Ãû³Æ
 local g_StdPositionName = {
-	"°ïÖ÷",			--9
-	"¸±°ïÖ÷",		--8
-	"ÄÚÎñÊ¹",		--7
-	"¹¤ÎñÊ¹",		--6
-	"ºë»¯Ê¹",		--5
-	"ÉÌÈË",			--4
-	"¾«Ó¢",			--3
-	"°ïÖÚ"			--2
+	"Bang Chü",			--9
+	"Phó Bang Chü",		--8
+	"Nµi Vø SÑ",		--7
+	"Công Vø SÑ",		--6
+	"Ho¢ng Hóa SÑ",		--5
+	"Thß½ng Nhân",			--4
+	"Tinh Anh",			--3
+	"Bang Chúng"			--2
 }
 
 
@@ -30,7 +30,7 @@ end
 --ÊÂ¼şÏìÓ¦
 function CheckCustomPosition_OnEvent(event)	
 	if( event == "GUILD_CHECK_CUSTOMPOSITION" ) then
-		CheckCustomPosition_SetCtls()	--ÉèÖÃ¿Ø¼ş
+		CheckCustomPosition_SetCtls()	--????
 				
 		CheckCustomPosition_Update()
 		CheckCustomPosition_Show()
@@ -58,7 +58,7 @@ end
 function CheckCustomPosition_Update()
 	local szMsg = nil
 	
-	CheckCustomPosition_Title:SetText("#gFF0FA0×Ô¶¨ÒåÖ°Î»Ãû³Æ")
+	CheckCustomPosition_Title:SetText("#gFF0FA0Tñ ğ¸nh nghîa chÑc v¸ tên")
 	
 	--ÏÔÊ¾µ±Ç°"×Ô¶¨ÒåÖ°Î»Ãû³Æ"
 	for i=1,8 do
@@ -82,6 +82,6 @@ end
 
 --È·¶¨
 function CheckCustomPosition_Ok()	
-	--¹Ø±Õ´°¿Ú
+	--¹Ø± ´°¿Ú
 	this:Hide()	
 end

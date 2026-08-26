@@ -1,19 +1,19 @@
 -- 帝陵再现PVP活动 场景选择UI
 local DiLingDetails_SvrScriptId = 998260
-local DiLingDetails_QingLong_ScenDataIndex_Begin = 1        -- 青龙场景对应的场景数据索引
-local DiLingDetails_QingLong_ScenDataIndex_End = 5          -- 青龙场景对应的场景数据索引
-local DiLingDetails_BaiHu_ScenDataIndex_Begin = 6           -- 白虎场景对应的场景数据索引
-local DiLingDetails_BaiHu_ScenDataIndex_End = 10            -- 白虎场景对应的场景数据索引
-local DiLingDetails_ZhuQue_ScenDataIndex_Begin = 11         -- 朱雀场景对应的场景数据索引
-local DiLingDetails_ZhuQue_ScenDataIndex_End = 15           -- 朱雀场景对应的场景数据索引
-local DiLingDetails_XuanWu_ScenDataIndex_Begin = 16         -- 玄武场景对应的场景数据索引
-local DiLingDetails_XuanWu_ScenDataIndex_End = 20           -- 玄武场景对应的场景数据索引
-local DiLingDetails_QiLin_ScenDataIndex_Begin = 21          -- 麒麟场景对应的场景数据索引
-local DiLingDetails_QiLin_ScenDataIndex_End = 25            -- 麒麟场景对应的场景数据索引
-local DiLingDetails_MaxPlayerNum = 500                      -- 场景内最大人数
-local DiLingDetails_PlayerNum_VeryGood = 20                 -- 人数提示（极佳）
-local DiLingDetails_PlayerNum_Good = 50                     -- 人数提示（良好）
-local DiLingDetails_PlayerNum_Busy = 100                    -- 人数提示（繁忙）
+local DiLingDetails_QingLong_ScenDataIndex_Begin = 1        -- ?????????????
+local DiLingDetails_QingLong_ScenDataIndex_End = 5          -- ?????????????
+local DiLingDetails_BaiHu_ScenDataIndex_Begin = 6           -- ?????????????
+local DiLingDetails_BaiHu_ScenDataIndex_End = 10            -- ?????????????
+local DiLingDetails_ZhuQue_ScenDataIndex_Begin = 11         -- ?????????????
+local DiLingDetails_ZhuQue_ScenDataIndex_End = 15           -- ?????????????
+local DiLingDetails_XuanWu_ScenDataIndex_Begin = 16         -- ?????????????
+local DiLingDetails_XuanWu_ScenDataIndex_End = 20           -- ?????????????
+local DiLingDetails_QiLin_ScenDataIndex_Begin = 21          -- ?????????????
+local DiLingDetails_QiLin_ScenDataIndex_End = 25            -- ?????????????
+local DiLingDetails_MaxPlayerNum = 500                      -- ???????
+local DiLingDetails_PlayerNum_VeryGood = 20                 -- ????(??)
+local DiLingDetails_PlayerNum_Good = 50                     -- ????(??)
+local DiLingDetails_PlayerNum_Busy = 100                    -- ????(??)
 -- 关注NPC
 local DiLingDetails_CareObjId = -1
 local DiLingDetails_CareObjSvrId = -1
@@ -28,9 +28,9 @@ local DiLingDetails_CtrlList = nil
 -- 场景等级段
 local DiLingDetails_SceneLevel =
 {
-    [1] = {level_begin = 60, level_end = 69},       -- 60~69级
-    [2] = {level_begin = 60, level_end = 89},       -- 60~89级
-    [3] = {level_begin = 60, level_end = 119},      -- 60~119级
+    [1] = {level_begin = 60, level_end = 69},       -- 60~69?
+    [2] = {level_begin = 60, level_end = 89},       -- 60~89?
+    [3] = {level_begin = 60, level_end = 119},      -- 60~119?
 } -- end DiLingDetails_SceneLevel
 
 -- 按钮文本字典表
@@ -39,47 +39,47 @@ local DiLingDetails_BtnTextList =
     -- 青龙
     qinglong = 
     {
-        [1] = {"#{DLZX_230314_29}", "#{DLZX_230314_49}", "#{DLZX_230314_69}", "#{DLZX_230314_89}", "#{DLZX_230518_116}"},   -- 青龙1
-        [2] = {"#{DLZX_230314_30}", "#{DLZX_230314_50}", "#{DLZX_230314_70}", "#{DLZX_230314_90}", "#{DLZX_230518_116}"},   -- 青龙2
-        [3] = {"#{DLZX_230314_31}", "#{DLZX_230314_51}", "#{DLZX_230314_71}", "#{DLZX_230314_91}", "#{DLZX_230518_116}"},   -- 青龙3
-        [4] = {"#{DLZX_230314_32}", "#{DLZX_230314_52}", "#{DLZX_230314_72}", "#{DLZX_230314_92}", "#{DLZX_230518_116}"},   -- 青龙4
-        [5] = {"#{DLZX_230314_33}", "#{DLZX_230314_53}", "#{DLZX_230314_73}", "#{DLZX_230314_93}", "#{DLZX_230518_116}"},   -- 青龙5
+        [1] = {"#{DLZX_230314_29}", "#{DLZX_230314_49}", "#{DLZX_230314_69}", "#{DLZX_230314_89}", "#{DLZX_230518_116}"},   -- ??1
+        [2] = {"#{DLZX_230314_30}", "#{DLZX_230314_50}", "#{DLZX_230314_70}", "#{DLZX_230314_90}", "#{DLZX_230518_116}"},   -- ??2
+        [3] = {"#{DLZX_230314_31}", "#{DLZX_230314_51}", "#{DLZX_230314_71}", "#{DLZX_230314_91}", "#{DLZX_230518_116}"},   -- ??3
+        [4] = {"#{DLZX_230314_32}", "#{DLZX_230314_52}", "#{DLZX_230314_72}", "#{DLZX_230314_92}", "#{DLZX_230518_116}"},   -- ??4
+        [5] = {"#{DLZX_230314_33}", "#{DLZX_230314_53}", "#{DLZX_230314_73}", "#{DLZX_230314_93}", "#{DLZX_230518_116}"},   -- ??5
     },
     -- 白虎
     baihu =
     {
-        [1] = {"#{DLZX_230314_39}", "#{DLZX_230314_59}", "#{DLZX_230314_79}", "#{DLZX_230314_99}", "#{DLZX_230518_117}"},   -- 白虎1
-        [2] = {"#{DLZX_230314_40}", "#{DLZX_230314_60}", "#{DLZX_230314_80}", "#{DLZX_230314_100}", "#{DLZX_230518_117}"},  -- 白虎2
-        [3] = {"#{DLZX_230314_41}", "#{DLZX_230314_61}", "#{DLZX_230314_81}", "#{DLZX_230314_101}", "#{DLZX_230518_117}"},  -- 白虎3
-        [4] = {"#{DLZX_230314_42}", "#{DLZX_230314_62}", "#{DLZX_230314_82}", "#{DLZX_230314_102}", "#{DLZX_230518_117}"},  -- 白虎4
-        [5] = {"#{DLZX_230314_43}", "#{DLZX_230314_63}", "#{DLZX_230314_83}", "#{DLZX_230314_103}", "#{DLZX_230518_117}"},  -- 白虎5
+        [1] = {"#{DLZX_230314_39}", "#{DLZX_230314_59}", "#{DLZX_230314_79}", "#{DLZX_230314_99}", "#{DLZX_230518_117}"},   -- ??1
+        [2] = {"#{DLZX_230314_40}", "#{DLZX_230314_60}", "#{DLZX_230314_80}", "#{DLZX_230314_100}", "#{DLZX_230518_117}"},  -- ??2
+        [3] = {"#{DLZX_230314_41}", "#{DLZX_230314_61}", "#{DLZX_230314_81}", "#{DLZX_230314_101}", "#{DLZX_230518_117}"},  -- ??3
+        [4] = {"#{DLZX_230314_42}", "#{DLZX_230314_62}", "#{DLZX_230314_82}", "#{DLZX_230314_102}", "#{DLZX_230518_117}"},  -- ??4
+        [5] = {"#{DLZX_230314_43}", "#{DLZX_230314_63}", "#{DLZX_230314_83}", "#{DLZX_230314_103}", "#{DLZX_230518_117}"},  -- ??5
     },
     -- 朱雀
     zhuque = 
     {
-        [1] = {"#{DLZX_230314_34}", "#{DLZX_230314_54}", "#{DLZX_230314_74}", "#{DLZX_230314_94}", "#{DLZX_230518_116}"},   -- 朱雀1
-        [2] = {"#{DLZX_230314_35}", "#{DLZX_230314_55}", "#{DLZX_230314_75}", "#{DLZX_230314_95}", "#{DLZX_230518_116}"},   -- 朱雀2
-        [3] = {"#{DLZX_230314_36}", "#{DLZX_230314_56}", "#{DLZX_230314_76}", "#{DLZX_230314_96}", "#{DLZX_230518_116}"},   -- 朱雀3
-        [4] = {"#{DLZX_230314_37}", "#{DLZX_230314_57}", "#{DLZX_230314_77}", "#{DLZX_230314_97}", "#{DLZX_230518_116}"},   -- 朱雀4
-        [5] = {"#{DLZX_230314_38}", "#{DLZX_230314_58}", "#{DLZX_230314_78}", "#{DLZX_230314_98}", "#{DLZX_230518_116}"},   -- 朱雀5
+        [1] = {"#{DLZX_230314_34}", "#{DLZX_230314_54}", "#{DLZX_230314_74}", "#{DLZX_230314_94}", "#{DLZX_230518_116}"},   -- ??1
+        [2] = {"#{DLZX_230314_35}", "#{DLZX_230314_55}", "#{DLZX_230314_75}", "#{DLZX_230314_95}", "#{DLZX_230518_116}"},   -- ??2
+        [3] = {"#{DLZX_230314_36}", "#{DLZX_230314_56}", "#{DLZX_230314_76}", "#{DLZX_230314_96}", "#{DLZX_230518_116}"},   -- ??3
+        [4] = {"#{DLZX_230314_37}", "#{DLZX_230314_57}", "#{DLZX_230314_77}", "#{DLZX_230314_97}", "#{DLZX_230518_116}"},   -- ??4
+        [5] = {"#{DLZX_230314_38}", "#{DLZX_230314_58}", "#{DLZX_230314_78}", "#{DLZX_230314_98}", "#{DLZX_230518_116}"},   -- ??5
     },
     -- 玄武
     xuanwu = 
     {
-        [1] = {"#{DLZX_230314_44}", "#{DLZX_230314_64}", "#{DLZX_230314_84}", "#{DLZX_230314_104}", "#{DLZX_230518_116}"},   -- 玄武1
-        [2] = {"#{DLZX_230314_45}", "#{DLZX_230314_65}", "#{DLZX_230314_85}", "#{DLZX_230314_105}", "#{DLZX_230518_116}"},   -- 玄武2
-        [3] = {"#{DLZX_230314_46}", "#{DLZX_230314_66}", "#{DLZX_230314_86}", "#{DLZX_230314_106}", "#{DLZX_230518_116}"},   -- 玄武3
-        [4] = {"#{DLZX_230314_47}", "#{DLZX_230314_67}", "#{DLZX_230314_87}", "#{DLZX_230314_107}", "#{DLZX_230518_116}"},   -- 玄武4
-        [5] = {"#{DLZX_230314_48}", "#{DLZX_230314_68}", "#{DLZX_230314_88}", "#{DLZX_230314_108}", "#{DLZX_230518_116}"},   -- 玄武5
+        [1] = {"#{DLZX_230314_44}", "#{DLZX_230314_64}", "#{DLZX_230314_84}", "#{DLZX_230314_104}", "#{DLZX_230518_116}"},   -- ??1
+        [2] = {"#{DLZX_230314_45}", "#{DLZX_230314_65}", "#{DLZX_230314_85}", "#{DLZX_230314_105}", "#{DLZX_230518_116}"},   -- ??2
+        [3] = {"#{DLZX_230314_46}", "#{DLZX_230314_66}", "#{DLZX_230314_86}", "#{DLZX_230314_106}", "#{DLZX_230518_116}"},   -- ??3
+        [4] = {"#{DLZX_230314_47}", "#{DLZX_230314_67}", "#{DLZX_230314_87}", "#{DLZX_230314_107}", "#{DLZX_230518_116}"},   -- ??4
+        [5] = {"#{DLZX_230314_48}", "#{DLZX_230314_68}", "#{DLZX_230314_88}", "#{DLZX_230314_108}", "#{DLZX_230518_116}"},   -- ??5
     },
     -- 麒麟
     qilin =
     {
-        [1] = {"#{DLZX_230518_121}", "#{DLZX_230518_130}", "#{DLZX_230518_135}", "#{DLZX_230518_140}", "#{DLZX_230518_127}"},   -- 麒麟1
-        [2] = {"#{DLZX_230518_122}", "#{DLZX_230518_131}", "#{DLZX_230518_136}", "#{DLZX_230518_141}", "#{DLZX_230518_127}"},   -- 麒麟2
-        [3] = {"#{DLZX_230518_123}", "#{DLZX_230518_132}", "#{DLZX_230518_137}", "#{DLZX_230518_142}", "#{DLZX_230518_127}"},   -- 麒麟3
-        [4] = {"#{DLZX_230518_124}", "#{DLZX_230518_133}", "#{DLZX_230518_138}", "#{DLZX_230518_143}", "#{DLZX_230518_127}"},   -- 麒麟4
-        [5] = {"#{DLZX_230518_125}", "#{DLZX_230518_134}", "#{DLZX_230518_139}", "#{DLZX_230518_144}", "#{DLZX_230518_127}"},   -- 麒麟5
+        [1] = {"#{DLZX_230518_121}", "#{DLZX_230518_130}", "#{DLZX_230518_135}", "#{DLZX_230518_140}", "#{DLZX_230518_127}"},   -- ??1
+        [2] = {"#{DLZX_230518_122}", "#{DLZX_230518_131}", "#{DLZX_230518_136}", "#{DLZX_230518_141}", "#{DLZX_230518_127}"},   -- ??2
+        [3] = {"#{DLZX_230518_123}", "#{DLZX_230518_132}", "#{DLZX_230518_137}", "#{DLZX_230518_142}", "#{DLZX_230518_127}"},   -- ??3
+        [4] = {"#{DLZX_230518_124}", "#{DLZX_230518_133}", "#{DLZX_230518_138}", "#{DLZX_230518_143}", "#{DLZX_230518_127}"},   -- ??4
+        [5] = {"#{DLZX_230518_125}", "#{DLZX_230518_134}", "#{DLZX_230518_139}", "#{DLZX_230518_144}", "#{DLZX_230518_127}"},   -- ??5
     },
 } -- end DiLingDetails_BtnTextList
 
@@ -88,8 +88,8 @@ local DiLingDetails_BtnTextList =
 function DiLingDetails_PreLoad()
     this:RegisterEvent("DLZXPVP_OPEN", true)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 	this:RegisterEvent("OBJECT_CARED_EVENT", false)
 end -- end func DiLingDetails_PreLoad()
 
@@ -106,7 +106,7 @@ function DiLingDetails_OnEvent(event)
 			return
         end
         
-		-- 如果和NPC的距离大于一定距离或者被删除，自动关闭
+		-- 如果和NPC的距离大于一定距离或犨被删除，自动关睜
         if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
             DiLingDetails_Hide()
         end
@@ -278,7 +278,7 @@ function DiLingDetails_Hide()
     this:Hide()
 end -- end func DiLingDetails_Hide()
 
--- 关闭按钮点击事件
+-- 关睜按钮点击事件
 function DiLingDetails_Clicked_Close()
     DiLingDetails_Hide()
 end -- end func DiLingDetails_Clicked_Close()
@@ -512,18 +512,18 @@ function DiLingDetails_UpdateSceneBtn(btnBeginIndex, btnEndIndex, btnCtrlTbl, bt
                 btnText = btnTextTbl[btnIndex][txtIndex]
                 btnTxt:SetText(btnText)
 
-                -- 设置按钮战火燃烧状态
+                -- 设置按钮牻火燃蔂状态
                 if (todayDead < 500) then
-                    -- 没有战火燃烧状态
+                    -- 没有牻火燃蔂状态
                     btnAni:Play(false)
                     btnAni:Hide()
                 elseif (todayDead >= 500 and todayDead < 3000) then
-                    -- 战火燃烧状态
+                    -- 牻火燃蔂状态
                     btnAni:SetProperty("Animate", "DiLing_AnimateFire")
                     btnAni:Show()
                     btnAni:Play(true)
                 else
-                    -- 战火超级燃烧状态
+                    -- 牻火超级燃蔂状态
                     btnAni:SetProperty("Animate", "DiLing_AnimateSuperFire")
                     btnAni:Show()
                     btnAni:Play(true)

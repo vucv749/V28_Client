@@ -1,4 +1,4 @@
----门派第一人奖励展示
+---门派第一人奖励牴示
        
 local g_MenPaiFirstOne_BattleAward_Frame_UnifiedXPosition;
 local g_MenPaiFirstOne_BattleAward_Frame_UnifiedYPosition;
@@ -7,15 +7,15 @@ local g_MenPaiFirstOne_BattleAward_Award = {}
 
 local g_Prize = 
 {
-	[1] = 	--冠军
+	[1] = 	--??
 	{
 		{itemId=38002665, itemNum=1}
 	},
-	[2] = 	--亚军
+	[2] = 	--??
 	{
 		{itemId=38002666, itemNum=1}
 	},
-	[3] = 	--4强
+	[3] = 	--4?
 	{
 		{itemId=38002667, itemNum=1}
 	},

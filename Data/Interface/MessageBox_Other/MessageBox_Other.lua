@@ -1,4 +1,4 @@
---ËµÃ÷£¬ÔÚÕâ¸öluaÀïÍ·£¬Ö»ÄÜÌí¼ÓÀ´×ÔÆäËûÍæ¼ÒµÄÏûÏ¢»áÖ±½ÓÔÚ
+--ËµÃ÷£¬ÔÚ â¸öluaÀïÍ·£¬Ö»ÄÜÌí¼ÓÀ´×ÔÆäËûÍæ¼ÒµÄÏûÏ¢»áÖ±½ÓÔÚ
 --      Íæ¼ÒµÄ½çÃæÖĞÖ±½Óµ¯³öÒªÇóÈ·ÈÏ¶Ô»°¿òµÄÇé¿ö
 
 --1¡¢ÏµÍ³ÌáÊ¾
@@ -13,17 +13,17 @@ local g_FrameInfo
 local STALL_RENT_FRAME			= 1;
 local DISCARD_ITEM_FRAME		= 2;
 local CANNT_DISCARD_ITEM		= 3;
-local TEAM_ASKJOIN					= 4;	--ÓĞÈËÑûÇëÄã¼ÓÈë¶ÓÎé
-local TEAM_MEMBERINVERT			= 5;	--¶ÓÔ±ÑûÇëÄ³ÈË¼ÓÈë¶ÓÎéÇëÇóÄãÍ¬Òâ
-local TEAM_SOMEASK					= 6;	--Ä³ÈËÉêÇë¼ÓÈë¶ÓÎé
-local TEAM_FOLLOW		 				= 7;	--½øÈë×é¶Ó¸úËæÄ£Ê½
-local FRAME_AFFIRM_SHOW 		= 8;	--½øÈë·ÅÆúÈÎÎñÈ·ÈÏÄ£Ê½
-local GUILD_CREATE_CONFIRM	= 9; 	--°ï»á´´½¨È·ÈÏÄ£Ê½
-local SYSTEM_TIP_INFO 			= 10; --ÏµÍ³ÌáÊ¾¶Ô»°¿òÄ£Ê½
-local GUILD_QUIT_CONFIRM 		= 11; --°ï»áÍË³öÈ·ÈÏÄ£Ê½
-local GUILD_DESTORY_CONFIRM = 12; --°ï»áÉ¾³ıÈ·ÈÏÄ£Ê½
-local CALL_OF								= 13;	--À­ÈË
-local INVITE_RIDE						= 14;  --ÇëÇóË«Æï
+local TEAM_ASKJOIN					= 4;	--?????????
+local TEAM_MEMBERINVERT			= 5;	--???????????????
+local TEAM_SOMEASK					= 6;	--????????
+local TEAM_FOLLOW		 				= 7;	--????????
+local FRAME_AFFIRM_SHOW 		= 8;	--??????????
+local GUILD_CREATE_CONFIRM	= 9; 	--????????
+local SYSTEM_TIP_INFO 			= 10; --?????????
+local GUILD_QUIT_CONFIRM 		= 11; --????????
+local GUILD_DESTORY_CONFIRM = 12; --????????
+local CALL_OF								= 13;	--??
+local INVITE_RIDE						= 14;  --????
 local Quest_Number;
 local g_MessageBox_Other_Frame_UnifiedPosition;
 --===============================================
@@ -65,7 +65,7 @@ function MessageBox_Other_OnEvent(event)
 	if ( event == "SHOW_TEAM_YES_NO" ) then
 
 		g_FrameInfo = TEAM_ASKJOIN;
-		MessageBox_Other_Text:SetText(arg0.."ÑûÇëÄã¼ÓÈë¶ÓÎé");
+		MessageBox_Other_Text:SetText(arg0.."M¶i Nhî gia nh§p ğµi ngû");
 		this:Show();
 		MessageBox_Other_Show_single_Info( 0 );
 		g_InitiativeClose = 0;
@@ -74,7 +74,7 @@ function MessageBox_Other_OnEvent(event)
 	elseif ( event == "TEAM_MEMBER_INVITE" ) then
 
 		g_FrameInfo = TEAM_MEMBERINVERT;
-		MessageBox_Other_Text:SetText(arg0.."ÑûÇë" .. arg1 .. "¼ÓÈë¶ÓÎé, Í¬ÒâÂğ?");
+		MessageBox_Other_Text:SetText(arg0.."M¶i" .. arg1 .. "Gia nh§p ğµi ngû, ğ°ng ı Ma?");
 		this:Show();
 		MessageBox_Other_Show_single_Info( 0 );
 		g_InitiativeClose = 0;
@@ -83,7 +83,7 @@ function MessageBox_Other_OnEvent(event)
 	elseif ( event == "TEAM_APPLY" ) then
 
 		g_FrameInfo = TEAM_SOMEASK;
-		MessageBox_Other_Text:SetText(arg0.."ÉêÇë¼ÓÈë¶ÓÎé, Í¬ÒâÂğ?");
+		MessageBox_Other_Text:SetText(arg0.."Xin gia nh§p ğµi ngû, ğ°ng ı Ma?");
 		this:Show();
 		MessageBox_Other_Show_single_Info( 0 );
 		g_InitiativeClose = 0;
@@ -92,8 +92,8 @@ function MessageBox_Other_OnEvent(event)
 	elseif ( event == "TEAM_FOLLOW_INVITE" ) then
 
 		g_FrameInfo = TEAM_FOLLOW;
-		AxTrace( 0, 0, "¶Ó³¤ÑûÇë½øÈë×é¶Ó¸úËæÄ£Ê½" );
-		MessageBox_Other_Text:SetText(arg0.."Ï£ÍûÄã¸úËæ¶ÓÎé, Í¬ÒâÂğ?");
+		AxTrace( 0, 0, "Ğµi trß·ng m¶i tiªn vào t± ğµi ği theo hình thÑc" );
+		MessageBox_Other_Text:SetText(arg0.."Hy v÷ng Nhî ği theo ğµi ngû, ğ°ng ı Ma?");
 		this:Show();
 		MessageBox_Other_Show_single_Info( 0 );
 		g_InitiativeClose = 0;
@@ -110,14 +110,14 @@ function MessageBox_Other_OnEvent(event)
 		g_FrameInfo = CALL_OF;
 		local szName = arg0;
 		
-		MessageBox_Other_Text:SetText(szName .. "À­Äã£¬Í¬Òâ²»£¿");
+		MessageBox_Other_Text:SetText(szName .. "LÕp Nhî, ğ°ng ı B¤t?");
 		this:Show();
 		MessageBox_Other_Show_single_Info( 0 );
 		g_InitiativeClose = 0;
 	elseif( event == "RECIVE_RIDE" ) then
 		g_FrameInfo = INVITE_RIDE;
 		local szName = arg0;
-		MessageBox_Other_Text:SetText(szName .. "ÑûÇëÄãÍ¬Æï");	
+		MessageBox_Other_Text:SetText(szName .. "M¶i Nhî Ğ°ng KÜ");	
 		this:Show();
 		MessageBox_Other_Show_single_Info( 0 );
 		g_InitiativeClose = 0;
@@ -237,7 +237,7 @@ end
 --
 function MessageBox_Other_Info_Clicked()
 
-	-- ¹Ø±ÕĞÅÏ¢¶Ô»°¿ò¡£
+	-- ¹Ø± ĞÅÏ¢¶Ô»°¿ò¡£
 	MessageBox_Other_Show_single_Info(0);
 	this:Hide();
 end
@@ -246,15 +246,15 @@ end
 function MessageBox_Other_Show_single_Info(bShow)
 
 	if(1 == bShow) then
-		MessageBox_Other_OK_Button:SetText( "È·¶¨" );
-		MessageBox_Other_Cancel_Button:SetText( "È¡Ïû" );
+		MessageBox_Other_OK_Button:SetText( "Xác nh§n" );
+		MessageBox_Other_Cancel_Button:SetText( "Hüy bö" );
 		MessageBox_Other_OK_Button:Hide();
 		MessageBox_Other_Info_Button:Show();
 		MessageBox_Other_Cancel_Button:Hide();
 		
 	elseif(0 == bShow) then
-		MessageBox_Other_OK_Button:SetText( "Í¬Òâ" );
-		MessageBox_Other_Cancel_Button:SetText( "¾Ü¾ø" );
+		MessageBox_Other_OK_Button:SetText( "Ğ°ng ı" );
+		MessageBox_Other_Cancel_Button:SetText( "Cñ tuy®t" );
 		MessageBox_Other_OK_Button:Show();
 		MessageBox_Other_Info_Button:Hide();
 		MessageBox_Other_Cancel_Button:Show();

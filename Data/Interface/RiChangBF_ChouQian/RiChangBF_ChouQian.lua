@@ -16,17 +16,17 @@ local RiChangBF_ChouQian_TitlePIC =
 	[3] = {image = "set:RiChangBF1 image:RiChangBF_KG"},
 }
 
---×îÖÕ½á¹û
+--×îÖ ½á¹û
 local RiChangBF_ChouQian_PlayerChoosePIC1 =
 {
-	[1] = {image = "set:RiChangBF1 image:RiChangBF_ZDXZ"}, --ÁÁµÄÖïµÐ
-	[2] = {image = "set:RiChangBF1 image:RiChangBF_SXWXZ"},--°µµÄË«ÐÇ
+	[1] = {image = "set:RiChangBF1 image:RiChangBF_ZDXZ"}, --????
+	[2] = {image = "set:RiChangBF1 image:RiChangBF_SXWXZ"},--????
 }
---×îÖÕ½á¹û
+--×îÖ ½á¹û
 local RiChangBF_ChouQian_PlayerChoosePIC2 =
 {
-	[1] = {image = "set:RiChangBF1 image:RiChangBF_SXXZ"}, --ÁÁµÄË«ÐÇ
-	[2] = {image = "set:RiChangBF1 image:RiChangBF_ZDWXZ"},--°µµÄÖïµÐ
+	[1] = {image = "set:RiChangBF1 image:RiChangBF_SXXZ"}, --????
+	[2] = {image = "set:RiChangBF1 image:RiChangBF_ZDWXZ"},--????
 }
 
 local RiChangBF_ChouQian_PlayerChoosePIC =
@@ -35,7 +35,7 @@ local RiChangBF_ChouQian_PlayerChoosePIC =
 	[2] = RiChangBF_ChouQian_PlayerChoosePIC2,
 }
 
---×îÖÕ½á¹û ÏÔÊ¾Ç©ÃæÎÄ×Ö
+--×îÖ ½á¹û ÏÔÊ¾Ç©ÃæÎÄ×Ö
 local RiChangBF_ChouQian_PlayerChooseStr1 =
 {
 	[1] = {str = "#{FBXZ_240408_57}"},
@@ -54,7 +54,7 @@ local RiChangBF_ChouQian_PlayerChooseStr =
 	[2] = RiChangBF_ChouQian_PlayerChooseStr2,
 }
 
---×îÖÕ½á¹û
+--×îÖ ½á¹û
 local RiChangBF_ChouQian_LastPIC =
 {
 	[1] = {image = "set:RiChangBF1 image:RiChangBF_ZDZS"},
@@ -63,27 +63,27 @@ local RiChangBF_ChouQian_LastPIC =
 
 local RiChangBF_ChouQian_PiaoMiaotr= 
 {
-	[1] = "¹þ´ó°Ô",
-	[2] = "É£ÍÁ¹«",
-	[3] = "ÎÚÀÏ´ó",
-	[4] = "ÈÎÆ½Éú",
-	[5] = "ÀîÇïË®",
+	[1] = "Cáp ÐÕi Bá",
+	[2] = "Tang Th± Công",
+	[3] = "Ô Lão ÐÕi",
+	[4] = "Nh§m Bình Sinh",
+	[5] = "Lý Thu Thüy",
 }
 
 local RiChangBF_ChouQian_QingQiutr= 
 {
-	[1] = "ÔÆ¾íÊæ",
-	[2] = "ÒÝ",
-	[3] = "°¬»¢",
-	[4] = "ÔÆÆ®Æ®",
+	[1] = "Vân Quy¬n Thß",
+	[2] = "D§t",
+	[3] = "Ngäi H±",
+	[4] = "Vân Phiêu Phiêu",
 }
 
 local RiChangBF_ChouQian_WangRitr= 
 {
-	[1] = "°×ÊÀ¾µ",
-	[2] = "µ¥Õý",
-	[3] = "Ì·ÆÅ",
-	[4] = "Ðþ¿à",
+	[1] = "BÕch Thª Kính",
+	[2] = "Ð½n Chính",
+	[3] = "Ðàm Bà",
+	[4] = "Huy«n Kh±",
 }
 
 local RiChangBF_ChouQian_BOSSStr= 
@@ -95,11 +95,11 @@ local RiChangBF_ChouQian_BOSSStr=
 
 local RiChangBF_ChouQian_ErrorStr= 
 {
-	[1] = "1ºÅBOSS",
-	[2] = "2ºÅBOSS",
-	[3] = "3ºÅBOSS",
-	[4] = "4ºÅBOSS",
-	[5] = "5ºÅBOSS",
+	[1] = "1Hào BOSS",
+	[2] = "2Hào BOSS",
+	[3] = "3Hào BOSS",
+	[4] = "4Hào BOSS",
+	[5] = "5Hào BOSS",
 }
 
 function RiChangBF_ChouQian_PreLoad()
@@ -163,7 +163,7 @@ function RiChangBF_ChouQian_OnEvent(event)
 		if IsWindowShow("RiChangBF_TishiTips") == true then
 			CloseWindow("RiChangBF_TishiTips", true)
 		end
-	--¹Ø±Õ½çÃæ
+	--¹Ø± ½çÃæ
 	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 99880611) then
 		RiChangBF_ChouQian_Close:Show()		
 		-- if( this:IsVisible() ) then
@@ -345,7 +345,7 @@ function RiChangBF_ChouQian_PlayerChoose()
 
 	local nChoice1 = 0
 	local nChoice2 = 0
-	if g_RiChangBF_Choose1_Btn == 1 then --Ñ¡Ôñ°´Å¥
+	if g_RiChangBF_Choose1_Btn == 1 then --????
 		nChoice1 = 1
 		nChoice2 = 2
 	else

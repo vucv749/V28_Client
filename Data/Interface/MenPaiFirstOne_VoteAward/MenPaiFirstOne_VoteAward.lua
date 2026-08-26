@@ -14,7 +14,7 @@ function MenPaiFirstOne_VoteAward_PreLoad()
 
 	this:RegisterEvent("OPEN_DDZ_AWARD", true)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("ADJEST_UI_POS",false)  
 	
 end
@@ -66,7 +66,7 @@ function MenPaiFirstOne_VoteAward_On_ResetPos()
 end
  
 --=========
--- 关闭
+-- 关睜
 --=========
 function MenPaiFirstOne_VoteAward_Close() 
     g_MenPaiFirstOne_VoteAward_LevelType = 1

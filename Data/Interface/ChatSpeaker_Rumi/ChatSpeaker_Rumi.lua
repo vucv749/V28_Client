@@ -40,7 +40,7 @@ function ChatSpeaker_Rumi_Open(nType)
 	local level = Player:GetData("LEVEL");
 	if level < LEVEL_LIMIT then
 		if nType == 0 then
-			PushDebugMessage("ÄúµÄµÈ¼¶²»×ã15¼¶£¬²»ÄÜÊ¹ÓÃ´«ÒôÈëÃÜ·¢ÑÔ¡£");
+			PushDebugMessage("Chßa ðÕt c¤p 15, không th¬ dùng truy«n âm.");
 		end
 		return;
 	end

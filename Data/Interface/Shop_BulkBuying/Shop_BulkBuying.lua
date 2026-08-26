@@ -3,8 +3,8 @@ local g_ItemIdx = -1;
 
 local ARR_PRICE = {};
 
-local CU_MONEY			= 1	-- 钱
-local CU_MONEYJZ		= 8 -- 交子
+local CU_MONEY			= 1	-- ?
+local CU_MONEYJZ		= 8 -- ??
 
 function Shop_BulkBuying_PreLoad()
 	this:RegisterEvent("OPEN_BULKBUY_BOOTH");
@@ -41,7 +41,7 @@ function Shop_BulkBuying_Open( idx )
 	--商店是消耗金钱的
 	local i = 0;
 	if(NpcShop:GetShopType("unit") == CU_MONEY) then
-		--这个位置的物品的叠加数量是大于1的
+		--犫个位置的物品的叠加数量是大于1的
 		g_ItemMax = NpcShop:EnumItemMaxOverlay(idx);
 		--if(g_ItemMax > 1) then
 			--符合条件，显示界面
@@ -76,7 +76,7 @@ function Shop_BulkBuying_Open( idx )
 	
 	--商店是优先扣交子的
 	if(NpcShop:GetShopType("unit") == CU_MONEYJZ) then
-		--这个位置的物品的叠加数量是大于1的
+		--犫个位置的物品的叠加数量是大于1的
 		g_ItemMax = NpcShop:EnumItemMaxOverlay(idx);
 		--if(g_ItemMax > 1) then
 			--符合条件，显示界面
@@ -142,7 +142,7 @@ function Shop_BulkBuying_TextChanged()
 	--if(tostring(num) ~= Shop_BulkBuying_IME:GetText())then --让金钱随时更新,by hukai#38377
 		local price = NpcShop:EnumItemPrice(g_ItemIdx)*num;
 		Shop_BulkBuying_Money2:SetProperty("MoneyNumber", price);
-		Shop_BulkBuying_IME:SetTextOriginal(num); --修改原来的bug，递归调用导致客户端脚本系统死掉
+		Shop_BulkBuying_IME:SetTextOriginal(num); --?????bug,???????????????
 	--end
 	
 end

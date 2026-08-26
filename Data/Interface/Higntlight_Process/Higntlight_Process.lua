@@ -3,7 +3,7 @@
 local g_HigntlightProcess_Frame_UnifiedPosition;
 local g_NuHuoLianZhan = 1;
 local g_XiShanXingLv = 2;
---后续若有其他技能要添加 需要在这里做补充
+--后续若有其他技能要添加 需要在犫里做补充
 
 function Higntlight_Process_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
@@ -21,21 +21,21 @@ end
 
 function Higntlight_Process_OnLoad()
 	this:Hide();
-	Higntlight_Process_HideAllSkillTitle();--默认情况关闭两个技能的title 只有在取队列时 按照获取到的信息 开启对应的技能title
+	Higntlight_Process_HideAllSkillTitle();--???????????title ??????? ???????? ???????title
 	g_HigntlightProcess_Frame_UnifiedPosition = Higntlight_Process_Frame:GetProperty("UnifiedPosition");
-	SetTimer("Higntlight_Process", "HigntlightProcess_GetMsgTimer()", 6000);--6秒取一次队列
+	SetTimer("Higntlight_Process", "HigntlightProcess_GetMsgTimer()", 6000);--6??????
 end
 
 
 function Higntlight_Process_OnEvent(event)
 	if event == "UI_COMMAND" then
 	elseif event == "SHOW_HIGHLIGHT_SKILL" then
-		--收到消息包进队列触发的事件 
+		--薁到消息包进队列触发的事件 
 		if(this:IsVisible()) then
-			--处于某玩家高光 这里就什么都不做 让timer走原来的顺序
+			--处于某玩家高光 犫里就什么都不做 让timer走原来的顺序
 			return;
 		else
-			--当前没有处于某个玩家高光显示时间 则在收到消息的时候 关闭所有timer 显示队列中第一个玩家高光 并且开启新的timer
+			--当前没有处于某个玩家高光显示时间 则在薁到消息的时候 关睜所有timer 显示队列中第一个玩家高光 并且开启新的timer
 			KillTimer("HigntlightProcess_GetMsgTimer()");
 			KillTimer("HigntlightProcess_CloseUITimer()");
 			HigntlightProcess_GetMsgTimer();
@@ -62,7 +62,7 @@ end
 --获取队列信息并且设置UI 定时器 定时调用client中接口 以及HigntlightProcess_UpdateUI()
 function HigntlightProcess_GetMsgTimer()
     local ret,name,guid,menpai,skillType = HighLight:Lua_GetHLSkillQueFront();
-	if ret == 0 then--高光技能队列空
+	if ret == 0 then--???????
 		return;
 	end
 	HigntlightProcess_UpdateUI(name,skillType);
@@ -76,26 +76,26 @@ function HigntlightProcess_GetMsgTimer()
 			PushDebugMessage("#{GGSK_221221_63}");
 		end
 	end
-	SetTimer("Higntlight_Process", "HigntlightProcess_CloseUITimer()", 5000);--5秒后自动关闭
+	SetTimer("Higntlight_Process", "HigntlightProcess_CloseUITimer()", 5000);--5??????
 	this:Show();
 end
---每次显示一段时间 （时间待定）就关闭UI 定时器 
+--每次显示一段时间 （时间待定）就关睜UI 定时器 
 function HigntlightProcess_CloseUITimer()
 	KillTimer("HigntlightProcess_CloseUITimer()");
-	--关闭动画与界面
+	--关睜动画与界面
 	Higntlight_Process_HideAllSkillTitle();
 	this:Hide()
 end
---清空队列 调用client中接口
+--清繝队列 调用client中接口
 function HigntlightProcess_ClearQueue()
-	KillTimer("HigntlightProcess_CloseUITimer()"); --无论当前是否有高光在显示 既然清空队列了 那肯定是要关闭整个高光 所以不用再走关闭UI的Timer 也手动关闭
+	KillTimer("HigntlightProcess_CloseUITimer()"); --???????????? ??????? ??????????? ????????UI?Timer ?????
 	Higntlight_Process_HideAllSkillTitle();
 	this:Hide();
 	HighLight:Lua_ClearHLSkillQue();
 end
 --设置UI
 function HigntlightProcess_UpdateUI(tname,tskillType)
-	--后续若有其他技能要添加 需要在这里做补充
+	--后续若有其他技能要添加 需要在犫里做补充
 	--显示出现动画
 	Higntlight_Process_HideAllSkillTitle();
     if tskillType == g_NuHuoLianZhan then
@@ -111,7 +111,7 @@ function HigntlightProcess_UpdateUI(tname,tskillType)
 end
 --隐藏所有技能title
 function Higntlight_Process_HideAllSkillTitle()
-	--后续若有其他技能要添加 需要在这里做补充
+	--后续若有其他技能要添加 需要在犫里做补充
 	Higntlight_Process_TitleNuhuo:Hide();
 	Higntlight_Process_TitleXishan:Hide();
 

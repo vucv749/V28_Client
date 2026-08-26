@@ -4,7 +4,7 @@ local g_QinHuangTime_Mini_SceneId;
 
 function QinHuangTime_Mini_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
-	--离开场景，自动关闭
+	--离开场景，自动关睜
 	this:RegisterEvent("PLAYER_LEAVE_WORLD", false)	
 	this:RegisterEvent("QIHUANTIME_SWITCH")
 end

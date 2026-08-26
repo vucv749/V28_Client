@@ -4,7 +4,7 @@ local g_TimingPlay_Info_nSelectIndex = 0;
 -- PreLoad()
 --=========
 function TimingPlay_Info_PreLoad() 
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
 	this:RegisterEvent("ADJEST_UI_POS",false) 
 	this:RegisterEvent("OPENJIANGSHUJISHI_POPUP",true)  

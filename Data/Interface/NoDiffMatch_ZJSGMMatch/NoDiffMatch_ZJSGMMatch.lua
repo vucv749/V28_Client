@@ -81,7 +81,7 @@ function NoDiffMatch_ZJSGMMatch_Submit_Clicked()
 		return
 	end
 
-	--比赛场地、双方战队ID
+	--比赛场地、双方牻队ID
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name("OnSelectTwoTeamsToBattleField")
 		Set_XSCRIPT_ScriptID(g_op_script_id)

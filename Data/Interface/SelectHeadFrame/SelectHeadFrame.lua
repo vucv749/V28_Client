@@ -1,12 +1,12 @@
 local g_DIYFrame_Icon = {}
 local MAX_OBJ_DISTANCE = 3.0;
-local g_nCurPage = 0							-- µ±Ç°Ñ¡ÔñµÄÍ¼±êÔÚµÚ¼¸Ò³
-local g_nCurSelect = 0							-- µ±Ç°Ñ¡ÔñµÄÍ¼±ê±àºÅ
+local g_nCurPage = 0							-- ???????????
+local g_nCurSelect = 0							-- ?????????
 local g_Style_Index = {}
-local g_Style_Count = 0							-- Êµ¼ÊÉÏÓÐ¶àÉÙ¸öDIYÍ·Ïñ¿É¹©Ñ¡Ôñ
+local g_Style_Count = 0							-- ???????DIY??????
 local g_Original_Frame = 0				
-local STYLE_PAGE_BUTTON = 12					-- Ã¿Ò³¶àÉÙ¸öÍ¼±ê
-local MAX_STYLE = 256							-- ×î¶àÓÐ¶àÉÙÍ¼±ê
+local STYLE_PAGE_BUTTON = 12					-- ???????
+local MAX_STYLE = 256							-- ???????
 
 local g_SelectHeadFrame_Frame_UnifiedPosition;
 
@@ -54,7 +54,7 @@ function SelectHeadFrame_OnEvent(event)
 		local xx = Get_XParam_INT(0);
 		objCared = DataPool : GetNPCIDByServerID(xx);
 		if objCared == -1 then
-				PushDebugMessage("server´«¹ýÀ´µÄÊý¾ÝÓÐÎÊÌâ¡£");
+				PushDebugMessage("Dæ li®u máy chü có v¤n ð«");
 				return;
 		end
 
@@ -77,7 +77,7 @@ function SelectHeadFrame_OnEvent(event)
 			Close_DIYFrame()
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then			
 			--È¡Ïû¹ØÐÄ
 			Close_DIYFrame()
@@ -162,21 +162,21 @@ function SelectHeadFrame_Update()
 	
 	-- ·­Ò³ÉèÖÃ
 	if g_nCurPage == 0 then
-		SelectHeadFrame_PageUp : Disable();				-- µÚ1Ò³
+		SelectHeadFrame_PageUp : Disable();				-- ?1?
 	else
-		SelectHeadFrame_PageUp : Enable();				-- ²»ÊÇµÚ1Ò³
+		SelectHeadFrame_PageUp : Enable();				-- ???1?
 	end
 
 	if (g_nCurPage+1)*STYLE_PAGE_BUTTON < g_Style_Count then
-		SelectHeadFrame_PageDown : Enable();			-- ²»ÊÇ×îºó1Ò³
+		SelectHeadFrame_PageDown : Enable();			-- ????1?
 	else
-		SelectHeadFrame_PageDown : Disable();			-- ×îºó1Ò³
+		SelectHeadFrame_PageDown : Disable();			-- ??1?
 	end
 
 end
 
 --==================================
---¹Ø±Õ
+--¹Ø± 
 --==================================
 function Close_DIYFrame()
 	g_nCurPage = 0

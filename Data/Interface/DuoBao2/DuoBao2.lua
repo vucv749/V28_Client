@@ -15,7 +15,7 @@ local g_DuoBao2_TeamNameStr =
 	[4] = {str = "#{DDDB_20240711_83}"},
 }
 
---预加载函数，可以而且只能在这里注册脚本关心的事件
+--预加载函数，可以而且只能在犫里注册脚本关心的事件
 function DuoBao2_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
 	-- 游戏窗口尺寸发生了变化
@@ -33,13 +33,13 @@ function DuoBao2_OnLoad()
 	m_Frame_UnifiedXPosition	= DuoBao2_Frame:GetProperty("UnifiedXPosition");
 	m_Frame_UnifiedYPosition	= DuoBao2_Frame:GetProperty("UnifiedYPosition");
 
-	-- 阵营名
+	-- 狊营名
 	g_DuoBao2_TeamName[1] = DuoBao2_ScoreNo1_Text1;
 	g_DuoBao2_TeamName[2] = DuoBao2_ScoreNo2_Text1;
 	g_DuoBao2_TeamName[3] = DuoBao2_ScoreNo3_Text1;
 	g_DuoBao2_TeamName[4] = DuoBao2_ScoreNo4_Text1;
 
-	-- 阵营 分数
+	-- 狊营 分数
 	g_DuoBao2_TeamScore[1] = DuoBao2_ScoreNo1_Text2;
 	g_DuoBao2_TeamScore[2] = DuoBao2_ScoreNo2_Text2;
 	g_DuoBao2_TeamScore[3] = DuoBao2_ScoreNo3_Text2;

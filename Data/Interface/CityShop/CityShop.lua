@@ -3,8 +3,8 @@ local g_MembersCtl = {};
 local g_clientNpcId = -1;
 local MAX_OBJ_DISTANCE = 3.0;
 
-local g_CurPage = 1;			--当前在第几页
-local g_TotalPage = 0;		--最大页数
+local g_CurPage = 1;			--??????
+local g_TotalPage = 0;		--????
 
 function CityShop_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
@@ -59,7 +59,7 @@ function City_Shop_CareEventHandle(careId, op, distance)
 		if(tonumber(careId) ~= g_clientNpcId) then
 			return;
 		end
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(op == "distance" and tonumber(distance)>MAX_OBJ_DISTANCE or op=="destroy") then
 			this:Hide();
 		end
@@ -120,7 +120,7 @@ function City_Shop_DownPage()
 end
 
 function City_Shop_NextPage(dir)
-	if(g_CurPage == 1 and dir < 0) then return; end --已经是第一页
+	if(g_CurPage == 1 and dir < 0) then return; end --??????
 	local newPage = g_CurPage+dir;
 	local newAction = (City:EnumCityShop((newPage-1)*12+1));
 	if(newAction:GetID() == 0 and g_CurPage > 1) then return; end
@@ -161,7 +161,7 @@ function City_Shop_Act_Set(i)
 			g_MembersCtl[i].money:SetProperty("MoneyNumber", tostring(money));
 			g_MembersCtl[i].money:Show();
 
-			g_MembersCtl[i].txt:SetText("商票金钱");
+			g_MembersCtl[i].txt:SetText("Th呓ng Phi猽 ti玭 t鄆");
 			g_MembersCtl[i].txt:Show();
 		else
 			--设置金钱
@@ -170,7 +170,7 @@ function City_Shop_Act_Set(i)
 			g_MembersCtl[i].money:Show();
 			--设置帮贡
 			local contribute = City:GetCityShopInfo((g_CurPage-1)*12+(tonumber(i)), "contribute");
-			g_MembersCtl[i].txt:SetText("帮贡："..tostring(contribute));
+			g_MembersCtl[i].txt:SetText("Bang C痭g:"..tostring(contribute));
 			g_MembersCtl[i].txt:Show();
 		end
 		else

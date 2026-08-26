@@ -47,11 +47,11 @@ function ZhongQiu_TuanYuanFan_OnLoad()
 	g_TuanYuanFan_Sel = 0
 	--玩家状态:
 	g_SeatStateImage={
-		["yiruzuo"]="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_In",--已入座    
-		["weiruzuo"]="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_Out",--未入座    
-		["kongwei"]="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_Empty",--空位      
-		["dengdai"]="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_Wait",--等待    
-		["likai"]="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_Leave",--离开    
+		["yiruzuo"]="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_In",--???    
+		["weiruzuo"]="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_Out",--???    
+		["kongwei"]="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_Empty",--??      
+		["dengdai"]="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_Wait",--??    
+		["likai"]="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_Leave",--??    
 	}
 end
 
@@ -85,7 +85,7 @@ function ZhongQiu_TuanYuanFan_OnEvent(event)
 			--更新
 			ZhongQiu_TuanYuanFan_EnterUpdate(tonumber(arg1))
 		elseif uiflag==-3 and this:IsVisible() then
-			--关闭界面倒计时
+			--关睜界面倒计时
 			g_bReceiveCloseUIMsg = 1
 			this:Hide()
 --			g_CloseTick = 3
@@ -160,16 +160,16 @@ function ZhongQiu_TuanYuanFan_Update()
 			= DataPool:GetTeamMemInfoExByIndex( i-1 );
 			g_headmodel_ctrl_A[i].name:SetText(charname)
 			if isLeader==1 then
-				g_headmodel_ctrl_A[i].stat:SetProperty("Image",g_SeatStateImage["dengdai"])--("#{TYF_210712_43}")--等待
+				g_headmodel_ctrl_A[i].stat:SetProperty("Image",g_SeatStateImage["dengdai"])--("#{TYF_210712_43}")--??
 			else
-				g_headmodel_ctrl_A[i].stat:SetProperty("Image",g_SeatStateImage["weiruzuo"])--SetText("#{TYF_210712_49}")--为入座
+				g_headmodel_ctrl_A[i].stat:SetProperty("Image",g_SeatStateImage["weiruzuo"])--SetText("#{TYF_210712_49}")--???
 			end
 			g_headmodel_ctrl_A[i].head:SetProperty("Image", strIconIndex);
 			ZhongQiu_TuanYuanFan_InserMember(charguid,charname)
 		end
 		if iMemCount<5 then
 			for i=iMemCount+1,5 do
-				g_headmodel_ctrl_A[i].stat:SetProperty("Image",g_SeatStateImage["kongwei"])--SetText("#{TYF_210712_51}")--空位
+				g_headmodel_ctrl_A[i].stat:SetProperty("Image",g_SeatStateImage["kongwei"])--SetText("#{TYF_210712_51}")--??
 				g_headmodel_ctrl_A[i].head:SetProperty("Image", "set: ZhongQiu_TuanYuanFan1 image: TuanYuanFan_EmptySeat");
 				g_headmodel_ctrl_A[i].name:SetText("")
 			end
@@ -194,9 +194,9 @@ function ZhongQiu_TuanYuanFan_Update()
 			= DataPool:GetTeamMemInfoExByIndex( i-1 );
 			g_headmodel_ctrl_B[i].name:SetText(charname)
 			if isLeader==1 then
-				g_headmodel_ctrl_B[i].stat:SetProperty("Image",g_SeatStateImage["dengdai"])--SetText("#{TYF_210712_43}")--等待
+				g_headmodel_ctrl_B[i].stat:SetProperty("Image",g_SeatStateImage["dengdai"])--SetText("#{TYF_210712_43}")--??
 			else
-				g_headmodel_ctrl_B[i].stat:SetProperty("Image",g_SeatStateImage["weiruzuo"])--SetText("#{TYF_210712_49}")--未入座
+				g_headmodel_ctrl_B[i].stat:SetProperty("Image",g_SeatStateImage["weiruzuo"])--SetText("#{TYF_210712_49}")--???
 			end
 			g_headmodel_ctrl_B[i].head:SetProperty("Image", strIconIndex);
 			ZhongQiu_TuanYuanFan_InserMember(charguid,charname)
@@ -272,9 +272,9 @@ function ZhongQiu_TuanYuanFan_EnterUpdate(memguid)
 		if memguid==g_memberlist[i].charguid then
 			--入座更新
 			if g_TuanYuanFan_Sel>=1 and g_TuanYuanFan_Sel<=2 then
-				g_headmodel_ctrl_A[i].stat:SetProperty("Image",g_SeatStateImage["yiruzuo"])--SetText("#{TYF_210712_50}")--入座
+				g_headmodel_ctrl_A[i].stat:SetProperty("Image",g_SeatStateImage["yiruzuo"])--SetText("#{TYF_210712_50}")--??
 			else
-				g_headmodel_ctrl_B[i].stat:SetProperty("Image",g_SeatStateImage["yiruzuo"])--SetText("#{TYF_210712_50}")--入座
+				g_headmodel_ctrl_B[i].stat:SetProperty("Image",g_SeatStateImage["yiruzuo"])--SetText("#{TYF_210712_50}")--??
 			end
 			return
 		end

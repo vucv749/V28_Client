@@ -1,11 +1,11 @@
 local g_NeedTipID = -1
-local g_CurSelectSceneID = -1 --Ñ¡ÔñµÄµØÍ¼³¡¾°
-local g_DungeonsTable = {}   --µØÏÂ³Ç
-local g_DungeonsIndex = -1	 --¼ÇÂ¼µØÏÂ³ÇË÷Òý
-local g_IsTServerMapSizeSelect = 0 --Tserver³¡¾°£¬Ä¬ÈÏÎª×îÐ¡»¯µÄµØÍ¼
-local g_OldMapMode = -1 --Ô­µØÍ¼´óÐ¡
+local g_CurSelectSceneID = -1 --???????
+local g_DungeonsTable = {}   --???
+local g_DungeonsIndex = -1	 --???????
+local g_IsTServerMapSizeSelect = 0 --Tserver??,?????????
+local g_OldMapMode = -1 --?????
 
-local g_SceneMapUsage = 0		--UIµ±Ç°µÄÓÃ´¦ 0ÊÇÄ¬ÈÏ³¡¾°µØÍ¼
+local g_SceneMapUsage = 0		--UI????? 0???????
 local g_initial_size = ""
 local g_initial_pos = ""
 local g_scene_filename = ""
@@ -27,55 +27,55 @@ function SceneMap_PreLoad()
    -- ÓÎÏ··Ö±æÂÊ·¢ÉúÁË±ä»¯
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
 	this:RegisterEvent("ACC_CHANGE_TIPS",false)
-	this:RegisterEvent("PLAYER_ENTERING_WORLD",true )	-- ½øÈëworld
-	this:RegisterEvent("RESET_ALLUI",true)				-- ·µ»ØµÇÂ¼½çÃæ, ÖØÖÃËùÓÐUI
+	this:RegisterEvent("PLAYER_ENTERING_WORLD",true )	-- ??world
+	this:RegisterEvent("RESET_ALLUI",true)				-- ??????, ????UI
 end
 
 function SceneMap_OnLoad()
 
 
 	g_DungeonsTable[1]={maplist={}}
-	g_DungeonsTable[1].maplist[1] = {sceneId = 166, name = "±¦²Ø¶´Ò»²ã"}
-	g_DungeonsTable[1].maplist[2] = {sceneId = 169, name = "±¦²Ø¶´¶þ²ã"}
-	g_DungeonsTable[1].maplist[3] = {sceneId = 191, name = "±¦²Ø¶´Èý²ã"}
-	g_DungeonsTable[1].maplist[4] = {sceneId = 192, name = "±¦²Ø¶´ËÄ²ã"}
-	g_DungeonsTable[1].maplist[5] = {sceneId = 193, name = "±¦²Ø¶´Îå²ã"}
+	g_DungeonsTable[1].maplist[1] = {sceneId = 166, name = "Bäo Tàng Ðµng T¥ng 1"}
+	g_DungeonsTable[1].maplist[2] = {sceneId = 169, name = "Bäo Tàng Ðµng T¥ng 2"}
+	g_DungeonsTable[1].maplist[3] = {sceneId = 191, name = "Bäo Tàng Ðµng T¥ng 3"}
+	g_DungeonsTable[1].maplist[4] = {sceneId = 192, name = "Bäo Tàng Ðµng T¥ng 4"}
+	g_DungeonsTable[1].maplist[5] = {sceneId = 193, name = "Bäo Tàng Ðµng T¥ng 5"}
 
 	g_DungeonsTable[2]={maplist={}}
-	g_DungeonsTable[2].maplist[1] = {sceneId = 202, name = "ÑàÍõ¹ÅÄ¹Ò»²ã"}
-	g_DungeonsTable[2].maplist[2] = {sceneId = 203, name = "ÑàÍõ¹ÅÄ¹¶þ²ã"}
-	g_DungeonsTable[2].maplist[3] = {sceneId = 204, name = "ÑàÍõ¹ÅÄ¹Èý²ã"}
-	g_DungeonsTable[2].maplist[4] = {sceneId = 205, name = "ÑàÍõ¹ÅÄ¹ËÄ²ã"}
-	g_DungeonsTable[2].maplist[5] = {sceneId = 206, name = "ÑàÍõ¹ÅÄ¹Îå²ã"}
-	g_DungeonsTable[2].maplist[6] = {sceneId = 207, name = "ÑàÍõ¹ÅÄ¹Áù²ã"}
-	g_DungeonsTable[2].maplist[7] = {sceneId = 208, name = "ÑàÍõ¹ÅÄ¹Æß²ã"}
-	g_DungeonsTable[2].maplist[8] = {sceneId = 209, name = "ÑàÍõ¹ÅÄ¹°Ë²ã"}
-	g_DungeonsTable[2].maplist[9] = {sceneId = 210, name = "ÑàÍõ¹ÅÄ¹¾Å²ã"}
+	g_DungeonsTable[2].maplist[1] = {sceneId = 202, name = "Yên Vß½ng C± MÕc T¥ng 1"}
+	g_DungeonsTable[2].maplist[2] = {sceneId = 203, name = "Yên Vß½ng C± MÕc T¥ng 2"}
+	g_DungeonsTable[2].maplist[3] = {sceneId = 204, name = "Yên Vß½ng C± MÕc T¥ng 3"}
+	g_DungeonsTable[2].maplist[4] = {sceneId = 205, name = "Yên Vß½ng C± MÕc T¥ng 4"}
+	g_DungeonsTable[2].maplist[5] = {sceneId = 206, name = "Yên Vß½ng C± MÕc T¥ng 5"}
+	g_DungeonsTable[2].maplist[6] = {sceneId = 207, name = "Yên Vß½ng C± MÕc T¥ng 6"}
+	g_DungeonsTable[2].maplist[7] = {sceneId = 208, name = "Yên Vß½ng C± MÕc T¥ng 7"}
+	g_DungeonsTable[2].maplist[8] = {sceneId = 209, name = "Yên Vß½ng C± MÕc T¥ng 8"}
+	g_DungeonsTable[2].maplist[9] = {sceneId = 210, name = "Yên Vß½ng C± MÕc T¥ng 9"}
 
 	g_DungeonsTable[3]={maplist={}}
-	g_DungeonsTable[3].maplist[1] = {sceneId = 262, name = "ÇØ»ÊµØ¹¬Ò»²ã"}
-	g_DungeonsTable[3].maplist[2] = {sceneId = 263, name = "ÇØ»ÊµØ¹¬¶þ²ã"}
-	g_DungeonsTable[3].maplist[3] = {sceneId = 264, name = "ÇØ»ÊµØ¹¬Èý²ã"}
+	g_DungeonsTable[3].maplist[1] = {sceneId = 262, name = "T¥n Hoàng Ð¸a Cung T¥ng 1"}
+	g_DungeonsTable[3].maplist[2] = {sceneId = 263, name = "T¥n Hoàng Ð¸a Cung T¥ng 2"}
+	g_DungeonsTable[3].maplist[3] = {sceneId = 264, name = "T¥n Hoàng Ð¸a Cung T¥ng 3"}
 
 	g_DungeonsTable[4]={maplist={}}
-	g_DungeonsTable[4].maplist[1] = {sceneId = 295, name = "Í¨ÌìËþµØ¹¬"}
-	g_DungeonsTable[4].maplist[2] = {sceneId = 296, name = "Í¨ÌìËþ1²ã"}
-	g_DungeonsTable[4].maplist[3] = {sceneId = 297, name = "Í¨ÌìËþ2²ã"}
-	g_DungeonsTable[4].maplist[4] = {sceneId = 298, name = "Í¨ÌìËþ3²ã"}
-	g_DungeonsTable[4].maplist[5] = {sceneId = 299, name = "Í¨ÌìËþËþ¶¥"}
+	g_DungeonsTable[4].maplist[1] = {sceneId = 295, name = "Thông Thiên Ðáp Ð¸a Cung"}
+	g_DungeonsTable[4].maplist[2] = {sceneId = 296, name = "Thông Thiên Ðáp 1T¢ng"}
+	g_DungeonsTable[4].maplist[3] = {sceneId = 297, name = "Thông Thiên Ðáp 2T¢ng"}
+	g_DungeonsTable[4].maplist[4] = {sceneId = 298, name = "Thông Thiên Ðáp 3T¢ng"}
+	g_DungeonsTable[4].maplist[5] = {sceneId = 299, name = "Thông Thiên Ðáp Ðáp Ðïnh"}
 	
 	g_DungeonsTable[5]={maplist={}}
-	g_DungeonsTable[5].maplist[1] = {sceneId = 112, name = "ÐþÎäµº"}
-	g_DungeonsTable[5].maplist[2] = {sceneId = 579, name = "ÐþÎäµº¡¤¾µ"}
+	g_DungeonsTable[5].maplist[1] = {sceneId = 112, name = "Huy«n Vû Ðäo"}
+	g_DungeonsTable[5].maplist[2] = {sceneId = 579, name = "Huy«n Võ Ðäo·Kính"}
 
 	g_DungeonsTable[6]={maplist={}}
-	g_DungeonsTable[6].maplist[1] = {sceneId = 616, name = "³¤´º¹È¡¤ºáÑÂ"}
-	g_DungeonsTable[6].maplist[2] = {sceneId = 617, name = "³¤´º¹È¡¤ÎÚÒÂÏï"}
+	g_DungeonsTable[6].maplist[1] = {sceneId = 616, name = "Trß¶ng Xuân C¯c·Hoành Nhai"}
+	g_DungeonsTable[6].maplist[2] = {sceneId = 617, name = "Trß¶ng Xuân C¯c·Ô Y HÕng"}
 
 	g_DungeonsTable[7]={maplist={}}
-	g_DungeonsTable[7].maplist[1] = {sceneId = 650, name = "ÇØ¹¬ÃØ¾³Ò»²ã"}
-	g_DungeonsTable[7].maplist[2] = {sceneId = 651, name = "ÇØ¹¬ÃØ¾³¶þ²ã"}
-	g_DungeonsTable[7].maplist[3] = {sceneId = 652, name = "ÇØ¹¬ÃØ¾³Èý²ã"}
+	g_DungeonsTable[7].maplist[1] = {sceneId = 650, name = "T¥n Cung Bí Cänh T¥ng 1"}
+	g_DungeonsTable[7].maplist[2] = {sceneId = 651, name = "T¥n Cung Bí Cänh T¥ng 2"}
+	g_DungeonsTable[7].maplist[3] = {sceneId = 652, name = "T¥n Cung Bí Cänh T¥ng 3"}
 
 	g_initial_size = SceneMap_Frame:GetProperty("UnifiedSize")
 	g_initial_pos = SceneMap_Frame:GetProperty("UnifiedPosition")
@@ -136,7 +136,7 @@ function SceneMap_OnEvent(event)
 				ToggleAutoSearch(0)
 			else
 				SceneMap_Text3:SetText("#{KCJXL_130417_1}")
-				sceneMap_ComboList:ResetList() 	--ÏÔÊ¾Ç°ÖØÖÃÒ»ÏÂÏÂÀ­ÁÐ±í
+				sceneMap_ComboList:ResetList() 	--???????????
 				SceneMap_Show( arg0 )
 				ToggleAutoSearch(1)
 			end
@@ -145,7 +145,7 @@ function SceneMap_OnEvent(event)
 		if ( arg1 == "1" ) then
 
 			SceneMap_Text3:SetText("#{KCJXL_130417_1}")
-			sceneMap_ComboList:ResetList() 		--ÏÔÊ¾Ç°ÖØÖÃÒ»ÏÂÏÂÀ­ÁÐ±í
+			sceneMap_ComboList:ResetList() 		--???????????
 			SceneMap_Show( arg0 )
 			ToggleAutoSearch(1)
 			return
@@ -157,7 +157,7 @@ function SceneMap_OnEvent(event)
 			else
 				SceneMap_Text3:SetText("#{KCJXL_130417_3}")
 			end
-			sceneMap_ComboList:ResetList() 		--ÏÔÊ¾Ç°ÖØÖÃÒ»ÏÂÏÂÀ­ÁÐ±í
+			sceneMap_ComboList:ResetList() 		--???????????
 			SceneMap_Show_OhterScene(tostring(arg0), tonumber(arg2))
 			--ÅÐ¶ÏÊÇ·ñÊÇK·þµÄÎå¸ö³¡¾°£¬ÆäËûµÄ²»ÏìÓ¦
 			return
@@ -195,7 +195,7 @@ function SceneMap_Show( filename )
 
 	
 	local sceneX, sceneY
-	sceneX,sceneY = GetSceneSize()		--Õâ¶¼ÊÇµ±Ç°³¡¾°µÄº¯Êý°¡
+	sceneX,sceneY = GetSceneSize()		--???????????
 	
 	SceneMap_Board:SetSceneFileName( sceneX,sceneY,filename,1)
 	SceneMap_FixZoom(filename)
@@ -213,7 +213,7 @@ function SceneMap_Show( filename )
 
 	--ÊÇ·ñÊÇ¶à²ã³¡¾°
 	local sceneID = GetSceneID()
-	g_CurSelectSceneID = sceneID --¼ÇÂ¼Ò»ÏÂµ±Ç°Ñ¡Ôñ³¡¾°ID
+	g_CurSelectSceneID = sceneID --??????????ID
 	local tempIndex = nil
 	for i = 1, table.getn(g_DungeonsTable) do
 		for j = 1, table.getn(g_DungeonsTable[i].maplist) do
@@ -226,7 +226,7 @@ function SceneMap_Show( filename )
 		end
 	end
 
-	if (g_DungeonsIndex ~= -1 and tempIndex ~= nil ) then		--ÊÇ¶à²ã³¡¾°
+	if (g_DungeonsIndex ~= -1 and tempIndex ~= nil ) then		--?????
 		--sceneMap_ComboList:ResetList()
 		sceneMap_ComboList:SetProperty("Visible", "True")
 		for i = 1, table.getn(g_DungeonsTable[g_DungeonsIndex].maplist) do
@@ -234,7 +234,7 @@ function SceneMap_Show( filename )
 		end
 		sceneMap_ComboList:SetCurrentSelect(tempIndex-1)
 	else
-		sceneMap_ComboList:ComboBoxAddItem(scenename,1)       --ÆÕÍ¨³¡¾°
+		sceneMap_ComboList:ComboBoxAddItem(scenename,1)       --????
 		sceneMap_ComboList:SetProperty("Visible", "False")
 		sceneMap_ComboList:SetCurrentSelect(0)
 	end
@@ -261,7 +261,7 @@ function SceneMap_SbgHumanInfo_Show( nClientResID )
 	
 	-- Èç¹û·Ç´ó³¡¾°£¬»¹ÐèÒªÖØÖÃÆäËõ·ÅÄ£Ê½
 	local mode = SceneMap_Board:GetSceneZoomMode()
-    if mode == 1 then  -- 1Ä£Ê½Îª512X512¶ÀÓÐ¡£¡£¡£²Á
+    if mode == 1 then  -- 1???512X512??????
         if sceneX < 512 and sceneY < 512 then
             -- ÖØÖÃÎªÏñËØ±ÈÀýÄ£Ê½
             SceneMap_Board:SetSceneZoomMode(2)
@@ -383,13 +383,13 @@ end
 function SceneMap_Show_OhterScene( filename, sceneID )
 	--sceneMap_ComboList:ResetList() --¿´±ðµÄ³¡¾°Ò²ÒªÇåÀíÒ»ÏÂ
 	local sceneX, sceneY
-	sceneX,sceneY = GetSceneSizeByID(sceneID)		--Õâ¶¼ÊÇµ±Ç°³¡¾°µÄº¯Êý°¡
-	if (sceneID == GetSceneID()) then --Èç¹ûµã»÷µÄÊÇ±¾³¡¾°
+	sceneX,sceneY = GetSceneSizeByID(sceneID)		--???????????
+	if (sceneID == GetSceneID()) then --?????????
 		SceneMap_Board:SetSceneFileName( sceneX,sceneY,filename , 1)
 	else
 		SceneMap_Board:SetSceneFileName( sceneX,sceneY,filename , 0)
 	end
-	if sceneID == 242 then  --Ñ©¾°ÂåÑô- -
+	if sceneID == 242 then  --????- -
 		sceneID = 0
 	end
 	g_DungeonsIndex = -1
@@ -400,7 +400,7 @@ function SceneMap_Show_OhterScene( filename, sceneID )
 	
 	SceneMap_FixZoom(filename)
 
-	g_CurSelectSceneID = sceneID --¼ÇÂ¼Ò»ÏÂµ±Ç°Ñ¡Ôñ³¡¾°ID
+	g_CurSelectSceneID = sceneID --??????????ID
 	-- Èç¹û·Ç´ó³¡¾°£¬»¹ÐèÒªÖØÖÃÆäËõ·ÅÄ£Ê½
 	-- local mode = SceneMap_Board:GetSceneZoomMode()
     -- if mode == 1 then  -- 1Ä£Ê½Îª512X512¶ÀÓÐ¡£¡£¡£²Á
@@ -456,7 +456,7 @@ function SceneMap_Show_CurrentScene()
 	SceneMap_Show(tostring(scenename))
 end
 
-function sceneMap_ComboList_Changed()	--µØÍ¼ÏÂÀ­ÁÐ±í¸Ä±ä
+function sceneMap_ComboList_Changed()	--????????
 
 	if g_DungeonsIndex == -1 then
 		return
@@ -466,7 +466,7 @@ function sceneMap_ComboList_Changed()	--µØÍ¼ÏÂÀ­ÁÐ±í¸Ä±ä
 	local sceneId = g_DungeonsTable[g_DungeonsIndex].maplist[Index].sceneId
 	local mapname = GetSceneMapByID(tonumber(sceneId))
 	if sceneId == nil then
-		return		--²»ÊÇ·Ö²ã³¡¾°£¬Ö±½Ó·µ»Ø
+		return		--??????,????
 	end
 
 	SceneMap_Show_OhterScene( mapname , sceneId)
@@ -510,7 +510,7 @@ function SceneMap_ChangeButtonTip()
 	end
 end
 function SceneMap_Hidden()
-	if DataPool:Lua_IsHaveMission(2019) <= 0 then--ÇØ³ÛµÀÈÎÎñ
+	if DataPool:Lua_IsHaveMission(2019) <= 0 then--?????
 		DataPool:CleanQinChiDaoData()
 	end
 end

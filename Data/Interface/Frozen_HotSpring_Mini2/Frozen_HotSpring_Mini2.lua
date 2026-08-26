@@ -45,7 +45,7 @@ end
 function Frozen_HotSpring_Mini2_OnEvent(event)
 
     if(event == "UI_COMMAND" and tonumber(arg0) == 99957502) then
-		--关闭界面
+		--关睜界面
 		if(IsWindowShow("Frozen_HotSpring_Mini2")) then
 			CloseWindow("Frozen_HotSpring_Mini2", true)
 		end

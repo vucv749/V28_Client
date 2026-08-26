@@ -5,7 +5,7 @@
 local g_SeventhFestivalTopList_UnifiedPosition = nil
 
 --¼ÆÊ±Æ÷
-local g_SeventhFestivalTopList_CooldownDur = 4*1000	--4sÀäÈ´
+local g_SeventhFestivalTopList_CooldownDur = 4*1000	--4s??
 local g_SeventhFestivalTopList_Cooldown = 
 {
 	[1] = 0,
@@ -18,8 +18,8 @@ local g_Present_BarList = {}
 local g_Receive_BarList = {}
 
 --Ò³Ç©ÏÔÊ¾
-local g_SeventhFestivalTopList_CurPage = 0--Ä¬ÈÏÏÔÊ¾Ò³Ç©--×¢£º1-3±êÊ¾ÅÅÐÐ°ñ 4-5±êÊ¾¶Ò»»½±Àø
-local g_SeventhFestivalTopList_MaxPage = 4--×î´óÒ³Ç©Êý
+local g_SeventhFestivalTopList_CurPage = 0--??????--?:1-3????? 4-5??????
+local g_SeventhFestivalTopList_MaxPage = 4--?????
 
 --ÅÅÐÐ°ñÏà¹Ø¿Ø¼þ
 local g_SeventhFestivalTopList_Btn_Page = {}
@@ -48,7 +48,7 @@ local g_SeventhFestivalTopList_State = -1
 local g_SeventhFestivalTopList_StateShow = -1
 
 --°ñµ¥ÐÅÏ¢
-local g_SeventhFestivalTopList_Info = --´ýÐÞ¸Ä
+local g_SeventhFestivalTopList_Info = --???
 {
 	[1] = {desc = "#{QXHB_20210701_94}", count = 3, sendmd = 1094, receivemd = 1095, sendtitle = "#{QXHB_20210701_96}", receivetitle = "#{QXHB_20210701_115}", strsend = "#{QXHB_20210701_101}", strreceive = "#{QXHB_20210701_103}", strsendNum = "#{QXHB_20210701_105}", strreceiveNum = "#{QXHB_20210701_255}"},
 	[2] = {desc = "#{QXHB_20210701_140}", count = 3, sendmd = 1096, receivemd = 1097, sendtitle = "#{QXHB_20210701_96}", receivetitle = "#{QXHB_20210701_115}", strsend = "#{QXHB_20210701_101}", strreceive = "#{QXHB_20210701_103}", strsendNum = "#{QXHB_20210701_105}", strreceiveNum = "#{QXHB_20210701_255}"},
@@ -56,7 +56,7 @@ local g_SeventhFestivalTopList_Info = --´ýÐÞ¸Ä
 }
 
 --°ñµ¥ÐÅÏ¢
-local g_SeventhFestivalTopList_Tip = --´ýÐÞ¸Ä
+local g_SeventhFestivalTopList_Tip = --???
 {
 	[1] = {tip1 = "#{QXLS_150724_71}", tip2 = "#{QXLS_150724_72}", tip3 = "#{QXLS_150724_73}"},
 	[2] = {tip1 = "#{QXLS_150724_71}", tip2 = "#{QXLS_150724_126}", tip3 = "#{QXLS_150724_73}"},
@@ -71,16 +71,16 @@ local SeventhFestivalTopList_Exchange_PreButton = {}
 
 g_SeventhFestivalTopList_Qingrenjie_Bonus =
 {
-	[1] = {neednum = 2400, itemid = 10125769, count = 1, name = "ÐÂÊ±×°£ºÏÉÂÄÆæÔµ£¨ÓÀ¾Ã£¬»ñÈ¡°ó¶¨£©", LimitMD = -1, LimitNum = -1, IsShowButton = 1},
-	[2] = {neednum = 1500, itemid = 30310140, count = 1, name = "³¬¼¶ÕäÊÞÁý£ºÐÂÕäÊÞ", LimitMD = 766, LimitNum = 3, IsShowButton = 1},
-	[3] = {neednum = 2400, itemid = 38003215, count = 1, name = "½ð¹¿°ô", LimitMD = -1, LimitNum = -1, IsShowButton = 0},
-	[4] = {neednum = 1500, itemid = 38003216, count = 1, name = "×ÏÇà±¦½£", LimitMD = -1, LimitNum = -1, IsShowButton = 0},
-	[5] = {neednum = 1200, itemid = 38003214, count = 1, name = "ÕÕÑý¾µ", LimitMD = -1, LimitNum = -1, IsShowButton = 0},
-	[6] = {neednum = 600, itemid = 10125802, count = 1, name = "Ò¹½õÌìÀ½", LimitMD = -1, LimitNum = -1, IsShowButton = 0},
-	[7] = {neednum = 600, itemid = 10125818, count = 1, name = "ÓÎá°ÔÂÉ«", LimitMD = -1, LimitNum = -1, IsShowButton = 0},
-	[8] = {neednum = 22, itemid = 30503140, count = 1, name = "ºçÒ«Ê¯", LimitMD = -1, LimitNum = -1, IsShowButton = 0},
-	[9] = {neednum = 10, itemid = 38002138, count = 1, name = "10½»×Ó", LimitMD = -1, LimitNum = -1, IsShowButton = 0},
-	[10] = {neednum = 1, itemid = 38002139, count = 1, name = "1½»×Ó", LimitMD = -1, LimitNum = -1, IsShowButton = 0},
+	[1] = {neednum = 2400, itemid = 10125769, count = 1, name = "Tân trang phøc m¯t: Tiên Læ kÏ duyên(vînh cØu, thu hoÕch Bäng Ð¸nh)", LimitMD = -1, LimitNum = -1, IsShowButton = 1},
+	[2] = {neednum = 1500, itemid = 30310140, count = 1, name = "Siêu c¤p Trân Thú Lung: Tân Trân Thú", LimitMD = 766, LimitNum = 3, IsShowButton = 1},
+	[3] = {neednum = 2400, itemid = 38003215, count = 1, name = "Kim Cô B±ng", LimitMD = -1, LimitNum = -1, IsShowButton = 0},
+	[4] = {neednum = 1500, itemid = 38003216, count = 1, name = "TØ Thanh bäo kiªm", LimitMD = -1, LimitNum = -1, IsShowButton = 0},
+	[5] = {neednum = 1200, itemid = 38003214, count = 1, name = "Kính chiªu yêu", LimitMD = -1, LimitNum = -1, IsShowButton = 0},
+	[6] = {neednum = 600, itemid = 10125802, count = 1, name = "DÕ C¦m Thiên Lan", LimitMD = -1, LimitNum = -1, IsShowButton = 0},
+	[7] = {neednum = 600, itemid = 10125818, count = 1, name = "Du Lam Nguy®t S¡c", LimitMD = -1, LimitNum = -1, IsShowButton = 0},
+	[8] = {neednum = 22, itemid = 30503140, count = 1, name = "H°ng Di®u ThÕch", LimitMD = -1, LimitNum = -1, IsShowButton = 0},
+	[9] = {neednum = 10, itemid = 38002138, count = 1, name = "10Giao TØ", LimitMD = -1, LimitNum = -1, IsShowButton = 0},
+	[10] = {neednum = 1, itemid = 38002139, count = 1, name = "1Giao TØ", LimitMD = -1, LimitNum = -1, IsShowButton = 0},
 }
 
 --===============================================
@@ -249,7 +249,7 @@ function SeventhFestivalTopList_OnEvent(event)
 	end
 end
 
---ÏÔÊ¾ÊÕËÍ»¨ÊýÁ¿
+--ÏÔÊ¾Ê ËÍ»¨ÊýÁ¿
 function SeventhFestivalTopList_Rank_ShowRoseNum(nSendNum, nReceiveNum)	
 	local nNumStr = ScriptGlobal_Format(g_SeventhFestivalTopList_Info[g_SeventhFestivalTopList_CurPage].strsendNum, nSendNum)
 	SeventhFestivalTopList_Ranking_Present_Rose:SetText(nNumStr)
@@ -270,7 +270,7 @@ end
 function SeventhFestivalTopList_Rank_ShowTopList()
 	--ÓÐÐ§ÐÔÅÐ¶Ï
 	if g_SeventhFestivalTopList_CurPage < 1 or g_SeventhFestivalTopList_CurPage > 3 then
-		PushDebugMessage("µ±Ç°Ò³Ç©²»ÊÇÅÅÐÐ°ñ")
+		PushDebugMessage("Trß¾c m£t Di®p Thiêm không phäi ðÑng hàng thÑ Bäng")
 		return
 	end
 	
@@ -299,7 +299,7 @@ function SeventhFestivalTopList_Rank_ShowTopList()
 	local nNumStr = ScriptGlobal_Format(g_SeventhFestivalTopList_Info[g_SeventhFestivalTopList_CurPage].strsendNum, nSendNum)
 	SeventhFestivalTopList_Ranking_Present_Rose:SetText(nNumStr)
 	
-	--ÏÔÊ¾ÊÕ»¨ÊýÁ¿
+	--ÏÔÊ¾Ê »¨ÊýÁ¿
 	SeventhFestivalTopList_Ranking_Receive_Title:Hide() --SetText(g_SeventhFestivalTopList_Info[g_SeventhFestivalTopList_CurPage].receivetitle)
 	local nReceiveNum =  DataPool:GetPlayerMission_DataRound(g_SeventhFestivalTopList_Info[g_SeventhFestivalTopList_CurPage].receivemd)
 	local nReceiveNumStr = ScriptGlobal_Format(g_SeventhFestivalTopList_Info[g_SeventhFestivalTopList_CurPage].strreceiveNum, nReceiveNum)
@@ -422,13 +422,13 @@ end
 --===============================================
 -- ÒÔÏÂÎªÊÂ¼þÏìÓ¦
 --===============================================
---µã»÷¹Ø±Õ
+--µã»÷¹Ø± 
 function SeventhFestivalTopList_Close_Click()
-	--¹Ø±ÕÔ¤ÀÀ½çÃæ	
+	--¹Ø± Ô¤ÀÀ½çÃæ	
 	if(IsWindowShow("SeventhFestivalTopListPreview")) then
 		CloseWindow("SeventhFestivalTopListPreview", true)
 	end
-	--Êý¾ÝÇå¿Õ
+	--Êý¾ÝÇå¿ 
 	SeventhFestivalTopList_Clear()
 	--½çÃæÒþ²Ø
 	this:Hide()
@@ -438,7 +438,7 @@ end
 function SeventhFestivalTopList_Page_Click(index)
 	--ÓÐÐ§ÐÔÅÐ¶Ï
 	if index <= 0 or index > g_SeventhFestivalTopList_MaxPage then
-		PushDebugMessage("Ò³Ç©´íÎó£¬ÇëÖØÐÂÑ¡Ôñ")
+		PushDebugMessage("Di®p Thiêm sai l¥m, Thïnh mµt l¥n næa lña ch÷n")
 		return
 	end
 		
@@ -454,7 +454,7 @@ function SeventhFestivalTopList_Page_Click(index)
 		--Ë¢ÐÂÅÅÐÐ°ñ
 		local flag = SeventhFestivalTopList_RankClick_Refresh()
 		if flag == 0 and nPage >= 1 and nPage <= g_SeventhFestivalTopList_MaxPage then
-			g_SeventhFestivalTopList_Btn_Page[nPage]:SetCheck(1)--ÇÐ»ØÔ­À´Ò³Ãæ
+			g_SeventhFestivalTopList_Btn_Page[nPage]:SetCheck(1)--??????
 		end
 	elseif g_SeventhFestivalTopList_CurPage == 4 then
 		SeventhFestivalTopList_Exchange_Qingrenjie_Update()
@@ -465,7 +465,7 @@ end
 function SeventhFestivalTopList_RankClick_Refresh()
 	--ÓÐÐ§ÐÔÅÐ¶Ï
 	if g_SeventhFestivalTopList_CurPage < 1 or g_SeventhFestivalTopList_CurPage > 3 then
-		PushDebugMessage("µ±Ç°Ò³Ç©²»ÊÇÅÅÐÐ°ñ")
+		PushDebugMessage("Trß¾c m£t Di®p Thiêm không phäi ðÑng hàng thÑ Bäng")
 		return 0
 	end
 	--ÅÐ¶ÏÀäÈ´Ê±¼ä
@@ -480,7 +480,7 @@ function SeventhFestivalTopList_RankClick_Refresh()
 	--ÇëÇó·þÎñÆ÷Êý¾Ý
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name( "ClientAskQixiTopList" )
-		Set_XSCRIPT_ScriptID( 891396 )--´ýÐÞ¸Ä½Å±¾ºÅ£º891396
+		Set_XSCRIPT_ScriptID( 891396 )--??????:891396
 		Set_XSCRIPT_Parameter(0,g_SeventhFestivalTopList_CurPage)
 		Set_XSCRIPT_Parameter(1,1)
 		Set_XSCRIPT_ParamCount(2)
@@ -494,19 +494,19 @@ function SeventhFestivalTopList_Prize_Present()
 
 	--ÓÐÐ§ÐÔÅÐ¶Ï
 	if g_SeventhFestivalTopList_CurPage < 1 or g_SeventhFestivalTopList_CurPage > 3 then
-		PushDebugMessage("µ±Ç°Ò³Ç©²»ÊÇÅÅÐÐ°ñ")
+		PushDebugMessage("Trß¾c m£t Di®p Thiêm không phäi ðÑng hàng thÑ Bäng")
 		return
 	end	
 	
 	--ÅÐ¶ÏÁì½±Ê±¼ä
-	if g_SeventhFestivalTopList_State == 0 then--ÀíÂÛÉÏ²»´æÔÚ
+	if g_SeventhFestivalTopList_State == 0 then--??????
 		PushDebugMessage(g_SeventhFestivalTopList_Tip[g_SeventhFestivalTopList_CurPage].tip1)
 		return
-	elseif g_SeventhFestivalTopList_State >= 1 and g_SeventhFestivalTopList_State <= 5 then--ÅÅÐÐ°ñ¼ÆÊ±ÖÐ
+	elseif g_SeventhFestivalTopList_State >= 1 and g_SeventhFestivalTopList_State <= 5 then--??????
 		PushDebugMessage(g_SeventhFestivalTopList_Tip[g_SeventhFestivalTopList_CurPage].tip2)
 		return
-	elseif g_SeventhFestivalTopList_State == 6 then--¿ÉÒÔÁì½±
-	else--ÀíÂÛÉÏ²»´æÔÚ
+	elseif g_SeventhFestivalTopList_State == 6 then--????
+	else--??????
 		PushDebugMessage(g_SeventhFestivalTopList_Tip[g_SeventhFestivalTopList_CurPage].tip3)
 		return
 	end
@@ -524,31 +524,31 @@ function SeventhFestivalTopList_Prize_Present()
 	--Áì½±
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name( "ClientGetQixiSendTopListPrize" )
-		Set_XSCRIPT_ScriptID( 891396 )--´ýÐÞ¸Ä½Å±¾ºÅ£º891396
+		Set_XSCRIPT_ScriptID( 891396 )--??????:891396
 		Set_XSCRIPT_Parameter(0,g_SeventhFestivalTopList_CurPage)
 		Set_XSCRIPT_ParamCount(1)
 	Send_XSCRIPT()
 
 end
 
---µã»÷ÊÕ»¨°ñÁì½±
+--µã»÷Ê »¨°ñÁì½±
 function SeventhFestivalTopList_Prize_Receive()
 
 	--ÓÐÐ§ÐÔÅÐ¶Ï
 	if g_SeventhFestivalTopList_CurPage < 1 or g_SeventhFestivalTopList_CurPage > 3 then
-		PushDebugMessage("µ±Ç°Ò³Ç©²»ÊÇÅÅÐÐ°ñ")
+		PushDebugMessage("Trß¾c m£t Di®p Thiêm không phäi ðÑng hàng thÑ Bäng")
 		return
 	end	
 	
 	--ÅÐ¶ÏÁì½±Ê±¼ä
-	if g_SeventhFestivalTopList_State == 0 then--ÀíÂÛÉÏ²»´æÔÚ
+	if g_SeventhFestivalTopList_State == 0 then--??????
 		PushDebugMessage(g_SeventhFestivalTopList_Tip[g_SeventhFestivalTopList_CurPage].tip1)
 		return
-	elseif g_SeventhFestivalTopList_State >= 1 and g_SeventhFestivalTopList_State <= 5 then--ÅÅÐÐ°ñ¼ÆÊ±ÖÐ
+	elseif g_SeventhFestivalTopList_State >= 1 and g_SeventhFestivalTopList_State <= 5 then--??????
 		PushDebugMessage(g_SeventhFestivalTopList_Tip[g_SeventhFestivalTopList_CurPage].tip2)
 		return
-	elseif g_SeventhFestivalTopList_State == 6 then--¿ÉÒÔÁì½±
-	else--ÀíÂÛÉÏ²»´æÔÚ
+	elseif g_SeventhFestivalTopList_State == 6 then--????
+	else--??????
 		PushDebugMessage(g_SeventhFestivalTopList_Tip[g_SeventhFestivalTopList_CurPage].tip3)
 		return
 	end
@@ -566,7 +566,7 @@ function SeventhFestivalTopList_Prize_Receive()
 	--Áì½±
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name( "ClientGetQixiReceiveTopListPrize" )
-		Set_XSCRIPT_ScriptID( 891396 )--´ýÐÞ¸Ä½Å±¾ºÅ£º891396
+		Set_XSCRIPT_ScriptID( 891396 )--??????:891396
 		Set_XSCRIPT_Parameter(0,g_SeventhFestivalTopList_CurPage)
 		Set_XSCRIPT_ParamCount(1)
 	Send_XSCRIPT()
@@ -576,15 +576,15 @@ end
 --===============================================
 -- ÒÔÏÂÎª»ù´¡º¯Êý
 --===============================================
---×´Ì¬Çå¿Õ
+--×´Ì¬Çå¿ 
 function SeventhFestivalTopList_Clear()
 	--È¡Ïû°´Å¥µÄÑ¡ÖÐ×´Ì¬
  	--if g_SeventhFestivalTopList_CurPage >= 1 or g_SeventhFestivalTopList_CurPage <= 6 then
  		--g_RoseBtn_Page[g_SeventhFestivalTopList_CurPage]:SetCheck(0)
  	--end
- 	--µ±Ç°Ò³ÂëÇå¿Õ
+ 	--µ±Ç°Ò³ÂëÇå¿ 
 	g_SeventhFestivalTopList_CurPage = 0
-	--»î¶¯×´Ì¬Çå¿Õ
+	--»î¶¯×´Ì¬Çå¿ 
 	g_SeventhFestivalTopList_State = -1
 end
 
@@ -710,7 +710,7 @@ end
 function SeventhFestivalTopList_Exchange_ItemPreview( Idx )
 
 	if Idx == 1 then
-		PushEvent("OPEN_DRESSPREVIEW", 10125769, 97, 68) --Ê±×°\·¢ÐÍ\Á³ÐÍ
+		PushEvent("OPEN_DRESSPREVIEW", 10125769, 97, 68) --??\??\??
 	end
 	
 	if Idx == 2 then

@@ -156,7 +156,7 @@ function ShenFen_Shop_OnEvent(event)
 		g_ShenFen_Shop_ServerCareID = Get_XParam_INT(1)
 		g_ShenFen_Shop_objCared = DataPool:GetNPCIDByServerID(g_ShenFen_Shop_ServerCareID);
 		if( 0 > g_ShenFen_Shop_objCared ) then
-			PushDebugMessage("server´«¹ýÀ´µÄÊý¾ÝÓÐÎÊÌâ¡£");
+			PushDebugMessage("Dæ li®u máy chü có v¤n ð«");
 			return
 		end
 		this:CareObject(g_ShenFen_Shop_objCared, 1, "ShenFen_Shop");
@@ -194,7 +194,7 @@ function ShenFen_Shop_OnEvent(event)
 		g_ShenFen_Shop_ServerCareID = tonumber(arg0)
 		g_ShenFen_Shop_objCared = DataPool:GetNPCIDByServerID(g_ShenFen_Shop_ServerCareID);
 		if( 0 > g_ShenFen_Shop_objCared ) then
-			PushDebugMessage("server´«¹ýÀ´µÄÊý¾ÝÓÐÎÊÌâ¡£");
+			PushDebugMessage("Dæ li®u máy chü có v¤n ð«");
 			return
 		end
 		this:CareObject(g_ShenFen_Shop_objCared, 1, "ShenFen_Shop");
@@ -219,7 +219,7 @@ function ShenFen_Shop_OnEvent(event)
 			return;
 		end
 		
-		--Èç¹ûºÍÉÌÈËµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍÉÌÈËµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			--È¡Ïû¹ØÐÄ
 			SetDefaultMouse();

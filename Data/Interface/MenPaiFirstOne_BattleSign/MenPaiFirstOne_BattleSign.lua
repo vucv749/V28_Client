@@ -16,17 +16,17 @@ local g_CDTime = 2
 
 local g_MenPaiFirstOne_BattleSign_MenPai = {}
 local g_MenPaiName = {
-		[0] = "#{XQ_MP_1}",    --少林
-		[1] = "#{XQ_MP_2}",    --明教
-		[2] = "#{XQ_MP_3}",    --丐帮
-		[3] = "#{XQ_MP_4}",    --武当
-		[4] = "#{XQ_MP_5}",    --峨眉
-		[5] = "#{XQ_MP_6}",    --星宿
-		[6] = "#{XQ_MP_7}",    --天龙
-		[7] = "#{XQ_MP_8}",    --天山
-		[8] = "#{XQ_MP_9}",    --逍遥
-		[9] = "",         --无门派
-		[10] = "#{MPDYR_20220427_190}",    --曼陀
+		[0] = "#{XQ_MP_1}",    --??
+		[1] = "#{XQ_MP_2}",    --??
+		[2] = "#{XQ_MP_3}",    --??
+		[3] = "#{XQ_MP_4}",    --??
+		[4] = "#{XQ_MP_5}",    --??
+		[5] = "#{XQ_MP_6}",    --??
+		[6] = "#{XQ_MP_7}",    --??
+		[7] = "#{XQ_MP_8}",    --??
+		[8] = "#{XQ_MP_9}",    --??
+		[9] = "",         --???
+		[10] = "#{MPDYR_20220427_190}",    --??
 }
 
 function MenPaiFirstOne_BattleSign_PreLoad()
@@ -77,7 +77,7 @@ function MenPaiFirstOne_BattleSign_OnEvent(event)
 		
 	elseif event == "DDZ_OPEN_BAOMING" then
 		if g_CurMenPai == 9 then
-			g_CurMenPai = Player : GetData("MEMPAI");		--获取玩家门派ID
+			g_CurMenPai = Player : GetData("MEMPAI");		--??????ID
 		end
 	
 		if g_CurMenPai == 9 then
@@ -131,7 +131,7 @@ function MenPaiFirstOne_BattleSign_SignMemberInfo( menpai )
 		
 	MenPaiFirstOne_BattleSign_Init( menpai )
 	
-	DataPool:Lua_SortDDZRankInfo(1) --按副本完成时间排序
+	DataPool:Lua_SortDDZRankInfo(1) --?????????
 	
 	for index=0, g_MaxPlayer-1 do
 		local name, guid, level, menpai, fubentime = DataPool:Lua_GetDDZBaoMingInfo(menpai, index)

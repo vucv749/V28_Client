@@ -3,8 +3,8 @@
 function DoublePK_Ing_PreLoad()
     this:RegisterEvent("DOUBLEPK_MATCHINGTIP", true)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end -- end func DoublePK_Ing_PreLoad()
 
 function DoublePK_Ing_OnEvent(event)

@@ -25,7 +25,7 @@ function FC_WishGift_PreLoad()
     this:RegisterEvent("UI_COMMAND") -- UI_COMMAND
     this:RegisterEvent("VIEW_RESOLUTION_CHANGED", false)
     this:RegisterEvent("ADJEST_UI_POS", false)
-    this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false) -- 离开场景
+    this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false) -- ????
     this:RegisterEvent("OBJECT_CARED_EVENT", false)
 end
 
@@ -53,10 +53,10 @@ end
 --=========================================================
 function FC_WishGift_OnEvent(event)
     if event == "UI_COMMAND" and tonumber(arg0) == g_nUICommandID then
-        -- 0 关闭, 1 打开, 2 刷新
+        -- 0 关睜, 1 打开, 2 刷新
         local nOpType = Get_XParam_INT(0)
 
-        -- 关闭界面
+        -- 关睜界面
         if nOpType == 0 then
             if this:IsVisible() then
                 FC_WishGift_OnClose()
@@ -78,7 +78,7 @@ function FC_WishGift_OnEvent(event)
     elseif event == "VIEW_RESOLUTION_CHANGED" or event == "ADJEST_UI_POS" then
         FC_WishGift_OnResetPos()
     elseif event == "HIDE_ON_SCENE_TRANSED" then
-        --切换场景关闭界面
+        --切换场景关睜界面
         FC_WishGift_OnClose()
     end
 end
@@ -129,7 +129,7 @@ function FC_WishGift_Update()
         g_Animate[i]:Hide()
         g_ButtonOk[i]:Hide()
 
-        -- 展示奖励
+        -- 牴示奖励
         local itemAction = DataPool:CreateBindActionItemForShow(g_RewardItem[i].itemId, g_RewardItem[i].num)
         g_Button[i]:SetActionItem(itemAction:GetID())
 
@@ -175,7 +175,7 @@ function FC_WishGift_WishPonitNum_HelpClick()
 end
 
 --=========================================================
--- 关闭界面
+-- 关睜界面
 --=========================================================
 function FC_WishGift_Close()
     FC_WishGift_StopCareObject()

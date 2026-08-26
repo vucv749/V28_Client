@@ -6,9 +6,9 @@ local g_Distance = 1
 local g_Distance_Ori = 1
 local g_Distance_Max = 3
 
-local g_CameraHeight = 1     --摄影机高度
-local g_CameraDistance = 2   --摄影机距离
-local g_CameraPitch = 3      --摄影机角度
+local g_CameraHeight = 1     --?????
+local g_CameraDistance = 2   --?????
+local g_CameraPitch = 3      --?????
 
 
 local g_ExteriorRideId = 0
@@ -29,7 +29,7 @@ function Mount_Auction_Exterior_PreLoad()
 	this:RegisterEvent("PROGRESSBAR_SHOW", false)
 	this:RegisterEvent("MODELID_CHANGE", false)
 
-	this:RegisterEvent("FASHION_DEPOT_OP")				-- 华裳阁
+	this:RegisterEvent("FASHION_DEPOT_OP")				-- ???
 
 	this:RegisterEvent("OPEN_EQUIP")
 	this:RegisterEvent("YIGUI_OPEN")
@@ -83,15 +83,15 @@ function Mount_Auction_Exterior_OnEvent(event)
 		end
 	end
 	
-	if event == "FASHION_DEPOT_OP" and tonumber(arg0) == 1 then --华裳阁
+	if event == "FASHION_DEPOT_OP" and tonumber(arg0) == 1 then --???
 		if this:IsVisible() then 
 			this:Hide()
 		end
 	end
 	
-	if event == "OPEN_STALL_SALE"			-- 开始摆摊，还原试穿
-		or event == "PROGRESSBAR_SHOW"		-- 读进度条中，还原试穿
-		or event == "MODELID_CHANGE" 		-- 变身 关闭界面
+	if event == "OPEN_STALL_SALE"			-- ????,????
+		or event == "PROGRESSBAR_SHOW"		-- ?????,????
+		or event == "MODELID_CHANGE" 		-- ?? ????
 		then
 		if this:IsVisible() then
 			this:Hide()

@@ -75,7 +75,7 @@ function LootPacket_OnEvent(event)
 		if(tonumber(arg0) ~= objCared) then
 			return;
 		end
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			this:Hide();
 			
@@ -83,13 +83,13 @@ function LootPacket_OnEvent(event)
 			this:CareObject(objCared, 0, "ItemBox");
 		end
 		
-	--打开进度条的时候，关闭this
+	--打开进度条的时候，关睜this
 	elseif(event == "PROGRESSBAR_SHOW") then
 		this:Hide();
 		--取消关心
 		this:CareObject(objCared, 0, "ItemBox");
 		
-	--角色死亡的时候，关闭this
+	--角色死亡的时候，关睜this
 	elseif(event == "RELIVE_SHOW") then
 		this:Hide();
 		
@@ -222,7 +222,7 @@ function LootPacket_Next_Clicked()
 end
 
 --===============================================
--- 关闭窗口
+-- 关睜窗口
 --===============================================
 function LootPacket_Button_Close()
 
@@ -241,7 +241,7 @@ function LootPacket_Collect_Clicked()
 end
 
 --======================================================
--- 界面坐标调整 避免窗口最大化或最小化后导致掉落包显示界面找不到
+-- 界面坐标调狖 避免窗口最大化或最小化后导致掉落包显示界面犚不到
 --=======================================================
 function LootPacket_Frame_On_ResetPos() 
 	LootPacket_Frame : SetProperty("UnifiedXPosition", g_LootPacket_Frame_UnifiedXPosition);

@@ -1,5 +1,5 @@
 
--- 珍兽外观拓印界面
+-- 犱兽外观拓印界面
 
 local g_PetExterior_Gain_UnifiedPosition;
 
@@ -161,7 +161,7 @@ function PetExterior_Gain_OnEvent(event)
 end
 
 --*************************************************
---显示珍兽拓印界面
+--显示犱兽拓印界面
 --*************************************************
 function PetExterior_Gain_Open()
 
@@ -219,7 +219,7 @@ function PetExterior_Gain_CareObj(careId, op, distance)
 end
 
 --*************************************************
---打开选择珍兽界面
+--打开选择犱兽界面
 --*************************************************
 function PetExterior_Gain_SelectPet_Clicked()
 
@@ -229,7 +229,7 @@ function PetExterior_Gain_SelectPet_Clicked()
 end
 
 --*************************************************
---选择不同珍兽时，设置不同的珍兽模型
+--选择不同犱兽时，设置不同的犱兽模型
 --*************************************************
 function PetExterior_Gain_Selected(selidx)
 	
@@ -239,7 +239,7 @@ function PetExterior_Gain_Selected(selidx)
 		return
 	end
 	
-	--珍兽已被其它界面选中
+	--犱兽已被其它界面选中
 	if (Pet:GetPetLocation(nSeletedIndex) ~= -1) then
 		return
 	end
@@ -262,7 +262,7 @@ function PetExterior_Gain_Selected(selidx)
 end
 
 --*************************************************
---刷新珍兽
+--刷新犱兽
 --*************************************************
 function PetExterior_Gain_UpdatePet(PetGuidH, PetGuidL)
 
@@ -294,7 +294,7 @@ function PetExterior_Gain_UpdateItem( pos_packet )
 		return
 	end
 
-	--更新珍兽拓印材料界面
+	--更新犱兽拓印材料界面
 	local ItemID = PlayerPackage:GetItemTableIndex( BagPos )
 	if ( ItemID <= 0) then
 		PushDebugMessage("#{ZSHF_20230705_16}")
@@ -367,7 +367,7 @@ function PetExterior_Gain_Clear()
 end
 
 --*************************************************
---关闭珍兽拓印界面
+--关睜犱兽拓印界面
 --*************************************************
 function PetExterior_Gain_Hide()
 
@@ -380,7 +380,7 @@ function PetExterior_Gain_Hide()
 end
 
 --*************************************************
---关闭界面
+--关睜界面
 --*************************************************
 function PetExterior_Gain_OnHidden()
 
@@ -411,7 +411,7 @@ function PetExterior_Gain_OK_Clicked()
 		return 0
 	end
 	
-	--是否选择珍兽
+	--是否选择犱兽
 	if (-1 == g_PetExterior_Gain_PetIdx) then
 		PushDebugMessage("#{ZSHF_20230705_20}")
 		return 0
@@ -423,7 +423,7 @@ function PetExterior_Gain_OK_Clicked()
 		return 0
 	end
 
-	--是否在出战
+	--是否在出牻
 	local petname,status = Pet:GetPetList_Appoint(g_PetExterior_Gain_PetIdx)
 	if (status == "on_fight") then
 		PushDebugMessage("#{ZSHF_20230705_27}")
@@ -437,7 +437,7 @@ function PetExterior_Gain_OK_Clicked()
 		return 0
 	end
 	
-	--判断是否为珍兽宝宝
+	--判断是否为犱兽宝宝
 	if (Pet:GetPetType(g_PetExterior_Gain_PetIdx) == 0) then
 		PushDebugMessage("#{ZSHF_20230705_141}")
 		return 0
@@ -445,7 +445,7 @@ function PetExterior_Gain_OK_Clicked()
 
 	--是否幻化
 	--local gen = Pet:GetType(g_PetExterior_Gain_PetIdx)
-	--if gen == nil or gen >= 100 then	--100以上为幻化珍兽
+	--if gen == nil or gen >= 100 then	--100以上为幻化犱兽
 	--	PushDebugMessage("#{ZSHF_20230705_76}")
 	--	return 0
 	--end
@@ -524,7 +524,7 @@ function PetExterior_Gain_YuanbaoBuyAsk()
 end
 
 --*************************************************
---向左旋转珍兽
+--向左旋转犱兽
 --*************************************************
 function PetExterior_Gain_Pet_Modle_TurnLeft(start)
 
@@ -539,7 +539,7 @@ function PetExterior_Gain_Pet_Modle_TurnLeft(start)
 end
 
 --*************************************************
---向右旋转珍兽
+--向右旋转犱兽
 --*************************************************
 function PetExterior_Gain_Pet_Modle_TurnRight(start)
 

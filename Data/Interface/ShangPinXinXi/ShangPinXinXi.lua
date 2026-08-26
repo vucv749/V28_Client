@@ -1,17 +1,17 @@
 local g_Frame_UnifiedXPosition;
 local g_Frame_UnifiedYPosition;
---0ÂåÑô£¬3áÔÉ½£¬4Ì«ºþ£¬1ËÕÖÝ£¬5¾µºþ£¬6ÎÞÁ¿É½£¬2´óÀí£¬7½£¸ó£¬8¶Ø»Í
+--0ÂåÑô£¬3áÔÉ½£¬4Ì«ºþ£¬1Ë ÖÝ£¬5¾µºþ£¬6ÎÞÁ¿É½£¬2´óÀí£¬7½£¸ó£¬8¶Ø»Í
 local g_PaoShangScene =
 {
-	[0]={sceneid=0,name="ÂåÑô"},
-	[1]={sceneid=3,name="áÔÉ½"},
-	[2]={sceneid=4,name="Ì«ºþ"},
-	[3]={sceneid=1,name="ËÕÖÝ"},
-	[4]={sceneid=5,name="¾µºþ"},
-	[5]={sceneid=6,name="ÎÞÁ¿É½"},
-	[6]={sceneid=2,name="´óÀí"},
-	[7]={sceneid=7,name="½£¸ó"},
-	[8]={sceneid=8,name="¶Ø»Í"},
+	[0]={sceneid=0,name="LÕc Dß½ng"},
+	[1]={sceneid=3,name="Tung S½n"},
+	[2]={sceneid=4,name="Thái H°"},
+	[3]={sceneid=1,name="Tô Châu"},
+	[4]={sceneid=5,name="Kính K°"},
+	[5]={sceneid=6,name="Vô Lßþng S½n"},
+	[6]={sceneid=2,name="ÐÕi Lý"},
+	[7]={sceneid=7,name="Kiªm Các"},
+	[8]={sceneid=8,name="Ðôn Hoàng"},
 }
 
 
@@ -39,16 +39,16 @@ local Data_BuyPirce={}
 local Data_SellPirce={}
 local Data_SceneItemLvl={}
 
-local g_PaoShang_Zijin = 0 -- Íæ¼Ò×Ê½ð
-local g_PaoShang_ItemNum = 1 -- ÎïÆ·1ÊýÁ¿
-local g_PaoShang_Item1 = 2 -- ÎïÆ·1
+local g_PaoShang_Zijin = 0 -- ????
+local g_PaoShang_ItemNum = 1 -- ??1??
+local g_PaoShang_Item1 = 2 -- ??1
 local g_PaoShang_Item1_Price = 3
-local g_PaoShang_Item2 = 4 -- ÎïÆ·2
+local g_PaoShang_Item2 = 4 -- ??2
 local g_PaoShang_Item2_Price = 4
-local g_PaoShang_Item3 = 6 -- ÎïÆ·3
+local g_PaoShang_Item3 = 6 -- ??3
 
 local g_PaoShang_Item3_Price = 7
-local g_PaoShang_Item4 = 11-- ÎïÆ·4
+local g_PaoShang_Item4 = 11-- ??4
 
 local g_PaoShangIndex_Item =
 {
@@ -241,7 +241,7 @@ function ShangPinXinXi_OnEvent(event)
 		if(tonumber(arg0) ~= objCared) then
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			ShangPinXinXi_OnClose()
 		end			

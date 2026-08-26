@@ -73,7 +73,7 @@ function RepairBamboo_OnEvent(event)
 		end
 
 		Lua_TDU_Log("OBJECT_CARED_EVENT tonumber(arg2):"..tonumber(arg2));
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if arg1 == "distance" and tonumber(arg2) > MAX_OBJ_DISTANCE or arg1=="destroy" then
 			RepairBamboo_Close()
 		end

@@ -4,14 +4,14 @@ local g_Item_DJS_Confirm_Frame_UnifiedPosition;
 
 local FrameInfoList =
 {
-	DJTS_CONFIRM_SETPOS = 265,						--	确认彻地符箓重新定位	
-	DJTS_CONFIRM_CHUANSONG = 267,					--	确认彻地符箓传送	
-	DJTS_CONFIRM_BUCHONG = 269,						--	确认彻地符箓补充符咒	
+	DJTS_CONFIRM_SETPOS = 265,						--	??????????	
+	DJTS_CONFIRM_CHUANSONG = 267,					--	????????	
+	DJTS_CONFIRM_BUCHONG = 269,						--	??????????	
 		
-	DJTS_CONFIRM_BUCHONG_ITEM_BIND = 272,		--用绑定道具增加彻地符箓的符咒
+	DJTS_CONFIRM_BUCHONG_ITEM_BIND = 272,		--??????????????
 	
-	DJTS_CONFIRM_BUCHONG_YUANBAO_BIND = 273,		--用绑定元宝增加彻地符箓的符咒
-	DJTS_CONFIRM_BUCHONG_YUANBAO = 274,				--用元宝增加彻地符箓的符咒
+	DJTS_CONFIRM_BUCHONG_YUANBAO_BIND = 273,		--??????????????
+	DJTS_CONFIRM_BUCHONG_YUANBAO = 274,				--????????????
 };
 
 local Client_ItemIndex = -1
@@ -75,7 +75,7 @@ function Item_DJS_Confirm_OnEvent(event)
 	if (event == "CONFIRM_SETPOS_CDFL") then
 	
 		--Item_DJS_Confirm_Title:SetText("#{DJTS_110509_01}")--彻地符箓
-		Item_DJS_Confirm_Title:SetProperty("Image","set:Fulu_1 image:DunJiaShu_Title_Index")	--彻地符箓
+		Item_DJS_Confirm_Title:SetProperty("Image","set:Fulu_1 image:DunJiaShu_Title_Index")	--????
 		
 		local itemIdx = tonumber(arg0)
 		local szSceneName = tostring(arg1);
@@ -96,7 +96,7 @@ function Item_DJS_Confirm_OnEvent(event)
 		curPosX = math.floor(curPosX)
 		curPosZ = math.floor(curPosZ)
 
-		local str = "#{DJTS_110509_12}"..szSceneName.."（"..iPosX.."，"..iPosZ.."）".."#r".."#{DJTS_110509_13}"..curSceneName.."（"..curPosX.."，"..curPosZ.."）"
+		local str = "#{DJTS_110509_12}"..szSceneName.."("..iPosX..","..iPosZ..")".."#r".."#{DJTS_110509_13}"..curSceneName.."("..curPosX..","..curPosZ..")"
 
 		if (szSceneName ~= "") then
 			Item_DJS_Confirm_Info:SetText(str);
@@ -114,7 +114,7 @@ function Item_DJS_Confirm_OnEvent(event)
 	if(event == "CONFIRM_CHUANSONG_CDFL") then
 	
 		--Item_DJS_Confirm_Title:SetText("#{DJTS_110509_01}")--彻地符箓
-		Item_DJS_Confirm_Title:SetProperty("Image","set:Fulu_1 image:DunJiaShu_Title_Index")	--彻地符箓
+		Item_DJS_Confirm_Title:SetProperty("Image","set:Fulu_1 image:DunJiaShu_Title_Index")	--????
 			
 		local itemIdx = tonumber(arg0)
 		local szSceneName = tostring(arg1);
@@ -129,7 +129,7 @@ function Item_DJS_Confirm_OnEvent(event)
 		Client_ItemIndex = itemIdx
 		CDFL_SelIndex = iSelIdx
 
-		local str = "#{DJTS_110509_14}".."\n"..szSceneName.."（"..iPosX.."，"..iPosZ.."）";
+		local str = "#{DJTS_110509_14}".."\n"..szSceneName.."("..iPosX..","..iPosZ..")";
 		if (szSceneName ~= "") then
 			Item_DJS_Confirm_Info:SetText(str)
 			Item_DJS_Confirm_UpdateRect();
@@ -145,7 +145,7 @@ function Item_DJS_Confirm_OnEvent(event)
 	if(event == "CONFIRM_BUCHONG_CDFL") then
 	
 		--Item_DJS_Confirm_Title:SetText("#{DJTS_110509_01}") --彻地符箓
-		Item_DJS_Confirm_Title:SetProperty("Image","set:Fulu_1 image:DunJiaShu_Title_Index")	--彻地符箓
+		Item_DJS_Confirm_Title:SetProperty("Image","set:Fulu_1 image:DunJiaShu_Title_Index")	--????
 			
 		local itemIdx = tonumber(arg0)
 		local iNum = tonumber(arg1);
@@ -189,7 +189,7 @@ function Item_DJS_Confirm_OnEvent(event)
 		if tonumber(arg0) == 20141106 then
 					
 			--Item_DJS_Confirm_Title:SetText("#{DJTS_110509_01}") --彻地符箓
-			Item_DJS_Confirm_Title:SetProperty("Image","set:Fulu_1 image:DunJiaShu_Title_Index")	--彻地符箓
+			Item_DJS_Confirm_Title:SetProperty("Image","set:Fulu_1 image:DunJiaShu_Title_Index")	--????
 
 			local str
 			g_Item_DJS_msgFrameVar[1] = Get_XParam_INT(0)
@@ -246,7 +246,7 @@ function Item_DJS_Confirm_Queding_Clicked()
 			Set_XSCRIPT_ParamCount(2);
 		Send_XSCRIPT();
 
-		PlayerPackage:UseItem(Client_ItemIndex)	--彻地符箓的默认使用逻辑为传送....
+		PlayerPackage:UseItem(Client_ItemIndex)	--??????????????....
 
 	end
 	

@@ -7,9 +7,9 @@ local g_EndDay = 20251016
 
 local g_MissionInfo = {
 
-	[1] = {MissionId= 2418,str2 = "ÄúÉĞÎ´Íê³ÉÈÎÎñ",itemid = 38003647,num = 1},
-	[2] = {MissionId= 2419,str2 = "ÄúÉĞÎ´Íê³ÉÈÎÎñ",itemid = 20600002,num = 1},
-	[3] = {MissionId= 2421,str2 = "ÄúÉĞÎ´Íê³ÉÈÎÎñ",itemid = 38002519,num = 1},
+	[1] = {MissionId= 2418,str2 = "Nhçm chßa hoàn thành nhi®m vø",itemid = 38003647,num = 1},
+	[2] = {MissionId= 2419,str2 = "Nhçm chßa hoàn thành nhi®m vø",itemid = 20600002,num = 1},
+	[3] = {MissionId= 2421,str2 = "Nhçm chßa hoàn thành nhi®m vø",itemid = 38002519,num = 1},
 }
 
 local g_MissionIdList = {2416,2417,2418,2419,2420,2421}

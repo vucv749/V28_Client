@@ -75,7 +75,7 @@ function ShowNotice_Update()
 	
 end
 
---关闭按钮回调
+--关睜按钮回调
 function ShowNotice_Quit_Clicked()
 	ShowNotice_Close()
 end
@@ -94,7 +94,7 @@ function ShowNotice_OnSelectionChanged()
 	ShowNotice_SetUI()
 end
 
---清空UI
+--清繝UI
 function ShowNotice_ClearUI()
 	m_Controls.m_List:RemoveAllItem()
 	m_Controls.m_Name:SetText(" ")

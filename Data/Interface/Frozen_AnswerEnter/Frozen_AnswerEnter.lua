@@ -11,7 +11,7 @@ function Frozen_AnswerEnter_PreLoad()
 	this:RegisterEvent("UI_COMMAND", true)
 	this:RegisterEvent("ADJEST_UI_POS", false)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED", false)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)	--???????
 end
 
 --=========
@@ -30,7 +30,7 @@ function Frozen_AnswerEnter_OnEvent(event)
 		Frozen_AnswerEnter_Open()
 	elseif (event == "UI_COMMAND" and tonumber(arg0) == 88848202 )  then 
 		--自动寻路
-		AutoRuntoTargetExWithName(215,199,728,"狍跑")
+		AutoRuntoTargetExWithName(215,199,728,"? B鄌")
 	elseif event == "ADJEST_UI_POS" then
 		Frozen_AnswerEnter_On_ResetPos()
 	elseif event == "VIEW_RESOLUTION_CHANGED" then
@@ -56,7 +56,7 @@ function Frozen_AnswerEnter_Open()
 end
 
 --=========
--- 关闭
+-- 关睜
 --=========
 function Frozen_AnswerEnter_OnHide()
 	this:Hide()

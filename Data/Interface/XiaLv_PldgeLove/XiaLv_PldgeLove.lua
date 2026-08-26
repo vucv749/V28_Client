@@ -17,8 +17,8 @@ function XiaLv_PldgeLove_OnLoad()
 
 	XiaLv_PldgeLove_Frame_UnifiedPosition = XiaLv_PldgeLove_Frame:GetProperty("UnifiedPosition");
 
-    XiaLv_PldgeLove_OK:SetText("Ìá½»")
-    XiaLv_PldgeLove_Pass:SetText("Ìø¹ý")
+    XiaLv_PldgeLove_OK:SetText("Ð® trình")
+    XiaLv_PldgeLove_Pass:SetText("Khiêu Quá")
 
     XiaLv_PldgeLove_Text:SetText("#{JHYH_230330_186}");
 end

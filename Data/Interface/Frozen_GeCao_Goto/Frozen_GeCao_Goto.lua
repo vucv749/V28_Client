@@ -3,10 +3,10 @@ local g_Frozen_GeCao_Goto_Frame_UnifiedYPosition
 
 local g_Rand_MainCity =
 {
-	[1] = {PosX = 143, PosZ = 198, Scene = 728, Name = "╨З╠Ы╥Г"},
+	[1] = {PosX = 143, PosZ = 198, Scene = 728, Name = "H╟ BЕng Phong"},
 }
 
---т╓╪сть╨╞йЩё╛©ирт╤Ьгрж╩дэтзуБюОв╒╡А╫е╠╬╧ьпд╣дйб╪Ч
+--т╓╪сть╨╞йЩё╛©ирт╤Ьгрж╩дэтз═БюОв╒╡А╫е╠╬╧ьпд╣дйб╪Ч
 function Frozen_GeCao_Goto_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
 	-- сно╥╢╟©зЁъ╢Г╥╒иЗак╠Д╩╞

@@ -1,6 +1,6 @@
 --雕纹进阶
 --  30503149 雕纹蚀刻
--- 10100010 震天斧
+-- 10100010 狆天斧
 -- 30110111 力量雕文
 local MAX_OBJ_DISTANCE = 3.0
 local g_CaredNpc = -1
@@ -12,22 +12,22 @@ local g_DWJinJieNeedMoney = 500000
 local g_DWJinJie_GRID_SKIP = 180 --	G181 G182 
 local g_DWJinJie_Tool_Num = 0
 local g_EquipPoint2DWJinJie_Tool_ItemID = {
-	[0] = 30900200,--武器
-	[1] = 30900206,--帽子
-	[2] = 30900205,--衣服
-	[3] = 30900209,--手套
-	[4] = 30900211,--鞋
-	[5] = 30900210,--腰带
-	[6] = 30900212,--戒指
-	[7] = 30900204,--项链
-	[11] = 30900212,--戒指2
-	[12] = 30900213,--护符
-	[13] = 30900213,--护符2
-	[14] = 30900208,--护腕
-	[15] = 30900207,--护肩
-	[17] = 30900201,--暗器
-	[18] = 30900202,--武魂
-	[37] = 30900203,--七情刃
+	[0] = 30900200,--??
+	[1] = 30900206,--??
+	[2] = 30900205,--??
+	[3] = 30900209,--??
+	[4] = 30900211,--?
+	[5] = 30900210,--??
+	[6] = 30900212,--??
+	[7] = 30900204,--??
+	[11] = 30900212,--??2
+	[12] = 30900213,--??
+	[13] = 30900213,--??2
+	[14] = 30900208,--??
+	[15] = 30900207,--??
+	[17] = 30900201,--??
+	[18] = 30900202,--??
+	[37] = 30900203,--???
 }
 local g_UICOMMAND = 89030501
 
@@ -59,7 +59,7 @@ function DWJinJie_OnLoad()
 	g_DWJinJie_Object[2] = DWJinJie_Object2
 	g_DWJinJie_DemandMoney = 0
 	DWJinJie_DemandMoney:SetProperty("MoneyNumber", tostring(g_DWJinJie_DemandMoney))
-	-- 始终可以点击 OK 按钮, 为了方便提示玩家信息
+	-- 始譅可以点击 OK 按钮, 为了方便提示玩家信息
 	DWJinJie_OK:Enable()
 	g_DWJinJie_Frame_UnifiedPosition=DWJinJie_Frame:GetProperty("UnifiedPosition");
 end
@@ -91,7 +91,7 @@ function DWJinJie_OnEvent(event)
 		if (arg0~= nil and -1 == tonumber(arg0)) then
 			return
 		end
-		-- 可以改成允许接着强化, 那就不要在这里移除物品
+		-- 可以改成允许接着强化, 那就不要在犫里移除物品
 		if tonumber(arg0) == g_DWJinJie_Item[1]  then 
 			DWJinJie_Resume_Equip(1)
 		elseif  tonumber(arg0) == g_DWJinJie_Item[2] then
@@ -122,7 +122,7 @@ end
 
 --=========================================================
 -- 更新基本显示信息
--- 在这里计算金钱并显示
+-- 在犫里计算金钱并显示
 --=========================================================
 function DWJinJie_UpdateBasic()
 	DWJinJie_SelfMoney:SetProperty("MoneyNumber", Player:GetData("MONEY"))
@@ -206,13 +206,13 @@ function DWJinJie_Update(uiActionIndex,index)
 
 
 		-- 雕纹强化不判断装备是否加锁了 - 2009-12-07
-		-- 判断物品是否加锁(在这个逻辑之前程序已经判断了)
+		-- 判断物品是否加锁(在犫个逻辑之前程序已经判断了)
 		-- if PlayerPackage:IsLock(index) == 1 then
 		-- 	PushDebugMessage("#{DWJJ_240329_124}")
 		-- 	return
 		-- end
 
-		-- 如果空格内已经有对应物品了, 替换之
+		-- 如果繝格内已经有对应物品了, 替换之
 		if g_DWJinJie_Item[uiActionIndex] ~= -1 then
 			LifeAbility:Lock_Packet_Item(g_DWJinJie_Item[uiActionIndex], 0)
 		end
@@ -223,7 +223,7 @@ function DWJinJie_Update(uiActionIndex,index)
 		
 
 
-		-- 设定 OK 为总是可以点击, 这样方便检验
+		-- 设定 OK 为总是可以点击, 犫样方便检验
 		-- 判断物品是否满足要求来设定功能button
 		-- DWJinJie_Check_AllItem()
 	else
@@ -249,7 +249,7 @@ end
 
 --=========================================================
 -- 判断是否所有物品都已放好
--- 只在点击 OK 按钮的时候调用这个函数
+-- 只在点击 OK 按钮的时候调用犫个函数
 --=========================================================
 function DWJinJie_Check_AllItem()
 	DWJinJie_UpdateBasic()
@@ -263,7 +263,7 @@ function DWJinJie_Check_AllItem()
 		return 2
 	end
 
-	-- 判断装备是否能够强化(没有蚀刻雕纹或者强化到顶级了返回 < 0)
+	-- 判断装备是否能够强化(没有蚀刻雕纹或犨强化到顶级了返回 < 0)
 	local ret = LifeAbility:CanEquipDiaowen_JinJie(g_DWJinJie_Item[1]) 
 	if ret == -1 or ret == -2 then
 		return 3
@@ -333,7 +333,7 @@ function DWJinJie_OK_Clicked()
 end
 
 --=========================================================
--- 关闭界面
+-- 关睜界面
 --=========================================================
 function DWJinJie_Close()
 	this:Hide()
@@ -351,7 +351,7 @@ end
 
 --=========================================================
 -- 开始关心NPC，
--- 在开始关心之前需要先确定这个界面是不是已经有“关心”的NPC，
+-- 在开始关心之前需要先确定犫个界面是不是已经有“关心”的NPC，
 -- 如果有的话，先取消已经有的“关心”
 --=========================================================
 function BeginCareObject_DWJinJie()

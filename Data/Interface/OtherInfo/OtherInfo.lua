@@ -1,16 +1,16 @@
 --------------------------------------------------------------------------------
 -- ×°±¸°´Å¥Êý¾Ý¶¨Òå
 --
-local  g_BAG;			--ÐÐÄÒ
-local  g_BOX;			--¸ñÏä
+local  g_BAG;			--??
+local  g_BOX;			--??
 
 --Ê¦µÂÏà¹ØToolTipÄÚÈÝ	--add by xindefeng
 local g_ShiDeTbl = {
-											[0] = {"ÎÞ#r", "0#r", 0},
-											[1] = {"³õ¼¶Ê¦¸µ#r", "2#r", 30},
-											[2] = {"ÖÐ¼¶Ê¦¸µ#r", "3#r", 35},
-											[3] = {"¸ß¼¶Ê¦¸µ#r", "5#r", 50},
-											[4] = {"Ò»´úÃûÊ¦#r", "8#r", 70}
+											[0] = {"Vô#r", "0#r", 0},
+											[1] = {"S½ C¤p sß phó#r", "2#r", 30},
+											[2] = {"Trung C¤p sß phó#r", "3#r", 35},
+											[3] = {"Cao c¤p sß phó#r", "5#r", 50},
+											[4] = {"Mµt thª h® Danh Sß#r", "8#r", 70}
 										}
 
 -- ½çÃæµÄÄ¬ÈÏÏà¶ÔÎ»ÖÃ
@@ -44,7 +44,7 @@ function OtherInfo_PreLoad()
 	-- ´ò¿ª½çÃæ
 	this:RegisterEvent("OPEN_OTHER_INFO");
 
-	--Àë¿ª³¡¾°£¬×Ô¶¯¹Ø±Õ
+	--Àë¿ª³¡¾°£¬×Ô¶¯¹Ø± 
 	this:RegisterEvent("PLAYER_LEAVE_WORLD");
 	this:RegisterEvent("UPDATE_DOUBLE_EXP");
 
@@ -69,14 +69,14 @@ end
 
 function OtherInfo_OnLoad()
 
-	g_BAG = OtherInfo_Packet1_Skill1; --ÐÐÄÒ
-	g_BOX = OtherInfo_Packet2_Skill1; --ÐÐÄÒ
+	g_BAG = OtherInfo_Packet1_Skill1; --??
+	g_BOX = OtherInfo_Packet2_Skill1; --??
 
 	OTHERINFO_TAB_TEXT = {
-		[0] = "×°±¸",
-		"×ÊÁÏ",
-		"ÕäÊÞ",
-		"ÆäËû",
+		[0] = "Trang b¸",
+		"Tß li®u",
+		"Trân Thú",
+		"M£t khác",
 	};
 
 	-- ±£´æ½çÃæµÄÄ¬ÈÏÏà¶ÔÎ»ÖÃ
@@ -166,7 +166,7 @@ function OtherInfo_OnEvent(event)
 
 	if( event == "UPDATE_DOUBLE_EXP") then
 		local str = SystemSetup:GetDoubleExp( "count" )
-		OtherInfo_6 : SetText(str.."Ð¡Ê±")
+		OtherInfo_6 : SetText(str.."Gi¶")
 		local str1 = SystemSetup:GetDoubleExp( "juqing" )
 		OtherInfo_7 : SetText(str1 .. "")
 		return;
@@ -206,26 +206,26 @@ function OtherInfo_OnEvent(event)
 end
 
 function Equip_RefreshEquip1()
-	--  Çå¿Õ°´Å¥ÏÔÊ¾Í¼±ê
-	g_BAG:SetActionItem(-1);			--ÐÐÄÒ
-	g_BOX:SetActionItem(-1);			--¸ñÏä
+	--  Çå¿ °´Å¥ÏÔÊ¾Í¼±ê
+	g_BAG:SetActionItem(-1);			--??
+	g_BOX:SetActionItem(-1);			--??
 
 	local ActionBag 		= EnumAction(9 , "equip");
 	local ActionBox 		= EnumAction(10, "equip");
 
 	-- ÏÔÊ¾ÈËÉíÉÏµÄÎäÆ÷×°±¸
-	g_BAG:SetActionItem(ActionBag:GetID());			--ÐÐÄÒ
-	g_BOX:SetActionItem(ActionBox:GetID());			--¸ñÏä
+	g_BAG:SetActionItem(ActionBag:GetID());			--??
+	g_BOX:SetActionItem(ActionBox:GetID());			--??
 end
 
 -- ÐÐÄÒµã»÷ÊÂ¼þ
 function SelfEquip_Bag_Click()
-	g_BAG:DoSubAction();	--ÐÐÄÒ
+	g_BAG:DoSubAction();	--??
 end
 
 -- ¸ñÏäµã»÷ÊÂ¼þ
 function SelfEquip_Box_Click()
-	g_BOX:DoSubAction();	--¸ñÏä
+	g_BOX:DoSubAction();	--??
 end
 
 function OtherInfo_OnShow()
@@ -238,7 +238,7 @@ function OtherInfo_OnShow()
 
 	str = Player : GetData("GOODBADVALUE");
 	OtherInfo_1 : SetText(str)
-	SetOtherInfo_1_Tooltip()	--ÉèÖÃÆäToolTips	-- add by xindefeng
+	SetOtherInfo_1_Tooltip()	--???ToolTips	-- add by xindefeng
 
 	str = Player : GetData("PKVALUE");
 	OtherInfo_2 : SetText(str)
@@ -255,7 +255,7 @@ function OtherInfo_OnShow()
 	elseif masterLvl == 4 then
 		availRecruitNum = 8;
 	end
-	OtherInfo_9_Text:SetText("ÊÕÍ½ÊýÁ¿:");
+	OtherInfo_9_Text:SetText("Thu ð° ð® s¯ lßþng:");
 	OtherInfo_9:SetText(prenticeNum.."/"..availRecruitNum);
 --	str = Player : GetData("MORALPOINT");
 --	OtherInfo_3 : SetText(str)
@@ -264,14 +264,14 @@ function OtherInfo_OnShow()
 	OtherInfo_4 : SetText(str)
 
 	str = SystemSetup:GetDoubleExp( "count" )
-	OtherInfo_6 : SetText(str.."Ð¡Ê±")
+	OtherInfo_6 : SetText(str.."Gi¶")
 	str = Guild:GetGuildContri();
 	OtherInfo_5 : SetText(str);
 
 	local nCount = DataPool:GetPlayerMission_DataRound(150)
 	OtherInfo_3:SetText(tostring(nCount))
 
-	OtherInfo_8:SetText(tonumber(Player:GetData("PET_EXTRANUM")))	--ÏÔÊ¾ÊÞÀ¸¿Õ¼ä--add by xindefeng
+	OtherInfo_8:SetText(tonumber(Player:GetData("PET_EXTRANUM")))	--??????--add by xindefeng
 
 	OtherInfo_10 : SetText(Player : GetData("HONOR"));
 
@@ -394,18 +394,18 @@ end
 
 --ÉèÖÃotherinfo_1µÄtooltip	--add by xindefeng
 function SetOtherInfo_1_Tooltip()
-	local MasterLevel = Player:GetData("MASTERLEVEL")	--»ñÈ¡Ê¦µÂµÈ¼¶
+	local MasterLevel = Player:GetData("MASTERLEVEL")	--??????
 	if(MasterLevel < 0)then
 		return
 	end
 
-	local ShanEValue = Player:GetData("GOODBADVALUE")						--»ñÈ¡ÉÆ¶ñÖµ
-	local TuDiCount = Player:GetData("PRENTICCOUNT")						--»ñÈ¡Í½µÜÊýÁ¿
-	local TuDiSupplyExp = Player:GetData("PRENTICSUPPLYEXP")		--»ñÈ¡µ±Ç°Í½µÜ¹±Ï×µÄ¾­ÑéÖµ
-	local ShanEExp = ShanEValue * (g_ShiDeTbl[MasterLevel][3])	--¼ÆËãÓëÉÆ¶ñÖµ¹Ò¹³¿ÉÒÔÁìÈ¡µÄ¾­ÑéÖµ
-	local TrueExp = ((TuDiSupplyExp < ShanEExp) and TuDiSupplyExp) or ShanEExp	--»ñÈ¡¶þÕß×îÐ¡Öµ
+	local ShanEValue = Player:GetData("GOODBADVALUE")						--?????
+	local TuDiCount = Player:GetData("PRENTICCOUNT")						--??????
+	local TuDiSupplyExp = Player:GetData("PRENTICSUPPLYEXP")		--????????????
+	local ShanEExp = ShanEValue * (g_ShiDeTbl[MasterLevel][3])	--????????????????
+	local TrueExp = ((TuDiSupplyExp < ShanEExp) and TuDiSupplyExp) or ShanEExp	--???????
 
-	local str =	"Ê¦¸µµÈ¼¶£º"..g_ShiDeTbl[MasterLevel][1].."µÜ×ÓÊýÄ¿£º"..TuDiCount.."/"..g_ShiDeTbl[MasterLevel][2].."¿É¶Ò»»¾­Ñé£º"..TrueExp
+	local str =	"Sß phó c¤p b§c:"..g_ShiDeTbl[MasterLevel][1].."Ð® tØ s¯ lßþng:"..TuDiCount.."/"..g_ShiDeTbl[MasterLevel][2].."Khä ð±i kinh nghi®m:"..TrueExp
 
 	OtherInfo_1:SetToolTip(str)
 end
@@ -477,7 +477,7 @@ function OtherInfo_GotoPaihang()
 	Helper:GotoPaihang()
 end
 
---ÇÐ»»¸öÈËÕ¹Ê¾½çÃæ
+--ÇÐ»»¸öÈË ¹Ê¾½çÃæ
 function OtherInfo_Profile_Switch()
 	Variable:SetVariable("SelfUnionPos", OtherInfo_Frame:GetProperty("UnifiedPosition"), 1);	
 	Exterior:LuaFnExteriorPlayerOpenProfileUI()	
@@ -537,101 +537,101 @@ end
 function OtherInfo_OnPageClicked(idx)
 	Variable:SetVariable("PageNumber", tostring(idx), 1);
 	idx = g_PageOrder[idx]
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		OtherInfo_SelfEquip_Page_Switch()
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		OtherInfo_SelfData_Switch()
-	elseif idx == 3 then--ÕäÊÞ
+	elseif idx == 3 then--??
 		OtherInfo_Pet_Switch()
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		OtherInfo_Wuhun_Switch()
-	elseif idx == 5 then--ÐÞÁ¶
+	elseif idx == 5 then--??
 		OtherInfo_Xiulian_Switch()
-	elseif idx == 6 then--ÎäµÀ
+	elseif idx == 6 then--??
 		OtherInfo_Talent_Switch()
-	elseif idx == 7 then--ÁéÓñ
+	elseif idx == 7 then--??
 		OtherInfo_Page_LingYu()
-	elseif idx == 8 then--Éñ±ø
+	elseif idx == 8 then--??
 		OtherInfo_Page_ShenBing()
-	elseif idx == 9 then--µñÎÄ½ø½×
+	elseif idx == 9 then--????
 		OtherInfo_Page_DWJinJie()
-	elseif idx == 10 then--áÛ·å
+	elseif idx == 10 then--??
 		OtherInfo_Page_Peak()	
-	elseif idx == 11 then--¸öÈË
+	elseif idx == 11 then--??
 		OtherInfo_Profile_Switch()
-	elseif idx == 12 then--ÆäËû
+	elseif idx == 12 then--??
 		OtherInfo_ClearPage()
 	end
 end
 
 function OtherInfo_CheckPage(idx)
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--ÕäÊÞ
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--ÐÞÁ¶
+	elseif idx == 5 then--??
 		return 1
-	elseif idx == 6 then--ÎäµÀ
+	elseif idx == 6 then--??
 		return DataPool:Lua_CheckIsShowTalent()
-	elseif idx == 7 then--ÁéÓñ
+	elseif idx == 7 then--??
 		return 1
-	elseif idx == 8 then--Éñ±ø
+	elseif idx == 8 then--??
 		return 1
-	elseif idx == 9 then--µñÎÄ½ø½×
+	elseif idx == 9 then--????
 		return 1
-	elseif idx == 10 then--Îä¾³
+	elseif idx == 10 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 11 then--¸öÈË
+	elseif idx == 11 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 15 then
 			return 1
 		end
-	elseif idx == 12 then--ÆäËû
+	elseif idx == 12 then--??
 		return 1
 	end
 	return 0
 end
 
 function OtherInfo_IsPageEnable(idx)
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--ÕäÊÞ
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--ÐÞÁ¶
+	elseif idx == 5 then--??
 		return 1
-	elseif idx == 6 then--ÎäµÀ
+	elseif idx == 6 then--??
 		return 1
-	elseif idx == 7 then--ÁéÓñ
+	elseif idx == 7 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 8 then--Éñ±ø
+	elseif idx == 8 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 65 then
 			return 1
 		end
-	elseif idx == 9 then--µñÎÄ½ø½×
+	elseif idx == 9 then--????
 		return 1
-	elseif idx == 10 then--Îä¾³
+	elseif idx == 10 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 11 then--¸öÈË
+	elseif idx == 11 then--??
 		return 1
-	elseif idx == 12 then--ÆäËû
+	elseif idx == 12 then--??
 		return 1
 	end
 	return 0

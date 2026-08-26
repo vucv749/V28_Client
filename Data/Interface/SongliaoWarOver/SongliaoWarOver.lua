@@ -8,12 +8,12 @@ local g_SongliaoWarOver_Image = {
 						[4] = "set:SongLiao02 image:HJ_Zhengduo" --weiwancheng
 	}
 
-local g_select = 0 --1:ÀŒ 0£∫¡…
+local g_select = 0 --1:? 0:?
 local g_Songliao_ItemBars 				= {}
-local g_SongIsWinner = 0  --0:∆Ωæ÷ 1£∫ÀŒ § 2£∫¡… §
+local g_SongIsWinner = 0  --0:?? 1:?? 2:??
 local g_Final = 0
 
-local SongliaoWarOver_Battle_FourTimeEnd = 11470--SongLiaoWarSingle.lua ¿Ô√Ê”–“ª—˘µƒ∫Í
+local SongliaoWarOver_Battle_FourTimeEnd = 11470--SongLiaoWarSingle.lua ???????
 function SongliaoWarOver_PreLoad()
 	this:RegisterEvent("SCENE_TRANSED");
 	this:RegisterEvent("PLAYER_LEAVE_WORLD");
@@ -106,68 +106,68 @@ function SongliaoWarOver_Open(final)
 	for nState=1,4 do
 		local nCampScore = CSongliaoWarData:GetCampStateScore(nState);
 		--Lua_TDU_Log("songliao".."nState="..nState.." nCampScore"..nCampScore)
-		if nState == 1 then --µ⁄“ªΩ◊∂Œ
+		if nState == 1 then --????
 			
 			local nStateWinner=  CSongliaoWarData:GetStateWinner(nState)
 			--Lua_TDU_Log("nState"..nState.." nStateWinner="..nStateWinner)
-			if nStateWinner == 1 then --ÀŒ	
+			if nStateWinner == 1 then --?	
 				SongliaoWarOver_QL:SetProperty("Visible" , "True" )
 				SongliaoWarOver_QL2:SetProperty("Visible" , "False" )
 				winSong[1] = 1
-			elseif nStateWinner == 2 then --¡…
+			elseif nStateWinner == 2 then --?
 				SongliaoWarOver_QL:SetProperty("Visible" , "False" )
 				SongliaoWarOver_QL2:SetProperty("Visible" , "True" )
 				winLiao[1] = 1
-			else --∆Ω
+			else --?
 				SongliaoWarOver_QL:SetProperty("Visible" , "False" )
 				SongliaoWarOver_QL2:SetProperty("Visible" , "False" )	
 			end
 			
-		elseif nState == 2 then --µ⁄∂˛Ω◊∂Œ
+		elseif nState == 2 then --????
 
 			local nStateWinner=  CSongliaoWarData:GetStateWinner(nState)
-			if nStateWinner == 1 then --ÀŒ	
+			if nStateWinner == 1 then --?	
 				SongliaoWarOver_BH:SetProperty("Visible" , "True" )
 				SongliaoWarOver_BH2:SetProperty("Visible" , "False" )
 				winSong[2] = 1
-			elseif nStateWinner == 2 then --¡…
+			elseif nStateWinner == 2 then --?
 				SongliaoWarOver_BH:SetProperty("Visible" , "False" )
 				SongliaoWarOver_BH2:SetProperty("Visible" , "True" )
 				winLiao[2] = 1
-			else --∆Ω
+			else --?
 				SongliaoWarOver_BH:SetProperty("Visible" , "False" )
 				SongliaoWarOver_BH2:SetProperty("Visible" , "False" )	
 			end
 
-		elseif nState == 3 then --µ⁄»˝Ω◊∂Œ
+		elseif nState == 3 then --????
 
 			local nStateWinner=  CSongliaoWarData:GetStateWinner(nState)
 
-			if nStateWinner == 1 then --ÀŒ	
+			if nStateWinner == 1 then --?	
 				SongliaoWarOver_XW:SetProperty("Visible" , "True" )
 				SongliaoWarOver_XW2:SetProperty("Visible" , "False" )
 				winSong[3] = 1
-			elseif nStateWinner == 2 then --¡…
+			elseif nStateWinner == 2 then --?
 				SongliaoWarOver_XW:SetProperty("Visible" , "False" )
 				SongliaoWarOver_XW2:SetProperty("Visible" , "True" )
 				winLiao[3] = 1
-			else --∆Ω
+			else --?
 				SongliaoWarOver_XW:SetProperty("Visible" , "False" )
 				SongliaoWarOver_XW2:SetProperty("Visible" , "False" )	
 			end
 
-		elseif nState == 4 then --µ⁄ÀƒΩ◊∂Œ
+		elseif nState == 4 then --????
 
 			local nStateWinner=  CSongliaoWarData:GetStateWinner(nState)
-			if nStateWinner == 1 then --ÀŒ	
+			if nStateWinner == 1 then --?	
 				SongliaoWarOver_ZQ:SetProperty("Visible" , "True" )
 				SongliaoWarOver_ZQ2:SetProperty("Visible" , "False" )
 				winSong[4] = 1
-			elseif nStateWinner == 2 then --¡…
+			elseif nStateWinner == 2 then --?
 				SongliaoWarOver_ZQ:SetProperty("Visible" , "False" )
 				SongliaoWarOver_ZQ2:SetProperty("Visible" , "True" )
 				winLiao[4] = 1
-			else --∆Ω
+			else --?
 				SongliaoWarOver_ZQ:SetProperty("Visible" , "False" )
 				SongliaoWarOver_ZQ2:SetProperty("Visible" , "False" )				
 			end
@@ -183,14 +183,14 @@ function SongliaoWarOver_Open(final)
 
 	if g_Final == 1 then
 		if songcnt > liaocnt then
-			if myCamp ==  156 then --Œ“ «ÀŒ
+			if myCamp ==  156 then --???
 				SongliaoWarOver_Sheng:SetProperty("Image", g_SongliaoWarOver_Image[1])
 			else
 				SongliaoWarOver_Sheng:SetProperty("Image", g_SongliaoWarOver_Image[2])
 			end
 			g_SongIsWinner = 1
 		elseif songcnt < liaocnt then
-			if myCamp ==  156 then --Œ“ «ÀŒ
+			if myCamp ==  156 then --???
 				SongliaoWarOver_Sheng:SetProperty("Image", g_SongliaoWarOver_Image[2])
 			else
 				SongliaoWarOver_Sheng:SetProperty("Image", g_SongliaoWarOver_Image[1])
@@ -221,7 +221,7 @@ function SongliaoWarOver_Sure_Clicked()
 	SongliaoWarOver_Close()
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name( "Transfer" )
-		Set_XSCRIPT_ScriptID(502021) --±Õ¸¡À£∫AllowableScriptFunc.txt÷–º”…œ’‚∏ˆΩ”ø⁄∫ÕΩ≈±æ∫≈
+		Set_XSCRIPT_ScriptID(502021) --???:AllowableScriptFunc.txt???????????
 		Set_XSCRIPT_ParamCount(0)
 	Send_XSCRIPT()		
 	--SongliaoWarOver_Time:SetProperty("Timer", "-1");
@@ -261,11 +261,11 @@ function SongliaoWarOver_Frame_Song_Check()
 
 	local myRet, myName, myCamp, myScore= CSongliaoWarData:GetMyScore()
 	if myCamp == 156 then
-		SongliaoWarOver_SongCamp:SetText("±æ∑Ω")
-		SongliaoWarOver_LiaoCamp:SetText("µ–∑Ω")
+		SongliaoWarOver_SongCamp:SetText("B±n PhﬂΩng")
+		SongliaoWarOver_LiaoCamp:SetText("–∏ch qu‚n")
 	else
-		SongliaoWarOver_SongCamp:SetText("µ–∑Ω")
-		SongliaoWarOver_LiaoCamp:SetText("±æ∑Ω")
+		SongliaoWarOver_SongCamp:SetText("–∏ch qu‚n")
+		SongliaoWarOver_LiaoCamp:SetText("B±n PhﬂΩng")
 	end
 end
 
@@ -277,11 +277,11 @@ function SongliaoWarOver_Frame_Liao_Check()
 
 	local myRet, myName, myCamp, myScore= CSongliaoWarData:GetMyScore()
 	if myCamp == 156 then
-		SongliaoWarOver_SongCamp:SetText("±æ∑Ω")
-		SongliaoWarOver_LiaoCamp:SetText("µ–∑Ω")
+		SongliaoWarOver_SongCamp:SetText("B±n PhﬂΩng")
+		SongliaoWarOver_LiaoCamp:SetText("–∏ch qu‚n")
 	else
-		SongliaoWarOver_SongCamp:SetText("µ–∑Ω")
-		SongliaoWarOver_LiaoCamp:SetText("±æ∑Ω")
+		SongliaoWarOver_SongCamp:SetText("–∏ch qu‚n")
+		SongliaoWarOver_LiaoCamp:SetText("B±n PhﬂΩng")
 	end
 end
 
@@ -336,7 +336,7 @@ function SongliaoWarOver_Frame_Draw(g_Final)
 
 		if g_Final == 0 then
 			ItemBar:Setm_newTextShow(6)
-			ItemBar:Setm_newText(6,"Œ¥∑÷ §∏∫")
+			ItemBar:Setm_newText(6,"Chﬂa ph‚n th°ng b’i")
 		elseif g_Final == 1 then
 			ItemBar:Setm_newTextHide(6)
 		end
@@ -374,7 +374,7 @@ function SongliaoWarOver_Frame_Draw(g_Final)
 			m_BonusItemID2,m_BonusItemNum2,m_BonusProNum2,
 			m_RYItemID,m_RYValue,m_RYVictoryValue,m_LossRYRankValue,m_RYLossValue = Lua_GetSongLiaoBonusInfo(nCount)
 
-         --—°‘Ò’π æÀŒΩÁ√Ê ÀŒ”Æ¡À or —°‘Ò’π æ¡…ΩÁ√Ê  ¡…”Æ¡À
+         --—°‘Ò†π æÀŒΩÁ√Ê ÀŒ”Æ¡À or —°‘Ò†π æ¡…ΩÁ√Ê  ¡…”Æ¡À
 		if ( g_select == 1 and g_SongIsWinner == 1 ) or ( g_select == 0 and g_SongIsWinner == 2 ) then
 
 			if m_RYValue > 0 then
@@ -502,7 +502,7 @@ function SongliaoWarOver_Frame_Draw(g_Final)
 
 	if g_Final == 0 then
 		SongliaoWarOver_NoEnd:Show()
-		SongliaoWarOver_NoEnd:SetText("Œ¥∑÷ §∏∫")
+		SongliaoWarOver_NoEnd:SetText("Chﬂa ph‚n th°ng b’i")
 		SongliaoWarOver_SelfButton5:Hide()
 		SongliaoWarOver_SelfButton6:Hide()
 	elseif g_Final == 1 then
@@ -658,7 +658,7 @@ function SongliaoWarOver_Frame_Draw(g_Final)
 
 	if ( g_select == 1 and myCamp == 156 ) or ( g_select == 0 and myCamp == 157 ) then
 	else
-		SongliaoWarOver_SelfRank:SetText("Œﬁ≈≈√˚")
+		SongliaoWarOver_SelfRank:SetText("VÙ b‡i danh")
 		SongliaoWarOver_SelfRankImage:Hide()
 	end
 

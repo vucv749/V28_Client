@@ -1,12 +1,12 @@
--- 跨服日常BOSS 龙塔
+-- 跨服葼常BOSS 龙塔
 
 -- 默认位置
 local g_tbosstime_unifiedposition = nil
 local g_tbosstime_uicommand = 81015501
 local g_tbosstime_towertype = 2
 local g_uicommandtype = {
-    open = 2,                                   -- 打开界面
-    close = 1000,                               -- 关闭界面
+    open = 2,                                   -- ????
+    close = 1000,                               -- ????
 }
 
 local g_Data = {}
@@ -15,8 +15,8 @@ function TBossTime2_PreLoad()
     this:RegisterEvent("KFRCBOSS_LTSHOW", true)
     this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)
     this:RegisterEvent("PLAYER_LEAVE_WORLD", false)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end
 
 function TBossTime2_OnEvent(event)

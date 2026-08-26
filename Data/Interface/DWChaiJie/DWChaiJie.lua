@@ -59,7 +59,7 @@ function DWChaiJie_OnEvent(event)
 		local xx = Get_XParam_INT(0)
 		g_CaredNpc = DataPool:GetNPCIDByServerID(xx)
 		if g_CaredNpc == -1 then
-			PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£")
+			PushDebugMessage("Dæ li®u máy chü có v¤n ğ«")
 			return
 		end
 		BeginCareObject_DWChaiJie()
@@ -131,12 +131,12 @@ end
 --=========================================================
 function DWChaiJie_Update(itemIndex)
 	g_DWChaiJie_Confirmed = 0
-	local index = tonumber(itemIndex)--±³°üÎ»ÖÃ
+	local index = tonumber(itemIndex)--????
 	local theAction = EnumAction(index, "packageitem")
 
 	if theAction:GetID() ~= 0 then
 		-- ÅĞ¶ÏÎïÆ·ÊÇ·ñÎªµñÎÆ, Èç¹û²»ÊÇ, Ö±½Óreturn
-		local nDiaoWenID,nDiaoWenLevel,nDiaoWenType=LifeAbility:GetDiaowenId(index)--²ÎÊıÎª±³°üÖĞÎ»ÖÃ
+		local nDiaoWenID,nDiaoWenLevel,nDiaoWenType=LifeAbility:GetDiaowenId(index)--????????
 		if nDiaoWenID == -1 then
 			PushDebugMessage("#{DWCJJ_140606_11}")
 			return
@@ -147,7 +147,7 @@ function DWChaiJie_Update(itemIndex)
 			return
 		end
 
-		-- ÅĞ¶ÏÎïÆ·ÊÇ·ñ¼ÓËø(ÔÚÕâ¸öÂß¼­Ö®Ç°³ÌĞòÒÑ¾­ÅĞ¶ÏÁË)
+		-- ÅĞ¶ÏÎïÆ·ÊÇ·ñ¼ÓËø(ÔÚ â¸öÂß¼­Ö®Ç°³ÌĞòÒÑ¾­ÅĞ¶ÏÁË)
 		if PlayerPackage:IsLock(index) == 1 then
 			PushDebugMessage("#{DWCJJ_140606_12}")
 			return
@@ -157,7 +157,7 @@ function DWChaiJie_Update(itemIndex)
 			return
 		end
 
-		-- Èç¹û¿Õ¸ñÄÚÒÑ¾­ÓĞÍ¼ÑùÁË, Ìæ»»Ö®
+		-- Èç¹û¿ ¸ñÄÚÒÑ¾­ÓĞÍ¼ÑùÁË, Ìæ»»Ö®
 		if g_DWChaiJie_Item ~= -1 then
 			LifeAbility:Lock_Packet_Item(g_DWChaiJie_Item, 0)
 		end
@@ -168,7 +168,7 @@ function DWChaiJie_Update(itemIndex)
 		if nDiaoWenType==1 then
 			DWChaiJie_NeedYuanBao:SetText(g_DWChaiJieInfo[nDiaoWenLevel].normal[1])
 			DWChaiJie_Quantity:SetText(g_DWChaiJieInfo[nDiaoWenLevel].normal[2])
-		elseif nDiaoWenType==2 then--¼õ¿¹
+		elseif nDiaoWenType==2 then--??
 			DWChaiJie_NeedYuanBao:SetText(g_DWChaiJieInfo[nDiaoWenLevel].jiankang[1])
 			DWChaiJie_Quantity:SetText(g_DWChaiJieInfo[nDiaoWenLevel].jiankang[2])
 		elseif nDiaoWenType==3 then
@@ -211,12 +211,12 @@ function DWChaiJie_OK_Clicked()
 		PushDebugMessage("#{DWCJJ_140606_13}")
 		return
 	end
-	local nDiaoWenID,nDiaoWenLevel,nDiaoWenType=LifeAbility:GetDiaowenId(g_DWChaiJie_Item)--²ÎÊıÎª±³°üÖĞÎ»ÖÃ
+	local nDiaoWenID,nDiaoWenLevel,nDiaoWenType=LifeAbility:GetDiaowenId(g_DWChaiJie_Item)--????????
 	if nDiaoWenID == -1 then
 		PushDebugMessage("#{DWCJJ_140606_13}")
 		return
 	end
-	-- ÅĞ¶ÏÎïÆ·ÊÇ·ñ¼ÓËø(ÔÚÕâ¸öÂß¼­Ö®Ç°³ÌĞòÒÑ¾­ÅĞ¶ÏÁË)
+	-- ÅĞ¶ÏÎïÆ·ÊÇ·ñ¼ÓËø(ÔÚ â¸öÂß¼­Ö®Ç°³ÌĞòÒÑ¾­ÅĞ¶ÏÁË)
 	if PlayerPackage:IsLock(g_DWChaiJie_Item) == 1 then
 		PushDebugMessage("#{DWCJJ_140606_14}")
 		return
@@ -228,7 +228,7 @@ function DWChaiJie_OK_Clicked()
 	local needYB=0
 	if nDiaoWenType==1 then
 		needYB=g_DWChaiJieInfo[nDiaoWenLevel].normal[1]
-	elseif nDiaoWenType==2 then--¼õ¿¹
+	elseif nDiaoWenType==2 then--??
 		needYB=g_DWChaiJieInfo[nDiaoWenLevel].jiankang[1]
 	elseif nDiaoWenType==3 then
 		needYB=g_DWChaiJieInfo[nDiaoWenLevel].kangxing[1]
@@ -247,7 +247,7 @@ function DWChaiJie_OK_Clicked()
 			Set_XSCRIPT_ParamCount(1)
 		Send_XSCRIPT()
 	else
-		--Ïû·ÑÉÏÏŞ ±³°ü¿Õ¼ä ·şÎñÆ÷¶ËÅĞ¶Ï
+		--Ïû·ÑÉÏÏŞ ±³°ü¿ ¼ä ·şÎñÆ÷¶ËÅĞ¶Ï
 		--²ß»®¼á³Ö¶ş´ÎÈ·ÈÏ¿òµÄÎ»ÖÃ£¬Ö»ÄÜ·­À´¸²È¥´«°üÁË
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("CheckDiaoWenChaiJie")
@@ -260,7 +260,7 @@ function DWChaiJie_OK_Clicked()
 end
 
 --=========================================================
--- ¹Ø±Õ½çÃæ
+-- ¹Ø± ½çÃæ
 --=========================================================
 function DWChaiJie_Close()
 	this:Hide()
@@ -278,7 +278,7 @@ end
 
 --=========================================================
 -- ¿ªÊ¼¹ØĞÄNPC£¬
--- ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+-- ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 -- Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function BeginCareObject_DWChaiJie()

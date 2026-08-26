@@ -20,27 +20,27 @@ local g_PetSoul_ZhuanHua_CommonPiece ={
 local g_PetSoul_ZhuanHua_Qual_Dest={
 	-- ¡È ﬁ
 	[0] = {
-		[1] ="≥‡–‹ªÍ”Ò",
-		[2] ="∞◊æ‘ªÍ”Ò",
-		[3] ="¡È≤ıªÍ”Ò",
-		[4] ="≤‘¿«ªÍ”Ò",
-		[5] ="∑…¡ÁªÍ”Ò",
+		[1] ="XÌch H˘ng H∞n Ng˜c",
+		[2] ="B’ch C‚u H∞n Ng˜c",
+		[3] ="Linh Thi´n H∞n Ng˜c",
+		[4] ="ThﬂΩng Lang H∞n Ng˜c",
+		[5] ="Phi DﬂΩng H∞n Ng˜c",
 	},
 	-- ªƒ ﬁ
 	[1] = {
-		[1] ="Ωı¡€ªÍ”Ò",
-		[2] ="ª√µ˚ªÍ”Ò",
-		[3] ="À™∫◊ªÍ”Ò",
-		[4] ="ΩŒ⁄ªÍ”Ò",
-		[5] ="¬π ÒªÍ”Ò",
+		[1] ="C¶m L‚n H∞n Ng˜c",
+		[2] ="Huy≠n –iÆp H∞n Ng˜c",
+		[3] ="SﬂΩng H’c H∞n Ng˜c",
+		[4] ="Kim Ù H∞n Ng˜c",
+		[5] ="Lµc Th¯c H∞n Ng˜c",
 	},
 	-- …Ò ﬁ
 	[2] = {
-		[1] ="«‡¡˙ªÍ”Ò",
-		[2] ="–˛Œ‰ªÍ”Ò",
-		[3] ="∞◊ª¢ªÍ”Ò",
-		[4] ="÷Ï»∏ªÍ”Ò",
-		[5] ="æ≈Œ≤ªÍ”Ò",
+		[1] ="Thanh Long H∞n Ng˜c",
+		[2] ="Huy´n V˚ H∞n Ng˜c",
+		[3] ="B’ch H± H∞n Ng˜c",
+		[4] ="Chu Tﬂæc H∞n Ng˜c",
+		[5] ="Cÿu vÓ H∞n Ng˜c",
 	},
 }
 
@@ -76,7 +76,7 @@ function PetSoul_ZhuanHua_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
 	this:RegisterEvent("PETSOUL_ZHUANHUA_PUTIN_ITEM");
 	this:RegisterEvent("RESUME_ENCHASE_GEM")
-	this:RegisterEvent("PACKAGE_ITEM_CHANGED")			--±≥∞¸÷–ŒÔ∆∑∏ƒ±‰–Ë“™≈–∂œ
+	this:RegisterEvent("PACKAGE_ITEM_CHANGED")			--???????????
 	this:RegisterEvent("OBJECT_CARED_EVENT");
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
@@ -134,7 +134,7 @@ function PetSoul_ZhuanHua_OnEvent(event)
 			return;
 		end
 		
-		--»Áπ˚∫ÕNPCµƒæ‡¿Î¥Û”⁄“ª∂®æ‡¿ÎªÚ’ﬂ±ª…æ≥˝£¨◊‘∂Øπÿ±’
+		--»Áπ˚∫ÕNPCµƒæ‡¿Î¥Û”⁄“ª∂®æ‡¿ÎªÚ†ﬂ±ª…æ≥˝£¨◊‘∂Øπÿ±†
 		if arg1 == "distance" and tonumber( arg2 ) > MAX_OBJ_DISTANCE or arg1 == "destroy" then
 			PetSoul_ZhuanHua_Close()
 		end
@@ -161,14 +161,14 @@ function PetSoul_ZhuanHua_IsCommonPiece(nItemTableIndex)
 	return 0
 end
 
--- uiPos:0~1 ∑≈µΩªÍ”Ò∏Ò; -1 —∞’“ø’œ–µƒªÍ”Ò∏Ò
+-- uiPos:0~1 ∑≈µΩªÍ”Ò∏Ò; -1 —∞†“ø†œ–µƒªÍ”Ò∏Ò
 function PetSoul_ZhuanHua_Update( uiPos, bagPos, bItemChanged )
 
 	if bItemChanged == nil then
 		bItemChanged = 0;
 	end
 			
-	-- —∞’“ø’œ–µƒªÍ”Ò∏Ò
+	-- —∞†“ø†œ–µƒªÍ”Ò∏Ò
 	if uiPos == -1 then
 		if g_PetSoul_ZhuanHua_PetSoulPieceBagIndex[1] < 0 then
 			uiPos = 0;
@@ -226,7 +226,7 @@ function PetSoul_ZhuanHua_Update( uiPos, bagPos, bItemChanged )
 	
 	--ºÏ≤È «∑Òº”À¯
 	if PlayerPackage:IsLock( bagPos ) == 1 then
-		PushDebugMessage("#{SHXT_20211230_65}")	--µ¿æﬂ“—…œÀ¯
+		PushDebugMessage("#{SHXT_20211230_65}")	--?????
 		return
 	end
 	
@@ -335,7 +335,7 @@ end
 
 --=========================================================
 --ø™ ºπÿ–ƒNPC£¨
---‘⁄ø™ ºπÿ–ƒ÷Æ«∞–Ë“™œ»»∑∂®’‚∏ˆΩÁ√Ê «≤ª «“—æ≠”–°∞πÿ–ƒ°±µƒNPC£¨
+--‘⁄ø™ ºπÿ–ƒ÷Æ«∞–Ë“™œ»»∑∂®†‚∏ˆΩÁ√Ê «≤ª «“—æ≠”–°∞πÿ–ƒ°±µƒNPC£¨
 --»Áπ˚”–µƒª∞£¨œ»»°œ˚“—æ≠”–µƒ°∞πÿ–ƒ°±
 --=========================================================
 function PetSoul_ZhuanHua_BeginCareObject( objCaredId )

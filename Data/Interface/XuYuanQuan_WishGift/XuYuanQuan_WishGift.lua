@@ -25,11 +25,11 @@ local g_XuYuanQuan_WishGift_PaoPaoAnimateBK = {}
 function XuYuanQuan_WishGift_PreLoad()
 
 	this:RegisterEvent("UI_COMMAND")
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)		--离开场景
-	this:RegisterEvent("ADJEST_UI_POS",false)				-- 游戏窗口尺寸发生了变化
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)	-- 游戏分辨率发生了变化
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)		--????
+	this:RegisterEvent("ADJEST_UI_POS",false)				-- ???????????
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)	-- ??????????
 
-	this:RegisterEvent("OBJECT_CARED_EVENT");           --某逻辑对象的某些发生改变，用于距离NPC够远则关闭界面
+	this:RegisterEvent("OBJECT_CARED_EVENT");           --????????????,????NPC???????
 	
 end
 --===============================================
@@ -91,7 +91,7 @@ function XuYuanQuan_WishGift_OnEvent(event)
 			return;
 		end
 		
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if arg1 == "distance" and tonumber( arg2 ) > MAX_OBJ_DISTANCE or arg1 == "destroy" then
 			XuYuanQuan_WishGiftn_Close()
 		end
@@ -201,7 +201,7 @@ end
 
 --=========================================================
 --开始关心NPC，
---在开始关心之前需要先确定这个界面是不是已经有“关心”的NPC，
+--在开始关心之前需要先确定犫个界面是不是已经有“关心”的NPC，
 --如果有的话，先取消已经有的“关心”
 --=========================================================
 function XuYuanQuan_WishGift_BeginCareObject( objCaredId )

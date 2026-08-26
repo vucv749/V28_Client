@@ -217,7 +217,7 @@ function HD_SanLianHuan_Update_State()
 	if g_pos_ui == 1 then
 		text = ScriptGlobal_Format("#{JXSLH_130508_16}",tostring(g_BoxList[g_pos_ui].times), tostring(g_BoxList[g_pos_ui].maxTime))
 	else
-		text = "#cfff263½ñÈÕÊ£Óà´ÎÊý£º²»ÏÞ´Î"
+		text = "#cfff263hôm nay còn th×a s¯ l¥n: B¤t HÕn ThÑ"
 	end
 
 	--local text = ScriptGlobal_Format("#{JXSLH_130508_16}",tostring(g_BoxList[g_pos_ui].times), tostring(g_BoxList[g_pos_ui].maxTime))

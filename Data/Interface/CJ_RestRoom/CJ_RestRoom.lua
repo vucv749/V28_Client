@@ -1,4 +1,4 @@
--- 吃鸡玩法 休息室人数、倒计时等展示UI
+-- 吃鸡玩法 休息室人数、倒计时等牴示UI
 -- mini UI打开状态
 local CJ_RestRoom_OpenMiniUIState = 0
 -- 默认位置
@@ -9,16 +9,16 @@ local CJ_RestRoom_CtrlList = nil
 -- 比赛匹配类型
 local CJ_RestRoom_MatchType =
 {
-    single = 1,                 -- 单人模式
-    team = 2,                   -- 组队模式
+    single = 1,                 -- ????
+    team = 2,                   -- ????
 } -- end CJ_RestRoom_MatchType
 
 -- 场景逻辑状态
 local CJ_RestRoom_LogicState =
 {
-    before_act = 2,             -- 逻辑开启 但是活动还未开启
-    in_act = 3,                 -- 活动开启
-    after_act = 4,              -- 活动结束 但是逻辑还未结束
+    before_act = 2,             -- ???? ????????
+    in_act = 3,                 -- ????
+    after_act = 4,              -- ???? ????????
 } -- end CJ_RestRoom_LogicState
 
 
@@ -28,8 +28,8 @@ function CJ_RestRoom_PreLoad()
     this:RegisterEvent("TLCJ_REST_RESTINFOCLOSE", true)
     this:RegisterEvent("TLCJ_REST_RESTINFOUPDATE", true)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end -- end func CJ_RestRoom_PreLoad()
 
 function CJ_RestRoom_OnEvent(event)

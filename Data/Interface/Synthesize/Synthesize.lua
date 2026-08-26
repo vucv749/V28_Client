@@ -81,9 +81,9 @@ local g_tEquipLuckyPointSaveInfo			=
 -- 20502007	7¼¶ÃØÒø
 -- 20502008	8¼¶ÃØÒø
 -- 20501009	3¼¶ÃÞ²¼¡¤¾«Æ·
--- 20501010	3¼¶ÃÞ²¼¡¤ÕéÆ·
+-- 20501010	3¼¶ÃÞ²¼¡¤ éÆ·
 -- 20502013	3¼¶ÃØÒø¡¤¾«Æ·
--- 20502014	3¼¶ÃØÒø¡¤ÕéÆ·
+-- 20502014	3¼¶ÃØÒø¡¤ éÆ·
 -- ×°±¸±£ÐÇºÏ·¨²ÄÁÏ
 local g_tCanAddEquipLuckyPointMat = 
 {
@@ -100,16 +100,16 @@ local g_tCanAddEquipLuckyPointMat =
 	-- 20502007,	--	7¼¶ÃØÒø
 	-- 20502008,	--	8¼¶ÃØÒø
 
-	20501009,		--	3¼¶ÃÞ²¼¡¤¾«Æ·
-	20501010,		--	3¼¶ÃÞ²¼¡¤ÕéÆ·
-	20502013,		--	3¼¶ÃØÒø¡¤¾«Æ·
-	20502014,		--	3¼¶ÃØÒø¡¤ÕéÆ·
+	20501009,		--	3???·??
+	20501010,		--	3???·??
+	20502013,		--	3???·??
+	20502014,		--	3???·??
 }
 
 -- local g_tCanAddEquipLuckyPointMatWithNoBindTips = 
 -- {
--- 	20501010,		--	3¼¶ÃÞ²¼¡¤ÕéÆ·
--- 	20502014,		--	3¼¶ÃØÒø¡¤ÕéÆ·
+-- 	20501010,		--	3¼¶ÃÞ²¼¡¤ éÆ·
+-- 	20502014,		--	3¼¶ÃØÒø¡¤ éÆ·
 -- }
 
 -- ½çÃæµÄÄ¬ÈÏÏà¶ÔÎ»ÖÃ
@@ -189,9 +189,9 @@ function Synthesize_OnLoad()
 	for i=1,200 do
 		SynthesizePucker[i] = 1;
 	end;
-	Ability_Limit[0] = "ÖýÔì"
-	Ability_Limit[1] = "·ìÈÒ"
-	Ability_Limit[2] = "¹¤ÒÕ"
+	Ability_Limit[0] = "Ðúc khuôn"
+	Ability_Limit[1] = "May m£c"
+	Ability_Limit[2] = "Công ngh®"
 
 	ShowBindWin = 1
 
@@ -255,24 +255,24 @@ function Synthesize_OnEvent(event)
 		return;
 	elseif ( event == "UNIT_VIGOR" and tostring(arg0) == "player" and this:IsVisible()) then
 		strName = Player : GetData("VIGOR");
-		Synthesize_CurrentlyEnergy1 : SetText("µ±Ç°»îÁ¦£º"..strName)
+		Synthesize_CurrentlyEnergy1 : SetText("Trß¾c m£t sÑc s¯ng:"..strName)
 		return;
 	elseif ( event == "UNIT_ENERGY" and tostring(arg0) == "player" and this:IsVisible()) then
 		strName = Player : GetData("ENERGY");
-		Synthesize_CurrentlyEnergy2 : SetText("µ±Ç°¾«Á¦£º"..strName)
+		Synthesize_CurrentlyEnergy2 : SetText("Trß¾c m£t tinh lñc:"..strName)
 		return;
 	elseif ( event == "UNIT_ABILITYEXP" and this:IsVisible()) then
 		strName = Player : GetAbilityInfo(Prescr_Ability,"skillexp");
 		local level= Player:GetAbilityInfo(Prescr_Ability,"level");
 		local max_exp
 		if level > 12 or level < 1 then
-			max_exp = "¡Þ"
+			max_exp = "8"
 		else
 			max_exp = LifeAbility : GetLifeAbility_LimitExp(Prescr_Ability,level);
 		end
 
 		strName = Player : GetAbilityInfo(Prescr_Ability,"skillexp");
-		Synthesize_SkilledGrade:SetText("¼¼ÄÜÊìÁ·¶È£º"..strName.."/"..max_exp);
+		Synthesize_SkilledGrade:SetText("KÛ nång thu¥n thøc Ðµ:"..strName.."/"..max_exp);
 		return;
 	elseif ( event == "CHANGE_MAKE_COUNT" ) then
 		Synthesize_MadeAmount : SetText( tonumber(arg0) );
@@ -316,19 +316,19 @@ function Synthesize_UpdateItem()
 
 		if(nMaxAmount > 0) then
 			if(nLevel >0) then
-				szPrescrName = szPrescrName .. "£¨µÈ¼¶"..nLevel.."£© [" .. nMaxAmount .. "]";
+				szPrescrName = szPrescrName .. "(c¤p b§c"..nLevel..") [" .. nMaxAmount .. "]";
 			else
 				szPrescrName = szPrescrName .. "    [" .. nMaxAmount .. "]";
 			end
 		elseif(nMaxAmount < 0) then
 			if(nLevel >0) then
-				szPrescrName = szPrescrName .. "£¨µÈ¼¶"..nLevel.."£© [N/A]";
+				szPrescrName = szPrescrName .. "(c¤p b§c"..nLevel..") [N/A]";
 			else
 				szPrescrName = szPrescrName .. "    [N/A]";
 			end
 		else
 			if(nLevel >0) then
-				szPrescrName = szPrescrName .. "£¨µÈ¼¶"..nLevel.."£©";
+				szPrescrName = szPrescrName .. "(c¤p b§c"..nLevel..")";
 			else
 				szPrescrName = szPrescrName ;
 			end
@@ -352,23 +352,23 @@ function Synthesize_Update()
 
 	strName = Player : GetAbilityInfo(Prescr_Ability,"level");
 	local level = tonumber(strName);
-	Synthesize_Level:SetText("¼¼ÄÜµÈ¼¶£º"..strName);
+	Synthesize_Level:SetText("KÛ nång c¤p b§c:"..strName);
 
 	local max_exp;
 	if level > 11 or level < 1 then
-		max_exp = "¡Þ"
+		max_exp = "8"
 	else
 		max_exp = LifeAbility : GetLifeAbility_LimitExp(Prescr_Ability,level);
 	end
 
 	strName = Player : GetAbilityInfo(Prescr_Ability,"skillexp");
-	Synthesize_SkilledGrade:SetText("¼¼ÄÜÊìÁ·¶È£º"..strName.."/"..max_exp);
+	Synthesize_SkilledGrade:SetText("KÛ nång thu¥n thøc Ðµ:"..strName.."/"..max_exp);
 
 	strName = Player : GetData("VIGOR");
-	Synthesize_CurrentlyEnergy1 : SetText("µ±Ç°»îÁ¦£º"..strName)
+	Synthesize_CurrentlyEnergy1 : SetText("Trß¾c m£t sÑc s¯ng:"..strName)
 
 	strName = Player : GetData("ENERGY");
-	Synthesize_CurrentlyEnergy2 : SetText("µ±Ç°¾«Á¦£º"..strName)
+	Synthesize_CurrentlyEnergy2 : SetText("Trß¾c m£t tinh lñc:"..strName)
 
 	Synthesize_MadeAmount : SetText( tonumber(cur_count));
 
@@ -406,21 +406,21 @@ function Synthesize_Update()
 
 					if(nMaxAmount > 0) then
 						if(nLevel >0) then
-							szPrescrName = szPrescrName .. "£¨µÈ¼¶"..nLevel.."£© [" .. nMaxAmount .. "]";
+							szPrescrName = szPrescrName .. "(c¤p b§c"..nLevel..") [" .. nMaxAmount .. "]";
 						else
 							szPrescrName = szPrescrName .. "    [" .. nMaxAmount .. "]";
 						end
 					elseif(nMaxAmount < 0) then
 						if(nLevel >0) then
-							szPrescrName = szPrescrName .. "£¨µÈ¼¶"..nLevel.."£© [N/A]";
+							szPrescrName = szPrescrName .. "(c¤p b§c"..nLevel..") [N/A]";
 						else
 							szPrescrName = szPrescrName .. "    [N/A]";
 						end
 					else
 						if(nLevel >0) then
-							szPrescrName = szPrescrName .. "£¨µÈ¼¶"..nLevel.."£©";
+							szPrescrName = szPrescrName .. "(c¤p b§c"..nLevel..")";
 						else
-							szPrescrName = szPrescrName ;--¡Þ
+							szPrescrName = szPrescrName ;--8
 						end
 					end;
 
@@ -481,13 +481,13 @@ function Synthesize_HideCtrlOnNoSelect()
 		Material_Name[i] : SetText("");
 	end
 
-	Synthesize_Item : SetProperty("ShortImage","");   --ÉèÖÃÎªÎÞÍ¼±ê
+	Synthesize_Item : SetProperty("ShortImage","");   --??????
 	Synthesize_Item_Name_Text : SetText("");
 	Synthesize_Amount : SetText("");
 end
 
 -- !!!reloadscript =Synthesize
--- ÕûÌåÏÔÊ¾ÊÖ¹¤×°±¸±£ÐÇÐÅÏ¢
+--  ûÌåÏÔÊ¾ÊÖ¹¤×°±¸±£ÐÇÐÅÏ¢
 function Synthesize_ShowEquipMakeNewLuckyInfo(nGetItemID)
 	
 	local nEquipPoint = DataPool:LuaFnGetEquipPointByTableIndex(nGetItemID)
@@ -535,7 +535,7 @@ function Synthesize_ShowEquipMakeNewLuckyInfo(nGetItemID)
 
 end
 
--- ÕûÌåÒþ²ØÊÖ¹¤×°±¸±£ÐÇÐÅÏ¢
+--  ûÌåÒþ²ØÊÖ¹¤×°±¸±£ÐÇÐÅÏ¢
 function Synthesize_HideEquipMakeNewLuckyInfo()
 	-- PushDebugMessage("Synthesize_HideEquipMakeNewLuckyInfo")
 	Synthesize_SpecialMaterial_SkilledAllNum : Hide()
@@ -553,7 +553,7 @@ end
 
 function Synthesize_ListBox_Selected()
 
-	-- ÕûÌåÒþ²ØÊÖ¹¤×°±¸±£ÐÇÐÅÏ¢
+	--  ûÌåÒþ²ØÊÖ¹¤×°±¸±£ÐÇÐÅÏ¢
 	Synthesize_HideEquipMakeNewLuckyInfo()
 
 	local nSelIndex = Synthesize_Item_List:GetFirstSelectItem();
@@ -635,29 +635,29 @@ function Synthesize_ListBox_Selected()
 	end
 
 	--4,5,6
-	--ÖýÔì²Ã·ì¹¤ÒÕ
+	--ÖýÔì²Ã·ì¹¤Ò 
 	--¾«Ìú£¬ÃÞ²¼£¬ÃØÒø
 	--¾«Á¶ - ÖýÔì - 46
 	--¾«ÖÆ - ·ìÈÒ - 47
-	--¾«¹¤ - ¹¤ÒÕ - 48
+	--¾«¹¤ - ¹¤Ò  - 48
 
 	Synthesize_SpecialMaterialIcon_Frame : Show();
 	Synthesize_SpecialMaterial_Text : Show();
 	if  Prescr_Ability == 46 then
-		Synthesize_SpecialMaterial_WarningText : SetText("#cE6BA00ÇëÔÚÓÒ±ß·ÅÈë´òÔì²ÄÁÏ#cFFFF00¾«Ìú#cE6BA00£¬ÕâÀàÌØÊâ²ÄÁÏ¿ÉÒÔÌáÉý×°±¸µÄÆ·ÖÊ")
-		Synthesize_SpecialMaterial : SetToolTip("¾«Ìú")
-		Synthesize_SpecialMaterial:SetProperty( "DragAcceptName", "N1" );  --´ËÊ±´ò¿ª¾«Á¶½çÃæÁË
+		Synthesize_SpecialMaterial_WarningText : SetText("#cE6BA00Thïnh bên phäi Biên ð¬ vào tÕo ra tài li®u#cFFFF00Tinh Thiªt#cE6BA00, loÕi này ð£c thù tài li®u có th¬ tång lên trang b¸ Ðích ph¦m ch¤t")
+		Synthesize_SpecialMaterial : SetToolTip("Tinh Thiªt")
+		Synthesize_SpecialMaterial:SetProperty( "DragAcceptName", "N1" );  --?????????
 	elseif Prescr_Ability == 47 then
-		Synthesize_SpecialMaterial_WarningText : SetText("#cE6BA00ÇëÔÚÓÒ±ß·ÅÈë´òÔì²ÄÁÏ#cFFFF00ÃÞ²¼#cE6BA00£¬ÕâÀàÌØÊâ²ÄÁÏ¿ÉÒÔÌáÉý×°±¸µÄÆ·ÖÊ")
-		Synthesize_SpecialMaterial : SetToolTip("ÃÞ²¼")
-		Synthesize_SpecialMaterial:SetProperty( "DragAcceptName", "N2" ); --´ËÊ±´ò¿ª¾«ÖÆ½çÃæÁË
-		-- ÕûÌåÏÔÊ¾ÊÖ¹¤×°±¸±£ÐÇÐÅÏ¢
+		Synthesize_SpecialMaterial_WarningText : SetText("#cE6BA00Thïnh bên phäi Biên ð¬ vào tÕo ra tài li®u#cFFFF00Miên B¯#cE6BA00, loÕi này ð£c thù tài li®u có th¬ tång lên trang b¸ Ðích ph¦m ch¤t")
+		Synthesize_SpecialMaterial : SetToolTip("Miên B¯")
+		Synthesize_SpecialMaterial:SetProperty( "DragAcceptName", "N2" ); --?????????
+		--  ûÌåÏÔÊ¾ÊÖ¹¤×°±¸±£ÐÇÐÅÏ¢
 		Synthesize_ShowEquipMakeNewLuckyInfo(resultid)
 	elseif Prescr_Ability == 48 then
-		Synthesize_SpecialMaterial_WarningText : SetText("#cE6BA00ÇëÔÚÓÒ±ß·ÅÈë´òÔì²ÄÁÏ#cFFFF00ÃØÒø#cE6BA00£¬ÕâÀàÌØÊâ²ÄÁÏ¿ÉÒÔÌáÉý×°±¸µÄÆ·ÖÊ")
-		Synthesize_SpecialMaterial : SetToolTip("ÃØÒø")
-		Synthesize_SpecialMaterial:SetProperty( "DragAcceptName", "N3" ); --´ËÊ±´ò¿ª¾«¹¤½çÃæÁË
-		-- ÕûÌåÏÔÊ¾ÊÖ¹¤×°±¸±£ÐÇÐÅÏ¢
+		Synthesize_SpecialMaterial_WarningText : SetText("#cE6BA00Thïnh bên phäi Biên ð¬ vào tÕo ra tài li®u#cFFFF00Bí Ngân#cE6BA00, loÕi này ð£c thù tài li®u có th¬ tång lên trang b¸ Ðích ph¦m ch¤t")
+		Synthesize_SpecialMaterial : SetToolTip("Bí Ngân")
+		Synthesize_SpecialMaterial:SetProperty( "DragAcceptName", "N3" ); --?????????
+		--  ûÌåÏÔÊ¾ÊÖ¹¤×°±¸±£ÐÇÐÅÏ¢
 		Synthesize_ShowEquipMakeNewLuckyInfo(resultid)
 	else
 		Synthesize_SpecialMaterial_Text : Hide();
@@ -678,20 +678,20 @@ function Synthesize_ListBox_Selected()
 	local Consume_Attr = LifeAbility : GetPrescr_Consume_ContriAttr(nSelIndex);
 	local strName = ""
 	if Consume_Vigor >= 0 then
-		strName = strName .. "#r»ù´¡»îÁ¦ÏûºÄ£º".. tostring(Consume_Vigor);
+		strName = strName .. "#rtrø cµt sÑc s¯ng tiêu hao:".. tostring(Consume_Vigor);
 	end
 
 	if Consume_Energy >= 0 then
-		strName = strName .. "#rÏûºÄ¾«Á¦£º".. tostring(Consume_Energy);
+		strName = strName .. "#rtiêu hao tinh lñc:".. tostring(Consume_Energy);
 	end
 
 	if Consume_Attr >= 0 then
-		strName = strName .. "#rÏûºÄÃÅÅÉ¹±Ï×¶È£º".. tostring(Consume_Attr);
+		strName = strName .. "#rtiêu hao môn phái c¯ng hiªn Ðµ:".. tostring(Consume_Attr);
 	end
 
 	if resultnum == -1 or resultid == -1 then
-		Synthesize_Item : SetToolTip(tip_name.."#rÀàÐÍ£º"..tip_type..strName);
-		Synthesize_Amount:SetToolTip(tip_name.."#rÀàÐÍ£º"..tip_type..strName);
+		Synthesize_Item : SetToolTip(tip_name.."#rloÕi hình:"..tip_type..strName);
+		Synthesize_Amount:SetToolTip(tip_name.."#rloÕi hình:"..tip_type..strName);
 	end
 
 	local Material_number = LifeAbility : GetPrescr_Material_Number(nSelIndex);
@@ -719,7 +719,7 @@ function Synthesize_ListBox_Selected()
 			Material_Icon[i] : Show();
 			Material_Name[i] : SetText(name);
 			if holdnum > 99 then
-				Material_Num[i]  : SetText("#e010101¡Þ/" .. stuffnum);
+				Material_Num[i]  : SetText("#e0101018/" .. stuffnum);
 			else
 				Material_Num[i]  : SetText("#e010101" .. holdnum .. "/" .."#e010101" .. stuffnum);
 			end
@@ -757,15 +757,15 @@ function Synthesize_ListBox_Selected()
 	end
 
 	-- ¡°ÌØÊâ²ÄÁÏ¡±µÄ´¦Àí
-	-- ÓÉÓÚÏÖÔÚconfig.txt±íÖÐµÄÊý¾ÝÒÑ¾­±äµÄ²»¿ÉÐÅÈÎ£¨ºÜ¶à¶«Î÷¶¼ÊÇÒòÎªÔÚÒÑ¾­¶¨ºÃµÄ¹æÔòÉÏ£¬²ß»®Ìí´í±í£©£¬ÕâÀïÐ´ËÀÌØÀý
+	-- ÓÉÓÚÏÖÔÚconfig.txt±íÖÐµÄÊý¾ÝÒÑ¾­±äµÄ²»¿ÉÐÅÈÎ£¨ºÜ¶à¶«Î÷¶¼ÊÇÒòÎªÔÚÒÑ¾­¶¨ºÃµÄ¹æÔòÉÏ£¬²ß»®Ìí´í±í£©£¬ âÀïÐ´ËÀÌØÀý
 	-- Ö»ÓÐ¡°¾«Á¶¡±¡¢¡°¾«ÖÆ¡±¡¢¡°¾«¹¤¡±Ê±ºò£¬²Å´Ó±íÀïÅÐ¶ÏÊÇ·ñÐèÒªÌØÊâ²ÄÁÏ£¬²»ÔÙµ¥´¿ÒÀ¿¿±íÀ´ÅÐ¶Ï
 	if Prescr_Ability == 46 or Prescr_Ability == 47 or Prescr_Ability == 48 then
-		local NeedSpecial = LifeAbility : GetPrescr_Item_IsNeedSpecial( nSelIndex ) --È¡µÃÊÇ·ñÐèÒªÌØÊâ²ÄÁÏ
+		local NeedSpecial = LifeAbility : GetPrescr_Item_IsNeedSpecial( nSelIndex ) --??????????
 		-- 0£º¾«Ìú
 		-- 1£ºÃÞ²¼
 		-- 2£ºÃØÒø
 		if NeedSpecial >= 0 then
-			local SItem = Synthesize_SpecialMaterial:GetActionItem() --¼ì²â¿òÀïÓÐÃ»ÓÐ·ÅÈëÌØÊâ²ÄÁÏ
+			local SItem = Synthesize_SpecialMaterial:GetActionItem() --?????????????
 			if SItem > 0 and nMaxAmount > 0 then
 				Synthesize_Make : Enable();
 			else
@@ -836,7 +836,7 @@ function Synthesize_Do_Clicked()
 		local Item_Medindex = PlayerPackage : GetItemSubTableIndex(Synthesize_Special_Item,3)
 		if Item_Medindex == 0 then
 			local Item_ID = PlayerPackage : GetItemTableIndex(Synthesize_Special_Item);
-			PushDebugMessage("#{_ITEM".. Item_ID .."}²»ÄÜÓÃÓÚºÏ³É¡£")
+			PushDebugMessage("#{_ITEM".. Item_ID .."}không th¬ dùng Vu hþp thành.")
 			return;
 		end
 	end
@@ -851,9 +851,9 @@ function Synthesize_Do_Clicked()
 
 	--ÅÐ¶Ï°ó¶¨
 	if Prescr_Ability == 46 or Prescr_Ability == 47 or Prescr_Ability == 48 then
-		local NeedSpecial = LifeAbility : GetPrescr_Item_IsNeedSpecial( nSelIndex ) --È¡µÃÊÇ·ñÐèÒªÌØÊâ²ÄÁÏ
+		local NeedSpecial = LifeAbility : GetPrescr_Item_IsNeedSpecial( nSelIndex ) --??????????
 		if NeedSpecial >= 0 then
-			local SItem = Synthesize_SpecialMaterial:GetActionItem() --¼ì²â¿òÀïÓÐÃ»ÓÐ·ÅÈëÌØÊâ²ÄÁÏ
+			local SItem = Synthesize_SpecialMaterial:GetActionItem() --?????????????
 			if SItem > 0 and nMaxAmount > 0 then
 				--ÅÐ¶ÏÊÇ·ñ°ó¶¨£¬ÆäËûµÄ¼ì²âÒÑ¾­×öÍê
 				if(TheLastItem ~= Synthesize_Special_Item) then
@@ -899,7 +899,7 @@ function Synthesize_Do_Clicked()
 	end
 
 	if nMake_Count > nMaxAmount then
-		PushDebugMessage("²ÄÁÏ²»×ã£¡")
+		PushDebugMessage("Tài li®u không ðü!")
 		return;
 	end
 
@@ -912,7 +912,7 @@ function Synthesize_Do_All_Clicked()
 		local Item_Medindex = PlayerPackage : GetItemSubTableIndex(Synthesize_Special_Item,3)
 		if Item_Medindex == 0 then
 			local Item_ID = PlayerPackage : GetItemTableIndex(Synthesize_Special_Item);
-			PushDebugMessage("#{_ITEM".. Item_ID .."}²»ÄÜÓÃÓÚºÏ³É¡£")
+			PushDebugMessage("#{_ITEM".. Item_ID .."}không th¬ dùng Vu hþp thành.")
 			return
 		end
 	end
@@ -1016,7 +1016,7 @@ function Update_Synthesize_Item(Item_index)
 					local Item_ID = PlayerPackage : GetItemTableIndex(index)
 					local szName = LifeAbility:GetPrescr_Material(Item_ID)
 
-					PushDebugMessage("#B"..szName.."#WÖ»ÄÜÓÃÓÚ#B"..Ability_Limit[Item_Type].."#W¡£")
+					PushDebugMessage("#B"..szName.."#WcHï có th¬ dùng cho#B"..Ability_Limit[Item_Type].."#W.")
 					return
 			end
 

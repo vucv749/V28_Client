@@ -200,7 +200,7 @@ function Talent_Share_CareObj()
 	if(tonumber(arg0) ~= g_objCareID) then
 		return;
 	end
-	--如果和NPC的距离大于一定距离或者被删除，自动关闭
+	--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 	if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 		--取消关心
 		Talent_Share_StopCareObject(g_objCareID)
@@ -327,7 +327,7 @@ function Talent_Share_ShowLearnTree(menpai,secttype)
 		end
 	end
 
-	--工具函数，是否有这个value
+	--工具函数，是否有犫个value
 	local hasValue = function(list, value)
 
 		for i,v in ipairs(list) do
@@ -367,7 +367,7 @@ function Talent_Share_ShowLearnTree(menpai,secttype)
 		
 		Talent_Share_produceBoard(light,1)
 		Talent_Share_produceBoard(dark,0)	
-		return --直接返回
+		return --????
 	end
 	--构建全表
 	for i,v in ipairs(g_Talent_Share_subSchema) do

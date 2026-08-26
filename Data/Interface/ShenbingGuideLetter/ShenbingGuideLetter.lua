@@ -1,35 +1,35 @@
 --ShenbingGuideLetter½çÃæ
 local g_ShenbingGuideLetter_Frame_UnifiedXPosition;
 local g_ShenbingGuideLetter_Frame_UnifiedYPosition;
-local ShenbingGuideLetter_g_zidonxunlu1 = 89027202 --Éñ±ø¸±ÎäÆ÷ ×Ô¶¯Ñ°Â·
+local ShenbingGuideLetter_g_zidonxunlu1 = 89027202 --????? ????
 local ShenbingGuideLetter_g_npc1 ={
 	posX = 228,
 	posZ = 103,
 	sceneid = 2,
-	Name = "Å·Ò±°²",
+	Name = "Âu Dã An",
 }
 local ShenbingGuideLetter_g_npc2 ={
 	posX = 245,
 	posZ = 59,
 	sceneid = 2,
-	Name = "Ïô·å",
+	Name = "Tiêu Phong",
 }
 local ShenbingGuideLetter_g_npc3 ={
 	posX = 245,
 	posZ = 56,
 	sceneid = 2,
-	Name = "É¨µØÉñÉ®",
+	Name = "Täo Ğ¸a Th¥n Tång",
 }
-local ShenbingGuideLetter_g_OnpenUI = 89027302 --¿ì½İÂ·¿Ú´ò¿ª´Ë½çÃæ
-local ShenbingGuideLetter_g_MF1 = 955 --Òıµ¼ÈÎÎñÒ»
-local ShenbingGuideLetter_g_MF2 = 956 --Òıµ¼ÈÎÎñ¶ş
-local ShenbingGuideLetter_g_ShenbingJuqingMissionId = 2220 --Éñ±ø¾çÇéÈÎÎñ
-local ShenbingGuideLetter_g_curYe = 1 --1ÊÇÉñ±øÒıµ¼ÈÎÎñ 2ÊÇÉñ±ø¾çÇéÈÎÎñ
-local ShenbingGuideLetter_g_isRedPoint1 = 0 --Éñ±ø¸±ÎäÆ÷Òıµ¼ÈÎÎñÊÇ·ñÏÔÊ¾ºìµã
-local ShenbingGuideLetter_g_isRedPoint2 = 0 --Éñ±ø¾çÇéÈÎÎñÊÇ·ñÏÔÊ¾ºìµã
-local ShenbingGuideLetter_g_isFinish7Mission = 0 --ÊÇ·ñÍê³ÉÆß¸öÒıµ¼ÈÎÎñ
-local ShenbingGuideLetter_g_isFinishYD1 = 0 --ÊÇ·ñÍê³ÉÒıµ¼ÈÎÎñÒ»
-local ShenbingGuideLetter_g_isFinishJQ1 = 0 --ÊÇ·ñÍê³É¾çÇéÈÎÎñÒ»
+local ShenbingGuideLetter_g_OnpenUI = 89027302 --?????????
+local ShenbingGuideLetter_g_MF1 = 955 --?????
+local ShenbingGuideLetter_g_MF2 = 956 --?????
+local ShenbingGuideLetter_g_ShenbingJuqingMissionId = 2220 --??????
+local ShenbingGuideLetter_g_curYe = 1 --1??????? 2???????
+local ShenbingGuideLetter_g_isRedPoint1 = 0 --???????????????
+local ShenbingGuideLetter_g_isRedPoint2 = 0 --????????????
+local ShenbingGuideLetter_g_isFinish7Mission = 0 --??????????
+local ShenbingGuideLetter_g_isFinishYD1 = 0 --?????????
+local ShenbingGuideLetter_g_isFinishJQ1 = 0 --?????????
 local ShenbingGuideLetter_g_isLonMen = 0
 
 
@@ -62,7 +62,7 @@ function ShenbingGuideLetter_OnEvent(event)
 	if ( event == "UI_COMMAND" and tonumber(arg0) == ShenbingGuideLetter_g_OnpenUI) then
 		local isLonmen = Get_XParam_INT(0)
 		ShenbingGuideLetter_g_isLonMen = isLonmen
-		if isLonmen == 1 then--ÊÇÁúÃÅ µ½Ê±ºò²âÊÔÌØÊâ¸üĞÂ·şÎñÆ÷½Å±¾´«1
+		if isLonmen == 1 then--??? ???????????????1
 			ShenbingGuideLetter_Btn2:Disable()
 		else
 			ShenbingGuideLetter_Btn2:Enable()
@@ -71,7 +71,7 @@ function ShenbingGuideLetter_OnEvent(event)
 		ShenbingGuideLetter_g_isFinishYD1 = Get_XParam_INT(2)
 		ShenbingGuideLetter_g_isFinishJQ1 = Get_XParam_INT(3)
 		this:Show();
-		ShenbingGuideLetter_g_isRedPoint1 = 0--ÕâÀïÊÇµã»÷18ºÅ¿ì½İÈë¿Ú£¬Á½¸öºìµã¶¼¹Ø±Õ
+		ShenbingGuideLetter_g_isRedPoint1 = 0--?????18?????,???????
 		ShenbingGuideLetter_g_isRedPoint2 = 0
 		ShenbingGuideLetter_Update()
 		ShenbingGuideLetter_RedPoint()
@@ -80,18 +80,18 @@ function ShenbingGuideLetter_OnEvent(event)
 		if xunluOrRedPoint == 1 then
 			ShenbingGuideLetter_AutoRun()
 		elseif xunluOrRedPoint == 0 then
-			ShenbingGuideLetter_g_isRedPoint1 = 1 --Éñ±ø¸±ÎäÆ÷Òıµ¼ÈÎÎñºìµã¿ª
+			ShenbingGuideLetter_g_isRedPoint1 = 1 --????????????
 			ShenbingGuideLetter_RedPoint()
 		elseif xunluOrRedPoint == 2 then
-			ShenbingGuideLetter_g_isRedPoint1 = 0 --Éñ±ø¸±ÎäÆ÷Òıµ¼ÈÎÎñºìµã¹Ø
+			ShenbingGuideLetter_g_isRedPoint1 = 0 --????????????
 			ShenbingGuideLetter_RedPoint()
 		end
-	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 99839601) then--Éñ±ø¾çÇéÈÎÎñÓÃ
+	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 99839601) then--???????
 		local param = Get_XParam_INT(0)
 		local nOpen = Get_XParam_INT(1)
 		local nRedPoint = Get_XParam_INT(2)		
 		if param == 0 then
-			--¹Ø±Õ½çÃæ
+			--¹Ø± ½çÃæ
 			ShenbingGuideLetter_OnHiden()
 		else
 			if nRedPoint == 1 then
@@ -101,10 +101,10 @@ function ShenbingGuideLetter_OnEvent(event)
 				ShenbingGuideLetter_g_isRedPoint2 = 0
 				ShenbingGuideLetter_RedPoint()	
 			end
-			if param == 1 then--´ò¿ª½çÃæ
+			if param == 1 then--????
 				this:Show()
 				ShenbingGuideLetter_Update()
-			elseif param == 2 then--×Ô¶¯Ñ°Â·£ºÕÒnpc
+			elseif param == 2 then--????:?npc
 				ShenbingGuideLetter_MengQianChenGoToFindNpc()
 			elseif param == 3 then
 			end
@@ -115,7 +115,7 @@ function ShenbingGuideLetter_OnEvent(event)
 		ShenbingGuideLetter_UpdateUIPos()
 	end
 end
---¹Ø±Õ½çÃæ
+--¹Ø± ½çÃæ
 function ShenbingGuideLetter_OnHiden()
 	ShenbingGuideLetter_g_curYe = 1
 	ShenbingGuideLetter_g_isRedPoint1=0
@@ -169,7 +169,7 @@ function ShenbingGuideLetter_Update()
 		--ÏÔÊ¾Éñ±ø¾çÇéÈÎÎñÒıµ¼½çÃæ
 		ShenbingGuideLetter_background1:SetProperty("Image","set:ShenbingGuide image:Letter_sds");
 		ShenbingGuideLetter_QianWang2:Show()
-		if ShenbingGuideLetter_g_isLonMen == 1 then--ÔÚÁúÃÅÉÏ£¬²¢ÇÒÍê³ÉÁËÒıµ¼ÈÎÎñÒ»
+		if ShenbingGuideLetter_g_isLonMen == 1 then--????,??????????
 			ShenbingGuideLetter_Btn2:SetCheck(0)
 			ShenbingGuideLetter_Btn2:Disable()
 			ShenbingGuideLetter_QianWang2:Hide()
@@ -181,7 +181,7 @@ end
 --Ë¢ĞÂºìµã
 function ShenbingGuideLetter_RedPoint()
 	--ºìµã
-	if ShenbingGuideLetter_g_isRedPoint2 == 1 or ShenbingGuideLetter_g_isRedPoint1 == 1 then--Á½¸öÓĞÒ»¸öÂú×ãºìµãĞèÇó¾Í³öºìµã
+	if ShenbingGuideLetter_g_isRedPoint2 == 1 or ShenbingGuideLetter_g_isRedPoint1 == 1 then--???????????????
 		Lua_ShowQuickEnterPointTip(18, 1)
 	else
 		Lua_ShowQuickEnterPointTip(18, 0)
@@ -213,8 +213,8 @@ function ShenbingGuideLetter_MengQianChenClicked()
 		Set_XSCRIPT_ParamCount(0);
 	Send_XSCRIPT();
 end
---Éñ±ø¾çÇéÈÎÎñÒıµ¼ÏìÓ¦£ºÍ¨¹ıserverÅĞ¶Ï£¬¿ÉÒÔÑ°Â·ÕÒnpc
+--Éñ±ø¾çÇéÈÎÎñÒıµ¼ÏìÓ¦£ºÍ¨¹ıserverÅĞ¶Ï£¬¿ÉÒÔÑ°Â· Ònpc
 function ShenbingGuideLetter_MengQianChenGoToFindNpc()
-	AutoRuntoTargetExWithName(277, 151, 3, "Ïô·å")
+	AutoRuntoTargetExWithName(277, 151, 3, "Tiêu Phong")
 	ShenbingGuideLetter_OnHiden()
 end

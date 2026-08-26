@@ -26,13 +26,13 @@ local g_HerosReturns_Shop_HlLevelIamge={
 	[3] = "#{HLYH_220613_52}",
 }
 
---预加载函数，可以而且只能在这里注册脚本关心的事件
+--预加载函数，可以而且只能在犫里注册脚本关心的事件
 function HerosReturns_Shop_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
 
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--???????
 end
 
 --加载窗口的时候调用的函数，加载窗口时调用一次
@@ -303,10 +303,10 @@ function HerosReturns_Shop_FenYe_Clicked(index)
 	end
 	
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "OnOpenUI" ); 		-- 脚本号
-		Set_XSCRIPT_ScriptID( 808110 );						-- 脚本编号
+		Set_XSCRIPT_Function_Name( "OnOpenUI" ); 		-- ???
+		Set_XSCRIPT_ScriptID( 808110 );						-- ????
 		Set_XSCRIPT_Parameter(0, index)
-		Set_XSCRIPT_ParamCount( 1 );						-- 参数个数
+		Set_XSCRIPT_ParamCount( 1 );						-- ????
 	Send_XSCRIPT()
 	
 	

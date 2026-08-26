@@ -78,11 +78,11 @@ function YanMenMeng_MengYan_Show(nNightmare,nNightmareMax,nNightTick)
 	--PushDebugMessage("test UI YanMenMeng_MengYan_ShowTime nNightTick="..nNightTick)
 	if nNightTick <= 0 then
 		--特效界面
-		YanMenMeng_MengYan_info:Hide()--倒计时
+		YanMenMeng_MengYan_info:Hide()--?????
 		YanMenMeng_MengYan_MengYanTime:Hide()
 	end
 	--%s0/300
-	YanMenMeng_MengYan_info2:Show()--积蓄中
+	YanMenMeng_MengYan_info2:Show()--?????
 	YanMenMeng_MengYan_Text2:SetText(ScriptGlobal_Format("#{YMMJ_230626_60}",nNightmare,nNightmareMax))
 	YanMenMeng_MengYan_FeelGoodProgress:SetProgress(nNightmare, nNightmareMax)
 	this:Show()
@@ -98,8 +98,8 @@ function YanMenMeng_MengYan_ShowTime(nNightmare,nNightmareMax,nNightTick)
 		--特效界面
 		YanMenMeng_MengYan_MengYanTime:Show()
 		--梦魇ing
-		YanMenMeng_MengYan_info2:Hide()--积蓄中
-		YanMenMeng_MengYan_info:Show()--倒计时
+		YanMenMeng_MengYan_info2:Hide()--?????
+		YanMenMeng_MengYan_info:Show()--?????
 		--%s0：%s1
 		if nNightTick > 0 then
 			YanMenMeng_MengYan_Time:SetProperty("Timer", nNightTick)
@@ -125,6 +125,6 @@ end
 function YanMenMeng_MengYan_OnTimerEnd()
 	--特效界面
 	YanMenMeng_MengYan_MengYanTime:Hide()
-	YanMenMeng_MengYan_info2:Show()--积蓄中
-	YanMenMeng_MengYan_info:Hide()--倒计时
+	YanMenMeng_MengYan_info2:Show()--?????
+	YanMenMeng_MengYan_info:Hide()--?????
 end

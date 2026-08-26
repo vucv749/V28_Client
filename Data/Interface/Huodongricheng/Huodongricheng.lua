@@ -1,8 +1,8 @@
-local	campaign_today = 0	--µ±ÌìËùÓÐ»î¶¯
-local	campaign_curDaily = 1	--Ä¿Ç°ÈÕ³£»î¶¯
-local	campaign_other	=2	--µ±ÌìËùÓÐÆäËû»î¶¯
-local	campaign_daily	=3	--µ±ÌìËùÓÐÈÕ³£»î¶¯
-local	campaign_tomorrowOther = 4 --Ã÷ÌìµÄÆäËû»î¶¯
+local	campaign_today = 0	--??????
+local	campaign_curDaily = 1	--??????
+local	campaign_other	=2	--????????
+local	campaign_daily	=3	--????????
+local	campaign_tomorrowOther = 4 --???????
 
 --½çÃæÓÐÐ§Ê±¼ä£¨Ò»µ©Ê±¼ä²»Í¬£¬ËùÓÐµÄ¶«Î÷¶¼ÒªË¢ÐÂ£©
 local CurYear =0 ;
@@ -24,9 +24,9 @@ local week_days = {};
 
 local g_CurCampaignCtl = {}
 
-local numToCh = {"Áã","Ò»","¶þ","Èý","ËÄ","Îå","Áù","Æß","°Ë","¾Å","Ê®"}
+local numToCh = {"Linh","Mµt","Nh¸","Tam","TÑ","Ngû","Løc","Bäy","Bát","CØu","Th§p"}
 
---µ±Ç°Ñ¡ÔñµÄ»î¶¯ÈÕÆÚ
+--µ±Ç°Ñ¡ÔñµÄ»î¶¯È ÆÚ
 local cur_select_date = 1;
 local Current = 1;
 
@@ -87,13 +87,13 @@ function HuoDongRiCheng_OnLoad()
 		special_campaign_Actionbtn[i]:SetProperty("Empty","0");
 	end
 
-	week_days[1] = "ÈÕ";
-	week_days[2] = "Ò»";
-	week_days[3] = "¶þ";
-	week_days[4] = "Èý";
-	week_days[5] = "ËÄ";
-	week_days[6] = "Îå";
-	week_days[7] = "Áù";
+	week_days[1] = "Ngày";
+	week_days[2] = "Mµt";
+	week_days[3] = "Nh¸";
+	week_days[4] = "Tam";
+	week_days[5] = "TÑ";
+	week_days[6] = "Ngû";
+	week_days[7] = "Løc";
 
 	g_CurCampaignCtl = 	{
 					{lableTime = HuoDongRiCheng_Text7, txtTime = HuoDongRiCheng_Text7_1,lableName = HuoDongRiCheng_Text8, txtName = HuoDongRiCheng_Text8_1,lableDesc = HuoDongRiCheng_Text9, txtDesc = HuoDongRiCheng_Text9_1},
@@ -163,7 +163,7 @@ function InitTomorrowOtherCampaign()
 			AxTrace(0, 0, "EnumCampaign(): Icon = "..icon);
 			if(icon~=-1)then
 				special_campaign_btn[i+1]:SetImage(icon);
-				local str = "Ê±¼ä:";
+				local str = "Th.Gian:";
 				local strTime = "";
 				local strEnd = EnumCampaign(tonumber(campaign_tomorrowOther),i,"endtime");
 				if(strEnd ~= -1) then
@@ -178,10 +178,10 @@ function InitTomorrowOtherCampaign()
 					str = str..strTime;
 				end
 				if(strHuodong and  strHuodong ~="")then
-					str = str.."#r»î¶¯:"..strHuodong;
+					str = str.."#rhoÕt ðµng:"..strHuodong;
 				end
 				if(strDesc and  strDesc ~="")then
-					str = str.."#rÏà¹Ø:"..strDesc;
+					str = str.."#rtß½ng quan:"..strDesc;
 				end
 				if(strAddDesc and  strAddDesc ~="")then
 					str = str.."#r     "..strAddDesc;
@@ -192,11 +192,11 @@ function InitTomorrowOtherCampaign()
 			end
 		end
 	else
-		--ÏÔÊ¾Ò»ÕÅÐÝÏÐÍ¼Æ¬
+		--ÏÔÊ¾Ò» ÅÐÝÏÐÍ¼Æ¬
 		special_campaign_btn[1]:SetImage(idle_img);
 		special_campaign_btn[1]:Show();
 		special_campaign_Actionbtn[1]:Show();
-		special_campaign_btn[1]:SetToolTip("Ã÷ÈÕÎÞÌØÊâ»î¶¯");
+		special_campaign_btn[1]:SetToolTip("Ngày mai không có hoÕt ðµng");
 	end
 end
 
@@ -210,7 +210,7 @@ function InitCurOtherCampain()
 			local icon = EnumCampaign(tonumber(campaign_other),i,"icon");
 			if(icon~=-1)then
 				special_campaign_btn[i+1]:SetImage(icon);
-				local str = "Ê±¼ä:";
+				local str = "Th.Gian:";
 				local strTime = "";
 				local strEnd = EnumCampaign(tonumber(campaign_other),i,"endtime");
 				if(strEnd ~= -1) then
@@ -225,10 +225,10 @@ function InitCurOtherCampain()
 					str = str..strTime;
 				end
 				if(strHuodong and  strHuodong ~="")then
-					str = str.."#r»î¶¯:"..strHuodong;
+					str = str.."#rhoÕt ðµng:"..strHuodong;
 				end
 				if(strDesc and  strDesc ~="")then
-					str = str.."#rÏà¹Ø:"..strDesc;
+					str = str.."#rtß½ng quan:"..strDesc;
 				end
 				if(strAddDesc and  strAddDesc ~="")then
 					str = str.."#r     "..strAddDesc;
@@ -239,11 +239,11 @@ function InitCurOtherCampain()
 			end
 		end
 	else
-		--ÏÔÊ¾Ò»ÕÅÐÝÏÐÍ¼Æ¬
+		--ÏÔÊ¾Ò» ÅÐÝÏÐÍ¼Æ¬
 		special_campaign_btn[1]:SetImage(idle_img);
 		special_campaign_btn[1]:Show();
 		special_campaign_Actionbtn[1]:Show();
-		special_campaign_btn[1]:SetToolTip("µ±ÈÕÎÞÌØÊâ»î¶¯");
+		special_campaign_btn[1]:SetToolTip("Hôm nay không có hoÕt ðµng");
 	end
 end
 
@@ -300,13 +300,13 @@ end
 --ÌîÐ´Ò»Ð©Ò»ÌìÖÐ¹Ì¶¨²»±äµÄ¶«Î÷
 function HuoDongRiCheng_SetConsts()
 
-	--Ìî³äÃ¿ÈÕÌØÊâ»î¶¯
+	--Ìî³äÃ¿È ÌØÊâ»î¶¯
 	HideAllSpecialCampaignBtns();
 	HideAllSpecialCampaignActionBtns();
 	InitCurOtherCampain();
 	HuoDongRiCheng_ShowHuodongData(0);
 	SetNormalImage(1);
-	--Ìî³ä½çÃæÄêÔÂÈÕ
+	--Ìî³ä½çÃæÄêÔÂÈ 
 	local tmpyear = tonumber(CurYear);
 	local tmpMon = tonumber(CurMon);
 	local tmpDay = tonumber(CurDay);
@@ -320,13 +320,13 @@ function HuoDongRiCheng_SetConsts()
 	tmpyear =  math.mod(tmpyear,100);
 	local si = math.floor(tmpyear /10) +1;
 	local yi = math.mod(tmpyear,10)+1;
-	HuoDongRiCheng_Text2:SetText("#cFFF263".."¶þÁã"..numToCh[si]..numToCh[yi].."Äê");
+	HuoDongRiCheng_Text2:SetText("#cFFF263".."Nh¸ Linh"..numToCh[si]..numToCh[yi].."Nåm");
 
 	si =  math.floor(tmpMon /10) ;
 	yi = math.mod(tmpMon,10)
 	local tmpstr = "";
 	if(si>0)then
-		tmpstr = tmpstr .."Ê®";
+		tmpstr = tmpstr .."Th§p";
 	end
 	if(yi>0)then
 		tmpstr = tmpstr .. numToCh[yi+1];
@@ -335,23 +335,23 @@ function HuoDongRiCheng_SetConsts()
 	yi = math.mod(tmpDay,10)
 	local tmpstr1 = "";
 	if(si>1)then
-		tmpstr1 = tmpstr1 .. numToCh[si+1].."Ê®";
+		tmpstr1 = tmpstr1 .. numToCh[si+1].."Th§p";
 	elseif(si>0)then
 
-		tmpstr1 = tmpstr1 .. "Ê®";
+		tmpstr1 = tmpstr1 .. "Th§p";
 	end
 	if(yi>0)then
 		tmpstr1 = tmpstr1 .. numToCh[yi+1];
 	end
-	HuoDongRiCheng_Text3:SetText("#cFFF263"..tmpstr.."ÔÂ"..tmpstr1.."ÈÕ");
-	HuoDongRiCheng_Text4:SetText("#cFFF263".."ÐÇÆÚ"..CurWeekDay);
+	HuoDongRiCheng_Text3:SetText("#cFFF263"..tmpstr.."Nguy®t"..tmpstr1.."Ngày");
+	HuoDongRiCheng_Text4:SetText("#cFFF263".."Cu¯i tu¥n"..CurWeekDay);
 end
 
 local maxShow = 3;
 --¸üÐÂÊ±¿Ì¶¼ÔÚ±äµÄ¶«Î÷
 function HuoDongRiCheng_UpdateVar()
 	HuoDongRiCheng_ClearVar();
-	--¸üÐÂµ±Ç°Õý³£»î¶¯
+	--¸üÐÂµ±Ç° ý³£»î¶¯
 
 
 
@@ -438,7 +438,7 @@ end
 
 function SetNormalImage(flag)
 	if flag == 2 then
-		HuoDongRiCheng_jinrianniu : SetProperty("NormalImage", "set:ButtonCampaign2 image:Campaign_IMG_jinri_Normal");    --Ã÷ÈÕ»î¶¯°´Å¥±ä»¯
+		HuoDongRiCheng_jinrianniu : SetProperty("NormalImage", "set:ButtonCampaign2 image:Campaign_IMG_jinri_Normal");    --????????
 		HuoDongRiCheng_jinrianniu : SetProperty("HoverImage", "set:ButtonCampaign2 image:Campaign_IMG_jinri_Hover");
 		HuoDongRiCheng_jinrianniu : SetProperty("PushedImage", "set:ButtonCampaign2 image:Campaign_IMG_jinri_Pushed");
 
@@ -446,7 +446,7 @@ function SetNormalImage(flag)
 		HuoDongRiCheng_mingrianniu : SetProperty("HoverImage", "set:ButtonCampaign2 image:Campaign_IMG_mingriL_Hover");
 		HuoDongRiCheng_mingrianniu : SetProperty("PushedImage", "set:ButtonCampaign2 image:Campaign_IMG_mingriL_Pushed");
 	else
-		HuoDongRiCheng_jinrianniu : SetProperty("NormalImage", "set:ButtonCampaign2 image:Campaign_IMG_jinriL_Pushed");     --½ñÈÕ»î¶¯°´Å¥±ä»¯
+		HuoDongRiCheng_jinrianniu : SetProperty("NormalImage", "set:ButtonCampaign2 image:Campaign_IMG_jinriL_Pushed");     --????????
 		HuoDongRiCheng_jinrianniu : SetProperty("HoverImage", "set:ButtonCampaign2 image:Campaign_IMG_jinriL_Hover");
 		HuoDongRiCheng_jinrianniu : SetProperty("PushedImage", "set:ButtonCampaign2 image:Campaign_IMG_jinriL_Pushed");
 

@@ -1,4 +1,4 @@
---Õ÷ÓÑÍæ¼ÒÁôÑÔ dengxx
+-- ÷ÓÑÍæ¼ÒÁôÑÔ dengxx
 
 -- ĞŞ¸Ä¹ã¸æÓï°´Å¥µÄÁ½ÖÖ×´Ì¬¡°·¢²¼¡±£¬¡°¸ü¸Ä¡±
 local ZY_ADAPPLY	=0  
@@ -6,7 +6,7 @@ local ZY_ADEDIT   =1
 local zy_AdState	= ZY_ADAPPLY
 
 local zy_lastSendMsgTime = 0
-local zy_sendMsgCD = 5  --·¢ËÍÁôÑÔÀäÈ´Ê±¼ä 5Ãë
+local zy_sendMsgCD = 5  --???????? 5?
 --===============================================
 -- PreLoad()
 --===============================================
@@ -32,16 +32,16 @@ function ZhengyouMessage_OnEvent(event)
 
 		if(arg0 == "self") then	
 			if(zy_AdState == ZY_ADEDIT) then
-				ZhengyouMessage_Ad:SetText("·¢²¼")
+				ZhengyouMessage_Ad:SetText("GØi")
 				ZhengyouMessage_EditText:Show()
 				ZhengyouMessage_StaticText:Hide()
 			else
-				ZhengyouMessage_Ad:SetText("¸ü¸Ä")
+				ZhengyouMessage_Ad:SetText("Ğ±i")
 				ZhengyouMessage_EditText:Hide()
 				ZhengyouMessage_StaticText:Show()
 				local adtitle = FindFriendDataPool:GetPlayerBBSADTitle()
 				if adtitle == "" then 
-					adtitle = "Ï£Íû´ó¼Ò¶à¶àÖ§³ÖÅ¶" 
+					adtitle = "Mong ğßşc m÷i ngß¶i üng hµ!" 
 				end
 				ZhengyouMessage_StaticText:SetText("#c9CCF00"..adtitle)
 				ZhengyouMessage_EditText:SetText(adtitle)
@@ -58,7 +58,7 @@ function ZhengyouMessage_OnEvent(event)
 				local adtitle = FindFriendDataPool:GetPlayerBBSADTitle()
 				
 				if adtitle == "" then 
-					adtitle = "Ï£Íû´ó¼Ò¶à¶àÖ§³ÖÅ¶" 
+					adtitle = "Mong ğßşc m÷i ngß¶i üng hµ!" 
 				end
 				ZhengyouMessage_StaticText:SetText("#c9CCF00"..adtitle)
 		  end	
@@ -90,7 +90,7 @@ function ZhengyouMessage_UpdateFrame()
 
 	for i=1, nMsgNum do
 		szPlayerName,nTime,szMessage = FindFriendDataPool:EnumPlayerMsg(i-1)
-		nTime = nTime + 1000000  --ÔÂ·İ[0£¬11],Òò´ËĞèÒª¼ÓÒ»¸ö1
+		nTime = nTime + 1000000  --??[0,11],???????1
 		szTime = ""
 		local tArray ={}
 		for j = 1,8 do
@@ -110,7 +110,7 @@ end
 function ZhengyouMessage_SendMessage_Clicked()
  local curTime = FindFriendDataPool:GetTickCount();
  if ( curTime - zy_lastSendMsgTime < zy_sendMsgCD * 1000) then
- 	 PushDebugMessage("#{ZYPT_081127_2}"); --²»¿ÉÁ¬Ğøµã»÷£¬ÇëÉÔµÈÆ¬¿ÌºóÔÙµã»÷
+ 	 PushDebugMessage("#{ZYPT_081127_2}"); --??????,?????????
    return;
  else
  	 zy_lastSendMsgTime = curTime;
@@ -149,7 +149,7 @@ function ZhengyouMessage_Ad_Clicked()
 		FindFriendDataPool:SetADTitle(ZhengyouMessage_EditText:GetText())
 		zy_AdState = ZY_ADAPPLY
 	else
-  	ZhengyouMessage_Ad:SetText("·¢²¼")
+  	ZhengyouMessage_Ad:SetText("GØi")
 		ZhengyouMessage_StaticText:Hide()
 		ZhengyouMessage_EditText:Show()
 		zy_AdState = ZY_ADEDIT

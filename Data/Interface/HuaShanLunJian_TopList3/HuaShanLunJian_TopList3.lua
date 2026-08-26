@@ -1,4 +1,4 @@
--- 6V6 战队排行榜, 记录榜
+-- 6V6 牻队排行榜, 记录榜
 -- 默认位置
 local g_HuaShanLunJian_TopList3_UnifiedPosition = nil
 local g_HuaShanLunJian_TopList3_SvrScriptId = 892891
@@ -21,17 +21,17 @@ local g_ui_rank_text = {
 }
 
 local g_menpaiinfo = {
-	[0]  ={name="#{WCBZ_180128_59}",color="#cff6600"},	-- 少林
-	[1]  ={name="#{WCBZ_180128_65}",color="#cffcc00"},	-- 明教
-	[2]  ={name="#{WCBZ_180128_67}",color="#c00ff00"},	-- 丐帮
-	[3]  ={name="#{WCBZ_180128_61}",color="#c0000ff"},	-- 武当
-	[4]  ={name="#{WCBZ_180128_68}",color="#cff99cc"},	-- 峨嵋
-	[5]  ={name="#{WCBZ_180128_66}",color="#c007700"},	-- 星宿
-	[6]  ={name="#{WCBZ_180128_60}",color="#cffff00"},	-- 天龙
-	[7]  ={name="#{WCBZ_180128_63}",color="#cffffff"},	-- 天山
-	[8]  ={name="#{WCBZ_180128_64}",color="#c7700ff"},	-- 逍遥
-	[9]  ={name="#{WCBZ_180128_57}",color="#c999999"},	-- 无门派
-	[10] ={name="#{WCBZ_180128_62}",color="#cffffb3"},	-- 曼陀
+	[0]  ={name="#{WCBZ_180128_59}",color="#cff6600"},	-- ??
+	[1]  ={name="#{WCBZ_180128_65}",color="#cffcc00"},	-- ??
+	[2]  ={name="#{WCBZ_180128_67}",color="#c00ff00"},	-- ??
+	[3]  ={name="#{WCBZ_180128_61}",color="#c0000ff"},	-- ??
+	[4]  ={name="#{WCBZ_180128_68}",color="#cff99cc"},	-- ??
+	[5]  ={name="#{WCBZ_180128_66}",color="#c007700"},	-- ??
+	[6]  ={name="#{WCBZ_180128_60}",color="#cffff00"},	-- ??
+	[7]  ={name="#{WCBZ_180128_63}",color="#cffffff"},	-- ??
+	[8]  ={name="#{WCBZ_180128_64}",color="#c7700ff"},	-- ??
+	[9]  ={name="#{WCBZ_180128_57}",color="#c999999"},	-- ???
+	[10] ={name="#{WCBZ_180128_62}",color="#cffffb3"},	-- ??
 }
 
 local g_tab_Type = {
@@ -43,8 +43,8 @@ local g_tab_Type = {
 function HuaShanLunJian_TopList3_PreLoad()
     this:RegisterEvent("XBW_RANKLIST3_OPEN", true)
     this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)
-    this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-    this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+    this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+    this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end
 
 function HuaShanLunJian_TopList3_OnEvent(event)

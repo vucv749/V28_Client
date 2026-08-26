@@ -2,20 +2,20 @@
 local g_NewExterior_Widget_UnifiedPosition = ""
 
 local EXTERIORFILTTING_TOTALKIND	= 0
-local g_TargetExteriorIndex			= 0		-- ¶¨Î»µÄÍâ¹ÛË÷Òý£¬´Ó1¿ªÊ¼
-local g_TargetExteriorID			= 0		-- ¶¨Î»µÄÍâ¹ÛID
+local g_TargetExteriorIndex			= 0		-- ???????,?1??
+local g_TargetExteriorID			= 0		-- ?????ID
 
-local g_CurSelExteriorID			= 0		-- µ±Ç°Ñ¡ÔñµÄÍâ¹ÛID£¬´Ó1¿ªÊ¼
-local g_CurSelExteriorX				= 0		-- µ±Ç°Ñ¡ÔñµÄÍâ¹ÛID£¬´Ó1¿ªÊ¼
-local g_CurSelExteriorY				= 0		-- µ±Ç°Ñ¡ÔñµÄÍâ¹ÛID£¬´Ó1¿ªÊ¼
-local g_CurSelExteriorZ				= 0		-- µ±Ç°Ñ¡ÔñµÄÍâ¹ÛID£¬´Ó1¿ªÊ¼
-local g_CurSelExteriorIndex			= 0		-- µ±Ç°Ñ¡ÔñµÄÍâ¹ÛË÷Òý
+local g_CurSelExteriorID			= 0		-- ???????ID,?1??
+local g_CurSelExteriorX				= 0		-- ???????ID,?1??
+local g_CurSelExteriorY				= 0		-- ???????ID,?1??
+local g_CurSelExteriorZ				= 0		-- ???????ID,?1??
+local g_CurSelExteriorIndex			= 0		-- ?????????
 
 local g_Distance					= 1
 local g_Distance_Ori				= 2
 local g_Distance_Max				= 4
 local g_InitList					= 0
-local g_ExteriorType				= 0		-- ±³ÊÎ
+local g_ExteriorType				= 0		-- ??
 local g_MaxBarNum					= 0
 local g_BarList = {}
 
@@ -30,31 +30,31 @@ local g_OrnamentPosXMin				= 1
 local g_OrnamentPosYMin				= 1
 local g_OrnamentPosZMin				= 1
 local g_OrnamentPosMax				= 255
-local g_OrnamentPosAdjust			= 1		-- ÊÇ·ñ¿Éµ÷½Ú
+local g_OrnamentPosAdjust			= 1		-- ?????
 
 local g_Ornaments_Name				= "OrnamentsBack"
 
-local g_OrnamentState				= {		-- ×´Ì¬
-	INVALID	= 0,							-- ÎÞÐ§
-	EMPTY	= 1,							-- ¿ÕÏÐ
-	TIME	= 2,							-- ÏÞÊ±
-	TIMEOUT	= 3,							-- ¹ýÆÚ
-	FOREVER	= 4,							-- ÓÀ¾Ã
+local g_OrnamentState				= {		-- ??
+	INVALID	= 0,							-- ??
+	EMPTY	= 1,							-- ??
+	TIME	= 2,							-- ??
+	TIMEOUT	= 3,							-- ??
+	FOREVER	= 4,							-- ??
 }
 
 
-local g_CameraHeight				= 1     -- ÉãÓ°»ú¸ß¶È
-local g_CameraDistance				= 2		-- ÉãÓ°»ú¾àÀë
-local g_CameraPitch					= 3     -- ÉãÓ°»ú½Ç¶È
+local g_CameraHeight				= 1     -- ?????
+local g_CameraDistance				= 2		-- ?????
+local g_CameraPitch					= 3     -- ?????
 local g_CameraPosition				= {
-	[0] =									-- Å®ÐÔÏà¹ØÎ»ÖÃ
+	[0] =									-- ??????
 	{
 		{fHeight = 0.82, fDistance = 8, fPitch=0.1},
 		{fHeight = 0.82, fDistance = 6.5, fPitch=0.1},
 		{fHeight = 1.5, fDistance = 2.5, fPitch=0.10},
 		{fHeight = 1.57, fDistance = 1.7, fPitch=0.10}
 	},
-	[1] =									-- ÄÐÐÔÏà¹ØÎ»ÖÃ 
+	[1] =									-- ?????? 
 	{
 		{fHeight = 0.91, fDistance = 8.8, fPitch=0.2},
 		{fHeight = 0.91, fDistance = 7.1, fPitch=0.2},
@@ -180,9 +180,9 @@ function NewExterior_Widget_OnEvent(event)
 		return
 	end
 
-	if event == "OPEN_STALL_SALE" -- ¿ªÊ¼°ÚÌ¯£¬»¹Ô­ÊÔ´©
-		or event == "PROGRESSBAR_SHOW"	-- ¶Á½ø¶ÈÌõÖÐ£¬»¹Ô­ÊÔ´©
-		or event == "MODELID_CHANGE" -- ±äÉí ¹Ø±Õ½çÃæ
+	if event == "OPEN_STALL_SALE" -- ????,????
+		or event == "PROGRESSBAR_SHOW"	-- ?????,????
+		or event == "MODELID_CHANGE" -- ?? ????
 		then
 		NewExterior_Widget_CloseClick()
 		return
@@ -268,7 +268,7 @@ function NewExterior_Widget_OnEvent(event)
 	end
 	
 		-- FakeObjectÄ£ÐÍ½çÃæ»¥³â
-	if ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then   --Ê±×°Ô¤ÀÀ
+	if ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then   --????
 		if (this:IsVisible()) then
 			this:Hide()
 			return
@@ -920,7 +920,7 @@ function NewExterior_Widget_RemovePreview()
 end
 
 function NewExterior_Widget_Goto()
-	AutoRuntoTargetExWithName(254, 130, 0, "±´Ê¦Ê¦")
+	AutoRuntoTargetExWithName(254, 130, 0, "B¯i Sß Sß")
 end
 
 function NewExterior_Widget_CloseClick()

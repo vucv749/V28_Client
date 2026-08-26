@@ -49,7 +49,7 @@ function Peak_Guide_Time_OnEvent(event)
 		if(tonumber(arg0) ~= g_objCared) then
 			return;
 		end
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>Peak_Guide_Time_MAX_OBJ_DISTANCE or arg1=="destroy") then
 			Peak_Guide_Time_OnClose()
 			--取消关心

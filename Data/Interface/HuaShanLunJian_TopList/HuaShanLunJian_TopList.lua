@@ -5,24 +5,24 @@ local g_myMatchId = -1
 local g_nCurSel_MatchBtn ={}
 local g_nMyInfo = {}
 local g_nListType = {}
-local g_nObjID = -1 --πÿ–ƒobj 
+local g_nObjID = -1 --??obj 
 local g_isGetAward = -1
 local g_myLevel = -1
 local g_startLevel = 60
 local g_mid1Level = 79
 local g_mid2Level = 89
 local g_endLevel = 119
-local g_TopListType = 1 -- 0,‘≠∑˛≈≈––∞Ò£¨1,t∑˛≈≈––∞Ò
+local g_TopListType = 1 -- 0,?????,1,t????
 local g_NewMatchLevelName={
-[0]="#{HSPH_191120_09}", --œ¿ ø
-[1]="#{HSPH_191120_10}", --∫¿œ¿
-[2]="#{HSPH_191120_11}", --◊⁄ ¶
+[0]="#{HSPH_191120_09}", --??
+[1]="#{HSPH_191120_10}", --??
+[2]="#{HSPH_191120_11}", --??
 }
 
 local g_NoneText={
-[0]="#{HSPH_191120_50}", --œ¿ ø
-[1]="#{HSPH_191120_51}", --∫¿œ¿
-[2]="#{HSPH_191120_52}", --◊⁄ ¶
+[0]="#{HSPH_191120_50}", --??
+[1]="#{HSPH_191120_51}", --??
+[2]="#{HSPH_191120_52}", --??
 }
 
 local g_Image = {
@@ -50,19 +50,19 @@ local g_DuanWei2 = {
 local g_RankList_nContentButton = {}
 local g_MenPaiNameList =
 {
-	[0]  ={Name="#{HSSC_191009_128}" , Color="#cff6600", }, --…Ÿ¡÷
-	[1]  ={Name="#{HSSC_191009_35}" , Color="#cffcc00", }, --√˜ΩÃ
-	[2]  ={Name="#{HSSC_191009_36}" , Color="#c00ff00", }, --ÿ§∞Ô
-	[3]  ={Name="#{HSSC_191009_31}" , Color="#c0000ff", }, --Œ‰µ±
-	[4]  ={Name="#{HSSC_191009_32}" , Color="#cff99cc", }, --∂Î√º
-	[5]  ={Name="#{HSSC_191009_129}" , Color="#c007700", }, --–«Àﬁ
-	[6]  ={Name="#{HSSC_191009_130}" , Color="#cffff00", }, --ÃÏ¡˙
-	[7]  ={Name="#{HSSC_191009_34}" , Color="#cffffff", }, --ÃÏ…Ω
-	[8]  ={Name="#{HSSC_191009_33}" , Color="#c7700ff", }, --Â–“£
-	[9]  ={Name="Œﬁ√≈≈…"     , Color="#c999999", },	
+	[0]  ={Name="#{HSSC_191009_128}" , Color="#cff6600", }, --??
+	[1]  ={Name="#{HSSC_191009_35}" , Color="#cffcc00", }, --??
+	[2]  ={Name="#{HSSC_191009_36}" , Color="#c00ff00", }, --??
+	[3]  ={Name="#{HSSC_191009_31}" , Color="#c0000ff", }, --??
+	[4]  ={Name="#{HSSC_191009_32}" , Color="#cff99cc", }, --??
+	[5]  ={Name="#{HSSC_191009_129}" , Color="#c007700", }, --??
+	[6]  ={Name="#{HSSC_191009_130}" , Color="#cffff00", }, --??
+	[7]  ={Name="#{HSSC_191009_34}" , Color="#cffffff", }, --??
+	[8]  ={Name="#{HSSC_191009_33}" , Color="#c7700ff", }, --??
+	[9]  ={Name="TÒ do"     , Color="#c999999", },	
 	[10]  ={Name="#{GMGameInterface_Script_DataPool_Info_ManTuoShanZhuang}"     , Color="#cffffb3", },	
 }
--- ±’∫œÕº∆¨
+-- ±†∫œÕº∆¨
 local g_Image1 = {
 						[1] = "set:Button14  image:Xingui_Pushed",
 						[2] = "set:Button14  image:Xingui_Normal",
@@ -208,7 +208,7 @@ function HuaShanLunJian_TopList_OnEvent(event)
 	end
 end
 
---«Âø’–≈œ¢
+--«Âø†–≈œ¢
 function HuaShanLunJian_TopList_ResetControl()
 	--HuaShanLunJian_TopList_List1_Frame:CleanAllElement("HuaShanLunJian_TopList")
 	HuaShanLunJian_TopList:Clear()
@@ -336,7 +336,7 @@ function HuaShanLunJian_TopList_UpdateSelf(mDW1,mDW2,mDW3,mWinCnt,mTotalCnt)
 	local mRank,mName,mLevel,nMenPai = XBW:GetSelfInfo()
 	if g_myMatchId ~= -1 and g_myMatchId == g_nCurSel_MatchID then
 		if mRank < 0 or mRank >= 200 then
-			g_nMyInfo[0]:SetText("Œ¥…œ∞Ò")
+			g_nMyInfo[0]:SetText("V∏ Thﬂ˛ng B‰ng")
 			g_nMyInfo[0]:Show()
 			g_nMyInfo[7]:Hide()
 		else
@@ -380,9 +380,9 @@ function HuaShanLunJian_TopList_UpdateSelf(mDW1,mDW2,mDW3,mWinCnt,mTotalCnt)
 	if nLevelIndex >= 0 and  nLevelIndex < 3 then
 		if mDW1 ~= 6 then
 			if mDW3 == 0 then
-				g_nMyInfo[2]:SetText(g_NewMatchLevelName[nLevelIndex]..g_DuanWei1[mDW1]..g_DuanWei2[mDW2].."#{HSPH_191120_29}")--.."¡„".."–«")
+				g_nMyInfo[2]:SetText(g_NewMatchLevelName[nLevelIndex]..g_DuanWei1[mDW1]..g_DuanWei2[mDW2].."#{HSPH_191120_29}")--.."Linh".."Tinh")
 			else
-				g_nMyInfo[2]:SetText(g_NewMatchLevelName[nLevelIndex]..g_DuanWei1[mDW1]..g_DuanWei2[mDW2].."#{HSPH_191120_29}")--..g_DuanWei3[mDW3].."–«")
+				g_nMyInfo[2]:SetText(g_NewMatchLevelName[nLevelIndex]..g_DuanWei1[mDW1]..g_DuanWei2[mDW2].."#{HSPH_191120_29}")--..g_DuanWei3[mDW3].."Tinh")
 			end
 		else
 			if mDW3 == 0 then
@@ -392,7 +392,7 @@ function HuaShanLunJian_TopList_UpdateSelf(mDW1,mDW2,mDW3,mWinCnt,mTotalCnt)
 			end
 		end
 	else
-		g_nMyInfo[2]:SetText("Œﬁ")
+		g_nMyInfo[2]:SetText("VÙ")
 	end
 	g_nMyInfo[5]:SetText(mWinCnt)
 	if mTotalCnt ~= 0 then
@@ -416,7 +416,7 @@ function HuaShanLunJian_TopList_ChangeTabIndex(nIdx)
 	if nIdx>=0 and nIdx<=2 then
 		HuaShanLunJian_TopList_SetColor(nIdx)
 		--BWDH:RequsetRankingCharts(nIdx,0)
-		--‘⁄’‚µÿ∑Ω»•µ˜∑˛ŒÒ∂ÀµƒΩ≈±æµƒ∫Ø ˝,«Î«Û≈≈––∞Ò ˝æ›
+		--‘⁄†‚µÿ∑Ω»•µ˜∑˛ŒÒ∂ÀµƒΩ≈±æµƒ∫Ø ˝,«Î«Û≈≈––∞Ò ˝æ›
 		Clear_XSCRIPT();
 			Set_XSCRIPT_Function_Name("QueryRankList")
 			Set_XSCRIPT_ScriptID(892930)
@@ -463,7 +463,7 @@ function HuaShanLunJian_TopList_ChangeTopList(index)
 	g_nListType[index]:SetCheck(1)
 	HuaShanLunJian_TopList_SetColor(g_myMatchId)
 	--BWDH:RequsetRankingCharts(nIdx,0)
-	--‘⁄’‚µÿ∑Ω»•µ˜∑˛ŒÒ∂ÀµƒΩ≈±æµƒ∫Ø ˝,«Î«Û≈≈––∞Ò ˝æ›
+	--‘⁄†‚µÿ∑Ω»•µ˜∑˛ŒÒ∂ÀµƒΩ≈±æµƒ∫Ø ˝,«Î«Û≈≈––∞Ò ˝æ›
 	Clear_XSCRIPT();
 		Set_XSCRIPT_Function_Name("QueryRankList")
 		Set_XSCRIPT_ScriptID(892930)

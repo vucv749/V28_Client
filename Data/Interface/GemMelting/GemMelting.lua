@@ -57,7 +57,7 @@ function GemMelting_OnEvent(event)
 		
 		ObjCaredID = DataPool : GetNPCIDByServerID(npcObjId)
 		if ObjCaredID == -1 then
-			PushDebugMessage("server´«¹ýÀ´µÄÊý¾ÝÓÐÎÊÌâ¡£")
+			PushDebugMessage("Dæ li®u máy chü có v¤n ð«")
 			return
 		end
 		BeginCareObject_GemMelting()
@@ -98,7 +98,7 @@ function GemMelting_OnEvent(event)
 		GemMelting_CurrentMoney:SetProperty("MoneyNumber", tostring(Player:GetData("MONEY")) )
 	elseif event == "MONEYJZ_CHANGE" then
 
-		GemMelting_CurrentJiaozi:SetProperty("MoneyNumber", tostring(Player:GetData("MONEY_JZ")) )   --½»×ÓÆÕ¼° Vega
+		GemMelting_CurrentJiaozi:SetProperty("MoneyNumber", tostring(Player:GetData("MONEY_JZ")) )   --???? Vega
 
 	elseif event == "RESUME_ENCHASE_GEM" and this:IsVisible() then
 
@@ -239,7 +239,7 @@ function GemMelting_UpdateGemItem( pos_ui, pos_packet )
 	g_NeedItemID2 = CurNeedItemID2
 	local needItem = "#{BSRL_90512_11}#{_ITEM"..CurNeedItemID.."}"
 	if(CurNeedItemID2 ~=-1 ) then
-		needItem = needItem.."»òÕß#{_ITEM"..CurNeedItemID2.."}"
+		needItem = needItem.."Ho£c là#{_ITEM"..CurNeedItemID2.."}"
 	end
 	GemMelting_NeedItem:SetToolTip(needItem)
 
@@ -268,7 +268,7 @@ function GemMelting_UpdateNeedItem( pos_ui, pos_packet )
 	if PlayerPackage:GetItemTableIndex( pos_packet ) ~= g_NeedItemID and PlayerPackage:GetItemTableIndex( pos_packet ) ~= g_NeedItemID2 then
 		local needItem = "#{JKBS_081021_010}#{_ITEM"..g_NeedItemID.."}"
 		if(g_NeedItemID2 ~=-1 ) then
-			needItem = needItem.."»òÕß#{_ITEM"..g_NeedItemID2.."}"
+			needItem = needItem.."Ho£c là#{_ITEM"..g_NeedItemID2.."}"
 		end
 		PushDebugMessage(needItem)
 		return
@@ -419,7 +419,7 @@ function GemMelting_Buttons_Clicked()
 
 end
 
---¹Ø±Õ
+--¹Ø± 
 function GemMelting_Close()
 	this:Hide();
 	StopCareObject_GemMelting()
@@ -434,7 +434,7 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØÐÄNPC£¬
---ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
 --Èç¹ûÓÐµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓÐµÄ¡°¹ØÐÄ¡±
 --=========================================================
 function BeginCareObject_GemMelting()

@@ -21,20 +21,20 @@
 --------------------------------------------------------------------------------
 -- ×°±¸°´Å¥Êý¾Ý¶¨Òå
 --
-local  g_WEAPON;		--ÎäÆ÷
-local  g_ARMOR;			--ÒÂ·þ
-local  g_CAP;			--Ã±×Ó
-local  g_CUFF;			--»¤Íó
-local  g_BOOT;			--Ð¬
-local  g_RING;			--½ä×Ó
-local  g_SASH;			--Ñü´ø
-local  g_NECKLACE;		--ÏîÁ´
-local  g_Dark;			--×øÆï---ÒÑÐÞ¸ÄÎª°µÆ÷
-local  g_Charm;			-- »¤·û
-local  g_Charm2;		-- »¤·û2
-local  g_Shoulder;		-- »¤¼ç
-local  g_Glove;			-- ÊÖÌ×
-local  g_Ring2;			-- ½äÖ¸2
+local  g_WEAPON;		--??
+local  g_ARMOR;			--??
+local  g_CAP;			--??
+local  g_CUFF;			--??
+local  g_BOOT;			--?
+local  g_RING;			--??
+local  g_SASH;			--??
+local  g_NECKLACE;		--??
+local  g_Dark;			--??---??????
+local  g_Charm;			-- ??
+local  g_Charm2;		-- ??2
+local  g_Shoulder;		-- ??
+local  g_Glove;			-- ??
+local  g_Ring2;			-- ??2
 
 local g_Cur_Name = "";
 local g_TargetEquip_Cur_ZoneWorldId = -1
@@ -82,25 +82,25 @@ end
 function TargetEquip_OnLoad()
 
 	-- action buttion °´Å¥
-	g_WEAPON		= TargetEquip_Equip11;		--ÎäÆ÷
-	g_ARMOR			= TargetEquip_Equip12;		--ÒÂ·þ
-	g_CAP			= TargetEquip_Equip1;		--Ã±×Ó
-	g_CUFF			= TargetEquip_Equip8;		--»¤Íó
-	g_BOOT			= TargetEquip_Equip4;		--Ð¬
-	g_RING			= TargetEquip_Equip6;		--½ä×Ó
-	g_SASH			= TargetEquip_Equip7;		--Ñü´ø
-	g_NECKLACE		= TargetEquip_Equip13;		--ÏîÁ´
-	g_Dark			= TargetEquip_Equip14;		--×øÆï
-	g_Charm			= TargetEquip_Equip9;		-- »¤·û
-	g_Charm2		= TargetEquip_Equip10;		-- »¤·û2
-	g_Shoulder		= TargetEquip_Equip3;		-- »¤¼ç
-	g_Glove			= TargetEquip_Equip2;		-- ÊÖÌ×
-	g_Ring2			= TargetEquip_Equip5;		-- ½äÖ¸2
+	g_WEAPON		= TargetEquip_Equip11;		--??
+	g_ARMOR			= TargetEquip_Equip12;		--??
+	g_CAP			= TargetEquip_Equip1;		--??
+	g_CUFF			= TargetEquip_Equip8;		--??
+	g_BOOT			= TargetEquip_Equip4;		--?
+	g_RING			= TargetEquip_Equip6;		--??
+	g_SASH			= TargetEquip_Equip7;		--??
+	g_NECKLACE		= TargetEquip_Equip13;		--??
+	g_Dark			= TargetEquip_Equip14;		--??
+	g_Charm			= TargetEquip_Equip9;		-- ??
+	g_Charm2		= TargetEquip_Equip10;		-- ??2
+	g_Shoulder		= TargetEquip_Equip3;		-- ??
+	g_Glove			= TargetEquip_Equip2;		-- ??
+	g_Ring2			= TargetEquip_Equip5;		-- ??2
 
 	TARGETEQUIP_TAB_TEXT = {
-		[0] = "×°±¸",
-		"×ÊÁÏ",
-		"ÕäÊÞ",
+		[0] = "Trang b¸",
+		"Tß li®u",
+		"Trân Thú",
 	};
 	
 	g_TargetEquip_Frame_UnifiedPosition=TargetEquip_Frame:GetProperty("UnifiedPosition");
@@ -172,13 +172,13 @@ function TargetEquip_OnEvent(event)
 		end
 		
 		if (not CachedTarget:CanGetTargetEquip()) then
-			PushDebugMessage ("#{JSCK_90507_1}")				-- ¾àÀë¸ÃÍæ¼ÒÌ«Ô¶£¬ÎÞ·¨²é¿´×ÊÁÏ¡£
+			PushDebugMessage ("#{JSCK_90507_1}")				-- ???????,???????
 			return
 		end
 
 		g_objCared = CachedTarget:GetData("NPCID", 1)
 		if (type(g_objCared) ~="number") then
-			PushDebugMessage ("#{JSCK_90507_1}")				-- ¾àÀë¸ÃÍæ¼ÒÌ«Ô¶£¬ÎÞ·¨²é¿´×ÊÁÏ¡£
+			PushDebugMessage ("#{JSCK_90507_1}")				-- ???????,???????
 			return
 		end
 
@@ -222,7 +222,7 @@ function TargetEquip_OnEvent(event)
 			return;
 		end
 
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if( arg1=="destroy") then
 			TargetEquip_CloseUI();
 			return;
@@ -266,7 +266,7 @@ function TargetEquip_OnUpdateShow()
 
 	-- µÃµ½µÈ¼¶
 	nNumber = CachedTarget:GetData("LEVEL", 1);
-	TargetEquip_Level:SetText("µÈ¼¶:" .. tostring( nNumber ));
+	TargetEquip_Level:SetText("C¤p b§c:" .. tostring( nNumber ));
 
 	-- µÃµ½ÅäÅ¼ÐÅÏ¢
 	local szConsort = SystemSetup:GetPrivateInfo("other","Consort");
@@ -283,40 +283,40 @@ function TargetEquip_OnUpdateShow()
 
 	-- µÃµ½ÃÅÅÉÃû³Æ.
 	if(0 == menpai) then
-		strMenpai = "ÉÙÁÖ";
+		strMenpai = "Thiªu Lâm";
 
 	elseif(1 == menpai) then
-		strMenpai = "Ã÷½Ì";
+		strMenpai = "Minh Giáo";
 
 	elseif(2 == menpai) then
-		strMenpai = "Ø¤°ï";
+		strMenpai = "Cái Bang";
 
 	elseif(3 == menpai) then
-		strMenpai = "Îäµ±";
+		strMenpai = "Võ Ðang";
 
 	elseif(4 == menpai) then
-		strMenpai = "¶ëáÒ";
+		strMenpai = "Nga Mi";
 
 	elseif(5 == menpai) then
-		strMenpai = "ÐÇËÞ";
+		strMenpai = "Tinh Túc";
 
 	elseif(6 == menpai) then
-		strMenpai = "ÌìÁú";
+		strMenpai = "Thiên Long";
 
 	elseif(7 == menpai) then
-		strMenpai = "ÌìÉ½";
+		strMenpai = "Thiên S½n";
 
 	elseif(8 == menpai) then
-		strMenpai = "åÐÒ£";
+		strMenpai = "Tiêu dao";
 
 	elseif(9 == menpai) then
-		strMenpai = "ÎÞÃÅÅÉ";
+		strMenpai = "Tñ do";
 
 	elseif(10== menpai) then
-		strMenpai = "ÂüÍÓÉ½×¯";
+		strMenpai = "MÕn Ðà S½n Trang";
 
 	elseif(11== menpai) then--MPTODO menpai11
-		strMenpai = "¶ñÈË¹È";
+		strMenpai = "Ác Nhân C¯c";
 	end
 
 	local secttype = CachedTarget:GetData("SECTTYPE",1);
@@ -329,7 +329,7 @@ function TargetEquip_OnUpdateShow()
 			TargetEquip_MenPai:SetText(strMenpai);
 		else
 			local sectname = DataPool:Lua_GetSectName(menpai,secttype)
-			TargetEquip_MenPai:SetText(strMenpai.."¡¤"..sectname);
+			TargetEquip_MenPai:SetText(strMenpai.."·"..sectname);
 		end
 
 	end
@@ -356,21 +356,21 @@ end
 -- Ë¢ÐÂ×°±¸
 function TargetEquip_RefreshEquip()
 
-	--  Çå¿Õ°´Å¥ÏÔÊ¾Í¼±ê
-	g_WEAPON:SetActionItem(-1);			--ÎäÆ÷
-	g_CAP:SetActionItem(-1);				--Ã±×Ó
-	g_ARMOR:SetActionItem(-1);			--¿ø¼×
-	g_CUFF:SetActionItem(-1);				--»¤Íó
-	g_BOOT:SetActionItem(-1);				--Ð¬
-	g_SASH:SetActionItem(-1);				--Ñü´ø
-	g_RING:SetActionItem(-1);				--½ä×Ó
-	g_NECKLACE:SetActionItem(-1);		--ÏîÁ´
-	g_Dark:SetActionItem(-1);				--×øÆï
-	g_Charm:SetActionItem(-1);			-- »¤·û
-	g_Charm2:SetActionItem(-1);			-- »¤·û2
-	g_Shoulder:SetActionItem(-1);		-- »¤¼ç
-	g_Glove:SetActionItem(-1);			-- ÊÖÌ×
-	g_Ring2:SetActionItem(-1);			-- ½äÖ¸2
+	--  Çå¿ °´Å¥ÏÔÊ¾Í¼±ê
+	g_WEAPON:SetActionItem(-1);			--??
+	g_CAP:SetActionItem(-1);				--??
+	g_ARMOR:SetActionItem(-1);			--??
+	g_CUFF:SetActionItem(-1);				--??
+	g_BOOT:SetActionItem(-1);				--?
+	g_SASH:SetActionItem(-1);				--??
+	g_RING:SetActionItem(-1);				--??
+	g_NECKLACE:SetActionItem(-1);		--??
+	g_Dark:SetActionItem(-1);				--??
+	g_Charm:SetActionItem(-1);			-- ??
+	g_Charm2:SetActionItem(-1);			-- ??2
+	g_Shoulder:SetActionItem(-1);		-- ??
+	g_Glove:SetActionItem(-1);			-- ??
+	g_Ring2:SetActionItem(-1);			-- ??2
 	TargetEquip_Equip15:SetActionItem(-1)
 	
 	local ActionWeapon 		= EnumAction(0, "targetequip");
@@ -381,7 +381,7 @@ function TargetEquip_RefreshEquip()
 	local ActionSash   		= EnumAction(5, "targetequip");
 	local ActionRing    	= EnumAction(6, "targetequip");
 	local ActionNecklace	= EnumAction(7, "targetequip");
-	local ActionDark		= EnumAction(17, "targetequip");    --ÐÞ¸ÄÎª°µÆ÷  by houzhifang
+	local ActionDark		= EnumAction(17, "targetequip");    --?????  by houzhifang
 	local ActionRing2		= EnumAction(11, "targetequip");
 	local ActionCharm		= EnumAction(12, "targetequip");
 	local ActionCharm2		= EnumAction(13, "targetequip");
@@ -389,20 +389,20 @@ function TargetEquip_RefreshEquip()
 	local ActionShoulder	= EnumAction(15, "targetequip");
 
 	-- ÏÔÊ¾ÈËÉíÉÏµÄÎäÆ÷×°±¸
-	g_WEAPON:SetActionItem(ActionWeapon:GetID());			--ÎäÆ÷
-	g_CAP:SetActionItem(ActionCap:GetID());						--Ã±×Ó
-	g_ARMOR:SetActionItem(ActionArmor:GetID());				--¿ø¼×
-	g_CUFF:SetActionItem(ActionCuff:GetID());					--»¤Íó
-	g_BOOT:SetActionItem(ActionBoot:GetID());					--Ð¬
-	g_SASH:SetActionItem(ActionSash:GetID());					--Ñü´ø
-	g_RING:SetActionItem(ActionRing:GetID());					--½ä×Ó
-	g_NECKLACE:SetActionItem(ActionNecklace:GetID());	--ÏîÁ´
-	g_Dark:SetActionItem(ActionDark:GetID());					--×øÆï
-	g_Charm:SetActionItem(ActionCharm:GetID());				-- »¤·û
-	g_Charm2:SetActionItem(ActionCharm2:GetID());			-- »¤·û2
-	g_Shoulder:SetActionItem(ActionShoulder:GetID());	-- »¤¼ç
-	g_Glove:SetActionItem(ActionGlove:GetID());				-- ÊÖÌ×
-	g_Ring2:SetActionItem(ActionRing2:GetID());				-- ½äÖ¸2
+	g_WEAPON:SetActionItem(ActionWeapon:GetID());			--??
+	g_CAP:SetActionItem(ActionCap:GetID());						--??
+	g_ARMOR:SetActionItem(ActionArmor:GetID());				--??
+	g_CUFF:SetActionItem(ActionCuff:GetID());					--??
+	g_BOOT:SetActionItem(ActionBoot:GetID());					--?
+	g_SASH:SetActionItem(ActionSash:GetID());					--??
+	g_RING:SetActionItem(ActionRing:GetID());					--??
+	g_NECKLACE:SetActionItem(ActionNecklace:GetID());	--??
+	g_Dark:SetActionItem(ActionDark:GetID());					--??
+	g_Charm:SetActionItem(ActionCharm:GetID());				-- ??
+	g_Charm2:SetActionItem(ActionCharm2:GetID());			-- ??2
+	g_Shoulder:SetActionItem(ActionShoulder:GetID());	-- ??
+	g_Glove:SetActionItem(ActionGlove:GetID());				-- ??
+	g_Ring2:SetActionItem(ActionRing2:GetID());				-- ??2
 	
 	local ActionSB = EnumAction(37, "targetequip")
 	TargetEquip_Equip15:SetActionItem(ActionSB:GetID())
@@ -438,7 +438,7 @@ end
 
 ----------------------------------------------------------------------------------------
 --
--- ¹Ø±Õ½çÃæ
+-- ¹Ø± ½çÃæ
 --
 function TargetEquip_CloseUI()
 
@@ -447,11 +447,11 @@ function TargetEquip_CloseUI()
 	-- È¡Ïû¹ØÐÄOBJ
 	TargetEquip_StopCareObject(g_objCared);
 
-	-- Çå¿ÕFakeModel´°¿Ú
+	-- Çå¿ FakeModel´°¿Ú
 	TargetEquip_FakeObject:SetFakeObject("");
 	CachedTarget:TargetEquip_DestroyUIModel();
 
-	-- Çå¿Õ½ÇÉ«ÐÅÏ¢ºÍ×°±¸Í¼±ê
+	-- Çå¿ ½ÇÉ«ÐÅÏ¢ºÍ×°±¸Í¼±ê
 	TargetEquip_ClearPlayerInfo();
 	TargetEquip_ClearEquipItem();
 
@@ -459,41 +459,41 @@ end
 
 ----------------------------------------------------------------------------------------
 --
--- Çå¿Õ×°±¸½çÃæÖÐµÄ½ÇÉ«ÐÅÏ¢
+-- Çå¿ ×°±¸½çÃæÖÐµÄ½ÇÉ«ÐÅÏ¢
 --
 function TargetEquip_ClearPlayerInfo()
 
 	TargetEquip_PageHeader:SetText("");
 	TargetEquip_Agname:SetText("");
 	TargetEquip_Confraternity:SetText("");
-	TargetEquip_Level:SetText("µÈ¼¶:");
+	TargetEquip_Level:SetText("C¤p b§c:");
 	TargetEquip_Spouse:SetText("");
-	TargetEquip_MenPai:SetText("ÃÅÅÉ:");
+	TargetEquip_MenPai:SetText("Môn phái:");
 	TargetEquip_Message:SetText("");
 
 end
 
 ----------------------------------------------------------------------------------------
 --
---  Çå¿Õ×°±¸½çÃæÖÐµÄ×°±¸Í¼±ê
+--  Çå¿ ×°±¸½çÃæÖÐµÄ×°±¸Í¼±ê
 --
 function TargetEquip_ClearEquipItem()
 
-	--  Çå¿Õ°´Å¥ÏÔÊ¾Í¼±ê
-	g_WEAPON:SetActionItem(-1);			--ÎäÆ÷
-	g_CAP:SetActionItem(-1);				--Ã±×Ó
-	g_ARMOR:SetActionItem(-1);			--¿ø¼×
-	g_CUFF:SetActionItem(-1);				--»¤Íó
-	g_BOOT:SetActionItem(-1);				--Ð¬
-	g_SASH:SetActionItem(-1);				--Ñü´ø
-	g_RING:SetActionItem(-1);				--½ä×Ó
-	g_NECKLACE:SetActionItem(-1);		--ÏîÁ´
-	g_Dark:SetActionItem(-1);			--×øÆï
-	g_Charm:SetActionItem(-1);		-- »¤·û
-	g_Charm2:SetActionItem(-1);		-- »¤·û2
-	g_Shoulder:SetActionItem(-1);		-- »¤¼ç
-	g_Glove:SetActionItem(-1);		-- ÊÖÌ×
-	g_Ring2:SetActionItem(-1);		-- ½äÖ¸2
+	--  Çå¿ °´Å¥ÏÔÊ¾Í¼±ê
+	g_WEAPON:SetActionItem(-1);			--??
+	g_CAP:SetActionItem(-1);				--??
+	g_ARMOR:SetActionItem(-1);			--??
+	g_CUFF:SetActionItem(-1);				--??
+	g_BOOT:SetActionItem(-1);				--?
+	g_SASH:SetActionItem(-1);				--??
+	g_RING:SetActionItem(-1);				--??
+	g_NECKLACE:SetActionItem(-1);		--??
+	g_Dark:SetActionItem(-1);			--??
+	g_Charm:SetActionItem(-1);		-- ??
+	g_Charm2:SetActionItem(-1);		-- ??2
+	g_Shoulder:SetActionItem(-1);		-- ??
+	g_Glove:SetActionItem(-1);		-- ??
+	g_Ring2:SetActionItem(-1);		-- ??2
 	TargetEquip_Equip15:SetActionItem(-1)
 end
 
@@ -518,7 +518,7 @@ end
 -- 	Blog:OpenBlogPage(strAccount,strCharName,false);
 -- end
 --
--- ÕäÊÞ
+--  äÊÞ
 --
 function TargetEquip_OtherPet_Down()
 	Variable:SetVariable("OtherUnionPos", TargetEquip_Frame:GetProperty("UnifiedPosition"), 1);
@@ -658,35 +658,35 @@ function TargetEquip_ShowPage()
 end
 
 function TargetEquip_CheckPage(idx)
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--ÕäÊÞ
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--ÁéÓñ
+	elseif idx == 5 then--??
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
 		end
 		return 1
-	elseif idx == 6 then--Éñ±ø
+	elseif idx == 6 then--??
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
 		end
 		return 1
-	elseif idx == 7 then--µñÎÄ½ø½×
+	elseif idx == 7 then--????
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
 		end
 		return 1
-	elseif idx == 8 then--áÛ·å
+	elseif idx == 8 then--??
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
 		end
 		return 1
-	elseif idx == 9 then--¸öÈË
+	elseif idx == 9 then--??
 		return 1
 	end
 	return 0
@@ -701,19 +701,19 @@ function TargetEquip_OnPageClicked(idx)
 	Variable:SetVariable("TargetPageNumber", tostring(idx), 1);
 	idx = g_PageOrder[idx]
 
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		TargetEquip_ClearPage()
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		TargetEquip_TargetData_Down()
-	elseif idx == 3 then--ÕäÊÞ
+	elseif idx == 3 then--??
 		TargetEquip_OtherPet_Down()
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		TargetEquip_TargetWuhun_Switch()
-	elseif idx == 5 then--ÁéÓñ
+	elseif idx == 5 then--??
 		TargetEquip_TargetLingyu_Switch()
-	elseif idx == 6 then--Éñ±ø
+	elseif idx == 6 then--??
 		TargetEquip_ShenBing_Switch()
-	elseif idx == 7 then--µñÎÄ½ø½×
+	elseif idx == 7 then--????
 		TargetEquip_DWJinJie_Switch()
 	elseif idx == 8 then
 		TargetEquip_OtherDFeng_Switch()
@@ -724,7 +724,7 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØÐÄOBJ
---ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄOBJ£¬
+--ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄOBJ£¬
 --Èç¹ûÓÐµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓÐµÄ¡°¹ØÐÄ¡±
 --=========================================================
 function TargetEquip_BeginCareObject(objCaredId)

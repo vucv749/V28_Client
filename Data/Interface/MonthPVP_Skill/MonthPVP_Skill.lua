@@ -72,7 +72,7 @@ local g_MonthPVP_Skill_StrSkill =
 	[3] = g_MonthPVP_Skill_StrSkill3,
 }
 
---预加载函数，可以而且只能在这里注册脚本关心的事件
+--预加载函数，可以而且只能在犫里注册脚本关心的事件
 function MonthPVP_Skill_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
 	-- 游戏窗口尺寸发生了变化
@@ -90,7 +90,7 @@ function MonthPVP_Skill_OnLoad()
 	m_Frame_UnifiedXPosition	= MonthPVP_Skill_Frame:GetProperty("UnifiedXPosition");
 	m_Frame_UnifiedYPosition	= MonthPVP_Skill_Frame:GetProperty("UnifiedYPosition");
 
-	-- 阵营技能图片
+	-- 狊营技能图片
 	g_MonthPVP_Skill_SkillItem[2] = MonthPVP_Skill_Level2_Item;
 	g_MonthPVP_Skill_SkillItem[3] = MonthPVP_Skill_Level3_Item;
 	g_MonthPVP_Skill_SkillItem[4] = MonthPVP_Skill_Level4_Item;

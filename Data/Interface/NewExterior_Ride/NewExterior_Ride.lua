@@ -2,10 +2,10 @@
 local g_NewExterior_Ride_UnifiedPosition = ""
 
 local EXTERIORFILTTING_TOTALKIND = 0;
-local g_TargetExteriorIndex = 0		--定位的外观索引，从1开始
-local g_TargetExteriorID = 0			--定位的外观ID
+local g_TargetExteriorIndex = 0		--???????,?1??
+local g_TargetExteriorID = 0			--?????ID
 
-local g_CurSelExteriorID = 0			--当前选择的外观ID，从1开始
+local g_CurSelExteriorID = 0			--???????ID,?1??
 
 local g_NeedChangeScrollSize = 1
 local g_NeedChangeCollectionListScrollSize = 1
@@ -14,16 +14,16 @@ local g_Distance = 1
 local g_Distance_Ori = 1
 local g_Distance_Max = 3
 local g_InitList = 0
-local g_ExteriorType = 3 --坐骑
+local g_ExteriorType = 3 --??
 local g_MaxBarNum = 0
 local g_BarList = {}
-local g_ViewMode = 0 --0是角色骑马1是只有马
+local g_ViewMode = 0 --0?????1????
 
 local g_MaxRideCardHaveRide = 0
 local g_RideCardBarList = {}
-local g_CameraHeight = 1     --摄影机高度
-local g_CameraDistance = 2   --摄影机距离
-local g_CameraPitch = 3      --摄影机角度
+local g_CameraHeight = 1     --?????
+local g_CameraDistance = 2   --?????
+local g_CameraPitch = 3      --?????
 local g_CameraPosition =
 {
 	--女性相关位置
@@ -39,12 +39,12 @@ local g_CurSubPage = 0
 local g_RideCollectionBarList = {}
 local g_MaxRideCollectionCount = 0
 
-local g_OrnamentState				= {		-- 状态
-	INVALID	= 0,							-- 无效
-	EMPTY	= 1,							-- 空闲
-	TIME	= 2,							-- 限时
-	TIMEOUT	= 3,							-- 过期
-	FOREVER	= 4,							-- 永久
+local g_OrnamentState				= {		-- ??
+	INVALID	= 0,							-- ??
+	EMPTY	= 1,							-- ??
+	TIME	= 2,							-- ??
+	TIMEOUT	= 3,							-- ??
+	FOREVER	= 4,							-- ??
 }
 --=========
 --PreLoad==
@@ -127,9 +127,9 @@ function NewExterior_Ride_OnEvent(event)
 		return
 	end
 	
-	if event == "OPEN_STALL_SALE"			-- 开始摆摊，还原试穿
-		or event == "PROGRESSBAR_SHOW"		-- 读进度条中，还原试穿
-		or event == "MODELID_CHANGE" 		-- 变身 关闭界面
+	if event == "OPEN_STALL_SALE"			-- ????,????
+		or event == "PROGRESSBAR_SHOW"		-- ?????,????
+		or event == "MODELID_CHANGE" 		-- ?? ????
 		then
 		NewExterior_Ride_CloseClick()
 		return
@@ -235,7 +235,7 @@ function NewExterior_Ride_OnEvent(event)
 	end
 	
 	-- FakeObject模型界面互斥
-	if ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then   --时装预览
+	if ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then   --????
 		if (this:IsVisible()) then
 			this:Hide()
 			return

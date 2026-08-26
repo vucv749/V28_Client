@@ -51,10 +51,10 @@ end
 --=========================================================
 function ManTuo_Gift_OnEvent(event)
 	if ( event == "UI_COMMAND" and tonumber(arg0) == g_UICOMMAND ) then
-		-- 0 关闭, 1 打开, 2 刷新, 3 二次确认框
+		-- 0 关睜, 1 打开, 2 刷新, 3 二次确认框
 		local nOpType 	= Get_XParam_INT(0)
 
-		-- 关闭界面
+		-- 关睜界面
 		if 0 == nOpType then	
 			if this:IsVisible() then
 				ManTuo_Gift_Close()
@@ -64,7 +64,7 @@ function ManTuo_Gift_OnEvent(event)
 		-- 打开界面
 		if 1 == nOpType then
 			-- 显示界面
-			-- 为了解决界面被遮挡的问题，先把界面关了
+			-- 为了解决界面被犣挡的问题，先把界面关了
 			-- if this:IsVisible() then
 			-- 	ManTuo_Gift_Close()
 			-- end
@@ -83,9 +83,9 @@ function ManTuo_Gift_OnEvent(event)
 		if(tonumber(arg0) ~= g_nObjCaredIDClient) then
 			return
 		end
-		-- 如果和NPC的距离大于一定距离或者被删除，自动关闭
+		-- 如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>g_MAX_OBJ_DISTANCE or arg1=="destroy") then
-			-- 关闭界面
+			-- 关睜界面
 			ManTuo_Gift_Close()
 		end	
 
@@ -127,7 +127,7 @@ end
 function ManTuo_Gift_Show()
 
 	for i = 1, table.getn(g_giftState) do
-		--设置展示道具
+		--设置牴示道具
 		local theAction = DataPool:CreateBindActionItemForShow(g_ShowItems[i].itemID,g_ShowItems[i].num)
 		if theAction:GetID() ~= 0 then
 			g_UI_Item.gift[i].btn:SetActionItem(theAction:GetID())
@@ -188,7 +188,7 @@ end
 
 
 --=========================================================
--- 关闭界面
+-- 关睜界面
 --=========================================================
 function ManTuo_Gift_Close()	
 	this:Hide()

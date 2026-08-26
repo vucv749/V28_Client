@@ -1,7 +1,7 @@
 local g_DaHua_Yure_Frame_UnifiedPosition
 local g_DaHua_Yure_NPCPosX = 159
 local g_DaHua_Yure_NPCPosZ = 109
-local g_DaHua_Yure_Name = "ÆÐÌáÀÏ×æ"
+local g_DaHua_Yure_Name = "B° Ð« Lão T±"
 
 local g_DaHua_Yure_IsHaveDone2317 = 0
 local g_DaHua_Yure_IsHaveDone2318 = 0
@@ -15,7 +15,7 @@ local g_DaHua_Yure_IsShowRedPoint3 = 0
 function DaHua_Yure_PreLoad()
 	this:RegisterEvent("UI_COMMAND", true)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--½ø³¡¾°¹Ø±Õ½çÃæ
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("ADJEST_UI_POS",false)
 end
 

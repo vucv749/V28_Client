@@ -1,8 +1,8 @@
 -- fuqishop
 
 ---------------------------------------------------------------------------
-local g_Controls = {};									-- 控件
-local g_PerPageNum = 12;                               -- 单页最大商品个数
+local g_Controls = {};									-- ??
+local g_PerPageNum = 12;                               -- ????????
 local g_Position = "{{0.500000,-190.000000},{0.500000,-220.000000}}";
 local g_DaiBiMD = 923
 local g_Curpage = 1
@@ -21,9 +21,9 @@ function FuQi_Shop_PreLoad()
 	this : RegisterEvent( "UPDATE_FUQISHOP" );
 	this:RegisterEvent("ADJEST_UI_POS",false)
 	this : RegisterEvent( "UPDATE_BWDAIBISHOPINFO" );	
-	this : RegisterEvent( "VIEW_RESOLUTION_CHANGED" );		-- 游戏分辨率发生了变化
-	this : RegisterEvent( "GAMELOGIN_SELECTCHARACTER" );	-- 选择人物
-	this : RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- 离开场景
+	this : RegisterEvent( "VIEW_RESOLUTION_CHANGED" );		-- ??????????
+	this : RegisterEvent( "GAMELOGIN_SELECTCHARACTER" );	-- ????
+	this : RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- ????
 	this : RegisterEvent( "OBJECT_CARED_EVENT" );
 end
 
@@ -186,16 +186,16 @@ function FuQi_Shop_OnEvent(event)
 			return
 		end
 
-		-- 如果和NPC的距离大于一定距离或者被删除，自动关闭
+		-- 如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
-			-- 关闭界面
+			-- 关睜界面
 			FuQi_Shop_CloseShop()
 		end	
 	end
 end
 
 --*********************************
--- 清空控件
+-- 清繝控件
 --*********************************
 function FuQi_Shop_CleanupUIControls()
 	FuQi_Shop_ReviewBtn:Hide()
@@ -227,7 +227,7 @@ end
 -- 显示[代币商店]
 --*********************************
 function FuQi_Shop_OnUpdateDaiBiShop()
-	-- 清空控件
+	-- 清繝控件
 	FuQi_Shop_CleanupUIControls()
 
 	local nDaibi = DataPool:GetPlayerMission_DataRound(g_DaiBiMD)
@@ -279,7 +279,7 @@ function FuQi_Shop_OnUpdateDaiBiShop()
        	 	if realnum > 0 then
        	 		g_Controls.ItemInfo.Num[i]:SetText(realnum)
        	 	else
-  				g_Controls.ItemInfo.Price[i]:SetText("#{FQSD_230328_41}")--售罄
+  				g_Controls.ItemInfo.Price[i]:SetText("#{FQSD_230328_41}")--??
        	 		g_Controls.ItemInfo.Num[i]:SetText("")
        	 		g_Controls.ItemInfo.DaiBiPic[i]:Hide()
        	 	end

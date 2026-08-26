@@ -104,7 +104,7 @@ function PetIdentify_OnEvent(event)
 			return;
 		end
 
-		if( arg0~= nil and Current~=1) then	--重新鉴定装备资质不用移除装备
+		if( arg0~= nil and Current~=1) then	--??????????????
 			if (PetIdentify_Item == tonumber(arg0) ) then
 				PetIdentify_Resume_Equip_Gem(1)			
 			end
@@ -218,10 +218,10 @@ function PetIdentify_Update(Item_index)
 	end
 	
 end
-local EB_FREE_BIND = 0;				-- 无绑定限制
-local EB_BINDED = 1;				-- 已经绑定
-local	EB_GETUP_BIND =2			-- 拾取绑定
-local	EB_EQUIP_BIND =3			-- 装备绑定
+local EB_FREE_BIND = 0;				-- ?????
+local EB_BINDED = 1;				-- ????
+local	EB_GETUP_BIND =2			-- ????
+local	EB_EQUIP_BIND =3			-- ????
 function PetIdentify_Buttons_Clicked()
 	if PetIdentify_Item ~= -1 and PlayerPackage : GetItemTableIndex( PetIdentify_Item ) ~= -1 then
 		

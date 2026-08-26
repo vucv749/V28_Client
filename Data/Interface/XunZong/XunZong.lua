@@ -40,17 +40,17 @@ function XunZong_Update( nResult, nIndex )
 		local strFaceImage = DataPool:GetLookUpPartInfo( "PORTRAIT" );
 		XunZong_PlayerHead:SetProperty("Image", tostring(strFaceImage));
 		XunZong_ID:SetText( "ID:"..tostring( DataPool:GetLookUpPartInfo( "ID_TEXT" ) ) );
-		XunZong_Name:SetText( "ÐÕÃû:"..DataPool:GetLookUpPartInfo("NAME"  ) );
-		XunZong_Level:SetText( "¼¶±ð:"..tostring( DataPool:GetLookUpPartInfo( "LEVEL" ) ) );
-		XunZong_MenPai:SetText( "ÃÅÅÉ:"..DataPool:GetLookUpPartInfo( "MENPAI_TEXT" ) );
-		XunZong_Confraternity:SetText( "°ï»áÃû³Æ:"..DataPool:GetLookUpPartInfo(  "GUID_NAME" ) );
+		XunZong_Name:SetText( "Tính danh:"..DataPool:GetLookUpPartInfo("NAME"  ) );
+		XunZong_Level:SetText( "C¤p B§c:"..tostring( DataPool:GetLookUpPartInfo( "LEVEL" ) ) );
+		XunZong_MenPai:SetText( "Môn phái:"..DataPool:GetLookUpPartInfo( "MENPAI_TEXT" ) );
+		XunZong_Confraternity:SetText( "Bang hµi tên:"..DataPool:GetLookUpPartInfo(  "GUID_NAME" ) );
 		XunZong_GuildLeague:SetText( "#{TM_20080311_30}"..DataPool:GetLookUpPartInfo("GUILD_LEAGUE_NAME") );
-		XunZong_Explain:SetText( "ÐÄÇé:"..DataPool:GetLookUpPartInfo(  "MOOD" ) );
-		XunZong_Agname:SetText( "³ÆºÅ:"..DataPool:GetLookUpPartInfo( "TITLE" ) );
-		XunZong_Locus:SetText( "Î»ÖÃ:"..DataPool:GetLookUpPartInfo( "POS" ) );
+		XunZong_Explain:SetText( "Tâm tình:"..DataPool:GetLookUpPartInfo(  "MOOD" ) );
+		XunZong_Agname:SetText( "Danh hi®u:"..DataPool:GetLookUpPartInfo( "TITLE" ) );
+		XunZong_Locus:SetText( "V¸ trí:"..DataPool:GetLookUpPartInfo( "POS" ) );
 		--DataPool:GetLookUpPartInfo( "POS" );
-		XunZong_fettle:SetText( "×´Ì¬:"..DataPool:GetLookUpPartInfo( "STATE" ) );
-		XunZong_TeamInfo:SetText( "¶ÓÎé:"..DataPool:GetLookUpPartInfo( "TEAM_NUMBER" ) );
+		XunZong_fettle:SetText( "TrÕng thái:"..DataPool:GetLookUpPartInfo( "STATE" ) );
+		XunZong_TeamInfo:SetText( "Ðµi ngû:"..DataPool:GetLookUpPartInfo( "TEAM_NUMBER" ) );
 		this:Show();
 	else
 		XunZong_OnHide();
@@ -61,11 +61,11 @@ end
 function XunZong_Show( arg_0, arg_1 )
 	XunZong_PlayerHead:SetProperty("Image", "");
 	XunZong_ID:SetText( "ID:");
-	XunZong_Name:SetText( "ÐÕÃû:" );
-	XunZong_Level:SetText( "¼¶±ð:" );
-	XunZong_MenPai:SetText( "ÃÅÅÉ:");
+	XunZong_Name:SetText( "Tính danh:" );
+	XunZong_Level:SetText( "C¤p B§c:" );
+	XunZong_MenPai:SetText( "Môn phái:");
 		--XunZong_Confraternity:SetText( "°ï»áÃû³Æ:");
-	XunZong_Confraternity:SetText( "#RÕýÔÚ²éÑ¯,ÇëÉÔºò..." );
+	XunZong_Confraternity:SetText( "#RðAng · tu¥n tra, Thïnh ch¶ mµt chút. . ." );
 	XunZong_GuildLeague:SetText( "#{TM_20080311_30}");
 		--XunZong_Explain:SetText( "ÐÄÇé:" );
 	XunZong_Explain:Hide();

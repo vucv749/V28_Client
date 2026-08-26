@@ -10,55 +10,55 @@ local MAX_OBJ_DISTANCE = 3.0
 local objCared = -1
 local g_Object = -1
 
-local g_BossBarList		= {} --bossÊôÐÔ¿ÉÑ¡ÁÐ±í
-local g_RandomBarList		= {} --bossÊôÐÔ¿ÉÑ¡ÁÐ±í
-local g_ShaXing_BossChoice_Fenye = {}	--ËÄ¸öbossÑ¡Ôñ·ÖÒ³
-local g_ShaXing_BossChoice_FenyeOk = {}	--ËÄ¸öboss ÊÇ·ñÍ¨¹Ø±ê¼Ç
-local g_ShaXing_BossChoice_FenyeAbandon = {}	--ËÄ¸öboss ÊÇ·ñÍ¨¹Ø±ê¼Ç
-local g_ShaXing_BossChoice_BossModeList = {}	--4¸öbossÄ£Ê½Ñ¡Ôñ
+local g_BossBarList		= {} --boss??????
+local g_RandomBarList		= {} --boss??????
+local g_ShaXing_BossChoice_Fenye = {}	--??boss????
+local g_ShaXing_BossChoice_FenyeOk = {}	--??boss ??????
+local g_ShaXing_BossChoice_FenyeAbandon = {}	--??boss ??????
+local g_ShaXing_BossChoice_BossModeList = {}	--4?boss????
 
-local g_SXBossImg =	--bossÄÑ¶È²»Í¬Í¼Æ¬
+local g_SXBossImg =	--boss??????
 {
-	[1] = {nName="ËÎ½ª",nEasyPoint=1000,nNormalPoint=1000,nHardPoint=1000,nMaxPoint=1000,nEasyTips="#{XSX_220705_277}",nNormalTips="#{XSX_220705_278}",nHardTips="#{XSX_220705_279}",nMaxTips="#{XSX_240326_107}",nEasyImg="set:ShaXing12 image:ShaXing_sj1",nNormalImg="set:ShaXing12 image:ShaXing_sj2",nHardImg="set:ShaXing13 image:ShaXing_sj3",nMaxImg="set:ShaXing13 image:ShaXing_sj4"},
-	[2] = {nName="Â¬¾ýÒÝ",nEasyPoint=1000,nNormalPoint=1000,nHardPoint=1000,nMaxPoint=1000,nEasyTips="#{XSX_220705_277}",nNormalTips="#{XSX_220705_278}",nHardTips="#{XSX_220705_279}",nMaxTips="#{XSX_240326_107}",nEasyImg="set:ShaXing6 image:ShaXing_ljy1",nNormalImg="set:ShaXing6 image:ShaXing_ljy2",nHardImg="set:ShaXing7 image:ShaXing_ljy3",nMaxImg="set:ShaXing7 image:ShaXing_ljy4"},
-	[3] = {nName="Àî¿ý",nEasyPoint=1000,nNormalPoint=1000,nHardPoint=1000,nMaxPoint=1000,nEasyTips="#{XSX_220705_277}",nNormalTips="#{XSX_220705_278}",nHardTips="#{XSX_220705_279}",nMaxTips="#{XSX_240326_107}",nEasyImg="set:ShaXing8 image:ShaXing_lk1",nNormalImg="set:ShaXing8 image:ShaXing_lk2",nHardImg="set:ShaXing9 image:ShaXing_lk3",nMaxImg="set:ShaXing9 image:ShaXing_lk4"},
-	[4] = {nName="Â³Ö¾Éú",nEasyPoint=1000,nNormalPoint=1000,nHardPoint=1000,nMaxPoint=1000,nEasyTips="#{XSX_220705_277}",nNormalTips="#{XSX_220705_278}",nHardTips="#{XSX_220705_279}",nMaxTips="#{XSX_240326_107}",nEasyImg="set:ShaXing10 image:ShaXing_lzs1",nNormalImg="set:ShaXing10 image:ShaXing_lzs2",nHardImg="set:ShaXing11 image:ShaXing_lzs3",nMaxImg="set:ShaXing11 image:ShaXing_lzs4"},
-	[5] = {nName="¹ØÊ¢",nEasyPoint=1000,nNormalPoint=1000,nHardPoint=1000,nMaxPoint=1000,nEasyTips="#{XSX_220705_277}",nNormalTips="#{XSX_220705_278}",nHardTips="#{XSX_220705_279}",nMaxTips="#{XSX_240326_107}",nEasyImg="set:ShaXing2 image:ShaXing_gs1",nNormalImg="set:ShaXing2 image:ShaXing_gs2",nHardImg="set:ShaXing3 image:ShaXing_gs3",nMaxImg="set:ShaXing3 image:ShaXing_gs4"},
-	[6] = {nName="ÎâÓÀ",nEasyPoint=1000,nNormalPoint=1000,nHardPoint=1000,nMaxPoint=1000,nEasyTips="#{XSX_220705_277}",nNormalTips="#{XSX_220705_278}",nHardTips="#{XSX_220705_279}",nMaxTips="#{XSX_240326_107}",nEasyImg="set:ShaXing14 image:ShaXing_wy1",nNormalImg="set:ShaXing14 image:ShaXing_wy2",nHardImg="set:ShaXing15 image:ShaXing_wy3",nMaxImg="set:ShaXing15 image:ShaXing_wy4"},
-	[7] = {nName="¹«ËïÊ¥",nEasyPoint=1000,nNormalPoint=1000,nHardPoint=1000,nMaxPoint=1000,nEasyTips="#{XSX_220705_277}",nNormalTips="#{XSX_220705_278}",nHardTips="#{XSX_220705_279}",nMaxTips="#{XSX_240326_107}",nEasyImg="set:ShaXing4 image:ShaXing_gss1",nNormalImg="set:ShaXing4 image:ShaXing_gss2",nHardImg="set:ShaXing5 image:ShaXing_gss3",nMaxImg="set:ShaXing5 image:ShaXing_gss4"},
+	[1] = {nName="T¯ng Khß½ng",nEasyPoint=1000,nNormalPoint=1000,nHardPoint=1000,nMaxPoint=1000,nEasyTips="#{XSX_220705_277}",nNormalTips="#{XSX_220705_278}",nHardTips="#{XSX_220705_279}",nMaxTips="#{XSX_240326_107}",nEasyImg="set:ShaXing12 image:ShaXing_sj1",nNormalImg="set:ShaXing12 image:ShaXing_sj2",nHardImg="set:ShaXing13 image:ShaXing_sj3",nMaxImg="set:ShaXing13 image:ShaXing_sj4"},
+	[2] = {nName="Lß Quân D§t",nEasyPoint=1000,nNormalPoint=1000,nHardPoint=1000,nMaxPoint=1000,nEasyTips="#{XSX_220705_277}",nNormalTips="#{XSX_220705_278}",nHardTips="#{XSX_220705_279}",nMaxTips="#{XSX_240326_107}",nEasyImg="set:ShaXing6 image:ShaXing_ljy1",nNormalImg="set:ShaXing6 image:ShaXing_ljy2",nHardImg="set:ShaXing7 image:ShaXing_ljy3",nMaxImg="set:ShaXing7 image:ShaXing_ljy4"},
+	[3] = {nName="Lý Khôi",nEasyPoint=1000,nNormalPoint=1000,nHardPoint=1000,nMaxPoint=1000,nEasyTips="#{XSX_220705_277}",nNormalTips="#{XSX_220705_278}",nHardTips="#{XSX_220705_279}",nMaxTips="#{XSX_240326_107}",nEasyImg="set:ShaXing8 image:ShaXing_lk1",nNormalImg="set:ShaXing8 image:ShaXing_lk2",nHardImg="set:ShaXing9 image:ShaXing_lk3",nMaxImg="set:ShaXing9 image:ShaXing_lk4"},
+	[4] = {nName="L² Chí Sinh",nEasyPoint=1000,nNormalPoint=1000,nHardPoint=1000,nMaxPoint=1000,nEasyTips="#{XSX_220705_277}",nNormalTips="#{XSX_220705_278}",nHardTips="#{XSX_220705_279}",nMaxTips="#{XSX_240326_107}",nEasyImg="set:ShaXing10 image:ShaXing_lzs1",nNormalImg="set:ShaXing10 image:ShaXing_lzs2",nHardImg="set:ShaXing11 image:ShaXing_lzs3",nMaxImg="set:ShaXing11 image:ShaXing_lzs4"},
+	[5] = {nName="Quan Th¸nh",nEasyPoint=1000,nNormalPoint=1000,nHardPoint=1000,nMaxPoint=1000,nEasyTips="#{XSX_220705_277}",nNormalTips="#{XSX_220705_278}",nHardTips="#{XSX_220705_279}",nMaxTips="#{XSX_240326_107}",nEasyImg="set:ShaXing2 image:ShaXing_gs1",nNormalImg="set:ShaXing2 image:ShaXing_gs2",nHardImg="set:ShaXing3 image:ShaXing_gs3",nMaxImg="set:ShaXing3 image:ShaXing_gs4"},
+	[6] = {nName="Ngô Vînh",nEasyPoint=1000,nNormalPoint=1000,nHardPoint=1000,nMaxPoint=1000,nEasyTips="#{XSX_220705_277}",nNormalTips="#{XSX_220705_278}",nHardTips="#{XSX_220705_279}",nMaxTips="#{XSX_240326_107}",nEasyImg="set:ShaXing14 image:ShaXing_wy1",nNormalImg="set:ShaXing14 image:ShaXing_wy2",nHardImg="set:ShaXing15 image:ShaXing_wy3",nMaxImg="set:ShaXing15 image:ShaXing_wy4"},
+	[7] = {nName="Công Tôn Thánh",nEasyPoint=1000,nNormalPoint=1000,nHardPoint=1000,nMaxPoint=1000,nEasyTips="#{XSX_220705_277}",nNormalTips="#{XSX_220705_278}",nHardTips="#{XSX_220705_279}",nMaxTips="#{XSX_240326_107}",nEasyImg="set:ShaXing4 image:ShaXing_gss1",nNormalImg="set:ShaXing4 image:ShaXing_gss2",nHardImg="set:ShaXing5 image:ShaXing_gss3",nMaxImg="set:ShaXing5 image:ShaXing_gss4"},
 }
-local g_SXBossBuffInfo = --bossÊôÐÔÑ¡Ôñ¼Ó·ÖÇé¿ö
+local g_SXBossBuffInfo = --boss????????
 {
-	[1] = {nwarning="²»³Ô·Å´ó",nName="#{XSX_220705_289}",nImg="set:FBSkill_2 image:FBSkill_2_1",nPoint={[0] =0,[1] =350,[2] =400,[3] =400},nTooltip="#{XSX_220705_256}",nTooltip2="#{XSX_240326_79}"},
-	[2] = {nwarning="ÎüÑª",nName="#{XSX_220705_290}",nImg="set:FBSkill_2 image:FBSkill_2_3",nPoint={[0] =0,[1] =200,[2] =250,[3] =250},nTooltip="#{XSX_220705_257}",nTooltip2="#{XSX_240326_80}"},
-	[3] = {nwarning="¼¼ÄÜ¼Ó¿ì",nName="#{XSX_220705_291}",nImg="set:FBSkill_2 image:FBSkill_2_2",nPoint={[0] =0,[1] =350,[2] =400,[3] =400},nTooltip="#{XSX_220705_258}",nTooltip2="#{XSX_240326_81}"},
-	[4] = {nwarning="¿ñ±©",nName="#{XSX_220705_292}",nImg="set:FBSkill_2 image:FBSkill_2_4",nPoint={[0] =0,[1] =300,[2] =350,[3] =350},nTooltip="#{XSX_220705_259}",nTooltip2="#{XSX_240326_82}"},
-	[5] = {nwarning="ÐéÈõ´ò»÷",nName="#{XSX_240326_1}",nImg="set:FBSkill_2 image:FBSkill_2_12",nPoint={[0] =0,[1] =200,[2] =250,[3] =250},nTooltip="#{XSX_240326_10}",nTooltip2="#{XSX_240326_83}"},
-	[6] = {nwarning="¸´³ð»¤¶Ü",nName="#{XSX_240326_2}",nImg="set:FBSkill_2 image:FBSkill_2_16",nPoint={[0] =0,[1] =250,[2] =300,[3] =300},nTooltip="#{XSX_240326_11}",nTooltip2="#{XSX_240326_84}"},
-	[7] = {nwarning="¹¥»÷Ç¿»¯",nName="#{XSX_240326_3}",nImg="set:FBSkill_2 image:FBSkill_2_15",nPoint={[0] =0,[1] =300,[2] =350,[3] =350},nTooltip="#{XSX_240326_12}",nTooltip2="#{XSX_240326_85}"},
+	[1] = {nwarning="Không ån phóng ðÕi",nName="#{XSX_220705_289}",nImg="set:FBSkill_2 image:FBSkill_2_1",nPoint={[0] =0,[1] =350,[2] =400,[3] =400},nTooltip="#{XSX_220705_256}",nTooltip2="#{XSX_240326_79}"},
+	[2] = {nwarning="H¤p Huyªt",nName="#{XSX_220705_290}",nImg="set:FBSkill_2 image:FBSkill_2_3",nPoint={[0] =0,[1] =200,[2] =250,[3] =250},nTooltip="#{XSX_220705_257}",nTooltip2="#{XSX_240326_80}"},
+	[3] = {nwarning="KÛ nång nhanh h½n",nName="#{XSX_220705_291}",nImg="set:FBSkill_2 image:FBSkill_2_2",nPoint={[0] =0,[1] =350,[2] =400,[3] =400},nTooltip="#{XSX_220705_258}",nTooltip2="#{XSX_240326_81}"},
+	[4] = {nwarning="Cu°ng bÕo",nName="#{XSX_220705_292}",nImg="set:FBSkill_2 image:FBSkill_2_4",nPoint={[0] =0,[1] =300,[2] =350,[3] =350},nTooltip="#{XSX_220705_259}",nTooltip2="#{XSX_240326_82}"},
+	[5] = {nwarning="Hß Nhßþc ðä kích",nName="#{XSX_240326_1}",nImg="set:FBSkill_2 image:FBSkill_2_12",nPoint={[0] =0,[1] =200,[2] =250,[3] =250},nTooltip="#{XSX_240326_10}",nTooltip2="#{XSX_240326_83}"},
+	[6] = {nwarning="Báo thù hµ thuçn",nName="#{XSX_240326_2}",nImg="set:FBSkill_2 image:FBSkill_2_16",nPoint={[0] =0,[1] =250,[2] =300,[3] =300},nTooltip="#{XSX_240326_11}",nTooltip2="#{XSX_240326_84}"},
+	[7] = {nwarning="Cß¶ng hóa công kích",nName="#{XSX_240326_3}",nImg="set:FBSkill_2 image:FBSkill_2_15",nPoint={[0] =0,[1] =300,[2] =350,[3] =350},nTooltip="#{XSX_240326_12}",nTooltip2="#{XSX_240326_85}"},
 }
 
-local g_SXRandomInfo = --²»Í¬³¡µØÔªËØÍ¼Æ¬
+local g_SXRandomInfo = --????????
 {
-	[0] = {nwarning="³ÖÐøÏÝÚå",nName="#{XSX_220705_262}",nImg="set:FBSkill_2 image:FBSkill_2_6",nPoint={[0] =0,[1] =300,[2] =350,[3] =350},nTooltip="#{XSX_220705_267}",nTooltip2="#{XSX_240326_86}"},
-	[1] = {nwarning="¼ÓÑªÈ¦",nName="#{XSX_220705_263}",nImg="set:FBSkill_2 image:FBSkill_2_8",nPoint={[0] =0,[1] =150,[2] =200,[3] =200},nTooltip="#{XSX_220705_268}",nTooltip2="#{XSX_240326_87}"},
-	[2] = {nwarning="¼õÖÎÁÆ",nName="#{XSX_220705_264}",nImg="set:FBSkill_2 image:FBSkill_2_5",nPoint={[0] =0,[1] =200,[2] =250,[3] =250},nTooltip="#{XSX_220705_269}",nTooltip2="#{XSX_240326_88}"},
-	[3] = {nwarning="ÎüÀ¶",nName="#{XSX_220705_265}",nImg="set:FBSkill_2 image:FBSkill_2_9",nPoint={[0] =0,[1] =150,[2] =200,[3] =200},nTooltip="#{XSX_220705_270}",nTooltip2="#{XSX_240326_89}"},
-	[4] = {nwarning="Ñ£ÔÎ",nName="#{XSX_220705_266}",nImg="set:FBSkill_2 image:FBSkill_2_7",nPoint={[0] =0,[1] =250,[2] =300,[3] =300},nTooltip="#{XSX_220705_271}",nTooltip2="#{XSX_240326_90}"},
-	[5] = {nwarning="¿Ö¾åÐéÈõ",nName="#{XSX_240326_13}",nImg="set:FBSkill_2 image:FBSkill_2_11",nPoint={[0] =0,[1] =200,[2] =250,[3] =250},nTooltip="#{XSX_240326_14}",nTooltip2="#{XSX_240326_91}"},
-	[6] = {nwarning="ÐÄÁé¿ØÖÆ",nName="#{XSX_240326_15}",nImg="set:FBSkill_3 image:FBSkill_3_2",nPoint={[0] =0,[1] =250,[2] =300,[3] =300},nTooltip="#{XSX_240326_16}",nTooltip2="#{XSX_240326_92}"},
-	[7] = {nwarning="ÕÙ»½Ð¡¹Ö",nName="#{XSX_240326_17}",nImg="set:FBSkill_3 image:FBSkill_3_1",nPoint={[0] =0,[1] =250,[2] =300,[3] =300},nTooltip="#{XSX_240326_18}",nTooltip2="#{XSX_240326_93}"},
-	[8] = {nwarning="Á¬Ïß",nName="#{XSX_240326_19}",nImg="set:FBSkill_2 image:FBSkill_2_13",nPoint={[0] =0,[1] =300,[2] =350,[3] =350},nTooltip="#{XSX_240326_20}",nTooltip2="#{XSX_240326_94}"},
-	[9] = {nwarning="Õ¨µ¯",nName="#{XSX_240326_21}",nImg="set:FBSkill_2 image:FBSkill_2_14",nPoint={[0] =0,[1] =300,[2] =350,[3] =350},nTooltip="#{XSX_240326_22}",nTooltip2="#{XSX_240326_95}"},
+	[0] = {nwarning="Liên tøc b¦y r§p",nName="#{XSX_220705_262}",nImg="set:FBSkill_2 image:FBSkill_2_6",nPoint={[0] =0,[1] =300,[2] =350,[3] =350},nTooltip="#{XSX_220705_267}",nTooltip2="#{XSX_240326_86}"},
+	[1] = {nwarning="Gia Huyªt Khuyên",nName="#{XSX_220705_263}",nImg="set:FBSkill_2 image:FBSkill_2_8",nPoint={[0] =0,[1] =150,[2] =200,[3] =200},nTooltip="#{XSX_220705_268}",nTooltip2="#{XSX_240326_87}"},
+	[2] = {nwarning="Giäm Tr¸ Li®u",nName="#{XSX_220705_264}",nImg="set:FBSkill_2 image:FBSkill_2_5",nPoint={[0] =0,[1] =200,[2] =250,[3] =250},nTooltip="#{XSX_220705_269}",nTooltip2="#{XSX_240326_88}"},
+	[3] = {nwarning="H¤p Lam",nName="#{XSX_220705_265}",nImg="set:FBSkill_2 image:FBSkill_2_9",nPoint={[0] =0,[1] =150,[2] =200,[3] =200},nTooltip="#{XSX_220705_270}",nTooltip2="#{XSX_240326_89}"},
+	[4] = {nwarning="Mê muµi",nName="#{XSX_220705_266}",nImg="set:FBSkill_2 image:FBSkill_2_7",nPoint={[0] =0,[1] =250,[2] =300,[3] =300},nTooltip="#{XSX_220705_271}",nTooltip2="#{XSX_240326_90}"},
+	[5] = {nwarning="Khüng Cø Hß Nhßþc",nName="#{XSX_240326_13}",nImg="set:FBSkill_2 image:FBSkill_2_11",nPoint={[0] =0,[1] =200,[2] =250,[3] =250},nTooltip="#{XSX_240326_14}",nTooltip2="#{XSX_240326_91}"},
+	[6] = {nwarning="Tâm linh kh¯ng chª",nName="#{XSX_240326_15}",nImg="set:FBSkill_3 image:FBSkill_3_2",nPoint={[0] =0,[1] =250,[2] =300,[3] =300},nTooltip="#{XSX_240326_16}",nTooltip2="#{XSX_240326_92}"},
+	[7] = {nwarning="G÷i v« Ti¬u Quái",nName="#{XSX_240326_17}",nImg="set:FBSkill_3 image:FBSkill_3_1",nPoint={[0] =0,[1] =250,[2] =300,[3] =300},nTooltip="#{XSX_240326_18}",nTooltip2="#{XSX_240326_93}"},
+	[8] = {nwarning="Liên Tuyªn",nName="#{XSX_240326_19}",nImg="set:FBSkill_2 image:FBSkill_2_13",nPoint={[0] =0,[1] =300,[2] =350,[3] =350},nTooltip="#{XSX_240326_20}",nTooltip2="#{XSX_240326_94}"},
+	[9] = {nwarning="Bom",nName="#{XSX_240326_21}",nImg="set:FBSkill_2 image:FBSkill_2_14",nPoint={[0] =0,[1] =300,[2] =350,[3] =350},nTooltip="#{XSX_240326_22}",nTooltip2="#{XSX_240326_95}"},
 }
-local g_ShaXing_ModeMaxNum = 4	--×î´óÄÑ¶È¸öÊý
-local g_ShaXing_CloseTick = 1	--µ¹¼ÆÊ±
-local g_ShaXing_FenyeIdx = -1	--µÚ¼¸¸ö·ÖÒ³
-local g_ShaXing_FenyeBossIdx = -1	--µ±Ç°¸±±¾µÚ¼¸¸öbossË÷Òý
-local g_SXBossCheck = {0,0,0,0,0,0,0}--7¸öboss×´Ì¬Ñ¡ÔñÇé¿ö
-local g_SXRandomCheck = {0,0,0,0,0,0}--6¸ö³¡µØÔªËØÑ¡ÔñÇé¿ö
-local g_SXRandomIdxList = {1,2,3,4,6,8}--6¸ö³¡µØÔªËØË÷Òý£¨·þÎñÆ÷Ëæ»ú£©
-local g_SXBossAbandon = {0,0,0,0}--boss·ÅÆúÇé¿ö
+local g_ShaXing_ModeMaxNum = 4	--??????
+local g_ShaXing_CloseTick = 1	--???
+local g_ShaXing_FenyeIdx = -1	--?????
+local g_ShaXing_FenyeBossIdx = -1	--???????boss??
+local g_SXBossCheck = {0,0,0,0,0,0,0}--7?boss??????
+local g_SXRandomCheck = {0,0,0,0,0,0}--6?????????
+local g_SXRandomIdxList = {1,2,3,4,6,8}--6???????(?????)
+local g_SXBossAbandon = {0,0,0,0}--boss????
 local g_ShaXing_targetId = -1;
 --===============================================
 -- OnLoad()
@@ -130,22 +130,22 @@ function ShaXing_BossChoice_OnEvent(event)
 			-- objCared = DataPool : GetNPCIDByServerID(g_ShaXing_targetId);
 			-- ShaXing_BossChoice_BeginCareObject(objCared)
 		-- end
-		if Get_XParam_INT(1) > 0 then --µÚ¼¸¸öboss
+		if Get_XParam_INT(1) > 0 then --???boss
 			ShaXing_BossChoice_Open(Get_XParam_INT(1),Get_XParam_INT(2),Get_XParam_INT(3),Get_XParam_INT(4),Get_XParam_INT(5))
 		end
 	elseif (event == "UI_COMMAND" and tonumber(arg0) == 89331104 ) then
 		--PushDebugMessage("test idx="..Get_XParam_INT(1))
-		if Get_XParam_INT(1) > 0 then --µÚ¼¸¸öboss
+		if Get_XParam_INT(1) > 0 then --???boss
 			ShaXing_BossChoice_OpenFenye(Get_XParam_INT(1),Get_XParam_INT(2),Get_XParam_INT(3),Get_XParam_INT(4),Get_XParam_INT(5),Get_XParam_INT(6),Get_XParam_INT(7),Get_XParam_INT(8),Get_XParam_INT(9))
 		end
 	elseif (event == "UI_COMMAND" and tonumber(arg0) == 89331106 ) then
 		--Ô¤¸æ½çÃæ
 		--PushDebugMessage("test Ô¤¸æ½çÃæIDx="..Get_XParam_INT(1))
-		if Get_XParam_INT(0) > 0 then --µÚ¼¸¸öboss
+		if Get_XParam_INT(0) > 0 then --???boss
 			ShaXing_BossChoice_JustShow(Get_XParam_INT(0),Get_XParam_INT(1),Get_XParam_INT(2),Get_XParam_INT(3),Get_XParam_INT(4),Get_XParam_INT(5),Get_XParam_INT(6))
 		end
 	elseif (event == "UI_COMMAND" and tonumber(arg0) == 89331102 ) then
-		--¿ª¹Ö³É¹¦ ¹Ø±Õ´°¿Ú
+		--¿ª¹Ö³É¹¦ ¹Ø± ´°¿Ú
 		ShaXing_BossChoice_OnClose()
 	end
 	if (event == "OBJECT_CARED_EVENT" and this:IsVisible()) then
@@ -265,7 +265,7 @@ function ShaXing_BossChoice_Open(nSelectIdx,nBossIdx,nBossAbandonList,nRandomLis
 	end
 	
 	--bossÄ£Ê½Ä¬ÈÏÑ¡¼òµ¥	
-	--Õ¹Ê¾boss Ä¬ÈÏÕ¹Ê¾ÄÑ¶È1
+	-- ¹Ê¾boss Ä¬ÈÏ ¹Ê¾ÄÑ¶È1
 	ShaXing_BossChoiceFakeObject:SetProperty( "Image", g_SXBossImg[nBossIdx].nEasyImg )
 	for index=1,table.getn(g_ShaXing_BossChoice_BossModeList)  do
 		if index == 1 then
@@ -307,7 +307,7 @@ function ShaXing_BossChoice_Open(nSelectIdx,nBossIdx,nBossAbandonList,nRandomLis
 end
 
 --=========================================================
---²»Í¬ÄÑ¶ÈÕ¹Ê¾Çø²»Ò»Ñù
+--²»Í¬ÄÑ¶È ¹Ê¾Çø²»Ò»Ñù
 --nBossMode ÄÑ¶ÈÄ£Ê½  
 --nIsReset ÊÇ·ñÖØÖÃ
 --nIsEnable °´Å¥ÊÇ·ñ¿ÉÑ¡
@@ -329,8 +329,8 @@ function ShaXing_BossChoice_ShowAll(nBossMode,nIsReset,nIsEnable,nIsUseList,nBos
 		g_BossChoiceList[7] = math.floor(math.mod(nBossChoiceList,10000000)/1000000) 
 	end
 	if nIsReset == 1 then
-		g_SXBossCheck = {0,0,0,0,0,0,0}--7¸öboss×´Ì¬Ñ¡ÔñÇé¿ö
-		g_SXRandomCheck = {0,0,0,0,0,0}--6¸ö³¡µØÔªËØÑ¡ÔñÇé¿ö
+		g_SXBossCheck = {0,0,0,0,0,0,0}--7?boss??????
+		g_SXRandomCheck = {0,0,0,0,0,0}--6?????????
 	end 
 	
 	--³¡µØÔªËØÑ¡Ôñ
@@ -347,12 +347,12 @@ function ShaXing_BossChoice_ShowAll(nBossMode,nIsReset,nIsEnable,nIsUseList,nBos
 	
 	--PushDebugMessage("test Ç°Èý¸öÑ¡Ïî A="..g_SXBossCheck[1].." B="..g_SXBossCheck[2].." C="..g_SXBossCheck[3])
 	if nBossMode < g_ShaXing_ModeMaxNum then
-		--Ç°Èý¸öÄÑ¶ÈÕ¹Ê¾Ä£Ê½
+		--Ç°Èý¸öÄÑ¶È ¹Ê¾Ä£Ê½
 		ShaXing_BossChoice_Right1:Show();
 		ShaXing_BossChoice_Right2:Hide();
-		g_BossBarList		= {} --bossÊôÐÔ¿ÉÑ¡ÁÐ±í
-		g_RandomBarList		= {} --bossÊôÐÔ¿ÉÑ¡ÁÐ±í
-		--bossÊôÐÔÀ©Õ¹Çø
+		g_BossBarList		= {} --boss??????
+		g_RandomBarList		= {} --boss??????
+		--bossÊôÐÔÀ© ¹Çø
 		ShaXing_BossChoice_Add1Frame_List:Clear()
 		--¼ÓÔØ²»Í¬¸öÊý
 		local nBossMaxItemNum = 4
@@ -364,13 +364,13 @@ function ShaXing_BossChoice_ShowAll(nBossMode,nIsReset,nIsEnable,nIsUseList,nBos
 		for i = 1, nBossMaxItemNum do
 			local bar = ShaXing_BossChoice_Add1Frame_List:AddChild("ShaXing_BossChoice_Add1Frame_Gift1")
 			-- Ìî³äÐÅÏ¢
-			bar:GetSubItem("ShaXing_BossChoice_Add1"):Enable() --¿ÉÑ¡
-			bar:GetSubItem("ShaXing_BossChoice_Add1"):SetCheck(0) --Î´Ñ¡ÖÐ
+			bar:GetSubItem("ShaXing_BossChoice_Add1"):Enable() --??
+			bar:GetSubItem("ShaXing_BossChoice_Add1"):SetCheck(0) --???
 			--Ðü¸¡tips
 			bar:GetSubItem("ShaXing_BossChoice_Add1"):SetToolTip(g_SXBossBuffInfo[i].nTooltip);
 			bar:GetSubItem("ShaXing_BossChoice_Add1"):SetEvent("Clicked", string.format("ShaXing_BossChoice_BossClicked(%d,%d)",1, i))
 
-			--·ÇÕ¹Ê¾½çÃæ
+			--·Ç ¹Ê¾½çÃæ
 			bar:GetSubItem("ShaXing_BossChoice_Add1_Mask"):Hide()	
 			--ÊôÐÔÃû
 			bar:GetSubItem("ShaXing_BossChoice_Add1Text"):SetText(g_SXBossBuffInfo[i].nName);
@@ -382,20 +382,20 @@ function ShaXing_BossChoice_ShowAll(nBossMode,nIsReset,nIsEnable,nIsUseList,nBos
 				--·ÇÖØÖÃÖ±½Ó¶ÁÊý¾Ý
 				if nIsUseList == 1 then
 					if g_BossChoiceList[i] > 0 then
-						bar:GetSubItem("ShaXing_BossChoice_Add1"):SetCheck(1) --Ñ¡ÖÐ
+						bar:GetSubItem("ShaXing_BossChoice_Add1"):SetCheck(1) --??
 						--·ÖÊý
 						bar:GetSubItem("ShaXing_BossChoice_Add1Num"):SetText(ScriptGlobal_Format("#{XSX_220705_254}",tostring(g_SXBossBuffInfo[i].nPoint[1])));
 					end
 				else
 					if g_SXBossCheck[i] > 0 then
-						bar:GetSubItem("ShaXing_BossChoice_Add1"):SetCheck(1) --Ñ¡ÖÐ
+						bar:GetSubItem("ShaXing_BossChoice_Add1"):SetCheck(1) --??
 						--·ÖÊý
 						bar:GetSubItem("ShaXing_BossChoice_Add1Num"):SetText(ScriptGlobal_Format("#{XSX_220705_254}",tostring(g_SXBossBuffInfo[i].nPoint[1])));
 					end
 				end
 			end
 			if nIsEnable < 1 then
-				bar:GetSubItem("ShaXing_BossChoice_Add1"):Disable() --²»¿ÉÑ¡
+				bar:GetSubItem("ShaXing_BossChoice_Add1"):Disable() --???
 			end
 			table.insert(g_BossBarList, bar)
 		end
@@ -414,8 +414,8 @@ function ShaXing_BossChoice_ShowAll(nBossMode,nIsReset,nIsEnable,nIsUseList,nBos
 			-- Ìî³äÐÅÏ¢
 			local nCurRandomIdx = g_SXRandomIdxList[i]
 			-- Ìî³äÐÅÏ¢
-			bar:GetSubItem("ShaXing_BossChoice_Place1"):Enable() --¿ÉÑ¡
-			bar:GetSubItem("ShaXing_BossChoice_Place1"):SetCheck(0) --Î´Ñ¡ÖÐ
+			bar:GetSubItem("ShaXing_BossChoice_Place1"):Enable() --??
+			bar:GetSubItem("ShaXing_BossChoice_Place1"):SetCheck(0) --???
 			--Ðü¸¡tips
 			bar:GetSubItem("ShaXing_BossChoice_Place1"):SetToolTip(g_SXRandomInfo[nCurRandomIdx].nTooltip);
 			bar:GetSubItem("ShaXing_BossChoice_Place1"):SetEvent("Clicked", string.format("ShaXing_BossChoice_RandomClicked(%d,%d)",1, i))
@@ -431,20 +431,20 @@ function ShaXing_BossChoice_ShowAll(nBossMode,nIsReset,nIsEnable,nIsUseList,nBos
 				--·ÇÖØÖÃÖ±½Ó¶ÁÊý¾Ý
 				if nIsUseList == 1 then
 					if g_RandomChoiceList[i] > 0 then
-						bar:GetSubItem("ShaXing_BossChoice_Place1"):SetCheck(1) --Ñ¡ÖÐ
+						bar:GetSubItem("ShaXing_BossChoice_Place1"):SetCheck(1) --??
 						--·ÖÊý
 						bar:GetSubItem("ShaXing_BossChoice_Place1Num"):SetText(ScriptGlobal_Format("#{XSX_220705_254}",tostring(g_SXRandomInfo[nCurRandomIdx].nPoint[1])));
 					end
 				else
 					if g_SXRandomCheck[i] > 0 then
-						bar:GetSubItem("ShaXing_BossChoice_Place1"):SetCheck(1) --Ñ¡ÖÐ
+						bar:GetSubItem("ShaXing_BossChoice_Place1"):SetCheck(1) --??
 						--·ÖÊý
 						bar:GetSubItem("ShaXing_BossChoice_Place1Num"):SetText(ScriptGlobal_Format("#{XSX_220705_254}",tostring(g_SXRandomInfo[nCurRandomIdx].nPoint[1])));
 					end
 				end
 			end
 			if nIsEnable < 1 then
-				bar:GetSubItem("ShaXing_BossChoice_Place1"):Disable() --²»¿ÉÑ¡
+				bar:GetSubItem("ShaXing_BossChoice_Place1"):Disable() --???
 			end
 			table.insert(g_RandomBarList, bar)
 		end
@@ -452,17 +452,17 @@ function ShaXing_BossChoice_ShowAll(nBossMode,nIsReset,nIsEnable,nIsUseList,nBos
 		--×îºóÒ»¸öÄ£Ê½ÌØÊâ´¦Àí
 		ShaXing_BossChoice_Right1:Hide();
 		ShaXing_BossChoice_Right2:Show();
-		g_BossBarList		= {} --bossÊôÐÔ¿ÉÑ¡ÁÐ±í
-		g_RandomBarList		= {} --bossÊôÐÔ¿ÉÑ¡ÁÐ±í
-		--bossÊôÐÔÀ©Õ¹Çø
+		g_BossBarList		= {} --boss??????
+		g_RandomBarList		= {} --boss??????
+		--bossÊôÐÔÀ© ¹Çø
 		ShaXing_BossChoice_Add2Frame_List:Clear()
 		--¼ÓÔØ²»Í¬¸öÊý
 		local nBossMaxItemNum = 7
 		for i = 1, nBossMaxItemNum do
 			local bar = ShaXing_BossChoice_Add2Frame_List:AddChild("ShaXing_BossChoice_Add2Frame_Gift1")
 			-- Ìî³äÐÅÏ¢
-			bar:GetSubItem("ShaXing_BossChoice_Add2"):Enable() --¿ÉÑ¡
-			bar:GetSubItem("ShaXing_BossChoice_Add2"):SetCheck(0) --Î´Ñ¡ÖÐ
+			bar:GetSubItem("ShaXing_BossChoice_Add2"):Enable() --??
+			bar:GetSubItem("ShaXing_BossChoice_Add2"):SetCheck(0) --???
 			--Ðü¸¡tips
 			bar:GetSubItem("ShaXing_BossChoice_Add2"):SetToolTip(g_SXBossBuffInfo[i].nTooltip);
 			bar:GetSubItem("ShaXing_BossChoice_Add2"):SetEvent("Clicked", string.format("ShaXing_BossChoice_BossClicked(%d,%d)",2, i))
@@ -479,14 +479,14 @@ function ShaXing_BossChoice_ShowAll(nBossMode,nIsReset,nIsEnable,nIsUseList,nBos
 			bar:GetSubItem("ShaXing_BossChoice_Add2_select"):Enable()
 			bar:GetSubItem("ShaXing_BossChoice_Add2_select"):ResetList()
 			bar:GetSubItem("ShaXing_BossChoice_Add2_select"):SetEvent("ListSelectionAccepted", string.format("ShaXing_BossChoice_BossSelecCK(%d)", i))
-			bar:GetSubItem("ShaXing_BossChoice_Add2_select"):AddTextItem("µÈ¼¶1", 0)
-			bar:GetSubItem("ShaXing_BossChoice_Add2_select"):AddTextItem("µÈ¼¶2", 1)
+			bar:GetSubItem("ShaXing_BossChoice_Add2_select"):AddTextItem("C¤p b§c 1", 0)
+			bar:GetSubItem("ShaXing_BossChoice_Add2_select"):AddTextItem("C¤p b§c 2", 1)
 			bar:GetSubItem("ShaXing_BossChoice_Add2_select"):SetCurrentSelect(0)
 			if nIsReset < 1 then
 				--·ÇÖØÖÃÖ±½Ó¶ÁÊý¾Ý
 				if nIsUseList == 1 then
 					if g_BossChoiceList[i] > 0 then
-						bar:GetSubItem("ShaXing_BossChoice_Add2"):SetCheck(1) --Ñ¡ÖÐ
+						bar:GetSubItem("ShaXing_BossChoice_Add2"):SetCheck(1) --??
 						--·ÖÊý
 						bar:GetSubItem("ShaXing_BossChoice_Add2Num"):SetText(ScriptGlobal_Format("#{XSX_220705_254}",tostring(g_SXBossBuffInfo[i].nPoint[g_SXBossCheck[i]])));
 						if g_BossChoiceList[i] > 1 then
@@ -496,7 +496,7 @@ function ShaXing_BossChoice_ShowAll(nBossMode,nIsReset,nIsEnable,nIsUseList,nBos
 					end
 				else
 					if g_SXBossCheck[i] > 0 then
-						bar:GetSubItem("ShaXing_BossChoice_Add2"):SetCheck(1) --Ñ¡ÖÐ
+						bar:GetSubItem("ShaXing_BossChoice_Add2"):SetCheck(1) --??
 						--·ÖÊý
 						bar:GetSubItem("ShaXing_BossChoice_Add2Num"):SetText(ScriptGlobal_Format("#{XSX_220705_254}",tostring(g_SXBossBuffInfo[i].nPoint[g_SXBossCheck[i]])));
 						if g_SXBossCheck[i] > 1 then
@@ -508,8 +508,8 @@ function ShaXing_BossChoice_ShowAll(nBossMode,nIsReset,nIsEnable,nIsUseList,nBos
 				
 			end
 			if nIsEnable < 1 then
-				bar:GetSubItem("ShaXing_BossChoice_Add2"):Disable() --²»¿ÉÑ¡
-				bar:GetSubItem("ShaXing_BossChoice_Add2_select"):Disable() --²»¿ÉÑ¡
+				bar:GetSubItem("ShaXing_BossChoice_Add2"):Disable() --???
+				bar:GetSubItem("ShaXing_BossChoice_Add2_select"):Disable() --???
 			end
 			table.insert(g_BossBarList, bar)
 		end
@@ -522,8 +522,8 @@ function ShaXing_BossChoice_ShowAll(nBossMode,nIsReset,nIsEnable,nIsUseList,nBos
 			local bar = ShaXing_BossChoice_Place2Frame_List:AddChild("ShaXing_BossChoice_Place2Frame_Gift1")
 			local nCurRandomIdx = g_SXRandomIdxList[i]
 			-- Ìî³äÐÅÏ¢
-			bar:GetSubItem("ShaXing_BossChoice_Place2"):Enable() --¿ÉÑ¡
-			bar:GetSubItem("ShaXing_BossChoice_Place2"):SetCheck(0) --Î´Ñ¡ÖÐ
+			bar:GetSubItem("ShaXing_BossChoice_Place2"):Enable() --??
+			bar:GetSubItem("ShaXing_BossChoice_Place2"):SetCheck(0) --???
 			--Ðü¸¡tips
 			bar:GetSubItem("ShaXing_BossChoice_Place2"):SetToolTip(g_SXRandomInfo[nCurRandomIdx].nTooltip);
 			bar:GetSubItem("ShaXing_BossChoice_Place2"):SetEvent("Clicked", string.format("ShaXing_BossChoice_RandomClicked(%d,%d)",2, i))
@@ -540,14 +540,14 @@ function ShaXing_BossChoice_ShowAll(nBossMode,nIsReset,nIsEnable,nIsUseList,nBos
 			bar:GetSubItem("ShaXing_BossChoice_Place2_select"):Enable()
 			bar:GetSubItem("ShaXing_BossChoice_Place2_select"):ResetList()
 			bar:GetSubItem("ShaXing_BossChoice_Place2_select"):SetEvent("ListSelectionAccepted", string.format("ShaXing_BossChoice_RandomSelecCK(%d)", i))
-			bar:GetSubItem("ShaXing_BossChoice_Place2_select"):AddTextItem("µÈ¼¶1", 0)
-			bar:GetSubItem("ShaXing_BossChoice_Place2_select"):AddTextItem("µÈ¼¶2", 1)
+			bar:GetSubItem("ShaXing_BossChoice_Place2_select"):AddTextItem("C¤p b§c 1", 0)
+			bar:GetSubItem("ShaXing_BossChoice_Place2_select"):AddTextItem("C¤p b§c 2", 1)
 			bar:GetSubItem("ShaXing_BossChoice_Place2_select"):SetCurrentSelect(0)
 			if nIsReset < 1 then
 				--·ÇÖØÖÃÖ±½Ó¶ÁÊý¾Ý
 				if nIsUseList == 1 then
 					if g_RandomChoiceList[i] > 0 then
-						bar:GetSubItem("ShaXing_BossChoice_Place2"):SetCheck(1) --Ñ¡ÖÐ
+						bar:GetSubItem("ShaXing_BossChoice_Place2"):SetCheck(1) --??
 						--·ÖÊý
 						bar:GetSubItem("ShaXing_BossChoice_Place2Num"):SetText(ScriptGlobal_Format("#{XSX_220705_254}",tostring(g_SXRandomInfo[nCurRandomIdx].nPoint[g_SXBossCheck[i]])));
 						if g_RandomChoiceList[i] > 1 then
@@ -557,7 +557,7 @@ function ShaXing_BossChoice_ShowAll(nBossMode,nIsReset,nIsEnable,nIsUseList,nBos
 					end
 				else
 					if g_SXRandomCheck[i] > 0 then
-						bar:GetSubItem("ShaXing_BossChoice_Place2"):SetCheck(1) --Ñ¡ÖÐ
+						bar:GetSubItem("ShaXing_BossChoice_Place2"):SetCheck(1) --??
 						--·ÖÊý
 						bar:GetSubItem("ShaXing_BossChoice_Place2Num"):SetText(ScriptGlobal_Format("#{XSX_220705_254}",tostring(g_SXRandomInfo[nCurRandomIdx].nPoint[g_SXBossCheck[i]])));
 						if g_SXRandomCheck[i] > 1 then
@@ -569,8 +569,8 @@ function ShaXing_BossChoice_ShowAll(nBossMode,nIsReset,nIsEnable,nIsUseList,nBos
 				
 			end
 			if nIsEnable < 1 then
-				bar:GetSubItem("ShaXing_BossChoice_Place2"):Disable() --²»¿ÉÑ¡
-				bar:GetSubItem("ShaXing_BossChoice_Place2_select"):Disable() --²»¿ÉÑ¡
+				bar:GetSubItem("ShaXing_BossChoice_Place2"):Disable() --???
+				bar:GetSubItem("ShaXing_BossChoice_Place2_select"):Disable() --???
 			end
 			table.insert(g_RandomBarList, bar)
 		end
@@ -654,16 +654,16 @@ function ShaXing_BossChoice_OpenFenye(nKillBossCount,nSelectIdx,nBossIdx,nIsCurB
 	end
 	
 	if nIsCurBoss == 1 then
-		--µ±Ç°Ñ¡Ôñboss¿Í»§¶ËÏÔÊ¾ÐÞÕý
+		--µ±Ç°Ñ¡Ôñboss¿Í»§¶ËÏÔÊ¾ÐÞ ý
 		nBossMode = 1 
 	end
 	
 	if g_SXBossAbandon[g_ShaXing_FenyeIdx] == 1 then
-		--·ÅÆúboss¿Í»§¶ËÏÔÊ¾ÐÞÕý
+		--·ÅÆúboss¿Í»§¶ËÏÔÊ¾ÐÞ ý
 		nBossMode = 0 
 	end
 	
-	--Õ¹Ê¾bossÄÑ¶È
+	-- ¹Ê¾bossÄÑ¶È
 	for index=1,table.getn(g_ShaXing_BossChoice_BossModeList)  do
 		if index == nBossMode then
 			g_ShaXing_BossChoice_BossModeList[index]:SetCheck(1);
@@ -733,7 +733,7 @@ function ShaXing_BossChoiceModel_ModeClicked(nIndex)
 		end
 	end
 
-	--Õ¹Ê¾Í¼Æ¬ºÍ»ý·Ö
+	-- ¹Ê¾Í¼Æ¬ºÍ»ý·Ö
 	if nIndex == 1 then
 		--PushDebugMessage("test  ModeClicked nBossIdx="..g_ShaXing_FenyeBossIdx.." img"..g_SXBossImg[g_ShaXing_FenyeBossIdx].nEasyImg)
 		ShaXing_BossChoiceFakeObject:SetProperty( "Image", g_SXBossImg[g_ShaXing_FenyeBossIdx].nEasyImg )
@@ -1105,7 +1105,7 @@ function ShaXing_BossChoice_JustShow(nSelectIdx,nBossIdx,nBossMode,nBossChoiceLi
 		end	
 	end
 	
-	--Õ¹Ê¾bossÄÑ¶È
+	-- ¹Ê¾bossÄÑ¶È
 	for index=1,table.getn(g_ShaXing_BossChoice_BossModeList)  do
 		if index == nBossMode then
 			g_ShaXing_BossChoice_BossModeList[index]:SetCheck(1);
@@ -1149,7 +1149,7 @@ function ShaXing_BossChoice_JustShow(nSelectIdx,nBossIdx,nBossMode,nBossChoiceLi
 	ShaXing_BossChoice_ActionFrame2:Show()
 
 	--µ¹¼ÆÊ±
-	SetTimer("ShaXing_BossChoice","ShaXing_BossChoice_CloseWindow()", 1000);		--ÉèÖÃ¶¨Ê±Æ÷5ÃëÖÓµ¹¼ÆÊ±
+	SetTimer("ShaXing_BossChoice","ShaXing_BossChoice_CloseWindow()", 1000);		--?????5?????
 	g_ShaXing_CloseTick = 5
 	ShaXing_BossChoice_ActionFrame2_Text:SetText(ScriptGlobal_Format("#{XSX_220705_361}",g_ShaXing_CloseTick));
 
@@ -1168,7 +1168,7 @@ function ShaXing_BossChoice_CloseWindow()
 	if g_ShaXing_CloseTick > 0 then
 		SetTimer("ShaXing_BossChoice","ShaXing_BossChoice_CloseWindow()", 1000)
 	else
-		--¹Ø±Õ½çÃæ
+		--¹Ø± ½çÃæ
 		ShaXing_BossChoice_OnClose()
 	end
 end

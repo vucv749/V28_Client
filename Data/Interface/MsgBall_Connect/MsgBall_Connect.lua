@@ -1,6 +1,6 @@
 
 
---预加载函数，可以而且只能在这里注册脚本关心的事件
+--预加载函数，可以而且只能在犫里注册脚本关心的事件
 function MsgBall_Connect_PreLoad()
 	this:RegisterEvent("BAD_NET_STATUS");
 	this:RegisterEvent("PLAYER_ENTERING_WORLD");

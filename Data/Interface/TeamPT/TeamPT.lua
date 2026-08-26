@@ -1,7 +1,7 @@
 --×é¶ÓÆ½Ì¨ zhanglei add
 
-g_GrayColor = "FF00B4FF" 	--ÓÃÓÚ×Ô¼ºµÄÊ±ºòµÄÑÕÉ«ÏÔÊ¾
-local MENPAI_NUM = 11; --ÃÅÅÉ¸öÊý£¬°üÀ¨ÈÎÒâ
+g_GrayColor = "FF00B4FF" 	--????????????
+local MENPAI_NUM = 11; --????,????
 local MENPAI_NAME = {
 	"#{ZDPT_XML_31}",
 	"#{GMGameInterface_Script_DataPool_Info_ShaoLin}",
@@ -28,20 +28,20 @@ local g_Menpai = {
 	"#{GMGameInterface_Script_DataPool_Info_ManTuoShanZhuang}",
 }
 -- ÉÔµÈµã»÷µÄÌáÊ¾
-local g_strWaitClickTipText = "#{ZYPT_081127_2}"; --"²»¿ÉÁ¬Ðøµã»÷£¬ÇëÉÔµÈÆ¬¿ÌºóÔÙµã»÷¡£";
+local g_strWaitClickTipText = "#{ZYPT_081127_2}"; --"Không th¬ liên tøc Ði¬m Kích, Thïnh ch¶ mµt lát sau Tái Ði¬m Kích.";
 
 -- µ±Ç°ÆµµÀÀà±ðÓëÒ³Âë
-local g_totalInfoCount = 1 			-- ×ÜµÄÐÅÏ¢Êý
-local g_isTeam = 1							-- Ä¬ÈÏÏÔÊ¾¡°¶ÓÎé¡±
-local g_curPageIndex = 1				-- Ä¬ÈÏÏÔÊ¾µÚ1Ò³
-local g_totalPageCount = 1			-- ÐÅÏ¢ÁÐ±íµÄ×ÜÒ³Êý
-local g_ClientPageBegin = 1			-- ¿Í»§¶Ë»º´æµÄÒ³µÄ¿ªÊ¼Ò³Âë
-local g_ClientPageEnd = 1				-- ¿Í»§¶Ë»º´æµÄ½áÊøÒ³Âë
-local g_ClientLocalInfoNum = 0  -- ¿Í»§¶Ë»º´æµÄÐÅÏ¢¸öÊý
-local g_isFilter = 0 						-- Ä¬ÈÏ²»¹ýÂË
+local g_totalInfoCount = 1 			-- ?????
+local g_isTeam = 1							-- ????“??”
+local g_curPageIndex = 1				-- ?????1?
+local g_totalPageCount = 1			-- ????????
+local g_ClientPageBegin = 1			-- ????????????
+local g_ClientPageEnd = 1				-- ??????????
+local g_ClientLocalInfoNum = 0  -- ??????????
+local g_isFilter = 0 						-- ?????
 
-local MAXCOUNTPERPAGE 	= 15;					-- Ã¿Ò³×î¶àÏÔÊ¾15Ìõ
-local MAXCLIENTPAGE 	= 5;						-- ¿Í»§¶Ë»º´æµÄÒ³ÂëÊý
+local MAXCOUNTPERPAGE 	= 15;					-- ??????15?
+local MAXCLIENTPAGE 	= 5;						-- ?????????
 
 -- ½çÃæ¿Ø¼þ
 local BtnPageUpDown = {};
@@ -49,26 +49,26 @@ local BtnPageUpDown = {};
 -- ÀäÈ´Ê±¼äÏà¹Ø
 local g_iLastTime = 0;
 
-local g_Timers = {0, 0, 0, 0, 0}; -- ÀäÈ´Ê±¼ä·Ö×é
-local TIMER_COMMONBTN = 1;				-- Ò»°ã°´Å¥
-local MIN_COMMON_TIME = 0.5; --µã¹¦ÄÜ°´Å¥µÄ¼ä¸ô £¨Ãë£©
-local MIN_SHUAXIN_TIME = 1; --µã¹¦ÄÜ°´Å¥µÄ¼ä¸ô £¨Ãë£© -- µ½·þÎñÆ÷¶ËÀ­Êý¾ÝµÄ°´Å¥Ê±¼ä³¤Ò»Ð©
+local g_Timers = {0, 0, 0, 0, 0}; -- ??????
+local TIMER_COMMONBTN = 1;				-- ????
+local MIN_COMMON_TIME = 0.5; --???????? (?)
+local MIN_SHUAXIN_TIME = 1; --???????? (?) -- ????????????????
 
-local g_isSendTeamMsg = -1 --Íæ¼ÒÊÇ·ñ·¢ËÍ¹ý¶ÓÎéÐÅÏ¢,ÓÃÓÚ¿ØÖÆ½çÃæ´ò¿ª¹Ø±Õ
-local g_isSendUserMsg = -1 --Íæ¼ÒÊÇ·ñ·¢ËÍ¹ýÍæ¼ÒÐÅÏ¢,ÓÃÓÚ¿ØÖÆ½çÃæ´ò¿ª¹Ø±Õ
+local g_isSendTeamMsg = -1 --???????????,??????????
+local g_isSendUserMsg = -1 --???????????,??????????
 local g_PlayerInfoRow = -1;
 
-local g_ColomnIdOfRightClick = 1;	--ÓÒ¼ü²Ëµ¥µ¯³ö¶ÔÓ¦µÄÁÐID
+local g_ColomnIdOfRightClick = 1;	--??????????ID
 
 local g_TeamPT_Frame_UnifiedPosition;
 
 function TeamPT_PreLoad()
-	this:RegisterEvent("OPEN_WINDOW");														-- ´ò¿ªÕ÷ÓÑÆ½Ì¨Ö÷´°¿Ú
-	this:RegisterEvent("TEAMBOARD_UPDATE_LIST");									-- ¸üÐÂÐÅÏ¢ÁÐ±í
-	this:RegisterEvent("TEAMBOARD_SEND_SUCCESS");									-- ·¢ËÍ³É¹¦
-	this:RegisterEvent("TEAMBOARD_DEL_SUCCESS");									-- É¾³ý³É¹¦
-	this:RegisterEvent("TEAMBOARD_BUTTON_CLICKED");								-- °´Å¥µã»÷
-	this:RegisterEvent("TEAMBOARD_ITEM_RIGHT_CLICKED");						-- ÓÒ¼üµã»÷Ä³ÐÐÄ³ÁÐµÄ²Ù×÷
+	this:RegisterEvent("OPEN_WINDOW");														-- ?????????
+	this:RegisterEvent("TEAMBOARD_UPDATE_LIST");									-- ??????
+	this:RegisterEvent("TEAMBOARD_SEND_SUCCESS");									-- ????
+	this:RegisterEvent("TEAMBOARD_DEL_SUCCESS");									-- ????
+	this:RegisterEvent("TEAMBOARD_BUTTON_CLICKED");								-- ????
+	this:RegisterEvent("TEAMBOARD_ITEM_RIGHT_CLICKED");						-- ???????????
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
 	this:RegisterEvent("PLAYER_ENTERING_WORLD");
@@ -208,7 +208,7 @@ function TeamPT_UpdateList(strIsTeam, strPageNum, strTotal, strRetNum ,strIsFilt
 	TeamPT_UpdateBtnStatus();
 end
 
---·µ»Ø´Óµ±Ç°µ½¿Í»§¶Ë»º´æµÄÕæÊµÒ³Êý£¬¿Í»§¶Ë»á»º´æ²¿·ÖÒ³Ãæ
+--·µ»Ø´Óµ±Ç°µ½¿Í»§¶Ë»º´æµÄ æÊµÒ³Êý£¬¿Í»§¶Ë»á»º´æ²¿·ÖÒ³Ãæ
 function TeamPT_Get_Local_Page()
 	local BeginPage = 0;
 	BeginPage = math.mod(g_curPageIndex - 1,MAXCLIENTPAGE) ;
@@ -233,8 +233,8 @@ function TeamPT_GetInfo_Local()
 			isMyInfo, strName, Topic, iGoal,strMenpaiList , iMinLevel,iMaxLevel,iTeamMember = TeamBoardDataPool:GetInfoByPos(g_isTeam,g_isFilter, i);
 
 			local textColor = nil;
-			if i == 0 and isMyInfo == 1 then  --×Ô¼ºµÄÐÅÏ¢×ÜÊÇÔÚµÚÒ»¸ö
-				--ÉèÖÃÑÕÉ«
+			if i == 0 and isMyInfo == 1 then  --???????????
+				--ÉèÖÃÑ É«
 				textColor = g_GrayColor;
 				g_PlayerInfoRow = iRow;
 			else
@@ -253,7 +253,7 @@ function TeamPT_GetInfo_Local()
 			local strLevel = iMinLevel.." - "..iMaxLevel;
 			TeamPT_List:AddNewItem(strLevel , 5, iRow,textColor);
 			TeamPT_List:AddNewItem(iTeamMember.."/6", 6, iRow ,textColor);
-			if i == 0 and isMyInfo == 1 then  --×Ô¼ºµÄÐÅÏ¢×ÜÊÇÔÚµÚÒ»¸ö
+			if i == 0 and isMyInfo == 1 then  --???????????
 				TeamPT_List:AddNewButtonItem("#{ZDPT_XML_19}",7,iRow);
 			else
 				TeamPT_List:AddNewButtonItem("#{ZDPT_XML_17}",7,iRow);
@@ -265,8 +265,8 @@ function TeamPT_GetInfo_Local()
 			isMyInfo, strName, Topic, iGoal,iMenpai, iLevel = TeamBoardDataPool:GetInfoByPos(g_isTeam ,g_isFilter , i);
 
 			local textColor = nil;
-			if i == 0 and isMyInfo == 1 then  --×Ô¼ºµÄÐÅÏ¢×ÜÊÇÔÚµÚÒ»¸ö
-				--ÉèÖÃÑÕÉ«
+			if i == 0 and isMyInfo == 1 then  --???????????
+				--ÉèÖÃÑ É«
 				textColor = g_GrayColor;
 				g_PlayerInfoRow = iRow;
 			else
@@ -280,7 +280,7 @@ function TeamPT_GetInfo_Local()
 				TeamPT_List_Player:AddNewItem(g_Menpai[iMenpai+1], 4, iRow ,textColor);
 			end
 			TeamPT_List_Player:AddNewItem(iLevel , 5, iRow,textColor);
-			if i == 0 and isMyInfo == 1 then  --×Ô¼ºµÄÐÅÏ¢×ÜÊÇÔÚµÚÒ»¸ö
+			if i == 0 and isMyInfo == 1 then  --???????????
 				TeamPT_List_Player:AddNewButtonItem("#{ZDPT_XML_19}",6,iRow);
 			else
 				TeamPT_List_Player:AddNewButtonItem("#{ZDPT_XML_18}",6,iRow);
@@ -298,11 +298,11 @@ end
 --»ñÈ¡ÃÅÅÉlist¶ÔÓ¦µÄÎÄ×Ö
 --·µ»ØÖµ£¬µÚÒ»¸öÎªËõÐ´£¬µÚ¶þ¸öÎªtips
 function TeamPT_GetMenPaiDesc(strMenpaiList)
-	local Menpai = ""; --¿òÖÐÏÔÊ¾µÄÄÚÈÝ
+	local Menpai = ""; --???????
 	local TipsMenpai =""; --tips
 	local Num = 0;
 	for i=1, MENPAI_NUM do
-		if string.byte(strMenpaiList,i) == 49 then  --¶ÔÓ¦×Ö·ûÎª1
+		if string.byte(strMenpaiList,i) == 49 then  --?????1
 			if Num == 0 then
 				Menpai = MENPAI_NAME[i];
 				TipsMenpai = MENPAI_NAME[i];
@@ -360,7 +360,7 @@ function OnTeamPT_PageDownClicked()
 	end
 end
 
--- ¸üÐÂ¡°Ê×Ò³¡±¡¢¡°Ä©Ò³¡±¡¢¡°Ç°Ò»Ò³¡±¡¢¡°ºóÒ»Ò³¡±Õâ4¸ö°´Å¥ºÍÒ³ÂëÏÔÊ¾µÄ×´Ì¬
+-- ¸üÐÂ¡°Ê×Ò³¡±¡¢¡°Ä©Ò³¡±¡¢¡°Ç°Ò»Ò³¡±¡¢¡°ºóÒ»Ò³¡± â4¸ö°´Å¥ºÍÒ³ÂëÏÔÊ¾µÄ×´Ì¬
 function TeamPT_UpdateBtnStatus()
 	-- µ±Ç°µÚ1Ò³£º½ûÓÃ¡°Ç°Ò»Ò³¡±¡¢¡°Ê×Ò³¡±
 	if( g_curPageIndex <= 1 ) then
@@ -434,7 +434,7 @@ function TeamPT_ChannelButtonUpdate(iChannel)
 		TeamPT_List_Player:Show();
 	end
 
-	TeamPT_UpdateBtnStatus(); --·ÀÖ¹µãµ½¿ÕÒ³Ê±°´Å¥Ã»±ä»Ò
+	TeamPT_UpdateBtnStatus(); --????????????
 end
 
 -- Ñ¡Ôñ²»Í¬µÄ±êÇ©µÄÏÔÊ¾ ,  ´Ë´¦Ó¦ÑÓÊ±£¬·ÀÖ¹Á¬Ðøµã»÷
@@ -444,7 +444,7 @@ function TeamPT_ChannelChange(iChannel)
 		-- Ñ¡ÖÐµ±Ç°ÆµµÀ
 		PushDebugMessage(g_strWaitClickTipText);
 
-		--»Ö¸´ÎªÕý³£×´Ì¬£¬ÒòÎªÕâ¸ö²Ù×÷Ö®Ç°ÒÑ¾­ÐÞ¸Ä×´Ì¬ÁË
+		--»Ö¸´Îª ý³£×´Ì¬£¬ÒòÎª â¸ö²Ù×÷Ö®Ç°ÒÑ¾­ÐÞ¸Ä×´Ì¬ÁË
 		if g_isTeam == 1 then
 			TeamPT_Team:SetCheck(1);
 			TeamPT_User:SetCheck(0);
@@ -484,7 +484,7 @@ function OnTeamPT_ShuaxinClicked()
 	TeamPT_SendRequest();
 end
 
---ÕÐÄ¼¶ÓÔ±
+-- ÐÄ¼¶ÓÔ±
 function OnTeamPT_ZhaomuClicked()
 	if g_PlayerInfoRow ~= -1 or g_isSendUserMsg == 1 or g_isSendTeamMsg == 1 then
 		PushDebugMessage("#{ZDPT_091028_2}")
@@ -563,7 +563,7 @@ function OnTeamPT_LastPageClicked()
 	TeamPT_SendRequest();
 end
 
--- ¹Ø±Õ
+-- ¹Ø± 
 function OnTeamPT_CloseClicked()
 	this:Hide();
 	g_curPageIndex = 1;

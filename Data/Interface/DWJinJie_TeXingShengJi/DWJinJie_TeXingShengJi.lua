@@ -23,7 +23,7 @@ local g_FeaturesBarList = {}
 local g_FeaturesActionList = {}
 local g_FeaturesActionTipsList = {}
 local g_FeaturesActionMaskList = {}
-local g_ShowMode = 1 -- 1升级 2突破
+local g_ShowMode = 1 -- 1?? 2??
 local g_FeaturesListBarInfo= {}
 --=========================================================
 -- 注册窗口关心的所有事件
@@ -46,7 +46,7 @@ end
 function DWJinJie_TeXingShengJi_OnLoad()
 	g_DWJinJie_TeXingShengJi_DemandMoney = 0
 	DWJinJie_TeXingShengJi_DemandMoney:SetProperty("MoneyNumber", tostring(g_DWJinJie_TeXingShengJi_DemandMoney))
-	-- 始终可以点击 OK 按钮, 为了方便提示玩家信息
+	-- 始譅可以点击 OK 按钮, 为了方便提示玩家信息
 	DWJinJie_TeXingShengJi_OK:Enable()
 	g_DWJinJie_TeXingShengJi_Frame_UnifiedPosition=DWJinJie_TeXingShengJi_Frame:GetProperty("UnifiedPosition");
 end
@@ -73,7 +73,7 @@ function DWJinJie_TeXingShengJi_OnEvent(event)
 			if not this:IsVisible() then	
 				return 
 			end
-			g_Position_Scroll = DWJinJie_TeXingShengJi_DWTeXing_TopList:GetScrollPosition()	--保存上一次滚动条位置
+			g_Position_Scroll = DWJinJie_TeXingShengJi_DWTeXing_TopList:GetScrollPosition()	--??????????
 			DWJinJie_TeXingShengJi_UpdateRight()
 			DWJinJie_TeXingShengJi_UpdateBasic()
 		end
@@ -88,7 +88,7 @@ function DWJinJie_TeXingShengJi_OnEvent(event)
 			if toolNumInBag < 1 then
 				color = "#cFF0000"
 			end
-			DWJinJie_TeXingShengJi_Item2Num:SetText(color..toolNumInBag.."/1")--需要数量
+			DWJinJie_TeXingShengJi_Item2Num:SetText(color..toolNumInBag.."/1")--????
 		elseif g_ShowMode == 2 then
 			local toolNumInBag = PlayerPackage:CountAvailableItemByIDTable(g_TupoItemID)
 			local texingID,texingLevel,texingExp = LifeAbility:GetDiaowenJinJieTeXingByID(g_CurSelTeXingID)
@@ -100,7 +100,7 @@ function DWJinJie_TeXingShengJi_OnEvent(event)
 			if toolNumInBag < nRequiredTuPoItem then
 				color = "#cFF0000"
 			end
-			DWJinJie_TeXingShengJi_Item2Num:SetText(color..toolNumInBag.."/"..nRequiredTuPoItem) --需要数量
+			DWJinJie_TeXingShengJi_Item2Num:SetText(color..toolNumInBag.."/"..nRequiredTuPoItem) --????
 		end
 
 	elseif (event == "OBJECT_CARED_EVENT" and this:IsVisible()) then
@@ -193,7 +193,7 @@ function DWJinJie_TeXingShengJi_UpdateBasic()
 	else
 		DWJinJie_TeXingShengJi_DWTeXing_EXP:SetProgress(texingExp,nRequiredTeXingShu)
 		DWJinJie_TeXingShengJi_DWTeXing_levelNeed:Show()
-		DWJinJie_TeXingShengJi_DWTeXing_levelNeed:SetText(ScriptGlobal_Format("#{DWJJ_240329_176}",texingExp,nRequiredTeXingShu)) --升级所需 
+		DWJinJie_TeXingShengJi_DWTeXing_levelNeed:SetText(ScriptGlobal_Format("#{DWJJ_240329_176}",texingExp,nRequiredTeXingShu)) --???? 
 		local nextdataIncres, nextdataScale =  LifeAbility:GetDiaowenTeXingAddInfo(g_CurSelTeXingID,texingLevel+1)
 		-- if g_TexingSpData[g_CurSelTeXingID] then
 		-- 	nextdataIncres = g_TexingSpData[g_CurSelTeXingID][texingLevel+1]
@@ -241,7 +241,7 @@ function DWJinJie_TeXingShengJi_UpdateBasic()
 			color = "#cFF0000"
 		end
 		DWJinJie_TeXingShengJi_Item2Num:Show()
-		DWJinJie_TeXingShengJi_Item2Num:SetText(color..toolNumInBag.."/".."1")--需要数量
+		DWJinJie_TeXingShengJi_Item2Num:SetText(color..toolNumInBag.."/".."1")--????
 		g_DWJinJie_TeXingShengJi_DemandMoney = 0
 		DWJinJie_TeXingShengJi_DemandMoney:SetProperty("MoneyNumber", tostring(g_DWJinJie_TeXingShengJi_DemandMoney))
 	elseif g_ShowMode == 2 then
@@ -266,7 +266,7 @@ function DWJinJie_TeXingShengJi_UpdateBasic()
 			if toolNumInBag < nRequiredTuPoItem then
 				color = "#cFF0000"
 			end
-			DWJinJie_TeXingShengJi_Item2Num:SetText(color..toolNumInBag.."/"..nRequiredTuPoItem) --需要数量
+			DWJinJie_TeXingShengJi_Item2Num:SetText(color..toolNumInBag.."/"..nRequiredTuPoItem) --????
 		end
 	
 		if nRequiredJiaoZi < 0 then
@@ -558,7 +558,7 @@ function DWJinJie_TeXingShengJi_OK_Clicked(okFlag)
 end
 
 --=========================================================
--- 关闭界面
+-- 关睜界面
 --=========================================================
 function DWJinJie_TeXingShengJi_CloseClicked()
 	this:Hide()
@@ -576,7 +576,7 @@ end
 
 --=========================================================
 -- 开始关心NPC，
--- 在开始关心之前需要先确定这个界面是不是已经有“关心”的NPC，
+-- 在开始关心之前需要先确定犫个界面是不是已经有“关心”的NPC，
 -- 如果有的话，先取消已经有的“关心”
 --=========================================================
 function BeginCareObject_DWJinJie_TeXingShengJi()

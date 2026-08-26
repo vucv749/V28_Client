@@ -1,12 +1,12 @@
-local Current = -1;									--Ñ¡ÔñµÄ´ð°¸ºÅ
-local Question_Max = 0;							--×î´óÎÊÌâÊý
-local Question_Sequence = 0;				--µÚ¼¸Ìâ
-local CoupleQuestion_Buttons = {}		--Ã¿¸ö´ð°¸°´Å¥¿Ø¼þÈÝÆ÷
-local Button_Answer = {}						--Ã¿¸ö´ð°¸°´Å¥¶ÔÓ¦µÄ´ð°¸±àºÅ
+local Current = -1;									--??????
+local Question_Max = 0;							--?????
+local Question_Sequence = 0;				--???
+local CoupleQuestion_Buttons = {}		--??????????
+local Button_Answer = {}						--?????????????
 local IsEnableOK = 0;
 					
 
-local objCared = -1;								--¹ØÐÄNPCµÄObjµÄ±àºÅ£¨Server´«¹ýÀ´£©
+local objCared = -1;								--??NPC?Obj???(Server???)
 
 function CoupleQuestion_PreLoad()
 	this:RegisterEvent("UI_COMMAND");	
@@ -48,7 +48,7 @@ function CoupleQuestion_OnShown()
 
 	CoupleQuestion_Total_StopWatch:SetProperty("Timer", "60");
 	CoupleQuestion_ok:Disable();
-	CoupleQuestion_StopWatch_Text:SetText("ÇëÑ¡Ôñ")
+	CoupleQuestion_StopWatch_Text:SetText("Thïnh lña ch÷n")
 	
 end
 
@@ -57,11 +57,11 @@ end
 function CoupleQuestion_ShowQuestion()
 	Question_Sequence = Get_XParam_INT(2)
 	
-	CoupleQuestion_Pageheader : SetText("#gFF0FA0·òÆÞÎÊ´ð");
-	CoupleQuestion_NPCName_Text: SetText("×ÜÌâÊý£º"..tostring(Question_Max))
-	CoupleQuestion_Type_Text : SetText("µ±Ç°ÌâÊý£º"..tostring(Question_Sequence))
-	CoupleQuestion_Number_Text:SetText("Ä¬ÆõÖ¸Êý£º"..tostring(Get_XParam_INT(3)))
-	CoupleQuestion_Text2:SetText("ÉÏÌâ½á¹û£º"..tostring(Get_XParam_STR(5)))
+	CoupleQuestion_Pageheader : SetText("#gFF0FA0vþ ch°ng v¤n ðáp");
+	CoupleQuestion_NPCName_Text: SetText("T±ng Ð« S±:"..tostring(Question_Max))
+	CoupleQuestion_Type_Text : SetText("Trß¾c m£t Ð« S±:"..tostring(Question_Sequence))
+	CoupleQuestion_Number_Text:SetText("Ån ý luÛ th×a:"..tostring(Get_XParam_INT(3)))
+	CoupleQuestion_Text2:SetText("Thßþng Ð« kªt quä:"..tostring(Get_XParam_STR(5)))
 
 	CoupleQuestion_Text : SetText(Get_XParam_STR(1));
 
@@ -106,7 +106,7 @@ function CoupleQuestion_Quit_Clicked()
 			Set_XSCRIPT_ScriptID(888901);
 			Set_XSCRIPT_Parameter(0,3);
 			Set_XSCRIPT_Parameter(1,-1);
-			Set_XSCRIPT_Parameter(2,Question_Sequence);	--modi:lby Ôö¼ÓÌâºÅ¼ìÑé¼ìÑéµ±Ç°ÎÊÌâÊÇ·ñÊÇÕýÔÚ´ðµÄÌâ
+			Set_XSCRIPT_Parameter(2,Question_Sequence);	--modi:lby ????????????????????
 			
 			Set_XSCRIPT_ParamCount(3);
 	Send_XSCRIPT();
@@ -117,12 +117,12 @@ end
 function CoupleQuestion_Cancel_Clicked()
 	--StopCareObject_CoupleQuestion(objCared)
 	this:Hide();
-	LifeAbility:CloseStrengthMsgBox();	--modi:lby Ïú»Ùµ±Ç°µÄmsg
+	LifeAbility:CloseStrengthMsgBox();	--modi:lby ?????msg
 end
 
 --=========================================================
 --¿ªÊ¼¹ØÐÄNPC£¬
---ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
 --Èç¹ûÓÐµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓÐµÄ¡°¹ØÐÄ¡±
 --=========================================================
 function BeginCareObject_CoupleQuestion(objCaredId)
@@ -144,17 +144,17 @@ function CoupleQuestion_OK_Clicked()
 			Set_XSCRIPT_ScriptID(888901);
 			Set_XSCRIPT_Parameter(0,1);
 			Set_XSCRIPT_Parameter(1,Current);
-			Set_XSCRIPT_Parameter(2,Question_Sequence);	--modi:lby Ôö¼ÓÌâºÅ¼ìÑé¼ìÑéµ±Ç°ÎÊÌâÊÇ·ñÊÇÕýÔÚ´ðµÄÌâ
+			Set_XSCRIPT_Parameter(2,Question_Sequence);	--modi:lby ????????????????????
 			Set_XSCRIPT_ParamCount(3);
 	Send_XSCRIPT();
 	
 	CoupleQuestion_ok:Disable();
 	IsEnableOK = 1;
-	CoupleQuestion_Time_Event:SetProperty("Timer", "5");	--modi:lby Ôö¼ÓÈ·¶¨°´Å¥¼ÆÊ±Æ÷
+	CoupleQuestion_Time_Event:SetProperty("Timer", "5");	--modi:lby ?????????
 	for j=1,3 do
 		CoupleQuestion_Buttons[j]:Disable();
 	end
-	CoupleQuestion_StopWatch_Text:SetText("ÇëµÈ´ý¶Ô·½Ñ¡Ôñ")
+	CoupleQuestion_StopWatch_Text:SetText("Xin ðþi Ðãi ð¯i phß½ng lña ch÷n")
 end
 
 --modi:lby Ôö¼ÓÈ·¶¨°´Å¥¼ÆÊ±Æ÷

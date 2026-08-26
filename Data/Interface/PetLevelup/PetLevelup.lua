@@ -48,7 +48,7 @@ end
 function PetLevelup_OnEvent(event)
 
 	if(event == "UI_COMMAND" and tonumber(arg0) == 19823) then
-		if this : IsVisible() then									-- 如果界面开着，则不处理
+		if this : IsVisible() then									-- ??????,????
 			return
 		end
 		PetLevelup_Clear()
@@ -59,7 +59,7 @@ function PetLevelup_OnEvent(event)
 		local npcObjId = Get_XParam_INT(0)
 		g_clientNpcId = DataPool : GetNPCIDByServerID(npcObjId)
 		if g_clientNpcId == -1 then
-			PushDebugMessage("未发现 NPC")
+			PushDebugMessage("Ch遖 ph醫 hi畁 NPC")
 			PetLevelup_Hide()
 			return
 		end
@@ -72,7 +72,7 @@ function PetLevelup_OnEvent(event)
 			return;
 		end
 		
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if arg1 == "distance" and tonumber(arg2) > MAX_OBJ_DISTANCE or arg1=="destroy" then
 			PetLevelup_Hide()
 		end
@@ -82,7 +82,7 @@ function PetLevelup_OnEvent(event)
 			return;
 		end
 		
-		if g_selectgood == tonumber(arg0) then --已选中物品并且更新的物品是当前选中的物品
+		if g_selectgood == tonumber(arg0) then --????????????????????
 			--PushDebugMessage("PACKAGE_ITEM_CHANGED in if  "..tonumber(arg0))
 			PetLevelup_UpdateGoods(tonumber(arg0))
 		end
@@ -92,9 +92,9 @@ function PetLevelup_OnEvent(event)
 		end
 		
 		local type = tonumber(arg0)
-		if type == 1 then --拖动到物品栏
+		if type == 1 then --??????
 			PetLevelup_UpdateGoods(tonumber(arg1))
-		elseif type == 2 then --拖动到技能栏，不使用PetLevelup_Skill_Clicked是因为索引计算方式不一样
+		elseif type == 2 then --??????,???PetLevelup_Skill_Clicked????????????
 			PetLevelup_Skill_Drag(tonumber(arg1))
 		end
 		
@@ -118,7 +118,7 @@ function PetLevelup_OnEvent(event)
 end
 
 function PetLevelup_CancelGoods()
-	g_ConsumeGoodsID = -1 --选物品的时候设置了这两个值，所以取消物品的时候清空这两个值
+	g_ConsumeGoodsID = -1 --?????????????,???????????????
 	g_ConsumeMoney = -1
 	
 	PetLevelup_Skill01:SetActionItem(-1);
@@ -171,10 +171,10 @@ function PetLevelup_Selected(selectindex)
 	end
 	
 --	if PlayerPackage:IsPetLock(selectindex) == 1 then
---		PushDebugMessage("珍兽已加锁")
+--		PushDebugMessage("犱兽已加锁")
 --		return
 --	end
-	--珍兽已被其它界面选中
+	--犱兽已被其它界面选中
 	if (Pet:GetPetLocation(selectindex) ~= -1) then
 		return;
 	end
@@ -234,7 +234,7 @@ function PetLevelup_Skill_Clicked(nSkillIndex)
 	local i=1;
 	local k=1;
 
-	while i <= PETSKILL_BUTTONS_NUM do --中间可能有空的技能，而显示的时候是往前塞的，所以要找到显示的技能对应的实际位置
+	while i <= PETSKILL_BUTTONS_NUM do --?????????,???????????,?????????????????
 		local theSkillAction = Pet:EnumPetSkill( g_selectindex, i-1, "petskill");
 		if theSkillAction:GetID() ~= 0 then
 			if k == nSkillIndex then
@@ -252,7 +252,7 @@ function PetLevelup_Skill_Clicked(nSkillIndex)
 
 end
 
---这个函数跟前面不一样的地方是技能索引是玩家身上实际索引，而不是图标索引，所以需要新写一个函数
+--犫个函数跟前面不一样的地方是技能索引是玩家身上实际索引，而不是图标索引，所以需要新写一个函数
 function PetLevelup_Skill_Drag(nSkillIndex)
 
 	if( -1 == selectindex ) then
@@ -317,15 +317,15 @@ function PetLevelup_UpdateGoods(nGoodsIndex)
 end
 
 function PetLevelup_Btn_Click(nIndex)
-	if nIndex == 1 then --取消物品
+	if nIndex == 1 then --????
 		PetLevelup_CancelGoods()
-	elseif nIndex == 2 then	--取消技能
+	elseif nIndex == 2 then	--????
 		PetLevelup_CancelSkill()
 	end
 end
 
 function PetLevelup_Do()
-	--是否选珍兽
+	--是否选犱兽
 	if g_selectindex == -1 then
 		PushDebugMessage("#{JNHC_81015_05}")
 		return

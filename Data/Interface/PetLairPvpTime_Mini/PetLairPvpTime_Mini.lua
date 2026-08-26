@@ -16,7 +16,7 @@ function PetLairPvpTime_Mini_PreLoad()
 	-- 游戏分辨率发生了变化
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
 	
-	--离开场景，自动关闭
+	--离开场景，自动关睜
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)
 	this:RegisterEvent("OPEN_WINDOW")
 	this:RegisterEvent("UPDATE_MAP",false)
@@ -84,7 +84,7 @@ function PetLairPvpTime_Mini_Open()
 end
 
 --================================================
--- 关闭界面
+-- 关睜界面
 --================================================
 function PetLairPvpTime_Mini_Frame_Close()
 	this:Hide()

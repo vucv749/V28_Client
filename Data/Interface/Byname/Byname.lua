@@ -19,15 +19,15 @@ end
 -- OnLoad
 --===============================================
 function Byname_OnLoad()
-	TITLE_COUNT[0] = "Áã";
-	TITLE_COUNT[1] = "Ò»";
-	TITLE_COUNT[2] = "¶ş";
-	TITLE_COUNT[3] = "Èı";
-	TITLE_COUNT[4] = "ËÄ";
-	TITLE_COUNT[5] = "Îå";
-	TITLE_COUNT[6] = "Áù";
+	TITLE_COUNT[0] = "Linh";
+	TITLE_COUNT[1] = "Mµt";
+	TITLE_COUNT[2] = "Nh¸";
+	TITLE_COUNT[3] = "Tam";
+	TITLE_COUNT[4] = "TÑ";
+	TITLE_COUNT[5] = "Ngû";
+	TITLE_COUNT[6] = "Løc";
 	
-	Byname_Text4:SetText( "Ö®" );
+	Byname_Text4:SetText( "Chi" );
   g_Byname_Frame_UnifiedPosition=Byname_Frame:GetProperty("UnifiedPosition");	
 end
 
@@ -68,25 +68,25 @@ function DrawSwearTitle_Accept()
 	if EVENT_TYPE == "DRAW_SWEAR_TITLE" then
 		local msg = Byname_Input1:GetText();
 		if msg == "" then
-			AxTrace(0,0,"³ÆºÅ´íÁË1")
-			PushDebugMessage( "³ÆºÅÊäÈë´íÎó" )
+			AxTrace(0,0,"Danh hi®u sai l¥m r°i 1")
+			PushDebugMessage( "Danh hi®u ğßa vào sai l¥m" )
 			return
 		end
 		msg = Byname_Input3:GetText();
 		if msg == "" then
-			AxTrace(0,0,"³ÆºÅ´íÁË3")
-			PushDebugMessage( "³ÆºÅÊäÈë´íÎó" )
+			AxTrace(0,0,"Danh hi®u sai l¥m r°i 3")
+			PushDebugMessage( "Danh hi®u ğßa vào sai l¥m" )
 			return
 		end
 		local	buf	= Byname_Input1:GetText()..Byname_Text2:GetText()..Byname_Input3:GetText()
 		if string.len( buf ) > 8 then
-			AxTrace(0,0,"³ÆºÅ´íÁË9")
-			PushDebugMessage( "³ÆºÅÊäÈë´íÎó" )
+			AxTrace(0,0,"Danh hi®u sai l¥m r°i 9")
+			PushDebugMessage( "Danh hi®u ğßa vào sai l¥m" )
 			return
 		end
 
 		if Player:CheckSwearTitle(buf) == 0 then
-			PushDebugMessage( "³ÆºÅÊäÈë´íÎó" )
+			PushDebugMessage( "Danh hi®u ğßa vào sai l¥m" )
 			return
 		end
 			
@@ -97,19 +97,19 @@ function DrawSwearTitle_Accept()
 	if EVENT_TYPE == "CHANGE_SWEAR_TITLE" then
 		local msg = Byname_Input4:GetText();
 		if msg == "" then
-			AxTrace(0,0,"³ÆºÅ´íÁË4")
-			PushDebugMessage( "³ÆºÅÊäÈë´íÎó" )
+			AxTrace(0,0,"Danh hi®u sai l¥m r°i 4")
+			PushDebugMessage( "Danh hi®u ğßa vào sai l¥m" )
 			return
 		end
 		local	buf	= strFrontTitle1..Byname_Text4:GetText()..Byname_Input4:GetText()..strFrontTitle2
 		if string.len( buf ) > 16 then
-			AxTrace(0,0,"³ÆºÅ´íÁË9£º"..buf)
-			PushDebugMessage( "³ÆºÅÊäÈë´íÎó" )
+			AxTrace(0,0,"Danh hi®u sai l¥m r°i 9:"..buf)
+			PushDebugMessage( "Danh hi®u ğßa vào sai l¥m" )
 			return
 		end
 
 		if Player:CheckSwearTitle(buf) == 0 then
-				PushDebugMessage( "³ÆºÅÊäÈë´íÎó" )
+				PushDebugMessage( "Danh hi®u ğßa vào sai l¥m" )
 				return
 		end
 

@@ -4,8 +4,8 @@ local objCared = -1;
 local MISSION_ITEM_BUTTONS = {};
 local MISSION_ITEM_TEXT ={};
 local MAX_OBJ_DISTANCE = 3.0;
-local	Accept_Clicked_Num = 0;				-- ÊÇ·ñÒÑ°´¹ıÒ»´Î¡°È·¶¨¡±
-local	scriptId = -1;								-- ¡°ÑªÔ¡Éñ±ø¡±ÈÎÎñÊ±£¬µ÷ÓÃ¸Ã½çÃæµÄ½Å±¾ID
+local	Accept_Clicked_Num = 0;				-- ???????“??”
+local	scriptId = -1;								-- “????”???,????????ID
 local g_MissionReply_Frame_UnifiedPosition;
 --ÈÎÎñÌá½»½çÃæ
 
@@ -14,12 +14,12 @@ local g_MissionReply_Frame_UnifiedPosition;
 --===============================================
 function MissionReply_PreLoad()
 
-	this:RegisterEvent("REPLY_MISSION");						-- Ìá½»ÈÎÎñ½çÃæ
-	this:RegisterEvent("QUEST_AFTER_CONTINUE");			-- µã»÷¡°¼ÌĞø¡±Ö®ºó£¬½±Æ·Ñ¡Ôñ½çÃæ
-	this:RegisterEvent("REPLY_MISSION_PET");				-- ÕäÊŞË¢ĞÂ
-	this:RegisterEvent("UPDATE_REPLY_MISSION");			-- Ë¢ĞÂÌá½»ÈÎÎñ½çÃæ
-	this:RegisterEvent("OBJECT_CARED_EVENT");				-- Ä³Âß¼­¶ÔÏóµÄÄ³Ğ©·¢Éú¸Ä±ä
-	this:RegisterEvent("UPDATE_PET_PAGE");					-- Íæ¼ÒÉíÉÏµÄÕäÊŞÊı¾İ·¢Éú±ä»¯
+	this:RegisterEvent("REPLY_MISSION");						-- ??????
+	this:RegisterEvent("QUEST_AFTER_CONTINUE");			-- ??“??”??,??????
+	this:RegisterEvent("REPLY_MISSION_PET");				-- ????
+	this:RegisterEvent("UPDATE_REPLY_MISSION");			-- ????????
+	this:RegisterEvent("OBJECT_CARED_EVENT");				-- ????????????
+	this:RegisterEvent("UPDATE_PET_PAGE");					-- ?????????????
 
 		-- ÓÎÏ·´°¿Ú³ß´ç·¢ÉúÁË±ä»¯
 	this:RegisterEvent("ADJEST_UI_POS")
@@ -71,14 +71,14 @@ function MissionReply_OnEvent(event)
 		StopCareObject_MissionReply(objCared)
 		this:Hide();
 	
-	-- ÕäÊŞË¢ĞÂ
+	--  äÊŞË¢ĞÂ
 	elseif ( event == "REPLY_MISSION_PET" and this:IsVisible() ) then
-		--ÕäÊŞÒÑ±»ÆäËü½çÃæÑ¡ÖĞ
+		-- äÊŞÒÑ±»ÆäËü½çÃæÑ¡ÖĞ
 		if (Pet:GetPetLocation(tonumber(arg0)) ~= -1) then
 			return;
 		end
 
-		-- È¡Ïûµ±Ç°ÕäÊŞµÄËø¶¨×´Ì¬£¨Èç¹ûµ±Ç°Ñ¡µÄºÍÉÏÒ»´ÎÑ¡µÄÊÇÍ¬Ò»Ö»ÕäÊŞ£¬²»ÄÜ½â³ıËø¶¨£©
+		-- È¡Ïûµ±Ç° äÊŞµÄËø¶¨×´Ì¬£¨Èç¹ûµ±Ç°Ñ¡µÄºÍÉÏÒ»´ÎÑ¡µÄÊÇÍ¬Ò»Ö» äÊŞ£¬²»ÄÜ½â³ıËø¶¨£©
 		if (Pet_Index >= 0) and (Pet_Index ~= tonumber(arg0)) then			
 			Pet : SetPetLocation( Pet_Index, -1 )			
 		end		
@@ -92,7 +92,7 @@ function MissionReply_OnEvent(event)
 			return;
 		end
 		
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			this:Hide();
 			
@@ -100,7 +100,7 @@ function MissionReply_OnEvent(event)
 			StopCareObject_MissionReply(objCared);
 		end
 	
-	-- Íæ¼ÒÉíÉÏµÄÕäÊŞÊı¾İ·¢Éú±ä»¯£¬°üÀ¨ÕäÊŞ³öÕ½¡¢ĞİÏ¢¡¢Ôö¼ÓÒ»Ö»ÕäÊŞ
+	-- Íæ¼ÒÉíÉÏµÄ äÊŞÊı¾İ·¢Éú±ä»¯£¬°üÀ¨ äÊŞ³ö ½¡¢ĞİÏ¢¡¢Ôö¼ÓÒ»Ö» äÊŞ
 	elseif (event == "UPDATE_PET_PAGE") then
 		MissionReply_PetInfo_Update();
 	end
@@ -136,7 +136,7 @@ function MissionReply_Frame_Update()
 	end
 	
 	if ( nBonusNum>=1 ) then
-		MissionReply_Desc:AddTextElement("ĞèÒªÎïÆ·");
+		MissionReply_Desc:AddTextElement("C¥n v§t ph¦m");
 		for i=1, nBonusNum do
 			-- ĞèÒªµÄÀàĞÍ£¬ĞèÒªÎïÆ·ID£¬ĞèÒª¶àÉÙ¸ö
 			local nItemID, nNum = DataPool:GetMissionDemand_Item(i-1);
@@ -159,13 +159,13 @@ function MissionReply_Frame_Update()
 		i = i+1;
 	end
 
-	-- ¸üĞÂÕäÊŞµÄ½çÃæÊı¾İ
+	-- ¸üĞÂ äÊŞµÄ½çÃæÊı¾İ
 	MissionReply_PetInfo_Update();
 
 end
 
 --===============================================
--- ¸üĞÂÕäÊŞÏÔÊ¾½çÃæÊı¾İ
+-- ¸üĞÂ äÊŞÏÔÊ¾½çÃæÊı¾İ
 --===============================================
 function MissionReply_PetInfo_Update()
 	
@@ -174,23 +174,23 @@ function MissionReply_PetInfo_Update()
 	
 	--ÈÎÎñĞèÒªµÄ³èÎïÀ¸£¨Íæ¼Ò×Ô¼ºÑ¡Ôñ£©
 	if Pet_Index ~= -1 then
-		-- ÅĞ¶ÏÕäÊŞµÄ×´Ì¬
+		-- ÅĞ¶Ï äÊŞµÄ×´Ì¬
 		local szPetName, szOn = Pet:GetPetList_Appoint(Pet_Index);
 		if(szPetName ~= "")   then
-			-- ÕäÊŞÔÚ±³°üÀï
+			--  äÊŞÔÚ±³°üÀï
 			if ( szOn == "on_packa" ) then
-				-- ¸øÕäÊŞÉÏËø£¬ÉèÖÃÕäÊŞÒÑ¾­Ìá½»µ½7ºÅ½çÃæÈİÆ÷
+				-- ¸ø äÊŞÉÏËø£¬ÉèÖÃ äÊŞÒÑ¾­Ìá½»µ½7ºÅ½çÃæÈİÆ÷
 				Pet : SetPetLocation( Pet_Index, 7 )
 				MissionReply_NeedPet_Info : SetText(Pet:GetName(Pet_Index));
 			else
-				-- ¸øÕäÊŞ½âËø£¬ÉèÖÃÕäÊŞÒÑ¾­´Óµ±Ç°½çÃæÈİÆ÷ÊÍ·Å
+				-- ¸ø äÊŞ½âËø£¬ÉèÖÃ äÊŞÒÑ¾­´Óµ±Ç°½çÃæÈİÆ÷ÊÍ·Å
 				Pet : SetPetLocation( Pet_Index, -1 )
 				Pet_Index = -1
 				MissionReply_NeedPet_Info : SetText("");
 			end
 		end
 	end
-	-- ¸üĞÂÕäÊŞÁĞ±í½çÃæ
+	-- ¸üĞÂ äÊŞÁĞ±í½çÃæ
 	Pet:UpdatePetList();
 
 end
@@ -211,7 +211,7 @@ function MissionReply_Accept_Clicked()
 	if ( scriptId == 500503 ) or ( scriptId == 500504 ) then
 
 		if (Accept_Clicked_Num == 0) then
-			MissionReply:OpenSecondConfirmFrame(scriptId);		-- ¸ù¾İµ÷ÓÃ¸Ã½çÃæµÄscriptId£¬´ò¿ª¶ÔÓ¦µÄ¶ş´ÎÈ·ÈÏÒ³Ãæ
+			MissionReply:OpenSecondConfirmFrame(scriptId);		-- ????????scriptId,???????????
 			Accept_Clicked_Num = 1;
 
 		else 	 
@@ -221,7 +221,7 @@ function MissionReply_Accept_Clicked()
 				Pet : SetPetLocation( Pet_Index, -1 )
 			end
 			Pet_Index = -1;
-			Accept_Clicked_Num = 0; 													-- µÚ2´Îµã»÷¡°È·¶¨¡±ºó£¬»Ö¸´ Accept_Clicked_Num ÎªÎ´°´¹ı¡°È·¶¨¡±°´Å¥¡£
+			Accept_Clicked_Num = 0; 													-- ?2???“??”?,?? Accept_Clicked_Num ????“??”???
 			this:Hide();
 		end
 		
@@ -244,7 +244,7 @@ function MissionReply_Cancel_Clicked()
 
 	-- Èç¹ûÊÇ¡°ÑªÔ¡Éñ±ø¡±ÖĞµÄ¡°ÉñÆ÷ÖıÔì¡±»ò¡°ÉñÆ÷ÖØÖı¡±ÈÎÎñµ÷ÓÃµÄ¸Ã½çÃæ
 	if ( scriptId == 500503 ) or ( scriptId == 500504 ) then
-		Accept_Clicked_Num = 0; 														-- µã»÷¡°È¡Ïû¡±ºó£¬»Ö¸´ Accept_Clicked_Num ÎªÎ´°´¹ı¡°È·¶¨¡±°´Å¥¡£
+		Accept_Clicked_Num = 0; 														-- ??“??”?,?? Accept_Clicked_Num ????“??”???
 	end
 	
 	StopCareObject_MissionReply(objCared)
@@ -258,7 +258,7 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØĞÄNPC£¬
---ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 --Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function BeginCareObject_MissionReply(objCaredId)

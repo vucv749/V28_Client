@@ -4,7 +4,7 @@ local g_CaredNpc = -1
 local g_DWQIANGHUA_Item = -1
 local g_DWQIANGHUA_DemandMoney = 0
 local g_DWQIANGHUA_GRID_SKIP = 96
--- ½ğ²ÏË¿, Ç¿»¯ÓÃµÄµÀ¾ß, °´ÕÕ °ó¶¨ -> Ôª±¦½»Ò× -> Ëæ±ã½»Ò× Ë³ĞòÊ¹ÓÃ
+-- ½ğ²ÏË¿, Ç¿»¯ÓÃµÄµÀ¾ß, °´   °ó¶¨ -> Ôª±¦½»Ò× -> Ëæ±ã½»Ò× Ë³ĞòÊ¹ÓÃ
 local g_DWQIANGHUA_ToolItem = {20310168, 20310166, 20310167}
 local g_DWQIANGHUA_Tool_Num = tonumber(1)
 local g_DWQIANGHUA_NUM_LOW = tonumber(1)
@@ -44,7 +44,7 @@ function DWQianghua_OnLoad()
 	DWQianghua_DemandMoney:SetProperty("MoneyNumber", tostring(g_DWQIANGHUA_DemandMoney))
 	g_DWQIANGHUA_Tool_Num = tonumber(1)
 	DWQianghua_NumericalValue:SetProperty("Text", tostring(g_DWQIANGHUA_Tool_Num))
-	-- Ê¼ÖÕ¿ÉÒÔµã»÷ OK °´Å¥, ÎªÁË·½±ãÌáÊ¾Íæ¼ÒĞÅÏ¢
+	-- Ê¼Ö ¿ÉÒÔµã»÷ OK °´Å¥, ÎªÁË·½±ãÌáÊ¾Íæ¼ÒĞÅÏ¢
 	DWQianghua_OK:Enable()
 	
 	g_DWQianghua_Frame_UnifiedPosition=DWQianghua_Frame:GetProperty("UnifiedPosition");
@@ -58,7 +58,7 @@ function DWQianghua_OnEvent(event)
 		local xx = Get_XParam_INT(0)
 		g_CaredNpc = DataPool:GetNPCIDByServerID(xx)
 		if g_CaredNpc == -1 then
-			PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£")
+			PushDebugMessage("Dæ li®u máy chü có v¤n ğ«")
 			return
 		end
 		BeginCareObject_DWQianghua()
@@ -76,14 +76,14 @@ function DWQianghua_OnEvent(event)
 		if (arg0~= nil and -1 == tonumber(arg0)) then
 			return
 		end
-		-- ¿ÉÒÔ¸Ä³ÉÔÊĞí½Ó×ÅÇ¿»¯, ÄÇ¾Í²»ÒªÔÚÕâÀïÒÆ³ıÎïÆ·
+		-- ¿ÉÒÔ¸Ä³ÉÔÊĞí½Ó×ÅÇ¿»¯, ÄÇ¾Í²»ÒªÔÚ âÀïÒÆ³ıÎïÆ·
 		if tonumber(arg0) == g_DWQIANGHUA_Item then
 			-- Ç¿»¯ºó²»½«×°±¸·µ»¹µ½°ü¹ü, Ö§³Ö³ÖĞøÇ¿»¯ - 2009-12-07
 			--DWQianghua_Resume_Equip()
 			DWQianghua_UpdateBasic()
 		end
 	elseif (event == "UPDATE_DWQIANGHUA") then
-		--¼ÓÔØÕâÀïºÜÈİÒ×µ¼ÖÂ½çÃæ´¦Àí²»¹ıÀ´, Õâ¸öÊÂ¼şÌØ±ğ¶à
+		--¼ÓÔØ âÀïºÜÈİÒ×µ¼ÖÂ½çÃæ´¦Àí²»¹ıÀ´,  â¸öÊÂ¼şÌØ±ğ¶à
 		--DWQianghua_UpdateBasic()
 		if arg0 ~= nil then
 			DWQianghua_Update(arg0)
@@ -112,7 +112,7 @@ function DWQianghua_OnEvent(event)
 		BeginCareObject_DWQianghua()
 		DWQianghua_Clear()
 		DWQianghua_UpdateBasic()
-		--µ÷Õû½çÃæÎ»ÖÃ
+		--µ÷ û½çÃæÎ»ÖÃ
 		if tostring(arg2) ~= nil then
 			DWQianghua_Frame:SetProperty("UnifiedPosition", tostring(arg2));
 		end
@@ -122,7 +122,7 @@ end
 
 --=========================================================
 -- ¸üĞÂ»ù±¾ÏÔÊ¾ĞÅÏ¢
--- ÔÚÕâÀï¼ÆËã½ğÇ®²¢ÏÔÊ¾
+-- ÔÚ âÀï¼ÆËã½ğÇ®²¢ÏÔÊ¾
 --=========================================================
 function DWQianghua_UpdateBasic(nToolNum)
 	DWQianghua_SelfMoney:SetProperty("MoneyNumber", Player:GetData("MONEY"))
@@ -189,18 +189,18 @@ function DWQianghua_Update(itemIndex)
 			return
 		elseif ret == -3 then
 			-- ×°±¸ÉÏµÄµñÎÆÒÑ¾­Ç¿»¯Âú¼¶, ²»ÄÜÔÙÇ¿»¯
-			PushDebugMessage("ÄúÕâ¸ö×°±¸ÉÏµÄµñÎÆ²»ÄÜÔÙÇ¿»¯.")
+			PushDebugMessage("Hoa vån trên trang b¸ các hÕ không th¬ cß¶ng hóa næa.")
 			return
 		end
 
 		-- µñÎÆÇ¿»¯²»ÅĞ¶Ï×°±¸ÊÇ·ñ¼ÓËøÁË - 2009-12-07
-		-- ÅĞ¶ÏÎïÆ·ÊÇ·ñ¼ÓËø(ÔÚÕâ¸öÂß¼­Ö®Ç°³ÌĞòÒÑ¾­ÅĞ¶ÏÁË)
+		-- ÅĞ¶ÏÎïÆ·ÊÇ·ñ¼ÓËø(ÔÚ â¸öÂß¼­Ö®Ç°³ÌĞòÒÑ¾­ÅĞ¶ÏÁË)
 --		if PlayerPackage:IsLock(index) == 1 then
 --			PushDebugMessage("#{ZBDW_091105_3}")
 --			return
 --		end
 
-		-- Èç¹û¿Õ¸ñÄÚÒÑ¾­ÓĞ¶ÔÓ¦ÎïÆ·ÁË, Ìæ»»Ö®
+		-- Èç¹û¿ ¸ñÄÚÒÑ¾­ÓĞ¶ÔÓ¦ÎïÆ·ÁË, Ìæ»»Ö®
 		if g_DWQIANGHUA_Item ~= -1 then
 			LifeAbility:Lock_Packet_Item(g_DWQIANGHUA_Item, 0)
 		end
@@ -218,7 +218,7 @@ function DWQianghua_Update(itemIndex)
 			end
 		end
 
-		-- Éè¶¨ OK Îª×ÜÊÇ¿ÉÒÔµã»÷, ÕâÑù·½±ã¼ìÑé
+		-- Éè¶¨ OK Îª×ÜÊÇ¿ÉÒÔµã»÷,  âÑù·½±ã¼ìÑé
 		-- ÅĞ¶ÏÎïÆ·ÊÇ·ñÂú×ãÒªÇóÀ´Éè¶¨¹¦ÄÜbutton
 		-- DWQianghua_Check_AllItem()
 	else
@@ -282,11 +282,11 @@ end
 
 --=========================================================
 -- ¸ü¸Ä½ğ²ÏË¿ÊıÁ¿²¢ÉèÖÃ±äÁ¿
--- ÎªÁË±£Ö¤ÕâÁ½¸ö²Ù×÷Ê¼ÖÕÍ³Ò»
+-- ÎªÁË±£Ö¤ âÁ½¸ö²Ù×÷Ê¼Ö Í³Ò»
 --=========================================================
 function DWQianghua_SetToolNumAndText(count)
 	local num = tonumber(count)
-	-- ×¢ÒâÕâÀï²»ÒªºÍ DWQianghua_ToolNumChange() ²úÉúËÀÑ­»·ÁË
+	-- ×¢Òâ âÀï²»ÒªºÍ DWQianghua_ToolNumChange() ²úÉúËÀÑ­»·ÁË
 	if count == nil or count == "" or num < g_DWQIANGHUA_NUM_LOW then
 		-- ÊäÈëÌ«Ğ¡µÄÊı
 		g_DWQIANGHUA_Tool_Num = g_DWQIANGHUA_NUM_LOW
@@ -319,7 +319,7 @@ end
 
 --=========================================================
 -- ÅĞ¶ÏÊÇ·ñËùÓĞÎïÆ·¶¼ÒÑ·ÅºÃ
--- Ö»ÔÚµã»÷ OK °´Å¥µÄÊ±ºòµ÷ÓÃÕâ¸öº¯Êı
+-- Ö»ÔÚµã»÷ OK °´Å¥µÄÊ±ºòµ÷ÓÃ â¸öº¯Êı
 --=========================================================
 function DWQianghua_Check_AllItem()
 	DWQianghua_UpdateBasic()
@@ -330,7 +330,7 @@ function DWQianghua_Check_AllItem()
 		return 1
 	end
 
-	-- ÅĞ¶Ï×°±¸ÊÇ·ñÄÜ¹»Ç¿»¯(Ã»ÓĞÊ´¿ÌµñÎÆ»òÕßÇ¿»¯µ½¶¥¼¶ÁË·µ»Ø < 0)
+	-- ÅĞ¶Ï×°±¸ÊÇ·ñÄÜ¹»Ç¿»¯(Ã»ÓĞÊ´¿ÌµñÎÆ»ò ßÇ¿»¯µ½¶¥¼¶ÁË·µ»Ø < 0)
 	local ret = LifeAbility:CanEquipDiaowen_Enchase(g_DWQIANGHUA_Item)
 	if ret == -1 or ret == -2 then
 		return 2
@@ -353,10 +353,10 @@ function DWQianghua_Check_AllItem()
 end
 
 
-local EB_FREE_BIND = 0;				-- ÎŞ°ó¶¨ÏŞÖÆ
-local EB_BINDED = 1;				-- ÒÑ¾­°ó¶¨
-local EB_GETUP_BIND =2			-- Ê°È¡°ó¶¨
-local EB_EQUIP_BIND =3			-- ×°±¸°ó¶¨
+local EB_FREE_BIND = 0;				-- ?????
+local EB_BINDED = 1;				-- ????
+local EB_GETUP_BIND =2			-- ????
+local EB_EQUIP_BIND =3			-- ????
 --=========================================================
 -- È·¶¨Ö´ĞĞ¹¦ÄÜ
 --=========================================================
@@ -366,7 +366,7 @@ function DWQianghua_OK_Clicked(okFlag)
 		PushDebugMessage("#{ZBDW_091105_12}")
 		return
 	elseif ret == 3 then
-		PushDebugMessage("ÄúÕâ¸ö×°±¸ÉÏµÄµñÎÆ²»ÄÜÔÙÇ¿»¯.")
+		PushDebugMessage("Hoa vån trên trang b¸ các hÕ không th¬ cß¶ng hóa næa.")
 		return
 	elseif ret == 44 then
 		PushDebugMessage("#{GMGameInterface_Script_PlayerMySelf_Info_Money_Not_Enough}")
@@ -374,7 +374,7 @@ function DWQianghua_OK_Clicked(okFlag)
 	end
 
 	if ret == 0 then
-		local toolNumInBag = 0		-- ±³°üÀïÇ¿»¯²ÄÁÏµÄ¸öÊı
+		local toolNumInBag = 0		-- ??????????
 		for i, tbIndex in ipairs(g_DWQIANGHUA_ToolItem) do
 			toolNumInBag = toolNumInBag + PlayerPackage:CountAvailableItemByIDTable(tonumber(tbIndex))
 		end
@@ -432,7 +432,7 @@ function DWQianghua_OK_Clicked(okFlag)
 end
 
 --=========================================================
--- ¹Ø±Õ½çÃæ
+-- ¹Ø± ½çÃæ
 --=========================================================
 function DWQianghua_Close()
 	this:Hide()
@@ -450,7 +450,7 @@ end
 
 --=========================================================
 -- ¿ªÊ¼¹ØĞÄNPC£¬
--- ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+-- ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 -- Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function BeginCareObject_DWQianghua()

@@ -10,7 +10,7 @@ function DaHua_List_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
 	this:RegisterEvent("REFRESH_QIXIPVEWAR_SCORE")
 	
-	--Àë¿ª³¡¾°£¬×Ô¶¯¹Ø±Õ
+	--Àë¿ª³¡¾°£¬×Ô¶¯¹Ø± 
 	this:RegisterEvent("PLAYER_LEAVE_WORLD", false)	
 	-- ÓÎÏ·´°¿Ú³ß´ç·¢ÉúÁË±ä»¯
 	this:RegisterEvent("ADJEST_UI_POS")
@@ -212,37 +212,37 @@ function DaHua_List_GetMenPai( menpai )
 	
 	-- µÃµ½ÃÅÅÉÃû³Æ.
 	if(0 == menpai) then
-		strName = "ÉÙÁÖ";
+		strName = "Thiªu Lâm";
 
 	elseif(1 == menpai) then
-		strName = "Ã÷½Ì";
+		strName = "Minh Giáo";
 
 	elseif(2 == menpai) then
-		strName = "Ø¤°ï";
+		strName = "Cái Bang";
 
 	elseif(3 == menpai) then
-		strName = "Îäµ±";
+		strName = "Võ Ğang";
 
 	elseif(4 == menpai) then
-		strName = "¶ëáÒ";
+		strName = "Nga Mi";
 
 	elseif(5 == menpai) then
-		strName = "ĞÇËŞ";
+		strName = "Tinh Túc";
 
 	elseif(6 == menpai) then
-		strName = "ÌìÁú";
+		strName = "Thiên Long";
 
 	elseif(7 == menpai) then
-		strName = "ÌìÉ½";
+		strName = "Thiên S½n";
 
 	elseif(8 == menpai) then
-		strName = "åĞÒ£";
+		strName = "Tiêu dao";
 
 	elseif(9 == menpai) then
-		strName = "ÎŞÃÅÅÉ";
+		strName = "Tñ do";
 
 	elseif(10== menpai) then
-		strName = "ÂüÍÓÉ½×¯";
+		strName = "MÕn Ğà S½n Trang";
 
 	-- elseif(11== menpai) then--MPTODO menpai11
 	-- 	strName = "¶ñÈË¹È";

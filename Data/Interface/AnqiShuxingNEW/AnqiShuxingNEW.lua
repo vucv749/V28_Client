@@ -1,11 +1,11 @@
 -- !!!reloadscript =AnqiShuxingNEW
 -- 10155001	·É»ÈÊ¯
--- 10155002	±ùÆÇÉñÕë
+-- 10155002	±ùÆÇÉñ ë
 -- 10155003	Ã·»¨ïÚ
 -- !!createitem = 10155002 = 1=1
 -- !!createitem = 30503118 = 1=100
 
---°µÆ÷ ÊôĞÔµ÷ÕûÒ³Ãæ
+--°µÆ÷ ÊôĞÔµ÷ ûÒ³Ãæ
 local MAX_OBJ_DISTANCE = 3.0;
 local objCared = -1;
 local g_Object = -1;
@@ -19,7 +19,7 @@ local Dark_chongxi_state =0
 function AnqiShuxingNEW_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
 	this:RegisterEvent("OBJECT_CARED_EVENT");
-	this:RegisterEvent("RESUME_ENCHASE_GEM");           --²Î¼û\ClientLib\Ui_cegui\UISystem.cpp£¬line:1018
+	this:RegisterEvent("RESUME_ENCHASE_GEM");           --??\ClientLib\Ui_cegui\UISystem.cpp,line:1018
 	--½ğÇ®¸Ä±äµÄ´¦Àí
 	this:RegisterEvent("UNIT_MONEY");
 	this:RegisterEvent("MONEYJZ_CHANGE");
@@ -42,7 +42,7 @@ end
 
 function AnqiShuxingNEW_OnEvent(event)
 	if(event == "UI_COMMAND" and tonumber(arg0) == 800034) then
-		if this : IsVisible() then									-- Èç¹û½çÃæ¿ª×Å£¬Ôò²»´¦Àí
+		if this : IsVisible() then									-- ??????,????
 			AnqiShuxingNEW_Close();
 		end
 
@@ -51,7 +51,7 @@ function AnqiShuxingNEW_OnEvent(event)
 		objCared = DataPool : GetNPCIDByServerID(xx);
 
 		if objCared == -1 then
-				PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£");
+				PushDebugMessage("Dæ li®u máy chü có v¤n ğ«");
 				return;
 		end
 		AnqiShuxingNEW_BeginCareObject(objCared);
@@ -72,7 +72,7 @@ function AnqiShuxingNEW_OnEvent(event)
 			return;
 		end
 
-	--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+	--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 
 			--È¡Ïû¹ØĞÄ
@@ -93,13 +93,13 @@ function AnqiShuxingNEW_OnEvent(event)
 
 	elseif (event == "DARK_SKILL_RECOIN_CONFIRM_OK") then
 		if tonumber(arg1) == 1 then
-			AnqiShuxingNEW_Reset(1) --ÏÈ°ÑÔ­À´µÄÇå¿ÕÁË
-			AnqiShuxingNEW_Update(arg0) --ÔÙ·ÅÉÏĞÂµÄ~
+			AnqiShuxingNEW_Reset(1) --????????
+			AnqiShuxingNEW_Update(arg0) --?????~
 		elseif tonumber(arg1) == 0 then
 			AnqiShuxingNEW_Reset(1)
 			this:Hide()
 		elseif tonumber(arg1) == 2 then
-			AnqiShuxingNEW_Reset(1) --ÏÈ°ÑÔ­À´µÄÇå¿ÕÁË
+			AnqiShuxingNEW_Reset(1) --????????
 		end
 	end
 end
@@ -119,7 +119,7 @@ function AnqiShuxingNEW_InitDlg( )
 		AnqiShuxingNEW_Reset(1)
 		AnqiShuxingNEW_DragTitle:SetText("#{FBSJ_081209_80}");
 		--Èç¹û¶Ô°µÆ÷ÁìÎòµÄ¼¼ÄÜ²»ÂúÒâ£¬¿ÉÒÔÊ¹ÓÃÍüÎŞÊ¯½«¼¼ÄÜÖØÏ´¡£ÖØÏ´ºó¿ÉÑ¡ÔñÊ¹ÓÃĞÂµÄ¼¼ÄÜ»ò±£ÁôÔ­ÓĞ¼¼ÄÜ¡£
---×¢Òâ£ºÖØÏ´Ê±°µÆ÷µÄËùÓĞ¼¼ÄÜ¶¼½«±»ÖØÖÃ¡£ÖØÏ´Íê³ÉºóÈç¹ûÄú½øĞĞ¹Ø±ÕÖØÏ´¼¼ÄÜ½çÃæ¡¢È¡Ïû°µÆ÷·ÅÈë×´Ì¬¡¢¸ü»»ÒÑ·ÅÈëµÄ°µÆ÷µÈ²Ù×÷£¬¾ùÊÓÎª±£ÁôÔ­ÓĞ¼¼ÄÜ²Ù×÷¡£
+--×¢Òâ£ºÖØÏ´Ê±°µÆ÷µÄËùÓĞ¼¼ÄÜ¶¼½«±»ÖØÖÃ¡£ÖØÏ´Íê³ÉºóÈç¹ûÄú½øĞĞ¹Ø± ÖØÏ´¼¼ÄÜ½çÃæ¡¢È¡Ïû°µÆ÷·ÅÈë×´Ì¬¡¢¸ü»»ÒÑ·ÅÈëµÄ°µÆ÷µÈ²Ù×÷£¬¾ùÊÓÎª±£ÁôÔ­ÓĞ¼¼ÄÜ²Ù×÷¡£
 
 		AnqiShuxingNEW_Info:SetText("#{FBSJ_081209_56}");
 		--Çë·ÅÈë°µÆ÷
@@ -162,7 +162,7 @@ function AnqiShuxingNEW_OK_Clicked()
 		PushDebugMessage("#{CXYH_140813_16}")
 	end
 
-	--ÊÇ·ñÓĞÎïÆ· È±ÉÙµÀ¾ßÍüÎŞÊ¯»òÕß±³°üÖĞµÄÍüÎŞÊ¯ÒÑ¼ÓËø£¡
+	--ÊÇ·ñÓĞÎïÆ· È±ÉÙµÀ¾ßÍüÎŞÊ¯»ò ß±³°üÖĞµÄÍüÎŞÊ¯ÒÑ¼ÓËø£¡
 
 	local EquipPoint = LifeAbility : Get_Equip_Point(Dark_Bag_Index)
 	if (EquipPoint ~= 17) then
@@ -215,7 +215,7 @@ function AnqiShuxingNEW_Update(Item_index)
 
 		--¶ş´ÎÈ·ÈÏ¿ò
 			AnqiShuxingNEW_SendDarkSkillConfirm(i_index,1)
-		-- Èç¹û¿Õ¸ñÄÚÒÑ¾­ÓĞ¶ÔÓ¦ÎïÆ·ÁË,ĞèÒªµ¯Ò»¸ö¶ş´ÎÈ·ÈÏ¡­¡­
+		-- Èç¹û¿ ¸ñÄÚÒÑ¾­ÓĞ¶ÔÓ¦ÎïÆ·ÁË,ĞèÒªµ¯Ò»¸ö¶ş´ÎÈ·ÈÏ¡­¡­
 			return
 		end
 
@@ -281,7 +281,7 @@ function AnqiShuxingNEW_Reset(cleanaction)
 end
 
 function AnqiShuxingNEW_Close()
-	--¹Ø±ÕÇ°Ò²ÒªÀ´¸ö¶ş´ÎÈ·ÈÏ
+	--¹Ø± Ç°Ò²ÒªÀ´¸ö¶ş´ÎÈ·ÈÏ
 	if Dark_Bag_Index ~= -1 and  Dark_chongxi_state == 1 then
 		AnqiShuxingNEW_SendDarkSkillConfirm(Dark_Bag_Index,0)
 		return
@@ -320,7 +320,7 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØĞÄNPC£¬
---ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 --Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function AnqiShuxingNEW_BeginCareObject(objCaredId)

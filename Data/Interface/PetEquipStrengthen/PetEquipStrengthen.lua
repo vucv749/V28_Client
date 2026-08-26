@@ -1,6 +1,6 @@
-local Enhance_Equip =  -1	--强化的装备
-local Enhance_Item = 30900060   --破军强化精华
-local Enhance_PJJH = 30505266	--破军强化露
+local Enhance_Equip =  -1	--?????
+local Enhance_Item = 30900060   --??????
+local Enhance_PJJH = 30505266	--?????
 local objCared = -1;
 local g_Object = -1;
 function PetEquipStrengthen_PreLoad()
@@ -93,7 +93,7 @@ function PetEquipStrengthen_OnHiden()
 end
 
 
---放入了珍兽装备
+--放入了犱兽装备
 function PetEquipStrengthen_Update(Item_index)
 	local i_index = tonumber(Item_index)
 	local theAction = EnumAction(i_index, "packageitem");
@@ -156,16 +156,16 @@ function PetEquipStrengthen_Update(Item_index)
 end
 
 --点击确定按钮强化装备
-local EB_FREE_BIND = 0;				-- 无绑定限制
-local EB_BINDED = 1;				-- 已经绑定
-local	EB_GETUP_BIND =2			-- 拾取绑定
-local	EB_EQUIP_BIND =3			-- 装备绑定
+local EB_FREE_BIND = 0;				-- ?????
+local EB_BINDED = 1;				-- ????
+local	EB_GETUP_BIND =2			-- ????
+local	EB_EQUIP_BIND =3			-- ????
 function PetEquipStrengthen_Buttons_Clicked()
 	if Enhance_Equip == -1 then
 		PushDebugMessage("#{ZSZB_090421_43}")
 		return
 	end
-	--找强化精华
+	--犚强化精华
 	local isExist = IsItemExist_NoLimit(tonumber(Enhance_Item))
 	local isExist1 = IsItemExist_NoLimit(tonumber(Enhance_PJJH))
 	if isExist ~= 1 and isExist1 ~= 1 then

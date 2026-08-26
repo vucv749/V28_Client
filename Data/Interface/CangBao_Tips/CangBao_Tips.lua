@@ -8,12 +8,12 @@ local g_CangBao_Tips_Frame_UnifiedPosition;
 --服务器不传字典 直接传编号提示
 local g_CangBao_TipsList = 
 {
-	[1] = {tips="#{ZDBT_240703_38}",nTime=6},--击杀入门boss
-	[2] = {tips="#{ZDBT_240703_209}",nTime=6},--捡金币
-	[3] = {tips="#{ZDBT_240703_68}",nTime=6},--群小怪
-	[4] = {tips="#{ZDBT_240703_70}",nTime=6},--接宝箱
-	[5] = {tips="#{ZDBT_240703_206}",nTime=6},--躲避球
-	[6] = {tips="#{ZDBT_240703_47}",nTime=6},--结算房间
+	[1] = {tips="#{ZDBT_240703_38}",nTime=6},--????boss
+	[2] = {tips="#{ZDBT_240703_209}",nTime=6},--???
+	[3] = {tips="#{ZDBT_240703_68}",nTime=6},--???
+	[4] = {tips="#{ZDBT_240703_70}",nTime=6},--???
+	[5] = {tips="#{ZDBT_240703_206}",nTime=6},--???
+	[6] = {tips="#{ZDBT_240703_47}",nTime=6},--????
 }
 
 
@@ -85,20 +85,20 @@ end
 --=========================================================
 function CangBao_Tips_Open(nTipsIdx)
 	if nTipsIdx < 0 then
-		--关闭界面
+		--关睜界面
 		CangBao_Tips_Close()
 	else
 		if g_CangBao_TipsList[nTipsIdx] then
 			CangBao_Tips_Text:SetText(g_CangBao_TipsList[nTipsIdx].tips)
 			--倒计时
-			SetTimer("CangBao_Tips","CangBao_Tips_Close()", g_CangBao_TipsList[nTipsIdx].nTime*1000);		--设置定时器5秒钟倒计时
+			SetTimer("CangBao_Tips","CangBao_Tips_Close()", g_CangBao_TipsList[nTipsIdx].nTime*1000);		--?????5?????
 			this:Show()
 		end
 	end
 
 end
 --=========================================================
---关闭界面
+--关睜界面
 --=========================================================
 function CangBao_Tips_Close()
 	KillTimer("CangBao_Tips_Close()")

@@ -1,4 +1,4 @@
--- 比武招亲
+-- 比武犘亲
 --
 local g_unifiedposistion
 local g_Init = 0
@@ -62,7 +62,7 @@ function Biwuzhaoqin_Watch_Mini_ResetPos()
 end
 
 --================================================
--- 关闭界面
+-- 关睜界面
 --================================================
 function Biwuzhaoqin_Watch_MiniFrame_HideWindow()
 	this:Hide()

@@ -32,7 +32,7 @@ function EquipStrengthen_OnEvent(event)
 			local xx = Get_XParam_INT(0);
 			objCared = DataPool : GetNPCIDByServerID(xx);
 			if tonumber(objCared)==nil or  tonumber(objCared)== -1 then
-				PushDebugMessage("server´«¹ýÀ´µÄÊý¾ÝÓÐÎÊÌâ¡£");
+				PushDebugMessage("Dæ li®u máy chü có v¤n ð«");
 				return;
 			end
 			this:Show();
@@ -106,15 +106,15 @@ function EquipStrengthen_Update(Item_index)
 			local EquipPoint = LifeAbility : Get_Equip_Point(i_index)
 			
 			if EquipPoint == -1 or EquipPoint == 8 or EquipPoint == 9 or EquipPoint == 10 
-			or PlayerPackage:IsBagItemKFS(i_index) ==1 then --Îä»êµÄÏÞÖÆ
+			or PlayerPackage:IsBagItemKFS(i_index) ==1 then --?????
 				if EquipPoint ~= -1 then
-					PushDebugMessage("²»ÄÜ·ÅÈëÕâÖÖ×°±¸¡£")
+					PushDebugMessage("Không th¬ ð£t trang b¸ này vào")
 				end
 				return
 			end
 			
 			if EquipPoint >= 19 and EquipPoint <= 24 then
-				PushDebugMessage("²»ÄÜ·ÅÈëÕâÖÖ×°±¸¡£")
+				PushDebugMessage("Không th¬ ð£t trang b¸ này vào")
 				return
 			end
 			
@@ -122,7 +122,7 @@ function EquipStrengthen_Update(Item_index)
 			
 			--BUG30523,alan,2007-12-29
 			--½«×°±¸ÍÏµ½Ç¿»¯´°¿ÚÓëÃ¿´ÎÇ¿»¯½áÊø¶¼»áµ÷ÓÃ´Ëº¯Êý£¬9¼¶×°±¸ÊÇ²»ÔÊÐí·Åµ½Ç¿»¯´°¿ÚµÄ£¬µ«ÊÇÇ¿»¯µ½9¼¶Ê±
-			--ÐèÒªÏÔÊ¾9¼¶×°±¸Ç¿»¯µÄ½á¹û£¬ÕâÀïÓÃÇ¿»¯´°¿ÚµÄÎïÆ·¸ñÊÇ·ñÓÐÎïÆ·À´Ê¶±ðÕâÁ½ÀàÇéÐÎ¡£
+			--ÐèÒªÏÔÊ¾9¼¶×°±¸Ç¿»¯µÄ½á¹û£¬ âÀïÓÃÇ¿»¯´°¿ÚµÄÎïÆ·¸ñÊÇ·ñÓÐÎïÆ·À´Ê¶±ð âÁ½ÀàÇéÐÎ¡£
 			--ºóÒ»ÇéÐÎÏÂ½ûÓÃOK°´Å¥
 			
 			if(NeedMoney<=0 or tonumber(Property)==nil or tonumber(Property)<0) then
@@ -131,7 +131,7 @@ function EquipStrengthen_Update(Item_index)
 					EquipStrengthen_OK:Disable()
 					EquipStrengthen_Quick:Disable()
 				else
-					PushDebugMessage("´Ë×°±¸ÎÞ·¨Ç¿»¯¡£")
+					PushDebugMessage("ThØ trang b¸ không th¬ cß¶ng hóa.")
 					return
 				end
 			else				
@@ -160,7 +160,7 @@ function EquipStrengthen_Update(Item_index)
 				EquipStrengthen_Info2:Show();
 				EquipStrengthen_Info6:Show();
 				if(tonumber(StrongLevel) == 0)then
-					EquipStrengthen_Info6:SetText("ÎÞ");
+					EquipStrengthen_Info6:SetText("Vô");
 				else
 					EquipStrengthen_Info6:SetText(""..tonumber(StrongLevel));
 				end
@@ -176,7 +176,7 @@ function EquipStrengthen_Update(Item_index)
 				EquipStrengthen_Info7 : SetText("#G#{_ITEM30900005}")
 			else
 				Enchange_Item2 = 30900006;
-				EquipStrengthen_Info7 : SetText("#G#{_ITEM30900006}#W»ò#G#{_ITEM30900045}")
+				EquipStrengthen_Info7 : SetText("#G#{_ITEM30900006}#WHo£c#G#{_ITEM30900045}")
 			end
 			
 			EquipStrengthen_Info9:Show();
@@ -186,13 +186,13 @@ function EquipStrengthen_Update(Item_index)
 	end	
 end
 
-local EB_FREE_BIND = 0;				-- ÎÞ°ó¶¨ÏÞÖÆ
-local EB_BINDED = 1;				-- ÒÑ¾­°ó¶¨
-local	EB_GETUP_BIND =2			-- Ê°È¡°ó¶¨
-local	EB_EQUIP_BIND =3			-- ×°±¸°ó¶¨
+local EB_FREE_BIND = 0;				-- ?????
+local EB_BINDED = 1;				-- ????
+local	EB_GETUP_BIND =2			-- ????
+local	EB_EQUIP_BIND =3			-- ????
 function EquipStrengthen_Buttons_Clicked()
 	if Enchange_Item1 == -1 then
-		PushDebugMessage("Çë·ÅÈëÒ»¸ö×°±¸¡£")
+		PushDebugMessage("Thïnh ð¬ vào mµt cái trang b¸.")
 		return
 	end
 	local StrongLevel = LifeAbility:Get_Equip_CurStrengthLevel(Enchange_Item1);
@@ -211,12 +211,12 @@ function EquipStrengthen_Buttons_Clicked()
 	local index,BindState = PlayerPackage:FindFirstBindedItemIdxByIDTable(tonumber(Enchange_Item2));
 
 	--PushDebugMessage("Çë·ÅÈëÒ»¸ö×°±¸1¡£")
- --ÏÈÕÒÇ¿»¯¾«»ª
+ --ÏÈ ÒÇ¿»¯¾«»ª
 	if index == -1 and Enchange_Item2 == 30900006 then
 		local index1,BindState1 = PlayerPackage:FindFirstBindedItemIdxByIDTable(tonumber(QianghualuId));
 		--PushDebugMessage("Çë·ÅÈëÒ»¸ö×°±¸21¡£")
 		if(index1 == -1)then
-			local str = "ÐèÒª#{_ITEM"..Enchange_Item2.."}»ò#{_ITEM"..QianghualuId.."}";
+			local str = "C¥n có #{_ITEM"..Enchange_Item2.."}Ho£c#{_ITEM"..QianghualuId.."}";
 		--PushDebugMessage("Çë·ÅÈëÒ»¸ö×°±¸321¡£")
 			PushDebugMessage(str);
 			return
@@ -228,7 +228,7 @@ function EquipStrengthen_Buttons_Clicked()
 	end
 	
 	if(index == -1)then
-		local str =  "È±ÉÙ#{_ITEM"..Enchange_Item2.."}£¬»òÕß#{_ITEM"..Enchange_Item2.."}ÒÑ¼ÓËø¡£";
+		local str =  "Khuyªt thiªu#{_ITEM"..Enchange_Item2.."}, ho£c là#{_ITEM"..Enchange_Item2.."}Dî Gia Toä.";
 		PushDebugMessage(str);
 		return
 	end

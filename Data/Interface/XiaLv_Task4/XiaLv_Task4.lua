@@ -143,7 +143,7 @@ function XiaLv_Task4_OnEvent(event)
             g_GameData.gameLevelIndex = Get_XParam_INT(2)
             g_GameData.otherServerObjId =  Get_XParam_INT(3)
             if not CheckGameData() then
-                PushDebugMessage("Êý¾Ý´íÎó£¬ÇëÖØÐÂ¿ªÊ¼ÈÎÎñ")
+                PushDebugMessage("S¯ li®u sai l¥m, Thïnh mµt l¥n næa b¡t ð¥u nhi®m vø")
             end
             
             XiaLv_Task4_Begin()
@@ -157,7 +157,7 @@ function XiaLv_Task4_OnEvent(event)
             g_GameData.gameResult = Get_XParam_INT(3)
             XiaLv_Task4_ShowOthersAnswer()
         elseif nOpt == 3 then
-            --¹Ø±Õ½çÃæ
+            --¹Ø± ½çÃæ
             g_GameData.dontNotifyClose = 1
             XiaLv_Task4_OnClose()
         end
@@ -257,12 +257,12 @@ function XiaLv_Task4_Begin()
         --otherPanelTable.OkBtn:Disable()
         --Ëæ»úÑ¡Ïî
         RandomChoose()
-        --Õ¹Ê¾Ñ¡Ïî
+        -- ¹Ê¾Ñ¡Ïî
         for i = 1, 6 do
             local answerPair = g_GameData.chooseItemsData[i]
             myPanelTable.ChooseBtns[i]:SetText(g_GameLevel[answerPair[1]].texts[answerPair[2]])
         end
-        --ÇåÀíÕ¹Ê¾Çø
+        --ÇåÀí ¹Ê¾Çø
         for j = 1, 2 do
             myPanelTable.SpaceItems[j]:SetText("")
         end
@@ -364,7 +364,7 @@ function XiaLv_Task4_OnResetClick()
     local myPanelTable =   g_UI_Items.Panel[g_GameData.myPanel] 
     if myPanelTable then
         --myPanelTable.OkBtn:Disable()
-        --ÇåÀíÕ¹Ê¾Çø
+        --ÇåÀí ¹Ê¾Çø
         for j = 1, 2 do
             myPanelTable.SpaceItems[j]:SetText("" )
         end

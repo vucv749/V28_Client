@@ -856,16 +856,16 @@ local g_GameLevel = {
 
 	}
 }
-local TDGCX_MAX_OBJ_DISTANCE = 10.0; --lua里的objcare都是骗局 真care在CObjectManager::Tick里
+local TDGCX_MAX_OBJ_DISTANCE = 10.0; --lua??objcare???? ?care?CObjectManager::Tick?
 local g_GameData = {
 	--0:invalid 1:solo 2:team
 	gameType = 0,  
 	--游戏的关卡号 每次随机一个关卡
 	gameLevelIndex = 0,
-	-- [solo] 0:未开始 1:正在填词 4倒计时结束 5游戏结束 
+	-- [solo] 0:未开始 1:狚在填词 4倒计时结束 5游戏结束 
 	-- [team] 0:未开始 1:玩家1号在填词 2:玩家2号在填词 3:玩家3号在填词 4:倒计时结束 5游戏结束
 	gameState = 0, 
-	--需要被填空的item序号
+	--需要被填繝的item序号
 	gameSpaceIndexs = {0,0,0},
 	--诗句条目数量 
 	gameWordsItemsNum = 0,
@@ -877,7 +877,7 @@ local g_GameData = {
 
 	playerIsTeamLeader = 0,
 	
-	--Fade阶段展示一个item所需要的时间
+	--Fade阶段牴示一个item所需要的时间
 	showingOneItemSec = 1, 
 	showingIndex = 0,
 	from_to_alpha_Showing = "",
@@ -1063,7 +1063,7 @@ function TDGCX_OnEvent(event)
 		if(tonumber(arg0) ~= g_objCared) then
 			return;
 		end
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>TDGCX_MAX_OBJ_DISTANCE or arg1=="destroy") then
 			TDGCX_OnClose()
 			--取消关心
@@ -1136,9 +1136,9 @@ function TDGCX_PlayingStateTransfer()
 	if spaceIndexNow == nil then
 		return 
 	end
-	--同步填空
+	--同步填繝
 	if spaceIndexNow > 0 and spaceIndexNow <= g_GameData.gameWordsItemsNum  then
-		g_UI_Items.chooseItems[playerChoose].btn:Disable() -- 不可点击 高亮
+		g_UI_Items.chooseItems[playerChoose].btn:Disable() -- ???? ??
 		g_UI_Items.spaceItems[spaceIndexNow].textImg:Show()
 		g_UI_Items.spaceItems[spaceIndexNow].textImg:SetProperty("Image", levelInfo.chooseImgs[playerChoose] )
 		g_UI_Items.spaceItems[spaceIndexNow].line:Hide()
@@ -1196,13 +1196,13 @@ function TDGCX_Begin()
 	for i = 1, g_GameData.gameWordsItemsNum do
 		if levelInfo.spaceImgs[i] == "" then
 			if tempIndex <= 3 then
-				g_GameData.gameSpaceIndexs[tempIndex] = i --第tempIndex个player 填第i个空
+				g_GameData.gameSpaceIndexs[tempIndex] = i --?tempIndex?player ??i??
 				tempIndex = tempIndex + 1
 			end
 		end
 	end
 
-	--队长 或者 单人模式下 显示绘制完成按钮
+	--队长 或犨 单人模式下 显示绘制完成按钮
 	if g_GameData.gameType == 1 then
 		g_UI_Items.remainText:Hide()
 		g_UI_Items.teamLeaderText:SetText("")
@@ -1261,7 +1261,7 @@ function TDGCX_Begin()
 				g_UI_Items.spaceItems[spaceIndex].line:SetProperty("Image", g_LineImgs.currentDown )
 			end
 		else
-			PushDebugMessage("页面错误")
+			PushDebugMessage("Di畃 Di畁 sai l")
 		end
 	end
 
@@ -1301,7 +1301,7 @@ function TDGCX_TimeOut()
 		end
 	elseif g_GameData.gameType == 2 then
 		if g_GameData.playerChoose[stepIndex] == 0 then
-			--若倒计时结束 有队员没有填入 空多少条就填多少条 stepIndex开始往后肯定都没填
+			--若倒计时结束 有队员没有填入 繝多少条就填多少条 stepIndex开始往后肯定都没填
 			for i = stepIndex, g_StateEnum.PLAYING3 do
 				local fillIndex = levelInfo.answer[i]
 				spaceIndexNow = g_GameData.gameSpaceIndexs[i]
@@ -1325,7 +1325,7 @@ function TDGCX_TimeOut()
 
 	g_GameData.gameState = g_StateEnum.TIMEOUT
 
-	--倒计时结束了 如果这时候我还没选 那就等于我选错了
+	--倒计时结束了 如果犫时候我还没选 那就等于我选错了
 	if g_GameData.playerChoose[g_GameData.playerIndex] == 0 then
 		Set_XSCRIPT_Function_Name("OnPlayerTimeOut")
 		Set_XSCRIPT_ScriptID(g_ExeScript)
@@ -1365,7 +1365,7 @@ function TDGCX_OnSubmitBtnClicked()
 
 end
 
---游戏结束 展示结果 5s后关闭界面
+--游戏结束 牴示结果 5s后关睜界面
 function TDGCX_OnGameOver()
 	
 	local ret = JudgeAnswer()
@@ -1431,7 +1431,7 @@ function TDGCX_OnFiveSecCloseUI()
 	g_UI_Items.PlayingPage:Hide()
 	g_UI_Items.FadePage:SetProperty("Alpha",0)
 	g_UI_Items.FadePage:Show()
-	--装载正确答案
+	--装载狚确答案
 	local levelInfo = g_GameLevel[g_GameData.gameType][g_GameData.gameLevelIndex]
 	local spaceIndex = 1
 	for i=1,g_SpaceNumMax do

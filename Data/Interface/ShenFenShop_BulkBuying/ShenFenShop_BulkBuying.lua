@@ -13,8 +13,8 @@ local g_ShenFenShop_ServerCareID = -1;
 
 local MAX_OBJ_DISTANCE = 3.0;
 
-local CU_MONEY			= 1	-- Ç®
-local CU_MONEYJZ		= 8 -- ½»×Ó
+local CU_MONEY			= 1	-- ?
+local CU_MONEYJZ		= 8 -- ??
 
 function ShenFenShop_BulkBuying_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
@@ -41,7 +41,7 @@ function ShenFenShop_BulkBuying_OnEvent(event)
 		g_ShenFenShop_ServerCareID = Get_XParam_INT(1)
 		g_ShenFenShop_objCared = DataPool:GetNPCIDByServerID(g_ShenFenShop_ServerCareID);
 		if( 0 > g_ShenFenShop_objCared ) then
-			PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£");
+			PushDebugMessage("Dæ li®u máy chü có v¤n ğ«");
 			return
 		end
 		this:CareObject(g_ShenFenShop_objCared, 1, "ShenFenShop_BulkBuying");

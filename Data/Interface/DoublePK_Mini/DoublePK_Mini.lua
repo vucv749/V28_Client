@@ -7,26 +7,26 @@ local DoublePK_Mini_UICommandOpen = 99831902
 local DoublePK_Mini_GuessList = {}
 local DoublePK_Mini_GuessMax = 7
 
-local DoublePK_Mini_Identity_QS = 1                           -- 琴师
+local DoublePK_Mini_Identity_QS = 1                           -- ??
 
-local DoublePK_Mini_Team_Type = {                             -- 队伍分类，这个define是对应关系
-    team_a = 0,                                               -- A队
-    team_b = 1,                                               -- B队
+local DoublePK_Mini_Team_Type = {                             -- ????,??define?????
+    team_a = 0,                                               -- A?
+    team_b = 1,                                               -- B?
 }
-local DoublePK_Mini_GuessResult = {                           -- 选项类型，猜拳结果
-    invalid = 0,                                              -- 无效
-    win_a = 1,                                                -- 选项
-    win_b = 2,                                                -- 选项
-    equal = 3,                                                -- 选项
-    fail = 4,                                                 -- 选项
+local DoublePK_Mini_GuessResult = {                           -- ????,????
+    invalid = 0,                                              -- ??
+    win_a = 1,                                                -- ??
+    win_b = 2,                                                -- ??
+    equal = 3,                                                -- ??
+    fail = 4,                                                 -- ??
 }
 
 function DoublePK_Mini_PreLoad()
     this:RegisterEvent("UI_COMMAND", true)
     this:RegisterEvent("OPEN_DOUBLEPK_MINI", true)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end
 
 function DoublePK_Mini_OnEvent(event)
@@ -163,7 +163,7 @@ function DoublePK_Mini_ClickFighting()
     Send_XSCRIPT()
 end
 
--- 关闭按钮点击事件
+-- 关睜按钮点击事件
 function DoublePK_Mini_Clicked_Close()
     DoublePK_Mini_Hide()
 end

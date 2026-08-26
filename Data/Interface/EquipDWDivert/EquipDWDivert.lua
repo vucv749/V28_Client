@@ -3,12 +3,12 @@
 local Divert_Item1 = -1;
 local Divert_Item2 = -1;
 local g_Object = -1;
-local g_check = -1;--ÊÇ·ñ¶ş´ÎÈ·ÈÏ
+local g_check = -1;--??????
 
-local EB_FREE_BIND = 0;				-- ÎŞ°ó¶¨ÏŞÖÆ
-local EB_BINDED = 1;				-- ÒÑ¾­°ó¶¨
-local	EB_GETUP_BIND =2			-- Ê°È¡°ó¶¨
-local	EB_EQUIP_BIND =3			-- ×°±¸°ó¶¨
+local EB_FREE_BIND = 0;				-- ?????
+local EB_BINDED = 1;				-- ????
+local	EB_GETUP_BIND =2			-- ????
+local	EB_EQUIP_BIND =3			-- ????
 
 local g_EquipDWDivert_Frame_UnifiedPosition;
 
@@ -41,14 +41,14 @@ end
 
 function EquipDWDivert_OnEvent(event)
 	if ( event == "UI_COMMAND" ) then
-		if tonumber(arg0) == 20141216 then	--´ò¿ª½çÃæ
+		if tonumber(arg0) == 20141216 then	--????
 			local type = Get_XParam_INT(0);
 			if tonumber(type) == 1 then
 				--´ò¿ª´°¿Ú
 				local targetid = Get_XParam_INT(1);
 				local objCared = DataPool : GetNPCIDByServerID(targetid);
 				if tonumber(objCared)==nil or  tonumber(objCared)== -1 then
-					PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£");
+					PushDebugMessage("Dæ li®u máy chü có v¤n ğ«");
 					return;
 				end
 				EquipDWDivert_BeginCareObject(objCared);
@@ -65,7 +65,7 @@ function EquipDWDivert_OnEvent(event)
 		if(g_Object ~= DataPool:GetCurDialogNpcId()) then
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			g_Object = -1;
 			this:CareObject(tonumber(g_Object), 0, "EquipDWDivert");
@@ -89,15 +89,15 @@ function EquipDWDivert_OnEvent(event)
 			EquipDWDivert_Clear(2);
 		end
 	elseif (event == "TAKE_STENGTHEN_ITEM" and this:IsVisible()) then
-		if arg0 == "G167" then		--ÒÆ³ı×ó±ß,ÒªÁ¬Í¬ÓÒ±ßÒ»ÆğÒÆ³ı
+		if arg0 == "G167" then		--????,?????????
 			EquipDWDivert_Clear(0)
-		elseif arg0 == "G168" then		--ÒÆ³ıÓÒ±ß,²»ĞèÒªÀí»á×ó±ß
+		elseif arg0 == "G168" then		--????,???????
 			EquipDWDivert_Clear(2)
 		end
 	elseif (event == "RESUME_ENCHASE_GEM" and this:IsVisible()) then
-		if arg0 == "167" then		--ÒÆ³ı×ó±ß,ÒªÁ¬Í¬ÓÒ±ßÒ»ÆğÒÆ³ı
+		if arg0 == "167" then		--????,?????????
 			EquipDWDivert_Clear(0)
-		elseif arg0 == "168" then		--ÒÆ³ıÓÒ±ß,²»ĞèÒªÀí»á×ó±ß
+		elseif arg0 == "168" then		--????,???????
 			EquipDWDivert_Clear(2)
 		end
 	elseif (event == "ADJEST_UI_POS" ) then
@@ -134,12 +134,12 @@ function EquipDWDivert_Update(boxpos,Item_index)
 	local msg = ""
 
 	local EquipPoint = LifeAbility : Get_Equip_Point(i_index)
-	if EquipPoint == -1 then	--Èç¹û²»ÊÇ×°±¸,´úÂëÀïÒÑ¾­ÓĞ·µ»ØµÄ´íÎóĞÅÏ¢
+	if EquipPoint == -1 then	--??????,?????????????
 		return
 	end
 	
 	if EquipPoint == 8 or EquipPoint == 9 or EquipPoint == 10 or EquipPoint == 16 then
-		PushDebugMessage("#{DWZY_141216_13}")	--ÎŞ·¨½øĞĞÇ¿»¯×ªÒÆ
+		PushDebugMessage("#{DWZY_141216_13}")	--????????
 		return
 	end
 	
@@ -308,10 +308,10 @@ function EquipDWDivert_Update(boxpos,Item_index)
 			local texingName = ""
 			if texingIndex > 0 then
 				local szTeXingName,_,_,_,_ = LifeAbility:GetDiaowenTeXingDescInfo(texingIndex)
-				texingName = "¡¤"..szTeXingName
+				texingName = "·"..szTeXingName
 			end
 			if jinjieLvName then
-				jinjieLvName = string.format( "£¨%s£©",jinjieLvName..texingName )
+				jinjieLvName = string.format( "(%s)",jinjieLvName..texingName )
 			else
 				jinjieLvName = ""
 			end
@@ -362,11 +362,11 @@ function EquipDWDivert_OK_Clicked()
 	end
 
 	local EquipPoint1 = LifeAbility : Get_Equip_Point(Divert_Item1)
-	if EquipPoint1 == -1 then	--Èç¹û²»ÊÇ×°±¸,´úÂëÀïÒÑ¾­ÓĞ·µ»ØµÄ´íÎóĞÅÏ¢
+	if EquipPoint1 == -1 then	--??????,?????????????
 		return
 	end
 	if EquipPoint1 == 8 or EquipPoint1 == 9 or EquipPoint1 == 10 or EquipPoint1 == 16 then
-			PushDebugMessage("#{DWZY_141216_30}")	--²»ÊÇ×°±¸
+			PushDebugMessage("#{DWZY_141216_30}")	--????
 			return
 	end
 
@@ -381,11 +381,11 @@ function EquipDWDivert_OK_Clicked()
 	end
 
 	local EquipPoint2 = LifeAbility : Get_Equip_Point(Divert_Item2)
-		if EquipPoint2 == -1 then	--Èç¹û²»ÊÇ×°±¸,´úÂëÀïÒÑ¾­ÓĞ·µ»ØµÄ´íÎóĞÅÏ¢
+		if EquipPoint2 == -1 then	--??????,?????????????
 			return
 		end
 	if EquipPoint2 == 8 or EquipPoint2 == 9 or EquipPoint2 == 10 or EquipPoint2 == 16 then
-			PushDebugMessage("#{DWZY_141216_34}")	--²»ÊÇ×°±¸ ºÍÉÏ±ßµÄÌáÊ¾²»Ò»Ñù
+			PushDebugMessage("#{DWZY_141216_34}")	--???? ?????????
 			return
 	end
 
@@ -447,8 +447,8 @@ function EquipDWDivert_OK_Clicked()
 		Set_XSCRIPT_ScriptID(809272);
 		Set_XSCRIPT_Parameter(0,Divert_Item1);
 		Set_XSCRIPT_Parameter(1,Divert_Item2);
-		Set_XSCRIPT_Parameter(2,0);--2015 VIPËæÉíÒÆ¹¦ÄÜ By YuanPeiLong
-		Set_XSCRIPT_ParamCount(3);--2015 VIPËæÉíÒÆ¹¦ÄÜ By YuanPeiLong
+		Set_XSCRIPT_Parameter(2,0);--2015 VIP????? By YuanPeiLong
+		Set_XSCRIPT_ParamCount(3);--2015 VIP????? By YuanPeiLong
 	Send_XSCRIPT();
 
 end

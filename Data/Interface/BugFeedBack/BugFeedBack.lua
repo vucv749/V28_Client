@@ -36,7 +36,7 @@ end
 
 function BugFeedBack_Submit()
 	--条件检查
-	--1 是否在可以提交bug的服务器（当前只有龙门客栈可以提交）
+	--1 是否在可以提交bug的服务器（当前只有龙门客牷可以提交）
 	local ret = DataPool:CheckCanSubmitBug();
 	if(ret == false) then
 		PushDebugMessage("#{BUGFK_100506_6}")
@@ -50,7 +50,7 @@ function BugFeedBack_Submit()
 		PushDebugMessage("#{BUGFK_100506_1}");
 		return;
 	end
-	--3 详细描述不能为空
+	--3 详细描述不能为繝
 	str = tostring(BugFeedBack_DetailEditbox:GetText());
 	ret = string.len(str)
 	if(ret <= 0) then
@@ -70,9 +70,9 @@ function BugFeedBack_Submit()
 		return;
 	end
 
-	--检查完毕 整理bug信息
-	local simpletext = tostring(BugFeedBack_SimpleEditbox:GetText());	--反馈简介
-	local detailtext = tostring(BugFeedBack_DetailEditbox:GetText());	--详细描述
+	--检查完毕 狖理bug信息
+	local simpletext = tostring(BugFeedBack_SimpleEditbox:GetText());	--????
+	local detailtext = tostring(BugFeedBack_DetailEditbox:GetText());	--????
 	--将换行符替换为#r
 	detailtext = string.gsub(detailtext, "\n", "#r");
 

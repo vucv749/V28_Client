@@ -1,4 +1,4 @@
-local objCared = -1;								--关心NPC的Obj的编号（Server传过来）
+local objCared = -1;								--??NPC?Obj???(Server???)
 
 --UI
 local g_CoupleZone_UI_Button_Scry = ""
@@ -170,10 +170,10 @@ end
 function CoupleZone_AskCoupleZoneData()
 	CoupleZone_Debug("CoupleZone_AskCoupleZoneData")
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "OnAskCoupleZoneData" ); 		-- 函数名
-		Set_XSCRIPT_ScriptID( 998324 );						-- 脚本编号
-		Set_XSCRIPT_Parameter(0, 1);    					-- 请求类型  1  打开空间主界面前请求
-		Set_XSCRIPT_ParamCount( 1 );						-- 参数个数
+		Set_XSCRIPT_Function_Name( "OnAskCoupleZoneData" ); 		-- ???
+		Set_XSCRIPT_ScriptID( 998324 );						-- ????
+		Set_XSCRIPT_Parameter(0, 1);    					-- ????  1  ??????????
+		Set_XSCRIPT_ParamCount( 1 );						-- ????
 	Send_XSCRIPT()
 end
 
@@ -240,9 +240,9 @@ end
 function CoupleZone_OnClicked_Scry()
 	CoupleZone_Debug("CoupleZone_OnClicked_Scry")
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "BeforeDoScry" ); 		    -- 函数名
-		Set_XSCRIPT_ScriptID( 998324 );						-- 脚本编号
-		Set_XSCRIPT_ParamCount( 0 );						-- 参数个数
+		Set_XSCRIPT_Function_Name( "BeforeDoScry" ); 		    -- ???
+		Set_XSCRIPT_ScriptID( 998324 );						-- ????
+		Set_XSCRIPT_ParamCount( 0 );						-- ????
 	Send_XSCRIPT()	
 
 end
@@ -261,9 +261,9 @@ function CoupleZone_Scry_Animate_Close()
 	g_CoupleZone_UI_Animate_Scry:Hide()
 	
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "OnDoScry" ); 		    -- 函数名
-		Set_XSCRIPT_ScriptID( 998324 );						-- 脚本编号
-		Set_XSCRIPT_ParamCount( 0 );						-- 参数个数
+		Set_XSCRIPT_Function_Name( "OnDoScry" ); 		    -- ???
+		Set_XSCRIPT_ScriptID( 998324 );						-- ????
+		Set_XSCRIPT_ParamCount( 0 );						-- ????
 	Send_XSCRIPT()
 end
 
@@ -280,39 +280,39 @@ end
 function CoupleZone_OnClicked_Diary()
 	CoupleZone_Debug("CoupleZone_OnClicked_Diary")
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "OnAskCoupleDiaryData" ); 		-- 函数名
-		Set_XSCRIPT_ScriptID( 998325 );						-- 脚本编号
-		Set_XSCRIPT_Parameter(0, 1);    					-- 请求类型  1  打开空间主界面前请求
-		Set_XSCRIPT_ParamCount( 1 );						-- 参数个数
+		Set_XSCRIPT_Function_Name( "OnAskCoupleDiaryData" ); 		-- ???
+		Set_XSCRIPT_ScriptID( 998325 );						-- ????
+		Set_XSCRIPT_Parameter(0, 1);    					-- ????  1  ??????????
+		Set_XSCRIPT_ParamCount( 1 );						-- ????
 	Send_XSCRIPT()
 end
 
 function CoupleZone_OnClicked_Marry()
 	CoupleZone_Debug("CoupleZone_OnClicked_Marry")
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "AskHunShu" ); 		-- 函数名
-		Set_XSCRIPT_ScriptID( 806003 );						-- 脚本编号
-		Set_XSCRIPT_ParamCount( 0 );						-- 参数个数
+		Set_XSCRIPT_Function_Name( "AskHunShu" ); 		-- ???
+		Set_XSCRIPT_ScriptID( 806003 );						-- ????
+		Set_XSCRIPT_ParamCount( 0 );						-- ????
 	Send_XSCRIPT()
 end
 
 function CoupleZone_OnClicked_Calendar()
 	CoupleZone_Debug("CoupleZoner_OnClicked_Calendar")
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "OnAskCoupleCalendarData" ); 		-- 函数名
-		Set_XSCRIPT_ScriptID( 998326 );						-- 脚本编号
-		Set_XSCRIPT_Parameter(0, 1);    					-- 请求类型  1  打开空间主界面前请求
-		Set_XSCRIPT_ParamCount( 1 );						-- 参数个数
+		Set_XSCRIPT_Function_Name( "OnAskCoupleCalendarData" ); 		-- ???
+		Set_XSCRIPT_ScriptID( 998326 );						-- ????
+		Set_XSCRIPT_Parameter(0, 1);    					-- ????  1  ??????????
+		Set_XSCRIPT_ParamCount( 1 );						-- ????
 	Send_XSCRIPT()
 end
 
 function CoupleZone_OnClicked_Annal()
 	CoupleZone_Debug("CoupleZone_OnClicked_Annal")
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "OnAskCoupleAnnalData" ); 		-- 函数名
-		Set_XSCRIPT_ScriptID( 998327 );						-- 脚本编号
-		Set_XSCRIPT_Parameter(0, 1);    					-- 请求类型  1  打开空间主界面前请求
-		Set_XSCRIPT_ParamCount( 1 );						-- 参数个数
+		Set_XSCRIPT_Function_Name( "OnAskCoupleAnnalData" ); 		-- ???
+		Set_XSCRIPT_ScriptID( 998327 );						-- ????
+		Set_XSCRIPT_Parameter(0, 1);    					-- ????  1  ??????????
+		Set_XSCRIPT_ParamCount( 1 );						-- ????
 	Send_XSCRIPT()
 end
 
@@ -374,7 +374,7 @@ end
 
 --=========================================================
 --开始关心NPC，
---在开始关心之前需要先确定这个界面是不是已经有“关心”的NPC，
+--在开始关心之前需要先确定犫个界面是不是已经有“关心”的NPC，
 --如果有的话，先取消已经有的“关心”
 --=========================================================
 function BeginCareObject_CoupleZone(objCaredId)

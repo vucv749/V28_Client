@@ -29,11 +29,11 @@ local g_NewShengXiao_BoxDay = {
 local g_NewShengXiao_MisID = {2350,2351,2352,2353,2354,2355}
 
 local g_MissionPos={
-[1]={scn=2,x=160,z=157,npcname="ÕÔÌìÊ¦"},--ÈÎÎñ1
-[2]={scn=0,x=158,z=105,npcname="ÁúÐ¡Íþ"},--ÈÎÎñ2
-[3]={scn=0,x=158,z=105,npcname="ÁúÐ¡Íþ"},--ÈÎÎñ4
-[4]={scn=0,x=158,z=105,npcname="ÁúÐ¡Íþ"},--ÈÎÎñ6
-[5]={scn=0,x=161,z=105,npcname="ÉßÐ¡Èð"},--Àñ°ü1-3
+[1]={scn=2,x=160,z=157,npcname="Tri®u Thiên Sß"},--??1
+[2]={scn=0,x=158,z=105,npcname="Long Ti¬u Uy"},--??2
+[3]={scn=0,x=158,z=105,npcname="Long Ti¬u Uy"},--??4
+[4]={scn=0,x=158,z=105,npcname="Long Ti¬u Uy"},--??6
+[5]={scn=0,x=161,z=105,npcname="Xà Ti¬u ThuÜ"},--??1-3
 }
 local g_NewShengXiao_submitMFs = {}
 local g_NewShengXiao_misprizeMFs = {}
@@ -45,7 +45,7 @@ local g_NewShengXiao_mddata = 0
 function NewShengXiao_PreLoad()
 
 	this:RegisterEvent("UI_COMMAND",true)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--½ø³¡¾°¹Ø±Õ½çÃæ
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
 	this:RegisterEvent("ADJEST_UI_POS",false)
 
@@ -101,7 +101,7 @@ function NewShengXiao_OnEvent(event)
 			--´ò¿ª½çÃæ
 			NewShengXiao_Update()
 		elseif param == 3 then
-			--¹Ø±Õ½çÃæ
+			--¹Ø± ½çÃæ
 			NewShengXiao_Close()
 		end
 		
@@ -319,7 +319,7 @@ function NewShengXiao_Update()
 		NewShengXiao_5_ChestBtn_Open:Hide()
 		NewShengXiao_5_ChestBtn:Hide()
 		NewShengXiao_5_FuZi_GoToBtn:Hide()
-		NewShengXiao_5_FuZi_Disable:Show()--ÉÐÎ´µ½´ï¿ªÆôÊ±¼ä£¬¾´ÇëÆÚ´ý¡£
+		NewShengXiao_5_FuZi_Disable:Show()--????????,?????
 		NewShengXiao_5_BK_Light:Hide()
 		NewShengXiao_5_MissionProcess:SetText( "#{SXXG_241111_347}" )
 	elseif curDay >= g_NewShengXiao_BoxDay[1] and curDay <= g_NewShengXiao_BoxDay[3] then
@@ -328,8 +328,8 @@ function NewShengXiao_Update()
 		local usecount = math.floor(md/100000000)
 		if mdday == curDay then
 			--ÒÑ¾­Áì¹ý¸£ÌùÁË
-			NewShengXiao_5_FuZi_GoToBtn:Hide()--Äú¿Éµã»÷´Ë´¦Ç°ÍùÉßÐ¡Èð´¦£¬ÁìÈ¡¸£Ìù£¬Ôù¸£ÍòÏÀ£¡
-			NewShengXiao_5_FuZi_Disable:Hide()--ÉÐÎ´µ½´ï¿ªÆôÊ±¼ä£¬¾´ÇëÆÚ´ý¡£
+			NewShengXiao_5_FuZi_GoToBtn:Hide()--????????????,????,????!
+			NewShengXiao_5_FuZi_Disable:Hide()--????????,?????
 
 			local curIdx = 1
 			if curDay == g_NewShengXiao_BoxDay[2] then
@@ -360,8 +360,8 @@ function NewShengXiao_Update()
 			--È¥Áì¸£Ìù
 			NewShengXiao_5_ChestBtn_Open:Hide()
 			NewShengXiao_5_ChestBtn:Hide()
-			NewShengXiao_5_FuZi_GoToBtn:Show()--Äú¿Éµã»÷´Ë´¦Ç°ÍùÉßÐ¡Èð´¦£¬ÁìÈ¡¸£Ìù£¬Ôù¸£ÍòÏÀ£¡
-			NewShengXiao_5_FuZi_Disable:Hide()--ÉÐÎ´µ½´ï¿ªÆôÊ±¼ä£¬¾´ÇëÆÚ´ý¡£
+			NewShengXiao_5_FuZi_GoToBtn:Show()--????????????,????,????!
+			NewShengXiao_5_FuZi_Disable:Hide()--????????,?????
 			NewShengXiao_5_BK_Light:Show()
 			NewShengXiao_5_MissionProcess:SetText("#{SXXG_241111_348}")
 		end
@@ -369,12 +369,12 @@ function NewShengXiao_Update()
 	end
 end
 
---µ÷Õû£º½çÃæÎ»ÖÃ
+--µ÷ û£º½çÃæÎ»ÖÃ
 function NewShengXiao_ResetPos()
 	NewShengXiao_Frame:SetProperty("UnifiedPosition", g_Frame_UnifiedPosition)
 end
 
---¹Ø±Õ£º½çÃæ
+--¹Ø± £º½çÃæ
 function NewShengXiao_Close()
 	this:Hide()
 end

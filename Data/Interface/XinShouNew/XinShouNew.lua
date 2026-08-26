@@ -9,39 +9,39 @@ local g_XinShouNew_MF_Date = 0
 local g_XinShouNew_7DayPrize =
 {
 	[1] ={
-				[1]={ItemID = 39920006, num = 1,}, --坐骑：如意熊（15天）
-				[2]={ItemID = 39920007, num = 3,}, --天罡强化精华
-				[3]={ItemID = 39920019, num = 1,}, --100绑元//新增道具
+				[1]={ItemID = 39920006, num = 1,}, --??:???(15?)
+				[2]={ItemID = 39920007, num = 3,}, --??????
+				[3]={ItemID = 39920019, num = 1,}, --100??//????
 				},
 	[2] ={
-				[1]={ItemID = 39920008, num = 1,},--变异珍兽蛋：呆呆牛
-				[2]={ItemID = 39920009, num = 3,},--低级根骨丹
-				[3]={ItemID = 39920019, num = 1,},--100绑元//新增道具，同上
+				[1]={ItemID = 39920008, num = 1,},--?????:???
+				[2]={ItemID = 39920009, num = 3,},--?????
+				[3]={ItemID = 39920019, num = 1,},--100??//????,??
 				},
 	[3] ={
-				[1]={ItemID = 39920010, num = 1,},--时装：清风怡江（15天）//新增
-				[2]={ItemID = 39920011, num = 3,},--金刚砂
-				[3]={ItemID = 39920019, num = 1,},--100绑元//新增道具，同上
+				[1]={ItemID = 39920010, num = 1,},--??:????(15?)//??
+				[2]={ItemID = 39920011, num = 3,},--???
+				[3]={ItemID = 39920019, num = 1,},--100??//????,??
 				},
 	[4] ={
-				[1]={ItemID = 39920012, num = 1,},--红宝石(3级)
-				[2]={ItemID = 39920013, num = 5,},--百淬神玉
-				[3]={ItemID = 39920019, num = 1,},--100绑元//新增道具，同上
+				[1]={ItemID = 39920012, num = 1,},--???(3?)
+				[2]={ItemID = 39920013, num = 5,},--????
+				[3]={ItemID = 39920019, num = 1,},--100??//????,??
 				},
 	[5] ={
-				[1]={ItemID = 39920014, num = 1,},--天罡强化露
-				[2]={ItemID = 39920015, num = 3,},--回天神石
-				[3]={ItemID = 39920019, num = 1,},--100绑元//新增道具，同上
+				[1]={ItemID = 39920014, num = 1,},--?????
+				[2]={ItemID = 39920015, num = 3,},--????
+				[3]={ItemID = 39920019, num = 1,},--100??//????,??
 				},
 	[6] ={
-				[1]={ItemID = 39920016, num = 20,},--金蚕丝
-				[2]={ItemID = 39920018, num = 1,},--3级秘银
-				[3]={ItemID = 39920019, num = 1,},--100绑元//新增道具，同上
+				[1]={ItemID = 39920016, num = 20,},--???
+				[2]={ItemID = 39920018, num = 1,},--3???
+				[3]={ItemID = 39920019, num = 1,},--100??//????,??
 				},
 	[7] ={
-				[1]={ItemID = 39920012, num = 1,},--红宝石(3级)
-				[2]={ItemID = 39920017, num = 1,},--3级棉布
-				[3]={ItemID = 39920019, num = 1,},--100绑元//新增道具，同上
+				[1]={ItemID = 39920012, num = 1,},--???(3?)
+				[2]={ItemID = 39920017, num = 1,},--3???
+				[3]={ItemID = 39920019, num = 1,},--100??//????,??
 				},	
 };
 local g_XinShouNew_7DayPrize_Button = {}
@@ -97,9 +97,9 @@ local g_XinShouNew_7DayImage = {
 --===============================================
 function XinShouNew_PreLoad()
 	this:RegisterEvent("UI_COMMAND",true)
-	this:RegisterEvent("PLAYER_LEAVE_WORLD")		-- 离开场景
-	this:RegisterEvent("ADJEST_UI_POS",false)			-- 游戏窗口尺寸发生了变化
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)	        -- 游戏分辨率发生了变化
+	this:RegisterEvent("PLAYER_LEAVE_WORLD")		-- ????
+	this:RegisterEvent("ADJEST_UI_POS",false)			-- ???????????
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)	        -- ??????????
 --	this:RegisterEvent("PLAYER_ENTERING_WORLD",true)		-- 进入游戏世界
 end
 
@@ -177,7 +177,7 @@ end
 
 
 --===============================================
--- 天龙7日豪礼-begin
+-- 天龙7葼豪礼-begin
 --===============================================
 function XinShouNew_7Day_Update()
 	for i=1,7 do
@@ -242,12 +242,12 @@ function XinShouNew_SevenDay_Click(nIndex)
 	g_XinShouNew_7DayButtom[nIndex].Button:SetCheck(1)
 
 
-	--看一下这页是不是可以打开
+	--看一下犫页是不是可以打开
 	local nData1 = g_XinShouNew_MD_Date
 	local nTimes = math.mod(nData1,100)
 
 	if nIndex > nTimes then
-		--第X日可领取
+		--第X葼可领取
 		XinShouNew_SevenDay_Right_Button1:Disable()
 		XinShouNew_SevenDay_Right_Button1:SetProperty("DisabledImage",g_XinShouNew_7DayImage[nIndex][4])
 	else
@@ -281,5 +281,5 @@ function XinShouNew_SevenDay_GetPrize()
 end
 
 --===============================================
--- 天龙7日豪礼 -end
+-- 天龙7葼豪礼 -end
 --===============================================

@@ -53,10 +53,10 @@ end
 --=========================================================
 function NewZhuXian_Gift_OnEvent(event)
 	if ( event == "UI_COMMAND" and tonumber(arg0) == g_nUICommandID ) then
-		-- 0 关闭, 1 打开, 2 刷新, 3 二次确认框
+		-- 0 关睜, 1 打开, 2 刷新, 3 二次确认框
 		local nOpType 	= Get_XParam_INT(0)
 
-		-- 关闭界面
+		-- 关睜界面
 		if 0 == nOpType then	
 			if this:IsVisible() then
 				NewZhuXian_Gift_OnClose()
@@ -153,7 +153,7 @@ function NewZhuXian_Gift_ConfirmClick(nSelectedIndex)
 end
 
 --=========================================================
--- 关闭界面
+-- 关睜界面
 --=========================================================
 function NewZhuXian_Gift_OnClose()	
 	this:Hide()

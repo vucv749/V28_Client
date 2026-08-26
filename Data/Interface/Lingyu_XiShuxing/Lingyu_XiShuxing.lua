@@ -248,7 +248,7 @@ function Lingyu_XiShuxing_OnItemDragedDropFromBag(iBagIndex, flag)
 		end
 		g_LingYu_BagIndex = iBagIndex
 		
-		--如果洗炼材料不符合，清空
+		--如果洗炼材料不符合，清繝
 		if g_Item_BagIndex ~= -1 then
 			local iQual = PlayerPackage:LuaFnGetBagLingYuData(g_LingYu_BagIndex, "QUAL")
 			if iQual < 0 or iQual > 3 then

@@ -54,14 +54,14 @@ end
 function AutoSearch_OnLoad()
 
 	--´°¿Ú¼ÓÔØÊ±¶¯Ì¬µÄ²åÈëÁÐ....Ö±½ÓÔÚxmlÀïÅäÖÃÁÐµÄ»°ÎÞ·¨ÒýÓÃ×Öµä....
-	AutoSearch_List:AddColumn( "Ãû³Æ", 0, 0.6 );
-	AutoSearch_List:AddColumn( "¼òÊö", 1, 0.4 );
+	AutoSearch_List:AddColumn( "Tên", 0, 0.6 );
+	AutoSearch_List:AddColumn( "Bän tóm t¡t", 1, 0.4 );
 
 	--*****************************************
 	--CEGUIÓÐÒ»´¦Ð´µÄ²»ºÏÀíµÄµØ·½(Bug?)....µ¼ÖÂ¶àÁÐÁÐ±íÉèÖÃÊôÐÔÊ±»á³öÏÖÒ»Ð©´íÎó....
 	--¾ßÌåÎª£º
 	--ÔÚXMLÖÐ¸ø¶àÁÐÁÐ±íÅäÖÃÁËColumnsSizable=True....¾Í»áÉèÖÃ¸Ã¿Ø¼þµÄColumnsSizable=True....»¹»áÉèÖÃÆäËùÓÐÁÐµÄColumnsSizable=True....
-	--ÓÐÐ©¶àÁÐÁÐ±íÈç±¾´°¿ÚµÄÐèÒªÔÚ½Å±¾ÖÐ¶¯Ì¬µÄ²åÈëÁÐ....ÕâÊ±XMLÖÐÅäÖÃµÄColumnsSizable=TrueÖ»»áÉèÖÃ¸Ã¿Ø¼þµÄColumnsSizable=True....²»»áÉèÖÃÁÐµÄColumnsSizable=True(ÒòÎªµ±Ê±Ò»¸öÁÐ¶¼Ã»ÓÐ)....
+	--ÓÐÐ©¶àÁÐÁÐ±íÈç±¾´°¿ÚµÄÐèÒªÔÚ½Å±¾ÖÐ¶¯Ì¬µÄ²åÈëÁÐ.... âÊ±XMLÖÐÅäÖÃµÄColumnsSizable=TrueÖ»»áÉèÖÃ¸Ã¿Ø¼þµÄColumnsSizable=True....²»»áÉèÖÃÁÐµÄColumnsSizable=True(ÒòÎªµ±Ê±Ò»¸öÁÐ¶¼Ã»ÓÐ)....
 	--Òò´ËÔÚ½Å±¾ÖÐ¶¯Ì¬²åÈëÁÐºóÁÐµÄColumnsSizableÒòÎªÃ»±»ÉèÖÃ¹ý¾Í²»ÊÇTrue....
 	--Èç¹ûÏëÔÚ¶¯Ì¬²åÈëÁÐºóÔÚ½Å±¾ÀïÔÙÖØÐÂ¸ø¶àÁÐÁÐ±íÉèÖÃColumnsSizable=TrueÒ²²»ÐÐ....
 	--ÒòÎªÉèÖÃ¸ÃÊôÐÔµÄÖµÊ±»áÅÐ¶ÏÊÇ·ñÓëµ±Ç°¸ÃÊôÐÔµÄÖµÒ»Ñù....Èç¹ûÒ»Ñù¾ÍÖ±½Ó·µ»Ø....¶ø¸Ã¿Ø¼þµÄColumnsSizableÔÚ³õÊ¼»¯XMLµÄÊ±ºò±»Éè³ÉTrueÁËËùÒÔ»áÖ±½Ó·µ»Ø....Ò²¾Í²»»á¸øËüµÄÁÐÉèÖÃ¸ÃÊôÐÔ....
@@ -86,7 +86,7 @@ function AutoSearch_OnEvent(event)
 
 	elseif ( event == "SCENE_TRANSED" ) then
 
-		--ÇÐ»»³¡¾°Ê±¹Ø±Õ±¾´°¿Ú
+		--ÇÐ»»³¡¾°Ê±¹Ø± ±¾´°¿Ú
 		this:Hide();
 		local curSceneID = GetSceneID();
 		if (curSceneID == 112) then
@@ -125,7 +125,7 @@ end
 --´ò¿ª×Ô¶¯Ñ°Â·´°¿Ú....
 --**********************************
 function AutoSearch_Open()
-	--Çå¿Õ×ø±êÊäÈë¿ò
+	--Çå¿ ×ø±êÊäÈë¿ò
 	InputPosition_x:SetText("");
 	InputPosition_y:SetText("");
 	--´ò¿ª´°¿ÚÊ±Ä¬ÈÏÊÇTab1....
@@ -134,7 +134,7 @@ function AutoSearch_Open()
 		AutoSearch_Tab1:SetCheck(1);
 		this:Show();
 	else
-		--Ôö¼Ó×ø±êÊäÈë·½Ê½Ö®ºó£¬µ±Ç°³¡¾°Ã»ÓÐ¿ÉÑ°Â·Ä¿±ê£¬Ò²Òªµ¯³ö£¬ËùÒÔ×¢ÊÍÏÂÃæÕâ¾ä
+		--Ôö¼Ó×ø±êÊäÈë·½Ê½Ö®ºó£¬µ±Ç°³¡¾°Ã»ÓÐ¿ÉÑ°Â·Ä¿±ê£¬Ò²Òªµ¯³ö£¬ËùÒÔ×¢ÊÍÏÂÃæ â¾ä
 		--Èç¹ûÃ»ÓÐÈÎºÎ¿ÉÑ°Â·µÄÎ»ÖÃ£¬ÔòÏÔÊ¾"µ±Ç°µÄ³¡¾°Ã»ÓÐ¿ÉÑ°Â·µÄÄ¿±ê¡£"
 		--PushDebugMessage("µ±Ç°µÄ³¡¾°Ã»ÓÐ¿ÉÑ°Â·µÄÄ¿±ê¡£");
 		this:Show();
@@ -210,10 +210,10 @@ function UpdateTabButton()
 		AutoSearch_Tab3:Show();
 		AutoSearch_Tab4:Show();
 		AutoSearch_Tab5:Hide();
-		AutoSearch_Tab1:SetText("È«");
-		AutoSearch_Tab2:SetText("¹¦");
-		AutoSearch_Tab3:SetText("µê");
-		AutoSearch_Tab4:SetText("ÈÎ");
+		AutoSearch_Tab1:SetText("Toàn");
+		AutoSearch_Tab2:SetText("Công");
+		AutoSearch_Tab3:SetText("Ðiªm");
+		AutoSearch_Tab4:SetText("Nh§m");
 
 	--ÃÅÅÉ
 	elseif g_CurSceneType == 1 then
@@ -223,8 +223,8 @@ function UpdateTabButton()
 		AutoSearch_Tab3:Hide();
 		AutoSearch_Tab4:Hide();
 		AutoSearch_Tab5:Hide();
-		AutoSearch_Tab1:SetText("È«");
-		AutoSearch_Tab2:SetText("¹¦");
+		AutoSearch_Tab1:SetText("Toàn");
+		AutoSearch_Tab2:SetText("Công");
 
 	--³èÎï
 	elseif g_CurSceneType == 2 then
@@ -234,10 +234,10 @@ function UpdateTabButton()
 		AutoSearch_Tab3:Show();
 		AutoSearch_Tab4:Show();
 		AutoSearch_Tab5:Hide();
-		AutoSearch_Tab1:SetText("È«");
-		AutoSearch_Tab2:SetText("ÈË");
-		AutoSearch_Tab3:SetText("ÊÞ");
-		AutoSearch_Tab4:SetText("ÃÍ");
+		AutoSearch_Tab1:SetText("Toàn");
+		AutoSearch_Tab2:SetText("Nhân");
+		AutoSearch_Tab3:SetText("Thú");
+		AutoSearch_Tab4:SetText("Mãnh");
 
 	--ÆäËü
 	elseif g_CurSceneType == 3 then
@@ -247,9 +247,9 @@ function UpdateTabButton()
 		AutoSearch_Tab3:Show();
 		AutoSearch_Tab4:Hide();
 		AutoSearch_Tab5:Hide();
-		AutoSearch_Tab1:SetText("È«");
-		AutoSearch_Tab2:SetText("¹Ö");
-		AutoSearch_Tab3:SetText("ÈË");
+		AutoSearch_Tab1:SetText("Toàn");
+		AutoSearch_Tab2:SetText("Quái");
+		AutoSearch_Tab3:SetText("Nhân");
 
 	end
 
@@ -261,10 +261,10 @@ end
 --**********************************
 function UpdateList( tabIndex )
 
-	--Çå¿ÕList¿Ø¼þÖÐµÄÄÚÈÝ....
+	--Çå¿ List¿Ø¼þÖÐµÄÄÚÈÝ....
 	AutoSearch_List:RemoveAllItem();
 
-	--Èç¹û´ÓÉÏ´Î¸üÐÂÊý¾ÝÖ®ºó³¡¾°¸Ä±äÁË....ÔòÇå¿ÕÉÏ´Î¼ÆËãºÃµÄ¸÷TabÒ³µÄ×Ô¶¯Ñ°Â·Êý¾Ý....
+	--Èç¹û´ÓÉÏ´Î¸üÐÂÊý¾ÝÖ®ºó³¡¾°¸Ä±äÁË....ÔòÇå¿ ÉÏ´Î¼ÆËãºÃµÄ¸÷TabÒ³µÄ×Ô¶¯Ñ°Â·Êý¾Ý....
 	local curSceneID = GetSceneID();
 	if g_LastUpdateSceneID ~= curSceneID then
 		g_TabListData[1] = nil;
@@ -304,7 +304,7 @@ function UpdateList( tabIndex )
 		end
 
 		--°´ÓÅÏÈ¼¶¶Ô±í¸ñ½øÐÐÅÅÐò....
-		--Ëã·¨ÓÐµã²»ºÃÀí½â....²ß»®ÒªÇóÈ¨ÖµÏàÍ¬µÄÅÅÐòºóÏà¶ÔÎ»ÖÃ²»ÄÜ¸Ä±ä....¾ÍÏÈÕâÃ´Ð´ÁË....
+		--Ëã·¨ÓÐµã²»ºÃÀí½â....²ß»®ÒªÇóÈ¨ÖµÏàÍ¬µÄÅÅÐòºóÏà¶ÔÎ»ÖÃ²»ÄÜ¸Ä±ä....¾ÍÏÈ âÃ´Ð´ÁË....
 		local temp1,temp2;
 		for m=nCount, 1, -1 do
 			for n=m-1, 1, -1 do
@@ -409,7 +409,7 @@ function OnDoubleClick()
 		--Ñ¡ÖÐÁËµÚ¼¸Ïî....
 		local nSelIndex = AutoSearch_List:GetSelectItem();
 		if nSelIndex >= 0 then
-		--Ö»ÓÐµ±ÓÐÑ¡ÖÐÏîÊ±£¬²ÅÏìÓ¦Ë«»÷ÐÅÏ¢£¬·ÀÖ¹³öÏÖË«»÷¿ÕÁÐ±íÀ¸Ò²ÒÆ¶¯µÄÇé¿ö
+		--Ö»ÓÐµ±ÓÐÑ¡ÖÐÏîÊ±£¬²ÅÏìÓ¦Ë«»÷ÐÅÏ¢£¬·ÀÖ¹³öÏÖË«»÷¿ ÁÐ±íÀ¸Ò²ÒÆ¶¯µÄÇé¿ö
 			AutoMoveTo()
 		end
 	end

@@ -4,23 +4,23 @@ local MAINMENUBAR_BUTTONS = {};
 local g_switchmenpaiIdx = 0;
 
 local bExchangeFlash = 0;
-local iTeamInfoType = 0;	-- -1 : ±íÊ¾Ã»ÓÐ¶ÓÎéÐÅÏ¢
+local iTeamInfoType = 0;	-- -1 : ????????
 													-- 0  : ±íÊ¾´ò¿ª¶ÓÎéÐÅÏ¢
 													-- 1  : ±íÊ¾ÓÐÈËÉêÇë¼ÓÈë¶ÓÎé,   ´ò¿ªÉêÇëÁÐ±í.
 													-- 2  : ±íÊ¾ÓÐÈËÑûÇëÄã¼ÓÈë¶ÓÎé, ´ò¿ªÑûÇëÄãµÄ¶ÓÎéÁÐ±í.
 
 
-local bTogleSelfEquip = 0;	-- 0 £ºµ±Ç°×´Ì¬ÊÇ¹Ø±Õ½çÃæ
+local bTogleSelfEquip = 0;	-- 0 :?????????
 														-- 1 £ºµ±Ç°×´Ì¬ÊÇ´ò¿ª½çÃæ
 														-- 1 : µ±Ç°×´Ì¬ÊÇ´ò¿ª½çÃæ
 
-local bTogleTeam			= 0;  -- 0 : µ±Ç°×´Ì¬ÊÇ¹Ø±Õ½çÃæ
+local bTogleTeam			= 0;  -- 0 : ?????????
 														-- 1 : µ±Ç°×´Ì¬ÊÇ´ò¿ª½çÃæ
 
-local bIsTeamBnFlash	= 0;	-- 0 : ×é¶Ó°´Å¥Ã»ÉÁË¸.
+local bIsTeamBnFlash	= 0;	-- 0 : ???????.
 														-- 1 : ×é¶Ó°´Å¥ÉÁË¸.
 
-local bIsPacketOpened = 0 --±³°ü×´Ì¬£¨0¹Ø±Õ£¬1´ò¿ª£©
+local bIsPacketOpened = 0 --????(0??,1??)
 
 local nMenpaiSkillId = {};
 nMenpaiSkillId[1] = {281,291,295};
@@ -41,9 +41,9 @@ local MAINMENUBAR_DATA = {};
 --¡¾¸½½ü¡¿
 local MAINMENUBAR_DATA_NEAR =
 	{
-		"set:Buttons image:Channelvicinity_Normal", 		-- ÆµµÀÑ¡Ôñ°´Å¥ÆÕÍ¨
-		"set:Buttons image:ChannelVicinity_Hover", 		-- ÆµµÀÑ¡Ôñ°´Å¥¼¤»î
-		"set:Buttons image:ChannelVicinity_Pushed",		-- ÆµµÀÑ¡Ôñ°´Å¥°´ÏÂ
+		"set:Buttons image:Channelvicinity_Normal", 		-- ????????
+		"set:Buttons image:ChannelVicinity_Hover", 		-- ????????
+		"set:Buttons image:ChannelVicinity_Pushed",		-- ????????
 	};
 
 --¡¾ÊÀ½ç¡¿
@@ -154,7 +154,7 @@ function MainMenuBar_PreLoad()
 	this:RegisterEvent("PLAYER_ENTERING_WORLD");
 	this:RegisterEvent("CHANGE_BAR");
 	this:RegisterEvent("RECEIVE_EXCHANGE_APPLY");
-	this:RegisterEvent("TEAM_NOTIFY_APPLY");				-- ×¢²áÓÐÈËÉêÇë¼ÓÈë¶ÓÎéÊÂ¼þ.
+	this:RegisterEvent("TEAM_NOTIFY_APPLY");				-- ????????????.
 
 	this:RegisterEvent("HAVE_MAIL");
 
@@ -185,25 +185,25 @@ function MainMenuBar_PreLoad()
 	this:RegisterEvent("UPDATE_DOUBLE_EXP")
 	this:RegisterEvent("DETIME_UPDATE")
 
-	--[xh 2009-07-09]Ö»ÓÐÔÚ°ïÅÉÕ÷ÌÖÊ±²ÅÏÔÊ¾°ïÅÉÕ÷ÌÖ»ý·Ö°´Å¥
+	--[xh 2009-07-09]Ö»ÓÐÔÚ°ïÅÉ ÷ÌÖÊ±²ÅÏÔÊ¾°ïÅÉ ÷ÌÖ»ý·Ö°´Å¥
 	this:RegisterEvent("SCENE_TRANSED");
 	this:RegisterEvent("FLASH_PACKET_BUTTON");
 	this:RegisterEvent("PACKET_OPENED");
 
 	this:RegisterEvent("OPEN_UP_BAR_2")
 	--±äÉí¡¢
-	this:RegisterEvent("SKILL_UPDATE",true)									--Í£ÉÁ×é¶Ó°´Å¥
-	this:RegisterEvent("SWITCHMENPAI",true)									--Í£ÉÁ×é¶Ó°´Å¥
+	this:RegisterEvent("SKILL_UPDATE",true)									--??????
+	this:RegisterEvent("SWITCHMENPAI",true)									--??????
 	this:RegisterEvent("SHOW_TRANSFIGURATION_SKILL",true);
 	this:RegisterEvent("SKILL_UPDATE",true)
 	
 	this:RegisterEvent("NEWMSG_NOTIFY")
 	this:RegisterEvent("MPCOMBO_SKILL",true)
 	
-	this:RegisterEvent("CHAT_ACCEPT_DOUBLE_ACTION_STRING");		-- ´ÓÁÄÌìÀ¸ÀïÊäÈëË«ÈËÐÝÏÐ¶¯×÷µÄÏìÓ¦	
-	this:RegisterEvent("UNINSTALL_CHAT_ACTION_BAR");					-- Ð¶ÔØÖ÷²Ëµ¥ÉÏµÄË«ÈËÁÄÌì¶¯×÷°´Å¥
-	this:RegisterEvent("CLEAR_CHAT_ACTION_BAR");							-- ÇåÀíÖ÷²Ëµ¥ÉÏ¹ýÆÚµÄË«ÈËÁÄÌì¶¯×÷°´Å¥
-	this:RegisterEvent("UNFLASH_TEAM_BUTTON",true)									--Í£ÉÁ×é¶Ó°´Å¥
+	this:RegisterEvent("CHAT_ACCEPT_DOUBLE_ACTION_STRING");		-- ????????????????	
+	this:RegisterEvent("UNINSTALL_CHAT_ACTION_BAR");					-- ???????????????
+	this:RegisterEvent("CLEAR_CHAT_ACTION_BAR");							-- ?????????????????
+	this:RegisterEvent("UNFLASH_TEAM_BUTTON",true)									--??????
 	this:RegisterEvent("RAID_UPDATE_INVITATION")
 	this:RegisterEvent("SHOW_SECWEAPONFIGURATION_SKILL",true);
 	this:RegisterEvent("SETORIGINALGAME", true)
@@ -263,15 +263,15 @@ function MainMenuBar_OnLoad()
 	MAINMENUBAR_ACCKEY["acc_friend"] = MainMenuBar_Friend_Clicked;
 	MAINMENUBAR_ACCKEY["acc_team"] = MainMenuBar_Team_Clicked;
 	MAINMENUBAR_ACCKEY["acc_exchange"] = MainMenuBar_Exchange_Clicked;
-	MAINMENUBAR_ACCKEY["acc_guild"] = nil;	-- ½ÇÉ«°ï»á
-	MAINMENUBAR_ACCKEY["acc_chatmod"] = MainMenuBar_ChatMood;			--ÁÄÌìÈËÎïÐÝÏÐ¶¯×÷
-	MAINMENUBAR_ACCKEY["acc_face"] = MainMenuBar_SelectFaceMotion;	--ÁÄÌì°ü×Ó±íÇé
+	MAINMENUBAR_ACCKEY["acc_guild"] = nil;	-- ????
+	MAINMENUBAR_ACCKEY["acc_chatmod"] = MainMenuBar_ChatMood;			--????????
+	MAINMENUBAR_ACCKEY["acc_face"] = MainMenuBar_SelectFaceMotion;	--??????
 
-	MAINMENUBAR_ACCKEY["acc_MainMenuBarpageup"] = MainmenuBar_PageUp;	--¿ì½ÝÀ¸ÏòÉÏ·­Ò³
-	MAINMENUBAR_ACCKEY["acc_MainMenuBarpagedown"] = MainmenuBar_PageDown;	--¿ì½ÝÀ¸ÏòÏÂ·­Ò³
-	MAINMENUBAR_ACCKEY["acc_MainMenuBarPageOne"] = MainmenuBar_PageOne;	--¿ì½ÝÀ¸µÚÒ»Ò³
-	MAINMENUBAR_ACCKEY["acc_MainMenuBarPageTwo"] = MainmenuBar_PageTwo;	--¿ì½ÝÀ¸µÚ¶þÒ³
-	MAINMENUBAR_ACCKEY["acc_MainMenuBarPageThree"] = MainmenuBar_PageThree;	--¿ì½ÝÀ¸µÚÈýÒ³
+	MAINMENUBAR_ACCKEY["acc_MainMenuBarpageup"] = MainmenuBar_PageUp;	--???????
+	MAINMENUBAR_ACCKEY["acc_MainMenuBarpagedown"] = MainmenuBar_PageDown;	--???????
+	MAINMENUBAR_ACCKEY["acc_MainMenuBarPageOne"] = MainmenuBar_PageOne;	--??????
+	MAINMENUBAR_ACCKEY["acc_MainMenuBarPageTwo"] = MainmenuBar_PageTwo;	--??????
+	MAINMENUBAR_ACCKEY["acc_MainMenuBarPageThree"] = MainmenuBar_PageThree;	--??????
 
 	MAINMENUBAR_DATA["near"] 		= MAINMENUBAR_DATA_NEAR;
 	MAINMENUBAR_DATA["scene"] 	= MAINMENUBAR_DATA_SCENE;
@@ -562,7 +562,7 @@ function MainMenuBar_OnEvent(event)
 	-- ÇåÀí¹ýÆÚµÄË«ÈËÐÝÏÐ¶¯×÷°üÔÚÖ÷²Ëµ¥ÉÏµÄ°´Å¥
 	elseif (event == "CLEAR_CHAT_ACTION_BAR") and (tostring(arg0)== "MainMenuBar") then
 		MainMenuBar_ClearChatActionButton(tonumber(arg1), tonumber(arg2), tonumber(arg3));
-	elseif event == "UNFLASH_TEAM_BUTTON" then  --Í£ÉÁ×é¶Ó°´Å¥
+	elseif event == "UNFLASH_TEAM_BUTTON" then  --??????
 		MainMenuBar_Stop_Flash_Team_Button()
 	elseif event == "RAID_UPDATE_INVITATION" then
 		MainMenuBar_Flash_Team_Button()	
@@ -835,7 +835,7 @@ function MainMenuBar_Clicked(nIndex)
 	if isCanDo == true then
 		MAINMENUBAR_BUTTONS[nIndex]:DoAction();
 	else
-		PushDebugMessage("Äã²»ÄÜÕâÃ´×ö¡£")
+		PushDebugMessage("Nhî không th¬ làm nhß v§y.")
 		return;
 	end
 
@@ -928,7 +928,7 @@ function MainMenuBar_ConfigTab()
 		return
 	end
 	if Lua_IsTSPhoenixScene(GetSceneID()) == 1 then
-		PushDebugMessage("ÈºÐÛÖðÂ¹Õ½³¡ÎÞ·¨×ö´Ë²Ù×÷")
+		PushDebugMessage("Qu¥n hùng Trøc Lµc chiªn trß¶ng không th¬ T¯ ThØ thao tác")
 		return
 	end
 	if 681 == GetSceneID() then
@@ -970,19 +970,19 @@ function MainMenuBar_TextAccepted()
 	-- ÓÐÐ§µÄË«ÈËÁÄÌì¶¯×÷
 	if (bChatAction == 1) then
 		-- Ñ¯ÎÊ¶Ô·½ÊÇ·ñ¿ÉÒÔ×ö¶¯×÷£¨ÔÝ²»·¢ËÍÁÄÌìÐÅÏ¢×Ö·û´®£¬Ò²²»¼ÇÂ¼ÀúÊ·ÁÄÌì¼ÇÂ¼£©
-		g_ChatActionTxt = txt							-- ÏÈ°ÑÁÄÌì¶¯×÷×Ö·û´®¼ÇÂ¼ÏÂÀ´
-		MainMenuBar_SetEditBoxTxt("")			-- Çå¿Õ±à¼­¿ò
+		g_ChatActionTxt = txt							-- ?????????????
+		MainMenuBar_SetEditBoxTxt("")			-- ?????
 		Talk : CanDoDoubleAction_Bar()
 	
 	-- ÎÞÐ§µÄË«ÈËÁÄÌì¶¯×÷
 	elseif (bChatAction == 2) then
 		-- ²»·¢ËÍÁÄÌìÐÅÏ¢×Ö·û´®£¬Ò²²»¼ÇÂ¼ÀúÊ·ÁÄÌì¼ÇÂ¼£¬Ö»µ¯ÌáÊ¾ÐÅÏ¢
-		g_ChatActionTxt = ""							-- Çå¿ÕÁÄÌì¶¯×÷×Ö·û´®
-		MainMenuBar_SetEditBoxTxt("")			-- Çå¿Õ±à¼­¿ò
+		g_ChatActionTxt = ""							-- ?????????
+		MainMenuBar_SetEditBoxTxt("")			-- ?????
 
-	-- µ¥ÈËÁÄÌì¶¯×÷»òÕßÆÕÍ¨ÁÄÌìÏûÏ¢
+	-- µ¥ÈËÁÄÌì¶¯×÷»ò ßÆ Í¨ÁÄÌìÏûÏ¢
 	elseif (bChatAction == 0) then		
-		-- ·¢ËÍÆÕÍ¨ÁÄÌìÐÅÏ¢
+		-- ·¢ËÍÆ Í¨ÁÄÌìÐÅÏ¢
 		local prvname,perColor = Talk : SendChatMessage(g_CurChannel, txt);
 		if(nil == prvname ) then prvname = ""; end
 		if(nil == perColor ) then perColor = ""; end
@@ -999,7 +999,7 @@ end
 -- ·¢ËÍË«ÈËÁÄÌì¶¯×÷ÐÅÏ¢
 function MainMenuBar_DoubleChatActionMessageSend(bEnable, talker)
 
-	-- ÕÒ²»µ½Ëµ»°Õß
+	--  Ò²»µ½Ëµ»° ß
 	if (talker == "") then
 		return
 	end
@@ -1030,11 +1030,11 @@ function MainMenuBar_DoubleChatActionMessageSend(bEnable, talker)
 end
 
 function MainMenuBar_JoinItemElementFailure()
-	PushDebugMessage("Ìí¼ÓÎïÆ·ÐÅÏ¢Ê§°Ü¡£");
+	PushDebugMessage("Tång thêm v§t ph¦m tin tÑc th¤t bÕi.");
 end
 
 function MainMenuBar_ItemElementFull()
-	PushDebugMessage("²»ÄÜÌí¼Ó¸ü¶àÎïÆ·ÐÅÏ¢¡£");
+	PushDebugMessage("Không th¬ tång thêm nhi«u h½n v§t ph¦m tin tÑc.");
 end
 
 function MainMenuBar_HandleHistoryAction(op,arg0,arg1)
@@ -1134,7 +1134,7 @@ function MainMenuBar_MainMenuBar_On_Clk()
 	SystemSetup:SetSubMenubarState( 1 )
 end
 
---¹Ø±ÕµÚ¶þ¸ö¹¤¾ßÌõ
+--¹Ø± µÚ¶þ¸ö¹¤¾ßÌõ
 function MainMenuBar_MainMenuBar_Off_Clk()
 	TurnMenuBar("off")
 
@@ -1259,7 +1259,7 @@ end
 
 function MainMenuBar_UpdateButtonTip()
 	local tip,str
-	local AcceArryEx = 10   --×Ô¶¨Òå¿ì½Ý¼üÊý×éÖÐÇ°11¸öÔªËØ²»ÔÊÐíÍæ¼Ò×Ô¶¨Òå
+	local AcceArryEx = 10   --??????????11???????????
 	for i=1,10 do
 	   str = SystemSetup:GetAcceTip(i + AcceArryEx);
 	   tip = string.format( "TopRight %s", str )
@@ -1300,7 +1300,7 @@ function MainMenuBar_UnInstallChatActionButton(index)
 
 	if realActionID > 0 and actionCount > 0 and actionMinIndex > 0 and actionType > 0 then
 		local tmpItem = -1
-		-- Çå¿Õ¿ì½ÝÀ¸ÉÏÃ¿Ò»¸ö°üº¬¶¯×÷°ü°´Å¥µÄÐÅÏ¢
+		-- Çå¿ ¿ì½ÝÀ¸ÉÏÃ¿Ò»¸ö°üº¬¶¯×÷°ü°´Å¥µÄÐÅÏ¢
 		for i = 1, MAINMENUBAR_BUTTON_NUM do
 			-- µÃµ½µ±Ç°ActionItemÔÚActionItem×Ü±íÖÐµÄ±àºÅ
 		  tmpItem = MAINMENUBAR_BUTTONS[i]:GetActionItem();
@@ -1314,8 +1314,8 @@ function MainMenuBar_UnInstallChatActionButton(index)
 						theAction = Talk : EnumChatMood(actionMinIndex + j - 2);
 					end
 					if (theAction:GetID() ~= 0) and (theAction:GetID() == tmpItem) then
-						MAINMENUBAR_BUTTONS[i] : SetActionItem(-1);						-- È¡Ïû°´Å¥ÉÏµÄActionItem
-						DataPool : UnInstall_RMB_ChatAction_BarItem(i-1);			-- É¾³ýMainMenuBarÖÐ±£´æµÄActionItem¶ÔÓ¦¼ÇÂ¼£¨±àºÅ¶ÔÓ¦DragName£©
+						MAINMENUBAR_BUTTONS[i] : SetActionItem(-1);						-- ??????ActionItem
+						DataPool : UnInstall_RMB_ChatAction_BarItem(i-1);			-- ??MainMenuBar????ActionItem????(????DragName)
 					end
 				end
 		  end
@@ -1339,7 +1339,7 @@ function MainMenuBar_ClearChatActionButton(index, nID, nData)
 
 	if realActionID > 0 and actionCount > 0 and actionMinIndex > 0 and actionType > 0 then
 		local tmpItem = -1
-		-- Çå¿Õ¿ì½ÝÀ¸ÉÏÃ¿Ò»¸ö°üº¬¶¯×÷°ü°´Å¥µÄÐÅÏ¢
+		-- Çå¿ ¿ì½ÝÀ¸ÉÏÃ¿Ò»¸ö°üº¬¶¯×÷°ü°´Å¥µÄÐÅÏ¢
 		for i = 1, MAINMENUBAR_BUTTON_NUM do
 			-- µÃµ½µ±Ç°ActionItemÔÚActionItem×Ü±íÖÐµÄ±àºÅ
 		  tmpItem = MAINMENUBAR_BUTTONS[i]:GetActionItem();
@@ -1354,8 +1354,8 @@ function MainMenuBar_ClearChatActionButton(index, nID, nData)
 					end
 					local theActionID = theAction:GetID()
 					if (theAction:GetID() ~= 0) and (theAction:GetID() == tmpItem) then
-						MAINMENUBAR_BUTTONS[i] : SetActionItem(-1);						-- È¡Ïû°´Å¥ÉÏµÄActionItem
-						DataPool : UnInstall_RMB_ChatAction_BarItem(i-1);			-- É¾³ýMainMenuBarÖÐ±£´æµÄActionItem¶ÔÓ¦¼ÇÂ¼£¨±àºÅ¶ÔÓ¦DragName£©
+						MAINMENUBAR_BUTTONS[i] : SetActionItem(-1);						-- ??????ActionItem
+						DataPool : UnInstall_RMB_ChatAction_BarItem(i-1);			-- ??MainMenuBar????ActionItem????(????DragName)
 					end
 				end
 		  end
@@ -1391,9 +1391,9 @@ function MainmenuBar_ShowTransfigureSkill( flag )
 		local count =Transfiguration:GetTransfigeActionItemCount()
 		local canbeCancel = Transfiguration:TransfigeActionCanbeCancel()
 		if canbeCancel == 1 then
-			if count >= 2 then --¿Ï¶¨ÐèÒª´óÓÚ2£¬ÒòÎªÓÐÒ»¸öÈ¡Ïû±äÉíBUFFµÄ¼¼ÄÜ
+			if count >= 2 then --??????2,?????????BUFF???
 				local lastAction = count
-				count = count - 1--×îºóÒ»¸ö¹Ì¶¨ÔÚMAINMENUBAR_BUTTONS[60]Î»ÖÃ£¬ÎªÈ¡Ïû±äÉí¼¼ÄÜaction
+				count = count - 1--???????MAINMENUBAR_BUTTONS[60]??,???????action
 				if(count > 9)then
 					count = 9
 				end
@@ -1420,7 +1420,7 @@ function MainmenuBar_ShowTransfigureSkill( flag )
 					MAINMENUBAR_BUTTONS[60]:Bright()
 					PutActionToMainmenuBar( 59, action:GetID(), 1 )
 				end
-				SetMenuBarPageNumber(5);--ÌØÐ´
+				SetMenuBarPageNumber(5);--??
 			end
 		else
 			if (count <=0) then
@@ -1459,7 +1459,7 @@ function MainmenuBar_ShowTransfigureSkill( flag )
 							end
 			--			end
 					end
-					SetMenuBarPageNumber(5);--ÌØÐ´
+					SetMenuBarPageNumber(5);--??
 				end
 			end
 		end
@@ -1488,9 +1488,9 @@ function MainmenuBar_ShowSecWeaponfigureSkill( flag )
 		local count =SecWeaponfiguration:GetSecWeaponfigeActionItemCount()
 		local canbeCancel = SecWeaponfiguration:SecWeaponfigeActionCanbeCancel()
 		if canbeCancel == 1 then
-			if count >= 2 then --¿Ï¶¨ÐèÒª´óÓÚ2£¬ÒòÎªÓÐÒ»¸öÈ¡Ïû±äÉíµÄ¼¼ÄÜ
+			if count >= 2 then --??????2,????????????
 				local lastAction = count
-				count = count - 1--×îºóÒ»¸ö¹Ì¶¨ÔÚMAINMENUBAR_BUTTONS[60]Î»ÖÃ£¬ÎªÈ¡Ïû±äÉí¼¼ÄÜaction
+				count = count - 1--???????MAINMENUBAR_BUTTONS[60]??,???????action
 				if(count > 9)then
 					count = 9
 				end
@@ -1517,7 +1517,7 @@ function MainmenuBar_ShowSecWeaponfigureSkill( flag )
 					MAINMENUBAR_BUTTONS[60]:Bright()
 					PutActionToMainmenuBar( 59, action:GetID(), 1 )
 				end
-				SetMenuBarPageNumber(5);--ÌØÐ´
+				SetMenuBarPageNumber(5);--??
 			end
 		end
 	else
@@ -1556,7 +1556,7 @@ end
 
 -- Í¨ÖªÍÏ×§ @WAYLEE
 function NotifyDragDropDragged(cSourceName, nSourceIndex, cTargetType, nTargetIndex)
-	-- PushDebugMessage("ÕæÔª "..cSourceName.." "..nSourceIndex.." "..cTargetType.." "..nTargetIndex)
+	-- PushDebugMessage(" æÔª "..cSourceName.." "..nSourceIndex.." "..cTargetType.." "..nTargetIndex)
 end
 function MainMenuBar_Button_PetFight_MouseEnter()
 	DataPool:SetPetFightList_Show1(1)

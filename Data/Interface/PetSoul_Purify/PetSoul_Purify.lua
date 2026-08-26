@@ -12,9 +12,9 @@ local PetSoul_Purify_Animates = {}
 local PetSoul_Purify_Marks = {}
 
 local PetSoul_Purify_Reward = {
-	[1] = {itemid = 38002508, times = 3 }, --累积3次礼
-	[2] = {itemid = 38002509, times = 8 }, --累积8次礼
-	[3] = {itemid = 38002510, times = 15}  --累积15次礼
+	[1] = {itemid = 38002508, times = 3 }, --??3??
+	[2] = {itemid = 38002509, times = 8 }, --??8??
+	[3] = {itemid = 38002510, times = 15}  --??15??
 }
 
 --=========================================================
@@ -112,23 +112,23 @@ function PetSoul_Purify_Refresh()
 	end
 
 	for i = 1, 3 do
-		if Get_XParam_INT(i) == 1 then --1.已领取
+		if Get_XParam_INT(i) == 1 then --1.???
 			PetSoul_Purify_Buttons[i]:Disable()
 			PetSoul_Purify_Buttons[i]:SetText("#{BBWH_211230_21}")
 			PetSoul_Purify_Marks[i]:Show()
 			PetSoul_Purify_Tips[i]:Hide()
 			PetSoul_Purify_Animates[i]:Hide()
 
-		else --2.未领取
+		else --2.???
 			PetSoul_Purify_Buttons[i]:Enable()
 			PetSoul_Purify_Buttons[i]:SetText("#{BBWH_211230_20}")
 			PetSoul_Purify_Marks[i]:Hide()
 
-			if PetSoul_Purify_FinishTimes >= PetSoul_Purify_Reward[i].times then --2.1可领取
+			if PetSoul_Purify_FinishTimes >= PetSoul_Purify_Reward[i].times then --2.1???
 				PetSoul_Purify_Tips[i]:Show()
 				PetSoul_Purify_Animates[i]:Show()
 
-			else --2.2不可领取
+			else --2.2????
 				PetSoul_Purify_Tips[i]:Hide()
 				PetSoul_Purify_Animates[i]:Hide()
 			end
@@ -171,14 +171,14 @@ function PetSoul_Purify_Page1_OnClick(idx)
 end
 
 --=========================================================
--- 控件事件 - 关闭
+-- 控件事件 - 关睜
 --=========================================================
 function PetSoul_Purify_Close()
 	PetSoul_Purify_OnHiden()
 end
 
 --=========================================================
--- 界面关闭事件
+-- 界面关睜事件
 --=========================================================
 function PetSoul_Purify_OnHiden()
 	this:CareObject(objCared, 0, "PetSoul_Purify")

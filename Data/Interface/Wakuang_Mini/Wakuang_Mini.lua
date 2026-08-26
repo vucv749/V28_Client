@@ -4,7 +4,7 @@ local g_Wakuang_Mini_SceneId;
 
 function Wakuang_Mini_PreLoad()
 
-	--离开场景，自动关闭
+	--离开场景，自动关睜
 	this:RegisterEvent("PLAYER_LEAVE_WORLD", false)	
 	this:RegisterEvent("WAKUANG_SWITCH")
 	this:RegisterEvent("UI_COMMAND")

@@ -41,7 +41,7 @@ function Xiulian_PreLoad()
 	-- 打开界面
 	this:RegisterEvent("OPEN_XIULIAN_PAGE");
 	
-	--离开场景，自动关闭
+	--离开场景，自动关睜
 	this:RegisterEvent("PLAYER_LEAVE_WORLD");
 	this:RegisterEvent("UNIT_XIULIAN");
 	this:RegisterEvent("UINT_POWER");
@@ -254,7 +254,7 @@ function Xiulian_Talent_Switch()
 
 end
 
---切换个人展示界面
+--切换个人牴示界面
 function Xiulian_Profile_Switch()
 	Variable:SetVariable("SelfUnionPos", Xiulian_Frame:GetProperty("UnifiedPosition"), 1);	
 	Exterior:LuaFnExteriorPlayerOpenProfileUI()		
@@ -337,7 +337,7 @@ function Xiulian_Update()
 end
 
 --===============================================
--- 关闭 
+-- 关睜 
 --===============================================
 function Xiulian_Close_Cilcked()
 		this:Hide()
@@ -565,54 +565,54 @@ end
 function Xiulian_OnPageClicked(idx)
 	Variable:SetVariable("PageNumber", tostring(idx), 1);
 	idx = g_PageOrder[idx]
-	if idx == 1 then--装备
+	if idx == 1 then--??
 		Xiulian_SelfEquip_Page_Switch()
-	elseif idx == 2 then--资料
+	elseif idx == 2 then--??
 		Xiulian_SelfData_Switch()
-	elseif idx == 3 then--珍兽
+	elseif idx == 3 then--??
 		Xiulian_Pet_Switch()
-	elseif idx == 4 then--武魂
+	elseif idx == 4 then--??
 		Xiulian_Wuhun_Switch()
-	elseif idx == 5 then--修炼
+	elseif idx == 5 then--??
 		Xiulian_Xiulian_Switch()
 		Xiulian_ClearPage()
-	elseif idx == 6 then--武道
+	elseif idx == 6 then--??
 		Xiulian_Talent_Switch()
-	elseif idx == 7 then--灵玉
+	elseif idx == 7 then--??
 		Xiulian_Page_LingYu()
-	elseif idx == 8 then--神兵
+	elseif idx == 8 then--??
 		Xiulian_Page_ShenBing()
-	elseif idx == 9 then--雕文进阶
+	elseif idx == 9 then--????
 		Xiulian_Page_DWJinJie()
-	elseif idx == 10 then--巅峰
+	elseif idx == 10 then--??
 		Xiulian_Page_Peak()
-	elseif idx == 11 then--个人
+	elseif idx == 11 then--??
 		Xiulian_Profile_Switch()
-	elseif idx == 12 then--其他
+	elseif idx == 12 then--??
 		Xiulian_Other_Info_Page_Switch()
 	end
 end
 
 function Xiulian_CheckPage(idx)
-	if idx == 1 then--装备
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--资料
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--珍兽
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--武魂
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--修炼
+	elseif idx == 5 then--??
 		return 1
-	elseif idx == 6 then--武道
+	elseif idx == 6 then--??
 		return DataPool:Lua_CheckIsShowTalent()
-	elseif idx == 7 then--灵玉
+	elseif idx == 7 then--??
 		return 1
-	elseif idx == 8 then--神兵
+	elseif idx == 8 then--??
 		return 1
-	elseif idx == 9 then--雕文进阶
+	elseif idx == 9 then--????
 		return 1
-	elseif idx == 10 then--巅峰
+	elseif idx == 10 then--??
 	
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
@@ -621,51 +621,51 @@ function Xiulian_CheckPage(idx)
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 11 then--个人
+	elseif idx == 11 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 15 then
 			return 1
 		end
-	elseif idx == 12 then--其他
+	elseif idx == 12 then--??
 		return 1
 	end
 	return 0
 end
 
 function Xiulian_IsPageEnable(idx)
-	if idx == 1 then--装备
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--资料
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--珍兽
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--武魂
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--修炼
+	elseif idx == 5 then--??
 		return 1
-	elseif idx == 6 then--武道
+	elseif idx == 6 then--??
 		return 1
-	elseif idx == 7 then--灵玉
+	elseif idx == 7 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 8 then--神兵
+	elseif idx == 8 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 65 then
 			return 1
 		end
-	elseif idx == 9 then--雕文进阶
+	elseif idx == 9 then--????
 		return 1
-	elseif idx == 10 then--巅峰
+	elseif idx == 10 then--??
 	
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 11 then--个人
+	elseif idx == 11 then--??
 		return 1
-	elseif idx == 12 then--其他
+	elseif idx == 12 then--??
 		return 1
 	end
 	return 0

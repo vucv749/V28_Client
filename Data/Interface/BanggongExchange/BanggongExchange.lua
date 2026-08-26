@@ -2,8 +2,8 @@
 
 local g_clientNpcId = -1;
 
-local g_ExchangeMaxBangGong = 200; --可以兑换的帮贡上限
-local g_ExchangeMinBangGong = 10;	--可以兑换的帮贡下限
+local g_ExchangeMaxBangGong = 200; --?????????
+local g_ExchangeMinBangGong = 10;	--?????????
 
 function BanggongExchange_PreLoad()
 
@@ -19,7 +19,7 @@ end
 function BanggongExchange_OnEvent(event)
 
 	if(event == "UI_COMMAND" and tonumber(arg0) == 19821) then
-		if this : IsVisible() then									-- 如果界面开着，则不处理
+		if this : IsVisible() then									-- ??????,????
 			return
 		end
 		BanggongExchange_Clear()
@@ -33,7 +33,7 @@ function BanggongExchange_OnEvent(event)
 		local npcObjId = Get_XParam_INT(0)
 		g_clientNpcId = DataPool : GetNPCIDByServerID(npcObjId)
 		if g_clientNpcId == -1 then
-			PushDebugMessage("未发现 NPC")
+			PushDebugMessage("Ch遖 ph醫 hi畁 NPC")
 			BanggongExchange_Close()
 			return
 		end
@@ -44,7 +44,7 @@ function BanggongExchange_OnEvent(event)
 			return;
 		end
 		
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if arg1 == "distance" and tonumber(arg2) > MAX_OBJ_DISTANCE or arg1=="destroy" then
 			BanggongExchange_Close()
 		end

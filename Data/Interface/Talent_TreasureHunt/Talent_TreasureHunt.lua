@@ -40,7 +40,7 @@ function Talent_TreasureHunt_PreLoad()
 	this:RegisterEvent("ADJEST_UI_POS");
 	-- 游戏分辨率发生了变化
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED");
-	this:RegisterEvent("PLAYER_LEAVE_WORLD");--切场景
+	this:RegisterEvent("PLAYER_LEAVE_WORLD");--???
 
 end
 

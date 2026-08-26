@@ -7,9 +7,9 @@ local g_Distance = 1
 local g_Distance_Ori = 2
 local g_Distance_Max = 4
 
-local g_CameraHeight = 1     --摄影机高度
-local g_CameraDistance = 2   --摄影机距离
-local g_CameraPitch = 3      --摄影机角度
+local g_CameraHeight = 1     --?????
+local g_CameraDistance = 2   --?????
+local g_CameraPitch = 3      --?????
 local g_CameraPosition =
 {
 	--女性相关位置
@@ -33,7 +33,7 @@ function TargetShop_Dresser_PreLoad()
 	this:RegisterEvent("TARGET_DRESS")
 	this:RegisterEvent("ADJEST_UI_POS",false)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--离开场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--????????
 	this:RegisterEvent("CLOSE_TARGET_EQUIP");
 end
 

@@ -47,7 +47,7 @@ function Dress_Transfer_Fitting_OnEvent(event)
 		return
 	end
 	
-	--关闭试衣间
+	--关睜试衣间
 	if event == "CLOSE_DRESS_TRANSFER_FITTING" and this:IsVisible() then
 		Dress_Transfer_Fitting_OnClosed()
 		return
@@ -78,7 +78,7 @@ function Dress_Transfer_Fitting_OnEvent(event)
 	end	
 	
 	-- FakeObject模型界面互斥
-	if ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then   --时装预览
+	if ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then   --????
 		if (this:IsVisible()) then
 			Dress_Transfer_Fitting_OnClosed()
 			return
@@ -114,7 +114,7 @@ function Dress_Transfer_Fitting_OnHiden()
 	
 end
 
---关闭
+--关睜
 function Dress_Transfer_Fitting_OnClosed()
 	this:Hide()
 end

@@ -11,7 +11,7 @@ function Anniversary_PickOne_PreLoad()
 	this:RegisterEvent( "OPEN_YUANBAOSHOP" )
 	
 	this:RegisterEvent( "VIEW_RESOLUTION_CHANGED" )
-	this:RegisterEvent( "HIDE_ON_SCENE_TRANSED" )	--进场景关闭界面
+	this:RegisterEvent( "HIDE_ON_SCENE_TRANSED" )	--???????
 	this:RegisterEvent( "ADJEST_UI_POS" )
 	
 end

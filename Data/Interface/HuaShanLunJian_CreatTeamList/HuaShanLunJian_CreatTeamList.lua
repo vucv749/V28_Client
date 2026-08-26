@@ -1,4 +1,4 @@
--- 新6v6 查看已组建战队
+-- 新6v6 查看已组建牻队
 
 local HuaShanLunJian_CreateTeamList_UnifiedPosition = nil
 
@@ -9,9 +9,9 @@ local HuaShanLunJian_CreateTeamList_CurPage = 0
 local HuaShanLunJian_CreateTeamList_MaxPage = 0
 local HuaShanLunJian_CreateTeamList_MaxTeam = 0
 
-local HuaShanLunJian_CreateTeamList_OpCD = 2000				-- 操作CD
-local HuaShanLunJian_CreateTeamList_LastOpTime = 1			-- 最后操作的时间
-local HuaShanLunJian_CreateTeamList_TeamCountPerPage = 10	-- 每页展示战队数量
+local HuaShanLunJian_CreateTeamList_OpCD = 2000				-- ??CD
+local HuaShanLunJian_CreateTeamList_LastOpTime = 1			-- ???????
+local HuaShanLunJian_CreateTeamList_TeamCountPerPage = 10	-- ????????
 
 
 
@@ -52,7 +52,7 @@ function HuaShanLunJian_CreatTeamList_ResetControl()
     HuaShanLunJian_CreatTeamList_TeamInfo:Disable()
 	local toptext = ScriptGlobal_Format("#{JZGN_20230710_121}" , "0")
 	HuaShanLunJian_CreatTeamList_ExplainText:SetText(toptext)
-	local szpage = ScriptGlobal_Format("#{WCBZ_220809_9}", "0", "0")	-- 这个字典没给 暂时用争霸赛的
+	local szpage = ScriptGlobal_Format("#{WCBZ_220809_9}", "0", "0")	-- ?????? ???????
 	HuaShanLunJian_CreatTeamList_CurrentlyPage:SetText(szpage)
 
 	HuaShanLunJian_CreatTeamList_NumPage:SetText("")
@@ -61,12 +61,12 @@ function HuaShanLunJian_CreatTeamList_ResetControl()
 	HuaShanLunJian_CreatTeamList_DownPage:Disable()
 end -- end func HuaShanLunJian_CreatTeamList_ResetControl()
 
--- 战队列表控件选择点击事件
+-- 牻队列表控件选择点击事件
 function HuaShanLunJian_CreatTeamList_ListInfo_On_SelectionChanged()
     HuaShanLunJian_CreatTeamList_TeamInfo:Enable()
 end -- end func HuaShanLunJian_CreatTeamList_ListInfo_On_SelectionChanged()
 
--- 战队详情按钮点击事件
+-- 牻队详情按钮点击事件
 function HuaShanLunJian_CreatTeamList_TeamInfo_Clicked()
 	local index = HuaShanLunJian_CreatTeamList_ListInfo:GetSelectItem()
 	if index < 0 then
@@ -118,7 +118,7 @@ function HuaShanLunJian_CreatTeamList_GotoPageClicked()
 	NewXBW:AskTeamListInfo(HuaShanLunJian_CreateTeamList_TargetSvrId, pageNum-1)
 end -- end func HuaShanLunJian_CreatTeamList_GotoPageClicked()
 
--- 关闭按钮事件
+-- 关睜按钮事件
 function HuaShanLunJian_CreatTeamList_CloseClicked()
     this:Hide()
 	if HuaShanLunJian_CreateTeamList_TargetObjId ~= -1 then
@@ -208,7 +208,7 @@ function HuaShanLunJian_CreatTeamList_Update()
         end
 	end -- end for
 
-	-- 这个字典没给 暂时用争霸赛的
+	-- 犫个字典没给 暂时用狔霸赛的
 	local szpage = ScriptGlobal_Format("#{WCBZ_220809_9}", tostring(HuaShanLunJian_CreateTeamList_CurPage+1), tostring(HuaShanLunJian_CreateTeamList_MaxPage))
 	HuaShanLunJian_CreatTeamList_CurrentlyPage:SetText(szpage)
 

@@ -27,8 +27,8 @@ local g_Color = {}
 local g_MaxColorCount = 20
 local g_CurIndex = -1
 
-local SelectHairColor_CameraHeight = 2		--摄影机高度
-local SelectHairColor_CameraDistance = 2		--摄影机距离
+local SelectHairColor_CameraHeight = 2		--?????
+local SelectHairColor_CameraDistance = 2		--?????
 local g_SelectHairColor_CameraLevel = 0
 local g_SelectHairColor_CameraPosition =
 {
@@ -298,7 +298,7 @@ function SelectHairColor_OnEvent(event)
 	end
 	
 	-- FakeObject模型界面互斥
-	if ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then   --时装预览
+	if ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then   --????
 		if (this:IsVisible()) then
 			this:Hide()
 			return
@@ -556,7 +556,7 @@ function SelectHairColor_Model_OnTurnRight(start)
 	end
 end
 
---颜色条发生改变
+--褷色条发生改变
 function SelectHairColor_SliderChanged()
 	
 	local temp
@@ -586,7 +586,7 @@ function SelectHairColor_SliderChanged()
 	g_ChangeBy = 0
 end
 
---颜色值输入框中数值变化的事件
+--褷色值输入框中数值变化的事件
 function SelectHairColor_ColorText_Change()
 	local temp;
 	
@@ -743,7 +743,7 @@ function SelectHairColor_Lumination_Changed()
 	
 end
 
---亮度改变 限制颜色跟随发生改变
+--亮度改变 限制褷色跟随发生改变
 function SelectHairColor_Restrict_Color(Red, Green, Blue, Alpha, Lumination)
 
 	if Red > 200 then

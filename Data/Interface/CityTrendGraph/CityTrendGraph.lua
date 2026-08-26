@@ -33,14 +33,14 @@ end
 
 function City_Trend_SetCtl()
 	g_MembersCtl =	{
-										CityTrendGraph_Numerical1,		--工业率
-										CityTrendGraph_Numerical4,		--农业率
-										CityTrendGraph_Numerical6,		--商业率
-										CityTrendGraph_Numerical2,		--国防率
-										CityTrendGraph_Numerical5,		--科技率
-										CityTrendGraph_Numerical3,		--扩张率
+										CityTrendGraph_Numerical1,		--???
+										CityTrendGraph_Numerical4,		--???
+										CityTrendGraph_Numerical6,		--???
+										CityTrendGraph_Numerical2,		--???
+										CityTrendGraph_Numerical5,		--???
+										CityTrendGraph_Numerical3,		--???
 										
-										plus = CityTrendGraph_Text14,	--剩余点数
+										plus = CityTrendGraph_Text14,	--????
 										
 										addbtn =	{
 																CityTrendGraph_Addition_Button1,
@@ -79,7 +79,7 @@ function City_Trend_SetBtnState()
 		end
 	end
 	
-	--逐项调整
+	--逐项调狖
 	for k = 1, btnNum do
 		if(tonumber(g_MembersCtl[k]:GetText()) <= 10) then
 			g_MembersCtl.decbtn[k]:Disable();
@@ -172,7 +172,7 @@ function City_Trend_CareEventHandle(careId, op, distance)
 		if(tonumber(careId) ~= g_clientNpcId) then
 			return;
 		end
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(op == "distance" and tonumber(distance)>MAX_OBJ_DISTANCE or op=="destroy") then
 			this:Hide();
 		end

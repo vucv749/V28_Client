@@ -3,12 +3,12 @@
 local g_WeddingRing_Frame_UnifiedPosition = nil 
 
 local g_objCareID	= -1		-- careNpc
-local g_Item_Pos	= -1		-- 锁定道具位置
-local g_Ring_Pos	= -1		-- 戒指锁定位置
-local g_Limit_Lv	= 30		-- 限制等级
+local g_Item_Pos	= -1		-- ??????
+local g_Ring_Pos	= -1		-- ??????
+local g_Limit_Lv	= 30		-- ????
 local g_TargetId	= -1		-- ID
-local g_Cost_Item	= 38002795	-- 消耗道具的ID
-local g_Wedding_ring_list = {	-- 祝福戒指ID集合
+local g_Cost_Item	= 38002795	-- ?????ID
+local g_Wedding_ring_list = {	-- ????ID??
 	10422133,
 	10422134,
 	10422135, 
@@ -54,9 +54,9 @@ function WeddingRing_EffectTransfer_OnEvent(event)
 end
 
 function WeddingRing_EffectTransfer_OnShow(targetId)
-	-- 直接关闭对话框
+	-- 直接关睜对话框
 	PushEvent("UI_COMMAND", 1000)
-	-- 对现有内容进行清空
+	-- 对现有内容进行清繝
 	WeddingRing_EffectTransfer_Clear()
 	-- 关注NPC
 	WeddingRing_EffectTransfer_BeginCareObject(targetId)
@@ -163,7 +163,7 @@ function WeddingRing_EffectTransfer_UpdateItemAction(Idx)
 		if theAction:GetID() ~= 0 then
 			-- 锁定
 			if PlayerPackage:IsLock( Idx ) == 1 then
-				PushDebugMessage("#{HJZY_220520_11}")	--道具已上锁
+				PushDebugMessage("#{HJZY_220520_11}")	--?????
 				return
 			end
 
@@ -201,7 +201,7 @@ function WeddingRing_EffectTransfer_UpdateRingAction(Idx)
 		if theAction:GetID() ~= 0 then
 			-- 锁定
 			if PlayerPackage:IsLock( Idx ) == 1 then
-				PushDebugMessage("#{HJZY_220520_11}")	--道具已上锁
+				PushDebugMessage("#{HJZY_220520_11}")	--?????
 				return
 			end
 
@@ -230,7 +230,7 @@ function WeddingRing_EffectTransfer_UpdateBagAction(Idx)
 	if theAction:GetID() ~= 0 then
 		-- 锁定
 		if PlayerPackage:IsLock( Idx ) == 1 then
-			PushDebugMessage("#{HJZY_220520_11}")	--道具已上锁
+			PushDebugMessage("#{HJZY_220520_11}")	--?????
 			return
 		end
 
@@ -246,7 +246,7 @@ function WeddingRing_EffectTransfer_UpdateBagAction(Idx)
 			return
 		end
 
-		PushDebugMessage("#{HJZY_220520_12}")	--该物品不符合要求
+		PushDebugMessage("#{HJZY_220520_12}")	--????????
 
 		return
 	end

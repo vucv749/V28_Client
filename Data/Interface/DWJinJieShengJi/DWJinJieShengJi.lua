@@ -3,7 +3,7 @@ local MAX_OBJ_DISTANCE = 3.0
 local g_CaredNpc = -1
 local g_ServerObj = -1
 
-local g_DWJinJieShengJi_Item = -1--¿ÉÓÐµñÎÆµÄ×°±¸£¬ÔÚ±³°üÖÐµÄÎ»ÖÃ
+local g_DWJinJieShengJi_Item = -1--???????,???????
 local g_DWJinJieShengJi_GRID_SKIP = 182 --	G183 todo
 local g_DWJinJieShengJi_Frame_UnifiedPosition;
 local g_DWJinJieShengJi_TargetLevel = 0
@@ -75,7 +75,7 @@ function DWJinJieShengJi_OnEvent(event)
 		BeginCareObject_DWJinJieShengJi()
 		DWJinJieShengJi_Clear()
 		DWJinJieShengJi_UpdateBasic()
-		--µ÷Õû½çÃæÎ»ÖÃ
+		--µ÷ û½çÃæÎ»ÖÃ
 		if tostring(arg2) ~= nil then
 			DWJinJieShengJi_Frame:SetProperty("UnifiedPosition", tostring(arg2));
 		end
@@ -144,7 +144,7 @@ function DWJinJieShengJi_Clear()
 
 	DWJinJieShengJi_Type1_name:SetText("#{DWSJ_141202_51}")
 	DWJinJieShengJi_Type1_Level:ResetList()
-	DWJinJieShengJi_Type1_Level:AddTextItem("#{DWSJ_141202_5}" ,0)--ÉÐÎ´Ñ¡Ôñ
+	DWJinJieShengJi_Type1_Level:AddTextItem("#{DWSJ_141202_5}" ,0)--????
 	DWJinJieShengJi_Type1_Level:SetCurrentSelect(0);
 	DWJinJieShengJi_Type1_Info:SetText("")
 	--°´Å¥ÏÔÊ¾
@@ -155,7 +155,7 @@ end
 -- ¸üÐÂ½çÃæ
 --=========================================================
 function DWJinJieShengJi_Update(itemIndex) 
-	local index = tonumber(itemIndex)--±³°üÎ»ÖÃ
+	local index = tonumber(itemIndex)--????
 	local theAction = EnumAction(index, "packageitem")
 	if theAction:GetID() ~= 0 then
 		--ÊÇ·ñÎªÊ´¿ÌÁËµñÎÆµÄ×°±¸
@@ -181,7 +181,7 @@ function DWJinJieShengJi_Update(itemIndex)
 		-- end
 		--²»¼ì²â¼ÓËø
 
-		-- Èç¹û¿Õ¸ñÄÚÒÑ¾­ÓÐÍ¼ÑùÁË, Ìæ»»Ö®
+		-- Èç¹û¿ ¸ñÄÚÒÑ¾­ÓÐÍ¼ÑùÁË, Ìæ»»Ö®
 		if g_DWJinJieShengJi_Item ~= -1 then
 			LifeAbility:Lock_Packet_Item(g_DWJinJieShengJi_Item, 0)
 		end
@@ -215,11 +215,11 @@ function DWJinJieShengJi_Update(itemIndex)
 			if g_curJinJieLevel<=0 then return end;
 			if g_curJinJieLevel==maxjinjieLevel then
 				DWJinJieShengJi_Type1_Level:ResetList()
-				DWJinJieShengJi_Type1_Level:AddTextItem("ÒÑÂú¼¶" ,0)--µñÎÆÒÑÂú¼¶
+				DWJinJieShengJi_Type1_Level:AddTextItem("Dî Mãn C¤p" ,0)--?????
 				DWJinJieShengJi_Type1_Level:SetCurrentSelect(0);
 			else
 				DWJinJieShengJi_Type1_Level:ResetList()
-				DWJinJieShengJi_Type1_Level:AddTextItem("#{DWJJ_240329_164}" ,0)--ÉÐÎ´Ñ¡Ôñ
+				DWJinJieShengJi_Type1_Level:AddTextItem("#{DWJJ_240329_164}" ,0)--????
 				local idx = 1
 				for i=g_curJinJieLevel+1,g_curJinJieLevel+10 do
 					if i <= maxjinjieLevel and i <= maxcandolevel then
@@ -374,7 +374,7 @@ end
 
 
 --=========================================================
--- ¹Ø±Õ½çÃæ
+-- ¹Ø± ½çÃæ
 --=========================================================
 function DWJinJieShengJi_Close()
 	this:Hide()
@@ -392,7 +392,7 @@ end
 
 --=========================================================
 -- ¿ªÊ¼¹ØÐÄNPC£¬
--- ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
+-- ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
 -- Èç¹ûÓÐµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓÐµÄ¡°¹ØÐÄ¡±
 --=========================================================
 function BeginCareObject_DWJinJieShengJi()

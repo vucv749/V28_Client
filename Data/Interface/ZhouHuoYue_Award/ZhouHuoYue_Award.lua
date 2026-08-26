@@ -13,13 +13,13 @@ local g_ZhouHuoYue_Award_disable
 
 ---------------------累积奖励---------------------
 --0、MD
-local g_ZhouHuoYue_Award_MD1 = 894 --MD_2023_WEEK_ACTIVE_0 --替代
+local g_ZhouHuoYue_Award_MD1 = 894 --MD_2023_WEEK_ACTIVE_0 --??
 --1、进度条
 local g_ZhouHuoYue_Award_ProgressMax = 10
 --2、数值 + 控件
 local g_ZhouHuoYue_Award_Special = {}
 
----------------------每日奖励---------------------
+---------------------每葼奖励---------------------
 --0、MD
 local g_ZhouHuoYue_Award_MD2 = {}
 --1、数值 + 控件
@@ -33,7 +33,7 @@ local g_ZhouHuoYue_Award_Day = {}
 function ZhouHuoYue_Award_PreLoad()
 
 	this:RegisterEvent("UI_COMMAND",true)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
 	this:RegisterEvent("ADJEST_UI_POS",false)
 
@@ -59,13 +59,13 @@ function ZhouHuoYue_Award_OnLoad()
 	g_ZhouHuoYue_Award_Special[3] = {button=ZhouHuoYue_Award_Item_3, image=ZhouHuoYue_Award_Item_3OK, animate=ZhouHuoYue_Award_Item_3_Animate, need=8, id=38002519, num=1}
 	g_ZhouHuoYue_Award_Special[4] = {button=ZhouHuoYue_Award_Item_4, image=ZhouHuoYue_Award_Item_4OK, animate=ZhouHuoYue_Award_Item_4_Animate, need=10, id=38002221, num=1}
 	
-	g_ZhouHuoYue_Award_MD2[1]={md=895, } --MD_2023_WEEK_ACTIVE_1 --替代
-	g_ZhouHuoYue_Award_MD2[2]={md=896, } --MD_2023_WEEK_ACTIVE_2 --替代
-	g_ZhouHuoYue_Award_MD2[3]={md=897, } --MD_2023_WEEK_ACTIVE_3 --替代
-	g_ZhouHuoYue_Award_MD2[4]={md=898, } --MD_2023_WEEK_ACTIVE_4 --替代
-	g_ZhouHuoYue_Award_MD2[5]={md=899, } --MD_2023_WEEK_ACTIVE_5 --替代
-	g_ZhouHuoYue_Award_MD2[6]={md=900, } --MD_2023_WEEK_ACTIVE_6 --替代
-	g_ZhouHuoYue_Award_MD2[7]={md=901, } --MD_2023_WEEK_ACTIVE_7 --替代
+	g_ZhouHuoYue_Award_MD2[1]={md=895, } --MD_2023_WEEK_ACTIVE_1 --??
+	g_ZhouHuoYue_Award_MD2[2]={md=896, } --MD_2023_WEEK_ACTIVE_2 --??
+	g_ZhouHuoYue_Award_MD2[3]={md=897, } --MD_2023_WEEK_ACTIVE_3 --??
+	g_ZhouHuoYue_Award_MD2[4]={md=898, } --MD_2023_WEEK_ACTIVE_4 --??
+	g_ZhouHuoYue_Award_MD2[5]={md=899, } --MD_2023_WEEK_ACTIVE_5 --??
+	g_ZhouHuoYue_Award_MD2[6]={md=900, } --MD_2023_WEEK_ACTIVE_6 --??
+	g_ZhouHuoYue_Award_MD2[7]={md=901, } --MD_2023_WEEK_ACTIVE_7 --??
 	
 	g_ZhouHuoYue_Award_Day[1] = {	[1] = {need=200, id=30502002, num=3, button=ZhouHuoYue_AwardIcon1, image=ZhouHuoYue_AwardIcon1_OK, animate=ZhouHuoYue_AwardIcon1_Animate, disableImage=ZhouHuoYue_AwardIcon1_Disable},
 			[2] = {need=400, id=20310168, num=5, button=ZhouHuoYue_AwardIcon2, image=ZhouHuoYue_AwardIcon2_OK, animate=ZhouHuoYue_AwardIcon2_Animate, disableImage=ZhouHuoYue_AwardIcon2_Disable},}
@@ -100,7 +100,7 @@ function ZhouHuoYue_Award_OnEvent(event)
 		-- end
 	elseif event == "UI_COMMAND" and tonumber(arg0) == 99826301 then
 		local nOperate = Get_XParam_INT(0)
-		 --关闭
+		 --关睜
 		if nOperate == 0 then
 			this:Hide()
 			return
@@ -207,10 +207,10 @@ function ZhouHuoYue_Award_UpdateUI()
 	end
 			
 	---------------
-	--2、每日奖励
+	--2、每葼奖励
 	---------------
-	local nDayActivePoint = {} --每日活跃值
-	local nDayPrizeState = {} --每日奖励是否领取
+	local nDayActivePoint = {} --?????
+	local nDayPrizeState = {} --????????
 	for i=1, table.getn(g_ZhouHuoYue_Award_MD2) do 
 		local temp = DataPool:LuaFnGetMD(g_ZhouHuoYue_Award_MD2[i].md)
 		nDayActivePoint[i] = math.floor(temp/100)
@@ -260,7 +260,7 @@ function ZhouHuoYue_Award_UpdateUI()
 	end	
 	
 	---------------
-	--3、今日活跃值
+	--3、今葼活跃值
 	---------------	
 	ZhouHuoYue_Award_TextNull2:SetText(ScriptGlobal_Format("#{FLFC_230310_12}",g_ZhouHuoYue_Award_CurDayHuoYue))
 	---------------

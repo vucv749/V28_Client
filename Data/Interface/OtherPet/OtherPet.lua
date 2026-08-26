@@ -27,21 +27,21 @@ local PET_FIGHT= 0;
 local PET_CURRENT_SELECT = 0;
 local PET_AITYPE = {};
 local Changed_Name_Flag = 0;
---			// ´´½¨ÕäÊŞ(¼´·Å³ö) 0
---			// ÊÕ»ØÕäÊŞ					1
---			// Ïú»ÙÕäÊŞ(¼´·ÅÉú)	2
---			// ²¶×½ÕäÊŞ					3
---			¿ÉÒÔÔÚ±»·Å³öºó£¬Í¨¹ıÏûÏ¢£¬¸Ä±ä¸ÃÕäÊŞÔÚlistboxÖĞµÄÃû×ÖµÄÑÕÉ«¡£
+--			// ´´½¨ äÊŞ(¼´·Å³ö) 0
+--			// Ê »Ø äÊŞ					1
+--			// Ïú»Ù äÊŞ(¼´·ÅÉú)	2
+--			// ²¶×½ äÊŞ					3
+--			¿ÉÒÔÔÚ±»·Å³öºó£¬Í¨¹ıÏûÏ¢£¬¸Ä±ä¸Ã äÊŞÔÚlistboxÖĞµÄÃû×ÖµÄÑ É«¡£
 local PET_TAB_TEXT = {};
 local PET_ORIGINAL_NAME = "";
 
 ------------------------------------------------------
---ÕäÊŞ×°±¸°´Å¥Êı¾İ¶¨Òå zchw
-local g_Pet_Head; 		--Í·
-local g_Pet_Claw;			--×¦
-local g_Pet_Body; 		--Çû¸É
-local g_Pet_Neck;			--ÏîÈ¦
-local g_Pet_Charm;		--»¤·û
+-- äÊŞ×°±¸°´Å¥Êı¾İ¶¨Òå zchw
+local g_Pet_Head; 		--?
+local g_Pet_Claw;			--?
+local g_Pet_Body; 		--??
+local g_Pet_Neck;			--??
+local g_Pet_Charm;		--??
 
 local g_OtherPet_Frame_UnifiedPosition;
 local g_PetEquipPointNum = 6
@@ -83,19 +83,19 @@ function OtherPet_OnLoad()
 	PETSKILL_BUTTONS[11] = OtherPet_Skill11;
 	PETSKILL_BUTTONS[12] = OtherPet_Skill12;
 
-	PET_AITYPE[0] = "µ¨Ğ¡";
-	PET_AITYPE[1] = "½÷É÷";
-	PET_AITYPE[2] = "ÖÒ³Ï";
-	PET_AITYPE[3] = "¾«Ã÷";
-	PET_AITYPE[4] = "ÓÂÃÍ";
+	PET_AITYPE[0] = "Nhát gan";
+	PET_AITYPE[1] = "C¦n th§n";
+	PET_AITYPE[2] = "Trung thñc";
+	PET_AITYPE[3] = "Nhanh nh©n";
+	PET_AITYPE[4] = "Dûng mãnh";
 
 	PET_TAB_TEXT = {
-		[0] = "×°±¸",
-		"×ÊÁÏ",
-		"ÕäÊŞ",
+		[0] = "Trang b¸",
+		"Tß li®u",
+		"Trân Thú",
 	};
 	--------------------------
-	-- ÕäÊŞ×°±¸ÓëÈ«¾Ö±äÁ¿¹ØÁª zchw
+	--  äÊŞ×°±¸ÓëÈ«¾Ö±äÁ¿¹ØÁª zchw
 	g_Pet_Head = OtherPetEquip_1;
 	g_Pet_Claw = OtherPetEquip_2;
 	g_Pet_Body = OtherPetEquip_3;
@@ -145,7 +145,7 @@ function OtherPet_OnEvent(event)
 		
 		local obj_id = CachedTarget:GetData("NPCID", 1)
 		if (type(obj_id) ~="number") then
-			PushDebugMessage ("#{JSCK_90507_1}")				-- ¾àÀë¸ÃÍæ¼ÒÌ«Ô¶£¬ÎŞ·¨²é¿´×ÊÁÏ¡£
+			PushDebugMessage ("#{JSCK_90507_1}")				-- ???????,???????
 			return
 		end
 		this:CareObject(obj_id , 1)
@@ -188,7 +188,7 @@ function OtherPet_Page_Clear()
 	OtherPet_OtherPetName:SetText("")
 	OtherPet_Type : SetText("");
 
-	OtherPet_PageHeader : SetText( "#gFF0FA0ÕäÊŞ" );
+	OtherPet_PageHeader : SetText( "#gFF0FA0Trân Thú" );
 	OtherPet_ConsortID : SetText( "" );
 	OtherPet_Model_Protect_Text : SetText( "" );
 	OtherPet_Skin : SetText( "" );
@@ -242,10 +242,10 @@ function OtherPet_Page_Clear()
 	OtherPet_lock : Hide();
 	OtherPet_Jian : Hide();
 
-	--ÉèÖÃÕäÊŞÊıÁ¿ĞÅÏ¢--add by xindefeng
+	--ÉèÖÃ äÊŞÊıÁ¿ĞÅÏ¢--add by xindefeng
 	local nPetCount = Pet:Other_GetPet_Count();
 	local nMaxPetCount = GetOtherCurMaxPetCount();
-	OtherPet_List_Text:SetText("ÕäÊŞÁĞ±í "..nPetCount.."/"..nMaxPetCount);
+	OtherPet_List_Text:SetText("Trân Thú Li®t Bi¬u"..nPetCount.."/"..nMaxPetCount);
 	
 	OtherPet_ClearStateTooltip();
 end
@@ -307,7 +307,7 @@ function OtherPet_Update()
 	for	i=1, PET_MAX_NUMBER do
 		if Pet:Other_IsPresent(i-1) then
 			szPetName = Pet : Other_GetPetList_Appoint(i-1);
-			AxTrace(0,1,"µÚ"..i.."Ö»½Ğ"..szPetName);
+			AxTrace(0,1,"Câu"..i.."Chích Khiªu"..szPetName);
 
 			OtherPet_List : AddItem(szPetName, i-1);
 
@@ -318,7 +318,7 @@ function OtherPet_Update()
 	end
 
 	--yuanfengfeng for tt 50330£¬ÔÚPET_CURRENT_SELECT¶ÔÓ¦µÄ³èÎï²»´æÔÚµÄÇé¿öÏÂ£¬½«PET_CURRENT_SELECTÖÃÎªµÚÒ»¸ö£¬È»ºóÉèÖÃbSelectÎª1
-	--ÄÜ×ßµ½ÕâÀï£¬¿Ï¶¨ÖÁÉÙÓĞÒ»¸ö³èÎï
+	--ÄÜ×ßµ½ âÀï£¬¿Ï¶¨ÖÁÉÙÓĞÒ»¸ö³èÎï
 	if bSelect == 0 then
 		bSelect = 1;
 		PET_CURRENT_SELECT = 0;
@@ -346,7 +346,7 @@ function OtherPet_Update()
 	else
 		strNeedLevelColor="#c00FF00";
 	end
-	strNeedLevel = strNeedLevelColor..tostring( nTakeLevel ).."¼¶#W¿ÉĞ¯´ø";
+	strNeedLevel = strNeedLevelColor..tostring( nTakeLevel ).."C¤p#W Mang theo";
 	OtherPet_NeedLevel:SetText( strNeedLevel );
 		
 end
@@ -410,7 +410,7 @@ function OtherPet_Show_Appoint(nIndex)
 
 	local strAI;
 	if(strName>4 or strName <0) then
-		strAI = "´íÎó";
+		strAI = "Sai l¥m";
 	else
 		strAI =	PET_AITYPE[strName];
 	end
@@ -419,7 +419,7 @@ function OtherPet_Show_Appoint(nIndex)
  	strName,strName2 = Pet:Other_GetName(nIndex);
 	local nEra, strTypeName = Pet:Other_GetPetTypeName(nIndex);
  	if( 1 == nEra ) then
- 	    strName2 = "¶ş´ú"..strTypeName
+ 	    strName2 = "Ğ¶i thÑ 2"..strTypeName
  	end
 
 
@@ -431,14 +431,14 @@ function OtherPet_Show_Appoint(nIndex)
 --	OtherPet_PageHeader : SetText( strAI .. strName2 );
 
 	strName,strName2,sex = Pet : Other_GetID(nIndex);
-	OtherPet_OtherPetID : SetText( "ÕäÊŞID:"..strName2 );
+	OtherPet_OtherPetID : SetText( "Trân Thú ID:"..strName2 );
 	AxTrace(0,0,"GetID="..strName .. strName2);
 
 	strName = Pet : Other_GetConsort(nIndex);
 	if(strName == "00000000") then
 		strName = "";
 	end;
-	OtherPet_ConsortID : SetText( "ÅäÅ¼ID:"..strName );
+	OtherPet_ConsortID : SetText( "Ph¯i ngçu ID:"..strName );
 	
 	if Pet : Other_GetGoodsProtect_Pet(nIndex) == 1 then
 		OtherPet_Model_Protect_Text : SetText( "#{GDWPBH_090507_4}" );
@@ -447,9 +447,9 @@ function OtherPet_Show_Appoint(nIndex)
 	end
 
 	if(sex == 1) then
-		strName = "ĞÛĞÔ";
+		strName = "Gi¯ng ğñc";
 	else
-		strName = "´ÆĞÔ";
+		strName = "Gi¯ng cái";
 	end
 
 	local nGeneration  = Pet : Other_GetGeneration(nIndex)
@@ -467,11 +467,11 @@ function OtherPet_Show_Appoint(nIndex)
 	else
 		strNeedLevelColor="#c00FF00";
 	end
-	strNeedLevel = strNeedLevelColor..tostring( nTakeLevel ).."¼¶#W¿ÉĞ¯´ø";
+	strNeedLevel = strNeedLevelColor..tostring( nTakeLevel ).."C¤p#W Mang theo";
 	OtherPet_NeedLevel:SetText( strNeedLevel );
 	strName = Pet : Other_GetNaturalLife(nIndex);
 --	strName2 = OtherPet:	GetMaxLife(nIndex);
-	OtherPet_Life : SetText( "ÊÙÃü:"..strName );
+	OtherPet_Life : SetText( "S¯ng lâu:"..strName );
 
 --	strName = Pet : Other_GetLoyalgGade(nIndex);
 --	OtherPet_LoyalgGade : SetText( strName );
@@ -480,13 +480,13 @@ function OtherPet_Show_Appoint(nIndex)
 --	OtherPet_GenGu : SetText( "¸ù¹Ç:"..strName );
 
 	strName = Pet : Other_GetLevel(nIndex);
-	OtherPet_Level : SetText( "µÈ¼¶:"..strName );
+	OtherPet_Level : SetText( "C¤p b§c:"..strName );
 
 --	strName = Pet : Other_GetType(nIndex);
 --	OtherPet_Type : SetText( "µÚ".. tostring(strName).."´ú" );
 
 	strName = Pet : Other_GetHappy(nIndex);
-	OtherPet_Happy : SetText( "¿ìÀÖ:"..strName );
+	OtherPet_Happy : SetText( "Khoái LÕc:"..strName );
 
 	strName = Pet : Other_GetLixing(nIndex);
 	OtherPet_Lingxing : SetText("#{RXZS_XML_28}"..strName)
@@ -498,7 +498,7 @@ function OtherPet_Show_Appoint(nIndex)
 	end
 
 	local iSavvy = Pet:Other_GetSavvy(nIndex)
-	OtherPet_WuXing:SetText("ÎòĞÔ:"..tostring(iSavvy))
+	OtherPet_WuXing:SetText("Ngµ tính:"..tostring(iSavvy))
 
 	local iStrAptitude = Pet:Other_GetStrAptitude(nIndex)
 	local iSprAptitude = Pet:Other_GetIntAptitude(nIndex)
@@ -544,11 +544,11 @@ function OtherPet_Show_Appoint(nIndex)
 	end
 
 	strName,strName2 = Pet : Other_GetExp(nIndex);
-	OtherPet_Exp : SetText( "¾­Ñé:"..strName .."/"..strName2);
---yyËµ£¬²»¿Õ¸ñ
+	OtherPet_Exp : SetText( "Kinh nghi®m:"..strName .."/"..strName2);
+--yyËµ£¬²»¿ ¸ñ
 	strName = Pet : Other_GetHP(nIndex);
 	strName2 = Pet:	Other_GetMaxHP(nIndex);
-	OtherPet_Blood : SetText( "Ñª:"..strName .."/".. strName2);
+	OtherPet_Blood : SetText( "Huyªt:"..strName .."/".. strName2);
 --	strName = Pet : Other_GetMP(nIndex);
 --	strName2 = Pet:	Other_GetMaxMP(nIndex);
 --	OtherPet_MP : SetText( strName .." / ".. strName2);
@@ -580,7 +580,7 @@ function OtherPet_Show_Appoint(nIndex)
 --	OtherPet_Stability : SetProperty("TextColours","tl:FFEFEFEF tr:FFEFEFEF bl:FFEFEFEF br:FFEFEFEF");
 
 	strName = Pet : Other_GetBasic(nIndex);
-	OtherPet_GenGu : SetText( "¸ù¹Ç:"..tonumber(strName) );
+	OtherPet_GenGu : SetText( "Cån C¯t:"..tonumber(strName) );
 
 	OtherPet_CriticalAttack : SetText( Pet:Other_GetCriticalAttack(nIndex)  );
 	OtherPet_CriticalDefence : SetText(Pet:Other_GetCriticalDefence(nIndex))
@@ -615,12 +615,12 @@ function OtherPet_Show_Appoint(nIndex)
 
 
 	strName = Pet : Other_GetGrowRate(nIndex);
-	OtherPet_Growth : SetText("#GÎ´Öª")
+	OtherPet_Growth : SetText("#GkHông biªt")
 	local nGrowLevel = Pet : Other_GetPetGrowLevel(nIndex,tonumber(strName));
-	local strTbl = {"ÆÕÍ¨","ÓÅĞã","½Ü³ö","×¿Ô½","ÍêÃÀ"};
+	local strTbl = {"S½ C¤p","Xu¤t S¡c","Ki®t Xu¤t","Trác Vi®t","Toàn MÛ"};
 
 	if(nGrowLevel >= 0) then
-		nGrowLevel = nGrowLevel + 1;	--cÀïÊÇ´Ó0¿ªÊ¼µÄÃ¶¾Ù
+		nGrowLevel = nGrowLevel + 1;	--c???0?????
 		local nGrowRate = Pet : Other_GetGrowRate(nIndex);
 		if(strTbl[nGrowLevel]) then
 			OtherPet_Growth : SetText("#G"..strTbl[nGrowLevel]..nGrowRate)
@@ -660,21 +660,21 @@ function OtherPet_Show_Appoint(nIndex)
 	strName = "";
 	AxTrace(0,1,"food="..food);
 	if(food >= 1000) then
-		strName = strName .. "Èâ";
+		strName = strName .. "Th¸t";
 		food = food - 1000;
 		if food > 0 then
 			strName = strName .. ",";
 		end
 	end
 	if(food >= 100) then
-		strName = strName .. "²İ";
+		strName = strName .. "Thäo";
 		food = food - 100;
 		if food > 0 then
 			strName = strName .. ",";
 		end
 	end
 	if(food >= 10) then
-		strName = strName .. "³æ";
+		strName = strName .. "Sâu";
 		food = food - 10;
 		if food > 0 then
 			strName = strName .. ",";
@@ -682,7 +682,7 @@ function OtherPet_Show_Appoint(nIndex)
 	end
 
 	if(food >= 1) then
-		strName = strName .. "¹È";
+		strName = strName .. "Ngû c¯c";
 	end
 	OtherPetFood_Type : Show();
 	OtherPetFood_Type : SetToolTip( strName );
@@ -696,7 +696,7 @@ end
 
 ----------------------------------------------------------------------------------
 --
--- Ğı×ªÕäÊŞÄ£ĞÍ£¨Ïò×ó)
+-- Ğı×ª äÊŞÄ£ĞÍ£¨Ïò×ó)
 --
 function OtherPet_Modle_TurnLeft(start)
 	--Ïò×óĞı×ª¿ªÊ¼
@@ -710,7 +710,7 @@ end
 
 ----------------------------------------------------------------------------------
 --
---Ğı×ªÕäÊŞÄ£ĞÍ£¨ÏòÓÒ)
+--Ğı×ª äÊŞÄ£ĞÍ£¨ÏòÓÒ)
 --
 function OtherPet_Modle_TurnRight(start)
 	--ÏòÓÒĞı×ª¿ªÊ¼
@@ -821,28 +821,28 @@ function OtherPet_ShowPage()
 end
 
 function OtherPet_CheckPage(idx)
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--ÕäÊŞ
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--ÁéÓñ
+	elseif idx == 5 then--??
 
 		return 1
-	elseif idx == 6 then--Éñ±ø
+	elseif idx == 6 then--??
 	
 		return 1
-	elseif idx == 7 then--µñÎÄ½ø½×
+	elseif idx == 7 then--????
 
 		return 1
-	elseif idx == 8 then--áÛ·å
+	elseif idx == 8 then--??
 	
 		return 1
 
-	elseif idx == 9 then--¸öÈË
+	elseif idx == 9 then--??
 		return 1
 	end
 	return 0
@@ -857,19 +857,19 @@ function OtherPet_OnPageClicked(idx)
 	Variable:SetVariable("TargetPageNumber", tostring(idx), 1);
 	idx = g_PageOrder[idx]
 
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		OtherPet_TargetEquip_Down()
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		OtherPet_TargetData_Down()
-	elseif idx == 3 then--ÕäÊŞ
+	elseif idx == 3 then--??
 		OtherPet_ClearPage()
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		OtherPet_TargetWuhun_Switch()
-	elseif idx == 5 then--ÁéÓñ
+	elseif idx == 5 then--??
 		OtherPet_TargetLingyu_Switch()
-	elseif idx == 6 then--Éñ±ø
+	elseif idx == 6 then--??
 		OtherPet_ShenBing_Switch()
-	elseif idx == 7 then--µñÎÄ½ø½×
+	elseif idx == 7 then--????
 		OtherPet_DWJinJie_Switch()
 
 	elseif idx == 8 then
@@ -955,15 +955,15 @@ end
 
 --»ñÈ¡Íæ¼Òµ±Ç°µÈ¼¶×î´óĞ¯´øÊıÁ¿ --add by xindefeng
 function GetOtherCurMaxPetCount()
-	local mylevel = CachedTarget:GetData("LEVEL") --»ñÈ¡Íæ¼ÒµÈ¼¶
+	local mylevel = CachedTarget:GetData("LEVEL") --??????
 	if mylevel == nil or type(mylevel) ~= "number" then
 		return 2;
 	end
-	local MaxCount = 0	--Ğ¯´øÉÏÏŞ
+	local MaxCount = 0	--????
 
 	--¸ù¾İµÈ¼¶»ñÈ¡³£¹æĞ¯´øÉÏÏŞ
 	if mylevel < 21 then
-		MaxCount = 2	--Ò»¿ªÊ¼¾ÍĞ¯´øÉÏÏŞ¾ÍÊÇ2
+		MaxCount = 2	--??????????2
 	elseif mylevel < 41 then
 		MaxCount = 3
 	elseif mylevel < 61 then
@@ -1049,10 +1049,10 @@ function OtherPet_SetStateTooltip( nIndex )
 	end
 
 
-	OtherPet_IceFastness:SetToolTip("±ù¹¥:"..tostring(iIceAttack).."#r±ù¿¹:"..tostring(iIceDefine).."#r¼õ±ù¿¹:"..tostring(iIceResistOther) );
-	OtherPet_FireFastness:SetToolTip("»ğ¹¥:"..tostring(iFireAttack).."#r»ğ¿¹:"..tostring(iFireDefine).."#r¼õ»ğ¿¹:"..tostring(iFireResistOther) );
-	OtherPet_ThunderFastness:SetToolTip("Ğş¹¥:"..tostring(iThunderAttack).."#rĞş¿¹:"..tostring(iThunderDefine).."#r¼õĞş¿¹:"..tostring(iThunderResistOther) );
-	OtherPet_PoisonFastness:SetToolTip("¶¾¹¥:"..tostring(iPoisonAttack).."#r¶¾¿¹:"..tostring(iPoisonDefine).."#r¼õ¶¾¿¹:"..tostring(iPoisonResistOther) );
+	OtherPet_IceFastness:SetToolTip("Bång công:"..tostring(iIceAttack).."#rBång Kháng:"..tostring(iIceDefine).."#rGiäm Bång Kháng:"..tostring(iIceResistOther) );
+	OtherPet_FireFastness:SetToolTip("Höa công:"..tostring(iFireAttack).."#rHoä Kháng:"..tostring(iFireDefine).."#rGiäm Hoä Kháng:"..tostring(iFireResistOther) );
+	OtherPet_ThunderFastness:SetToolTip("Huy«n công:"..tostring(iThunderAttack).."#rHuy«n Kháng:"..tostring(iThunderDefine).."#rGiäm Huy«n Kháng:"..tostring(iThunderResistOther) );
+	OtherPet_PoisonFastness:SetToolTip("Ğµc công:"..tostring(iPoisonAttack).."#rĞµc Kháng:"..tostring(iPoisonDefine).."#rGiäm Ğµc Kháng:"..tostring(iPoisonResistOther) );
 
 end
 
@@ -1074,10 +1074,10 @@ function OtherPet_ClearStateTooltip()
 	local iThunderResistOther	= 0;
 	local iPoisonResistOther	= 0;
 
-	OtherPet_IceFastness:SetToolTip("±ù¹¥:"..tostring(iIceAttack).."#r±ù¿¹:"..tostring(iIceDefine).."#r¼õ±ù¿¹:"..tostring(iIceResistOther) );
-	OtherPet_FireFastness:SetToolTip("»ğ¹¥:"..tostring(iFireAttack).."#r»ğ¿¹:"..tostring(iFireDefine).."#r¼õ»ğ¿¹:"..tostring(iFireResistOther) );
-	OtherPet_ThunderFastness:SetToolTip("Ğş¹¥:"..tostring(iThunderAttack).."#rĞş¿¹:"..tostring(iThunderDefine).."#r¼õĞş¿¹:"..tostring(iThunderResistOther) );
-	OtherPet_PoisonFastness:SetToolTip("¶¾¹¥:"..tostring(iPoisonAttack).."#r¶¾¿¹:"..tostring(iPoisonDefine).."#r¼õ¶¾¿¹:"..tostring(iPoisonResistOther) );
+	OtherPet_IceFastness:SetToolTip("Bång công:"..tostring(iIceAttack).."#rBång Kháng:"..tostring(iIceDefine).."#rGiäm Bång Kháng:"..tostring(iIceResistOther) );
+	OtherPet_FireFastness:SetToolTip("Höa công:"..tostring(iFireAttack).."#rHoä Kháng:"..tostring(iFireDefine).."#rGiäm Hoä Kháng:"..tostring(iFireResistOther) );
+	OtherPet_ThunderFastness:SetToolTip("Huy«n công:"..tostring(iThunderAttack).."#rHuy«n Kháng:"..tostring(iThunderDefine).."#rGiäm Huy«n Kháng:"..tostring(iThunderResistOther) );
+	OtherPet_PoisonFastness:SetToolTip("Ğµc công:"..tostring(iPoisonAttack).."#rĞµc Kháng:"..tostring(iPoisonDefine).."#rGiäm Ğµc Kháng:"..tostring(iPoisonResistOther) );
 
 end
 

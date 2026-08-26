@@ -62,7 +62,7 @@ function PetAgname_OnEvent(event)
 end
 
 function PetAgname_UpdateFrame()
-	--清空
+	--清繝
 	PetAgname_Listbox:ClearListBox();
 
 	--加入所有称号名

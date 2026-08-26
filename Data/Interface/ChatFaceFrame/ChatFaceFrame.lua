@@ -3,7 +3,7 @@ local g_AllNewAnimate = {};
 local g_AllPageTab = {}
 local g_curPage = 1
 
-local g_chatfaceframe_speciallist = {	-- 涉及敏感字号的表情需要特殊处理，换成新ID
+local g_chatfaceframe_speciallist = {	-- ???????????????,???ID
 	[54] = 801,
 	[64] = 802,
 	[69] = 803,

@@ -1,4 +1,4 @@
---帮派战争界面
+--帮派牻狔界面
 local g_ConfraternityWar_Frame_UnifiedPosition;
 
 function ConfraternityWar_PreLoad()

@@ -3,8 +3,8 @@ local g_MembersCtl = {};
 local g_clientNpcId = -1;
 local MAX_OBJ_DISTANCE = 3.0;
 
-local g_CurPage = 1;			--µ±Ç°ÔÚµÚ¼¸Ò³
-local g_SelActBtn = -1;		--µ±Ç°Ñ¡ÖÐµÄbtn
+local g_CurPage = 1;			--??????
+local g_SelActBtn = -1;		--?????btn
 
 function Research_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
@@ -57,7 +57,7 @@ function City_Research_CareEventHandle(careId, op, distance)
 		if(tonumber(careId) ~= g_clientNpcId) then
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(op == "distance" and tonumber(distance)>MAX_OBJ_DISTANCE or op=="destroy") then
 			this:Hide();
 		end
@@ -67,20 +67,20 @@ function City_Research_SetCtl()
 	g_MembersCtl =	{
 										--Left
 										guildname = 		{txt = "",							ctl = Research_Text1},
-										mainbuilding = 	{txt = "µÈ¼¶:",				ctl = Research_Text2},
+										mainbuilding = 	{txt = "C¤p b§c:",				ctl = Research_Text2},
 										
-										guildmoney = 		{txt = "°ï»á×Ê½ð:",		ctl = Research_Text3},
+										guildmoney = 		{txt = "Bang hµi tài chính:",		ctl = Research_Text3},
 										degree = {
-																		{txt = "¹¤ÒµÖµ:",			ctl = Research_Text4},
-																		{txt = "Å©ÒµÖµ:",			ctl = Research_Text5},
-																		{txt = "ÉÌÒµÖµ:",			ctl = Research_Text6},
-																		{txt = "¹ú·ÀÖµ:",			ctl = Research_Text7},
-																		{txt = "¿Æ¼¼Öµ:",			ctl = Research_Text8},
-																		{txt = "À©ÕÅÖµ:",			ctl = Research_Text9},
+																		{txt = "Công nghi®p Tr¸:",			ctl = Research_Text4},
+																		{txt = "Nông nghi®p Tr¸:",			ctl = Research_Text5},
+																		{txt = "Buôn bán Tr¸:",			ctl = Research_Text6},
+																		{txt = "Qu¯c phòng Tr¸:",			ctl = Research_Text7},
+																		{txt = "Khoa h÷c kÛ thu§t Tr¸:",			ctl = Research_Text8},
+																		{txt = "Khuªch trß½ng Tr¸:",			ctl = Research_Text9},
 														 },
 										
-										curitem = 			{txt = "Åä·½:",				ctl = Research_Text10},
-										progress = 			{txt = "ÑÐ¾¿½ø¶È:",		ctl = Research_Text11},
+										curitem = 			{txt = "Ph¯i phß½ng:",				ctl = Research_Text10},
+										progress = 			{txt = "Nghiên cÑu tiªn ðµ:",		ctl = Research_Text11},
 										
 										--Right
 										list = Research_List,
@@ -94,10 +94,10 @@ function City_Research_SetCtl()
 										down = Research_DownPage,
 										
 										--RightBottom   
-										needmsg = 			{txt = "Åä·½:",		ctl = Research_Text12},
-										needmoney = 		{txt = "×Ê½ð:",		ctl = Research_Text13},
+										needmsg = 			{txt = "Ph¯i phß½ng:",		ctl = Research_Text12},
+										needmoney = 		{txt = "Tài chính:",		ctl = Research_Text13},
 										needval = 			{txt = "",					ctl = Research_Text14},
-										needmission =  	{txt = "ÈÎÎñ:",		ctl = Research_Text15},
+										needmission =  	{txt = "Nhi®m vø:",		ctl = Research_Text15},
 									};
 end
 
@@ -179,7 +179,7 @@ function City_Research_Update()
 	local listidx = 0;
 	while i < table.getn(bdList) do
 		if(0 > City_Research_Is_Hide_Idx(i)) then
-			txt = tostring(bdList[i+1]).."ÑÐ¾¿¡¡";
+			txt = tostring(bdList[i+1]).."Nghiên cÑu";
 			g_MembersCtl.list:AddItem(txt, listidx);
 			g_MembersCtl.list:SetItemUserData(listidx, i);
 			listidx = listidx + 1;
@@ -311,10 +311,10 @@ function City_Research_Act_Clicked(id)
 	local name,desc = City:GetResearchInfo("ResearchName", lidx, (g_CurPage-1)*4+(tonumber(id)));
 	local txt = g_MembersCtl.needmsg.txt.."#c00ccff"..name;
 	if("False" == ctl:GetProperty("Gloom")) then
-		txt = txt.."¡¡";--..desc;
+		txt = txt.." ";--..desc;
 		g_MembersCtl.needmsg.ctl:SetText(txt);
 	else
-		txt = txt.."#R(ÒÑÍê³É)#n¡¡";--..desc;
+		txt = txt.."#R(Dî hoàn thành)#n";--..desc;
 		g_MembersCtl.needmsg.ctl:SetText(txt);
 	end
 	--ÑÐ¾¿Ìõ¼þ
@@ -332,7 +332,7 @@ function City_Research_Act_Clicked(id)
 	--1.ÏûºÄÖµ
 	local nt,nv = cd[3], cd[4];
 	txt = g_MembersCtl.needval.txt..tostring(City_Research_GetNeedTxt(nt));
-	txt = txt.."£º#cFF0000"..tostring(nv);
+	txt = txt..": #cFF0000"..tostring(nv);
 	g_MembersCtl.needval.ctl:SetText(txt);
 	--2.ÈÎÎñÊý
 	local mn = cd[2];
@@ -342,17 +342,17 @@ end
 
 function City_Research_GetNeedTxt(nt)
 	if( tonumber(nt) == 0 ) then
-		return "¹¤ÒµÖµ";
+		return "Công nghi®p Tr¸";
 	elseif( tonumber(nt) == 1 ) then
-		return "Å©ÒµÖµ";
+		return "Nông nghi®p Tr¸";
 	elseif( tonumber(nt) == 2 ) then
-		return "ÉÌÒµÖµ";
+		return "Buôn bán Tr¸";
 	elseif( tonumber(nt) == 3 ) then
-		return "¹ú·ÀÖµ";
+		return "Qu¯c phòng Tr¸";
 	elseif( tonumber(nt) == 4 ) then
-		return "¿Æ¼¼Öµ";
+		return "Khoa h÷c kÛ thu§t Tr¸";
 	elseif( tonumber(nt) == 5 ) then
-		return "À©ÕÅÖµ";
+		return "Khuªch trß½ng Tr¸";
 	else
 		return "";
 	end
@@ -373,10 +373,10 @@ function City_Research_NextPage(dir)
 		return;
 	end
 	
-	if(g_CurPage == 1 and dir < 0) then return; end --ÒÑ¾­ÊÇµÚÒ»Ò³
+	if(g_CurPage == 1 and dir < 0) then return; end --??????
 	local newPage = g_CurPage+dir;
 	local newAction = (City:EnumResearch(lidx, (newPage-1)*4+1));
-	if(newAction:GetID() == 0) then return; end --ÐÂÒ³µÄµÚÒ»¸öÎ»ÖÃÉÏ¾ÍÃ»ÓÐÑÐ¾¿ÏîÄ¿
+	if(newAction:GetID() == 0) then return; end --????????????????
 	
 	g_CurPage = newPage;	
 	local i = 1;

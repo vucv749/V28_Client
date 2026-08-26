@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>
+﻿<?xml version="1.0" ?>
 <GUILayout>
 	<Window Type="TLBB_MainFrame1" Name="GameTools6_Frame">
 		<Property Name="UnifiedPosition" Value="{{1.0,-300.000000},{1.0,-680.000000}"/>
@@ -12,7 +12,7 @@
 			<Property Name="Font" Value="YouYuan11.25"/>
 			<Property Name="HorzFormatting" Value="HorzCentred"/>
 			<Property Name="VertFormatting" Value="VertCentred"/>
-			<Property Name="Text" Value="#gFF0FA0游戏管理员工具"/>
+			<Property Name="Text" Value="#gFF0FA0trò chơi quản lý công nhân Cụ"/>
 		</Window>
 		<Window Type="TLBB_ButtonHelp" Name="GameTools6_Help">
 			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
@@ -34,7 +34,7 @@
 					<Property Name="UnifiedSize" Value="{{0.9,0.0},{0.0,20.0}"/>
 					<Property Name="HorzFormatting" Value="HorzCentred"/>
 					<Property Name="VertFormatting" Value="VertCentred"/>
-					<Property Name="Text" Value="目标：一二三四五六|FFFFFFFF(重要)"/>
+					<Property Name="Text" Value="Mục tiêu: Một phần Tam Tứ Ngũ Lục |FFFFFFFF(trọng yếu)"/>
 					<Property Name="RiseOnClick" Value="False"/>
 				</Window>
 			</Window>
@@ -47,7 +47,7 @@
 				<Property Name="UnifiedPosition" Value="{{0.0,20.0},{0.0,26.0}"/>
 				<Property Name="UnifiedSize" Value="{{0.25,-14.0},{0.0,20.0}"/>
 				<Property Name="HorzFormatting" Value="HorzCentred"/>
-				<Property Name="Text" Value="#W&lt;&lt;#B自己   "/>
+				<Property Name="Text" Value="#W&amp;Lt; &amp;lt; #Bchính mình"/>
 				<Property Name="RiseOnClick" Value="False"/>
 			</Window>
 			<Window Type="TLBB_ButtonCheck" Name="GameTools6_SelectTar">
@@ -59,7 +59,7 @@
 				<Property Name="UnifiedPosition" Value="{{0.25,20.0},{0.0,26.0}"/>
 				<Property Name="UnifiedSize" Value="{{0.25,-14.0},{0.0,20.0}"/>
 				<Property Name="HorzFormatting" Value="HorzCentred"/>
-				<Property Name="Text" Value="#W&lt;&lt;#B他人   "/>
+				<Property Name="Text" Value="#W&amp;Lt; &amp;lt; #Bngười khác"/>
 				<Property Name="RiseOnClick" Value="False"/>
 			</Window>
 			<Window Type="TLBB_ButtonCheck" Name="GameTools6_SelectAll">
@@ -71,7 +71,7 @@
 				<Property Name="UnifiedPosition" Value="{{0.5,20.0},{0.0,26.0}"/>
 				<Property Name="UnifiedSize" Value="{{0.25,-14.0},{0.0,20.0}"/>
 				<Property Name="HorzFormatting" Value="HorzCentred"/>
-				<Property Name="Text" Value="#W&lt;&lt;#B多人   "/>
+				<Property Name="Text" Value="#W&amp;Lt; &amp;lt; #Bnhiều người"/>
 				<Property Name="RiseOnClick" Value="False"/>
 			</Window>
 			<Window Type="TLBB_ButtonCheck" Name="GameTools6_SelectShowServer">
@@ -91,14 +91,14 @@
 				<Property Name="UnifiedSize" Value="{{1.0,0.0},{0.0,20.0}"/>
 				<Property Name="HorzFormatting" Value="HorzCentred"/>
 				<Property Name="VertFormatting" Value="VertCentred"/>
-				<Property Name="Text" Value="#R【项目↓↓选择】"/>
+				<Property Name="Text" Value="#R【 hạng mục ↓↓lựa chọn】"/>
 				<Property Name="RiseOnClick" Value="False"/>
 				<!-- <Property Name="TextColor" Value="FFFFF263" /> -->
 			</Window>
 			<Window Type="TLBB_ComboList" Name="GameTools6_SelectBox">
 				<Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,70.000000}}"/>
 				<Property Name="UnifiedSize" Value="{{1.0,0.0},{0.0,20.0}"/>
-				<Property Name="Text" Value="选择将要操作的项目"/>
+				<Property Name="Text" Value="Lựa chọn sắp sửa thao tác Đích hạng mục"/>
 				<Property Name="AlwaysOnTop" Value="True"/>
 				<Event Name="ListSelectionAccepted" Function="GameTools6_SelectBox_Clicked()"/>
 			</Window>
@@ -107,7 +107,7 @@
 				<Property Name="UnifiedSize" Value="{{1.0,0.0},{0.0,20.0}"/>
 				<Property Name="HorzFormatting" Value="HorzCentred"/>
 				<Property Name="VertFormatting" Value="VertCentred"/>
-				<Property Name="Text" Value="#R【项目参数↓↓需求输入】"/>
+				<Property Name="Text" Value="#R【 hạng mục tham số ↓↓nhu cầu đưa vào】"/>
 				<Property Name="RiseOnClick" Value="False"/>
 				<!-- <Property Name="TextColor" Value="FFFFF263" /> -->
 			</Window>
@@ -172,7 +172,7 @@
 			<Window Type="TLBB_ButtonCommon" Name="GameTools6_AddTar">
 				<Property Name="UnifiedSize" Value="{{1.0,0.0},{0.0,20.0}}"/>
 				<Property Name="UnifiedPosition" Value="{{0.0,0.0},{0.0,170.0}}"/>
-				<Property Name="Text" Value="添加目标#G(操作他人需添加目标后方可操作项目)"/>
+				<Property Name="Text" Value="Tăng thêm mục tiêu#G(Thao tác người khác Nhu tăng thêm mục tiêu phía sau Khả thao tác hạng mục)"/>
 				<Event Name="Clicked" Function="GameTools6_AddTar_Clicked();"/>
 			</Window>
 			<Window Type="TLBB_Frame_Lace1" Name="GameTools6_CallBk">
@@ -221,7 +221,7 @@
 				<Property Name="UnifiedSize" Value="{{1.0,0.0},{0.0,20.0}"/>
 				<Property Name="HorzFormatting" Value="HorzCentred"/>
 				<Property Name="VertFormatting" Value="VertCentred"/>
-				<Property Name="Text" Value="#R【项目提示↓或↓操作结果】"/>
+				<Property Name="Text" Value="#R【 hạng mục nêu lên ↓Hoặc ↓thao tác kết quả】"/>
 				<Property Name="RiseOnClick" Value="False"/>
 				<!-- <Property Name="TextColor" Value="FFFFF263" /> -->
 			</Window>
@@ -244,7 +244,7 @@
 					<Property Name="UnifiedPosition" Value="{{0,10},{0,0}"/>
 					<Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,20.000000}"/>
 					<Property Name="HorzFormatting" Value="RightAligned"/>
-					<Property Name="Text" Value="【物品"/>
+					<Property Name="Text" Value="【 vật phẩm"/>
 					<Property Name="TextColor" Value="FFFFF263"/>
 					<Property Name="VertFormatting" Value="VertCentred"/>
 					<Property Name="RiseOnClick" Value="False"/>
@@ -253,7 +253,7 @@
 					<Property Name="UnifiedPosition" Value="{{0,65},{0,0}"/>
 					<Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,20.000000}"/>
 					<Property Name="HorzFormatting" Value="LeftAligned"/>
-					<Property Name="Text" Value="搜索】"/>
+					<Property Name="Text" Value="Tìm tòi】"/>
 					<Property Name="TextColor" Value="FFFFF263"/>
 					<Property Name="VertFormatting" Value="VertCentred"/>
 					<Property Name="RiseOnClick" Value="False"/>
@@ -264,7 +264,7 @@
 					<Property Name="NormalImage" Value="set:Button4 image:BtnQ_Normal"/>
 					<Property Name="HoverImage" Value="set:Button4 image:BtnQ_Hover"/>
 					<Property Name="PushedImage" Value="set:Button4 image:BtnQ_Pushed"/>
-					<Property Name="Tooltip" Value="物品搜索"/>
+					<Property Name="Tooltip" Value="Vật phẩm tìm tòi"/>
 					<Property Name="AlwaysOnTop" Value="True"/>
 					<Event Name="Clicked" Function="GameTools6_Loadini_Clicked();"/>
 				</Window>
@@ -272,7 +272,7 @@
 			<Window Type="TLBB_ButtonCommon" Name="GameTools6_Use">
 				<Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-20.000000}"/>
 				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000"/>
-				<Property Name="Text" Value="#G确定"/>
+				<Property Name="Text" Value="#GxÁc định"/>
 				<Event Name="Clicked" Function="GameTools6_Use_Clicked();"/>
 			</Window>
 			<Window Type="TLBB_Animate" Name="GameTools6_Animate">
@@ -289,7 +289,7 @@
 			<Window Type="TLBB_ButtonCommon" Name="GameTools6_Cancel_Button">
 				<Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-20.000000}"/>
 				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000"/>
-				<Property Name="Text" Value="#cFF0000取消"/>
+				<Property Name="Text" Value="#cFF0000hủy bỏ"/>
 				<Event Name="Clicked" Function="this:Hide();"/>
 			</Window>
 		</Window>
@@ -302,7 +302,7 @@
 				<Property Name="UnifiedPosition" Value="{{0.0,0.0},{0.5,-15.0}"/>
 				<Property Name="UnifiedSize" Value="{{1.0,0.0},{0.0,30.0}"/>
 				<Property Name="HorzFormatting" Value="HorzCentred"/>
-				<Property Name="Text" Value="[操作冷却时间]"/>
+				<Property Name="Text" Value="[thao tác thời gian phục hồi]"/>
 				<Property Name="TextColor" Value="FFCC99FF"/>
 				<Property Name="VertFormatting" Value="VertCentred"/>
 				<Property Name="RiseOnClick" Value="False"/>

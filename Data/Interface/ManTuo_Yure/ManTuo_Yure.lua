@@ -35,19 +35,19 @@ local g_hMissionReward		= {}
 
 local g_tableAutoRunInfo	= 
 {
-	[1] = { nClientSceneID = 1, nPosX = 194, nPosZ = 132, 	strNPCName = "Õı∫Õ¡Â", },
-	[2] = { nClientSceneID = 1, nPosX = 194, nPosZ = 132, 	strNPCName = "Õı∫Õ¡Â", },
-	[3] = { nClientSceneID = 1, nPosX = 194, nPosZ = 132, 	strNPCName = "Õı∫Õ¡Â", },
+	[1] = { nClientSceneID = 1, nPosX = 194, nPosZ = 132, 	strNPCName = "VﬂΩng Ho‡ Linh", },
+	[2] = { nClientSceneID = 1, nPosX = 194, nPosZ = 132, 	strNPCName = "VﬂΩng Ho‡ Linh", },
+	[3] = { nClientSceneID = 1, nPosX = 194, nPosZ = 132, 	strNPCName = "VﬂΩng Ho‡ Linh", },
 }
 
--- 10‘¬13»’	≤∆∏ªÕ®±¶*20	38002625	
--- 10‘¬14»’	Ω≤œÀø*25	20310168	≤ƒ¡œ¿∏
--- 10‘¬15»’	…Ò ﬁªÍ”Ò¿Ò∫–	38002675	
--- 10‘¬16»’	∫Á“´ Ø*5	30503140	
--- 10‘¬17»’	æß Ø3º∂¿Ò∫–*2	38002221	
--- 10‘¬18»’	ªƒ ﬁªÍ”Ò¿Ò∫–*2	38002676	
--- 10‘¬19»’	3º∂∫Ï±¶ Ø*2		
--- 10‘¬20»’		50313004	≤ƒ¡œ¿∏
+-- 10‘¬13»†	≤∆∏ªÕ®±¶*20	38002625	
+-- 10‘¬14»†	Ω≤œÀø*25	20310168	≤ƒ¡œ¿∏
+-- 10‘¬15»†	…Ò ﬁªÍ”Ò¿Ò∫–	38002675	
+-- 10‘¬16»†	∫Á“´ Ø*5	30503140	
+-- 10‘¬17»†	æß Ø3º∂¿Ò∫–*2	38002221	
+-- 10‘¬18»†	ªƒ ﬁªÍ”Ò¿Ò∫–*2	38002676	
+-- 10‘¬19»†	3º∂∫Ï±¶ Ø*2		
+-- 10‘¬20»†		50313004	≤ƒ¡œ¿∏
 local g_tabMissionRewardInfo		= 
 {
 	[1] = {nItemID = 38002625, nItemNum = 20, 	nNeedBagSpace = 1, nNeedMatSpce = 0, },
@@ -119,10 +119,10 @@ end
 --=========================================================
 function ManTuo_Yure_OnEvent(event)
 	if ( event == "UI_COMMAND" and tonumber(arg0) == g_nMainUICommandID ) then
-		-- 0 πÿ±’, 1 ¥Úø™, 2 À¢–¬, 3 ∂˛¥Œ»∑»œøÚ
+		-- 0 πÿ±†, 1 ¥Úø™, 2 À¢–¬, 3 ∂˛¥Œ»∑»œøÚ
 		local nOpType 	= Get_XParam_INT(0)
 
-		-- πÿ±’ΩÁ√Ê
+		-- πÿ±†ΩÁ√Ê
 		if 0 == nOpType then	
 			if this:IsVisible() then
 				ManTuo_Yure_OnClose()
@@ -145,7 +145,7 @@ function ManTuo_Yure_OnEvent(event)
 			end
 
 			-- œ‘ æΩÁ√Ê
-			-- Œ™¡ÀΩ‚æˆΩÁ√Ê±ª’⁄µ≤µƒŒ Ã‚£¨œ»∞—ΩÁ√Êπÿ¡À
+			-- Œ™¡ÀΩ‚æˆΩÁ√Ê±ª†⁄µ≤µƒŒ Ã‚£¨œ»∞—ΩÁ√Êπÿ¡À
 			-- if this:IsVisible() then
 			-- 	ManTuo_Yure_OnClose()
 			-- end
@@ -189,9 +189,9 @@ function ManTuo_Yure_OnEvent(event)
 		if(tonumber(arg0) ~= g_nObjCaredIDClient) then
 			return
 		end
-		-- »Áπ˚∫ÕNPCµƒæ‡¿Î¥Û”⁄“ª∂®æ‡¿ÎªÚ’ﬂ±ª…æ≥˝£¨◊‘∂Øπÿ±’
+		-- »Áπ˚∫ÕNPCµƒæ‡¿Î¥Û”⁄“ª∂®æ‡¿ÎªÚ†ﬂ±ª…æ≥˝£¨◊‘∂Øπÿ±†
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
-			-- πÿ±’ΩÁ√Ê
+			-- πÿ±†ΩÁ√Ê
 			ManTuo_Yure_OnClose()
 		end	
 
@@ -247,7 +247,7 @@ end
 -- !!!reloadscript =ManTuo_Yure
 function ManTuo_Yure_Update(bOpen)
 
-	-- –£—ÈªÓ∂Ø ±º‰ ◊‘∂Øπÿ±’ΩÁ√Ê
+	-- –£—ÈªÓ∂Ø ±º‰ ◊‘∂Øπÿ±†ΩÁ√Ê
 	if (g_nHuoDongStep <= 0 or g_nHuoDongStep > g_nMaxHuoDongStep) and this:IsVisible() then
 		ManTuo_Yure_OnClose()
 	end
@@ -321,7 +321,7 @@ function ManTuo_Yure_Update(bOpen)
 		ManTuo_Yure_Progress_BarBut				: Show()
 	end
 
-	-- »ŒŒÒΩ±¿¯’π æ
+	-- »ŒŒÒΩ±¿¯†π æ
 	for i = 1, table.getn(g_tabMissionRewardInfo) do
 		local tRewardInfo = g_tabMissionRewardInfo[i]
 		if nil == tRewardInfo then
@@ -435,7 +435,7 @@ function ManTuo_Yure_OnHelpClicked()
 end
 
 --=========================================================
--- πÿ±’ΩÁ√Ê
+-- πÿ±†ΩÁ√Ê
 --=========================================================
 function ManTuo_Yure_OnClose()	
 	this:Hide()

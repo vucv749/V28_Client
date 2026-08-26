@@ -6,8 +6,8 @@ local g_BranchingScene  = {}
 --=========
 function Fenxian_PreLoad()
 
-	this:RegisterEvent("UI_COMMAND", true)--打开or刷新界面
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--进场景关闭界面
+	this:RegisterEvent("UI_COMMAND", true)--??or????
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
 	this:RegisterEvent("ADJEST_UI_POS",false)
 	this:RegisterEvent("OPEN_FEN_XIAN",true)
@@ -49,8 +49,8 @@ end
 -- 打开
 --=========
 function Fenxian_Open()
-	Fenxian_DragTitle:SetText("#{DFFX_20240515_5}") --标题
-	Fenxian_Info:SetText("#{DFFX_20240515_7}") --文字
+	Fenxian_DragTitle:SetText("#{DFFX_20240515_5}") --??
+	Fenxian_Info:SetText("#{DFFX_20240515_7}") --??
 
 	local scenename = GetCurrentSceneName()
 	Fenxian_CurrentScene:SetText(ScriptGlobal_Format("#{DFFX_20240515_8}",scenename))

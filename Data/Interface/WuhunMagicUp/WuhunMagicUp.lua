@@ -12,13 +12,13 @@ local m_UIType = 0
 
 local m_Money_COMPOUND = {}
 
-local INDEX_ATTRBOOK_BEGIN	= 30700214	--Óù¡¤ÕÛ±ùÊôĞÔÊé
-local INDEX_ATTRBOOK_END	= 30700229	--±©¡¤°Î¶¾ÊôĞÔÊé
+local INDEX_ATTRBOOK_BEGIN	= 30700214	--?·?????
+local INDEX_ATTRBOOK_END	= 30700229	--?·?????
 
-local INDEX_ADDLIFE = 30700233 --ÑÓÊÙµ¤
+local INDEX_ADDLIFE = 30700233 --???
 
-local INDEX_SLOT_ITEM1 = 20310158 --÷ëÄ¾½£
-local INDEX_SLOT_ITEM2 = 20310159 --ÆÆÌì½£
+local INDEX_SLOT_ITEM1 = 20310158 --???
+local INDEX_SLOT_ITEM2 = 20310159 --???
 
 local needMoney = 0
 
@@ -61,25 +61,25 @@ function WuhunMagicUp_OnEvent(event)
 		m_UIType = Get_XParam_INT(1)
 		
 		if m_UIType == UI_TYPE_ATTR then
-			WuhunMagicUp_Title:SetText("#{WH_xml_XX(22)}")	--À©Õ¹ÊôĞÔÑ§Ï°
+			WuhunMagicUp_Title:SetText("#{WH_xml_XX(22)}")	--??????
 			WuhunMagicUp_Info:SetText("#{WH_xml_XX(23)}")
 			WuhunMagicUp_Info2:SetText("#{WH_xml_XX(24)}")
 			WuhunMagicUp_Info3:SetText("#{WH_xml_XX(25)}")
 		
 		elseif m_UIType == UI_TYPE_COMPOUND then
-			WuhunMagicUp_Title:SetText("#{WH_xml_XX(18)}")	--ºÏ³É
+			WuhunMagicUp_Title:SetText("#{WH_xml_XX(18)}")	--??
 			WuhunMagicUp_Info:SetText("#{WH_xml_XX(19)}")
 			WuhunMagicUp_Info2:SetText("#{WH_xml_XX(20)}")
 			WuhunMagicUp_Info3:SetText("#{WH_xml_XX(21)}")
 		
 		elseif m_UIType == UI_TYPE_LIFE then
-			WuhunMagicUp_Title:SetText("#{WH_xml_XX(42)}")	--Ôö¼ÓÊÙÃü
+			WuhunMagicUp_Title:SetText("#{WH_xml_XX(42)}")	--????
 			WuhunMagicUp_Info:SetText("#{WH_xml_XX(43)}")
 			WuhunMagicUp_Info2:SetText("#{WH_xml_XX(44)}")
 			WuhunMagicUp_Info3:SetText("#{WH_xml_XX(45)}")
 		
 		elseif m_UIType == UI_TYPE_SLOT then
-			WuhunMagicUp_Title:SetText("#{WH_xml_XX(84)}")	--¿ª±ÙÊôĞÔÀ¸
+			WuhunMagicUp_Title:SetText("#{WH_xml_XX(84)}")	--?????
 			WuhunMagicUp_Info:SetText("#{WH_xml_XX(85)}")
 			WuhunMagicUp_Info2:SetText("#{WH_xml_XX(86)}")
 			WuhunMagicUp_Info3:SetText("#{WH_xml_XX(87)}")
@@ -140,7 +140,7 @@ function WuhunMagicUp_Update(itemIdx)
 	if theAction:GetID() ~= 0 then
 		
 		if PlayerPackage:IsBagItemKFS( itemIdx ) ~= 1 then
-			PushDebugMessage("#{WH_090729_13}") -- ´Ë´¦Ö»ÄÜ·ÅÈëÎä»ê¡£
+			PushDebugMessage("#{WH_090729_13}") -- ?????????
 			return
 		end
 		
@@ -150,20 +150,20 @@ function WuhunMagicUp_Update(itemIdx)
 			local sub_lv = PlayerPackage:GetBagKfsData(m_Equip_Item  , "EXTRALEVEL")
 			
 			if  main_lv ~= nil and sub_lv ~= nil and main_lv ~= sub_lv then 
-				PushDebugMessage("#{WH_090729_17}")  --²ÎÓëºÏ³ÉµÄÎä»êÁéÁ¦µÈ¼¶ĞèÒªµÈÓÚÒªÌáÉıÁéÁ¦µÈ¼¶µÄÎä»ê
+				PushDebugMessage("#{WH_090729_17}")  --?????????????????????????
 				return
 			end
 
 			main_lv = PlayerPackage:GetBagKfsData(itemIdx  , "NEEDLEVEL")
 			sub_lv = PlayerPackage:GetBagKfsData(m_Equip_Item  , "NEEDLEVEL")
 			if  main_lv ~= nil and sub_lv ~= nil and main_lv > sub_lv then 
-				PushDebugMessage("#{WH_090729_16}") --²ÎÓëºÏ³ÉµÄÎä»êĞ¯´øµÈ¼¶²»ÄÜĞ¡ÓÚÒªÌáÉıÁéÁ¦µÈ¼¶µÄÎä»ê¡£
+				PushDebugMessage("#{WH_090729_16}") --??????????????????????????
 				return
 			end
 
 			main_lv = PlayerPackage:GetBagKfsData(itemIdx  , "EXTRALEVEL")
 			if main_lv ~= nil and main_lv == 10 then
-				PushDebugMessage("#{WH_090729_14}")  --10¼¶ÁË
+				PushDebugMessage("#{WH_090729_14}")  --10??
 				return
 			end
 		elseif  m_UIType == UI_TYPE_ATTR then
@@ -178,7 +178,7 @@ function WuhunMagicUp_Update(itemIdx)
 					return
 				end
 				
-				PushDebugMessage("#{WH_090729_56}") -- ĞèÒªÓĞ¿ÕÓàµÄÊôĞÔÀ¸£¬²ÅÄÜÑ§Ï°À©Õ¹ÊôĞÔ¡£
+				PushDebugMessage("#{WH_090729_56}") -- ?????????,?????????
 				return
 			end
 		elseif  m_UIType == UI_TYPE_SLOT then
@@ -193,9 +193,9 @@ function WuhunMagicUp_Update(itemIdx)
 					return
 				end
 				if slotNum == 10 then
-					PushDebugMessage("#{WH_090817_13}") -- Îä»êµÄÀ©Õ¹ÊôĞÔÀ¸ÊıÒÑ¾­µ½´ï×î´óÖµ10À¸¡£
+					PushDebugMessage("#{WH_090817_13}") -- ????????????????10??
 				else
-					PushDebugMessage("#{WH_090729_50}") -- ¸ÃÎä»ê²»ÄÜ¿ª±ÙĞÂµÄÊôĞÔÀ¸¡£ÌáÉıÁéÁ¦µÈ¼¶ºó£¬¿ÉÒÔ¿ª±ÙĞÂµÄÊôĞÔÀ¸¡£
+					PushDebugMessage("#{WH_090729_50}") -- ????????????????????,??????????
 				end
 				return
 			end
@@ -226,73 +226,73 @@ function WuhunMagicUp_Update_Sub(itemIdx)
 		if m_UIType == UI_TYPE_ATTR then
 			local itemID = PlayerPackage:GetItemTableIndex(itemIdx)
 			if itemID < INDEX_ATTRBOOK_BEGIN or itemID > INDEX_ATTRBOOK_END then
-				PushDebugMessage("#{WH_090729_20}")  --´Ë´¦Ö»ÄÜ·ÅÈëÎä»êÊôĞÔÊé¡£
+				PushDebugMessage("#{WH_090729_20}")  --????????????
 				return
 			end
 
 			if PlayerPackage:IsLock( itemIdx ) == 1 then
-				PushDebugMessage("#{WH_090729_07}")	--µÀ¾ßÉÏËø¡£
+				PushDebugMessage("#{WH_090729_07}")	--?????
 				return
 			end
 	
 		elseif m_UIType == UI_TYPE_COMPOUND then
 			if PlayerPackage:IsBagItemKFS( itemIdx ) ~= 1 then
-				PushDebugMessage("#{WH_090729_13}")	--´Ë´¦Ö»ÄÜ·ÅÈëÎä»ê¡£
+				PushDebugMessage("#{WH_090729_13}")	--?????????
 				return
 			end
 			
 			if PlayerPackage:IsLock( itemIdx ) == 1 then
-				PushDebugMessage("#{WH_090729_15}")	--±»ÉÏËøµÄÎä»ê²»ÄÜ×÷²ÄÁÏÎä»ê¡£
+				PushDebugMessage("#{WH_090729_15}")	--??????????????
 				return
 			end
 
 			
 			local gem_count = LifeAbility : GetEquip_GemCount( itemIdx )
 			if gem_count ~= nil and gem_count > 0 then
-				PushDebugMessage("#{WH_20090904_01}")	--WH_20090904_01 ÏâÇ¶ÓĞ±¦Ê¯µÄÎä»ê²»ÄÜ×÷ÎªºÏ³É²ÄÁÏ£¡
+				PushDebugMessage("#{WH_20090904_01}")	--WH_20090904_01 ????????????????!
 				return
 			end
 			
 			local haveDiaowen = LifeAbility : IsEquipHaveDiaowen( itemIdx )
 			if haveDiaowen > 0 then
-				PushDebugMessage("#{WHDW_210322_01}")	--ÓĞµñÎÆµÄÎä»ê²»ÄÜ×÷Îª²ÄÁÏÎä»ê
+				PushDebugMessage("#{WHDW_210322_01}")	--??????????????
 				return
 			end			
 
 			local main_lv = PlayerPackage:GetBagKfsData(m_Equip_Idx  , "NEEDLEVEL")
 			local sub_lv = PlayerPackage:GetBagKfsData(itemIdx  , "NEEDLEVEL")
 			if  main_lv ~= nil and sub_lv ~= nil and main_lv > sub_lv then 
-				PushDebugMessage("#{WH_090729_16}") --²ÎÓëºÏ³ÉµÄÎä»êĞ¯´øµÈ¼¶²»ÄÜĞ¡ÓÚÒªÌáÉıÁéÁ¦µÈ¼¶µÄÎä»ê¡£
+				PushDebugMessage("#{WH_090729_16}") --??????????????????????????
 				return
 			end
 
 			main_lv = PlayerPackage:GetBagKfsData(m_Equip_Idx  , "EXTRALEVEL")
 			sub_lv = PlayerPackage:GetBagKfsData(itemIdx  , "EXTRALEVEL")
 			if  main_lv ~= nil and sub_lv ~= nil and main_lv ~= sub_lv then 
-				PushDebugMessage("#{WH_090729_17}")  --²ÎÓëºÏ³ÉµÄÎä»êÁéÁ¦µÈ¼¶ĞèÒªµÈÓÚÒªÌáÉıÁéÁ¦µÈ¼¶µÄÎä»ê
+				PushDebugMessage("#{WH_090729_17}")  --?????????????????????????
 				return
 			end
 	
 		elseif m_UIType == UI_TYPE_LIFE then
 			local itemID = PlayerPackage:GetItemTableIndex(itemIdx)
 			if itemID ~=  INDEX_ADDLIFE then
-				PushDebugMessage("#{WH_090729_36}") --´Ë´¦Ö»ÄÜ·ÅÈëÎä»êÑÓÊÙµ¤¡£
+				PushDebugMessage("#{WH_090729_36}") --????????????
 				return
 			end
 
 			if PlayerPackage:IsLock( itemIdx ) == 1 then
-				PushDebugMessage("#{WH_090729_07}")	--µÀ¾ßÒÑÉÏËø
+				PushDebugMessage("#{WH_090729_07}")	--?????
 				return
 			end
 		elseif m_UIType == UI_TYPE_SLOT then
 			local itemID = PlayerPackage:GetItemTableIndex(itemIdx)
 			if itemID ~=  INDEX_SLOT_ITEM1 and itemID ~= INDEX_SLOT_ITEM2 then
-				PushDebugMessage("#{WH_090729_51}") --´Ë´¦Ö»ÄÜ·ÅÈë÷ëÄ¾¼ı¡¢ÆÆÌì½£
+				PushDebugMessage("#{WH_090729_51}") --?????????????
 				return
 			end
 
 			if PlayerPackage:IsLock( itemIdx ) == 1 then
-				PushDebugMessage("#{WH_090729_52}")	--µÀ¾ßÒÑÉÏËø
+				PushDebugMessage("#{WH_090729_52}")	--?????
 				return
 			end
 		end  
@@ -328,7 +328,7 @@ function WuhunMagicUp_OK_Clicked()
 	local selfMoney = Player:GetData("MONEY") + Player:GetData("MONEY_JZ")
 	
 	if selfMoney < needMoney then
-		PushDebugMessage("#{WH_090729_18}")  --¶Ô²»Æğ£¬ÄãÉíÉÏ½ğÇ®²»×ã£¬ÎŞ·¨¼ÌĞø½øĞĞ¡£
+		PushDebugMessage("#{WH_090729_18}")  --???,???????,???????
 		return
 	end
 	
@@ -337,8 +337,8 @@ function WuhunMagicUp_OK_Clicked()
 
 	elseif m_UIType == UI_TYPE_COMPOUND then
 		local level = PlayerPackage:GetBagKfsData(m_Equip_Idx  , "EXTRALEVEL")
-		if level == nil or level >= 7 then    --À­ÊÕ ¼¶±ğ¿ØÖÆ ¿Í»§¶Ë
-			PushDebugMessage("#{WH_090828_04}")  --5¼¶ÒÔÉÏºÏ³ÉÔİ²»¿ª·Å¡£
+		if level == nil or level >= 7 then    --?? ???? ???
+			PushDebugMessage("#{WH_090828_04}")  --5??????????
 			return
 		end
 
@@ -347,7 +347,7 @@ function WuhunMagicUp_OK_Clicked()
 		end
 		
 		if needConfirm == 1 then
-			PopComfirm_Alpha1("#{WH_090825_01}")  --ÓÉÓÚ²ÄÁÏÎä»êÊÇ°ó¶¨µÄ£¬ºÏ³ÉºóµÄÎä»êÒ²½«ÓëÄú°ó¶¨
+			PopComfirm_Alpha1("#{WH_090825_01}")  --??????????,????????????
 			needConfirm = 0
 			return
 		end

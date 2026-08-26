@@ -26,8 +26,8 @@ local g_CampNameMsg =
 function Makefriends_Activity_PreLoad()
    
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-    this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+    this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 	this:RegisterEvent("UI_COMMAND")
 	this:RegisterEvent("JIAOYOU_SHOW_BIG")
 
@@ -44,7 +44,7 @@ function Makefriends_Activity_OnEvent(event)
         Makefriends_Activity_UnifiedPos()
     elseif (event == "ADJEST_UI_POS") then
         Makefriends_Activity_UnifiedPos()
-	elseif event == "UI_COMMAND" and (tonumber(arg0) == 998329002) then	--服务端传数据
+	elseif event == "UI_COMMAND" and (tonumber(arg0) == 998329002) then	--??????
 		local nCurRand  = Get_XParam_INT(0) 
 		local nCurRoundCampResult  = Get_XParam_INT(1) 
 		local nCamp  = Get_XParam_INT(2) 
@@ -54,7 +54,7 @@ function Makefriends_Activity_OnEvent(event)
 		local nkillNum  = Get_XParam_INT(6) 
 		Makefriends_Activity_Show()
 		Makefriends_Activity_Updata(nCurRand, nCurRoundCampResult, nCamp, nScore, nLeaveRabbitNum, nLeaveTime, nkillNum)
-    elseif event == "UI_COMMAND" and (tonumber(arg0) == 998329003) then	--比赛结束
+    elseif event == "UI_COMMAND" and (tonumber(arg0) == 998329003) then	--????
 		this:Hide()
 	end
 end -- end func Makefriends_Activity_OnEvent()
@@ -130,7 +130,7 @@ function Makefriends_Activity_Hide()
     this:Hide()
 end -- end func Makefriends_Activity_Hide()
 
--- 关闭按钮点击事件
+-- 关睜按钮点击事件
 function Makefriends_Activity_Close_Clicked()
     PushEvent("JIAOYOU_SHOW_MINI")
 	Makefriends_Activity_Hide()

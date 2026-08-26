@@ -41,63 +41,63 @@ end
 function TargetData_OnLoad()
 	--ÉúÐ¤
 	TargetData_YearAnimal:ComboBoxAddItem("-",0);
-	TargetData_YearAnimal:ComboBoxAddItem("Êó",1); 
-	TargetData_YearAnimal:ComboBoxAddItem("Å£",2); 
-	TargetData_YearAnimal:ComboBoxAddItem("»¢",3); 
-	TargetData_YearAnimal:ComboBoxAddItem("ÍÃ",4); 
-	TargetData_YearAnimal:ComboBoxAddItem("Áú",5); 
-	TargetData_YearAnimal:ComboBoxAddItem("Éß",6); 
-	TargetData_YearAnimal:ComboBoxAddItem("Âí",7); 
-	TargetData_YearAnimal:ComboBoxAddItem("Ñò",8); 
-	TargetData_YearAnimal:ComboBoxAddItem("ºï",9);
-	TargetData_YearAnimal:ComboBoxAddItem("¼¦",10);
-	TargetData_YearAnimal:ComboBoxAddItem("¹·",11);
-	TargetData_YearAnimal:ComboBoxAddItem("Öí",12);
+	TargetData_YearAnimal:ComboBoxAddItem("ThØ",1); 
+	TargetData_YearAnimal:ComboBoxAddItem("Ngßu",2); 
+	TargetData_YearAnimal:ComboBoxAddItem("H±",3); 
+	TargetData_YearAnimal:ComboBoxAddItem("Th¯",4); 
+	TargetData_YearAnimal:ComboBoxAddItem("Thìn",5); 
+	TargetData_YearAnimal:ComboBoxAddItem("Xà",6); 
+	TargetData_YearAnimal:ComboBoxAddItem("Mã",7); 
+	TargetData_YearAnimal:ComboBoxAddItem("Dß½ng",8); 
+	TargetData_YearAnimal:ComboBoxAddItem("H¥u",9);
+	TargetData_YearAnimal:ComboBoxAddItem("Kê",10);
+	TargetData_YearAnimal:ComboBoxAddItem("C¦u",11);
+	TargetData_YearAnimal:ComboBoxAddItem("Trß",12);
 	
 	--Ê¡·Ý
 	TargetData_Province:ComboBoxAddItem("-",		 0);
-	TargetData_Province:ComboBoxAddItem("±±¾©",  1); 
-	TargetData_Province:ComboBoxAddItem("Ìì½ò",  2); 
-	TargetData_Province:ComboBoxAddItem("ÉÏº£",  3); 
-	TargetData_Province:ComboBoxAddItem("ÖØÇì",  4); 
-	TargetData_Province:ComboBoxAddItem("ºÓ±±",  5); 
-	TargetData_Province:ComboBoxAddItem("ÁÉÄþ",  6); 
-	TargetData_Province:ComboBoxAddItem("É½¶«",  7); 
-	TargetData_Province:ComboBoxAddItem("ºÚÁú½­",8); 
-	TargetData_Province:ComboBoxAddItem("É½Î÷",  9); 
-	TargetData_Province:ComboBoxAddItem("¼ªÁÖ",  10);
-	TargetData_Province:ComboBoxAddItem("ÉÂÎ÷",  11);
-	TargetData_Province:ComboBoxAddItem("ºÓÄÏ",  12);
-	TargetData_Province:ComboBoxAddItem("°²»Õ",  13);
-	TargetData_Province:ComboBoxAddItem("½­ËÕ",  14);
-	TargetData_Province:ComboBoxAddItem("ºþ±±",  15);
-	TargetData_Province:ComboBoxAddItem("Õã½­",  16);
-	TargetData_Province:ComboBoxAddItem("ºþÄÏ",  17);
-	TargetData_Province:ComboBoxAddItem("½­Î÷",  18);
-	TargetData_Province:ComboBoxAddItem("¸£½¨",  19);
-	TargetData_Province:ComboBoxAddItem("Ì¨Íå",  20);
-	TargetData_Province:ComboBoxAddItem("ÄÚÃÉ¹Å",21);
-	TargetData_Province:ComboBoxAddItem("¸ÊËà",  22);
-	TargetData_Province:ComboBoxAddItem("ÄþÏÄ",  23);
-	TargetData_Province:ComboBoxAddItem("ËÄ´¨",  24);
-	TargetData_Province:ComboBoxAddItem("¹óÖÝ",  25);
-	TargetData_Province:ComboBoxAddItem("ÔÆÄÏ",  26);
-	TargetData_Province:ComboBoxAddItem("¹ãÎ÷",  27);
-	TargetData_Province:ComboBoxAddItem("¹ã¶«",  28);
-	TargetData_Province:ComboBoxAddItem("º£ÄÏ",  29);
-	TargetData_Province:ComboBoxAddItem("ÐÂ½®",  30);
-	TargetData_Province:ComboBoxAddItem("Çàº£",  31);
-	TargetData_Province:ComboBoxAddItem("Î÷²Ø",  32);
-	TargetData_Province:ComboBoxAddItem("°ÄÃÅ",  33);
-	TargetData_Province:ComboBoxAddItem("Ïã¸Û",  34);
-	TargetData_Province:ComboBoxAddItem("ÆäËû",  35);
+	TargetData_Province:ComboBoxAddItem("B¡c Kinh",  1); 
+	TargetData_Province:ComboBoxAddItem("Thiên Tân",  2); 
+	TargetData_Province:ComboBoxAddItem("Thßþng Häi",  3); 
+	TargetData_Province:ComboBoxAddItem("Trùng Khánh",  4); 
+	TargetData_Province:ComboBoxAddItem("Hà B¡c",  5); 
+	TargetData_Province:ComboBoxAddItem("Liêu Ninh",  6); 
+	TargetData_Province:ComboBoxAddItem("S½n Ðông",  7); 
+	TargetData_Province:ComboBoxAddItem("H¡c Long Giang",8); 
+	TargetData_Province:ComboBoxAddItem("S½n Tây",  9); 
+	TargetData_Province:ComboBoxAddItem("Cát Lâm",  10);
+	TargetData_Province:ComboBoxAddItem("Thi¬m Tây",  11);
+	TargetData_Province:ComboBoxAddItem("Hà Nam",  12);
+	TargetData_Province:ComboBoxAddItem("An Huy",  13);
+	TargetData_Province:ComboBoxAddItem("Giang Tô",  14);
+	TargetData_Province:ComboBoxAddItem("H° B¡c",  15);
+	TargetData_Province:ComboBoxAddItem("Chiªt Giang",  16);
+	TargetData_Province:ComboBoxAddItem("H° Nam",  17);
+	TargetData_Province:ComboBoxAddItem("Giang Tây",  18);
+	TargetData_Province:ComboBoxAddItem("Phúc Kiªn",  19);
+	TargetData_Province:ComboBoxAddItem("Ðài Loan",  20);
+	TargetData_Province:ComboBoxAddItem("Nµi Mông C±",21);
+	TargetData_Province:ComboBoxAddItem("Cam Túc",  22);
+	TargetData_Province:ComboBoxAddItem("Ninh HÕ",  23);
+	TargetData_Province:ComboBoxAddItem("TÑ Xuyên",  24);
+	TargetData_Province:ComboBoxAddItem("Quý Châu",  25);
+	TargetData_Province:ComboBoxAddItem("Vân Nam",  26);
+	TargetData_Province:ComboBoxAddItem("Quäng Tây",  27);
+	TargetData_Province:ComboBoxAddItem("Quäng Ðông",  28);
+	TargetData_Province:ComboBoxAddItem("Häi Nam",  29);
+	TargetData_Province:ComboBoxAddItem("Tân Cß½ng",  30);
+	TargetData_Province:ComboBoxAddItem("Thanh Häi",  31);
+	TargetData_Province:ComboBoxAddItem("Tây TÕng",  32);
+	TargetData_Province:ComboBoxAddItem("Macao",  33);
+	TargetData_Province:ComboBoxAddItem("H°ng Kông",  34);
+	TargetData_Province:ComboBoxAddItem("M£t khác",  35);
 	
 	 --°ÄÃÅ  Ïã¸Û ºÍÆäËû
 	                                          
 	--ÐÔ±ð
 	TargetData_Sex:ComboBoxAddItem("-",0);
-	TargetData_Sex:ComboBoxAddItem("ÄÐ",1);
-	TargetData_Sex:ComboBoxAddItem("Å®",2);
+	TargetData_Sex:ComboBoxAddItem("Nam",1);
+	TargetData_Sex:ComboBoxAddItem("Næ",2);
 
 	--ÑªÐÍ
 	TargetData_BloodType:ComboBoxAddItem("-",0);
@@ -109,18 +109,18 @@ function TargetData_OnLoad()
 
 	--ÐÇ×ù
 	TargetData_Constellation:ComboBoxAddItem("-",0); 
-	TargetData_Constellation:ComboBoxAddItem("Ä§ôÉ×ù",1);
-	TargetData_Constellation:ComboBoxAddItem("Ë®Æ¿×ù",2); 
-	TargetData_Constellation:ComboBoxAddItem("Ë«Óã×ù",3); 
-	TargetData_Constellation:ComboBoxAddItem("°×Ñò×ù",4); 
-	TargetData_Constellation:ComboBoxAddItem("½ðÅ£×ù",5); 
-	TargetData_Constellation:ComboBoxAddItem("Ë«×Ó×ù",6); 
-	TargetData_Constellation:ComboBoxAddItem("¾ÞÐ·×ù",7); 
-	TargetData_Constellation:ComboBoxAddItem("Ê¨×Ó×ù",8); 
-	TargetData_Constellation:ComboBoxAddItem("´¦Å®×ù",9); 
-	TargetData_Constellation:ComboBoxAddItem("Ìì³Ó×ù",10);
-	TargetData_Constellation:ComboBoxAddItem("ÌìÐ«×ù",11);
-	TargetData_Constellation:ComboBoxAddItem("ÉäÊÖ×ù",12);
+	TargetData_Constellation:ComboBoxAddItem("Ma HÕt ToÕ",1);
+	TargetData_Constellation:ComboBoxAddItem("Chòm Thüy Bình",2); 
+	TargetData_Constellation:ComboBoxAddItem("Chòm Song Ngß",3); 
+	TargetData_Constellation:ComboBoxAddItem("Chòm BÕch Dß½ng",4); 
+	TargetData_Constellation:ComboBoxAddItem("Chòm Kim Ngßu",5); 
+	TargetData_Constellation:ComboBoxAddItem("Chòm song nam",6); 
+	TargetData_Constellation:ComboBoxAddItem("Chòm cñ giäi",7); 
+	TargetData_Constellation:ComboBoxAddItem("Chòm Sß TØ",8); 
+	TargetData_Constellation:ComboBoxAddItem("XØ næ ToÕ",9); 
+	TargetData_Constellation:ComboBoxAddItem("Chòm Thiên Bình",10);
+	TargetData_Constellation:ComboBoxAddItem("Chòm sao bò cÕp",11);
+	TargetData_Constellation:ComboBoxAddItem("XÕ thü ToÕ",12);
 	
 	CTRL[1] = TargetData_Age;
 	CTRL[2] = TargetData_Sex;
@@ -135,9 +135,9 @@ function TargetData_OnLoad()
 	CTRL[11] = TargetData_MessageBoard;
 	
 	SELFDATA_TAB_TEXT = {
-		[0] = "×°±¸",
-		"×ÊÁÏ",
-		"ÕäÊÞ",
+		[0] = "Trang b¸",
+		"Tß li®u",
+		"Trân Thú",
 	};	
 	
 	--ÆÁ±ÎÍæ¼Ò×ÊÁÏÒ³Ç©ÖÐ¡°µç×ÓÓÊ¼þÏà¹ØÄÚÈÝ¡±£¬TT62640
@@ -192,7 +192,7 @@ function TargetData_OnEvent(event)
 		
 		local obj_id = CachedTarget:GetData("NPCID", 1)
 		if (type(obj_id) ~="number") then
-			PushDebugMessage ("#{JSCK_90507_1}")				-- ¾àÀë¸ÃÍæ¼ÒÌ«Ô¶£¬ÎÞ·¨²é¿´×ÊÁÏ¡£
+			PushDebugMessage ("#{JSCK_90507_1}")				-- ???????,???????
 			return
 		end
 		this:CareObject(obj_id , 1)
@@ -249,7 +249,7 @@ function TargetData_OnEvent(event)
 		if(tonumber(arg0) ~= objCared) then
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(arg1=="destroy") then
 			g_InitiativeClose = 1;
 			this:Hide();
@@ -576,28 +576,28 @@ function TargetData_ShowPage()
 end
 
 function TargetData_CheckPage(idx)
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--ÕäÊÞ
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--ÁéÓñ
+	elseif idx == 5 then--??
 
 		return 1
-	elseif idx == 6 then--Éñ±ø
+	elseif idx == 6 then--??
 
 		return 1
-	elseif idx == 7 then--µñÎÄ½ø½×
+	elseif idx == 7 then--????
 
 		return 1
-	elseif idx == 8 then--áÛ·å
+	elseif idx == 8 then--??
 
 
 		return 1
-	elseif idx == 9 then--¸öÈË
+	elseif idx == 9 then--??
 		return 1
 	end
 	return 0
@@ -612,19 +612,19 @@ function TargetData_OnPageClicked(idx)
 	Variable:SetVariable("TargetPageNumber", tostring(idx), 1);
 	idx = g_PageOrder[idx]
 
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		TargetData_TargetEquip_Down()
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		TargetData_ClearPage()
-	elseif idx == 3 then--ÕäÊÞ
+	elseif idx == 3 then--??
 		TargetData_OtherPet_Down()
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		TargetData_TargetWuhun_Switch()
-	elseif idx == 5 then--ÁéÓñ
+	elseif idx == 5 then--??
 		TargetData_TargetLingyu_Switch()
-	elseif idx == 6 then--Éñ±ø
+	elseif idx == 6 then--??
 		TargetData_ShenBing_Switch()
-	elseif idx == 7 then--µñÎÄ½ø½×
+	elseif idx == 7 then--????
 		TargetData_DWJinJie_Switch()
 	elseif idx == 8 then
 		TargetData_OtherDFeng_Switch()

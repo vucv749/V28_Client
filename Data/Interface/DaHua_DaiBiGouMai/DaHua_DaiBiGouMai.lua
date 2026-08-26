@@ -3,17 +3,17 @@ local g_DaHua_DaiBiGouMai_MainScriptId = 999236
 
 local g_DaHua_DaiBiGouMai_start_time = 20240801
 local g_DaHua_DaiBiGouMai_end_time = 20240915
-local g_DaHua_DaiBiGouMai_BuyLevel = 30 -- 30级以上才可以购买
+local g_DaHua_DaiBiGouMai_BuyLevel = 30 -- 30????????
 
-local g_DaHua_DaiBiGouMai_DaibiGouMai_Type = 1 -- 代币类型
+local g_DaHua_DaiBiGouMai_DaibiGouMai_Type = 1 -- ????
 
 local g_DaHua_DaiBiGouMai_Frame_UnifiedXPosition
 local g_DaHua_DaiBiGouMai_Frame_UnifiedYPosition
 
 -- 代币名称
 local g_DaHua_DaiBiGouMai_Daibi_Strs = {
-    "#{DHSD_20240522_53}", --菩提子
-    "#{DHSD_20240522_54}", --菩提珠
+    "#{DHSD_20240522_53}", --???
+    "#{DHSD_20240522_54}", --???
 }
 -- 购买代币介绍
 local g_DaHua_DaiBiGouMai_Daibi_Intro = {
@@ -62,7 +62,7 @@ function DaHua_DaiBiGouMai_OnEvent(event)
         _G["DaHua_DaiBiGouMai_Text4"]:SetText(daibiIntro)
         _G["DaHua_DaiBiGouMai_Text2"]:SetText(ScriptGlobal_Format("#{DHSD_20240522_34}", daibiName))
         
-        DaHua_DaiBiGouMai_Moral_Value:SetProperty("DefaultEditBox", "True")--设置输入框为默认输入框
+        DaHua_DaiBiGouMai_Moral_Value:SetProperty("DefaultEditBox", "True")--???????????
         DaHua_DaiBiGouMai_Moral_Value:SetSelected(0, -1)
 
         this:Show()
@@ -163,12 +163,12 @@ end
 function DaHua_DaiBiGouMai_OK_Clicked()
     local curDay = tonumber(DataPool:GetServerDayTime())
 	if curDay < g_DaHua_DaiBiGouMai_start_time or curDay > g_DaHua_DaiBiGouMai_end_time then
-		PushDebugMessage("#{DHSD_20240522_55}") -- 当前非活动期间，无法进行此操作。
+		PushDebugMessage("#{DHSD_20240522_55}") -- ???????,????????
 		return
 	end
 	
 	if DataPool:Lua_IsInTServer() == 1 then
-		PushDebugMessage("#{DHSD_20240522_4}") -- 无法在天荒古境或汴京参与该活动。
+		PushDebugMessage("#{DHSD_20240522_4}") -- ????????????????
 		return
 	end
 
@@ -184,14 +184,14 @@ function DaHua_DaiBiGouMai_OK_Clicked()
 
     local nLevel = Player:GetLevel()
 	if nLevel < g_DaHua_DaiBiGouMai_BuyLevel then
-		PushDebugMessage("#{DHSD_20240522_23}") -- 您的等级不足30级，无法进行此操作。
+		PushDebugMessage("#{DHSD_20240522_23}") -- ??????30?,????????
 		return
 	end
 
 	local str = DaHua_DaiBiGouMai_Moral_Value:GetText()
     local inputNumber = tonumber(str)
 	if inputNumber == nil or inputNumber == 0 then
-		PushDebugMessage("#{DHSD_20240522_39}") -- 请重新输入需要购买的数量。
+		PushDebugMessage("#{DHSD_20240522_39}") -- ?????????????
 		return
 	end
 
@@ -199,7 +199,7 @@ function DaHua_DaiBiGouMai_OK_Clicked()
     local daibiBuyCount = Lua_GetDaHua_DaiBiGouMai_DaibiBuyCount()
     local daibiMaxBuyCount = Lua_GetDaHua_DaiBiGouMai_DaibiMaxBuyCount()
     if daibiBuyCount >= daibiMaxBuyCount then
-		PushDebugMessage("#{DHSD_20240522_40}") -- 菩提子 仅能购买1000个。
+		PushDebugMessage("#{DHSD_20240522_40}") -- ??? ????1000??
         return
     end
     
@@ -215,7 +215,7 @@ function DaHua_DaiBiGouMai_OK_Clicked()
     local totalNeedYB = DaHua_DaiBiGouMai_GetDaibiExchangeRate() * inputNumber
     local yuanbao = Player:GetData("YUANBAO")
     if yuanbao < totalNeedYB then
-		PushDebugMessage("#{DHSD_20240522_42}") -- 您的元宝数量不足。
+		PushDebugMessage("#{DHSD_20240522_42}") -- ?????????
         return
     end
     
@@ -259,11 +259,11 @@ end
 -- OnHiden
 --************************
 function DaHua_DaiBiGouMai_OnHidden()
-	PushEvent("CLOSE_DAHUAQIXI_SHOP_MSGBOX") -- 关闭二次确认界面
+	PushEvent("CLOSE_DAHUAQIXI_SHOP_MSGBOX") -- ????????
 end
 
 --************************
--- 关闭界面
+-- 关睜界面
 --************************
 function DaHua_DaiBiGouMai_Cancel_Clicked()
 	this:Hide()

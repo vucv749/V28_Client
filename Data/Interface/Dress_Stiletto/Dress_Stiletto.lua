@@ -40,7 +40,7 @@ function Dress_Stiletto_OnEvent(event)
 			this:Show();
 			PushEvent( "CLOSE_DRESSPREVIEW") 
 			PushEvent( "CLOSE_GEMEFFECTPREVIEW")
-			-- 清空物品槽
+			-- 清繝物品槽
 			Dress_Stiletto_Clear();
 			local xx = Get_XParam_INT(0);
 			objCared = DataPool : GetNPCIDByServerID(xx);
@@ -54,7 +54,7 @@ function Dress_Stiletto_OnEvent(event)
 			return;
 		end
 		
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			
 			--取消关心
@@ -92,7 +92,7 @@ function Dress_Stiletto_OnEvent(event)
 		Dress_Stiletto_Update(tonumber(arg0),tonumber(arg1));		
 
 	elseif( event == "RESUME_ENCHASE_GEM" and this:IsVisible() ) then
-		if(arg0~=nil and tonumber(arg0) == 1) then---xml里配置的是D1
+		if(arg0~=nil and tonumber(arg0) == 1) then---xml?????D1
 			Resume_Equip_Dress_Stiletto(1);
 		end
 		
@@ -215,7 +215,7 @@ end
 
 --=========================================================
 --开始关心NPC，
---在开始关心之前需要先确定这个界面是不是已经有“关心”的NPC，
+--在开始关心之前需要先确定犫个界面是不是已经有“关心”的NPC，
 --如果有的话，先取消已经有的“关心”
 --=========================================================
 function BeginCareObject_Dress_Stiletto(objCaredId)

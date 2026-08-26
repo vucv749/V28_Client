@@ -6,9 +6,9 @@ local g_ZLHeroicPosts_Frame_UnifiedPosition
 local g_ZLHeroicPosts_state
 
 local g_ZLHeroicPosts_SceneId = 2
-local g_ZLHeroicPosts_PosX = 160  --Ìæ´ú
-local g_ZLHeroicPosts_PosZ = 157 --Ìæ´ú
-local g_ZLHeroicPosts_Name = "ÕÔÌìÊ¦"
+local g_ZLHeroicPosts_PosX = 160  --??
+local g_ZLHeroicPosts_PosZ = 157 --??
+local g_ZLHeroicPosts_Name = "Tri®u Thiên Sß"
 
 function ZLHeroicPosts_PreLoad()
 	this:RegisterEvent("UI_COMMAND")

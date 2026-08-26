@@ -4,7 +4,7 @@
 --2022-07-29
 --******************************************
 
-local g_ShaXingDaojishi_SelectBossIdx = -1	--µ±Ç°bossË÷Òý
+local g_ShaXingDaojishi_SelectBossIdx = -1	--??boss??
 
 --=========================================================
 --PreLoad
@@ -48,13 +48,13 @@ end
 function ShaXingDaojishi_Mini_Show(nSelectBossIdx)
 	this:Show()
 	g_ShaXingDaojishi_SelectBossIdx = nSelectBossIdx
-	local MsgText = "Ò»"
+	local MsgText = "Mµt"
 	if nSelectBossIdx == 2 then
-		MsgText = "¶þ"
+		MsgText = "Nh¸"
 	elseif nSelectBossIdx == 3 then
-		MsgText = "Èý"
+		MsgText = "Tam"
 	elseif nSelectBossIdx == 4 then
-		MsgText = "ËÄ"
+		MsgText = "TÑ"
 	end
 	ShaXingDaojishi_Mini_PageHeader:SetText( ScriptGlobal_Format("#{XSX_220705_111}", MsgText) )
 end

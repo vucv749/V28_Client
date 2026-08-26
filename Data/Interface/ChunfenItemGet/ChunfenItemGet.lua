@@ -27,25 +27,25 @@ function ChunfenItemGet_OnLoad()
 	
 	g_ItemID =
 	{
-		[1] = {itemid = 30900045, count = 1, name = "Ììî¸Ç¿»¯Â¶"},
-		[2] = {itemid = 50313004, count = 1, name = "ºì±¦Ê¯3¼¶"},
-		[3] = {itemid = 38002221, count = 1, name = "´¿¾»¾§Ê¯3¼¶ÀñºĞ"},
+		[1] = {itemid = 30900045, count = 1, name = "Thiên Canh Cß¶ng Hóa Lµ"},
+		[2] = {itemid = 50313004, count = 1, name = "Ru-bi C¤p 3"},
+		[3] = {itemid = 38002221, count = 1, name = "Tinh thu¥n tinh thÕch C¤p 3 L­ HÕp"},
 	}	
 	g_Frame_UnifiedPosition = ChunfenItemGet_Frame:GetProperty("UnifiedPosition")
 end
 
-local useCount_grandtotal = 0 --Ï£ÍûÖ®ÂÖÀÛ¼ÆÁìÈ¡´ÎÊı£¨²»ÇåÁã£©
-local gettotal_1 = 0 --Ò»µÈ½±ÊÇ·ñÁìÈ¡
-local gettotal_2 = 0 --¶şµÈ½±ÊÇ·ñÁìÈ¡
-local gettotal_3 = 0 --ÈıµÈ½±ÊÇ·ñÁìÈ¡
+local useCount_grandtotal = 0 --??????????(???)
+local gettotal_1 = 0 --???????
+local gettotal_2 = 0 --???????
+local gettotal_3 = 0 --???????
 
 
 function ChunfenItemGet_OnEvent(event)
 	if ( event == "UI_COMMAND" and tonumber(arg0) == 89267601 ) then
-		useCount_grandtotal = Get_XParam_INT(0)		--Ï£ÍûÖ®ÂÖÀÛ¼ÆÁìÈ¡´ÎÊı£¨²»ÇåÁã£©
-		gettotal_1 = Get_XParam_INT(1) --Ò»µÈ½±ÊÇ·ñÁìÈ¡
-		gettotal_2 = Get_XParam_INT(2) --¶şµÈ½±ÊÇ·ñÁìÈ¡
-		gettotal_3 = Get_XParam_INT(3) --ÈıµÈ½±ÊÇ·ñÁìÈ¡
+		useCount_grandtotal = Get_XParam_INT(0)		--??????????(???)
+		gettotal_1 = Get_XParam_INT(1) --???????
+		gettotal_2 = Get_XParam_INT(2) --???????
+		gettotal_3 = Get_XParam_INT(3) --???????
 		g_targetID = Get_XParam_INT(4)
 		local str = ScriptGlobal_Format("#{YNZJ_210127_06}", useCount_grandtotal)
 		ChunfenItemGet_InfoText:SetText(str);
@@ -53,7 +53,7 @@ function ChunfenItemGet_OnEvent(event)
 		g_objCared = DataPool : GetNPCIDByServerID(g_targetID)
 			
 		if g_objCared == -1 then
-			PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£")
+			PushDebugMessage("Dæ li®u máy chü có v¤n ğ«")
 			return
 		end
 
@@ -147,7 +147,7 @@ function ChunfenItemGet_CloseRoll()
 	this:Hide()
 end
 
---»Øµ÷º¯Êı-¹Ø±Õ
+--»Øµ÷º¯Êı-¹Ø± 
 function ChunfenItemGet_OnClosed()
 	ChunfenItemGet_CloseRoll()
 end

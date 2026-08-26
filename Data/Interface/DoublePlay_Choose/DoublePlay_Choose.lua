@@ -13,10 +13,10 @@ local DoublePlay_Choose_MAX_OBJ_DISTANCE = 5.0
 -- 游戏信息
 local DoublePlay_Choose_GameInfo =
 {
-    [1] = {name = "#{SRWF_230329_138}", type = 1},      -- 随机
-    [2] = {name = "#{SRWF_230329_29}", type = 2},       -- 算术游戏
-    [3] = {name = "#{SRWF_230329_30}", type = 3},       -- 寻找游戏
-    [4] = {name = "#{SRWF_230329_31}", type = 4},       -- 躲避游戏
+    [1] = {name = "#{SRWF_230329_138}", type = 1},      -- ??
+    [2] = {name = "#{SRWF_230329_29}", type = 2},       -- ????
+    [3] = {name = "#{SRWF_230329_30}", type = 3},       -- ????
+    [4] = {name = "#{SRWF_230329_31}", type = 4},       -- ????
 } -- end DoublePlay_Choose_GameInfo
 
 
@@ -25,8 +25,8 @@ function DoublePlay_Choose_PreLoad()
     this:RegisterEvent("DOUBLEGAME_OPENCHOOSE", true)
     this:RegisterEvent("DOUBLEGAME_CLOSECHOOSE", true)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 	this:RegisterEvent("OBJECT_CARED_EVENT", false)
 end -- end func DoublePlay_Choose_PreLoad()
 
@@ -46,7 +46,7 @@ function DoublePlay_Choose_OnEvent(event)
 			return
         end
         
-		-- 如果和NPC的距离大于一定距离或者被删除，自动关闭
+		-- 如果和NPC的距离大于一定距离或犨被删除，自动关睜
         if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
             DoublePlay_Choose_Hide()
         end
@@ -70,7 +70,7 @@ function DoublePlay_Choose_UnifiedPos()
 	end
 end -- end func DoublePlay_Choose_UnifiedPos()
 
--- 关闭事件
+-- 关睜事件
 function DoublePlay_Choose_Close()
     DoublePlay_Choose_Hide()
 end -- end func DoublePlay_Choose_Close()

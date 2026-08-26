@@ -10,8 +10,8 @@ local g_BarList = {}
 
 local g_bloodLevelBtn = {}	
 
-local g_curSelListId = 1					--当前选择的列表兽魂ID，从1开始
-local g_curBloodLevelSel = 1					--血脉等级 1-6
+local g_curSelListId = 1					--?????????ID,?1??
+local g_curBloodLevelSel = 1					--???? 1-6
 
 local g_undefinedObj = ""
 
@@ -142,7 +142,7 @@ function PetSoul_Handbook_UpdateList()
 	end
 end
 
-function PetSoul_Handbook_SetItem(index, max_count)  --index 1开始
+function PetSoul_Handbook_SetItem(index, max_count)  --index 1??
 	if g_BarList[index] == nil then
 		return
 	end

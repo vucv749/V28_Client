@@ -18,7 +18,7 @@ local g_previewDressViusal = 0
 local g_previewFace = -1
 local g_previewHair = -1
 
-local g_previewGemEffectIndex = -1 --ÅäÊÎid
+local g_previewGemEffectIndex = -1 --??id
 
 
 local g_curSex = 0
@@ -26,7 +26,7 @@ local g_curSex = 0
 local g_Distance_Max = 3
 local g_Distance_Ori = 1
 local g_Distance = 1
-local g_IsShowSingleSuit = 0  --Ä¬ÈÏÈ«Õ¹Ê¾
+local g_IsShowSingleSuit = 0  --?????
 
 local g_DressGemUITalbe = {}
 local g_Dress_Gem_Type =
@@ -55,9 +55,9 @@ local g_CoboListStr=
 	[4] = "#{SZZS_240821_10}",
 }
 
-local g_CameraHeight = 1     --ÉãÓ°»ú¸ß¶È
-local g_CameraDistance = 2   --ÉãÓ°»ú¾àÀë
-local g_CameraPitch = 3      --ÉãÓ°»ú½Ç¶È
+local g_CameraHeight = 1     --?????
+local g_CameraDistance = 2   --?????
+local g_CameraPitch = 3      --?????
 
 function GemEffectPreview_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
@@ -67,7 +67,7 @@ function GemEffectPreview_PreLoad()
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)
 
-	this:RegisterEvent("FASHION_DEPOT_OP", false)				-- »ªÉÑ¸ó
+	this:RegisterEvent("FASHION_DEPOT_OP", false)				-- ???
 	this:RegisterEvent("OPEN_STALL_SALE", false)
 	this:RegisterEvent("MODELID_CHANGE", false)
 	this:RegisterEvent("OPEN_EQUIP", false)
@@ -104,7 +104,7 @@ end
 function GemEffectPreview_OnEvent(event) 
 	if event == "UI_COMMAND" and arg0 ~= nil and tonumber(arg0) == 2024082101 then
 		if( tonumber( IsInStall() ) == 1 ) then
-			PushDebugMessage("#{SZYL_230625_07}")			--°ÚÌ¯×´Ì¬ÎÞ·¨½øÐÐÕâÖÖ²Ù×÷¡£
+			PushDebugMessage("#{SZYL_230625_07}")			--?????????????
 			return
 		end		
 		GemEffectPreview_ResetParam()
@@ -125,7 +125,7 @@ function GemEffectPreview_OnEvent(event)
 		end
 	elseif (event == "OPEN_GEMEFFECTPREVIEW" ) then
 		if( tonumber( IsInStall() ) == 1 ) then
-			PushDebugMessage("#{SZYL_230625_07}")			--°ÚÌ¯×´Ì¬ÎÞ·¨½øÐÐÕâÖÖ²Ù×÷¡£
+			PushDebugMessage("#{SZYL_230625_07}")			--?????????????
 			return
 		end		
 		GemEffectPreview_ResetParam()
@@ -170,11 +170,11 @@ function GemEffectPreview_OnEvent(event)
 		if (this:IsVisible()) then 
 			this:Hide()
 		end
-	elseif (event == "FASHION_DEPOT_OP" and tonumber(arg0) == 1) then --»ªÉÑ¸ó
+	elseif (event == "FASHION_DEPOT_OP" and tonumber(arg0) == 1) then --???
 		if (this:IsVisible()) then 
 			this:Hide()
 		end
-	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) then   --Ê±×°Ô¤ÀÀ
+	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) then   --????
 		if (this:IsVisible()) then 
 			this:Hide()
 		end
@@ -200,7 +200,7 @@ function GemEffectPreview_Open()
 	g_DressGemType = DressGemType
 	g_DressGemGemIdx = DressGemGemIdx
 	if IsGemOnDress < 1 then
-		PushDebugMessage("´«ÈëµÄ×¹ÊÎ²ÎÊýÓÐÎÊÌâ1")
+		PushDebugMessage("Truy«n vào Ðích TruÜ SÑc tham s¯ có v¤n ð« 1")
 		return
 	else
 		local result = 0 
@@ -211,7 +211,7 @@ function GemEffectPreview_Open()
 			end
 		end 
 		if result == 0 then
-			PushDebugMessage("´«ÈëµÄ×¹ÊÎ²ÎÊýÓÐÎÊÌâ2")
+			PushDebugMessage("Truy«n vào Ðích TruÜ SÑc tham s¯ có v¤n ð« 2")
 			return
 		end
 	end
@@ -323,7 +323,7 @@ function GemEffectPreview_UpdateSex()
 
 end
 
-function GemEffectPreview_UpdateObj(param)   --1Ô¤ÀÀ 0È¡Ïû
+function GemEffectPreview_UpdateObj(param)   --1?? 0??
 	GemEffectPreview_FakeObject:SetFakeObject("")
 	GemEffectPreview_FakeObject:SetFakeObject("GemEffectPreview_Player")
 

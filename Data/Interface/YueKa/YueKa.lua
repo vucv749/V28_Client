@@ -110,7 +110,7 @@ function YueKa_Btn_Clicked(index)
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("DoFunc")
 			Set_XSCRIPT_ScriptID(892666) 
-    	Set_XSCRIPT_Parameter( 0, index );					-- ²ÎÊýÒ» 
+    	Set_XSCRIPT_Parameter( 0, index );					-- ??? 
 			Set_XSCRIPT_ParamCount(1)
 		Send_XSCRIPT()
 	end

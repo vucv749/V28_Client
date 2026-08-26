@@ -6,7 +6,7 @@ local MAX_OBJ_DISTANCE = 3.0;
 local g_serverrequest  = 1100
 local g_clientNpcId = -1
 local g_serverNpcId = -1
-local g_DefaultTxt = "Çë½«ÒªÊ¹ÓÃµÄµÀ¾ßÍÏ×§µ½Ç°ÃæµÄµÀ¾ß¿òÖĞ¡£";
+local g_DefaultTxt = "Thïnh s¡p sØa sØ døng Ğích ğÕo cø Ğà Du® Ğáo phía trß¾c Ğích ğÕo cø Khuông Trung.";
 
 --*************************************************
 --
@@ -86,14 +86,14 @@ function PetPropagateCheck_UICommand(arg0)
 			PetPropagateCheck_Text1:Show();
 			return
 		end
-		--local szTip = format( "#cfff263¸ÃÕäÊŞÉÏ´Î·±Ö³µÄµÈ¼¶ÊÇ#G"..nLevel.."¼¶#cfff263" )
-		PetPropagateCheck_Text1:SetText("#cfff263¸ÃÕäÊŞÉÏ´Î·±Ö³µÄµÈ¼¶ÊÇ#G"..nLevel.."¼¶#cfff263");
+		--local szTip = format( "#cfff263¸Ã äÊŞÉÏ´Î·±Ö³µÄµÈ¼¶ÊÇ#G"..nLevel.."¼¶#cfff263" )
+		PetPropagateCheck_Text1:SetText("#cfff263Cai Trân Thú l¥n trß¾c sinh sôi n¦y n· Ğích c¤p b§c Th¸#G"..nLevel.."C¤p#cfff263");
 		PetPropagateCheck_Text1:Show();
 	end
 end
 
 --*************************************************
---Ñ¡Ôñ²»Í¬ÕäÊŞÊ±£¬ÉèÖÃ²»Í¬µÄÕäÊŞÄ£ĞÍ
+--Ñ¡Ôñ²»Í¬ äÊŞÊ±£¬ÉèÖÃ²»Í¬µÄ äÊŞÄ£ĞÍ
 --*************************************************
 function PetPropagateCheck_Selected(selidx)
 
@@ -105,16 +105,16 @@ function PetPropagateCheck_Selected(selidx)
 		return;
 	end
 
-	--ÕäÊŞÒÑ±»ÆäËü½çÃæÑ¡ÖĞ
+	-- äÊŞÒÑ±»ÆäËü½çÃæÑ¡ÖĞ
 	if (Pet:GetPetLocation(selidx) ~= -1) then
 		return;
 	end
-	--ÇĞ»»ÕäÊŞµÄÊ±ºò£¬ÊÍ·ÅÉÏÒ»¸öÕäÊŞ
+	--ÇĞ»» äÊŞµÄÊ±ºò£¬ÊÍ·ÅÉÏÒ»¸ö äÊŞ
 	if(g_selectIdx ~= -1) then
 		Pet:SetPetLocation(g_selectIdx,-1);
 	end
 
-	g_selectIdx = tonumber(selidx);	--ÒÑ¾­Ñ¡ºÃÁËÕäÊŞ
+	g_selectIdx = tonumber(selidx);	--???????
 	PetPropagateCheck_Text1:SetText("#{FZCX_90627_2}");
 	PetPropagateCheck_PetModel:SetFakeObject("");
 	Pet:SetPropagateModel(g_selectIdx);
@@ -126,7 +126,7 @@ end
 
 
 --*************************************************
--- Ğı×ªÕäÊŞÄ£ĞÍ£¨Ïò×ó)
+-- Ğı×ª äÊŞÄ£ĞÍ£¨Ïò×ó)
 --*************************************************
 function PetPropagateCheck_Modle_TurnLeft(start)
 	--Ïò×óĞı×ª¿ªÊ¼
@@ -139,7 +139,7 @@ function PetPropagateCheck_Modle_TurnLeft(start)
 end
 
 --*************************************************
---Ğı×ªÕäÊŞÄ£ĞÍ£¨ÏòÓÒ)
+--Ğı×ª äÊŞÄ£ĞÍ£¨ÏòÓÒ)
 --*************************************************
 function PetPropagateCheck_Modle_TurnRight(start)
 	--ÏòÓÒĞı×ª¿ªÊ¼
@@ -157,12 +157,12 @@ end
 --*************************************************
 function PetPropagateCheck_Do()
 	if (g_selectIdx == nil or g_selectIdx == -1 or g_serverNpcId == -1) then
-		PushDebugMessage("ÇëÑ¡ÔñÄãÒª²éÑ¯µÄÕäÊŞ£¡")
-		PetPropagateCheck_Text1:SetText("ÇëÑ¡ÔñÄãÒª²éÑ¯µÄÕäÊŞ£¡")
+		PushDebugMessage("Thïnh lña ch÷n Nhî Yêu tu¥n tra Ğích Trân Thú!")
+		PetPropagateCheck_Text1:SetText("Thïnh lña ch÷n Nhî Yêu tu¥n tra Ğích Trân Thú!")
 		return
 	end
 
-	local slidx = g_selectIdx;	--ListBoxÑ¡ÖĞµÄË÷Òı
+	local slidx = g_selectIdx;	--ListBox?????
 	if (1 == g_uitype  ) then
 		local hid,lid = Pet:GetGUID(slidx);
 		Clear_XSCRIPT();
@@ -179,7 +179,7 @@ function PetPropagateCheck_Do()
 end
 
 --*************************************************
---Òş²Ø´°¿Ú£¬Çå¿Õ±äÁ¿
+--Òş²Ø´°¿Ú£¬Çå¿ ±äÁ¿
 --*************************************************
 function PetPropagateCheck_Frame_OnHiden()
 	if (g_clientNpcId ~= -1) then

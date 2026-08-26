@@ -31,7 +31,7 @@ function Makefriends_Question_OnEvent(event)
 	--	this:Hide();
 	elseif (event == "HIDE_ON_SCENE_TRANSED") then
 		this:Hide()
-	elseif event == "UI_COMMAND" and (tonumber(arg0) == 998329001) then	--显示问题
+	elseif event == "UI_COMMAND" and (tonumber(arg0) == 998329001) then	--????
 		local nQuestionIndex = Get_XParam_INT(0) 
 		local nLeaveTime = Get_XParam_INT(1) 
 		local nQuestion, nAnswerA, nAnswerB = GetJYQuestion(nQuestionIndex)
@@ -39,7 +39,7 @@ function Makefriends_Question_OnEvent(event)
 		Makefriends_Question_Time:SetText("#{JYHD_230331_167}")
 		Makefriends_Question_WatchText:SetProperty("Timer", tostring(nLeaveTime))
 		this:Show()
-	elseif event == "UI_COMMAND" and (tonumber(arg0) == 998329004) then	--关闭问题
+	elseif event == "UI_COMMAND" and (tonumber(arg0) == 998329004) then	--????
 		this:Hide()
 	end
 	
@@ -64,6 +64,6 @@ end
 
 function Makefriends_Question_Button_Clicked()
 
-	AutoRuntoTargetExWithName(98, 94, 633, "钟灵")
+	AutoRuntoTargetExWithName(98, 94, 633, "Chung Linh")
 
 end

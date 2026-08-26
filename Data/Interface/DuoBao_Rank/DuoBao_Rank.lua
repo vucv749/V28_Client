@@ -22,10 +22,10 @@ local g_DuoBao_Rank_ItemList =
 --字典
 local g_DuoBao_Rank_TeamNameStr =
 {
-	[1] = {str = "#{DDDB_20240711_80}"}, --红
-	[2] = {str = "#{DDDB_20240711_81}"}, --蓝
-	[3] = {str = "#{DDDB_20240711_82}"}, --黄
-	[4] = {str = "#{DDDB_20240711_83}"}, --绿
+	[1] = {str = "#{DDDB_20240711_80}"}, --?
+	[2] = {str = "#{DDDB_20240711_81}"}, --?
+	[3] = {str = "#{DDDB_20240711_82}"}, --?
+	[4] = {str = "#{DDDB_20240711_83}"}, --?
 }
 local g_DuoBao_Rank_PaiMingStr =
 {
@@ -35,7 +35,7 @@ local g_DuoBao_Rank_PaiMingStr =
 	[4] = {str = "#{DDDB_20240711_229}"}, --
 }
 
---预加载函数，可以而且只能在这里注册脚本关心的事件
+--预加载函数，可以而且只能在犫里注册脚本关心的事件
 function DuoBao_Rank_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
 	-- 游戏窗口尺寸发生了变化
@@ -53,7 +53,7 @@ function DuoBao_Rank_OnLoad()
 	m_Frame_UnifiedXPosition	= DuoBao_Rank_Frame:GetProperty("UnifiedXPosition");
 	m_Frame_UnifiedYPosition	= DuoBao_Rank_Frame:GetProperty("UnifiedYPosition");
 
-	-- 阵营名
+	-- 狊营名
 	g_DuoBao_Rank_TeamName[1] = DuoBao_Rank1_List1_2;
 	g_DuoBao_Rank_TeamName[2] = DuoBao_Rank1_List2_2;
 	g_DuoBao_Rank_TeamName[3] = DuoBao_Rank1_List3_2;
@@ -71,7 +71,7 @@ function DuoBao_Rank_OnLoad()
 	g_DuoBao_Rank_TeamScore2[3] = DuoBao_Rank1_List3_4;
 	g_DuoBao_Rank_TeamScore2[4] = DuoBao_Rank1_List4_4;
 
-	-- 最终BOSS 分数
+	-- 最譅BOSS 分数
 	g_DuoBao_Rank_TeamScore3[1] = DuoBao_Rank1_List1_5;
 	g_DuoBao_Rank_TeamScore3[2] = DuoBao_Rank1_List2_5;
 	g_DuoBao_Rank_TeamScore3[3] = DuoBao_Rank1_List3_5;

@@ -94,7 +94,7 @@ function Phoenix_Shop_OpenShop(shopId,daibiNum)
                     end
                 else
                     --g_UI_Items.ItemInfo[i].quota:Show()
-                    local countLeft = countLimit-countNow -- £”‡ ˝¡ø
+                    local countLeft = countLimit-countNow --????
                     if countLeft < 0 or countLeft > 255 then
                         countLeft = 0
                     end
@@ -116,7 +116,7 @@ function Phoenix_Shop_OpenShop(shopId,daibiNum)
                 g_UI_Items.ItemInfo[i].itemName:SetText(itemName)
             end
         else
-            --ø’btn
+            --ø†btn
             g_UI_Items.ItemInfo[i].itemPrice:SetText("")
             g_UI_Items.ItemInfo[i].itemName:SetText("")
             --g_UI_Items.ItemInfo[i].quota:Hide()

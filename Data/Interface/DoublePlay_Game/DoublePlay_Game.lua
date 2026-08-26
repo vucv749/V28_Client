@@ -161,20 +161,20 @@ function DoublePlay_Game_OnEvent(event)
 	if ( event == "UI_COMMAND" and tonumber(arg0) == 99829701) then		
         local nRight = Get_XParam_INT(0) --Right
 		local remainingtTime = Get_XParam_INT(1)
-		local GameType = Get_XParam_INT(2) --”Œœ∑¿‡–Õ
-		local Round   = Get_XParam_INT(3) --¬÷¥Œ
-		local MyRTData  = Get_XParam_INT(4) --Œ“µƒ≈≈√˚
-		local MyScore = Get_XParam_INT(5) --Œ“µƒ∑÷ ˝
-		local PicData = Get_XParam_INT(6) --PIC–≈œ¢
-		local nReOpen = Get_XParam_INT(7) --NULL Game2Ãÿ”–
+		local GameType = Get_XParam_INT(2) --????
+		local Round   = Get_XParam_INT(3) --??
+		local MyRTData  = Get_XParam_INT(4) --????
+		local MyScore = Get_XParam_INT(5) --????
+		local PicData = Get_XParam_INT(6) --PIC??
+		local nReOpen = Get_XParam_INT(7) --NULL Game2??
 		-----------œ¬√ÊΩÁ√Ê ˝æ›---------------
-		local RankData1  = Get_XParam_INT(8) --∂”ŒÈ≈≈√˚
-		local RankData2  = Get_XParam_INT(9) --∂”ŒÈ√˚◊÷
-		local TeamData1 = Get_XParam_INT(10) --∂”ŒÈœÍœ∏–≈œ¢1
-		local TeamData2 = Get_XParam_INT(11) --∂”ŒÈœÍœ∏–≈œ¢2
-		local TeamData3 = Get_XParam_INT(12) --∂”ŒÈœÍœ∏–≈œ¢3
-		local TeamData4 = Get_XParam_INT(13) --∂”ŒÈœÍœ∏–≈œ¢4
-		local TeamData5 = Get_XParam_INT(14) --∂”ŒÈœÍœ∏–≈œ¢5
+		local RankData1  = Get_XParam_INT(8) --????
+		local RankData2  = Get_XParam_INT(9) --????
+		local TeamData1 = Get_XParam_INT(10) --??????1
+		local TeamData2 = Get_XParam_INT(11) --??????2
+		local TeamData3 = Get_XParam_INT(12) --??????3
+		local TeamData4 = Get_XParam_INT(13) --??????4
+		local TeamData5 = Get_XParam_INT(14) --??????5
 
 		local MyRank = math.floor(math.mod(MyRTData/10,10))
 		local MyTeam = math.floor(math.mod(MyRTData/1,10))
@@ -224,7 +224,7 @@ function DoublePlay_Game_SetData(GameType,Round,MyRank,MyScore,PicData,nRight,nR
 	--∞ŸŒª «ßŒª
 	local PicData3 = math.floor(math.mod(PicData/100,100))
 	--ÕÚŒª
-	local PicData4 = math.floor(math.mod(PicData/10000,10)) --‘ÀÀ„∑˚∫≈ 1£∫+ 2£∫x
+	local PicData4 = math.floor(math.mod(PicData/10000,10)) --???? 1:+ 2:x
 
 	--”Œœ∑¿‡–Õ
 	if GameType == 1 then
@@ -279,8 +279,8 @@ function DoublePlay_Game_SetData(GameType,Round,MyRank,MyScore,PicData,nRight,nR
 		PicData1 = math.floor(math.mod(PicData/1,100))
 		PicData2 = math.floor(math.mod(PicData/100,100))
 
-		DoublePlay_Game_Game2Image1_2:Show() --set:DoubleGame01 image:DoubleGame_BKHover ªÒµ√
-		DoublePlay_Game_Game2Image2_2:Show() --set:DoubleGame01 image:DoubleGame_BKNormal ªÒµ√
+		DoublePlay_Game_Game2Image1_2:Show() --set:DoubleGame01 image:DoubleGame_BKHover ??
+		DoublePlay_Game_Game2Image2_2:Show() --set:DoubleGame01 image:DoubleGame_BKNormal ??
 
 		local nReOpenAll = math.floor(math.mod(nReOpen/100,10))
 		local nReOpen1 = math.floor(math.mod(nReOpen/10,10))
@@ -334,15 +334,15 @@ function DoublePlay_Game_SetData(GameType,Round,MyRank,MyScore,PicData,nRight,nR
 		DoublePlay_Game_Game3:Show()
 	end
 
-	DoublePlay_Game_GameRound[GameType]:SetText(ScriptGlobal_Format("#{SRWF_230329_52}",Round)) --¬÷¥Œ
-	DoublePlay_Game_GameRank[GameType]:SetText("µ±«∞≈≈√˚:"..MyRank) --≈≈√˚
+	DoublePlay_Game_GameRound[GameType]:SetText(ScriptGlobal_Format("#{SRWF_230329_52}",Round)) --??
+	DoublePlay_Game_GameRank[GameType]:SetText("Trﬂæc m£t b‡i danh:"..MyRank) --??
 
 	--Œ“µƒ∑÷ ˝
 	if MyScore < 0 then
 		MyScore = 0
 	end
 
-	DoublePlay_Game_GameNum[GameType]:SetText(ScriptGlobal_Format("#{SRWF_230329_54}", MyScore)) --Œ“µƒ∂”ŒÈ£∫%s0∑÷
+	DoublePlay_Game_GameNum[GameType]:SetText(ScriptGlobal_Format("#{SRWF_230329_54}", MyScore)) --????:%s0?
 
 end
 
@@ -419,15 +419,15 @@ function DoublePlay_Game_SetTeamData(GameType,TeamNumData,TeamRankData,TeamData1
 		end
 		if EachTeam[i][3] ~= 0 then
 			if GameType == 3 then
-				DoublePlay_Game_RankText4[i]:SetText("¥ÊªÓ")
+				DoublePlay_Game_RankText4[i]:SetText("TrÊ h‡ng")
 			else
-				DoublePlay_Game_RankText4[i]:SetText("ÕÍ≥…")
+				DoublePlay_Game_RankText4[i]:SetText("Ho‡n th‡nh")
 			end
 		else
 			if GameType == 3 then
-				DoublePlay_Game_RankText4[i]:SetText("À¿Õˆ")
+				DoublePlay_Game_RankText4[i]:SetText("Tÿ vong")
 			else
-				DoublePlay_Game_RankText4[i]:SetText("Œ¥ÕÍ≥…")
+				DoublePlay_Game_RankText4[i]:SetText("Chﬂa xong Th‡nh")
 			end
 		end
 	end

@@ -1,8 +1,8 @@
 --付费商店改造，元宝商店批量购买 by liuyong
 -- !!!reloadscript =Shop_MBuy
 
-local CU_YUANBAO			= 5	-- 钱
-local g_MaxBuyNum_PerTime = 7500		-- 这个不是常量，打开窗口的时候会根据商店重新初始化，但最大7500
+local CU_YUANBAO			= 5	-- ?
+local g_MaxBuyNum_PerTime = 7500		-- ??????,?????????????????,???7500
 local g_ItemMax = 0;
 local g_ItemIdx = -1;
 local g_ItemTableIdx = -1;
@@ -14,15 +14,15 @@ local g_FriendName = ""
 local g_bFromRecentBooth = 0
 local g_MaxInt = 2147483647
 local ShopUnitID = {
-		YuanBao = 5,			--元宝
-		Bind = 9,					--绑定元宝
+		YuanBao = 5,			--??
+		Bind = 9,					--????
 		-- GiftToken = 10,		--返券
 }
 
 
 -- 大话七夕商店批量购买
 local g_Shop_MBuy_DaHuaQiXiShop_Flag = false
-local g_Shop_MBuy_DaHuaQiXiShop_ID = -1 -- 表格里的Id
+local g_Shop_MBuy_DaHuaQiXiShop_ID = -1 -- ????Id
 local g_Shop_MBuy_DaHuaQiXiShop_MaxNum = 1
 local g_Shop_MBuy_DaHuaQiXiShop_ItemInfo = nil
 
@@ -40,7 +40,7 @@ end
 function Shop_MBuy_OnEvent(event)
 	if(event == "OPEN_YUANBAOSHOP_MULTI_BUYWND") then
 		g_bFromRecentBooth = tonumber(arg1)
-		if g_bFromRecentBooth == 999236 then --大话七夕商店批量购买
+		if g_bFromRecentBooth == 999236 then --??????????
 			g_bFromRecentBooth = 0
 			g_Shop_MBuy_DaHuaQiXiShop_Flag = true
 			Shop_MBuy_OpenByDaHuaQiXiShop(tonumber(arg0))
@@ -52,7 +52,7 @@ function Shop_MBuy_OnEvent(event)
 		--Shop_MBuy_Open 必须在 g_bFromRecentBooth 赋值的后面
 		Shop_MBuy_Open(tonumber(arg0));
 
-		-- 这个shop本身的限制先不加了 以后如果需要再加 2022-9-15 移植 
+		-- 犫个shop本身的限制先不加了 以后如果需要再加 2022-9-15 移植 
 		-- local nCurShopLimit = GetMultiUpperLimit()
 		-- g_MaxBuyNum_PerTime = nCurShopLimit
 		if g_MaxBuyNum_PerTime > 7500 then
@@ -78,7 +78,7 @@ function Shop_MBuy_OnEvent(event)
 	-- 		Shop_MBuy_Close_Clicked()
 	-- 	end
 	elseif (event == "DAHUAQIXI_DAIBI_CHANGED") and this:IsVisible() then
-		if g_Shop_MBuy_DaHuaQiXiShop_Flag then --大话七夕商店批量购买
+		if g_Shop_MBuy_DaHuaQiXiShop_Flag then --??????????
 			g_Shop_MBuy_DaHuaQiXiShop_MaxNum = Shop_MBuy_CalMax_DaHuaQiXiShop()
 			local num = tonumber(Shop_MBuy_InputNum:GetText())
 			if not num or num < 0 then
@@ -140,7 +140,7 @@ function Shop_MBuy_UpdateCurMoney_DaHuaQiXiShop(num)
 		return
 	end
 
-	local playerCoin_Token = 0 --持有货币数量
+	local playerCoin_Token = 0 --??????
 	local daibiCount1, daibiCount2, weekGain1 = Lua_GetDaHuaQiXiShop_GetDaibiCount()
 	if not daibiCount1 then
 		return
@@ -181,15 +181,15 @@ function Shop_MBuy_CalMax_DaHuaQiXiShop(tblInfo)
 			return 0
 		end
 	end
-    local num = Lua_GetDaHuaQiXiShop_MaxNumCanBuy(tblInfo.itemId, tblInfo.itemNum) --计算空间后的最大购买组数（有空间不足的提示）
+    local num = Lua_GetDaHuaQiXiShop_MaxNumCanBuy(tblInfo.itemId, tblInfo.itemNum) --????????????(????????)
     if num <= 0 then
 		Shop_MBuy_Close_Clicked()
         return 0
     end
-    if num > tblInfo.leftNum and tblInfo.leftNum >= 0 then --不能超过限购数
+    if num > tblInfo.leftNum and tblInfo.leftNum >= 0 then --???????
         num = tblInfo.leftNum
     end
-	local playerCnt = 0 --玩家拥有钱数
+	local playerCnt = 0 --??????
 	local daibiCount1, daibiCount2, weekGain1 = Lua_GetDaHuaQiXiShop_GetDaibiCount()
 	if tblInfo.daibiType == 1 then
 		playerCnt = daibiCount1 or 0
@@ -197,7 +197,7 @@ function Shop_MBuy_CalMax_DaHuaQiXiShop(tblInfo)
 		playerCnt = daibiCount2 or 0
 	end
 	local max_cnt = math.floor(playerCnt / tblInfo.daibiNum)
-	if num > max_cnt then --不能超过财力承受范围
+	if num > max_cnt then --??????????
 		num = max_cnt
 	end
 	if num < 0 then num = 0 end
@@ -213,7 +213,7 @@ function Shop_MBuy_Open( idx )
 
 	--商店是消耗元宝
 	local i = 0;
-	--这个位置的物品的叠加数量是大于1的
+	--犫个位置的物品的叠加数量是大于1的
 	g_ItemMax = NpcShop:EnumItemMaxOverlay(idx);
 
 	g_ItemIdx = idx;
@@ -250,7 +250,7 @@ function Shop_MBuy_Open( idx )
 
 	Shop_MBuy_UpdateCurMoneyInfo(g_ItemDefaultNum)
 
-	-- 隐藏最大按钮 移植不开放这个功能
+	-- 隐藏最大按钮 移植不开放犫个功能
 	-- Shop_MBuy_MAX : Hide()
 
 	this:Show();
@@ -330,7 +330,7 @@ end
 
 function Shop_MBuy_CalMax()
 
-	if g_Shop_MBuy_DaHuaQiXiShop_Flag then --大话七夕商店批量购买
+	if g_Shop_MBuy_DaHuaQiXiShop_Flag then --??????????
 		Shop_MBuy_InputNum:SetText(tostring(g_Shop_MBuy_DaHuaQiXiShop_MaxNum))
 		return
 	end
@@ -341,7 +341,7 @@ function Shop_MBuy_CalMax()
 	local theAction = EnumAction(g_ItemIdx, "boothitem");
 	
 	
-	local 	nMaxCount = CalcItemSpace_BindProperty(theAction:GetItemTableIndex()) --根据背包计算出的最大可放物品个数
+	local 	nMaxCount = CalcItemSpace_BindProperty(theAction:GetItemTableIndex()) --????????????????
 	--数量为零 格子不够
 	if nMaxCount == 0 then
 		local SpaceType = CalcItemSpaceType(theAction:GetItemTableIndex())
@@ -402,7 +402,7 @@ function Shop_MBuy_TextChanged()
 		end
 	end
 
-	if g_Shop_MBuy_DaHuaQiXiShop_Flag then --大话七夕商店批量购买
+	if g_Shop_MBuy_DaHuaQiXiShop_Flag then --??????????
 		Shop_MBuy_UpdateCurMoney_DaHuaQiXiShop(num)
 		return
 	end
@@ -429,7 +429,7 @@ function Shop_MBuy_BuyMulti_Clicked()
 	if g_Shop_MBuy_DaHuaQiXiShop_Flag and g_Shop_MBuy_DaHuaQiXiShop_ID >= 0 then
 			-- 大话七夕商店批量购买，需要二次确认
 			if num > g_Shop_MBuy_DaHuaQiXiShop_MaxNum then
-				PushDebugMessage("#{DHSD_20240522_31}") -- 您输入的数量不符合规定。
+				PushDebugMessage("#{DHSD_20240522_31}") -- ????????????
 			else
 				PushEvent("DAHUAQIXI_SHOP_UPDATE", "on_confirm", g_Shop_MBuy_DaHuaQiXiShop_ID, num)
 				this:Hide()
@@ -438,8 +438,8 @@ function Shop_MBuy_BuyMulti_Clicked()
 		NpcShop:BulkBuyItem(g_ItemIdx,num, g_bFromRecentBooth);
 		Shop_MBuy_Close_Clicked()
 	else
-		if g_Shop_MBuy_DaHuaQiXiShop_Flag then --大话七夕商店批量购买
-			PushDebugMessage("#{DHSD_20240522_31}") -- 您输入的数量不符合规定。
+		if g_Shop_MBuy_DaHuaQiXiShop_Flag then --??????????
+			PushDebugMessage("#{DHSD_20240522_31}") -- ????????????
 		else
 			PushDebugMessage("#{FFSDGZ_120615_47}")
 		end

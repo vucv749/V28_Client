@@ -3,9 +3,9 @@ local g_ShengWang_Choose_Frame_UnifiedYPosition;
 
 local g_ShengWang_AutoRunList=
 {
-	[1]={PosX=63,PosZ=53,SceneId=613,NPCName="Ä«Öª³î"},
-	[2]={PosX=37,PosZ=119,SceneId=614,NPCName="½­ÐÐÔÆ"},
-	[3]={PosX=65,PosZ=52,SceneId=615,NPCName="Èî·ãÃß"},
+	[1]={PosX=63,PosZ=53,SceneId=613,NPCName="M£c Tri S¥u"},
+	[2]={PosX=37,PosZ=119,SceneId=614,NPCName="Giang Hành Vân"},
+	[3]={PosX=65,PosZ=52,SceneId=615,NPCName="Nguy­n Phong Miên"},
 }
 
 

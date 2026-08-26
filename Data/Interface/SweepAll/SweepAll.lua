@@ -4,13 +4,13 @@ local g_SweepAll_Frame_UnifiedYPosition;
 
 local g_nContentButton = {}
 
---按照扫荡等级进行排序
+--按牋扫荡等级进行排序
 local g_SweepAll_Index = {}
 
 local g_SweepAll_MonthCardMF= 752
 local g_SweepAll_DayCardMF= 753
-local g_SweepAll_SeckillTequanData= 813--扫荡特权开始时间
-local g_SweepAll_SeckillTequanDayCount = 943 --特权扫荡当天记录 MD号 MD_TQSD_DAYCOUNT=943        --特权扫荡每日两次，日清 11 22 3
+local g_SweepAll_SeckillTequanData= 813--????????
+local g_SweepAll_SeckillTequanDayCount = 943 --???????? MD? MD_TQSD_DAYCOUNT=943        --????????,?? 11 22 3
 
 function SweepAll_PreLoad()
 	-- 游戏窗口尺寸发生了变化
@@ -49,7 +49,7 @@ function SweepAll_OnEvent(event)
 				-- this:Show()
 				-- SweepAll_On_Open()
 			else
-				--关闭激活窗口
+				--关睜激活窗口
 				if IsWindowShow("SweepAll_Activate") then
 					CloseWindow("SweepAll_Activate", true)
 				end
@@ -265,7 +265,7 @@ function SweepAll_On_Open()
 			--ItemBar:SetButton2Text("#{JBSD_220210_63}")
 		end
 		--判断是否可以银币扫荡，可以银币扫荡的话金币扫荡按钮就要隐藏
-		if  moneyLevel < 1 or isCanYinbi < 1 or costYinbi < 1 then--金币扫荡等级也得判断，因为银币扫荡基于金币扫荡
+		if  moneyLevel < 1 or isCanYinbi < 1 or costYinbi < 1 then--??????????,????????????
 			ItemBar:SetButton5Hide()
 		else
 			ItemBar:SetButton5Show()
@@ -301,7 +301,7 @@ function SweepAll_On_Open()
 		else
                     g_nContentButton[nButtonIndex].ItemBar:SetButton4Tips("#{TQJF_221108_10}")
 		end
-		--隐藏普通、金币、特权、银币扫荡按钮，显示扫荡中按钮
+		--隐藏茽通、金币、特权、银币扫荡按钮，显示扫荡中按钮
 		g_nContentButton[nButtonIndex].ItemBar:SetButton4Show()
 		g_nContentButton[nButtonIndex].ItemBar:SetButton3Hide()
 		g_nContentButton[nButtonIndex].ItemBar:SetButton2Hide()
@@ -330,15 +330,15 @@ end
 function SweepAll_OnButtonClick()
 	local isInSecKill,fubenidx,BossIndex,DoubleExp ,MoneySweep, TeQuanSweep,CheckHuodongTime,Jinbidaibi,YinBiSweep,YinbiDaibi = GetSecKillData()
 	
-	if isInSecKill > 0 and ( MoneySweep == 1 and TeQuanSweep ~= 1 and YinBiSweep ~= 1) then--正在金币扫荡中
+	if isInSecKill > 0 and ( MoneySweep == 1 and TeQuanSweep ~= 1 and YinBiSweep ~= 1) then--???????
 		PushDebugMessage("#{JBSD_220210_67}")
 		return
 	end
-	if isInSecKill > 0 and ( MoneySweep ~= 1 and TeQuanSweep == 1 and YinBiSweep ~= 1) then--正在特权扫荡中
+	if isInSecKill > 0 and ( MoneySweep ~= 1 and TeQuanSweep == 1 and YinBiSweep ~= 1) then--???????
 		PushDebugMessage("#{TQJF_221108_35}")
 		return
 	end
-	if isInSecKill > 0 and ( MoneySweep ~= 1 and TeQuanSweep ~= 1 and YinBiSweep == 1) then--正在银币扫荡中
+	if isInSecKill > 0 and ( MoneySweep ~= 1 and TeQuanSweep ~= 1 and YinBiSweep == 1) then--???????
 		PushDebugMessage("#{YBSD_231107_16}")
 		return
 	end
@@ -359,15 +359,15 @@ end
 function SweepAll_OnMoneyButtonClick()
 	local isInSecKill,fubenidx,BossIndex,DoubleExp ,MoneySweep, TeQuanSweep,CheckHuodongTime,Jinbidaibi,YinBiSweep,YinbiDaibi = GetSecKillData()
 
-	if isInSecKill > 0 and ( MoneySweep ~= 1 and TeQuanSweep ~= 1 and YinBiSweep ~= 1 ) then--正在普通扫荡中
+	if isInSecKill > 0 and ( MoneySweep ~= 1 and TeQuanSweep ~= 1 and YinBiSweep ~= 1 ) then--???????
 		PushDebugMessage("#{JBSD_220210_66}")
 		return
 	end
-	if isInSecKill > 0 and (  TeQuanSweep == 1 ) then--正在特权扫荡中
+	if isInSecKill > 0 and (  TeQuanSweep == 1 ) then--???????
 		PushDebugMessage("#{TQJF_221108_38}")
 		return
 	end
-	if isInSecKill > 0 and (  YinBiSweep == 1 ) then--正在银币扫荡中
+	if isInSecKill > 0 and (  YinBiSweep == 1 ) then--???????
 		PushDebugMessage("#{YBSD_231107_16}")
 		return
 	end
@@ -387,15 +387,15 @@ end
 function SweepAll_OnPrivilegeButtonClick()
 	local isInSecKill,fubenidx,BossIndex,DoubleExp ,MoneySweep, TeQuanSweep,CheckHuodongTime,Jinbidaibi,YinBiSweep,YinbiDaibi = GetSecKillData()
 
-	if isInSecKill > 0 and ( MoneySweep ~= 1 and TeQuanSweep ~= 1 and YinBiSweep ~= 1)  then--正在普通扫荡中
+	if isInSecKill > 0 and ( MoneySweep ~= 1 and TeQuanSweep ~= 1 and YinBiSweep ~= 1)  then--???????
 		PushDebugMessage("#{TQJF_221108_36}")
 		return
 	end
-	if isInSecKill > 0 and ( MoneySweep == 1 )  then--正在金币扫荡中
+	if isInSecKill > 0 and ( MoneySweep == 1 )  then--???????
 		PushDebugMessage("#{TQJF_221108_37}")
 		return
 	end
-	if isInSecKill > 0 and ( YinBiSweep == 1 )  then--正在银币扫荡中
+	if isInSecKill > 0 and ( YinBiSweep == 1 )  then--???????
 		PushDebugMessage("#{YBSD_231107_16}")
 		return
 	end
@@ -405,7 +405,7 @@ function SweepAll_OnPrivilegeButtonClick()
 
 	local FubenId = SweepAll_SecKillGetFubenID(nIndex+1)
 	local PrivilegedExclusiveFlag = SweepAll_SecKillGetPrivilegedExclusive(nIndex + 1)
-	--判断MD中是否已经记录了两个互斥标记 begin 其实这里直接判断是否进行了两次特权扫荡就行
+	--判断MD中是否已经记录了两个互斥标记 begin 其实犫里直接判断是否进行了两次特权扫荡就行
 	local dayCount = DataPool:LuaFnGetMD(g_SweepAll_SeckillTequanDayCount)
 	--PushDebugMessage(tostring(dayCount))--测试
 	local alreadyCount = math.mod(dayCount,10)
@@ -423,7 +423,7 @@ function SweepAll_OnPrivilegeButtonClick()
 		PushDebugMessage("#{TQJF_230425_03}")
 		return
 	end
-	if PrivilegedExclusiveFlag~=firstFlag and PrivilegedExclusiveFlag~=secondFlag and alreadyCount == 2 then--点的特权扫荡副本 不是已经特权扫荡过的副本之一 并且 当前已经特权扫荡两次了
+	if PrivilegedExclusiveFlag~=firstFlag and PrivilegedExclusiveFlag~=secondFlag and alreadyCount == 2 then--???????? ?????????????? ?? ???????????
 		PushDebugMessage("#{TQJF_230425_03}")
 		return
 	end
@@ -439,15 +439,15 @@ function SweepAll_OnSilverMoneyButtonClick()
 	--PushDebugMessage("银币扫荡")
 	local isInSecKill,fubenidx,BossIndex,DoubleExp ,MoneySweep, TeQuanSweep,CheckHuodongTime,Jinbidaibi,YinBiSweep,YinbiDaibi = GetSecKillData()
 
-	if isInSecKill > 0 and ( MoneySweep ~= 1 and TeQuanSweep ~= 1 and YinBiSweep ~= 1) then--正在普通扫荡
+	if isInSecKill > 0 and ( MoneySweep ~= 1 and TeQuanSweep ~= 1 and YinBiSweep ~= 1) then--??????
 		PushDebugMessage("#{YBSD_231107_13}")
 		return
 	end
-	if isInSecKill > 0 and ( MoneySweep == 1 ) then--正在金币扫荡
+	if isInSecKill > 0 and ( MoneySweep == 1 ) then--??????
 		PushDebugMessage("#{YBSD_231107_13}")
 		return
 	end
-	if isInSecKill > 0 and ( TeQuanSweep == 1 ) then--正在特权扫荡
+	if isInSecKill > 0 and ( TeQuanSweep == 1 ) then--??????
 		PushDebugMessage("#{YBSD_231107_13}")
 		return
 	end
@@ -457,7 +457,7 @@ function SweepAll_OnSilverMoneyButtonClick()
 	local FubenId = SweepAll_SecKillGetFubenID(nIndex+1)
 
 	if FubenId ~= -1 then
-		--第二个参数  是否是银币扫荡 0普通 1金币 2特权 3银币
+		--第二个参数  是否是银币扫荡 0茽通 1金币 2特权 3银币
 		OpenSecKillPage(FubenId,3)
 	end
 end
@@ -560,27 +560,27 @@ function SweepAll_OnSweepButtonClick()
 	local isInSecKill,fubenidx,BossIndex,DoubleExp ,MoneySweep, TeQuanSweep,CheckHuodongTime,Jinbidaibi,YinBiSweep,YinbiDaibi = GetSecKillData()
 	--PushDebugMessage("isInSecKill="..isInSecKill.." MoneySweep="..MoneySweep)
 	
-	if isInSecKill > 0 and ( MoneySweep ~= 1 and TeQuanSweep ~= 1 and YinBiSweep ~= 1)  then--普通扫荡中
+	if isInSecKill > 0 and ( MoneySweep ~= 1 and TeQuanSweep ~= 1 and YinBiSweep ~= 1)  then--?????
 		SweepAll_OnButtonClick()
 		return
 	end
 	
-	if isInSecKill > 0 and ( MoneySweep == 1 and TeQuanSweep ~= 1 and YinBiSweep ~= 1)  then--金币扫荡中
+	if isInSecKill > 0 and ( MoneySweep == 1 and TeQuanSweep ~= 1 and YinBiSweep ~= 1)  then--?????
 		SweepAll_OnMoneyButtonClick()
 		return
 	end
 
-	if isInSecKill > 0 and ( MoneySweep ~= 1 and TeQuanSweep == 1 and YinBiSweep ~= 1)  then--特权扫荡中
+	if isInSecKill > 0 and ( MoneySweep ~= 1 and TeQuanSweep == 1 and YinBiSweep ~= 1)  then--?????
 		SweepAll_OnPrivilegeButtonClick()
 		return
 	end
 
-	if isInSecKill > 0 and ( MoneySweep ~= 1 and TeQuanSweep ~= 1 and YinBiSweep == 1)  then--银币扫荡中
+	if isInSecKill > 0 and ( MoneySweep ~= 1 and TeQuanSweep ~= 1 and YinBiSweep == 1)  then--?????
 		SweepAll_OnSilverMoneyButtonClick()
 		return
 	end
 	
-	PushDebugMessage("内部错误")
+	PushDebugMessage("B阯 trong sai l")
 
 end
 

@@ -1,12 +1,12 @@
 
-local SongliaoWarSingle_Battle_OneTimeBegin = 10090  --SongLiaoWarSingle.lua ÀïÃæÓÐÒ»ÑùµÄºê
+local SongliaoWarSingle_Battle_OneTimeBegin = 10090  --SongLiaoWarSingle.lua ???????
 local SongliaoWarSingle_Battle_OneTimeEnd = 10390
 local SongliaoWarSingle_Battle_TwoTimeBegin = 10450
 local SongliaoWarSingle_Battle_TwoTimeEnd = 10750
 local SongliaoWarSingle_Battle_ThreeTimeBegin = 10810
 local SongliaoWarSingle_Battle_ThreeTimeEnd = 11110
 local SongliaoWarSingle_Battle_FourTimeBegin = 11170
-local SongliaoWarSingle_Battle_FourTimeEnd = 11470--SongLiaoWarSingle.lua ÀïÃæÓÐÒ»ÑùµÄºê
+local SongliaoWarSingle_Battle_FourTimeEnd = 11470--SongLiaoWarSingle.lua ???????
 local SongliaoWarSingle_Battle_Wait = "set:SongLiao01 image:SL_Wait"
 local SongliaoWarSingle_Battle_JiHuo = "set:SongLiao01 image:SL_Ping"
 
@@ -143,19 +143,19 @@ function SongliaoWarSingle_Goto()
 	if nTick < SongliaoWarSingle_Battle_OneTimeBegin-60 then
 		PushDebugMessage("#{XSLDZ_180521_308}")
 	elseif nTick < SongliaoWarSingle_Battle_OneTimeEnd then
-		local tooltip = ScriptGlobal_Format("#{XSLDZ_180521_309}","ÇàÁú")
+		local tooltip = ScriptGlobal_Format("#{XSLDZ_180521_309}","Thanh Long")
 		PushDebugMessage(tooltip)
 		AutoRunToTarget(280.13, 195.09)		
 	elseif nTick < SongliaoWarSingle_Battle_TwoTimeEnd then
-		local tooltip = ScriptGlobal_Format("#{XSLDZ_180521_309}","°×»¢")
+		local tooltip = ScriptGlobal_Format("#{XSLDZ_180521_309}","BÕch H±")
 		PushDebugMessage(tooltip)
 		AutoRunToTarget(105.34, 194.68)		
 	elseif nTick < SongliaoWarSingle_Battle_ThreeTimeEnd then
-		local tooltip = ScriptGlobal_Format("#{XSLDZ_180521_309}","ÐþÎä")
+		local tooltip = ScriptGlobal_Format("#{XSLDZ_180521_309}","Huy«n Võ")
 		PushDebugMessage(tooltip)
 		AutoRunToTarget(193.83, 106.62)			
 	elseif nTick < SongliaoWarSingle_Battle_FourTimeEnd then
-		local tooltip = ScriptGlobal_Format("#{XSLDZ_180521_309}","ÖìÈ¸")
+		local tooltip = ScriptGlobal_Format("#{XSLDZ_180521_309}","Chu Tß¾c")
 		PushDebugMessage(tooltip)
 		AutoRunToTarget(192.09, 282.09)	
 	end
@@ -190,9 +190,9 @@ function SongliaoWarSingle_Battle_Fresh()
 	SongliaoWarSingle_Text3:SetText(mysucckilltext)
 
 
-	local chiyouzhanqi = ScriptGlobal_Format("#{XSLDZ_180521_249}", "ËÎ¾ü")
+	local chiyouzhanqi = ScriptGlobal_Format("#{XSLDZ_180521_249}", "T¯ng Quân")
 	if myCamp == 157 then
-		chiyouzhanqi = ScriptGlobal_Format("#{XSLDZ_180521_249}", "ÁÉ¾ü")
+		chiyouzhanqi = ScriptGlobal_Format("#{XSLDZ_180521_249}", "Liêu Quân")
 	end
 	SongliaoWarSingle_Text2:SetText(chiyouzhanqi)
 
@@ -202,10 +202,10 @@ function SongliaoWarSingle_Battle_Fresh()
 	local nStateWinner4=  CSongliaoWarData:GetStateWinner(4)
 
 	 
-	SongliaoWarSingle_Frame_JiefengZhong(1,3)  --XSLDZ_180521_304	#TÎ´½â·â
-	SongliaoWarSingle_Frame_JiefengZhong(2,3)  --XSLDZ_180521_304	#TÎ´½â·â
-	SongliaoWarSingle_Frame_JiefengZhong(3,3)  --XSLDZ_180521_304	#TÎ´½â·â
-	SongliaoWarSingle_Frame_JiefengZhong(4,3)  --XSLDZ_180521_304	#TÎ´½â·â
+	SongliaoWarSingle_Frame_JiefengZhong(1,3)  --XSLDZ_180521_304	#T???
+	SongliaoWarSingle_Frame_JiefengZhong(2,3)  --XSLDZ_180521_304	#T???
+	SongliaoWarSingle_Frame_JiefengZhong(3,3)  --XSLDZ_180521_304	#T???
+	SongliaoWarSingle_Frame_JiefengZhong(4,3)  --XSLDZ_180521_304	#T???
 
 	if nTick >= SongliaoWarSingle_Battle_FourTimeEnd then
 		SongliaoWarSingle_QLText1BK:Hide()
@@ -249,11 +249,11 @@ function SongliaoWarSingle_Battle_Fresh()
 
 	if nTick >= SongliaoWarSingle_Battle_TwoTimeEnd then
 		SongliaoWarSingle_BHHold:Show()
-		if nStateWinner2 == 1 then  --ËÎ
+		if nStateWinner2 == 1 then  --?
 			SongliaoWarSingle_BHHold:SetProperty("Image", SongliaoWarSingle_Song)
-		elseif nStateWinner2 == 2 then  --ÁÉ
+		elseif nStateWinner2 == 2 then  --?
 			SongliaoWarSingle_BHHold:SetProperty("Image", SongliaoWarSingle_Liao)
-		else  --Æ½
+		else  --?
 			SongliaoWarSingle_BHHold:SetProperty("Image", SongliaoWarSingle_Ping)
 		end
 		SongliaoWarSingle_BHImage:SetProperty("Image", "set:SongLiao02 image:SL_BH_Big2")
@@ -311,7 +311,7 @@ function SongliaoWarSingle_Battle_Fresh()
 			end
 		end
 		SongliaoWarSingle_QLTime:SetProperty("Timer", tonumber(nTick));
-		SongliaoWarSingle_Frame_JiefengZhong(1,2) --XSLDZ_180521_303	#AÕù¶áÖÐ
+		SongliaoWarSingle_Frame_JiefengZhong(1,2) --XSLDZ_180521_303	#A???
 		
 	elseif nTick >= SongliaoWarSingle_Battle_TwoTimeBegin and nTick < SongliaoWarSingle_Battle_TwoTimeEnd then
 		myScore = CSongliaoWarData:GetCampStateScore(2)
@@ -335,7 +335,7 @@ function SongliaoWarSingle_Battle_Fresh()
 			end
 		end
 		SongliaoWarSingle_BHTime:SetProperty("Timer", tonumber(nTick));
-		SongliaoWarSingle_Frame_JiefengZhong(2,2) --XSLDZ_180521_303	#AÕù¶áÖÐ
+		SongliaoWarSingle_Frame_JiefengZhong(2,2) --XSLDZ_180521_303	#A???
 	elseif nTick >= SongliaoWarSingle_Battle_ThreeTimeBegin and nTick < SongliaoWarSingle_Battle_ThreeTimeEnd then
 		myScore = CSongliaoWarData:GetCampStateScore(3)
 		nTick = SongliaoWarSingle_Battle_ThreeTimeEnd - nTick
@@ -359,7 +359,7 @@ function SongliaoWarSingle_Battle_Fresh()
 		end
 
 		SongliaoWarSingle_XWTime:SetProperty("Timer", tonumber(nTick));
-		SongliaoWarSingle_Frame_JiefengZhong(3,2) --XSLDZ_180521_303	#AÕù¶áÖÐ
+		SongliaoWarSingle_Frame_JiefengZhong(3,2) --XSLDZ_180521_303	#A???
 	elseif nTick >= SongliaoWarSingle_Battle_FourTimeBegin and nTick < SongliaoWarSingle_Battle_FourTimeEnd then
 		myScore = CSongliaoWarData:GetCampStateScore(4)
 		nTick = SongliaoWarSingle_Battle_FourTimeEnd - nTick
@@ -381,8 +381,8 @@ function SongliaoWarSingle_Battle_Fresh()
 			end
 		end
 		SongliaoWarSingle_ZQTime:SetProperty("Timer", tonumber(nTick));
-		SongliaoWarSingle_Frame_JiefengZhong(4,2) --XSLDZ_180521_303	#AÕù¶áÖÐ
-	elseif nTick < 30 then --´¦ÓÚÔ¤±¸½×¶Î ÇàÁú¼ÀÌ³¼ÀÌ³¼¤»î:xxxÃë
+		SongliaoWarSingle_Frame_JiefengZhong(4,2) --XSLDZ_180521_303	#A???
+	elseif nTick < 30 then --?????? ????????:xxx?
 		myScore = CSongliaoWarData:GetCampStateScore(1)
 		nTick = 60 - nTick
 		
@@ -391,7 +391,7 @@ function SongliaoWarSingle_Battle_Fresh()
 		--SongliaoWarSingle_Icon:SetProperty("Image",SongliaoWarSingle_Battle_Wait)
 		--SongliaoWarSingle_QLTime:SetProperty("Timer", tonumber(nTick));
 		--SongliaoWarSingle_Frame_JiefengZhong(1,1) --XSLDZ_180521_302	#A½â·âÖÐ
-	elseif (nTick < SongliaoWarSingle_Battle_OneTimeBegin and nTick > 10000 ) then --´¦ÓÚÕ½¶·½×¶Î£¬µ«ÊÇÇàÁú¼ÀÌ³Ã»ÓÐ¼¤»î  ÇàÁú¼ÀÌ³¼ÀÌ³¼¤»î:xxxÃë
+	elseif (nTick < SongliaoWarSingle_Battle_OneTimeBegin and nTick > 10000 ) then --??????,??????????  ????????:xxx?
 		myScore = CSongliaoWarData:GetCampStateScore(1)
 		nTick = SongliaoWarSingle_Battle_OneTimeBegin - nTick
 		
@@ -399,8 +399,8 @@ function SongliaoWarSingle_Battle_Fresh()
 		SongliaoWarSingle_QLTime:SetToolTip("#{XSLDZ_180521_155}")
 		--SongliaoWarSingle_Icon:SetProperty("Image",SongliaoWarSingle_Battle_Wait)
 		SongliaoWarSingle_QLTime:SetProperty("Timer", tonumber(nTick));
-		SongliaoWarSingle_Frame_JiefengZhong(1,1)--XSLDZ_180521_302	#A½â·âÖÐ
-	elseif nTick >= SongliaoWarSingle_Battle_OneTimeEnd and nTick < SongliaoWarSingle_Battle_TwoTimeBegin then --´¦ÓÚÕ½¶·½×¶Î£¬µ«ÊÇÇàÁú¼ÀÌ³Ã»ÓÐ¼¤»î  ÇàÁú¼ÀÌ³¼ÀÌ³¼¤»î:xxxÃë
+		SongliaoWarSingle_Frame_JiefengZhong(1,1)--XSLDZ_180521_302	#A???
+	elseif nTick >= SongliaoWarSingle_Battle_OneTimeEnd and nTick < SongliaoWarSingle_Battle_TwoTimeBegin then --??????,??????????  ????????:xxx?
 		myScore = CSongliaoWarData:GetCampStateScore(1)
 		nTick = SongliaoWarSingle_Battle_TwoTimeBegin - nTick
 		
@@ -413,7 +413,7 @@ function SongliaoWarSingle_Battle_Fresh()
 		SongliaoWarSingle_Client_Progress:SetProgress(50, 100)
 		SongliaoWarSingle_SongNum:SetText(tostring(0))
 		SongliaoWarSingle_LiaoNum:SetText(tostring(0))
-		SongliaoWarSingle_Frame_JiefengZhong(2,1)--XSLDZ_180521_302	#A½â·âÖÐ
+		SongliaoWarSingle_Frame_JiefengZhong(2,1)--XSLDZ_180521_302	#A???
 	elseif nTick >= SongliaoWarSingle_Battle_TwoTimeEnd and nTick < SongliaoWarSingle_Battle_ThreeTimeBegin then
 		myScore = CSongliaoWarData:GetCampStateScore(2)
 		nTick = SongliaoWarSingle_Battle_ThreeTimeBegin - nTick
@@ -439,7 +439,7 @@ function SongliaoWarSingle_Battle_Fresh()
 		SongliaoWarSingle_Client_Progress:SetProgress(50, 100)
 		SongliaoWarSingle_SongNum:SetText(tostring(0))
 		SongliaoWarSingle_LiaoNum:SetText(tostring(0))
-		SongliaoWarSingle_Frame_JiefengZhong(4,1)--XSLDZ_180521_302	#A½â·âÖÐ
+		SongliaoWarSingle_Frame_JiefengZhong(4,1)--XSLDZ_180521_302	#A???
 	end
 
 
@@ -463,25 +463,25 @@ end
 function SongliaoWarSingle_Frame_JiefengZhong(nType,jiefeng)
 
 	if 1 == nType and jiefeng == 1 then 
-	    SongliaoWarSingle_QLText1:SetText("#{XSLDZ_180521_302}") ----XSLDZ_180521_302	#A½â·âÖÐ
+	    SongliaoWarSingle_QLText1:SetText("#{XSLDZ_180521_302}") ----XSLDZ_180521_302	#A???
 		SongliaoWarSingle_QLText1BK:Show()
 		SongliaoWarSingle_QLTimeBK:Show()
 		SongliaoWarSingle_QLTime:Show()
 		SongliaoWarSingle_QLText2BK:Hide()
 	elseif 1 == nType and jiefeng == 2 then 
-	    SongliaoWarSingle_QLText1:SetText("#{XSLDZ_180521_303}") --XSLDZ_180521_303	 #AÕù¶áÖÐ
+	    SongliaoWarSingle_QLText1:SetText("#{XSLDZ_180521_303}") --XSLDZ_180521_303	 #A???
 		SongliaoWarSingle_QLText1BK:Show()
 		SongliaoWarSingle_QLTimeBK:Show()
 		SongliaoWarSingle_QLTime:Show()
 		SongliaoWarSingle_QLText2BK:Hide()
 	elseif 1 == nType and jiefeng == 3 then
-	    SongliaoWarSingle_QLText2:SetText("#{XSLDZ_180521_304}") --XSLDZ_180521_304	#TÎ´½â·â
+	    SongliaoWarSingle_QLText2:SetText("#{XSLDZ_180521_304}") --XSLDZ_180521_304	#T???
 		SongliaoWarSingle_QLText2BK:Show()
 		SongliaoWarSingle_QLTimeBK:Hide()
 		SongliaoWarSingle_QLTime:Hide()
 		SongliaoWarSingle_QLText1BK:Hide()
 	elseif 2 == nType and jiefeng == 1  then
-		SongliaoWarSingle_BHText1:SetText("#{XSLDZ_180521_302}") --XSLDZ_180521_302	#A½â·âÖÐ
+		SongliaoWarSingle_BHText1:SetText("#{XSLDZ_180521_302}") --XSLDZ_180521_302	#A???
 		SongliaoWarSingle_BHText1BK:Show()
 		SongliaoWarSingle_BHTimeBK:Show()
 		SongliaoWarSingle_BHTime:Show()

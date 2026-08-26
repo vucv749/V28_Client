@@ -54,7 +54,7 @@ end
 --===============================================
 function Fashion_Box_OnEvent(event)
 	if (event  == "UI_COMMAND") and (tonumber(arg0) == 99853101) then
-		--打开/关闭/刷新界面
+		--打开/关睜/刷新界面
 		local flag = Get_XParam_INT(0) 
 		if flag ~= nil and flag == 2 then
 			--关界面
@@ -65,10 +65,10 @@ function Fashion_Box_OnEvent(event)
 			-- 开界面or刷新界面
 			g_DaiBiNum = tonumber(Get_XParam_INT(1))
 			g_DuiHuanNum = tonumber(Get_XParam_INT(2))
-			if flag == 1 then--开界面
+			if flag == 1 then--???
 				this:Show()
 				Fashion_Box_Exchange_Update()
-			else--仅刷新
+			else--???
 				if( this:IsVisible() ) then
 					Fashion_Box_Exchange_Update()
 				end
@@ -120,7 +120,7 @@ function Fashion_Box_ResetPos()
 end
 
 --===============================================
---清空
+--清繝
 --===============================================
 function Fashion_Box_Clear()
 	g_DaiBiNum = 0
@@ -128,10 +128,10 @@ function Fashion_Box_Clear()
 end
 
 --===============================================
---关闭
+--关睜
 --===============================================
 function Fashion_Box_Close_Click()
-	--数据清空
+	--数据清繝
 	Fashion_Box_Clear()
 	--界面隐藏
 	this:Hide()
@@ -174,5 +174,5 @@ end
 --时装预览
 --===============================================
 function Fashion_Box_ItemPreview()
-	PushEvent("OPEN_DRESSPREVIEW", 10125349, 81, 52) --时装\发型\脸型
+	PushEvent("OPEN_DRESSPREVIEW", 10125349, 81, 52) --??\??\??
 end

@@ -83,8 +83,8 @@ local g_GameTime = 180
 function Kunwu_JLRH_PreLoad()
   
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-    this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+    this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 	this:RegisterEvent("UI_COMMAND")
 
 
@@ -130,7 +130,7 @@ function Kunwu_JLRH_OnEvent(event)
         Kunwu_JLRH_Frame_UnifiedPos()
     elseif (event == "ADJEST_UI_POS") then
         Kunwu_JLRH_Frame_UnifiedPos()
-	elseif event == "UI_COMMAND" and (tonumber(arg0) == 33116302) then	--服务端传数据
+	elseif event == "UI_COMMAND" and (tonumber(arg0) == 33116302) then	--??????
 	
 		local nTickCount = Get_XParam_INT(0)	
 		local nLastAnswerList1  = Get_XParam_INT(1) 
@@ -153,7 +153,7 @@ function Kunwu_JLRH_OnEvent(event)
 		this:CareObject(g_nObjID, 1)
 		Kunwu_JLRH_Frame_Updata(nTickCount, nLastAnswerList1, nLastAnswerList2, nLastAnswerList3, nAnswerList1, nAnswerList2, nAnswerList3, nAnswerGoodOrBad1, nAnswerGoodOrBad2, nAnswerGoodOrBad3, param, nIsTeamLeader, nDataId)
 		this:Show()
-	elseif event == "UI_COMMAND" and (tonumber(arg0) == 33116303) then	--服务端传数据
+	elseif event == "UI_COMMAND" and (tonumber(arg0) == 33116303) then	--??????
 		local nType = Get_XParam_INT(0)	
 		if nType == 0 then
 			this:Hide()
@@ -320,7 +320,7 @@ function Kunwu_JLRH_Frame_Hide()
     this:Hide()
 end -- end func Kunwu_JLRH_Frame_Hide()
 
--- 关闭按钮点击事件
+-- 关睜按钮点击事件
 function Kunwu_JLRH_Frame_Close_Clicked()
 	Kunwu_JLRH_Frame_Hide()
 end  -- end func Kunwu_JLRH_Frame_Close_Clicked()

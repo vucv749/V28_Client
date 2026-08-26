@@ -9,7 +9,7 @@ local g_objCared = -1
 
 function CJ_ShiQu_PreLoad()
 	this:RegisterEvent("TLCJ_OPENDROPBAG")
-	--离开场景，自动关闭
+	--离开场景，自动关睜
 	this:RegisterEvent("PLAYER_LEAVE_WORLD", false)	
 	-- 游戏窗口尺寸发生了变化
 	this:RegisterEvent("ADJEST_UI_POS")

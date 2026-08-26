@@ -1,4 +1,4 @@
---版本7日登陆礼包 通用
+--版本7葼登陆礼包 通用
 
 local g_nSelectIndex = 0;
 local g_ActionBtnCtrl2 = {}
@@ -55,8 +55,8 @@ local g_boxType = 0;
 --===============================================
 function FeelFeedBack800Gift_PreLoad()
 	this:RegisterEvent("UI_COMMAND",true)
-	this:RegisterEvent("PLAYER_LEAVE_WORLD",false)		-- 离开场景、
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--进场景关闭界面
+	this:RegisterEvent("PLAYER_LEAVE_WORLD",false)		-- ?????
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--???????
 end
 
 --===============================================

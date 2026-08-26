@@ -65,7 +65,7 @@ end
 -- 关界面
 --===============================================
 function ShuYou_DressBox_Close()
-	--数据清空
+	--数据清繝
 	ShuYou_DressBox_OnHidden()
 	--隐藏界面
 	this:Hide()

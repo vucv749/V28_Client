@@ -1,5 +1,5 @@
 
-local theNPC = -1											-- ¹¦ÄÜ NPC
+local theNPC = -1											-- ?? NPC
 local MAX_OBJ_DISTANCE = 3.0
 
 local g_Gemcompose_YuanbaoPay = 1
@@ -10,9 +10,9 @@ local g_DummyGemLayed = 0
 local g_DummyNewGem = 1
 
 local RuleTable = {
-	msgLackMoney = "ÄúÉíÉÏµÄ½ğÇ®²»×ã#{_EXCHG%d}¡£",
+	msgLackMoney = "Nhçm trên ngß¶i Ğích ti«n tài không ğü#{_EXCHG%d}.",
 	maxGrade = 9,
-	msgGradeLimited = "ºÏ³ÉµÄ±¦Ê¯×î¸ßµÈ¼¶Îª9¼¶£¬ÄúµÄ±¦Ê¯²»ÄÜ¼ÌĞøºÏ³É¡£",
+	msgGradeLimited = "Hşp thành Ğích bäo thÕch cao nh¤t c¤p b§c Vi C¤p 9, Nhçm Ğích bäo thÕch không th¬ tiªp tøc hşp thành.",
 	[1] = { SpecialStuff = 30900015, MoneyCost = 5000, CountTable = { [3] = { SuccOdds = 25, SuccOddsWithSpecStuff = 50, }, [4] = { SuccOdds = 50, SuccOddsWithSpecStuff = 75, }, [5] = { SuccOdds = 75, SuccOddsWithSpecStuff = 100, }, }, },
 	[2] = { SpecialStuff = 30900015, MoneyCost = 6000, CountTable = { [3] = { SuccOdds = 25, SuccOddsWithSpecStuff = 50, }, [4] = { SuccOdds = 50, SuccOddsWithSpecStuff = 75, }, [5] = { SuccOdds = 75, SuccOddsWithSpecStuff = 100, }, }, },
 	[3] = { SpecialStuff = 30900015, MoneyCost = 7000, CountTable = { [3] = { SuccOdds = 25, SuccOddsWithSpecStuff = 50, }, [4] = { SuccOdds = 50, SuccOddsWithSpecStuff = 75, }, [5] = { SuccOdds = 75, SuccOddsWithSpecStuff = 100, }, }, },
@@ -30,8 +30,8 @@ local g_ActionButton_ComposeItem
 local g_Gemcompose_Frame_UnifiedPosition
 local npcObjId = -1
 
-local g_ItemBagIndex = -1			--ºÏ³É·û±³°üË÷Òı
-local g_ComposeMode = 0				--Ä¬ÈÏ5ºÏ1
+local g_ItemBagIndex = -1			--???????
+local g_ComposeMode = 0				--??5?1
 
 local g_CurrentOdds = 0
 
@@ -40,15 +40,15 @@ local g_nMaxShowNum = 250
 -- ×¢²áÊÂ¼ş
 function Gemcompose_PreLoad()
 
-	this:RegisterEvent("UI_COMMAND")						--¼¤»î½çÃæÊÂ¼ş
-	this:RegisterEvent("COMPOSE_GEM_PUTIN_ITEM")			--±¦Ê¯ºÏ³É½çÃæ·Å½øÎïÆ·
-	this:RegisterEvent("PACKAGE_ITEM_CHANGED")			--±³°üÖĞÎïÆ·¸Ä±äĞèÒªÅĞ¶Ï
-	this:RegisterEvent("OBJECT_CARED_EVENT")				--¹Ø×¢ÊµÊ©ºÏ³ÉµÄNPC
-	this:RegisterEvent("RESUME_ENCHASE_GEM")				--ºÏ³ÉÍê±Ï
-	this:RegisterEvent("CLOSE_SYNTHESIZE_ENCHASE")			--¹Ø±Õ±¾½çÃæ
-	this:RegisterEvent("UNIT_MONEY")					--½ğÇ®±ä»¯
-	this:RegisterEvent("MONEYJZ_CHANGE")					--½»×Ó±ä»¯
-	this:RegisterEvent("BUY_ITEM")							--¿ì½İ¹ºÂò£¬¸üĞÂ½çÃæ
+	this:RegisterEvent("UI_COMMAND")						--??????
+	this:RegisterEvent("COMPOSE_GEM_PUTIN_ITEM")			--??????????
+	this:RegisterEvent("PACKAGE_ITEM_CHANGED")			--???????????
+	this:RegisterEvent("OBJECT_CARED_EVENT")				--???????NPC
+	this:RegisterEvent("RESUME_ENCHASE_GEM")				--????
+	this:RegisterEvent("CLOSE_SYNTHESIZE_ENCHASE")			--?????
+	this:RegisterEvent("UNIT_MONEY")					--????
+	this:RegisterEvent("MONEYJZ_CHANGE")					--????
+	this:RegisterEvent("BUY_ITEM")							--????,????
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
 	
@@ -70,7 +70,7 @@ end
 --¼à¿Ø¸÷ÖÖÊÂ¼ş
 function Gemcompose_OnEvent(event)
 	
-	if event == "UI_COMMAND" and tonumber(arg0) == 23 then	--±¦Ê¯ºÏ³É
+	if event == "UI_COMMAND" and tonumber(arg0) == 23 then	--????
 		
 		--if g_Gemcompose_YuanbaoPay == 1 or g_Gemcompose_YuanbaoPay == 0 then
 		--	Gemcompose_YuanBaoPay:SetCheck(g_Gemcompose_YuanbaoPay)
@@ -113,7 +113,7 @@ function Gemcompose_OnEvent(event)
 			return
 		end
 
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if arg1 == "distance" and tonumber( arg2 ) > MAX_OBJ_DISTANCE or arg1 == "destroy" then
 			Gemcompose_Cancel_Clicked()
 		end
@@ -129,7 +129,7 @@ function Gemcompose_OnEvent(event)
 		return
 	end
 	
-	if event == "BUY_ITEM" and this:IsVisible() then	--¿ì½İ¹ºÂò£¬¸üĞÂ½çÃæ
+	if event == "BUY_ITEM" and this:IsVisible() then	--????,????
 		local itemId = tonumber(arg1)
 		if itemId == Gemcompose_GetSpecialMaterial() then
 			Gemcompose_Update(0,tonumber(PlayerPackage:GetBagPosByItemIndex(itemId)))	
@@ -211,7 +211,7 @@ function Gemcompose_OK_Clicked()
 		return
 	end
 	
-	--ÓÃ7¼¶¼°7¼¶ÒÔÉÏ±¦Ê¯ºÏ³É¸ü¸ß¼¶±ğ±¦Ê¯µÄ¹¦ÄÜÄ¿Ç°ÒÑ¹Ø±Õ
+	--ÓÃ7¼¶¼°7¼¶ÒÔÉÏ±¦Ê¯ºÏ³É¸ü¸ß¼¶±ğ±¦Ê¯µÄ¹¦ÄÜÄ¿Ç°ÒÑ¹Ø± 
 	if nGemLevel >= 7 then
 		PushDebugMessage( "#{BSHC_090313_1}" )
 		return
@@ -249,19 +249,19 @@ function Gemcompose_OK_Clicked()
 	LifeAbility:Do_Combine(g_GemTableIndex,g_ItemBagIndex,nSel,g_CurrentOdds)
 end
 
---µã»÷È¡Ïû»òÕß¹Ø±Õ°´Å¥
+--µã»÷È¡Ïû»ò ß¹Ø± °´Å¥
 function Gemcompose_Cancel_Clicked()
 	Gemcompose_Close()
 	Gemcompose_StopCareObject()
 end
 
---¹Ø±Õ½çÃæ
+--¹Ø± ½çÃæ
 function Gemcompose_Close()
 	this:Hide()
 	Gemcompose_Clear()
 end
 
---Çå¿Õ½çÃæÔªËØ
+--Çå¿ ½çÃæÔªËØ
 function Gemcompose_Clear()
 
 	--g_Gemcompose_YuanbaoPay = Gemcompose_YuanBaoPay:GetCheck()
@@ -359,22 +359,22 @@ end
 function Gemcompose_PutInGem(bagPos)
 	
 	if Gemcompose_IsComposeItem(bagPos) == 1 then
-		PushDebugMessage("#{BSQHB_120830_09}")		--Çë·ÅÈë±¦Ê¯ºÏ³É·û¿ò
+		PushDebugMessage("#{BSQHB_120830_09}")		--?????????
 		return
 	elseif PlayerPackage:IsGem(bagPos) ~= 1 then
-		PushDebugMessage("#{BSQHB_120830_03}")		--²ÄÁÏÀàĞÍ²»·û
+		PushDebugMessage("#{BSQHB_120830_03}")		--??????
 		return
 	end
 	
 
 	local nGemLevel = PlayerPackage:GetItemSubTableIndex(bagPos, 1)
 	if nGemLevel == 8 then
-		PushDebugMessage("#{BSQHB_120830_04}")		--ÓÃ8¼¶±¦Ê¯ºÏ³É9¼¶±¦Ê¯¹¦ÄÜÄ¿Ç°ÉĞÎ´¿ª·Å
+		PushDebugMessage("#{BSQHB_120830_04}")		--?8?????9???????????
 		return
 	end
 
 	if nGemLevel == 7 then
-		PushDebugMessage("#{BSHC_090313_1}")		--7¼¶ÒÔÉÏ¹Ø±Õ
+		PushDebugMessage("#{BSHC_090313_1}")		--7?????
 		return
 	end
 		
@@ -457,10 +457,10 @@ end
 function Gemcompose_PutInComposeItem(bagPos)
 	
 	if PlayerPackage:IsGem(bagPos) == 1 then
-		PushDebugMessage("#{BSQHB_120830_08}")		--Çë·ÅÈë±¦Ê¯¿òÖĞ
+		PushDebugMessage("#{BSQHB_120830_08}")		--???????
 		return
 	elseif Gemcompose_IsComposeItem(bagPos) ~= 1 then
-		PushDebugMessage("#{BSQHB_120830_03}")		--²ÄÁÏÀàĞÍ²»·û
+		PushDebugMessage("#{BSQHB_120830_03}")		--??????
 		return
 	end
 	
@@ -470,7 +470,7 @@ function Gemcompose_PutInComposeItem(bagPos)
 	end
 	
 	if g_GemTableIndex == -1 then
-		PushDebugMessage("#{BSQHB_120830_06}")	--ÇëÏÈ·ÅÈë±¦Ê¯
+		PushDebugMessage("#{BSQHB_120830_06}")	--??????
 		return		
 	end
 	
@@ -478,7 +478,7 @@ function Gemcompose_PutInComposeItem(bagPos)
 	local nComposeItemTableIndex = PlayerPackage:GetItemTableIndex(bagPos)
 	
 	if Gemcompose_GetSpecialMaterial() == -1 then
-		PushDebugMessage("#{BSQHB_120830_06}")	--ÇëÏÈ·ÅÈë±¦Ê¯
+		PushDebugMessage("#{BSQHB_120830_06}")	--??????
 		return	
 	elseif Gemcompose_GetSpecialMaterial() ~= nComposeItemTableIndex then
 		
@@ -523,7 +523,7 @@ function Gemcompose_Special_ChoiceChanged()
 	
 		local nGemLevel = Gemcompose_GetGemLevel(g_GemTableIndex)
 		if nGemLevel == 7 and nSel ~= 1 then
-			PushDebugMessage("#{BSDJ_170811_07}")		--ºÏ³É8¼¶±¦Ê¯Ö»ÄÜÊ¹ÓÃËÄºÏÒ»Ä£Ê½
+			PushDebugMessage("#{BSDJ_170811_07}")		--??8????????????
 			Gemcompose_Special_Choice:SetCurrentSelect(1)
 			return
 		end		
@@ -721,14 +721,14 @@ function Gemcompose_GetGemLevel(nSN)
 end
 --=========================================================
 --¿ªÊ¼¹ØĞÄNPC£¬
---ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 --Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function Gemcompose_BeginCareObject( objCaredId )
 	theNPC = DataPool : GetNPCIDByServerID( objCaredId )
 	-- AxTrace( 0, 1, "theNPC0: " .. theNPC )
 	if theNPC == -1 then
-		PushDebugMessage("Î´·¢ÏÖ NPC")
+		PushDebugMessage("Chßa phát hi®n NPC")
 		this : Hide()
 		--g_Gemcompose_YuanbaoPay = Gemcompose_YuanBaoPay:GetCheck()
 		return

@@ -13,8 +13,8 @@ end
 
 
 function NewMsgBallHistory_OnLoad()
-	NewMsgBallHistory_MsgList:AddColumn( "时间", 0, 0.3 );
-	NewMsgBallHistory_MsgList:AddColumn( "标题", 1, 0.7 );
+	NewMsgBallHistory_MsgList:AddColumn( "Th秈 gian", 0, 0.3 );
+	NewMsgBallHistory_MsgList:AddColumn( "Ti陁 皤", 1, 0.7 );
 
 	NewMsgBallHistory_MsgList:SetProperty( "ColumnsSizable", "False" );
 	NewMsgBallHistory_MsgList:SetProperty( "ColumnsAdjust", "True" );
@@ -156,7 +156,7 @@ function NewMsgBallHistory_AddFriend_Clicked()
 	end
 end
 
---关闭
+--关睜
 function NewMsgBallHistory_Quit_Clicked()
 	this:Hide();
 end

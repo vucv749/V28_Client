@@ -1,4 +1,4 @@
---版本7日登陆礼包 通用
+--版本7葼登陆礼包 通用
 --修改：改奖励内容
 
 --!!!reloadscript =FeelFeedBack800
@@ -14,39 +14,39 @@ local g_FeelFeedBack800_RedPoint_2 = 0
 local g_FeelFeedBack800_PrizeList =
 {
 	[1] ={
-			[1]={ItemID = 38002780, num = 1, needbind =1,},		-- 千花逢雨礼包（稀有3选1,15天）
-			[2]={ItemID = 30501361, num = 3, needbind =1,},		-- 功力丹　
-			[3]={ItemID = 38000060, num = 1, needbind =1,},		-- 100绑定元宝	　
+			[1]={ItemID = 38002780, num = 1, needbind =1,},		-- ??????(??3?1,15?)
+			[2]={ItemID = 30501361, num = 3, needbind =1,},		-- ??? 
+			[3]={ItemID = 38000060, num = 1, needbind =1,},		-- 100????	 
 			},
 	[2] ={
-			[1]={ItemID = 30900045, num = 1, needbind =1,},		-- 天罡强化露	
-			[2]={ItemID = 30502002, num = 3, needbind =1,},		-- 高级根骨丹	
-			[3]={ItemID = 38000060, num = 1, needbind =1,},		-- 100绑定元宝　	
+			[1]={ItemID = 30900045, num = 1, needbind =1,},		-- ?????	
+			[2]={ItemID = 30502002, num = 3, needbind =1,},		-- ?????	
+			[3]={ItemID = 38000060, num = 1, needbind =1,},		-- 100???? 	
 			},
 	[3] ={
-			[1]={ItemID = 38002779, num = 1, needbind =1,},		-- 坐骑新礼包（坐骑4选1）
-			[2]={ItemID = 30008115, num = 5, needbind =1,},		-- 白银马鞍 *5
-			[3]={ItemID = 38000060, num = 1, needbind =1,},		-- 100绑定元宝	　
+			[1]={ItemID = 38002779, num = 1, needbind =1,},		-- ?????(??4?1)
+			[2]={ItemID = 30008115, num = 5, needbind =1,},		-- ???? *5
+			[3]={ItemID = 38000060, num = 1, needbind =1,},		-- 100????	 
 			},
 	[4] ={
-			[1]={ItemID = 38002519, num = 2, needbind =1,},		-- 九尾魂玉*2
-			[2]={ItemID = 30503133, num = 3, needbind =1,},		-- 千淬神玉
-			[3]={ItemID = 38000060, num = 1, needbind =1,},		-- 100绑定元宝
+			[1]={ItemID = 38002519, num = 2, needbind =1,},		-- ????*2
+			[2]={ItemID = 30503133, num = 3, needbind =1,},		-- ????
+			[3]={ItemID = 38000060, num = 1, needbind =1,},		-- 100????
 			},
 	[5] ={
-			[1]={ItemID = 20310168, num = 20,needbind =1,},		-- 金蚕丝	20	　	
-			[2]={ItemID = 38002530, num = 5, needbind =1,},		-- 兽魂升级道具*5
-			[3]={ItemID = 38000060, num = 1, needbind =1,},		-- 100绑定元宝
+			[1]={ItemID = 20310168, num = 20,needbind =1,},		-- ???	20	 	
+			[2]={ItemID = 38002530, num = 5, needbind =1,},		-- ??????*5
+			[3]={ItemID = 38000060, num = 1, needbind =1,},		-- 100????
 			},
 	[6] ={
-			[1]={ItemID = 20502003, num = 1, needbind =1,},		-- 3级秘银
-			[2]={ItemID = 38002524, num = 3, needbind =1,},		-- 鹿蜀魂玉*3
-			[3]={ItemID = 38000060, num = 1, needbind =1,},		-- 100绑定元宝
+			[1]={ItemID = 20502003, num = 1, needbind =1,},		-- 3???
+			[2]={ItemID = 38002524, num = 3, needbind =1,},		-- ????*3
+			[3]={ItemID = 38000060, num = 1, needbind =1,},		-- 100????
 			},
 	[7] ={
-			[1]={ItemID = 50313004, num = 1, needbind =1,},		-- 红宝石3级	
-			[2]={ItemID = 20501003, num = 1, needbind =1,},		-- 3级棉布	
-			[3]={ItemID = 38000060, num = 1, needbind =1,},		-- 100绑定元宝
+			[1]={ItemID = 50313004, num = 1, needbind =1,},		-- ???3?	
+			[2]={ItemID = 20501003, num = 1, needbind =1,},		-- 3???	
+			[3]={ItemID = 38000060, num = 1, needbind =1,},		-- 100????
 			},
 }
 local g_FeelFeedBack800_PrizeButton = {}
@@ -54,9 +54,9 @@ local g_FeelFeedBack800_Click = -1
 
 local g_FeelFeedBack800_7DayImage = {
 	[1] ={
-				[1]="set:FeelFeedBack1 image:FeelFeedBack_Image1",			--FeelFeedBack400_Left_image 背景图片
-				[2]="set:FeelFeedBack1 image:FeelFeedBack_Num1",				--FeelFeedBack400_Right_imageDay 艺术字天数
-				[3]="set:FeelFeedBack1 image:FeelFeedBack_D1",			--FeelFeedBack400_Right_imageDayItem 礼包名称
+				[1]="set:FeelFeedBack1 image:FeelFeedBack_Image1",			--FeelFeedBack400_Left_image ????
+				[2]="set:FeelFeedBack1 image:FeelFeedBack_Num1",				--FeelFeedBack400_Right_imageDay ?????
+				[3]="set:FeelFeedBack1 image:FeelFeedBack_D1",			--FeelFeedBack400_Right_imageDayItem ????
 				[4]="set:Seven image:Seven_day2",
 				},
 	[2] ={
@@ -102,10 +102,10 @@ local g_FeelFeedBack800_7DayImage = {
 --===============================================
 function FeelFeedBack800_PreLoad()
 	this:RegisterEvent("UI_COMMAND",true)
-	this:RegisterEvent("PLAYER_LEAVE_WORLD")		-- 离开场景
-	this:RegisterEvent("ADJEST_UI_POS",false)			-- 游戏窗口尺寸发生了变化
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)	        -- 游戏分辨率发生了变化
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--进场景关闭界面
+	this:RegisterEvent("PLAYER_LEAVE_WORLD")		-- ????
+	this:RegisterEvent("ADJEST_UI_POS",false)			-- ???????????
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)	        -- ??????????
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--???????
 
 end
 
@@ -175,8 +175,8 @@ function FeelFeedBack800_OnEvent(event)
 			g_FeelFeedBack800_MD_Date =  Get_XParam_INT( 1 );
 			g_FeelFeedBack800_MF_Date =  Get_XParam_INT( 2 );
 			g_FeelFeedBack800_MD_LastDay = Get_XParam_INT( 3 );
-			g_FeelFeedBack800_RedPoint_1 = Get_XParam_INT( 4 )		--签到页签红点
-			g_FeelFeedBack800_RedPoint_2 = Get_XParam_INT( 5 )  	-- 周活跃页签红点
+			g_FeelFeedBack800_RedPoint_1 = Get_XParam_INT( 4 )		--??????
+			g_FeelFeedBack800_RedPoint_2 = Get_XParam_INT( 5 )  	-- ???????
 			FeelFeedBack800_7Day_Update()
 			local nMDLast = math.mod(g_FeelFeedBack800_MD_LastDay,10000)
 			local nMDMonth = math.floor(nMDLast/100)
@@ -186,14 +186,14 @@ function FeelFeedBack800_OnEvent(event)
 		elseif this:IsVisible() then
 			g_FeelFeedBack800_MD_Date =  Get_XParam_INT( 1 );
 			g_FeelFeedBack800_MF_Date =  Get_XParam_INT( 2 );
-			g_FeelFeedBack800_RedPoint_1 = Get_XParam_INT( 3 )		--签到页签红点
-			g_FeelFeedBack800_RedPoint_2 = Get_XParam_INT( 4 )  	-- 周活跃页签红点
+			g_FeelFeedBack800_RedPoint_1 = Get_XParam_INT( 3 )		--??????
+			g_FeelFeedBack800_RedPoint_2 = Get_XParam_INT( 4 )  	-- ???????
 			FeelFeedBack800_7Day_Update()
 		end	
 	elseif (event == "HIDE_ON_SCENE_TRANSED") then
 		FeelFeedBack800_Close()
 	elseif (event == "UI_COMMAND" and tonumber(arg0) == 79201203 ) then
-		--是否打开了我们的这个界面 for开着页面跨天
+		--是否打开了我们的犫个界面 for开着页面跨天
 		if(IsWindowShow("FeelFeedBack800")) then
 			Variable:SetVariable("ZhouHuoYue", FeelFeedBack800_Frame:GetProperty("UnifiedPosition"), 1);
 			g_resetflag = 1
@@ -345,12 +345,12 @@ function FeelFeedBack800_Click(nIndex)
 	g_FeelFeedBack800_7DayButtom[nIndex].Button:SetCheck(1)
 
 
-	--看一下这页是不是可以打开
+	--看一下犫页是不是可以打开
 	local nData1 = g_FeelFeedBack800_MD_Date
 	local nTimes = math.mod(nData1,100)
 
 	if nIndex > nTimes then
-		--第X日可领取
+		--第X葼可领取
 		FeelFeedBack800_Right_Button1:Disable()
 		FeelFeedBack800_Right_Button1:SetProperty("DisabledImage",g_FeelFeedBack800_7DayImage[nIndex][4])
 	else

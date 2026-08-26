@@ -6,8 +6,8 @@ local g_Frame_UnifiedPosition
 --**********************************
 function HerosReturns_PreLoad()
 
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED");	-- 游戏分辨率发生了变化
-	this:RegisterEvent("UI_COMMAND")				-- 界面
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED");	-- ??????????
+	this:RegisterEvent("UI_COMMAND")				-- ??
 
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")
 
@@ -72,10 +72,10 @@ end
 function HerosReturns_Clicked( nIndex )
 
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "OnOpenUI" ); 		-- 脚本号
-		Set_XSCRIPT_ScriptID( 808110 );						-- 脚本编号
+		Set_XSCRIPT_Function_Name( "OnOpenUI" ); 		-- ???
+		Set_XSCRIPT_ScriptID( 808110 );						-- ????
 		Set_XSCRIPT_Parameter(0, 1)
-		Set_XSCRIPT_ParamCount( 1 );						-- 参数个数
+		Set_XSCRIPT_ParamCount( 1 );						-- ????
 	Send_XSCRIPT()
 	
 end

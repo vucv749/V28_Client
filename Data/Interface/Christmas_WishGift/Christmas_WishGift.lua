@@ -156,7 +156,7 @@ function Christmas_WishGift_Update(MDRecordData)
 	end
 
 --	--12.25 20:00之前锁定
---	--日期
+--	--葼期
 --	if nXYValue >= g_XinYuanPointSt[3] and nGetFlag[3] == 0 then
 --		local curDay = tonumber(DataPool:GetServerDayTime());
 --		if curDay > 20221225 and curDay <= 20221231 then

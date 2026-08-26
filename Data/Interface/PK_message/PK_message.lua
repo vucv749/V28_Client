@@ -23,7 +23,7 @@ function PK_message_PK_Input_ID_OK_Clicked()
     local ID = PK_Input_ID:GetText()
 
     if( "" == ID ) then
-        ShowNotice( "ÊäÈëID²»ÄÜÎª¿Õ" )
+        ShowNotice( "ID không ğßşc ğ¬ tr¯ng" )
     else
         DuelByGuid_OKClicked( ID )
         this:Hide();
@@ -35,7 +35,7 @@ function PK_message_PK_Input_Name_OK_Clicked()
     local Name = PK_Input_Name:GetText()
 
     if( "" == Name ) then    
-        ShowNotice( "ÊäÈëÃû×Ö²»ÄÜÎª¿Õ" )        
+        ShowNotice( "H÷ tên không ğßşc ğ¬ tr¯ng" )        
     else
         DuelByName_OKClicked( Name )
         this:Hide();   

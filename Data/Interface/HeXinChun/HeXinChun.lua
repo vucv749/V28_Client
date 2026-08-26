@@ -1,4 +1,4 @@
--- 移植-新春签到活动-天禧春华战江湖
+-- 移植-新春签到活动-天禧春华牻江湖
 --贺新春
 -- !!!reloadscript =HeXinChun
 local g_HeXinChun_Frame_UnifiedXPosition
@@ -19,7 +19,7 @@ local g_HeXinChun_DataRefreshTime = 0
 local g_HeXinChun_BeginTime = 20210211
 local g_HeXinChun_EndTime = 20210218
 
---战江湖时间
+--牻江湖时间
 local g_HeXinChun_ZhanJiangHuBegin = 20210219
 local g_HeXinChun_ZhanJiangHuEnd = 20210226
 
@@ -40,7 +40,7 @@ local g_HeXinChun_DayRewardState =
 	[8] = 0,
 }
 
---除夕到初七日期
+--除夕到初七葼期
 local g_HeXinChun_Day = 
 {
 	[1] = "11",
@@ -320,7 +320,7 @@ function HeXinChun_RefreshAll()
 		if theAction:GetID() ~= 0 then
 			g_HeXinChun_DayRewardButtons[i].Icon:SetActionItem(theAction:GetID())
 		end
-		--显示日期
+		--显示葼期
 		if(DataPool:DiffDayCount(g_HeXinChun_BeginTime,nCurDay) + 1 == i) then
 			g_HeXinChun_DayRewardButtons[i].date:SetProperty("Image",g_HeXinChun_Day2Name[i])
 		else
@@ -386,7 +386,7 @@ function HeXinChun_AskData(bOpen)
 end
 
 --================================================
--- 是否战江湖活动时间
+-- 是否牻江湖活动时间
 --================================================
 function HeXinChun_ZhanJiangHuIsOpen()
 	local curDay = tonumber(DataPool:GetServerDayTime());

@@ -1,17 +1,17 @@
 
---今日游戏进度
+--今葼游戏进度
 --author:dengxx 2009.07.19
 local objCared = -1
 local MAX_OBJ_DISTANCE = 3.0
 local SalaryTask_ActList = {
-			[1]= {name="#{GZRW_XML_6}",  prog="/2", tip="#{GZRW_090715_02}",}, --棋局活动
-			[2]= {name="#{GZRW_XML_7}",  prog="/2", tip="#{GZRW_090715_03}",}, --一个都不能跑
-			[3]= {name="#{GZRW_XML_8}",  prog="/20",tip="#{GZRW_090715_04}",}, --师门门派任务
-			[4]= {name="#{GZRW_XML_9}",  prog="/40",tip="#{GZRW_090715_05}",},--勇闯天劫楼
-			[5]= {name="#{GZRW_XML_10}", prog="/4", tip="#{GZRW_090715_06}",},--幸运快活三活动
-			[6]= {name="#{GZRW_XML_11}", prog="/2", tip="#{GZRW_090715_07}",},--挖宝
-			[7]= {name="#{GZRW_XML_12}", prog="/3", tip="#{GZRW_090715_08}",},--贼兵入侵
-			[8]= {name="#{GZRW_XML_13}", prog="/3", tip="#{GZRW_090715_09}",},--偷袭门派			
+			[1]= {name="#{GZRW_XML_6}",  prog="/2", tip="#{GZRW_090715_02}",}, --????
+			[2]= {name="#{GZRW_XML_7}",  prog="/2", tip="#{GZRW_090715_03}",}, --??????
+			[3]= {name="#{GZRW_XML_8}",  prog="/20",tip="#{GZRW_090715_04}",}, --??????
+			[4]= {name="#{GZRW_XML_9}",  prog="/40",tip="#{GZRW_090715_05}",},--?????
+			[5]= {name="#{GZRW_XML_10}", prog="/4", tip="#{GZRW_090715_06}",},--???????
+			[6]= {name="#{GZRW_XML_11}", prog="/2", tip="#{GZRW_090715_07}",},--??
+			[7]= {name="#{GZRW_XML_12}", prog="/3", tip="#{GZRW_090715_08}",},--????
+			[8]= {name="#{GZRW_XML_13}", prog="/3", tip="#{GZRW_090715_09}",},--????			
 }
 
 --taskIndex:  1:棋局活动
@@ -93,7 +93,7 @@ end
 -- 鼠标点击具体活动后的相应函数
 function SalaryTaskList_ListCtl_OnSelectionChanged()
 	SalaryTaskList_DetailDesc:ClearAllElement()
-	local nSel = SalaryTaskList_ListCtl:GetSelectItem()	-- 当前选择的行号
+	local nSel = SalaryTaskList_ListCtl:GetSelectItem()	-- ???????
 	if nSel >= 0 then
 		SalaryTaskList_DetailDesc:AddTextElement(SalaryTask_ActList[nSel+1].tip)
 	else
@@ -102,7 +102,7 @@ function SalaryTaskList_ListCtl_OnSelectionChanged()
   SalaryTaskList_DetailDesc:Show()
 end
 
--- 关闭
+-- 关睜
 function SalaryTaskList_OnClosed()
 	SalaryTaskList_DetailDesc:ClearAllElement()
 	this:Hide()

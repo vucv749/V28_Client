@@ -114,7 +114,7 @@ function Redenvelope_Send_OnEvent(event)
 end
 
 --**********************************
---关闭UI
+--关睜UI
 --**********************************
 function Redenvelope_Send_CloseUI()
     this:Hide();
@@ -151,7 +151,7 @@ function Redenvelope_Send_Open()
     RedPacket_Send_Range:SetCurrentSelect(ChannelType);
     --设置发送第几个口令
     RedPacket_Send_Word:SetCurrentSelect(0);
-    --关闭口令按钮
+    --关睜口令按钮
     RedPacket_Send_WordCheck:SetCheck(0);
 
     --更新UI界面
@@ -837,7 +837,7 @@ function Redenvelope_Send_History_Clicked()
 end
 
 --**********************************
---关闭
+--关睜
 --**********************************
 function RedPacket_Send_Close_Clicked()
     this:Hide();

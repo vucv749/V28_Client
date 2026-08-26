@@ -44,7 +44,7 @@ function PS_Search_OnEvent(event)
 			return;
 		end
 		
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			g_InitiativeClose = 1;
 			this:Hide();
@@ -74,16 +74,16 @@ function PS_Search_List_Selected()
 		return;
 	end
 	
-	if(g_CurPage == PAGE_ITEM)    then			--ÎïÆ·Ò³
+	if(g_CurPage == PAGE_ITEM)    then			--???
 		PlayerShop:FindShop("item",nSelect+1);
-	elseif(g_CurPage == PAGE_PET) then			--ÕäÊÞÒ³
+	elseif(g_CurPage == PAGE_PET) then			--???
 		PlayerShop:FindShop("pet",nSelect+1);
 		
 	end
 end
 
 --===============================================
--- µã»÷°´ÕÕÉÌ»áµêÆÌID²éÕÒµÄ"²éÕÒ"°´Å¥
+-- µã»÷°´  ÉÌ»áµêÆÌID²é ÒµÄ"²é Ò"°´Å¥
 --===============================================
 function PS_Search_SearchShopID_Clicked()
 	local shopID = PS_Search_Editbox:GetText()
@@ -99,19 +99,19 @@ function PS_Search_UpdateFrame(nPage)
 	
 	PS_Search_SetTabColor(nPage);
 	PS_Search_List:ClearListBox();
-	if(nPage == PAGE_ITEM)    then					--ÎïÆ·Ò³
-		PS_Search_List:AddItem("ÎïÆ·µê",0)
-		PS_Search_List:AddItem("±¦Ê¯µê",1)
-		PS_Search_List:AddItem("ÎäÆ÷µê",2)
-		PS_Search_List:AddItem("»¤¼×µê",3)
-		PS_Search_List:AddItem("²ÄÁÏµê",4)
+	if(nPage == PAGE_ITEM)    then					--???
+		PS_Search_List:AddItem("V§t ph¦m Ðiªm",0)
+		PS_Search_List:AddItem("Bäo thÕch Ðiªm",1)
+		PS_Search_List:AddItem("Vû khí ðiªm",2)
+		PS_Search_List:AddItem("Hµ giáp Ðiªm",3)
+		PS_Search_List:AddItem("Tài li®u Ðiªm",4)
 		
-		PS_Search_All:SetText("È«²¿ÎïÆ·Àà");
+		PS_Search_All:SetText("Toàn bµ v§t ph¦m LoÕi");
 
-	elseif(nPage == PAGE_PET) then 					--ÕäÊÞÒ³
-		PS_Search_List:AddItem("ÕäÊÞµê",0)
+	elseif(nPage == PAGE_PET) then 					--???
+		PS_Search_List:AddItem("CØa hàng Trân Thú",0)
 
-		PS_Search_All:SetText("È«²¿ÕäÊÞÀà");
+		PS_Search_All:SetText("Toàn bµ Trân Thú LoÕi");
 		
 	end
 end
@@ -129,10 +129,10 @@ end
 --===============================================
 function PS_Search_All_Clicked()
 	
-	if(g_CurPage == PAGE_ITEM)    then			--ÎïÆ·Ò³
+	if(g_CurPage == PAGE_ITEM)    then			--???
 		PlayerShop:FindShop("item", -1);
 	
-	elseif(g_CurPage == PAGE_PET) then			--ÕäÊÞÒ³
+	elseif(g_CurPage == PAGE_PET) then			--???
 		PlayerShop:FindShop("pet", -1);
 		
 	end
@@ -140,7 +140,7 @@ function PS_Search_All_Clicked()
 end
 
 --===============================================
--- TabÉÏµÄ×ÖÌåÑÕÉ«
+-- TabÉÏµÄ×ÖÌåÑ É«
 --===============================================
 function PS_Search_SetTabColor(nPage)
 
@@ -148,11 +148,11 @@ function PS_Search_SetTabColor(nPage)
 	local noselColor = "#e010101";
 
 	if( nPage == PAGE_ITEM )		then
-		PS_Search_Check_Item:SetText(selColor.. "ÎïÆ·");
-		PS_Search_Check_Pet:SetText(noselColor.. "ÕäÊÞ");
+		PS_Search_Check_Item:SetText(selColor.. "V§t ph¦m");
+		PS_Search_Check_Pet:SetText(noselColor.. "Trân Thú");
 	elseif( nPage == PAGE_PET )	then
-		PS_Search_Check_Item:SetText(noselColor.. "ÎïÆ·");
-		PS_Search_Check_Pet:SetText(selColor.. "ÕäÊÞ");
+		PS_Search_Check_Item:SetText(noselColor.. "V§t ph¦m");
+		PS_Search_Check_Pet:SetText(selColor.. "Trân Thú");
 	end
 
 end

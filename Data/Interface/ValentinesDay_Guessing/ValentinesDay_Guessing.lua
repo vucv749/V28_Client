@@ -106,14 +106,14 @@ function ValentinesDay_Guessing_Update()
 	end
 end
 --=========================================================
--- 控件事件 - 关闭
+-- 控件事件 - 关睜
 --=========================================================
 function ValentinesDay_Guessing_Close()
 	ValentinesDay_Guessing_OnHiden()
 end
 
 --=========================================================
--- 界面关闭事件
+-- 界面关睜事件
 --=========================================================
 function ValentinesDay_Guessing_OnHiden()
 	ValentinesDay_Guessing_Select = -1

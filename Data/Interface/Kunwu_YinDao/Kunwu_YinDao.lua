@@ -188,11 +188,11 @@ function Kunwu_YinDaoFrame_Init()
 end
 
 function Kunwu_YinDaoFrame_Show(id)
-	if id == 0 then --展示前置
+	if id == 0 then --????
 		Kunwu_YinDaoFrame_BK1:Hide()
 		Kunwu_YinDaoFrame_BK2:Show()
 		this:Show()
-	elseif id == 1 then --展示引导
+	elseif id == 1 then --????
 		Kunwu_YinDaoFrame_BK1:Show()
 		Kunwu_YinDaoFrame_BK2:Hide()
 		Kunwu_YinDaoFrame_Init()

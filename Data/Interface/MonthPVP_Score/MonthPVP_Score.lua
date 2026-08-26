@@ -9,12 +9,12 @@ local g_MonthPVP_Score_TeamScore = {};
 local g_MonthPVP_Score_SkillItem = {};
 local g_MonthPVP_Score_SkillLock = {};
 
---阵营图片
+--狊营图片
 local g_MonthPVP_Score_BelongPIC = 
 {
-	[1] = {image = "set:DaHua_PVP image:DaHua_PVP_BaiBK"}, --白晶晶
-	[2] = {image = "set:DaHua_PVP image:DaHua_PVP_ZiBK"},	 --紫霞
-	[3] = {image = "set:DaHua_PVP image:DaHua_PVP_NiuBK"}, --牛夫人
+	[1] = {image = "set:DaHua_PVP image:DaHua_PVP_BaiBK"}, --???
+	[2] = {image = "set:DaHua_PVP image:DaHua_PVP_ZiBK"},	 --??
+	[3] = {image = "set:DaHua_PVP image:DaHua_PVP_NiuBK"}, --???
 }
 
 local g_MonthPVP_Score_StrTeamName =
@@ -26,10 +26,10 @@ local g_MonthPVP_Score_StrTeamName =
 
 local g_MonthPVP_Score_StrCAR =
 {
-	[1] = {str = "#{LLKC_240517_121}"}, --速速争夺 4
-	[2] = {str = "#{LLKC_240517_203}"}, --即将激活 5 6
-	[3] = {str = "#{LLKC_240517_248}"}, --带阵营 运输阶段 7
-	[4] = {str = "#{LLKC_240517_204}"}, --请等待FARM阶段 8 9
+	[1] = {str = "#{LLKC_240517_121}"}, --???? 4
+	[2] = {str = "#{LLKC_240517_203}"}, --???? 5 6
+	[3] = {str = "#{LLKC_240517_248}"}, --??? ???? 7
+	[4] = {str = "#{LLKC_240517_204}"}, --???FARM?? 8 9
 }
 
 --图片
@@ -101,14 +101,14 @@ local g_MonthPVP_Score_NeedExp =
 
 local g_MonthPVP_Score_MaxGame = 3
 
-local g_MonthPVP_Score_StepWaitFight	 = 4	--副本阶段4  等待抢夺车辆
-local g_MonthPVP_Score_StepWaitGo	 	 = 5	--副本阶段5  抢夺成功,创建对应阵营车辆
-local g_MonthPVP_Score_StepGoTo		 = 6	--副本阶段6  等待对应阵营车辆出发
-local g_MonthPVP_Score_StepWaitKill 	 = 7	--副本阶段7  等待车辆到达目的地或被击杀
-local g_MonthPVP_Score_StepReWait	 	 = 8	--副本阶段8  重新创建车辆 等待
-local g_MonthPVP_Score_StepReCteate	 = 9	--副本阶段9  重新创建车辆 计时
+local g_MonthPVP_Score_StepWaitFight	 = 4	--????4  ??????
+local g_MonthPVP_Score_StepWaitGo	 	 = 5	--????5  ????,????????
+local g_MonthPVP_Score_StepGoTo		 = 6	--????6  ??????????
+local g_MonthPVP_Score_StepWaitKill 	 = 7	--????7  ?????????????
+local g_MonthPVP_Score_StepReWait	 	 = 8	--????8  ?????? ??
+local g_MonthPVP_Score_StepReCteate	 = 9	--????9  ?????? ??
 
---预加载函数，可以而且只能在这里注册脚本关心的事件
+--预加载函数，可以而且只能在犫里注册脚本关心的事件
 function MonthPVP_Score_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
 	-- 游戏窗口尺寸发生了变化
@@ -129,28 +129,28 @@ function MonthPVP_Score_OnLoad()
 	m_Frame_UnifiedXPosition	= MonthPVP_Score_Frame:GetProperty("UnifiedXPosition");
 	m_Frame_UnifiedYPosition	= MonthPVP_Score_Frame:GetProperty("UnifiedYPosition");
 
-	-- 阵营图片
+	-- 狊营图片
 	g_MonthPVP_Score_TeamPic[1] = MonthPVP_Score_Camp1_My;
 	g_MonthPVP_Score_TeamPic[2] = MonthPVP_Score_Camp2_My;
 	g_MonthPVP_Score_TeamPic[3] = MonthPVP_Score_Camp3_My;
 
-	-- 阵营名
+	-- 狊营名
 	g_MonthPVP_Score_TeamName[1] = MonthPVP_Score_Camp1_Text1;
 	g_MonthPVP_Score_TeamName[2] = MonthPVP_Score_Camp2_Text1;
 	g_MonthPVP_Score_TeamName[3] = MonthPVP_Score_Camp3_Text1;
 
-	-- 阵营 分数
+	-- 狊营 分数
 	g_MonthPVP_Score_TeamScore[1] = MonthPVP_Score_Camp1_Text2;
 	g_MonthPVP_Score_TeamScore[2] = MonthPVP_Score_Camp2_Text2;
 	g_MonthPVP_Score_TeamScore[3] = MonthPVP_Score_Camp3_Text2;
 
-	-- 阵营技能图片
+	-- 狊营技能图片
 	g_MonthPVP_Score_SkillItem[1] = MonthPVP_Score_MyCamp_SkillItem1;
 	g_MonthPVP_Score_SkillItem[2] = MonthPVP_Score_MyCamp_SkillItem2;
 	g_MonthPVP_Score_SkillItem[3] = MonthPVP_Score_MyCamp_SkillItem3;
 	g_MonthPVP_Score_SkillItem[4] = MonthPVP_Score_MyCamp_SkillItem4;
 
-	-- 阵营技能图片
+	-- 狊营技能图片
 	g_MonthPVP_Score_SkillLock[1] = MonthPVP_Score_MyCamp_SkillItem1Lock;
 	g_MonthPVP_Score_SkillLock[2] = MonthPVP_Score_MyCamp_SkillItem2Lock;
 	g_MonthPVP_Score_SkillLock[3] = MonthPVP_Score_MyCamp_SkillItem3Lock;
@@ -187,7 +187,7 @@ function MonthPVP_Score_OnEvent(event)
 		local nExp = Get_XParam_INT(7)
 		local nBelong = Get_XParam_INT(8)
 		local nGameNum = Get_XParam_INT(9)
-		local nPLAYERSCORE = 0 --个人积分	
+		local nPLAYERSCORE = 0 --????	
 
 		--差异数据
 		local nDiffParam = 
@@ -201,14 +201,14 @@ function MonthPVP_Score_OnEvent(event)
 		if nParamSTR0 == "FARM" then
 			nDiffParam[1].nChoice = 1
 			nDiffParam[2].nParamINT = Get_XParam_INT(10) --nFarmTime
-			nDiffParam[3].nParamINT = Get_XParam_INT(11) --月光碎片
-			nPLAYERSCORE = Get_XParam_INT(12) --个人积分
+			nDiffParam[3].nParamINT = Get_XParam_INT(11) --????
+			nPLAYERSCORE = Get_XParam_INT(12) --????
 		elseif nParamSTR0 == "CAR" then
 			nDiffParam[1].nChoice = 2
 			nDiffParam[2].nParamINT = Get_XParam_INT(10) --nStep
 			nDiffParam[3].nParamINT = Get_XParam_INT(11) --nCampID
 			nDiffParam[4].nParamINT = Get_XParam_INT(12) --nHpMax
-			nPLAYERSCORE = Get_XParam_INT(13) --个人积分
+			nPLAYERSCORE = Get_XParam_INT(13) --????
 		end
 
 		if (this:IsVisible()) then
@@ -275,11 +275,11 @@ end
 
 --更新
 function MonthPVP_Score_Update(nTeam,nLevel,nExp,nBelong,nGameNum,nDiffParam,nPLAYERSCORE)
-	--更新阵营Exp
+	--更新狊营Exp
 	MonthPVP_Score_ShowTeamExp(nBelong,nLevel,nExp)
-	--更新阵营分数
+	--更新狊营分数
 	MonthPVP_Score_ShowTeamRank(nTeam,nBelong)
-	--更新阵营Step
+	--更新狊营Step
 	MonthPVP_Score_ShowTeamStep(nDiffParam,nGameNum)
 
 	MonthPVP_Score_MyCamp:SetProperty("Image",g_MonthPVP_Score_BelongPIC[nBelong].image)
@@ -287,7 +287,7 @@ function MonthPVP_Score_Update(nTeam,nLevel,nExp,nBelong,nGameNum,nDiffParam,nPL
 	MonthPVP_Score_Text:SetText(ScriptGlobal_Format("#{LLKC_240517_315}",nPLAYERSCORE))
 end
 
---更新阵营Exp
+--更新狊营Exp
 function MonthPVP_Score_ShowTeamExp(nBelong,nLevel,nExp)
 	--Name
 	--MonthPVP_Score_MyCamp_Title:SetText(g_MonthPVP_Score_StrTeamName[nBelong].str)
@@ -320,7 +320,7 @@ function MonthPVP_Score_ShowTeamExp(nBelong,nLevel,nExp)
 
 end
 
---更新阵营分数
+--更新狊营分数
 function MonthPVP_Score_ShowTeamRank(nTeam,nBelong)
 	for i=1,3 do
 		g_MonthPVP_Score_TeamName[i]:SetText(g_MonthPVP_Score_StrTeamName[nTeam[i].nRanking].str)
@@ -333,7 +333,7 @@ function MonthPVP_Score_ShowTeamRank(nTeam,nBelong)
 	end
 end
 
---更新阵营Step
+--更新狊营Step
 function MonthPVP_Score_ShowTeamStep(nDiffParam,nGameNum)
 
 	if nDiffParam[1].nChoice == 1 then

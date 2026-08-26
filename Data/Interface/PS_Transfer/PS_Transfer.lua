@@ -30,7 +30,7 @@ function PS_Transfer_PreLoad()
 	this:RegisterEvent("PS_OPEN_OTHER_TRANS");
 	this:RegisterEvent("PS_UPDATE_OTHER_TRANS");
 	this:RegisterEvent("PS_OTHER_TRANS_SELECT");
-	this:RegisterEvent("BUYPSSUCCESS_CLOSE_SHOPLIST") --¹ºÂòÉÌµê³É¹¦ºó¹Ø±ÕÉÌµêÁÐ±í½çÃæ
+	this:RegisterEvent("BUYPSSUCCESS_CLOSE_SHOPLIST") --???????????????
 	this:RegisterEvent("OBJECT_CARED_EVENT");
 	this:RegisterEvent("UNIT_MONEY");
 
@@ -113,7 +113,7 @@ function PS_Transfer_OnEvent(event)
 	
 	elseif ( event == "PS_OTHER_TRANS_SELECT" )   then
 		--PS_Transfer_UpdateFrame();
-	elseif event == "BUYPSSUCCESS_CLOSE_SHOPLIST" then --¹ºÂòÉÌµê³É¹¦ºó¹Ø±ÕÉÌµêÁÐ±í½çÃæ
+	elseif event == "BUYPSSUCCESS_CLOSE_SHOPLIST" then --???????????????
 		--Òþ²Ø½çÃæ		
 		this:Hide();		
 		this:CareObject(objCared, 0, "PS_Transfer");
@@ -122,7 +122,7 @@ function PS_Transfer_OnEvent(event)
 		if(tonumber(arg0) ~= objCared) then
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			g_InitiativeClose = 1;
 			this:Hide();
@@ -145,23 +145,23 @@ function PS_Transfer_UpdateFrame()
 	
 	--µêÖ÷	--¸ÄÎª³¬Á´½Ó by wangdw
 	local szName = PlayerShop:GetShopInfo("other","ownername");
-	PS_Transfer_Master:SetChatString("#YµêÖ÷:#{_INFOUSR".. szName .. "}");
+	PS_Transfer_Master:SetChatString("#YðIªm chü: #{_INFOUSR".. szName .. "}");
 
 	--µêÆÌID
 	local shopIndex = PlayerShop:GetShopInfo("other", "shopindex")
 	if (tonumber(shopIndex) <= 0) then
-		PS_Transfer_DPID_Text:SetText("µêÆÌID:")
+		PS_Transfer_DPID_Text:SetText("CØa hàng ID:")
 	else
-		PS_Transfer_DPID_Text:SetText("µêÆÌID:" .. shopIndex)
+		PS_Transfer_DPID_Text:SetText("CØa hàng ID:" .. shopIndex)
 	end
 
 	--µêÖ÷ID
 	local szID = PlayerShop:GetShopInfo("other","ownerid");
-	PS_Transfer_ID:SetText("µêÖ÷ID: ".. szID);
+	PS_Transfer_ID:SetText("Ðiªm chü ID:".. szID);
 	
 	--µêÃû
 	local szShopName = PlayerShop:GetShopInfo("other","shopname");
-	PS_Transfer_Name_Text:SetText("µêÆÌÃû:" .. szShopName);
+	PS_Transfer_Name_Text:SetText("CØa hàng Danh:" .. szShopName);
 	PS_Transfer_PageHeader_Name:SetText("#gFF0FA0" ..szShopName);
 	
 	--µ±Ç°±¾½ð
@@ -175,7 +175,7 @@ function PS_Transfer_UpdateFrame()
 	local bSaleType = PlayerShop:LuaFnGetSaleType("other");
 	local nSaleOutMoney = PlayerShop:GetMoney("saleout","other");
 	--ÅÐ¶Ï½ðÇ®ºÍÔª±¦
-	if bSaleType == 0 then--½ð±ÒÅÌ³ö
+	if bSaleType == 0 then--????
 		PS_Transfer_Sale_Name:SetText("#{INTERFACE_XML_483}")
 		PS_Transfer_Self_Name:SetText("#{INTERFACE_XML_631}")
 		PS_Transfer_Sale_Money:Show()
@@ -186,7 +186,7 @@ function PS_Transfer_UpdateFrame()
 		PS_Transfer_Sale_Money:SetProperty("MoneyNumber", tostring(nSaleOutMoney));
 		--ÉíÉÏÏÖ½ð
 		PS_Transfer_Self_Money:SetProperty("MoneyNumber", tostring(Player:GetData("MONEY")));
-	elseif bSaleType == 1 then--Ôª±¦ÅÌ³ö
+	elseif bSaleType == 1 then--????
 		PS_Transfer_Sale_Name:SetText("#{DPPC_150327_11}")
 		PS_Transfer_Self_Name:SetText("#{DPPC_150327_18}")
 		PS_Transfer_Sale_Money:Hide()

@@ -267,7 +267,7 @@ function Synthesize_Lingyu_UpdateInfo()
 			end
 			
 			if have_stuff_count > 99 then
-				Synthesize_Lingyu_MaterialIcon1_Amount:SetText("#e010101¡Þ/" .. stuffnum)
+				Synthesize_Lingyu_MaterialIcon1_Amount:SetText("#e0101018/" .. stuffnum)
 			else
 				Synthesize_Lingyu_MaterialIcon1_Amount:SetText("#e010101"..tostring(have_stuff_count).."/".."#e010101"..tostring(stuffnum))
 			end

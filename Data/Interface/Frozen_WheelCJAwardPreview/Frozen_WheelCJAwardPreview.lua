@@ -11,7 +11,7 @@ function Frozen_WheelCJAwardPreview_PreLoad()
 	
 	this:RegisterEvent("ADJEST_UI_POS",false)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("PACKAGE_ITEM_CHANGED_EX",false)
 end
 
@@ -93,7 +93,7 @@ function Frozen_WheelCJAwardPreview_On_ResetPos()
 end
 
 --=========================================================
---关闭
+--关睜
 --=========================================================
 function Frozen_WheelCJAwardPreview_Close()
 	this:Hide()

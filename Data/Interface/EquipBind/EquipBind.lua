@@ -43,7 +43,7 @@ function EquipBind_OnEvent(event)
 		objCared = DataPool : GetNPCIDByServerID(xx);
 		AxTrace(0,1,"xx="..xx .. " objCared="..objCared)
 		if objCared == -1 then
-				PushDebugMessage("server´«¹ýÀ´µÄÊý¾ÝÓÐÎÊÌâ¡£");
+				PushDebugMessage("Dæ li®u máy chü có v¤n ð«");
 				return;
 		end
 		EquipBind_SelfMoney:SetProperty("MoneyNumber", tostring(Player:GetData("MONEY")));
@@ -68,7 +68,7 @@ function EquipBind_OnEvent(event)
 			return;
 		end
 		
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			
 			--È¡Ïû¹ØÐÄ
@@ -142,12 +142,12 @@ function EquipBind_Update(UI_index,Item_index)
 				local EquipPoint = LifeAbility : Get_Equip_Point(i_index)
 				if EquipPoint == -1 or EquipPoint == 8 or EquipPoint == 9 or EquipPoint == 10 or EquipPoint == 18 then
 					if EquipPoint ~= -1 then
-						PushDebugMessage("²»ÄÜ·ÅÈëÕâÖÖ×°±¸¡£")
+						PushDebugMessage("Không th¬ ð£t trang b¸ này vào")
 					end
 					return
 				end
 				if EquipPoint >= 19 and EquipPoint <= 24 then
-					PushDebugMessage("²»ÄÜ·ÅÈëÕâÖÖ×°±¸¡£")
+					PushDebugMessage("Không th¬ ð£t trang b¸ này vào")
 					return
 				end
 				if Bind_Item2 ~= -1 and PlayerPackage : GetItemTableIndex( i_index ) == 10124391 and 
@@ -189,7 +189,7 @@ function EquipBind_Update(UI_index,Item_index)
 		if theAction:GetID() ~= 0 then
 				if PlayerPackage : GetItemTableIndex( i_index ) ~= 30900013 and
 					 PlayerPackage : GetItemTableIndex( i_index ) ~= 30900014 then
-					PushDebugMessage("ÕâÀï±ØÐë·ÅÈë¿ÌÃú·û¡£")
+					PushDebugMessage("N½i này phäi ð¬ vào kh¡c minh Phù.")
 					return
 				end
 				if Bind_Item1 ~= -1 and PlayerPackage : GetItemTableIndex( Bind_Item1 ) == 10124391 and 
@@ -226,11 +226,11 @@ function EquipBind_Buttons_Clicked()
 	--AxTrace(0,5,"Bind_Item1="..Bind_Item1.." Bind_Item2="..Bind_Item2)
 	
 	if Bind_Item1 == -1 then 
-		PushDebugMessage("Çë·ÅÈëÒª¿ÌÃúµÄ×°±¸¡£")
+		PushDebugMessage("Thïnh ð¬ vào Yêu kh¡c minh Ðích trang b¸.")
 		return
 	end
 	if Bind_Item2 == -1 then
-		PushDebugMessage("Çë·ÅÈë¿ÌÃú·û¡£")
+		PushDebugMessage("C¥n ð£t Kh¡c Danh Phù vào")
 		return
 	end
 	if PlayerPackage : GetItemTableIndex( Bind_Item1 ) == 10124391 and 
@@ -281,7 +281,7 @@ function EquipBind_OnHiden()
 end
 --=========================================================
 --¿ªÊ¼¹ØÐÄNPC£¬
---ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
 --Èç¹ûÓÐµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓÐµÄ¡°¹ØÐÄ¡±
 --=========================================================
 function BeginCareObject_EquipBind(objCaredId)

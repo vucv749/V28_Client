@@ -3,28 +3,28 @@
 local EXTERIORFILTTING_TOTALKIND = 0;
 local g_NewExterior_DressBox_UnifiedPosition = ""
 
-local g_TargetExteriorIndex = 0		--定位的外观索引，从1开始
-local g_TargetExteriorID = 0		--定位的外观ID
+local g_TargetExteriorIndex = 0		--???????,?1??
+local g_TargetExteriorID = 0		--?????ID
 
 local g_NeedChangeScrollSize = 1
 
-local g_CurSelExteriorIndex = 0		--当前选择的外观索引，从1开始
-local g_CurSelExteriorID = 0		--当前选择的外观ID，从1开始
+local g_CurSelExteriorIndex = 0		--?????????,?1??
+local g_CurSelExteriorID = 0		--???????ID,?1??
 
 local g_Distance = 1
 local g_Distance_Ori = 2
 local g_Distance_Max = 4
 local g_InitList = 0
-local m_PlayerfashionDepotType = 1 	--仓库类型 1 玩家时装仓库 2 子女时装仓库
+local m_PlayerfashionDepotType = 1 	--???? 1 ?????? 2 ??????
 local g_MaxBarNum = 100
 local g_BarList = {}
 local g_PlayerFashionInfoList = {}
 
 local g_ActionButtonList = {}
 
-local g_CameraHeight = 1     --摄影机高度
-local g_CameraDistance = 2   --摄影机距离
-local g_CameraPitch = 3      --摄影机角度
+local g_CameraHeight = 1     --?????
+local g_CameraDistance = 2   --?????
+local g_CameraPitch = 3      --?????
 local g_CameraPosition =
 {
 	--女性相关位置
@@ -64,12 +64,12 @@ local g_ShareBarList = {}
 local g_MyCoupleFashionInfoList = {}
 local g_SpouseCoupleFashionInfoList = {}
 
-local g_OrnamentState				= {		-- 状态
-	INVALID	= 0,							-- 无效
-	EMPTY	= 1,							-- 空闲
-	TIME	= 2,							-- 限时
-	TIMEOUT	= 3,							-- 过期
-	FOREVER	= 4,							-- 永久
+local g_OrnamentState				= {		-- ??
+	INVALID	= 0,							-- ??
+	EMPTY	= 1,							-- ??
+	TIME	= 2,							-- ??
+	TIMEOUT	= 3,							-- ??
+	FOREVER	= 4,							-- ??
 }
 --=========
 --PreLoad==
@@ -140,7 +140,7 @@ function NewExterior_DressBox_OnEvent(event)
 			end
 		else
 			if tonumber(arg0) == m_PlayerfashionDepotType then			
-				--关闭元宝商店相关界面
+				--关睜元宝商店相关界面
 				if(IsWindowShow("YuanbaoShop")) then
 					CloseWindow("YuanbaoShop", true)
 				end
@@ -180,7 +180,7 @@ function NewExterior_DressBox_OnEvent(event)
 			this:Hide()
 		else
 			if tonumber(arg0) == m_PlayerfashionDepotType then			
-				--关闭元宝商店相关界面
+				--关睜元宝商店相关界面
 				if(IsWindowShow("YuanbaoShop")) then
 					CloseWindow("YuanbaoShop", true)
 				end
@@ -216,9 +216,9 @@ function NewExterior_DressBox_OnEvent(event)
 		NewExterior_DressBox_Show()
 	end
 	
-	if event == "OPEN_STALL_SALE"			-- 开始摆摊，还原试穿
-		or event == "PROGRESSBAR_SHOW"		-- 读进度条中，还原试穿
-		--or event == "MODELID_CHANGE" 		-- 变身 关闭界面
+	if event == "OPEN_STALL_SALE"			-- ????,????
+		or event == "PROGRESSBAR_SHOW"		-- ?????,????
+		--or event == "MODELID_CHANGE" 		-- 变身 关睜界面
 		then
 		NewExterior_DressBox_CloseClick()	
 		return
@@ -281,7 +281,7 @@ function NewExterior_DressBox_OnEvent(event)
 				-- enFashionDepotOPType_Move 衣柜内拖拽
 				local nSourcePos = tonumber(arg2)
 				local targetPos = tonumber(arg3)
-				if nSourcePos == targetPos then --相同格子不用进行移动
+				if nSourcePos == targetPos then --??????????
 					return
 				end
 				Exterior:LuaFnExteriorFashionOperation(m_PlayerfashionDepotType, 3, nSourcePos, targetPos)
@@ -325,7 +325,7 @@ function NewExterior_DressBox_OnEvent(event)
 	end
 	
 	-- FakeObject模型界面互斥
-	if (event == "UI_COMMAND" and tonumber(arg0) == 120203161) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then   --时装预览
+	if (event == "UI_COMMAND" and tonumber(arg0) == 120203161) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then   --????
 		if this:IsVisible() then
 			NewExterior_DressBox_CloseClick()
 			return
@@ -387,7 +387,7 @@ function NewExterior_DressBox_InitList()
 			bar:GetSubItem("NewExterior_DressBox_SuperListItemActionShare"):Hide()
 			--可共享
 			bar:GetSubItem("NewExterior_DressBox_SuperListItemActionShare2"):Hide()
-			--占用
+			--牸用
 			bar:GetSubItem("NewExterior_DressBox_SuperListItemActionZhan"):Hide()
 			--试穿标识
 			bar:GetSubItem("NewExterior_DressBox_SuperListItemActionTry"):Hide()
@@ -413,7 +413,7 @@ function NewExterior_DressBox_InitList()
 			bar:GetSubItem("NewExterior_DressBox_SuperList2ItemActionShare2"):Hide()
 			--新		
 			bar:GetSubItem("NewExterior_DressBox_SuperList2ItemActionTip"):Hide()
-			--占用
+			--牸用
 			bar:GetSubItem("NewExterior_DressBox_SuperList2ItemActionZhan"):Hide()
 			--试穿标识
 			bar:GetSubItem("NewExterior_DressBox_SuperList2ItemActionTry"):Hide()
@@ -828,7 +828,7 @@ end
 function NewExterior_DressBox_UpdateObj()
 	
 	NewExterior_DressBox_FakeObject:SetFakeObject("")
-	if g_NewExterior_DressBox_CurPage == 2 then	-- 共享衣柜
+	if g_NewExterior_DressBox_CurPage == 2 then	-- ????
 		local cacheExteriorID, cacheExteriorIdx = Exterior:LuaFnGetCurrentExteriorSetInfo("COUPLEDRESS")
 		if cacheExteriorID ~= nil and cacheExteriorID > 0 then
 			NewExterior_DressBox_FakeObject:SetFakeObject("Exterior_Player")
@@ -880,13 +880,13 @@ end
 function NewExterior_DressBox_UpdateList()
 	
 	if g_NewExterior_DressBox_CurPage == 2 then
-		NewExterior_DressBox_UpdateCoupleList()	-- 共享衣柜
+		NewExterior_DressBox_UpdateCoupleList()	-- ????
 		return
 	end
 	
 	g_NewExterior_DressBox_CurPage = 1
-	NewExterior_DressBox_SuperListArrangeBtn:Show()		-- 整理按钮
-	NewExterior_DressBox_SuperListShareBtn:Show()		-- 共享按钮
+	NewExterior_DressBox_SuperListArrangeBtn:Show()		-- ????
+	NewExterior_DressBox_SuperListShareBtn:Show()		-- ????
 	NewExterior_DressBox_SuperListShareBtn:SetText("#{FQYG_20230410_6}");
 	NewExterior_DressBox_SuperListShareBtn:SetToolTip("#{FQYG_20230410_8}")	
 	NewExterior_DressBox_SuperListMineBtn:SetCheck(1)
@@ -1313,13 +1313,13 @@ function NewExterior_DressBox_FashionDepotToBag(nSourcePos, targetPos)
 		local theAction, bLocked, bProtect, nElapsedTime = PlayerPackage:EnumItem("base", targetPos);
 		if theAction:GetID() ~= 0  then 
 			local opResult = FashionDepot:LuaFnJudgeBagItem(m_PlayerfashionDepotType, targetPos)
-			if opResult == 2 then --不是时装
+			if opResult == 2 then --????
 				PushDebugMessage("#{HCG_190117_18}")
 				return
 			end
 			
-			if opResult == 5 then --解除锁定倒计时中 -使用了二级密码进行了解锁 需要二次确认 enCGFashionDepotOperationType_TakeOut=2
-				PushEvent("EXTERIOR_FASHION_CONFIRM", 1000, m_PlayerfashionDepotType, 2, nSourcePos, targetPos) --二次确认
+			if opResult == 5 then --???????? -???????????? ?????? enCGFashionDepotOperationType_TakeOut=2
+				PushEvent("EXTERIOR_FASHION_CONFIRM", 1000, m_PlayerfashionDepotType, 2, nSourcePos, targetPos) --????
 				return
 			end
 			
@@ -1339,13 +1339,13 @@ function NewExterior_DressBox_BagToFashionDepot(opType, nSourcePos, targetPos)
 	local theAction, bLocked, bProtect, nElapsedTime = PlayerPackage:EnumItem("base", nSourcePos);
 	if theAction:GetID() ~= 0  then 
 		local opResult = FashionDepot:LuaFnJudgeBagItem(m_PlayerfashionDepotType, nSourcePos)
-		if opResult == 2 then --不是时装
+		if opResult == 2 then --????
 			PushDebugMessage("#{HCG_190117_18}")
 			return
 		end
 		
-		if opResult == 5 then --解除锁定倒计时中 -使用了二级密码进行了解锁 需要二次确认
-			PushEvent("EXTERIOR_FASHION_CONFIRM", 1000, m_PlayerfashionDepotType, opType, nSourcePos, targetPos) --二次确认
+		if opResult == 5 then --???????? -???????????? ??????
+			PushEvent("EXTERIOR_FASHION_CONFIRM", 1000, m_PlayerfashionDepotType, opType, nSourcePos, targetPos) --????
 			return
 		end
 		
@@ -1403,7 +1403,7 @@ function NewExterior_DressBox_Undo()
 	NewExterior_DressBox_Show()
 end
 
---整理
+--狖理
 function NewExterior_DressBox_ClickClearUpBtn()
 
 	g_CurSelExteriorID = 0
@@ -1780,8 +1780,8 @@ end
 function NewExterior_DressBox_UpdateCoupleList()
 	
 	g_NewExterior_DressBox_CurPage = 2
-	NewExterior_DressBox_SuperListArrangeBtn:Hide()	-- 整理按钮
-	NewExterior_DressBox_SuperListShareBtn:Hide()	-- 共享按钮
+	NewExterior_DressBox_SuperListArrangeBtn:Hide()	-- ????
+	NewExterior_DressBox_SuperListShareBtn:Hide()	-- ????
 	NewExterior_DressBox_SuperListMineBtn:SetCheck(0)
 	NewExterior_DressBox_SuperListOurBtn:SetCheck(1)
 	NewExterior_DressBox_SuperList2:Show()
@@ -1857,7 +1857,7 @@ function NewExterior_DressBox_UpdateCoupleList()
 			bar:GetSubItem("NewExterior_DressBox_SuperList2ItemActionShare2"):Hide()
 			--新		
 			bar:GetSubItem("NewExterior_DressBox_SuperList2ItemActionTip"):Hide()
-			--占用
+			--牸用
 			bar:GetSubItem("NewExterior_DressBox_SuperList2ItemActionZhan"):Hide()
 			--试穿标识
 			bar:GetSubItem("NewExterior_DressBox_SuperList2ItemActionTry"):Hide()

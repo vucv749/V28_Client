@@ -34,8 +34,8 @@ function HuaShanLunJian_FightEnd2_OnEvent(event)
 			this:Hide()
 			return
 		end	
-		local result = tonumber(arg0) --0，胜利；1，失败。
-		local score = tonumber(arg1) --累积胜利场数
+		local result = tonumber(arg0) --0,??;1,???
+		local score = tonumber(arg1) --??????
 		HuaShanLunJian_FightEnd2_TextShengChang:SetText(ScriptGlobal_Format("#{HSSC_191009_108}", score))
 		if (result == 0) then
 			HuaShanLunJian_FightEnd2_ImageShengChang:Show()
@@ -70,7 +70,7 @@ function HuaShanLunJian_FightEnd2_ResetPos()
 	HuaShanLunJian_FightEnd2_Frame:SetProperty("UnifiedXPosition", g_Frame_UnifiedPosition[1]);
 	HuaShanLunJian_FightEnd2_Frame:SetProperty("UnifiedYPosition", g_Frame_UnifiedPosition[2]);
 end
--- 关闭函数
+-- 关睜函数
 function HuaShanLunJian_FightEnd2Frame_CloseWindow()
 	this:Hide()
 end

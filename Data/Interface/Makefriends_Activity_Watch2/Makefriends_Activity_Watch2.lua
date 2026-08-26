@@ -4,8 +4,8 @@ local g_Makefriends_Activity_Watch2_map = {}
 local g_Makefriends_Activity_watch_list = {}
 local g_Makefriends_Activity_Image =
 {
-	[1] = "set: Button8 image:IM_F_Online",	--Ê¹ÓÃÖĞ
-	[2] = "set: Button8 image:IM_M_Online"	--Î´ÓµÓĞ
+	[1] = "set: Button8 image:IM_F_Online",	--???
+	[2] = "set: Button8 image:IM_M_Online"	--???
 
 }
 
@@ -207,9 +207,9 @@ function Makefriends_Activity_Watch2_Updata()
 		ItemBar:GetSubItem("Makefriends_Activity_Watch2_ListItem1_Paiming"):SetText(name)
 		--ItemBar:GetSubItem("Makefriends_Activity_Watch2_ListItem1_Peihe"):SetText(match_count)	
 		--ItemBar:GetSubItem("Makefriends_Activity_Watch2_ListItem1_Dianzan"):SetText(like_count)
-		if nSex == 0 then --Å®
+		if nSex == 0 then --?
 			ItemBar:GetSubItem("Makefriends_Activity_Watch2_ListItem1_Null"):SetProperty("Image",g_Makefriends_Activity_Image[nSex+1])
-		elseif nSex == 1 then --ÄĞ
+		elseif nSex == 1 then --?
 			ItemBar:GetSubItem("Makefriends_Activity_Watch2_ListItem1_Null"):SetProperty("Image",g_Makefriends_Activity_Image[nSex+1])
 		end
 		if is_fate then
@@ -296,11 +296,11 @@ function Makefriends_Activity_Watch2_Expressing_Emotions(index)
 			for m = 1, 6 do
 				if 1 == n then
 					if m == 1 then
-						nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nTypeinfo,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMe(0) --²ÎÊıÃ»ÓÃ
+						nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nTypeinfo,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMe(0) --????
 					elseif m ==  2 then
-						nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nTypeinfo,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToOther(1) --²ÎÊıÃ»ÓÃ
+						nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nTypeinfo,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToOther(1) --????
 					elseif m ==  3 then
-						nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nTypeinfo,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMeOppositesex(2) --²ÎÊıÃ»ÓÃ
+						nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nTypeinfo,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMeOppositesex(2) --????
 					end
 				elseif 2 == n then
 					if m >= 1 and m <= 3 then
@@ -314,7 +314,7 @@ function Makefriends_Activity_Watch2_Expressing_Emotions(index)
 				
 				if nGuid == tempGuid then
 					if (nGuid == Player:GetGUID()) then  
-						PushDebugMessage("#HÎŞ·¨¸ø×Ô¼º±í´ïĞÄÒâ¡£");--ĞŞ¸Ä×Öµä
+						PushDebugMessage("#HkHông th¬ C¤p chính mình bi¬u ğÕt tâm ı.");--????
 						return;
 					end
 					
@@ -408,7 +408,7 @@ function Makefriends_Activity_Watch2_sortFunc(a, b)
         return false
     end
 
-    -- Ä¬ÈÏÇé¿öÏÂ°´ÕÕµãÔŞ´ÎÊı½øĞĞÅÅĞò
+    -- Ä¬ÈÏÇé¿öÏÂ°´  µãÔŞ´ÎÊı½øĞĞÅÅĞò
     if a["like_count"] ~= b["like_count"] then
         return a["like_count"] > b["like_count"]
     end
@@ -436,12 +436,12 @@ function Makefriends_Activity_Watch2_B1_Search(index)
 			for m = 1, 6 do
 				if 1 == n then
 					if m == 1 then
-						nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nTypeinfo,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMe(0) --²ÎÊıÃ»ÓÃ
+						nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nTypeinfo,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMe(0) --????
 						
 					elseif m ==  2 then
-						nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nTypeinfo,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToOther(1) --²ÎÊıÃ»ÓÃ
+						nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nTypeinfo,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToOther(1) --????
 					elseif m ==  3 then
-						nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nTypeinfo,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMeOppositesex(2) --²ÎÊıÃ»ÓÃ
+						nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nTypeinfo,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMeOppositesex(2) --????
 					end
 				elseif 2 == n then
 					if m >= 1 and m <= 3 then
@@ -488,13 +488,13 @@ function Makefriends_Activity_Watch2_B1_AddFriend(index)
 
 	if nGuid ~= -1  then
 		if nGuid == Player:GetGUID() then  
-			PushDebugMessage("#{GGSK_221221_49}");--ĞŞ¸Ä×Öµä
+			PushDebugMessage("#{GGSK_221221_49}");--????
 			return;
 		end
 		
 		--ÒÑÊÇºÃÓÑ ÔòÒş²Ø
 		if (Friend:IsPlayerIsFriendNotTemp(szCharName) == 1) then
-			PushDebugMessage("#{JYHD_230331_138}");--ĞŞ¸Ä×Öµä
+			PushDebugMessage("#{JYHD_230331_138}");--????
 			return
 		end
 		DataPool:AddFriendAndGrouping(szCharName);

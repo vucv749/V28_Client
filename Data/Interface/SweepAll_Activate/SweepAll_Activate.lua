@@ -53,7 +53,7 @@ function SweepAll_Activate_OnEvent(event)
 					SweepAll_Activate_Close()
 				end
 			elseif 1 == opt then
-				--激活成功关闭当前界面
+				--激活成功关睜当前界面
 				SweepAll_Activate_Close()
 			end
 		end

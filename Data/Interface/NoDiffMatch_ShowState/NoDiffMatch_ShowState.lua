@@ -1,4 +1,4 @@
--- 战况查询
+-- 牻况查询
 
 local g_unifiedposistion
 local g_TargetId = -1
@@ -13,7 +13,7 @@ local g_typeName	= {
 		title = "#{WCBZ_180128_180}",
 		desc = "#{WCBZ_180128_181}",
 		btnshow = 1,
-		trans = 0,						-- 这个地方需要转换名字
+		trans = 0,						-- ??????????
 	},
 
 	["promote"] = {

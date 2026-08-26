@@ -48,7 +48,7 @@ function DWHecheng_OnEvent(event)
 		local xx = Get_XParam_INT(0)
 		g_CaredNpc = DataPool:GetNPCIDByServerID(xx)
 		if g_CaredNpc == -1 then
-			PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£")
+			PushDebugMessage("Dæ li®u máy chü có v¤n ğ«")
 			return
 		end
 		BeginCareObject_DWHecheng()
@@ -144,13 +144,13 @@ function DWHecheng_Update(itemIndex)
 			return
 		end
 
-		-- ÅĞ¶ÏÎïÆ·ÊÇ·ñ¼ÓËø(ÔÚÕâ¸öÂß¼­Ö®Ç°³ÌĞòÒÑ¾­ÅĞ¶ÏÁË)
+		-- ÅĞ¶ÏÎïÆ·ÊÇ·ñ¼ÓËø(ÔÚ â¸öÂß¼­Ö®Ç°³ÌĞòÒÑ¾­ÅĞ¶ÏÁË)
 		if PlayerPackage:IsLock(index) == 1 then
 			PushDebugMessage("#{ZBDW_091105_3}")
 			return
 		end
 		
-		-- Èç¹û¿Õ¸ñÄÚÒÑ¾­ÓĞÍ¼ÑùÁË, Ìæ»»Ö®
+		-- Èç¹û¿ ¸ñÄÚÒÑ¾­ÓĞÍ¼ÑùÁË, Ìæ»»Ö®
 		if g_DWHECHENG_Item ~= -1 then
 			LifeAbility:Lock_Packet_Item(g_DWHECHENG_Item, 0)
 		end
@@ -174,7 +174,7 @@ end
 
 --=========================================================
 -- ÅĞ¶ÏÊÇ·ñËùÓĞÎïÆ·¶¼ÒÑ·ÅºÃ
--- Ö»ÔÚµã»÷ OK °´Å¥µÄÊ±ºòµ÷ÓÃÕâ¸öº¯Êı
+-- Ö»ÔÚµã»÷ OK °´Å¥µÄÊ±ºòµ÷ÓÃ â¸öº¯Êı
 --=========================================================
 function DWHecheng_Check_AllItem()
 	DWHecheng_UpdateBasic()
@@ -192,10 +192,10 @@ function DWHecheng_Check_AllItem()
 end
 
 
-local EB_FREE_BIND = 0;				-- ÎŞ°ó¶¨ÏŞÖÆ
-local EB_BINDED = 1;				-- ÒÑ¾­°ó¶¨
-local EB_GETUP_BIND =2			-- Ê°È¡°ó¶¨
-local EB_EQUIP_BIND =3			-- ×°±¸°ó¶¨
+local EB_FREE_BIND = 0;				-- ?????
+local EB_BINDED = 1;				-- ????
+local EB_GETUP_BIND =2			-- ????
+local EB_EQUIP_BIND =3			-- ????
 --=========================================================
 -- È·¶¨Ö´ĞĞ¹¦ÄÜ
 --=========================================================
@@ -249,7 +249,7 @@ function DWHecheng_OK_Clicked(okFlag)
 end
 
 --=========================================================
--- ¹Ø±Õ½çÃæ
+-- ¹Ø± ½çÃæ
 --=========================================================
 function DWHecheng_Close()
 	this:Hide()
@@ -267,7 +267,7 @@ end
 
 --=========================================================
 -- ¿ªÊ¼¹ØĞÄNPC£¬
--- ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+-- ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 -- Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function BeginCareObject_DWHecheng()

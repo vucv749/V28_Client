@@ -16,28 +16,28 @@ local g_VowText =
 }
 
 
-local g_UICommand_Open = 80600301		--打开界面
-local g_UICommand_Update = 80600302		--更新界面
-local g_UICommand_Close = 80600303		--关闭界面
+local g_UICommand_Open = 80600301		--????
+local g_UICommand_Update = 80600302		--????
+local g_UICommand_Close = 80600303		--????
 
 local g_MenPaiName = {
-		[0] = "#{XQ_MP_1}",    --少林
-		[1] = "#{XQ_MP_2}",    --明教
-		[2] = "#{XQ_MP_3}",    --丐帮
-		[3] = "#{XQ_MP_4}",    --武当
-		[4] = "#{XQ_MP_5}",    --峨眉
-		[5] = "#{XQ_MP_6}",    --星宿
-		[6] = "#{XQ_MP_7}",    --天龙
-		[7] = "#{XQ_MP_8}",    --天山
-		[8] = "#{XQ_MP_9}",    --逍遥
-		[9] = "",         --无门派
+		[0] = "#{XQ_MP_1}",    --??
+		[1] = "#{XQ_MP_2}",    --??
+		[2] = "#{XQ_MP_3}",    --??
+		[3] = "#{XQ_MP_4}",    --??
+		[4] = "#{XQ_MP_5}",    --??
+		[5] = "#{XQ_MP_6}",    --??
+		[6] = "#{XQ_MP_7}",    --??
+		[7] = "#{XQ_MP_8}",    --??
+		[8] = "#{XQ_MP_9}",    --??
+		[9] = "",         --???
 		[10] = "#{MPXR_220623_12}",
 }
 
 function XiaLv_Wedding_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
 
-	this:RegisterEvent("PLAYER_ENTERING_WORLD")		-- 进入游戏世界
+	this:RegisterEvent("PLAYER_ENTERING_WORLD")		-- ??????
 
 	this:RegisterEvent("ADJEST_UI_POS");
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED");
@@ -51,7 +51,7 @@ end
 -- OnEvent
 function XiaLv_Wedding_OnEvent(event)
 
-	if ( event == "UI_COMMAND" and tonumber(arg0) == g_UICommand_Open ) then --打开界面
+	if ( event == "UI_COMMAND" and tonumber(arg0) == g_UICommand_Open ) then --????
 		g_ServerNpc = Get_XParam_INT(0)
 		g_ScriptId = Get_XParam_INT(7)
 		
@@ -64,12 +64,12 @@ function XiaLv_Wedding_OnEvent(event)
 
 		XiaLv_Wedding_Open()
 
-	elseif ( event == "UI_COMMAND" and tonumber(arg0) == g_UICommand_Update ) then --一个人同意
+	elseif ( event == "UI_COMMAND" and tonumber(arg0) == g_UICommand_Update ) then --?????
 		if this:IsVisible() == true then
 			XiaLv_Wedding_Update_OneAgree()
 		end
 		
-	elseif ( event == "UI_COMMAND" and tonumber(arg0) == g_UICommand_Close ) then --服务器要求关闭界面
+	elseif ( event == "UI_COMMAND" and tonumber(arg0) == g_UICommand_Close ) then --?????????
 		g_IsZhuDong = 0
 		XiaLv_Wedding_Close_Click()
 
@@ -126,7 +126,7 @@ function XiaLv_Wedding_FillData()
 	XiaLv_Wedding_WoMan_Name:SetText(femaleName)
 
 	local mySex = Player:GetMySex()
-	if mySex == 0 then --女
+	if mySex == 0 then --?
 		local msg = ScriptGlobal_Format("#{JHYH_230330_46}", maleName)
 		XiaLv_Wedding_Text:SetText(msg)
 	else
@@ -159,7 +159,7 @@ end
 function XiaLv_Wedding_Update_OneAgree()
 	local agreeSex = Get_XParam_INT(0)
 	
-	if agreeSex == 0 then --女方
+	if agreeSex == 0 then --??
 		XiaLv_Wedding_WomanBackLight:Show()		
 	else
 		XiaLv_Wedding_ManBackLight:Show()			
@@ -199,7 +199,7 @@ function XiaLv_Wedding_OkBtn_Click(  )
 end
 
 
---客户端主动关闭界面,给服务器发消息
+--客户端主动关睜界面,给服务器发消息
 function XiaLv_Wedding_OnHidden()
 
 	if this:IsVisible() == false then

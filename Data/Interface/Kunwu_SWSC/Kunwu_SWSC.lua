@@ -4,9 +4,9 @@
 local g_Kunwu_SWSC_UnifiedXPosition
 local g_Kunwu_SWSC_UnifiedYPosition
 
-local g_Kunwu_SWSC_Param1 --声望等级
-local g_Kunwu_SWSC_Param2 --声望值
-local g_Kunwu_SWSC_Param3 --npc的objid
+local g_Kunwu_SWSC_Param1 --????
+local g_Kunwu_SWSC_Param2 --???
+local g_Kunwu_SWSC_Param3 --npc?objid
 
 local objCared = -1
 local MAX_OBJ_DISTANCE = 5
@@ -20,7 +20,7 @@ function Kunwu_SWSC_PreLoad()
 	-- 游戏分辨率发生了变化
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
 	
-	--离开场景，自动关闭
+	--离开场景，自动关睜
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")
 	
 	this:RegisterEvent("OBJECT_CARED_EVENT");
@@ -87,7 +87,7 @@ function Kunwu_SWSC_OnEvent(event)
 		if(tonumber(arg0) ~= objCared) then
 			return;
 		end
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			this:Hide();
 			--取消关心
@@ -101,7 +101,7 @@ function Kunwu_SWSC_Update()
 end
 
 --================================================
--- 关闭界面
+-- 关睜界面
 --================================================
 function Kunwu_SWSC_OnHidden()
 	--取消关心

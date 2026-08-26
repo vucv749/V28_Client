@@ -6,7 +6,7 @@ local g_Frame_UnifiedPosition
 function ShouHunGuideLetter_PreLoad()
 
 	this:RegisterEvent("UI_COMMAND",true)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
 	this:RegisterEvent("ADJEST_UI_POS",false)
 
@@ -33,15 +33,15 @@ function ShouHunGuideLetter_OnEvent(event)
 			--打开界面
 			this:Show()
 		elseif param == 2 then
-			--自动寻路：找npc
+			--自动寻路：犚npc
 			ShouHunGuideLetter_GoToFindNpc()
-			--关闭界面
+			--关睜界面
 			ShouHunGuideLetter_OnHiden()			
 		elseif param == 3 then
-			--关闭界面
+			--关睜界面
 			ShouHunGuideLetter_OnHiden()
 		elseif param == 4 then
-			--打开珍兽界面
+			--打开犱兽界面
 			PushEvent("TOGLE_PET_PAGE", -1)
 		end
 
@@ -61,7 +61,7 @@ function ShouHunGuideLetter_OnEvent(event)
 
 end
 
---点击：前往server判断，是否可以寻路找npc
+--点击：前往server判断，是否可以寻路犚npc
 function ShouHunGuideLetter_Clicked()
 
 	Clear_XSCRIPT();
@@ -73,21 +73,21 @@ function ShouHunGuideLetter_Clicked()
 	
 end
 
---响应：通过server判断，可以寻路找npc
+--响应：通过server判断，可以寻路犚npc
 function ShouHunGuideLetter_GoToFindNpc()
 	
-	AutoRuntoTargetExWithName(265, 128, 2, "云飘飘")
+	AutoRuntoTargetExWithName(265, 128, 2, "V鈔 Phi陁 Phi陁")
 	
 end
 
---调整：界面位置
+--调狖：界面位置
 function ShouHunGuideLetter_ResetPos()
 
 	ShouHunGuideLetter_Frame:SetProperty("UnifiedPosition", g_Frame_UnifiedPosition)
 
 end
 
---关闭：界面
+--关睜：界面
 function ShouHunGuideLetter_OnHiden()
 	this:Hide()
 end

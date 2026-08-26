@@ -29,7 +29,7 @@ end
 function FriendSearch_OnLoad()
 
 
-	FriendSearch_SearchMode:ComboBoxAddItem("√˚◊÷",0);
+	FriendSearch_SearchMode:ComboBoxAddItem("TÍn",0);
 	FriendSearch_SearchMode:ComboBoxAddItem("ID",1);
 	FriendSearch_SearchMode:SetCurrentSelect( 0 );
 	local str,index = FriendSearch_SearchMode:GetCurrentSelect();
@@ -37,17 +37,17 @@ function FriendSearch_OnLoad()
 	FriendSearch_Module2_CheckBox1:SetCheck( 0 );
 	FriendSearch_Module2_CheckBox2:SetCheck( 0 );
 
-	FriendSearch_Confraternity:ComboBoxAddItem("»´≤ø",-3 );
-	FriendSearch_Confraternity:ComboBoxAddItem("»Œ“‚",-2 );
-	FriendSearch_Confraternity:ComboBoxAddItem("Œﬁ∞Ô≈…",-1 );
+	FriendSearch_Confraternity:ComboBoxAddItem("KhÙng giæi h’n",-3 );
+	FriendSearch_Confraternity:ComboBoxAddItem("KhÙng giæi h’n",-2 );
+	FriendSearch_Confraternity:ComboBoxAddItem("VÙ bang ph·i",-1 );
 	FriendSearch_Confraternity:SetCurrentSelect( 0 );
 
-	FriendSearch_Sexy:ComboBoxAddItem("≤ªœﬁ",-1 );
-	FriendSearch_Sexy:ComboBoxAddItem( "≈Æ", 0 );
-	FriendSearch_Sexy:ComboBoxAddItem( "ƒ–", 1 );
+	FriendSearch_Sexy:ComboBoxAddItem("KhÙng giæi h’n",-1 );
+	FriendSearch_Sexy:ComboBoxAddItem( "NÊ", 0 );
+	FriendSearch_Sexy:ComboBoxAddItem( "Nam", 1 );
 	FriendSearch_Sexy:SetCurrentSelect( 0 );
 
-	FriendSearch_Level:ComboBoxAddItem("»Œ“‚",-1 );
+	FriendSearch_Level:ComboBoxAddItem("KhÙng giæi h’n",-1 );
 	FriendSearch_Level:ComboBoxAddItem( "1 - 10", 0 );
 	FriendSearch_Level:ComboBoxAddItem( "11 - 20", 1 );
 	FriendSearch_Level:ComboBoxAddItem( "21 - 30", 2 );
@@ -93,21 +93,21 @@ end
 function FrinedSearch_UpdataMenPai()
 
 	FriendSearch_MenPai:ResetList()
-	FriendSearch_MenPai:ComboBoxAddItem("»´≤ø",-3 );
-	FriendSearch_MenPai:ComboBoxAddItem("»Œ“‚",-2 );
-	FriendSearch_MenPai:ComboBoxAddItem("Œﬁ√≈≈…", -1 );
-	FriendSearch_MenPai:ComboBoxAddItem("…Ÿ¡÷", 0 );
-	FriendSearch_MenPai:ComboBoxAddItem("√˜ΩÃ", 1 );
-	FriendSearch_MenPai:ComboBoxAddItem("ÿ§∞Ô", 2 );
-	FriendSearch_MenPai:ComboBoxAddItem("Œ‰µ±", 3 );
-	FriendSearch_MenPai:ComboBoxAddItem("∂Î·“", 4 );
-	FriendSearch_MenPai:ComboBoxAddItem("–«Àﬁ", 5 );
-	FriendSearch_MenPai:ComboBoxAddItem("ÃÏ¡˙", 6 );
-	FriendSearch_MenPai:ComboBoxAddItem("ÃÏ…Ω", 7 );
-	FriendSearch_MenPai:ComboBoxAddItem("Â–“£", 8 );
+	FriendSearch_MenPai:ComboBoxAddItem("KhÙng giæi h’n",-3 );
+	FriendSearch_MenPai:ComboBoxAddItem("KhÙng giæi h’n",-2 );
+	FriendSearch_MenPai:ComboBoxAddItem("TÒ do", -1 );
+	FriendSearch_MenPai:ComboBoxAddItem("Thi™u L‚m", 0 );
+	FriendSearch_MenPai:ComboBoxAddItem("Minh Gi·o", 1 );
+	FriendSearch_MenPai:ComboBoxAddItem("C·i Bang", 2 );
+	FriendSearch_MenPai:ComboBoxAddItem("Vı –ang", 3 );
+	FriendSearch_MenPai:ComboBoxAddItem("Nga Mi", 4 );
+	FriendSearch_MenPai:ComboBoxAddItem("Tinh T˙c", 5 );
+	FriendSearch_MenPai:ComboBoxAddItem("ThiÍn Long", 6 );
+	FriendSearch_MenPai:ComboBoxAddItem("ThiÍn SΩn", 7 );
+	FriendSearch_MenPai:ComboBoxAddItem("TiÍu dao", 8 );
 	if Player : GetData("IsOriginalHJ") ~= 1 then
-		FriendSearch_MenPai:ComboBoxAddItem("¬¸Õ”…Ω◊Ø", 10);
-		FriendSearch_MenPai:ComboBoxAddItem("∂Ò»Àπ»", 11);--MPTODO menpai11
+		FriendSearch_MenPai:ComboBoxAddItem("M’n –‡ SΩn Trang", 10);
+		FriendSearch_MenPai:ComboBoxAddItem("¡c Nh‚n CØc", 11);--MPTODO menpai11
 	end
 	FriendSearch_MenPai:SetCurrentSelect( 0 );
 	
@@ -138,16 +138,16 @@ function FriendSearch_UpdateCurrentPage()
 		FriendSearch_Info:AddNewItem( namecolor..name, 0, i );
 		FriendSearch_Info:AddNewItem( namecolor..id, 1, i );
 		if( bOnline ) then
-			FriendSearch_Info:AddNewItem( namecolor.."‘⁄œﬂ", 2, i );
+			FriendSearch_Info:AddNewItem( namecolor.."T’i Tuy™n", 2, i );
 		else
-			FriendSearch_Info:AddNewItem( namecolor.."¿Îœﬂ", 2, i );
+			FriendSearch_Info:AddNewItem( namecolor.."Li Tuy™n", 2, i );
 		end
 		FriendSearch_Info:AddNewItem( namecolor..tostring( nLevel ), 3, i );
 
 		if( tonumber( nSex ) == 0 ) then
-			FriendSearch_Info:AddNewItem( namecolor.."≈Æ", 4, i );
+			FriendSearch_Info:AddNewItem( namecolor.."NÊ", 4, i );
 		else
-			FriendSearch_Info:AddNewItem( namecolor.."ƒ–", 4, i );
+			FriendSearch_Info:AddNewItem( namecolor.."Nam", 4, i );
 		end
 		FriendSearch_Info:AddNewItem( namecolor..strMenpai, 5, i );
 		FriendSearch_Info:AddNewItem( namecolor..strBangpai, 6, i );

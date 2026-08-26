@@ -1,7 +1,7 @@
 local i = 0;
 local max_index = 3;
 local max_size = 400;
---根据目前的宽度只能显示20个汉字，如果以后修改宽度的话，这里也可以适当加长。
+--根据目前的宽度只能显示20个汉字，如果以后修改宽度的话，犫里也可以适当加长。
 
 function DebugListBox_PreLoad()
 	this:RegisterEvent("APPLICATION_INITED");

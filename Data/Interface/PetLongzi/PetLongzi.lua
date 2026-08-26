@@ -1,6 +1,6 @@
-local g_nBagIndex = -1    		--±³°üÖÐµÄÎ»ÖÃ 
-local g_nItemIndex = -1   		--ÎïÆ·ID 
-local g_nCanSelectTotal = 0     --¿ÉÑ¡°´Å¥¸öÊý 
+local g_nBagIndex = -1    		--?????? 
+local g_nItemIndex = -1   		--??ID 
+local g_nCanSelectTotal = 0     --?????? 
 local g_strPetName = ""
 
 function PetLongzi_PreLoad()
@@ -61,31 +61,31 @@ function PetLongzi_UpdateFrame()
 
 	elseif g_nCanSelectTotal == 4 then
 		if g_nItemIndex == 38000204 or g_nItemIndex == 38001080 or g_nItemIndex == 38001798 
-			or g_nItemIndex == 38002172  -- ÆßÇÉÀêÃ¨
-			or g_nItemIndex == 30309982  -- ¾ÅÀèÑý»¢
-			or g_nItemIndex == 30309984  -- ÍòÊÀ»ê
-			or g_nItemIndex == 30309988	 -- ÏÁÂ··ê
-			or g_nItemIndex == 30309989  -- ÇØÐ¡Å¼
-			or g_nItemIndex == 30309995  -- ËÄÊ±É½¾ý
-			or g_nItemIndex == 30309996  -- °²ç÷¶ù
-			or g_nItemIndex == 30310011  -- ÄÞ»Ë±¦±¦
-			or g_nItemIndex == 30310022  -- ÇÉÇÉ±¦±¦
-			or g_nItemIndex == 30310030  -- ¾ÅÌìÐþ·ï
-			or g_nItemIndex == 30310038  -- ÇôÁú
-			or g_nItemIndex == 30310046  -- Ð¡»¨Ñý±¦±¦
-			or g_nItemIndex == 30310054  -- ÁÒÍÃÌðÐÄ±¦±¦
-			or g_nItemIndex == 30310062  -- Æß²Ê»Ô¿¥
-			or g_nItemIndex == 30310075  -- ÕòµºÉñÊÞ
-			or g_nItemIndex == 30310076  -- ÕòµºÉñÊÞ
-			or g_nItemIndex == 30310085  -- ÆßÏ¦±¦±¦2023
-			or g_nItemIndex == 30310096  -- ÕÑÈð÷è÷ë2023
-			or g_nItemIndex == 30310112  -- ÇéÈË½Ú±¦±¦2023
-			or g_nItemIndex == 30310117  -- Ð¡Â¹ßÏßÏ
-			or g_nItemIndex == 30310104  -- ¸²º£Áú¾ý
-			or g_nItemIndex == 30310126  -- »ðÑæÑýÄ§
-			or g_nItemIndex == 30310125  -- Ç§»úÁéÐ«
-			or g_nItemIndex == 30310140  -- ÆßÏ¦±¦±¦2024
-			or g_nItemIndex == 30310148  -- ÆßÏ¦±¦±¦2024
+			or g_nItemIndex == 38002172  -- ????
+			or g_nItemIndex == 30309982  -- ????
+			or g_nItemIndex == 30309984  -- ???
+			or g_nItemIndex == 30309988	 -- ???
+			or g_nItemIndex == 30309989  -- ???
+			or g_nItemIndex == 30309995  -- ????
+			or g_nItemIndex == 30309996  -- ???
+			or g_nItemIndex == 30310011  -- ????
+			or g_nItemIndex == 30310022  -- ????
+			or g_nItemIndex == 30310030  -- ????
+			or g_nItemIndex == 30310038  -- ??
+			or g_nItemIndex == 30310046  -- ?????
+			or g_nItemIndex == 30310054  -- ??????
+			or g_nItemIndex == 30310062  -- ????
+			or g_nItemIndex == 30310075  -- ????
+			or g_nItemIndex == 30310076  -- ????
+			or g_nItemIndex == 30310085  -- ????2023
+			or g_nItemIndex == 30310096  -- ????2023
+			or g_nItemIndex == 30310112  -- ?????2023
+			or g_nItemIndex == 30310117  -- ????
+			or g_nItemIndex == 30310104  -- ????
+			or g_nItemIndex == 30310126  -- ????
+			or g_nItemIndex == 30310125  -- ????
+			or g_nItemIndex == 30310140  -- ????2024
+			or g_nItemIndex == 30310148  -- ????2024
 			then
 
 			PetLongzi_OK1:Show()

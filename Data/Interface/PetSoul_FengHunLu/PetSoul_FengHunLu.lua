@@ -54,28 +54,28 @@ local g_nMaxPoint				= 40
 
 -- ÂñµãÊÂ¼þµÄ´æ´¢Ë÷ÒýÐÅÏ¢
 -- nSaveMD ´æ´¢MD nSavePosStart ÂñµãÔÚ±¾MDµÄÆðÊ¼Ë÷Òý 
--- nSaveLen ÂñµãÕ¼ÓÃµÄbitÊý nMaxValue ÂñµãÊý¾Ý×î´óÖµ(ÑÏ¸ñÐ¡ÓÚµÈÓÚ(2^nSaveLen) - 1£¬²¢ÇÒÁô³öÁËÒ»¶¨µÃµ¯ÐÔ¿Õ¼ä)
+-- nSaveLen Âñµã ¼ÓÃµÄbitÊý nMaxValue ÂñµãÊý¾Ý×î´óÖµ(ÑÏ¸ñÐ¡ÓÚµÈÓÚ(2^nSaveLen) - 1£¬²¢ÇÒÁô³öÁËÒ»¶¨µÃµ¯ÐÔ¿ ¼ä)
 -- ²Î¿¼1 »ØÁ÷Ó¢ÐÛÖ®Â· #define HEROESRETURNS_TASK_INDEX_0		0	// Ìí¼Ó1¸öºÃÓÑ µÈ
--- ²Î¿¼2 Õ½½­ºþ 892664
+-- ²Î¿¼2  ½½­ºþ 892664
 local g_tabMaiDianSaveInfo = 
 {
-	[1] 	= {nSaveMDIndex = 1, nSavePosStart = 0, 	nSaveLen = 12, 	nMaxValue = 2500, },-- 1] ÀÛ¼ÆÉ±¹ÖÊýÁ¿ 4095 cppÂñµã
-	[2] 	= {nSaveMDIndex = 1, nSavePosStart = 12, 	nSaveLen = 5, 	nMaxValue = 20, },	-- 2] ÀÏÈý»· 31	
-	[3] 	= {nSaveMDIndex = 1, nSavePosStart = 17, 	nSaveLen = 5, 	nMaxValue = 15, },	-- 3] °ï»áÈÎÎñ 31
-	[4] 	= {nSaveMDIndex = 1, nSavePosStart = 22, 	nSaveLen = 5, 	nMaxValue = 10, },	-- 4] Ê¦ÃÅÈÎÎñ 31
-	[5] 	= {nSaveMDIndex = 1, nSavePosStart = 27, 	nSaveLen = 5, 	nMaxValue = 9, },	-- 5] Ñà×Ó 31
-	[6] 	= {nSaveMDIndex = 2, nSavePosStart = 0, 	nSaveLen = 3, 	nMaxValue = 4, },	-- 6] Æå¾Ö 7
-	[7] 	= {nSaveMDIndex = 2, nSavePosStart = 3, 	nSaveLen = 3, 	nMaxValue = 4, },	-- 7] ¿ì»îÈý 7
-	[8] 	= {nSaveMDIndex = 2, nSavePosStart = 6, 	nSaveLen = 3, 	nMaxValue = 2, },	-- 8] ÅÜÉÌ 7
-	[9] 	= {nSaveMDIndex = 2, nSavePosStart = 9, 	nSaveLen = 3, 	nMaxValue = 2, },	-- 9] ¿Æ¾Ù 7
-	[10] 	= {nSaveMDIndex = 2, nSavePosStart = 12, 	nSaveLen = 3, 	nMaxValue = 2, },	-- 10 Ç°ÊÀ½ñÉú 7
-	[11] 	= {nSaveMDIndex = 2, nSavePosStart = 15, 	nSaveLen = 3, 	nMaxValue = 2, },	-- 11 ³ÑÐ×´òÍ¼ 7
-	[12] 	= {nSaveMDIndex = 2, nSavePosStart = 18, 	nSaveLen = 2, 	nMaxValue = 1, },	-- 12 Ð£³¡±ÈÎä 3 cppÂñµã
-	[13] 	= {nSaveMDIndex = 2, nSavePosStart = 20, 	nSaveLen = 2, 	nMaxValue = 1, },	-- 13 °Ù±äÁ³Æ× 3
+	[1] 	= {nSaveMDIndex = 1, nSavePosStart = 0, 	nSaveLen = 12, 	nMaxValue = 2500, },-- 1] ?????? 4095 cpp??
+	[2] 	= {nSaveMDIndex = 1, nSavePosStart = 12, 	nSaveLen = 5, 	nMaxValue = 20, },	-- 2] ??? 31	
+	[3] 	= {nSaveMDIndex = 1, nSavePosStart = 17, 	nSaveLen = 5, 	nMaxValue = 15, },	-- 3] ???? 31
+	[4] 	= {nSaveMDIndex = 1, nSavePosStart = 22, 	nSaveLen = 5, 	nMaxValue = 10, },	-- 4] ???? 31
+	[5] 	= {nSaveMDIndex = 1, nSavePosStart = 27, 	nSaveLen = 5, 	nMaxValue = 9, },	-- 5] ?? 31
+	[6] 	= {nSaveMDIndex = 2, nSavePosStart = 0, 	nSaveLen = 3, 	nMaxValue = 4, },	-- 6] ?? 7
+	[7] 	= {nSaveMDIndex = 2, nSavePosStart = 3, 	nSaveLen = 3, 	nMaxValue = 4, },	-- 7] ??? 7
+	[8] 	= {nSaveMDIndex = 2, nSavePosStart = 6, 	nSaveLen = 3, 	nMaxValue = 2, },	-- 8] ?? 7
+	[9] 	= {nSaveMDIndex = 2, nSavePosStart = 9, 	nSaveLen = 3, 	nMaxValue = 2, },	-- 9] ?? 7
+	[10] 	= {nSaveMDIndex = 2, nSavePosStart = 12, 	nSaveLen = 3, 	nMaxValue = 2, },	-- 10 ???? 7
+	[11] 	= {nSaveMDIndex = 2, nSavePosStart = 15, 	nSaveLen = 3, 	nMaxValue = 2, },	-- 11 ???? 7
+	[12] 	= {nSaveMDIndex = 2, nSavePosStart = 18, 	nSaveLen = 2, 	nMaxValue = 1, },	-- 12 ???? 3 cpp??
+	[13] 	= {nSaveMDIndex = 2, nSavePosStart = 20, 	nSaveLen = 2, 	nMaxValue = 1, },	-- 13 ???? 3
 }
 
 -- Ã¿ÌìµÄÊÂ¼þÐÅÏ¢ Íê³ÉÒÀÀµµÄÂñµãid ÂñµãÊý¾ÝÖµ »îµÃµÄ×Ü»î¶¯µãÊý ×îºóÒ»¸öÔÝÊ±·ÏÆú
--- ËùÓÐ¸ºÊý¶¼ÊÇÌØÊâ´¦ÀíµÄÊÂ¼þ£¬Ä¿Ç°-1ÊÇÃ¿ÈÕ»îÔ¾Öµ
+-- ËùÓÐ¸ºÊý¶¼ÊÇÌØÊâ´¦ÀíµÄÊÂ¼þ£¬Ä¿Ç°-1ÊÇÃ¿È »îÔ¾Öµ
 local g_tabEventInfo = 
 {
 	-- µÚ1Ìì
@@ -83,7 +83,7 @@ local g_tabEventInfo =
 	-- ²Î¼Ó1´ÎÆå¾Ö	1
 	-- Íê³É1´ÎÎÒ°®ÐÒÔË¿ì»îÈý	1
 	-- Íê³É5´Î°ï»áÈÎÎñ	1
-	-- ½ñÈÕ»îÔ¾Öµ´ïµ½100µã	1
+	-- ½ñÈ »îÔ¾Öµ´ïµ½100µã	1
 	[1] = 
 	{
 		[1] = {nMaiDianID = 1, 	nMaiDianValue = 100, 	nGetPoint = 1, nEventIndex = 1, },
@@ -198,7 +198,7 @@ local g_tabEventInfo =
 	},
 }
 
--- ÊÂ¼þÕ¹Ê¾
+-- ÊÂ¼þ ¹Ê¾
 local g_tabEventShowInfo = 
 {
 	[1] 	= {strDes = "#{XYSHFC_20211229_01}", strTips = "#{XYSHFC_20211229_41}",	strPic = "set:Huodong_7 image:Huodong_7_6"},
@@ -247,48 +247,48 @@ local g_tabEventShowInfo =
 -- nOpType 1 ·µ»ØÐÑÄ¿ÌáÊ¾£¬ nOpType 2 Ñ°Â·
 local g_tabEventClickInfo = 
 {
-	[1] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_81}", },	-- ·µ»ØÐÑÄ¿ÌáÊ¾1
-	[2] 	= {nOpType= 2, nSceneID = 2, nPosX = 274,	nPoxZ = 95,		strNPCName = "ÁõÖÙ¸¦", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁ´óÀí£¨274£¬95£©ÁõÖÙ¸¦´¦
-	[3] 	= {nOpType= 2, nSceneID = 1, nPosX = 130, 	nPoxZ = 230,	strNPCName = "ÁøÔÂºç", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁËÕÖÝ£¨130£¬230£©ÁøÔÂºç´¦
-	[4] 	= {nOpType= 1, nSceneID = 0, nPosX = 0, 	nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_82}", },	-- ·µ»ØÐÑÄ¿ÌáÊ¾9
-	[5] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_83}", },	-- ·µ»ØÐÑÄ¿ÌáÊ¾10
-	[6] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_84}", },	-- ·µ»ØÐÑÄ¿ÌáÊ¾2
-	[7] 	= {nOpType= 2, nSceneID = 1, nPosX = 62,	nPoxZ = 162,	strNPCName = "Ç®ºêÓî", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁËÕÖÝ£¨62£¬162£©Ç®ºêÓî´¦
-	[8] 	= {nOpType= 1, nSceneID = 0, nPosX = 0, 	nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_85}", },	-- ·µ»ØÐÑÄ¿ÌáÊ¾11
-	[9] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_86}", },	-- ·µ»ØÐÑÄ¿ÌáÊ¾12
-	[10] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_87}", },	-- ·µ»ØÐÑÄ¿ÌáÊ¾9
-	[11] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_88}", },	-- ·µ»ØÐÑÄ¿ÌáÊ¾3
-	[12] 	= {nOpType= 2, nSceneID = 1, nPosX = 127,	nPoxZ = 133,	strNPCName = "Îâ«d", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁËÕÖÝ£¨127£¬133£©Îâ«d´¦
-	[13] 	= {nOpType= 2, nSceneID = 1, nPosX = 168,	nPoxZ = 168,	strNPCName = "ÎÄÑå²©", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁËÕÖÝ£¨168£¬168£©ÎÄÑå²©´¦
-	[14] 	= {nOpType= 2, nSceneID = 1, nPosX = 130, 	nPoxZ = 230,	strNPCName = "ÁøÔÂºç", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁËÕÖÝ£¨130£¬230£©ÁøÔÂºç´¦
-	[15] 	= {nOpType= 2, nSceneID = 4, nPosX = 70,	nPoxZ = 119,	strNPCName = "Àî¸Ù", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁÌ«ºþ£¨70£¬119£©Àî¸Ù´¦
-	[16] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_89}", },	-- ·µ»ØÐÑÄ¿ÌáÊ¾4
-	[17] 	= {nOpType= 2, nSceneID = 1, nPosX = 62,	nPoxZ = 162,	strNPCName = "Ç®ºêÓî", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁËÕÖÝ£¨62£¬162£©Ç®ºêÓî´¦
-	[18] 	= {nOpType= 2, nSceneID = 2, nPosX = 274,	nPoxZ = 95,		strNPCName = "ÁõÖÙ¸¦", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁ´óÀí£¨274£¬95£©ÁõÖÙ¸¦´¦
+	[1] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_81}", },	-- ??????1
+	[2] 	= {nOpType= 2, nSceneID = 2, nPosX = 274,	nPoxZ = 95,		strNPCName = "Trß½ng D¸ch Qu¯c", strShow = "", },	-- ???????(274,95)????
+	[3] 	= {nOpType= 2, nSceneID = 1, nPosX = 130, 	nPoxZ = 230,	strNPCName = "Li­u Nguy®t H°ng", strShow = "", },	-- ???????(130,230)????
+	[4] 	= {nOpType= 1, nSceneID = 0, nPosX = 0, 	nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_82}", },	-- ??????9
+	[5] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_83}", },	-- ??????10
+	[6] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_84}", },	-- ??????2
+	[7] 	= {nOpType= 2, nSceneID = 1, nPosX = 62,	nPoxZ = 162,	strNPCName = "Ti«n Hoành Vû", strShow = "", },	-- ???????(62,162)????
+	[8] 	= {nOpType= 1, nSceneID = 0, nPosX = 0, 	nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_85}", },	-- ??????11
+	[9] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_86}", },	-- ??????12
+	[10] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_87}", },	-- ??????9
+	[11] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_88}", },	-- ??????3
+	[12] 	= {nOpType= 2, nSceneID = 1, nPosX = 127,	nPoxZ = 133,	strNPCName = "Ngô Gi¾i", strShow = "", },	-- ???????(127,133)???
+	[13] 	= {nOpType= 2, nSceneID = 1, nPosX = 168,	nPoxZ = 168,	strNPCName = "Vån NgÕn Bác", strShow = "", },	-- ???????(168,168)????
+	[14] 	= {nOpType= 2, nSceneID = 1, nPosX = 130, 	nPoxZ = 230,	strNPCName = "Li­u Nguy®t H°ng", strShow = "", },	-- ???????(130,230)????
+	[15] 	= {nOpType= 2, nSceneID = 4, nPosX = 70,	nPoxZ = 119,	strNPCName = "Lý Cß½ng", strShow = "", },	-- ???????(70,119)???
+	[16] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_89}", },	-- ??????4
+	[17] 	= {nOpType= 2, nSceneID = 1, nPosX = 62,	nPoxZ = 162,	strNPCName = "Ti«n Hoành Vû", strShow = "", },	-- ???????(62,162)????
+	[18] 	= {nOpType= 2, nSceneID = 2, nPosX = 274,	nPoxZ = 95,		strNPCName = "Trß½ng D¸ch Qu¯c", strShow = "", },	-- ???????(274,95)????
 	--[19] 	= {nOpType= 2, nSceneID = 2, nPosX = 50,	nPoxZ = 152,	strNPCName = "Ö÷¿¼¹Ù", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁ´óÀí£¨50£¬152£©Ö÷¿¼¹Ù´¦
-	[19] 	= {nOpType= 2, nSceneID = 1, nPosX = 168,	nPoxZ = 168,	strNPCName = "ÎÄÑå²©", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁËÕÖÝ£¨168£¬168£©ÎÄÑå²©´¦
-	[20] 	= {nOpType= 2, nSceneID = 0, nPosX = 194,	nPoxZ = 180,	strNPCName = "", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁÂåÑô£¨194£¬180£©Öî¸ð¿×ÁÁ´¦
-	[21] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_90}", },	-- ·µ»ØÐÑÄ¿ÌáÊ¾5
-	[22] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_91}", },	-- ·µ»ØÐÑÄ¿ÌáÊ¾13
-	[23] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_92}", },	-- ·µ»ØÐÑÄ¿ÌáÊ¾12
-	[24] 	= {nOpType= 2, nSceneID = 1, nPosX = 130, 	nPoxZ = 230,	strNPCName = "ÁøÔÂºç", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁËÕÖÝ£¨130£¬230£©ÁøÔÂºç´¦
-	[25] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_93}", },	-- ·µ»ØÐÑÄ¿ÌáÊ¾9
-	[26] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_94}", },	-- ·µ»ØÐÑÄ¿ÌáÊ¾6
-	[27] 	= {nOpType= 2, nSceneID = 1, nPosX = 62,	nPoxZ = 162,	strNPCName = "Ç®ºêÓî", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁËÕÖÝ£¨62£¬162£©Ç®ºêÓî´¦
-	[28] 	= {nOpType= 2, nSceneID = 2, nPosX = 274,	nPoxZ = 95,		strNPCName = "ÁõÖÙ¸¦", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁ´óÀí£¨274£¬95£©ÁõÖÙ¸¦´¦
-	[29] 	= {nOpType= 2, nSceneID = 1, nPosX = 127,	nPoxZ = 133,	strNPCName = "Îâ«d", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁËÕÖÝ£¨127£¬133£©Îâ«d´¦
-	[30] 	= {nOpType= 2, nSceneID = 4, nPosX = 70,	nPoxZ = 119,	strNPCName = "Àî¸Ù", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁÌ«ºþ£¨70£¬119£©Àî¸Ù´¦
-	[31] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_95}", },	-- ·µ»ØÐÑÄ¿ÌáÊ¾7
-	[32] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_96}", },	-- ·µ»ØÐÑÄ¿ÌáÊ¾13
-	[33] 	= {nOpType= 2, nSceneID = 1, nPosX = 130, 	nPoxZ = 230,	strNPCName = "ÁøÔÂºç", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁËÕÖÝ£¨130£¬230£©ÁøÔÂºç´¦
+	[19] 	= {nOpType= 2, nSceneID = 1, nPosX = 168,	nPoxZ = 168,	strNPCName = "Vån NgÕn Bác", strShow = "", },	-- ???????(168,168)????
+	[20] 	= {nOpType= 2, nSceneID = 0, nPosX = 194,	nPoxZ = 180,	strNPCName = "", strShow = "", },	-- ???????(194,180)?????
+	[21] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_90}", },	-- ??????5
+	[22] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_91}", },	-- ??????13
+	[23] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_92}", },	-- ??????12
+	[24] 	= {nOpType= 2, nSceneID = 1, nPosX = 130, 	nPoxZ = 230,	strNPCName = "Li­u Nguy®t H°ng", strShow = "", },	-- ???????(130,230)????
+	[25] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_93}", },	-- ??????9
+	[26] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_94}", },	-- ??????6
+	[27] 	= {nOpType= 2, nSceneID = 1, nPosX = 62,	nPoxZ = 162,	strNPCName = "Ti«n Hoành Vû", strShow = "", },	-- ???????(62,162)????
+	[28] 	= {nOpType= 2, nSceneID = 2, nPosX = 274,	nPoxZ = 95,		strNPCName = "Trß½ng D¸ch Qu¯c", strShow = "", },	-- ???????(274,95)????
+	[29] 	= {nOpType= 2, nSceneID = 1, nPosX = 127,	nPoxZ = 133,	strNPCName = "Ngô Gi¾i", strShow = "", },	-- ???????(127,133)???
+	[30] 	= {nOpType= 2, nSceneID = 4, nPosX = 70,	nPoxZ = 119,	strNPCName = "Lý Cß½ng", strShow = "", },	-- ???????(70,119)???
+	[31] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_95}", },	-- ??????7
+	[32] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_96}", },	-- ??????13
+	[33] 	= {nOpType= 2, nSceneID = 1, nPosX = 130, 	nPoxZ = 230,	strNPCName = "Li­u Nguy®t H°ng", strShow = "", },	-- ???????(130,230)????
 	--[34] 	= {nOpType= 2, nSceneID = 2, nPosX = 50,	nPoxZ = 152,	strNPCName = "Ö÷¿¼¹Ù", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁ´óÀí£¨50£¬152£©Ö÷¿¼¹Ù´¦
-	[34] 	= {nOpType= 2, nSceneID = 1, nPosX = 168,	nPoxZ = 168,	strNPCName = "ÎÄÑå²©", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁËÕÖÝ£¨168£¬168£©ÎÄÑå²©´¦
-	[35] 	= {nOpType= 2, nSceneID = 0, nPosX = 194,	nPoxZ = 180,	strNPCName = "", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁÂåÑô£¨194£¬180£©Öî¸ð¿×ÁÁ´¦
-	[36] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_97}", },	-- ·µ»ØÐÑÄ¿ÌáÊ¾8
-	[37] 	= {nOpType= 2, nSceneID = 1, nPosX = 62,	nPoxZ = 162,	strNPCName = "Ç®ºêÓî", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁËÕÖÝ£¨62£¬162£©Ç®ºêÓî´¦
-	[38] 	= {nOpType= 2, nSceneID = 2, nPosX = 274,	nPoxZ = 95,		strNPCName = "ÁõÖÙ¸¦", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁ´óÀí£¨274£¬95£©ÁõÖÙ¸¦´¦
-	[39] 	= {nOpType= 2, nSceneID = 4, nPosX = 70,	nPoxZ = 119,	strNPCName = "Àî¸Ù", strShow = "", },	-- ×Ô¶¯Ñ°Â·ÖÁÌ«ºþ£¨70£¬119£©Àî¸Ù´¦
-	[40] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_98}", },	-- ·µ»ØÐÑÄ¿ÌáÊ¾9
+	[34] 	= {nOpType= 2, nSceneID = 1, nPosX = 168,	nPoxZ = 168,	strNPCName = "Vån NgÕn Bác", strShow = "", },	-- ???????(168,168)????
+	[35] 	= {nOpType= 2, nSceneID = 0, nPosX = 194,	nPoxZ = 180,	strNPCName = "", strShow = "", },	-- ???????(194,180)?????
+	[36] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_97}", },	-- ??????8
+	[37] 	= {nOpType= 2, nSceneID = 1, nPosX = 62,	nPoxZ = 162,	strNPCName = "Ti«n Hoành Vû", strShow = "", },	-- ???????(62,162)????
+	[38] 	= {nOpType= 2, nSceneID = 2, nPosX = 274,	nPoxZ = 95,		strNPCName = "Trß½ng D¸ch Qu¯c", strShow = "", },	-- ???????(274,95)????
+	[39] 	= {nOpType= 2, nSceneID = 4, nPosX = 70,	nPoxZ = 119,	strNPCName = "Lý Cß½ng", strShow = "", },	-- ???????(70,119)???
+	[40] 	= {nOpType= 1, nSceneID = 0, nPosX = 0,		nPoxZ = 0,		strNPCName = "", strShow = "#{XYSHFC_20211229_98}", },	-- ??????9
 }
 
 -- ÀÛ¼ÆµãÊý½±ÀøÐÅÏ¢
@@ -412,10 +412,10 @@ end
 --=========================================================
 function PetSoul_FengHunLu_OnEvent(event)
 	if ( event == "UI_COMMAND" and tonumber(arg0) == g_nUICommandID ) then
-		-- 0 ¹Ø±Õ, 1 ´ò¿ª, 2 Ë¢ÐÂ, 3 ¶þ´ÎÈ·ÈÏ¿ò
+		-- 0 ¹Ø± , 1 ´ò¿ª, 2 Ë¢ÐÂ, 3 ¶þ´ÎÈ·ÈÏ¿ò
 		local nOpType 	= Get_XParam_INT(0)
 
-		-- ¹Ø±Õ½çÃæ
+		-- ¹Ø± ½çÃæ
 		if 0 == nOpType then	
 			if this:IsVisible() then
 				PetSoul_FengHunLu_OnClose()
@@ -438,7 +438,7 @@ function PetSoul_FengHunLu_OnEvent(event)
 			end
 
 			-- ÏÔÊ¾½çÃæ
-			-- ÎªÁË½â¾ö½çÃæ±»ÕÚµ²µÄÎÊÌâ£¬ÏÈ°Ñ½çÃæ¹ØÁË
+			-- ÎªÁË½â¾ö½çÃæ±» Úµ²µÄÎÊÌâ£¬ÏÈ°Ñ½çÃæ¹ØÁË
 			-- if this:IsVisible() then
 			-- 	PetSoul_FengHunLu_OnClose()
 			-- end
@@ -500,9 +500,9 @@ function PetSoul_FengHunLu_OnEvent(event)
 		if(tonumber(arg0) ~= g_nObjCaredIDClient) then
 			return
 		end
-		-- Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		-- Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
-			-- ¹Ø±Õ½çÃæ
+			-- ¹Ø± ½çÃæ
 			PetSoul_FengHunLu_OnClose()
 		end	
 
@@ -577,7 +577,7 @@ function PetSoul_FengHunLu_Update(bOpen)
 	end
 	g_contorlPage[g_nCurPage] : SetCheck(1)
 
-	-- µãÊý½±ÀøÕ¹Ê¾
+	-- µãÊý½±Àø ¹Ê¾
 	for i = 1, table.getn(g_tabPointRewardInfo) do
 		tPointRewardInfo = g_tabPointRewardInfo[i]
 		-- local theAction = DataPool:CreateBindActionItemForShow(tPointRewardInfo.nRewardItemID, 1)
@@ -592,7 +592,7 @@ function PetSoul_FengHunLu_Update(bOpen)
 		end
 	end
 
-	-- ½ø¶ÈÌõÕ¹Ê¾
+	-- ½ø¶ÈÌõ ¹Ê¾
 	local nTotalPoint = PetSoul_FengHunLu_GetTotalPoint()
 	local strTipsForProgress = ScriptGlobal_Format("#{XYSHFC_20211229_153}", tostring(nTotalPoint))
 	PetSoul_FengHunLu_EXPTip : SetToolTip(strTipsForProgress)
@@ -666,7 +666,7 @@ function PetSoul_FengHunLu_Update(bOpen)
 		
 		if 0 == bFinish then
 			-- Ç°Íù
-			g_contorlEventButton[i] : SetText( "Ç°Íù" )
+			g_contorlEventButton[i] : SetText( "Ði trß¾c" )
 		elseif 0 == bEventRewardFlag then
 			-- ÁìÈ¡
 			g_contorlEventButton[i] : SetText( "#{XYSHFC_20211229_106}" )
@@ -775,7 +775,7 @@ function PetSoul_FengHunLu_GetEventDetailInfo(nDayIndex, nIndexOfDay)
 	local nCurMaiDianValue		= 0
 
 	if nMaiDianID > 0 then
-		-- Õý³£Âñµã
+		--  ý³£Âñµã
 		local tableMaiDianInfo = g_tabMaiDianSaveInfo[nMaiDianID]
 		if nil == tableMaiDianInfo then
 			return 0, 0, 0, 0, 0, 0
@@ -789,7 +789,7 @@ function PetSoul_FengHunLu_GetEventDetailInfo(nDayIndex, nIndexOfDay)
 		end
 
 	elseif -1 == nMaiDianID then
-		-- ÌØÐ´ Ã¿ÈÕ»îÔ¾µãÊý
+		-- ÌØÐ´ Ã¿È »îÔ¾µãÊý
 		nCurMaiDianValue = g_nHuoYuePoint
 		-- ÒÑ¾­ÁìÈ¡ÁË ÌØÐ´³ÉÍê³É
 		if 1 == bEventRewardFlag then
@@ -884,7 +884,7 @@ function PetSoul_FengHunLu_PageClick(nPage)
 	end
 	if nPage > nOpenDays then
 		PushDebugMessage(ScriptGlobal_Format("#{XYSHFC_20211229_127}", nPage))
-		-- ÕâÀïÒ²ÒªË¢ÐÂ ²»È»½çÃæ°´Å¥»á×Ô¶¯±»check
+		--  âÀïÒ²ÒªË¢ÐÂ ²»È»½çÃæ°´Å¥»á×Ô¶¯±»check
 		PetSoul_FengHunLu_Update(bOpen)
 		return
 	end
@@ -917,7 +917,7 @@ function PetSoul_FengHunLu_OnClickHelp()
 end
 
 --=========================================================
--- Ã¿ÈÕÊÂ¼þµã»÷
+-- Ã¿È ÊÂ¼þµã»÷
 --=========================================================
 function PetSoul_FengHunLu_Item_Clicked(nIndexOfDay)
 
@@ -994,7 +994,7 @@ function PetSoul_FengHunLu_Reset()
 end
 
 --=========================================================
--- ¹Ø±Õ½çÃæ
+-- ¹Ø± ½çÃæ
 --=========================================================
 function PetSoul_FengHunLu_OnClose()	
 	this:Hide()

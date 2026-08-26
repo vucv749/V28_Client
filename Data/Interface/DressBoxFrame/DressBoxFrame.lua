@@ -4,15 +4,15 @@ local YIGUI_FIRST_SIZE = 15
 
 
 local YIGUI_DRESS_NUM = 5
-local YIGUI_DRESS_MODEL = {} --模型显示控件
-local YIGUI_DRESS_NULL	= {} --衣架
-local YIGUI_DRESS_BUTTON = {} --展示按钮
-local YIGUI_DRESS_TEXT = {} --衣服名字 文字
-local YIGUI_DRESS_FG_TEXT = {} --风格 文字
+local YIGUI_DRESS_MODEL = {} --??????
+local YIGUI_DRESS_NULL	= {} --??
+local YIGUI_DRESS_BUTTON = {} --????
+local YIGUI_DRESS_TEXT = {} --???? ??
+local YIGUI_DRESS_FG_TEXT = {} --?? ??
 
-local YIGUI_DRESS_ITEM_INDEX  = {-1,-1,-1,-1,-1} --衣柜模型显示对应物品ID
+local YIGUI_DRESS_ITEM_INDEX  = {-1,-1,-1,-1,-1} --??????????ID
 
-local YIGUI_DRESS_ITEM_SELECT = -1     --玩家选中的衣柜模型   -1表示为空
+local YIGUI_DRESS_ITEM_SELECT = -1     --?????????   -1????
 
 local nCareNpcID = -1
 local MAX_OBJ_DISTANCE = 3.0;
@@ -29,12 +29,12 @@ function DressBoxFrame_PreLoad()
 	this:RegisterEvent("OBJECT_CARED_EVENT", false)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED", false)
 	this:RegisterEvent("ADJEST_UI_POS", false)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)	--???????
 
 	-- FakeObject模型界面互斥
-	this:RegisterEvent("OPEN_SHOP_FITTING", false);				-- 元宝商店试衣间
-	this:RegisterEvent("OPEN_DRESS_PAINT_FITTING", false);			-- 时装染色试衣间
-	this:RegisterEvent("OPEN_DRESS_ENCHASE_FITTING", false);		-- 时装镶嵌试衣间
+	this:RegisterEvent("OPEN_SHOP_FITTING", false);				-- ???????
+	this:RegisterEvent("OPEN_DRESS_PAINT_FITTING", false);			-- ???????
+	this:RegisterEvent("OPEN_DRESS_ENCHASE_FITTING", false);		-- ???????
 	
 end
 
@@ -133,7 +133,7 @@ function DressBoxFrame_OnEvent(event)
 		if(tonumber(arg0) ~= nCareNpcID) then
 			return;
 		end
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			this:Hide()
 
@@ -436,7 +436,7 @@ function DressBoxFrame_RevertDressShow()
 end
 
 
---按照移动调整衣柜展示
+--按牋移动调狖衣柜牴示
 function DressBoxFrame_FrefreshDressYiGuiAfterMove()
 	local nIndexFrom	= YiGui:GetYiGuiMoveFromIndex() + 1
 	local nIndexTo		= YiGui:GetYiGuiMoveToIndex() + 1

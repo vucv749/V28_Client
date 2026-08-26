@@ -2,7 +2,7 @@
 -- 彻地符箓 专用界面，请不要用于其他功能，
 --
 
-local g_SERVER_CONTROL_1 = 1122361   --彻地符箓使用界面
+local g_SERVER_CONTROL_1 = 1122361   --????????
 
 local g_Client_ItemIndex = 0
 local g_CurSelectIndex_DJTS = 0
@@ -12,7 +12,7 @@ local g_CurSelectPage = 1
 local g_DJTS_MAX_USETIMES =50
 local g_DJTS_INIT_USETIMES =20
 
-local g_Type	-- "useDJTS"使用彻地符箓
+local g_Type	-- "useDJTS"??????
 
 local g_Item_DunJiaShu_Frame_UnifiedPosition;
 
@@ -25,10 +25,10 @@ local g_defBtnTextCr = "#cfff263#e000001"
 --缺省场景,仅显示需要
 local DefaultScn=
 {
-	{"#{DJTS_110509_34}", 401, 223, 225},	--秦皇地宫二层
-	{"#{DJTS_110509_35}", 402, 131, 128},	--秦皇地宫三层
-	{"#{DJTS_110509_36}", 161, 13, 25},		--燕王古墓三层
-	{"#{DJTS_110509_37}", 165, 25, 108},	--燕王古墓七层
+	{"#{DJTS_110509_34}", 401, 223, 225},	--??????
+	{"#{DJTS_110509_35}", 402, 131, 128},	--??????
+	{"#{DJTS_110509_36}", 161, 13, 25},		--??????
+	{"#{DJTS_110509_37}", 165, 25, 108},	--??????
 }
 
 --===============================================
@@ -85,7 +85,7 @@ function Item_DunJiaShu_OnEvent(event)
 	
 		if tonumber(arg2)==1 then
 			g_Client_ItemIndex = tonumber(arg1)
-			Item_DunJiaShu_Show("useDJTS") --使用彻地符箓
+			Item_DunJiaShu_Show("useDJTS") --??????
 			g_Type = "useDJTS"
 		else
 		    Item_DunJiaShu_ShengYu:SetText("#{DJTS_110509_03} "..Get_XParam_INT(0).."/"..g_DJTS_MAX_USETIMES);
@@ -124,9 +124,9 @@ function Item_DunJiaShu_Show(event)
 		end
 
 		--Item_DunJiaShu_Title:SetText("#{DJTS_110509_01}")	--彻地符箓
-		Item_DunJiaShu_Title:SetProperty("Image","set:Fulu_1 image:DunJiaShu_Title_Index")	--彻地符箓
+		Item_DunJiaShu_Title:SetProperty("Image","set:Fulu_1 image:DunJiaShu_Title_Index")	--????
 			
-		Item_DunJiaShu_Info:SetText("#{DJTS_110509_02}")	--彻地符箓介绍
+		Item_DunJiaShu_Info:SetText("#{DJTS_110509_02}")	--??????
 		Item_DunJiaShu_BuChong:Show()
 
 		for i=1,table.getn(PosBtnArray) do
@@ -227,7 +227,7 @@ function Item_DunJiaShu_ChuanSong_Clicked()
 
 	local pos, strText, count, posx, posy, init = PlayerPackage:LuaFnGetCheDiFuLuPosInfo(g_Client_ItemIndex, 0)
 	if init~=0 and count == 0 then
-		PushDebugMessage("#{DJTS_110509_51}"); --符咒耗尽，请使用遁地符补充符咒
+		PushDebugMessage("#{DJTS_110509_51}"); --????,??????????
 		this:Hide()
 		return
 	end

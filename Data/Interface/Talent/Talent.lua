@@ -219,10 +219,10 @@ function Talent_OnEvent(event)
 		Talent_InitSchema(menpai,DataPool:GetSectType()) 
 
 		local totallevel = DataPool:Lua_GetSectTotalLevel(0)
-		local maxlayer = 4;		--目前四层
+		local maxlayer = 4;		--????
 		local showlayer = math.floor(totallevel/20)+1;
 		if showlayer > maxlayer then
-			showlayer = maxlayer	--防止点满了的情况
+			showlayer = maxlayer	--????????
 		end
 
 
@@ -309,7 +309,7 @@ function Talent_MakeSubSchema(page)
 	end
 end
 
---这个函数处理第一排能不能学，区分于canlearn这速度更快一些
+--犫个函数处理第一排能不能学，区分于canlearn犫速度更快一些
 --后续如果增加了复杂度，考虑和canlearn合并
 function Talent_CanLight(page)
 	if page == 1 then
@@ -334,7 +334,7 @@ function Talent_ShowLearnTree(menpai,secttype)
 		end
 	end
 
-	--工具函数，是否有这个value
+	--工具函数，是否有犫个value
 	local hasValue = function(list, value)
 
 		for i,v in ipairs(list) do
@@ -381,7 +381,7 @@ function Talent_ShowLearnTree(menpai,secttype)
 		
 		Talent_produceBoard(light,1)
 		Talent_produceBoard(dark,0)	
-		return --直接返回
+		return --????
 	end
 
 	--构建全表
@@ -698,7 +698,7 @@ function Talent_CareObj()
 	if(tonumber(arg0) ~= g_objCareID) then
 		return;
 	end
-	--如果和NPC的距离大于一定距离或者被删除，自动关闭
+	--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 	if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 		--取消关心
 		Talent_StopCareObject(g_objCareID)
@@ -785,7 +785,7 @@ function Talent_Talent_Switch()
 	Talent_Talent:SetCheck(1)
 end
 
---切换个人展示界面
+--切换个人牴示界面
 function Talent_Profile_Switch()
 	Variable:SetVariable("SelfUnionPos", Talent_Frame:GetProperty("UnifiedPosition"), 1);	
 	Exterior:LuaFnExteriorPlayerOpenProfileUI()	
@@ -926,54 +926,54 @@ end
 function Talent_OnPageClicked(idx)
 	Variable:SetVariable("PageNumber", tostring(idx), 1);
 	idx = g_PageOrder[idx]
-	if idx == 1 then--装备
+	if idx == 1 then--??
 		Talent_SelfEquip_Page_Switch()
-	elseif idx == 2 then--资料
+	elseif idx == 2 then--??
 		Talent_SelfData_Switch()
-	elseif idx == 3 then--珍兽
+	elseif idx == 3 then--??
 		Talent_Pet_Switch()
-	elseif idx == 4 then--武魂
+	elseif idx == 4 then--??
 		Talent_Wuhun_Switch()
-	elseif idx == 5 then--修炼
+	elseif idx == 5 then--??
 		Talent_Xiulian_Switch()
-	elseif idx == 6 then--武道
+	elseif idx == 6 then--??
 		Talent_Talent_Switch()
 		Talent_ClearPage()
-	elseif idx == 7 then--灵玉
+	elseif idx == 7 then--??
 		Talent_Page_LingYu()
-	elseif idx == 8 then--神兵
+	elseif idx == 8 then--??
 		Talent_Page_ShenBing()
-	elseif idx == 9 then--雕文进阶
+	elseif idx == 9 then--????
 		Talent_Page_DWJinJie()
-	elseif idx == 10 then--巅峰 
+	elseif idx == 10 then--?? 
 		Talent_Page_Peak()
-	elseif idx == 11 then--个人
+	elseif idx == 11 then--??
 		Talent_Profile_Switch()
-	elseif idx == 12 then--其他
+	elseif idx == 12 then--??
 		Talent_Other_Info_Page_Switch()
 	end
 end
 
 function Talent_CheckPage(idx)
-	if idx == 1 then--装备
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--资料
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--珍兽
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--武魂
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--修炼
+	elseif idx == 5 then--??
 		return 1
-	elseif idx == 6 then--武道
+	elseif idx == 6 then--??
 		return DataPool:Lua_CheckIsShowTalent()
-	elseif idx == 7 then--灵玉
+	elseif idx == 7 then--??
 		return 1
-	elseif idx == 8 then--神兵
+	elseif idx == 8 then--??
 		return 1
-	elseif idx == 9 then--雕文进阶
+	elseif idx == 9 then--????
 		return 1
-	elseif idx == 10 then--巅峰 
+	elseif idx == 10 then--?? 
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
 		end
@@ -982,51 +982,51 @@ function Talent_CheckPage(idx)
 			return 1
 		end
 
-	elseif idx == 11 then--个人
+	elseif idx == 11 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 15 then
 			return 1
 		end
-	elseif idx == 12 then--其他
+	elseif idx == 12 then--??
 		return 1
 	end
 	return 0
 end
 
 function Talent_IsPageEnable(idx)
-	if idx == 1 then--装备
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--资料
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--珍兽
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--武魂
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--修炼
+	elseif idx == 5 then--??
 		return 1
-	elseif idx == 6 then--武道
+	elseif idx == 6 then--??
 		return 1
-	elseif idx == 7 then--灵玉
+	elseif idx == 7 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 8 then--神兵
+	elseif idx == 8 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 65 then
 			return 1
 		end
-	elseif idx == 9 then--雕文进阶
+	elseif idx == 9 then--????
 		return 1
-	elseif idx == 10 then--巅峰
+	elseif idx == 10 then--??
 		
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 11 then--个人
+	elseif idx == 11 then--??
 		return 1
-	elseif idx == 12 then--其他
+	elseif idx == 12 then--??
 		return 1
 	end
 	return 0

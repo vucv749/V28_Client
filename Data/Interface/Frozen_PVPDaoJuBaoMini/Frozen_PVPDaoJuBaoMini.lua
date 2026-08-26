@@ -44,7 +44,7 @@ function Frozen_PVPDaoJuBaoMini_OnShow()
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function Frozen_PVPDaoJuBaoMini_OnClose()
 	this:Hide()
@@ -52,7 +52,7 @@ function Frozen_PVPDaoJuBaoMini_OnClose()
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function Frozen_PVPDaoJuBaoMini_CloseClicked()
 	this:Hide()

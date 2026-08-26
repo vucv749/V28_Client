@@ -3,11 +3,11 @@ local g_Frame_UnifiedPosition = nil
 local g_ExeScript = 998290
 local g_UICOMMAND = 99829001
 local g_ActionTips = {
-    [1] =  "±ÈÐÄ",
-	[2] =  "ÌøÎè",
-	[3] =  "Èö½¿",
-	[4] =  "È¸Ô¾",
-	[5] =  "ÑûÇë",
+    [1] =  "Tï Tâm",
+	[2] =  "Khiêu vû",
+	[3] =  "Làm nûng",
+	[4] =  "Nhäy nhót",
+	[5] =  "M¶i",
 }
 
 
@@ -32,11 +32,11 @@ function XiaLv_Task3_OnEvent(event)
         if nOpt == 1 then
             --¿ªÊ¼Ç°µ¹¼ÆÊ±
             local countDown = Get_XParam_INT(1)
-            --Çå¿ÕÏÔÊ¾Çø
-            XiaLv_Task3_Info2:SetText("×¼±¸¿ª¾Ö")
+            --Çå¿ ÏÔÊ¾Çø
+            XiaLv_Task3_Info2:SetText("Chu¦n b¸ b¡t ð¥u")
             XiaLv_Task3_Info1:SetText("#{FQZC_230331_297}")
             XiaLv_Task3_State:Hide()
-            XiaLv_Task3_Info:Show() --¿ªÊ¼
+            XiaLv_Task3_Info:Show() --??
             XiaLv_Task3_Info:Play(true)
             XiaLv_Task3_Info_2:Hide()
 
@@ -71,11 +71,11 @@ function XiaLv_Task3_OnEvent(event)
             this:Show()
         
         elseif nOpt == 4 then
-            --½áÊø ¹Ø±Õ½çÃæ
+            --½áÊø ¹Ø± ½çÃæ
             this:Hide()
 
         elseif nOpt == 5 then
-            --½áÊø ¹Ø±Õ½çÃæ
+            --½áÊø ¹Ø± ½çÃæ
             this:Hide()
 
         end

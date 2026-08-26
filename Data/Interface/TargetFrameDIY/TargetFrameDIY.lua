@@ -1,16 +1,16 @@
-local g_nCurrentFrameID = -1;			--µ±Ç°UI²¼¾ÖµÄID
+local g_nCurrentFrameID = -1;			--??UI???ID
 local strPlayerMenPaiName ={
-						"ÉÙÁÖ",
-						"Ã÷½Ì",	
-						"Ø¤°ï",	
-						"Îäµ±",	
-						"¶ëáÒ",	
-						"ĞÇËŞ",	
-						"ÌìÁú",	
-						"ÌìÉ½",	
-						"åĞÒ£",
-						"ĞÂÊÖ",
-						"ÂüÍÓÉ½×¯",};
+						"Thiªu Lâm",
+						"Minh Giáo",	
+						"Cái Bang",	
+						"Võ Ğang",	
+						"Nga Mi",	
+						"Tinh Túc",	
+						"Thiên Long",	
+						"Thiên S½n",	
+						"Tiêu dao",
+						"Tân thü",
+						"MÕn Ğà S½n Trang",};
 
 
 function TargetFrameDIY_PreLoad()
@@ -130,7 +130,7 @@ end
 function TargetFrameDIY_Update_Name()
 	local txtColor="#cFFFFFF";
 --or Target:GetData("ISNPC") == 0
---ÒÔÇ°Íæ¼ÒÍ³Ò»ÏÔÊ¾Îª°×É«£¬¸ù¾İÈîÃ¶5ÔÂ27ÈÕÎÄµµ¸ü¸Ä£¬Íæ¼ÒºÍNPC×ßÍ¬Ò»¹æÔò¡£
+--ÒÔÇ°Íæ¼ÒÍ³Ò»ÏÔÊ¾Îª°×É«£¬¸ù¾İÈîÃ¶5ÔÂ27È ÎÄµµ¸ü¸Ä£¬Íæ¼ÒºÍNPC×ßÍ¬Ò»¹æÔò¡£
 	if Target:GetData( "RELATIVE" ) == 2  then 
 		txtColor = "#W"
 	else
@@ -183,8 +183,8 @@ function TargetFrameDIY_Update_Level()
 	local txtColor="#cFFFFFF";
 	local level =  Target:GetData( "LEVEL" ) - Player:GetData( "LEVEL" );
 	
-	AxTrace( 0,0, "µÈ¼¶²îÎª"..tostring( level ) );
---¸ù¾İÈîÃ¶5ÔÂ27ÈÕ²ß»®ÎÄµµĞŞ¸Ä
+	AxTrace( 0,0, "C¤p b§c Sai Vi"..tostring( level ) );
+--¸ù¾İÈîÃ¶5ÔÂ27È ²ß»®ÎÄµµĞŞ¸Ä
 --	if( level > 12 ) then
 --		txtColor = "#R";
 --	elseif( level > 4 ) then
@@ -200,7 +200,7 @@ function TargetFrameDIY_Update_Level()
 --		txtColor="#c240c0c";
 --	end
 
---¸ù¾İÈîÃ¶5ÔÂ27ÈÕ²ß»®ÎÄµµĞŞ¸ÄÈçÏÂ
+--¸ù¾İÈîÃ¶5ÔÂ27È ²ß»®ÎÄµµĞŞ¸ÄÈçÏÂ
 	if( level > 5 ) then
 		txtColor = "#R";
 	elseif( level > 2 ) then

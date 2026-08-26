@@ -223,7 +223,7 @@ function Kunwu_PVPXuanRen_RefreshTimeUI()
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function Kunwu_PVPXuanRen_OnClose()
 	this:Hide()
@@ -236,7 +236,7 @@ function Kunwu_PVPXuanRen_Close()
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function Kunwu_PVPXuanRen_CloseClicked()
 	this:Hide()

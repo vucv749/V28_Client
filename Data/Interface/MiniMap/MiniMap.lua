@@ -4,7 +4,7 @@ local strNetDelayMessage = nil
 
 local g_myAsk = 0;
 
--- ÒÆÖ²-ĞÂ´ºÇ©µ½»î¶¯-Ìììû´º»ªÕ½½­ºş
+-- ÒÆÖ²-ĞÂ´ºÇ©µ½»î¶¯-Ìììû´º»ª ½½­ºş
 local g_ZhanJiangHu_ShowButton = 0
 local g_ZhanJiangHu_FlexTipState =
 {
@@ -48,7 +48,7 @@ function MiniMap_PreLoad()
 	this:RegisterEvent("BATTLE_ASSIST_EVENT")
 	this:RegisterEvent("ACCE_CHANGED")
 		
-	this:RegisterEvent("XINCHUNYINGJING_FLEX_UPDATE")-- ÒÆÖ²-ĞÂ´ºÇ©µ½»î¶¯-Ìììû´º»ªÕ½½­ºş
+	this:RegisterEvent("XINCHUNYINGJING_FLEX_UPDATE")-- ??-??????-???????
 		
 	this:RegisterEvent("RESET_ALLUI");
     
@@ -84,7 +84,7 @@ function MiniMap_OnLoad()
 	AxTrace(12,12,"MiniMap_OnLoad is called begin");
 
 	Minimap_Max();
-	MiniMap_Yuanbao:SetToolTip("Ôª±¦ÉÌµê");
+	MiniMap_Yuanbao:SetToolTip("Nguyên bäo cØa hàng");
 	MiniMap_AutoSearch:SetToolTip("#{INTERFACE_XML_983}");
 	MiniMap_NetStatus_Flash:Play( false );
 
@@ -92,9 +92,9 @@ function MiniMap_OnLoad()
 	MiniMap_XinShouNew:Hide()
 	MiniMap_FeelFeedBack500:Hide()
 	MiniMap_FeelFeedBack800:Hide()
-	MiniMap_HeXinChun:Hide()-- ÒÆÖ²-ĞÂ´ºÇ©µ½»î¶¯-Ìììû´º»ªÕ½½­ºş
-	MiniMap_ZhenShouYuRe:Hide()-- 2022ÕäÊŞÔ¤ÈÈ»î¶¯
-	MiniMap_ThreeDayFeedBack:Hide() --°æ±¾ÈıÈÕµÇÂ½ 2022Q3 ÖÜÄêÇì
+	MiniMap_HeXinChun:Hide()-- ??-??????-???????
+	MiniMap_ZhenShouYuRe:Hide()-- 2022??????
+	MiniMap_ThreeDayFeedBack:Hide() --?????? 2022Q3 ???
 
 	g_2021_JuQing_RedPoint = 0
 	MiniMap_AlaDingBtnCheck();
@@ -144,16 +144,16 @@ function MiniMap_OnEvent(event)
 	  local strNetState = ""
 		if tonumber(arg0) < 250 then
 			MiniMap_MiniMap_NetStatus : SetProperty("SetCurrentImage","NetState1")
-			strNetState = "µã»÷¿É²é¿´½ñÈÕ»î¶¯ÁĞ±í#rÍøÂç×´¿ö:¿ÕÏĞ".."("..tostring(arg0).."ms)"
+			strNetState = "Ği¬m Kích Khä xem xét hôm nay hoÕt ğµng Li®t Bi¬u#rinternet trÕng hu¯ng: Không rãnh".."("..tostring(arg0).."ms)"
 		elseif tonumber(arg0) < 500 then
 			MiniMap_MiniMap_NetStatus : SetProperty("SetCurrentImage","NetState2")
-			strNetState = "µã»÷¿É²é¿´½ñÈÕ»î¶¯ÁĞ±í#rÍøÂç×´¿ö:Õı³£".."("..tostring(arg0).."ms)"
+			strNetState = "Ği¬m Kích Khä xem xét hôm nay hoÕt ğµng Li®t Bi¬u#rinternet trÕng hu¯ng: Bình thß¶ng".."("..tostring(arg0).."ms)"
 		elseif tonumber(arg0) < 1000 then
 			MiniMap_MiniMap_NetStatus : SetProperty("SetCurrentImage","NetState3")
-			strNetState = "µã»÷¿É²é¿´½ñÈÕ»î¶¯ÁĞ±í#rÍøÂç×´¿ö:Óµ¼·".."("..tostring(arg0).."ms)"
+			strNetState = "Ği¬m Kích Khä xem xét hôm nay hoÕt ğµng Li®t Bi¬u#rinternet trÕng hu¯ng: Ch§t chµi".."("..tostring(arg0).."ms)"
 		else
 			MiniMap_MiniMap_NetStatus : SetProperty("SetCurrentImage","NetState4")
-			strNetState = "µã»÷¿É²é¿´½ñÈÕ»î¶¯ÁĞ±í#rÍøÂç×´¿ö:¶ÂÈû".."("..tostring(arg0).."ms)"
+			strNetState = "Ği¬m Kích Khä xem xét hôm nay hoÕt ğµng Li®t Bi¬u#rinternet trÕng hu¯ng: Bª t¡c".."("..tostring(arg0).."ms)"
 		end
 
 		strNetDelayMessage = strNetState
@@ -193,7 +193,7 @@ function MiniMap_OnEvent(event)
 		local skyHour = math.floor(skyTime / 3600)
 		local skyMinute = math.floor(math.mod(skyTime, 3600) / 60)
 		local skySecond = math.mod(skyTime, 60)
-		local skyTimeString = "µ±Ç°Ê±¼ä: "
+		local skyTimeString = "Trß¾c m£t th¶i gian:"
 		if skyHour < 10 then
 			skyTimeString = skyTimeString .. "0"
 		end
@@ -320,7 +320,7 @@ function MiniMap_OnEvent(event)
 		else
 			MiniMap_Dahua_Incom_Tips:Hide()
 		end
-	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 89306901) then-- 2022ÕäÊŞÔ¤ÈÈ»î¶¯
+	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 89306901) then-- 2022??????
 		local IsShowButton = Get_XParam_INT(0)
 		local IsShowTips = Get_XParam_INT(1)
 		-- PushDebugMessage("aa "..IsShowButton.." "..IsShowTips)
@@ -404,23 +404,23 @@ function MiniMap_OnEvent(event)
 		end
 	end
 	
-	-- ÒÆÖ²-ĞÂ´ºÇ©µ½»î¶¯-Ìììû´º»ªÕ½½­ºş
+	-- ÒÆÖ²-ĞÂ´ºÇ©µ½»î¶¯-Ìììû´º»ª ½½­ºş
 	if (event == "RESET_ALLUI") then
 		g_ZhanJiangHu_FlexTipState[1] = 0
 		g_ZhanJiangHu_FlexTipState[2] = 0
 
 		MiniMap_FeelFeedBack800:Hide()
-		MiniMap_ZhenShouYuRe:Hide()-- 2022ÕäÊŞÔ¤ÈÈ»î¶¯
-		MiniMap_ThreeDayFeedBack:Hide() --°æ±¾ÈıÈÕµÇÂ½ 2022Q3 ÖÜÄêÇì
+		MiniMap_ZhenShouYuRe:Hide()-- 2022??????
+		MiniMap_ThreeDayFeedBack:Hide() --?????? 2022Q3 ???
 	end
 
-	-- ÒÆÖ²-ĞÂ´ºÇ©µ½»î¶¯-Ìììû´º»ªÕ½½­ºş
+	-- ÒÆÖ²-ĞÂ´ºÇ©µ½»î¶¯-Ìììû´º»ª ½½­ºş
 	if ( event == "UI_COMMAND" and tonumber(arg0) == 2018010603) then
 		g_ZhanJiangHu_ShowButton = Get_XParam_INT(0)
 		--Ë¢ĞÂ°´Å¥+Ğ¡ºìµãÏÔÊ¾
 		MiniMap_UpdateHeXinChun()
 	end
-	-- ÒÆÖ²-ĞÂ´ºÇ©µ½»î¶¯-Ìììû´º»ªÕ½½­ºş
+	-- ÒÆÖ²-ĞÂ´ºÇ©µ½»î¶¯-Ìììû´º»ª ½½­ºş
 	if (event == "XINCHUNYINGJING_FLEX_UPDATE") then	
 		local nIndex = tonumber(arg0)
 		local nValue = tonumber(arg1)
@@ -505,22 +505,22 @@ function Minimap_UpdatePKMode()
 	local strPKMode = ""
 	if( tonumber( nPKMode ) == 0 ) then
 		--MiniMap_PK_Mode:SetToolTip( "ºÍÆ½" );
-		strPKMode = "ºÍÆ½\n´ËÄ£Ê½ÏÂÖ»ÄÜ·´»÷¹¥»÷×Ô¼ºµÄÍæ¼Ò£¬²»ÄÜÖ÷¶¯¹¥»÷ÆäËûÍæ¼Ò¡£"
+		strPKMode = "Hòa bình\\nThØ hình thÑc HÕ chï có th¬ Phän Kích công kích chính mình Ğích ngß¶i ch½i, không th¬ chü ğµng công kích ngß¶i ch½i khác."
 	elseif( tonumber( nPKMode ) == 1 ) then
 		--MiniMap_PK_Mode:SetToolTip( "PK_FREE_FOR_ALL" );
-		strPKMode = "¸öÈË»ìÕ½"
+		strPKMode = "Cá nhân h²n chiªn"
 
 	elseif( tonumber( nPKMode ) == 2 ) then
 		--MiniMap_PK_Mode:SetToolTip( "PK_FREE_FOR_MORAL" );
-		strPKMode = "ÉÆ¶ñÄ£Ê½\n´ËÄ£Ê½ÏÂ¿ÉÒÔ¹¥»÷É±Æø´óÓÚ0µÄÍæ¼Ò¡£"
+		strPKMode = "Thi®n ác hình thÑc\\nThØ hình thÑc HÕ có th¬ công kích sát khí l¾n h½n 0Ğích ngß¶i ch½i."
 
 	elseif( tonumber( nPKMode ) == 3 ) then
 		--MiniMap_PK_Mode:SetToolTip( "PK_FREE_FOR_TEAM" );
-		strPKMode = "×é¶Ó»ìÕ½"
+		strPKMode = "T± ğµi h²n chiªn"
 
 	elseif( tonumber( nPKMode ) == 4 ) then
 		--MiniMap_PK_Mode:SetToolTip( "PK_FREE_FOR_GUILD" );
-		strPKMode = "°ïÅÉÍ¬ÃË»ìÕ½"
+		strPKMode = "Bang phái ğ°ng minh h²n chiªn"
 		
 	elseif( tonumber( nPKMode ) == 5 ) then
 		strPKMode = "#{TDGZ_XML_19}"
@@ -536,9 +536,9 @@ function Minimap_UpdatePKMode()
 
 	    --strTime = "#r("..( tonumber(iTime) ).."ÃëºóÇĞ»»µ½ºÍÆ½»òÉÆ¶ñÄ£Ê½)"
 	    if( iMin > 0 ) then
-	        strTime = "#r"..(iMin).."·Ö"..( tonumber(iSec) ).."ÃëºóÇĞ»»µ½ºÍÆ½»òÉÆ¶ñÄ£Ê½"
+	        strTime = "#r"..(iMin).."Phút"..( tonumber(iSec) ).."Sao H§u c¡t Ğáo hòa bình Ho£c thi®n ác hình thÑc"
 	    else
-	        strTime = "#r"..( tonumber(iSec) ).."ÃëºóÇĞ»»µ½ºÍÆ½»òÉÆ¶ñÄ£Ê½"
+	        strTime = "#r"..( tonumber(iSec) ).."Sao H§u c¡t Ğáo hòa bình Ho£c thi®n ác hình thÑc"
 	    end
 
 	end
@@ -648,37 +648,37 @@ function MiniMap_PlayerAsk_Bn_Clicked()
 
 	-- µÃµ½ÃÅÅÉÃû³Æ.
 	if(0 == menpai) then
-		strName = "ÉÙÁÖ";
+		strName = "Thiªu Lâm";
 
 	elseif(1 == menpai) then
-		strName = "Ã÷½Ì";
+		strName = "Minh Giáo";
 
 	elseif(2 == menpai) then
-		strName = "Ø¤°ï";
+		strName = "Cái Bang";
 
 	elseif(3 == menpai) then
-		strName = "Îäµ±";
+		strName = "Võ Ğang";
 
 	elseif(4 == menpai) then
-		strName = "¶ëáÒ";
+		strName = "Nga Mi";
 
 	elseif(5 == menpai) then
-		strName = "ĞÇËŞ";
+		strName = "Tinh Túc";
 
 	elseif(6 == menpai) then
-		strName = "ÌìÁú";
+		strName = "Thiên Long";
 
 	elseif(7 == menpai) then
-		strName = "ÌìÉ½";
+		strName = "Thiên S½n";
 
 	elseif(8 == menpai) then
-		strName = "åĞÒ£";
+		strName = "Tiêu dao";
 
 	elseif(9 == menpai) then
-		strName = "ÎŞÃÅÅÉ";
+		strName = "Tñ do";
 
 	elseif(10== menpai) then
-		strName = "ÂüÍÓÉ½×¯";
+		strName = "MÕn Ğà S½n Trang";
 
 	end
 
@@ -696,11 +696,11 @@ function MiniMap_PlayerAsk_Bn_Clicked()
 	urlStr = urlStr..",roleId:"..ConvertGuidToShow( szGuid )
 	urlStr = urlStr..",roleGrade:"..Player:GetData("LEVEL")	
 	urlStr = urlStr..",vipGrade:"..DataPool:GetAccVipLevel()
-	urlStr = urlStr..",Profession:"..strName	--ÃÅÅÉ
+	urlStr = urlStr..",Profession:"..strName	--??
 	urlStr = urlStr..",gameVersion:"..GetGameVersion();	
 	urlStr = urlStr.."}";
 	
-	local vcode = CalciDiaoYanVCode(urlStr.."345341234567353534/Vo48a31bd=");   --ºóÃæÊÇSECRET_KEY
+	local vcode = CalciDiaoYanVCode(urlStr.."345341234567353534/Vo48a31bd=");   --???SECRET_KEY
 	urlStr = ConvertStringToURLCoding(urlStr)
 	GameProduceLogin:OpenURL( GetWeblink("WEB_ACTIVITY_SEARCH")..tostring(g_myAsk).."/?appdata="..urlStr.."&vcode="..vcode );
 	MiniMap_PlayerAsk_Bn:Hide();
@@ -723,8 +723,8 @@ function MiniMap_KeFu()
 		GameProduceLogin:OpenURL( urlStr );
 	end
 
-	--ÏòServer·¢ËÍÈÕÖ¾Í³¼ÆÇëÇó
-	local ASKCG_LOG_TYPE = 1;	--CGAskNoteLogÏûÏ¢°üµÄÀàĞÍ
+	--ÏòServer·¢ËÍÈ Ö¾Í³¼ÆÇëÇó
+	local ASKCG_LOG_TYPE = 1;	--CGAskNoteLog??????
 	RequestServerNoteLog(ASKCG_LOG_TYPE);
 end
 --bug·´À¡
@@ -732,7 +732,7 @@ function MiniMap_BugFeedBack()
 	OpenBugFeedBack();
 end
 
--- ×Ô¶¯Õ½¶·
+-- ×Ô¶¯ ½¶·
 function MiniMap_ZDZD()
 	if BattleAssist:IsWorking() then
 		PushEvent("TRIGGER_ZIDONGZHANDOU","stop")
@@ -772,9 +772,9 @@ function MiniMap_XinShouNewBtnClk()
 --	MiniMap_Xinfu:PlayWarning( 0 );
 --	MiniMap_XinShouNew:PlayWarning( 0 );
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "OnOpenXinShouNewWindow" ); 		-- ½Å±¾ºÅ
-		Set_XSCRIPT_ScriptID( 892679 );						-- ½Å±¾±àºÅ
-		Set_XSCRIPT_ParamCount( 0 );						-- ²ÎÊı¸öÊı
+		Set_XSCRIPT_Function_Name( "OnOpenXinShouNewWindow" ); 		-- ???
+		Set_XSCRIPT_ScriptID( 892679 );						-- ????
+		Set_XSCRIPT_ParamCount( 0 );						-- ????
 	Send_XSCRIPT()
 end
 
@@ -785,9 +785,9 @@ function MiniMap_LandRewardBtnClk()
 	end
 
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "OpenPrizeUI" ); 		-- ½Å±¾ºÅ
-		Set_XSCRIPT_ScriptID( 892678 );						-- ½Å±¾±àºÅ
-		Set_XSCRIPT_ParamCount( 0 );						-- ²ÎÊı¸öÊı
+		Set_XSCRIPT_Function_Name( "OpenPrizeUI" ); 		-- ???
+		Set_XSCRIPT_ScriptID( 892678 );						-- ????
+		Set_XSCRIPT_ParamCount( 0 );						-- ????
 	Send_XSCRIPT()
 end
 
@@ -801,8 +801,8 @@ function MiniMap_PetSoulAwards_Clicked()
 	--	MiniMap_FeelFeedBack200_Animate:Hide();
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name( "AskOpenMainUI" ); 	
-		Set_XSCRIPT_ScriptID( 791010 );						-- ½Å±¾±àºÅ
-		Set_XSCRIPT_ParamCount( 0 );						-- ²ÎÊı¸öÊı
+		Set_XSCRIPT_ScriptID( 791010 );						-- ????
+		Set_XSCRIPT_ParamCount( 0 );						-- ????
 	Send_XSCRIPT()
 end
 
@@ -814,9 +814,9 @@ function MiniMap_FeelFeedBack500BtnClk()
 
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name( "OnOpenUI" ); 	
-		Set_XSCRIPT_ScriptID( 892975 );						-- ½Å±¾±àºÅ
+		Set_XSCRIPT_ScriptID( 892975 );						-- ????
 		Set_XSCRIPT_Parameter( 0, 0 )
-		Set_XSCRIPT_ParamCount( 1 );						-- ²ÎÊı¸öÊı
+		Set_XSCRIPT_ParamCount( 1 );						-- ????
 	Send_XSCRIPT()
 end
 
@@ -832,8 +832,8 @@ function MiniMap_FeelFeedBack800BtnClk()
 	end
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name( "OnOpenMainWindow" ); 	
-		Set_XSCRIPT_ScriptID( 792012 );						-- ½Å±¾±àºÅ
-		Set_XSCRIPT_ParamCount( 0 );						-- ²ÎÊı¸öÊı
+		Set_XSCRIPT_ScriptID( 792012 );						-- ????
+		Set_XSCRIPT_ParamCount( 0 );						-- ????
 	Send_XSCRIPT()
 end
 
@@ -851,7 +851,7 @@ function MiniMap_ThreeDayFeedBackBtnClk()
 	Send_XSCRIPT()
 end
 
--- ÒÆÖ²-ĞÂ´ºÇ©µ½»î¶¯-Ìììû´º»ªÕ½½­ºş
+-- ÒÆÖ²-ĞÂ´ºÇ©µ½»î¶¯-Ìììû´º»ª ½½­ºş
 function MiniMap_UpdateHeXinChun()
 
 	--²»ÏÔÊ¾
@@ -889,7 +889,7 @@ function MiniMap_UpdateHeXinChun()
 
 end
 
--- ÒÆÖ²-ĞÂ´ºÇ©µ½»î¶¯-Ìììû´º»ªÕ½½­ºş
+-- ÒÆÖ²-ĞÂ´ºÇ©µ½»î¶¯-Ìììû´º»ª ½½­ºş
 function MiniMap_HeXinChunBtnClk()
 
 	local curDay = tonumber(DataPool:GetServerDayTime());
@@ -914,8 +914,8 @@ end
 function MiniMap_ZLHeroMeetingBtnClk()
 	Clear_XSCRIPT()
 	Set_XSCRIPT_Function_Name( "YXZ_Open" ); 	
-	Set_XSCRIPT_ScriptID( 891119 );						-- ½Å±¾±àºÅ
-	Set_XSCRIPT_ParamCount( 0 );						-- ²ÎÊı¸öÊı
+	Set_XSCRIPT_ScriptID( 891119 );						-- ????
+	Set_XSCRIPT_ParamCount( 0 );						-- ????
 	Send_XSCRIPT()
 end
 
@@ -1016,7 +1016,7 @@ function MiniMap_UpdateChunJieQianDao(showBtn,showTips)
 	end
 end
 
--- 2022ÕäÊŞÔ¤ÈÈ»î¶¯
+-- 2022 äÊŞÔ¤ÈÈ»î¶¯
 function MiniMap_ZhenShouYuReBtnClk()
 
 	if(IsWindowShow("ZhenShou_YuRe")) then
@@ -1062,7 +1062,7 @@ function MiniMap_FenxianClicked()
 	-- PushDebugMessage("¿ì½İ´«ËÍ¹¦ÄÜÔİÎ´¿ª·Å")
 	local curSceneID = GetSceneID();
 	if curSceneID > 2 then
-		PushDebugMessage( "ÍòÄÜ´«ËÍÖ»ÄÜÔÚÖ÷³ÇÄÚÊ¹ÓÃ!" )
+		PushDebugMessage( "VÕn nång truy«n t¯ng chï có th¬ TÕi Chü bên trong thành sØ døng!" )
 		return
 	end
 	PushEvent("OPEN_CHUANSONG_SYSTEM");

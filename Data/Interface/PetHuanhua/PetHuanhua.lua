@@ -1,4 +1,4 @@
-local m_UI_NUM = 20090804	--珍兽幻化
+local m_UI_NUM = 20090804	--????
 
 local m_PetIndex = -1
 local m_ObjCared = -1
@@ -11,9 +11,9 @@ local g_PetHuanhua_Frame_UnifiedPosition;
 
 function PetHuanhua_PreLoad()
 	this : RegisterEvent( "UI_COMMAND" )
-	this : RegisterEvent( "REPLY_MISSION_PET" )						-- 玩家从列表选定一只珍兽
-	this : RegisterEvent( "UPDATE_PET_PAGE" )						-- 玩家身上的珍兽数据发生变化，包括增加一只珍兽
-	this : RegisterEvent( "DELETE_PET" )							-- 玩家身上减少一只珍兽
+	this : RegisterEvent( "REPLY_MISSION_PET" )						-- ???????????
+	this : RegisterEvent( "UPDATE_PET_PAGE" )						-- ?????????????,????????
+	this : RegisterEvent( "DELETE_PET" )							-- ??????????
 	this : RegisterEvent("UNIT_MONEY");
 	this : RegisterEvent("MONEYJZ_CHANGE")	
 	this:RegisterEvent("ADJEST_UI_POS")
@@ -81,14 +81,14 @@ function PetHuanhua_OK_Clicked()
 	end
 	
 	if m_KeepModel ~= 1 and m_KeepModel ~= 0 then
-		PushDebugMessage("#{RXZS_090804_32}")      --您还没有选择幻化珍兽的外观！
+		PushDebugMessage("#{RXZS_090804_32}")      --?????????????!
 		return
 	end
 	
 	local selfMoney = Player:GetData("MONEY") + Player:GetData("MONEY_JZ")
 	
 	if selfMoney < m_needMoney then
-		PushDebugMessage("#{WH_090729_18}")  --对不起，你身上金钱不足，无法继续进行。
+		PushDebugMessage("#{WH_090729_18}")  --???,???????,???????
 		return
 	end
 
@@ -96,14 +96,14 @@ function PetHuanhua_OK_Clicked()
 	if isExist == 0 then
 		isExist = IsItemExist(30502006)
 		if isExist == 0 then
-			PushDebugMessage("#{RXZS_090804_6}")  --您身上缺少幻化材料：珍兽幻化丹。
+			PushDebugMessage("#{RXZS_090804_6}")  --?????????:??????
 			return
 		end
 	end
 
 	local nChangeExteriorId = Pet:Lua_GetPetExteriorChangeDataByPetIdx(m_PetIndex)
 	if nChangeExteriorId >= 0 then
-		PushDebugMessage("#{ZSHF_20230705_92}")    --换肤珍兽不能幻化
+		PushDebugMessage("#{ZSHF_20230705_92}")    --????????
 		return
 	end
 
@@ -131,7 +131,7 @@ function PetHuanhua_SelectPet_Clicked()
 	Pet : ShowPetList( 1 )
 end
 
---珍兽图鉴
+--犱兽图鉴
 function PetHuanhua_Pet_Show()
 	if(not (Pet:IsPresent(m_PetIndex)) ) then
 		return;
@@ -196,7 +196,7 @@ function PetHuanhua_OnSelectPet(petIndex)
 		return;
 	end
 	
-	--珍兽已被其它界面选中
+	--犱兽已被其它界面选中
 	if (Pet:GetPetLocation(petIndex) ~= -1) then
 		return;
 	end
@@ -206,34 +206,34 @@ function PetHuanhua_OnSelectPet(petIndex)
 
 	--已幻化
 	local gen = Pet:GetType(petIndex)
-	if gen ~= nil and gen >= 100 then	--100以上为幻化珍兽
-		PushDebugMessage("#{RXZS_090804_3}")    --你选择的珍兽已经完成幻化，不能再次幻化。
+	if gen ~= nil and gen >= 100 then	--100???????
+		PushDebugMessage("#{RXZS_090804_3}")    --????????????,???????
 		return
 	end
 	
 	--类型不符	
 	local isCan = Pet:EnableHuanhua(petIndex)
 	if isCan ~= 1 then 
-		PushDebugMessage("#{RXZS_090804_5}")   --你选择的珍兽不符合幻化要求。
+		PushDebugMessage("#{RXZS_090804_5}")   --??????????????
 		return
 	end
 	
 	--跟骨不足
 	local savvy = Pet:GetSavvy(petIndex)
 	if savvy ~= nil and savvy < 5 then
-		PushDebugMessage("#{RXZS_090804_4}")    --你的珍兽悟性等级不足5级，不能进行幻化。
+		PushDebugMessage("#{RXZS_090804_4}")    --??????????5?,???????
 		return
 	end
 	
-	--珍兽身上有装备	
+	--犱兽身上有装备	
 	if Pet:IsPetHaveEquip(petIndex) == 1 then
-		PushDebugMessage("#{RXZS_090804_2}")	--请先将珍兽装备卸下
+		PushDebugMessage("#{RXZS_090804_2}")	--?????????
 		return
 	end
 
 	local nChangeExteriorId = Pet:Lua_GetPetExteriorChangeDataByPetIdx(petIndex)
 	if nChangeExteriorId >= 0 then
-		PushDebugMessage("#{ZSHF_20230705_92}")    --换肤珍兽不能幻化
+		PushDebugMessage("#{ZSHF_20230705_92}")    --????????
 		return
 	end
 	
@@ -244,12 +244,12 @@ function PetHuanhua_OnSelectPet(petIndex)
 	PetHuanhua_FakeObject:SetFakeObject( "My_PetStudySkill" );
 	
 	
-	--切换珍兽的时候，释放上一个珍兽
+	--切换犱兽的时候，释放上一个犱兽
 	if(m_PetIndex ~= -1) then
 		Pet:SetPetLocation(m_PetIndex,-1);
 	end
 
-	m_PetIndex = petIndex;	--已经选好了珍兽
+	m_PetIndex = petIndex;	--???????
 	Pet:SetPetLocation(m_PetIndex,5);
 --	Pet:ClosePetSkillStudyMsgBox()
 	PetHuanhua_ModeSelect:SetCheck(0)

@@ -55,7 +55,7 @@ local g_BK_Image = {
 
 local g_CurShowImageIndex = 1
 
-local m_AuctionType = 0 -- 0是时装 1是坐骑
+local m_AuctionType = 0 -- 0??? 1???
 
 function Fashion_Auction_PreLoad()
 	this:RegisterEvent("OPEN_FASHION_AUCTION_LIST")
@@ -290,7 +290,7 @@ function Fashion_Auction_AddItem(idx)
 	local uItemNum = DataPool:LuaFnGetFashionAuctionBiddingInfo(g_CurSection, group_index, "ITEMNUM")
 	--最高出价
 	local nHighPrice = DataPool:LuaFnGetFashionAuctionBiddingInfo(g_CurSection, group_index, "TOPBID")
-	--最高出价人姓名
+	--最高出价人袪名
 	local nHighName = DataPool:LuaFnGetFashionAuctionBiddingInfo(g_CurSection, group_index, "NAME")
 	--最高出价人的世界号
 	local nHighZoneWorld = DataPool:LuaFnGetFashionAuctionBiddingInfo(g_CurSection, group_index, "TOPWORLD")
@@ -463,9 +463,9 @@ function Fashion_Auction_OpenBidUI(idx)
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name("OpenBidUI")
 		Set_XSCRIPT_ScriptID(888818)
-		Set_XSCRIPT_Parameter(0, 0)				--打开
-		Set_XSCRIPT_Parameter(1, section)		--索引
-		Set_XSCRIPT_Parameter(2, group_index)	--索引
+		Set_XSCRIPT_Parameter(0, 0)				--??
+		Set_XSCRIPT_Parameter(1, section)		--??
+		Set_XSCRIPT_Parameter(2, group_index)	--??
 		Set_XSCRIPT_Parameter(3, 0)
 		Set_XSCRIPT_ParamCount(4)
 	Send_XSCRIPT()
@@ -502,7 +502,7 @@ function Fashion_Auction_Preview(idx)
 			local nExteriorRideId = Exterior:LuaFnGetExteriorIdByItem(nItemTableIndex)
 			PushEvent("OPEN_RIDE_PREVIEW", nExteriorRideId)
 		else
-			PushEvent("OPEN_DRESSPREVIEW", tonumber(nItemTableIndex), 111, 75) --时装\发型\脸型
+			PushEvent("OPEN_DRESSPREVIEW", tonumber(nItemTableIndex), 111, 75) --??\??\??
 		end
 	end
 end
@@ -543,7 +543,7 @@ function Fashion_Auction_SwitchPage(page_index)
 		Set_XSCRIPT_ScriptID(888818)
 		Set_XSCRIPT_Parameter(0, 1)
 		Set_XSCRIPT_Parameter(1, g_CurSection)
-		Set_XSCRIPT_Parameter(2, 0) --是否收刷新cd限制
+		Set_XSCRIPT_Parameter(2, 0) --?????cd??
 		Set_XSCRIPT_ParamCount(3)
 	Send_XSCRIPT()
 	
@@ -583,7 +583,7 @@ function Fashion_Auction_Shuaxin()
 		Set_XSCRIPT_ScriptID(888818)
 		Set_XSCRIPT_Parameter(0, 1)
 		Set_XSCRIPT_Parameter(1, g_CurSection)
-		Set_XSCRIPT_Parameter(2, 1) --是否收刷新cd限制
+		Set_XSCRIPT_Parameter(2, 1) --?????cd??
 		Set_XSCRIPT_ParamCount(3)
 	Send_XSCRIPT()
 end
@@ -632,10 +632,10 @@ function Fashion_Auction_UpdatePageButton()
 
 		local section = i - 1
 		if section > g_TodaySection then
-			g_PageButtons[i]:SetProperty("NormalImage", "set:Fashion_Auction image:Fashion_Auction_ButtonNow_Disable")	--变灰
+			g_PageButtons[i]:SetProperty("NormalImage", "set:Fashion_Auction image:Fashion_Auction_ButtonNow_Disable")	--??
 			g_PageButtons[i]:SetToolTip(tostring(g_SectionTip[i]))
 		elseif section < g_TodaySection then
-			g_PageButtons[i]:SetProperty("NormalImage", "set:Fashion_Auction image:Fashion_Auction_Button_Normal")	--正常
+			g_PageButtons[i]:SetProperty("NormalImage", "set:Fashion_Auction image:Fashion_Auction_Button_Normal")	--??
 			if m_AuctionType == 1 then
 				g_PageButtons[i]:SetToolTip("#{ZQPM_240402_41}")
 			else
@@ -672,9 +672,9 @@ function Fashion_Auction_UpdatePageButton()
 					end
 				end
 				
-				g_PageButtons[i]:SetProperty("NormalImage", "set:Fashion_Auction image:Fashion_Auction_Button_Normal")	--正常
+				g_PageButtons[i]:SetProperty("NormalImage", "set:Fashion_Auction image:Fashion_Auction_Button_Normal")	--??
 			else
-				g_PageButtons[i]:SetProperty("NormalImage", "set:Fashion_Auction image:Fashion_Auction_ButtonNow_Disable")	--变灰
+				g_PageButtons[i]:SetProperty("NormalImage", "set:Fashion_Auction image:Fashion_Auction_ButtonNow_Disable")	--??
 				g_PageButtons[i]:SetToolTip(tostring(g_SectionTip[i]))
 			end
 		end
@@ -701,7 +701,7 @@ function Fashion_Auction_Preview_Click()
 --	else
 --		PushEvent("OPEN_DRESSPREVIEW", g_FashionCloth, 111, 75) --时装\发型\脸型
 --	end
-	PushEvent("OPEN_DRESSPREVIEW", g_FashionCloth, 81, 53) --时装\发型\脸型
+	PushEvent("OPEN_DRESSPREVIEW", g_FashionCloth, 81, 53) --??\??\??
 end
 --================================================
 -- 恢复界面的默认相对位置
@@ -741,7 +741,7 @@ function Fashion_Auction_AutoRefresh()
 		Set_XSCRIPT_ScriptID(888818)
 		Set_XSCRIPT_Parameter(0, 1)
 		Set_XSCRIPT_Parameter(1, g_CurSection)
-		Set_XSCRIPT_Parameter(2, 0) --是否收刷新cd限制
+		Set_XSCRIPT_Parameter(2, 0) --?????cd??
 		Set_XSCRIPT_ParamCount(3)
 	Send_XSCRIPT()
 end

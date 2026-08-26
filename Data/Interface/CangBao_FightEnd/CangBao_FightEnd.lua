@@ -73,16 +73,16 @@ end
 --=========================================================
 function CangBao_FightEnd_Open(nTipsIdx)
 	if nTipsIdx < 0 then
-		--关闭界面
+		--关睜界面
 		CangBao_FightEnd_Close()
 	else
-		SetTimer("CangBao_FightEnd","CangBao_FightEnd_Close()", 3);		--设置定时器5秒钟倒计时
+		SetTimer("CangBao_FightEnd","CangBao_FightEnd_Close()", 3);		--?????5?????
 		this:Show()
 	end
 
 end
 --=========================================================
---关闭界面
+--关睜界面
 --=========================================================
 function CangBao_FightEnd_Close()
 	KillTimer("CangBao_FightEnd_Close()")

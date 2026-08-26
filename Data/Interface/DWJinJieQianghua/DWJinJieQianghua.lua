@@ -3,7 +3,7 @@ local MAX_OBJ_DISTANCE = 3.0
 local g_CaredNpc = -1
 local g_ServerObj = -1
 
-local g_DWJinJieQianghua_Item = -1--可有雕纹的装备，在背包中的位置
+local g_DWJinJieQianghua_Item = -1--???????,???????
 local g_DWJinJieQianghua_GRID_SKIP = 183 --	G184 
 local g_DWJinJieQianghua_Frame_UnifiedPosition;
 
@@ -15,7 +15,7 @@ local g_NeedMoney = 0
 local g_LCS2JCS = 5
 
 
--- 金蚕丝, 强化用的道具, 按照 绑定 -> 元宝交易 -> 随便交易 顺序使用
+-- 金蚕丝, 强化用的道具, 按牋 绑定 -> 元宝交易 -> 随便交易 顺序使用
 local g_DWJinJieQianghua_ToolItem = {20310168, 20310166, 20310167}
 local g_DWJinJieQianghua_ToolItem2 = 20310174 
 local g_DWJinJieQianghua_ToolItemNum1 = 0
@@ -71,7 +71,7 @@ function DWJinJieQianghua_OnEvent(event)
 		BeginCareObject_DWJinJieQianghua()
 		DWJinJieQianghua_Clear()
 		DWJinJieQianghua_UpdateBasic()
-		--调整界面位置
+		--调狖界面位置
 		if tostring(arg2) ~= nil then
 			DWJinJieQianghua_Frame:SetProperty("UnifiedPosition", tostring(arg2));
 		end
@@ -158,7 +158,7 @@ end
 -- 更新界面
 --=========================================================
 function DWJinJieQianghua_Update(itemIndex) 
-	local index = tonumber(itemIndex)--背包位置
+	local index = tonumber(itemIndex)--????
 	local theAction = EnumAction(index, "packageitem")
 	if theAction:GetID() ~= 0 then
 		--是否为蚀刻了雕纹的装备
@@ -184,7 +184,7 @@ function DWJinJieQianghua_Update(itemIndex)
 		-- end
 		--不检测加锁
 
-		-- 如果空格内已经有图样了, 替换之
+		-- 如果繝格内已经有图样了, 替换之
 		if g_DWJinJieQianghua_Item ~= -1 then
 			LifeAbility:Lock_Packet_Item(g_DWJinJieQianghua_Item, 0)
 		end
@@ -279,8 +279,8 @@ function DWJinJieQianghua_OK_Clicked()
 		return
 	end
 	--计算输入的够不够
-	local toolNumInBag1 = 0		-- 背包里强化材料的个数
-	local toolNumInBag2 = 0		-- 背包里强化材料的个数
+	local toolNumInBag1 = 0		-- ??????????
+	local toolNumInBag2 = 0		-- ??????????
 	for i, tbIndex in ipairs(g_DWJinJieQianghua_ToolItem) do
 		toolNumInBag1 = toolNumInBag1 + PlayerPackage:CountAvailableItemByIDTable(tonumber(tbIndex))
 	end
@@ -318,7 +318,7 @@ function DWJinJieQianghua_OK_Clicked()
 end
 
 --=========================================================
--- 关闭界面
+-- 关睜界面
 --=========================================================
 function DWJinJieQianghua_Close()
 	this:Hide()
@@ -336,7 +336,7 @@ end
 
 --=========================================================
 -- 开始关心NPC，
--- 在开始关心之前需要先确定这个界面是不是已经有“关心”的NPC，
+-- 在开始关心之前需要先确定犫个界面是不是已经有“关心”的NPC，
 -- 如果有的话，先取消已经有的“关心”
 --=========================================================
 function BeginCareObject_DWJinJieQianghua()
@@ -459,11 +459,11 @@ function DWJinJieQianghua_TextLost2()
 end
 --=========================================================
 -- 更改金蚕丝数量并设置变量
--- 为了保证这两个操作始终统一
+-- 为了保证犫两个操作始譅统一
 --=========================================================
 function DWJinJieQianghua_SetToolNumAndText1(count)
 	local num = tonumber(count)
-	-- 注意这里不要和 DWJinJieQianghua_ToolNumChange() 产生死循环了
+	-- 注意犫里不要和 DWJinJieQianghua_ToolNumChange() 产生死循环了
 	if count == nil or count == "" or num < 0 then
 		-- 输入太小的数
 		g_DWJinJieQianghua_ToolItemNum1 = 0
@@ -480,7 +480,7 @@ function DWJinJieQianghua_SetToolNumAndText1(count)
 end
 function DWJinJieQianghua_SetToolNumAndText2(count)
 	local num = tonumber(count)
-	-- 注意这里不要和 DWJinJieQianghua_ToolNumChange() 产生死循环了
+	-- 注意犫里不要和 DWJinJieQianghua_ToolNumChange() 产生死循环了
 	if count == nil or count == "" or num < 0 then
 		-- 输入太小的数
 		g_DWJinJieQianghua_ToolItemNum2 = 0

@@ -39,7 +39,7 @@ end
 function HistoryCorrespondence_System_Show()
 	this:Show();
 	HistoryCorrespondence_Log:ClearListBox();
-	HistoryCorrespondence_PageHeader:SetText( "#gFF0FA0œµÕ≥–≈œ¢" );
+	HistoryCorrespondence_PageHeader:SetText( "#gFF0FA0hÆ thØng tin t—c" );
 	HistoryCorrespondence_PageDown:Disable();
 	HistoryCorrespondence_PageUp:Disable();
 	local nNumber = DataPool:GetSystemHistroyNumber();
@@ -63,7 +63,7 @@ function HistoryCorrespondence_Show( nChannel, nIndex )
 	curFriendGroup = nChannel;
 	curFriendIndex = nIndex;
 	HistoryCorrespondence_Update();
-	HistoryCorrespondence_PageHeader:SetText( "#gFF0FA0¿˙ ∑–≈œ¢" );
+	HistoryCorrespondence_PageHeader:SetText( "#gFF0FA0l∏ch sÿ tin t—c" );
 	this:Show();
 end
 

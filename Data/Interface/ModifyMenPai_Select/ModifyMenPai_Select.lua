@@ -15,7 +15,7 @@ local MP_XINGSU   = 5
 local MP_DALI     = 6
 local MP_TIANSHAN = 7
 local MP_XIAOYAO  = 8
-local MP_COUNT    = 9  --用来做判断使用的，最大不能超过这个数，如果需要新增门派，在这个宏之前增加，并修改这个宏的值
+local MP_COUNT    = 9  --????????????????????????????????????????????????????????????????????
 local MP_MANTUO = 10
 local g_maxImagePerPage = 4
 local g_currentPage = 1
@@ -50,7 +50,7 @@ local g_select_Button = {}
 function ModifyMenPai_Select_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
     this:RegisterEvent("ADJEST_UI_POS", false)
-    this:RegisterEvent("VIEW_RESOLUTION_CHANGED", false) -- 游戏分辨率发生了变化
+    this:RegisterEvent("VIEW_RESOLUTION_CHANGED", false) -- ???????????????
 end
 
 function ModifyMenPai_Select_OnLoad()
@@ -92,18 +92,18 @@ function ModifyMenPai_Select_OnEvent(event)
                 end
             end
             if num <= g_maxImagePerPage then 
-                ModifyMenPai_Select_Next:Disable() --下一页不可用
+                ModifyMenPai_Select_Next:Disable() --?????????
             else
                 ModifyMenPai_Select_Next:Enable()
             end
-            ModifyMenPai_Select_Pre:Disable() --上一页不可用
+            ModifyMenPai_Select_Pre:Disable() --?????????
             g_currentPage = 1
             g_select = 0
             --ModifyMenPai_Select_Button1_BK:SetProperty("Image", "set:ModifyMenPai image:Modify_Emei")
             ModifyMenPai_Select_Button1:SetCheck(0)
             ModifyMenPai_Select_Button2:SetCheck(0)
             ModifyMenPai_Select_Button3:SetCheck(0)
-            ModifyMenPai_Select_Button4:SetCheck(0)--先清一清
+            ModifyMenPai_Select_Button4:SetCheck(0)--???????
             ModifyMenPai_Select_Text:SetText(ScriptGlobal_Format("#{MPZH_180719_95}", num))
             this:Show()
         end
@@ -231,13 +231,13 @@ function ModifyMenPai_Select_Next_Clicked()
         return
     end
 
-    if num > (currentPage * g_maxImagePerPage) then --还有下一页
+    if num > (currentPage * g_maxImagePerPage) then --????????
         for i = (prePage * g_maxImagePerPage + 1), maxImage do
             local index = i - (prePage * g_maxImagePerPage)
             local imageIndex = tarList[i]
             g_select_Button[index]:SetProperty("Image", g_switchImage[imageIndex])
         end
-        ModifyMenPai_Select_Next:Enable()--下一页可用
+        ModifyMenPai_Select_Next:Enable()--????????
     else
         for i = (prePage * g_maxImagePerPage + 1), maxImage do
             if i <= num then
@@ -250,10 +250,10 @@ function ModifyMenPai_Select_Next_Clicked()
                 g_select_Button[index]:Hide()
             end
         end
-        ModifyMenPai_Select_Next:Disable()--下一页不可用
+        ModifyMenPai_Select_Next:Disable()--?????????
     end
 
-    ModifyMenPai_Select_Pre:Enable()--上一页可用
+    ModifyMenPai_Select_Pre:Enable()--????????
     g_currentPage = g_currentPage + 1
     ModifyMenPai_Select_Button1:SetCheck(0)
     ModifyMenPai_Select_Button2:SetCheck(0)

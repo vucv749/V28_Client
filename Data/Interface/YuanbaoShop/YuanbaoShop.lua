@@ -5,8 +5,8 @@ local GOOD_BAD    = {};
 
 --±êÇ©Ò³Ë÷ÒýÖµ
 local ShopTabIdx = {
-	YuanBao 	= 0,	--Ôª±¦ÉÌµê
-	Bind		= 1,	--°ó¶¨Ôª±¦ÉÌµê
+	YuanBao 	= 0,	--????
+	Bind		= 1,	--??????
 }
 
 local SHOP_LIST_A = {};
@@ -36,7 +36,7 @@ local	g_tOrderPool	= {};
 local	g_nTotalNum		= 0;
 
 local	g_changeTabFlag	= 0;
-local	g_tabIndex	= 0;		-- 0±íÊ¾Ôª±¦ --1±íÊ¾°ó¶¨Ôª±¦
+local	g_tabIndex	= 0;		-- 0???? --1??????
 
 local g_YuanbaoShop_Frame_UnifiedXPosition;
 local g_YuanbaoShop_Frame_UnifiedYPosition;
@@ -118,65 +118,65 @@ function YuanbaoShop_OnLoad()
 
 	--´óÂô³¡
 	SHOP_LIST_A[1] = {btn = YuanbaoShop_Button1 , shoplist = {}}
-	SHOP_LIST_A[1].shoplist[1] = "#{YBSD_081225_019}"	--"ÐÂÆ·ÉÏ¼Ü";
-	SHOP_LIST_A[1].shoplist[2] = "#{YBSD_081225_020}"	--"ÈÈÂôÉÌµê";
-	SHOP_LIST_A[1].shoplist[3] = "#{YBSD_081225_021}"	--"ÌØ¼ÛÉÌÆ·";
-	SHOP_LIST_A[1].shoplist[8] = "#{YBSD_xml_XX(01)}"	--"×î½ü¹ºÂò";
+	SHOP_LIST_A[1].shoplist[1] = "#{YBSD_081225_019}"	--"Tân Ph¦m Thßþng Giá";
+	SHOP_LIST_A[1].shoplist[2] = "#{YBSD_081225_020}"	--"Nhi®t MÕi cØa hàng";
+	SHOP_LIST_A[1].shoplist[3] = "#{YBSD_081225_021}"	--"Giá ð£c bi®t thß½ng ph¦m";
+	SHOP_LIST_A[1].shoplist[8] = "#{YBSD_xml_XX(01)}"	--"G¥n nh¤t mua";
 
 	--±¦Ê¯ÉÌ³Ç
 	SHOP_LIST_A[2] = {btn = YuanbaoShop_Button2 , shoplist = {}}
---	SHOP_LIST_A[2].shoplist[1] = "#{YBSD_081225_022}"	--"´óÀí±¦Ê¯Õ«";
-	SHOP_LIST_A[2].shoplist[1] = "#{YBSD_081225_023}"	--"ËÕÖÝ±¦Ê¯Õ«";
-	SHOP_LIST_A[2].shoplist[2] = "#{YBSD_081225_022}"	--"´óÀí±¦Ê¯Õ«";
-	SHOP_LIST_A[2].shoplist[3] = "#{YBSD_081225_102}"	--"Â¥À¼±¦Ê¯Õ«";
-	SHOP_LIST_A[2].shoplist[4] = "#{YBSD_081225_024}"	--"ÂåÑô±¦Ê¯Õ«";
-	SHOP_LIST_A[2].shoplist[5] = "#{YBSD_081225_025}"	--"±¦Ê¯¾«»ªµê";
-	SHOP_LIST_A[2].shoplist[6] = "#{YBSD_081225_026}"	--"±¦Ê¯¼Ó¹¤·»";
+--	SHOP_LIST_A[2].shoplist[1] = "#{YBSD_081225_022}"	--"´óÀí±¦Ê¯ «";
+	SHOP_LIST_A[2].shoplist[1] = "#{YBSD_081225_023}"	--"Tô Châu bäo thÕch Trai";
+	SHOP_LIST_A[2].shoplist[2] = "#{YBSD_081225_022}"	--"ÐÕi Lý bäo thÕch Trai";
+	SHOP_LIST_A[2].shoplist[3] = "#{YBSD_081225_102}"	--"Lâu Lan bäo thÕch Trai";
+	SHOP_LIST_A[2].shoplist[4] = "#{YBSD_081225_024}"	--"LÕc Dß½ng bäo thÕch Trai";
+	SHOP_LIST_A[2].shoplist[5] = "#{YBSD_081225_025}"	--"Bäo thÕch tinh hoa Ðiªm";
+	SHOP_LIST_A[2].shoplist[6] = "#{YBSD_081225_026}"	--"Bäo thÕch gia công Phß¶ng";
 
-	--ÕäÊÞÉÌ³Ç
+	-- äÊÞÉÌ³Ç
 	SHOP_LIST_A[3] = {btn = YuanbaoShop_Button3 , shoplist = {}}
-	SHOP_LIST_A[3].shoplist[1] = "#{YBSD_081225_027}"	--"Ï¡ÓÐÕäÊÞ¹Ý";
-	SHOP_LIST_A[3].shoplist[2] = "#{YBSD_081225_028}"	--"ÆÕÍ¨¼¼ÄÜ¹Ý";
-	SHOP_LIST_A[3].shoplist[3] = "#{YBSD_081225_029}"	--"¸ß¼¶¼¼ÄÜ¹Ý";
-	SHOP_LIST_A[3].shoplist[4] = "#{YBSD_081225_030}"	--"ÕäÊÞÁéÒ©·»";
+	SHOP_LIST_A[3].shoplist[1] = "#{YBSD_081225_027}"	--"Hi hæu Trân Thú Quán";
+	SHOP_LIST_A[3].shoplist[2] = "#{YBSD_081225_028}"	--"Bình thß¶ng kÛ nång Quán";
+	SHOP_LIST_A[3].shoplist[3] = "#{YBSD_081225_029}"	--"Cao c¤p kÛ nång Quán";
+	SHOP_LIST_A[3].shoplist[4] = "#{YBSD_081225_030}"	--"Trân Thú linh dßþc Phß¶ng";
 
 	--ÄÏ±±ÔÓ»õ
 	SHOP_LIST_A[4] = {btn = YuanbaoShop_Button4 , shoplist = {}}
-	SHOP_LIST_A[4].shoplist[1] = "#{YBSD_081225_091}"	--"ÏÉµ¤ÁéÒ©";
-	SHOP_LIST_A[4].shoplist[2] = "#{YBSD_XML_3}"	--"Ìì¹¤¿ªÎï";
-	SHOP_LIST_A[4].shoplist[3] = "#{YBSD_081225_031}"	--"ÆæÕäÒì±¦";
-	SHOP_LIST_A[4].shoplist[4] = "#{YBSD_081225_032}"	--"ÈýÇåÉñ·û";
+	SHOP_LIST_A[4].shoplist[1] = "#{YBSD_081225_091}"	--"Tiên ðan linh dßþc";
+	SHOP_LIST_A[4].shoplist[2] = "#{YBSD_XML_3}"	--"Thiên Công Khai V§t";
+	SHOP_LIST_A[4].shoplist[3] = "#{YBSD_081225_031}"	--"KÏ trân d¸ bäo";
+	SHOP_LIST_A[4].shoplist[4] = "#{YBSD_081225_032}"	--"Tam Thanh Th¥n Phù";
 
 	--ÐÎÏó¹ã³¡
 	SHOP_LIST_A[5] = {btn = YuanbaoShop_Button5 , shoplist = {}}
-	SHOP_LIST_A[5].shoplist[1] = "#{YBSD_XML_1}"	--¾Ã¾ÃÊ±×°µê
-	SHOP_LIST_A[5].shoplist[2] = "#{YBSD_XML_2}"	--Ê±ÉÐÊ±×°µê
-	SHOP_LIST_A[5].shoplist[3] = "#{YBSD_081225_034}"	--"ÈçÒâ±äÉíÕ«";
-	SHOP_LIST_A[5].shoplist[4] = "#{YBSD_081225_035}"	--"ÌìÑï·¢ÒÕ¹Ý";
-	SHOP_LIST_A[5].shoplist[5] = "#{YBSD_081225_036}"	--"À¼ÓêÃÀÈÝ·»";
-	SHOP_LIST_A[5].shoplist[6] = "#{YBSD_081225_037}"	--"×øÆïÉÌ³Ç";
+	SHOP_LIST_A[5].shoplist[1] = "#{YBSD_XML_1}"	--?????
+	SHOP_LIST_A[5].shoplist[2] = "#{YBSD_XML_2}"	--?????
+	SHOP_LIST_A[5].shoplist[3] = "#{YBSD_081225_034}"	--"Nhß ý biªn thân Trai";
+	SHOP_LIST_A[5].shoplist[4] = "#{YBSD_081225_035}"	--"Thiên Dß½ng Phát Ngh® Quán";
+	SHOP_LIST_A[5].shoplist[5] = "#{YBSD_081225_036}"	--"Lan Vû mÛ dung Phß¶ng";
+	SHOP_LIST_A[5].shoplist[6] = "#{YBSD_081225_037}"	--"T÷a kÜ Thß½ng Thành";
 
 	--»¨ÎèÈË¼ä
 	SHOP_LIST_A[6] = {btn = YuanbaoShop_Button6 , shoplist = {}}
-	SHOP_LIST_A[6].shoplist[1] = "#{YBSD_081225_038}"	--"´«Í³ÑÌ»¨";
-	SHOP_LIST_A[6].shoplist[2] = "#{YBSD_081225_039}"	--"¸öÐÔÑÌ»¨";
-	SHOP_LIST_A[6].shoplist[3] = "#{YBSD_081225_040}"	--"È«³¡¾°ÑÌ»¨";
-	SHOP_LIST_A[6].shoplist[4] = "#{YBSD_081225_041}"	--"ÏÊ»¨";
+	SHOP_LIST_A[6].shoplist[1] = "#{YBSD_081225_038}"	--"Truy«n th¯ng pháo hoa";
+	SHOP_LIST_A[6].shoplist[2] = "#{YBSD_081225_039}"	--"Cá tính pháo hoa";
+	SHOP_LIST_A[6].shoplist[3] = "#{YBSD_081225_040}"	--"Toàn trß¶ng Cänh pháo hoa";
+	SHOP_LIST_A[6].shoplist[4] = "#{YBSD_081225_041}"	--"Hoa tß½i";
 
 	--Îä¹¦ÃØ¼®
 	SHOP_LIST_A[7] = {btn = YuanbaoShop_Button7 , shoplist = {}}
-	SHOP_LIST_A[7].shoplist[1] = "#{YBSD_081225_042}"	--"»¹Ê©Ë®¸ó";
+	SHOP_LIST_A[7].shoplist[1] = "#{YBSD_081225_042}"	--"Hoàn Th¸ Thüy Các";
 	--SHOP_LIST_A[7].shoplist[2] = "#{YBSD_XML_4}"	--"ÀÅ‹ÖÓñ¸®";
 	--´òÔìÍ¼
 	SHOP_LIST_A[8] = {btn = YuanbaoShop_Button8 , shoplist = {}}
-	SHOP_LIST_A[8].shoplist[1] = "#{YBSD_081225_043}"	--"µ¶¸«ºÍÇ¹°ô";
-	SHOP_LIST_A[8].shoplist[2] = "#{YBSD_081225_044}"	--"µ¥¶ÌºÍË«¶Ì";
-	SHOP_LIST_A[8].shoplist[3] = "#{YBSD_081225_045}"	--"ÉÈºÍ»·";
-	SHOP_LIST_A[8].shoplist[4] = "#{YBSD_081225_096}"	--"ÒÂ·þºÍÃ±×Ó";
-	SHOP_LIST_A[8].shoplist[5] = "#{YBSD_081225_046}"	--"ÊÖÌ×ºÍÐ¬×Ó";
-	SHOP_LIST_A[8].shoplist[6] = "#{YBSD_081225_047}"	--"»¤ÍóºÍ»¤¼ç";
-	SHOP_LIST_A[8].shoplist[7] = "#{YBSD_081225_048}"	--"Ñü´øºÍÏîÁ´";
-	SHOP_LIST_A[8].shoplist[8] = "#{YBSD_081225_049}"	--"½äÖ¸ºÍ»¤·û";
+	SHOP_LIST_A[8].shoplist[1] = "#{YBSD_081225_043}"	--"Ðao Phü Hoà Thß½ng B±ng";
+	SHOP_LIST_A[8].shoplist[2] = "#{YBSD_081225_044}"	--"Thi«n Ðoän Hoà Song Ðoän";
+	SHOP_LIST_A[8].shoplist[3] = "#{YBSD_081225_045}"	--"Phiªn Hoà Hoàn";
+	SHOP_LIST_A[8].shoplist[4] = "#{YBSD_081225_096}"	--"Y Phøc Hoà mû";
+	SHOP_LIST_A[8].shoplist[5] = "#{YBSD_081225_046}"	--"Cái bao tay Hoà gi¥y";
+	SHOP_LIST_A[8].shoplist[6] = "#{YBSD_081225_047}"	--"Hµ Uy­n Hoà Hµ Kiên";
+	SHOP_LIST_A[8].shoplist[7] = "#{YBSD_081225_048}"	--"Ðai lßng Hoà vòng c±";
+	SHOP_LIST_A[8].shoplist[8] = "#{YBSD_081225_049}"	--"Nhçn Hoà Hµ Phù";
 
 	--¶þ¼¶ÉÌµê
 	SHOP_LIST_B[1] = YuanbaoShop_Button01
@@ -204,65 +204,65 @@ function YuanbaoShop_OnLoad()
 
 	--ÎÒÒª¸üÇ¿´ó
 	SHOP_SEARCH_LIST[1] = {}
-	SHOP_SEARCH_LIST[1][1] = "#{YBSD_081225_023}"	--"ËÕÖÝ±¦Ê¯Õ«";
-	SHOP_SEARCH_LIST[1][2] = "#{YBSD_081225_024}"	--"ÂåÑô±¦Ê¯Õ«";
-	SHOP_SEARCH_LIST[1][3] = "#{YBSD_081225_025}"	--"±¦Ê¯¾«»ªµê";
-	SHOP_SEARCH_LIST[1][4] = "#{YBSD_081225_027}"	--"Ï¡ÓÐÕäÊÞ¹Ý";
-	SHOP_SEARCH_LIST[1][5] = "#{YBSD_081225_091}"	--"ÏÉµ¤ÁéÒ©";
+	SHOP_SEARCH_LIST[1][1] = "#{YBSD_081225_023}"	--"Tô Châu bäo thÕch Trai";
+	SHOP_SEARCH_LIST[1][2] = "#{YBSD_081225_024}"	--"LÕc Dß½ng bäo thÕch Trai";
+	SHOP_SEARCH_LIST[1][3] = "#{YBSD_081225_025}"	--"Bäo thÕch tinh hoa Ðiªm";
+	SHOP_SEARCH_LIST[1][4] = "#{YBSD_081225_027}"	--"Hi hæu Trân Thú Quán";
+	SHOP_SEARCH_LIST[1][5] = "#{YBSD_081225_091}"	--"Tiên ðan linh dßþc";
 	--ÎÒÒª¸üÓÐ÷ÈÁ¦
 	SHOP_SEARCH_LIST[2] = {}
-	SHOP_SEARCH_LIST[2][1] = "#{YBSD_081225_037}"	--"×øÆïÉÌ³Ç";
-	SHOP_SEARCH_LIST[2][2] = "#{YBSD_XML_1}"--¾Ã¾ÃÊ±×°µê
-	SHOP_SEARCH_LIST[2][3] = "#{YBSD_XML_2}"--Ê±ÉÐÊ±×°µê
-	SHOP_SEARCH_LIST[2][4] = "#{YBSD_081225_034}"	--"ÈçÒâ±äÉíÕ«";
-	SHOP_SEARCH_LIST[2][5] = "#{YBSD_081225_035}"	--"ÌìÑï·¢ÒÕ¹Ý";
-	SHOP_SEARCH_LIST[2][6] = "#{YBSD_081225_036}"	--"À¼ÓêÃÀÈÝ·»";
+	SHOP_SEARCH_LIST[2][1] = "#{YBSD_081225_037}"	--"T÷a kÜ Thß½ng Thành";
+	SHOP_SEARCH_LIST[2][2] = "#{YBSD_XML_1}"--?????
+	SHOP_SEARCH_LIST[2][3] = "#{YBSD_XML_2}"--?????
+	SHOP_SEARCH_LIST[2][4] = "#{YBSD_081225_034}"	--"Nhß ý biªn thân Trai";
+	SHOP_SEARCH_LIST[2][5] = "#{YBSD_081225_035}"	--"Thiên Dß½ng Phát Ngh® Quán";
+	SHOP_SEARCH_LIST[2][6] = "#{YBSD_081225_036}"	--"Lan Vû mÛ dung Phß¶ng";
 	--ÎÒÒª´òÔì¼«Æ·×°±¸
 	SHOP_SEARCH_LIST[3] = {}
---	SHOP_SEARCH_LIST[3][1] = "#{YBSD_081225_022}"	--"´óÀí±¦Ê¯Õ«";
-	SHOP_SEARCH_LIST[3][1] = "#{YBSD_081225_023}"	--"ËÕÖÝ±¦Ê¯Õ«";
-	SHOP_SEARCH_LIST[3][2] = "#{YBSD_081225_024}"	--"ÂåÑô±¦Ê¯Õ«";
-	SHOP_SEARCH_LIST[3][3] = "#{YBSD_081225_026}"	--"±¦Ê¯¼Ó¹¤·»";
-	SHOP_SEARCH_LIST[3][4] = "#{YBSD_XML_3}"	--"Ìì¹¤¿ªÎï";
-	SHOP_SEARCH_LIST[3][5] = "#{YBSD_081225_031}"	--"ÆæÕäÒì±¦";
-	--ÎÒÒª´òÔì¼«Æ·ÕäÊÞ
+--	SHOP_SEARCH_LIST[3][1] = "#{YBSD_081225_022}"	--"´óÀí±¦Ê¯ «";
+	SHOP_SEARCH_LIST[3][1] = "#{YBSD_081225_023}"	--"Tô Châu bäo thÕch Trai";
+	SHOP_SEARCH_LIST[3][2] = "#{YBSD_081225_024}"	--"LÕc Dß½ng bäo thÕch Trai";
+	SHOP_SEARCH_LIST[3][3] = "#{YBSD_081225_026}"	--"Bäo thÕch gia công Phß¶ng";
+	SHOP_SEARCH_LIST[3][4] = "#{YBSD_XML_3}"	--"Thiên Công Khai V§t";
+	SHOP_SEARCH_LIST[3][5] = "#{YBSD_081225_031}"	--"KÏ trân d¸ bäo";
+	--ÎÒÒª´òÔì¼«Æ· äÊÞ
 	SHOP_SEARCH_LIST[4] = {}
-	SHOP_SEARCH_LIST[4][1] = "#{YBSD_081225_027}"	--"Ï¡ÓÐÕäÊÞ¹Ý";
-	SHOP_SEARCH_LIST[4][2] = "#{YBSD_081225_028}"	--"ÆÕÍ¨¼¼ÄÜ¹Ý";
-	SHOP_SEARCH_LIST[4][3] = "#{YBSD_081225_029}"	--"¸ß¼¶¼¼ÄÜ¹Ý";
-	SHOP_SEARCH_LIST[4][4] = "#{YBSD_081225_030}"	--"ÕäÊÞÁéÒ©·»";
+	SHOP_SEARCH_LIST[4][1] = "#{YBSD_081225_027}"	--"Hi hæu Trân Thú Quán";
+	SHOP_SEARCH_LIST[4][2] = "#{YBSD_081225_028}"	--"Bình thß¶ng kÛ nång Quán";
+	SHOP_SEARCH_LIST[4][3] = "#{YBSD_081225_029}"	--"Cao c¤p kÛ nång Quán";
+	SHOP_SEARCH_LIST[4][4] = "#{YBSD_081225_030}"	--"Trân Thú linh dßþc Phß¶ng";
 
 	--ÎÒÒªÒÆ¶¯µÄ¸ü¿ì
 	SHOP_SEARCH_LIST[5] = {}
-	SHOP_SEARCH_LIST[5][1] = "#{YBSD_081225_037}"	--"×øÆïÉÌ³Ç";
-	SHOP_SEARCH_LIST[5][2] = "#{YBSD_081225_032}"	--"ÈýÇåÉñ·û";
+	SHOP_SEARCH_LIST[5][1] = "#{YBSD_081225_037}"	--"T÷a kÜ Thß½ng Thành";
+	SHOP_SEARCH_LIST[5][2] = "#{YBSD_081225_032}"	--"Tam Thanh Th¥n Phù";
 	--ÎÒÒªÏò±ðÈË±í°×
 	SHOP_SEARCH_LIST[6] = {}
-	SHOP_SEARCH_LIST[6][1] = "#{YBSD_081225_039}"	--"¸öÐÔÑÌ»¨";
-	SHOP_SEARCH_LIST[6][2] = "#{YBSD_081225_040}"	--"È«³¡¾°ÑÌ»¨";
-	SHOP_SEARCH_LIST[6][3] = "#{YBSD_081225_041}"	--"ÏÊ»¨";
-	SHOP_SEARCH_LIST[6][4] = "#{YBSD_XML_1}"--¾Ã¾ÃÊ±×°µê
-	SHOP_SEARCH_LIST[6][5] = "#{YBSD_XML_2}"--Ê±ÉÐÊ±×°µê
-	SHOP_SEARCH_LIST[6][6] = "#{YBSD_081225_037}"	--"×øÆïÉÌ³Ç";
+	SHOP_SEARCH_LIST[6][1] = "#{YBSD_081225_039}"	--"Cá tính pháo hoa";
+	SHOP_SEARCH_LIST[6][2] = "#{YBSD_081225_040}"	--"Toàn trß¶ng Cänh pháo hoa";
+	SHOP_SEARCH_LIST[6][3] = "#{YBSD_081225_041}"	--"Hoa tß½i";
+	SHOP_SEARCH_LIST[6][4] = "#{YBSD_XML_1}"--?????
+	SHOP_SEARCH_LIST[6][5] = "#{YBSD_XML_2}"--?????
+	SHOP_SEARCH_LIST[6][6] = "#{YBSD_081225_037}"	--"T÷a kÜ Thß½ng Thành";
 	--ÎÒÒªÑ§Ï°ÐÂ¼¼ÄÜ
 	SHOP_SEARCH_LIST[7] = {}
-	SHOP_SEARCH_LIST[7][1] = "#{YBSD_081225_042}"	--"»¹Ê©Ë®¸ó";
+	SHOP_SEARCH_LIST[7][1] = "#{YBSD_081225_042}"	--"Hoàn Th¸ Thüy Các";
 	--SHOP_SEARCH_LIST[7][2] = "#{YBSD_XML_4}"	--"»¹Ê©Ë®¸ó";
-	SHOP_SEARCH_LIST[7][2] = "#{YBSD_081225_028}"	--"ÆÕÍ¨¼¼ÄÜ¹Ý";
-	SHOP_SEARCH_LIST[7][3] = "#{YBSD_081225_029}"	--"¸ß¼¶¼¼ÄÜ¹Ý";
+	SHOP_SEARCH_LIST[7][2] = "#{YBSD_081225_028}"	--"Bình thß¶ng kÛ nång Quán";
+	SHOP_SEARCH_LIST[7][3] = "#{YBSD_081225_029}"	--"Cao c¤p kÛ nång Quán";
 	--×î½ü¹ºÂò
 	SHOP_SEARCH_LIST[8] = {}
-	SHOP_SEARCH_LIST[8][1] = "#{YBSD_xml_XX(01)}"	--"×î½ü¹ºÂò";
+	SHOP_SEARCH_LIST[8][1] = "#{YBSD_xml_XX(01)}"	--"G¥n nh¤t mua";
 
 
-	YuanbaoShop_SearchMode:AddTextItem("#{YBSD_081225_055}" ,1)	--ÎÒÒª¸üÇ¿´ó
-	YuanbaoShop_SearchMode:AddTextItem("#{YBSD_081225_056}" ,2)	--"ÎÒÒª¸üÓÐ÷ÈÁ¦"
-	YuanbaoShop_SearchMode:AddTextItem("#{YBSD_081225_057}" ,3)	--"ÎÒÒª´òÔì¼«Æ·×°±¸"
-	YuanbaoShop_SearchMode:AddTextItem("#{YBSD_081225_058}",4)	--"ÎÒÒª´òÔì¼«Æ·ÕäÊÞ"
-	YuanbaoShop_SearchMode:AddTextItem("#{YBSD_081225_059}",5)	--"ÎÒÒªÒÆ¶¯µÄ¸ü¿ì"
-	YuanbaoShop_SearchMode:AddTextItem("#{YBSD_081225_060}",6)	--"ÎÒÒªÏò±ðÈË±í°×"
-	YuanbaoShop_SearchMode:AddTextItem("#{YBSD_081225_061}",7)	--"ÎÒÒªÑ§Ï°ÐÂ¼¼ÄÜ"
-	YuanbaoShop_SearchMode:AddTextItem("#{YBSD_xml_XX(02)}",8)	--"²é¿´×î½ü¹ºÂòµÄÉÌÆ·"
+	YuanbaoShop_SearchMode:AddTextItem("#{YBSD_081225_055}" ,1)	--?????
+	YuanbaoShop_SearchMode:AddTextItem("#{YBSD_081225_056}" ,2)	--"Ngã Yêu cûng có m¸ lñc"
+	YuanbaoShop_SearchMode:AddTextItem("#{YBSD_081225_057}" ,3)	--"Ngã mu¯n ðánh TÕo cñc ph¦m trang b¸"
+	YuanbaoShop_SearchMode:AddTextItem("#{YBSD_081225_058}",4)	--"Ngã mu¯n ðánh TÕo cñc ph¦m Trân Thú"
+	YuanbaoShop_SearchMode:AddTextItem("#{YBSD_081225_059}",5)	--"Ngã Yêu di ðµng Ðích nhanh h½n"
+	YuanbaoShop_SearchMode:AddTextItem("#{YBSD_081225_060}",6)	--"Ngã chï ði¬m ngß¶i khác th± lµ"
+	YuanbaoShop_SearchMode:AddTextItem("#{YBSD_081225_061}",7)	--"Ngã mu¯n h÷c T§p Tân kÛ nång"
+	YuanbaoShop_SearchMode:AddTextItem("#{YBSD_xml_XX(02)}",8)	--"Xem xét g¥n nh¤t mua Ðích thß½ng ph¦m"
 
 
 	-- °ó¶¨Ôª±¦begin
@@ -437,8 +437,8 @@ function YuanbaoShop_OnEvent(event)
 			OpenWindow("Packet")
 
 			-- ÔÚÏÈ´ò¿ªNPCÉÌµê£¬ºó´ò¿ªÔª±¦ÉÌµêµÄÊ±ºò£¬´æÔÚÒ»¸öÎÊÌâ
-			-- Ôª±¦ÉÌµêÔÚ´ò¿ªÊ±»á¹Ø±ÕÒÑ¾­´ò¿ªµÄNPCÉÌµê£¬¶ø¹Ø±ÕÕâ¸ö²Ù×÷»á½«ÊÇ·ñ´ò¿ªÉÌµêÕâ¸ö×´Ì¬Ö»Îª¼Ù£¬´Ó¶øµ¼ÖÂ¹ºÂòÏà¹ØµÄÂß¼­³öÏÖ´íÎó
-			-- Ä¿Ç°µÄ½â¾ö°ì·¨ÊÇÔÚShowµÄµØ·½£¬ÉèÖÃÊÇ·ñ´ò¿ªÉÌµêµÄ×´Ì¬ÎªÕæ¡£
+			-- Ôª±¦ÉÌµêÔÚ´ò¿ªÊ±»á¹Ø± ÒÑ¾­´ò¿ªµÄNPCÉÌµê£¬¶ø¹Ø±  â¸ö²Ù×÷»á½«ÊÇ·ñ´ò¿ªÉÌµê â¸ö×´Ì¬Ö»Îª¼Ù£¬´Ó¶øµ¼ÖÂ¹ºÂòÏà¹ØµÄÂß¼­³öÏÖ´íÎó
+			-- Ä¿Ç°µÄ½â¾ö°ì·¨ÊÇÔÚShowµÄµØ·½£¬ÉèÖÃÊÇ·ñ´ò¿ªÉÌµêµÄ×´Ì¬Îª æ¡£
 			OpenBooth();
 		end
 
@@ -597,7 +597,7 @@ function YuanbaoShop_Show()
 	else
 		YuanbaoShop_Yuanbao : SetCheck(1)
 		YuanbaoShop_Gongzi : SetCheck(0)
-		--´ò¿ªÊ±Ä¬ÈÏÇÐ»»µ½ÆÕÍ¨Ôª±¦µê
+		--´ò¿ªÊ±Ä¬ÈÏÇÐ»»µ½Æ Í¨Ôª±¦µê
 		YuanbaoShop_ChangeTabIndex( 0 )
 	end
 end
@@ -762,7 +762,7 @@ function YuanbaoShop_UpdateShop(nIndex)
 		UpdateShopItem( 1 , 1)
 	end
 end
---²éÕÒ
+--²é Ò
 function YuanbaoShop_BeginSearch()
 
 	if ( YuanbaoShop_SearchMode_Bind : IsVisible( ) ) then
@@ -850,7 +850,7 @@ function YuanbaoShop_UpdateShop_Bind(nIndex)
 
 end
 
---²éÕÒ
+--²é Ò
 function YuanbaoShop_BeginSearch_Bind()
 
 	local str , nIndex = YuanbaoShop_SearchMode_Bind:GetCurrentSelect()
@@ -1163,7 +1163,7 @@ function YuanbaoShop_web_Clicked()
 	end
 	GameProduceLogin:OpenURL(GetWeblink("WEB_LOGON_MAIN"))
 end
---Ä¿Â¼ºÍ²éÕÒËµÃ÷
+--Ä¿Â¼ºÍ²é ÒËµÃ÷
 function YuanbaoShop_Dis_Clicked()
 	OpenYBShopReference("#{YBSD_081225_070}")
 end

@@ -7,7 +7,7 @@ local g_Frame_UnifiedPosition
 function NewZhuXian_Task2_PreLoad()
 
 	this:RegisterEvent("UI_COMMAND",true)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
 	this:RegisterEvent("ADJEST_UI_POS",false)
 
@@ -35,7 +35,7 @@ function NewZhuXian_Task2_OnEvent(event)
 			--打开界面
 			NewZhuXian_Task2_ShowFrame(itemIndex)
 		elseif param == 2 then
-			--关闭界面
+			--关睜界面
 			NewZhuXian_Task2_OnHiden()
 		end
 		
@@ -65,14 +65,14 @@ function NewZhuXian_Task2_ShowFrame(itemIndex)
 end
 
 
---调整：界面位置
+--调狖：界面位置
 function NewZhuXian_Task2_ResetPos()
 
 	NewZhuXian_Task2_Frame:SetProperty("UnifiedPosition", g_Frame_UnifiedPosition)
 
 end
 
---关闭：界面
+--关睜：界面
 function NewZhuXian_Task2_OnHiden()
 	this:Hide()
 end

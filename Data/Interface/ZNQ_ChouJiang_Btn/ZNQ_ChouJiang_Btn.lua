@@ -116,7 +116,7 @@ function ZNQ_ChouJiang_Btn_OnEvent(event)
 
 	elseif ( event == "ANN_ONLINE_MINIMAP_UI_OPEN" ) then
 		-- 显示界面
-		-- 为了解决界面被遮挡的问题，先把界面关了
+		-- 为了解决界面被犣挡的问题，先把界面关了
 		-- if this:IsVisible() then
 		-- 	ZNQ_ChouJiang_Btn_OnClose()
 		-- end
@@ -147,9 +147,9 @@ function ZNQ_ChouJiang_Btn_OnEvent(event)
 		if(tonumber(arg0) ~= g_nObjCaredIDClient) then
 			return
 		end
-		-- 如果和NPC的距离大于一定距离或者被删除，自动关闭
+		-- 如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
-			-- 关闭界面
+			-- 关睜界面
 			ZNQ_ChouJiang_Btn_OnClose()
 		end	
 
@@ -313,8 +313,8 @@ function ZNQ_ChouJiang_Btn_Update(bOpen)
 
 	-- PushDebugMessage("ZNQ_ChouJiang_Btn_Update")
 
-	-- 获得活动的阶段信息 1 仅展示界面阶段; 2 抽奖当天; 3 抽奖过后的可领奖阶段; -1 未开启活动; -2 活动结束第一天; -3 活动已结束;
-	-- 自校验关闭
+	-- 获得活动的阶段信息 1 仅牴示界面阶段; 2 抽奖当天; 3 抽奖过后的可领奖阶段; -1 未开启活动; -2 活动结束第一天; -3 活动已结束;
+	-- 自校验关睜
 	if g_nHuoDongDayStep < 0 then
 		-- PushDebugMessage("g_nHuoDongDayStep < 0")
 		ZNQ_ChouJiang_Btn_OnClose()	
@@ -547,7 +547,7 @@ function ZNQ_ChouJiang_Btn_Reset()
 end
 
 --=========================================================
--- 关闭界面
+-- 关睜界面
 --=========================================================
 function ZNQ_ChouJiang_Btn_OnClose()	
 

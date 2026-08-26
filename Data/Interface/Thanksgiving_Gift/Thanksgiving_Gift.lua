@@ -11,9 +11,9 @@ local MAX_OBJ_DISTANCE = 3.0
 local objCared = -1
 local g_Object = -1
 
-local g_Thanksgiving_Gift_Index 	= -1 	--默认不选中任何兑换物品
-local g_Thanksgiving_Gift_ItemList = {}		--四个item
-local g_Thanksgiving_Gift_CheckList = {}	--四个选中图标
+local g_Thanksgiving_Gift_Index 	= -1 	--?????????????????
+local g_Thanksgiving_Gift_ItemList = {}		--???item
+local g_Thanksgiving_Gift_CheckList = {}	--?????????
 local g_Thanksgiving_Gift_ItemIDList =
 {
 	[1] ={id=10141258,num =1},  

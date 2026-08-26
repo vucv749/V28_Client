@@ -12,7 +12,7 @@ local g_AllBaoXiangNum = 5
 
 function QinHuangTime3_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
-	--离开场景，自动关闭
+	--离开场景，自动关睜
 	this:RegisterEvent("PLAYER_LEAVE_WORLD", false)	
 	this:RegisterEvent("QIHUANTIME_SWITCH")
 	-- 游戏窗口尺寸发生了变化
@@ -59,7 +59,7 @@ function QinHuangTime3_OnEvent(event)
 		end
 
 	elseif event == "UI_COMMAND" and tonumber(arg0) == 20210510 then
-		--第四就直接关闭就完事了
+		--第四就直接关睜就完事了
 		if (this:IsVisible()) then
 			QinHuangTime3_Hide()
 		end

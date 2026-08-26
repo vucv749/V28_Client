@@ -77,7 +77,7 @@ end
 --=========================================================
 function CangBao_GuoTu_Open(nType)
 	if nType < 0 then
-		--关闭界面
+		--关睜界面
 		CangBao_GuoTu_Close()
 	else
 		--打开界面
@@ -85,13 +85,13 @@ function CangBao_GuoTu_Open(nType)
 		--播放动画
 		CangBao_GuoTu_Eff:Show();
 		--倒计时
-		SetTimer("CangBao_GuoTu","CangBao_GuoTu_Close()", g_CangBao_AnimationTime*1000);		--设置定时器5秒钟倒计时
+		SetTimer("CangBao_GuoTu","CangBao_GuoTu_Close()", g_CangBao_AnimationTime*1000);		--?????5?????
 		this:Show()
 	end
 
 end
 --=========================================================
---关闭界面
+--关睜界面
 --=========================================================
 function CangBao_GuoTu_Close()
 	KillTimer("CangBao_GuoTu_Close()")

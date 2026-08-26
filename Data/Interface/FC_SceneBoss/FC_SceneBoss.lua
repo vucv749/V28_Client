@@ -8,8 +8,8 @@ local g_FC_SceneBoss_UnifiedPosition;
 
 local g_FC_SceneBoss_SceneType = 0
 local g_FC_SceneBoss_MaxCount = {
-[1]={4,4},--内：中 大
-[2]={4,1},--外：小 中
+[1]={4,4},--?:? ?
+[2]={4,1},--?:? ?
 }
 
 local g_FC_SceneBoss_DayJoinCount = 1

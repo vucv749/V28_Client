@@ -10,12 +10,12 @@ local g_XinfuFanli_Shop_NpcId=0
 local g_XinfuFanli_Shop_listitem = {} 
 local g_XinfuFanli_MainDian_listitem = {}
 local g_XinfuFanli_MainDian_info = { 
-    [1] = {     --周活跃
-        cxid   = 1,     --埋点索引
-        target = 400,   --周活跃400
-        fanli  = 20,    --返利值 
-        maxcount= 0,    --周最大值
-        isauto = 1,     --是否自动给奖
+    [1] = {     --???
+        cxid   = 1,     --????
+        target = 400,   --???400
+        fanli  = 20,    --??? 
+        maxcount= 0,    --????
+        isauto = 1,     --??????
         title       =   "#{XFFL_250522_21}",
         targettext  =   "#{XFFL_250522_23}",
         jingdu      =   "#{XFFL_250522_25}",
@@ -23,12 +23,12 @@ local g_XinfuFanli_MainDian_info = {
         yilingqu    = "#{XFFL_250522_39}",
         weiwancheng = "#{XFFL_250522_40}"
     },
-    [2] = {     --周活跃
+    [2] = {     --???
         cxid   = 2,
-        target = 800,   --周活跃800
+        target = 800,   --???800
         fanli  = 30, 
         maxcount= 0,
-        isauto = 1,     --是否自动给奖
+        isauto = 1,     --??????
         title  = "#{XFFL_250522_22}",
         targettext="#{XFFL_250522_23}",
         jingdu = "#{XFFL_250522_25}",
@@ -36,12 +36,12 @@ local g_XinfuFanli_MainDian_info = {
         yilingqu    = "#{XFFL_250522_39}",
         weiwancheng = "#{XFFL_250522_40}"
     },
-    [3] = {     --神工值
+    [3] = {     --???
         cxid    = 3,
         target  = 200,
         fanli   = 20, 
         maxcount= 0,
-        isauto  = 1,     --是否自动给奖
+        isauto  = 1,     --??????
         title   = "#{XFFL_250522_28}",
         targettext="#{XFFL_250522_29}",
         jingdu  = "#{XFFL_250522_25}",
@@ -54,7 +54,7 @@ local g_XinfuFanli_MainDian_info = {
         target = 4,
         fanli  = 20, 
         maxcount= 0,
-        isauto = 1,     --是否自动给奖
+        isauto = 1,     --??????
         title   = "#{XFFL_250522_32}",
         targettext="#{XFFL_250522_33}",
         jingdu  = "#{XFFL_250522_25}",
@@ -68,7 +68,7 @@ local g_XinfuFanli_MainDian_info = {
         target = 4,
         fanli  = 10, 
         maxcount= 0,
-        isauto = 1,     --是否自动给奖
+        isauto = 1,     --??????
         title   = "#{XFFL_250522_34}",
         targettext="#{XFFL_250522_35}",
         jingdu  = "#{XFFL_250522_25}",
@@ -78,11 +78,11 @@ local g_XinfuFanli_MainDian_info = {
     },
     [6] = {
         cxid   = 6,
-        target = 350,   --日活跃350
+        target = 350,   --???350
         fanli  = 0, 
         maxcount= 4,
         itemidx = 1,
-        isauto = 0,     --是否自动给奖
+        isauto = 0,     --??????
         title   = "#{XFFL_250522_44}",
         targettext="#{XFFL_250522_43}",
         jingdu  = "#{XFFL_250522_25}",
@@ -173,7 +173,7 @@ function XinfuFanLi_Shop_UpdateShop()
         else
             limitnum = 0
         end 
-        -- 道具展示区域
+        -- 道具牴示区域
 	    local theAction = DataPool:CreateBindActionItemForShow(itemid, itemnum)
 	    if theAction:GetID() ~= 0 then
             bar1:GetSubItem("XinfuFanli_Shop_Item1"):SetActionItem(theAction:GetID())
@@ -250,7 +250,7 @@ function XinfuFanLi_Shop_UpdateMainDian()
         if maidianinfo.lingqu == 1 or (maidianinfo.lingqucount>=g_XinfuFanli_MainDian_info[i].maxcount and g_XinfuFanli_MainDian_info[i].maxcount > 0) then 
             bar1:GetSubItem("XinfuFanli_Shop_Task1_Button"):SetText(g_XinfuFanli_MainDian_info[i].yilingqu)  
             bar1:GetSubItem("XinfuFanli_Shop_Task1_Button"):Disable()
-        elseif maidianinfo.curcount >= g_XinfuFanli_MainDian_info[i].target then  --完成未领取
+        elseif maidianinfo.curcount >= g_XinfuFanli_MainDian_info[i].target then  --?????
             bar1:GetSubItem("XinfuFanli_Shop_Task1_Button"):SetText(g_XinfuFanli_MainDian_info[i].wancheng)  
             bar1:GetSubItem("XinfuFanli_Shop_Task1_Button"):Enable() 
             bar1:GetSubItem("XinfuFanli_Shop_Task1_Button"):SetEvent("MouseLClick", string.format("XinfuFanli_MainDian_LingQu(%d)", i))   
@@ -264,7 +264,7 @@ function XinfuFanLi_Shop_UpdateMainDian()
 		g_XinfuFanli_MainDian_listitem[i] = bar1
     end
     
-    --每日部分
+    --每葼部分
     local maidianinfo = g_SelfData_info.maidian[g_XinfuFanli_MainDian_info[6].cxid]   
     XinfuFanli_Shop_Task2_WeekText:SetText("#{XFFL_250522_52}") 
     XinfuFanli_Shop_Task2:SetText(ScriptGlobal_Format(g_XinfuFanli_MainDian_info[6].jingdu,maidianinfo.lingqucount,g_XinfuFanli_MainDian_info[6].maxcount))      
@@ -279,7 +279,7 @@ function XinfuFanLi_Shop_UpdateMainDian()
         XinfuFanli_Shop_Task2_ButtonNULL:SetProperty("Image","set:ZNQ_ChouJiang image:ZNQ_ChouJiang_YLQ_BK")  
         XinfuFanli_Shop_Task2_Button:Hide()
         XinfuFanli_Shop_Task2_ButtonNULL:Show()
-    elseif maidianinfo.curcount >= g_XinfuFanli_MainDian_info[6].target then  --完成未领取
+    elseif maidianinfo.curcount >= g_XinfuFanli_MainDian_info[6].target then  --?????
         XinfuFanli_Shop_Task2_ButtonNULL:Hide()
         XinfuFanli_Shop_Task2_Button:Show()  
         XinfuFanli_Shop_Task1_Button_Tips:Show()
@@ -289,7 +289,7 @@ function XinfuFanLi_Shop_UpdateMainDian()
         XinfuFanli_Shop_Task2_Button:Hide()  
         XinfuFanli_Shop_Task2_ButtonNULL:Show()
     end 
-    --收尾    
+    --薁尾    
     XinfuFanli_Shop_Task1_TitleText:SetText(ScriptGlobal_Format("#{XFFL_250522_26}",g_SelfData_info.maidian[2].curcount,2000))
     XinfuFanli_Shop_Task2_TitleText:SetText(ScriptGlobal_Format("#{XFFL_250522_30}",g_SelfData_info.maidian[3].curcount,2000))  
     XinfuFanli_Shop_Task1_TitleText:Show()
@@ -304,7 +304,7 @@ function XinfuFanli_Shop_ResetPos()
 	XinfuFanli_Shop_Frame:SetProperty("UnifiedXPosition", g_XinfuFanli_Shop_Frame_UnifiedXPosition);
 	XinfuFanli_Shop_Frame:SetProperty("UnifiedYPosition", g_XinfuFanli_Shop_Frame_UnifiedYPosition); 
 end 
---关闭
+--关睜
 function XinfuFanli_Shop_Hidden()
     XinfuFanli_Shop_Close()
 end

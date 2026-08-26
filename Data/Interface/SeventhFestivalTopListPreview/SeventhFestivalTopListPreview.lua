@@ -271,7 +271,7 @@ function SeventhFestivalTopListPreview_YuLan()
 	end
 	
 	if g_SeventhFestivalTopListPreview_CurPage == 3 then
-		PushEvent("OPEN_DRESSPREVIEW", 10125785, 98, 68) --时装\发型\脸型
+		PushEvent("OPEN_DRESSPREVIEW", 10125785, 98, 68) --??\??\??
 	end
 
 end

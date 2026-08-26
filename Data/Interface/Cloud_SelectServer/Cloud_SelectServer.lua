@@ -12,12 +12,12 @@ local CriticalSpeed3 =1000
 
 local CriticalSpeed =200;
 local CurPage = 0
-local NetSpeed ={"#e010101ÍøÂçËÙ¶È:#c4CFA4CÁ¼ºÃ","#e010101ÍøÂçËÙ¶È:#cff0000·±Ã¦","#e010101ÍøÂçËÙ¶È:Î´Öª", "#e010101ÍøÂçËÙ¶È:#cff0000Óµ¶Â" }
+local NetSpeed ={"#e010101internet t¯c ğµ: #c4CFA4Ct¯t bøng","#e010101internet t¯c ğµ: #cff0000b§n rµn","#e010101internet t¯c ğµ: Không biªt", "#e010101internet t¯c ğµ: #cff0000œng Ğ±" }
 local PageSize = 24
 
 -- ÇøÓò°´Å¥µÄ¸öÊı
 local LOGIN_SERVER_AREA_COUNT = 20;
---Ä¿Ç°ÓĞĞ§µÄÇøÓò°´Å¥¸öÊı£¬ÓÉÓÚ½çÃæ¸Ä¶¯Ì«´ó£¬ÅÂÒÔºóÓĞÈËÓÖ·´»Ú£¬¼ÓÕâ¸ö±äÁ¿£¬Ö÷ÒªÊÇ²»ÏëÈ¥µô·­Ò³´úÂë¡£
+--Ä¿Ç°ÓĞĞ§µÄÇøÓò°´Å¥¸öÊı£¬ÓÉÓÚ½çÃæ¸Ä¶¯Ì«´ó£¬ÅÂÒÔºóÓĞÈËÓÖ·´»Ú£¬¼Ó â¸ö±äÁ¿£¬Ö÷ÒªÊÇ²»ÏëÈ¥µô·­Ò³´úÂë¡£
 local EFFECT_LOGIN_SERVER_AREA_COUNT = 20;
 -- ÇøÓò°´Å¥
 local g_CloudBnArea = {};
@@ -158,7 +158,7 @@ end
 
 function Cloud_SelectServer_OnLoad()
 
-	--ÆÕÍ¨·şÎñÆ÷ÁĞ±í
+	--Æ Í¨·şÎñÆ÷ÁĞ±í
 	g_CloudBnLoginServer[1] = Cloud_SelectServer_AreaPage_AllSelect1;
 	g_CloudBnLoginServer[2] = Cloud_SelectServer_AreaPage_AllSelect2;
 	g_CloudBnLoginServer[3] = Cloud_SelectServer_AreaPage_AllSelect3;
@@ -245,7 +245,7 @@ function Cloud_SelectServer_OnEvent(event)
 		end
 	end
 	
-	-- ¹Ø±Õ½çÃæ
+	-- ¹Ø± ½çÃæ
 	if( event == "GAMELOGIN_CLOSE_SELECT_SERVER") then
 		this:Hide();
 		return;
@@ -294,12 +294,12 @@ function Cloud_SelectServer_OnEvent(event)
 					--end
 				end
 			else
-				Cloud_SelectServer_AreaPage_RecommendSelectLast:SetText("ÎŞ");
+				Cloud_SelectServer_AreaPage_RecommendSelectLast:SetText("Vô");
 				--SelectServer_Server_Last:SetCheck(0);
 				Cloud_SelectServer_AreaPage_RecommendSelectLast:Disable();
 			end
 		else
-			Cloud_SelectServer_AreaPage_RecommendSelectLast:SetText("ÎŞ");
+			Cloud_SelectServer_AreaPage_RecommendSelectLast:SetText("Vô");
 			--SelectServer_Server_Last:SetCheck(0);
 			Cloud_SelectServer_AreaPage_RecommendSelectLast:Disable();
 		end
@@ -324,7 +324,7 @@ end
 --ËÑË÷°´Å¥
 function Cloud_SelectServer_SearchOK_Clicked()
 	local szSearchName = Cloud_SelectServer_SearchName:GetText();
-	--È¥³ı×Ö·û´®Ê×Î²µÄ¿Õ¸ñ
+	--È¥³ı×Ö·û´®Ê×Î²µÄ¿ ¸ñ
 	szSearchName = string.gsub(szSearchName, "^%s*(.-)%s*$", "%1");
 	Cloud_SelectServer_SearchName:SetText(szSearchName)
 	if (szSearchName == "") then
@@ -338,7 +338,7 @@ function Cloud_SelectServer_SearchOK_Clicked()
 	end
 	g_Cloud_Search_CurLoginServerCount = iSearchServerCount;
 			
-	--ÏÔÊ¾Ö®Ç°½«µ±Ç°Ñ¡ÔñÈ«²¿Çå¿Õ
+	--ÏÔÊ¾Ö®Ç°½«µ±Ç°Ñ¡ÔñÈ«²¿Çå¿ 
 	g_iCurSelArea = -1;
 	g_iCurSelLoginServer = -1;
 	g_iCurComSelLoginServer = -1;
@@ -351,7 +351,7 @@ function Cloud_SelectServer_SearchReflash_Click()
 	GameProduceLogin:LoadLaunch();
 end
 
---ÉêÇëÕÊºÅ
+--ÉêÇë ÊºÅ
 function Cloud_SelectServer_AccountReg()
 	GameProduceLogin:StartAccountReg()
 end
@@ -404,7 +404,7 @@ function Cloud_SelectServer_AddAllAreaButton()
    	return
   end
   	
-  bar1:GetSubItem("Cloud_SelectServer_AreaSelect"):SetText( "ÍÆ¼ö·şÎñÆ÷" );
+  bar1:GetSubItem("Cloud_SelectServer_AreaSelect"):SetText( "Ğ« cØ phøc vø Khí" );
   bar1:SetEvent( "MouseLClick", string.format("Cloud_SelectServer_ShowRecommandPage()"))
   g_RecommandAreaButton = bar1:GetSubItem("Cloud_SelectServer_AreaSelect");
   	
@@ -422,7 +422,7 @@ function Cloud_SelectServer_AddAllAreaButton()
   	
 end
 
---ÏÔÊ¾ÆÕÍ¨·şÎñÆ÷: iPage(0~)
+--ÏÔÊ¾Æ Í¨·şÎñÆ÷: iPage(0~)
 function Cloud_SelectServer_ShowNormalAreaPage( index, iPage )
 	
 	Cloud_SelectServer_AreaPage_AllClient:Show();
@@ -486,7 +486,7 @@ function Cloud_SelectServer_ShowNormalAreaPage( index, iPage )
 		local strName = g_LoginServerName[iBegin+i];
 
 		if(g_LoginServerIsNew[iBegin+i]==1)then
-			strName = strName.."(ĞÂ)";
+			strName = strName.."(Tân)";
 		end;
 
 		if(0 == g_LoginServerStatus[iBegin+i]) then
@@ -579,14 +579,14 @@ function Cloud_SelectServer_ShowRecommandPage()
 		local tmpAreaName = GameProduceLogin:GetServerAreaName(g_CommendableLoginServerAreaIndex[i]);
 		local _i = string.find(tmpAreaName,"-");
 		if(_i~=nil and _i<string.len(tmpAreaName)) then
-			if(string.sub(tmpAreaName,1,_i-1)=="¹«²â" or string.sub(tmpAreaName,1,_i-1)=="ÍøÍ¨")then
+			if(string.sub(tmpAreaName,1,_i-1)=="Công Tr¡c" or string.sub(tmpAreaName,1,_i-1)=="Võng Thông")then
 				tmpAreaName = string.sub(tmpAreaName,_i+1);
 			end
 		end
 		
 		strName =tmpAreaName.."-"..g_CommendableLoginServerName[i];
 		if(g_CommendableLoginServerIsNew[i]~=0)then
-			strName =strName.."(ĞÂ)";
+			strName =strName.."(Tân)";
 		end
 		if(0 == g_CommendableLoginServerStatus[i]) then
 			strName = "#cff0000#e010101"..strName.."#cffffff";
@@ -656,7 +656,7 @@ function Cloud_SelectServer_ShowSearchPage( iPage )
 		local strName = g_SearchServerName[iBegin+i];
 
 		if(g_SearchServerIsNew[iBegin+i]==1)then
-			strName = strName.."(ĞÂ)";
+			strName = strName.."(Tân)";
 		end;
 
 		if(0 == g_SearchServerStatus[iBegin+i]) then
@@ -718,7 +718,7 @@ function Cloud_SelectServer_UpdateSearchPageStatus()
 	Cloud_SelectServer_SearchSelectCurrently:SetText( strPage );
 end
 
---ÆÕÍ¨·şÎñÆ÷µã»÷ÊÂ¼ş
+--Æ Í¨·şÎñÆ÷µã»÷ÊÂ¼ş
 function Cloud_SelectServer_AllSelect_Click( index )
 
 	if g_Cloud_CurShowAreaIndex == nil or g_AreaIndex[g_Cloud_CurShowAreaIndex] == nil then
@@ -795,7 +795,7 @@ end
 function Cloud_SelectServer_GetServerInfo()
 
 	 	local iCurAreaCount = GameProduceLogin:GetServerAreaCount();
-	 	local strAreaName = "ÎŞ·şÎñÆ÷";
+	 	local strAreaName = "Không có máy chü";
 		local iLoginServerCount = -1;
 		local ServerName;
 		local ServerStatus;
@@ -815,7 +815,7 @@ function Cloud_SelectServer_GetServerInfo()
 	 		-- µÃµ½ÇøÓòÃû×Ö.
 			local i = string.find(areaname,"-");
 			if(i~=nil and i<string.len(areaname)) then
-				if(string.sub(areaname,1,i-1)=="¹«²â" and nomalindex< EFFECT_LOGIN_SERVER_AREA_COUNT) then
+				if(string.sub(areaname,1,i-1)=="Công Tr¡c" and nomalindex< EFFECT_LOGIN_SERVER_AREA_COUNT) then
 					nomalindex = nomalindex +1;
 	 				g_AreaName[nomalindex] = string.sub(areaname,i+1);
 					g_AreaDis[nomalindex] = GameProduceLogin:GetServerAreaDis(index);

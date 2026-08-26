@@ -47,11 +47,11 @@ function EquipEnchange_OnEvent(event)
 			EquipEnchange_SelfMoney:SetProperty("MoneyNumber", playerMoney);
 			EquipEnchange_SelfJiaozi:SetProperty("MoneyNumber", Player:GetData("MONEY_JZ")); --zchw
 			if tonumber(arg0) == 1003 then
-				EquipEnchange_Info4  : SetText("ÌáÉý×°±¸µÈ¼¶Ö®ºó¿ÉÒÔÌáÉý»ù´¡ÊôÐÔ")
-				EquipEnchange_Info : SetText("Çë½«×°±¸ÍÏÈë´Ë¿ò")
-				EquipEnchange_Info2 : SetText("ÌáÉýµÈ¼¶ÐèÒª")
-				EquipEnchange_Title : SetText("#gFF0FA0ÌáÉý×°±¸µÈ¼¶")
-				EquipEnchange_Object2 : SetToolTip("ÐèÒª#{_ITEM30900008}")
+				EquipEnchange_Info4  : SetText("Tång lên trang b¸ c¤p b§c lúc sau có th¬ tång lên trø cµt thuµc tính")
+				EquipEnchange_Info : SetText("Thïnh Tß¾ng trang b¸ kéo vào ThØ Khuông")
+				EquipEnchange_Info2 : SetText("Tång lên c¤p b§c c¥n")
+				EquipEnchange_Title : SetText("#gFF0FA0tång lên trang b¸ c¤p b§c")
+				EquipEnchange_Object2 : SetToolTip("C¥n#{_ITEM30900008}")
 				Current = 3
 				if this:IsVisible() then
 					EquipEnchange_Close();
@@ -63,16 +63,16 @@ function EquipEnchange_OnEvent(event)
 				objCared = DataPool : GetNPCIDByServerID(xx);
 				AxTrace(0,1,"xx="..xx .. " objCared="..objCared)
 				if objCared == -1 then
-						PushDebugMessage("server´«¹ýÀ´µÄÊý¾ÝÓÐÎÊÌâ¡£");
+						PushDebugMessage("Dæ li®u máy chü có v¤n ð«");
 						return;
 				end
 				BeginCareObject_EquipEnchange(objCared)
 			elseif tonumber(arg0) == 1004 then
 				EquipEnchange_Info4  : SetText("")
-				EquipEnchange_Info : SetText("Çë·ÅÈëÐèÒªÔö¼Ó¿ÉÐÞÀí´ÎÊýµÄ×°±¸")
-				EquipEnchange_Info2 : SetText("ÐèÒªÌØÊâ²ÄÁÏ")
-				EquipEnchange_Title : SetText("#gFF0FA0Ôö¼Ó¿ÉÐÞÀí´ÎÊý")
-				EquipEnchange_Object2 : SetToolTip("ÐèÒª#{_ITEM30900007}")
+				EquipEnchange_Info : SetText("Thïnh ð¬ vào c¥n gia tång Khä sØa chæa s¯ l¥n Ðích trang b¸")
+				EquipEnchange_Info2 : SetText("C¥n ð£c thù tài li®u")
+				EquipEnchange_Title : SetText("#gFF0FA0gia tång Khä sØa chæa s¯ l¥n")
+				EquipEnchange_Object2 : SetToolTip("C¥n#{_ITEM30900007}")
 				Current = 4
 				if this:IsVisible() then
 					EquipEnchange_Close();
@@ -85,7 +85,7 @@ function EquipEnchange_OnEvent(event)
 					objCared = DataPool : GetNPCIDByServerID(xx);
 					AxTrace(0,1,"xx="..xx .. " objCared="..objCared)
 					if objCared == -1 then
-							PushDebugMessage("server´«¹ýÀ´µÄÊý¾ÝÓÐÎÊÌâ¡£");
+							PushDebugMessage("Dæ li®u máy chü có v¤n ð«");
 							return;
 					end
 					BeginCareObject_EquipEnchange(objCared)
@@ -112,7 +112,7 @@ function EquipEnchange_OnEvent(event)
 			return;
 		end
 		
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			
 			--È¡Ïû¹ØÐÄ
@@ -183,13 +183,13 @@ function EquipEnchange_Update(UI_index,Item_index)
 				local EquipPoint = LifeAbility : Get_Equip_Point(i_index)
 				if EquipPoint == -1 or EquipPoint == 8 or EquipPoint == 9 or EquipPoint == 10 or EquipPoint == 18 then
 					if EquipPoint ~= -1 then
-						PushDebugMessage("²»ÄÜ·ÅÈëÕâÖÖ×°±¸¡£")
+						PushDebugMessage("Không th¬ ð£t trang b¸ này vào")
 					end
 					return
 				end
 				
 				if EquipPoint >= 19 and EquipPoint <= 24 then
-					PushDebugMessage("²»ÄÜ·ÅÈëÕâÖÖ×°±¸¡£")
+					PushDebugMessage("Không th¬ ð£t trang b¸ này vào")
 					return
 				end
 			
@@ -214,9 +214,9 @@ function EquipEnchange_Update(UI_index,Item_index)
 				if Current == 2 then
 					local Equip_Level = LifeAbility : Get_Equip_Level(i_index);
 						if Equip_Level < 40 then
-							EquipEnchange_Object2 : SetToolTip("ÐèÒª#{_ITEM30900005}¡£")
+							EquipEnchange_Object2 : SetToolTip("C¥n#{_ITEM30900005}.")
 						else
-							EquipEnchange_Object2 : SetToolTip("ÐèÒª#{_ITEM30900006}¡£")
+							EquipEnchange_Object2 : SetToolTip("C¥n#{_ITEM30900006}.")
 						end
 				end
 		else
@@ -227,24 +227,24 @@ function EquipEnchange_Update(UI_index,Item_index)
 		end
 	elseif u_index == 2 then
 		if theAction:GetID() ~= 0 then
-				if Current == 2 then--×°±¸Ç¿»¯
+				if Current == 2 then--????
 					if PlayerPackage : GetItemTableIndex( i_index ) ~= 30900005 and
 						 PlayerPackage : GetItemTableIndex( i_index ) ~= 30900006 then
-						PushDebugMessage("ÕâÀï±ØÐë·ÅÈë#{_ITEM30900005}»òÕß#{_ITEM30900006}¡£")
+						PushDebugMessage("N½i này phäi ð¬ vào#{_ITEM30900005}ho£c là#{_ITEM30900006}.")
 						return
 					end
 				end
-				if Current == 3 then--×°±¸Éý¼¶
+				if Current == 3 then--????
 					if PlayerPackage : GetItemTableIndex( i_index ) ~= 30900008 then
-						PushDebugMessage("ÕâÀï±ØÐë·ÅÈë#{_ITEM30900008}¡£")
+						PushDebugMessage("N½i này phäi ð¬ vào#{_ITEM30900008}.")
 						return
 					end
 				end
-				if Current == 4 then--×°±¸ÄÍ¾Ã
+				if Current == 4 then--????
 					if PlayerPackage : GetItemTableIndex( i_index ) ~= 30900007 and
 						 PlayerPackage : GetItemTableIndex( i_index ) ~= 30900000 and
 						 PlayerPackage : GetItemTableIndex( i_index ) ~= 31000102	then
-						PushDebugMessage("ÕâÀï±ØÐë·ÅÈë#{_ITEM30900007}»òÕß#{_ITEM30900000}»òÕß#{_ITEM31000102}¡£")
+						PushDebugMessage("N½i này phäi ð¬ vào#{_ITEM30900007}ho£c là#{_ITEM30900000}ho£c là#{_ITEM31000102}.")
 						return
 					end
 				end
@@ -265,13 +265,13 @@ end
 
 function EquipEnchange_Buttons_Clicked()
 	if Enchange_Item1 == -1 then
-		PushDebugMessage("Çë·ÅÈëÒ»¸ö×°±¸¡£")
+		PushDebugMessage("Thïnh ð¬ vào mµt cái trang b¸.")
 		return
 	end
 	
-	if Current == 2 then--×°±¸Ç¿»¯
+	if Current == 2 then--????
 		if Enchange_Item2 == -1 then
-			PushDebugMessage("Çë·ÅÈë#{_ITEM30900005}»òÕß#{_ITEM30900006}¡£")
+			PushDebugMessage("Thïnh ð¬ vào#{_ITEM30900005}ho£c là#{_ITEM30900006}.")
 			return
 		end
 			Clear_XSCRIPT();
@@ -281,9 +281,9 @@ function EquipEnchange_Buttons_Clicked()
 				Set_XSCRIPT_Parameter(1,Enchange_Item2);
 				Set_XSCRIPT_ParamCount(2);
 			Send_XSCRIPT();
-	elseif Current == 3 then--×°±¸Éý¼¶
+	elseif Current == 3 then--????
 		if Enchange_Item2 == -1 then
-			PushDebugMessage("Çë·ÅÈë#{_ITEM30900008}¡£")
+			PushDebugMessage("Thïnh ð¬ vào#{_ITEM30900008}.")
 			return
 		end
 			Clear_XSCRIPT();
@@ -293,9 +293,9 @@ function EquipEnchange_Buttons_Clicked()
 				Set_XSCRIPT_Parameter(1,Enchange_Item2);
 				Set_XSCRIPT_ParamCount(2);
 			Send_XSCRIPT();
-	elseif Current == 4 then--×°±¸ÄÍ¾Ã
+	elseif Current == 4 then--????
 		if Enchange_Item2 == -1 then
-			PushDebugMessage("Çë·ÅÈë#{_ITEM30900007}¡£")
+			PushDebugMessage("Thïnh ð¬ vào#{_ITEM30900007}.")
 			return
 		end
 			Clear_XSCRIPT();
@@ -324,7 +324,7 @@ function EquipEnchange_OnHiden()
 end
 --=========================================================
 --¿ªÊ¼¹ØÐÄNPC£¬
---ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
 --Èç¹ûÓÐµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓÐµÄ¡°¹ØÐÄ¡±
 --=========================================================
 function BeginCareObject_EquipEnchange(objCaredId)

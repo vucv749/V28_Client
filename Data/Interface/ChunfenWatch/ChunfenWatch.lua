@@ -1,7 +1,7 @@
 --春之计划-转盘票领取脚本(客户端)
 
-local g_TicketGainCount = 0		--当前领取次数
-local g_Controls = {} 			--控件列表
+local g_TicketGainCount = 0		--??????
+local g_Controls = {} 			--????
 local g_Frame_UnifiedPosition = "";
 
 function ChunfenWatch_PreLoad()
@@ -29,7 +29,7 @@ function  ChunfenWatch_OnEvent(event)
 	if ( event == "UI_COMMAND" and tonumber(arg0) == 892675 ) then
 			local nGainTicketCount = Get_XParam_INT(0)
 			local nDownTick = Get_XParam_INT(1)
-			local nOperate = Get_XParam_INT(2) --1更新并显示 0隐藏
+			local nOperate = Get_XParam_INT(2) --1????? 0??
 			g_TicketGainCount = nGainTicketCount
 			if nOperate == 2 then
 				--最后一次领奖

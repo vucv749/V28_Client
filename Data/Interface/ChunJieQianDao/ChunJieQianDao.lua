@@ -1,13 +1,13 @@
---2022Q1春节日历
+--2022Q1春节葼历
 local g_Frame_UnifiedPosition = nil
 local g_ExeScript = 892975
 local g_UICOMMAND = 89297501
 -----------------------
 local g_BitNum = 28
---0~10位 迎春日历 每日勾画
---11位 今日是否勾画了
---12~25位 新春日历 每日签到
---26位 新春日历 每日补签
+--0~10位 迎春葼历 每葼勾画
+--11位 今葼是否勾画了
+--12~25位 新春葼历 每葼签到
+--26位 新春葼历 每葼补签
 --27位 春节毛笔
 local g_BitTable = {}
 local g_Index_YingChunFlag_Begin = 1
@@ -337,9 +337,9 @@ function ChunJieQianDao_OnClickPage1Tag()
     end
     Clear_XSCRIPT()
     Set_XSCRIPT_Function_Name( "OnOpenUI" ); 	
-    Set_XSCRIPT_ScriptID( 892975 );						-- 脚本编号
+    Set_XSCRIPT_ScriptID( 892975 );						-- ????
     Set_XSCRIPT_Parameter( 0, 1 )
-    Set_XSCRIPT_ParamCount( 1 );						-- 参数个数
+    Set_XSCRIPT_ParamCount( 1 );						-- ????
     Send_XSCRIPT()
 end
 
@@ -349,9 +349,9 @@ function ChunJieQianDao_OnClickPage2Tag()
     end
     Clear_XSCRIPT()
     Set_XSCRIPT_Function_Name( "OnOpenUI" ); 	
-    Set_XSCRIPT_ScriptID( 892975 );						-- 脚本编号
+    Set_XSCRIPT_ScriptID( 892975 );						-- ????
     Set_XSCRIPT_Parameter( 0, 2 )
-    Set_XSCRIPT_ParamCount( 1 );						-- 参数个数
+    Set_XSCRIPT_ParamCount( 1 );						-- ????
     Send_XSCRIPT()
 end
 

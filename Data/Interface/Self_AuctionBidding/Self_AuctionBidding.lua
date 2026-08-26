@@ -223,8 +223,8 @@ function Self_AuctionBidding_TimeOut()
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name("OpenBidUI")
 		Set_XSCRIPT_ScriptID(999799)
-		Set_XSCRIPT_Parameter(0, 0)								--打开
-		Set_XSCRIPT_Parameter(1, tonumber(g_CurlId))		--索引
+		Set_XSCRIPT_Parameter(0, 0)								--??
+		Set_XSCRIPT_Parameter(1, tonumber(g_CurlId))		--??
 		Set_XSCRIPT_Parameter(2, 2)
 		Set_XSCRIPT_ParamCount(3)
 	Send_XSCRIPT()
@@ -397,8 +397,8 @@ function Self_AuctionBidding_Refresh()
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name("OpenBidUI")
 		Set_XSCRIPT_ScriptID(999799)
-		Set_XSCRIPT_Parameter(0, 0)								--打开
-		Set_XSCRIPT_Parameter(1, tonumber(g_CurlId))		--索引
+		Set_XSCRIPT_Parameter(0, 0)								--??
+		Set_XSCRIPT_Parameter(1, tonumber(g_CurlId))		--??
 		Set_XSCRIPT_Parameter(2, 1)
 		Set_XSCRIPT_ParamCount(3)
 	Send_XSCRIPT()
@@ -442,8 +442,8 @@ function Self_AuctionBidding_DoBidding()
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name("NewBidding")
 		Set_XSCRIPT_ScriptID(999799)
-		Set_XSCRIPT_Parameter(0, tonumber(g_CurlId))		--索引
-		Set_XSCRIPT_Parameter(1, tonumber(nString))				--索引
+		Set_XSCRIPT_Parameter(0, tonumber(g_CurlId))		--??
+		Set_XSCRIPT_Parameter(1, tonumber(nString))				--??
 		Set_XSCRIPT_ParamCount(2)
 	Send_XSCRIPT()
 end

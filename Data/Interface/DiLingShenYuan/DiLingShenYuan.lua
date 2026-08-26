@@ -1,6 +1,6 @@
--- 帝陵深渊场景信息展示UI
+-- 帝陵深渊场景信息牴示UI
 
--- UI展开、关闭标记
+-- UI牴开、关睜标记
 local DiLingShenYuan_OpenFlag = 1
 
 -- 默认位置
@@ -10,8 +10,8 @@ function DiLingShenYuan_PreLoad()
     this:RegisterEvent("DLZXPVP_DLSYSCENEINFO", true)
     this:RegisterEvent("DLZXPVP_DLSYUPDATEOPENFLAG", true)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end -- end func DiLingShenYuan_PreLoad()
 
 function DiLingShenYuan_OnEvent(event)

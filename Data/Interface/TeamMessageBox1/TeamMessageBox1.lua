@@ -184,37 +184,37 @@ function TeamMessageBox_Show_Message(strInviter, strDesName, strInvZoneWorldID, 
 	local strMenPai
 
 	if(0 == menpai) then
-		strMenPai = "ÉÙÁÖ";
+		strMenPai = "Thiªu Lâm";
 
 		elseif(1 == menpai) then
-			strMenPai = "Ã÷½Ì";
+			strMenPai = "Minh Giáo";
 
 		elseif(2 == menpai) then
-			strMenPai = "Ø¤°ï";
+			strMenPai = "Cái Bang";
 
 		elseif(3 == menpai) then
-			strMenPai = "Îäµ±";
+			strMenPai = "Võ Ğang";
 
 		elseif(4 == menpai) then
-			strMenPai = "¶ëáÒ";
+			strMenPai = "Nga Mi";
 
 		elseif(5 == menpai) then
-			strMenPai = "ĞÇËŞ";
+			strMenPai = "Tinh Túc";
 
 		elseif(6 == menpai) then
-			strMenPai = "ÌìÁú";
+			strMenPai = "Thiên Long";
 
 		elseif(7 == menpai) then
-			strMenPai = "ÌìÉ½";
+			strMenPai = "Thiên S½n";
 
 		elseif(8 == menpai) then
-			strMenPai = "åĞÒ£";
+			strMenPai = "Tiêu dao";
 
 		elseif(10== menpai) then
-			strMenPai = "ÂüÍÓÉ½×¯";
+			strMenPai = "MÕn Ğà S½n Trang";
 
 	else
-		strMenPai = "ÎŞÃÅÅÉ";
+		strMenPai = "Tñ do";
 	end
 
 
@@ -226,20 +226,20 @@ function TeamMessageBox_Show_Message(strInviter, strDesName, strInvZoneWorldID, 
 	this:Show();
 	g_Frame[indexMess]:Show();
 
-    local invZoneWorldID  = tonumber( strInvZoneWorldID )   --- ÑûÇëÕßµÄZoneWorldID
-    local desZoneWorldID  = tonumber( strDesZoneWorldID )   --- ±»ÑûÇëÕßµÄZoneWorldID
-    local selfZoneWorldID = DataPool:GetSelfZoneWorldID()   --- ¶Ó³¤µÄZoneWorldID
+    local invZoneWorldID  = tonumber( strInvZoneWorldID )   --- ????ZoneWorldID
+    local desZoneWorldID  = tonumber( strDesZoneWorldID )   --- ?????ZoneWorldID
+    local selfZoneWorldID = DataPool:GetSelfZoneWorldID()   --- ???ZoneWorldID
 
-    --- Èç¹ûÑûÇëÕßºÍ¶Ó³¤²»ÔÚÍ¬Ò»·şÎñÆ÷£¬ÒªÏÔÊ¾ÑûÇëÕßµÄ·şÎñÆ÷Ãû
+    --- Èç¹ûÑûÇë ßºÍ¶Ó³¤²»ÔÚÍ¬Ò»·şÎñÆ÷£¬ÒªÏÔÊ¾ÑûÇë ßµÄ·şÎñÆ÷Ãû
     if invZoneWorldID ~= selfZoneWorldID and selfZoneWorldID ~= -1 and invZoneWorldID ~= 0 and invZoneWorldID ~= -1 then
         strInviter = strInviter .. "@" .. DataPool:GetServerName( invZoneWorldID )
     end
 
-    --- Èç¹û±»ÑûÇëÕßºÍ¶Ó³¤²»ÔÚÍ¬Ò»·şÎñÆ÷£¬ÒªÏÔÊ¾±»ÑûÇëÕßµÄ·şÎñÆ÷Ãû
+    --- Èç¹û±»ÑûÇë ßºÍ¶Ó³¤²»ÔÚÍ¬Ò»·şÎñÆ÷£¬ÒªÏÔÊ¾±»ÑûÇë ßµÄ·şÎñÆ÷Ãû
     if desZoneWorldID ~= selfZoneWorldID and selfZoneWorldID ~= -1 and desZoneWorldID ~= 0 and desZoneWorldID ~= -1 then
         strDesName = strDesName .. "@" .. DataPool:GetServerName( desZoneWorldID )
     end
 	local strShowInfo ="";
-	strShowInfo ="#R" ..strInviter.. "#cfff263ÑûÇë#R" .. strDesName .. "#G["..strDesLevel.."¼¶"..strMenPai.."]#cfff263¼ÓÈë¶ÓÎé£¬Í¬ÒâÂğ£¿";
+	strShowInfo ="#R" ..strInviter.. "#cfff263m¶i#R" .. strDesName .. "#G["..strDesLevel.."C¤p"..strMenPai.."]#cfff263gia nh§p ğµi ngû, ğ°ng ı Ma?";
 	g_ShowText[indexMess]:SetText(strShowInfo);
 end

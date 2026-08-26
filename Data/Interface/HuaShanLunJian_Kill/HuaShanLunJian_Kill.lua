@@ -57,7 +57,7 @@ function HuaShanLunJian_Kill_OnEvent(event)
 		-- HuaShanLunJian_Kill_Right_HeadIcon:SetProperty("Image", tostring(XBW:LuaGetPortraitInfo(tonumber(arg5))));	
 		SetTimer("HuaShanLunJian_Kill","HuaShanLunJian_Kill_Timer()", 1*1000)
 		this:Show()
-		if tonumber(arg3) == 0 then -- Ê×É±
+		if tonumber(arg3) == 0 then -- ??
 			HuaShanLunJian_Kill_FirstKill:Show()
 			HuaShanLunJian_Kill_Middle:Hide()
 		else

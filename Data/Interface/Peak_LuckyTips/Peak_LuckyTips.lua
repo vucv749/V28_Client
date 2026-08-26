@@ -27,7 +27,7 @@ function Peak_LuckyTips_OnEvent(event)
 
             Peak_LuckyTips_Text:SetText(g_Peak_LuckyTips_text[type])
             KillTimer("Peak_LuckyTips_Timer()")
-            SetTimer("Peak_LuckyTips","Peak_LuckyTips_Timer()", 5000);--计时
+            SetTimer("Peak_LuckyTips","Peak_LuckyTips_Timer()", 5000);--???
             this:Show()	
         end
 		

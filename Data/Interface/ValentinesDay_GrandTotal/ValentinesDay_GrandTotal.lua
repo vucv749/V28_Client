@@ -8,10 +8,10 @@ local ValentinesDay_GrandTotal_Animates = {}
 local ValentinesDay_GrandTotal_Marks = {}
 
 local ValentinesDay_GrandTotal_Reward = {
-	[1] = {itemid = 20310168, itemcount=8, times = 8},--金蚕丝*8
-	[2] = {itemid = 50313004, itemcount=1, times = 15},--红宝石3级
-	[3] = {itemid = 20501003, itemcount=1, times = 25},--3级棉布
-	[4] = {itemid = 20502003, itemcount=1, times = 40}	--3级秘银
+	[1] = {itemid = 20310168, itemcount=8, times = 8},--???*8
+	[2] = {itemid = 50313004, itemcount=1, times = 15},--???3?
+	[3] = {itemid = 20501003, itemcount=1, times = 25},--3???
+	[4] = {itemid = 20502003, itemcount=1, times = 40}	--3???
 }
 
 --=========================================================
@@ -143,14 +143,14 @@ function ValentinesDay_GrandTotal_Page1_OnClick(idx)
 end
 
 --=========================================================
--- 控件事件 - 关闭
+-- 控件事件 - 关睜
 --=========================================================
 function ValentinesDay_GrandTotal_Close()
 	ValentinesDay_GrandTotal_OnHiden()
 end
 
 --=========================================================
--- 界面关闭事件
+-- 界面关睜事件
 --=========================================================
 function ValentinesDay_GrandTotal_OnHiden()
 	this:Hide()

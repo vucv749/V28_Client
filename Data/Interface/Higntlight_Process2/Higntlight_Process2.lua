@@ -1,7 +1,7 @@
 local g_HigntlightProcess_Frame_UnifiedPosition;
 local g_NuHuoLianZhan = 1;
 local g_XiShanXingLv = 2;
---后续若有其他技能要添加 需要在这里做补充
+--后续若有其他技能要添加 需要在犫里做补充
 
 function Higntlight_Process2_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
@@ -26,7 +26,7 @@ end
 
 function Higntlight_Process2_OnEvent(event)
 	if event == "UI_COMMAND" then
-        --服务器端lua脚本调用 这里获得参数并处理
+        --服务器端lua脚本调用 犫里获得参数并处理
 	elseif event == "ON_SCENE_TRANS" then
 		--场景切换
 		Higntlight_Process2_Close();
@@ -57,7 +57,7 @@ end
 --设置UI
 function Higntlight_Process2_UpdateUI(tname,tskillType)
 	Higntlight_Process2_HideAllSkillTitle();
-	--后续若有其他技能要添加 需要在这里做补充
+	--后续若有其他技能要添加 需要在犫里做补充
     if tskillType == g_NuHuoLianZhan then
 		Higntlight_Process2_AnimateNuhuo:Show();
 		Higntlight_Process2_AnimateNuhuo:Play(true);
@@ -71,7 +71,7 @@ function Higntlight_Process2_UpdateUI(tname,tskillType)
 end
 --隐藏所有技能title
 function Higntlight_Process2_HideAllSkillTitle()
-	--后续若有其他技能要添加 需要在这里做补充
+	--后续若有其他技能要添加 需要在犫里做补充
 	Higntlight_Process2_TitleNuhuo:Hide();
 	Higntlight_Process2_TitleXishan:Hide();
 	
@@ -83,7 +83,7 @@ function Higntlight_Process2_OnHiden()
 	this:Hide()
 	Higntlight_Process2_HideAllSkillTitle();
 end
---关闭按钮
+--关睜按钮
 function Higntlight_Process2_Close()
 	this:Hide();
 	Higntlight_Process2_HideAllSkillTitle();

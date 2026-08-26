@@ -10,21 +10,21 @@ local g_objCared = -1
 local MAX_OBJ_DISTANCE = 3.0
 
 --OnLoad数据
-local WH_DanYinYaoCheng_ItemShow = {} --1X3格子 奖励展示
-local WH_DanYinYaoCheng_ItemAnimate = {} --1X3 进度奖励动画
-local WH_DanYinYaoCheng_Item = { --1X3格子 奖励
-    [1] = { Itemid = 20600002,num = 1},	----高级长春玉
-    [2] = { Itemid = 20501003,num = 1},	----3级棉布
-    [3] = { Itemid = 20502003,num = 1},	----3级秘银
+local WH_DanYinYaoCheng_ItemShow = {} --1X3?? ????
+local WH_DanYinYaoCheng_ItemAnimate = {} --1X3 ??????
+local WH_DanYinYaoCheng_Item = { --1X3?? ??
+    [1] = { Itemid = 20600002,num = 1},	----?????
+    [2] = { Itemid = 20501003,num = 1},	----3???
+    [3] = { Itemid = 20502003,num = 1},	----3???
 }
-local WH_DanYinYaoCheng_ItemList = {}  --奖励列表
-local WH_DanYinYaoCheng_Receive = {} --1X3格子 已领取
-local WH_DanYinYaoCheng_Advanced = {} --1X8格子 高级鸟
-local WH_DanYinYaoCheng_Advanced_Animate = {} --1X8格子 高级鸟 动画
+local WH_DanYinYaoCheng_ItemList = {}  --????
+local WH_DanYinYaoCheng_Receive = {} --1X3?? ???
+local WH_DanYinYaoCheng_Advanced = {} --1X8?? ???
+local WH_DanYinYaoCheng_Advanced_Animate = {} --1X8?? ??? ??
 local WH_DanYinYaoCheng_Text = nil
-local WH_DanYinYaoCheng_MaxNum = 14 --累计奖励的最大完成次数
+local WH_DanYinYaoCheng_MaxNum = 14 --???????????
 local WH_DanYinYaoCheng_NeedNum = { 3, 8 ,14 }
-local WH_DanYinYaoCheng_Award_OK = {} --奖励OK 奖励显示
+local WH_DanYinYaoCheng_Award_OK = {} --??OK ????
 local WH_DanYinYaoCheng_rewardMF = {}
 function WH_DanYinYaoCheng_PreLoad()
     this:RegisterEvent("UI_COMMAND",true)
@@ -95,7 +95,7 @@ function WH_DanYinYaoCheng_OnEvent(event)
 			return
         end
         
-		-- 如果和NPC的距离大于一定距离或者被删除，自动关闭
+		-- 如果和NPC的距离大于一定距离或犨被删除，自动关睜
         if(arg1 == "distance" and tonumber(arg2) > MAX_OBJ_DISTANCE or arg1=="destroy") then
             WH_DanYinYaoCheng_Close()
         end
@@ -124,7 +124,7 @@ function WH_DanYinYaoCheng_Open(accumulateTime,reward1MF,reward2MF,reward3MF)
     --进度条染色
     WH_DanYinYaoCheng_JinDuTiao(accumulateTime)
 
-    --展示物品
+    --牴示物品
 	for i = 1, 3, 1 do
 		local theAction = DataPool:CreateBindActionItemForShow(WH_DanYinYaoCheng_Item[i].Itemid, WH_DanYinYaoCheng_Item[i].num)
 		if theAction:GetID() ~= 0 then

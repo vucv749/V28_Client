@@ -1,8 +1,8 @@
 --!!!reloadscript =OtherRide
 local g_OtherRide_Frame_UnifiedPosition
-local g_CameraHeight = 1     --摄影机高度
-local g_CameraDistance = 2   --摄影机距离
-local g_CameraPitch = 3      --摄影机角度
+local g_CameraHeight = 1     --?????
+local g_CameraDistance = 2   --?????
+local g_CameraPitch = 3      --?????
 
 function OtherRide_PreLoad()
 	

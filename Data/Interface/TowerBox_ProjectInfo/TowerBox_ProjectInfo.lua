@@ -47,57 +47,57 @@ local g_towerbox_award = {
     [1] = {
         reward=1,
         list = {
-            {2,4,0,},                       -- 龙塔4层
+            {2,4,0,},                       -- ??4?
         }                        
     },
     [2] = {
         reward=2,
         list = {
-            {1,4,1,},                       -- 妖塔1号4层
-            {1,4,2,},                       -- 妖塔2号4层
-            {1,4,3,},                       -- 妖塔3号4层
+            {1,4,1,},                       -- ??1?4?
+            {1,4,2,},                       -- ??2?4?
+            {1,4,3,},                       -- ??3?4?
         }
     },
     [3] = {
         reward=2,
         list = {
-            {2,3,0},                        -- 龙塔3层
+            {2,3,0},                        -- ??3?
         }
     },
     [4] = {
         reward=3,
         list = {
-            {1,3,1,},                       -- 妖塔1号3层
-            {1,3,2,},                       -- 妖塔2号3层
-            {1,3,3,},                       -- 妖塔3号3层
+            {1,3,1,},                       -- ??1?3?
+            {1,3,2,},                       -- ??2?3?
+            {1,3,3,},                       -- ??3?3?
         }
     },
     [5] = {
         reward=3,
         list = {
-            {2,2,0},                        -- 龙塔2层
+            {2,2,0},                        -- ??2?
         }
     },
     [6] = {
         reward=4,
         list = {
-            {1,2,1,},                       -- 妖塔1号2层
-            {1,2,2,},                       -- 妖塔2号2层
-            {1,2,3,},                       -- 妖塔3号2层
+            {1,2,1,},                       -- ??1?2?
+            {1,2,2,},                       -- ??2?2?
+            {1,2,3,},                       -- ??3?2?
         }
     },
     [7] = {
         reward=4,
         list = {
-            {2,1,0},                        -- 龙塔1层
+            {2,1,0},                        -- ??1?
         }
     },
     [8] = {
         reward=5,
         list = {
-            {1,1,1,},                       -- 妖塔1号1层
-            {1,1,2,},                       -- 妖塔2号1层
-            {1,1,3,},                       -- 妖塔3号1层
+            {1,1,1,},                       -- ??1?1?
+            {1,1,2,},                       -- ??2?1?
+            {1,1,3,},                       -- ??3?1?
         }
     },
 }
@@ -139,8 +139,8 @@ function TowerBox_ProjectInfo_PreLoad()
     this:RegisterEvent("UI_COMMAND", false)
     this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)
     this:RegisterEvent("PLAYER_LEAVE_WORLD", false)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end
 
 function TowerBox_ProjectInfo_OnEvent(event)
@@ -307,12 +307,12 @@ function TowerBox_ProjectInfo_UpdateTowerUI()
                 if towerdata ~= nil then
                     -- 开启时间
                     ui.time:SetText(towerdata.time)
-                    -- 开启显示的都关闭
+                    -- 开启显示的都关睜
                     ui.bg:Hide()
                     ui.box:Hide()
                     ui.line2:Hide()
                     ui.now:Hide()
-                    -- 关闭显示的都开启
+                    -- 关睜显示的都开启
                     ui.box2:Show()
                     ui.line:Show()
 
@@ -344,7 +344,7 @@ function TowerBox_ProjectInfo_UpdateTowerUI()
                             end
                         end
                     else
-                        -- 正常显示
+                        -- 狚常显示
                         local remainstr = ScriptGlobal_Format("#{PTDB_231225_59}", data.reaminbox)
                         ui.time:SetText(remainstr)
                         local bgshow = TowerBox_ProjectInfo_IsTowerShow(g_towerbox_def.yaota, sub, i)
@@ -370,7 +370,7 @@ function TowerBox_ProjectInfo_UpdateTowerUI()
             ui.box:Hide()
             ui.line2:Hide()
             ui.now:Hide()
-            -- 关闭显示的都开启
+            -- 关睜显示的都开启
             ui.box2:Show()
             ui.line:Show()
 
@@ -400,7 +400,7 @@ function TowerBox_ProjectInfo_UpdateTowerUI()
                     end
                 end
             else
-                -- 正常显示
+                -- 狚常显示
                 local remainstr = ScriptGlobal_Format("#{PTDB_231225_59}", data.reaminbox)
                 ui.time:SetText(remainstr)
                 local bgshow = TowerBox_ProjectInfo_IsTowerShow(g_towerbox_def.longta, sub, 0)
@@ -429,7 +429,7 @@ function TowerBox_ProjectInfo_UpdateRewardUI()
             for j, data in (list.list or {}) do
                 local info = PTDB:LuaFnGetTowerDetailData(data[1], data[2] , data[3])
                 if info ~= nil and type(info) == "table" then
-                    -- 每个奖励找到时间最早的
+                    -- 每个奖励犚到时间最早的
                     if info.award > 0 and (info.time < time or time < 0) then
                         idx = i
                         time = info.time
@@ -529,7 +529,7 @@ function TowerBox_ProjectInfo_UpdateRewardUI()
             end
             -- 背景显示
             if curHMS >= time.begin and curHMS < time.over then
-                -- 正在开启
+                -- 狚在开启
                 data.now:Show()
                 data.over:Hide()
             elseif curHMS >= time.over then
@@ -576,7 +576,7 @@ function TowerBox_ProjectInfo_Box_Changed()
     
 end
 
--- 关闭界面回调
+-- 关睜界面回调
 function TowerBox_ProjectInfo_OnHidden()
 end
 

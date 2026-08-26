@@ -1,4 +1,4 @@
--- 跨服日常BOSS 迷你UI
+-- 跨服葼常BOSS 迷你UI
 
 -- 默认位置
 local g_TBossTime_Mini_UnifiedPosition = nil
@@ -12,8 +12,8 @@ function TBossTime_Mini_PreLoad()
     this:RegisterEvent("KFRCBOSS_MINISHOW", true)
     this:RegisterEvent("UI_COMMAND", false)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end
 
 function TBossTime_Mini_OnEvent(event)

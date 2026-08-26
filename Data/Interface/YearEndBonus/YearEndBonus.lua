@@ -35,13 +35,13 @@ local g_YearEndBonus_NameColor =
 } 
 local g_YearEndBonus_ChouJiangInfo     = {
     [1] = {      
-        CJYuanBao=188,    --购买需要元宝  
+        CJYuanBao=188,    --??????  
     },
     [2] = {   
-        CJYuanBao=388,    --购买需要元宝  
+        CJYuanBao=388,    --??????  
     },
     [3] = {  
-        CJYuanBao=788,    --购买需要元宝  
+        CJYuanBao=788,    --??????  
     },
 }
 --*********************************
@@ -50,9 +50,9 @@ local g_YearEndBonus_ChouJiangInfo     = {
 function YearEndBonus_PreLoad()
 	this : RegisterEvent( "UPDATE_HKCJ_INFO" );					--   
 	this : RegisterEvent(" ADJEST_UI_POS",false)
-	this : RegisterEvent( "VIEW_RESOLUTION_CHANGED" );		-- 游戏分辨率发生了变化
-	this : RegisterEvent( "GAMELOGIN_SELECTCHARACTER" );	-- 选择人物
-	this : RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- 离开场景 
+	this : RegisterEvent( "VIEW_RESOLUTION_CHANGED" );		-- ??????????
+	this : RegisterEvent( "GAMELOGIN_SELECTCHARACTER" );	-- ????
+	this : RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- ???? 
 end
 
 --*********************************
@@ -191,7 +191,7 @@ function YearEndBonus_OnEvent( event )
     end
 end
 --**********************************
--- 关闭
+-- 关睜
 --**********************************
 function YearEndBonus_Close() 
     if ( IsWindowShow( "YearEndBonus_Select" ) ) then
@@ -307,7 +307,7 @@ function YearEndBonus_Open()
                     g_YearEndBonus_Ctl.Shop[index].Tab[tabidx].Preview:Hide()  
                     g_YearEndBonus_Ctl.Shop[index].Tab[tabidx].itemname:SetText("")
                 end 
-                if lockstatus == 0 and jcid >= 1 then --开启  
+                if lockstatus == 0 and jcid >= 1 then --??  
                     g_YearEndBonus_Ctl.Shop[index].Tab[tabidx].SelBtn:Enable()  
                     g_YearEndBonus_Ctl.Shop[index].Tab[tabidx].SelBtn:SetToolTip(ScriptGlobal_Format("#{HKCJ_241127_19}",g_YearEndBonus_DaiBiName[index]))	
                     g_YearEndBonus_Ctl.Shop[index].Tab[tabidx].LockBtn:SetProperty("PushedImage",   "set:YearEndBonus image:Unlock_Pushed");
@@ -317,7 +317,7 @@ function YearEndBonus_Open()
                     g_YearEndBonus_Ctl.Shop[index].Tab[tabidx].LockBtn:Enable()                         
                     g_YearEndBonus_Ctl.Shop[index].Tab[tabidx].BuyBtn:Enable()   
                 end 
-                if lockstatus == 1 then --上锁
+                if lockstatus == 1 then --??
                     g_YearEndBonus_Ctl.Shop[index].Tab[tabidx].Lock:Show() 
                     g_YearEndBonus_Ctl.Shop[index].Tab[tabidx].Red:Hide()   
                     local IsPreView    = hkcj_gift[index][jcid].IsPreView
@@ -334,7 +334,7 @@ function YearEndBonus_Open()
                     g_YearEndBonus_Ctl.Shop[index].Tab[tabidx].LockBtn:Enable()  
                     g_YearEndBonus_Ctl.Shop[index].Tab[tabidx].BuyBtn:Enable()   
                 end 
-                if lockstatus == 2  then --售罄
+                if lockstatus == 2  then --??
                     g_YearEndBonus_Ctl.Shop[index].Tab[tabidx].Lock:Hide() 
                     g_YearEndBonus_Ctl.Shop[index].Tab[tabidx].Red:Show() 
                     g_YearEndBonus_Ctl.Shop[index].Tab[tabidx].Red:SetToolTip(ScriptGlobal_Format("#{HKCJ_241127_27}",itemname))		
@@ -404,7 +404,7 @@ function YearEndBonus_Incom_Eye(shopid, tabid)
     else
         local FACEID = Exterior:LuaFnGetCurrentExteriorSetInfo("FACE")
         local HAIRID, HAIRIDIndex = Exterior:LuaFnGetCurrentExteriorSetInfo("HAIR")
-        PushEvent("OPEN_DRESSPREVIEW", itemid, HAIRID, FACEID)  --时装\发型\脸型
+        PushEvent("OPEN_DRESSPREVIEW", itemid, HAIRID, FACEID)  --??\??\??
     end
 end
 --上锁解锁
@@ -457,7 +457,7 @@ function YearEndBonus_ChouJiang(shopid, isyb)
     end
     local curTime = OSAPI:GetTickCount();
 	if ( curTime - g_YearEndBonus_ButtonLastTime < 1 * 500) then 
-        PushDebugMessage("#{HKCJ_241127_31}"); --不可连续点击，请稍等片刻后再点击
+        PushDebugMessage("#{HKCJ_241127_31}"); --??????,?????????
 		return
 	end
 	g_YearEndBonus_ButtonLastTime = curTime; 
@@ -474,7 +474,7 @@ function YearEndBonus_ChouJiang(shopid, isyb)
     if hkcj_data[shopid].OpenState == 1 then  
         for tabidx = 1, 2 do 
             local lockstatus = hkcj_data[shopid].tabinfo[tabidx].LockStatus 
-            if lockstatus == 2  then --售罄 
+            if lockstatus == 2  then --?? 
                 allsellout = allsellout + 1 
             end 
         end  

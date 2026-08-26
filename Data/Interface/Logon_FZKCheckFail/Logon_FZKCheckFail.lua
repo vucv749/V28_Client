@@ -23,18 +23,18 @@ function Logon_FZKCheckFail_OnEvent(event)
 		
 		--”–≥©”Œ+
 		if nSafeType == 0 then
-			Logon_FZKCheckFail_Info_Des:SetText("#{FZK_151230_3}");		--≥©”Œ+Ã· æŒƒ◊÷
-			Logon_FZKCheckFail_Text:SetText("#{FZK_151230_4}");				--≥©”Œ+—È÷§¬Î
-			Logon_FZKCheckFail_Edit:SetText( "«Î ‰»Î6Œª ˝◊÷" );
+			Logon_FZKCheckFail_Info_Des:SetText("#{FZK_151230_3}");		--??+????
+			Logon_FZKCheckFail_Text:SetText("#{FZK_151230_4}");				--??+???
+			Logon_FZKCheckFail_Edit:SetText( "Xin i´n v‡o 6 chÊ sØ" );
 			Logon_FZKCheckFail_Edit:SetProperty("MaxTextLength", "20");
 			Logon_FZKCheckFail_Get:Hide();
 		end
 		
 		--”– ÷ª˙—È÷§
 		if nSafeType == 1 then
-			Logon_FZKCheckFail_Info_Des:SetText("#{FZK_151230_2}");		-- ÷ª˙—È÷§Ã· æŒƒ◊÷
-			Logon_FZKCheckFail_Text:SetText("#{FZK_151230_6}");				-- ÷ª˙—È÷§¬Î
-			Logon_FZKCheckFail_Edit:SetText( "«Î ‰»Î6Œª ˝◊÷" );
+			Logon_FZKCheckFail_Info_Des:SetText("#{FZK_151230_2}");		--????????
+			Logon_FZKCheckFail_Text:SetText("#{FZK_151230_6}");				--?????
+			Logon_FZKCheckFail_Edit:SetText( "Xin i´n v‡o 6 chÊ sØ" );
 			Logon_FZKCheckFail_Edit:SetProperty("MaxTextLength", "20");
 			
 			Logon_FZKCheckFail_Get:Enable();
@@ -51,43 +51,43 @@ function Logon_FZKCheckFail_OnEvent(event)
 		Logon_FZKCheckFail_TimeLeft:Show();
 		this:Show();
 	elseif ( event == "UNDER_ASSIST_LOGIN_RESULT" ) then
-		local nRet = tonumber(arg0); --—È÷§Ω·π˚£¨0 «≥…π¶£¨∑«0 « ß∞‹
+		local nRet = tonumber(arg0); --????,0???,?0???
 		if nRet == 1 then
-			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_16}")	--ƒ⁄≤ø¥ÌŒÛ°£«Î…‘∫Û‘ŸΩ¯––≥¢ ‘01
+			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_16}")	--?????????????01
 		elseif nRet == 2 then
-			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_17}")	--ƒ⁄≤ø¥ÌŒÛ°£«Î…‘∫Û‘ŸΩ¯––≥¢ ‘02
+			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_17}")	--?????????????02
 		elseif nRet == 3 then
-			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_18}")	--ƒ⁄≤ø¥ÌŒÛ°£«Î…‘∫Û‘ŸΩ¯––≥¢ ‘03
+			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_18}")	--?????????????03
 		elseif nRet == 4 then
-			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_19}")	--—È÷§¬Î¥ÌŒÛ£¨«Î÷ÿ–¬Ω¯––—È÷§£°
+			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_19}")	--?????,???????!
 		elseif nRet == 5 then
-			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_20}")	--∏√≤Ÿ◊˜–Ë“™1∑÷÷”µƒ¿‰»¥ ±º‰£¨«Î…‘∫Û‘ŸΩ¯––≥¢ ‘°£
+			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_20}")	--?????1???????,?????????
 		elseif nRet == 6 then
-			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_21}")	--ƒ⁄≤ø¥ÌŒÛ°£«Î…‘∫Û‘ŸΩ¯––≥¢ ‘04
+			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_21}")	--?????????????04
 		elseif nRet == 7 then
-			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_22}")	--ƒ⁄≤ø¥ÌŒÛ°£«Î…‘∫Û‘ŸΩ¯––≥¢ ‘05
+			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_22}")	--?????????????05
 		elseif nRet == 8 then
-			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_23}")	--ƒ⁄≤ø¥ÌŒÛ°£«Î…‘∫Û‘ŸΩ¯––≥¢ ‘06
+			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_23}")	--?????????????06
 		elseif nRet == 9 then
-			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_24}")	--ƒ⁄≤ø¥ÌŒÛ°£«Î…‘∫Û‘ŸΩ¯––≥¢ ‘07
+			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_24}")	--?????????????07
 		end
 		
 		--Œﬁ¬€‘ı—˘£¨∂º“™πÿµÙ
 		--Logon_FZKCheckFail_Close();
 		
 	elseif ( event == "UNDER_ASSIST_LOGIN_UNLOCK" ) then
-		local nRet = tonumber(arg0); --—È÷§Ω·π˚£¨0 «≥…π¶£¨∑«0 « ß∞‹
-		if nRet == 0 then --π¶ƒ‹£¨‘Úπÿ±’
+		local nRet = tonumber(arg0); --????,0???,?0???
+		if nRet == 0 then --??,???
 			PushDebugMessage("#{FZK_151230_29}");
 			Logon_FZKCheckFail_Close();
 		elseif nRet == 1 then
-			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_16}")	--ƒ⁄≤ø¥ÌŒÛ°£«Î…‘∫Û‘ŸΩ¯––≥¢ ‘01
+			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_16}")	--?????????????01
 		elseif nRet == 2 then
-			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_25}")	--ƒ⁄≤ø¥ÌŒÛ°£«Î…‘∫Û‘ŸΩ¯––≥¢ ‘08
+			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_25}")	--?????????????08
 		elseif nRet == 3 then
-			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_26}")	--ƒ⁄≤ø¥ÌŒÛ°£«Î…‘∫Û‘ŸΩ¯––≥¢ ‘09
+			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_26}")	--?????????????09
 		elseif nRet == 9 then
-			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_27}")	--ƒ⁄≤ø¥ÌŒÛ°£«Î…‘∫Û‘ŸΩ¯––≥¢ ‘10
+			PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{FZK_151230_27}")	--?????????????10
 		end
 	end	
 	
@@ -113,9 +113,9 @@ function Logon_FZKCheckFail_CheckCode()
 		--Logon_FZKCheckFail_Close();
 	end
 	
-	if g_SafeType == 0 then		--≥©”Œ+
+	if g_SafeType == 0 then		--??+
 		AccountSafe:SendLoginSafeCheckMsg( szCheckCode, 0 );
-	elseif g_SafeType == 1 then	-- ÷ª˙»œ÷§
+	elseif g_SafeType == 1 then	--????
 		AccountSafe:SendLoginSafeCheckMsg( szCheckCode, 1 );
 	end
 end

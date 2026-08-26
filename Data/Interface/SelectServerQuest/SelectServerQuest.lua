@@ -5,11 +5,11 @@
 -- È«¾Ö±äÁ¿Çø
 --
 --
-local g_iYesNoType = -1;	-- yes-no ¶Ô»°¿òÀàÐÍ
-													-- -1 -- ÆÕÍ¨ÐÅÏ¢ÌáÊ¾
+local g_iYesNoType = -1;	-- yes-no ?????
+													-- -1 -- Æ Í¨ÐÅÏ¢ÌáÊ¾
 													-- 0 - ÍË³öÓÎÏ·
 													-- 1 - É¾³ý½ÇÉ«
-													-- 2 - ¸ü»»ÕÊºÅ
+													-- 2 - ¸ü»» ÊºÅ
 													-- 3 - ¶Ï¿ªÍøÂç
 													-- 4 - È·ÈÏÊÇ·ñÉ¾³ý10¼¶ÒÔÉÏÍæ¼Ò
 													-- 5 - 7ÌìÄÚÌáÐÑÉ¾³ý10¼¶ÒÔÉÏÍæ¼Ò
@@ -19,14 +19,14 @@ local g_iYesNoType = -1;	-- yes-no ¶Ô»°¿òÀàÐÍ
 													-- 9 ÊÇ·ñ×¢²á
 													--29 ½ûÖ¹µÇÂ¼
 													--30 3Ìì½ûÖ¹µÇÂ¼
-													--31 ÕËºÅ¶³½á
+													--31  ËºÅ¶³½á
 													--32 Íæ¼ÒÔÚÆäËü·þÔÚÏß
 													--33 Íæ¼ÒÒÑÔÚÏß
 													--34 Íæ¼ÒÎ´ÈÏÖ¤ÊÖ»ú
 													--35 ¸üÐÂ·þÎñÆ÷ÁÐ±í
 													--36 ÃÜÂë´íÎó
 													--37 ÏÞÖÆµÇÂ¼£¬Î´ÊµÃû
-													--38 ÏÞÖÆµÇÂ¼£¬×¢ÏúÕÊºÅ
+													--38 ÏÞÖÆµÇÂ¼£¬×¢Ïú ÊºÅ
 													--39 ÏÞÖÆµÇÂ¼£¬ÊµÃû¸ñÊ½²»¶Ô
 													--40 ¼¤»î
 													--41 1009¼¤»î
@@ -35,10 +35,10 @@ local g_iYesNoType = -1;	-- yes-no ¶Ô»°¿òÀàÐÍ
 													--44 ÁéÊÞµ¤ºÏ³É
 													--45 Ê±×°È¾É«¶þ´ÎÈ·ÈÏ
 													--46 Ê±×°È¾É«°ó¶¨¶þ´ÎÈ·ÈÏ
-													--47 Ê¹ÓÃ¹ú¼Ò·À³ÁÃÔÐÅÏ¢¿âÇÒ·À³ÁÃÔÐÅÏ¢²»ÕýÈ·
+													--47 Ê¹ÓÃ¹ú¼Ò·À³ÁÃÔÐÅÏ¢¿âÇÒ·À³ÁÃÔÐÅÏ¢²» ýÈ·
 													--48 ÏÞÖÆµÇÂ¼£¬Î´³ÉÄêÈË£¬Î´Âú18Ëê 
 													--49 ÏÞÖÆµÇÂ¼£¬Î´³ÉÄêÈË£¬Î´Âú18Ëê
-													--50 ÏÞÖÆµÇÂ¼£¬ÕýÔÚÉóºËÖÐ
+													--50 ÏÞÖÆµÇÂ¼£¬ ýÔÚÉóºËÖÐ
 													--51 ·â»êÂ¼
 													--52 »ê±ùÖéÅúÁ¿ºÏ³É
 													--53 ÎåÒ»·ÅÑÌ»¨
@@ -47,7 +47,7 @@ local g_iYesNoType = -1;	-- yes-no ¶Ô»°¿òÀàÐÍ
 													--62 ´º½Ú´ò¹¤ÍÃ
 													--65 ½á»é½»»»ÐÅÎï¹«¸æ¶þ´ÎÈ·ÈÏ
 													--66 ±äÐÔ
-													--76 ´ú±ÒÕûºÏ¶Ò»»ÕÙ»½È¯£¬¶þ´ÎÈ·ÈÏ
+													--76 ´ú±Ò ûºÏ¶Ò»» Ù»½È¯£¬¶þ´ÎÈ·ÈÏ
 													--77 ¶þ´ÎÈ·ÈÏ
 													--78 ¶þ´ÎÈ·ÈÏ
 													--79 ¶þ´ÎÈ·ÈÏ
@@ -62,16 +62,16 @@ local g_pos = -1
 local g_YanHua_From = -1
 local g_YanHua_Param = -1
 
-local CaiLiaoCompound_Data = {0, 0, 0, 0}			-- Èý¾«²ÄÁÏÅúÁ¿ºÏ³É »º´æÊý¾Ý
-local DaGongTu_Data = {0, 0}						-- ´º½Ú´ò¹¤ÍÃ »º´æÊý¾Ý
-local RunHunShiCompound_Data = {0, 0, 0, 0}			-- Èó»êÊ¯ÅúÁ¿ºÏ³É »º´æÊý¾Ý
-local HunBingZhuCompound_Data = {0, 0, 0}			-- »ê±ùÖéÅúÁ¿ºÏ³É »º´æÊý¾Ý
-local LingShouDanCompound_Data = {0, 0, 0, 0}		-- ÁéÊÞµ¤ºÏ³É »º´æÊý¾Ý
-local FengHunLu_Data = {0, 0}						-- ·â»êÂ¼Àñ°ü »º´æÊý¾Ý
+local CaiLiaoCompound_Data = {0, 0, 0, 0}			-- ???????? ????
+local DaGongTu_Data = {0, 0}						-- ????? ????
+local RunHunShiCompound_Data = {0, 0, 0, 0}			-- ??????? ????
+local HunBingZhuCompound_Data = {0, 0, 0}			-- ??????? ????
+local LingShouDanCompound_Data = {0, 0, 0, 0}		-- ????? ????
+local FengHunLu_Data = {0, 0}						-- ????? ????
 local g_SelecQuest_Data= {0,0,0,0}
 local g_ZBS_Data = {-1, -1, -1}
 local changchunlibao_data = {0,0}
-local g_DLZX_Data = {-1, -1, -1, -1, -1, -1, -1}		-- µÛÁêÔÙÏÖPVP»î¶¯
+local g_DLZX_Data = {-1, -1, -1, -1, -1, -1, -1}		-- ????PVP??
 
 -- ×¢²áonLoadÊÂ¼þ
 function LoginSelectServerQuest_PreLoad()
@@ -79,11 +79,11 @@ function LoginSelectServerQuest_PreLoad()
 	-- ´ò¿ª½çÃæ
 	this:RegisterEvent("GAMELOGIN_SHOW_SYSTEM_INFO");
 
-	-- ¹Ø±Õ½çÃæ
+	-- ¹Ø± ½çÃæ
 	this:RegisterEvent("GAMELOGIN_CLOSE_SYSTEM_INFO");
 
 
-	-- µã»÷È·¶¨°´Å¥¹Ø±ÕÍøÂç
+	-- µã»÷È·¶¨°´Å¥¹Ø± ÍøÂç
 	this:RegisterEvent("GAMELOGIN_SHOW_SYSTEM_INFO_CLOSE_NET");
 
 	-- ÏÔÊ¾²»´ø°´Å¥µÄÐÅÏ¢
@@ -94,7 +94,7 @@ function LoginSelectServerQuest_PreLoad()
 	this:RegisterEvent("GAMELOGIN_SYSTEM_INFO_CANCEL");
 	this:RegisterEvent("GAMELOGIN_SYSTEM_INFO_CLOSE");
 	this:RegisterEvent("UI_COMMAND");
-	-- ÕäÊÞ×°±¸·Ö½âÈ·ÈÏ
+	--  äÊÞ×°±¸·Ö½âÈ·ÈÏ
 	this:RegisterEvent("PET_EQUIP_DEPART_CONFIRM")
 	-- °ó¶¨Ôª±¦ÉÌµêÍæ¼Ò°ó¶¨Ôª±¦²»×ãÊ±£¬¶þ´ÎÈ·ÈÏµÄ½çÃæ
 	this:RegisterEvent("BINDYUANBAO_NOTENOUGH_YESNO")
@@ -129,7 +129,7 @@ function LoginSelectUpdateRect()
 end
 
 local TimerArg = "";
-local g_QuitType = 0;    --Ôö¼Ó3£¬ ÕâÖÖÀàÐÍµÄºÍÀàÐÍ0µÄÇø±ðÊÇÃ»È¡Ïû°´Å¥µÄ£¡
+local g_QuitType = 0;    --??3, ????????0??????????!
 local g_bIsQuitMsgBox = 0;
 -- OnEvent
 function LoginSelectServerQuest_OnEvent(event)
@@ -158,7 +158,7 @@ function LoginSelectServerQuest_OnEvent(event)
 			LoginSelectUpdateRect();
 		end
 		SelectServerQuest_Button1:Show();
-		SelectServerQuest_Button1:SetText("¹Ø±Õ");
+		SelectServerQuest_Button1:SetText("Ðóng cØa");
 		SelectServerQuest_Button1:Enable()
 
 
@@ -219,7 +219,7 @@ function LoginSelectServerQuest_OnEvent(event)
 			SelectServerQuest_LostPassword:Show();
 			SelectServerQuest_LostPassword:SetText("#{LSOB_200304_02}");
 			SelectServerQuest_LostPassword:Enable()
-		elseif (arg1 == "LOGIN_FCM_CERTNUM_CHECKERROR") then		--47 Ê¹ÓÃ¹ú¼Ò·À³ÁÃÔÐÅÏ¢¿âÇÒ·À³ÁÃÔÐÅÏ¢²»ÕýÈ·
+		elseif (arg1 == "LOGIN_FCM_CERTNUM_CHECKERROR") then		--47 ???????????????????
 			g_iYesNoType = 47;
 			SelectServerQuest_LostPassword:Show();
 			SelectServerQuest_LostPassword:SetText("#{CMXT_191210_21}");
@@ -262,21 +262,21 @@ function LoginSelectServerQuest_OnEvent(event)
 		    if(arg3~=nil and tonumber(arg3)~=nil)then
 			if(tonumber(arg3)>0)then
 				SelectServerQuest_Time_Text : SetProperty("Timer",tostring(10));
-				SelectServerQuest_InfoWindow:SetText("10ÃëºóÍË³öÓÎÏ·£¡");
+				SelectServerQuest_InfoWindow:SetText("10Sao lui v« phía sau du l¸ch Hô!");
 				LoginSelectUpdateRect();
 
 			else
 				SelectServerQuest_Time_Text : SetProperty("Timer",tostring(3));
-				SelectServerQuest_InfoWindow:SetText("3ÃëºóÍË³öÓÎÏ·£¡");
+				SelectServerQuest_InfoWindow:SetText("3Sao lui v« phía sau du l¸ch Hô!");
 				LoginSelectUpdateRect();
 			end
 		    else
 			 SelectServerQuest_Time_Text : SetProperty("Timer",tostring(3));
-			 SelectServerQuest_InfoWindow:SetText("3ÃëºóÍË³öÓÎÏ·£¡");
+			 SelectServerQuest_InfoWindow:SetText("3Sao lui v« phía sau du l¸ch Hô!");
 			LoginSelectUpdateRect();
 		    end
 		    SelectServerQuest_Time_Text : Show()
-		    SelectServerQuest_Button1:SetText("È¡Ïû");
+		    SelectServerQuest_Button1:SetText("Hüy bö");
 		    SelectServerQuest_Button1:Show();
 		    SelectServerQuest_Button1:Enable();
 		    TimerArg = arg1;
@@ -288,7 +288,7 @@ function LoginSelectServerQuest_OnEvent(event)
 		    arg1 = nil;
 		elseif( arg1 == "LoginCounting" ) then
 				local countTime = tonumber(arg2)
-				if(countTime >= 0 and countTime <= 20000) then--Âß¼­ÉÏÀ´Ëµarg2Ó¦¸ÃÊÇÔÚ0µ½20000Ö®¼äµÄ¡£
+				if(countTime >= 0 and countTime <= 20000) then--?????arg2????0?20000????
 					countTime = math.floor(countTime/1000) + 1
 					if countTime==21 then
 						countTime=20
@@ -347,12 +347,12 @@ function LoginSelectServerQuest_OnEvent(event)
 			g_bagIndex = tonumber(arg3)
 		end
 		
-		if g_iYesNoType == 66 then --±äÐÔ
+		if g_iYesNoType == 66 then --??
 			g_objCared = tonumber(arg2)
 		end		
 		
-		SelectServerQuest_Button1:SetText("È·¶¨");
-		SelectServerQuest_Button2:SetText("È¡Ïû");
+		SelectServerQuest_Button1:SetText("Xác nh§n");
+		SelectServerQuest_Button2:SetText("Hüy bö");
 		SelectServerQuest_Button2:Show();
 		SelectServerQuest_Button1:Show();
 		this:Show();
@@ -383,9 +383,9 @@ function LoginSelectServerQuest_OnEvent(event)
 		SelectServerQuest_InfoWindow:SetText(arg0);
 		LoginSelectUpdateRect();
 		if g_iYesNoType == 0 then
-			SelectServerQuest_Button1:SetText("¹Ø±Õ");
+			SelectServerQuest_Button1:SetText("Ðóng cØa");
 		else
-			SelectServerQuest_Button1:SetText("È·¶¨");
+			SelectServerQuest_Button1:SetText("Xác nh§n");
 		end
 		this:Show();
 		SelectServerQuest_Button1:Show();
@@ -398,7 +398,7 @@ function LoginSelectServerQuest_OnEvent(event)
 		SelectServerQuest_InfoWindow:SetText(arg0);
 		LoginSelectUpdateRect();
 		SelectServerQuest_Button1:Show();
-		SelectServerQuest_Button1:SetText("È¡Ïû");
+		SelectServerQuest_Button1:SetText("Hüy bö");
 		this:Show();
 		SelectServerQuest_Button2:Hide();
 		return;
@@ -408,7 +408,7 @@ function LoginSelectServerQuest_OnEvent(event)
 		g_iYesNoType = tonumber(arg1);
 		SelectServerQuest_InfoWindow:SetText(arg0);
 		LoginSelectUpdateRect();
-		SelectServerQuest_Button1:SetText("¹Ø±Õ");
+		SelectServerQuest_Button1:SetText("Ðóng cØa");
 		this:Show();
 		SelectServerQuest_Button1:Show();
 		SelectServerQuest_Button2:Hide();
@@ -419,12 +419,12 @@ function LoginSelectServerQuest_OnEvent(event)
 
 	if( event == "GAMELOGIN_SHOW_SYSTEM_INFO_CLOSE_NET") then
 
-		--AxTrace( 0,0, "ÐèÒª¹Ø±ÕÍøÂç.");
+		--AxTrace( 0,0, "ÐèÒª¹Ø± ÍøÂç.");
 		g_iYesNoType = 3;
 		SelectServerQuest_InfoWindow:SetText(arg0);
 		LoginSelectUpdateRect();
 		SelectServerQuest_Button1:Show();
-		SelectServerQuest_Button1:SetText("¹Ø±Õ");
+		SelectServerQuest_Button1:SetText("Ðóng cØa");
 		this:Show();
 		return;
 	end
@@ -436,7 +436,7 @@ function LoginSelectServerQuest_OnEvent(event)
 		LoginSelectUpdateRect();
 
 		SelectServerQuest_Button1:Show();
-		SelectServerQuest_Button1:SetText("¹Ø±Õ");
+		SelectServerQuest_Button1:SetText("Ðóng cØa");
 		SelectServerQuest_Button1:Enable()
 
 		this:Show();
@@ -445,11 +445,11 @@ function LoginSelectServerQuest_OnEvent(event)
 	-- ÑªÔ¡Éñ±ø¡ª¡ªÉñÆ÷ÖØÖý
 	if ( event == "UI_COMMAND" and tonumber(arg0) == 12032203) then
 		g_iYesNoType = -1;
-		SelectServerQuest_InfoWindow:SetText("#cfff263ÖØÐÂÒ±Á¶ºóÉñÆ÷½«±»#GÏú»Ù#cfff263£¬È·ÈÏÌá½»Çë¹Ø±Õ±¾ÌáÊ¾ºóÔÙ´Îµã»÷#GÈ·¶¨#cfff263°´Å¥¡£");
+		SelectServerQuest_InfoWindow:SetText("#cfff263mµt l¥n næa tinh luy®n kim loÕi H§u th¥n khí Tß¾ng B¸#GtIêu hüy#cfff263, xác nh§n ð® trình Thïnh ðóng cØa B±n nêu lên H§u lÕi Ði¬m Kích#Gxác ð¸nh#cfff263cái nút.");
 		LoginSelectUpdateRect();
 
 		SelectServerQuest_Button1:Show();
-		SelectServerQuest_Button1:SetText("¹Ø±Õ");
+		SelectServerQuest_Button1:SetText("Ðóng cØa");
 		SelectServerQuest_Button1:Enable()
 
 		this:Show();
@@ -470,14 +470,14 @@ function LoginSelectServerQuest_OnEvent(event)
 			local strText = string.format("#{SLZSDSJ_090915_2}%s#{SLZSDSJ_090915_3}%d#{SLZSDSJ_090915_4}",petClass,slzExp)
 			SelectServerQuest_InfoWindow:SetText( strText );
 		elseif levelCanUp > 0 then
-			--Éý¼¶½çÃæ²»ÔÚÕâÀï£¬ÔÚPetShelizi_MsgÖÐ
+			--Éý¼¶½çÃæ²»ÔÚ âÀï£¬ÔÚPetShelizi_MsgÖÐ
 			return
 		end
 
 		LoginSelectUpdateRect();
 
-		SelectServerQuest_Button1:SetText("È·¶¨");
-		SelectServerQuest_Button2:SetText("È¡Ïû");
+		SelectServerQuest_Button1:SetText("Xác nh§n");
+		SelectServerQuest_Button2:SetText("Hüy bö");
 		SelectServerQuest_Button2:Show();
 		SelectServerQuest_Button1:Show();
 		this:Show();
@@ -492,8 +492,8 @@ function LoginSelectServerQuest_OnEvent(event)
 
 		LoginSelectUpdateRect();
 
-		SelectServerQuest_Button1:SetText("È·¶¨");
-		SelectServerQuest_Button2:SetText("È¡Ïû");
+		SelectServerQuest_Button1:SetText("Xác nh§n");
+		SelectServerQuest_Button2:SetText("Hüy bö");
 		SelectServerQuest_Button2:Show();
 		SelectServerQuest_Button1:Show();
 		this:Show();
@@ -509,7 +509,7 @@ function LoginSelectServerQuest_OnEvent(event)
 
 		LoginSelectUpdateRect();
 
-		SelectServerQuest_Button1:SetText("È·¶¨");
+		SelectServerQuest_Button1:SetText("Xác nh§n");
 		SelectServerQuest_Button1:Show();
 		SelectServerQuest_Button1:Enable()
 		this:Show();
@@ -525,7 +525,7 @@ function LoginSelectServerQuest_OnEvent(event)
 
 		LoginSelectUpdateRect();
 
-		SelectServerQuest_Button1:SetText("È·¶¨");
+		SelectServerQuest_Button1:SetText("Xác nh§n");
 		SelectServerQuest_Button1:Show();
 		SelectServerQuest_Button1:Enable()
 		this:Show();
@@ -540,10 +540,10 @@ function LoginSelectServerQuest_OnEvent(event)
 
 		LoginSelectUpdateRect();
 
-		SelectServerQuest_Button1:SetText("È·¶¨");
+		SelectServerQuest_Button1:SetText("Xác nh§n");
 		SelectServerQuest_Button1:Show();
 		SelectServerQuest_Button1:Enable()
-		SelectServerQuest_Button2:SetText("È¡Ïû");
+		SelectServerQuest_Button2:SetText("Hüy bö");
 		SelectServerQuest_Button2:Show();
 		SelectServerQuest_Button2:Enable()
 		this:Show();
@@ -571,8 +571,8 @@ function LoginSelectServerQuest_OnEvent(event)
 
 		LoginSelectUpdateRect();
 
-		SelectServerQuest_Button1:SetText("È·¶¨");
-		SelectServerQuest_Button2:SetText("È¡Ïû");
+		SelectServerQuest_Button1:SetText("Xác nh§n");
+		SelectServerQuest_Button2:SetText("Hüy bö");
 		SelectServerQuest_Button2:Show();
 		SelectServerQuest_Button1:Show();
 		this:Show();
@@ -589,8 +589,8 @@ function LoginSelectServerQuest_OnEvent(event)
 
 		LoginSelectUpdateRect();
 
-		SelectServerQuest_Button1:SetText("È·¶¨");
-		SelectServerQuest_Button2:SetText("È¡Ïû");
+		SelectServerQuest_Button1:SetText("Xác nh§n");
+		SelectServerQuest_Button2:SetText("Hüy bö");
 		SelectServerQuest_Button2:Show();
 		SelectServerQuest_Button1:Show();
 		this:Show();
@@ -602,8 +602,8 @@ function LoginSelectServerQuest_OnEvent(event)
 		g_iYesNoType = tonumber(arg1)
 		SelectServerQuest_InfoWindow:SetText("#{ZSZBSJ_XML_17}" .. equipname .. "#{ZSZBSJ_XML_18}")
 		LoginSelectUpdateRect()
-		SelectServerQuest_Button1:SetText("È·¶¨");
-		SelectServerQuest_Button2:SetText("È¡Ïû");
+		SelectServerQuest_Button1:SetText("Xác nh§n");
+		SelectServerQuest_Button2:SetText("Hüy bö");
 		SelectServerQuest_Button2:Show();
 		SelectServerQuest_Button1:Show();
 		this:Show();
@@ -619,11 +619,11 @@ function LoginSelectServerQuest_OnEvent(event)
 		local name = arg6
 		local nHaveBindYuanbao = Player : GetData( "BIND_YUANBAO" )
 		local nCostYuanbao = nNeedBindYuanbao - nHaveBindYuanbao
-		--È·¶¨ÄãÊÇ·ñ¹ºÂòÕâ¸ö¶«Î÷ .. g_itemNum.."#{ZSZBSJ_XML_17}"
+		--È·¶¨ÄãÊÇ·ñ¹ºÂò â¸ö¶«Î÷ .. g_itemNum.."#{ZSZBSJ_XML_17}"
 		SelectServerQuest_InfoWindow:SetText("#{BDYB_XML_1}#G" ..name .."#{BDYB_XML_2}#G"..nNeedBindYuanbao.."#{BDYB_XML_3}#G"..nHaveBindYuanbao.."#{BDYB_XML_4}#G"..nCostYuanbao.."#{BDYB_XML_5}")
 		LoginSelectUpdateRect()
-		SelectServerQuest_Button1:SetText("È·¶¨");
-		SelectServerQuest_Button2:SetText("È¡Ïû");
+		SelectServerQuest_Button1:SetText("Xác nh§n");
+		SelectServerQuest_Button2:SetText("Hüy bö");
 		SelectServerQuest_Button2:Show();
 		SelectServerQuest_Button1:Show();
 		this:Show();
@@ -656,10 +656,10 @@ function LoginSelectServerQuest_OnEvent(event)
 
 		LoginSelectUpdateRect()
 
-		SelectServerQuest_Button1:SetText("È·¶¨")
+		SelectServerQuest_Button1:SetText("Xác nh§n")
 		SelectServerQuest_Button1:Show()
 		SelectServerQuest_Button1:Enable()
-		SelectServerQuest_Button2:SetText("È¡Ïû")
+		SelectServerQuest_Button2:SetText("Hüy bö")
 		SelectServerQuest_Button2:Show()
 		SelectServerQuest_Button2:Enable()
 
@@ -680,11 +680,11 @@ function LoginSelectServerQuest_OnEvent(event)
 
 		LoginSelectUpdateRect()
 
-		SelectServerQuest_Button1:SetText("È·¶¨")
+		SelectServerQuest_Button1:SetText("Xác nh§n")
 		SelectServerQuest_Button1:Show()
 		SelectServerQuest_Button1:Enable()
 
-		SelectServerQuest_Button2:SetText("È¡Ïû")
+		SelectServerQuest_Button2:SetText("Hüy bö")
 		SelectServerQuest_Button2:Show()
 		SelectServerQuest_Button2:Enable()
 		
@@ -706,11 +706,11 @@ function LoginSelectServerQuest_OnEvent(event)
 
 		LoginSelectUpdateRect()
 
-		SelectServerQuest_Button1:SetText("È·¶¨")
+		SelectServerQuest_Button1:SetText("Xác nh§n")
 		SelectServerQuest_Button1:Show()
 		SelectServerQuest_Button1:Enable()
 
-		SelectServerQuest_Button2:SetText("È¡Ïû")
+		SelectServerQuest_Button2:SetText("Hüy bö")
 		SelectServerQuest_Button2:Show()
 		SelectServerQuest_Button2:Enable()
 		
@@ -731,11 +731,11 @@ function LoginSelectServerQuest_OnEvent(event)
 
 		LoginSelectUpdateRect()
 
-		SelectServerQuest_Button1:SetText("È·¶¨")
+		SelectServerQuest_Button1:SetText("Xác nh§n")
 		SelectServerQuest_Button1:Show()
 		SelectServerQuest_Button1:Enable()
 
-		SelectServerQuest_Button2:SetText("È¡Ïû")
+		SelectServerQuest_Button2:SetText("Hüy bö")
 		SelectServerQuest_Button2:Show()
 		SelectServerQuest_Button2:Enable()
 		
@@ -755,11 +755,11 @@ function LoginSelectServerQuest_OnEvent(event)
 
 		LoginSelectUpdateRect()
 
-		SelectServerQuest_Button1:SetText("È·¶¨")
+		SelectServerQuest_Button1:SetText("Xác nh§n")
 		SelectServerQuest_Button1:Show()
 		SelectServerQuest_Button1:Enable()
 
-		SelectServerQuest_Button2:SetText("È¡Ïû")
+		SelectServerQuest_Button2:SetText("Hüy bö")
 		SelectServerQuest_Button2:Show()
 		SelectServerQuest_Button2:Enable()
 		
@@ -798,7 +798,7 @@ function LoginSelectServerQuest_OnEvent(event)
 	-- ·â»êÂ¼Àñ°ü
 	if( event == "UI_COMMAND" and tonumber(arg0) == 79101102) then
 
-		-- 0 ¹Ø±Õ, 1 ´ò¿ª, 2 Ë¢ÐÂ, 3 ¶þ´ÎÈ·ÈÏ¿ò
+		-- 0 ¹Ø± , 1 ´ò¿ª, 2 Ë¢ÐÂ, 3 ¶þ´ÎÈ·ÈÏ¿ò
 		local nOpType 	= Get_XParam_INT(0)
 		if nil == nOpType or 3 ~= nOpType then
 			return
@@ -851,7 +851,7 @@ function LoginSelectServerQuest_OnEvent(event)
 
 	end
 
-	-- Õù°ÔÈü ÑûÇëÍæ¼ÒÈë¶Ó
+	--  ù°ÔÈü ÑûÇëÍæ¼ÒÈë¶Ó
 	if (event == "UI_COMMAND" and tonumber(arg0) == 2022090601) then
 		g_iYesNoType = 55
 
@@ -874,7 +874,7 @@ function LoginSelectServerQuest_OnEvent(event)
 
 		this:Show()
 	end
-	-- Õù°ÔÈü ½âÉ¢Õ½¶Ó
+	--  ù°ÔÈü ½âÉ¢ ½¶Ó
 	if (event == "UI_COMMAND" and tonumber(arg0) == 2022090801) then
 		g_iYesNoType = 56
 
@@ -896,7 +896,7 @@ function LoginSelectServerQuest_OnEvent(event)
 
 		this:Show()
 	end
-	-- Õù°ÔÈü ÇëÀëÕ½¶Ó
+	--  ù°ÔÈü ÇëÀë ½¶Ó
 	if (event == "UI_COMMAND" and tonumber(arg0) == 2022091401) then
 		g_iYesNoType = 57
 
@@ -918,7 +918,7 @@ function LoginSelectServerQuest_OnEvent(event)
 
 		this:Show()
 	end
-	-- Õù°ÔÈü ÍË³öÕ½¶Ó
+	--  ù°ÔÈü ÍË³ö ½¶Ó
 	if (event == "UI_COMMAND" and tonumber(arg0) == 2022091501) then
 		g_iYesNoType = 58
 
@@ -1076,7 +1076,7 @@ function LoginSelectServerQuest_OnEvent(event)
 
 		this:Show()
 	end
-	-- ÐÂ6v6 ½âÉ¢Õ½¶Ó
+	-- ÐÂ6v6 ½âÉ¢ ½¶Ó
 	if (event == "UI_COMMAND" and tonumber(arg0) == 99849702) then
 		g_iYesNoType = 71
 
@@ -1098,7 +1098,7 @@ function LoginSelectServerQuest_OnEvent(event)
 
 		this:Show()
 	end
-	-- ÐÂ6v6 ÍË³öÕ½¶Ó
+	-- ÐÂ6v6 ÍË³ö ½¶Ó
 	if (event == "UI_COMMAND" and tonumber(arg0) == 99849704) then
 		g_iYesNoType = 72
 
@@ -1324,7 +1324,7 @@ function SelectServerQuest_Bn1Click()
 -- 7 - ÊÇ·ñÉ¾³ý10¼¶ÒÔÏÂÍæ¼Ò
 -- 8 - ´óÓÚ10¼¶µÃÌáÊ¾
 	if( -1 == g_iYesNoType and 1 == g_bIsQuitMsgBox) then
-		CancelQuitWait(); --È¡ÏûÍË³ö
+		CancelQuitWait(); --????
 	end
 	if(0 == g_iYesNoType) then
 		QuitApplication("quit");
@@ -1335,7 +1335,7 @@ function SelectServerQuest_Bn1Click()
 		GameProduceLogin:CloseNetConnect();
 	elseif( 4 == g_iYesNoType ) then
 			local strInfo;
-		  strInfo ="ÄúµÄ½ÇÉ«²»ÄÜÂíÉÏÉ¾³ý£¬ÇëÔÚ3ÌìÒÔºó14ÌìÒÔÄÚµÇÂ¼ÓÎÏ·£¬µ½ÂåÑô£¨268£¬46£©ÕÒµ½¹ØººÊÙ»òÕßµ½´óÀí£¨80£¬136£©ÕÒµ½ÖÜ²ÖÈ·ÈÏ£¬¼´¿ÉÓÀ¾ÃÉ¾³ý¡£È·ÈÏÉ¾³ýÊ±½ÇÉ«²»ÄÜ´¦ÓÚÓÐ°ï»á¡¢½á»é¡¢½á°Ý¡¢Ê¦Í½¡¢¿ªµê×´Ì¬£¬·ñÔòÉ¾³ý½«±»È¡Ïû¡£³¬¹ý14ÌìÃ»ÓÐÔÙ´ÎÉ¾³ýÔòÉ¾³ý²Ù×÷ÎÞÐ§¡£"
+		  strInfo ="Nhçm Ðích vai di­n không th¬ l§p tÑc xóa bö, Thïnh TÕi 3Thiên v« sau 14Thiên trong vòng ðång ký trò ch½i, Ðáo LÕc Dß½ng(268, 46) tìm ðßþc Quan Hán Th÷ ho£c là ðªn l¾n Lý(80, 136) tìm ðßþc Chu Thß½ng xác nh§n, có th¬ vînh cØu xóa bö. Xác nh§n xóa bö Th¶i vai di­n không th¬ b¸ vây Hæu bang hµi, kªt hôn, kªt bái, th¥y trò, Khai Ðiªm trÕng thái, nªu không xóa bö Tß¾ng B¸ hüy bö. Vßþt qua 14Thiên không có lÕi xóa bö T¡c xóa bö thao tác không có hi®u quä."
 			GameProduceLogin:ShowMessageBox( strInfo, "OK", "8" );
 	elseif( 5 == g_iYesNoType ) then
 	elseif( 6 == g_iYesNoType ) then
@@ -1346,7 +1346,7 @@ function SelectServerQuest_Bn1Click()
 	elseif( 9 == g_iYesNoType ) then
 		GameProduceLogin:LoginPlayer( 1 );
 	elseif( 10 == g_iYesNoType ) then
-		AxTrace( 0,0, "ÊÇ·ñ¼¤»î_µã»÷ÁËOK");
+		AxTrace( 0,0, "Hay không kích hoÕt_Ði¬m Kích Li­u OK");
 	elseif(11 == g_iYesNoType) then
 		GameProduceLogin:CheckAccountNoMibao();
 	elseif(12 == g_iYesNoType) then
@@ -1410,7 +1410,7 @@ function SelectServerQuest_Bn1Click()
 			Set_XSCRIPT_Parameter(1,tonumber(g_bagIndex))
 			Set_XSCRIPT_ParamCount(2);
 		Send_XSCRIPT();
-	elseif (25 == g_iYesNoType) then --È¡Ïû¸üÐÂ·þÎñÆ÷ÁÐ±í
+	elseif (25 == g_iYesNoType) then --?????????
 		--Èç¹ûÉ±Launch½ø³ÌÊ§°Ü£¬²»Òþ²Ø
 		if (GameProduceLogin:KillLaunchProcess() == 0) then
 			return;
@@ -1430,10 +1430,10 @@ function SelectServerQuest_Bn1Click()
 			Set_XSCRIPT_Function_Name( "CaiLiaoCompound_New" )
 			Set_XSCRIPT_ScriptID(701602)
 			Set_XSCRIPT_Parameter(0,CaiLiaoCompound_Data[1])--npcid
-			Set_XSCRIPT_Parameter(1,CaiLiaoCompound_Data[2])--1¿ì½Ý2ÆÕÍ¨
-			Set_XSCRIPT_Parameter(2,CaiLiaoCompound_Data[3])--ÀàÐÍ
-			Set_XSCRIPT_Parameter(3,CaiLiaoCompound_Data[4])--×ÓÀàÐÍ
-			Set_XSCRIPT_Parameter(4,1)--¶þ´ÎÈ·ÈÏ
+			Set_XSCRIPT_Parameter(1,CaiLiaoCompound_Data[2])--1??2??
+			Set_XSCRIPT_Parameter(2,CaiLiaoCompound_Data[3])--??
+			Set_XSCRIPT_Parameter(3,CaiLiaoCompound_Data[4])--???
+			Set_XSCRIPT_Parameter(4,1)--????
 			Set_XSCRIPT_ParamCount(5)
 		Send_XSCRIPT()
 	elseif (43 == g_iYesNoType) then
@@ -1442,10 +1442,10 @@ function SelectServerQuest_Bn1Click()
 			Set_XSCRIPT_Function_Name( "RunHunShiCompound_New" )
 			Set_XSCRIPT_ScriptID(809270)
 			Set_XSCRIPT_Parameter(0,RunHunShiCompound_Data[1])--npcid
-			Set_XSCRIPT_Parameter(1,RunHunShiCompound_Data[2])--1¿ì½Ý2ÆÕÍ¨
-			Set_XSCRIPT_Parameter(2,RunHunShiCompound_Data[3])--ÀàÐÍ
-			Set_XSCRIPT_Parameter(3,RunHunShiCompound_Data[4])--×ÓÀàÐÍ
-			Set_XSCRIPT_Parameter(4,1)--¶þ´ÎÈ·ÈÏ
+			Set_XSCRIPT_Parameter(1,RunHunShiCompound_Data[2])--1??2??
+			Set_XSCRIPT_Parameter(2,RunHunShiCompound_Data[3])--??
+			Set_XSCRIPT_Parameter(3,RunHunShiCompound_Data[4])--???
+			Set_XSCRIPT_Parameter(4,1)--????
 			Set_XSCRIPT_ParamCount(5)
 		Send_XSCRIPT()
 	elseif (44 == g_iYesNoType) then
@@ -1514,7 +1514,7 @@ function SelectServerQuest_Bn1Click()
 			Set_XSCRIPT_ParamCount(2)
 		Send_XSCRIPT()
 	elseif (55 == g_iYesNoType) then
-		-- Õù°ÔÈü ÑûÇëÍæ¼ÒÈë¶Ó
+		--  ù°ÔÈü ÑûÇëÍæ¼ÒÈë¶Ó
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("Team_CallBack_InviteConfirm")
 			Set_XSCRIPT_ScriptID(889961)	
@@ -1525,7 +1525,7 @@ function SelectServerQuest_Bn1Click()
 			Set_XSCRIPT_ParamCount(4)
 		Send_XSCRIPT()
 	elseif (56 == g_iYesNoType) then
-		-- Õù°ÔÈü ½âÉ¢Õ½¶Ó
+		--  ù°ÔÈü ½âÉ¢ ½¶Ó
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("Team_CallBack_DismissConfirm")
 			Set_XSCRIPT_ScriptID(889961)	
@@ -1533,7 +1533,7 @@ function SelectServerQuest_Bn1Click()
 			Set_XSCRIPT_ParamCount(1)
 		Send_XSCRIPT()
 	elseif (57 == g_iYesNoType) then
-		-- Õù°ÔÈü ÇëÀëÕ½¶Ó
+		--  ù°ÔÈü ÇëÀë ½¶Ó
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("Team_CallBack_DeleteMemberConfirm")
 			Set_XSCRIPT_ScriptID(889961)	
@@ -1541,7 +1541,7 @@ function SelectServerQuest_Bn1Click()
 			Set_XSCRIPT_ParamCount(1)
 		Send_XSCRIPT()
 	elseif (58 == g_iYesNoType) then
-		-- Õù°ÔÈü ÍË³öÕ½¶Ó
+		--  ù°ÔÈü ÍË³ö ½¶Ó
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("Team_CallBack_QuitConfirm")
 			Set_XSCRIPT_ScriptID(889961)	
@@ -1627,7 +1627,7 @@ function SelectServerQuest_Bn1Click()
 			Set_XSCRIPT_ParamCount(4)
 		Send_XSCRIPT()
 	elseif (71 == g_iYesNoType) then
-		-- ÐÂ6v6 ½âÉ¢Õ½¶Ó
+		-- ÐÂ6v6 ½âÉ¢ ½¶Ó
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("Team_CCallBack_DismissConfirm")
 			Set_XSCRIPT_ScriptID(998497)	
@@ -1635,7 +1635,7 @@ function SelectServerQuest_Bn1Click()
 			Set_XSCRIPT_ParamCount(1)
 		Send_XSCRIPT()
 	elseif (72 == g_iYesNoType) then
-		-- ÐÂ6v6 ÍË³öÕ½¶Ó
+		-- ÐÂ6v6 ÍË³ö ½¶Ó
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("Team_CCallBack_QuitConfirm")
 			Set_XSCRIPT_ScriptID(998497)	
@@ -1666,7 +1666,7 @@ function SelectServerQuest_Bn1Click()
 			Set_XSCRIPT_Parameter(0, g_SelecQuest_Data[1])
 			Set_XSCRIPT_ParamCount(1)
 		Send_XSCRIPT()
-	elseif 66 == g_iYesNoType then --±äÐÔÈ·ÈÏ½çÃæ
+	elseif 66 == g_iYesNoType then --??????
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("ChangeSexSure")
 			Set_XSCRIPT_ScriptID(250557)
@@ -1720,7 +1720,7 @@ function SelectServerQuest_Bn2Click()
 	elseif( 9 == g_iYesNoType ) then
 		GameProduceLogin:PassportButNotReg();
 	elseif( 10 == g_iYesNoType ) then
-		AxTrace( 0,0, "ÊÇ·ñ¼¤»î_µã»÷ÁËNO");
+		AxTrace( 0,0, "Hay không kích hoÕt_Ði¬m Kích Li­u NO");
 	elseif (55 == g_iYesNoType) then
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("Team_CallBack_InviteConfirm")
@@ -1783,7 +1783,7 @@ function SelectServerQuest_TimeOut()
 end
 
 function SelectServerQuest_Frame_OnHiden()
-	if(IsWindowShow("AntiJDY")) then          --¼òµ¥ÓÎ»¥³â½çÃæÏÔÊ¾Ê±£¬²»¼¤»î¿ì½Ý¼ü for 69994
+	if(IsWindowShow("AntiJDY")) then          --??????????,?????? for 69994
 		DataPool:SetCanUseHotKey(0);
 	else
 		DataPool:SetCanUseHotKey(1);

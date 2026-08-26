@@ -43,24 +43,24 @@ local g_HerosReturns_Horizons_JiangHu={
 		[1] = { Name="#{HLYH_220613_41}", Level="#{HLYH_220613_42}", Image="set:PetSoulEquip1 image:PetSoulEquip1_9", Desc="#{HLYH_220613_4}", 
 			TitleImage="set:HerosReturns07 image:Subtitle_Shouhun", TagImage="set:HerosReturns07 image:Tag_Function",
 			Task={ 
-				[1]={ Name="#{HLYH_220613_9}", id=0, Bonus=3, xPos=89, zPos=139, sceneId=1, NpcName="‘∆…Ó…Ó" },
-				[2]={ Name="#{HLYH_220613_10}", id=1, Bonus=5, xPos=89, zPos=139, sceneId=1, NpcName="‘∆…Ó…Ó" },
+				[1]={ Name="#{HLYH_220613_9}", id=0, Bonus=3, xPos=89, zPos=139, sceneId=1, NpcName="V‚n thßt s‚u" },
+				[2]={ Name="#{HLYH_220613_10}", id=1, Bonus=5, xPos=89, zPos=139, sceneId=1, NpcName="V‚n thßt s‚u" },
 				} 
 		},
 		--«‡« ‘¡∂
 		[2] = { Name="#{HLYH_220613_43}", Level="#{HLYH_220613_44}", Image="set:Huodong_14 image:Huodong_14_4", Desc="#{HLYH_220613_5}", 
 			TitleImage="set:HerosReturns07 image:Subtitle_Qingqiu", TagImage="set:HerosReturns07 image:Tag_Raid",
 			Task={ 
-				[1]={ Name="#{HLYH_220613_11}", id=2, Bonus=5, xPos=134, zPos=81, sceneId=1, NpcName="‘∆¿º÷€" },
-				[2]={ Name="#{HLYH_220613_12}", id=3, Bonus=8, xPos=134, zPos=81, sceneId=1, NpcName="‘∆¿º÷€" },
+				[1]={ Name="#{HLYH_220613_11}", id=2, Bonus=5, xPos=134, zPos=81, sceneId=1, NpcName="V‚n Lan Ch‚u" },
+				[2]={ Name="#{HLYH_220613_12}", id=3, Bonus=8, xPos=134, zPos=81, sceneId=1, NpcName="V‚n Lan Ch‚u" },
 				} 
 		},
 		--Ω£◊›…Ω∫”
 		[3] = { Name="#{HLYH_220613_45}", Level="#{HLYH_220613_46}", Image="set:Huodong_13 image:Huodong_13_9", Desc="#{HLYH_220613_6}", 
 			TitleImage="set:HerosReturns07 image:Subtitle_Jianzong", TagImage="set:HerosReturns07 image:Tag_Activity",
 			Task={ 
-				[1]={ Name="#{HLYH_220613_13}", id=4, Bonus=5, xPos=166, zPos=108, sceneId=0, NpcName="÷‹…–" },
-				[2]={ Name="#{HLYH_220613_14}", id=5, Bonus=8, xPos=166, zPos=108, sceneId=0, NpcName="÷‹…–" },
+				[1]={ Name="#{HLYH_220613_13}", id=4, Bonus=5, xPos=166, zPos=108, sceneId=0, NpcName="Chu Thﬂ˛ng" },
+				[2]={ Name="#{HLYH_220613_14}", id=5, Bonus=8, xPos=166, zPos=108, sceneId=0, NpcName="Chu Thﬂ˛ng" },
 				} 
 		},
 	},
@@ -69,54 +69,54 @@ local g_HerosReturns_Horizons_JiangHu={
 		[1] = { Name="#{HLYH_220613_41}", Level="#{HLYH_220613_42}", Image="set:PetSoulEquip1 image:PetSoulEquip1_9", Desc="#{HLYH_220613_4}", 
 			TitleImage="set:HerosReturns07 image:Subtitle_Shouhun", TagImage="set:HerosReturns07 image:Tag_Function",
 			Task={ 
-				[1]={ Name="#{HLYH_220613_9}", id=0, Bonus=3, xPos=89, zPos=139, sceneId=1, NpcName="‘∆…Ó…Ó" },
-				[2]={ Name="#{HLYH_220613_10}", id=1, Bonus=5, xPos=89, zPos=139, sceneId=1, NpcName="‘∆…Ó…Ó" },
+				[1]={ Name="#{HLYH_220613_9}", id=0, Bonus=3, xPos=89, zPos=139, sceneId=1, NpcName="V‚n thßt s‚u" },
+				[2]={ Name="#{HLYH_220613_10}", id=1, Bonus=5, xPos=89, zPos=139, sceneId=1, NpcName="V‚n thßt s‚u" },
 				} 
 		},
 		--«‡« ‘¡∂
 		[2] = {Name="#{HLYH_220613_43}", Level="#{HLYH_220613_44}", Image="set:Huodong_14 image:Huodong_14_4", Desc="#{HLYH_220613_5}", 
 			TitleImage="set:HerosReturns07 image:Subtitle_Qingqiu", TagImage="set:HerosReturns07 image:Tag_Raid",
 			Task={ 
-				[1]={ Name="#{HLYH_220613_11}", id=2, Bonus=5, xPos=134, zPos=81, sceneId=1, NpcName="‘∆¿º÷€" },
-				[2]={ Name="#{HLYH_220613_12}", id=3, Bonus=8, xPos=134, zPos=81, sceneId=1, NpcName="‘∆¿º÷€" },
+				[1]={ Name="#{HLYH_220613_11}", id=2, Bonus=5, xPos=134, zPos=81, sceneId=1, NpcName="V‚n Lan Ch‚u" },
+				[2]={ Name="#{HLYH_220613_12}", id=3, Bonus=8, xPos=134, zPos=81, sceneId=1, NpcName="V‚n Lan Ch‚u" },
 				} 
 		},
 		--Ω£◊›…Ω∫”
 		[3] = { Name="#{HLYH_220613_45}", Level="#{HLYH_220613_46}", Image="set:Huodong_13 image:Huodong_13_9", Desc="#{HLYH_220613_6}", 
 			TitleImage="set:HerosReturns07 image:Subtitle_Jianzong", TagImage="set:HerosReturns07 image:Tag_Activity",
 			Task={ 
-				[1]={ Name="#{HLYH_220613_13}", id=4, Bonus=5, xPos=166, zPos=108, sceneId=0, NpcName="÷‹…–" },
-				[2]={ Name="#{HLYH_220613_14}", id=5, Bonus=8, xPos=166, zPos=108, sceneId=0, NpcName="÷‹…–" },
+				[1]={ Name="#{HLYH_220613_13}", id=4, Bonus=5, xPos=166, zPos=108, sceneId=0, NpcName="Chu Thﬂ˛ng" },
+				[2]={ Name="#{HLYH_220613_14}", id=5, Bonus=8, xPos=166, zPos=108, sceneId=0, NpcName="Chu Thﬂ˛ng" },
 				} 
 		},
 		--Œ‰ªÍ
 		[4] = { Name="#{HLYH_220613_47}", Level="#{HLYH_220613_48}", Image="set:WuhunTupu1 image:WuhunTupu1_4", Desc="#{HLYH_220613_7}", 
 			TitleImage="set:HerosReturns07 image:Subtitle_Wuhun", TagImage="set:HerosReturns07 image:Tag_Function",
 			Task={ 
-				[1]={ Name="#{HLYH_220613_15}", id=6, Bonus=3, xPos=136, zPos=180, sceneId=2, NpcName="Œ‰‘Û" },
-				[2]={ Name="#{HLYH_220613_16}", id=7, Bonus=3, xPos=136, zPos=180, sceneId=2, NpcName="Œ‰‘Û" },
+				[1]={ Name="#{HLYH_220613_15}", id=6, Bonus=3, xPos=136, zPos=180, sceneId=2, NpcName="Vı Tr’ch" },
+				[2]={ Name="#{HLYH_220613_16}", id=7, Bonus=3, xPos=136, zPos=180, sceneId=2, NpcName="Vı Tr’ch" },
 				} 
 		},
 		--ÀÆ‘¬…Ω◊Ø
 		[5] = { Name="#{HLYH_220613_49}", Level="#{HLYH_220613_48}", Image="set:Huodong_12 image:Huodong_12_9", Desc="#{HLYH_220613_8}", 
 			TitleImage="set:HerosReturns07 image:Subtitle_Shuiyue", TagImage="set:HerosReturns07 image:Tag_Raid",
 			Task={ 
-				[1]={ Name="#{HLYH_220613_17}", id=8, Bonus=5, xPos=128, zPos=107, sceneId=1, NpcName="…Ú“π”Í" },
-				[2]={ Name="#{HLYH_220613_18}", id=9, Bonus=8, xPos=128, zPos=107, sceneId=1, NpcName="…Ú“π”Í" },
+				[1]={ Name="#{HLYH_220613_17}", id=8, Bonus=5, xPos=128, zPos=107, sceneId=1, NpcName="Th¶m d’ v˚" },
+				[2]={ Name="#{HLYH_220613_18}", id=9, Bonus=8, xPos=128, zPos=107, sceneId=1, NpcName="Th¶m d’ v˚" },
 				} 
 		},
 	},
 };
 
 
---‘§º”‘ÿ∫Ø ˝£¨ø…“‘∂¯«“÷ªƒ‹‘⁄’‚¿Ô◊¢≤·Ω≈±æπÿ–ƒµƒ ¬º˛
+--‘§º”‘ÿ∫Ø ˝£¨ø…“‘∂¯«“÷ªƒ‹‘⁄†‚¿Ô◊¢≤·Ω≈±æπÿ–ƒµƒ ¬º˛
 function HerosReturns_Horizons_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
 	this:RegisterEvent("HUILIU_SHOW_JIANGHUJIANWEN");
 
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--Ω¯≥°æ∞πÿ±’ΩÁ√Ê
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--???????
 end
 
 --º”‘ÿ¥∞ø⁄µƒ ±∫Úµ˜”√µƒ∫Ø ˝£¨º”‘ÿ¥∞ø⁄ ±µ˜”√“ª¥Œ
@@ -445,10 +445,10 @@ function HerosReturns_Horizons_FenYe_Clicked(index)
 	end
 	
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "OnOpenUI" ); 		-- Ω≈±æ∫≈
-		Set_XSCRIPT_ScriptID( 808110 );						-- Ω≈±æ±‡∫≈
+		Set_XSCRIPT_Function_Name( "OnOpenUI" ); 		-- ???
+		Set_XSCRIPT_ScriptID( 808110 );						-- ????
 		Set_XSCRIPT_Parameter(0, index)
-		Set_XSCRIPT_ParamCount( 1 );						-- ≤Œ ˝∏ˆ ˝
+		Set_XSCRIPT_ParamCount( 1 );						-- ????
 	Send_XSCRIPT()
 	
 	
@@ -457,10 +457,10 @@ end
 
 function HerosReturns_Horizons_OnClickHelp()
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "OnShowHelp" ); 		-- Ω≈±æ∫≈
-		Set_XSCRIPT_ScriptID( 808110 );						-- Ω≈±æ±‡∫≈
+		Set_XSCRIPT_Function_Name( "OnShowHelp" ); 		-- ???
+		Set_XSCRIPT_ScriptID( 808110 );						-- ????
 		Set_XSCRIPT_Parameter(0, 1)
-		Set_XSCRIPT_ParamCount( 1 );						-- ≤Œ ˝∏ˆ ˝
+		Set_XSCRIPT_ParamCount( 1 );						-- ????
 	Send_XSCRIPT()
 end
 

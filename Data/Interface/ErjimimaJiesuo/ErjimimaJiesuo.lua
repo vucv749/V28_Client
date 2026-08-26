@@ -1,5 +1,5 @@
-local g_CurrectOperate = 0;  --1Îªpk×´Ì¬ÇĞ»»ĞèÒªµÄÊäÈë´°¿Ú. 2Îª´ò¿ªÒøĞĞÊ±ºòĞèÒªµÄÊä³ö´°¿Ú
-local g_PKModeWant = 0;  --1Îªpk×´Ì¬ÇĞ»»ĞèÒªµÄÊäÈë´°¿Ú.
+local g_CurrectOperate = 0;  --1?pk???????????. 2??????????????
+local g_PKModeWant = 0;  --1?pk???????????.
 
 
 function ErjimimaJiesuo_PreLoad()
@@ -73,7 +73,7 @@ function ErjimimaJiesuo_OK_Click()
 		local strPassword = ErjimimaJiesuo_Jiesuo:GetText();
 		local iLen = string.len(strPassword);
 		if(iLen < 4) then
-			ShowSystemTipInfo( "#{UITEXT_PWTOOSHORT}" )   --("ÃÜÂë²»ÄÜÉÙÓÚ4¸ö×Ö·û£¡");
+			ShowSystemTipInfo( "#{UITEXT_PWTOOSHORT}" )   --("M§t mã không th¬ Thi¬u Vu 4Cá tñ phù!");
 			return;
 		end
 		BankAcquireListWithPW( strPassword )
@@ -86,7 +86,7 @@ function ErjimimaJiesuo_OK_Click()
 		local strPassword = ErjimimaJiesuo_Jiesuo:GetText();
 		local iLen = string.len(strPassword);
 		if(iLen < 4) then
-			ShowSystemTipInfo( "#{UITEXT_PWTOOSHORT}" )   --("ÃÜÂë²»ÄÜÉÙÓÚ4¸ö×Ö·û£¡");
+			ShowSystemTipInfo( "#{UITEXT_PWTOOSHORT}" )   --("M§t mã không th¬ Thi¬u Vu 4Cá tñ phù!");
 			return;
 		end
 		Player:ChangePVPModeWithPassword( g_PKModeWant, strPassword )
@@ -99,7 +99,7 @@ function ErjimimaJiesuo_OK_Click()
 	local iLen = string.len(strPassword);
 	if(iLen < 4) then
 	
-		ShowSystemTipInfo("ÃÜÂë²»ÄÜÉÙÓÚ4¸ö×Ö·û£¡");
+		ShowSystemTipInfo("M§t mã không th¬ Thi¬u Vu 4Cá tñ phù!");
 		return;
 	end;
 	-- ½âËøÃÜÂë¡£

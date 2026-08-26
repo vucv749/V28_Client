@@ -11,26 +11,26 @@ local g_Impact_Index = -1
 --每天对应的菜系
 local g_Menu = {
 	--[20211014]={name="#{KYX_20210715_64}",id=1}, --川菜 1
-	[20211015]={name="#{KYX_20210715_65}",id=2}, --鲁菜 2
-	[20211016]={name="#{KYX_20210715_69}",id=6}, --闽菜 6
-	[20211017]={name="#{KYX_20210715_68}",id=5}, --浙菜 5
-	[20211018]={name="#{KYX_20210715_70}",id=7}, --湘菜 7
-	[20211019]={name="#{KYX_20210715_71}",id=8}, --徽菜 8
-	[20211020]={name="#{KYX_20210715_66}",id=3}, --粤菜 3
-	[20211021]={name="#{KYX_20210715_67}",id=4}, --苏菜 4
-	[20211022]={name="#{KYX_20210715_65}",id=2}, --鲁菜 2
-	[20211023]={name="#{KYX_20210715_68}",id=5}, --浙菜 5
-	[20211024]={name="#{KYX_20210715_71}",id=8}, --徽菜 8
-	[20211025]={name="#{KYX_20210715_67}",id=4}, --苏菜 4
-	[20211026]={name="#{KYX_20210715_64}",id=1}, --川菜 1
-	[20211027]={name="#{KYX_20210715_69}",id=6}, --闽菜 6
-	[20211028]={name="#{KYX_20210715_70}",id=7}, --湘菜 7
-	[20211029]={name="#{KYX_20210715_66}",id=3}, --粤菜 3
-	[20211030]={name="#{KYX_20210715_65}",id=2}, --鲁菜 2
-	[20211031]={name="#{KYX_20210715_67}",id=4}, --苏菜 4
-	[20211101]={name="#{KYX_20210715_64}",id=1}, --川菜 1
-	[20211102]={name="#{KYX_20210715_66}",id=3}, --粤菜 3
-	[20211103]={name="#{KYX_20210715_68}",id=5}, --浙菜 5
+	[20211015]={name="#{KYX_20210715_65}",id=2}, --?? 2
+	[20211016]={name="#{KYX_20210715_69}",id=6}, --?? 6
+	[20211017]={name="#{KYX_20210715_68}",id=5}, --?? 5
+	[20211018]={name="#{KYX_20210715_70}",id=7}, --?? 7
+	[20211019]={name="#{KYX_20210715_71}",id=8}, --?? 8
+	[20211020]={name="#{KYX_20210715_66}",id=3}, --?? 3
+	[20211021]={name="#{KYX_20210715_67}",id=4}, --?? 4
+	[20211022]={name="#{KYX_20210715_65}",id=2}, --?? 2
+	[20211023]={name="#{KYX_20210715_68}",id=5}, --?? 5
+	[20211024]={name="#{KYX_20210715_71}",id=8}, --?? 8
+	[20211025]={name="#{KYX_20210715_67}",id=4}, --?? 4
+	[20211026]={name="#{KYX_20210715_64}",id=1}, --?? 1
+	[20211027]={name="#{KYX_20210715_69}",id=6}, --?? 6
+	[20211028]={name="#{KYX_20210715_70}",id=7}, --?? 7
+	[20211029]={name="#{KYX_20210715_66}",id=3}, --?? 3
+	[20211030]={name="#{KYX_20210715_65}",id=2}, --?? 2
+	[20211031]={name="#{KYX_20210715_67}",id=4}, --?? 4
+	[20211101]={name="#{KYX_20210715_64}",id=1}, --?? 1
+	[20211102]={name="#{KYX_20210715_66}",id=3}, --?? 3
+	[20211103]={name="#{KYX_20210715_68}",id=5}, --?? 5
 }
 
 
@@ -40,7 +40,7 @@ local g_Menu = {
 function Mingcaitijiao_PreLoad()
 
 	this:RegisterEvent("UI_COMMAND",true)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
 	this:RegisterEvent("ADJEST_UI_POS",false)
 	this:RegisterEvent("OBJECT_CARED_EVENT",false)
@@ -117,7 +117,7 @@ function Mingcaitijiao_OnEvent(event)
 		if(tonumber(arg0) ~= g_objCared) then
 			return
 		end
-		-- 如果和NPC的距离大于一定距离或者被删除，自动关闭
+		-- 如果和NPC的距离大于一定距离或犨被删除，自动关睜
         if(arg1 == "distance" and tonumber(arg2)>3 or arg1=="destroy") then
             Mingcaitijiao_OnHiden()
         end
@@ -126,8 +126,8 @@ function Mingcaitijiao_OnEvent(event)
 	
 	elseif ( event == "UPDATE_KAIYANXI_SUBMIT" ) then
 		
-		local param1 = tonumber(arg0) ---1:代表点击背包中的物品; 1，代表拖拽，到提交界面第1个槽；2，代表拖拽，到提交界面第2个槽
-		local param2 = tonumber(arg1) --背包中点击或者拖拽的物品，在背包中的格子序号
+		local param1 = tonumber(arg0) ---1:??????????; 1,????,??????1??;2,????,??????2??
+		local param2 = tonumber(arg1) --????????????,?????????
 		
 		--点击背包
 		if param1 == -1 then
@@ -155,7 +155,7 @@ function Mingcaitijiao_OnEvent(event)
 				param1 = 2
 			else
 				PushDebugMessage("#{KYX_20210715_73}")
-				--两个空格都有了，就不能再放了
+				--两个繝格都有了，就不能再放了
 				return
 			end		
 		--拖拽

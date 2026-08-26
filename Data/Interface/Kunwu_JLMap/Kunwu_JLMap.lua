@@ -21,19 +21,19 @@ function Kunwu_JLMap_OnLoad()
 
 	g_Kunwu_JLMap_Frame_UnifiedPosition = Kunwu_JLMap_Frame:GetProperty("UnifiedPosition");
 	
-	g_Kunwu_JLMap_IconList[1] = Kunwu_JLMap_Rongyan_Client --ÈÛÑÒò×¾°
-	g_Kunwu_JLMap_IconList[2] = Kunwu_JLMap_Milin_Client --ÃÜÁÖò×¾°
-	g_Kunwu_JLMap_IconList[3] = Kunwu_JLMap_Qinghu_Client --Çåºþò×¾°
-	g_Kunwu_JLMap_IconList[4] = Kunwu_JLMap_Fanlin_Client --·±ÁÖµº
-	g_Kunwu_JLMap_IconList[5] = Kunwu_JLMap_Dihuo_Client --µØ»ðµº
-	g_Kunwu_JLMap_IconList[6] = Kunwu_JLMap_Chenyue_Client --³ÁÔÂµº
+	g_Kunwu_JLMap_IconList[1] = Kunwu_JLMap_Rongyan_Client --????
+	g_Kunwu_JLMap_IconList[2] = Kunwu_JLMap_Milin_Client --????
+	g_Kunwu_JLMap_IconList[3] = Kunwu_JLMap_Qinghu_Client --????
+	g_Kunwu_JLMap_IconList[4] = Kunwu_JLMap_Fanlin_Client --???
+	g_Kunwu_JLMap_IconList[5] = Kunwu_JLMap_Dihuo_Client --???
+	g_Kunwu_JLMap_IconList[6] = Kunwu_JLMap_Chenyue_Client --???
 
-	g_Kunwu_JLMap_ButtonList[1] = Kunwu_JLMap_Change_Rongyan --ÈÛÑÒò×¾°
-	g_Kunwu_JLMap_ButtonList[2] = Kunwu_JLMap_Change_Milin --ÃÜÁÖò×¾°
-	g_Kunwu_JLMap_ButtonList[3] = Kunwu_JLMap_Change_Qinghu --Çåºþò×¾°
-	g_Kunwu_JLMap_ButtonList[4] = Kunwu_JLMap_Change_Fanlin --·±ÁÖµº
-	g_Kunwu_JLMap_ButtonList[5] = Kunwu_JLMap_Change_Dihuo --µØ»ðµº
-	g_Kunwu_JLMap_ButtonList[6] = Kunwu_JLMap_Change_Chenyue --³ÁÔÂµº
+	g_Kunwu_JLMap_ButtonList[1] = Kunwu_JLMap_Change_Rongyan --????
+	g_Kunwu_JLMap_ButtonList[2] = Kunwu_JLMap_Change_Milin --????
+	g_Kunwu_JLMap_ButtonList[3] = Kunwu_JLMap_Change_Qinghu --????
+	g_Kunwu_JLMap_ButtonList[4] = Kunwu_JLMap_Change_Fanlin --???
+	g_Kunwu_JLMap_ButtonList[5] = Kunwu_JLMap_Change_Dihuo --???
+	g_Kunwu_JLMap_ButtonList[6] = Kunwu_JLMap_Change_Chenyue --???
 
 end
 

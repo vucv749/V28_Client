@@ -1,16 +1,16 @@
 --CaiLing_Button界面
-local g_CaiLing_Button_BtnCD = 2000 --2秒cd
+local g_CaiLing_Button_BtnCD = 2000 --2?cd
 --变量
 local g_CaiLing_Button_Param_BusObjId = -1
-local g_CaiLing_Button_Param_IsEnable = 0--处于不能点击按钮的tick时间
+local g_CaiLing_Button_Param_IsEnable = 0--?????????tick??
 local g_CaiLing_Button_Param_CouldClick = 0
 local g_CaiLing_Button_Param_YPos = -40
 --控件
 local g_CaiLing_Button_Frame_UnifiedXPosition
 local g_CaiLing_Button_Frame_UnifiedYPosition
 --按钮cd动画
-local g_CaiLing_Button_FrameAnimate_Internal = 100 -- 每100ms
-local g_CaiLing_Button_FrameAnimate_Step = 4 -- 4像素
+local g_CaiLing_Button_FrameAnimate_Internal = 100 -- ?100ms
+local g_CaiLing_Button_FrameAnimate_Step = 4 -- 4??
 local g_CaiLing_Button_FrameAnimate_InitYPos = -40
 local g_CaiLing_Button_FrameAnimate_EndYPos = 40
 --uicommand
@@ -21,7 +21,7 @@ function CaiLing_Button_PreLoad()
 	-- uicommand
 	this:RegisterEvent("UI_COMMAND")
 	-- 游戏窗口尺寸发生了变化
-	this:RegisterEvent("ADJEST_UI_POS", false) --第二个参数代表界面隐藏时事件是否有效,默认为true
+	this:RegisterEvent("ADJEST_UI_POS", false) --??????????????????,???true
 	-- 游戏分辨率发生了变化
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED", false)
 	-- 切换场景
@@ -75,7 +75,7 @@ function CaiLing_Button_OnEvent(event)
 				CaiLing_Button_OffEffect:SetProperty("UnifiedYPosition", "{0.5,"..g_CaiLing_Button_FrameAnimate_InitYPos.."}")
 			end
 		elseif uicmdOp == g_CaiLing_Button_Uicmd_Op.cdBtn then
-			if this:IsVisible() and g_CaiLing_Button_Param_IsEnable == 1 then--成功增加灵气 通知界面按钮置灰2秒
+			if this:IsVisible() and g_CaiLing_Button_Param_IsEnable == 1 then--?????? ????????2?
 				CaiLing_Button_Btn:Disable()
 				CaiLing_Button_OnEffect:Hide()
 				g_CaiLing_Button_Param_CouldClick = g_CaiLing_Button_Param_CouldClick - 1
@@ -146,13 +146,13 @@ end
 --开启界面设置变量
 function CaiLing_Button_OnOpen(busObjId)
 	g_CaiLing_Button_Param_BusObjId = busObjId
-	g_CaiLing_Button_Param_IsEnable = 0 --刚打开界面都是处于不能点击状态
+	g_CaiLing_Button_Param_IsEnable = 0 --???????????????
 	g_CaiLing_Button_Param_CouldClick = 0
 	g_CaiLing_Button_Param_YPos = g_CaiLing_Button_FrameAnimate_InitYPos
 	CaiLing_Button_OffEffect:SetProperty("UnifiedYPosition", "{0.5,"..g_CaiLing_Button_FrameAnimate_InitYPos.."}")
 end
 
---关闭界面初始化变量
+--关睜界面初始化变量
 function CaiLing_Button_OnClose()
 	g_CaiLing_Button_Param_BusObjId = -1
 	g_CaiLing_Button_Param_IsEnable = 0
@@ -161,7 +161,7 @@ function CaiLing_Button_OnClose()
 	CaiLing_Button_OffEffect:SetProperty("UnifiedYPosition", "{0.5,"..g_CaiLing_Button_FrameAnimate_InitYPos.."}")
 end
 
---关闭所有Timer
+--关睜所有Timer
 function CaiLing_Button_KillAllTimer()
 	KillTimer("CaiLing_Buttion_OffEffectTimer()")
 end

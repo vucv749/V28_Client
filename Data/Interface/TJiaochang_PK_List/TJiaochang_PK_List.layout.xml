@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>
+﻿<?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrame1" Name="TJiaochang_PK_List_Frame">
     <Property Name="UnifiedSize" Value="{{0.000000,620.000000},{0.000000,442.000000}}"/>
@@ -14,7 +14,7 @@
         <Property Name="HorzFormatting" Value="HorzCentred" />
         <Property Name="VertFormatting" Value="VertCentred" />
         <Property Name="RiseOnClick" Value="False" />
-        <Property Name="Text" Value="校场挑战列表" />
+        <Property Name="Text" Value="Hiệu Trường khiêu chiến Liệt Biểu" />
         <Property Name="TextColor" Value="FFFFFF00"/>
       </Window>
     </Window>
@@ -39,13 +39,13 @@
         <Window Type="TLBB_MultiColumnList" Name="TJiaochang_PK_List_Title">
           <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
           <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
-          <Property Name="ColumnHeader" Value="text:     挑战者的名称 width:0.34 id:0" />
-          <Property Name="ColumnHeader" Value="text:门派 width:0.07 id:1" />
-          <Property Name="ColumnHeader" Value="text:等级 width:0.07 id:2" />
+          <Property Name="ColumnHeader" Value="Text: Người khiêu chiến Đích tên width: 0. 34 id: 0" />
+          <Property Name="ColumnHeader" Value="Text: Môn phái width: 0. 07 id: 1" />
+          <Property Name="ColumnHeader" Value="Text: Cấp bậc width: 0. 07 id: 2" />
           <Property Name="ColumnHeader" Value="text: width:0.04 id:3" />
-          <Property Name="ColumnHeader" Value="text:     挑战者的名称 width:0.34 id:4" />
-          <Property Name="ColumnHeader" Value="text:门派width:0.07 id:5" />
-          <Property Name="ColumnHeader" Value="text:等级 width:0.07 id:6" />
+          <Property Name="ColumnHeader" Value="Text: Người khiêu chiến Đích tên width: 0. 34 id: 4" />
+          <Property Name="ColumnHeader" Value="Text: Môn phái width: 0. 07 id: 5" />
+          <Property Name="ColumnHeader" Value="Text: Cấp bậc width: 0. 07 id: 6" />
           <Property Name="ColumnsSizable" Value="False" />
           <Property Name="ColumnsMovable" Value="False" />
           <Property Name="ColumnsAdjust" Value="True" />
@@ -431,19 +431,19 @@
       <Window Type="TLBB_ButtonCommon" Name="TJiaochang_PK_List_RefreshButton">
         <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,20.000000}}"/>
         <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{1.000000,-20.000000}}"/>
-        <Property Name="Text" Value="刷新信息" />
+        <Property Name="Text" Value="Nảy sinh cái mới tin tức" />
         <Event Name="Clicked" Function="TJiaochang_PK_List_RefreshButtonClicked();" />
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="TJiaochang_PK_List_WatchButton">
         <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,20.000000}}"/>
         <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{1.000000,-20.000000}}"/>
-        <Property Name="Text" Value="观战" />
+        <Property Name="Text" Value="Đang xem cuộc chiến" />
         <Event Name="Clicked" Function="TJiaochang_PK_List_WatchButtonClicked();" />
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="TJiaochang_PK_List_UpButton">
         <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
         <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{1.000000,-20.000000}}"/>
-        <Property Name="Text" Value="上一页"/>
+        <Property Name="Text" Value="Thượng một tờ"/>
         <Event Name="Clicked" Function="TJiaochang_PK_List_PrePage();" />
       </Window>
       <Window Type="TLBB_SimpleText" Name="TJiaochang_PK_List_CountFenye">
@@ -455,7 +455,7 @@
       <Window Type="TLBB_ButtonCommon" Name="TJiaochang_PK_List_DownButton">
         <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
         <Property Name="UnifiedPosition" Value="{{0.500000,40.000000},{1.000000,-20.000000}}"/>
-        <Property Name="Text" Value="下一页"/>
+        <Property Name="Text" Value="Tiếp theo Diệp"/>
         <Event Name="Clicked" Function="TJiaochang_PK_List_NextPage();" />
       </Window>
     </Window>

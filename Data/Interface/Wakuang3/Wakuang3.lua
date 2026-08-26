@@ -16,7 +16,7 @@ local g_Wakuang3_scenedata = {
 }
 function Wakuang3_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
-	--离开场景，自动关闭
+	--离开场景，自动关睜
 	this:RegisterEvent("PLAYER_LEAVE_WORLD", false)	
 
 	-- 游戏窗口尺寸发生了变化

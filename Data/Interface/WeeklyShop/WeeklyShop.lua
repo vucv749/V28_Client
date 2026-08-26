@@ -36,7 +36,7 @@ function WeeklyShop_OnEvent(event)
 		if(tonumber(arg0) ~= objCared) then
 			return;
 		end
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			this:Hide();
 			--取消关心
@@ -105,7 +105,7 @@ function WeeklyShop_OnShown()
 
         local itemname = DataPool:LuaFnGetItemNameByTableIndex(itemid)
         g_WeeklyShop_itemctl[i].name:SetText(itemname) 
-        g_WeeklyShop_itemctl[i].money:SetText("元宝:"..yuanbaonum ) 
+        g_WeeklyShop_itemctl[i].money:SetText("Nguy阯 b鋙:"..yuanbaonum ) 
        
         local theAction = DataPool:CreateBindActionItemForShow(itemid, itemnum)
 	    if theAction:GetID() ~= 0 then

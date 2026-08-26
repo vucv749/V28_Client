@@ -55,7 +55,7 @@ function Stiletto_OnEvent(event)
 			return;
 		end
 		
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			
 			--È¡Ïû¹ØÐÄ
@@ -154,20 +154,20 @@ function Stiletto_Update(pos1,pos0)
 		  local Need_Item_Count1 =0;
 			
 			--Need_Item,Need_Money,Need_Item_Count,Bore_Count=LifeAbility : Stiletto_Preparation(pos_packet);
-			Need_Item1,Need_Money1,Need_Item_Count1,Bore_Count1=LifeAbility : Stiletto_Preparation(pos_packet, 1); --1±íÊ¾È¡µÚÒ»×éÏûºÄÖµ
+			Need_Item1,Need_Money1,Need_Item_Count1,Bore_Count1=LifeAbility : Stiletto_Preparation(pos_packet, 1); --1?????????
 			
 			if Need_Item1 == 0 then
 				return
 			end
 					
 			if Bore_Count1 > 2 then --add:lby 20080521 
-				PushDebugMessage("´Ë´¦Ö»ÄÜ´òÇ°3¸ö¿×")
+				PushDebugMessage("N½i này chï có th¬ Tá Ti«n 3Cá Kh±ng")
 				Stiletto_Clear()
 				return
 			end
 			
 			if Need_Item1 < -1 then
-				PushDebugMessage("´ËÎïÆ·ÎÞ·¨Ôö¼Ó°¼²Û")
+				PushDebugMessage("V§t ¤y Ph¦m không th¬ gia tång Ao Tào")
 				return
 			end
 			
@@ -197,7 +197,7 @@ function Stiletto_Update(pos1,pos0)
 			return;
 		end
 		Stiletto_Money : SetProperty("MoneyNumber", tostring(Need_Money));
-		Stiletto_State : SetText("µ±Ç°°¼²ÛÊý:"..Bore_Count..";¿ÉÒÔÔö¼Ó°¼²ÛÊý:"..tostring(3-Bore_Count))
+		Stiletto_State : SetText("Trß¾c m£t Ao Tào S±:"..Bore_Count.."; Có th¬ gia tång Ao Tào S±:"..tostring(3-Bore_Count))
 	elseif pos_ui == 2 then
 		
 		local Item_Class = PlayerPackage : GetItemSubTableIndex(pos_packet,0)
@@ -208,8 +208,8 @@ function Stiletto_Update(pos1,pos0)
 		
 		
 		
-	  if itemindex == 20109101 or itemindex == 20310111 then  --add:lby 20080521µã½ðÖ®¼ä²»ÄÜ·ÅÈë£¬º®Óñ¾«´â²»ÄÜ·ÅÈë
-	 		PushDebugMessage("¸ÃÎïÆ·ÎÞ·¨ÔÚ´Ë´¦Ê¹ÓÃ")
+	  if itemindex == 20109101 or itemindex == 20310111 then  --add:lby 20080521????????,????????
+	 		PushDebugMessage("Cai v§t ph¦m không th¬ · ch² này sØ døng")
 	 		return
 	  end
 
@@ -244,18 +244,18 @@ end
 
 function Stiletto_Buttons_Clicked()
 	if MATERIAL_QUALITY == -1 then
-		PushDebugMessage("Çë·ÅÈë´ò¿×²ÄÁÏ")
+		PushDebugMessage("Thïnh ð¬ vào khoan tài li®u")
 		return
 	end
 	if EQUIP_QUALITY ~= -1 then
 		if Need_Item == -2 then
-			PushDebugMessage("´ËÎïÆ·ÎÞ·¨Ôö¼Ó°¼²Û")
+			PushDebugMessage("V§t ¤y Ph¦m không th¬ gia tång Ao Tào")
 		elseif Need_Item == -3 then
-			PushDebugMessage("°¼²ÛÒÑ´ïµ½×î´óÊýÁ¿")
+			PushDebugMessage("Ao Tào Dî ðÕt t¾i l¾n nh¤t s¯ lßþng")
 --		elseif DataPool:GetPlayerMission_ItemCountNow(Need_Item) < Need_Item_Count then
 --			PushDebugMessage("È±ÉÙ²ÄÁÏ")
 		elseif Player:GetData("MONEY") + Player:GetData("MONEY_JZ") < Need_Money then
-			PushDebugMessage("½ðÇ®²»×ã")
+			PushDebugMessage("Không ðü ngân lßþng")
 		else
 			
 			local Notify = 0			
@@ -280,7 +280,7 @@ function Stiletto_Buttons_Clicked()
 			Send_XSCRIPT();
 		end
 	else
-		PushDebugMessage("Çë·ÅÈëÒ»¸ö×°±¸")
+		PushDebugMessage("Thïnh ð¬ vào mµt cái trang b¸")
 	end
 	
 end
@@ -299,7 +299,7 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØÐÄNPC£¬
---ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
 --Èç¹ûÓÐµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓÐµÄ¡°¹ØÐÄ¡±
 --=========================================================
 function BeginCareObject_Stiletto(objCaredId)

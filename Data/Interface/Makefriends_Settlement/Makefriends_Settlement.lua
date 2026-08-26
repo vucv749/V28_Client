@@ -273,11 +273,11 @@ function Makefriends_Settlement_Good(index)
 	
 	local nGuid, strName, nSex =  SocialActivitesDataPool:GetGoodGamePlayerByIndex(index-1)
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "GoodGame" ); 	-- 函数名
-		Set_XSCRIPT_ScriptID( 998329 );					-- 脚本编号
+		Set_XSCRIPT_Function_Name( "GoodGame" ); 	-- ???
+		Set_XSCRIPT_ScriptID( 998329 );					-- ????
 		Set_XSCRIPT_Parameter(0, nGuid)
 		Set_XSCRIPT_Parameter(1, index)
-		Set_XSCRIPT_ParamCount( 2 );						-- 参数个数
+		Set_XSCRIPT_ParamCount( 2 );						-- ????
 	Send_XSCRIPT()
 end
 

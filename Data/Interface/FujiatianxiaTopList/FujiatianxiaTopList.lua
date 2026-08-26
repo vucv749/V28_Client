@@ -11,23 +11,23 @@ local g_TargetId = -1
 --nType == RANKINGLIST_TYPE_FUJIATIANXIA
 local g_nType = -1
 local g_self_nType = -1 
---RankingList.txt 占位
+--RankingList.txt 牸位
 local g_ZhanWei = 4
 --MD_PAOSHANG_MAXMONEY
-local g_MD_Point = 827    --当天自身最高纪录
+local g_MD_Point = 827    --????????
 
 local g_MenPaiName = {
-		[0] = "#{XQ_MP_1}",    --少林
-		[1] = "#{XQ_MP_2}",    --明教
-		[2] = "#{XQ_MP_3}",    --丐帮
-		[3] = "#{XQ_MP_4}",    --武当
-		[4] = "#{XQ_MP_5}",    --峨眉
-		[5] = "#{XQ_MP_6}",    --星宿
-		[6] = "#{XQ_MP_7}",    --天龙
-		[7] = "#{XQ_MP_8}",    --天山
-		[8] = "#{XQ_MP_9}",    --逍遥
-		[9] = " ",         --无门派
-		[10] = "#{MPZH_180719_16}",    --曼陀
+		[0] = "#{XQ_MP_1}",    --??
+		[1] = "#{XQ_MP_2}",    --??
+		[2] = "#{XQ_MP_3}",    --??
+		[3] = "#{XQ_MP_4}",    --??
+		[4] = "#{XQ_MP_5}",    --??
+		[5] = "#{XQ_MP_6}",    --??
+		[6] = "#{XQ_MP_7}",    --??
+		[7] = "#{XQ_MP_8}",    --??
+		[8] = "#{XQ_MP_9}",    --??
+		[9] = " ",         --???
+		[10] = "#{MPZH_180719_16}",    --??
 }
 
 -- local g_MenPaiPic = {
@@ -179,7 +179,7 @@ function FujiatianxiaTopList_HaveRecord( index )
 		--货币数量
 		local Shilian_Text3 = ItemBar:GetSubItem("FujiatianxiaTopList_RightContent_Shilian_Text5")
 		Shilian_Text3:SetText(usetime)
-		ItemBar:GetSubItem("FujiatianxiaTopList_RightContent_Shilian_jinbi"):Show() --榜内的金币图标
+		ItemBar:GetSubItem("FujiatianxiaTopList_RightContent_Shilian_jinbi"):Show() --???????
 		--等级
 		local Shilian_Text4 = ItemBar:GetSubItem("FujiatianxiaTopList_RightContent_Shilian_Text4")
 		Shilian_Text4:SetText(level)
@@ -222,7 +222,7 @@ function FujiatianxiaTopList_NoRecord( index )
 	--货币数量
 	local Shilian_Text3 = ItemBar:GetSubItem("FujiatianxiaTopList_RightContent_Shilian_Text5")
 	Shilian_Text3:SetText(" ")
-	ItemBar:GetSubItem("FujiatianxiaTopList_RightContent_Shilian_jinbi"):Hide() --榜内的金币图标
+	ItemBar:GetSubItem("FujiatianxiaTopList_RightContent_Shilian_jinbi"):Hide() --???????
 	--等级
 	local Shilian_Text4 = ItemBar:GetSubItem("FujiatianxiaTopList_RightContent_Shilian_Text4")
 	Shilian_Text4:SetText(" ")
@@ -304,9 +304,9 @@ function FujiatianxiaTopList_MyInfo()
 		myPoint = 0
 	end
 
-	local myname = Player:GetName() --玩家姓名
-	local myLevel = Player:GetLevel() --玩家等级
-	local myMP = Player:GetData("MEMPAI") --玩家门派
+	local myname = Player:GetName() --????
+	local myLevel = Player:GetLevel() --????
+	local myMP = Player:GetData("MEMPAI") --????
 
 	FujiatianxiaTopList_RightContent_ListInfo2:SetText(myname)
 	FujiatianxiaTopList_RightContent_ListInfo5:SetText(myPoint)

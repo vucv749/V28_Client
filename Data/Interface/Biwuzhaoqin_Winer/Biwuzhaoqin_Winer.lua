@@ -82,7 +82,7 @@ end
 
 function Biwuzhaoqin_Winer_OnClose()
 	this:Hide()
-	KillTimer("Biwuzhaoqin_Winer_OnClose()");		--¹Ø±Õ¶¨Ê±Æ÷
+	KillTimer("Biwuzhaoqin_Winer_OnClose()");		--?????
 end
 
 function Biwuzhaoqin_Winer_Accept()

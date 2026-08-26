@@ -3,8 +3,8 @@
 function DoublePlay_Ing_PreLoad()
     this:RegisterEvent("DOUBLEGAME_MATCHINGTIP", true)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 	this:RegisterEvent("OBJECT_CARED_EVENT", false)
 end -- end func DoublePlay_Ing_PreLoad()
 

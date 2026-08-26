@@ -1,5 +1,5 @@
 --»ªÉ½ÂÛ½£¸öÈËÈü»ı·Ö½çÃæ´¦Àí½Å±¾
---×÷Õß£ºÂíÁÁ
+--×÷ ß£ºÂíÁÁ
 --Ê±¼ä£º2010-1-19
 
 --===============================================
@@ -43,7 +43,7 @@ function HuaShanGRMatchMulti_OnEvent(event)
 	end
 end
 --===============================================
--- ¹Ø±Õ¸´ºÏ´°¿Ú
+-- ¹Ø± ¸´ºÏ´°¿Ú
 --===============================================
 function HuaShanGRMatchMulti_Close()
 	Match:CloseHuaShanGRMatchScoreMultiTable();
@@ -65,29 +65,29 @@ end
 --ID×ªÃÅÅÉ
 --===============================================
 function HuaShanGRMatchMulti_Id2MenPai(nMenpaiId)
-	local szMenpai = "ÓĞÎÊÌâÃÅÅÉ"
+	local szMenpai = "Có v¤n ğ« môn phái"
 	if nMenpaiId == 0  then
-		szMenpai = "ÉÙÁÖÅÉ"
+		szMenpai = "Phái Thiªu Lâm"
 	elseif nMenpaiId == 1  then
-		szMenpai = "Ã÷½Ì"
+		szMenpai = "Minh Giáo"
 	elseif nMenpaiId == 2  then
-		szMenpai = "Ø¤°ï"
+		szMenpai = "Cái Bang"
 	elseif nMenpaiId == 3  then
-		szMenpai = "Îäµ±ÅÉ"
+		szMenpai = "Phái Võ Ğang"
 	elseif nMenpaiId == 4  then
-		szMenpai = "¶ëáÒÅÉ"
+		szMenpai = "Nga My"
 	elseif nMenpaiId == 5  then
-		szMenpai = "ĞÇËŞÅÉ"
+		szMenpai = "Tinh Túc"
 	elseif nMenpaiId == 6  then
-		szMenpai = "ÌìÁúÅÉ"
+		szMenpai = "Thiên Long phái"
 	elseif nMenpaiId == 7  then
-		szMenpai = "ÌìÉ½ÅÉ"
+		szMenpai = "Thiên S½n"
 	elseif nMenpaiId == 8  then
-		szMenpai = "åĞÒ£ÅÉ"
+		szMenpai = "Phái Tiêu Dao"
 	elseif nMenpaiId == 9 then 
-		szMenpai = "ÎŞÃÅÅÉ"
+		szMenpai = "Tñ do"
 	elseif nMenpaiId == 10 then 
-		szMenpai = "ÂüÍÓÉ½×¯"
+		szMenpai = "MÕn Ğà S½n Trang"
 	end	
 	return szMenpai	
 end

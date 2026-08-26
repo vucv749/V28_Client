@@ -15,11 +15,11 @@ local g_Event;
 
 local Event_Relive = 0;
 local Event_Callof = 1;
-local g_newPlayerReliveSceneRes = {	--ÏÔÊ¾ÐÂÊÖ¸´»î°´Å¥¸±±¾ CLIENTRESID
+local g_newPlayerReliveSceneRes = {	--?????????? CLIENTRESID
       548
 }
 local g_relive_tjc_res = 618
-local g_relive_dlsy_res = 639	-- µÛÁêÉîÔ¨³¡¾°×ÊÔ´id
+local g_relive_dlsy_res = 639	-- ????????id
 local g_relive_SpecialItem = 0;
 
 function Relive_IsSpecialSceneResID()
@@ -62,8 +62,8 @@ function Relive_OnEvent(event)
 	if ( event == "RELIVE_SHOW" ) then
 		if Relive_IsSpecialSceneResID() == 1 then  
 			Relive_Text:SetText("#{XSLDZ_180521_125}")
-			Question_Text:SetText("#gFF0FA0¸´»î");
-			Relive_Release_Button:SetText("»ØÓª")
+			Question_Text:SetText("#gFF0FA0s¯ng lÕi");
+			Relive_Release_Button:SetText("H°i Dinh")
 			Relive_Release_Button:Show()
 			Relive_Release_Button:Enable()
 			Relive_Time_Text : SetProperty("Timer",tostring(arg2)); 
@@ -91,7 +91,7 @@ function Relive_OnEvent(event)
 		elseif Relive_IsKFRCBOSSScene() == 1 then
 			Relive_Text:SetText("#{KFRC_240326_100}")
 		else
-			Relive_Text:SetText( "ÄãÒÑ¾­ËÀÍö£¬µ«ÓÉÓÚÄã¶ÔÈË¼ä»¹ÓÐÐ©ÐíÖ´Äî£¬ÄãÊÇ¼ÌÐøµÈ´ý»¹ÊÇÁé»ê³öÇÏ£¿" );
+			Relive_Text:SetText( "Nhî ðã tØ vong, Ðãn b·i vì Nhî Ð¯i nhân gian còn có chút HÑa Ch¤p Ni®m, các hÕ tiªp tøc ch¶ Ðãi vçn là linh h°n xu¤t khiªu?" );
 		end
 		
 --		Relive_Time_Text:SetText( arg2 );
@@ -115,10 +115,10 @@ function Relive_OnEvent(event)
 		Question_Help:Disable();
 		Question_Close:Disable();
 		Current_status = 0;
-		Relive_Fool_Button:SetText("ÐÂÊÖ");
-		Relive_Release_Button:SetText("³öÇÏ");
-		Relive_Relive_Button:SetText("¸´»î"); 
-		Question_Text:SetText("#gFF0FA0¸´»î");
+		Relive_Fool_Button:SetText("Tân thü");
+		Relive_Release_Button:SetText("Xu¤t khiªu");
+		Relive_Relive_Button:SetText("S¯ng lÕi"); 
+		Question_Text:SetText("#gFF0FA0s¯ng lÕi");
 		this:Show();
 		g_Event = Event_Relive;
 
@@ -134,12 +134,12 @@ function Relive_OnEvent(event)
 		
 	elseif ( event == "OPEN_CALLOF_PLAYER" )  then
 		
-		Relive_Text:SetText(arg0 .. "À­Äã¹ýÈ¥£¬ÊÇ·ñÍ¬Òâ°¡£¿");
+		Relive_Text:SetText(arg0 .. "LÕp Nhî quá khÑ, có ð°ng ý hay không A?");
 			
-		Relive_Release_Button:SetText("È·¶¨");
-		Relive_Relive_Button:SetText("È¡Ïû");
+		Relive_Release_Button:SetText("Xác nh§n");
+		Relive_Relive_Button:SetText("Hüy bö");
 
-		Question_Text:SetText("#gFF0FA0À­ÈË");
+		Question_Text:SetText("#gFF0FA0LÕp Nhân");
 
 		Relive_Time_Text:SetProperty("Timer",tostring( arg3 ));
 		this:Show()
@@ -269,7 +269,7 @@ function Relive_IsPTDBScene()
 	return 0
 end -- end func Relive_IsPTDBScene()
 
--- ÊÇ·ñ¿ç·þÈÕ³£BOSS
+-- ÊÇ·ñ¿ç·þÈ ³£BOSS
 function Relive_IsKFRCBOSSScene()
 	local curSceneID = GetSceneID()
 	local isOk = KFRCBOSS:LuaFnIsCKFRCBOSSScene(curSceneID)

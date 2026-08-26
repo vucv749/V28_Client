@@ -5,17 +5,17 @@ local g_ZLHeroMeeting_Vote_NPCID = -1;
 local g_ZLHeroMeeting_Vote_Selidx = -1;
 local g_ZLHeroMeeting_Vote_Selguid = -1;
 local g_ZLHeroMeeting_Vote_MenPaiList = {
-	[0] = "#{GMGameInterface_Script_DataPool_Info_ShaoLin}",    --少林
-	[1] = "#{GMGameInterface_Script_DataPool_Info_Mingjiao}",    --明教
-	[2] = "#{GMGameInterface_Script_DataPool_Info_GaiBang}",    --丐帮
-	[3] = "#{GMGameInterface_Script_DataPool_Info_WuDang}",    --武当
-	[4] = "#{GMGameInterface_Script_DataPool_Info_EMei}",    --峨眉
-	[5] = "#{GMGameInterface_Script_DataPool_Info_XingXiu}",    --星宿
-	[6] = "#{GMGameInterface_Script_DataPool_Info_DaLi}",    --天龙
-	[7] = "#{GMGameInterface_Script_DataPool_Info_TianShan}",    --天山
-	[8] = "#{GMGameInterface_Script_DataPool_Info_XiaoYao}",     --逍遥
-	[9] = "#{GMGameInterface_Script_DataPool_Info_WuMenPai}",     --无门派
-	[10] = "#{GMGameInterface_Script_DataPool_Info_ManTuoShanZhuang}",     --曼陀
+	[0] = "#{GMGameInterface_Script_DataPool_Info_ShaoLin}",    --??
+	[1] = "#{GMGameInterface_Script_DataPool_Info_Mingjiao}",    --??
+	[2] = "#{GMGameInterface_Script_DataPool_Info_GaiBang}",    --??
+	[3] = "#{GMGameInterface_Script_DataPool_Info_WuDang}",    --??
+	[4] = "#{GMGameInterface_Script_DataPool_Info_EMei}",    --??
+	[5] = "#{GMGameInterface_Script_DataPool_Info_XingXiu}",    --??
+	[6] = "#{GMGameInterface_Script_DataPool_Info_DaLi}",    --??
+	[7] = "#{GMGameInterface_Script_DataPool_Info_TianShan}",    --??
+	[8] = "#{GMGameInterface_Script_DataPool_Info_XiaoYao}",     --??
+	[9] = "#{GMGameInterface_Script_DataPool_Info_WuMenPai}",     --???
+	[10] = "#{GMGameInterface_Script_DataPool_Info_ManTuoShanZhuang}",     --??
 }
 local g_ZLHeroMeetingCDTime  = 1
 local g_ZLHeroMeetingLastClickTime_Refresh = 0 
@@ -45,7 +45,7 @@ function ZLHeroMeeting_Vote_OnEvent(event)
 		if(tonumber(arg0) ~= g_ZLHeroMeeting_Vote_NPCID) then
 			return;
 		end 
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if arg1 == "distance" and tonumber(arg2) > MAX_OBJ_DISTANCE or arg1=="destroy" then
 			ZLHeroMeeting_Vote_Close()
 		end
@@ -156,15 +156,15 @@ function ZLHeroMeeting_Vote_Click()
 		Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name("XuanYan")
 		Set_XSCRIPT_ScriptID(891119) 
-		Set_XSCRIPT_Parameter( 0, g_ZLHeroMeeting_Vote_TargetID ); -- 参数一  
+		Set_XSCRIPT_Parameter( 0, g_ZLHeroMeeting_Vote_TargetID ); -- ???  
 		Set_XSCRIPT_ParamCount(1)
 		Send_XSCRIPT() 
 	else
 		Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name("Vote")
 		Set_XSCRIPT_ScriptID(891119) 
-		Set_XSCRIPT_Parameter( 0, g_ZLHeroMeeting_Vote_TargetID ); -- 参数一
-		Set_XSCRIPT_Parameter( 1, g_ZLHeroMeeting_Vote_Selidx-1 ); -- 参数二 
+		Set_XSCRIPT_Parameter( 0, g_ZLHeroMeeting_Vote_TargetID ); -- ???
+		Set_XSCRIPT_Parameter( 1, g_ZLHeroMeeting_Vote_Selidx-1 ); -- ??? 
 		Set_XSCRIPT_ParamCount(2)
 		Send_XSCRIPT()
 	end
@@ -194,7 +194,7 @@ function ZLHeroMeeting_Vote_RefreshClick()
 		Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name("UpdateInfo")
 		Set_XSCRIPT_ScriptID(891119) 
-		Set_XSCRIPT_Parameter( 0, g_ZLHeroMeeting_Vote_TargetID ); -- 参数一 
+		Set_XSCRIPT_Parameter( 0, g_ZLHeroMeeting_Vote_TargetID ); -- ??? 
 		Set_XSCRIPT_ParamCount(1)
 		Send_XSCRIPT()
 	else
@@ -208,7 +208,7 @@ function ZLHeroMeeting_Vote_RefreshClick()
 		Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name("FreshClientData")
 		Set_XSCRIPT_ScriptID(891119) 
-		Set_XSCRIPT_Parameter( 0, g_ZLHeroMeeting_Vote_TargetID ); -- 参数一 
+		Set_XSCRIPT_Parameter( 0, g_ZLHeroMeeting_Vote_TargetID ); -- ??? 
 		Set_XSCRIPT_ParamCount(1)
 		Send_XSCRIPT()
 	end

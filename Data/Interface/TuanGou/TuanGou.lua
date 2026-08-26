@@ -43,7 +43,7 @@ function TuanGou_OnEvent(event)
 			return
 		end
 		this:CareObject(objCared, 1, "TuanGou")
-		--打开/关闭/刷新界面
+		--打开/关睜/刷新界面
 		local flag = Get_XParam_INT(1) 
 		if flag ~= nil and flag == 2 then
 			--关界面
@@ -55,10 +55,10 @@ function TuanGou_OnEvent(event)
 			local nStep = Get_XParam_INT(2)
 			local bFlag = Get_XParam_INT(3)
 			local bPrize = Get_XParam_INT(4)
-			if flag == 1 then--开界面
+			if flag == 1 then--???
 				this:Show()
 				TuanGou_Update(nStep,bFlag,bPrize)
-			else--仅刷新
+			else--???
 				if( this:IsVisible() ) then
 					TuanGou_Update(nStep,bFlag,bPrize)
 				end
@@ -87,46 +87,46 @@ function TuanGou_Update(nStep,bFlag,bPrize)
 		TuanGou_Item:SetActionItem(theAction:GetID())
 	end	
 	--按钮区域
-	if nStep == 1 then--拼团
+	if nStep == 1 then--??
 		TuanGou_Lingqu:Hide()
 		TuanGou_YiLingqu:Hide()
 		TuanGou_Yipintuan:Hide()
-		if bFlag == 1 then--已拼团
+		if bFlag == 1 then--???
 			TuanGou_CapTainPintuan:Hide()
 			TuanGou_YiGongYue:Show()
 			TuanGou_YiGongYueText:Show()
-		else--未拼团
+		else--???
 			TuanGou_CapTainPintuan:Show()
 			TuanGou_YiGongYue:Hide()
 			TuanGou_YiGongYueText:Hide()
 		end
-	elseif nStep == 2 then--空闲
+	elseif nStep == 2 then--??
 		TuanGou_Lingqu:Hide()
 		TuanGou_YiLingqu:Hide()
 		TuanGou_CapTainPintuan:Hide()
-		if bFlag == 1 then--已拼团
+		if bFlag == 1 then--???
 			TuanGou_YiGongYue:Show()
 			TuanGou_YiGongYueText:Show()
 			TuanGou_Yipintuan:Hide()
-		else--未拼团
+		else--???
 			TuanGou_YiGongYue:Hide()
 			TuanGou_YiGongYueText:Hide()
 			TuanGou_Yipintuan:Show()
 		end
-	elseif nStep == 3 then--领奖
+	elseif nStep == 3 then--??
 		TuanGou_CapTainPintuan:Hide()
 		TuanGou_YiGongYue:Hide()
 		TuanGou_YiGongYueText:Hide()
-		if bFlag == 1 then--已拼团
+		if bFlag == 1 then--???
 			TuanGou_Yipintuan:Hide()
-			if bPrize == 1 then--已领取
+			if bPrize == 1 then--???
 				TuanGou_Lingqu:Hide()
 				TuanGou_YiLingqu:Show()
-			else--未领取
+			else--???
 				TuanGou_Lingqu:Show()
 				TuanGou_YiLingqu:Hide()
 			end
-		else--未拼团
+		else--???
 			TuanGou_Yipintuan:Show()
 			TuanGou_Lingqu:Hide()
 			TuanGou_YiLingqu:Hide()
@@ -153,17 +153,17 @@ end
 -- 关界面
 --***********************************************************************************************************************************************
 function TuanGou_Close()
-	--关闭确认界面
+	--关睜确认界面
 	if(IsWindowShow("TuanGouConfirm")) then
 		CloseWindow("TuanGouConfirm", true)
 		return
 	end
-	--关闭原话界面
+	--关睜原话界面
 	if(IsWindowShow("TuanGouClothes")) then
 		CloseWindow("TuanGouClothes", true)
 		return
 	end
-	--数据清空
+	--数据清繝
 	TuanGou_OnHiden()
 	--隐藏界面
 	this:Hide()

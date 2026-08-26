@@ -1,5 +1,5 @@
 
---比武招亲
+--比武犘亲
 
 local g_unifiedposistion
 
@@ -14,13 +14,13 @@ local g_StageEnum = {
 ["finalpk"] = 7,
 ["finalpkover"] = 8,
 ["gameover"] = 9,
-["terminate"] = 10,	--被迫终止
+["terminate"] = 10,	--????
 }
 
 local g_dir_type = {
-	[1]	= {x=109, z=87, h=400, p=-30},	-- 朝西
-	[2]	= {x=81, z=87, h=400, p=-30},		-- 朝东
-	[3]	= {x=0, z=0},			-- 主视角
+	[1]	= {x=109, z=87, h=400, p=-30},	-- ??
+	[2]	= {x=81, z=87, h=400, p=-30},		-- ??
+	[3]	= {x=0, z=0},			-- ???
 }
 
 function Biwuzhaoqin_Watch_PreLoad()
@@ -72,7 +72,7 @@ function Biwuzhaoqin_Watch_OnUpdate()
 		return
 	end
 
-	--发起者
+	--发起犨
 	Biwuzhaoqin_Watch_Text3:SetText("#cfff263"..sponsorname)
 	if winnername == nil or winnername =="" then
 		Biwuzhaoqin_Watch_Text5:SetText("#{BWZQ_20230329_204}")
@@ -126,7 +126,7 @@ function Biwuzhaoqin_Watch_ResetPos()
 end
 
 --================================================
--- 关闭界面
+-- 关睜界面
 --================================================
 function Biwuzhaoqin_Watch_CloseWindow()
 	this:Hide()

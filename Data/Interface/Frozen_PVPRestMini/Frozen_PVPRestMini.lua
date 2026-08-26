@@ -1,4 +1,4 @@
--- 雪人战PVP 休息室信息展示UI最小化
+-- 雪人牻PVP 休息室信息牴示UI最小化
 -- 默认位置
 local Frozen_PVPRestMini_UnifiedPosition = nil
 
@@ -8,8 +8,8 @@ function Frozen_PVPRestMini_PreLoad()
     this:RegisterEvent("XRZPVP_UI_OPENRESTINFOMINI", true)
     this:RegisterEvent("XRZPVP_UI_CLOSERESTINFOMINI", true)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end -- end func Frozen_PVPRestMini_PreLoad()
 
 function Frozen_PVPRestMini_OnEvent(event)

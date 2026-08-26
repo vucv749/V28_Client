@@ -5,23 +5,23 @@ local g_Peak_Learn_menpai_list = {}
 local g_PeakLearn_targetId = -1
 local g_Object = -1
 
-local g_AutoClickTimer_Step = 100		-- ¶àÉÙÊ±¼ä(ºÁÃë)Ä£ÄâÒ»´Î Click ²Ù×÷
-local g_AutoClick_FunList = {}			-- ½«¹«ÓÃÒ»¸ö Timer µÄ»Øµ÷¹¦ÄÜº¯Êı·Åµ½Ò»¸öÊı×é
-local g_AutoClick_BtnFlag = -1			-- ¼ÇÂ¼µ±Ç°Êó±ê×ó¼üÊÇÔÚÄÄ¸ö°´Å¥°´ÏÂ
-local g_AutoClick_Going = -1			-- ±êÖ¾ÊÇ·ñ¿ªÊ¼×Ô¶¯µã»÷²Ù×÷(µÚÒ»´ÎLButtonºó¾­¹ıX¸öTimer²ÅËã¿ªÊ¼, Ò²¾ÍÊÇËµÊÇ g_AutoClickTimer_Step * X µÄÊ±ºò¿ªÊ¼½øĞĞ×Ô¶¯¼Ó, ÕâÑùÎªÁË·ÀÖ¹±¾À´Òªµã»÷Ò»ÏÂµÄ½á¹ûµãÁËºÃ¶àÏÂ)
+local g_AutoClickTimer_Step = 100		-- ????(??)???? Click ??
+local g_AutoClick_FunList = {}			-- ????? Timer ?????????????
+local g_AutoClick_BtnFlag = -1			-- ????????????????
+local g_AutoClick_Going = -1			-- ????????????(???LButton???X?Timer????, ????? g_AutoClickTimer_Step * X ??????????, ?????????????????????)
 
-local g_CurRemain_Attack_Point = 0 --½ø¹¥ÃÅÅÉ¶ÔÓ¦µÄĞÄµÃµã
-local g_CurRemain_Defence_Point = 0 --·ÀÓùÃÅÅÉ¶ÔÓ¦µÄĞÄµÃµã
+local g_CurRemain_Attack_Point = 0 --??????????
+local g_CurRemain_Defence_Point = 0 --??????????
 local g_RemainPoint_Attack_Point = 0
 local g_RemainPoint_Defence_Point = 0
 
-local g_Attack_1_Point = 0 --½ø¹¥ÃÅÅÉ1¶ÔÓ¦µÄĞÄµÃµã
-local g_Attack_2_Point = 0 --½ø¹¥ÃÅÅÉ2¶ÔÓ¦µÄĞÄµÃµã
-local g_Attack_3_Point = 0 --½ø¹¥ÃÅÅÉ3¶ÔÓ¦µÄĞÄµÃµã
+local g_Attack_1_Point = 0 --????1??????
+local g_Attack_2_Point = 0 --????2??????
+local g_Attack_3_Point = 0 --????3??????
 
-local g_Defence_1_Point = 0 --·ÀÓùÃÅÅÉ1¶ÔÓ¦µÄĞÄµÃµã
-local g_Defence_2_Point = 0 --·ÀÓùÃÅÅÉ2¶ÔÓ¦µÄĞÄµÃµã
-local g_Defence_3_Point = 0 --·ÀÓùÃÅÅÉ3¶ÔÓ¦µÄĞÄµÃµã
+local g_Defence_1_Point = 0 --????1??????
+local g_Defence_2_Point = 0 --????2??????
+local g_Defence_3_Point = 0 --????3??????
 
 local g_DeFengLv = 0
 local Peak_Learn_Red_Icon =
@@ -67,17 +67,17 @@ function Peak_Learn_PreLoad()
 	this:RegisterEvent("UNIT_LEVEL")
 end
 local g_menpai = {
-	[1] = {Text = "ÉÙÁÖ",}, --ÉÙÁÖ
-	[2] = {Text = "Ã÷½Ì",}, --Ã÷½Ì
-	[3] = {Text = "Ø¤°ï",}, --Ø¤°ï
-	[4] = {Text = "Îäµ±",}, --Îäµ±
-	[5] = {Text = "¶ëáÒ",}, --¶ëÃ¼
-	[6] = {Text = "ĞÇËŞ",}, --ĞÇËŞ
-	[7] = {Text = "ÌìÁú",}, --ÌìÁú
-	[8] = {Text = "ÌìÉ½",}, --ÌìÉ½
-	[9] = {Text = "åĞÒ£",}, --åĞÒ£
-	[10] = {Text = "ÂüÍÓÉ½×¯",}, --ÂüÍÓÉ½×¯
-	[11] = {Text = "¶ñÈË¹È",}, --¶ñÈË¹È
+	[1] = {Text = "Thiªu Lâm",}, --??
+	[2] = {Text = "Minh Giáo",}, --??
+	[3] = {Text = "Cái Bang",}, --??
+	[4] = {Text = "Võ Ğang",}, --??
+	[5] = {Text = "Nga Mi",}, --??
+	[6] = {Text = "Tinh Túc",}, --??
+	[7] = {Text = "Thiên Long",}, --??
+	[8] = {Text = "Thiên S½n",}, --??
+	[9] = {Text = "Tiêu dao",}, --??
+	[10] = {Text = "MÕn Ğà S½n Trang",}, --????
+	[11] = {Text = "Ác Nhân C¯c",}, --???
 }
 function Peak_Learn_OnLoad()
 	g_Peak_Learn_Frame_UnifiedPosition=Peak_Learn_Frame:GetProperty("UnifiedPosition")
@@ -220,7 +220,7 @@ function Peak_Learn_UpdateBagLine()
 		
 		local bHaveAttack =false
 		local bHaveDefence =false
-		--Õâ¸öÃÅÅÉÒÑ¾­µãÑ¡¹ıÁË
+		-- â¸öÃÅÅÉÒÑ¾­µãÑ¡¹ıÁË
 		for j = 1, 3, 1 do
 			if nAttackMenPaiArray[j] == i then
 				bHaveAttack = true
@@ -369,7 +369,7 @@ function Peak_Learn_AllocationPoint_AttackMenpaiChanged(index)
 	end
 
 	if nSelID[index] <= 0 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñÃÅÅÉ")
+		PushDebugMessage("Thïnh Tiên lña ch÷n môn phái")
 		return
 	end
 
@@ -386,14 +386,14 @@ function Peak_Learn_AllocationPoint_AttackMenpaiChanged(index)
 	local textAttackMenpai3 = Peak_Learn_AllocationPoint_AttackMenpai3:GetText()
     local text = {textAttackMenpai1,textAttackMenpai2,textAttackMenpai3}
 
-	--»Ö¸´³ÉÒÔÇ°µÄ»òÕßÉèÖÃ³É""
+	--»Ö¸´³ÉÒÔÇ°µÄ»ò ßÉèÖÃ³É""
 	for i = 1, 3, 1 do
 		for j = 1, 3, 1 do
 			local setid_i = text[i]
 			local setid_j = text[j]
 			if i ~= j then
 				if setid_i ~= "" and setid_j ~= "" and setid_i == setid_j then
-					PushDebugMessage("ÄúÒÑ¾­Ñ¡Ôñ´ËÃÅÅÉ£¬²»¿ÉÖØ¸´Ñ¡Ôñ¡£")
+					PushDebugMessage("Nhçm ğã lña ch÷n ThØ môn phái, không th¬ l£p lÕi lña ch÷n.")
 					if nmenpai[index] > 0 then
 						attackmenpai:SetText(g_menpai[nmenpai[index]].Text)
 					else
@@ -434,7 +434,7 @@ function Peak_Learn_AllocationPoint_DefenceMenpaiChanged(index)
 
 	local Defencemenpai = _G["Peak_Learn_AllocationPoint_DefenceMenpai"..index]
 	if nSelID[index] <= 0 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñÃÅÅÉ")
+		PushDebugMessage("Thïnh Tiên lña ch÷n môn phái")
 		return
 	end
 
@@ -455,7 +455,7 @@ function Peak_Learn_AllocationPoint_DefenceMenpaiChanged(index)
 			local setid_j = text[j]
 			if i ~= j then
 				if setid_i ~= "" and setid_j ~= "" and setid_i == setid_j then
-					PushDebugMessage("ÄúÒÑ¾­Ñ¡Ôñ´ËÃÅÅÉ£¬²»¿ÉÖØ¸´Ñ¡Ôñ¡£")
+					PushDebugMessage("Nhçm ğã lña ch÷n ThØ môn phái, không th¬ l£p lÕi lña ch÷n.")
 					if nmenpai[index] > 0 then
 						Defencemenpai:SetText(g_menpai[nmenpai[index]].Text)
 					else
@@ -478,7 +478,7 @@ function Peak_Learn_AllocationPoint_DefenceMenpaiChanged(index)
 
 end
 --***************************************************
--- Çå¿ÕÊó±ê³¤°´±ê¼Ç
+-- Çå¿ Êó±ê³¤°´±ê¼Ç
 --***************************************************
 function Peak_Learn_AutoClick_Clear(id)
 	id = tonumber(id)
@@ -497,7 +497,7 @@ function Peak_Learn_AutoClick_SetTimer(id)
 end
 --***************************************************
 -- Êó±ê×ó¼üËÉ¿ª²Ù×÷
---    ×¢ÒâÕâÀïÆäÊµÊÇ´úÌæ Click, ËùÒÔĞèÒªÖ´ĞĞÒ»´Î Click ²Ù×÷
+--    ×¢Òâ âÀïÆäÊµÊÇ´úÌæ Click, ËùÒÔĞèÒªÖ´ĞĞÒ»´Î Click ²Ù×÷
 --***************************************************
 function Peak_Learn_AutoClick_LButtonUp(id)
 	id = tonumber(id)
@@ -563,31 +563,31 @@ function Peak_Learn_SetAcceptButtonState()
 	if tonumber(nOld_AttackMenPaiXDD1) == tonumber(nAttackMenPaiXDD1) and tonumber(nOld_DfenceMenPaiXDD1) == tonumber(nDefenceMenPaiXDD1) and
 	tonumber(nOld_AttackMenPaiXDD2) == tonumber(nAttackMenPaiXDD2) and tonumber(nOld_DfenceMenPaiXDD2) == tonumber(nDefenceMenPaiXDD2) and 
 	tonumber(nOld_AttackMenPaiXDD3) == tonumber(nAttackMenPaiXDD3) and tonumber(nOld_DfenceMenPaiXDD3) == tonumber(nDefenceMenPaiXDD3) then
-		bcheck = 0  --Ã»Ê²Ã´±ä»¯
+		bcheck = 0  --?????
 	else
-        bcheck = 1 --±ä»¯ÁË
+        bcheck = 1 --???
 	end 
 
 	if bcheck == 0  then
 		if  nOld_AttackMenPai1 == 0 and  nAttackMenPai1 == -1 then
-			bcheck = 0 --Ã»Ê²Ã´±ä»¯
+			bcheck = 0 --?????
 		else
 			if nOld_AttackMenPai1 == nAttackMenPai1 then
-				bcheck = 0 --Ã»Ê²Ã´±ä»¯
+				bcheck = 0 --?????
 			else
-				bcheck = 1 --±ä»¯ÁË
+				bcheck = 1 --???
 			end
 		end		
 	end
 
 	if bcheck == 0 then
 		if  nOld_DefenceMenPai1 == 0 and  nDefenceMenPai1 == -1 then
-			bcheck = 0 --Ã»Ê²Ã´±ä»¯
+			bcheck = 0 --?????
 		else
 			if nOld_DefenceMenPai1 == nDefenceMenPai1 then
-				bcheck = 0 --Ã»Ê²Ã´±ä»¯
+				bcheck = 0 --?????
 			else
-				bcheck = 1 --±ä»¯ÁË
+				bcheck = 1 --???
 			end
 		end
 			
@@ -595,48 +595,48 @@ function Peak_Learn_SetAcceptButtonState()
 
 	if bcheck == 0 then
 		if nOld_AttackMenPai2 == 0 and  nAttackMenPai2 == -1 then
-			bcheck = 0 --Ã»Ê²Ã´±ä»¯
+			bcheck = 0 --?????
 		else
 			if nOld_AttackMenPai2 == nAttackMenPai2 then
-				bcheck = 0 --Ã»Ê²Ã´±ä»¯
+				bcheck = 0 --?????
 			else
-				bcheck = 1 --±ä»¯ÁË
+				bcheck = 1 --???
 			end
 		end
 	end
 
 	if bcheck == 0 then
 		if nOld_DefenceMenPai2 == 0 and  nDefenceMenPai2 == -1 then
-			bcheck = 0 --Ã»Ê²Ã´±ä»¯
+			bcheck = 0 --?????
 		else
 			if nOld_DefenceMenPai2 == nDefenceMenPai2 then
-				bcheck = 0 --Ã»Ê²Ã´±ä»¯
+				bcheck = 0 --?????
 			else
-				bcheck = 1 --±ä»¯ÁË
+				bcheck = 1 --???
 			end
 		end		
 	end
 
 	if bcheck == 0 then
 		if nOld_AttackMenPai3 == 0 and  nAttackMenPai3 == -1 then
-			bcheck = 0 --Ã»Ê²Ã´±ä»¯
+			bcheck = 0 --?????
 		else
 			if nOld_AttackMenPai3 == nAttackMenPai3 then
-				bcheck = 0 --Ã»Ê²Ã´±ä»¯
+				bcheck = 0 --?????
 			else
-				bcheck = 1 --±ä»¯ÁË
+				bcheck = 1 --???
 			end
 		end
 	end
 
 	if bcheck == 0 then
 		if  nOld_DefenceMenPai3 == 0 and  nDefenceMenPai3 == -1 then
-			bcheck = 0 --Ã»Ê²Ã´±ä»¯
+			bcheck = 0 --?????
 		else
 			if nOld_DefenceMenPai3 == nDefenceMenPai3 then
-				bcheck = 0 --Ã»Ê²Ã´±ä»¯
+				bcheck = 0 --?????
 			else
-				bcheck = 1 --±ä»¯ÁË
+				bcheck = 1 --???
 			end
 		end
 	end
@@ -1083,14 +1083,14 @@ function Peak_Learn_Add_Defence_XDD_3_Click()
 end
 
 
-local nDFAttrName = {"Íâ¹¦¹¥»÷","Íâ¹¦·ÀÓù","ÄÚ¹¦¹¥»÷","ÄÚ¹¦·ÀÓù","ÌåÁ¦","Á¦Á¿","ÁéÆø","¶¨Á¦","Éí·¨","¹¥»÷Îä¾öµã","Íâ¹¦¹¥»÷","Íâ¹¦·ÀÓù","ÄÚ¹¦¹¥»÷","ÄÚ¹¦·ÀÓù","ÌåÁ¦","Á¦Á¿","ÁéÆø","¶¨Á¦","Éí·¨","ÊØÓùÎä¾öµã"}
+local nDFAttrName = {"NgoÕi công công kích","NgoÕi công phòng ngñ","Nµi công công kích","Nµi công phòng ngñ","Th¬ lñc","Lñc lßşng","Nµi Lñc","Ğ¸nh lñc","Thân pháp","Công kích Võ Quyªt Ği¬m","NgoÕi công công kích","NgoÕi công phòng ngñ","Nµi công công kích","Nµi công phòng ngñ","Th¬ lñc","Lñc lßşng","Nµi Lñc","Ğ¸nh lñc","Thân pháp","Thü Ngñ Võ Quyªt Ği¬m"}
 local nDFType = {19,22,26,29,44,42,43,45,46,104,19,22,26,29,44,42,43,45,46,105}
 local nDFAttr = {36,36,36,36,2,2,2,2,1,2,36,36,36,36,2,2,2,2,1,2}
-function GetDFengLevel()		--Îä¾³µÈ¼¶
+function GetDFengLevel()		--????
 	return DataPool:GetPlayerMission_DataRound(1020)
 end
 
-function GetDFengAttackXDD()	--Ê£Óà¹¥»÷µãÊı
+function GetDFengAttackXDD()	--??????
 	local DFLv = GetDFengLevel()
 	local LvList = {10,30,50,70,90,110,130,150,170,190}
 	local Out = 0
@@ -1102,7 +1102,7 @@ function GetDFengAttackXDD()	--Ê£Óà¹¥»÷µãÊı
 	return Out
 end
 
-function GetDFengDefenceXDD()	--Ê£Óà·ÀÓùµãÊı
+function GetDFengDefenceXDD()	--??????
 	local DFLv = GetDFengLevel()
 	local LvList = {20,40,60,80,100,120,140,160,180,200}
 	local Out = 0
@@ -1114,51 +1114,51 @@ function GetDFengDefenceXDD()	--Ê£Óà·ÀÓùµãÊı
 	return Out
 end
 
-function GetAttackMenPai1()		--¹¥»÷ÃÅÅÉÀà±ğ1
+function GetAttackMenPai1()		--??????1
 	return GetAttackDefenceType(1,1)
 end
 
-function GetDefenceMenPai1()	--·ÀÓùÃÅÅÉÀà±ğ1
+function GetDefenceMenPai1()	--??????1
 	return GetAttackDefenceType(1,2)
 end
 
-function GetAttackMenPaiXDD1()	--¹¥»÷ÃÅÅÉµãÊı1
+function GetAttackMenPaiXDD1()	--??????1
 	return GetAttackDefenceType(1,3)
 end
 
-function GetDefenceMenPaiXDD1()	--·ÀÓùÃÅÅÉµãÊı1
+function GetDefenceMenPaiXDD1()	--??????1
 	return GetAttackDefenceType(1,4)
 end
 
-function GetAttackMenPai2()		--¹¥»÷ÃÅÅÉÀà±ğ2
+function GetAttackMenPai2()		--??????2
 	return GetAttackDefenceType(2,1)
 end
 
-function GetDefenceMenPai2()	--·ÀÓùÃÅÅÉÀà±ğ2
+function GetDefenceMenPai2()	--??????2
 	return GetAttackDefenceType(2,2)
 end
 
-function GetAttackMenPaiXDD2()	--¹¥»÷ÃÅÅÉµãÊı2
+function GetAttackMenPaiXDD2()	--??????2
 	return GetAttackDefenceType(2,3)
 end
 
-function GetDefenceMenPaiXDD2()	--·ÀÓùÃÅÅÉµãÊı2
+function GetDefenceMenPaiXDD2()	--??????2
 	return GetAttackDefenceType(2,4)
 end
 
-function GetAttackMenPai3()		--¹¥»÷ÃÅÅÉÀà±ğ3
+function GetAttackMenPai3()		--??????3
 	return GetAttackDefenceType(3,1)
 end
 
-function GetDefenceMenPai3()	--·ÀÓùÃÅÅÉÀà±ğ3
+function GetDefenceMenPai3()	--??????3
 	return GetAttackDefenceType(3,2)
 end
 
-function GetAttackMenPaiXDD3()	--¹¥»÷ÃÅÅÉµãÊı3
+function GetAttackMenPaiXDD3()	--??????3
 	return GetAttackDefenceType(3,3)
 end
 
-function GetDefenceMenPaiXDD3()	--·ÀÓùÃÅÅÉµãÊı3
+function GetDefenceMenPaiXDD3()	--??????3
 	return GetAttackDefenceType(3,4)
 end
 
@@ -1179,15 +1179,15 @@ function GetAttackDefenceType(nType,nIndex)
 	return nMPID[nIndex]
 end
 
-function GetDFengLevelupTimes()	--±¾ÖÜÊ£Óà´ÎÊı
+function GetDFengLevelupTimes()	--??????
 	return math.mod(DataPool:GetPlayerMission_DataRound(1025),10)
 end
 
-function GetDFengZhuiGanInfo()	--×·¸Ï´ÎÊı
+function GetDFengZhuiGanInfo()	--????
 	return 1,1
 end
 
-function GetDFengExtraLevelupTimes()--¶îÍâ´ÎÊı
+function GetDFengExtraLevelupTimes()--????
 	return 0
 end
 
@@ -1253,11 +1253,11 @@ function GetDFengDFengQNDValueINT(nLevle)
 	return nDFAttr[math.mod(nLevle,20)]
 end
 
-function GetDFengExp()			--µ±Ç°¾­Ñé
+function GetDFengExp()			--????
 	return DataPool:GetPlayerMission_DataRound(1024)
 end
 
-function GetDFengNeedExp()		--ËùĞè¾­Ñé
+function GetDFengNeedExp()		--????
 	local DFLv = GetDFengLevel()
 	local nExpList = {20000000,40000000,70000000,100000000,150000000,200000000,250000000,250000000,250000000,250000000}
 	if DFLv == 200 then
@@ -1271,7 +1271,7 @@ end
 --***************************************************
 function Peak_Learn_AutoClick_Timer()
 	if (g_AutoClick_BtnFlag ~= -1) then
-		-- µÚÒ»´ÎLButtonºó¾­¹ıX¸öTimer²ÅËã¿ªÊ¼, Ò²¾ÍÊÇËµÊÇ g_AutoClickTimer_Step * X µÄÊ±ºò¿ªÊ¼½øĞĞ×Ô¶¯¼Ó, ÕâÑùÎªÁË·ÀÖ¹±¾À´Òªµã»÷Ò»ÏÂµÄ½á¹ûµãÁËºÃ¶àÏÂ
+		-- µÚÒ»´ÎLButtonºó¾­¹ıX¸öTimer²ÅËã¿ªÊ¼, Ò²¾ÍÊÇËµÊÇ g_AutoClickTimer_Step * X µÄÊ±ºò¿ªÊ¼½øĞĞ×Ô¶¯¼Ó,  âÑùÎªÁË·ÀÖ¹±¾À´Òªµã»÷Ò»ÏÂµÄ½á¹ûµãÁËºÃ¶àÏÂ
 		if (g_AutoClick_Going < 4) then
 			g_AutoClick_Going = g_AutoClick_Going + 1
 

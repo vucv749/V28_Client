@@ -22,7 +22,7 @@ function MessageBox_Friend_OnEvent(event)
 			MessageBox_Friend_Text:Show();
 	    InvitePlayer.NAME = tostring( arg0 );
 	    InvitePlayer.GUID = tostring( arg1 );
-	    MessageBox_Friend_Text:SetText("玩家"..InvitePlayer.NAME.."请求您加他（她）为好友");
+	    MessageBox_Friend_Text:SetText("Ng叨i ch絠"..InvitePlayer.NAME.."Th飊h c Nh鏼 Gia Tha(Tha) cho th鯽 疳ng H鎢");
 			this:Show();
 	end
 		-- 游戏窗口尺寸发生了变化

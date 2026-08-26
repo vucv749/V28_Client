@@ -22,17 +22,17 @@ local g_SeverData = {
 local g_MenPaiFirstOne_BattleBet_InfoList = {}
 
 local g_MenPaiName = {
-		[0] = "#{XQ_MP_1}",    --少林
-		[1] = "#{XQ_MP_2}",    --明教
-		[2] = "#{XQ_MP_3}",    --丐帮
-		[3] = "#{XQ_MP_4}",    --武当
-		[4] = "#{XQ_MP_5}",    --峨眉
-		[5] = "#{XQ_MP_6}",    --星宿
-		[6] = "#{XQ_MP_7}",    --天龙
-		[7] = "#{XQ_MP_8}",    --天山
-		[8] = "#{XQ_MP_9}",    --逍遥
-		[9] = "",         --无门派
-		[10] = "#{MPZH_180719_16}",    --曼陀
+		[0] = "#{XQ_MP_1}",    --??
+		[1] = "#{XQ_MP_2}",    --??
+		[2] = "#{XQ_MP_3}",    --??
+		[3] = "#{XQ_MP_4}",    --??
+		[4] = "#{XQ_MP_5}",    --??
+		[5] = "#{XQ_MP_6}",    --??
+		[6] = "#{XQ_MP_7}",    --??
+		[7] = "#{XQ_MP_8}",    --??
+		[8] = "#{XQ_MP_9}",    --??
+		[9] = "",         --???
+		[10] = "#{MPZH_180719_16}",    --??
 }
 
 local g_YaZhuItem = 38002585
@@ -40,13 +40,13 @@ local g_YaZhuItemEx = 38002639
 
 local g_YaZhuPrize = {
 
-	[0] = 	--押注失败
+	[0] = 	--????
 	{
 		[g_YaZhuItem] = 100000,
 		[g_YaZhuItemEx] = 200000,
 	},
 	
-	[1] = 	--押注成功
+	[1] = 	--????
 	{
 		[g_YaZhuItem] = 200000,
 		[g_YaZhuItemEx] = 300000, 
@@ -166,10 +166,10 @@ function MenPaiFirstOne_BattleBet_MemberInfo( )
 	
 	local isYaZhu = 0
 	if g_SeverData.yazhuWeek == g_SeverData.matchWeek and g_SeverData.yazhuGuid > 0 then
-		DataPool:Lua_SortDDZRankInfo(2) --按押注人数排序
+		DataPool:Lua_SortDDZRankInfo(2) --???????
 		isYaZhu = 1
 	else
-		DataPool:Lua_SortDDZRankInfo(1) --按副本完成时间排序
+		DataPool:Lua_SortDDZRankInfo(1) --?????????
 		isYaZhu = 0
 	end
 	
@@ -232,14 +232,14 @@ function MenPaiFirstOne_BattleBet_PrizeInfo( )
 		failPrize = g_YaZhuPrize[0][g_SeverData.yazhuItem]
 	end
 	
-	if g_SeverData.huodongType == 0 then --活动未开始
+	if g_SeverData.huodongType == 0 then --?????
 		MenPaiFirstOne_BattleBet_AwardInfo : SetText("#{MPDYR_20220427_156}")
 		
-	elseif g_SeverData.huodongType == 1 then	-- 活动期间 
+	elseif g_SeverData.huodongType == 1 then	-- ???? 
 		
-		if g_SeverData.isInBaoMing == 1 then --报名期间
+		if g_SeverData.isInBaoMing == 1 then --????
 			MenPaiFirstOne_BattleBet_AwardInfo : SetText("#{MPDYR_20220427_156}")
-		else --押注比赛期间
+		else --??????
 			if isYaZhu == 1 then
 				local name, pkResult, prizeflag = MenPaiFirstOne_BattleBet_GetYaZhuInfo() 
 				local msg = ScriptGlobal_Format("#{MPDYR_20220427_146}", name)
@@ -250,7 +250,7 @@ function MenPaiFirstOne_BattleBet_PrizeInfo( )
 		end
 		 
 		
-	elseif g_SeverData.huodongType == 2 then	--活动结束后
+	elseif g_SeverData.huodongType == 2 then	--?????
 		MenPaiFirstOne_BattleBet_AwardInfo : SetText( "#{MPDYR_20220427_147}" )
 	end
 end

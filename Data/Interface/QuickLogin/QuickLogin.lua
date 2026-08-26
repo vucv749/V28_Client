@@ -1,7 +1,7 @@
 --¿ì½İµÇÂ¼½çÃæ
 --Ñ©ÎèÒÆÖ²²¢¶ş´ÎÖÆ×÷ 2024-7-9 16:49:42
 
-g_UserPassWord 		= "../Accounts/Accounts.cfg" --¼Ç×¡ÕËºÅÃÜÂëµÄÎÄ¼ş
+g_UserPassWord 		= "../Accounts/Accounts.cfg" --?????????
 --¿Ø¼şÁĞ±í
 local LoginButtons 			= {}
 local ControlPanels 		= {}
@@ -10,8 +10,8 @@ local selectedAccountIndex 	= 0
 local g_check = -1
 --·­Ò³¹¦ÄÜ±äÁ¿
 local currentPage 	  = 1
-local accountsPerPage = 10  -- Ã¿Ò³ÏÔÊ¾µÄÕËºÅÊıÁ¿
-local totalAccounts   = 0     -- ×ÜÕËºÅÊı£¬ĞèÒªÔÚ»ñÈ¡ÕËºÅÊ±¸üĞÂ
+local accountsPerPage = 10  -- ?????????
+local totalAccounts   = 0     -- ????,??????????
 
 --===============================================
 -- ³õÊ¼»¯º¯Êı
@@ -48,7 +48,7 @@ function QuickLogin_OnEvent(event)
 end
 
 --===============================================
--- Ñ¡ÔñÕËºÅÊ±´¥·¢µÄº¯Êı
+-- Ñ¡Ôñ ËºÅÊ±´¥·¢µÄº¯Êı
 --===============================================
 function QuickLogin_SelectAccount(arg)
     for i = 1, 10 do
@@ -61,14 +61,14 @@ function QuickLogin_SelectAccount(arg)
 end
 
 --===============================================
--- Õ¹Ê¾±£´æµÄÕËºÅ
+--  ¹Ê¾±£´æµÄ ËºÅ
 --===============================================
 function QuickLogin_ShowSavedAccounts()
     local nSavenAccID, nSavenPassd = QuickLogin_GetPassWord()
-    totalAccounts = table.getn(nSavenAccID)  -- ¸üĞÂ×ÜÕËºÅÊı
+    totalAccounts = table.getn(nSavenAccID)  -- ??????
 
     if totalAccounts == 0 then
-        PushDebugMessage("ÔİÎŞ±£´æµÄÕËºÅ¡£")
+        PushDebugMessage("TÕm Vô bäo t°n Ğích tài khoän.")
         if this:IsVisible() then
             QuickLogin_Close_Clicked()
         end
@@ -113,7 +113,7 @@ function QuickLogin_previousPage()
 end
 
 --===============================================
--- ´ÓÎÄ¼ş»ñÈ¡±£´æµÄÕËºÅºÍÃÜÂë
+-- ´ÓÎÄ¼ş»ñÈ¡±£´æµÄ ËºÅºÍÃÜÂë
 --===============================================
 function QuickLogin_GetPassWord(OP,targetLine)
 	if OP == nil then
@@ -156,11 +156,11 @@ end
 
 
 --===============================================
--- µÇÂ¼Ñ¡¶¨ÕËºÅ
+-- µÇÂ¼Ñ¡¶¨ ËºÅ
 --===============================================
 function QuickLogin_AccountLoginClick()
     if selectedAccountIndex == 0 then
-        PushDebugMessage("Î´Ñ¡ÔñĞèÒªµÇÂ¼µÄÕËºÅ¡£")
+        PushDebugMessage("V¸ lña ch÷n c¥n ğång kı Ğích tài khoän.")
         return
     end
 	local startIndex = (currentPage - 1) * accountsPerPage + 1
@@ -175,42 +175,42 @@ end
 function QuickLogin_UpdatePaginationButtons()
     local maxPage = math.ceil(totalAccounts / accountsPerPage)
     if currentPage >= maxPage then
-        QuickLogin_next:Disable()  -- Èç¹ûµ±Ç°Ò³ÊÇ×îºóÒ»Ò³»òÕßÖ»ÓĞÒ»Ò³£¬½ûÓÃ¡°ÏÂÒ»Ò³¡±°´Å¥
+        QuickLogin_next:Disable()  -- ????????????????,??“???”??
     else
-        QuickLogin_next:Enable()   -- Èç¹û²»ÊÇ×îºóÒ»Ò³£¬ÆôÓÃ¡°ÏÂÒ»Ò³¡±°´Å¥
+        QuickLogin_next:Enable()   -- ????????,??“???”??
     end
 
     if currentPage > 1 then
-        QuickLogin_previous:Enable()  -- Èç¹ûµ±Ç°Ò³²»ÊÇµÚÒ»Ò³£¬ÆôÓÃ¡°ÉÏÒ»Ò³¡±°´Å¥
+        QuickLogin_previous:Enable()  -- ??????????,??“???”??
     else
-        QuickLogin_previous:Disable() -- Èç¹ûÊÇµÚÒ»Ò³£¬½ûÓÃ¡°ÉÏÒ»Ò³¡±°´Å¥
+        QuickLogin_previous:Disable() -- ??????,??“???”??
     end
 end
 
 --===============================================
---É¾³ı±£´æµÄÕËºÅ
+--É¾³ı±£´æµÄ ËºÅ
 --===============================================
 function QuickLogin_RemoveSavedAccounts()
     if selectedAccountIndex == 0 then
-        PushDebugMessage("Î´Ñ¡ÔñĞèÒªÉ¾³ıµÄÕËºÅ¡£")
+        PushDebugMessage("V¸ lña ch÷n c¥n xóa bö Ğích tài khoän.")
         return
     end
     local nSavenAccID,_ = QuickLogin_GetPassWord()
     local accountToDelete = nSavenAccID[selectedAccountIndex]
 	if not accountToDelete then
-        PushDebugMessage("Ñ¡ÔñµÄÕËºÅÎŞĞ§¡£")
+        PushDebugMessage("Lña ch÷n Ğích tài khoän không có hi®u quä.")
         return
     end
 	
 	--É¾³ı¶ş´ÎÈ·ÈÏ
 	if g_check ~= 1 then
-		GameProduceLogin:GameLoginShowSystemInfo("#cfff263È·¶¨ÒªÉ¾³ıÕËºÅÂğ£¿#r#GĞ¡ÌáÊ¾£ºÇëÔÚ¹Ø±Õ±¾ÌáÊ¾ºóÔÙ´Îµã»÷É¾³ı°´Å¥¼´¿ÉÉ¾³ıÕËºÅ¡£")
+		GameProduceLogin:GameLoginShowSystemInfo("#cfff263xác ğ¸nh Yêu xóa bö tài khoän Ma? #r#GTI¬u nêu lên: Thïnh TÕi ğóng cØa B±n nêu lên H§u lÕi Ği¬m Kích xóa bö cái nút có th¬ xóa bö tài khoän.")
 		g_check = 1;
 		return
 	end
 	
-    local ID, PassWord = LogOn_GetPassWord() -- »ñÈ¡µ±Ç°±£´æµÄËùÓĞÕËºÅºÍÃÜÂë
-	-- ÖØ¹¹Êı¾İ£¬ÅÅ³ıĞèÒªÉ¾³ıµÄÕËºÅ
+    local ID, PassWord = LogOn_GetPassWord() -- ??????????????
+	-- ÖØ¹¹Êı¾İ£¬ÅÅ³ıĞèÒªÉ¾³ıµÄ ËºÅ
 	local nHave = 0
     for i = 1, table.getn(nSavenAccID) do
         if accountToDelete == nil then
@@ -239,7 +239,7 @@ function QuickLogin_RemoveSavedAccounts()
     end
     selectedAccountIndex = 0
     QuickLogin_ShowSavedAccounts()
-    PushDebugMessage("¸ÃÕËºÅ³É¹¦É¾³ı¡£")
+    PushDebugMessage("M¡c nş Hào thành công xóa bö.")
 end
 
 --ÏÔÊ¾ĞŞ¸Ä½çÃæ
@@ -247,7 +247,7 @@ function QuickLogin_modifyAccounts()
 	QuickLogin_Frame:SetProperty("UnifiedSize","{{0,502.000000},{0.000000,210.000000}");
 	QuickLogin_modify_Frame:Show();
 	if selectedAccountIndex == 0 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñĞèÒªĞŞ¸ÄµÄÕËºÅ¡£")
+		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n sØa chæa Ğích tài khoän.")
 		return
 	end
 	local nSavenAccID, nSavenPassd = QuickLogin_GetPassWord(1,selectedAccountIndex)
@@ -255,16 +255,16 @@ function QuickLogin_modifyAccounts()
 	QuickLogin_Edix2:SetText(tostring(nSavenPassd))
 end
 
---È·ÈÏĞŞ¸ÄÕËºÅĞÅÏ¢
+--È·ÈÏĞŞ¸Ä ËºÅĞÅÏ¢
 function QuickLogin_modifyOK(OP)
-	if OP == 1 then --È·ÈÏĞŞ¸Ä
+	if OP == 1 then --????
 		QuickLogin_Frame:SetProperty("UnifiedSize","{{0,340.000000},{0.000000,210.000000}");
 		QuickLogin_modify_Frame:Hide();
 		if selectedAccountIndex == 0 then
-			PushDebugMessage("ÇëÏÈÑ¡ÔñĞèÒªĞŞ¸ÄµÄÕËºÅ¡£")
+			PushDebugMessage("Thïnh Tiên lña ch÷n c¥n sØa chæa Ğích tài khoän.")
 			return
 		end
-		--´¢´æĞŞ¸ÄµÄÕËºÅ
+		--´¢´æĞŞ¸ÄµÄ ËºÅ
 		local nSvaeData = ""
 		local nSavenAccID = QuickLogin_Edix1:GetText()
 		local nSavenPassd = QuickLogin_Edix2:GetText()
@@ -285,13 +285,13 @@ function QuickLogin_modifyOK(OP)
 		end
 		--Ë¢ĞÂ½çÃæ
 		QuickLogin_ShowSavedAccounts()
-	elseif OP == 2 then  --È¡Ïû
+	elseif OP == 2 then  --??
 		QuickLogin_Frame:SetProperty("UnifiedSize","{{0,340.000000},{0.000000,210.000000}");
 		QuickLogin_modify_Frame:Hide();
 	end
 end
 --===============================================
--- ¹Ø±Õ½çÃæ
+-- ¹Ø± ½çÃæ
 --===============================================
 function QuickLogin_Close_Clicked()
     this:Hide()

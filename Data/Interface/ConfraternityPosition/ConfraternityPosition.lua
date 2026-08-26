@@ -1,4 +1,4 @@
-local GUILD_POSITION_SIZE = 10; --◊Ó∂‡ø…”√÷∞Œª ˝
+local GUILD_POSITION_SIZE = 10; --???????
 local g_ConfraternityPosition_Frame_UnifiedPosition;
 function ConfraternityPosition_PreLoad()
 	this:RegisterEvent("GUILD_SHOW_APPOINTPOS");
@@ -49,11 +49,11 @@ function Guild_Position_Confirm()
 	local selidx = ConfraternityPosition_PositionList:GetFirstSelectItem();
 	-- add by zchw 
 	local szMsg = Guild:GetMyGuildInfo("Appoint", selidx);
-	if szMsg == "…Ã»À" then
+	if szMsg == "ThﬂΩng Nh‚n" then
 		local Num = Guild:GetMemberBak();
 		local szLvl = Guild:GetMembersInfo(Num, "Level");	
 		if szLvl < 40 then
-			PushDebugMessage("40º∂“‘œ¬µƒ∞Ô÷⁄≤ªƒ‹±ª»Œ√¸Œ™…Ã»À£°");
+			PushDebugMessage("Bang Ch˙ng dﬂæi c§p 40 khÙng th¨ ﬂ˛c nhßn ch—c l‡ ThﬂΩng Nh‚n!");
 			return;
 		end
 	-- end

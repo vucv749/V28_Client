@@ -1,8 +1,8 @@
--- 争霸赛 战队管理UI
+-- 狔霸赛 牻队管理UI
 
 -- 服务器端回调脚本ID
 local NoDiffMatch_CreateManger_ServerScriptId = 889961
--- 战队最大人数
+-- 牻队最大人数
 local NoDiffMatch_CreateManger_TeamMember_Max = 8
 -- 目标NPCID
 local NoDiffMatch_CreateManger_TargetNPC = -1
@@ -20,25 +20,25 @@ local NoDiffMatch_CreateManger_MAX_OBJ_DISTANCE = 5.0
 -- 职位
 local NoDiffMatch_CreateManger_Post =
 {
-	Member = 0,		-- 队员
-	Deputy = 1,		-- 副队长
-	Leader = 2,		-- 队长
+	Member = 0,		-- ??
+	Deputy = 1,		-- ???
+	Leader = 2,		-- ??
 } -- end NoDiffMatch_CreateManger_Post
 
 -- 门派
 local NoDiffMatch_CreateManger_MenPaiName =
 {
-	[0] = "#{XQ_MP_1}",    	--少林
-	[1] = "#{XQ_MP_2}",    	--明教
-	[2] = "#{XQ_MP_3}",    	--丐帮
-	[3] = "#{XQ_MP_4}",    	--武当
-	[4] = "#{XQ_MP_5}",    	--峨眉
-	[5] = "#{XQ_MP_6}",    	--星宿
-	[6] = "#{XQ_MP_7}",    	--天龙
-	[7] = "#{XQ_MP_8}",    	--天山
-	[8] = "#{XQ_MP_9}",    	--逍遥
-	[9] = "",         		--无门派
-	[10] = "#{WCBZ_220809_53}",--曼陀山庄 
+	[0] = "#{XQ_MP_1}",    	--??
+	[1] = "#{XQ_MP_2}",    	--??
+	[2] = "#{XQ_MP_3}",    	--??
+	[3] = "#{XQ_MP_4}",    	--??
+	[4] = "#{XQ_MP_5}",    	--??
+	[5] = "#{XQ_MP_6}",    	--??
+	[6] = "#{XQ_MP_7}",    	--??
+	[7] = "#{XQ_MP_8}",    	--??
+	[8] = "#{XQ_MP_9}",    	--??
+	[9] = "",         		--???
+	[10] = "#{WCBZ_220809_53}",--???? 
 } -- end NoDiffMatch_CreateManger_MenPaiName
 
 
@@ -46,8 +46,8 @@ function NoDiffMatch_CreateManger_PreLoad()
 	this:RegisterEvent("ZBS_OPENTEAMMANAGER", true)
 	this:RegisterEvent("ZBS_CLOSEUI", true)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 	this:RegisterEvent("OBJECT_CARED_EVENT", false)
 end -- end func NoDiffMatch_CreateManger_PreLoad()
 
@@ -72,7 +72,7 @@ function NoDiffMatch_CreateManger_OnEvent(event)
 			return
 		end
 
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if((arg1 == "distance" and tonumber(arg2) > NoDiffMatch_CreateManger_MAX_OBJ_DISTANCE) or arg1=="destroy") then
 			--取消关心
 			NoDiffMatch_CreateManger_Hide()
@@ -119,7 +119,7 @@ function NoDiffMatch_CreateManger_StopCareObject()
 	end
 end -- end func NoDiffMatch_CreateManger_StopCareObject()
 
--- 关闭按钮事件
+-- 关睜按钮事件
 function NoDiffMatch_CreateManger_CloseClicked()
 	NoDiffMatch_CreateManger_Hide()
 end -- end func NoDiffMatch_CreateManger_CloseClicked()
@@ -154,7 +154,7 @@ function NoDiffMatch_CreateManger_Leader_Clicked()
 	end
 
 	-- if (ZBS:IsHasDeputy() > 0) then
-	-- 	-- 战队中已有副队长
+	-- 	-- 牻队中已有副队长
 	-- 	PushDebugMessage("#{WCBZ_180128_149}")
 	-- 	return -2
 	-- end
@@ -202,7 +202,7 @@ function NoDiffMatch_CreateManger_NoLeader_Clicked()
 	end
 
 	if (ZBS:IsHasDeputy() <= 0) then
-		-- 战队中没有副队长
+		-- 牻队中没有副队长
 		PushDebugMessage("#{WCBZ_180128_153}")
 		return -2
 	end
@@ -218,7 +218,7 @@ function NoDiffMatch_CreateManger_NoLeader_Clicked()
 	return 1
 end -- end func NoDiffMatch_CreateManger_NoLeader_Clicked()
 
--- 解散战队按钮事件
+-- 解散牻队按钮事件
 function NoDiffMatch_CreateManger_Dismiss_Clicked()
 	-- 判断自己是不是队长
 	if (ZBS:IsLeader() <= 0) then
@@ -237,7 +237,7 @@ function NoDiffMatch_CreateManger_Dismiss_Clicked()
 	NoDiffMatch_CreateManger_Hide()
 end -- end func NoDiffMatch_CreateManger_Dismiss_Clicked()
 
--- 请离战队按钮事件
+-- 请离牻队按钮事件
 function NoDiffMatch_CreateManger_PickOut_Clicked()
 	-- 判断自己是不是队长
 	if (ZBS:IsLeader() <= 0) then
@@ -274,7 +274,7 @@ function NoDiffMatch_CreateManger_PickOut_Clicked()
 	return 1
 end -- end func NoDiffMatch_CreateManger_PickOut_Clicked()
 
--- 退出战队按钮事件
+-- 退出牻队按钮事件
 function NoDiffMatch_CreateManger_OutTeam_Clicked()
 	-- 判断自己是不是队长
 	if (ZBS:IsLeader() > 0) then
@@ -293,11 +293,11 @@ function NoDiffMatch_CreateManger_OutTeam_Clicked()
 	NoDiffMatch_CreateManger_Hide()
 end -- end func NoDiffMatch_CreateManger_OutTeam_Clicked()
 
--- 战队成员列表点击事件
+-- 牻队成员列表点击事件
 function NoDiffMatch_CreateManger_ToggleMemberMenu(arg)
 end -- end func NoDiffMatch_CreateManger_ToggleMemberMenu()
 
--- 战队成员列表点击事件
+-- 牻队成员列表点击事件
 function NoDiffMatch_CreateManger_Clicked(arg)
 	local index = tonumber(arg)
 	if (index <= 0 or index > NoDiffMatch_CreateManger_TeamMember_Max) then
@@ -311,7 +311,7 @@ function NoDiffMatch_CreateManger_Clicked(arg)
 	return index
 end -- end func NoDiffMatch_CreateManger_Clicked()
 
--- 战队成员列表点击事件
+-- 牻队成员列表点击事件
 function NoDiffMatch_CreateManger_DragStarted()
 end -- end func NoDiffMatch_CreateManger_DragStarted()
 
@@ -385,7 +385,7 @@ function NoDiffMatch_CreateManger_UpdateSelect(selectIndex)
 	end
 end -- end func NoDiffMatch_CreateManger_UpdateSelect()
 
--- 刷新战队数据
+-- 刷新牻队数据
 function NoDiffMatch_CreateManger_UpdateTeamInfo()
 	if (NoDiffMatch_CreateManger_CtrlList == nil) then
 		NoDiffMatch_CreateManger_InitCtrlList()
@@ -397,36 +397,36 @@ function NoDiffMatch_CreateManger_UpdateTeamInfo()
 
 	if (ZBS:IsLeader() > 0) then
 		-- 自己是队长
-		NoDiffMatch_CreateManger_AddMember:Enable()			-- 邀请按钮
+		NoDiffMatch_CreateManger_AddMember:Enable()			-- ????
 		if (ZBS:IsHasDeputy() > 0) then
 			-- 已有副队长 屏蔽任命副队长按钮
 			--NoDiffMatch_CreateManger_ViceLeader:Disable()	-- 任命副队长按钮
 			NoDiffMatch_CreateManger_ViceLeader:Enable()
-			NoDiffMatch_CreateManger_NoLeader:Enable()		-- 解除副队长任命按钮
+			NoDiffMatch_CreateManger_NoLeader:Enable()		-- ?????????
 		else
 			-- 没有副队长 屏蔽解除副队长按钮
-			NoDiffMatch_CreateManger_NoLeader:Disable()		-- 解除副队长任命按钮
-			NoDiffMatch_CreateManger_ViceLeader:Enable()	-- 任命副队长按钮
+			NoDiffMatch_CreateManger_NoLeader:Disable()		-- ?????????
+			NoDiffMatch_CreateManger_ViceLeader:Enable()	-- ???????
 		end
-		NoDiffMatch_CreateManger_Dissolve:Enable()			-- 解散战队按钮
-		NoDiffMatch_CreateManger_Fire:Enable()				-- 请离战队按钮
-		NoDiffMatch_CreateManger_Leave:Enable()				-- 退出战队按钮
+		NoDiffMatch_CreateManger_Dissolve:Enable()			-- ??????
+		NoDiffMatch_CreateManger_Fire:Enable()				-- ??????
+		NoDiffMatch_CreateManger_Leave:Enable()				-- ??????
 	elseif (ZBS:IsDeputy() > 0) then
 		-- 自己是副队长
-		NoDiffMatch_CreateManger_AddMember:Enable()			-- 邀请按钮
-		NoDiffMatch_CreateManger_ViceLeader:Disable()		-- 任命副队长按钮
-		NoDiffMatch_CreateManger_NoLeader:Disable()			-- 解除副队长任命按钮
-		NoDiffMatch_CreateManger_Dissolve:Disable()			-- 解散战队按钮
-		NoDiffMatch_CreateManger_Fire:Disable()				-- 请离战队按钮
-		NoDiffMatch_CreateManger_Leave:Enable()				-- 退出战队按钮
+		NoDiffMatch_CreateManger_AddMember:Enable()			-- ????
+		NoDiffMatch_CreateManger_ViceLeader:Disable()		-- ???????
+		NoDiffMatch_CreateManger_NoLeader:Disable()			-- ?????????
+		NoDiffMatch_CreateManger_Dissolve:Disable()			-- ??????
+		NoDiffMatch_CreateManger_Fire:Disable()				-- ??????
+		NoDiffMatch_CreateManger_Leave:Enable()				-- ??????
 	else
 		-- 自己是队员
-		NoDiffMatch_CreateManger_AddMember:Disable()		-- 邀请按钮
-		NoDiffMatch_CreateManger_ViceLeader:Disable()		-- 任命副队长按钮
-		NoDiffMatch_CreateManger_NoLeader:Disable()			-- 解除副队长任命按钮
-		NoDiffMatch_CreateManger_Dissolve:Disable()			-- 解散战队按钮
-		NoDiffMatch_CreateManger_Fire:Disable()				-- 请离战队按钮
-		NoDiffMatch_CreateManger_Leave:Enable()				-- 退出战队按钮
+		NoDiffMatch_CreateManger_AddMember:Disable()		-- ????
+		NoDiffMatch_CreateManger_ViceLeader:Disable()		-- ???????
+		NoDiffMatch_CreateManger_NoLeader:Disable()			-- ?????????
+		NoDiffMatch_CreateManger_Dissolve:Disable()			-- ??????
+		NoDiffMatch_CreateManger_Fire:Disable()				-- ??????
+		NoDiffMatch_CreateManger_Leave:Enable()				-- ??????
 	end
 
 	for i=1, NoDiffMatch_CreateManger_TeamMember_Max, 1 do

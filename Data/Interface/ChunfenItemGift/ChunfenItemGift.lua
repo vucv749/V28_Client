@@ -7,7 +7,7 @@ local g_ActionBtnCtrl1 = {}
 
 local g_itemids = 
 {
-	[1] = {50302002, 50302001, 50302003, 50302004},  --晶石3级礼盒
+	[1] = {50302002, 50302001, 50302003, 50302004},  --??3???
 }
 
 local g_boxType = 0;
@@ -16,7 +16,7 @@ local g_boxType = 0;
 --===============================================
 function ChunfenItemGift_PreLoad()
 	this:RegisterEvent("UI_COMMAND",true)
-	this:RegisterEvent("PLAYER_LEAVE_WORLD",false)		-- 离开场景
+	this:RegisterEvent("PLAYER_LEAVE_WORLD",false)		-- ????
 end
 
 --===============================================
@@ -63,7 +63,7 @@ end
 --===============================================
 function ChunfenItemGift_OnEvent(event)
 	
-	if( event == "UI_COMMAND" and tonumber(arg0) == 89112301 ) then--衣服
+	if( event == "UI_COMMAND" and tonumber(arg0) == 89112301 ) then--??
 		local bIsShow = Get_XParam_INT(0);
 		g_boxType = 1;
 		if bIsShow == 1 then

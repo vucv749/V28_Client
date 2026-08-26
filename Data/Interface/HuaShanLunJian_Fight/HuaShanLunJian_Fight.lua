@@ -5,16 +5,16 @@ local g_IsTimerSet = 0
 local g_iReconnect = 0
 local g_MenPaiNameList =
 {
-	[0]  ={Name="#{HSSC_191009_128}" , Color="#cff6600", }, --ÉÙÁÖ
-	[1]  ={Name="#{HSSC_191009_35}" , Color="#cffcc00", }, --Ã÷½Ì
-	[2]  ={Name="#{HSSC_191009_36}" , Color="#c00ff00", }, --Ø¤°ï
-	[3]  ={Name="#{HSSC_191009_31}" , Color="#c0000ff", }, --Îäµ±
-	[4]  ={Name="#{HSSC_191009_32}" , Color="#cff99cc", }, --¶ëÃ¼
-	[5]  ={Name="#{HSSC_191009_129}" , Color="#c007700", }, --ÐÇËÞ
-	[6]  ={Name="#{HSSC_191009_130}" , Color="#cffff00", }, --ÌìÁú
-	[7]  ={Name="#{HSSC_191009_34}" , Color="#cffffff", }, --ÌìÉ½
-	[8]  ={Name="#{HSSC_191009_33}" , Color="#c7700ff", }, --åÐÒ£
-	[9]  ={Name="ÎÞÃÅÅÉ"     , Color="#c999999", },	
+	[0]  ={Name="#{HSSC_191009_128}" , Color="#cff6600", }, --??
+	[1]  ={Name="#{HSSC_191009_35}" , Color="#cffcc00", }, --??
+	[2]  ={Name="#{HSSC_191009_36}" , Color="#c00ff00", }, --??
+	[3]  ={Name="#{HSSC_191009_31}" , Color="#c0000ff", }, --??
+	[4]  ={Name="#{HSSC_191009_32}" , Color="#cff99cc", }, --??
+	[5]  ={Name="#{HSSC_191009_129}" , Color="#c007700", }, --??
+	[6]  ={Name="#{HSSC_191009_130}" , Color="#cffff00", }, --??
+	[7]  ={Name="#{HSSC_191009_34}" , Color="#cffffff", }, --??
+	[8]  ={Name="#{HSSC_191009_33}" , Color="#c7700ff", }, --??
+	[9]  ={Name="Tñ do"     , Color="#c999999", },	
 	[10]  ={Name="#{GMGameInterface_Script_DataPool_Info_ManTuoShanZhuang}"     , Color="#cffffb3", },	
 }
 local g_DuanWei1 = {
@@ -91,8 +91,8 @@ function HuaShanLunJian_Fight_OnLoad()
 	g_Frame_UnifiedXPosition	= HuaShanLunJian_Fight_Frame:GetProperty("UnifiedXPosition");
 	g_Frame_UnifiedYPosition	= HuaShanLunJian_Fight_Frame:GetProperty("UnifiedYPosition");
 
-	--Ë÷Òý1µ½3¹éµÚÒ»Õ½¶Ó£»ÆäËû4-6ÊôÓÚµÚ¶þÕ½¶Ó
-	--±»²ß»®Ð¡½ã½ã´ø¹µÀïÈ¥ÁË£¬¿Õ¼äÃûÊÇlevel£¬ÎÒ¾ÍÒÔÎªÒ²ÊÇlevel£¬½á¹ûÊÇ¶ÎÎ»
+	--Ë÷Òý1µ½3¹éµÚÒ» ½¶Ó£»ÆäËû4-6ÊôÓÚµÚ¶þ ½¶Ó
+	--±»²ß»®Ð¡½ã½ã´ø¹µÀïÈ¥ÁË£¬¿ ¼äÃûÊÇlevel£¬ÎÒ¾ÍÒÔÎªÒ²ÊÇlevel£¬½á¹ûÊÇ¶ÎÎ»
 	g_Team_DuanWei_Ctrl_List[1] = HuaShanLunJian_Fight_Left1Level;
 	g_Team_DuanWei_Ctrl_List[2] = HuaShanLunJian_Fight_Left2Level;
 	g_Team_DuanWei_Ctrl_List[3] = HuaShanLunJian_Fight_Left3Level;
@@ -176,7 +176,7 @@ function HuaShanLunJian_Fight_OnEvent(event)
 		--2.³õÊ¼»¯
 		g_HuanShanLunJian_Fight_Test = tonumber(arg1)
 		g_IsTimerSet = 0
-		--GM½øÀ´µÄÊ±ºò£¬»á´¥·¢Õâ¸öÉèÖÃ.Èç¹ûÖÃÎª1£¬Ôò´Ë´ÎÇÒ³¡¾°ÊÂ¼þ²»Ö´ÐÐ¡£
+		--GM½øÀ´µÄÊ±ºò£¬»á´¥·¢ â¸öÉèÖÃ.Èç¹ûÖÃÎª1£¬Ôò´Ë´ÎÇÒ³¡¾°ÊÂ¼þ²»Ö´ÐÐ¡£
 		--g_IsFuckBaby = 1
 		HuaShanLunJian_FightFrame_FullFill_Data(0)
 		--Ö»ÔÚ¸ÃÊÂ¼þÀïÃæ£¬¿ªÊ¼¼ÆÊ±Æ÷¡£
@@ -221,7 +221,7 @@ function HuaShanLunJian_Fight_OnEvent(event)
 			HuaShanLunJian_Fight_CtrlList_InitData()
 			this:Hide()
 		end
-	elseif (event == "UI_COMMAND" and tonumber(arg0) == 89289801) then --´ò¿ª½çÃæ
+	elseif (event == "UI_COMMAND" and tonumber(arg0) == 89289801) then --????
 		HuaShanLunJian_FightFrame_CloseWindow()
 	end
 
@@ -282,21 +282,21 @@ function HuaShanLunJian_FightFrame_FullFill_Data(index)
 				if nGuid ~= "" and nlevel > 0 then
 
 					--Íæ¼Ò×´Ì¬£º ¡¡
-					if nstate == 0 then      --0-Õý³£
-							g_Team_Name_Ctrl_List[i]:SetText(g_MenPaiNameList[nMenPai].Color..szName)  --Ãû×Ö
-							g_Team_MenPai_Ctrl_List[i]:SetText(g_MenPaiNameList[nMenPai].Color..g_MenPaiNameList[nMenPai].Name)  --ÃÅÅÉ
+					if nstate == 0 then      --0-??
+							g_Team_Name_Ctrl_List[i]:SetText(g_MenPaiNameList[nMenPai].Color..szName)  --??
+							g_Team_MenPai_Ctrl_List[i]:SetText(g_MenPaiNameList[nMenPai].Color..g_MenPaiNameList[nMenPai].Name)  --??
 							g_Team_DuanWei_Ctrl_List[i]:SetText(g_MenPaiNameList[nMenPai].Color..nDuanWei)  --duanewi
 							g_Team_Level_Ctrl_List[i]:SetText(g_MenPaiNameList[nMenPai].Color..nlevel)
 							g_Team_KillNum_Ctrl_List[i]:SetText(g_MenPaiNameList[nMenPai].Color..nkill)
-							g_Team_HP_Ctrl_List[i]:SetProgress(nHP, 100)--ÑªÁ¿°Ù·Ö±È
-					elseif nstate == 1 then  --1-ËÀÍö
-							g_Team_Name_Ctrl_List[i]:SetText(g_DieColor..szName)  --Ãû×Ö
-							g_Team_MenPai_Ctrl_List[i]:SetText(g_DieColor..g_MenPaiNameList[nMenPai].Name)  --ÃÅÅÉ
-							g_Team_DuanWei_Ctrl_List[i]:SetText(g_DieColor..nDuanWei)  --µÈ¼¶
+							g_Team_HP_Ctrl_List[i]:SetProgress(nHP, 100)--?????
+					elseif nstate == 1 then  --1-??
+							g_Team_Name_Ctrl_List[i]:SetText(g_DieColor..szName)  --??
+							g_Team_MenPai_Ctrl_List[i]:SetText(g_DieColor..g_MenPaiNameList[nMenPai].Name)  --??
+							g_Team_DuanWei_Ctrl_List[i]:SetText(g_DieColor..nDuanWei)  --??
 							g_Team_Level_Ctrl_List[i]:SetText(g_DieColor..nlevel)
 							g_Team_KillNum_Ctrl_List[i]:SetText(g_DieColor..nkill)
-							g_Team_HP_Ctrl_List[i]:SetProgress(0, 100)--ÑªÁ¿°Ù·Ö±È
-					elseif nstate == 2 then  --2-µôÏß
+							g_Team_HP_Ctrl_List[i]:SetProgress(0, 100)--?????
+					elseif nstate == 2 then  --2-??
 							g_Team_Name_Ctrl_List[i]:SetText("")
 							g_Team_MenPai_Ctrl_List[i]:SetText("")
 							g_Team_DuanWei_Ctrl_List[i]:SetText("")
@@ -316,21 +316,21 @@ function HuaShanLunJian_FightFrame_FullFill_Data(index)
 				if nGuid ~= "" and nDuanWei >= 1 and nDuanWei <= 6 then
 
 					--Íæ¼Ò×´Ì¬£º ¡¡
-					if nstate == 0 then      --0-Õý³£
-							g_Team_Name_Ctrl_List[i]:SetText(g_MenPaiNameList[nMenPai].Color..szName)  --Ãû×Ö
-							g_Team_MenPai_Ctrl_List[i]:SetText(g_MenPaiNameList[nMenPai].Color..g_MenPaiNameList[nMenPai].Name)  --ÃÅÅÉ
+					if nstate == 0 then      --0-??
+							g_Team_Name_Ctrl_List[i]:SetText(g_MenPaiNameList[nMenPai].Color..szName)  --??
+							g_Team_MenPai_Ctrl_List[i]:SetText(g_MenPaiNameList[nMenPai].Color..g_MenPaiNameList[nMenPai].Name)  --??
 							g_Team_DuanWei_Ctrl_List[i]:SetText(g_MenPaiNameList[nMenPai].Color..g_DuanWei1[nDuanWei])  --duanewi
 							g_Team_Level_Ctrl_List[i]:SetText(g_MenPaiNameList[nMenPai].Color..nlevel)
 							g_Team_KillNum_Ctrl_List[i]:SetText(g_MenPaiNameList[nMenPai].Color..nkill)
-							g_Team_HP_Ctrl_List[i]:SetProgress(nHP, 100)--ÑªÁ¿°Ù·Ö±È
-					elseif nstate == 1 then  --1-ËÀÍö
-							g_Team_Name_Ctrl_List[i]:SetText(g_DieColor..szName)  --Ãû×Ö
-							g_Team_MenPai_Ctrl_List[i]:SetText(g_DieColor..g_MenPaiNameList[nMenPai].Name)  --ÃÅÅÉ
-							g_Team_DuanWei_Ctrl_List[i]:SetText(g_DieColor..g_DuanWei1[nDuanWei])  --µÈ¼¶
+							g_Team_HP_Ctrl_List[i]:SetProgress(nHP, 100)--?????
+					elseif nstate == 1 then  --1-??
+							g_Team_Name_Ctrl_List[i]:SetText(g_DieColor..szName)  --??
+							g_Team_MenPai_Ctrl_List[i]:SetText(g_DieColor..g_MenPaiNameList[nMenPai].Name)  --??
+							g_Team_DuanWei_Ctrl_List[i]:SetText(g_DieColor..g_DuanWei1[nDuanWei])  --??
 							g_Team_Level_Ctrl_List[i]:SetText(g_DieColor..nlevel)
 							g_Team_KillNum_Ctrl_List[i]:SetText(g_DieColor..nkill)
-							g_Team_HP_Ctrl_List[i]:SetProgress(0, 100)--ÑªÁ¿°Ù·Ö±È
-					elseif nstate == 2 then  --2-µôÏß
+							g_Team_HP_Ctrl_List[i]:SetProgress(0, 100)--?????
+					elseif nstate == 2 then  --2-??
 							g_Team_Name_Ctrl_List[i]:SetText("")
 							g_Team_MenPai_Ctrl_List[i]:SetText("")
 							g_Team_DuanWei_Ctrl_List[i]:SetText("")
@@ -357,21 +357,21 @@ function HuaShanLunJian_FightFrame_FullFill_Data(index)
 					if nGuid ~= "" and nlevel > 0 then
 
 						--Íæ¼Ò×´Ì¬£º ¡¡
-						if nstate == 0 then      --0-Õý³£
-								g_Team_Name_Ctrl_List[i+3]:SetText(g_MenPaiNameList[nMenPai].Color..szName)  --Ãû×Ö
-								g_Team_MenPai_Ctrl_List[i+3]:SetText(g_MenPaiNameList[nMenPai].Color..g_MenPaiNameList[nMenPai].Name)  --ÃÅÅÉ
-								g_Team_DuanWei_Ctrl_List[i+3]:SetText(g_MenPaiNameList[nMenPai].Color..nDuanWei)  --µÈ¼¶
+						if nstate == 0 then      --0-??
+								g_Team_Name_Ctrl_List[i+3]:SetText(g_MenPaiNameList[nMenPai].Color..szName)  --??
+								g_Team_MenPai_Ctrl_List[i+3]:SetText(g_MenPaiNameList[nMenPai].Color..g_MenPaiNameList[nMenPai].Name)  --??
+								g_Team_DuanWei_Ctrl_List[i+3]:SetText(g_MenPaiNameList[nMenPai].Color..nDuanWei)  --??
 								g_Team_Level_Ctrl_List[i+3]:SetText(g_MenPaiNameList[nMenPai].Color..nlevel)
 								g_Team_KillNum_Ctrl_List[i+3]:SetText(g_MenPaiNameList[nMenPai].Color..nkill)
-								g_Team_HP_Ctrl_List[i+3]:SetProgress(nHP, 100)--ÑªÁ¿°Ù·Ö±È
-						elseif nstate == 1 then  --1-ËÀÍö
-								g_Team_Name_Ctrl_List[i+3]:SetText(g_DieColor..szName)  --Ãû×Ö
-								g_Team_MenPai_Ctrl_List[i+3]:SetText(g_DieColor..g_MenPaiNameList[nMenPai].Name)  --ÃÅÅÉ
-								g_Team_DuanWei_Ctrl_List[i+3]:SetText(g_DieColor..nDuanWei)  --µÈ¼¶
+								g_Team_HP_Ctrl_List[i+3]:SetProgress(nHP, 100)--?????
+						elseif nstate == 1 then  --1-??
+								g_Team_Name_Ctrl_List[i+3]:SetText(g_DieColor..szName)  --??
+								g_Team_MenPai_Ctrl_List[i+3]:SetText(g_DieColor..g_MenPaiNameList[nMenPai].Name)  --??
+								g_Team_DuanWei_Ctrl_List[i+3]:SetText(g_DieColor..nDuanWei)  --??
 								g_Team_Level_Ctrl_List[i+3]:SetText(g_DieColor..nlevel)
 								g_Team_KillNum_Ctrl_List[i+3]:SetText(g_DieColor..nkill)
-								g_Team_HP_Ctrl_List[i+3]:SetProgress(0, 100)--ÑªÁ¿°Ù·Ö±È
-						elseif nstate == 2 then  --2-µôÏß
+								g_Team_HP_Ctrl_List[i+3]:SetProgress(0, 100)--?????
+						elseif nstate == 2 then  --2-??
 								g_Team_Name_Ctrl_List[i+3]:SetText("")
 								g_Team_MenPai_Ctrl_List[i+3]:SetText("")
 								g_Team_DuanWei_Ctrl_List[i+3]:SetText("")
@@ -390,21 +390,21 @@ function HuaShanLunJian_FightFrame_FullFill_Data(index)
 					if nGuid ~= "" then
 
 						--Íæ¼Ò×´Ì¬£º ¡¡
-						if nstate == 0 then      --0-Õý³£
-								g_Team_Name_Ctrl_List[i-3]:SetText(g_MenPaiNameList[nMenPai].Color..szName)  --Ãû×Ö
-								g_Team_MenPai_Ctrl_List[i-3]:SetText(g_MenPaiNameList[nMenPai].Color..g_MenPaiNameList[nMenPai].Name)  --ÃÅÅÉ
-								g_Team_DuanWei_Ctrl_List[i-3]:SetText(g_MenPaiNameList[nMenPai].Color..nDuanWei)  --µÈ¼¶
+						if nstate == 0 then      --0-??
+								g_Team_Name_Ctrl_List[i-3]:SetText(g_MenPaiNameList[nMenPai].Color..szName)  --??
+								g_Team_MenPai_Ctrl_List[i-3]:SetText(g_MenPaiNameList[nMenPai].Color..g_MenPaiNameList[nMenPai].Name)  --??
+								g_Team_DuanWei_Ctrl_List[i-3]:SetText(g_MenPaiNameList[nMenPai].Color..nDuanWei)  --??
 								g_Team_Level_Ctrl_List[i-3]:SetText(g_MenPaiNameList[nMenPai].Color..nlevel)
 								g_Team_KillNum_Ctrl_List[i-3]:SetText(g_MenPaiNameList[nMenPai].Color..nkill)
-								g_Team_HP_Ctrl_List[i-3]:SetProgress(nHP, 100)--ÑªÁ¿°Ù·Ö±È
-						elseif nstate == 1 then  --1-ËÀÍö
-								g_Team_Name_Ctrl_List[i-3]:SetText(g_DieColor..szName)  --Ãû×Ö
-								g_Team_MenPai_Ctrl_List[i-3]:SetText(g_DieColor..g_MenPaiNameList[nMenPai].Name)  --ÃÅÅÉ
-								g_Team_DuanWei_Ctrl_List[i-3]:SetText(g_DieColor..nDuanWei)  --µÈ¼¶
+								g_Team_HP_Ctrl_List[i-3]:SetProgress(nHP, 100)--?????
+						elseif nstate == 1 then  --1-??
+								g_Team_Name_Ctrl_List[i-3]:SetText(g_DieColor..szName)  --??
+								g_Team_MenPai_Ctrl_List[i-3]:SetText(g_DieColor..g_MenPaiNameList[nMenPai].Name)  --??
+								g_Team_DuanWei_Ctrl_List[i-3]:SetText(g_DieColor..nDuanWei)  --??
 								g_Team_Level_Ctrl_List[i-3]:SetText(g_DieColor..nlevel)
 								g_Team_KillNum_Ctrl_List[i-3]:SetText(g_DieColor..nkill)
-								g_Team_HP_Ctrl_List[i-3]:SetProgress(0, 100)--ÑªÁ¿°Ù·Ö±È
-						elseif nstate == 2 then  --2-µôÏß
+								g_Team_HP_Ctrl_List[i-3]:SetProgress(0, 100)--?????
+						elseif nstate == 2 then  --2-??
 								g_Team_Name_Ctrl_List[i-3]:SetText("")
 								g_Team_MenPai_Ctrl_List[i-3]:SetText("")
 								g_Team_DuanWei_Ctrl_List[i-3]:SetText("")
@@ -426,21 +426,21 @@ function HuaShanLunJian_FightFrame_FullFill_Data(index)
 					if nGuid ~= "" and nDuanWei >= 1 and nDuanWei <= 6 then
 
 						--Íæ¼Ò×´Ì¬£º ¡¡
-						if nstate == 0 then      --0-Õý³£
-								g_Team_Name_Ctrl_List[i+3]:SetText(g_MenPaiNameList[nMenPai].Color..szName)  --Ãû×Ö
-								g_Team_MenPai_Ctrl_List[i+3]:SetText(g_MenPaiNameList[nMenPai].Color..g_MenPaiNameList[nMenPai].Name)  --ÃÅÅÉ
-								g_Team_DuanWei_Ctrl_List[i+3]:SetText(g_MenPaiNameList[nMenPai].Color..g_DuanWei1[nDuanWei])  --µÈ¼¶
+						if nstate == 0 then      --0-??
+								g_Team_Name_Ctrl_List[i+3]:SetText(g_MenPaiNameList[nMenPai].Color..szName)  --??
+								g_Team_MenPai_Ctrl_List[i+3]:SetText(g_MenPaiNameList[nMenPai].Color..g_MenPaiNameList[nMenPai].Name)  --??
+								g_Team_DuanWei_Ctrl_List[i+3]:SetText(g_MenPaiNameList[nMenPai].Color..g_DuanWei1[nDuanWei])  --??
 								g_Team_Level_Ctrl_List[i+3]:SetText(g_MenPaiNameList[nMenPai].Color..nlevel)
 								g_Team_KillNum_Ctrl_List[i+3]:SetText(g_MenPaiNameList[nMenPai].Color..nkill)
-								g_Team_HP_Ctrl_List[i+3]:SetProgress(nHP, 100)--ÑªÁ¿°Ù·Ö±È
-						elseif nstate == 1 then  --1-ËÀÍö
-								g_Team_Name_Ctrl_List[i+3]:SetText(g_DieColor..szName)  --Ãû×Ö
-								g_Team_MenPai_Ctrl_List[i+3]:SetText(g_DieColor..g_MenPaiNameList[nMenPai].Name)  --ÃÅÅÉ
-								g_Team_DuanWei_Ctrl_List[i+3]:SetText(g_DieColor..g_DuanWei1[nDuanWei])  --µÈ¼¶
+								g_Team_HP_Ctrl_List[i+3]:SetProgress(nHP, 100)--?????
+						elseif nstate == 1 then  --1-??
+								g_Team_Name_Ctrl_List[i+3]:SetText(g_DieColor..szName)  --??
+								g_Team_MenPai_Ctrl_List[i+3]:SetText(g_DieColor..g_MenPaiNameList[nMenPai].Name)  --??
+								g_Team_DuanWei_Ctrl_List[i+3]:SetText(g_DieColor..g_DuanWei1[nDuanWei])  --??
 								g_Team_Level_Ctrl_List[i+3]:SetText(g_DieColor..nlevel)
 								g_Team_KillNum_Ctrl_List[i+3]:SetText(g_DieColor..nkill)
-								g_Team_HP_Ctrl_List[i+3]:SetProgress(0, 100)--ÑªÁ¿°Ù·Ö±È
-						elseif nstate == 2 then  --2-µôÏß
+								g_Team_HP_Ctrl_List[i+3]:SetProgress(0, 100)--?????
+						elseif nstate == 2 then  --2-??
 								g_Team_Name_Ctrl_List[i+3]:SetText("")
 								g_Team_MenPai_Ctrl_List[i+3]:SetText("")
 								g_Team_DuanWei_Ctrl_List[i+3]:SetText("")
@@ -459,21 +459,21 @@ function HuaShanLunJian_FightFrame_FullFill_Data(index)
 					if nGuid ~= "" and nDuanWei >= 1 and nDuanWei <= 6 then
 
 						--Íæ¼Ò×´Ì¬£º ¡¡
-						if nstate == 0 then      --0-Õý³£
-								g_Team_Name_Ctrl_List[i-3]:SetText(g_MenPaiNameList[nMenPai].Color..szName)  --Ãû×Ö
-								g_Team_MenPai_Ctrl_List[i-3]:SetText(g_MenPaiNameList[nMenPai].Color..g_MenPaiNameList[nMenPai].Name)  --ÃÅÅÉ
-								g_Team_DuanWei_Ctrl_List[i-3]:SetText(g_MenPaiNameList[nMenPai].Color..g_DuanWei1[nDuanWei])  --µÈ¼¶
+						if nstate == 0 then      --0-??
+								g_Team_Name_Ctrl_List[i-3]:SetText(g_MenPaiNameList[nMenPai].Color..szName)  --??
+								g_Team_MenPai_Ctrl_List[i-3]:SetText(g_MenPaiNameList[nMenPai].Color..g_MenPaiNameList[nMenPai].Name)  --??
+								g_Team_DuanWei_Ctrl_List[i-3]:SetText(g_MenPaiNameList[nMenPai].Color..g_DuanWei1[nDuanWei])  --??
 								g_Team_Level_Ctrl_List[i-3]:SetText(g_MenPaiNameList[nMenPai].Color..nlevel)
 								g_Team_KillNum_Ctrl_List[i-3]:SetText(g_MenPaiNameList[nMenPai].Color..nkill)
-								g_Team_HP_Ctrl_List[i-3]:SetProgress(nHP, 100)--ÑªÁ¿°Ù·Ö±È
-						elseif nstate == 1 then  --1-ËÀÍö
-								g_Team_Name_Ctrl_List[i-3]:SetText(g_DieColor..szName)  --Ãû×Ö
-								g_Team_MenPai_Ctrl_List[i-3]:SetText(g_DieColor..g_MenPaiNameList[nMenPai].Name)  --ÃÅÅÉ
-								g_Team_DuanWei_Ctrl_List[i-3]:SetText(g_DieColor..g_DuanWei1[nDuanWei])  --µÈ¼¶
+								g_Team_HP_Ctrl_List[i-3]:SetProgress(nHP, 100)--?????
+						elseif nstate == 1 then  --1-??
+								g_Team_Name_Ctrl_List[i-3]:SetText(g_DieColor..szName)  --??
+								g_Team_MenPai_Ctrl_List[i-3]:SetText(g_DieColor..g_MenPaiNameList[nMenPai].Name)  --??
+								g_Team_DuanWei_Ctrl_List[i-3]:SetText(g_DieColor..g_DuanWei1[nDuanWei])  --??
 								g_Team_Level_Ctrl_List[i-3]:SetText(g_DieColor..nlevel)
 								g_Team_KillNum_Ctrl_List[i-3]:SetText(g_DieColor..nkill)
-								g_Team_HP_Ctrl_List[i-3]:SetProgress(0, 100)--ÑªÁ¿°Ù·Ö±È
-						elseif nstate == 2 then  --2-µôÏß
+								g_Team_HP_Ctrl_List[i-3]:SetProgress(0, 100)--?????
+						elseif nstate == 2 then  --2-??
 								g_Team_Name_Ctrl_List[i-3]:SetText("")
 								g_Team_MenPai_Ctrl_List[i-3]:SetText("")
 								g_Team_DuanWei_Ctrl_List[i-3]:SetText("")
@@ -586,7 +586,7 @@ end
 
 function HuaShanLunJian_Fight_OnTimer()
 	HuaShanLunJian_Fight_TimeWatch:Hide()
-	HuaShanLunJian_Fight_WatchText:SetText("½áÊø")
+	HuaShanLunJian_Fight_WatchText:SetText("Kªt thúc")
 	HuaShanLunJian_Fight_WatchText:Show()
 end
 

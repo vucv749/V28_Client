@@ -1,7 +1,7 @@
--- 自动战斗设置
+-- 自动牻斗设置
 -- 雪舞添加自动升级功能
 local g_unifiedposistion = nil
-local MD_AUTO_LEVELUP_LIMIT = 359		--自动升级等级上限
+local MD_AUTO_LEVELUP_LIMIT = 359		--????????
 local g_configdata = {
 	useskill = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, },
 	usepotiont = { 0, 0, 0, 0, },
@@ -20,9 +20,9 @@ local g_configdata = {
 }
 
 local g_data = {
-	xfselect = 1,	-- 当前选中技能
-	curxfid = 1,	-- 心法组
-	option = 1,		-- 当前选中项
+	xfselect = 1,	-- ??????
+	curxfid = 1,	-- ???
+	option = 1,		-- ?????
 }
 -- 心法
 local g_uixfskillactions = {}
@@ -53,19 +53,19 @@ local g_invalidmenpai = 9
 local g_menpai_emei = 4
 
 local g_menpaiattr = {
-	[0] = {image = "set:Menpaishuxing image:Shuxing_Dark", tooltip = "#{MPZSX_20071221_13}", },			--少林
-	[1] = {image = "set:Menpaishuxing image:Shuxing_Fire", tooltip = "#{MPZSX_20071221_12}",},				--明教
-	[2] = {image = "set:Menpaishuxing image:Shuxing_PoisonFire", tooltip = "#{MPZSX_20071221_15}",},		--丐帮
-	[3] = {image = "set:Menpaishuxing image:Shuxing_DarkIce", tooltip = "#{MPZSX_20071221_16}",},			--武当
-	[4] = {image = "set:Menpaishuxing image:Shuxing_IceDark", tooltip = "#{MPZSX_20071221_17}",},			--峨嵋
-	[5] = {image = "set:Menpaishuxing image:Shuxing_Poison", tooltip = "#{MPZSX_20071221_14}",},			--星宿
-	[6] = {image = "set:Menpaishuxing image:Shuxing_FIPD", tooltip = "#{MPZSX_20071221_18}",},				--天龙
-	[7] = {image = "set:Menpaishuxing image:Shuxing_Ice", tooltip = "#{MPZSX_20071221_11}",},				--天山
-	[8] = {image = "set:Menpaishuxing image:Shuxing_FirePoison", tooltip = "#{MPZSX_20071221_19}",},		--逍遥
-	[9] = {image = "", tooltip = "#{ZDZD_200724_46}",},													--无门派
+	[0] = {image = "set:Menpaishuxing image:Shuxing_Dark", tooltip = "#{MPZSX_20071221_13}", },			--??
+	[1] = {image = "set:Menpaishuxing image:Shuxing_Fire", tooltip = "#{MPZSX_20071221_12}",},				--??
+	[2] = {image = "set:Menpaishuxing image:Shuxing_PoisonFire", tooltip = "#{MPZSX_20071221_15}",},		--??
+	[3] = {image = "set:Menpaishuxing image:Shuxing_DarkIce", tooltip = "#{MPZSX_20071221_16}",},			--??
+	[4] = {image = "set:Menpaishuxing image:Shuxing_IceDark", tooltip = "#{MPZSX_20071221_17}",},			--??
+	[5] = {image = "set:Menpaishuxing image:Shuxing_Poison", tooltip = "#{MPZSX_20071221_14}",},			--??
+	[6] = {image = "set:Menpaishuxing image:Shuxing_FIPD", tooltip = "#{MPZSX_20071221_18}",},				--??
+	[7] = {image = "set:Menpaishuxing image:Shuxing_Ice", tooltip = "#{MPZSX_20071221_11}",},				--??
+	[8] = {image = "set:Menpaishuxing image:Shuxing_FirePoison", tooltip = "#{MPZSX_20071221_19}",},		--??
+	[9] = {image = "", tooltip = "#{ZDZD_200724_46}",},													--???
 	[10]= {image = "set:CommonFrame38 image:Shuxing_ManTuoDarkPoison", tooltip = "#{MPZSX_20071221_20}", },			--mtsz
 }
--- 被禁止取消的普通攻击技能,每个门派一个，特写吧，表里虽然按顺序写的，但是一旦改变顺序就GG了。
+-- 被禁止取消的茽通攻击技能,每个门派一个，特写吧，表里虽然按顺序写的，但是一旦改变顺序就GG了。
 local g_nobanskill = {
 	281,311,341,371,401,431,461,491,521,760
 }
@@ -83,9 +83,9 @@ local g_configdef = {
 }
 
 local g_optionpagedef = {
-	recoverinfo = 1,	-- 药品
-	recoverskill = 2,	-- 回复技能
-	petskill = 3,		-- 宠物技能
+	recoverinfo = 1,	-- ??
+	recoverskill = 2,	-- ????
+	petskill = 3,		-- ????
 }
 
 local g_rateautodef = {
@@ -101,18 +101,18 @@ local g_ratevaluehappiness = {
 }
 -- 宠物技能配置。 绿色挪过来的貌似不能通用，写死吧
 local g_recoverpetskill = {
-	{ 686, 687, },	-- 共生， 高级共生
-	{ 696, 697, },	-- 血祭， 高级血祭
+	{ 686, 687, },	-- ??, ????
+	{ 696, 697, },	-- ??, ????
 }
 
-local g_specialrecoverskill = 3 -- 特殊的回复技能
+local g_specialrecoverskill = 3 -- ???????
 
--- 近战门派 少林 明教 丐帮 天山
+-- 近牻门派 少林 明教 丐帮 天山
 local g_autoattackskill_melee_mp = {
 	0,1,2,7,
 }
 
--- 按钮位置调整 
+-- 按钮位置调狖 
 local g_autoattackskill_nofightpos = {
 	new = "{{0.000000,40.000000},{0.000000,408.000000}}",
 	old = "{{0.000000,8.000000},{0.000000,408.000000}}",
@@ -354,17 +354,17 @@ local function initconfigdata()
 
 	g_configdata.valid = 1
 
-	-- 对新的数值进行修正
+	-- 对新的数值进行修狚
 	local valuedata = g_configdata.usepotionc[g_rateautodef.happiness]
 	if valuedata ~= nil then
 		if valuedata >= 60 and valuedata <= 62 then
-			-- 对宠物对应的快乐度进行数值修正
+			-- 对宠物对应的快乐度进行数值修狚
 			g_configdata.usepotionc[g_rateautodef.happiness] = g_ratevaluehappiness[1]
 		end
 	end
 end
 
---================= 对数值进行修正 =====================
+--================= 对数值进行修狚 =====================
 local function getmodifyvalue(data)
 	if data >= 0 then
 		local cnt = table.getn(g_ratevalue or {})
@@ -485,7 +485,7 @@ local function uibtnrroptionupdate(l,h)
 end
 
 
--- 根据索引，找到对应心法技能对用skill配置的位置
+-- 根据索引，犚到对应心法技能对用skill配置的位置
 local function getskillbyxf(xfid,idx)
 	local skillaction = g_uiskillactions[idx]
 	if skillaction ~= nil then
@@ -594,7 +594,7 @@ end
 
 --================= 显示一些基础内容 =====================
 function AutoAttackSkill_UpdateBaseUI()
-	-- 处理自动战斗按钮
+	-- 处理自动牻斗按钮
 	local isworking = BattleAssist:IsWorking()
 	if isworking then
 		g_uicommoninfo.fight:SetText("#{ZDZD_200724_28}")
@@ -698,7 +698,7 @@ function AutoAttackSkill_UpdateSkillUIByXF()
 		g_uiskillactions[i].lockp:Hide()
 	end
 
-	-- 10TL逻辑，照搬
+	-- 10TL逻辑，牋搬
 	local sumskill,idx,ownlist = GetActionNum("skill"), 1, {}
 	for i=1, sumskill do
 		local skillaction = EnumAction(i-1, "skill")
@@ -715,7 +715,7 @@ function AutoAttackSkill_UpdateSkillUIByXF()
 		-- 该技能是存在的
 		local id = ownlist[i]
 		if id ~= nil then
-			-- 判断技能是否禁用该技能, 普功技能也会被禁用
+			-- 判断技能是否禁用该技能, 茽功技能也会被禁用
 			if unlocklist[id] == nil then
 				g_uiskillactions[i].lock:Hide()
 				g_uiskillactions[i].ban:Show()
@@ -810,7 +810,7 @@ function AutoAttackSkill_UpdateOptionUI()
 				end
 			end
 			g_recoverSkills = {}
-			-- 这里最多就3个，超出来会有显示问题
+			-- 犫里最多就3个，超出来会有显示问题
 			for i,v in ipairs(recoverSkills) do
 				AutoAttackSkill_MakeRecoverSkillInfo( i, v[1], v[2] )
 			end
@@ -859,7 +859,7 @@ function AutoAttackSkill_CallCb3( i, key, ... )
 	end
 end
 
---================= 处理自动战斗的各个时间 =====================
+--================= 处理自动牻斗的各个时间 =====================
 function AutoAttackSkill_AttackEvent(event)
 	--PushDebugMessage("AutoAttackSkill_AttackEvent 我要打开了"..event)
 	if event == "config_update" then
@@ -1138,7 +1138,7 @@ function AutoAttackSkill_SkillLock_Clicked(idx)
 		if n < 0 then
 			return
 		end
-		-- 普攻技能,禁止点击取消
+		-- 茽攻技能,禁止点击取消
 		if isnobanskill(skillid) > 0 then
 			PushDebugMessage("#{ZDZD_200724_53}")
 			g_uiskillactions[idx].unlock:SetCheck(1)
@@ -1166,7 +1166,7 @@ function AutoAttackSkill_Option_Click(idx)
 	if mpid == g_menpai_emei then
 		-- 峨眉比较特殊有三个选项,不做处理
 	else
-		-- 普通情况，只有两个选项, 2个选项会默认进行递增选择
+		-- 茽通情况，只有两个选项, 2个选项会默认进行递增选择
 		if idx == g_optionbtnattr.normal.num then
 			idx = g_optionbtnattr.special.num
 		end
@@ -1220,7 +1220,7 @@ function AutoAttackSkill_OnStartClick()
 		PushEvent("TRIGGER_ZIDONGZHANDOU","start")
 	end	
 
-	-- 始终一个状态
+	-- 始譅一个状态
 	g_uicommoninfo.fight:SetCheck(0)
 end
 
@@ -1268,7 +1268,7 @@ function AutoAttackSkill_Page_Switch(page)
 		return
 	end
 
-	-- 关闭
+	-- 关睜
 	AutoAttackSkill_OnClose()
 	-- 打开各个界面
 	if page == 1 then
@@ -1298,7 +1298,7 @@ function AutoAttackSkill_Page_Switch(page)
 end
 
 function AutoAttackSkill_OnClose()
-	-- 关闭界面的时候需要保存相对位置
+	-- 关睜界面的时候需要保存相对位置
 	local unifiedpos = AutoAttackSkill_Frame:GetProperty("UnifiedPosition")
 	Variable:SetVariable("SkillUnionPos", unifiedpos, 1)
 
@@ -1316,7 +1316,7 @@ function AutoAttackSkill_AutoLevelUpBtn_Click()
     Clear_XSCRIPT();
 		Set_XSCRIPT_Function_Name("AutoLevelUpLimit");
 		Set_XSCRIPT_ScriptID(891330);
-		Set_XSCRIPT_Parameter(0, newState);  -- 用新状态
+		Set_XSCRIPT_Parameter(0, newState);  -- ????
 		Set_XSCRIPT_ParamCount(1);
     Send_XSCRIPT();
 end

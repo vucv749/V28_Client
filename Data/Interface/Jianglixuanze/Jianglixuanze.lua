@@ -4,10 +4,10 @@ local g_objid = -1
 local g_objCared = -1
 local g_Jianglixuanze_total = -1
 
-local g_Jianglixuanze_MF = {} --是否已经领奖
-local g_Jianglixuanze_Button = {} --奖励礼包控件
-local g_Jianglixuanze_Impact = {} --提示需要领奖的特效
-local g_Jianglixuanze_Finish = {} --完成领奖的图标
+local g_Jianglixuanze_MF = {} --??????
+local g_Jianglixuanze_Button = {} --??????
+local g_Jianglixuanze_Impact = {} --?????????
+local g_Jianglixuanze_Finish = {} --???????
 local g_Jianglixuanze_NewButton = {}
 
 local g_Jianglixuanze_ItemInfo = {
@@ -24,7 +24,7 @@ local g_Jianglixuanze_ItemInfo = {
 function Jianglixuanze_PreLoad()
 
 	this:RegisterEvent("UI_COMMAND",true)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
 	this:RegisterEvent("ADJEST_UI_POS",false)
 	this:RegisterEvent("OBJECT_CARED_EVENT",false)
@@ -103,7 +103,7 @@ function Jianglixuanze_OnEvent(event)
 		if(tonumber(arg0) ~= g_objCared) then
 			return
 		end
-		-- 如果和NPC的距离大于一定距离或者被删除，自动关闭
+		-- 如果和NPC的距离大于一定距离或犨被删除，自动关睜
         if(arg1 == "distance" and tonumber(arg2)>3 or arg1=="destroy") then
             Jianglixuanze_OnHiden()
         end

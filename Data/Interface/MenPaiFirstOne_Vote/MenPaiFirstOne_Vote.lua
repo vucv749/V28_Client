@@ -3,8 +3,8 @@ local g_MenPaiFirstOne_Vote_Frame_UnifiedXPosition
 local g_MenPaiFirstOne_Vote_Frame_UnifiedYPosition   
 local g_MenPaiFirstOne_Vote_listitem = {}
 local g_MenPaiFirstOne_Vote_LevelType = 0
-local g_EventIndex = -1 --当前选中的选项
-local g_MenPaiFirstOne_Vote_ButtonCDTime = 4; --按钮冷却时间
+local g_EventIndex = -1 --???????
+local g_MenPaiFirstOne_Vote_ButtonCDTime = 4; --??????
 local g_MenPaiFirstOne_Vote_ButtonLastTime = 0; 
 local g_MenPaiFirstOne_Vote_TargetId = -1; 
 local objCared =-1
@@ -27,7 +27,7 @@ function MenPaiFirstOne_Vote_PreLoad()
 
 	this:RegisterEvent("OPEN_DDZ_CHARINFO", true)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("ADJEST_UI_POS",false)  
 	this:RegisterEvent("OBJECT_CARED_EVENT",false)  
 	this:RegisterEvent("UI_COMMAND");
@@ -77,7 +77,7 @@ function MenPaiFirstOne_Vote_OnEvent(event)
 		if(tonumber(arg0) ~= objCared) then
 			return;
 		end
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			this:Hide();
 			--取消关心
@@ -95,7 +95,7 @@ function MenPaiFirstOne_Vote_On_ResetPos()
 end
  
 --=========
--- 关闭
+-- 关睜
 --=========
 function MenPaiFirstOne_Vote_Close() 
 	g_MenPaiFirstOne_Vote_LevelType = 0
@@ -202,10 +202,10 @@ function MenPaiFirstOne_Vote_Clicked(index)
 	end  
 	local guid 	    = tblinfo[index].guid
     Clear_XSCRIPT()
-    Set_XSCRIPT_Function_Name( "TouPiao" ); 	-- 函数名
-	Set_XSCRIPT_ScriptID( 893223 );						-- 脚本编号
+    Set_XSCRIPT_Function_Name( "TouPiao" ); 	-- ???
+	Set_XSCRIPT_ScriptID( 893223 );						-- ????
 	Set_XSCRIPT_Parameter(0,guid)
-    Set_XSCRIPT_ParamCount( 1 );						-- 参数个数
+    Set_XSCRIPT_ParamCount( 1 );						-- ????
     Send_XSCRIPT()
 end
 --=========
@@ -214,15 +214,15 @@ end
 function MenPaiFirstOne_Refresh_Clicked()
     local curTime = OSAPI:GetTickCount();
 	if ( curTime - g_MenPaiFirstOne_Vote_ButtonLastTime < g_MenPaiFirstOne_Vote_ButtonCDTime * 1000) then   	 
-   	    PushDebugMessage("#{JXGZ_220427_57}"); --不可连续点击，请稍等片刻后再点击
+   	    PushDebugMessage("#{JXGZ_220427_57}"); --??????,?????????
 		return
 	end
 	g_MenPaiFirstOne_Vote_ButtonLastTime = curTime;
 	Clear_XSCRIPT()
-    Set_XSCRIPT_Function_Name( "AskTouPiaoInfo" ); 	-- 函数名
-	Set_XSCRIPT_ScriptID( 893223 );						-- 脚本编号
+    Set_XSCRIPT_Function_Name( "AskTouPiaoInfo" ); 	-- ???
+	Set_XSCRIPT_ScriptID( 893223 );						-- ????
 	Set_XSCRIPT_Parameter(0, g_MenPaiFirstOne_Vote_TargetId)
-    Set_XSCRIPT_ParamCount( 1 );						-- 参数个数
+    Set_XSCRIPT_ParamCount( 1 );						-- ????
     Send_XSCRIPT()
 end
 --=========
@@ -248,9 +248,9 @@ function MenPaiFirstOne_Vote_GetAward_Clicked()
 		return
 	end
 	Clear_XSCRIPT()
-    Set_XSCRIPT_Function_Name( "GetAward" ); 	-- 函数名
-    Set_XSCRIPT_ScriptID( 893223 );						-- 脚本编号
-    Set_XSCRIPT_ParamCount( 0 );						-- 参数个数
+    Set_XSCRIPT_Function_Name( "GetAward" ); 	-- ???
+    Set_XSCRIPT_ScriptID( 893223 );						-- ????
+    Set_XSCRIPT_ParamCount( 0 );						-- ????
     Send_XSCRIPT()
 end 
 

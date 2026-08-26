@@ -38,7 +38,7 @@ local g_PSC_MatriID_Low ={
 }
 local g_PSC_SHDNum_Low = 1
 
-local g_PSC_MatriID_High2 ={ --特殊兽魂 超神兽魂 属于神兽魂 但不能被化尘
+local g_PSC_MatriID_High2 ={ --???? ???? ????? ??????
 	38002732,
 }
 

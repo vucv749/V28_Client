@@ -16,12 +16,12 @@ local DoublePK_Accept_Data = {0, 0, 0, 0}
 -- 游戏类型
 local DoublePK_Accept_GameType =
 {
-    doublegame_enter = 1,           -- 双人休闲玩法 入场时绑定关系确认
-    doublegame_makebinding = 2,     -- 双人休闲玩法 建立绑定关系
-    doublegame_cancelbinding = 3,   -- 双人休闲玩法 取消绑定关系
-    doublepk_enter = 11,            -- 双人PK玩法 入场时绑定关系确认
-    doublepk_makebinding = 12,      -- 双人PK玩法 建立绑定关系
-    doublepk_cancelbinding = 13,    -- 双人PK玩法 取消绑定关系
+    doublegame_enter = 1,           -- ?????? ?????????
+    doublegame_makebinding = 2,     -- ?????? ??????
+    doublegame_cancelbinding = 3,   -- ?????? ??????
+    doublepk_enter = 11,            -- ??PK?? ?????????
+    doublepk_makebinding = 12,      -- ??PK?? ??????
+    doublepk_cancelbinding = 13,    -- ??PK?? ??????
 } -- end DoublePK_Accept_GameType
 
 
@@ -30,8 +30,8 @@ function DoublePK_Accept_PreLoad()
     this:RegisterEvent("UI_COMMAND", true)
     this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
     this:RegisterEvent("OBJECT_CARED_EVENT", false)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end -- end func DoublePK_Accept_PreLoad()
 
 function DoublePK_Accept_OnEvent(event)
@@ -47,7 +47,7 @@ function DoublePK_Accept_OnEvent(event)
 			return
         end
         
-		-- 如果和NPC的距离大于一定距离或者被删除，自动关闭
+		-- 如果和NPC的距离大于一定距离或犨被删除，自动关睜
         if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
             DoublePK_Accept_Hide()
         end
@@ -105,7 +105,7 @@ function DoublePK_Accept_StopCareObject()
 	end
 end -- end func DoublePK_Accept_StopCareObject()
 
--- UI关闭事件
+-- UI关睜事件
 function DoublePK_Accept_OnHide()
     DoublePK_Accept_StopCareObject()
 
@@ -169,7 +169,7 @@ function DoublePK_Accept_OK_Clicked()
     DoublePK_Accept_Hide()
 end -- end func DoublePK_Accept_OK_Clicked()
 
--- 取消、关闭按钮事件
+-- 取消、关睜按钮事件
 function DoublePK_Accept_Cancel_Clicked(arg)
     -- 双人休闲玩法
     if (DoublePK_Accept_CurGameType == DoublePK_Accept_GameType.doublegame_enter) then
@@ -187,7 +187,7 @@ function DoublePK_Accept_Cancel_Clicked(arg)
 			Set_XSCRIPT_ParamCount(1)
 		Send_XSCRIPT()
     elseif (DoublePK_Accept_CurGameType == DoublePK_Accept_GameType.doublegame_cancelbinding) then
-        -- 这个地方不需要处理
+        -- 犫个地方不需要处理
     end
 
     -- 双人PK玩法
@@ -207,7 +207,7 @@ function DoublePK_Accept_Cancel_Clicked(arg)
 			Set_XSCRIPT_ParamCount(1)
 		Send_XSCRIPT()
     elseif (DoublePK_Accept_CurGameType == DoublePK_Accept_GameType.doublepk_cancelbinding) then
-        -- 这个地方不需要处理
+        -- 犫个地方不需要处理
     end
 
     DoublePK_Accept_DealFlag = 1

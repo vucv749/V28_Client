@@ -5,8 +5,8 @@ local g_towerbox_unifiedposition = nil
 local g_towerbox_uicommand = 99855901
 
 local g_towerbox_timer = {
-    tickbegin = 9,         -- 心跳开始
-    tickend = 12,          -- 心跳结束
+    tickbegin = 9,         -- ????
+    tickend = 12,          -- ????
 }
 
 -- 塔结构
@@ -39,8 +39,8 @@ function TowerBox_PreLoad()
     this:RegisterEvent("UI_COMMAND", false)
     this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)
     this:RegisterEvent("PLAYER_LEAVE_WORLD", false)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end
 
 function TowerBox_OnEvent(event)
@@ -175,7 +175,7 @@ function TowerBox_Timer()
     Send_XSCRIPT()
 end
 
--- 关闭界面回调
+-- 关睜界面回调
 function TowerBox_OnHidden()
     if IsWindowShow("TowerBox_ProjectInfo") then
         CloseWindow("TowerBox_ProjectInfo", true)

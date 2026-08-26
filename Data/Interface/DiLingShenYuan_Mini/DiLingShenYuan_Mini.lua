@@ -1,4 +1,4 @@
--- 帝陵深渊场景信息展示UI最小化
+-- 帝陵深渊场景信息牴示UI最小化
 
 -- 默认位置
 local DiLingShenYuan_Mini_UnifiedPosition = nil
@@ -6,8 +6,8 @@ local DiLingShenYuan_Mini_UnifiedPosition = nil
 function DiLingShenYuan_Mini_PreLoad()
     this:RegisterEvent("DLZXPVP_DLSYSCENEINFO_MINI", true)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end -- end func DiLingShenYuan_Mini_PreLoad()
 
 function DiLingShenYuan_Mini_OnEvent(event)
@@ -43,7 +43,7 @@ function DiLingShenYuan_Mini_Hide()
     this:Hide()
 end -- end func DiLingShenYuan_Mini_Hide()
 
--- 展开按钮点击事件
+-- 牴开按钮点击事件
 function DiLingShenYuan_Mini_Button_Clicked_Open()
     PushEvent("DLZXPVP_DLSYUPDATEOPENFLAG", 1)
     DiLingShenYuan_Mini_Hide()

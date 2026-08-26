@@ -28,7 +28,7 @@ function ZLHeroMeeting_Manifesto_OnEvent(event)
 		if(tonumber(arg0) ~= g_ZLHeroMeeting_Manifesto_NPCID) then
 			return;
 		end 
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if arg1 == "distance" and tonumber(arg2) > MAX_OBJ_DISTANCE or arg1=="destroy" then
 			ZLHeroMeeting_Manifesto_Close()
 		end

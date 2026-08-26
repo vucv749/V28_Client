@@ -117,9 +117,9 @@ function SongliaoWarMulti_GetData()
 	end
 	
 	--SongliaoWarMulti_List:AddNewItem(myindex, 0, 0, g_myColor) --排名
-	--SongliaoWarMulti_List:AddNewItem(myName, 1, 0, g_myColor) --姓名
-	--SongliaoWarMulti_List:AddNewItem(mykillNum, 2,0, g_myColor) --战旗数量
-	--SongliaoWarMulti_List:AddNewItem(mySuccKill, 3,0, g_myColor) --战旗数量
+	--SongliaoWarMulti_List:AddNewItem(myName, 1, 0, g_myColor) --袪名
+	--SongliaoWarMulti_List:AddNewItem(mykillNum, 2,0, g_myColor) --牻旗数量
+	--SongliaoWarMulti_List:AddNewItem(mySuccKill, 3,0, g_myColor) --牻旗数量
 	--SongliaoWarMulti_List:AddNewItem(myScore, 4, 0, g_myColor)--积分
 	SongliaoWarMulti_SelfInfo1:SetText(myindex)
 	SongliaoWarMulti_SelfInfo2:SetText(myName)
@@ -130,11 +130,11 @@ end
 
 
 function SongliaoWarMulti_SetInterface(index, charname, camp, score,killnum, color,succkill)
-	SongliaoWarMulti_List:AddNewItem(index+1, 0, index , color) --排名
-	SongliaoWarMulti_List:AddNewItem(charname, 1, index , color) --姓名
-	SongliaoWarMulti_List:AddNewItem(killnum, 2, index , color) --击杀
-	SongliaoWarMulti_List:AddNewItem(succkill, 3, index , color) --击杀
-	SongliaoWarMulti_List:AddNewItem(score, 4, index, color)--积分
+	SongliaoWarMulti_List:AddNewItem(index+1, 0, index , color) --??
+	SongliaoWarMulti_List:AddNewItem(charname, 1, index , color) --??
+	SongliaoWarMulti_List:AddNewItem(killnum, 2, index , color) --??
+	SongliaoWarMulti_List:AddNewItem(succkill, 3, index , color) --??
+	SongliaoWarMulti_List:AddNewItem(score, 4, index, color)--??
 
 	--SongliaoWarMulti_List:AddNewItem(charname, 4, index, color)
 	--if camp==156 then

@@ -11,8 +11,8 @@ local Server_Return_Num = 0;
 local PVPFLAG = { ACCEPTDUEL = 205, DuelGUID = "", DuelName = "" }
 
 local FrameInfoList = {
-LOGIN_PK_SCENE_CONFIRM = 0;--µÇÂ½ÌáÊ¾³¡¾°ÀàÐÍ
-ENTER_PK_SCENE_CONFIRM = 1;--½øÈëpk³¡¾°ÌáÊ¾È·ÈÏ
+LOGIN_PK_SCENE_CONFIRM = 0;--????????
+ENTER_PK_SCENE_CONFIRM = 1;--??pk??????
 }
 
 local FrameSize_Original = 0
@@ -29,7 +29,7 @@ function AcceptBox_PreLoad()
 		this:RegisterEvent("ADJEST_UI_POS");
     	-- ÓÎÏ··Ö±æÂÊ·¢ÉúÁË±ä»¯
 		this:RegisterEvent("VIEW_RESOLUTION_CHANGED");
-		this:RegisterEvent("PLAYER_LEAVE_WORLD");--ÇÐ³¡¾°
+		this:RegisterEvent("PLAYER_LEAVE_WORLD");--???
 end
 
 --===============================================
@@ -70,13 +70,13 @@ function AcceptBox_OnEvent(event)
 
 	if ( event == "MSGBOX_ACCEPTDUEL" ) then
 	AxTrace( 0, 0, "AcceptBox_OnEvent MSGBOX_ACCEPTDUEL" )
-			AcceptBox_PageHeader_Name:SetText("#gFF0FA0¾ö¶·È·ÈÏ");
+			AcceptBox_PageHeader_Name:SetText("#gFF0FA0quyªt ð¤u xác nh§n");
 	    local Name = tostring( arg0 )
 	    local GUID = tostring( arg1 )
 	    PVPFLAG.DuelName = Name
 	    PVPFLAG.DuelGUID = GUID
 	    g_FrameInfo = PVPFLAG.ACCEPTDUEL;	    
-	    local MsgText = "#c0000FF"..Name.."#W".."ÏòÄúÌá³ö#cFF0000¾ö¶·#W£¬ÄúÊÇ·ñÍ¬Òâ£¿#r×¢Òâ£ºÔÚ¾ö¶·ÖÐËÀÍö½«»áÓÐ³Í·£¡£"
+	    local MsgText = "#c0000FF"..Name.."#W".."Hß¾ng Nhçm ðßa ra#cFF0000quyªt ð¤u#W, NHçm có ð°ng ý hay không? #rchú ý: TÕi quyªt ð¤u Trung tØ vong s¨ Hæu tr×ng phÕt."
 	    AcceptBox_Text:SetText( MsgText )
 	    this:Show();		
 	end
@@ -91,9 +91,9 @@ function AcceptBox_OnEvent(event)
 			AcceptBox_Blank:SetProperty("UnifiedSize", "{{1.000000,-54.000000},{0.000000,20.000000}}")
 			local pvpType = Get_XParam_INT(0)
 			local msg = ""
-			if pvpType == 2 then--¼ÓÉ±Æø³¡¾°
+			if pvpType == 2 then--?????
 				msg = "#{QZDZ_100715_01}"
-			elseif pvpType == 3 then --²»¼ÓÉ±Æø³¡¾°
+			elseif pvpType == 3 then --??????
 				msg = "#{QZDZ_100715_02}"
 			end
 			g_FrameInfo = FrameInfoList.LOGIN_PK_SCENE_CONFIRM

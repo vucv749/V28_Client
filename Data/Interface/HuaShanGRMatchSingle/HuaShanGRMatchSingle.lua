@@ -1,5 +1,5 @@
 --华山论剑个人赛积分界面处理脚本
---作者：马亮
+--作犨：马亮
 --时间：2010-1-19
 
 --===============================================
@@ -56,7 +56,7 @@ function HuaShanGRMatchSingle_OnEvent(event)
 	end
 end
 --===============================================
---关闭个人赛积分处理
+--关睜个人赛积分处理
 --===============================================
 function HuaShanGRMatchSingle_Close()
 	Match:CloseHuaShanGRMatchScoreMultiTable();

@@ -28,29 +28,29 @@ local PET_FIGHT= 0
 local PET_CURRENT_SELECT = 0
 local PET_AITYPE = {}
 local Changed_Name_Flag = 0
---			// ´´½¨ÕäÊŞ(¼´·Å³ö) 0
---			// ÊÕ»ØÕäÊŞ					1
---			// Ïú»ÙÕäÊŞ(¼´·ÅÉú)	2
---			// ²¶×½ÕäÊŞ					3
---			¿ÉÒÔÔÚ±»·Å³öºó£¬Í¨¹ıÏûÏ¢£¬¸Ä±ä¸ÃÕäÊŞÔÚlistboxÖĞµÄÃû×ÖµÄÑÕÉ«¡£
+--			// ´´½¨ äÊŞ(¼´·Å³ö) 0
+--			// Ê »Ø äÊŞ					1
+--			// Ïú»Ù äÊŞ(¼´·ÅÉú)	2
+--			// ²¶×½ äÊŞ					3
+--			¿ÉÒÔÔÚ±»·Å³öºó£¬Í¨¹ıÏûÏ¢£¬¸Ä±ä¸Ã äÊŞÔÚlistboxÖĞµÄÃû×ÖµÄÑ É«¡£
 local PET_TAB_TEXT = {}
 local PET_ORIGINAL_NAME = ""
 
-local g_Pet_Head 		--Í·
-local g_Pet_Claw		--×¦
-local g_Pet_Body		--Çû¸É
-local g_Pet_Neck		--ÏîÈ¦
-local g_Pet_Charm		--»¤·û
+local g_Pet_Head 		--?
+local g_Pet_Claw		--?
+local g_Pet_Body		--??
+local g_Pet_Neck		--??
+local g_Pet_Charm		--??
 
 -- ½çÃæµÄÄ¬ÈÏÏà¶ÔÎ»ÖÃ
 local g_Pet_Frame_UnifiedXPosition
 local g_Pet_Frame_UnifiedYPosition
 
 -- Ìá¹©³¤°´×ó¼ü½øĞĞÁ¬¼ÓµÄ¹¦ÄÜ	-- HenryFour@2010-04-16
-local g_AutoClick_BtnFlag = -1			-- ¼ÇÂ¼µ±Ç°Êó±ê×ó¼üÊÇÔÚÄÄ¸ö°´Å¥°´ÏÂ
-local g_AutoClickTimer_Step = 144		-- ¶àÉÙÊ±¼ä(ºÁÃë)Ä£ÄâÒ»´Î Click ²Ù×÷
-local g_AutoClick_FunList = {}			-- ½«¹«ÓÃÒ»¸ö Timer µÄ»Øµ÷¹¦ÄÜº¯Êı·Åµ½Ò»¸öÊı×é
-local g_AutoClick_Going = -1			-- ±êÖ¾ÊÇ·ñ¿ªÊ¼×Ô¶¯µã»÷²Ù×÷(µÚÒ»´ÎLButtonºó¾­¹ıX¸öTimer²ÅËã¿ªÊ¼, Ò²¾ÍÊÇËµÊÇ g_AutoClickTimer_Step * X µÄÊ±ºò¿ªÊ¼½øĞĞ×Ô¶¯¼Ó, ÕâÑùÎªÁË·ÀÖ¹±¾À´Òªµã»÷Ò»ÏÂµÄ½á¹ûµãÁËºÃ¶àÏÂ)
+local g_AutoClick_BtnFlag = -1			-- ????????????????
+local g_AutoClickTimer_Step = 144		-- ????(??)???? Click ??
+local g_AutoClick_FunList = {}			-- ????? Timer ?????????????
+local g_AutoClick_Going = -1			-- ????????????(???LButton???X?Timer????, ????? g_AutoClickTimer_Step * X ??????????, ?????????????????????)
 
 -------------------------------------------
 --Í³Ò»»¯ÏÂÒ³Ç©ÏÔÊ¾Òş²Ø Ä¿Ç°¹Ì¶¨Ë³Ğò ĞÂÔö¸ÄĞòºÅ Ã¿¸öÒ³Ç©¶¼ĞèÒªÌí¼Ó
@@ -116,11 +116,11 @@ function Pet_OnLoad()
 	PETSKILL_BUTTONS[11] = Pet_Skill11
 	PETSKILL_BUTTONS[12] = Pet_Skill12
 	
-	PET_AITYPE[0] = "µ¨Ğ¡"
-	PET_AITYPE[1] = "½÷É÷"
-	PET_AITYPE[2] = "ÖÒ³Ï"
-	PET_AITYPE[3] = "¾«Ã÷"
-	PET_AITYPE[4] = "ÓÂÃÍ"
+	PET_AITYPE[0] = "Nhát gan"
+	PET_AITYPE[1] = "C¦n th§n"
+	PET_AITYPE[2] = "Trung thñc"
+	PET_AITYPE[3] = "Nhanh nh©n"
+	PET_AITYPE[4] = "Dûng mãnh"
 	
 	g_Pet_Head = PetEquip_1
 	g_Pet_Claw = PetEquip_2	
@@ -128,7 +128,7 @@ function Pet_OnLoad()
 	g_Pet_Neck = PetEquip_4		
 	g_Pet_Charm = PetEquip_5
 
-	Pet_chenghao:SetText("³ÆºÅ")
+	Pet_chenghao:SetText("Danh hi®u")
 
 	-- ±£´æ½çÃæµÄÄ¬ÈÏÏà¶ÔÎ»ÖÃ
 	g_Pet_Frame_UnifiedXPosition = Pet_Frame:GetProperty("UnifiedXPosition")
@@ -241,7 +241,7 @@ function Pet_OnEvent(event)
 	elseif event == "UPDATE_PET_EXTRANUM" or event == "UNIT_LEVEL" then
 		local nPetCount = Pet:GetPet_Count()
 		local nMaxPetCount = Pet_GetMyCurMaxPetCount()
-		Pet_List_Text:SetText("ÕäÊŞÁĞ±í "..nPetCount.."/"..nMaxPetCount)
+		Pet_List_Text:SetText("Trân Thú Li®t Bi¬u"..nPetCount.."/"..nMaxPetCount)
 	
 	-- Tooltips ¸üĞÂ zchw	
 	elseif event == "PET_EQUIP_ATTR_CHANGE" then
@@ -267,7 +267,7 @@ function Pet_HandleAccKey(op)
 			return
 		end
 
-		--Ä£ÄâÊÕµ½ÁËÒ»¸ö´ò¿ªÕäÊŞ½çÃæµÄÊÂ¼ş¡£
+		--Ä£ÄâÊ µ½ÁËÒ»¸ö´ò¿ª äÊŞ½çÃæµÄÊÂ¼ş¡£
 		arg0 = "-1"
 		Pet_OnEvent("TOGLE_PET_PAGE")
 	end
@@ -342,7 +342,7 @@ function Pet_Page_Clear()
 	Pet_Type:SetText("")
 	Pet_Type:SetToolTip("")
 
-	Pet_PageHeader:SetText("#gFF0FA0ÕäÊŞ")
+	Pet_PageHeader:SetText("#gFF0FA0Trân Thú")
 	Pet_ConsortID:SetText("")
 	Pet_PetID:SetText("")
 	Pet_Sex:SetText("")
@@ -400,7 +400,7 @@ function Pet_Page_Clear()
 	
 	local nPetCount = Pet:GetPet_Count()
 	local nMaxPetCount = Pet_GetMyCurMaxPetCount()
-	Pet_List_Text:SetText("ÕäÊŞÁĞ±í "..nPetCount.."/"..nMaxPetCount)
+	Pet_List_Text:SetText("Trân Thú Li®t Bi¬u"..nPetCount.."/"..nMaxPetCount)
 	
 	Pet_PetSoul_Equip_Check:Disable()
 	Pet_PetSoul_Equip:SetActionItem(-1)
@@ -521,7 +521,7 @@ function Pet_Update()
 			if i - 1 == PET_CURRENT_SELECT then
 				bSelect = 1
 			end
-			--ÕâÀï±ØĞëÓĞÕâÃ´2¾ä£¬Òª²»»á³ö´í¡£
+			-- âÀï±ØĞëÓĞ âÃ´2¾ä£¬Òª²»»á³ö´í¡£
 			Pet_DisableAddButton()
 			Pet_DisableSubButton()
 		end
@@ -570,7 +570,7 @@ function Pet_Update()
 	else
 		strNeedLevelColor="#c00FF00"
 	end
-	strNeedLevel = strNeedLevelColor..tostring(nTakeLevel).."¼¶#W¿ÉĞ¯´ø"
+	strNeedLevel = strNeedLevelColor..tostring(nTakeLevel).."C¤p#W Mang theo"
 	Pet_NeedLevel:SetText(strNeedLevel)
 	
 end
@@ -684,10 +684,10 @@ function Pet_SetStateTooltip()
 	local iThunderResistOther	= Pet:GetData("RESISTOTHERLIGHT")
 	local iPoisonResistOther= Pet:GetData("RESISTOTHERPOISON")
 	
-	Pet_IceFastness:SetToolTip("±ù¹¥:"..tostring(iIceAttack).."#r±ù¿¹:"..tostring(iIceDefine).."#r¼õ±ù¿¹:"..tostring(iIceResistOther))
-	Pet_FireFastness:SetToolTip("»ğ¹¥:"..tostring(iFireAttack).."#r»ğ¿¹:"..tostring(iFireDefine).."#r¼õ»ğ¿¹:"..tostring(iFireResistOther))
-	Pet_ThunderFastness:SetToolTip("Ğş¹¥:"..tostring(iThunderAttack).."#rĞş¿¹:"..tostring(iThunderDefine).."#r¼õĞş¿¹:"..tostring(iThunderResistOther))
-	Pet_PoisonFastness:SetToolTip("¶¾¹¥:"..tostring(iPoisonAttack).."#r¶¾¿¹:"..tostring(iPoisonDefine).."#r¼õ¶¾¿¹:"..tostring(iPoisonResistOther))
+	Pet_IceFastness:SetToolTip("Bång công:"..tostring(iIceAttack).."#rBång Kháng:"..tostring(iIceDefine).."#rGiäm Bång Kháng:"..tostring(iIceResistOther))
+	Pet_FireFastness:SetToolTip("Höa công:"..tostring(iFireAttack).."#rHoä Kháng:"..tostring(iFireDefine).."#rGiäm Hoä Kháng:"..tostring(iFireResistOther))
+	Pet_ThunderFastness:SetToolTip("Huy«n công:"..tostring(iThunderAttack).."#rHuy«n Kháng:"..tostring(iThunderDefine).."#rGiäm Huy«n Kháng:"..tostring(iThunderResistOther))
+	Pet_PoisonFastness:SetToolTip("Ğµc công:"..tostring(iPoisonAttack).."#rĞµc Kháng:"..tostring(iPoisonDefine).."#rGiäm Ğµc Kháng:"..tostring(iPoisonResistOther))
 		
 end
 
@@ -742,7 +742,7 @@ function Pet_Show_PetInfo(nIndex)
  	local strName, strName2 = Pet:GetName(nIndex)
 	local nEra, strTypeName = Pet:GetPetTypeName(nIndex)
  	if 1 == nEra then
- 	    strName2 = "¶ş´ú"..strTypeName
+ 	    strName2 = "Ğ¶i thÑ 2"..strTypeName
  	end
  	
 	Pet_PageHeader:SetText("#gFF0FA0"..strName2)
@@ -752,7 +752,7 @@ function Pet_Show_PetInfo(nIndex)
 	 	local nUnlockElapsedTime = PlayerPackage:GetPUnlockElapsedTime_Pet(nIndex)
 	 	if nUnlockElapsedTime == 0 then
 	 		Pet_lock:SetProperty("Image","set:UIIcons image:Icon_Lock")
-	 		Pet_lock:SetToolTip("ÒÑ¼ÓËø")
+	 		Pet_lock:SetToolTip("Ğã khóa")
 	 	else
 	 		local strLeftTime = g_GetUnlockingStr(nUnlockElapsedTime)
 	 		Pet_lock:SetProperty("Image","set:CommonFrame6 image:NewLock")
@@ -779,19 +779,19 @@ function Pet_Show_PetInfo(nIndex)
 	end
 	
 	local _, strGUID, iSex = Pet:GetID(nIndex)
-	Pet_PetID:SetText("ÕäÊŞID:"..strGUID)
+	Pet_PetID:SetText("Trân Thú ID:"..strGUID)
 
 	local strLoverGUID = Pet:GetConsort(nIndex)
 	if strLoverGUID == "00000000" then
-		Pet_ConsortID:SetText("ÅäÅ¼ID:")
+		Pet_ConsortID:SetText("Ph¯i ngçu ID:")
 	else
-		Pet_ConsortID:SetText("ÅäÅ¼ID:"..strLoverGUID)
+		Pet_ConsortID:SetText("Ph¯i ngçu ID:"..strLoverGUID)
 	end
 		
 	if iSex == 1 then 
-		Pet_Sex:SetText("ĞÛĞÔ")
+		Pet_Sex:SetText("Gi¯ng ğñc")
 	else
-		Pet_Sex:SetText("´ÆĞÔ")
+		Pet_Sex:SetText("Gi¯ng cái")
 	end
 	
 	local nGeneration  = Pet : GetGeneration(nIndex)
@@ -799,7 +799,7 @@ function Pet_Show_PetInfo(nIndex)
 		Pet_Sex:SetText("#{RXZS_XML_35}")
 	end
 	---------------------------------------------------------------------------------------------------
-	--¸ÃÕäÊŞµÄ·±Ö³Çé¿ö
+	--¸Ã äÊŞµÄ·±Ö³Çé¿ö
 	Pet_Peach:Show();
 	local nPetType = Pet:GetPetType(nIndex);
 	local nColor = 1;
@@ -814,7 +814,7 @@ function Pet_Show_PetInfo(nIndex)
 	else
 		if (nPetType == 0) then
 			--0:±¦±¦ 2023 ĞŞ¸Ä ÓÉ¼ÇÂ¼ ÉÏ´Î·±Ö³µÈ¼¶ ¸Ä³É¼ÇÂ¼ ÒÑ¾­·±Ö³´ÎÊı
-			--ÓÉÓÚÒª¼æÈİÖ®Ç°µÄÊı¾İ£¬ÔÙ¸üĞÂºóÃ»·±Ö³Ö®Ç° Õâ¸öÊıÖµÈÔÈ»¼ÇÂ¼ÉÏ´Î·±Ö³µÈ¼¶£¬·±Ö³Ö®ºó¼ÇÂ¼ÒÑ¾­·±Ö³´ÎÊı
+			--ÓÉÓÚÒª¼æÈİÖ®Ç°µÄÊı¾İ£¬ÔÙ¸üĞÂºóÃ»·±Ö³Ö®Ç°  â¸öÊıÖµÈÔÈ»¼ÇÂ¼ÉÏ´Î·±Ö³µÈ¼¶£¬·±Ö³Ö®ºó¼ÇÂ¼ÒÑ¾­·±Ö³´ÎÊı
 			local nLevel = Pet:GetLevel(nIndex);
 			local nLastProcreateLevel = Pet:GetLastProcreateLevel(nIndex);
 			if nLastProcreateLevel < 0 then
@@ -824,7 +824,7 @@ function Pet_Show_PetInfo(nIndex)
 			local nTimes = 0
 			local nCounts = 0
 			local nRemainCounts = 0
-			if nLastProcreateLevel >= 30 then --Ã»ĞŞ¸Ä¹ıÖ®Ç°
+			if nLastProcreateLevel >= 30 then --??????
 				if nLastProcreateLevel >= nTarget[5] then
 					nRemainCounts = 0
 				else
@@ -887,17 +887,17 @@ function Pet_Show_PetInfo(nIndex)
 		strNeedLevelColor = "#c00FF00"
 	end
 	
-	local strNeedLevel = strNeedLevelColor..tostring(nTakeLevel).."¼¶#W¿ÉĞ¯´ø"
+	local strNeedLevel = strNeedLevelColor..tostring(nTakeLevel).."C¤p#W Mang theo"
 	Pet_NeedLevel:SetText(strNeedLevel)
 
 	local iLife = Pet:GetNaturalLife(nIndex)
-	Pet_Life:SetText("ÊÙÃü:"..tostring(iLife))
+	Pet_Life:SetText("S¯ng lâu:"..tostring(iLife))
 	
 	local iLevel = Pet:GetLevel(nIndex)
-	Pet_Level:SetText("µÈ¼¶:"..tostring(iLevel))
+	Pet_Level:SetText("C¤p b§c:"..tostring(iLevel))
 
 	local iHappy = Pet:GetHappy(nIndex)
-	Pet_Happy:SetText("¿ìÀÖ:"..tostring(iHappy))
+	Pet_Happy:SetText("Khoái LÕc:"..tostring(iHappy))
 
 	local iLingXing = Pet:GetLixing(nIndex)
 	Pet_Lingxing:SetText("#{RXZS_XML_28}"..tostring(iLingXing))
@@ -909,7 +909,7 @@ function Pet_Show_PetInfo(nIndex)
 	end
 	
 	local iSavvy = Pet:GetSavvy(nIndex)
-	Pet_WuXing:SetText("ÎòĞÔ:"..tostring(iSavvy))
+	Pet_WuXing:SetText("Ngµ tính:"..tostring(iSavvy))
 	Pet_WuXing:SetToolTip("#{INTERFACE_XML_733}")
 	
 	local iStrAptitude = Pet:GetStrAptitude(nIndex)
@@ -956,11 +956,11 @@ function Pet_Show_PetInfo(nIndex)
 	end
 	
 	local iExp, iLevelUpExp = Pet:GetExp(nIndex)
-	Pet_Exp:SetText("¾­Ñé:"..tostring(iExp) .."/"..tostring(iLevelUpExp))
+	Pet_Exp:SetText("Kinh nghi®m:"..tostring(iExp) .."/"..tostring(iLevelUpExp))
 	
 	local iHP = Pet:GetHP(nIndex)
 	local iMaxHP = Pet:	GetMaxHP(nIndex);
-	Pet_Blood:SetText("Ñª:"..tostring(iHP) .."/".. tostring(iMaxHP))
+	Pet_Blood:SetText("Huyªt:"..tostring(iHP) .."/".. tostring(iMaxHP))
 
 	local iStr = Pet:GetStr(nIndex)
 	Pet_Str:SetText(tostring(iStr) + PETATTR[1])
@@ -978,7 +978,7 @@ function Pet_Show_PetInfo(nIndex)
 	Pet_Dexterity:SetText(tostring(iDex) + PETATTR[3])
 	
 	local iGenGu = Pet:GetBasic(nIndex)
-	Pet_GenGu:SetText("¸ù¹Ç:"..tostring(iGenGu))
+	Pet_GenGu:SetText("Cån C¯t:"..tostring(iGenGu))
 	Pet_GenGu:SetToolTip("#{INTERFACE_XML_287}")
 
 	Pet_CriticalAttack:SetText(Pet:GetCriticalAttack(nIndex))
@@ -990,7 +990,7 @@ function Pet_Show_PetInfo(nIndex)
 		Sum_Attr = Sum_Attr + PETATTR[i]
 	end
 	
-	--³öÏÖÕâÖÖÇé¿öÊÇ
+	--³öÏÖ âÖÖÇé¿öÊÇ
 	if iPotential - Sum_Attr < 0 then
 		PET_POTREMAIN = 0 
 	 for i=1,PET_ATTR_COUNT do
@@ -1019,9 +1019,9 @@ function Pet_Show_PetInfo(nIndex)
 
 	Pet_Growth1:SetText("#{ZS_CZL}")	
 	Pet_Growth:SetToolTip("#{INTERFACE_XML_986}")
-	Pet_Growth:SetText("#GÎ´Öª")
+	Pet_Growth:SetText("#GkHông biªt")
 	local nGrowLevel = Pet:GetPetGrowLevel(nIndex, tonumber(iGrowRate))
-	local strTbl = {"ÆÕÍ¨", "ÓÅĞã", "½Ü³ö", "×¿Ô½", "ÍêÃÀ"}
+	local strTbl = {"S½ C¤p", "Xu¤t S¡c", "Ki®t Xu¤t", "Trác Vi®t", "Toàn MÛ"}
 	
 	if nGrowLevel >= 0 then
 		nGrowLevel = nGrowLevel + 1
@@ -1087,7 +1087,7 @@ function Pet_Show_PetInfo(nIndex)
 	local strFood = ""
 
 	if iFoodType >= 1000 then
-		strFood = strFood.."Èâ"
+		strFood = strFood.."Th¸t"
 		iFoodType = iFoodType - 1000
 		if iFoodType > 0 then
 			strFood = strFood..","
@@ -1095,7 +1095,7 @@ function Pet_Show_PetInfo(nIndex)
 	end
 	
 	if iFoodType >= 100 then
-		strFood = strFood.."²İ"
+		strFood = strFood.."Thäo"
 		iFoodType = iFoodType - 100
 		if iFoodType > 0 then
 			strFood = strFood .. ","
@@ -1103,7 +1103,7 @@ function Pet_Show_PetInfo(nIndex)
 	end
 	
 	if iFoodType >= 10 then
-		strFood = strFood.."³æ"
+		strFood = strFood.."Sâu"
 		iFoodType = iFoodType - 10
 		if iFoodType > 0 then
 			strFood = strFood .. ","
@@ -1111,7 +1111,7 @@ function Pet_Show_PetInfo(nIndex)
 	end
 	
 	if iFoodType >= 1 then
-		strFood = strFood.."¹È"
+		strFood = strFood.."Ngû c¯c"
 	end
 	
 	PetFood_Type:Show()
@@ -1299,11 +1299,11 @@ function Pet_Relax_Clicked()
 end
 
 function Pet_Fight_Clicked()
-	-- ÒÑ¾­Ìá½»µ½Ö¸¶¨½çÃæÈİÆ÷µÄÕäÊŞ²»ÄÜ³öÕ½
-	if (IsWindowShow("PetSavvy") and Pet:GetPetLocation(PETNUM) == 12)							-- ÓÃ³ÉÄêÕäÊŞÌáÉıÕäÊŞÎòĞÔ
-		or (IsWindowShow("PetSavvyGGD")	and Pet:GetPetLocation(PETNUM) == 3)				-- ÓÃ¸ù¹Çµ¤ÌáÉıÕäÊŞÎòĞÔ
-		or (IsWindowShow("MissionReply") and Pet:GetPetLocation(PETNUM) == 7) then	-- ÈÎÎñÌá½»ÎïÆ·»òÕäÊŞ
-		-- "ÕäÊŞ´¦ÓÚÌá½»×´Ì¬£¬ÎŞ·¨³öÕ½¡£"
+	-- ÒÑ¾­Ìá½»µ½Ö¸¶¨½çÃæÈİÆ÷µÄ äÊŞ²»ÄÜ³ö ½
+	if (IsWindowShow("PetSavvy") and Pet:GetPetLocation(PETNUM) == 12)							-- ???????????
+		or (IsWindowShow("PetSavvyGGD")	and Pet:GetPetLocation(PETNUM) == 3)				-- ??????????
+		or (IsWindowShow("MissionReply") and Pet:GetPetLocation(PETNUM) == 7) then	-- ?????????
+		-- " äÊŞ´¦ÓÚÌá½»×´Ì¬£¬ÎŞ·¨³ö ½¡£"
 		PushDebugMessage("#{ZSTJZT_090904}")
 		return		
 	end
@@ -1313,7 +1313,7 @@ end
 
 function Pet_Free_Clicked()
 	if Pet:GetIsFighting(PETNUM) then
-		PushDebugMessage("ÕäÊŞÕıÔÚ³öÕ½£¬²»ÄÜ±»·ÅÉú")
+		PushDebugMessage("Trân Thú ğang · xu¤t chiªn, không th¬ B¸ phóng sinh")
 		return
 	end
 
@@ -1333,7 +1333,7 @@ function Pet_Free_Clicked()
 	end
 	
 	if Pet:IsFreeing(PETNUM) == 1 then
-		--¸ÃÕäÊŞÕıÔÚ½øĞĞÆäËû²Ù×÷£¬²»ÄÜ·ÅÉú¡£
+		--¸Ã äÊŞ ıÔÚ½øĞĞÆäËû²Ù×÷£¬²»ÄÜ·ÅÉú¡£
 		return
   end
 
@@ -1367,7 +1367,7 @@ function Pet_AmendName_Clicked()
 	Pet:Change_Name(PETNUM, Pet_PetName:GetText())
 end
 
--- Ğı×ªÕäÊŞÄ£ĞÍ£¨Ïò×ó)
+-- Ğı×ª äÊŞÄ£ĞÍ£¨Ïò×ó)
 function Pet_Modle_TurnLeft(start)
 	if start == 1 and CEArg:GetValue("MouseButton")=="LeftButton" then
 		Pet_FakeObject:RotateBegin(-0.3)
@@ -1377,7 +1377,7 @@ function Pet_Modle_TurnLeft(start)
 end
 
 
---Ğı×ªÕäÊŞÄ£ĞÍ£¨ÏòÓÒ)
+--Ğı×ª äÊŞÄ£ĞÍ£¨ÏòÓÒ)
 function Pet_Modle_TurnRight(start)
 	if start == 1 and CEArg:GetValue("MouseButton")=="LeftButton" then
 		Pet_FakeObject:RotateBegin(0.3)
@@ -1407,7 +1407,7 @@ function Pet_Skill_Clicked(nSkillIndex)
 	end
 	
 	if Pet : GetSkillPassive(PETNUM,nSkillIndex-1) == 0 then
-		PushDebugMessage("Çë½«¸Ã¼¼ÄÜÍÏ×§µ½¼¼ÄÜ¿ì½İÀ¸Ê¹ÓÃ ¡£")	
+		PushDebugMessage("Thïnh Tß¾ng Cai kÛ nång Ğà Du® Ğáo kÛ nång mau l© Lan sØ døng.")	
 	end
 
 end
@@ -1595,14 +1595,14 @@ end
 
 --»ñÈ¡Íæ¼Òµ±Ç°µÈ¼¶×î´óĞ¯´øÊıÁ¿(ÒÔºóÔö¼ÓÊŞÀ¸ºóÒª·Ï³ı,¶ø²ÉÓÃĞÂµÄ·½·¨)-add by xindefeng
 function Pet_GetMyCurMaxPetCount()
-	local mylevel = Player:GetData("LEVEL") --»ñÈ¡Íæ¼ÒµÈ¼¶
+	local mylevel = Player:GetData("LEVEL") --??????
 	if mylevel == nil or type(mylevel) ~= "number" then
 		return 2
 	end 
-	local MaxCount = 0	--Ğ¯´øÉÏÏŞ
+	local MaxCount = 0	--????
 	
 	if mylevel < 21 then
-		MaxCount = 2	--Ò»¿ªÊ¼¾ÍĞ¯´øÉÏÏŞ¾ÍÊÇ2
+		MaxCount = 2	--??????????2
 	elseif mylevel < 41 then
 		MaxCount = 3
 	elseif mylevel < 61 then
@@ -1650,7 +1650,7 @@ function Pet_Talent_Page_Switch()
 	end
 end
 
---ÇĞ»»¸öÈËÕ¹Ê¾½çÃæ
+--ÇĞ»»¸öÈË ¹Ê¾½çÃæ
 function Pet_Profile_Switch()
 	Variable:SetVariable("SelfUnionPos", Pet_Frame:GetProperty("UnifiedPosition"), 1);	
 	Exterior:LuaFnExteriorPlayerOpenProfileUI()	
@@ -1702,7 +1702,7 @@ function Pet_Frame_On_ResetPos()
 end
 
 --***************************************************
--- Çå¿ÕÊó±ê³¤°´±ê¼Ç
+-- Çå¿ Êó±ê³¤°´±ê¼Ç
 --***************************************************
 function Pet_AutoClick_Clear(id)
 	id = tonumber(id)
@@ -1717,7 +1717,7 @@ end
 --***************************************************
 function Pet_AutoClick_Timer()
 	if (g_AutoClick_BtnFlag ~= -1) then
-		-- µÚÒ»´ÎLButtonºó¾­¹ıX¸öTimer²ÅËã¿ªÊ¼, Ò²¾ÍÊÇËµÊÇ g_AutoClickTimer_Step * X µÄÊ±ºò¿ªÊ¼½øĞĞ×Ô¶¯¼Ó, ÕâÑùÎªÁË·ÀÖ¹±¾À´Òªµã»÷Ò»ÏÂµÄ½á¹ûµãÁËºÃ¶àÏÂ
+		-- µÚÒ»´ÎLButtonºó¾­¹ıX¸öTimer²ÅËã¿ªÊ¼, Ò²¾ÍÊÇËµÊÇ g_AutoClickTimer_Step * X µÄÊ±ºò¿ªÊ¼½øĞĞ×Ô¶¯¼Ó,  âÑùÎªÁË·ÀÖ¹±¾À´Òªµã»÷Ò»ÏÂµÄ½á¹ûµãÁËºÃ¶àÏÂ
 		if (g_AutoClick_Going < 4) then
 			g_AutoClick_Going = g_AutoClick_Going + 1
 		else
@@ -1732,7 +1732,7 @@ end
 
 --***************************************************
 -- Êó±ê×ó¼üËÉ¿ª²Ù×÷
---    ×¢ÒâÕâÀïÆäÊµÊÇ´úÌæ Click, ËùÒÔĞèÒªÖ´ĞĞÒ»´Î Click ²Ù×÷
+--    ×¢Òâ âÀïÆäÊµÊÇ´úÌæ Click, ËùÒÔĞèÒªÖ´ĞĞÒ»´Î Click ²Ù×÷
 --***************************************************
 function Pet_AutoClick_LButtonUp(id)
 	id = tonumber(id)
@@ -1790,57 +1790,57 @@ end
 function Pet_OnPageClicked(idx)
 	Variable:SetVariable("PageNumber", tostring(idx), 1)
 	idx = g_PageOrder[idx]
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		Pet_SelfEquip_Page_Switch()
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		Pet_SelfData_Switch()
-	elseif idx == 3 then--ÕäÊŞ
+	elseif idx == 3 then--??
 		--SelfData_Pet_Down()
 		Pet_ClearPage()
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		Pet_Wuhun_Switch()
-	elseif idx == 5 then--ĞŞÁ¶
+	elseif idx == 5 then--??
 		Pet_Xiulian_Switch()
-	elseif idx == 6 then--ÎäµÀ
+	elseif idx == 6 then--??
 		Pet_Talent_Page_Switch()
-	elseif idx == 7 then--ÁéÓñ
+	elseif idx == 7 then--??
 		Pet_Page_LingYu()
-	elseif idx == 8 then--Éñ±ø
+	elseif idx == 8 then--??
 		Pet_Page_ShenBing()
-	elseif idx == 9 then--µñÎÄ½ø½×
+	elseif idx == 9 then--????
 		Pet_Page_DWJinJie()
-	elseif idx == 10 then--áÛ·å
+	elseif idx == 10 then--??
 		Pet_Page_Peak()
-	elseif idx == 11 then--¸öÈË
+	elseif idx == 11 then--??
 		Pet_Profile_Switch()
-	elseif idx == 12 then--ÆäËû
+	elseif idx == 12 then--??
 		Pet_Other_Info_Page_Switch()
 	end
 end
 
 function Pet_CheckPage(idx)
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--ÕäÊŞ
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--ĞŞÁ¶
+	elseif idx == 5 then--??
 		return 1
-	elseif idx == 6 then--ÎäµÀ
+	elseif idx == 6 then--??
 		return DataPool:Lua_CheckIsShowTalent()
-	elseif idx == 7 then--ÁéÓñ
+	elseif idx == 7 then--??
 		return 1
-	elseif idx == 8 then--Éñ±ø
+	elseif idx == 8 then--??
 		return 1
-	elseif idx == 9 then--µñÎÄ½ø½×
+	elseif idx == 9 then--????
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
 		end
 		return 1
-	elseif idx == 10 then--áÛ·å
+	elseif idx == 10 then--??
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
 		end
@@ -1848,43 +1848,43 @@ function Pet_CheckPage(idx)
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 11 then--¸öÈË
+	elseif idx == 11 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 15 then
 			return 1
 		end
-	elseif idx == 12 then--ÆäËû
+	elseif idx == 12 then--??
 		return 1
 	end
 	return 0
 end
 
 function Pet_IsPageEnable(idx)
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--ÕäÊŞ
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--ĞŞÁ¶
+	elseif idx == 5 then--??
 		return 1
-	elseif idx == 6 then--ÎäµÀ
+	elseif idx == 6 then--??
 		return 1
-	elseif idx == 7 then--ÁéÓñ
+	elseif idx == 7 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 8 then--Éñ±ø
+	elseif idx == 8 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 65 then
 			return 1
 		end
-	elseif idx == 9 then--µñÎÄ½ø½×
+	elseif idx == 9 then--????
 		return 1
-	elseif idx == 10 then--áÛ·å
+	elseif idx == 10 then--??
 
 
 		local my_level = Player:GetData("LEVEL")
@@ -1892,9 +1892,9 @@ function Pet_IsPageEnable(idx)
 			return 1
 		end
 
-	elseif idx == 11 then--¸öÈË
+	elseif idx == 11 then--??
 		return 1
-	elseif idx == 12 then--ÆäËû
+	elseif idx == 12 then--??
 		return 1
 	end
 	return 0
@@ -1915,22 +1915,22 @@ function Pet_PetSoulEquip_RClick()
 	Pet_PetSoul_Equip:DoSubAction()
 end
 
--- ÕäÊŞ¸½Ìå
+--  äÊŞ¸½Ìå
 function Pet_Possession_Clicked()
-	-- ÒÑ¾­Ìá½»µ½Ö¸¶¨½çÃæÈİÆ÷µÄÕäÊŞ²»ÄÜ³öÕ½
-	if (IsWindowShow("PetSavvy") and Pet:GetPetLocation(PETNUM) == 12)			-- ÓÃ³ÉÄêÕäÊŞÌáÉıÕäÊŞÎòĞÔ PET_LOCATION_SAVVY
-		or (IsWindowShow("PetSavvyGGD")	and Pet:GetPetLocation(PETNUM) == 3)	-- ÓÃ¸ù¹Çµ¤ÌáÉıÕäÊŞÎòĞÔ PET_LOCATION_SAVVYGGD
-		or (IsWindowShow("MissionReply") and Pet:GetPetLocation(PETNUM) == 7)	-- ÈÎÎñÌá½»ÎïÆ·»òÕäÊŞ PET_LOCATION_MISSIONREPLY
-		or (IsWindowShow("PetHuanhua") and Pet:GetPetLocation(PETNUM) == 5)		-- ÕäÊŞÔÚ»Ã»¯£¬Î»ÖÃÎª5  PET_LOCATION_HUANHUA
+	-- ÒÑ¾­Ìá½»µ½Ö¸¶¨½çÃæÈİÆ÷µÄ äÊŞ²»ÄÜ³ö ½
+	if (IsWindowShow("PetSavvy") and Pet:GetPetLocation(PETNUM) == 12)			-- ??????????? PET_LOCATION_SAVVY
+		or (IsWindowShow("PetSavvyGGD")	and Pet:GetPetLocation(PETNUM) == 3)	-- ?????????? PET_LOCATION_SAVVYGGD
+		or (IsWindowShow("MissionReply") and Pet:GetPetLocation(PETNUM) == 7)	-- ????????? PET_LOCATION_MISSIONREPLY
+		or (IsWindowShow("PetHuanhua") and Pet:GetPetLocation(PETNUM) == 5)		-- ?????,???5  PET_LOCATION_HUANHUA
 		then
-		-- ÕäÊŞ´¦ÓÚÌá½»×´Ì¬£¬ÎŞ·¨¸½Ìå¡£
+		--  äÊŞ´¦ÓÚÌá½»×´Ì¬£¬ÎŞ·¨¸½Ìå¡£
 		PushDebugMessage("#{SHXT_20211230_162}")
 		return
 	end
 	Pet:PossessionPet(PETNUM)
 end
 
--- ÕäÊŞ·ÖÀë
+--  äÊŞ·ÖÀë
 function Pet_Restore_Clicked()
 	Pet:RestorePet(PETNUM)
 end

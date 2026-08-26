@@ -43,12 +43,12 @@ function Verification_Show( bBindPhone )
 	g_Verification_BindPhone = bBindPhone
 	if g_Verification_BindPhone == 0 then
 		Verification_HeChengNum:SetProperty("MaxTextLength", "20")
-		Verification_HeChengNum:SetText("ÓÎÏ·ÕËºÅÉÐÎ´ÈÏÖ¤ÊÖ»ú");
+		Verification_HeChengNum:SetText("Trò ch½i tài khoän chßa chÑng thñc di ðµng");
 		Verification_HeChengNum:Disable();
 		Verification_HeChengNum_Get:Disable();
 	elseif g_Verification_BindPhone == 1 then
 		Verification_HeChengNum:SetProperty("MaxTextLength", "20")
-		Verification_HeChengNum:SetText("ÇëÊäÈë¶ÌÐÅÑéÖ¤Âë");
+		Verification_HeChengNum:SetText("Hãy nh§p tin nh¡n mã ki¬m chÑng.");
 		Verification_HeChengNum:Enable();
 		Verification_HeChengNum_Get:Enable();
 	end
@@ -66,7 +66,7 @@ end
 
 --µÃµ½ÑéÖ¤Âë
 function Verification_OnMaxNum()
-	if g_Verification_BindPhone == 0 then   --Î´°ó¶¨×´Ì¬
+	if g_Verification_BindPhone == 0 then   --?????
 		PushDebugMessage("#{CJYZ_20231214_7}");
 		return
 	end
@@ -85,7 +85,7 @@ end
 
 --ÑéÖ¤
 function Verification_OK_Click()
-	if g_Verification_BindPhone == 0 then   --Î´°ó¶¨×´Ì¬
+	if g_Verification_BindPhone == 0 then   --?????
 		PushDebugMessage("#{CJYZ_20231214_28}")
 		return
 	end
@@ -107,7 +107,7 @@ function Verification_OK_Click()
 end
 
 function Verification_OnActive()
-	if g_Verification_BindPhone == 0 then   --Î´°ó¶¨×´
+	if g_Verification_BindPhone == 0 then   --????
 		return
 	end
 	
@@ -119,7 +119,7 @@ function Verification_OnActive()
 end
 
 function Verification_OnNumChanged()
-	if g_Verification_BindPhone == 0 then   --Î´°ó¶¨×´Ì¬
+	if g_Verification_BindPhone == 0 then   --?????
 		return
 	end
 	

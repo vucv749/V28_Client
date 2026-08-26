@@ -94,7 +94,7 @@ function ShenFen_Preview_OnEvent(event)
 		g_ServerCareID = Get_XParam_INT(1)
 		objCared = DataPool:GetNPCIDByServerID(g_ServerCareID);
 		if( 0 > objCared ) then
-			PushDebugMessage("server¥´π˝¿¥µƒ ˝æ›”–Œ Ã‚°£");
+			PushDebugMessage("DÊ liÆu m·y ch¸ cÛ v§n ´");
 			return
 		end
 		this:CareObject(objCared, 1, "ShenFen_Preview");
@@ -139,7 +139,7 @@ function ShenFen_Preview_OnEvent(event)
 			return;
 		end
 		
-		--»Áπ˚∫Õ…Ã»Àµƒæ‡¿Î¥Û”⁄“ª∂®æ‡¿ÎªÚ’ﬂ±ª…æ≥˝£¨◊‘∂Øπÿ±’
+		--»Áπ˚∫Õ…Ã»Àµƒæ‡¿Î¥Û”⁄“ª∂®æ‡¿ÎªÚ†ﬂ±ª…æ≥˝£¨◊‘∂Øπÿ±†
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			--»°œ˚πÿ–ƒ
 			this:CareObject(objCared, 0, "ShenFen_Preview");
@@ -251,7 +251,7 @@ function ShenFen_Preview_UpdateList()
 			local nMaxAmount = LifeAbility : GetPrescr_Item_Maximum(nPrescr);
 
 			if(nLevel >0) then
-				szPrescrName = szPrescrName .. "£®µ»º∂"..nLevel.."£© "
+				szPrescrName = szPrescrName .. "(c§p bßc"..nLevel..")"
 			end
 
 			local nMaxAmount = LifeAbility : GetPrescr_Item_Maximum(nPrescr);
@@ -391,15 +391,15 @@ function ShenFen_Preview_ListBox_Selected()
 	local Consume_Attr = LifeAbility : GetPrescr_Consume_ContriAttr(nSelIndex);
 	local strName = ""
 	if Consume_Vigor >= 0 then
-		strName = strName .. "#rª˘¥°ªÓ¡¶œ˚∫ƒ£∫".. tostring(Consume_Vigor);
+		strName = strName .. "#rtr¯ cµt s—c sØng tiÍu hao:".. tostring(Consume_Vigor);
 	end
 
 	if Consume_Energy >= 0 then
-		strName = strName .. "#rœ˚∫ƒæ´¡¶£∫".. tostring(Consume_Energy);
+		strName = strName .. "#rtiÍu hao tinh lÒc:".. tostring(Consume_Energy);
 	end
 
 	if Consume_Attr >= 0 then
-		strName = strName .. "#rœ˚∫ƒ√≈≈…π±œ◊∂»£∫".. tostring(Consume_Attr);
+		strName = strName .. "#rtiÍu hao mÙn ph·i cØng hi™n –µ:".. tostring(Consume_Attr);
 	end
 
 	--if resultnum == -1 or resultid == -1 then
@@ -420,7 +420,7 @@ function ShenFen_Preview_ListBox_Selected()
 			g_ShenFen_Material_Icon[i] : Show();
 			g_ShenFen_Material_Name[i] : SetText(name);
 			if holdnum > 99 then
-				g_ShenFen_Material_Num[i]  : SetText("#e010101°ﬁ/" .. stuffnum);
+				g_ShenFen_Material_Num[i]  : SetText("#e0101018/" .. stuffnum);
 			else
 				g_ShenFen_Material_Num[i]  : SetText("#e010101" .. holdnum .. "/" .."#e010101" .. stuffnum);
 			end
@@ -449,7 +449,7 @@ function ShenFen_Preview_HideCtrlOnNoSelect()
 		g_ShenFen_Material_Name[i] : SetText("");
 	end
 
-	ShenFen_Preview_Item : SetProperty("ShortImage","");   --…Ë÷√Œ™ŒﬁÕº±Í
+	ShenFen_Preview_Item : SetProperty("ShortImage","");   --??????
 	ShenFen_Preview_Item_Name_Text : SetText("");
 	ShenFen_Preview_Amount : SetText("");
 	ShenFen_Preview_LianYao:SetText("")

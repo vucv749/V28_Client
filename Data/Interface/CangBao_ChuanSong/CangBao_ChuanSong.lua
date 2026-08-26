@@ -14,12 +14,12 @@ local g_Object = -1
 --¾Å¹¬¸ñ
 local g_CangBao_RoomList={0,0,0,0,0,0,0,0,0}
 local g_CangBao_Goto = -1
-local g_CangBao_RoomDoneList = {} --ÒÑÍê³ÉÍ¼±ê
-local g_CangBao_RoomPlayerList = {} --playerµ±Ç°Í¼±ê
-local g_CangBao_RoomCheckList = {} --Í¼±ê×´Ì¬0/1 ²»¿ÉÑ¡/¿ÉÑ¡
-local g_CangBao_RoomAniList = {} --¿ÉÑ¡Í¼±ê¶¯»­
-local g_CangBao_RoomRoadList = {} --ÒÑÍê³ÉÍ¼±ê
-local g_CangBao_RoomBackList = {} --Ã¿¸ö°´Å¥µ×Í¼
+local g_CangBao_RoomDoneList = {} --?????
+local g_CangBao_RoomPlayerList = {} --player????
+local g_CangBao_RoomCheckList = {} --????0/1 ???/??
+local g_CangBao_RoomAniList = {} --??????
+local g_CangBao_RoomRoadList = {} --?????
+local g_CangBao_RoomBackList = {} --??????
 --g_CangBao_RoomRoadList[1]={nUp = nil,nDown = "aa",} 
 
 
@@ -126,14 +126,14 @@ function CangBao_ChuanSong_OnEvent(event)
 		if(IsWindowShow("CangBao_ChuanSong")) then
 			CloseWindow("CangBao_ChuanSong", true)
 		end
-		--²»ÐèÒªÌí¼ÓNPC¹ØÐÄ Ö±½ÓÕ¹Ê¾
+		--²»ÐèÒªÌí¼ÓNPC¹ØÐÄ Ö±½Ó ¹Ê¾
 		CangBao_ChuanSong_Show(Get_XParam_INT(0),Get_XParam_INT(1),Get_XParam_INT(2))
 	elseif (event == "UI_COMMAND" and tonumber(arg0) == 89340304 ) then
-		--¹Ø±Õ½çÃæ
+		--¹Ø± ½çÃæ
 		CangBao_ChuanSong_Close()
 	elseif (event == "UI_COMMAND" and tonumber(arg0) == 89340305 ) then
 		if(IsWindowShow("CangBao_ChuanSong")) then
-			--¸üÕýÊ±¼ä
+			--¸ü ýÊ±¼ä
 			CangBao_ChuanSong_CheckTime( Get_XParam_INT(0))
 		end
 	end
@@ -169,47 +169,47 @@ function CangBao_ChuanSong_Open( mGameStart,nRemainTimes,mRoomState1,mRoomState2
 	g_CangBao_RoomList={0,0,0,0,0,0,0,0,0}
 	g_CangBao_Goto = -1
 	if mRoomState1 < 0 or mRoomState1 > 3 then
-		PushDebugMessage("Êý¾Ý´íÎó")
+		PushDebugMessage("S¯ li®u sai l¥m")
 	else
 		g_CangBao_RoomList[1]= mRoomState1
 	end
 	if mRoomState2 < 0 or mRoomState2 > 3 then
-		PushDebugMessage("Êý¾Ý´íÎó")
+		PushDebugMessage("S¯ li®u sai l¥m")
 	else
 		g_CangBao_RoomList[2]= mRoomState2
 	end
 	if mRoomState3 < 0 or mRoomState3 > 3 then
-		PushDebugMessage("Êý¾Ý´íÎó")
+		PushDebugMessage("S¯ li®u sai l¥m")
 	else
 		g_CangBao_RoomList[3]= mRoomState3
 	end
 	if mRoomState4 < 0 or mRoomState4 > 3 then
-		PushDebugMessage("Êý¾Ý´íÎó")
+		PushDebugMessage("S¯ li®u sai l¥m")
 	else
 		g_CangBao_RoomList[4]= mRoomState4
 	end
 	if mRoomState5 < 0 or mRoomState5 > 3 then
-		PushDebugMessage("Êý¾Ý´íÎó")
+		PushDebugMessage("S¯ li®u sai l¥m")
 	else
 		g_CangBao_RoomList[5]= mRoomState5
 	end
 	if mRoomState6 < 0 or mRoomState6 > 3 then
-		PushDebugMessage("Êý¾Ý´íÎó")
+		PushDebugMessage("S¯ li®u sai l¥m")
 	else
 		g_CangBao_RoomList[6]= mRoomState6
 	end
 	if mRoomState7 < 0 or mRoomState7 > 3 then
-		PushDebugMessage("Êý¾Ý´íÎó")
+		PushDebugMessage("S¯ li®u sai l¥m")
 	else
 		g_CangBao_RoomList[7]= mRoomState7
 	end
 	if mRoomState8 < 0 or mRoomState8 > 3 then
-		PushDebugMessage("Êý¾Ý´íÎó")
+		PushDebugMessage("S¯ li®u sai l¥m")
 	else
 		g_CangBao_RoomList[8]= mRoomState8
 	end
 	if mRoomState9 < 0 or mRoomState9 > 3 then
-		PushDebugMessage("Êý¾Ý´íÎó")
+		PushDebugMessage("S¯ li®u sai l¥m")
 	else
 		g_CangBao_RoomList[9]= mRoomState9
 	end
@@ -339,7 +339,7 @@ end
 
 
 --=========================================================
---tab¼üÕ¹Ê¾
+--tab¼ü ¹Ê¾
 --=========================================================
 function CangBao_ChuanSong_Show(mGameStart,nRemainTimes,mGameDonePointList)
 	--PushDebugMessage("CangBao_ChuanSong_Show mGameStart="..mGameStart.." nRemainTimes="..nRemainTimes.." mGameDonePointList="..mGameDonePointList)
@@ -429,7 +429,7 @@ function CangBao_ChuanSong_Show(mGameStart,nRemainTimes,mGameDonePointList)
 end
 
 --=========================================================
---¹Ø±Õ½çÃæ
+--¹Ø± ½çÃæ
 --=========================================================
 function CangBao_ChuanSong_Close()
 	CangBao_ChuanSong_StopCareObject()

@@ -28,15 +28,15 @@ function ChannelCustomization_OnLoad()
 	CUSTOM_BUTTONS[7] = ChannelCustomization_CorporateInfo;
 	CUSTOM_BUTTONS[2] = ChannelCustomization_TeamInfo;
 	CUSTOM_BUTTONS[9] = ChannelCustomization_SelfInfo;
-	CUSTOM_BUTTONS[5] = ChannelCustomization_SystemInfo;			--ÏµÍ³ÆµµÀ
-	CUSTOM_BUTTONS[6] = ChannelCustomization_SelfInfo;				--×Ô½¨ÆµµÀ£¨ÏÖÔÚÃ»ÓÐ¹¦ÄÜ£©
-	CUSTOM_BUTTONS[10] = ChannelCustomization_HelpInfo;				--°ïÖúÆµµÀ
+	CUSTOM_BUTTONS[5] = ChannelCustomization_SystemInfo;			--????
+	CUSTOM_BUTTONS[6] = ChannelCustomization_SelfInfo;				--????(??????)
+	CUSTOM_BUTTONS[10] = ChannelCustomization_HelpInfo;				--????
 	CUSTOM_BUTTONS[11] = nil;
-	CUSTOM_BUTTONS[12] = ChannelCustomization_City;				--Í¬³ÇÁÄÌì
-	CUSTOM_BUTTONS[13] = ChannelCustomization_GuildLeagueInfo;				--Í¬ÃËÁÄÌì
+	CUSTOM_BUTTONS[12] = ChannelCustomization_City;				--????
+	CUSTOM_BUTTONS[13] = ChannelCustomization_GuildLeagueInfo;				--????
 	CUSTOM_BUTTONS[14] = nil									--
-	CUSTOM_BUTTONS[15] = ChannelCustomization_UnionInfo;				--ÍÅ¶ÓÆµµÀ
-	CUSTOM_BUTTONS[16] = nil									--Ð¡¶ÓÆµµÀ
+	CUSTOM_BUTTONS[15] = ChannelCustomization_UnionInfo;				--????
+	CUSTOM_BUTTONS[16] = nil									--????
 
 
 	--Ìî³ä³ÇÊÐÐÅÏ¢
@@ -94,27 +94,27 @@ function ChatTabAction( act , strCfg , strName , pos)
 	--AxTrace(0, 0, "ChannelCustomization " .. act .. " " .. strCfg .. " " .. strName);	
 	-- ÉèÖÃ´°ÌåÃû³Æ
 	if ( g_Action == "create" ) then
-		ChannelCustomization_PageHeader_Text:SetText("#gFF0FA0×Ô¶¨Òå");
-		ChannelCustomization_Text1:SetText("×Ô¶¨ÒåÃû×Ö");
-		ChannelCustomization_Cancel:SetText("´´½¨");
-		ChannelCustomization_Destory:SetText("È¡Ïû");
+		ChannelCustomization_PageHeader_Text:SetText("#gFF0FA0Tñ ð¸nh nghîa");
+		ChannelCustomization_Text1:SetText("Tñ ð¸nh nghîa tên");
+		ChannelCustomization_Cancel:SetText("Sáng tÕo");
+		ChannelCustomization_Destory:SetText("Hüy bö");
 		ChannelCustomization_EditName:Show();
 		ChannelCustomization_EditName:SetProperty("DefaultEditBox", "True");
 		ChannelCustomization_Accept:Hide();
 		ChannelCustomization_TxtName:Hide();
 		ChannelCustomization_EditName:SetText(strName);
 	elseif ( g_Action == "config" ) then
-		ChannelCustomization_PageHeader_Text:SetText("#gFF0FA0ÆµµÀÅäÖÃ");
-		ChannelCustomization_Text1:SetText("ÆµµÀÃû³Æ");
-		ChannelCustomization_Accept:SetText("È·¶¨");
-		ChannelCustomization_Cancel:SetText("È¡Ïû");
-		ChannelCustomization_Destory:SetText("É¾³ý");
+		ChannelCustomization_PageHeader_Text:SetText("#gFF0FA0kênh ph¯i trí");
+		ChannelCustomization_Text1:SetText("Kênh tên");
+		ChannelCustomization_Accept:SetText("Xác nh§n");
+		ChannelCustomization_Cancel:SetText("Hüy bö");
+		ChannelCustomization_Destory:SetText("Xóa bö");
 		ChannelCustomization_EditName:Hide();
 		ChannelCustomization_TxtName:Show();
 		ChannelCustomization_Accept:Show();
 		ChannelCustomization_TxtName:SetText(strName);
 		
-		if(strName == "×Ô¼º") then
+		if(strName == "Chính mình") then
 			ChannelCustomization_Destory:Hide();
 		else
 			ChannelCustomization_Destory:Show();
@@ -134,7 +134,7 @@ function ChatTabAction( act , strCfg , strName , pos)
 			local num = DataPool : GetCityNumFromOneProvinceId(pIdx);
 			num = tonumber(num);
 			if(cIdx < num and num) then
-				--µ½ÕâÀï£¬È·¶¨ÊÇÓÐÐ§µÄipRegion
+				--µ½ âÀï£¬È·¶¨ÊÇÓÐÐ§µÄipRegion
 				yes = 1;
 			end
 		end
@@ -283,7 +283,7 @@ function ChannelCustomization_Accept_Clicked()
 				_id = -1;
 			end
 			if(_id < 0)then
-				PushDebugMessage("ÇëÄúÑ¡ºÃÒ»¸ö³ÇÊÐÔÙÈ·¶¨Ê¹ÓÃÍ¬³ÇÆµµÀ£¡")
+				PushDebugMessage("Thïnh Nhçm Tuy¬n Häo mµt cái thành th¸ Tái xác ð¸nh sØ døng Ð°ng Thành kênh!")
 				this : Hide()
 				return;
 			end
@@ -327,7 +327,7 @@ function ChannelCustomization_Cancel_Clicked()
 				_id = -1;
 			end
 			if(_id < 0)then
-				PushDebugMessage("ÇëÄúÑ¡ºÃÒ»¸ö³ÇÊÐÔÙÈ·¶¨Ê¹ÓÃÍ¬³ÇÆµµÀ£¡")
+				PushDebugMessage("Thïnh Nhçm Tuy¬n Häo mµt cái thành th¸ Tái xác ð¸nh sØ døng Ð°ng Thành kênh!")
 				this : Hide()
 				return;
 			end

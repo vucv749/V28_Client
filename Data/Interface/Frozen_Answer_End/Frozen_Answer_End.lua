@@ -7,7 +7,7 @@ local g_UnifiedPosition = nil
 function Frozen_Answer_End_PreLoad()
 	this:RegisterEvent("UI_COMMAND", true)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("ADJEST_UI_POS",false)
 end
 

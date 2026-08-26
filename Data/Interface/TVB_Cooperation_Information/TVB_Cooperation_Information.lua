@@ -1,15 +1,15 @@
 --TVB植入 TVB_Cooperation_Information
 local g_TVB_Cooperation_Information_Frame_UnifiedPosition
-local g_TVB_Cooperation_Information_LV = 30 --等级限制
-local g_TVB_Cooperation_Information_dist = 5 --距离NPC距离
+local g_TVB_Cooperation_Information_LV = 30 --????
+local g_TVB_Cooperation_Information_dist = 5 --??NPC??
 local g_TVB_Cooperation_Information_UICOMMAND = 99833401 
 local g_TVB_Cooperation_Information_UICOMMAND2 = 99833403
-local g_MaxPage = 4 --最大页数
-local g_Content = {} --要加载的图片
+local g_MaxPage = 4 --????
+local g_Content = {} --??????
 
 local g_targetID = -1
-local g_CurPage = 1 --当前页
-local g_TVB_Cooperation_Information_objCared = -1 --NPCid 在uicommand事件中 赋值
+local g_CurPage = 1 --???
+local g_TVB_Cooperation_Information_objCared = -1 --NPCid ?uicommand??? ??
 
 
 function TVB_Cooperation_Information_PreLoad()
@@ -51,7 +51,7 @@ function TVB_Cooperation_Information_OnEvent(event)
 		if tonumber(arg0) ~= g_TVB_Cooperation_Information_objCared then
 			return
 		end
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>g_TVB_Cooperation_Information_dist or arg1=="destroy") then
 		    --取消关心
     		TVB_Cooperation_Information_OnHidden()

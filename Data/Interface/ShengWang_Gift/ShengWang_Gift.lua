@@ -217,7 +217,7 @@ function ShengWang_GiftConfirm()
 		Set_XSCRIPT_Parameter(1, g_ItemIndexSel)
 		Set_XSCRIPT_ParamCount(2)
 	Send_XSCRIPT()
-	--关闭界面
+	--关睜界面
 	ShengWang_GiftOnClose()
 
 end

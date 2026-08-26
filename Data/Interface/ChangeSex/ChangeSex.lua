@@ -3,9 +3,9 @@ local objCared = -1;
 
 local g_ChangeSex_From = -1;
 
-local g_CameraHeight = 1;     --摄影机高度
-local g_CameraDistance = 2;   --摄影机距离
-local g_CameraPitch = 3;      --摄影机角度
+local g_CameraHeight = 1;     --?????
+local g_CameraDistance = 2;   --?????
+local g_CameraPitch = 3;      --?????
 
 
 local g_ChangeSex_Frame_UnifiedPosition;
@@ -17,13 +17,13 @@ function ChangeSex_PreLoad()
 
 
 	-- FakeObject模型界面互斥
-	this:RegisterEvent("OPEN_EQUIP");										-- 角色资料界面
-	this:RegisterEvent("OPEN_DRESS_PAINT_FITTING");			-- 时装染色试衣间
-	this:RegisterEvent("OPEN_DRESS_ENCHASE_FITTING");		-- 时装镶嵌试衣间
-	this:RegisterEvent("YIGUI_OPEN");				-- 衣柜
-	this:RegisterEvent("OPEN_SHOP_FITTING"); --试穿
+	this:RegisterEvent("OPEN_EQUIP");										-- ??????
+	this:RegisterEvent("OPEN_DRESS_PAINT_FITTING");			-- ???????
+	this:RegisterEvent("OPEN_DRESS_ENCHASE_FITTING");		-- ???????
+	this:RegisterEvent("YIGUI_OPEN");				-- ??
+	this:RegisterEvent("OPEN_SHOP_FITTING"); --??
 	this:RegisterEvent("OPEN_YB_SHOP_FITTING")
-	this:RegisterEvent("FASHION_DEPOT_OP", false);				-- 华裳阁
+	this:RegisterEvent("FASHION_DEPOT_OP", false);				-- ???
 
 
 	this:RegisterEvent("ADJEST_UI_POS",false)
@@ -43,13 +43,13 @@ function ChangeSex_OnEvent(event)
 	end
 
 	-- FakeObject模型界面互斥
-	if ( event == "OPEN_EQUIP") or												-- 角色资料界面
-		 (event == "OPEN_DRESS_PAINT_FITTING") or					-- 时装染色试衣间
-		 (event == "OPEN_DRESS_ENCHASE_FITTING") or	-- 时装镶嵌试衣间
-		 (event == "YIGUI_OPEN") or			-- 衣柜
+	if ( event == "OPEN_EQUIP") or												-- ??????
+		 (event == "OPEN_DRESS_PAINT_FITTING") or					-- ???????
+		 (event == "OPEN_DRESS_ENCHASE_FITTING") or	-- ???????
+		 (event == "YIGUI_OPEN") or			-- ??
 		 (event == "OPEN_YB_SHOP_FITTING") or
-		 (event == "OPEN_SHOP_FITTING") or --试穿
-		 (event == "FASHION_DEPOT_OP" and tonumber(arg0) == 1 ) then --华裳阁
+		 (event == "OPEN_SHOP_FITTING") or --??
+		 (event == "FASHION_DEPOT_OP" and tonumber(arg0) == 1 ) then --???
 		if (this:IsVisible()) then
 			ChangeSex_Close();
 		end
@@ -71,7 +71,7 @@ function ChangeSex_OnEvent(event)
 		ChangeSex_FakeObject_Left:SetFakeObject("");
 		ChangeSex_FakeObject_Left:SetFakeObject("ChangeSex_PlayerNew0");
 		ChangeSex_FakeObject_Right:SetFakeObject("");
-		YiGui:SetChangeSexNewModel(1) --不想新弄了，借用下衣柜导出类
+		YiGui:SetChangeSexNewModel(1) --?????,????????
 		ChangeSex_FakeObject_Right:SetFakeObject("ChangeSex_PlayerNew1");
 
 		--FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,12);
@@ -83,7 +83,7 @@ function ChangeSex_OnEvent(event)
 			return;
 		end
 
-		--如果和商人的距离大于一定距离或者被删除，自动关闭
+		--如果和商人的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			--取消关心
 			this:CareObject(objCared, 0, "CHANGE_SEX_NEW");
@@ -101,7 +101,7 @@ function ChangeSex_OnEvent(event)
 
 end
 
---关闭按钮
+--关睜按钮
 function ChangeSex_Close()
 	--取消关心
 	this:CareObject(objCared, 0, "CHANGE_SEX_NEW");

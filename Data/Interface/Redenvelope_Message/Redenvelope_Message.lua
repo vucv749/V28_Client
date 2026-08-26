@@ -3,7 +3,7 @@ local m_NormalButton;
 
 local ReceivedLimit = 20;
 
-local DiFu_Scene_Id = 77; --µØ¸®³¡¾°ID
+local DiFu_Scene_Id = 77; --????ID
 
 local BroadCastStr = 
 {
@@ -45,14 +45,14 @@ local Animate =
 
 local CipherStr =
 {
-	[1] = "ÆëĞÄĞ­Á¦£¬¹²Õ½½­ºş£¡",
-	[2] = "ÌìÁúÖ®ÄÚ½ÔĞÖµÜ£¡",
-	[3] = "ÇéÒåÈö½­ºş£¬Ç§½ğ²»¹ó£¡",
-	[4] = "ºÀÆøÒ»ÖÀ£¬ºÃÔËÁ¬À´£¡",
-	[5] = "ÏÊÒÂÅ­Âí£¬ÓÀÔ¶ÉÙÏÀ£¡",
-	[6] = "Ô¸µÃÒ»ÈËĞÄ£¬°×Ê×²»·ÖÀë",
-	[7] = "ÓĞ´ËÍ¬ĞÄ½áÒå£¬½­ºşºÎ´¦¼ÅÁÈ£¿",
-	[8] = "Á¼Ê¦µÃè±Óñ£¬ÌÒÀîÓö´º",
+	[1] = "Ğ°ng tâm hi®p lñc, Cµng Chiªn giang h°!",
+	[2] = "Thiên Long trong vòng Giai Huynh Ğ®!",
+	[3] = "Tình nghîa Tát giang h°, thiên kim B¤t Quı!",
+	[4] = "Hào khí Nh¤t Tr¸ch, v§n may Liên Lai!",
+	[5] = "Tiên Y Nµ Mã, vînh vi­n thiªu hi®p!",
+	[6] = "Nguy®n Ğ¡c mµt ngß¶i Tâm, ngß¶i già chÆng phân bi®t ğßşc Li",
+	[7] = "Hæu ThØ Ğ°ng Tâm Kªt Nghîa, giang h° n½i nào t¸ch liêu?",
+	[8] = "Lß½ng Sß Ğ¡c Phác Ng÷c, ğào lı Ngµ Xuân",
 }
 
 function Redenvelope_Message_PreLoad()

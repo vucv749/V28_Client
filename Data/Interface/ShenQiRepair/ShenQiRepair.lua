@@ -27,7 +27,7 @@ local g_NeedItemBonus={	{sqid01=10300000, sqid02=10302000, sqid03=10304000, sqid
 			{sqid01=10300003, sqid02=10302003, sqid03=10304003, sqid04=10305003, sfid=30505803},
 			{sqid01=10300004, sqid02=10302004, sqid03=10304004, sqid04=10305004, sfid=30505804},
 			{sqid01=10300005, sqid02=10302005, sqid03=10304005, sqid04=10305005, sfid=30505805},
-			{sqid01=10300100, sqid02=10300100, sqid03=10300100, sqid04=10300100, sfid=30505806},		-- ñÒÉÙÎ¢
+			{sqid01=10300100, sqid02=10300100, sqid03=10300100, sqid04=10300100, sfid=30505806},		-- ???
 			{sqid01=10300101, sqid02=10300101, sqid03=10300101, sqid04=10300101, sfid=30505806},
 			{sqid01=10300102, sqid02=10300102, sqid03=10300102, sqid04=10300102, sfid=30505806},
 			{sqid01=10301100, sqid02=10301100, sqid03=10301100, sqid04=10301100, sfid=30505806},
@@ -243,8 +243,8 @@ function ShenQiRepair_PreLoad()
 	this:RegisterEvent("RESUME_ENCHASE_GEM_EX",false);
 	this:RegisterEvent("ADJEST_UI_POS",false)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--½ø³¡¾°¹Ø±Õ½çÃæ
-	this:RegisterEvent("BUY_ITEM")				--¿ì½İ¹ºÂò£¬¸üĞÂ½çÃæ
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
+	this:RegisterEvent("BUY_ITEM")				--????,????
 
 end
 
@@ -276,7 +276,7 @@ function ShenQiRepair_OnEvent(event)
 				else
 					objCared = DataPool : GetNPCIDByServerID(ShenQi_NPC_ID);
 					if objCared == -1 then
-						PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£");
+						PushDebugMessage("Dæ li®u máy chü có v¤n ğ«");
 						return;
 					end
 					BeginCareObject_ShenQiRepair()
@@ -302,7 +302,7 @@ function ShenQiRepair_OnEvent(event)
 			return
 		end
 
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			--È¡Ïû¹ØĞÄ
 			ShenQiRepair_Close();
@@ -338,7 +338,7 @@ function ShenQiRepair_OnEvent(event)
 		elseif(arg0~=nil and tonumber(arg0) == 129) then
 			ShenQiRepair_Mat_Clear()
 		end
-	elseif event == "BUY_ITEM" and this:IsVisible() then	--¿ì½İ¹ºÂò£¬¸üĞÂ½çÃæ
+	elseif event == "BUY_ITEM" and this:IsVisible() then	--????,????
 		local itemId = tonumber(arg1)
 		if 38000498 == itemId then
 			ShenQiRepair_Update(2,tonumber(PlayerPackage:GetBagPosByItemIndex(itemId)));
@@ -418,15 +418,15 @@ function ShenQiRepair_Update(pos0, pos1)
 			-- 15¼¶ÉñÆ÷²»ĞèÒªĞŞÀí by lishilong 2016-8-23
 			if 10300422 == ItemID or 10302448 == ItemID or 10304426 == ItemID
 				or 10305444 == ItemID or 10306042 == ItemID or 10307042 == ItemID or 10308042 == ItemID then
-				PushDebugMessage("´ËÉñÆ÷²»ĞèÒªĞŞÀí")
+				PushDebugMessage("ThØ th¥n khí không c¥n sØa chæa")
 				return
 			end
 
 			local ShenQiPoint = LifeAbility:Get_Equip_Point(pos_packet)
 			if ShenQiPoint == -1 or ShenQiPoint == 8 or ShenQiPoint == 9 or ShenQiPoint == 10
-				or PlayerPackage:IsBagItemKFS(pos_packet) ==1 then --Îä»êµÄÏŞÖÆ
+				or PlayerPackage:IsBagItemKFS(pos_packet) ==1 then --?????
 				if ShenQiPoint ~= -1 then
-					PushDebugMessage("´ËÎïÆ·²»ĞèÒªĞŞÀí¡£")
+					PushDebugMessage("V§t ph¦m này không c¥n sØa.")
 				end
 				return
 			end
@@ -443,10 +443,10 @@ function ShenQiRepair_Update(pos0, pos1)
 			if shenfu_grade == 7 then
 				strdic = "#{SQXL_160901_13}"
 			else
-				strdic = ScriptGlobal_Format("#{SQXL_030225_05}", shenfu_grade) --ĞèÒª1Æ¿Éñ»êÒº»ò1¸ö#{_ITEM%s0}#H
+				strdic = ScriptGlobal_Format("#{SQXL_030225_05}", shenfu_grade) --??1?????1?#{_ITEM%s0}#H
 			end
 		--	if IsTBFinalServer() >= 1 then
-		--		--T·ş¿ç·şÕ½×Ü¾öÈüÌØĞ´
+		--		--T·ş¿ç·ş ½×Ü¾öÈüÌØĞ´
 		--		strdic = "ÎŞĞèÏûºÄ"
 		--	end
 			ShenQiRepair_TiShi03:SetText( strdic );
@@ -553,7 +553,7 @@ function ShenQiRepair_Buttons_Clicked()
 		Send_XSCRIPT();
 		LifeAbility : Lock_Packet_Item(ShenQi_QUALITY,0);
 	--	if IsTBFinalServer() <= 0 then
-			--ÆÕÍ¨·şÎñÆ÷²ÅĞèÒª¼ÓËø
+			--Æ Í¨·şÎñÆ÷²ÅĞèÒª¼ÓËø
 			LifeAbility : Lock_Packet_Item(CaiLiao_QUALITY,0);
 	--	end
 		if CaiLiao_QUALITY ~= -1 then
@@ -585,7 +585,7 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØĞÄNPC£¬
---ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 --Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function BeginCareObject_ShenQiRepair()

@@ -1,7 +1,7 @@
--- 征友平台 : 投票， cuiyinjie 2008.10.21
-local g_total_Page = 1; --共有多少页
-local g_curr_Page = 1  --当前在那一页
-local MAX_INFO_PETPAGE = 10  --每页10条信息
+-- 狑友平台 : 投票， cuiyinjie 2008.10.21
+local g_total_Page = 1; --?????
+local g_curr_Page = 1  --??????
+local MAX_INFO_PETPAGE = 10  --??10???
 
 function VotedPlayer_PreLoad()
 	this:RegisterEvent("OPEN_WINDOW");
@@ -40,9 +40,9 @@ function VotedPlayer_UpdateVoteInfo()
 	AxTrace(0, 0, "nPos"..tostring(nPos)..",nTotalVoteNum:"..tostring(nTotalVoteNum));
 	while nPos < nTotalVoteNum and nPos < nStartPos + 10 do
 		local nVotedName, nOnlineFlag = FindFriendDataPool:GetVoteInfoByPos(nPos);
-		local namecolor = "#cC4B299";				-- 不在线玩家的用户名显示颜色
+		local namecolor = "#cC4B299";				-- ?????????????
 		if(nOnlineFlag == 1) then
-			namecolor = "#W";									-- 在线玩家的用户名显示颜色
+			namecolor = "#W";									-- ????????????
 		end
 
 		VotedPlayer_List:AddItem( "", nInListPos, "FFFFFFFF", 4 );
@@ -117,7 +117,7 @@ function VotedPlayer_PlayerSelect(arg0)
 		local szName, nOnlineFlag = FindFriendDataPool:GetVoteInfoByPos(nIndex);
 		local player = Player:GetName();   
 		if(szName == player) then
-			--PushDebugMessage("对不起，这是您自己投的票。");
+			--PushDebugMessage("对不起，犫是您自己投的票。");
 			return;
 		end
 		if (szName ~= nil) then
@@ -139,7 +139,7 @@ function VotedPlayer_OpenMenu()
 		end
 		local player = Player:GetName();   
 		if(szName == player) then
-			--PushDebugMessage("对不起，这是您自己投的票。");
+			--PushDebugMessage("对不起，犫是您自己投的票。");
 			return;
 		end	
 		FindFriendDataPool:ContexMenuForVoteInfo(nIndex);

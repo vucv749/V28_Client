@@ -8,7 +8,7 @@ local g_RaidAssistantIcon2 = "set:Union1 image:Union_MemberIcon_S"
 
 local g_MenPaiCount = 14
 local g_SquadButtonNames = {"#{TDGZ_XML_05}", "#{TDGZ_XML_06}", "#{TDGZ_XML_07}", "#{TDGZ_XML_08}", "#{TDGZ_XML_09}"}
-local g_MenpaiNames = {"ÉÙÁÖ","Ã÷½Ì","Ø¤°ï","Îäµ±","¶ëáÒ","ÐÇËÞ","ÌìÁú","ÌìÉ½","åÐÒ£","ÎÞÃÅÅÉ","ÂüÍÓ"}
+local g_MenpaiNames = {"Thiªu Lâm","Minh Giáo","Cái Bang","Võ Ðang","Nga Mi","Tinh Túc","Thiên Long","Thiên S½n","Tiêu dao","Tñ do","MÕn Ðà"}
 local g_TextColors = {"#cff6600", "#cffcc00", "#c00ff00", "#c0000ff", "#cff99cc", "#c007700", "#cffff00", "#cffffff", "#c7700ff", "#c999999", "#cffffb3"}
 
 local g_CurSelMemSquad = -1
@@ -290,16 +290,16 @@ function UnionFrame_UpdateFrame()
 					local position = Raid:IsLeaderByIdx(i - 1, j - 1)
 					if 1 == position then
 						--ÍÅ³¤
-						g_MemberDragItems[i][j]:SetToolTip("#{TDGZ_100809_85}" .. "#{TDGZ_XML_11}" .. scene)		--Tip£º¡¾ÍÅ³¤¡¿ËùÔÚµØ£ºXXX
+						g_MemberDragItems[i][j]:SetToolTip("#{TDGZ_100809_85}" .. "#{TDGZ_XML_11}" .. scene)		--Tip:???????:XXX
 						g_MemberIcons[i][j]:SetProperty("Image", g_RaidLeaderIcon2)
 						g_MemberIcons[i][j]:Show()
 					elseif 2 == position then
 						--ÖúÀí
-						g_MemberDragItems[i][j]:SetToolTip("#{TDGZ_100809_86}" .. "#{TDGZ_XML_11}" .. scene)		--Tip£º¡¾ÖúÀí¡¿ËùÔÚµØ£ºXXX
+						g_MemberDragItems[i][j]:SetToolTip("#{TDGZ_100809_86}" .. "#{TDGZ_XML_11}" .. scene)		--Tip:???????:XXX
 						g_MemberIcons[i][j]:SetProperty("Image", g_RaidAssistantIcon2)
 						g_MemberIcons[i][j]:Show()
 					else
-						g_MemberDragItems[i][j]:SetToolTip("#{TDGZ_XML_11}" .. scene)														--Tip£ºËùÔÚµØ£ºXXX
+						g_MemberDragItems[i][j]:SetToolTip("#{TDGZ_XML_11}" .. scene)														--Tip:???:XXX
 						g_MemberIcons[i][j]:Hide()
 					end
 					memCount = memCount - 1
@@ -315,7 +315,7 @@ function UnionFrame_UpdateFrame()
 		end
 
 		if Player:IsRaidLeader() == 1 then
-			Union_Button_Frame1:Show()	--¡°ÉêÇëÁÐ±í¡±°´Å¥
+			Union_Button_Frame1:Show()	--“????”??
 			if Raid:GetApplicantCount() > 0 then
 				Union_Button_Frame1:Enable()
 			end
@@ -638,7 +638,7 @@ function UnionFrame_UpdateMember(squadIdx, memIdx)
 
 		Union_Button_Frame1:Hide()
 		if Player:IsRaidLeader() == 1 then
-			Union_Button_Frame1:Show()	--¡°ÉêÇëÁÐ±í¡±°´Å¥
+			Union_Button_Frame1:Show()	--“????”??
 			if Raid:GetApplicantCount() > 0 then
 				Union_Button_Frame1:Enable()
 			end

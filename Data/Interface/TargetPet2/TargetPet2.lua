@@ -21,14 +21,14 @@ local TargetPet2SKILL_BUTTONS = {};
 local Currend_Pet = -1;
 local PET_AITYPE = {};
 
-local OpenPetBank = 0	-- ÊÇ·ñÊÇ´ÓÕäÊÞÒøÐÐµã»÷"²é¿´"´ò¿ªµÄ½çÃæ, Èç¹ûÊÇ, ¾ÍÏÔÊ¾ÌÒÐÄ, Èç¹û²»ÊÇ¾Í²»ÏÔÊ¾.
+local OpenPetBank = 0	-- ??????????"Xem xét"?????, ???, ?????, ????????.
 ----------------------------
---ÕäÊÞ×°±¸°´Å¥Êý¾Ý¶¨Òå zchw
-local g_Pet_Head; 		--Í·
-local g_Pet_Claw;			--×¦
-local g_Pet_Body; 		--Çû¸É
-local g_Pet_Neck;			--ÏîÈ¦
-local g_Pet_Charm;		--»¤·û
+-- äÊÞ×°±¸°´Å¥Êý¾Ý¶¨Òå zchw
+local g_Pet_Head; 		--?
+local g_Pet_Claw;			--?
+local g_Pet_Body; 		--??
+local g_Pet_Neck;			--??
+local g_Pet_Charm;		--??
 
 ----------------------------
 local TARGETPET2_TYPE = {
@@ -58,14 +58,14 @@ function TargetPet2_OnLoad()
 	TargetPet2SKILL_BUTTONS[11] = TargetPet2_Skill11;
 	TargetPet2SKILL_BUTTONS[12] = TargetPet2_Skill12;
 
-	PET_AITYPE[0] = "µ¨Ð¡";
-	PET_AITYPE[1] = "½÷É÷";
-	PET_AITYPE[2] = "ÖÒ³Ï";
-	PET_AITYPE[3] = "¾«Ã÷";
-	PET_AITYPE[4] = "ÓÂÃÍ";
+	PET_AITYPE[0] = "Nhát gan";
+	PET_AITYPE[1] = "C¦n th§n";
+	PET_AITYPE[2] = "Trung thñc";
+	PET_AITYPE[3] = "Nhanh nh©n";
+	PET_AITYPE[4] = "Dûng mãnh";
 	
 	--------------------------
-	-- ÕäÊÞ×°±¸ÓëÈ«¾Ö±äÁ¿¹ØÁª zchw
+	--  äÊÞ×°±¸ÓëÈ«¾Ö±äÁ¿¹ØÁª zchw
 	g_Pet_Head = TargetPetEquip_1;
 	g_Pet_Claw = TargetPetEquip_2;	
 	g_Pet_Body = TargetPetEquip_3;
@@ -76,7 +76,7 @@ end
 
 function TargetPet2_OnEvent(event)
 
-	--½»Ò×¹ý³ÌÖÐµÄÕäÊÞÏÔÊ¾	
+	--½»Ò×¹ý³ÌÖÐµÄ äÊÞÏÔÊ¾	
 	if (event == "SHOW_CONTEXT_SEL_PET")  then
 		if(IsWindowShow("OtherPet")) then
 			CloseWindow("OtherPet", true);
@@ -93,7 +93,7 @@ function TargetPet2_OnEvent(event)
 	elseif ( event == "CLOSE_PET_FRAME" and this:IsVisible() ) then
 		this:Hide();
 		return
-	--ÕäÊÞÒøÐÐÕäÊÞÏÔÊ¾	
+	-- äÊÞÒøÐÐ äÊÞÏÔÊ¾	
 	elseif (event == "TOGLE_OPEN_PET_PETBANK")  then
 		if(IsWindowShow("OtherPet")) then
 			CloseWindow("OtherPet", true);
@@ -103,7 +103,7 @@ function TargetPet2_OnEvent(event)
 			CloseWindow("TargetPet", true);
 		end
 
-		OpenPetBank = 1;	-- ÊÇÕäÊÞÒøÐÐ´ò¿ªµÄUI
+		OpenPetBank = 1;	-- ????????UI
 	  TargetPet2_FakeObject : SetFakeObject( "" );
 		TargetPet : SetModel2();
 		TargetPet2_FakeObject : SetFakeObject( "My_TargetPet2" );		
@@ -251,7 +251,7 @@ function TargetPet2_Update()
  	
 	local strAI,strIcon;
 	if(strName>4 or strName <0) then
-		strAI = "´íÎóµÄ";
+		strAI = "Sai l¥m Ðích";
 	else
 		strAI =	PET_AITYPE[strName];
 	end
@@ -259,21 +259,21 @@ function TargetPet2_Update()
  	strName,strName2 = TargetPet:GetName();
 	local nEra, strTypeName = TargetPet:GetPetTypeName(nIndex);
  	if( 1 == nEra ) then
- 	    strName2 = "¶þ´ú"..strTypeName
+ 	    strName2 = "Ð¶i thÑ 2"..strTypeName
  	end
 	TargetPet2_PetName : SetText( strName );
 	TargetPet2_PageHeader : SetText( "#gFF0FA0"..strName2 );
 	TargetPet2_Type : SetText("#gFF8E92"..strAI)
 
 	strName,strName2,sex = TargetPet : GetID();
-	TargetPet2_TargetPetID : SetText( "ÕäÊÞID:"..strName2 );
+	TargetPet2_TargetPetID : SetText( "Trân Thú ID:"..strName2 );
 	AxTrace(0,0,"GetID="..strName .. strName2);
 	
 	strName = TargetPet : GetConsort();
 	if tonumber(strName) == 0 then
-		TargetPet2_ConsortID : SetText( "ÉÐÎÞÅäÅ¼" );
+		TargetPet2_ConsortID : SetText( "Thßþng Vô ph¯i ngçu" );
 	else
-		TargetPet2_ConsortID : SetText( "ÅäÅ¼ID:".. strName );
+		TargetPet2_ConsortID : SetText( "Ph¯i ngçu ID:".. strName );
 	end
 	
 	if TargetPet : GetGoodsProtect_Pet() == 1 then
@@ -283,9 +283,9 @@ function TargetPet2_Update()
 	end
 	
 	if(sex == 1) then 
-		strName = "ÐÛÐÔ";
+		strName = "Gi¯ng ðñc";
 	else
-		strName = "´ÆÐÔ";
+		strName = "Gi¯ng cái";
 	end
 
 	local nGeneration  = TargetPet : GetGeneration()
@@ -311,7 +311,7 @@ function TargetPet2_Update()
 		else
 			if ( nPetType == 0 ) then
 				--0:±¦±¦ 2022Äê6ÔÂ ÐÞ¸Ä ÓÉ¼ÇÂ¼ ÉÏ´Î·±Ö³µÈ¼¶ ¸Ä³É¼ÇÂ¼ ÒÑ¾­·±Ö³´ÎÊý
-			--ÓÉÓÚÒª¼æÈÝÖ®Ç°µÄÊý¾Ý£¬ÔÙ¸üÐÂºóÃ»·±Ö³Ö®Ç° Õâ¸öÊýÖµÈÔÈ»¼ÇÂ¼ÉÏ´Î·±Ö³µÈ¼¶£¬·±Ö³Ö®ºó¼ÇÂ¼ÒÑ¾­·±Ö³´ÎÊý
+			--ÓÉÓÚÒª¼æÈÝÖ®Ç°µÄÊý¾Ý£¬ÔÙ¸üÐÂºóÃ»·±Ö³Ö®Ç°  â¸öÊýÖµÈÔÈ»¼ÇÂ¼ÉÏ´Î·±Ö³µÈ¼¶£¬·±Ö³Ö®ºó¼ÇÂ¼ÒÑ¾­·±Ö³´ÎÊý
 				local nLevel = TargetPet:GetLevel();
 				local nLastProcreateLevel = TargetPet:GetLastProcreateLevel(nIndex);
 				if nLastProcreateLevel < 0 then
@@ -321,7 +321,7 @@ function TargetPet2_Update()
 				local nTimes = 0
 				local nCounts = 0
 				local nRemainCounts = 0
-				if nLastProcreateLevel >= 30 then --Ã»ÐÞ¸Ä¹ýÖ®Ç°
+				if nLastProcreateLevel >= 30 then --??????
 					if nLastProcreateLevel >= nTarget[5] then
 						nRemainCounts = 0
 					else
@@ -376,20 +376,20 @@ function TargetPet2_Update()
 			end
 		end
 		TargetPet2_Peach : SetProperty("Image", TARGETPET2_TYPE[nColor].image);
-		OpenPetBank = 0;	-- ÖÃÎª0
+		OpenPetBank = 0;	-- ??0
 	end
 	----------------------------------------------------------------------------------------------------
 	strName = TargetPet : GetNaturalLife();
-	TargetPet2_Life : SetText( "ÊÙÃü:"..strName );
+	TargetPet2_Life : SetText( "S¯ng lâu:"..strName );
 
 	strName = TargetPet : GetLevel();
-	TargetPet2_Level : SetText( "µÈ¼¶:"..strName.."¼¶" );
+	TargetPet2_Level : SetText( "C¤p b§c:"..strName.."C¤p" );
 	
 	strName = TargetPet : GetHappy();
-	TargetPet2_Happy : SetText( "¿ìÀÖ:"..strName );
+	TargetPet2_Happy : SetText( "Khoái LÕc:"..strName );
 	
 	strName = TargetPet : GetBasic();
-	TargetPet2_GenGu : SetText( "¸ù¹Ç:"..strName );
+	TargetPet2_GenGu : SetText( "Cån C¯t:"..strName );
 	
 	strName = TargetPet : GetLixing(nIndex);
 	TargetPet2_Lingxing : SetText("#{RXZS_XML_28}"..strName)
@@ -401,7 +401,7 @@ function TargetPet2_Update()
 	end
 
 	local iSavvy = TargetPet:GetSavvy()
-	TargetPet2_WuXing:SetText("ÎòÐÔ:".. tostring(iSavvy))
+	TargetPet2_WuXing:SetText("Ngµ tính:".. tostring(iSavvy))
 	
 	local iStrAptitude = TargetPet:GetStrAptitude()
 	local iSprAptitude = TargetPet:GetIntAptitude()
@@ -447,11 +447,11 @@ function TargetPet2_Update()
 	end
 	
 	strName = TargetPet : GetExp();
-	TargetPet2_Exp : SetText( "¾­Ñé:"..strName );
+	TargetPet2_Exp : SetText( "Kinh nghi®m:"..strName );
 	
 	strName = TargetPet : GetHP(nIndex);
 	strName2 = TargetPet:	GetMaxHP(nIndex);
-	TargetPet2_Blood : SetText( "Ñª:"..strName .." / ".. strName2);
+	TargetPet2_Blood : SetText( "Huyªt:"..strName .." / ".. strName2);
 
 	strName = TargetPet : GetStr();
 	TargetPet2_Str : SetText( strName );
@@ -530,17 +530,17 @@ function TargetPet2_Update()
 	else
 		strNeedLevelColor="#c00FF00";
 	end
-	strNeedLevel = strNeedLevelColor..tostring( nTakeLevel ).."¼¶#W¿ÉÐ¯´ø";
+	strNeedLevel = strNeedLevelColor..tostring( nTakeLevel ).."C¤p#W Mang theo";
 
 	TargetPet2_NeedLevel : SetText(strNeedLevel)
 
 	strName = TargetPet : GetGrowRate();
-	TargetPet2_Growth : SetText("#GÎ´Öª")
+	TargetPet2_Growth : SetText("#GkHông biªt")
 	local nGrowLevel = TargetPet : GetPetGrowLevel(tonumber(strName));
-	local strTbl = {"ÆÕÍ¨","ÓÅÐã","½Ü³ö","×¿Ô½","ÍêÃÀ"};
+	local strTbl = {"S½ C¤p","Xu¤t S¡c","Ki®t Xu¤t","Trác Vi®t","Toàn MÛ"};
 	
 	if(nGrowLevel >= 0) then
-		nGrowLevel = nGrowLevel + 1;	--cÀïÊÇ´Ó0¿ªÊ¼µÄÃ¶¾Ù
+		nGrowLevel = nGrowLevel + 1;	--c???0?????
 		local nGrowRate = TargetPet : GetGrowRate();
 		if(strTbl[nGrowLevel]) then
 			TargetPet2_Growth : SetText("#G"..strTbl[nGrowLevel]..nGrowRate)
@@ -551,21 +551,21 @@ function TargetPet2_Update()
 	strName = "";
 	AxTrace(0,1,"food="..food);
 	if(food >= 1000) then
-		strName = strName .. "Èâ";
+		strName = strName .. "Th¸t";
 		food = food - 1000;
 		if food > 0 then
 			strName = strName .. ",";
 		end
 	end
 	if(food >= 100) then
-		strName = strName .. "²Ý";
+		strName = strName .. "Thäo";
 		food = food - 100;
 		if food > 0 then
 			strName = strName .. ",";
 		end
 	end
 	if(food >= 10) then
-		strName = strName .. "³æ";
+		strName = strName .. "Sâu";
 		food = food - 10;
 		if food > 0 then
 			strName = strName .. ",";
@@ -573,7 +573,7 @@ function TargetPet2_Update()
 	end
 	
 	if(food >= 1) then
-		strName = strName .. "¹È";
+		strName = strName .. "Ngû c¯c";
 	end
 	TargetPet2Food_Type : Show();
 	TargetPet2Food_Type : SetToolTip( strName );
@@ -612,7 +612,7 @@ end
 
 ----------------------------------------------------------------------------------
 --
--- Ðý×ªÕäÊÞÄ£ÐÍ£¨Ïò×ó)
+-- Ðý×ª äÊÞÄ£ÐÍ£¨Ïò×ó)
 --
 function TargetPet2_Modle_TurnLeft(start)
 	--Ïò×óÐý×ª¿ªÊ¼
@@ -630,7 +630,7 @@ end
 
 ----------------------------------------------------------------------------------
 --
---Ðý×ªÕäÊÞÄ£ÐÍ£¨ÏòÓÒ)
+--Ðý×ª äÊÞÄ£ÐÍ£¨ÏòÓÒ)
 --
 function TargetPet2_Modle_TurnRight(start)
 	--ÏòÓÒÐý×ª¿ªÊ¼
@@ -714,10 +714,10 @@ function TargetPet2_SetStateTooltip( )
 	end
 
 
-	Pet2_IceFastness:SetToolTip("±ù¹¥:"..tostring(iIceAttack).."#r±ù¿¹:"..tostring(iIceDefine).."#r¼õ±ù¿¹:"..tostring(iIceResistOther) );
-	Pet2_FireFastness:SetToolTip("»ð¹¥:"..tostring(iFireAttack).."#r»ð¿¹:"..tostring(iFireDefine).."#r¼õ»ð¿¹:"..tostring(iFireResistOther) );
-	Pet2_ThunderFastness:SetToolTip("Ðþ¹¥:"..tostring(iThunderAttack).."#rÐþ¿¹:"..tostring(iThunderDefine).."#r¼õÐþ¿¹:"..tostring(iThunderResistOther) );
-	Pet2_PoisonFastness:SetToolTip("¶¾¹¥:"..tostring(iPoisonAttack).."#r¶¾¿¹:"..tostring(iPoisonDefine).."#r¼õ¶¾¿¹:"..tostring(iPoisonResistOther) );
+	Pet2_IceFastness:SetToolTip("Bång công:"..tostring(iIceAttack).."#rBång Kháng:"..tostring(iIceDefine).."#rGiäm Bång Kháng:"..tostring(iIceResistOther) );
+	Pet2_FireFastness:SetToolTip("Höa công:"..tostring(iFireAttack).."#rHoä Kháng:"..tostring(iFireDefine).."#rGiäm Hoä Kháng:"..tostring(iFireResistOther) );
+	Pet2_ThunderFastness:SetToolTip("Huy«n công:"..tostring(iThunderAttack).."#rHuy«n Kháng:"..tostring(iThunderDefine).."#rGiäm Huy«n Kháng:"..tostring(iThunderResistOther) );
+	Pet2_PoisonFastness:SetToolTip("Ðµc công:"..tostring(iPoisonAttack).."#rÐµc Kháng:"..tostring(iPoisonDefine).."#rGiäm Ðµc Kháng:"..tostring(iPoisonResistOther) );
 
 end
 
@@ -738,10 +738,10 @@ function TargetPet2_ClearStateTooltip()
 	local iThunderResistOther	= 0;
 	local iPoisonResistOther	= 0;
 
-	Pet2_IceFastness:SetToolTip("±ù¹¥:"..tostring(iIceAttack).."#r±ù¿¹:"..tostring(iIceDefine).."#r¼õ±ù¿¹:"..tostring(iIceResistOther) );
-	Pet2_FireFastness:SetToolTip("»ð¹¥:"..tostring(iFireAttack).."#r»ð¿¹:"..tostring(iFireDefine).."#r¼õ»ð¿¹:"..tostring(iFireResistOther) );
-	Pet2_ThunderFastness:SetToolTip("Ðþ¹¥:"..tostring(iThunderAttack).."#rÐþ¿¹:"..tostring(iThunderDefine).."#r¼õÐþ¿¹:"..tostring(iThunderResistOther) );
-	Pet2_PoisonFastness:SetToolTip("¶¾¹¥:"..tostring(iPoisonAttack).."#r¶¾¿¹:"..tostring(iPoisonDefine).."#r¼õ¶¾¿¹:"..tostring(iPoisonResistOther) );
+	Pet2_IceFastness:SetToolTip("Bång công:"..tostring(iIceAttack).."#rBång Kháng:"..tostring(iIceDefine).."#rGiäm Bång Kháng:"..tostring(iIceResistOther) );
+	Pet2_FireFastness:SetToolTip("Höa công:"..tostring(iFireAttack).."#rHoä Kháng:"..tostring(iFireDefine).."#rGiäm Hoä Kháng:"..tostring(iFireResistOther) );
+	Pet2_ThunderFastness:SetToolTip("Huy«n công:"..tostring(iThunderAttack).."#rHuy«n Kháng:"..tostring(iThunderDefine).."#rGiäm Huy«n Kháng:"..tostring(iThunderResistOther) );
+	Pet2_PoisonFastness:SetToolTip("Ðµc công:"..tostring(iPoisonAttack).."#rÐµc Kháng:"..tostring(iPoisonDefine).."#rGiäm Ðµc Kháng:"..tostring(iPoisonResistOther) );
 
 end
 

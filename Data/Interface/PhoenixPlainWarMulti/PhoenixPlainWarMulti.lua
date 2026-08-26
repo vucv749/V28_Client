@@ -67,7 +67,7 @@ function PhoenixPlainWarMulti_TrimeName(sName, iLen)
 	end
 	if string.len(sName) > iLen * 2 then
 		sName = string.sub(sName,1,(iLen-1)*2)
-		sName = sName.."¡­"
+		sName = sName.."…"
 	end
 	return sName
 end
@@ -139,10 +139,10 @@ function PhoenixPlainWarMulti_GetData()
 						guildNamePrint = blink.."#G"..guildName1
 					end
 					if guildName2 ~= "" then
-						guildNamePrint = guildNamePrint.."£¬"..blink.."#G"..guildName2
+						guildNamePrint = guildNamePrint..","..blink.."#G"..guildName2
 					end
 					if guildName3 ~= "" then
-						guildNamePrint = guildNamePrint.."£¬"..blink.."#G"..guildName3
+						guildNamePrint = guildNamePrint..","..blink.."#G"..guildName3
 					end
 				end
 			--end

@@ -100,7 +100,7 @@ function OptionalGiftBox_Four_Update()
 	--¿Í»§¶Ë¶Á±í£¬¶ÁÈ¡Àñ°üÄÚÈİ
 	local tbl_isBind, tbl_totalNum, tbl_chooseNum, tbl_boxTitle, tbl_boxTips1, tbl_boxTips2 = LuaFnGetOptionalGiftBoxInfo(item_table_index)
 	if tbl_totalNum ~= g_OptionalGiftBox_Four_TotalNum or tbl_chooseNum > tbl_totalNum then
-		PushDebugMesage("Àñ°üÊı¾İ¶ÁÈ¡´íÎó")
+		PushDebugMesage("L­ Bao s¯ li®u Ğ§u Thü sai l¥m")
 		this:Hide()
 		return
 	end
@@ -158,7 +158,7 @@ end
 function OptionalGiftBox_Four_OnItemClicked(index)
 	
 	if g_OptionalGiftBox_Four_CurNeedNum == -1 or g_OptionalGiftBox_Four_CurSelNum == -1 then
-		PushDebugMessage("Àñ°üÊı¾İ¶ÁÈ¡´íÎó")
+		PushDebugMessage("L­ Bao s¯ li®u Ğ§u Thü sai l¥m")
 		return
 	end
 

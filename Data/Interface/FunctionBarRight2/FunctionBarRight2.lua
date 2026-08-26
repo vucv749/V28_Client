@@ -99,7 +99,7 @@ function FunctionBarRight2_OnEvent(event)
         --¾­µäµÄÐ¶ÔØË«ÈËÐÝÏÐ¶¯×÷°üºÍÇåÀí¹ýÆÚË«ÈËÐÝÏÐ¶¯×÷°üË³ÐòÊÇ MainMenuBar-MainMenuBar_2-FunctionBarRight-FunctionBarRight_2-MainMenuBar_4
         --¶ø»³¾Éµ±Ê±ÒÆÖ²¿ì½ÝÀ¸µÄÊ±ºò ÏÈÒÆÖ²ÁËMainMenuBar_4 Ö®ºó¸ôÁË¼¸ÄêÔÙÒÆÖ²µÄ FunctionBarRight2
         --ËùÒÔ»³¾ÉµÄË³ÐòÊÇ MainMenuBar-MainMenuBar_2-FunctionBarRight-MainMenuBar_4-FunctionBarRight2
-        --ÕâÑùÊÇÎªÁË²»Ó°Ïì»³¾ÉMainMenuBar_4Ö®Ç°µÄ¿ì½ÝÀ¸½çÃæÂß¼­ Ò²·ûºÏUNINSTALL_CHAT_ACTION_BARÊÂ¼þµÄÃüÃûÂß¼­ ÒÔºóÈô»¹ÓÐÐÂÔö¿ì½ÝÀ¸ »¹Ðè×¢Òâ´ËË³Ðò °´Ë³ÐòÍùºó¼Ó¾ÍÊÇÁË
+        -- âÑùÊÇÎªÁË²»Ó°Ïì»³¾ÉMainMenuBar_4Ö®Ç°µÄ¿ì½ÝÀ¸½çÃæÂß¼­ Ò²·ûºÏUNINSTALL_CHAT_ACTION_BARÊÂ¼þµÄÃüÃûÂß¼­ ÒÔºóÈô»¹ÓÐÐÂÔö¿ì½ÝÀ¸ »¹Ðè×¢Òâ´ËË³Ðò °´Ë³ÐòÍùºó¼Ó¾ÍÊÇÁË
     elseif event == "SHOW_TRANSFIGURATION_SKILL" then
         if arg0 == "2" then
             this:Hide()
@@ -128,7 +128,7 @@ function FunctionBarRight2_Clicked(nIndex)
 
         RIGHTBAR_2_BUTTONS[nIndex]:DoAction();
     else
-        PushDebugMessage("Äã²»ÄÜÕâÃ´×ö¡£")
+        PushDebugMessage("Nhî không th¬ làm nhß v§y.")
         return;
     end
 end
@@ -144,7 +144,7 @@ function FunctionBarRight2_UnInstallChatActionButton(index)
     local realActionID = DataPool:Get_RMB_ChatActionRealID(actionID);
     if realActionID > 0 and actionCount > 0 and actionMinIndex > 0 and actionType > 0 then
         local tmpItem = -1
-        -- Çå¿Õ¿ì½ÝÀ¸ÉÏÃ¿Ò»¸ö°üº¬¶¯×÷°ü°´Å¥µÄÐÅÏ¢
+        -- Çå¿ ¿ì½ÝÀ¸ÉÏÃ¿Ò»¸ö°üº¬¶¯×÷°ü°´Å¥µÄÐÅÏ¢
         for i = 1, RIGHTBAR_2_BUTTON_NUM do
             -- µÃµ½µ±Ç°ActionItemÔÚActionItem×Ü±íÖÐµÄ±àºÅ
             tmpItem = RIGHTBAR_2_BUTTONS[i + 60]:GetActionItem();
@@ -158,8 +158,8 @@ function FunctionBarRight2_UnInstallChatActionButton(index)
                         theAction = Talk:EnumChatMood(actionMinIndex + j - 2);
                     end
                     if (theAction:GetID() ~= 0) and (theAction:GetID() == tmpItem) then
-                        RIGHTBAR_2_BUTTONS[i + 60]:SetActionItem(-1); -- È¡Ïû°´Å¥ÉÏµÄActionItem
-                        DataPool:UnInstall_RMB_ChatAction_BarItem(i + 59); -- É¾³ýMainMenuBarÖÐ±£´æµÄActionItem¶ÔÓ¦¼ÇÂ¼£¨±àºÅ¶ÔÓ¦DragName£©
+                        RIGHTBAR_2_BUTTONS[i + 60]:SetActionItem(-1); -- ??????ActionItem
+                        DataPool:UnInstall_RMB_ChatAction_BarItem(i + 59); -- ??MainMenuBar????ActionItem????(????DragName)
                     end
                 end
             end
@@ -183,7 +183,7 @@ function FunctionBarRight2_ClearChatActionButton(index, nID, nData)
     local realActionID = DataPool:Get_RMB_ChatActionRealID(actionID);
     if realActionID > 0 and actionCount > 0 and actionMinIndex > 0 and actionType > 0 then
         local tmpItem = -1
-        -- Çå¿Õ¿ì½ÝÀ¸ÉÏÃ¿Ò»¸ö°üº¬¶¯×÷°ü°´Å¥µÄÐÅÏ¢
+        -- Çå¿ ¿ì½ÝÀ¸ÉÏÃ¿Ò»¸ö°üº¬¶¯×÷°ü°´Å¥µÄÐÅÏ¢
         for i = 1, RIGHTBAR_2_BUTTON_NUM do
             -- µÃµ½µ±Ç°ActionItemÔÚActionItem×Ü±íÖÐµÄ±àºÅ
             tmpItem = RIGHTBAR_2_BUTTONS[i + 60]:GetActionItem();
@@ -197,8 +197,8 @@ function FunctionBarRight2_ClearChatActionButton(index, nID, nData)
                         theAction = Talk:EnumChatMood(actionMinIndex + j - 2);
                     end
                     if (theAction:GetID() ~= 0) and (theAction:GetID() == tmpItem) then
-                        RIGHTBAR_2_BUTTONS[i + 60]:SetActionItem(-1); -- È¡Ïû°´Å¥ÉÏµÄActionItem
-                        DataPool:UnInstall_RMB_ChatAction_BarItem(i + 59); -- É¾³ýMainMenuBarÖÐ±£´æµÄActionItem¶ÔÓ¦¼ÇÂ¼£¨±àºÅ¶ÔÓ¦DragName£©
+                        RIGHTBAR_2_BUTTONS[i + 60]:SetActionItem(-1); -- ??????ActionItem
+                        DataPool:UnInstall_RMB_ChatAction_BarItem(i + 59); -- ??MainMenuBar????ActionItem????(????DragName)
                     end
                 end
             end

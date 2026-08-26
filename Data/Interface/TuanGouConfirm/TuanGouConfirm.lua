@@ -7,7 +7,7 @@ local g_UnifiedPosition
 local objCared = -1
 local targetId = -1
 
-local g_CloseTick = 5--5秒倒计时
+local g_CloseTick = 5--5????
 local g_guidLeaveMem = 0
 local g_bReceiveCloseUIMsg = 0
 
@@ -16,9 +16,9 @@ local g_memberlist={}
 
 local g_StateImage=
 {
-	[0] = "set:TuanGou image:Waiting",--等待
-	[1] = "set:TuanGou image:OK",--同意
-	[2] = "set:TuanGou image:Cancel",--拒绝
+	[0] = "set:TuanGou image:Waiting",--??
+	[1] = "set:TuanGou image:OK",--??
+	[2] = "set:TuanGou image:Cancel",--??
 }
 
 --***********************************************************************************************************************************************
@@ -96,7 +96,7 @@ end
 -- 刷新界面
 --************************************************************************************************************************************************
 function TuanGouConfirm_Update()
-	--成员清空
+	--成员清繝
 	g_memberlist={}
 	-- 得到队员的个数
 	local iMemCount = DataPool:GetTeamMemberCount()
@@ -108,9 +108,9 @@ function TuanGouConfirm_Update()
 		--状态
 		local state = 0
 		if isLeader==1 then
-			state = 1--已确认
+			state = 1--???
 		else
-			state = 0--等待中
+			state = 0--???
 		end
 		g_CtrlList[i].stat:SetProperty("Image",g_StateImage[state])
 		--插入数据
@@ -121,12 +121,12 @@ function TuanGouConfirm_Update()
 		--队长
 		TuanGouConfirm_Text:Show()
 		TuanGouConfirm_Text:SetText("#{SZTG_230825_22}")
-		TuanGouConfirm_QuerenPintuan:Hide()--参与拼团
-		TuanGouConfirm_FaqiPintuan:Hide()--队长确认拼团
+		TuanGouConfirm_QuerenPintuan:Hide()--????
+		TuanGouConfirm_FaqiPintuan:Hide()--??????
 	else
 		--队员
-		TuanGouConfirm_QuerenPintuan:Show()--参与拼团
-		TuanGouConfirm_FaqiPintuan:Hide()--队长确认拼团
+		TuanGouConfirm_QuerenPintuan:Show()--????
+		TuanGouConfirm_FaqiPintuan:Hide()--??????
 		TuanGouConfirm_Text:SetText("")
 		TuanGouConfirm_Text:Hide()
 	end
@@ -152,8 +152,8 @@ function TuanGouConfirm_EnterUpdate(memguid)
 		--得到队员的详细信息
 		if memguid==g_memberlist[i].charguid then
 			--状态更新
-			g_memberlist[i].state = 1--已确认
-			g_CtrlList[i].stat:SetProperty("Image",g_StateImage[1])--已确认
+			g_memberlist[i].state = 1--???
+			g_CtrlList[i].stat:SetProperty("Image",g_StateImage[1])--???
 			break
 		end
 	end
@@ -168,8 +168,8 @@ function TuanGouConfirm_EnterUpdate(memguid)
 		end
 		--全部参与拼团
 		if nCount == iMemCount then
-			TuanGouConfirm_FaqiPintuan:Show()--队长确认拼团
-			TuanGouConfirm_QuerenPintuan:Hide()--参与拼团
+			TuanGouConfirm_FaqiPintuan:Show()--??????
+			TuanGouConfirm_QuerenPintuan:Hide()--????
 			TuanGouConfirm_Text:SetText("")
 			TuanGouConfirm_Text:Hide()
 		end
@@ -177,8 +177,8 @@ function TuanGouConfirm_EnterUpdate(memguid)
 		--参与拼团的队员显隐按钮和文本
 		TuanGouConfirm_Text:Show()
 		TuanGouConfirm_Text:SetText("#{SZTG_230825_21}")
-		TuanGouConfirm_QuerenPintuan:Hide()--参与拼团
-		TuanGouConfirm_FaqiPintuan:Hide()--队长确认拼团
+		TuanGouConfirm_QuerenPintuan:Hide()--????
+		TuanGouConfirm_FaqiPintuan:Hide()--??????
 	end
 end
 
@@ -191,8 +191,8 @@ function TuanGouConfirm_LeaveUpdate()
 		--得到队员的详细信息
 		if g_guidLeaveMem==g_memberlist[i].charguid then
 			--状态更新
-			g_memberlist[i].state = 2--已确认
-			g_CtrlList[i].stat:SetProperty("Image",g_StateImage[2])--已确认
+			g_memberlist[i].state = 2--???
+			g_CtrlList[i].stat:SetProperty("Image",g_StateImage[2])--???
 			return
 		end
 	end
@@ -211,8 +211,8 @@ function TuanGouConfirmCloseTick()
 	TuanGouConfirm_Text:Show()
 	local szText = ScriptGlobal_Format("#{SZTG_230825_24}", g_CloseTick)
 	TuanGouConfirm_Text:SetText(szText)
-	TuanGouConfirm_QuerenPintuan:Hide()--参与拼团
-	TuanGouConfirm_FaqiPintuan:Hide()--队长确认拼团
+	TuanGouConfirm_QuerenPintuan:Hide()--????
+	TuanGouConfirm_FaqiPintuan:Hide()--??????
 	--更新倒计时
 	g_CloseTick = g_CloseTick-1
 end
@@ -228,7 +228,7 @@ end
 -- 清数据
 --***********************************************************************************************************************************************
 function TuanGouConfirm_OnHiden()
-	--关闭计时器
+	--关睜计时器
 	KillTimer("TuanGouConfirmCloseTick()")
 	--取消关心
 	this:CareObject(objCared, 0, "TuanGouConfirm")

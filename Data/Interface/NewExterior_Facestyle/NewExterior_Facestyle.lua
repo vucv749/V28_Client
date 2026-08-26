@@ -2,10 +2,10 @@
 local g_NewExterior_Facestyle_UnifiedPosition = ""
 
 local EXTERIORFILTTING_TOTALKIND = 0;
-local g_TargetExteriorIndex = 0		--¶¨Î»µÄÍâ¹ÛË÷Òý£¬´Ó1¿ªÊ¼
-local g_TargetExteriorID = 0			--¶¨Î»µÄÍâ¹ÛID
+local g_TargetExteriorIndex = 0		--???????,?1??
+local g_TargetExteriorID = 0			--?????ID
 
-local g_CurSelExteriorID = 0			--µ±Ç°Ñ¡ÔñµÄÍâ¹ÛID£¬´Ó1¿ªÊ¼
+local g_CurSelExteriorID = 0			--???????ID,?1??
 
 local g_NeedChangeScrollSize = 1
 
@@ -13,13 +13,13 @@ local g_Distance = 1
 local g_Distance_Ori = 4
 local g_Distance_Max = 4
 local g_InitList = 0
-local g_ExteriorType = 0 --Á³ÐÍ
+local g_ExteriorType = 0 --??
 local g_MaxBarNum = 0
 local g_BarList = {}
 
-local g_CameraHeight = 1     --ÉãÓ°»ú¸ß¶È
-local g_CameraDistance = 2   --ÉãÓ°»ú¾àÀë
-local g_CameraPitch = 3      --ÉãÓ°»ú½Ç¶È
+local g_CameraHeight = 1     --?????
+local g_CameraDistance = 2   --?????
+local g_CameraPitch = 3      --?????
 local g_CameraPosition =
 {
 	--Å®ÐÔÏà¹ØÎ»ÖÃ
@@ -42,12 +42,12 @@ local g_CameraPosition =
 
 local g_PetSoulLevelLimit = 85
 
-local g_OrnamentState				= {		-- ×´Ì¬
-	INVALID	= 0,							-- ÎÞÐ§
-	EMPTY	= 1,							-- ¿ÕÏÐ
-	TIME	= 2,							-- ÏÞÊ±
-	TIMEOUT	= 3,							-- ¹ýÆÚ
-	FOREVER	= 4,							-- ÓÀ¾Ã
+local g_OrnamentState				= {		-- ??
+	INVALID	= 0,							-- ??
+	EMPTY	= 1,							-- ??
+	TIME	= 2,							-- ??
+	TIMEOUT	= 3,							-- ??
+	FOREVER	= 4,							-- ??
 }
 --=========
 --PreLoad==
@@ -116,9 +116,9 @@ function NewExterior_Facestyle_OnEvent(event)
 		return
 	end
 	
-	if event == "OPEN_STALL_SALE"			-- ¿ªÊ¼°ÚÌ¯£¬»¹Ô­ÊÔ´©
-		or event == "PROGRESSBAR_SHOW"		-- ¶Á½ø¶ÈÌõÖÐ£¬»¹Ô­ÊÔ´©
-		or event == "MODELID_CHANGE" 		-- ±äÉí ¹Ø±Õ½çÃæ
+	if event == "OPEN_STALL_SALE"			-- ????,????
+		or event == "PROGRESSBAR_SHOW"		-- ?????,????
+		or event == "MODELID_CHANGE" 		-- ?? ????
 		then
 		NewExterior_Facestyle_CloseClick()
 		return
@@ -225,7 +225,7 @@ function NewExterior_Facestyle_OnEvent(event)
 	end
 	
 		-- FakeObjectÄ£ÐÍ½çÃæ»¥³â
-	if ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then   --Ê±×°Ô¤ÀÀ
+	if ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then   --????
 		if (this:IsVisible()) then
 			this:Hide()
 			return
@@ -800,7 +800,7 @@ function NewExterior_Facestyle_RemovePreview()
 end
 
 function NewExterior_Facestyle_Goto()
-	AutoRuntoTargetExWithName(252, 130, 0, "ÑÕÈçÓñ")
+	AutoRuntoTargetExWithName(252, 130, 0, "Nhan Nhß Ng÷c")
 end
 
 function NewExterior_Facestyle_CloseClick()

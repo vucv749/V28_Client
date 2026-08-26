@@ -8,7 +8,7 @@ local Need_Item_Count = 0
 local Bore_Count=0
 local objCared = -1;
 local MAX_OBJ_DISTANCE = 3.0;
-local STILE_TYPE = -1 --´ò¿×ÀàĞÍ£¬1µã½ğ£¬2º®Óñ
+local STILE_TYPE = -1 --????,1??,2??
 
 local x311200_Stiletto_four_80_ID = {
 	--ĞÂÔö°üÀ¨80~89¼¶µÄÊÖ¹¤×°±¸¡¢Ì××°£¨Ê¦ÃÅ¡¢ÇØ»Ê¡¢Ğşê»£©¡¢ÉñÆ÷ 
@@ -24,7 +24,7 @@ local x311200_Stiletto_four_80_ID = {
 	10400075,10402075,10404072,10405071,10412081,10412083,10413084,10413086,10422122,10422124,
 	10423047,10423049,10510092,10510093,10510094,10510095,10511094,10511095,10512090,10512091,
 	10514101,10514102,10514103,10514104,10522099,10522100,10523099,10523100,
-	10306004,10306006,10306008,--ĞÂÃÅÅÉÂüÍÓÉñÆ÷
+	10306004,10306006,10306008,--???????
 	10206022,10206023,10206024,
 }
 local x311200_Stiletto_four_ID = {
@@ -76,23 +76,23 @@ local x311200_Stiletto_four_ID = {
 																	10305110,10305111,10305203,10305204,10305205,10305206,10305207,10305208,10305209,10305210,
 																	10305211,
 									--likun 2009-8-26
-									10300007,	--³àÑæ¾ÅÎÆµ¶	96
-									10301001,	--Õ¶ÓÇ¶Ï³îÇ¹	96
-									10301199,	--ŞÄÌìÆÆĞ°ÕÈ	96
-									10302007,	--º¬¹âÅªÓ°½£	96
-									10302009,	--ÍòØğÁúÔ¨½£	96
-									10303001,	--×ª»êÃğÆÇ¹³	96
-									10304007,	--À×ÃùÀë»ğÉÈ	96
-									10304009,	--À×ÃùÀë»ğÉÈ	96
-									10305007,	--ËéÇéÎíÓ°»·	96
-									10305009,	--ÌìĞÇÒ«Ñô»·	96
+									10300007,	--?????	96
+									10301001,	--?????	96
+									10301199,	--?????	96
+									10302007,	--?????	96
+									10302009,	--?????	96
+									10303001,	--?????	96
+									10304007,	--?????	96
+									10304009,	--?????	96
+									10305007,	--?????	96
+									10305009,	--?????	96
 									--zhanglei 2009-9-4
-									10156001, --Îä»ê£ºÁğÁ§Ñæ
-									10156002, --Îä»ê£ºÓùÑşÅÌ
+									10156001, --??:???
+									10156002, --??:???
 									--°ó¶¨Îä»ê
 									10156003,
 									10156004,
-									--ÒÔÏÂÎª¹ÃËÕĞÂ×°±¸
+									--ÒÔÏÂÎª¹ÃË ĞÂ×°±¸
 									10510118,	10510119,	10511119,	10512118,	10512119,	10513118,10513119,	
                   10514109, 10515109, 10521109,	10522109,	10523109, 10552118,10553118,
                    --Ä½ÈİÉñÆ÷
@@ -162,7 +162,7 @@ function Stiletto_Four_OnEvent(event)
 			end
 			BeginCareObject_Stiletto_Four(objCared)
 			
-	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 091016141) then	 --´ò¿×Ê§°Üºó×°±¸ÈÔÈ»±£ÁôÔÚ½çÃæÖĞ  fsy 09/10/16 #57883
+	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 091016141) then	 --???????????????  fsy 09/10/16 #57883
 			local idBagPos = Get_XParam_INT(0);
 			Stiletto_Update(1,idBagPos);
 			Resume_Equip_Stiletto_Four(2);
@@ -172,7 +172,7 @@ function Stiletto_Four_OnEvent(event)
 			return;
 		end
 		
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			
 			--È¡Ïû¹ØĞÄ
@@ -246,7 +246,7 @@ function Stiletto_Four_Update(pos1,pos0)
 	pos_ui		 = tonumber(pos1)
 
 	local theAction = EnumAction(pos_packet, "packageitem");
-	if pos_ui == 1 then  --·ÅÈëÎïÆ·Ê±
+	if pos_ui == 1 then  --?????
 		if theAction:GetID() ~= 0 then
 			
 			local Bore_Count1 = 0;
@@ -330,9 +330,9 @@ function Stiletto_Four_Update(pos1,pos0)
 			return;
 		end
 		Stiletto_Four_Money : SetProperty("MoneyNumber", tostring(Need_Money));
-		Stiletto_Four_State : SetText("µ±Ç°°¼²ÛÊı:"..Bore_Count..";¿ÉÒÔÔö¼Ó°¼²ÛÊı:"..tostring(4-Bore_Count))
+		Stiletto_Four_State : SetText("Trß¾c m£t Ao Tào S±:"..Bore_Count.."; Có th¬ gia tång Ao Tào S±:"..tostring(4-Bore_Count))
 		
-	elseif pos_ui == 2 then --µã½ğÖ®¼å»òº®Óñ¾«´â
+	elseif pos_ui == 2 then --?????????
 		
 		--local Item_Class = PlayerPackage : GetItemSubTableIndex(pos_packet,0)
 	--	local Item_Quality = PlayerPackage : GetItemSubTableIndex(pos_packet,1)
@@ -349,17 +349,17 @@ function Stiletto_Four_Update(pos1,pos0)
 			local itemindex = PlayerPackage : GetItemTableIndex(pos_packet)
 						
 			if STILE_TYPE == 1 then
-				if itemindex ~= 20109101 then  --add:lby 20080523Ö»ÄÜ·ÅÈëµã½ğÖ®¼ı
+				if itemindex ~= 20109101 then  --add:lby 20080523????????
 	 				PushDebugMessage("#{XQC_20080509_05}")
 	 				return
 	  		end
 			elseif STILE_TYPE == 2 then
-				if itemindex ~= 20310111 then  --add:hukai Ö»ÄÜ·ÅÈëº®Óñ¾«´â
+				if itemindex ~= 20310111 then  --add:hukai ????????
 	 				PushDebugMessage("#{JCDK_80905_05}")
 	 				return
 	  		end
 			else
-				PushDebugMessage("´íÎóµÄÏûºÄÀàĞÍ¡£"..STILE_TYPE)
+				PushDebugMessage("Sai l¥m nghiêm tr÷ng, tiêu hao loÕi hình."..STILE_TYPE)
 	 			return
 			end
 	  
@@ -382,7 +382,7 @@ end
 
 function Stiletto_Four_Buttons_Clicked()
 	if MATERIAL_QUALITY == -1 then
-		PushDebugMessage("Çë·ÅÈë´ò¿×²ÄÁÏ")
+		PushDebugMessage("Thïnh ğ¬ vào khoan tài li®u")
 		return
 	end
 	if EQUIP_QUALITY ~= -1 then
@@ -443,7 +443,7 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØĞÄNPC£¬
---ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 --Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function BeginCareObject_Stiletto_Four(objCaredId)

@@ -20,8 +20,8 @@ local PARTY_MP = {};
 local PARTY_FRAME = {};
 local PARTY_NAME  = {};
 local Portrait_ToolTips = {};
-local UnLink_flag = {};					-- µôÏß±ê¼Ç
-local Porttrait_Mask = {};			-- »ÒµôÃÉ×Ó
+local UnLink_flag = {};					-- ????
+local Porttrait_Mask = {};			-- ????
 
 local RatioFakeObjNeedUpdate = 1;
 
@@ -45,11 +45,11 @@ local sex;
 local PARTY_BUFF_MAX = 6;
 local PARTY_IMPACT_CTL = {};
 
-local PARTY_IMPACT_NUM = 30; --²éÑ¯Ê±Òª´Ó20¸öÀïÃæÑ¡³öÓÅÏÈ¼¶×î¸ßµÄ6¸ö
+local PARTY_IMPACT_NUM = 30; --?????20???????????6?
 
--- ¶ÓÓÑ³öÕ½ÕäÊŞ°´Å¥
+-- ¶ÓÓÑ³ö ½ äÊŞ°´Å¥
 local Team_Member_Pet_Button = {};
--- ¶ÓÓÑµÄ³öÕ½ÕäÊŞÏÔÊ¾ĞÅÏ¢
+-- ¶ÓÓÑµÄ³ö ½ äÊŞÏÔÊ¾ĞÅÏ¢
 local PetPortrait_ToolTips = {};
 
 local Raid_Flags = {}
@@ -62,11 +62,11 @@ local Raid_Flags = {}
 function PartyFrame_PreLoad()
 
 	--AxTrace( 0,0, "partyframe_Preload");
-	this:RegisterEvent("TEAM_ENTER_MEMBER");				-- ×¢²á¶ÓÔ±¼ÓÈëÊÂ¼ş
-	this:RegisterEvent("TEAM_UPDATE_MEMBER");				-- ×¢²á¶ÓÔ±¸üĞÂÊÂ¼ş
-	this:RegisterEvent("TEAM_HIDE_ALL_PLAYER");			-- Òş²ØËùÓĞ¶ÓÔ±ÊÂ¼ş
-	this:RegisterEvent("TEAM_REFRESH_DATA");				-- ¸üĞÂÄ³Ò»¸ö¶ÓÔ±µÄÊÂ¼ş
-	this:RegisterEvent("ON_TEAM_UPDATE_PARTYFRAME");			-- ¸üĞÂPartyFrame½çÃæ			add by WTT
+	this:RegisterEvent("TEAM_ENTER_MEMBER");				-- ????????
+	this:RegisterEvent("TEAM_UPDATE_MEMBER");				-- ????????
+	this:RegisterEvent("TEAM_HIDE_ALL_PLAYER");			-- ????????
+	this:RegisterEvent("TEAM_REFRESH_DATA");				-- ??????????
+	this:RegisterEvent("ON_TEAM_UPDATE_PARTYFRAME");			-- ??PartyFrame??			add by WTT
 
 	this:RegisterEvent("RAID_UPDATE_SQUAD_FRAME",true)
 	this:RegisterEvent("RAID_CLOSE_SQUAD_FRAME",false)
@@ -118,7 +118,7 @@ function PartyFrame_OnLoad()
 	HP_Text_Tip[4] = PartyFrame_HP_Text4;
 	HP_Text_Tip[5] = PartyFrame_HP_Text5;
 
-	--2006Äê5ÔÂ20ÈÕ, ĞŞ¸ÄµôÏßĞÅÏ¢¹¦ÄÜ
+	--2006Äê5ÔÂ20È , ĞŞ¸ÄµôÏßĞÅÏ¢¹¦ÄÜ
 	UnLink_flag[1] = Team_Leader_Flag2;
 	UnLink_flag[2] = Team_Leader2_Flag2;
 	UnLink_flag[3] = Team_Leader3_Flag2;
@@ -126,7 +126,7 @@ function PartyFrame_OnLoad()
 	UnLink_flag[5] = Team_Leader5_Flag2;
 
 
-	--2006Äê5ÔÂ20ÈÕ, ĞŞ¸ÄËÀÍöÃÉ×Ó
+	--2006Äê5ÔÂ20È , ĞŞ¸ÄËÀÍöÃÉ×Ó
 	Porttrait_Mask[1] = Portrait_Icon1_Mask;
 	Porttrait_Mask[2] = Portrait_Icon2_Mask;
 	Porttrait_Mask[3] = Portrait_Icon3_Mask;
@@ -181,7 +181,7 @@ function PartyFrame_OnLoad()
 	Team_Leader4_Flag:Hide();
 	Team_Leader5_Flag:Hide();
 
-	-- µÚ1ÖÁ5ºÅ¶ÓÓÑµÄ³öÕ½³èÎï°´Å¥
+	-- µÚ1ÖÁ5ºÅ¶ÓÓÑµÄ³ö ½³èÎï°´Å¥
 	-- add by WTT
 	Team_Member_Pet_Button[1] = Team_Pet_Button;
 	Team_Member_Pet_Button[2] = Team_Pet2_Button;
@@ -189,7 +189,7 @@ function PartyFrame_OnLoad()
 	Team_Member_Pet_Button[4] = Team_Pet4_Button;
 	Team_Member_Pet_Button[5] = Team_Pet5_Button;
 
-	-- ÕäÊŞÍ·ÏñÉÏµÄ¸¡¶¯ĞÅÏ¢
+	--  äÊŞÍ·ÏñÉÏµÄ¸¡¶¯ĞÅÏ¢
 	-- add by WTT
 	PetPortrait_ToolTips[1]= Team_Pet_Button;
 	PetPortrait_ToolTips[2]= Team_Pet2_Button;
@@ -299,7 +299,7 @@ function PartyFrame_UpdatePage(index)
 	--ÏÔÊ¾ĞÂ¼ÓÈë¶ÓÓÑµÄÍ·Ïñ
 	PARTYFRAMEs[index]:Show();
 
-	--ÏÔÊ¾ĞÂ¼ÓÈë¶ÓÓÑµÄÕäÊŞ°´Å¥
+	--ÏÔÊ¾ĞÂ¼ÓÈë¶ÓÓÑµÄ äÊŞ°´Å¥
 	PetButton_Show (index);
 
 	--AxTrace( 0,0, "ÏÔÊ¾¶ÓÓÑÍê±Ï!" .. tostring(index));
@@ -405,8 +405,8 @@ function Show_Team_Member_Info_Func(index)
 		Show_Leader_Flag_Func();
 
 		-- ÉèÖÃtooltips
-		local bDead = "·ñ";
-		local bDeadLink = "·ñ";
+		local bDead = "Sai";
+		local bDeadLink = "Sai";
 
 		Portrait_ToolTips[index]:SetProperty("Image", "set:PlayerFrame_Icon image:Icon_xiaoyao");
 		Portrait_ToolTips[index]:SetProperty("Image", strIconIndex);
@@ -422,9 +422,9 @@ function Show_Team_Member_Info_Func(index)
 		--	Portrait_ToolTips[index]:SetProperty("Image", "set:TeamFrame5 image:Downline_Icon");
 		--end
 
-		AxTrace( 0,0, "µÃµ½¶ÓÓÑĞÅÏ¢Íê±Ï!" .. tostring(index));
+		AxTrace( 0,0, "Nh§n ğßşc Ğµi Hæu tin tÑc xong!" .. tostring(index));
 		if(0 ~= Dead) then
-			bDead = "ÊÇ"
+			bDead = "Ğúng"
 			--Portrait_ToolTips[tonumber(index)]:Disable();
 			Porttrait_Mask[index]:Show();
 		else
@@ -438,7 +438,7 @@ function Show_Team_Member_Info_Func(index)
 			UnLink_flag[tonumber(index)]:Hide();
 		else
 
-			bDeadLink = "ÊÇ"
+			bDeadLink = "Ğúng"
 			UnLink_flag[tonumber(index)]:Show();
 		end
 
@@ -464,45 +464,45 @@ function Show_Team_Member_Info_Func(index)
 		local strMenPai = "";
 		-- µÃµ½ÃÅÅÉÃû³Æ.
 		if(0 == Fammily) then
-			strMenPai = "ÉÙÁÖ";
+			strMenPai = "Thiªu Lâm";
 
 		elseif(1 == Fammily) then
-			strMenPai = "Ã÷½Ì";
+			strMenPai = "Minh Giáo";
 
 		elseif(2 == Fammily) then
-			strMenPai = "Ø¤°ï";
+			strMenPai = "Cái Bang";
 
 		elseif(3 == Fammily) then
-			strMenPai = "Îäµ±";
+			strMenPai = "Võ Ğang";
 
 		elseif(4 == Fammily) then
-			strMenPai = "¶ëáÒ";
+			strMenPai = "Nga Mi";
 
 		elseif(5 == Fammily) then
-			strMenPai = "ĞÇËŞ";
+			strMenPai = "Tinh Túc";
 
 		elseif(6 == Fammily) then
-			strMenPai = "ÌìÁú";
+			strMenPai = "Thiên Long";
 
 		elseif(7 == Fammily) then
-			strMenPai = "ÌìÉ½";
+			strMenPai = "Thiên S½n";
 
 		elseif(8 == Fammily) then
-			strMenPai = "åĞÒ£";
+			strMenPai = "Tiêu dao";
 
 		elseif(9 == Fammily) then
-			strMenPai = "ÎŞÃÅÅÉ";
+			strMenPai = "Tñ do";
 
 		elseif(10== Fammily) then
-			strMenPai = "ÂüÍÓÉ½×¯";
+			strMenPai = "MÕn Ğà S½n Trang";
 
 		end
 
 		local strInfo = tostring(MemberName)
 		      					.. "\n"
 										.. tostring(strMenPai).."  "
-										.. tostring(Level).. "¼¶"
-										.. "\nËùÔÚµØ£º"
+										.. tostring(Level).. "C¤p"
+										.. "\\nch², n½i Ğ¸a:"
 										.. ScenceName;
 
 
@@ -511,7 +511,7 @@ function Show_Team_Member_Info_Func(index)
 		if(-1 == HPValue) then
 
 			-- ¿ç³¡¾°µÄÇé¿ö¡£
-			PARTY_HP[index]:SetToolTip("Î´Öª");
+			PARTY_HP[index]:SetToolTip("Không biªt");
 		else
 
 			PARTY_HP[index]:SetToolTip(tostring(HPValue).."/"..tostring(HPMax));
@@ -520,7 +520,7 @@ function Show_Team_Member_Info_Func(index)
 		PartyFrame_ClerBufInfo(index);
 		PartyFrame_UpdateBufInfo(index);
 
-		-- ÏÔÊ¾¶ÓÔ±³öÕ½ÕäÊŞÍ¼±ê
+		-- ÏÔÊ¾¶ÓÔ±³ö ½ äÊŞÍ¼±ê
 		PetButton_Show(index);
 
 end
@@ -555,7 +555,7 @@ function Refresh_All_Member_Info_Func()
 				-- ÏÔÊ¾¶ÓÔ±µÄÏêÏ¸ĞÅÏ¢
 				Show_Team_Member_Info_Func(index);
 
-				-- ÏÔÊ¾¶ÓÔ±µÄÕäÊŞ°´Å¥
+				-- ÏÔÊ¾¶ÓÔ±µÄ äÊŞ°´Å¥
 				PetButton_Show(index);
 
 		end
@@ -671,33 +671,33 @@ end
 function PartyFrame_UpdateBufInfo( idx )
 	if(idx < 1 or idx > 5) then return; end
 	local nBuffNum = DataPool:GetTeamMemBufNum(idx);
-	local nFindNum = nBuffNum --ÔÚĞŞÕınBuffNumÖ®Ç°»ñµÃËüµÄÖµ
+	local nFindNum = nBuffNum --???nBuffNum???????
 	if(nFindNum > PARTY_IMPACT_NUM) then nFindNum = PARTY_IMPACT_NUM; end
 	if(nBuffNum > PARTY_BUFF_MAX) then nBuffNum = PARTY_BUFF_MAX; end
 
 	--´Ó×î¶à20¸öÀïÃæÑ¡È¡6¸ö
-	local BUFFINDEX_LIST = {} --Õâ¸ölist×ö¾Ö²¿±äÁ¿¼´¿É
+	local BUFFINDEX_LIST = {} --??list???????
 	do
 		for jj=1,PARTY_BUFF_MAX do
 			BUFFINDEX_LIST[jj] = -1;
 		end
 		
 		local BuffPriority = {}
-		for jj=1,nFindNum do --×î´ó20
+		for jj=1,nFindNum do --??20
 			BuffPriority[jj] = {}
 			BuffPriority[jj].key = jj-1;
 			BuffPriority[jj].val = DataPool:GetTeamMemBufPriority(idx, jj-1);
 		end
 		
-		for jj=nFindNum,1,-1 do --×î´ó20
-			for kk=1,jj-1 do --×î´ó20
+		for jj=nFindNum,1,-1 do --??20
+			for kk=1,jj-1 do --??20
 				if BuffPriority[kk].val < BuffPriority[kk+1].val then
 					BuffPriority[kk],BuffPriority[kk+1] = BuffPriority[kk+1],BuffPriority[kk]
 				end
 			end
 		end
 		
-		for jj=1,nBuffNum do --×î´ó6
+		for jj=1,nBuffNum do --??6
 			BUFFINDEX_LIST[jj] = BuffPriority[jj].key;
 		end
 	end
@@ -731,13 +731,13 @@ end
 
 --***********************************************************************************************************************************************
 --
--- ÏÔÊ¾¶ÓÔ±µÄÕäÊŞ°´Å¥
+-- ÏÔÊ¾¶ÓÔ±µÄ äÊŞ°´Å¥
 -- add by WTT
 --
 --************************************************************************************************************************************************
 function PetButton_Show(UIIndex)
 
-	-- ÏÔÊ¾ÕäÊŞ°´Å¥
+	-- ÏÔÊ¾ äÊŞ°´Å¥
 	Team_Member_Pet_Button[UIIndex]:Show();
 
 	return
@@ -746,19 +746,19 @@ end
 
 --***********************************************************************************************************************************************
 --
--- Êó±ê×ó¼üµ¥»÷£ºÑ¡ÖĞ¶ÓÓÑµÄµ±Ç°³öÕ½ÕäÊŞ
+-- Êó±ê×ó¼üµ¥»÷£ºÑ¡ÖĞ¶ÓÓÑµÄµ±Ç°³ö ½ äÊŞ
 -- add by WTT
 --
 --************************************************************************************************************************************************
 function PetButton_SetFightPetAsTarget(UIIndex)
 
-	-- Ê×ÏÈÍ¨¹ıUIË÷ÒıÀ´Ñ¡ÖĞ¶ÓÓÑµÄÕäÊŞ×÷Îªµ±Ç°Ñ¡ÖĞÄ¿±ê
+	-- Ê×ÏÈÍ¨¹ıUIË÷ÒıÀ´Ñ¡ÖĞ¶ÓÓÑµÄ äÊŞ×÷Îªµ±Ç°Ñ¡ÖĞÄ¿±ê
 	local iFindFightingPet = DataPool:SelectTeamMemPetAsTargetByUIIndex(UIIndex);
 
-	-- Èç¹ûÕÒ²»µ½¶ÓÓÑµÄ³öÕ½ÕäÊŞ
+	-- Èç¹û Ò²»µ½¶ÓÓÑµÄ³ö ½ äÊŞ
 	if (iFindFightingPet == -1) then
 
-		PushDebugMessage ("#{ZSAN_90311_2}");			-- ¶ÓÓÑ²»ÔÚ¸½½ü£¬»òÕßÎŞ³öÕ½ÕäÊŞ£¬ÎŞ·¨²é¿´ÕäÊŞĞÅÏ¢¡£
+		PushDebugMessage ("#{ZSAN_90311_2}");			-- ??????,???????,?????????
 
 	end
 
@@ -769,24 +769,24 @@ end
 
 --***********************************************************************************************************************************************
 --
--- Êó±êÓÒ¼üµ¥»÷£º´ò¿ª¶ÓÓÑµÄ³öÕ½ÕäÊŞµÄÑ¡Ïî²Ëµ¥
+-- Êó±êÓÒ¼üµ¥»÷£º´ò¿ª¶ÓÓÑµÄ³ö ½ äÊŞµÄÑ¡Ïî²Ëµ¥
 -- add by WTT
 --
 --************************************************************************************************************************************************
 function PetButton_ToggleTargetPetPage(UIIndex)
 
-	-- Ê×ÏÈÍ¨¹ıUIË÷ÒıÀ´Ñ¡ÖĞ¶ÓÓÑµÄÕäÊŞ×÷Îªµ±Ç°Ñ¡ÖĞÄ¿±ê
+	-- Ê×ÏÈÍ¨¹ıUIË÷ÒıÀ´Ñ¡ÖĞ¶ÓÓÑµÄ äÊŞ×÷Îªµ±Ç°Ñ¡ÖĞÄ¿±ê
 	local iFindFightingPet = DataPool:SelectTeamMemPetAsTargetByUIIndex(UIIndex);
 
-	-- Èç¹ûÕÒ²»µ½¶ÓÓÑµÄ³öÕ½ÕäÊŞ
+	-- Èç¹û Ò²»µ½¶ÓÓÑµÄ³ö ½ äÊŞ
 	if (iFindFightingPet == -1) then
 
-		PushDebugMessage ("#{ZSAN_90311_2}");			-- ¶ÓÓÑ²»ÔÚ¸½½ü£¬»òÕßÎŞ³öÕ½ÕäÊŞ£¬ÎŞ·¨²é¿´ÕäÊŞĞÅÏ¢¡£
+		PushDebugMessage ("#{ZSAN_90311_2}");			-- ??????,???????,?????????
 
-	-- Èç¹ûÄÜÕÒµ½¶ÓÓÑµÄ³öÕ½ÕäÊŞ
+	-- Èç¹ûÄÜ Òµ½¶ÓÓÑµÄ³ö ½ äÊŞ
 	else
 
-		-- µ¯³ö¶ÓÓÑÕäÊŞ°´Å¥µÄÓÒ¼ü²Ëµ¥
+		-- µ¯³ö¶ÓÓÑ äÊŞ°´Å¥µÄÓÒ¼ü²Ëµ¥
 		Show_Team_Member_Pet_Menu ();
 
 	end
@@ -852,35 +852,35 @@ function Refresh_All_RaidMember_Info()
 
 		local strMenPai = "";
 		if(0 == Fammily) then
-			strMenPai = "ÉÙÁÖ";
+			strMenPai = "Thiªu Lâm";
 		elseif(1 == Fammily) then
-			strMenPai = "Ã÷½Ì";
+			strMenPai = "Minh Giáo";
 		elseif(2 == Fammily) then
-			strMenPai = "Ø¤°ï";
+			strMenPai = "Cái Bang";
 		elseif(3 == Fammily) then
-			strMenPai = "Îäµ±";
+			strMenPai = "Võ Ğang";
 		elseif(4 == Fammily) then
-			strMenPai = "¶ëáÒ";
+			strMenPai = "Nga Mi";
 		elseif(5 == Fammily) then
-			strMenPai = "ĞÇËŞ";
+			strMenPai = "Tinh Túc";
 		elseif(6 == Fammily) then
-			strMenPai = "ÌìÁú";
+			strMenPai = "Thiên Long";
 		elseif(7 == Fammily) then
-			strMenPai = "ÌìÉ½";
+			strMenPai = "Thiên S½n";
 		elseif(8 == Fammily) then
-			strMenPai = "åĞÒ£";
+			strMenPai = "Tiêu dao";
 		elseif(10 == Fammily) then
-			strMenPai = "ÂüÍÓ";
+			strMenPai = "MÕn Ğà";
 		else
-			strMenPai = "ÎŞÃÅÅÉ";
+			strMenPai = "Tñ do";
 		end
 
-		local strInfo = tostring(MemberName) .. "\n" .. tostring(strMenPai) .. "  " .. tostring(Level).. "¼¶" .. "\nËùÔÚµØ£º" .. ScenceName;
+		local strInfo = tostring(MemberName) .. "\n" .. tostring(strMenPai) .. "  " .. tostring(Level).. "C¤p" .. "\\nch², n½i Ğ¸a:" .. ScenceName;
 		Portrait_ToolTips[index]:SetToolTip(strInfo);
 
 		if(-1 == HPValue) then
 			-- ¿ç³¡¾°µÄÇé¿ö¡£
-			PARTY_HP[index]:SetToolTip("Î´Öª");
+			PARTY_HP[index]:SetToolTip("Không biªt");
 		else
 			PARTY_HP[index]:SetToolTip(tostring(HPValue).."/"..tostring(HPMax));
 		end;
@@ -891,7 +891,7 @@ function Refresh_All_RaidMember_Info()
 		-- end
 		
 		local nBuffNum = Raid:GetMemberBufNumByIdx(sIdx, mIdx)
-		local nFindNum = nBuffNum --ÔÚĞŞÕınBuffNumÖ®Ç°»ñµÃËüµÄÖµ
+		local nFindNum = nBuffNum --???nBuffNum???????
 		if(nFindNum > PARTY_IMPACT_NUM) then 
 			nFindNum = PARTY_IMPACT_NUM 
 		end
@@ -900,28 +900,28 @@ function Refresh_All_RaidMember_Info()
 		end
 
 		--´Ó×î¶à20¸öÀïÃæÑ¡È¡6¸ö
-		local BUFFINDEX_LIST = {} --Õâ¸ölist×ö¾Ö²¿±äÁ¿¼´¿É
+		local BUFFINDEX_LIST = {} --??list???????
 		do
 			for jj=1,PARTY_BUFF_MAX do
 				BUFFINDEX_LIST[jj] = -1;
 			end
 	
 			local BuffPriority = {}
-			for jj=1,nFindNum do --×î´ó20
+			for jj=1,nFindNum do --??20
 				BuffPriority[jj] = {}
 				BuffPriority[jj].key = jj-1;
 				BuffPriority[jj].val = Raid:GetMemberBufPriorityByIdx(sIdx, mIdx, jj-1);
 			end
 	
-			for jj=nFindNum,1,-1 do --×î´ó20
-				for kk=1,jj-1 do --×î´ó20
+			for jj=nFindNum,1,-1 do --??20
+				for kk=1,jj-1 do --??20
 					if BuffPriority[kk].val < BuffPriority[kk+1].val then
 						BuffPriority[kk],BuffPriority[kk+1] = BuffPriority[kk+1],BuffPriority[kk]
 					end
 				end
 			end
 	
-			for jj=1,nBuffNum do --×î´ó6
+			for jj=1,nBuffNum do --??6
 				BUFFINDEX_LIST[jj] = BuffPriority[jj].key;
 			end
 		end

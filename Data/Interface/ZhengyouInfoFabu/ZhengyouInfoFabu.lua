@@ -1,24 +1,24 @@
--- Õ÷ÓÑÆ½Ì¨ : ·¢²¼ĞÅÏ¢£¬¹ÜÀíĞÅÏ¢£¬³·ÏúĞÅÏ¢µÈµÄÑ¡Ôñ½çÃæ cuiyinjie 2008.10.23
+--  ÷ÓÑÆ½Ì¨ : ·¢²¼ĞÅÏ¢£¬¹ÜÀíĞÅÏ¢£¬³·ÏúĞÅÏ¢µÈµÄÑ¡Ôñ½çÃæ cuiyinjie 2008.10.23
 
 local g_strWndName = "ZhengyouInfoFabu";
 
-local g_dlgctrls = {}; --¿Ø¼ş¼¯ºÏ
+local g_dlgctrls = {}; --????
 
 -- ¶Ô»°¿òÑ¡Ïî
 local dlgoptions = { "fabu",  "chexiao", "guanli",};
 
 -- ¶Ô»°¿ò±êÌâ
-local strDlgCaptions = {"#{ZYPT_081103_056}", "#{ZYPT_081103_067}", "#{ZYPT_081103_072}"}; --{"·¢²¼ĞÅÏ¢", "³·ÏúĞÅÏ¢", "¹ÜÀíĞÅÏ¢",};
+local strDlgCaptions = {"#{ZYPT_081103_056}", "#{ZYPT_081103_067}", "#{ZYPT_081103_072}"}; --{"Tuyên b¯ tin tÑc", "HuÖ bö tin tÑc", "Quän lı tin tÑc",};
 
 -- ¶Ô»°¿òÌáÊ¾ÎÄ±¾
 local strDlgText = {
-	"#{ZYPT_081103_057}", --"ÇëÑ¡ÔñÄãÒª·¢²¼µÄÀàĞÍ£º                £¨×¢Òâ£ºÍ¬Ò»ÀàĞÍµÄĞÅÏ¢ÔÚÍ¬Ò»Ê±¼äÄÚÖ»ÄÜ·¢²¼Ò»Ìõ¡££©",
-	"#{ZYPT_081103_102}",--"ÇëÑ¡ÔñÄúÒª³·ÏúµÄĞÅÏ¢ÀàĞÍ£º",
-	"#{ZYPT_081103_103}",--"ÇëÑ¡ÔñÄúÒª¹ÜÀíµÄĞÅÏ¢ÀàĞÍ£º",
+	"#{ZYPT_081103_057}", --"Thïnh lña ch÷n Nhî Yêu tuyên b¯ Ğích loÕi hình: (chú ı: Cùng loÕi hình Ğích tin tÑc TÕi cùng th¶i gian Nµi chï có th¬ tuyên b¯ mµt cái. )",
+	"#{ZYPT_081103_102}",--"Thïnh lña ch÷n Nhçm Yêu huÖ bö Ğích tin tÑc loÕi hình:",
+	"#{ZYPT_081103_103}",--"Thïnh lña ch÷n Nhçm mu¯n xen vào Lı Ğích tin tÑc loÕi hình:",
 };
 
 -- µ±Ç°²Ù×÷×´Ì¬
-local g_OperationStatus = 4;     -- ²Î¼ûPlayerZhengyouPT.luaÀï¹ØÓÚ²éÑ¯£¬¹ÜÀíµÈµÄ¶¨Òå
+local g_OperationStatus = 4;     -- ??PlayerZhengyouPT.lua?????,??????
 
 -- µ±Ç°Ñ¡ÔñµÄÀàĞÍ
 local g_curSelType = 1;
@@ -76,7 +76,7 @@ function ZhengyouInfoFabu_Choose_Click()
 	-- ·¢ËÍ¾ßÌå²éÑ¯ÇëÇó
 	local curSel = ZhengyouInfoFabu_GetSelectFriendType();
 	if ( 0 == curSel ) then
-	   PushDebugMessage("#{ZYPT_081103_104}"); --("ÇëÑ¡ÔñÕ÷ÓÑÀàĞÍ");
+	   PushDebugMessage("#{ZYPT_081103_104}"); --("Thïnh lña ch÷n Chinh Hæu loÕi hình");
 	   return;
 	end
     g_curSelType = curSel;
@@ -87,7 +87,7 @@ function ZhengyouInfoFabu_Choose_Click()
 	this:Hide();
 end
 
--- ×¢Òâ£º Ö»ÓĞ´°¿ÚÃû·ûºÏµÄ²ÅÊÇÕâ¸ö´°¿Ú£¬ËùÒÔÄ¬ÈÏÑ¡ÖĞµÚÒ»Ïî·ÅÑ­»·ÀïÁË£¬·ÅÍâ±ß»áµ¼ÖÂ´ò¿ª±ğµÄ´°¿ÚÊ±´Ë´°¿ÚÒ²Ñ¡ÔñµÚÒ»Ïî 
+-- ×¢Òâ£º Ö»ÓĞ´°¿ÚÃû·ûºÏµÄ²ÅÊÇ â¸ö´°¿Ú£¬ËùÒÔÄ¬ÈÏÑ¡ÖĞµÚÒ»Ïî·ÅÑ­»·ÀïÁË£¬·ÅÍâ±ß»áµ¼ÖÂ´ò¿ª±ğµÄ´°¿ÚÊ±´Ë´°¿ÚÒ²Ñ¡ÔñµÚÒ»Ïî 
 function ZhengyouInfoFabu_OnOpen(strOpt)
 	local i = 1;
 

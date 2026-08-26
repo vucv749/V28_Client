@@ -20,7 +20,7 @@ local TARGETPETSKILL_BUTTONS_NUM = 12;
 local TARGETPETSKILL_BUTTONS = {};
 local Currend_Pet = -1;
 local PET_AITYPE = {};
---2023ÕäÊŞ·±Ö³ÓÅ»¯
+--2023 äÊŞ·±Ö³ÓÅ»¯
 local PET_TYPE = {
 	[1] = {image = "set:CommonFrame2 image:ZhenShouHeart_Hui", tooltip1 = "#{FZDJ_120717_1}", tooltip2 = "#{FZDJ_120717_2}", tooltip3 = "#{FZDJ_120717_3}", tooltip4 = "#{FZDJ_120717_4}", tooltip5 = "#{FZDJ_120717_5}" },
 	[2] = {image = "set:CommonFrame2 image:ZhenShouHeart_Hong", tooltip1 = "#{FZDJ_120717_6}", tooltip2 = "#{FZDJ_120717_7}", tooltip3 = "#{FZDJ_120717_8}" } 
@@ -53,11 +53,11 @@ function TargetPet_OnLoad()
 	TARGETPETSKILL_BUTTONS[11] = TargetPet_Skill11;
 	TARGETPETSKILL_BUTTONS[12] = TargetPet_Skill12;
 
-	PET_AITYPE[0] = "µ¨Ğ¡";
-	PET_AITYPE[1] = "½÷É÷";
-	PET_AITYPE[2] = "ÖÒ³Ï";
-	PET_AITYPE[3] = "¾«Ã÷";
-	PET_AITYPE[4] = "ÓÂÃÍ";
+	PET_AITYPE[0] = "Nhát gan";
+	PET_AITYPE[1] = "C¦n th§n";
+	PET_AITYPE[2] = "Trung thñc";
+	PET_AITYPE[3] = "Nhanh nh©n";
+	PET_AITYPE[4] = "Dûng mãnh";
 end
 
 function TargetPet_OnEvent(event)
@@ -85,7 +85,7 @@ function TargetPet_OnEvent(event)
 		TargetPet_Update();
 		this:Show();
 		
-	--½»Ò×¹ı³ÌÖĞµÄÕäÊŞÏÔÊ¾	
+	--½»Ò×¹ı³ÌÖĞµÄ äÊŞÏÔÊ¾	
 	elseif (event == "VIEW_EXCHANGE_PET")  then
 		if(IsWindowShow("OtherPet")) then
 			CloseWindow("OtherPet", true);
@@ -223,7 +223,7 @@ function TargetPet_Update()
  	
 	local strAI,strIcon;
 	if(strName>4 or strName <0) then
-		strAI = "´íÎóµÄ";
+		strAI = "Sai l¥m Ğích";
 	else
 		strAI =	PET_AITYPE[strName];
 	end
@@ -231,22 +231,22 @@ function TargetPet_Update()
  	strName,strName2 = TargetPet:GetName();
 	local nEra, strTypeName = TargetPet:GetPetTypeName(nIndex);
  	if( 1 == nEra ) then
- 	    strName2 = "¶ş´ú"..strTypeName
+ 	    strName2 = "Ğ¶i thÑ 2"..strTypeName
  	end
 	TargetPet_PetName : SetText( strName2 );
 	TargetPet_PageHeader : SetText( "#gFF0FA0"..strName2 );
 	TargetPet_Type : SetText("#gFF8E92"..strAI)
 
 	strName,strName2,sex = TargetPet : GetID();
-	TargetPet_TargetPetID : SetText( "ÕäÊŞID:"..strName2 );
+	TargetPet_TargetPetID : SetText( "Trân Thú ID:"..strName2 );
 	AxTrace(0,0,"GetID="..strName .. strName2);
 	
 	strName = TargetPet : GetConsort();
 	
 	if (strName == "00000000") then
-		TargetPet_ConsortID : SetText( "ÉĞÎŞÅäÅ¼" );
+		TargetPet_ConsortID : SetText( "Thßşng Vô ph¯i ngçu" );
 	else
-		TargetPet_ConsortID : SetText( "ÅäÅ¼ID:".. strName );
+		TargetPet_ConsortID : SetText( "Ph¯i ngçu ID:".. strName );
 	end
 	
 	if TargetPet : GetGoodsProtect_Pet() == 1 then
@@ -256,9 +256,9 @@ function TargetPet_Update()
 	end
 		
 	if(sex == 1) then 
-		strName = "ĞÛĞÔ";
+		strName = "Gi¯ng ğñc";
 	else
-		strName = "´ÆĞÔ";
+		strName = "Gi¯ng cái";
 	end
 
 	local nGeneration  = TargetPet : GetGeneration()
@@ -271,7 +271,7 @@ function TargetPet_Update()
 	TargetPet_Peach:Hide()
 	if g_isShowPeach == 1 then
 		TargetPet_Peach:Show()
-		--¸ÃÕäÊŞµÄ·±Ö³Çé¿ö
+		--¸Ã äÊŞµÄ·±Ö³Çé¿ö
 		local nPetType = TargetPet : GetPetType();
 		local nColor = 1;
 		if (nGeneration == 1) then
@@ -285,7 +285,7 @@ function TargetPet_Update()
 		else
 			if (nPetType == 0) then
 				--0:±¦±¦ 2013Äê ĞŞ¸Ä ÓÉ¼ÇÂ¼ ÉÏ´Î·±Ö³µÈ¼¶ ¸Ä³É¼ÇÂ¼ ÒÑ¾­·±Ö³´ÎÊı
-				--ÓÉÓÚÒª¼æÈİÖ®Ç°µÄÊı¾İ£¬ÔÙ¸üĞÂºóÃ»·±Ö³Ö®Ç° Õâ¸öÊıÖµÈÔÈ»¼ÇÂ¼ÉÏ´Î·±Ö³µÈ¼¶£¬·±Ö³Ö®ºó¼ÇÂ¼ÒÑ¾­·±Ö³´ÎÊı
+				--ÓÉÓÚÒª¼æÈİÖ®Ç°µÄÊı¾İ£¬ÔÙ¸üĞÂºóÃ»·±Ö³Ö®Ç°  â¸öÊıÖµÈÔÈ»¼ÇÂ¼ÉÏ´Î·±Ö³µÈ¼¶£¬·±Ö³Ö®ºó¼ÇÂ¼ÒÑ¾­·±Ö³´ÎÊı
 				local nLevel = TargetPet:GetLevel();
 				local nLastProcreateLevel = TargetPet:GetLastProcreateLevel();
 				if nLastProcreateLevel < 0 then
@@ -295,7 +295,7 @@ function TargetPet_Update()
 				local nTimes = 0
 				local nCounts = 0
 				local nRemainCounts = 0
-				if nLastProcreateLevel >= 30 then --Ã»ĞŞ¸Ä¹ıÖ®Ç°
+				if nLastProcreateLevel >= 30 then --??????
 					if nLastProcreateLevel >= nTarget[5] then
 						nRemainCounts = 0
 					else
@@ -352,23 +352,23 @@ function TargetPet_Update()
 	end
 	------------------------------------------------------------------------------------------------------------------
 	strName = TargetPet : GetNaturalLife();
-	TargetPet_Life : SetText( "ÊÙÃü:"..strName );
+	TargetPet_Life : SetText( "S¯ng lâu:"..strName );
 
 	strName = TargetPet : GetLevel();
-	TargetPet_Level : SetText( "µÈ¼¶:"..strName.."¼¶" );
+	TargetPet_Level : SetText( "C¤p b§c:"..strName.."C¤p" );
 	
 	strName = TargetPet : GetHappy();
-	TargetPet_Happy : SetText( "¿ìÀÖ:"..strName );
+	TargetPet_Happy : SetText( "Khoái LÕc:"..strName );
 	
 	strName = TargetPet : GetBasic();
-	TargetPet_GenGu : SetText( "¸ù¹Ç:"..strName );
+	TargetPet_GenGu : SetText( "Cån C¯t:"..strName );
 	
 	strName = TargetPet : GetLixing(nIndex);
 	TargetPet_Lingxing : SetText("#{RXZS_XML_28}"..strName)
 
 	strName = TargetPet : GetSavvy();
 	AxTrace(0,0,"targetpet savvy="..strName)
-	TargetPet_WuXing : SetText( "ÎòĞÔ:".. strName);
+	TargetPet_WuXing : SetText( "Ngµ tính:".. strName);
 	
 	local WuXingVal = tonumber(strName);
 	strName = TargetPet : GetStrAptitude();
@@ -406,7 +406,7 @@ function TargetPet_Update()
 	
 	strName = TargetPet : GetHP(nIndex);
 	strName2 = TargetPet:	GetMaxHP(nIndex);
-	TargetPet_Blood : SetText( "Ñª:"..strName .." / ".. strName2);
+	TargetPet_Blood : SetText( "Huyªt:"..strName .." / ".. strName2);
 
 	strName = TargetPet : GetStr();
 	TargetPet_Str : SetText( strName );
@@ -482,17 +482,17 @@ function TargetPet_Update()
 	else
 		strNeedLevelColor="#c00FF00";
 	end
-	strNeedLevel = strNeedLevelColor..tostring( nTakeLevel ).."¼¶#W¿ÉĞ¯´ø";
+	strNeedLevel = strNeedLevelColor..tostring( nTakeLevel ).."C¤p#W Mang theo";
 
 	TargetPet_NeedLevel : SetText(strNeedLevel)
 
 	strName = TargetPet : GetGrowRate();
-	TargetPet_Growth : SetText("#GÎ´Öª")
+	TargetPet_Growth : SetText("#GkHông biªt")
 	local nGrowLevel = TargetPet : GetPetGrowLevel(tonumber(strName));
-	local strTbl = {"ÆÕÍ¨","ÓÅĞã","½Ü³ö","×¿Ô½","ÍêÃÀ"};
+	local strTbl = {"S½ C¤p","Xu¤t S¡c","Ki®t Xu¤t","Trác Vi®t","Toàn MÛ"};
 	
 	if(nGrowLevel >= 0) then
-		nGrowLevel = nGrowLevel + 1;	--cÀïÊÇ´Ó0¿ªÊ¼µÄÃ¶¾Ù
+		nGrowLevel = nGrowLevel + 1;	--c???0?????
 		local nGrowRate = TargetPet : GetGrowRate();
 		if(strTbl[nGrowLevel]) then
 			TargetPet_Growth : SetText("#G"..strTbl[nGrowLevel]..nGrowRate)
@@ -503,21 +503,21 @@ function TargetPet_Update()
 	strName = "";
 	AxTrace(0,1,"food="..food);
 	if(food >= 1000) then
-		strName = strName .. "Èâ";
+		strName = strName .. "Th¸t";
 		food = food - 1000;
 		if food > 0 then
 			strName = strName .. ",";
 		end
 	end
 	if(food >= 100) then
-		strName = strName .. "²İ";
+		strName = strName .. "Thäo";
 		food = food - 100;
 		if food > 0 then
 			strName = strName .. ",";
 		end
 	end
 	if(food >= 10) then
-		strName = strName .. "³æ";
+		strName = strName .. "Sâu";
 		food = food - 10;
 		if food > 0 then
 			strName = strName .. ",";
@@ -525,7 +525,7 @@ function TargetPet_Update()
 	end
 	
 	if(food >= 1) then
-		strName = strName .. "¹È";
+		strName = strName .. "Ngû c¯c";
 	end
 	TargetPetFood_Type : Show();
 	TargetPetFood_Type : SetToolTip( strName );
@@ -564,7 +564,7 @@ end
 
 ----------------------------------------------------------------------------------
 --
--- Ğı×ªÕäÊŞÄ£ĞÍ£¨Ïò×ó)
+-- Ğı×ª äÊŞÄ£ĞÍ£¨Ïò×ó)
 --
 function TargetPet_Modle_TurnLeft(start)
 	--Ïò×óĞı×ª¿ªÊ¼
@@ -582,7 +582,7 @@ end
 
 ----------------------------------------------------------------------------------
 --
---Ğı×ªÕäÊŞÄ£ĞÍ£¨ÏòÓÒ)
+--Ğı×ª äÊŞÄ£ĞÍ£¨ÏòÓÒ)
 --
 function TargetPet_Modle_TurnRight(start)
 	--ÏòÓÒĞı×ª¿ªÊ¼

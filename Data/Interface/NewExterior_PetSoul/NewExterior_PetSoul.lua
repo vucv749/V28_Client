@@ -2,10 +2,10 @@
 local g_NewExterior_PetSoul_UnifiedPosition = ""
 
 local EXTERIORFILTTING_TOTALKIND = 0
-local g_TargetExteriorIndex = 0			--定位的外观索引，从1开始
-local g_TargetExteriorID = 0			--定位的外观ID
+local g_TargetExteriorIndex = 0			--???????,?1??
+local g_TargetExteriorID = 0			--?????ID
 
-local g_CurSelExteriorID = 0			--当前选择的外观ID，从1开始
+local g_CurSelExteriorID = 0			--???????ID,?1??
 
 local g_CurPossVisualIndex = 0
 
@@ -13,16 +13,16 @@ local g_Distance = 1
 local g_Distance_Ori = 2
 local g_Distance_Max = 4
 local g_InitList = 0
-local g_ExteriorType = 4 --融魂外观
+local g_ExteriorType = 4 --????
 local g_MaxBarNum = 0
 local g_BarList = {}
 
 local g_NeedChangeScrollSize = 1
 local g_NeedChangeFrameScrollSize = 1
 
-local g_CameraHeight = 1     --摄影机高度
-local g_CameraDistance = 2   --摄影机距离
-local g_CameraPitch = 3      --摄影机角度
+local g_CameraHeight = 1     --?????
+local g_CameraDistance = 2   --?????
+local g_CameraPitch = 3      --?????
 local g_CameraPosition =
 {
 	--女性相关位置
@@ -61,12 +61,12 @@ local g_RanSeButtonTry = {}
 local g_EquipExteriorId = 0
 local g_RanSeButtonQuality = {}
 
-local g_OrnamentState				= {		-- 状态
-	INVALID	= 0,							-- 无效
-	EMPTY	= 1,							-- 空闲
-	TIME	= 2,							-- 限时
-	TIMEOUT	= 3,							-- 过期
-	FOREVER	= 4,							-- 永久
+local g_OrnamentState				= {		-- ??
+	INVALID	= 0,							-- ??
+	EMPTY	= 1,							-- ??
+	TIME	= 2,							-- ??
+	TIMEOUT	= 3,							-- ??
+	FOREVER	= 4,							-- ??
 }
 --=========
 --PreLoad==
@@ -168,9 +168,9 @@ function NewExterior_PetSoul_OnEvent(event)
 		return
 	end
 		
-	if event == "OPEN_STALL_SALE" -- 开始摆摊，还原试穿
-		or event == "PROGRESSBAR_SHOW"	-- 读进度条中，还原试穿
-		or event == "MODELID_CHANGE" -- 变身 关闭界面
+	if event == "OPEN_STALL_SALE" -- ????,????
+		or event == "PROGRESSBAR_SHOW"	-- ?????,????
+		or event == "MODELID_CHANGE" -- ?? ????
 		then
 		NewExterior_PetSoul_CloseClick()
 		return
@@ -995,7 +995,7 @@ function NewExterior_PetSoul_RemovePreview()
 end
 
 function NewExterior_PetSoul_Goto()
-	AutoRuntoTargetExWithName(92, 134, 1, "云宸宸")
+	AutoRuntoTargetExWithName(92, 134, 1, "V鈔 Th Th")
 end
 
 function NewExterior_PetSoul_CloseClick()
@@ -1413,7 +1413,7 @@ function NewExterior_PetSoul_UpdateColorItem()
 		local planstr
 
 		if (nColor <= 0) then
-			planstr = "原始风格"
+			planstr = "Nguy阯 th鼀 phong c醕h"
 			g_RanSeButtonLock[j]:Show()
 			local strIcon = Exterior:LuaFnGetExteriorPossInfo(nExteriorID, "Icon")
 			local strImage = GetIconFullName(strIcon)

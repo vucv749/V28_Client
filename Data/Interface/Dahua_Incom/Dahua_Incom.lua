@@ -44,7 +44,7 @@ local g_Dahua_ChouJiang_redpoint= {0,0}
 local g_Dahua_Shop_redpoint= 0 
 local g_Dahua_needjiangquan  = 1
 local g_Dahua_ChouJiang_Ctl = {} 
-local g_Dahua_Incom_ButtonCDTime = 1; --按钮冷却时间
+local g_Dahua_Incom_ButtonCDTime = 1; --??????
 local g_Dahua_Incom_ButtonLastTime = 0;
 --*********************************
 -- PreLoad
@@ -52,9 +52,9 @@ local g_Dahua_Incom_ButtonLastTime = 0;
 function Dahua_Incom_PreLoad()
 	this : RegisterEvent( "UI_COMMAND" );					-- UI_COMMAND  
 	this : RegisterEvent(" ADJEST_UI_POS",false)
-	this : RegisterEvent( "VIEW_RESOLUTION_CHANGED" );		-- 游戏分辨率发生了变化
-	this : RegisterEvent( "GAMELOGIN_SELECTCHARACTER" );	-- 选择人物
-	this : RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- 离开场景 
+	this : RegisterEvent( "VIEW_RESOLUTION_CHANGED" );		-- ??????????
+	this : RegisterEvent( "GAMELOGIN_SELECTCHARACTER" );	-- ????
+	this : RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- ???? 
 end
 
 --*********************************
@@ -263,7 +263,7 @@ function Dahua_Incom_OnEvent( event )
     end
 end
 --**********************************
--- 关闭
+-- 关睜
 --**********************************
 function Dahua_Incom_Close()
     g_Dahua_Incom_Shop_CurPage=1
@@ -431,23 +431,23 @@ function Dahua_Incom_ChouJiang_Preview(Idx)
     CloseWindow( "Dahua_Incom_Preview", true );
 
     if Idx == 1 then 
-		PushEvent("OPEN_DAHUA_PREVIEW", 1, "set:Dahua_Incom_ShowImg image:Dahua_Incom_Show1") --附体
+		PushEvent("OPEN_DAHUA_PREVIEW", 1, "set:Dahua_Incom_ShowImg image:Dahua_Incom_Show1") --??
 	end 
     
     if Idx == 2 then
-        PushEvent("OPEN_DRESSPREVIEW", 10125846, 102, 69)  --时装\发型\脸型
+        PushEvent("OPEN_DRESSPREVIEW", 10125846, 102, 69)  --??\??\??
     end
     
     if Idx == 3 then
-        PushEvent("OPEN_DAHUA_PREVIEW", 2, "set:Dahua_Incom_ShowImg image:Dahua_Incom_Show2")  --白骨鞭
+        PushEvent("OPEN_DAHUA_PREVIEW", 2, "set:Dahua_Incom_ShowImg image:Dahua_Incom_Show2")  --???
     end
     
     if Idx == 4 then
-        PushEvent("OPEN_DAHUA_PREVIEW", 3, "set:Dahua_Incom_ShowImg image:Dahua_Incom_Show3")  --混天玄戟
+        PushEvent("OPEN_DAHUA_PREVIEW", 3, "set:Dahua_Incom_ShowImg image:Dahua_Incom_Show3")  --????
     end
     
     if Idx == 5 then
-        Pet:OpenPetJianByZhenShouDanId(30310148);   --珍兽
+        Pet:OpenPetJianByZhenShouDanId(30310148);   --??
     end
     
 end
@@ -468,7 +468,7 @@ end
 function Dahua_Incom_ChouJiang_Clicked(type)
     local curTime = OSAPI:GetTickCount();
 	if ( curTime - g_Dahua_Incom_ButtonLastTime < g_Dahua_Incom_ButtonCDTime * 1000) then 
-   	    PushDebugMessage("#{DHLS_240611_33}"); --不可连续点击，请稍等片刻后再点击
+   	    PushDebugMessage("#{DHLS_240611_33}"); --??????,?????????
 		return
 	end
     g_Dahua_Incom_ButtonLastTime = curTime;

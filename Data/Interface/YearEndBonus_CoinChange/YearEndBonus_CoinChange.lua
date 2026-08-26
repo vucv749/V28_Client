@@ -15,9 +15,9 @@ function YearEndBonus_CoinChange_PreLoad()
     this : RegisterEvent( "UPDATE_HKCJ_INFO" );				 
 	this : RegisterEvent( "HKCJ_JIANGCHI_SHOW" );					--   
 	this : RegisterEvent(" ADJEST_UI_POS",false)
-	this : RegisterEvent( "VIEW_RESOLUTION_CHANGED" );		-- 游戏分辨率发生了变化
-	this : RegisterEvent( "GAMELOGIN_SELECTCHARACTER" );	-- 选择人物
-	this : RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- 离开场景 
+	this : RegisterEvent( "VIEW_RESOLUTION_CHANGED" );		-- ??????????
+	this : RegisterEvent( "GAMELOGIN_SELECTCHARACTER" );	-- ????
+	this : RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- ???? 
 end
 
 --*********************************
@@ -55,7 +55,7 @@ function YearEndBonus_CoinChange_OnEvent( event )
     end
 end
 --**********************************
--- 关闭
+-- 关睜
 --**********************************
 function YearEndBonus_CoinChange_Close()  
     this:Hide()

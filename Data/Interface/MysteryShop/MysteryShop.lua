@@ -11,14 +11,14 @@ local g_CurPageNum = 1
 local g_MaxPageNum = 1
 local g_objCared = -1
 
-local CU_MONEY			= 1	-- Ç®
-local CU_GOODBAD		= 2	-- ÉÆ¶ñÖµ
-local CU_MORALPOINT		= 3	-- Ê¦µÂµã
-local CU_TICKET			= 4 -- ¹ÙÆ±Ç®
-local CU_YUANBAO		= 5	-- Ôª±¦
-local CU_ZENGDIAN		= 6 -- Ôùµã
-local CU_MENPAI_POINT	= 7 -- ÃÅÅÉ¹±Ï×¶È
-local CU_MONEYJZ		= 8 -- ½»×Ó
+local CU_MONEY			= 1	-- ?
+local CU_GOODBAD		= 2	-- ???
+local CU_MORALPOINT		= 3	-- ???
+local CU_TICKET			= 4 -- ???
+local CU_YUANBAO		= 5	-- ??
+local CU_ZENGDIAN		= 6 -- ??
+local CU_MENPAI_POINT	= 7 -- ?????
+local CU_MONEYJZ		= 8 -- ??
 
 local MAX_OBJ_DISTANCE = 3.0
 
@@ -177,7 +177,7 @@ function MysteryShop_OnEvent(event)
 			return
 		end
 		
-		--Èç¹ûºÍÉÌÈËµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍÉÌÈËµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if arg1 == "distance" and tonumber(arg2) > MAX_OBJ_DISTANCE or arg1 == "destroy" then
 			--È¡Ïû¹ØÐÄ
 			SetDefaultMouse()
@@ -216,7 +216,7 @@ end
 function MysteryShop_OnBtnClicked_OpenFitting()
 	
 	if IsIdleLogic() ~= 1 then
-		SetNotifyTip("²»ÄÜ½øÐÐ´Ë²Ù×÷¡£")
+		SetNotifyTip("Không th¬ vào Hành ThØ thao tác.")
 		return
 	end
 	
@@ -227,7 +227,7 @@ function MysteryShop_OnBtnClicked_OpenFitting()
 	end
 
 	MouseCmd_ShopFittingSet()
-	SetNotifyTip("Çëµã»÷ÄúÒªÊÔ´©µÄÊ±×°»òÊÔÆïµÄ×øÆï¡£")
+	SetNotifyTip("Thïnh Ði¬m Kích Nhçm mu¯n thØ Xuyên Ðích trang phøc m¯t Ho£c cßÞi thØ Ðích t÷a kÜ.")
 end
 
 --===============================================
@@ -247,7 +247,7 @@ function MysteryShop_UpdatePage(thePage)
 	--	MysteryShop_Wholesale:Enable()
 	end
 	
-	--ÊÕ¹º
+	--Ê ¹º
 	local nBuyType = NpcShop:GetShopType("buy")
 	if nBuyType <= 0 then 
 	--	MysteryShop_Callback1:Hide() 
@@ -352,7 +352,7 @@ function MysteryShop_UpdatePage(thePage)
 				GOODS_DESCS[i]:SetText(theAction:GetName())
 			end
 			local nPrice = NpcShop:EnumItemPrice(idx)
-			GOOD_BAD[i]:SetText("Ôª±¦:"..tostring(nPrice))
+			GOOD_BAD[i]:SetText("Nguyên bäo:"..tostring(nPrice))
 			i = i + 1
 		else
 			GOODS_BUTTONS[i]:SetActionItem(-1)
@@ -497,7 +497,7 @@ function MysteryShop_RepairAll_MouseEnter()
 	
 	szMoney = szMoney..tostring(nCopper).."#-16"
 	
-	MysteryShop_AllRepair:SetToolTip("È«²¿ÐÞÀí#r·ÑÓÃ£º"..szMoney)
+	MysteryShop_AllRepair:SetToolTip("Toàn bµ sØa chæa#rphí døng:"..szMoney)
 
 end
 

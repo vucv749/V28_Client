@@ -16,7 +16,7 @@ function SoftKeyBoard_OnEvent(event)
 		end
 	elseif( event == "SET_SOFTKEY_AIM" ) then
      	SoftKeyBoard_SoftKey:SetAimEditBox( arg0 );
-	-- 打开帐号输入界面
+	-- 打开犑号输入界面
  	elseif( event == "CLOSE_WINDOW" ) then
 		if( arg0 == "SoftKeyBoard" ) then
 			SoftKeyBoard_Close();

@@ -17,7 +17,7 @@ function G_YuanBao_OnEvent(event)
 			local money = Player:GetData("MONEY");
 			money = tonumber(money);
 			if(g_limit + g_Shouxu > money) then
-				PushDebugMessage("ÄúÉíÉÏµÄ½ğ±ÒĞ¡ÓÚ#{_MONEY102000}£¬Ö»ÓĞÓµÓĞ½ğÇ®µÄÊıÁ¿´óÓÚµÈÓÚ#{_MONEY102000}µÄÊ±ºò·½¿É¼ÄÊÛ¡£")
+				PushDebugMessage("S¯ vàng trên ngß¶i các hÕ nhö h½n #{_MONEY102000}, chï khi có s¯ lßşng ti«n l¾n h½n ho£c b¢ng #{_MONEY102000} m¾i có th¬ gØi bán.")
 				this:Hide();
 				return;
 			end
@@ -36,7 +36,7 @@ function G_YuanBao_OnEvent(event)
 			return;
 		end
 
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			this:Hide();
 
@@ -74,16 +74,16 @@ function G_YuanBao_OK_Click()
 	local nCount = G_YuanBao_InputYuanBao:GetText();
 	local nMoney = Player:GetData("MONEY");	
 	if(nCoin==0) then
-		PushDebugMessage("ÇëÑ¡ÔñÒª¼ÄÊÛµÄ½ğÆ±£¡")
+		PushDebugMessage("Xin ch÷n loÕi kim phiªu gØi bán!")
 		return;
 	end
 	if(nCount == nil or tonumber(nCount)== nil or tonumber(nCount)<= 0)then
-		PushDebugMessage("Ôª±¦ÊıÁ¿ÎŞĞ§£¡")
+		PushDebugMessage("S¯ lßşng Kim Nguyên Bäo vô hi®u!")
 		return
 	end
 	if( nMoney < nCoin + nCoin*2/100) then
 		local tmpnum = nCoin + nCoin*2/100
-		PushDebugMessage("ÄúÉíÉÏµÄÇ®²»×ã#{_MONEY"..tmpnum.."},ÇëÖØĞÂÑ¡Ôñ£¡")
+		PushDebugMessage("Ti«n trên ngß¶i các hÕ không ğü #{_MONEY"..tmpnum.."}, vui lòng ch÷n lÕi!")
 		return
 	end
 	--ÅĞ¶Ïok £¬µ÷º¯ÊıÈ¥Ò²

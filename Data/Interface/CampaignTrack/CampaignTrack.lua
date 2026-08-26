@@ -2,8 +2,8 @@
 
 local g_strWndName = "CampaignTrack";
 
-local g_dlgctrls = {}; --控件集合
-local g_LockState = 0;   --0:未锁定，1：已锁定
+local g_dlgctrls = {}; --????
+local g_LockState = 0;   --0:???,1:???
 
 local g_CampaignTrack_Frame_UnifiedSize;
 local g_CampaignTrack_Frame_UnifiedXPosition;
@@ -92,7 +92,7 @@ function CampaignTrack_OnEvent(event)
 		local nScreenMaxHeigh = tonumber(arg1)
 		if (nCurX+nCurWidht > nScreenMaxWidht or nCurY+nCurHeigh > nScreenMaxHeigh) then
 			CampaignTrack_Reset_Func()
-			--同时调整MissionTrack界面
+			--同时调狖MissionTrack界面
 			AdjustUIPos("MissionTrack")
 
 		end
@@ -106,13 +106,13 @@ end
 function CampaignTrack_UpdateList()
 
 	CampaignTrack_ListBoxTransparent:ClearListBoxEx();
-	local	campaign_today = 0	--当天所有活动
+	local	campaign_today = 0	--??????
 	local g_TodalCampaignCount = GetCampaignCount(tonumber(campaign_today));
 
 	for i=0 , g_TodalCampaignCount-1 do
 		-- 活动类型
 		local isCur  =  EnumCampaign(tonumber(campaign_today),i,"iscurcampaign");
-		if(tonumber(isCur) == 1) then       --是当前的活动
+		if(tonumber(isCur) == 1) then       --??????
 			local nIsTrack = EnumCampaign(tonumber(campaign_today),i,"TrackIsOrNot");
 			if (nIsTrack == 1) then
 				local nCampaignID = EnumCampaign(tonumber(campaign_today),i,"id");
@@ -131,7 +131,7 @@ function CampaignTrack_UpdateList()
 					local strTrackDesc = EnumCampaign(tonumber(campaign_today),i,"TrackDesc");					
 					local strTitle = "  #Y"..strTime.." "..strHuodong;
 					strTrackDesc = "    #W"..strTrackDesc;
-					local color = "FF0A9605";	--绿色
+					local color = "FF0A9605";	--??
 					CampaignTrack_ListBoxTransparent:AddItemExWithoutLayout(strTitle, nCampaignID, 3, color, 4)
 					CampaignTrack_ListBoxTransparent:AddItemExWithoutLayout(strTrackDesc, nCampaignID, 0, color, 4)
 				end
@@ -256,7 +256,7 @@ function CampaignTrack_Width_Reduce()
 end
 
 function CampaignTrack_Lock_Func()
-	if (g_LockState == 0) then   --锁定
+	if (g_LockState == 0) then   --??
 		g_LockState = 1;
 		CampaignTrack_UnLock:Show();
 		CampaignTrack_Lock:Hide();
@@ -269,7 +269,7 @@ function CampaignTrack_Lock_Func()
 		CampaignTrack_Add:SetProperty("MouseHollow", "True");
 		CampaignTrack_Sub:SetProperty("MouseHollow", "True");
 		CampaignTrack_Reset:SetProperty("MouseHollow", "True");
-	else               --解锁
+	else               --??
 		g_LockState = 0;
 		CampaignTrack_Lock:Show();
 		CampaignTrack_UnLock:Hide();

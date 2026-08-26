@@ -9,7 +9,7 @@ local g_MonthPVP_TopList_StrTeamName =
 	[3] = {str = "#{LLKC_240517_127}"},
 }
 
---预加载函数，可以而且只能在这里注册脚本关心的事件
+--预加载函数，可以而且只能在犫里注册脚本关心的事件
 function MonthPVP_TopList_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
 	-- 游戏窗口尺寸发生了变化
@@ -103,15 +103,15 @@ function MonthPVP_TopList_Update(nPlayerInfo,nKillNum)
 	local j = 0
 	for i=1,5 do
 		if nPlayerInfo[i].nName ~= "" then
-			MonthPVP_TopList_List:AddNewItem(tostring(j+1), 0, j) --排名
+			MonthPVP_TopList_List:AddNewItem(tostring(j+1), 0, j) --??
 			
 			local strName = ""
 			if nPlayerInfo[i].nZoneWorldId ~=0 and nPlayerInfo[i].nZoneWorldId ~= -1 then
 				strName = DataPool:GetServerName( nPlayerInfo[i].nZoneWorldId )
 			end
-			MonthPVP_TopList_List:AddNewItem(nPlayerInfo[i].nName.."@"..strName, 1, j) --姓名
-			MonthPVP_TopList_List:AddNewItem(g_MonthPVP_TopList_StrTeamName[nPlayerInfo[i].nTeam].str, 2, j) --阵营
-			MonthPVP_TopList_List:AddNewItem(tostring(nPlayerInfo[i].nScore), 3, j) --击杀数
+			MonthPVP_TopList_List:AddNewItem(nPlayerInfo[i].nName.."@"..strName, 1, j) --??
+			MonthPVP_TopList_List:AddNewItem(g_MonthPVP_TopList_StrTeamName[nPlayerInfo[i].nTeam].str, 2, j) --??
+			MonthPVP_TopList_List:AddNewItem(tostring(nPlayerInfo[i].nScore), 3, j) --???
 			j = j + 1
 		end
 	end

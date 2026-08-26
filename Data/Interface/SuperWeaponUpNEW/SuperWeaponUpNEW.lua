@@ -100,13 +100,13 @@ function SuperWeaponUpNEW_OnEvent( event )
 
 	elseif event == "SUPER_ATTR_RECOIN_CONFIRM_OK" then
 		if tonumber(arg1) == 1 then
-			SuperWeaponUpNEW_Clear(1) --ÏÈ°ÑÔ­À´µÄÇå¿ÕÁË
-			SuperWeaponUpNEW_Update(tonumber(arg0)) --ÔÙ·ÅÉÏĞÂµÄ~
+			SuperWeaponUpNEW_Clear(1) --????????
+			SuperWeaponUpNEW_Update(tonumber(arg0)) --?????~
 		elseif tonumber(arg1) == 0 then
 			SuperWeaponUpNEW_Clear(1)
 			this:Hide()
 		elseif tonumber(arg1) == 2 then
-			SuperWeaponUpNEW_Clear(1) --ÏÈ°ÑÔ­À´µÄÇå¿ÕÁË
+			SuperWeaponUpNEW_Clear(1) --????????
 		end
 	elseif event == "UI_COMMAND" and tonumber(arg0) == 198311141 then
 		local bagpos = Get_XParam_INT(0)
@@ -140,12 +140,12 @@ function SuperWeaponUpNEW_Buttons_Clicked()
     --Deleted By ChangHua 2010-03-01 TT:66410
     --ÉñÆ÷±»¼ÓËøÊ±Ò²¿ÉÒÔ½øĞĞÉı¼¶²Ù×÷
 	--	if PlayerPackage : IsLock( g_ItemPos ) == 1 then
-	--		PushDebugMessage( "ÎïÆ·²»´æÔÚ»òÕßÒÑ¼ÓËø£¡" )
+	--		PushDebugMessage( "ÎïÆ·²»´æÔÚ»ò ßÒÑ¼ÓËø£¡" )
 	--		return
 	--	end
 
 		--Ç®ÊÇ·ñ¹»....
-		local selfMoney = Player:GetData("MONEY") + Player:GetData("MONEY_JZ") --½»×ÓÆÕ¼° Vega
+		local selfMoney = Player:GetData("MONEY") + Player:GetData("MONEY_JZ") --???? Vega
 		if selfMoney < g_NeedMoney then
 			PushDebugMessage( "#{CXYH_140813_40}" )
 			return
@@ -161,7 +161,7 @@ function SuperWeaponUpNEW_Buttons_Clicked()
 	--PushDebugMessage("333"..eqLevel)
 	-- if(eqLevel == 92) then
 	-- 	if(SuperWeaponUpNEW_ModeSelect:GetCheck()==0 and SuperWeaponUpNEW_ModeSelect2:GetCheck() ==0) then
-	-- 		PushDebugMessage("#{SXLH_101026_01}")--Õâ¸öÒª²»ÒªÅä×Öµä
+	-- 		PushDebugMessage("#{SXLH_101026_01}")-- â¸öÒª²»ÒªÅä×Öµä
 	-- 		return
 	-- 	end
 	-- end
@@ -255,7 +255,7 @@ function SuperWeaponUpNEW_Update( pos_packet )
 	local MenpaiID = Player : GetData( "MEMPAI" )
 	local ItemID = PlayerPackage : GetItemTableIndex( BagIndex )
 	if ItemID <= 0 then
-		PushDebugMessage("Õâ¸öÎïÆ·²»ÊÇ¿É¶Ò»»µÄÉñÆ÷£¡")
+		PushDebugMessage("Này v§t ph¦m không phäi Khä ğ±i Ğích th¥n khí!")
 		return
 	end
 
@@ -265,7 +265,7 @@ function SuperWeaponUpNEW_Update( pos_packet )
 		return
 	end
 
-		-- Èç¹û¿Õ¸ñÄÚÒÑ¾­ÓĞ¶ÔÓ¦ÎïÆ·ÁË,ĞèÒªµ¯Ò»¸ö¶ş´ÎÈ·ÈÏ¡­¡­
+		-- Èç¹û¿ ¸ñÄÚÒÑ¾­ÓĞ¶ÔÓ¦ÎïÆ·ÁË,ĞèÒªµ¯Ò»¸ö¶ş´ÎÈ·ÈÏ¡­¡­
 	if g_ItemPos ~= -1 and BagIndex ~= g_ItemPos and  g_SuperIsWashed == 1  then
 		SuperWeaponUpNEW_SendSuper_AttrConfirm(BagIndex,1)
 		return
@@ -281,7 +281,7 @@ function SuperWeaponUpNEW_Update( pos_packet )
 	SuperWeaponUpNEW_WantNum : SetProperty( "MoneyNumber", tostring( g_NeedMoney ) )
 	g_Accept_Clicked_Num = 0
 
-	local eqLevel = LifeAbility : Get_Equip_Level(BagIndex)--»ñÈ¡×°±¸µÈ¼¶
+	local eqLevel = LifeAbility : Get_Equip_Level(BagIndex)--??????
 	--PushDebugMessage(eqLevel)
 	if(eqLevel == 92) then
 		SuperWeaponUpNEW_Show_RadioText()
@@ -340,10 +340,10 @@ end
 
 
 --=========================================================
---¹Ø±Õ
+--¹Ø± 
 --=========================================================
 function SuperWeaponUpNEW_Close()
-	--¹Ø±ÕÇ°Ò²ÒªÀ´¸ö¶ş´ÎÈ·ÈÏ
+	--¹Ø± Ç°Ò²ÒªÀ´¸ö¶ş´ÎÈ·ÈÏ
 	if g_ItemPos ~= -1 and g_SuperIsWashed == 1  then
 		SuperWeaponUpNEW_SendSuper_AttrConfirm(g_ItemPos,0)
 		return
@@ -363,7 +363,7 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØĞÄNPC£¬
---ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 --Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function BeginCareObject_SuperWeaponUpNEW()
@@ -454,14 +454,14 @@ function SuperWeaponUpNEW_TryClear()
 		return
 	end
 
-	SuperWeaponUpNEW_Clear(1) --ÏÈ°ÑÔ­À´µÄÇå¿ÕÁË
+	SuperWeaponUpNEW_Clear(1) --????????
 
 end
 --ÓÒ¼üµã»÷È¡Ïû
 function SuperWeaponUpNEW_Item_cancel()
 	if( this:IsVisible() ) then
 
-	--¹Ø±ÕÇ°Ò²ÒªÀ´¸ö¶ş´ÎÈ·ÈÏ
+	--¹Ø± Ç°Ò²ÒªÀ´¸ö¶ş´ÎÈ·ÈÏ
 		if g_ItemPos ~= -1 and g_SuperIsWashed == 1  then
 			SuperWeaponUpNEW_SendSuper_AttrConfirm(g_ItemPos,2)
 			return

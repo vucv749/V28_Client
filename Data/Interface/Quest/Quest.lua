@@ -126,7 +126,7 @@ function Quest_OnEvent(event)
 			return;
 		end
 
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			Quest_Close();
 
@@ -135,20 +135,20 @@ function Quest_OnEvent(event)
 		end
 
 	elseif (event == "TOGLE_SKILLSTUDY") then
-		AxTrace(0,0,"´ò¿ªÑ§Ï°½çÃæ£¬¹Ø±ÕºÍNPCµÄ¶Ô»°¿ò");
+		AxTrace(0,0,"Tá Khai H÷c T§p m£t biên, ğóng cØa Hoà NPCĞích ğ¯i thoÕi Khuông");
 		Quest_Close();
 
 		--È¡Ïû¹ØĞÄ
 		StopCareObject_Quest(objCared);
 
 	elseif (event == "TOGLE_BANK") then
-		AxTrace(0,0,"´ò¿ªÒøĞĞ½çÃæ£¬¹Ø±ÕºÍNPCµÄ¶Ô»°¿ò");
+		AxTrace(0,0,"Tá Khai ngân hàng m£t biên, ğóng cØa Hoà NPCĞích ğ¯i thoÕi Khuông");
 		Quest_Close();
 
 		--È¡Ïû¹ØĞÄ
 		StopCareObject_Quest(objCared);
 	elseif (event == "TOGLE_BIGBANK") then
-		AxTrace(0,0,"´ò¿ªÒøĞĞ½çÃæ£¬¹Ø±ÕºÍNPCµÄ¶Ô»°¿ò");
+		AxTrace(0,0,"Tá Khai ngân hàng m£t biên, ğóng cØa Hoà NPCĞích ğ¯i thoÕi Khuông");
 		Quest_Close();
 
 		--È¡Ïû¹ØĞÄ
@@ -176,7 +176,7 @@ function Quest_OnEvent(event)
 			OpenUrl();
 		elseif tonumber(arg0) == 20091019 then
 			OpenUrl_BBHJ();
-		elseif tonumber(arg0) == 20101121 then-- ÖÓÉùÓÆÈ»ºØĞÂÄê-ÒÆÖ²
+		elseif tonumber(arg0) == 20101121 then-- ???????-??
 			--PlayEffectSound();
 			PlayUISound();
 		elseif tonumber(arg0) == 89335901 then
@@ -185,7 +185,7 @@ function Quest_OnEvent(event)
 			OpenZBSUrl_MatchWeb()
 		elseif tonumber(arg0) == 88996157 then
 			OpenZBSUrl_GuessWeb()
-		elseif tonumber(arg0) == 99867701 then -- ÁúÌ§Í·»î¶¯
+		elseif tonumber(arg0) == 99867701 then -- ?????
 			OpenLongTaiTou_WXWeb()
 		end
 
@@ -265,15 +265,15 @@ function Quest_EventListUpdate()
 				strState = 8
 			end
 			if( tonumber( strScriptId ) == 808007 ) then
-				if( strTemp == "ÎÒÏëÁÙÊ±½âËø" ) then
+				if( strTemp == "Ta nghî lâm th¶i Giäi Toä" ) then
 					nTitleType = 1
-				elseif( strTemp == "ÎÒÏëµ¥¸ö½âËø" ) then
+				elseif( strTemp == "Ta nghî Thi«n Cá Giäi Toä" ) then
 					nTitleType = 1
-				elseif( strTemp == "È«²¿¼ÓËø" ) then
+				elseif( strTemp == "Khóa toàn bµ" ) then
 					nTitleType = 2
-				elseif( strTemp == "µ¥¸ö¼ÓËø" ) then
+				elseif( strTemp == "Khóa ğ½n lë" ) then
 					nTitleType = 2
-				elseif( strTemp == "È·ÈÏ" ) then
+				elseif( strTemp == "Xác nh§n" ) then
 					nTitleType = 2
 				end
 			end
@@ -314,18 +314,18 @@ function Quest_EventListUpdate()
 
 
 	g_nQuestState = QUEST_STATE_EVENTLIST;
-	Quest_Frame_Debug:SetText("#gFF0FA0"..Target:GetDialogNpcName());--get npcµÄname
+	Quest_Frame_Debug:SetText("#gFF0FA0"..Target:GetDialogNpcName());--get npc?name
 	if( nTitleType == 1 ) then
-		Quest_Frame_Debug:SetText("#gFF0FA0½âËø" );
+		Quest_Frame_Debug:SetText("#gFF0FA0Giäi Toä" );
 	elseif( nTitleType == 2 ) then
-		Quest_Frame_Debug:SetText("#gFF0FA0¼ÓËø" );
+		Quest_Frame_Debug:SetText("#gFF0FA0Gia Toä" );
 	end
 	AxTrace( 8,0,"title="..Target:GetDialogNpcName() );
-	Quest_Button_Continue:SetText("¼ÌĞø");--¼ÌĞø
+	Quest_Button_Continue:SetText("Tiªp tøc");--??
 	Quest_Button_Continue:Disable();
 	Quest_Button_Accept:Disable();
 	Quest_Button_Accept:SetProperty( "Flash", "0" );
-	Quest_Button_Refuse:SetText("ÔÙ¼û");--ÔÙ¼û
+	Quest_Button_Refuse:SetText("TÕm bi®t");--??
 
 	if (g_Quest_IsKFRCLTConfirm > 0) then
 		Quest_Button_Refuse:Disable()
@@ -360,20 +360,20 @@ function Quest_QuestInfoUpdate()
 
 		if(strType == "money" and nNum > 0) then
 			if(nRadio_Necessary == 1) then
-				QuestGreeting_Desc:AddTextElement("#Y¹Ì¶¨½±Àø:#W")
+				QuestGreeting_Desc:AddTextElement("#Yc ğ¸nh thß·ng cho: #W")
 				nRadio_Necessary = 0;
 			end
 
 			QuestGreeting_Desc:AddMoneyElement(nNum);
 		elseif(strType == "moneyjz" and nNum > 0) then
 			if(nRadio_Necessary == 1) then
-				QuestGreeting_Desc:AddTextElement("#Y¹Ì¶¨½±Àø:#W")
+				QuestGreeting_Desc:AddTextElement("#Yc ğ¸nh thß·ng cho: #W")
 				nRadio_Necessary = 0;
 			end
 			QuestGreeting_Desc:AddJiaoZiElement(nNum);
 		elseif(strType == "item") then
 			if(nRadio_Necessary == 1) then
-				QuestGreeting_Desc:AddTextElement("#Y¹Ì¶¨½±Àø:#W")
+				QuestGreeting_Desc:AddTextElement("#Yc ğ¸nh thß·ng cho: #W")
 				nRadio_Necessary = 0;
 			end
 --			QuestGreeting_Desc:AddItemElement(nItemID, nNum, 0);
@@ -386,14 +386,14 @@ function Quest_QuestInfoUpdate()
 			end
 		elseif(strType == "itemrand") then
 			if(nRadio_Necessary == 1) then
-				QuestGreeting_Desc:AddTextElement("#Y¹Ì¶¨½±Àø:#W")
+				QuestGreeting_Desc:AddTextElement("#Yc ğ¸nh thß·ng cho: #W")
 				nRadio_Necessary = 0;
 			end
 			QuestGreeting_Desc:AddItemElement(-1, nNum, 0);
 		elseif(strType == "itemradio") then
 			if (nRadio == 1) then
 				nRadio = 0;
-				QuestGreeting_Desc:AddTextElement("#YÍê³ÉÈÎÎñºó¿ÉÑ¡Ò»¸ö×÷Îª½±Æ·:#W");
+				QuestGreeting_Desc:AddTextElement("#YhOàn thành nhi®m vø H§u Khä Tuy¬n mµt cái làm ph¥n thß·ng: #W");
 			end
 --			QuestGreeting_Desc:AddItemElement(nItemID, nNum, 0);
 			nItemID = LifeAbility : GetQuestUI_Reward(i-1);
@@ -415,8 +415,8 @@ function Quest_QuestInfoUpdate()
 	Quest_Button_Continue:Disable();
 	Quest_Button_Accept:SetProperty( "Flash", "1" );
 	Quest_Button_Accept:Enable();
-	Quest_Button_Continue:SetText("¼ÌĞø");--¼ÌĞø
-	Quest_Button_Refuse:SetText("È¡Ïû");--È¡Ïû
+	Quest_Button_Continue:SetText("Tiªp tøc");--??
+	Quest_Button_Refuse:SetText("Hüy bö");--??
 end
 
 --=========================================================
@@ -431,7 +431,7 @@ function Quest_MissionContinueUpdate(bDone)
 	end
 
 	if( nBonusNum>1 ) then
-		QuestGreeting_Desc:AddTextElement("#YĞèÒªÎïÆ·:#W");
+		QuestGreeting_Desc:AddTextElement("#Yc?n v§t ph¦m: #W");
 	end
 
 	for i=1, nBonusNum do
@@ -464,13 +464,13 @@ function Quest_MissionContinueUpdate(bDone)
 
 	Quest_Button_Accept:Disable();
 	Quest_Button_Accept:SetProperty( "Flash", "0" );
-	Quest_Button_Refuse:SetText("È¡Ïû");--È¡Ïû
-	Quest_Button_Continue:SetText("¼ÌĞø");--¼ÌĞø
+	Quest_Button_Refuse:SetText("Hüy bö");--??
+	Quest_Button_Continue:SetText("Tiªp tøc");--??
 
 end
 
 --=========================================================
---ÊÕÈ¡½±ÀøÎïÆ·µÄ¶Ô»°¿ò
+--Ê È¡½±ÀøÎïÆ·µÄ¶Ô»°¿ò
 --=========================================================
 function Quest_MissionRewardUpdate()
 	g_nQuestState = QUEST_STATE_AFTER_CONTINUE;
@@ -482,8 +482,8 @@ function Quest_MissionRewardUpdate()
 	Quest_Button_Continue:Enable();
 	Quest_Button_Accept:Disable();
 	Quest_Button_Accept:SetProperty( "Flash", "0" );
-	Quest_Button_Refuse:SetText("È¡Ïû");--È¡Ïû
-	Quest_Button_Continue:SetText("Íê³É");--Íê³É
+	Quest_Button_Refuse:SetText("Hüy bö");--??
+	Quest_Button_Continue:SetText("Hoàn thành");--??
 
 	local nTextNum, nBonusNum = DataPool:GetMissionContinue_Num();
 
@@ -505,19 +505,19 @@ function Quest_MissionRewardUpdate()
 
 		if(strType == "money"  and nNum > 0) then
 			if(nRadio_Necessary == 1) then
-				QuestGreeting_Desc:AddTextElement("#Y¹Ì¶¨½±Àø:#W")
+				QuestGreeting_Desc:AddTextElement("#Yc ğ¸nh thß·ng cho: #W")
 				nRadio_Necessary = 0;
 			end
 			QuestGreeting_Desc:AddMoneyElement(nNum);
 		elseif(strType == "moneyjz" and nNum > 0) then
 			if(nRadio_Necessary == 1) then
-				QuestGreeting_Desc:AddTextElement("#Y¹Ì¶¨½±Àø:#W")
+				QuestGreeting_Desc:AddTextElement("#Yc ğ¸nh thß·ng cho: #W")
 				nRadio_Necessary = 0;
 			end
 			QuestGreeting_Desc:AddJiaoZiElement(nNum);
 		elseif(strType == "item") then
 			if(nRadio_Necessary == 1) then
-				QuestGreeting_Desc:AddTextElement("#Y¹Ì¶¨½±Àø:#W")
+				QuestGreeting_Desc:AddTextElement("#Yc ğ¸nh thß·ng cho: #W")
 				nRadio_Necessary = 0;
 			end
 --			QuestGreeting_Desc:AddItemElement(nItemID, nNum, 0);
@@ -530,7 +530,7 @@ function Quest_MissionRewardUpdate()
 			end
 		elseif(strType == "itemrand") then
 			if(nRadio_Necessary == 1) then
-				QuestGreeting_Desc:AddTextElement("#Y¹Ì¶¨½±Àø:#W")
+				QuestGreeting_Desc:AddTextElement("#Yc ğ¸nh thß·ng cho: #W")
 				nRadio_Necessary = 0;
 			end
 			QuestGreeting_Desc:AddItemElement(-1, nNum, 0);
@@ -539,9 +539,9 @@ function Quest_MissionRewardUpdate()
 			if (nRadio == 1) then
 				nRadio = 0;
 				if nRadio_Necessary == 1 then
-					QuestGreeting_Desc:AddTextElement("#YÄã¿ÉÒÔ´ÓÒÔÏÂ½±ÀøÖĞÑ¡ÔñÒ»Ïî:#W");
+					QuestGreeting_Desc:AddTextElement("#YNHî có th¬ Thung dß¾i thß·ng cho trúng tuy¬n TrÕch hÕng nh¤t: #W");
 				else
-					QuestGreeting_Desc:AddTextElement("#Y»¹¿ÉÒÔ´ÓÒÔÏÂ½±ÀøÖĞÑ¡ÔñÒ»Ïî:#W");
+					QuestGreeting_Desc:AddTextElement("#YcÒn có th¬ Thung dß¾i thß·ng cho trúng tuy¬n TrÕch hÕng nh¤t: #W");
 				end
 
 			end
@@ -627,7 +627,7 @@ function MissionContinue_Clicked()
 				--È¡Ïû¹ØĞÄ
 				StopCareObject_Quest(objCared);
 			else
-				PushDebugMessage("ÇëÑ¡Ôñ½±ÀøÎïÆ·£¡");
+				PushDebugMessage("Thïnh lña ch÷n thß·ng cho v§t ph¦m!");
 			end
 		else
 				QuestFrameMissionComplete(g_nRewardItemID);
@@ -671,7 +671,7 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØĞÄNPC£¬
---ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 --Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function BeginCareObject_Quest(objCaredId)
@@ -836,9 +836,9 @@ function Quest_HaoRen_Help(nIndex)
 		QuestGreeting_Desc:AddTextElement( "#{XMPWH_20220906_15}" )
 	elseif nIndex == "13" then
 		QuestGreeting_Desc:AddTextElement( "#{SWXT_221213_214}" )
-	elseif nIndex == "14" then--²»ÀÏ³¤´º¹ÈÔ¤ÈÈÈÎÎñ
+	elseif nIndex == "14" then--?????????
 		QuestGreeting_Desc:AddTextElement( "#{CCYR_221220_105}" )
-	elseif nIndex == "15" then-- 2023Q2°æ±¾ÎÈ»î-ÊøÃ‘Ö®Àñ ¶şÑ¡Ò»ÀñºĞ½çÃæ
+	elseif nIndex == "15" then-- 2023Q2????-???? ???????
 		QuestGreeting_Desc:AddTextElement( "#{SXZL_032901_152}" )
 	elseif nIndex == "16" then
 		QuestGreeting_Desc:AddTextElement( "#{JYHD_230331_148}" )
@@ -848,9 +848,9 @@ function Quest_HaoRen_Help(nIndex)
 		QuestGreeting_Desc:AddTextElement( "#{QXFL_20230721_10}" )
 	elseif nIndex == "19" then
 		QuestGreeting_Desc:AddTextElement( "#{QXFL_20230721_12}" )
-	elseif nIndex == "20" then--2022Q3Ê±×°ÍÅ¹º
+	elseif nIndex == "20" then--2022Q3????
 		QuestGreeting_Desc:AddTextElement( "#{SZTG_230825_3}" )
-	elseif nIndex == "21" then--2023Q4Ê±×°Ëæ»ú±¦Ïä
+	elseif nIndex == "21" then--2023Q4??????
 		QuestGreeting_Desc:AddTextElement( "#{SZSJ_231114_11}" )
 	elseif nIndex == "22" then--
 		QuestGreeting_Desc:AddTextElement( "#{ZLSJ_231106_84}" )
@@ -863,9 +863,9 @@ function Quest_HaoRen_Help(nIndex)
 	elseif nIndex == "26" then
 		QuestGreeting_Desc:AddTextElement( "#{DHLS_240611_107}" )
 	elseif nIndex == "40" then
-		QuestGreeting_Desc:AddTextElement( "#Y¹ØÓÚÎä¾³#r#r    #Wµ±½ÇÉ«µÈ¼¶´ïµ½#G85#W¼¶Ê±£¬¿ÉÒÔµã»÷Ö÷½çÃæ°´Å¥£º#GÎä¾³íÂÍ¾#W½øĞĞÎä¾³Òıµ¼ÈÎÎñ£¬Íê³ÉÈÎÎñºó¼´¿É¿ªÆôÎä¾³¹¦ÄÜ¡£#r#r#cfabf8f¹ØÓÚÎä¾³µÈ¼¶#r#W    Îä¾³¹¦ÄÜ¿ªÆôºó½ÇÉ«¿ÉÌáÉı#GÎä¾³µÈ¼¶#W£¬Îä¾³µÈ¼¶Í¨¹ıÏûºÄ#GÎä¾³¾­Ñé#WÌáÉı£¬µ±Îä¾³¾­Ñé´ïµ½ĞèÒªµÄÊıÁ¿Ê±£¬Îä¾³µÈ¼¶½«×Ô¶¯ÌáÉı¡£Îä¾³µÈ¼¶ÉÏÏŞÎª#G200#W¼¶£¬Îä¾³µÈ¼¶Ã¿ÖÜ×î¶à¿ÉÌáÉı#G7#W¼¶£¬¿ÉÌáÉıµÈ¼¶½«ÔÚÃ¿#GÖÜÈÕ24Ê±#WÖØÖÃ¡£#r#r#cfabf8f¹ØÓÚÎä¾³µÈ¼¶Ìá¹©µÄÊôĞÔ#r#W    Îä¾³µÈ¼¶Ã¿ÌáÉı#G1#W¼¶£¬½ÇÉ«¾ù¿É»ñµÃÊôĞÔ£¬Ã¿#G20#W¼¶£¨1-20¼¶¡¢21-40¼¶¡­¡­181-200¼¶£©½«°´ÕÕÒÔÏÂ#G¹Ì¶¨Ë³Ğò#W»ñµÃÊôĞÔ£º#r    #G1¡¢Íâ¹¦¹¥»÷#r    2¡¢Íâ¹¦·ÀÓù#r    3¡¢ÄÚ¹¦¹¥»÷#r    4¡¢ÄÚ¹¦·ÀÓù#r    5¡¢ÌåÁ¦#r    6¡¢Á¦Á¿#r    7¡¢ÁéÆø#r    8¡¢¶¨Á¦#r    9¡¢Éí·¨#r    10¡¢¹¥»÷Îä¾÷µã#r    11¡¢Íâ¹¦¹¥»÷#r    12¡¢Íâ¹¦·ÀÓù#r    13¡¢ÄÚ¹¦¹¥»÷#r    14¡¢ÄÚ¹¦·ÀÓù#r    15¡¢ÌåÁ¦#r    16¡¢Á¦Á¿#r    17¡¢ÁéÆø#r    18¡¢¶¨Á¦#r    19¡¢Éí·¨#r    20¡¢ÊØÓùÎä¾÷µã#W#r#r#cfabf8f¹ØÓÚÎä¾³Õæ¾÷#r#W    Îä¾³Õæ¾÷·ÖÎª#G¹¥»÷Îä¾÷#WºÍ#GÊØÓùÎä¾÷#W£¬¹¥»÷Îä¾÷ºÍÊØÓùÎä¾÷Ëæ×ÅÎä¾³µÈ¼¶ÌáÉı×î¶à¿ÉÒÔÑ¡Ôñ#G3#W¸öÃÅÅÉÉúĞ§£¬Î´±»Ñ¡ÔñµÄÃÅÅÉÔò²»ÊÜÓ°Ïì¡£#r    µ±»¥Ñ¡Îª¹¥»÷Îä¾÷ºÍÊØÓùÎä¾÷ÃÅÅÉµÄË«·½½øĞĞPKÊ±£¬ĞèÓÃÒ»·½µÄ¹¥»÷Îä¾÷µãºÍÁíÒ»·½µÄÊØÓùÎä¾÷µã½øĞĞ#G²îÖµ¼ÆËã#W¡£#r    ÈôÒ»·½µÄ#G¹¥»÷Îä¾÷µã#W¸ß£¬ÔòÃ¿¸ß#G1#Wµã¿É¶ÔÁíÒ»·½Ôì³ÉµÄÉËº¦Ôö¼Ó#G1%#W£¬×î¸ßÔö¼Ó#G5%#W¡£#r    ÈôÒ»·½µÄ#GÊØÓùÎä¾÷µã#W¸ß£¬ÔòÃ¿¸ß#G1#Wµã¿ÉÊ¹¶Ô·½¶ÔÒÑ·½Ôì³ÉµÄÉËº¦¼õÉÙ#G1%#W£¬×î¸ß¼õÉÙ#G5%#W¡£#r    ËùÑ¡ÃÅÅÉºÍÎä¾÷µã¿ÉÍ¨¹ıÏûºÄ#G1#W¸ö#YÎä¾÷Ò×½îµ¤#WÖØÖÃ¡£".."#r#r#cfabf8f¹ØÓÚÎä¾³×·¸Ï#W#r    Ã¿¸ö·şÎñÆ÷¾ù´æÔÚ#GÎä¾³µÈ¼¶#W£¬Îä¾³µÈ¼¶Ëæ×Å#G·şÎñÆ÷Ê±¼ä#WµÄÍÆÒÆÒ²½«#G»ñµÃ³É³¤#W£¬µ±Ç°·şÎñÆ÷Îä¾³µÈ¼¶¿ÉÇ°Íù#G´óÀí#{_INFOAIM217,43,2,ĞşÖÇ·¨Ê¦}#RĞşÖÇ·¨Ê¦#Wµã»÷¹ØÓÚÑ¡Ïî²é¿´¡£µ±ÉÙÏÀ×ÔÉíÎä¾³µÈ¼¶#GÂäºóÓÚ#W·şÎñÆ÷Îä¾³µÈ¼¶ÇÒÍê³ÉÁË#GÎä¾³íÂÍ¾ÈÎÎñ#WÊ±£¬ÔÚ²ÎÓë»÷°Ü¹ÖÎï»ñµÃÎä¾³¾­ÑéÊ±£¬»á¶îÍâ»ñµÃÒ»¶¨µÄÎä¾³¾­Ñé¡£ÈôÉÙÏÀµ±Ç°´¦ÓÚ#YÎäÁéµ¤#WĞ§¹ûÏÂ£¬Ôò¿ÉÏíÊÜ#G50%#WµÄ#G¶îÍâ¼ÓËÙĞ§¹û#W¡£#r    ÉÙÏÀÔÚÎä¾³×·¸Ï×´Ì¬ÏÂÃ¿ÖÜÎä¾³µÈ¼¶ÌáÉı´ÎÊı×î¶à¶îÍâÔö¼Ó#G3#W´Î£¬×î¶à¿É´ï#G10#W´Î¡£" )
+		QuestGreeting_Desc:AddTextElement( "#Yv? Võ Cänh#r#r #WĞang vai di­n c¤p b§c ğÕt t¾i#G85#WC¤p Th¶i, có th¬ Ği¬m Kích Chü m£t biên cái nút: #GVõ Cänh L® Ğ°#Wtiªn hành Võ Cänh dçn ğß¶ng nhi®m vø, hoàn thành nhi®m vø H§u có th¬ m· ra Võ Cänh công nång. #r#r#cfabf8fv« Võ Cänh c¤p b§c#r#W Võ Cänh công nång m· ra H§u vai di­n Khä tång lên#GVõ Cänh c¤p b§c#W, V  Cänh c¤p b§c thông qua tiêu hao#GVõ Cänh kinh nghi®m#Wtång lên, Ğang Võ Cänh kinh nghi®m ğÕt t¾i c¥n Ğích s¯ lßşng Th¶i, Võ Cänh c¤p b§c Tß¾ng tñ ğµng tång lên. Võ Cänh c¤p b§c hÕn mÑc cao nh¤t Vi#G200#WC¤p, Võ Cänh c¤p b§c M²i Chu nhi«u nh¤t Khä tång lên#G7#WC¤p, Khä tång lên c¤p b§c Tß¾ng TÕi M²i#GChu Nh§t 24Th¶i#WTrùng Trí. #r#r#cfabf8fv« Võ Cänh c¤p b§c cung c¤p Ğích thuµc tính#r#W Võ Cänh c¤p b§c M²i tång lên#G1#WC¤p, vai di­n Quân Khä nh§n ğßşc thuµc tính, M²i#G20#WC¤p(1-C¤p 20, 21-C¤p 40……181-200C¤p) Tß¾ng dña theo dß¾i#Gc¯ ğ¸nh trình tñ#Wnh§n ğßşc thuµc tính: #r #G1, ngoÕi công công kích#r 2, ngoÕi công phòng ngñ#r 3, nµi công công kích#r 4, nµi công phòng ngñ#r 5, th¬ lñc#r 6, lñc lßşng#r 7, Linh Khí#r 8, ğ¸nh lñc#r 9, thân pháp#r 10, công kích Võ Quyªt Ği¬m#r 11, ngoÕi công công kích#r 12, ngoÕi công phòng ngñ#r 13, nµi công công kích#r 14, nµi công phòng ngñ#r 15, th¬ lñc#r 16, lñc lßşng#r 17, Linh Khí#r 18, ğ¸nh lñc#r 19, thân pháp#r 20, Thü Ngñ Võ Quyªt Ği¬m#W#r#r#cfabf8fv« Võ Cänh chân quyªt#r#W Võ Cänh chân quyªt chia làm#Gcông kích Võ Quyªt#WHoà#GThü Ngñ Võ Quyªt#W, công kích Võ Quyªt Hoà Thü Ngñ Võ Quyªt theo Võ Cänh c¤p b§c tång lên nhi«u nh¤t có th¬ lña ch÷n#G3#WCá môn phái có hi®u lñc, V¸ B¸ lña ch÷n Ğích môn phái T¡c không th¬ änh hß·ng. #r Ğang H² Tuy¬n Vi công kích Võ Quyªt Hoà Thü Ngñ Võ Quyªt môn phái Ğích song phß½ng tiªn hành PKTh¶i, Nhu Døng Nh¤t Phß½ng Ğích công kích Võ Quyªt Ği¬m Hoà mµt khác Phß½ng Ğích Thü Ngñ Võ Quyªt Ği¬m tiªn hành#GSai Tr¸ tính toán#W. #r Nhßşc Nh¤t Phß½ng Ğích#Gcông kích Võ Quyªt Ği¬m#WCao, T¡c M²i Cao#G1#WĞi¬m có ğúng không mµt khác Phß½ng tÕo thành Ğích thß½ng t±n gia tång#G1%#W, cao nh¤t gia tång#G5%#W. #r Nhßşc Nh¤t Phß½ng Ğích#GThü Ngñ Võ Quyªt Ği¬m#WCao, T¡c M²i Cao#G1#WĞi¬m có th¬ làm cho ğ¯i phß½ng Ğ¯i Dî Phß½ng tÕo thành Ğích thß½ng t±n giäm b¾t#G1%#W, cao nh¤t giäm b¾t#G5%#W. #r S· Tuy¬n môn phái Hoà Võ Quyªt Ği¬m Khä thông qua tiêu hao#G1#WCá#YVõ Quyªt d¸ch cân Ğan#WTrùng Trí.".."#r#r#cfabf8fv« Võ Cänh ğu±i theo#W#R t×ng phøc vø Khí Quân t°n tÕi#GVõ Cänh c¤p b§c#W, V  Cänh c¤p b§c theo#Gphøc vø Khí th¶i gian#WĞích chuy¬n d¶i Dã Tß¾ng#Gnh§n ğßşc l¾n d¥n#W, trß¾c m£t phøc vø Khí Võ Cänh c¤p b§c Khä ği trß¾c#GĞÕi Lı#{_INFOAIM217, 43, 2, Huy«n Trí pháp sß}#RHuy«n Trí pháp sß#WĞi¬m Kích v« Tuy¬n HÕng xem xét. Ğang thiªu hi®p tñ thân Võ Cänh c¤p b§c#GlÕc h§u Vu#Wphøc vø Khí Võ Cänh c¤p b§c Thß hoàn thành Li­u#GVõ Cänh L® Ğ° nhi®m vø#WTh¶i, TÕi tham dñ ğánh bÕi quái v§t nh§n ğßşc Võ Cänh kinh nghi®m Th¶i, Hµi thêm vào nh§n ğßşc nh¤t ğ¸nh Ğích Võ Cänh kinh nghi®m. Nhßşc thiªu hi®p trß¾c m£t b¸ vây#YVõ Linh Ğan#Whi®u quä HÕ, T¡c Khä hß·ng thø#G50%#WĞích#Gthêm vào gia t¯c hi®u quä#W. #r thiªu hi®p TÕi Võ Cänh ğu±i theo trÕng thái HÕ M²i Chu Võ Cänh c¤p b§c tång lên s¯ l¥n nhi«u nh¤t thêm vào gia tång#G3#WThÑ, nhi«u nh¤t có th¬ ğÕt t¾i#G10#WThÑ." )
 	elseif nIndex == "41" then
-		QuestGreeting_Desc:AddTextElement( "#Y¹ØÓÚÎä¾³Õæ¾÷#r#r#W    Îä¾³Õæ¾÷·ÖÎª#G¹¥»÷Îä¾÷#WºÍ#GÊØÓùÎä¾÷#W£¬¹¥»÷Îä¾÷ºÍÊØÓùÎä¾÷Ëæ×ÅÎä¾³µÈ¼¶ÌáÉı×î¶à¿ÉÒÔÑ¡Ôñ#G3#W¸öÃÅÅÉÉúĞ§£¬Î´±»Ñ¡ÔñµÄÃÅÅÉÔò²»ÊÜÓ°Ïì¡£#r    µ±»¥Ñ¡Îª¹¥»÷Îä¾÷ºÍÊØÓùÎä¾÷ÃÅÅÉµÄË«·½½øĞĞPKÊ±£¬ĞèÓÃÒ»·½µÄ¹¥»÷Îä¾÷µãºÍÁíÒ»·½µÄÊØÓùÎä¾÷µã½øĞĞ#G²îÖµ¼ÆËã#W¡£#r    ÈôÒ»·½µÄ#G¹¥»÷Îä¾÷µã#W¸ß£¬ÔòÃ¿¸ß#G1#Wµã¿É¶ÔÁíÒ»·½Ôì³ÉµÄÉËº¦Ôö¼Ó#G1%#W£¬×î¸ßÔö¼Ó#G5%#W¡£#r    ÈôÒ»·½µÄ#GÊØÓùÎä¾÷µã#W¸ß£¬ÔòÃ¿¸ß#G1#Wµã¿ÉÊ¹¶Ô·½¶ÔÒÑ·½Ôì³ÉµÄÉËº¦¼õÉÙ#G1%#W£¬×î¸ß¼õÉÙ#G5%#W¡£#r    ËùÑ¡ÃÅÅÉºÍÎä¾÷µã¿ÉÍ¨¹ıÏûºÄ#G1#W¸ö#YÎä¾÷Ò×½îµ¤#WÖØÖÃ¡£" )
+		QuestGreeting_Desc:AddTextElement( "#Yv? Võ Cänh chân quyªt#r#r#W Võ Cänh chân quyªt chia làm#Gcông kích Võ Quyªt#WHoà#GThü Ngñ Võ Quyªt#W, cÔng kích Võ Quyªt Hoà Thü Ngñ Võ Quyªt theo Võ Cänh c¤p b§c tång lên nhi«u nh¤t có th¬ lña ch÷n#G3#WCá môn phái có hi®u lñc, V¸ B¸ lña ch÷n Ğích môn phái T¡c không th¬ änh hß·ng. #r Ğang H² Tuy¬n Vi công kích Võ Quyªt Hoà Thü Ngñ Võ Quyªt môn phái Ğích song phß½ng tiªn hành PKTh¶i, Nhu Døng Nh¤t Phß½ng Ğích công kích Võ Quyªt Ği¬m Hoà mµt khác Phß½ng Ğích Thü Ngñ Võ Quyªt Ği¬m tiªn hành#GSai Tr¸ tính toán#W. #r Nhßşc Nh¤t Phß½ng Ğích#Gcông kích Võ Quyªt Ği¬m#WCao, T¡c M²i Cao#G1#WĞi¬m có ğúng không mµt khác Phß½ng tÕo thành Ğích thß½ng t±n gia tång#G1%#W, cao nh¤t gia tång#G5%#W. #r Nhßşc Nh¤t Phß½ng Ğích#GThü Ngñ Võ Quyªt Ği¬m#WCao, T¡c M²i Cao#G1#WĞi¬m có th¬ làm cho ğ¯i phß½ng Ğ¯i Dî Phß½ng tÕo thành Ğích thß½ng t±n giäm b¾t#G1%#W, cao nh¤t giäm b¾t#G5%#W. #r S· Tuy¬n môn phái Hoà Võ Quyªt Ği¬m Khä thông qua tiêu hao#G1#WCá#YVõ Quyªt d¸ch cân Ğan#WTrùng Trí." )
 	end
 
 	this:Show()

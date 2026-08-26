@@ -471,7 +471,7 @@ function Profile_RideChoose_HelpClick()
 	
 end
 
---关闭按钮
+--关睜按钮
 function Profile_RideChoose_CloseClick()	
 
 	Profile_RideChoose_CleanUp()

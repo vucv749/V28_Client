@@ -200,8 +200,8 @@ function CommonSkill_Update()
 	--PushDebugMessage("sumcommon:"..tostring(nSumCommonSkill)..",index:"..tostring(Begin_Index)..",page:"..tostring(Current_Page)..",sumskill:"..tostring(nSumSkill))
 	
 	--bug30290£¬alan£¬2007-12-26
-	--Ç°ÃæµÄ´úÂëÔÚÆÕÍ¨¼¼ÄÜµÚÒ»Ò³Ìí¼ÓÁËÕäÊŞ³öÕ½ÓëÕäÊŞĞİÏ¢Á½¸ö¼¼ÄÜ£¬ÕâÑùÏàµ±ÓÚÆÕÍ¨¼¼ÄÜµÄ×ÜÊıÊµ¼ÊÉÏ¶àÁË2¸ö
-	--ÔÚÅĞ¶ÏÊÇ·ñÔÊĞí·­Ò³°´Å¥Ê±Ò²ĞèÒª¿¼ÂÇÕâ¶à³öÀ´µÄ2¸ö¼¼ÄÜ
+	--Ç°ÃæµÄ´úÂëÔÚÆ Í¨¼¼ÄÜµÚÒ»Ò³Ìí¼ÓÁË äÊŞ³ö ½Óë äÊŞĞİÏ¢Á½¸ö¼¼ÄÜ£¬ âÑùÏàµ±ÓÚÆ Í¨¼¼ÄÜµÄ×ÜÊıÊµ¼ÊÉÏ¶àÁË2¸ö
+	--ÔÚÅĞ¶ÏÊÇ·ñÔÊĞí·­Ò³°´Å¥Ê±Ò²ĞèÒª¿¼ÂÇ â¶à³öÀ´µÄ2¸ö¼¼ÄÜ
 	--if (Current_Page+1)*COMMON_BUTTONS_NUM <= nSumCommonSkill then
 	if (Current_Page+1)*COMMON_BUTTONS_NUM < nSumCommonSkill+2 then
 		CommonSkill_PageDown : Enable();
@@ -218,7 +218,7 @@ function CommonSkill_Update()
 			return 1
 		end
 
-		if skillid >= 3593 and skillid <= 3598 then		--ÎäµÀ¶şÆÚ
+		if skillid >= 3593 and skillid <= 3598 then		--????
 			return 1
 		end
 
@@ -280,10 +280,10 @@ function CommonSkill_Buttons_Clicked(nIndex)
 		local thisAction;
 		if(nIndex ==1 )then
 			thisAction = Pet:GetPetFightAction();
-			strExplan = "#{Action_Pet_Fight_Exp}"; --"#c54FF00£¨ÍÏÖÁ¿ì½İÀ¸ÖĞÊ¹ÓÃ£©#r#cFFFFFFÔËÆøÊ±¼ä£º2.5Ãë#rÕÙ»½µ±Ç°Ñ¡ÔñµÄÕäÊŞ³öÕ½£¬ĞèÒªÕäÊŞ¿ìÀÖÔÚ60ÒÔÉÏ¡£"
+			strExplan = "#{Action_Pet_Fight_Exp}"; --"#c54FF00(kéo vào thanh phím t¡t sØ døng)#r#cFFFFFFv§n khí th¶i gian: 2. 5Sao#rg÷i v« trß¾c m£t lña ch÷n Ğích Trân Thú Xu¤t Chiªn, c¥n Trân Thú Khoái LÕc TÕi 60ğã ngoài."
 		else
 			thisAction = Pet:GetPetRelaxAction();
-			strExplan = "#{Action_Pet_Relex_Exp}";--"#c54FF00£¨ÍÏÖÁ¿ì½İÀ¸ÖĞÊ¹ÓÃ£©#r#cFFFFFFÔËÆøÊ±¼ä£º2.5Ãë#rÕÙ»½µ±Ç°Ñ¡ÔñµÄÕäÊŞ³öÕ½£¬ĞèÒªÕäÊŞ¿ìÀÖÔÚ60ÒÔÉÏ¡£"
+			strExplan = "#{Action_Pet_Relex_Exp}";--"#c54FF00(kéo vào thanh phím t¡t sØ døng)#r#cFFFFFFv§n khí th¶i gian: 2. 5Sao#rg÷i v« trß¾c m£t lña ch÷n Ğích Trân Thú Xu¤t Chiªn, c¥n Trân Thú Khoái LÕc TÕi 60ğã ngoài."
 		end
 		strName = thisAction:GetName();
 		CommonSkill_Target_Skill_Name : SetText( strName );
@@ -369,7 +369,7 @@ function Common_Action_Page_Switch()
 		CommonSkill_LifeSkill : SetCheck(0);
 		CommonSkill_ShenFenSkill : SetCheck(0);
 		CommonSkill_CommonlySkill : SetCheck(1);
-		PushDebugMessage("Äã»¹Ã»ÓĞ°İÈëÃÅÅÉ¡£");
+		PushDebugMessage("Nhî còn không có Bái nh§p môn Phái.");
 		return; 
 	end;
 	OpenSkillBook();
@@ -419,10 +419,10 @@ function CommonSkill_SetTabColor()
 							};
 
 	local TAB_TEXT = {
-		[0] = "ÆÕÍ¨",
-		"ÃÅÅÉ",
-		"Éú»î",
-		"ÃË»á",
+		[0] = "S½ C¤p",
+		"Môn phái",
+		"Cuµc s¯ng",
+		"Minh Hµi",
 	};
 	
 	tab[0]:SetText(selColor..TAB_TEXT[0]);

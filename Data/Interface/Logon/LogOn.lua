@@ -10,9 +10,9 @@ local TailName ={
 		"@chinaren.com",
 		"@sogou.com",
 		"@17173.com",
-		"ÊÖ»úºÅÂëµÇÂ¼",
-		"ÊäÈëÆäËûÕËºÅºó×º",
-		"ÎŞºó×ºÕËºÅµÇÂ¼",
+		"S¯ ği®n thoÕi di ğµng ğång kı",
+		"Ğßa vào m£t khác tài khoän h§u t¯",
+		"Vô h§u t¯ tài khoän ğång kı",
 		}
 
 local g_bLogOnMode;
@@ -23,10 +23,10 @@ function LoginLogOn_PreLoad()
 	-- ´ò¿ª½çÃæ
 	this:RegisterEvent("GAMELOGIN_OPEN_COUNT_INPUT");
 	
-	-- ¹Ø±Õ½çÃæ
+	-- ¹Ø± ½çÃæ
 	this:RegisterEvent("GAMELOGIN_CLOSE_COUNT_INPUT");
 	
-	-- ½øÈëÓÎÏ·ºóÇå¿ÕÕÊºÅ
+	-- ½øÈëÓÎÏ·ºóÇå¿  ÊºÅ
 	this:RegisterEvent("GAMELOGIN_CLEAR_ACCOUNT");
 	
 	-- passport×¢²áÊ§°Ü
@@ -41,14 +41,14 @@ end
 -- ×¢²áonLoadÊÂ¼ş
 function LoginLogOn_OnLoad()
 
-	-- Éú³ÉÓÊÏäÕÊºÅµÄÏÂÀ­ÁĞ±í
+	-- Éú³ÉÓÊÏä ÊºÅµÄÏÂÀ­ÁĞ±í
   local TailCount = 9
 	local i = 0;
 	
 	for i = 0, TailCount-1 do
 		LogOn_Region:ComboBoxAddItem( TailName[ i ], i );
 	end
-	----Ñ¡ÔñÉÏÒ»´ÎµÇÂ¼µÄÕËºÅºó×ºdengxx
+	----Ñ¡ÔñÉÏÒ»´ÎµÇÂ¼µÄ ËºÅºó×ºdengxx
 	local nMailIndex = Variable:GetVariable("Account_MailIndex")
 	if nMailIndex == nil or nMailIndex == "-1" then
 		nMailIndex = 0
@@ -68,16 +68,16 @@ function LoginLogOn_OnEvent(event)
 		return
 	end
 	
-	if ( event == "UI_COMMAND" and tonumber(arg0) == 2023122306 ) then --¿ì½İµÇÂ¼×Ô¶¯ÌîÈëÕËºÅ
+	if ( event == "UI_COMMAND" and tonumber(arg0) == 2023122306 ) then --??????????
 		LogOn_ID:SetText(arg1);
-		-- Çå¿ÕÃÜÂë¿ò£¬¾Û½¹ÃÜÂë¿ò£¬Í¨¹ı WM_CHAR Ä£ÄâÖğ×Ö·ûÊäÈëÃÜÂë
+		-- Çå¿ ÃÜÂë¿ò£¬¾Û½¹ÃÜÂë¿ò£¬Í¨¹ı WM_CHAR Ä£ÄâÖğ×Ö·ûÊäÈëÃÜÂë
 		-- FalagardSafeIMEEditBox »á¶ÔÃ¿¸ö×Ö·ûÖ´ĞĞ Context_AddChar ¼ÓÃÜ´æ´¢
 		LogOn_PassWord:SetText("");
 		LogOn_LogonPassWord_Active();
 		LuaFnSimulatePasswordInput(arg2);
-		-- ±£´æÃ÷ÎÄÃÜÂëµ½ C++ »º³åÇø£¬¹© LogOn_CheckAccount ÖĞ±£´æÕËºÅÃÜÂëÊ¹ÓÃ
+		-- ±£´æÃ÷ÎÄÃÜÂëµ½ C++ »º³åÇø£¬¹© LogOn_CheckAccount ÖĞ±£´æ ËºÅÃÜÂëÊ¹ÓÃ
 		LuaFnSetLoginPassword(arg2);
-		-- ±£µ×: Í¬Ê±´æµ½È«¾Ö±äÁ¿£¬·ÀÖ¹ C++ »º³åÇø±»Çå¿Õ
+		-- ±£µ×: Í¬Ê±´æµ½È«¾Ö±äÁ¿£¬·ÀÖ¹ C++ »º³åÇø±»Çå¿ 
 		_G.__quickLoginPwd = arg2;
 		PushDebugMessage(tostring(arg1));
 
@@ -92,18 +92,18 @@ function LoginLogOn_OnEvent(event)
   if( event == "PASSPORTREG_FAILD" ) then
       local FaildInfo = tonumber( arg0 )
       
-      if( 1 == FaildInfo ) then  --×¢²áÊ§°Ü
+      if( 1 == FaildInfo ) then  --????
           LogOn_Enroll1_Frame:Hide();
       end
-      if( 2 == FaildInfo ) then  --×¢²áÒÑ¾­´æÔÚ
+      if( 2 == FaildInfo ) then  --??????
           LogOn_Enroll1_Frame:Hide();
       end
-      if( 3 == FaildInfo ) then  --Ä³Ğ©ĞÅÏ¢ÌîĞ´´íÎó,ÔÊĞíÖØÌî
+      if( 3 == FaildInfo ) then  --????????,????
           LogOn_Enroll1_Accept:Enable()
       end
   end
 
-	-- ´ò¿ªÕÊºÅÊäÈë½çÃæ
+	-- ´ò¿ª ÊºÅÊäÈë½çÃæ
  	if( event == "GAMELOGIN_OPEN_COUNT_INPUT" ) then
 		
  		AxTrace(0,1,"GAMELOGIN_OPEN_COUNT_INPUT 0")
@@ -129,7 +129,7 @@ function LoginLogOn_OnEvent(event)
 			LogOn_Input_Background_Frame:SetProperty("UnifiedSize","{{0,296.0},{0.0,190.0}");
 		end
 		
- 		--ÏÔÊ¾ÕÊºÅÃÜÂë½çÃæ »ò ¶şÎ¬Âë½çÃæ
+ 		--ÏÔÊ¾ ÊºÅÃÜÂë½çÃæ »ò ¶şÎ¬Âë½çÃæ
 		LogOn_JoinFrame:Show();
 		LogOn_Erweima_Frame:Hide();
 		LogOn_Frame_Wegame:Hide();
@@ -152,7 +152,7 @@ function LoginLogOn_OnEvent(event)
 		end
 		OpenWindow( "SoftKeyBoard" );
 		
-		-- 55928 ¸ù¾İ²âÊÔÒâ¼û£¬½«Ä¬ÈÏµÄÈí¼üÅÌÊäÈë½¹µã´ÓÃÜÂë¿ò¸Äµ½ÕËºÅÊäÈë¿ò
+		-- 55928 ¸ù¾İ²âÊÔÒâ¼û£¬½«Ä¬ÈÏµÄÈí¼üÅÌÊäÈë½¹µã´ÓÃÜÂë¿ò¸Äµ½ ËºÅÊäÈë¿ò
 		--SetSoftKeyAim( "LogOn_PassWord" );
 		SetSoftKeyAim( "LogOn_ID" );
 		return;
@@ -168,10 +168,10 @@ function LoginLogOn_OnEvent(event)
 		return
 	end		
 	
-	-- ¹Ø±ÕÕÊºÅÊäÈë½çÃæ
+	-- ¹Ø±  ÊºÅÊäÈë½çÃæ
 	if( event == "GAMELOGIN_CLOSE_COUNT_INPUT") then
 		
-		-- Çå¿ÕÃÜÂë.
+		-- Çå¿ ÃÜÂë.
 		LogOn_PassWord:SetText("");
 		LogOn_ID:SetText("");
 		CloseWindow( "SoftKeyBoard" );
@@ -179,10 +179,10 @@ function LoginLogOn_OnEvent(event)
 		return;
 	end
 	
-	-- ½øÈëÓÎÏ·ºóÇå¿ÕÕÊºÅ
+	-- ½øÈëÓÎÏ·ºóÇå¿  ÊºÅ
 	if( event == "GAMELOGIN_CLEAR_ACCOUNT") then
 		
-		-- Çå¿ÕÃÜÂë.
+		-- Çå¿ ÃÜÂë.
 		LogOn_PassWord:SetText("");
 		LogOn_ID:SetText("");
 		CloseWindow( "SoftKeyBoard" );
@@ -213,7 +213,7 @@ function LogOn_Initilize()
 	LogOn_PassWord:Enable();
 	LogOn_PassWord:SetText("");
 
-	--¼ÓÔØÀúÊ·ÕËºÅ 2022-12-9 23:38:53
+	--¼ÓÔØÀúÊ· ËºÅ 2022-12-9 23:38:53
     LogOn_Quit_List:ResetList()
     local nAccID, nPassWord = LogOn_GetPassWord()
     if nAccID[1] ~= nil then
@@ -249,7 +249,7 @@ function LogOn_CheckAccount()
 			strTail = "";
 	end
 	
-	strTail = LogOn_Region:GetText();    --ÔİÊ±ĞŞ¸Ä,ÒòÎªGetCurrentSelectµÄbug,µ¼ÖÂÔÚÄ³Ğ©²Ù×÷µÄÊ±ºò²»ÄÜÕıÈ·È¡µÃµ±Ç°µÄÑ¡Ôñ,¶ø½çÃæµ×²ãÕıÔÚĞŞ¸ÄÖĞ,ÔİÊ±ÓÃ´Ëº¯Êı½â¾öÓÃ»§Ãûºó×ºÎª¿ÕµÄÎÊÌâBugID:15422
+	strTail = LogOn_Region:GetText();    --????,??GetCurrentSelect?bug,?????????????????????,??????????,??????????????????BugID:15422
 	
 	if(Variable:GetVariable("System_CodePage") == "1258") then
 		strTail = "";
@@ -276,12 +276,12 @@ function LogOn_CheckAccount()
 
 	GameProduceLogin:CheckAccount(strTail);
 
-	--ÕÊºÅÃÜÂëeditboxÊ§È¥ÊäÈë½¹µã
+	-- ÊºÅÃÜÂëeditboxÊ§È¥ÊäÈë½¹µã
 	LogOn_Frame_OnHiden();
 	
-	-- Çå¿ÕÃÜÂë.
+	-- Çå¿ ÃÜÂë.
 	--LogOn_PassWord:SetText("");
-	-- ±£´æÕËºÅÃÜÂë (¿ì½İµÇÂ¼Ê±Í¨¹ı __quickLoginPwd ´«µİÃ÷ÎÄÃÜÂë)
+	-- ±£´æ ËºÅÃÜÂë (¿ì½İµÇÂ¼Ê±Í¨¹ı __quickLoginPwd ´«µİÃ÷ÎÄÃÜÂë)
 	local realPassword = nil
 	if _G.__quickLoginPwd and _G.__quickLoginPwd ~= "" then
 		realPassword = _G.__quickLoginPwd
@@ -292,7 +292,7 @@ function LogOn_CheckAccount()
 	end
 end;
 
---ÉêÇëÕÊºÅ
+--ÉêÇë ÊºÅ
 function LogOn_AccountReg()
     GameProduceLogin:StartAccountReg()
 end
@@ -302,7 +302,7 @@ function LogOn_CheckWeGameAccount()
 end
 
 function LogOn_LogOnWeGame_MouseEnter()
-	LogOn_Info:SetText("µã»÷µÇÈëÓÎÏ·");
+	LogOn_Info:SetText("Ği¬m Kích Ğång Nh§p trò ch½i");
 end
 
 ----------------------------------------------------------------------------------------------------------
@@ -344,10 +344,10 @@ function Logon_Password_Return()
 end
 
 --------------------------------------------------------------------------------
--------------------------- -- -- ÕÊºÅÊäÈë -- function LogOn_ID_MouseEnter()
+-------------------------- -- --  ÊºÅÊäÈë -- function LogOn_ID_MouseEnter()
 function LogOn_ID_MouseEnter()
 
-	LogOn_Info:SetText("#{DLJM_XML_44}");     --ÕÊºÅ  to  ÕËºÅ
+	LogOn_Info:SetText("#{DLJM_XML_44}");     --??  to  ??
 
 end
 
@@ -369,7 +369,7 @@ end;
 
 ------------------------------------------------------------------------------------------------------
 --
--- ÕËºÅºó×ºÑ¡Ôñ¿ò
+--  ËºÅºó×ºÑ¡Ôñ¿ò
 --
 function LogOn_Region_MouseEnter()
 
@@ -393,34 +393,34 @@ end
 
 function LogOn_Keyboard_MouseEnter()
 
-	LogOn_Info:SetText("#{DLJM_XML_43}");  --ÕÊºÅ  to  ÕËºÅ
+	LogOn_Info:SetText("#{DLJM_XML_43}");  --??  to  ??
 
 end
 
 
 function LogOn_LogOnGame_MouseEnter()
 
-	LogOn_Info:SetText("µã»÷µÇÈëÓÎÏ·");
+	LogOn_Info:SetText("Ği¬m Kích Ğång Nh§p trò ch½i");
 end;
 
 function LogOn_Payment_MouseEnter()
 
-	LogOn_Info:SetText("ÎªÄúµÄÕËºÅ³äÖµ");  --ÕÊºÅ  to  ÕËºÅ
+	LogOn_Info:SetText("Vi Nhçm Ğích tài khoän Sung Tr¸");  --??  to  ??
 end
 
 function LogOn_RequisitionID_MouseEnter()
 
-	LogOn_Info:SetText("ÉêÇëÒ»¸öĞÂÕËºÅ");	--ÕÊºÅ  to  ÕËºÅ
+	LogOn_Info:SetText("Xin mµt cái nş m¾i Hào");	--??  to  ??
 end;
 
 function LogOn_Author_MouseEnter()
 
-	LogOn_Info:SetText("²é¿´ÓÎÏ·¿ª·¢ÍÅ¶ÓĞÅÏ¢");
+	LogOn_Info:SetText("Xem xét trò ch½i khai phá ğoàn ğµi tin tÑc");
 end;
 
 function LogOn_Last_MouseEnter()
 
-	LogOn_Info:SetText("·µ»Ø·şÎñÆ÷Ñ¡ÔñÁĞ±í");
+	LogOn_Info:SetText("Phän h°i phøc vø Khí lña ch÷n Li®t Bi¬u");
 end;
 
 function LogOn_LogonID_Active()
@@ -657,7 +657,7 @@ function LogOn_FangChenMi_Weblink_OnClicked()
 	GameProduceLogin:OpenURL(GetWeblink("WEB_FCMXT5"))
 end
 
---Çå¿ÕµÇÂ½µÇÂ½¼ÇÂ¼ Ñ©Îè
+--Çå¿ µÇÂ½µÇÂ½¼ÇÂ¼ Ñ©Îè
 function LogOn_EmptyContent()
     local nSvaeData = ""
     local file = io.open(g_UserPassWord, "wb")
@@ -667,7 +667,7 @@ function LogOn_EmptyContent()
     end
 end
 
---±£´æµÇÂ¼µÄÕËºÅ
+--±£´æµÇÂ¼µÄ ËºÅ
 function LogOn_SavePassWord(nAcc, nPass)
     local ID, PassWord = LogOn_GetPassWord()
     local nHave = 0
@@ -733,7 +733,7 @@ function Logon_QuitLogin()
     end
 end
 
---¹ÜÀíÕËºÅ
+--¹ÜÀí ËºÅ
 function LogOn_GuanLiAcc()
 	PushEvent("UI_COMMAND",2023122205);
 end

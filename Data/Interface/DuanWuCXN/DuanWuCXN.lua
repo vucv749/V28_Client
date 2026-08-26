@@ -9,10 +9,10 @@ local g_ChoseButton = {}
 local g_Tips = {}
 local g_Reward = 
 {
-	[1] = {itemId = 20310168, num = 8, times = 5,},--金蚕丝*8
-	[2] = {itemId = 50313004, num = 1, times = 10,},--红宝石3级
-	[3] = {itemId = 20501003, num = 1, times = 20,},--3级棉布
-	[4] = {itemId = 20502003, num = 1, times = 30,},--3级秘银
+	[1] = {itemId = 20310168, num = 8, times = 5,},--???*8
+	[2] = {itemId = 50313004, num = 1, times = 10,},--???3?
+	[3] = {itemId = 20501003, num = 1, times = 20,},--3???
+	[4] = {itemId = 20502003, num = 1, times = 30,},--3???
 }
 local g_Res = {0,0,0,0,0}
 local g_Result = {
@@ -61,7 +61,7 @@ function DuanWuCXN_PreLoad()
 	this:RegisterEvent("ADJEST_UI_POS", false)
 	this:RegisterEvent("OBJECT_CARED_EVENT", false)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED", false)
-	this:RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- 离开场景
+	this:RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- ????
 
 end
 
@@ -134,7 +134,7 @@ end
 --=========================================================
 function DuanWuCXN_OnEvent(event)
 
-	if (event == "UI_COMMAND" and tonumber(arg0) == 89115201) then --打开界面
+	if (event == "UI_COMMAND" and tonumber(arg0) == 89115201) then --????
 		DuanWuCXN_Clear()
 		DuanWuCXN_ShowAnimate:Hide()
 		DuanWuCXN_ShowAnimate:Play(false)
@@ -158,7 +158,7 @@ function DuanWuCXN_OnEvent(event)
 		DuanWuCXN_ShowFrame()
 		this:Show()
 
-	elseif (event == "UI_COMMAND" and tonumber(arg0) == 89115202) then --刷新界面
+	elseif (event == "UI_COMMAND" and tonumber(arg0) == 89115202) then --????
 		
 
 		DuanWuCXN_Clear()
@@ -187,7 +187,7 @@ function DuanWuCXN_OnEvent(event)
 		g_objCared = DataPool : GetNPCIDByServerID(g_TargetId)
 		DuanWuCXN_ConvertRes()
 		DuanWuCXN_ShowFrame()
-	elseif (event == "UI_COMMAND" and tonumber(arg0) == 89115203) then --刷新界面
+	elseif (event == "UI_COMMAND" and tonumber(arg0) == 89115203) then --????
 		g_MF[1] = Get_XParam_INT(0)
 		g_MF[2] = Get_XParam_INT(1)
 		g_MF[3] = Get_XParam_INT(2)
@@ -288,12 +288,12 @@ function DuanWuCXN_ShowFrame()
 	else
 		DuanWuCXN_Todaylevel3_Award:SetActionItem( -1 );
 	end
-	--显示珍品 玩家没猜的时候
+	--显示犱品 玩家没猜的时候
 	if g_RestTimes == 3 then
 		g_LiangPinImageNULL[1][1]:SetProperty("Image",g_Pic[g_Result[3][1]].image)
 		g_LiangPinImageNULL[2][1]:SetProperty("Image",g_Pic[g_Result[4][1]].image)
 		g_LiangPinImageNULL[3][1]:SetProperty("Image",g_Pic[g_Result[5][1]].image)
-	else--玩家猜了
+	else--????
 		g_LiangPinImageNULL[1][1]:SetProperty("Image",g_Pic[g_Result[3][1]].image)
 		g_LiangPinImageNULL[2][1]:SetProperty("Image",g_Pic[g_Result[4][1]].image)
 		g_LiangPinImageNULL[3][1]:SetProperty("Image",g_Pic[g_Result[5][1]].image)
@@ -377,7 +377,7 @@ end
 
 
 --=========================================================
--- 关闭界面
+-- 关睜界面
 --=========================================================
 function DuanWuCXN_OnClosed()
 	if g_objCared ~= -1 then

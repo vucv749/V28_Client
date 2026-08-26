@@ -4,9 +4,9 @@ local g_DaHua_Goto_Frame_UnifiedYPosition
 
 local g_Rand_MainCity =
 {
-	[1] = {PosX = 142, PosZ = 82, Scene = 700, Name = "Å£ºçºç"}, --´äÆÁÉ½
-	[2] = {PosX = 163, PosZ = 150, Scene = 701, Name = "ËïĞ¡Îä"}, --Ë®Á±¶´
-	[3] = {PosX = 123, PosZ = 152, Scene = 702, Name = "ÀîÌì¾ü"}, --shiji
+	[1] = {PosX = 142, PosZ = 82, Scene = 700, Name = "Ngßu H°ng H°ng"}, --???
+	[2] = {PosX = 163, PosZ = 150, Scene = 701, Name = "Tôn Ti¬u Võ"}, --???
+	[3] = {PosX = 123, PosZ = 152, Scene = 702, Name = "Lı Thiên Quân"}, --shiji
 }
 
 local g_UI_Info = {
@@ -19,7 +19,7 @@ local g_StageImage = {
 	[2] = "set:DaHua_PvE image:DaHua_PVE2",
 	[3] = "set:DaHua_PvE2 image:DaHua_PVE3",
 }
---Ô¤¼ÓÔØº¯Êı£¬¿ÉÒÔ¶øÇÒÖ»ÄÜÔÚÕâÀï×¢²á½Å±¾¹ØĞÄµÄÊÂ¼ş
+--Ô¤¼ÓÔØº¯Êı£¬¿ÉÒÔ¶øÇÒÖ»ÄÜÔÚ âÀï×¢²á½Å±¾¹ØĞÄµÄÊÂ¼ş
 function DaHua_Goto_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
 	-- ÓÎÏ·´°¿Ú³ß´ç·¢ÉúÁË±ä»¯
@@ -91,7 +91,7 @@ function DaHua_Goto_OnHide()
 	this:Hide()
 end
 
---¹Ø±Õ½çÃæ
+--¹Ø± ½çÃæ
 function DaHua_Goto_Hide()
 	this:Hide()
 end

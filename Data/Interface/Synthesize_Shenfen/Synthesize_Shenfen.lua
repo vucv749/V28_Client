@@ -15,10 +15,10 @@ local ShowBindWin	=	-1
 local g_Current_Ability = -1 
 local ShowBindByPrescr	= {}
 local SpecialItemAcceptID = {
-	[21000024] = 1,--±ùÊôÐÔ´òÔìËØ²Ä
-	[21000025] = 1,--»ðÊôÐÔ´òÔìËØ²Ä
-	[21000026] = 1,--ÐþÊôÐÔ´òÔìËØ²Ä
-	[21000027] = 1,--¶¾ÊôÐÔ´òÔìËØ²Ä
+	[21000024] = 1,--???????
+	[21000025] = 1,--???????
+	[21000026] = 1,--???????
+	[21000027] = 1,--???????
 
 	-- [21000027] = 1,--¶¨Î»·û´òÔìËØ²Ä
 }
@@ -170,24 +170,24 @@ function Synthesize_Shenfen_OnEvent(event)
 	-- 	return;
 	elseif ( event == "UINT_IBPOWER" and tostring(arg0) == "player" and this:IsVisible()) then
 		strName = Player : GetData("IBPOWER");
-		Synthesize_Shenfen_CurrentlyEnergy1 : SetText("#{SFJN_231225_22}"..strName)--ÌØÊâÌåÁ¦Öµ
+		Synthesize_Shenfen_CurrentlyEnergy1 : SetText("#{SFJN_231225_22}"..strName)--?????
 		return;
 	elseif ( event == "UNIT_ABILITYEXP" and this:IsVisible()) then
 		strName = Player : GetAbilityInfo(Prescr_Ability,"skillexp");
 		local level= Player:GetAbilityInfo(Prescr_Ability,"level");
 		local max_exp
 		if level > 12 or level < 1 then
-			max_exp = "¡Þ"
+			max_exp = "8"
 		else
 			max_exp = LifeAbility : GetLifeAbility_LimitExp(Prescr_Ability,level);
 		end
 
 		strName = Player : GetAbilityInfo(Prescr_Ability,"skillexp");
-		Synthesize_Shenfen_SkilledGrade:SetText("¼¼ÄÜÊìÁ·¶È£º"..strName.."/"..max_exp);
+		Synthesize_Shenfen_SkilledGrade:SetText("KÛ nång thu¥n thøc Ðµ:"..strName.."/"..max_exp);
 		return;
 	elseif ( event == "UPDATE_LIFESKILL_PAGE" and this:IsVisible()) then
 		local szLevel = Player : GetAbilityInfo(Prescr_Ability,"level");
-		Synthesize_Shenfen_Level:SetText("¼¼ÄÜµÈ¼¶£º"..szLevel);
+		Synthesize_Shenfen_Level:SetText("KÛ nång c¤p b§c:"..szLevel);
 		return;
 	elseif ( event == "CHANGE_MAKE_COUNT" ) then
 		Synthesize_Shenfen_MadeAmount : SetText( tonumber(arg0) );
@@ -227,11 +227,11 @@ function Synthesize_Shenfen_UpdateItem()
 		local nLevel =  LifeAbility:LuaFnGetPrescrDetailInfo(nItemID, "LifeAbility_Level");
 
 		if(nLevel >0) then
-			szPrescrName = szPrescrName .. "£¨µÈ¼¶"..nLevel.."£© "
+			szPrescrName = szPrescrName .. "(c¤p b§c"..nLevel..")"
 		end
 
 		if 0 == LifeAbility:GetPrescr_IsStudy(nItemID) then
-			szPrescrName = szPrescrName .. " #cFF0000[Î´Ñ§»á]";
+			szPrescrName = szPrescrName .. "#cFF0000[V¸ h÷c ðßþc]";
 		else
 			local nMaxAmount = LifeAbility : GetPrescr_Item_Maximum(nItemID);
 			if nMaxAmount > 0 then
@@ -262,7 +262,7 @@ function Synthesize_Shenfen_UpdateItem()
 			if Prescr_Ability ~= 61 then 
 				Synthesize_Shenfen_SpecialMaterialNum:SetText("" )
 			elseif holdnum > 99 then 
-				Synthesize_Shenfen_SpecialMaterialNum:SetText("#cFFF263#e010101¡Þ/3" )
+				Synthesize_Shenfen_SpecialMaterialNum:SetText("#cFFF263#e0101018/3" )
 			elseif holdnum >= 3 then 
 				Synthesize_Shenfen_SpecialMaterialNum:SetText("#cFFF263#e010101"..holdnum.."/3")
 			else
@@ -351,11 +351,11 @@ function Synthesize_Shenfen_UpdateList()
 			local nMaxAmount = LifeAbility : GetPrescr_Item_Maximum(nPrescr);
 
 			if(nLevel >0) then
-				szPrescrName = szPrescrName .. "£¨µÈ¼¶"..nLevel.."£© "
+				szPrescrName = szPrescrName .. "(c¤p b§c"..nLevel..")"
 			end
 
 			if 0 == LifeAbility:GetPrescr_IsStudy(nPrescr) then
-				szPrescrName = szPrescrName .. " #cFF0000[Î´Ñ§»á]";
+				szPrescrName = szPrescrName .. "#cFF0000[V¸ h÷c ðßþc]";
 			else
 				local nMaxAmount = LifeAbility : GetPrescr_Item_Maximum(nPrescr);
 				if nMaxAmount > 0 then
@@ -407,17 +407,17 @@ function Synthesize_Shenfen_Update()
 
 	strName = Player : GetAbilityInfo(Prescr_Ability,"level");
 	local level = tonumber(strName);
-	Synthesize_Shenfen_Level:SetText("¼¼ÄÜµÈ¼¶£º"..strName);
+	Synthesize_Shenfen_Level:SetText("KÛ nång c¤p b§c:"..strName);
 
 	local max_exp;
 	if level > 11 or level < 1 then
-		max_exp = "¡Þ"
+		max_exp = "8"
 	else
 		max_exp = LifeAbility : GetLifeAbility_LimitExp(Prescr_Ability,level);
 	end
 
 	strName = Player : GetAbilityInfo(Prescr_Ability,"skillexp");
-	Synthesize_Shenfen_SkilledGrade:SetText("¼¼ÄÜÊìÁ·¶È£º"..strName.."/"..max_exp);
+	Synthesize_Shenfen_SkilledGrade:SetText("KÛ nång thu¥n thøc Ðµ:"..strName.."/"..max_exp);
 
 	-- strName = Player : GetData("VIGOR");
 	-- Synthesize_Shenfen_CurrentlyEnergy2 : SetText("µ±Ç°»îÁ¦£º"..strName)
@@ -427,7 +427,7 @@ function Synthesize_Shenfen_Update()
 	Synthesize_Shenfen_CurrentlyEnergy2 : SetText("")
 
 	strName = Player : GetData("IBPOWER");
-	Synthesize_Shenfen_CurrentlyEnergy1 : SetText("#{SFJN_231225_22}"..strName)--ÌØÊâÌåÁ¦Öµ
+	Synthesize_Shenfen_CurrentlyEnergy1 : SetText("#{SFJN_231225_22}"..strName)--?????
 
 	Synthesize_Shenfen_MadeAmount : SetText( tonumber(cur_count));
 
@@ -465,12 +465,12 @@ function Synthesize_Shenfen_HideCtrlOnNoSelect()
 		Material_Name[i] : SetText("");
 	end
 
-	Synthesize_Shenfen_Item : SetProperty("ShortImage","");   --ÉèÖÃÎªÎÞÍ¼±ê
+	Synthesize_Shenfen_Item : SetProperty("ShortImage","");   --??????
 	Synthesize_Shenfen_Item_Name_Text : SetText("");
 	Synthesize_Shenfen_Amount : SetText("");
 end
 
--- ÕûÌåÒþ²ØÊÖ¹¤×°±¸±£ÐÇÐÅÏ¢
+--  ûÌåÒþ²ØÊÖ¹¤×°±¸±£ÐÇÐÅÏ¢
 function Synthesize_Shenfen_HideEquipMakeNewLuckyInfo()
 	-- PushDebugMessage("Synthesize_Shenfen_HideEquipMakeNewLuckyInfo")
 	Synthesize_Shenfen_SpecialMaterial_SkilledAllNum : Hide()
@@ -488,7 +488,7 @@ end
 
 function Synthesize_Shenfen_ListBox_Selected()
 
-	-- ÕûÌåÒþ²ØÊÖ¹¤×°±¸±£ÐÇÐÅÏ¢
+	--  ûÌåÒþ²ØÊÖ¹¤×°±¸±£ÐÇÐÅÏ¢
 	Synthesize_Shenfen_HideEquipMakeNewLuckyInfo()
 
 	local nSelIndex = Synthesize_Shenfen_Item_List:GetFirstSelectItem();
@@ -616,37 +616,37 @@ function Synthesize_Shenfen_ListBox_Selected()
 	Synthesize_Shenfen_SpecialMaterialIcon_Frame : Show();
 	Synthesize_Shenfen_SpecialMaterial_Text : Show();
 	if Prescr_Ability == 61 and haveSpecialMaterial == 1 then
-		Synthesize_Shenfen_SpecialMaterial_WarningText : SetText("#cE6BA00ÇëÔÚÓÒ±ß·ÅÈë´òÔì²ÄÁÏ#cFFFF00ÊôÐÔ²ÄÁÏ#cE6BA00£¬ÕâÀàÌØÊâ²ÄÁÏ¿ÉÒÔÌáÉý×°±¸µÄÆ·ÖÊ")
+		Synthesize_Shenfen_SpecialMaterial_WarningText : SetText("#cE6BA00Thïnh bên phäi Biên ð¬ vào tÕo ra tài li®u#cFFFF00thuµc tính tài li®u#cE6BA00, loÕi này ð£c thù tài li®u có th¬ tång lên trang b¸ Ðích ph¦m ch¤t")
 		if NeedSpecial == 6 then 
-			Synthesize_Shenfen_SpecialMaterial : SetToolTip("#{SFJN_231225_73}")--ÌØÊâÊôÐÔ²ÄÁÏ:·²Æ·
+			Synthesize_Shenfen_SpecialMaterial : SetToolTip("#{SFJN_231225_73}")--??????:??
 		elseif NeedSpecial == 7 then 
-			Synthesize_Shenfen_SpecialMaterial : SetToolTip("#{SFJN_231225_84}")--ÌØÊâÊôÐÔ²ÄÁÏ:·²Æ·
+			Synthesize_Shenfen_SpecialMaterial : SetToolTip("#{SFJN_231225_84}")--??????:??
 		elseif NeedSpecial == 8 then 
-			Synthesize_Shenfen_SpecialMaterial : SetToolTip("#{SFJN_231225_85}")--ÌØÊâÊôÐÔ²ÄÁÏ:·²Æ·
+			Synthesize_Shenfen_SpecialMaterial : SetToolTip("#{SFJN_231225_85}")--??????:??
 		elseif NeedSpecial == 9 then 
-			Synthesize_Shenfen_SpecialMaterial : SetToolTip("#{SFJN_231225_86}")--ÌØÊâÊôÐÔ²ÄÁÏ:·²Æ·
+			Synthesize_Shenfen_SpecialMaterial : SetToolTip("#{SFJN_231225_86}")--??????:??
 		else
-			Synthesize_Shenfen_SpecialMaterial : SetToolTip("ÕÒ³ÌÐòÌØÐ´:"..NeedSpecial)--ÌØÊâÊôÐÔ²ÄÁÏ:·²Æ·
+			Synthesize_Shenfen_SpecialMaterial : SetToolTip("Träo trình tñ ð£c tä:"..NeedSpecial)--??????:??
 		end
 		Synthesize_Shenfen_SpecialMaterial:SetProperty( "DragAcceptName", "N4" );
 		-- Synthesize_Shenfen_SpecialMaterial:SetProperty("BackImage", "")
 	elseif Prescr_Ability == 62 and haveSpecialMaterial == 1 then
-		Synthesize_Shenfen_SpecialMaterial_WarningText : SetText("#cE6BA00ÇëÔÚÓÒ±ß·ÅÈë´òÔì²ÄÁÏ#cFFFF00ÊôÐÔ²ÄÁÏ#cE6BA00£¬ÕâÀàÌØÊâ²ÄÁÏ¿ÉÒÔÌáÉý×°±¸µÄÆ·ÖÊ")
+		Synthesize_Shenfen_SpecialMaterial_WarningText : SetText("#cE6BA00Thïnh bên phäi Biên ð¬ vào tÕo ra tài li®u#cFFFF00thuµc tính tài li®u#cE6BA00, loÕi này ð£c thù tài li®u có th¬ tång lên trang b¸ Ðích ph¦m ch¤t")
 		if nSelIndex == 1358 then 
-			Synthesize_Shenfen_SpecialMaterial : SetToolTip("#{SFDJ_240117_108}")--¶¨Î»·û²ÄÁÏ
+			Synthesize_Shenfen_SpecialMaterial : SetToolTip("#{SFDJ_240117_108}")--?????
 			Synthesize_Shenfen_SpecialMaterial:SetProperty( "DragAcceptName", "N5" );
 			-- Synthesize_Shenfen_SpecialMaterial:SetProperty("BackImage", "set:SongLiao02 image:SL_BH_Big2_Dis")
 		elseif nSelIndex == 1367 then 
-			Synthesize_Shenfen_SpecialMaterial : SetToolTip("Çë·ÅÈëÐ¡À®°È")--ÆæÎÅÐ¡À®°È²ÄÁÏ
+			Synthesize_Shenfen_SpecialMaterial : SetToolTip("Thïnh ð¬ vào Ti¬u LÕt Bát")--???????
 			Synthesize_Shenfen_SpecialMaterial:SetProperty( "DragAcceptName", "N6" );
 			-- Synthesize_Shenfen_SpecialMaterial:SetProperty("BackImage", "set:SongLiao02 image:SL_BH_Big2_Dis")
 		else
-			Synthesize_Shenfen_SpecialMaterial : SetToolTip("ItemCompoundHelperÓÐÅäÌØÊâ²ÄÁÏ,ÕÒ³ÌÐòÌØÐ´")
+			Synthesize_Shenfen_SpecialMaterial : SetToolTip("ItemCompoundHelperHæu Ph¯i ð£c thù tài li®u, Träo trình tñ ð£c tä")
 		end
 	elseif haveSpecialMaterial == 1 then 
-		Synthesize_Shenfen_SpecialMaterial : SetToolTip("ItemCompoundHelperÓÐÅäÌØÊâ²ÄÁÏ,ÕÒ³ÌÐòÌØÐ´")
+		Synthesize_Shenfen_SpecialMaterial : SetToolTip("ItemCompoundHelperHæu Ph¯i ð£c thù tài li®u, Träo trình tñ ð£c tä")
 	elseif NeedSpecial > 0 then 
-		Synthesize_Shenfen_SpecialMaterial : SetToolTip("ItemCompound.txtÓÐÅäÌØÊâ²ÄÁÏ,ÕÒ³ÌÐòÒªÌØÐ´")
+		Synthesize_Shenfen_SpecialMaterial : SetToolTip("ItemCompound. TxtHæu Ph¯i ð£c thù tài li®u, Träo trình tñ Yêu ð£c tä")
 	else
 		Synthesize_Shenfen_SpecialMaterial_Text : Hide();
 		Synthesize_Shenfen_SpecialMaterialIcon_Frame : Hide()
@@ -663,7 +663,7 @@ function Synthesize_Shenfen_ListBox_Selected()
 	-- local Consume_Vigor,Consume_Energy = LifeAbility : GetPrescr_Consume_Vigor_Energy(nSelIndex);
 	-- local Consume_Attr = LifeAbility : GetPrescr_Consume_ContriAttr(nSelIndex);
 	local Consume_Shengong = LifeAbility : GetPrescr_Consume_ShengongAttr(nSelIndex);
-	Synthesize_Shenfen_CurrentlyEnergy2 : SetText("#{SFJN_231225_82}"..Consume_Shengong)--Éñ¹¤ÖµÏûºÄ
+	Synthesize_Shenfen_CurrentlyEnergy2 : SetText("#{SFJN_231225_82}"..Consume_Shengong)--?????
 	-- local strName = ""
 	-- if Consume_Vigor >= 0 then
 	-- 	strName = strName .. "#r»ù´¡»îÁ¦ÏûºÄ£º".. tostring(Consume_Vigor);
@@ -709,7 +709,7 @@ function Synthesize_Shenfen_ListBox_Selected()
 			Material_Icon[i] : Show();
 			Material_Name[i] : SetText(name);
 			if holdnum > 99 then
-				Material_Num[i]  : SetText("#e010101¡Þ/" .. stuffnum);
+				Material_Num[i]  : SetText("#e0101018/" .. stuffnum);
 			else
 				Material_Num[i]  : SetText("#e010101" .. holdnum .. "/" .."#e010101" .. stuffnum);
 			end
@@ -754,15 +754,15 @@ function Synthesize_Shenfen_ListBox_Selected()
 	end
 
 	-- ¡°ÌØÊâ²ÄÁÏ¡±µÄ´¦Àí
-	-- ÓÉÓÚÏÖÔÚconfig.txt±íÖÐµÄÊý¾ÝÒÑ¾­±äµÄ²»¿ÉÐÅÈÎ£¨ºÜ¶à¶«Î÷¶¼ÊÇÒòÎªÔÚÒÑ¾­¶¨ºÃµÄ¹æÔòÉÏ£¬²ß»®Ìí´í±í£©£¬ÕâÀïÐ´ËÀÌØÀý
+	-- ÓÉÓÚÏÖÔÚconfig.txt±íÖÐµÄÊý¾ÝÒÑ¾­±äµÄ²»¿ÉÐÅÈÎ£¨ºÜ¶à¶«Î÷¶¼ÊÇÒòÎªÔÚÒÑ¾­¶¨ºÃµÄ¹æÔòÉÏ£¬²ß»®Ìí´í±í£©£¬ âÀïÐ´ËÀÌØÀý
 	-- Ö»ÓÐ¡°¾«Á¶¡±¡¢¡°¾«ÖÆ¡±¡¢¡°¾«¹¤¡±Ê±ºò£¬²Å´Ó±íÀïÅÐ¶ÏÊÇ·ñÐèÒªÌØÊâ²ÄÁÏ£¬²»ÔÙµ¥´¿ÒÀ¿¿±íÀ´ÅÐ¶Ï
 	if Prescr_Ability == 46 or Prescr_Ability == 47 or Prescr_Ability == 48 then
-		local NeedSpecial = LifeAbility : GetPrescr_Item_IsNeedSpecial( nSelIndex ) --È¡µÃÊÇ·ñÐèÒªÌØÊâ²ÄÁÏ
+		local NeedSpecial = LifeAbility : GetPrescr_Item_IsNeedSpecial( nSelIndex ) --??????????
 		-- 0£º¾«Ìú
 		-- 1£ºÃÞ²¼
 		-- 2£ºÃØÒø
 		if NeedSpecial >= 0 then
-			local SItem = Synthesize_Shenfen_SpecialMaterial:GetActionItem() --¼ì²â¿òÀïÓÐÃ»ÓÐ·ÅÈëÌØÊâ²ÄÁÏ
+			local SItem = Synthesize_Shenfen_SpecialMaterial:GetActionItem() --?????????????
 			if SItem > 0 and nMaxAmount > 0 then
 				Synthesize_Shenfen_Make : Enable();
 			else
@@ -850,7 +850,7 @@ function Synthesize_Shenfen_Do_Clicked()
 	if Synthesize_Shenfen_Special_Item ~= -1 then
 		local Item_ID = PlayerPackage : GetItemTableIndex(Synthesize_Shenfen_Special_Item);
 		if not SpecialItemAcceptID[Item_ID] then 
-			PushDebugMessage("#{_ITEM".. Item_ID .."}²»ÄÜÓÃÓÚºÏ³É¡£")
+			PushDebugMessage("#{_ITEM".. Item_ID .."}không th¬ dùng Vu hþp thành.")
 			return;
 		end
 		Is_Special_Item_Bind = PlayerPackage : GetItemBindStatusByIndex(Synthesize_Shenfen_Special_Item);
@@ -871,11 +871,11 @@ function Synthesize_Shenfen_Do_Clicked()
 				or (Prescr_Ability == 60 and LifeAbility:LuaFnGetPrescrDetailInfo(nSelIndex, "LifeAbility_Level")>=10)
 				or (Prescr_Ability == 61 and LifeAbility:LuaFnGetPrescrDetailInfo(nSelIndex, "LifeAbility_Level")>=10)
 				or (Prescr_Ability == 62 and LifeAbility:LuaFnGetPrescrDetailInfo(nSelIndex, "LifeAbility_Level")>=10)
-				or nSelIndex == 1210 --30007030ÁúÒþµ¤
-				or nSelIndex == 1365 --38003060¸ß¼¶ÑÌ»¨ÅçÉäÆ÷
-				or nSelIndex == 1373 --38003082À×Öé
-				or nSelIndex == 1374 --38003083ÌæÉíÖ½ÈË
-				or nSelIndex == 1375 then --38003084Èý²ÅÕ½Æì
+				or nSelIndex == 1210 --30007030???
+				or nSelIndex == 1365 --38003060???????
+				or nSelIndex == 1373 --38003082??
+				or nSelIndex == 1374 --38003083????
+				or nSelIndex == 1375 then --38003084????
 				PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{SFJN_231225_154}")
 				ShowBindByPrescr[nSelIndex] = 1
 				return
@@ -905,7 +905,7 @@ function Synthesize_Shenfen_Do_Clicked()
 	end
 
 	if nMake_Count > nMaxAmount then
-		PushDebugMessage("²ÄÁÏ²»×ã£¡")
+		PushDebugMessage("Tài li®u không ðü!")
 		return;
 	end
 
@@ -918,7 +918,7 @@ function Synthesize_Shenfen_Do_All_Clicked()
 	if Synthesize_Shenfen_Special_Item ~= -1 then
 		local Item_ID = PlayerPackage : GetItemTableIndex(Synthesize_Shenfen_Special_Item);
 		if not SpecialItemAcceptID[Item_ID] then 
-			PushDebugMessage("#{_ITEM".. Item_ID .."}²»ÄÜÓÃÓÚºÏ³É¡£")
+			PushDebugMessage("#{_ITEM".. Item_ID .."}không th¬ dùng Vu hþp thành.")
 			return
 		end
 		Is_Special_Item_Bind = PlayerPackage : GetItemBindStatusByIndex(Synthesize_Shenfen_Special_Item);
@@ -942,11 +942,11 @@ function Synthesize_Shenfen_Do_All_Clicked()
 				or (Prescr_Ability == 60 and LifeAbility:LuaFnGetPrescrDetailInfo(nSelIndex, "LifeAbility_Level")>=10)
 				or (Prescr_Ability == 61 and LifeAbility:LuaFnGetPrescrDetailInfo(nSelIndex, "LifeAbility_Level")>=10)
 				or (Prescr_Ability == 62 and LifeAbility:LuaFnGetPrescrDetailInfo(nSelIndex, "LifeAbility_Level")>=10)
-				or nSelIndex == 1210 --30007030ÁúÒþµ¤
-				or nSelIndex == 1365 --38003060¸ß¼¶ÑÌ»¨ÅçÉäÆ÷
-				or nSelIndex == 1373 --38003082À×Öé
-				or nSelIndex == 1374 --38003083ÌæÉíÖ½ÈË
-				or nSelIndex == 1375 then --38003084Èý²ÅÕ½Æì
+				or nSelIndex == 1210 --30007030???
+				or nSelIndex == 1365 --38003060???????
+				or nSelIndex == 1373 --38003082??
+				or nSelIndex == 1374 --38003083????
+				or nSelIndex == 1375 then --38003084????
 				PushEvent("GAMELOGIN_SHOW_SYSTEM_INFO", "#{SFJN_231225_154}")
 				ShowBindByPrescr[nSelIndex] = 1
 				return
@@ -999,7 +999,7 @@ function Update_Synthesize_Shenfen_Item(Item_index)
 		if not SpecialItemAcceptID[Item_ID] then 
 			local Item_ID = PlayerPackage : GetItemTableIndex(index)
 			local szName = LifeAbility:GetPrescr_Material(Item_ID)
-			PushDebugMessage("#B"..szName.."#W²»ÄÜÓÃÓÚ´ËÅä·½#W¡£")
+			PushDebugMessage("#B"..szName.."#WkHông th¬ dùng không sai ph¯i phß½ng#W.")
 			return
 		end
 
@@ -1014,7 +1014,7 @@ function Update_Synthesize_Shenfen_Item(Item_index)
 		if Prescr_Ability ~= 61 then 
 			Synthesize_Shenfen_SpecialMaterialNum:SetText("" )
 		elseif holdnum > 99 then 
-			Synthesize_Shenfen_SpecialMaterialNum:SetText("#cFFF263#e010101¡Þ/3" )
+			Synthesize_Shenfen_SpecialMaterialNum:SetText("#cFFF263#e0101018/3" )
 		elseif holdnum >= 3 then 
 			Synthesize_Shenfen_SpecialMaterialNum:SetText("#cFFF263#e010101"..holdnum.."/3")
 		else

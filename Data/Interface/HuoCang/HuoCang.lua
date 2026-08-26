@@ -3,15 +3,15 @@ local g_Frame_UnifiedYPosition;
 
 local g_HuoCangScene =
 {
-	[0]={sceneid=0,	name="ÂåÑô",		posx =149, posz =145,			type = 0, npcname = "³Ì²Ô°Ø",},
-	[1]={sceneid=3,	name="áÔÉ½",		posx =167, posz =221,			type = 0, npcname = "¿µ¼ÒÊµ",},
-	[2]={sceneid=4,	name="Ì«ºþ",		posx =180, posz =116.8,		type = 0, npcname = "ÕÔ´ó¹â",},
-	[3]={sceneid=1,	name="ËÕÖÝ",		posx =177, posz =150,			type = 0, npcname = "Ð»ÔÆÍ¤",},
-	[4]={sceneid=5,	name="¾µºþ",		posx =127.7, posz =150.6,	type = 0, npcname = "ÂÞñæ¹ó",},
-	[5]={sceneid=6,	name="ÎÞÁ¿É½",	posx =133.3, posz =119.5,	type = 0, npcname = "·½ÔòÌ©",},
-	[6]={sceneid=2, name="´óÀí",		posx =189, posz =135,			type = 0, npcname = "Ñî³½Óè",},
-	[7]={sceneid=7,	name="½£¸ó",		posx =137, posz =136.2,		type = 0, npcname = "°×ÎåÆß",},
-	[8]={sceneid=8,	name="¶Ø»Í",		posx =74.3, posz =82.7,		type = 0, npcname = "Ë¾Í½ÔÀ",},
+	[0]={sceneid=0,	name="LÕc Dß½ng",		posx =149, posz =145,			type = 0, npcname = "Trình Thß½ng Bách",},
+	[1]={sceneid=3,	name="Tung S½n",		posx =167, posz =221,			type = 0, npcname = "Khang Gia Thñc",},
+	[2]={sceneid=4,	name="Thái H°",		posx =180, posz =116.8,		type = 0, npcname = "Tri®u ÐÕi Quang",},
+	[3]={sceneid=1,	name="Tô Châu",		posx =177, posz =150,			type = 0, npcname = "TÕ Vân Ðình",},
+	[4]={sceneid=5,	name="Kính K°",		posx =127.7, posz =150.6,	type = 0, npcname = "La tñ phø",},
+	[5]={sceneid=6,	name="Vô Lßþng S½n",	posx =133.3, posz =119.5,	type = 0, npcname = "Phß½ng T¡c Thái",},
+	[6]={sceneid=2, name="ÐÕi Lý",		posx =189, posz =135,			type = 0, npcname = "Dß½ng Th¥n Dß",},
+	[7]={sceneid=7,	name="Kiªm Các",		posx =137, posz =136.2,		type = 0, npcname = "BÕch Ngû Th¤t",},
+	[8]={sceneid=8,	name="Ðôn Hoàng",		posx =74.3, posz =82.7,		type = 0, npcname = "Tß Ð° NhÕc",},
 }
 
 local g_HuoCangItem ={}
@@ -40,13 +40,13 @@ local Data_BuyPirce={}
 local Data_SellPirce={}
 local Data_SceneItemLvl={}
 
-local g_HuoCang_Zijin = 0 -- Íæ¼Ò×Ê½ð
-local g_HuoCang_ItemNum = 1 -- ÎïÆ·ÊýÁ¿
-local g_HuoCang_Item1 = 2 -- ÎïÆ·1
+local g_HuoCang_Zijin = 0 -- ????
+local g_HuoCang_ItemNum = 1 -- ????
+local g_HuoCang_Item1 = 2 -- ??1
 local g_HuoCang_Item1_Price = 3
-local g_HuoCang_Item2 = 4 -- ÎïÆ·2
+local g_HuoCang_Item2 = 4 -- ??2
 local g_HuoCang_Item2_Price = 5
-local g_HuoCang_Item3 = 6 -- ÎïÆ·3
+local g_HuoCang_Item3 = 6 -- ??3
 local g_HuoCang_Item3_Price = 7
 
 local g_HuoCangIndex_Item =

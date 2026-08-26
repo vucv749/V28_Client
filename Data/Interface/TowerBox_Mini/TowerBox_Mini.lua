@@ -9,8 +9,8 @@ function TowerBox_Mini_PreLoad()
     this:RegisterEvent("PTDB_OPEN_TOWERBOXMINI_UI", true)
     this:RegisterEvent("UI_COMMAND", true)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end
 
 function TowerBox_Mini_OnEvent(event)

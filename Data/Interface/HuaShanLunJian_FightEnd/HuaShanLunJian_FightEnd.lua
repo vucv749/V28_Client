@@ -45,8 +45,8 @@ local g_Image = {
 }
 -- 你会唱小星星吗？ 一闪一闪亮晶晶，满天都是小星星？ 不对哦，是大河向东流啊，天上的星星参北斗啊。
 local g_ImageStar = {
-						[1] = "set:HSLJ_01 image:HSLJ_Star", --亮星星
-						[2] = "set:HSLJ_01 image:HSLJ_StarGray",	--灰星星
+						[1] = "set:HSLJ_01 image:HSLJ_Star", --???
+						[2] = "set:HSLJ_01 image:HSLJ_StarGray",	--???
 }
 
 local g_Timer = -1
@@ -65,8 +65,8 @@ local g_UpTimer = -1
 local g_DownTimer = -1
 local g_CurStar = -1 
 local g_StarUpTime = 2
-local g_StarKongTime1 = 2 --升小段动画时间
-local g_StarKongTime2 = 2 --升大段动画时间
+local g_StarKongTime1 = 2 --???????
+local g_StarKongTime2 = 2 --???????
 local g_AllTime1 = g_StarUpTime + g_StarKongTime1 + g_StarUpTime
 local g_AllTime2 = g_StarUpTime + g_StarKongTime2 + g_StarUpTime
 -- 没有办法 全局不够用了 都塞一起了
@@ -104,7 +104,7 @@ function HuaShanLunJian_FightEnd_OnLoad()
 	g_Frame_UnifiedPosition[1]	= HuaShanLunJian_FightEnd_Frame:GetProperty("UnifiedXPosition");
 	g_Frame_UnifiedPosition[2]	= HuaShanLunJian_FightEnd_Frame:GetProperty("UnifiedYPosition");
 
-	--把界面上的空间都存到数组里
+	--把界面上的繝间都存到数组里
 	g_Star1={
 			[0] = HuaShanLunJian_FightEnd_Star1,
 			[1] = HuaShanLunJian_FightEnd_Star2,
@@ -191,7 +191,7 @@ function HuaShanLunJian_FightEnd_OnLoad()
 	HuaShanLunJian_FightEnd_CtrlList_InitData()
 end
 
--- 清空
+-- 清繝
 function HuaShanLunJian_FightEnd_CtrlList_InitData()
 
 	--HuaShanLunJian_FightEnd_RightBK_Text1:SetText("")
@@ -317,7 +317,7 @@ function HuaShanLunJian_FightEnd_ResetPos()
 	HuaShanLunJian_FightEnd_Frame:SetProperty("UnifiedXPosition", g_Frame_UnifiedPosition[1]);
 	HuaShanLunJian_FightEnd_Frame:SetProperty("UnifiedYPosition", g_Frame_UnifiedPosition[2]);
 end
--- 关闭函数
+-- 关睜函数
 function HuaShanLunJian_FightEndFrame_CloseWindow()
 	this:Hide()
 end
@@ -376,10 +376,10 @@ function HuaShanLunJian_FightEnd_Frame_FullFill_Data()
 			--HuaShanLunJian_FightEnd_Text:Show()
 			-- 填充左边的数据
 			local text2 = ScriptGlobal_Format("#{HSLJ_190919_190}",nCurStar)
-			HuaShanLunJian_FightEnd_StageBK_Text2:SetText(text2)--..g_DuanWei1[nCurMinorRank+6].."阶")
+			HuaShanLunJian_FightEnd_StageBK_Text2:SetText(text2)--..g_DuanWei1[nCurMinorRank+6].."Giai")
 		end
 		
-	elseif nCurMajorRank == nPreMajorRank and nCurMinorRank < nPreMinorRank then --升小段
+	elseif nCurMajorRank == nPreMajorRank and nCurMinorRank < nPreMinorRank then --???
 		if MatchId == 0 then
 			HuaShanLunJian_FightEnd_Image:SetProperty("Image", g_Image[12+nPreMajorRank])
 		elseif MatchId == 1 then
@@ -395,7 +395,7 @@ function HuaShanLunJian_FightEnd_Frame_FullFill_Data()
 		local text2 = ScriptGlobal_Format("#{HSLJ_190919_189}",g_DuanWei1[nPreMajorRank], g_DuanWei1[nPreMinorRank+6])
 		HuaShanLunJian_FightEnd_StageBK_Text2:SetText(text2)
 			
-	elseif nCurMajorRank > nPreMajorRank then --升大段
+	elseif nCurMajorRank > nPreMajorRank then --???
 		if MatchId == 0 then
 			HuaShanLunJian_FightEnd_Image:SetProperty("Image", g_Image[12+nPreMajorRank])
 		elseif MatchId == 1 then
@@ -431,13 +431,13 @@ function HuaShanLunJian_FightEnd_Frame_FullFill_Data()
 						g_StarAnim1[i]:Play(true)
 					end
 				end
-			elseif nCurStar == nPreStar then --没加也没减
+			elseif nCurStar == nPreStar then --?????
 				for i = 0,nCurStar-1 do
 					g_Star1[i]:SetProperty("Image", g_ImageStar[1])
 				end
 				
 			end
-		elseif nCurMajorRank == 2 then -- 白银
+		elseif nCurMajorRank == 2 then -- ??
 			for i = 0,3 do
 				g_Star2[i]:Show()
 				--PushDebugMessage(i)
@@ -454,12 +454,12 @@ function HuaShanLunJian_FightEnd_Frame_FullFill_Data()
 						g_StarAnim2[i]:Play(true)
 					end
 				end
-			elseif nCurStar == nPreStar then --没加也没减
+			elseif nCurStar == nPreStar then --?????
 				for i = 0,nCurStar-1 do
 					g_Star2[i]:SetProperty("Image", g_ImageStar[1])
 				end
 			end
-		elseif nCurMajorRank == 3 then -- 黄金
+		elseif nCurMajorRank == 3 then -- ??
 			for i = 0,4 do
 				g_Star3[i]:Show()
 				--PushDebugMessage(i)
@@ -476,12 +476,12 @@ function HuaShanLunJian_FightEnd_Frame_FullFill_Data()
 						g_StarAnim3[i]:Play(true)
 					end
 				end
-			elseif nCurStar == nPreStar then --没加也没减
+			elseif nCurStar == nPreStar then --?????
 				for i = 0,nCurStar-1 do
 					g_Star3[i]:SetProperty("Image", g_ImageStar[1])
 				end
 			end
-		elseif nCurMajorRank == 4 then -- 白金
+		elseif nCurMajorRank == 4 then -- ??
 			for i = 0,5 do
 				g_Star4[i]:Show()
 			end
@@ -497,12 +497,12 @@ function HuaShanLunJian_FightEnd_Frame_FullFill_Data()
 						g_StarAnim4[i]:Play(true)
 					end				
 				end
-			elseif nCurStar == nPreStar then --没加也没减
+			elseif nCurStar == nPreStar then --?????
 				for i = 0,nCurStar-1 do
 					g_Star4[i]:SetProperty("Image", g_ImageStar[1])
 				end
 			end
-		elseif nCurMajorRank == 5 then -- 钻石
+		elseif nCurMajorRank == 5 then -- ??
 			for i = 0,7 do
 				g_Star5[i]:Show()
 			end
@@ -518,7 +518,7 @@ function HuaShanLunJian_FightEnd_Frame_FullFill_Data()
 						g_StarAnim5[i]:Play(true)
 					end				
 				end
-			elseif nCurStar == nPreStar then --没加也没减
+			elseif nCurStar == nPreStar then --?????
 				for i = 0,nCurStar-1 do
 					g_Star5[i]:SetProperty("Image", g_ImageStar[1])
 				end
@@ -530,7 +530,7 @@ function HuaShanLunJian_FightEnd_Frame_FullFill_Data()
 					HuaShanLunJian_FightEnd_Star3_1:SetProperty("Image", g_ImageStar[1])
 					HuaShanLunJian_FightEnd_Star3Text:SetText(ScriptGlobal_Format("#{HSSC_191009_73}",nCurStar))
 				end
-			elseif nCurStar == nPreStar then --没加也没减
+			elseif nCurStar == nPreStar then --?????
 				HuaShanLunJian_FightEnd_Star3_1:Show()
 				HuaShanLunJian_FightEnd_Star3_1:SetProperty("Image", g_ImageStar[1])
 				HuaShanLunJian_FightEnd_Star3Text:SetText(ScriptGlobal_Format("#{HSSC_191009_73}",nCurStar))
@@ -543,7 +543,7 @@ function HuaShanLunJian_FightEnd_Frame_FullFill_Data()
 		if nCurMajorRank == 2 and nCurMajorRank > nPreMajorRank then
 		
 			g_UpType = 3
-			-- 先给这小老弟儿的星星都加特效
+			-- 先给犫小老弟儿的星星都加特效
 			for i = 0,2 do
 				g_Star1[i]:Show()
 				g_Star1[i]:SetProperty("Image", g_ImageStar[1])
@@ -552,10 +552,10 @@ function HuaShanLunJian_FightEnd_Frame_FullFill_Data()
 				g_StarAnim1[i]:Play(true)
 			end
 			SetTimer("HuaShanLunJian_FightEnd","HuaShanLunJian_FightEnd_1to2Timer()", 1000)
-		elseif nCurMajorRank == 3 and nCurMajorRank > nPreMajorRank then --升到黄金
+		elseif nCurMajorRank == 3 and nCurMajorRank > nPreMajorRank then --????
 			
 			g_UpType = 3
-			-- 先给这小老弟儿的星星都加特效
+			-- 先给犫小老弟儿的星星都加特效
 			for i = 0,3 do
 				g_Star2[i]:Show()
 				g_Star2[i]:SetProperty("Image", g_ImageStar[1])
@@ -564,10 +564,10 @@ function HuaShanLunJian_FightEnd_Frame_FullFill_Data()
 				g_StarAnim2[i]:Play(true)
 			end
 			SetTimer("HuaShanLunJian_FightEnd","HuaShanLunJian_FightEnd_2to3Timer()", 1000)
-		elseif nCurMajorRank == 4 and nCurMajorRank > nPreMajorRank then	--升到白金
+		elseif nCurMajorRank == 4 and nCurMajorRank > nPreMajorRank then	--????
 			
 				g_UpType = 3
-				-- 先给这小老弟儿的星星都加特效
+				-- 先给犫小老弟儿的星星都加特效
 				for i = 0,4 do
 					g_Star3[i]:Show()
 					g_Star3[i]:SetProperty("Image", g_ImageStar[1])
@@ -576,10 +576,10 @@ function HuaShanLunJian_FightEnd_Frame_FullFill_Data()
 					g_StarAnim3[i]:Play(true)
 				end
 			SetTimer("HuaShanLunJian_FightEnd","HuaShanLunJian_FightEnd_3to4Timer()", 1000)
-		elseif nCurMajorRank == 5 and nCurMajorRank > nPreMajorRank then --升到钻石
+		elseif nCurMajorRank == 5 and nCurMajorRank > nPreMajorRank then --????
 			
 				g_UpType = 3
-				-- 先给这小老弟儿的星星都加特效
+				-- 先给犫小老弟儿的星星都加特效
 				for i = 0,5 do
 					g_Star4[i]:Show()
 					g_Star4[i]:SetProperty("Image", g_ImageStar[1])
@@ -588,10 +588,10 @@ function HuaShanLunJian_FightEnd_Frame_FullFill_Data()
 					g_StarAnim4[i]:Play(true)
 				end
 			SetTimer("HuaShanLunJian_FightEnd","HuaShanLunJian_FightEnd_4to5Timer()", 1000)
-		elseif nCurMajorRank == 6 and nCurMajorRank > nPreMajorRank then --升到王者
+		elseif nCurMajorRank == 6 and nCurMajorRank > nPreMajorRank then --????
 			
 				g_UpType = 3
-				-- 先给这小老弟儿的星星都加特效
+				-- 先给犫小老弟儿的星星都加特效
 				for i = 0,7 do
 					g_Star5[i]:Show()
 					g_Star5[i]:SetProperty("Image", g_ImageStar[1])
@@ -607,7 +607,7 @@ function HuaShanLunJian_FightEnd_Frame_FullFill_Data()
 				g_CurMajorRank = nCurMajorRank
 				
 					g_UpType = 3
-					-- 先给这小老弟儿的星星都加特效
+					-- 先给犫小老弟儿的星星都加特效
 					for i = 0,2 do
 						g_Star1[i]:Show()
 						g_Star1[i]:SetProperty("Image", g_ImageStar[1])
@@ -621,7 +621,7 @@ function HuaShanLunJian_FightEnd_Frame_FullFill_Data()
 				g_CurMajorRank = nCurMajorRank
 				
 					g_UpType = 3
-					-- 先给这小老弟儿的星星都加特效
+					-- 先给犫小老弟儿的星星都加特效
 					for i = 0,3 do
 						g_Star2[i]:Show()
 						g_Star2[i]:SetProperty("Image", g_ImageStar[1])
@@ -635,7 +635,7 @@ function HuaShanLunJian_FightEnd_Frame_FullFill_Data()
 				g_CurMajorRank = nCurMajorRank
 				
 					g_UpType = 3
-					-- 先给这小老弟儿的星星都加特效
+					-- 先给犫小老弟儿的星星都加特效
 					for i = 0,4 do
 						g_Star3[i]:Show()
 						g_Star3[i]:SetProperty("Image", g_ImageStar[1])
@@ -649,7 +649,7 @@ function HuaShanLunJian_FightEnd_Frame_FullFill_Data()
 				g_CurMajorRank = nCurMajorRank
 				
 					g_UpType = 3
-					-- 先给这小老弟儿的星星都加特效
+					-- 先给犫小老弟儿的星星都加特效
 					for i = 0,5 do
 						g_Star4[i]:Show()
 						g_Star4[i]:SetProperty("Image", g_ImageStar[1])
@@ -663,7 +663,7 @@ function HuaShanLunJian_FightEnd_Frame_FullFill_Data()
 				g_CurMajorRank = nCurMajorRank
 				
 					g_UpType = 3
-					-- 先给这小老弟儿的星星都加特效
+					-- 先给犫小老弟儿的星星都加特效
 					for i = 0,7 do
 						g_Star5[i]:Show()
 						g_Star5[i]:SetProperty("Image", g_ImageStar[1])
@@ -698,7 +698,7 @@ function HuaShanLunJian_FightEnd_1to2Timer()
 		KillTimer("HuaShanLunJian_FightEnd_1to2Timer()")
 		return
 	end
-	if g_BigUpTimer == g_AllTime2 - g_StarUpTime then --播放升段动画,星星置为空星
+	if g_BigUpTimer == g_AllTime2 - g_StarUpTime then --??????,??????
 		HuaShanLunJian_FightEnd_GoupAnimate:Show()
 		HuaShanLunJian_FightEnd_ImageAnimate:Show()
 		HuaShanLunJian_FightEnd_GoupAnimate:SetProperty("Animate","HSLJ_GoupFlash")
@@ -710,8 +710,8 @@ function HuaShanLunJian_FightEnd_1to2Timer()
 		-- 给星星播特效留x秒
 	if g_BigUpTimer > g_AllTime2 - g_StarUpTime then
 		return 
-	elseif g_BigUpTimer > g_AllTime2 - g_StarUpTime - g_StarKongTime2 then --给升小段动画留时间
-		if g_BigUpTimer == g_AllTime2 - g_StarUpTime then --播放升段动画,星星置为空星
+	elseif g_BigUpTimer > g_AllTime2 - g_StarUpTime - g_StarKongTime2 then --?????????
+		if g_BigUpTimer == g_AllTime2 - g_StarUpTime then --??????,??????
 			-- 把上个段位的都隐掉，调用新的控件
 			for i = 0,2 do
 				g_StarAnim1[i]:Hide()
@@ -723,7 +723,7 @@ function HuaShanLunJian_FightEnd_1to2Timer()
 			end
 		end
 		return
-	elseif g_BigUpTimer == g_AllTime2 - g_StarUpTime - g_StarKongTime2 then --给加的第一个星星加特效。
+	elseif g_BigUpTimer == g_AllTime2 - g_StarUpTime - g_StarKongTime2 then --????????????
 		-- g_Star2[0]:SetProperty("Image", g_ImageStar[1])
 		-- g_StarAnim2[0]:Show()
 		-- g_StarAnim2[0]:SetProperty("Animate","HSLJ_LevelupStrars")
@@ -735,7 +735,7 @@ function HuaShanLunJian_FightEnd_1to2Timer()
 	if g_BigUpTimer == g_AllTime2 - g_StarUpTime - g_StarKongTime2 then
 		local MatchId = XBW:GetMatchId()
 		if MatchId == 0 then
-			HuaShanLunJian_FightEnd_Image:SetProperty("Image", g_Image[12+2]) -- 前面的数字是偏移量，后面的数字是当前的大段位
+			HuaShanLunJian_FightEnd_Image:SetProperty("Image", g_Image[12+2]) -- ?????????,????????????
 		elseif MatchId == 1 then
 			HuaShanLunJian_FightEnd_Image:SetProperty("Image", g_Image[0+2])
 		elseif MatchId == 2 then
@@ -744,7 +744,7 @@ function HuaShanLunJian_FightEnd_1to2Timer()
 			return 
 		end
 		HuaShanLunJian_FightEnd_Text:Show()
-		HuaShanLunJian_FightEnd_Text:SetProperty("Image", g_Image[3+18]) -- 后面的数字是偏移量，前面的数字是当前的小段位
+		HuaShanLunJian_FightEnd_Text:SetProperty("Image", g_Image[3+18]) -- ?????????,????????????
 		-- 填充左边的数据
 		local text2 = ScriptGlobal_Format("#{HSLJ_190919_189}",  g_DuanWei1[2], g_DuanWei1[3+6])
 		HuaShanLunJian_FightEnd_StageBK_Text2:SetText(text2)
@@ -757,7 +757,7 @@ function HuaShanLunJian_FightEnd_2to3Timer()
 		KillTimer("HuaShanLunJian_FightEnd_2to3Timer()")
 		return
 	end
-	if g_BigUpTimer == g_AllTime2 - g_StarUpTime then --播放升段动画,星星置为空星
+	if g_BigUpTimer == g_AllTime2 - g_StarUpTime then --??????,??????
 		HuaShanLunJian_FightEnd_GoupAnimate:Show()
 		HuaShanLunJian_FightEnd_ImageAnimate:Show()
 		HuaShanLunJian_FightEnd_GoupAnimate:SetProperty("Animate","HSLJ_GoupFlash")
@@ -769,8 +769,8 @@ function HuaShanLunJian_FightEnd_2to3Timer()
 	-- 给星星播特效留x秒
 	if g_BigUpTimer > g_AllTime2 - g_StarUpTime then
 		return 
-	elseif g_BigUpTimer > g_AllTime2 - g_StarUpTime - g_StarKongTime2 then --给升小段动画留时间
-		if g_BigUpTimer == g_AllTime2 - g_StarUpTime then --播放升段动画,星星置为空星
+	elseif g_BigUpTimer > g_AllTime2 - g_StarUpTime - g_StarKongTime2 then --?????????
+		if g_BigUpTimer == g_AllTime2 - g_StarUpTime then --??????,??????
 			-- 把上个段位的都隐掉，调用新的控件
 			for i = 0,3 do
 				g_StarAnim2[i]:Hide()
@@ -782,7 +782,7 @@ function HuaShanLunJian_FightEnd_2to3Timer()
 			end
 		end
 		return
-	elseif g_BigUpTimer == g_AllTime2 - g_StarUpTime - g_StarKongTime2 then --给加的第一个星星加特效。
+	elseif g_BigUpTimer == g_AllTime2 - g_StarUpTime - g_StarKongTime2 then --????????????
 		-- g_Star3[0]:SetProperty("Image", g_ImageStar[1])
 		-- g_StarAnim3[0]:Show()
 		-- g_StarAnim3[0]:SetProperty("Animate","HSLJ_LevelupStrars")
@@ -794,7 +794,7 @@ function HuaShanLunJian_FightEnd_2to3Timer()
 	if g_BigUpTimer == g_AllTime2 - g_StarUpTime - g_StarKongTime2 then
 		local MatchId = XBW:GetMatchId()
 		if MatchId == 0 then
-			HuaShanLunJian_FightEnd_Image:SetProperty("Image", g_Image[12+3]) -- 前面的数字是偏移量，后面的数字是当前的大段位
+			HuaShanLunJian_FightEnd_Image:SetProperty("Image", g_Image[12+3]) -- ?????????,????????????
 		elseif MatchId == 1 then
 			HuaShanLunJian_FightEnd_Image:SetProperty("Image", g_Image[0+3])
 		elseif MatchId == 2 then
@@ -803,7 +803,7 @@ function HuaShanLunJian_FightEnd_2to3Timer()
 			return 
 		end
 		HuaShanLunJian_FightEnd_Text:Show()
-		HuaShanLunJian_FightEnd_Text:SetProperty("Image", g_Image[3+18]) -- 后面的数字是偏移量，前面的数字是当前的小段位
+		HuaShanLunJian_FightEnd_Text:SetProperty("Image", g_Image[3+18]) -- ?????????,????????????
 		-- 填充左边的数据
 		local text2 = ScriptGlobal_Format("#{HSLJ_190919_189}", g_DuanWei1[3], g_DuanWei1[3+6])
 		HuaShanLunJian_FightEnd_StageBK_Text2:SetText(text2)
@@ -818,7 +818,7 @@ function HuaShanLunJian_FightEnd_3to4Timer()
 		KillTimer("HuaShanLunJian_FightEnd_3to4Timer()")
 		return
 	end
-	if g_BigUpTimer == g_AllTime2 - g_StarUpTime then --播放升段动画,星星置为空星
+	if g_BigUpTimer == g_AllTime2 - g_StarUpTime then --??????,??????
 		HuaShanLunJian_FightEnd_GoupAnimate:Show()
 		HuaShanLunJian_FightEnd_ImageAnimate:Show()
 		HuaShanLunJian_FightEnd_GoupAnimate:SetProperty("Animate","HSLJ_GoupFlash")
@@ -830,8 +830,8 @@ function HuaShanLunJian_FightEnd_3to4Timer()
 	-- 给星星播特效留x秒
 	if g_BigUpTimer > g_AllTime2 - g_StarUpTime then
 		return 
-	elseif g_BigUpTimer > g_AllTime2 - g_StarUpTime - g_StarKongTime2 then --给升小段动画留时间
-		if g_BigUpTimer == g_AllTime2 - g_StarUpTime then --播放升段动画,星星置为空星
+	elseif g_BigUpTimer > g_AllTime2 - g_StarUpTime - g_StarKongTime2 then --?????????
+		if g_BigUpTimer == g_AllTime2 - g_StarUpTime then --??????,??????
 			-- 把上个段位的都隐掉，调用新的控件
 			for i = 0,4 do
 				g_StarAnim3[i]:Hide()
@@ -843,7 +843,7 @@ function HuaShanLunJian_FightEnd_3to4Timer()
 			end
 		end
 		return
-	elseif g_BigUpTimer == g_AllTime2 - g_StarUpTime - g_StarKongTime2 then --给加的第一个星星加特效。
+	elseif g_BigUpTimer == g_AllTime2 - g_StarUpTime - g_StarKongTime2 then --????????????
 		-- g_Star4[0]:SetProperty("Image", g_ImageStar[1])
 		-- g_StarAnim4[0]:Show()
 		-- g_StarAnim4[0]:SetProperty("Animate","HSLJ_LevelupStrars")
@@ -855,7 +855,7 @@ function HuaShanLunJian_FightEnd_3to4Timer()
 	if g_BigUpTimer == g_AllTime2 - g_StarUpTime - g_StarKongTime2 then
 		local MatchId = XBW:GetMatchId()
 		if MatchId == 0 then
-			HuaShanLunJian_FightEnd_Image:SetProperty("Image", g_Image[12+4]) -- 前面的数字是偏移量，后面的数字是当前的大段位
+			HuaShanLunJian_FightEnd_Image:SetProperty("Image", g_Image[12+4]) -- ?????????,????????????
 		elseif MatchId == 1 then
 			HuaShanLunJian_FightEnd_Image:SetProperty("Image", g_Image[0+4])
 		elseif MatchId == 2 then
@@ -864,7 +864,7 @@ function HuaShanLunJian_FightEnd_3to4Timer()
 			return 
 		end
 		HuaShanLunJian_FightEnd_Text:Show()
-		HuaShanLunJian_FightEnd_Text:SetProperty("Image", g_Image[4+18]) -- 后面的数字是偏移量，前面的数字是当前的小段位
+		HuaShanLunJian_FightEnd_Text:SetProperty("Image", g_Image[4+18]) -- ?????????,????????????
 		-- 填充左边的数据
 		--HuaShanLunJian_FightEnd_StageBK_Text2:SetText(g_DuanWei1[MatchId+12].." "..g_DuanWei1[4]..g_DuanWei1[3+6].."阶")
 		local text2 = ScriptGlobal_Format("#{HSLJ_190919_189}", g_DuanWei1[4], g_DuanWei1[4+6])
@@ -879,7 +879,7 @@ function HuaShanLunJian_FightEnd_4to5Timer()
 		KillTimer("HuaShanLunJian_FightEnd_4to5Timer()")
 		return
 	end
-	if g_BigUpTimer == g_AllTime2 - g_StarUpTime then --播放升段动画,星星置为空星
+	if g_BigUpTimer == g_AllTime2 - g_StarUpTime then --??????,??????
 		HuaShanLunJian_FightEnd_GoupAnimate:Show()
 		HuaShanLunJian_FightEnd_ImageAnimate:Show()
 		HuaShanLunJian_FightEnd_GoupAnimate:SetProperty("Animate","HSLJ_GoupFlash")
@@ -891,8 +891,8 @@ function HuaShanLunJian_FightEnd_4to5Timer()
 	-- 给星星播特效留x秒
 	if g_BigUpTimer > g_AllTime2 - g_StarUpTime then
 		return 
-	elseif g_BigUpTimer > g_AllTime2 - g_StarUpTime - g_StarKongTime2 then --给升小段动画留时间
-		if g_BigUpTimer == g_AllTime2 - g_StarUpTime then --播放升段动画,星星置为空星
+	elseif g_BigUpTimer > g_AllTime2 - g_StarUpTime - g_StarKongTime2 then --?????????
+		if g_BigUpTimer == g_AllTime2 - g_StarUpTime then --??????,??????
 			-- 把上个段位的都隐掉，调用新的控件
 			for i = 0,5 do
 				g_StarAnim4[i]:Hide()
@@ -904,7 +904,7 @@ function HuaShanLunJian_FightEnd_4to5Timer()
 			end
 		end
 		return
-	elseif g_BigUpTimer == g_AllTime2 - g_StarUpTime - g_StarKongTime2 then --给加的第一个星星加特效。
+	elseif g_BigUpTimer == g_AllTime2 - g_StarUpTime - g_StarKongTime2 then --????????????
 		-- g_Star5[0]:SetProperty("Image", g_ImageStar[1])
 		-- g_StarAnim5[0]:Show()
 		-- g_StarAnim5[0]:SetProperty("Animate","HSLJ_LevelupStrars")
@@ -916,7 +916,7 @@ function HuaShanLunJian_FightEnd_4to5Timer()
 	if g_BigUpTimer == g_AllTime2 - g_StarUpTime - g_StarKongTime2 then
 		local MatchId = XBW:GetMatchId()
 		if MatchId == 0 then
-			HuaShanLunJian_FightEnd_Image:SetProperty("Image", g_Image[12+5]) -- 前面的数字是偏移量，后面的数字是当前的大段位
+			HuaShanLunJian_FightEnd_Image:SetProperty("Image", g_Image[12+5]) -- ?????????,????????????
 		elseif MatchId == 1 then
 			HuaShanLunJian_FightEnd_Image:SetProperty("Image", g_Image[0+5])
 		elseif MatchId == 2 then
@@ -925,7 +925,7 @@ function HuaShanLunJian_FightEnd_4to5Timer()
 			return 
 		end
 		HuaShanLunJian_FightEnd_Text:Show()
-		HuaShanLunJian_FightEnd_Text:SetProperty("Image", g_Image[4+18]) -- 后面的数字是偏移量，前面的数字是当前的小段位
+		HuaShanLunJian_FightEnd_Text:SetProperty("Image", g_Image[4+18]) -- ?????????,????????????
 		-- 填充左边的数据
 		--HuaShanLunJian_FightEnd_StageBK_Text2:SetText(g_DuanWei1[MatchId+12].." "..g_DuanWei1[5]..g_DuanWei1[4+6].."阶")
 		local text2 = ScriptGlobal_Format("#{HSLJ_190919_189}", g_DuanWei1[5], g_DuanWei1[4+6])
@@ -940,7 +940,7 @@ function HuaShanLunJian_FightEnd_5to6Timer()
 		KillTimer("HuaShanLunJian_FightEnd_5to6Timer()")
 		return
 	end
-	if g_BigUpTimer == g_AllTime2 - g_StarUpTime then --播放升段动画,星星置为空星
+	if g_BigUpTimer == g_AllTime2 - g_StarUpTime then --??????,??????
 		HuaShanLunJian_FightEnd_GoupAnimate:Show()
 		HuaShanLunJian_FightEnd_ImageAnimate:Show()
 		HuaShanLunJian_FightEnd_GoupAnimate:SetProperty("Animate","HSLJ_GoupFlash")
@@ -952,8 +952,8 @@ function HuaShanLunJian_FightEnd_5to6Timer()
 	-- 给星星播特效留x秒
 	if g_BigUpTimer > g_AllTime2 - g_StarUpTime then
 		return 
-	elseif g_BigUpTimer > g_AllTime2 - g_StarUpTime - g_StarKongTime2 then --给升小段动画留时间
-		if g_BigUpTimer == g_AllTime2 - g_StarUpTime then --播放升段动画,星星置为空星
+	elseif g_BigUpTimer > g_AllTime2 - g_StarUpTime - g_StarKongTime2 then --?????????
+		if g_BigUpTimer == g_AllTime2 - g_StarUpTime then --??????,??????
 			-- 把上个段位的都隐掉，调用新的控件
 			for i = 0,7 do
 				g_StarAnim5[i]:Hide()
@@ -963,7 +963,7 @@ function HuaShanLunJian_FightEnd_5to6Timer()
 			HuaShanLunJian_FightEnd_Star3_1:SetProperty("Image", g_ImageStar[2])
 		end
 		return
-	elseif g_BigUpTimer == g_AllTime2 - g_StarUpTime - g_StarKongTime2 then --给加的第一个星星加特效。
+	elseif g_BigUpTimer == g_AllTime2 - g_StarUpTime - g_StarKongTime2 then --????????????
 		HuaShanLunJian_FightEnd_Star3_1:SetProperty("Image", g_ImageStar[1])
 		HuaShanLunJian_FightEnd_Star3Text:SetText(ScriptGlobal_Format("#{HSSC_191009_73}",0))
 		HuaShanLunJian_FightEnd_Star3_1Animate:Show()
@@ -976,7 +976,7 @@ function HuaShanLunJian_FightEnd_5to6Timer()
 	if g_BigUpTimer == g_AllTime2 - g_StarUpTime - g_StarKongTime2 then
 		local MatchId = XBW:GetMatchId()
 		if MatchId == 0 then
-			HuaShanLunJian_FightEnd_Image:SetProperty("Image", g_Image[12+6]) -- 前面的数字是偏移量，后面的数字是当前的大段位
+			HuaShanLunJian_FightEnd_Image:SetProperty("Image", g_Image[12+6]) -- ?????????,????????????
 		elseif MatchId == 1 then
 			HuaShanLunJian_FightEnd_Image:SetProperty("Image", g_Image[0+6])
 		elseif MatchId == 2 then
@@ -989,7 +989,7 @@ function HuaShanLunJian_FightEnd_5to6Timer()
 		-- 填充左边的数据
 		--HuaShanLunJian_FightEnd_StageBK_Text2:SetText(g_DuanWei1[MatchId+12].." "..g_DuanWei1[6])--..g_DuanWei1[4+6].."阶")
 		local text2 = ScriptGlobal_Format("#{HSLJ_190919_190}", 0)
-		HuaShanLunJian_FightEnd_StageBK_Text2:SetText(text2)--..g_DuanWei1[nCurMinorRank+6].."阶")
+		HuaShanLunJian_FightEnd_StageBK_Text2:SetText(text2)--..g_DuanWei1[nCurMinorRank+6].."Giai")
 	end
 	
 end
@@ -1003,7 +1003,7 @@ function HuaShanLunJian_FightEnd_UpTimer()
 		return
 	end
 	if g_CurMajorRank == 1 then
-		if g_UpTimer == g_AllTime1 - g_StarUpTime then --播放升段动画,星星置为空星
+		if g_UpTimer == g_AllTime1 - g_StarUpTime then --??????,??????
 			
 			HuaShanLunJian_FightEnd_ImageAnimate:Show()
 			HuaShanLunJian_FightEnd_ImageAnimate:SetProperty("Animate","HSLJ_LightUpFlash")		
@@ -1013,8 +1013,8 @@ function HuaShanLunJian_FightEnd_UpTimer()
 		-- 给星星播特效留x秒
 		if g_UpTimer > g_AllTime1 - g_StarUpTime then
 			return 
-		elseif g_UpTimer > g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --给升小段动画留时间
-			if g_UpTimer == g_AllTime1 - g_StarUpTime then --播放升段动画,星星置为空星
+		elseif g_UpTimer > g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --?????????
+			if g_UpTimer == g_AllTime1 - g_StarUpTime then --??????,??????
 				for i = 0,2 do
 					g_StarAnim1[i]:Hide()
 					g_Star1[i]:Hide()
@@ -1025,7 +1025,7 @@ function HuaShanLunJian_FightEnd_UpTimer()
 				end
 			end
 			return
-		elseif g_UpTimer == g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --给加的第一个星星加特效。
+		elseif g_UpTimer == g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --????????????
 			-- g_Star1[0]:SetProperty("Image", g_ImageStar[1])
 			-- g_StarAnim1[0]:Show()
 			-- g_StarAnim1[0]:SetProperty("Animate","HSLJ_LevelupStrars")
@@ -1034,11 +1034,11 @@ function HuaShanLunJian_FightEnd_UpTimer()
 		end
 		
 		-- 切小段位
-		if g_UpTimer == g_AllTime1 - g_StarUpTime  - g_StarKongTime1 then --给加的第一个星星加特效。
+		if g_UpTimer == g_AllTime1 - g_StarUpTime  - g_StarKongTime1 then --????????????
 			local nCurMajorRank,nCurMinorRank,nCurStar,nCurWeekAddMJB,nCurWeekMaxMJB,nAddMJB,nPreMajorRank,nPreMinorRank,nPreStar,nBWResult= XBW:GetResultData()
 			local MatchId = XBW:GetMatchId()
 			HuaShanLunJian_FightEnd_Text:Show()
-			HuaShanLunJian_FightEnd_Text:SetProperty("Image", g_Image[nCurMinorRank+18]) -- 后面的数字是偏移量，前面的数字是当前的小段位
+			HuaShanLunJian_FightEnd_Text:SetProperty("Image", g_Image[nCurMinorRank+18]) -- ?????????,????????????
 			-- 填充左边的数据
 			--HuaShanLunJian_FightEnd_StageBK_Text2:SetText(g_DuanWei1[MatchId+12].." "..g_DuanWei1[nCurMajorRank]..g_DuanWei1[nCurMinorRank+6].."阶")
 			local text2 = ScriptGlobal_Format("#{HSLJ_190919_189}",g_DuanWei1[nCurMajorRank], g_DuanWei1[nCurMinorRank+6])
@@ -1046,7 +1046,7 @@ function HuaShanLunJian_FightEnd_UpTimer()
 		end
 		
 	elseif g_CurMajorRank == 2  then
-		if g_UpTimer == g_AllTime1 - g_StarUpTime then --播放升段动画,星星置为空星
+		if g_UpTimer == g_AllTime1 - g_StarUpTime then --??????,??????
 			
 			HuaShanLunJian_FightEnd_ImageAnimate:Show()
 			HuaShanLunJian_FightEnd_ImageAnimate:SetProperty("Animate","HSLJ_LightUpFlash")		
@@ -1056,8 +1056,8 @@ function HuaShanLunJian_FightEnd_UpTimer()
 		-- 给星星播特效留x秒
 		if g_UpTimer > g_AllTime1 - g_StarUpTime then
 			return 
-		elseif g_UpTimer > g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --给升小段动画留时间
-			if g_UpTimer == g_AllTime1 - g_StarUpTime then --播放升段动画,星星置为空星
+		elseif g_UpTimer > g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --?????????
+			if g_UpTimer == g_AllTime1 - g_StarUpTime then --??????,??????
 				for i = 0,3 do
 					g_StarAnim2[i]:Hide()
 					g_Star2[i]:Hide()
@@ -1068,7 +1068,7 @@ function HuaShanLunJian_FightEnd_UpTimer()
 				end
 			end
 			return
-		elseif g_UpTimer == g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --给加的第一个星星加特效。
+		elseif g_UpTimer == g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --????????????
 			-- g_Star2[0]:SetProperty("Image", g_ImageStar[1])
 			-- g_StarAnim2[0]:Show()
 			-- g_StarAnim2[0]:SetProperty("Animate","HSLJ_LevelupStrars")
@@ -1078,11 +1078,11 @@ function HuaShanLunJian_FightEnd_UpTimer()
 		
 		
 		-- 切小段位
-		if g_UpTimer == g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --给加的第一个星星加特效。
+		if g_UpTimer == g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --????????????
 			local nCurMajorRank,nCurMinorRank,nCurStar,nCurWeekAddMJB,nCurWeekMaxMJB,nAddMJB,nPreMajorRank,nPreMinorRank,nPreStar,nBWResult= XBW:GetResultData()
 			local MatchId = XBW:GetMatchId()
 			HuaShanLunJian_FightEnd_Text:Show()
-			HuaShanLunJian_FightEnd_Text:SetProperty("Image", g_Image[nCurMinorRank+18]) -- 后面的数字是偏移量，前面的数字是当前的小段位
+			HuaShanLunJian_FightEnd_Text:SetProperty("Image", g_Image[nCurMinorRank+18]) -- ?????????,????????????
 			-- 填充左边的数据
 			--HuaShanLunJian_FightEnd_StageBK_Text2:SetText(g_DuanWei1[MatchId+12].." "..g_DuanWei1[nCurMajorRank]..g_DuanWei1[nCurMinorRank+6].."阶")
 			local text2 = ScriptGlobal_Format("#{HSLJ_190919_189}", g_DuanWei1[nCurMajorRank], g_DuanWei1[nCurMinorRank+6])
@@ -1090,7 +1090,7 @@ function HuaShanLunJian_FightEnd_UpTimer()
 		end
 		
 	elseif g_CurMajorRank == 3  then
-		if g_UpTimer == g_AllTime1 - g_StarUpTime then --播放升段动画,星星置为空星
+		if g_UpTimer == g_AllTime1 - g_StarUpTime then --??????,??????
 			
 			HuaShanLunJian_FightEnd_ImageAnimate:Show()
 			HuaShanLunJian_FightEnd_ImageAnimate:SetProperty("Animate","HSLJ_LightUpFlash")		
@@ -1100,8 +1100,8 @@ function HuaShanLunJian_FightEnd_UpTimer()
 		-- 给星星播特效留x秒
 		if g_UpTimer > g_AllTime1 - g_StarUpTime then
 			return 
-		elseif g_UpTimer > g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --给升小段动画留时间
-			if g_UpTimer == g_AllTime1 - g_StarUpTime then --播放升段动画,星星置为空星
+		elseif g_UpTimer > g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --?????????
+			if g_UpTimer == g_AllTime1 - g_StarUpTime then --??????,??????
 				for i = 0,4 do
 					g_StarAnim3[i]:Hide()
 					g_Star3[i]:Hide()
@@ -1112,7 +1112,7 @@ function HuaShanLunJian_FightEnd_UpTimer()
 				end
 			end
 			return
-		elseif g_UpTimer == g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --给加的第一个星星加特效。
+		elseif g_UpTimer == g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --????????????
 			-- g_Star3[0]:SetProperty("Image", g_ImageStar[1])
 			-- g_StarAnim3[0]:Show()
 			-- g_StarAnim3[0]:SetProperty("Animate","HSLJ_LevelupStrars")
@@ -1122,11 +1122,11 @@ function HuaShanLunJian_FightEnd_UpTimer()
 		
 		
 		-- 切小段位
-		if g_UpTimer == g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --给加的第一个星星加特效。
+		if g_UpTimer == g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --????????????
 			local nCurMajorRank,nCurMinorRank,nCurStar,nCurWeekAddMJB,nCurWeekMaxMJB,nAddMJB,nPreMajorRank,nPreMinorRank,nPreStar,nBWResult= XBW:GetResultData()
 			local MatchId = XBW:GetMatchId()
 			HuaShanLunJian_FightEnd_Text:Show()
-			HuaShanLunJian_FightEnd_Text:SetProperty("Image", g_Image[nCurMinorRank+18]) -- 后面的数字是偏移量，前面的数字是当前的小段位
+			HuaShanLunJian_FightEnd_Text:SetProperty("Image", g_Image[nCurMinorRank+18]) -- ?????????,????????????
 			-- 填充左边的数据
 			--HuaShanLunJian_FightEnd_StageBK_Text2:SetText(g_DuanWei1[MatchId+12].." "..g_DuanWei1[nCurMajorRank]..g_DuanWei1[nCurMinorRank+6].."阶")
 			local text2 = ScriptGlobal_Format("#{HSLJ_190919_189}", g_DuanWei1[nCurMajorRank], g_DuanWei1[nCurMinorRank+6])
@@ -1134,7 +1134,7 @@ function HuaShanLunJian_FightEnd_UpTimer()
 		end
 		
 	elseif g_CurMajorRank == 4  then
-		if g_UpTimer == g_AllTime1 - g_StarUpTime then --播放升段动画,星星置为空星
+		if g_UpTimer == g_AllTime1 - g_StarUpTime then --??????,??????
 			
 			HuaShanLunJian_FightEnd_ImageAnimate:Show()
 			HuaShanLunJian_FightEnd_ImageAnimate:SetProperty("Animate","HSLJ_LightUpFlash")		
@@ -1144,8 +1144,8 @@ function HuaShanLunJian_FightEnd_UpTimer()
 		-- 给星星播特效留x秒
 		if g_UpTimer > g_AllTime1 - g_StarUpTime then
 			return 
-		elseif g_UpTimer > g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --给升小段动画留时间
-			if g_UpTimer == g_AllTime1 - g_StarUpTime then --播放升段动画,星星置为空星
+		elseif g_UpTimer > g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --?????????
+			if g_UpTimer == g_AllTime1 - g_StarUpTime then --??????,??????
 				for i = 0,5 do
 					g_StarAnim4[i]:Hide()
 					g_Star4[i]:Hide()
@@ -1156,7 +1156,7 @@ function HuaShanLunJian_FightEnd_UpTimer()
 				end
 			end
 			return
-		elseif g_UpTimer == g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --给加的第一个星星加特效。
+		elseif g_UpTimer == g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --????????????
 			-- g_Star4[0]:SetProperty("Image", g_ImageStar[1])
 			-- g_StarAnim4[0]:Show()
 			-- g_StarAnim4[0]:SetProperty("Animate","HSLJ_LevelupStrars")
@@ -1165,18 +1165,18 @@ function HuaShanLunJian_FightEnd_UpTimer()
 		end
 	
 		-- 切小段位
-		if g_UpTimer == g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --给加的第一个星星加特效。
+		if g_UpTimer == g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --????????????
 			local nCurMajorRank,nCurMinorRank,nCurStar,nCurWeekAddMJB,nCurWeekMaxMJB,nAddMJB,nPreMajorRank,nPreMinorRank,nPreStar,nBWResult= XBW:GetResultData()
 			local MatchId = XBW:GetMatchId()
 			HuaShanLunJian_FightEnd_Text:Show()
-			HuaShanLunJian_FightEnd_Text:SetProperty("Image", g_Image[nCurMinorRank+18]) -- 后面的数字是偏移量，前面的数字是当前的小段位
+			HuaShanLunJian_FightEnd_Text:SetProperty("Image", g_Image[nCurMinorRank+18]) -- ?????????,????????????
 			-- 填充左边的数据
 			--HuaShanLunJian_FightEnd_StageBK_Text2:SetText(g_DuanWei1[MatchId+12].." "..g_DuanWei1[nCurMajorRank]..g_DuanWei1[nCurMinorRank+6].."阶")
 			local text2 = ScriptGlobal_Format("#{HSLJ_190919_189}",g_DuanWei1[nCurMajorRank], g_DuanWei1[nCurMinorRank+6])
 			HuaShanLunJian_FightEnd_StageBK_Text2:SetText(text2)
 		end
 	elseif g_CurMajorRank == 5  then
-		if g_UpTimer == g_AllTime1 - g_StarUpTime then --播放升段动画,星星置为空星
+		if g_UpTimer == g_AllTime1 - g_StarUpTime then --??????,??????
 			
 			HuaShanLunJian_FightEnd_ImageAnimate:Show()
 			HuaShanLunJian_FightEnd_ImageAnimate:SetProperty("Animate","HSLJ_LightUpFlash")		
@@ -1186,8 +1186,8 @@ function HuaShanLunJian_FightEnd_UpTimer()
 		-- 给星星播特效留x秒
 		if g_UpTimer > g_AllTime1 - g_StarUpTime then
 			return 
-		elseif g_UpTimer > g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --给升小段动画留时间
-			if g_UpTimer == g_AllTime1 - g_StarUpTime then --播放升段动画,星星置为空星
+		elseif g_UpTimer > g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --?????????
+			if g_UpTimer == g_AllTime1 - g_StarUpTime then --??????,??????
 				for i = 0,7 do
 					g_StarAnim5[i]:Hide()
 					g_Star5[i]:Hide()
@@ -1198,7 +1198,7 @@ function HuaShanLunJian_FightEnd_UpTimer()
 				end
 			end
 			return
-		elseif g_UpTimer == g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --给加的第一个星星加特效。
+		elseif g_UpTimer == g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --????????????
 			-- g_Star5[0]:SetProperty("Image", g_ImageStar[1])
 			-- g_StarAnim5[0]:Show()
 			-- g_StarAnim5[0]:SetProperty("Animate","HSLJ_LevelupStrars")
@@ -1207,11 +1207,11 @@ function HuaShanLunJian_FightEnd_UpTimer()
 		end
 	
 		-- 切小段位
-		if g_UpTimer == g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --给加的第一个星星加特效。
+		if g_UpTimer == g_AllTime1 - g_StarUpTime - g_StarKongTime1 then --????????????
 			local nCurMajorRank,nCurMinorRank,nCurStar,nCurWeekAddMJB,nCurWeekMaxMJB,nAddMJB,nPreMajorRank,nPreMinorRank,nPreStar,nBWResult= XBW:GetResultData()
 			local MatchId = XBW:GetMatchId()
 			HuaShanLunJian_FightEnd_Text:Show()
-			HuaShanLunJian_FightEnd_Text:SetProperty("Image", g_Image[nCurMinorRank+18]) -- 后面的数字是偏移量，前面的数字是当前的小段位
+			HuaShanLunJian_FightEnd_Text:SetProperty("Image", g_Image[nCurMinorRank+18]) -- ?????????,????????????
 			-- 填充左边的数据
 			--HuaShanLunJian_FightEnd_StageBK_Text2:SetText(g_DuanWei1[MatchId+12].." "..g_DuanWei1[nCurMajorRank]..g_DuanWei1[nCurMinorRank+6].."阶")
 			local text2 = ScriptGlobal_Format("#{HSLJ_190919_189}", g_DuanWei1[nCurMajorRank], g_DuanWei1[nCurMinorRank+6])

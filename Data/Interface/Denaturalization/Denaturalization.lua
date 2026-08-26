@@ -2,17 +2,17 @@ local xx = nil;
 function Denaturalization_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
 	
-	this:RegisterEvent("UNIT_DEF_COLD");				--·ÀÓùÊôÐÔ
+	this:RegisterEvent("UNIT_DEF_COLD");				--????
 	this:RegisterEvent("UNIT_DEF_FIRE");
 	this:RegisterEvent("UNIT_DEF_LIGHT");
 	this:RegisterEvent("UNIT_DEF_POSION");
 
-	this:RegisterEvent("UNIT_RESISTOTHER_COLD");			--¼õ¿¹ÊôÐÔ
+	this:RegisterEvent("UNIT_RESISTOTHER_COLD");			--????
 	this:RegisterEvent("UNIT_RESISTOTHER_FIRE");
 	this:RegisterEvent("UNIT_RESISTOTHER_LIGHT");
 	this:RegisterEvent("UNIT_RESISTOTHER_POSION");
 		
-	this:RegisterEvent("UNIT_ATT_COLD");				--¹¥»÷ÊôÐÔ
+	this:RegisterEvent("UNIT_ATT_COLD");				--????
 	this:RegisterEvent("UNIT_ATT_FIRE");
 	this:RegisterEvent("UNIT_ATT_LIGHT");
 	this:RegisterEvent("UNIT_ATT_POSION");
@@ -111,15 +111,15 @@ function Denaturalization_SetStateTooltip()
 	local iThunderResistOther	= Player:GetData( "RESISTOTHERLIGHT" );
 	local iPoisonResistOther= Player:GetData( "RESISTOTHERPOISON" );
 	
-	Denaturalization_IceFastness:SetToolTip("±ù¹¥:"..tostring(iIceAttack).."#r±ù¿¹:"..tostring(iIceDefine).."#r¼õ±ù¿¹:"..tostring(iIceResistOther) );
-	Denaturalization_FireFastness:SetToolTip("»ð¹¥:"..tostring(iFireAttack).."#r»ð¿¹:"..tostring(iFireDefine).."#r¼õ»ð¿¹:"..tostring(iFireResistOther) );
-	Denaturalization_ThunderFastness:SetToolTip("Ðþ¹¥:"..tostring(iThunderAttack).."#rÐþ¿¹:"..tostring(iThunderDefine).."#r¼õÐþ¿¹:"..tostring(iThunderResistOther) );
-	Denaturalization_PoisonFastness:SetToolTip("¶¾¹¥:"..tostring(iPoisonAttack).."#r¶¾¿¹:"..tostring(iPoisonDefine).."#r¼õ¶¾¿¹:"..tostring(iPoisonResistOther) );
+	Denaturalization_IceFastness:SetToolTip("Bång công:"..tostring(iIceAttack).."#rBång Kháng:"..tostring(iIceDefine).."#rGiäm Bång Kháng:"..tostring(iIceResistOther) );
+	Denaturalization_FireFastness:SetToolTip("Höa công:"..tostring(iFireAttack).."#rHoä Kháng:"..tostring(iFireDefine).."#rGiäm Hoä Kháng:"..tostring(iFireResistOther) );
+	Denaturalization_ThunderFastness:SetToolTip("Huy«n công:"..tostring(iThunderAttack).."#rHuy«n Kháng:"..tostring(iThunderDefine).."#rGiäm Huy«n Kháng:"..tostring(iThunderResistOther) );
+	Denaturalization_PoisonFastness:SetToolTip("Ðµc công:"..tostring(iPoisonAttack).."#rÐµc Kháng:"..tostring(iPoisonDefine).."#rGiäm Ðµc Kháng:"..tostring(iPoisonResistOther) );
 		
 end
 
 ---------------------------------------------------------------------------------
---Çå¿ÕÊý¾Ý
+--Çå¿ Êý¾Ý
 --
 function Denaturalization_CleanData()
 	Denaturalization_FakeObject:SetFakeObject("");	
@@ -140,7 +140,7 @@ function Denaturalization_OnShow()
 	Denaturalization_SetStateTooltip();
 
 	local nNumber = Player:GetData( "LEVEL" );
-	Denaturalization_Level : SetText(nNumber.."¼¶")
+	Denaturalization_Level : SetText(nNumber.."C¤p")
 end
 
 ----------------------------------------------------------------------------------
@@ -177,7 +177,7 @@ end
 
 function DoDenaturalization()
 	if(this : IsVisible()) then
-		PushDebugMessage("²Ù×÷Òì³££¡");
+		PushDebugMessage("Thao tác d¸ thß¶ng!");
 		this:Hide();
 		return;
 	end
@@ -185,7 +185,7 @@ function DoDenaturalization()
 
 	local isCan = Player : CheckIfCanDena(30900048);
 	if(isCan == -1) then
-		PushDebugMessage("²Ù×÷Òì³££¡");
+		PushDebugMessage("Thao tác d¸ thß¶ng!");
 		return;
 	end
 	
@@ -193,24 +193,24 @@ function DoDenaturalization()
 	
 	
 	if(isCan == 5)then
-		PushDebugMessage("ÄúÈ±ÉÙÎïÆ·×ªÐÔµ¤£¬»òÕßÄúµÄ×ªÐÔµ¤ÒÑ¼ÓËø¡£")
+		PushDebugMessage("B¢ng hæu thiªu sót v§t ph¦m Chuy¬n Tính Ðan, ho£c là Chuy¬n Tính Ðan cüa b¢ng hæu ðã khóa.")
 		return;
 	end
 	if(isCan == 1)then
-		PushDebugMessage("Æï³Ë×´Ì¬ÏÂ²»ÄÜ½øÐÐ×ªÐÔ²Ù×÷£¡")
+		PushDebugMessage("Trong trÕng thái cßÞi không th¬ thñc hi®n ðßþc thao tác Chuy¬n Tính!")
 		return;
 	end
 	if(isCan == 2)then
-		PushDebugMessage("°ÚÌ¯×´Ì¬ÏÂ²»ÄÜ½øÐÐ×ªÐÔ²Ù×÷£¡")
+		PushDebugMessage("Trong trÕng thái bày bán không th¬ thñc hi®n ðßþc thao tác Chuy¬n Tính!")
 		return;
 	end
 	if(isCan == 3)then
-		PushDebugMessage("ÊÔ´©£¬ÊÔÆï×´Ì¬ÏÂ²»ÄÜ½øÐÐ×ªÐÔ²Ù×÷£¡")
+		PushDebugMessage("Trong trÕng thái thØ cßÞi, thØ m£c không th¬ thñc hi®n ðßþc thao tác Chuy¬n Tính!")
 		return;
 	end
 
 	if(isCan == 4)then
-		PushDebugMessage("×é¶Ó×´Ì¬ÏÂ²»ÄÜ½øÐÐ×ªÐÔ²Ù×÷£¡")
+		PushDebugMessage("Trong trÕng thái t± ðµi không th¬ thñc hi®n ðßþc thao tác Chuy¬n Tính!")
 		return;
 	end
 	--È¡µÃ±äÐÔÊý¾Ý

@@ -8,7 +8,7 @@ local g_nuji_max = 42
 
 local g_Object = -1
 local g_DiWangQi_Table = {}
-local g_IsRepaired = 0 --帝王器当日是否修复过 
+local g_IsRepaired = 0 --??????????????? 
 local g_IsJianCuGotReward = 0
 local g_IsQinJianGotReward = 0
 local g_IsNuJiGotReward = 0
@@ -102,7 +102,7 @@ function DiWangQi_OnEvent(event)
 			objCared = -1
 			objCared = DataPool : GetNPCIDByServerID(xx);
 			if tonumber(objCared)==nil or  tonumber(objCared)== -1 then
-				PushDebugMessage("server传过来的数据有问题。");
+				PushDebugMessage("ServerM�i ? Banh ? ?? To� B�n ? Li�n ? ? Chu� Ph�c? ?");
 				return
 			end
 			this:Show()

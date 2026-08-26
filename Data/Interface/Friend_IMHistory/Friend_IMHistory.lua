@@ -13,10 +13,10 @@ local g_IsTeamOutLine = {}
 local g_TeamOutLineStr = {}
 local g_IsGroupShow = false
 local curChatGroupID = 0
-local g_curFirstPos = -1   --记录位置 防止刷新list 位置回滚
+local g_curFirstPos = -1   --???? ????list ????
 
-local g_FriendBlank = "   "		--3个空格缩进
-local g_TitleBlank = "     " 	--标题5个空格缩进
+local g_FriendBlank = "   "		--3?????
+local g_TitleBlank = "     " 	--??5?????
 local g_ListTeamColor = "#gFE7E82"
 local g_CurSelListItemID = -1
 local g_KeepSelState = 0
@@ -46,7 +46,7 @@ function Friend_IMHistory_OnLoad()
 							"#{KDHYYH_211025_40}",
 						--	"#{KDHYYH_20211025_11}",		--黑名单
 						--	"#{KDHYYH_20211025_12}",		--仇人
-							"#{KDHYYH_20211025_10}",		--临时好友
+							"#{KDHYYH_20211025_10}",		--????
 						}
 	g_curFirstPos = -1
 	

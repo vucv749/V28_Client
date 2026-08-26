@@ -12,8 +12,8 @@ local g_IsMissionComplete = -1
 local g_ChosenNpcData = 0
 local g_CurClurPage 	= -1
 local g_IsIntergtation  = 0
-local g_IsCloseCase     = 0	--ÈÎÎñÊÇ·ñ½øĞĞµ½²é°¸µÚËÄÆÚµÄ¶Ï°¸²¿·Ö
-local g_CloseCasePhase	= 0 --²é°¸ËÄÆÚÊ±µÄ¶¯»­index
+local g_IsCloseCase     = 0	--?????????????????
+local g_CloseCasePhase	= 0 --????????index
 local g_CluePageContent = {}
 local g_ClueIntergrations = {}
 local g_CloseCase_Component = {}
@@ -33,7 +33,7 @@ function ERenGu_Yure_PreLoad()
 	
 	this:RegisterEvent("OPEN_FASHION_LOTTERY")
 	this:RegisterEvent("REFRESH_FASHION_LOTTERY")
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--½ø³¡¾°¹Ø±Õ½çÃæ
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 end
 
 function ERenGu_Yure_OnLoad()
@@ -55,7 +55,7 @@ function ERenGu_Yure_OnLoad()
 			ERenGu_Yure_Client2_Clue_AnswerText2,
 			ERenGu_Yure_Client2_Clue_AnswerText3,
 		},
-		Content = {	--Ò»¹²ÁùÌõÏßË÷£¬Á½Á½¶ÔÓ¦ÒÔÏÂÈıÖÖÏßË÷ÄÚÈİ£¬¸ù¾İÁùÌõÏßË÷µÄÏÂ±êÖ±½Ó²éÕÒ´Ë´¦ÏÂ±ê£¬¼´ÕûºÏÄÚÈİ1ÎªÏßË÷2ºÍ6£¬ÔòÔÚindex=2/6Î»ÖÃ·ÅÖÃ¶ÔÓ¦µÄ×Ö·û
+		Content = {	--??????,????????????,?????????????????,?????1???2?6,??index=2/6?????????
 			[1] = { "#{ERYR_240701_70}","#{ERYR_240701_69}","#{ERYR_240701_71}","#{ERYR_240701_70}","#{ERYR_240701_69}","#{ERYR_240701_71}" },
 			[2] = { "#{ERYR_240701_73}","#{ERYR_240701_74}","#{ERYR_240701_72}","#{ERYR_240701_74}","#{ERYR_240701_72}","#{ERYR_240701_73}" },
 			--[3] = { "#{ERYR_240701_77}","#{ERYR_240701_76}","#{ERYR_240701_77}","#{ERYR_240701_75}","#{ERYR_240701_76}","#{ERYR_240701_75}" },
@@ -109,7 +109,7 @@ function ERenGu_Yure_OnLoad()
 					ERenGu_Yure_Client2_CluePage_SelectInfo2,ERenGu_Yure_Client2_CluePage_SelectInfo4},
 		},
 		g_ClueTips = {
-			--µÚÒ»´ÎÊÕ¼¯ÆëÏßË÷Ê±ºòµÄtips
+			--µÚÒ»´ÎÊ ¼¯ÆëÏßË÷Ê±ºòµÄtips
 			ERenGu_Yure_Client2_CluePage_ClueBtn1_Animate,ERenGu_Yure_Client2_CluePage_ClueBtn2_Animate,ERenGu_Yure_Client2_CluePage_ClueBtn3_Animate,
 			ERenGu_Yure_Client2_CluePage_ClueBtn4_Animate,ERenGu_Yure_Client2_CluePage_ClueBtn5_Animate,ERenGu_Yure_Client2_CluePage_ClueBtn6_Animate,
 		}
@@ -145,7 +145,7 @@ function ERenGu_Yure_OnEvent(event)
 		KillTimer("ERenGu_Yure_CloseCaseTimer()");
 		KillTimer("ERenGu_Yure_CloseAnimateTimer()");
 		if g_CurQuestPhrase == 0 and g_IsHaveMissionState < 1 then
-			ERenGu_Yure_UIPhase(1)	--½×¶ÎÒ»½çÃæÏÔÊ¾
+			ERenGu_Yure_UIPhase(1)	--???????
 			ERenGu_Yure_SetImage(1)
 			this:Show()
 			return 
@@ -157,19 +157,19 @@ function ERenGu_Yure_OnEvent(event)
 				if g_CurQuestPhrase > g_CurActivityPhrase then
 
 					g_CurQuestPhrase = g_CurActivityPhrase
-					ERenGu_Yure_UIPhase(2)	--½×¶Î¶ş½çÃæÏÔÊ¾
+					ERenGu_Yure_UIPhase(2)	--???????
 
 					ERenGu_Yure_Client2_CluePage_Init()
 					ERenGu_Yure_Client2_PageClick(g_CurQuestPhrase)
 				else
-					ERenGu_Yure_UIPhase(1)	--½×¶Î¶ş½çÃæÏÔÊ¾
+					ERenGu_Yure_UIPhase(1)	--???????
 					g_CurQuestPhrase = math.min(3,g_CurQuestPhrase)
 					ERenGu_Yure_SetImage(g_CurQuestPhrase+1)
 				end
 				this:Show()
 				return
 			end
-			ERenGu_Yure_UIPhase(2)	--½×¶Î¶ş½çÃæÏÔÊ¾
+			ERenGu_Yure_UIPhase(2)	--???????
 			g_Clue.Num 	   = Get_XParam_INT(5)
 			g_Clue.Flag[1] = Get_XParam_INT(6)
 			g_Clue.Flag[2] = Get_XParam_INT(7)
@@ -180,7 +180,7 @@ function ERenGu_Yure_OnEvent(event)
 			g_IsIntergtation = Get_XParam_INT(12)
 		else
 			if g_IsHaveMissionState >= 1 then
-				ERenGu_Yure_UIPhase(3)	--½×¶ÎÈı½çÃæÏÔÊ¾
+				ERenGu_Yure_UIPhase(3)	--???????
 				if g_IsMissionComplete == 1 then
 					ERenGu_Yure_Client3_GotoBtn:Disable()
 					g_Client_Finished_ArtComponent[math.min(g_CurQuestPhrase-2,2)]:Show()
@@ -188,19 +188,19 @@ function ERenGu_Yure_OnEvent(event)
 			else
 				if g_CurQuestPhrase > g_CurActivityPhrase then
 					if g_CurQuestPhrase == 3 then
-						--»¹Î´ÕıÊ½½øÈë×·Ğ×½×¶Î
-						ERenGu_Yure_UIPhase(2)	--½×¶Î¶ş½çÃæÏÔÊ¾
+						--»¹Î´ ıÊ½½øÈë×·Ğ×½×¶Î
+						ERenGu_Yure_UIPhase(2)	--???????
 						ERenGu_Yure_Client2_CluePage_Init()
 						ERenGu_Yure_Client2_PageClick(g_CurQuestPhrase)
 					else
 						--½øÈë×·Ğ×½×¶Î(¼´×îÆğÂëÍê³ÉÁËÒ»¸ö×·Ğ×ÈÎÎñ)
-						ERenGu_Yure_UIPhase(3)	--½×¶ÎÈı½çÃæÏÔÊ¾
+						ERenGu_Yure_UIPhase(3)	--???????
 						g_Client_Finished_ArtComponent[g_CurQuestPhrase-3]:Show()
 						-- PushDebugMessage("×·Ğ×½×¶Î"..(g_CurQuestPhrase-3).."ÒÑÍê³É")
 						ERenGu_Yure_Client3_GotoBtn:Disable()
 					end
 				else
-					ERenGu_Yure_UIPhase(1)	--½×¶Î¶ş½çÃæÏÔÊ¾
+					ERenGu_Yure_UIPhase(1)	--???????
 					g_CurQuestPhrase = math.min(3,g_CurQuestPhrase)
 					ERenGu_Yure_SetImage(g_CurQuestPhrase+1)
 				end
@@ -220,7 +220,7 @@ function ERenGu_Yure_OnEvent(event)
 		g_IsIntergtation     = Get_XParam_INT(3)
 		g_ChosenNpcData = Get_XParam_INT(4)
 		g_IsCloseCase        = Get_XParam_INT(5)
-		--½×¶Î¶şµÄµÚ¶ş½×¶Î£¬Ö±½ÓÔÚº¯ÊıÀï×öÌØÅĞ£¬ËùÒÔÕâÀï¾Í²»Çø·ÖUIPhaseÁË
+		--½×¶Î¶şµÄµÚ¶ş½×¶Î£¬Ö±½ÓÔÚº¯ÊıÀï×öÌØÅĞ£¬ËùÒÔ âÀï¾Í²»Çø·ÖUIPhaseÁË
 		KillTimer("ERenGu_Yure_CloseCaseTimer()");
 		KillTimer("ERenGu_Yure_CloseAnimateTimer()");
 		ERenGu_Yure_UIPhase(2)
@@ -256,7 +256,7 @@ function ERenGu_Yure_CloseFunc()
 	return 
 end
 function ERenGu_Yure_Client1_Goto_Clicked()
-	AutoRuntoTargetExWithName(137, 183, 1, "ÎÅÈËÓï")
+	AutoRuntoTargetExWithName(137, 183, 1, "Ngß¶i n±i tiªng Ngæ")
 	PushDebugMessage("#{ERYR_240701_34}")
 	ERenGu_Yure_CloseFunc()
 end
@@ -271,7 +271,7 @@ function ERenGu_Yure_Client2_CluePage_Init()
 	for i = 1 , 6 do 
 		g_Clue.g_ClueTips[i]:Hide()
 	end
-	--ĞŞ¸Ä·ÖÒ³ÉÏ·½¿Õ°´Å¥µÄÏÔÒşºÍtips
+	--ĞŞ¸Ä·ÖÒ³ÉÏ·½¿ °´Å¥µÄÏÔÒşºÍtips
 	for i = 1 , 2 do 
 		g_CluePageTips.Component[i]:Hide()
 	end
@@ -324,7 +324,7 @@ function ERenGu_Yure_Client2_PageClick(cluePageIndex)
 	if cluePageIndex-1 == g_CurQuestPhrase and g_IsHaveMissionState >= 1 then
 		--µ±ÆÚÈÎÎñ²»ÏÔÊ¾°¸ÇéÒÑÊáÀí
 		ERenGu_Yure_Client2_Clue_Answer_Finished:Hide()
-		--ÕûºÏ½áÊø£¨¼´ÈÎÎñÍê³É£©
+		-- ûºÏ½áÊø£¨¼´ÈÎÎñÍê³É£©
 		if g_IsIntergtation == 1 then
 			--µ±Ç°·ÖÒ³¶ÔÓ¦µÄÏßË÷
 			for i = 1 , 6 do 
@@ -335,13 +335,13 @@ function ERenGu_Yure_Client2_PageClick(cluePageIndex)
 					g_Clue.SelectBKTXTConponent[cluePageIndex][i]:SetText(g_CluePageContent[cluePageIndex].Getclues[i])
 				end
 			end
-			--ÕûºÏÏßË÷ÏÔÊ¾
+			-- ûºÏÏßË÷ÏÔÊ¾
 			local content = ""
 			for i = 1 ,3 do
 				g_ClueIntergrations.Component[i]:Show()
 				g_ClueIntergrations.Flag[i] = 1
 				for j = 1,6 do
-					--ÕûºÏÏßË÷£¨ÈıÌõ£©¶ÔÓ¦µÄÏßË÷ĞòºÅ
+					-- ûºÏÏßË÷£¨ÈıÌõ£©¶ÔÓ¦µÄÏßË÷ĞòºÅ
 					if g_Clue.ClueMatch[cluePageIndex][i][j]~= nil then
 							content = g_ClueIntergrations.Content[cluePageIndex][j]
 							g_ClueIntergrations.Component[i]:SetText(content)
@@ -369,8 +369,8 @@ function ERenGu_Yure_Client2_PageClick(cluePageIndex)
 				end
 				g_Clue.SelectBKTXTConponent[cluePageIndex][i]:Hide()
 			end
-			--ÕûºÏÏßË÷Òş²Ø£¨ÈÃÆäÄ¬ÈÏÒş²Ø£¨ÖØÖÃ£©£©
-			--ÕûºÏÏßË÷ÏÔÊ¾
+			-- ûºÏÏßË÷Òş²Ø£¨ÈÃÆäÄ¬ÈÏÒş²Ø£¨ÖØÖÃ£©£©
+			-- ûºÏÏßË÷ÏÔÊ¾
 			for i = 1 ,3 do
 				g_ClueIntergrations.Component[i]:Hide()
 				g_ClueIntergrations.Flag[i] = 0
@@ -384,12 +384,12 @@ function ERenGu_Yure_Client2_PageClick(cluePageIndex)
 			g_Clue.SelectBKTXTConponent[cluePageIndex][i]:Show()
 			g_Clue.SelectBKTXTConponent[cluePageIndex][i]:SetText(g_CluePageContent[cluePageIndex].Getclues[i])
 		end
-		--ÏÔÊ¾ÕûºÏÏßË÷
+		--ÏÔÊ¾ ûºÏÏßË÷
 		for i = 1 ,3 do
 			g_ClueIntergrations.Component[i]:Show()
 			g_ClueIntergrations.Flag[i] = 1
 			for j = 1,6 do
-				--ÕûºÏÏßË÷£¨ÈıÌõ£©¶ÔÓ¦µÄÏßË÷ĞòºÅ
+				-- ûºÏÏßË÷£¨ÈıÌõ£©¶ÔÓ¦µÄÏßË÷ĞòºÅ
 				if g_Clue.ClueMatch[cluePageIndex][i][j]~= nil then
 						local content = g_ClueIntergrations.Content[cluePageIndex][j]
 						g_ClueIntergrations.Component[i]:SetText(content)
@@ -414,7 +414,7 @@ function ERenGu_Yure_Client2_CluePage_ClueCheck_Clicked(clueIndex)
 	local matchClue = nil
 	local clueMatch = g_Clue.ClueMatch[g_CurClurPage]
 	if g_ClueClickBackup == -1 then
-		--²éÕÒµ±Ç°°´µÄ°´Å¥¶ÔÓ¦µÄÏßË÷°´Å¥
+		--²é Òµ±Ç°°´µÄ°´Å¥¶ÔÓ¦µÄÏßË÷°´Å¥
 		for i = 1 ,3 do 
 			if clueMatch[i][clueIndex] ~=nil then
 				matchClue = g_Clue.g_ClueTips[clueMatch[i][clueIndex]]
@@ -428,14 +428,14 @@ function ERenGu_Yure_Client2_CluePage_ClueCheck_Clicked(clueIndex)
 		g_Clue.SelectBKTXTConponent[g_CurClurPage][clueIndex]:Show()
 		g_Clue.SelectBKTXTConponent[g_CurClurPage][clueIndex]:SetText(g_CluePageContent[g_CurClurPage].Getclues[clueIndex])
 	else
-		--²éÕÒÒÑÑ¡°´Å¥¶ÔÓ¦µÄÏßË÷°´Å¥
+		--²é ÒÒÑÑ¡°´Å¥¶ÔÓ¦µÄÏßË÷°´Å¥
 		for i = 1 ,3 do 
 			if clueMatch[i][g_ClueClickBackup] ~=nil then
 				matchClue = g_Clue.g_ClueTips[clueMatch[i][g_ClueClickBackup]]
 			end
 		end
 		if matchClue~=nil then
-			--µÚ¶ş´Îµã»÷£¬²»¹Üµã»÷µÄ°´Å¥ÊÇ·ñÕıÈ·£¬ÏÈÒş²ØÌáÊ¾Ğ§¹û
+			--µÚ¶ş´Îµã»÷£¬²»¹Üµã»÷µÄ°´Å¥ÊÇ·ñ ıÈ·£¬ÏÈÒş²ØÌáÊ¾Ğ§¹û
 			matchClue:Hide()
 		end
 		--ÖØ¸´µã»÷Í¬Ò»¸ö
@@ -489,7 +489,7 @@ function ERenGu_Yure_Client2_CluePage_ClueCheck_Clicked(clueIndex)
 				PushDebugMessage("#{ERYR_240701_83}")
 				g_Clue.SelectBKTXTConponent[g_CurClurPage][g_ClueClickBackup]:Hide()
 			end
-			--²é¿´ÊÇ·ñÒÑ¾­Íê³ÉÈı¸öÏßË÷µÄÕûºÏĞĞÎª£¬Èç¹ûÒÑÍê³ÉÔò½çÃæÏÔÊ¾ÈÎÎñÍê³É£¬²¢Í¨Öª·şÎñÆ÷¸üĞÂÈÎÎñ½ø¶È
+			--²é¿´ÊÇ·ñÒÑ¾­Íê³ÉÈı¸öÏßË÷µÄ ûºÏĞĞÎª£¬Èç¹ûÒÑÍê³ÉÔò½çÃæÏÔÊ¾ÈÎÎñÍê³É£¬²¢Í¨Öª·şÎñÆ÷¸üĞÂÈÎÎñ½ø¶È
 			local isFinishIntergration = true
 			for i = 1,3 do
 				if g_ClueIntergrations.Flag[i] ~= 1 then
@@ -562,7 +562,7 @@ function ERenGu_Yure_Client2_CluePage_Goto_Clicked()
 			Set_XSCRIPT_Parameter(0,g_CurQuestPhrase)
 			Set_XSCRIPT_ParamCount(1)
 		Send_XSCRIPT()
-	AutoRuntoTargetExWithName(137, 183, 1, "ÎÅÈËÓï")
+	AutoRuntoTargetExWithName(137, 183, 1, "Ngß¶i n±i tiªng Ngæ")
 	local GotoBtnState = g_CloseCase_Component.GotoBtn.State
 	if GotoBtnState == 1 then
 		g_CloseCase_Component.AnimateComponent:Play(true)
@@ -575,7 +575,7 @@ function ERenGu_Yure_Client3_Goto_Clicked()
 		ERenGu_Yure_CloseFunc()
 	else
 		if g_CurQuestPhrase == 3 then
-			AutoRuntoTargetExWithName(149, 268, 1, "Ê©ºÆÈ»")
+			AutoRuntoTargetExWithName(149, 268, 1, "Thi cu°n cuµn")
 		else
 			AutoRunToTargetEx(168,109,30)
 			PushDebugMessage("#{ERYR_240701_328}")

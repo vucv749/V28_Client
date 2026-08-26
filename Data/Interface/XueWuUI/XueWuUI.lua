@@ -4,14 +4,14 @@
 local g_XueWuUI_Frame_UnifiedPosition;
 local MenPaiId = -1
 local TargetID = nil
-local menpaiNameList = {"ÉÙÁÖ","Ã÷½Ì","Ø¤°ï","Îäµ±","¶ëÃ¼","ĞÇËŞ","ÌìÁú","ÌìÉ½","åĞÒ£","ÎŞÃÅÅÉ"}--,"Ä½Èİ","ÌÆÃÅ","¹í¹È","ÌÒ»¨µº"
+local menpaiNameList = {"Thiªu Lâm","Minh Giáo","Cái Bang","Võ Ğang","Nga Mi","Tinh Túc","Thiên Long","Thiên S½n","Tiêu dao","Tñ do"}--,"Mµ Dung","Ğß¶ng Môn","QuÖ C¯c","Ğào Hoa Ğäo"
 function XueWuUI_PreLoad()
 	this:RegisterEvent("OPEN_XUEWU_UI");
 	this:RegisterEvent("CLOSE_XUEWU_UI");
 	this:RegisterEvent("XUEWU_NOTIFY");
 	this:RegisterEvent("ADJEST_UI_POS",false)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
-	this:RegisterEvent( "HIDE_ON_SCENE_TRANSED" ); -- Àë¿ª³¡¾°
+	this:RegisterEvent( "HIDE_ON_SCENE_TRANSED" ); -- ????
 	this:RegisterEvent("MAINTARGET_CHANGED")
 end
 
@@ -48,7 +48,7 @@ function XueWuUI_ListBox_Selected()
 end
 
 function XueWuUI_Init()
-	--ÏÈÇå¿Õµ±Ç°ÁĞ±í
+	--ÏÈÇå¿ µ±Ç°ÁĞ±í
 	XueWuUI_menpaiEdix:ResetList()
 	for i = 1, table.getn(menpaiNameList) do
 		XueWuUI_menpaiEdix:AddTextItem(menpaiNameList[i], i)
@@ -56,14 +56,14 @@ function XueWuUI_Init()
 end
 
 --Ôª±¦
-function XueWuUI_yuanbao(index)--1Ôö¼Ó 2¼õÉÙ
+function XueWuUI_yuanbao(index)--1?? 2??
     local nNum = XueWuUI_yuanbaoEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -78,14 +78,14 @@ function XueWuUI_yuanbao(index)--1Ôö¼Ó 2¼õÉÙ
 end
 
 --ÎïÆ·×°±¸
-function XueWuUI_item(index)--1Ôö¼Ó 2¼õÉÙ
+function XueWuUI_item(index)--1?? 2??
     local nNum = XueWuUI_itemEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -100,14 +100,14 @@ function XueWuUI_item(index)--1Ôö¼Ó 2¼õÉÙ
 end
 
 --½ğ±Ò
-function XueWuUI_money(index)--1Ôö¼Ó 2¼õÉÙ
+function XueWuUI_money(index)--1?? 2??
     local nNum = XueWuUI_moneyEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -122,14 +122,14 @@ function XueWuUI_money(index)--1Ôö¼Ó 2¼õÉÙ
 end
 
 --°ó¶¨Ôª±¦
-function XueWuUI_bindyuanbao(index)--1Ôö¼Ó 2¼õÉÙ
+function XueWuUI_bindyuanbao(index)--1?? 2??
     local nNum = XueWuUI_bindyuanbaoEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -144,14 +144,14 @@ function XueWuUI_bindyuanbao(index)--1Ôö¼Ó 2¼õÉÙ
 end
 
 --·µÈ¯
-function XueWuUI_xiongba(index)--1Ôö¼Ó 2¼õÉÙ
+function XueWuUI_xiongba(index)--1?? 2??
     local nNum = XueWuUI_xiongbaEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -166,14 +166,14 @@ function XueWuUI_xiongba(index)--1Ôö¼Ó 2¼õÉÙ
 end
 
 --Ôùµã
-function XueWuUI_hongli(index)--1Ôö¼Ó 2¼õÉÙ
+function XueWuUI_hongli(index)--1?? 2??
     local nNum = XueWuUI_hongliEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -188,14 +188,14 @@ function XueWuUI_hongli(index)--1Ôö¼Ó 2¼õÉÙ
 end
 
 --½ÇÉ«µÈ¼¶
-function XueWuUI_level(index)--1Ôö¼Ó 2¼õÉÙ
+function XueWuUI_level(index)--1?? 2??
     local nNum = XueWuUI_levelEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -212,11 +212,11 @@ end
 --ÇĞ»»ÃÅÅÉ
 function XueWuUI_menpai(index) 
     if MenPaiId == - 1 then
-	   PushDebugMessage("ÇëÑ¡Ôñ¼ÓÈëµÄÃÅÅÉ")
+	   PushDebugMessage("Thïnh lña ch÷n gia nh§p Ğích môn phái")
 	   TargetID = 0
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -233,7 +233,7 @@ end
 --¸øÍæ¼Ò·¢·ÅµÀ¾ß×°±¸ BYÑ©Îè[BUG-319] 2021-9-4 21:45:55 
 function XueWuUI_FaFang(index)
 	if TargetID == nil then
-		PushDebugMessage("ÇëÑ¡Ôñ·¢·Å×°±¸µÄÍæ¼Ò£¬Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Thïnh lña ch÷n cho vay trang b¸ Ğích ngß¶i ch½i, nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	--ÎïÆ·ID
@@ -241,28 +241,28 @@ function XueWuUI_FaFang(index)
 	--·¢·ÅÊıÁ¿
 	local nNum = XueWuUI_FaFang2Edix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if nItem == nil then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	Clear_XSCRIPT();
 		Set_XSCRIPT_Function_Name("GMToolTypeOne");
 		Set_XSCRIPT_ScriptID(666666);
 		Set_XSCRIPT_Parameter(0,9); 				--nType 
-		Set_XSCRIPT_Parameter(1,tonumber(nItem));	--arg2  µÀ¾ßID
-		Set_XSCRIPT_Parameter(2,tonumber(nNum));	--arg3  µÀ¾ßÊıÁ¿
-		Set_XSCRIPT_Parameter(3,TargetID);		--isWho Íæ¼ÒGuid
-		Set_XSCRIPT_ParamCount(4);					--²ÎÊı×ÜÊı
+		Set_XSCRIPT_Parameter(1,tonumber(nItem));	--arg2  ??ID
+		Set_XSCRIPT_Parameter(2,tonumber(nNum));	--arg3  ????
+		Set_XSCRIPT_Parameter(3,TargetID);		--isWho ??Guid
+		Set_XSCRIPT_ParamCount(4);					--????
     Send_XSCRIPT();
 end
 
 --¸øÍæ¼Ò½»×Ó
 function XueWuUI_JiaoZi(index)
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
     local nNum = XueWuUI_JiaoZiEdix:GetText()
@@ -281,11 +281,11 @@ end
 function XueWuUI_JKL(index)
     local nNum = XueWuUI_JKLEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -303,11 +303,11 @@ end
 function XueWuUI_MenGong(index)
     local nNum = XueWuUI_MenGongEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -325,11 +325,11 @@ end
 function XueWuUI_BangGong(index)
     local nNum = XueWuUI_BangGongEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -347,11 +347,11 @@ end
 function XueWuUI_GongLi(index)
     local nNum = XueWuUI_GongLiEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -369,11 +369,11 @@ end
 function XueWuUI_TiWu(index)
     local nNum = XueWuUI_TiWuEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -387,15 +387,15 @@ function XueWuUI_TiWu(index)
     Send_XSCRIPT();
 end
 
---¸øÍæ¼ÒÕæÔª¾«´â
+--¸øÍæ¼Ò æÔª¾«´â
 function XueWuUI_JingCui(index)
     local nNum = XueWuUI_JingCuiEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -413,11 +413,11 @@ end
 function XueWuUI_ZhuangTai(index)
     local nNum = XueWuUI_ZhuangTaiEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -435,11 +435,11 @@ end
 function XueWuUI_BaoBao(index)
     local nNum = XueWuUI_BaoBaoEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -457,11 +457,11 @@ end
 function XueWuUI_JingYan(index)
     local nNum = XueWuUI_JingYanEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -479,11 +479,11 @@ end
 function XueWuUI_HuoLi(index)
     local nNum = XueWuUI_HuoLiEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -501,11 +501,11 @@ end
 function XueWuUI_JingLi(index)
     local nNum = XueWuUI_JingLiEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -525,7 +525,7 @@ function XueWuUI_DiTu(index)
 	local xPos = XueWuUI_DiTu2Edix:GetText()
 	local yPos = XueWuUI_DiTu3Edix:GetText()
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	if nMap == nil then
@@ -535,7 +535,7 @@ function XueWuUI_DiTu(index)
 		Set_XSCRIPT_Function_Name("GMToolTypeOne");
 		Set_XSCRIPT_ScriptID(666666);
 		Set_XSCRIPT_Parameter(0,22);
-		Set_XSCRIPT_Parameter(1,tonumber(nMap)); --µØÍ¼ID
+		Set_XSCRIPT_Parameter(1,tonumber(nMap)); --??ID
 		Set_XSCRIPT_Parameter(2,tonumber(xPos)); --X
 		Set_XSCRIPT_Parameter(3,TargetID);
 		Set_XSCRIPT_Parameter(4,tonumber(yPos)); --Y
@@ -544,14 +544,14 @@ function XueWuUI_DiTu(index)
 end
 
 --¸ø»áÔ±µã
-function XueWuUI_VIP(index)--1Ôö¼Ó 2¼õÉÙ
+function XueWuUI_VIP(index)--1?? 2??
     local nNum = XueWuUI_VIPEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -566,14 +566,14 @@ function XueWuUI_VIP(index)--1Ôö¼Ó 2¼õÉÙ
 end
 
 --¸øÄÚÏ¢
-function XueWuUI_NeiXi(index)--1Ôö¼Ó 2¼õÉÙ
+function XueWuUI_NeiXi(index)--1?? 2??
     local nNum = XueWuUI_NeiXiEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();

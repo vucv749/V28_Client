@@ -56,31 +56,31 @@ function GameSetup_UpdateFrame()
 
 	local n1,n2,n3,n4,n5,n6,n7,n8,n9,f10,n11,n12,n13,n14,n15,n16,f17,n18,n31,n34,n21,nRefActMood = SystemSetup:GameGetData();
 	
-	GameSetup_Item1						:SetCheck(n1);					-- 拒绝所有信件
-	GameSetup_Item2						:SetCheck(n2);					-- 拒绝加我好友
-	GameSetup_Item3						:SetCheck(n3);					-- 拒绝默认生信件
-	GameSetup_Item4						:SetCheck(n4);					-- 拒绝交易
-	GameSetup_Item5						:SetCheck(n5);					-- 拒绝队伍邀请
-	GameSetup_Item6						:SetCheck(n6);					-- 关闭当前泡泡框
-	GameSetup_Item7						:SetCheck(n7);					-- 拒绝查看配偶
-	GameSetup_Item8						:SetCheck(n8);					-- 角色显示帽子
-	GameSetup_Item9						:SetCheck(n9);					-- 非聊天模式
-	GameSetup_ChatBkg_Slider	:SetPosition(f10);			-- 聊天背景透明度
-	GameSetup_Item11					:SetCheck(n11);					-- 关闭快捷栏提示
-	GameSetup_Lock						:SetCheck(n12);					-- 锁定快捷栏
+	GameSetup_Item1						:SetCheck(n1);					-- ??????
+	GameSetup_Item2						:SetCheck(n2);					-- ??????
+	GameSetup_Item3						:SetCheck(n3);					-- ???????
+	GameSetup_Item4						:SetCheck(n4);					-- ????
+	GameSetup_Item5						:SetCheck(n5);					-- ??????
+	GameSetup_Item6						:SetCheck(n6);					-- ???????
+	GameSetup_Item7						:SetCheck(n7);					-- ??????
+	GameSetup_Item8						:SetCheck(n8);					-- ??????
+	GameSetup_Item9						:SetCheck(n9);					-- ?????
+	GameSetup_ChatBkg_Slider	:SetPosition(f10);			-- ???????
+	GameSetup_Item11					:SetCheck(n11);					-- ???????
+	GameSetup_Lock						:SetCheck(n12);					-- ?????
 	-- GameSetup_Scene						:SetCheck(n13);					-- 快速切换场景
-	GameSetup_ChatItem				:SetCheck(n15);					-- 快捷键查看链接
-	GameSetup_TeamFollow			:SetCheck(n16);						-- 自动接受组队跟随
-	GameSetup_TrackBkg_Slider	:SetPosition(f17);	--任务活动追踪背景透明度
+	GameSetup_ChatItem				:SetCheck(n15);					-- ???????
+	GameSetup_TeamFollow			:SetCheck(n16);						-- ????????
+	GameSetup_TrackBkg_Slider	:SetPosition(f17);	--???????????
 	GameSetup_FunctionBar_3:SetCheck(n18)
 	GameSetup_cooltime:SetCheck(n31)
 	--GameSetup_ShowNotice:SetCheck(n34)
 	
-	GameSetup_Item12:SetCheck(nRefActMood)  --拒绝聊天动作
+	GameSetup_Item12:SetCheck(nRefActMood)  --??????
 	
-	local nState,nFlag,nTime = Lua_LevelUpLock_GetState()--升级锁
-	n35 = GameSetup_FunctionBar_4:SetCheck(nFlag)--升级锁
-	GameSetup_LevelUpLockUpdate()--升级锁显示tip刷新
+	local nState,nFlag,nTime = Lua_LevelUpLock_GetState()--???
+	n35 = GameSetup_FunctionBar_4:SetCheck(nFlag)--???
+	GameSetup_LevelUpLockUpdate()--?????tip??
 	
 	GameSetup_Upload:SetCheck(n21)
 end
@@ -93,26 +93,26 @@ function GameSetup_Accept_Clicked()
 
 	local n1,n2,n3,n4,n5,n6,n7,n8,n9,f10,n11,n12,n13,n14,n15,n16,f17,n18,n31,n34,n21,nRefActMood = SystemSetup:GameGetData();
 
-	n1 = GameSetup_Item1:GetCheck();									-- 拒绝所有信件
-	n2 = GameSetup_Item2:GetCheck();                  -- 拒绝加我好友       
-	n3 = GameSetup_Item3:GetCheck();                  -- 拒绝默认生信件     
-	n4 = GameSetup_Item4:GetCheck();                  -- 拒绝交易           
-	n5 = GameSetup_Item5:GetCheck();                  -- 拒绝队伍邀请       
-	n6 = GameSetup_Item6:GetCheck();                  -- 关闭当前泡泡框     
-	n7 = GameSetup_Item7:GetCheck();                  -- 拒绝查看配偶       
-	n8 = GameSetup_Item8:GetCheck();                  -- 角色显示帽子       
-	n9 = GameSetup_Item9:GetCheck();                  -- 非聊天模式
-	f10 = GameSetup_ChatBkg_Slider:GetPosition();     -- 聊天背景透明度
-	n11 = GameSetup_Item11:GetCheck();                -- 关闭快捷栏提示  
-	n12 = GameSetup_Lock:GetCheck();                  -- 锁定快捷栏         
-	n13 = 0--GameSetup_Scene:GetCheck();                 -- 快速切换场景       
-	n15 = GameSetup_ChatItem:GetCheck();              -- 快捷键查看链接  
-	n16 = GameSetup_TeamFollow:GetCheck();						-- 自动接受组队跟随	   
-	f17 = GameSetup_TrackBkg_Slider:GetPosition();	--任务活动追踪背景透明度
+	n1 = GameSetup_Item1:GetCheck();									-- ??????
+	n2 = GameSetup_Item2:GetCheck();                  -- ??????       
+	n3 = GameSetup_Item3:GetCheck();                  -- ???????     
+	n4 = GameSetup_Item4:GetCheck();                  -- ????           
+	n5 = GameSetup_Item5:GetCheck();                  -- ??????       
+	n6 = GameSetup_Item6:GetCheck();                  -- ???????     
+	n7 = GameSetup_Item7:GetCheck();                  -- ??????       
+	n8 = GameSetup_Item8:GetCheck();                  -- ??????       
+	n9 = GameSetup_Item9:GetCheck();                  -- ?????
+	f10 = GameSetup_ChatBkg_Slider:GetPosition();     -- ???????
+	n11 = GameSetup_Item11:GetCheck();                -- ???????  
+	n12 = GameSetup_Lock:GetCheck();                  -- ?????         
+	n13 = 0--GameSetup_Scene:GetCheck();                 -- ??????       
+	n15 = GameSetup_ChatItem:GetCheck();              -- ???????  
+	n16 = GameSetup_TeamFollow:GetCheck();						-- ????????	   
+	f17 = GameSetup_TrackBkg_Slider:GetPosition();	--???????????
 	n18 = GameSetup_FunctionBar_3:GetCheck()
-	n31 = GameSetup_cooltime:GetCheck()  --冷却计时
+	n31 = GameSetup_cooltime:GetCheck()  --????
 	--n34 = GameSetup_ShowNotice:GetCheck()
-	n35 = GameSetup_FunctionBar_4:GetCheck()--升级锁
+	n35 = GameSetup_FunctionBar_4:GetCheck()--???
 	n21 = GameSetup_Upload:GetCheck()
 	nRefActMood = GameSetup_Item12:GetCheck()
 
@@ -143,28 +143,28 @@ end
 --===============================================
 function GameSetup_Default_Clicked()
 
-	GameSetup_Item1						:SetCheck(0);							-- 拒绝所有信件
-	GameSetup_Item2						:SetCheck(0);             -- 拒绝加我好友
-	GameSetup_Item3						:SetCheck(0);             -- 拒绝默认生信件
-	GameSetup_Item4						:SetCheck(0);             -- 拒绝交易
-	GameSetup_Item5						:SetCheck(0);             -- 拒绝队伍邀请
-	GameSetup_Item6						:SetCheck(0);             -- 关闭当前泡泡框
-	GameSetup_Item7						:SetCheck(0);             -- 拒绝查看配偶
-	GameSetup_Item8						:SetCheck(0);             -- 角色显示帽子
+	GameSetup_Item1						:SetCheck(0);							-- ??????
+	GameSetup_Item2						:SetCheck(0);             -- ??????
+	GameSetup_Item3						:SetCheck(0);             -- ???????
+	GameSetup_Item4						:SetCheck(0);             -- ????
+	GameSetup_Item5						:SetCheck(0);             -- ??????
+	GameSetup_Item6						:SetCheck(0);             -- ???????
+	GameSetup_Item7						:SetCheck(0);             -- ??????
+	GameSetup_Item8						:SetCheck(0);             -- ??????
 	if not GameProduceLogin:IsYunGameMobileClient() then 
-		GameSetup_Item9					:SetCheck(0);             -- 非聊天模式
+		GameSetup_Item9					:SetCheck(0);             -- ?????
 	end
-	GameSetup_ChatBkg_Slider	:SetPosition(1);       		-- 聊天背景透明度
-	GameSetup_Item11					:SetCheck(1);							-- 关闭快捷栏提示
-	GameSetup_Lock						:SetCheck(0);             -- 锁定快捷栏
+	GameSetup_ChatBkg_Slider	:SetPosition(1);       		-- ???????
+	GameSetup_Item11					:SetCheck(1);							-- ???????
+	GameSetup_Lock						:SetCheck(0);             -- ?????
 	-- GameSetup_Scene						:SetCheck(1);             -- 快速切换场景
-	GameSetup_ChatItem				:SetCheck(0);             -- 快捷键查看链接
-	GameSetup_TeamFollow			:SetCheck(0);-- 自动接受组队跟随
+	GameSetup_ChatItem				:SetCheck(0);             -- ???????
+	GameSetup_TeamFollow			:SetCheck(0);-- ????????
 	GameSetup_TrackBkg_Slider	:SetPosition(1)
 	GameSetup_FunctionBar_3:SetCheck(0)
 	GameSetup_cooltime:SetCheck(0)
 	--GameSetup_ShowNotice:SetCheck(1)
-	GameSetup_FunctionBar_4:SetCheck(0)--升级锁
+	GameSetup_FunctionBar_4:SetCheck(0)--???
 	GameSetup_Upload					:SetCheck(1)
 end
 
@@ -188,7 +188,7 @@ end
 
 function GameSetup_LevelUpLock_Clicked()
 
-	local bChange = 1 --是否能够更改升级锁按钮
+	local bChange = 1 --???????????
 
 	--判断电话密保和二级密码保护
 	if CheckPhoneMibaoAndMinorPassword() ~= 1 then
@@ -202,7 +202,7 @@ function GameSetup_LevelUpLock_Clicked()
 		bChange = 0
 	end
 
-	if(bChange == 0)then--不允许更改升级锁按钮 这块有点恶心 那个按钮是自动切换的，这个函数只能给他设置回去，形成闪动的效果
+	if(bChange == 0)then--?????????? ?????? ??????????,????????????,???????
 		local nState,nFlag,nTime = Lua_LevelUpLock_GetState()
 		GameSetup_FunctionBar_4:SetCheck(nFlag)
 	end

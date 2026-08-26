@@ -3,8 +3,8 @@ local QNYH_StoryPanel_UnifiedPosition = nil
 function QNYH_StoryPanel_PreLoad()
 	this:RegisterEvent("UI_COMMAND", true)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end
 
 function QNYH_StoryPanel_OnLoad()

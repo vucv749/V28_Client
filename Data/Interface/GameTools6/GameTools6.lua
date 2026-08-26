@@ -32,84 +32,84 @@ function GameTools6_OnLoad()
 	GameTools6_EditBoxTabRed = {GameTools6_BoxPar1_Background,GameTools6_BoxPar2_Background,GameTools6_BoxPar3_Background};
 	
 	--==========¶àÈË ¿ªÊ¼==========
-	GameTools6_AllTab[1] = {"¹ÖÎïID","³¡¾°Î»ÖÃ","°ó¶¨½Å±¾","¹ÖÎïID=P1,¹ÖÎï±íID\n¹ÖÎï·½Ïò=P2,ÈçÄ¬ÈÏÔòÊäÈë-1\n°ó¶¨½Å±¾=P3½Å±¾ºÅ,ÈçÎŞ½Å±¾ÔòÊäÈë-1","´´½¨¹ÖÎï(¹ÖÎï)"};
-	GameTools6_AllTab[2] = {"¹ÖÎïID","³¡¾°Î»ÖÃ","°ó¶¨½Å±¾","¹ÖÎïID=P1,¹ÖÎï±íID\n¹ÖÎï·½Ïò=P2,ÈçÄ¬ÈÏÔòÊäÈë-1\n°ó¶¨½Å±¾=P3½Å±¾ºÅ,ÈçÎŞ½Å±¾ÔòÊäÈë-1","´´½¨¹ÖÎï(NPC)"};
-	GameTools6_AllTab[3] = {"¹ÖÎïID","ÎŞĞ§","ÎŞĞ§","¹ÖÎïID=¹ÖÎï±íID\nÇåÀíµ±Ç°³¡¾°ÉÏËùÓĞ¸ÃIDµÄ´´½¨¹ÖÎï»òNPC","É¾³ı¹ÖÎï"};
-	GameTools6_AllTab[4] = {"½Å±¾ID","ÎŞĞ§","ÎŞĞ§","½Å±¾ID=ÁùÎ»ÊıID\nÖØÔØÈÎÒâLUA½Å±¾","ÖØÔØLUA½Å±¾"};
-	GameTools6_AllTab[5] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","ÖØÔØÈ«¾Ö½Å±¾ScriptGlobal.lua£¬ĞŞ¸ÄµÄº¯ÊıºÍ½Å±¾Á¢¼´ÉúĞ§","ÖØÔØÈ«¾Ö½Å±¾"};
-	GameTools6_AllTab[6] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","ÖØÔØÉÌµêTXTÎÄ¼ş\nÖØĞÂ¼ÓÔØÎÄ¼ş£¬¶ÔÎÄ¼şµÄĞŞ¸ÄÁ¢¼´ÉúĞ§","ÖØÔØÉÌµê"};
-	GameTools6_AllTab[7] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","ÖØÔØ±¬ÂÊTXTÎÄ¼ş\nÖØĞÂ¼ÓÔØÎÄ¼ş£¬¶ÔÎÄ¼şµÄĞŞ¸ÄÁ¢¼´ÉúĞ§","ÖØÔØ±¬ÂÊ"};
-	GameTools6_AllTab[8] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","ÖØÔØ¹ÖÎïTXTÎÄ¼ş\nÖØĞÂ¼ÓÔØÎÄ¼ş£¬¶ÔÎÄ¼şµÄĞŞ¸ÄÁ¢¼´ÉúĞ§","ÖØÔØ¹ÖÎïÎÄ¼ş"};
-	GameTools6_AllTab[9] = {"ÊÇ·ñ¿ªÆô","ÎŞĞ§","ÎŞĞ§","Ğ¡À®°ÈÊÇ·ñ¿ª·ÅÊ¹ÓÃ\n¿ªÆôÎª0,¹Ø±ÕÎª1","Ğ¡À®°ÈÊÇ·ñ¿ª·ÅÊ¹ÓÃ"};
-	GameTools6_AllTab[10] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","ÖØÔØµôÂä¹«¸æÎÄ±¾ DropNotify.txt £¬¶ÔÎÄ¼şµÄĞŞ¸ÄÁ¢¼´ÉúĞ§","ÖØÔØµôÂä¹«¸æÎÄ±¾"};
-	GameTools6_AllTab[11] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","ÖØÔØEquipBase.txt £¬¶ÔÎÄ¼şµÄĞŞ¸ÄÁ¢¼´ÉúĞ§","ÖØÔØ×°±¸ÎÄ¼ş"};
-	GameTools6_AllTab[12] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","ÖØÔØÊÖ¹¤Æ·ÖÊ·Ö²¼±í/ÆğÊ¼ÊıÖµ¶Î¶ÔÓ¦ÎÄ¼ş ItemSegAffect.txt  ItemSegValue.txt £¬¶ÔÎÄ¼şµÄĞŞ¸ÄÁ¢¼´ÉúĞ§","ÖØÔØ×°±¸ÊôĞÔÎÄ¼ş"};
-	GameTools6_AllTab[13] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","ÖØÔØAllowableScriptFunc.txt £¬¶ÔÎÄ¼şµÄĞŞ¸ÄÁ¢¼´ÉúĞ§","ÖØÔØ½Å±¾·ÅĞĞ±í"};
-	GameTools6_AllTab[14] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","ÖØÔØCommonItem.txt £¬¶ÔÎÄ¼şµÄĞŞ¸ÄÁ¢¼´ÉúĞ§","ÖØÔØÎïÆ·±í"};
-	GameTools6_AllTab[15] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","ÖØÔØGemInfo.txt £¬¶ÔÎÄ¼şµÄĞŞ¸ÄÁ¢¼´ÉúĞ§","ÖØÔØ±¦Ê¯±í"};
-	GameTools6_AllTab[16] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","ÖØÔØPetAttrTable.txt £¬¶ÔÎÄ¼şµÄĞŞ¸ÄÁ¢¼´ÉúĞ§","ÖØÔØÕäÊŞ±í"};
-	GameTools6_AllTab[17] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","ÖØÔØMonsterAttrExTable.txt £¬¶ÔÎÄ¼şµÄĞŞ¸ÄÁ¢¼´ÉúĞ§","ÖØÔØ¹ÖÎï±í"};
-	GameTools6_AllTab[18] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","ÖØÔØPetLingXing.txt £¬¶ÔÎÄ¼şµÄĞŞ¸ÄÁ¢¼´ÉúĞ§","ÖØÔØÁéĞÔ±í"};
-	GameTools6_AllTab[19] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","ÖØÔØPetHuanhuaTable.txt £¬¶ÔÎÄ¼şµÄĞŞ¸ÄÁ¢¼´ÉúĞ§","ÖØÔØ»Ã»¯±í"};
+	GameTools6_AllTab[1] = {"Quái v§t ID","Trß¶ng cänh v¸ trí","Bäng Ğ¸nh k¸ch bän g¯c","Quái v§t ID=P1, quái v§t Bi¬u ID\\nquái v§t phß½ng hß¾ng =P2, Nhß cam ch¸u T¡c ğßa vào-1\\nBäng Ğ¸nh k¸ch bän g¯c =P3k¸ch bän g¯c Hào, Nhß Vô k¸ch bän g¯c T¡c ğßa vào-1","Sáng tÕo quái v§t(quái v§t)"};
+	GameTools6_AllTab[2] = {"Quái v§t ID","Trß¶ng cänh v¸ trí","Bäng Ğ¸nh k¸ch bän g¯c","Quái v§t ID=P1, quái v§t Bi¬u ID\\nquái v§t phß½ng hß¾ng =P2, Nhß cam ch¸u T¡c ğßa vào-1\\nBäng Ğ¸nh k¸ch bän g¯c =P3k¸ch bän g¯c Hào, Nhß Vô k¸ch bän g¯c T¡c ğßa vào-1","Sáng tÕo quái v§t(NPC)"};
+	GameTools6_AllTab[3] = {"Quái v§t ID","Không có hi®u quä","Không có hi®u quä","Quái v§t ID=quái v§t Bi¬u ID\\nrØa sÕch trß¾c m£t trß¶ng cänh Thßşng t¤t cä Cai IDĞích sáng tÕo quái v§t Ho£c NPC","Xóa bö quái v§t"};
+	GameTools6_AllTab[4] = {"K¸ch bän g¯c ID","Không có hi®u quä","Không có hi®u quä","K¸ch bän g¯c ID=sáu v¸ S± ID\\nTrùng Täi ı LUAk¸ch bän g¯c","Trùng Täi LUAk¸ch bän g¯c"};
+	GameTools6_AllTab[5] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Trùng Täi toàn cøc k¸ch bän g¯c ScriptGlobal. Lua, sØa chæa Ğích hàm s¯ Hoà k¸ch bän g¯c l§p tÑc có hi®u lñc","Trùng Täi toàn cøc k¸ch bän g¯c"};
+	GameTools6_AllTab[6] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Trùng Täi cØa hàng TXTvån ki®n\\nmµt l¥n næa Gia Täi vån ki®n, Ğ¯i vån ki®n Ğích sØa chæa l§p tÑc có hi®u lñc","Trùng Täi cØa hàng"};
+	GameTools6_AllTab[7] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Trùng Täi Bµc Su¤t TXTvån ki®n\\nmµt l¥n næa Gia Täi vån ki®n, Ğ¯i vån ki®n Ğích sØa chæa l§p tÑc có hi®u lñc","Trùng Täi Bµc Su¤t"};
+	GameTools6_AllTab[8] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Trùng Täi quái v§t TXTvån ki®n\\nmµt l¥n næa Gia Täi vån ki®n, Ğ¯i vån ki®n Ğích sØa chæa l§p tÑc có hi®u lñc","Trùng Täi quái v§t vån ki®n"};
+	GameTools6_AllTab[9] = {"Hay không m· ra","Không có hi®u quä","Không có hi®u quä","Ti¬u LÕt Bát hay không m· ra sØ døng\\nm· ra Vi 0, ğóng cØa Vi 1","Ti¬u LÕt Bát hay không m· ra sØ døng"};
+	GameTools6_AllTab[10] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Trùng Täi r½i xu¯ng thông cáo vån bän DropNotify. Txt, Ğ¯i vån ki®n Ğích sØa chæa l§p tÑc có hi®u lñc","Trùng Täi r½i xu¯ng thông cáo vån bän"};
+	GameTools6_AllTab[11] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Trùng Täi EquipBase. Txt, Ğ¯i vån ki®n Ğích sØa chæa l§p tÑc có hi®u lñc","Trùng Täi trang b¸ vån ki®n"};
+	GameTools6_AllTab[12] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Trùng Täi thü công ph¦m ch¤t phân b¯ Bi¬u/lúc ğ¥u tr¸ s¯ ĞoÕn ğ¯i Ñng vån ki®n ItemSegAffect. Txt ItemSegValue. Txt, Ğ¯i vån ki®n Ğích sØa chæa l§p tÑc có hi®u lñc","Trùng Täi trang b¸ thuµc tính vån ki®n"};
+	GameTools6_AllTab[13] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Trùng Täi AllowableScriptFunc. Txt, Ğ¯i vån ki®n Ğích sØa chæa l§p tÑc có hi®u lñc","Trùng Täi k¸ch bän g¯c cho ği Bi¬u"};
+	GameTools6_AllTab[14] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Trùng Täi CommonItem. Txt, Ğ¯i vån ki®n Ğích sØa chæa l§p tÑc có hi®u lñc","Trùng Täi v§t ph¦m Bi¬u"};
+	GameTools6_AllTab[15] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Trùng Täi GemInfo. Txt, Ğ¯i vån ki®n Ğích sØa chæa l§p tÑc có hi®u lñc","Trùng Täi bäo thÕch Bi¬u"};
+	GameTools6_AllTab[16] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Trùng Täi PetAttrTable. Txt, Ğ¯i vån ki®n Ğích sØa chæa l§p tÑc có hi®u lñc","Trùng Täi Trân Thú Bi¬u"};
+	GameTools6_AllTab[17] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Trùng Täi MonsterAttrExTable. Txt, Ğ¯i vån ki®n Ğích sØa chæa l§p tÑc có hi®u lñc","Trùng Täi quái v§t Bi¬u"};
+	GameTools6_AllTab[18] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Trùng Täi PetLingXing. Txt, Ğ¯i vån ki®n Ğích sØa chæa l§p tÑc có hi®u lñc","Trùng Täi linh tính Bi¬u"};
+	GameTools6_AllTab[19] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Trùng Täi PetHuanhuaTable. Txt, Ğ¯i vån ki®n Ğích sØa chæa l§p tÑc có hi®u lñc","Trùng Täi biªn äo Bi¬u"};
 	--==========¶àÈË ¿ªÊ¼==========
 	
 	--==========ËûÈË ¿ªÊ¼==========
-	GameTools6_TarTab[1] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","²é¿´Ä¿±êµÄ½ÇÉ«µÄ²Æ¸»","²é¿´²Æ¸»"};
-	GameTools6_TarTab[2] = {"ÓĞĞ§µÄ#GÎïÆ·ID","·¢·ÅµÄ#GÊıÁ¿","ÎŞĞ§","¸øÄ¿±ê½ÇÉ«Ò»´ÎĞÔ·¢·ÅP2¸öP1","·¢·ÅÎïÆ·"};
-	GameTools6_TarTab[3] = {"·¢·ÅÊıÁ¿","ÎŞĞ§","ÎŞĞ§","¸øÄ¿±ê½ÇÉ«·¢P1½ğ±Ò","·¢½ğ±Ò"};
-	GameTools6_TarTab[4] = {"·¢·ÅÊıÁ¿","ÎŞĞ§","ÎŞĞ§","¸øÄ¿±ê½ÇÉ«·¢P1½»×Ó","·¢½»×Ó"};
-	GameTools6_TarTab[5] = {"·¢·ÅÊıÁ¿","ÎŞĞ§","ÎŞĞ§","¸øÄ¿±ê½ÇÉ«·¢P1Ôª±¦","·¢Ôª±¦"};
-	GameTools6_TarTab[6] = {"·¢·ÅÊıÁ¿","ÎŞĞ§","ÎŞĞ§","¸øÄ¿±ê½ÇÉ«·¢P1°óÔª","·¢°óÔª"};
-	GameTools6_TarTab[7] = {"MD±àºÅ[0-511]","ÎŞĞ§","ÎŞĞ§","²éÑ¯Ä¿±ê½ÇÉ«P1µÄMDÖµ","²éMD"};
-	GameTools6_TarTab[8] = {"EX±àºÅ[0-1535]","ÎŞĞ§","ÎŞĞ§","²éÑ¯Ä¿±ê½ÇÉ«P1µÄEXÖµ","²éEX"};
-	GameTools6_TarTab[9] = {"FLAG±àºÅ[0-319]","ÎŞĞ§","ÎŞĞ§","²éÑ¯Ä¿±ê½ÇÉ«P1µÄFLAGÖµ","²éFLAG"};
-	GameTools6_TarTab[10] = {"MD±àºÅ[0-511]","ÉèÖÃµÄÖµ","ÎŞĞ§","ÉèÖÃÄ¿±ê½ÇÉ«P1µÄMDÖµ","ÉèMD"};
-	GameTools6_TarTab[11] = {"EX±àºÅ[0-1535]","ÉèÖÃµÄÖµ","ÎŞĞ§","ÉèÖÃÄ¿±ê½ÇÉ«P1µÄEXÖµ","ÉèEX"};
-	GameTools6_TarTab[12] = {"FLAG±àºÅ[0-319]","ÉèÖÃµÄÖµ[0-1]","ÎŞĞ§","ÉèÖÃÄ¿±ê½ÇÉ«P1µÄFLAGÖµ","ÉèFLAG"};
-	GameTools6_TarTab[13] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","ÉèÖÃÍæ¼ÒÓµÓĞ³¬¼¶BTÊôĞÔ","GM³¬¼¶ÊôĞÔ"};
-	GameTools6_TarTab[14] = {"P1ÕäÊŞID","P2ÎåÎ¬×ÊÖÊ","P3³É³¤ÂÊ","Ñ¡Ôñºóµã»÷È·¶¨","ÁìÈ¡³èÎï"};
-	GameTools6_TarTab[15] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","²éÑ¯ÉíÉÏËùÓĞBUFF","²éBUFF"};
-	GameTools6_TarTab[16] = {"P1ÌáÉıµÈ¼¶","ÎŞĞ§","ÎŞĞ§","ÌáÉıÍæ¼ÒµÈ¼¶(Ö»ÄÜÌáÉı,²»ÄÜ½µµÍ)","ÌáÉıµÈ¼¶"};
+	GameTools6_TarTab[1] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Xem xét møc tiêu Ğích vai di­n Ğích tài phú","Xem xét tài phú"};
+	GameTools6_TarTab[2] = {"Hæu hi®u Ğích#Gv?t ph¦m ID","Cho vay Ğích#Gs lßşng","Không có hi®u quä","C¤p møc tiêu vai di­n duy nh¤t cho vay P2Cá P1","Cho vay v§t ph¦m"};
+	GameTools6_TarTab[3] = {"Cho vay s¯ lßşng","Không có hi®u quä","Không có hi®u quä","C¤p møc tiêu vai di­n Phát P1Kim T®","Phát Kim T®"};
+	GameTools6_TarTab[4] = {"Cho vay s¯ lßşng","Không có hi®u quä","Không có hi®u quä","C¤p møc tiêu vai di­n Phát P1Giao TØ","Phát Giao TØ"};
+	GameTools6_TarTab[5] = {"Cho vay s¯ lßşng","Không có hi®u quä","Không có hi®u quä","C¤p møc tiêu vai di­n Phát P1nguyên bäo","Phát nguyên bäo"};
+	GameTools6_TarTab[6] = {"Cho vay s¯ lßşng","Không có hi®u quä","Không có hi®u quä","C¤p møc tiêu vai di­n Phát P1Bäng Nguyên","Phát Bäng Nguyên"};
+	GameTools6_TarTab[7] = {"MDğánh s¯[0-511]","Không có hi®u quä","Không có hi®u quä","Tu¥n tra møc tiêu vai di­n P1Ğích MDTr¸","Tra MD"};
+	GameTools6_TarTab[8] = {"EXğánh s¯[0-1535]","Không có hi®u quä","Không có hi®u quä","Tu¥n tra møc tiêu vai di­n P1Ğích EXTr¸","Tra EX"};
+	GameTools6_TarTab[9] = {"FLAGğánh s¯[0-319]","Không có hi®u quä","Không có hi®u quä","Tu¥n tra møc tiêu vai di­n P1Ğích FLAGTr¸","Tra FLAG"};
+	GameTools6_TarTab[10] = {"MDğánh s¯[0-511]","Thiªt trí giá tr¸","Không có hi®u quä","Thiªt trí møc tiêu vai di­n P1Ğích MDTr¸","Thiªt MD"};
+	GameTools6_TarTab[11] = {"EXğánh s¯[0-1535]","Thiªt trí giá tr¸","Không có hi®u quä","Thiªt trí møc tiêu vai di­n P1Ğích EXTr¸","Thiªt EX"};
+	GameTools6_TarTab[12] = {"FLAGğánh s¯[0-319]","Thiªt trí giá tr¸[0-1]","Không có hi®u quä","Thiªt trí møc tiêu vai di­n P1Ğích FLAGTr¸","Thiªt FLAG"};
+	GameTools6_TarTab[13] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Thiªt trí ngß¶i ch½i có ğßşc siêu c¤p BTthuµc tính","GMsiêu c¤p thuµc tính"};
+	GameTools6_TarTab[14] = {"P1Trân Thú ID","P2Ngû Duy tß ch¤t","P3l¾n d¥n Su¤t","Lña ch÷n H§u Ği¬m Kích xác ğ¸nh","Lînh süng v§t"};
+	GameTools6_TarTab[15] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Tu¥n tra trên ngß¶i t¤t cä BUFF","Tra BUFF"};
+	GameTools6_TarTab[16] = {"P1tång lên c¤p b§c","Không có hi®u quä","Không có hi®u quä","Tång lên ngß¶i ch½i c¤p b§c(chï có th¬ tång lên, không th¬ r½i ch§m lÕi)","Tång lên c¤p b§c"};
 	--==========ËûÈË ½áÊø==========
 	
 	--==========×Ô¼º ¿ªÊ¼==========
-	GameTools6_SelfTab[1] = {"ÓĞĞ§µÄ#GÎïÆ·ID","ÁìÈ¡µÄ#GÊıÁ¿","ÎŞĞ§","Ò»´ÎĞÔÁìÈ¡P2¸öP1","ÁìÈ¡ÎïÆ·"};
-	GameTools6_SelfTab[2] = {"±³°ü»ò×°±¸¸ñÎ»#G[0-59]","ÎŞĞ§","ÎŞĞ§","²éÑ¯P1Î»ÖÃÉÏµÄ×Ö·ûĞÅÏ¢","²éÎïÆ·×Ö·ûĞÅÏ¢"};
-	GameTools6_SelfTab[3] = {"ÆğÊ¼¸ñÎ»#G[0-89]","½áÊø¸ñÎ»#G[0-89]","ÎŞĞ§","ÇåÀí±³°üP1-P2¸ñÎ»ÉÏµÄÎïÆ·","Çå±³°ü"};
-	GameTools6_SelfTab[4] = {"ÁìÈ¡ÊıÁ¿","ÎŞĞ§","ÎŞĞ§","ÁìÈ¡½ğ±ÒÊı=P1","Áì½ğ±Ò"};
-	GameTools6_SelfTab[5] = {"¿Û³ıÊıÁ¿","ÎŞĞ§","ÎŞĞ§","¿Û³ı½ğ±ÒÊı=P1£¬µ±ÉíÉÏ½ğ±ÒĞ¡ÓÚP1Ê±Ôò°ÑÉíÉÏ½ğ±ÒÈ«Êı¿Û³ı","¿Û½ğ±Ò"};
-	GameTools6_SelfTab[6] = {"ÁìÈ¡ÊıÁ¿","ÎŞĞ§","ÎŞĞ§","ÁìÈ¡½»×ÓÊı=P1","Áì½»×Ó"};
-	GameTools6_SelfTab[7] = {"¿Û³ıÊıÁ¿","ÎŞĞ§","ÎŞĞ§","¿Û³ı½»×ÓÊı=P1£¬µ±ÉíÉÏ½»×ÓĞ¡ÓÚP1Ê±Ôò°ÑÉíÉÏ½»×ÓÈ«Êı¿Û³ı","¿Û½»×Ó"};
-	GameTools6_SelfTab[8] = {"ÁìÈ¡ÊıÁ¿","ÎŞĞ§","ÎŞĞ§","ÁìÈ¡Ôª±¦Êı=P1","ÁìÔª±¦"};
-	GameTools6_SelfTab[9] = {"¿Û³ıÊıÁ¿","ÎŞĞ§","ÎŞĞ§","¿Û³ıÔª±¦Êı=P1£¬µ±ÉíÉÏÔª±¦Ğ¡ÓÚP1Ê±Ôò°ÑÉíÉÏÔª±¦È«Êı¿Û³ı","¿ÛÔª±¦"};
-	GameTools6_SelfTab[10] = {"ÁìÈ¡ÊıÁ¿","ÎŞĞ§","ÎŞĞ§","ÁìÈ¡°óÔªÊı=P1","Áì°óÔª"};
-	GameTools6_SelfTab[11] = {"¿Û³ıÊıÁ¿","ÎŞĞ§","ÎŞĞ§","¿Û³ı°óÔªÊı=P1£¬µ±ÉíÉÏ°óÔªĞ¡ÓÚP1Ê±Ôò°ÑÉíÉÏ°óÔªÈ«Êı¿Û³ı","¿Û°óÔª"};
-	GameTools6_SelfTab[12] = {"ÁìÈ¡ÊıÁ¿","ÎŞĞ§","ÎŞĞ§","ÁìÈ¡¾­ÑéÊı=P1","Áì¾­Ñé"};
-	GameTools6_SelfTab[13] = {"¿Û³ıÊıÁ¿","ÎŞĞ§","ÎŞĞ§","¿Û³ı¾­ÑéÊı=P1£¬µ±ÉíÉÏ¾­ÑéĞ¡ÓÚP1Ê±Ôò°ÑÉíÉÏ¾­ÑéÈ«Êı¿Û³ı","¿Û¾­Ñé"};
-	GameTools6_SelfTab[14] = {"µÈ¼¶Êı[1-119]","ÎŞĞ§","ÎŞĞ§","µÈ¼¶=P1","ÉèÖÃµÈ¼¶"};
-	GameTools6_SelfTab[15] = {"ÃÅÅÉºÅ[0-8]","ÎŞĞ§","ÎŞĞ§","ÎŞÃÅÅÉÊ±¼ÓÈëÃÅÅÉ=P1","¼ÓÈëÃÅÅÉ"};
-	GameTools6_SelfTab[16] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","½«±¾ÃÅÅÉÎ´Ñ§µÄĞÄ·¨Ñ§Ï°","Ñ§ĞÄ·¨"};
-	GameTools6_SelfTab[17] = {"ĞÄ·¨µÈ¼¶[1-119]","ÎŞĞ§","ÎŞĞ§","½«±¾ÃÅÅÉÒÑÑ§»áµÄĞÄ·¨µÈ¼¶=P1","ÉèÖÃĞÄ·¨µÈ¼¶"};
-	GameTools6_SelfTab[18] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","²éÑ¯ÉíÉÏËùÓĞBUFF","²éBUFF"};
-	GameTools6_SelfTab[19] = {"MD±àºÅ[0-511]","ÎŞĞ§","ÎŞĞ§","²éÑ¯P1µÄMDÖµ","²éMD"};
-	GameTools6_SelfTab[20] = {"EX±àºÅ[0-1535]","ÎŞĞ§","ÎŞĞ§","²éÑ¯P1µÄEXÖµ","²éEX"};
-	GameTools6_SelfTab[21] = {"FLAG±àºÅ[0-319]","ÎŞĞ§","ÎŞĞ§","²éÑ¯P1µÄFLAGÖµ","²éFLAG"};
-	GameTools6_SelfTab[22] = {"WORLD±àºÅ[1-100]","ÎŞĞ§","ÎŞĞ§","²éÑ¯P1µÄWORLDÖµ","²éWORLD"};
-	GameTools6_SelfTab[23] = {"¼¼ÄÜ±àºÅ","ÎŞĞ§","ÎŞĞ§","Ñ§Ï°¼¼ÄÜ±àºÅ=P1","Ñ§Ï°¼¼ÄÜ"};
-	GameTools6_SelfTab[24] = {"¼¼ÄÜ±àºÅ","ÎŞĞ§","ÎŞĞ§","É¾³ı¼¼ÄÜ±àºÅ=P1","É¾³ı¼¼ÄÜ"};
-	GameTools6_SelfTab[25] = {"BUFFID","ÎŞĞ§","ÎŞĞ§","¸³ÓèBUFF=P1","¼ÓBUFF"};
-	GameTools6_SelfTab[26] = {"BUFFID","ÎŞĞ§","ÎŞĞ§","É¾³ıBUFF=P1","É¾BUFF"};
-	GameTools6_SelfTab[27] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","µ±Ç°³¡¾°Êı¾İ","²é³¡¾°Êı¾İ"};
-	GameTools6_SelfTab[28] = {"³¡¾°ID","Î»ÖÃX","Î»ÖÃZ","´«ËÍµ½³¡¾°P1[P2,P3]Î»ÖÃ´¦","»»³¡¾°"};
-	GameTools6_SelfTab[29] = {"MD±àºÅ[0-511]","ÉèÖÃµÄÖµ","ÎŞĞ§","ÉèÖÃP1µÄMDÖµ","ÉèMD"};
-	GameTools6_SelfTab[30] = {"EX±àºÅ[0-1535]","ÉèÖÃµÄÖµ","ÎŞĞ§","ÉèÖÃP1µÄEXÖµ","ÉèEX"};
-	GameTools6_SelfTab[31] = {"FLAG±àºÅ[0-319]","ÉèÖÃµÄÖµ[0-1]","ÎŞĞ§","ÉèÖÃP1µÄFLAGÖµ","ÉèFLAG"};
-	GameTools6_SelfTab[32] = {"WORLD±àºÅ[1-100]","ÉèÖÃµÄÖµ","ÎŞĞ§","ÉèÖÃP1µÄWORLDÖµ","ÉèWORLD"};
-	GameTools6_SelfTab[33] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","ÉèÖÃÍæ¼ÒÓµÓĞ³¬¼¶BTÊôĞÔ","GM³¬¼¶ÊôĞÔ"};
-	GameTools6_SelfTab[34] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","Ñ¡Ôñºóµã»÷È·¶¨","»ñÈ¡GM×´Ì¬"};
-	GameTools6_SelfTab[35] = {"P1ÕäÊŞID","P2ÎåÎ¬×ÊÖÊ","P3³É³¤ÂÊ","Ñ¡Ôñºóµã»÷È·¶¨","ÁìÈ¡³èÎï"};
-	GameTools6_SelfTab[36] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","Ñ¡Ôñºóµã»÷È·¶¨","»Ö¸´ÑªÀ¶ÆøÅ­"};
-	GameTools6_SelfTab[37] = {"ÎŞĞ§","ÎŞĞ§","ÎŞĞ§","Ñ¡Ôñºóµã»÷È·¶¨","Çå¿Õ½ÇÉ«È«²¿¼¼ÄÜÀäÈ´"};
+	GameTools6_SelfTab[1] = {"Hæu hi®u Ğích#Gv?t ph¦m ID","Lînh Ğích#Gs lßşng","Không có hi®u quä","Duy nh¤t lînh P2Cá P1","Lînh v§t ph¦m"};
+	GameTools6_SelfTab[2] = {"Tay nãi Ho£c trang b¸ Cách V¸#G[0-59]","Không có hi®u quä","Không có hi®u quä","Tu¥n tra P1v¸ trí Thßşng Ğích tñ phù tin tÑc","Tra v§t ph¦m tñ phù tin tÑc"};
+	GameTools6_SelfTab[3] = {"Lúc ğ¥u Cách V¸#G[0-89]","Kªt thúc Cách V¸#G[0-89]","Không có hi®u quä","RØa sÕch tay nãi P1-P2Cách V¸ Thßşng Ğích v§t ph¦m","Thanh tay nãi"};
+	GameTools6_SelfTab[4] = {"Lînh s¯ lßşng","Không có hi®u quä","Không có hi®u quä","Lînh Kim T® S± =P1","Lãnh Kim T®"};
+	GameTools6_SelfTab[5] = {"Kh¤u tr× s¯ lßşng","Không có hi®u quä","Không có hi®u quä","Kh¤u tr× Kim T® S± =P1, Ğang trên ngß¶i Kim T® nhö P1Th¶i T¡c Bä trên ngß¶i Kim T® toàn bµ kh¤u tr×","Kh¤u Kim T®"};
+	GameTools6_SelfTab[6] = {"Lînh s¯ lßşng","Không có hi®u quä","Không có hi®u quä","Lînh Giao TØ S± =P1","Lãnh Giao TØ"};
+	GameTools6_SelfTab[7] = {"Kh¤u tr× s¯ lßşng","Không có hi®u quä","Không có hi®u quä","Kh¤u tr× Giao TØ S± =P1, Ğang trên ngß¶i Giao TØ nhö P1Th¶i T¡c Bä trên ngß¶i Giao TØ toàn bµ kh¤u tr×","Kh¤u Giao TØ"};
+	GameTools6_SelfTab[8] = {"Lînh s¯ lßşng","Không có hi®u quä","Không có hi®u quä","Lînh nguyên bäo S± =P1","Lãnh nguyên bäo"};
+	GameTools6_SelfTab[9] = {"Kh¤u tr× s¯ lßşng","Không có hi®u quä","Không có hi®u quä","Kh¤u tr× nguyên bäo S± =P1, Ğang trên ngß¶i nguyên bäo nhö P1Th¶i T¡c Bä trên ngß¶i nguyên bäo toàn bµ kh¤u tr×","Kh¤u nguyên bäo"};
+	GameTools6_SelfTab[10] = {"Lînh s¯ lßşng","Không có hi®u quä","Không có hi®u quä","Lînh Bäng Nguyên S± =P1","Lãnh Bäng Nguyên"};
+	GameTools6_SelfTab[11] = {"Kh¤u tr× s¯ lßşng","Không có hi®u quä","Không có hi®u quä","Kh¤u tr× Bäng Nguyên S± =P1, Ğang trên ngß¶i Bäng Nguyên nhö P1Th¶i T¡c Bä trên ngß¶i Bäng Nguyên toàn bµ kh¤u tr×","Kh¤u Bäng Nguyên"};
+	GameTools6_SelfTab[12] = {"Lînh s¯ lßşng","Không có hi®u quä","Không có hi®u quä","Lînh kinh nghi®m S± =P1","Lãnh kinh nghi®m"};
+	GameTools6_SelfTab[13] = {"Kh¤u tr× s¯ lßşng","Không có hi®u quä","Không có hi®u quä","Kh¤u tr× kinh nghi®m S± =P1, Ğang trên ngß¶i kinh nghi®m nhö P1Th¶i T¡c Bä trên ngß¶i kinh nghi®m toàn bµ kh¤u tr×","Kh¤u kinh nghi®m"};
+	GameTools6_SelfTab[14] = {"C¤p b§c S±[1-119]","Không có hi®u quä","Không có hi®u quä","C¤p b§c =P1","Thiªt trí c¤p b§c"};
+	GameTools6_SelfTab[15] = {"Môn phái Hào[0-8]","Không có hi®u quä","Không có hi®u quä","Không cØa Phái Th¶i gia nh§p môn phái =P1","Gia nh§p môn phái"};
+	GameTools6_SelfTab[16] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Tß¾ng b±n môn Phái V¸ H÷c Ğích tâm pháp H÷c T§p","H÷c tâm pháp"};
+	GameTools6_SelfTab[17] = {"Tâm pháp c¤p b§c[1-119]","Không có hi®u quä","Không có hi®u quä","Tß¾ng b±n môn Phái Dî h÷c ğßşc Ğích tâm pháp c¤p b§c =P1","Thiªt trí tâm pháp c¤p b§c"};
+	GameTools6_SelfTab[18] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Tu¥n tra trên ngß¶i t¤t cä BUFF","Tra BUFF"};
+	GameTools6_SelfTab[19] = {"MDğánh s¯[0-511]","Không có hi®u quä","Không có hi®u quä","Tu¥n tra P1Ğích MDTr¸","Tra MD"};
+	GameTools6_SelfTab[20] = {"EXğánh s¯[0-1535]","Không có hi®u quä","Không có hi®u quä","Tu¥n tra P1Ğích EXTr¸","Tra EX"};
+	GameTools6_SelfTab[21] = {"FLAGğánh s¯[0-319]","Không có hi®u quä","Không có hi®u quä","Tu¥n tra P1Ğích FLAGTr¸","Tra FLAG"};
+	GameTools6_SelfTab[22] = {"WORLDğánh s¯[1-100]","Không có hi®u quä","Không có hi®u quä","Tu¥n tra P1Ğích WORLDTr¸","Tra WORLD"};
+	GameTools6_SelfTab[23] = {"KÛ nång ğánh s¯","Không có hi®u quä","Không có hi®u quä","H÷c T§p kÛ nång ğánh s¯ =P1","KÛ nång h÷c t§p"};
+	GameTools6_SelfTab[24] = {"KÛ nång ğánh s¯","Không có hi®u quä","Không có hi®u quä","Xóa bö kÛ nång ğánh s¯ =P1","Xóa bö kÛ nång"};
+	GameTools6_SelfTab[25] = {"BUFFID","Không có hi®u quä","Không có hi®u quä","Giao cho BUFF=P1","Gia BUFF"};
+	GameTools6_SelfTab[26] = {"BUFFID","Không có hi®u quä","Không có hi®u quä","Xóa bö BUFF=P1","San BUFF"};
+	GameTools6_SelfTab[27] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Trß¾c m£t trß¶ng cänh s¯ li®u","Tra trß¶ng cänh s¯ li®u"};
+	GameTools6_SelfTab[28] = {"Trß¶ng cänh ID","V¸ trí X","V¸ trí Z","Truy«n t¯ng trình di®n Cänh P1[P2, P3]v¸ trí XØ","Hoán trß¶ng cänh"};
+	GameTools6_SelfTab[29] = {"MDğánh s¯[0-511]","Thiªt trí giá tr¸","Không có hi®u quä","Thiªt trí P1Ğích MDTr¸","Thiªt MD"};
+	GameTools6_SelfTab[30] = {"EXğánh s¯[0-1535]","Thiªt trí giá tr¸","Không có hi®u quä","Thiªt trí P1Ğích EXTr¸","Thiªt EX"};
+	GameTools6_SelfTab[31] = {"FLAGğánh s¯[0-319]","Thiªt trí giá tr¸[0-1]","Không có hi®u quä","Thiªt trí P1Ğích FLAGTr¸","Thiªt FLAG"};
+	GameTools6_SelfTab[32] = {"WORLDğánh s¯[1-100]","Thiªt trí giá tr¸","Không có hi®u quä","Thiªt trí P1Ğích WORLDTr¸","Thiªt WORLD"};
+	GameTools6_SelfTab[33] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Thiªt trí ngß¶i ch½i có ğßşc siêu c¤p BTthuµc tính","GMsiêu c¤p thuµc tính"};
+	GameTools6_SelfTab[34] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Lña ch÷n H§u Ği¬m Kích xác ğ¸nh","Thu hoÕch GMtrÕng thái"};
+	GameTools6_SelfTab[35] = {"P1Trân Thú ID","P2Ngû Duy tß ch¤t","P3l¾n d¥n Su¤t","Lña ch÷n H§u Ği¬m Kích xác ğ¸nh","Lînh süng v§t"};
+	GameTools6_SelfTab[36] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Lña ch÷n H§u Ği¬m Kích xác ğ¸nh","Tr¸ li®u Huyªt Lam Khí Nµ"};
+	GameTools6_SelfTab[37] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Lña ch÷n H§u Ği¬m Kích xác ğ¸nh","Thanh Không vai di­n toàn bµ kÛ nång làm lÕnh"};
 	--==========×Ô¼º ½áÊø==========
 	
 	g_UIPos = GameTools6_Frame:GetProperty("UnifiedPosition")
@@ -241,17 +241,17 @@ function GameTools6_ServerCallTwo()
 end
 
 function GameTools6_ClientCallOne()
-	PushDebugMessage("´ËÏîÄ¿ĞŞ¸ÄÊ±¿ª·ÅµÄ")
+	PushDebugMessage("ThØ hÕng møc sØa chæa Th¶i m· ra Ğích")
 end
 
 function GameTools6_ClientCallTwo()
 	-- PushEvent("UI_COMMAND",426022021);
-	PushDebugMessage("´ËÏîÄ¿ĞŞ¸ÄÊ±¿ª·ÅµÄ")
+	PushDebugMessage("ThØ hÕng møc sØa chæa Th¶i m· ra Ğích")
 end
 
 function GameTools6_Use_Clicked()
 	if GameTools6_SelectProjectIdx < 1 then
-		PushDebugMessage("ÇëÑ¡ÖĞ²Ù×÷ÏîÄ¿")
+		PushDebugMessage("Thïnh lña ch÷n thao tác hÕng møc")
 		return
 	end
 	local tab1;
@@ -269,10 +269,10 @@ function GameTools6_Use_Clicked()
 	local int1
 	for i,j in GameTools6_EditBoxTab do
 		j:SetProperty("DefaultEditBox","False");
-		if tab1[i] ~= "ÎŞĞ§" then
+		if tab1[i] ~= "Không có hi®u quä" then
 			int1 = tonumber(j:GetText());
 			if not int1 then
-				msg = "P"..i.."ÊäÈë²»ÕıÈ·£¬Çë¼ì²é¡£"
+				msg = "P"..i.."Ğßa vào b¤t chính Xác, Thïnh ki¬m tra."
 				PushDebugMessage(msg)
 				j:SetProperty("DefaultEditBox","True");
 				return
@@ -299,13 +299,13 @@ function GameTools6_AddTar_Clicked()
 		local int1 = string.len(str1);
 		local int2 = string.len(str2);
 		if int1 == 0 then
-			PushDebugMessage("ÇëÊäÈë½ÇÉ«Ãû")
+			PushDebugMessage("Thïnh ğßa vào vai di­n Danh")
 			return
 		elseif int1 > 12 then
-			PushDebugMessage("¸Ã½ÇÉ«Ãû·Ç·¨£¬ÈçÄ¿±êÈ·ÈÏÊÇ¸ÃÃû×ÖÊ±£¬Çë¾¡¿ìÓÃ´úÂëÖ´ĞĞÇø½øĞĞ·âºÅ")
+			PushDebugMessage("Cai vai di­n Danh phi pháp, Nhß møc tiêu xác nh§n là nên tên cüa, Thïnh mau chóng Døng s¯ hi®u ch¤p hành Âu tiªn hành phong hào")
 			return
 		elseif int2 ~= 7 then
-			PushDebugMessage("ÇëÊäÈë16½øGUID");
+			PushDebugMessage("Thïnh ğßa vào 16Tiªn GUID");
 			return
 		end
 		local str3 = str2..str1;
@@ -332,7 +332,7 @@ function GameTools6_Select_Clicked(Par)
 		GameTools6_SelectSelf:SetCheck(0);
 		GameTools6_SelectTar:SetCheck(0);
 		GameTools6_SelectAll:SetCheck(1);
-		GameTools6_CurName = "ËùÓĞÔÚÏß½ÇÉ«";
+		GameTools6_CurName = "T¤t cä TÕi Tuyªn vai di­n";
 		GameTools6_CurGuid = "";
 		GameTools6_SetCheck(1)
 	end
@@ -345,7 +345,7 @@ function GameTools6_SetCheck(Par)
 		if Par == 1 then
 			GameTools6_AddTar:Disable();
 		else
-			str0 = string.format("#BÌí¼ÓÄ¿±ê³É¹¦¡£\n½ÇÉ«Ãû[%s]\nGUID[%s]\nÈ·ÈÏÎŞÎóºó¿ÉÑ¡ÔñÏîÄ¿¶Ô¸ÃÄ¿±ê½øĞĞ²Ù×÷¡£",GameTools6_CurName,GameTools6_CurGuid)
+			str0 = string.format("#BtÅng thêm møc tiêu thành công. \\nvai di­n Danh[%s]\\nGUID[%s]\\nxác nh§n không có l¥m H§u Khä lña ch÷n hÕng møc Ğ¯i Cai møc tiêu tiªn hành thao tác.",GameTools6_CurName,GameTools6_CurGuid)
 			GameTools6_AddTar:Enable();
 		end
 		GameTools6_Server1:Enable();
@@ -364,19 +364,19 @@ function GameTools6_SetCheck(Par)
 		elseif GameTools6_SelectObject == 3 then
 			tab1 = GameTools6_AllTab;
 		end
-		GameTools6_SelectBox:SetText("Ñ¡Ôñ½«Òª²Ù×÷µÄÏîÄ¿")
+		GameTools6_SelectBox:SetText("Lña ch÷n s¡p sØa thao tác Ğích hÕng møc")
 		GameTools6_SelectBox:ResetList();
 		for i,j in tab1 do
 			if i < 10 then
-				GameTools6_SelectBox:AddTextItem("["..i.."]           ¡¾"..j[5].."¡¿",i);
+				GameTools6_SelectBox:AddTextItem("["..i.."] ?"..j[5].."?",i);
 			elseif i < 100 then
-				GameTools6_SelectBox:AddTextItem("["..i.."]          ¡¾"..j[5].."¡¿",i);
+				GameTools6_SelectBox:AddTextItem("["..i.."] ?"..j[5].."?",i);
 			else
-				GameTools6_SelectBox:AddTextItem("["..i.."]         ¡¾"..j[5].."¡¿",i);
+				GameTools6_SelectBox:AddTextItem("["..i.."] ?"..j[5].."?",i);
 			end
 		end
 	else
-		str0 = "#B×Ô¶¯»ñÈ¡ĞÅÏ¢£ºÑ¡ÖĞÄ¿±ê(Ã»ÓĞ×Ô¶¯Ìî³äµÄ»°ÇĞ»»ÏÂÄ¿±ê¼´¿É)»òÁÄÌì´°²é¿´ËûÈË½ÇÉ«×ÊÁÏ¿É×Ô¶¯Ìî³äÊäÈë\nÊäÈëĞÅÏ¢£ºP1ÊäÈë½ÇÉ«Ãû£¬P2ÊäÈë½ÇÉ«µÄGUID"
+		str0 = "#Bt¹ ğµng thu hoÕch tin tÑc: Lña ch÷n møc tiêu(không có tñ ğµng bö thêm vào trong l¶i nói c¡t HÕ møc tiêu có th¬)Ho£c ğàm ğÕo Song xem xét ngß¶i khác vai di­n tß li®u Khä tñ ğµng bö thêm vào ğßa vào\\nğßa vào tin tÑc: P1ğßa vào vai di­n Danh, P2ğßa vào vai di­n Ğích GUID"
 		GameTools6_CurName = "";
 		GameTools6_CurGuid = "";
 		GameTools6_Use:Disable();
@@ -396,13 +396,13 @@ function GameTools6_SetCheck(Par)
 				GameTools6_EditBoxTabRed[i]:Show();
 			end
 		end
-		GameTools6_SelectBox:SetText("ÇëÏÈÌí¼ÓÄ¿±ê")
+		GameTools6_SelectBox:SetText("Thïnh Tiên tång thêm møc tiêu")
 		GameTools6_SelectBox:ResetList();
 	end
 	GameTools6_SelectProjectIdx,GameTools6_SelectProjectInfo = -1,"";
-	local str1 = GameTools6_CurName ~= "" and "#G"..GameTools6_CurName or "#cff0000ÉĞÎ´Ìí¼ÓÄ¿±ê";
-	local str2 = "#cFF00FFÄ¿±ê£º"..str1;
-	local str3 = GameTools6_CurGuid ~= "" and str2.."|"..GameTools6_CurGuid.."#cff0000(ÖØÒª)" or str2.."#cff0000(ÖØÒª)";
+	local str1 = GameTools6_CurName ~= "" and "#G"..GameTools6_CurName or "#cff0000chßa tång thêm møc tiêu";
+	local str2 = "#cFF00FFmøc tiêu:"..str1;
+	local str3 = GameTools6_CurGuid ~= "" and str2.."|"..GameTools6_CurGuid.."#cff0000(tr÷ng yªu)" or str2.."#cff0000(tr÷ng yªu)";
 	GameTools6_SelectTip:SetText(str3);
 	GameTools6_SetTipBox(str0);
 end
@@ -416,7 +416,7 @@ function GameTools6_GetInfo()
 		GameTools6_Info = {};
 	elseif arg0 == "FJQHTOOL" then
 		local str1 = table.concat(GameTools6_Info);
-		GameTools6_SetTipBox(GameTools6_SelectProjectInfo.."\n=====²Ù×÷½á¹û=====\n"..str1);
+		GameTools6_SetTipBox(GameTools6_SelectProjectInfo.."\\n=====thao tác kªt quä =====\\n"..str1);
 		GameTools6_Info = {};
 	elseif string.sub(arg0,1,6) == "FJQHGM" then
 		local str1 = string.sub(arg0,7,-1)
@@ -444,15 +444,15 @@ function GameTools6_SelectBox_Clicked()
 		return
 	end
 	GameTools6_SelectProjectIdx = int1;
-	GameTools6_SelectProjectInfo = "#W¶ÔÄ¿±ê£º#G["..GameTools6_CurName.."]#W½øĞĞ\n#B¡¾"..tab1[5].."#B¡¿\n";
+	GameTools6_SelectProjectInfo = "#WĞi møc tiêu: #G["..GameTools6_CurName.."]#WtIªn hành\\n#B?"..tab1[5].."#B?\\n";
 	for i,j in GameTools6_EditBoxTab do
 		j:SetProperty("DefaultEditBox","False");
 		GameTools6_SelectProjectInfo = GameTools6_SelectProjectInfo.."#cfff263P"..i
-		if tab1[i] == "ÎŞĞ§" then
-			j:SetText("ÎŞĞ§");
+		if tab1[i] == "Không có hi®u quä" then
+			j:SetText("Không có hi®u quä");
 			j:Disable();
 			GameTools6_EditBoxTabRed[i]:Show();
-			GameTools6_SelectProjectInfo = GameTools6_SelectProjectInfo.."#cFF0000ÎŞĞ§\n";
+			GameTools6_SelectProjectInfo = GameTools6_SelectProjectInfo.."#cFF0000không có hi®u quä\\n";
 		else
 			j:SetText("");
 			j:Enable();

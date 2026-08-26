@@ -39,8 +39,8 @@ function DoublePK_Buff_PreLoad()
     this:RegisterEvent("OPEN_DOUBLEPK_BUFF", true)
     this:RegisterEvent("CLOSE_DOUBLEPK_ALL", false)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end
 
 function DoublePK_Buff_OnEvent(event)
@@ -175,7 +175,7 @@ function DoublePK_Buff_OnTimerEnd()
     DoublePK_Buff_Clicked_Close()
 end
 
--- 关闭按钮点击事件
+-- 关睜按钮点击事件
 function DoublePK_Buff_Clicked_Close()
     DoublePK_Buff_Hide()
 end

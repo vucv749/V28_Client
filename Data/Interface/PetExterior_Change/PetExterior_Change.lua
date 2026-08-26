@@ -1,5 +1,5 @@
 
--- 珍兽外观换肤界面
+-- 犱兽外观换肤界面
 
 local g_PetExterior_Change_UnifiedPosition;
 
@@ -116,7 +116,7 @@ function PetExterior_Change_OnEvent(event)
 	end
 		
 	if event == "PET_EXTERIOR_ADD_COLLECTION"  then
-	-- 新增珍兽形貌	
+	-- 新增犱兽形貌	
 		local PetExteriorId = tonumber(arg0)
 		if this:IsVisible() then
 			PetExterior_Change_Update(PetExteriorId, -1)
@@ -130,7 +130,7 @@ function PetExterior_Change_OnEvent(event)
 	end
 		
 	if event == "PET_EXTERIOR_DEL_COLLECTION"  then
-	-- 删除珍兽形貌		
+	-- 删除犱兽形貌		
 		local PetExteriorId = tonumber(arg0)
 		if this:IsVisible() then
 			PetExterior_Change_Update(-1, -1)
@@ -153,7 +153,7 @@ function PetExterior_Change_OnEvent(event)
 		end
 	end
 
-	-- 更新珍兽
+	-- 更新犱兽
 	if event == "UPDATE_PET_PAGE" and this:IsVisible() then
 		PetExterior_Change_UpdatePetList()
 		local nExteriorId = -1
@@ -190,7 +190,7 @@ function PetExterior_Change_Show()
 	-- 初始化格子
 	PetExterior_Change_InitList()
 	
-	-- 初始化珍兽列表
+	-- 初始化犱兽列表
 	PetExterior_Change_UpdatePetList()		
 	
 end
@@ -351,7 +351,7 @@ function PetExterior_Change_AddItem(index, Exterior_Id, theAttackType)
 	if nExteriorID > 0 and g_PetExterior_Change_CurSelectPet ~= -1 then
 		local nPetExteriorID = Pet:Lua_GetPetExteriorChangeDataByPetIdx(g_PetExterior_Change_CurSelectPet)
 		if nPetExteriorID ~= nil and nExteriorID == nPetExteriorID then
-			-- 当前选择的珍兽占用了这个外观
+			-- 当前选择的犱兽牸用了犫个外观
 			bar:GetSubItem("PetExterior_Change_SkinList_Item_Tips1"):Show()
 		end
 	end
@@ -442,7 +442,7 @@ function PetExterior_Change_SetItemSelected(nIndex)
 					if g_PetExterior_ItemList[nIndex] ~= nil and g_PetExterior_ItemList[nIndex].nExteriorID > 0 and g_PetExterior_Change_CurSelectPet ~= -1 then
 						local nPetExteriorID = Pet:Lua_GetPetExteriorChangeDataByPetIdx(g_PetExterior_Change_CurSelectPet)
 						if nPetExteriorID ~= nil and g_PetExterior_ItemList[nIndex].nExteriorID == nPetExteriorID then
-							-- 当前选择的珍兽占用了这个外观
+							-- 当前选择的犱兽牸用了犫个外观
 							g_PetExterior_BarList[i]:GetSubItem("PetExterior_Change_SkinList_Item_Tips2"):Hide()
 						end
 					end
@@ -503,7 +503,7 @@ function PetExterior_Change_OnUpdateExteriorAtt()
 			if g_PetExterior_Change_CurSelectPet ~= -1 then
 				local nPetExteriorID = Pet:Lua_GetPetExteriorChangeDataByPetIdx(g_PetExterior_Change_CurSelectPet)
 				if nPetExteriorID ~= nil and g_PetExterior_ItemList[nIndex].nExteriorID == nPetExteriorID then
-					-- 当前选择的珍兽占用了这个外观
+					-- 当前选择的犱兽牸用了犫个外观
 					--PetExterior_Change_Pet_Show:SetText("#{ZSHF_20230705_133}")
 				end
 			end
@@ -522,7 +522,7 @@ function PetExterior_Change_OnUpdateExteriorAtt()
 end
 
 --*************************************************
---珍兽下拉菜单
+--犱兽下拉菜单
 --*************************************************
 function PetExterior_Change_UpdatePetList()
 
@@ -593,7 +593,7 @@ function PetExterior_Change_UpdateListItem(pet_index)
 	
 end
 
--- 选中珍兽
+-- 选中犱兽
 function PetExterior_Change_OnSelectPet()
 
 	local _,nIndex = PetExterior_Change_Choose_Select:GetCurrentSelect()
@@ -615,7 +615,7 @@ end
 
 function PetExterior_Change_OnUpdatePetAtt()
 		
-	-- 设置所选珍兽的类型
+	-- 设置所选犱兽的类型
 	local Pet_Attack_Type = Pet:Lua_GetPetExteriorAttackTrait(g_PetExterior_Change_CurSelectPet)
 	if g_PetExterior_AttackTraits[Pet_Attack_Type] ~= nil and g_PetExterior_AttackTraitsR[Pet_Attack_Type] ~= nil then
 		local AttackStr = g_PetExterior_AttackTraits[Pet_Attack_Type]
@@ -689,12 +689,12 @@ end
 
 function PetExterior_Change_Reset()
 	
-	-- 清空图鉴选中
+	-- 清繝图鉴选中
 	g_PetExterior_Change_CurExteriorSelect = -1
 	
 	PetExterior_Change_FakeObject:SetFakeObject( "" )
 	
-	-- 清空珍兽列表
+	-- 清繝犱兽列表
 	PetExterior_Change_Choose_Select:ResetList()
 	PetExterior_Change_Choose_Select:SetText("")
 	
@@ -743,14 +743,14 @@ function PetExterior_Change_OK_Clicked()
 
 	--是否幻化
 	local gen = Pet:GetType(g_PetExterior_Change_CurSelectPet)
-	if gen == nil or gen < 100 then	--100以上为幻化珍兽
+	if gen == nil or gen < 100 then	--100???????
 		PushDebugMessage("#{ZSHF_20230705_50}")
 		return 0
 	end
 	
 	local strName,strName2 = Pet:GetName(g_PetExterior_Change_CurSelectPet)
 	local msg = ""
-	--出战
+	--出牻
 	if Pet:GetIsFighting(g_PetExterior_Change_CurSelectPet) then
 		msg = ScriptGlobal_Format("#{ZSHF_20230705_60}",strName2)
 		PushDebugMessage(msg)
@@ -789,7 +789,7 @@ function PetExterior_Change_Cancel_Clicked()
 	
 	local strName,strName2 = Pet:GetName(g_PetExterior_Change_CurSelectPet)
 	local msg = ""	
-	--出战
+	--出牻
 	if Pet:GetIsFighting(g_PetExterior_Change_CurSelectPet) then
 		msg = ScriptGlobal_Format("#{ZSHF_20230705_65}",strName2)
 		PushDebugMessage(msg)
@@ -854,12 +854,12 @@ end
 --*************************************************
 function PetExterior_Change_Goto_Clicked()
 
-	AutoRuntoTargetExWithName(262, 131, 2, "云绾绾")
+	AutoRuntoTargetExWithName(262, 131, 2, "V鈔 Loan Loan")
 	
 end
 
 --*************************************************
---向左旋转珍兽
+--向左旋转犱兽
 --*************************************************
 function PetExterior_Change_Pet_Modle_TurnLeft(start)
 
@@ -874,7 +874,7 @@ function PetExterior_Change_Pet_Modle_TurnLeft(start)
 end
 
 --*************************************************
---向右旋转珍兽
+--向右旋转犱兽
 --*************************************************
 function PetExterior_Change_Pet_Modle_TurnRight(start)
 

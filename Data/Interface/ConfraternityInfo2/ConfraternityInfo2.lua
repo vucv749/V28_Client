@@ -51,7 +51,7 @@ end
 --…Ë÷√œ‘ æ–≈œ¢
 function Guild_Info2_Update()
 	--title
-	ConfraternityInfo2_DragTitle:SetText("#gFF0FA0∞Ôª·œÍœ∏–≈œ¢")
+	ConfraternityInfo2_DragTitle:SetText("#gFF0FA0bang hµi k¨ l’i tin t—c")
 	
 	--Guild Name
 	local str = Guild:GetMyGuildDetailInfo("Name")
@@ -77,7 +77,7 @@ function Guild_Info2_Update()
 
 	str = Guild:GetMyGuildDetailInfo("CityName")
 	if(str == "-1") then
-		str = "√ª”–≥« –"
+		str = "KhÙng cÛ th‡nh th∏"
 	end
 	ConfraternityInfo2_City:SetText(str)
 	
@@ -85,7 +85,7 @@ function Guild_Info2_Update()
 	ConfraternityInfo2_CityBuilding:SetText(str)
 	str = Guild:GetMyGuildDetailInfo("Scene")
 	if(str == "-1") then
-		str = "√ª”–À˘‘⁄"
+		str = "KhÙng cÛ ch≤, nΩi"
 	end
 	ConfraternityInfo2_Locus:SetText(str)
 
@@ -94,7 +94,7 @@ function Guild_Info2_Update()
 
 	str = Guild:GetMyGuildDetailInfo("CurResearch")
 	if(str == "")then
-		str = "Œﬁµ±«∞—–æø"
+		str = "VÙ trﬂæc m£t nghiÍn c—u"
 	end
 	ConfraternityInfo2_Specialty:SetText(str)
 	

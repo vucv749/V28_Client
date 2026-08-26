@@ -98,7 +98,7 @@ function XiaLv_Task5_OnEvent(event)
                 myAnswer = math.floor(myAnswer/100)
             end
             if not CheckGameData() then
-                PushDebugMessage("Êý¾Ý´íÎó£¬ÇëÖØÐÂ¿ªÊ¼ÈÎÎñ")
+                PushDebugMessage("S¯ li®u sai l¥m, Thïnh mµt l¥n næa b¡t ð¥u nhi®m vø")
                 return 
             end
 
@@ -160,7 +160,7 @@ function XiaLv_Task5_Begin()
         myPanelTable.ChooseWin:Show()
         myPanelTable.OkBtn:Show()
 
-        --Õ¹Ê¾¶Ô·½µÄ´ð°¸
+        -- ¹Ê¾¶Ô·½µÄ´ð°¸
         myPanelTable.TipsText:SetText(ScriptGlobal_Format("#{FQZC_230331_227}",othersAnswerSort[1],othersAnswerSort[2],othersAnswerSort[3]))
         --ÉèÖÃÎÒµÄÉ¨À×Êý¾Ý
         for i = 1, g_TileNum do
@@ -219,7 +219,7 @@ end
 
 function XiaLv_Task5_OnTileClicked(index)
     if not CheckGameData() then
-        PushDebugMessage("Êý¾Ý´íÎó£¬ÇëÖØÐÂ¿ªÊ¼ÈÎÎñ")
+        PushDebugMessage("S¯ li®u sai l¥m, Thïnh mµt l¥n næa b¡t ð¥u nhi®m vø")
         return
     end
     if index <= (g_GameData.myPanel-1)*g_TileNum or index > g_TileNum*g_GameData.myPanel then

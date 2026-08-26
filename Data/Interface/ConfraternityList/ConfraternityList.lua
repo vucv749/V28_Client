@@ -160,7 +160,7 @@ function Guild_Valid_City_Info_Update()
 	else
 		color = city_num_color_3;
 	end
-	g_GuildListCtl.info:SetText("µ±Ç°·şÎñÆ÷¿ÉÉêÇëµÄ°ïÅÉ³ÇÊĞÊıÁ¿£º"..color..tostring(num).."#cfff263                 ×ÜÊı£º108");
+	g_GuildListCtl.info:SetText("Trß¾c m£t phøc vø Khí Khä xin Ğích bang phái thành th¸ s¯ lßşng:"..color..tostring(num).."#cfff263 t±ng s¯: 108");
 end
 
 function Guild_List_Update()
@@ -192,11 +192,11 @@ function Guild_List_Update()
 		local szHasCity = "";
 		local yes = Guild:IsGuildKeptOneWeed(i);
 		if(tonumber(yes) == 0) then
-			szNewGuild = "#G£¨ĞÂ£©#W"
+			szNewGuild = "#G(Tân)#W"
 		end
 		local szInfo = Guild:GetGuildInfo(i, "CityName");
 		if not (nil == szInfo or 0 == string.len(szInfo)) then
-			szHasCity = "#c0066FF¡¾³Ç¡¿#W"
+			szHasCity = "#c0066FF? Thành?#W"
 		end
 		
 		--Îå¼¶³ÇÊĞÃûÏÔÊ¾Îª»ÆÉ«--add by xindefeng
@@ -233,28 +233,28 @@ function Guild_List_Detail_Change( idx )
 	
 	local szInfo = Guild:GetGuildInfo(idx, "Name");
 	local szId	 = Guild:GetGuildInfo(idx, "ID");
-	g_GuildListCtl.name:SetText("Ãû³Æ:"..szInfo.."("..tostring(szId)..")");
+	g_GuildListCtl.name:SetText("Tên:"..szInfo.."("..tostring(szId)..")");
 	
 	local leagueName = Guild:GetGuildInfo(idx, "LeagueName");
 	g_GuildListCtl.guildleague:SetText("#{TM_20080331_03}"..leagueName);
 	
 	local szInfo = Guild:GetGuildInfo(idx, "Level");
-	g_GuildListCtl.level:SetText("µÈ¼¶:"..szInfo);
+	g_GuildListCtl.level:SetText("C¤p b§c:"..szInfo);
 	
 	local szInfo = Guild:GetGuildInfo(idx, "FoundTime");
-	g_GuildListCtl.foundtime:SetText("³ÉÁ¢Ê±¼ä:"..szInfo);
+	g_GuildListCtl.foundtime:SetText("Thành l§p th¶i gian:"..szInfo);
 	
 	local szInfo = Guild:GetGuildInfo(idx, "ChiefName");
-	g_GuildListCtl.leader:SetText("°ïÖ÷:"..szInfo);
+	g_GuildListCtl.leader:SetText("Bang chü:"..szInfo);
 	
 	local szInfo = Guild:GetGuildInfo(idx, "Count");
-	g_GuildListCtl.count:SetText("ÈËÊı:"..szInfo);
+	g_GuildListCtl.count:SetText("Nhân s¯:"..szInfo);
 	
 	local szInfo = Guild:GetGuildInfo(idx, "CityName");
 	if(nil == szInfo or 0 == string.len(szInfo)) then
-	g_GuildListCtl.city:SetText("³ÇÊĞ:".."Ã»ÓĞ³ÇÊĞ");
+	g_GuildListCtl.city:SetText("Thành th¸:".."Không có thành th¸");
 	else
-		g_GuildListCtl.city:SetText("³ÇÊĞ:"..szInfo);
+		g_GuildListCtl.city:SetText("Thành th¸:"..szInfo);
 	end
 	
 	--local szInfo = Guild:GetGuildInfo(idx, "Name");
@@ -284,7 +284,7 @@ function Guild_List_Join()
 		Guild:JoinGuild(selidx);
 	else
 		local szGuildName = Guild:GetMyGuildInfo("Name");
-		PushDebugMessage("ÄãÒÑ¾­ÊÇ"..szGuildName.."³ÉÔ±ÁË£¬ÇëÏÈÀë¿ª°ï»áÔÙ½øĞĞÉêÇë¡£");
+		PushDebugMessage("Nhî ğã Th¸"..szGuildName.."Thành viên Li­u, Thïnh Tiên r¶i ği bang hµi Tái tiªn hành xin.");
 		return;
 	end
 		
@@ -299,7 +299,7 @@ function Guild_List_CareEventHandle(careId, op, distance)
 		if(tonumber(careId) ~= g_clientNpcId) then
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(op == "distance" and tonumber(distance)>MAX_OBJ_DISTANCE or op=="destroy") then
 			this:Hide();
 		end
@@ -313,9 +313,9 @@ function Guild_List_CheckDetail()
 		return
 	end
 	
-	local GuildID = g_GuildListCtl.list:GetItemText(Index, 0)--µÃµ½Ñ¡ÖĞĞĞµÚÒ»ÁĞÊı¾İ(°ï»áID)
+	local GuildID = g_GuildListCtl.list:GetItemText(Index, 0)--??????????(??ID)
 	
-	Guild:AskAnyGuildDetailInfo(tonumber(GuildID)) --²éÑ¯Ö¸¶¨ID°ï»áÏêÏ¸ĞÅÏ¢
+	Guild:AskAnyGuildDetailInfo(tonumber(GuildID)) --????ID??????
 	Guild:CloseKickGuildBox()
 end
 
@@ -327,9 +327,9 @@ function Guild_List_CheckOfficial()
 		return
 	end
 	
-	local GuildID = g_GuildListCtl.list:GetItemText(Index, 0)--µÃµ½Ñ¡ÖĞĞĞµÚÒ»ÁĞÊı¾İ(°ï»áID)
+	local GuildID = g_GuildListCtl.list:GetItemText(Index, 0)--??????????(??ID)
 		
-	Guild:AskAnyGuildMembersInfo(tonumber(GuildID), tonumber(Index)) --²éÑ¯Ö¸¶¨ID°ï»áÏêÏ¸ĞÅÏ¢,ConfraternityOfficial.luaĞèÒªIndex×ö²éÑ¯
+	Guild:AskAnyGuildMembersInfo(tonumber(GuildID), tonumber(Index)) --????ID??????,ConfraternityOfficial.lua??Index???
 	Guild:CloseKickGuildBox()
 end
 

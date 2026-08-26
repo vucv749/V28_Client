@@ -88,7 +88,7 @@ function Frozen_PVPScoreTask_OnShow()
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function Frozen_PVPScoreTask_OnClose()
 	this:Hide()
@@ -99,7 +99,7 @@ function Frozen_PVPScoreTask_Mini()
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function Frozen_PVPScoreTask_CloseClicked()
 	this:Hide()

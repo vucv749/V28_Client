@@ -1,4 +1,4 @@
--- 雪人战PVP 活动入口界面
+-- 雪人牻PVP 活动入口界面
 -- 当前是否活动时间
 local Frozen_PVPGoto_IsInActTime = 0
 -- 参加活动最低等级
@@ -10,7 +10,7 @@ local Frozen_PVPGoto_EnterNPCInfo =
 {
     scn = 728,
     pos = {146, 189},
-    name = "侯赛磊",
+    name = "H Tr読 L瞚",
 } -- end Frozen_PVPGoto_EnterNPCInfo
 
 
@@ -18,7 +18,7 @@ local Frozen_PVPGoto_EnterNPCInfo =
 function Frozen_PVPGoto_PreLoad()
 	this:RegisterEvent("XRZPVP_UI_OPENGOTO")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("ADJEST_UI_POS",false)
 end -- end func Frozen_PVPGoto_PreLoad()
 
@@ -51,7 +51,7 @@ function Frozen_PVPGoto_Hide()
     this:Hide()
 end -- end func Frozen_PVPGoto_Hide()
 
--- 关闭按钮
+-- 关睜按钮
 function Frozen_PVPGoto_Close()
     Frozen_PVPGoto_Hide()
 end -- end func Frozen_PVPGoto_Close()
@@ -86,6 +86,6 @@ function Frozen_PVPGoto_OnClickedBtn()
         AutoRuntoTargetExWithName(targetInfo.pos[1], targetInfo.pos[2], targetInfo.scn, targetInfo.name)
     end
 
-    -- 关闭UI
+    -- 关睜UI
     Frozen_PVPGoto_Hide()
 end -- end func Frozen_PVPGoto_OnClickedBtn()

@@ -5,8 +5,8 @@ local g_Frame_UnifiedPosition
 --=========
 function Peak_WarmUp_Letter_PreLoad()
 
-	this:RegisterEvent("UI_COMMAND")--´ò¿ªorË¢ÐÂ½çÃæ
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--½ø³¡¾°¹Ø±Õ½çÃæ
+	this:RegisterEvent("UI_COMMAND")--??or????
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
 	this:RegisterEvent("ADJEST_UI_POS")
 
@@ -45,7 +45,7 @@ end
 
 
 function  Peak_WarmUp_Letter_OnGoButtonClicked()
-	AutoRuntoTargetExWithName(179, 170, 18, "°¢×Ï")
+	AutoRuntoTargetExWithName(179, 170, 18, "A TØ")
 end
 
 

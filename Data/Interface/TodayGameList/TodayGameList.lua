@@ -1,21 +1,21 @@
 
---今日游戏进度
+--今葼游戏进度
 --author:dengxx 2009.06.19
-local TodayGameList_QuitType = 0 --退出方式 1： 退出游戏 2：返回登录界面
+local TodayGameList_QuitType = 0 --???? 1: ???? 2:??????
 
 local TodayGameList_ActList = {
-			[1]= {min=10,max =160,name="#{XXTSP_090619_XML_004}",prog="#{XXTSP_090619_XML_014}",tip="#{XXTSP_090619_XML_021}",}, --双倍经验
-			[2]= {min=10,max =19,name="#{XXTSP_090619_XML_005}",prog="#{XXTSP_090619_XML_015}",tip="#{XXTSP_090619_XML_022}",}, --师门任务
+			[1]= {min=10,max =160,name="#{XXTSP_090619_XML_004}",prog="#{XXTSP_090619_XML_014}",tip="#{XXTSP_090619_XML_021}",}, --????
+			[2]= {min=10,max =19,name="#{XXTSP_090619_XML_005}",prog="#{XXTSP_090619_XML_015}",tip="#{XXTSP_090619_XML_022}",}, --????
 			[3]= {min=20,max =39,name="#{XXTSP_090619_XML_005}",prog="#{XXTSP_090619_XML_016}",tip="#{XXTSP_090619_XML_023}",},
 			[4]= {min=40,max =74,name="#{XXTSP_090619_XML_005}",prog="#{XXTSP_090619_XML_017}",tip="#{XXTSP_090619_XML_024}",},
 			--[5]= {min=10,max =74,name="#{XXTSP_090619_XML_006}",prog="#{XXTSP_090619_XML_018}",tip="#{XXTSP_090619_XML_025}",}, --科举答题
-			[5]= {min=10,max =160,name="#{XXTSP_090619_XML_007}",prog="#{XXTSP_090619_XML_018}",tip="#{XXTSP_090619_XML_026}",},--珍珑棋局
-			[6]= {min=75,max =160,name="#{XXTSP_090619_XML_008}",prog="#{XXTSP_090619_XML_018}",tip="#{XXTSP_090619_XML_027}",},--楼兰寻宝
-			[7]= {min=30,max =160,name="#{XXTSP_090619_XML_009}",prog="#{XXTSP_090619_XML_019}",tip="#{XXTSP_090619_XML_028}",},--一个都不能跑
-			[8]= {min=75,max =160,name="#{XXTSP_090619_XML_010}",prog="#{XXTSP_090619_XML_019}",tip="#{XXTSP_090619_XML_029}",},--黄金之链
-			[9]={min=75,max =160,name="#{XXTSP_090619_XML_011}",prog="#{XXTSP_090619_XML_020}",tip="#{XXTSP_090619_XML_030}",},--初战缥缈峰（较难）
-			[10]={min=20,max =160,name="#{XXTSP_090619_XML_012}",prog="#{XXTSP_090619_XML_018}",tip="#{XXTSP_090619_XML_031}",},	--幸运快活三
-			[11]={min=30,max =160,name="#{XXTSP_090619_XML_013}",prog="#{XXTSP_090619_XML_018}",tip="#{XXTSP_090619_XML_032}",},--寒玉谷修行
+			[5]= {min=10,max =160,name="#{XXTSP_090619_XML_007}",prog="#{XXTSP_090619_XML_018}",tip="#{XXTSP_090619_XML_026}",},--????
+			[6]= {min=75,max =160,name="#{XXTSP_090619_XML_008}",prog="#{XXTSP_090619_XML_018}",tip="#{XXTSP_090619_XML_027}",},--????
+			[7]= {min=30,max =160,name="#{XXTSP_090619_XML_009}",prog="#{XXTSP_090619_XML_019}",tip="#{XXTSP_090619_XML_028}",},--??????
+			[8]= {min=75,max =160,name="#{XXTSP_090619_XML_010}",prog="#{XXTSP_090619_XML_019}",tip="#{XXTSP_090619_XML_029}",},--????
+			[9]={min=75,max =160,name="#{XXTSP_090619_XML_011}",prog="#{XXTSP_090619_XML_020}",tip="#{XXTSP_090619_XML_030}",},--?????(??)
+			[10]={min=20,max =160,name="#{XXTSP_090619_XML_012}",prog="#{XXTSP_090619_XML_018}",tip="#{XXTSP_090619_XML_031}",},	--?????
+			[11]={min=30,max =160,name="#{XXTSP_090619_XML_013}",prog="#{XXTSP_090619_XML_018}",tip="#{XXTSP_090619_XML_032}",},--?????
 }
 local TodayGameList_IndexList ={}
 function TodayGameList_PreLoad()
@@ -75,9 +75,9 @@ end
 
 function TodayGameList_OnOK()
 	
-	if TodayGameList_QuitType == 1 then          --退出游戏
+	if TodayGameList_QuitType == 1 then          --????
 		EnterQuitWait(0);
-	elseif TodayGameList_QuitType == 2 then      --返回登录界面
+	elseif TodayGameList_QuitType == 2 then      --??????
 		EnterQuitWait(2);
 	else
 		return
@@ -85,7 +85,7 @@ function TodayGameList_OnOK()
 	
 end
 ---------------------
---打开活动日程
+--打开活动葼程
 ----------------------
 function TodayGameList_OnOpenCampList()
   OpenTodayCampaignList();
@@ -96,14 +96,14 @@ function TodayGameList_ListCtl_OnSelectionChanged()
 
 	TodayGameList_Explain1:SetText("#{XXTSP_090630_XML_038}");	
 	
-	local nSel = TodayGameList_ListCtl:GetSelectItem();	-- 当前选择的行号
+	local nSel = TodayGameList_ListCtl:GetSelectItem();	-- ???????
 	if nSel >= 0 then
 	   TodayGameList_Explain1:SetText(TodayGameList_ActList[TodayGameList_IndexList[nSel]].tip);
   end
 	TodayGameList_Explain1:Show();	
 end
 
--- 关闭
+-- 关睜
 function TodayGameList_OnClosed()
 	this:Hide();
 	TodayGameList_QuitType = 0

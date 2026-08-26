@@ -1,5 +1,5 @@
 --*********************************************
---ÕäÊÞÌ××°Éý¼¶½çÃæ
+-- äÊÞÌ××°Éý¼¶½çÃæ
 --*********************************************
 
 local PetEquipSuitUpName = "PetEquipSuitUp"
@@ -10,7 +10,7 @@ local g_ObjCareID		 = -1
 local g_ProductNeedMoney = 0
 local g_PetEquipUiIndex	 = 19831204
 local MAX_OBJ_DISTANCE 	 = 3.0;
-local g_PetEquipFunCtrl  = -1	--¹¦ÄÜ¿ØÖÆ
+local g_PetEquipFunCtrl  = -1	--????
 
 
 local g_PetEquipSuitUp_Frame_UnifiedPosition;
@@ -24,7 +24,7 @@ function PetEquipSuitUp_PreLoad()
 	this:RegisterEvent("MONEYJZ_CHANGE")
 	this:RegisterEvent("RESUME_ENCHASE_GEM")
 	this:RegisterEvent("OBJECT_CARED_EVENT")
-	this:RegisterEvent("UPDATE_PETEQUIP_UP") --ÐÂ½¨Ò»¸öÕâÑùµÄÊÂ¼þ
+	this:RegisterEvent("UPDATE_PETEQUIP_UP") --?????????
 	this:RegisterEvent("PACKAGE_ITEM_CHANGED")
 	this:RegisterEvent("NEW_DEBUGMESSAGE")
 	this:RegisterEvent("ADJEST_UI_POS")
@@ -72,7 +72,7 @@ end
 --È·¶¨°´Å¥
 --**********************************************
 function PetEquipSuitUp_Buttons_Clicked()
-	--ÊÇ·ñ¾É³èÎï×°±¸Õý³£·ÅÈë
+	--ÊÇ·ñ¾É³èÎï×°±¸ ý³£·ÅÈë
 	if (g_PetEquipItemPos == -1 or g_PetEquipProductID == -1) then
 		return
 	end
@@ -87,7 +87,7 @@ function PetEquipSuitUp_Buttons_Clicked()
 	--ÅÐ¶Ï½ðÇ®ÊÇ²»ÊÇ¹»
 	local selfMoney = Player:GetData("MONEY") + Player:GetData("MONEY_JZ")
 	if (selfMoney < g_ProductNeedMoney) then
-		PushDebugMessage( "Ã»ÓÐ×ã¹»µÄ½ðÇ®£¬²»ÄÜ½øÐÐÕäÊÞ×°±¸Éý¼¶£¡" )
+		PushDebugMessage( "Cûng không ðü Ðích ti«n tài, không th¬ vào Hành Trân Thú trang b¸ thång c¤p!" )
 		return
 	end
 
@@ -140,12 +140,12 @@ function PetEquipSuitUp_UiCommand(arg0)
 	local targetId = Get_XParam_INT(0)
 	g_ObjCareID = DataPool:GetNPCIDByServerID(targetId);
 	if (g_ObjCareID == -1) then
-		PushDebugMessage("server´«¹ýÀ´µÄÊý¾ÝÓÐÎÊÌâ¡£");
+		PushDebugMessage("Dæ li®u máy chü có v¤n ð«");
 		return
 	end
 
 	--»ñÈ¡ÊÇÄÇ¸ö·ÖÖ§¹¦ÄÜµÄ¿ØÖÆ·û
-	--1 ÎªÕäÊÞ×°±¸ÉýÐÇ¹¦ÄÜ
+	--1 Îª äÊÞ×°±¸ÉýÐÇ¹¦ÄÜ
 	g_PetEquipFunCtrl = Get_XParam_INT(1)
 
 	PetEquipSuitUp_BeginCareObject()
@@ -268,7 +268,7 @@ function PetEquipSuitUp_Update( pos_packet )
 		for i=1,nMaterialKind do
 			nMaterial[i].id,nMaterial[i].num,nMaterial[i].name = PetEquipSuitUp:GetPetEquipUpMaterial(g_PetEquipItemID, 0, i) --debug
 			if (-1 ~= nMaterial[i].id) then
-				szTipInfo = szTipInfo..nMaterial[i].name.."#G"..nMaterial[i].num.."¸ö£»"
+				szTipInfo = szTipInfo..nMaterial[i].name.."#G"..nMaterial[i].num.."Cá;"
 			end
 		end
 
@@ -304,7 +304,7 @@ end
 
 --*************************************************
 --¿ªÊ¼¹ØÐÄNPC£¬¾ÍÊÇÈ·ÈÏÍæ¼Òµ±Ç°²Ù×÷µÄNPC£¬Èç¹ûÀëNPC
---Ì«Ô¶¾Í»á¹Ø±Õ´°¿ÚÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨Õâ¸ö½çÃæ
+--Ì«Ô¶¾Í»á¹Ø± ´°¿ÚÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨ â¸ö½çÃæ
 --ÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬Èç¹ûÓÐµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­
 --ÓÐµÄ¡°¹ØÐÄ¡±
 --*************************************************
@@ -321,7 +321,7 @@ function PetEquipSuitUp_StopCareObject()
 end
 
 --*************************************************
---¹Ø±Õ½çÃæ
+--¹Ø± ½çÃæ
 --*************************************************
 function PetEquipSuitUp_Close()
 	this:Hide()

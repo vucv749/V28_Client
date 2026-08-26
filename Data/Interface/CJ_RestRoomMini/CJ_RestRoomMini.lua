@@ -1,4 +1,4 @@
--- 吃鸡玩法 休息室人数、倒计时等展示UI最小化状态
+-- 吃鸡玩法 休息室人数、倒计时等牴示UI最小化状态
 -- 默认位置
 local CJ_RestRoomMini_UnifiedPosition = nil
 
@@ -8,8 +8,8 @@ function CJ_RestRoomMini_PreLoad()
     this:RegisterEvent("TLCJ_REST_RESTINFOMINIOPEN", true)
     this:RegisterEvent("TLCJ_REST_RESTINFOMINICLOSE", true)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end -- end func CJ_RestRoomMini_PreLoad()
 
 function CJ_RestRoomMini_OnEvent(event)

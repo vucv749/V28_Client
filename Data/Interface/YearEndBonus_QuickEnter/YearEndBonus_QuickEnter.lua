@@ -10,9 +10,9 @@ function YearEndBonus_QuickEnter_PreLoad() 				--
     this:RegisterEvent("UI_COMMAND", true) 
 	this : RegisterEvent("ADJEST_UI_POS",false)
 	this : RegisterEvent("SCENE_TRANSED")
-	this : RegisterEvent( "VIEW_RESOLUTION_CHANGED" );		-- 游戏分辨率发生了变化
-	this : RegisterEvent( "GAMELOGIN_SELECTCHARACTER" );	-- 选择人物
-	this : RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- 离开场景 
+	this : RegisterEvent( "VIEW_RESOLUTION_CHANGED" );		-- ??????????
+	this : RegisterEvent( "GAMELOGIN_SELECTCHARACTER" );	-- ????
+	this : RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- ???? 
 end
 
 --*********************************
@@ -46,7 +46,7 @@ function YearEndBonus_QuickEnter_OnEvent( event )
             else
                 YearEndBonus_QuickEnter_Tips:Hide()
             end
-            --日期
+            --葼期
             YearEndBonus_QuickEnter_Icon:SetToolTip("#{HKCJ_241127_01}")
             this:Show()
         else

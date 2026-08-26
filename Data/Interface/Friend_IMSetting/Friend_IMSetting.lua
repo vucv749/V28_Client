@@ -50,9 +50,9 @@ end
 function Friend_IMSetting_OnShow()
 	local n1, n2, n3, n4 = SystemSetup:GetChatSetting()
 
-	Friend_IMSetting_Basic1:SetCheck(n1)					-- 拒绝所有信件
-	Friend_IMSetting_Basic2:SetCheck(n2)					-- 拒绝加我好友
-	Friend_IMSetting_Basic3:SetCheck(n3)					-- 拒绝默认生信件
+	Friend_IMSetting_Basic1:SetCheck(n1)					-- ??????
+	Friend_IMSetting_Basic2:SetCheck(n2)					-- ??????
+	Friend_IMSetting_Basic3:SetCheck(n3)					-- ???????
 	--Friend_IMSetting_Basic4:SetCheck(n4)					-- 拒绝所有聊天信息
 
 	Friend_IMSetting_GroupNameNew:SetText("")
@@ -88,9 +88,9 @@ function Friend_IMSetting_Accept_Clicked()
 		
 		local n1, n2, n3, n4 = SystemSetup:GetChatSetting()
 
-		n1 = Friend_IMSetting_Basic1:GetCheck()		-- 拒绝所有信件
-		n2 = Friend_IMSetting_Basic2:GetCheck()		-- 拒绝加我好友
-		n3 = Friend_IMSetting_Basic3:GetCheck()		-- 拒绝默认生信件
+		n1 = Friend_IMSetting_Basic1:GetCheck()		-- ??????
+		n2 = Friend_IMSetting_Basic2:GetCheck()		-- ??????
+		n3 = Friend_IMSetting_Basic3:GetCheck()		-- ???????
 		--n4 = Friend_IMSetting_Basic4:GetCheck()		-- 拒绝所有聊天信息
 
 		SystemSetup:SaveChatSetting (n1, n2, n3, n4)

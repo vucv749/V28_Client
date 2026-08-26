@@ -17,7 +17,7 @@ function WuhunJian_PreLoad()
 
 	this:RegisterEvent("OPEN_WHWG")
 	this:RegisterEvent("XINGZHEN_UPDATE", false)
-	--离开场景，自动关闭
+	--离开场景，自动关睜
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)
 	--更新装备
 	this:RegisterEvent("ADJEST_UI_POS", false)

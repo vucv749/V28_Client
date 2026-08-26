@@ -40,9 +40,9 @@ function Identify_OnEvent(event)
 				Identify_Info2:SetText( "#{INTERFACE_XML_506}" );
 			elseif tonumber(arg0) == 112233 then
 				Current = 1;
-				Identify_Title:SetText( "#gFF0FA0ÖØÐÂ¼ø¶¨×°±¸×ÊÖÊ" );
+				Identify_Title:SetText( "#gFF0FA0mµt l¥n næa xem xét trang b¸ tß ch¤t" );
 				Identify_Info:SetText( "#{INTERFACE_XML_987}" );
-				Identify_Info2:SetText( "Çë½«×°±¸ÍÏÈë´Ë¿ò" );
+				Identify_Info2:SetText( "Thïnh Tß¾ng trang b¸ kéo vào ThØ Khuông" );
 			else
 				return;
 			end
@@ -57,7 +57,7 @@ function Identify_OnEvent(event)
 			objCared = DataPool : GetNPCIDByServerID(xx);
 			AxTrace(0,1,"xx="..xx .. " objCared="..objCared)
 			if objCared == -1 then
-					PushDebugMessage("server´«¹ýÀ´µÄÊý¾ÝÓÐÎÊÌâ¡£");
+					PushDebugMessage("Dæ li®u máy chü có v¤n ð«");
 					return;
 			end
 			local playerMoney = Player:GetData("MONEY");
@@ -87,7 +87,7 @@ function Identify_OnEvent(event)
 			return;
 		end
 		
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			
 			--È¡Ïû¹ØÐÄ
@@ -102,7 +102,7 @@ function Identify_OnEvent(event)
 			return;
 		end
 
-		if( arg0~= nil and Current~=1) then	--ÖØÐÂ¼ø¶¨×°±¸×ÊÖÊ²»ÓÃÒÆ³ý×°±¸....ÈÃÍæ¼ÒÒ»Ö±Ë¢....
+		if( arg0~= nil and Current~=1) then	--??????????????....??????....
 			if (Identify_Item == tonumber(arg0) ) then
 				Identify_Resume_Equip_Gem(1)			
 			end
@@ -161,7 +161,7 @@ function Identify_Update(Item_index)
 	
 	if theAction:GetID() ~= 0 then
 	
-			-- ¼ì²éÊÔÍ¼·ÅÈëµÄÊÇ·ñÎªÕäÊÞ×°±¸
+			-- ¼ì²éÊÔÍ¼·ÅÈëµÄÊÇ·ñÎª äÊÞ×°±¸
 			local PetEquipPoint = LifeAbility:Is_PetEquip(index)
 			if PetEquipPoint ~= -1 then
 				if Current == 0 then
@@ -175,22 +175,22 @@ function Identify_Update(Item_index)
 
 			local EquipPoint = LifeAbility : Get_Equip_Point(index)
 			if EquipPoint == -1 or EquipPoint == 8 or EquipPoint == 9 or EquipPoint == 10 
-			or PlayerPackage:IsBagItemKFS(index) ==1 then --Îä»êµÄÏÞÖÆ
+			or PlayerPackage:IsBagItemKFS(index) ==1 then --?????
 				if EquipPoint ~= -1 then
-					PushDebugMessage("²»ÄÜ·ÅÈëÕâÖÖ×°±¸¡£")
+					PushDebugMessage("Không th¬ ð£t trang b¸ này vào")
 				end
 				return
 			end
 			
 			if EquipPoint >= 19 and EquipPoint <= 24 then
-				PushDebugMessage("²»ÄÜ·ÅÈëÕâÖÖ×°±¸¡£")
+				PushDebugMessage("Không th¬ ð£t trang b¸ này vào")
 				return
 			end
 			
 			if Current == 1 then			
 				local haveIndentify = LifeAbility:IsIndentify(index)
 				if haveIndentify ~= 1 then
-					PushDebugMessage("ÄúµÄ×°±¸»¹Ã»ÓÐ¼ø¶¨£¬ÇëÏÈ¼ø¶¨")
+					PushDebugMessage("Nhçm Ðích trang b¸ còn không có xem xét, Thïnh Tiên xem xét")
 					return
 				end
 			end
@@ -251,10 +251,10 @@ function Identify_Update(Item_index)
 	end
 	
 end
-local EB_FREE_BIND = 0;				-- ÎÞ°ó¶¨ÏÞÖÆ
-local EB_BINDED = 1;				-- ÒÑ¾­°ó¶¨
-local	EB_GETUP_BIND =2			-- Ê°È¡°ó¶¨
-local	EB_EQUIP_BIND =3			-- ×°±¸°ó¶¨
+local EB_FREE_BIND = 0;				-- ?????
+local EB_BINDED = 1;				-- ????
+local	EB_GETUP_BIND =2			-- ????
+local	EB_EQUIP_BIND =3			-- ????
 function Identify_Buttons_Clicked()
 	if Identify_Item ~= -1 and PlayerPackage : GetItemTableIndex( Identify_Item ) ~= -1 then
 		
@@ -269,7 +269,7 @@ function Identify_Buttons_Clicked()
 			local index,BindState = PlayerPackage:FindFirstBindedItemIdxByIDTable(tonumber(Tb_idx));
 			local index2,BindState2 = PlayerPackage:FindFirstBindedItemIdxByIDTable(tonumber(jingangcuo_id));
 			if(index == -1 and index2 == -1)then
-				local str = "È±ÉÙ#{_ITEM"..Tb_idx.."}»ò#{_ITEM"..jingangcuo_id.."}£¬»òÕßËüÃÇ±»¼ÓËø¡£";
+				local str = "Khuyªt thiªu#{_ITEM"..Tb_idx.."}Ho£c#{_ITEM"..jingangcuo_id.."}, ho£c là chúng nó B¸ Gia Toä.";
 				PushDebugMessage(str);
 				return
 			end
@@ -297,7 +297,7 @@ function Identify_Buttons_Clicked()
 		end
 
 	else
-		PushDebugMessage("Çë·ÅÈëÒª¼ø¶¨×ÊÖÊµÄ×°±¸¡£")
+		PushDebugMessage("Thïnh ð¬ vào Yêu xem xét tß ch¤t Ðích trang b¸.")
 	end
 end
 
@@ -318,7 +318,7 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØÐÄNPC£¬
---ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
 --Èç¹ûÓÐµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓÐµÄ¡°¹ØÐÄ¡±
 --=========================================================
 function BeginCareObject_Identify(objCaredId)

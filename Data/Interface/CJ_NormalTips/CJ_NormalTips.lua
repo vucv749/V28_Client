@@ -162,14 +162,14 @@ function CJ_NormalTips_Timer()
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function CJ_NormalTips_OnHide()
 	KillTimer("CJ_NormalTips_Timer()")
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function CJ_NormalTips_CloseClicked()
 	this:Hide()

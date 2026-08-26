@@ -9,19 +9,19 @@ local g_TLCJ_SKILLBAG_NUM = 12
 
 
 local g_EquipSlotMap = {
-    [1] = 1, --Ã±×Ó
-    [2] = 15,--»¤¼ç
-    [3] = 2, --ÒÂ·þ
-    [4] = 14, --»¤Íó
-    [5] = 3, --ÊÖÌ×
-    [6] = 5, --Ñü´ø
-    [7] = 4, --Ð¬×Ó
-    [8] = 0, --ÎäÆ÷
-    [9] = 7, --ÏîÁ´
-    [10] = 6,--½äÖ¸
-    [11] = 6,--½äÖ¸ µÚ¶þ¸ö½äÖ¸11
-    [12] = 12,--»¤·û
-    [13] = 12,--»¤·û
+    [1] = 1, --??
+    [2] = 15,--??
+    [3] = 2, --??
+    [4] = 14, --??
+    [5] = 3, --??
+    [6] = 5, --??
+    [7] = 4, --??
+    [8] = 0, --??
+    [9] = 7, --??
+    [10] = 6,--??
+    [11] = 6,--?? ?????11
+    [12] = 12,--??
+    [13] = 12,--??
 } 
 
 local g_menpaiImage = { 
@@ -44,7 +44,7 @@ local g_RequireExperience =0
 function CJ_Backpack_PreLoad()
 	--this:RegisterEvent("UI_COMMAND")
 	this:RegisterEvent("TLCJ_OPENPLAYERBAG")
-	--Àë¿ª³¡¾°£¬×Ô¶¯¹Ø±Õ
+	--Àë¿ª³¡¾°£¬×Ô¶¯¹Ø± 
 	this:RegisterEvent("PLAYER_LEAVE_WORLD", false)	
 	-- ÓÎÏ·´°¿Ú³ß´ç·¢ÉúÁË±ä»¯
 	this:RegisterEvent("ADJEST_UI_POS")
@@ -55,9 +55,9 @@ function CJ_Backpack_PreLoad()
 	this:RegisterEvent("UNIT_MAX_HP",false);
 	this:RegisterEvent("UNIT_MP",false);
 	this:RegisterEvent("UNIT_MAX_MP",false);
-	this:RegisterEvent("UNIT_RAGE",false);			-- ×¢²áÅ­Æø
-	this:RegisterEvent("UNIT_ENG",false);			-- ×¢²áÄÜÁ¿
-	this:RegisterEvent("UNIT_MAX_ENG",false);			-- ×¢²áÄÜÁ¿
+	this:RegisterEvent("UNIT_RAGE",false);			-- ????
+	this:RegisterEvent("UNIT_ENG",false);			-- ????
+	this:RegisterEvent("UNIT_MAX_ENG",false);			-- ????
 
 	-- this:RegisterEvent("UNIT_EXP",false);
 	-- this:RegisterEvent("UNIT_LEVEL",false);
@@ -92,18 +92,18 @@ function CJ_Backpack_PreLoad()
 	-- this:RegisterEvent("UNIT_XIULIAN_HIT",false);
 	-- this:RegisterEvent("UNIT_XIULIAN_MISS",false);
 
-	this:RegisterEvent("UNIT_DEF_COLD",false);				--·ÀÓùÊôÐÔ
+	this:RegisterEvent("UNIT_DEF_COLD",false);				--????
 	this:RegisterEvent("UNIT_DEF_FIRE",false);
 	this:RegisterEvent("UNIT_DEF_LIGHT",false);
 	this:RegisterEvent("UNIT_DEF_POSION",false);
 	this:RegisterEvent("UNIT_MENPAI",false);
 
-	this:RegisterEvent("UNIT_ATT_COLD",false);				--¹¥»÷ÊôÐÔ
+	this:RegisterEvent("UNIT_ATT_COLD",false);				--????
 	this:RegisterEvent("UNIT_ATT_FIRE",false);
 	this:RegisterEvent("UNIT_ATT_LIGHT",false);
 	this:RegisterEvent("UNIT_ATT_POSION",false);
 
-	this:RegisterEvent("UNIT_RESISTOTHER_COLD",false);			--¼õ¿¹ÊôÐÔ
+	this:RegisterEvent("UNIT_RESISTOTHER_COLD",false);			--????
 	this:RegisterEvent("UNIT_RESISTOTHER_FIRE",false);
 	this:RegisterEvent("UNIT_RESISTOTHER_LIGHT",false);
 	this:RegisterEvent("UNIT_RESISTOTHER_POSION",false);
@@ -187,7 +187,7 @@ function CJ_Backpack_OnEvent(event)
         elseif   event == "TLCJ_BASEATTRUPDATE" and arg0 == "level" then
             -- µÃµ½µÈ¼¶
             nNumber =  TLCJ:GetData( "LEVEL" );
-            local LevelText = tostring( nNumber ).." ¼¶";
+            local LevelText = tostring( nNumber ).." C¤p";
             LevelText = "#cC8B88E"..LevelText;
             CJ_Backpack_Level_Num:SetText( LevelText );
             -- -- µÃµ½µ±Ç°¾­Ñé
@@ -261,7 +261,7 @@ function CJ_Backpack_OnEvent(event)
         --DEF_PHYSICS
         elseif(event == "UNIT_DEF_PHYSICS" and arg0 == "player") then
             nNumber = Player:GetData("DEF_PHYSICS");
-            if nNumber > 999999 then --Îª°ïÕ½ÐÞ¸ÄµÄ modified by hukai
+            if nNumber > 999999 then --?????? modified by hukai
                 CJ_Backpack_Perporty3_Num:SetText( "??????" );
             else
                 CJ_Backpack_Perporty3_Num:SetText( tostring( nNumber ) );
@@ -273,7 +273,7 @@ function CJ_Backpack_OnEvent(event)
         --DEF_MAGIC
         elseif(event == "UNIT_DEF_MAGIC" and arg0 == "player") then
             nNumber = Player:GetData("DEF_MAGIC");
-            if nNumber > 999999 then --Îª°ïÕ½ÐÞ¸ÄµÄ modified by hukai
+            if nNumber > 999999 then --?????? modified by hukai
                 CJ_Backpack_Perporty4_Num:SetText( "??????" );
             else
                 CJ_Backpack_Perporty4_Num:SetText( tostring( nNumber ) );
@@ -449,7 +449,7 @@ end
 --         actionBtn:DoAction();
 --     else
 --         if LuaIsFighting() == 1 then
---             PushDebugMessage("Õ½¶·×´Ì¬ÖÐ£¬ÎÞ·¨½øÐÐ´Ë²Ù×÷¡£")
+--             PushDebugMessage(" ½¶·×´Ì¬ÖÐ£¬ÎÞ·¨½øÐÐ´Ë²Ù×÷¡£")
 --             return 
 --         end
 --         Clear_XSCRIPT()
@@ -470,7 +470,7 @@ end
 --         return 
 --     end
 --     if LuaIsFighting() == 1 then
--- 		PushDebugMessage("Õ½¶·×´Ì¬ÖÐ£¬ÎÞ·¨½øÐÐ´Ë²Ù×÷¡£")
+-- 		PushDebugMessage(" ½¶·×´Ì¬ÖÐ£¬ÎÞ·¨½øÐÐ´Ë²Ù×÷¡£")
 --         return 
 --     end
 --     Clear_XSCRIPT()
@@ -542,7 +542,7 @@ function CJ_Backpack_OnUpdateShow()
 	CJ_Backpack_NextLVNeed_Num:SetText( NeedExpText );
     CJ_Backpack_Level_EXPLace:SetProgress(g_CurExperience,g_RequireExperience)
 
-	-- ¸ù¾Ý¾­Ñé½ûÖ¹»òÕß´ò¿ªÉý¼¶
+	-- ¸ù¾Ý¾­Ñé½ûÖ¹»ò ß´ò¿ªÉý¼¶
 	-- if(g_CurExperience >= g_RequireExperience) then
 
 	-- 	SelfEquip_UpLevel:Enable();
@@ -553,7 +553,7 @@ function CJ_Backpack_OnUpdateShow()
 
 	-- µÃµ½µÈ¼¶
 	nNumber =  TLCJ:GetData( "LEVEL" );
-	local LevelText = tostring( nNumber ).." ¼¶";
+	local LevelText = tostring( nNumber ).." C¤p";
 	LevelText = "#cC8B88E"..LevelText;
 	CJ_Backpack_Level_Num:SetText( LevelText );
 
@@ -597,7 +597,7 @@ function CJ_Backpack_OnUpdateShow()
 
 	-- ÎïÀí·ÀÓù
 	nNumber = Player:GetData("DEF_PHYSICS");
-	if nNumber > 999999 then --Îª°ïÕ½ÐÞ¸ÄµÄ modified by hukai
+	if nNumber > 999999 then --?????? modified by hukai
 		CJ_Backpack_Perporty3_Num:SetText( "??????" );
 	else
 		CJ_Backpack_Perporty3_Num:SetText( tostring( nNumber ) );
@@ -609,7 +609,7 @@ function CJ_Backpack_OnUpdateShow()
 
 	-- Ä§·¨·ÀÓù
 	nNumber = Player:GetData("DEF_MAGIC");
-	if nNumber > 999999 then --Îª°ïÕ½ÐÞ¸ÄµÄ modified by hukai
+	if nNumber > 999999 then --?????? modified by hukai
 		CJ_Backpack_Perporty4_Num:SetText( "??????" );
 	else
 		CJ_Backpack_Perporty4_Num:SetText( tostring( nNumber ) );
@@ -634,7 +634,7 @@ function CJ_Backpack_OnUpdateShow()
     CJ_Backpack_SetStateTooltip()
 end
 
---¹Ø±Õ
+--¹Ø± 
 -- function CJ_Backpack_Leave_Clicked()
 --     if TLCJ:IsInTLCJScene() > 0 then
 -- 		Clear_XSCRIPT()
@@ -697,9 +697,9 @@ function CJ_Backpack_SetStateTooltip()
 	local iPoisonResistLimit = Player:GetData("SUBRESISTLIMITPOISON")
 
 
-	CJ_Backpack_IceFastness:SetToolTip("±ù¹¥:"..tostring(iIceAttack).."#r±ù¿¹:"..tostring(iIceDefine).."#r¼õ±ù¿¹:"..tostring(iIceResistOther).."#{JKXX_091228_1}"..tostring(iIceResistLimit));
-	CJ_Backpack_FireFastness:SetToolTip("»ð¹¥:"..tostring(iFireAttack).."#r»ð¿¹:"..tostring(iFireDefine).."#r¼õ»ð¿¹:"..tostring(iFireResistOther) .."#{JKXX_091228_2}"..tostring(iFireResistLimit));
-	CJ_Backpack_ThunderFastness:SetToolTip("Ðþ¹¥:"..tostring(iThunderAttack).."#rÐþ¿¹:"..tostring(iThunderDefine).."#r¼õÐþ¿¹:"..tostring(iThunderResistOther).."#{JKXX_091228_3}"..tostring(iThunderResistLimit) );
-	CJ_Backpack_PoisonFastness:SetToolTip("¶¾¹¥:"..tostring(iPoisonAttack).."#r¶¾¿¹:"..tostring(iPoisonDefine).."#r¼õ¶¾¿¹:"..tostring(iPoisonResistOther) .."#{JKXX_091228_4}"..tostring(iPoisonResistLimit));
+	CJ_Backpack_IceFastness:SetToolTip("Bång công:"..tostring(iIceAttack).."#rBång Kháng:"..tostring(iIceDefine).."#rGiäm Bång Kháng:"..tostring(iIceResistOther).."#{JKXX_091228_1}"..tostring(iIceResistLimit));
+	CJ_Backpack_FireFastness:SetToolTip("Höa công:"..tostring(iFireAttack).."#rHoä Kháng:"..tostring(iFireDefine).."#rGiäm Hoä Kháng:"..tostring(iFireResistOther) .."#{JKXX_091228_2}"..tostring(iFireResistLimit));
+	CJ_Backpack_ThunderFastness:SetToolTip("Huy«n công:"..tostring(iThunderAttack).."#rHuy«n Kháng:"..tostring(iThunderDefine).."#rGiäm Huy«n Kháng:"..tostring(iThunderResistOther).."#{JKXX_091228_3}"..tostring(iThunderResistLimit) );
+	CJ_Backpack_PoisonFastness:SetToolTip("Ðµc công:"..tostring(iPoisonAttack).."#rÐµc Kháng:"..tostring(iPoisonDefine).."#rGiäm Ðµc Kháng:"..tostring(iPoisonResistOther) .."#{JKXX_091228_4}"..tostring(iPoisonResistLimit));
 		
 end

@@ -12,7 +12,7 @@ local g_check_text = {}
 
 local g_CurShowIndex = 0
 
-local g_ButtonOp = 0	--1：报名 2：领签 3：领奖 4：取回元宝
+local g_ButtonOp = 0	--1:?? 2:?? 3:?? 4:????
 
 local g_WinImageStr = "set:ShiZhuang_ChouJiang1 image:ShiZhuang_ChouJiangGet"
 local g_NotWinImageStr = "set:ShiZhuang_ChouJiang1 image:ShiZhuang_ChouJiangNo"
@@ -110,13 +110,13 @@ function ShiZhuang_ChouJiang_Update()
 		if lottery_stage == 1 then
 			if bSign == 1 then
 				if i == g_CurShowIndex then
-					ShiZhuang_ChouJiang_UpdateOpButton(0, 2)	--领签，灰态
+					ShiZhuang_ChouJiang_UpdateOpButton(0, 2)	--??,??
 					ShiZhuang_ChouJiang_NumText:SetText("#{JLTJ_230320_21}")
 				end
 				g_check_text[i]:SetText("#{JLTJ_230320_22}")
 			else
 				if i == g_CurShowIndex then
-					ShiZhuang_ChouJiang_UpdateOpButton(1, 1)	--报名
+					ShiZhuang_ChouJiang_UpdateOpButton(1, 1)	--??
 					local strTemp = ScriptGlobal_Format("#{JLTJ_230320_19}", tostring(g_Need_YuanBao[i]))
 					ShiZhuang_ChouJiang_NumText:SetText(strTemp)
 					g_ButtonOp = 1
@@ -128,7 +128,7 @@ function ShiZhuang_ChouJiang_Update()
 				if i < current_lottery_index then
 					if bTakeBack == 1 then
 						if i == g_CurShowIndex then
-							ShiZhuang_ChouJiang_UpdateOpButton(0, 5)	--已领取
+							ShiZhuang_ChouJiang_UpdateOpButton(0, 5)	--???
 							if win_lottery == 1 then
 								ShiZhuang_ChouJiang_Result_Image:Show()
 								ShiZhuang_ChouJiang_Result_Image:SetProperty("Image", g_WinImageStr)
@@ -141,7 +141,7 @@ function ShiZhuang_ChouJiang_Update()
 					else
 						if win_lottery == 1 then
 							if i == g_CurShowIndex then
-								ShiZhuang_ChouJiang_UpdateOpButton(1, 3)	--领奖
+								ShiZhuang_ChouJiang_UpdateOpButton(1, 3)	--??
 								g_ButtonOp = 3
 								ShiZhuang_ChouJiang_Result_Image:Show()
 								ShiZhuang_ChouJiang_Result_Image:SetProperty("Image", g_WinImageStr)
@@ -149,7 +149,7 @@ function ShiZhuang_ChouJiang_Update()
 							g_check_text[i]:SetText("#{JLTJ_230320_27}")
 						else
 							if i == g_CurShowIndex then
-								ShiZhuang_ChouJiang_UpdateOpButton(1, 4)	--取回元宝
+								ShiZhuang_ChouJiang_UpdateOpButton(1, 4)	--????
 								g_ButtonOp = 4
 								ShiZhuang_ChouJiang_Result_Image:Show()
 								ShiZhuang_ChouJiang_Result_Image:SetProperty("Image", g_NotWinImageStr)
@@ -172,7 +172,7 @@ function ShiZhuang_ChouJiang_Update()
 					if is_lottery_draw == 1 then
 						if bTakeBack == 1 then
 							if i == g_CurShowIndex then
-								ShiZhuang_ChouJiang_UpdateOpButton(0, 5)	--已领取
+								ShiZhuang_ChouJiang_UpdateOpButton(0, 5)	--???
 								if win_lottery == 1 then
 									ShiZhuang_ChouJiang_Result_Image:Show()
 									ShiZhuang_ChouJiang_Result_Image:SetProperty("Image", g_WinImageStr)
@@ -185,7 +185,7 @@ function ShiZhuang_ChouJiang_Update()
 						else
 							if win_lottery == 1 then
 								if i == g_CurShowIndex then
-									ShiZhuang_ChouJiang_UpdateOpButton(1, 3)	--领奖
+									ShiZhuang_ChouJiang_UpdateOpButton(1, 3)	--??
 									g_ButtonOp = 3
 									ShiZhuang_ChouJiang_Result_Image:Show()
 									ShiZhuang_ChouJiang_Result_Image:SetProperty("Image", g_WinImageStr)
@@ -193,7 +193,7 @@ function ShiZhuang_ChouJiang_Update()
 								g_check_text[i]:SetText("#{JLTJ_230320_27}")
 							else
 								if i == g_CurShowIndex then
-									ShiZhuang_ChouJiang_UpdateOpButton(1, 4)	--取回元宝
+									ShiZhuang_ChouJiang_UpdateOpButton(1, 4)	--????
 									g_ButtonOp = 4
 									ShiZhuang_ChouJiang_Result_Image:Show()
 									ShiZhuang_ChouJiang_Result_Image:SetProperty("Image", g_NotWinImageStr)
@@ -205,18 +205,18 @@ function ShiZhuang_ChouJiang_Update()
 						if bGetNumOver == 1 then
 							if lottery_num ~= 0 then
 								if i == g_CurShowIndex then
-									ShiZhuang_ChouJiang_UpdateOpButton(0, 6)	--等待开奖
+									ShiZhuang_ChouJiang_UpdateOpButton(0, 6)	--????
 								end
 								g_check_text[i]:SetText("#{JLTJ_230320_23}")
 							else
 								if bTakeBack == 1 then
 									if i == g_CurShowIndex then
-										ShiZhuang_ChouJiang_UpdateOpButton(0, 5)	--已领取
+										ShiZhuang_ChouJiang_UpdateOpButton(0, 5)	--???
 									end
 									g_check_text[i]:SetText("#{JLTJ_230320_28}")
 								else
 									if i == g_CurShowIndex then
-										ShiZhuang_ChouJiang_UpdateOpButton(1, 4)	--取回元宝
+										ShiZhuang_ChouJiang_UpdateOpButton(1, 4)	--????
 										g_ButtonOp = 4
 									end
 									g_check_text[i]:SetText("#{JLTJ_230320_25}")
@@ -225,12 +225,12 @@ function ShiZhuang_ChouJiang_Update()
 						else
 							if lottery_num ~= 0 then
 								if i == g_CurShowIndex then
-									ShiZhuang_ChouJiang_UpdateOpButton(0, 6)	--等待开奖
+									ShiZhuang_ChouJiang_UpdateOpButton(0, 6)	--????
 								end
 								g_check_text[i]:SetText("#{JLTJ_230320_23}")
 							else
 								if i == g_CurShowIndex then
-									ShiZhuang_ChouJiang_UpdateOpButton(1, 2)	--领签
+									ShiZhuang_ChouJiang_UpdateOpButton(1, 2)	--??
 									g_ButtonOp = 2
 								end
 								g_check_text[i]:SetText("#{JLTJ_230320_22}")
@@ -248,14 +248,14 @@ function ShiZhuang_ChouJiang_Update()
 					end
 				else
 					if i == g_CurShowIndex then
-						ShiZhuang_ChouJiang_UpdateOpButton(0, 2)	--领签，灰态
+						ShiZhuang_ChouJiang_UpdateOpButton(0, 2)	--??,??
 						ShiZhuang_ChouJiang_NumText:SetText("#{JLTJ_230320_21}")
 					end
 					g_check_text[i]:SetText("#{JLTJ_230320_22}")
 				end
 			else
 				if i == g_CurShowIndex then
-					ShiZhuang_ChouJiang_UpdateOpButton(0, 7)	--没报名
+					ShiZhuang_ChouJiang_UpdateOpButton(0, 7)	--???
 					ShiZhuang_ChouJiang_NumText:SetText("#{JLTJ_230320_21}")
 				end
 				g_check_text[i]:SetText("#{JLTJ_230320_20}")
@@ -264,7 +264,7 @@ function ShiZhuang_ChouJiang_Update()
 			if bSign == 1 then
 				if bTakeBack == 1 then
 					if i == g_CurShowIndex then
-						ShiZhuang_ChouJiang_UpdateOpButton(0, 5)	--已领取
+						ShiZhuang_ChouJiang_UpdateOpButton(0, 5)	--???
 						if win_lottery == 1 then
 							ShiZhuang_ChouJiang_Result_Image:Show()
 							ShiZhuang_ChouJiang_Result_Image:SetProperty("Image", g_WinImageStr)
@@ -277,7 +277,7 @@ function ShiZhuang_ChouJiang_Update()
 				else
 					if win_lottery == 1 then
 						if i == g_CurShowIndex then
-							ShiZhuang_ChouJiang_UpdateOpButton(1, 3)	--领奖
+							ShiZhuang_ChouJiang_UpdateOpButton(1, 3)	--??
 							g_ButtonOp = 3
 							ShiZhuang_ChouJiang_Result_Image:Show()
 							ShiZhuang_ChouJiang_Result_Image:SetProperty("Image", g_WinImageStr)
@@ -285,7 +285,7 @@ function ShiZhuang_ChouJiang_Update()
 						g_check_text[i]:SetText("#{JLTJ_230320_27}")
 					else
 						if i == g_CurShowIndex then
-							ShiZhuang_ChouJiang_UpdateOpButton(1, 4)	--取回元宝
+							ShiZhuang_ChouJiang_UpdateOpButton(1, 4)	--????
 							g_ButtonOp = 4
 							ShiZhuang_ChouJiang_Result_Image:Show()
 							ShiZhuang_ChouJiang_Result_Image:SetProperty("Image", g_NotWinImageStr)
@@ -295,7 +295,7 @@ function ShiZhuang_ChouJiang_Update()
 				end
 			else
 				if i == g_CurShowIndex then
-					ShiZhuang_ChouJiang_UpdateOpButton(0, 7)	--没报名
+					ShiZhuang_ChouJiang_UpdateOpButton(0, 7)	--???
 					ShiZhuang_ChouJiang_NumText:SetText("#{JLTJ_230320_21}")
 				end
 				g_check_text[i]:SetText("#{JLTJ_230320_20}")
@@ -312,13 +312,13 @@ function ShiZhuang_ChouJiang_Update()
 		else
 			if bSign == 1 then
 				if i == g_CurShowIndex then
-					ShiZhuang_ChouJiang_UpdateOpButton(0, 2)	--领签，灰态
+					ShiZhuang_ChouJiang_UpdateOpButton(0, 2)	--??,??
 					ShiZhuang_ChouJiang_NumText:SetText("#{JLTJ_230320_21}")
 				end
 				g_check_text[i]:SetText("#{JLTJ_230320_22}")				
 			else
 				if i == g_CurShowIndex then
-					ShiZhuang_ChouJiang_UpdateOpButton(0, 1)	--报名，灰态
+					ShiZhuang_ChouJiang_UpdateOpButton(0, 1)	--??,??
 					local strTemp = ScriptGlobal_Format("#{JLTJ_230320_19}", tostring(g_Need_YuanBao[i]))
 					ShiZhuang_ChouJiang_NumText:SetText(strTemp)
 				end

@@ -26,16 +26,16 @@ local g_BarList = {}
 
 local g_MaxBarNum = 0
 
-local g_TargetExteriorIndex = 0		--定位的外观索引，从1开始
-local g_TargetExteriorID = 0		--定位的外观ID
+local g_TargetExteriorIndex = 0		--???????,?1??
+local g_TargetExteriorID = 0		--?????ID
 
-local g_CurSelExteriorID = 0			--当前选择的外观ID，从1开始
+local g_CurSelExteriorID = 0			--???????ID,?1??
 
 local g_ViewMode = 0
 
-local g_CameraHeight = 1     --摄影机高度
-local g_CameraDistance = 2   --摄影机距离
-local g_CameraPitch = 3      --摄影机角度
+local g_CameraHeight = 1     --?????
+local g_CameraDistance = 2   --?????
+local g_CameraPitch = 3      --?????
 
 local g_OriMountId = -1
 
@@ -52,7 +52,7 @@ function Ride_PreLoad()
 	this:RegisterEvent("PLAYER_MOUNT_ID")
 	this:RegisterEvent("STOP_FITTING_EXTERIOR_RIDE")
 	
-	--离开场景，自动关闭
+	--离开场景，自动关睜
 	this:RegisterEvent("PLAYER_LEAVE_WORLD")
 	--玩家更换骑乘
 	this:RegisterEvent("PLAYER_UPDATE_RIDE")
@@ -648,21 +648,21 @@ function Ride_ShowPage()
 end
 
 function Ride_CheckPage(idx)
-	if idx == 1 then--装备
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--资料
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--珍兽
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--武魂
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--修炼
+	elseif idx == 5 then--??
 		return 1
-	elseif idx == 6 then--武道
+	elseif idx == 6 then--??
 		return DataPool:Lua_CheckIsShowTalent()
-	elseif idx == 7 then--乘骑
+	elseif idx == 7 then--??
 		return 1
-	elseif idx == 8 then--其他
+	elseif idx == 8 then--??
 		return 1
 	end
 	return 0
@@ -671,21 +671,21 @@ end
 function Ride_OnPageClicked(btn_index)
 	Variable:SetVariable("PageNumber", tostring(btn_index), 1)
 	local page_index = g_PageOrder[btn_index]
-	if page_index == 1 then--装备
+	if page_index == 1 then--??
 		Ride_SelfEquip_Page_Switch()
-	elseif page_index == 2 then--资料
+	elseif page_index == 2 then--??
 		Ride_SelfData_Switch()
-	elseif page_index == 3 then--珍兽
+	elseif page_index == 3 then--??
 		Ride_Pet_Switch()
-	elseif page_index == 4 then--武魂
+	elseif page_index == 4 then--??
 		Ride_Wuhun_Switch()
-	elseif page_index == 5 then--修炼
+	elseif page_index == 5 then--??
 		Ride_Xiulian_Switch()
-	elseif page_index == 6 then--武道
+	elseif page_index == 6 then--??
 		Ride_Talent_Switch()
-	elseif page_index == 7 then--骑乘
+	elseif page_index == 7 then--??
 		Ride_Ride_Page_Switch(btn_index)
-	elseif page_index == 8 then--其他
+	elseif page_index == 8 then--??
 		Ride_Other_Info_Page_Switch()
 	end
 end
@@ -701,7 +701,7 @@ function Ride_SelfData_Switch()
 	SystemSetup:OpenPrivatePage("self")
 end
 
---页签：珍兽
+--页签：犱兽
 function Ride_Pet_Switch()
 	Variable:SetVariable("SelfUnionPos", Ride_Frame:GetProperty("UnifiedPosition"), 1)
 	TogglePetPage()

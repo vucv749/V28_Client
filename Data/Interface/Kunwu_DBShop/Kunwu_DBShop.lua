@@ -22,7 +22,7 @@ function Kunwu_DBShop_PreLoad()
 	this:RegisterEvent("ADJEST_UI_POS")
 	-- 游戏分辨率发生了变化
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
-	--离开场景，自动关闭
+	--离开场景，自动关睜
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")
 end
 
@@ -226,7 +226,7 @@ end
 --- default end
 
 --- ui funcs
--- 关闭
+-- 关睜
 function Kunwu_DBShop_Close()
     this:CareObject(objCared, 0, "Kunwu_DBShop")
     this:Hide()

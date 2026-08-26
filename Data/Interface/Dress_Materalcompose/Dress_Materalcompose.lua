@@ -1,5 +1,5 @@
-local Dress_STUFF_SLOTS = {}									-- 物品槽
-local Dress_ITEM_IN_SLOTS = {}									-- 物品槽中的物品背包位置
+local Dress_STUFF_SLOTS = {}									-- ???
+local Dress_ITEM_IN_SLOTS = {}									-- ???????????
 local Dress_LaskPack = {}
 local theNPC =-1
 local MAX_OBJ_DISTANCE = 3.0
@@ -27,7 +27,7 @@ end
 function Dress_Materalcompose_OnEvent(event)
 	if event == "UI_COMMAND" and tonumber(arg0)==19860143 then
 		Dress_Materalcompose_Clear()
-		--如果界面开着，就先关闭
+		--如果界面开着，就先关睜
 		if(this:IsVisible()) then
 			Dress_Materalcompose_Close()
 		end
@@ -65,7 +65,7 @@ function Dress_Materalcompose_OnEvent(event)
 		return
 		
 	elseif( event == "RESUME_ENCHASE_GEM" and this:IsVisible() ) then
-		if(arg0~=nil and tonumber(arg0) == 11) then---xml里配置的是D11
+		if(arg0~=nil and tonumber(arg0) == 11) then---xml?????D11
 			Dress_Materalcompose_Resume_Gem(1);
 		elseif(arg0~=nil and tonumber(arg0) == 13) then
 			Dress_Materalcompose_Resume_Gem(2)
@@ -100,7 +100,7 @@ function Dress_Materalcompose_OnEvent(event)
 	elseif (event == "VIEW_RESOLUTION_CHANGED") then
 		Dress_Materalcompose_Frame_On_ResetPos()
 	-- FakeObject模型界面互斥
-	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then   --时装预览
+	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then   --????
 		if (this:IsVisible()) then
 			this:Hide()
 			return
@@ -197,7 +197,7 @@ function Dress_Materalcompose_Update( arg0, arg1 )
 	if slot ~=0 then
 		slot = math.floor((slot-10)/2+1)
 	end
-	if not this : IsVisible() then					-- 界面未打开
+	if not this : IsVisible() then					-- ?????
 		return
 	end
 	
@@ -207,8 +207,8 @@ function Dress_Materalcompose_Update( arg0, arg1 )
 		return
 	end
 	
-	if slot == 6 then--如果是配饰合成符
-		if PlayerPackage:GetItemTableIndex(bagPos) == 30503137 then--时装配饰合成符
+	if slot == 6 then--????????
+		if PlayerPackage:GetItemTableIndex(bagPos) == 30503137 then--???????
 			--将原来的解锁
 			if Dress_ITEM_IN_SLOTS[6] ~= -1 then
 				LifeAbility : Lock_Packet_Item(Dress_ITEM_IN_SLOTS[6],0);
@@ -220,9 +220,9 @@ function Dress_Materalcompose_Update( arg0, arg1 )
 			PushDebugMessage("#{SZPR_091023_64}")
 			return
 		end
-	else----配饰
+	else----??
 		local Dress_GemType = DressEnchasing : Get_Dress_Gem_Level(bagPos,2);
-		if(Dress_GemType ~= 31 and Dress_GemType ~= 32 and Dress_GemType ~= 33 ) then--不是配饰
+		if(Dress_GemType ~= 31 and Dress_GemType ~= 32 and Dress_GemType ~= 33 ) then--????
 			PushDebugMessage("#{SZPR_091023_60}")
 			return
 		end
@@ -240,7 +240,7 @@ function Dress_Materalcompose_Update( arg0, arg1 )
 			Dress_GemQualityType = curDress_GemQualityType - Dress_GemQualityType*100000
 			
 			Dress_GemLevel = DressEnchasing : Get_Dress_Gem_Level(bagPos,1);
-		else--不是第一次
+		else--?????
 			local curDress_GemIndex = PlayerPackage : GetItemTableIndex( bagPos )
 			local curDress_GemQualityType = math.floor(curDress_GemIndex/100000)
 			local curDress_GemLevel = DressEnchasing : Get_Dress_Gem_Level(bagPos,1);
@@ -255,7 +255,7 @@ function Dress_Materalcompose_Update( arg0, arg1 )
 				return
 			end
 		end
-		--自动寻找孔位
+		--自动寻犚孔位
 		if slot == 0 then
 			for i = 1, 5 do
 				if Dress_ITEM_IN_SLOTS[i] == -1 then
@@ -363,7 +363,7 @@ function Dress_Materalcompose_OK_Clicked()
 	end
 
 
-	local needMoney = Dress_NeedMoney[Dress_GemLevel]--这里Dress_GemLevel必然是合法值，否则合成按钮为灰色
+	local needMoney = Dress_NeedMoney[Dress_GemLevel]--??Dress_GemLevel??????,?????????
 	local userMoney = Player:GetData("MONEY_JZ")+Player:GetData("MONEY")
 	if userMoney < needMoney then
 		PushDebugMessage("#{RXZS_090804_11}")
@@ -403,7 +403,7 @@ function Dress_Materalcompose_OK_Clicked()
 			Set_XSCRIPT_ParamCount(6);
 		Send_XSCRIPT();
 	 
-	 --清空界面
+	 --清繝界面
 	  for i = 1,6 do
 	 		Dress_ITEM_IN_SLOTS[i] = -1	 		
 			Dress_LaskPack[i] = -1

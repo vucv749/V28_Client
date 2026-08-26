@@ -13,7 +13,7 @@ function Makefriends_Show_PreLoad()
 end
 
 function Makefriends_Show_OnLoad()
-	SetTimer("Makefriends_Show", "Makefriends_Show_GetMsgTimer()", 8000);--5秒取一次队列
+	SetTimer("Makefriends_Show", "Makefriends_Show_GetMsgTimer()", 8000);--5??????
 end
 
 function Makefriends_Show_OnEvent(event)
@@ -21,21 +21,21 @@ function Makefriends_Show_OnEvent(event)
 		Makefriends_Show_OnClose()
 
 	elseif event == "ON_SCENE_TRANS" then
-		--场景切换 清空
+		--场景切换 清繝
 		Makefriends_Show_OnClose()
 	elseif event == "PLAYER_LEAVE_WORLD" then
-		--玩家离开世界 清空
+		--玩家离开世界 清繝
 		Makefriends_Show_OnClose()
 	elseif event == "JIAOYOU_EXPRESSING_QUICKLY" then
-		--收到消息包进队列触发的事件 
+		--薁到消息包进队列触发的事件 
 		if(this:IsVisible()) then
 			return;
 		else
-		--玩家离开世界 清空
+		--玩家离开世界 清繝
 		KillTimer("Makefriends_Show_GetMsgTimer()");
 		Makefriends_Show_OnClose()
 		Makefriends_Show_GetMsgTimer()
-		SetTimer("Makefriends_Show", "Makefriends_Show_GetMsgTimer()", 8000);--5秒取一次队列
+		SetTimer("Makefriends_Show", "Makefriends_Show_GetMsgTimer()", 8000);--5??????
 		end
 	end
 end
@@ -62,7 +62,7 @@ function Makefriends_Show_GetMsgTimer()
 
 	local text = ScriptGlobal_Format("#{JYHD_230331_139}",sourcename)
 	Makefriends_Show_Text:SetText(text)
-	SetTimer("Makefriends_Show", "Makefriends_Show_CloseUITimer()", 8000);--5秒后自动关闭
+	SetTimer("Makefriends_Show", "Makefriends_Show_CloseUITimer()", 8000);--5??????
 	this:Show();
 end
 
@@ -71,22 +71,22 @@ function Makefriends_Show_Btn_Clicked()
         return 
 	end
 	if (Makefriends_Show_SourceGuid == Player:GetGUID()) then  
-		PushDebugMessage("#{GGSK_221221_49}");--修改字典
+		PushDebugMessage("#{GGSK_221221_49}");--????
 		return;
 	end
 	--已是好友 则隐藏
 	if (Friend:IsPlayerIsFriendNotTemp(Makefriends_Show_SourceName) == 1) then
-		PushDebugMessage("#{JYHD_230331_138}");--修改字典
+		PushDebugMessage("#{JYHD_230331_138}");--????
 		return
 	end
 	
 	DataPool:AddFriendAndGrouping(Makefriends_Show_SourceName);
 end
 
---每次显示一段时间 （时间待定）就关闭UI 定时器 
+--每次显示一段时间 （时间待定）就关睜UI 定时器 
 function Makefriends_Show_CloseUITimer()
 	KillTimer("Makefriends_Show_CloseUITimer()");
-	--关闭界面
+	--关睜界面
 	this:Hide()
 end
 

@@ -6,9 +6,9 @@ local objCared = -1;
 local MAX_OBJ_DISTANCE = 3.0;
 local LastBaoshi = -1;
 local LastZhuangbei = -1;
-local LastCharm = -1;            --×îºóÒ»´ÎÏâÇ¶·û
-local LastOdds = -1;             --×îºóÒ»´Î¼¸ÂÊÖ®Öé
-local SuccRate = 25;						 --ÏâÇ¶µÄ³É¹¦ÂÊ
+local LastCharm = -1;            --???????
+local LastOdds = -1;             --????????
+local SuccRate = 25;						 --??????
 
 
 local g_Object = -1;
@@ -95,7 +95,7 @@ function Enchase_OnEvent(event)
 			return;
 		end
 		
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			
 			--È¡Ïû¹ØĞÄ
@@ -120,7 +120,7 @@ function Enchase_OnEvent(event)
 		objCared = DataPool : GetNPCIDByServerID(xx);
 		AxTrace(0,1,"xx="..xx .. " objCared="..objCared)
 		if objCared == -1 then
-				PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£");
+				PushDebugMessage("Dæ li®u máy chü có v¤n ğ«");
 				return;
 		end
 		BeginCareObject_Enchase(objCared)
@@ -255,9 +255,9 @@ function Enchase_Update(UI_index,Item_index)
 			AxTrace(0,0,"GEM_QUALITY[1]="..GEM_QUALITY[1])
 			if u_index == 1 then
 				local EquipPoint = LifeAbility : Get_Equip_Point(i_index)
-				if EquipPoint == -1 or EquipPoint == 8 or EquipPoint == 9 or EquipPoint == 10 or EquipPoint == 16 then --Îä»êµÄÏŞÖÆ
+				if EquipPoint == -1 or EquipPoint == 8 or EquipPoint == 9 or EquipPoint == 10 or EquipPoint == 16 then --?????
 					if EquipPoint ~= -1 then
-						PushDebugMessage("²»ÄÜ·ÅÈëÕâÖÖ×°±¸¡£")
+						PushDebugMessage("Không th¬ ğ£t trang b¸ này vào")
 					end
 					return
 				end
@@ -275,7 +275,7 @@ function Enchase_Update(UI_index,Item_index)
 						return
 					end
 					if not EquipGemTable[EquipPoint] then
-						PushDebugMessage("´Ë×°±¸ÎŞ·¨ÏâÇ¶¡£")
+						PushDebugMessage("ThØ trang b¸ không th¬ ğßşc khäm.")
 						return
 					end
 				
@@ -288,7 +288,7 @@ function Enchase_Update(UI_index,Item_index)
 					end
 					
 					if passFlag == 0 then
-						PushDebugMessage("´ËÖÖ±¦Ê¯²»ÄÜÏâÇ¶ÔÚÕâÀà×°±¸ÉÏ¡£")
+						PushDebugMessage("ThØ Xung bäo thÕch không th¬ ğßşc khäm tÕi ğây LoÕi trang b¸ Thßşng.")
 						return
 					end
 					
@@ -326,12 +326,12 @@ function Enchase_Update(UI_index,Item_index)
 				local gem_type  = LifeAbility : Get_Gem_Level(i_index,2);
 				local EquipPoint = LifeAbility : Get_Equip_Point(GEM_QUALITY[1])
 				if(tonumber(EquipPoint)== INVALID_ID) then
-					PushDebugMessage("ÇëÏÈ·ÅÈëÒªÏâÇ¶µÄ×°±¸£¡")
+					PushDebugMessage("Thïnh Tiên ğ¬ vào Yêu ğßşc khäm Ğích trang b¸!")
 					Enchase_Resume_Gem(25)
 					return;
 				end
 				if not EquipGemTable[EquipPoint] then
-					PushDebugMessage("´Ë×°±¸ÎŞ·¨ÏâÇ¶¡£")
+					PushDebugMessage("ThØ trang b¸ không th¬ ğßşc khäm.")
 					Enchase_Resume_Gem(25)
 					return
 				end
@@ -345,7 +345,7 @@ function Enchase_Update(UI_index,Item_index)
 				end
 					
 				if passFlag == 0 then
-					PushDebugMessage("´ËÖÖ±¦Ê¯²»ÄÜÏâÇ¶ÔÚÕâÀà×°±¸ÉÏ¡£")
+					PushDebugMessage("ThØ Xung bäo thÕch không th¬ ğßşc khäm tÕi ğây LoÕi trang b¸ Thßşng.")
 					return
 				end
 				
@@ -371,11 +371,11 @@ function Enchase_Update(UI_index,Item_index)
 				GEM_QUALITY[u_index] = i_index
 			elseif u_index == 3 then
 				if PlayerPackage : GetItemTableIndex( i_index ) == 30900009 then
-					Enchase_Explain : SetText("#cFF0000³É¹¦ÂÊ:50%")
+					Enchase_Explain : SetText("#cFF0000xác xu¤t thành công: 50%")
 				elseif PlayerPackage : GetItemTableIndex( i_index ) == 30900010 then
-					Enchase_Explain : SetText("#cFF0000³É¹¦ÂÊ:75%")
+					Enchase_Explain : SetText("#cFF0000xác xu¤t thành công: 75%")
 				else
-					PushDebugMessage("ÕâÀï±ØĞë·ÅÈë#{_ITEM30900009}»òÕß#{_ITEM30900010}¡£")
+					PushDebugMessage("N½i này phäi ğ¬ vào#{_ITEM30900009}ho£c là#{_ITEM30900010}.")
 					return
 				end
 				if GEM_QUALITY[u_index] ~= -1 then
@@ -386,7 +386,7 @@ function Enchase_Update(UI_index,Item_index)
 				GEM_QUALITY[u_index] = i_index
 			elseif u_index == 4 then
 				if PlayerPackage : GetItemTableIndex( i_index ) ~= 30900011 then
-					PushDebugMessage("ÕâÀï±ØĞë·ÅÈë#{_ITEM30900011}¡£")
+					PushDebugMessage("N½i này phäi ğ¬ vào#{_ITEM30900011}.")
 					return
 				end
 				if GEM_QUALITY[u_index] ~= -1 then
@@ -474,12 +474,12 @@ function Enchase_Buttons_Clicked()
 	
 	
 	if GEM_QUALITY[1] == -1 then
-		PushDebugMessage("Çë·ÅÈëÒªÏâÇ¶±¦Ê¯µÄ×°±¸¡£")
+		PushDebugMessage("Thïnh ğ¬ vào Yêu ğßşc khäm bäo thÕch Ğích trang b¸.")
 		return
 	end
 	
 	if GEM_QUALITY[2] == -1 then
-		PushDebugMessage("Çë·ÅÈëÒªÏâÇ¶µÄ±¦Ê¯¡£")
+		PushDebugMessage("Thïnh ğ¬ vào Yêu ğßşc khäm Ğích bäo thÕch.")
 		return
 	end
 	
@@ -488,7 +488,7 @@ function Enchase_Buttons_Clicked()
 	if GEM_QUALITY[3] ~= -1 then 
 		Item_3 = PlayerPackage : GetItemTableIndex( GEM_QUALITY[3] )
 	else
-		PushDebugMessage("Çë·ÅÈë±¦Ê¯ÏâÇ¶·û¡£")
+		PushDebugMessage("Thïnh ğ¬ vào bäo thÕch ğßşc khäm Phù.")
 		return
 	end
 	
@@ -525,7 +525,7 @@ function Enchase_OnHidden()
 end
 --=========================================================
 --¿ªÊ¼¹ØĞÄNPC£¬
---ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 --Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function BeginCareObject_Enchase(objCaredId)
@@ -570,14 +570,14 @@ function Enchase_Resume_Gem(nIndex)
 end
 
 function Update_Rate()
-	Enchase_Explain : SetText("#cFF0000³É¹¦ÂÊ:25%")
+	Enchase_Explain : SetText("#cFF0000xác xu¤t thành công: 25%")
 	SuccRate = 25;
 	if GEM_QUALITY[3] ~= -1 then
 		if PlayerPackage : GetItemTableIndex( GEM_QUALITY[3] ) == 30900009 then
-			Enchase_Explain : SetText("#cFF0000³É¹¦ÂÊ:50%")
+			Enchase_Explain : SetText("#cFF0000xác xu¤t thành công: 50%")
 			SuccRate = 50;
 		elseif PlayerPackage : GetItemTableIndex( GEM_QUALITY[3] ) == 30900010 then
-			Enchase_Explain : SetText("#cFF0000³É¹¦ÂÊ:100%")
+			Enchase_Explain : SetText("#cFF0000xác xu¤t thành công: 100%")
 			SuccRate = 100;
 		end
 	end

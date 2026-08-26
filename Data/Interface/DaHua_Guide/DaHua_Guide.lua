@@ -1,4 +1,4 @@
---dahuaxiyou 整合界面
+--dahuaxiyou 狖合界面
 local g_DaHua_Guide_Frame_UnifiedPosition
 
 local g_DaHua_Guide_Event = {
@@ -96,7 +96,7 @@ function DaHua_Guide_PreLoad()
 	--第二个参数代表界面隐藏时事件是否有效,默认为true
 	this:RegisterEvent("UI_COMMAND", true)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED", false)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false) --进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false) --???????
 	this:RegisterEvent("ADJEST_UI_POS", false)
 
 end
@@ -171,7 +171,7 @@ function DaHua_Guide_OnHidden()
 	DaHua_Guide_Close()
 end
 
--- 关闭
+-- 关睜
 function DaHua_Guide_Close()
 	g_DaHua_Guide_Stage = 0
 	this:Hide()
@@ -200,7 +200,7 @@ function DaHua_Guide_Update()
 		local event = g_DaHua_Guide_Event[index]
 
 		if isButtonShow == 1 then
-			--跟阶段这个属性无所谓了 按钮的显隐完全交给GetButtonState传回的值
+			--跟阶段犫个属性无所谓了 按钮的显隐完全交给GetButtonState传回的值
 			g_DaHua_Guide_Button[index]:Show()
 			if curDay < event.begtime then
 				g_DaHua_Guide_Button[index]:SetToolTip(event.btntips_unbeg)
@@ -262,19 +262,19 @@ function DaHua_Guide_Clicked(clickId)
 	elseif clickId == 2 then
 		--活动商店
 		if DataPool:Lua_IsInTServer() == 1 then
-			PushDebugMessage("#{DHSD_20240522_4}") -- 无法在天荒古境或汴京参与该活动。
+			PushDebugMessage("#{DHSD_20240522_4}") -- ????????????????
 			return
 		end
 
 		local curDay = tonumber(DataPool:GetServerDayTime())
 		if(curDay < g_DaHua_Guide_Event[clickId].begtime and curDay > g_DaHua_Guide_Event[clickId].endtime) then
-			PushDebugMessage("#{DHSD_20240522_5}") -- 当前不在活动时间内，无法参与活动。
+			PushDebugMessage("#{DHSD_20240522_5}") -- ?????????,???????
 			return
 		end
 
 		local level = Player:GetData("LEVEL")
 		if level < 30 then
-			PushDebugMessage("#{DHSD_20240522_6}") -- 您的等级不足30级，无法参与活动。
+			PushDebugMessage("#{DHSD_20240522_6}") -- ??????30?,???????
 			return
 		end
 		

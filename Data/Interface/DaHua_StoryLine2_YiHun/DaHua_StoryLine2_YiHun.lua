@@ -8,8 +8,8 @@ local g_DaHua_StoryLine2_YiHun_Frame_UnifiedYPosition;
 local g_MySel = 0
 --local g_SelectBackCtrl = {}
 local g_SelectTextCtrl = {}
-local g_SelectWrongImCtrl = {}--错图
-local g_SelectRightImCtrl = {}--对图
+local g_SelectWrongImCtrl = {}--??
+local g_SelectRightImCtrl = {}--??
 local g_YiHun_Animate = {}
 
 function DaHua_StoryLine2_YiHun_PreLoad()
@@ -37,15 +37,15 @@ function DaHua_StoryLine2_YiHun_OnLoad()
 --	}
 	g_SelectWrongImCtrl = {
 		DaHua_StoryLine2_YiHun_Name1_Tips_XuanCuo, DaHua_StoryLine2_YiHun_Name2_Tips_XuanCuo
-	}--错图
+	}--??
 	g_SelectRightImCtrl = {
 		DaHua_StoryLine2_YiHun_Name1_Tips_XuanDui, DaHua_StoryLine2_YiHun_Name2_Tips_XuanDui
-	}--对图
+	}--??
 	g_YiHun_Animate = {
-		DaHua_StoryLine2_YiHun_Animate1,--唐僧起唐僧结束 跳三下 
-		DaHua_StoryLine2_YiHun_Animate4,--孙悟空起唐僧结束 跳两下
-		DaHua_StoryLine2_YiHun_Animate2,--唐僧起孙悟空结束 跳两下
-		DaHua_StoryLine2_YiHun_Animate3,--孙悟空起孙悟空结束 跳三下
+		DaHua_StoryLine2_YiHun_Animate1,--??????? ??? 
+		DaHua_StoryLine2_YiHun_Animate4,--???????? ???
+		DaHua_StoryLine2_YiHun_Animate2,--???????? ???
+		DaHua_StoryLine2_YiHun_Animate3,--????????? ???
 	}
 end
 
@@ -77,7 +77,7 @@ function DaHua_StoryLine2_YiHun_OnEvent(event)
 					g_YiHun_Animate[ts]:Show()
 					g_YiHun_Animate[ts]:Play(true)
 				else
-					--孙悟空移魂动画
+					--孙悟繝移魂动画
 					local wk = math.random(3,4)
 					g_YiHun_Animate[wk]:Show()
 					g_YiHun_Animate[wk]:Play(true)

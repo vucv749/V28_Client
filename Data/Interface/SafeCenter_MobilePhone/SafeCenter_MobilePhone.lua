@@ -83,14 +83,14 @@ function SafeCenter_MobilePhone_Show( bUpdate )
 	SafeCenter_MobilePhone_BackgroundDown_Frame:Hide();
 	SafeCenter_AuthenticationPhone_BackgroundDown_Frame:Hide();
 				
-	if nMobileApproveStatus == 0 then		--Î´°ó¶¨ÊÖ»ú
+	if nMobileApproveStatus == 0 then		--?????
 		
 		if theAction:GetID() ~= 0 then		
 			SafeCenter_Bindingphone_ItemA_1:SetActionItem(theAction:GetID());
 		end
 		SafeCenter_Bindingphone_BackgroundDown_Frame:Show();
 		
-	elseif nMobileApproveStatus == 1 then	--ÐèÒªÈÏÖ¤ÊÖ»ú
+	elseif nMobileApproveStatus == 1 then	--??????
 		
 		if theAction:GetID() ~= 0 then		
 			SafeCenter_MobilePhone_ItemA_1:SetActionItem(theAction:GetID());
@@ -106,19 +106,19 @@ function SafeCenter_MobilePhone_Show( bUpdate )
 			local szText = SafeCenter_MobilePhone_Edit1:GetText();
 			if szText == nil or szText == "" then
 				SafeCenter_MobilePhone_Edit1:SetProperty("MaxTextLength", "20")
-				SafeCenter_MobilePhone_Edit1:SetText("ÇëÊäÈë¶ÌÐÅÑéÖ¤Âë");
+				SafeCenter_MobilePhone_Edit1:SetText("Hãy nh§p tin nh¡n mã ki¬m chÑng.");
 			end		
 		end
 				
 		SafeCenter_MobilePhone_BackgroundDown_Frame:Show();
 	
-	else  --ÒÑÈÏÖ¤ÊÖ»ú
+	else  --?????
 		SafeCenter_AuthenticationPhone_BackgroundDown_Frame:Show();
 		if theAction:GetID() ~= 0 then		
 			SafeCenter_AuthenticationPhone_ItemA_1:SetActionItem(theAction:GetID());
 		end
 				
-		if nMobileApproveStatus == 2 then	--¿ÉÁì½±
+		if nMobileApproveStatus == 2 then	--???
 			SafeCenter_AuthenticationPhone_Frame3_Lace2_Text1:SetText("#{SJRZ_180827_25}");
 			SafeCenter_AuthenticationPhone_ItemA_1_Mask:Hide();
 			PlayerFrame_Authenticationphone_tips:Show();
@@ -136,7 +136,7 @@ end
 -- ÈÏÖ¤°ó¶¨ÊÖ»ú
 function SafeCenter_Bindingphone_OnClicked()
 	local nMobileApproveStatus = DataPool:GetMobileApproveStatus();
-	if nMobileApproveStatus == 0 then				--Î´°ó¶¨ÊÖ»ú
+	if nMobileApproveStatus == 0 then				--?????
 		if GameProduceLogin:IsWeGameClient() > 0 then
 			GameProduceLogin:OpenURL(GetWeblink("WEB_WEGAME_SJRZ"))
 		else
@@ -148,11 +148,11 @@ end
 -- »ñÈ¡¶ÌÐÅÈÏÖ¤Âë
 function SafeCenter_MobilePhone_OnClicked()
 	local nMobileApproveStatus = DataPool:GetMobileApproveStatus();
-	if nMobileApproveStatus == 0 then   --Î´°ó¶¨×´Ì¬
+	if nMobileApproveStatus == 0 then   --?????
 		PushDebugMessage("#{SJRZ_180827_13}")
 		return
 	end
-	if nMobileApproveStatus > 1 then 	--ÒÑÈÏÖ¤
+	if nMobileApproveStatus > 1 then 	--???
 		PushDebugMessage("#{SJRZ_180827_14}")
 		return
 	end
@@ -171,11 +171,11 @@ end
 --ÈÏÖ¤
 function SafeCenter_MobilePhone_Approve_OnClicked()
 	local nMobileApproveStatus = DataPool:GetMobileApproveStatus();
-	if nMobileApproveStatus == 0 then   --Î´°ó¶¨×´Ì¬
+	if nMobileApproveStatus == 0 then   --?????
 		PushDebugMessage("#{SJRZ_180827_13}")
 		return
 	end
-	if nMobileApproveStatus > 1 then 	--ÒÑÈÏÖ¤
+	if nMobileApproveStatus > 1 then 	--???
 		PushDebugMessage("#{SJRZ_180827_14}")
 		return
 	end
@@ -193,15 +193,15 @@ end
 --Áì½±
 function SafeCenter_AuthenticationPhone_GetPrize_Clicked()
 	local nMobileApproveStatus = DataPool:GetMobileApproveStatus();
-	if nMobileApproveStatus == 0 then   --Î´°ó¶¨×´Ì¬
+	if nMobileApproveStatus == 0 then   --?????
 		PushDebugMessage("#{SJRZ_180827_19}")
 		return
 	end
-	if nMobileApproveStatus == 1 then 	--Î´ÈÏÖ¤
+	if nMobileApproveStatus == 1 then 	--???
 		PushDebugMessage("#{SJRZ_180827_20}")
 		return
 	end
-	if nMobileApproveStatus == 3 then 	--ÒÑÁì½±
+	if nMobileApproveStatus == 3 then 	--???
 		PushDebugMessage("#{SJRZ_180827_21}")
 		return
 	end
@@ -232,13 +232,13 @@ end
 
 function SafeCenter_MobilePhone_SecurityCode_Msg( nErrCode )
 
-	if nErrCode == 6 then		--Ò»Ìì50´Î³¬ÏÞÖÆ
+	if nErrCode == 6 then		--??50????
 		PushDebugMessage( "#{SJRZ_180827_29}");
-	elseif nErrCode == 88 then --º£Íâ¶ÌÐÅ·¢ËÍ¹¦ÄÜ±»¹Ø±Õ
+	elseif nErrCode == 88 then --???????????
 		PushDebugMessage( "#{SJRZ_180827_30}")
-	elseif nErrCode == 90 then --ÊÖ»úºÅ´¦ÓÚºÚÃûµ¥
+	elseif nErrCode == 90 then --????????
 		PushDebugMessage( "#{SJRZ_180827_31}")
-	elseif nErrCode == 98 then --·þÎñÆ÷IP²»ÔÚ°×Ãûµ¥ÖÐ»òÕß·¢ËÍ¶ÌÐÅµÄIPÊÜÏÞ
+	elseif nErrCode == 98 then --???IP?????????????IP??
 		PushDebugMessage( "#{SJRZ_180827_32}")
 	else
 		local strMsg =	ScriptGlobal_Format( "#{SJRZ_180827_28}", nErrCode)	

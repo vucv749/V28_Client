@@ -21,15 +21,15 @@ function ChannelSetFenping_OnLoad()
 	FENPING_CUSTOM_BUTTONS[7] = ChannelSetFenping_CorporateInfo;
 	FENPING_CUSTOM_BUTTONS[2] = ChannelSetFenping_TeamInfo;
 	FENPING_CUSTOM_BUTTONS[9] = ChannelSetFenping_SelfInfo;
-	FENPING_CUSTOM_BUTTONS[5] = ChannelSetFenping_SystemInfo;			--系统频道
-	FENPING_CUSTOM_BUTTONS[6] = ChannelSetFenping_SelfInfo;				--自建频道（现在没有功能）
-	FENPING_CUSTOM_BUTTONS[10] = ChannelSetFenping_HelpInfo;				--帮助频道
-	FENPING_CUSTOM_BUTTONS[11] = ChannelSetFenping_Speaker;				--喇叭频道 2010-07-21 for:76725
-	FENPING_CUSTOM_BUTTONS[12] = ChannelSetFenping_City;				--同城聊天
-	FENPING_CUSTOM_BUTTONS[13] = ChannelSetFenping_GuildLeagueInfo;				--同盟聊天
+	FENPING_CUSTOM_BUTTONS[5] = ChannelSetFenping_SystemInfo;			--????
+	FENPING_CUSTOM_BUTTONS[6] = ChannelSetFenping_SelfInfo;				--????(??????)
+	FENPING_CUSTOM_BUTTONS[10] = ChannelSetFenping_HelpInfo;				--????
+	FENPING_CUSTOM_BUTTONS[11] = ChannelSetFenping_Speaker;				--???? 2010-07-21 for:76725
+	FENPING_CUSTOM_BUTTONS[12] = ChannelSetFenping_City;				--????
+	FENPING_CUSTOM_BUTTONS[13] = ChannelSetFenping_GuildLeagueInfo;				--????
 	FENPING_CUSTOM_BUTTONS[14] = nil									--
-	FENPING_CUSTOM_BUTTONS[15] = ChannelSetFenping_Union;				--团队频道
-	FENPING_CUSTOM_BUTTONS[16] = nil									--小队频道
+	FENPING_CUSTOM_BUTTONS[15] = ChannelSetFenping_Union;				--????
+	FENPING_CUSTOM_BUTTONS[16] = nil									--????
 
 
 	--填充城市信息
@@ -108,7 +108,7 @@ function ChannelSetFenping_FenPingAction( isFenpingAlreadyOpen ,strCfg)
 			local num = DataPool : GetCityNumFromOneProvinceId(pIdx);
 			num = tonumber(num);
 			if(cIdx < num and num) then
-				--到这里，确定是有效的ipRegion
+				--到犫里，确定是有效的ipRegion
 				yes = 1;
 			end
 		end

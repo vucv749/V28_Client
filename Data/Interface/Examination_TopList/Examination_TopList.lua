@@ -68,7 +68,7 @@ function Examination_TopList_OnEvent(event)
 			return
 		end
 		
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then			
 			--取消关心
 			Examination_TopList_OnClose()
@@ -106,12 +106,12 @@ function Examination_TopList_OnShown()
 			end
 		end
 		
-		-- 姓名
-		bar:GetSubItem("Examination_TopList_Name"):SetText("#{KJYH_221013_61}")	-- 虚位以待
+		-- 袪名
+		bar:GetSubItem("Examination_TopList_Name"):SetText("#{KJYH_221013_61}")	-- ????
 		-- 答对数量
-		bar:GetSubItem("Examination_TopList_Num"):SetText("#{KJYH_221013_62}")	-- 无		
+		bar:GetSubItem("Examination_TopList_Num"):SetText("#{KJYH_221013_62}")	-- ?		
 		-- 答题时间
-		bar:GetSubItem("Examination_TopList_Time"):SetText("#{KJYH_221013_62}")	-- 无
+		bar:GetSubItem("Examination_TopList_Time"):SetText("#{KJYH_221013_62}")	-- ?
 		
 		-- 从排行榜取数据
 		local nRank, nGuid, name, rightnum, usetime, getstate = DataPool:lua_GetExamRankingListInfo(g_Examination_TopList_nType, i-1);
@@ -133,8 +133,8 @@ function Examination_TopList_OnShown()
 	end	
 	
 	Examination_TopList_My:Hide()
-	local strlist = {"#{KJYH_221013_51}", "#{KJYH_221013_52}", "#{KJYH_221013_53}", 	-- 状元/榜眼/探花
-						"#{KJYH_221013_139}","#{KJYH_221013_139}","#{KJYH_221013_139}",	-- 进士
+	local strlist = {"#{KJYH_221013_51}", "#{KJYH_221013_52}", "#{KJYH_221013_53}", 	-- ??/??/??
+						"#{KJYH_221013_139}","#{KJYH_221013_139}","#{KJYH_221013_139}",	-- ??
 						"#{KJYH_221013_139}","#{KJYH_221013_139}","#{KJYH_221013_139}","#{KJYH_221013_139}"}
 	if g_Examination_TopList_MyInfo > 0 and strlist[g_Examination_TopList_MyInfo] ~= nil then
 		Examination_TopList_My:Show()
@@ -171,7 +171,7 @@ end
 
 --=========================================================
 --开始关心NPC，
---在开始关心之前需要先确定这个界面是不是已经有“关心”的NPC，
+--在开始关心之前需要先确定犫个界面是不是已经有“关心”的NPC，
 --如果有的话，先取消已经有的“关心”
 --=========================================================
 function BeginCareObject_Exam_TopList(objCaredId)

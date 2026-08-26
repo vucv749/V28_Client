@@ -9,7 +9,7 @@ local g_Peak_Guide_Index
 --=========
 function Peak_Guide_PreLoad()
 	this:RegisterEvent("UI_COMMAND",true)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
 	this:RegisterEvent("ADJEST_UI_POS",false)
 end
@@ -66,12 +66,12 @@ function Peak_Guide_Update()
 	end
 end
 
---调整：界面位置
+--调狖：界面位置
 function Peak_Guide_ResetPos()
 	Peak_Guide_Frame:SetProperty("UnifiedPosition", g_Peak_Guide_Frame_UnifiedPosition)
 end
 
---关闭：界面
+--关睜：界面
 function Peak_Guide_OnClose()
 	this:Hide()
 end

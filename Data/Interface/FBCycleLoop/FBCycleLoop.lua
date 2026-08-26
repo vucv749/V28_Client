@@ -77,7 +77,7 @@ function FBCycleLoop_Open()
 
 end
 --=========================================================
---πÿ±’ΩÁ√Ê
+--πÿ±†ΩÁ√Ê
 --=========================================================
 function FBCycleLoop_OnClosed()
 	this:Hide()
@@ -89,9 +89,9 @@ end
 function FBCycleLoop_Goto(nIndex)
 	if nIndex == 1 then
 		--—„√≈¬€Œ‰
-		AutoRuntoTargetExWithName(59, 95, 0, "√œ¥≥")
+		AutoRuntoTargetExWithName(59, 95, 0, "M’nh S§m")
 	else
-		AutoRuntoTargetExWithName(193, 144, 1, "÷÷ ¶µ¿")
+		AutoRuntoTargetExWithName(193, 144, 1, "Xung Sﬂ –’o")
 	end
 end
 

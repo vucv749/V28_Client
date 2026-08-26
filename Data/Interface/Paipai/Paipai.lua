@@ -74,7 +74,7 @@ function Paipai_OnEvent(event)
 		local PaipaiLowLimit = string.split(Get_XParam_STR(1), ",") 
 		local PaipaiUpLimit = string.split(Get_XParam_STR(2), ",") 
 		local PaipaiItem = string.split(Get_XParam_STR(3), ",")
-		local PaipaiTX = string.split(Get_XParam_STR(4), ",") --Ï¡ÓÐ¶È
+		local PaipaiTX = string.split(Get_XParam_STR(4), ",") --???
 
 		for j=1,8 do
 			--Ï¡ÓÐ¶È
@@ -318,7 +318,7 @@ end
 
 function Paipai_ChouJiang()
 	if( DataPool:GetPlayerMission_ItemCountNow(30504640) < 1) then
-		PushDebugMessage("È±ÉÙËùÐèµÄÅÄÅÄ´¸×Ó");
+		PushDebugMessage("Khuyªt thiªu S· Nhu Ðích v² v² cây búa");
 		return;
 	end
 	if IsPaipaiBegin == 0 then
@@ -340,7 +340,7 @@ function Paipai_ChouJiang()
 			Set_XSCRIPT_ParamCount(1);
 		Send_XSCRIPT();
 	else
-		PushDebugMessage("ÇëÏÈÁìÈ¡½±Æ·£¬²ÅÄÜ¼ÌÐø³é½±¡£")
+		PushDebugMessage("Thïnh Tiên lînh ph¥n thß·ng, m¾i có th¬ tiªp tøc Tr×u Tß·ng.")
 	end
 end
 

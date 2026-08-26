@@ -19,8 +19,8 @@ local TBossTime_AcceptBox_UnifiedPosition = nil
 function TBossTime_AcceptBox_PreLoad()
     this:RegisterEvent("UI_COMMAND", true)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 	this:RegisterEvent("OBJECT_CARED_EVENT", false)
 end -- end func TBossTime_AcceptBox_PreLoad()
 
@@ -40,11 +40,11 @@ function TBossTime_AcceptBox_OnEvent(event)
 
 			TBossTime_AcceptBox_Show(tonumber(targetSvrId), tonumber(arg0))
 
-			-- 因为之前的对话提示框可能还开着 所以这里需要关闭一下
+			-- 因为之前的对话提示框可能还开着 所以犫里需要关睜一下
 			PushEvent("UI_COMMAND", 1000)
 		elseif (tonumber(arg0) == TBossTime_AcceptBox_ConfirmUICommand_LT_Close or 
 				tonumber(arg0) == TBossTime_AcceptBox_ConfirmUICommand_GT_Close) then
-			-- 关闭二次确认窗口
+			-- 关睜二次确认窗口
 			if (this:IsVisible()) then
 				TBossTime_AcceptBox_CloseFlag = 101
 				TBossTime_AcceptBox_Hide()
@@ -70,7 +70,7 @@ end -- end func TBossTime_AcceptBox_OnLoad()
 
 function TBossTime_AcceptBox_Frame_OnHiden()
 	if (TBossTime_AcceptBox_CloseFlag <= 0 and this:IsVisible()) then
-		-- 这应该是远离之后的自动关闭 需要发送一个取消的消息
+		-- 犫应该是远离之后的自动关睜 需要发送一个取消的消息
 		TBossTime_AcceptBox_Cancel(12)
 	end
 
@@ -131,7 +131,7 @@ function TBossTime_AcceptBox_OK_Clicked()
 	TBossTime_AcceptBox_Hide()
 end -- end func TBossTime_AcceptBox_OK_Clicked()
 
--- 窗口关闭、取消按钮事件
+-- 窗口关睜、取消按钮事件
 function TBossTime_AcceptBox_Cancel_Clicked(arg)
 	TBossTime_AcceptBox_Cancel(arg)
 

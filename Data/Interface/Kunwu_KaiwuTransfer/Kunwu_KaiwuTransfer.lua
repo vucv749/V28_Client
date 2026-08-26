@@ -122,7 +122,7 @@ function Kunwu_KaiwuTransfer_OnEvent(event)
 	end
 end
 
---选择珍兽
+--选择犱兽
 function Kunwu_KaiwuTransfer_SelectPetLeft(selidx)
 	if selidx == -1 then
 		return
@@ -133,7 +133,7 @@ function Kunwu_KaiwuTransfer_SelectPetLeft(selidx)
 		return
 	end
 	
-	--珍兽已被其它界面选中
+	--犱兽已被其它界面选中
 	if Pet:GetPetLocation(selidx) ~= -1 and Pet:GetPetLocation(selidx) ~= 23 then
 		return
 	end
@@ -172,7 +172,7 @@ function Kunwu_KaiwuTransfer_SelectPetLeft(selidx)
 	Pet:LuaFnShowPetListKWTS(0)
 end
 
---选择珍兽
+--选择犱兽
 function Kunwu_KaiwuTransfer_SelectPetRight(selidx)
 	if selidx == -1 then
 		return
@@ -183,7 +183,7 @@ function Kunwu_KaiwuTransfer_SelectPetRight(selidx)
 		return
 	end
 	
-	--珍兽已被其它界面选中
+	--犱兽已被其它界面选中
 	if Pet:GetPetLocation(selidx) ~= -1 and Pet:GetPetLocation(selidx) ~= 22 then
 		return
 	end
@@ -424,7 +424,7 @@ function Kunwu_KaiwuTransfer_OK_Clicked()
 		Set_XSCRIPT_Parameter(2, lid_L)
 		Set_XSCRIPT_Parameter(3, hid_R)
 		Set_XSCRIPT_Parameter(4, lid_R)
-		Set_XSCRIPT_Parameter(5, 1)			--需要二次确认
+		Set_XSCRIPT_Parameter(5, 1)			--??????
 		Set_XSCRIPT_ParamCount(6)
 	Send_XSCRIPT()
 end

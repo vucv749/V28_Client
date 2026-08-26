@@ -7,13 +7,13 @@ local ZNWH_WaBaoZang_FinishTimes = 0
 
 -- local ZNWH_WaBaoZang_Titles = {}
 local ZNWH_WaBaoZang_Buttons = {}
-local ZNWH_WaBaoZang_Anims = {}     --在可以领取时显示
-local ZNWH_WaBaoZang_Marks = {}     --在已经领取时显示
+local ZNWH_WaBaoZang_Anims = {}     --????????
+local ZNWH_WaBaoZang_Marks = {}     --????????
 
 local ZNWH_WaBaoZang_Reward = {
-	[1] = {itemid = 20800013, num = 6, times = 2 }, --累积2次礼
-	[2] = {itemid = 38002532, num = 10,times = 5 }, --累积5次礼
-	[3] = {itemid = 38002519, num = 2, times = 8 }  --累积8次礼
+	[1] = {itemid = 20800013, num = 6, times = 2 }, --??2??
+	[2] = {itemid = 38002532, num = 10,times = 5 }, --??5??
+	[3] = {itemid = 38002519, num = 2, times = 8 }  --??8??
 }
 
 -- 注册窗口关心的所有事件
@@ -152,7 +152,7 @@ function ZNWH_WaBaoZang_OnRewardClick(idx)
 	Send_XSCRIPT()
 end
 
--- 界面关闭事件
+-- 界面关睜事件
 function ZNWH_WaBaoZangOnHiden()
 	this:CareObject(ZNWH_objCared, 0, "ZNWH_WaBaoZang")
 	ZNWH_objCared = -1

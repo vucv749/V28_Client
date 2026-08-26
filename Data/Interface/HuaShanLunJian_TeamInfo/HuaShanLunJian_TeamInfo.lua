@@ -1,35 +1,35 @@
--- 新6v6 战队信息查看
+-- 新6v6 牻队信息查看
 
 local HuaShanLunJian_TeamInfo_UndefinedPos = nil
 local HuaShanLunJian_TeamInfo_SelectIndex = -1
 local HuaShanLunJian_TeamInfo_SelectDataIndex = -1
 local HuaShanLunJian_TeamInfo_SelectTeamIndex = -1
 local HuaShanLunJian_TeamInfo_MemberCount = 0
-local HuaShanLunJian_TeamInfo_TransName = 0			-- 转换名字
-local HuaShanLunJian_TeamInfo_BaJianDuanWei = 6		-- 霸剑段位id
+local HuaShanLunJian_TeamInfo_TransName = 0			-- ????
+local HuaShanLunJian_TeamInfo_BaJianDuanWei = 6		-- ????id
 
 local HuaShanLunJian_TeamInfo_BarList = {}
 
 local HuaShanLunJian_TeamInfo_MenPaiName =
 {
-	[0] = "#{XQ_MP_1}",    	--少林
-	[1] = "#{XQ_MP_2}",    	--明教
-	[2] = "#{XQ_MP_3}",    	--丐帮
-	[3] = "#{XQ_MP_4}",    	--武当
-	[4] = "#{XQ_MP_5}",    	--峨眉
-	[5] = "#{XQ_MP_6}",    	--星宿
-	[6] = "#{XQ_MP_7}",    	--天龙
-	[7] = "#{XQ_MP_8}",    	--天山
-	[8] = "#{XQ_MP_9}",    	--逍遥
-	[9] = "#{JZGN_20230710_138}",	--无门派
-	[10] = "#{WCBZ_220809_53}",		--曼陀山庄 
+	[0] = "#{XQ_MP_1}",    	--??
+	[1] = "#{XQ_MP_2}",    	--??
+	[2] = "#{XQ_MP_3}",    	--??
+	[3] = "#{XQ_MP_4}",    	--??
+	[4] = "#{XQ_MP_5}",    	--??
+	[5] = "#{XQ_MP_6}",    	--??
+	[6] = "#{XQ_MP_7}",    	--??
+	[7] = "#{XQ_MP_8}",    	--??
+	[8] = "#{XQ_MP_9}",    	--??
+	[9] = "#{JZGN_20230710_138}",	--???
+	[10] = "#{WCBZ_220809_53}",		--???? 
 } -- end HuaShanLunJian_TeamInfo_MenPaiName
 
 local HuaShanLunJian_TeamInfo_TeamPost =
 {
-	[0] = {show = 0, icon = "",},										-- 成员
-	[1] = {show = 1, icon = "set:Union1 image:Union_MemberIcon_L",},	-- 副队长
-	[2] = {show = 1, icon = "set:Union1 image:Union_LeaderIcon_L",},	-- 队长
+	[0] = {show = 0, icon = "",},										-- ??
+	[1] = {show = 1, icon = "set:Union1 image:Union_MemberIcon_L",},	-- ???
+	[2] = {show = 1, icon = "set:Union1 image:Union_LeaderIcon_L",},	-- ??
 } -- end HuaShanLunJian_TeamInfo_TeamPost
 
 local HuaShanLunJian_TeamInfo_DuanWei1Str =
@@ -103,7 +103,7 @@ function HuaShanLunJian_TeamInfo_InitUIData(idx, trans)
 	HuaShanLunJian_TeamInfo_ListClient:Clear()
 end -- end func HuaShanLunJian_TeamInfo_InitUIData()
 
--- 关闭按钮事件
+-- 关睜按钮事件
 function HuaShanLunJian_TeamInfo_CloseClicked()
 	this:Hide()
 end -- end func HuaShanLunJian_TeamInfo_CloseClicked()
@@ -116,7 +116,7 @@ function HuaShanLunJian_TeamInfo_PrivateChat_Clicked()
 
 	local level, menpai, post, duanwei1, duanwei2, dunawei3, name = NewXBW:GetViewTeamMemberInfo(HuaShanLunJian_TeamInfo_SelectTeamIndex, HuaShanLunJian_TeamInfo_SelectDataIndex-1)
 	if post == nil or level <= 0 then
-		return --没有数据
+		return --????
 	end
 
 	
@@ -131,7 +131,7 @@ function HuaShanLunJian_TeamInfo_ViewInfo_Clicked()
 
 	local level, menpai, post, duanwei1, duanwei2, dunawei3, name = NewXBW:GetViewTeamMemberInfo(HuaShanLunJian_TeamInfo_SelectTeamIndex, HuaShanLunJian_TeamInfo_SelectDataIndex-1)
 	if post == nil or level <= 0 then
-		return --没有数据
+		return --????
 	end
 	
 	if Friend:IsPlayerIsFriend(name) == 1  then
@@ -181,7 +181,7 @@ function HuaShanLunJian_TeamInfo_OnShow(idx, trans)
 
 	-- 先初始化一下
 	HuaShanLunJian_TeamInfo_InitUIData(idx, trans)
-	-- 填充战队信息
+	-- 填充牻队信息
 	if 1 == HuaShanLunJian_TeamInfo_InitMemberListData() then
 		this:Show()
 	end
@@ -219,7 +219,7 @@ end -- end func HuaShanLunJian_TeamInfo_InitMemberListData()
 function HuaShanLunJian_TeamInfo_AddMemberItem(teamidx, index, zoneid)
 	local level, menpai, post, duanwei1, duanwei2, dunawei3, name = NewXBW:GetViewTeamMemberInfo(teamidx, index-1)
 	if post == nil or level <= 0 then
-		return -- 没有数据
+		return -- ????
 	end
 	
 	local bar = HuaShanLunJian_TeamInfo_ListClient:AddChild("HuaShanLunJian_TeamInfo_List_Frame")

@@ -38,7 +38,7 @@ end
 function DWJinJieHuiTui_OnLoad()
 	g_DWJinJieHuiTui_Item = -1
 	g_DWJinJieHuiTui_DemandYuanbao = 0
-	-- 始终可以点击 OK 按钮, 为了方便提示玩家信息
+	-- 始譅可以点击 OK 按钮, 为了方便提示玩家信息
 	DWJinJieHuiTui_OK:Enable()
 	g_DWJinJieHuiTui_Frame_UnifiedPosition=DWJinJieHuiTui_Frame:GetProperty("UnifiedPosition");
 end
@@ -70,14 +70,14 @@ function DWJinJieHuiTui_OnEvent(event)
 		if (arg0~= nil and -1 == tonumber(arg0)) then
 			return
 		end
-		-- 可以改成允许接着强化, 那就不要在这里移除物品
-		if tonumber(arg0) == g_DWJinJieHuiTui_Item then --todo 背包进阶道具发生变化
+		-- 可以改成允许接着强化, 那就不要在犫里移除物品
+		if tonumber(arg0) == g_DWJinJieHuiTui_Item then --todo ??????????
 			-- 强化后不将装备返还到包裹, 支持持续强化 - 2009-12-07
 			--DWJinJieHuiTui_Resume_Equip()
 			DWJinJieHuiTui_UpdateBasic()
 		end
 	elseif (event == "UPDATE_DWJinJieHuiTui") then
-		--加载这里很容易导致界面处理不过来, 这个事件特别多
+		--加载犫里很容易导致界面处理不过来, 犫个事件特别多
 		--DWJinJieHuiTui_UpdateBasic()
 		if arg0 ~= nil then
 			DWJinJieHuiTui_Update(arg0)
@@ -108,7 +108,7 @@ end
 
 --=========================================================
 -- 更新基本显示信息
--- 在这里计算金钱并显示
+-- 在犫里计算金钱并显示
 --=========================================================
 function DWJinJieHuiTui_UpdateBasic()
 	DWJinJieHuiTui_SelfYuanBao:SetText(tostring(Player:GetData("YUANBAO")));
@@ -124,7 +124,7 @@ function DWJinJieHuiTui_UpdateBasic()
 	end
 	DWJinJieHuiTui_NeedYuanBao:SetText(g_DWJinJieHuiTui_DemandYuanbao)
 	--计算回退获得的材料
-	DWJinJieHuiTui_Quantity:SetText(getLCS)--回退后获得的金蚕丝数量
+	DWJinJieHuiTui_Quantity:SetText(getLCS)--???????????
 end
 
 --=========================================================
@@ -138,7 +138,7 @@ function DWJinJieHuiTui_Clear()
 	end
 	g_Comfirmed = 0
 	DWJinJieHuiTui_NeedYuanBao:SetText("")
-	DWJinJieHuiTui_Quantity:SetText("")--回退后获得的金蚕丝数量
+	DWJinJieHuiTui_Quantity:SetText("")--???????????
 	DWJinJieHuiTui_UpdateBasic()
 end
 
@@ -176,7 +176,7 @@ function DWJinJieHuiTui_Update(itemIndex)
 			return
 		end
 
-		-- 如果空格内已经有对应物品了, 替换之
+		-- 如果繝格内已经有对应物品了, 替换之
 		if g_DWJinJieHuiTui_Item ~= -1 then
 			LifeAbility:Lock_Packet_Item(g_DWJinJieHuiTui_Item, 0)
 		end
@@ -185,7 +185,7 @@ function DWJinJieHuiTui_Update(itemIndex)
 		LifeAbility:Lock_Packet_Item(index, 1)
 		g_DWJinJieHuiTui_Item = index
 
-		-- 设定 OK 为总是可以点击, 这样方便检验
+		-- 设定 OK 为总是可以点击, 犫样方便检验
 		-- 判断物品是否满足要求来设定功能button
 		-- DWJinJieHuiTui_Check_AllItem()
 	else
@@ -251,7 +251,7 @@ function DWJinJieHuiTui_OK_Clicked(okFlag)
 end
 
 --=========================================================
--- 关闭界面
+-- 关睜界面
 --=========================================================
 function DWJinJieHuiTui_Close()
 	this:Hide()
@@ -269,7 +269,7 @@ end
 
 --=========================================================
 -- 开始关心NPC，
--- 在开始关心之前需要先确定这个界面是不是已经有“关心”的NPC，
+-- 在开始关心之前需要先确定犫个界面是不是已经有“关心”的NPC，
 -- 如果有的话，先取消已经有的“关心”
 --=========================================================
 function BeginCareObject_DWJinJieHuiTui()

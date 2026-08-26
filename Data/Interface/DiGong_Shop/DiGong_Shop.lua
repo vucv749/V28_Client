@@ -79,7 +79,7 @@ local function OpenShop(shopId,daibiNum)
                     end
                 else
                     g_UI_Items.ItemInfo[i].quota:Show()
-                    local countLeft = countLimit-countNow --剩余数量
+                    local countLeft = countLimit-countNow --????
                     if countLeft < 0 or countLeft > 255 then
                         countLeft = 0
                     end
@@ -100,7 +100,7 @@ local function OpenShop(shopId,daibiNum)
                 g_UI_Items.ItemInfo[i].itemName:SetText(itemName)
             end
         else
-            --空btn
+            --繝btn
             g_UI_Items.ItemInfo[i].itemPrice:SetText("")
             g_UI_Items.ItemInfo[i].itemName:SetText("")
             g_UI_Items.ItemInfo[i].quota:Hide()
@@ -158,7 +158,7 @@ function DiGong_Shop_OnEvent(event)
 		if(tonumber(arg0) ~= g_objCared) then
 			return
 		end
-		-- 如果和NPC的距离大于一定距离或者被删除，自动关闭
+		-- 如果和NPC的距离大于一定距离或犨被删除，自动关睜
         if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
             DiGong_Shop_CloseShop()
         end

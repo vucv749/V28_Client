@@ -2,7 +2,7 @@
 local m_Frame_UnifiedXPosition
 local m_Frame_UnifiedYPosition
 
---预加载函数，可以而且只能在这里注册脚本关心的事件
+--预加载函数，可以而且只能在犫里注册脚本关心的事件
 function MonthPVP_RestMini_PreLoad()
 	this:RegisterEvent("PVPCAR_UIOP", true)
 	-- 游戏窗口尺寸发生了变化

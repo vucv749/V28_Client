@@ -8,7 +8,7 @@ local k
 local LEVEL_TO_MY_LEVEL = 10000;
 
 local MissionOutlineDeploy = {}
-local CurList      -- 1ÎªÈÎÎñÁĞ±í,2ÎªÈÎÎñË÷Òı
+local CurList      -- 1?????,2?????
 
 local Current_Clicked = -1;
 --TT53675¶ÔËùÓĞ²»·ûºÏ¹æ·¶£¬Ã»ÓĞ½«missionparamµÚ0Î»×öÎªÈÎÎñÍê³É±êÖ¾µÄÈÎÎñ½Å±¾×öÌØÊâ´¦Àí,ĞèÒªÌØÊâ´¦ÀíµÄÈÎÎñ½Å±¾ºÅÁĞ±í£º
@@ -47,7 +47,7 @@ function QuestLog_OnLoad()
 	end;
 
 	for i=1,200 do
-	    MissionOutlineDeploy[ i ] = 1  --ÈÎÎñË÷ÒıÄ¬ÈÏ¶¼ÎªÕ¹¿ª
+	    MissionOutlineDeploy[ i ] = 1  --??????????
 	end
 
 	First_Open = 1;
@@ -102,7 +102,7 @@ function QuestLog_OnEvent(event)
 			end
 
 			if( 2 == CurList ) then
-			    return    --Õâ¸öÏûÏ¢ÊÇÓÃÀ´¸üĞÂÈÎÎñ¼ÆÊ±µÄ,µ±µ±Ç°Ñ¡ÖĞÏîÎªÈÎÎñË÷ÒıÊ±,Ôò²»Ó¦¸Ã½øĞĞ¸üĞÂ.
+			    return    --??????????????,????????????,????????.
 			end
 
 		if arg0 ~= nil and tonumber(arg0) <= 20 and tonumber(arg0) >= 0 then
@@ -128,7 +128,7 @@ function QuestLog_OnEvent(event)
 		if not this:IsVisible() then
 			First_Open = 0;
 
-			--È«²¿Õ¹¿ª
+			--È«²¿ ¹¿ª
 			for i=1,200 do
 				MissionPucker[i] = 1;
 			end;
@@ -206,15 +206,15 @@ function QuestLog_UpdateMissionType( iMissionType )
 					local MissionLevel, MinLevel, MaxLevel, strNpcName, strNpcPos, strScene, strMissionName = GetMissionOutlineInfo( iMissionType, i )
 
 					if( MissionLevel - nMyLevel < -11 ) then
-						color = "FFB9B9B9"; --»ÒÉ«
+						color = "FFB9B9B9"; --??
 					elseif( MissionLevel - nMyLevel <=-6 ) then
-						color = "FF0A9605";	--ÂÌÉ«
+						color = "FF0A9605";	--??
 					elseif( MissionLevel - nMyLevel <= 5 ) then
-						color = "FFD9F80A";	--»ÆÉ«
+						color = "FFD9F80A";	--??
 					elseif( MissionLevel - nMyLevel <= 10 ) then
-						color = "FFF8A10A";	--³ÈÉ«
+						color = "FFF8A10A";	--??
 					else
-						color = "FFFA0A0A"; --ºìÉ«
+						color = "FFFA0A0A"; --??
 					end
 
 					QuestLog_Listbox:AddItem( "    "..MissionLevel.." "..strMissionName, (iStart+i), color )
@@ -242,7 +242,7 @@ function QuestLog_UpdateMissionOutline()
     QuestLog_Listbox:ClearListBox()
     QuestLog_Desc:ClearAllElement();
 
-	for i=1,200 do             --ÏÖÈÎÎñÀàĞÍÒ»¹²200ÖÖ
+	for i=1,200 do             --???????200?
 	    QuestLog_UpdateMissionType( i )
 	end
 
@@ -280,10 +280,10 @@ function QuestLog_MissionOutlineClicked()
     --strNpcPos = "£¨"..PosX.."£¬"..PosY.."£©"
 
     if strScene and strScene ~= "" then
-			QuestLog_Desc:AddTextElement("ÈÎÎñËùÔÚµØ£º"..strScene.."  "..strNpcPos )
+			QuestLog_Desc:AddTextElement("Nhi®m vø ch², n½i Ğ¸a:"..strScene.."  "..strNpcPos )
     end
-    QuestLog_Desc:AddTextElement("ÈÎÎñ·¢²¼ÈË£º"..strNpcName )
-    QuestLog_Desc:AddTextElement("ÈÎÎñµÈ¼¶£º"..tostring(MissionLevel) )
+    QuestLog_Desc:AddTextElement("Nhi®m vø tuyên b¯ Nhân:"..strNpcName )
+    QuestLog_Desc:AddTextElement("Nhi®m vø c¤p b§c:"..tostring(MissionLevel) )
 
 
 end
@@ -367,7 +367,7 @@ function QuestLog_UpdateListbox()
 			                     break
 		                    end
 	                  end
-	                  if nScriptId >= 1020000 and nScriptId <= 1029999 then --ËùÓĞµÄÌ½Ë÷Åä±íÈÎÎñ¶¼ĞèÒªÌØÊâ´¦Àí
+	                  if nScriptId >= 1020000 and nScriptId <= 1029999 then --????????????????
 	   	                  IsSpecial = 1
 	                  end
 	                   if IsSpecial == 1 then
@@ -375,24 +375,24 @@ function QuestLog_UpdateListbox()
 		               end
 						if(Mission_Variable >0) then
 							if(Mission_Variable == 1) then
-								strOKFail = "Íê³É";
+								strOKFail = "Hoàn thành";
 							elseif(Mission_Variable == 2) then
-								strOKFail = "Ê§°Ü";
+								strOKFail = "Thành công";
 							end
 						end
 
 
 ----------------------------------------------------
 						if(nMissionLevel - nMyLevel < -11) then
-							color = "FFB9B9B9"; --»ÒÉ«
+							color = "FFB9B9B9"; --??
 						elseif(nMissionLevel - nMyLevel <=-6) then
-							color = "FF0A9605";	--ÂÌÉ«
+							color = "FF0A9605";	--??
 						elseif(nMissionLevel - nMyLevel <= 5) then
-							color = "FFD9F80A";	--»ÆÉ«
+							color = "FFD9F80A";	--??
 						elseif(nMissionLevel - nMyLevel <= 10) then
-							color = "FFF8A10A";	--³ÈÉ«
+							color = "FFF8A10A";	--??
 						else
-							color = "FFFA0A0A"; --ºìÉ«
+							color = "FFFA0A0A"; --??
 						end
 
 						if(First_Open == 1) then
@@ -406,7 +406,7 @@ function QuestLog_UpdateListbox()
 						local nMissionTrackType = DataPool:GetPlayerMissionTrackType(i-1);
 						local nIsMissionTrackOpen = DataPool:IsMissionTrackOpen(i-1);
 						if (nIsMissionTrackOpen > 0 and nMissionTrackType > 0) then
-							Constitutes = {"   ¡Ì" .. nMissionLevel .." " .. strInfo .. " " .. strOKFail,i-1,color,nMissionLevel}
+							Constitutes = {"   v" .. nMissionLevel .." " .. strInfo .. " " .. strOKFail,i-1,color,nMissionLevel}
 						else
 							Constitutes = {"     " .. nMissionLevel .." " .. strInfo .. " " .. strOKFail,i-1,color,nMissionLevel}
 						end
@@ -459,7 +459,7 @@ function QuestLog_UpdateListbox()
 	end
 
 	if(k<1) then
-		QuestLog_Listbox:AddItem("Ã»ÓĞÈÎºÎÈÎÎñ¡£",0);
+		QuestLog_Listbox:AddItem("Không có gì nhi®m vø.",0);
 	end
 	QuestLog_Listbox : SetItemSelectByItemID(Current_Select);
 	QuestLog_Amount : SetText( k .. "/" .. nMissionNum);
@@ -476,7 +476,7 @@ function QuestLog_UpdateListbox()
 end
 
 function MissionType_Insert(str)
---ÅÅĞòËã·¨ÔÚÉÏÃæÒÑ¾­ÊµÏÖÁË£¬ÀíÂÛÉÏ½²Õâ¸ö²»»á±»µ÷ÓÃµ½¡£chris
+--ÅÅĞòËã·¨ÔÚÉÏÃæÒÑ¾­ÊµÏÖÁË£¬ÀíÂÛÉÏ½² â¸ö²»»á±»µ÷ÓÃµ½¡£chris
 --		for i=1,table.getn(MissionType) do
 		for i,Per_Segment in ipairs(MissionType) do
 			if(MissionType[i] == str) then
@@ -568,7 +568,7 @@ end
 		strReplace = strReplace .. strDesc
 		strDesc = strReplace
 		QuestLog_TargetMission : SetText("#gFF0FA0" ..strInfo);
-		QuestLog_Desc:AddTextElement("#YÈÎÎñÄ¿±ê£º#W")
+		QuestLog_Desc:AddTextElement("#YnHi®m vø møc tiêu: #W")
 		QuestLog_Desc:AddTextElement("" .. strDesc);
 		-- PushDebugMessage("strDesc:"..strDesc)
 --		QuestLog_Desc:AddTextElement("" .. strReplace);
@@ -689,7 +689,7 @@ end
 		QuestLog_Desc:AddTextElement("" .. QuestLog_GetXunBaoLeFanTianTarget(nSelIndex));
 	end
 
-	-- [2017-ÔªÏü½Ú²ÂµÆÃÕ»î¶¯]
+	-- [2017-ÔªÏü½Ú²ÂµÆÃ »î¶¯]
 	if(DataPool:GetPlayerMission_Display(nSelIndex,7) == 892384) then
         QuestLog_Desc:AddTextElement("" .. QuestLog_GetTarget_2017YXJCDM(nSelIndex));
     end
@@ -778,7 +778,7 @@ end
         QuestLog_Desc:AddTextElement("" .. QuestLog_GetTarget_2024DWDK(nSelIndex));
     end	
 
-  --2022Q2ÏÄÈÕ´ò¿¨
+  --2022Q2ÏÄÈ ´ò¿¨
 	local iMissionScript = DataPool:GetPlayerMission_Display(nSelIndex,7)
 	if iMissionScript == 893176 then
 		QuestLog_Desc:AddTextElement("" .. QuestLog_GetTarget_2022Q2XYPCA(nSelIndex));
@@ -820,7 +820,7 @@ end
 			local IsDouble = DataPool:GetPlayerMission_DataRound(nDoubleExp);
 
 			if IsDouble > 0 then
-				DoubleExp_Text = "#B¶à±¶½±Àø"
+				DoubleExp_Text = "#BĞA Bµi thß·ng cho"
 				QuestLog_Desc:AddTextElement(DoubleExp_Text);
 			end
 		end
@@ -836,7 +836,7 @@ end
 			     break
 		    end
 	   end
-	   if nScriptId1>=1020000 and nScriptId1<=1029999  then --ËùÓĞµÄÌ½Ë÷Åä±íÈÎÎñ¶¼ĞèÒªÌØÊâ´¦Àí
+	   if nScriptId1>=1020000 and nScriptId1<=1029999  then --????????????????
 	   	    IsSpecial = 1
 	   end
 	   if IsSpecial==0 then
@@ -860,34 +860,34 @@ end
 					nHour = math.floor(nTotalTime/60000/60)
 					nMinute = math.floor((math.mod(nTotalTime,60000*60))/60000)
 					nSecond = math.floor((math.mod(nTotalTime,60000))/1000)
-					strTotalTime = nHour .. "Ğ¡Ê±"..nMinute.."·Ö"..nSecond.."Ãë"
+					strTotalTime = nHour .. "Gi¶"..nMinute.."Phút"..nSecond.."Sao"
 				elseif(nTotalTime >= 60000) then
 					nMinute = nTotalTime/60000;
-					strTotalTime = nMinute .. "·Ö"
+					strTotalTime = nMinute .. "Phút"
 					nSecond = (nTotalTime - nMinute * 60000)/1000;
-					strTotalTime = strTotalTime .. nSecond .."Ãë"
+					strTotalTime = strTotalTime .. nSecond .."Sao"
 				elseif(nTotalTime >= 1000) then
-					strTotalTime = nTotalTime/1000 .."Ãë"
+					strTotalTime = nTotalTime/1000 .."Sao"
 				end
 
         if(nRemainTime >= 60000*60) then
 					nHour = math.floor(nRemainTime/60000/60)
 					nMinute = math.floor((math.mod(nRemainTime,60000*60))/60000)
 					nSecond = math.floor((math.mod(nRemainTime,60000))/1000)
-					strRemainTime = nHour .. "Ğ¡Ê±"..nMinute.."·Ö"..nSecond.."Ãë"
+					strRemainTime = nHour .. "Gi¶"..nMinute.."Phút"..nSecond.."Sao"
 				elseif(nRemainTime >= 60000) then
 					nMinute = math.floor(nRemainTime/60000);
-					strRemainTime = nMinute .. "·Ö"
+					strRemainTime = nMinute .. "Phút"
 					nSecond = math.floor((nRemainTime - nMinute * 60000)/1000);
-					strRemainTime = strRemainTime .. nSecond .."Ãë"
+					strRemainTime = strRemainTime .. nSecond .."Sao"
 				elseif(nRemainTime >= 1000) then
-					strRemainTime = math.floor(nRemainTime/1000) .."Ãë"
+					strRemainTime = math.floor(nRemainTime/1000) .."Sao"
 				else
-					strRemainTime = "0Ãë"
+					strRemainTime = "0Sao"
 				end
 
 --				QuestLog_Desc:AddTextElement("Ê£ÓàÊ±¼ä£º " .. strRemainTime .."/".. strTotalTime);
-				QuestLog_Desc:AddTextElement("Ê£ÓàÊ±¼ä£º " .. strRemainTime );
+				QuestLog_Desc:AddTextElement("Còn th×a th¶i gian:" .. strRemainTime );
 --				AxTrace(0,0, "Ê±¼ä [" .. nSelIndex .."] = " .. strRemainTime .. " param_index = "..MissionParam_Index);
 			end
 		end
@@ -900,7 +900,7 @@ end
 			Mission_Variable = DataPool:GetPlayerMission_DataRound(nRound);
 
 			if(Mission_Variable >= 0) then
-				QuestLog_Desc:AddTextElement("#r#YÈÎÎñµ±Ç°»·Êı£º#W"..Mission_Variable);
+				QuestLog_Desc:AddTextElement("#r#YnHi®m vø trß¾c m£t Hoàn S±: #W"..Mission_Variable);
 				bShowByMD = 1;
 			end
 		end
@@ -911,7 +911,7 @@ end
 			if (Mission_Variable == 229024) then
 				Mission_Variable = DataPool:GetPlayerMission_Variable(nSelIndex, 5);
 				if(Mission_Variable >= 0) then
-					QuestLog_Desc:AddTextElement("#r#YÈÎÎñµ±Ç°»·Êı£º#W"..Mission_Variable);
+					QuestLog_Desc:AddTextElement("#r#YnHi®m vø trß¾c m£t Hoàn S±: #W"..Mission_Variable);
 				end
 			end
 		end
@@ -927,12 +927,12 @@ end
 				silverdesc = DataPool:GetPlayerMission_BillName(nSelIndex);
 				QuestLog_Desc:AddTextElement(silverdesc .. ":");
 				QuestLog_Desc:AddMoneyElement(Mission_Variable);
-				AxTrace(0,0, "ÒøÆ± [" .. nSelIndex .."] =" ..MissionParam_Index );
+				AxTrace(0,0, "Ngân Phiªu [" .. nSelIndex .."] =" ..MissionParam_Index );
 			end
 		end
 		QuestLog_Desc:AddTextElement(" ");
 		if( DataPool:GetPlayerMission_Display(nSelIndex,5) <= 0 ) then
-			QuestLog_Desc:AddTextElement("#YÍê³ÉÇé¿ö£º#W")
+			QuestLog_Desc:AddTextElement("#YhOàn thành tình hu¯ng: #W")
 		end
 
 	--´ó»°Î÷ÓÎµÚÒ»½×¶ÎÖ÷Ïß¾çÇé-ypl
@@ -1020,7 +1020,7 @@ end
         QuestLog_Desc:AddTextElement("" .. QuestLog_GetHLXQJComplete(nSelIndex));
     end
 
-	-- [2017-ÔªÏü½Ú²ÂµÆÃÕ»î¶¯]
+	-- [2017-ÔªÏü½Ú²ÂµÆÃ »î¶¯]
 	if(DataPool:GetPlayerMission_Display(nSelIndex,7) == 892384) then
         QuestLog_Desc:AddTextElement("\n" .. QuestLog_Complete_2017YXJCDM(nSelIndex));
 	end
@@ -1079,7 +1079,7 @@ end
 	if(DataPool:GetPlayerMission_Display(nSelIndex,7) == 503000) then
 		QuestLog_Desc:AddTextElement("" .. QuestLog_Complete_petsoul_per1(nSelIndex));
 	end
-	--2022Q2ÏÄÈÕ´ò¿¨
+	--2022Q2ÏÄÈ ´ò¿¨
 	if(DataPool:GetPlayerMission_Display(nSelIndex,7) == 893176) then
 		QuestLog_Desc:AddTextElement("" .. QuestLog_Complete_2022Q2XYPCA(nSelIndex));
 	end
@@ -1143,7 +1143,7 @@ end
 	elseif nScriptId_TeXie == 998777 then
 		QuestLog_Desc:AddTextElement("" .. QuestLog_Complete_2024Q2PM_Mission4(nSelIndex))
 	end
-	--2024Q2 ÏÄÈÕ±ùä¿ÁÜ
+	--2024Q2 ÏÄÈ ±ùä¿ÁÜ
 	if(DataPool:GetPlayerMission_Display(nSelIndex,7) == 998812) then
         QuestLog_Desc:AddTextElement("" .. QuestLog_Complete_XRBQL(nSelIndex));
     end	
@@ -1153,7 +1153,7 @@ end
 		local nDemandKillNum,Kill_Random_Type = DataPool:GetPlayerMissionDemandKill_Num(nSelIndex);
 		if( nDemandKillNum > 0 ) then
 --			QuestLog_Desc:AddTextElement(" ");
-			QuestLog_Desc:AddTextElement("ÒÑÉ±ËÀ£º");
+			QuestLog_Desc:AddTextElement("Dî giªt chªt:");
 		end
 
 		for i=1, nDemandKillNum do
@@ -1164,7 +1164,7 @@ end
 			AxTrace(0, 0, "nNPCName:" .. nNPCName);
 			AxTrace(0, 0, "num:" .. nNum);
 
-			QuestLog_Desc:AddTextElement(nNPCName .. " £º "..Mission_Variable.. " / " .. nNum);
+			QuestLog_Desc:AddTextElement(nNPCName .. ":"..Mission_Variable.. " / " .. nNum);
 			AxTrace(0,0, "NPC [" .. nSelIndex .."] =" ..MissionParam_Index );
 		end
 
@@ -1173,10 +1173,10 @@ end
 		if( nDemandNum > 0 ) then
 --			QuestLog_Desc:AddTextElement(" ");
 			if(Item_Random_Type == -100) then
-				QuestLog_Desc:AddTextElement("ÒÑÌá½»£º");
+				QuestLog_Desc:AddTextElement("Dî ğ® trình:");
 				Item_Random_Type = 0
 			else
-				QuestLog_Desc:AddTextElement("ÒÑµÃµ½£º");
+				QuestLog_Desc:AddTextElement("Dî nh§n ğßşc:");
 			end
 		end
 
@@ -1186,7 +1186,7 @@ end
 --			Mission_Variable = DataPool:GetPlayerMission_Variable(nSelIndex,MissionParam_Index);
 --			MissionParam_Index = MissionParam_Index + 1
 			Mission_Variable = DataPool : GetPlayerMission_ItemCountNow(nItemID)
-			--71435 ¡°Ñ°ÕÒÍòÁéÊ¯¡±ÈÎÎñÂß¼­µÄĞŞ¸Ä
+			--71435 ¡°Ñ° ÒÍòÁéÊ¯¡±ÈÎÎñÂß¼­µÄĞŞ¸Ä
             if nItemID == 20309012 then
 				Mission_Variable = Mission_Variable + DataPool : GetPlayerMission_ItemCountNow(20309020)
 			end
@@ -1204,7 +1204,7 @@ end
 			if Mission_Variable2 > 0 then
 				Mission_Variable = nNum
 			end
-			QuestLog_Desc:AddTextElement(szName .. " £º " .. Mission_Variable .. " / " .. nNum);
+			QuestLog_Desc:AddTextElement(szName .. ":" .. Mission_Variable .. " / " .. nNum);
 		end
 
 -----------------------------------------------------------------------------------
@@ -1225,7 +1225,7 @@ end
 			if nNum == 0 then
 				QuestLog_Desc:AddTextElement(strCustom);
 			else
-				QuestLog_Desc:AddTextElement(strCustom .. " £º ".. Mission_Variable .. " / " .. nNum);
+				QuestLog_Desc:AddTextElement(strCustom .. ":".. Mission_Variable .. " / " .. nNum);
 			end
 		end
 
@@ -1242,7 +1242,7 @@ end
 		if nNeedNum == 0 then
 			QuestLog_Desc:AddTextElement(strCustom);
 		else
-			QuestLog_Desc:AddTextElement(strCustom .. " £º ".. nCompleteNum .. " / " .. nNeedNum);
+			QuestLog_Desc:AddTextElement(strCustom .. ":".. nCompleteNum .. " / " .. nNeedNum);
 		end
 	end
 ----------------------------------------------------------------------------------
@@ -1251,7 +1251,7 @@ end
 		local nBonusNum = DataPool:GetPlayerMissionBonus_Num();
 
 		if( nBonusNum > 0 ) then
-			QuestLog_Desc:AddTextElement("#Y½±Àø£º#W");
+			QuestLog_Desc:AddTextElement("#YtHß·ng cho: #W");
 		end
 		local nRadio = 1;
 		local nRand = 1;
@@ -1261,7 +1261,7 @@ end
 			local strType, nItemID, nNum = DataPool:GetPlayerMissionBonus_Item(i-1);
 			if(strType == "money" and nNum > 0 )then
 --				QuestLog_Desc:AddTextElement("½±Àø½ğÇ®£º");
-				--ÕâÀïÓĞ¶Ô¾çÇéÑ­»·ÈÎÎñµÄÌØÊâ´¦Àí
+				-- âÀïÓĞ¶Ô¾çÇéÑ­»·ÈÎÎñµÄÌØÊâ´¦Àí
 				local nScriptId = DataPool:GetPlayerMission_Display(nSelIndex,7)
 				if (nScriptId >= 890000 and nScriptId <= 890005) then
 					QuestLog_Desc:AddJiaoZiElement(nNum)
@@ -1313,7 +1313,7 @@ end
 			elseif(strType == "itemrand") then
 				if (nRand == 1) then
 					nRand = 0;
-					QuestLog_Desc:AddTextElement("Ëæ»ú½±ÀøÎïÆ·£º");
+					QuestLog_Desc:AddTextElement("TuÏ C½ thß·ng cho v§t ph¦m:");
 					local ActionID = DataPool:EnumPlayerMission_ItemAction(nItemID);
 					QuestLog_Desc:AddActionElement(ActionID, nNum, 0);
 				end
@@ -1324,7 +1324,7 @@ end
 				bBeingRadio = 1;
 				if (nRadio == 1) then
 					nRadio = 0;
-					QuestLog_Desc:AddTextElement("ÔÚÏÂÁĞÎïÆ·ÖĞÑ¡ÔñÒ»Ïî×÷Îª½±Àø");
+					QuestLog_Desc:AddTextElement("TÕi hÕ Li®t v§t ph¦m trúng tuy¬n TrÕch hÕng nh¤t làm thß·ng cho");
 				end
 				AxTrace(0, 0, "nItemID:" .. nItemID);
 				local ActionID = DataPool:EnumPlayerMission_ItemAction(nItemID);
@@ -1335,7 +1335,7 @@ end
 		end
 
 		--------------------------------------------------------------------------------
-		--2009Ê¥µ®ÈÕ³£»î¶¯µÄÌØÊâ´¦Àí
+		--2009Ê¥µ®È ³£»î¶¯µÄÌØÊâ´¦Àí
 		--Add by Jiang Yin
 		--------------------------------------------------------------------------------
 		local nScriptId = DataPool:GetPlayerMission_Display(nSelIndex, 7)
@@ -1349,7 +1349,7 @@ end
 			QuestLog_Desc:AddTextElement(strTemp)
 		end
 		--------------------------------------------------------------------------------
-		--2009Ê¥µ®ÈÕ³£»î¶¯µÄÌØÊâ´¦ÀíÍê±Ï
+		--2009Ê¥µ®È ³£»î¶¯µÄÌØÊâ´¦ÀíÍê±Ï
 		--------------------------------------------------------------------------------
 
 		QuestLog_TrackButtonState();
@@ -1373,7 +1373,7 @@ function CompareTable(table_a,table_b)
 end
 
 function QuestLog_MissionTrack_Clicked()
-	local nCheck = QuestLog_Mode1:GetCheck();  --Îªµã»÷ºóµÄ×´Ì¬
+	local nCheck = QuestLog_Mode1:GetCheck();  --???????
 	if (nCheck > 0) then
 		OpenWindow("MissionTrack");
 		DataPool:SetTrackFuncShow(1, 1);
@@ -1384,7 +1384,7 @@ function QuestLog_MissionTrack_Clicked()
 end
 
 function QuestLog_CampaignTrack_Clicked()
-	local nCheck = QuestLog_Mode2:GetCheck();  --Îªµã»÷ºóµÄ×´Ì¬
+	local nCheck = QuestLog_Mode2:GetCheck();  --???????
 	if (nCheck > 0) then
 		OpenWindow("CampaignTrack");
 		DataPool:SetTrackFuncShow(2, 1);
@@ -1423,27 +1423,27 @@ function QuestLog_TrackButtonState()
 	
 	-- ÄÚ¹Ò×Ô¶¯»¯ÈÎÎñ
 	if nCanAuto and nCanAuto > 0 then
-		QuestLog_Refuse:SetText("×Ô¶¯Ö´ĞĞ")
+		QuestLog_Refuse:SetText("Tñ ğµng ch¤p hành")
 		QuestLog_Refuse:Enable()
 
 	--¹ØÏµÈÎÎñ²»¿É×·×Ù
 	elseif (nCanTrack > 0 and MissionKind ~= 10) then
 		local nTrackOpen = DataPool:IsMissionTrackOpen(nSelIndex);
 		if (nTrackOpen > 0) then
-			QuestLog_Refuse:SetText("È¡Ïû×·×Ù");
+			QuestLog_Refuse:SetText("Hüy bö truy tung");
 		else
-			QuestLog_Refuse:SetText("¿ªÊ¼×·×Ù");
+			QuestLog_Refuse:SetText("B¡t ğ¥u truy tung");
 		end
 		QuestLog_Refuse:Enable();
 	else
-		QuestLog_Refuse:SetText("²»¿É×·×Ù");
+		QuestLog_Refuse:SetText("Không th¬ truy tung");
 		QuestLog_Refuse:Disable();
 	end
 end
 
 function QuestLog_TrackCancelOrOpen()
 	if( 1 ~= CurList ) then
-			--¿É½ÓÈÎÎñ¹Ø±Õ
+			--¿É½ÓÈÎÎñ¹Ø± 
 			this:Hide();
     	return
 	end
@@ -1539,18 +1539,18 @@ end
 
 
 function QuestLog_Complete_petsoul_per1(nMissionIndex)
-		local str = "    »÷°Ü"
+		local str = "Ğánh bÕi"
 		local monstername = 
 		{
-			[49816] = "²ĞÊŞÓÄ»ê",
-			[49817] = "²ĞÊŞĞ°ÆÇ",
-			[49818] = "²ĞÊŞ¶ñÊ¶",
+			[49816] = "Tàn Thú u h°n",
+			[49817] = "Tàn Thú Tà Phách",
+			[49818] = "Tàn Thú ºa ThÑc",
 		}
 		
 		local index = DataPool:GetPlayerMission_Variable( nMissionIndex, 1 ) 
 		local monsterindex = DataPool:GetPlayerMission_Variable( nMissionIndex, 2 ) 
 		local index2 = DataPool:GetPlayerMission_Variable( nMissionIndex, 3 ) 
-		str = str..monstername[monsterindex].."£º"..index.."/"..index2
+		str = str..monstername[monsterindex]..":"..index.."/"..index2
 
 		
 		return str
@@ -1560,11 +1560,11 @@ function QuestLog_Complete_petsoul_per1(nMissionIndex)
 end
 
 function QuestLog_Complete_petsoul_per2(nMissionIndex)
-	local str = "    »ñµÃÖØ´óÏûÏ¢:"
+	local str = "Nh§n ğßşc tr÷ng ğÕi tin tÑc:"
 
 	
 	local index = DataPool:GetPlayerMission_Variable( nMissionIndex, 0 ) 
-	str = str.."£º"..index.."/"..1
+	str = str..":"..index.."/"..1
 
 	
 	return str
@@ -1579,23 +1579,23 @@ function QuestLog_GetXunBaoLeFanTianTarget( nMissionIndex )
 
     local pos =
 	{
-		-- ËÕÖİ	ÂëÍ·£¨238£¬81£©¡¢ÎÄÃí£¨90£¬81£©¡¢Å·Ò±×Ó£¨266£¬138£©
+		-- Ë Öİ	ÂëÍ·£¨238£¬81£©¡¢ÎÄÃí£¨90£¬81£©¡¢Å·Ò±×Ó£¨266£¬138£©
 		[1] = {
-			[1] = {SceneID = 1, PosX = 238, PosZ = 81,	SceneName = "ËÕÖİ",	SubName = "ÂëÍ·"},
-			[2] = {SceneID = 1, PosX = 90,	PosZ = 81,	SceneName = "ËÕÖİ",	SubName = "ÎÄÃí"},
-			[3] = {SceneID = 1, PosX = 266, PosZ = 138,	SceneName = "ËÕÖİ",	SubName = "Å·Ò±×Ó"},
+			[1] = {SceneID = 1, PosX = 238, PosZ = 81,	SceneName = "Tô Châu",	SubName = "Bªn tàu"},
+			[2] = {SceneID = 1, PosX = 90,	PosZ = 81,	SceneName = "Tô Châu",	SubName = "Vån miªu"},
+			[3] = {SceneID = 1, PosX = 266, PosZ = 138,	SceneName = "Tô Châu",	SubName = "Âu Dã TØ"},
 		},	
 		-- ÂåÑô	ÎäÆ÷µê£¨209£¬154£©¡¢ÔÂÀÏ£¨48£¬62£©¡¢ïÚ¾Ö£¨84£¬118£©	
 		[2] = {	
-			[1] = {SceneID = 0, PosX = 209, PosZ = 154,	SceneName = "ÂåÑô",	SubName = "ÎäÆ÷µê"},
-			[2] = {SceneID = 0, PosX = 48,	PosZ = 62,	SceneName = "ÂåÑô",	SubName = "ÔÂÀÏ"},
-			[3] = {SceneID = 0, PosX = 84, 	PosZ = 118,	SceneName = "ÂåÑô",	SubName = "ïÚ¾Ö"},
+			[1] = {SceneID = 0, PosX = 209, PosZ = 154,	SceneName = "LÕc Dß½ng",	SubName = "Vû khí ğiªm"},
+			[2] = {SceneID = 0, PosX = 48,	PosZ = 62,	SceneName = "LÕc Dß½ng",	SubName = "Nguy®t Lão"},
+			[3] = {SceneID = 0, PosX = 84, 	PosZ = 118,	SceneName = "LÕc Dß½ng",	SubName = "Tiêu cøc"},
 		},	
 		-- ´óÀí	Íû²ÔÌ¨£¨240,56£©¡¢Îå»ªÌ³£¨160,169£©¡¢ÔÆÆ®Æ®£¨264,128£©	
 		[3] = {	
-			[1] = {SceneID = 2, PosX = 240, PosZ = 56,	SceneName = "´óÀí",	SubName = "Íû²ÔÌ¨"},
-			[2] = {SceneID = 2, PosX = 160, PosZ = 169,	SceneName = "´óÀí",	SubName = "Îå»ªÌ³"},
-			[3] = {SceneID = 2, PosX = 264, PosZ = 128,	SceneName = "´óÀí",	SubName = "ÔÆÆ®Æ®"},
+			[1] = {SceneID = 2, PosX = 240, PosZ = 56,	SceneName = "ĞÕi Lı",	SubName = "V÷ng Thß½ng Ğài"},
+			[2] = {SceneID = 2, PosX = 160, PosZ = 169,	SceneName = "ĞÕi Lı",	SubName = "Ngû Hoa Ğàn"},
+			[3] = {SceneID = 2, PosX = 264, PosZ = 128,	SceneName = "ĞÕi Lı",	SubName = "Vân Phiêu Phiêu"},
 		},
 	}
 
@@ -1630,21 +1630,21 @@ function QuestLog_GetXunBaoLeFanTianTarget( nMissionIndex )
     return strComplete
 end
 
--- [2017-ÔªÏü½Ú²ÂµÆÃÕ»î¶¯]
+-- [2017-ÔªÏü½Ú²ÂµÆÃ »î¶¯]
 function QuestLog_GetTarget_2017YXJCDM( nSelIndex )
 	local Lanterns_Info =
 	{
-		{LanterID = 1, 	LanternDataID = "ÂåÉñÄµµ¤µÆÁı", PosX = 175, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },
-		{LanterID = 2, 	LanternDataID = "·ç»¨Ñ©ÔÂµÆÁı", PosX = 171, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },
-		{LanterID = 3, 	LanternDataID = "ÇúÔº·çºÉµÆÁı", PosX = 171, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
-		{LanterID = 4, 	LanternDataID = "ÔÆÆÜÖñ¾¶µÆÁı", PosX = 175, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
-		{LanterID = 5, 	LanternDataID = "Ã·Îë´ºÔçµÆÁı", PosX = 179, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
-		{LanterID = 6, 	LanternDataID = "ÓñÓîÇíÂ¥µÆÁı", PosX = 183, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
-		{LanterID = 7, LanternDataID = "Á÷Ë®ÌÒ»¨µÆÁı", PosX = 187, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
-		{LanterID = 8, LanternDataID = "ÈıÌ¨ÔÆË®µÆÁı", PosX = 191, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },	
-		{LanterID = 9, LanternDataID = "ºş±õÇçÓêµÆÁı", PosX = 195, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },	
-		{LanterID = 10, LanternDataID = "ÁøÀËÎÅİºµÆÁı", PosX = 195, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },	
-		{LanterID = 11, LanternDataID = "»¨¸Û¹ÛÓãµÆÁı", PosX = 191, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },		
+		{LanterID = 1, 	LanternDataID = "LÕc Th¥n Mçu Ğan Ğång Lung", PosX = 175, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },
+		{LanterID = 2, 	LanternDataID = "Phong Hoa Tuyªt Nguy®t Ğång Lung", PosX = 171, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },
+		{LanterID = 3, 	LanternDataID = "Khúc Vi®n Phong Hà Ğång Lung", PosX = 171, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
+		{LanterID = 4, 	LanternDataID = "Vân Thê Trúc Kính Ğång Lung", PosX = 175, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
+		{LanterID = 5, 	LanternDataID = "Mai ‘ Xuân Täo Ğång Lung", PosX = 179, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
+		{LanterID = 6, 	LanternDataID = "Ği®n ng÷c QuÏnh Lâu Ğång Lung", PosX = 183, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
+		{LanterID = 7, LanternDataID = "Nß¾c chäy hoa ğào Ğång Lung", PosX = 187, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
+		{LanterID = 8, LanternDataID = "Tam Ğài Vân ThuÖ Ğång Lung", PosX = 191, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },	
+		{LanterID = 9, LanternDataID = "Quanh h° Tinh Vû Ğång Lung", PosX = 195, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },	
+		{LanterID = 10, LanternDataID = "Li­u Lãng Vån Oanh Ğång Lung", PosX = 195, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },	
+		{LanterID = 11, LanternDataID = "Hoa Cäng Quan Ngß Ğång Lung", PosX = 191, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },		
 	}
 	
 	local index = DataPool:GetPlayerMission_Variable( nSelIndex, 1 ) + 1
@@ -1660,29 +1660,29 @@ function QuestLog_GetTarget_2017YXJCDM( nSelIndex )
 	
 end
 
--- [2017-ÔªÏü½Ú²ÂµÆÃÕ»î¶¯]
+-- [2017-ÔªÏü½Ú²ÂµÆÃ »î¶¯]
 function QuestLog_Complete_2017YXJCDM( nSelIndex)
 	local index = DataPool:GetPlayerMission_Variable( nSelIndex, 1 )
 	local str = ScriptGlobal_Format("#{YXCDM_161114_19}", index)
 	return str	
 end
 
--- [2017-ÔªÏü½Ú²ÂµÆÃÕ»î¶¯]
+-- [2017-ÔªÏü½Ú²ÂµÆÃ »î¶¯]
 function QuestLog_GetTrack_2017YXJCDM( nSelIndex )
 
 	local Lanterns_Info =
 	{
-		{LanterID = 1, 	LanternDataID = "ÂåÉñÄµµ¤µÆÁı", PosX = 175, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },
-		{LanterID = 2, 	LanternDataID = "·ç»¨Ñ©ÔÂµÆÁı", PosX = 171, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },
-		{LanterID = 3, 	LanternDataID = "ÇúÔº·çºÉµÆÁı", PosX = 171, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
-		{LanterID = 4, 	LanternDataID = "ÔÆÆÜÖñ¾¶µÆÁı", PosX = 175, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
-		{LanterID = 5, 	LanternDataID = "Ã·Îë´ºÔçµÆÁı", PosX = 179, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
-		{LanterID = 6, 	LanternDataID = "ÓñÓîÇíÂ¥µÆÁı", PosX = 183, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
-		{LanterID = 7, LanternDataID = "Á÷Ë®ÌÒ»¨µÆÁı", PosX = 187, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
-		{LanterID = 8, LanternDataID = "ÈıÌ¨ÔÆË®µÆÁı", PosX = 191, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },	
-		{LanterID = 9, LanternDataID = "ºş±õÇçÓêµÆÁı", PosX = 195, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },	
-		{LanterID = 10, LanternDataID = "ÁøÀËÎÅİºµÆÁı", PosX = 195, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },	
-		{LanterID = 11, LanternDataID = "»¨¸Û¹ÛÓãµÆÁı", PosX = 191, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },	
+		{LanterID = 1, 	LanternDataID = "LÕc Th¥n Mçu Ğan Ğång Lung", PosX = 175, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },
+		{LanterID = 2, 	LanternDataID = "Phong Hoa Tuyªt Nguy®t Ğång Lung", PosX = 171, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },
+		{LanterID = 3, 	LanternDataID = "Khúc Vi®n Phong Hà Ğång Lung", PosX = 171, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
+		{LanterID = 4, 	LanternDataID = "Vân Thê Trúc Kính Ğång Lung", PosX = 175, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
+		{LanterID = 5, 	LanternDataID = "Mai ‘ Xuân Täo Ğång Lung", PosX = 179, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
+		{LanterID = 6, 	LanternDataID = "Ği®n ng÷c QuÏnh Lâu Ğång Lung", PosX = 183, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
+		{LanterID = 7, LanternDataID = "Nß¾c chäy hoa ğào Ğång Lung", PosX = 187, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
+		{LanterID = 8, LanternDataID = "Tam Ğài Vân ThuÖ Ğång Lung", PosX = 191, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },	
+		{LanterID = 9, LanternDataID = "Quanh h° Tinh Vû Ğång Lung", PosX = 195, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },	
+		{LanterID = 10, LanternDataID = "Li­u Lãng Vån Oanh Ğång Lung", PosX = 195, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },	
+		{LanterID = 11, LanternDataID = "Hoa Cäng Quan Ngß Ğång Lung", PosX = 191, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },	
 	}
 	
 	local index = DataPool:GetPlayerMission_Variable( nSelIndex, 1 ) + 1
@@ -2488,7 +2488,7 @@ function QuestLog_GetTarget_ShenFenTuPo(nSelIndex)
 
 --	local param1 = DataPool:GetPlayerMission_Variable( nSelIndex, 1 )--ÊıÁ¿
 --	local param2 = DataPool:GetPlayerMission_Variable( nSelIndex, 2 )--ĞèÒªµÀ¾ßid
-	local param3 = DataPool:GetPlayerMission_Variable( nSelIndex, 3 )--ĞèÒªµÀ¾ßcount
+	local param3 = DataPool:GetPlayerMission_Variable( nSelIndex, 3 )--????count
 	
 --	local itemname = DataPool:LuaFnGetItemNameByTableIndex(param2)
 
@@ -2498,9 +2498,9 @@ end
 
 function QuestLog_Complete_ShenFenTuPo(nSelIndex)
 
-	local param1 = DataPool:GetPlayerMission_Variable( nSelIndex, 1 )--ÊıÁ¿
+	local param1 = DataPool:GetPlayerMission_Variable( nSelIndex, 1 )--??
 	--local param2 = DataPool:GetPlayerMission_Variable( nSelIndex, 2 )--ĞèÒªµÀ¾ßid
-	local param3 = DataPool:GetPlayerMission_Variable( nSelIndex, 3 )--ĞèÒªµÀ¾ßcount
+	local param3 = DataPool:GetPlayerMission_Variable( nSelIndex, 3 )--????count
 	
 	--local itemname = DataPool:LuaFnGetItemNameByTableIndex(param2)
 
@@ -2775,16 +2775,16 @@ end
 -- ¡¾2024Q2¡¿ĞÂ°æ±¾Ô¤ÈÈ-É½ÖØË®¸´ ½áÊø
 
 function QuestLog_Complete_LongHaiZi(nSelIndex)
-	local scnIndex = DataPool:GetPlayerMission_Variable(nSelIndex,2); --ÈÎÎñËùÔÚ³¡¾°
-	local clueIndex = DataPool:GetPlayerMission_Variable(nSelIndex,4); --ÈÎÎñËùÔÚ³¡¾°
-	local tableclues = { --ÂåÑô
+	local scnIndex = DataPool:GetPlayerMission_Variable(nSelIndex,2); --??????
+	local clueIndex = DataPool:GetPlayerMission_Variable(nSelIndex,4); --??????
+	local tableclues = { --??
 		"#{LNDK_231025_25}","#{LNDK_231025_26}","#{LNDK_231025_27}","#{LNDK_231025_28}",
 	}
-	if scnIndex == 1 then --ËÕÖİ
+	if scnIndex == 1 then --??
 		tableclues = {
 			"#{LNDK_231025_33}","#{LNDK_231025_34}","#{LNDK_231025_35}","#{LNDK_231025_36}",
 		}
-	elseif scnIndex == 2 then --´óÀí
+	elseif scnIndex == 2 then --??
 		tableclues = {
 			"#{LNDK_231025_29}","#{LNDK_231025_30}","#{LNDK_231025_31}","#{LNDK_231025_32}",
 		}	
@@ -2837,7 +2837,7 @@ function QuestLog_Complete_CleanForNewYear(nSelIndex)
 	local str="#r".."#{CCYXN_20211202_13}"
 	for i=1,6 do
 		str=str.."#r"
-		str=str..PosInfo[nPosIdx[i]].."£º"..bDone[i].." / 1"
+		str=str..PosInfo[nPosIdx[i]]..":"..bDone[i].." / 1"
 	end
 --	local str=ScriptGlobal_Format("#{CCYXN_20211202_13}",PosInfo[nPosIdx[1]],bDone[1],PosInfo[nPosIdx[2]],bDone[2],PosInfo[nPosIdx[3]],bDone[3],
 --							PosInfo[nPosIdx[4]],bDone[4],PosInfo[nPosIdx[5]],bDone[5],PosInfo[nPosIdx[6]],bDone[6])
@@ -2864,17 +2864,17 @@ function QuestLog_GetHLXQJComplete( nSelIndex )
 	AlreadyPlay[5] = DataPool:GetPlayerMission_Variable( nSelIndex, 5 )
 
 	local MenPaiList = {
-		[0] = { id = 0, rate = 10, name = "#{XQ_MP_1}" },    --ÉÙÁÖ
-		[1] = { id = 1, rate = 20, name = "#{XQ_MP_2}" },    --Ã÷½Ì
-		[2] = { id = 2, rate = 30, name = "#{XQ_MP_3}" },    --Ø¤°ï
-		[3] = { id = 3, rate = 40, name = "#{XQ_MP_4}" },    --Îäµ±
-		[4] = { id = 4, rate = 50, name = "#{XQ_MP_5}" },    --¶ëÃ¼
-		[5] = { id = 5, rate = 60, name = "#{XQ_MP_6}" },    --ĞÇËŞ
-		[6] = { id = 6, rate = 70, name = "#{XQ_MP_7}" },    --ÌìÁú
-		[7] = { id = 7, rate = 80, name = "#{XQ_MP_8}" },    --ÌìÉ½
-		[8] = { id = 8, rate = 90, name = "#{XQ_MP_9}" },    --åĞÒ£
-	  [9] = { id = 9, rate = 0, name = "" },               --ÎŞÃÅÅÉ
-	  [10] = { id = 10, rate = 100, name = "#{XQ_MP_16}" },--ÂüÍÓ
+		[0] = { id = 0, rate = 10, name = "#{XQ_MP_1}" },    --??
+		[1] = { id = 1, rate = 20, name = "#{XQ_MP_2}" },    --??
+		[2] = { id = 2, rate = 30, name = "#{XQ_MP_3}" },    --??
+		[3] = { id = 3, rate = 40, name = "#{XQ_MP_4}" },    --??
+		[4] = { id = 4, rate = 50, name = "#{XQ_MP_5}" },    --??
+		[5] = { id = 5, rate = 60, name = "#{XQ_MP_6}" },    --??
+		[6] = { id = 6, rate = 70, name = "#{XQ_MP_7}" },    --??
+		[7] = { id = 7, rate = 80, name = "#{XQ_MP_8}" },    --??
+		[8] = { id = 8, rate = 90, name = "#{XQ_MP_9}" },    --??
+	  [9] = { id = 9, rate = 0, name = "" },               --???
+	  [10] = { id = 10, rate = 100, name = "#{XQ_MP_16}" },--??
 	}
 
 	local strComplete = ""
@@ -2910,17 +2910,17 @@ function QuestLog_GetHLXQJTarget( nSelIndex )
     end
 
 	local MenPaiList = {
-		[0] = { id = 0, rate = 10, name = "#{XQ_MP_1}" },    --ÉÙÁÖ
-		[1] = { id = 1, rate = 20, name = "#{XQ_MP_2}" },    --Ã÷½Ì
-		[2] = { id = 2, rate = 30, name = "#{XQ_MP_3}" },    --Ø¤°ï
-		[3] = { id = 3, rate = 40, name = "#{XQ_MP_4}" },    --Îäµ±
-		[4] = { id = 4, rate = 50, name = "#{XQ_MP_5}" },    --¶ëÃ¼
-		[5] = { id = 5, rate = 60, name = "#{XQ_MP_6}" },    --ĞÇËŞ
-		[6] = { id = 6, rate = 70, name = "#{XQ_MP_7}" },    --ÌìÁú
-		[7] = { id = 7, rate = 80, name = "#{XQ_MP_8}" },    --ÌìÉ½
-		[8] = { id = 8, rate = 90, name = "#{XQ_MP_9}" },    --åĞÒ£
-	  [9] = { id = 9, rate = 0, name = "" },         			 --ÎŞÃÅÅÉ
-	  [10] = { id = 10, rate = 100, name = "#{XQ_MP_16}" },--ÂüÍÓ
+		[0] = { id = 0, rate = 10, name = "#{XQ_MP_1}" },    --??
+		[1] = { id = 1, rate = 20, name = "#{XQ_MP_2}" },    --??
+		[2] = { id = 2, rate = 30, name = "#{XQ_MP_3}" },    --??
+		[3] = { id = 3, rate = 40, name = "#{XQ_MP_4}" },    --??
+		[4] = { id = 4, rate = 50, name = "#{XQ_MP_5}" },    --??
+		[5] = { id = 5, rate = 60, name = "#{XQ_MP_6}" },    --??
+		[6] = { id = 6, rate = 70, name = "#{XQ_MP_7}" },    --??
+		[7] = { id = 7, rate = 80, name = "#{XQ_MP_8}" },    --??
+		[8] = { id = 8, rate = 90, name = "#{XQ_MP_9}" },    --??
+	  [9] = { id = 9, rate = 0, name = "" },         			 --???
+	  [10] = { id = 10, rate = 100, name = "#{XQ_MP_16}" },--??
 	}
 
 	local strComplete = ""
@@ -2933,17 +2933,17 @@ end
 function QuestLog_XuanChuanYXDH_State( nSelIndex )
 
 	local MenPaiList = {
-		[0] = "#{BFHX_210203_07}",    --ÉÙÁÖ
-		[1] = "#{BFHX_210203_13}",    --Ã÷½Ì
-		[2] = "#{BFHX_210203_12}",    --Ø¤°ï
-		[3] = "#{BFHX_210203_14}",    --Îäµ±
-		[4] = "#{BFHX_210203_08}",    --¶ëÃ¼
-		[5] = "#{BFHX_210203_11}",    --ĞÇËŞ
-		[6] = "#{BFHX_210203_10}",    --ÌìÁú
-		[7] = "#{BFHX_210203_09}",    --ÌìÉ½
-		[8] = "#{BFHX_210203_15}",     --åĞÒ£
-		[9] = "",     --ÎŞÃÅÅÉ
-		[10] = "#{GMGameInterface_Script_DataPool_Info_ManTuoShanZhuang1}",     --ÂüÍÓÉ½×¯
+		[0] = "#{BFHX_210203_07}",    --??
+		[1] = "#{BFHX_210203_13}",    --??
+		[2] = "#{BFHX_210203_12}",    --??
+		[3] = "#{BFHX_210203_14}",    --??
+		[4] = "#{BFHX_210203_08}",    --??
+		[5] = "#{BFHX_210203_11}",    --??
+		[6] = "#{BFHX_210203_10}",    --??
+		[7] = "#{BFHX_210203_09}",    --??
+		[8] = "#{BFHX_210203_15}",     --??
+		[9] = "",     --???
+		[10] = "#{GMGameInterface_Script_DataPool_Info_ManTuoShanZhuang1}",     --????
 	}
 
 	local strComplete = "\n"
@@ -3047,21 +3047,21 @@ function QuestLog_Complete_QingRenJieDaKa( nMissionIndex )
 	local num1,num2,num3 = QuestLog_GetQingRenJieDaKa( nIndex )
 	if num1 > 0 and num2 > 0 and num3 > 0 then
 		local srtnum1 = ""
-		if curnum1 < num1 then--Ã»Íê³É ºìÉ«
+		if curnum1 < num1 then--??? ??
 			srtnum1 = ScriptGlobal_Format("#{QRDK_221123_67}", curnum1, num1)
-		else--Íê³ÉÁË ÂÌÉ«
+		else--??? ??
 			srtnum1 = ScriptGlobal_Format("#{QRDK_221123_20}", curnum1, num1)
 		end
 		local srtnum2 = ""
-		if curnum2 < num2 then--Ã»Íê³É ºìÉ«
+		if curnum2 < num2 then--??? ??
 			srtnum2 = ScriptGlobal_Format("#{QRDK_221123_69}", curnum2, num2)
-		else--Íê³ÉÁË ÂÌÉ«
+		else--??? ??
 			srtnum2 = ScriptGlobal_Format("#{QRDK_221123_71}", curnum2, num2)
 		end
 		local srtnum3 = ""
-		if curnum3 < num3 then--Ã»Íê³É ºìÉ«
+		if curnum3 < num3 then--??? ??
 			srtnum3 = ScriptGlobal_Format("#{QRDK_221123_68}", curnum3, num3)
-		else--Íê³ÉÁË ÂÌÉ«
+		else--??? ??
 			srtnum3 = ScriptGlobal_Format("#{QRDK_221123_70}", curnum3, num3)
 		end
 		
@@ -3079,21 +3079,21 @@ function QuestLog_GetTrack_QingRenJieDaKa( nMissionIndex )
 	if param0 == 0 then
 		if num1 > 0 and num2 > 0 and num3 > 0 then
 			local srtnum1 = ""
-			if curnum1 < num1 then--Ã»Íê³É ºìÉ«
+			if curnum1 < num1 then--??? ??
 				srtnum1 = ScriptGlobal_Format("#{QRDK_221123_67}", curnum1, num1)
-			else--Íê³ÉÁË ÂÌÉ«
+			else--??? ??
 				srtnum1 = ScriptGlobal_Format("#{QRDK_221123_20}", curnum1, num1)
 			end
 			local srtnum2 = ""
-			if curnum2 < num2 then--Ã»Íê³É ºìÉ«
+			if curnum2 < num2 then--??? ??
 				srtnum2 = ScriptGlobal_Format("#{QRDK_221123_69}", curnum2, num2)
-			else--Íê³ÉÁË ÂÌÉ«
+			else--??? ??
 				srtnum2 = ScriptGlobal_Format("#{QRDK_221123_71}", curnum2, num2)
 			end
 			local srtnum3 = ""
-			if curnum3 < num3 then--Ã»Íê³É ºìÉ«
+			if curnum3 < num3 then--??? ??
 				srtnum3 = ScriptGlobal_Format("#{QRDK_221123_68}", curnum3, num3)
-			else--Íê³ÉÁË ÂÌÉ«
+			else--??? ??
 				srtnum3 = ScriptGlobal_Format("#{QRDK_221123_70}", curnum3, num3)
 			end
 			return "#W".."#{QRDK_221123_72}"..srtnum1..srtnum2..srtnum3
@@ -3281,15 +3281,15 @@ function QuestLog_GetTarget_LiLianMission4( nIndex1,nIndex2 )
 	local MenPaiName = ""
 	local MenPaiNpc = {
 
-	[0] ={MenPai="ÉÙÁÖ",NPC={[0]="#{LLRW_231010_22}",[1]="#{LLRW_231010_21}"},LP={[0]="#{XLRW_210725_481}",[1]="#{XLRW_210725_480}"},},
-	[1] ={MenPai="Ã÷½Ì",NPC={[0]="#{LLRW_231010_26}",[1]="#{LLRW_231010_25}"},LP={[0]="#{XLRW_210725_485}",[1]="#{XLRW_210725_484}"},},
-	[2] ={MenPai="Ø¤°ï",NPC={[0]="#{LLRW_231010_24}",[1]="#{LLRW_231010_23}"},LP={[0]="#{XLRW_210725_483}",[1]="#{XLRW_210725_482}"},},
-	[3] ={MenPai="Îäµ±",NPC={[0]="#{LLRW_231010_27}",[1]="#{LLRW_231010_28}"},LP={[0]="#{XLRW_210725_486}",[1]="#{XLRW_210725_487}"},},
-	[4] ={MenPai="¶ëáÒ",NPC={[0]="#{LLRW_231010_33}",[1]="#{LLRW_231010_34}"},LP={[0]="#{XLRW_210725_492}",[1]="#{XLRW_210725_493}"},},
-	[5] ={MenPai="ĞÇËŞ",NPC={[0]="#{LLRW_231010_35}",[1]="#{LLRW_231010_36}"},LP={[0]="#{XLRW_210725_494}",[1]="#{XLRW_210725_495}"},},
-	[6] ={MenPai="ÌìÁú",NPC={[0]="#{LLRW_231010_29}",[1]="#{LLRW_231010_30}"},LP={[0]="#{XLRW_210725_488}",[1]="#{XLRW_210725_489}"},},
-	[7] ={MenPai="ÌìÉ½",NPC={[0]="#{LLRW_231010_37}",[1]="#{LLRW_231010_38}"},LP={[0]="#{XLRW_210725_496}",[1]="#{XLRW_210725_497}"},},
-	[8] ={MenPai="åĞÒ£",NPC={[0]="#{LLRW_231010_31}",[1]="#{LLRW_231010_32}"},LP={[0]="#{XLRW_210725_490}",[1]="#{XLRW_210725_491}"},},
+	[0] ={MenPai="Thiªu Lâm",NPC={[0]="#{LLRW_231010_22}",[1]="#{LLRW_231010_21}"},LP={[0]="#{XLRW_210725_481}",[1]="#{XLRW_210725_480}"},},
+	[1] ={MenPai="Minh Giáo",NPC={[0]="#{LLRW_231010_26}",[1]="#{LLRW_231010_25}"},LP={[0]="#{XLRW_210725_485}",[1]="#{XLRW_210725_484}"},},
+	[2] ={MenPai="Cái Bang",NPC={[0]="#{LLRW_231010_24}",[1]="#{LLRW_231010_23}"},LP={[0]="#{XLRW_210725_483}",[1]="#{XLRW_210725_482}"},},
+	[3] ={MenPai="Võ Ğang",NPC={[0]="#{LLRW_231010_27}",[1]="#{LLRW_231010_28}"},LP={[0]="#{XLRW_210725_486}",[1]="#{XLRW_210725_487}"},},
+	[4] ={MenPai="Nga Mi",NPC={[0]="#{LLRW_231010_33}",[1]="#{LLRW_231010_34}"},LP={[0]="#{XLRW_210725_492}",[1]="#{XLRW_210725_493}"},},
+	[5] ={MenPai="Tinh Túc",NPC={[0]="#{LLRW_231010_35}",[1]="#{LLRW_231010_36}"},LP={[0]="#{XLRW_210725_494}",[1]="#{XLRW_210725_495}"},},
+	[6] ={MenPai="Thiên Long",NPC={[0]="#{LLRW_231010_29}",[1]="#{LLRW_231010_30}"},LP={[0]="#{XLRW_210725_488}",[1]="#{XLRW_210725_489}"},},
+	[7] ={MenPai="Thiên S½n",NPC={[0]="#{LLRW_231010_37}",[1]="#{LLRW_231010_38}"},LP={[0]="#{XLRW_210725_496}",[1]="#{XLRW_210725_497}"},},
+	[8] ={MenPai="Tiêu dao",NPC={[0]="#{LLRW_231010_31}",[1]="#{LLRW_231010_32}"},LP={[0]="#{XLRW_210725_490}",[1]="#{XLRW_210725_491}"},},
 	[10] ={MenPai="#{MTLLRW_220624_05}",NPC={[0]="#{MTLLRW_231010_03}",[1]="#{MTLLRW_231010_08}"},LP={[0]="#{MTLLRW_220624_04}",[1]="#{MTLLRW_220624_09}"},},
 
 	}
@@ -3341,15 +3341,15 @@ function QuestLog_GetTarget_JingJinMission( nIndex1,nIndex2 )
 	local LPname = ""
 	local MenPaiName = ""
 	local MenPaiNpc = {
-		[0] ={MenPai="ÉÙÁÖ",NPC={[0]="#{LLRW_230309_22}",[1]="#{LLRW_230309_21}"},LP={[0]="#{XLRW_210725_481}",[1]="#{XLRW_210725_480}"},},
-		[1] ={MenPai="Ã÷½Ì",NPC={[0]="#{LLRW_230309_26}",[1]="#{LLRW_230309_25}"},LP={[0]="#{XLRW_210725_485}",[1]="#{XLRW_210725_484}"},},
-		[2] ={MenPai="Ø¤°ï",NPC={[0]="#{LLRW_230309_24}",[1]="#{LLRW_230309_23}"},LP={[0]="#{XLRW_210725_483}",[1]="#{XLRW_210725_482}"},},
-		[3] ={MenPai="Îäµ±",NPC={[0]="#{LLRW_230309_27}",[1]="#{LLRW_230309_28}"},LP={[0]="#{XLRW_210725_486}",[1]="#{XLRW_210725_487}"},},
-		[4] ={MenPai="¶ëáÒ",NPC={[0]="#{LLRW_230309_33}",[1]="#{LLRW_230309_34}"},LP={[0]="#{XLRW_210725_492}",[1]="#{XLRW_210725_493}"},},
-		[5] ={MenPai="ĞÇËŞ",NPC={[0]="#{LLRW_230309_35}",[1]="#{LLRW_230309_36}"},LP={[0]="#{XLRW_210725_494}",[1]="#{XLRW_210725_495}"},},
-		[6] ={MenPai="ÌìÁú",NPC={[0]="#{LLRW_230309_29}",[1]="#{LLRW_230309_30}"},LP={[0]="#{XLRW_210725_488}",[1]="#{XLRW_210725_489}"},},
-		[7] ={MenPai="ÌìÉ½",NPC={[0]="#{LLRW_230309_37}",[1]="#{LLRW_230309_38}"},LP={[0]="#{XLRW_210725_496}",[1]="#{XLRW_210725_497}"},},
-		[8] ={MenPai="åĞÒ£",NPC={[0]="#{LLRW_230309_31}",[1]="#{LLRW_230309_32}"},LP={[0]="#{XLRW_210725_490}",[1]="#{XLRW_210725_491}"},},
+		[0] ={MenPai="Thiªu Lâm",NPC={[0]="#{LLRW_230309_22}",[1]="#{LLRW_230309_21}"},LP={[0]="#{XLRW_210725_481}",[1]="#{XLRW_210725_480}"},},
+		[1] ={MenPai="Minh Giáo",NPC={[0]="#{LLRW_230309_26}",[1]="#{LLRW_230309_25}"},LP={[0]="#{XLRW_210725_485}",[1]="#{XLRW_210725_484}"},},
+		[2] ={MenPai="Cái Bang",NPC={[0]="#{LLRW_230309_24}",[1]="#{LLRW_230309_23}"},LP={[0]="#{XLRW_210725_483}",[1]="#{XLRW_210725_482}"},},
+		[3] ={MenPai="Võ Ğang",NPC={[0]="#{LLRW_230309_27}",[1]="#{LLRW_230309_28}"},LP={[0]="#{XLRW_210725_486}",[1]="#{XLRW_210725_487}"},},
+		[4] ={MenPai="Nga Mi",NPC={[0]="#{LLRW_230309_33}",[1]="#{LLRW_230309_34}"},LP={[0]="#{XLRW_210725_492}",[1]="#{XLRW_210725_493}"},},
+		[5] ={MenPai="Tinh Túc",NPC={[0]="#{LLRW_230309_35}",[1]="#{LLRW_230309_36}"},LP={[0]="#{XLRW_210725_494}",[1]="#{XLRW_210725_495}"},},
+		[6] ={MenPai="Thiên Long",NPC={[0]="#{LLRW_230309_29}",[1]="#{LLRW_230309_30}"},LP={[0]="#{XLRW_210725_488}",[1]="#{XLRW_210725_489}"},},
+		[7] ={MenPai="Thiên S½n",NPC={[0]="#{LLRW_230309_37}",[1]="#{LLRW_230309_38}"},LP={[0]="#{XLRW_210725_496}",[1]="#{XLRW_210725_497}"},},
+		[8] ={MenPai="Tiêu dao",NPC={[0]="#{LLRW_230309_31}",[1]="#{LLRW_230309_32}"},LP={[0]="#{XLRW_210725_490}",[1]="#{XLRW_210725_491}"},},
 		[10] ={MenPai="#{MTLLRW_220624_05}",NPC={[0]="#{MTLLRW_220624_03}",[1]="#{MTLLRW_220624_08}"},LP={[0]="#{MTLLRW_220624_04}",[1]="#{MTLLRW_220624_09}"},}
 	}
 	if nIndex1 < 0 or nIndex1 > 10 or nIndex1 == 9 or nIndex2 < 0 or nIndex2 >1 then
@@ -3366,33 +3366,33 @@ function QuestLog_GetTarget_JingJinMission1( nMissionIndex )
 	local NPCname,LPname = QuestLog_GetTarget_JingJinMission( nIndex1,nIndex2 )
 	local nQuestIndex = DataPool:GetPlayerMission_Variable( nMissionIndex, 2 )
 	AccomplishInfo={
-		{question="#{WDJJ_230614_213}",name="¶ÎÑÓÇì",Answer="#{WDJJ_230614_237}",}, --´óÀí 214£¬283  2
-		{question="#{WDJJ_230614_214}",name="¶ÎÑÓÇì",Answer="#{WDJJ_230614_237}",},
-		{question="#{WDJJ_230614_215}",name="¶ÎÑÓÇì",Answer="#{WDJJ_230614_237}",},
+		{question="#{WDJJ_230614_213}",name="Ğoàn Diên Khánh",Answer="#{WDJJ_230614_237}",}, --?? 214,283  2
+		{question="#{WDJJ_230614_214}",name="Ğoàn Diên Khánh",Answer="#{WDJJ_230614_237}",},
+		{question="#{WDJJ_230614_215}",name="Ğoàn Diên Khánh",Answer="#{WDJJ_230614_237}",},
 
-		{question="#{WDJJ_230614_219}",name="Ä½Èİ¸´",Answer="#{WDJJ_230614_239}",}, --ËÕÖİ129£¬76  1
-		{question="#{WDJJ_230614_220}",name="Ä½Èİ¸´",Answer="#{WDJJ_230614_239}",},
-		{question="#{WDJJ_230614_221}",name="Ä½Èİ¸´",Answer="#{WDJJ_230614_239}",},
+		{question="#{WDJJ_230614_219}",name="Mµ Dung Phøc",Answer="#{WDJJ_230614_239}",}, --??129,76  1
+		{question="#{WDJJ_230614_220}",name="Mµ Dung Phøc",Answer="#{WDJJ_230614_239}",},
+		{question="#{WDJJ_230614_221}",name="Mµ Dung Phøc",Answer="#{WDJJ_230614_239}",},
 
-		{question="#{WDJJ_230614_222}",name="ÓÎÌ¹Ö®",Answer="#{WDJJ_230614_240}",}, --ÂåÑô 57£¬82  0
-		{question="#{WDJJ_230614_223}",name="ÓÎÌ¹Ö®",Answer="#{WDJJ_230614_240}",},
-		{question="#{WDJJ_230614_224}",name="ÓÎÌ¹Ö®",Answer="#{WDJJ_230614_240}",},
+		{question="#{WDJJ_230614_222}",name="Du Thän Chi",Answer="#{WDJJ_230614_240}",}, --?? 57,82  0
+		{question="#{WDJJ_230614_223}",name="Du Thän Chi",Answer="#{WDJJ_230614_240}",},
+		{question="#{WDJJ_230614_224}",name="Du Thän Chi",Answer="#{WDJJ_230614_240}",},
 
-		{question="#{WDJJ_230614_225}",name="ÖÇ¹â´óÊ¦",Answer="#{WDJJ_230614_241}",}, --ÂåÑô 77£¬72  0
-		{question="#{WDJJ_230614_226}",name="ÖÇ¹â´óÊ¦",Answer="#{WDJJ_230614_241}",},
-		{question="#{WDJJ_230614_227}",name="ÖÇ¹â´óÊ¦",Answer="#{WDJJ_230614_241}",},
+		{question="#{WDJJ_230614_225}",name="Trí Quang ĞÕi Sß",Answer="#{WDJJ_230614_241}",}, --?? 77,72  0
+		{question="#{WDJJ_230614_226}",name="Trí Quang ĞÕi Sß",Answer="#{WDJJ_230614_241}",},
+		{question="#{WDJJ_230614_227}",name="Trí Quang ĞÕi Sß",Answer="#{WDJJ_230614_241}",},
 
-		{question="#{WDJJ_230614_228}",name="¶ÎÕı´¾",Answer="#{WDJJ_230614_242}",}, --´óÀí 62£¬35  2
-		{question="#{WDJJ_230614_229}",name="¶ÎÕı´¾",Answer="#{WDJJ_230614_242}",},
-		{question="#{WDJJ_230614_230}",name="¶ÎÕı´¾",Answer="#{WDJJ_230614_242}",},
+		{question="#{WDJJ_230614_228}",name="Ğoàn Chính Thu¥n",Answer="#{WDJJ_230614_242}",}, --?? 62,35  2
+		{question="#{WDJJ_230614_229}",name="Ğoàn Chính Thu¥n",Answer="#{WDJJ_230614_242}",},
+		{question="#{WDJJ_230614_230}",name="Ğoàn Chính Thu¥n",Answer="#{WDJJ_230614_242}",},
 
-		{question="#{WDJJ_230614_231}",name="Ò¶¶şÄï",Answer="#{WDJJ_230614_243}",}, --´óÀí 54£¬265  2
-		{question="#{WDJJ_230614_232}",name="Ò¶¶şÄï",Answer="#{WDJJ_230614_243}",},
-		{question="#{WDJJ_230614_233}",name="Ò¶¶şÄï",Answer="#{WDJJ_230614_243}",},
+		{question="#{WDJJ_230614_231}",name="Di®p Nh¸ Nß½ng",Answer="#{WDJJ_230614_243}",}, --?? 54,265  2
+		{question="#{WDJJ_230614_232}",name="Di®p Nh¸ Nß½ng",Answer="#{WDJJ_230614_243}",},
+		{question="#{WDJJ_230614_233}",name="Di®p Nh¸ Nß½ng",Answer="#{WDJJ_230614_243}",},
 
-		{question="#{WDJJ_230614_234}",name="°ü²»Í¬",Answer="#{WDJJ_230614_244}",}, --ËÕÖİ115£¬71  1
-		{question="#{WDJJ_230614_235}",name="°ü²»Í¬",Answer="#{WDJJ_230614_244}",},
-		{question="#{WDJJ_230614_236}",name="°ü²»Í¬",Answer="#{WDJJ_230614_244}",},
+		{question="#{WDJJ_230614_234}",name="Bao B¤t Ğ°ng",Answer="#{WDJJ_230614_244}",}, --??115,71  1
+		{question="#{WDJJ_230614_235}",name="Bao B¤t Ğ°ng",Answer="#{WDJJ_230614_244}",},
+		{question="#{WDJJ_230614_236}",name="Bao B¤t Ğ°ng",Answer="#{WDJJ_230614_244}",},
 
 	}
 
@@ -3534,75 +3534,75 @@ function QuestLog_GetTarget_JingJinMission5( nMissionIndex )
 	local TargetStrList =
 	{
 	[0] ={
-				[1] = { npcname = "Ğş¶É", npcposx = 128, npcposz = 86, npcscene = 9, namestr = "#{WDJJ_230614_383}", strlink = "#{WDJJ_230614_292}"},
-				[2] = { npcname = "Ğş´È", npcposx = 38, npcposz = 98, npcscene = 9, namestr = "#{WDJJ_230614_384}", strlink = "#{WDJJ_230614_293}"},
-				[3] = { npcname = "Ğş¼Å", npcposx = 89, npcposz = 72, npcscene = 9, namestr = "#{WDJJ_230614_385}", strlink = "#{WDJJ_230614_294}"},
-				[4] = { npcname = "ĞşÄÑ", npcposx = 91, npcposz = 71, npcscene = 9, namestr = "#{WDJJ_230614_386}", strlink = "#{WDJJ_230614_295}"},
-				[5] = { npcname = "ĞşÃğ", npcposx = 57, npcposz = 88, npcscene = 9, namestr = "#{WDJJ_230614_387}", strlink = "#{WDJJ_230614_296}"},--
-				[6] = { npcname = "ĞşÃù", npcposx = 135, npcposz = 90, npcscene = 9, namestr = "#{WDJJ_230614_388}", strlink = "#{WDJJ_230614_297}"},},
+				[1] = { npcname = "Huy«n Ğµ", npcposx = 128, npcposz = 86, npcscene = 9, namestr = "#{WDJJ_230614_383}", strlink = "#{WDJJ_230614_292}"},
+				[2] = { npcname = "Huy«n T×", npcposx = 38, npcposz = 98, npcscene = 9, namestr = "#{WDJJ_230614_384}", strlink = "#{WDJJ_230614_293}"},
+				[3] = { npcname = "Huy«n T¸ch", npcposx = 89, npcposz = 72, npcscene = 9, namestr = "#{WDJJ_230614_385}", strlink = "#{WDJJ_230614_294}"},
+				[4] = { npcname = "Huy«n NÕn", npcposx = 91, npcposz = 71, npcscene = 9, namestr = "#{WDJJ_230614_386}", strlink = "#{WDJJ_230614_295}"},
+				[5] = { npcname = "Huy«n Di®t", npcposx = 57, npcposz = 88, npcscene = 9, namestr = "#{WDJJ_230614_387}", strlink = "#{WDJJ_230614_296}"},--
+				[6] = { npcname = "Huy«n Minh", npcposx = 135, npcposz = 90, npcscene = 9, namestr = "#{WDJJ_230614_388}", strlink = "#{WDJJ_230614_297}"},},
 	[1] ={
-				[1] = { npcname = "ÁÖÑÒ", npcposx = 98, npcposz = 105, npcscene = 11, namestr = "#{WDJJ_230614_395}", strlink = "#{WDJJ_230614_304}"},
-				[2] = { npcname = "·½°Ù»¨", npcposx = 133, npcposz = 117, npcscene = 11, namestr = "#{WDJJ_230614_396}", strlink = "#{WDJJ_230614_305}"},---
-				[3] = { npcname = "·½À°", npcposx = 89, npcposz = 56, npcscene = 11, namestr = "#{WDJJ_230614_397}", strlink = "#{WDJJ_230614_306}"},
-				[4] = { npcname = "ÂêÀ­", npcposx = 133, npcposz = 118, npcscene = 11, namestr = "#{WDJJ_230614_398}", strlink = "#{WDJJ_230614_307}"},---
-				[5] = { npcname = "·½Ìì¶¨", npcposx = 87, npcposz = 58, npcscene = 11, namestr = "#{WDJJ_230614_399}", strlink = "#{WDJJ_230614_308}"},
-				[6] = { npcname = "À÷ÌìÓÓ", npcposx = 66, npcposz = 118, npcscene = 11, namestr = "#{WDJJ_230614_400}", strlink = "#{WDJJ_230614_309}"},},--
+				[1] = { npcname = "Lâm Nham", npcposx = 98, npcposz = 105, npcscene = 11, namestr = "#{WDJJ_230614_395}", strlink = "#{WDJJ_230614_304}"},
+				[2] = { npcname = "Phß½ng Bách Hoa", npcposx = 133, npcposz = 117, npcscene = 11, namestr = "#{WDJJ_230614_396}", strlink = "#{WDJJ_230614_305}"},---
+				[3] = { npcname = "Phß½ng LÕp", npcposx = 89, npcposz = 56, npcscene = 11, namestr = "#{WDJJ_230614_397}", strlink = "#{WDJJ_230614_306}"},
+				[4] = { npcname = "Mã LÕp", npcposx = 133, npcposz = 118, npcscene = 11, namestr = "#{WDJJ_230614_398}", strlink = "#{WDJJ_230614_307}"},---
+				[5] = { npcname = "Phß½ng Thiên Ğ¸nh", npcposx = 87, npcposz = 58, npcscene = 11, namestr = "#{WDJJ_230614_399}", strlink = "#{WDJJ_230614_308}"},
+				[6] = { npcname = "L® Thiên Hñu", npcposx = 66, npcposz = 118, npcscene = 11, namestr = "#{WDJJ_230614_400}", strlink = "#{WDJJ_230614_309}"},},--
 	[2] ={
-				[1] = { npcname = "ŞÉÈıÆî", npcposx = 94, npcposz = 99, npcscene = 10, namestr = "#{WDJJ_230614_389}", strlink = "#{WDJJ_230614_298}"},
-				[2] = { npcname = "Îâ³¤·ç", npcposx = 114, npcposz = 91, npcscene = 10, namestr = "#{WDJJ_230614_390}", strlink = "#{WDJJ_230614_299}"},
-				[3] = { npcname = "ÉÏ¹Ù³¤Óê", npcposx = 131, npcposz = 83, npcscene = 10, namestr = "#{WDJJ_230614_391}", strlink = "#{WDJJ_230614_300}"},
-				[4] = { npcname = "ÕÅÈ«Ïé", npcposx = 95, npcposz = 120, npcscene = 10, namestr = "#{WDJJ_230614_392}", strlink = "#{WDJJ_230614_301}"},---
-				[5] = { npcname = "ËÎ´È", npcposx = 92, npcposz = 64, npcscene = 10, namestr = "#{WDJJ_230614_393}", strlink = "#{WDJJ_230614_302}"},
-				[6] = { npcname = "°×ÊÀ¾µ", npcposx = 89, npcposz = 99, npcscene = 10, namestr = "#{WDJJ_230614_394}", strlink = "#{WDJJ_230614_303}"},},
+				[1] = { npcname = "H« Tam Kì", npcposx = 94, npcposz = 99, npcscene = 10, namestr = "#{WDJJ_230614_389}", strlink = "#{WDJJ_230614_298}"},
+				[2] = { npcname = "Ngô Trß¶ng Phong", npcposx = 114, npcposz = 91, npcscene = 10, namestr = "#{WDJJ_230614_390}", strlink = "#{WDJJ_230614_299}"},
+				[3] = { npcname = "Thßşng Quan Trß¶ng Vû", npcposx = 131, npcposz = 83, npcscene = 10, namestr = "#{WDJJ_230614_391}", strlink = "#{WDJJ_230614_300}"},
+				[4] = { npcname = "Trß½ng Toàn Tß¶ng", npcposx = 95, npcposz = 120, npcscene = 10, namestr = "#{WDJJ_230614_392}", strlink = "#{WDJJ_230614_301}"},---
+				[5] = { npcname = "T¯ng T×", npcposx = 92, npcposz = 64, npcscene = 10, namestr = "#{WDJJ_230614_393}", strlink = "#{WDJJ_230614_302}"},
+				[6] = { npcname = "BÕch Thª Kính", npcposx = 89, npcposz = 99, npcscene = 10, namestr = "#{WDJJ_230614_394}", strlink = "#{WDJJ_230614_303}"},},
 	[3] ={
-				[1] = { npcname = "ÕÅĞşËØ", npcposx = 77, npcposz = 85, npcscene = 12, namestr = "#{WDJJ_230614_401}", strlink = "#{WDJJ_230614_310}"},
-				[2] = { npcname = "ÓáÔ¶É½", npcposx = 82, npcposz = 85, npcscene = 12, namestr = "#{WDJJ_230614_402}", strlink = "#{WDJJ_230614_311}"},
-				[3] = { npcname = "º×ÔÆµÀÈË", npcposx = 44, npcposz = 56, npcscene = 12, namestr = "#{WDJJ_230614_403}", strlink = "#{WDJJ_230614_312}"},
-				[4] = { npcname = "ÄªÌ«³å", npcposx = 101, npcposz = 136, npcscene = 12, namestr = "#{WDJJ_230614_404}", strlink = "#{WDJJ_230614_313}"},--
-				[5] = { npcname = "ÁÖÁéËØ", npcposx = 58, npcposz = 73, npcscene = 12, namestr = "#{WDJJ_230614_405}", strlink = "#{WDJJ_230614_314}"},
-				[6] = { npcname = "ÕÅÖĞĞĞ", npcposx = 78, npcposz = 95, npcscene = 12, namestr = "#{WDJJ_230614_406}", strlink = "#{WDJJ_230614_315}"},},
+				[1] = { npcname = "Trß½ng Huy«n T¯", npcposx = 77, npcposz = 85, npcscene = 12, namestr = "#{WDJJ_230614_401}", strlink = "#{WDJJ_230614_310}"},
+				[2] = { npcname = "Du Vi­n S½n", npcposx = 82, npcposz = 85, npcscene = 12, namestr = "#{WDJJ_230614_402}", strlink = "#{WDJJ_230614_311}"},
+				[3] = { npcname = "HÕc Vân ĞÕo Nhân", npcposx = 44, npcposz = 56, npcscene = 12, namestr = "#{WDJJ_230614_403}", strlink = "#{WDJJ_230614_312}"},
+				[4] = { npcname = "MÕc Thái Xung", npcposx = 101, npcposz = 136, npcscene = 12, namestr = "#{WDJJ_230614_404}", strlink = "#{WDJJ_230614_313}"},--
+				[5] = { npcname = "Lâm Linh T¯", npcposx = 58, npcposz = 73, npcscene = 12, namestr = "#{WDJJ_230614_405}", strlink = "#{WDJJ_230614_314}"},
+				[6] = { npcname = "Trß½ng Trung Hành", npcposx = 78, npcposz = 95, npcscene = 12, namestr = "#{WDJJ_230614_406}", strlink = "#{WDJJ_230614_315}"},},
 	[4] ={
-				[1] = { npcname = "´ŞÂÌ»ª", npcposx = 98, npcposz = 51, npcscene = 15, namestr = "#{WDJJ_230614_419}", strlink = "#{WDJJ_230614_328}"},
-				[2] = { npcname = "ÑîËÄÄï", npcposx = 86, npcposz = 142, npcscene = 15, namestr = "#{WDJJ_230614_420}", strlink = "#{WDJJ_230614_329}"},---
-				[3] = { npcname = "ÃÏÇàÇà", npcposx = 96, npcposz = 73, npcscene = 15, namestr = "#{WDJJ_230614_421}", strlink = "#{WDJJ_230614_330}"},
-				[4] = { npcname = "ÃÏÁú", npcposx = 95, npcposz = 86, npcscene = 15, namestr = "#{WDJJ_230614_422}", strlink = "#{WDJJ_230614_331}"},
-				[5] = { npcname = "Ëï¶şÄï", npcposx = 105, npcposz = 57, npcscene = 15, namestr = "#{WDJJ_230614_423}", strlink = "#{WDJJ_230614_332}"},---
-				[6] = { npcname = "ÀîÊ®¶şÄï", npcposx = 96, npcposz = 51, npcscene = 15, namestr = "#{WDJJ_230614_424}", strlink = "#{WDJJ_230614_333}"},},
+				[1] = { npcname = "Thôi Løc Hoa", npcposx = 98, npcposz = 51, npcscene = 15, namestr = "#{WDJJ_230614_419}", strlink = "#{WDJJ_230614_328}"},
+				[2] = { npcname = "Dß½ng TÑ Nß½ng", npcposx = 86, npcposz = 142, npcscene = 15, namestr = "#{WDJJ_230614_420}", strlink = "#{WDJJ_230614_329}"},---
+				[3] = { npcname = "MÕnh Thanh Thanh", npcposx = 96, npcposz = 73, npcscene = 15, namestr = "#{WDJJ_230614_421}", strlink = "#{WDJJ_230614_330}"},
+				[4] = { npcname = "Mãnh Long", npcposx = 95, npcposz = 86, npcscene = 15, namestr = "#{WDJJ_230614_422}", strlink = "#{WDJJ_230614_331}"},
+				[5] = { npcname = "Tôn Nh¸ Nß½ng", npcposx = 105, npcposz = 57, npcscene = 15, namestr = "#{WDJJ_230614_423}", strlink = "#{WDJJ_230614_332}"},---
+				[6] = { npcname = "Lı Th§p Nh¸ Nß½ng", npcposx = 96, npcposz = 51, npcscene = 15, namestr = "#{WDJJ_230614_424}", strlink = "#{WDJJ_230614_333}"},},
 	[5] ={
-				[1] = { npcname = "¶¡´ºÇï", npcposx = 142, npcposz = 55, npcscene = 16, namestr = "#{WDJJ_230614_425}", strlink = "#{WDJJ_230614_334}"},
-				[2] = { npcname = "º«ÊÀÖÒ", npcposx = 95, npcposz = 75, npcscene = 16, namestr = "#{WDJJ_230614_426}", strlink = "#{WDJJ_230614_335}"},
-				[3] = { npcname = "ºìÓñ", npcposx = 128, npcposz = 77, npcscene = 16, namestr = "#{WDJJ_230614_427}", strlink = "#{WDJJ_230614_336}"},
-				[4] = { npcname = "³ö³¾×Ó", npcposx = 90, npcposz = 87, npcscene = 16, namestr = "#{WDJJ_230614_428}", strlink = "#{WDJJ_230614_337}"},---
-				[5] = { npcname = "Ê©È«", npcposx = 87, npcposz = 70, npcscene = 16, namestr = "#{WDJJ_230614_429}", strlink = "#{WDJJ_230614_338}"},
-				[6] = { npcname = "ÍõÑå", npcposx = 96, npcposz = 92, npcscene = 16, namestr = "#{WDJJ_230614_430}", strlink = "#{WDJJ_230614_339}"},},
+				[1] = { npcname = "Ğinh Xuân Thu", npcposx = 142, npcposz = 55, npcscene = 16, namestr = "#{WDJJ_230614_425}", strlink = "#{WDJJ_230614_334}"},
+				[2] = { npcname = "Hàn Thª Trung", npcposx = 95, npcposz = 75, npcscene = 16, namestr = "#{WDJJ_230614_426}", strlink = "#{WDJJ_230614_335}"},
+				[3] = { npcname = "H°ng Ng÷c", npcposx = 128, npcposz = 77, npcscene = 16, namestr = "#{WDJJ_230614_427}", strlink = "#{WDJJ_230614_336}"},
+				[4] = { npcname = "Xu¤t Tr¥n TØ", npcposx = 90, npcposz = 87, npcscene = 16, namestr = "#{WDJJ_230614_428}", strlink = "#{WDJJ_230614_337}"},---
+				[5] = { npcname = "Thi Toàn", npcposx = 87, npcposz = 70, npcscene = 16, namestr = "#{WDJJ_230614_429}", strlink = "#{WDJJ_230614_338}"},
+				[6] = { npcname = "Vß½ng NgÕn", npcposx = 96, npcposz = 92, npcscene = 16, namestr = "#{WDJJ_230614_430}", strlink = "#{WDJJ_230614_339}"},},
 	[6] ={
-				[1] = { npcname = "±¾Òò", npcposx = 96, npcposz = 66, npcscene = 13, namestr = "#{WDJJ_230614_407}", strlink = "#{WDJJ_230614_316}"},
-				[2] = { npcname = "±¾¹Û", npcposx = 97, npcposz = 67, npcscene = 13, namestr = "#{WDJJ_230614_408}", strlink = "#{WDJJ_230614_317}"},
-				[3] = { npcname = "±¾Ïà", npcposx = 35, npcposz = 86, npcscene = 13, namestr = "#{WDJJ_230614_409}", strlink = "#{WDJJ_230614_318}"},
-				[4] = { npcname = "±¾·²", npcposx = 95, npcposz = 88, npcscene = 13, namestr = "#{WDJJ_230614_410}", strlink = "#{WDJJ_230614_319}"},
-				[5] = { npcname = "ÆÆàÁ", npcposx = 99, npcposz = 120, npcscene = 13, namestr = "#{WDJJ_230614_411}", strlink = "#{WDJJ_230614_320}"},--
-				[6] = { npcname = "Ê¢ÈçÀ¼", npcposx = 152, npcposz = 118, npcscene = 13, namestr = "#{WDJJ_230614_412}", strlink = "#{WDJJ_230614_321}"},},--
+				[1] = { npcname = "Bän Nhân", npcposx = 96, npcposz = 66, npcscene = 13, namestr = "#{WDJJ_230614_407}", strlink = "#{WDJJ_230614_316}"},
+				[2] = { npcname = "Bän Quán", npcposx = 97, npcposz = 67, npcscene = 13, namestr = "#{WDJJ_230614_408}", strlink = "#{WDJJ_230614_317}"},
+				[3] = { npcname = "Bän Tß¾ng", npcposx = 35, npcposz = 86, npcscene = 13, namestr = "#{WDJJ_230614_409}", strlink = "#{WDJJ_230614_318}"},
+				[4] = { npcname = "Bän Phàm", npcposx = 95, npcposz = 88, npcscene = 13, namestr = "#{WDJJ_230614_410}", strlink = "#{WDJJ_230614_319}"},
+				[5] = { npcname = "Phá Sân", npcposx = 99, npcposz = 120, npcscene = 13, namestr = "#{WDJJ_230614_411}", strlink = "#{WDJJ_230614_320}"},--
+				[6] = { npcname = "Thành Nhß Lan", npcposx = 152, npcposz = 118, npcscene = 13, namestr = "#{WDJJ_230614_412}", strlink = "#{WDJJ_230614_321}"},},--
 	[7] ={
-				[1] = { npcname = "ÎÚÀÏ´ó", npcposx = 90, npcposz = 120, npcscene = 17, namestr = "#{WDJJ_230614_431}", strlink = "#{WDJJ_230614_340}"},---
-				[2] = { npcname = "Öñ½£", npcposx = 98, npcposz = 44, npcscene = 17, namestr = "#{WDJJ_230614_432}", strlink = "#{WDJJ_230614_341}"},--
-				[3] = { npcname = "À¼½£", npcposx = 88, npcposz = 44, npcscene = 17, namestr = "#{WDJJ_230614_433}", strlink = "#{WDJJ_230614_342}"},
-				[4] = { npcname = "Ã·½£", npcposx = 91, npcposz = 44, npcscene = 17, namestr = "#{WDJJ_230614_434}", strlink = "#{WDJJ_230614_343}"},
-				[5] = { npcname = "·ûÃôÒÇ", npcposx = 95, npcposz = 60, npcscene = 17, namestr = "#{WDJJ_230614_435}", strlink = "#{WDJJ_230614_344}"},
-				[6] = { npcname = "¾Õ½£", npcposx = 101, npcposz = 44, npcscene = 17, namestr = "#{WDJJ_230614_436}", strlink = "#{WDJJ_230614_345}"},},
+				[1] = { npcname = "Ô Lão ĞÕi", npcposx = 90, npcposz = 120, npcscene = 17, namestr = "#{WDJJ_230614_431}", strlink = "#{WDJJ_230614_340}"},---
+				[2] = { npcname = "Trúc Kiªm", npcposx = 98, npcposz = 44, npcscene = 17, namestr = "#{WDJJ_230614_432}", strlink = "#{WDJJ_230614_341}"},--
+				[3] = { npcname = "Lan Kiªm", npcposx = 88, npcposz = 44, npcscene = 17, namestr = "#{WDJJ_230614_433}", strlink = "#{WDJJ_230614_342}"},
+				[4] = { npcname = "Mai Kiªm", npcposx = 91, npcposz = 44, npcscene = 17, namestr = "#{WDJJ_230614_434}", strlink = "#{WDJJ_230614_343}"},
+				[5] = { npcname = "Phù Mçn Nghi", npcposx = 95, npcposz = 60, npcscene = 17, namestr = "#{WDJJ_230614_435}", strlink = "#{WDJJ_230614_344}"},
+				[6] = { npcname = "Cúc Kiªm", npcposx = 101, npcposz = 44, npcscene = 17, namestr = "#{WDJJ_230614_436}", strlink = "#{WDJJ_230614_345}"},},
 	[8] ={
-				[1] = { npcname = "ËÕĞÇºÓ", npcposx = 125, npcposz = 144, npcscene = 14, namestr = "#{WDJJ_230614_413}", strlink = "#{WDJJ_230614_322}"},
-				[2] = { npcname = "¿µ¹ãÁê", npcposx = 125, npcposz = 142, npcscene = 14, namestr = "#{WDJJ_230614_414}", strlink = "#{WDJJ_230614_323}"},
-				[3] = { npcname = "Àî¿şÀÜ", npcposx = 69, npcposz = 142, npcscene = 14, namestr = "#{WDJJ_230614_415}", strlink = "#{WDJJ_230614_324}"},--
-				[4] = { npcname = "ÇØ¹Û", npcposx = 119, npcposz = 152, npcscene = 14, namestr = "#{WDJJ_230614_416}", strlink = "#{WDJJ_230614_325}"},
-				[5] = { npcname = "Ê¯¸ÊÁØ", npcposx = 54, npcposz = 150, npcscene = 14, namestr = "#{WDJJ_230614_417}", strlink = "#{WDJJ_230614_326}"},---
-				[6] = { npcname = "·ë°¢Èı", npcposx = 62, npcposz = 68, npcscene = 14, namestr = "#{WDJJ_230614_418}", strlink = "#{WDJJ_230614_327}"},},
+				[1] = { npcname = "Tô Tinh Hà", npcposx = 125, npcposz = 144, npcscene = 14, namestr = "#{WDJJ_230614_413}", strlink = "#{WDJJ_230614_322}"},
+				[2] = { npcname = "Khang Quäng Lång", npcposx = 125, npcposz = 142, npcscene = 14, namestr = "#{WDJJ_230614_414}", strlink = "#{WDJJ_230614_323}"},
+				[3] = { npcname = "Lı Khôi L²i", npcposx = 69, npcposz = 142, npcscene = 14, namestr = "#{WDJJ_230614_415}", strlink = "#{WDJJ_230614_324}"},--
+				[4] = { npcname = "T¥n Quán", npcposx = 119, npcposz = 152, npcscene = 14, namestr = "#{WDJJ_230614_416}", strlink = "#{WDJJ_230614_325}"},
+				[5] = { npcname = "ThÕch Cam Lâm", npcposx = 54, npcposz = 150, npcscene = 14, namestr = "#{WDJJ_230614_417}", strlink = "#{WDJJ_230614_326}"},---
+				[6] = { npcname = "Phùng A Tam", npcposx = 62, npcposz = 68, npcscene = 14, namestr = "#{WDJJ_230614_418}", strlink = "#{WDJJ_230614_327}"},},
 	[10] ={
-				[1] = { npcname = "ÌÕÁë", npcposx = 62, npcposz = 191, npcscene = 1283, namestr = "#{WDJJ_230614_437}", strlink = "#{WDJJ_230614_346}"},
-				[2] = { npcname = "ÍõË®·ç", npcposx = 186, npcposz = 171, npcscene = 1283, namestr = "#{WDJJ_230614_438}", strlink = "#{WDJJ_230614_347}"},
-				[3] = { npcname = "°×Ñ©", npcposx = 141, npcposz = 74, npcscene = 1283, namestr = "#{WDJJ_230614_439}", strlink = "#{WDJJ_230614_348}"},
-				[4] = { npcname = "ÍõÓïæÌ", npcposx = 179, npcposz = 79, npcscene = 1283, namestr = "#{WDJJ_230614_440}", strlink = "#{WDJJ_230614_349}"},
-				[5] = { npcname = "ÍõĞÇÀË", npcposx = 231, npcposz = 178, npcscene = 1283, namestr = "#{WDJJ_230614_441}", strlink = "#{WDJJ_230614_350}"},
-				[6] = { npcname = "Ñô´º", npcposx = 138, npcposz = 73, npcscene = 1283, namestr = "#{WDJJ_230614_442}", strlink = "#{WDJJ_230614_351}"},},
+				[1] = { npcname = "Ğào Lînh", npcposx = 62, npcposz = 191, npcscene = 1283, namestr = "#{WDJJ_230614_437}", strlink = "#{WDJJ_230614_346}"},
+				[2] = { npcname = "Vß½ng ThuÖ Phong", npcposx = 186, npcposz = 171, npcscene = 1283, namestr = "#{WDJJ_230614_438}", strlink = "#{WDJJ_230614_347}"},
+				[3] = { npcname = "Tuyªt tr¡ng", npcposx = 141, npcposz = 74, npcscene = 1283, namestr = "#{WDJJ_230614_439}", strlink = "#{WDJJ_230614_348}"},
+				[4] = { npcname = "Vß½ng Ngæ Yên", npcposx = 179, npcposz = 79, npcscene = 1283, namestr = "#{WDJJ_230614_440}", strlink = "#{WDJJ_230614_349}"},
+				[5] = { npcname = "Vß½ng Tinh Lãng", npcposx = 231, npcposz = 178, npcscene = 1283, namestr = "#{WDJJ_230614_441}", strlink = "#{WDJJ_230614_350}"},
+				[6] = { npcname = "Mùa xuân", npcposx = 138, npcposz = 73, npcscene = 1283, namestr = "#{WDJJ_230614_442}", strlink = "#{WDJJ_230614_351}"},},
 
 
 	}
@@ -3634,7 +3634,7 @@ end
 
 
 -- ĞÂÌì¸³ÏµÍ³ĞŞÁ¶ÈÎÎñÉè¼Æ begin
-function QuestLog_GetXiuLianMissionNumStr()--ÈÎÎñµ±Ç°»·Êı
+function QuestLog_GetXiuLianMissionNumStr()--??????
 	local nData = DataPool:GetPlayerMission_DataRound(628)
 	if nData ~= nil and nData >= 0 then
 		local nNum = math.mod(nData,1000) + 1
@@ -3643,31 +3643,31 @@ function QuestLog_GetXiuLianMissionNumStr()--ÈÎÎñµ±Ç°»·Êı
 	end
 	return ""
 end
-function QuestLog_GetXiuLianMission_NameStr( menpaiid, liupaiid )--Á÷ÅÉÃû ÃÅÅÉÃû Á÷ÅÉnpcÃû
+function QuestLog_GetXiuLianMission_NameStr( menpaiid, liupaiid )--??? ??? ??npc?
 	local g_MenPaiNpcA = {
-		[0] = {str = "#{XLRW_210725_246}", strlink = "#{XLRW_210725_523}", liupainame = "#{XLRW_210725_481}", mpname = "#{XLRW_210725_43}"},--ÉÙÁÖ
-		[1] = {str = "#{XLRW_210725_250}", strlink = "#{XLRW_210725_527}", liupainame = "#{XLRW_210725_485}", mpname = "#{XLRW_210725_38}"},--Ã÷½Ì
-		[2] = {str = "#{XLRW_210725_248}", strlink = "#{XLRW_210725_525}", liupainame = "#{XLRW_210725_483}", mpname = "#{XLRW_210725_39}"},--Ø¤°ï
-		[3] = {str = "#{XLRW_210725_251}", strlink = "#{XLRW_210725_528}", liupainame = "#{XLRW_210725_486}", mpname = "#{XLRW_210725_40}"},--Îäµ±
-		[4] = {str = "#{XLRW_210725_257}", strlink = "#{XLRW_210725_534}", liupainame = "#{XLRW_210725_492}", mpname = "#{XLRW_210725_35}"},--¶ëáÒ
-		[5] = {str = "#{XLRW_210725_259}", strlink = "#{XLRW_210725_536}", liupainame = "#{XLRW_210725_494}", mpname = "#{XLRW_210725_41}"},--ĞÇËŞ
-		[6] = {str = "#{XLRW_210725_253}", strlink = "#{XLRW_210725_530}", liupainame = "#{XLRW_210725_488}", mpname = "#{XLRW_210725_42}"},--ÌìÁú
-		[7] = {str = "#{XLRW_210725_261}", strlink = "#{XLRW_210725_538}", liupainame = "#{XLRW_210725_496}", mpname = "#{XLRW_210725_36}"},--ÌìÉ½
-		[8] = {str = "#{XLRW_210725_255}", strlink = "#{XLRW_210725_532}", liupainame = "#{XLRW_210725_490}", mpname = "#{XLRW_210725_37}"},--åĞÒ£
-		[10] = {str = "#{XLRW_210725_770}", strlink = "#{XLRW_210725_735}", liupainame = "#{XLRW_210725_737}", mpname = "#{XLRW_210725_741}"},--ÂüÍÓÉ½×¯
+		[0] = {str = "#{XLRW_210725_246}", strlink = "#{XLRW_210725_523}", liupainame = "#{XLRW_210725_481}", mpname = "#{XLRW_210725_43}"},--??
+		[1] = {str = "#{XLRW_210725_250}", strlink = "#{XLRW_210725_527}", liupainame = "#{XLRW_210725_485}", mpname = "#{XLRW_210725_38}"},--??
+		[2] = {str = "#{XLRW_210725_248}", strlink = "#{XLRW_210725_525}", liupainame = "#{XLRW_210725_483}", mpname = "#{XLRW_210725_39}"},--??
+		[3] = {str = "#{XLRW_210725_251}", strlink = "#{XLRW_210725_528}", liupainame = "#{XLRW_210725_486}", mpname = "#{XLRW_210725_40}"},--??
+		[4] = {str = "#{XLRW_210725_257}", strlink = "#{XLRW_210725_534}", liupainame = "#{XLRW_210725_492}", mpname = "#{XLRW_210725_35}"},--??
+		[5] = {str = "#{XLRW_210725_259}", strlink = "#{XLRW_210725_536}", liupainame = "#{XLRW_210725_494}", mpname = "#{XLRW_210725_41}"},--??
+		[6] = {str = "#{XLRW_210725_253}", strlink = "#{XLRW_210725_530}", liupainame = "#{XLRW_210725_488}", mpname = "#{XLRW_210725_42}"},--??
+		[7] = {str = "#{XLRW_210725_261}", strlink = "#{XLRW_210725_538}", liupainame = "#{XLRW_210725_496}", mpname = "#{XLRW_210725_36}"},--??
+		[8] = {str = "#{XLRW_210725_255}", strlink = "#{XLRW_210725_532}", liupainame = "#{XLRW_210725_490}", mpname = "#{XLRW_210725_37}"},--??
+		[10] = {str = "#{XLRW_210725_770}", strlink = "#{XLRW_210725_735}", liupainame = "#{XLRW_210725_737}", mpname = "#{XLRW_210725_741}"},--????
 	}
 
 	local g_MenPaiNpcB = {
-		[0] = {str = "#{XLRW_210725_245}", strlink = "#{XLRW_210725_522}", liupainame = "#{XLRW_210725_480}", mpname = "#{XLRW_210725_43}"},--ÉÙÁÖ
-		[1] = {str = "#{XLRW_210725_249}", strlink = "#{XLRW_210725_526}", liupainame = "#{XLRW_210725_484}", mpname = "#{XLRW_210725_38}"},--Ã÷½Ì
-		[2] = {str = "#{XLRW_210725_247}", strlink = "#{XLRW_210725_524}", liupainame = "#{XLRW_210725_482}", mpname = "#{XLRW_210725_39}"},--Ø¤°ï
-		[3] = {str = "#{XLRW_210725_252}", strlink = "#{XLRW_210725_529}", liupainame = "#{XLRW_210725_487}", mpname = "#{XLRW_210725_40}"},--Îäµ±
-		[4] = {str = "#{XLRW_210725_258}", strlink = "#{XLRW_210725_535}", liupainame = "#{XLRW_210725_493}", mpname = "#{XLRW_210725_35}"},--¶ëáÒ
-		[5] = {str = "#{XLRW_210725_260}", strlink = "#{XLRW_210725_537}", liupainame = "#{XLRW_210725_495}", mpname = "#{XLRW_210725_41}"},--ĞÇËŞ
-		[6] = {str = "#{XLRW_210725_254}", strlink = "#{XLRW_210725_531}", liupainame = "#{XLRW_210725_489}", mpname = "#{XLRW_210725_42}"},--ÌìÁú
-		[7] = {str = "#{XLRW_210725_262}", strlink = "#{XLRW_210725_539}", liupainame = "#{XLRW_210725_497}", mpname = "#{XLRW_210725_36}"},--ÌìÉ½
-		[8] = {str = "#{XLRW_210725_256}", strlink = "#{XLRW_210725_533}", liupainame = "#{XLRW_210725_491}", mpname = "#{XLRW_210725_37}"},--åĞÒ£
-		[10] = {str = "#{XLRW_210725_771}", strlink = "#{XLRW_210725_736}", liupainame = "#{XLRW_210725_738}", mpname = "#{XLRW_210725_741}"},--ÂüÍÓÉ½×¯
+		[0] = {str = "#{XLRW_210725_245}", strlink = "#{XLRW_210725_522}", liupainame = "#{XLRW_210725_480}", mpname = "#{XLRW_210725_43}"},--??
+		[1] = {str = "#{XLRW_210725_249}", strlink = "#{XLRW_210725_526}", liupainame = "#{XLRW_210725_484}", mpname = "#{XLRW_210725_38}"},--??
+		[2] = {str = "#{XLRW_210725_247}", strlink = "#{XLRW_210725_524}", liupainame = "#{XLRW_210725_482}", mpname = "#{XLRW_210725_39}"},--??
+		[3] = {str = "#{XLRW_210725_252}", strlink = "#{XLRW_210725_529}", liupainame = "#{XLRW_210725_487}", mpname = "#{XLRW_210725_40}"},--??
+		[4] = {str = "#{XLRW_210725_258}", strlink = "#{XLRW_210725_535}", liupainame = "#{XLRW_210725_493}", mpname = "#{XLRW_210725_35}"},--??
+		[5] = {str = "#{XLRW_210725_260}", strlink = "#{XLRW_210725_537}", liupainame = "#{XLRW_210725_495}", mpname = "#{XLRW_210725_41}"},--??
+		[6] = {str = "#{XLRW_210725_254}", strlink = "#{XLRW_210725_531}", liupainame = "#{XLRW_210725_489}", mpname = "#{XLRW_210725_42}"},--??
+		[7] = {str = "#{XLRW_210725_262}", strlink = "#{XLRW_210725_539}", liupainame = "#{XLRW_210725_497}", mpname = "#{XLRW_210725_36}"},--??
+		[8] = {str = "#{XLRW_210725_256}", strlink = "#{XLRW_210725_533}", liupainame = "#{XLRW_210725_491}", mpname = "#{XLRW_210725_37}"},--??
+		[10] = {str = "#{XLRW_210725_771}", strlink = "#{XLRW_210725_736}", liupainame = "#{XLRW_210725_738}", mpname = "#{XLRW_210725_741}"},--????
 	}
 	local g_LiuPaiA = 0
 	local g_LiuPaiB = 1
@@ -3682,41 +3682,41 @@ end
 
 function QuestLog_GetXiuLianMission_TargetNameStr( menpaiid, liupaiid )
 	local g_MenPaiNpcA = {
-		[0] = {str = "#{XLRW_210725_246}", strlink = "#{WDSC_230605_75}", liupainame = "#{XLRW_210725_481}", mpname = "#{XLRW_210725_43}"},--ÉÙÁÖ
-		[1] = {str = "#{XLRW_210725_250}", strlink = "#{WDSC_230605_79}", liupainame = "#{XLRW_210725_485}", mpname = "#{XLRW_210725_38}"},--Ã÷½Ì
-		[2] = {str = "#{XLRW_210725_248}", strlink = "#{WDSC_230605_77}", liupainame = "#{XLRW_210725_483}", mpname = "#{XLRW_210725_39}"},--Ø¤°ï
-		[3] = {str = "#{XLRW_210725_251}", strlink = "#{WDSC_230605_80}", liupainame = "#{XLRW_210725_486}", mpname = "#{XLRW_210725_40}"},--Îäµ±
-		[4] = {str = "#{XLRW_210725_257}", strlink = "#{WDSC_230605_86}", liupainame = "#{XLRW_210725_492}", mpname = "#{XLRW_210725_35}"},--¶ëáÒ
-		[5] = {str = "#{XLRW_210725_259}", strlink = "#{WDSC_230605_88}", liupainame = "#{XLRW_210725_494}", mpname = "#{XLRW_210725_41}"},--ĞÇËŞ
-		[6] = {str = "#{XLRW_210725_253}", strlink = "#{WDSC_230605_82}", liupainame = "#{XLRW_210725_488}", mpname = "#{XLRW_210725_42}"},--ÌìÁú
-		[7] = {str = "#{XLRW_210725_261}", strlink = "#{WDSC_230605_90}", liupainame = "#{XLRW_210725_496}", mpname = "#{XLRW_210725_36}"},--ÌìÉ½
-		[8] = {str = "#{XLRW_210725_255}", strlink = "#{WDSC_230605_84}", liupainame = "#{XLRW_210725_490}", mpname = "#{XLRW_210725_37}"},--åĞÒ£
-		[10] = {str = "#{XLRW_210725_770}", strlink = "#{WDSC_230605_92}", liupainame = "#{XLRW_210725_737}", mpname = "#{XLRW_210725_741}"},--ÂüÍÓÉ½×¯
+		[0] = {str = "#{XLRW_210725_246}", strlink = "#{WDSC_230605_75}", liupainame = "#{XLRW_210725_481}", mpname = "#{XLRW_210725_43}"},--??
+		[1] = {str = "#{XLRW_210725_250}", strlink = "#{WDSC_230605_79}", liupainame = "#{XLRW_210725_485}", mpname = "#{XLRW_210725_38}"},--??
+		[2] = {str = "#{XLRW_210725_248}", strlink = "#{WDSC_230605_77}", liupainame = "#{XLRW_210725_483}", mpname = "#{XLRW_210725_39}"},--??
+		[3] = {str = "#{XLRW_210725_251}", strlink = "#{WDSC_230605_80}", liupainame = "#{XLRW_210725_486}", mpname = "#{XLRW_210725_40}"},--??
+		[4] = {str = "#{XLRW_210725_257}", strlink = "#{WDSC_230605_86}", liupainame = "#{XLRW_210725_492}", mpname = "#{XLRW_210725_35}"},--??
+		[5] = {str = "#{XLRW_210725_259}", strlink = "#{WDSC_230605_88}", liupainame = "#{XLRW_210725_494}", mpname = "#{XLRW_210725_41}"},--??
+		[6] = {str = "#{XLRW_210725_253}", strlink = "#{WDSC_230605_82}", liupainame = "#{XLRW_210725_488}", mpname = "#{XLRW_210725_42}"},--??
+		[7] = {str = "#{XLRW_210725_261}", strlink = "#{WDSC_230605_90}", liupainame = "#{XLRW_210725_496}", mpname = "#{XLRW_210725_36}"},--??
+		[8] = {str = "#{XLRW_210725_255}", strlink = "#{WDSC_230605_84}", liupainame = "#{XLRW_210725_490}", mpname = "#{XLRW_210725_37}"},--??
+		[10] = {str = "#{XLRW_210725_770}", strlink = "#{WDSC_230605_92}", liupainame = "#{XLRW_210725_737}", mpname = "#{XLRW_210725_741}"},--????
 	}
 
 	local g_MenPaiNpcB = {
-		[0] = {str = "#{XLRW_210725_245}", strlink = "#{WDSC_230605_74}", liupainame = "#{XLRW_210725_480}", mpname = "#{XLRW_210725_43}"},--ÉÙÁÖ
-		[1] = {str = "#{XLRW_210725_249}", strlink = "#{WDSC_230605_78}", liupainame = "#{XLRW_210725_484}", mpname = "#{XLRW_210725_38}"},--Ã÷½Ì
-		[2] = {str = "#{XLRW_210725_247}", strlink = "#{WDSC_230605_76}", liupainame = "#{XLRW_210725_482}", mpname = "#{XLRW_210725_39}"},--Ø¤°ï
-		[3] = {str = "#{XLRW_210725_252}", strlink = "#{WDSC_230605_81}", liupainame = "#{XLRW_210725_487}", mpname = "#{XLRW_210725_40}"},--Îäµ±
-		[4] = {str = "#{XLRW_210725_258}", strlink = "#{WDSC_230605_87}", liupainame = "#{XLRW_210725_493}", mpname = "#{XLRW_210725_35}"},--¶ëáÒ
-		[5] = {str = "#{XLRW_210725_260}", strlink = "#{WDSC_230605_89}", liupainame = "#{XLRW_210725_495}", mpname = "#{XLRW_210725_41}"},--ĞÇËŞ
-		[6] = {str = "#{XLRW_210725_254}", strlink = "#{WDSC_230605_83}", liupainame = "#{XLRW_210725_489}", mpname = "#{XLRW_210725_42}"},--ÌìÁú
-		[7] = {str = "#{XLRW_210725_262}", strlink = "#{WDSC_230605_91}", liupainame = "#{XLRW_210725_497}", mpname = "#{XLRW_210725_36}"},--ÌìÉ½
-		[8] = {str = "#{XLRW_210725_256}", strlink = "#{WDSC_230605_85}", liupainame = "#{XLRW_210725_491}", mpname = "#{XLRW_210725_37}"},--åĞÒ£
-		[10] = {str = "#{XLRW_210725_771}", strlink = "#{WDSC_230605_93}", liupainame = "#{XLRW_210725_738}", mpname = "#{XLRW_210725_741}"},--ÂüÍÓÉ½×¯
+		[0] = {str = "#{XLRW_210725_245}", strlink = "#{WDSC_230605_74}", liupainame = "#{XLRW_210725_480}", mpname = "#{XLRW_210725_43}"},--??
+		[1] = {str = "#{XLRW_210725_249}", strlink = "#{WDSC_230605_78}", liupainame = "#{XLRW_210725_484}", mpname = "#{XLRW_210725_38}"},--??
+		[2] = {str = "#{XLRW_210725_247}", strlink = "#{WDSC_230605_76}", liupainame = "#{XLRW_210725_482}", mpname = "#{XLRW_210725_39}"},--??
+		[3] = {str = "#{XLRW_210725_252}", strlink = "#{WDSC_230605_81}", liupainame = "#{XLRW_210725_487}", mpname = "#{XLRW_210725_40}"},--??
+		[4] = {str = "#{XLRW_210725_258}", strlink = "#{WDSC_230605_87}", liupainame = "#{XLRW_210725_493}", mpname = "#{XLRW_210725_35}"},--??
+		[5] = {str = "#{XLRW_210725_260}", strlink = "#{WDSC_230605_89}", liupainame = "#{XLRW_210725_495}", mpname = "#{XLRW_210725_41}"},--??
+		[6] = {str = "#{XLRW_210725_254}", strlink = "#{WDSC_230605_83}", liupainame = "#{XLRW_210725_489}", mpname = "#{XLRW_210725_42}"},--??
+		[7] = {str = "#{XLRW_210725_262}", strlink = "#{WDSC_230605_91}", liupainame = "#{XLRW_210725_497}", mpname = "#{XLRW_210725_36}"},--??
+		[8] = {str = "#{XLRW_210725_256}", strlink = "#{WDSC_230605_85}", liupainame = "#{XLRW_210725_491}", mpname = "#{XLRW_210725_37}"},--??
+		[10] = {str = "#{XLRW_210725_771}", strlink = "#{WDSC_230605_93}", liupainame = "#{XLRW_210725_738}", mpname = "#{XLRW_210725_741}"},--????
 	}
 	local g_ZhangMen = {
-		[0] = "#{WDSC_230605_60}",--ÉÙÁÖ
-		[1] = "#{WDSC_230605_62}",--Ã÷½Ì
-		[2] = "#{WDSC_230605_61}",--Ø¤°ï
-		[3] = "#{WDSC_230605_63}",--Îäµ±
-		[4] = "#{WDSC_230605_66}",--¶ëáÒ
-		[5] = "#{WDSC_230605_67}",--ĞÇËŞ
-		[6] = "#{WDSC_230605_64}",--ÌìÁú
-		[7] = "#{WDSC_230605_68}",--ÌìÉ½
-		[8] = "#{WDSC_230605_65}",--åĞÒ£
-		[10] = "#{WDSC_230605_69}",--ÂüÍÓÉ½×¯
+		[0] = "#{WDSC_230605_60}",--??
+		[1] = "#{WDSC_230605_62}",--??
+		[2] = "#{WDSC_230605_61}",--??
+		[3] = "#{WDSC_230605_63}",--??
+		[4] = "#{WDSC_230605_66}",--??
+		[5] = "#{WDSC_230605_67}",--??
+		[6] = "#{WDSC_230605_64}",--??
+		[7] = "#{WDSC_230605_68}",--??
+		[8] = "#{WDSC_230605_65}",--??
+		[10] = "#{WDSC_230605_69}",--????
 	}
 	local g_LiuPaiA = 0
 	local g_LiuPaiB = 1
@@ -3729,8 +3729,8 @@ function QuestLog_GetXiuLianMission_TargetNameStr( menpaiid, liupaiid )
 	return "","","",""
 end
 
-function QuestLog_GetXiuLianMission1_NameStr( nIndex )--ÈÎÎñ1--´ğÌâ³¡¾°ÃûºÍnpcÃû
-	local npcList = {	--³¡¾°Ãû npcÃû³¬Á´½Ó
+function QuestLog_GetXiuLianMission1_NameStr( nIndex )--??1--??????npc?
+	local npcList = {	--??? npc????
 		{"#{XLRW_210725_263}","#{XLRW_210725_267}",},{"#{XLRW_210725_263}","#{XLRW_210725_268}",},{"#{XLRW_210725_263}","#{XLRW_210725_269}",},{"#{XLRW_210725_263}","#{XLRW_210725_270}",},
 		{"#{XLRW_210725_263}","#{XLRW_210725_271}",},{"#{XLRW_210725_263}","#{XLRW_210725_272}",},{"#{XLRW_210725_264}","#{XLRW_210725_273}",},{"#{XLRW_210725_264}","#{XLRW_210725_274}",},
 		{"#{XLRW_210725_264}","#{XLRW_210725_275}",},{"#{XLRW_210725_264}","#{XLRW_210725_276}",},{"#{XLRW_210725_264}","#{XLRW_210725_277}",},{"#{XLRW_210725_264}","#{XLRW_210725_278}",},
@@ -3784,7 +3784,7 @@ function QuestLog_GetTrack_XiuLianMission1( nMissionIndex )
 		return "#W"..ScriptGlobal_Format("#{XLRW_210725_22}", mpnpcnamelink)
 	end
 end
-function QuestLog_GetXiuLianMission2_NameStr( mp, nIndex )--ÈÎÎñ2--²É¼¯ÊıÁ¿ ²É¼¯Ãû×Ö
+function QuestLog_GetXiuLianMission2_NameStr( mp, nIndex )--??2--???? ????
 	local g_ItemList = {
 		[0] = { 	{num=3,name="#{XLRW_210725_291}",posname="#{XLRW_210725_612}",},	{num=3,name="#{XLRW_210725_292}",posname="#{XLRW_210725_613}",},	{num=1,name="#{XLRW_210725_293}",posname="#{XLRW_210725_614}",}, },
 		[1] = { 	{num=3,name="#{XLRW_210725_297}",posname="#{XLRW_210725_618}",}, 	{num=3,name="#{XLRW_210725_298}",posname="#{XLRW_210725_619}",},	{num=1,name="#{XLRW_210725_299}",posname="#{XLRW_210725_620}",}, },
@@ -3845,7 +3845,7 @@ function QuestLog_GetTrack_XiuLianMission2( nMissionIndex )
 		return "#W"..ScriptGlobal_Format("#{XLRW_210725_22}", mpnpcnamelink)
 	end
 end
-function QuestLog_GetXiuLianMission3_ScenePosStr( menpaiid, nIndex )--ÈÎÎñ3--´ò×øµØµã
+function QuestLog_GetXiuLianMission3_ScenePosStr( menpaiid, nIndex )--??3--????
 	local ScenePosList = { 
 		[0] = {menpaiid=0,	sceneid=9,	str = {"#{XLRW_210725_639}","#{XLRW_210725_640}","#{XLRW_210725_641}",} } ,
 		[1] = {menpaiid=1,	sceneid=11,	str = {"#{XLRW_210725_645}","#{XLRW_210725_646}","#{XLRW_210725_647}",} },
@@ -3905,18 +3905,18 @@ function QuestLog_GetTrack_XiuLianMission3( nMissionIndex )
 	--ÈÎÎñ×·×Ù
 	return strTrack
 end
-function QuestLog_GetXiuLianMission4_FubenNameStr( nIndex )--ÈÎÎñ4--¸±±¾Èë¿Únpc
+function QuestLog_GetXiuLianMission4_FubenNameStr( nIndex )--??4--????npc
 	local npcList = {		
-	[0] = "#{XLRW_210725_540}",--ÉÙÁÖ
-	[1] = "#{XLRW_210725_542}",--Ã÷½Ì
-	[2] = "#{XLRW_210725_541}",--Ø¤°ï
-	[3] = "#{XLRW_210725_543}",--Îäµ±
-	[4] = "#{XLRW_210725_546}",--¶ëáÒ
-	[5] = "#{XLRW_210725_547}",--ĞÇËŞ
-	[6] = "#{XLRW_210725_544}",--ÌìÁú
-	[7] = "#{XLRW_210725_548}",--ÌìÉ½
-	[8] = "#{XLRW_210725_545}",--åĞÒ£
-	[10] = "#{XLRW_210725_753}",--ÂüÍÓ
+	[0] = "#{XLRW_210725_540}",--??
+	[1] = "#{XLRW_210725_542}",--??
+	[2] = "#{XLRW_210725_541}",--??
+	[3] = "#{XLRW_210725_543}",--??
+	[4] = "#{XLRW_210725_546}",--??
+	[5] = "#{XLRW_210725_547}",--??
+	[6] = "#{XLRW_210725_544}",--??
+	[7] = "#{XLRW_210725_548}",--??
+	[8] = "#{XLRW_210725_545}",--??
+	[10] = "#{XLRW_210725_753}",--??
 	}
 	local tNpc = npcList[nIndex]
 	if tNpc ~= nil then
@@ -3924,11 +3924,11 @@ function QuestLog_GetXiuLianMission4_FubenNameStr( nIndex )--ÈÎÎñ4--¸±±¾Èë¿Únpc
 	end
 	return ""
 end
-function QuestLog_GetXiuLianMission4_NameStr( nIndex )--ÈÎÎñ4-BOSSÃû×Ö Ğ¡¹ÖÃû×Ö
+function QuestLog_GetXiuLianMission4_NameStr( nIndex )--??4-BOSS?? ????
 	local npcList = {		
-		[1] =	{		MonsterName = "³àÍ«Ğ¡×ä", BossName = "Ò±Á¦ĞĞ", 	},
-		[2] =	{		MonsterName = "Ï÷Ãæ¹íÈË", BossName = "ÉêÍÀ",  },	
-		[3] =	{		MonsterName = "Ï¸ÑüÄĞÙ¸", BossName = "ºçÆßÄï",  },
+		[1] =	{		MonsterName = "Xích Ğ°ng ti¬u t¯t", BossName = "Dã n² lñc thñc hi®n", 	},
+		[2] =	{		MonsterName = "Mì QuÖ Nhân", BossName = "Thân Ğ°",  },	
+		[3] =	{		MonsterName = "Eo nhö Nam Dõng", BossName = "H°ng Th¤t Nß½ng",  },
 	}
 	local tNpc = npcList[nIndex]
 	if tNpc ~= nil then
@@ -3982,18 +3982,18 @@ function QuestLog_GetTrack_XiuLianMission4( nMissionIndex )
 		return "#W"..ScriptGlobal_Format("#{XLRW_210725_22}", mpnpcnamelink)
 	end
 end
-function QuestLog_GetXiuLianMission5_NameStr( nIndex )--ÈÎÎñ5--¸±±¾Èë¿ÚnpcÃÅÅÉ+Ãû×Ö ²ĞÓ°Ãû×Ö
+function QuestLog_GetXiuLianMission5_NameStr( nIndex )--??5--????npc??+?? ????
 	local npcList = {		
-		[0] = { MonsterName = "ÉÙÁÖ²ĞÓ°", NPCName = "#{XLRW_210725_76}", mpname="#{XLRW_210725_43}", },--ÉÙÁÖ
-		[1] = { MonsterName = "Ã÷½Ì²ĞÓ°", NPCName = "#{XLRW_210725_80}", mpname="#{XLRW_210725_38}", },--Ã÷½Ì
-		[2] = { MonsterName = "Ø¤°ï²ĞÓ°", NPCName = "#{XLRW_210725_78}", mpname="#{XLRW_210725_39}", },--Ø¤°ï
-		[3] = { MonsterName = "Îäµ±²ĞÓ°", NPCName = "#{XLRW_210725_82}", mpname="#{XLRW_210725_40}", },--Îäµ±
-		[4] = { MonsterName = "¶ëáÒ²ĞÓ°", NPCName = "#{XLRW_210725_88}", mpname="#{XLRW_210725_35}", },--¶ëáÒ
-		[5] = { MonsterName = "ĞÇËŞ²ĞÓ°", NPCName = "#{XLRW_210725_90}", mpname="#{XLRW_210725_41}", },--ĞÇËŞ
-		[6] = { MonsterName = "ÌìÁú²ĞÓ°", NPCName = "#{XLRW_210725_84}", mpname="#{XLRW_210725_42}", },--ÌìÁú
-		[7] = { MonsterName = "ÌìÉ½²ĞÓ°", NPCName = "#{XLRW_210725_92}", mpname="#{XLRW_210725_36}", },--ÌìÉ½
-		[8] = { MonsterName = "åĞÒ£²ĞÓ°", NPCName = "#{XLRW_210725_86}", mpname="#{XLRW_210725_37}", },--åĞÒ£
-		[10] = { MonsterName = "ÂüÍÓ²ĞÓ°", NPCName = "#{XLRW_210725_755}", mpname="#{XLRW_210725_741}", },--ÂüÍÓ
+		[0] = { MonsterName = "Thiªu Lâm tàn änh", NPCName = "#{XLRW_210725_76}", mpname="#{XLRW_210725_43}", },--??
+		[1] = { MonsterName = "Minh Giáo tàn änh", NPCName = "#{XLRW_210725_80}", mpname="#{XLRW_210725_38}", },--??
+		[2] = { MonsterName = "Cái Bang tàn änh", NPCName = "#{XLRW_210725_78}", mpname="#{XLRW_210725_39}", },--??
+		[3] = { MonsterName = "Võ Ğang tàn änh", NPCName = "#{XLRW_210725_82}", mpname="#{XLRW_210725_40}", },--??
+		[4] = { MonsterName = "Nga Mi tàn änh", NPCName = "#{XLRW_210725_88}", mpname="#{XLRW_210725_35}", },--??
+		[5] = { MonsterName = "Tinh Túc tàn änh", NPCName = "#{XLRW_210725_90}", mpname="#{XLRW_210725_41}", },--??
+		[6] = { MonsterName = "Thiên Long tàn änh", NPCName = "#{XLRW_210725_84}", mpname="#{XLRW_210725_42}", },--??
+		[7] = { MonsterName = "Thiên S½n tàn änh", NPCName = "#{XLRW_210725_92}", mpname="#{XLRW_210725_36}", },--??
+		[8] = { MonsterName = "Tiêu dao tàn änh", NPCName = "#{XLRW_210725_86}", mpname="#{XLRW_210725_37}", },--??
+		[10] = { MonsterName = "MÕn Ğà tàn änh", NPCName = "#{XLRW_210725_755}", mpname="#{XLRW_210725_741}", },--??
 	}
 	local tNpc = npcList[nIndex]
 	if tNpc ~= nil then
@@ -4041,87 +4041,87 @@ function QuestLog_GetTrack_XiuLianMission5( nMissionIndex )
 		return "#W"..ScriptGlobal_Format("#{XLRW_210725_22}", mpnpcnamelink)
 	end
 end
-function QuestLog_GetXiuLianMission6_TargetNpcStr( menpaiid, nIndex )--ÈÎÎñ6--Ä¿±ênpc
+function QuestLog_GetXiuLianMission6_TargetNpcStr( menpaiid, nIndex )--??6--??npc
 	local MenPaiTargetNpc = { 
 		[0] = { 
-				[1] = { npcname = "Ğş¶É", namestr = "#{XLRW_210725_347}", strlink = "#{XLRW_210725_549}"}, 
-				[2] = { npcname = "Ğş´È", namestr = "#{XLRW_210725_348}", strlink = "#{XLRW_210725_550}"}, 
-				[3] = { npcname = "Ğş¼Å", namestr = "#{XLRW_210725_349}", strlink = "#{XLRW_210725_551}"}, 
-				[4] = { npcname = "ĞşÄÑ", namestr = "#{XLRW_210725_350}", strlink = "#{XLRW_210725_552}"}, 
-				[5] = { npcname = "ĞşÃğ", namestr = "#{XLRW_210725_352}", strlink = "#{XLRW_210725_554}"}, 
-				[6] = { npcname = "ĞşÃù", namestr = "#{XLRW_210725_353}", strlink = "#{XLRW_210725_555}"}, 
+				[1] = { npcname = "Huy«n Ğµ", namestr = "#{XLRW_210725_347}", strlink = "#{XLRW_210725_549}"}, 
+				[2] = { npcname = "Huy«n T×", namestr = "#{XLRW_210725_348}", strlink = "#{XLRW_210725_550}"}, 
+				[3] = { npcname = "Huy«n T¸ch", namestr = "#{XLRW_210725_349}", strlink = "#{XLRW_210725_551}"}, 
+				[4] = { npcname = "Huy«n NÕn", namestr = "#{XLRW_210725_350}", strlink = "#{XLRW_210725_552}"}, 
+				[5] = { npcname = "Huy«n Di®t", namestr = "#{XLRW_210725_352}", strlink = "#{XLRW_210725_554}"}, 
+				[6] = { npcname = "Huy«n Minh", namestr = "#{XLRW_210725_353}", strlink = "#{XLRW_210725_555}"}, 
 				},
 		[1] = {
-				[1] = { npcname = "ÁÖÑÒ", namestr = "#{XLRW_210725_361}", strlink = "#{XLRW_210741_563}"}, 
-				[2] = { npcname = "·½°Ù»¨", namestr = "#{XLRW_210725_362}", strlink = "#{XLRW_210741_564}"}, 
-				[3] = { npcname = "·½À°", namestr = "#{XLRW_210725_363}", strlink = "#{XLRW_210741_565}"}, 
-				[4] = { npcname = "ÂêÀ­", namestr = "#{XLRW_210725_364}", strlink = "#{XLRW_210741_566}"}, 
-				[5] = { npcname = "·½Ìì¶¨", namestr = "#{XLRW_210725_365}", strlink = "#{XLRW_210741_567}"}, 
-				[6] = { npcname = "À÷ÌìÓÓ", namestr = "#{XLRW_210725_366}", strlink = "#{XLRW_210741_568}"}, 
+				[1] = { npcname = "Lâm Nham", namestr = "#{XLRW_210725_361}", strlink = "#{XLRW_210741_563}"}, 
+				[2] = { npcname = "Phß½ng Bách Hoa", namestr = "#{XLRW_210725_362}", strlink = "#{XLRW_210741_564}"}, 
+				[3] = { npcname = "Phß½ng LÕp", namestr = "#{XLRW_210725_363}", strlink = "#{XLRW_210741_565}"}, 
+				[4] = { npcname = "Mã LÕp", namestr = "#{XLRW_210725_364}", strlink = "#{XLRW_210741_566}"}, 
+				[5] = { npcname = "Phß½ng Thiên Ğ¸nh", namestr = "#{XLRW_210725_365}", strlink = "#{XLRW_210741_567}"}, 
+				[6] = { npcname = "L® Thiên Hñu", namestr = "#{XLRW_210725_366}", strlink = "#{XLRW_210741_568}"}, 
 				},
 		[2] = {
-				[1] = { npcname = "ŞÉÈıÆî", namestr = "#{XLRW_210725_354}", strlink = "#{XLRW_210733_556}"}, 
-				[2] = { npcname = "Îâ³¤·ç", namestr = "#{XLRW_210725_355}", strlink = "#{XLRW_210733_557}"}, 
-				[3] = { npcname = "ÉÏ¹Ù³¤Óê", namestr = "#{XLRW_210725_356}", strlink = "#{XLRW_210733_558}"}, 
-				[4] = { npcname = "ÕÅÈ«Ïé", namestr = "#{XLRW_210725_358}", strlink = "#{XLRW_210733_560}"}, 
-				[5] = { npcname = "ËÎ´È", namestr = "#{XLRW_210725_359}", strlink = "#{XLRW_210733_561}"}, 
-				[6] = { npcname = "°×ÊÀ¾µ", namestr = "#{XLRW_210725_360}", strlink = "#{XLRW_210733_562}"}, 
+				[1] = { npcname = "H« Tam Kì", namestr = "#{XLRW_210725_354}", strlink = "#{XLRW_210733_556}"}, 
+				[2] = { npcname = "Ngô Trß¶ng Phong", namestr = "#{XLRW_210725_355}", strlink = "#{XLRW_210733_557}"}, 
+				[3] = { npcname = "Thßşng Quan Trß¶ng Vû", namestr = "#{XLRW_210725_356}", strlink = "#{XLRW_210733_558}"}, 
+				[4] = { npcname = "Trß½ng Toàn Tß¶ng", namestr = "#{XLRW_210725_358}", strlink = "#{XLRW_210733_560}"}, 
+				[5] = { npcname = "T¯ng T×", namestr = "#{XLRW_210725_359}", strlink = "#{XLRW_210733_561}"}, 
+				[6] = { npcname = "BÕch Thª Kính", namestr = "#{XLRW_210725_360}", strlink = "#{XLRW_210733_562}"}, 
 				},
 		[3] = {
-				[1] = { npcname = "ÕÅĞşËØ", namestr = "#{XLRW_210725_368}", strlink = "#{XLRW_210749_570}"}, 
-				[2] = { npcname = "ÓáÔ¶É½", namestr = "#{XLRW_210725_369}", strlink = "#{XLRW_210749_571}"}, 
-				[3] = { npcname = "º×ÔÆµÀÈË", namestr = "#{XLRW_210725_370}", strlink = "#{XLRW_210749_572}"}, 
-				[4] = { npcname = "ÄªÌ«³å", namestr = "#{XLRW_210725_372}", strlink = "#{XLRW_210749_574}"}, 
-				[5] = { npcname = "ÁÖÁéËØ", namestr = "#{XLRW_210725_373}", strlink = "#{XLRW_210749_575}"}, 
-				[6] = { npcname = "ÕÅÖĞĞĞ", namestr = "#{XLRW_210725_374}", strlink = "#{XLRW_210749_576}"}, 
+				[1] = { npcname = "Trß½ng Huy«n T¯", namestr = "#{XLRW_210725_368}", strlink = "#{XLRW_210749_570}"}, 
+				[2] = { npcname = "Du Vi­n S½n", namestr = "#{XLRW_210725_369}", strlink = "#{XLRW_210749_571}"}, 
+				[3] = { npcname = "HÕc Vân ĞÕo Nhân", namestr = "#{XLRW_210725_370}", strlink = "#{XLRW_210749_572}"}, 
+				[4] = { npcname = "MÕc Thái Xung", namestr = "#{XLRW_210725_372}", strlink = "#{XLRW_210749_574}"}, 
+				[5] = { npcname = "Lâm Linh T¯", namestr = "#{XLRW_210725_373}", strlink = "#{XLRW_210749_575}"}, 
+				[6] = { npcname = "Trß½ng Trung Hành", namestr = "#{XLRW_210725_374}", strlink = "#{XLRW_210749_576}"}, 
 				},
 		[4] = {
-				[1] = { npcname = "´ŞÂÌ»ª", namestr = "#{XLRW_210725_389}", strlink = "#{XLRW_210773_591}"}, 
-				[2] = { npcname = "ÑîËÄÄï", namestr = "#{XLRW_210725_390}", strlink = "#{XLRW_210773_592}"}, 
-				[3] = { npcname = "ÃÏÇàÇà", namestr = "#{XLRW_210725_392}", strlink = "#{XLRW_210773_594}"}, 
-				[4] = { npcname = "ÃÏÁú", namestr = "#{XLRW_210725_393}", strlink = "#{XLRW_210773_595}"}, 
-				[5] = { npcname = "Ëï¶şÄï", namestr = "#{XLRW_210725_394}", strlink = "#{XLRW_210773_596}"}, 
-				[6] = { npcname = "ÀîÊ®¶şÄï", namestr = "#{XLRW_210725_395}", strlink = "#{XLRW_210773_597}"}, 
+				[1] = { npcname = "Thôi Løc Hoa", namestr = "#{XLRW_210725_389}", strlink = "#{XLRW_210773_591}"}, 
+				[2] = { npcname = "Dß½ng TÑ Nß½ng", namestr = "#{XLRW_210725_390}", strlink = "#{XLRW_210773_592}"}, 
+				[3] = { npcname = "MÕnh Thanh Thanh", namestr = "#{XLRW_210725_392}", strlink = "#{XLRW_210773_594}"}, 
+				[4] = { npcname = "Mãnh Long", namestr = "#{XLRW_210725_393}", strlink = "#{XLRW_210773_595}"}, 
+				[5] = { npcname = "Tôn Nh¸ Nß½ng", namestr = "#{XLRW_210725_394}", strlink = "#{XLRW_210773_596}"}, 
+				[6] = { npcname = "Lı Th§p Nh¸ Nß½ng", namestr = "#{XLRW_210725_395}", strlink = "#{XLRW_210773_597}"}, 
 				},
 		[5] = {
-				[1] = { npcname = "¶¡´ºÇï",  namestr = "#{XLRW_210725_396}", strlink = "#{XLRW_210781_598}"}, 
-				[2] = { npcname = "º«ÊÀÖÒ", namestr = "#{XLRW_210725_397}", strlink = "#{XLRW_210781_599}"}, 
-				[3] = { npcname = "ºìÓñ", namestr = "#{XLRW_210725_398}", strlink = "#{XLRW_210781_600}"}, 
-				[4] = { npcname = "³ö³¾×Ó", namestr = "#{XLRW_210725_399}", strlink = "#{XLRW_210781_601}"}, 
-				[5] = { npcname = "Ê©È«", namestr = "#{XLRW_210725_400}", strlink = "#{XLRW_210781_602}"}, 
-				[6] = { npcname = "ÍõÑå", namestr = "#{XLRW_210725_402}", strlink = "#{XLRW_210781_604}"}, 
+				[1] = { npcname = "Ğinh Xuân Thu",  namestr = "#{XLRW_210725_396}", strlink = "#{XLRW_210781_598}"}, 
+				[2] = { npcname = "Hàn Thª Trung", namestr = "#{XLRW_210725_397}", strlink = "#{XLRW_210781_599}"}, 
+				[3] = { npcname = "H°ng Ng÷c", namestr = "#{XLRW_210725_398}", strlink = "#{XLRW_210781_600}"}, 
+				[4] = { npcname = "Xu¤t Tr¥n TØ", namestr = "#{XLRW_210725_399}", strlink = "#{XLRW_210781_601}"}, 
+				[5] = { npcname = "Thi Toàn", namestr = "#{XLRW_210725_400}", strlink = "#{XLRW_210781_602}"}, 
+				[6] = { npcname = "Vß½ng NgÕn", namestr = "#{XLRW_210725_402}", strlink = "#{XLRW_210781_604}"}, 
 				},
 		[6] = {
-				[1] = { npcname = "±¾Òò", namestr = "#{XLRW_210725_375}", strlink = "#{XLRW_210757_577}"}, 
-				[2] = { npcname = "±¾¹Û", namestr = "#{XLRW_210725_376}", strlink = "#{XLRW_210757_578}"}, 
-				[3] = { npcname = "±¾Ïà", namestr = "#{XLRW_210725_377}", strlink = "#{XLRW_210757_579}"}, 
-				[4] = { npcname = "±¾·²", namestr = "#{XLRW_210725_378}", strlink = "#{XLRW_210757_580}"}, 
-				[5] = { npcname = "ÆÆàÁ", namestr = "#{XLRW_210725_380}", strlink = "#{XLRW_210757_582}"}, 
-				[6] = { npcname = "Ê¢ÈçÀ¼", namestr = "#{XLRW_210725_381}", strlink = "#{XLRW_210757_583}"}, 
+				[1] = { npcname = "Bän Nhân", namestr = "#{XLRW_210725_375}", strlink = "#{XLRW_210757_577}"}, 
+				[2] = { npcname = "Bän Quán", namestr = "#{XLRW_210725_376}", strlink = "#{XLRW_210757_578}"}, 
+				[3] = { npcname = "Bän Tß¾ng", namestr = "#{XLRW_210725_377}", strlink = "#{XLRW_210757_579}"}, 
+				[4] = { npcname = "Bän Phàm", namestr = "#{XLRW_210725_378}", strlink = "#{XLRW_210757_580}"}, 
+				[5] = { npcname = "Phá Sân", namestr = "#{XLRW_210725_380}", strlink = "#{XLRW_210757_582}"}, 
+				[6] = { npcname = "Thành Nhß Lan", namestr = "#{XLRW_210725_381}", strlink = "#{XLRW_210757_583}"}, 
 				},
 		[7] = {
-				[1] = { npcname = "ÎÚÀÏ´ó", namestr = "#{XLRW_210725_404}", strlink = "#{XLRW_210789_606}"}, 
-				[2] = { npcname = "Öñ½£", namestr = "#{XLRW_210725_405}", strlink = "#{XLRW_210789_607}"}, 
-				[3] = { npcname = "À¼½£", namestr = "#{XLRW_210725_406}", strlink = "#{XLRW_210789_608}"}, 
-				[4] = { npcname = "Ã·½£", namestr = "#{XLRW_210725_407}", strlink = "#{XLRW_210789_609}"}, 
-				[5] = { npcname = "·ûÃôÒÇ", namestr = "#{XLRW_210725_408}", strlink = "#{XLRW_210789_610}"}, 
-				[6] = { npcname = "¾Õ½£",  namestr = "#{XLRW_210725_409}", strlink = "#{XLRW_210789_611}"}, 
+				[1] = { npcname = "Ô Lão ĞÕi", namestr = "#{XLRW_210725_404}", strlink = "#{XLRW_210789_606}"}, 
+				[2] = { npcname = "Trúc Kiªm", namestr = "#{XLRW_210725_405}", strlink = "#{XLRW_210789_607}"}, 
+				[3] = { npcname = "Lan Kiªm", namestr = "#{XLRW_210725_406}", strlink = "#{XLRW_210789_608}"}, 
+				[4] = { npcname = "Mai Kiªm", namestr = "#{XLRW_210725_407}", strlink = "#{XLRW_210789_609}"}, 
+				[5] = { npcname = "Phù Mçn Nghi", namestr = "#{XLRW_210725_408}", strlink = "#{XLRW_210789_610}"}, 
+				[6] = { npcname = "Cúc Kiªm",  namestr = "#{XLRW_210725_409}", strlink = "#{XLRW_210789_611}"}, 
 				},
 		[8] = {
-				[1] = { npcname = "ËÕĞÇºÓ", namestr = "#{XLRW_210725_382}", strlink = "#{XLRW_210765_584}"}, 
-				[2] = { npcname = "¿µ¹ãÁê", namestr = "#{XLRW_210725_383}", strlink = "#{XLRW_210765_585}"}, 
-				[3] = { npcname = "Àî¿şÀÜ", namestr = "#{XLRW_210725_384}", strlink = "#{XLRW_210765_586}"}, 
-				[4] = { npcname = "ÇØ¹Û", namestr = "#{XLRW_210725_385}", strlink = "#{XLRW_210765_587}"}, 
-				[5] = { npcname = "Ê¯¸ÊÁØ", namestr = "#{XLRW_210725_386}", strlink = "#{XLRW_210765_588}"}, 
-				[6] = { npcname = "·ë°¢Èı", namestr = "#{XLRW_210725_387}", strlink = "#{XLRW_210765_589}"}, 
+				[1] = { npcname = "Tô Tinh Hà", namestr = "#{XLRW_210725_382}", strlink = "#{XLRW_210765_584}"}, 
+				[2] = { npcname = "Khang Quäng Lång", namestr = "#{XLRW_210725_383}", strlink = "#{XLRW_210765_585}"}, 
+				[3] = { npcname = "Lı Khôi L²i", namestr = "#{XLRW_210725_384}", strlink = "#{XLRW_210765_586}"}, 
+				[4] = { npcname = "T¥n Quán", namestr = "#{XLRW_210725_385}", strlink = "#{XLRW_210765_587}"}, 
+				[5] = { npcname = "ThÕch Cam Lâm", namestr = "#{XLRW_210725_386}", strlink = "#{XLRW_210765_588}"}, 
+				[6] = { npcname = "Phùng A Tam", namestr = "#{XLRW_210725_387}", strlink = "#{XLRW_210765_589}"}, 
 				},
 		[10] = {
-				[1] = { npcname = "ÌÕÁë", namestr = "#{XLRW_210725_768}", strlink = "#{XLRW_210725_769}"},
-				[2] = { npcname = "ÍõË®·ç", namestr = "#{XLRW_210725_758}", strlink = "#{XLRW_210725_759}"},
-				[3] = { npcname = "°×Ñ©", namestr = "#{XLRW_210725_760}", strlink = "#{XLRW_210725_761}"},
-				[4] = { npcname = "ÍõÓïæÌ", namestr = "#{XLRW_210725_762}", strlink = "#{XLRW_210725_763}"},
-				[5] = { npcname = "ÍõĞÇÀË", namestr = "#{XLRW_210725_764}", strlink = "#{XLRW_210725_765}"},
-				[6] = { npcname = "Ñô´º", namestr = "#{XLRW_210725_766}", strlink = "#{XLRW_210725_767}"},
+				[1] = { npcname = "Ğào Lînh", namestr = "#{XLRW_210725_768}", strlink = "#{XLRW_210725_769}"},
+				[2] = { npcname = "Vß½ng ThuÖ Phong", namestr = "#{XLRW_210725_758}", strlink = "#{XLRW_210725_759}"},
+				[3] = { npcname = "Tuyªt tr¡ng", namestr = "#{XLRW_210725_760}", strlink = "#{XLRW_210725_761}"},
+				[4] = { npcname = "Vß½ng Ngæ Yên", namestr = "#{XLRW_210725_762}", strlink = "#{XLRW_210725_763}"},
+				[5] = { npcname = "Vß½ng Tinh Lãng", namestr = "#{XLRW_210725_764}", strlink = "#{XLRW_210725_765}"},
+				[6] = { npcname = "Mùa xuân", namestr = "#{XLRW_210725_766}", strlink = "#{XLRW_210725_767}"},
 				},
 	}
 	
@@ -4403,16 +4403,16 @@ end
 function QuestLog_GetXiuLianMission_Str( menpaiid, liupaiid )
 	
 	local str = {
-		[0] = {[0] = "#{WDEC_220425_109}", [1] = "#{WDEC_220425_108}",},--ÉÙÁÖ
-		[1] = {[0] = "#{WDEC_220425_113}", [1] = "#{WDEC_220425_112}",},--Ã÷½Ì
-		[2] = {[0] = "#{WDEC_220425_111}", [1] = "#{WDEC_220425_110}",},--Ø¤°ï
-		[3] = {[0] = "#{WDEC_220425_114}", [1] = "#{WDEC_220425_115}",},--Îäµ±
-		[4] = {[0] = "#{WDEC_220425_120}", [1] = "#{WDEC_220425_121}",},--¶ëáÒ
-		[5] = {[0] = "#{WDEC_220425_122}", [1] = "#{WDEC_220425_123}",},--ĞÇËŞ
-		[6] = {[0] = "#{WDEC_220425_116}", [1] = "#{WDEC_220425_117}",},--ÌìÁú
-		[7] = {[0] = "#{WDEC_220425_124}", [1] = "#{WDEC_220425_125}",},--ÌìÉ½
-		[8] = {[0] = "#{WDEC_220425_118}", [1] = "#{WDEC_220425_119}",},--åĞÒ£
-		[10] = {[0] = "#{WDEC_220425_133}", [1] = "#{WDEC_220425_134}",},--ÂüÍÓ
+		[0] = {[0] = "#{WDEC_220425_109}", [1] = "#{WDEC_220425_108}",},--??
+		[1] = {[0] = "#{WDEC_220425_113}", [1] = "#{WDEC_220425_112}",},--??
+		[2] = {[0] = "#{WDEC_220425_111}", [1] = "#{WDEC_220425_110}",},--??
+		[3] = {[0] = "#{WDEC_220425_114}", [1] = "#{WDEC_220425_115}",},--??
+		[4] = {[0] = "#{WDEC_220425_120}", [1] = "#{WDEC_220425_121}",},--??
+		[5] = {[0] = "#{WDEC_220425_122}", [1] = "#{WDEC_220425_123}",},--??
+		[6] = {[0] = "#{WDEC_220425_116}", [1] = "#{WDEC_220425_117}",},--??
+		[7] = {[0] = "#{WDEC_220425_124}", [1] = "#{WDEC_220425_125}",},--??
+		[8] = {[0] = "#{WDEC_220425_118}", [1] = "#{WDEC_220425_119}",},--??
+		[10] = {[0] = "#{WDEC_220425_133}", [1] = "#{WDEC_220425_134}",},--??
 	}
 
 	return str[menpaiid][liupaiid]
@@ -4430,7 +4430,7 @@ function QuestLog_GetTrack_MainLineMission8( nMissionIndex )
 	else
 		if param2 >= 1 and param2 <= 3 then
 			local strSceneName, strName, nPosX, nPosZ, nSceneId = QuestLog_GetMainLineMission_NameStr( param2 )
-			strTrack = string.format("#WÈ¥#G%s#WÕÒ#R%s#{_INFOAIM%d,%d,%d,%s}", strSceneName, strName, nPosX, nPosZ, nSceneId, strName);
+			strTrack = string.format("#WKHÑ#G%s#WTräo#R%s#{_INFOAIM%d, %d, %d, %s}", strSceneName, strName, nPosX, nPosZ, nSceneId, strName);
 		end
 	end
 	--ÈÎÎñ×·×Ù
@@ -4453,7 +4453,7 @@ function QuestLog_GetTrack_MainLineMission9( nMissionIndex )
 	else
 		if param2 >= 1 and param2 <= 3 then
 			local strSceneName, strName, nPosX, nPosZ, nSceneId = QuestLog_GetMainLineMission_NameStr( param2 )
-			strTrack = string.format("#WÈ¥#G%s#WÕÒ#R%s#{_INFOAIM%d,%d,%d,%s}", strSceneName, strName, nPosX, nPosZ, nSceneId, strName);
+			strTrack = string.format("#WKHÑ#G%s#WTräo#R%s#{_INFOAIM%d, %d, %d, %s}", strSceneName, strName, nPosX, nPosZ, nSceneId, strName);
 		end
 	end
 	--ÈÎÎñ×·×Ù
@@ -4476,7 +4476,7 @@ function QuestLog_GetTrack_MainLineMission10( nMissionIndex )
 	else
 		if param2 >= 1 and param2 <= 3 then
 			local strSceneName, strName, nPosX, nPosZ, nSceneId = QuestLog_GetMainLineMission_NameStr( param2 )
-			strTrack = string.format("#WÈ¥#G%s#WÕÒ#R%s#{_INFOAIM%d,%d,%d,%s}", strSceneName, strName, nPosX, nPosZ, nSceneId, strName);
+			strTrack = string.format("#WKHÑ#G%s#WTräo#R%s#{_INFOAIM%d, %d, %d, %s}", strSceneName, strName, nPosX, nPosZ, nSceneId, strName);
 		end
 	end
 	--ÈÎÎñ×·×Ù
@@ -4499,7 +4499,7 @@ function QuestLog_GetTrack_MainLineMission11( nMissionIndex )
 	else
 		if param2 >= 1 and param2 <= 3 then
 			local strSceneName, strName, nPosX, nPosZ, nSceneId = QuestLog_GetMainLineMission_NameStr( param2 )
-			strTrack = string.format("#WÈ¥#G%s#WÕÒ#R%s#{_INFOAIM%d,%d,%d,%s}", strSceneName, strName, nPosX, nPosZ, nSceneId, strName);
+			strTrack = string.format("#WKHÑ#G%s#WTräo#R%s#{_INFOAIM%d, %d, %d, %s}", strSceneName, strName, nPosX, nPosZ, nSceneId, strName);
 		end
 	end
 	--ÈÎÎñ×·×Ù
@@ -4522,7 +4522,7 @@ function QuestLog_GetTrack_MainLineMission12( nMissionIndex )
 	else
 		if param2 >= 1 and param2 <= 3 then
 			local strSceneName, strName, nPosX, nPosZ, nSceneId = QuestLog_GetMainLineMission_NameStr( param2 )
-			strTrack = string.format("#WÈ¥#G%s#WÕÒ#R%s#{_INFOAIM%d,%d,%d,%s}", strSceneName, strName, nPosX, nPosZ, nSceneId, strName);
+			strTrack = string.format("#WKHÑ#G%s#WTräo#R%s#{_INFOAIM%d, %d, %d, %s}", strSceneName, strName, nPosX, nPosZ, nSceneId, strName);
 		end
 	end
 	--ÈÎÎñ×·×Ù
@@ -4531,9 +4531,9 @@ end
 function QuestLog_GetMainLineMission_NameStr( index )
 	
 	local str = {
-	[1] = {name="Ä«Öª³î", sceneId=613, scenename="°×Ïªºş", posx=63, posz=53},
-	[2] = {name="½­ĞĞÔÆ", sceneId=614, scenename="ÊñÄÏÖñº£", posx=37, posz=119},
-	[3] = {name="Èî·ãÃß", sceneId=615, scenename="Î÷Á¹·ãÁÖ", posx=65, posz=52},
+	[1] = {name="M£c Tri S¥u", sceneId=613, scenename="BÕch Khê H°", posx=63, posz=53},
+	[2] = {name="Giang Hành Vân", sceneId=614, scenename="Thøc tre Häi", posx=37, posz=119},
+	[3] = {name="Nguy­n Phong Miên", sceneId=615, scenename="Tây Lß½ng Phong Lâm", posx=65, posz=52},
 	}
 	if index >= 1 and index <= 3 then
 		return str[index].scenename, str[index].name, str[index].posx, str[index].posz, str[index].sceneId
@@ -4545,24 +4545,24 @@ end
 --2023Q380¼¶Éñ±ø¾çÇéÈÎÎñ -- Start
 function QuestLog_GetTrack_202380SBJQ1(nSelIndex)
 	local StrInfo = {
-		[0] = {dist="#{SBJQ_230627_347}", target="#{SBJQ_230627_357}"}, --targetÓĞ±äÁ¿£¬2¸ö£¬²ÎÊı1¡¢2
-		[1] = {dist="#{SBJQ_230627_238}", target="#{SBJQ_230627_311}"}, --targetÓĞ±äÁ¿£¬1¸ö£¬²ÎÊı4
-		[2] = {dist="#{SBJQ_230627_241}", target="#{SBJQ_230627_312}"}, --targetÓĞ±äÁ¿£¬1¸ö£¬²ÎÊı4
-		[3] = {dist="#{SBJQ_230627_55}", target="#{SBJQ_230627_313}"}, --targetÓĞ±äÁ¿£¬1¸ö£¬²ÎÊı4
-		[4] = {dist="#{SBJQ_230627_55}", target="#{SBJQ_230627_313}"}, --targetÓĞ±äÁ¿£¬1¸ö£¬²ÎÊı4 ----------
-		[5] = {dist="#{SBJQ_230627_244}", target="#{SBJQ_230627_314}"}, --targetÓĞ±äÁ¿£¬1¸ö£¬²ÎÊı4
-		[6] = {dist="#{SBJQ_230627_245}", target="#{SBJQ_230627_315}"}, --targetÓĞ±äÁ¿£¬1¸ö£¬²ÎÊı4
-		[7] = {dist="#{SBJQ_230627_250}", target="#{SBJQ_230627_316}"}, --targetÓĞ±äÁ¿£¬1¸ö£¬²ÎÊı4
-		[8] = {dist="#{SBJQ_230627_62}", target="#{SBJQ_230627_317}"}, --targetÓĞ±äÁ¿£¬1¸ö£¬²ÎÊı4
-		[9] = {dist="#{SBJQ_230627_62}", target="#{SBJQ_230627_317}"}, --targetÓĞ±äÁ¿£¬1¸ö£¬²ÎÊı4 ----------
-		[10] = {dist="#{SBJQ_230627_318}", target="#{SBJQ_230627_319}"}, --targetÓĞ±äÁ¿£¬4¸ö£¬²ÎÊı4¡¢5¡¢6¡¢7
-		[11] = {dist="#{SBJQ_230627_264}", target="#{SBJQ_230627_320}"}, --targetÓĞ±äÁ¿£¬1¸ö£¬²ÎÊı4
-		[12] = {dist="#{SBJQ_230627_64}", target="#{SBJQ_230627_321}"}, --targetÓĞ±äÁ¿£¬1¸ö£¬²ÎÊı4
-		[13] = {dist="#{SBJQ_230627_352}", target="#{SBJQ_230627_353}"}, --targetÓĞ±äÁ¿£¬1¸ö£¬²ÎÊı4 ----------
-		[14] = {dist="#{SBJQ_230627_268}", target="#{SBJQ_230627_322}"}, --targetÓĞ±äÁ¿£¬1¸ö£¬²ÎÊı4
-		[15] = {dist="#{SBJQ_230627_271}", target="#{SBJQ_230627_323}"}, --targetÓĞ±äÁ¿£¬1¸ö£¬²ÎÊı4¡¢5
-		[16] = {dist="#{SBJQ_230627_281}", target="#{SBJQ_230627_324}"}, --targetÓĞ±äÁ¿£¬1¸ö£¬²ÎÊı4¡¢5
-		[17] = {dist="#{SBJQ_230627_347}", target="#{SBJQ_230627_357}"}, --targetÓĞ±äÁ¿£¬2¸ö£¬²ÎÊı1¡¢2
+		[0] = {dist="#{SBJQ_230627_347}", target="#{SBJQ_230627_357}"}, --target???,2?,??1?2
+		[1] = {dist="#{SBJQ_230627_238}", target="#{SBJQ_230627_311}"}, --target???,1?,??4
+		[2] = {dist="#{SBJQ_230627_241}", target="#{SBJQ_230627_312}"}, --target???,1?,??4
+		[3] = {dist="#{SBJQ_230627_55}", target="#{SBJQ_230627_313}"}, --target???,1?,??4
+		[4] = {dist="#{SBJQ_230627_55}", target="#{SBJQ_230627_313}"}, --target???,1?,??4 ----------
+		[5] = {dist="#{SBJQ_230627_244}", target="#{SBJQ_230627_314}"}, --target???,1?,??4
+		[6] = {dist="#{SBJQ_230627_245}", target="#{SBJQ_230627_315}"}, --target???,1?,??4
+		[7] = {dist="#{SBJQ_230627_250}", target="#{SBJQ_230627_316}"}, --target???,1?,??4
+		[8] = {dist="#{SBJQ_230627_62}", target="#{SBJQ_230627_317}"}, --target???,1?,??4
+		[9] = {dist="#{SBJQ_230627_62}", target="#{SBJQ_230627_317}"}, --target???,1?,??4 ----------
+		[10] = {dist="#{SBJQ_230627_318}", target="#{SBJQ_230627_319}"}, --target???,4?,??4?5?6?7
+		[11] = {dist="#{SBJQ_230627_264}", target="#{SBJQ_230627_320}"}, --target???,1?,??4
+		[12] = {dist="#{SBJQ_230627_64}", target="#{SBJQ_230627_321}"}, --target???,1?,??4
+		[13] = {dist="#{SBJQ_230627_352}", target="#{SBJQ_230627_353}"}, --target???,1?,??4 ----------
+		[14] = {dist="#{SBJQ_230627_268}", target="#{SBJQ_230627_322}"}, --target???,1?,??4
+		[15] = {dist="#{SBJQ_230627_271}", target="#{SBJQ_230627_323}"}, --target???,1?,??4?5
+		[16] = {dist="#{SBJQ_230627_281}", target="#{SBJQ_230627_324}"}, --target???,1?,??4?5
+		[17] = {dist="#{SBJQ_230627_347}", target="#{SBJQ_230627_357}"}, --target???,2?,??1?2
 	}
 	
 	local done = DataPool:GetPlayerMission_Variable( nSelIndex, 0 )
@@ -4595,14 +4595,14 @@ function QuestLog_GetTrack_202380SBJQ1(nSelIndex)
 end
 function QuestLog_GetTrack_202380SBJQ2(nSelIndex)
 	local StrInfo = {
-		[0] = {dist="#{SBJQ_230627_82}", target="#{SBJQ_230627_68}"}, --targetÓĞ±äÁ¿£¬1¸ö£¬²ÎÊı1
-		[1] = {dist="#{SBJQ_230627_195}", target="#{SBJQ_230627_325}"}, --targetÓĞ±äÁ¿£¬1¸ö£¬²ÎÊı4
-		[2] = {dist="#{SBJQ_230627_198}", target="#{SBJQ_230627_326}"}, --targetÓĞ±äÁ¿£¬2¸ö£¬²ÎÊı4¡¢5
-		[3] = {dist="#{SBJQ_230627_201}", target="#{SBJQ_230627_327}"}, --targetÓĞ±äÁ¿£¬1¸ö£¬²ÎÊı4¡¢5
-		[4] = {dist="#{SBJQ_230627_207}", target="#{SBJQ_230627_328}"}, --targetÓĞ±äÁ¿£¬2¸ö£¬²ÎÊı4¡¢5
-		[5] = {dist="#{SBJQ_230627_86}", target="#{SBJQ_230627_101}"}, --targetÓĞ±äÁ¿£¬1¸ö£¬²ÎÊı4¡¢5
-		[6] = {dist="#{SBJQ_230627_210}", target="#{SBJQ_230627_329}"}, --targetÓĞ±äÁ¿£¬1¸ö£¬²ÎÊı4
-		[7] = {dist="#{SBJQ_230627_213}", target="#{SBJQ_230627_330}"}, --targetÓĞ±äÁ¿£¬1¸ö£¬²ÎÊı4
+		[0] = {dist="#{SBJQ_230627_82}", target="#{SBJQ_230627_68}"}, --target???,1?,??1
+		[1] = {dist="#{SBJQ_230627_195}", target="#{SBJQ_230627_325}"}, --target???,1?,??4
+		[2] = {dist="#{SBJQ_230627_198}", target="#{SBJQ_230627_326}"}, --target???,2?,??4?5
+		[3] = {dist="#{SBJQ_230627_201}", target="#{SBJQ_230627_327}"}, --target???,1?,??4?5
+		[4] = {dist="#{SBJQ_230627_207}", target="#{SBJQ_230627_328}"}, --target???,2?,??4?5
+		[5] = {dist="#{SBJQ_230627_86}", target="#{SBJQ_230627_101}"}, --target???,1?,??4?5
+		[6] = {dist="#{SBJQ_230627_210}", target="#{SBJQ_230627_329}"}, --target???,1?,??4
+		[7] = {dist="#{SBJQ_230627_213}", target="#{SBJQ_230627_330}"}, --target???,1?,??4
 	}
 	local done = DataPool:GetPlayerMission_Variable( nSelIndex, 0 )
 	if done == 1 then
@@ -4631,7 +4631,7 @@ end
 --2023Q380¼¶Éñ±ø¾çÇéÈÎÎñ -- End
 --2023Q3ÖÜÄêÇì´ò¿¨»î¶¯ ÈÎÎñÄ¿±êÌØĞ´
 function QuestLog_TianDeng_isTeam(nMissionIndex)
-	local isTeam = DataPool:GetPlayerMission_Variable( nMissionIndex, 4 )--4ºÅÎ»´æÊÇ·ñ×é¶Ó½ÓÈ¡ÈÎÎñ
+	local isTeam = DataPool:GetPlayerMission_Variable( nMissionIndex, 4 )--4???????????
 	if isTeam == 1 then
 		return "#W".."#{ZNTD_230720_208}"
 	else
@@ -4664,7 +4664,7 @@ function QuestLog_GetTarget_2024DWDK(nSelIndex)
 	
 end
 
---2024Q2ÏÄÈÕ±ùä¿ÁÜÈÎÎñÄ¿±êÌØĞ´
+--2024Q2ÏÄÈ ±ùä¿ÁÜÈÎÎñÄ¿±êÌØĞ´
 function QuestLog_GetTarget_XRBQL(nSelIndex)
 		local param2 = DataPool:GetPlayerMission_Variable( nSelIndex, 2 )
 	
@@ -4672,7 +4672,7 @@ function QuestLog_GetTarget_XRBQL(nSelIndex)
 		local str = ScriptGlobal_Format("#{XRBG_20240412_79}", msgtip[param2])
 		return "#W"..str
 end
---2024Q2ÏÄÈÕ±ùä¿ÁÜÍê³ÉÇé¿öÌØĞ´
+--2024Q2ÏÄÈ ±ùä¿ÁÜÍê³ÉÇé¿öÌØĞ´
 function QuestLog_Complete_XRBQL(nSelIndex)
 	local param2 = DataPool:GetPlayerMission_Variable( nSelIndex, 0 )
 	local str = ScriptGlobal_Format("#{XRBG_20240412_80}", param2)

@@ -43,7 +43,7 @@ function Thanksgiving_FeedBack_OnEvent(event)
 		g_Thanksgiving_RewardInfo = Get_XParam_INT(2)
 		g_Thanksgiving_NeedCountTime = Get_XParam_INT(3)
 		if isOpen == 1 then
-			SetTimer("Thanksgiving_FeedBack","Thanksgiving_FeedBack_OnTimer()", 1000);--¼ÆÊ±
+			SetTimer("Thanksgiving_FeedBack","Thanksgiving_FeedBack_OnTimer()", 1000);--??
 			this:Show()
 		end
 		Thanksgiving_FeedBack_Refresh()
@@ -225,7 +225,7 @@ function Thanksgiving_FeedBack_Clicked(nIndex)
 		return
 	end
 	if nIndex == 1 or nIndex == 2 then
-		AutoRuntoTargetExWithName(177, 98, 0, "°¢ÎØ")
+		AutoRuntoTargetExWithName(177, 98, 0, "A Ô")
 	end
 	if nIndex == 3 or nIndex == 4 then
 		Clear_XSCRIPT()		

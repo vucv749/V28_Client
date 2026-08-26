@@ -143,10 +143,10 @@ function Frozen_Select_Btn_Snow_Click(btnIdx)
 
 --	PushDebugMessage(" Frozen_Select_Btn_Snow_Click")	
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "UseSkill" )	 	-- 函数名
-		Set_XSCRIPT_ScriptID( 999495 );					-- 脚本编号
-		Set_XSCRIPT_Parameter( 0, btnIdx );				-- 参数一
-		Set_XSCRIPT_ParamCount( 1 );					-- 参数个数
+		Set_XSCRIPT_Function_Name( "UseSkill" )	 	-- ???
+		Set_XSCRIPT_ScriptID( 999495 );					-- ????
+		Set_XSCRIPT_Parameter( 0, btnIdx );				-- ???
+		Set_XSCRIPT_ParamCount( 1 );					-- ????
 	Send_XSCRIPT()
 	--Frozen_Select_Btn_OnClose()
 	

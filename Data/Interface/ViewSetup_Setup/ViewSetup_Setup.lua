@@ -15,23 +15,23 @@ end
 
 function ViewSetup_Setup_OnLoad()
 		
-		ViewSetup[1]   = "dxyy" 	--µØĞÎÒõÓ°				View_LightmapQuality
-		ViewSetup[2]   = "fhj"		--È«ÆÁ¿¹¾â³İ			View_Fanhunjiao
-		ViewSetup[3]   = "wtdh"		--ÎïÌå¶¯»­				View_ObjectMove
-		ViewSetup[4]   = "rwyy"		--ÈËÎïÒõÓ°				View_HumanLightmap
-		ViewSetup[5]   = "ksfw"		--ÏÔÊ¾Ä£ĞÍÊı ¿ÉÊÓ·¶Î§	View_VisibleRangeLevelNew
-		ViewSetup[6]   = "dhgxzl"	--½ÇÉ«¶¯»­				View_UpdateQuality
-		ViewSetup[7]   = "yszl"		--ÑÕÉ«ÖÊÁ¿	±ÈÌØÊı		View_ColorQuality
-		ViewSetup[8]  = "cy"		 	--²ÉÑù					View_TextureFiltering
-		ViewSetup[9]  = "txdjsz"	--Á£×ÓĞ§¹û				View_EffectLevel
+		ViewSetup[1]   = "dxyy" 	--????				View_LightmapQuality
+		ViewSetup[2]   = "fhj"		--?????			View_Fanhunjiao
+		ViewSetup[3]   = "wtdh"		--????				View_ObjectMove
+		ViewSetup[4]   = "rwyy"		--????				View_HumanLightmap
+		ViewSetup[5]   = "ksfw"		--????? ????	View_VisibleRangeLevelNew
+		ViewSetup[6]   = "dhgxzl"	--????				View_UpdateQuality
+		ViewSetup[7]   = "yszl"		--????	???		View_ColorQuality
+		ViewSetup[8]  = "cy"		 	--??					View_TextureFiltering
+		ViewSetup[9]  = "txdjsz"	--????				View_EffectLevel
 	--	ViewSetup[10]  = "mxxslj"	--Ä£ĞÍÏÔÊ¾				View_ModelShowLogic
 
-		ViewSetup[10]   = "qpfg"	-- È«ÆÁ·º¹â
-		ViewSetup[11]   = "rt"	-- ÈáÌå
-		ViewSetup[12]   = "miwu"	-- ÏÔÊ¾ÃÔÎí
-		ViewSetup[13]   = "zdbt"	-- ÕÚµ²°ëÍ¸
-		ViewSetup[14]   = "qpms"	-- È«ÆÁÄ£Ê½
-		ViewSetup[15]   = "cztb"	-- ´¹Ö±Í¬²½
+		ViewSetup[10]   = "qpfg"	-- ????
+		ViewSetup[11]   = "rt"	-- ??
+		ViewSetup[12]   = "miwu"	-- ????
+		ViewSetup[13]   = "zdbt"	-- ????
+		ViewSetup[14]   = "qpms"	-- ????
+		ViewSetup[15]   = "cztb"	-- ????
 		
 		g_ViewSetup_Setup_Frame_UnifiedPosition=ViewSetup_Setup_Frame:GetProperty("UnifiedPosition");
 			
@@ -58,13 +58,13 @@ end
 function ViewSetup_Setup_ClickViewSetup(nIndex)
 
 	if( nIndex == 1 )then
-		local setting =  {0, 0, 0, 0, 2, 0, 0, 0, 0,  0, 0, 1, 0, 0, 1}	--ËÙ¶ÈÓÅÏÈ; 
+		local setting =  {0, 0, 0, 0, 2, 0, 0, 0, 0,  0, 0, 1, 0, 0, 1}	--????; 
 
 		local bNeedReset1 = tonumber(SystemSetup:View_GetData(ViewSetup[2])) ~= setting[2];
 		local bNeedReset2 = tonumber(SystemSetup:View_GetData(ViewSetup[15])) ~= setting[15];
 
 		if(bNeedReset1 or bNeedReset2) then
-			PushDebugMessage("²¿·ÖÉèÖÃĞèÒªÖØÆô");
+			PushDebugMessage("Bµ ph§n thiªt trí c¥n Trùng Khäi");
 		end
 
 		for i=1, viewSetNum do
@@ -72,13 +72,13 @@ function ViewSetup_Setup_ClickViewSetup(nIndex)
 		end
 	
 	else
-		local setting = {2, 0, 2, 2, 2, 2, 2, 2, 2,  0, 0, 1, 0, 0, 1}	--¾ùºâÉèÖÃ
+		local setting = {2, 0, 2, 2, 2, 2, 2, 2, 2,  0, 0, 1, 0, 0, 1}	--????
 
 		local bNeedReset1 = tonumber(SystemSetup:View_GetData(ViewSetup[2])) ~= setting[2];
 		local bNeedReset2 = tonumber(SystemSetup:View_GetData(ViewSetup[15])) ~= setting[15];
 
 		if(bNeedReset1 or bNeedReset2) then
-			PushDebugMessage("²¿·ÖÉèÖÃĞèÒªÖØÆô");
+			PushDebugMessage("Bµ ph§n thiªt trí c¥n Trùng Khäi");
 		end
 	
 		for i=1, viewSetNum do
@@ -90,7 +90,7 @@ function ViewSetup_Setup_ClickViewSetup(nIndex)
 		SystemSetup:OptimizeConfirm()
 end
 
---¹Ø±ÕÌì¿ÕÊÓ½Ç
+--¹Ø± Ìì¿ ÊÓ½Ç
 function ViewSetup_Setup_CloseSkyEye()
 
 		local string = "tksj";	

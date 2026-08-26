@@ -34,12 +34,12 @@ local g_strAttrDic = {
 [26]="#{equip_attr_attack_m}",
 }
 local g_strEffectDic = {
-[0] = "#{WH_210223_142}",--内功攻击
-[1] = "#{WH_210223_143}",--外功攻击
-[2] = "#{WH_210223_138}",--冰属性
-[3] = "#{WH_210223_139}",--火属性
-[4] = "#{WH_210223_140}",--玄属性
-[5] = "#{WH_210223_141}",--毒属性
+[0] = "#{WH_210223_142}",--????
+[1] = "#{WH_210223_143}",--????
+[2] = "#{WH_210223_138}",--???
+[3] = "#{WH_210223_139}",--???
+[4] = "#{WH_210223_140}",--???
+[5] = "#{WH_210223_141}",--???
 }
 
 function WuhunTupuStudy_PreLoad()
@@ -50,7 +50,7 @@ function WuhunTupuStudy_PreLoad()
 	this:RegisterEvent("UNIT_MONEY", false)
 	this:RegisterEvent("MONEYJZ_CHANGE", false)
 	
-	--离开场景，自动关闭
+	--离开场景，自动关睜
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)
 
 	this:RegisterEvent("ADJEST_UI_POS", false)
@@ -148,7 +148,7 @@ function WuhunTupuStudy_UpdateSel()
 		--本次成功率
 		strText = ScriptGlobal_Format("#{WH_210223_167}", g_SuccRadom[g_RadomIdx])
 		WuhunTupuStudy_ItemInfo2:SetText(strText)
-		--今日升级次数
+		--今葼升级次数
 		WuhunTupuStudy_ItemInfo3:SetText( ScriptGlobal_Format("#{WH_210223_166}", g_TodayLevelupCount) )
 
 		local nTPGrade = DataPool:LuaFnGetWHWGInfo(g_CurrentSelWG, "Grade")
@@ -178,7 +178,7 @@ function WuhunTupuStudy_UpdateSel()
 				WuhunTupuStudy_Item_EffectBK:Show()
 				WuhunTupuStudy_EffectNone:SetText("")
 				--
-				WuhunTupuStudy_EffectLevel:SetText( ScriptGlobal_Format("#{WH_210223_86}", nTPGrade, nTPLevel) )--"当前等级："..
+				WuhunTupuStudy_EffectLevel:SetText( ScriptGlobal_Format("#{WH_210223_86}", nTPGrade, nTPLevel) )--"Tr呔c m c b:"..
 				--属性
 				local attr_yang,attrvalue_yang,effecttype_yang,effectvalue_yang = DataPool:LuaFnGetWHWGLevelInfo(g_CurrentSelWG,nTPGrade,nTPLevel,"AttrEffectYang")
 				local attr_yin,attrvalue_yin,effecttype_yin,effectvalue_yin = DataPool:LuaFnGetWHWGLevelInfo(g_CurrentSelWG,nTPGrade,nTPLevel,"AttrEffectYin")
@@ -197,7 +197,7 @@ function WuhunTupuStudy_UpdateSel()
 				WuhunTupuStudy_Effect3Plus:SetText( ScriptGlobal_Format("#{WH_210223_173}", attrvalue_yin) )
 				WuhunTupuStudy_Effect4Plus:SetText( ScriptGlobal_Format("#{WH_210223_175}", tostring(0.01*effectvalue_yin)) )
 				WuhunTupuStudy_Effect5Plus:SetText("+"..wszattrvalue)
-				WuhunTupuStudy_EffectLevelPluse:SetText( ScriptGlobal_Format("#{WH_210223_86}", nTPGrade, nTPLevel+1) )--"升级等级："..
+				WuhunTupuStudy_EffectLevelPluse:SetText( ScriptGlobal_Format("#{WH_210223_86}", nTPGrade, nTPLevel+1) )--"Th錸g c c b:"..
 				--道具
 				local need_itembind,need_itemunbind = DataPool:LuaFnGetWHWGLevelInfo(g_CurrentSelWG,nTPGrade,nTPLevel,"LevelItem")
 				local need_itemcount = DataPool:LuaFnGetWHWGLevelInfo(g_CurrentSelWG,nTPGrade,nTPLevel,"LevelItemCount")

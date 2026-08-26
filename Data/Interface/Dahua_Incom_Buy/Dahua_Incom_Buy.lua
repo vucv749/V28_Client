@@ -26,8 +26,8 @@ end
 function Dahua_Incom_Buy_OnEvent( event )
 	if event == "OPEN_DAHUA_BUY" then
         g_Dahua_Incom_Buy_DaiBi = tonumber(arg0)   
-	    Dahua_Incom_Buy_Moral_Value:SetProperty("DefaultEditBox", "True");	--设置输入框为默认输入框
-        Dahua_Incom_Buy_Moral_Value:SetText("1")					--默认输入为1   
+	    Dahua_Incom_Buy_Moral_Value:SetProperty("DefaultEditBox", "True");	--???????????
+        Dahua_Incom_Buy_Moral_Value:SetText("1")					--?????1   
         Dahua_Incom_Buy_Moral_Value:SetSelected( 0, -1 ); 
         Dahua_Incom_Buy_FreshWindow() 
         this:Show()
@@ -84,11 +84,11 @@ end
 
 function Dahua_Incom_Buy_BuyItem(count)
     Clear_XSCRIPT()
-        Set_XSCRIPT_Function_Name( "BuyDaiBi" ); 					-- 脚本函数名称
-        Set_XSCRIPT_ScriptID( 889909 );								-- 脚本编号  
+        Set_XSCRIPT_Function_Name( "BuyDaiBi" ); 					-- ??????
+        Set_XSCRIPT_ScriptID( 889909 );								-- ????  
         Set_XSCRIPT_Parameter( 0, count );	 
         Set_XSCRIPT_Parameter( 1, 0 );	 
-        Set_XSCRIPT_ParamCount( 2 ); 	-- 参数个数  
+        Set_XSCRIPT_ParamCount( 2 ); 	-- ????  
     Send_XSCRIPT()	
 end
 

@@ -9,7 +9,7 @@ local g_iFaceCountInPage = 9;
 local g_iFaceIndexInPage = -1;         --by chengy TT52805
 
 -- µ±Ç°Ñ¡ÔñµÄÐÔ±ð
-local iCurSelSex = 0;			-- 0 : Å®
+local iCurSelSex = 0;			-- 0 : ?
 													-- 1 : ÄÐ
 --Á³ÐÎ¿Ø¼þ
 local g_FaceSel = {};
@@ -57,10 +57,10 @@ function LoginCreateRole_PreLoad()
 	-- ´ò¿ª½çÃæ
 	this:RegisterEvent("GAMELOGIN_OPEN_CREATE_CHARACTOR");
 
-	-- ¹Ø±Õ½çÃæ
+	-- ¹Ø± ½çÃæ
 	this:RegisterEvent("GAMELOGIN_CLOSE_CREATE_CHARACTOR");
 
-	-- Çå¿Õ´´½¨½ÇÉ«Ãû×Ö¡£
+	-- Çå¿ ´´½¨½ÇÉ«Ãû×Ö¡£
 	this:RegisterEvent("GAMELOGIN_CREATE_CLEAR_NAME");
 
 end
@@ -68,8 +68,8 @@ end
 -- ×¢²áonLoadÊÂ¼þ
 function LoginCreateRole_OnLoad()
 
-	CreateRole_SelectSex_Girl:SetText("Å®");
-	CreateRole_SelectSex_Boy:SetText("ÄÐ");
+	CreateRole_SelectSex_Girl:SetText("Næ");
+	CreateRole_SelectSex_Boy:SetText("Nam");
 
 	CreateRole_SelectSex_Girl:SetProperty("CheckMode", "1");
 	CreateRole_SelectSex_Boy:SetProperty("CheckMode", "1");
@@ -120,7 +120,7 @@ function LoginCreateRole_OnLoad()
 		g_MenpaiIntroduction[i] = "#{XZRW_XML_" .. tostring(i) .. "}"
 	end
 	for i = 1, g_DescriptionNum do
-		g_Description[i] = "#{DLJM_XML_" .. tostring(i + 15) .. "}"	--ÎÞÄÎ£¬×Öµä´ÓDLJM_XML_16¿ªÊ¼µÄ
+		g_Description[i] = "#{DLJM_XML_" .. tostring(i + 15) .. "}"	--??,???DLJM_XML_16???
 	end
 end
 
@@ -183,7 +183,7 @@ function CreateRole_BnClickMenpaiModel(menpai)
 	GameProduceLogin:ShowModel(menpai)
 
 	--½øÐÐÃæ°åµ­Èëµ­³ö
-	local speed = 0.5	--¶à¾Ãµ­Èëµ­³öÍê±Ï£¬µ¥Î»£ºÃë
+	local speed = 0.5	--????????,??:?
 	local alphaPanel = CreateRole_Info_Frame:GetAlpha()
 	if menpai < 0 and alphaPanel < 1 then
 		CreateRole_Info_Frame:StartFade(alphaPanel, 1, (1 - alphaPanel) * speed)
@@ -211,7 +211,7 @@ end
 function CreateRole_BnClickCreateRole()
 
 	if g_iFaceIndexInPage < 0 then          --by chengy TT52805
-		GameProduceLogin:GameLoginShowSystemInfo("ÇëÑ¡ÔñÍ·Ïñ!");
+		GameProduceLogin:GameLoginShowSystemInfo("Thïnh lña ch÷n hình cái ð¥u!");
 		return;
 	end
 	g_iCurSelFaceIndex = g_FacePageCount * g_iFaceCountInPage + g_iFaceIndexInPage;
@@ -365,7 +365,7 @@ end
 --
 function CreateRole_ShowRoleFace(iType)
 
-	-- Çå¿ÕÍ·ÏñÊý¾Ý.
+	-- Çå¿ Í·ÏñÊý¾Ý.
 	CreateRole_ClearImageData();
 	if(0 == iType) then
 
@@ -423,7 +423,7 @@ end
 --
 function CreateRole_RefreshCurShowFacePage()
 
-	-- Çå¿ÕÍ¼ÏñÊý¾Ý
+	-- Çå¿ Í¼ÏñÊý¾Ý
 	CreateRole_ClearImageData();
 
 	-- µ±Ç°¿ªÊ¼ÏÔÊ¾Í·ÏñµÄÎ»ÖÃ
@@ -660,7 +660,7 @@ end
 --
 function CreateRole_GetFaceModel()
 
-	-- Çå¿ÕÊý¾Ý
+	-- Çå¿ Êý¾Ý
 	CreateRole_SelectFace:ResetList();
 
 	local iFaceCount = GameProduceLogin:GetFaceModelCount(iCurSelSex);
@@ -686,7 +686,7 @@ end
 --
 function CreateRole_GetHairModel()
 
-	-- Çå¿ÕÊý¾Ý
+	-- Çå¿ Êý¾Ý
 	CreateRole_SelectHair:ResetList();
 
 	local iHairCount = GameProduceLogin:GetHairModelCount(iCurSelSex);
@@ -778,7 +778,7 @@ end
 --
 function CreateRole_GetNewRoleEquipSet()
 
-	-- Çå¿ÕÊý¾Ý
+	-- Çå¿ Êý¾Ý
 	CreateRole_SelectClothin:ResetList();
 
 	local iCount = GameProduceLogin:GetEquipSetCount();

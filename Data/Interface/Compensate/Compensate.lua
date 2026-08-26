@@ -1,11 +1,11 @@
 
-local ITEM_BUTTONS_NUM = 18;       --一页物品按钮个数 
-local ITEM_MULTIPLELINT_NUM = 11;  --一页列表行数 
+local ITEM_BUTTONS_NUM = 18;       --???????? 
+local ITEM_MULTIPLELINT_NUM = 11;  --?????? 
 local ITEM_BUTTONS = {};
 local ITEM_INFO = {};
 local ITEM_NAME = {};
 local ITEM_LEAVETIME = {};
-local LINE_STATE={0,0,0,0,0,0,0,0,0,0,0};               --列表一行的状态 0表示领取 1表示已领取  共11个 
+local LINE_STATE={0,0,0,0,0,0,0,0,0,0,0};               --??????? 0???? 1?????  ?11? 
 
 local g_Selectindex = -1;
 local g_ObjCared = -1;
@@ -27,10 +27,10 @@ local PageDownEnable = 0;
 -- OnLoad
 --===============================================
 function Compensate_PreLoad()
-    this:RegisterEvent("RETURNITEM_UPDATE_PAGE");   -- 打开归还物品窗口
-    this:RegisterEvent("RETURNPET_UPDATE_PAGE");    -- 打开归还宠物窗口
-    this:RegisterEvent("RETURNSHOP_UPDATE_PAGE");    -- 打开归还商店窗口
-    this:RegisterEvent("RETURNRESULT_UPDATE_UI")  --服务器返回归还结果 
+    this:RegisterEvent("RETURNITEM_UPDATE_PAGE");   -- ????????
+    this:RegisterEvent("RETURNPET_UPDATE_PAGE");    -- ????????
+    this:RegisterEvent("RETURNSHOP_UPDATE_PAGE");    -- ????????
+    this:RegisterEvent("RETURNRESULT_UPDATE_UI")  --????????? 
 	this:RegisterEvent("OBJECT_CARED_EVENT");
 	this:RegisterEvent("QUIT_RELATIVE");
 	this:RegisterEvent("TIME_UPDATE");	
@@ -177,7 +177,7 @@ function Compensate_OnEvent(event)
 		if(tonumber(arg0) ~= g_ObjCared) then
 			return;
 		end
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			this:Hide();
 

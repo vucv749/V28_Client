@@ -162,15 +162,15 @@ function YbMarketSale_Item_Click(idx)
 			if nowStatus ~= nil then
 				if nowStatus == 1 then 
 					YbMarketSale_Reprice:Enable()
-					YbMarketSale_PutUpTheShutters:SetText("#{YBSC_100111_51}")	--ÏÂ¼Ü
+					YbMarketSale_PutUpTheShutters:SetText("#{YBSC_100111_51}")	--??
 					YbMarketSale_PutUpTheShutters:Enable()
 				elseif nowStatus == 2 then
 					YbMarketSale_Reprice:Disable()
-					YbMarketSale_PutUpTheShutters:SetText("#{YBSC_100111_52}")	--È¡»Ø
+					YbMarketSale_PutUpTheShutters:SetText("#{YBSC_100111_52}")	--??
 					YbMarketSale_PutUpTheShutters:Enable()
 				elseif nowStatus == 3 then
 					YbMarketSale_Reprice:Disable()
-					YbMarketSale_PutUpTheShutters:SetText("#{YBSC_XML_62}") --È¡Ç®
+					YbMarketSale_PutUpTheShutters:SetText("#{YBSC_XML_62}") --??
 					YbMarketSale_PutUpTheShutters:Enable()
 				end
 			end		
@@ -270,7 +270,7 @@ function YbMarketSale_Update()
 				YbMarketSale_ALLItem[i]:SetProperty("NormalImage", tostring(strHead) )
 				local nEra = Auction:GetPetEraCount(i - 1 , 1)
 				if nEra == 1 then
-					pName = "¶þ´ú"..pName
+					pName = "Ð¶i thÑ 2"..pName
 				end
 				YbMarketSale_ALLName[i]:SetText(tostring(pName))
 				YbMarketSale_ALLPrice[i]:SetText(tostring(price).."#{TLBC_090617_11}")
@@ -324,7 +324,7 @@ function YbMarketSale_ClearFrame()
 		end
 	end
 	YbMarketSale_Reprice:Disable()
-	YbMarketSale_PutUpTheShutters:SetText("#{INTERFACE_XML_738}")	--ÏÂ¼Ü
+	YbMarketSale_PutUpTheShutters:SetText("#{INTERFACE_XML_738}")	--??
 	YbMarketSale_PutUpTheShutters:Disable()
 end
 

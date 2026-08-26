@@ -5,7 +5,7 @@ local m_Frame_UnifiedYPosition
 local m_miniTime = 0;
 local m_nReduceTime = 0;
 local m_playerNum = 0;
---预加载函数，可以而且只能在这里注册脚本关心的事件
+--预加载函数，可以而且只能在犫里注册脚本关心的事件
 function MonthPVP_Rest_PreLoad()
 	this:RegisterEvent("UI_COMMAND", true)
 	this:RegisterEvent("PVPCAR_UIOP", true)

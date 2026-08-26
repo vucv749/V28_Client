@@ -2,7 +2,7 @@ local g_Talent_Preview_Frame_UnifiedPosition = nil
 local g_Talent_Preview_Item = {}
 local g_Talent_Preview_UI = {}
 local g_Talent_Preview_Line = {}
-local g_Talent_Preview_StudyTree = {}	--存当前流派需要有前置天赋的数据
+local g_Talent_Preview_StudyTree = {}	--???????????????
 
 local g_Talent_preview_menpai = -1
 local g_Talent_preview_secttype = -1

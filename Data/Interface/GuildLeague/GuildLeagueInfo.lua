@@ -98,7 +98,7 @@ end
 function GuildLeagueInfo_DoChange()
 	if GuildLeagueInfo_Desc:IsVisible() then				
 		--local txt=GuildLeagueInfo_Desc:GetText()
-		--´Ë´¦±ØĞë´Ó³ÌĞò´æ´¢µÄÄÚÈİ¶ÁÈ¡£¬ÕâÑù²Å²»»á¶ªÊ§×Ö·û×ªÒå
+		--´Ë´¦±ØĞë´Ó³ÌĞò´æ´¢µÄÄÚÈİ¶ÁÈ¡£¬ âÑù²Å²»»á¶ªÊ§×Ö·û×ªÒå
 		local txt=GuildLeague:GetDescription()
 		GuildLeagueInfo_Desc_Edit:SetText(txt)
 		
@@ -111,7 +111,7 @@ function GuildLeagueInfo_DoChange()
 		GuildLeagueInfo_Desc:SetText(txt)
 				
 		if txt==nil or txt=="" then
-			PushDebugMessage("ÄúÃ»ÓĞÊäÈëÍ¬ÃËĞûÑÔ")
+			PushDebugMessage("Nhçm không có bÕi Nh§p ğ°ng minh tuyên ngôn")
 			return
 		end
 		
@@ -135,7 +135,7 @@ end
 function GuildLeagueInfo_Member_List_OnMouseRClick()	
 	local index=GuildLeagueInfo_Member_List:GetSelectItem()
 	if index==-1 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñÒ»¸öÍ¬ÃË³ÉÔ±£¡")
+		PushDebugMessage("Thïnh Tiên lña ch÷n mµt cái ğ°ng minh thành viên!")
 		return
 	end
 	
@@ -145,7 +145,7 @@ end
 function GuildLeagueInfo_Fire()	
 	local index=GuildLeagueInfo_Member_List:GetSelectItem()
 	if index==-1 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñÒ»¸öÍ¬ÃË³ÉÔ±£¡")
+		PushDebugMessage("Thïnh Tiên lña ch÷n mµt cái ğ°ng minh thành viên!")
 		return
 	end
 	

@@ -16,10 +16,10 @@ local g_ThreeDayFeedBack_GiftButton = false
 local g_ThreeDayFeedBack_PrizeButton = {}
 local g_ThreeDayFeedBack_Image = {
 	[1] ={
-		[1]="set:ThreeDayFeedBack image:ThreeDayFeedBack_XHX",			--FeelFeedBack400_Left_image 背景图片
-		[2]="set:FeelFeedBack600_1 image:FeelFeedBack600_Num1",				--FeelFeedBack400_Right_imageDay 艺术字天数
-		[3]="set:ThreeDayFeedBack image:ThreeDayFeedBack_LHSF",			--FeelFeedBack400_Right_imageDayItem 礼包名称
-		[4]="set:Seven image:Seven_day2", 									--第几天可领取
+		[1]="set:ThreeDayFeedBack image:ThreeDayFeedBack_XHX",			--FeelFeedBack400_Left_image ????
+		[2]="set:FeelFeedBack600_1 image:FeelFeedBack600_Num1",				--FeelFeedBack400_Right_imageDay ?????
+		[3]="set:ThreeDayFeedBack image:ThreeDayFeedBack_LHSF",			--FeelFeedBack400_Right_imageDayItem ????
+		[4]="set:Seven image:Seven_day2", 									--??????
 		},
 	[2] ={
 		[1]="set:ThreeDayFeedBack image:ThreeDayFeedBack_DDJ",
@@ -39,21 +39,21 @@ local g_ThreeDayFeedBack_PrizeList =
 {
 	[1] =
         {
-			[1]={ItemID = 20501003, num = 1, needbind =1,},		-- 3级棉布
-			[2]={ItemID = 30900045, num = 1, needbind =1,},		-- 天罡强化露	
-			[3]={ItemID = 20310168, num = 15, needbind =1,},	-- 金蚕丝*15　
+			[1]={ItemID = 20501003, num = 1, needbind =1,},		-- 3???
+			[2]={ItemID = 30900045, num = 1, needbind =1,},		-- ?????	
+			[3]={ItemID = 20310168, num = 15, needbind =1,},	-- ???*15 
 		},
     [2] =
         {
-			[1]={ItemID = 20502003, num = 1, needbind =1,},		-- 3级秘银
-			[2]={ItemID = 30008048, num = 1, needbind =1,},		-- 金刚锉
-			[3]={ItemID = 50313004, num = 1, needbind =1,},		-- 红宝石3级
+			[1]={ItemID = 20502003, num = 1, needbind =1,},		-- 3???
+			[2]={ItemID = 30008048, num = 1, needbind =1,},		-- ???
+			[3]={ItemID = 50313004, num = 1, needbind =1,},		-- ???3?
 		},
     [3] =
         {
-			[1]={ItemID = 38002519, num = 2, needbind =1,},		-- 九尾魂玉*2
-			[2]={ItemID = 38002524, num = 3, needbind =1,},		-- 鹿蜀魂玉*3
-			[3]={ItemID = 38002532, num = 5, needbind =1,},		-- 淬魂髓*5
+			[1]={ItemID = 38002519, num = 2, needbind =1,},		-- ????*2
+			[2]={ItemID = 38002524, num = 3, needbind =1,},		-- ????*3
+			[3]={ItemID = 38002532, num = 5, needbind =1,},		-- ???*5
 		},
 }
 --=========
@@ -61,10 +61,10 @@ local g_ThreeDayFeedBack_PrizeList =
 --=========
 function ThreeDayFeedBack_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
-    this:RegisterEvent("PLAYER_LEAVE_WORLD")		-- 离开场景
-	this:RegisterEvent("ADJEST_UI_POS",false)			-- 游戏窗口尺寸发生了变化
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)	        -- 游戏分辨率发生了变化
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--进场景关闭界面
+    this:RegisterEvent("PLAYER_LEAVE_WORLD")		-- ????
+	this:RegisterEvent("ADJEST_UI_POS",false)			-- ???????????
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)	        -- ??????????
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--???????
 end
 --=========
 --OnLoad
@@ -110,11 +110,11 @@ function ThreeDayFeedBack_OnEvent(event)
 		g_ThreeDayFeedBack_Flag[3] = Get_XParam_INT(3)
 		g_ThreeDayFeedBack_TotalNum = Get_XParam_INT(4)
 		
-		if(bShow == 0)then --关闭界面
+		if(bShow == 0)then --????
 			this:Hide()
 			return
 
-		elseif(bShow == 1)then --打开界面 如果已经是打开状态则要关闭
+		elseif(bShow == 1)then --???? ?????????????
 			if(this:IsVisible())then
 				this:Hide()
 				return
@@ -128,11 +128,11 @@ function ThreeDayFeedBack_OnEvent(event)
 				g_ThreeDayFeedBack_NowIndex = 3
 			end
 
-			ThreeDayFeedBack_Open() --打开某一页
+			ThreeDayFeedBack_Open() --?????
 
 			this:Show()
 
-		elseif(bShow == 2)then --领取刷新
+		elseif(bShow == 2)then --????
 			if(this:IsVisible())then
 				g_ThreeDayFeedBack_GiftButton:Disable()
 				g_ThreeDayFeedBack_GiftButton:SetProperty("DisabledImage","set:Seven image:Seven_lingquDis")
@@ -141,7 +141,7 @@ function ThreeDayFeedBack_OnEvent(event)
 				end
 			end
 
-		elseif(bShow == 3)then --跨天刷新
+		elseif(bShow == 3)then --????
 			if(this:IsVisible())then
 				ThreeDayFeedBack_Open()
 			end
@@ -161,10 +161,10 @@ function ThreeDayFeedBack_Open()
 	end
 	g_ThreeDayFeedBack_PageButton[g_ThreeDayFeedBack_NowIndex]:SetCheck(1)
 
-	--页签遮挡
+	--页签犣挡
 	for i = 1 , 3 do
 		g_ThreeDayFeedBack_PageButtonMask[i]:Hide() 
-		if(g_ThreeDayFeedBack_Flag[i] == 2)then--领过了
+		if(g_ThreeDayFeedBack_Flag[i] == 2)then--???
 			g_ThreeDayFeedBack_PageButtonMask[i]:Show() 
 		end
 	end
@@ -176,12 +176,12 @@ function ThreeDayFeedBack_Open()
 
 	--领取按钮
 	g_ThreeDayFeedBack_GiftButton:Enable()
-	if(g_ThreeDayFeedBack_Flag[g_ThreeDayFeedBack_NowIndex] == 0)then --不能领
+	if(g_ThreeDayFeedBack_Flag[g_ThreeDayFeedBack_NowIndex] == 0)then --???
 		g_ThreeDayFeedBack_GiftButton:SetProperty("DisabledImage",g_ThreeDayFeedBack_Image[g_ThreeDayFeedBack_NowIndex][4])
 		g_ThreeDayFeedBack_GiftButton:Disable()
-	elseif(g_ThreeDayFeedBack_Flag[g_ThreeDayFeedBack_NowIndex] == 1)then --能领没领
+	elseif(g_ThreeDayFeedBack_Flag[g_ThreeDayFeedBack_NowIndex] == 1)then --????
 		g_ThreeDayFeedBack_GiftButton:Enable()
-	elseif(g_ThreeDayFeedBack_Flag[g_ThreeDayFeedBack_NowIndex] == 2)then --领过了
+	elseif(g_ThreeDayFeedBack_Flag[g_ThreeDayFeedBack_NowIndex] == 2)then --???
 		g_ThreeDayFeedBack_GiftButton:Disable()
 		g_ThreeDayFeedBack_GiftButton:SetProperty("DisabledImage","set:Seven image:Seven_lingquDis")
 	end
@@ -208,7 +208,7 @@ function ThreeDayFeedBack_Open()
 end
 
 
---不同日页签点击
+--不同葼页签点击
 function ThreeDayFeedBack_Click(nIndex)
 	g_ThreeDayFeedBack_NowIndex = nIndex
 	ThreeDayFeedBack_Open()

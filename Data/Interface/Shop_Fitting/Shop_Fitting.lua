@@ -1,22 +1,22 @@
 local g_ItemMax = 0;
 local g_ItemIdx = -1;
 
-local CU_MONEY			= 1	-- 钱
+local CU_MONEY			= 1	-- ?
 
 local objCared = -1;
 
-local g_CameraHeight = 1;     --摄影机高度
-local g_CameraDistance = 2;   --摄影机距离
-local g_CameraPitch = 3;      --摄影机角度
+local g_CameraHeight = 1;     --?????
+local g_CameraDistance = 2;   --?????
+local g_CameraPitch = 3;      --?????
 
 -- 需要为一些在坐骑上的试穿效果单独设置摄像机位置
 
-local g_MountXueYuID = 39;	--座骑雪羽的id
-local g_MountMingYuID = 44;	--座骑冥羽的id
-local g_MountHuanYuID = 62;	--座骑幻羽的id
-local g_MountJuYuanID = 52;	--座骑巨猿的id
-local g_MountDaFengID = 41; --座骑大风的id
-local g_MountYunXiaoID = 80; --云霄羽翼的id
+local g_MountXueYuID = 39;	--?????id
+local g_MountMingYuID = 44;	--?????id
+local g_MountHuanYuID = 62;	--?????id
+local g_MountJuYuanID = 52;	--?????id
+local g_MountDaFengID = 41; --?????id
+local g_MountYunXiaoID = 80; --?????id
 
 --鹤，金翼鹤，瑞莲鹤
 local g_MountWuDang = {5,14,55}
@@ -43,19 +43,19 @@ local g_MountYHFL = 97
 -- 情人节坐骑
 local g_MountQRJ = {126, 127}
 
--- 争霸赛坐骑
+-- 狔霸赛坐骑
 local g_MountZBSJY = 105
 local g_MountZBSQY = 107
 local g_MountZBSBS = 109
 
 -- 2021.03.10 经典时装染色移植
 local g_Shop_Fitting_CurDressID=0
--- 染色风格最大数量, 这个先写死吧，经典这么多年没变过
+-- 染色风格最大数量, 犫个先写死吧，经典犫么多年没变过
 local g_Shop_Fitting_DressNum = 9
 --2021.03.10 经典时装染色移植 end
 local g_Shop_Fitting_Frame_UnifiedPosition;
 
---新增需要调整的坐骑，在这个里列表里添加
+--新增需要调狖的坐骑，在犫个里列表里添加
 local g_MountNeedAdjustCamera = {
 	[1] = {mountId = 195, distance = 15, height = 4},
 	[2] = {mountId = 196, distance = 15, height = 4},
@@ -76,11 +76,11 @@ function Shop_Fitting_PreLoad()
 	this:RegisterEvent("SEX_CHANGED");
 
 	-- FakeObject模型界面互斥
-	this:RegisterEvent("OPEN_EQUIP");										-- 角色资料界面
-	this:RegisterEvent("OPEN_DRESS_PAINT_FITTING");			-- 时装染色试衣间
-	this:RegisterEvent("OPEN_DRESS_ENCHASE_FITTING");		-- 时装镶嵌试衣间
+	this:RegisterEvent("OPEN_EQUIP");										-- ??????
+	this:RegisterEvent("OPEN_DRESS_PAINT_FITTING");			-- ???????
+	this:RegisterEvent("OPEN_DRESS_ENCHASE_FITTING");		-- ???????
 	
-	this:RegisterEvent("YIGUI_OPEN",false);				-- 衣柜
+	this:RegisterEvent("YIGUI_OPEN",false);				-- ??
 	this:RegisterEvent("UI_COMMAND")
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
@@ -106,11 +106,11 @@ function Shop_Fitting_OnEvent(event)
 	end
 
 	-- FakeObject模型界面互斥
-	if ( event == "OPEN_EQUIP" ) or												-- 角色资料界面
-		 ( event == "OPEN_DRESS_PAINT_FITTING" ) or					-- 时装染色试衣间
-		 ( event == "OPEN_DRESS_ENCHASE_FITTING" ) or	-- 时装镶嵌试衣间
-		 ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or --变性
-		 ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or  -- 时装预览
+	if ( event == "OPEN_EQUIP" ) or												-- ??????
+		 ( event == "OPEN_DRESS_PAINT_FITTING" ) or					-- ???????
+		 ( event == "OPEN_DRESS_ENCHASE_FITTING" ) or	-- ???????
+		 ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or --??
+		 ( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or  -- ????
 		 ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) or 
 		 ( event == "OPEN_DRESSPREVIEW") or 
 		 ( event == "YIGUI_OPEN") then			
@@ -133,7 +133,7 @@ function Shop_Fitting_OnEvent(event)
 		Shop_Fitting_FakeObject:SetFakeObject("EquipChange_Player");
 		
 		local nMountID = GetMountID();
-		if g_MountXueYuID == nMountID or g_MountMingYuID == nMountID or g_MountHuanYuID == nMountID or g_MountJuYuanID == nMountID then   --翅膀的试骑比较特殊，单独设置摄像机的位置
+		if g_MountXueYuID == nMountID or g_MountMingYuID == nMountID or g_MountHuanYuID == nMountID or g_MountJuYuanID == nMountID then   --?????????,??????????
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,12);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,2);
 		elseif nMountID == g_MountWuDang[1] or nMountID == g_MountWuDang[2]  then
@@ -148,7 +148,7 @@ function Shop_Fitting_OnEvent(event)
 		elseif nMountID == g_MountEMei[1] or nMountID == g_MountEMei[2] or nMountID == g_MountEMei[3] then
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,12);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,3);
-		elseif nMountID == g_MountDaFengID then     --大风坐骑
+		elseif nMountID == g_MountDaFengID then     --????
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,23);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,4);
 		elseif nMountID == g_MountYunXiaoID then
@@ -169,37 +169,37 @@ function Shop_Fitting_OnEvent(event)
 		elseif nMountID == g_MountQKY then
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,14);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,2);
-		elseif nMountID == 95 then	--翎月椅
+		elseif nMountID == 95 then	--???
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,18);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,3);
-		elseif nMountID == 96 then	--雁门风华
+		elseif nMountID == 96 then	--????
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,22);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,2);
-		elseif nMountID == g_MountYHFL then	--银汉浮梁
+		elseif nMountID == g_MountYHFL then	--????
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,21);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,2);
-		elseif nMountID == 102 then	--寄居蟹
+		elseif nMountID == 102 then	--???
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,22);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,2);
-		elseif nMountID == 99 then	--鹄1
+		elseif nMountID == 99 then	--?1
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,22);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,2);
-		elseif nMountID == 100 then	--鹄2
+		elseif nMountID == 100 then	--?2
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,22);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,2);
-		elseif nMountID == 101 then	--鹄3
+		elseif nMountID == 101 then	--?3
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,22);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,2);
-		elseif nMountID == 103 then	--昆仑雪猿
+		elseif nMountID == 103 then	--????
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,22);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,2);
-		elseif nMountID == g_MountZBSJY then	-- 争霸赛
+		elseif nMountID == g_MountZBSJY then	-- ???
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,23);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,5);
-		elseif nMountID == g_MountZBSQY then	-- 争霸赛
+		elseif nMountID == g_MountZBSQY then	-- ???
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,23);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,4);
-		elseif nMountID == g_MountZBSBS then	-- 争霸赛
+		elseif nMountID == g_MountZBSBS then	-- ???
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,23);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,3);
 		elseif nMountID == 116 then
@@ -214,7 +214,7 @@ function Shop_Fitting_OnEvent(event)
 		elseif nMountID == 133 or nMountID == 134 then
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,30);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,3);
-		elseif nMountID == g_MountQRJ[1] or nMountID == g_MountQRJ[2] then	--情人节坐骑
+		elseif nMountID == g_MountQRJ[1] or nMountID == g_MountQRJ[2] then	--?????
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,16);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,3);
 		elseif nMountID == 190 then
@@ -249,7 +249,7 @@ function Shop_Fitting_OnEvent(event)
 			return;
 		end
 		
-		--如果和商人的距离大于一定距离或者被删除，自动关闭
+		--如果和商人的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			--取消关心
 			RestoreShopFitting();
@@ -267,7 +267,7 @@ function Shop_Fitting_OnEvent(event)
 		Shop_Fitting_FakeObject:SetFakeObject("EquipChange_Player");
 
 		local nMountID = GetMountID();
-		if g_MountXueYuID == nMountID or g_MountMingYuID == nMountID or g_MountHuanYuID == nMountID or g_MountJuYuanID == nMountID then   --翅膀的试骑比较特殊，单独设置摄像机的位置
+		if g_MountXueYuID == nMountID or g_MountMingYuID == nMountID or g_MountHuanYuID == nMountID or g_MountJuYuanID == nMountID then   --?????????,??????????
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,12);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,2);
 		elseif nMountID == g_MountWuDang[1] or nMountID == g_MountWuDang[2]  then
@@ -282,7 +282,7 @@ function Shop_Fitting_OnEvent(event)
 		elseif nMountID == g_MountEMei[1] or nMountID == g_MountEMei[2] or nMountID == g_MountEMei[3] then
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,12);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,3);
-		elseif nMountID == g_MountDaFengID then     --大风坐骑
+		elseif nMountID == g_MountDaFengID then     --????
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,23);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,4);
 		elseif nMountID == g_MountYunXiaoID then
@@ -300,13 +300,13 @@ function Shop_Fitting_OnEvent(event)
 		elseif nMountID == g_MountCYY then
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,18);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,2);
-		elseif nMountID == g_MountZBSJY then	-- 争霸赛
+		elseif nMountID == g_MountZBSJY then	-- ???
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,23);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,5);
-		elseif nMountID == g_MountZBSQY then	-- 争霸赛
+		elseif nMountID == g_MountZBSQY then	-- ???
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,23);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,4);
-		elseif nMountID == g_MountZBSBS then	-- 争霸赛
+		elseif nMountID == g_MountZBSBS then	-- ???
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraDistance,23);
 			FakeObj_SetCamera( "EquipChange_Player", g_CameraHeight,3);
 		elseif nMountID == 116 then
@@ -468,7 +468,7 @@ function Shop_Fitting_ComboList_Changed()
 		return
 	end
 
-	if Index == 1 then --默认风格
+	if Index == 1 then --????
 		Index = g_Shop_Fitting_DressNum
 	else
 		Index = Index -1

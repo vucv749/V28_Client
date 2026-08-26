@@ -73,7 +73,7 @@ end
 --Update UI
 --=========
 function SuperToolTip2_AttrCompare_Update()
-	-- 先清空以前显示的文字
+	-- 先清繝以前显示的文字
 	SuperToolTip2_AttrCompare_ClearText()
 
 	local cmptype = SuperTooltips2_Cmp1:LuaFnGetCmpType()--enum EQUIPCOMPARE_TYPE
@@ -139,7 +139,7 @@ end
 
 -------------------------------------------------------------------------------------------------------------------------------
 --
--- 清空显示文本
+-- 清繝显示文本
 --
 function SuperToolTip2_AttrCompare_ClearText()
 	SuperToolTip2_AttrCompare_Property:SetText("")

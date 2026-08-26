@@ -3,11 +3,11 @@
 local g_DressPaint_TB_Frame_UnifiedPosition = nil 
 
 local g_objCareID	= -1		-- careNpc
-local g_Item_Pos	= -1		-- 锁定道具位置
-local g_Op_Type		= 0			-- 操作类型
+local g_Item_Pos	= -1		-- ??????
+local g_Op_Type		= 0			-- ????
 
-local g_Limit_Lv	= 30		-- 限制等级
-local g_Need_Money	= 50000		-- 需要金钱
+local g_Limit_Lv	= 30		-- ????
+local g_Need_Money	= 50000		-- ????
 local g_eOpType = {
 	Back = 0,
 	Head = 1,
@@ -48,7 +48,7 @@ function DressPaint_TB_OnEvent(event)
 		DressPaint_TB_ResetPos()
 	elseif(event == "HIDE_ON_SCENE_TRANSED") then
 		DressPaint_TB_OnHiden()
-	elseif event == "UI_COMMAND" and tonumber(arg0) == 120203161 then   --时装预览
+	elseif event == "UI_COMMAND" and tonumber(arg0) == 120203161 then   --????
 		if this:IsVisible() then
 			DressPaint_TB_OnHiden()
 		end
@@ -201,7 +201,7 @@ function DressPaint_TB_UpdateItemAction(Idx)
 			end
 			return
 		end
-		-- 是否为正常道具
+		-- 是否为狚常道具
 		local bRet = OrnamentsScript:IsOrnamentsItem(itemID, g_Op_Type)
 		if bRet ~= 1 then
 			if g_Op_Type == g_eOpType.Back then
@@ -216,7 +216,7 @@ function DressPaint_TB_UpdateItemAction(Idx)
 		if theAction:GetID() ~= 0 then
 			-- 锁定
 			if PlayerPackage:IsLock( Idx ) == 1 then
-				PushDebugMessage("#{BGTS_220125_17}")	--道具已上锁
+				PushDebugMessage("#{BGTS_220125_17}")	--?????
 				return
 			end
 			-- 过期

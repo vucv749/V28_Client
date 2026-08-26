@@ -1,4 +1,4 @@
---°µÆ÷ ÊôÐÔµ÷ÕûÒ³Ãæ
+--°µÆ÷ ÊôÐÔµ÷ ûÒ³Ãæ
 local MAX_OBJ_DISTANCE = 3.0;
 local objCared = -1;
 local g_Object = -1;
@@ -11,7 +11,7 @@ function AnqiShuxing_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
 	this:RegisterEvent("UI_UPDATE_DARKITEM");
 	this:RegisterEvent("OBJECT_CARED_EVENT");
-	this:RegisterEvent("RESUME_ENCHASE_GEM");           --²Î¼û\ClientLib\Ui_cegui\UISystem.cpp£¬line:1018
+	this:RegisterEvent("RESUME_ENCHASE_GEM");           --??\ClientLib\Ui_cegui\UISystem.cpp,line:1018
 	--½ðÇ®¸Ä±äµÄ´¦Àí
 	this:RegisterEvent("UNIT_MONEY");
 	this:RegisterEvent("MONEYJZ_CHANGE");
@@ -23,7 +23,7 @@ end
 
 function AnqiShuxing_OnEvent(event)
 	if(event == "UI_COMMAND" and tonumber(arg0) == 800034) then
-		if this : IsVisible() then									-- Èç¹û½çÃæ¿ª×Å£¬Ôò²»´¦Àí
+		if this : IsVisible() then									-- ??????,????
 			AnqiShuxing_Close();
 		end
 		
@@ -32,7 +32,7 @@ function AnqiShuxing_OnEvent(event)
 		objCared = DataPool : GetNPCIDByServerID(xx);
 		AxTrace(0,0,"xx="..xx .. " objCared="..objCared)
 		if objCared == -1 then
-				PushDebugMessage("server´«¹ýÀ´µÄÊý¾ÝÓÐÎÊÌâ¡£");
+				PushDebugMessage("Dæ li®u máy chü có v¤n ð«");
 				return;
 		end
 		AnqiShuxing_BeginCareObject(objCared);
@@ -46,7 +46,7 @@ function AnqiShuxing_OnEvent(event)
 			return;
 		end
 		
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			
 			--È¡Ïû¹ØÐÄ
@@ -71,7 +71,7 @@ function AnqiShuxing_UpdateMoneyDisp()
 end
 
 function AnqiShuxing_InitDlg( )
-	if (AnqiShuxing_g_CommandType <=5 and AnqiShuxing_g_CommandType >= 1) then   --ÖØÏ´°µÆ÷ÊôÐÔ
+	if (AnqiShuxing_g_CommandType <=5 and AnqiShuxing_g_CommandType >= 1) then   --??????
 		AnqiShuxing_DragTitle:SetText("#{FBSJ_081209_79}");
 		AnqiShuxing_Info:SetText("#{FBSJ_090106_95}"..Dark_Attr_Name[AnqiShuxing_g_CommandType].."#{FBSJ_090106_96}");
 		AnqiShuxing_Static2:SetText("#{FBSJ_081209_55}");
@@ -87,7 +87,7 @@ function AnqiShuxing_InitDlg( )
 	-- 	AnqiShuxing_NeedMoney:SetProperty("MoneyNumber", 50000);
 	-- 	this:Show();
 	-- 	AnqiShuxing_OK:Disable();
-	elseif ( AnqiShuxing_g_CommandType == 7 ) then   --ÖØÖÃ°µÆ÷Æ·½×
+	elseif ( AnqiShuxing_g_CommandType == 7 ) then   --??????
 		AnqiShuxing_DragTitle:SetText("#{FBSJ_090311_02}");
 		AnqiShuxing_Info:SetText("#{FBSJ_081209_58}");
 		AnqiShuxing_Static2:SetText("#{FBSJ_090311_05}");
@@ -103,7 +103,7 @@ function AnqiShuxing_InitDlg( )
 		AnqiShuxing_NeedMoney:SetProperty("MoneyNumber", 10000);
 		this:Show();
 		AnqiShuxing_OK:Disable();
-	elseif ( AnqiShuxing_g_CommandType == 9) then   --ÖØÖÃ°µÆ÷
+	elseif ( AnqiShuxing_g_CommandType == 9) then   --????
 		AnqiShuxing_DragTitle:SetText("#{FBSJ_081209_81}");
 		AnqiShuxing_Info:SetText("#{FBSJ_090311_07}");
 		AnqiShuxing_Static2:SetText("#{FBSJ_081209_59}");
@@ -133,9 +133,9 @@ function AnqiShuxing_OK_Clicked()
 		-- elseif (AnqiShuxing_g_CommandType == 6) then
 		-- 	DataPool:DarkAdjustSkill(Dark_Bag_Index ,0);
 		elseif (AnqiShuxing_g_CommandType == 7) then
-			DataPool:DarkResetQuality(Dark_Bag_Index, 1 ,0);     --°Ù´ãÉñÓñ
+			DataPool:DarkResetQuality(Dark_Bag_Index, 1 ,0);     --????
 		elseif (AnqiShuxing_g_CommandType == 8) then
-			DataPool:DarkResetQuality(Dark_Bag_Index, 2 ,0);     --Ç§´ãÉñÓñ
+			DataPool:DarkResetQuality(Dark_Bag_Index, 2 ,0);     --????
 		elseif (AnqiShuxing_g_CommandType == 9) then
 			DataPool:DarkReset(Dark_Bag_Index ,0);
 		end
@@ -191,7 +191,7 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØÐÄNPC£¬
---ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
 --Èç¹ûÓÐµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓÐµÄ¡°¹ØÐÄ¡±
 --=========================================================
 function AnqiShuxing_BeginCareObject(objCaredId)

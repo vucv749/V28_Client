@@ -18,9 +18,9 @@ local g_CoupleZone_Diary_UI_DiaryNumPerPage = 6
 
 --running data
 --diaryId´Ó0¿ªÊ¼µÄ
-local g_CoupleZone_Diary_Current_Page = 1  -- µ±Ç°´ò¿ªµÄÒ³
-local g_CoupleZone_Diary_TotalDiaryItem = 0   --×ÜÌõÊý
-local g_CoupleZone_Diary_MaxPage = 1   --×î´óÒ³Êý
+local g_CoupleZone_Diary_Current_Page = 1  -- ??????
+local g_CoupleZone_Diary_TotalDiaryItem = 0   --???
+local g_CoupleZone_Diary_MaxPage = 1   --????
 local g_CoupleZone_Diary_DiaryList = {}  ----date,author,id
 
 local g_CoupleZone_Diary_IsDebug = 0
@@ -106,9 +106,9 @@ function CoupleZone_Diary_OnEvent(event)
 	
 	
 	if event == "OPEN_COUPLEZONE_DIARY" then
-		g_CoupleZone_Diary_Current_Page = tonumber(arg0)  -- µ±Ç°´ò¿ªµÄÒ³
-		g_CoupleZone_Diary_TotalDiaryItem = tonumber(arg1)    --×ÜÌõÊý
-		g_CoupleZone_Diary_MaxPage = tonumber(arg2)  --×î´óÒ³Êý
+		g_CoupleZone_Diary_Current_Page = tonumber(arg0)  -- ??????
+		g_CoupleZone_Diary_TotalDiaryItem = tonumber(arg1)    --???
+		g_CoupleZone_Diary_MaxPage = tonumber(arg2)  --????
 		CoupleZone_Diary_UpdateDiaryData()
 		this:Show()
 	end		
@@ -123,10 +123,10 @@ end
 function CoupleZone_Diary_AskDiaryData()
 	CoupleZone_Diary_Debug("CoupleZone_Diary_AskDiaryData")
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "OnAskCoupleDiaryData" ); 		-- º¯ÊýÃû
-		Set_XSCRIPT_ScriptID( 998325 );						-- ½Å±¾±àºÅ
-		Set_XSCRIPT_Parameter(0, 1);    					-- ÇëÇóÀàÐÍ  1  ´ò¿ª¿Õ¼äÖ÷½çÃæÇ°ÇëÇó
-		Set_XSCRIPT_ParamCount( 1 );						-- ²ÎÊý¸öÊý
+		Set_XSCRIPT_Function_Name( "OnAskCoupleDiaryData" ); 		-- ???
+		Set_XSCRIPT_ScriptID( 998325 );						-- ????
+		Set_XSCRIPT_Parameter(0, 1);    					-- ????  1  ??????????
+		Set_XSCRIPT_ParamCount( 1 );						-- ????
 	Send_XSCRIPT()
 end
 
@@ -146,7 +146,7 @@ function CoupleZone_Diary_UpdateDiaryData()
 	
 	if realOpenPage ~= g_CoupleZone_Diary_Current_Page then
 		g_CoupleZone_Diary_Current_Page = realOpenPage
-		CoupleZone_Diary_Debug("CoupleZone_Diary_UpdateDiaryData Êý¾Ý´íÎó ´ò¿ª×îºóÒ»Ò³")
+		CoupleZone_Diary_Debug("CoupleZone_Diary_UpdateDiaryData s¯ li®u sai l¥m Tá Khai cu¯i cùng mµt t¶")
 	end
 
 	for i = 1, curPageTotal do

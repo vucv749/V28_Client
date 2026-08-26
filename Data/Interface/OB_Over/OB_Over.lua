@@ -7,43 +7,43 @@ local g_OB_Over_PlayerUI = {}
 local g_OB_Over_UI = {}
 
 local g_OB_Over_Def = {
-    teammax = 2,                -- 队伍最大数量
-    membermax = 6,              -- 成员最大数量
-    skillmax = 9,               -- 技能最大数量
-    buffmax = 9,                -- Buff最大数量
-    hpflash = 20,               -- 血条闪烁条件
+    teammax = 2,                -- ??????
+    membermax = 6,              -- ??????
+    skillmax = 9,               -- ??????
+    buffmax = 9,                -- Buff????
+    hpflash = 20,               -- ??????
 
-    fstblood_invalid = -1,      -- 没首杀
-    fstblood_teamfst = 1,       -- A队
-    fstblood_teamsec = 2,       -- B队
+    fstblood_invalid = -1,      -- ???
+    fstblood_teamfst = 1,       -- A?
+    fstblood_teamsec = 2,       -- B?
 
-    result_invalid = -1,        -- 结果
-    result_equal = 0,           -- 平局
-    result_teamfst = 1,         -- A队
-    result_teamsec = 2,         -- B队
+    result_invalid = -1,        -- ??
+    result_equal = 0,           -- ??
+    result_teamfst = 1,         -- A?
+    result_teamsec = 2,         -- B?
 }
 local g_OB_Over_Type = {
     zbs = 1,
 }
 local g_OB_Over_Page = {
-    single = 1,                 -- 个人
-    team = 2,                   -- 团队
+    single = 1,                 -- ??
+    team = 2,                   -- ??
 }
 local g_OB_Over_ScnID = {
     607,
 }
 local g_OB_Over_MP = {
-    [0]  ={name="#{WCBZ_180128_59}",color="#cff6600"},	--少林
-    [1]  ={name="#{WCBZ_180128_65}",color="#cffcc00"},	--明教
-    [2]  ={name="#{WCBZ_180128_67}",color="#c00ff00"},	--丐帮
-    [3]  ={name="#{WCBZ_180128_61}",color="#c0000ff"},	--武当
-    [4]  ={name="#{WCBZ_180128_68}",color="#cff99cc"},	--峨嵋
-    [5]  ={name="#{WCBZ_180128_66}",color="#c007700"},	--星宿
-    [6]  ={name="#{WCBZ_180128_60}",color="#cffff00"},	--天龙
-    [7]  ={name="#{WCBZ_180128_63}",color="#cffffff"},	--天山
-    [8]  ={name="#{WCBZ_180128_64}",color="#c7700ff"},	--逍遥
-    [9]  ={name="#{WCBZ_180128_57}",color="#c999999"},	--无门派
-    [10] ={name="#{WCBZ_180128_62}",color="#cffffb3"},	--曼陀
+    [0]  ={name="#{WCBZ_180128_59}",color="#cff6600"},	--??
+    [1]  ={name="#{WCBZ_180128_65}",color="#cffcc00"},	--??
+    [2]  ={name="#{WCBZ_180128_67}",color="#c00ff00"},	--??
+    [3]  ={name="#{WCBZ_180128_61}",color="#c0000ff"},	--??
+    [4]  ={name="#{WCBZ_180128_68}",color="#cff99cc"},	--??
+    [5]  ={name="#{WCBZ_180128_66}",color="#c007700"},	--??
+    [6]  ={name="#{WCBZ_180128_60}",color="#cffff00"},	--??
+    [7]  ={name="#{WCBZ_180128_63}",color="#cffffff"},	--??
+    [8]  ={name="#{WCBZ_180128_64}",color="#c7700ff"},	--??
+    [9]  ={name="#{WCBZ_180128_57}",color="#c999999"},	--???
+    [10] ={name="#{WCBZ_180128_62}",color="#cffffb3"},	--??
 }
 
 function OB_Over_PreLoad()
@@ -234,7 +234,7 @@ function OB_Over_SingleMemberShow_Common()
         if teamui == nil then
             break
         end
-        -- 获取战队内容
+        -- 获取牻队内容
         local uiIdx = 1
         local zoneid,teamname = GMVisible:LuaFnGetTeamInfo(i-1)
         for idx=1, g_OB_Over_Def.membermax do
@@ -459,7 +459,7 @@ function OB_Over_Hide()
     this:Hide()
 end
 
--- 关闭按钮点击事件
+-- 关睜按钮点击事件
 function OB_Over_Clicked_Close()
     OB_Over_Hide()
 end
@@ -490,7 +490,7 @@ function OB_Over_Switch_Show_Single()
     OB_Over_UpdateOtherInfo()
 end
 
--- 结果展示
+-- 结果牴示
 function OB_Over_BattleResult_Show()
     g_OB_Over_Data.gameover = 1
     OB_Over_UpdateFirstBlood()

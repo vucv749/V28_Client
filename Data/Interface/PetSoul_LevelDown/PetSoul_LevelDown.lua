@@ -19,14 +19,14 @@ function PetSoul_LevelDown_PreLoad()
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
 
-    this:RegisterEvent("OBJECT_CARED_EVENT");           --某逻辑对象的某些发生改变，用于距离NPC够远则关闭界面
+    this:RegisterEvent("OBJECT_CARED_EVENT");           --????????????,????NPC???????
     
-    this:RegisterEvent("UNIT_MONEY")					--金钱变化
-	this:RegisterEvent("MONEYJZ_CHANGE")			    --交子变化
+    this:RegisterEvent("UNIT_MONEY")					--????
+	this:RegisterEvent("MONEYJZ_CHANGE")			    --????
 
-	this:RegisterEvent("PETSOUL_LEVELDOWN_PUTIN_ITEM"); --放入物品
-	this:RegisterEvent("PACKAGE_ITEM_CHANGED")			--背包中物品改变
-	this:RegisterEvent("RESUME_ENCHASE_GEM"); --拖拽回背包
+	this:RegisterEvent("PETSOUL_LEVELDOWN_PUTIN_ITEM"); --????
+	this:RegisterEvent("PACKAGE_ITEM_CHANGED")			--???????
+	this:RegisterEvent("RESUME_ENCHASE_GEM"); --?????
 	
 end
 
@@ -63,7 +63,7 @@ function PetSoul_LevelDown_OnEvent(event)
 
 		return
 	elseif( event == "RESUME_ENCHASE_GEM" and this:IsVisible() ) then
-		if(arg0~=nil and tonumber(arg0) == 29) then---xml里配置的是 兽魂W29 
+		if(arg0~=nil and tonumber(arg0) == 29) then---xml????? ??W29 
 			PetSoul_LevelDown_Resume_Equip()
 		end
 		
@@ -77,7 +77,7 @@ function PetSoul_LevelDown_OnEvent(event)
 			PetSoul_LevelDown_ItemUpdate(-1)
 		end 
 		
-		PetSoul_LevelDown_MoneyUpdate()--界面钱数刷新
+		PetSoul_LevelDown_MoneyUpdate()--??????
 
 		return
     elseif event == "OBJECT_CARED_EVENT" and this : IsVisible() then
@@ -85,14 +85,14 @@ function PetSoul_LevelDown_OnEvent(event)
 			return;
 		end
 		
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if arg1 == "distance" and tonumber( arg2 ) > MAX_OBJ_DISTANCE or arg1 == "destroy" then
 			PetSoul_LevelDown_Close()
 		end
 
         return
     elseif event == "UNIT_MONEY" or event == "MONEYJZ_CHANGE" then
-        PetSoul_LevelDown_MoneyUpdate()--金钱交子 数量刷新
+        PetSoul_LevelDown_MoneyUpdate()--???? ????
         return
     elseif event == "ADJEST_UI_POS" or event == "VIEW_RESOLUTION_CHANGED"then
 		PetSoul_LevelDown_On_ResetPos()
@@ -102,9 +102,9 @@ end
 
 function PetSoul_LevelDown_ItemUpdate(bagPos)
 
-	--bagPos为-1，表示要初始化界面  关闭界面 右键取出物品时调用
+	--bagPos为-1，表示要初始化界面  关睜界面 右键取出物品时调用
 	if bagPos == -1 then
-		--放入物品栏置空
+		--放入物品栏置繝
 		PetSoul_LevelDown_Object:SetActionItem(-1)
 		--蒙红物品解锁
 		if g_PetSoul_LevelDown_ItemBagIndex ~= -1 then
@@ -126,7 +126,7 @@ function PetSoul_LevelDown_ItemUpdate(bagPos)
 		return
 	end
 	
-	--bagPos为正常物品BagIndex，表示放入物品
+	--bagPos为狚常物品BagIndex，表示放入物品
 	local theAction = EnumAction( bagPos, "packageitem");
 	if theAction:GetID() ~= 0 then
 
@@ -175,7 +175,7 @@ function PetSoul_LevelDown_ItemUpdate(bagPos)
 		end
 		
 	else
-		--放入物品栏置空
+		--放入物品栏置繝
 		PetSoul_LevelDown_Object:SetActionItem(-1)
 		--蒙红物品解锁
 		if g_PetSoul_LevelDown_ItemBagIndex ~= -1 then
@@ -268,7 +268,7 @@ end
 
 --=========================================================
 --开始关心NPC，
---在开始关心之前需要先确定这个界面是不是已经有“关心”的NPC，
+--在开始关心之前需要先确定犫个界面是不是已经有“关心”的NPC，
 --如果有的话，先取消已经有的“关心”
 --=========================================================
 function PetSoul_LevelDown_BeginCareObject( objCaredId )

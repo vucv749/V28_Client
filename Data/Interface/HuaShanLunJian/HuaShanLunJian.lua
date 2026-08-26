@@ -1,14 +1,14 @@
 --»ªÉ½ÂÛ½£ ÐÂ±ÈÎä´ó»á
 
 local g_HuaShanLunJian_Frame_UnifiedPosition;
-local g_HuaShanLunJian_Star3 = {} --3¿ÅÐÇÐÇ
-local g_HuaShanLunJian_Star4 = {} --4¿ÅÐÇÐÇ
-local g_HuaShanLunJian_Star5 = {} --5¿ÅÐÇÐÇ
-local g_HuaShanLunJian_Star6 = {} --6¿ÅÐÇÐÇ
-local g_HuaShanLunJian_Star8 = {} --8¿ÅÐÇÐÇ
+local g_HuaShanLunJian_Star3 = {} --3???
+local g_HuaShanLunJian_Star4 = {} --4???
+local g_HuaShanLunJian_Star5 = {} --5???
+local g_HuaShanLunJian_Star6 = {} --6???
+local g_HuaShanLunJian_Star8 = {} --8???
 
-local g_HuaShanLunJian_Dw2_Button = {} --¶ÎÎ»½±Àø Ð¡¶ÎÎ»°´Å¥
-local g_HuaShanLunJian_Rank_Button = {} --¶ÎÎ»½±Àø Ð¡¶ÎÎ»°´Å¥
+local g_HuaShanLunJian_Dw2_Button = {} --???? ?????
+local g_HuaShanLunJian_Rank_Button = {} --???? ?????
 
 local g_HuaShanLunJian_DuanWei_ActionItem = {}
 local g_HuaShanLunJian_DuanWei_LingQu = {}
@@ -229,19 +229,19 @@ function HuaShanLunJian_OnEvent(event)
 
 		local nCurDuanWei1 = Player:Lua_GetXbwData( "CuruanWei1" )
 		if nCurDuanWei1 <= 0 or nCurDuanWei1 > 6 then
-			PushDebugMessage("´ó¶ÎÎ»´íÎó")
+			PushDebugMessage("ÐÕi ðÆng c¤p sai l¥m")
 			return
 		end
 
 		local nCurDuanWei2 = Player:Lua_GetXbwData( "CuruanWei2" )
 		if nCurDuanWei2 <= 0 or nCurDuanWei2 > 4 then
-			PushDebugMessage("Ð¡¶ÎÎ»´íÎó")
+			PushDebugMessage("ÐoÕn ng¡n V¸ sai l¥m")
 			return
 		end
 
 		local nCurDuanWei3 = Player:Lua_GetXbwData( "CuruanWei3" )
 		if nCurDuanWei3 < 0 then
-			PushDebugMessage("ÐÇÊý´íÎó")
+			PushDebugMessage("Tinh S± sai l¥m")
 			return
 		end
 
@@ -330,7 +330,7 @@ function HuaShanLunJian_Update_Top( )
 	end
 
 	local nMaxDuanWei3 = XBW:GetXbwDuanweinfo(nCurDuanWei1, nCurDuanWei2)
-	if  nCurDuanWei1 == g_DwWangzhe then --ÍõÕß
+	if  nCurDuanWei1 == g_DwWangzhe then --??
 		HuaShanLunJian_Stage_StarSet3:Show()
 		HuaShanLunJian_Stage_Star3_1:SetProperty("Image", g_Bright_Stars)
 		HuaShanLunJian_Stage_Star3_1:SetToolTip("#{HSLJ_190919_326}")
@@ -447,7 +447,7 @@ function HuaShanLunJian_Update_Top( )
 	local conWinCntText = ScriptGlobal_Format("#{HSLJ_190919_207}", tostring(nSeasonConWinCnt))
 	HuaShanLunJian_Text7Info:SetText(conWinCntText)
 
-	-- Õ½¶ÓÃû×Ö
+	--  ½¶ÓÃû×Ö
 	local teamName = ""
 	local xbwTeamName = Player:Lua_GetXbwData( "GetTeamName" )
 	if xbwTeamName ~= "" and xbwTeamName ~= "???" then
@@ -648,15 +648,15 @@ function HuaShanLunJian_DanAward_AwardButton(dw1, dw2)
 		end
 		g_HuaShanLunJian_Dw2_Button[index]:Show()
 		--¸÷½×ÊÇ·ñÒÑ¾­Áì½±
-		--Ñ¡ÔñµÄ¶ÎÎ» > ÕæÊµ¶ÎÎ»£ºHide
+		--Ñ¡ÔñµÄ¶ÎÎ» >  æÊµ¶ÎÎ»£ºHide
 		if (dw1 > nCurDuanWei1) then
 			g_HuaShanLunJian_RedPoint_Jie[1]:Hide()
 			g_HuaShanLunJian_RedPoint_Jie[2]:Hide()
 			g_HuaShanLunJian_RedPoint_Jie[3]:Hide()
 			g_HuaShanLunJian_RedPoint_Jie[4]:Hide()
-		--Ñ¡ÔñµÄ¶ÎÎ» = ÕæÊµ¶ÎÎ»£º
-		--½×Êý >= ÕæÊµ½×ÊýµÄ£ºÁì¹ý½±ÀøµÄ£¬Hide£»Î´Áì¹ý½±ÀøµÄ£¬Show
-		--½×Êý < ÕæÊµ½×ÊýµÄ£ºHide
+		--Ñ¡ÔñµÄ¶ÎÎ» =  æÊµ¶ÎÎ»£º
+		--½×Êý >=  æÊµ½×ÊýµÄ£ºÁì¹ý½±ÀøµÄ£¬Hide£»Î´Áì¹ý½±ÀøµÄ£¬Show
+		--½×Êý <  æÊµ½×ÊýµÄ£ºHide
 		elseif (dw1 == nCurDuanWei1) then
 			if (index >= nCurDuanWei2) then
 				local GetPrize = Player:Lua_GetXbwData("GetDuanWeiReward",dw1-1, index-1)
@@ -674,7 +674,7 @@ function HuaShanLunJian_DanAward_AwardButton(dw1, dw2)
 				g_HuaShanLunJian_RedPoint_Jie[index]:Hide()	
 			end
 
-		--Ñ¡ÔñµÄ¶ÎÎ» < ÕæÊµ¶ÎÎ»£ºÁì¹ý½±ÀøµÄ£¬Hide£»Î´Áì¹ý½±ÀøµÄ£¬Show
+		--Ñ¡ÔñµÄ¶ÎÎ» <  æÊµ¶ÎÎ»£ºÁì¹ý½±ÀøµÄ£¬Hide£»Î´Áì¹ý½±ÀøµÄ£¬Show
 		else
 			local GetPrize = Player:Lua_GetXbwData("GetDuanWeiReward",dw1-1, index-1)
 			if GetPrize == 1 then
@@ -695,12 +695,12 @@ function HuaShanLunJian_DanAward_AwardButton(dw1, dw2)
 		g_HuaShanLunJian_Dw2_Button[index]:Hide()
 	end
 	
-	--×ö¸öÐÞÕý
+	--×ö¸öÐÞ ý
 	if dw1 == 1 then
 		g_HuaShanLunJian_Dw2_Button[2]:Hide()
 	end
 	
-	--°Ô½££ºÒþ²ØÕâÒ»ÐÐ
+	--°Ô½££ºÒþ²Ø âÒ»ÐÐ
 	if dw1 == g_DwWangzhe then
 		for i=1, table.getn(g_HuaShanLunJian_Dw2_Button) do
 			g_HuaShanLunJian_Dw2_Button[i]:Hide()

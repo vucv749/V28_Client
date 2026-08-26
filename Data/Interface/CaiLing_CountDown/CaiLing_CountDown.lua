@@ -9,7 +9,7 @@ function CaiLing_CountDown_PreLoad()
 	-- uicommand
 	this:RegisterEvent("UI_COMMAND")
 	-- 游戏窗口尺寸发生了变化
-	this:RegisterEvent("ADJEST_UI_POS", false) --第二个参数代表界面隐藏时事件是否有效,默认为true
+	this:RegisterEvent("ADJEST_UI_POS", false) --??????????????????,???true
 	-- 游戏分辨率发生了变化
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED", false)
 	-- 切换场景

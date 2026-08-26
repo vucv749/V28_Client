@@ -10,7 +10,7 @@ local g_nUIComfirmCommandID	= 99854002
 local g_nUseItemBagPos		= -1
 -- 礼包奖励内容
 local g_tableRewardInfo	=
-{	--奖励内容未修改
+{	--???????
 	[1] = {nGiveItemID = 10125494, nGiveItemNum = 1, showItem = 10125494},
 	[2] = {nGiveItemID = 10125489, nGiveItemNum = 1, showItem = 38003034, previewFace=56 , previewHair = 84},
 	[3] = {nGiveItemID = 10125601, nGiveItemNum = 1, showItem = 38003035, previewFace=56 , previewHair = 85},
@@ -50,10 +50,10 @@ end
 --=========================================================
 function SpringFestival_NewClothes_Box_OnEvent(event)
 	if ( event == "UI_COMMAND" and tonumber(arg0) == g_nUICommandID ) then
-		-- 0 关闭, 1 打开, 2 刷新, 3 二次确认框
+		-- 0 关睜, 1 打开, 2 刷新, 3 二次确认框
 		local nOpType 	= Get_XParam_INT(0)
 
-		-- 关闭界面
+		-- 关睜界面
 		if 0 == nOpType then	
 			if this:IsVisible() then
 				SpringFestival_NewClothes_BoxOnClose()
@@ -175,7 +175,7 @@ function SpringFestival_NewClothes_BoxConfirm(nSelectedIndex)
 end
 
 --=========================================================
--- 关闭界面
+-- 关睜界面
 --=========================================================
 function SpringFestival_NewClothes_BoxOnClose()	
 	this:Hide()

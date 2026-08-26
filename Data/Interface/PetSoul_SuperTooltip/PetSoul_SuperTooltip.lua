@@ -115,7 +115,7 @@ end
 
 function PetSoul_SuperTooltip_Update(showtype)
 
-	-- 先清空以前显示的文字
+	-- 先清繝以前显示的文字
 	PetSoul_SuperTooltip_ClearText();
 		
 	local typeDesc = nil
@@ -191,7 +191,7 @@ end
 
 -------------------------------------------------------------------------------------------------------------------------------
 --
--- 清空显示文本
+-- 清繝显示文本
 --
 function PetSoul_SuperTooltip_ClearText()
 		

@@ -58,9 +58,9 @@ function Makefriends_Activity_Watch_Updata()
 		if nGuid ~= -1 then
 			local name = ScriptGlobal_Format("#{JYHD_230331_109}", szCharName)
 			_G["Makefriends_Activity_Watch_LeftBK_Name"..i]:SetText(name)
-			if nSex == 0 then --Å®
+			if nSex == 0 then --?
 				_G["Makefriends_Activity_Watch_LeftBK_Gender"..i]:SetText("#{JYHD_230331_111}")
-			elseif nSex == 1 then --ÄĞ
+			elseif nSex == 1 then --?
 				_G["Makefriends_Activity_Watch_LeftBK_Gender"..i]:SetText("#{JYHD_230331_110}")
 			end
 			local szTimes = ScriptGlobal_Format("#{JYHD_230331_119}", nTimes)
@@ -78,9 +78,9 @@ function Makefriends_Activity_Watch_Updata()
 		if nGuid ~= -1 then
 			local name = ScriptGlobal_Format("#{JYHD_230331_109}", szCharName)
 			_G["Makefriends_Activity_Watch_LeftBK2_Name"..i]:SetText(name)
-			if nSex == 0 then --Å®
+			if nSex == 0 then --?
 				_G["Makefriends_Activity_Watch_LeftBK2_Gender"..i]:SetText("#{JYHD_230331_111}")
-			elseif nSex == 1 then --ÄĞ
+			elseif nSex == 1 then --?
 				_G["Makefriends_Activity_Watch_LeftBK2_Gender"..i]:SetText("#{JYHD_230331_110}")
 			end
 			local szTimes = ScriptGlobal_Format("#{JYHD_230331_120}", nTimes)
@@ -98,9 +98,9 @@ function Makefriends_Activity_Watch_Updata()
 		if nGuid ~= -1 then
 			local name = ScriptGlobal_Format("#{JYHD_230331_109}", szCharName)
 			_G["Makefriends_Activity_Watch_LeftBK2_Name"..i+3]:SetText(name)
-			if nSex == 0 then --Å®
+			if nSex == 0 then --?
 				_G["Makefriends_Activity_Watch_LeftBK2_Gender"..i+3]:SetText("#{JYHD_230331_111}")
-			elseif nSex == 1 then --ÄĞ
+			elseif nSex == 1 then --?
 				_G["Makefriends_Activity_Watch_LeftBK2_Gender"..i+3]:SetText("#{JYHD_230331_110}")
 			end
 			local szTimes = ScriptGlobal_Format("#{JYHD_230331_120}", nTimes)
@@ -118,9 +118,9 @@ function Makefriends_Activity_Watch_Updata()
 		if nGuid ~= -1 then
 			local name = ScriptGlobal_Format("#{JYHD_230331_109}", szCharName)
 			_G["Makefriends_Activity_Watch_Name"..i]:SetText(name)
-			if nSex == 0 then --Å®
+			if nSex == 0 then --?
 				_G["Makefriends_Activity_Watch_Gender"..i]:SetText("#{JYHD_230331_111}")
-			elseif nSex == 1 then --ÄĞ
+			elseif nSex == 1 then --?
 				_G["Makefriends_Activity_Watch_Gender"..i]:SetText("#{JYHD_230331_110}")
 			end
 		else
@@ -154,8 +154,8 @@ function Makefriends_Activity_Watch_Hide_Event()
 	Makefriends_Activity_Watch_Info5:SetText("")
 	Makefriends_Activity_Watch_Info6:SetText("")
 	Makefriends_Activity_Watch_Info:SetText("")
-	Makefriends_Activity_Watch_B1:SetText("Ìí¼ÓºÃÓÑ")
-	Makefriends_Activity_Watch_B2:SetText("±í´ïĞÄÒâ")
+	Makefriends_Activity_Watch_B1:SetText("Tång thêm các\\u0020hÕ t¯t")
+	Makefriends_Activity_Watch_B2:SetText("Bi¬u ğÕt tâm ı")
 	Makefriends_Activity_Watch_FakeObject : SetFakeObject("");
 end
 
@@ -174,11 +174,11 @@ function Makefriends_Activity_Watch_B2_SelectClicked()
 	local nGuid, nSex, szCharName, nTimes,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = -1,0,"",0,0,-1,0,0,0,0,""
 	if 1 == n then
 		if m == 1 then
-			 nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMe(0) --²ÎÊıÃ»ÓÃ
+			 nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMe(0) --????
 		elseif m ==  2 then
-			nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToOther(1) --²ÎÊıÃ»ÓÃ
+			nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToOther(1) --????
 		elseif m ==  3 then
-			nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMeOppositesex(2) --²ÎÊıÃ»ÓÃ
+			nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMeOppositesex(2) --????
 		end
 	elseif 2 == n then
 		if m >= 1 and m <= 3 then
@@ -194,7 +194,7 @@ function Makefriends_Activity_Watch_B2_SelectClicked()
 
 	if nGuid ~= -1 then
 		if (nGuid == Player:GetGUID()) then  
-			PushDebugMessage("#HÎŞ·¨¸ø×Ô¼º±í´ïĞÄÒâ¡£");--ĞŞ¸Ä×Öµä
+			PushDebugMessage("#HkHông th¬ C¤p chính mình bi¬u ğÕt tâm ı.");--????
 			return;
 		end
 		
@@ -208,11 +208,11 @@ function Makefriends_Activity_Watch_Btn_SelectEvery(n,m)
 	local nGuid, nSex, szCharName, nTimes,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = -1,0,"",0,0,-1,0,0,0,0,""
 	if 1 == n then
 		if m == 1 then
-			 nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMe(0) --²ÎÊıÃ»ÓÃ
+			 nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMe(0) --????
 		elseif m ==  2 then
-			nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToOther(1) --²ÎÊıÃ»ÓÃ
+			nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToOther(1) --????
 		elseif m ==  3 then
-			nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMeOppositesex(2) --²ÎÊıÃ»ÓÃ
+			nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMeOppositesex(2) --????
 		end
 	elseif 2 == n then
 		if m >= 1 and m <= 3 then
@@ -253,8 +253,8 @@ function Makefriends_Activity_Watch_Btn_SelectEvery(n,m)
 		Makefriends_Activity_Watch_Info6:SetText(szProvince)
 		local szLuckWord = ScriptGlobal_Format("#{JYHD_230331_73}", szLuckWord)
 		Makefriends_Activity_Watch_Info:SetText(szLuckWord)
-		Makefriends_Activity_Watch_B1:SetText("Ìí¼ÓºÃÓÑ")
-		Makefriends_Activity_Watch_B2:SetText("±í´ïĞÄÒâ")
+		Makefriends_Activity_Watch_B1:SetText("Tång thêm các\\u0020hÕ t¯t")
+		Makefriends_Activity_Watch_B2:SetText("Bi¬u ğÕt tâm ı")
 		Makefriends_Activity_Watch_FakeObject : SetFakeObject("");
 		Makefriends_Activity_Watch_FakeObject : SetFakeObject("MakefriendActivity_Watch");
 		SocialActivitesDataPool:SocialActivities_ChangeModel_AsTarget(n,m-1)
@@ -272,8 +272,8 @@ function Makefriends_Activity_Watch_Btn_SelectEvery(n,m)
 		Makefriends_Activity_Watch_Info5:SetText("")
 		Makefriends_Activity_Watch_Info6:SetText("")
 		Makefriends_Activity_Watch_Info:SetText("")
-		Makefriends_Activity_Watch_B1:SetText("Ìí¼ÓºÃÓÑ")
-		Makefriends_Activity_Watch_B2:SetText("±í´ïĞÄÒâ")
+		Makefriends_Activity_Watch_B1:SetText("Tång thêm các\\u0020hÕ t¯t")
+		Makefriends_Activity_Watch_B2:SetText("Bi¬u ğÕt tâm ı")
 		Makefriends_Activity_Watch_FakeObject : SetFakeObject("");
 	end
 end
@@ -326,29 +326,29 @@ function Makefriends_Activity_Watch_GetnYearAnimal( nYearAnimal )
 	if(0 == nYearAnimal) then
 		strYA = "-";
 	elseif(1 == nYearAnimal) then
-		strYA = "Êó";
+		strYA = "ThØ";
 	elseif(2 == nYearAnimal) then
-		strYA = "Å£";
+		strYA = "Ngßu";
 	elseif(3 == nYearAnimal) then
-		strYA = "»¢";
+		strYA = "H±";
 	elseif(4 == nYearAnimal) then
-		strYA = "ÍÃ";
+		strYA = "Th¯";
 	elseif(5 == nYearAnimal) then
-		strYA = "Áú";
+		strYA = "Thìn";
 	elseif(6 == nYearAnimal) then
-		strYA = "Éß";
+		strYA = "Xà";
 	elseif(7 == nYearAnimal) then
-		strYA = "Âí";
+		strYA = "Mã";
 	elseif(8 == nYearAnimal) then
-		strYA = "Ñò";
+		strYA = "Dß½ng";
 	elseif(9 == nYearAnimal) then
-		strYA = "ºï";
+		strYA = "H¥u";
 	elseif(10 == nYearAnimal) then
-		strYA = "¼¦";
+		strYA = "Kê";
 	elseif(11 == nYearAnimal) then
-		strYA = "¹·";
+		strYA = "C¦u";
 	elseif(12 == nYearAnimal) then
-		strYA = "Öí";
+		strYA = "Trß";
 	end
 		
 	return strYA
@@ -361,29 +361,29 @@ function Makefriends_Activity_Watch_XingZuo( nxz )
 	if(0 == nxz) then
 		strYA = "-";
 	elseif(1 == nxz) then
-		strYA = "Ä§ôÉ×ù";
+		strYA = "Ma HÕt ToÕ";
 	elseif(2 == nxz) then
-		strYA = "Ë®Æ¿×ù";
+		strYA = "Chòm Thüy Bình";
 	elseif(3 == nxz) then
-		strYA = "Ë«Óã×ù";
+		strYA = "Chòm Song Ngß";
 	elseif(4 == nxz) then
-		strYA = "°×Ñò×ù";
+		strYA = "Chòm BÕch Dß½ng";
 	elseif(5 == nxz) then
-		strYA = "½ğÅ£×ù";
+		strYA = "Chòm Kim Ngßu";
 	elseif(6 == nxz) then
-		strYA = "Ë«×Ó×ù";
+		strYA = "Chòm song nam";
 	elseif(7 == nxz) then
-		strYA = "¾ŞĞ·×ù";
+		strYA = "Chòm cñ giäi";
 	elseif(8 == nxz) then
-		strYA = "Ê¨×Ó×ù";
+		strYA = "Chòm Sß TØ";
 	elseif(9 == nxz) then
-		strYA = "´¦Å®×ù";
+		strYA = "XØ næ ToÕ";
 	elseif(10 == nxz) then
-		strYA = "Ìì³Ó×ù";
+		strYA = "Chòm Thiên Bình";
 	elseif(11 == nxz) then
-		strYA = "ÌìĞ«×ù";
+		strYA = "Chòm sao bò cÕp";
 	elseif(12 == nxz) then
-		strYA = "ÉäÊÖ×ù";
+		strYA = "XÕ thü ToÕ";
 	end
 		
 	return strYA
@@ -395,75 +395,75 @@ function Makefriends_Activity_Watch_Province( nxz )
 	if(0 == nxz) then
 		strYA = "-";
 	elseif(1 == nxz) then
-		strYA = "±±¾©";
+		strYA = "B¡c Kinh";
 	elseif(2 == nxz) then
-		strYA = "Ìì½ò";
+		strYA = "Thiên Tân";
 	elseif(3 == nxz) then
-		strYA = "ÉÏº£";
+		strYA = "Thßşng Häi";
 	elseif(4 == nxz) then
-		strYA = "ÖØÇì";
+		strYA = "Trùng Khánh";
 	elseif(5 == nxz) then
-		strYA = "ºÓ±±";
+		strYA = "Hà B¡c";
 	elseif(6 == nxz) then
-		strYA = "ÁÉÄş";
+		strYA = "Liêu Ninh";
 	elseif(7 == nxz) then
-		strYA = "É½¶«";
+		strYA = "S½n Ğông";
 	elseif(8 == nxz) then
-		strYA = "ºÚÁú½­";
+		strYA = "H¡c Long Giang";
 	elseif(9 == nxz) then
-		strYA = "É½Î÷";
+		strYA = "S½n Tây";
 	elseif(10 == nxz) then
-		strYA = "¼ªÁÖ";
+		strYA = "Cát Lâm";
 	elseif(11 == nxz) then
-		strYA = "ÉÂÎ÷";
+		strYA = "Thi¬m Tây";
 	elseif(12 == nxz) then
-		strYA = "ºÓÄÏ";
+		strYA = "Hà Nam";
 	elseif(13 == nxz) then
-		strYA = "°²»Õ";
+		strYA = "An Huy";
 	elseif(14 == nxz) then
-		strYA = "½­ËÕ";
+		strYA = "Giang Tô";
 	elseif(15 == nxz) then
-		strYA = "ºş±±";
+		strYA = "H° B¡c";
 	elseif(16 == nxz) then
-		strYA = "Õã½­";
+		strYA = "Chiªt Giang";
 	elseif(17 == nxz) then
-		strYA = "ºşÄÏ";
+		strYA = "H° Nam";
 	elseif(18 == nxz) then
-		strYA = "½­Î÷";
+		strYA = "Giang Tây";
 	elseif(19 == nxz) then
-		strYA = "¸£½¨";
+		strYA = "Phúc Kiªn";
 	elseif(20 == nxz) then
-		strYA = "Ì¨Íå";
+		strYA = "Ğài Loan";
 	elseif(21 == nxz) then
-		strYA = "ÄÚÃÉ¹Å";
+		strYA = "Nµi Mông C±";
 	elseif(22 == nxz) then
-		strYA = "¸ÊËà";
+		strYA = "Cam Túc";
 	elseif(23 == nxz) then
-		strYA = "ÄşÏÄ";
+		strYA = "Ninh HÕ";
 	elseif(24 == nxz) then
-		strYA = "ËÄ´¨";
+		strYA = "TÑ Xuyên";
 	elseif(25 == nxz) then
-		strYA = "¹óÖİ";
+		strYA = "Quı Châu";
 	elseif(26 == nxz) then
-		strYA = "ÔÆÄÏ";
+		strYA = "Vân Nam";
 	elseif(27 == nxz) then
-		strYA = "¹ãÎ÷";
+		strYA = "Quäng Tây";
 	elseif(28 == nxz) then
-		strYA = "¹ã¶«";
+		strYA = "Quäng Ğông";
 	elseif(29 == nxz) then
-		strYA = "º£ÄÏ";
+		strYA = "Häi Nam";
 	elseif(30 == nxz) then
-		strYA = "ĞÂ½®";
+		strYA = "Tân Cß½ng";
 	elseif(31 == nxz) then
-		strYA = "Çàº£";
+		strYA = "Thanh Häi";
 	elseif(32 == nxz) then
-		strYA = "Î÷²Ø";
+		strYA = "Tây TÕng";
 	elseif(33 == nxz) then
-		strYA = "°ÄÃÅ";
+		strYA = "Macao";
 	elseif(34 == nxz) then
-		strYA = "Ïã¸Û";
+		strYA = "H°ng Kông";
 	elseif(35 == nxz) then
-		strYA = "ÆäËû";
+		strYA = "M£t khác";
 	end
 		
 	return strYA
@@ -476,11 +476,11 @@ function Makefriends_Activity_Watch_AddFriend()
 	local nGuid, nSex, szCharName, nTimes,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = -1,0,"",0,0,-1,0,0,0,0,""
 	if 1 == g_AddFriend_n then
 		if g_AddFriend_m == 1 then
-			 nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMe(0) --²ÎÊıÃ»ÓÃ
+			 nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMe(0) --????
 		elseif g_AddFriend_m ==  2 then
-			nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToOther(1) --²ÎÊıÃ»ÓÃ
+			nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToOther(1) --????
 		elseif g_AddFriend_m ==  3 then
-			nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMeOppositesex(2) --²ÎÊıÃ»ÓÃ
+			nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMeOppositesex(2) --????
 		end
 	elseif 2 == g_AddFriend_n then
 		if g_AddFriend_m >= 1 and g_AddFriend_m <= 3 then
@@ -496,12 +496,12 @@ function Makefriends_Activity_Watch_AddFriend()
 
 	if nGuid ~= -1 then
 		if (nGuid == Player:GetGUID()) then  
-			PushDebugMessage("#{GGSK_221221_49}");--ĞŞ¸Ä×Öµä
+			PushDebugMessage("#{GGSK_221221_49}");--????
 			return;
 		end
 		--ÒÑÊÇºÃÓÑ ÔòÒş²Ø
 		if (Friend:IsPlayerIsFriendNotTemp(szCharName) == 1) then
-			PushDebugMessage("#{JYHD_230331_138}");--ĞŞ¸Ä×Öµä
+			PushDebugMessage("#{JYHD_230331_138}");--????
 			return
 		end
 		
@@ -516,11 +516,11 @@ function Makefriends_Activity_Watch_B1_AddFriend(n,m)
 	local nGuid, nSex, szCharName, nTimes,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = -1,0,"",0,0,-1,0,0,0,0,""
 	if 1 == n then
 		if m == 1 then
-			 nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMe(0) --²ÎÊıÃ»ÓÃ
+			 nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMe(0) --????
 		elseif m ==  2 then
-			nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToOther(1) --²ÎÊıÃ»ÓÃ
+			nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToOther(1) --????
 		elseif m ==  3 then
-			nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMeOppositesex(2) --²ÎÊıÃ»ÓÃ
+			nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMeOppositesex(2) --????
 		end
 	elseif 2 == n then
 		if m >= 1 and m <= 3 then
@@ -536,12 +536,12 @@ function Makefriends_Activity_Watch_B1_AddFriend(n,m)
 
 	if nGuid ~= -1 then
 		if (nGuid == Player:GetGUID()) then  
-			PushDebugMessage("#{GGSK_221221_49}");--ĞŞ¸Ä×Öµä
+			PushDebugMessage("#{GGSK_221221_49}");--????
 			return;
 		end
 		--ÒÑÊÇºÃÓÑ ÔòÒş²Ø
 		if (Friend:IsPlayerIsFriendNotTemp(szCharName) == 1) then
-			PushDebugMessage("#{JYHD_230331_138}");--ĞŞ¸Ä×Öµä
+			PushDebugMessage("#{JYHD_230331_138}");--????
 			return
 		end
 		
@@ -557,11 +557,11 @@ function Makefriends_Activity_Watch_Expressing_Emotions(n,m)
 	local nGuid, nSex, szCharName, nTimes,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = -1,0,"",0,0,-1,0,0,0,0,""
 	if 1 == n then
 		if m == 1 then
-			 nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMe(0) --²ÎÊıÃ»ÓÃ
+			 nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMe(0) --????
 		elseif m ==  2 then
-			nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToOther(1) --²ÎÊıÃ»ÓÃ
+			nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToOther(1) --????
 		elseif m ==  3 then
-			nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMeOppositesex(2) --²ÎÊıÃ»ÓÃ
+			nGuid, nSex, szCharName, _,nAge,nMenpai,nBloodType,nConsella,nYearAnimal,nProvince,nLevel,szLuckWord = SocialActivitesDataPool:GetTopMostskillsToMeOppositesex(2) --????
 		end
 	elseif 2 == n then
 		if m >= 1 and m <= 3 then
@@ -577,7 +577,7 @@ function Makefriends_Activity_Watch_Expressing_Emotions(n,m)
 
 	if nGuid ~= -1 then
 		if (nGuid == Player:GetGUID()) then  
-			PushDebugMessage("#HÎŞ·¨¸ø×Ô¼º±í´ïĞÄÒâ¡£");--ĞŞ¸Ä×Öµä
+			PushDebugMessage("#HkHông th¬ C¤p chính mình bi¬u ğÕt tâm ı.");--????
 			return;
 		end
 		

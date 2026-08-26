@@ -1,6 +1,6 @@
 ------------------------------------
 -- 武道二层历练任务
--- 琳琅奇阵
+-- 翣琅奇狊
 -- 任务3
 -- 副本界面
 ------------------------------------
@@ -9,10 +9,10 @@ local g_Frame_UnifiedPosition
 
 local g_IconCtrl = {}
 
-local g_Stage = -1--第几轮
-local g_MaxStage = 5--总轮数
-local g_LeftTime = 0--中场休息剩余时间
-local g_MaxIcon = 6--最大击杀数量
+local g_Stage = -1--???
+local g_MaxStage = 5--???
+local g_LeftTime = 0--????????
+local g_MaxIcon = 6--??????
 
 --================================================
 -- PreLoad()
@@ -68,10 +68,10 @@ function Wudaoqizhen_Pozhenjifen_OnEvent(event)
 		end
 		-- 进度还未开始
 		if g_Stage == 0 then
-			-- 关闭本轮倒计时
+			-- 关睜本轮倒计时
 			Wudaoqizhen_Pozhenjifen_Text2:Hide()
 			Wudaoqizhen_Pozhenjifen_Time:Hide()
-			--关闭10s倒计时
+			--关睜10s倒计时
 			g_LeftTime = 0
 			Wudaoqizhen_Pozhenjifen_Text3:Hide()
 			KillTimer("Wudaoqizhen_Pozhenjifen_Proc()")
@@ -79,9 +79,9 @@ function Wudaoqizhen_Pozhenjifen_OnEvent(event)
 			Wudaoqizhen_Pozhenjifen_Text4:Show()
 		-- 是否中场休息
 		elseif nRest == 1 then
-			-- 关闭默认显示
+			-- 关睜默认显示
 			Wudaoqizhen_Pozhenjifen_Text4:Hide()
-			-- 关闭本轮倒计时
+			-- 关睜本轮倒计时
 			Wudaoqizhen_Pozhenjifen_Text2:Hide()
 			Wudaoqizhen_Pozhenjifen_Time:Hide()
 			--开启10s倒计时
@@ -92,9 +92,9 @@ function Wudaoqizhen_Pozhenjifen_OnEvent(event)
 			SetTimer("Wudaoqizhen_Pozhenjifen","Wudaoqizhen_Pozhenjifen_Proc()", 1000)
 		-- 第几轮进行中
 		else
-			-- 关闭默认显示
+			-- 关睜默认显示
 			Wudaoqizhen_Pozhenjifen_Text4:Hide()
-			--关闭10s倒计时
+			--关睜10s倒计时
 			g_LeftTime = 0
 			Wudaoqizhen_Pozhenjifen_Text3:Hide()
 			KillTimer("Wudaoqizhen_Pozhenjifen_Proc()")
@@ -137,7 +137,7 @@ function Wudaoqizhen_Pozhenjifen_OnEvent(event)
 end
 
 --================================================
--- 关闭界面
+-- 关睜界面
 --================================================
 function Wudaoqizhen_Pozhenjifen_OnHiden()
 	KillTimer("Wudaoqizhen_Pozhenjifen_Proc()")

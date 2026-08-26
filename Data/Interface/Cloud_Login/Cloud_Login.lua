@@ -8,9 +8,9 @@ local TailName ={
 		"@chinaren.com",
 		"@sogou.com",
 		"@17173.com",
-		"ÊÖ»úºÅÂëµÇÂ¼",
-		"ÊäÈëÆäËûÕËºÅºó×º",
-		"ÎŞºó×ºÕËºÅµÇÂ¼",
+		"S¯ ği®n thoÕi di ğµng ğång kı",
+		"Ğßa vào m£t khác tài khoän h§u t¯",
+		"Vô h§u t¯ tài khoän ğång kı",
 		}
 		
 local g_CloudLogin_IsQRCode = 0;
@@ -23,10 +23,10 @@ function Cloud_Login_PreLoad()
 	-- ´ò¿ª½çÃæ
 	this:RegisterEvent("GAMELOGIN_OPEN_COUNT_INPUT");
 	
-	-- ¹Ø±Õ½çÃæ
+	-- ¹Ø± ½çÃæ
 	this:RegisterEvent("GAMELOGIN_CLOSE_COUNT_INPUT");
 	
-	-- ½øÈëÓÎÏ·ºóÇå¿ÕÕÊºÅ
+	-- ½øÈëÓÎÏ·ºóÇå¿  ÊºÅ
 	this:RegisterEvent("GAMELOGIN_CLEAR_ACCOUNT");
 	
 	this:RegisterEvent("QRCODE_MESSAGE" );
@@ -39,14 +39,14 @@ end
 --===============================================
 function Cloud_Login_OnLoad()
 
-	-- Éú³ÉÓÊÏäÕÊºÅµÄÏÂÀ­ÁĞ±í
+	-- Éú³ÉÓÊÏä ÊºÅµÄÏÂÀ­ÁĞ±í
   local TailCount = 9
 	local i = 0;
 	
 	for i = 0, TailCount-1 do
 		Cloud_Login_Region:ComboBoxAddItem( TailName[ i ], i );
 	end
-	----Ñ¡ÔñÉÏÒ»´ÎµÇÂ¼µÄÕËºÅºó×ºdengxx
+	----Ñ¡ÔñÉÏÒ»´ÎµÇÂ¼µÄ ËºÅºó×ºdengxx
 	local nMailIndex = Variable:GetVariable("Account_MailIndex")
 	if nMailIndex == nil or nMailIndex == "-1" then
 		nMailIndex = 0
@@ -60,14 +60,14 @@ end
 --===============================================
 function Cloud_Login_OnEvent(event)
 
-	-- ´ò¿ªÕÊºÅÊäÈë½çÃæ
+	-- ´ò¿ª ÊºÅÊäÈë½çÃæ
  	if( event == "GAMELOGIN_OPEN_COUNT_INPUT" ) then
 		
 		if not GameProduceLogin:IsYunGameMobileClient() then 
 			return
 		end
 		
- 		--ÏÔÊ¾ÕÊºÅÃÜÂë½çÃæ
+ 		--ÏÔÊ¾ ÊºÅÃÜÂë½çÃæ
 		Cloud_Login_Tradition_MouseDown()
 		Cloud_Login_Initilize();
 		this:Show();
@@ -75,7 +75,7 @@ function Cloud_Login_OnEvent(event)
 		return;
 	end
 	
-	-- ¹Ø±ÕÕÊºÅÊäÈë½çÃæ
+	-- ¹Ø±  ÊºÅÊäÈë½çÃæ
 	if( event == "GAMELOGIN_CLOSE_COUNT_INPUT") then
 		
 		Cloud_Login_PassWord:SetText("");
@@ -84,10 +84,10 @@ function Cloud_Login_OnEvent(event)
 		return;
 	end
 	
-	-- ½øÈëÓÎÏ·ºóÇå¿ÕÕÊºÅ
+	-- ½øÈëÓÎÏ·ºóÇå¿  ÊºÅ
 	if( event == "GAMELOGIN_CLEAR_ACCOUNT") then
 		
-		-- Çå¿ÕÃÜÂë.
+		-- Çå¿ ÃÜÂë.
 		Cloud_Login_PassWord:SetText("");
 		Cloud_Login_ID:SetText("");
 		this:Hide();
@@ -185,7 +185,7 @@ function Cloud_Login_CheckAccount()
 			strTail = "";
 	end
 	
-	strTail = Cloud_Login_Region:GetText();    --ÔİÊ±ĞŞ¸Ä,ÒòÎªGetCurrentSelectµÄbug,µ¼ÖÂÔÚÄ³Ğ©²Ù×÷µÄÊ±ºò²»ÄÜÕıÈ·È¡µÃµ±Ç°µÄÑ¡Ôñ,¶ø½çÃæµ×²ãÕıÔÚĞŞ¸ÄÖĞ,ÔİÊ±ÓÃ´Ëº¯Êı½â¾öÓÃ»§Ãûºó×ºÎª¿ÕµÄÎÊÌâBugID:15422
+	strTail = Cloud_Login_Region:GetText();    --????,??GetCurrentSelect?bug,?????????????????????,??????????,??????????????????BugID:15422
 	
 	if(Variable:GetVariable("System_CodePage") == "1258") then
 		strTail = "";
@@ -212,7 +212,7 @@ function Cloud_Login_CheckAccount()
   
   GameProduceLogin:CheckAccount(strTail);
 
-	--ÕÊºÅÃÜÂëeditboxÊ§È¥ÊäÈë½¹µã
+	-- ÊºÅÃÜÂëeditboxÊ§È¥ÊäÈë½¹µã
 	Cloud_Login_Frame_OnHiden()
 end
 
@@ -224,7 +224,7 @@ function Cloud_Login_LostPassWord()
 	end
 end
 
---¹Ø±Õ¶şÎ¬Âë½çÃæ
+--¹Ø± ¶şÎ¬Âë½çÃæ
 function Cloud_Login_QRCode_OnClosed()
 	Cloud_Login_Tradition_MouseDown()
 end
@@ -270,7 +270,7 @@ end
 
 -----------------------------
 
---ÕÊºÅ×¢²á
+-- ÊºÅ×¢²á
 function Cloud_Login_AccountReg()
 	GameProduceLogin:StartAccountReg()
 end

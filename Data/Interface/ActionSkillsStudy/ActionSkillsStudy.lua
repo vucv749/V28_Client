@@ -25,16 +25,16 @@ local MAX_OBJ_DISTANCE = 3.0;
 
 
 local MenPai_UsedAttr = {
-[0] = {image = "set:Menpaishuxing image:Shuxing_Dark", Tooltip = "MPZSX_20071221_13", },			--ÉÙÁÖ
-[1] = {image = "set:Menpaishuxing image:Shuxing_Fire", Tooltip = "MPZSX_20071221_12",},				--Ã÷½Ì
-[2] = {image = "set:Menpaishuxing image:Shuxing_PoisonFire", Tooltip = "MPZSX_20071221_15",},		--Ø¤°ï
-[3] = {image = "set:Menpaishuxing image:Shuxing_DarkIce", Tooltip = "MPZSX_20071221_16",},			--Îäµ±
-[4] = {image = "set:Menpaishuxing image:Shuxing_IceDark", Tooltip = "MPZSX_20071221_17",},			--¶ëáÒ
-[5] = {image = "set:Menpaishuxing image:Shuxing_Poison", Tooltip = "MPZSX_20071221_14",},			--ÐÇËÞ
-[6] = {image = "set:Menpaishuxing image:Shuxing_FIPD", Tooltip = "MPZSX_20071221_18",}, 			--ÌìÁú
-[7] = {image = "set:Menpaishuxing image:Shuxing_Ice", Tooltip = "MPZSX_20071221_11",},				--ÌìÉ½
-[8] = {image = "set:Menpaishuxing image:Shuxing_FirePoison", Tooltip = "MPZSX_20071221_19",},		--åÐÒ£
-[9] = {image = "", Tooltip = "ÎÞÃÅÅÉ",},															--ÎÞÃÅÅÉ
+[0] = {image = "set:Menpaishuxing image:Shuxing_Dark", Tooltip = "MPZSX_20071221_13", },			--??
+[1] = {image = "set:Menpaishuxing image:Shuxing_Fire", Tooltip = "MPZSX_20071221_12",},				--??
+[2] = {image = "set:Menpaishuxing image:Shuxing_PoisonFire", Tooltip = "MPZSX_20071221_15",},		--??
+[3] = {image = "set:Menpaishuxing image:Shuxing_DarkIce", Tooltip = "MPZSX_20071221_16",},			--??
+[4] = {image = "set:Menpaishuxing image:Shuxing_IceDark", Tooltip = "MPZSX_20071221_17",},			--??
+[5] = {image = "set:Menpaishuxing image:Shuxing_Poison", Tooltip = "MPZSX_20071221_14",},			--??
+[6] = {image = "set:Menpaishuxing image:Shuxing_FIPD", Tooltip = "MPZSX_20071221_18",}, 			--??
+[7] = {image = "set:Menpaishuxing image:Shuxing_Ice", Tooltip = "MPZSX_20071221_11",},				--??
+[8] = {image = "set:Menpaishuxing image:Shuxing_FirePoison", Tooltip = "MPZSX_20071221_19",},		--??
+[9] = {image = "", Tooltip = "Tñ do",},															--???
 [10]= {image = "set:CommonFrame38 image:Shuxing_ManTuoDarkPoison", Tooltip = "MPZSX_20071221_20",},				--mtsz
 };
 
@@ -121,7 +121,7 @@ function ActionSkillsStudy_OnEvent(event)
 	elseif(event == "UNIT_EXP") then
 
 		local nExpNow = Player:GetData("EXP");
-		ActionSkillsStudy_CurrentlyExp_Character_Text:SetText("µ±Ç°¾­Ñé:" .. tostring(nExpNow));
+		ActionSkillsStudy_CurrentlyExp_Character_Text:SetText("EXP có:" .. tostring(nExpNow));
 
 	-- ÈËÎïÉý¼¶
 	elseif(event == "UNIT_LEVEL") then
@@ -135,7 +135,7 @@ function ActionSkillsStudy_OnEvent(event)
 		if(tonumber(arg0) ~= objCared) then
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			this:Hide();
 
@@ -201,7 +201,7 @@ function ActionSkillsStudy_UpdateFrame()
 
 	--Íæ¼ÒÒÑ¾­È¡µÃµÄ¾­Ñé
 	local nExpNow = Player:GetData("EXP");
-	ActionSkillsStudy_CurrentlyExp_Character_Text:SetText("µ±Ç°¾­Ñé:" .. tostring(nExpNow));
+	ActionSkillsStudy_CurrentlyExp_Character_Text:SetText("EXP có:" .. tostring(nExpNow));
 
 	--¸üÐÂµ±Ç°Ñ¡ÖÐµÄÐÄ·¨µÄ¼¼ÄÜ
 	ActionSkillsStudy_Xinfa_Clicked(g_CurSelect);
@@ -253,7 +253,7 @@ function ActionSkillsStudy_SkillInfo_Update( SkillID )
 
 	if(SkillID == -1)then
 
-		--Çå¿Õ¼¼ÄÜ
+		--Çå¿ ¼¼ÄÜ
 		ActionSkillsStudy_SkillName:SetText("");
 		ActionSkillsStudy_SkillLevel:SetText("");
 		ActionSkillsStudy_SkillInfo:SetText("");
@@ -302,7 +302,7 @@ function ActionSkillsStudy_XinfaInfo_Update( nIndex )--XinfaID
 	--ActionSkillsStudy_Icon_Silver_Demand_Text:SetText(tostring(nSilverCoin));
 	--ActionSkillsStudy_Icon_CopperCoin_Demand_Text:SetText(tostring(nCopperCoin));
 
-	ActionSkillsStudy_DemandExp_Character_Text:SetText("ËùÐè¾­Ñé:" .. tostring(nExp));
+	ActionSkillsStudy_DemandExp_Character_Text:SetText("EXP c¥n:" .. tostring(nExp));
 
 end
 
@@ -358,7 +358,7 @@ function ActionSkillsStudy_Xinfa_Clicked(nIndex)
 	local strInfo = Player:GetXinfaInfo(nXinfaId,"explain");
 
 	ActionSkillsStudy_SkillName:SetText(strName);
-	ActionSkillsStudy_SkillLevel:SetText("µ±Ç°µÈ¼¶:".. nLevel);
+	ActionSkillsStudy_SkillLevel:SetText("Trß¾c m£t c¤p b§c:".. nLevel);
 	ActionSkillsStudy_SkillInfo:SetText(strInfo);
 
 	--¸üÐÂ¼¼ÄÜ
@@ -415,11 +415,11 @@ function ActionSkillsStudy_ClearStaticImage()
 end
 
 function ActionSkillsStudy_UpdateMenPaiText()
-	local menpaiID = Player : GetData("MEMPAI");		--»ñÈ¡Íæ¼ÒÃÅÅÉID
+	local menpaiID = Player : GetData("MEMPAI");		--??????ID
 	if menpaiID ~= nil and menpaiID >=0 and menpaiID <=10 then
 		if (menpaiID == 9) then
 			ActionSkillsStudy_ClearStaticImage();
-			ActionSkillsStudy_MenPai_Attr_Intro : SetText(""); --Ò»°ãÀ´ËµÕâÀï²»»á±»µ÷µ½
+			ActionSkillsStudy_MenPai_Attr_Intro : SetText(""); --???????????
 			return;
 		end
 		local	str = GetDictionaryString( "MPZSX_20071221_0" .. (menpaiID +1) );

@@ -1,9 +1,9 @@
---ÕäÊŞĞŞ¸ÄÆ÷ V7
+-- äÊŞĞŞ¸ÄÆ÷ V7
 --ÊÊÅä²ÔÉ½Ñ©¸´¹Å Ñ©Îè @WAYLEE 2024-2-16 14:25:21
 
 local g_GameTools7_Frame_UnifiedPosition;
-local g_nSelect_Index = -1; --Ñ¡ÖĞµÄ±¦±¦
-local XingGeList = {"µ¨Ğ¡","½÷É÷","ÖÒ³Ï","¾«Ã÷","ÓÂ¸Ò","Ô¤Áô1","Ô¤Áô2","Ô¤Áô3","Ô¤Áô4","Ô¤Áô5"}
+local g_nSelect_Index = -1; --?????
+local XingGeList = {"Nhát gan","C¦n th§n","Trung thñc","Nhanh nh©n","Dûng cäm","Dñ Lßu 1","Dñ Lßu 2","Dñ Lßu 3","Dñ Lßu 4","Dñ Lßu 5"}
 local StarId = -1
 local PETSKILL_SKILL_EDIX = {}
 local ETSKILL_SKILL_NAME = {}
@@ -13,7 +13,7 @@ function GameTools7_PreLoad()
 	this:RegisterEvent("UPDATE_NOTIFY");
 	this:RegisterEvent("ADJEST_UI_POS",false)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED" ); -- Àë¿ª³¡¾°
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED" ); -- ????
 end
 
 function GameTools7_OnLoad()
@@ -50,7 +50,7 @@ function GameTools7_OnLoad()
 end
 
 function GameTools7_Init()
-	--ÏÈÇå¿Õµ±Ç°ÁĞ±í
+	--ÏÈÇå¿ µ±Ç°ÁĞ±í
 	GameTools7_XingGeList:ResetList()
 	for i = 1, table.getn(XingGeList) do
 		GameTools7_XingGeList:AddTextItem(XingGeList[i], i)
@@ -61,7 +61,7 @@ function GameTools7_XingGe_ListBox_Selected()
 	local str
 	str,StarId = GameTools7_XingGeList:GetCurrentSelect()
 	StarId = StarId - 1
-	Pet_AskExtraData(StarId) --·şÎñ¶ËÊı¾İË¢ĞÂµ½¿Í»§¶Ë
+	Pet_AskExtraData(StarId) --???????????
 end
 
 function GameTools7_OnEvent(event)
@@ -76,12 +76,12 @@ function GameTools7_OnEvent(event)
 		
 	elseif ( event=="UI_COMMAND" and tonumber(arg0) == 202402161 ) and this : IsVisible() then
 		GameTools7_HuChi(2)
-		--¹Ø±ÕÕäÊŞ´°¿Ú
+		--¹Ø±  äÊŞ´°¿Ú
 		if(IsWindowShow("Pet")) then
 			CloseWindow("Pet", true)
 		end
 	
-		--ÕäÊŞID
+		-- äÊŞID
 		local ID = Get_XParam_INT(0)
 		GameTools7_PETIDEdix:SetText(ID)
 		--µÈ¼¶
@@ -98,15 +98,15 @@ function GameTools7_OnEvent(event)
 		GameTools7_WuXingEdix:SetText(strName );
 		
 		--»ù´¡×ÊÖÊ
-		strName = Pet:GetStrAptitude(g_nSelect_Index) --Á¦Á¿
+		strName = Pet:GetStrAptitude(g_nSelect_Index) --??
 		GameTools7_LiLiangEdix:SetText(strName );
-		strName = Pet:GetIntAptitude(g_nSelect_Index) --ÁéÆø
+		strName = Pet:GetIntAptitude(g_nSelect_Index) --??
 		GameTools7_LingQiEdix:SetText(strName );
-		strName = Pet:GetPFAptitude(g_nSelect_Index)  --ÌåÁ¦
+		strName = Pet:GetPFAptitude(g_nSelect_Index)  --??
 		GameTools7_TiLiEdix:SetText(strName );
-		strName = Pet:GetStaAptitude(g_nSelect_Index) --¶¨Á¦
+		strName = Pet:GetStaAptitude(g_nSelect_Index) --??
 		GameTools7_DingLiEdix:SetText(strName );
-		strName = Pet:GetDexAptitude(g_nSelect_Index) --Éí·¨
+		strName = Pet:GetDexAptitude(g_nSelect_Index) --??
 		GameTools7_ShenFaEdix:SetText(strName );
 		
 		--¸ù¹Ç
@@ -132,7 +132,7 @@ function GameTools7_OnEvent(event)
 			GameTools7_SuoDingButton2:SetCheck(1)
 		end
 
-		--ÕäÊŞÎåÎ¬ÊôĞÔ
+		-- äÊŞÎåÎ¬ÊôĞÔ
 		strName = Pet:GetStr(g_nSelect_Index)
 		GameTools7_LiLiangAttrEdix:SetText(strName );
 		strName = Pet:GetInt(g_nSelect_Index)
@@ -144,7 +144,7 @@ function GameTools7_OnEvent(event)
 		strName = Pet:GetSta(g_nSelect_Index)
 		GameTools7_ShenFaAttrEdix:SetText(strName );
 		
-		--ÕäÊŞĞÔ¸ñÀàĞÍ
+		-- äÊŞĞÔ¸ñÀàĞÍ
 		strName = Pet:GetAIType(g_nSelect_Index)
 		StarId = strName
 		GameTools7_XingGeList:SetCurrentSelect(strName);
@@ -156,19 +156,19 @@ function GameTools7_OnEvent(event)
 		strName,strName2 = Pet:GetName(g_nSelect_Index);
 		GameTools7_PetNameEdix:SetText(strName);
 		--Æ·ÖÖ
-		GameTools7_XinXiTxt2:SetText("#YÆ·ÖÖ:#G"..strName2);
+		GameTools7_XinXiTxt2:SetText("#YgI¯ng: #G"..strName2);
 		
-		--ÕäÊŞGUIDÏÔÊ¾
+		-- äÊŞGUIDÏÔÊ¾
 		local petGUID_H,petGUID_L,sex = Pet:GetID(g_nSelect_Index);
 		
-		GameTools7_XinXiTxt3:SetText("#YGUID¸ßÎ»:#G"..petGUID_H);
-		GameTools7_XinXiTxt4:SetText("#YGUIDµÍÎ»:#G"..petGUID_L);
+		GameTools7_XinXiTxt3:SetText("#YGUIDğ¸a v¸ cao: #G"..petGUID_H);
+		GameTools7_XinXiTxt4:SetText("#YGUIDĞê V¸: #G"..petGUID_L);
 		if(sex == 1) then
-			strName = "ĞÛĞÔ";
+			strName = "Gi¯ng ğñc";
 		else
-			strName = "´ÆĞÔ";
+			strName = "Gi¯ng cái";
 		end
-		GameTools7_XinXiTxt1:SetText("#YÕäÊŞĞÔ±ğ:#G"..strName);
+		GameTools7_XinXiTxt1:SetText("#YTRân thú tính Bi®t: #G"..strName);
 		--ÉÏ´Î·±Ö³µÈ¼¶
 		local ProcreateLevel = Get_XParam_INT(2)
 		GameTools7_LastProcreateEdix:SetText(ProcreateLevel);
@@ -181,7 +181,7 @@ function GameTools7_OnEvent(event)
 		--ÓµÓĞ¾­Ñé
 		strName,strName2 = Pet:GetExp(g_nSelect_Index);
 		GameTools7_ExpEdix:SetText(strName);
-		GameTools7_ExpTxt2:SetText("¾­ÑéÉÏÏŞ:"..strName2);
+		GameTools7_ExpTxt2:SetText("Kinh nghi®m hÕn mÑc cao nh¤t:"..strName2);
 		
 		--¹¥»÷ÌØĞÔ
 		local strIcon = ""
@@ -199,7 +199,7 @@ function GameTools7_OnEvent(event)
 			local nUnlockElapsedTime = PlayerPackage:GetPUnlockElapsedTime_Pet(g_nSelect_Index);
 			if( nUnlockElapsedTime ==0) then
 				GameTools7_Pet_lock : SetProperty("Image","set:UIIcons image:Icon_Lock");
-				GameTools7_Pet_lock : SetToolTip ("ÒÑ¼ÓËø");
+				GameTools7_Pet_lock : SetToolTip ("Ğã khóa");
 			else
 				local strLeftTime = g_GetUnlockingStr(nUnlockElapsedTime);
 				GameTools7_Pet_lock : SetProperty("Image","set:CommonFrame6 image:NewLock");
@@ -225,8 +225,8 @@ function GameTools7_OnEvent(event)
 		--¶ÁÈ¡¼¼ÄÜĞÅÏ¢
 		for i=1,12 do
 			local theSkillAction = Pet:EnumPetSkill(g_nSelect_Index, i - 1, "petskill")
-			PETSKILL_SKILL_EDIX[i]:SetText(theSkillAction:GetDefineID()) 	--ÌîĞ´¼¼ÄÜID
-			PETSKILL_SKILL_NAME[i]:SetText(theSkillAction:GetName())		--ÌîĞ´¼¼ÄÜÃüÖĞ
+			PETSKILL_SKILL_EDIX[i]:SetText(theSkillAction:GetDefineID()) 	--????ID
+			PETSKILL_SKILL_NAME[i]:SetText(theSkillAction:GetName())		--??????
 		end
 
 	end
@@ -248,9 +248,9 @@ function GameTools7_HuChi(index)
 	end
 end
 
---¸üĞÂÕäÊŞÁĞ±í
+--¸üĞÂ äÊŞÁĞ±í
 function GameTools7_UpdatePetList()
-	-- ÏÈÇå¿Õµ±Ç°ÁĞ±í
+	-- ÏÈÇå¿ µ±Ç°ÁĞ±í
 	GameTools7_PetList_List:ClearListBox();
 	-- Ë¢ĞÂÁĞ±í
 	local PetInListIndex = 0;
@@ -264,7 +264,7 @@ function GameTools7_UpdatePetList()
 	end
 end
 --===============================================
--- Ñ¡ÖĞÁĞ±íÖĞµÄÕäÊŞ
+-- Ñ¡ÖĞÁĞ±íÖĞµÄ äÊŞ
 --===============================================
 function GameTools7_PetList_List_Selected()
 	g_nSelect_Index = GameTools7_PetList_List:GetFirstSelectItem();
@@ -279,7 +279,7 @@ function GameTools7_PetList_Choose_Click()
 	end
 end
 --===============================================
---¸ù¾İÑ¡ÔñµÄÕäÊŞ£¬ÏÔÊ¾ÏàÓ¦µÄÏêÏ¸ĞÅÏ¢
+--¸ù¾İÑ¡ÔñµÄ äÊŞ£¬ÏÔÊ¾ÏàÓ¦µÄÏêÏ¸ĞÅÏ¢
 --===============================================
 function GameTools7_PetList_ShowTargetPet()
 	g_nSelect_Index = GameTools7_PetList_List:GetFirstSelectItem();
@@ -300,7 +300,7 @@ end
 --¶ÁÈ¡Êı¾İ
 function GameTools7_DuQu_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñĞèÒª¶ÁÈ¡ĞÅÏ¢µÄ±¦±¦")
+		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n Ğ§u thü tín TÑc Ğích cøc cßng")
 		return
 	end
 	Clear_XSCRIPT()
@@ -311,10 +311,10 @@ function GameTools7_DuQu_Clicked()
 	Send_XSCRIPT()
 end
 
---ÕäÊŞID
+-- äÊŞID
 function GameTools7_PETID_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñĞèÒª²Ù×÷µÄ±¦±¦")
+		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ğích cøc cßng")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_PETIDEdix:GetText())
@@ -330,7 +330,7 @@ end
 --µÈ¼¶
 function GameTools7_Level_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñĞèÒª²Ù×÷µÄ±¦±¦")
+		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ğích cøc cßng")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_LevelEdix:GetText())
@@ -346,7 +346,7 @@ end
 --ÊÙÃü
 function GameTools7_life_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñĞèÒª²Ù×÷µÄ±¦±¦")
+		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ğích cøc cßng")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_lifeEdix:GetText())
@@ -362,7 +362,7 @@ end
 --¿ìÀÖ
 function GameTools7_happy_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñĞèÒª²Ù×÷µÄ±¦±¦")
+		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ğích cøc cßng")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_happyEdix:GetText())
@@ -378,7 +378,7 @@ end
 --ÎòĞÔ
 function GameTools7_WuXing_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñĞèÒª²Ù×÷µÄ±¦±¦")
+		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ğích cøc cßng")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_WuXingEdix:GetText())
@@ -394,7 +394,7 @@ end
 --ÊôĞÔ:Á¦ÁéÌå¶¨Éí
 function GameTools7_ShuXing_Clicked(nIndex)
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñĞèÒª²Ù×÷µÄ±¦±¦")
+		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ğích cøc cßng")
 		return -1
 	end
 	local nNum = -1
@@ -423,7 +423,7 @@ end
 --¸ù¹Ç
 function GameTools7_GenGu_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñĞèÒª²Ù×÷µÄ±¦±¦")
+		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ğích cøc cßng")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_GenGuEdix:GetText())
@@ -439,14 +439,14 @@ end
 --³É³¤ÂÊ
 function GameTools7_PetGrow_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñĞèÒª²Ù×÷µÄ±¦±¦")
+		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ğích cøc cßng")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_PetGrowEdix:GetText())
 	--ÓÃÓÚĞ§ÑéÊıÖµ£¬²ğ·ÖÊ®Áù½øÖÆ
-	local Hex = LuaFnFloatToHex(nNum/1000)  --IEEE754×ª»»
-	local part1 = string.sub(Hex, 1, 4) -- ÌáÈ¡Ç°4¸ö×Ö·û
-	local part2 = string.sub(Hex, 5)    -- ´ÓµÚ5¸ö×Ö·û¿ªÊ¼ÌáÈ¡Ö±µ½×Ö·û´®Ä©Î²
+	local Hex = LuaFnFloatToHex(nNum/1000)  --IEEE754??
+	local part1 = string.sub(Hex, 1, 4) -- ???4???
+	local part2 = string.sub(Hex, 5)    -- ??5??????????????
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name("ModifyPet")
 		Set_XSCRIPT_ScriptID(666661)
@@ -462,7 +462,7 @@ end
 --Ê£ÓàÇ±ÄÜ
 function GameTools7_RemainPoints_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñĞèÒª²Ù×÷µÄ±¦±¦")
+		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ğích cøc cßng")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_RemainPointsEdix:GetText())
@@ -478,11 +478,11 @@ end
 --ÊÇ·ñ²éÑ¯¹ı³É³¤ÂÊ
 function GameTools7_ChengZhangLv_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñĞèÒª²Ù×÷µÄ±¦±¦")
+		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ğích cøc cßng")
 		return -1
 	end
-	local nNum1 = tonumber(GameTools7_ChengZhangLvButton:GetCheck())  -- 0 »òÕß 1
-	local nNum2 = tonumber(GameTools7_SuoDingButton2:GetCheck())  -- 0 »òÕß 1
+	local nNum1 = tonumber(GameTools7_ChengZhangLvButton:GetCheck())  -- 0 ?? 1
+	local nNum2 = tonumber(GameTools7_SuoDingButton2:GetCheck())  -- 0 ?? 1
 	local nNum = 0
 	if nNum1 == 1 and nNum2 == 1 then
 		nNum = 3
@@ -505,7 +505,7 @@ end
 --ÉèÖÃÎåÎ¬ÊôĞÔÖµ
 function GameTools7_ShuXingAttr_Clicked(nIndex)
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñĞèÒª²Ù×÷µÄ±¦±¦")
+		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ğích cøc cßng")
 		return -1
 	end
 	local nNum = -1
@@ -534,7 +534,7 @@ end
 --ĞÔ¸ñ
 function GameTools7_XingGe_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñĞèÒª²Ù×÷µÄ±¦±¦")
+		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ğích cøc cßng")
 		return -1
 	end
 	Clear_XSCRIPT()
@@ -547,10 +547,10 @@ function GameTools7_XingGe_Clicked()
 	Send_XSCRIPT()
 end
 
---ĞŞ¸ÄÕäÊŞÃû×Ö
+--ĞŞ¸Ä äÊŞÃû×Ö
 function GameTools7_PetName_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñĞèÒª²Ù×÷µÄ±¦±¦")
+		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ğích cøc cßng")
 		return -1
 	end
 	local text = GameTools7_PetNameEdix:GetText()
@@ -568,7 +568,7 @@ end
 --ÅäÅ¼IDĞŞ¸Ä
 function  GameTools7_PeiOu_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñĞèÒª²Ù×÷µÄ±¦±¦")
+		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ğích cøc cßng")
 		return -1
 	end
 	local Hex_H = GameTools7_PetPeiOuEdix1:GetText()
@@ -589,7 +589,7 @@ end
 --ÉÏ´Î·±Ö³Ê±¼ä
 function GameTools7_LastProcreate_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñĞèÒª²Ù×÷µÄ±¦±¦")
+		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ğích cøc cßng")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_LastProcreateEdix:GetText())
@@ -606,7 +606,7 @@ end
 --µ±Ç°¾­ÑéĞŞ¸Ä
 function GameTools7_Exp_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñĞèÒª²Ù×÷µÄ±¦±¦")
+		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ğích cøc cßng")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_ExpEdix:GetText())
@@ -631,7 +631,7 @@ end
 --ÁéĞÔ
 function GameTools7_LingXing_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñĞèÒª²Ù×÷µÄ±¦±¦")
+		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ğích cøc cßng")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_ExpEdix:GetText())
@@ -648,7 +648,7 @@ end
 --ÈÚºÏ¶È
 function GameTools7_Si_Shu_Xing_Clicked(nIndex)
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñĞèÒª²Ù×÷µÄ±¦±¦")
+		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ğích cøc cßng")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_RongHeEdix:GetText())
@@ -734,7 +734,7 @@ function GameTools7_ChangeTabIndex( nIndex )
 end
 
 function GameTools7_HuChi()
-    -- ĞèÒªÉèÖÃÎª¿ÕµÄ¶ÔÏóÁĞ±í
+    -- ĞèÒªÉèÖÃÎª¿ µÄ¶ÔÏóÁĞ±í
     local objectsToClear = {
         XueWuHuChi_Wuhun,
         XueWuHuChi_SnsGame,
@@ -753,14 +753,14 @@ function GameTools7_HuChi()
         XueWuHuChi_InfantDressCut
     }
 
-    -- ÉèÖÃĞèÒªÇå¿ÕµÄ¶ÔÏóÎª¿Õ
+    -- ÉèÖÃĞèÒªÇå¿ µÄ¶ÔÏóÎª¿ 
     for i=1,15 do
         if objectsToClear[i] then
             objectsToClear[i]:SetFakeObject("")
         end
     end
 
-    -- ¹Ø±Õ´°¿Ú
+    -- ¹Ø± ´°¿Ú
     local windowsToClose = {
         "VIP_Shop",
         "YuanbaoShop",

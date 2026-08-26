@@ -1,51 +1,51 @@
 --Create By Vega
-local g_FrameInfo = -1				--µ±«∞¥∞ø⁄»∑»œµƒ¿‡–Õ
+local g_FrameInfo = -1				--?????????
 local FrameInfoList = {
-	YBMARKET_UP_ITEM_COMFIRM 			= 1,			--‘™±¶ –≥°…œº‹ŒÔ∆∑
-	YBMARKET_UP_PET_COMFIRM 			= 2,			--‘™±¶ –≥°…œº‹’‰ ﬁ
-	YBMARKET_BUY_COMFIRM 				= 3,			--‘™±¶ –≥°¬Ú∂´Œ˜
-	YBMARKET_TAKE_BACK_COMFIRM 			= 4,			--…Ã∆∑œ¬º‹
-	SELL_ITEM_CONFIRM					= 5,			--zhanglei ¬Ù≥ˆŒÔ∆∑‘Ÿ¥Œ»∑»œ
-	QUICKUP_PET_CONFIRM					= 6,			--’‰ ﬁøÏÀŸÃ·…˝∂˛¥Œ»∑»œ
-	PET_HUANTONT_CONFIRM				= 7,			--≥ËŒÔªπÕØ‘™±¶»∑»œ add:lby2015
-	PET_LINGXING_CONFIRM 				= 8,	--≥ËŒÔÃ·¡È‘™±¶»∑»œ add:lby2015 
-	CONVENIENT_BUY_CONFIRM				= 9, 	--œ˚∑—”≈ªØ£¨∂˛¥Œ»∑»œ
-	BILLINGAWARD_CONFIRM = 10,		--Billing¡Ï»°Ω±¿¯∂˛¥ŒÃ· æ
-	MATERIALCOMPOUND_CONFIRM = 11,		--∫Æ”Ò∫œ≥…∂˛¥ŒÃ· æ
-	WHWG_GRADEUP_CONFIRM = 12,			--Œ‰ªÍÕ‚π€Ω¯Ω◊
-	DRESSPAINT_BINDITEM_CONFIRM = 13,	-- ±◊∞»æ…´µ¿æﬂ∞Û∂®∂˛¥Œ»∑»œ
-	XIARIDAKA_CONFIRM = 14, --œƒ»’¥Úø®
-	NEW_DAKONG_CONFIRM						= 19,			--–¬¥Úø◊
-	NEW_XIANGQIAN_CONFIRM					= 20,			--–¬œ‚«∂
-	NEW_ZHAICHU_CONFIRM						= 21,			--–¬’™≥˝
-	DARK_SKILL_RECOIN_CONFIRM = 38, 	-- ∞µ∆˜ººƒ‹÷ÿœ¥∂˛¥Œ»∑»œ
-	SUPER_ATTR_RECOIN_CONFIRM =40,		-- …Ò∆˜÷ÿœ¥∂˛¥Œ»∑»œ
-	WUHUN_SKILL_RECOIN_CONFIRM = 44, 	-- ÷ÿœ¥Œ‰ªÍººƒ‹µƒ∂˛¥Œ»∑»œ
+	YBMARKET_UP_ITEM_COMFIRM 			= 1,			--????????
+	YBMARKET_UP_PET_COMFIRM 			= 2,			--????????
+	YBMARKET_BUY_COMFIRM 				= 3,			--???????
+	YBMARKET_TAKE_BACK_COMFIRM 			= 4,			--????
+	SELL_ITEM_CONFIRM					= 5,			--zhanglei ????????
+	QUICKUP_PET_CONFIRM					= 6,			--??????????
+	PET_HUANTONT_CONFIRM				= 7,			--???????? add:lby2015
+	PET_LINGXING_CONFIRM 				= 8,	--???????? add:lby2015 
+	CONVENIENT_BUY_CONFIRM				= 9, 	--????,????
+	BILLINGAWARD_CONFIRM = 10,		--Billing????????
+	MATERIALCOMPOUND_CONFIRM = 11,		--????????
+	WHWG_GRADEUP_CONFIRM = 12,			--??????
+	DRESSPAINT_BINDITEM_CONFIRM = 13,	--????????????
+	XIARIDAKA_CONFIRM = 14, --????
+	NEW_DAKONG_CONFIRM						= 19,			--???
+	NEW_XIANGQIAN_CONFIRM					= 20,			--???
+	NEW_ZHAICHU_CONFIRM						= 21,			--???
+	DARK_SKILL_RECOIN_CONFIRM = 38, 	-- ??????????
+	SUPER_ATTR_RECOIN_CONFIRM =40,		-- ????????
+	WUHUN_SKILL_RECOIN_CONFIRM = 44, 	-- ???????????
 	DOUBLE_SECKILL_CONFIRM	= 48,
-	YBMARKET_CONFIRM_MULTIBUY	= 49,			--‘™±¶Ωª“◊ –≥°≈˙¡øπ∫¬Ú»∑»œ
-	SECKILL_GIVEUP_CONFIRM = 79, --…®µ¥∂™∆˙»∑»œ
+	YBMARKET_CONFIRM_MULTIBUY	= 49,			--????????????
+	SECKILL_GIVEUP_CONFIRM = 79, --??????
 	DRESS_TRANSFER_BIND_CONFIRM = 90,
 	DRESS_TRANSFER_BUYITEM_CONFIRM = 91,
-	CONFIRM_IMMIGRATION  = 94,				 -- “∆√Ò
-	CONFIRM_CANCEL_IMMIGRATION  = 95,				 -- »°œ˚“∆√Ò
+	CONFIRM_IMMIGRATION  = 94,				 -- ??
+	CONFIRM_CANCEL_IMMIGRATION  = 95,				 -- ????
 	PETSOUL_EXCHANGE_CONFIRM = 96,
 	PETSOUL_XISHUXING_CONFIRM = 97,
-	PETSOUL_FUSION_CONFIRMBIND = 98, -- ﬁªÍƒ˝ªÍ ∞Û∂®»∑»œ
-	PETSOUL_BLOODLEVELUP_CONFIRM = 99, -- ﬁªÍ”˝ªÍ »∑»œ
+	PETSOUL_FUSION_CONFIRMBIND = 98, --???? ????
+	PETSOUL_BLOODLEVELUP_CONFIRM = 99, --???? ??
 	PETSOUL_XISHUXING_CONFIRMPERFECT = 100,
 	PETSOUL_XISHUXING_CHANGECONFIRM = 101,
 	PETSOUL_XISHUXING_CONFIRMBIND = 102,
 	PETSOUL_LEVELUP_CONFIRM = 103,
 	PETSOUL_BLOODLEVELUP_BINDCONFIRM = 104,
-	APPLY_SNAKING_NUM_SECOND_CONFIRM = 153, --…Í«Î“°∫≈∂˛¥Œ»∑»œ
-	LILIANMISSION23_CONFIRM = 154, --Œ‰µ¿∂˛≤„¿˙¡∑»ŒŒÒ »ŒŒÒ3 ÷ÿ–¬ÃÙ’Ω»∑»œ
+	APPLY_SNAKING_NUM_SECOND_CONFIRM = 153, --????????
+	LILIANMISSION23_CONFIRM = 154, --???????? ??3 ??????
 	DWLEVELUP_BINDCONFIRM = 155,
 	DW_CONSUMESURE_EQUIPDWLEVELUP = 156,
 	PRIZE_WAITING = 158,
 	QINGQIU_BUYCONFIRM = 159, 
 	WEEKLYSHOP_BUYCONFIRM = 163,
-	XUYUANCHI_ITEM = 164,--2022÷‹ƒÍ«Ï –Ì‘∏≥ÿ ÷˛Ω®µ¿æﬂ
-	GONGCANJIAWEI_CONFIRM = 165,--‘™µ©”¶æ∞
+	XUYUANCHI_ITEM = 164,--2022??? ??? ????
+	GONGCANJIAWEI_CONFIRM = 165,--????
 	GONGCANJIAWEI_CONFIRMSUBMIT = 166,
 	LINGYU_WASH_CONFIRM = 167,
 	LINGYU_SWITCH_CONFIRM = 168,
@@ -61,47 +61,47 @@ local FrameInfoList = {
 	BWZQ_GOTOBHGAREA_CONFIRM = 180,
 	BWZQ_GOTOBHGAREA_WAITCONFIRM = 181,
 	DELETE_COUPLE_DIARY_CONFIRM = 182,
-	MARRY_PLANE_NOTICE  = 183,				 -- ªÈ¿Ò∑Ω∞∏Õ®÷™¥∞ø⁄
-	PETTAYIN_CONFIRM = 184,			--’‰ ﬁÕÿ”°∂˛¥Œ»∑»œ
+	MARRY_PLANE_NOTICE  = 183,				 -- ????????
+	PETTAYIN_CONFIRM = 184,			--????????
 	
-	PETTAYIN_YBbuy_CONFIRM		= 186,			--’‰ ﬁÕÿ”° ‘™±¶π∫¬Ú∂˛¥Œ»∑»œ
+	PETTAYIN_YBbuy_CONFIRM		= 186,			--???? ????????
 	
-	QIXITOPLIST_CONFIRM		= 187,			--∆ﬂœ¶ª®∞Ò∂˛¥Œ»∑»œ
+	QIXITOPLIST_CONFIRM		= 187,			--????????
 	PETSOUL_RANSE_CONFIRM = 188,
 	PETSOUL_RANSE_ZIDONG_CONFIRM = 189,
 	SECKILL_TESE = 190,
-	LILIANMISSION2_CONFIRM = 191, --Œ‰µ¿∂˛≤„¿˙¡∑»ŒŒÒ »ŒŒÒ2 ª®∑—Ω±“»∑»œ
-	QIONGQI_SWALLOW_CONFIRM = 192,--«Ó∆ÊÕÃ …
-	QIONGQI_RESTORE_CONFIRM = 193,--«Ó∆Êªπ‘≠
+	LILIANMISSION2_CONFIRM = 191, --???????? ??2 ??????
+	QIONGQI_SWALLOW_CONFIRM = 192,--????
+	QIONGQI_RESTORE_CONFIRM = 193,--????
 	
-	QINGRENJIETOPLIST_CONFIRM		= 194,			--«È»ÀΩ⁄ª®∞Ò∂˛¥Œ»∑»œ
-	YULONGZAITIAN_CONFIRM			=195,			--¥∫Ω⁄÷Ø–Â–¬“¬-”˘¡˙‘⁄ÃÏ◊‘—°¿Ò∞¸
+	QINGRENJIETOPLIST_CONFIRM		= 194,			--?????????
+	YULONGZAITIAN_CONFIRM			=195,			--??????-????????
 	
-	QRJTOPLIST_EXCHANGE_CONFIRM		= 196,			--«È»ÀΩ⁄ª®∞Ò∂“ªª∂˛¥Œ»∑»œ
+	QRJTOPLIST_EXCHANGE_CONFIRM		= 196,			--???????????
 	
-	REPUTATIONSHOP_BUY_CONFIRM		= 197,			-- ∆¡¶…ÃµÍπ∫¬Ú∂˛¥Œ»∑»œ
+	REPUTATIONSHOP_BUY_CONFIRM		= 197,			--??????????
 	
 	EQUIP_REFRESH_EQUIP_CHANGE_CONFIRM		= 198,
 	EQUIP_REFRESH_CLOSE_CONFIRM		= 199,
 	EQUIP_REFRESH_BIND_CONFIRM		= 200,
-	CONFIRM_CANCEL_ODER_IMMIGRATION = 224, -- »°œ˚∂®÷∆“∆√Ò
+	CONFIRM_CANCEL_ODER_IMMIGRATION = 224, -- ??????
 	SHENFENYURE_RESELECT = 225,
 	
-	ZIDIAN_PICKONE_CONFIRM = 226, -- ∑…ªÀ¿Ò∞¸∂˛—°“ª
+	ZIDIAN_PICKONE_CONFIRM = 226, -- ???????
 	DUANWUDAKA_CONFIRM = 227,
 
 	CONFIRM_DWJINJIE = 228,
 	CONFIRM_DWJINJIESHENGJI = 229,
 	CONFIRM_DWJINJIEHUITUI = 230,
-	CONFIRM_ORNAMENTS_CONFIRM = 231,	--Õ∑±≥π“
+	CONFIRM_ORNAMENTS_CONFIRM = 231,	--???
 	DAHUA_DAIBI_CONFIRM = 232,
 	CONFIRM_QIXIPVE_LEAVE = 233,
 	DAHUA_DAIBI_SHOP_CONFIRM = 234,
 
-	QIXIRANK_EXCHANGE_CONFIRM = 235, --2015∆ﬂœ¶«È»ÀΩ⁄∂“ªª»∑»œ
+	QIXIRANK_EXCHANGE_CONFIRM = 235, --2015?????????
 
 }
---»∑»œøÚª∫¥Ê±‰¡ø£¨”√”⁄µ„ª˜»∑∂®∫Õ»°œ˚ ±◊ˆ¥¶¿Ì, √ø∏ˆ±‰¡øµƒ“‚“Â£¨∏˘æ›ΩÁ√Ê≤ªÕ¨∏˜≤ªœ‡Õ¨£¨«Î π”√’ﬂ”√µΩ ±◊‘º∫◊¢ Õ
+--»∑»œøÚª∫¥Ê±‰¡ø£¨”√”⁄µ„ª˜»∑∂®∫Õ»°œ˚ ±◊ˆ¥¶¿Ì, √ø∏ˆ±‰¡øµƒ“‚“Â£¨∏˘æ›ΩÁ√Ê≤ªÕ¨∏˜≤ªœ‡Õ¨£¨«Î π”√†ﬂ”√µΩ ±◊‘º∫◊¢ Õ
 local g_FrameVar = {
 	[1] = 0,
 	[2] = 0,
@@ -184,8 +184,8 @@ function WuhunQuest_OnEvent(event)
 	end
 
 	if event == "PLAYER_LEAVE_WORLD" then	
-		if g_FrameInfo == FrameInfoList.LILIANMISSION23_CONFIRM --Œ‰µ¿∂˛≤„¿˙¡∑»ŒŒÒ »ŒŒÒ3 ÷ÿ–¬ÃÙ’Ω»∑»œ
-			or g_FrameInfo == FrameInfoList.LILIANMISSION2_CONFIRM then--Œ‰µ¿∂˛≤„¿˙¡∑»ŒŒÒ »ŒŒÒ2 ª®∑—Ω±“»∑»œ
+		if g_FrameInfo == FrameInfoList.LILIANMISSION23_CONFIRM --???????? ??3 ??????
+			or g_FrameInfo == FrameInfoList.LILIANMISSION2_CONFIRM then--???????? ??2 ??????
 			if this:IsVisible() then
 				this:Hide()
 			end
@@ -211,13 +211,13 @@ function WuhunQuest_OnEvent(event)
 
 	--******************************
 	--Ω®“È£∫¥¶¿Ì≤ªÕ¨µƒevent£¨«Î‘⁄∂¡≥ˆ≤Œ ˝∫Û£¨Ω´¬ﬂº≠◊‘º∫–¥‘⁄“ª∏ˆ∫Ø ˝ƒ⁄
-	--’‚—˘ø…“‘æ°ø…ƒ‹µƒ πOnEvent∫Ø ˝ƒ‹ºÚΩ‡“ª–©≤ª÷¡”⁄œÒMessageBoxΩÁ√Ê“ª—˘
+	--†‚—˘ø…“‘æ°ø…ƒ‹µƒ πOnEvent∫Ø ˝ƒ‹ºÚΩ‡“ª–©≤ª÷¡”⁄œÒMessageBoxΩÁ√Ê“ª—˘
 	--◊¢“‚£∫“ª∂®“™œ»Ω´≤Œ ˝∂¡≥ˆ¿¥‘Ÿ¥´∏¯◊‘º∫–¥µƒ∫Ø ˝
 	--≤Œøº£∫event == "YBMARKET_UP_ITEM_COMFIRM"
 	--*******************************
 	if ( event == "GAME_NOTIFY_INFO_OK" ) then
 		local str = arg0
-		WuhunQuest_Open_Window_OK(str)		--µ„ª˜∫Û≤ª–Ë“™”–¥¶¿ÌµƒÃ· æøÚ£¨÷ª”–“ª∏ˆ»∑»œ∞¥≈•£¨œ‘ æ–≈œ¢”…≤Œ ˝¥´»Î
+		WuhunQuest_Open_Window_OK(str)		--?????????????,????????,?????????
 	elseif ( event == "GAME_NOTIFY_INFO_CLOSE") then
 		local str = arg0
 		WuhunQuest_Open_Window_CLOSE(str)
@@ -283,7 +283,7 @@ function WuhunQuest_OnEvent(event)
 		else
 			ConvenientBuyItem(nType,nCurrencyUnit,nPrice,nItemIndex,nSerialNum,nUniqueID );
 		end
-	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 2015101414 ) then  --add:lby2015ªπÕØ
+	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 2015101414 ) then  --add:lby2015??
 		local strMsg = Get_XParam_STR(0);
 		local notify = Get_XParam_INT(0);
 		local nType = Get_XParam_INT(1);
@@ -297,7 +297,7 @@ function WuhunQuest_OnEvent(event)
 		else
 			ConvenientBuyItem(nType,nCurrencyUnit,nPrice,nItemIndex,nSerialNum,nUniqueID );
 		end
-	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 2015101514 ) then  --add:lby2015Ã·¡È
+	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 2015101514 ) then  --add:lby2015??
 		local strMsg = Get_XParam_STR(0);
 		local notify = Get_XParam_INT(0);
 		local nType = Get_XParam_INT(1);
@@ -406,16 +406,16 @@ function WuhunQuest_OnEvent(event)
 			this:Hide()
 		end
 	elseif ( event == "QUICKUP_PET_CONFIRM") then
-		 local nType = tonumber(arg0); 			--1 «ŒÚ–‘£¨2 «¡È–‘£¨3 «»⁄∫œ∂»£¨4 «≥…≥§¬ 
-		 local nCurData --= tonumber(arg1); 	--µ±«∞ŒÚ–‘°¢¡È–‘°¢»⁄∫œ∂»°¢≥…≥§¬ 
+		 local nType = tonumber(arg0); 			--1???,2???,3????,4????
+		 local nCurData --= tonumber(arg1); 	--???????????????
 		 if nType == 4 then
 		 	 nCurData = tostring(arg1);
 		 else
 		 	 nCurData = tonumber(arg1);
 		 end
-		 local nPrice = tonumber(arg2);			--‘™±¶ ˝
-		 local nUplimit = tonumber(arg3);		--≥…≥§¬ …œœﬁ
-		 local strMsg = tostring(arg4); 		--≥ËŒÔ√˚◊÷
+		 local nPrice = tonumber(arg2);			--???
+		 local nUplimit = tonumber(arg3);		--?????
+		 local strMsg = tostring(arg4); 		--????
 		 WuhunQuest_QuickUpPet_Confirm(nType,nCurData,nPrice,nUplimit,strMsg);
 	elseif (event == "BILLINGAWARD_CONFIRM") then
 		local nIndex = tonumber(arg0);
@@ -459,7 +459,7 @@ function WuhunQuest_OnEvent(event)
 		else
 			-- WuhunQuest_Open_Window_ConvenintBuyConfirm(strMsg, nType, nCurrencyUnit, nPrice, nItemIndex, nSerialNum, nUniqueID, nScriptID, nBuyCount );
 
-			-- ’‚¿Ô√ª”– ˝¡ø…Ë÷√£¨∞Ô–ﬁ≥…ƒ¨»œ1
+			-- †‚¿Ô√ª”– ˝¡ø…Ë÷√£¨∞Ô–ﬁ≥…ƒ¨»œ1
 			WuhunQuest_Open_Window_ConvenintBuyConfirm(strMsg, nType, nCurrencyUnit, nPrice, nItemIndex, nSerialNum, nUniqueID, nScriptID, 1 );
 		end
 	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 99850605 ) then
@@ -479,7 +479,7 @@ function WuhunQuest_OnEvent(event)
 		else
 			-- WuhunQuest_Open_Window_ConvenintBuyConfirm(strMsg, nType, nCurrencyUnit, nPrice, nItemIndex, nSerialNum, nUniqueID, nScriptID, nBuyCount );
 
-			-- ’‚¿Ô√ª”– ˝¡ø…Ë÷√£¨∞Ô–ﬁ≥…ƒ¨»œ1
+			-- †‚¿Ô√ª”– ˝¡ø…Ë÷√£¨∞Ô–ﬁ≥…ƒ¨»œ1
 			WuhunQuest_Open_Window_ConvenintBuyConfirm(strMsg, nType, nCurrencyUnit, nPrice, nItemIndex, nSerialNum, nUniqueID, nScriptID, 1 );
 		end
 	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 89106201 ) then
@@ -497,7 +497,7 @@ function WuhunQuest_OnEvent(event)
 		if nYuanbaoPay == nil or nYuanbaoPay ~= 1 then
 			ConvenientBuyItem(nType,nCurrencyUnit,nPrice,nItemIndex,nSerialNum,nUniqueID )
 		else
-			-- ’‚¿Ô√ª”– ˝¡ø…Ë÷√£¨∞Ô–ﬁ≥…ƒ¨»œ1
+			-- †‚¿Ô√ª”– ˝¡ø…Ë÷√£¨∞Ô–ﬁ≥…ƒ¨»œ1
 			WuhunQuest_Open_Window_ConvenintBuyConfirm(strMsg, nType, nCurrencyUnit, nPrice, nItemIndex, nSerialNum, nUniqueID, nScriptID, 1 );
 		end
 	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 89021506 ) then
@@ -515,7 +515,7 @@ function WuhunQuest_OnEvent(event)
 		if nYuanbaoPay == nil or nYuanbaoPay ~= 1 then
 			ConvenientBuyItem(nType,nCurrencyUnit,nPrice,nItemIndex,nSerialNum,nUniqueID )
 		else
-			-- ’‚¿Ô√ª”– ˝¡ø…Ë÷√£¨∞Ô–ﬁ≥…ƒ¨»œ1
+			-- †‚¿Ô√ª”– ˝¡ø…Ë÷√£¨∞Ô–ﬁ≥…ƒ¨»œ1
 			WuhunQuest_Open_Window_ConvenintBuyConfirm(strMsg, nType, nCurrencyUnit, nPrice, nItemIndex, nSerialNum, nUniqueID, nScriptID, 1 );
 		end
 	elseif   event == "UI_COMMAND" and tonumber(arg0) == 83000121  then
@@ -532,16 +532,16 @@ function WuhunQuest_OnEvent(event)
 		local targetName = Get_XParam_STR(0);
 		local targetServerName = Get_XParam_STR(1)	;		
 		local msg =ScriptGlobal_Format( "#{FWQYM_160531_240}", targetName,targetServerName)
-		WuhunQuest_InfoWindow:SetText( msg );	-- …Ë÷√ƒ⁄»›
+		WuhunQuest_InfoWindow:SetText( msg );	-- ????
 		g_FrameInfo = FrameInfoList.CONFIRM_IMMIGRATION ;
 		WuhunQuest_Button1:Show()
-		WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+		WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 		WuhunQuest_Button2:Show()
-		WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+		WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 		WuhunQuestUpdateRect();
 		DataPool:SetCanUseHotKey(0)
 		this:Show();
-	elseif (tonumber(arg0) == 99850602 ) then-- ﬁªÍ»æ…´
+	elseif (tonumber(arg0) == 99850602 ) then--????
 		WuhunQuest_Clear_Var()
 		g_FrameVar[1] = Get_XParam_INT(0)
 		g_FrameVar[2] = Get_XParam_INT(1)
@@ -553,12 +553,12 @@ function WuhunQuest_OnEvent(event)
 		local planstr = Exterior:LuaFnGetRanSePlanName(g_FrameVar[3], nColor)
 
 		local msg = ScriptGlobal_Format( "#{SHRS_230621_42}", planstr)
-		WuhunQuest_InfoWindow:SetText( msg );	-- …Ë÷√ƒ⁄»›
+		WuhunQuest_InfoWindow:SetText( msg );	-- ????
 		g_FrameInfo = FrameInfoList.PETSOUL_RANSE_CONFIRM ;
 		WuhunQuest_Button1:Show()
-		WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+		WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 		WuhunQuest_Button2:Show()
-		WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+		WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 		WuhunQuestUpdateRect();
 		DataPool:SetCanUseHotKey(0)
 		this:Show();
@@ -570,12 +570,12 @@ function WuhunQuest_OnEvent(event)
 		g_FrameVar[4] = tonumber(arg3);
 		g_FrameVar[5] = tonumber(arg4);
 
-		WuhunQuest_InfoWindow:SetText( "#{SHRS_230621_141}" );	-- …Ë÷√ƒ⁄»›
+		WuhunQuest_InfoWindow:SetText( "#{SHRS_230621_141}" );	-- ????
 		g_FrameInfo = FrameInfoList.PETSOUL_RANSE_CONFIRM ;
 		WuhunQuest_Button1:Show()
-		WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+		WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 		WuhunQuest_Button2:Show()
-		WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+		WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 		WuhunQuestUpdateRect();
 		DataPool:SetCanUseHotKey(0)
 		this:Show();
@@ -587,11 +587,11 @@ function WuhunQuest_OnEvent(event)
 		WuhunQuest_InfoWindow:SetText( g_FrameVar[3] );
 		g_FrameInfo = FrameInfoList.QIXIRANK_EXCHANGE_CONFIRM;
 		WuhunQuest_Button1:Show()
-		WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+		WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 		WuhunQuest_Button2:Show()
-		WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+		WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 		WuhunQuestUpdateRect();
-		DataPool:SetCanUseHotKey(0)															-- ª÷∏¥¥∞ø⁄¥Û–°µΩ≥ı º¥Û–°
+		DataPool:SetCanUseHotKey(0)															-- ???????????
 		this:Show();
 	elseif ( event == "PETSOUL_RANSE_ZIDONG_CONFIRM") then--ranse zidong
 
@@ -600,50 +600,50 @@ function WuhunQuest_OnEvent(event)
 		g_FrameVar[2] = tonumber(arg1);
 		g_FrameVar[3] = tonumber(arg2);
 		if g_FrameVar[1] == 1 then
-			WuhunQuest_InfoWindow:SetText( "#{SHRS_230621_141}" );	-- …Ë÷√ƒ⁄»›
+			WuhunQuest_InfoWindow:SetText( "#{SHRS_230621_141}" );	-- ????
 		else
 			local nColor = Exterior:LuaFnGetRanSeColorItem(g_FrameVar[3], g_FrameVar[2])
 			local planstr = Exterior:LuaFnGetRanSePlanName(g_FrameVar[3], nColor)
 			local str = ScriptGlobal_Format( "#{SHRS_230621_163}", planstr)
-			WuhunQuest_InfoWindow:SetText( str );	-- …Ë÷√ƒ⁄»›
+			WuhunQuest_InfoWindow:SetText( str );	-- ????
 		end
 		
 		g_FrameInfo = FrameInfoList.PETSOUL_RANSE_ZIDONG_CONFIRM ;
 		WuhunQuest_Button1:Show()
-		WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+		WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 		WuhunQuest_Button2:Show()
-		WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+		WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 		WuhunQuestUpdateRect();
 		DataPool:SetCanUseHotKey(0)
 		this:Show();
-	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 99852202 ) then --«Ó∆ÊÕÃ … 
+	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 99852202 ) then --???? 
 		WuhunQuest_Clear_Var()
 		
 		g_FrameVar[1]  = Get_XParam_INT(0)
 		g_FrameVar[2]  = Get_XParam_INT(1)
 		g_FrameVar[3]  = Get_XParam_INT(2)
 		g_FrameVar[4]  = Get_XParam_INT(3)
-		WuhunQuest_InfoWindow:SetText( "#{QQJG_20230815_21}" );	-- …Ë÷√ƒ⁄»›
+		WuhunQuest_InfoWindow:SetText( "#{QQJG_20230815_21}" );	-- ????
 		g_FrameInfo = FrameInfoList.QIONGQI_SWALLOW_CONFIRM ;
 		WuhunQuest_Button1:Show()
-		WuhunQuest_Button1:SetText("#{QQJG_20230815_22}");  --»∑∂®
+		WuhunQuest_Button1:SetText("#{QQJG_20230815_22}");  --??
 		WuhunQuest_Button2:Show()
-		WuhunQuest_Button2:SetText("#{QQJG_20230815_23}");  --»°œ˚
+		WuhunQuest_Button2:SetText("#{QQJG_20230815_23}");  --??
 		WuhunQuestUpdateRect();
 		DataPool:SetCanUseHotKey(0)
 		this:Show();
-	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 99852204 ) then --«Ó∆Êªπ‘≠ 
+	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 99852204 ) then --???? 
 		WuhunQuest_Clear_Var()
 		
 		g_FrameVar[1]  = Get_XParam_INT(0)
 		g_FrameVar[2]  = Get_XParam_INT(1)
 
-		WuhunQuest_InfoWindow:SetText( "#{QQJG_20230815_27}" );	-- …Ë÷√ƒ⁄»›
+		WuhunQuest_InfoWindow:SetText( "#{QQJG_20230815_27}" );	-- ????
 		g_FrameInfo = FrameInfoList.QIONGQI_RESTORE_CONFIRM ;
 		WuhunQuest_Button1:Show()
-		WuhunQuest_Button1:SetText("#{QQJG_20230815_22}");  --»∑∂®
+		WuhunQuest_Button1:SetText("#{QQJG_20230815_22}");  --??
 		WuhunQuest_Button2:Show()
-		WuhunQuest_Button2:SetText("#{QQJG_20230815_23}");  --»°œ˚
+		WuhunQuest_Button2:SetText("#{QQJG_20230815_23}");  --??
 		WuhunQuestUpdateRect();
 		DataPool:SetCanUseHotKey(0)
 		this:Show();
@@ -658,12 +658,12 @@ function WuhunQuest_OnEvent(event)
 		local targetName = Get_XParam_STR(0);
 		local targetServerName = Get_XParam_STR(1)	;		
 		local msg =ScriptGlobal_Format( "#{FWQYM_160601_252}", targetName,targetServerName)
-		WuhunQuest_InfoWindow:SetText( msg );	-- …Ë÷√ƒ⁄»›
+		WuhunQuest_InfoWindow:SetText( msg );	-- ????
 		g_FrameInfo = FrameInfoList.CONFIRM_CANCEL_IMMIGRATION ;
 		WuhunQuest_Button1:Show()
-		WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+		WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 		WuhunQuest_Button2:Show()
-		WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+		WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 		WuhunQuestUpdateRect();
 		DataPool:SetCanUseHotKey(0)
 		this:Show();
@@ -677,12 +677,12 @@ function WuhunQuest_OnEvent(event)
 		local targetName = Get_XParam_STR(0);
 		local targetServerName = Get_XParam_STR(1)	;		
 		local msg =ScriptGlobal_Format( "#{DZYM_230907_120}", targetName,targetServerName)
-		WuhunQuest_InfoWindow:SetText( msg );	-- …Ë÷√ƒ⁄»›
+		WuhunQuest_InfoWindow:SetText( msg );	-- ????
 		g_FrameInfo = FrameInfoList.CONFIRM_CANCEL_ODER_IMMIGRATION ;
 		WuhunQuest_Button1:Show()
-		WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+		WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 		WuhunQuest_Button2:Show()
-		WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+		WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 		WuhunQuestUpdateRect();
 		DataPool:SetCanUseHotKey(0)
 		this:Show();
@@ -696,12 +696,12 @@ function WuhunQuest_OnEvent(event)
 		local targetName = Get_XParam_STR(0);
 		local targetServerName = Get_XParam_STR(1)	;		
 		local msg =ScriptGlobal_Format( "#{FWQYM_160601_252}", targetName,targetServerName)
-		WuhunQuest_InfoWindow:SetText( msg );	-- …Ë÷√ƒ⁄»›
+		WuhunQuest_InfoWindow:SetText( msg );	-- ????
 		g_FrameInfo = FrameInfoList.CONFIRM_CANCEL_IMMIGRATION ;
 		WuhunQuest_Button1:Show()
-		WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+		WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 		WuhunQuest_Button2:Show()
-		WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+		WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 		WuhunQuestUpdateRect();
 		DataPool:SetCanUseHotKey(0)
 		this:Show();
@@ -721,36 +721,36 @@ function WuhunQuest_OnEvent(event)
 		g_FrameVar[2]= Get_XParam_INT(1);
 		g_FrameVar[3]= Get_XParam_INT(2);
 		g_FrameVar[4]= Get_XParam_INT(3);
-		WuhunQuest_InfoWindow:SetText( "#{SHCX_20211229_48}" );	-- …Ë÷√ƒ⁄»›
+		WuhunQuest_InfoWindow:SetText( "#{SHCX_20211229_48}" );	-- ????
 		g_FrameInfo = FrameInfoList.PETSOUL_XISHUXING_CONFIRMPERFECT ;
 		WuhunQuest_Button1:Show()
-		WuhunQuest_Button1:SetText("#{SHCX_20211229_05}");  --»∑∂®
+		WuhunQuest_Button1:SetText("#{SHCX_20211229_05}");  --??
 		WuhunQuest_Button2:Show()
-		WuhunQuest_Button2:SetText("#{SHCX_20211229_06}");  --»°œ˚
+		WuhunQuest_Button2:SetText("#{SHCX_20211229_06}");  --??
 		WuhunQuestUpdateRect();
 		DataPool:SetCanUseHotKey(0)
 		this:Show();
-	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 99869801 ) then--2024Q1…Ì∑›‘§»»»ŒŒÒ
+	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 99869801 ) then--2024Q1??????
 		WuhunQuest_Clear_Var()
 		g_FrameVar[1] =Get_XParam_INT(0);
-		WuhunQuest_InfoWindow:SetText( "#{SFYR_240104_204}" );	-- …Ë÷√ƒ⁄»›
+		WuhunQuest_InfoWindow:SetText( "#{SFYR_240104_204}" );	-- ????
 		g_FrameInfo = FrameInfoList.SHENFENYURE_RESELECT ;
 		WuhunQuest_Button1:Show()
-		WuhunQuest_Button1:SetText("#{SFYR_240104_205}");  --»∑∂®
+		WuhunQuest_Button1:SetText("#{SFYR_240104_205}");  --??
 		WuhunQuest_Button2:Show()
-		WuhunQuest_Button2:SetText("#{SFYR_240104_206}");  --»°œ˚
+		WuhunQuest_Button2:SetText("#{SFYR_240104_206}");  --??
 		WuhunQuestUpdateRect();
 		DataPool:SetCanUseHotKey(0)
 		this:Show();
-	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 99859602 ) then--∑…ªÀ¿Ò∞¸∂˛—°“ª
+	elseif ( event == "UI_COMMAND" and tonumber(arg0) == 99859602 ) then--???????
 		WuhunQuest_Clear_Var()
 		g_FrameVar[1] = Get_XParam_INT(0);
-		WuhunQuest_InfoWindow:SetText( "#{WYCJ_20240320_35}" );	-- …Ë÷√ƒ⁄»›
+		WuhunQuest_InfoWindow:SetText( "#{WYCJ_20240320_35}" );	-- ????
 		g_FrameInfo = FrameInfoList.ZIDIAN_PICKONE_CONFIRM ;
 		WuhunQuest_Button1:Show()
-		WuhunQuest_Button1:SetText("#{WYCJ_20240320_36}");  --»∑∂®
+		WuhunQuest_Button1:SetText("#{WYCJ_20240320_36}");  --??
 		WuhunQuest_Button2:Show()
-		WuhunQuest_Button2:SetText("#{WYCJ_20240320_37}");  --»°œ˚
+		WuhunQuest_Button2:SetText("#{WYCJ_20240320_37}");  --??
 		WuhunQuestUpdateRect();
 		DataPool:SetCanUseHotKey(0)
 		this:Show();
@@ -759,12 +759,12 @@ function WuhunQuest_OnEvent(event)
 		g_FrameVar[1] = Get_XParam_INT(0);
 		g_FrameVar[2] = Get_XParam_INT(1);
 		local str = ScriptGlobal_Format("#{HZLH_20240415_118}", g_FrameVar[2])
-		WuhunQuest_InfoWindow:SetText( str );	-- …Ë÷√ƒ⁄»›
+		WuhunQuest_InfoWindow:SetText( str );	-- ????
 		g_FrameInfo = FrameInfoList.DUANWUDAKA_CONFIRM ;
 		WuhunQuest_Button1:Show()
-		WuhunQuest_Button1:SetText("#{HZLH_20240415_111}");  --»∑∂®
+		WuhunQuest_Button1:SetText("#{HZLH_20240415_111}");  --??
 		WuhunQuest_Button2:Show()
-		WuhunQuest_Button2:SetText("#{HZLH_20240415_112}");  --»°œ˚
+		WuhunQuest_Button2:SetText("#{HZLH_20240415_112}");  --??
 		WuhunQuestUpdateRect();
 		DataPool:SetCanUseHotKey(0)
 		this:Show();
@@ -774,12 +774,12 @@ function WuhunQuest_OnEvent(event)
 		g_FrameVar[2]= Get_XParam_INT(1);
 		g_FrameVar[3]= Get_XParam_INT(2);
 		g_FrameVar[4]= Get_XParam_INT(3);
-		WuhunQuest_InfoWindow:SetText( "#{SHCX_20211229_51}" );	-- …Ë÷√ƒ⁄»›
+		WuhunQuest_InfoWindow:SetText( "#{SHCX_20211229_51}" );	-- ????
 		g_FrameInfo = FrameInfoList.PETSOUL_XISHUXING_CONFIRMBIND ;
 		WuhunQuest_Button1:Show()
-		WuhunQuest_Button1:SetText("#{SHCX_20211229_05}");  --»∑∂®
+		WuhunQuest_Button1:SetText("#{SHCX_20211229_05}");  --??
 		WuhunQuest_Button2:Show()
-		WuhunQuest_Button2:SetText("#{SHCX_20211229_06}");  --»°œ˚
+		WuhunQuest_Button2:SetText("#{SHCX_20211229_06}");  --??
 		WuhunQuestUpdateRect();
 		DataPool:SetCanUseHotKey(0)
 		this:Show();
@@ -801,7 +801,7 @@ function WuhunQuest_OnEvent(event)
 		g_FrameVar[3] = Get_XParam_INT(2) --nMatBagPos
 		g_FrameVar[4] = Get_XParam_INT(3) --bConfirm
 		WuhunQuest_PetSoulBloodLevelUp_BindConfirm()		
-	--Œ‰µ¿∂˛≤„¿˙¡∑»ŒŒÒ »ŒŒÒ3 ÷ÿ–¬ÃÙ’Ω»∑»œ
+	--Œ‰µ¿∂˛≤„¿˙¡∑»ŒŒÒ »ŒŒÒ3 ÷ÿ–¬ÃÙ†Ω»∑»œ
 	elseif   event == "UI_COMMAND" and tonumber(arg0) == 89320302  then
 		WuhunQuest_LiLianMission23_Confirm()		
 	--Œ‰µ¿∂˛≤„¿˙¡∑»ŒŒÒ »ŒŒÒ2 ª®∑—Ω±“»∑»œ
@@ -824,7 +824,7 @@ function WuhunQuest_OnEvent(event)
 		WuhunQuest_LiLianMission2_Confirm()		
 	elseif event == "UI_COMMAND" and tonumber(arg0) == 88889901 then
 		local bShow = Get_XParam_INT(0)
-		if bShow == 1 then --œ‘ æ
+		if bShow == 1 then --??
 			WuhunQuest_PrizeWaiting()
 			this:Show();
 		else
@@ -968,16 +968,16 @@ function WuhunQuest_OnEvent(event)
 		
 		local planeLevel = Get_XParam_INT(0)
 		if planeLevel == 3 then
-			WuhunQuest_InfoWindow:SetText( "#{JHYH_230330_333}" );	-- …Ë÷√ƒ⁄»›
+			WuhunQuest_InfoWindow:SetText( "#{JHYH_230330_333}" );	-- ????
 		else
-			WuhunQuest_InfoWindow:SetText( "#{JHYH_230330_142}" );	-- …Ë÷√ƒ⁄»›
+			WuhunQuest_InfoWindow:SetText( "#{JHYH_230330_142}" );	-- ????
 		end
 
 		g_FrameInfo = FrameInfoList.MARRY_PLANE_NOTICE ;
 		WuhunQuest_Button1:Show()
-		WuhunQuest_Button1:SetText("#{JHYH_230330_332}");  --»∑∂®
+		WuhunQuest_Button1:SetText("#{JHYH_230330_332}");  --??
 		WuhunQuest_Button2:Show()
-		WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+		WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 		WuhunQuestUpdateRect();
 		DataPool:SetCanUseHotKey(0)
 		this:Show();
@@ -1078,22 +1078,22 @@ function WuhunQuest_OnEvent(event)
 			g_FrameVar[5] = Get_XParam_INT(4)
 		
 			local str = ScriptGlobal_Format("#{ZSHF_20230705_34}", Pet:Lua_GetPetExteriorNameByPetGuid(g_FrameVar[3], g_FrameVar[4]))
-			WuhunQuest_InfoWindow:SetText( str );	-- …Ë÷√ƒ⁄»›		
+			WuhunQuest_InfoWindow:SetText( str );	-- ????		
 		elseif Get_XParam_INT(0) == 2 then
 			g_FrameVar[1] = Get_XParam_INT(0)
 			g_FrameVar[2] = Get_XParam_INT(1)
 			
 			local str = ScriptGlobal_Format("#{ZSHF_20230705_87}", Pet:Lua_GetPetExteriorInfo(g_FrameVar[2], "Name"))
-			WuhunQuest_InfoWindow:SetText( str );	-- …Ë÷√ƒ⁄»›		
+			WuhunQuest_InfoWindow:SetText( str );	-- ????		
 		else
 			return
 		end
 
 		g_FrameInfo = FrameInfoList.PETTAYIN_CONFIRM ;
 		WuhunQuest_Button1:Show()
-		WuhunQuest_Button1:SetText("#{ZSHF_20230705_35}");  --»∑∂®
+		WuhunQuest_Button1:SetText("#{ZSHF_20230705_35}");  --??
 		WuhunQuest_Button2:Show()
-		WuhunQuest_Button2:SetText("#{ZSHF_20230705_36}");  --»°œ˚
+		WuhunQuest_Button2:SetText("#{ZSHF_20230705_36}");  --??
 		WuhunQuestUpdateRect();
 		DataPool:SetCanUseHotKey(0)
 		this:Show();
@@ -1127,12 +1127,12 @@ function WuhunQuest_OnEvent(event)
 		WuhunQuest_Clear_Var()
 		local str = Get_XParam_STR(0);
 		g_FrameVar[1] = Get_XParam_INT(0)  
-		WuhunQuest_InfoWindow:SetText( str );	-- …Ë÷√ƒ⁄»›		 
+		WuhunQuest_InfoWindow:SetText( str );	-- ????		 
 		g_FrameInfo = FrameInfoList.SECKILL_TESE ;
 		WuhunQuest_Button1:Show()
-		WuhunQuest_Button1:SetText("#{ZSHF_20230705_35}");  --»∑∂®
+		WuhunQuest_Button1:SetText("#{ZSHF_20230705_35}");  --??
 		WuhunQuest_Button2:Show()
-		WuhunQuest_Button2:SetText("#{ZSHF_20230705_36}");  --»°œ˚
+		WuhunQuest_Button2:SetText("#{ZSHF_20230705_36}");  --??
 		WuhunQuestUpdateRect();
 		DataPool:SetCanUseHotKey(0)
 		this:Show();
@@ -1155,9 +1155,9 @@ function WuhunQuest_OnEvent(event)
 		g_FrameInfo = FrameInfoList.CONFIRM_DWJINJIE
 		WuhunQuest_InfoWindow:SetText("#{DWJJ_240329_33}")
 		WuhunQuest_Button1:Show()
-		WuhunQuest_Button1:SetText("#{ZSHF_20230705_35}");  --»∑∂®
+		WuhunQuest_Button1:SetText("#{ZSHF_20230705_35}");  --??
 		WuhunQuest_Button2:Show()
-		WuhunQuest_Button2:SetText("#{ZSHF_20230705_36}");  --»°œ˚
+		WuhunQuest_Button2:SetText("#{ZSHF_20230705_36}");  --??
 		WuhunQuestUpdateRect();
 		DataPool:SetCanUseHotKey(0)
 		this:Show();
@@ -1184,9 +1184,9 @@ function WuhunQuest_OnEvent(event)
 		end
 		g_FrameInfo = FrameInfoList.CONFIRM_DWJINJIESHENGJI
 		WuhunQuest_Button1:Show()
-		WuhunQuest_Button1:SetText("#{ZSHF_20230705_35}");  --»∑∂®
+		WuhunQuest_Button1:SetText("#{ZSHF_20230705_35}");  --??
 		WuhunQuest_Button2:Show()
-		WuhunQuest_Button2:SetText("#{ZSHF_20230705_36}");  --»°œ˚
+		WuhunQuest_Button2:SetText("#{ZSHF_20230705_36}");  --??
 		WuhunQuestUpdateRect();
 		DataPool:SetCanUseHotKey(0)
 		this:Show();
@@ -1197,7 +1197,7 @@ function WuhunQuest_OnEvent(event)
 			g_FrameVar[2] = Get_XParam_INT(1) --itEquip
 			g_FrameVar[3] = Get_XParam_INT(2) --needYB
 			g_FrameVar[4] = Get_XParam_INT(3) --getJCS
-			g_FrameVar[5] = Get_XParam_INT(4) --º€÷µ
+			g_FrameVar[5] = Get_XParam_INT(4) --??
 			--local itemID = PlayerPackage:GetItemTableIndex(g_FrameVar[3])
 			WuhunQuest_InfoWindow:SetText(ScriptGlobal_Format("#{DWJJ_240329_115}",
 			g_FrameVar[3],
@@ -1206,9 +1206,9 @@ function WuhunQuest_OnEvent(event)
 			))
 		g_FrameInfo = FrameInfoList.CONFIRM_DWJINJIEHUITUI
 		WuhunQuest_Button1:Show()
-		WuhunQuest_Button1:SetText("#{ZSHF_20230705_35}");  --»∑∂®
+		WuhunQuest_Button1:SetText("#{ZSHF_20230705_35}");  --??
 		WuhunQuest_Button2:Show()
-		WuhunQuest_Button2:SetText("#{ZSHF_20230705_36}");  --»°œ˚
+		WuhunQuest_Button2:SetText("#{ZSHF_20230705_36}");  --??
 		WuhunQuestUpdateRect();
 		DataPool:SetCanUseHotKey(0)
 		this:Show();
@@ -1221,9 +1221,9 @@ function WuhunQuest_OnEvent(event)
 		WuhunQuest_InfoWindow:SetText("#{QXPVE_240628_32}")
 		g_FrameInfo = FrameInfoList.CONFIRM_QIXIPVE_LEAVE
 		WuhunQuest_Button1:Show()
-		WuhunQuest_Button1:SetText("#{ZSHF_20230705_35}");  --»∑∂®
+		WuhunQuest_Button1:SetText("#{ZSHF_20230705_35}");  --??
 		WuhunQuest_Button2:Show()
-		WuhunQuest_Button2:SetText("#{ZSHF_20230705_36}");  --»°œ˚
+		WuhunQuest_Button2:SetText("#{ZSHF_20230705_36}");  --??
 		WuhunQuestUpdateRect();
 		DataPool:SetCanUseHotKey(0)
 		this:Show();
@@ -1328,7 +1328,7 @@ function WuhunQuest_Bn1Click()
 		Set_XSCRIPT_Parameter(2,1)
 		Set_XSCRIPT_ParamCount(3)
 		Send_XSCRIPT()
-	elseif(g_FrameInfo == FrameInfoList.PETSOUL_RANSE_CONFIRM) then-- ﬁªÍ»æ…´
+	elseif(g_FrameInfo == FrameInfoList.PETSOUL_RANSE_CONFIRM) then--????
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("OnPossPaint")
 			Set_XSCRIPT_ScriptID(998506)
@@ -1349,10 +1349,10 @@ function WuhunQuest_Bn1Click()
 				Set_XSCRIPT_ParamCount(1)
 			Send_XSCRIPT()
 		end
-	elseif(g_FrameInfo == FrameInfoList.PETSOUL_RANSE_ZIDONG_CONFIRM) then-- ﬁªÍ»æ…´ zidong
+	elseif(g_FrameInfo == FrameInfoList.PETSOUL_RANSE_ZIDONG_CONFIRM) then--???? zidong
 		PushEvent("PETSOUL_RANSE_ZIDONG_CONFIRM_BACK")
 
-	elseif (g_FrameInfo == FrameInfoList.QIONGQI_SWALLOW_CONFIRM) then--«Ó∆ÊÕÃ …
+	elseif (g_FrameInfo == FrameInfoList.QIONGQI_SWALLOW_CONFIRM) then--????
 	
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("Swallow")
@@ -1365,7 +1365,7 @@ function WuhunQuest_Bn1Click()
 			Set_XSCRIPT_ParamCount(5)
 		Send_XSCRIPT()	
 
-	elseif (g_FrameInfo == FrameInfoList.QIONGQI_RESTORE_CONFIRM) then--«Ó∆Êªπ‘≠
+	elseif (g_FrameInfo == FrameInfoList.QIONGQI_RESTORE_CONFIRM) then--????
 	
 		Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name("Restore")
@@ -1483,7 +1483,7 @@ function WuhunQuest_Bn1Click()
 		PushEvent("PETSOUL_BLOODLEVELUP_BINDCONFIRM")
 	elseif g_FrameInfo == FrameInfoList.DRESS_TRANSFER_BUYITEM_CONFIRM then
 		ConvenientBulkBuyItem(g_FrameVar[1],g_FrameVar[2],g_FrameVar[3],g_FrameVar[4],g_FrameVar[5],g_FrameVar[7],g_FrameVar[6])
-	--Œ‰µ¿∂˛≤„¿˙¡∑»ŒŒÒ »ŒŒÒ3 ÷ÿ–¬ÃÙ’Ω»∑»œ
+	--Œ‰µ¿∂˛≤„¿˙¡∑»ŒŒÒ »ŒŒÒ3 ÷ÿ–¬ÃÙ†Ω»∑»œ
 	elseif g_FrameInfo == FrameInfoList.LILIANMISSION23_CONFIRM then
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("ConfirmOK")
@@ -1661,7 +1661,7 @@ function WuhunQuest_Bn1Click()
 			Set_XSCRIPT_ParamCount( 1 )
 		Send_XSCRIPT()
 	elseif g_FrameInfo == FrameInfoList.MARRY_PLANE_NOTICE then
-		AutoRuntoTargetExWithName(177, 94, 0, "œ≤¿¥¿÷")
+		AutoRuntoTargetExWithName(177, 94, 0, "H÷ Lai L’c")
 	elseif g_FrameInfo == FrameInfoList.FANCHANG_SHOP_CONFIRM then
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name( "BuyItem" )
@@ -1855,7 +1855,7 @@ function WuhunQuest_Bn2Click()
 		Send_XSCRIPT()
 	elseif g_FrameInfo == FrameInfoList.DRESS_TRANSFER_BIND_CONFIRM then
 		DressEnchasing:Lua_DressTransferBindConfirmed()
-	--Œ‰µ¿∂˛≤„¿˙¡∑»ŒŒÒ »ŒŒÒ3 ÷ÿ–¬ÃÙ’Ω»°œ˚
+	--Œ‰µ¿∂˛≤„¿˙¡∑»ŒŒÒ »ŒŒÒ3 ÷ÿ–¬ÃÙ†Ω»°œ˚
 	elseif g_FrameInfo == FrameInfoList.LILIANMISSION23_CONFIRM then
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("ConfirmCancel")
@@ -1874,7 +1874,7 @@ function WuhunQuest_Bn2Click()
 end
 
 function WuhunQuest_Frame_OnHiden()
-	if(IsWindowShow("AntiJDY")) then    --ºÚµ•”Œª•≥‚ΩÁ√Êœ‘ æ ±£¨≤ªº§ªÓøÏΩ›º¸ for 69994
+	if(IsWindowShow("AntiJDY")) then    --??????????,?????? for 69994
 	else
 		DataPool:SetCanUseHotKey(1);
 	end
@@ -1899,7 +1899,7 @@ function WuhunQuest_Open_Window_OK(str)
 	WuhunQuest_InfoWindow:SetText(str);
 	WuhunQuestUpdateRect();
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557)");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557)");  --??
 	WuhunQuest_Button2:Hide()
 	DataPool:SetCanUseHotKey(0)
 	this:Show();
@@ -1910,7 +1910,7 @@ function WuhunQuest_Open_Window_CLOSE(str)
 	WuhunQuest_InfoWindow:SetText(arg0);
 	WuhunQuestUpdateRect();
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_1173}");  --πÿ±’
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_1173}");  --??
 	WuhunQuest_Button2:Hide()
 	DataPool:SetCanUseHotKey(0)
 	this:Show();
@@ -1931,9 +1931,9 @@ function WuhunQuest_DarkSkill_confirm(nIndex,keepopen)
 
 	WuhunQuest_InfoWindow:SetText(strInfo)
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 	WuhunQuestUpdateRect();
 	g_FrameInfo = FrameInfoList.DARK_SKILL_RECOIN_CONFIRM
 	this:Show();
@@ -1954,9 +1954,9 @@ function WuhunQuest_Super_ATTR_confirm(nIndex,keepopen)
 
 	WuhunQuest_InfoWindow:SetText(strInfo)
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 	WuhunQuestUpdateRect();
 	g_FrameInfo = FrameInfoList.SUPER_ATTR_RECOIN_CONFIRM
 	this:Show();
@@ -1968,19 +1968,19 @@ function WuhunQuest_WuhunSkill_confirm(nIndex,keepopen)
 	g_FrameVar[2] = tonumber(keepopen)
 	local strInfo = "#{WHZN_141216_17}"
 	-- PushDebugMessage(keepopen)
-	if keepopen == 0 then --πÿ±’
+	if keepopen == 0 then --??
 		strInfo = "#{WHZN_141216_5}"
-	elseif keepopen == 1 then  --∏¸ªª
+	elseif keepopen == 1 then  --??
 		strInfo = "#{WHZN_141216_17}"
-	elseif  keepopen == 2 then  --»°œ˚∑≈»Î
+	elseif  keepopen == 2 then  --????
 		strInfo = "#{WHZN_141216_2}"
 	end
 
 	WuhunQuest_InfoWindow:SetText(strInfo)
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 	WuhunQuestUpdateRect();
 	g_FrameInfo = FrameInfoList.WUHUN_SKILL_RECOIN_CONFIRM
 	this:Show();
@@ -1993,9 +1993,9 @@ function WuhunQuest_DeleteCoupleDiary_Confirm(realId)
 
 	WuhunQuest_InfoWindow:SetText(strInfo)
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 	WuhunQuestUpdateRect();
 	g_FrameInfo = FrameInfoList.DELETE_COUPLE_DIARY_CONFIRM
 	this:Show();
@@ -2007,9 +2007,9 @@ function WuhunQuest_Open_Window_YESNO(str)
 	WuhunQuest_InfoWindow:SetText(arg0);
 	WuhunQuestUpdateRect();
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 	DataPool:SetCanUseHotKey(0)
 	this:Show();
 end
@@ -2023,12 +2023,12 @@ function WuhunQuest_Open_Window_YBM_UpItem(nIndex , nPrice)
 	local needMoney = Auction:GetNeedMoneyForSell(g_FrameVar[2])
 --	local totalPrice = g_FrameVar[2] * nNum
 --	local totalNeedMoney = needMoney * nNum
-	WuhunQuest_InfoWindow:SetText( "#{YBSC_XML_65}"..itemName.."#{YBSC_XML_66}"..tostring(g_FrameVar[2]).."#{YBSC_XML_67}".."#{_EXCHG"..tostring(needMoney).."}".."#{YBSC_XML_68}");	-- …Ë÷√ƒ⁄»›
+	WuhunQuest_InfoWindow:SetText( "#{YBSC_XML_65}"..itemName.."#{YBSC_XML_66}"..tostring(g_FrameVar[2]).."#{YBSC_XML_67}".."#{_EXCHG"..tostring(needMoney).."}".."#{YBSC_XML_68}");	-- ????
 	g_FrameInfo = FrameInfoList.YBMARKET_UP_ITEM_COMFIRM ;
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 	WuhunQuestUpdateRect();
 	DataPool:SetCanUseHotKey(0)
 	this:Show();
@@ -2039,9 +2039,9 @@ function WuhunQuest_Open_Window_YBM_MultiBuy(arg0, arg1, arg2, arg3)
 	WuhunQuest_InfoWindow:SetText(msg)
 	g_FrameInfo = FrameInfoList.YBMARKET_CONFIRM_MULTIBUY;
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 	WuhunQuestUpdateRect();
 	DataPool:SetCanUseHotKey(0)
 	this:Show();
@@ -2053,12 +2053,12 @@ function WuhunQuest_Open_Window_YBM_UpPet(nIndex , nPrice)
 	g_FrameVar[2] = tonumber(nPrice)
 	local petName,szOn = Pet:GetPetList_Appoint(g_FrameVar[1]);
 	local needMoney = Auction:GetNeedMoneyForSell(g_FrameVar[2])
-	WuhunQuest_InfoWindow:SetText( "#{YBSC_XML_69}"..petName.."#{YBSC_XML_70}"..g_FrameVar[2].."#{YBSC_XML_71}".."#{_EXCHG"..tostring(needMoney).."}".."#{YBSC_XML_72}");	-- …Ë÷√ƒ⁄»›
+	WuhunQuest_InfoWindow:SetText( "#{YBSC_XML_69}"..petName.."#{YBSC_XML_70}"..g_FrameVar[2].."#{YBSC_XML_71}".."#{_EXCHG"..tostring(needMoney).."}".."#{YBSC_XML_72}");	-- ????
 	g_FrameInfo = FrameInfoList.YBMARKET_UP_PET_COMFIRM ;
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 	WuhunQuestUpdateRect();
 	DataPool:SetCanUseHotKey(0)
 	this:Show();
@@ -2072,17 +2072,17 @@ function WuhunQuest_Open_Window_YBM_Buy(nType ,nIndex ,nPrice)
 	if g_FrameVar[1] == 2 or g_FrameVar[1] == 3 then
 		local pName , pSeller ,pCount ,pYB = Auction:GetItemAuctionInfo( g_FrameVar[2] )
 		unitName =  pName
-		WuhunQuest_InfoWindow:SetText( "#{YBSC_XML_73}"..tostring(pYB).."#{YBSC_XML_74}"..tostring(pCount).."#{YBSC_XML_79}"..unitName.."#{YBSC_XML_75}");	-- …Ë÷√ƒ⁄»›
+		WuhunQuest_InfoWindow:SetText( "#{YBSC_XML_73}"..tostring(pYB).."#{YBSC_XML_74}"..tostring(pCount).."#{YBSC_XML_79}"..unitName.."#{YBSC_XML_75}");	-- ????
 	elseif g_FrameVar[1] == 1 then
 		local pName , pSeller ,pYB = Auction:GetPetAuctionInfo( g_FrameVar[2] )
 		unitName = pName
-		WuhunQuest_InfoWindow:SetText( "#{YBSC_XML_73}"..g_FrameVar[3].."#{YBSC_XML_74}"..unitName.."#{YBSC_XML_75}");	-- …Ë÷√ƒ⁄»›
+		WuhunQuest_InfoWindow:SetText( "#{YBSC_XML_73}"..g_FrameVar[3].."#{YBSC_XML_74}"..unitName.."#{YBSC_XML_75}");	-- ????
 	end
 	g_FrameInfo = FrameInfoList.YBMARKET_BUY_COMFIRM  ;
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 	WuhunQuestUpdateRect();
 	DataPool:SetCanUseHotKey(0)
 	this:Show();
@@ -2105,9 +2105,9 @@ function WuhunQuest_WeeklyShopConfirm()
 	end
  
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{ZCSD_220802_08}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{ZCSD_220802_08}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{ZCSD_220802_09}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{ZCSD_220802_09}");  --??
 	WuhunQuestUpdateRect();
 	DataPool:SetCanUseHotKey(0)
 	this:Show();
@@ -2118,12 +2118,12 @@ function WuhunQuest_Open_Window_YBM_TakeBack(nType , nIndex)
 	g_FrameVar[1] = tonumber(nType)
 	g_FrameVar[2] = tonumber(nIndex)
 	local pName = Auction:GetMySellBoxItemName(g_FrameVar[1] , g_FrameVar[2])
-	WuhunQuest_InfoWindow:SetText( "#{YBSC_XML_76}"..pName.."#{YBSC_XML_77}");	-- …Ë÷√ƒ⁄»›
+	WuhunQuest_InfoWindow:SetText( "#{YBSC_XML_76}"..pName.."#{YBSC_XML_77}");	-- ????
 	g_FrameInfo = FrameInfoList.YBMARKET_TAKE_BACK_COMFIRM
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 	WuhunQuestUpdateRect();
 	DataPool:SetCanUseHotKey(0)
 	this:Show();
@@ -2148,9 +2148,9 @@ function WuhunQuest_QingQiuShopConfirm()
 
 	g_FrameInfo = FrameInfoList.QINGQIU_BUYCONFIRM;
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{QQSD_220801_7}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{QQSD_220801_7}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{QQSD_220801_8}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{QQSD_220801_8}");  --??
 	WuhunQuestUpdateRect();
 	DataPool:SetCanUseHotKey(0)
 	this:Show();
@@ -2161,12 +2161,12 @@ end
 
 function WuhunQuest_Open_Window_SellItemConfirm(nItemPos)
 	g_FrameVar[1] = tonumber(nItemPos)
-	WuhunQuest_InfoWindow:SetText("#{ZBBH_100505_1}");	-- …Ë÷√ƒ⁄»›
+	WuhunQuest_InfoWindow:SetText("#{ZBBH_100505_1}");	-- ????
 	g_FrameInfo = FrameInfoList.SELL_ITEM_CONFIRM;
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 	WuhunQuestUpdateRect();
 	DataPool:SetCanUseHotKey(0)
 	this:Show();
@@ -2182,12 +2182,12 @@ function WuhunQuest_Open_Window_SellItemConfirmQ8(nItemPos,equipQual,opType)
 			strMsg = "#{YZZBMD_220627_01}"
 		end
 		g_FrameVar[1] = tonumber(nItemPos)
-		WuhunQuest_InfoWindow:SetText(ScriptGlobal_Format(strMsg,equipStar));	-- …Ë÷√ƒ⁄»›
+		WuhunQuest_InfoWindow:SetText(ScriptGlobal_Format(strMsg,equipStar));	-- ????
 		g_FrameInfo = FrameInfoList.SELL_ITEM_CONFIRM;
 		WuhunQuest_Button1:Show()
-		WuhunQuest_Button1:SetText("#{YZZBMD_220627_05}");  --»∑∂®
+		WuhunQuest_Button1:SetText("#{YZZBMD_220627_05}");  --??
 		WuhunQuest_Button2:Show()
-		WuhunQuest_Button2:SetText("#{YZZBMD_220627_06}");  --»°œ˚
+		WuhunQuest_Button2:SetText("#{YZZBMD_220627_06}");  --??
 		WuhunQuest_CheckClient:Show()
 		WuhunQuest_CheckBtn:Show()
 		WuhunQuest_CheckText:Show()
@@ -2201,7 +2201,7 @@ function WuhunQuest_Open_Window_SellItemConfirmQ8(nItemPos,equipQual,opType)
 		PlayerPackage:SellCurrItem( tonumber(nItemPos))
 	end
 end
-function WuhunQuest_Open_Window_HuantongConfirm(strMsg, nType, nCurrencyUnit, nPrice, nItemIndex, nSerialNum, nUniqueID )--add:lby2015ªπÕØ
+function WuhunQuest_Open_Window_HuantongConfirm(strMsg, nType, nCurrencyUnit, nPrice, nItemIndex, nSerialNum, nUniqueID )--add:lby2015??
 	WuhunQuest_Clear_Var()
 
 	g_FrameVar[1] = tonumber(nType);
@@ -2215,9 +2215,9 @@ function WuhunQuest_Open_Window_HuantongConfirm(strMsg, nType, nCurrencyUnit, nP
 
 	g_FrameInfo = FrameInfoList.PET_HUANTONT_CONFIRM;
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 	WuhunQuestUpdateRect();
 	DataPool:SetCanUseHotKey(0)
 	this:Show();
@@ -2237,9 +2237,9 @@ function WuhunQuest_Open_Window_PetTaYinConfirm(strMsg, nType, nCurrencyUnit, nP
 
 	g_FrameInfo = FrameInfoList.PETTAYIN_YBbuy_CONFIRM;
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 	WuhunQuestUpdateRect();
 	DataPool:SetCanUseHotKey(0)
 	this:Show();
@@ -2268,14 +2268,14 @@ function WuhunQuest_QuickUpPet_Confirm(nType,nCurData,nPrice,nUplimit,strMsg)
 	g_FrameInfo = FrameInfoList.QUICKUP_PET_CONFIRM
 	WuhunQuest_InfoWindow:SetText( strText );
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 	WuhunQuestUpdateRect();
 	this:Show();
 end
 
-function WuhunQuest_Open_Window_LingxingConfirm(strMsg, nType, nCurrencyUnit, nPrice, nItemIndex, nSerialNum, nUniqueID )--add:lby2015Ã·¡È
+function WuhunQuest_Open_Window_LingxingConfirm(strMsg, nType, nCurrencyUnit, nPrice, nItemIndex, nSerialNum, nUniqueID )--add:lby2015??
 	WuhunQuest_Clear_Var()
 
 	g_FrameVar[1] = tonumber(nType);
@@ -2289,9 +2289,9 @@ function WuhunQuest_Open_Window_LingxingConfirm(strMsg, nType, nCurrencyUnit, nP
 
 	g_FrameInfo = FrameInfoList.PET_LINGXING_CONFIRM;
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 	WuhunQuestUpdateRect();
 	DataPool:SetCanUseHotKey(0)
 	this:Show();
@@ -2313,9 +2313,9 @@ function WuhunQuest_Open_Window_ConvenintBuyConfirm( strMsg, nType, nCurrencyUni
 
 	g_FrameInfo = FrameInfoList.CONVENIENT_BUY_CONFIRM;
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 	WuhunQuestUpdateRect();
 	DataPool:SetCanUseHotKey(0)
 	this:Show();
@@ -2335,9 +2335,9 @@ function WuhunQuest_Open_Window_DakongConfirm(strMsg, nType, nCurrencyUnit, nPri
 
 	g_FrameInfo = FrameInfoList.NEW_DAKONG_CONFIRM;
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 	WuhunQuestUpdateRect();
 	DataPool:SetCanUseHotKey(0)
 	this:Show();
@@ -2357,9 +2357,9 @@ function WuhunQuest_Open_Window_XiangqianConfirm(strMsg, nType, nCurrencyUnit, n
 
 	g_FrameInfo = FrameInfoList.NEW_XIANGQIAN_CONFIRM;
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 	WuhunQuestUpdateRect();
 	DataPool:SetCanUseHotKey(0)
 	this:Show();
@@ -2379,9 +2379,9 @@ function WuhunQuest_Open_Window_ZhaichuConfirm(strMsg, nType, nCurrencyUnit, nPr
 
 	g_FrameInfo = FrameInfoList.NEW_ZHAICHU_CONFIRM;
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}");  --??
 	WuhunQuestUpdateRect();
 	DataPool:SetCanUseHotKey(0)
 	this:Show();
@@ -2394,9 +2394,9 @@ function WuhunQuest_BillingAward_Confirm( strText, nIndex )
 	WuhunQuest_InfoWindow:SetText( strText )
 	WuhunQuestUpdateRect();
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{LJSJ_160308_10}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{LJSJ_160308_10}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{LJSJ_160308_11}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{LJSJ_160308_11}");  --??
 	g_FrameInfo = FrameInfoList.BILLINGAWARD_CONFIRM
 	this:Show();
 end
@@ -2409,9 +2409,9 @@ function WuhunQuest_MaterialCompound_Confirm( strMsg, targetId, standardStuff  )
 	WuhunQuest_InfoWindow:SetText( strMsg )
 	WuhunQuestUpdateRect();
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{LJSJ_160308_10}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{LJSJ_160308_10}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{LJSJ_160308_11}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{LJSJ_160308_11}");  --??
 	g_FrameInfo = FrameInfoList.MATERIALCOMPOUND_CONFIRM
 	this:Show();
 end
@@ -2423,9 +2423,9 @@ function WuhunQuest_BWZQSponsor_Vote_Confirm( guid, sponsorname )
 	WuhunQuest_InfoWindow:SetText( ScriptGlobal_Format("#{BWZQ_20230329_111}",sponsorname) )
 	WuhunQuestUpdateRect();
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{LJSJ_160308_10}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{LJSJ_160308_10}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{LJSJ_160308_11}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{LJSJ_160308_11}");  --??
 	g_FrameInfo = FrameInfoList.BWZQ_SPONSOR_VOTE_CONFIRM
 	DataPool:SetCanUseHotKey(0)
 	this:Show();
@@ -2435,9 +2435,9 @@ function WuhunQuest_BWZQ_GotoBHGArea_Confirm()
 	WuhunQuest_InfoWindow:SetText( "#{BWZQ_20230329_251}" )
 	WuhunQuestUpdateRect();
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{LJSJ_160308_10}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{LJSJ_160308_10}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{LJSJ_160308_11}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{LJSJ_160308_11}");  --??
 	g_FrameInfo = FrameInfoList.BWZQ_GOTOBHGAREA_CONFIRM
 	DataPool:SetCanUseHotKey(0)
 	this:Show();
@@ -2460,9 +2460,9 @@ function WuhunQuest_SeckillGiveUp_confirm()
 
 	WuhunQuest_InfoWindow:SetText("#{FBSD_151123_07}")
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{LS78_140819_55}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{LS78_140819_55}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{LS78_140819_56}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{LS78_140819_56}");  --??
 	WuhunQuestUpdateRect();
 	g_FrameInfo = FrameInfoList.SECKILL_GIVEUP_CONFIRM
 	this:Show()
@@ -2482,9 +2482,9 @@ function WuhunQuest_DoubleSeckill_confirm(BossIndex, isYuanBao, needYuanBao, nee
 	end
 	WuhunQuest_InfoWindow:SetText(strInfo)
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{LS78_140819_55}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{LS78_140819_55}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{LS78_140819_56}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{LS78_140819_56}");  --??
 	WuhunQuestUpdateRect();
 	g_FrameInfo = FrameInfoList.DOUBLE_SECKILL_CONFIRM
 	this:Show()
@@ -2501,9 +2501,9 @@ function WuhunQuest_PetSoul_Exchange_confirm(nIdx, destPos,bagPos)
 		WuhunQuest_InfoWindow:SetText("#{ZSPVP_211231_34}")
 	end
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{LS78_140819_55}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{LS78_140819_55}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{LS78_140819_56}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{LS78_140819_56}");  --??
 	WuhunQuestUpdateRect();
 	g_FrameInfo = FrameInfoList.PETSOUL_EXCHANGE_CONFIRM
 	this:Show()
@@ -2521,9 +2521,9 @@ function WuhunQuest_PetSoul_Xishuxing_confirm(nIdx, bagPos)
 		WuhunQuest_InfoWindow:SetText("#{SHCX_20211229_08}")
 	end
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{SHCX_20211229_05}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{SHCX_20211229_05}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{SHCX_20211229_06}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{SHCX_20211229_06}");  --??
 	WuhunQuestUpdateRect();
 	g_FrameInfo = FrameInfoList.PETSOUL_XISHUXING_CONFIRM
 	this:Show()
@@ -2536,9 +2536,9 @@ function WuhunQuest_PetSoul_Xishuxing_change_confirm(bagPos)
 	WuhunQuest_InfoWindow:SetText("#{SHCX_20211229_49}")
 
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{SHCX_20211229_05}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{SHCX_20211229_05}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{SHCX_20211229_06}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{SHCX_20211229_06}");  --??
 	WuhunQuestUpdateRect();
 	g_FrameInfo = FrameInfoList.PETSOUL_XISHUXING_CHANGECONFIRM
 	this:Show()
@@ -2551,9 +2551,9 @@ function WuhunQuest_WHWGGradeUp_confirm(nCurrentSelWG,strInfo)
 
 	WuhunQuest_InfoWindow:SetText(strInfo)
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{LS78_140819_55}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{LS78_140819_55}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{LS78_140819_56}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{LS78_140819_56}");  --??
 	WuhunQuestUpdateRect();
 	g_FrameInfo = FrameInfoList.WHWG_GRADEUP_CONFIRM
 	this:Show()
@@ -2566,9 +2566,9 @@ function Apply_Snaking_Num_Second_Confirm()
 
 	g_FrameInfo = FrameInfoList.APPLY_SNAKING_NUM_SECOND_CONFIRM;
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{RCYH_180522_54}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{RCYH_180522_54}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{RCYH_180522_55}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{RCYH_180522_55}");  --??
 	WuhunQuestUpdateRect();
 	DataPool:SetCanUseHotKey(0)
 	this:Show();
@@ -2582,9 +2582,9 @@ function WuhunQuest_DressPaintBind_confirm(nType,nDressPos,nParam)
 
 	WuhunQuest_InfoWindow:SetText("#{YJRS_140613_19}")
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{SZRSYH_210315_04}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{SZRSYH_210315_04}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{SZRSYH_210315_05}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{SZRSYH_210315_05}");  --??
 	WuhunQuestUpdateRect()
 	g_FrameInfo = FrameInfoList.DRESSPAINT_BINDITEM_CONFIRM
 	this:Show()
@@ -2607,9 +2607,9 @@ function WuhunQuest_XiaRiDaKa_confirm(targetId,curNum)
 
 	WuhunQuest_InfoWindow:SetText(strTemp)
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{SZRSYH_210315_04}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{SZRSYH_210315_04}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{SZRSYH_210315_05}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{SZRSYH_210315_05}");  --??
 	WuhunQuestUpdateRect()
 	g_FrameInfo = FrameInfoList.XIARIDAKA_CONFIRM
 	this:Show()
@@ -2634,21 +2634,21 @@ function WuhunQuest_Dress_Transfer_Bind_Confirm()
 	WuhunQuest_InfoWindow:SetText("#{SZPSZY_160314_30}")
 	WuhunQuest_Button1:Hide()
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_1173}")  --πÿ±’
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_1173}")  --??
 	WuhunQuestUpdateRect()
 	this:Show()
 end
 
---Œ‰µ¿∂˛≤„¿˙¡∑»ŒŒÒ »ŒŒÒ3 ÷ÿ–¬ÃÙ’Ω»∑»œ
+--Œ‰µ¿∂˛≤„¿˙¡∑»ŒŒÒ »ŒŒÒ3 ÷ÿ–¬ÃÙ†Ω»∑»œ
 function WuhunQuest_LiLianMission23_Confirm()
 	
 	g_FrameInfo = FrameInfoList.LILIANMISSION23_CONFIRM
 	
 	WuhunQuest_InfoWindow:SetText("#{XZDZ_220428_123}")
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{XZDZ_220428_124}")  --÷ÿ–¬ÃÙ’Ω
+	WuhunQuest_Button1:SetText("#{XZDZ_220428_124}")  --????
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{XZDZ_220428_125}")  --¿Îø™∏±±æ
+	WuhunQuest_Button2:SetText("#{XZDZ_220428_125}")  --????
 	WuhunQuestUpdateRect()
 	DataPool:SetCanUseHotKey(0)
 	this:Show()
@@ -2684,9 +2684,9 @@ function WuhunQuest_Dress_Transfer_BuyItem_Confirm(nUniqueID, nNeedItemCount, nI
 
 	WuhunQuest_InfoWindow:SetText(strTemp)
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--»∑∂® 
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--?? 
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--??
 	WuhunQuestUpdateRect()
 	this:Show()
 end
@@ -2713,9 +2713,9 @@ function WuhunQuest_ConsumeSure_EquipDWLevelup(nBagPos, nLevelUpTo, requireJCS, 
 	end
 
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--»∑∂® 
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--?? 
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--??
 	WuhunQuestUpdateRect()
 	this:Show()
 end
@@ -2724,9 +2724,9 @@ function WuhunQuest_DWLevelUp_BindSure_Confirm()
 	g_FrameInfo = FrameInfoList.DWLEVELUP_BINDCONFIRM
 	WuhunQuest_InfoWindow:SetText( "#{DWSJ_141202_28}" )
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--»∑∂® 
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--?? 
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--??
 	WuhunQuestUpdateRect()
 	this:Show()
 
@@ -2787,9 +2787,9 @@ function WuhunQuest_LingYu_Wash_Confirm()
 	
 	WuhunQuest_InfoWindow:SetText("#{SZXT_221216_130}")
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--»∑∂® 
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--?? 
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--??
 	WuhunQuestUpdateRect()
 	DataPool:SetCanUseHotKey(0)
 	this:Show()
@@ -2801,9 +2801,9 @@ function WuhunQuest_LingYu_Switch_Confirm()
 	
 	WuhunQuest_InfoWindow:SetText("#{SZXT_221216_138}")
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--»∑∂® 
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--?? 
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--??
 	WuhunQuestUpdateRect()
 	DataPool:SetCanUseHotKey(0)
 	this:Show()
@@ -2815,9 +2815,9 @@ function WuhunQuest_LingYu_Make_Confirm()
 
 	WuhunQuest_InfoWindow:SetText("#{SZXT_221216_99}")
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--»∑∂® 
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--?? 
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--??
 	WuhunQuestUpdateRect()
 	DataPool:SetCanUseHotKey(0)
 	this:Show()
@@ -2830,9 +2830,9 @@ function WuhunQuest_LingYu_Compound_Confirm()
 
 	WuhunQuest_InfoWindow:SetText("#{SZXT_221216_250}")
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--»∑∂® 
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--?? 
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--??
 	WuhunQuestUpdateRect()
 	DataPool:SetCanUseHotKey(0)
 	this:Show()
@@ -2844,9 +2844,9 @@ function WuhunQuest_LingYu_Recycle_Confirm()
 
 	WuhunQuest_InfoWindow:SetText("#{SZXT_221216_253}")
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--»∑∂® 
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--?? 
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--??
 	WuhunQuestUpdateRect()
 	DataPool:SetCanUseHotKey(0)
 	this:Show()
@@ -2857,9 +2857,9 @@ function WuhunQuest_LingYu_Transition_Confirm()
 
 	WuhunQuest_InfoWindow:SetText("#{SZXT_230410_15}")
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--»∑∂® 
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--?? 
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--??
 	WuhunQuestUpdateRect()
 	DataPool:SetCanUseHotKey(0)
 	this:Show()
@@ -2870,9 +2870,9 @@ function WuhunQuest_LingYu_Unbind_Confirm()
 
 	WuhunQuest_InfoWindow:SetText("#{SZXT_230410_19}")
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--»∑∂® 
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--?? 
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--??
 	WuhunQuestUpdateRect()
 	DataPool:SetCanUseHotKey(0)
 	this:Show()
@@ -2889,9 +2889,9 @@ function WuhunQuest_Equip_Refresh_Equip_Change_Confirm()
 	end
 	
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--»∑∂® 
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--?? 
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--??
 	WuhunQuestUpdateRect()
 	DataPool:SetCanUseHotKey(0)
 	this:Show()
@@ -2904,9 +2904,9 @@ function WuhunQuest_Equip_Refresh_Close_Confirm()
 	WuhunQuest_InfoWindow:SetText("#{SGCX_20231227_48}")
 	
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--»∑∂® 
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--?? 
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--??
 	WuhunQuestUpdateRect()
 	DataPool:SetCanUseHotKey(0)
 	this:Show()
@@ -2918,9 +2918,9 @@ function WuhunQuest_Equip_Refresh_Bind_Confirm()
 	WuhunQuest_InfoWindow:SetText("#{SGCX_20231227_58}")
 	
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--»∑∂® 
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--?? 
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--??
 	WuhunQuestUpdateRect()
 	DataPool:SetCanUseHotKey(0)
 	this:Show()
@@ -2941,9 +2941,9 @@ function WuhunQuest_FashionLotterySignUp_Confirm()
 	end	
 	
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--»∑∂® 
+	WuhunQuest_Button1:SetText("#{INTERFACE_XML_557}") 	--?? 
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--»°œ˚
+	WuhunQuest_Button2:SetText("#{INTERFACE_XML_542}") 	--??
 	WuhunQuestUpdateRect()
 	DataPool:SetCanUseHotKey(0)
 	this:Show()
@@ -2957,11 +2957,11 @@ function WuhunQuest_YuLongZaiTian_Gift_Confirm()
 	g_FrameVar[2] = Get_XParam_INT(1)	--SelectedIndex
 	local strMsgForComfirm = Get_XParam_STR(0)
 	
-	WuhunQuest_InfoWindow:SetText(strMsgForComfirm);  -- …Ë÷√ƒ⁄»›	
+	WuhunQuest_InfoWindow:SetText(strMsgForComfirm);  -- ????	
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{ZYJX_211124_47}");  --»∑∂®
+	WuhunQuest_Button1:SetText("#{ZYJX_211124_47}");  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{ZYJX_211124_48}");  --»°œ˚
+	WuhunQuest_Button2:SetText("#{ZYJX_211124_48}");  --??
 	WuhunQuestUpdateRect();
 	DataPool:SetCanUseHotKey(0)
 	this:Show();
@@ -2984,9 +2984,9 @@ function WuhunQuest_Ornaments_Confirm(optype,bagIndex,tableIndex)
 	WuhunQuest_InfoWindow:SetText( ScriptGlobal_Format("#{BGTS_220125_25}",szname,szornamentsame) )
 
 	WuhunQuest_Button1:Show()
-	WuhunQuest_Button1:SetText("#{BGTS_220125_26}")  --»∑∂®
+	WuhunQuest_Button1:SetText("#{BGTS_220125_26}")  --??
 	WuhunQuest_Button2:Show()
-	WuhunQuest_Button2:SetText("#{BGTS_220125_27}")  --»°œ˚
+	WuhunQuest_Button2:SetText("#{BGTS_220125_27}")  --??
 	WuhunQuestUpdateRect()
 	g_FrameInfo = FrameInfoList.CONFIRM_ORNAMENTS_CONFIRM
 	this:Show()

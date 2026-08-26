@@ -2,8 +2,8 @@
 local g_ShenbingGuide_Frame_UnifiedXPosition;
 local g_ShenbingGuide_Frame_UnifiedYPosition;
 local ShenbingGuide_g_OnpenUI = 89027401
-local g_ShenbingGuide_CurYe = 1 --当前页
-local g_ShenbingGuide_CurIntro = 1 --当前介绍
+local g_ShenbingGuide_CurYe = 1 --???
+local g_ShenbingGuide_CurIntro = 1 --????
 local g_ShenbingGuide_IntroduceInfo = {
 	[1] = {
 		[1] = { text = "#{SQYD_230802_80}", MaxImg = 1, img = 1, },
@@ -19,7 +19,7 @@ local g_ShenbingGuide_IntroduceInfo = {
 		[2] = { text = "#{SQYD_230802_90}", MaxImg = 1, img = 7, },
 	},
 }
---每个部分的右侧图片 有多张并且有翻页功能
+--每个部分的右侧图片 有多犈并且有翻页功能
 local g_ShenbingGuide_CurImage = 1
 local g_ShenbingGuide_MaxImage = 1
 local g_ShenbingGuide_CurImageTableIndex = 1
@@ -95,10 +95,10 @@ function ShenbingGuide_OnEvent(event)
 	end
 end
 
---关闭界面
+--关睜界面
 function ShenbingGuide_OnClose()
-	g_ShenbingGuide_CurYe = 1 --当前页
-	g_ShenbingGuide_CurIntro = 1 --当前介绍
+	g_ShenbingGuide_CurYe = 1 --???
+	g_ShenbingGuide_CurIntro = 1 --????
 	g_ShenbingGuide_CurImage = 1
 	g_ShenbingGuide_MaxImage = 1
 	g_ShenbingGuide_CurImageTableIndex = 1
@@ -127,7 +127,7 @@ end
 --图片翻页按钮
 function ShenbingGuide_PageUp()
 	g_ShenbingGuide_CurImage = g_ShenbingGuide_CurImage - 1
-	if g_ShenbingGuide_CurImage < 1  then--容错
+	if g_ShenbingGuide_CurImage < 1  then--??
 		g_ShenbingGuide_CurImage = 1
 	elseif g_ShenbingGuide_CurImage > g_ShenbingGuide_MaxImage  then
 		g_ShenbingGuide_CurImage = g_ShenbingGuide_MaxImage
@@ -149,7 +149,7 @@ end
 function ShenbingGuide_PageDown()
 	g_ShenbingGuide_CurImage = g_ShenbingGuide_CurImage + 1
 
-	if g_ShenbingGuide_CurImage < 1  then--容错
+	if g_ShenbingGuide_CurImage < 1  then--??
 		g_ShenbingGuide_CurImage = 1
 	end
 	if g_ShenbingGuide_CurImage > g_ShenbingGuide_MaxImage  then
@@ -236,14 +236,14 @@ function ShenbingGuide_UpdateUi()
 	ShenbingGuide_Right2_Image:SetProperty("Image",g_ShenbingGuide_ImageTabl[g_ShenbingGuide_CurImageTableIndex][g_ShenbingGuide_CurImage]);
 	ShenbingGuide_Right2_PageUp:Disable()
 	ShenbingGuide_Right2_PageDown:Enable()
-	if g_ShenbingGuide_MaxImage == 1 then --就一张图片 初始化时要注意后一页按钮的disable
+	if g_ShenbingGuide_MaxImage == 1 then --????? ?????????????disable
 		ShenbingGuide_Right2_PageDown:Disable()
 	end
 	g_ShenbingGuide_BindButtonTabl[g_ShenbingGuide_CurIntro]:SetCheck(1)
 	local yeStr = ScriptGlobal_Format("#{SQYD_230802_113}",tostring(g_ShenbingGuide_CurImage),tostring(g_ShenbingGuide_MaxImage) )
 	ShenbingGuide_Right2_Info2:SetText(yeStr)
 end
---调整位置
+--调狖位置
 function ShenbingGuide_UpdateUIPos()
 	ShenbingGuide_Frame:SetProperty("UnifiedXPosition", g_ShenbingGuide_Frame_UnifiedXPosition);
 	ShenbingGuide_Frame:SetProperty("UnifiedYPosition", g_ShenbingGuide_Frame_UnifiedYPosition);

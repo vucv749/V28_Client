@@ -5,7 +5,7 @@ local g_Profile_DressChoose_UnifiedPosition = ""
 local g_Profile_Dress_SetType = 2
 
 local g_Profile_Dress_InitList = 0
-local m_PlayerfashionDepotType = 1 	--仓库类型 1 玩家时装仓库 2 子女时装仓库
+local m_PlayerfashionDepotType = 1 	--???? 1 ?????? 2 ??????
 
 local g_Profile_DressChoose_BarNum = 100
 local g_Profile_DressChoose_BarList = {}
@@ -404,7 +404,7 @@ function Profile_DressChoose_HelpClick()
 	
 end
 
---关闭按钮
+--关睜按钮
 function Profile_DressChoose_CloseClick()	
 
 	Profile_DressChoose_CleanUp()

@@ -200,10 +200,10 @@ function Biwuzhaoqin_Vote_Refresh_Clicked()
 	end
 	g_Biwuzhaoqin_Vote_ButtonLastTime = curTime;
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "AskVoteInfo" ); 	-- 函数名
-		Set_XSCRIPT_ScriptID( 792107 );					-- 脚本编号
+		Set_XSCRIPT_Function_Name( "AskVoteInfo" ); 	-- ???
+		Set_XSCRIPT_ScriptID( 792107 );					-- ????
 		Set_XSCRIPT_Parameter(0, g_Biwuzhaoqin_Vote_TargetId)
-		Set_XSCRIPT_ParamCount( 1 );						-- 参数个数
+		Set_XSCRIPT_ParamCount( 1 );						-- ????
 	Send_XSCRIPT()
 	g_Position_Scroll = Biwuzhaoqin_Vote_List:GetScrollPosition()
 end
@@ -217,11 +217,11 @@ function Biwuzhaoqin_Vote_VoteClicked(nIdx)
 	end  
 	local guid 	    = tblinfo[nIdx].guid
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "OnVote" ); 	-- 函数名
-		Set_XSCRIPT_ScriptID( 792107 );						-- 脚本编号
+		Set_XSCRIPT_Function_Name( "OnVote" ); 	-- ???
+		Set_XSCRIPT_ScriptID( 792107 );						-- ????
 		Set_XSCRIPT_Parameter(0,guid)
 		Set_XSCRIPT_Parameter(1,0)
-		Set_XSCRIPT_ParamCount( 2 );						-- 参数个数
+		Set_XSCRIPT_ParamCount( 2 );						-- ????
 	Send_XSCRIPT()
 	g_Position_Scroll = Biwuzhaoqin_Vote_List:GetScrollPosition()
 end
@@ -241,11 +241,11 @@ function Biwuzhaoqin_Vote_ChaClicked(nIdx)
 	end
 	local guid 	    = tblinfo[nIdx].guid
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "OnGetVoteList" ); 	-- 函数名
-		Set_XSCRIPT_ScriptID( 792107 );						-- 脚本编号
+		Set_XSCRIPT_Function_Name( "OnGetVoteList" ); 	-- ???
+		Set_XSCRIPT_ScriptID( 792107 );						-- ????
 		Set_XSCRIPT_Parameter(0,g_Biwuzhaoqin_Vote_TargetId)
 		Set_XSCRIPT_Parameter(1,guid)
-		Set_XSCRIPT_ParamCount( 2 );						-- 参数个数
+		Set_XSCRIPT_ParamCount( 2 );						-- ????
 	Send_XSCRIPT()
 	g_Position_Scroll = Biwuzhaoqin_Vote_List:GetScrollPosition()
 end

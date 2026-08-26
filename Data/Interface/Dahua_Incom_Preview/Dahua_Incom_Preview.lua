@@ -4,8 +4,8 @@ local g_Dahua_Incom_Image
 -- PreLoad()
 --=========
 function Dahua_Incom_Preview_PreLoad()
-	this:RegisterEvent("OPEN_DAHUA_PREVIEW", true)--打开or刷新界面
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--进场景关闭界面
+	this:RegisterEvent("OPEN_DAHUA_PREVIEW", true)--??or????
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
 	this:RegisterEvent("ADJEST_UI_POS",false) 
 end

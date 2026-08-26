@@ -11,33 +11,33 @@ local g_DaHua_MainStory_Param3
 local g_DaHua_MainStory_StepInfo = {
  [1] = {nStart=20240801,nEnd=20240915,nMF=MF_2024_DH_PRIZE_1,nItemId=38003208,nItemNum=1,
 		mission={
-		 [1]={name="#{DHGS_240521_22}",misionid=2304,sceneId=0,x=159,z=109,npcname="ÆÐÌáÀÏ×æ"}, 
-		 [2]={name="#{DHGS_240521_23}",misionid=2305,sceneId=700,x=52,z=188,npcname="Îò¿Õ²ÐÄî"}, 
-		 [3]={name="#{DHGS_240521_24}",misionid=2306,sceneId=700,x=52,z=188,npcname="Îò¿Õ²ÐÄî"}, 
-		 [4]={name="#{DHGS_240521_25}",misionid=2307,sceneId=701,x=156,z=45,npcname="³ÁË¼µÄÖÁ×ð±¦"}, 
-		 [5]={name="#{DHGS_240521_26}",misionid=2308,sceneId=701,x=156,z=45,npcname="³ÁË¼µÄÖÁ×ð±¦"}, 
-		 [6]={name="#{DHGS_240521_27}",misionid=2309,sceneId=700,x=52,z=188,npcname="Îò¿Õ²ÐÄî"},
+		 [1]={name="#{DHGS_240521_22}",misionid=2304,sceneId=0,x=159,z=109,npcname="B° Ð« Lão T±"}, 
+		 [2]={name="#{DHGS_240521_23}",misionid=2305,sceneId=700,x=52,z=188,npcname="Ngµ Không Tàn Ni®m"}, 
+		 [3]={name="#{DHGS_240521_24}",misionid=2306,sceneId=700,x=52,z=188,npcname="Ngµ Không Tàn Ni®m"}, 
+		 [4]={name="#{DHGS_240521_25}",misionid=2307,sceneId=701,x=156,z=45,npcname="Tr¥m tß Ðích chí tôn Bäo"}, 
+		 [5]={name="#{DHGS_240521_26}",misionid=2308,sceneId=701,x=156,z=45,npcname="Tr¥m tß Ðích chí tôn Bäo"}, 
+		 [6]={name="#{DHGS_240521_27}",misionid=2309,sceneId=700,x=52,z=188,npcname="Ngµ Không Tàn Ni®m"},
 		},
  },
  [2] = {nStart=20240815,nEnd=20240915,nMF=MF_2024_DH_PRIZE_2,nItemId=38003209,nItemNum=1,
 		mission={
-		 [1]={name="#{DHGS_240521_28}",misionid=2311,sceneId=0,x=159,z=109,npcname="ÆÐÌáÀÏ×æ"},
-		 [2]={name="#{DHGS_240521_29}",misionid=2312,sceneId=701,x=55,z=38,npcname="ÌÆÉ®"},
-		 [3]={name="#{DHGS_240521_30}",misionid=2313,sceneId=701,x=82,z=97,npcname="ÌÆÉ®¡¤ÒÆ»êºó"},
-		 [4]={name="#{DHGS_240521_31}",misionid=2314,sceneId=701,x=82,z=97,npcname="ÌÆÉ®¡¤ÒÆ»êºó"},
-		 [5]={name="#{DHGS_240521_32}",misionid=2315,sceneId=701,x=75,z=94,npcname="ËïÎò¿Õ¡¤ÒÆ»êºó"},
-		 [6]={name="#{DHGS_240521_33}",misionid=2316,sceneId=701,x=75,z=94,npcname="ËïÎò¿Õ¡¤ÒÆ»êºó"},
+		 [1]={name="#{DHGS_240521_28}",misionid=2311,sceneId=0,x=159,z=109,npcname="B° Ð« Lão T±"},
+		 [2]={name="#{DHGS_240521_29}",misionid=2312,sceneId=701,x=55,z=38,npcname="Ðß¶ng Tång"},
+		 [3]={name="#{DHGS_240521_30}",misionid=2313,sceneId=701,x=82,z=97,npcname="Ðß¶ng Tång·Di H°n H§u"},
+		 [4]={name="#{DHGS_240521_31}",misionid=2314,sceneId=701,x=82,z=97,npcname="Ðß¶ng Tång·Di H°n H§u"},
+		 [5]={name="#{DHGS_240521_32}",misionid=2315,sceneId=701,x=75,z=94,npcname="Tôn Ngµ Không·Di H°n H§u"},
+		 [6]={name="#{DHGS_240521_33}",misionid=2316,sceneId=701,x=75,z=94,npcname="Tôn Ngµ Không·Di H°n H§u"},
 		},
  },
  [3] = {nStart=20240829,nEnd=20240915,nMF=MF_2024_DH_PRIZE_3,nItemId=38003210,nItemNum=1,
 		mission={
-		 [1]={name="#{DHGS_240521_34}",misionid=2321,sceneId=0,x=159,z=109,npcname="ÆÐÌáÀÏ×æ"}, 
-		 [2]={name="#{DHGS_240521_35}",misionid=2322,sceneId=0,x=159,z=109,npcname="ÆÐÌáÀÏ×æ"}, 
-		 [3]={name="#{DHGS_240521_36}",misionid=2323,sceneId=701,x=107,z=103,npcname="ÖÁ×ð±¦"}, 
-		 [4]={name="#{DHGS_240521_37}",misionid=2324,sceneId=701,x=107,z=103,npcname="ÖÁ×ð±¦"}, 
-		 [5]={name="#{DHGS_240521_38}",misionid=2325,sceneId=701,x=107,z=103,npcname="ÖÁ×ð±¦"}, 
-		 [6]={name="#{DHGS_240521_39}",misionid=2326,sceneId=702,x=109,z=184,npcname="×ÏÏ¼"},
-		 [7]={name="#{DHGS_240521_40}",misionid=2327,sceneId=702,x=109,z=186,npcname="ÖÁ×ð±¦"},
+		 [1]={name="#{DHGS_240521_34}",misionid=2321,sceneId=0,x=159,z=109,npcname="B° Ð« Lão T±"}, 
+		 [2]={name="#{DHGS_240521_35}",misionid=2322,sceneId=0,x=159,z=109,npcname="B° Ð« Lão T±"}, 
+		 [3]={name="#{DHGS_240521_36}",misionid=2323,sceneId=701,x=107,z=103,npcname="Chí tôn Bäo"}, 
+		 [4]={name="#{DHGS_240521_37}",misionid=2324,sceneId=701,x=107,z=103,npcname="Chí tôn Bäo"}, 
+		 [5]={name="#{DHGS_240521_38}",misionid=2325,sceneId=701,x=107,z=103,npcname="Chí tôn Bäo"}, 
+		 [6]={name="#{DHGS_240521_39}",misionid=2326,sceneId=702,x=109,z=184,npcname="TØ Hà"},
+		 [7]={name="#{DHGS_240521_40}",misionid=2327,sceneId=702,x=109,z=186,npcname="Chí tôn Bäo"},
 		},
  },
 }
@@ -51,7 +51,7 @@ function DaHua_MainStory_PreLoad()
 	-- ÓÎÏ··Ö±æÂÊ·¢ÉúÁË±ä»¯
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
 	
-	--Àë¿ª³¡¾°£¬×Ô¶¯¹Ø±Õ
+	--Àë¿ª³¡¾°£¬×Ô¶¯¹Ø± 
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)
 	
 	this:RegisterEvent("UPDATE_MAP",false)
@@ -651,7 +651,7 @@ function DaHua_MainStory_GetPrize_Clicked(nIndex)
 end
 
 --================================================
--- ¹Ø±Õ½çÃæ
+-- ¹Ø± ½çÃæ
 --================================================
 function DaHua_MainStory_Frame_Cancel_Clicked()
 	this:Hide()

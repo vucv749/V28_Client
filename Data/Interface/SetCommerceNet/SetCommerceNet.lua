@@ -78,7 +78,7 @@ function City_Road_CareEventHandle(careId, op, distance)
 		if(tonumber(careId) ~= g_clientNpcId) then
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(op == "distance" and tonumber(distance)>MAX_OBJ_DISTANCE or op=="destroy") then
 			this:Hide();
 		end
@@ -97,12 +97,12 @@ function City_Road_Update()
 				g_MembersCtl.list:AddNewItem(detailInfo[2],0,i-1);
 				g_MembersCtl.list:AddNewItem(tostring(detailInfo[1]),1,i-1);
 				g_MembersCtl.list:AddNewItem(detailInfo[3],2,i-1);
-				g_MembersCtl.list:SetRowTooltip(i-1, "ÒÑ»¥½¨ÉÌÏß");
+				g_MembersCtl.list:SetRowTooltip(i-1, "Dî H² Kiªn Thß½ng Tuyªn");
 			else
 				g_MembersCtl.list:AddNewItem(detailInfo[2],0,i-1,g_GrayColor);
 				g_MembersCtl.list:AddNewItem(tostring(detailInfo[1]),1,i-1,g_GrayColor);
 				g_MembersCtl.list:AddNewItem(detailInfo[3],2,i-1,g_GrayColor);
-				g_MembersCtl.list:SetRowTooltip(i-1, "Î´»¥½¨ÉÌÏß");
+				g_MembersCtl.list:SetRowTooltip(i-1, "V¸ H² Kiªn Thß½ng Tuyªn");
 			end
 		end
 	end
@@ -118,9 +118,9 @@ function City_Road_SelectChanged()
 end
 
 function City_Road_Clicked(idx)
-	if(1 == idx) then	--½¨Á¢
+	if(1 == idx) then	--??
 		City:DoCityRoad("create_show", g_clientNpcId);
-	elseif(2 == idx) then	--È¡Ïû
+	elseif(2 == idx) then	--??
 		City:DoConfirm(10, g_selIdx);
 	end
 end

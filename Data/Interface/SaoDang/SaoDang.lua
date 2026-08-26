@@ -5,8 +5,8 @@ local g_SaoDang_Level = 15
 -- OnLoad()
 --===============================================
 function SaoDang_PreLoad()
-	this:RegisterEvent("PLAYER_ENTERING_WORLD" );	-- ½øÈëworld
-	this:RegisterEvent("UNIT_LEVEL");				-- Éý¼¶
+	this:RegisterEvent("PLAYER_ENTERING_WORLD" );	-- ??world
+	this:RegisterEvent("UNIT_LEVEL");				-- ??
 end
 
 function SaoDang_OnLoad()

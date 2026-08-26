@@ -11,9 +11,9 @@ local g_ItemIndex = -1
 local g_BaodiIndex = -1
 local g_MAX = 100
 local g_NeedItem = {
-	[0] = 38002534,	--´ã»êËè
-	[1] = 38002533,	--´ã»êÒº
-	[2] = 38002532,	--´ã»êË®
+	[0] = 38002534,	--???
+	[1] = 38002533,	--???
+	[2] = 38002532,	--???
 }
 local g_NeedRMBItem = {
 	[1] = 38002541,	
@@ -50,12 +50,12 @@ local g_TypeText = {
 	[2] = "#{SHCX_20211229_30}";
 }
 local g_BaodiItem = {
-	[1] = {itemId = 38002633, nType = 2, baodi = 3,},--ÉñÊÞËøÁé·û¼Ñ
-	[2] = {itemId = 38002634, nType = 2, baodi = 4,},--ÉñÊÞËøÁé·ûÕä
-	[3] = {itemId = 38002635, nType = 2, baodi = 5,},--ÉñÊÞËøÁé·û¾ø
-	[4] = {itemId = 38002636, nType = 1, baodi = 3,},--»ÄÊÞËøÁé·û¼Ñ
-	[5] = {itemId = 38002637, nType = 1, baodi = 4,},--»ÄÊÞËøÁé·ûÕä
-	[6] = {itemId = 38002638, nType = 1, baodi = 5,},--»ÄÊÞËøÁé·û¾ø
+	[1] = {itemId = 38002633, nType = 2, baodi = 3,},--??????
+	[2] = {itemId = 38002634, nType = 2, baodi = 4,},--??????
+	[3] = {itemId = 38002635, nType = 2, baodi = 5,},--??????
+	[4] = {itemId = 38002636, nType = 1, baodi = 3,},--??????
+	[5] = {itemId = 38002637, nType = 1, baodi = 4,},--??????
+	[6] = {itemId = 38002638, nType = 1, baodi = 5,},--??????
 }
 --=========================================================
 -- ×¢²á´°¿Ú¹ØÐÄµÄËùÓÐÊÂ¼þ
@@ -72,8 +72,8 @@ function PetSoul_XiShuxing_PreLoad()
 	this:RegisterEvent("OBJECT_CARED_EVENT" ,false)
 	this:RegisterEvent("ADJEST_UI_POS" ,false)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED" ,false)
-	this:RegisterEvent("UNIT_MONEY" ,false)					--½ðÇ®±ä»¯
-	this:RegisterEvent("MONEYJZ_CHANGE" ,false)					--½»×Ó±ä»¯
+	this:RegisterEvent("UNIT_MONEY" ,false)					--????
+	this:RegisterEvent("MONEYJZ_CHANGE" ,false)					--????
 end
 
 --=========================================================
@@ -125,7 +125,7 @@ function PetSoul_XiShuxing_OnEvent(event)
 		g_CaredNpc = DataPool : GetNPCIDByServerID(xx);
 		AxTrace(0,1,"xx="..xx .. " g_CaredNpc="..g_CaredNpc)
 		if g_CaredNpc == -1 then
-			PushDebugMessage("server´«¹ýÀ´µÄÊý¾ÝÓÐÎÊÌâ¡£");
+			PushDebugMessage("Dæ li®u máy chü có v¤n ð«");
 			return;
 		end
 
@@ -198,11 +198,11 @@ end
 function PetSoul_XiShuxing_FlushWindow() 
 	
 	local iQual = Pet:LuaFnGetPetSoulData(g_BagIndex, "QUAL")
-	if iQual == 0 then--ÁéÊÞ
+	if iQual == 0 then--??
 		iRealExtensionCount = 4
-	elseif iQual == 1 then--ÒìÊÞ
+	elseif iQual == 1 then--??
 		iRealExtensionCount = 5
-	elseif iQual == 2 or iQual == 3 then--ÉñÊÞ
+	elseif iQual == 2 or iQual == 3 then--??
 		iQual = 2
 		iRealExtensionCount = 6
 	end	
@@ -210,11 +210,11 @@ function PetSoul_XiShuxing_FlushWindow()
 
 	for i = 1, iRealExtensionCount do
 		g_CheckButton[i]:SetProperty("Disabled", "False");
-		if iQual == 0 then--ÁéÊÞ
+		if iQual == 0 then--??
 			g_CheckButton[i]:SetToolTip("#{SHCX_20211229_34}")
-		elseif iQual == 1 then--ÒìÊÞ
+		elseif iQual == 1 then--??
 			g_CheckButton[i]:SetToolTip(ScriptGlobal_Format("#{SHCX_20211229_36}", g_Total[1], g_AvailableLockNum[1]))
-		elseif iQual == 2 or iQual == 3 then--ÉñÊÞ
+		elseif iQual == 2 or iQual == 3 then--??
 			g_CheckButton[i]:SetToolTip(ScriptGlobal_Format("#{SHCX_20211229_35}", g_Total[2], g_AvailableLockNum[2]))
 		end	
 	end
@@ -378,11 +378,11 @@ function PetSoul_XiShuxing_UpdatePetSoul(itemIndex, isConfirm)
 		g_nBeforePerfect = 0
 		local iRealExtensionCount = 0
 		local iQual = Pet:LuaFnGetPetSoulData(itemIndex, "QUAL")
-		if iQual == 0 then--ÁéÊÞ
+		if iQual == 0 then--??
 			iRealExtensionCount = 4
-		elseif iQual == 1 then--ÒìÊÞ
+		elseif iQual == 1 then--??
 			iRealExtensionCount = 5
-		elseif iQual == 2 or iQual == 3 then--ÉñÊÞ
+		elseif iQual == 2 or iQual == 3 then--??
 			iQual = 2
 			iRealExtensionCount = 6
 		end	
@@ -391,17 +391,17 @@ function PetSoul_XiShuxing_UpdatePetSoul(itemIndex, isConfirm)
 
 		for i = 1, iRealExtensionCount do
 			g_CheckButton[i]:SetProperty("Disabled", "False");
-			if iQual == 0 then--ÁéÊÞ
+			if iQual == 0 then--??
 				g_CheckButton[i]:SetToolTip("#{SHCX_20211229_34}")
-			elseif iQual == 1 then--ÒìÊÞ
+			elseif iQual == 1 then--??
 				g_CheckButton[i]:SetToolTip(ScriptGlobal_Format("#{SHCX_20211229_36}", g_Total[1], g_AvailableLockNum[1]))
-			elseif iQual == 2 or iQual == 3 then--ÉñÊÞ
+			elseif iQual == 2 or iQual == 3 then--??
 				g_CheckButton[i]:SetToolTip(ScriptGlobal_Format("#{SHCX_20211229_35}", g_Total[2], g_AvailableLockNum[2]))
 			end	
 		end
 
 		
-		----------------------------------------------------------------------------------Ã»Ï´¹ýÇÒ²ÛÎ»¿Õ
+		----------------------------------------------------------------------------------Ã»Ï´¹ýÇÒ²ÛÎ»¿ 
 		if g_Already ~= 1 and g_BagIndex < 0 then
 
 			PetSoul_XiShuxing_BeforeIcon:SetActionItem(theAction:GetID())
@@ -452,7 +452,7 @@ function PetSoul_XiShuxing_UpdatePetSoul(itemIndex, isConfirm)
 		------------------------------------------------------------------------------------------ÒÑ¾­Ï´ÁË
 		elseif g_Already == 1 and g_BagIndex >= 0 then
 
-			if isConfirm == 0 then--¶þ´ÎÈ·ÈÏ
+			if isConfirm == 0 then--????
 				PushEvent("PETSOUL_XISHUXING_CONFIRM", 3, itemIndex)
 			else
 				LifeAbility:Lock_Packet_Item(g_BagIndex, 0)
@@ -532,7 +532,7 @@ function PetSoul_XiShuxing_ShowResult()
 	--Ë¢ÐÂµÀ¾ß
 	if g_ItemIndex >= 0 then
 
-		local itemId = PlayerPackage : GetItemTableIndex(g_ItemIndex) --Ã»ÓÐÁË·µ»Ø-1
+		local itemId = PlayerPackage : GetItemTableIndex(g_ItemIndex) --?????-1
 		if itemId <= 0 then
 			if g_ItemIndex >= 0 then
 				LifeAbility:Lock_Packet_Item(g_ItemIndex, 0)
@@ -564,7 +564,7 @@ function PetSoul_XiShuxing_ShowResult()
 	end
 	if g_BaodiIndex >= 0 then
 
-		local itemId = PlayerPackage : GetItemTableIndex(g_BaodiIndex) --Ã»ÓÐÁË·µ»Ø-1
+		local itemId = PlayerPackage : GetItemTableIndex(g_BaodiIndex) --?????-1
 		if itemId <= 0 then
 			if g_BaodiIndex >= 0 then
 				LifeAbility:Lock_Packet_Item(g_BaodiIndex, 0)
@@ -767,7 +767,7 @@ function PetSoul_XiShuxing_OK_Clicked()
 end
 
 --=========================================================
--- ¹Ø±Õ½çÃæ
+-- ¹Ø± ½çÃæ
 --=========================================================
 --=========================================================
 -- ½çÃæÒþ²Ø
@@ -795,7 +795,7 @@ end
 
 --=========================================================
 -- ¿ªÊ¼¹ØÐÄNPC£¬
--- ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
+-- ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
 -- Èç¹ûÓÐµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓÐµÄ¡°¹ØÐÄ¡±
 --=========================================================
 function BeginCareObject_PetSoul_XiShuxing()
@@ -919,13 +919,13 @@ function PetSoul_XiShuxing_CheckButtonClicked( idx )
 	--ÊÇ·ñÊÇÉñÊÞÒìÊÞ
 	local iRealExtensionCount = 0
 	local iQual = Pet:LuaFnGetPetSoulData(g_BagIndex, "QUAL")
-	if iQual == 0 then--ÁéÊÞ
+	if iQual == 0 then--??
 		g_CheckButton[idx]:SetCheck(0)
 		PushDebugMessage("#{SHCX_20211229_37}")
 		return
-	elseif iQual == 1 then--ÒìÊÞ
+	elseif iQual == 1 then--??
 		iRealExtensionCount = 5
-	elseif iQual == 2 or iQual == 3 then--ÉñÊÞ
+	elseif iQual == 2 or iQual == 3 then--??
 		iQual = 2
 		iRealExtensionCount = 6
 	end	
@@ -934,7 +934,7 @@ function PetSoul_XiShuxing_CheckButtonClicked( idx )
 		g_CheckButton[idx]:SetCheck(0)
 		return
 	end
-	--ÒÑ¾­µãÁËÇå¿Õ
+	--ÒÑ¾­µãÁËÇå¿ 
 	if g_IsLock[idx] == 1 then
 		g_IsLock[idx] = 0
 		g_CheckButton[idx]:SetCheck(0)

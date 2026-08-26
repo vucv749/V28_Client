@@ -42,7 +42,7 @@ function PanDa_Shop_PreLoad()
 	this:RegisterEvent("ADJEST_UI_POS", false)
 	this:RegisterEvent("OBJECT_CARED_EVENT", false)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED", false)
-	this:RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- 离开场景
+	this:RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- ????
 
 end
 
@@ -88,7 +88,7 @@ end
 --=========================================================
 function PanDa_Shop_OnEvent(event)
 
-	if (event == "UI_COMMAND" and tonumber(arg0) == 89312001) then --打开界面
+	if (event == "UI_COMMAND" and tonumber(arg0) == 89312001) then --????
 		g_Step1 = Get_XParam_INT(0)
 		g_Step2 = Get_XParam_INT(1)
 		g_TargetId = Get_XParam_INT(2)
@@ -173,7 +173,7 @@ end
 
 
 --=========================================================
--- 关闭界面
+-- 关睜界面
 --=========================================================
 function PanDa_ShopOnHiden()
 	if g_ObjCared ~= -1 then

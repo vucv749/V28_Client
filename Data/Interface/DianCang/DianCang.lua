@@ -4,21 +4,21 @@
 -- ============================================
 
 -- UI¿Ø¼şÒıÓÃ
-local g_frameUnifiedPosition          -- Ö÷´°¿ÚÍ³Ò»Î»ÖÃ
-local g_tabButtons = {}               -- ·ÖÒ³°´Å¥Êı×é
-local g_currentPage = -1              -- µ±Ç°·ÖÒ³Ë÷Òı (1-4)
-local g_monsterSlots = {}             -- ¹ÖÎïÕ¹Ê¾²ÛÎ»
-local g_monsterNames = {}             -- ¹ÖÎïÃû³ÆÎÄ±¾¿Ø¼ş
-local g_activateButtons = {}          -- ¼¤»î°´Å¥
-local g_teleportButtons = {}          -- Ç°Íù°´Å¥
-local g_activatedIcons = {}           -- ÒÑ¼¤»îÍ¼±ê
-local g_currentGroupIndex = 0         -- µ±Ç°Ñ¡ÖĞµÄ·Ö×éË÷Òı
-local g_currentSubPage                -- µ±Ç°×ÓÒ³Ãæ (ÓÃÓÚ³¬¹ı8¸ö¹ÖÎïÊ±·­Ò³)
+local g_frameUnifiedPosition          -- ???????
+local g_tabButtons = {}               -- ??????
+local g_currentPage = -1              -- ?????? (1-4)
+local g_monsterSlots = {}             -- ??????
+local g_monsterNames = {}             -- ????????
+local g_activateButtons = {}          -- ????
+local g_teleportButtons = {}          -- ????
+local g_activatedIcons = {}           -- ?????
+local g_currentGroupIndex = 0         -- ?????????
+local g_currentSubPage                -- ????? (????8??????)
 
 -- ÉãÏñ»ú²ÎÊıË÷Òı³£Á¿
-local CAMERA_HEIGHT = 1               -- ÉãÓ°»ú¸ß¶È
-local CAMERA_DISTANCE = 2             -- ÉãÓ°»ú¾àÀë
-local CAMERA_PITCH = 3                -- ÉãÓ°»ú½Ç¶È
+local CAMERA_HEIGHT = 1               -- ?????
+local CAMERA_DISTANCE = 2             -- ?????
+local CAMERA_PITCH = 3                -- ?????
 
 -- ÊôĞÔ¼¼ÄÜIDÓ³Éä±í (·ÖÒ³1-4)
 local g_attrSkillIds_Page1 = {
@@ -107,12 +107,12 @@ local g_attrSkillIds_Page4 = {
 }
 
 -- ÊôĞÔÏÔÊ¾¿Ø¼şºÍÉı¼¶°´Å¥
-local g_attrDisplayLabels = {}        -- ÊôĞÔÏÔÊ¾ÎÄ±¾
-local g_upgradeButtons = {}           -- Éı¼¶°´Å¥
+local g_attrDisplayLabels = {}        -- ??????
+local g_upgradeButtons = {}           -- ????
 
 -- ¹ÖÎïÄ£ĞÍÏà¹Ø
-local g_monsterModelIds = {}          -- ¹ÖÎïÄ£ĞÍIDÓ³Éä±í (CharMount ID´Ó1000¿ªÊ¼)
-local g_fakeObjectSlots = {}          -- 3DÄ£ĞÍÏÔÊ¾¿Ø¼ş
+local g_monsterModelIds = {}          -- ????ID??? (CharMount ID?1000??)
+local g_fakeObjectSlots = {}          -- 3D??????
 
 -- ============================================
 -- Ô¤¼ÓÔØ - ×¢²áÊÂ¼ş
@@ -163,7 +163,7 @@ function DianCang_OnLoad()
 	g_tabButtons[3] = DianCang_FenYe3
 	g_tabButtons[4] = DianCang_FenYe4
 	
-	-- ³õÊ¼»¯8¸ö¹ÖÎïÕ¹Ê¾²ÛÎ»µÄ¿Ø¼şÒıÓÃ
+	-- ³õÊ¼»¯8¸ö¹ÖÎï ¹Ê¾²ÛÎ»µÄ¿Ø¼şÒıÓÃ
 	for slotIndex = 1, 8 do
 		g_fakeObjectSlots[slotIndex] = _G[string.format("DianCang_FakeObj%d", slotIndex)]
 		g_monsterSlots[slotIndex] = _G[string.format("DianCang_CFK_%d", slotIndex)]
@@ -248,7 +248,7 @@ function DianCang_qianwangFunc(slotIndex)
 end
 
 -- ============================================
--- ½çÃæ¹Ø±Õ
+-- ½çÃæ¹Ø± 
 -- ============================================
 function DianCang_Hide()
 	DianCang_Close()
@@ -333,7 +333,7 @@ function DianCang_OnGroupSelected(pageOverride, groupOverride, subPageOverride)
 		return
 	end
 
-	-- Çå¿ÕËùÓĞÕ¹Ê¾²ÛÎ»
+	-- Çå¿ ËùÓĞ ¹Ê¾²ÛÎ»
 	for slotIndex = 1, 8 do
 		g_monsterSlots[slotIndex]:Hide()
 		DianCang_ClearMonsterModel(slotIndex)
@@ -344,7 +344,7 @@ function DianCang_OnGroupSelected(pageOverride, groupOverride, subPageOverride)
 		g_attrDisplayLabels[slotIndex]:Hide()
 		g_upgradeButtons[slotIndex]:Hide()
 		g_upgradeButtons[slotIndex]:Enable()
-		g_upgradeButtons[slotIndex]:SetText("Éı¼¶")
+		g_upgradeButtons[slotIndex]:SetText("Thång c¤p")
 		
 		g_fakeObjectSlots[slotIndex]:Disable()
 	end
@@ -355,7 +355,7 @@ function DianCang_OnGroupSelected(pageOverride, groupOverride, subPageOverride)
 	
 	if selectedIndex <= 0 then return end
 	
-	local monsterCount = GetDianCangGroupCount(g_currentPage, selectedIndex) --»ñÈ¡¹ÖÎïÊıÁ¿
+	local monsterCount = GetDianCangGroupCount(g_currentPage, selectedIndex) --??????
 	local monsterNameProxy = CreateMonsterNameProxy(g_currentPage)
 	local requiredNumProxy = CreateMonsterRequiredNumProxy(g_currentPage)
 	
@@ -447,9 +447,9 @@ function DianCang_ShowMonsterSlot(slotIndex, groupIndex, monsterIndex, nameProxy
 	DianCang_SetMonsterModel(slotIndex, g_currentPage, groupIndex, monsterIndex)
 	
 	local attrGroupIndex = groupIndex + attrOffset
-	local attrIndex = GetDianCangAttrIndex(attrGroupIndex, monsterIndex)	--»ñÈ¡ÊôĞÔË÷Òı
-	local attrValue = GetDianCangAttrValue(attrGroupIndex, monsterIndex) --»ñÈ¡ÊôĞÔÖµ
-	local attrName = GetDianCangAttrName(attrIndex)	--»ñÈ¡ÊôĞÔÃû³Æ
+	local attrIndex = GetDianCangAttrIndex(attrGroupIndex, monsterIndex)	--??????
+	local attrValue = GetDianCangAttrValue(attrGroupIndex, monsterIndex) --?????
+	local attrName = GetDianCangAttrName(attrIndex)	--??????
 	
 	if activationLevel > 0 then
 		-- ÒÑ¼¤»î×´Ì¬
@@ -458,7 +458,7 @@ function DianCang_ShowMonsterSlot(slotIndex, groupIndex, monsterIndex, nameProxy
 		g_activatedIcons[slotIndex]:Show()
 		g_fakeObjectSlots[slotIndex]:Enable()
 		local totalAttrValue = attrValue * activationLevel
-		g_fakeObjectSlots[slotIndex]:SetToolTip("#W¸Ãµä²ØÒÑ¼¤»î#r#G" .. attrName .. "" .. totalAttrValue)
+		g_fakeObjectSlots[slotIndex]:SetToolTip("#WCAi Ği¬n Tàng Dî kích hoÕt#r#G" .. attrName .. "" .. totalAttrValue)
 		g_attrDisplayLabels[slotIndex]:Show()
 		g_attrDisplayLabels[slotIndex]:SetText("#G" .. attrName .. "" .. totalAttrValue)
 		
@@ -470,12 +470,12 @@ function DianCang_ShowMonsterSlot(slotIndex, groupIndex, monsterIndex, nameProxy
 		-- Âú¼¶¼ì²é (µÈ¼¶>8ÎªÂú¼¶)
 		if activationLevel > 8 then
 			g_upgradeButtons[slotIndex]:Disable()
-			g_upgradeButtons[slotIndex]:SetText("ÒÑÂú¼¶")
+			g_upgradeButtons[slotIndex]:SetText("Dî Mãn C¤p")
 		end
 	else
 		-- Î´¼¤»î×´Ì¬ - ÏÔÊ¾¼¤»îÌõ¼şÌáÊ¾
 		if attrName and attrName ~= "" and numProxy[groupIndex][monsterIndex] then
-			local tooltipText = "#cff9966¼¤»îÊôĞÔ£º#r#W" .. attrName .. "" .. attrValue .. "#r#cff9966¼¤»î²ÄÁÏ£º#r#W" .. nameProxy[groupIndex][monsterIndex] .. "*" .. numProxy[groupIndex][monsterIndex] .. "#r#{_EXCHG100000}"
+			local tooltipText = "#cff9966kích hoÕt thuµc tính: #r#W" .. attrName .. "" .. attrValue .. "#r#cff9966kích hoÕt tài li®u: #r#W" .. nameProxy[groupIndex][monsterIndex] .. "*" .. numProxy[groupIndex][monsterIndex] .. "#r#{_EXCHG100000}"
 			g_fakeObjectSlots[slotIndex]:SetToolTip(tooltipText)
 		end
 	end
@@ -500,7 +500,7 @@ function DianCang_UpdateSlotAttribute(slotIndex, attrGroupIndex, groupIndex, nam
 		g_activatedIcons[slotIndex]:Show()
 		g_fakeObjectSlots[slotIndex]:Enable()
 		local totalAttrValue = attrValue * activationLevel
-		g_fakeObjectSlots[slotIndex]:SetToolTip("#W¸Ãµä²ØÒÑ¼¤»î#r#G" .. attrName .. "" .. totalAttrValue)
+		g_fakeObjectSlots[slotIndex]:SetToolTip("#WCAi Ği¬n Tàng Dî kích hoÕt#r#G" .. attrName .. "" .. totalAttrValue)
 		g_attrDisplayLabels[slotIndex]:Show()
 		g_attrDisplayLabels[slotIndex]:SetText("#G" .. attrName .. "" .. totalAttrValue)
 		
@@ -510,12 +510,12 @@ function DianCang_UpdateSlotAttribute(slotIndex, attrGroupIndex, groupIndex, nam
 		
 		if activationLevel > 8 then
 			g_upgradeButtons[slotIndex]:Disable()
-			g_upgradeButtons[slotIndex]:SetText("ÒÑÂú¼¶")
+			g_upgradeButtons[slotIndex]:SetText("Dî Mãn C¤p")
 		end
 	else
 		-- Î´¼¤»î×´Ì¬
 		if numProxy[groupIndex] and numProxy[groupIndex][slotIndex] and nameProxy[groupIndex][slotIndex] then
-			local tooltipText = "#cff9966¼¤»îÊôĞÔ£º#r#W" .. attrName .. "" .. attrValue .. "#r#cff9966¼¤»î²ÄÁÏ£º#r#W" .. nameProxy[groupIndex][slotIndex] .. "*" .. numProxy[groupIndex][slotIndex] .. "#r#{_EXCHG100000}"
+			local tooltipText = "#cff9966kích hoÕt thuµc tính: #r#W" .. attrName .. "" .. attrValue .. "#r#cff9966kích hoÕt tài li®u: #r#W" .. nameProxy[groupIndex][slotIndex] .. "*" .. numProxy[groupIndex][slotIndex] .. "#r#{_EXCHG100000}"
 			g_fakeObjectSlots[slotIndex]:SetToolTip(tooltipText)
 		end
 	end
@@ -576,7 +576,7 @@ function DianCang_OnTabClick(tabIndex)
 	end
 	g_tabButtons[tabIndex]:SetCheck(1)
 	
-	-- Çå¿Õ²¢ÖØĞÂÌî³ä·Ö×éÁĞ±í
+	-- Çå¿ ²¢ÖØĞÂÌî³ä·Ö×éÁĞ±í
 	DianCang_List:ClearListBox()
 	local groupCount = GetDianCangFenYeGroupCount(tabIndex)
 	for groupIndex = 1, groupCount do
@@ -598,11 +598,11 @@ end
 -- ============================================
 function DianCang_JH_Click(slotIndex)
 	if g_currentPage == -1 then
-		PushDebugMessage("Î´Öª´íÎó ÇëÖØĞÂ´ò¿ª½çÃæ")
+		PushDebugMessage("Không biªt sai l¥m Thïnh mµt l¥n næa Tá Khai m£t biên")
 		return
 	end
 	if g_currentGroupIndex < 1 then
-		PushDebugMessage("Î´Öª´íÎó ÇëÖØĞÂ´ò¿ª½çÃæ")
+		PushDebugMessage("Không biªt sai l¥m Thïnh mµt l¥n næa Tá Khai m£t biên")
 		return
 	end
 	
@@ -614,7 +614,7 @@ function DianCang_JH_Click(slotIndex)
 	Set_XSCRIPT_Parameter(1, g_currentGroupIndex)
 	Set_XSCRIPT_Parameter(2, slotIndex)
 	Set_XSCRIPT_Parameter(3, g_currentSubPage)
-	Set_XSCRIPT_Parameter(4, 1)  -- ²Ù×÷ÀàĞÍ: 1=¼¤»î
+	Set_XSCRIPT_Parameter(4, 1)  -- ????: 1=??
 	Set_XSCRIPT_ParamCount(5)
 	Send_XSCRIPT()
 end
@@ -624,11 +624,11 @@ end
 -- ============================================
 function DianCang_SJ_Click(slotIndex)
 	if g_currentPage == -1 then
-		PushDebugMessage("Î´Öª´íÎó ÇëÖØĞÂ´ò¿ª½çÃæ")
+		PushDebugMessage("Không biªt sai l¥m Thïnh mµt l¥n næa Tá Khai m£t biên")
 		return
 	end
 	if g_currentGroupIndex < 1 then
-		PushDebugMessage("Î´Öª´íÎó ÇëÖØĞÂ´ò¿ª½çÃæ")
+		PushDebugMessage("Không biªt sai l¥m Thïnh mµt l¥n næa Tá Khai m£t biên")
 		return
 	end
 	
@@ -640,7 +640,7 @@ function DianCang_SJ_Click(slotIndex)
 	Set_XSCRIPT_Parameter(1, g_currentGroupIndex)
 	Set_XSCRIPT_Parameter(2, slotIndex)
 	Set_XSCRIPT_Parameter(3, g_currentSubPage)
-	Set_XSCRIPT_Parameter(4, 2)  -- ²Ù×÷ÀàĞÍ: 2=Éı¼¶
+	Set_XSCRIPT_Parameter(4, 2)  -- ????: 2=??
 	Set_XSCRIPT_ParamCount(5)
 	Send_XSCRIPT()
 end
@@ -702,7 +702,7 @@ function DianCang_UpdateTotalAttrTooltip()
 	end
 	
 	-- Éú³ÉĞü¸¡ÌáÊ¾ÎÄ±¾
-	local tooltipText = "ÒÑ¼¤»îµä²ØÔö¼Ó×ÜÊôĞÔ:#G"
+	local tooltipText = "Dî kích hoÕt Ği¬n Tàng gia tång T±ng thuµc tính: #G"
 	local hasAttr = false
 	
 	-- °´ÊôĞÔIDÅÅĞòÊä³ö
@@ -722,7 +722,7 @@ function DianCang_UpdateTotalAttrTooltip()
 	end
 	
 	if not hasAttr then
-		tooltipText = "ÒÑ¼¤»îµä²ØÔö¼Ó×ÜÊôĞÔ:#r#WÔİÎŞÒÑ¼¤»îÊôĞÔ"
+		tooltipText = "Dî kích hoÕt Ği¬n Tàng gia tång T±ng thuµc tính: #r#WT?m Vô Dî kích hoÕt thuµc tính"
 	end
 	
 	-- ¸üĞÂĞü¸¡ÌáÊ¾

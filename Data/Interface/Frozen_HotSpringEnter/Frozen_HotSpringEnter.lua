@@ -53,7 +53,7 @@ function Frozen_HotSpringEnter_OnEvent(event)
 		end
 		Frozen_HotSpringEnter_Open()
 	elseif (event == "UI_COMMAND" and tonumber(arg0) == 99957404) then
-		AutoRuntoTargetExWithName(92, 126, 728, "Ğ¡ÍÃÍÃ")
+		AutoRuntoTargetExWithName(92, 126, 728, "Ti¬u Th¯ Th¯")
 		Frozen_HotSpringEnter_OnClose()
 	end
     -- ÓÎÏ·´°¿Ú³ß´ç·¢ÉúÁË±ä»¯

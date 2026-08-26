@@ -4,54 +4,54 @@ local m_ObjCared = -1
 local m_slotItem = {-1 , -1 ,-1}
 local m_itemAction = {}
 local m_SlotDirty = {0 , 0 , 0}
-local INDEX_ATTRUP_BEGIN	= 20310122	--»ÛªÍ Ø°§”˘£®1º∂£©
-local INDEX_ATTRUP_END		= 20310157	--»ÛªÍ Ø°§±©£®9º∂£©
+local INDEX_ATTRUP_BEGIN	= 20310122	--???∑?(1?)
+local INDEX_ATTRUP_END		= 20310157	--???∑?(9?)
 local g_RunHunShi = { 
 	
 	{
-		20310122,	--»ÛªÍ Ø°§”˘£®1º∂£©
-		20310123,	--»ÛªÍ Ø°§”˘£®2º∂£©
-		20310124,	--»ÛªÍ Ø°§”˘£®3º∂£©
-		20310125,	--»ÛªÍ Ø°§”˘£®4º∂£©
-		20310126,	--»ÛªÍ Ø°§”˘£®5º∂£©
-		20310127,	--»ÛªÍ Ø°§”˘£®6º∂£©
-		20310128,	--»ÛªÍ Ø°§”˘£®7º∂£©
-		20310129,	--»ÛªÍ Ø°§”˘£®8º∂£©
-		20310130,	--»ÛªÍ Ø°§”˘£®9º∂£©
+		20310122,	--???∑?(1?)
+		20310123,	--???∑?(2?)
+		20310124,	--???∑?(3?)
+		20310125,	--???∑?(4?)
+		20310126,	--???∑?(5?)
+		20310127,	--???∑?(6?)
+		20310128,	--???∑?(7?)
+		20310129,	--???∑?(8?)
+		20310130,	--???∑?(9?)
 	},
 	{
-		20310131,	--»ÛªÍ Ø°§ª˜£®1º∂£©
-		20310132,	--»ÛªÍ Ø°§ª˜£®2º∂£©
-		20310133,	--»ÛªÍ Ø°§ª˜£®3º∂£©
-		20310134,	--»ÛªÍ Ø°§ª˜£®4º∂£©
-		20310135,	--»ÛªÍ Ø°§ª˜£®5º∂£©
-		20310136,	--»ÛªÍ Ø°§ª˜£®6º∂£©
-		20310137,	--»ÛªÍ Ø°§ª˜£®7º∂£©
-		20310138,	--»ÛªÍ Ø°§ª˜£®8º∂£©
-		20310139,	--»ÛªÍ Ø°§ª˜£®9º∂£©
+		20310131,	--???∑?(1?)
+		20310132,	--???∑?(2?)
+		20310133,	--???∑?(3?)
+		20310134,	--???∑?(4?)
+		20310135,	--???∑?(5?)
+		20310136,	--???∑?(6?)
+		20310137,	--???∑?(7?)
+		20310138,	--???∑?(8?)
+		20310139,	--???∑?(9?)
 	},
 	{
-		20310140,	--»ÛªÍ Ø°§∆∆£®1º∂£©
-		20310141,	--»ÛªÍ Ø°§∆∆£®2º∂£©
-		20310142,	--»ÛªÍ Ø°§∆∆£®3º∂£©
-		20310143,	--»ÛªÍ Ø°§∆∆£®4º∂£©
-		20310144,	--»ÛªÍ Ø°§∆∆£®5º∂£©
-		20310145,	--»ÛªÍ Ø°§∆∆£®6º∂£©
-		20310146,	--»ÛªÍ Ø°§∆∆£®7º∂£©
-		20310147,	--»ÛªÍ Ø°§∆∆£®8º∂£©
-		20310148,	--»ÛªÍ Ø°§∆∆£®9º∂£©
+		20310140,	--???∑?(1?)
+		20310141,	--???∑?(2?)
+		20310142,	--???∑?(3?)
+		20310143,	--???∑?(4?)
+		20310144,	--???∑?(5?)
+		20310145,	--???∑?(6?)
+		20310146,	--???∑?(7?)
+		20310147,	--???∑?(8?)
+		20310148,	--???∑?(9?)
 	},
 
 	{
-		20310149,	--»ÛªÍ Ø°§±©£®1º∂£©
-		20310150,	--»ÛªÍ Ø°§±©£®2º∂£©
-		20310151,	--»ÛªÍ Ø°§±©£®3º∂£©
-		20310152,	--»ÛªÍ Ø°§±©£®4º∂£©
-		20310153,	--»ÛªÍ Ø°§±©£®5º∂£©
-		20310154,	--»ÛªÍ Ø°§±©£®6º∂£©
-		20310155,	--»ÛªÍ Ø°§±©£®7º∂£©
-		20310156,	--»ÛªÍ Ø°§±©£®8º∂£©
-		20310157,	--»ÛªÍ Ø°§±©£®9º∂£©
+		20310149,	--???∑?(1?)
+		20310150,	--???∑?(2?)
+		20310151,	--???∑?(3?)
+		20310152,	--???∑?(4?)
+		20310153,	--???∑?(5?)
+		20310154,	--???∑?(6?)
+		20310155,	--???∑?(7?)
+		20310156,	--???∑?(8?)
+		20310157,	--???∑?(9?)
 	},
 }
 
@@ -121,28 +121,28 @@ function WuhunRH_Put_One(itemIdx , slot_id)
 	if theAction:GetID() ~= 0 then
 		local itemID = PlayerPackage:GetItemTableIndex(itemIdx)
 		if itemID < INDEX_ATTRUP_BEGIN or itemID > INDEX_ATTRUP_END then
-			PushDebugMessage("#{WH_090729_29}") -- ¥À¥¶÷ªƒ‹∑≈»Î»ÛªÍ Ø°£
+			PushDebugMessage("#{WH_090729_29}") -- ??????????
 			return
 		end
 
 		for i =1 ,4 do
 			if itemID == g_RunHunShi[i][9] then
-				PushDebugMessage("#{WH_090729_38}") -- »ÛªÍ Ø“—æ≠¥ÔµΩ◊Ó∏ﬂµ»º∂9º∂£¨≤ªƒ‹ºÃ–¯∫œ≥…°£
+				PushDebugMessage("#{WH_090729_38}") -- ???????????9?,???????
 				return
 			end
 		end
 
 		if PlayerPackage:IsLock( itemIdx ) == 1 then
-			PushDebugMessage("#{WH_090729_07}")	--»ÛªÍ Ø…œÀ¯¡À
+			PushDebugMessage("#{WH_090729_07}")	--??????
 			return
 		end
 
-		if slot_id == 0 then  --◊‘∂Ø—∞’“ø’∏Ò
+		if slot_id == 0 then  --??????
 			
 			
 			for i = 1, 3 do
 				if m_slotItem[i] > 0 and PlayerPackage:GetItemTableIndex(m_slotItem[i]) ~= itemID then
-					PushDebugMessage("#{WH_090729_39}")	--÷ª”–Õ¨÷÷¿‡–Õ°¢Õ¨÷÷µ»º∂µƒ»ÛªÍ Ø≤≈ƒ‹Ω¯––∫œ≥…°£
+					PushDebugMessage("#{WH_090729_39}")	--??????????????????????
 					return
 				end
 			end
@@ -152,7 +152,7 @@ function WuhunRH_Put_One(itemIdx , slot_id)
 
 
 			if level >= 5 and num >= 2 then
-				PushDebugMessage("#{WH_090817_03}")	--5º∂“‘…œ£®∞¸¿®5º∂£©µƒ»ÛªÍ ØΩˆ–Ë“™2ø≈º¥ø…∫œ≥…∏¸∏ﬂº∂±°£
+				PushDebugMessage("#{WH_090817_03}")	--5???(??5?)???????2??????????
 				return
 			end
 
@@ -172,7 +172,7 @@ function WuhunRH_Put_One(itemIdx , slot_id)
 		elseif slot_id == 1 or slot_id == 2 or slot_id == 3 then
 			for i = 1, 3 do
 				if i ~= slot_id and m_slotItem[i] > 0 and PlayerPackage:GetItemTableIndex(m_slotItem[i]) ~= itemID then
-					PushDebugMessage("#{WH_090729_39}")	--÷ª”–Õ¨÷÷¿‡–Õ°¢Õ¨÷÷µ»º∂µƒ»ÛªÍ Ø≤≈ƒ‹Ω¯––∫œ≥…°£
+					PushDebugMessage("#{WH_090729_39}")	--??????????????????????
 					return
 				end
 			end
@@ -185,7 +185,7 @@ function WuhunRH_Put_One(itemIdx , slot_id)
 				m_itemAction[slot_id]:SetActionItem(-1);	
 			else
 				if level >= 5 and num >= 2 then
-					PushDebugMessage("#{WH_090817_03}")	--5º∂“‘…œ£®∞¸¿®5º∂£©µƒ»ÛªÍ ØΩˆ–Ë“™2ø≈º¥ø…∫œ≥…∏¸∏ﬂº∂±°£
+					PushDebugMessage("#{WH_090817_03}")	--5???(??5?)???????2??????????
 					return
 				end
 			end
@@ -260,8 +260,8 @@ function WuhunRH_OK_Clicked()
 	local selfMoney = Player:GetData("MONEY") + Player:GetData("MONEY_JZ")
 	local level = WuhunRH_GetLevel()
 	local needMoney = 0
-	if level >=7 then		--¿≠ ’ º∂±øÿ÷∆ øÕªß∂À
-		PushDebugMessage("#{WH_090828_03}")		-- 5º∂“‘…œŒ¥ø™∑≈
+	if level >=7 then		--?? ???? ???
+		PushDebugMessage("#{WH_090828_03}")		-- 5??????
 		return
 	end
 	if level > 0 and level < 9 then
@@ -269,7 +269,7 @@ function WuhunRH_OK_Clicked()
 	end
 	
 	if selfMoney < needMoney then
-		PushDebugMessage("#{WH_090729_18}")   --∂‘≤ª∆£¨ƒ„…Ì…œΩ«Æ≤ª◊„£¨Œﬁ∑®ºÃ–¯Ω¯––°£
+		PushDebugMessage("#{WH_090729_18}")   --???,???????,???????
 		return
 	end
 		
@@ -282,7 +282,7 @@ function WuhunRH_OK_Clicked()
 			end			
 		end
 		if bindStatus == 1  then
-			PopComfirm_Alpha0("#{WH_090729_04}")  --∞Û∂®Ã· æ
+			PopComfirm_Alpha0("#{WH_090729_04}")  --????
 			isComfirmed = 1
 			return
 		end

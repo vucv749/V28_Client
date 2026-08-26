@@ -50,13 +50,13 @@ function TargetLingyu_OnEvent(event)
 		end
 		
 		if not CachedTarget:CanGetTargetEquip() then
-			PushDebugMessage("#{JSCK_90507_1}")				-- 距离该玩家太远，无法查看资料。
+			PushDebugMessage("#{JSCK_90507_1}")				-- ???????,???????
 			return
 		end
 		
 		local objCared = CachedTarget:GetData("NPCID", 1)
 		if type(objCared) ~= "number" then
-			PushDebugMessage ("#{JSCK_90507_1}")			-- 距离该玩家太远，无法查看资料。
+			PushDebugMessage ("#{JSCK_90507_1}")			-- ???????,???????
 			return
 		end
 		

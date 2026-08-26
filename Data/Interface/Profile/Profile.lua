@@ -11,7 +11,7 @@ local g_Profile_MaxBtn = 6
 local g_Profile_DressCurSel = 0
 local g_Profile_WeaponCurSel = 0
 local g_Profile_RideCurSel = 0
-local g_Profile_ViewMode = 0	--0ÊÇ½ÇÉ« 1ÊÇÉÏ×øÆï
+local g_Profile_ViewMode = 0	--0??? 1????
 
 local g_Profile_Tag_Text = {}
 local g_Profile_Dress_Btn = {}
@@ -27,11 +27,11 @@ local g_Distance = 1
 local g_Distance_Ori = 2
 local g_Distance_Max = 4
 
-local m_PlayerfashionDepotType = 1 	--²Ö¿âÀàÐÍ 1 Íæ¼ÒÊ±×°²Ö¿â 2 ×ÓÅ®Ê±×°²Ö¿â
+local m_PlayerfashionDepotType = 1 	--???? 1 ?????? 2 ??????
 
-local g_CameraHeight = 1     --ÉãÓ°»ú¸ß¶È
-local g_CameraDistance = 2   --ÉãÓ°»ú¾àÀë
-local g_CameraPitch = 3      --ÉãÓ°»ú½Ç¶È
+local g_CameraHeight = 1     --?????
+local g_CameraDistance = 2   --?????
+local g_CameraPitch = 3      --?????
 local g_CameraPosition =
 {
 	--Å®ÐÔÏà¹ØÎ»ÖÃ
@@ -122,7 +122,7 @@ function Profile_OnLoad()
 	g_Profile_Tag_Text[5] = Profile_Frame_Tag_TagText5
 	g_Profile_Tag_Text[6] = Profile_Frame_Tag_TagText6
 	
-	--Õ¹Ê¾
+	-- ¹Ê¾
 	g_Profile_Dress_Btn[1] = Profile_Frame_Dress_Object1
 	g_Profile_Dress_Btn[2] = Profile_Frame_Dress_Object2
 	g_Profile_Dress_Btn[3] = Profile_Frame_Dress_Object3
@@ -693,53 +693,53 @@ function Profile_OnPageClicked(idx)
 	Variable:SetVariable("PageNumber", tostring(idx), 1);
 	idx = g_PageOrder[idx]
 
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		Profile_SelfEquip_Down()
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		Profile_SelfData_Down()
-	elseif idx == 3 then--ÕäÊÞ
+	elseif idx == 3 then--??
 		Profile_Pet_Down()
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		Profile_Wuhun_Switch()
-	elseif idx == 5 then--ÐÞÁ¶
+	elseif idx == 5 then--??
 		Profile_Xiulian_Switch()
-	elseif idx == 6 then--ÎäµÀ
+	elseif idx == 6 then--??
 		Profile_Talent_Switch()
-	elseif idx == 7 then--ÁéÓñ
+	elseif idx == 7 then--??
 		Profile_Page_LingYu()
-	elseif idx == 8 then--Éñ±ø
+	elseif idx == 8 then--??
 		Profile_Page_ShenBing()
-	elseif idx == 9 then--µñÎÄ½ø½×
+	elseif idx == 9 then--????
 		Profile_Page_DWJinJie()
-	elseif idx == 10 then--áÛ·å
+	elseif idx == 10 then--??
 		Profile_Page_Peak()
-	elseif idx == 11 then--¸öÈË
+	elseif idx == 11 then--??
 		Profile_ClearPage()
-	elseif idx == 12 then--ÆäËû
+	elseif idx == 12 then--??
 		Profile_Other_Info_Switch()
 	end
 end
 
 function Profile_CheckPage(idx)
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--ÕäÊÞ
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--ÐÞÁ¶
+	elseif idx == 5 then--??
 		return 1
-	elseif idx == 6 then--ÎäµÀ
+	elseif idx == 6 then--??
 		return DataPool:Lua_CheckIsShowTalent()
-	elseif idx == 7 then--ÁéÓñ
+	elseif idx == 7 then--??
 		return 1
-	elseif idx == 8 then--Éñ±ø
+	elseif idx == 8 then--??
 		return 1
-	elseif idx == 9 then--µñÎÄ½ø½×
+	elseif idx == 9 then--????
 		return 1
-	elseif idx == 10 then--áÛ·å
+	elseif idx == 10 then--??
 
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
@@ -749,52 +749,52 @@ function Profile_CheckPage(idx)
 			return 1
 		end
 
-	elseif idx == 11 then--¸öÈË
+	elseif idx == 11 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 15 then
 			return 1
 		end
-	elseif idx == 12 then--ÆäËû
+	elseif idx == 12 then--??
 		return 1
 	end
 	return 0
 end
 
 function Profile_IsPageEnable(idx)
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--ÕäÊÞ
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--ÐÞÁ¶
+	elseif idx == 5 then--??
 		return 1
-	elseif idx == 6 then--ÎäµÀ
+	elseif idx == 6 then--??
 		return 1
-	elseif idx == 7 then--ÁéÓñ
+	elseif idx == 7 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 8 then--Éñ±ø
+	elseif idx == 8 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 65 then
 			return 1
 		end
-	elseif idx == 9 then--µñÎÄ½ø½×
+	elseif idx == 9 then--????
 		return 1
-	elseif idx == 10 then--áÛ·å
+	elseif idx == 10 then--??
 
 
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 11 then--¸öÈË
+	elseif idx == 11 then--??
 		return 1
-	elseif idx == 12 then--ÆäËû
+	elseif idx == 12 then--??
 		return 1
 	end
 	return 0
@@ -829,7 +829,7 @@ function Profile_SelfData_Down()
 
 end
 
---ÏÔÊ¾ÕäÊÞ½çÃæ
+--ÏÔÊ¾ äÊÞ½çÃæ
 function Profile_Pet_Down()
 
 	if ( g_Current_Page == SELF_PAGE ) then
@@ -965,12 +965,12 @@ function Profile_Frame_ShareBtn_Clicked()
 	if g_Profile_DressCurSel >= g_Profile_Type_Dress * 10 + 1 and g_Profile_DressCurSel <= g_Profile_Type_Dress * 10 + g_Profile_MaxBtn then
 		local CurSel = g_Profile_DressCurSel - g_Profile_Type_Dress * 10
 		if g_Profile_Dress_Btn[CurSel] == nil then
-			PushDebugMessage("·ÖÏíÊ§°Ü")
+			PushDebugMessage("Chia xë th¤t bÕi")
 		else
 			Exterior:LuaFnExteriorPlayerShareClick(CurSel)
 		end
 	else
-		PushDebugMessage("·ÖÏíÊ§°Ü")
+		PushDebugMessage("Chia xë th¤t bÕi")
 	end
 	
 end
@@ -1011,7 +1011,7 @@ function Profile_WeaponChangeBtn_Clicked()
 	end
 end
 
---¹Ø±Õ°´Å¥
+--¹Ø± °´Å¥
 function Profile_CloseClick()	
 		
 	this:Hide()
@@ -1068,7 +1068,7 @@ function Profile_CleanUp_Weapon()
 	
 end
 
---Çå¿Õ´îÅäÕ¹Ê¾
+--Çå¿ ´îÅä ¹Ê¾
 function Profile_CleanUp()
 
 	Profile_FakeObject:SetFakeObject("")

@@ -65,7 +65,7 @@ function DressWash_OnEvent(event)
 		if(arg0 ~= nil and tonumber(arg0) ~= objCared) then
 			return;
 		end		
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then		
 			--取消关心
 			this:Hide()
@@ -91,7 +91,7 @@ function DressWash_OnEvent(event)
 		--和摆摊界面互斥
 		this:Hide()
 	
-	elseif( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then --时装预览
+	elseif( event == "UI_COMMAND" and tonumber(arg0) == 120203161 ) or (event == "OPEN_DRESSPREVIEW") or ( event == "UI_COMMAND" and tonumber(arg0) == 20120406 ) or ( event == "UI_COMMAND" and tonumber(arg0) == 2024082101 ) then --????
 		this:Hide()
 		
 	elseif (event == "ADJEST_UI_POS" ) then

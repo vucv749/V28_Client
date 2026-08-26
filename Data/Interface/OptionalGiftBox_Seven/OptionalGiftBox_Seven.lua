@@ -5,12 +5,12 @@ local OptionalGiftBox_Seven_g_CloseUi = 89027602
 --变量
 local g_OptionalGiftBox_Seven_Frame_UnifiedXPosition;
 local g_OptionalGiftBox_Seven_Frame_UnifiedYPosition;
-local g_OptionalGiftBox_Seven_CurBagPos = -1 --神兵自选匣在玩家背包中的位置
-local g_OptionalGiftBox_Seven_CurSelIndex = -1 --当前选中几个item
-local g_OptionalGiftBox_Seven_CurLiBaoItemIndex = -1 --使用的礼包
+local g_OptionalGiftBox_Seven_CurBagPos = -1 --??????????????
+local g_OptionalGiftBox_Seven_CurSelIndex = -1 --??????item
+local g_OptionalGiftBox_Seven_CurLiBaoItemIndex = -1 --?????
 
 local g_OptionalGiftBox_Seven_MainScript = 890276
-local g_OptionalGiftBox_Seven_CurNeedNum = 1 --需要选择一个神兵
+local g_OptionalGiftBox_Seven_CurNeedNum = 1 --????????
 local g_OptionalGiftBox_Seven_TotalNum = 7
 --控件表
 local g_OptionalGiftBox_Seven_UI_ActionItem = {}
@@ -35,33 +35,33 @@ local g_OptionalGiftBox_Seven_ItemIdNum = 3
 local g_OptionalGiftBox_Seven_ItemIdAndWeapon = {
 	--4
 	[38002987] = {
-		[1] = { id = 10158007, num = 1, }, --箭
-		[2] = { id = 10158008, num = 1, }, --弓
-		[3] = { id = 10158009, num = 1, }, --枪
-		[4] = { id = 10158010, num = 1, }, --剑
-		[5] = { id = 10158011, num = 1, }, --刀
-		[6] = { id = 10158012, num = 1, }, --锤
-		[7] = { id = 10158013, num = 1, }, --匕
+		[1] = { id = 10158007, num = 1, }, --?
+		[2] = { id = 10158008, num = 1, }, --?
+		[3] = { id = 10158009, num = 1, }, --?
+		[4] = { id = 10158010, num = 1, }, --?
+		[5] = { id = 10158011, num = 1, }, --?
+		[6] = { id = 10158012, num = 1, }, --?
+		[7] = { id = 10158013, num = 1, }, --?
 	},
 	--5星
 	[38002985] = {
-		[1] = { id = 10158014, num = 1, }, --箭
-		[2] = { id = 10158015, num = 1, }, --弓
-		[3] = { id = 10158016, num = 1, }, --枪
-		[4] = { id = 10158017, num = 1, }, --剑
-		[5] = { id = 10158018, num = 1, }, --刀
-		[6] = { id = 10158019, num = 1, }, --锤
-		[7] = { id = 10158020, num = 1, }, --匕
+		[1] = { id = 10158014, num = 1, }, --?
+		[2] = { id = 10158015, num = 1, }, --?
+		[3] = { id = 10158016, num = 1, }, --?
+		[4] = { id = 10158017, num = 1, }, --?
+		[5] = { id = 10158018, num = 1, }, --?
+		[6] = { id = 10158019, num = 1, }, --?
+		[7] = { id = 10158020, num = 1, }, --?
 	},
 	--6星
 	[38002986] = {
-		[1] = { id = 10158021, num = 1, }, --箭
-		[2] = { id = 10158022, num = 1, }, --弓
-		[3] = { id = 10158023, num = 1, }, --枪
-		[4] = { id = 10158024, num = 1, }, --剑
-		[5] = { id = 10158025, num = 1, }, --刀
-		[6] = { id = 10158026, num = 1, }, --锤
-		[7] = { id = 10158027, num = 1, }, --匕
+		[1] = { id = 10158021, num = 1, }, --?
+		[2] = { id = 10158022, num = 1, }, --?
+		[3] = { id = 10158023, num = 1, }, --?
+		[4] = { id = 10158024, num = 1, }, --?
+		[5] = { id = 10158025, num = 1, }, --?
+		[6] = { id = 10158026, num = 1, }, --?
+		[7] = { id = 10158027, num = 1, }, --?
 	},
 }
 local g_OptionalGiftBox_Seven_ItemIdAndTitle = {
@@ -156,7 +156,7 @@ function OptionalGiftBox_Seven_Show()
 		end
 	end
 	if isSafe == 0 then
-		OptionalGiftBox_Seven_OnHidden()--安全检查不通过就关界面了
+		OptionalGiftBox_Seven_OnHidden()--????????????
 		return 0
 	end
 	OptionalGiftBox_Seven_Update()
@@ -168,7 +168,7 @@ function OptionalGiftBox_Seven_Update()
 		local itemAction = DataPool:CreateBindActionItemForShow(
 		g_OptionalGiftBox_Seven_ItemIdAndWeapon[g_OptionalGiftBox_Seven_CurLiBaoItemIndex][i].id,
 		g_OptionalGiftBox_Seven_ItemIdAndWeapon[g_OptionalGiftBox_Seven_CurLiBaoItemIndex][i].num
-		)--不绑定 CreateActionItemForShow
+		)--??? CreateActionItemForShow
 		if itemAction:GetID() ~= 0 then
 			g_OptionalGiftBox_Seven_UI_ActionItem[i]:SetActionItem(itemAction:GetID())
 		end
@@ -179,13 +179,13 @@ function OptionalGiftBox_Seven_Update()
 	OptionalGiftBox_Seven_DragTitle:SetText(g_OptionalGiftBox_Seven_ItemIdAndTitle[g_OptionalGiftBox_Seven_CurLiBaoItemIndex]);
 	OptionalGiftBox_Seven_Info:SetText(g_OptionalGiftBox_Seven_ItemIdAndInfo[g_OptionalGiftBox_Seven_CurLiBaoItemIndex])
 end
---关闭界面
+--关睜界面
 function OptionalGiftBox_Seven_OnHidden()
 	OptionalGiftBox_Seven_CleanUp()
 	this:Hide()
 end
 
---清空数据
+--清繝数据
 function OptionalGiftBox_Seven_CleanUp()
 	for i = 1, g_OptionalGiftBox_Seven_TotalNum do	
 		g_OptionalGiftBox_Seven_UI_ActionItem[i]:SetActionItem(-1)
@@ -193,14 +193,14 @@ function OptionalGiftBox_Seven_CleanUp()
 		g_OptionalGiftBox_Seven_UI_ActionChosenMask[i]:Hide()
 	end
 	OptionalGiftBox_Seven_DragTitle:SetText(" ");
-	--开界面的时候会锁住物品 所以关闭界面和初始化的时候要解锁
+	--开界面的时候会锁住物品 所以关睜界面和初始化的时候要解锁
 	if g_OptionalGiftBox_Seven_CurBagPos ~= -1 then
 		LifeAbility:Lock_Packet_Item(g_OptionalGiftBox_Seven_CurBagPos, 0)
 	end
 	--其他变量初始化
-	g_OptionalGiftBox_Seven_CurBagPos = -1 --神兵自选匣在玩家背包中的位置
-	g_OptionalGiftBox_Seven_CurSelIndex = -1 --当前选中几个item
-	g_OptionalGiftBox_Seven_CurLiBaoItemIndex = -1 --使用的礼包id
+	g_OptionalGiftBox_Seven_CurBagPos = -1 --??????????????
+	g_OptionalGiftBox_Seven_CurSelIndex = -1 --??????item
+	g_OptionalGiftBox_Seven_CurLiBaoItemIndex = -1 --?????id
 end
 
 --领取
@@ -219,7 +219,7 @@ function OptionalGiftBox_Seven_OnGetClicked()
 	Clear_XSCRIPT()
 	Set_XSCRIPT_Function_Name("PickUpItem")
 	Set_XSCRIPT_ScriptID(g_OptionalGiftBox_Seven_MainScript)
-	Set_XSCRIPT_Parameter(0, item_table_index) --防刷用
+	Set_XSCRIPT_Parameter(0, item_table_index) --???
 	Set_XSCRIPT_Parameter(1, g_OptionalGiftBox_Seven_CurBagPos)
 	Set_XSCRIPT_Parameter(2, g_OptionalGiftBox_Seven_CurSelIndex)
 	Set_XSCRIPT_ParamCount(3)
@@ -239,7 +239,7 @@ function OptionalGiftBox_Seven_OnItemClicked(index)
 	g_OptionalGiftBox_Seven_CurSelIndex = index
 end
 
---调整位置
+--调狖位置
 function OptionalGiftBox_Seven_UpdateUIPos()
 	OptionalGiftBox_Seven_Frame_BK:SetProperty("UnifiedXPosition", g_OptionalGiftBox_Seven_Frame_UnifiedXPosition);
 	OptionalGiftBox_Seven_Frame_BK:SetProperty("UnifiedYPosition", g_OptionalGiftBox_Seven_Frame_UnifiedYPosition);

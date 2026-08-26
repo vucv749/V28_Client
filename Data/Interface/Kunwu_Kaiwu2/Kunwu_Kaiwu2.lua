@@ -108,13 +108,13 @@ function Kunwu_Kaiwu2_NeedRemovePet()
 	return 0
 end
 
---选择珍兽
+--选择犱兽
 function Kunwu_Kaiwu2_SelectPet(selidx)
 	if selidx == -1 then
 		return
 	end
 	
-	--珍兽已被其它界面选中
+	--犱兽已被其它界面选中
 	if Pet:GetPetLocation(selidx) ~= -1 then
 		return
 	end

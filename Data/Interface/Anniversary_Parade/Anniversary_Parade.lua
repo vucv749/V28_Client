@@ -10,7 +10,7 @@ function Anniversary_Parade_PreLoad()
 	this:RegisterEvent( "UI_COMMAND" )
 
 	this:RegisterEvent( "VIEW_RESOLUTION_CHANGED" )
-	this:RegisterEvent( "HIDE_ON_SCENE_TRANSED" )	--进场景关闭界面
+	this:RegisterEvent( "HIDE_ON_SCENE_TRANSED" )	--???????
 	this:RegisterEvent( "ADJEST_UI_POS" )
 	
 end
@@ -57,7 +57,7 @@ end
 function Anniversary_Parade_ShowHelp()
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name( "OpenHelplUI" ) 	
-		Set_XSCRIPT_ScriptID( 891059 )						-- 脚本编号
-		Set_XSCRIPT_ParamCount( 0 )						    -- 参数个数
+		Set_XSCRIPT_ScriptID( 891059 )						-- ????
+		Set_XSCRIPT_ParamCount( 0 )						    -- ????
 	Send_XSCRIPT()
 end

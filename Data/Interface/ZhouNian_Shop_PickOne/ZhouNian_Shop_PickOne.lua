@@ -40,10 +40,10 @@ end
 --=========================================================
 function ZhouNian_Shop_PickOne_OnEvent(event)
     if (event == "UI_COMMAND" and tonumber(arg0) == g_nUICommandID) then
-        -- 0 关闭, 1 打开, 2 刷新, 3 二次确认框
+        -- 0 关睜, 1 打开, 2 刷新, 3 二次确认框
         local nOpType = Get_XParam_INT(0)
 
-        -- 关闭界面
+        -- 关睜界面
         if 0 == nOpType then
             if this:IsVisible() then
                 ZhouNian_Shop_PickOne_OnClose()
@@ -132,7 +132,7 @@ function ZhouNian_Shop_PickOne_Right ()
 end
 
 --=========================================================
--- 关闭界面
+-- 关睜界面
 --=========================================================
 function ZhouNian_Shop_PickOne_OnClose()
     this:Hide()

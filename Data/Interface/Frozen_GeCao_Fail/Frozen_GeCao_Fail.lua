@@ -9,8 +9,8 @@ local Frozen_GeCao_Fail_Frame_UnifiedPosition = nil
 function Frozen_GeCao_Fail_PreLoad()
   
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-    this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+    this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 	this:RegisterEvent("UI_COMMAND")
 
 end -- end func Frozen_GeCao_Fail_Frame_PreLoad()
@@ -29,7 +29,7 @@ function Frozen_GeCao_Fail_OnEvent(event)
         Frozen_GeCao_Fail_Frame_UnifiedPos()
     elseif (event == "ADJEST_UI_POS") then
         Frozen_GeCao_Fail_Frame_UnifiedPos()
-	elseif event == "UI_COMMAND" and (tonumber(arg0) == 331141006) then	--服务端传数据
+	elseif event == "UI_COMMAND" and (tonumber(arg0) == 331141006) then	--??????
 	
 		local str = Get_XParam_STR(0)	
 		Frozen_GeCao_Fail_Info:SetText(str)
@@ -54,7 +54,7 @@ function Frozen_GeCao_Fail_Frame_Hide()
     this:Hide()
 end -- end func Frozen_GeCao_Fail_Frame_Hide()
 
--- 关闭按钮点击事件
+-- 关睜按钮点击事件
 function Frozen_GeCao_Fail_Frame_Close_Clicked()
 	Frozen_GeCao_Fail_Frame_Hide()
 end  -- end func Frozen_GeCao_Fail_Frame_Close_Clicked()

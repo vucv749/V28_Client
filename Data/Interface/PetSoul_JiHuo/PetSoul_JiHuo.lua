@@ -3,14 +3,14 @@
 local g_PetSoul_JiHuo_Frame_UnifiedPosition
 
 local g_clientNpcId = -1
-local g_ExteriorType = 4 						--融魂外观
+local g_ExteriorType = 4 						--????
 
 local g_InitList = 0
 local g_NeedChangeScrollSize = 1
 
 local g_MaxBarNum = 0
 local g_BarList = {}
-local g_CurSelExteriorID = 0					--当前选择的外观ID，从1开始
+local g_CurSelExteriorID = 0					--???????ID,?1??
 local g_QualStr = {"#{SHRH_20220427_06}", "#{SHRH_20220427_05}", "#{SHRH_20220427_04}"}
 
 --==================================
@@ -173,7 +173,7 @@ function PetSoul_JiHuo_SetItem(index, max_count)
 	bar:GetSubItem("PetSoul_JiHuo_SuperListItemActionDef"):Hide()
 
 	if nExteriorID == Exterior:LuaFnGetExteriorInUse(g_ExteriorType) then
-		--当前正在装备的
+		--当前狚在装备的
 	--	bar:GetSubItem("PetSoul_JiHuo_SuperListItemActionDef"):Show()
 	end
 

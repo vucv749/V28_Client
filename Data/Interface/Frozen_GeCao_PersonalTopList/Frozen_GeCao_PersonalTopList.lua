@@ -33,8 +33,8 @@ local g_TeamPoint = {
 function Frozen_GeCao_PersonalTopList_PreLoad()
   
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-    this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+    this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 	this:RegisterEvent("UI_COMMAND")
 	this:RegisterEvent("BXJGECAO_SELFINFO")
 
@@ -54,7 +54,7 @@ function Frozen_GeCao_PersonalTopList_OnEvent(event)
         Frozen_GeCao_PersonalTopList_Frame_UnifiedPos()
     elseif (event == "ADJEST_UI_POS") then
         Frozen_GeCao_PersonalTopList_Frame_UnifiedPos()
-	elseif event == "BXJGECAO_SELFINFO"  then	--服务端传数据
+	elseif event == "BXJGECAO_SELFINFO"  then	--??????
 	
 		
 		
@@ -70,7 +70,7 @@ function Frozen_GeCao_PersonalTopList_Frame_Updata()
 
 	local myGuid = Player:GetGUID()
    
-    -- 获取阵营排行榜
+    -- 获取狊营排行榜
     local listCount = 0
     local rankList = {}
     for i=1, g_PlayerNumMax, 1 do
@@ -202,7 +202,7 @@ function Frozen_GeCao_PersonalTopList_Frame_Hide()
     this:Hide()
 end -- end func Frozen_GeCao_PersonalTopList_Frame_Hide()
 
--- 关闭按钮点击事件
+-- 关睜按钮点击事件
 function Frozen_GeCao_PersonalTopList_Frame_Close_Clicked()
 	Frozen_GeCao_PersonalTopList_Frame_Hide()
 end  -- end func Frozen_GeCao_PersonalTopList_Frame_Close_Clicked()

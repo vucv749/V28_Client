@@ -8,8 +8,8 @@ local m_Equip_Idx = -1
 local UI_TYPE_STUDY	= 1
 local UI_TYPE_RESET	= 2
 local UI_TYPE_RESET_WX = 3
-local UI_TYPE_RESET_GROWRATE1 = 4 --回天精石重洗武魂成长率
-local UI_TYPE_RESET_GROWRATE2 = 5 --回天神石重洗武魂成长率
+local UI_TYPE_RESET_GROWRATE1 = 4 --???????????
+local UI_TYPE_RESET_GROWRATE2 = 5 --???????????
 local m_UIType = 0
 
 local needMoney = 0
@@ -90,13 +90,13 @@ function NewWuhunSkillStudy_OnEvent(event)
 		NewWuhunSkillStudy_UpDateRecoin()
 	elseif (event == "WUHUN_SKILL_RECOIN_CONFIRM_OK") then
 		if tonumber(arg1) == 1 then
-			NewWuhunSkillStudy_Clear(1) --先把原来的清空了
-			NewWuhunSkillStudy_Update(tonumber(arg0)) --再放上新的~
+			NewWuhunSkillStudy_Clear(1) --????????
+			NewWuhunSkillStudy_Update(tonumber(arg0)) --?????~
 		elseif tonumber(arg1) == 0 then
 			NewWuhunSkillStudy_Clear(1)
 			this:Hide()
 		elseif tonumber(arg1) == 2 then
-			NewWuhunSkillStudy_Clear(1) --先把原来的清空了
+			NewWuhunSkillStudy_Clear(1) --????????
 		end
 	end
 end
@@ -108,7 +108,7 @@ function NewWuhunSkillStudy_Update(itemIdx)
 
 		--二次确认框
 			NewWuhunSkillStudy_SendKFSSkillConfirm(itemIdx,1)
-		-- 如果空格内已经有对应物品了,需要弹一个二次确认……
+		-- 如果繝格内已经有对应物品了,需要弹一个二次确认……
 			return
 		end
 	NewWuhunSkillStudy_Clear(1)
@@ -120,18 +120,18 @@ function NewWuhunSkillStudy_Update(itemIdx)
 	if theAction:GetID() ~= 0 then
 
 		if PlayerPackage:IsBagItemKFS( itemIdx ) ~= 1 then
-				PushDebugMessage("#{WHZN_141216_14}")	--此处只能放入武魂。
+				PushDebugMessage("#{WHZN_141216_14}")	--?????????
 				return
 		end
 
 		if PlayerPackage:IsLock( itemIdx ) == 1 then
-			PushDebugMessage("#{WHZN_141216_15}")	--道具已上锁
+			PushDebugMessage("#{WHZN_141216_15}")	--?????
 			return
 		end
 
 		local skillNum = PlayerPackage:GetBagKfsSkillNum(itemIdx)
 		if skillNum == 0 then
-			PushDebugMessage("#{WHZN_141216_16}")	--还没有领悟技能
+			PushDebugMessage("#{WHZN_141216_16}")	--???????
 			return
 		end
 
@@ -197,30 +197,30 @@ function NewWuhunSkillStudy_OK_Clicked()
 	end
 
 	if m_Equip_Idx == -1 then
-		PushDebugMessage("#{WHYH_161121_48}")	--请先放入重洗技能的武魂，再进行该操作。
+		PushDebugMessage("#{WHYH_161121_48}")	--???????????,???????
 		return
 	end
 
 	if PlayerPackage:IsBagItemKFS( m_Equip_Idx ) ~= 1 then
-		PushDebugMessage("#{WHYH_161121_48}")	--此处只能放入武魂。
+		PushDebugMessage("#{WHYH_161121_48}")	--?????????
 		return
 	end
 		
 	if PlayerPackage:IsLock( m_Equip_Idx ) == 1 then
-		PushDebugMessage("#{WHYH_161121_124}")	--道具已上锁
+		PushDebugMessage("#{WHYH_161121_124}")	--?????
 		return
 	end
 
 	local skillNum = PlayerPackage:GetBagKfsSkillNum(m_Equip_Idx)
 	if skillNum == 0 then
-		PushDebugMessage("#{WHYH_161121_49}")	--还没有领悟技能
+		PushDebugMessage("#{WHYH_161121_49}")	--???????
 		return
 	end
 
 	local selfMoney = Player:GetData("MONEY") + Player:GetData("MONEY_JZ")
 
 	if selfMoney < needMoney then
-		PushDebugMessage("#{WHYH_161121_50}")  --对不起，你身上金钱不足，无法继续进行
+		PushDebugMessage("#{WHYH_161121_50}")  --???,???????,??????
 		return
 	end
 	

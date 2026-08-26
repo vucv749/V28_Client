@@ -78,7 +78,7 @@ end
 
 function YuanbaoBangdingExchange_Hide( )
 
-	-- 关闭窗口
+	-- 关睜窗口
 	this : Hide( )
 
 end
@@ -111,7 +111,7 @@ function YuanbaoBangdingExchange_OK_Clicked( )
 	local toBindYuanBaoTxt = YuanbaoBangdingExchange_Moral_Value : GetProperty( "Text" )
 	local toBindYuanBao = tonumber( toBindYuanBaoTxt )
 	
-	-- 玩家输入0，直接关闭
+	-- 玩家输入0，直接关睜
 	if toBindYuanBao == 0 then
 		YuanbaoBangdingExchange_Hide( )
 		return
@@ -143,7 +143,7 @@ function YuanbaoBangdingExchange_OK_Clicked( )
 	end
 	
 	Player : YuanBaoToBind( toBindYuanBao )
-	-- 都执行完了关闭窗口（操作成功由服务器端提示）
+	-- 都执行完了关睜窗口（操作成功由服务器端提示）
 	YuanbaoBangdingExchange_Hide( )
 end
 

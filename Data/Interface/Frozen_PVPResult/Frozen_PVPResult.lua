@@ -1,4 +1,4 @@
--- 雪人大作战，分数界面
+-- 雪人大作牻，分数界面
 local g_unifiedposistion
 
 
@@ -114,10 +114,10 @@ function Frozen_PVPResult_InitUIData(lastTime)
 	end
 	Frozen_PVPResult_TopList_Time:SetProperty("TextColor", "FF00FF00")
 
-	-- 获取自己的阵营信息
+	-- 获取自己的狊营信息
 	local camp,level,exp,max,camppos = XRZPVP:GetBattleRankInfo("campinfo")
 
-	-- 刷新阵营信息
+	-- 刷新狊营信息
 	local teamCount = XRZPVP:GetBattleRankInfo("teamnum")
 	Frozen_PVPResult_TopList_ListFrame:Clear()
 	if (teamCount > 0) then
@@ -127,7 +127,7 @@ function Frozen_PVPResult_InitUIData(lastTime)
 			if snowDataValid ~= nil and snowDataValid > 0 then
 				local child = Frozen_PVPResult_TopList_ListFrame:AddChild("Frozen_PVPResult_TopList_List_Item")
 				if (child ~= nil) then
-					-- 是否是自己的阵营
+					-- 是否是自己的狊营
 					local snowStackScore,playerCamp = XRZPVP:GetBattleRankInfo("rankinfo", i-1)
 					local maxlevel = XRZPVP:GetBattleRankInfo("maxlevel", i-1)
 
@@ -261,7 +261,7 @@ function Frozen_PVPResult_Mini()
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function Frozen_PVPResult_CloseClicked()
 	this:Hide()

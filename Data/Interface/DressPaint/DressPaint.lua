@@ -4,21 +4,21 @@ local g_NeedMoney = 50000
 local g_ObjCared = -1
 
 --- 2021.03.10 ¾­µäÒÆÖ²£¬ÐÂÔö
-local g_DressPaint_YuanbaoPay	= 1		-- 2021.03.10 È·ÈÏÔª±¦¹ºÂò
-local g_ZiDongState 			= 0		-- ÅÐ¶ÏÊÇ²»ÊÇ×Ô¶¯È¾É«  Ä¬ÈÏ¹Ø±Õ   0 ±íÊ¾¹Ø±Õ  1 ±íÊ¾¿ªÆô  ×÷ÓÃ 1ÅÐ¶ÏÈ¡Ïû±³°ü²Ù×÷  2µ±·þÎñÆ÷·µ»ØÊ± ¸ù¾ÝÕâ¸ö±êÊ¾ÅÐ¶ÏÊÇ×Ô¶¯È¾É«·µ»Ø»¹ÊÇÈ¾É«·µ»Ø
-local g_ZiDongTimerState 		= 0		-- ×Ô¶¯È¾É«×´Ì¬  0 ¹Ø±Õ  1 ¿ªÆô 2 ÔÝÍ£
-local g_RecvGRespState 			= 0		-- ÊÇ·ñÊÕµ½·þÎñÆ÷È¾É«·µ»Ø  0.3Ãë¼ä¸ô·¢ËÍÒ»´Î µ«ÊÇÖ»ÓÐ·µ»Øºó ²Å¼ÌÐø·¢   0 ±íÊ¾¹Ø±Õ  1 ±íÊ¾¿ªÆô  Õâ¸öÒªÔÚÊÕµ½·þÎñÆ÷·µ»Øºó ÏÈÅÐ¶ÏÊÇ·ñÏ¡ÓÐºóÔÙÖÃ³ÉÊÕµ½×´Ì¬ 
-local g_Zidong_ClickTime 		= 300	-- 300ºÁÃë Ä£Äâµã»÷È¾É«°´Å¥
-local g_Rare_Time 				= 1000	-- 1000ºÁÃë µ±rouµ½Ï¡ÓÐÑÕÉ«  ¹Ø±Õ×Ô¶¯timer ¿ªÆôµÈ´ýtimer
+local g_DressPaint_YuanbaoPay	= 1		-- 2021.03.10 ??????
+local g_ZiDongState 			= 0		-- ?????????  ????   0 ????  1 ????  ?? 1????????  2??????? ?????????????????????
+local g_ZiDongTimerState 		= 0		-- ??????  0 ??  1 ?? 2 ??
+local g_RecvGRespState 			= 0		-- ???????????  0.3??????? ??????? ????   0 ????  1 ????  ???????????? ??????????????? 
+local g_Zidong_ClickTime 		= 300	-- 300?? ????????
+local g_Rare_Time 				= 1000	-- 1000?? ?rou?????  ????timer ????timer
 local g_Rare_Count        		= 3
-local g_IsFirstAuto				= 1		-- ÊÇ·ñÊÇautoµÚÒ»´ÎÇëÇó
+local g_IsFirstAuto				= 1		-- ???auto?????
 local g_IsXiYouStop				= 0
-local g_dressNum 				= 9		-- È¾É«Ê±×°×î´óÊýÁ¿
+local g_dressNum 				= 9		-- ????????
 
-local DressVisualID 			= {}	-- È¾É«±í¸ñ¶ÁÈ¡
-local DressNames 				= {}	-- È¾É«±í¸ñ¶ÁÈ¡×éºÏ£¨Ãû×Ö£©
-local DressRate 				= {}	-- È¾É«±í¸ñ¶ÁÈ¡
-local EB_BINDED					= 1		-- ÒÑ¾­°ó¶¨
+local DressVisualID 			= {}	-- ??????
+local DressNames 				= {}	-- ????????(??)
+local DressRate 				= {}	-- ??????
+local EB_BINDED					= 1		-- ????
 local g_DressPaint_TipsBind = 0
 ----2021.03.10 ¾­µäÒÆÖ²£¬ÐÂÔö end -----------
 local g_DressPaint_Frame_UnifiedPosition
@@ -58,7 +58,7 @@ function DressPaint_OnEvent(event)
 		end
 	end
 
-	-- Ä³Ð©¹¦ÄÜ»¥³â£¬ÐèÒª¹Ø±Õ¸Ã½çÃæ
+	-- Ä³Ð©¹¦ÄÜ»¥³â£¬ÐèÒª¹Ø± ¸Ã½çÃæ
 	if ( event == "CLOSE_DRESS_PAINT" ) then
 		if (this:IsVisible()) then
 			DressPaint_OnHiden();
@@ -79,14 +79,14 @@ function DressPaint_OnEvent(event)
 		end
 	end
 
-	-- ´ò¿ª×°±¸½çÃæ£¬¹Ø±Õ½çÃæ
+	-- ´ò¿ª×°±¸½çÃæ£¬¹Ø± ½çÃæ
 	if ( event == "OPEN_EQUIP" ) then
 		if (this:IsVisible()) then
 			DressPaint_OnHiden()
 		end
 	end
 
-	-- ´ò¿ª×°±¸½çÃæ£¬¹Ø±Õ½çÃæ
+	-- ´ò¿ª×°±¸½çÃæ£¬¹Ø± ½çÃæ
 	if ( event == "YIGUI_OPEN" ) then
 		if (this:IsVisible()) then
 			DressPaint_OnHiden()
@@ -106,7 +106,7 @@ function DressPaint_OnEvent(event)
 		PushEvent( "CLOSE_DRESSPREVIEW") 
 		PushEvent( "CLOSE_GEMEFFECTPREVIEW")
 
-		DressPaint_OK:Disable()										-- ½ûÓÃ¡°È·¶¨¡±°´Å¥
+		DressPaint_OK:Disable()										-- ??“??”??
 		DressPaint_Zidong:SetText("#{YJRS_140613_04}") 
 		DressPaint_Zidong:Disable()
 		DressPaint_Zidong_Animate:Play(false)
@@ -161,7 +161,7 @@ function DressPaint_OnEvent(event)
 		if(arg0 ~= nil and tonumber(arg0) ~= objCared) then
 			return;
 		end		
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then		
 			DressPaint_OnHiden();
 		end	
@@ -331,7 +331,7 @@ end
 
 function DressPaint_Clear()
 	if(DRESS_POS ~= -1) then
-		DressPaint_OK:Disable()										-- ½ûÓÃ¡°È·¶¨¡±°´Å¥
+		DressPaint_OK:Disable()										-- ??“??”??
 		DressPaint_Zidong:SetText("#{YJRS_140613_04}") 
 		DressPaint_Zidong:Disable();
 		DressPaint_Zidong_Animate:Play(false)
@@ -350,11 +350,11 @@ function DressPaint_Clear()
 		DressNames = {}
 		DressRate = {} 
 		
-		if g_ZiDongState == 1  then  				--- count timer  kill  Ã»Ð´ÄØ 
+		if g_ZiDongState == 1  then  				--- count timer  kill  ??? 
 			--KillTimer("DressPaint_countEvent()") 
 			PushDebugMessage("#{YJRS_140613_17}")
 		end   	
-		if g_ZiDongTimerState == 2  and g_Rare_Count < 3 then  				--- count timer  kill  Ã»Ð´ÄØ 
+		if g_ZiDongTimerState == 2  and g_Rare_Count < 3 then  				--- count timer  kill  ??? 
 			KillTimer("DressPaint_Rare_TimerEvent()") 
 		end   	
 		DressPaint_ResetZiDongState()
@@ -371,7 +371,7 @@ function DressPaint_OnHiden()
 	DressPaint_Text : SetText("")
 	Dress_Jian : Hide()
 
-	-- ¹Ø±Õ¡°È¾É«×·×Ù¡±ÊÔÒÂ¼ä
+	-- ¹Ø± ¡°È¾É«×·×Ù¡±ÊÔÒÂ¼ä
 	if (IsWindowShow("DressPaint_Fitting")) then
 		CloseWindow("DressPaint_Fitting", true)
 		DressReplaceColor:RestoreDressPaintFitting()		
@@ -426,7 +426,7 @@ function DressPaint_OK_Clicked()
 		end
 	end
 
-	-- ¹Ø±Õ¡°È¾É«×·×Ù¡±ÊÔÒÂ¼ä
+	-- ¹Ø± ¡°È¾É«×·×Ù¡±ÊÔÒÂ¼ä
 	if (IsWindowShow("DressPaint_Fitting")) then
 		DressReplaceColor:RestoreDressPaintFitting()
 		CloseWindow("DressPaint_Fitting", true)	
@@ -454,7 +454,7 @@ end
 function DressPaint_Show_Clicked()
 	
 	if (IsWindowShow("DressPaint_Fitting")) then
-		-- ÏÈÇå¿Õµ±Ç°ÊÔÒÂ¼äµÄÊý¾Ý
+		-- ÏÈÇå¿ µ±Ç°ÊÔÒÂ¼äµÄÊý¾Ý
 		DressReplaceColor:RestoreDressPaintFitting();
 	end
 	
@@ -487,7 +487,7 @@ end
 ------------------------------------------------------------------
 
 function DressPaint_Show()
-	-- ÏÈÇå¿Õµ±Ç°ÊÔÒÂ¼äµÄÊý¾Ý
+	-- ÏÈÇå¿ µ±Ç°ÊÔÒÂ¼äµÄÊý¾Ý
 	DressReplaceColor:RestoreDressPaintFitting()
 	-- ´ò¿ª
 	DressReplaceColor:OpenDressPaintFitting( DRESS_POS )
@@ -499,7 +499,7 @@ function DressPaint_Blank_Queren_Clicked()
 	g_DressPaint_YuanbaoPay = DressPaint_Blank_Queren:GetCheck()
 end
 
-function DressPaint_ZiDong_TimerEvent()	--Ä£Äâµã»÷È¾É«°´Å¥  0.3ÃëÒ»´Î  
+function DressPaint_ZiDong_TimerEvent()	--????????  0.3???  
 	if g_ZiDongTimerState == 1  and g_RecvGRespState == 1 then 
  	   -- ÅÐ¶ÏÊÇ·ñÎª°²È«Ê±¼ä2012.6.12-LIUBO
 		if (tonumber(DataPool:GetLeftProtectTime()) > 0) then
@@ -529,7 +529,7 @@ function DressPaint_ZiDong_TimerEvent()	--Ä£Äâµã»÷È¾É«°´Å¥  0.3ÃëÒ»´Î
 		Set_XSCRIPT_Function_Name("OnAutoDressPaint")
 			Set_XSCRIPT_ScriptID(830001)
 			Set_XSCRIPT_Parameter(0, DRESS_POS)
-			Set_XSCRIPT_Parameter(1, g_IsFirstAuto)			--ÊÇ·ñÊÇµÚÒ»´Î×Ô¶¯È¾É«  ÎªÁËÇø±ðÏÔÊ¾²»Í¬ÄÚÈÝ  1 ´ú±íµÚÒ»´Î 0²»ÊÇ
+			Set_XSCRIPT_Parameter(1, g_IsFirstAuto)			--??????????  ??????????  1 ????? 0??
 			Set_XSCRIPT_Parameter(2, destVisualID)
 			Set_XSCRIPT_ParamCount(3)
 		Send_XSCRIPT() 
@@ -538,7 +538,7 @@ function DressPaint_ZiDong_TimerEvent()	--Ä£Äâµã»÷È¾É«°´Å¥  0.3ÃëÒ»´Î
  	end 
 end
 
---ÖØÖÃ×Ô¶¯×´Ì¬ 1.µã»÷Í£Ö¹ ¹Ø±Õ´°¿ÚÊ±
+--ÖØÖÃ×Ô¶¯×´Ì¬ 1.µã»÷Í£Ö¹ ¹Ø± ´°¿ÚÊ±
 function DressPaint_ResetZiDongState()
 	local _name,ComIdx = DressPaint_Zidong_ALLChoice:GetCurrentSelect()
 	if ComIdx > 0 then
@@ -546,12 +546,12 @@ function DressPaint_ResetZiDongState()
 		DressPaint_Zidong:Disable()
 		DressPaint_Zidong_Animate:Play(false)
 		DressPaint_Zidong_ALLChoice:Enable() 
-		DressPaint_Zidong_ALLChoice:SetText("#{YJRS_140613_03}")--Ñ¡ÔñÄ¿±êÈ¾É«·ç¸ñ  
+		DressPaint_Zidong_ALLChoice:SetText("#{YJRS_140613_03}")--????????  
 		--DressPaint_Zidong_ALLChoice:SetCurrentSelect(-1)
 	end 
 
 	DressPaint_Zidong:SetText("#{YJRS_140613_04}")
-	if g_ZiDongTimerState == 2  and g_Rare_Count < 3 then  				--- count timer  kill  Ã»Ð´ÄØ 
+	if g_ZiDongTimerState == 2  and g_Rare_Count < 3 then  				--- count timer  kill  ??? 
 		KillTimer("DressPaint_Rare_TimerEvent()") 
 	end
 	DressPaint_Protect:SetText("")
@@ -629,7 +629,7 @@ end
 --³õÊ¼»¯×Ô¶¯×´Ì¬ ²¢¹¹ÔìÊý¾Ý
 function DressPaint_Zidong_ALLChoice_Init() 
 	DressPaint_Zidong_ALLChoice:ResetList()  	
-	DressPaint_Zidong_ALLChoice:SetText("#{YJRS_140613_03}")--Ñ¡ÔñÄ¿±êÈ¾É«·ç¸ñ  
+	DressPaint_Zidong_ALLChoice:SetText("#{YJRS_140613_03}")--????????  
 
 	if ( DRESS_POS == -1 ) then  
 		DressVisualID = {}
@@ -663,7 +663,7 @@ function DressPaint_Zidong_ALLChoice_Init()
 	DressPaint_Zidong_ALLChoice:Enable() 
 end
 
---È¾³öÄ¿±êÑÕÉ«
+--È¾³öÄ¿±êÑ É«
 function DressPaint_SuccDestMode(strDressDesc)
 	local Msg = ScriptGlobal_Format("#{YJRS_140613_15}", strDressDesc) 
 	PushDebugMessage(Msg)
@@ -722,13 +722,13 @@ function DressPaint_DestMode_Changed()
 	end  
 end
 
--- ½«°´Å¥ÉèÖÃ³ÉÖÕÖ¹×´Ì¬
+-- ½«°´Å¥ÉèÖÃ³ÉÖ Ö¹×´Ì¬
 function DressPaint_RetSetZidongButtonText()
 	DressPaint_Zidong:SetText("#{YJRS_140613_05}")
 end
 
 --µã»÷×Ô¶¯È¾É«ÊÂ¼þ
-function DressPaint_Zidong_Clicked()			--×Ô¶¯¿ªÆô  ¿ªÆôtimerÊÂ¼þ
+function DressPaint_Zidong_Clicked()			--????  ??timer??
 	if g_ZiDongState == 0 then 
 		if (tonumber(DataPool:GetLeftProtectTime()) > 0) then
 			PushDebugMessage("#{OR_PILFER_LOCK_FLAG}")
@@ -750,7 +750,7 @@ function DressPaint_Zidong_Clicked()			--×Ô¶¯¿ªÆô  ¿ªÆôtimerÊÂ¼þ
 		local n_szDressDesc, nRate, MaterBind = DressReplaceColor : GetDressVisualInfo(DRESS_POS)
 		if g_DressPaint_TipsBind == 0 and isDressBind == 0 then--and PlayerPackage:CountAvailableItemByIDTable(MaterBind) > 0 then
 			local bagIdx,BindState =  PlayerPackage:FindFirstBindedItemIdxByIDTable(MaterBind)
-			-- ÕÒµ½ÁË¸ÃµÀ¾ß£¬²¢ÇÒÎª°ó¶¨×´Ì¬
+			--  Òµ½ÁË¸ÃµÀ¾ß£¬²¢ÇÒÎª°ó¶¨×´Ì¬
 			if bagIdx > 0 and BindState == EB_BINDED then
 				PushEvent( "DRESSPAINT_BINDDRESS")
 				return

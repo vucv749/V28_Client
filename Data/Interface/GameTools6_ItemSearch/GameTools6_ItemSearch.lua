@@ -4,8 +4,8 @@ local GameTools6_ItemSearch_Item,GameTools6_ItemSearch_Count = {},{};
 local g_UIPos;
 
 -- È«¾Ö»º´æ£ºÖ»¶ÁÒ»´ÎÎÄ¼ş
-local g_ItemSearch_All = nil      -- ÆÕÍ¨ÎïÆ·
-local g_PetSearch_All  = nil      -- ÕäÊŞ
+local g_ItemSearch_All = nil      -- ????
+local g_PetSearch_All  = nil      -- ??
 
 --===============================================
 -- OnLoad()
@@ -51,7 +51,7 @@ end
 function GameTools6_ItemSearch_Show()
 	this:Show()
 	GameTools6_ItemSearch_Cancel_Clicked()
-	GameTools6_ItemSearch_List:AddItem("#WÇëÏÈÊäÈë#GµÀ¾ßÃû³Æ#W»ò#GID#W½øĞĞËÑË÷", 0);
+	GameTools6_ItemSearch_List:AddItem("#WTHïnh Tiên ğßa vào#GğÕo cø tên#WHo£c#GID#Wtiªn hành tìm tòi", 0);
 	
 	--Ä¬ÈÏÑ¡ÖĞËÑË÷ÎïÆ·
 	GameTools6_ItemSearch_SelectPet:SetCheck(0)
@@ -73,13 +73,13 @@ end
 function GameTools6_ItemSearch_OK_Clicked()
 	local str1 = GameTools6_ItemSearch_Text2:GetText();
 	if str1 == "" then
-		PushDebugMessage("ËÑË÷ÄÚÈİÎª¿Õ¡£ÇëÊäÈëµÀ¾ßµÄÃû³Æ»òIDÀ´¿ªÊ¼ËÑË÷¡£")
+		PushDebugMessage("Tìm tòi nµi dung Vi Không. Thïnh ğßa vào ğÕo cø Ğích tên Ho£c IDm· ra Thï tìm tòi.")
 		return
 	end
 	GameTools6_ItemSearch_Act:SetActionItem(-1);
 	
 	--µÚÒ»ĞĞ·ÅÌáÊ¾
-	local str2 = string.format("#WÒÑËÑË÷[#G%s#W]£¬ÇëÑ¡Ôñ½á¹ûÒÔ×Ô¶¯Ìî³ä£º",str1);
+	local str2 = string.format("#WDÎ tìm tòi[#G%s#W], Thïnh lña ch÷n kªt quä Dî tñ ğµng bö thêm vào:",str1);
 	GameTools6_ItemSearch_List:ClearListBox();
 	GameTools6_ItemSearch_List:AddItem(str2, 0);
 	
@@ -92,7 +92,7 @@ function GameTools6_ItemSearch_OK_Clicked()
 	local int1 = 0;
 	local all
 	
-	--¼ì²éµ¥Ñ¡¿ò×´Ì¬ ÊÇ·ñÑ¡ÖĞÕäÊŞËÑË÷
+	--¼ì²éµ¥Ñ¡¿ò×´Ì¬ ÊÇ·ñÑ¡ÖĞ äÊŞËÑË÷
 	local WuPingStr = "..\\Bin\\Config\\ItemSearch.txt" 
 	local CheckZhuangTai = GameTools6_ItemSearch_SelectPet:GetCheck()
 	if CheckZhuangTai == 1 then
@@ -104,7 +104,7 @@ function GameTools6_ItemSearch_OK_Clicked()
                 g_PetSearch_All = op:read("*a");
                 op:close();
             end
-			PushDebugMessage("µÚÒ»´Î¼ÓÔØÕäÊŞTXTÊı¾İ³É¹¦")
+			PushDebugMessage("L¥n ğ¥u tiên Gia Täi Trân Thú TXTs¯ li®u thành công")
         end
         all = g_PetSearch_All
     else
@@ -115,7 +115,7 @@ function GameTools6_ItemSearch_OK_Clicked()
                 g_ItemSearch_All = op:read("*a");
                 op:close();
             end
-			PushDebugMessage("µÚÒ»´Î¼ÓÔØÎïÆ·TXTÊı¾İ³É¹¦")
+			PushDebugMessage("L¥n ğ¥u tiên Gia Täi v§t ph¦m TXTs¯ li®u thành công")
         end
         all = g_ItemSearch_All
     end
@@ -155,23 +155,23 @@ function GameTools6_ItemSearch_OK_Clicked()
 								int1 = int1 + 1;
 								GameTools6_ItemSearch_Item[int1] = J3;
 								GameTools6_ItemSearch_Count[int1] = J4;
-								----------------------×ÔÊÊÓ¦¿Õ¸ñ--------------------------
+								----------------------×ÔÊÊÓ¦¿ ¸ñ--------------------------
 								-- Ä¿±ê³¤¶ÈÎª 20 ¸ö×Ö·û
 								local targetLength = 20
 								local space = " "
-								-- ¼ÆËãĞèÒªÌí¼ÓµÄ¿Õ¸ñÊı
+								-- ¼ÆËãĞèÒªÌí¼ÓµÄ¿ ¸ñÊı
 								local numSpaces = targetLength - string.len(J2)
 								if numSpaces < 1 then
-									numSpaces = 1  -- ÖÁÉÙÌí¼ÓÒ»¸ö¿Õ¸ñÒÔ·Ö¸ôÎÄ±¾
+									numSpaces = 1  -- ?????????????
 								end
-								-- ¹¹½¨¿Õ¸ñ×Ö·û´®
+								-- ¹¹½¨¿ ¸ñ×Ö·û´®
 								local spaces = space:rep(numSpaces)
-								----------------------×ÔÊÊÓ¦¿Õ¸ñ--------------------------							
+								----------------------×ÔÊÊÓ¦¿ ¸ñ--------------------------							
 								-- str2 = string.format("#R%s    #Gµş¼ÓÊıÁ¿:%s",J2,J4);
 								if CheckZhuangTai == 1 then
-									str2 = string.format("#R%s%s#GĞ¯´øµÈ¼¶:%s", J2, spaces, J4)
+									str2 = string.format("#R%S%s#Gmang theo c¤p b§c: %s", J2, spaces, J4)
 								else
-									str2 = string.format("#R%s%s#Gµş¼ÓÊıÁ¿:%s", J2, spaces, J4)
+									str2 = string.format("#R%S%s#Gch°ng s¯ lßşng: %s", J2, spaces, J4)
 								end
 								GameTools6_ItemSearch_List : AddItem(str2, int1);
 								
@@ -188,7 +188,7 @@ function GameTools6_ItemSearch_OK_Clicked()
 	end
 	-- ¼ì²éÊÇ·ñ³¬¹ı×î´óÊıÁ¿ÏŞÖÆ²¢ÌáÊ¾
     if int1 >= maxDisplayCount then
-        local warningMessage = "#R¾¯¸æ: Êı¾İÁ¿¹ı´ó£¬ÇëĞ´¸üÏêÏ¸µÄËÑË÷¹Ø¼ü´Ê¡£"
+        local warningMessage = "#RcÄnh cáo: S¯ li®u Lßşng quá l¾n, Thïnh Tä Canh k¬ lÕi Ğích tìm tòi m¤u ch¯t T×."
         GameTools6_ItemSearch_List:AddItem(warningMessage, 0)
     end
 end
@@ -199,15 +199,15 @@ function GameTools6_ItemSearch_Select_Clicked(Index)
 		GameTools6_ItemSearch_SelectPet:SetCheck(0)
 		GameTools6_ItemSearch_lvwEquipTitle:RemoveColumnByPos(0)
 		GameTools6_ItemSearch_lvwEquipTitle:RemoveColumnByPos(0)
-		GameTools6_ItemSearch_lvwEquipTitle:AddColumn( "µÀ¾ßÃû×Ö", 0, 0.5 );
-		GameTools6_ItemSearch_lvwEquipTitle:AddColumn( "µş¼ÓÊıÁ¿", 1, 0.5 );
+		GameTools6_ItemSearch_lvwEquipTitle:AddColumn( "ĞÕo cø tên", 0, 0.5 );
+		GameTools6_ItemSearch_lvwEquipTitle:AddColumn( "Ch°ng s¯ lßşng", 1, 0.5 );
 	elseif Index == 2 then
 		GameTools6_ItemSearch_electWuPing:SetCheck(0)
 		GameTools6_ItemSearch_SelectPet:SetCheck(1)
 		GameTools6_ItemSearch_lvwEquipTitle:RemoveColumnByPos(0)
 		GameTools6_ItemSearch_lvwEquipTitle:RemoveColumnByPos(0)
-		GameTools6_ItemSearch_lvwEquipTitle:AddColumn( "ÕäÊŞÃû×Ö", 0, 0.5 );
-		GameTools6_ItemSearch_lvwEquipTitle:AddColumn( "Ğ¯´øµÈ¼¶", 1, 0.5 );
+		GameTools6_ItemSearch_lvwEquipTitle:AddColumn( "Trân Thú tên", 0, 0.5 );
+		GameTools6_ItemSearch_lvwEquipTitle:AddColumn( "Mang theo c¤p b§c", 1, 0.5 );
 	end
 end
 --===============================================

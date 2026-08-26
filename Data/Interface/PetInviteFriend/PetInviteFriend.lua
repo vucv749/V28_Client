@@ -133,7 +133,7 @@ function PetInviteFriend_Update( idx )
 	if(idx < 0 or idx > 2 or idx == nil) then
 		return;
 	end
-	--ÉèÖÃÕäÊŞÖ÷ÈËĞÅÏ¢
+	--ÉèÖÃ äÊŞÖ÷ÈËĞÅÏ¢
 	local strTxt = PetInviteFriend:GetHumanINFO(idx, "GUID");
 	g_Invite[idx].id:SetText(strTxt);
 
@@ -153,11 +153,11 @@ function PetInviteFriend_Update( idx )
 	strTxt = PetInviteFriend_ConvertNumToMenPai(PetInviteFriend:GetHumanINFO(idx, "MENPAI"));
 	g_Invite[idx].menpai:SetText(strTxt);
 
-	--ÉèÖÃÕäÊŞµÄÕ÷ÓÑĞÅÏ¢
+	--ÉèÖÃ äÊŞµÄ ÷ÓÑĞÅÏ¢
 	strTxt = PetInviteFriend:GetInviteMsg(idx);
 	g_Invite[idx].msg:SetText(strTxt);
 
-	--ÉèÖÃÕäÊŞÄ£ĞÍ
+	--ÉèÖÃ äÊŞÄ£ĞÍ
 	PetInviteFriend:SetPetModel(idx);
 	strTxt = "My_PetInviteFriend0" .. tostring(idx);
 	g_Invite[idx].model:SetFakeObject(strTxt);
@@ -173,37 +173,37 @@ function PetInviteFriend_ConvertNumToMenPai( MenPaiId )
 	local strMenPai = "???";
 	-- µÃµ½ÃÅÅÉÃû³Æ.
 	if(0 == MenPaiId) then
-		strMenPai = "ÉÙÁÖ";
+		strMenPai = "Thiªu Lâm";
 
 	elseif(1 == MenPaiId) then
-		strMenPai = "Ã÷½Ì";
+		strMenPai = "Minh Giáo";
 
 	elseif(2 == MenPaiId) then
-		strMenPai = "Ø¤°ï";
+		strMenPai = "Cái Bang";
 
 	elseif(3 == MenPaiId) then
-		strMenPai = "Îäµ±";
+		strMenPai = "Võ Ğang";
 
 	elseif(4 == MenPaiId) then
-		strMenPai = "¶ëáÒ";
+		strMenPai = "Nga Mi";
 
 	elseif(5 == MenPaiId) then
-		strMenPai = "ĞÇËŞ";
+		strMenPai = "Tinh Túc";
 
 	elseif(6 == MenPaiId) then
-		strMenPai = "ÌìÁú";
+		strMenPai = "Thiên Long";
 
 	elseif(7 == MenPaiId) then
-		strMenPai = "ÌìÉ½";
+		strMenPai = "Thiên S½n";
 
 	elseif(8 == MenPaiId) then
-		strMenPai = "åĞÒ£";
+		strMenPai = "Tiêu dao";
 
 	elseif(9 == MenPaiId) then
-		strMenPai = "ÎŞÃÅÅÉ";
+		strMenPai = "Tñ do";
 
 	elseif(10== MenPaiId) then
-		strMenPai = "ÂüÍÓÉ½×¯";
+		strMenPai = "MÕn Ğà S½n Trang";
 
 	end
 
@@ -211,7 +211,7 @@ function PetInviteFriend_ConvertNumToMenPai( MenPaiId )
 end
 ----------------------------------------------------------------------------------
 --
--- Ğı×ªÕäÊŞÄ£ĞÍ£¨Ïò×ó)
+-- Ğı×ª äÊŞÄ£ĞÍ£¨Ïò×ó)
 --
 function PetInviteFriend_Modle_TurnLeft(modelIdx, start)
 
@@ -228,7 +228,7 @@ end
 
 ----------------------------------------------------------------------------------
 --
---Ğı×ªÕäÊŞÄ£ĞÍ£¨ÏòÓÒ)
+--Ğı×ª äÊŞÄ£ĞÍ£¨ÏòÓÒ)
 --
 function PetInviteFriend_Modle_TurnRight(modelIdx, start)
 	if(modelIdx <= 2 and modelIdx > 0) then
@@ -242,7 +242,7 @@ function PetInviteFriend_Modle_TurnRight(modelIdx, start)
 	end
 end
 
---²éÑ¯ÕäÊŞµÄÏêÏ¸ĞÅÏ¢
+--²éÑ¯ äÊŞµÄÏêÏ¸ĞÅÏ¢
 function PetInviteFriend_ShowTargetFrame( idx )
 	if(idx < 0 and idx > 2) then
 		return;
@@ -251,7 +251,7 @@ function PetInviteFriend_ShowTargetFrame( idx )
 	PetInviteFriend:ShowTargetPet(idx);
 end
 
---²éÑ¯ÉÏÒ»ÆªµÄÕäÊŞÕ÷ÓÑĞÅÏ¢
+--²éÑ¯ÉÏÒ»ÆªµÄ äÊŞ ÷ÓÑĞÅÏ¢
 function PetInviteFriend_PrevPage()
 	--»ñµÃµ±Ç°Ò³ĞÅÏ¢
 	local num = PetInviteFriend:GetInviteNum();
@@ -278,7 +278,7 @@ function PetInviteFriend_PrevPage()
 	Send_XSCRIPT();
 end
 
---²éÑ¯ÏÂÒ»ÆªµÄÕäÊŞÕ÷ÓÑĞÅÏ¢
+--²éÑ¯ÏÂÒ»ÆªµÄ äÊŞ ÷ÓÑĞÅÏ¢
 function PetInviteFriend_NextPage()
 	--»ñµÃµ±Ç°Ò³ĞÅÏ¢
 	local num = PetInviteFriend:GetInviteNum();
@@ -305,7 +305,7 @@ function PetInviteFriend_NextPage()
 	Send_XSCRIPT();
 end
 
---¸øÕäÊŞÖ÷ÈË·¢ÓÊ¼ş£¬ËµÃ÷ÏëÕ÷ÓÑ
+--¸ø äÊŞÖ÷ÈË·¢ÓÊ¼ş£¬ËµÃ÷Ïë ÷ÓÑ
 function PetInviteFriend_SendMail( idx )
 	if(idx < 0 and idx > 2) then
 		return;
@@ -315,13 +315,13 @@ function PetInviteFriend_SendMail( idx )
 	local strUser = Player:GetName();
 
 	if(strUser == strOHuman) then
-		--²»ÄÜ½áÊ¶×Ô¼ºµÄÕäÊŞ
-		PushDebugMessage("²»ÄÜºÍ×Ô¼ºµÄÕäÊŞ½áÊ¶¡£");
+		--²»ÄÜ½áÊ¶×Ô¼ºµÄ äÊŞ
+		PushDebugMessage("Không th¬ Hoà chính mình Ğích Trân Thú kªt các\\u0020hÕ.");
 	else
 		--Í¨Öª×Ô¼º
-		PushDebugMessage("ÒÑ·¢ËÍÄãµÄ½áÊ¶ÇëÇó¡£");
+		PushDebugMessage("Dî gæi ği cüa ngß½i kªt các\\u0020hÕ thïnh c¥u.");
 		--·¢ËÍÓÊ¼ş
-		DataPool:SendMail(strOHuman, strUser .. "Ïë½áÊ¶ÄãµÄ"  .. strOPet .. "£¡" );
+		DataPool:SendMail(strOHuman, strUser .. "Tß·ng kªt các\\u0020hÕ cüa ngß½i"  .. strOPet .. "!" );
 		--·¢ËÍ½áÊ¶Í³¼ÆĞÅÏ¢
 		PetInviteFriend : SendAuditMsg(g_serverNpcId);
 	end
@@ -334,7 +334,7 @@ function PetInviteFriend_CareEventHandle(careId, op, distance)
 		if(tonumber(careId) ~= g_clientNpcId) then
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(op == "distance" and tonumber(distance)>MAX_OBJ_DISTANCE or op=="destroy") then
 			PetInviteFriend_Hide();
 		end

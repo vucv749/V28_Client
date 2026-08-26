@@ -1,8 +1,8 @@
--- 争霸赛 组建战队UI
+-- 狔霸赛 组建牻队UI
 
 -- 服务器端回调脚本ID
 local NoDiffMatch_CreateTeam_ServerScriptId = 889961
--- 战队名称最大长度
+-- 牻队名称最大长度
 local NoDiffMatch_CreateTeam_NameLen_Max = 12
 -- NPC id（缓存一下）
 local NoDiffMatch_CreateTeam_TargetId = -1
@@ -18,17 +18,17 @@ local NoDiffMatch_CreateTeam_MAX_OBJ_DISTANCE = 5.0
 -- 门派
 local NoDiffMatch_CreateTeam_MenPaiName =
 {
-	[0] = "#{XQ_MP_1}",    	--少林
-	[1] = "#{XQ_MP_2}",    	--明教
-	[2] = "#{XQ_MP_3}",    	--丐帮
-	[3] = "#{XQ_MP_4}",    	--武当
-	[4] = "#{XQ_MP_5}",    	--峨眉
-	[5] = "#{XQ_MP_6}",    	--星宿
-	[6] = "#{XQ_MP_7}",    	--天龙
-	[7] = "#{XQ_MP_8}",    	--天山
-	[8] = "#{XQ_MP_9}",    	--逍遥
-	[9] = "",         		--无门派
-	[10] = "#{WCBZ_220809_53}",--曼陀山庄 
+	[0] = "#{XQ_MP_1}",    	--??
+	[1] = "#{XQ_MP_2}",    	--??
+	[2] = "#{XQ_MP_3}",    	--??
+	[3] = "#{XQ_MP_4}",    	--??
+	[4] = "#{XQ_MP_5}",    	--??
+	[5] = "#{XQ_MP_6}",    	--??
+	[6] = "#{XQ_MP_7}",    	--??
+	[7] = "#{XQ_MP_8}",    	--??
+	[8] = "#{XQ_MP_9}",    	--??
+	[9] = "",         		--???
+	[10] = "#{WCBZ_220809_53}",--???? 
 } -- end NoDiffMatch_CreateTeam_MenPaiName
 
 
@@ -36,8 +36,8 @@ function NoDiffMatch_CreateTeam_PreLoad()
 	this:RegisterEvent("ZBS_OPENCREATETEAM", true)
 	this:RegisterEvent("ZBS_CLOSEUI", true)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 	this:RegisterEvent("OBJECT_CARED_EVENT", false)
 end -- end func NoDiffMatch_CreateTeam_PreLoad()
 
@@ -60,7 +60,7 @@ function NoDiffMatch_CreateTeam_OnEvent(event)
 			return
 		end
 
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if((arg1 == "distance" and tonumber(arg2) > NoDiffMatch_CreateTeam_MAX_OBJ_DISTANCE) or arg1=="destroy") then
 			--取消关心
 			NoDiffMatch_CreateTeam_Hide()
@@ -156,7 +156,7 @@ function NoDiffMatch_CreateTeam_InitCtrlList()
 	NoDiffMatch_CreateTeam_CtrlList.member[6].viceleadertxt = NoDiffMatch_CreateTeam_List6_ViceLeaderText
 end -- end func NoDiffMatch_CreateTeam_InitCtrlList()
 
--- 关闭按钮事件
+-- 关睜按钮事件
 function NoDiffMatch_CreateTeam_CloseClicked()
 	NoDiffMatch_CreateTeam_Hide()
 end -- end func NoDiffMatch_CreateTeam_CloseClicked()
@@ -179,7 +179,7 @@ function NoDiffMatch_CreateTeam_ViceLeaderBtn(arg)
 	end -- end for
 end -- end func NoDiffMatch_CreateTeam_ViceLeaderBtn()
 
--- 创建战队按钮事件
+-- 创建牻队按钮事件
 function NoDiffMatch_CreateTeam_Accept_Clicked()
 	local teamName = NoDiffMatch_CreateTeam_Top_NameInput:GetText()
 	if (teamName == nil or teamName == "") then
@@ -227,12 +227,12 @@ function NoDiffMatch_CreateTeam_ResetUIInfo()
 		NoDiffMatch_CreateTeam_InitCtrlList()
 	end
 
-	-- 战队名称
+	-- 牻队名称
 	NoDiffMatch_CreateTeam_Top_NameInput:SetText("")
-	-- 战队人数
+	-- 牻队人数
 	local numText = ScriptGlobal_Format("#{WCBZ_180128_50}", 0)
 	NoDiffMatch_CreateTeam_Top_Text3:SetText(numText)
-	-- 战队成员
+	-- 牻队成员
 	for i=1, 6, 1 do
 		if (NoDiffMatch_CreateTeam_CtrlList.member[i] ~= nil) then
 			NoDiffMatch_CreateTeam_CtrlList.member[i].leaderflag:Hide()
@@ -249,7 +249,7 @@ function NoDiffMatch_CreateTeam_ResetUIInfo()
 	end -- end for
 end -- end func NoDiffMatch_CreateTeam_ResetUIInfo()
 
--- 刷新战队信息
+-- 刷新牻队信息
 function NoDiffMatch_CreateTeam_UpdateTeamInfo()
 	NoDiffMatch_CreateTeam_ResetUIInfo()
 
@@ -258,7 +258,7 @@ function NoDiffMatch_CreateTeam_UpdateTeamInfo()
 
 	local defaultViceLeader = -1
 	local memCount = 0
-	-- 刷新战队成员信息
+	-- 刷新牻队成员信息
 	for i=1, 6, 1 do
 		local memName, memMenPai, memLevel, memDeadFlag, memLinkFlag, memSex, memZoneWorld = DataPool:GetTeamMemInfoByIndex(i-1)
 		local playerName, playerGUID, playerIcon, leaderFlag, isDead = DataPool:GetTeamMemInfoExByIndex(i-1)
@@ -306,7 +306,7 @@ function NoDiffMatch_CreateTeam_UpdateTeamInfo()
 		end
 	end -- end for
 
-	-- 战队人数
+	-- 牻队人数
 	local numText = ScriptGlobal_Format("#{WCBZ_180128_50}", memCount)
 	NoDiffMatch_CreateTeam_Top_Text3:SetText(numText)
 

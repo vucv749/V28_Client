@@ -3,11 +3,11 @@ local g_NewPvpTime2_UnifiedPosition
 
 local g_NewPvpTime2_UICommand = 89029501
 local g_NewPvpTime2_opType = {
-	show1 = 1,						-- 显示UI1
-	show2 = 2,						-- 显示UI2
-	update1 = 3,					-- 初始化UI1
-	update2 = 4,					-- 初始化UI2
-	close = 1000,					-- 关闭UI
+	show1 = 1,						-- ??UI1
+	show2 = 2,						-- ??UI2
+	update1 = 3,					-- ???UI1
+	update2 = 4,					-- ???UI2
+	close = 1000,					-- ??UI
 }
 
 
@@ -17,7 +17,7 @@ local g_StateCreateBoss1 = 2
 
 function NewPvpTime2_PreLoad()
 	this:RegisterEvent("UI_COMMAND", true)
-	--离开场景，自动关闭
+	--离开场景，自动关睜
 	this:RegisterEvent("PLAYER_LEAVE_WORLD", false)	
 	-- 游戏窗口尺寸发生了变化
 	this:RegisterEvent("ADJEST_UI_POS", false)

@@ -1,13 +1,13 @@
 -- GMÄÚ²¿¹¤¾ß V4 - ´òÔìÒ³
 
 local g_GameTools4_Frame_UnifiedPosition
-local WuYi = {"Ñª¹¥ĞŞ","Á¦","Áé","Ìå","¶¨","¹¥»÷ĞŞ","·ÀÓùĞŞ","ÃüÖĞĞŞ","ÉÁ±ÜĞŞ","Æ½ºâĞŞ"}
+local WuYi = {"Huyªt Công Tu","Lñc","Linh","Th¬","Ğ¸nh","Công kích Tu","Phòng ngñ Tu","M®nh Trung Tu","Thi¬m T¸ Tu","Cân b¢ng Tu"}
 local TianJi = {
-	"Ìì»ú¢ñ","Ìì»ú¢ò","Ìì»ú¢ó","Ìì»ú¢ô","Ìì»ú¢õ","Ìì»ú¢ö","Ìì»ú¢÷","Ìì»ú¢ø","Ìì»ú¢ù","Ìì»ú¢ú",
-	"ÌìÉÏ¢ñ","ÌìÉÏ¢ò","ÌìÉÏ¢ó","ÌìÉÏ¢ô","ÌìÉÏ¢õ","ÌìÉÏ¢ö","ÌìÉÏ¢÷","ÌìÉÏ¢ø","ÌìÉÏ¢ù","ÌìÉÏ¢ú",
-	"±¦Ê¯¢ñ","±¦Ê¯¢ò","±¦Ê¯¢ó","ÆäËû¢ñ"
+	"Thiên c½ ?","Thiên c½ ?","Thiên c½ ?","Thiên c½ ?","Thiên c½ ?","Thiên c½ ?","Thiên c½ ?","Thiên c½ ?","Thiên c½ ?","Thiên c½ ?",
+	"B¥u tr¶i ?","B¥u tr¶i ?","B¥u tr¶i ?","B¥u tr¶i ?","B¥u tr¶i ?","B¥u tr¶i ?","B¥u tr¶i ?","B¥u tr¶i ?","B¥u tr¶i ?","B¥u tr¶i ?",
+	"Bäo thÕch ?","Bäo thÕch ?","Bäo thÕch ?","M£t khác ?"
 }
-local XiuLianTypes = {"Á¦Á¿","ÁéÆø","ÌåÁ¦","¶¨Á¦","Éí·¨","Íâ¹¥","ÄÚ¹¥","Íâ·À","ÄÚ·À","ÃüÖĞ","ÉÁ±Ü"}
+local XiuLianTypes = {"Lñc lßşng","Nµi Lñc","Th¬ lñc","Ğ¸nh lñc","Thân pháp","NgoÕi Công","Nµi Công","NgoÕi Thü","Nµi Thü","Chính xác","Thi¬m T¸"}
 
 local XiuLainId = -1
 local WuYiId = -1
@@ -75,27 +75,27 @@ function GameTools4_TianJi_ListBox_Selected()
 	str, TianJiId = GameTools4_TianJiEdix:GetCurrentSelect()
 end
 
--- ĞŞÁ¶²Ù×÷: 1=È«Âú 2=Çå¿Õ 3=ÉèÖÃÖ¸¶¨ÃØ¼®µÈ¼¶
+-- ĞŞÁ¶²Ù×÷: 1=È«Âú 2=Çå¿  3=ÉèÖÃÖ¸¶¨ÃØ¼®µÈ¼¶
 function GameTools4_XiuLain_Fun(index)
 	if TargetID == nil then
-		PushDebugMessage("ÇëÏÈÑ¡ÖĞÄ¿±êÍ·Ïñ")
+		PushDebugMessage("Thïnh Tiên lña ch÷n møc tiêu hình cái ğ¥u")
 		TargetID = 0
 	end
 	local nLevel = 0
 	if index == 3 then
 		-- ÉèÖÃÖ¸¶¨ÃØ¼®µÈ¼¶
 		if XiuLainId == nil or XiuLainId < 0 then
-			PushDebugMessage("ÇëÏÈ´ÓÏÂÀ­¿òÑ¡ÔñÃØ¼®")
+			PushDebugMessage("Thïnh Tiên t× dß¾i LÕp Khuông lña ch÷n bí t¸ch")
 			return
 		end
 		local levelText = GameTools4_XiuLainLevelEdix:GetText()
 		if levelText == nil or levelText == "" then
-			PushDebugMessage("ÇëÊäÈëÒªÉèÖÃµÄµÈ¼¶")
+			PushDebugMessage("Thïnh ğßa vào Yêu thiªt trí Ğích c¤p b§c")
 			return
 		end
 		nLevel = tonumber(levelText)
 		if nLevel == nil or nLevel < 0 or nLevel > 150 then
-			PushDebugMessage("µÈ¼¶·¶Î§: 0~150")
+			PushDebugMessage("C¤p b§c phÕm vi: 0~150")
 			return
 		end
 	end
@@ -111,10 +111,10 @@ function GameTools4_XiuLain_Fun(index)
 	Send_XSCRIPT()
 end
 
--- È«Âú/Çå¿ÕÎäÒâ
+-- È«Âú/Çå¿ ÎäÒâ
 function GameTools4_WuYi_Fun(index)
 	if TargetID == nil then
-		PushDebugMessage("ÇëÏÈÑ¡ÖĞÄ¿±êÍ·Ïñ")
+		PushDebugMessage("Thïnh Tiên lña ch÷n møc tiêu hình cái ğ¥u")
 		TargetID = 0
 	end
 	Clear_XSCRIPT()
@@ -128,10 +128,10 @@ function GameTools4_WuYi_Fun(index)
 	Send_XSCRIPT()
 end
 
--- Çå¿Õ¾­Âö
+-- Çå¿ ¾­Âö
 function GameTools4_QingKongJingMai()
 	if TargetID == nil then
-		PushDebugMessage("ÇëÏÈÑ¡ÖĞÄ¿±êÍ·Ïñ")
+		PushDebugMessage("Thïnh Tiên lña ch÷n møc tiêu hình cái ğ¥u")
 		TargetID = 0
 	end
 	Clear_XSCRIPT()
@@ -145,10 +145,10 @@ function GameTools4_QingKongJingMai()
 	Send_XSCRIPT()
 end
 
--- Çå¿ÕÀ¸Î»/MD/MDEX/FLAG/×´Ì¬
+-- Çå¿ À¸Î»/MD/MDEX/FLAG/×´Ì¬
 function GameTools4_QingKong(index)
 	if TargetID == nil then
-		PushDebugMessage("ÇëÏÈÑ¡ÖĞÄ¿±êÍ·Ïñ")
+		PushDebugMessage("Thïnh Tiên lña ch÷n møc tiêu hình cái ğ¥u")
 		TargetID = 0
 	end
 	Clear_XSCRIPT()
@@ -162,10 +162,10 @@ function GameTools4_QingKong(index)
 	Send_XSCRIPT()
 end
 
--- Çå¿ÕÌì»ú
+-- Çå¿ Ìì»ú
 function GameTools4_QingKongTianJi()
 	if TargetID == nil then
-		PushDebugMessage("ÇëÏÈÑ¡ÖĞÄ¿±êÍ·Ïñ")
+		PushDebugMessage("Thïnh Tiên lña ch÷n møc tiêu hình cái ğ¥u")
 		TargetID = 0
 	end
 	Clear_XSCRIPT()

@@ -560,7 +560,7 @@ function SelfDWJinJie_Page_DWJinJie()
 	LuaFnToggleFeaturesPage()
 end
 
---切换个人展示界面
+--切换个人牴示界面
 function SelfDWJinJie_Page_Profile()
 	Variable:SetVariable("SelfUnionPos", SelfDWJinJie_Frame:GetProperty("UnifiedPosition"), 1);
 	Exterior:LuaFnExteriorPlayerOpenProfileUI()	
@@ -618,102 +618,102 @@ end
 function SelfDWJinJie_OnPageClicked(idx)
 	Variable:SetVariable("PageNumber", tostring(idx), 1)
 	idx = g_PageOrder[idx]
-	if idx == 1 then--装备
+	if idx == 1 then--??
 		SelfDWJinJie_Page_SelfEquip()
-	elseif idx == 2 then--资料
+	elseif idx == 2 then--??
 		SelfDWJinJie_Page_SelfData()
-	elseif idx == 3 then--珍兽
+	elseif idx == 3 then--??
 		SelfDWJinJie_Page_Pet()
-	elseif idx == 4 then--武魂
+	elseif idx == 4 then--??
 		SelfDWJinJie_Page_Wuhun()
-	elseif idx == 5 then--修炼
+	elseif idx == 5 then--??
 		SelfDWJinJie_Page_Xiulian()
-	elseif idx == 6 then--武道
+	elseif idx == 6 then--??
 		SelfDWJinJie_Page_Talent()
-	elseif idx == 7 then--灵玉
+	elseif idx == 7 then--??
 		SelfDWJinJie_Page_LingYu()
-	elseif idx == 8 then--神兵
+	elseif idx == 8 then--??
 		SelfDWJinJie_Page_ShenBing()
-	elseif idx == 9 then--雕文进阶
+	elseif idx == 9 then--????
 	--	SelfDWJinJie_Page_DWJinJie()
-	elseif idx == 10 then--巅峰
+	elseif idx == 10 then--??
 		SelfDWJinJie_Page_Peak()
-	elseif idx == 11 then--个人
+	elseif idx == 11 then--??
 		SelfDWJinJie_Page_Profile()
-	elseif idx == 12 then--其他
+	elseif idx == 12 then--??
 		SelfDWJinJie_Page_OtherInfo()
 	end
 end
 
 function SelfDWJinJie_CheckPage(idx)
-	if idx == 1 then--装备
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--资料
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--珍兽
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--武魂
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--修炼
+	elseif idx == 5 then--??
 		return 1
-	elseif idx == 6 then--武道
+	elseif idx == 6 then--??
 		return DataPool:Lua_CheckIsShowTalent()
-	elseif idx == 7 then--灵玉
+	elseif idx == 7 then--??
 		return 1
-	elseif idx == 8 then--神兵
+	elseif idx == 8 then--??
 		return 1
-	elseif idx == 9 then--雕文进阶
+	elseif idx == 9 then--????
 		return 1
-	elseif idx == 10 then--巅峰
+	elseif idx == 10 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 11 then--个人
+	elseif idx == 11 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 15 then
 			return 1
 		end
-	elseif idx == 12 then--其他
+	elseif idx == 12 then--??
 		return 1
 	end
 	return 0
 end
 
 function SelfDWJinJie_IsPageEnable(idx)
-	if idx == 1 then--装备
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--资料
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--珍兽
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--武魂
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--修炼
+	elseif idx == 5 then--??
 		return 1
-	elseif idx == 6 then--武道
+	elseif idx == 6 then--??
 		return 1
-	elseif idx == 7 then--灵玉
+	elseif idx == 7 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 8 then--神兵
+	elseif idx == 8 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 65 then
 			return 1
 		end
-	elseif idx == 9 then--雕文进阶
+	elseif idx == 9 then--????
 		return 1
-	elseif idx == 10 then--巅峰
+	elseif idx == 10 then--??
 	
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 11 then--个人
+	elseif idx == 11 then--??
 		return 1
-	elseif idx == 12 then--其他
+	elseif idx == 12 then--??
 		return 1
 	end
 	return 0

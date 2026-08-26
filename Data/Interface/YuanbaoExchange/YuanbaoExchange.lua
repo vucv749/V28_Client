@@ -29,13 +29,13 @@ function YuanbaoExchange_OnEvent(event)
 				return
 			end
 			local serverObjId = Get_XParam_INT(0);
-			if 0 <= serverObjId then --¶Ì´°¿Ú
+			if 0 <= serverObjId then --???
 				--YuanbaoExchange_Frame:SetProperty("UnifiedSize","{{0.000000,292.000000},{0.000000,292.000000}}");
 				--YuanbaoExchange_Text2:SetText("")
 				--YuanbaoExchange_Cancel:SetText("")
 				BeginCareObject_YuanbaoExchange(Target:GetServerId2ClientId(serverObjId));
 				g_SuiShenDuihuan = 0
-			else --³¤´°¿Ú
+			else --???
 				--YuanbaoExchange_Frame:SetProperty("UnifiedSize", "{{0.000000,292.000000},{0.000000,379.000000}}");
 				--YuanbaoExchange_Text2:SetText("")
 			  g_SuiShenDuihuan = 1
@@ -56,7 +56,7 @@ function YuanbaoExchange_OnEvent(event)
 			local nPLow = math.mod( Get_XParam_UINT(0), 10000 );
 			local nPHigh = math.floor( (Get_XParam_UINT(0) - nPLow) / 10000 );
 			--local strPoint = tostring(nPHigh)..tostring(math.floor(nPLow/10));
-			--´¦ÀíÕûÊı²¿·Ö
+			--´¦Àí ûÊı²¿·Ö
 			local strPoint = "";
 			if ( nPHigh > 0 ) then
 				strPoint = tostring(nPHigh)..string.format("%03d", math.floor(nPLow/10) );
@@ -67,7 +67,7 @@ function YuanbaoExchange_OnEvent(event)
 			if( math.mod(nPLow, 10) > 0 ) then
 				strPoint = strPoint.."."..math.mod(nPLow,10);
 			end
-			YuanbaoExchange_Text1 : SetText("ÄúÄ¿Ç°ÕË»§Ê£ÓàµãÊı£º"..strPoint*10 );
+			YuanbaoExchange_Text1 : SetText("Nhçm trß¾c m¡t tài khoän còn th×a ğªm:"..strPoint*10 );
 			--×¨ÊôµãÊı
 			local nExPoint = Get_XParam_UINT(1)/10;
 			if nExPoint > 0 then
@@ -111,8 +111,8 @@ end
 function YuanbaoExchange_Update()
 	Exchange_Rate = Get_XParam_INT(1)/10
 
-	YuanbaoExchange_Text1 : SetText("#cff0000#bÊ£ÓàµãÊıÕıÔÚ²éÑ¯ÖĞ£¬ÇëÉÔºò¡­¡­")
-	YuanbaoExchange_Text3 : SetText("ĞèÒª»¨·ÑµãÊı£º0")
+	YuanbaoExchange_Text1 : SetText("#cff0000#bcòn th×a ğªm ğang · tu¥n tra Trung, Thïnh ch¶ mµt chút……")
+	YuanbaoExchange_Text3 : SetText("C¥n tiêu phí ğªm: 0")
 
 end
 
@@ -122,18 +122,18 @@ function YuanbaoExchange_OK_Clicked()
 	--AxTrace(0,0,"YuanbaoExchange_OK_Clicked 1 "..tostring(str));
 
 	if str == nil or str == "" then
-		YuanbaoExchange_Text3 : SetText("ĞèÒª»¨·ÑµãÊı£º0")
-		PushDebugMessage("ÇëÊäÈëÒª¶Ò»»µÄÔª±¦Êı¶î")
+		YuanbaoExchange_Text3 : SetText("C¥n tiêu phí ğªm: 0")
+		PushDebugMessage("Thïnh ğßa vào Yêu ğ±i Ğích nguyên bäo mÑc")
 		return
 	end
 
 	if tonumber(str) > 20000 then
 		--PushDebugMessage("#{DHYB_180524_31}")
-		PushDebugMessage("Ã¿´Î×î´ó¿É¶Ò»»20000µãÊı¡£")
+		PushDebugMessage("M²i l¥n l¾n nh¤t Khä ğ±i 20000ğªm.")
 		return
 	end
 	if( tonumber(str) <= 0 ) then
-		PushDebugMessage("Ã¿´Î¶Ò»»µÄÔª±¦ÊıÁ¿×îÉÙÎª1µã£¬ÇëÊäÈë´óÓÚµÈÓÚ1µãµÄÊı×Ö¡£")
+		PushDebugMessage("M²i l¥n ğ±i Ğích nguyên bäo s¯ lßşng ít nh¤t Vi 1Ği¬m, Thïnh ğßa vào l¾n h½n tß½ng ğß½ng 1Ği¬m Ğích con s¯.")
 		return
 	end
 
@@ -174,7 +174,7 @@ function YuanbaoExchange_CareEventHandle(careId, op, distance)
 		if(tonumber(careId) ~= g_clientNpcId) then
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(op == "distance" and tonumber(distance)>MAX_OBJ_DISTANCE or op=="destroy") then
 			YuanbaoExchange_Close();
 		end
@@ -182,7 +182,7 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØĞÄNPC£¬
---ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 --Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function BeginCareObject_YuanbaoExchange(objCaredId)
@@ -213,7 +213,7 @@ function YuanbaoExchange_Count_Change()
 	end
 	str = tostring( strNumber );
 	YuanbaoExchange_Moral_Value:SetTextOriginal( str );
-	YuanbaoExchange_Text3 : SetText("ĞèÒª»¨·ÑµãÊı£º"..tostring( Exchange_Rate * strNumber*10 ) )
+	YuanbaoExchange_Text3 : SetText("C¥n tiêu phí ğªm:"..tostring( Exchange_Rate * strNumber*10 ) )
 end
 
 function YuanbaoExchange_Max_Clicked()

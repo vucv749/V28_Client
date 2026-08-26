@@ -2,12 +2,12 @@
 
 local g_clientNpcId = -1;
 
-local g_ExchangeMaxBangGong = 200; --¿ÉÒÔ¶Ò»»µÄ°ï¹±ÉÏÏŞ
-local g_ExchangeMinBangGong = 10;	--¿ÉÒÔ¶Ò»»µÄ°ï¹±ÏÂÏŞ
+local g_ExchangeMaxBangGong = 200; --?????????
+local g_ExchangeMinBangGong = 10;	--?????????
 
 local g_GoldTicket_TabelIndex = 40004517;
-local g_Huoyuezhiduixian_Money = 0 -- ½ñÈÕ¿É¶Ò»»½ğ±ÒÖµ
-local g_Huoyuezhiduixian_GetMoney = 0 -- ½ñÈÕÒÑ¶Ò»»½ğ±ÒÖµ
+local g_Huoyuezhiduixian_Money = 0 -- ????????
+local g_Huoyuezhiduixian_GetMoney = 0 -- ????????
 local g_Huoyuezhiduixian_HuoYueZhi = 0
 local g_Huoyuezhiduixian_MoneyInTicket = 0
 local g_Huoyuezhiduixian_DuixianMax = 2500000
@@ -25,7 +25,7 @@ end
 
 function Huoyuezhiduixian_OnEvent(event)
 	if(event == "UI_COMMAND" and tonumber(arg0) == 198122) then
-		if this : IsVisible() then									-- Èç¹û½çÃæ¿ª×Å£¬Ôò²»´¦Àí
+		if this : IsVisible() then									-- ??????,????
 			return
 		end
 		
@@ -33,7 +33,7 @@ function Huoyuezhiduixian_OnEvent(event)
 		
 		g_Huoyuezhiduixian_GetMoney = Get_XParam_INT(0)
 		
-		-- ½ñÈÕ»îÔ¾Öµ
+		-- ½ñÈ »îÔ¾Öµ
 		g_Huoyuezhiduixian_HuoYueZhi = Get_XParam_INT(1)
 		Huoyuezhiduixian_Text3:SetText("#{XHYZ_XML_7}"..tostring(g_Huoyuezhiduixian_HuoYueZhi))
 
@@ -59,13 +59,13 @@ function Huoyuezhiduixian_OnEvent(event)
 		--end
 		Huoyuezhiduixian_Text4:SetText(str)
 		
-		OpenWindow("Packet")--´ò¿ª±³°ü
+		OpenWindow("Packet")--????
 
 		this : Show()
 		
 		g_clientNpcId = DataPool : GetNPCIDByServerID(npcObjId)
 		if g_clientNpcId == -1 then
-			PushDebugMessage("Î´·¢ÏÖ NPC")
+			PushDebugMessage("Chßa phát hi®n NPC")
 			Huoyuezhiduixian_Close()
 			return
 		end
@@ -76,7 +76,7 @@ function Huoyuezhiduixian_OnEvent(event)
 			return;
 		end
 
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if arg1 == "distance" and tonumber(arg2) > MAX_OBJ_DISTANCE or arg1=="destroy" then
 			Huoyuezhiduixian_Close()
 		end
@@ -143,11 +143,11 @@ function Huoyuezhiduixian_CheckIfOK(idx)
 	elseif(idx == 2) then
 		nNum = tonumber(Huoyuezhiduixian_Moral_Value2 : GetText());
 		Ctl = Huoyuezhiduixian_Moral_Value2;
-		szErr = "Ö»ÔÊĞíÊäÈëĞ¡ÓÚ100µÄÖµ£¡";
+		szErr = "Chích cho phép ğßa vào nhö 100giá tr¸!";
 	elseif(idx == 3) then
 		nNum = tonumber(Huoyuezhiduixian_Moral_Value3 : GetText());
 		Ctl = Huoyuezhiduixian_Moral_Value3;
-		szErr = "Ö»ÔÊĞíÊäÈëĞ¡ÓÚ100µÄÖµ£¡";
+		szErr = "Chích cho phép ğßa vào nhö 100giá tr¸!";
 	end
 	
 	if (szErr == nil or Ctl == nil) then

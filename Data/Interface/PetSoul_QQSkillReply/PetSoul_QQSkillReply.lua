@@ -30,7 +30,7 @@ function PetSoul_QQSkillReply_OnEvent(event)
 		g_CaredNpc = DataPool : GetNPCIDByServerID(g_TargetId);
 		AxTrace(0,1,"g_TargetId="..g_TargetId .. " g_CaredNpc="..g_CaredNpc)
 		if g_CaredNpc == -1 then
-			PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£");
+			PushDebugMessage("Dæ li®u máy chü có v¤n ğ«");
 			return;
 		end
 		BeginCareObject_PetSoul_QQSkillReply()

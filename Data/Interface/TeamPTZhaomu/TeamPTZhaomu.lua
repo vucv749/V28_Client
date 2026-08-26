@@ -1,5 +1,5 @@
-local MENPAI_BUTTON= {}; --门派单选
-local MENPAI_NUM = 11; --门派个数，包括任意
+local MENPAI_BUTTON= {}; --????
+local MENPAI_NUM = 11; --????,????
 local MENPAI_NAME = {
 	"#{ZDPT_XML_31}",
 	"#{GMGameInterface_Script_DataPool_Info_ShaoLin}",
@@ -54,13 +54,13 @@ function TeamPTZhaomu_InitWindow()
 	TeamPTZhaomu_EditName:SetText(ParserString("ZDPT_091028_14","NoColor"))
 	TeamPTZhaomu_NumericalValue1:SetText("10");
 	TeamPTZhaomu_NumericalValue2:SetText("119");
-	MENPAI_BUTTON_SetCheck(1,1); --默认 任意
+	MENPAI_BUTTON_SetCheck(1,1); --?? ??
 	MENPAI_STATUS[1] = 1;
 	for i=2, MENPAI_NUM do
 		MENPAI_BUTTON_SetCheck(i,0);
 		MENPAI_STATUS[i] = 0;
 	end
-	TeamPTZhaomu_Mudi: SetCurrentSelect(0)--默认 任意;
+	TeamPTZhaomu_Mudi: SetCurrentSelect(0)--?? ??;
 	UpdataMenpaiText();
 	TeamPTZhaomu_Cancel: SetText("#{INTERFACE_XML_542}");
 	g_isModify = 0;
@@ -93,14 +93,14 @@ function TeamPTZhaomu_Modify(strTopic,strGoal,strMenpaiList,strMinLevel,strMaxLe
 	TeamPTZhaomu_EditName:SetText(strTopic);
 	TeamPTZhaomu_NumericalValue1:SetText(strMinLevel);
 	TeamPTZhaomu_NumericalValue2:SetText(strMaxLevel);
-	local Menpai = ""; --框中显示的内容
+	local Menpai = ""; --???????
 	local TipsMenpai =""; --tips
 	for i=1, MENPAI_NUM do
-		if string.byte(strMenpaiList,i) == 49 then  --对应字符为1
+		if string.byte(strMenpaiList,i) == 49 then  --?????1
 			MENPAI_BUTTON_SetCheck(i,1);
 		end
 	end
-	TeamPTZhaomu_Mudi: SetCurrentSelect(tonumber(strGoal))--默认 任意;
+	TeamPTZhaomu_Mudi: SetCurrentSelect(tonumber(strGoal))--?? ??;
 	TeamPTZhaomu_Cancel: SetText("#{ZDPT_XML_23}");
 	UpdataMenpaiText();
 	g_isModify = 1;
@@ -179,7 +179,7 @@ function TeamPTZhaomu_Cancel_Clicked()
 	end
 end
 
---关闭按钮
+--关睜按钮
 function TeamPTZhaomu_Close_Clicked()
 	this:Hide();
 end
@@ -218,7 +218,7 @@ end
 
 --点击门派后刷新“需求门派”Text显示
 function UpdataMenpaiText()
-	local Menpai = ""; --框中显示的内容
+	local Menpai = ""; --???????
 	local TipsMenpai =""; --tips
 	local Num = 0;
 	for i=1, MENPAI_NUM do
@@ -246,7 +246,7 @@ function UpdataMenpaiText()
 end
 
 --点击任意
---注意：这里是button down的事件，button down的时候，还没触发按钮切换状态，所以是反的
+--注意：犫里是button down的事件，button down的时候，还没触发按钮切换状态，所以是反的
 function TeamPTZhaomu_Renyi_Button_Down()
 	if("False" == TeamPTZhaomu_RenyiInfo:GetProperty("Selected")) then
 		--马上会切换回True

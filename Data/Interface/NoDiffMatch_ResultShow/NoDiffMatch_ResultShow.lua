@@ -2,35 +2,35 @@
 --
 local g_unifiedposistion
 local g_istimerset			= 0
-local g_ui_list				= {}		-- ui集合
-local g_data_list			= {}		-- 数据集合，每次一清
-local g_memcount_max		= 12		-- 队员总数
-local g_teammem_max			= 6			-- 单队伍最大人数
-local g_othercolor			= {			-- 其他状态颜色
-	lose = "#ccccccc",					-- 掉线
-	die = "#cff0000",					-- 死亡
+local g_ui_list				= {}		-- ui??
+local g_data_list			= {}		-- ????,????
+local g_memcount_max		= 12		-- ????
+local g_teammem_max			= 6			-- ???????
+local g_othercolor			= {			-- ??????
+	lose = "#ccccccc",					-- ??
+	die = "#cff0000",					-- ??
 }
 
 local g_menpaiinfo			= {
-	[0]  ={name="#{WCBZ_180128_59}",color="#cff6600"},	--少林
-	[1]  ={name="#{WCBZ_180128_65}",color="#cffcc00"},	--明教
-	[2]  ={name="#{WCBZ_180128_67}",color="#c00ff00"},	--丐帮
-	[3]  ={name="#{WCBZ_180128_61}",color="#c0000ff"},	--武当
-	[4]  ={name="#{WCBZ_180128_68}",color="#cff99cc"},	--峨嵋
-	[5]  ={name="#{WCBZ_180128_66}",color="#c007700"},	--星宿
-	[6]  ={name="#{WCBZ_180128_60}",color="#cffff00"},	--天龙
-	[7]  ={name="#{WCBZ_180128_63}",color="#cffffff"},	--天山
-	[8]  ={name="#{WCBZ_180128_64}",color="#c7700ff"},	--逍遥
-	[9]  ={name="#{WCBZ_180128_57}",color="#c999999"},	--无门派
-	[10] ={name="#{WCBZ_180128_62}",color="#cffffb3"},	--曼陀
+	[0]  ={name="#{WCBZ_180128_59}",color="#cff6600"},	--??
+	[1]  ={name="#{WCBZ_180128_65}",color="#cffcc00"},	--??
+	[2]  ={name="#{WCBZ_180128_67}",color="#c00ff00"},	--??
+	[3]  ={name="#{WCBZ_180128_61}",color="#c0000ff"},	--??
+	[4]  ={name="#{WCBZ_180128_68}",color="#cff99cc"},	--??
+	[5]  ={name="#{WCBZ_180128_66}",color="#c007700"},	--??
+	[6]  ={name="#{WCBZ_180128_60}",color="#cffff00"},	--??
+	[7]  ={name="#{WCBZ_180128_63}",color="#cffffff"},	--??
+	[8]  ={name="#{WCBZ_180128_64}",color="#c7700ff"},	--??
+	[9]  ={name="#{WCBZ_180128_57}",color="#c999999"},	--???
+	[10] ={name="#{WCBZ_180128_62}",color="#cffffb3"},	--??
 }
 local g_battle_type			= {
-	fstblood_A = 1,						-- 队伍A一血
-	fstblood_B = 2,						-- 队伍B一血
-	teamwin_none = 0,					-- 无结果
-	teamwin_A = 1,						-- 队伍A赢
-	teamwin_B = 2,						-- 队伍B赢
-	battle_final = 3,					-- 比赛类型
+	fstblood_A = 1,						-- ??A??
+	fstblood_B = 2,						-- ??B??
+	teamwin_none = 0,					-- ???
+	teamwin_A = 1,						-- ??A?
+	teamwin_B = 2,						-- ??B?
+	battle_final = 3,					-- ????
 }
 
 local g_image				= {
@@ -43,9 +43,9 @@ local g_image				= {
 }
 
 local g_teampost = {
-	[0] = {show = 0, icon = "",},									-- 成员
-	[1] = {show = 1, icon = "set:Union1 image:Union_MemberIcon_L",},-- 副队长
-	[2] = {show = 1, icon = "set:Union1 image:Union_LeaderIcon_L",},-- 副队长
+	[0] = {show = 0, icon = "",},									-- ??
+	[1] = {show = 1, icon = "set:Union1 image:Union_MemberIcon_L",},-- ???
+	[2] = {show = 1, icon = "set:Union1 image:Union_LeaderIcon_L",},-- ???
 }
 
 function NoDiffMatch_ResultShow_PreLoad()
@@ -299,7 +299,7 @@ function NoDiffMatch_ResultShow_ResetPos()
 end
 
 --================================================
--- 关闭界面
+-- 关睜界面
 --================================================
 function NoDiffMatch_ResultShow_Close_Clicked()
 	this:Hide()

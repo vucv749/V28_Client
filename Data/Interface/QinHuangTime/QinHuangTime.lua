@@ -7,7 +7,7 @@ local g_QinHuangTime_count = 0
 
 function QinHuangTime_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
-	--离开场景，自动关闭
+	--离开场景，自动关睜
 	this:RegisterEvent("PLAYER_LEAVE_WORLD", false)	
 	this:RegisterEvent("QIHUANTIME_SWITCH")
 	-- 游戏窗口尺寸发生了变化

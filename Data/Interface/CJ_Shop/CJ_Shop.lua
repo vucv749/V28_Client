@@ -35,8 +35,8 @@ local g_CJ_Shop_ExchangeType = {
 }
 -- 获得类型
 local g_CJ_Shop_BagType = {
-    bag = 1,        -- 道具栏
-    mat = 2,        -- 材料栏
+    bag = 1,        -- ???
+    mat = 2,        -- ???
 }
 
 local g_CJ_Shop_Level = 60
@@ -45,8 +45,8 @@ function CJ_Shop_PreLoad()
     this:RegisterEvent("TLCJ_OPENSHOP", true)
     this:RegisterEvent("TLCJ_REFRESHSHOPINFO", false)
     this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)
-    this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-    this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+    this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+    this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end -- end func CJ_Shop_PreLoad()
 
 function CJ_Shop_OnEvent(event)
@@ -161,7 +161,7 @@ function CJ_Shop_Hidden()
 
     CJ_Shop_StopCareObject()
 
-    -- 关闭二级界面
+    -- 关睜二级界面
     if IsWindowShow("CJ_Shop_MBuy") then
         CloseWindow("CJ_Shop_MBuy", true)
     end
@@ -172,7 +172,7 @@ function CJ_Shop_Hide()
     this:Hide()
 end -- end func CJ_Shop_Hide()
 
--- 关闭按钮
+-- 关睜按钮
 function CJ_Shop_CloseShop()
     CJ_Shop_Hidden()
     this:Hide()

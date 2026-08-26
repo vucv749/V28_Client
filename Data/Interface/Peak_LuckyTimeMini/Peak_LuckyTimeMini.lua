@@ -4,7 +4,7 @@ local g_Peak_LuckyTimeMini_op = 0;
 
 function Peak_LuckyTimeMini_PreLoad()
 
-	--离开场景，自动关闭
+	--离开场景，自动关睜
 	this:RegisterEvent("PLAYER_LEAVE_WORLD", false)	
 	this:RegisterEvent("PEAK_LUCKYTIME_SWITCH")
 	this:RegisterEvent("UI_COMMAND")

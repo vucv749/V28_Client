@@ -5,7 +5,7 @@
 local g_LoverTimeTopList_UnifiedPosition = nil
 
 --¼ÆÊ±Æ÷
-local g_LoverTimeTopList_CooldownDur = 4*1000	--4sÀäÈ´
+local g_LoverTimeTopList_CooldownDur = 4*1000	--4s??
 local g_LoverTimeTopList_Cooldown = 
 {
 	[1] = 0,
@@ -18,8 +18,8 @@ local g_Present_BarList = {}
 local g_Receive_BarList = {}
 
 --Ò³Ç©ÏÔÊ¾
-local g_LoverTimeTopList_CurPage = 0--Ä¬ÈÏÏÔÊ¾Ò³Ç©--×¢£º1-3±êÊ¾ÅÅÐÐ°ñ 4-5±êÊ¾¶Ò»»½±Àø
-local g_LoverTimeTopList_MaxPage = 4--×î´óÒ³Ç©Êý
+local g_LoverTimeTopList_CurPage = 0--??????--?:1-3????? 4-5??????
+local g_LoverTimeTopList_MaxPage = 4--?????
 
 --ÅÅÐÐ°ñÏà¹Ø¿Ø¼þ
 local g_LoverTimeTopList_Btn_Page = {}
@@ -47,7 +47,7 @@ local g_LoverTimeTopList_State = -1
 local g_LoverTimeTopList_StateShow = -1
 
 --°ñµ¥ÐÅÏ¢
-local g_LoverTimeTopList_Info = --´ýÐÞ¸Ä
+local g_LoverTimeTopList_Info = --???
 {
 	[1] = {desc = "#{QRZM_211119_94}", count = 3, sendmd = 994, receivemd = 995, sendtitle = "#{QRZM_211119_96}", receivetitle = "#{QRZM_211119_115}", strsend = "#{QRZM_211119_101}", strreceive = "#{QRZM_211119_103}", strsendNum = "#{QRZM_211119_105}", strreceiveNum = "#{QRZM_211119_255}"},
 	[2] = {desc = "#{QRZM_211119_140}", count = 3, sendmd = 996, receivemd = 997, sendtitle = "#{QRZM_211119_96}", receivetitle = "#{QRZM_211119_115}", strsend = "#{QRZM_211119_101}", strreceive = "#{QRZM_211119_103}", strsendNum = "#{QRZM_211119_105}", strreceiveNum = "#{QRZM_211119_255}"},
@@ -55,7 +55,7 @@ local g_LoverTimeTopList_Info = --´ýÐÞ¸Ä
 }
 
 --°ñµ¥ÐÅÏ¢
-local g_LoverTimeTopList_Tip = --´ýÐÞ¸Ä
+local g_LoverTimeTopList_Tip = --???
 {
 	[1] = {tip1 = "#{QRZM_211119_277}", tip2 = "#{QRZM_211119_278}", tip3 = "#{QRZM_211119_279}"},
 	[2] = {tip1 = "#{QRZM_211119_277}", tip2 = "#{QRZM_211119_297}", tip3 = "#{QRZM_211119_279}"},
@@ -71,14 +71,14 @@ local LoverTimeTopList_Exchange_Qingrenjie_Preview = {}
 local g_LoverTimeTopList_DaiBi = 0
 g_LoverTimeTopList_Qingrenjie_Bonus =
 {
-	[1] = {neednum = 2400, itemid = 10125544, count = 1, name = "ÐÂÊ±×°£º¾£¼¬Ãµ¹å£¨ÓÀ¾Ã£¬»ñÈ¡°ó¶¨£©", LimitMD = -1, LimitNum = -1, LimitStr = nil, Preview = 1, bConform = 1},
-	[2] = {neednum = 1500, itemid = 30310112, count = 1, name = "³¬¼¶ÕäÊÞÁý£ºì«·çÊ¥ÊÞ", LimitMD = 1000, LimitNum = 3, LimitStr = LoverTimeTopList_Exchange_Item2_Text2, Preview = 1, bConform = 1},
-	[3] = {neednum = 1500, itemid = 38003017, count = 1, name = "×ÏÉ«»ÃÊÀÎäÆ÷ÀñºÐ", LimitMD = -1, LimitNum = -1, LimitStr = nil, Preview = 0, bConform = 1},
-	[4] = {neednum = 600, itemid = 10125592, count = 1, name = "ÓñÃßº®´¨", LimitMD = -1, LimitNum = -1, LimitStr = nil, Preview = 0, bConform = 1},
-	[5] = {neednum = 600, itemid = 10125576, count = 1, name = "ÁéÎÚÅªÓð", LimitMD = -1, LimitNum = -1, LimitStr = nil, Preview = 0, bConform = 1},
-	[6] = {neednum = 22, itemid = 30503140, count = 1, name = "ºçÒ«Ê¯", LimitMD = -1, LimitNum = -1, LimitStr = nil, Preview = 0, bConform = 0},
-	[7] = {neednum = 10, itemid = 38002138, count = 1, name = "10½»×Ó", LimitMD = -1, LimitNum = -1, LimitStr = nil, Preview = 0, bConform = 0},
-	[8] = {neednum = 1, itemid = 38002139, count = 1, name = "1½»×Ó", LimitMD = -1, LimitNum = -1, LimitStr = nil, Preview = 0, bConform = 0},
+	[1] = {neednum = 2400, itemid = 10125544, count = 1, name = "Tân trang phøc m¯t: Hoa H°ng Có Gai(vînh cØu, thu hoÕch Bäng Ð¸nh)", LimitMD = -1, LimitNum = -1, LimitStr = nil, Preview = 1, bConform = 1},
+	[2] = {neednum = 1500, itemid = 30310112, count = 1, name = "Siêu c¤p Trân Thú Lung: C½n l¯c Thánh Thú", LimitMD = 1000, LimitNum = 3, LimitStr = LoverTimeTopList_Exchange_Item2_Text2, Preview = 1, bConform = 1},
+	[3] = {neednum = 1500, itemid = 38003017, count = 1, name = "Màu tím Hoan Thª vû khí L­ HÕp", LimitMD = -1, LimitNum = -1, LimitStr = nil, Preview = 0, bConform = 1},
+	[4] = {neednum = 600, itemid = 10125592, count = 1, name = "Ng÷c Miên Hàn Xuyên", LimitMD = -1, LimitNum = -1, LimitStr = nil, Preview = 0, bConform = 1},
+	[5] = {neednum = 600, itemid = 10125576, count = 1, name = "Linh Ô Lµng Vû", LimitMD = -1, LimitNum = -1, LimitStr = nil, Preview = 0, bConform = 1},
+	[6] = {neednum = 22, itemid = 30503140, count = 1, name = "H°ng Di®u ThÕch", LimitMD = -1, LimitNum = -1, LimitStr = nil, Preview = 0, bConform = 0},
+	[7] = {neednum = 10, itemid = 38002138, count = 1, name = "10Giao TØ", LimitMD = -1, LimitNum = -1, LimitStr = nil, Preview = 0, bConform = 0},
+	[8] = {neednum = 1, itemid = 38002139, count = 1, name = "1Giao TØ", LimitMD = -1, LimitNum = -1, LimitStr = nil, Preview = 0, bConform = 0},
 }
 
 --===============================================
@@ -261,7 +261,7 @@ end
 function LoverTimeTopList_Rank_ShowTopList()
 	--ÓÐÐ§ÐÔÅÐ¶Ï
 	if g_LoverTimeTopList_CurPage < 1 or g_LoverTimeTopList_CurPage > 3 then
-		PushDebugMessage("µ±Ç°Ò³Ç©²»ÊÇÅÅÐÐ°ñ")
+		PushDebugMessage("Trß¾c m£t Di®p Thiêm không phäi ðÑng hàng thÑ Bäng")
 		return
 	end
 	
@@ -289,7 +289,7 @@ function LoverTimeTopList_Rank_ShowTopList()
 	local nNumStr = ScriptGlobal_Format(g_LoverTimeTopList_Info[g_LoverTimeTopList_CurPage].strsendNum, nSendNum)
 	LoverTimeTopList_Ranking_Present_Rose:SetText(nNumStr)
 	
-	--ÏÔÊ¾ÊÕ»¨ÊýÁ¿
+	--ÏÔÊ¾Ê »¨ÊýÁ¿
 	--LoverTimeTopList_Ranking_Receive_Title:SetText(g_LoverTimeTopList_Info[g_LoverTimeTopList_CurPage].receivetitle)
 	local nReceiveNum =  DataPool:GetPlayerMission_DataRound(g_LoverTimeTopList_Info[g_LoverTimeTopList_CurPage].receivemd)
 	local nReceiveNumStr = ScriptGlobal_Format(g_LoverTimeTopList_Info[g_LoverTimeTopList_CurPage].strreceiveNum, nReceiveNum)
@@ -386,13 +386,13 @@ end
 --===============================================
 -- ÒÔÏÂÎªÊÂ¼þÏìÓ¦
 --===============================================
---µã»÷¹Ø±Õ
+--µã»÷¹Ø± 
 function LoverTimeTopList_Close_Click()
-	--¹Ø±ÕÔ¤ÀÀ½çÃæ	
+	--¹Ø± Ô¤ÀÀ½çÃæ	
 	if(IsWindowShow("LoverTimeTopListPreview")) then
 		CloseWindow("LoverTimeTopListPreview", true)
 	end
-	--Êý¾ÝÇå¿Õ
+	--Êý¾ÝÇå¿ 
 	LoverTimeTopList_Clear()
 	--½çÃæÒþ²Ø
 	this:Hide()
@@ -402,7 +402,7 @@ end
 function LoverTimeTopList_Page_Click(index)
 	--ÓÐÐ§ÐÔÅÐ¶Ï
 	if index <= 0 or index > g_LoverTimeTopList_MaxPage then
-		PushDebugMessage("Ò³Ç©´íÎó£¬ÇëÖØÐÂÑ¡Ôñ")
+		PushDebugMessage("Di®p Thiêm sai l¥m, Thïnh mµt l¥n næa lña ch÷n")
 		return
 	end
 		
@@ -418,7 +418,7 @@ function LoverTimeTopList_Page_Click(index)
 		--Ë¢ÐÂÅÅÐÐ°ñ
 		local flag = LoverTimeTopList_RankClick_Refresh()
 		if flag == 0 and nPage >= 1 and nPage <= g_LoverTimeTopList_MaxPage then
-			g_LoverTimeTopList_Btn_Page[nPage]:SetCheck(1)--ÇÐ»ØÔ­À´Ò³Ãæ
+			g_LoverTimeTopList_Btn_Page[nPage]:SetCheck(1)--??????
 		end
 	elseif g_LoverTimeTopList_CurPage == 4 then
 		LoverTimeTopList_Exchange_Qingrenjie_Update()
@@ -429,7 +429,7 @@ end
 function LoverTimeTopList_RankClick_Refresh()
 	--ÓÐÐ§ÐÔÅÐ¶Ï
 	if g_LoverTimeTopList_CurPage < 1 or g_LoverTimeTopList_CurPage > 3 then
-		PushDebugMessage("µ±Ç°Ò³Ç©²»ÊÇÅÅÐÐ°ñ")
+		PushDebugMessage("Trß¾c m£t Di®p Thiêm không phäi ðÑng hàng thÑ Bäng")
 		return 0
 	end
 	--ÅÐ¶ÏÀäÈ´Ê±¼ä
@@ -458,19 +458,19 @@ function LoverTimeTopList_Prize_Present()
 
 	--ÓÐÐ§ÐÔÅÐ¶Ï
 	if g_LoverTimeTopList_CurPage < 1 or g_LoverTimeTopList_CurPage > 3 then
-		PushDebugMessage("µ±Ç°Ò³Ç©²»ÊÇÅÅÐÐ°ñ")
+		PushDebugMessage("Trß¾c m£t Di®p Thiêm không phäi ðÑng hàng thÑ Bäng")
 		return
 	end	
 	
 	--ÅÐ¶ÏÁì½±Ê±¼ä
-	if g_LoverTimeTopList_State == 0 then--ÀíÂÛÉÏ²»´æÔÚ
+	if g_LoverTimeTopList_State == 0 then--??????
 		PushDebugMessage(g_LoverTimeTopList_Tip[g_LoverTimeTopList_CurPage].tip1)
 		return
-	elseif g_LoverTimeTopList_State >= 1 and g_LoverTimeTopList_State <= 5 then--ÅÅÐÐ°ñ¼ÆÊ±ÖÐ
+	elseif g_LoverTimeTopList_State >= 1 and g_LoverTimeTopList_State <= 5 then--??????
 		PushDebugMessage(g_LoverTimeTopList_Tip[g_LoverTimeTopList_CurPage].tip2)
 		return
-	elseif g_LoverTimeTopList_State == 6 then--¿ÉÒÔÁì½±
-	else--ÀíÂÛÉÏ²»´æÔÚ
+	elseif g_LoverTimeTopList_State == 6 then--????
+	else--??????
 		PushDebugMessage(g_LoverTimeTopList_Tip[g_LoverTimeTopList_CurPage].tip3)
 		return
 	end
@@ -495,24 +495,24 @@ function LoverTimeTopList_Prize_Present()
 
 end
 
---µã»÷ÊÕ»¨°ñÁì½±
+--µã»÷Ê »¨°ñÁì½±
 function LoverTimeTopList_Prize_Receive()
 
 	--ÓÐÐ§ÐÔÅÐ¶Ï
 	if g_LoverTimeTopList_CurPage < 1 or g_LoverTimeTopList_CurPage > 3 then
-		PushDebugMessage("µ±Ç°Ò³Ç©²»ÊÇÅÅÐÐ°ñ")
+		PushDebugMessage("Trß¾c m£t Di®p Thiêm không phäi ðÑng hàng thÑ Bäng")
 		return
 	end	
 	
 	--ÅÐ¶ÏÁì½±Ê±¼ä
-	if g_LoverTimeTopList_State == 0 then--ÀíÂÛÉÏ²»´æÔÚ
+	if g_LoverTimeTopList_State == 0 then--??????
 		PushDebugMessage(g_LoverTimeTopList_Tip[g_LoverTimeTopList_CurPage].tip1)
 		return
-	elseif g_LoverTimeTopList_State >= 1 and g_LoverTimeTopList_State <= 5 then--ÅÅÐÐ°ñ¼ÆÊ±ÖÐ
+	elseif g_LoverTimeTopList_State >= 1 and g_LoverTimeTopList_State <= 5 then--??????
 		PushDebugMessage(g_LoverTimeTopList_Tip[g_LoverTimeTopList_CurPage].tip2)
 		return
-	elseif g_LoverTimeTopList_State == 6 then--¿ÉÒÔÁì½±
-	else--ÀíÂÛÉÏ²»´æÔÚ
+	elseif g_LoverTimeTopList_State == 6 then--????
+	else--??????
 		PushDebugMessage(g_LoverTimeTopList_Tip[g_LoverTimeTopList_CurPage].tip3)
 		return
 	end
@@ -540,11 +540,11 @@ end
 --===============================================
 -- ÒÔÏÂÎª»ù´¡º¯Êý
 --===============================================
---×´Ì¬Çå¿Õ
+--×´Ì¬Çå¿ 
 function LoverTimeTopList_Clear()
- 	--µ±Ç°Ò³ÂëÇå¿Õ
+ 	--µ±Ç°Ò³ÂëÇå¿ 
 	g_LoverTimeTopList_CurPage = 0
-	--»î¶¯×´Ì¬Çå¿Õ
+	--»î¶¯×´Ì¬Çå¿ 
 	g_LoverTimeTopList_State = -1
 end
 
@@ -633,7 +633,7 @@ end
 function LoverTimeTopList_Exchange_ItemPreview( Idx )
 
 	if Idx == 1 then
-		PushEvent("OPEN_DRESSPREVIEW", 10125544, 86, 57) --Ê±×°\·¢ÐÍ\Á³ÐÍ
+		PushEvent("OPEN_DRESSPREVIEW", 10125544, 86, 57) --??\??\??
 	end
 	
 	if Idx == 2 then

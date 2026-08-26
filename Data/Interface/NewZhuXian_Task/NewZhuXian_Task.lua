@@ -6,7 +6,7 @@ local g_Frame_UnifiedPosition
 function NewZhuXian_Task_PreLoad()
 
 	this:RegisterEvent("UI_COMMAND",true)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
 	this:RegisterEvent("ADJEST_UI_POS",false)
 
@@ -33,10 +33,10 @@ function NewZhuXian_Task_OnEvent(event)
 			--打开界面
 			NewZhuXian_Task_ShowFrame()
 		elseif param == 2 then
-			--自动寻路：找npc
+			--自动寻路：犚npc
 			NewZhuXian_Task_GoToFindNpc()
 		elseif param == 3 then
-			--关闭界面
+			--关睜界面
 			NewZhuXian_Task_OnHiden()
 		end
 		
@@ -60,7 +60,7 @@ function NewZhuXian_Task_ShowFrame()
 	this:Show()
 end
 
---点击：前往server判断，是否可以寻路找npc
+--点击：前往server判断，是否可以寻路犚npc
 function NewZhuXian_Task_Clicked()
 	Clear_XSCRIPT();
 		Set_XSCRIPT_Function_Name("GotoFindNpc");
@@ -72,22 +72,22 @@ function NewZhuXian_Task_Clicked()
 	NewZhuXian_Task_OnHiden()
 end
 
---响应：通过server判断，可以寻路找npc
+--响应：通过server判断，可以寻路犚npc
 function NewZhuXian_Task_GoToFindNpc()
 
-	AutoRuntoTargetExWithName(63, 53, 613, "墨知愁")
+	AutoRuntoTargetExWithName(63, 53, 613, "M Tri S")
 
 	NewZhuXian_Task_OnHiden()
 end
 
---调整：界面位置
+--调狖：界面位置
 function NewZhuXian_Task_ResetPos()
 
 	NewZhuXian_Task_Frame:SetProperty("UnifiedPosition", g_Frame_UnifiedPosition)
 
 end
 
---关闭：界面
+--关睜：界面
 function NewZhuXian_Task_OnHiden()
 	this:Hide()
 end

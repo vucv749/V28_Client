@@ -5,33 +5,33 @@ local g_DaHuaQiXiShop_start_time = 20240801
 local g_DaHuaQiXiShop_end_time = 20240915
 local g_DaHuaQiXiShop_CurrencyBuy_start_time = 20240909
 local g_DaHuaQiXiShop_CurrencyBuy_end_time = 20240915
-local g_DaHuaQiXiShop_BuyLevel = 30 -- 30¼¶ÒÔÉÏ²Å¿ÉÒÔ¹ºÂò
+local g_DaHuaQiXiShop_BuyLevel = 30 -- 30????????
 
-local g_DaHuaQiXiShop_CurTag = 1 --µ±Ç°·ÖÒ³id£¬´Ó1¿ªÊ¼
-local g_DaHuaQiXiShop_CurPage = 1 --µ±Ç°Ò³Êý
-local g_DaHuaQiXiShop_PerPageCount = 15 --Ã¿Ò»Ò³ÏÔÊ¾µÄÉÌÆ·ÊýÁ¿
-local g_DaHuaQiXiShop_ItemsCount = {} --Ä³¸öÒ³Ç©ÏÂµÄÉÌÆ·×ÜÊýÁ¿
-local g_DaHuaQiXiShop_Page_Saved = {} --±£´æÉÏÒ»´Î´ò¿ªÄ³¸ö¶þ¼¶Ò³Ç©Ê±£¬ÔÚä¯ÀÀµÚ¼¸Ò³
+local g_DaHuaQiXiShop_CurTag = 1 --????id,?1??
+local g_DaHuaQiXiShop_CurPage = 1 --????
+local g_DaHuaQiXiShop_PerPageCount = 15 --??????????
+local g_DaHuaQiXiShop_ItemsCount = {} --???????????
+local g_DaHuaQiXiShop_Page_Saved = {} --??????????????,??????
 
 local g_DaHuaQiXiShop_Frame_UnifiedXPosition
 local g_DaHuaQiXiShop_Frame_UnifiedYPosition
 
 local g_DaHuaQiXiShop_UIList = {
-    box = {}, --Õû¸öÉÌÆ·µÄUI
-    cnt = {}, --ÏÞ¹ºText
-    cntb= {}, --ÏÞ¹ºµÄ±³¾°Í¼
-    sgn = {}, --»õ±Òicon
-    prz = {}, --¼Û¸ñText
+    box = {}, --?????UI
+    cnt = {}, --??Text
+    cntb= {}, --??????
+    sgn = {}, --??icon
+    prz = {}, --??Text
     -- btn = {}, --¹ºÂò°´Å¥
-    abtn= {}, --Õ¹Ê¾µÀ¾ßµÄActionButton
-    disi= {}, --ÕÛ¿Û½Ç±ê
-    disc= {}, --ÕÛ¿ÛText
-    disp= {}, --ÕÛ¿Û±³¾°Í¼
-    name= {}, --ÉÌÆ·ÃûText
-    mask= {}, --ÃÉºìÕÚÕÖ
-    day = {}, --ÓÒÉÏÐ¡×ÖÈÕÏÞ¹º
-    week= {}, --ÓÒÉÏÐ¡×Ö¡°ÖÜ¡±
-    xian= {}, --ÓÒÉÏÐ¡×Ö¡°ÏÞ¡±
+    abtn= {}, --?????ActionButton
+    disi= {}, --????
+    disc= {}, --??Text
+    disp= {}, --?????
+    name= {}, --???Text
+    mask= {}, --????
+    day = {}, --???????
+    week= {}, --????“?”
+    xian= {}, --????“?”
 }
 local g_DaHuaQiXiShop_ItemsInfo = {}
 local g_DaHuaQiXiShop_BuyingIndex = -1
@@ -40,12 +40,12 @@ local g_DaHuaQiXiShop_CurWeek = 0
 local g_DaHuaQiXiShop_NeedUpdateData = 0
 
 local g_DaHuaQiXiShop_Daibi_Icons = {
-    "set:ActivitySchedule image:ActivitySchedule_CurrencyIcon2", --´ú±Ò1
-    "set:ActivitySchedule image:ActivitySchedule_CurrencyIcon2", --´ú±Ò2
+    "set:ActivitySchedule image:ActivitySchedule_CurrencyIcon2", --??1
+    "set:ActivitySchedule image:ActivitySchedule_CurrencyIcon2", --??2
 }
 local g_DaHuaQiXiShop_Daibi_Strs = {
-    "#{DHSD_20240522_53}", --ÆÐÌá×Ó
-    "#{DHSD_20240522_54}", --ÆÐÌáÖé
+    "#{DHSD_20240522_53}", --???
+    "#{DHSD_20240522_54}", --???
 }
 
 --************************
@@ -145,7 +145,7 @@ function DaHuaQiXi_Shop_OnEvent(event)
                 Set_XSCRIPT_ScriptID(g_DaHuaQiXiShop_MainScriptId)
                 Set_XSCRIPT_ParamCount(0)
             Send_XSCRIPT()
-            PushDebugMessage("#{DHSD_20240522_68}") --ÉÌµêÒò¿çÖÜÒÑË¢ÐÂ
+            PushDebugMessage("#{DHSD_20240522_68}") --????????
         end
     elseif event == "DAHUASHOP_BUYITEM_ONCONFIRMED" then
         if this:IsVisible() then
@@ -167,25 +167,25 @@ function DaHuaQiXi_Shop_On_ResetPos()
 end
 
 --************************
--- ¹Ø±Õ°´Å¥ÊÂ¼þ
+-- ¹Ø± °´Å¥ÊÂ¼þ
 --************************
 function DaHuaQiXi_Shop_OnHiden()
     DaHuaQiXi_Shop_Close()
 end
 
 --************************
--- ¹Ø±ÕÊÂ¼þ
+-- ¹Ø± ÊÂ¼þ
 --************************
 function DaHuaQiXi_Shop_OnHidden()
     DaHuaQiXi_Shop_Close()
 end
 
 --************************
--- ¹Ø±Õ½çÃæ
+-- ¹Ø± ½çÃæ
 --************************
 function DaHuaQiXi_Shop_Close()
-    PushEvent("CLOSE_BOOTH") --¹Ø±ÕÅúÁ¿¹ºÂò´°¿ÚShop_MBuy
-    PushEvent("CLOSE_DAHUAQIXI_SHOP_MSGBOX") -- ¹Ø±Õ¶þ´ÎÈ·ÈÏ½çÃæ
+    PushEvent("CLOSE_BOOTH") --????????Shop_MBuy
+    PushEvent("CLOSE_DAHUAQIXI_SHOP_MSGBOX") -- ????????
     
     g_DaHuaQiXiShop_CurTag = 1
     g_DaHuaQiXiShop_CurPage = 1
@@ -218,12 +218,12 @@ end
 function DaHuaQiXi_Shop_Check(index, buyCount)
     local curDay = tonumber(DataPool:GetServerDayTime())
 	if curDay < g_DaHuaQiXiShop_start_time or curDay > g_DaHuaQiXiShop_end_time then
-		PushDebugMessage("#{DHSD_20240522_55}") -- µ±Ç°·Ç»î¶¯ÆÚ¼ä£¬ÎÞ·¨½øÐÐ´Ë²Ù×÷¡£
+		PushDebugMessage("#{DHSD_20240522_55}") -- ???????,????????
 		return 0
 	end
 	
 	if DataPool:Lua_IsInTServer() == 1 then
-		PushDebugMessage("#{DHSD_20240522_4}") -- ÎÞ·¨ÔÚÌì»Ä¹Å¾³»òãê¾©²ÎÓë¸Ã»î¶¯¡£
+		PushDebugMessage("#{DHSD_20240522_4}") -- ????????????????
 		return 0
 	end
 
@@ -239,7 +239,7 @@ function DaHuaQiXi_Shop_Check(index, buyCount)
 
     local nLevel = Player:GetLevel()
 	if nLevel < g_DaHuaQiXiShop_BuyLevel then
-		PushDebugMessage("#{DHSD_20240522_23}") -- ÄúµÄµÈ¼¶²»×ã30¼¶£¬ÎÞ·¨½øÐÐ´Ë²Ù×÷¡£
+		PushDebugMessage("#{DHSD_20240522_23}") -- ??????30?,????????
 		return 0
 	end
 
@@ -256,13 +256,13 @@ function DaHuaQiXi_Shop_Check(index, buyCount)
     end
 
     if g_DaHuaQiXiShop_ItemsInfo[index].leftNum == 0 then
-        PushDebugMessage("#{DHSD_20240522_25}") --¸ÃÉÌÆ·ÒÑÊÛóÀ£¬¹ºÂòÊ§°Ü¡£
+        PushDebugMessage("#{DHSD_20240522_25}") --??????,?????
 		return 0
     end
 
     local itemId = g_DaHuaQiXiShop_ItemsInfo[index].itemId
     local itemNum = g_DaHuaQiXiShop_ItemsInfo[index].itemNum
-    local itemNum = Lua_GetDaHuaQiXiShop_MaxNumCanBuy(itemId, itemNum) --¼ÆËã¿Õ¼äºóµÄ×î´ó¹ºÂò×éÊý£¨ÓÐ¿Õ¼ä²»×ãµÄÌáÊ¾£©
+    local itemNum = Lua_GetDaHuaQiXiShop_MaxNumCanBuy(itemId, itemNum) --????????????(????????)
     if itemNum <= 0 then
         return 0
     end
@@ -273,7 +273,7 @@ end
 -- ¹ºÂòÉÌÆ·
 --************************
 function DaHuaQiXi_Shop_Clicked(index)
-    if g_DaHuaQiXiShop_BuyingIndex ~= -1 then --·ÀÖ¹ÔÚ¹ºÂòÃ»Íê³ÉÊ±¹ºÂò
+    if g_DaHuaQiXiShop_BuyingIndex ~= -1 then --???????????
         return
     end
 
@@ -288,7 +288,7 @@ function DaHuaQiXi_Shop_Clicked(index)
     
     local daibiType = g_DaHuaQiXiShop_ItemsInfo[index].daibiType
     local daibiNum = g_DaHuaQiXiShop_ItemsInfo[index].daibiNum
-    local playerCoin_Token = 0 --³ÖÓÐ»õ±ÒÊýÁ¿
+    local playerCoin_Token = 0 --??????
 	if daibiType == 1 then
 		playerCoin_Token = daibiCount1
 	elseif daibiType == 2 then
@@ -334,7 +334,7 @@ end
 --************************
 function DaHuaQiXi_Shop_ConfirmBuy(ID, num)
     if g_DaHuaQiXiShop_ItemsInfo[g_DaHuaQiXiShop_BuyingIndex].ID ~= ID then
-        PushDebugMessage("¹ºÂòÊý¾ÝÒì³£")
+        PushDebugMessage("Mua s¯ li®u d¸ thß¶ng")
         return
     end
 
@@ -384,17 +384,17 @@ end
 -- Ë¢ÐÂ½çÃæ
 --************************
 function DaHuaQiXi_Shop_Update()
-    if g_DaHuaQiXiShop_NeedUpdateData == 1 then --ÐèÒªÏò·þÎñÆ÷ÇëÇóÐÂµÄÊý¾Ý£¬ÊÕµ½ºóÔÙË¢ÐÂ
+    if g_DaHuaQiXiShop_NeedUpdateData == 1 then --????????????,??????
         Clear_XSCRIPT()
             Set_XSCRIPT_Function_Name("OnClientAskData")
             Set_XSCRIPT_ScriptID(g_DaHuaQiXiShop_MainScriptId)
             Set_XSCRIPT_ParamCount(0)
         Send_XSCRIPT()
-        PushDebugMessage("#{DHSD_20240522_24}") --½±ÀøÒÑ¸üÐÂ£¬ÇëÉÔºóÖØÊÔ¡£
+        PushDebugMessage("#{DHSD_20240522_24}") --?????,??????
         return
     end
     g_DaHuaQiXiShop_BuyingIndex = -1
-    PushEvent("CLOSE_BOOTH") --¹Ø±ÕÅúÁ¿¹ºÂò´°¿ÚShop_MBuy
+    PushEvent("CLOSE_BOOTH") --????????Shop_MBuy
 
     -- Ôª±¦¶Ò»»´ú±Ò°´Å¥ÏÔÒþ
     local curDay = tonumber(DataPool:GetServerDayTime())
@@ -444,7 +444,7 @@ function DaHuaQiXi_Shop_UpdateItemUI(i)
     end
 
     -- ÉÏ·½ÏÔÊ¾ÏÞ¹ºÊýÁ¿ºÍ±ê¼Ç
-    if leftNum == -1 then --²»ÏÞ¹º
+    if leftNum == -1 then --???
         g_DaHuaQiXiShop_UIList.cnt[i]:Hide()
         g_DaHuaQiXiShop_UIList.cntb[i]:Hide()
         g_DaHuaQiXiShop_UIList.mask[i]:Hide()
@@ -461,22 +461,22 @@ function DaHuaQiXi_Shop_UpdateItemUI(i)
             g_DaHuaQiXiShop_UIList.mask[i]:Hide()
         end
         
-        if limitType == 2 then --ÓÀ¾ÃÏÞ¹º
+        if limitType == 2 then --????
             g_DaHuaQiXiShop_UIList.xian[i]:Show()
             g_DaHuaQiXiShop_UIList.week[i]:Hide()
             g_DaHuaQiXiShop_UIList.day[i]:Hide()
-        elseif limitType == 1 then --ÖÜÏÞ¹º
+        elseif limitType == 1 then --???
             g_DaHuaQiXiShop_UIList.week[i]:Show()
             g_DaHuaQiXiShop_UIList.xian[i]:Hide()
             g_DaHuaQiXiShop_UIList.day[i]:Hide()
         end
     end
-    -- ÕÛ¿Û
+    --  Û¿Û
     g_DaHuaQiXiShop_UIList.disi[i]:Hide()
     
     -- »õ±ÒÍ¼Æ¬
     -- g_DaHuaQiXiShop_UIList.sgn[i]:SetProperty("Image", g_DaHuaQiXiShop_Daibi_Icons[huobi])
-    if g_DaHuaQiXiShop_UIList.sgn[i] then g_DaHuaQiXiShop_UIList.sgn[i]:Hide() end --²»ÔÙÏÔÊ¾Í¼±ê
+    if g_DaHuaQiXiShop_UIList.sgn[i] then g_DaHuaQiXiShop_UIList.sgn[i]:Hide() end --??????
     -- ÎïÆ·Ãû³Æ
     g_DaHuaQiXiShop_UIList.name[i]:SetText(ScriptGlobal_Format("#{DHSD_20240522_19}", DataPool:Lua_GetItemNameByIndex(itemId)))
     -- ¼Û¸ñ
@@ -508,7 +508,7 @@ function DaHuaQiXi_Shop_UpdatePageUI()
     
     local TotalCount = g_DaHuaQiXiShop_ItemsCount[g_DaHuaQiXiShop_CurTag]
     if not TotalCount then
-        PushDebugMessage("´ó»°ÆßÏ¦ÉÌµêÊý¾Ý´íÎó")
+        PushDebugMessage("MÕnh mi®ng ðêm th¤t t¸ch cØa hàng s¯ li®u sai l¥m")
         TotalCount = 0
     end
 

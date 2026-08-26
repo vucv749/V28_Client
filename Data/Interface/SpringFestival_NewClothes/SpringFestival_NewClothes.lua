@@ -66,7 +66,7 @@ end
 
 function SpringFestival_NewClothes_OnEvent( event )
 
-	if ( event == "UI_COMMAND" and tonumber(arg0) == UI_Command_S ) then --xjc1 ¥Úø™ΩÁ√Ê
+	if ( event == "UI_COMMAND" and tonumber(arg0) == UI_Command_S ) then --xjc1 ????
 
 		SpringFestival_NewClothes_Clean()
 
@@ -74,17 +74,17 @@ function SpringFestival_NewClothes_OnEvent( event )
 
 		g_objCared = DataPool : GetNPCIDByServerID(tonumber(g_objID))
 		if g_objCared == -1 then
-			PushDebugMessage("server¥´π˝¿¥µƒ ˝æ›”–Œ Ã‚°£")
+			PushDebugMessage("DÊ liÆu m·y ch¸ cÛ v§n ´")
 			return
 		end
 		if nil ~= g_objCared and g_objCared > 0 then
 			this:CareObject(g_objCared, 1, "SpringFestival_NewClothes")
 		end
 
-		Need_count = Get_XParam_INT(1) --”µ”–Ωı–Â‘∆Àø
-		ZhiXiu_Num = Get_XParam_INT(2) --µ±«∞“—÷Ø–Â
-		Get_Prize =  Get_XParam_INT(3) --¡Ï»°Ω±¿¯
-		Animation_Flag = Get_XParam_INT(4) --¡Ï»°Ω±¿¯
+		Need_count = Get_XParam_INT(1) --??????
+		ZhiXiu_Num = Get_XParam_INT(2) --?????
+		Get_Prize =  Get_XParam_INT(3) --????
+		Animation_Flag = Get_XParam_INT(4) --????
 
 		SpringFestival_NewClothes_Set(Need_count, ZhiXiu_Num, Get_Prize, Animation_Flag)
 
@@ -93,7 +93,7 @@ function SpringFestival_NewClothes_OnEvent( event )
 		local nGemCount_1 = PlayerPackage:Lua_GetUnLockItemCount(SpringFestival_needitem)
 		local nGemCount_2 = PlayerPackage:Lua_GetUnLockItemCount(SpringFestival_needitem_Bind)
 		local nGemCount = nGemCount_1 + nGemCount_2
-		SpringFestival_NewClothes_Text1:SetText( ScriptGlobal_Format("#{ZYJX_211124_11}", nGemCount)) --”µ”–Ωı–Â‘∆Àø£∫%s0∏ˆ
+		SpringFestival_NewClothes_Text1:SetText( ScriptGlobal_Format("#{ZYJX_211124_11}", nGemCount)) --??????:%s0?
 
 	elseif( event == "ADJEST_UI_POS" ) then
 		SpringFestival_NewClothes_ResetPos()
@@ -109,7 +109,7 @@ function SpringFestival_NewClothes_OnEvent( event )
 			return
         end
         
-		-- »Áπ˚∫ÕNPCµƒæ‡¿Î¥Û”⁄“ª∂®æ‡¿ÎªÚ’ﬂ±ª…æ≥˝£¨◊‘∂Øπÿ±’
+		-- »Áπ˚∫ÕNPCµƒæ‡¿Î¥Û”⁄“ª∂®æ‡¿ÎªÚ†ﬂ±ª…æ≥˝£¨◊‘∂Øπÿ±†
         if(arg1 == "distance" and tonumber(arg2) > MAX_OBJ_DISTANCE or arg1=="destroy") then
             SpringFestival_NewClothes_Close()
         end
@@ -127,7 +127,7 @@ function SpringFestival_NewClothes_ResetPos()
 
 end
 
--- ¥∞ø⁄πÿ±’
+-- ¥∞ø⁄πÿ±†
 function SpringFestival_NewClothes_Close()
 
 	if nil ~= g_objCared and g_objCared > 0 then
@@ -193,8 +193,8 @@ function SpringFestival_NewClothes_Clean()
 		SpringFestival_NewClothes_Right_Item1:SetActionItem( -1 );
 	end
 	
-	SpringFestival_NewClothes_Text1:SetText( ScriptGlobal_Format("#{ZYJX_211124_11}", 0)) --”µ”–Ωı–Â‘∆Àø£∫%s0∏ˆ
-	SpringFestival_NewClothes_Text2:SetText( ScriptGlobal_Format("#{ZYJX_211124_12}", 0)) --ƒ˙µ±«∞“—÷Ø–Â£∫%s0¥Œ
+	SpringFestival_NewClothes_Text1:SetText( ScriptGlobal_Format("#{ZYJX_211124_11}", 0)) --??????:%s0?
+	SpringFestival_NewClothes_Text2:SetText( ScriptGlobal_Format("#{ZYJX_211124_12}", 0)) --??????:%s0?
 
 	SpringFestival_NewClothes_Button1:Show()
 	SpringFestival_NewClothes_Button2:Hide()
@@ -206,8 +206,8 @@ end
 --ΩÁ√Ê…Ë÷√
 function SpringFestival_NewClothes_Set(count, Num, Flag, Animation_Flag)
 	--count ”µ”–Ωı–Â‘∆Àø --Num µ±«∞“—÷Ø–Â --Flag ¡Ï»°Ω±¿¯
-	SpringFestival_NewClothes_Text1:SetText( ScriptGlobal_Format("#{ZYJX_211124_11}", count)) --”µ”–Ωı–Â‘∆Àø£∫%s0∏ˆ
-	SpringFestival_NewClothes_Text2:SetText( ScriptGlobal_Format("#{ZYJX_211124_12}", Num)) --ƒ˙µ±«∞“—÷Ø–Â£∫%s0¥Œ
+	SpringFestival_NewClothes_Text1:SetText( ScriptGlobal_Format("#{ZYJX_211124_11}", count)) --??????:%s0?
+	SpringFestival_NewClothes_Text2:SetText( ScriptGlobal_Format("#{ZYJX_211124_12}", Num)) --??????:%s0?
 	
 	local Test = Num + 1
 	if Test > 6 then
@@ -232,16 +232,16 @@ function SpringFestival_NewClothes_Set(count, Num, Flag, Animation_Flag)
 
 	--÷Ø–Â5¥Œ“‘…œ£¨œ‘ æ¡Ï»°ΩÁ√Ê
 	if Num >= Need_MaxCount then
-		SpringFestival_NewClothes_Button1:Hide() --÷Ø–Â∞¥≈•
-		SpringFestival_NewClothes_Button2:Show() --¡ÏΩ±ΩÁ√Ê
-		SpringFestival_NewClothes_Received:Hide() --“—¡Ï»°
+		SpringFestival_NewClothes_Button1:Hide() --????
+		SpringFestival_NewClothes_Button2:Show() --????
+		SpringFestival_NewClothes_Received:Hide() --???
 	end
 
 	--“—¡Ï»°£¨œ‘ æ“—¡Ï»°ΩÁ√Ê
 	if Flag > 0 then
-		SpringFestival_NewClothes_Button1:Hide() --÷Ø–Â∞¥≈•
-		SpringFestival_NewClothes_Button2:Hide() --¡ÏΩ±ΩÁ√Ê
-		SpringFestival_NewClothes_Received:Show() --“—¡Ï»°
+		SpringFestival_NewClothes_Button1:Hide() --????
+		SpringFestival_NewClothes_Button2:Hide() --????
+		SpringFestival_NewClothes_Received:Show() --???
 	end
 
 end

@@ -1,30 +1,30 @@
--- 战队信息查看
+-- 牻队信息查看
 local g_unifiedposistion
 local g_BarList = {}
 local g_SelectIndex = -1
 local g_selectdataidx = -1
 local g_selectTeamIdx = -1
 local g_memcount = 0
-local g_trasname = 0			-- 转换名字
+local g_trasname = 0			-- ????
 local g_MenPaiNameList =
 {
-	[0]  ="#{WCBZ_180128_59}",	--少林
-	[1]  ="#{WCBZ_180128_65}",	--明教
-	[2]  ="#{WCBZ_180128_67}",	--丐帮
-	[3]  ="#{WCBZ_180128_61}",	--武当
-	[4]  ="#{WCBZ_180128_68}",	--峨嵋
-	[5]  ="#{WCBZ_180128_66}",	--星宿
-	[6]  ="#{WCBZ_180128_60}",	--天龙
-	[7]  ="#{WCBZ_180128_63}",	--天山
-	[8]  ="#{WCBZ_180128_64}",	--逍遥
-	[9]  ="#{WCBZ_180128_57}",	--无门派
-	[10] ="#{WCBZ_180128_62}",	--慕容
+	[0]  ="#{WCBZ_180128_59}",	--??
+	[1]  ="#{WCBZ_180128_65}",	--??
+	[2]  ="#{WCBZ_180128_67}",	--??
+	[3]  ="#{WCBZ_180128_61}",	--??
+	[4]  ="#{WCBZ_180128_68}",	--??
+	[5]  ="#{WCBZ_180128_66}",	--??
+	[6]  ="#{WCBZ_180128_60}",	--??
+	[7]  ="#{WCBZ_180128_63}",	--??
+	[8]  ="#{WCBZ_180128_64}",	--??
+	[9]  ="#{WCBZ_180128_57}",	--???
+	[10] ="#{WCBZ_180128_62}",	--??
 }
 
 local g_teampost = {
-	[0] = {show = 0, icon = "",},									-- 成员
-	[1] = {show = 1, icon = "set:Union1 image:Union_MemberIcon_L",},-- 副队长
-	[2] = {show = 1, icon = "set:Union1 image:Union_LeaderIcon_L",},-- 副队长
+	[0] = {show = 0, icon = "",},									-- ??
+	[1] = {show = 1, icon = "set:Union1 image:Union_MemberIcon_L",},-- ???
+	[2] = {show = 1, icon = "set:Union1 image:Union_LeaderIcon_L",},-- ???
 }
 
 function NoDiffMatch_TeamInfo_PreLoad()
@@ -56,7 +56,7 @@ end
 function NoDiffMatch_TeamInfo_OnShow(idx, trans)
 	--先初始化一下
 	NoDiffMatch_TeamInfo_InitUIData(idx, trans)
-	--填充战队信息
+	--填充牻队信息
 	if 1 == NoDiffMatch_TeamInfo_InitMemberListData() then
 		this:Show()
 	end
@@ -119,7 +119,7 @@ end
 function NoDiffMatch_TeamInfo_AddMemberItem( teamidx, index, zoneid )
 	local level, menpai, post, name = ZBS:GetViewTeamInfo(teamidx, index-1)
 	if post == nil or level <= 0 then
-		return --没有数据
+		return --????
 	end
 	
 	local bar = NoDiffMatch_TeamInfo_ListClient:AddChild("NoDiffMatch_TeamInfo_List_Frame")
@@ -176,7 +176,7 @@ function NoDiffMatch_TeamInfo_PrivateChat_Clicked()
 
 	local level, menpai, post, name = ZBS:GetViewTeamInfo(g_selectTeamIdx, g_selectdataidx-1)
 	if post == nil or level <= 0 then
-		return --没有数据
+		return --????
 	end
 
 	
@@ -190,7 +190,7 @@ function NoDiffMatch_TeamInfo_ViewInfo_Clicked()
 
 	local level, menpai, post, name = ZBS:GetViewTeamInfo(g_selectTeamIdx, g_selectdataidx-1)
 	if post == nil or level <= 0 then
-		return --没有数据
+		return --????
 	end
 	
 	if Friend:IsPlayerIsFriend(name) == 1  then
@@ -218,7 +218,7 @@ function NoDiffMatch_TeamInfo_TransformName(name, zoneid)
 end
 
 --================================================
---关闭
+--关睜
 --================================================
 function NoDiffMatch_TeamInfo_CloseClicked()
 	this:Hide()

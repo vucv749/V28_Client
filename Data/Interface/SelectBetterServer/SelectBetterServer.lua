@@ -6,7 +6,7 @@ function SelectBetterServer_PreLoad()
 	--排队发短信请求手机号
 	this:RegisterEvent("GAMELOGIN_SHOW_QUEUEMSG_ASK_PHONE");
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
-	-- 关闭界面
+	-- 关睜界面
 	this:RegisterEvent("GAMELOGIN_CLOSE_COUNT_INPUT");
 	this:RegisterEvent("GAMELOGIN_SHOW_SYSTEM_INFO_NO_BUTTON");
 end

@@ -3,9 +3,9 @@ local g_PlanCount = 0
 local g_Plan = 0
 local g_CurSelExteriorID = 0
 local g_HunJingText = {
-	"1-2²ã",
-	"3-5²ã",
-	"6²ã",
+	"1-2T¢ng",
+	"3-5T¢ng",
+	"6T¢ng",
 }
 
 -- ½çÃæµÄÄ¬ÈÏÏà¶ÔÎ»ÖÃ
@@ -82,7 +82,7 @@ function PetSoul_RanSe_Jian_Init()
 	g_PlanCount = nPlanCount
 
 	PetSoul_RanSe_Jian_List:Show()
-	PetSoul_RanSe_Jian_List:AddItem("Ô­Ê¼·ç¸ñ", 0)
+	PetSoul_RanSe_Jian_List:AddItem("Nguyên thüy phong cách", 0)
 
 	for i = 1, nPlanCount do
 		local planstr = Exterior:LuaFnGetRanSePlanName(g_CurSelExteriorID, i)
@@ -200,7 +200,7 @@ function PetSoul_RanSe_UpdateHunJing()
 	end
 
 	PetSoul_RanSe_Jian_SearchMode:Show()
-	PetSoul_RanSe_Jian_SearchMode:ComboBoxAddItem("»ê¾³Ô¤ÀÀ", 0)
+	PetSoul_RanSe_Jian_SearchMode:ComboBoxAddItem("H°n Cänh Dñ Lãm", 0)
 	PetSoul_RanSe_Jian_SearchMode:ComboBoxAddItem(g_HunJingText[1], 1)
 	PetSoul_RanSe_Jian_SearchMode:ComboBoxAddItem(g_HunJingText[2], 2)
 	PetSoul_RanSe_Jian_SearchMode:ComboBoxAddItem(g_HunJingText[3], 3)

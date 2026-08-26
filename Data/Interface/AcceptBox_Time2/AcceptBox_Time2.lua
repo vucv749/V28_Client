@@ -15,8 +15,8 @@ local g_AcceptBox_Time2_FrameVar = {
 }
 
 local FrameInfoList = {
-	JIHESHAO_USE_CONFIRM = 1;	--集合哨
-	ZIDIAN_PICKONE_CONFIRM = 2, -- 飞凰礼包二选一
+	JIHESHAO_USE_CONFIRM = 1;	--???
+	ZIDIAN_PICKONE_CONFIRM = 2, -- ???????
 }
 
 local AcceptBox_Time2_FrameSize_Original = 0
@@ -34,7 +34,7 @@ function AcceptBox_Time2_PreLoad()
 	this:RegisterEvent("ADJEST_UI_POS");
     -- 游戏分辨率发生了变化
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED");
-	this:RegisterEvent("PLAYER_LEAVE_WORLD");--切场景
+	this:RegisterEvent("PLAYER_LEAVE_WORLD");--???
 	this:RegisterEvent("PLAYER_ENTERING_WORLD")
 end
 
@@ -97,10 +97,10 @@ function AcceptBox_Time2_OnEvent(event)
 			g_AcceptBox_Time2_FrameVar[1] = Get_XParam_INT(0);
 			g_AcceptBox_Time2_FrameVar[2] = Get_XParam_INT(1);
 			
-			AcceptBox_Time2_PageHeader_Name:SetText( "#{SFDJ_240117_53}" );	-- 设置题目
+			AcceptBox_Time2_PageHeader_Name:SetText( "#{SFDJ_240117_53}" );	-- ????
 			
 			local str = Get_XParam_STR(0);
-			AcceptBox_Time2_Text:SetText( str );	-- 设置内容
+			AcceptBox_Time2_Text:SetText( str );	-- ????
 			
 			g_AcceptBox_Time2_Time_FrameInfo = FrameInfoList.JIHESHAO_USE_CONFIRM
 			
@@ -109,13 +109,13 @@ function AcceptBox_Time2_OnEvent(event)
 			
 			this:Show()
 			
-		elseif commandIndex == 99859602 then	--飞凰礼包二选一
+		elseif commandIndex == 99859602 then	--???????
 			
 			g_AcceptBox_Time2_FrameVar[1] = Get_XParam_INT(0);
 			
-			AcceptBox_Time2_PageHeader_Name:SetText( "#{WYCJ_20240320_27}" );	-- 设置题目
+			AcceptBox_Time2_PageHeader_Name:SetText( "#{WYCJ_20240320_27}" );	-- ????
 			
-			AcceptBox_Time2_Text:SetText( "#{WYCJ_20240320_35}" );	-- 设置内容
+			AcceptBox_Time2_Text:SetText( "#{WYCJ_20240320_35}" );	-- ????
 			
 			g_AcceptBox_Time2_Time_FrameInfo = FrameInfoList.ZIDIAN_PICKONE_CONFIRM
 			

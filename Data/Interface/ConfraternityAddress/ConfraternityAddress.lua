@@ -110,11 +110,11 @@ function City_Port_Selected()
 	
 	City_Port_ClearInfo();
 	--Ãû³Æ
-	g_CityPortCtl.name:SetText("ÁìµØ£º"..City:GetPortInfo(idx, "Name"));
+	g_CityPortCtl.name:SetText("Lãnh ð¸a:"..City:GetPortInfo(idx, "Name"));
 	--ÉÌÈ¦
-	g_CityPortCtl.com:SetText("ËùÊôÉÌÇø£º"..City:GetPortInfo(idx, "ComName"));
+	g_CityPortCtl.com:SetText("Tß½ng Ñng Thß½ng Âu:"..City:GetPortInfo(idx, "ComName"));
 	--ÌØ²ú
-	g_CityPortCtl.product:SetText("¿ÉÄÜÓµÓÐÌØ²ú£º");
+	g_CityPortCtl.product:SetText("Có th¬ có ðßþc ð£c sän:");
 	--ÌØ²ú1
 	local szItemName = City:GetPortInfo(idx, "Product1");
 	if("" ~= szItemName) then
@@ -139,7 +139,7 @@ function City_Port_CreateCity()
 	local valid = tonumber(City:GetPortInfo(idx, "Valid"));
 	if(valid < 0) then
 		if(valid == -1) then
-			PushDebugMessage("Õâ¿éÁìµØÒÑ±»ÆäËû°ï»áÕ¼Áì¡£");
+			PushDebugMessage("Giá Kh¯i lãnh ð¸a ðã b¸ m£t khác bang hµi chiªm lînh.");
 		end
 		return;
 	end
@@ -157,7 +157,7 @@ function City_Port_CareEventHandle(careId, op, distance)
 		if(tonumber(careId) ~= g_clientNpcId) then
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(op == "distance" and tonumber(distance)>MAX_OBJ_DISTANCE or op=="destroy") then
 			this:Hide();
 		end

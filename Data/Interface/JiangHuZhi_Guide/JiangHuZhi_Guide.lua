@@ -23,8 +23,8 @@ local g_Item_List = {
 --=========
 function JiangHuZhi_Guide_PreLoad()
 
-	this:RegisterEvent("UI_COMMAND")--打开or刷新界面
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--进场景关闭界面
+	this:RegisterEvent("UI_COMMAND")--??or????
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
 	this:RegisterEvent("ADJEST_UI_POS")
 
@@ -112,7 +112,7 @@ function JiangHuZhi_Guide_On_ResetPos()
 end
 
 --=========
---关闭
+--关睜
 --=========
 function  JiangHuZhi_OnClose()
 

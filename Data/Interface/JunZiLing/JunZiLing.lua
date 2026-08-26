@@ -39,10 +39,10 @@ function JunZiLing_OnEvent(event)
         this:Hide()
     elseif (event == "UPDATE_YUANBAO") then
         JunZiLing_UpdateYuanBao()
-    elseif event == "UI_COMMAND" and (tonumber(arg0) == 99870901) then	--服务端传数据
-        local optType = Get_XParam_INT(0)	--界面操作类型（0 关闭，1打开， 2刷新）
+    elseif event == "UI_COMMAND" and (tonumber(arg0) == 99870901) then	--??????
+        local optType = Get_XParam_INT(0)	--??????(0 ??,1??, 2??)
         if 0 == optType then
-            --关闭
+            --关睜
             this:Hide()
         end 
         if  2 == optType and not this:IsVisible() then
@@ -162,7 +162,7 @@ end
 function JunZiLing_OK_Clicked()
 	local curTime = OSAPI:GetTickCount();
 	if ( curTime - g_ButtonLastTime < g_ButtonCDTime * 1000) then
- 	 	PushDebugMessage("#{SFDJ_240117_152}"); --不可连续点击，请稍等片刻后再点击
+ 	 	PushDebugMessage("#{SFDJ_240117_152}"); --??????,?????????
    		return;
    	end
    	g_ButtonLastTime = curTime;

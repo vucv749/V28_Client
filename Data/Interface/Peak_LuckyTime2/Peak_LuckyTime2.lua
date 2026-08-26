@@ -138,7 +138,7 @@ function Peak_LuckyTime2_InitFrame()
 	end
 
 			--挂计时器
-		SetTimer("Peak_LuckyTime2","Peak_LuckyTime2_Timer()", 1000);--计时
+		SetTimer("Peak_LuckyTime2","Peak_LuckyTime2_Timer()", 1000);--??
 
 	if(IsWindowShow("Peak_LuckyTimeMini")) then
 		this:Hide()

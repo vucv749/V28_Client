@@ -27,7 +27,7 @@ local g_Levelup_MaxRow = 6
 local g_rankIndex = -1
 
 function Levelup_TopListAward_PreLoad()
-	this:RegisterEvent("UI_COMMAND", true)--打开or刷新界面
+	this:RegisterEvent("UI_COMMAND", true)--??or????
 	this:RegisterEvent("OPEN_NORMAL_RANK_REWARD"); 
 	this:RegisterEvent("PLAYER_LEAVE_WORLD");
 	
@@ -110,12 +110,12 @@ function Levelup_TopListAward_OnEvent(event)
 
 	elseif event == "UPDATE_NORMAL_RANK_RED_POINT" then
 		if this:IsVisible() then
-			Levelup_TopListAward_UpButton(g_nType) --领奖后更新一下界面
+			Levelup_TopListAward_UpButton(g_nType) --?????????
 		end
 
 	elseif(event == "UI_COMMAND" and tonumber(arg0) == 999494001) then
 		if this:IsVisible() then
-			Levelup_TopListAward_UpButton(g_nType) --领奖后更新一下界面
+			Levelup_TopListAward_UpButton(g_nType) --?????????
 		end
 	elseif  event == "CLOSE_NORMAL_RANK_REWARD" then
 		if this:IsVisible() then
@@ -136,7 +136,7 @@ function Levelup_TopListAward_Info(rankType)
 		Levelup_TopListAward_DragTitle:SetText(g_Levelup_AwardTitleText[rankType])
 	end 
 
-	-- 正常奖励
+	-- 狚常奖励
 	for i = 0, g_Levelup_MaxRow-1 do
 		local name, icon1,num1,icon2,num2,icon3,num3,icon4,num4 = DataPool:lua_GetNormalRankingRewardShowInfo(rankType,i)
 
@@ -246,7 +246,7 @@ function Levelup_TopListAward_UpButton(rankType)
 	end
 
 
-	-- 普通奖励
+	-- 茽通奖励
 	if nIndex ~= -1 then
 		-- 数据出问题了，先返回吧
 		if g_Levelup_TopListAward_button[nIndex] == nil then
@@ -299,8 +299,8 @@ function Levelup_TopListAward_Click()
 	Clear_XSCRIPT()
 	Set_XSCRIPT_Function_Name( "OnReciveReward" )
 	Set_XSCRIPT_ScriptID(999494)
-	Set_XSCRIPT_Parameter(0,g_nType)		--排行榜
-	Set_XSCRIPT_Parameter(1,nRankIndex)		--排名
+	Set_XSCRIPT_Parameter(0,g_nType)		--???
+	Set_XSCRIPT_Parameter(1,nRankIndex)		--??
 	Set_XSCRIPT_ParamCount(2)
 	Send_XSCRIPT()
 

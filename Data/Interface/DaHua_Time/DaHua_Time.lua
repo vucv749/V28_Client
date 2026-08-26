@@ -88,7 +88,7 @@ function DaHua_Time_TimeOut()
 	DaHua_Time_Time2:SetProperty("Timer", tonumber(0));
 	DaHua_Time_Text:SetText("#{QXPVE_240522_39}")
 	DaHua_Time_Time3Text:SetText("")
-	DaHua_Time_Time2Text:SetText("»î¶¯ÒÑ½áÊø")
+	DaHua_Time_Time2Text:SetText("HoÕt ðµng Dî kªt thúc")
 end
 
 function DaHua_Time_OpenMini()

@@ -1,4 +1,4 @@
---查看已组建战队
+--查看已组建牻队
 
 local g_unifiedposistion = nil
 local g_TargetId = -1
@@ -7,8 +7,8 @@ local g_teamcnt = 0
 local g_curpage = 0
 local g_pagemax = 0
 local g_teammax = 0
-local g_op_cd = 2000		-- 操作CD
-local g_last_optime	= 1		-- 最后操作的时间
+local g_op_cd = 2000		-- ??CD
+local g_last_optime	= 1		-- ???????
 function NoDiffMatch_CreatTeamList_PreLoad()
 	this:RegisterEvent("ZBS_TEAMINFOLIST_SHOW")
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)

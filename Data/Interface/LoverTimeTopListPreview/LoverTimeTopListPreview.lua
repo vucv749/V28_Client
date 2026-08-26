@@ -267,7 +267,7 @@ function LoverTimeTopListPreview_YuLan()
 	end
 	
 	if g_LoverTimeTopListPreview_CurPage == 3 then
-		PushEvent("OPEN_DRESSPREVIEW", 10125560, 87, 58) --时装\发型\脸型
+		PushEvent("OPEN_DRESSPREVIEW", 10125560, 87, 58) --??\??\??
 	end
 
 end

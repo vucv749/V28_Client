@@ -12,7 +12,7 @@ local g_Wakuang_stopTime = 0
 local g_Wakuang_scnid = 617
 function Wakuang_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
-	--离开场景，自动关闭
+	--离开场景，自动关睜
 	this:RegisterEvent("PLAYER_LEAVE_WORLD", false)	
 
 	-- 游戏窗口尺寸发生了变化

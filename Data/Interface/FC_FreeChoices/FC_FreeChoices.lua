@@ -12,7 +12,7 @@ local m_uiItem = {}
 local m_bagIndex = -1
 
 local m_selectIndex = 0
---预加载函数，可以而且只能在这里注册脚本关心的事件
+--预加载函数，可以而且只能在犫里注册脚本关心的事件
 function FC_FreeChoices_PreLoad()
 	this:RegisterEvent("UI_COMMAND", true)
 	-- 游戏窗口尺寸发生了变化

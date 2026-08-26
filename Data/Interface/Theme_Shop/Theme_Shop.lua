@@ -20,9 +20,9 @@ local Theme_shop_Iteminfo = {
 function Theme_Shop_PreLoad()
 	this : RegisterEvent( "UI_COMMAND" );					-- UI_COMMAND  
 	this : RegisterEvent(" ADJEST_UI_POS",false)
-	this : RegisterEvent( "VIEW_RESOLUTION_CHANGED" );		-- 游戏分辨率发生了变化
-	this : RegisterEvent( "GAMELOGIN_SELECTCHARACTER" );	-- 选择人物
-	this : RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- 离开场景
+	this : RegisterEvent( "VIEW_RESOLUTION_CHANGED" );		-- ??????????
+	this : RegisterEvent( "GAMELOGIN_SELECTCHARACTER" );	-- ????
+	this : RegisterEvent( "HIDE_ON_SCENE_TRANSED" );		-- ????
 	this : RegisterEvent( "UPDATE_YUANBAO" );
 end
 

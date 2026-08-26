@@ -99,7 +99,7 @@ function TopChongZhi_OnEvent(event)
 		if(tonumber(arg0) ~= g_TopChongZhi_obj) then
 			return;
 		end 
-		--如果和商人的距离大于一定距离或者被删除，自动关闭
+		--如果和商人的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			--取消关心
 			SetDefaultMouse();  
@@ -347,11 +347,11 @@ end
 function TopChongZhi_BaiBao_Frame3_GetGift( Index )
 	-- 执行脚本
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "YBCost_GetPrize" ); 	-- 脚本函数名称
-		Set_XSCRIPT_ScriptID( 181000 );						-- 脚本编号
-		Set_XSCRIPT_Parameter( 0, g_TopChongZhiObjId );		-- 参数一
-		Set_XSCRIPT_Parameter( 1, Index );					-- 参数一
-		Set_XSCRIPT_ParamCount( 2 );						-- 参数个数
+		Set_XSCRIPT_Function_Name( "YBCost_GetPrize" ); 	-- ??????
+		Set_XSCRIPT_ScriptID( 181000 );						-- ????
+		Set_XSCRIPT_Parameter( 0, g_TopChongZhiObjId );		-- ???
+		Set_XSCRIPT_Parameter( 1, Index );					-- ???
+		Set_XSCRIPT_ParamCount( 2 );						-- ????
 	Send_XSCRIPT()
 end  
 --===============================================

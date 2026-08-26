@@ -1,5 +1,5 @@
 -- 冰雪节答题排行榜
---每日结算时间
+--每葼结算时间
 local g_SettleTime = 211500
 
 local g_Frozen_Answer_List_Frame_UnifiedXPosition
@@ -67,7 +67,7 @@ function Frozen_Answer_List_OnShow()
     g_MyRewardFlag = myRewardFlag
     Frozen_Answer_List_Self_Num:SetText(myScore)
 
-    -- 显示每日排名
+    -- 显示每葼排名
     local nDataCount = DataPool:lua_GetJSRankingListDataCount(g_RankingListDailyType)
     local nRank, name, score, state = DataPool:lua_GetJSRankingListInfo(g_RankingListDailyType, 0)
     local rankingListDailyState = state
@@ -138,7 +138,7 @@ function Frozen_Answer_List_GetClick()
         PushDebugMessage("#{DXDT_240920_56}")
         return
     end
-    -- 每日排行榜领奖
+    -- 每葼排行榜领奖
     DataPool:lua_GetJSRankingListGetReward(g_RankingListDailyType)
 end
 

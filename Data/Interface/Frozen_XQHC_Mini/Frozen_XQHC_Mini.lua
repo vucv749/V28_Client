@@ -42,15 +42,15 @@ function Frozen_XQHC_Mini_OnEvent(event)
             this:Show()
        
         elseif nOpt == 88 then
-            --结束 关闭界面
+            --结束 关睜界面
             this:Hide()
         end
     elseif event == "UI_COMMAND" and tonumber(arg0) == g_UICOMMAND_Challenge then
         local nOpt = Get_XParam_INT(0)
         if nOpt==2 then
-             --返回挑战秒数
+             --返回挑牻秒数
             local sec=  Frozen_XQHC_Mini_Countdown_Time:GetProperty("Timer")
-            Frozen_XQHC_Mini_Countdown_Time:SetProperty("Step", 0)--暂停
+            Frozen_XQHC_Mini_Countdown_Time:SetProperty("Step", 0)--??
             local numSec = -1
             if sec then
                 numSec = tonumber(sec)
@@ -91,7 +91,7 @@ function Frozen_XQHC_Mini_ShowInfo()
     end
     if g_StagetLevel == 1 and g_NumToNextLevel == 4 then
         --开始计时
-        Frozen_XQHC_Mini_Countdown_Time:SetProperty("Step", 1) -- 正计时
+        Frozen_XQHC_Mini_Countdown_Time:SetProperty("Step", 1) -- ???
         Frozen_XQHC_Mini_Countdown_Time:SetProperty("Timer",1)
 
     end

@@ -1,6 +1,6 @@
 
-local ExchangeSafe_BoxName = {"µÚÒ»¸ñ", "µÚ¶ş¸ñ", "µÚÈı¸ñ", "µÚËÄ¸ñ", "µÚÎå¸ñ", "µÚÁù¸ñ", "µÚÆß¸ñ", "µÚ°Ë¸ñ", "µÚ¾Å¸ñ", "µÚÊ®¸ñ", "µÚÊ®Ò»¸ñ", };
-local ExchangeSafe_Box_Maxnum = 100;            --×î¶àÏÔÊ¾100Ìõ
+local ExchangeSafe_BoxName = {"ThÑ nh¤t Cách", "Ğ® nh¸ Cách", "Ğ® tam Cách", "Ğ® tÑ Cách", "ThÑ nåm Cách", "ThÑ sáu Cách", "ThÑ bäy Cách", "ThÑ tám Cách", "ThÑ chín Cách", "Ğ® th§p Cách", "Ğ® th§p nh¤t Cách", };
+local ExchangeSafe_Box_Maxnum = 100;            --????100?
 local ExchangeSafe_Box_NowNum = 0;
 
 local g_ExchangeSafe_Frame_UnifiedPosition;

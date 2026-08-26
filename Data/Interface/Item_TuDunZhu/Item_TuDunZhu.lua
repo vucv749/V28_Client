@@ -5,7 +5,7 @@
 
 local g_SERVER_CONTROL_1 = 1008
 local g_SERVER_CONTROL_2 = 1009
-local g_SERVER_CONTROL_3 = 112235	--土灵珠使用界面
+local g_SERVER_CONTROL_3 = 112235	--???????
 
 local Server_Script_Function = "";
 local Server_Script_ID = 0;
@@ -16,7 +16,7 @@ local Server_Str = ""
 
 local Client_ItemIndex = 0;
 
-local g_Type	-- "use"使用土遁珠
+local g_Type	-- "use"?????
 							-- "call"队友使用土遁珠
 							-- "useTLZ"使用土灵珠
 
@@ -51,14 +51,14 @@ function Item_TuDunZhu_OnEvent(event)
 			Item_TuDunZhu_Show("use")
 			g_Type = "use"
 		elseif tonumber(arg0) == g_SERVER_CONTROL_2 then
-			-- 检测如果这个窗口开着，就不处理
+			-- 检测如果犫个窗口开着，就不处理
 			if( this:IsVisible() ) then
 				return
 			else
 				Item_TuDunZhu_Show("call")
 				g_Type = "call"
 			end
-		elseif tonumber(arg0) == g_SERVER_CONTROL_3 then	--土灵珠
+		elseif tonumber(arg0) == g_SERVER_CONTROL_3 then	--???
 			Item_TuDunZhu_Show("useTLZ")
 			g_Type = "useTLZ"
 		else
@@ -96,13 +96,13 @@ function Item_TuDunZhu_Show(event)
 --		Server_Script_ID = Get_XParam_INT(0);
 --		Server_Return_1 = Get_XParam_INT(1);
 --		
-		Item_TuDunZhu_OK_Button:SetText("#{INTERFACE_XML_975}")	--定位
-		Item_TuDunZhu_Cancel_Button:SetText("#{INTERFACE_XML_976}")	--传送
-		Item_TuDunZhu_DragTitle:SetText("#{INTERFACE_XML_977}")	--土遁珠
-		Item_TuDunZhu_Text:SetText("#{Item_TuDunZhu_Show_001}")	--土遁珠介绍
+		Item_TuDunZhu_OK_Button:SetText("#{INTERFACE_XML_975}")	--??
+		Item_TuDunZhu_Cancel_Button:SetText("#{INTERFACE_XML_976}")	--??
+		Item_TuDunZhu_DragTitle:SetText("#{INTERFACE_XML_977}")	--???
+		Item_TuDunZhu_Text:SetText("#{Item_TuDunZhu_Show_001}")	--?????
 		this:Show()
 
-		-- 关闭倒计时功能
+		-- 关睜倒计时功能
 		--Item_TuDunZhu_StopWatch : SetProperty("Timer",tostring(2000000));
 		Item_TuDunZhu_StopWatch:Hide()
 
@@ -113,9 +113,9 @@ function Item_TuDunZhu_Show(event)
 		Server_Return_2 = Get_XParam_INT(2);
 		Server_Str = Get_XParam_STR(1)
 
-		Item_TuDunZhu_OK_Button:SetText("#{INTERFACE_XML_976}")	--传送
-		Item_TuDunZhu_Cancel_Button:SetText("#{INTERFACE_XML_539}")	--取消
-		Item_TuDunZhu_DragTitle:SetText("#{INTERFACE_XML_977}")	--土遁珠
+		Item_TuDunZhu_OK_Button:SetText("#{INTERFACE_XML_976}")	--??
+		Item_TuDunZhu_Cancel_Button:SetText("#{INTERFACE_XML_539}")	--??
+		Item_TuDunZhu_DragTitle:SetText("#{INTERFACE_XML_977}")	--???
 		Item_TuDunZhu_Text:SetText(Server_Str)
 		
 		-- 添加倒计时
@@ -133,13 +133,13 @@ function Item_TuDunZhu_Show(event)
 		end
 
 		Client_ItemIndex = tonumber(arg1)
-		Item_TuDunZhu_OK_Button:SetText("#{INTERFACE_XML_975}")	--定位
-		Item_TuDunZhu_Cancel_Button:SetText("#{INTERFACE_XML_976}")	--传送
-		Item_TuDunZhu_DragTitle:SetText("#{INTERFACE_XML_978}")	--土灵珠
-		Item_TuDunZhu_Text:SetText("#{INTERFACE_XML_979}")	--土灵珠介绍
+		Item_TuDunZhu_OK_Button:SetText("#{INTERFACE_XML_975}")	--??
+		Item_TuDunZhu_Cancel_Button:SetText("#{INTERFACE_XML_976}")	--??
+		Item_TuDunZhu_DragTitle:SetText("#{INTERFACE_XML_978}")	--???
+		Item_TuDunZhu_Text:SetText("#{INTERFACE_XML_979}")	--?????
 		this:Show()
 
-		-- 关闭倒计时功能
+		-- 关睜倒计时功能
 		--Item_TuDunZhu_StopWatch : SetProperty("Timer",tostring(2000000));
 		Item_TuDunZhu_StopWatch:Hide()
 		
@@ -212,7 +212,7 @@ function Item_TuDunZhu_Cancel_Clicked()
 		-- 
 	elseif g_Type == "useTLZ"  then
 	
-		PlayerPackage:UseItem(Client_ItemIndex)	--土灵珠的默认使用逻辑为传送....
+		PlayerPackage:UseItem(Client_ItemIndex)	--?????????????....
 		
 	end
 

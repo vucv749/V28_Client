@@ -1,4 +1,4 @@
-local m_UI_NUM = 20090805	--珍兽灵性提升
+local m_UI_NUM = 20090805	--??????
 
 local m_PetIndex = -1
 local m_ObjCared = -1
@@ -21,9 +21,9 @@ local m_YuanBaoCosts = {
 
 function PetLingXingUp_PreLoad()
 	this : RegisterEvent( "UI_COMMAND" )
-	this : RegisterEvent( "REPLY_MISSION_PET" )						-- 玩家从列表选定一只珍兽
-	-- this : RegisterEvent( "UPDATE_PET_PAGE" )						-- 玩家身上的珍兽数据发生变化，包括增加一只珍兽
-	this : RegisterEvent( "DELETE_PET" )							-- 玩家身上减少一只珍兽
+	this : RegisterEvent( "REPLY_MISSION_PET" )						-- ???????????
+	-- this : RegisterEvent( "UPDATE_PET_PAGE" )						-- 玩家身上的犱兽数据发生变化，包括增加一只犱兽
+	this : RegisterEvent( "DELETE_PET" )							-- ??????????
 	this : RegisterEvent("UNIT_MONEY");
 	this : RegisterEvent("MONEYJZ_CHANGE")	
 	this : RegisterEvent("QUICKUP_PET_SENDMSG")
@@ -164,20 +164,20 @@ function PetLingXingUp_OnSelectPet(petIndex)
 		return;
 	end
 	
-	--珍兽已被其它界面选中
+	--犱兽已被其它界面选中
 	if (Pet:GetPetLocation(petIndex) ~= -1) then
 		return;
 	end
 
 	--未幻化
 	local gen = Pet:GetType(petIndex)
-	if gen ~= nil and gen < 100 then	--100以上为幻化珍兽
-		PushDebugMessage("#{RXZS_090804_13}")    --你选择的珍兽还未幻化，只有幻化后的珍兽才能提升灵性。
+	if gen ~= nil and gen < 100 then	--100???????
+		PushDebugMessage("#{RXZS_090804_13}")    --??????????,???????????????
 		return
 	end
 	--封顶了
 	if gen ~= nil and gen >= 110 then
-		PushDebugMessage("#{RXZS_090804_14}")    --你选择的珍兽灵性等级已经达到最高，不能再次提升灵性。
+		PushDebugMessage("#{RXZS_090804_14}")    --????????????????,?????????
 		return
 	end
 
@@ -187,12 +187,12 @@ function PetLingXingUp_OnSelectPet(petIndex)
 	PetLingXingUp_FakeObject:SetFakeObject( "My_PetStudySkill" );
 	
 
-	--切换珍兽的时候，释放上一个珍兽
+	--切换犱兽的时候，释放上一个犱兽
 	if(m_PetIndex ~= -1) then
 		Pet:SetPetLocation(m_PetIndex,-1);
 	end
 
-	m_PetIndex = petIndex;	--已经选好了珍兽
+	m_PetIndex = petIndex;	--???????
 	Pet:SetPetLocation(m_PetIndex,10);
 --	Pet:ClosePetSkillStudyMsgBox()
 
@@ -244,7 +244,7 @@ function PetLingXingUp_UICheck()
 		PetLingXingUp_Pet_Text:SetText(strName)	
 		
 		local gen = Pet:GetType(m_PetIndex)
-		if gen >= 100 and gen < 110 then				 --100以上为幻化珍兽
+		if gen >= 100 and gen < 110 then				 --100???????
 			PetLingXingUp_Money:SetProperty("MoneyNumber", m_money[gen - 99] );	
 			local selfMoney = Player:GetData("MONEY") + Player:GetData("MONEY_JZ") 
 
@@ -272,7 +272,7 @@ function PetLingXingUp_BeginCareObj(obj_id)
 end
 
 --元宝确认checkbox 点击
-function PetLingxing_YBPay_Clicked() --add:lby2015增加元宝确认购买
+function PetLingxing_YBPay_Clicked() --add:lby2015????????
 
 	local check  = tonumber(Pet:GetYuanbaoBuyState(1));
 
@@ -319,26 +319,26 @@ function PetLingXingUp_Quick_Check()
 	end
 	-- 判断，玩家当前是否验证了二级密码
 
-	-- 玩家当前是否已经选择了一只珍兽
+	-- 玩家当前是否已经选择了一只犱兽
 	if m_PetIndex == -1  then
 		PushDebugMessage("#{ZSKJT_130428_9}")
 		return 0
 	end
 
-	--当前所选择的珍兽是否处于锁定状态
+	--当前所选择的犱兽是否处于锁定状态
 	if (Pet:IsProtect(m_PetIndex) == 1) then
 		PushDebugMessage("#{ZSKSSJ_081113_06}")
 		return 0
 	end
 
-	--当前所选择的珍兽是否处于出战状态
+	--当前所选择的犱兽是否处于出牻状态
 	local petname,status = Pet:GetPetList_Appoint(m_PetIndex)
 	if (status == "on_fight") then
 		PushDebugMessage("#{ZSKJT_130428_23}")
 		return 0
 	end
 
-	-- 当前所选择珍兽的灵性是否小于10
+	-- 当前所选择犱兽的灵性是否小于10
 	local lingxing = Pet : GetLixing( m_PetIndex )
 	if lingxing >= 10 then 
 		ShowSystemTipInfo("#{RXZS_090804_14}")

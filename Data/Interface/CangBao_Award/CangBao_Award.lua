@@ -11,7 +11,7 @@ local g_CangBao_Award_Award2 = {}
 local g_CangBao_Award_Award3 = {}
 local g_CangBao_Award_Award4 = {}
 
---三种模式展示不同id
+--三种模式牴示不同id
 local g_CangBao_Mode =
 {
 	[1] = {nLow={39920158,38002534,20600001,0},nMidLow={39920158,39920157,38002533,20600001},nMidHigh={39920158,39920157,38002533,20600002},nHigh={38003055,30000010,10125702,10142079},},
@@ -147,7 +147,7 @@ function CangBao_Award_Frame_On_ResetPos()
 end
 
 --=========================================================
---关闭
+--关睜
 --=========================================================
 function CangBao_Award_Hide()
 	this:Hide()

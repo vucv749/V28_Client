@@ -1,12 +1,12 @@
--- 跨服日常BOSS 古塔
+-- 跨服葼常BOSS 古塔
 
 -- 默认位置
 local g_tbosstime_unifiedposition = nil
 local g_tbosstime_uicommand = 81015501
 local g_tbosstime_towertype = 1
 local g_uicommandtype = {
-    open = 1,                                   -- 打开界面
-    close = 1000,                               -- 关闭界面
+    open = 1,                                   -- ????
+    close = 1000,                               -- ????
 }
 
 local g_Data = {}
@@ -15,8 +15,8 @@ function TBossTime_PreLoad()
     this:RegisterEvent("KFRCBOSS_GTSHOW", true)
     this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)
     this:RegisterEvent("PLAYER_LEAVE_WORLD", false)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end
 
 function TBossTime_OnEvent(event)
@@ -55,7 +55,7 @@ function TBossTime_UICommandEvent()
         g_Data.bossFL = Get_XParam_INT(4)
         -- 奖励剩余次数
         g_Data.awardRemain = Get_XParam_INT(5)
-        -- 关闭时间
+        -- 关睜时间
         g_Data.closeTime = Get_XParam_INT(6)
         TBossTime_Show()
     end

@@ -21,12 +21,12 @@ local g_Wuhun_Frame_UnifiedXPosition;
 local g_Wuhun_Frame_UnifiedYPosition;
 
 local g_EffectDic = {
-	"#{WH_210223_142}",	--内功攻击
-	"#{WH_210223_143}",	--外功攻击
-	"#{WH_210223_138}",	--冰属性
-	"#{WH_210223_139}",	--火属性
-	"#{WH_210223_140}",	--玄属性
-	"#{WH_210223_141}",	--毒属性
+	"#{WH_210223_142}",	--????
+	"#{WH_210223_143}",	--????
+	"#{WH_210223_138}",	--???
+	"#{WH_210223_139}",	--???
+	"#{WH_210223_140}",	--???
+	"#{WH_210223_141}",	--???
 }
 
 local g_AttrNameCtrl = {}
@@ -1025,7 +1025,7 @@ function Wuhun_Xiulian_Page_Switch()
 	end
 end
 
---切换个人展示界面
+--切换个人牴示界面
 function Wuhun_Profile_Switch()
 	Variable:SetVariable("SelfUnionPos", Wuhun_Frame:GetProperty("UnifiedPosition"), 1);	
 	Exterior:LuaFnExteriorPlayerOpenProfileUI()	
@@ -1116,59 +1116,59 @@ end
 function Wuhun_OnPageClicked(idx)
 	Variable:SetVariable("PageNumber", tostring(idx), 1);
 	idx = g_PageOrder[idx]
-	if idx == 1 then--装备
+	if idx == 1 then--??
 		Wuhun_SelfEquip_Page_Switch()
-	elseif idx == 2 then--资料
+	elseif idx == 2 then--??
 		Wuhun_SelfData_Page_Switch()
-	elseif idx == 3 then--珍兽
+	elseif idx == 3 then--??
 		Wuhun_Pet_Page_Switch()
-	elseif idx == 4 then--武魂
+	elseif idx == 4 then--??
 		--Pet_Wuhun_Switch()
 		Wuhun_ClearPage()
-	elseif idx == 5 then--修炼
+	elseif idx == 5 then--??
 		Wuhun_Xiulian_Page_Switch()
-	elseif idx == 6 then--武道
+	elseif idx == 6 then--??
 		Wuhun_Talent_Page_Switch()
-	elseif idx == 7 then--灵玉
+	elseif idx == 7 then--??
 		Wuhun_Page_LingYu()
-	elseif idx == 8 then--神兵
+	elseif idx == 8 then--??
 		Wuhun_Page_ShenBing()
-	elseif idx == 9 then--雕文进阶
+	elseif idx == 9 then--????
 		Wuhun_Page_DWJinJie()
-	elseif idx == 10 then--巅峰
+	elseif idx == 10 then--??
 		Wuhun_Open_Peak()
-	elseif idx == 11 then--个人
+	elseif idx == 11 then--??
 		Wuhun_Profile_Switch()
-	elseif idx == 12 then--其他
+	elseif idx == 12 then--??
 		Wuhun_OtherInfo_Page_Switch()
 	end
 end
 
 function Wuhun_CheckPage(idx)
-	if idx == 1 then--装备
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--资料
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--珍兽
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--武魂
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--修炼
+	elseif idx == 5 then--??
 		return 1
-	elseif idx == 6 then--武道
+	elseif idx == 6 then--??
 		return DataPool:Lua_CheckIsShowTalent()
-	elseif idx == 7 then--灵玉
+	elseif idx == 7 then--??
 		return 1
-	elseif idx == 8 then--神兵
+	elseif idx == 8 then--??
 		return 1
-	elseif idx == 8 then--神兵
+	elseif idx == 8 then--??
 		return 1
-	elseif idx == 9 then--雕文进阶
+	elseif idx == 9 then--????
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
 		end
 		return 1
-	elseif idx == 10 then--巅峰 
+	elseif idx == 10 then--?? 
 		if Player : GetData("IsOriginalHJ") == 1 then
 			return 0
 		end
@@ -1176,51 +1176,51 @@ function Wuhun_CheckPage(idx)
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 11 then--个人
+	elseif idx == 11 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 15 then
 			return 1
 		end
-	elseif idx == 12 then--其他
+	elseif idx == 12 then--??
 		return 1
 	end
 	return 0
 end
 
 function Wuhun_IsPageEnable(idx)
-	if idx == 1 then--装备
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--资料
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--珍兽
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--武魂
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--修炼
+	elseif idx == 5 then--??
 		return 1
-	elseif idx == 6 then--武道
+	elseif idx == 6 then--??
 		return 1
-	elseif idx == 7 then--灵玉
+	elseif idx == 7 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 8 then--神兵
+	elseif idx == 8 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 65 then
 			return 1
 		end
-	elseif idx == 9 then--雕文进阶
+	elseif idx == 9 then--????
 		return 1
-	elseif idx == 10 then--巅峰
+	elseif idx == 10 then--??
 	
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 11 then--个人
+	elseif idx == 11 then--??
 		return 1
-	elseif idx == 12 then--其他
+	elseif idx == 12 then--??
 		return 1
 	end
 	return 0

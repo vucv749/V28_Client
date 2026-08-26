@@ -24,7 +24,7 @@ function DWShike_PreLoad()
 	this:RegisterEvent("UNIT_MONEY")
 	this:RegisterEvent("MONEYJZ_CHANGE")
 
-	this:RegisterEvent("CONFIRM_DWSHIKE")	-- È·ÈÏ½øĞĞµñÎÆÊ´¿ÌµÄÏûÏ¢
+	this:RegisterEvent("CONFIRM_DWSHIKE")	-- ???????????
 	
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
@@ -40,7 +40,7 @@ function DWShike_OnLoad()
 	g_DWSHIKE_Object[1] = DWShike_Object
 	g_DWSHIKE_Object[2] = DWShike_Object2
 	g_DWSHIKE_Object[3] = DWShike_Object3
-	-- Ê¼ÖÕ¿ÉÒÔµã»÷ OK °´Å¥, ÎªÁË·½±ãÌáÊ¾Íæ¼ÒĞÅÏ¢
+	-- Ê¼Ö ¿ÉÒÔµã»÷ OK °´Å¥, ÎªÁË·½±ãÌáÊ¾Íæ¼ÒĞÅÏ¢
 	DWShike_OK:Enable()
 	
 	g_DWShike_Frame_UnifiedPosition=DWShike_Frame:GetProperty("UnifiedPosition");
@@ -55,7 +55,7 @@ function DWShike_OnEvent(event)
 		local xx = Get_XParam_INT(0)
 		g_CaredNpc = DataPool:GetNPCIDByServerID(xx)
 		if g_CaredNpc == -1 then
-			PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£")
+			PushDebugMessage("Dæ li®u máy chü có v¤n ğ«")
 			return
 		end
 		BeginCareObject_DWShike()
@@ -158,7 +158,7 @@ function DWShike_Update(uiIndex, itemIndex)
 			-- ÅĞ¶ÏÎïÆ·ÊÇ·ñÒÑ¾­¼ø¶¨(Î´¼ø¶¨µÄ½ûÖ¹·ÅÈë)
 
 			-- ÅĞ¶ÏÎïÆ·ÊÇ·ñÎª¿ÉÒÔµñÎÆµÄ×°±¸, Èç¹û²»ÊÇ, Ö±½Óreturn
-			-- ÕâÀï·ÅÈë×°±¸µÄÊ±ºò¿ÉÄÜÃ»ÓĞ·ÅÈëµñÎÆ, ËùÒÔ²»¶Ô×°±¸µÄµÈ¼¶ÅĞ¶Ï, ·Åµ½ºóÃæÅĞ¶Ï
+			--  âÀï·ÅÈë×°±¸µÄÊ±ºò¿ÉÄÜÃ»ÓĞ·ÅÈëµñÎÆ, ËùÒÔ²»¶Ô×°±¸µÄµÈ¼¶ÅĞ¶Ï, ·Åµ½ºóÃæÅĞ¶Ï
 			local EquipPoint = LifeAbility:Can_Diaowen(i_index, -1)
 			if EquipPoint == -2 then
 				PushDebugMessage("#{ZBDW_091105_5}")
@@ -183,13 +183,13 @@ function DWShike_Update(uiIndex, itemIndex)
 		end
 
 		-- µñÎÆÊ´¿Ì²»ÅĞ¶Ï×°±¸ÊÇ·ñ¼ÓËøÁË - 2009-12-07
-		-- ÅĞ¶ÏÎïÆ·ÊÇ·ñ¼ÓËø(ÔÚÕâ¸öÂß¼­Ö®Ç°³ÌĞòÒÑ¾­ÅĞ¶ÏÁË)
+		-- ÅĞ¶ÏÎïÆ·ÊÇ·ñ¼ÓËø(ÔÚ â¸öÂß¼­Ö®Ç°³ÌĞòÒÑ¾­ÅĞ¶ÏÁË)
 		if u_index ~= 1 and PlayerPackage:IsLock(i_index) == 1 then
 			PushDebugMessage("#{ZBDW_091105_3}")
 			return
 		end
 
-		-- Èç¹û¿Õ¸ñÄÚÒÑ¾­ÓĞ¶ÔÓ¦ÎïÆ·ÁË, Ìæ»»Ö®
+		-- Èç¹û¿ ¸ñÄÚÒÑ¾­ÓĞ¶ÔÓ¦ÎïÆ·ÁË, Ìæ»»Ö®
 		if g_DWSHIKE_Item[u_index] ~= -1 then
 			LifeAbility:Lock_Packet_Item(g_DWSHIKE_Item[u_index], 0)
 		end
@@ -225,7 +225,7 @@ end
 
 --=========================================================
 -- ÅĞ¶ÏÊÇ·ñËùÓĞÎïÆ·¶¼ÒÑ·ÅºÃ
--- Ö»ÔÚµã»÷ OK °´Å¥µÄÊ±ºòµ÷ÓÃÕâ¸öº¯Êı
+-- Ö»ÔÚµã»÷ OK °´Å¥µÄÊ±ºòµ÷ÓÃ â¸öº¯Êı
 --=========================================================
 function DWShike_Check_AllItem()
 	DWShike_UpdateBasic()
@@ -285,7 +285,7 @@ function DWShike_Check_AllItem()
 	return 0
 end
 
-local EB_BINDED = 1;				-- ÒÑ¾­°ó¶¨
+local EB_BINDED = 1;				-- ????
 --=========================================================
 -- È·¶¨Ö´ĞĞ¹¦ÄÜ
 --=========================================================
@@ -307,7 +307,7 @@ function DWShike_OK_Clicked(okFlag)
 		PushDebugMessage("#{ZBDW_091105_24}")
 		return
 	elseif ret == 6 then
-		ShowSystemInfo("CLBD_091211_9");	--²»ÄÜÊ¹ÓÃ°ó¶¨ÎïÆ·¶ÔÖØÂ¥½øĞĞµñÎÆ
+		ShowSystemInfo("CLBD_091211_9");	--???????????????
 		return
 	elseif ret == 7 then
 		PushDebugMessage("#{ZBDW_091105_17}")
@@ -367,7 +367,7 @@ function DWShike_OK_Clicked(okFlag)
 end
 
 --=========================================================
--- ¹Ø±Õ½çÃæ
+-- ¹Ø± ½çÃæ
 --=========================================================
 function DWShike_Close()
 	this:Hide()
@@ -385,7 +385,7 @@ end
 
 --=========================================================
 -- ¿ªÊ¼¹ØĞÄNPC£¬
--- ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+-- ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 -- Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function BeginCareObject_DWShike()

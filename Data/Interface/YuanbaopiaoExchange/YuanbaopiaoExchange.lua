@@ -58,7 +58,7 @@ end
 function YuanbaopiaoExchange_Update()
 	YuanbaopiaoExchange_Moral_Value:SetProperty("DefaultEditBox", "True");
 	YuanbaopiaoExchange_Moral_Value:SetSelected( 0, -1 );
-	YuanbaopiaoExchange_Text1 : SetText("ÄúÉíÉÏÊ£ÓàµÄÔª±¦ÊıÁ¿£º"..tostring(Player:GetData("YUANBAO")))
+	YuanbaopiaoExchange_Text1 : SetText("KNB còn:"..tostring(Player:GetData("YUANBAO")))
 end
 
 function YuanbaopiaoExchange_OK_Clicked()
@@ -69,20 +69,20 @@ function YuanbaopiaoExchange_OK_Clicked()
 	end
 	
 	if tonumber(str) > tonumber(Player:GetData("YUANBAO")) then
-		PushDebugMessage("ÄúÊäÈëµÄÔª±¦ÊıÁ¿´óÓÚÄúÓµÓĞµÄÔª±¦ÊıÁ¿¡£");
+		PushDebugMessage("S¯ Kim Nguyên Bäo cüa các hÕ không ğü ğ¬ quy ğ±i!");
 		YuanbaopiaoExchange_Max_Clicked();
 		return
 	end
 	
 	if tonumber(str) < 0 or tonumber(str) > 50000 then
-		PushDebugMessage("Ã¿ÕÅÔª±¦Æ±×î´óÃæ¶îÎª50000¡£");
+		PushDebugMessage("M²i Trß½ng Nguyên Bäo Phiªu l¾n nh¤t m£t trán Vi 50000.");
 		YuanbaopiaoExchange_Moral_Value : SetTextOriginal("50000");
 		return
 	end
 	
 	local ret = Player:YuanBaoToTicket(tonumber(str));
 	if(-1 == ret) then
-		PushDebugMessage("ÄúÊäÈëµÄÔª±¦ÊıÁ¿´íÎó¡£");
+		PushDebugMessage("S¯ ngân lßşng các hÕ nh§p vào sai.");
 	else
 	--	YuanbaopiaoExchange_Close();
 		YuanbaopiaoExchange_Update()
@@ -113,7 +113,7 @@ function YuanbaopiaoExchange_CareEventHandle(careId, op, distance)
 		if(tonumber(careId) ~= g_clientNpcId) then
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(op == "distance" and tonumber(distance)>MAX_OBJ_DISTANCE or op=="destroy") then
 			YuanbaopiaoExchange_Close();
 		end
@@ -121,7 +121,7 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØĞÄNPC£¬
---ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 --Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function BeginCareObject_YuanbaopiaoExchange(objCaredId)

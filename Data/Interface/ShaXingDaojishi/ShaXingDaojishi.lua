@@ -9,30 +9,30 @@ local g_ShaXingDaojishi_Frame_UnifiedYPosition;
 
 --»ý·ÖMDÖµ
 local g_ShaXingDaojishi_MD = 769
-local g_ShaXingDaojishi_SelectBossIdx = -1	--µ±Ç°bossË÷Òý
+local g_ShaXingDaojishi_SelectBossIdx = -1	--??boss??
 --±¸×¢¿´µÄ  ²¢ÎÞÒýÓÃ
 local g_ShaXingDaojishi_BossIdxList = 
 {
-	[1] = {nName="ËÎ½ª"},
-	[2] = {nName="Â¬¾ýÒÝ"},
-	[3] = {nName="Àî¿ý"},
-	[4] = {nName="Â³Ö¾Éú"},
-	[5] = {nName="¹ØÊ¢"},
-	[6] = {nName="ÎâÓÀ"},
-	[7] = {nName="¹«ËïÊ¥"},
+	[1] = {nName="T¯ng Khß½ng"},
+	[2] = {nName="Lß Quân D§t"},
+	[3] = {nName="Lý Khôi"},
+	[4] = {nName="L² Chí Sinh"},
+	[5] = {nName="Quan Th¸nh"},
+	[6] = {nName="Ngô Vînh"},
+	[7] = {nName="Công Tôn Thánh"},
 }
 local g_ShaXingDaojishi_RandomList = 
 {
-	[0] = {nwarning="³ÖÐøÏÝÚå",nName="#{XSX_220705_262}"},
-	[1] = {nwarning="¼ÓÑªÈ¦",nName="#{XSX_220705_263}"},
-	[2] = {nwarning="¼õÖÎÁÆ",nName="#{XSX_220705_264}"},
-	[3] = {nwarning="ÎüÀ¶",nName="#{XSX_220705_265}"},
-	[4] = {nwarning="Ñ£ÔÎ",nName="#{XSX_220705_266}"},
-	[5] = {nwarning="¿Ö¾åÐéÈõ",nName="#{XSX_240326_13}"},
-	[6] = {nwarning="ÐÄÁé¿ØÖÆ",nName="#{XSX_240326_15}"},
-	[7] = {nwarning="ÕÙ»½Ð¡¹Ö",nName="#{XSX_240326_17}"},
-	[8] = {nwarning="Á¬Ïß",nName="#{XSX_240326_19}"},
-	[9] = {nwarning="Õ¨µ¯",nName="#{XSX_240326_21}"},
+	[0] = {nwarning="Liên tøc b¦y r§p",nName="#{XSX_220705_262}"},
+	[1] = {nwarning="Gia Huyªt Khuyên",nName="#{XSX_220705_263}"},
+	[2] = {nwarning="Giäm Tr¸ Li®u",nName="#{XSX_220705_264}"},
+	[3] = {nwarning="H¤p Lam",nName="#{XSX_220705_265}"},
+	[4] = {nwarning="Mê muµi",nName="#{XSX_220705_266}"},
+	[5] = {nwarning="Khüng Cø Hß Nhßþc",nName="#{XSX_240326_13}"},
+	[6] = {nwarning="Tâm linh kh¯ng chª",nName="#{XSX_240326_15}"},
+	[7] = {nwarning="G÷i v« Ti¬u Quái",nName="#{XSX_240326_17}"},
+	[8] = {nwarning="Liên Tuyªn",nName="#{XSX_240326_19}"},
+	[9] = {nwarning="Bom",nName="#{XSX_240326_21}"},
 }
 
 
@@ -82,7 +82,7 @@ function ShaXingDaojishi_OnEvent(event)
 		if(IsWindowShow("ShaXingDaojishi")) then
 			CloseWindow("ShaXingDaojishi", true)
 		end
-		if Get_XParam_INT(0) >= 0 then --µÚ¼¸¸öboss
+		if Get_XParam_INT(0) >= 0 then --???boss
 			ShaXingDaojishi_Open(Get_XParam_INT(0),Get_XParam_INT(1),Get_XParam_INT(2),Get_XParam_INT(3),Get_XParam_INT(4),Get_XParam_INT(5))
 		end
 	end
@@ -117,13 +117,13 @@ end
 function ShaXingDaojishi_Open(nSelectBossIdx,nBossIdx,nPoint,nRandomList,bRandomChoice, nMode)
 	g_ShaXingDaojishi_SelectBossIdx = nSelectBossIdx
 	--¹Ø¿¨ÐÅÏ¢
-	local nGuanqia = "Ò»"
+	local nGuanqia = "Mµt"
 	if nSelectBossIdx == 2 then
-		nGuanqia = "¶þ"
+		nGuanqia = "Nh¸"
 	elseif nSelectBossIdx == 3 then
-		nGuanqia = "Èý"
+		nGuanqia = "Tam"
 	elseif nSelectBossIdx == 4 then
-		nGuanqia = "ËÄ"
+		nGuanqia = "TÑ"
 	end
 	ShaXingDaojishi_DragTitle:SetText(ScriptGlobal_Format("#{XSX_220705_111}",nGuanqia));
 	
@@ -135,7 +135,7 @@ function ShaXingDaojishi_Open(nSelectBossIdx,nBossIdx,nPoint,nRandomList,bRandom
 	--Í¨¹Ø½±Àø
 	ShaXingDaojishi_Text2:SetText(ScriptGlobal_Format("#{XSX_220705_117}",tostring(nPoint)));
 	--³¡µØÐÅÏ¢
-	local g_ShaXing_RandomIdxList={1,2,3,4,6,8}--6¸ö³¡µØÔªËØË÷Òý£¨·þÎñÆ÷Ëæ»ú£©
+	local g_ShaXing_RandomIdxList={1,2,3,4,6,8}--6???????(?????)
 	g_ShaXing_RandomIdxList[1] = math.mod(nRandomList,10)
 	g_ShaXing_RandomIdxList[2] = math.floor(math.mod(nRandomList,100)/10)  
 	g_ShaXing_RandomIdxList[3] = math.floor(math.mod(nRandomList,1000)/100)  
@@ -194,7 +194,7 @@ function ShaXingDaojishi_Open(nSelectBossIdx,nBossIdx,nPoint,nRandomList,bRandom
 		end
 	end	
 	--PushDebugMessage("test name="..nRandomMSg);
-	--Ãû×ÖÎª¿ÕÊ±ºòÏÔÊ¾ÔÝÎÞ
+	--Ãû×ÖÎª¿ Ê±ºòÏÔÊ¾ÔÝÎÞ
 	if nRandomMSg == "" then
 		nRandomMSg = "#{XSX_220705_281}"
 	end
@@ -203,7 +203,7 @@ function ShaXingDaojishi_Open(nSelectBossIdx,nBossIdx,nPoint,nRandomList,bRandom
 	this:Show()
 end
 --=========================================================
---¹Ø±Õ½çÃæ
+--¹Ø± ½çÃæ
 --=========================================================
 function ShaXingDaojishi_Close()
 

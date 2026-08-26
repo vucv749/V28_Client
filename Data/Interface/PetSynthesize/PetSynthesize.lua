@@ -21,7 +21,7 @@ end
 function PetSynthesize_OnEvent(event)
 	PetSynthesize_SetCtl();
 	if(event == "UI_COMMAND") then
-		if this : IsVisible() then				-- 如果界面开着，则不处理
+		if this : IsVisible() then				-- ??????,????
 			return
 		end
 		PetSynthesize_OnUICommand(arg0);
@@ -119,11 +119,11 @@ function PetSynthesize_UpdatePet()
 end
 
 function PetSynthesize_SetPet(idx)
-	local nIdx = tonumber(idx);  --自己的第几只宠物
+	local nIdx = tonumber(idx);  --????????
 	if( -1 == nIdx or nil == nIdx) then
 		return;
 	end
-	--珍兽已被其它界面选中
+	--犱兽已被其它界面选中
 	if (Pet:GetPetLocation(nIdx) ~= -1 and Pet:GetPetLocation(nIdx) ~= 15) then
 		return;
 	end
@@ -133,8 +133,8 @@ function PetSynthesize_SetPet(idx)
 		--						tostring(g_MembersCtl[i].idx));
 		if(g_MembersCtl[i].idx and g_MembersCtl[i].idx == nIdx) then return; end
 	end
-	--查找空间
-	local nEmptyIdx = 0;	--如果占满了从第一个换
+	--查犚繝间
+	local nEmptyIdx = 0;	--??????????
 	for i = 0, 1 do
 		if(nil == g_MembersCtl[i].idx) then 
 			nEmptyIdx = i;
@@ -201,7 +201,7 @@ function PetSynthesize_CareEventHandle(careId, op, distance)
 		if(tonumber(careId) ~= g_clientNpcId) then
 			return;
 		end
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(op == "distance" and tonumber(distance)>MAX_OBJ_DISTANCE or op=="destroy") then
 			PetSynthesize_Hide();
 		end

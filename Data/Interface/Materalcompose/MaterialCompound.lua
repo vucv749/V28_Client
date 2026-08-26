@@ -1,13 +1,13 @@
 --/* modified by cuiyinjie ¿ª·Å4¼¶Èı¾«ºÏ³É¹¦ÄÜ */
-local STUFF_SLOTS = {}										-- ÎïÆ·²Û
-local ITEM_IN_SLOTS = {}									-- ÎïÆ·²ÛÖĞµÄÎïÆ·±³°üÎ»ÖÃ
-local Current = 0											-- ½çÃæµÄµ±Ç°×´Ì¬ 1£º±¦Ê¯ºÏ³É 2£º²ÄÁÏºÏ³É 3: º®ÓñºÏ³É
-local Type = -1												-- µ±Ç°ºÏ³ÉµÄ²ÄÁÏÀàĞÍ
-local Grade = -1											-- µ±Ç°ºÏ³ÉµÄ²ÄÁÏµµ´Î
-local theNPC = -1											-- ¹¦ÄÜ NPC
-local MATERIAL_COUNT = 5									-- ·ÅºÏ³É²ÄÁÏµÄ²ÛµÄÊıÁ¿
-local SLOT_COUNT = 6										-- ËùÓĞÄÜ·Å¶«Î÷µÄ²ÛµÄÊıÁ¿
-local SPECIAL_MATERIAL_SLOT = 6								-- ·ÅÌØÊâ²ÄÁÏµÄ¸ñ×ÓºÅ
+local STUFF_SLOTS = {}										-- ???
+local ITEM_IN_SLOTS = {}									-- ???????????
+local Current = 0											-- ??????? 1:???? 2:???? 3: ????
+local Type = -1												-- ?????????
+local Grade = -1											-- ?????????
+local theNPC = -1											-- ?? NPC
+local MATERIAL_COUNT = 5									-- ??????????
+local SLOT_COUNT = 6										-- ???????????
+local SPECIAL_MATERIAL_SLOT = 6								-- ?????????
 local MAX_OBJ_DISTANCE = 3.0
 
 local LaskPack = {}
@@ -15,13 +15,13 @@ local LaskPack = {}
 local curSuccRate = 0;
 local RuleTable = {
 	{
-		msgDiffTypeErr = "±ØĞëÎªÍ¬ÖÖµÄ±¦Ê¯·½¿É½øĞĞºÏ³É¡£",
-		msgDiffGradeErr = "ĞèÒªºÏ³ÉµÄ±¦Ê¯±ØĞëµÈ¼¶ÏàÍ¬·½¿ÉºÏ³É¡£",
-		msgLackMoney = "ÄúÉíÉÏµÄ½ğÇ®²»×ã#{_EXCHG%d}¡£",
-		msgLackStuff = "Ã¿´ÎºÏ³É·ÅÖÃµÄÎïÆ·±ØĞë´óÓÚ2¸ö¡£",
-		msgSlotEmpty = "Çë·ÅÈëÒªºÏ³ÉµÄ±¦Ê¯¡£",         -- add  by zchw
+		msgDiffTypeErr = "Phäi Vi cùng loÕi Ğích bäo thÕch lÕi v×a tiªn hành hşp thành.",
+		msgDiffGradeErr = "C¥n hşp thành Ğích bäo thÕch phäi c¤p b§c gi¯ng nhau lÕi v×a hşp thành.",
+		msgLackMoney = "Nhçm trên ngß¶i Ğích ti«n tài không ğü#{_EXCHG%d}.",
+		msgLackStuff = "M²i l¥n hşp thành ğ¬ ğ£t Ğích v§t ph¦m phäi l¾n h½n 2Cá.",
+		msgSlotEmpty = "Thïnh ğ¬ vào Yêu hşp thành Ğích bäo thÕch.",         -- add  by zchw
 		maxGrade = 9,
-		msgGradeLimited = "ºÏ³ÉµÄ±¦Ê¯×î¸ßµÈ¼¶Îª9¼¶£¬ÄúµÄ±¦Ê¯²»ÄÜ¼ÌĞøºÏ³É¡£",
+		msgGradeLimited = "Hşp thành Ğích bäo thÕch cao nh¤t c¤p b§c Vi C¤p 9, Nhçm Ğích bäo thÕch không th¬ tiªp tøc hşp thành.",
 		[1] = { SpecialStuff = 30900015, MoneyCost = 5000, CountTable = { [3] = { SuccOdds = 25, SuccOddsWithSpecStuff = 50, }, [4] = { SuccOdds = 50, SuccOddsWithSpecStuff = 75, }, [5] = { SuccOdds = 75, SuccOddsWithSpecStuff = 100, }, }, },
 		[2] = { SpecialStuff = 30900015, MoneyCost = 6000, CountTable = { [3] = { SuccOdds = 25, SuccOddsWithSpecStuff = 50, }, [4] = { SuccOdds = 50, SuccOddsWithSpecStuff = 75, }, [5] = { SuccOdds = 75, SuccOddsWithSpecStuff = 100, }, }, },
 		[3] = { SpecialStuff = 30900015, MoneyCost = 7000, CountTable = { [3] = { SuccOdds = 25, SuccOddsWithSpecStuff = 50, }, [4] = { SuccOdds = 50, SuccOddsWithSpecStuff = 75, }, [5] = { SuccOdds = 75, SuccOddsWithSpecStuff = 100, }, }, },
@@ -32,13 +32,13 @@ local RuleTable = {
 		[8] = { SpecialStuff = 30900016, MoneyCost = 12000, CountTable = { [3] = { SuccOdds = 25, SuccOddsWithSpecStuff = 50, }, [4] = { SuccOdds = 50, SuccOddsWithSpecStuff = 75, }, [5] = { SuccOdds = 75, SuccOddsWithSpecStuff = 100, }, }, },
 	},
 	{
-		msgDiffTypeErr = "±ØĞëÊ¹ÓÃÍ¬ÖÖ²ÄÁÏ·½¿ÉºÏ³É¡£",
-		msgDiffGradeErr = "±ØĞëµÈ¼¶ÏàÍ¬µÄ²ÄÁÏ·½¿ÉºÏ³É¡£",
-		msgLackMoney = "ÄúÉíÉÏµÄ½ğÇ®²»×ã#{_EXCHG%d}¡£",
-		msgLackStuff = "Ã¿´ÎºÏ³É·ÅÖÃµÄÎïÆ·±ØĞë´óÓÚ2¸ö¡£",
-		msgSlotEmpty = "Çë·ÅÈëÒªºÏ³ÉµÄ²ÄÁÏ¡£",				-- add by zchw
-		maxGrade = 5,	-- ÎïÆ·±íÀïµÄµÈ¼¶£¬3¼¶²ÄÁÏÎª4¼¶£¬ËùÒÔ±ß½çÎª5¼¶ mark by cuiyinjie maxGrade add 1
-		msgGradeLimited = "×î¸ß¿É·ÅÈë3¼¶²ÄÁÏ£¬ÄúµÄ²ÄÁÏ²»ÄÜ¼ÌĞøºÏ³É¡£", --µÈ¼¶¼Ó1¼¶
+		msgDiffTypeErr = "Phäi sØ døng cùng loÕi tài li®u lÕi v×a hşp thành.",
+		msgDiffGradeErr = "Phäi c¤p b§c gi¯ng nhau Ğích tài li®u lÕi v×a hşp thành.",
+		msgLackMoney = "Nhçm trên ngß¶i Ğích ti«n tài không ğü#{_EXCHG%d}.",
+		msgLackStuff = "M²i l¥n hşp thành ğ¬ ğ£t Ğích v§t ph¦m phäi l¾n h½n 2Cá.",
+		msgSlotEmpty = "Thïnh ğ¬ vào Yêu hşp thành Ğích tài li®u.",				-- add by zchw
+		maxGrade = 5,	-- ???????,3????4?,?????5? mark by cuiyinjie maxGrade add 1
+		msgGradeLimited = "Cao nh¤t Khä ğ¬ vào C¤p 3 tài li®u, Nhçm Ğích tài li®u không th¬ tiªp tøc hşp thành.", --???1?
 		[1] = { SpecialStuff = -1, MoneyCost = 500, CountTable = { [5] = { SuccOdds = 100, SuccOddsWithSpecStuff = 0, }, }, },
 		[2] = { SpecialStuff = -1, MoneyCost = 1000, CountTable = { [5] = { SuccOdds = 100, SuccOddsWithSpecStuff = 0, }, }, },
 		[3] = { SpecialStuff = -1, MoneyCost = 1500, CountTable = { [5] = { SuccOdds = 100, SuccOddsWithSpecStuff = 0, }, }, },
@@ -49,13 +49,13 @@ local RuleTable = {
 --		[8] = { SpecialStuff = -1, MoneyCost = 4000, CountTable = { [3] = { SuccOdds = 50, SuccOddsWithSpecStuff = 0, }, [4] = { SuccOdds = 75, SuccOddsWithSpecStuff = 0, }, [5] = { SuccOdds = 100, SuccOddsWithSpecStuff = 0, }, }, },
 	},
 	{
-		msgDiffTypeErr = "±ØĞëÊ¹ÓÃĞşÌìº®Óñ·½¿ÉºÏ³É¡£",
-		msgDiffGradeErr = "±ØĞëÍ¬Ò»ÖÖĞşÌìº®Óñ·½¿ÉºÏ³É¡£",
-		msgLackMoney = "ÄúÉíÉÏµÄ½ğÇ®²»×ã#{_EXCHG%d}¡£",
-		msgLackStuff = "Ã¿´ÎºÏ³É·ÅÖÃµÄÎïÆ·±ØĞë´óÓÚ2¸ö¡£",
-		msgSlotEmpty = "Çë·ÅÈëÒªºÏ³ÉµÄĞşÌìº®Óñ¡£",
+		msgDiffTypeErr = "Phäi sØ døng Huy«n Thiên Hàn Ng÷c lÕi v×a hşp thành.",
+		msgDiffGradeErr = "Phäi cùng Xung Huy«n Thiên Hàn Ng÷c lÕi v×a hşp thành.",
+		msgLackMoney = "Nhçm trên ngß¶i Ğích ti«n tài không ğü#{_EXCHG%d}.",
+		msgLackStuff = "M²i l¥n hşp thành ğ¬ ğ£t Ğích v§t ph¦m phäi l¾n h½n 2Cá.",
+		msgSlotEmpty = "Thïnh ğ¬ vào Yêu hşp thành Ğích Huy«n Thiên Hàn Ng÷c.",
 		maxGrade = 2,
-		msgGradeLimited = "±ØĞë·ÅÈëÍ¬Ò»ÖÖĞşÌìº®Óñ¡££¬ÄúµÄĞşÌìº®Óñ²»ÄÜ¼ÌĞøºÏ³É¡£",
+		msgGradeLimited = "Phäi ğ¬ vào cùng Xung Huy«n Thiên Hàn Ng÷c., Nhçm Ğích Huy«n Thiên Hàn Ng÷c không th¬ tiªp tøc hşp thành.",
 		[1] = { SpecialStuff = -1, MoneyCost = 10000, CountTable = { [5] = { SuccOdds = 100, SuccOddsWithSpecStuff = 0, }, }, },
 --		[2] = { SpecialStuff = -1, MoneyCost = 1000, CountTable = { [5] = { SuccOdds = 100, SuccOddsWithSpecStuff = 0, }, }, },
 --		[3] = { SpecialStuff = -1, MoneyCost = 1500, CountTable = { [5] = { SuccOdds = 100, SuccOddsWithSpecStuff = 0, }, }, },
@@ -71,21 +71,21 @@ local g_MaterialCompound_Frame_UnifiedPosition;
 
 -- ×¢²áÊÂ¼ş
 function MaterialCompound_PreLoad()
-	this:RegisterEvent("UI_COMMAND")						-- ¼¤»î½çÃæÊÂ¼ş
+	this:RegisterEvent("UI_COMMAND")						-- ??????
 
-	this:RegisterEvent("UPDATE_COMPOSE_GEM")				-- Ë¢ĞÂ±¦Ê¯ºÏ³É½çÃæ
-	this:RegisterEvent("PACKAGE_ITEM_CHANGED")				-- ±³°üÖĞÎïÆ·¸Ä±äĞèÒªÅĞ¶Ï¡­¡­
-	this:RegisterEvent("OBJECT_CARED_EVENT")				-- ¹Ø×¢ÊµÊ©ºÏ³ÉµÄ NPC
-	this:RegisterEvent("RESUME_ENCHASE_GEM")				-- ºÏ³ÉÍê±Ï
-	this:RegisterEvent("CLOSE_SYNTHESIZE_ENCHASE")			-- ¹Ø±Õ±¾½çÃæ
-	-- this:RegisterEvent("TOGLE_SKILL_BOOK")				-- ´ò¿ªÃÅÅÉ¼¼ÄÜ½çÃæÊÇ·ñĞèÒª¹Ø±Õ´Ë½çÃæ
-	-- this:RegisterEvent("TOGLE_COMMONSKILL_PAGE")			-- ´ò¿ªÆÕÍ¨¼¼ÄÜ½çÃæÊÇ·ñĞèÒª¹Ø±Õ£¿
-	-- this:RegisterEvent("CLOSE_SKILL_BOOK")				-- ¹Ø±ÕÃÅÅÉ¼¼ÄÜ½çÃæ
+	this:RegisterEvent("UPDATE_COMPOSE_GEM")				-- ????????
+	this:RegisterEvent("PACKAGE_ITEM_CHANGED")				-- ???????????……
+	this:RegisterEvent("OBJECT_CARED_EVENT")				-- ??????? NPC
+	this:RegisterEvent("RESUME_ENCHASE_GEM")				-- ????
+	this:RegisterEvent("CLOSE_SYNTHESIZE_ENCHASE")			-- ?????
+	-- this:RegisterEvent("TOGLE_SKILL_BOOK")				-- ´ò¿ªÃÅÅÉ¼¼ÄÜ½çÃæÊÇ·ñĞèÒª¹Ø± ´Ë½çÃæ
+	-- this:RegisterEvent("TOGLE_COMMONSKILL_PAGE")			-- ´ò¿ªÆ Í¨¼¼ÄÜ½çÃæÊÇ·ñĞèÒª¹Ø± £¿
+	-- this:RegisterEvent("CLOSE_SKILL_BOOK")				-- ¹Ø± ÃÅÅÉ¼¼ÄÜ½çÃæ
 	-- this:RegisterEvent("DISABLE_ENCHASE_ALL_GEM")		-- ËùÓĞºÏ³ÉÏà¹ØµÄÎïÆ·ĞèÒªËø¶¨
-	-- this:RegisterEvent("UPDATE_COMPOSE_ITEM")			-- ÎïÆ·ºÏ³É½çÃæ´ò¿ª£¬´Ë½çÃæÊÇ·ñĞèÒª¹Ø±Õ£¿
-	-- this:RegisterEvent("OPEN_COMPOSE_ITEM")				-- ÎïÆ·ºÏ³É½çÃæ´ò¿ª£¬´Ë½çÃæÊÇ·ñĞèÒª¹Ø±Õ£¿
+	-- this:RegisterEvent("UPDATE_COMPOSE_ITEM")			-- ÎïÆ·ºÏ³É½çÃæ´ò¿ª£¬´Ë½çÃæÊÇ·ñĞèÒª¹Ø± £¿
+	-- this:RegisterEvent("OPEN_COMPOSE_ITEM")				-- ÎïÆ·ºÏ³É½çÃæ´ò¿ª£¬´Ë½çÃæÊÇ·ñĞèÒª¹Ø± £¿
 	this:RegisterEvent("UNIT_MONEY");
-	this:RegisterEvent("MONEYJZ_CHANGE")		--½»×ÓÆÕ¼° Vega
+	this:RegisterEvent("MONEYJZ_CHANGE")		--???? Vega
 	
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
@@ -122,15 +122,15 @@ end
 -- ¼à¿Ø¸÷ÖÖÊÂ¼ş
 function MaterialCompound_OnEvent( event )
 
-	if event == "UI_COMMAND" and tonumber( arg0 ) == 19810424 then	-- ²ÄÁÏºÏ³É
+	if event == "UI_COMMAND" and tonumber( arg0 ) == 19810424 then	-- ????
 		MaterialCompound_Clear();			-- add by zchw
-		if this : IsVisible() and Current ~= 2 then				-- Èç¹û½çÃæ¿ª×Å£¬Ôò¹Øµô
+		if this : IsVisible() and Current ~= 2 then				-- ??????,???
 			MaterialCompound_Close()
 		end
-		Materalcompose_SuccessValue : SetText("#cFF0000³É¹¦ÂÊ");
+		Materalcompose_SuccessValue : SetText("#cFF0000xác xu¤t thành công");
 		Current = 2
-		Materalcompose_DragTitle : SetText("#gFF0FA0ºÏ³É²ÄÁÏ")
-		MaterialCompose_Info : SetText("ºÏ³É²ÄÁÏ¿ÉÒÔ½«ÃŞ²¼¡¢ÃØÒø¡¢¾«Ìú½øĞĞÉı¼¶ºÏ³É¡££¨#GºÏ³É²ÄÁÏĞèÒªÎå¸ö#Y£©")
+		Materalcompose_DragTitle : SetText("#gFF0FA0hşp thành tài li®u")
+		MaterialCompose_Info : SetText("Hşp thành tài li®u có th¬ Tß¾ng Miên B¯, Bí Ngân, Tinh Thiªt tiªn hành thång c¤p hşp thành. (#Gh?p thành tài li®u c¥n nåm#Y)")
 		Materalcompose_Static1 : Hide()
 		Materalcompose_Special : Hide()
 		this : Show()
@@ -142,15 +142,15 @@ function MaterialCompound_OnEvent( event )
 		return
 	end
 
-	if event == "UI_COMMAND" and tonumber( arg0 ) == 86021935 then	-- º®ÓñºÏ³É
+	if event == "UI_COMMAND" and tonumber( arg0 ) == 86021935 then	-- ????
 		MaterialCompound_Clear();			-- add by zchw
-		if this : IsVisible() and Current ~= 3 then				-- Èç¹û½çÃæ¿ª×Å£¬Ôò¹Øµô
+		if this : IsVisible() and Current ~= 3 then				-- ??????,???
 			MaterialCompound_Close()
 		end
-		Materalcompose_SuccessValue : SetText("#cFF0000³É¹¦ÂÊ");
+		Materalcompose_SuccessValue : SetText("#cFF0000xác xu¤t thành công");
 		Current = 3
-		Materalcompose_DragTitle : SetText("#gFF0FA0º®ÓñºÏ³É")
-		MaterialCompose_Info : SetText("¿ÉÒÔÓÃ5¸öĞşÌìº®ÓñºÏ³É1¸öº®Óñ¾«´â£¨#GºÏ³É²ÄÁÏĞşÌìº®ÓñĞèÒªÎå¸ö#Y£©")
+		Materalcompose_DragTitle : SetText("#gFF0FA0Hàn Ng÷c hşp thành")
+		MaterialCompose_Info : SetText("Có th¬ Døng 5Cá Huy«n Thiên Hàn Ng÷c hşp thành 1Cá Hàn Ng÷c Tinh Tuı(#Gh?p thành tài li®u Huy«n Thiên Hàn Ng÷c c¥n nåm#Y)")
 		Materalcompose_Static1 : Hide()
 		Materalcompose_Special : Hide()
 		this : Show()
@@ -167,7 +167,7 @@ function MaterialCompound_OnEvent( event )
 			return
 		end
 
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if arg1 == "distance" and tonumber( arg2 ) > MAX_OBJ_DISTANCE or arg1 == "destroy" then
 			MaterialCompound_Cancel_Clicked()
 		end
@@ -239,7 +239,7 @@ function MaterialCompound_OK_Clicked()
 	end
 
 	--¼ì²é°ó¶¨×´Ì¬
-	--ÏÂÃæÕâÒ»¶ÎÊÇ²ÄÁÏ°ó¶¨ÌáÊ¾£¬ÕÅÄşĞ´µÄÓĞbug£¬È«²¿×¢µô£¬²ÉÓÃĞÂµÄÂß¼­
+	--ÏÂÃæ âÒ»¶ÎÊÇ²ÄÁÏ°ó¶¨ÌáÊ¾£¬ ÅÄşĞ´µÄÓĞbug£¬È«²¿×¢µô£¬²ÉÓÃĞÂµÄÂß¼­
 --		for i = 1, MATERIAL_COUNT do
 
 --			if(LaskPack[i] ~= ITEM_IN_SLOTS[i]) then
@@ -315,7 +315,7 @@ function MaterialCompound_OK_Clicked()
 			PushDebugMessage( CurrentRule.msgGradeLimited )
 			return
 		end
-		--ºÏ³É8£¬9¼¶±¦Ê¯¹¦ÄÜ¹Ø±Õ
+		--ºÏ³É8£¬9¼¶±¦Ê¯¹¦ÄÜ¹Ø± 
 		if Current == 1 then
 			if MaterialCompound_GetItemGrade( ITEM_IN_SLOTS[i] ) > 6 then
 				PushDebugMessage( "#{BSHC_090313_1}" )
@@ -345,7 +345,7 @@ function MaterialCompound_OK_Clicked()
 --			LifeAbility : Do_Combine( ITEM_IN_SLOTS[1], ITEM_IN_SLOTS[2],
 --				ITEM_IN_SLOTS[3], ITEM_IN_SLOTS[4],
 --				ITEM_IN_SLOTS[5], ITEM_IN_SLOTS[6], 0, dialogStr )
-			PushDebugMessage( "ºÏ³É±¦Ê¯ĞèÒª·ÅÈë±¦Ê¯ºÏ³É·û¡£" )
+			PushDebugMessage( "Hşp thành bäo thÕch c¥n ğ¬ vào bäo thÕch hşp thành Phù." )
 			return
 		end
 	end
@@ -355,24 +355,24 @@ function MaterialCompound_OK_Clicked()
 		ITEM_IN_SLOTS[5], ITEM_IN_SLOTS[6],(curSuccRate.."%") )
 end
 
--- µã»÷È¡Ïû»òÕß¹Ø±Õ°´Å¥
+-- µã»÷È¡Ïû»ò ß¹Ø± °´Å¥
 function MaterialCompound_Cancel_Clicked()
 	MaterialCompound_Close()
 	MaterialCompound_StopCareObject()
 end
 
--- ¹Ø±Õ½çÃæ
+-- ¹Ø± ½çÃæ
 function MaterialCompound_Close()
 	this : Hide()
 	MaterialCompound_Clear()
 end
 
--- Çå¿Õ½çÃæÔªËØ
+-- Çå¿ ½çÃæÔªËØ
 function MaterialCompound_Clear()
 	Current = 0
 	Type = -1
 	Grade = -1
-	Materalcompose_SuccessValue : SetText("#cFF0000³É¹¦ÂÊ")
+	Materalcompose_SuccessValue : SetText("#cFF0000xác xu¤t thành công")
 	Materalcompose_NeedMoney : SetProperty( "MoneyNumber", tostring( 0 ) )
 	Materalcompose_OK : Disable()
 
@@ -501,7 +501,7 @@ function MaterialCompound_Update( pos0, pos1 )
 		return
 	end
 
-	if not this : IsVisible() then					-- ½çÃæÎ´´ò¿ª
+	if not this : IsVisible() then					-- ?????
 		return
 	end
 
@@ -512,14 +512,14 @@ function MaterialCompound_Update( pos0, pos1 )
 	end
 
 	-- AxTrace( 0, 1, "MaterialCompound_ItemInterface( bagPos )=".. MaterialCompound_ItemInterface( bagPos ) )
-	-- ÕÒµ½ bagPos µÄÎïÆ·ÀàĞÍ£¬À´ÅĞ¶ÏÊÇ·ñ·ûºÏµ±Ç°½çÃæ£¬·ñÔòÃ»ÓĞÈÎºÎÌáÊ¾
+	--  Òµ½ bagPos µÄÎïÆ·ÀàĞÍ£¬À´ÅĞ¶ÏÊÇ·ñ·ûºÏµ±Ç°½çÃæ£¬·ñÔòÃ»ÓĞÈÎºÎÌáÊ¾
 	if MaterialCompound_ItemInterface( bagPos ) ~= Current then
-		PushDebugMessage( "²ÄÁÏÀàĞÍ²»·û" )
+		PushDebugMessage( "Tài li®u loÕi hình không hşp" )
 		return
 	end
 
-	-- Èç¹û bagPos ÊÇµ±Ç°½çÃæĞèÒªµÄÎïÆ·£¬ÕÒµ½¸ÃÎïÆ·Ó¦¸Ã´¦ÔÚµÄ¸ñ×Ó·¶Î§
-	-- Èç¹ûÊÇ±¦Ê¯»òÕß²ÄÁÏ
+	-- Èç¹û bagPos ÊÇµ±Ç°½çÃæĞèÒªµÄÎïÆ·£¬ Òµ½¸ÃÎïÆ·Ó¦¸Ã´¦ÔÚµÄ¸ñ×Ó·¶Î§
+	-- Èç¹ûÊÇ±¦Ê¯»ò ß²ÄÁÏ
 	if MaterialCompound_IsGem( bagPos ) == 1 or MaterialCompound_IsMaterial( bagPos ) == 1 or PlayerPackage:GetItemTableIndex(bagPos) == 20310110 then
 		-- AxTrace( 0, 1, "it's a main material." )
 		-- ÅĞ¶ÏÒ»ÏÂÊÇ·ñÀàĞÍÏàÍ¬£¬²»ÏàÍ¬¸ø³öÌáÊ¾
@@ -541,8 +541,8 @@ function MaterialCompound_Update( pos0, pos1 )
 			return
 		end
 
-		if slot == 0 then						-- ×Ô¶¯Ñ°ÕÒ¿Õ¸ñ
-			-- ´Ó 1 ~ MATERIAL_COUNT Ö®¼äÕÒÒ»¸ö¿Õ×ÅµÄ¸ñ×Ó£¬Èç¹ûÃ»ÓĞ¿Õ¸ñ×ÓÁË£¬Ôò·µ»Ø
+		if slot == 0 then						-- ??????
+			-- ´Ó 1 ~ MATERIAL_COUNT Ö®¼ä ÒÒ»¸ö¿ ×ÅµÄ¸ñ×Ó£¬Èç¹ûÃ»ÓĞ¿ ¸ñ×ÓÁË£¬Ôò·µ»Ø
 			for i = 1, MATERIAL_COUNT do
 				if ITEM_IN_SLOTS[i] == -1 then
 					slot = i
@@ -556,7 +556,7 @@ function MaterialCompound_Update( pos0, pos1 )
 				return
 			end
 		else
-			-- ÅĞ¶Ï bagPos ÊÇ·ñÓ¦¸Ã´¦ÔÚÕâ¸ö¸ñ×Ó£¬¸ñ×Ó²»¶ÔÔòÖ±½Ó·µ»Ø
+			-- ÅĞ¶Ï bagPos ÊÇ·ñÓ¦¸Ã´¦ÔÚ â¸ö¸ñ×Ó£¬¸ñ×Ó²»¶ÔÔòÖ±½Ó·µ»Ø
 			if slot < 1 or slot > MATERIAL_COUNT then
 				return
 			end
@@ -564,17 +564,17 @@ function MaterialCompound_Update( pos0, pos1 )
 	-- Èç¹ûÊÇÌØÊâ²ÄÁÏ
 	elseif PlayerPackage : GetItemTableIndex( bagPos ) == MaterialCompound_GetSpecialMaterial() then
 		-- AxTrace( 0, 1, "it's a special material." )
-		if slot == 0 then						-- ×Ô¶¯Ñ°ÕÒ¿Õ¸ñ
-			-- ¿´¿´µÚ SPECIAL_MATERIAL_SLOT ¸ö¸ñ×ÓÊÇ·ñ¿Õ×ÅµÄ¸ñ×Ó£¬Èç¹û²»ÊÇ£¬Ôò·µ»Ø
+		if slot == 0 then						-- ??????
+			-- ¿´¿´µÚ SPECIAL_MATERIAL_SLOT ¸ö¸ñ×ÓÊÇ·ñ¿ ×ÅµÄ¸ñ×Ó£¬Èç¹û²»ÊÇ£¬Ôò·µ»Ø
 			if ITEM_IN_SLOTS[SPECIAL_MATERIAL_SLOT] and ITEM_IN_SLOTS[SPECIAL_MATERIAL_SLOT] == -1 then
 				slot = SPECIAL_MATERIAL_SLOT
 			else
 				return
 			end
 		else
-			-- ÅĞ¶Ï bagPos ÊÇ·ñÓ¦¸Ã´¦ÔÚÕâ¸ö¸ñ×Ó£¬¸ñ×Ó²»¶ÔÔòÖ±½Ó·µ»Ø
+			-- ÅĞ¶Ï bagPos ÊÇ·ñÓ¦¸Ã´¦ÔÚ â¸ö¸ñ×Ó£¬¸ñ×Ó²»¶ÔÔòÖ±½Ó·µ»Ø
 			if slot ~= SPECIAL_MATERIAL_SLOT then
-				PushDebugMessage( "Çë·ÅÖÃÓÚÌØÊâ²ÄÁÏÀ¸" )
+				PushDebugMessage( "Thïnh ğ¬ ğ£t Vu ğ£c thù tài li®u Lan" )
 				return
 			end
 		end
@@ -636,7 +636,7 @@ function MaterialCompound_Remove( slot )
 			end
 		end
 
-		if materialCount == 0 then					-- Ã»ÓĞ²ÄÁÏÁËÔòÒÆ³ıÌØÊâ²ÄÁÏ
+		if materialCount == 0 then					-- ????????????
 			Type = -1
 			Grade = -1
 			MaterialCompound_Remove( SPECIAL_MATERIAL_SLOT )
@@ -652,7 +652,7 @@ end
 -- ÖØĞÂ¼ÆËã³É¹¦ÂÊ
 function MaterialCompound_RecalcSuccOdds()
 	if not RuleTable[Current] or not RuleTable[Current][Grade] then
-		Materalcompose_SuccessValue : SetText("#cFF0000³É¹¦ÂÊ")
+		Materalcompose_SuccessValue : SetText("#cFF0000xác xu¤t thành công")
 		Materalcompose_OK : Disable()
 		return
 	end
@@ -667,11 +667,11 @@ function MaterialCompound_RecalcSuccOdds()
 	end
 
 	-- AxTrace( 0, 1, "materialCount=".. materialCount )
-	local str = "#cFF0000³É¹¦ÂÊ:"
+	local str = "#cFF0000xác xu¤t thành công:"
 
 	if not currentRule.CountTable[materialCount] then
 		curSuccRate = 0;
-		str = str .. "ÎŞ·¨ºÏ³É"
+		str = str .. "Không th¬ hşp thành"
 		Materalcompose_OK : Disable()
 	elseif ITEM_IN_SLOTS[SPECIAL_MATERIAL_SLOT] ~= -1
 	 and currentRule.SpecialStuff == PlayerPackage : GetItemTableIndex( ITEM_IN_SLOTS[SPECIAL_MATERIAL_SLOT] )
@@ -702,14 +702,14 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØĞÄNPC£¬
---ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 --Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function MaterialCompound_BeginCareObject( objCaredId )
 	theNPC = DataPool : GetNPCIDByServerID( objCaredId )
 	-- AxTrace( 0, 1, "theNPC0: " .. theNPC )
 	if theNPC == -1 then
-		PushDebugMessage("Î´·¢ÏÖ NPC")
+		PushDebugMessage("Chßa phát hi®n NPC")
 		this : Hide()
 		return
 	end

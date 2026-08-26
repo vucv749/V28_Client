@@ -5,7 +5,7 @@
 --******************************************
 local g_CangBao_Daojishi_Frame_UnifiedPosition;
 
---bossÕý¼ÆÊ±
+--boss ý¼ÆÊ±
 local g_CangBao_BossTimer = 0
 --ÐÒÔËµÈ¼¶
 local g_CangBao_LuckyPoint = 
@@ -19,15 +19,15 @@ local g_CangBao_LuckyPoint =
 --Ã¿¸ö½×¶ÎÏÔÊ¾Ê²Ã´
 local g_CangBao_RoomTips = 
 {
-	[1] = {Title="#{ZDBT_240703_272}",nTips1="#{ZDBT_240703_78}",nMemo="³õÊ¼·¿¼ä",},
-	[2] = {Title="#{ZDBT_240703_273}",nTips1="#{ZDBT_240703_82}",nMemo="´óboss·¿¼ä",},
-	[3] = {Title="#{ZDBT_240703_275}",nTips1="#{ZDBT_240703_84}",nMemo="¿ª±¦Ïä·¿¼ä",},
-	[4] = {Title="#{ZDBT_240703_277}",nTips1="#{ZDBT_240703_296}",nMemo="¼ñ½ð±Ò·¿¼ä",},
-	[5] = {Title="#{ZDBT_240703_276}",nTips1="#{ZDBT_240703_294}",nMemo="Ð¡¹Ö·¿¼ä",},
-	[6] = {Title="#{ZDBT_240703_278}",nTips1="#{ZDBT_240703_298}",nMemo="½Ó±¦Ïä·¿¼ä",},
-	[7] = {Title="#{ZDBT_240703_279}",nTips1="#{ZDBT_240703_300}",nMemo="¶ã±ÜÇò·¿¼ä",},
-	[8] = {Title="#{ZDBT_240703_274}",nTips1="#{ZDBT_240703_83}",nMemo="Ð¡boss·¿¼ä",},
-	[9] = {Title="#{ZDBT_240703_280}",nTips1="#{ZDBT_240703_281}",nMemo="½áËã·¿¼ä",},
+	[1] = {Title="#{ZDBT_240703_272}",nTips1="#{ZDBT_240703_78}",nMemo="M¾i b¡t ð¥u phòng",},
+	[2] = {Title="#{ZDBT_240703_273}",nTips1="#{ZDBT_240703_82}",nMemo="ÐÕi Boss phòng",},
+	[3] = {Title="#{ZDBT_240703_275}",nTips1="#{ZDBT_240703_84}",nMemo="Khai Bäo Tß½ng phòng",},
+	[4] = {Title="#{ZDBT_240703_277}",nTips1="#{ZDBT_240703_296}",nMemo="Ki¬m Kim T® phòng",},
+	[5] = {Title="#{ZDBT_240703_276}",nTips1="#{ZDBT_240703_294}",nMemo="Ti¬u Quái phòng",},
+	[6] = {Title="#{ZDBT_240703_278}",nTips1="#{ZDBT_240703_298}",nMemo="Tiªp Bäo Tß½ng phòng",},
+	[7] = {Title="#{ZDBT_240703_279}",nTips1="#{ZDBT_240703_300}",nMemo="Tránh né C¥u phòng",},
+	[8] = {Title="#{ZDBT_240703_274}",nTips1="#{ZDBT_240703_83}",nMemo="Ti¬u Boss phòng",},
+	[9] = {Title="#{ZDBT_240703_280}",nTips1="#{ZDBT_240703_281}",nMemo="Kªt toán phòng",},
 }
 
 
@@ -105,13 +105,13 @@ end
 function CangBao_Daojishi_Open(nLuckyPoint,nStage,nState,nRemainTime,nParam1)
 	--PushDebugMessage("test open nLuckyPoint="..nLuckyPoint.." nStage="..nStage.." nState="..nState.." nRemainTime="..nRemainTime.." nParam1="..nParam1 )
 	if nStage < 1 or nStage >  table.getn(g_CangBao_RoomTips) then
-		PushDebugMessage("Êý¾Ý·Ç·¨")
+		PushDebugMessage("S¯ li®u phi pháp")
 		return
 	end
 	--×Ô¼ºËã·ÖÖµ¶Î
 	local nLevel = g_CangBao_LuckyPoint[1].nLevel
 	local nCurMax = g_CangBao_LuckyPoint[1].nMax - g_CangBao_LuckyPoint[1].nMin
-	local nCurValue =  nLuckyPoint - g_CangBao_LuckyPoint[1].nMin --µ±Ç°·ÖÖµÕ¼¾Ýµ±Ç°×î´óÊýÖµ°Ù·Ö±È¼ÆËãÓÃÖµ
+	local nCurValue =  nLuckyPoint - g_CangBao_LuckyPoint[1].nMin --???????????????????
 	local nMaxLen = table.getn(g_CangBao_LuckyPoint)
 	if nLuckyPoint > g_CangBao_LuckyPoint[nMaxLen].nMax then
 		nLevel = g_CangBao_LuckyPoint[nMaxLen].nLevel
@@ -160,7 +160,7 @@ function CangBao_Daojishi_Open(nLuckyPoint,nStage,nState,nRemainTime,nParam1)
 		CangBao_Daojishi_Pair_Text3:Show();
 		--Èç¹ûÊÇboss½×¶Î
 		if nStage == 1 or nStage == 2 or nStage == 8 then
-			--Õý¼ÆÊ±
+			-- ý¼ÆÊ±
 			CangBao_Daojishi_Time:Hide();
 			g_CangBao_BossTimer = nRemainTime
 			local  nTimeStringMin = ""
@@ -180,7 +180,7 @@ function CangBao_Daojishi_Open(nLuckyPoint,nStage,nState,nRemainTime,nParam1)
 			
 			CangBao_Daojishi_Pair_Text3:SetText(ScriptGlobal_Format("#{ZDBT_240703_306}",nTimeStringMin,nTimeStringSec));	
 			--¹Ò¼ÆÊ±Æ÷
-			SetTimer("CangBao_Daojishi","CangBao_Daojishi_Timer()", 1000);--¼ÆÊ±
+			SetTimer("CangBao_Daojishi","CangBao_Daojishi_Timer()", 1000);--??
 		else
 			CangBao_Daojishi_Time:Show();
 			CangBao_Daojishi_Pair_Text3:SetText("#{ZDBT_240703_92}");
@@ -250,12 +250,12 @@ function CangBao_Daojishi_Timer()
 		
 		CangBao_Daojishi_Pair_Text3:SetText(ScriptGlobal_Format("#{ZDBT_240703_306}",nTimeStringMin,nTimeStringSec));	
 		--¹Ò¼ÆÊ±Æ÷
-		SetTimer("CangBao_Daojishi","CangBao_Daojishi_Timer()", 1000);--¼ÆÊ±
+		SetTimer("CangBao_Daojishi","CangBao_Daojishi_Timer()", 1000);--??
 	end
 end
 
 --=========================================================
---¹Ø±Õ½çÃæ
+--¹Ø± ½çÃæ
 --=========================================================
 function CangBao_Daojishi_Close()
 	KillTimer("CangBao_Daojishi_Timer()")

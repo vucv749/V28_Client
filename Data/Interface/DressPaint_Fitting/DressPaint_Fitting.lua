@@ -32,10 +32,10 @@ function DressPaint_Fitting_OnEvent(event)
 		return
 	end
 
-	-- ╧ь╠уйтрб╪Д
+	-- ╧ь╠═йтрб╪Д
 	if (event == "CLOSE_DRESS_PAINT_FITTING") then
 		if (this:IsVisible()) then		
-			DressPaint_Fitting_OnHiden();									-- уБюОйгсисзбъ╪╜╡╩╨оюМ║╒нОф╥╡╩╨о╦Я╧ь╠у╣дйтрб╪Дё╛кЫрт╡╩дэ╪╓╩Н║╟х╬и╚в╥вы║╠╟╢е╔
+			DressPaint_Fitting_OnHiden();									-- ??????????????????????,??????⌠????■??
 		end
 	end
 	
@@ -46,38 +46,38 @@ function DressPaint_Fitting_OnEvent(event)
 		end
 	end
 
-	-- х╬и╚Ёи╧╕ё╛хГ╧Шйтрб╪Д©╙веё╛╬мох╧ь╠у
+	-- х╬и╚Ёи╧╕ё╛хГ╧Шйтрб╪Д©╙веё╛╬мох╧ь╠═
 	if event == "UI_COMMAND" and tonumber(arg0) == 091111 then		
 		if (this:IsVisible()) then
-			DressPaint_Fitting_OnClosed();								-- ╧ь╠у║╟х╬и╚в╥вы║╠йтрб╪Дё╛сисз╠╩х╬и╚╣дрб╥Ч╡╩╩А╠╩и╬ЁЩё╛кЫрт©иртжьпб╪╓╩Н║╟х╬и╚в╥вы║╠╟╢е╔
+			DressPaint_Fitting_OnClosed();								-- ??⌠????■???,?????????????,????????⌠????■??
 		end
 	end
 	
 	-- ©╙й╪╟зл╞ё╛╡╩дэ╫Ьппйтрб
 	if ( event == "OPEN_STALL_SALE" ) then
 		if (this:IsVisible()) then
-			DressPaint_Fitting_OnClosed();									-- ╧ь╠у║╟х╬и╚в╥вы║╠йтрб╪Дё╛жьпб╪╓╩Н║╟х╬и╚в╥вы║╠╟╢е╔
+			DressPaint_Fitting_OnClosed();									-- ??⌠????■???,????⌠????■??
 		end
 	end
 
 	-- ╤а╫Ь╤хлУжпё╛╡╩дэ╫Ьппйтрб
 	if ( event == "PROGRESSBAR_SHOW" ) then
 		if (this:IsVisible()) then
-			DressPaint_Fitting_OnClosed();								-- ╧ь╠у║╟х╬и╚в╥вы║╠йтрб╪Дё╛жьпб╪╓╩Н║╟х╬и╚в╥вы║╠╟╢е╔
+			DressPaint_Fitting_OnClosed();								-- ??⌠????■???,????⌠????■??
 		end
 	end
 
 	-- йтрб╣дй╠╨Р╡╩дэ╢Р©╙╫ги╚вйао╢╟©з
 	if ( event == "OPEN_EQUIP" ) then
 		if (this:IsVisible()) then
-			DressPaint_Fitting_OnClosed();								-- ╧ь╠у║╟х╬и╚в╥вы║╠йтрб╪Дё╛жьпб╪╓╩Н║╟х╬и╚в╥вы║╠╟╢е╔
+			DressPaint_Fitting_OnClosed();								-- ??⌠????■???,????⌠????■??
 		end
 	end
 	
 	-- йтрб╣дй╠╨Р╡╩дэ╢Р©╙рб╧Я
 	if ( event == "YIGUI_OPEN" ) then
 		if (this:IsVisible()) then
-			DressPaint_Fitting_OnClosed();								-- ╧ь╠у║╟х╬и╚в╥вы║╠йтрб╪Дё╛жьпб╪╓╩Н║╟х╬и╚в╥вы║╠╟╢е╔
+			DressPaint_Fitting_OnClosed();								-- ??⌠????■???,????⌠????■??
 		end
 	end
 	
@@ -108,9 +108,9 @@ function DressPaint_Fitting_OnEvent(event)
 			return;
 		end
 		
-		--хГ╧Ш╨милхк╣д╬ЮюК╢Ссзр╩╤╗╬ЮюК╩Руъ╠╩и╬ЁЩ
+		--хГ╧Ш╨милхк╣д╬ЮюК╢Ссзр╩╤╗╬ЮюК╩Р═ъ╠╩и╬ЁЩ
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
-			DressPaint_Fitting_OnHiden();								-- ╧ь╠у║╟оБг╤т╓юю║╠йтрб╪Дё╛сисз╬ЮюКNPC╫от╤ё╛х╬и╚╫ГцФ©идэря╬╜╧ь╠уакё╛кЫрт╡╩пХр╙╪╓╩Н║╟х╬и╚в╥вы║╠╟╢е╔ак║ё
+			DressPaint_Fitting_OnHiden();								-- ??⌠????■???,????NPC??,???????????,???????⌠????■????
 		end
 	end
 	
@@ -131,9 +131,9 @@ end
 
 --*******************************************************************************
 -- в╒рБё║ё║ё║
--- OnHiden() ╨╞йЩ╧ь╠у╫ГцФ╣дй╠╨Рё╛╡╩╩Аты╢н╪╓╩Н║╟х╬и╚в╥вы║╠╟╢е╔
--- OnClosed() ╨╞йЩ╧ь╠у╫ГцФ╣дй╠╨Рё╛╩Аты╢н╪╓╩Н║╟х╬и╚в╥вы║╠╟╢е╔
--- уБа╫╦Ж╨╞йЩ╡╩дэм╗сц~~
+-- OnHiden() ╨╞йЩ╧ь╠═╫ГцФ╣дй╠╨Рё╛╡╩╩Аты╢н╪╓╩Н║╟х╬и╚в╥вы║╠╟╢е╔
+-- OnClosed() ╨╞йЩ╧ь╠═╫ГцФ╣дй╠╨Рё╛╩Аты╢н╪╓╩Н║╟х╬и╚в╥вы║╠╟╢е╔
+-- ═Ба╫╦Ж╨╞йЩ╡╩дэм╗сц~~
 --*******************************************************************************
 
 ----------------------------------------------------------------------------------
@@ -155,7 +155,7 @@ end
 
 ----------------------------------------------------------------------------------
 --
--- ╧ь╠у
+-- ╧ь╠═
 --
 function DressPaint_Fitting_OnClosed()
 	

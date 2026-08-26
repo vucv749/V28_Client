@@ -33,7 +33,7 @@ function TeamPTFind_InitWindow()
 	end
 	TeamPTFind_EditName:SetText(ParserString("ZDPT_091028_16","NoColor"))
 	TeamPTFind_Cancel: SetText("#{INTERFACE_XML_542}");
-	TeamPTFind_Mudi: SetCurrentSelect(0)--默认 任意;
+	TeamPTFind_Mudi: SetCurrentSelect(0)--?? ??;
 	g_isModify = 0;
 end
 
@@ -83,7 +83,7 @@ function TeamPTFind_Modify(strTopic,strGoal)
 		TeamPTFind_MenPai:SetText("#{ZDPT_XML_28}:"..strMenpai);
 	end
 	TeamPTFind_EditName:SetText(strTopic)
-	TeamPTFind_Mudi: SetCurrentSelect(tonumber(strGoal))--默认 任意;
+	TeamPTFind_Mudi: SetCurrentSelect(tonumber(strGoal))--?? ??;
 	TeamPTFind_Cancel: SetText("#{ZDPT_XML_23}");
 	g_isModify = 1;
 

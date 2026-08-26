@@ -75,8 +75,8 @@ end
 -- UpdateFrame()
 --===============================================
 function InfoEdit_Update()
-	InfoEdit_History:SetText("ÀúÊ·ÏûÏ¢") -- zchw
-	InfoEdit_Preview:SetText( "Ô¤ÀÀ" );
+	InfoEdit_History:SetText("L¸ch sØ tin tÑc") -- zchw
+	InfoEdit_Preview:SetText( "Dñ Lãm" );
 	InfoEdit_PreviewInfo:Hide();
 	InfoEdit_EditInfo:Show();
 	InfoEdit_EditInfo:SetForce();
@@ -95,7 +95,7 @@ end
 
 function InfoEdit_ClosePreviewClick()
 	
-	InfoEdit_Preview:SetText( "Ô¤ÀÀ" );
+	InfoEdit_Preview:SetText( "Dñ Lãm" );
 	InfoEdit_PreviewInfo:Hide();
 	InfoEdit_EditInfo:Show();
 		
@@ -107,7 +107,7 @@ function InfoEdit_PreviewClick()
 	else
 		local strTemp = DataPool:LuaFnCheckEmo(InfoEdit_EditInfo:GetText())
 		InfoEdit_PreviewInfo:SetText( strTemp );
-		InfoEdit_Preview:SetText( "·µ»Ø" );
+		InfoEdit_Preview:SetText( "Quay lÕi" );
 		InfoEdit_PreviewInfo:Show();
 		InfoEdit_EditInfo:Hide();
 	end
@@ -115,14 +115,14 @@ function InfoEdit_PreviewClick()
 end
 
 function InfoEdit_SendMail()	
-	local SendRet = nil	--±êÊ¶·¢ÓÊ¼þÊÇ·ñ³É¹¦--add by xindefeng
+	local SendRet = nil	--?????????--add by xindefeng
 	
 	if isFirstClick then
 		isFirstClick = false;
 	end
 	local szValue= InfoEdit_EditInfo:GetText();
 	if( szValue == "" ) then
-		PushDebugMessage("²»ÄÜ·¢ËÍ¿ÕÓÊ¼þ");
+		PushDebugMessage("Không th¬ gæi ði Không bßu ki®n");
 		return;
 	end
 	if( this:IsVisible() ) then
@@ -135,7 +135,7 @@ function InfoEdit_SendMail()
 		end
 	end
 		
-	if(SendRet == 0)then	--Èç¹û·¢ÓÊ¼þ³É¹¦,¹Ø±Õ½çÃæ--modify by xindefeng
+	if(SendRet == 0)then	--???????,????--modify by xindefeng
 		InfoEdit_Hide()
 	end
 	
@@ -176,7 +176,7 @@ end
 
 -- add by zchw
 function InfoEdit_MailHistory()
-	local _Group,_Index = DataPool:GetFriendByName(InfoEdit_Target:GetText()); --Modify by WangShibo . ½â¾öÒ»¸öÓÊ¼þbug 2009-11-17
+	local _Group,_Index = DataPool:GetFriendByName(InfoEdit_Target:GetText()); --Modify by WangShibo . ??????bug 2009-11-17
 	DataPool:OpenHistroy( _Group,_Index); --Friend:GetCurrentTeam(), Friend:GetCurrentSelect() );
 end
 function InfoEdit_Frame_ResetPos()

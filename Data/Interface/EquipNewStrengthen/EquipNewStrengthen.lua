@@ -2,35 +2,35 @@
 local Enchange_Item1 = -1
 local Enchange_Item2 = -1
 local g_Object = -1
-local g_check = -1--ÊÇ·ñ¶þ´ÎÈ·ÈÏ
+local g_check = -1--??????
 
 local g_EquipNewStrengthen_Frame_UnifiedPosition;
-local EB_FREE_BIND = 0;				-- ÎÞ°ó¶¨ÏÞÖÆ
-local EB_BINDED = 1;				-- ÒÑ¾­°ó¶¨
-local EB_GETUP_BIND =2			-- Ê°È¡°ó¶¨
-local EB_EQUIP_BIND =3			-- ×°±¸°ó¶¨
+local EB_FREE_BIND = 0;				-- ?????
+local EB_BINDED = 1;				-- ????
+local EB_GETUP_BIND =2			-- ????
+local EB_EQUIP_BIND =3			-- ????
 
 local g_EquipName = {
-	[0]		="ÎäÆ÷",
-	[1]		="Ã±×Ó",
-	[2]		="ÒÂ·þ",
-	[3]		="ÊÖÌ×",
-	[4]		="Ð¬"  ,
-	[5]		="Ñü´ø",
-	[6]		="½äÖ¸",
-	[7]	    ="ÏîÁ´",
-	[8]		="Æï³Ë",
-	[9]		="ÐÐÄÒ",
-	[10]	="Ïä¸ñ",
-	[11]	="½äÖ¸",
-	[12]	="»¤·û",
-	[13]    ="»¤·û",
-	[14]	="»¤Íó",
-	[15]    ="»¤¼ç",
-	[16]	="Ê±×°",
-	[17]  ="°µÆ÷",
-	[18]  ="Îä»ê",
-	[37] ="ÆßÇéÈÐ",
+	[0]		="Vû khí",
+	[1]		="Mão",
+	[2]		="Y Phøc",
+	[3]		="Hµ Thü",
+	[4]		="Hài"  ,
+	[5]		="Yêu Ðai",
+	[6]		="Gi¾i Chï",
+	[7]	    ="HÕng Liên",
+	[8]		="KÜ Th×a",
+	[9]		="Túi",
+	[10]	="Tß½ng Cách",
+	[11]	="Gi¾i Chï",
+	[12]	="Hµ Phù",
+	[13]    ="Hµ Phù",
+	[14]	="Hµ Uy¬n",
+	[15]    ="Hµ Kiên",
+	[16]	="Th¶i Trang",
+	[17]  ="Ám Khí",
+	[18]  ="Võ H°n",
+	[37] ="Th¤t tình Nhçn",
 	}
 
 function EquipNewStrengthen_PreLoad()
@@ -61,7 +61,7 @@ function EquipNewStrengthen_OnEvent(event)
 			objCared = -1
 			objCared = DataPool : GetNPCIDByServerID(xx);
 			if tonumber(objCared)==nil or  tonumber(objCared)== -1 then
-				PushDebugMessage("server´«¹ýÀ´µÄÊý¾ÝÓÐÎÊÌâ¡£");
+				PushDebugMessage("Dæ li®u máy chü có v¤n ð«");
 				return
 			end
 			this:Show()
@@ -85,9 +85,9 @@ function EquipNewStrengthen_OnEvent(event)
 			EquipNewStrengthen_Clear(1);
 		end
 	elseif (event == "TAKE_STENGTHEN_ITEM" and this:IsVisible()) then
-		if arg0 == "I12" then		--ÒÆ³ý×ó±ß,ÒªÁ¬Í¬ÓÒ±ßÒ»ÆðÒÆ³ý
+		if arg0 == "I12" then		--????,?????????
 			EquipNewStrengthen_Clear(0)
-		elseif arg0 == "I13" then		--ÒÆ³ýÓÒ±ß,²»ÐèÒªÀí»á×ó±ß
+		elseif arg0 == "I13" then		--????,???????
 			EquipNewStrengthen_Clear(1)
 		end
 	elseif (event == "ADJEST_UI_POS" ) then
@@ -162,18 +162,18 @@ function EquipNewStrengthen_Update(boxpos,Item_index)
 	if tonumber(boxpos) == 0 then
 		-- ÅÐ¶Ï×ó±ßµÄ
 		local EquipPoint = LifeAbility : Get_Equip_Point(i_index)
-		if EquipPoint == -1 then	--Èç¹û²»ÊÇ×°±¸,´úÂëÀïÒÑ¾­ÓÐ·µ»ØµÄ´íÎóÐÅÏ¢
+		if EquipPoint == -1 then	--??????,?????????????
 			return
 		end
 		if EquipPoint == 8 or EquipPoint == 9 or EquipPoint == 10 or EquipPoint > 37 then
 			return
 		end
-		if PlayerPackage:IsBagItemKFS(i_index) ==1 then  --Îä»êµÄÏÞÖÆ
+		if PlayerPackage:IsBagItemKFS(i_index) ==1 then  --?????
 			PushDebugMessage("#{ZBQH_130521_11}")
 			return
 		end
 		
-		if EquipPoint >= 19 and EquipPoint <= 24 then  --ÁéÎäµÄÏÞÖÆ
+		if EquipPoint >= 19 and EquipPoint <= 24 then  --?????
 			PushDebugMessage("#{SZXT_221216_213}")
 			return
 		end
@@ -208,20 +208,20 @@ function EquipNewStrengthen_Update(boxpos,Item_index)
 	if tonumber(boxpos) == 1 then
 		--ÅÐ¶ÏÓÒ±ßµÄ
 		local EquipPoint2 = LifeAbility : Get_Equip_Point(i_index)
-		if EquipPoint2 == -1 then	--Èç¹û²»ÊÇ×°±¸,´úÂëÀïÒÑ¾­ÓÐ·µ»ØµÄ´íÎóÐÅÏ¢
+		if EquipPoint2 == -1 then	--??????,?????????????
 			return
 		end
 		if EquipPoint2 == 8 or EquipPoint2 == 9 or EquipPoint2 == 10 or EquipPoint2 > 37 then
-				PushDebugMessage("#{ZBQH_130521_14}")	--²»ÊÇ×°±¸ ºÍÉÏ±ßµÄÌáÊ¾²»Ò»Ñù
+				PushDebugMessage("#{ZBQH_130521_14}")	--???? ?????????
 				return
 		end
 
-		if PlayerPackage:IsBagItemKFS(i_index) ==1 then  --Îä»êµÄÏÞÖÆ
+		if PlayerPackage:IsBagItemKFS(i_index) ==1 then  --?????
 			PushDebugMessage("#{ZBQH_130521_15}")
 			return
 		end
 		
-		if EquipPoint2 >= 19 and EquipPoint2 <= 24 then  --ÁéÎäµÄÏÞÖÆ
+		if EquipPoint2 >= 19 and EquipPoint2 <= 24 then  --?????
 			PushDebugMessage("#{SZXT_221216_213}")
 			return
 		end
@@ -242,7 +242,7 @@ function EquipNewStrengthen_Update(boxpos,Item_index)
 		local curlevel1 = LifeAbility:Get_Equip_CurStrengthLevel(Enchange_Item1);
 		local curlevel2 = LifeAbility:Get_Equip_CurStrengthLevel(i_index);
 
-		if tonumber(EquipPoint1) ~= tonumber(EquipPoint2) then			--¸÷ÖÖ¶ñÐÄÌáÊ¾
+		if tonumber(EquipPoint1) ~= tonumber(EquipPoint2) then			--??????
 
 			local theAction1 = EnumAction(Enchange_Item1, "packageitem");
 			local leftItemName = theAction1:GetName()
@@ -293,20 +293,20 @@ function EquipNewStrengthen_Update(boxpos,Item_index)
 	if tonumber(boxpos) == 2 then
 		--ÓÒ¼üµã»÷±³°üµÄÎïÆ·
 		local EquipPoint2 = LifeAbility : Get_Equip_Point(i_index)
-		if EquipPoint2 == -1 then	--Èç¹û²»ÊÇ×°±¸,´úÂëÀïÒÑ¾­ÓÐ·µ»ØµÄ´íÎóÐÅÏ¢
+		if EquipPoint2 == -1 then	--??????,?????????????
 			return
 		end
 		if  EquipPoint2 == 8 or EquipPoint2 == 9 or EquipPoint2 == 10 or EquipPoint2 > 37 then
-				PushDebugMessage("#{ZBQH_130521_14}")	--²»ÊÇ×°±¸
+				PushDebugMessage("#{ZBQH_130521_14}")	--????
 				return
 		end
 
-		if PlayerPackage:IsBagItemKFS(i_index) ==1 then  --Îä»êµÄÏÞÖÆ
+		if PlayerPackage:IsBagItemKFS(i_index) ==1 then  --?????
 			PushDebugMessage("#{ZBQH_130521_15}")
 			return
 		end
 		
-		if EquipPoint2 >= 19 and EquipPoint2 <= 24 then  --ÁéÎäµÄÏÞÖÆ
+		if EquipPoint2 >= 19 and EquipPoint2 <= 24 then  --?????
 			PushDebugMessage("#{SZXT_221216_213}")
 			return
 		end
@@ -422,20 +422,20 @@ function EquipNewStrengthen_Buttons_Clicked()
 		return
 	end
 	local EquipPoint1 = LifeAbility : Get_Equip_Point(Enchange_Item1)
-	if EquipPoint1 == -1 then	--Èç¹û²»ÊÇ×°±¸,´úÂëÀïÒÑ¾­ÓÐ·µ»ØµÄ´íÎóÐÅÏ¢
+	if EquipPoint1 == -1 then	--??????,?????????????
 		return
 	end
 	if  EquipPoint1 == 8 or EquipPoint1 == 9 or EquipPoint1 == 10 or EquipPoint1 > 37 then
-			PushDebugMessage("#{ZBQH_130521_21}")	--²»ÊÇ×°±¸
+			PushDebugMessage("#{ZBQH_130521_21}")	--????
 			return
 	end
 
-	if PlayerPackage:IsBagItemKFS(Enchange_Item1) ==1 then  --Îä»êµÄÏÞÖÆ
+	if PlayerPackage:IsBagItemKFS(Enchange_Item1) ==1 then  --?????
 		PushDebugMessage("#{ZBQH_130521_15}")
 		return
 	end
 	
-	if EquipPoint1 >= 19 and EquipPoint1 <= 24 then  --ÁéÎäµÄÏÞÖÆ
+	if EquipPoint1 >= 19 and EquipPoint1 <= 24 then  --?????
 		PushDebugMessage("#{SZXT_221216_213}")
 		return
 	end
@@ -457,20 +457,20 @@ function EquipNewStrengthen_Buttons_Clicked()
 	end
 
 	local EquipPoint2 = LifeAbility : Get_Equip_Point(Enchange_Item2)
-		if EquipPoint2 == -1 then	--Èç¹û²»ÊÇ×°±¸,´úÂëÀïÒÑ¾­ÓÐ·µ»ØµÄ´íÎóÐÅÏ¢
+		if EquipPoint2 == -1 then	--??????,?????????????
 			return
 		end
 	if EquipPoint2 == 8 or EquipPoint2 == 9 or EquipPoint2 == 10 or EquipPoint2 > 37 then
-			PushDebugMessage("#{ZBQH_130521_23}")	--²»ÊÇ×°±¸ ºÍÉÏ±ßµÄÌáÊ¾²»Ò»Ñù
+			PushDebugMessage("#{ZBQH_130521_23}")	--???? ?????????
 			return
 	end
 
-	if PlayerPackage:IsBagItemKFS(Enchange_Item2) ==1 then  --Îä»êµÄÏÞÖÆ
+	if PlayerPackage:IsBagItemKFS(Enchange_Item2) ==1 then  --?????
 		PushDebugMessage("#{ZBQH_130521_15}")
 		return
 	end
 	
-	if EquipPoint2 >= 19 and EquipPoint2 <= 24 then  --ÁéÎäµÄÏÞÖÆ
+	if EquipPoint2 >= 19 and EquipPoint2 <= 24 then  --?????
 		PushDebugMessage("#{SZXT_221216_213}")
 		return
 	end

@@ -6,14 +6,14 @@ local MenPaiId = -1
 local TargetID = nil
 local g_GameTools_ItemSearchResults = {}
 local GameTools_ItemTypeId = 1
-local gameToolsItemTypeList = {"×°±¸", "²ÄÁÏ", "±¦Ê¯"}
-local menpaiNameList = {"ÉÙÁÖ","Ã÷½Ì","Ø¤°ï","Îäµ±","¶ëÃ¼","ĞÇËŞ","ÌìÁú","ÌìÉ½","åĞÒ£","ÎŞÃÅÅÉ","ÂüÍÓ","¶ñÈË¹È","Ä½Èİ","ÌÆÃÅ","¹í¹È","ÌÒ»¨µº","¾øÇé¹È"}--,"Ä½Èİ","ÌÆÃÅ","¹í¹È","ÌÒ»¨µº"
+local gameToolsItemTypeList = {"Trang b¸", "Tài li®u", "Bäo thÕch"}
+local menpaiNameList = {"Thiªu Lâm","Minh Giáo","Cái Bang","Võ Ğang","Nga Mi","Tinh Túc","Thiên Long","Thiên S½n","Tiêu dao","Tñ do","MÕn Ğà","Ác Nhân C¯c","Mµ Dung","Ğß¶ng Môn","QuÖ C¯c","Ğào Hoa Ğäo","Tuy®t Tình C¯c"}--,"Mµ Dung","Ğß¶ng Môn","QuÖ C¯c","Ğào Hoa Ğäo"
 function GameTools_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
 	this:RegisterEvent("UPDATE_NOTIFY");
 	this:RegisterEvent("ADJEST_UI_POS",false)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
-	this:RegisterEvent( "HIDE_ON_SCENE_TRANSED" ); -- Àë¿ª³¡¾°
+	this:RegisterEvent( "HIDE_ON_SCENE_TRANSED" ); -- ????
 	this:RegisterEvent("MAINTARGET_CHANGED")
 end
 
@@ -56,14 +56,14 @@ function GameTools_Init()
 end
 
 --Ôª±¦
-function GameTools_yuanbao(index)--1Ôö¼Ó 2¼õÉÙ
+function GameTools_yuanbao(index)--1?? 2??
     local nNum = GameTools_yuanbaoEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -78,14 +78,14 @@ function GameTools_yuanbao(index)--1Ôö¼Ó 2¼õÉÙ
 end
 
 --ÎïÆ·×°±¸
-function GameTools_item(index)--1Ôö¼Ó 2¼õÉÙ
+function GameTools_item(index)--1?? 2??
     local nNum = GameTools_itemEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -100,14 +100,14 @@ function GameTools_item(index)--1Ôö¼Ó 2¼õÉÙ
 end
 
 --½ğ±Ò
-function GameTools_money(index)--1Ôö¼Ó 2¼õÉÙ
+function GameTools_money(index)--1?? 2??
     local nNum = GameTools_moneyEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -122,14 +122,14 @@ function GameTools_money(index)--1Ôö¼Ó 2¼õÉÙ
 end
 
 --°ó¶¨Ôª±¦
-function GameTools_bindyuanbao(index)--1Ôö¼Ó 2¼õÉÙ
+function GameTools_bindyuanbao(index)--1?? 2??
     local nNum = GameTools_bindyuanbaoEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -144,14 +144,14 @@ function GameTools_bindyuanbao(index)--1Ôö¼Ó 2¼õÉÙ
 end
 
 --ĞÄ·¨
-function GameTools_xiongba(index)--1Ôö¼Ó 2¼õÉÙ
+function GameTools_xiongba(index)--1?? 2??
     local nNum = GameTools_xiongbaEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -166,14 +166,14 @@ function GameTools_xiongba(index)--1Ôö¼Ó 2¼õÉÙ
 end
 
 --Ôùµã
-function GameTools_hongli(index)--1Ôö¼Ó 2¼õÉÙ
+function GameTools_hongli(index)--1?? 2??
     local nNum = GameTools_hongliEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -188,14 +188,14 @@ function GameTools_hongli(index)--1Ôö¼Ó 2¼õÉÙ
 end
 
 --½ÇÉ«µÈ¼¶
-function GameTools_level(index)--1Ôö¼Ó 2¼õÉÙ
+function GameTools_level(index)--1?? 2??
     local nNum = GameTools_levelEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -212,11 +212,11 @@ end
 --ÇĞ»»ÃÅÅÉ
 function GameTools_menpai(index) 
     if MenPaiId == - 1 then
-	   PushDebugMessage("ÇëÑ¡Ôñ¼ÓÈëµÄÃÅÅÉ")
+	   PushDebugMessage("Thïnh lña ch÷n gia nh§p Ğích môn phái")
 	   TargetID = 0
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -233,7 +233,7 @@ end
 --¸øÍæ¼Ò·¢·ÅµÀ¾ß×°±¸ BYÑ©Îè[BUG-319] 2021-9-4 21:45:55 
 function GameTools_FaFang(index)
 	if TargetID == nil then
-		PushDebugMessage("ÇëÑ¡Ôñ·¢·Å×°±¸µÄÍæ¼Ò£¬Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Thïnh lña ch÷n cho vay trang b¸ Ğích ngß¶i ch½i, nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	--ÎïÆ·ID
@@ -241,28 +241,28 @@ function GameTools_FaFang(index)
 	--·¢·ÅÊıÁ¿
 	local nNum = GameTools_FaFang2Edix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if nItem == nil then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	Clear_XSCRIPT();
 		Set_XSCRIPT_Function_Name("GMToolTypeOne");
 		Set_XSCRIPT_ScriptID(666666);
 		Set_XSCRIPT_Parameter(0,9); 				--nType 
-		Set_XSCRIPT_Parameter(1,tonumber(nItem));	--arg2  µÀ¾ßID
-		Set_XSCRIPT_Parameter(2,tonumber(nNum));	--arg3  µÀ¾ßÊıÁ¿
-		Set_XSCRIPT_Parameter(3,TargetID);		--isWho Íæ¼ÒGuid
-		Set_XSCRIPT_ParamCount(4);					--²ÎÊı×ÜÊı
+		Set_XSCRIPT_Parameter(1,tonumber(nItem));	--arg2  ??ID
+		Set_XSCRIPT_Parameter(2,tonumber(nNum));	--arg3  ????
+		Set_XSCRIPT_Parameter(3,TargetID);		--isWho ??Guid
+		Set_XSCRIPT_ParamCount(4);					--????
     Send_XSCRIPT();
 end
 
 --¸øÍæ¼Ò½»×Ó
 function GameTools_JiaoZi(index)
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
     local nNum = GameTools_JiaoZiEdix:GetText()
@@ -281,11 +281,11 @@ end
 function GameTools_JKL(index)
     local nNum = GameTools_JKLEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -303,11 +303,11 @@ end
 function GameTools_MenGong(index)
     local nNum = GameTools_MenGongEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -325,11 +325,11 @@ end
 function GameTools_BangGong(index)
     local nNum = GameTools_BangGongEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -347,11 +347,11 @@ end
 function GameTools_GongLi(index)
     local nNum = GameTools_GongLiEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -369,11 +369,11 @@ end
 function GameTools_TiWu(index)
     local nNum = GameTools_TiWuEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -391,11 +391,11 @@ end
 function GameTools_JingCui(index)
     local nNum = GameTools_JingCuiEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -413,11 +413,11 @@ end
 function GameTools_ZhuangTai(index)
     local nNum = GameTools_ZhuangTaiEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -435,11 +435,11 @@ end
 function GameTools_BaoBao(index)
     local nNum = GameTools_BaoBaoEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -457,11 +457,11 @@ end
 function GameTools_JingYan(index)
     local nNum = GameTools_JingYanEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -479,11 +479,11 @@ end
 function GameTools_HuoLi(index)
     local nNum = GameTools_HuoLiEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -501,11 +501,11 @@ end
 function GameTools_JingLi(index)
     local nNum = GameTools_JingLiEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -525,7 +525,7 @@ function GameTools_DiTu(index)
 	local xPos = GameTools_DiTu2Edix:GetText()
 	local yPos = GameTools_DiTu3Edix:GetText()
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	if nMap == nil then
@@ -535,7 +535,7 @@ function GameTools_DiTu(index)
 		Set_XSCRIPT_Function_Name("GMToolTypeOne");
 		Set_XSCRIPT_ScriptID(666666);
 		Set_XSCRIPT_Parameter(0,22);
-		Set_XSCRIPT_Parameter(1,tonumber(nMap)); --µØÍ¼ID
+		Set_XSCRIPT_Parameter(1,tonumber(nMap)); --??ID
 		Set_XSCRIPT_Parameter(2,tonumber(xPos)); --X
 		Set_XSCRIPT_Parameter(3,TargetID);
 		Set_XSCRIPT_Parameter(4,tonumber(yPos)); --Y
@@ -544,14 +544,14 @@ function GameTools_DiTu(index)
 end
 
 --¸ø»áÔ±µã
-function GameTools_VIP(index)--1Ôö¼Ó 2¼õÉÙ
+function GameTools_VIP(index)--1?? 2??
     local nNum = GameTools_VIPEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -566,14 +566,14 @@ function GameTools_VIP(index)--1Ôö¼Ó 2¼õÉÙ
 end
 
 --¸ø¼¼ÄÜ
-function GameTools_NeiXi(index)--1Ôö¼Ó 2¼õÉÙ
+function GameTools_NeiXi(index)--1?? 2??
     local nNum = GameTools_NeiXiEdix:GetText()
 	if nNum == nil or nNum == "" then
-		PushDebugMessage("ÇëÏÈÊäÈëÊı¾İ£¬ÔÙÖ´ĞĞ²Ù×÷")
+		PushDebugMessage("Thïnh Tiên ğßa vào s¯ li®u, Tái ch¤p hành thao tác")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("Èç¹û·¢·Å¸øÍæ¼Ò£¬ÇëÏÈÑ¡ÖĞËûµÄÍ·Ïñ£¡")
+		PushDebugMessage("Nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
 		TargetID = 0
 	end
 	Clear_XSCRIPT();
@@ -640,7 +640,7 @@ function GameTools_DoSearch()
 	local searchText = GameTools_SearchEdit:GetText()
 	if searchText == nil or searchText == "" then
 		GameTools_SearchStatus:SetText("")
-		PushDebugMessage("ÇëÊäÈëËÑË÷ÄÚÈİ")
+		PushDebugMessage("Thïnh ğßa vào tìm tòi nµi dung")
 		return
 	end
 	GameTools_SearchItems(searchText)
@@ -652,7 +652,7 @@ function GameTools_SearchItems(searchText)
 	GameTools_ItemIcon:SetActionItem(-1)
 	GameTools_ItemIdEdit:SetText("")
 	GameTools_ItemCountEdit:SetText("1")
-	GameTools_SearchStatus:SetText("ÕıÔÚËÑË÷ [" .. searchText .. "]...")
+	GameTools_SearchStatus:SetText("Ğang · tìm tòi [" .. searchText .. "]...")
 
 	local results = GameTools_SearchItemsInMemory(searchText, GameTools_ItemTypeId, 100)
 	local resultCount = 0
@@ -666,10 +666,10 @@ function GameTools_SearchItems(searchText)
 	end
 
 	if resultCount == 0 then
-		GameTools_ItemList:AddItem("Î´ÕÒµ½Æ¥ÅäµÄµÀ¾ß", 0)
-		GameTools_SearchStatus:SetText("Î´ÕÒµ½Æ¥ÅäµÄµÀ¾ß")
+		GameTools_ItemList:AddItem("Không tìm ğßşc xÑng ğôi Ğích ğÕo cø", 0)
+		GameTools_SearchStatus:SetText("Không tìm ğßşc xÑng ğôi Ğích ğÕo cø")
 	else
-		GameTools_SearchStatus:SetText("ÕÒµ½ " .. resultCount .. " ¸öÆ¥ÅäµÄµÀ¾ß")
+		GameTools_SearchStatus:SetText("Tìm ğßşc" .. resultCount .. "Cá xÑng ğôi Ğích ğÕo cø")
 	end
 	return resultCount
 end
@@ -692,26 +692,26 @@ end
 function GameTools_SendSelectedItem()
 	local itemIdText = GameTools_ItemIdEdit:GetText()
 	if itemIdText == nil or itemIdText == "" then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñÒ»¸öÎïÆ·")
+		PushDebugMessage("Thïnh Tiên lña ch÷n mµt cái v§t ph¦m")
 		return
 	end
 	local itemId = tonumber(itemIdText)
 	if itemId == nil or itemId <= 0 then
-		PushDebugMessage("ÎïÆ·IDÎŞĞ§")
+		PushDebugMessage("V§t ph¦m IDkhông có hi®u quä")
 		return
 	end
 	local countText = GameTools_ItemCountEdit:GetText()
 	if countText == nil or countText == "" then
-		PushDebugMessage("ÇëÊäÈëÎïÆ·ÊıÁ¿")
+		PushDebugMessage("Thïnh ğßa vào v§t ph¦m s¯ lßşng")
 		return
 	end
 	local itemCount = tonumber(countText)
 	if itemCount == nil or itemCount <= 0 then
-		PushDebugMessage("ÇëÊäÈëÓĞĞ§µÄÊıÁ¿")
+		PushDebugMessage("Thïnh ğßa vào hæu hi®u Ğích s¯ lßşng")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("ÇëÏÈÑ¡ÖĞÄ¿±êÍæ¼Ò")
+		PushDebugMessage("Thïnh Tiên lña ch÷n møc tiêu ngß¶i ch½i")
 		TargetID = 0
 	end
 	Clear_XSCRIPT()
@@ -728,26 +728,26 @@ end
 function GameTools_RecallLastItem()
 	local itemIdText = GameTools_ItemIdEdit:GetText()
 	if itemIdText == nil or itemIdText == "" then
-		PushDebugMessage("ÇëÏÈÑ¡ÔñÒ»¸öÎïÆ·")
+		PushDebugMessage("Thïnh Tiên lña ch÷n mµt cái v§t ph¦m")
 		return
 	end
 	local itemId = tonumber(itemIdText)
 	if itemId == nil or itemId <= 0 then
-		PushDebugMessage("ÎïÆ·IDÎŞĞ§")
+		PushDebugMessage("V§t ph¦m IDkhông có hi®u quä")
 		return
 	end
 	local countText = GameTools_ItemCountEdit:GetText()
 	if countText == nil or countText == "" then
-		PushDebugMessage("ÇëÊäÈëÎïÆ·ÊıÁ¿")
+		PushDebugMessage("Thïnh ğßa vào v§t ph¦m s¯ lßşng")
 		return
 	end
 	local itemCount = tonumber(countText)
 	if itemCount == nil or itemCount <= 0 then
-		PushDebugMessage("ÇëÊäÈëÓĞĞ§µÄÊıÁ¿")
+		PushDebugMessage("Thïnh ğßa vào hæu hi®u Ğích s¯ lßşng")
 		return
 	end
 	if TargetID == nil then
-		PushDebugMessage("ÇëÏÈÑ¡ÖĞÄ¿±êÍæ¼Ò")
+		PushDebugMessage("Thïnh Tiên lña ch÷n møc tiêu ngß¶i ch½i")
 		TargetID = 0
 	end
 	Clear_XSCRIPT()

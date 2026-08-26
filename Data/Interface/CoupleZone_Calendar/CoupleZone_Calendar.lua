@@ -1,4 +1,4 @@
-local objCared = -1								--关心NPC的Obj的编号（Server传过来）
+local objCared = -1								--??NPC?Obj???(Server???)
 
 --UI
 local g_CoupleZone_Calendar_UI_Button_LastMonth = ""
@@ -21,7 +21,7 @@ local g_CoupleZone_Calendar_UICommand_OpenUI = 99832601
 local g_CoupleZone_Calendar_UICommand_UpdateRedPoint = 99832403
 
 --running data
-local g_CoupleZone_Calendar_Current_Month_Chosen = 2  -- 上月 1 本月 2 下月 3
+local g_CoupleZone_Calendar_Current_Month_Chosen = 2  -- ?? 1 ?? 2 ?? 3
 local g_CoupleZone_Calendar_Current_Grid_Chosen = 1
 
 local g_CoupleZone_Calendar_IsDebug = 0
@@ -330,7 +330,7 @@ function CoupleZone_Calendar_OnEvent(event)
 	
 	if event == "UPDATE_COUPLEZONE_CALENDAR_PAGEX" then
 		local page = tonumber(arg0)
-		if page >= 0 and page < CoupleZone_Calendar_PageMax then   --所有数据
+		if page >= 0 and page < CoupleZone_Calendar_PageMax then   --????
 			CoupleZone_Calendar_UpdateCalendarData()
 			CoupleZone_Calendar_Update()
 		end
@@ -338,7 +338,7 @@ function CoupleZone_Calendar_OnEvent(event)
 	
 	if event == "UPDATE_COUPLEZONE_REDPOINT" then
 		local param = tonumber(arg0)
-		if param == 99999 then   --所有红点
+		if param == 99999 then   --????
 			CoupleZone_Calendar_UpdateAllRedPoint()
 		else
 			--单个红点
@@ -437,10 +437,10 @@ end
 function CoupleZone_Calendar_AskCoupleZone_CalendarData()
 	CoupleZone_Calendar_Debug("CoupleZone_Calendar_AskCoupleZone_CalendarData")
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name("OnAskCoupleZoneData") 		-- 函数名
-		Set_XSCRIPT_ScriptID(998324)					-- 脚本编号
-		Set_XSCRIPT_Parameter(0, 2)   					-- 请求类型  2  打开日历请求
-		Set_XSCRIPT_ParamCount(1)						-- 参数个数
+		Set_XSCRIPT_Function_Name("OnAskCoupleZoneData") 		-- ???
+		Set_XSCRIPT_ScriptID(998324)					-- ????
+		Set_XSCRIPT_Parameter(0, 2)   					-- ????  2  ??????
+		Set_XSCRIPT_ParamCount(1)						-- ????
 	Send_XSCRIPT()
 end
 
@@ -515,7 +515,7 @@ function CoupleZone_Calendar_OnClicked_GridX(gridX)
 	end
 	g_ChosenDay = gridX - start_week
 	
-	CoupleZone_Calendar_Debug(g_ChosenDay.."号")
+	CoupleZone_Calendar_Debug(g_ChosenDay.."H鄌")
 end
 
 --================================================
@@ -527,7 +527,7 @@ function CoupleZone_Calendar_Frame_On_ResetPos()
 end
 --=========================================================
 --开始关心NPC，
---在开始关心之前需要先确定这个界面是不是已经有“关心”的NPC，
+--在开始关心之前需要先确定犫个界面是不是已经有“关心”的NPC，
 --如果有的话，先取消已经有的“关心”
 --=========================================================
 function CoupleZone_Calendar_BeginCareObject(objCaredId)

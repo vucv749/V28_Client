@@ -1,11 +1,11 @@
 local g_unifiedposistion
 local g_dir_type = {
-	player	= {type=0, x=0, z=0,h=0,p=0,},			-- 主视角
-	east	= {type=1, x=112, z=114, h=1050,p=-51,},	-- 东
-	north	= {type=2, x=112, z=81,h=750,p=-40,},		-- 北
-	west	= {type=3, x=82, z=82,h=680,p=-43,},		-- 西
-	south	= {type=4, x=84, z=110,h=893,p=-51,},		-- 南
-	center	= {type=5, x=92, z=119,h=2100,p=-87,},		-- 中心
+	player	= {type=0, x=0, z=0,h=0,p=0,},			-- ???
+	east	= {type=1, x=112, z=114, h=1050,p=-51,},	-- ?
+	north	= {type=2, x=112, z=81,h=750,p=-40,},		-- ?
+	west	= {type=3, x=82, z=82,h=680,p=-43,},		-- ?
+	south	= {type=4, x=84, z=110,h=893,p=-51,},		-- ?
+	center	= {type=5, x=92, z=119,h=2100,p=-87,},		-- ??
 }
 function NoDiffMatch_Camera_PreLoad()
 

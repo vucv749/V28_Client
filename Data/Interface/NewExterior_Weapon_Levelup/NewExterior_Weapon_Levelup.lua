@@ -3,18 +3,18 @@ local g_WeaponLevelUp_Frame_UnifiedPosition
 local g_clientNpcId = -1
 
 
-local g_BarList = {}								-- 幻武图鉴ui集合
-local g_MaxBarNum = 0								-- 图鉴总数
-local g_CurSelExteriorWeaponID = 0					-- Exterior_Weapon表的id
-local g_CurSelExteriorWeaponLevel = 1				-- 当前选择的幻武等级
-local g_WeponLevelup_YuanBaoPay = 1					-- 元宝购买确认
+local g_BarList = {}								-- ????ui??
+local g_MaxBarNum = 0								-- ????
+local g_CurSelExteriorWeaponID = 0					-- Exterior_Weapon??id
+local g_CurSelExteriorWeaponLevel = 1				-- ?????????
+local g_WeponLevelup_YuanBaoPay = 1					-- ??????
 local g_CurSelItemIndex = 1
-local g_ExteriorType = 5							-- 幻武
+local g_ExteriorType = 5							-- ??
 local g_DataListCount = 0
-local g_LevelMax = 4								-- 最高等级
-local g_LevelLimit = 1								-- 限制升级的
-local g_InitList = 0								-- 初始化标识
-local g_IdxList = {}								-- 索引集合
+local g_LevelMax = 4								-- ????
+local g_LevelLimit = 1								-- ?????
+local g_InitList = 0								-- ?????
+local g_IdxList = {}								-- ????
 
 function NewExterior_Weapon_Levelup_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
@@ -22,7 +22,7 @@ function NewExterior_Weapon_Levelup_PreLoad()
 	this:RegisterEvent("MONEYJZ_CHANGE", false)
 	this:RegisterEvent("ADJEST_UI_POS", false)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED", false)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)	--离开场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)	--????????
 	this:RegisterEvent("ADD_EXTERIOR", false)
 	this:RegisterEvent("UPDATE_EXTERIOR", false)
 	this:RegisterEvent("EXTERIOR_OUTTIME", false)
@@ -39,7 +39,7 @@ function NewExterior_Weapon_Levelup_PreLoad()
 	this:RegisterEvent("OPEN_DRESS_PAINT_FITTING", false)
 	this:RegisterEvent("OPEN_DRESS_ENCHASE_FITTING", false)
 	
-	this:RegisterEvent("YIGUI_OPEN",false);				-- 衣柜
+	this:RegisterEvent("YIGUI_OPEN",false);				-- ??
 end
 
 function NewExterior_Weapon_Levelup_OnLoad() 
@@ -94,7 +94,7 @@ function NewExterior_Weapon_Levelup_Frame_On_ResetPos()
 end
 
 function NewExterior_Weapon_Levelup_OnShow()
-	if this : IsVisible() then	-- 如果界面开着，则不处理
+	if this : IsVisible() then	-- ??????,????
 		return
 	end
 
@@ -119,7 +119,7 @@ end
 function NewExterior_Weapon_Levelup_Init()
 	-- 对List进行初始化
 	Exterior:LuaFnInitExteriorWeaponList()
-	-- 左侧展示模型 初始化
+	-- 左侧牴示模型 初始化
 	NewExterior_Weapon_Levelup_FakeObject:SetFakeObject("")
 	NewExterior_Weapon_Levelup_FakeObject:SetFakeObject("Exterior_Weapon")
 	-- 元宝确认框ui状态
@@ -306,7 +306,7 @@ function NewExterior_Weapon_Levelup_LevelInfoShow(nExteriorID)
 
 	Exterior:LuaFnUpdateExteriorWeaponPlayerData(nExteriorID, lv)
 
-	if lv == nextlv then 	-- 满级
+	if lv == nextlv then 	-- ??
 		-- 显示消耗
 		NewExterior_Weapon_Levelup_DemandMoney:SetProperty("MoneyNumber", 0)
 		-- 显示满级版
@@ -377,7 +377,7 @@ function NewExterior_Weapon_Levelup_OnHiden()
 
 end
 
---点击关闭按钮
+--点击关睜按钮
 function NewExterior_Weapon_Levelup_CloseOnClick()
 	this:Hide()
 end

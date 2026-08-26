@@ -5,14 +5,14 @@ local g_Levelup_TopListRankType = {}
 local g_Levelup_TopListRedPoint = {}
 local g_CurRankType = 1
 
-local g_Levleup_ButtonCDTime = 3; --按钮冷却时间
+local g_Levleup_ButtonCDTime = 3; --??????
 local g_Levleup_ButtonLastTime = 0;
 local g_Levelup_MessageType = 0
 
 local g_LevelUp_TopListBk = {
-	[1] = "set:Levelup_TopList image:Levelup_TopList1",			--第一名
-	[2] = "set:Levelup_TopList image:Levelup_TopList2",			--第二名
-	[3] = "set:Levelup_TopList image:Levelup_TopList3",			--第三名
+	[1] = "set:Levelup_TopList image:Levelup_TopList1",			--???
+	[2] = "set:Levelup_TopList image:Levelup_TopList2",			--???
+	[3] = "set:Levelup_TopList image:Levelup_TopList3",			--???
 	}
 
 
@@ -30,8 +30,8 @@ local g_LevelUpInfo =
 --=========
 function Levelup_TopList_PreLoad()
 
-	this:RegisterEvent("UI_COMMAND", true)--打开or刷新界面
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--进场景关闭界面
+	this:RegisterEvent("UI_COMMAND", true)--??or????
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
 	this:RegisterEvent("ADJEST_UI_POS",false)
 	this:RegisterEvent("OPEN_NORMAL_RANK_LIST",true)
@@ -67,7 +67,7 @@ function Levelup_TopList_OnEvent(event)
 	if(event == "UI_COMMAND" and tonumber(arg0) == 999494001) then
 		if this:IsVisible() then
 			Levelup_TopList_UpMainRedPoint()
-			Levelup_TopList_UpRedPoint(g_CurRankType) --领奖后更新一下红点
+			Levelup_TopList_UpRedPoint(g_CurRankType) --?????????
 		end
 	elseif event == "OPEN_NORMAL_RANK_LIST" then
 		g_CurRankType = tonumber(arg0)
@@ -82,7 +82,7 @@ function Levelup_TopList_OnEvent(event)
 	elseif event == "UPDATE_NORMAL_RANK_RED_POINT" then
 		Levelup_TopList_UpMainRedPoint()
 		if this:IsVisible() then
-			Levelup_TopList_UpRedPoint(g_CurRankType) --领奖后更新一下红点
+			Levelup_TopList_UpRedPoint(g_CurRankType) --?????????
 		end
 	end
 end
@@ -238,7 +238,7 @@ function Levelup_TopList_AddRecord(rankType,  index ,nMyrank)
 	SubButton:Show()
 end
 
---添加空行
+--添加繝行
 function Levelup_TopList_AddEmptyRecord(rankType,  index )		
 	local ItemBar = Levelup_TopList_List:AddChild( "Levelup_TopList_ListInfoBK")
 	if ItemBar == nil then
@@ -317,7 +317,7 @@ end
 function Levelup_TopList_Refresh_Click()
 	local curTime = OSAPI:GetTickCount();
 	if ( curTime - g_Levleup_ButtonLastTime < g_Levleup_ButtonCDTime * 1000) then 
-   	    PushDebugMessage("#{TXLY_240904_14}"); --不可连续点击，请稍等片刻后再点击
+   	    PushDebugMessage("#{TXLY_240904_14}"); --??????,?????????
 		return
 	end
 	g_Levleup_ButtonLastTime = curTime;

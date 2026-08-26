@@ -2,7 +2,7 @@ local g_Frame_UnifiedXPosition;
 local g_Frame_UnifiedYPosition;
 
 --******************************
---战令补充进度界面
+--牻令补充进度界面
 --******************************
 
 
@@ -25,9 +25,9 @@ function NewZhanLing_Mod_OnEvent(event)
 	elseif (event == "HIDE_ON_SCENE_TRANSED") then
         this:Hide()
 
-    elseif event == "UI_COMMAND" and (tonumber(arg0) == 99852604) then	--服务端传数据
+    elseif event == "UI_COMMAND" and (tonumber(arg0) == 99852604) then	--??????
 		NewZhanLing_Mod_Open()
-	elseif event == "UI_COMMAND" and (tonumber(arg0) == 99852605) then	--服务端传数据
+	elseif event == "UI_COMMAND" and (tonumber(arg0) == 99852605) then	--??????
 		local bIsShowHotPoint1 = Get_XParam_INT(0)
 		local bIsShowHotPoint2 = Get_XParam_INT(1)
 		local bIsShowHotPoint3 = Get_XParam_INT(2)
@@ -86,7 +86,7 @@ function NewZhanLing_Mod_ResetPos()
 	NewZhanLing_Mod_Frame:SetProperty("UnifiedYPosition", g_Frame_UnifiedYPosition);
 end
 
--- index:1新战令，2游龙卡，3扫荡，4天鉴神卷, 5扫荡银币(铜符)获取：每日2个副本
+-- index:1新牻令，2游龙卡，3扫荡，4天鉴神卷, 5扫荡银币(铜符)获取：每葼2个副本
 function NewZhanLing_Mod_Enter_Clicked(index)
     if index == 1 then
 		local nPlayerLevel = Player:GetData("LEVEL")
@@ -108,7 +108,7 @@ function NewZhanLing_Mod_Enter_Clicked(index)
 		Send_XSCRIPT()		
 	elseif  index == 2 then
 		local isInHell = IsInHell()
-		if isInHell == 1 then--在地府中不能领取奖品
+		if isInHell == 1 then--??????????
 			PushDebugMessage("#{HJYK_201223_46}")
 			return
 		end
@@ -133,7 +133,7 @@ function NewZhanLing_Mod_Enter_Clicked(index)
 			Set_XSCRIPT_ScriptID( 890215 )
 			Set_XSCRIPT_ParamCount(0)
 		Send_XSCRIPT()
-	elseif index == 5 then--每日副本银符
+	elseif index == 5 then--??????
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("OnOpenUI")
 			Set_XSCRIPT_ScriptID(890289)

@@ -53,43 +53,43 @@ local ShengWangAll_Image=
 }
 
 	--¼òµ¥  "#{SWXT_221213_143}"
-	--ÆÕÍ¨  "#{SWXT_221213_148}",
+	--Æ Í¨  "#{SWXT_221213_148}",
 	--¿àÄÑ  "#{SWXT_221213_159}",
 
 --ÈÎÎñ¼¯ºÏ
 local ShengWangAll_MissionInfo = {
-	--ÕóÓª1
+	-- óÓª1
 	[1] = {
-			[1]={missionid=2130, name="#{SWXT_221213_142}",des="#{SWXT_221213_144}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=613,posX=130,posZ=190,NPCname="Ä«Èç",AcceptTimeParam=5},
-			[2]={missionid=2131, name="#{SWXT_221213_145}",des="#{SWXT_221213_146}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=613,posX=130,posZ=190,NPCname="Ä«Èç",AcceptTimeParam=5},
-			[3]={missionid=2132, name="#{SWXT_221213_147}",des="#{SWXT_221213_149}",grade="set:ShengWang01 image:ShengWangAll_PuTong",bonus=15,scene=613,posX=125,posZ=178,NPCname="Ä«ÏşÇå",AcceptTimeParam=5},
-			[4]={missionid=2133, name="#{SWXT_221213_150}",des="#{SWXT_221213_151}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=613,posX=63,posZ=53,NPCname="Ä«Öª³î",AcceptTimeParam=5},
-			[5]={missionid=2134, name="#{SWXT_221213_152}",des="#{SWXT_221213_153}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=613,posX=63,posZ=53,NPCname="Ä«Öª³î",AcceptTimeParam=5},
-			[6]={missionid=2135, name="#{SWXT_221213_154}",des="#{SWXT_221213_155}",grade="set:ShengWang01 image:ShengWangAll_PuTong",bonus=15,scene=613,posX=63,posZ=53,NPCname="Ä«Öª³î",AcceptTimeParam=5},
-			[7]={missionid=2136, name="#{SWXT_221213_156}",des="#{SWXT_221213_157}",grade="set:ShengWang01 image:ShengWangAll_PuTong",bonus=15,scene=613,posX=63,posZ=53,NPCname="Ä«Öª³î",AcceptTimeParam=5},
-			[8]={missionid=2155, name="#{SWXT_221213_158}",des="#{SWXT_221213_160}",grade="set:ShengWang01 image:ShengWangAll_KunNan",bonus=25,scene=613,posX=130,posZ=190,NPCname="Ä«Èç",AcceptTimeParam=3},
+			[1]={missionid=2130, name="#{SWXT_221213_142}",des="#{SWXT_221213_144}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=613,posX=130,posZ=190,NPCname="M£c Nhß",AcceptTimeParam=5},
+			[2]={missionid=2131, name="#{SWXT_221213_145}",des="#{SWXT_221213_146}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=613,posX=130,posZ=190,NPCname="M£c Nhß",AcceptTimeParam=5},
+			[3]={missionid=2132, name="#{SWXT_221213_147}",des="#{SWXT_221213_149}",grade="set:ShengWang01 image:ShengWangAll_PuTong",bonus=15,scene=613,posX=125,posZ=178,NPCname="M£c Hi¬u Thanh",AcceptTimeParam=5},
+			[4]={missionid=2133, name="#{SWXT_221213_150}",des="#{SWXT_221213_151}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=613,posX=63,posZ=53,NPCname="M£c Tri S¥u",AcceptTimeParam=5},
+			[5]={missionid=2134, name="#{SWXT_221213_152}",des="#{SWXT_221213_153}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=613,posX=63,posZ=53,NPCname="M£c Tri S¥u",AcceptTimeParam=5},
+			[6]={missionid=2135, name="#{SWXT_221213_154}",des="#{SWXT_221213_155}",grade="set:ShengWang01 image:ShengWangAll_PuTong",bonus=15,scene=613,posX=63,posZ=53,NPCname="M£c Tri S¥u",AcceptTimeParam=5},
+			[7]={missionid=2136, name="#{SWXT_221213_156}",des="#{SWXT_221213_157}",grade="set:ShengWang01 image:ShengWangAll_PuTong",bonus=15,scene=613,posX=63,posZ=53,NPCname="M£c Tri S¥u",AcceptTimeParam=5},
+			[8]={missionid=2155, name="#{SWXT_221213_158}",des="#{SWXT_221213_160}",grade="set:ShengWang01 image:ShengWangAll_KunNan",bonus=25,scene=613,posX=130,posZ=190,NPCname="M£c Nhß",AcceptTimeParam=3},
 		},
-	--ÕóÓª2
+	-- óÓª2
 	[2] = {
-			[1]={missionid=2137, name="#{SWXT_221213_161}",des="#{SWXT_221213_162}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=614,posX=62,posZ=199,NPCname="Ä«Òä",AcceptTimeParam=5},
-			[2]={missionid=2138, name="#{SWXT_221213_163}",des="#{SWXT_221213_164}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=614,posX=70,posZ=37,NPCname="Ä«ĞÇÎÌ",AcceptTimeParam=5},
-			[3]={missionid=2139, name="#{SWXT_221213_165}",des="#{SWXT_221213_166}",grade="set:ShengWang01 image:ShengWangAll_PuTong",bonus=15,scene=614,posX=69,posZ=142,NPCname="Ä«±±³½",AcceptTimeParam=5},
-			[4]={missionid=2140, name="#{SWXT_221213_167}",des="#{SWXT_221213_168}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=614,posX=37,posZ=119,NPCname="½­ĞĞÔÆ",AcceptTimeParam=5},
-			[5]={missionid=2141, name="#{SWXT_221213_169}",des="#{SWXT_221213_170}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=614,posX=56,posZ=198,NPCname="Ä«Ë¼Ë¼",AcceptTimeParam=5},
-			[6]={missionid=2142, name="#{SWXT_221213_171}",des="#{SWXT_221213_172}",grade="set:ShengWang01 image:ShengWangAll_PuTong",bonus=15,scene=614,posX=37,posZ=119,NPCname="½­ĞĞÔÆ",AcceptTimeParam=5},
-			[7]={missionid=2143, name="#{SWXT_221213_173}",des="#{SWXT_221213_174}",grade="set:ShengWang01 image:ShengWangAll_PuTong",bonus=15,scene=614,posX=37,posZ=119,NPCname="½­ĞĞÔÆ",AcceptTimeParam=5},
-			[8]={missionid=2156, name="#{SWXT_221213_175}",des="#{SWXT_221213_176}",grade="set:ShengWang01 image:ShengWangAll_KunNan",bonus=25,scene=614,posX=70,posZ=37,NPCname="Ä«ĞÇÎÌ",AcceptTimeParam=3},
+			[1]={missionid=2137, name="#{SWXT_221213_161}",des="#{SWXT_221213_162}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=614,posX=62,posZ=199,NPCname="M£c ºc",AcceptTimeParam=5},
+			[2]={missionid=2138, name="#{SWXT_221213_163}",des="#{SWXT_221213_164}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=614,posX=70,posZ=37,NPCname="M£c Tinh Ông",AcceptTimeParam=5},
+			[3]={missionid=2139, name="#{SWXT_221213_165}",des="#{SWXT_221213_166}",grade="set:ShengWang01 image:ShengWangAll_PuTong",bonus=15,scene=614,posX=69,posZ=142,NPCname="M£c B¡c Th¥n",AcceptTimeParam=5},
+			[4]={missionid=2140, name="#{SWXT_221213_167}",des="#{SWXT_221213_168}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=614,posX=37,posZ=119,NPCname="Giang Hành Vân",AcceptTimeParam=5},
+			[5]={missionid=2141, name="#{SWXT_221213_169}",des="#{SWXT_221213_170}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=614,posX=56,posZ=198,NPCname="M£c Tß Tß",AcceptTimeParam=5},
+			[6]={missionid=2142, name="#{SWXT_221213_171}",des="#{SWXT_221213_172}",grade="set:ShengWang01 image:ShengWangAll_PuTong",bonus=15,scene=614,posX=37,posZ=119,NPCname="Giang Hành Vân",AcceptTimeParam=5},
+			[7]={missionid=2143, name="#{SWXT_221213_173}",des="#{SWXT_221213_174}",grade="set:ShengWang01 image:ShengWangAll_PuTong",bonus=15,scene=614,posX=37,posZ=119,NPCname="Giang Hành Vân",AcceptTimeParam=5},
+			[8]={missionid=2156, name="#{SWXT_221213_175}",des="#{SWXT_221213_176}",grade="set:ShengWang01 image:ShengWangAll_KunNan",bonus=25,scene=614,posX=70,posZ=37,NPCname="M£c Tinh Ông",AcceptTimeParam=3},
 		},
-	--ÕóÓª3
+	-- óÓª3
 	[3] = {
-			[1]={missionid=2144, name="#{SWXT_221213_177}",des="#{SWXT_221213_178}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=615,posX=54,posZ=58,NPCname="Ä«Àë",AcceptTimeParam=5},
-			[2]={missionid=2145, name="#{SWXT_221213_179}",des="#{SWXT_221213_180}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=615,posX=75,posZ=60,NPCname="Ä«»Ø",AcceptTimeParam=5},
-			[3]={missionid=2146, name="#{SWXT_221213_181}",des="#{SWXT_221213_182}",grade="set:ShengWang01 image:ShengWangAll_PuTong",bonus=15,scene=615,posX=65,posZ=52,NPCname="Èî·ãÃß",AcceptTimeParam=5},
-			[4]={missionid=2147, name="#{SWXT_221213_183}",des="#{SWXT_221213_184}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=615,posX=54,posZ=58,NPCname="Ä«Àë",AcceptTimeParam=5},
-			[5]={missionid=2148, name="#{SWXT_221213_185}",des="#{SWXT_221213_186}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=615,posX=65,posZ=52,NPCname="Èî·ãÃß",AcceptTimeParam=5},
-			[6]={missionid=2149, name="#{SWXT_221213_187}",des="#{SWXT_221213_188}",grade="set:ShengWang01 image:ShengWangAll_PuTong",bonus=15,scene=615,posX=65,posZ=52,NPCname="Èî·ãÃß",AcceptTimeParam=5},
-			[7]={missionid=2150, name="#{SWXT_221213_189}",des="#{SWXT_221213_190}",grade="set:ShengWang01 image:ShengWangAll_PuTong",bonus=15,scene=615,posX=62,posZ=52,NPCname="Èî·ãÃß",AcceptTimeParam=5},
-			[8]={missionid=2157, name="#{SWXT_221213_191}",des="#{SWXT_221213_192}",grade="set:ShengWang01 image:ShengWangAll_KunNan",bonus=25,scene=615,posX=54,posZ=58,NPCname="Ä«Àë",AcceptTimeParam=3},
+			[1]={missionid=2144, name="#{SWXT_221213_177}",des="#{SWXT_221213_178}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=615,posX=54,posZ=58,NPCname="M£c Ly",AcceptTimeParam=5},
+			[2]={missionid=2145, name="#{SWXT_221213_179}",des="#{SWXT_221213_180}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=615,posX=75,posZ=60,NPCname="M£c H°i",AcceptTimeParam=5},
+			[3]={missionid=2146, name="#{SWXT_221213_181}",des="#{SWXT_221213_182}",grade="set:ShengWang01 image:ShengWangAll_PuTong",bonus=15,scene=615,posX=65,posZ=52,NPCname="Nguy­n Phong Miên",AcceptTimeParam=5},
+			[4]={missionid=2147, name="#{SWXT_221213_183}",des="#{SWXT_221213_184}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=615,posX=54,posZ=58,NPCname="M£c Ly",AcceptTimeParam=5},
+			[5]={missionid=2148, name="#{SWXT_221213_185}",des="#{SWXT_221213_186}",grade="set:ShengWang01 image:ShengWangAll_JianDan",bonus=10,scene=615,posX=65,posZ=52,NPCname="Nguy­n Phong Miên",AcceptTimeParam=5},
+			[6]={missionid=2149, name="#{SWXT_221213_187}",des="#{SWXT_221213_188}",grade="set:ShengWang01 image:ShengWangAll_PuTong",bonus=15,scene=615,posX=65,posZ=52,NPCname="Nguy­n Phong Miên",AcceptTimeParam=5},
+			[7]={missionid=2150, name="#{SWXT_221213_189}",des="#{SWXT_221213_190}",grade="set:ShengWang01 image:ShengWangAll_PuTong",bonus=15,scene=615,posX=62,posZ=52,NPCname="Nguy­n Phong Miên",AcceptTimeParam=5},
+			[8]={missionid=2157, name="#{SWXT_221213_191}",des="#{SWXT_221213_192}",grade="set:ShengWang01 image:ShengWangAll_KunNan",bonus=25,scene=615,posX=54,posZ=58,NPCname="M£c Ly",AcceptTimeParam=3},
 		},
 }
 
@@ -176,7 +176,7 @@ function ShengWangAll_OnEvent(event)
 		end
 
 		Lua_TDU_Log("OBJECT_CARED_EVENT tonumber(arg2):"..tonumber(arg2));
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if arg1 == "distance" and tonumber(arg2) > MAX_OBJ_DISTANCE or arg1=="destroy" then
 			ShengWangAll_Close()
 		end
@@ -299,22 +299,22 @@ function ShengWangAll_OnRefreshTask()
 	ShengWangAll_TaskInfo2:SetText(StrValue)
 
 	if g_ShengWang_selfCampState == 0 then
-		--´ı¼ÓÈëÕóÓª
+		--´ı¼ÓÈë óÓª
 		ShengWangAll_OnRefreshTaskJoin()
 		return
 	end
 	if g_ShengWang_selfCampState == 1 and g_ShengWang_selfCampID ~=g_ShengWang_NPCCampID  then
-		--ÒÑ¼ÓÈëÕóÓª£¬Íæ¼ÒÕóÓª²»ÊôÓÚµ±Ç°npc
+		--ÒÑ¼ÓÈë óÓª£¬Íæ¼Ò óÓª²»ÊôÓÚµ±Ç°npc
 		ShengWangAll_OnRefreshTaskOther()
 		return
 	end
-	--ÕóÓª´æÔÚ ÇÒÊôÓÚµ±Ç°npc£¬ÏÔÊ¾ÈÎÎñÁĞ±í
+	-- óÓª´æÔÚ ÇÒÊôÓÚµ±Ç°npc£¬ÏÔÊ¾ÈÎÎñÁĞ±í
 
 	ShengWangAll_OnRefreshTaskList()
 end
 
 --================================================
---ÏÔÊ¾¼ÓÈëÕóÓª
+--ÏÔÊ¾¼ÓÈë óÓª
 --================================================
 function ShengWangAll_OnRefreshTaskJoin()
 	ShengWangAll_Page:Hide()
@@ -357,7 +357,7 @@ function ShengWangAll_OnRefreshTaskJoin()
 end
 
 --================================================
---²»ÊôÓÚ´ËÕóÓª
+--²»ÊôÓÚ´Ë óÓª
 --================================================
 function ShengWangAll_OnRefreshTaskOther()
 	ShengWangAll_Page:Hide()
@@ -393,7 +393,7 @@ function ShengWangAll_OnRefreshTaskOther()
 end
 
 --================================================
---µ±Ç°ÕóÓª£¬ÏÔÊ¾ÈÎÎñÁĞ±í
+--µ±Ç° óÓª£¬ÏÔÊ¾ÈÎÎñÁĞ±í
 --================================================
 function ShengWangAll_OnRefreshTaskList()
 	ShengWangAll_Page:Show()
@@ -439,7 +439,7 @@ function ShengWangAll_OnRefreshTaskList()
 		if nMissionList == nil then
 			break
 		end
-		--À§ÄÑÈÎÎñÌØĞ´£¬Èç¹ûÈÎÎñÀ©Õ¹ÕâÀïÒª¸Ä
+		--À§ÄÑÈÎÎñÌØĞ´£¬Èç¹ûÈÎÎñÀ© ¹ âÀïÒª¸Ä
 		local Mission8flag =0
 		--PushDebugMessage("nIndex1="..nIndex)
 		--PushDebugMessage("nDone="..nDone)

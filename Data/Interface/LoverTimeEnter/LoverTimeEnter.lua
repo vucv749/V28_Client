@@ -2,13 +2,13 @@
 -- LoverTimeEnter ---
 ----------------------
 
-local g_Cooldown = 4*1000		--4s按钮冷却
-local g_InCooldown = 0			--是否在冷却
+local g_Cooldown = 4*1000		--4s????
+local g_InCooldown = 0			--?????
 
-local g_PlayWarning = 10*1000		--10s闪烁按钮冷却
-local g_InPlayWarning = 1			--是否在闪烁冷却
+local g_PlayWarning = 10*1000		--10s??????
+local g_InPlayWarning = 1			--???????
 
-local g_LevelLimit = 15	--显示按钮的最小等级
+local g_LevelLimit = 15	--?????????
 
 --===============================================
 -- PreLoad()
@@ -56,12 +56,12 @@ function LoverTimeEnter_ShowIcon(bFlash)
 		return
 	end
 	
-	--关闭界面
+	--关睜界面
 	if bFlash == 2 then
 		if this:IsVisible() then
 			this:Hide()
 		end
-	elseif bFlash == 0 or bFlash == 1 then--显示界面
+	elseif bFlash == 0 or bFlash == 1 then--????
 		if this:IsVisible() then
 			--不处理
 		else
@@ -89,7 +89,7 @@ function LoverTimeEnter_OnClick()
 	--等级判断
 	local nLevel = Player:GetData( "LEVEL" )
 	if( nLevel < g_LevelLimit ) then
-		PushDebugMessage("#{QRZM_211119_84}")--您尚未达到15级，无法参加玫瑰传情活动。
+		PushDebugMessage("#{QRZM_211119_84}")--?????15?,???????????
 		return
 	end
 	
@@ -106,7 +106,7 @@ function LoverTimeEnter_OnClick()
 	end
 	
 	--判断冷却时间
-	if g_InCooldown == 0 then--冷却时间已到
+	if g_InCooldown == 0 then--??????
 		--请求服务器数据
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name( "ClientAskQingRenJieTopList" )
@@ -118,8 +118,8 @@ function LoverTimeEnter_OnClick()
 		--设置冷却时间
 		g_InCooldown = 1
 		SetTimer("LoverTimeEnter", "LoverTimeEnter_Cooldown()",g_Cooldown)
-	else--冷却时间未到
-		PushDebugMessage("#{QRZM_211119_163}")--您的操作过于频繁，请稍后再行尝试
+	else--??????
+		PushDebugMessage("#{QRZM_211119_163}")--????????,???????
 	end
 end
 

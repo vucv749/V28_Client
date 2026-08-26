@@ -1,13 +1,13 @@
-local	campaign_today = 0	--µ±ÌìËùÓĞ»î¶¯
-local	campaign_curDaily = 1	--Ä¿Ç°ÈÕ³£»î¶¯
-local	campaign_other	=2	--µ±ÌìËùÓĞÆäËû»î¶¯
-local	campaign_daily	=3	--µ±ÌìËùÓĞÈÕ³£»î¶¯
+local	campaign_today = 0	--??????
+local	campaign_curDaily = 1	--??????
+local	campaign_other	=2	--????????
+local	campaign_daily	=3	--????????
 
-local g_TodalCampaignCount = 0;		--½ñÌìµÄ»î¶¯ÊıÄ¿
+local g_TodalCampaignCount = 0;		--???????
 
 -- ½çÃæ¿Ø¼ş
-local g_AllCampaignDetailDescs = {};	-- ËùÓĞ»î¶¯µÄÏêÏ¸ÃèÊöĞÅÏ¢ÁĞ±í
-local g_AllCampaignID = {};          --¼ÇÂ¼ÏÂËùÓĞ»î¶¯ID
+local g_AllCampaignDetailDescs = {};	-- ?????????????
+local g_AllCampaignID = {};          --???????ID
 
 -- ½çÃæµÄÄ¬ÈÏÏà¶ÔÎ»ÖÃ
 local g_TodayCampaignList_Frame_UnifiedXPosition;
@@ -70,7 +70,7 @@ function TodayCampaignList_OnEvent(event)
 end
 
 function TodayCampaignList_Init(nSelectID)
-	-- Çå³ı¸Õ²Å´ò¿ªÊ±µÄĞÅÏ¢
+	-- Çå³ı¸ ²Å´ò¿ªÊ±µÄĞÅÏ¢
 	TodayCampaignList_DetailDesc:ClearAllElement();
 	TodayCampaignList_ListCtl:RemoveAllItem();
 	local g_Current_Select_index = -1;
@@ -94,7 +94,7 @@ function TodayCampaignList_Init(nSelectID)
 		local strDesc = EnumCampaign(tonumber(campaign_today),i,"desc");
 		local ends = EnumCampaign(tonumber(campaign_today),i,"addtiondesc");
 		if(ends and ends~="")then
-			strDesc = strDesc.."¡¢"..ends;
+			strDesc = strDesc..","..ends;
 		end
 		AxTrace( 5,3, strDesc );
 
@@ -128,14 +128,14 @@ function TodayCampaignList_Init(nSelectID)
 			g_Current_Select_index = i;
 		end
 		if (DataPool:IsCampaignTrackOpen(nCampaignID) >= 1 and nIsTrack == 1) then
-			strHuodong = "¡Ì" .. strHuodong;
+			strHuodong = "v" .. strHuodong;
 		else
 			strHuodong = "  " .. strHuodong;
 		end
 		TodayCampaignList_ListCtl:AddNewItem(strHuodong, 1, i);
 		TodayCampaignList_ListCtl:AddNewItem(strDesc, 2, i);
 
-		g_AllCampaignDetailDescs[i+1] = strDetailDesc;		-- ¼ÇÂ¼µ±Ç°»î¶¯µÄÏêÏ¸ÃèÊöĞÅÏ¢
+		g_AllCampaignDetailDescs[i+1] = strDetailDesc;		-- ?????????????
 		g_AllCampaignID[i+1] = nCampaignID;
 	end
 	
@@ -156,10 +156,10 @@ end
 -- Êó±êµã»÷¾ßÌå»î¶¯ºóµÄÏàÓ¦º¯Êı
 function TodayCampaignList_List_OnSelectionChanged()
 
-	-- Çå³ı¸Õ²ÅÑ¡ÔñµÄ»î¶¯ĞÅÏ¢
-	TodayCampaignList_DetailDesc:ClearAllElement();		-- Çå³ı»î¶¯ÃèÊöĞÅÏ¢
+	-- Çå³ı¸ ²ÅÑ¡ÔñµÄ»î¶¯ĞÅÏ¢
+	TodayCampaignList_DetailDesc:ClearAllElement();		-- ????????
 	
-	local nSel = TodayCampaignList_ListCtl:GetSelectItem();	-- µ±Ç°Ñ¡ÔñµÄĞĞºÅ (0 ~ g_TodalCampaignCount-1)
+	local nSel = TodayCampaignList_ListCtl:GetSelectItem();	-- ??????? (0 ~ g_TodalCampaignCount-1)
 	TodayCampaignList_TrackButtonState();
 	-- ÏÔÊ¾µ±Ç°Ñ¡ÖĞµÄ»î¶¯ĞÅÏ¢	
 	if (g_AllCampaignDetailDescs[nSel+1] ~= nil) then
@@ -168,14 +168,14 @@ function TodayCampaignList_List_OnSelectionChanged()
 	TodayCampaignList_DetailDesc:Show();	
 end
 
--- ¹Ø±Õ
+-- ¹Ø± 
 function TodayCampaignList_OnClosed()
 	this:Hide();
 	
-	-- Çå¿Õµ±Ç°»î¶¯Êı¾İ
-	TodayCampaignList_DetailDesc:ClearAllElement();		-- Çå³ı»î¶¯ÃèÊöĞÅÏ¢
+	-- Çå¿ µ±Ç°»î¶¯Êı¾İ
+	TodayCampaignList_DetailDesc:ClearAllElement();		-- ????????
 
-	-- Çå¿ÕËùÓĞÒÑ¾­¶ÁÈ¡µÄ½ñÈÕ»î¶¯ÁĞ±íÊı¾İ
+	-- Çå¿ ËùÓĞÒÑ¾­¶ÁÈ¡µÄ½ñÈ »î¶¯ÁĞ±íÊı¾İ
 	for i=1 , g_TodalCampaignCount do		
 		g_AllCampaignDetailDescs[i] = "";
 		g_AllCampaignID = 0;
@@ -185,15 +185,15 @@ end
 -- È¡Ïû
 function TodayCampaignList_OnCancel()
 	--this:Hide();
-	-- Çå¿Õµ±Ç°»î¶¯Êı¾İ
+	-- Çå¿ µ±Ç°»î¶¯Êı¾İ
 	--TodayCampaignList_DetailDesc:ClearAllElement();		-- Çå³ı»î¶¯ÃèÊöĞÅÏ¢
-	-- Çå¿ÕËùÓĞÒÑ¾­¶ÁÈ¡µÄ½ñÈÕ»î¶¯ÁĞ±íÊı¾İ
+	-- Çå¿ ËùÓĞÒÑ¾­¶ÁÈ¡µÄ½ñÈ »î¶¯ÁĞ±íÊı¾İ
 	--for i=1 , g_TodalCampaignCount do		
 	--	g_AllCampaignDetailDescs[i] = "";
 	--end	
 	
 	
-	local nSel = TodayCampaignList_ListCtl:GetSelectItem();	-- µ±Ç°Ñ¡ÔñµÄĞĞºÅ (0 ~ g_TodalCampaignCount-1)
+	local nSel = TodayCampaignList_ListCtl:GetSelectItem();	-- ??????? (0 ~ g_TodalCampaignCount-1)
 	local nCampaignID = tonumber(g_AllCampaignID[nSel+1]);
 	if (nCampaignID == nil or nCampaignID < 0) then
 		return
@@ -215,18 +215,18 @@ function TodayCampaignList_OnCancel()
 end
 
 function TodayCampaignList_TrackButtonState()
-	local nSel = TodayCampaignList_ListCtl:GetSelectItem();	-- µ±Ç°Ñ¡ÔñµÄĞĞºÅ (0 ~ g_TodalCampaignCount-1)
+	local nSel = TodayCampaignList_ListCtl:GetSelectItem();	-- ??????? (0 ~ g_TodalCampaignCount-1)
 	local nCampaignID = tonumber(g_AllCampaignID[nSel+1]);
 	
 	if (nCampaignID ~= nil and DataPool:IsCampaignCanTrack(nCampaignID) > 0) then
 		if (DataPool:IsCampaignTrackOpen(nCampaignID) > 0) then
-			TodayCampaignList_Cancel:SetText("È¡Ïû×·×Ù");
+			TodayCampaignList_Cancel:SetText("Hüy bö truy tung");
 		else
-			TodayCampaignList_Cancel:SetText("¿ªÊ¼×·×Ù");
+			TodayCampaignList_Cancel:SetText("B¡t ğ¥u truy tung");
 		end
 		TodayCampaignList_Cancel:Enable();
 	else
-		TodayCampaignList_Cancel:SetText("²»¿É×·×Ù");
+		TodayCampaignList_Cancel:SetText("Không th¬ truy tung");
 		TodayCampaignList_Cancel:Disable();
 	end
 end

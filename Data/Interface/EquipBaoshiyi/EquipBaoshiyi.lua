@@ -178,9 +178,9 @@ function EquipBaoshiyi_Buttons_Clicked()
 	if bConfirm == -1 then
 		local equipTableIndex = PlayerPackage : GetItemTableIndex( EQUIPITEM_DEST )
 		if IsUnbindChongLouEquip(equipTableIndex) == 1 then
-			PushEvent("DISPLACEGEM_CONFIRM", 26,1)--弹出确认框
+			PushEvent("DISPLACEGEM_CONFIRM", 26,1)--????????
 		else
-			PushEvent("DISPLACEGEM_CONFIRM", 26,0)--弹出确认框
+			PushEvent("DISPLACEGEM_CONFIRM", 26,0)--????????
 		end
 		bConfirm = 1
 	elseif bConfirm == 1 then
@@ -345,7 +345,7 @@ function EquipBaoshiyi_Check()
 		end
 	end
 
-	if hole_count - gemdest_count < gem_count then--目标装备的剩余孔数不能小于源装备上的宝石数量
+	if hole_count - gemdest_count < gem_count then--?????????????????????????????????
 		PushDebugMessage("#{BSQKY_20110506_16}")
 		return 0
 	end
@@ -425,7 +425,7 @@ function EquipBaoshiyi_Update(UI_index, Item_index)
 
 		EquipBaoshiyi_NeedMoney:SetProperty("MoneyNumber", tostring(100000))
 
-		if uiPos == 1 then--和宝石摘除共用一套实现
+		if uiPos == 1 then--?????????????????
 			if not LifeAbility:SplitGem_Update(i_index) then
 				for i=1,4 do
 					GEMSOURCE_BUTTONS[i+1] : SetActionItem(-1)
@@ -469,7 +469,7 @@ function EquipBaoshiyi_Update(UI_index, Item_index)
 					end
 				end
 			end
-		elseif uiPos == 2 then--这里用自己实现的一套
+		elseif uiPos == 2 then--????????????????
 			if not LifeAbility:Baoshiyi_Update(i_index) then
 				for i=1,4 do
 					GEMDEST_BUTTONS[i+1] : SetActionItem(-1)

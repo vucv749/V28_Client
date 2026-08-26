@@ -1,4 +1,4 @@
---Frozen 整合界面
+--Frozen 狖合界面
 local g_Frozen_ActivityRaiders_Frame_UnifiedPosition   
 local g_Frozen_ActivityRaiders_UICOM_Open       = 50101201 
 local g_Frozen_ActivityRaiders_Ctl    = {} 
@@ -47,7 +47,7 @@ function Frozen_ActivityRaiders_PreLoad()
 	--第二个参数代表界面隐藏时事件是否有效,默认为true
 	this:RegisterEvent("UI_COMMAND", true)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED", false)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false) --进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false) --???????
 	this:RegisterEvent("ADJEST_UI_POS", false)
 
 end
@@ -130,7 +130,7 @@ function Frozen_ActivityRaiders_OnHidden()
 	Frozen_ActivityRaiders_Close()
 end
 
--- 关闭
+-- 关睜
 function Frozen_ActivityRaiders_Close() 
 	g_Frozen_ActivityRaiders_CurPage = 1
 	this:Hide()
@@ -191,7 +191,7 @@ function Frozen_ActivityRaiders_Update(isresetpos,isrefreshlist)
 		end
 	end
 
-	--领奖展示区域
+	--领奖牴示区域
 	g_Frozen_ActivityRaiders_Ctl.Point:SetText(ScriptGlobal_Format("#{BXJD_241118_6}",g_Frozen_ActivityRaiders_Point)) 
 	if isresetpos == 1 then
 		g_Frozen_ActivityRaiders_CurPage = Frozen_ActivityRaiders_GetCurPageNum() 

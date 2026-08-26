@@ -45,7 +45,7 @@ function PS_PanChu_YuanBao_OnEvent(event)
 		objCared = PlayerShop:GetNpcId()
 		this:CareObject(objCared, 1, "PS_PanChu_YuanBao")
 		-- ÉèÖÃ½çÃæ
-		PS_PanChu_YuanBao_ChangeMode(SALETYPE_MONEY)--Ä¬ÈÏ½ğ±ÒÅÌ³ö·½Ê½
+		PS_PanChu_YuanBao_ChangeMode(SALETYPE_MONEY)--????????
 	end
 	
 	-- ÓÎÏ·´°¿Ú³ß´ç·¢ÉúÁË±ä»¯
@@ -58,23 +58,23 @@ function PS_PanChu_YuanBao_OnEvent(event)
 		PS_PanChu_YuanBao_ResetPos()
 	end
 	
-	-- Àë¿ªnpc¹Ø±Õ½çÃæ
+	-- Àë¿ªnpc¹Ø± ½çÃæ
 	if ( event == "OBJECT_CARED_EVENT" )   then
 		if(tonumber(arg0) ~= objCared) then
 			return
 		end		
-		-- Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		-- Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			PS_PanChu_YuanBao_OnHiden()
 		end	
 	end
 	
-	-- ¹Ø±Õ½çÃæ
+	-- ¹Ø± ½çÃæ
 	if( event == "PLAYERSHOP_PANCHU_INPUT_CLOSE")	 then
 		PS_PanChu_YuanBao_OnHiden()
 	end
 	
-	-- ¹Ø±Õ½çÃæ
+	-- ¹Ø± ½çÃæ
 	if( event == "PS_CLOSE_SHOP_MAG")	 then
 		PS_PanChu_YuanBao_OnHiden()
 	end
@@ -87,7 +87,7 @@ end
 function PS_PanChu_YuanBao_OnHiden()
 	--±äÁ¿ÖØÖÃ
 	g_SelectType = -1
-	--¿Ø¼şÇå¿Õ
+	--¿Ø¼şÇå¿ 
 	PS_PanChu_YuanBao_Clear()
 	--½çÃæÒş²Ø
 	this:Hide()
@@ -104,10 +104,10 @@ function PS_PanChu_YuanBao_ResetPos()
 end
 
 --===============================================
--- Çå¿Õ
+-- Çå¿ 
 --===============================================
 function PS_PanChu_YuanBao_Clear()
-	--ÎÄ×ÖÄÚÈİÇå¿Õ
+	--ÎÄ×ÖÄÚÈİÇå¿ 
 	PS_PanChu_YuanBao_Gold:SetText("")
 	PS_PanChu_YuanBao_Silver:SetText("")
 	PS_PanChu_YuanBao_CopperCoin:SetText("")
@@ -145,19 +145,19 @@ function PS_PanChu_YuanBao_Accept_Clicked()
 				PS_PanChu_YuanBao_Silver:SetText("")
 				PS_PanChu_YuanBao_CopperCoin:SetText("")
 				PS_PanChu_YuanBao_Gold:SetProperty("DefaultEditBox", "True")
-				PushDebugMessage("ÅÌ³öÉÌµê¼Û¸ñ²»ÄÜĞ¡ÓÚ1Í­£¬ÇëÖØĞÂÊäÈë")
+				PushDebugMessage("Giá sang ti®m Thß½ng ğiªm không ğßşc th¤p h½n 1 ğ°ng")
 				return
 			elseif (tonumber(nMoney) > 100000000) then
 				PS_PanChu_YuanBao_Gold:SetText("")
 				PS_PanChu_YuanBao_Silver:SetText("")
 				PS_PanChu_YuanBao_CopperCoin:SetText("")
 				PS_PanChu_YuanBao_Gold:SetProperty("DefaultEditBox", "True")
-				PushDebugMessage("ÅÌ³öÉÌµê¼Û¸ñ²»ÄÜ³¬¹ı10000½ğ£¬ÇëÖØĞÂÊäÈë")
+				PushDebugMessage("Bàn Xu¤t cØa hàng giá cä không th¬ vßşt qua 10000Kim, Thïnh mµt l¥n næa ğßa vào")
 				return
 			end
 			--È·ÈÏÅÌ³ö
 			PlayerShop:Transfer("info", "sale", nMoney, g_SelectType)
-			--¹Ø±Õ½çÃæ
+			--¹Ø± ½çÃæ
 			PS_PanChu_YuanBao_OnHiden()
 		end
 	elseif g_SelectType == SALETYPE_YUANBAO then
@@ -166,17 +166,17 @@ function PS_PanChu_YuanBao_Accept_Clicked()
 		if (tonumber(szYuanbao) < 1) then
 			PS_PanChu_YuanBao_InputYuanBao:SetText("")
 			PS_PanChu_YuanBao_InputYuanBao:SetProperty("DefaultEditBox", "True")		
-			PushDebugMessage("ÅÌ³öÉÌµê¼Û¸ñ²»ÄÜĞ¡ÓÚ1Ôª±¦£¬ÇëÖØĞÂÊäÈë")
+			PushDebugMessage("Giá sang ti®m Thß½ng ğiªm không ğßşc th¤p h½n 1 Kim Nguyên Bäo")
 			return
 		elseif (tonumber(szYuanbao) > 100000) then
 			PS_PanChu_YuanBao_InputYuanBao:SetText("")
 			PS_PanChu_YuanBao_InputYuanBao:SetProperty("DefaultEditBox", "True")		
-			PushDebugMessage("ÅÌ³öÉÌµê¼Û¸ñ²»ÄÜ³¬¹ı100000Ôª±¦£¬ÇëÖØĞÂÊäÈë")
+			PushDebugMessage("Bàn Xu¤t cØa hàng giá cä không th¬ vßşt qua 100000nguyên bäo, Thïnh mµt l¥n næa ğßa vào")
 			return
 		end
 		--È·ÈÏÅÌ³ö
 		PlayerShop:Transfer("info", "sale", tonumber(szYuanbao), g_SelectType)
-		--¹Ø±Õ½çÃæ
+		--¹Ø± ½çÃæ
 		PS_PanChu_YuanBao_OnHiden()		
 	end
 end
@@ -228,7 +228,7 @@ function PS_PanChu_YuanBao_ChangeMode(type)
 	end
 	g_SelectType = type
 	
-	--¿Ø¼şÇå¿Õ
+	--¿Ø¼şÇå¿ 
 	PS_PanChu_YuanBao_Clear()
 		
 	--×´Ì¬ĞŞ¸Ä

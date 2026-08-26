@@ -25,12 +25,12 @@ local QXQQ_table =
 }
 
 --OnLoadÊý¾Ý
-local QiXi_BUTTONS = {} --3X10 ¿ò¿ò°´Å¥
-local QiXi_TOP = {} --×îÉÏÃæÒ»ÅÅ°´Å¥
-local QiXi_NUM = {} --Íæ¼ÒÉíÉÏËéÆ¬ÊýÁ¿
-local QiXi_PRICE = {} --ÓÒ²à½±ÀøÍ¼±ê
-local QiXi_ANIMATE = {} --ÓÒ²à¸ßÁÁ¶¯»­
-local QiXi_AWARDOK = {} --ÓÒ²àOK±êÖ¾
+local QiXi_BUTTONS = {} --3X10 ????
+local QiXi_TOP = {} --???????
+local QiXi_NUM = {} --????????
+local QiXi_PRICE = {} --??????
+local QiXi_ANIMATE = {} --??????
+local QiXi_AWARDOK = {} --??OK??
 
 --Ðý×ª×´Ì¬
 local xuanzhuan = {[2] = 2, [3] = 6, [4] = 10,}
@@ -56,10 +56,10 @@ local QXQQ_ManZu = 0
 
 --½±Àø
 local g_Price = {
-    [1] = {ItemID =20310168,gpcount=8},--½ð²ÏË¿*8
-    [2] = {ItemID =50313004,gpcount=3},--ºì±¦Ê¯3¼¶
-    [3] = {ItemID =20501003,gpcount=1},--3¼¶ÃÞ²¼
-    [4] = {ItemID =20502003,gpcount=1},--3¼¶ÃØÒø
+    [1] = {ItemID =20310168,gpcount=8},--???*8
+    [2] = {ItemID =50313004,gpcount=3},--???3?
+    [3] = {ItemID =20501003,gpcount=1},--3???
+    [4] = {ItemID =20502003,gpcount=1},--3???
 }
 --½çÃæ·¢Éú±ä»¯
 local g_BOOL = 0
@@ -71,28 +71,28 @@ local g_Jigsaw_clicked = 0
 local QiXi_PIC = 
 {
     --µ×É«
-    [0] = {PushedImage = "set:QiXi_QueQiao image:XuanZhong",NormalImage = "set:QiXi_QueQiao image:Normal",HoverImage = "set:QiXi_QueQiao image:GaoLiang",}, --µ×É«
+    [0] = {PushedImage = "set:QiXi_QueQiao image:XuanZhong",NormalImage = "set:QiXi_QueQiao image:Normal",HoverImage = "set:QiXi_QueQiao image:GaoLiang",}, --??
     --×ó1
-    [1] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn1Dis",NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn1",HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn1Hover",}, --×ó1
+    [1] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn1Dis",NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn1",HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn1Hover",}, --?1
     --×ó2
-    [2] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1Hover",}, --×ó2 a
-    [3] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1Hover",}, --×ó2 b
-    [4] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1Hover",}, --×ó2 c
-    [5] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1Hover",}, --×ó2 d
+    [2] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1Hover",}, --?2 a
+    [3] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1Hover",}, --?2 b
+    [4] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1Hover",}, --?2 c
+    [5] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn2_1Hover",}, --?2 d
     --×ó3
-    [6] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1Hover",}, --×ó3 a
-    [7] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1Hover",}, --×ó3 b
-    [8] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1Hover",}, --×ó3 c
-    [9] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1Hover",}, --×ó3 d
+    [6] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1Hover",}, --?3 a
+    [7] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1Hover",}, --?3 b
+    [8] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1Hover",}, --?3 c
+    [9] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn3_1Hover",}, --?3 d
     --×ó4
-    [10] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1Hover",}, --×ó4 a
-    [11] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1Hover",}, --×ó4 b
-    [12] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1Hover",}, --×ó4 c
-    [13] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1Hover",}, --×ó4 d
+    [10] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1Hover",}, --?4 a
+    [11] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1Hover",}, --?4 b
+    [12] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1Hover",}, --?4 c
+    [13] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn4_1Hover",}, --?4 d
     --×ó5
-    [14] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn5Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn5", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn5Hover",}, --×ó5
+    [14] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn5Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn5", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn5Hover",}, --?5
     --×ó6
-    [15] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn6Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn6", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn6Hover",}, --×ó6
+    [15] = {PushedImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn6Dis", NormalImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn6", HoverImage = "set:QiXi_QueQiao image:QiXi_QueQiaoBtn6Hover",}, --?6
 };
 
 function QiXi_QueQiang_PreLoad()
@@ -107,7 +107,7 @@ end
 function QiXi_QueQiang_OnLoad()
     g_QiXi_QueQiang_Frame_UnifiedPosition = QiXi_QueQiang_Frame:GetProperty("UnifiedPosition")
 
-    --3X10ÌîÍ¼¿òÕ¹Ê¾
+    --3X10ÌîÍ¼¿ò ¹Ê¾
     --µÚÒ»ÐÐ
 	QiXi_BUTTONS[1]	= QiXi_QueQiang_Jigsaw1
 	QiXi_BUTTONS[2]	= QiXi_QueQiang_Jigsaw2
@@ -178,45 +178,45 @@ local function SetOpenSeKuai()
     
     --×îÉÏÃæÒ»ÅÅ
     --×ó1
-    QiXi_TOP[1]:SetProperty("PushedImage", QiXi_PIC[1].PushedImage);--µã»÷×´Ì¬
-    QiXi_TOP[1]:SetProperty("NormalImage", QiXi_PIC[1].NormalImage); --Õý³£×´Ì¬
-    QiXi_TOP[1]:SetProperty("HoverImage", QiXi_PIC[1].HoverImage);--ÒÆ¶¯µ½Í¼±êÉÏ
+    QiXi_TOP[1]:SetProperty("PushedImage", QiXi_PIC[1].PushedImage);--????
+    QiXi_TOP[1]:SetProperty("NormalImage", QiXi_PIC[1].NormalImage); --????
+    QiXi_TOP[1]:SetProperty("HoverImage", QiXi_PIC[1].HoverImage);--??????
     QiXi_TOP[1]:Show()
 
     --×ó2
-    QiXi_TOP[2]:SetProperty("PushedImage", QiXi_PIC[2].PushedImage);--µã»÷×´Ì¬
-    QiXi_TOP[2]:SetProperty("NormalImage", QiXi_PIC[2].NormalImage); --Õý³£×´Ì¬
-    QiXi_TOP[2]:SetProperty("HoverImage", QiXi_PIC[2].HoverImage);--ÒÆ¶¯µ½Í¼±êÉÏ
+    QiXi_TOP[2]:SetProperty("PushedImage", QiXi_PIC[2].PushedImage);--????
+    QiXi_TOP[2]:SetProperty("NormalImage", QiXi_PIC[2].NormalImage); --????
+    QiXi_TOP[2]:SetProperty("HoverImage", QiXi_PIC[2].HoverImage);--??????
     QiXi_TOP[2]:Show()
 
     --×ó3
-    QiXi_TOP[3]:SetProperty("PushedImage", QiXi_PIC[6].PushedImage);--µã»÷×´Ì¬
-    QiXi_TOP[3]:SetProperty("NormalImage", QiXi_PIC[6].NormalImage); --Õý³£×´Ì¬
-    QiXi_TOP[3]:SetProperty("HoverImage", QiXi_PIC[6].HoverImage);--ÒÆ¶¯µ½Í¼±êÉÏ
+    QiXi_TOP[3]:SetProperty("PushedImage", QiXi_PIC[6].PushedImage);--????
+    QiXi_TOP[3]:SetProperty("NormalImage", QiXi_PIC[6].NormalImage); --????
+    QiXi_TOP[3]:SetProperty("HoverImage", QiXi_PIC[6].HoverImage);--??????
     QiXi_TOP[3]:Show()
 
     --×ó4
-    QiXi_TOP[4]:SetProperty("PushedImage", QiXi_PIC[10].PushedImage);--µã»÷×´Ì¬
-    QiXi_TOP[4]:SetProperty("NormalImage", QiXi_PIC[10].NormalImage); --Õý³£×´Ì¬
-    QiXi_TOP[4]:SetProperty("HoverImage", QiXi_PIC[10].HoverImage);--ÒÆ¶¯µ½Í¼±êÉÏ
+    QiXi_TOP[4]:SetProperty("PushedImage", QiXi_PIC[10].PushedImage);--????
+    QiXi_TOP[4]:SetProperty("NormalImage", QiXi_PIC[10].NormalImage); --????
+    QiXi_TOP[4]:SetProperty("HoverImage", QiXi_PIC[10].HoverImage);--??????
     QiXi_TOP[4]:Show()
 
     --×ó5
-    QiXi_TOP[5]:SetProperty("PushedImage", QiXi_PIC[14].PushedImage);--µã»÷×´Ì¬
-    QiXi_TOP[5]:SetProperty("NormalImage", QiXi_PIC[14].NormalImage); --Õý³£×´Ì¬
-    QiXi_TOP[5]:SetProperty("HoverImage", QiXi_PIC[14].HoverImage);--ÒÆ¶¯µ½Í¼±êÉÏ
+    QiXi_TOP[5]:SetProperty("PushedImage", QiXi_PIC[14].PushedImage);--????
+    QiXi_TOP[5]:SetProperty("NormalImage", QiXi_PIC[14].NormalImage); --????
+    QiXi_TOP[5]:SetProperty("HoverImage", QiXi_PIC[14].HoverImage);--??????
     QiXi_TOP[5]:Show()
 
     --×ó5
-    QiXi_TOP[6]:SetProperty("PushedImage", QiXi_PIC[15].PushedImage);--µã»÷×´Ì¬
-    QiXi_TOP[6]:SetProperty("NormalImage", QiXi_PIC[15].NormalImage); --Õý³£×´Ì¬
-    QiXi_TOP[6]:SetProperty("HoverImage", QiXi_PIC[15].HoverImage);--ÒÆ¶¯µ½Í¼±êÉÏ
+    QiXi_TOP[6]:SetProperty("PushedImage", QiXi_PIC[15].PushedImage);--????
+    QiXi_TOP[6]:SetProperty("NormalImage", QiXi_PIC[15].NormalImage); --????
+    QiXi_TOP[6]:SetProperty("HoverImage", QiXi_PIC[15].HoverImage);--??????
     QiXi_TOP[6]:Show()
 
     for i = 1, QXQQ_num do    
-        QiXi_BUTTONS[i]:SetProperty("PushedImage", QiXi_PIC[QXQQ_table[i]].PushedImage);--µã»÷×´Ì¬
-        QiXi_BUTTONS[i]:SetProperty("NormalImage", QiXi_PIC[QXQQ_table[i]].NormalImage); --Õý³£×´Ì¬
-        QiXi_BUTTONS[i]:SetProperty("HoverImage", QiXi_PIC[QXQQ_table[i]].HoverImage);--ÒÆ¶¯µ½Í¼±êÉÏ
+        QiXi_BUTTONS[i]:SetProperty("PushedImage", QiXi_PIC[QXQQ_table[i]].PushedImage);--????
+        QiXi_BUTTONS[i]:SetProperty("NormalImage", QiXi_PIC[QXQQ_table[i]].NormalImage); --????
+        QiXi_BUTTONS[i]:SetProperty("HoverImage", QiXi_PIC[QXQQ_table[i]].HoverImage);--??????
         QiXi_BUTTONS[i]:Show()
     end
     --ÊµÊ±¸üÐÂÍæ¼ÒÊ£ÓàÉ«¿éÊýÁ¿
@@ -283,7 +283,7 @@ local function SetSekuaiNum(num1,num2,num3,num4,num5,num6)
 
     for i = 1, 6 do
         if (table_temp[i] >= intmax or table_temp[i] < intmin) then
-            PushDebugMessage("´«¹ýÀ´µÄÊý¾ÝÓÐÎÊÌâ¡£")
+            PushDebugMessage("Truy®n t¾i Ðích s¯ li®u có v¤n ð«.")
             return 0
         end
     end
@@ -360,7 +360,7 @@ end
 
 function QiXi_QueQiang_OnEvent(event)
     if event == "UI_COMMAND" and tonumber(arg0) == g_UICOMMAND then
-        if Get_XParam_STR(0) == "REFRESH_SHOW" then --¸üÐÂÓÒ²àÍ¼±ê
+        if Get_XParam_STR(0) == "REFRESH_SHOW" then --??????
             if this:IsVisible() then
                 local QXQQ_PRIZE = Get_XParam_INT(0)
                 --ÓÒ²à½ø¶ÈÌõÉèÖÃ
@@ -373,7 +373,7 @@ function QiXi_QueQiang_OnEvent(event)
 
             g_objCared = DataPool : GetNPCIDByServerID(tonumber(g_objID))
             if g_objCared == -1 then
-                PushDebugMessage("server´«¹ýÀ´µÄÊý¾ÝÓÐÎÊÌâ¡£")
+                PushDebugMessage("Dæ li®u máy chü có v¤n ð«")
                 return
             end
             if nil ~= g_objCared and g_objCared > 0 then
@@ -386,10 +386,10 @@ function QiXi_QueQiang_OnEvent(event)
             local QXQQ_22 = Get_XParam_INT(4)
             local QXQQ_31 = Get_XParam_INT(5)
             local QXQQ_32 = Get_XParam_INT(6)
-            --ÆßÏ¦ÎÈ»î´îÈµÇÅ»î¶¯ MD Ã¿ÈÕ¸üÐÂ ¶Ò»»×ÜÊýÁ¿ÉÏÏÞ Ï¡ÓÐ+ÆÕÍ¨+Ï¡ÓÐÉ«¿éÊýÁ¿ 654312
-            --6:Ï¡ÓÐÃ¿ÈÕ¶Ò»» 5£ºÆÕÍ¨Ã¿ÈÕ¶Ò»» 43£ºÏ¡ÓÐÉ«¿éÊýÁ¿2 21£ºÏ¡ÓÐÉ«¿éÊýÁ¿1 7:ÊÇ·ñÁìÈ¡½±Àø 8£ºÊÇ·ñÂú×ãÐèÇó
+            --ÆßÏ¦ÎÈ»î´îÈµÇÅ»î¶¯ MD Ã¿È ¸üÐÂ ¶Ò»»×ÜÊýÁ¿ÉÏÏÞ Ï¡ÓÐ+Æ Í¨+Ï¡ÓÐÉ«¿éÊýÁ¿ 654312
+            --6:Ï¡ÓÐÃ¿È ¶Ò»» 5£ºÆ Í¨Ã¿È ¶Ò»» 43£ºÏ¡ÓÐÉ«¿éÊýÁ¿2 21£ºÏ¡ÓÐÉ«¿éÊýÁ¿1 7:ÊÇ·ñÁìÈ¡½±Àø 8£ºÊÇ·ñÂú×ãÐèÇó
             local QXQQ_PT = Get_XParam_INT(7)
-            --6:Ï¡ÓÐÃ¿ÈÕ¶Ò»» 5£ºÆÕÍ¨Ã¿ÈÕ¶Ò»» 43£ºÏ¡ÓÐÉ«¿éÊýÁ¿2 21£ºÏ¡ÓÐÉ«¿éÊýÁ¿1
+            --6:Ï¡ÓÐÃ¿È ¶Ò»» 5£ºÆ Í¨Ã¿È ¶Ò»» 43£ºÏ¡ÓÐÉ«¿éÊýÁ¿2 21£ºÏ¡ÓÐÉ«¿éÊýÁ¿1
             local QXQQ_XY = Get_XParam_INT(8)
             ----ÆßÏ¦ÈµÇÅ,½±ÀøÁìÈ¡Çé¿ö
             --1:1ºÅ½±ÀøÁìÈ¡ 2:2ºÅ½±ÀøÁìÈ¡ 3:3ºÅ½±ÀøÁìÈ¡ 4:4ºÅ½±ÀøÁìÈ¡ --5:½±ÀøÂú×ã
@@ -407,7 +407,7 @@ function QiXi_QueQiang_OnEvent(event)
 			return
         end
         
-		-- Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		-- Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
         if(arg1 == "distance" and tonumber(arg2) > MAX_OBJ_DISTANCE or arg1=="destroy") then
             QiXi_QueQiang_Close()
         end
@@ -476,7 +476,7 @@ function QiXi_QueQiang_GeneralBtn(index)
     else
         --ÉÏ·½Ñ¡ÖÐµÚ¼¸¸ö¸ñ×Ó
         XZnum[1] = index
-        --Õâ¸ö¸ñ×ÓÄ¿Ç°µÄÍ¼Æ¬
+        -- â¸ö¸ñ×ÓÄ¿Ç°µÄÍ¼Æ¬
         XZnum[2] = TOPnum[index]
     end
 
@@ -506,9 +506,9 @@ function QiXi_QueQiang_GeneralRotate(index)
     end
     TOPnum[index] = xuanzhuan[index]
 
-    QiXi_TOP[index]:SetProperty("PushedImage", QiXi_PIC[xuanzhuan[index]].PushedImage);--µã»÷×´Ì¬
-    QiXi_TOP[index]:SetProperty("NormalImage", QiXi_PIC[xuanzhuan[index]].NormalImage); --Õý³£×´Ì¬
-    QiXi_TOP[index]:SetProperty("HoverImage", QiXi_PIC[xuanzhuan[index]].HoverImage);--ÒÆ¶¯µ½Í¼±êÉÏ
+    QiXi_TOP[index]:SetProperty("PushedImage", QiXi_PIC[xuanzhuan[index]].PushedImage);--????
+    QiXi_TOP[index]:SetProperty("NormalImage", QiXi_PIC[xuanzhuan[index]].NormalImage); --????
+    QiXi_TOP[index]:SetProperty("HoverImage", QiXi_PIC[xuanzhuan[index]].HoverImage);--??????
     QiXi_TOP[index]:Show()
 
 end
@@ -588,24 +588,24 @@ function QiXi_QueQiang_Fill()
     end
     --ÏÂ·½
     if XZnum[3] == 0 then
-        PushDebugMessage("#{QXWH_20210616_61}") --ÇëÏÈÑ¡ÖÐÒª½øÐÐ¸¡½×Ìî³äµÄÎ»ÖÃ¡£
+        PushDebugMessage("#{QXWH_20210616_61}") --???????????????
         return
     end
     --ÉÏ·½
     if XZnum[1] == 0 then
-        PushDebugMessage("#{QXWH_20210616_62}") --ÇëÏÈÑ¡ÖÐÒª½øÐÐÌî³äµÄ¸¡½×¡£
+        PushDebugMessage("#{QXWH_20210616_62}") --?????????????
         return
     end
 
     if QXQQ_NOW[XZnum[1]] == 0 then
-        PushDebugMessage("#{QXWH_20210616_05}") --µ±Ç°¸¡½×Ê£ÓàÊýÁ¿²»×ã£¬ÉÙÏÀ¶Ò»»ºóÔÙÀ´Ìî³ä°É
+        PushDebugMessage("#{QXWH_20210616_05}") --??????????,??????????
         return
     end
 
     QXQQ_table[XZnum[3]] = XZnum[2]
-    QiXi_BUTTONS[XZnum[3]]:SetProperty("PushedImage", QiXi_PIC[QXQQ_table[XZnum[3]]].PushedImage);--µã»÷×´Ì¬
-    QiXi_BUTTONS[XZnum[3]]:SetProperty("NormalImage", QiXi_PIC[QXQQ_table[XZnum[3]]].NormalImage); --Õý³£×´Ì¬
-    QiXi_BUTTONS[XZnum[3]]:SetProperty("HoverImage", QiXi_PIC[QXQQ_table[XZnum[3]]].HoverImage);--ÒÆ¶¯µ½Í¼±êÉÏ
+    QiXi_BUTTONS[XZnum[3]]:SetProperty("PushedImage", QiXi_PIC[QXQQ_table[XZnum[3]]].PushedImage);--????
+    QiXi_BUTTONS[XZnum[3]]:SetProperty("NormalImage", QiXi_PIC[QXQQ_table[XZnum[3]]].NormalImage); --????
+    QiXi_BUTTONS[XZnum[3]]:SetProperty("HoverImage", QiXi_PIC[QXQQ_table[XZnum[3]]].HoverImage);--??????
     QiXi_BUTTONS[XZnum[3]]:Show()
 
     --ÊµÊ±¸üÐÂÍæ¼ÒÊ£ÓàÉ«¿éÊýÁ¿
@@ -637,17 +637,17 @@ function QiXi_QueQiang_Clear()
     end
 
     if XZnum[3] == 0 then
-        PushDebugMessage("#{QXWH_20210616_88}") --ÇëÏÈÑ¡ÖÐÒª½øÐÐ¸¡½×Çå³ýµÄÎ»ÖÃ¡£
+        PushDebugMessage("#{QXWH_20210616_88}") --???????????????
         return
     end
 
     QXQQ_table[XZnum[3]] = 0
-    QiXi_BUTTONS[XZnum[3]]:SetProperty("PushedImage", QiXi_PIC[QXQQ_table[XZnum[3]]].PushedImage);--µã»÷×´Ì¬
-    QiXi_BUTTONS[XZnum[3]]:SetProperty("NormalImage", QiXi_PIC[QXQQ_table[XZnum[3]]].NormalImage); --Õý³£×´Ì¬
-    QiXi_BUTTONS[XZnum[3]]:SetProperty("HoverImage", QiXi_PIC[QXQQ_table[XZnum[3]]].HoverImage);--ÒÆ¶¯µ½Í¼±êÉÏ
+    QiXi_BUTTONS[XZnum[3]]:SetProperty("PushedImage", QiXi_PIC[QXQQ_table[XZnum[3]]].PushedImage);--????
+    QiXi_BUTTONS[XZnum[3]]:SetProperty("NormalImage", QiXi_PIC[QXQQ_table[XZnum[3]]].NormalImage); --????
+    QiXi_BUTTONS[XZnum[3]]:SetProperty("HoverImage", QiXi_PIC[QXQQ_table[XZnum[3]]].HoverImage);--??????
     QiXi_BUTTONS[XZnum[3]]:Show()
 
-    PushDebugMessage("#{QXWH_20210616_68}") --¸¡½×Çå³ý³É¹¦¡£
+    PushDebugMessage("#{QXWH_20210616_68}") --???????
 
     --·¢Éú±ä»¯£¬BOOLÖÃÎª1
     g_BOOL = 1
@@ -664,7 +664,7 @@ end
 --Check
 function QiXi_QueQiang_Check()
 
-    --ÈÕÆÚ
+    --È ÆÚ
 	local curDay = tonumber(DataPool:GetServerDayTime());
 	if curDay < starttime or curDay > endtime then
         PushDebugMessage("#{QXWH_20210616_39}")

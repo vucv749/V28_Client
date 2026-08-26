@@ -30,7 +30,7 @@ end
 
 function LargeMap_Close()
 	this:Hide()
-	local nCurrentSelectScene = LargeMap_Frondground:GetCurrentSelectScene(); --得到当前选中的场景
+	local nCurrentSelectScene = LargeMap_Frondground:GetCurrentSelectScene(); --?????????
 	AxTrace( 0, 0, "current select ="..tostring(nCurrentSelectScene ).." current scene = "..tostring( GetSceneID()) );
 	if( nCurrentSelectScene == GetSceneID() ) then
 		ToggleSceneMap( 1 );
@@ -38,7 +38,7 @@ function LargeMap_Close()
 end
 
 function LargeMap_Show()
-	ToggleSceneMap( 0 );--关闭场景地图
+	ToggleSceneMap( 0 );--??????
 	
 	LargeMap_Frondground:InitWorldMap();
 	this:Show();

@@ -1,5 +1,5 @@
 ------------------------------------
--- 2022珍兽预热活动
+-- 2022犱兽预热活动
 -- 信件界面-前序任务用
 ------------------------------------
 
@@ -8,7 +8,7 @@ local g_Frame_UnifiedPosition
 local g_ZhenShou_YuRe_SceneId = 2
 local g_ZhenShou_YuRe_PosX = 265
 local g_ZhenShou_YuRe_PosZ = 129
-local g_ZhenShou_YuRe_Name = "云飘飘"
+local g_ZhenShou_YuRe_Name = "V鈔 Phi陁 Phi陁"
 
 --================================================
 -- PreLoad()
@@ -59,7 +59,7 @@ function ZhenShou_YuRe_OnEvent(event)
 end
 
 --================================================
--- 关闭界面
+-- 关睜界面
 --================================================
 function ZhenShou_YuRe_OnHiden()
 	this:Hide()

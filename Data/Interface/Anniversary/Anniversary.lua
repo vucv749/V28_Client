@@ -32,9 +32,9 @@ function Anniversary_PreLoad()
 
 	this:RegisterEvent( "UI_COMMAND" )
 	
-	this:RegisterEvent( "PLAYER_LEAVE_WORLD" )			-- 离开场景
-	this:RegisterEvent( "ADJEST_UI_POS" )				-- 游戏窗口尺寸发生了变化
-	this:RegisterEvent( "VIEW_RESOLUTION_CHANGED" )	  	-- 游戏分辨率发生了变化
+	this:RegisterEvent( "PLAYER_LEAVE_WORLD" )			-- ????
+	this:RegisterEvent( "ADJEST_UI_POS" )				-- ???????????
+	this:RegisterEvent( "VIEW_RESOLUTION_CHANGED" )	  	-- ??????????
 		
 end
 
@@ -162,14 +162,14 @@ function Anniversary_PageShow( nIndex )
 		Anniversary_Button_Received:Hide();
 		Anniversary_Button_Tips:Hide();
 		Anniversary_Text2BK:Show();
-		if g_Anniversary_State <= 0 then 		-- 未开始
+		if g_Anniversary_State <= 0 then 		-- ???
 			Anniversary_Text2:SetText("#{WYCJ_20240320_10}")
-		elseif g_Anniversary_State == 1 then	-- 已开始
+		elseif g_Anniversary_State == 1 then	-- ???
 			Anniversary_Text2:SetText("#{WYCJ_20240320_11}")
-		elseif g_Anniversary_State == 2 then	-- 可领奖
+		elseif g_Anniversary_State == 2 then	-- ???
 			Anniversary_Text2:SetText("#{WYCJ_20240320_12}")
 			Anniversary_Button_Tips:Show();
-		elseif g_Anniversary_State >= 3 then	-- 已领奖
+		elseif g_Anniversary_State >= 3 then	-- ???
 			Anniversary_Text2:SetText("")
 			Anniversary_Button:Hide();
 			Anniversary_Button_Received:Show();
@@ -195,9 +195,9 @@ function Anniversary_OpenZiDian()
 		
 	-- 底图修改
 	g_Anniversary_CurPage = 0
-	if g_Anniversary_DiffDay <= 1 then -- 第一天
+	if g_Anniversary_DiffDay <= 1 then -- ???
 		g_Anniversary_CurPage = 1	
-	elseif g_Anniversary_DiffDay >= 3 then -- 第三天
+	elseif g_Anniversary_DiffDay >= 3 then -- ???
 		g_Anniversary_CurPage = 3
 	else
 		g_Anniversary_CurPage = 2

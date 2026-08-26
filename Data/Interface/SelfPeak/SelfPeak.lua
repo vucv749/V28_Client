@@ -20,17 +20,17 @@ local g_Page = {
 
 
 local g_menpai = {
-	[1] = {Text = "#{DFJC_250709_20}",}, --ÉÙÁÖ
-	[2] = {Text = "#{DFJC_250709_21}",}, --Ã÷½Ì
-	[3] = {Text = "#{DFJC_250709_22}",}, --Ø¤°ï
-	[4] = {Text = "#{DFJC_250709_23}",}, --Îäµ±
-	[5] = {Text = "#{DFJC_250709_24}",}, --¶ëÃ¼
-	[6] = {Text = "#{DFJC_250709_25}",}, --ĞÇËŞ
-	[7] = {Text = "#{DFJC_250709_26}",}, --ÌìÁú
-	[8] = {Text = "#{DFJC_250709_27}",}, --ÌìÉ½
-	[9] = {Text = "#{DFJC_250709_28}",}, --åĞÒ£
-	[10] = {Text = "#{DFJC_250709_29}",}, --ÂüÍÓÉ½×¯
-	[11] = {Text = "#{DFJC_250709_30}",}, --¶ñÈË¹È
+	[1] = {Text = "#{DFJC_250709_20}",}, --??
+	[2] = {Text = "#{DFJC_250709_21}",}, --??
+	[3] = {Text = "#{DFJC_250709_22}",}, --??
+	[4] = {Text = "#{DFJC_250709_23}",}, --??
+	[5] = {Text = "#{DFJC_250709_24}",}, --??
+	[6] = {Text = "#{DFJC_250709_25}",}, --??
+	[7] = {Text = "#{DFJC_250709_26}",}, --??
+	[8] = {Text = "#{DFJC_250709_27}",}, --??
+	[9] = {Text = "#{DFJC_250709_28}",}, --??
+	[10] = {Text = "#{DFJC_250709_29}",}, --????
+	[11] = {Text = "#{DFJC_250709_30}",}, --???
 }
 local g_PageButton = {}
 local g_PageTip = {}
@@ -44,7 +44,7 @@ local g_SkillActionLock = {}
 local g_ExtensionText = {}
 
 
-local g_maxdfenglevel = 200 --#define MAX_DFENG_LEVEL 200	// ×î´óáÛ·åµÈ¼¶
+local g_maxdfenglevel = 200 --#define MAX_DFENG_LEVEL 200	// ??????
 
 local g_SelfPeak_shuxing_INT_Cache = {}
 local g_SelfPeak_shuxing_INT_SpecialAttrName= {}
@@ -54,7 +54,7 @@ local SelfPeak_Goto_EnterNPCInfo =
 {
     scn = 2,
     pos = { 219, 43 },
-    name = "ĞşÖÇ·¨Ê¦",
+    name = "Huy«n Trí pháp sß",
 } -- end SelfPeak_Goto_EnterNPCInfo
 
 local SelfPeak_Image_Icon =
@@ -152,7 +152,7 @@ function SelfPeak_OnEvent(event)
 
 		SelfPeak_ShowPage()
 		SelfPeak_Update()
-		SelfPeak_OnShown() --¸üĞÂÎ»ÖÃ
+		SelfPeak_OnShown() --????
 		this:Show()
 		SelfPeak_UpdateRedPoint()
 		return
@@ -175,7 +175,7 @@ function SelfPeak_OnEvent(event)
 end
 
 function SelfPeak_InsertData_DFengQND(index)
-	local attrstr = "Ç±ÄÜµã"
+	local attrstr = "Ti«m nång Ği¬m"
 	local QNDValue = GetDFengDFengQNDValueINT(index)
 	if  QNDValue > 0 then
 		if g_SelfPeak_shuxing_INT_Cache[attrstr] and g_SelfPeak_shuxing_INT_Cache[attrstr] > 0 then
@@ -206,7 +206,7 @@ function SelfPeak_InsertData(index)
 end
 function SelfPeak_DealData()
 
-	local shuxing = {"Á¦Á¿","ÁéÆø","¶¨Á¦","Éí·¨","Íâ¹¦¹¥»÷","ÄÚ¹¦¹¥»÷","Íâ¹¦·ÀÓù","ÄÚ¹¦·ÀÓù","ÌåÁ¦"}
+	local shuxing = {"Lñc lßşng","Nµi Lñc","Ğ¸nh lñc","Thân pháp","NgoÕi công công kích","Nµi công công kích","NgoÕi công phòng ngñ","Nµi công phòng ngñ","Th¬ lñc"}
 	for i=1, table.getn(shuxing) do
 		local key = shuxing[i]
 		local ShuxingCache = g_SelfPeak_shuxing_INT_Cache[key]
@@ -229,19 +229,19 @@ function SelfPeak_Update()
 
 	local DFExp = GetDFengExp()
 	local nDFNeedExp = GetDFengNeedExp()
-	local szDFExp = "#cfff263Îä¾³¾­Ñé£º"..DFExp.."/"..nDFNeedExp
+	local szDFExp = "#cfff263Võ Cänh kinh nghi®m:"..DFExp.."/"..nDFNeedExp
 	
 	local bHaveExtra=0;
 	local nTimes = GetDFengLevelupTimes()
-	local levelupNumStr = "#cfff263±¾ÖÜÊ£ÓàÎä¾³µÈ¼¶ÌáÉı´ÎÊı£º"..(7-nTimes)
+	local levelupNumStr = "#cfff263B±n Chu còn th×a Võ Cänh c¤p b§c tång lên s¯ l¥n:"..(7-nTimes)
 	local bIsZhuiGan, bIsWkZhuiGan = GetDFengZhuiGanInfo()
 	if bIsWkZhuiGan > 0 or bIsZhuiGan > 0 then
 		local nExtraTimes = GetDFengExtraLevelupTimes()
 		if bIsZhuiGan > 0 and nExtraTimes < 3 then
-			SelfPeak_ExtraNum_Text:SetText("#cfff263¶îÍâ´ÎÊı£º"..(3-nExtraTimes))
+			SelfPeak_ExtraNum_Text:SetText("#cfff263thêm vào s¯ l¥n:"..(3-nExtraTimes))
 			bHaveExtra=1;
 		else
-			SelfPeak_ExtraNum_Text:SetText("#cfff263¶îÍâÌáÉı´ÎÊıÒÑ´ïÉÏÏŞ")
+			SelfPeak_ExtraNum_Text:SetText("#cfff263thêm vào tång lên s¯ l¥n Dî ĞÕt hÕn mÑc cao nh¤t")
 		end
 		SelfPeak_ExtraNum_Text:Show()
 	else
@@ -249,10 +249,10 @@ function SelfPeak_Update()
 	end	
 
 	local ntimes = 7 - nTimes
-	if ntimes <= 0 and bHaveExtra == 0 then --	#G±¾ÖÜÎä¾³¿ÉÌáÉıµÈ¼¶ÒÑ´ïÉÏÏŞ£¬ÎŞ·¨¼ÌĞø»ñµÃÎä¾³¾­Ñé¡£
+	if ntimes <= 0 and bHaveExtra == 0 then --	#G?????????????,???????????
 		SelfPeak_LevelUpNum_Text:Hide()
 		SelfPeak_LevelUpNum_Text:SetText("")
-		SelfPeak_LevelEXP_Text:SetText("#G±¾ÖÜÎä¾³¿ÉÌáÉıµÈ¼¶ÒÑ´ïÉÏÏŞ£¬ÎŞ·¨¼ÌĞø»ñµÃÎä¾³¾­Ñé¡£")
+		SelfPeak_LevelEXP_Text:SetText("#GB‘n Chu Võ Cänh Khä tång lên c¤p b§c Dî ĞÕt hÕn mÑc cao nh¤t, không th¬ tiªp tøc nh§n ğßşc Võ Cänh kinh nghi®m.")
 	else 
 		SelfPeak_LevelUpNum_Text:Show()
 		SelfPeak_LevelUpNum_Text:SetText(levelupNumStr)
@@ -272,12 +272,12 @@ function SelfPeak_Update()
 	
 	for i=1,3 do
 		SelfPeak_WuxueLearn_Attack[i] = _G[string.format("SelfPeak_WuxueLearn_Attack%d",i)]
-		SelfPeak_WuxueLearn_Attack[i]:SetText("#cff0000ÉĞÎ´Ñ¡ÔñÃÅÅÉ")
+		SelfPeak_WuxueLearn_Attack[i]:SetText("#cff0000chßa lña ch÷n môn phái")
 		SelfPeak_WuxueLearn_Attack[i]:SetProperty("HorzFormatting","HorzCentred")
 		SelfPeak_WuxueLearn_Attack[i]:SetToolTip("")
 		SelfPeak_WuxueLearn_Attack[i]:Hide()
 		SelfPeak_WuxueLearn_Defence[i] = _G[string.format("SelfPeak_WuxueLearn_Defence%d",i)]
-		SelfPeak_WuxueLearn_Defence[i]:SetText("#cff0000ÉĞÎ´Ñ¡ÔñÃÅÅÉ")
+		SelfPeak_WuxueLearn_Defence[i]:SetText("#cff0000chßa lña ch÷n môn phái")
 		SelfPeak_WuxueLearn_Defence[i]:SetProperty("HorzFormatting","HorzCentred")
 		SelfPeak_WuxueLearn_Defence[i]:SetToolTip("")
 		SelfPeak_WuxueLearn_Defence[i]:Hide()
@@ -325,10 +325,10 @@ function SelfPeak_Update()
 	else
 		local QNDValue = GetDFengDFengQNDValueINT(DFLevle+1)
 		if QNDValue > 0 then
-			local qnd = "#cfff263Ç±ÄÜµã".." +"..QNDValue
+			local qnd = "#cfff263ti«m nång Ği¬m".." +"..QNDValue
 			SelfPeak_NextLevelAttr:SetText(qnd)
 		else
-			SelfPeak_NextLevelAttr:SetText("#GµÈ¼¶ÒÑ´ïÉÏÏŞ")
+			SelfPeak_NextLevelAttr:SetText("#Gc„p b§c Dî ĞÕt hÕn mÑc cao nh¤t")
 		end
 	end
 
@@ -354,8 +354,8 @@ function SelfPeak_Update()
 		SelfPeak_WuxueLearn_Defence3:Show()
 	end
 
-	SelfPeak_WuxueLearn_AttackPoint:SetText("#cfff263¹¥»÷Îä¾÷")
-	SelfPeak_WuxueLearn_DefencePoint:SetText("#cfff263ÊØÓùÎä¾÷")
+	SelfPeak_WuxueLearn_AttackPoint:SetText("#cfff263công kích Võ Quyªt")
+	SelfPeak_WuxueLearn_DefencePoint:SetText("#cfff263Thü Ngñ Võ Quyªt")
 
 	local ndefencexdd= GetDFengDefenceXDD();
 	local nattackxdd = GetDFengAttackXDD();
@@ -378,8 +378,8 @@ function SelfPeak_Update()
 	local nattackminu = nattackxdd - nAttackMenPaiXDD1 - nAttackMenPaiXDD2 - nAttackMenPaiXDD3
 	local ndefenceminu = ndefencexdd - nDfenceMenPaiXDD1 - nDfenceMenPaiXDD2 - nDfenceMenPaiXDD3
 
-	SelfPeak_WuxueLearn_AttackPoint_Num:SetText("#cfff263¹¥»÷Îä¾÷µã£º#G"..nattackminu)
-	SelfPeak_WuxueLearn_DefencePoint_Num:SetText("#cfff263ÊØÓùÎä¾÷µã£º#G"..ndefenceminu)
+	SelfPeak_WuxueLearn_AttackPoint_Num:SetText("#cfff263công kích Võ Quyªt Ği¬m: #G"..nattackminu)
+	SelfPeak_WuxueLearn_DefencePoint_Num:SetText("#cfff263Thü Ngñ Võ Quyªt Ği¬m: #G"..ndefenceminu)
 
 	local nNextLevelMinu = 0
 	local nDfengType = 0
@@ -404,9 +404,9 @@ function SelfPeak_Update()
 		
 		SelfPeak_NextAttrPreview:SetText("")
 		if nDfengType == 104   then
-			SelfPeak_NextAttrPreview_Text:SetText("#cfff263¾àÀë»ñµÃ¹¥»÷Îä¾÷µã»¹Ê££º#G"..nNextLevelMinu.."#cfff263¼¶")	
+			SelfPeak_NextAttrPreview_Text:SetText("#cfff263khoäng cách nh§n ğßşc công kích Võ Quyªt Ği¬m Hoàn Th£ng: #G"..nNextLevelMinu.."#cfff263C¤p")	
 		elseif nDfengType == 105   then
-			SelfPeak_NextAttrPreview_Text:SetText("#cfff263¾àÀë»ñµÃÊØÓùÎä¾÷µã»¹Ê££º#G"..nNextLevelMinu.."#cfff263¼¶")	
+			SelfPeak_NextAttrPreview_Text:SetText("#cfff263khoäng cách nh§n ğßşc Thü Ngñ Võ Quyªt Ği¬m Hoàn Th£ng: #G"..nNextLevelMinu.."#cfff263C¤p")	
 		else
 			SelfPeak_NextAttrPreview_Text:Hide()
 		end	
@@ -430,7 +430,7 @@ function SelfPeak_Update()
 			end
 			SelfPeak_WuxueLearn_Attack[i]:SetText(szJinGongMenPai)
 			SelfPeak_WuxueLearn_Attack[i]:SetProperty("HorzFormatting","LeftAligned")
-			SelfPeak_WuxueLearn_Attack[i]:SetToolTip("#cfff263×î¶à¿É¶Ô#G"..szJinGongMenPai.."#cfff263ÃÅÅÉÔì³ÉµÄÉËº¦Ôö¼Ó#G"..tostring(nAttackMenPaiXDD_ex).."#cfff263£¨Ğè¼ÆËã¶Ô·½µÄÊØÓùÎä¾÷£©")
+			SelfPeak_WuxueLearn_Attack[i]:SetToolTip("#cfff263nhi«u nh¤t có ğúng không#G"..szJinGongMenPai.."#cfff263môn phái tÕo thành Ğích thß½ng t±n gia tång#G"..tostring(nAttackMenPaiXDD_ex).."#cfff263(Nhu tính toán ğ¯i phß½ng Ğích Thü Ngñ Võ Quyªt)")
 			SelfPeak_WuxueLearn_Attack[i]:Show()
 			SelfPeak_WuxueLearn_Attack_Num[i]:SetText(AttackMenPaiXDD[i])
 			SelfPeak_WuxueLearn_Attack_Locked[i]:Hide()
@@ -447,7 +447,7 @@ function SelfPeak_Update()
 			end
 			SelfPeak_WuxueLearn_Defence[i]:SetText(szFangYuMenPai)
 			SelfPeak_WuxueLearn_Defence[i]:SetProperty("HorzFormatting","LeftAligned")
-			SelfPeak_WuxueLearn_Defence[i]:SetToolTip("#G"..szFangYuMenPai.."#cfff263ÃÅÅÉ¶Ô×ÔÉíÔì³ÉµÄÉËº¦×î¶à½µµÍ#G"..tostring( nDefenceMenPaiXDD_ex).."#cfff263£¨Ğè¼ÆËã¶Ô·½µÄ¹¥»÷Îä¾÷£©")
+			SelfPeak_WuxueLearn_Defence[i]:SetToolTip("#G"..szFangYuMenPai.."#cfff263môn phái Ğ¯i tñ thân tÕo thành Ğích thß½ng t±n nhi«u nh¤t r½i ch§m lÕi#G"..tostring( nDefenceMenPaiXDD_ex).."#cfff263(Nhu tính toán ğ¯i phß½ng Ğích công kích Võ Quyªt)")
 			SelfPeak_WuxueLearn_Defence[i]:Show()
 			SelfPeak_WuxueLearn_Defence_Num[i]:SetText(DfenceMenPaiXDD[i])
 			SelfPeak_WuxueLearn_Defence_Locked[i]:Hide()
@@ -585,7 +585,7 @@ function SelfPeak_Page_DWJinJie()
 	SelfPeak_Close()
 end
 
---ÇĞ»»¸öÈËÕ¹Ê¾½çÃæ
+--ÇĞ»»¸öÈË ¹Ê¾½çÃæ
 function SelfPeak_Page_Profile()
 	Variable:SetVariable("SelfUnionPos", SelfPeak_Frame:GetProperty("UnifiedPosition"), 1);
 	Exterior:LuaFnExteriorPlayerOpenProfileUI()	
@@ -644,63 +644,63 @@ end
 function SelfPeak_OnPageClicked(idx)
 	Variable:SetVariable("PageNumber", tostring(idx), 1)
 	idx = g_PageOrder[idx]
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		SelfPeak_Page_SelfEquip()
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		SelfPeak_Page_SelfData()
-	elseif idx == 3 then--ÕäÊŞ
+	elseif idx == 3 then--??
 		SelfPeak_Page_Pet()
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		SelfPeak_Page_Wuhun()
-	elseif idx == 5 then--ĞŞÁ¶
+	elseif idx == 5 then--??
 		SelfPeak_Page_Xiulian()
-	elseif idx == 6 then--ÎäµÀ
+	elseif idx == 6 then--??
 		SelfPeak_Page_Talent()
-	elseif idx == 7 then--ÁéÓñ
+	elseif idx == 7 then--??
 		SelfPeak_Page_LingYu()
-	elseif idx == 8 then--Éñ±ø
+	elseif idx == 8 then--??
 		SelfPeak_Page_ShenBing()
-	elseif idx == 9 then--µñÎÄ½ø½×
+	elseif idx == 9 then--????
 		SelfPeak_Page_DWJinJie()
-	elseif idx == 10 then--áÛ·å
+	elseif idx == 10 then--??
 		SelfPeak_ClearPage()
-	elseif idx == 11 then--¸öÈË
+	elseif idx == 11 then--??
 		SelfPeak_Page_Profile()
-	elseif idx == 12 then--ÆäËû
+	elseif idx == 12 then--??
 		SelfPeak_Page_OtherInfo()
 	end
 end
 
 function SelfPeak_CheckPage(idx)
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--ÕäÊŞ
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--ĞŞÁ¶
+	elseif idx == 5 then--??
 		return 1
-	elseif idx == 6 then--ÎäµÀ
+	elseif idx == 6 then--??
 		return DataPool:Lua_CheckIsShowTalent()
-	elseif idx == 7 then--ÁéÓñ
+	elseif idx == 7 then--??
 		return 1
-	elseif idx == 8 then--Éñ±ø
+	elseif idx == 8 then--??
 		return 1
-	elseif idx == 9 then--µñÎÄ½ø½×
+	elseif idx == 9 then--????
 		return 1
-	elseif idx == 10 then--áÛ·å
+	elseif idx == 10 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 11 then--¸öÈË
+	elseif idx == 11 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 15 then
 			return 1
 		end
-	elseif idx == 12 then--ÆäËû
+	elseif idx == 12 then--??
 		return 1
 
 	end
@@ -708,38 +708,38 @@ function SelfPeak_CheckPage(idx)
 end
 
 function SelfPeak_IsPageEnable(idx)
-	if idx == 1 then--×°±¸
+	if idx == 1 then--??
 		return 1
-	elseif idx == 2 then--×ÊÁÏ
+	elseif idx == 2 then--??
 		return 1
-	elseif idx == 3 then--ÕäÊŞ
+	elseif idx == 3 then--??
 		return 1
-	elseif idx == 4 then--Îä»ê
+	elseif idx == 4 then--??
 		return 1
-	elseif idx == 5 then--ĞŞÁ¶
+	elseif idx == 5 then--??
 		return 1
-	elseif idx == 6 then--ÎäµÀ
+	elseif idx == 6 then--??
 		return 1
-	elseif idx == 7 then--ÁéÓñ
+	elseif idx == 7 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 8 then--Éñ±ø
+	elseif idx == 8 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 65 then
 			return 1
 		end
-	elseif idx == 9 then--µñÎÄ½ø½×
+	elseif idx == 9 then--????
 		return 1
-	elseif idx == 10 then--áÛ·å
+	elseif idx == 10 then--??
 		local my_level = Player:GetData("LEVEL")
 		if my_level >= 85 then
 			return 1
 		end
-	elseif idx == 11 then--¸öÈË
+	elseif idx == 11 then--??
 		return 1
-	elseif idx == 12 then--ÆäËû
+	elseif idx == 12 then--??
 		return 1
 
 	end
@@ -757,7 +757,7 @@ function SelfPeak_UpdateRedPoint()
 	end
 end
 function SelfPeak_CloseUI()
-	-- ´ò¿ª»òÕß¹Ø±Õ³ÆºÅ½çÃæ
+	-- ´ò¿ª»ò ß¹Ø± ³ÆºÅ½çÃæ
 	SelfPeak_Close()
 end
 

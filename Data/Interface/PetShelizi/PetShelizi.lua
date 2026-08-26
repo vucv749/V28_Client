@@ -1,5 +1,5 @@
 --  PetShelizi
---  Á¶ÖÆÕäÊŞÉáÀû×Ó
+--  Á¶ÖÆ äÊŞÉáÀû×Ó
 
 local Guid_Pet_H = -1
 local Guid_Pet_L = -1
@@ -13,14 +13,14 @@ local Pet_DBName=""
 local slzExp = 0
 local needmoney = 0
 
-local applyState = 0  --Á¶ÖÆÎòĞÔ´óÓÚ7µÄÕäÊŞµÄÉêÇë×´Ì¬ 0£ºÎ´ÉêÇë£¬ 1£ºÉêÇëÖĞ£¬ 2£ºÉêÇë³É¹¦£¬ 3£ºÉêÇë¹ıÆÚ 
+local applyState = 0  --??????7???????? 0:???, 1:???, 2:????, 3:???? 
 
 function PetShelizi_PreLoad()
 	this : RegisterEvent( "UI_COMMAND" )
-	this : RegisterEvent( "REPLY_MISSION_PET" )						-- Íæ¼Ò´ÓÁĞ±íÑ¡¶¨Ò»Ö»ÕäÊŞ
-	this : RegisterEvent( "UPDATE_PET_PAGE" )						-- Íæ¼ÒÉíÉÏµÄÕäÊŞÊı¾İ·¢Éú±ä»¯£¬°üÀ¨Ôö¼ÓÒ»Ö»ÕäÊŞ
-	this : RegisterEvent( "DELETE_PET" )							-- Íæ¼ÒÉíÉÏ¼õÉÙÒ»Ö»ÕäÊŞ
-	this : RegisterEvent( "OBJECT_CARED_EVENT" )						-- ¹ØĞÄ NPC µÄ´æÔÚºÍ·¶Î§
+	this : RegisterEvent( "REPLY_MISSION_PET" )						-- ???????????
+	this : RegisterEvent( "UPDATE_PET_PAGE" )						-- ?????????????,????????
+	this : RegisterEvent( "DELETE_PET" )							-- ??????????
+	this : RegisterEvent( "OBJECT_CARED_EVENT" )						-- ?? NPC ??????
 	this : RegisterEvent("UNIT_MONEY");
 	this:RegisterEvent("MONEYJZ_CHANGE")
 end
@@ -74,13 +74,13 @@ function PetShelizi_OnEvent(event)
 
 		PetShelizi_OnSelectPet( tonumber( arg0 ) )
 
-	elseif event == "OBJECT_CARED_EVENT" and this : IsVisible() then	-- ¹ØĞÄ NPC µÄ´æÔÚºÍ·¶Î§
+	elseif event == "OBJECT_CARED_EVENT" and this : IsVisible() then	-- ?? NPC ??????
 		Pet : ShowPetList( 0 )
 		if tonumber( arg0 ) ~= CareNpcID then
 			return
 		end
 
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		local MAX_OBJ_DISTANCE = 3.0
 		if arg1 == "distance" and tonumber( arg2 ) > MAX_OBJ_DISTANCE or arg1 == "destroy" then
 			PetShelizi_Cancel_Clicked()
@@ -121,14 +121,14 @@ function PetShelizi_OnSelectPet( PetIndex )
 		return
 	end
 	
-	--ÕäÊŞÒÑ±»ÆäËü½çÃæÑ¡ÖĞ
+	-- äÊŞÒÑ±»ÆäËü½çÃæÑ¡ÖĞ
 	if (Pet:GetPetLocation(PetIndex) ~= -1) then
 		return;
 	end
 
 	local savvy = Pet:GetSavvy(PetIndex)
 	if savvy ~= nil and savvy >= 7 and applyState~=2 then
-		--PushDebugMessage("#{GDWPBH_100111_1}")    --ÄãµÄÕäÊŞÎòĞÔµÈ¼¶´óÓÚµÈÓÚ7¼¶
+		--PushDebugMessage("#{GDWPBH_100111_1}")    --ÄãµÄ äÊŞÎòĞÔµÈ¼¶´óÓÚµÈÓÚ7¼¶
 		if applyState==0 then
 			PushDebugMessage("#{GZSL_100525_9}")
 		elseif applyState==1 then
@@ -153,7 +153,7 @@ function PetShelizi_OnSelectPet( PetIndex )
 	local strName , strName2 = Pet:GetName(Index_Pet)
 
 	if petGen == 1 then
-		strName2 = "¶ş´ú"..petDBName;
+		strName2 = "Ğ¶i thÑ 2"..petDBName;
 	end
 
 	Pet_DBName = strName2
@@ -193,7 +193,7 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØĞÄNPC£¬
---ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 --Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function PetShelizi_BeginCareObject( objCaredId )
@@ -232,7 +232,7 @@ function PetShelizi_Check()
 		return
 	end
 --	·Å¿ªµÈ¼¶ÏŞÖÆ
-	-- ÅĞ¶¨ÕäÊŞµÄµÈ¼¶ÊÇ·ñ´óÓÚµÈÓÚ30
+	-- ÅĞ¶¨ äÊŞµÄµÈ¼¶ÊÇ·ñ´óÓÚµÈÓÚ30
 --	local Level = Pet : GetLevel( Index_Pet )
 --	if Level < minLevel then
 --		PushDebugMessage("#{ZSKSSJ_081113_08}")

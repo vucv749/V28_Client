@@ -57,12 +57,12 @@ function Fashion_AuctionEnter_ShowIcon(bShow)
 		return
 	end
 	
-	--关闭界面
+	--关睜界面
 	if bShow == 0 then
 		if this:IsVisible() then
 			this:Hide()
 		end
-	elseif bShow == 1 then	--显示界面
+	elseif bShow == 1 then	--????
 		if this:IsVisible() then
 			--不处理
 		else
@@ -90,7 +90,7 @@ function Fashion_AuctionEnter_OnClick()
 	--等级判断
 	local nLevel = Player:GetData("LEVEL")
 	if nLevel < 30 then
-		PushDebugMessage("#{ZQPM_240402_03}")	--您尚未达到15级，无法参加玫瑰传情活动。
+		PushDebugMessage("#{ZQPM_240402_03}")	--?????15?,???????????
 		return
 	end
 	
@@ -108,7 +108,7 @@ function Fashion_AuctionEnter_OnClick()
 --	if g_InCooldown == 0 then--冷却时间已到
 		--请求服务器数据
 		if IsInHell() == 1 then
-			PushDebugMessage("#{ZQPM_240402_04}")	--当前场景无法进行此操作
+			PushDebugMessage("#{ZQPM_240402_04}")	--???????????
 			return
 		end
 		Clear_XSCRIPT()
@@ -116,7 +116,7 @@ function Fashion_AuctionEnter_OnClick()
 			Set_XSCRIPT_ScriptID(888818)
 			Set_XSCRIPT_Parameter(0, 0)
 			Set_XSCRIPT_Parameter(1, 0)
-			Set_XSCRIPT_Parameter(2, 0) --是否收刷新cd限制
+			Set_XSCRIPT_Parameter(2, 0) --?????cd??
 			Set_XSCRIPT_ParamCount(3)
 		Send_XSCRIPT()
 		--设置冷却时间

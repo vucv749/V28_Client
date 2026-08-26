@@ -1,6 +1,6 @@
 ------------------------------------
 -- 武道二层历练任务
--- 侠之大者
+-- 侠之大犨
 -- 任务3
 -- 倒计时界面
 ------------------------------------
@@ -92,7 +92,7 @@ function XiaZhiDaZhe_DaoJiShi_OnEvent(event)
 end
 
 --================================================
--- 关闭界面
+-- 关睜界面
 --================================================
 function XiaZhiDaZhe_DaoJiShi_OnHiden()
 	KillTimer("XiaZhiDaZhe_DaoJiShi_Proc()")
@@ -101,7 +101,7 @@ function XiaZhiDaZhe_DaoJiShi_OnHiden()
 end
 
 --================================================
--- 重新挑战
+-- 重新挑牻
 --================================================
 function XiaZhiDaZhe_DaoJiShi_Clicked()
 	Clear_XSCRIPT()

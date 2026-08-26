@@ -1,5 +1,5 @@
-g_InputPassword_CurrectOperate = 0;  --1Îªpk×´Ì¬ÇĞ»»ĞèÒªµÄÊäÈë´°¿Ú. 2Îª´ò¿ªÒøĞĞÊ±ºòĞèÒªµÄÊä³ö´°¿Ú
-g_InputPassword_PKModeWant = 0;  --1Îªpk×´Ì¬ÇĞ»»ĞèÒªµÄÊäÈë´°¿Ú.
+g_InputPassword_CurrectOperate = 0;  --1?pk???????????. 2??????????????
+g_InputPassword_PKModeWant = 0;  --1?pk???????????.
 
 function UnlockMinorPassword_PreLoad()
 	
@@ -42,8 +42,8 @@ function UnlockMinorPassword_OnEvent(event)
 		UnLockMinorPassword_ChangeMinorPassword:Hide()
 		g_InputPassword_CurrectOperate = 1
 		
-		UnLockMinorPassword_Frame_Title:SetText( "#{UITEXT_INPUTMINORPW}" )   --( "ÊäÈë¶ş¼¶ÃÜÂë" )
-		UnLockMinorPassword_WarningText:SetText( "#{UITEXT_PKNEEDPW}" )   --( "ÇĞ»»PKÄ£Ê½µÄÊ±ºòĞèÒªÊäÈë¶ş¼¶ÃÜÂë" )
+		UnLockMinorPassword_Frame_Title:SetText( "#{UITEXT_INPUTMINORPW}" )   --( "Ğßa vào nh¸ c¤p m§t mã" )
+		UnLockMinorPassword_WarningText:SetText( "#{UITEXT_PKNEEDPW}" )   --( "C¡t PKhình thÑc Ğích th¶i ği¬m c¥n ğßa vào nh¸ c¤p m§t mã" )
 		OpenWindow( "SoftKeyBoard" );
 		SetSoftKeyAim( "UnLockMinorPassword_MinorPasswordEditBox" );
 		
@@ -57,8 +57,8 @@ function UnlockMinorPassword_OnEvent(event)
 		UnLockMinorPassword_ChangeMinorPassword:Hide()
 		g_InputPassword_CurrectOperate = 2
 		
-		UnLockMinorPassword_Frame_Title:SetText( "#{UITEXT_INPUTMINORPW}" )   --( "ÊäÈë¶ş¼¶ÃÜÂë" )
-		UnLockMinorPassword_WarningText:SetText( "#{UITEXT_BANKNEEDPW}" )   --( "´ò¿ªÒøĞĞĞèÒªÊäÈë¶ş¼¶ÃÜÂë" )
+		UnLockMinorPassword_Frame_Title:SetText( "#{UITEXT_INPUTMINORPW}" )   --( "Ğßa vào nh¸ c¤p m§t mã" )
+		UnLockMinorPassword_WarningText:SetText( "#{UITEXT_BANKNEEDPW}" )   --( "Tá Khai ngân hàng c¥n ğßa vào nh¸ c¤p m§t mã" )
 		OpenWindow( "SoftKeyBoard" );
 		SetSoftKeyAim( "UnLockMinorPassword_MinorPasswordEditBox" );
 		
@@ -92,7 +92,7 @@ function UnLockMinorPassword_OK()
         local strPassword = UnLockMinorPassword_MinorPasswordEditBox:GetText();
         local iLen = string.len(strPassword);
 		if(iLen < 4) then
-			ShowSystemTipInfo( "#{UITEXT_PWTOOSHORT}" )   --("ÃÜÂë²»ÄÜÉÙÓÚ4¸ö×Ö·û£¡");
+			ShowSystemTipInfo( "#{UITEXT_PWTOOSHORT}" )   --("M§t mã không th¬ Thi¬u Vu 4Cá tñ phù!");
 			return;
 		end
 		
@@ -109,7 +109,7 @@ function UnLockMinorPassword_OK()
         local strPassword = UnLockMinorPassword_MinorPasswordEditBox:GetText();
         local iLen = string.len(strPassword);
 		if(iLen < 4) then
-			ShowSystemTipInfo( "#{UITEXT_PWTOOSHORT}" )   --("ÃÜÂë²»ÄÜÉÙÓÚ4¸ö×Ö·û£¡");
+			ShowSystemTipInfo( "#{UITEXT_PWTOOSHORT}" )   --("M§t mã không th¬ Thi¬u Vu 4Cá tñ phù!");
 			return;
 		end
 		
@@ -123,7 +123,7 @@ function UnLockMinorPassword_OK()
 	local iLen = string.len(strPassword);
 	if(iLen < 4) then
 	
-		ShowSystemTipInfo("ÃÜÂë²»ÄÜÉÙÓÚ4¸ö×Ö·û£¡");
+		ShowSystemTipInfo("M§t mã không th¬ Thi¬u Vu 4Cá tñ phù!");
 		return;
 	end;
 	

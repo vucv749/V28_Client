@@ -30,7 +30,7 @@ function YuanBao_G_OnEvent(event)
 		--¼ÄÊÛÔª±¦
 			local yuanbao = tonumber(Player:GetData("YUANBAO"));
 			if(g_limit + g_Shouxu > yuanbao) then
-				PushDebugMessage("ÄúÉíÉÏµÄÔª±¦Ğ¡ÓÚ51£¬Ö»ÓĞÓµÓĞÔª±¦µÄÊıÁ¿´óÓÚµÈÓÚ51µÄÊ±ºò·½¿É¼ÄÊÛ¡£")
+				PushDebugMessage("Nhçm trên ngß¶i Ğích nguyên bäo nhö 51, chï có có ğßşc nguyên bäo Ğích s¯ lßşng l¾n h½n tß½ng ğß½ng 51Ğích th¶i ği¬m lÕi v×a kı gØi.")
 				this:Hide();
 				return;
 			end
@@ -49,7 +49,7 @@ function YuanBao_G_OnEvent(event)
 			return;
 		end
 
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			this:Hide();
 
@@ -99,32 +99,32 @@ function YuanBao_G_OK_Click()
 	local nCopperCoin = tonumber(YuanBao_G_InputMoney_CopperCoin:GetText());
 	local nHaveYuanbao = tonumber(Player:GetData("YUANBAO"));
 	if(nYuanbao == 0) then
-		PushDebugMessage("ÇëÑ¡ÔñÒª¼ÄÊÛµÄÔª±¦ÀàĞÍ£¡")
+		PushDebugMessage("Thïnh lña ch÷n Yêu kı gØi Ğích nguyên bäo loÕi hình!")
 		return;
 	end
 	if(nGlod==nil or nSilver == nil or nCopperCoin == nil) then
-		PushDebugMessage("½ğÇ®ÊäÈë¿ò²»ÔÊĞíÓĞ¿ÕÖµ£¡")
+		PushDebugMessage("Ti«n tài ğßa vào Khuông không cho phép có ränh Tr¸!")
 		return
 	end
 	local bAvailability,nMoney = Bank:GetInputMoney(nGlod,nSilver,nCopperCoin);
 	if(bAvailability~=true or nMoney <=0)then
-		PushDebugMessage("½ğÇ®²»ÄÜÎª0£¡")
+		PushDebugMessage("Ti«n tài không th¬ Vi 0!")
 		return;
 	end
 	if tonumber(nMoney) < g_YuanBao_Limit[g_grad].min * 10000 then
-		local errMsg = string.format( "%dÔª±¦¼ÄÊÛ¼Û¸ñ²»µÃµÍÓÚ%d½ğ", tonumber(nYuanbao), g_YuanBao_Limit[g_grad].min)
+		local errMsg = string.format( "%dnguyên bäo kı gØi giá cä không ğßşc th¤p h½n%dKim", tonumber(nYuanbao), g_YuanBao_Limit[g_grad].min)
 		PushDebugMessage(errMsg)
 		return
 	end 
 	if tonumber(nMoney) > g_YuanBao_Limit[g_grad].max * 10000 then
-		local errMsg = string.format( "%dÔª±¦¼ÄÊÛ¼Û¸ñ²»µÃ¸ßÓÚ%d½ğ", tonumber(nYuanbao), g_YuanBao_Limit[g_grad].max)
+		local errMsg = string.format( "%dnguyên bäo kı gØi giá cä không ğßşc cao h½n%dKim", tonumber(nYuanbao), g_YuanBao_Limit[g_grad].max)
 		PushDebugMessage(errMsg)
 		return
 	end 
 	
 	if( tonumber(nHaveYuanbao) < tonumber(nYuanbao) +  tonumber(nYuanbao)*2/100) then
 		local tmpnum = tonumber(nYuanbao) +  tonumber(nYuanbao)*2/100;
-		PushDebugMessage("ÄúÉíÉÏµÄÔª±¦ÊıÁ¿²»×ã"..tmpnum.."¸ö£¬ÇëÖØĞÂÑ¡Ôñ¡£")
+		PushDebugMessage("Nhçm trên ngß¶i Ğích nguyên bäo s¯ lßşng không ğü"..tmpnum.."Cá, Thïnh mµt l¥n næa lña ch÷n.")
 		return
 	end
 	--ÅĞ¶Ïok £¬µ÷º¯ÊıÈ¥Ò²
@@ -150,11 +150,11 @@ function YuanBao_G_CheckIfOK(idx)
 	elseif(idx == 2) then
 		nNum = tonumber(YuanBao_G_InputMoney_Silver : GetText());
 		Ctl = YuanBao_G_InputMoney_Silver;
-		szErr = "Ö»ÔÊĞíÊäÈëĞ¡ÓÚ100µÄÖµ£¡";
+		szErr = "Chích cho phép ğßa vào nhö 100giá tr¸!";
 	elseif(idx == 3) then
 		nNum = tonumber(YuanBao_G_InputMoney_CopperCoin : GetText());
 		Ctl = YuanBao_G_InputMoney_CopperCoin;
-		szErr = "Ö»ÔÊĞíÊäÈëĞ¡ÓÚ100µÄÖµ£¡";
+		szErr = "Chích cho phép ğßa vào nhö 100giá tr¸!";
 	end
 	if(szErr ==nil or Ctl == nil)then
 		return

@@ -1,4 +1,4 @@
--- 跨服爬塔夺宝 龙塔三层奖励（神龙祝福）宝箱信息展示UI
+-- 跨服爬塔夺宝 龙塔三层奖励（神龙祝福）宝箱信息牴示UI
 
 -- 默认位置
 local TowerBox_Mini2_UnifiedPosition = nil
@@ -9,8 +9,8 @@ function TowerBox_Mini2_PreLoad()
 	this:RegisterEvent("PTDB_UI_CLOSEBOXINFO", true)
 	this:RegisterEvent("PTDB_UI_CLOSEBOXINFOMINI", true)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end -- end func TowerBox_Mini2_PreLoad()
 
 function TowerBox_Mini2_OnEvent(event)

@@ -20,12 +20,12 @@ local g_strAttrDic = {
 [26]="#{equip_attr_attack_m}",
 }
 local g_strEffectDic = {
-[0] = "#{WH_210223_142}",--内功攻击
-[1] = "#{WH_210223_143}",--外功攻击
-[2] = "#{WH_210223_138}",--冰属性
-[3] = "#{WH_210223_139}",--火属性
-[4] = "#{WH_210223_140}",--玄属性
-[5] = "#{WH_210223_141}",--毒属性
+[0] = "#{WH_210223_142}",--????
+[1] = "#{WH_210223_143}",--????
+[2] = "#{WH_210223_138}",--???
+[3] = "#{WH_210223_139}",--???
+[4] = "#{WH_210223_140}",--???
+[5] = "#{WH_210223_141}",--???
 }
 
 function WuhunTupuJinjie_PreLoad()
@@ -37,7 +37,7 @@ function WuhunTupuJinjie_PreLoad()
 	this:RegisterEvent("UNIT_MONEY", false)
 	this:RegisterEvent("MONEYJZ_CHANGE", false)
 	
-	--离开场景，自动关闭
+	--离开场景，自动关睜
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)
 
 	this:RegisterEvent("ADJEST_UI_POS", false)
@@ -145,7 +145,7 @@ function WuhunTupuJinjie_UpdateSel()
 				WuhunTupuJinjie_Item_EffectBK:Hide()
 				WuhunTupuJinjie_EffectNone:SetText("#{WH_210223_89}")
 			elseif nTPLevel==10 then
-				--正常显示
+				--狚常显示
 				WuhunTupuJinjie_Item_EffectBK:Show()
 				WuhunTupuJinjie_EffectNone:SetText("")
 
@@ -207,8 +207,8 @@ function WuhunTupuJinjie_UpdateSel()
 	else
 		WuhunTupuJinjie_ItemInfo1:SetText("#{WH_210223_64}")
 
-		WuhunTupuJinjie_EffectLevel:SetText("")--当前等级：空
-		WuhunTupuJinjie_EffectLevelPluse:SetText("")--升级等级：空
+		WuhunTupuJinjie_EffectLevel:SetText("")--????:?
+		WuhunTupuJinjie_EffectLevelPluse:SetText("")--????:?
 		
 		WuhunTupuJinjie_Item_EffectBK:Hide()
 		WuhunTupuJinjie_EffectNone:SetText("")

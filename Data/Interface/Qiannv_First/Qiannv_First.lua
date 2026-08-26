@@ -3,7 +3,7 @@ local Qiannv_First_UnifiedPosition
 
 
 function Qiannv_First_PreLoad()
-	--第二个参数表示界面关闭时是否响应事件 默认为TRUE
+	--第二个参数表示界面关睜时是否响应事件 默认为TRUE
 	this:RegisterEvent("UI_COMMAND", true)
 	this:RegisterEvent("ON_SCENE_TRANSING", false)
 	this:RegisterEvent("PLAYER_LEAVE_WORLD", false)
@@ -20,7 +20,7 @@ function Qiannv_First_OnEvent(event)
 		Qiannv_First_Mini:Hide()
 		Qiannv_First_Big:Show()
 		this:Show()
-	elseif event == "ON_SCENE_TRANSING" then --客户端开始切换场景
+	elseif event == "ON_SCENE_TRANSING" then --?????????
 		this:Hide()
 	elseif event == "PLAYER_LEAVE_WORLD" then
 		this:Hide()
@@ -43,7 +43,7 @@ function Qiannv_First_Mini_OnShowNormalUI()
 	Qiannv_First_Big:Show()
 end
 
---关闭
+--关睜
 function Qiannv_First_OnClose()
 	this:Hide()
 end

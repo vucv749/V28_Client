@@ -3,10 +3,10 @@ local g_MonthPVP_Goto_Frame_UnifiedYPosition
 
 local g_Rand_MainCity =
 {
-	[1] = {PosX = 172, PosZ = 115, Scene = 0, Name = "фоляп║вФ"}, --бЕяТ
+	[1] = {PosX = 172, PosZ = 115, Scene = 0, Name = "CБy nho Ti╛u T╠"}, --??
 }
 
---т╓╪сть╨╞йЩё╛©ирт╤Ьгрж╩дэтзуБюОв╒╡А╫е╠╬╧ьпд╣дйб╪Ч
+--т╓╪сть╨╞йЩё╛©ирт╤Ьгрж╩дэтз═БюОв╒╡А╫е╠╬╧ьпд╣дйб╪Ч
 function MonthPVP_Goto_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
 	-- сно╥╢╟©зЁъ╢Г╥╒иЗак╠Д╩╞
@@ -63,7 +63,7 @@ function MonthPVP_Goto_OnHide()
 	this:Hide()
 end
 
---╧ь╠у╫ГцФ
+--╧ь╠═╫ГцФ
 function MonthPVP_Goto_Hide()
 	this:Hide()
 end

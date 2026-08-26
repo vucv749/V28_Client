@@ -30,14 +30,14 @@ function Bank_PreLoad()
 	this:RegisterEvent("ADJEST_UI_POS")
 	-- 游戏分辨率发生了变化
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
-	-- 开始整理和结束整理
+	-- 开始狖理和结束狖理
 	this:RegisterEvent("BEGIN_PACKUP_BANK")
 	this:RegisterEvent("END_PACKUP_BANK")
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED") 
-	this:RegisterEvent("PLAYER_LEAVE_WORLD");--切场景
-	this:RegisterEvent("PLAYER_ENTER_WORLD");--切场景
-	this:RegisterEvent("ON_SCENE_TRANS");--切场景
-	this:RegisterEvent("ON_SERVER_TRANS");--切场景 
+	this:RegisterEvent("PLAYER_LEAVE_WORLD");--???
+	this:RegisterEvent("PLAYER_ENTER_WORLD");--???
+	this:RegisterEvent("ON_SCENE_TRANS");--???
+	this:RegisterEvent("ON_SERVER_TRANS");--??? 
 end
 	
 function Bank_OnLoad()
@@ -119,7 +119,7 @@ function Bank_OnEvent(event)
 		if(tonumber(arg0) ~= objCared) then
 			return;
 		end
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			g_InitiativeClose = 1;
 			this:Hide();
@@ -130,7 +130,7 @@ function Bank_OnEvent(event)
 		end
 	elseif ( event == "BEGIN_PACKUP_BANK" )   then
 		Bank_Classify:Disable()
-	--Enable“整理”
+	--Enable“狖理”
 	elseif ( event == "END_PACKUP_BANK" )	    then
 		Bank_Classify:Enable()
 	elseif ( event == "PACKAGE_ITEM_CHANGED" and this:IsVisible()) then
@@ -175,10 +175,10 @@ function Bank_UpdateFrame(nIndex)
 	nMoney,nGoldCoin,nSilverCoin,nCopperCoin = Bank:GetBankMoney();
 	Bank_Money:SetProperty("MoneyNumber", tostring(nMoney));	
 		
-	--获得这个背包可以使用的格子数
+	--获得犫个背包可以使用的格子数
 	local nBeginIndex,nGridNum = Bank:GetRentBoxInfo(nIndex);
 
-	--点亮这些可以使用的格子，置灰不能使用的格子
+	--点亮犫些可以使用的格子，置灰不能使用的格子
 	for i=1, nGridNum do
 		GRID_BUTTONS[i]:Show();
 	end
@@ -186,7 +186,7 @@ function Bank_UpdateFrame(nIndex)
 	for i=nGridNum+1 ,GRID_BUTTONS_NUM do
 		GRID_BUTTONS[i]:SetProperty("NormalImage","set:Common2 image:Unopened_Normal");
 		GRID_BUTTONS[i]:SetProperty("Empty","False");
-		--设置四个角的数字，全设置为空
+		--设置四个角的数字，全设置为繝
 		GRID_BUTTONS[i]:SetProperty("CornerChar","TopLeft ");
 		GRID_BUTTONS[i]:SetProperty("CornerChar","TopRight ");
 		GRID_BUTTONS[i]:SetProperty("CornerChar","BotLeft ");
@@ -244,7 +244,7 @@ function Bank_patulousBox_Clicked(nIndex)
 end
 
 --===============================================
--- 点击关闭
+-- 点击关睜
 --===============================================
 function Bank_Close_Clicked()
 	if(g_InitiativeClose == 1)  then

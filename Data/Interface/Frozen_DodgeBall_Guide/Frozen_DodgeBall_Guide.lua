@@ -4,7 +4,7 @@ local g_Frozen_DodgeBall_Guide_Frame_UnifiedPosition
 function Frozen_DodgeBall_Guide_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("ADJEST_UI_POS",false)
 end
 
@@ -25,7 +25,7 @@ function Frozen_DodgeBall_Guide_OnEvent(event)
 		if operate == 0 then	
 			this:Show()
 		elseif operate == 1 then
-			AutoRuntoTargetExWithName(99, 200, 728, "戴春生") 
+			AutoRuntoTargetExWithName(99, 200, 728, "嗅i Xu鈔 Sinh") 
 		end
 	end
 	

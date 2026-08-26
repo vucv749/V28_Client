@@ -79,7 +79,7 @@ function CJ_Mission_UIShow()
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function CJ_Mission_OpenMini()
 	CJ_Mission_SavePosition()
@@ -87,7 +87,7 @@ function CJ_Mission_OpenMini()
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function CJ_Mission_CloseClicked()
 	this:Hide()

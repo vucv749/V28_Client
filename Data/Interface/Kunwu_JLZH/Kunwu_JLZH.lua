@@ -1,4 +1,4 @@
---卡级服 废品回收 
+--卡级服 废品回薁 
 --!!!reloadscript =Kunwu_JLZH
 local g_Kunwu_JLZH_Frame_UnifiedPosition = 0
 
@@ -73,7 +73,7 @@ local g_activItemList = {
 	[62]  = {[1] =  30402097,[2] =  -1},
 	[63]  = {[1] =  30402098,[2] =  -1},
 	[64]  = {[1] =  30402099,[2] =  -1},
-}--技能书
+}--???
 
 local g_SkillBookIndex = 0
 local g_SkillBookHigh = 0
@@ -82,13 +82,13 @@ local g_SkillBookHigh = 0
 --===============================================
 function Kunwu_JLZH_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)		--离开场景
-	this:RegisterEvent("ADJEST_UI_POS",false)				-- 游戏窗口尺寸发生了变化
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)	-- 游戏分辨率发生了变化
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)		--????
+	this:RegisterEvent("ADJEST_UI_POS",false)				-- ???????????
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)	-- ??????????
 	
-	this:RegisterEvent("Kunwu_JLZH_ITEM",false)	-- 从背包放入道具
+	this:RegisterEvent("Kunwu_JLZH_ITEM",false)	-- ???????
 
-	this:RegisterEvent("OBJECT_CARED_EVENT",false);           --某逻辑对象的某些发生改变，用于距离NPC够远则关闭界面
+	this:RegisterEvent("OBJECT_CARED_EVENT",false);           --????????????,????NPC???????
 end
 
 --===============================================
@@ -115,7 +115,7 @@ function Kunwu_JLZH_OnEvent(event)
 			return;
 		end
 		
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if arg1 == "distance" and tonumber( arg2 ) > MAX_OBJ_DISTANCE or arg1 == "destroy" then
 			Kunwu_JLZH_OnClose()
 		end
@@ -159,7 +159,7 @@ function Kunwu_JLZH_UpdateItem(index)
 	else
 		local BagPos = tonumber(index)
 
-		--判断 是否是可回收道具
+		--判断 是否是可回薁道具
 		local itemid = PlayerPackage:GetItemTableIndex(BagPos)
 
 		if(itemid < 0)then
@@ -177,8 +177,8 @@ function Kunwu_JLZH_UpdateItem(index)
 				break;
 			end
 			if i == table.getn(g_activItemList) then
-				PushDebugMessage("#{JLZH_241209_43}") -- 您放入的道具不对，仅可放入丹药道具。
-				--进入这里说明放入的道具不是活动道具，取消操作
+				PushDebugMessage("#{JLZH_241209_43}") -- ????????,?????????
+				--进入犫里说明放入的道具不是活动道具，取消操作
 				return
 			end
 		end
@@ -246,7 +246,7 @@ end
 
 --=========================================================
 --开始关心NPC，
---在开始关心之前需要先确定这个界面是不是已经有“关心”的NPC，
+--在开始关心之前需要先确定犫个界面是不是已经有“关心”的NPC，
 --如果有的话，先取消已经有的“关心”
 --=========================================================
 function Kunwu_JLZH_BeginCareObject( objCaredId )

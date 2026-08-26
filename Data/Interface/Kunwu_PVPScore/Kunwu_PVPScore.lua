@@ -18,10 +18,10 @@ local g_rank_info = {
 }
 
 local g_battle_fightState = {
-    hand_noactive = 1,                  -- 上交点未激活
-    hand_active = 2,                    -- 上交点激活
-    hand_sec_active = 3,                -- 第二轮上交点
-    hand_final_active = 4,              -- 第二轮上交点
+    hand_noactive = 1,                  -- ??????
+    hand_active = 2,                    -- ?????
+    hand_sec_active = 3,                -- ??????
+    hand_final_active = 4,              -- ??????
 }
 
 function Kunwu_PVPScore_PreLoad()
@@ -127,7 +127,7 @@ function Kunwu_PVPScore_InitUIData(lastTime)
 			if data ~= nil and type(data) == "table" then
 				local child = Kunwu_PVPScore_TopList_ListFrame:AddChild("Kunwu_PVPScore_TopList_List_Item")
 				if (child ~= nil) then
-					-- 是否是自己的阵营					
+					-- 是否是自己的狊营					
 					--local strRank = "#cfff263"..tostring(i)
 					local strCampName = g_camp_info[i].name
 					if g_camp_info[data.pos+1] ~= nil then
@@ -195,7 +195,7 @@ function Kunwu_PVPScore_MiniClick()
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function Kunwu_PVPScore_CloseClicked()
 	this:Hide()

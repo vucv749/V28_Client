@@ -8,19 +8,19 @@ local g_UICOMMAND = 99981501
 local g_AutoRunUICOMMAND = 99981502
 local g_UpdateUICOMMAND = 99981503
 local g_FadeAnimateUICOMMAND = 99981504
-local g_IsOriginHj = 0                  --ÊÇ·ñÊÇ³¬ÌØ·þ
-local g_bShowShopHotPoint = 0           --ÊÇ·ñÒªÏÔÊ¾ÉÌµêºìµã
-local g_playerLevel = 0                 --Íæ¼Ò´ò¿ª½çÃæÊ±µÄµÈ¼¶
-local g_rewardState = 0              --»î¶¯ÈÎÎñµÄÁì½±½ø¶È
-local g_playerLevelLimit = 30                 --Íæ¼Ò´ò¿ª½çÃæÊ±µÄµÈ¼¶
+local g_IsOriginHj = 0                  --??????
+local g_bShowShopHotPoint = 0           --?????????
+local g_playerLevel = 0                 --??????????
+local g_rewardState = 0              --?????????
+local g_playerLevelLimit = 30                 --??????????
 local g_FadeAnimateParam = {}
 
-local g_QuestState = 0                  --ÈÎÎñ½ø¶È
-local g_IsGetQuest = 0                  --Ö»Íê³ÉÈÎÎñ1µÄÊ±ºòÅÐ¶ÏÊÇ·ñÓÐ³ÖÓÐÈÎÎñ2
-local Qixi_HuaJuan_CurTime = -1         --µ±Ç°Ê±¼ä£¬´ò¿ª½çÃæÊ±ÐèÒª»ñÈ¡
-local Qixi_HuaJuan_StoryStateList       --Õý³£½øÈë½çÃæÊ±´æÃ¿¸ö¹ÊÊÂ×´Ì¬µÄÈ«¾Ö±äÁ¿
-local Qixi_HuaJuan_ShopOpenTime = 20250821         --ÉÌµê¿ªÆôÊ±¼ä
-local Qixi_HuaJuan_ShopCloseTime = 20250917         --ÉÌµê¿ªÆôÊ±¼ä
+local g_QuestState = 0                  --????
+local g_IsGetQuest = 0                  --?????1????????????2
+local Qixi_HuaJuan_CurTime = -1         --????,?????????
+local Qixi_HuaJuan_StoryStateList       --???????????????????
+local Qixi_HuaJuan_ShopOpenTime = 20250821         --??????
+local Qixi_HuaJuan_ShopCloseTime = 20250917         --??????
 local Qixi_HuaJuan_UnlockTime = {
     [1] = 20250821,
     [2] = 20250821,
@@ -34,21 +34,21 @@ local Qixi_HuaJuan_GoToMsg = {
     [4] = "#{QNHJ_250609_80}",
 }
 --OnLoadÊý¾Ý
-local Qixi_HuaJuan_FoldNum = 4          --·ÖÒ³ÊýÁ¿
-local Qixi_HuaJuan_FoldList = {}        --¹ÊÊÂ·ÖÒ³
-local Qixi_HuaJuan_ItemShow = {}        --1X3¸ñ×Ó ½±ÀøÕ¹Ê¾
-local Qixi_HuaJuan_RewardState = {}        --¹ÊÊÂ·ÖÒ³
-local Qixi_HuaJuan_IMGUnLock = {}        --¹ÊÊÂ·ÖÒ³
-local Qixi_HuaJuan_rewardNum = 5        --½±ÀøµÀ¾ßÊýÁ¿
-local Qixi_HuaJuan_Item = {             --1X3¸ñ×Ó ½±Àø
-    [1] = { Itemid = 39920221, num = 20 }, ----20´ú±Ò
-    [2] = { Itemid = 39920221, num = 20 }, ----20´ú±Ò
-    [3] = { Itemid = 39920221, num = 20 }, ----20´ú±Ò
-    [4] = { Itemid = 39920221, num = 20 }, ----20´ú±Ò
-    [5] = { Itemid = 38003648, num = 1 }, ----»­¾íµÀ¾ß
+local Qixi_HuaJuan_FoldNum = 4          --????
+local Qixi_HuaJuan_FoldList = {}        --????
+local Qixi_HuaJuan_ItemShow = {}        --1X3?? ????
+local Qixi_HuaJuan_RewardState = {}        --????
+local Qixi_HuaJuan_IMGUnLock = {}        --????
+local Qixi_HuaJuan_rewardNum = 5        --??????
+local Qixi_HuaJuan_Item = {             --1X3?? ??
+    [1] = { Itemid = 39920221, num = 20 }, ----20??
+    [2] = { Itemid = 39920221, num = 20 }, ----20??
+    [3] = { Itemid = 39920221, num = 20 }, ----20??
+    [4] = { Itemid = 39920221, num = 20 }, ----20??
+    [5] = { Itemid = 38003648, num = 1 }, ----????
 }
 local Qixi_HuaJuan_NPCInfo = {
-    posx = 154.5, posy = 115, sceneId = 0, npcName = "ÀÏÂõÊéÉú"
+    posx = 154.5, posy = 115, sceneId = 0, npcName = "Già nua Thß Sinh"
 }
 local Qixi_HuaJuan_ClientList = {}
 function Qixi_HuaJuan_PreLoad()
@@ -77,23 +77,23 @@ function Qixi_HuaJuan_OnLoad()
     Qixi_HuaJuan_FoldList[4] = Qixi_HuaJuan_MF_4
 
     Qixi_HuaJuan_RewardState[1] = {
-        LightIMG = "set:QXHJ image:QXHJ_PageBtn_1_N",               --Íê³ÉÈÎÎñºóµÄ³£ÁÁÍ¼Æ¬
-        button = Qixi_HuaJuan_MF_UnfoldBtn_1,                       --Õ¹¿ª·ÖÒ³°´Å¥
-        hotpoint = Qixi_HuaJuan_MF_UnfoldBtn_1_Tips,                --·ÖÒ³°´Å¥ÉÏµÄºìµã
-        receive = Qixi_HuaJuan_MF1_Mission_1_recive,                --¶ÔÓ¦·ÖÒ³ÄÚ½±ÀøµÄÒÑÁìÈ¡¹´Ñ¡Í¼
-        receiveMask = Qixi_HuaJuan_MF1_Mission_1_reciveMask,                --¶ÔÓ¦·ÖÒ³ÄÚ½±ÀøµÄÒÑÁìÈ¡ÃÉ°æÍ¼
-        canreceive = Qixi_HuaJuan_MF1_Mission_1_RewardTips,         --¶ÔÓ¦·ÖÒ³ÄÚ½±ÀøµÄÒÑÁìÈ¡Ð§¹ûÍ¼
-        gotoButton = Qixi_HuaJuan_MF1_Mission_1_GoBtn,              --¶ÔÓ¦·ÖÒ³ÄÚÎ´Íê³ÉÈÎÎñµÄÇ°Íù°´Å¥
-        receiveButton = Qixi_HuaJuan_MF1_Mission_1_LQBtn,           --¶ÔÓ¦·ÖÒ³ÄÚÍê³ÉÈÎÎñµÄÁìÈ¡°´Å¥
-        havereceiveButton = Qixi_HuaJuan_MF1_Mission_1_Finsh        --¶ÔÓ¦·ÖÒ³ÄÚÍê³ÉÈÎÎñµÄÒÑÁìÈ¡¿Ø¼þ
+        LightIMG = "set:QXHJ image:QXHJ_PageBtn_1_N",               --??????????
+        button = Qixi_HuaJuan_MF_UnfoldBtn_1,                       --??????
+        hotpoint = Qixi_HuaJuan_MF_UnfoldBtn_1_Tips,                --????????
+        receive = Qixi_HuaJuan_MF1_Mission_1_recive,                --??????????????
+        receiveMask = Qixi_HuaJuan_MF1_Mission_1_reciveMask,                --??????????????
+        canreceive = Qixi_HuaJuan_MF1_Mission_1_RewardTips,         --??????????????
+        gotoButton = Qixi_HuaJuan_MF1_Mission_1_GoBtn,              --???????????????
+        receiveButton = Qixi_HuaJuan_MF1_Mission_1_LQBtn,           --??????????????
+        havereceiveButton = Qixi_HuaJuan_MF1_Mission_1_Finsh        --???????????????
     }
     Qixi_HuaJuan_RewardState[2] = {
         LightIMG = "set:QXHJ image:QXHJ_PageBtn_2_N",
         button = Qixi_HuaJuan_MF_UnfoldBtn_2,
-        lockButton = Qixi_HuaJuan_MF_UnfoldBtn_2_Lock,              --Î´½âËø·ÖÒ³Ê±ºòµÄËø¶¨°´Å¥
+        lockButton = Qixi_HuaJuan_MF_UnfoldBtn_2_Lock,              --????????????
         hotpoint = Qixi_HuaJuan_MF_UnfoldBtn_2_Tips,
         receive = Qixi_HuaJuan_MF2_Mission_2_recive,
-        receiveMask = Qixi_HuaJuan_MF2_Mission_2_reciveMask,                --¶ÔÓ¦·ÖÒ³ÄÚ½±ÀøµÄÒÑÁìÈ¡ÃÉ°æÍ¼
+        receiveMask = Qixi_HuaJuan_MF2_Mission_2_reciveMask,                --??????????????
         canreceive = Qixi_HuaJuan_MF2_Mission_2_RewardTips,
         gotoButton = Qixi_HuaJuan_MF2_Mission_2_GoBtn,
         receiveButton = Qixi_HuaJuan_MF2_Mission_2_LQBtn,
@@ -105,7 +105,7 @@ function Qixi_HuaJuan_OnLoad()
         lockButton = Qixi_HuaJuan_MF_UnfoldBtn_3_Lock,
         hotpoint = Qixi_HuaJuan_MF_UnfoldBtn_3_Tips,
         receive = Qixi_HuaJuan_MF3_Mission_3_recive,
-        receiveMask = Qixi_HuaJuan_MF3_Mission_3_reciveMask,                --¶ÔÓ¦·ÖÒ³ÄÚ½±ÀøµÄÒÑÁìÈ¡ÃÉ°æÍ¼
+        receiveMask = Qixi_HuaJuan_MF3_Mission_3_reciveMask,                --??????????????
         canreceive = Qixi_HuaJuan_MF3_Mission_3_RewardTips,
         gotoButton = Qixi_HuaJuan_MF3_Mission_3_GoBtn,
         receiveButton = Qixi_HuaJuan_MF3_Mission_3_LQBtn,
@@ -118,7 +118,7 @@ function Qixi_HuaJuan_OnLoad()
         lockButton = Qixi_HuaJuan_MF_UnfoldBtn_4_Lock,
         hotpoint = Qixi_HuaJuan_MF_UnfoldBtn_4_Tips,
         receive = Qixi_HuaJuan_MF4_Mission_4_recive,
-        receiveMask = Qixi_HuaJuan_MF4_Mission_4_reciveMask,                --¶ÔÓ¦·ÖÒ³ÄÚ½±ÀøµÄÒÑÁìÈ¡ÃÉ°æÍ¼
+        receiveMask = Qixi_HuaJuan_MF4_Mission_4_reciveMask,                --??????????????
         canreceive = Qixi_HuaJuan_MF4_Mission_4_RewardTips,
         gotoButton = Qixi_HuaJuan_MF4_Mission_4_GoBtn,
         receiveButton = Qixi_HuaJuan_MF4_Mission_4_LQBtn,
@@ -127,7 +127,7 @@ function Qixi_HuaJuan_OnLoad()
     Qixi_HuaJuan_RewardState[5] = {
         canreceive = Qixi_HuaJuan_MF4_Mission_4_Reward2Tips,
         receive = Qixi_HuaJuan_MF4_Mission_4_recive2,
-        receiveMask = Qixi_HuaJuan_MF4_Mission_4_reciveMask2,                --¶ÔÓ¦·ÖÒ³ÄÚ½±ÀøµÄÒÑÁìÈ¡ÃÉ°æÍ¼
+        receiveMask = Qixi_HuaJuan_MF4_Mission_4_reciveMask2,                --??????????????
     }
     Qixi_HuaJuan_IMGUnLock[1] = Qixi_HuaJuan_Mission_1_Image
     Qixi_HuaJuan_IMGUnLock[2] = Qixi_HuaJuan_Mission_2_Image
@@ -151,7 +151,7 @@ function Qixi_HuaJuan_OnEvent(event)
     if event == "UI_COMMAND" and tonumber(arg0) == g_UICOMMAND then
         --ÊÇ·ñÊÇ³¬ÌØ·þ(Ó°Ïì½±ÀøÏÔÊ¾)
         -- 1ÈÎÎñ½ø¶È
-        -- 2µ±ÌìÈÕÆÚ
+        -- 2µ±ÌìÈ ÆÚ
         g_IsOriginHj = Get_XParam_INT(0)
         g_bShowShopHotPoint = Get_XParam_INT(1)
         g_playerLevel = Get_XParam_INT(2)
@@ -193,7 +193,7 @@ function Qixi_HuaJuan_OnEvent(event)
         if (event == "UI_COMMAND" and tonumber(arg0) == g_UpdateUICOMMAND) then
             --ÊÇ·ñÊÇ³¬ÌØ·þ(Ó°Ïì½±ÀøÏÔÊ¾)
             -- 1ÈÎÎñ½ø¶È
-            -- 2µ±ÌìÈÕÆÚ
+            -- 2µ±ÌìÈ ÆÚ
             g_IsOriginHj = Get_XParam_INT(0)
             g_bShowShopHotPoint = Get_XParam_INT(1)
             g_playerLevel = Get_XParam_INT(2)
@@ -293,7 +293,7 @@ function Qixi_HuaJuan_OpenFold(index)
 end
 
 function Qixi_HuaJuan_ShowUIHuaJuan()
-    --Õ¹Ê¾ÎïÆ·
+    -- ¹Ê¾ÎïÆ·
     for i = 1, Qixi_HuaJuan_rewardNum, 1 do
         local theAction = DataPool:CreateBindActionItemForShow(Qixi_HuaJuan_Item[i].Itemid, Qixi_HuaJuan_Item[i].num)
         if theAction:GetID() ~= 0 then

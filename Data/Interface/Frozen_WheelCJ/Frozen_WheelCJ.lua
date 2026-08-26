@@ -54,7 +54,7 @@ function Frozen_WheelCJ_PreLoad()
 	
 	this:RegisterEvent("ADJEST_UI_POS",false)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("PACKAGE_ITEM_CHANGED_EX",false)
 end
 
@@ -213,7 +213,7 @@ function Frozen_WheelCJ_Update_Client1_Text()
 			Frozen_WheelCJ_RewardBtn[i]:Disable()
 			Frozen_WheelCJ_Tips[i]:Hide()
 		else
-			if g_FrozenCJCount >= g_FrozenReward_Need[i] then --可领取
+			if g_FrozenCJCount >= g_FrozenReward_Need[i] then --???
 				Frozen_WheelCJ_RewardBtnOK[i]:Hide()
 				Frozen_WheelCJ_RewardBtn[i]:Enable()
 				Frozen_WheelCJ_Tips[i]:Show()				
@@ -444,7 +444,7 @@ function Frozen_WheelCJ_GetReward(nIndex)
 		Send_XSCRIPT()	
 end
 --=========================================================
---关闭
+--关睜
 --=========================================================
 function Frozen_WheelCJ_Close()
 	this:Hide()

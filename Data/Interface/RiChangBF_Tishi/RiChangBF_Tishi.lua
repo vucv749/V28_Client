@@ -2,27 +2,27 @@ local g_RiChangBF_Tishi_Frame_UnifiedPosition
 
 local RiChangBF_Tishi_PiaoMiaotr= 
 {
-	[1] = "¹þ´ó°Ô",
-	[2] = "É£ÍÁ¹«",
-	[3] = "ÎÚÀÏ´ó",
-	[4] = "ÈÎÆ½Éú",
-	[5] = "ÀîÇïË®",
+	[1] = "Cáp ÐÕi Bá",
+	[2] = "Tang Th± Công",
+	[3] = "Ô Lão ÐÕi",
+	[4] = "Nh§m Bình Sinh",
+	[5] = "Lý Thu Thüy",
 }
 
 local RiChangBF_Tishi_QingQiutr= 
 {
-	[1] = "ÔÆ¾íÊæ",
-	[2] = "ÒÝ",
-	[3] = "°¬»¢",
-	[4] = "ÔÆÆ®Æ®",
+	[1] = "Vân Quy¬n Thß",
+	[2] = "D§t",
+	[3] = "Ngäi H±",
+	[4] = "Vân Phiêu Phiêu",
 }
 
 local RiChangBF_Tishi_WangRitr= 
 {
-	[1] = "°×ÊÀ¾µ",
-	[2] = "µ¥Õý",
-	[3] = "Ì·ÆÅ",
-	[4] = "Ðþ¿à",
+	[1] = "BÕch Thª Kính",
+	[2] = "Ð½n Chính",
+	[3] = "Ðàm Bà",
+	[4] = "Huy«n Kh±",
 }
 
 local RiChangBF_Tishi_BOSSStr= 
@@ -34,11 +34,11 @@ local RiChangBF_Tishi_BOSSStr=
 
 local RiChangBF_Tishi_ErrorStr= 
 {
-	[1] = "1ºÅBOSS",
-	[2] = "2ºÅBOSS",
-	[3] = "3ºÅBOSS",
-	[4] = "4ºÅBOSS",
-	[5] = "5ºÅBOSS",
+	[1] = "1Hào BOSS",
+	[2] = "2Hào BOSS",
+	[3] = "3Hào BOSS",
+	[4] = "4Hào BOSS",
+	[5] = "5Hào BOSS",
 }
 
 function RiChangBF_Tishi_PreLoad()

@@ -74,23 +74,23 @@ function DoublePlay_Over_OnEvent(event)
 
 	if ( event == "UI_COMMAND" and tonumber(arg0) == 99829706) then		
 		-----------界面数据---------------
-		local RankData1  = Get_XParam_INT(0) --队伍名字
-		local RankData2  = Get_XParam_INT(1) --排名情况
+		local RankData1  = Get_XParam_INT(0) --????
+		local RankData2  = Get_XParam_INT(1) --????
 
-		g_DoublePlay_Over_PlayName[1]  = Get_XParam_STR(0) --玩家名字11
-		g_DoublePlay_Over_PlayName[2]  = Get_XParam_STR(1) --玩家名字12
-		g_DoublePlay_Over_PlayName[3]  = Get_XParam_STR(2) --玩家名字21
-		g_DoublePlay_Over_PlayName[4]  = Get_XParam_STR(3) --玩家名字22
-		g_DoublePlay_Over_PlayName[5]  = Get_XParam_STR(4) --玩家名字31
-		g_DoublePlay_Over_PlayName[6]  = Get_XParam_STR(5) --玩家名字32
-		g_DoublePlay_Over_PlayName[7]  = Get_XParam_STR(6) --玩家名字41
-		g_DoublePlay_Over_PlayName[8]  = Get_XParam_STR(7) --玩家名字42
-		g_DoublePlay_Over_PlayName[9]  = Get_XParam_STR(8) --玩家名字51
-		g_DoublePlay_Over_PlayName[10] = Get_XParam_STR(9) --玩家名字52
+		g_DoublePlay_Over_PlayName[1]  = Get_XParam_STR(0) --????11
+		g_DoublePlay_Over_PlayName[2]  = Get_XParam_STR(1) --????12
+		g_DoublePlay_Over_PlayName[3]  = Get_XParam_STR(2) --????21
+		g_DoublePlay_Over_PlayName[4]  = Get_XParam_STR(3) --????22
+		g_DoublePlay_Over_PlayName[5]  = Get_XParam_STR(4) --????31
+		g_DoublePlay_Over_PlayName[6]  = Get_XParam_STR(5) --????32
+		g_DoublePlay_Over_PlayName[7]  = Get_XParam_STR(6) --????41
+		g_DoublePlay_Over_PlayName[8]  = Get_XParam_STR(7) --????42
+		g_DoublePlay_Over_PlayName[9]  = Get_XParam_STR(8) --????51
+		g_DoublePlay_Over_PlayName[10] = Get_XParam_STR(9) --????52
 
 		--界面信息
 		DoublePlay_Over_SetTeamData(RankData1,RankData2)
-		--姓名
+		--袪名
 		DoublePlay_Over_SetNameData(g_DoublePlay_Over_PlayName)
 
         this:Show()

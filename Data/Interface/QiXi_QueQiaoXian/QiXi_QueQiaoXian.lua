@@ -10,15 +10,15 @@ local g_objID = -1
 local MAX_OBJ_DISTANCE = 3.0
 
 --OnLoadÊı¾İ
-local QiXi_Bridge_Disabled = {} --1X8¸ñ×Ó Î´½âËø
-local QiXi_Bridge_Normal = {} --1X8¸ñ×Ó ÆÕÍ¨Äñ
-local QiXi_Bridge_Advanced = {} --1X8¸ñ×Ó ¸ß¼¶Äñ
-local QiXi_Bridge_Advanced_Animate = {} --1X8¸ñ×Ó ¸ß¼¶Äñ ¶¯»­
-local QiXi_QueQiaoXian_EXP_Animate = {} --ÌØĞ§±©»÷
+local QiXi_Bridge_Disabled = {} --1X8?? ???
+local QiXi_Bridge_Normal = {} --1X8?? ???
+local QiXi_Bridge_Advanced = {} --1X8?? ???
+local QiXi_Bridge_Advanced_Animate = {} --1X8?? ??? ??
+local QiXi_QueQiaoXian_EXP_Animate = {} --????
 
-local QiXi_QueQiaoXian_Award_Kuang  = {} --½±Àø¿ò¿ò
-local QiXi_QueQiaoXian_Award_Animate = {} --½±Àø¶¯»­
-local QiXi_QueQiaoXian_Award_OK = {} --½±ÀøOK
+local QiXi_QueQiaoXian_Award_Kuang  = {} --????
+local QiXi_QueQiaoXian_Award_Animate = {} --????
+local QiXi_QueQiaoXian_Award_OK = {} --??OK
 
 function QiXi_QueQiaoXian_PreLoad()
     this:RegisterEvent("UI_COMMAND",true)
@@ -41,7 +41,7 @@ function QiXi_QueQiaoXian_OnLoad()
     QiXi_Bridge_Disabled[7]	= QiXi_QueQiaoXian_Bridge7_Disabled
     QiXi_Bridge_Disabled[8]	= QiXi_QueQiaoXian_Bridge8_Disabled
 
-    --1X8¸ñ×Ó ÆÕÍ¨Äñ
+    --1X8¸ñ×Ó Æ Í¨Äñ
 	QiXi_Bridge_Normal[1]	= QiXi_QueQiaoXian_Bridge1_Normal
 	QiXi_Bridge_Normal[2]	= QiXi_QueQiaoXian_Bridge2_Normal
 	QiXi_Bridge_Normal[3]	= QiXi_QueQiaoXian_Bridge3_Normal
@@ -130,16 +130,16 @@ function QiXi_QueQiaoXian_OnEvent(event)
 
             g_objCared = DataPool : GetNPCIDByServerID(tonumber(g_objID))
             if g_objCared == -1 then
-                PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£")
+                PushDebugMessage("Dæ li®u máy chü có v¤n ğ«")
                 return
             end
             if nil ~= g_objCared and g_objCared > 0 then
                 this:CareObject(g_objCared, 1, "QiXi_QueQiaoXian")
             end
 
-            -- 1Ã¿ÈÕÁìÈ¡´ÎÊı
+            -- 1Ã¿È ÁìÈ¡´ÎÊı
             -- 2Ï¡ÓĞÉ«¿éÊıÁ¿
-            -- 3ÆÕÍ¨É«¿éÊıÁ¿
+            -- 3Æ Í¨É«¿éÊıÁ¿
             -- 4ÒÑ´î½¨½ø¶ÈÌõ -12345678
             -- 5ÒÑÁìÈ¡½±Àø + ½ø¶ÈÌõ½ø¶È 12
             local QXQQ_1 = Get_XParam_INT(1)
@@ -164,7 +164,7 @@ function QiXi_QueQiaoXian_OnEvent(event)
 			return
         end
         
-		-- Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		-- Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
         if(arg1 == "distance" and tonumber(arg2) > MAX_OBJ_DISTANCE or arg1=="destroy") then
             QiXi_QueQiaoXian_Close()
         end
@@ -192,9 +192,9 @@ function QiXi_QueQiaoXian_Award(Num)
     Send_XSCRIPT()
 end
 
---ÆÕÍ¨´î½¨
+--Æ Í¨´î½¨
 function QiXi_QueQiaoXian_Normal_Clicked()
-    --ÆÕÍ¨´î½¨
+    --Æ Í¨´î½¨
     Clear_XSCRIPT()
         Set_XSCRIPT_ScriptID(891161)
         Set_XSCRIPT_Function_Name("DaJian")
@@ -217,9 +217,9 @@ function QiXi_QueQiaoXian_Advanced_Clicked()
 end
 
 --´ò¿ª½çÃæ
--- 1Ã¿ÈÕÁìÈ¡´ÎÊı
+-- 1Ã¿È ÁìÈ¡´ÎÊı
 -- 2Ï¡ÓĞÉ«¿éÊıÁ¿
--- 3ÆÕÍ¨É«¿éÊıÁ¿
+-- 3Æ Í¨É«¿éÊıÁ¿
 -- 4ÒÑ´î½¨½ø¶ÈÌõ -12345678
 -- 5ÒÑÁìÈ¡½±Àø + ½ø¶ÈÌõ½ø¶È 12
 function QiXi_QueQiaoXian_Open(table1,table2,table3,table4,table5,table6,table7,table8)
@@ -240,8 +240,8 @@ end
 --num2 ÒÑÁìÈ¡½±Àø + ½ø¶ÈÌõ½ø¶È 12
 function QiXi_QueQiaoXian_SetJinDuTiao(num1,num2,num3)
     
-    local JiangLi    = math.floor(math.mod(num2/10,10)) --Ê®Î» ÒÑÁìÈ¡½±Àø
-    local JinDuTiao  = math.floor(math.mod(num2/1,10))  --¸öÎ» ½ø¶ÈÌõ½ø¶È
+    local JiangLi    = math.floor(math.mod(num2/10,10)) --?? ?????
+    local JinDuTiao  = math.floor(math.mod(num2/1,10))  --?? ?????
 
     --ÒÑÁìÈ¡½±Àø
     QiXi_QueQiaoXian_LinQuPrize(JiangLi,JinDuTiao)
@@ -251,7 +251,7 @@ function QiXi_QueQiaoXian_SetJinDuTiao(num1,num2,num3)
 
 end
 
---ÉèÖÃÊ£Óà¸¡½×ÊıÁ¿ 2Ï¡ÓĞÉ«¿éÊıÁ¿ 3ÆÕÍ¨É«¿éÊıÁ¿
+--ÉèÖÃÊ£Óà¸¡½×ÊıÁ¿ 2Ï¡ÓĞÉ«¿éÊıÁ¿ 3Æ Í¨É«¿éÊıÁ¿
 function QiXi_QueQiaoXian_SetFuJie(num2,num3)
     --ÏËÔÆÈµÊ£ÓàÊıÁ¿£º%s0 --PT
     QiXi_QueQiaoXian_NormalToken:SetText(ScriptGlobal_Format("#{QXWH_20210616_89}",num3))
@@ -308,7 +308,7 @@ function QiXi_QueQiaoXian_JinDuTiao(num1,num2,num3)
     for i = 1, 8 do
 
         if i <= num1 then
-            local RanSe = math.floor(math.mod(num2/fenmu[i],10)) --Ê®Î»
+            local RanSe = math.floor(math.mod(num2/fenmu[i],10)) --??
             if RanSe == 2 then
                 --Ö»ÓĞÊÇ´î½¨´ò¿ªÇĞÊÇ×îºóÒ»¸öµÄÊ±ºò
                 if num3 == 1 and i == num1 then
@@ -329,7 +329,7 @@ function QiXi_QueQiaoXian_JinDuTiao(num1,num2,num3)
                     QiXi_Bridge_Advanced_Animate[i]:Play(false)
                 end
             else
-                --ÆÕÍ¨Äñ
+                --Æ Í¨Äñ
                 QiXi_Bridge_Disabled[i]:Hide()
                 QiXi_Bridge_Normal[i]:Show()
                 QiXi_Bridge_Advanced[i]:Hide()

@@ -1,15 +1,15 @@
--- 6V6 战队排行榜
+-- 6V6 牻队排行榜
 -- 默认位置
 local g_HuaShanLunJian_TopList2_UnifiedPosition = nil
 local g_HuaShanLunJian_TopList2_UICommandShow = 89289599
 local g_HuaShanLunJian_TopList2_SvrScriptId = 892891
 local g_HuaShanLunJian_TopList2_CareObjId = -1
 local g_HuaShanLunJian_TopList2_CareObjSvrId = -1
--- 锁定战队榜标记
+-- 锁定牻队榜标记
 local g_HuaShanLunJian_TopList2_LockedTeamFlag = 0
--- 切换普通榜还是锁定战队榜操作CD时间（秒）
+-- 切换茽通榜还是锁定牻队榜操作CD时间（秒）
 local g_HuaShanLunJian_TopList2_ChangeRankOpMinTime = 5
--- 上一次切换普通榜还是锁定战队榜的操作时间
+-- 上一次切换茽通榜还是锁定牻队榜的操作时间
 local g_HuaShanLunJian_TopList2_LastChangeRankOpTime = 0
 
 -- 初始化
@@ -27,9 +27,9 @@ local g_ui_sel_TabBtnList = {}
 local g_TeamRankStage = {
 	null = -1,		
 	begin = 0,		
-	yingyang = 1,	-- 鹰扬（1 - 69）
-	huxiao = 2,		-- 虎啸（70 - 89）
-	longwei = 3,	-- 龙威（90 - 119）
+	yingyang = 1,	-- ??(1 - 69)
+	huxiao = 2,		-- ??(70 - 89)
+	longwei = 3,	-- ??(90 - 119)
 	max = 4,		
 }
 
@@ -43,8 +43,8 @@ function HuaShanLunJian_TopList2_PreLoad()
     this:RegisterEvent("UI_COMMAND", true)
     this:RegisterEvent("XBW_TEAMRANK_UPDATE", true)
     this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)
-    this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-    this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+    this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+    this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end
 
 function HuaShanLunJian_TopList2_OnEvent(event)
@@ -81,14 +81,14 @@ end
 
 function HuaShanLunJian_TopList2_Show(isLockedTeam)
     if (isLockedTeam ~= nil and isLockedTeam > 0) then
-        -- 锁定战队榜
+        -- 锁定牻队榜
         HuaShanLunJian_TopList2_Buttontab01:SetCheck(1)
         HuaShanLunJian_TopList2_Buttontab02:SetCheck(0)
         HuaShanLunJian_TopList2_Buttontab03:SetCheck(0)
 
         g_HuaShanLunJian_TopList2_LockedTeamFlag = 1
     else
-        -- 普通榜（非所动战队榜）
+        -- 茽通榜（非所动牻队榜）
         HuaShanLunJian_TopList2_Buttontab01:SetCheck(0)
         HuaShanLunJian_TopList2_Buttontab02:SetCheck(1)
         HuaShanLunJian_TopList2_Buttontab03:SetCheck(0)
@@ -110,13 +110,13 @@ function HuaShanLunJian_TopList2_Show(isLockedTeam)
 	local beginYear, beginMonth, beginDay = HuaShanLunJian_LockTeam_GetYMDByDate(lockBegin)
     local endYear, endMonth, endDay = HuaShanLunJian_LockTeam_GetYMDByDate(lockEnd)
     if (g_HuaShanLunJian_TopList2_LockedTeamFlag == 1) then
-        -- 锁定战队榜
+        -- 锁定牻队榜
         HuaShanLunJian_TopList2_DragTitle:SetText("#{HSPH_191120_62}")
 
         local msg = ScriptGlobal_Format("#{HSPH_191120_63}", beginYear, beginMonth, beginDay, endMonth, endDay)
         HuaShanLunJian_TopList2_TextInfo:SetText(msg)
     else
-        -- 普通榜（非所动战队榜）
+        -- 茽通榜（非所动牻队榜）
         HuaShanLunJian_TopList2_DragTitle:SetText("#{HSPH_191120_08}")
         
         local msg = ScriptGlobal_Format("#{HSPH_191120_65}", beginYear, beginMonth, beginDay, endMonth, endDay)
@@ -154,13 +154,13 @@ function HuaShanLunJian_TopList2_ResetUIInfo()
 	local beginYear, beginMonth, beginDay = HuaShanLunJian_LockTeam_GetYMDByDate(lockBegin)
     local endYear, endMonth, endDay = HuaShanLunJian_LockTeam_GetYMDByDate(lockEnd)
     if (g_HuaShanLunJian_TopList2_LockedTeamFlag == 1) then
-        -- 锁定战队榜
+        -- 锁定牻队榜
         HuaShanLunJian_TopList2_DragTitle:SetText("#{HSPH_191120_62}")
 
         local msg = ScriptGlobal_Format("#{HSPH_191120_63}", beginYear, beginMonth, beginDay, endMonth, endDay)
         HuaShanLunJian_TopList2_TextInfo:SetText(msg)
     else
-        -- 普通榜（非所动战队榜）
+        -- 茽通榜（非所动牻队榜）
         HuaShanLunJian_TopList2_DragTitle:SetText("#{HSPH_191120_08}")
         
         local msg = ScriptGlobal_Format("#{HSPH_191120_65}", beginYear, beginMonth, beginDay, endMonth, endDay)
@@ -293,7 +293,7 @@ function HuaShanLunJian_TopList2_SetItem(index, max_count)
     if rankScore ~= nil then
         rankScore:SetText("#cfff263"..data.star)
     end
-    -- 战队名字
+    -- 牻队名字
     local rankName = bar:GetSubItem("HuaShanLunJian_TopList2_Name")
     if rankName ~= nil then
         rankName:SetText("#cfff263"..data.name)
@@ -349,10 +349,10 @@ function HuaShanLunJian_TopList2_Hide()
     end
 end
 
--- 普通榜还是锁定战队榜页签点击事件
+-- 茽通榜还是锁定牻队榜页签点击事件
 function HuaShanLunJian_TopList2_ChangeTopList(nIndex)
     if (nIndex == 0) then
-        -- 锁定战队榜
+        -- 锁定牻队榜
         if (g_HuaShanLunJian_TopList2_LockedTeamFlag > 0) then
             HuaShanLunJian_TopList2_Buttontab01:SetCheck(1)
             HuaShanLunJian_TopList2_Buttontab02:SetCheck(0)
@@ -394,7 +394,7 @@ function HuaShanLunJian_TopList2_ChangeTopList(nIndex)
             Set_XSCRIPT_ParamCount(3)
         Send_XSCRIPT()
     elseif (nIndex == 1) then
-        -- 普通榜
+        -- 茽通榜
         if (g_HuaShanLunJian_TopList2_LockedTeamFlag <= 0) then
             HuaShanLunJian_TopList2_Buttontab01:SetCheck(0)
             HuaShanLunJian_TopList2_Buttontab02:SetCheck(1)
@@ -439,7 +439,7 @@ function HuaShanLunJian_TopList2_ChangeTopList(nIndex)
         HuaShanLunJian_TopList2_SavePosition()
         PushEvent("XBW_RANKLIST3_OPEN", g_HuaShanLunJian_TopList2_CareObjSvrId)
     else
-        -- 按说不应该到这里的
+        -- 按说不应该到犫里的
     
     end
 end -- end func HuaShanLunJian_TopList2_ChangeTopList()

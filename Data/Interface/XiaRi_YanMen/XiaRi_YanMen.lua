@@ -32,7 +32,7 @@ local g_tableMissionInfo	=
 
 -- local g_tableMissionInfoEx =
 -- {
--- 	[5] = {strShowMsg = "#{XHSYM_20220426_145}", strInfoMsg = "#{XHSYM_20220426_157}"	}, --策划临时起兴，想让任务5阶段界面根据日期显示不同内容 7.12-7.13 显示这个
+-- 	[5] = {strShowMsg = "#{XHSYM_20220426_145}", strInfoMsg = "#{XHSYM_20220426_157}"	}, --策划临时起兴，想让任务5阶段界面根据葼期显示不同内容 7.12-7.13 显示犫个
 -- }
 
 -- local g_tableAutoRunInfo	= 
@@ -93,10 +93,10 @@ end
 --=========================================================
 function XiaRi_YanMen_OnEvent(event)
 	if ( event == "UI_COMMAND" and tonumber(arg0) == g_nUICommandID ) then
-		-- 0 关闭, 1 打开, 2 刷新, 3 二次确认框
+		-- 0 关睜, 1 打开, 2 刷新, 3 二次确认框
 		local nOpType 	= Get_XParam_INT(0)
 
-		-- 关闭界面
+		-- 关睜界面
 		if 0 == nOpType then	
 			if this:IsVisible() then
 				XiaRi_YanMen_OnClose()
@@ -119,7 +119,7 @@ function XiaRi_YanMen_OnEvent(event)
 			end
 
 			-- 显示界面
-			-- 为了解决界面被遮挡的问题，先把界面关了
+			-- 为了解决界面被犣挡的问题，先把界面关了
 			-- if this:IsVisible() then
 			-- 	XiaRi_YanMen_OnClose()
 			-- end
@@ -163,9 +163,9 @@ function XiaRi_YanMen_OnEvent(event)
 		if(tonumber(arg0) ~= g_nObjCaredIDClient) then
 			return
 		end
-		-- 如果和NPC的距离大于一定距离或者被删除，自动关闭
+		-- 如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
-			-- 关闭界面
+			-- 关睜界面
 			XiaRi_YanMen_OnClose()
 		end	
 
@@ -407,7 +407,7 @@ function XiaRi_YanMen_Reset()
 end
 
 --=========================================================
--- 关闭界面
+-- 关睜界面
 --=========================================================
 function XiaRi_YanMen_OnClose()	
 	this:Hide()

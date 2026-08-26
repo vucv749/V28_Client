@@ -5,26 +5,26 @@
 --******************************************************************************
 
 -- °´Å¥
-local g_Action_Buttons = {}									-- µ¥ÈËÐÝÏÐ¶¯×÷°´Å¥
-local g_Double_Action_Buttons	= {}					-- Ë«ÈËÐÝÏÐ¶¯×÷°´Å¥
-local ACTION_BUTTON_NUMBERS		= 25					-- Ã¿Ò³×î¶àÓÐ¶àÉÙ¸ö°´Å¥
-local ACTION_BUTTON_NUMBERS_NORMAL		= 23					-- µ¥ÈËÐÝÏÐ¶¯×÷Ò³ÊýÁ¿
-local g_curButton							= 0						-- µ±Ç°°´ÏÂµÄ°´Å¥Î»ÖÃ
+local g_Action_Buttons = {}									-- ????????
+local g_Double_Action_Buttons	= {}					-- ????????
+local ACTION_BUTTON_NUMBERS		= 25					-- ??????????
+local ACTION_BUTTON_NUMBERS_NORMAL		= 23					-- ?????????
+local g_curButton							= 0						-- ?????????
 
 -- ·ÖÒ³
-local g_PageTabs							= {}					-- ·ÖÒ³±êÇ©
-local g_curPage								= 1						-- µ±Ç°Ñ¡ÔñµÄÒ³Ãæ
-local MIX_DOUBLE_ACTION_PAGE	= 4						-- ¸¶·ÑÐÝÏÐ¶¯×÷µÄ×îÐ¡Ò³Âë
-local MAX_PAGE_NUMBER					= 7						-- Ò»¹²ÓÐ¶àÉÙÒ³
+local g_PageTabs							= {}					-- ????
+local g_curPage								= 1						-- ???????
+local MIX_DOUBLE_ACTION_PAGE	= 4						-- ???????????
+local MAX_PAGE_NUMBER					= 7						-- ??????
 
-local g_Type_SingleDouble = {}	--¼ÇÂ¼µ±Ç°pageÃ¿Ò»¸ñÊÇµ¥ÈË¶¯×÷»¹ÊÇË«ÈË¶¯×÷ 0ÎÞ 1µ¥ 2Ë«
+local g_Type_SingleDouble = {}	--????page?????????????? 0? 1? 2?
 
 
 function Action_PreLoad()
 	this:RegisterEvent("CHAT_ACT_SELECT")
 	this:RegisterEvent("CHAT_ADJUST_MOVE_CTL")
-	this:RegisterEvent("CHAT_ACCEPT_DOUBLE_ACTION")						-- ´ÓAction½çÃæÉÏ°´Ë«ÈË¶¯×÷
-	this:RegisterEvent("CHAT_ACCEPT_DOUBLE_ACTION_BAR")				-- ´ÓMainMenuBarÏà¹Ø½çÃæÉÏ°´Ë«ÈË¶¯×÷
+	this:RegisterEvent("CHAT_ACCEPT_DOUBLE_ACTION")						-- ?Action????????
+	this:RegisterEvent("CHAT_ACCEPT_DOUBLE_ACTION_BAR")				-- ?MainMenuBar??????????
 	--this:RegisterEvent("CHAT_ACCEPT_DOUBLE_ACTION_STRING")		-- ´ÓÁÄÌìÀ¸ÊäÈë×Ö·û´®±íÊ¾Ë«ÈË¶¯×÷
 end
 
@@ -99,21 +99,21 @@ function Action_OnShow(pos)
 	Action_Page_Switch(g_curPage);
 	
 	-- ÉèÖÃ¸÷¸ö¶¯×÷·ÖÒ³µÄTips
-	g_PageTabs[1] : SetToolTip("#{SRDZ_20221107_14}")																					-- "ÐÝÏÐ¶¯×÷"
-	g_PageTabs[2] : SetToolTip("#{SRDZ_20221107_15}")																					-- "Ë«ÈË¶¯×÷"
-	g_PageTabs[3] : SetToolTip("#{SZDZ_231110_01}")																					-- "Ë«ÈË¶¯×÷"
+	g_PageTabs[1] : SetToolTip("#{SRDZ_20221107_14}")																					-- "Hßu nhàn ðµng tác"
+	g_PageTabs[2] : SetToolTip("#{SRDZ_20221107_15}")																					-- "Song Nhân ðµng tác"
+	g_PageTabs[3] : SetToolTip("#{SZDZ_231110_01}")																					-- "Song Nhân ðµng tác"
 	for i = 0 ,3 do
 		local actionID, actionValidDate, actionCount, actionMinIndex, actionType = DataPool : Get_RMB_ChatActionInfo(i)
 		local actionName = DataPool : Get_RMB_ChatActionName(actionID)
 		if actionID > 0 then
 			local actionHour = DataPool : Get_RMB_ChatActionValidHour(i)
 			if (actionHour >= 0) then
-				g_PageTabs[i+MIX_DOUBLE_ACTION_PAGE] : SetToolTip(tostring(actionName).."#r"..tostring(actionValidDate))		-- ¶¯×÷°üÃû#rÓÐÐ§ÆÚ
+				g_PageTabs[i+MIX_DOUBLE_ACTION_PAGE] : SetToolTip(tostring(actionName).."#r"..tostring(actionValidDate))		-- ????#r???
 			else
-				g_PageTabs[i+MIX_DOUBLE_ACTION_PAGE] : SetToolTip(tostring(actionName).."#r#{SRDZ_20221107_12}")									-- ¶¯×÷°üÃû#rÓÀ¾ÃÓÐÐ§
+				g_PageTabs[i+MIX_DOUBLE_ACTION_PAGE] : SetToolTip(tostring(actionName).."#r#{SRDZ_20221107_12}")									-- ????#r????
 			end
 		else
-			g_PageTabs[i+MIX_DOUBLE_ACTION_PAGE] : SetToolTip("#{SRDZ_20221107_16}")																						-- Î´°²×°
+			g_PageTabs[i+MIX_DOUBLE_ACTION_PAGE] : SetToolTip("#{SRDZ_20221107_16}")																						-- ???
 		end
 	end
 
@@ -144,9 +144,9 @@ function Action_OnHide()
 		g_Double_Action_Buttons[i] : Hide();
 	end
 	
-	Action_DragTitle : SetText("")								-- ±êÌâ
-	Action_Uninstall : Hide()											-- Òþ²Ø¡°Ð¶ÔØ¡±°´Å¥
-	Action_Time : Hide()													-- Òþ²Ø¼ÆÊ±Æ÷	
+	Action_DragTitle : SetText("")								-- ??
+	Action_Uninstall : Hide()											-- ??“??”??
+	Action_Time : Hide()													-- ?????	
 
 	this : Hide();
 end
@@ -188,10 +188,10 @@ function Action_Button_Show(pageNum)
 	end
 	
 	Action_DragTitle	: SetText("")
-	Action_Uninstall	: Hide()											-- Òþ²Ø¡°Ð¶ÔØ¡±°´Å¥
-	Action_Time				: Hide()											-- Òþ²Ø¼ÆÊ±Æ÷
+	Action_Uninstall	: Hide()											-- ??“??”??
+	Action_Time				: Hide()											-- ?????
 	
-	-- ÆÕÍ¨ÐÝÏÐ¶¯×÷
+	-- Æ Í¨ÐÝÏÐ¶¯×÷
 	if (tonumber(pageNum) == 1) then		
 
 		for i = 1, ACTION_BUTTON_NUMBERS_NORMAL do
@@ -213,7 +213,7 @@ function Action_Button_Show(pageNum)
 			g_Action_Buttons[i] : Show();	
 		end
   
-		Action_DragTitle	: SetText("#{SRDZ_20221107_14}")		-- ±êÌâ£º"ÐÝÏÐ¶¯×÷"		
+		Action_DragTitle	: SetText("#{SRDZ_20221107_14}")		-- ??:"Hßu nhàn ðµng tác"		
 
 	-- ¹Ì¶¨Ë«ÈËÐÝÏÐ¶¯×÷
 	elseif (tonumber(pageNum) == 2) then		
@@ -236,7 +236,7 @@ function Action_Button_Show(pageNum)
 			g_Double_Action_Buttons[i] : Show();			
 		end
   
-		Action_DragTitle	: SetText("#{SRDZ_20221107_15}")		-- ±êÌâ£º"Ë«ÈË¶¯×÷"		
+		Action_DragTitle	: SetText("#{SRDZ_20221107_15}")		-- ??:"Song Nhân ðµng tác"		
  	-- Ê±×°+»ÃÊÎÎäÆ÷¶¯×÷
 	elseif (tonumber(pageNum) == 3) then	
 		local nAddIndex = 0
@@ -292,7 +292,7 @@ function Action_Button_Show(pageNum)
 			g_Double_Action_Buttons[i] : Show();	
 		end
 
-		Action_DragTitle	: SetText("#{SZDZ_231110_01}")		-- ±êÌâ£º"Ê±×°¶¯×÷"	
+		Action_DragTitle	: SetText("#{SZDZ_231110_01}")		-- ??:"Trang phøc m¯t ðµng tác"	
 	-- ¸¶·ÑË«ÈËÐÝÏÐ¶¯×÷
 	else
 	
@@ -359,11 +359,11 @@ function Action_Button_Show(pageNum)
 			-- ÏÔÊ¾¼ÆÊ±Æ÷			
 			local actionHour = DataPool : Get_RMB_ChatActionValidHour(pageNum - MIX_DOUBLE_ACTION_PAGE)
 			if actionHour >=0 and actionHour < 24 then
-				Action_Frame_TimeText : SetText("#cff0000#{BQB_XML_3}"..tostring(actionHour).."#{BQB_XML_16}");						-- Ê£ÓàÊ±¼ä£ºXXÐ¡Ê±																					-- Ê£ÓàÊ±¼ä£ºXXÐ¡Ê±
+				Action_Frame_TimeText : SetText("#cff0000#{BQB_XML_3}"..tostring(actionHour).."#{BQB_XML_16}");						-- ????:XX??																					-- ????:XX??
 			elseif actionHour >= 24 then				
-				Action_Frame_TimeText : SetText("#G#{BQB_XML_3}"..tostring(math.floor(actionHour/24)).."#{BQB_XML_15}");	-- Ê£ÓàÊ±¼ä£ºxxÌì																					-- Ê£ÓàÊ±¼ä£ºXXÌì
+				Action_Frame_TimeText : SetText("#G#{BQB_XML_3}"..tostring(math.floor(actionHour/24)).."#{BQB_XML_15}");	-- ????:xx?																					-- ????:XX?
 			else
-				Action_Frame_TimeText : SetText("#G#{SRDZ_20221107_12}");																											-- ÓÀ¾ÃÓÐÐ§
+				Action_Frame_TimeText : SetText("#G#{SRDZ_20221107_12}");																											-- ????
 			end
 			Action_Time : Show()
 			
@@ -372,9 +372,9 @@ function Action_Button_Show(pageNum)
  
 		else			
 			-- µ±Ç°Ò³Î´°²×°¶¯×÷°ü
-			Action_DragTitle	: SetText("#{SRDZ_20221107_16}")		-- Î´°²×°
-			Action_Uninstall	: Hide()											-- Òþ²Ø¡°Ð¶ÔØ¡±°´Å¥
-			Action_Time				: Hide()											-- Òþ²Ø¼ÆÊ±Æ÷			
+			Action_DragTitle	: SetText("#{SRDZ_20221107_16}")		-- ???
+			Action_Uninstall	: Hide()											-- ??“??”??
+			Action_Time				: Hide()											-- ?????			
 		end
   
 	end
@@ -462,7 +462,7 @@ function Action_DoDoubleAction(bEnable, talker)
 		return
 	end
 
-	-- ÕÒ²»µ½Ëµ»°Õß
+	--  Ò²»µ½Ëµ»° ß
 	if (talker == "") then
 		return
 	end
@@ -510,7 +510,7 @@ function Action_DoDoubleAction(bEnable, talker)
 				return
 			end
 			
-			local realIndex = actionMinIndex + g_curButton - 2;							-- ÔÚÕû¸öË«ÈË¶¯×÷Ë÷Òý±íÖÐµÄÎ»ÖÃ	
+			local realIndex = actionMinIndex + g_curButton - 2;							-- ??????????????	
 			local bValid = Talk : IsValidChatActionByIndex(realIndex);
 			if (bValid == 1) then
 				local theAction = Talk : EnumDoubleChatMood(realIndex);
@@ -529,12 +529,12 @@ end
 --************************************************
 function Action_DoDoubleAction_Bar(bEnable, pos, talker)
 
-	-- pos ÊÇ°´Å¥ÔÚÕû¸öË«ÈË¶¯×÷±íÊý×éÖÐµÄÎ»ÖÃ
+	-- pos ÊÇ°´Å¥ÔÚ û¸öË«ÈË¶¯×÷±íÊý×éÖÐµÄÎ»ÖÃ
 	if (pos < 0) then
 		return
 	end
 
-	-- ÕÒ²»µ½Ëµ»°Õß
+	--  Ò²»µ½Ëµ»° ß
 	if (talker == "") then
 		return
 	end
@@ -554,7 +554,7 @@ function Action_DoDoubleAction_Bar(bEnable, pos, talker)
 				Talk : DoDoubleActionByIndex(pos);
 			end
 		else
-			PushDebugMessage("²âÊÔÓÃ£¬ÎÞÐ§µÄ°´Å¥")
+			PushDebugMessage("Thí nghi®m Døng, không có hi®u quä Ðích cái nút")
 		end	
 	end
 
@@ -571,7 +571,7 @@ function Action_Uninstall_Click()
 	
 	-- ¼ì²â°²È«Ê±¼ä
 	if tonumber(DataPool:GetLeftProtectTime()) > 0 then
-		PushDebugMessage("°²È«Ê±¼äÄÚ²»ÄÜÐ¶ÔØÐÝÏÐ¶¯×÷°ü¡£")     						-- "°²È«Ê±¼äÄÚ²»ÄÜÐ¶ÔØÐÝÏÐ¶¯×÷°ü"
+		PushDebugMessage("An toàn th¶i gian Nµi không th¬ tháo dÞ hßu nhàn ðµng tác Bao.")     						-- "An toàn th¶i gian Nµi không th¬ tháo dÞ hßu nhàn ðµng tác Bao"
 		return
 	end
 	

@@ -3,10 +3,10 @@ local g_Frozen_XQHC_Goto_Frame_UnifiedYPosition
 
 local g_Rand_MainCity =
 {
-	[1] = {PosX = 218, PosZ = 129, Scene = 728, Name = "范小彪"}, --冰雪主场景
+	[1] = {PosX = 218, PosZ = 129, Scene = 728, Name = "Ph誱 Ti瑄 B遳"}, --?????
 }
 
---预加载函数，可以而且只能在这里注册脚本关心的事件
+--预加载函数，可以而且只能在犫里注册脚本关心的事件
 function Frozen_XQHC_Goto_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
 	-- 游戏窗口尺寸发生了变化

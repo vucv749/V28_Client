@@ -1,23 +1,23 @@
 -- ÀŒ¡…≥∆∫≈¡Ï»°ΩÁ√Ê
 
 local g_objCared 		= -1
-local g_Title_Index = 0					-- µ±«∞ø…“‘¡Ï»°≥∆∫≈µƒÀ˜“˝
-local g_UI_Title_MAX = 7				-- ƒø«∞¡Ï»°µƒ≥∆∫≈◊Ó¥Û ˝¡ø
+local g_Title_Index = 0					-- ???????????
+local g_UI_Title_MAX = 7				-- ???????????
 local g_UI_Command_ID = 50202301			-- UICommandID
-local g_UI_RewardStart = 1				-- Ω±¿¯≤Œ ˝µƒ∆‰ µŒª÷√
+local g_UI_RewardStart = 1				-- ?????????
 
 
-local g_TitleID_List = {}				-- ≥∆∫≈¡–±Ì
-local g_RewardType = {}					-- Ω±¿¯¿‡–Õ
-local g_UI_Name_List = {}				-- list÷–Item√˚≥∆
-local g_UI_Title_List = {}				-- œ¬¿≠¡–±ÌºØ∫œ
-local g_TitleNeed_List = {}				-- ¡Ï»°≥∆∫≈∂‘”¶µƒœ˚∫ƒ
-local g_UI_Control_List = {}			-- UIøÿ÷∆ΩÁ√Êƒ⁄»›
+local g_TitleID_List = {}				-- ????
+local g_RewardType = {}					-- ????
+local g_UI_Name_List = {}				-- list?Item??
+local g_UI_Title_List = {}				-- ??????
+local g_TitleNeed_List = {}				-- ?????????
+local g_UI_Control_List = {}			-- UI??????
 local g_UI_Command_EventList = {}		-- UICommand
 
-local g_data_list = {}					--  ˝æ›ª∫¥Ê
+local g_data_list = {}					-- ????
 
-local g_Frame_UnifiedPosition = nil		-- ∑÷±Ê¬ ±‰ªØ∏˙◊Ÿ ˝÷µ
+local g_Frame_UnifiedPosition = nil		-- ?????????
 
 local g_UI_Title_Icon = "set:TaskTools05 image:TaskTools05_2"
 
@@ -39,12 +39,12 @@ function RongYuTitle_OnLoad()
 		{39920084,1034,1},{39920085,1035,2},{39920086,1036,3},{39920087,1037,4},{39920088,1038,5},{39920089,1039,6},{39920090,1040,7} 
 	}
 	g_UI_Name_List = {
-		ItemName		= "RongYuTitleItem",		-- ◊”Ω·ππItem√˚≥∆
-		TileName		= "RongYuTitle_Text",		-- ≥∆∫≈√˚◊÷
-		HistoryStr		= "RongYuTitle_Text2",		-- √≈≈…¿˙ ∑π±œ◊
-		HistoryNeed		= "RongYuTitle_MenGongNum",	-- –Ë“™∂Ó∂»
-		Button			= "RongYuTitle_OKButton",	-- ¡Ï»°∞¥≈•
-		Already			= "RongYuTitle_YiWanCheng",		-- “—¡Ï»°Ã· æ
+		ItemName		= "RongYuTitleItem",		-- ???Item??
+		TileName		= "RongYuTitle_Text",		-- ????
+		HistoryStr		= "RongYuTitle_Text2",		-- ??????
+		HistoryNeed		= "RongYuTitle_MenGongNum",	-- ????
+		Button			= "RongYuTitle_OKButton",	-- ????
+		Already			= "RongYuTitle_YiWanCheng",		-- ?????
 		Icon			= "RongYuTitle_IconBK",		-- actionbutton
 		TitleNeed		= 0,
 		TitleID			= 0,
@@ -221,7 +221,7 @@ function RongYuTitle_RefreshOneTitleInfo(titleIndex, idx)
 		titleItem.TitleName:SetText(szName)
 		titleItem.HistoryStr:SetText("#{XSLDZ_180521_227}")
 		
-		-- ˝÷µ≤ª¥Ô±Í£¨Ω¯––—’…´«¯∑÷
+		-- ˝÷µ≤ª¥Ô±Í£¨Ω¯––—†…´«¯∑÷
 		local history,szpoint,needhistory = Player:GetData("RONGYUHISTORY"),"",titleItem.needhistory
 		if history >= needhistory then
 			szpoint = "#G"..tostring(needhistory)
@@ -237,12 +237,12 @@ function RongYuTitle_RefreshOneTitleInfo(titleIndex, idx)
 			titleItem.Button:Show()
 			titleItem.Already:Show()
 			titleItem.Button:Disable()
-			titleItem.Button:SetText("“—¡Ï»°")
+			titleItem.Button:SetText("DÓ lÓnh")
 		else
 			titleItem.Button:Show()
 			titleItem.Already:Hide()
 			titleItem.Button:Enable()
-			titleItem.Button:SetText("¡Ï»°")
+			titleItem.Button:SetText("LÓnh")
 		end
 	end
 end

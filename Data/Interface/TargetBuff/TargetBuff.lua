@@ -1,7 +1,7 @@
 local TARGET_BUFF_MAX = 6;
 local TARGET_IMPACT_CTL = {};
 
-local TARGET_IMPACT_NUM = 30; --查询时要从20个里面选出优先级最高的6个
+local TARGET_IMPACT_NUM = 30; --?????20???????????6?
 
 function TargetBuff_PreLoad()
 	this:RegisterEvent("MAINTARGET_CHANGED");
@@ -85,33 +85,33 @@ function TargetBuff_Update()
 		TargetBuff_Clear();
 		this:Hide();
 	end
-	local nFindNum = nBuffNum --在修正nBuffNum之前获得它的值
+	local nFindNum = nBuffNum --???nBuffNum???????
 	if(nFindNum > TARGET_IMPACT_NUM) then nFindNum = TARGET_IMPACT_NUM; end
 	if(nBuffNum > TARGET_BUFF_MAX) then nBuffNum = TARGET_BUFF_MAX; end
 
 	--从最多20个里面选取6个
-	local BUFFINDEX_LIST = {} --这个list做局部变量即可
+	local BUFFINDEX_LIST = {} --??list???????
 	do
 		for jj=1,TARGET_BUFF_MAX do
 			BUFFINDEX_LIST[jj] = -1;
 		end
 
 		local BuffPriority = {}
-		for jj=1,nFindNum do --最大20
+		for jj=1,nFindNum do --??20
 			BuffPriority[jj] = {}
 			BuffPriority[jj].key = jj-1;
 			BuffPriority[jj].val = Target:GetBuffPriorityByIndex(jj-1);
 		end
 
-		for jj=nFindNum,1,-1 do --最大20
-			for kk=1,jj-1 do --最大20
+		for jj=nFindNum,1,-1 do --??20
+			for kk=1,jj-1 do --??20
 				if BuffPriority[kk].val < BuffPriority[kk+1].val then
 					BuffPriority[kk],BuffPriority[kk+1] = BuffPriority[kk+1],BuffPriority[kk]
 				end
 			end
 		end
 
-		for jj=1,nBuffNum do --最大6
+		for jj=1,nBuffNum do --??6
 			BUFFINDEX_LIST[jj] = BuffPriority[jj].key;
 		end
 	end

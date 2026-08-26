@@ -231,20 +231,20 @@ function LifeSkill_Buttons_Clicked(nIndex)
 	local popup = Player:GetAbilityInfo(lifeid,"popup");
 	if(tonumber(popup) == 2) then
 		LifeSkill_Next1 : Show();
-		LifeSkill_Next1 : SetText("ÏâÇ¶")
+		LifeSkill_Next1 : SetText("Khäm")
 --		LifeSkill_Next2 : Show();
 --		LifeSkill_Next3 : Hide();
 	elseif ( popup == 1 ) then
 		LifeSkill_Next1 : Show();
-		LifeSkill_Next1 : SetText("ÖÆ×÷")
+		LifeSkill_Next1 : SetText("Chª tác")
 --		LifeSkill_Next2 : Hide();
 --		LifeSkill_Next3 : Hide();
 	elseif popup == 3 then
 		LifeSkill_Next1:Show()
-		LifeSkill_Next1:SetText("ÖÆ×÷")
+		LifeSkill_Next1:SetText("Chª tác")
 	elseif popup == 4 then
 		LifeSkill_Next1:Show()
-		LifeSkill_Next1:SetText("ÖÆ×÷")
+		LifeSkill_Next1:SetText("Chª tác")
 	else
 		LifeSkill_Next1 : Hide();
 --		LifeSkill_Next2 : Hide();
@@ -266,14 +266,14 @@ function LifeSkill_Buttons_Clicked(nIndex)
 	end
  	local level = tonumber(strName2);
 	LifeSkill_Target_Skill_Name : SetText( strName );
-	LifeSkill_Target_Skill_Level : SetText("µÈ¼¶:" .. strName2);
+	LifeSkill_Target_Skill_Level : SetText("C¤p b§c:" .. strName2);
 	
 	strName = Player:GetAbilityInfo(lifeid,"explain");
 	LifeSkill_Target_Skill_Explain : SetText( strName );
 	
 	local max_exp;
 	if level > 12 or level < 1 then
-		max_exp = "¡Þ"
+		max_exp = "8"
 	else
 --		max_exp = Max_SkillExp[level]
 		max_exp = LifeAbility : GetLifeAbility_LimitExp(lifeid,level);
@@ -287,7 +287,7 @@ function LifeSkill_Buttons_Clicked(nIndex)
 	if realAbilityId ~= -1 then
 		strName = Player:GetAbilityInfo(realAbilityId,"skillexp");	
 	end
-	LifeSkill_Target_Skill_Sleight:SetText( "ÊìÁ·¶È:"..strName.."/"..max_exp);
+	LifeSkill_Target_Skill_Sleight:SetText( "Thu¥n thøc Ðµ:"..strName.."/"..max_exp);
 
 	LifeSkill_Target_Skill:SetActionItem( LIFE_INDEX[nIndex] );
 --ÑîÒ«µÄÉè¼Æ£¬ÁõÌúËµ²»Òª£¬ËùÒÔ×¢ÊÍÒÔÏÂ´úÂë
@@ -347,7 +347,7 @@ function Life_Action_Page_Switch()
 		LifeSkill_ActionSkill : SetCheck(0);
 		LifeSkill_ShenFenSkill : SetCheck(0)
 		LifeSkill_LifeSkill : SetCheck(1);
-		PushDebugMessage("Äã»¹Ã»ÓÐ°ÝÈëÃÅÅÉ¡£");
+		PushDebugMessage("Nhî còn không có Bái nh§p môn Phái.");
 		return; 
 	end;
 	OpenSkillBook();
@@ -403,10 +403,10 @@ function LifeSkill_SetTabColor()
 							};
 
 	local TAB_TEXT = {
-		[0] = "ÆÕÍ¨",
-		"ÃÅÅÉ",
-		"Éú»î",
-		"ÃË»á",
+		[0] = "S½ C¤p",
+		"Môn phái",
+		"Cuµc s¯ng",
+		"Minh Hµi",
 	};
 	
 	tab[0]:SetText(noselColor..TAB_TEXT[0]);

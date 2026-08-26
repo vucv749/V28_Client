@@ -428,7 +428,7 @@ function Profile_WeaponChoose_HelpClick()
 	
 end
 
---关闭按钮
+--关睜按钮
 function Profile_WeaponChoose_CloseClick()	
 
 	Profile_WeaponChoose_CleanUp()

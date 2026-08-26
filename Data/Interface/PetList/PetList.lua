@@ -1,7 +1,7 @@
 local g_nSelect_Index = -1;
 local g_PreSelect = -1;
 local g_PetIndex  = {};
-local PET_MAX_NUMBER = 10	--×î´óÕäÊŞĞ¯´øÉÏÏŞ --add by xindefeng
+local PET_MAX_NUMBER = 10	--???????? --add by xindefeng
 local g_PetList_Frame_UnifiedPosition;
 --===============================================
 -- OnLoad()
@@ -40,7 +40,7 @@ end
 function PetList_OnEvent(event)
 	--PushDebugMessage("PetList : "..event);
 
-	-- ´ò¿ªÕäÊŞÁĞ±í½çÃæ	
+	-- ´ò¿ª äÊŞÁĞ±í½çÃæ	
 	if(event == "OPEN_PET_LIST") then
 		this:Show();
 		PetList_UpdateFrame();
@@ -49,7 +49,7 @@ function PetList_OnEvent(event)
 
 	-- ´ò¿ªÈÎÎñÌá½»½çÃæ
 	elseif(event == "REPLY_MISSION") then
-		-- ¡°ÑªÔ¡Éñ±ø¡±ÈÎÎñÊ±£¬²»ĞèÒª´ò¿ªÕäÊŞÁĞ±í½çÃæ,modify by chendejia
+		-- ¡°ÑªÔ¡Éñ±ø¡±ÈÎÎñÊ±£¬²»ĞèÒª´ò¿ª äÊŞÁĞ±í½çÃæ,modify by chendejia
 		if (arg1~=nil and (tonumber(arg1) == 500503 or tonumber(arg1) == 500504 )) then
 			return		
 		end
@@ -65,27 +65,27 @@ function PetList_OnEvent(event)
 		PetList_Frame:SetProperty("UnifiedXPosition","{0.0,510}");
 		PetList_Frame:SetProperty("UnifiedYPosition","{0.0,206}");
 
-	-- ¸üĞÂÕäÊŞÁĞ±í½çÃæ
+	-- ¸üĞÂ äÊŞÁĞ±í½çÃæ
 	elseif ( event == "UPDATE_PET_LIST" ) then
 		PetList_UpdateFrame();
 
-	-- Íæ¼ÒÉíÉÏµÄÕäÊŞÊı¾İ·¢Éú±ä»¯£¬°üÀ¨ÕäÊŞ³öÕ½¡¢ĞİÏ¢¡¢Ôö¼ÓÒ»Ö»ÕäÊŞ
+	-- Íæ¼ÒÉíÉÏµÄ äÊŞÊı¾İ·¢Éú±ä»¯£¬°üÀ¨ äÊŞ³ö ½¡¢ĞİÏ¢¡¢Ôö¼ÓÒ»Ö» äÊŞ
 	elseif ( event == "UPDATE_PET_PAGE" ) then
 		PetList_UpdateFrame();
 	
-	-- Íæ¼Ò´ÓÁĞ±íÑ¡¶¨Ò»Ö»ÕäÊŞ
+	-- Íæ¼Ò´ÓÁĞ±íÑ¡¶¨Ò»Ö» äÊŞ
 	elseif(event == "REPLY_MISSION_PET") then
 		PetList_UpdateFrame();
 		
-	-- Íæ¼ÒÉíÉÏ¼õÉÙ1Ö»ÕäÊŞ
+	-- Íæ¼ÒÉíÉÏ¼õÉÙ1Ö» äÊŞ
 	elseif (event == "DELETE_PET") then
 		PetList_UpdateFrame();
 	
-	-- ¹Ø±ÕÈÎÎñÌá½»½çÃæ
+	-- ¹Ø± ÈÎÎñÌá½»½çÃæ
 	elseif ( event == "CLOSE_MISSION_REPLY" ) then
 		PetList_Refuse_Click();
 
-	-- ¹Ø±ÕÕäÊŞÁĞ±í½çÃæ
+	-- ¹Ø±  äÊŞÁĞ±í½çÃæ
 	elseif ( event == "CLOSE_PET_LIST" ) then
 		PetList_Refuse_Click();
 		
@@ -110,21 +110,21 @@ end
 --===============================================
 function PetList_UpdateFrame()
 
-	-- ÏÈÇå¿Õµ±Ç°ÁĞ±í
+	-- ÏÈÇå¿ µ±Ç°ÁĞ±í
 	PetList_List:ClearListBox();
 	
 	local PetInListIndex = 0;
-	for	i=0, PET_MAX_NUMBER-1 do	--modify by xindfeng	²»ÄÜÓÃµ±Ç°ÕäÊŞµÄÊıÄ¿£¬ÒòÎªÖĞ¼äµÄÄ³Ğ©ÊŞÀ¸¿ÉÄÜÎª¿Õ¡£
+	for	i=0, PET_MAX_NUMBER-1 do	--modify by xindfeng	??????????,??????????????
 		local szPetName,szOn = Pet:GetPetList_Appoint(i);
 		local strToolTips = "";
 
 		if(szPetName ~= "")   then
-			-- ÕäÊŞ²»ÔÚ±³°üÀï
+			--  äÊŞ²»ÔÚ±³°üÀï
 			if ( szOn ~= "on_packa" ) then 
-				szPetName = "#c808080" .. szPetName;		-- »ÒÉ«ÏÔÊ¾
+				szPetName = "#c808080" .. szPetName;		-- ????
 			end
 			
-			-- ÕäÊŞÔÚ±³°üÀï£¬²¢ÇÒÒÑ¾­Ìá½»µ½Ä³½çÃæ
+			--  äÊŞÔÚ±³°üÀï£¬²¢ÇÒÒÑ¾­Ìá½»µ½Ä³½çÃæ
 			--local nLocation = Pet:GetPetLocation(i)
 			--if ( szOn == "on_packa" ) and ( nLocation ~= -1 ) then
 			--	szPetName = "#G" .. szPetName;					-- ÂÌÉ«ÏÔÊ¾
@@ -134,7 +134,7 @@ function PetList_UpdateFrame()
 			  local nUnlockElapsedTime = PlayerPackage:GetPUnlockElapsedTime_Pet(i);
 				if( nUnlockElapsedTime == 0 ) then
 					szPetName = szPetName.. "  #-05";
-					strToolTips =  "ÒÑ¼ÓËø" ;
+					strToolTips =  "Ğã khóa" ;
 				else
 					szPetName = szPetName.. "  #-10";
 					local strLeftTime = g_GetUnlockingStr(nUnlockElapsedTime);			
@@ -181,7 +181,7 @@ function PetList_Choose_Click()
 	end
 
 	if NeedCheckLock == 1 and PlayerPackage:IsPetLock(g_nSelect_Index) == 1 then
-		PushDebugMessage("ÕäÊŞÒÑ¼ÓËø")
+		PushDebugMessage("Ğã thêm khóa v¾i Trân Thú")
 		return;
 	end
 
@@ -199,14 +199,14 @@ function PetList_Refuse_Click()
 end
 
 --===============================================
--- Ñ¡ÖĞÁĞ±íÖĞµÄÕäÊŞ
+-- Ñ¡ÖĞÁĞ±íÖĞµÄ äÊŞ
 --===============================================
 function PetList_List_Selected()
 	g_nSelect_Index = PetList_List:GetFirstSelectItem();
 end
 
 --===============================================
---¸ù¾İÑ¡ÔñµÄÕäÊŞ£¬ÏÔÊ¾ÏàÓ¦µÄÏêÏ¸ĞÅÏ¢
+--¸ù¾İÑ¡ÔñµÄ äÊŞ£¬ÏÔÊ¾ÏàÓ¦µÄÏêÏ¸ĞÅÏ¢
 --===============================================
 function PetList_ShowTargetPet()
 	g_nSelect_Index = PetList_List:GetFirstSelectItem();

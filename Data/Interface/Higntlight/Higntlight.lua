@@ -1,26 +1,26 @@
 -- UI_COMMAND_INDEX Ôİ¶¨22122701
 --²ÎÊı
 local g_Higntlight_Frame_UnifiedPosition;
-local g_TotalMVPCount = 0;		--MVPÊıÁ¿  ÄÃÊıÁ¿µÄ½Ó¿Ú ÓĞµãÎÊÌâ ²»Ê¹ÓÃÁË ºóÃæ¶¼Í³Ò»°´3¸öÀ´ÄÃgetdata ¸üĞÂuiÒ²ÊÇ°´3¸öÀ´ TODO:µ½Ê±ºòÎÊÎÊÕâ¸öÎÊÌâ
-local g_TreatmentIndex = 0;		--ÒòÎªÖÎÁÆ±È½ÏÌØÊâ Òª¹Ì¶¨·ÅÔÚ UIµÄµÚ¶ş¸öÏÔÊ¾¿òÄÚ£¬ËùÒÔ µ¥¶À¼ÇÂ¼ ÖÎÁÆMVPÔÚMVP±íÖĞµÄĞòºÅ 0Ôò´ú±íÃ»ÓĞÖÎÁÆMVP  ¶ÔÓ¦UIĞòºÅ2 
-local g_DamageIndex_1 =0;		--»¹ÊÇÒ²¼ÇÂ¼ÏÂÉËº¦ÔÚMVP±íÖĞµÄË÷Òı°É ·½±ãÓÃÀ´UpdateUI ¶ÔÓ¦UIĞòºÅ1
-local g_DamageIndex_2 =0;		--¶ÔÓ¦UIĞòºÅ3
+local g_TotalMVPCount = 0;		--MVP??  ?????? ???? ???? ??????3???getdata ??ui???3?? TODO:?????????
+local g_TreatmentIndex = 0;		--???????? ????? UI????????,?? ???? ??MVP?MVP????? 0???????MVP  ??UI??2 
+local g_DamageIndex_1 =0;		--?????????MVP?????? ????UpdateUI ??UI??1
+local g_DamageIndex_2 =0;		--??UI??3
 
-local g_MVPType_Damage = 1; --ÉËº¦ÀàĞÍ
-local g_MVPType_Treatment = 2; --ÖÎÁÆÀàĞÍ
+local g_MVPType_Damage = 1; --????
+local g_MVPType_Treatment = 2; --????
 
-local isTOOLTIP = 0;--1´ú±íÊÇµã»÷³¬Á´´ò¿ªµÄ½çÃæ ³¬Á´ÓÃÁíÒ»¸ö½çÃæÁË Õâ¸öÃ»ÓÃÁË
+local isTOOLTIP = 0;--1???????????? ????????? ?????
 
 local g_TotalMVPTable =
-{	--²ß»®ĞŞ¸ÄÎª ×î¶àÈı¸ö 2ÉËº¦ 1ÖÎÁÆ
-	--½ÇÉ«GUID	½ÇÉ«Ãû×Ö	½ÇÉ«ÃÅÅÉ	½ÇÉ«MVPÀàĞÍ(ÓÃÀ´ÅĞ¶ÏÊÇ·ñÓĞĞ§)		½ÇÉ«µÄÕ¼±È
-	--ÓÖ¸Ä³ÉÖ»ÓĞÁ½¸öMVPÁË ÕâÀïÃæ ÓĞÒ»¸öÓÃ²»ÉÏÁË		
+{	--????? ???? 2?? 1??
+	--½ÇÉ«GUID	½ÇÉ«Ãû×Ö	½ÇÉ«ÃÅÅÉ	½ÇÉ«MVPÀàĞÍ(ÓÃÀ´ÅĞ¶ÏÊÇ·ñÓĞĞ§)		½ÇÉ«µÄ ¼±È
+	--ÓÖ¸Ä³ÉÖ»ÓĞÁ½¸öMVPÁË  âÀïÃæ ÓĞÒ»¸öÓÃ²»ÉÏÁË		
 	[1]	={guid = 0,name = 0, menpai = 0, MVPType = 0, MVPRate = 0},
 	[2]	={guid = 0,name = 0, menpai = 0, MVPType = 0, MVPRate = 0},
 	[3]	={guid = 0,name = 0, menpai = 0, MVPType = 0, MVPRate = 0},
 };
 
---µãÔŞÕâ¿éµ¥¶ÀÕª³öÀ´
+--µãÔŞ â¿éµ¥¶À ª³öÀ´
 local g_ZanTable =
 {
 	[1] = 0,
@@ -48,7 +48,7 @@ local g_ZanRandTitle_Damage =
 	[5]="#{GGSK_221221_53}",
 	[6]="#{GGSK_221221_54}",
 }
-local g_IsZan =  --ÓÃÀ´ÅĞ¶Ï Ä³¸ö°´Å¥Íæ¼ÒÊÇ·ñ°´¹ıµãÔŞÁË 0´ú±í´ËµãÔŞ°´Å¥ÔÚ±¾´ÎMVP½áËãÖĞ»¹Ã»°´¹ı
+local g_IsZan =  --???? ????????????? 0??????????MVP???????
 {
 	[1] = 0,
 	[2] = 0,
@@ -56,13 +56,13 @@ local g_IsZan =  --ÓÃÀ´ÅĞ¶Ï Ä³¸ö°´Å¥Íæ¼ÒÊÇ·ñ°´¹ıµãÔŞÁË 0´ú±í´ËµãÔŞ°´Å¥ÔÚ±¾´ÎMVP½
 }
 
 --UI±í
-local g_UI_menpai={};--item1µÄÃÅÅÉ±í
+local g_UI_menpai={};--item1????
 --local g_UI_menpai2={};--item2µÄÃÅÅÉ±í
 --local g_UI_menpai3={};--item3µÄÃÅÅÉ±í
-local g_UI_charName={};--Íæ¼ÒÃû³Æ
-local g_UI_rate={};--Õ¼±È
-local g_UI_title={};--ÏÔÊ¾ ÍÅ¶ÓDPSÖ®Íõµ±Ö®ÎŞÀ¢ µÄÄÇ¸öµØ·½
-local g_UI_likesDetail={};--µãÔŞ±êÓï
+local g_UI_charName={};--????
+local g_UI_rate={};--??
+local g_UI_title={};--?? ??DPS?????? ?????
+local g_UI_likesDetail={};--????
 
 function Higntlight_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
@@ -73,7 +73,7 @@ function Higntlight_PreLoad()
 	--Íæ¼ÒÀë¿ªÊÀ½ç
 	this:RegisterEvent("PLAYER_LEAVE_WORLD");
 	--³¬Á´
-	--this:RegisterEvent("HIGHLIGHT_MVP_TOOLTIP");--»á´«Èë ½ÇÉ«Ãû×Ö ÃÅÅÉ mvpÀàĞÍ mvpÕ¼±È
+	--this:RegisterEvent("HIGHLIGHT_MVP_TOOLTIP");--»á´«Èë ½ÇÉ«Ãû×Ö ÃÅÅÉ mvpÀàĞÍ mvp ¼±È
 	--Ìí¼ÓºÃÓÑ³É¹¦
 	this:RegisterEvent("HIGHLIGHT_ADDFRIEND_OK"); 
 	-- ÓÎÏ·´°¿Ú³ß´ç·¢ÉúÁË±ä»¯
@@ -96,7 +96,7 @@ function Higntlight_OnLoad()
 	g_UI_charName[3] = Higntlight_RoleName3_Text2;
 
 	g_UI_rate[1] = Higntlight_DamageCount_Text2;
-	g_UI_rate[2] = Higntlight_DamageCount_Text2;--Higntlight_TreatmentPercent2_Text2;	--ÖÎÁÆ ÔÚUIÖĞ¹Ì¶¨·ÅÔÚµÚ¶ş¸öitemÄÇÀï ÕâÀïÌØÊâ´¦Àí
+	g_UI_rate[2] = Higntlight_DamageCount_Text2;--Higntlight_TreatmentPercent2_Text2;	--?? ?UI????????item?? ??????
 	g_UI_rate[3] = Higntlight_DamageCount3_Text2;
 
 	g_UI_title[1] = Higntlight_Title;
@@ -105,14 +105,14 @@ function Higntlight_OnLoad()
 
 	--×ÊÔ´ÄÇ±ß °Ñ item1¡¢3µÄÖÎÁÆ°Ù·Ö±ÈÉ¾³ı£¬item2µÄÉËº¦°Ù·Ö±ÈÉ¾³ıÁË
 	--Higntlight_TreatmentPercent:Hide();
-	--Higntlight_DamageCount2:Hide(); --ÖÎÁÆ ÔÚUIÖĞ¹Ì¶¨·ÅÔÚµÚ¶ş¸öitemÄÇÀï ÕâÀïÌØÊâ´¦Àí µÚ¶ş¸öitemµÄÉËº¦×Ö¶Î
+	--Higntlight_DamageCount2:Hide(); --ÖÎÁÆ ÔÚUIÖĞ¹Ì¶¨·ÅÔÚµÚ¶ş¸öitemÄÇÀï  âÀïÌØÊâ´¦Àí µÚ¶ş¸öitemµÄÉËº¦×Ö¶Î
 	--Higntlight_TreatmentPercent3:Hide();
 	--this:Show();
 
 	g_UI_likesDetail[1] = Higntlight_LikesDetail_PAOPAO;
-	g_UI_likesDetail[2] = Higntlight_LikesDetail_PAOPAO--ÓÃitem1µÄÅİÅİÌæ´ú Higntlight_LikesDetail_PAOPAO2;
+	g_UI_likesDetail[2] = Higntlight_LikesDetail_PAOPAO--?item1????? Higntlight_LikesDetail_PAOPAO2;
 	g_UI_likesDetail[3] = Higntlight_LikesDetail_PAOPAO3;
-	g_UI_likesDetail[1]:SetText(" ");--Çå¿ÕµãÔŞ±êÓï
+	g_UI_likesDetail[1]:SetText(" ");--??????
 	g_UI_likesDetail[2]:SetText(" ");
 	g_UI_likesDetail[3]:SetText(" ");
 
@@ -130,10 +130,10 @@ end
 
 function Higntlight_OnEvent(event)
 	if (event == "UI_COMMAND" and tonumber(arg0) == 22122701) then
-        --·şÎñÆ÷¶Ëµ÷ÓÃ ÕâÀï»ñµÃ²ÎÊı²¢´¦Àí
+        --·şÎñÆ÷¶Ëµ÷ÓÃ  âÀï»ñµÃ²ÎÊı²¢´¦Àí
 		local t_index = Get_XParam_INT(0);
-		local t_name = Get_XParam_STR(0);--Õâ¸öÊÇ·¢ÆğµãÔŞµÄÍæ¼ÒµÄÃû×Ö
-		g_ZanTable[t_index] = g_ZanTable[t_index]+1;--µãÔŞÊı¼ÓÒ»
+		local t_name = Get_XParam_STR(0);--?????????????
+		g_ZanTable[t_index] = g_ZanTable[t_index]+1;--?????
 		--ÅĞ¶Ï±»µãÔŞµÄÊÇ·ñÊÇ×Ô¼º
 		local targetGUID
 		if t_index == 1 then
@@ -141,7 +141,7 @@ function Higntlight_OnEvent(event)
 		elseif t_index == 3 then
 			targetGUID = g_TotalMVPTable[g_DamageIndex_2].guid
 		end
-		if targetGUID ~= 0 and targetGUID == Player:GetGUID() then --±»µãÔŞÍæ¼Ò ÊÇ ÎÒ
+		if targetGUID ~= 0 and targetGUID == Player:GetGUID() then --????? ? ?
 			local rtxt = ScriptGlobal_Format("#{GGSK_221221_64}", tostring(t_name))
 			PushDebugMessage(rtxt);
 		end
@@ -151,17 +151,17 @@ function Higntlight_OnEvent(event)
 		Higntlight_GetData();
 		Higntlight_UpdateUI();
 		this:Show();
-		SetTimer("Higntlight", "Higntlight_ZanTimer()", 2000);--µãÔŞ±êÓï Èç¹ûÓĞµÄ»°2ÃëÇĞ»»Ò»´Î
-		isTOOLTIP = 0;--²»ÊÇµã»÷³¬Á´¿ªÆôµÄ ±êÖ¾ Îª0
-		--¸ÕÏÔÊ¾½çÃæ ¿Ï¶¨ÊÇÃ»ÓĞÈË°´¹ıµãÔŞµÄ
+		SetTimer("Higntlight", "Higntlight_ZanTimer()", 2000);--???? ?????2?????
+		isTOOLTIP = 0;--????????? ?? ?0
+		--¸ ÏÔÊ¾½çÃæ ¿Ï¶¨ÊÇÃ»ÓĞÈË°´¹ıµãÔŞµÄ
 		g_IsZan[1] = 0;
 		g_IsZan[2] = 0;
 		g_IsZan[3] = 0;
 	elseif event == "ON_SCENE_TRANS" then
-		--³¡¾°ÇĞ»» Çå¿Õ
+		--³¡¾°ÇĞ»» Çå¿ 
 		Higntlight_OnClose()
 	elseif event == "PLAYER_LEAVE_WORLD" then
-		--Íæ¼ÒÀë¿ªÊÀ½ç Çå¿Õ
+		--Íæ¼ÒÀë¿ªÊÀ½ç Çå¿ 
 		Higntlight_OnClose()
 	elseif (event == "HIGHLIGHT_ADDFRIEND_OK" ) then
 		--Ìí¼ÓºÃÓÑ³É¹¦
@@ -179,7 +179,7 @@ end
 --Ìí¼ÓºÃÓÑ°´Å¥	
 function Higntlight_AddFriend1(index)
 	--uiµÄindexÒª×ª»»³Émvp±íµÄindex
-	local tempIndex = index --¼ÇÂ¼°´ÏÂ°´Å¥µÄĞòºÅ
+	local tempIndex = index --?????????
 	if (index == 1) then
 		index = g_DamageIndex_1
 	--elseif (index == 2) then
@@ -188,7 +188,7 @@ function Higntlight_AddFriend1(index)
 		index = g_DamageIndex_2
 	end
 	if (g_TotalMVPTable[index].guid == Player:GetGUID()) then  
-		PushDebugMessage("#{GGSK_221221_49}");--ĞŞ¸Ä×Öµä
+		PushDebugMessage("#{GGSK_221221_49}");--????
 		return;
 	end
 	if (g_TotalMVPTable[index].name == 0) then
@@ -219,7 +219,7 @@ function Higntlight_Like(index)
 		return;
 	end
     HighLight:Lua_UpdateLikeCount(index,Player:GetName());
-	g_IsZan[index] = 1;--1´ú±í´Ë°´Å¥ÔÚ±¾´Î½áËãÊ±¿Ì ±»°´¹ıÁË
+	g_IsZan[index] = 1;--1???????????? ????
 
 	--µãÔŞ³É¹¦ ¸ø×Ô¼º·¢Ò»¸öĞÑÄ¿ÌáÊ¾ ¸øÄ³ÈËµãÔŞ
 	local tipName
@@ -257,24 +257,24 @@ function Higntlight_Share(index)
 		index = g_DamageIndex_2
 	end
 
-	--guid ½ÇÉ«Ãû×Ö ½ÇÉ«ÃÅÅÉ ½ÇÉ«MVPÀàĞÍ ½ÇÉ«MVPÕ¼±È
+	--guid ½ÇÉ«Ãû×Ö ½ÇÉ«ÃÅÅÉ ½ÇÉ«MVPÀàĞÍ ½ÇÉ«MVP ¼±È
 	HighLight:Lua_ShareHLMVP(g_TotalMVPTable[index].guid,
 							g_TotalMVPTable[index].name,
 							g_TotalMVPTable[index].menpai,
 							g_TotalMVPTable[index].MVPType,
 							g_TotalMVPTable[index].MVPRate)
 end
---¹Ø±Õ°´Å¥
+--¹Ø± °´Å¥
 function Higntlight_OnClose()
     this:Hide();
 	KillTimer("Higntlight_ZanTimer()");
-	--Íæ¼Ò²»ÄÜÊÖ¶¯´ò¿ª´Ë½çÃæ ËùÒÔÍæ¼ÒÊÖ¶¯¹Ø±ÕÖ®ºó ¿Ï¶¨ÒªÇå¿Õ±íÊı¾İ
+	--Íæ¼Ò²»ÄÜÊÖ¶¯´ò¿ª´Ë½çÃæ ËùÒÔÍæ¼ÒÊÖ¶¯¹Ø± Ö®ºó ¿Ï¶¨ÒªÇå¿ ±íÊı¾İ
 	Higntlight_ClearData();
 	isTOOLTIP=0;
 end
 --»ñÈ¡MVPÊı¾İ
 function Higntlight_GetData()
-	--Ö»Çå¿Õlua±í ²»ÒªÇå¿Õ¿Í»§¶ËÖĞµÄ±í
+	--Ö»Çå¿ lua±í ²»ÒªÇå¿ ¿Í»§¶ËÖĞµÄ±í
 	Higntlight_ClearLocalData();
 	for i = 1, 3, 1 do
 		local mRet,mName,mGuid,mMenpai,mMVPType,mMVPRate = HighLight:Lua_GetHLMVPDataByIndex(i);
@@ -283,13 +283,13 @@ function Higntlight_GetData()
 			return;
 		end
 		if (mMVPType == g_MVPType_Treatment) then
-			g_TreatmentIndex = 0 --ÖÎÁÆÏÈ²»ÉÏ ÒÔ·ÀÍòÒ» ÕâÀï ÖÎÁÆËùÒÔÍ³Ò»ÖÃ0 µ±g_TreatmentIndexÎª0Ê± ¸üĞÂ½çÃæº¯ÊıÀïÃæ²»»áÉèÖÃÖÎÁÆitem
+			g_TreatmentIndex = 0 --????? ???? ?? ???????0 ?g_TreatmentIndex?0? ??????????????item
 			--g_TreatmentIndex = i;--¼ÇÂ¼ÖÎÁÆµÄĞòºÅ UpdateUIÊ± Ê¹ÓÃ
 			--PushDebugMessage("test type:"..mMVPType);
 		elseif (mMVPType == g_MVPType_Damage) then
-			if (g_DamageIndex_1 == 0) then --ÓĞÉËº¦MVP ²¢ÇÒ g_DamageIndex_1´¦ÓÚ³õÊ¼»¯×´Ì¬ ÔòÏÈ¸øg_DamageIndex_1 ¸³Öµ
+			if (g_DamageIndex_1 == 0) then --???MVP ?? g_DamageIndex_1??????? ???g_DamageIndex_1 ??
 				g_DamageIndex_1 = i;
-			elseif (g_DamageIndex_1 ~= 0) then --ÓĞÉËº¦MVP ²¢ÇÒ g_DamageIndex_1ÒÑ¾­±»¸³ÖµÁË ÄÇÃ´¾Í¸øg_DamageIndex_2¼ÇÂ¼µÚ¶ş¸öÉËº¦MVP
+			elseif (g_DamageIndex_1 ~= 0) then --???MVP ?? g_DamageIndex_1?????? ????g_DamageIndex_2???????MVP
 				g_DamageIndex_2 = i;
 			end
 			--PushDebugMessage("test type:"..mMVPType);
@@ -424,22 +424,22 @@ function Higntlight_ZanTimer()
 end
 
 function Higntlight_UpdateZan(t_index)
-	if (t_index == 1 or t_index == 3) then --µãÔŞÉËº¦1 ¶ÔÓ¦MVP±íĞòºÅ g_DamageIndex_1
+	if (t_index == 1 or t_index == 3) then --????1 ??MVP??? g_DamageIndex_1
 		local rand = math.random(0, 6);
 		if (rand < 1 or rand > 6) then
-			rand = 1; --Õâº¯ÊıÃ»ÓÃ¹ı Ğ´¸öÕâ¸ö±£µ×ÏÂ
+			rand = 1; --?????? ???????
 		end
-		g_UI_likesDetail[t_index]:SetText(g_ZanRandTitle_Damage[rand]); --Ëæ»úÏÔÊ¾×Öµä
+		g_UI_likesDetail[t_index]:SetText(g_ZanRandTitle_Damage[rand]); --??????
 	elseif (t_index == 2) then
 		--[[ local rand = math.random(0, 7);
 		if (rand < 1 or rand > 7) then
-			rand = 1; --Õâº¯ÊıÃ»ÓÃ¹ı Ğ´¸öÕâ¸ö±£µ×ÏÂ
+			rand = 1; --?????? ???????
 		end
-		g_UI_likesDetail[t_index]:SetText(g_ZanRandTitle_Treatment[rand]); --Ëæ»úÏÔÊ¾×Öµä ]]
+		g_UI_likesDetail[t_index]:SetText(g_ZanRandTitle_Treatment[rand]); --?????? ]]
 	end
 end
 
---Çå¿Õlua½Å±¾ ÒÔ¼° ¿Í»§¶ËÖĞ MVP±í
+--Çå¿ lua½Å±¾ ÒÔ¼° ¿Í»§¶ËÖĞ MVP±í
 function Higntlight_ClearData()
 	g_TotalMVPCount = 0;
 	g_TreatmentIndex = 0;
@@ -458,7 +458,7 @@ function Higntlight_ClearData()
 
 	HighLight:Lua_ClearHLMVPData();
 end
---Çå¿Õlua½Å±¾ÖĞMVP±í
+--Çå¿ lua½Å±¾ÖĞMVP±í
 function Higntlight_ClearLocalData()
 	g_TotalMVPCount = 0;
 	g_TreatmentIndex = 0;
@@ -490,13 +490,13 @@ function Higntlight_AddFriendOK(name)
 			
 		end
 	end ]]
-	if g_DamageIndex_1 ~= 0 then --ÓĞÉËº¦1mvp
+	if g_DamageIndex_1 ~= 0 then --???1mvp
 		if g_TotalMVPTable[g_DamageIndex_1].name == name then
 			Higntlight_AddFriend:Hide()
 			
 		end
 	end
-	if g_DamageIndex_2 ~= 0 then --ÓĞÉËº¦2mvp
+	if g_DamageIndex_2 ~= 0 then --???2mvp
 		if g_TotalMVPTable[g_DamageIndex_2].name == name then
 			Higntlight_AddFriend3:Hide()
 			
@@ -509,27 +509,27 @@ function Higntlight_GetMenPai( menpai )
 	local strName = "";
 	-- µÃµ½ÃÅÅÉÃû³Æ.
 	if(0 == menpai) then
-		strName = "ÉÙÁÖ";
+		strName = "Thiªu Lâm";
 	elseif(1 == menpai) then
-		strName = "Ã÷½Ì";
+		strName = "Minh Giáo";
 	elseif(2 == menpai) then
-		strName = "Ø¤°ï";
+		strName = "Cái Bang";
 	elseif(3 == menpai) then
-		strName = "Îäµ±";
+		strName = "Võ Ğang";
 	elseif(4 == menpai) then
-		strName = "¶ëáÒ";
+		strName = "Nga Mi";
 	elseif(5 == menpai) then
-		strName = "ĞÇËŞ";
+		strName = "Tinh Túc";
 	elseif(6 == menpai) then
-		strName = "ÌìÁú";
+		strName = "Thiên Long";
 	elseif(7 == menpai) then
-		strName = "ÌìÉ½";
+		strName = "Thiên S½n";
 	elseif(8 == menpai) then
-		strName = "åĞÒ£";
+		strName = "Tiêu dao";
 	elseif(9 == menpai) then
-		strName = "ÎŞÃÅÅÉ";
+		strName = "Tñ do";
 	elseif(10== menpai) then
-		strName = "ÂüÍÓÉ½×¯";
+		strName = "MÕn Ğà S½n Trang";
 	end
 	return strName
 end

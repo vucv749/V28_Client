@@ -69,7 +69,7 @@ function XiulianStudy_OnEvent(event)
 			return
 		end
 		
-		if this : IsVisible() then									-- 如果界面开着，则不处理
+		if this : IsVisible() then									-- ??????,????
 			if XIULIAN_STUDY_TYPE ~= nStudyType then
 				XiulianStudy_Frame:SetProperty("UnifiedPosition", "{{0.5,-128.000000},{0.1,0.0}");
 			else
@@ -103,7 +103,7 @@ function XiulianStudy_OnEvent(event)
 			return;
 		end
 
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if arg1 == "distance" and tonumber(arg2) > MAX_OBJ_DISTANCE or arg1=="destroy" then
 			XiulianStudy_Close()
 		end
@@ -131,7 +131,7 @@ function XiulianStudy_OnEvent(event)
 end
 
 --===============================================
--- 关闭事件 
+-- 关睜事件 
 --===============================================
 function XiulianStudy_Close()
     --PushDebugMessage("XiulianStudy_Close is Call")
@@ -338,7 +338,7 @@ function  XiulianStudy_Skill_Selected_Update()
 				  nJingJieNum = ((CurMaxLevel-60)/15) + 6
 			end
 			nJingJieNum = nJingJieNum + 1
-			XiulianStudy_Demand_Jiaozi:SetProperty("MoneyNumber", tostring(nJingJieNum*10000));  --目前以等级设置为钱  
+			XiulianStudy_Demand_Jiaozi:SetProperty("MoneyNumber", tostring(nJingJieNum*10000));  --?????????  
 		end
 		
 	else

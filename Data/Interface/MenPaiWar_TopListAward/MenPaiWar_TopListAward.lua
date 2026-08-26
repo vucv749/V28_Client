@@ -1,4 +1,4 @@
----门派闯关 排行榜奖励展示
+---门派闯关 排行榜奖励牴示
        
 local g_MenPaiWar_TopListAward_Frame_UnifiedXPosition;
 local g_MenPaiWar_TopListAward_Frame_UnifiedYPosition;

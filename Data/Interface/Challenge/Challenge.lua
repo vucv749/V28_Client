@@ -102,7 +102,7 @@ end
 
 
 
---µÃµ½ÌôÕ½¶ÓÎéĞÅÏ¢¡£
+--µÃµ½Ìô ½¶ÓÎéĞÅÏ¢¡£
 function Challenge_GetChallengeInfo()
 
 	local iCount = DataPool:GetChallengeTeamMemberCount();
@@ -112,7 +112,7 @@ function Challenge_GetChallengeInfo()
 	local iMenPai = 0;
 	local strMenPai = ""
 
-	-- Çå³ıÌôÕ½ĞÅÏ¢¡£
+	-- Çå³ıÌô ½ĞÅÏ¢¡£
 	Challenge_ClearChallengeInfo();
 
 	for i = 0, iCount - 1 do
@@ -135,43 +135,43 @@ function Challenge_GetChallengeInfo()
 		-- ÏÔÊ¾Ãû×Ö
 		g_Challenge_Name[i]:SetText(strName);
 
-		AxTrace( 0,0, "ÌôÕ½Ä£ĞÍÃû×Ö"..tostring(strModelName).."player name:"..strName.."level:"..tostring(iLevel).."menpai:"..tostring( menpai ).."zoneworldId"..tostring( zoneworldId ));
+		AxTrace( 0,0, "Khiêu chiªn mô hình tên"..tostring(strModelName).."player name:"..strName.."level:"..tostring(iLevel).."menpai:"..tostring( menpai ).."zoneworldId"..tostring( zoneworldId ));
 		-- ÏÔÊ¾µÈ¼¶
 		g_Challenge_Level[i]:SetText(tostring(iLevel));
 
 		-- µÃµ½ÃÅÅÉÃû³Æ.
 		if(0 == menpai) then
-			strMenPai = "ÉÙÁÖ";
+			strMenPai = "Thiªu Lâm";
 
 		elseif(1 == menpai) then
-			strMenPai = "Ã÷½Ì";
+			strMenPai = "Minh Giáo";
 
 		elseif(2 == menpai) then
-			strMenPai = "Ø¤°ï";
+			strMenPai = "Cái Bang";
 
 		elseif(3 == menpai) then
-			strMenPai = "Îäµ±";
+			strMenPai = "Võ Ğang";
 
 		elseif(4 == menpai) then
-			strMenPai = "¶ëáÒ";
+			strMenPai = "Nga Mi";
 
 		elseif(5 == menpai) then
-			strMenPai = "ĞÇËŞ";
+			strMenPai = "Tinh Túc";
 
 		elseif(6 == menpai) then
-			strMenPai = "ÌìÁú";
+			strMenPai = "Thiên Long";
 
 		elseif(7 == menpai) then
-			strMenPai = "ÌìÉ½";
+			strMenPai = "Thiên S½n";
 
 		elseif(8 == menpai) then
-			strMenPai = "åĞÒ£";
+			strMenPai = "Tiêu dao";
 
 		elseif(10 == menpai) then
-			strMenPai = "ÂüÍÓ";
+			strMenPai = "MÕn Ğà";
 
 		else
-			strMenPai = "ÎŞÃÅÅÉ";
+			strMenPai = "Tñ do";
 		end
 
 		-- ÏÔÊ¾ÃÅÅÉ
@@ -183,7 +183,7 @@ end
 
 
 
---µÃµ½ÌôÕ½¶ÓÎéĞÅÏ¢¡£
+--µÃµ½Ìô ½¶ÓÎéĞÅÏ¢¡£
 function Challenge_ClearChallengeInfo()
 
 	g_Challenge_FakeObject[0]:SetFakeObject("");
@@ -217,7 +217,7 @@ function Challenge_ClearChallengeInfo()
 end;
 
 
--- Í¬ÒâÌôÕ½
+-- Í¬ÒâÌô ½
 function Challenge_Yes_Click()
 	if g_IsFunChallenge == 0 then
 		DataPool:RespondChallenge(1);
@@ -229,7 +229,7 @@ function Challenge_Yes_Click()
 end;
 
 
--- ¾Ü¾øÌôÕ½¡£
+-- ¾Ü¾øÌô ½¡£
 function Challenge_No_Click()
 	if g_Challenge_close == 1 then
 		g_Challenge_close = 0

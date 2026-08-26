@@ -38,9 +38,9 @@ function Dress_Enchase_OnLoad()
 	Dress_Gem_Buttons[3] = Dress_Enchase_Gem2;
 
 	--Dress_GEM_QUALITY±íÊ¾buttonÀï·ÅÈëµÄÎïÆ·
-	Dress_GEM_QUALITY[1] = -1;		-- Ê±×°
-	Dress_GEM_QUALITY[2] = -1;		-- ÅäÊÎ
-	Dress_GEM_QUALITY[3] = -1;		-- ÏâÇ¶·û
+	Dress_GEM_QUALITY[1] = -1;		-- ??
+	Dress_GEM_QUALITY[2] = -1;		-- ??
+	Dress_GEM_QUALITY[3] = -1;		-- ???
 	
 	Dress_GEM_EFFECT[1] = Dress_Enchase_Effect1;
 	Dress_GEM_EFFECT[2] = Dress_Enchase_Effect2;
@@ -53,7 +53,7 @@ function Dress_Enchase_OnEvent(event)
 	if(event == "UI_COMMAND" and tonumber(arg0)==20091029) then
 		this:Show()
 		
-		-- ¹Ø±Õ¡°ÏâÇ¶Ô¤ÀÀ¡±ÊÔÒÂ¼ä
+		-- ¹Ø± ¡°ÏâÇ¶Ô¤ÀÀ¡±ÊÔÒÂ¼ä
 		if (IsWindowShow("DressEnchase_Fitting")) then
 			DressEnchasing:RestoreDressEnchaseFitting()
 			CloseWindow("DressEnchase_Fitting", true)
@@ -91,7 +91,7 @@ function Dress_Enchase_OnEvent(event)
 		end
 		return
 		
-	-- Ä³Ğ©¹¦ÄÜ»¥³â£¬ĞèÒª¹Ø±Õ¸Ã½çÃæ
+	-- Ä³Ğ©¹¦ÄÜ»¥³â£¬ĞèÒª¹Ø± ¸Ã½çÃæ
 	elseif ( event == "CLOSE_DRESS_ENCHASE" ) then
 		if this:IsVisible() then
 			Dress_Enchase_OnHiden();
@@ -101,7 +101,7 @@ function Dress_Enchase_OnEvent(event)
 	elseif(event == "UPDATE_DRESS_ENCHASE") then
 		Dress_Enchase_Update(arg0,arg1)
 
-		-- ¸ü»»ÁËÊ±×°»òÕßÅäÊÎ£¬¹Ø±Õ¡°ÏâÇ¶Ô¤ÀÀ¡±ÊÔÒÂ¼ä
+		-- ¸ü»»ÁËÊ±×°»ò ßÅäÊÎ£¬¹Ø± ¡°ÏâÇ¶Ô¤ÀÀ¡±ÊÔÒÂ¼ä
 		if (IsWindowShow("DressEnchase_Fitting")) and ( (tonumber(arg0) == 1) or (tonumber(arg0) == 2) ) then
 			DressEnchasing : RestoreDressEnchaseFitting()
 			CloseWindow("DressEnchase_Fitting", true)
@@ -112,19 +112,19 @@ function Dress_Enchase_OnEvent(event)
 		if(tonumber(arg0) ~= g_objCared) then
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			Dress_Enchase_OnHiden()
 		end
 		return
 
 	elseif( event == "RESUME_ENCHASE_GEM" and this:IsVisible() ) then
-		if(arg0~=nil and tonumber(arg0) == 3) then---xmlÀïÅäÖÃµÄÊÇD3
-			Dress_Enchase_Resume_Gem(25);									-- È¡ÏûÊ±×°
+		if(arg0~=nil and tonumber(arg0) == 3) then---xml?????D3
+			Dress_Enchase_Resume_Gem(25);									-- ????
 		elseif(arg0~=nil and tonumber(arg0) == 5) then
-			Dress_Enchase_Resume_Gem(26)									-- È¡ÏÂÅäÊÎ
+			Dress_Enchase_Resume_Gem(26)									-- ????
 		elseif(arg0~=nil and tonumber(arg0) == 7) then
-			Dress_Enchase_Resume_Gem(27)									-- È¡ÏÂÏâÇ¶·û
+			Dress_Enchase_Resume_Gem(27)									-- ?????
 		end
 		return
 
@@ -190,23 +190,23 @@ function Dress_Enchase_Update(ItemIndex, ItemPos)
 	local Dress_Gem_Enchased = 0
 
 	if theActionItem:GetID() ~= 0 then
-		if IIndex == 1 then---×°±¸Àà£¬ĞèÒªÊ±×°
+		if IIndex == 1 then---???,????
 			local equipPoint = LifeAbility:Get_Equip_Point(IPos)
 			if equipPoint ~= 16 then
 				PushDebugMessage("#{SZPR_091023_45}")
 				return
 			end
 
-			Dress_Bore_Count = LifeAbility : GetEquip_HoleCount(IPos)		-- µÃµ½Ê±×°ÉÏµÄ±¦Ê¯¿×ÊıÄ¿
-			Dress_Gem_Enchased = LifeAbility : GetEquip_GemCount(IPos)	-- »ñµÃÏâÇ¶ÔÚÊ±×°ÉÏµÄ±¦Ê¯ÊıÄ¿
+			Dress_Bore_Count = LifeAbility : GetEquip_HoleCount(IPos)		-- ???????????
+			Dress_Gem_Enchased = LifeAbility : GetEquip_GemCount(IPos)	-- ?????????????
 			
 			if Dress_Gem_Enchased == 3 then 
-				PushDebugMessage("#{SZPR_091023_47}")				-- "¸ÃÊ±×°²»ÄÜÔÙÏâÇ¶¸ü¶àµÄÅäÊÎ"
+				PushDebugMessage("#{SZPR_091023_47}")				-- "Cai trang phøc m¯t không th¬ Tái ğßşc khäm nhi«u h½n Ğích Ph¯i SÑc"
 				return
 			end
 
 			if Dress_Bore_Count == Dress_Gem_Enchased then
-				PushDebugMessage("#{SZPR_091023_87}")				-- "¸ÃÊ±×°ĞèÒªÔÚÂåÑô£¨246£¬129£©ÒÁÌì²Ê´¦Ôö¼Ó¿×Î»ºó²ÅÄÜ¼ÌĞøÏâÇ¶"
+				PushDebugMessage("#{SZPR_091023_87}")				-- "Cai trang phøc m¯t c¥n TÕi LÕc Dß½ng(246, 129) Y Thiên Thái XØ gia tång Kh±ng V¸ H§u m¾i có th¬ tiªp tøc ğßşc khäm"
 				return
 			end
 
@@ -217,7 +217,7 @@ function Dress_Enchase_Update(ItemIndex, ItemPos)
 			LifeAbility : Lock_Packet_Item(IPos,1);
 			Dress_GEM_QUALITY[IIndex] = IPos	
 			
-			if Dress_GEM_QUALITY[2] ~=-1 and Dress_GEM_QUALITY[2] ~=0 then ---ÅäÊÎ²ÛÉÏÓĞÅäÊÎ£¬ĞèÒªÖØĞÂ¼ÆËãÏûºÄÇ®Êı
+			if Dress_GEM_QUALITY[2] ~=-1 and Dress_GEM_QUALITY[2] ~=0 then ---???????,??????????
 				local dress_gem_count = LifeAbility : GetEquip_GemCount( Dress_GEM_QUALITY[1]);
 				local Dress_Gem_Level = LifeAbility : Get_Gem_Level(Dress_GEM_QUALITY[2],1)
 				needMoney = Dress_Gem_Cost[Dress_Gem_Level]*(dress_gem_count+1)
@@ -235,7 +235,7 @@ function Dress_Enchase_Update(ItemIndex, ItemPos)
 					end
 				end
 
-		elseif IIndex == 2 then---ÅäÊÎÀà
+		elseif IIndex == 2 then---???
 			local Dress_GemType = LifeAbility : Get_Gem_Level(IPos,2);
 			if(Dress_GemType ~= 31 and Dress_GemType ~= 32 and Dress_GemType ~= 33) then
 				PushDebugMessage("#{SZPR_091023_48}")
@@ -257,7 +257,7 @@ function Dress_Enchase_Update(ItemIndex, ItemPos)
 			LifeAbility : Lock_Packet_Item(IPos,1);
 			Dress_GEM_QUALITY[IIndex] = IPos
 
-		elseif IIndex == 3 then---ÅäÊÎÏâÇ¶·û
+		elseif IIndex == 3 then---?????
 			if PlayerPackage : GetItemTableIndex( IPos ) ~= 30503135 then
 				PushDebugMessage("#{SZPR_091023_49}")
 				return
@@ -276,7 +276,7 @@ function Dress_Enchase_Update(ItemIndex, ItemPos)
 		Dress_Enchase_Preview: Enable()
 	end
 	
-	--°ÑÈ·¶¨°´Å¥Õı³£»¯
+	--°ÑÈ·¶¨°´Å¥ ı³£»¯
 	if Dress_GEM_QUALITY[1] ~= -1 and Dress_GEM_QUALITY[2] ~= -1 and Dress_GEM_QUALITY[3] ~= -1  then
 		local userMoney = Player:GetData("MONEY_JZ")+Player:GetData("MONEY")
 		local Dress_Gem_Level = LifeAbility : Get_Gem_Level(Dress_GEM_QUALITY[2],1)
@@ -303,9 +303,9 @@ function Dress_Enchase_Resume_Gem(nIndex)
 	if nIndex == 25 or nIndex == 26 then		
 		if (IsWindowShow("DressEnchase_Fitting")) then
 			DressEnchasing:RestoreDressEnchaseFitting()
-			CloseWindow("DressEnchase_Fitting", true)		-- ¹Ø±Õ¡°ÏâÇ¶Ô¤ÀÀ¡±ÊÔÒÂ¼ä
+			CloseWindow("DressEnchase_Fitting", true)		-- ??“????”???
 		end		
-		Dress_Enchase_Preview: Disable()							-- ½ûÓÃ¡°ÏâÇ¶Ô¤ÀÀ¡±°´Å¥
+		Dress_Enchase_Preview: Disable()							-- ??“????”??
 	end
 
 	local nIndex = nIndex - 24
@@ -342,8 +342,8 @@ function Dress_Enchase_Clear()
 	end
 	Dress_Enchase_DemandMoney : SetProperty("MoneyNumber", 0);
 
-	Dress_Enchase_OK:Disable()								-- ½ûÓÃ¡°È·¶¨¡±°´Å¥
-	Dress_Enchase_Preview:Disable()						-- ½ûÓÃ¡°ÏâÇ¶Ô¤ÀÀ¡±°´Å¥
+	Dress_Enchase_OK:Disable()								-- ??“??”??
+	Dress_Enchase_Preview:Disable()						-- ??“????”??
 
 	lastDress = -1
 	lastDress_Peishi =	-1
@@ -354,7 +354,7 @@ function Dress_Enchase_OnHiden()
 	StopCareObject_Dress_Enchase(g_objCared)
 	Dress_Enchase_Clear()
 	
-	-- ¹Ø±Õ¡°ÏâÇ¶Ô¤ÀÀ¡±ÊÔÒÂ¼ä
+	-- ¹Ø± ¡°ÏâÇ¶Ô¤ÀÀ¡±ÊÔÒÂ¼ä
 	if (IsWindowShow("DressEnchase_Fitting")) then
 		DressEnchasing:RestoreDressEnchaseFitting()
 		CloseWindow("DressEnchase_Fitting", true)
@@ -370,7 +370,7 @@ end
 function DressEnchase_Preview_Clicked()
 	
 	if (IsWindowShow("DressEnchase_Fitting")) then
-		-- ÏÈÇå¿Õµ±Ç°ÊÔÒÂ¼äµÄÊı¾İ
+		-- ÏÈÇå¿ µ±Ç°ÊÔÒÂ¼äµÄÊı¾İ
 		DressEnchasing:RestoreDressEnchaseFitting();
 	end
 	
@@ -432,7 +432,7 @@ function Dress_Enchase_Buttons_Clicked()
 		end
 	end
 	
-	-- ¹Ø±Õ¡°ÏâÇ¶Ô¤ÀÀ¡±ÊÔÒÂ¼ä
+	-- ¹Ø± ¡°ÏâÇ¶Ô¤ÀÀ¡±ÊÔÒÂ¼ä
 	if (IsWindowShow("DressEnchase_Fitting")) then
 		DressEnchasing:RestoreDressEnchaseFitting()
 		CloseWindow("DressEnchase_Fitting", true)
@@ -447,7 +447,7 @@ function Dress_Enchase_Buttons_Clicked()
 		Set_XSCRIPT_ParamCount(3);
 	Send_XSCRIPT();
 
-	--Çå¿Õ½çÃæºÍÖÃÒ»Ğ©¶¯Ì¬ÖµÎª¿Õ
+	--Çå¿ ½çÃæºÍÖÃÒ»Ğ©¶¯Ì¬ÖµÎª¿ 
 	for i=1,3 do
 		if(Dress_Gem_Buttons[i] ~=-1) then
 			Dress_Gem_Buttons[i]:SetActionItem(-1)			

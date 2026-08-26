@@ -102,9 +102,9 @@ function YuanDan_PaiHang_OnEvent(event)
 		if(tonumber(arg0) ~= objCared) then
 			return
 		end
-		-- 如果和NPC的距离大于一定距离或者被删除，自动关闭
+		-- 如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
-			-- 关闭界面
+			-- 关睜界面
 			YuanDan_PaiHang_OnClose()
 		end	
 	end
@@ -130,7 +130,7 @@ end
 -- 关界面
 --===============================================
 function YuanDan_PaiHang_OnClose()
-	--数据清空
+	--数据清繝
 	YuanDan_PaiHang_Clear()
 	--隐藏界面
 	this:Hide()
@@ -215,9 +215,9 @@ function YuanDan_PaiHang_ShowVote(nIndex,nData)
 		return
 	end
 	--按数位显示
-	local ctrlIndex = 1--默认个位
+	local ctrlIndex = 1--????
 	while nData > 0 do
-		local imageIndex = math.mod(nData, 10)--最末位
+		local imageIndex = math.mod(nData, 10)--???
 		tVoteCtrl[ctrlIndex]:SetProperty("Image", g_Images[imageIndex][nIndex])
 		tVoteCtrl[ctrlIndex]:Show()
 		nData = math.floor(nData/10)

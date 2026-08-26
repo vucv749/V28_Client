@@ -5,7 +5,7 @@ local g_nUICommandID = 99996301
 -- 累计完成
 local g_TotalDoneCount = 0
 -- 今天任务
-local g_TodayState = { 0, 0 } -- 0 未接； 1 未完成； 2 完成
+local g_TodayState = { 0, 0 } -- 0 ??; 1 ???; 2 ??
 -- 奖励
 local g_RewardRecord = { 0, 0, 0 }
 local g_NeedPoint = { 2, 4, 7 }
@@ -14,7 +14,7 @@ local Frozen_PVPGoto_EnterNPCInfo =
 {
     scn = 0,
     pos = { 160, 112 },
-    name = "云凛凛",
+    name = "V鈔 l鏼 l鏼",
 }
 -- tooltip
 local g_tooltip = { "#{DDBB_240912_174}", "#{DDBB_240912_175}", "#{DDBB_240912_176}" }
@@ -26,7 +26,7 @@ function Bingxuejie_Yr_PreLoad()
     this:RegisterEvent("UI_COMMAND") -- UI_COMMAND
     this:RegisterEvent("VIEW_RESOLUTION_CHANGED", false)
     this:RegisterEvent("ADJEST_UI_POS", false)
-    this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false) -- 离开场景
+    this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false) -- ????
 end
 
 --=========================================================
@@ -41,10 +41,10 @@ end
 --=========================================================
 function Bingxuejie_Yr_OnEvent(event)
     if event == "UI_COMMAND" and tonumber(arg0) == g_nUICommandID then
-        -- 0 关闭, 1 打开, 2 刷新
+        -- 0 关睜, 1 打开, 2 刷新
         local nOpType = Get_XParam_INT(0)
 
-        -- 关闭界面
+        -- 关睜界面
         if nOpType == 0 then
             if this:IsVisible() then
                 Bingxuejie_Yr_OnClose()
@@ -65,7 +65,7 @@ function Bingxuejie_Yr_OnEvent(event)
     elseif event == "VIEW_RESOLUTION_CHANGED" or event == "ADJEST_UI_POS" then
         Bingxuejie_Yr_OnResetPos()
     elseif event == "HIDE_ON_SCENE_TRANSED" then
-        --切换场景关闭界面
+        --切换场景关睜界面
         Bingxuejie_Yr_OnClose()
     end
 end
@@ -139,7 +139,7 @@ function Bingxuejie_Yr_Update()
         _G["Bingxuejie_Yr_RedDot" .. i]:Hide()
         _G["Bingxuejie_Yr_Received" .. i]:Hide()
 
-        -- 展示奖励
+        -- 牴示奖励
         if g_TotalDoneCount >= g_NeedPoint[i] then
             if g_RewardRecord[i] == 0 then
                 -- 可领取
@@ -215,12 +215,12 @@ function Bingxuejie_Yr_Goto(index)
         AutoRuntoTargetExWithName(targetInfo.pos[1], targetInfo.pos[2], targetInfo.scn, targetInfo.name)
     end
 
-    -- 关闭UI
+    -- 关睜UI
     Bingxuejie_Yr_OnHiden()
 end
 
 --=========================================================
--- 关闭界面
+-- 关睜界面
 --=========================================================
 function Bingxuejie_Yr_OnClose()
     this:Hide()

@@ -2,7 +2,7 @@ local g_Frame_UnifiedXPosition;
 local g_Frame_UnifiedYPosition;
 
 --******************************
---战令补充进度界面
+--牻令补充进度界面
 --******************************
 
 local g_CurMonthPoint = 0
@@ -32,10 +32,10 @@ function ShengWang_BuySpeed_OnEvent(event)
         this:Hide()
     elseif (event == "UPDATE_YUANBAO") then
         ShengWang_BuySpeed_UpdateYuanBao()
-    elseif event == "UI_COMMAND" and (tonumber(arg0) == 89021503) then	--服务端传数据
-        local optType = Get_XParam_INT(0)	--界面操作类型（0 关闭，1打开， 2刷新）
+    elseif event == "UI_COMMAND" and (tonumber(arg0) == 89021503) then	--??????
+        local optType = Get_XParam_INT(0)	--??????(0 ??,1??, 2??)
         if 0 == optType then
-            --关闭
+            --关睜
             this:Hide()
         end 
         if  2 == optType and not this:IsVisible() then
@@ -123,7 +123,7 @@ end
 function ShengWang_BuySpeed_OK_Clicked()
 	local curTime = OSAPI:GetTickCount();
 	if ( curTime - g_ButtonLastTime < g_ButtonCDTime * 1000) then
- 	 	PushDebugMessage("#{SWXT_221213_220}"); --不可连续点击，请稍等片刻后再点击
+ 	 	PushDebugMessage("#{SWXT_221213_220}"); --??????,?????????
    		return;
    	end
    	g_ButtonLastTime = curTime;

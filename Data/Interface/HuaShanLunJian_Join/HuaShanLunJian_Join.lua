@@ -104,7 +104,7 @@ function HuaShanLunJian_Join_Open()
 		g_HuaShanLunJian_Join_MenPaiFitButton[levelIndex + 1]:SetProperty( "Image", g_NoImage )
 	end
 
-	-- Õ½¶Ó
+	--  ½¶Ó
 	if (bXBWTeamYes == 1) then
 	else
 	end

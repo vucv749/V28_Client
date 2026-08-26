@@ -1,38 +1,38 @@
 local strMenPaiName =
 {
-	"ÉÙÁÖ",
-	"Ã÷½Ì",
-	"Ø¤°ï",
-	"Îäµ±",
-	"¶ëáÒ",
-	"ĞÇËŞ",
-	"ÌìÁú",
-	"ÌìÉ½",
-	"åĞÒ£",
-	"ĞÂÊÖ",
-	"ÂüÍÓÉ½×¯",
-	"´óËÎ",
-	"´óËÎ",
-	"´óËÎ",
-	"´óÁÉ",
-	"´óÁÉ",
-	"´óÀí",
-	"Î÷ÏÄ",
-	"·¬°î",
-	"Ã§¸Ç",
-	"ÒÅÃñ",
-	"ÀÇÈË",
-	"°×Ãç",
-	"ºÚÃç",
-	"ĞŞÂŞ",
-	"Ô½Å®",
-	"Ô½ÄĞ",
-	"öùÉñ",
-	"Ò°ÊŞ",
-	"ÂÌÁÖ",
-	"ÑıÄ§",
-	"Ïä×Ó",
-	"±¦Ïä",
+	"Thiªu Lâm",
+	"Minh Giáo",
+	"Cái Bang",
+	"Võ Ğang",
+	"Nga Mi",
+	"Tinh Túc",
+	"Thiên Long",
+	"Thiên S½n",
+	"Tiêu dao",
+	"Tân thü",
+	"MÕn Ğà S½n Trang",
+	"ĞÕi T¯ng",
+	"ĞÕi T¯ng",
+	"ĞÕi T¯ng",
+	"ĞÕi Liêu",
+	"ĞÕi Liêu",
+	"ĞÕi Lı",
+	"Tây HÕ",
+	"Phiên bang",
+	"Mãng Cái",
+	"Di dân",
+	"Lang nhân",
+	"BÕch Miêu",
+	"H¡c Miêu",
+	"Tu La",
+	"Vi®t Næ",
+	"Vi®t Nam",
+	"NgÕc Th¥n",
+	"Dã thú",
+	"Løc lâm",
+	"Yêu ma",
+	"Thùng",
+	"Bäo Tß½ng",
 };
 
 local g_NowWDBossHp = 1
@@ -197,7 +197,7 @@ end
 function TargetFrame_Update_Name()
 	local txtColor="#cFFFFFF";
 --or Target:GetData("ISNPC") == 0
---ÒÔÇ°Íæ¼ÒÍ³Ò»ÏÔÊ¾Îª°×É«£¬¸ù¾İÈîÃ¶5ÔÂ27ÈÕÎÄµµ¸ü¸Ä£¬Íæ¼ÒºÍNPC×ßÍ¬Ò»¹æÔò¡£
+--ÒÔÇ°Íæ¼ÒÍ³Ò»ÏÔÊ¾Îª°×É«£¬¸ù¾İÈîÃ¶5ÔÂ27È ÎÄµµ¸ü¸Ä£¬Íæ¼ÒºÍNPC×ßÍ¬Ò»¹æÔò¡£
 	if Target:GetData( "RELATIVE" ) == 2  then
 		txtColor = "#W"
 	else
@@ -227,8 +227,8 @@ function TargetFrame_Update_Name()
 
 	--1.ÓÑºÃ
 	--2.ÖĞÁ¢
-	--3.ÕäÊŞ
-	--4.ÆÕÍ¨µĞÈË
+	--3. äÊŞ
+	--4.Æ Í¨µĞÈË
 	--5.¾«Ó¢µĞÈË
 	--6.µĞ·½boss
 	local nNpcRelation = Target:GetData( "RELATION" );
@@ -240,7 +240,7 @@ function TargetFrame_Update_Name()
 		TargetFrame_CampFrame1:Hide();
 	else
 		TargetFrame_CampFrame1:Show();
-		--×¢Òâ£ºÕâÀïÊÇºÜÎŞÄÎµÄÌØĞ´£¬¾ßÌåÊıÖµÇë²Î¿¼¿Í»§¶Ë´úÂëÖĞ
+		--×¢Òâ£º âÀïÊÇºÜÎŞÄÎµÄÌØĞ´£¬¾ßÌåÊıÖµÇë²Î¿¼¿Í»§¶Ë´úÂëÖĞ
 		--Client\Game\Interface\GMGameInterface_Script_Character.cpp
 		--INT Character::GetData(LuaPlus::LuaState* state) º¯Êı
 		local npcReputationImageIndex = nNpcReputation
@@ -295,8 +295,8 @@ function TargetFrame_Update_Level()
 	local txtColor="#cFFFFFF";
 	local level =  Target:GetData( "LEVEL" ) - Player:GetData( "LEVEL" );
 
-	AxTrace( 0,0, "µÈ¼¶²îÎª"..tostring( level ) );
---¸ù¾İÈîÃ¶5ÔÂ27ÈÕ²ß»®ÎÄµµĞŞ¸Ä
+	AxTrace( 0,0, "C¤p b§c Sai Vi"..tostring( level ) );
+--¸ù¾İÈîÃ¶5ÔÂ27È ²ß»®ÎÄµµĞŞ¸Ä
 --	if( level > 12 ) then
 --		txtColor = "#R";
 --	elseif( level > 4 ) then
@@ -312,7 +312,7 @@ function TargetFrame_Update_Level()
 --		txtColor="#c240c0c";
 --	end
 
---¸ù¾İÈîÃ¶5ÔÂ27ÈÕ²ß»®ÎÄµµĞŞ¸ÄÈçÏÂ
+--¸ù¾İÈîÃ¶5ÔÂ27È ²ß»®ÎÄµµĞŞ¸ÄÈçÏÂ
 	if( level > 5 ) then
 		txtColor = "#R";
 	elseif( level > 2 ) then

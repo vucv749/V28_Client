@@ -17,7 +17,7 @@ local m_uiActionText = {}
 
 local m_itemIdList= {}
 
-m_itemIdList[38002676] =  --荒兽魂玉礼盒
+m_itemIdList[38002676] =  --??????
 {
 	Title="#{MJXZ_210510_213}",
 	Info="#{MJXZ_210510_214}",
@@ -28,7 +28,7 @@ m_itemIdList[38002676] =  --荒兽魂玉礼盒
 			},
 }
 
-m_itemIdList[38002677] =  --灵兽魂玉礼盒
+m_itemIdList[38002677] =  --??????
 {
 	Title="#{MJXZ_210510_224}",
 	Info="#{MJXZ_210510_225}",
@@ -41,7 +41,7 @@ m_itemIdList[38002677] =  --灵兽魂玉礼盒
 
 
 
---预加载函数，可以而且只能在这里注册脚本关心的事件
+--预加载函数，可以而且只能在犫里注册脚本关心的事件
 function SpecialGift_FiveChoice_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
 	-- 游戏窗口尺寸发生了变化

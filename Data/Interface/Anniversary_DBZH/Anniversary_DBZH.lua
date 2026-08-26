@@ -36,8 +36,8 @@ local totalAwardState={0,0,0,0,0,0}
 --=========
 function Anniversary_DBZH_PreLoad()
 
-	this:RegisterEvent("UI_COMMAND")--打开or刷新界面
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--进场景关闭界面
+	this:RegisterEvent("UI_COMMAND")--??or????
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
 	this:RegisterEvent("ADJEST_UI_POS")
 	
@@ -81,7 +81,7 @@ function Anniversary_DBZH_OnEvent(event)
 		nCount = Get_XParam_INT( 0 )
         --nRandomLuckyType = Get_XParam_INT( 1 )2024重开最后决定不要运势了
         nCouponNum = Get_XParam_INT( 1 )
-		local bShow = Get_XParam_INT( 2 )--1为打开,0为仅更新数据
+		local bShow = Get_XParam_INT( 2 )--1???,0??????
 
 		-- totalAwardState[1] = Get_XParam_INT( 4 )
 		-- totalAwardState[2] = Get_XParam_INT( 5 )
@@ -115,11 +115,11 @@ end
 function Anniversary_DBZH_SetFrame()
 
 
-	--今日活跃值
+	--今葼活跃值
 	local nTodayActivePoint = Lua_GetZhouHuoYueValueDay()
 	Anniversary_DBZH_ActiveNum:SetText(ScriptGlobal_Format("#{ZNDB_230215_157}",nTodayActivePoint));
 
-	--今日运势(2024重开最后决定不要)
+	--今葼运势(2024重开最后决定不要)
 	-- local text = ScriptGlobal_Format("#{ZNDB_230215_34}",LuckyStr[nRandomLuckyType]);
 	-- Anniversary_DBZH_Text01:SetText(text);
 
@@ -184,7 +184,7 @@ function Anniversary_DBZH_PreviewBtnClicked()
 end
 
 --=========
---关闭
+--关睜
 --=========
 function  Anniversary_DBZH_ClickClose()
 
@@ -206,7 +206,7 @@ function  Anniversary_DBZH_ClickClose()
 end
 
 --=========
---兑换召唤券按钮点击
+--兑换犢唤券按钮点击
 --=========
 function Anniversary_DBZH_ExchangeBtnClicked(nType)
 

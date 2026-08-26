@@ -19,65 +19,65 @@ local g_NeedText = {
 }
 
 local g_NeedItem = {
-	[3] = 30505079,		--高级婚礼券
-	[4] = 38002832,		--挚梦婚礼券
+	[3] = 30505079,		--?????
+	[4] = 38002832,		--?????
 }
 
-local g_ReexperienceWedding = 808122		--重温脚本id
+local g_ReexperienceWedding = 808122		--????id
 local g_ZhiMengWedding = 4
 
-local g_SelectWedding = 1 --选择婚礼 普通 高级 豪华 挚梦
-local g_SelectDetail = 1 --婚礼选项 场地预览 婚礼流程预览 花车预览
-local g_SelectImage = 1	--具体哪张图 时装可能有多张图
+local g_SelectWedding = 1 --???? ?? ?? ?? ??
+local g_SelectDetail = 1 --???? ???? ?????? ????
+local g_SelectImage = 1	--????? ????????
 
 local g_Image = {}
-g_Image[1] = {	--普通婚礼
-	{"set:Xialv02 image:XiaLv_MarryChoose_Image5"}, --场地
-	{"set:Xialv05 image:XiaLv_MarryChoose_Image22"}, --时装
-	{"set:Xialv06 image:XiaLv_MarryChoose_Image17",	--司仪2
-	"set:Xialv08 image:XiaLv_MarryChoose_Image19",	--远景对拜2
-	"set:Xialv02 image:XiaLv_MarryChoose_Image1",	--拜堂01
-	"set:Xialv03 image:XiaLv_MarryChoose_Image13",	--定情物2
-	"set:Xialv06 image:XiaLv_MarryChoose_Image15",	--抛绣球2
-	},	--婚礼流程预览
-	{"set:Xialv03 image:XiaLv_MarryChoose_Image9"}, --花车
+g_Image[1] = {	--????
+	{"set:Xialv02 image:XiaLv_MarryChoose_Image5"}, --??
+	{"set:Xialv05 image:XiaLv_MarryChoose_Image22"}, --??
+	{"set:Xialv06 image:XiaLv_MarryChoose_Image17",	--??2
+	"set:Xialv08 image:XiaLv_MarryChoose_Image19",	--????2
+	"set:Xialv02 image:XiaLv_MarryChoose_Image1",	--??01
+	"set:Xialv03 image:XiaLv_MarryChoose_Image13",	--???2
+	"set:Xialv06 image:XiaLv_MarryChoose_Image15",	--???2
+	},	--??????
+	{"set:Xialv03 image:XiaLv_MarryChoose_Image9"}, --??
 }
 
-g_Image[2] = { --高级婚礼
+g_Image[2] = { --????
 	{"set:Xialv03 image:XiaLv_MarryChoose_Image6"},
 	{"set:Xialv05 image:XiaLv_MarryChoose_Image23"},
-	{"set:Xialv06 image:XiaLv_MarryChoose_Image17",	--司仪2
-	"set:Xialv08 image:XiaLv_MarryChoose_Image19",	--远景对拜2
-	"set:Xialv02 image:XiaLv_MarryChoose_Image2",	--拜堂02
-	"set:Xialv03 image:XiaLv_MarryChoose_Image13",	--定情物2
-	"set:Xialv06 image:XiaLv_MarryChoose_Image15",	--抛绣球2
-	},	--婚礼流程预览
+	{"set:Xialv06 image:XiaLv_MarryChoose_Image17",	--??2
+	"set:Xialv08 image:XiaLv_MarryChoose_Image19",	--????2
+	"set:Xialv02 image:XiaLv_MarryChoose_Image2",	--??02
+	"set:Xialv03 image:XiaLv_MarryChoose_Image13",	--???2
+	"set:Xialv06 image:XiaLv_MarryChoose_Image15",	--???2
+	},	--??????
 	{"set:Xialv03 image:XiaLv_MarryChoose_Image10"},
 }
 
-g_Image[3] = { --豪华婚礼
+g_Image[3] = { --????
 	{"set:Xialv03 image:XiaLv_MarryChoose_Image7"},
 	{"set:Xialv08 image:XiaLv_MarryChoose_Image24"},
-	{"set:Xialv06 image:XiaLv_MarryChoose_Image17",	--司仪2
-	"set:Xialv08 image:XiaLv_MarryChoose_Image19",	--远景对拜2
-	"set:Xialv02 image:XiaLv_MarryChoose_Image3",	--拜堂03
-	"set:Xialv03 image:XiaLv_MarryChoose_Image13",	--定情物2
-	"set:Xialv06 image:XiaLv_MarryChoose_Image15",	--抛绣球2
-	},	--婚礼流程预览
+	{"set:Xialv06 image:XiaLv_MarryChoose_Image17",	--??2
+	"set:Xialv08 image:XiaLv_MarryChoose_Image19",	--????2
+	"set:Xialv02 image:XiaLv_MarryChoose_Image3",	--??03
+	"set:Xialv03 image:XiaLv_MarryChoose_Image13",	--???2
+	"set:Xialv06 image:XiaLv_MarryChoose_Image15",	--???2
+	},	--??????
 	{"set:Xialv03 image:XiaLv_MarryChoose_Image11"},
 }
 
-g_Image[4] = { --挚梦婚礼
+g_Image[4] = { --????
 	{"set:Xialv03 image:XiaLv_MarryChoose_Image8"},
 	{"set:Xialv09 image:XiaLv_MarryChoose_Image25"},
-	{"set:Xialv06 image:XiaLv_MarryChoose_Image16",	--司仪1
-	"set:Xialv06 image:XiaLv_MarryChoose_Image18",	--远景对拜1
-	"set:Xialv02 image:XiaLv_MarryChoose_Image4",	--拜堂04
-	"set:Xialv03 image:XiaLv_MarryChoose_Image12",	--定情物1
-	"set:Xialv06 image:XiaLv_MarryChoose_Image14",	--抛绣球1
-	},	--婚礼流程预览
+	{"set:Xialv06 image:XiaLv_MarryChoose_Image16",	--??1
+	"set:Xialv06 image:XiaLv_MarryChoose_Image18",	--????1
+	"set:Xialv02 image:XiaLv_MarryChoose_Image4",	--??04
+	"set:Xialv03 image:XiaLv_MarryChoose_Image12",	--???1
+	"set:Xialv06 image:XiaLv_MarryChoose_Image14",	--???1
+	},	--??????
 	{"set:Xialv03 image:XiaLv_MarryChoose_Image11"},
-	{"set:Xialv09 image:XiaLv_MarryChoose_Image26"}, --金约
+	{"set:Xialv09 image:XiaLv_MarryChoose_Image26"}, --??
 }
 
 
@@ -91,7 +91,7 @@ local g_DetailButton_Reexperience = {}
 function XiaLv_ChooseWedding_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
 
-	this:RegisterEvent("PLAYER_ENTERING_WORLD")		-- 进入游戏世界
+	this:RegisterEvent("PLAYER_ENTERING_WORLD")		-- ??????
 
 	this:RegisterEvent("ADJEST_UI_POS");
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED");
@@ -125,7 +125,7 @@ end
 -- OnEvent
 function XiaLv_ChooseWedding_OnEvent(event)
 
-	if ( event == "UI_COMMAND" and tonumber(arg0) == g_UICommand_Open ) then --打开界面
+	if ( event == "UI_COMMAND" and tonumber(arg0) == g_UICommand_Open ) then --????
 		g_ServerNpc = Get_XParam_INT(0)
 		g_ScriptId = Get_XParam_INT(1)
 		XiaLv_ChooseWedding_Open()
@@ -334,7 +334,7 @@ function XiaLv_ChooseWedding_Next()
 	end
 end
 
---只关闭界面
+--只关睜界面
 function XiaLv_ChooseWedding_OnHidden()
 	
 	if this:IsVisible() == false then
@@ -355,7 +355,7 @@ function XiaLv_ChooseWedding_OnHidden()
 		Set_XSCRIPT_ParamCount(0)
 	Send_XSCRIPT()
 	
-	PushDebugMessage("#{JHYH_230330_107}") --您结束了方案选择。
+	PushDebugMessage("#{JHYH_230330_107}") --?????????
 	CloseWindow("MessageBox_Self",true)
 end
 

@@ -2,7 +2,7 @@
 local Higntlight_ListMini_Frame_UnifiedPosition
 
 function Higntlight_ListMini_PreLoad()
-    --第二个参数表示界面关闭时是否响应事件 默认为TRUE
+    --第二个参数表示界面关睜时是否响应事件 默认为TRUE
     this:RegisterEvent("UI_COMMAND", true)
     this:RegisterEvent("SHOW_HIGHLIGHT_DAMAGE", true)
     this:RegisterEvent("SHOW_HIGHLIGHT_DAMAGE_MINI", true)
@@ -20,15 +20,15 @@ end
 function Higntlight_ListMini_OnEvent(event)
     if (event == "UI_COMMAND" and tonumber(arg0) == 20250716) then
         local op = Get_XParam_INT(0)
-        if op == 0 then --关闭界面
+        if op == 0 then --????
             Higntlight_ListMini_OnClose()
         end
-    elseif event == "SHOW_HIGHLIGHT_DAMAGE" then --刷新数据
-    elseif event == "SHOW_HIGHLIGHT_DAMAGE_MINI" then --点击最小化按钮 此界面暂时关闭
+    elseif event == "SHOW_HIGHLIGHT_DAMAGE" then --????
+    elseif event == "SHOW_HIGHLIGHT_DAMAGE_MINI" then --??????? ???????
         this:Show()
-    elseif event == "SHOW_HIGHLIGHT_DAMAGE_MAX" then --点击最大化按钮 此界面显示
+    elseif event == "SHOW_HIGHLIGHT_DAMAGE_MAX" then --??????? ?????
         this:Hide()
-    elseif event == "ON_SCENE_TRANSING" then --客户端开始切换场景
+    elseif event == "ON_SCENE_TRANSING" then --?????????
         Higntlight_ListMini_OnClose()
     elseif event == "PLAYER_LEAVE_WORLD" then
         Higntlight_ListMini_OnClose()
@@ -45,7 +45,7 @@ function Higntlight_ListMini_Open()
     PushEvent("SHOW_HIGHLIGHT_DAMAGE_MAX")
 end
 
---关闭
+--关睜
 function Higntlight_ListMini_OnClose()
     this:Hide()
 end

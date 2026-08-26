@@ -19,10 +19,10 @@ end
 function GuildLeagueCreate_OnEvent( event )
 	if event == "GUILD_LEAGUE_CREATE" or 
 		(event == "UI_COMMAND" and tonumber(arg0)==1207) then
-		GuildLeagueCreate_InputName:SetText("×î³¤12¸ö×Ö·û")
+		GuildLeagueCreate_InputName:SetText("Dài nh¤t 12Cá tñ phù")
 		GuildLeagueCreate_InputName:SetProperty("DefaultEditBox", "True");
 		GuildLeagueCreate_InputName:SetSelected(0,-1)
-		GuildLeagueCreate_InputDesc:SetText("Ò»¸öÐÂÐËµÄÍ¬ÃËÊÆÁ¦")
+		GuildLeagueCreate_InputDesc:SetText("Mµt cái m¾i phát Ðích ð°ng minh thª lñc")
 		this:Show()
 		g_clientNpcId = Get_XParam_INT(0);
 		g_clientNpcId = Target:GetServerId2ClientId(g_clientNpcId);
@@ -45,7 +45,7 @@ function GuildLeagueCreate_DoCreate()
 	end
 	
 	if desc==nil or desc=="" then
-		PushDebugMessage("ÄúÃ»ÓÐÊäÈëÍ¬ÃËÐûÑÔ")
+		PushDebugMessage("Nhçm không có bÕi Nh§p ð°ng minh tuyên ngôn")
 		return
 	end
 	
@@ -70,7 +70,7 @@ function GuildLeagueCreate_CareEventHandle(careId, op, distance)
 		if(tonumber(careId) ~= g_clientNpcId) then
 			return;
 		end
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if(op == "distance" and tonumber(distance)>MAX_OBJ_DISTANCE or op=="destroy") then
 			this:Hide();
 		end

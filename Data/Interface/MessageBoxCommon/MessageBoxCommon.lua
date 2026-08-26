@@ -28,10 +28,10 @@ function MessageBoxCommon_OnEvent(event)
 		g_ScriptStringOK = arg3;
 		g_ScriptStringCancel = arg4;
 		
-		MessageBoxCommon_OK_Button:SetText("È·¶¨");
+		MessageBoxCommon_OK_Button:SetText("Xác nh§n");
 		MessageBoxCommon_OK_Button:Show();
 		
-		MessageBoxCommon_Cancel_Button:SetText("È¡Ïû");
+		MessageBoxCommon_Cancel_Button:SetText("Hüy bö");
 		MessageBoxCommon_Cancel_Button:Show();
 		
 		MessageBoxCommon_UpdateRect();
@@ -49,13 +49,13 @@ end
 function MessageBoxCommon_Ok_Clicked()
 	this:Hide();
 	CallScriptString(g_EnvName, g_ScriptStringOK);
-	--ÔÚÕâÀïÒÑ¾­¸Ä±äÁËScriptEnv£¬²»ÒªÔÙ¼ÌĞøµ÷ÓÃMessageBoxÄÚ²¿º¯ÊıÁË
+	--ÔÚ âÀïÒÑ¾­¸Ä±äÁËScriptEnv£¬²»ÒªÔÙ¼ÌĞøµ÷ÓÃMessageBoxÄÚ²¿º¯ÊıÁË
 end
 
 function MessageBoxCommon_Cancel_Clicked()
 	this:Hide();
 	CallScriptString(g_EnvName, g_ScriptStringCancel);
-	--ÔÚÕâÀïÒÑ¾­¸Ä±äÁËScriptEnv£¬²»ÒªÔÙ¼ÌĞøµ÷ÓÃMessageBoxÄÚ²¿º¯ÊıÁË
+	--ÔÚ âÀïÒÑ¾­¸Ä±äÁËScriptEnv£¬²»ÒªÔÙ¼ÌĞøµ÷ÓÃMessageBoxÄÚ²¿º¯ÊıÁË
 end
 
 function MessageBoxCommon_Info_Clicked()

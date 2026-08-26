@@ -4,7 +4,7 @@
 --客户端接口
 --Lua_IsShowQuickEnterPointTip,Lua_ShowQuickEnterPointTip     动态小红点显隐
 --Lua_IsShowQuickEnterPointFresh,Lua_ShowQuickEnterPointFresh 动态浮动tips显隐
---Lua_IsShowQuickEnter,Lua_ShowQuickEnter                     动态button显隐 ！！！这个默认是显示的，只有在活动时间内，有需求动态隐藏的功能才调用，不然不需要调用
+--Lua_IsShowQuickEnter,Lua_ShowQuickEnter                     动态button显隐 ！！！犫个默认是显示的，只有在活动时间内，有需求动态隐藏的功能才调用，不然不需要调用
 --服务器接口
 --LuaFnUpdateQuickEnter 		button显隐
 --LuaFnUpdateQuickEnterTips 	红点显隐
@@ -15,17 +15,17 @@
 --表ID不需要连续，目的是支持功能先后上外网的情况。
 
 -----------------------------------------------------------------------------
-local playerQuicklyEnterUI          = {}	-- UI名称
-local playerQuicklyEnterAnimateBtn  = {}	-- 动态提示按钮 
+local playerQuicklyEnterUI          = {}	-- UI??
+local playerQuicklyEnterAnimateBtn  = {}	-- ?????? 
 local g_RedPoint                    = {}
 
 local BkSize = {
-	[1] = {45,49},  -- 1024x768分辨率下的frame尺寸
-	[2] = {45,49},  -- 非1024x768分辨率以上的frame尺寸
+	[1] = {45,49},  -- 1024x768?????frame??
+	[2] = {45,49},  -- ?1024x768??????frame??
 } 
 local ArraySize = {
-	[1] = {19.5,42},--{15.4,33.1},  -- 1024x768分辨率下的frame尺寸
-	[2] = {19.5,42},--{20,43},  -- 非1024x768分辨率以上的frame尺寸
+	[1] = {19.5,42},--{15.4,33.1},  -- 1024x768?????frame??
+	[2] = {19.5,42},--{20,43},  -- ?1024x768??????frame??
 }
 
 local g_nScreenWidthLimit = 1280 
@@ -41,14 +41,14 @@ local nChangeSceneCheck = 0
 -- PRELOAD
 --**********************************
 function PlayerQuicklyEnter_PreLoad()
-	this:RegisterEvent("PLAYER_ENTERING_WORLD" );	-- 进入world
-	this:RegisterEvent("UNIT_LEVEL");				-- 升级   
-	this:RegisterEvent("HIDE_THIS_UI")				-- 隐藏界面
-	this:RegisterEvent("RESET_ALLUI")				-- 返回登录界面, 重置所有UI 
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false);	-- 游戏分辨率发生了变化
-	this:RegisterEvent("UI_COMMAND")				-- 界面 
-	this:RegisterEvent("UPDATE_QUICK")				-- 按钮 
-	this:RegisterEvent("UPDATE_QUICKTIPS")			-- 红点
+	this:RegisterEvent("PLAYER_ENTERING_WORLD" );	-- ??world
+	this:RegisterEvent("UNIT_LEVEL");				-- ??   
+	this:RegisterEvent("HIDE_THIS_UI")				-- ????
+	this:RegisterEvent("RESET_ALLUI")				-- ??????, ????UI 
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false);	-- ??????????
+	this:RegisterEvent("UI_COMMAND")				-- ?? 
+	this:RegisterEvent("UPDATE_QUICK")				-- ?? 
+	this:RegisterEvent("UPDATE_QUICKTIPS")			-- ??
 	this:RegisterEvent("UPDATE_QUICKFRESH")			-- freshtips 
 end
 
@@ -101,7 +101,7 @@ function PlayerQuicklyEnter_OnEvent( event )
 		nChangeSceneCount = 0;
 		nChangeSceneCheck = 0;
 		CloseFreshManGuide() 
-		-- 关闭所有按钮的闪烁
+		-- 关睜所有按钮的闪烁
 		for	i = 1, table.getn( g_RedPoint ) do
 			g_RedPoint[i]:Hide()
 		end 
@@ -272,7 +272,7 @@ function PlayerQuicklyEnter_Clicked( nIndex )
 		PlayerQuicklyEnter_UpdateUI()
 		return
 	end	
-	if ( nIndex == 1 ) then   --扫荡
+	if ( nIndex == 1 ) then   --??
 		local nPlayerLevel = Player:GetData("LEVEL")
 		if nPlayerLevel < 15 then
 			if ( IsWindowShow( "SweepAll" ) ) then
@@ -281,7 +281,7 @@ function PlayerQuicklyEnter_Clicked( nIndex )
 			end
 		end	
 		OpenSecKillList();
-	elseif (nIndex == 2 ) then --周活跃
+	elseif (nIndex == 2 ) then --???
 		local nPlayerLevel = Player:GetData("LEVEL")
 		if nPlayerLevel < 35 then
 			PushDebugMessage("#{ZLSJ_231106_116}")
@@ -299,80 +299,80 @@ function PlayerQuicklyEnter_Clicked( nIndex )
 			Set_XSCRIPT_Parameter(0, 1 )
 			Set_XSCRIPT_ParamCount(1)
 		Send_XSCRIPT()	
-	elseif (nIndex == 3 ) then  --英雄归来
+	elseif (nIndex == 3 ) then  --????
 		Clear_XSCRIPT()
-			Set_XSCRIPT_Function_Name( "OnOpenUI" ); 		-- 脚本号
-			Set_XSCRIPT_ScriptID( 808110 );						-- 脚本编号
+			Set_XSCRIPT_Function_Name( "OnOpenUI" ); 		-- ???
+			Set_XSCRIPT_ScriptID( 808110 );						-- ????
 			Set_XSCRIPT_Parameter(0, 1)
-			Set_XSCRIPT_ParamCount( 1 );						-- 参数个数
+			Set_XSCRIPT_ParamCount( 1 );						-- ????
 		Send_XSCRIPT()	
-	elseif (nIndex == 4 )  then --参武道
+	elseif (nIndex == 4 )  then --???
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("UILogic")
 			Set_XSCRIPT_ScriptID(891218)
 			Set_XSCRIPT_Parameter( 0, 1 )
 			Set_XSCRIPT_ParamCount(1)
 		Send_XSCRIPT()	
-	elseif (nIndex == 5 )  then --兽魂现
+	elseif (nIndex == 5 )  then --???
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("OpenUI")
 			Set_XSCRIPT_ScriptID(893040)
 			Set_XSCRIPT_Parameter( 0, 1 )
 			Set_XSCRIPT_ParamCount(1)
 		Send_XSCRIPT()	
-	elseif (nIndex == 6 )  then --鸣玉录
+	elseif (nIndex == 6 )  then --???
 		if(IsWindowShow("PetSoul_FengHunLu")) then
 			CloseWindow("PetSoul_FengHunLu", true)
 			return
 		end 
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name( "AskOpenMainUI" ); 	
-			Set_XSCRIPT_ScriptID( 791010 );						-- 脚本编号
-			Set_XSCRIPT_ParamCount( 0 );						-- 参数个数
+			Set_XSCRIPT_ScriptID( 791010 );						-- ????
+			Set_XSCRIPT_ParamCount( 0 );						-- ????
 		Send_XSCRIPT()
-	elseif (nIndex == 7 )  then --新门派扶持
+	elseif (nIndex == 7 )  then --?????
 		if(IsWindowShow("ManTuo_Fuchi")) then
 			CloseWindow("ManTuo_Fuchi", true)
 			return
 		end 
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name( "OnOpenGuanHuaiButton" ); 	
-			Set_XSCRIPT_ScriptID( 888921 );						-- 脚本编号
-			Set_XSCRIPT_ParamCount( 0 );						-- 参数个数
+			Set_XSCRIPT_ScriptID( 888921 );						-- ????
+			Set_XSCRIPT_ParamCount( 0 );						-- ????
 		Send_XSCRIPT()
-	elseif (nIndex == 8 )  then --曼陀山寨预热任务
+	elseif (nIndex == 8 )  then --????????
 		if(IsWindowShow("ManTuo_Yure")) then
 			CloseWindow("ManTuo_Yure", true)
 			return
 		end 
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name( "OnUIEvent" ); 	
-			Set_XSCRIPT_ScriptID( 791060 )						-- 脚本编号
+			Set_XSCRIPT_ScriptID( 791060 )						-- ????
 			Set_XSCRIPT_Parameter( 0, 4 )
 			Set_XSCRIPT_ParamCount(1)
 		Send_XSCRIPT()
-	elseif (nIndex == 10 )  then --主线剧情任务
+	elseif (nIndex == 10 )  then --??????
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("UILogic")
 			Set_XSCRIPT_ScriptID(890154)
 			Set_XSCRIPT_Parameter( 0, 1 )
 			Set_XSCRIPT_ParamCount(1)
 		Send_XSCRIPT()	
-	elseif (nIndex == 11 )  then --2023Q1不老长春谷预热任务
+	elseif (nIndex == 11 )  then --2023Q1?????????
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("OnOpenUI")
 			Set_XSCRIPT_ScriptID(890152)
 			Set_XSCRIPT_ParamCount(0)
 		Send_XSCRIPT()
-	elseif (nIndex == 12 )  then --打开阵营选择界面
+	elseif (nIndex == 12 )  then --????????
 		Lua_OpenShengWangChoose()
-	elseif (nIndex == 13 )  then -- 战令
+	elseif (nIndex == 13 )  then -- ??
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name( "AskOpenMainUI" )
 			Set_XSCRIPT_ScriptID( 890215 )
 			Set_XSCRIPT_ParamCount(0)
 		Send_XSCRIPT()
-	elseif (nIndex == 14 )  then --2023Q2版本预热-此间相思
+	elseif (nIndex == 14 )  then --2023Q2????-????
 		if(IsWindowShow("CiJianXiangSi")) then
 			CloseWindow("CiJianXiangSi", true)
 			Clear_XSCRIPT()
@@ -419,13 +419,13 @@ function PlayerQuicklyEnter_Clicked( nIndex )
 			CloseWindow("QiXi_Activity", true)
 			return
 		end 		
-		--七夕防流失整合界面
+		--七夕防流失狖合界面
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("OnOpenUI")
 			Set_XSCRIPT_ScriptID(998508)
 			Set_XSCRIPT_ParamCount(0)
 		Send_XSCRIPT()
-	elseif (nIndex == 18 )  then	--2023q3 神兵副武器系统引导设计
+	elseif (nIndex == 18 )  then	--2023q3 ???????????
 		if(IsWindowShow("ShenbingGuideLetter")) then
 			CloseWindow("ShenbingGuideLetter", true)
 			return
@@ -436,7 +436,7 @@ function PlayerQuicklyEnter_Clicked( nIndex )
 			Set_XSCRIPT_ScriptID(890273)
 			Set_XSCRIPT_ParamCount(0)
 		Send_XSCRIPT()	 
-	elseif (nIndex == 19 )  then	--特色服
+	elseif (nIndex == 19 )  then	--???
 		if(IsWindowShow("TimingPlay")) then
 			CloseWindow("TimingPlay", true)
 			return
@@ -447,7 +447,7 @@ function PlayerQuicklyEnter_Clicked( nIndex )
 			Set_XSCRIPT_ScriptID(998517)
 			Set_XSCRIPT_ParamCount(0)
 		Send_XSCRIPT()	
-	elseif (nIndex == 20 )  then	--嘉年华直播
+	elseif (nIndex == 20 )  then	--?????
 		PlayerQuicklyEnter_Open_JiNianHua()
 	elseif nIndex == 21 then
 		--2023Q4时装随机宝箱
@@ -484,13 +484,13 @@ function PlayerQuicklyEnter_Clicked( nIndex )
 			Set_XSCRIPT_Parameter(0, 1)
 			Set_XSCRIPT_ParamCount(1)
 		Send_XSCRIPT()
-	elseif nIndex == 25 then--飞凰礼
+	elseif nIndex == 25 then--???
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("OnShowClientUI")
 			Set_XSCRIPT_ScriptID(998584)
 			Set_XSCRIPT_ParamCount(0)
 		Send_XSCRIPT()
-	elseif nIndex == 26 then -- 【2024Q2】新版本预热-山重水复
+	elseif nIndex == 26 then -- ?2024Q2??????-????
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("OnUIEvent")
 			Set_XSCRIPT_ScriptID(998772)
@@ -498,21 +498,21 @@ function PlayerQuicklyEnter_Clicked( nIndex )
 			Set_XSCRIPT_Parameter(1, 0)
 			Set_XSCRIPT_ParamCount(2)
 		Send_XSCRIPT()
-	elseif nIndex == 27 then--新任务引导
+	elseif nIndex == 27 then--?????
 		PushEvent("UI_COMMAND", 99878902,1)
-	elseif nIndex == 28 then--大话西游整合界面
+	elseif nIndex == 28 then--????????
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("OnOpenDaHuaXiYouActivity")
 			Set_XSCRIPT_ScriptID(890364)
 			Set_XSCRIPT_ParamCount(0)
 		Send_XSCRIPT()
-	elseif (nIndex == 29) then	--大话预热
+	elseif (nIndex == 29) then	--????
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("OnOpenDaHuaXiYouYuReActivity")
 			Set_XSCRIPT_ScriptID(999406)
 			Set_XSCRIPT_ParamCount(0)
 		Send_XSCRIPT()		
-	elseif (nIndex == 31) then	--大话预热
+	elseif (nIndex == 31) then	--????
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("OpenUI")
 			Set_XSCRIPT_ScriptID(999441)
@@ -526,13 +526,13 @@ end
 function PlayerQuicklyEnter_Open_Clicked()
 	g_bIsFlex = 0 
 	PushEvent( "CLOSE_FRESHMAN_GUIDE" );
-	PlayerQuicklyEnter_UpdateUI()  --所有按钮都在此处更新
+	PlayerQuicklyEnter_UpdateUI()  --??????????
 end
 
 function PlayerQuicklyEnter_Close_Clicked() 
 	g_bIsFlex = 1
 	PushEvent( "CLOSE_FRESHMAN_GUIDE" );
-	PlayerQuicklyEnter_UpdateUI()  --所有按钮都在此处更新
+	PlayerQuicklyEnter_UpdateUI()  --??????????
 end
 
 
@@ -547,7 +547,7 @@ function PlayerQuicklyEnter_Update_JiNianHua(nCtlidx)
 		return
 	end
 
-	--日期
+	--葼期
 	local curDay = tonumber(DataPool:GetServerDayTime());
 	--时间
 	local curTime = tonumber(DataPool:GetServerMinuteTime())

@@ -13,8 +13,8 @@ local g_TimingPlay_EndTime = 0
 --=========
 function TimingPlay_PreLoad()
 
-	this:RegisterEvent("UI_COMMAND", true)--´ò¿ªorË¢ÐÂ½çÃæ
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--½ø³¡¾°¹Ø±Õ½çÃæ
+	this:RegisterEvent("UI_COMMAND", true)--??or????
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
 	this:RegisterEvent("ADJEST_UI_POS",false) 
 	this:RegisterEvent("OPENJIANGSHUJISHI",true) 
@@ -218,7 +218,7 @@ function TimingPlay_Click(idx)
 	local month = math.mod(math.floor(opentime/100),100)
 	local day   = math.mod(opentime,100)			
 	if year >= 2099 then
-		PushDebugMessage("¾´ÇëÆÚ´ý")
+		PushDebugMessage("Kính Thïnh ch¶ mong")
 		return
 	end
 	if opentime > curDay then

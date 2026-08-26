@@ -1,12 +1,12 @@
 --PetPropagateSingle.lua
---µ¥ÈËÕäÊŞ·±Ö³½çÃæ(Á½¸öÕäÊŞ)
+--µ¥ÈË äÊŞ·±Ö³½çÃæ(Á½¸ö äÊŞ)
 local firstPet  = { idx = -1, guid = { high = -1, low = -1 } }
 local secondPet = { idx = -1, guid = { high = -1, low = -1 } }
 local g_currentChoose = -1
 local g_wastemoney 	= 20000
---µ¥ÈËÕäÊŞ·±Ö³²ÄÁÏ
+--µ¥ÈË äÊŞ·±Ö³²ÄÁÏ
 local g_ItemPos 	= -1
---µ¥ÈËÕäÊŞ·±Ö³²ÄÁÏID °®ĞÄĞ¡ÎÑ
+--µ¥ÈË äÊŞ·±Ö³²ÄÁÏID °®ĞÄĞ¡ÎÑ
 local g_ItemTblID   = 30309794
 --
 local g_clientNpcId = -1
@@ -21,12 +21,12 @@ function PetPropagateSingle_PreLoad()
 	this : RegisterEvent( "UNIT_MONEY" )
 	this : RegisterEvent( "UI_COMMAND" )
 	this : RegisterEvent( "MONEYJZ_CHANGE" )
-	this : RegisterEvent( "REPLY_MISSION_PET" )				-- Íæ¼Ò´ÓÁĞ±íÑ¡¶¨Ò»Ö»ÕäÊŞ
-	this : RegisterEvent( "UPDATE_PET_PAGE" )				-- Íæ¼ÒÉíÉÏµÄÕäÊŞÊı¾İ·¢Éú±ä»¯
-	this : RegisterEvent( "DELETE_PET" )					-- Íæ¼ÒÉíÉÏ¼õÉÙÒ»Ö»ÕäÊŞ
-	this : RegisterEvent( "OBJECT_CARED_EVENT" )			-- ¹ØĞÄ NPC µÄ´æÔÚºÍ·¶Î§
+	this : RegisterEvent( "REPLY_MISSION_PET" )				-- ???????????
+	this : RegisterEvent( "UPDATE_PET_PAGE" )				-- ?????????????
+	this : RegisterEvent( "DELETE_PET" )					-- ??????????
+	this : RegisterEvent( "OBJECT_CARED_EVENT" )			-- ?? NPC ??????
 	this : RegisterEvent( "UNIT_MONEY" )
-	this : RegisterEvent( "MONEYJZ_CHANGE" )				--½»×Ó
+	this : RegisterEvent( "MONEYJZ_CHANGE" )				--??
 	this : RegisterEvent( "PACKAGE_ITEM_CHANGED" )
 	this : RegisterEvent( "UPDATE_PET_PROPAGASINGLE" )
 	this : RegisterEvent( "TEAM_PETCREATE_OPENED" )
@@ -99,7 +99,7 @@ function PetPropagateSingle_OnEvent(event)
 end
 
 --*************************************************
---µ¥ÈËÕäÊŞ·±Ö³½çÃæ½ÓÊÜÃüÁî
+--µ¥ÈË äÊŞ·±Ö³½çÃæ½ÓÊÜÃüÁî
 --*************************************************
 function PetPropagateSingle_UICommand(arg0)
 	local nOpt = tonumber(arg0)
@@ -117,12 +117,12 @@ function PetPropagateSingle_OK_Clicked()
 	local nName1 = PetPropagateSingle_PetName1 : GetText()
 	local nName2 = PetPropagateSingle_PetName2 : GetText()
 	if (firstPet.guid.high == -1 or firstPet.guid.low == -1	or secondPet.guid.high == -1 or secondPet.guid.low == -1) then
-		PushDebugMessage("ÇëÑ¡ÔñÕäÊŞ£¡")
+		PushDebugMessage("Thïnh lña ch÷n Trân Thú!")
 		return
 	end
 
 	if (nName1 == nil or nName1 == "" or nName2 == nil or nName2 == "") then
-		PushDebugMessage("ÇëÑ¡ÔñÕäÊŞ£¡")
+		PushDebugMessage("Thïnh lña ch÷n Trân Thú!")
 		return
 	end
 
@@ -209,10 +209,10 @@ function PetPropagateSingle_CareObj(careId, op, distance)
 end
 
 --*************************************************
---´ò¿ªµ¥ÈËÕäÊŞ·±Ö³½çÃæ
+--´ò¿ªµ¥ÈË äÊŞ·±Ö³½çÃæ
 --*************************************************
 function PetPropagateSingle_Show()
-	if (this : IsVisible()) then									-- Èç¹û½çÃæ¿ª×Å£¬Ôò²»´¦Àí
+	if (this : IsVisible()) then									-- ??????,????
 		return
 	end
 
@@ -226,7 +226,7 @@ function PetPropagateSingle_Show()
 
 	this : CareObject(g_clientNpcId, 1, "PetPropagateSingle")
 
-	--ÕäÊŞÏÔÊ¾½çÃæ
+	-- äÊŞÏÔÊ¾½çÃæ
 	PetPropagateSingle_Clear()
 	Pet : ShowPetList( 0 )
 	this : Show()
@@ -242,7 +242,7 @@ end
 
 
 --*************************************************
---Ñ¡ÔñÕäÊŞ
+--Ñ¡Ôñ äÊŞ
 --*************************************************
 function PetPropagateSingle_SelectPet_Clicked(type)
 	if (type == "first") then
@@ -256,7 +256,7 @@ function PetPropagateSingle_SelectPet_Clicked(type)
 	else
 		return
 	end
-	-- ¹ØÒ»ÏÂÔÙ¿ª£¬Çå¿ÕÊı¾İ
+	-- ¹ØÒ»ÏÂÔÙ¿ª£¬Çå¿ Êı¾İ
 	Pet : ShowPetList( 0 )
 	Pet : ShowPetList( 1 )
 end
@@ -266,59 +266,59 @@ end
 --***************************************************
 function PetPropagateSingle_SelectPet( arg0 )
 
-	--ÅĞ¶Ïµ¥ÈËÕäÊŞ·±Ö³
+	--ÅĞ¶Ïµ¥ÈË äÊŞ·±Ö³
 	if (not (this : IsVisible())) then
 		return
 	end
 
-	--ÕäÊŞË÷Òı
+	-- äÊŞË÷Òı
 	local petIdx = tonumber(arg0)
 	if (-1 == petIdx) then
 		return
 	end
 	
-	--ÕäÊŞÒÑ±»ÆäËü½çÃæÑ¡ÖĞÇÒÅÅ³ıµ¥ÈËÕäÊŞ·±Ö³½çÃæ£¬ÓÉºóÃæÅĞ¶Ï
+	-- äÊŞÒÑ±»ÆäËü½çÃæÑ¡ÖĞÇÒÅÅ³ıµ¥ÈË äÊŞ·±Ö³½çÃæ£¬ÓÉºóÃæÅĞ¶Ï
 	if (Pet:GetPetLocation(petIdx) ~= -1 and Pet:GetPetLocation(petIdx) ~= 2) then
 		return;
 	end
 
-	--ÅĞ¶ÏÊÇ·ñÕäÊŞ¼ÓËø
+	--ÅĞ¶ÏÊÇ·ñ äÊŞ¼ÓËø
 	if (PlayerPackage:IsPetLock(petIdx) == 1) then
 		PushDebugMessage("#{DRFZZC_091013_09}")
 		return
 	end
 
-	--ÅĞ¶ÏÊÇ·ñÕäÊŞ³öÕ½
+	--ÅĞ¶ÏÊÇ·ñ äÊŞ³ö ½
 	if (Pet : GetIsFighting(petIdx) == 1) then
 		PushDebugMessage("#{DRFZZC_091013_10}")
 		return
 	end
 
-	--ÅĞ¶ÏÊÇ·ñÎªÕäÊŞ±¦±¦
+	--ÅĞ¶ÏÊÇ·ñÎª äÊŞ±¦±¦
 	--if (Pet : GetPetType(petIdx) ~= 0) then
 	--	PushDebugMessage("#{DRFZZC_091013_11}")
 	--	return
 	--end
 
-	--ÅĞ¶ÏÕäÊŞÊÇ·ñÎª»Ã»¯
+	--ÅĞ¶Ï äÊŞÊÇ·ñÎª»Ã»¯
 	if (Pet : GetGeneration(petIdx) >= 100 ) then
 		PushDebugMessage("#{DRFZZC_091013_12}")
 		return
 	end
 
-	--ÅĞ¶ÏÕäÊŞÊÇ·ñ¿ìÀÖ¶ÈÎª100
+	--ÅĞ¶Ï äÊŞÊÇ·ñ¿ìÀÖ¶ÈÎª100
 	if (Pet : GetHappy(petIdx) ~= 100) then
 		PushDebugMessage("#{DRFZZC_091013_13}")
 		return
 	end
 
-	--ÅĞ¶ÏÕäÊŞÊÇ·ñ´©ÁË×°±¸
+	--ÅĞ¶Ï äÊŞÊÇ·ñ´©ÁË×°±¸
 	if (Pet : IsPetHaveEquip(petIdx) == 1) then
 		PushDebugMessage("#{DRFZZC_091013_14}")
 		return
 	end
 
-	--ÅĞ¶ÏÕäÊŞÊÙÃüÊÇ·ñÎª1000
+	--ÅĞ¶Ï äÊŞÊÙÃüÊÇ·ñÎª1000
 	if (Pet : GetNaturalLife(petIdx) < 1000) then
 		PushDebugMessage("#{DRFZZC_091013_15}")
 		return
@@ -328,39 +328,39 @@ function PetPropagateSingle_SelectPet( arg0 )
 	local guidH, guidL = Pet : GetGUID( petIdx )
 
 	if (g_currentChoose == 1) then
-		--ÅĞ¶ÏÊÇ·ñµÚÒ»¸öÕäÊŞºÍµÚ¶ş¸öÕäÊŞÊÇÍ¬Ò»¸öÕäÊŞ
+		--ÅĞ¶ÏÊÇ·ñµÚÒ»¸ö äÊŞºÍµÚ¶ş¸ö äÊŞÊÇÍ¬Ò»¸ö äÊŞ
 		if (secondPet.idx ~= -1 and secondPet.idx == petIdx) then
-			ShowSystemTipInfo( "Çë·ÅÈëÁ½Ö»²»Í¬µÄÕäÊŞ¡£" )
+			ShowSystemTipInfo( "Nh§p 2 Trân thú khác nhau." )
 			return
 		end
 
-		--Èç¹ûÆäÖĞÓĞÕäÊŞÁË£¬Çå¿Õ
+		--Èç¹ûÆäÖĞÓĞ äÊŞÁË£¬Çå¿ 
 		PetPropagateSingle_RemoveFirstPet()
 
 		firstPet.idx = petIdx
 		firstPet.guid.high = guidH
 		firstPet.guid.low  = guidL
 
-		--ÌîĞ´µÚÒ»¸öÕäÊŞÃû×Ö
+		--ÌîĞ´µÚÒ»¸ö äÊŞÃû×Ö
 		PetPropagateSingle_PetName1 : SetText( petName )
 		Pet : SetPetLocation( petIdx , 2 )
 		Pet : UpdatePetList()
 
 	elseif (g_currentChoose == 2) then
-		--ÅĞ¶ÏÊÇ·ñµÚÒ»¸öÕäÊŞºÍµÚ¶ş¸öÕäÊŞÊÇÍ¬Ò»¸öÕäÊŞ
+		--ÅĞ¶ÏÊÇ·ñµÚÒ»¸ö äÊŞºÍµÚ¶ş¸ö äÊŞÊÇÍ¬Ò»¸ö äÊŞ
 		if (firstPet.idx ~= -1 and firstPet.idx == petIdx) then
-			ShowSystemTipInfo( "Çë·ÅÈëÁ½Ö»²»Í¬µÄÕäÊŞ¡£" )
+			ShowSystemTipInfo( "Nh§p 2 Trân thú khác nhau." )
 			return
 		end
 
-		--Èç¹ûÆäÖĞÓĞÕäÊŞÁË£¬Çå¿Õ
+		--Èç¹ûÆäÖĞÓĞ äÊŞÁË£¬Çå¿ 
 		PetPropagateSingle_RemoveSecondPet()
 
 		secondPet.idx = petIdx
 		secondPet.guid.high = guidH
 		secondPet.guid.low  = guidL
 
-		--ÌîĞ´µÚ¶ş¸öÕäÊŞµÄÃû×Ö
+		--ÌîĞ´µÚ¶ş¸ö äÊŞµÄÃû×Ö
 		PetPropagateSingle_PetName2 : SetText( petName )
 		Pet : SetPetLocation( petIdx , 2 )
 		Pet : UpdatePetList()
@@ -371,12 +371,12 @@ function PetPropagateSingle_SelectPet( arg0 )
 end
 
 --***************************************************
---Çå¿ÕµÚÒ»¸öÕäÊŞ
+--Çå¿ µÚÒ»¸ö äÊŞ
 --***************************************************
 function PetPropagateSingle_RemoveFirstPet()
 	if (firstPet.idx ~= -1) then
 		Pet : SetPetLocation( firstPet.idx, -1 )
-		-- ¸üĞÂÕäÊŞÁĞ±í½çÃæ
+		-- ¸üĞÂ äÊŞÁĞ±í½çÃæ
 		Pet : UpdatePetList()
 	end
 
@@ -388,12 +388,12 @@ end
 
 
 --***************************************************
---Çå¿ÕµÚ¶ş¸öÕäÊŞ
+--Çå¿ µÚ¶ş¸ö äÊŞ
 --***************************************************
 function PetPropagateSingle_RemoveSecondPet()
 	if (secondPet.idx ~= -1) then
 		Pet : SetPetLocation( secondPet.idx, -1 )
-		-- ¸üĞÂÕäÊŞÁĞ±í½çÃæ
+		-- ¸üĞÂ äÊŞÁĞ±í½çÃæ
 		Pet : UpdatePetList()
 	end
 
@@ -428,7 +428,7 @@ function PetPropagateSingle_Update( pos_packet )
 		return
 	end
 
-	--¸üĞÂµ¥ÈËÕäÊŞ·±Ö³²ÄÁÏ½çÃæ
+	--¸üĞÂµ¥ÈË äÊŞ·±Ö³²ÄÁÏ½çÃæ
 	local ItemID = PlayerPackage : GetItemTableIndex( BagPos )
 	if ( ItemID <= 0) then
 		PushDebugMessage("#{GMActionSystem_Item_CantUseInPetSkillStudy}")
@@ -441,7 +441,7 @@ function PetPropagateSingle_Update( pos_packet )
 		return
 	end
 
-	--ÕäÊŞÎïÆ·Î»ÖÃÊÇ·ñºÏ·¨
+	-- äÊŞÎïÆ·Î»ÖÃÊÇ·ñºÏ·¨
 	if (g_ItemPos ~= -1) then
 		LifeAbility : Lock_Packet_Item( g_ItemPos, 0 )
 	end
@@ -449,7 +449,7 @@ function PetPropagateSingle_Update( pos_packet )
 	LifeAbility : Lock_Packet_Item( BagPos, 1 )
 	g_ItemPos = BagPos
 
-	--¸üĞÂÕäÊŞ»¹Í¯µÄÕäÊŞ½çÃæ
+	--¸üĞÂ äÊŞ»¹Í¯µÄ äÊŞ½çÃæ
 	local theAction = EnumAction( BagPos, "packageitem" )
 	if (theAction : GetID() == 0) then
 		return
@@ -477,7 +477,7 @@ function PetPropagateSingle_Clear()
 end
 
 --*************************************************
---Çå¿ÕÁ½¸öÕäÊŞÃû×Ö
+--Çå¿ Á½¸ö äÊŞÃû×Ö
 --*************************************************
 function PetPropagateSingle_ClearPetName()
 	PetPropagateSingle_RemoveFirstPet()
@@ -485,7 +485,7 @@ function PetPropagateSingle_ClearPetName()
 end
 
 --*************************************************
---Çå¿Õ·±Ö³ÎïÆ·
+--Çå¿ ·±Ö³ÎïÆ·
 --*************************************************
 function PetPropagateSingle_ClearActionItem()
 	if g_ItemPos ~= -1 then
@@ -496,7 +496,7 @@ function PetPropagateSingle_ClearActionItem()
 end
 
 --*************************************************
---Çå¿Õ½ğÇ®
+--Çå¿ ½ğÇ®
 --*************************************************
 function PetPropagateSingle_ClearMoney()
 	PetPropagateSingle_Money : SetProperty( "MoneyNumber", 0 )
@@ -505,10 +505,10 @@ function PetPropagateSingle_ClearMoney()
 end
 
 --*************************************************
---Ñ¡ÔñÕäÊŞ¸üĞÂ
+--Ñ¡Ôñ äÊŞ¸üĞÂ
 --*************************************************
 function PetPropagateSingle_UpdatePetSelected()
-	-- ÅĞ¶Ï±»Ñ¡ÖĞµÄÕäÊŞÊÇ·ñ»¹ÔÚ±³°üÀï
+	-- ÅĞ¶Ï±»Ñ¡ÖĞµÄ äÊŞÊÇ·ñ»¹ÔÚ±³°üÀï
 	if (firstPet.idx ~= -1) then
 		local newIdx = Pet : GetPetIndexByGUID( firstPet.guid.high, firstPet.guid.low )
 		Pet : SetPetLocation( firstPet.idx, -1 )
@@ -518,14 +518,14 @@ function PetPropagateSingle_UpdatePetSelected()
 			firstPet.guid.high = -1
 			firstPet.guid.low  = -1
 			PetPropagateSingle_PetName1 : SetText( "" )
-		-- ·ñÔòÅĞ¶ÏÕäÊŞµÄÎ»ÖÃÊÇ·ñ·¢Éú±ä»¯
+		-- ·ñÔòÅĞ¶Ï äÊŞµÄÎ»ÖÃÊÇ·ñ·¢Éú±ä»¯
 		elseif (newIdx ~= firstPet.idx) then
 			-- Èç¹û·¢Éú±ä»¯Ôò¶ÔÎ»ÖÃ½øĞĞ¸üĞÂ
 			firstPet.idx = newIdx
 		end
 	end
 
-	-- ÅĞ¶Ï±»Ñ¡ÖĞµÄÕäÊŞÊÇ·ñ»¹ÔÚ±³°üÀï
+	-- ÅĞ¶Ï±»Ñ¡ÖĞµÄ äÊŞÊÇ·ñ»¹ÔÚ±³°üÀï
 	if (secondPet.idx ~= -1) then
 		local newIdx = Pet : GetPetIndexByGUID( secondPet.guid.high, secondPet.guid.low )
 		Pet : SetPetLocation( secondPet.idx, -1 )
@@ -535,7 +535,7 @@ function PetPropagateSingle_UpdatePetSelected()
 			secondPet.guid.high = -1
 			secondPet.guid.low  = -1
 			PetPropagateSingle_PetName2 : SetText( "" )
-		-- ·ñÔòÅĞ¶ÏÕäÊŞµÄÎ»ÖÃÊÇ·ñ·¢Éú±ä»¯
+		-- ·ñÔòÅĞ¶Ï äÊŞµÄÎ»ÖÃÊÇ·ñ·¢Éú±ä»¯
 		elseif (newIdx ~= secondPet.idx) then
 			-- Èç¹û·¢Éú±ä»¯Ôò¶ÔÎ»ÖÃ½øĞĞ¸üĞÂ
 			secondPet.idx = newIdx

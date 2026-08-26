@@ -21,39 +21,39 @@ local g_HerosReturns_Awards_HlLevelIamge={
 local g_HerosReturns_Awards_7DayPrize =
 {
 	[1] ={
-				[1]={ItemID = 39920039, num = 1,}, --雪羽霜衣7天
-				[2]={ItemID = 39920051, num = 1,}, --70绑元
-				[3]={ItemID = 39920050, num = 1,}, --大量经验				
+				[1]={ItemID = 39920039, num = 1,}, --????7?
+				[2]={ItemID = 39920051, num = 1,}, --70??
+				[3]={ItemID = 39920050, num = 1,}, --????				
 				},
 	[2] ={
-				[1]={ItemID = 39920041, num = 2,}, --天灵丹*2
-				[2]={ItemID = 39920052, num = 1,}, --75绑元
-				[3]={ItemID = 39920050, num = 1,}, --大量经验
+				[1]={ItemID = 39920041, num = 2,}, --???*2
+				[2]={ItemID = 39920052, num = 1,}, --75??
+				[3]={ItemID = 39920050, num = 1,}, --????
 				},
 	[3] ={
-				[1]={ItemID = 39920040, num = 1,}, --翅膀冥羽7天
-				[2]={ItemID = 39920053, num = 1,}, --80绑元
-				[3]={ItemID = 39920050, num = 1,}, --大量经验				
+				[1]={ItemID = 39920040, num = 1,}, --????7?
+				[2]={ItemID = 39920053, num = 1,}, --80??
+				[3]={ItemID = 39920050, num = 1,}, --????				
 				},
 	[4] ={
-				[1]={ItemID = 39920042, num = 2,}, --功力丹*2
-				[2]={ItemID = 39920054, num = 1,}, --85绑元
-				[3]={ItemID = 39920050, num = 1,}, --大量经验				
+				[1]={ItemID = 39920042, num = 2,}, --???*2
+				[2]={ItemID = 39920054, num = 1,}, --85??
+				[3]={ItemID = 39920050, num = 1,}, --????				
 				},
 	[5] ={
-				[1]={ItemID = 39920016, num = 10,}, --金蚕丝*10
-				[2]={ItemID = 39920055, num = 1,}, --90绑元
-				[3]={ItemID = 39920050, num = 1,}, --大量经验				
+				[1]={ItemID = 39920016, num = 10,}, --???*10
+				[2]={ItemID = 39920055, num = 1,}, --90??
+				[3]={ItemID = 39920050, num = 1,}, --????				
 				},
 	[6] ={
-				[1]={ItemID = 39920014, num = 1,}, --天罡强化露
-				[2]={ItemID = 39920056, num = 1,}, --95绑元
-				[3]={ItemID = 39920050, num = 1,}, --大量经验				
+				[1]={ItemID = 39920014, num = 1,}, --?????
+				[2]={ItemID = 39920056, num = 1,}, --95??
+				[3]={ItemID = 39920050, num = 1,}, --????				
 				},
 	[7] ={
-				[1]={ItemID = 39920012, num = 1,}, --红宝石（3级）
-				[2]={ItemID = 39920019, num = 1,}, --100绑元
-				[3]={ItemID = 39920050, num = 1,}, --大量经验				
+				[1]={ItemID = 39920012, num = 1,}, --???(3?)
+				[2]={ItemID = 39920019, num = 1,}, --100??
+				[3]={ItemID = 39920050, num = 1,}, --????				
 				},	
 };
 local g_HerosReturns_Awards_7DayPrize_Button = {}
@@ -104,13 +104,13 @@ local g_HerosReturns_Awards_7DayImage = {
 				},	
 };
 
---预加载函数，可以而且只能在这里注册脚本关心的事件
+--预加载函数，可以而且只能在犫里注册脚本关心的事件
 function HerosReturns_Awards_PreLoad()
 	this:RegisterEvent("UI_COMMAND");
 
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--???????
 end
 
 --加载窗口的时候调用的函数，加载窗口时调用一次
@@ -296,12 +296,12 @@ function HerosReturns_Awards_SevenDay_Click(nIndex)
 	g_HerosReturns_Awards_7DayButtom[nIndex].Button:SetCheck(1)
 
 
-	--看一下这页是不是可以打开
+	--看一下犫页是不是可以打开
 	local nData1 = g_HerosReturns_Awards_LoginDays
 	local nTimes = math.mod(nData1,100)
 
 	if nIndex > nTimes then
-		--第X日可领取
+		--第X葼可领取
 		HerosReturns_Awards_SevenDay_Right_Button1:Disable()
 		HerosReturns_Awards_SevenDay_Right_Button1:SetProperty("DisabledImage",g_HerosReturns_Awards_7DayImage[nIndex][4])
 	else
@@ -355,10 +355,10 @@ function HerosReturns_Awards_FenYe_Clicked(index)
 	end
 	
 	Clear_XSCRIPT()
-		Set_XSCRIPT_Function_Name( "OnOpenUI" ); 		-- 脚本号
-		Set_XSCRIPT_ScriptID( 808110 );						-- 脚本编号
+		Set_XSCRIPT_Function_Name( "OnOpenUI" ); 		-- ???
+		Set_XSCRIPT_ScriptID( 808110 );						-- ????
 		Set_XSCRIPT_Parameter(0, index)
-		Set_XSCRIPT_ParamCount( 1 );						-- 参数个数
+		Set_XSCRIPT_ParamCount( 1 );						-- ????
 	Send_XSCRIPT()
 		
 	Variable:SetVariable("HerosReturnsUIPos", HerosReturns_Awards_FrameFull:GetProperty("UnifiedPosition"), 1)

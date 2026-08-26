@@ -128,7 +128,7 @@ function QinChiDao_Update(MDRecordData, nUseTime, nLastStu)
 		QinChiDao_ChallBtn:Show()
 		QinChiDao_ActionBtn:Hide()
 		if nAwardFlag>=1 then
-			QinChiDao_OKBtnOK:Show()--ถินด
+			QinChiDao_OKBtnOK:Show()--??
 			QinChiDao_OKBtnAnimate:Hide()
 		else
 			QinChiDao_OKBtnOK:Hide()

@@ -131,7 +131,7 @@ function PetSoul_XuanWuDao2_OnEvent(event)
 			
 			PetSoul_XuanWuDao2_Remain_TimeWatch:SetProperty("Timer", tostring(g_PetSoul_XuanWuDao2_StopWatch))
 			
-			--2025兽穴PVP活动 新增数据1 今日剩余神兽奖励次数
+			--2025兽穴PVP活动 新增数据1 今葼剩余神兽奖励次数
 			PetSoul_XuanWuDao2_ToDayTime3:SetText("#{SXRC_250326_31}")
 			local str = ""
 			local num = Get_XParam_INT(10)
@@ -245,7 +245,7 @@ function PetSoul_XuanWuDao2_OnEvent(event)
 			return
 		end
 		
-		if arg0 == "petisland" then --玄武岛
+		if arg0 == "petisland" then --???
 			
 			Clear_XSCRIPT()
 				Set_XSCRIPT_Function_Name( "OnOpenXuanWuDaoUI" )

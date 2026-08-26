@@ -43,21 +43,21 @@ function CJ_NormalTipsMini_OnShow(arg0,arg1,arg2,arg3)
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function CJ_NormalTipsMini_OnClose()
 	this:Hide()
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function CJ_NormalTipsMini_OnHide()
 	KillTimer("CJ_NormalTipsMini_Timer()")
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function CJ_NormalTipsMini_CloseClicked()
 	this:Hide()

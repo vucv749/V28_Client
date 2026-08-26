@@ -66,7 +66,7 @@ function ShenFen_Yure_Puzzle_OnEvent(event)
 			objCared = DataPool : GetNPCIDByServerID(g_TargetId);
 			AxTrace(0,0,"g_TargetId="..g_TargetId .. " objCared="..objCared)
 			if objCared == -1 then
-				PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£");
+				PushDebugMessage("Dæ li®u máy chü có v¤n ğ«");
 				return
 			end
 			ShenFen_Yure_Puzzle_BeginCareObject()
@@ -87,7 +87,7 @@ function ShenFen_Yure_Puzzle_OnEvent(event)
 			return;
 		end
 		
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			
 			--È¡Ïû¹ØĞÄ
@@ -126,7 +126,7 @@ end
 --===============================================
 function ShenFen_Yure_Puzzle_OnHiden()
 	ShenFen_Yure_Puzzle_StopCareObject()
-	--Êı¾İÇå¿Õ
+	--Êı¾İÇå¿ 
 	ShenFen_Yure_Puzzle_Clear()
 
 	--Òş²Ø½çÃæ
@@ -219,7 +219,7 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØĞÄNPC£¬
---ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 --Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function ShenFen_Yure_Puzzle_BeginCareObject()

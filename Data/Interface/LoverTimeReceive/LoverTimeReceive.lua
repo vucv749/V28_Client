@@ -1,4 +1,4 @@
---¿€º∆ ’ª®Ω±¿¯ΩÁ√Ê
+--¿€º∆ †ª®Ω±¿¯ΩÁ√Ê
 
 local g_LoverTimeReceive_UnifiedPosition;
 
@@ -74,7 +74,7 @@ end
 --=========================================================
 function LoverTimeReceive_OnEvent(event)
 
-	if (event == "UI_COMMAND" and tonumber(arg0) == 89297101) then --¥Úø™ΩÁ√Ê
+	if (event == "UI_COMMAND" and tonumber(arg0) == 89297101) then --????
 		
 		if Get_XParam_INT( 0 ) <= 0 then
 			LoverTimeReceive_Close()
@@ -85,7 +85,7 @@ function LoverTimeReceive_OnEvent(event)
 		g_ServerCareID = Get_XParam_INT(1)
 		g_ObjCareID = DataPool:GetNPCIDByServerID(g_ServerCareID);
 		if (g_ObjCareID == -1) then
-			PushDebugMessage("server¥´π˝¿¥µƒ ˝æ›”–Œ Ã‚°£");
+			PushDebugMessage("DÊ liÆu m·y ch¸ cÛ v§n ´");
 			return
 		end
 		LoverTimeReceive_BeginCareObject()
@@ -105,7 +105,7 @@ function LoverTimeReceive_OnEvent(event)
 		
 		LoverTimeReceive_OnShow()
 		
-	elseif (event == "UI_COMMAND" and tonumber(arg0) == 89297102 and this:IsVisible()) then --À¢–¬ΩÁ√Ê
+	elseif (event == "UI_COMMAND" and tonumber(arg0) == 89297102 and this:IsVisible()) then --????
 				
 		g_LoverTimeReceive_Value = Get_XParam_INT( 2 )
 		g_LoverTimeReceive_214Day = Get_XParam_INT( 3 )
@@ -236,7 +236,7 @@ end
 
 --*************************************************
 --ø™ ºπÿ–ƒNPC£¨æÕ «»∑»œÕÊº“µ±«∞≤Ÿ◊˜µƒNPC£¨»Áπ˚¿ÎNPC
---Ã´‘∂æÕª·πÿ±’¥∞ø⁄‘⁄ø™ ºπÿ–ƒ÷Æ«∞–Ë“™œ»»∑∂®’‚∏ˆΩÁ√Ê
+--Ã´‘∂æÕª·πÿ±†¥∞ø⁄‘⁄ø™ ºπÿ–ƒ÷Æ«∞–Ë“™œ»»∑∂®†‚∏ˆΩÁ√Ê
 -- «≤ª «“—æ≠”–°∞πÿ–ƒ°±µƒNPC£¨»Áπ˚”–µƒª∞£¨œ»»°œ˚“—æ≠
 --”–µƒ°∞πÿ–ƒ°±
 --*************************************************
@@ -253,7 +253,7 @@ function LoverTimeReceive_StopCareObject()
 end
 
 --=========================================================
--- πÿ±’ΩÁ√Ê
+-- πÿ±†ΩÁ√Ê
 --=========================================================
 function LoverTimeReceive_OnHiden()
 
@@ -264,7 +264,7 @@ function LoverTimeReceive_OnHiden()
 end
 
 --=========================================================
--- πÿ±’ΩÁ√Ê
+-- πÿ±†ΩÁ√Ê
 --=========================================================
 function LoverTimeReceive_Close()
 

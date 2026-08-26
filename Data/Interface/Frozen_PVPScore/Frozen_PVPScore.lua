@@ -1,4 +1,4 @@
--- 雪人大作战，分数界面
+-- 雪人大作牻，分数界面
 local g_unifiedposistion
 
 local g_ui_list = {}
@@ -14,7 +14,7 @@ local g_camp_info =
 	{name="#{BXDZ_250624_01}",},
 }
 
-local g_SnowMan_Exp = {               -- 雪人经验
+local g_SnowMan_Exp = {               -- ????
 	exp = {
         100,200,400,600,900,1200,1600,
         2000,2000,999999,999999,
@@ -209,7 +209,7 @@ function Frozen_PVPScore_InitUIData(lastTime)
 	local strExp = ScriptGlobal_Format("#{BXDZ_240918_177}", realExp, realNeedExp)
 	Frozen_PVPScore_SnowMan_Pro:SetText(strExp)
 
-	-- 刷新阵营信息
+	-- 刷新狊营信息
 	local teamCount = XRZPVP:GetBattleRankInfo("teamnum")
 	Frozen_PVPScore_TopList_ListFrame:Clear()
 	if (teamCount > 0) then
@@ -218,7 +218,7 @@ function Frozen_PVPScore_InitUIData(lastTime)
 			if snowDataValid ~= nil and snowDataValid > 0 then
 				local child = Frozen_PVPScore_TopList_ListFrame:AddChild("Frozen_PVPScore_TopList_List_Item")
 				if (child ~= nil) then
-					-- 是否是自己的阵营					
+					-- 是否是自己的狊营					
 					local snowStackScore,playerCamp = XRZPVP:GetBattleRankInfo("rankinfo", i-1)
 					local strRank = tostring(i)
 					local strCampName = g_camp_info[i].name
@@ -294,7 +294,7 @@ function Frozen_PVPScore_Mini()
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function Frozen_PVPScore_CloseClicked()
 	this:Hide()

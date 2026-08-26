@@ -1,14 +1,14 @@
 
-local theNPC = -1											-- ¹¦ÄÜ NPC
+local theNPC = -1											-- ?? NPC
 local MAX_OBJ_DISTANCE = 3.0
 
 local g_DummyGemLayed = 0
 local g_DummyNewGem = 1
 
 local RuleTable = {
-	msgLackMoney = "ÄúÉíÉÏµÄ½ðÇ®²»×ã#{_EXCHG%d}¡£",
+	msgLackMoney = "Nhçm trên ngß¶i Ðích ti«n tài không ðü#{_EXCHG%d}.",
 	maxGrade = 9,
-	msgGradeLimited = "ºÏ³ÉµÄ±¦Ê¯×î¸ßµÈ¼¶Îª9¼¶£¬ÄúµÄ±¦Ê¯²»ÄÜ¼ÌÐøºÏ³É¡£",
+	msgGradeLimited = "Hþp thành Ðích bäo thÕch cao nh¤t c¤p b§c Vi C¤p 9, Nhçm Ðích bäo thÕch không th¬ tiªp tøc hþp thành.",
 	[1] = { SpecialStuff = 30900015, MoneyCost = 5000 },
 	[2] = { SpecialStuff = 30900015, MoneyCost = 6000 },
 	[3] = { SpecialStuff = 30900015, MoneyCost = 7000 },
@@ -26,25 +26,25 @@ local g_ActionButton_ComposeItem
 
 local g_GemMerge_Frame_UnifiedPosition
 
-local g_GemTableIndex = -1			--±¦Ê¯±³°üË÷Òý
-local g_ReplaceTableIndex = 20800022--ÎÞÏà±¦Ê¯
-local g_ComposeBagIndex = -1		--ºÏ³É·û±³°üË÷Òý
-local g_ReplaceBagIndex = -1		--Ìæ´ú·û±³°üË÷Òý
+local g_GemTableIndex = -1			--??????
+local g_ReplaceTableIndex = 20800022--????
+local g_ComposeBagIndex = -1		--???????
+local g_ReplaceBagIndex = -1		--???????
 local g_CurrentOdds = 0
 local g_nMaxShowNum = 250
 
 -- ×¢²áÊÂ¼þ
 function GemMerge_PreLoad()
 
-	this:RegisterEvent("UI_COMMAND")						--¼¤»î½çÃæÊÂ¼þ
-	this:RegisterEvent("COMPOSE_GEM_PUTIN_ITEM")			--±¦Ê¯ºÏ³É½çÃæ·Å½øÎïÆ·
-	this:RegisterEvent("PACKAGE_ITEM_CHANGED")			--±³°üÖÐÎïÆ·¸Ä±äÐèÒªÅÐ¶Ï
-	this:RegisterEvent("OBJECT_CARED_EVENT")				--¹Ø×¢ÊµÊ©ºÏ³ÉµÄNPC
-	this:RegisterEvent("RESUME_ENCHASE_GEM")				--ºÏ³ÉÍê±Ï
-	this:RegisterEvent("CLOSE_SYNTHESIZE_ENCHASE")			--¹Ø±Õ±¾½çÃæ
-	this:RegisterEvent("UNIT_MONEY")					--½ðÇ®±ä»¯
-	this:RegisterEvent("MONEYJZ_CHANGE")					--½»×Ó±ä»¯
-	this:RegisterEvent("BUY_ITEM")							--¿ì½Ý¹ºÂò£¬¸üÐÂ½çÃæ
+	this:RegisterEvent("UI_COMMAND")						--??????
+	this:RegisterEvent("COMPOSE_GEM_PUTIN_ITEM")			--??????????
+	this:RegisterEvent("PACKAGE_ITEM_CHANGED")			--???????????
+	this:RegisterEvent("OBJECT_CARED_EVENT")				--???????NPC
+	this:RegisterEvent("RESUME_ENCHASE_GEM")				--????
+	this:RegisterEvent("CLOSE_SYNTHESIZE_ENCHASE")			--?????
+	this:RegisterEvent("UNIT_MONEY")					--????
+	this:RegisterEvent("MONEYJZ_CHANGE")					--????
+	this:RegisterEvent("BUY_ITEM")							--????,????
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
 	
@@ -53,11 +53,11 @@ end
 --½çÃæÔØÈë
 function GemMerge_OnLoad()
 	
-	g_ActionButton_PackageGem = GemMerge_GemItem1 		--±³°üÖÐÐèÒªÉý¼¶±¦Ê¯
-	g_ActionButton_ReplaceItem = GemMerge_GemItem2 		--±¦Ê¯Ìæ´ú·û
+	g_ActionButton_PackageGem = GemMerge_GemItem1 		--?????????
+	g_ActionButton_ReplaceItem = GemMerge_GemItem2 		--?????
 	g_ActionButton_ReplaceItem : SetDrawCorner(3, false);
-	g_ActionButton_ProductItem = GemMerge_ProductItem 	--²ú³öµÄÏÂ¼¶±¦Ê¯
-	g_ActionButton_ComposeItem = GemMerge_NeedItem		--±¦Ê¯ºÏ³É·û
+	g_ActionButton_ProductItem = GemMerge_ProductItem 	--???????
+	g_ActionButton_ComposeItem = GemMerge_NeedItem		--?????
 	
 	g_GemMerge_Frame_UnifiedPosition=GemMerge_Frame:GetProperty("UnifiedPosition")
 end
@@ -65,7 +65,7 @@ end
 --¼à¿Ø¸÷ÖÖÊÂ¼þ
 function GemMerge_OnEvent(event)
 	
-	if event == "UI_COMMAND" and tonumber(arg0) == 2024061401 then	--ÎÞÏà±¦Ê¯ºÏ³É±¦Ê¯
+	if event == "UI_COMMAND" and tonumber(arg0) == 2024061401 then	--????????
 		GemMerge_Clear()
 		GemMerge_RefreshItem()
 		GemMerge_GaiLvNum:SetText("")
@@ -84,7 +84,7 @@ function GemMerge_OnEvent(event)
 			return
 		end
 
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ý£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ý£¬×Ô¶¯¹Ø± 
 		if arg1 == "distance" and tonumber( arg2 ) > MAX_OBJ_DISTANCE or arg1 == "destroy" then
 			GemMerge_Cancel_Clicked()
 		end
@@ -100,7 +100,7 @@ function GemMerge_OnEvent(event)
 		return
 	end
 	
-	if event == "BUY_ITEM" and this:IsVisible() then	--¿ì½Ý¹ºÂò£¬¸üÐÂ½çÃæ
+	if event == "BUY_ITEM" and this:IsVisible() then	--????,????
 		local itemId = tonumber(arg1)
 		if itemId == GemMerge_GetSpecialMaterial() then
 			GemMerge_Update(0,tonumber(PlayerPackage:GetBagPosByItemIndex(itemId)))	
@@ -184,7 +184,7 @@ function GemMerge_OK_Clicked()
 	
 	--ÔÝÊ±Ö»¿ª·Å5¼¶±¦Ê¯Éý¼¶
 	if nGemLevel ~= 5 then
-		PushDebugMessage( "Ö»ÓÐ5¼¶±¦Ê¯¿ª·ÅÁË´Ë¹¦ÄÜ" )
+		PushDebugMessage( "Chï có C¤p 5 bäo thÕch m· ra Li­u ThØ công nång" )
 		return
 	end
 	if nGemCount < 4 then
@@ -211,7 +211,7 @@ function GemMerge_OK_Clicked()
 		PushDebugMessage( string.format( RuleTable.msgLackMoney, RuleTable[nGemLevel].MoneyCost ) )
 		return
 	end
-	-- ²ÄÁÏÀ¸±³°ü¿Õ¼ä
+	-- ²ÄÁÏÀ¸±³°ü¿ ¼ä
 	if GetBagSpace(g_GemTableIndex) <= 0 then 
 		PushDebugMessage("#{BSFHC_240613_33}")
 		return
@@ -250,13 +250,13 @@ function GemMerge_OK_Clicked()
 	Send_XSCRIPT()
 end
 
---µã»÷È¡Ïû»òÕß¹Ø±Õ°´Å¥
+--µã»÷È¡Ïû»ò ß¹Ø± °´Å¥
 function GemMerge_Cancel_Clicked()
 	GemMerge_Close()
 	GemMerge_StopCareObject()
 end
 
---¹Ø±Õ½çÃæ
+--¹Ø± ½çÃæ
 function GemMerge_Close()
 	this:Hide()
 	GemMerge_Clear()
@@ -266,7 +266,7 @@ function GemMerge_Close()
 	end
 end
 
---Çå¿Õ½çÃæÔªËØ
+--Çå¿ ½çÃæÔªËØ
 function GemMerge_Clear()
 
 	GemMerge_GaiLvNum:SetText("")
@@ -379,20 +379,20 @@ end
 function GemMerge_PutInGem(bagPos)
 	
 	if GemMerge_IsComposeItem(bagPos) == 1 then
-		PushDebugMessage("#{BSQHB_120830_09}")		--Çë·ÅÈë±¦Ê¯ºÏ³É·û¿ò
+		PushDebugMessage("#{BSQHB_120830_09}")		--?????????
 		return
 	elseif GemMerge_IsMingshiGem(bagPos) == 1 then 
 		PushDebugMessage("#{BSFHC_240613_17}")	
 		return
 	elseif GemMerge_IsSuitableGem(bagPos) ~= 1 then
-		PushDebugMessage("#{BSQHB_120830_03}")		--²ÄÁÏÀàÐÍ²»·û
+		PushDebugMessage("#{BSQHB_120830_03}")		--??????
 		return
 	end
 	
 
 	local nGemLevel = PlayerPackage:GetItemSubTableIndex(bagPos, 1)
 	if nGemLevel ~= 5 then
-		PushDebugMessage("#{BSFHC_240613_17}")		--Ö»ÄÜ·ÅÈë5¼¶±¦Ê¯£¨²»º¬Ú¤Ê¯£©
+		PushDebugMessage("#{BSFHC_240613_17}")		--????5???(????)
 		return
 	end
 		
@@ -461,11 +461,11 @@ end
 function GemMerge_PutInComposeItem(bagPos)
 	
 	if GemMerge_IsSuitableGem(bagPos) == 1 then
-		PushDebugMessage("#{BSQHB_120830_08}")		--Çë·ÅÈë±¦Ê¯¿òÖÐ
+		PushDebugMessage("#{BSQHB_120830_08}")		--???????
 		return
 	elseif GemMerge_IsComposeItem(bagPos) ~= 1 then
 		-- PushDebugMessage("#{BSQHB_120830_03}")		--²ÄÁÏÀàÐÍ²»·û
-		PushDebugMessage("#{BSFHC_240613_18}")		--Çë·ÅÈë¸ß¼¶±¦Ê¯ºÏ³É·û
+		PushDebugMessage("#{BSFHC_240613_18}")		--??????????
 		return
 	end
 	
@@ -475,7 +475,7 @@ function GemMerge_PutInComposeItem(bagPos)
 	end
 	
 	if g_GemTableIndex == -1 then
-		PushDebugMessage("#{BSQHB_120830_06}")	--ÇëÏÈ·ÅÈë±¦Ê¯
+		PushDebugMessage("#{BSQHB_120830_06}")	--??????
 		return		
 	end
 	
@@ -483,7 +483,7 @@ function GemMerge_PutInComposeItem(bagPos)
 	local nComposeItemTableIndex = PlayerPackage:GetItemTableIndex(bagPos)
 	
 	if GemMerge_GetSpecialMaterial() == -1 then
-		PushDebugMessage("RuleTable²»Ö§³ÖºÏ³Éµ±Ç°µÈ¼¶µÄ±¦Ê¯")
+		PushDebugMessage("RuleTablech¯ng ðÞ hªt n±i Trì hþp thành trß¾c m£t c¤p b§c Ðích bäo thÕch")
 		return	
 	elseif GemMerge_GetSpecialMaterial() ~= nComposeItemTableIndex then
 
@@ -558,7 +558,7 @@ function GemMerge_RecalcSuccOdds()
 	if nGemCount < 4 then		
 		GemMerge_GaiLvNum:SetText("#{BSDJ_170811_37}")
 	elseif PlayerPackage:CountAvailableItemByIDTable(g_ReplaceTableIndex) <= 0 then 
-		GemMerge_GaiLvNum:SetText("#{BSFHC_240613_09}") --ÎÞÏà±¦Ê¯ÊýÁ¿²»×ã
+		GemMerge_GaiLvNum:SetText("#{BSFHC_240613_09}") --????????
 	else
 		local nOdds = 75
 		
@@ -683,14 +683,14 @@ function GemMerge_GetGemLevel(nSN)
 end
 --=========================================================
 --¿ªÊ¼¹ØÐÄNPC£¬
---ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØÐÄÖ®Ç°ÐèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓÐ¡°¹ØÐÄ¡±µÄNPC£¬
 --Èç¹ûÓÐµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓÐµÄ¡°¹ØÐÄ¡±
 --=========================================================
 function GemMerge_BeginCareObject( objCaredId )
 	theNPC = DataPool : GetNPCIDByServerID( objCaredId )
 	-- AxTrace( 0, 1, "theNPC0: " .. theNPC )
 	if theNPC == -1 then
-		PushDebugMessage("Î´·¢ÏÖ NPC")
+		PushDebugMessage("Chßa phát hi®n NPC")
 		this : Hide()
 		return
 	end

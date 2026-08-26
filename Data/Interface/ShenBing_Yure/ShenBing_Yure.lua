@@ -104,10 +104,10 @@ end
 --=========================================================
 function ShenBing_Yure_OnEvent(event)
 	if ( event == "UI_COMMAND" and tonumber(arg0) == g_nUICommandID ) then
-		-- 0 关闭, 1 打开, 2 刷新, 3 二次确认框
+		-- 0 关睜, 1 打开, 2 刷新, 3 二次确认框
 		local nOpType 	= Get_XParam_INT(0)
 
-		-- 关闭界面
+		-- 关睜界面
 		if 0 == nOpType then	
 			if this:IsVisible() then
 				ShenBing_Yure_OnClose()
@@ -130,7 +130,7 @@ function ShenBing_Yure_OnEvent(event)
 			end
 
 			-- 显示界面
-			-- 为了解决界面被遮挡的问题，先把界面关了
+			-- 为了解决界面被犣挡的问题，先把界面关了
 			-- if this:IsVisible() then
 			-- 	ShenBing_Yure_OnClose()
 			-- end
@@ -174,9 +174,9 @@ function ShenBing_Yure_OnEvent(event)
 		if(tonumber(arg0) ~= g_nObjCaredIDClient) then
 			return
 		end
-		-- 如果和NPC的距离大于一定距离或者被删除，自动关闭
+		-- 如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
-			-- 关闭界面
+			-- 关睜界面
 			ShenBing_Yure_OnClose()
 		end	
 
@@ -358,7 +358,7 @@ function ShenBing_Yure_PrizeClicked(nIndex)
 end
 
 --=========================================================
--- 关闭界面
+-- 关睜界面
 --=========================================================
 function ShenBing_Yure_OnClose()	
 	this:Hide()

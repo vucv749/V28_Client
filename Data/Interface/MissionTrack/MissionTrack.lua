@@ -2,19 +2,19 @@
 
 local g_strWndName = "MissionTrack";
 
-local g_dlgctrls = {}; --øÿº˛ºØ∫œ
+local g_dlgctrls = {}; --????
 local MissionPucker = {};
-local g_nNowCheck = 0;   --0:≥ı ºªØ£¨1:“—Ω”»ŒŒÒ£¨2£∫ø…Ω”»ŒŒÒ
-local g_LockState = 0;   --0:Œ¥À¯∂®£¨1£∫“—À¯∂®
+local g_nNowCheck = 0;   --0:???,1:????,2:????
+local g_LockState = 0;   --0:???,1:???
 local LEVEL_TO_MY_LEVEL = 10000;
 local g_Temp_Mylevel = 1;
 
-local g_DiFu_Scene_Id = 77; --µÿ∏Æ≥°æ∞ID
+local g_DiFu_Scene_Id = 77; --????ID
 --TT53675∂‘À˘”–≤ª∑˚∫œπÊ∑∂£¨√ª”–Ω´missionparamµ⁄0Œª◊ˆŒ™»ŒŒÒÕÍ≥…±Í÷æµƒ»ŒŒÒΩ≈±æ◊ˆÃÿ ‚¥¶¿Ì,–Ë“™Ãÿ ‚¥¶¿Ìµƒ»ŒŒÒΩ≈±æ∫≈¡–±Ì£∫
 local SpecialMissionList = {200006,200031}
 
 local g_MissionTrack_AutoMissionList = {
-	891274, 891275, 891276, 891277, 891278, 891279, --–ﬁ¡∂»ŒŒÒ
+	891274, 891275, 891276, 891277, 891278, 891279, --????
 }
 
 local g_MissionTrack_Frame_UnifiedSize;
@@ -38,7 +38,7 @@ function MissionTrack_PreLoad()
 	this:RegisterEvent("UPDATE_WILLGET_MISSION_TRACK");
 
 	this:RegisterEvent("TRACK_ALPHA_ACTION");
-	this:RegisterEvent("UNIT_LEVEL"); --ÕÊº“…˝º∂µƒ ±∫Ú∏¸–¬ø…Ω”¡–±Ì
+	this:RegisterEvent("UNIT_LEVEL"); --?????????????
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("ADJEST_UI_RELATION_POS")
 end
@@ -127,7 +127,7 @@ function MissionTrack_OnEvent(event)
 		local nScreenMaxHeigh = tonumber(arg1)
 		if (nCurX+nCurWidht > nScreenMaxWidht or nCurY+nCurHeigh > nScreenMaxHeigh) then
 			MissionTrack_On_Reset()
-			--Õ¨ ±µ˜’˚CampaignTrackΩÁ√Ê
+			--Õ¨ ±µ˜†˚CampaignTrackΩÁ√Ê
 			AdjustUIPos("CampaignTrack")
 		end
 	elseif (event == "ADJEST_UI_RELATION_POS") then
@@ -139,10 +139,10 @@ end
 
 --  «∑ÒŒ™◊‘∂ØªØ»ŒŒÒ
 function MissionTrack_CheckScriptId_CanAutoRun(nScriptId)
-	if nScriptId >= 893186 and nScriptId <= 893212 then --Œ‰µ¿∂˛≤„¿˙¡∑»ŒŒÒ
+	if nScriptId >= 893186 and nScriptId <= 893212 then --????????
 		return 2
 	end
-	for i, findId in g_MissionTrack_AutoMissionList do --Œ‰µ¿“ª≤„¿˙¡∑»ŒŒÒ
+	for i, findId in g_MissionTrack_AutoMissionList do --????????
 		if nScriptId == findId then
 			return 1
 		end
@@ -193,7 +193,7 @@ function MissionTrack_UpdateHaveGetMission(nSelectMissionID)
 
 							if nMissionLevel == LEVEL_TO_MY_LEVEL then
 								nMissionLevel =  Player:GetData( "LEVEL" );
-								if (nMissionLevel > 0) then   --Ω¯»Î¿ﬁÃ®∫Ûµ√µΩ «0£¨÷ª «œ‘ æŒ Ã‚£¨≤ªœÎ∏ƒ∑˛ŒÒ∆˜¬ﬂº≠£¨À˘“‘”√’‚√¥“ª÷÷∫‹»ı÷«µƒ∑Ω∑®
+								if (nMissionLevel > 0) then   --????????0,??????,????????,?????????????
 									g_Temp_Mylevel = nMissionLevel;
 								else
 									nMissionLevel = g_Temp_Mylevel;
@@ -221,7 +221,7 @@ function MissionTrack_UpdateHaveGetMission(nSelectMissionID)
 			                    	break
 		                      end
 	                  		end
-	                  		if nScriptId >= 1020000 and nScriptId <= 1029999 then --À˘”–µƒÃΩÀ˜≈‰±Ì»ŒŒÒ∂º–Ë“™Ãÿ ‚¥¶¿Ì
+	                  		if nScriptId >= 1020000 and nScriptId <= 1029999 then --????????????????
 	   	                  		IsSpecial = 1
 	                  		end
 							if IsSpecial == 1 then
@@ -235,25 +235,25 @@ function MissionTrack_UpdateHaveGetMission(nSelectMissionID)
 							end
 							if(Mission_Variable >0) then
 								if(Mission_Variable == 1) then
-									strOKFail = "ÕÍ≥…";
+									strOKFail = "Ho‡n th‡nh";
 									nFinished = 1
 								elseif(Mission_Variable == 2) then
-									strOKFail = " ß∞‹";
+									strOKFail = "Th‡nh cÙng";
 								elseif(Mission_Variable == 3) then
 									if IsNGRunning() == 1 then
-										strOKFail = "#G◊‘∂Ø"
+										strOKFail = "#Gtπ µng"
 									else
-										strOKFail = "#{_INFONGSTRø™∆Ù}"
+										strOKFail = "#{_INFONGSTRm∑ ra}"
 									end
 								end
 							end
 
-							color = "FFF8A10A";	--≥»…´
+							color = "FFF8A10A";	--??
 							local nChange, strMissionName = DataPool:GetMissionShortName(strInfo);--string.sub(strInfo, -6);
 							if (nChange > 0) then
 								strMissionName = strMissionName .. "...";
 							end
-							if (nFinished == 1) then   --“—ÕÍ≥…
+							if (nFinished == 1) then   --???
 								Constitutes = {"  #Y(" .. nMissionLevel ..") " .. strMissionName .. " #G" .. strOKFail,i-1,color,nMissionLevel,nFinished};
 							else
 								Constitutes = {"  #Y(" .. nMissionLevel ..") " .. strMissionName .. " " .. strOKFail,i-1,color,nMissionLevel,nFinished};
@@ -329,13 +329,13 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 	local strFinishNPC, strFinishSceneName, nFinishSceneID, nFinishX, nFinishY = DataPool:GetMissionFinishInfo(nMissionIndex);
 	-- PushDebugMessage(strFinishNPC);
 	-- PushDebugMessage(nFinished);
-	if (nFinished == 1 and strFinishNPC ~= "") then       --“—ÕÍ≥…µƒ»ŒŒÒ
+	if (nFinished == 1 and strFinishNPC ~= "") then       --??????
 		--if (strFinishNPC ~= "") then
-			--local strTemp = string.format("   #W»•#G%s#W’“#R%s#{_INFOAIM%d,%d,%d,%s}#W", strFinishSceneName, strFinishNPC, nFinishX, nFinishY, nFinishSceneID, strFinishNPC);
+			--local strTemp = string.format("   #W»•#G%s#W†“#R%s#{_INFOAIM%d,%d,%d,%s}#W", strFinishSceneName, strFinishNPC, nFinishX, nFinishY, nFinishSceneID, strFinishNPC);
 			local strTemp = "";
 			local nIndex = DataPool:GetPlayerMission_Display(nMissionIndex,7)--czf modify,2009.08.26
 			if nIndex == 1018870 then
-				strTemp = string.format("   #W»•#G%s#W’“#R%s#W", strFinishSceneName, strFinishNPC);
+				strTemp = string.format("#WKH—#G%s#WTr‰o#R%s#W", strFinishSceneName, strFinishNPC);
 			elseif nIndex == 210273 then
 				strTemp = "#{XSRW_100313_01}"
 			elseif nIndex == 210257 then
@@ -346,22 +346,22 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 				strTemp = "#{XSRW_100313_04}"
 			elseif nIndex == 210269 then
 				strTemp = "#{XSRW_100313_05}"
-			elseif nIndex == 890638 then  --Q4¥Úø® —∞±¶¿÷∑≠ÃÏ
+			elseif nIndex == 890638 then  --Q4?? ?????
 				strTemp = "   ".."#{XBLFT_131112_99}";
-			elseif nIndex == 600047 or nIndex == 600048 or nIndex == 600049 then		--∞Ô≈…»ŒŒÒ for:TT 64489
-				strTemp = string.format("   #W»•’“#R%s",	strFinishNPC);
+			elseif nIndex == 600047 or nIndex == 600048 or nIndex == 600049 then		--???? for:TT 64489
+				strTemp = string.format("#WI tÏm#R%s",	strFinishNPC);
 			elseif nIndex == 998289 then
 				strTemp = "#{FQZC_230331_287}"
 			elseif nIndex == 998317 then
 				strTemp = "#{FQZC_230331_292}"
 			elseif MissionTrack_CheckScriptId_CanAutoRun(nIndex) >= 1 then
-				strTemp = string.format("   #W»•#G%s#W’“#R%s#{_INFONGAIM%d,%d,%d,%s}", strFinishSceneName, strFinishNPC, nFinishX, nFinishY, nFinishSceneID, strFinishNPC);
+				strTemp = string.format("#WKH—#G%s#WTr‰o#R%s#{_INFONGAIM%d, %d, %d, %s}", strFinishSceneName, strFinishNPC, nFinishX, nFinishY, nFinishSceneID, strFinishNPC);
 			else
-				strTemp = string.format("   #W»•#G%s#W’“#R%s#{_INFOAIM%d,%d,%d,%s}", strFinishSceneName, strFinishNPC, nFinishX, nFinishY, nFinishSceneID, strFinishNPC);
+				strTemp = string.format("#WKH—#G%s#WTr‰o#R%s#{_INFOAIM%d, %d, %d, %s}", strFinishSceneName, strFinishNPC, nFinishX, nFinishY, nFinishSceneID, strFinishNPC);
 			end
 			strTarget = strTemp;
 		--end
-	else    --Œ¥ÕÍ≥…µƒ»ŒŒÒ
+	else    --??????
 		--local nRound = DataPool:GetPlayerMission_Display(nMissionIndex,3);
 		--if( nRound >= 0 ) then
 		--	Mission_Variable = DataPool:GetPlayerMission_DataRound(nRound);
@@ -391,7 +391,7 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 			     break
 		    end
 	   end
-	   if nScriptId1>=1020000 and nScriptId1<=1029999 then --À˘”–µƒÃΩÀ˜≈‰±Ì»ŒŒÒ∂º–Ë“™Ãÿ ‚¥¶¿Ì
+	   if nScriptId1>=1020000 and nScriptId1<=1029999 then --????????????????
 	   	    IsSpecial = 1
 	   end
 	   if IsSpecial==0 then
@@ -400,20 +400,20 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 		--»ŒŒÒ–Ë“™…±µƒnpc
 		local nDemandKillNum,Kill_Random_Type = DataPool:GetPlayerMissionDemandKill_Num(nMissionIndex);
 		if( nDemandKillNum > 0 ) then
-			strAppend = "   #W“—…±À¿£∫";
+			strAppend = "#WDŒ gi™t ch™t:";
 			for i=1, nDemandKillNum do
 				--    –Ë“™µƒNPC£¨–Ë“™NPC ID£¨–Ë“™∂‡…Ÿ∏ˆ
 				local nNPCName, nNum = DataPool:GetPlayerMissionDemand_NPC(i-1,Kill_Random_Type,nMissionIndex);
 				Mission_Variable = DataPool:GetPlayerMission_Variable(nMissionIndex,MissionParam_Index,Kill_Random_Type,i-1);
 				MissionParam_Index = MissionParam_Index + 1;
 				if (i == 1 and nDemandKillNum > 1) then
-					strAppend = strAppend.."#W"..nNPCName.."£∫"..tostring(Mission_Variable).."/"..tostring(nNum).."#r";
+					strAppend = strAppend.."#W"..nNPCName..":"..tostring(Mission_Variable).."/"..tostring(nNum).."#r";
 				elseif (i == 1 and nDemandKillNum == 1) then
-					strAppend = strAppend.."#W"..nNPCName.."£∫"..tostring(Mission_Variable).."/"..tostring(nNum);
+					strAppend = strAppend.."#W"..nNPCName..":"..tostring(Mission_Variable).."/"..tostring(nNum);
 				elseif( i == nDemandKillNum) then
-					strAppend = strAppend.."#W            "..nNPCName.."£∫"..tostring(Mission_Variable).."/"..tostring(nNum);
+					strAppend = strAppend.."#W            "..nNPCName..":"..tostring(Mission_Variable).."/"..tostring(nNum);
 				else
-					strAppend = strAppend.."#W            "..nNPCName.."£∫"..tostring(Mission_Variable).."/"..tostring(nNum).."#r";
+					strAppend = strAppend.."#W            "..nNPCName..":"..tostring(Mission_Variable).."/"..tostring(nNum).."#r";
 				end
 				nNewIndex = nNewIndex + 1;
 			end
@@ -423,11 +423,11 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 		local nDemandNum,Item_Random_Type= DataPool:GetPlayerMissionDemand_Num(nMissionIndex);
 		if( nDemandNum > 0 ) then
 			if(Item_Random_Type == -100) then
-				strAppend = "   #W“—Ã·Ωª£∫";
+				strAppend = "#WDŒ Æ trÏnh:";
 				nNewIndex = nNewIndex + 1;
 				Item_Random_Type = 0
 			else
-				strAppend = "   #W“—µ√µΩ£∫";
+				strAppend = "#WDŒ nhßn ﬂ˛c:";
 				nNewIndex = nNewIndex + 1;
 			end
 		end
@@ -475,7 +475,7 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 			if nNum == 0 then
 				strAppend = strAppend.."   " .. strCustom..strDot;
 			else
-				strAppend = strAppend.."   " .. strCustom .. " £∫ ".. Mission_Variable .. "/" .. nNum..strDot;
+				strAppend = strAppend.."   " .. strCustom .. ":".. Mission_Variable .. "/" .. nNum..strDot;
 
 			end
 		end
@@ -493,42 +493,42 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 			if nNeedNum == 0 then
 				strAppend = strAppend..strCustom..strDot;
 			else
-				strAppend = strAppend..strCustom .. " £∫ ".. nCompleteNum .. "/" .. nNeedNum..strDot;
+				strAppend = strAppend..strCustom .. ":".. nCompleteNum .. "/" .. nNeedNum..strDot;
 			end
 		end
 
 
 		local strTemp = "";
 		strTarget = "";
-		if (nMissionTrackType == 1) then   --Ω≈±æ»ŒŒÒ£¨÷±Ω”∂¡»°»ŒŒÒ∏˙◊Ÿ–≈œ¢
+		if (nMissionTrackType == 1) then   --????,??????????
 			strTarget = DataPool:GetLuaMissionTrackInfo(nMissionIndex);
 			if (strAppend ~= "") then
 				strTarget = "   #W" .. strTarget.."#r#W"..strAppend;
 			else
 				strTarget = "   #W" .. strTarget;
 			end
-		elseif(nMissionTrackType == 2) then   --±Ì∏ÒÀÕŒÔ»ŒŒÒ£¨∏˘æ›≤ªÕ¨¿‡–ÕΩ¯––Œƒ◊÷∆•≈‰
+		elseif(nMissionTrackType == 2) then   --??????,????????????
 			local strNPCName, strSceneName, nTargetScene, nPosX, nPosY = DataPool:GetDeliveryMissionTrackInfo(nMissionIndex);
 			if (strNPCName ~= "") then
 				-- ”¢–€»ŒŒÒ∂‘”¶ ≥°æ∞Œ™-1
 				local strTemp = "";
 				if(nTargetScene ~= -1) then
-					--strTemp = string.format("   #W»•#G%s#W’“#R%s#{_INFOAIM%d,%d,%d,%s}#W", strSceneName, strNPCName, nPosX, nPosY, nTargetScene, strNPCName);
+					--strTemp = string.format("   #W»•#G%s#W†“#R%s#{_INFOAIM%d,%d,%d,%s}#W", strSceneName, strNPCName, nPosX, nPosY, nTargetScene, strNPCName);
 					local nIndex = DataPool:GetPlayerMission_Display(nMissionIndex,7)--czf modify,2009.08.26
 					if nIndex == 1018870 then
-						strTemp = string.format("   #W»•#G%s#W’“#R%s#W", strSceneName, strNPCName);
+						strTemp = string.format("#WKH—#G%s#WTr‰o#R%s#W", strSceneName, strNPCName);
 					else
-						strTemp = string.format("   #W»•#G%s#W’“#R%s#{_INFOAIM%d,%d,%d,%s}", strSceneName, strNPCName, nPosX, nPosY, nTargetScene, strNPCName);
+						strTemp = string.format("#WKH—#G%s#WTr‰o#R%s#{_INFOAIM%d, %d, %d, %s}", strSceneName, strNPCName, nPosX, nPosY, nTargetScene, strNPCName);
 					end
 				else
-					strTemp = string.format("   #W»•#G%s#W’“#R%s#W", strSceneName, strNPCName);
+					strTemp = string.format("#WKH—#G%s#WTr‰o#R%s#W", strSceneName, strNPCName);
 				end
 				strTarget = strTarget .. strTemp .. "#r";
 			end
 			if (strAppend ~= "") then
 				strTarget = strTarget .. strAppend;
 			end
-		elseif(nMissionTrackType == 3) then   --±Ì∏Ò≈‰÷√…±π÷»ŒŒÒ
+		elseif(nMissionTrackType == 3) then   --????????
 			local nMonsterNum = DataPool:GetKillMonsterMissionTrackInfo_num(nMissionIndex);
 			if (nMonsterNum > 0) then
 				for nn = 1, nMonsterNum do
@@ -536,9 +536,9 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 					if(strMonsterName ~= "") then
 						local strTemp = "";
 						if(nSceneId ~= -1) then
-							 strTemp = string.format("   #W»•#G%s#W…±#R%s#{_INFOAIM%d,%d,%d,%s}#W", tostring(strSceneName),tostring(strMonsterName), tonumber(nXpos), tonumber(nYpos), tonumber(nSceneId), tostring(strMonsterName));
+							 strTemp = string.format("#WKH—#G%s#WS·t#R%s#{_INFOAIM%d, %d, %d, %s}#W", tostring(strSceneName),tostring(strMonsterName), tonumber(nXpos), tonumber(nYpos), tonumber(nSceneId), tostring(strMonsterName));
 						else
-							 strTemp = string.format("   #W»•#G%s#W…±#R%s#W", tostring(strSceneName),tostring(strMonsterName));
+							 strTemp = string.format("#WKH—#G%s#WS·t#R%s#W", tostring(strSceneName),tostring(strMonsterName));
 						end
 						strTarget = strTarget .. strTemp;
 						strTarget = strTarget .. "#r";
@@ -556,9 +556,9 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 					if (strMonsterName ~= "") then
 						local strTemp = "";
 						if(nSceneID ~= -1) then
-							 strTemp = string.format("   #W»•#G%s#W…±#R%s#{_INFOAIM%d,%d,%d,%s}#W", strSceneName, strMonsterName, xPos, yPos, nSceneID, strMonsterName);
+							 strTemp = string.format("#WKH—#G%s#WS·t#R%s#{_INFOAIM%d, %d, %d, %s}#W", strSceneName, strMonsterName, xPos, yPos, nSceneID, strMonsterName);
 						else
-							 strTemp = string.format("   #W»•#G%s#W…±#R%s#W", strSceneName, strMonsterName);
+							 strTemp = string.format("#WKH—#G%s#WS·t#R%s#W", strSceneName, strMonsterName);
 						end
 						strTarget = strTarget .. strTemp;
 						strTarget = strTarget .. "#r";
@@ -573,9 +573,9 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 			if (strObjName ~= "") then
 				local strTemp = "";
 				if(nTargetScene ~= -1) then
-					strTemp = string.format("   #WµΩ%s’“#R%s#{_INFOAIM%d,%d,%d,%s}#W#r",strTargetScene, strTargetNPC, xPos, yPos, nTargetScene, strTargetNPC);
+					strTemp = string.format("#W–¡o%sTr‰o#R%s#{_INFOAIM%d, %d, %d, %s}#W#r",strTargetScene, strTargetNPC, xPos, yPos, nTargetScene, strTargetNPC);
 				else
-					strTemp = string.format("   #WµΩ%s’“#R%s#W",strTargetScene, strTargetNPC);
+					strTemp = string.format("#W–¡o%sTr‰o#R%s#W",strTargetScene, strTargetNPC);
 				end
 				strTarget = strTarget .. strTemp;
 			end
@@ -674,7 +674,7 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 
 		end		
 		
-		-- [2017-‘™œ¸Ω⁄≤¬µ∆√’ªÓ∂Ø]
+		-- [2017-‘™œ¸Ω⁄≤¬µ∆√†ªÓ∂Ø]
 		if (nMissionTrackType == 9 and DataPool:GetPlayerMission_Display(nMissionIndex, 7) == 892384) then
 			strTarget = "   "..QuestLog_GetTrack_2017YXJCDM(nMissionIndex);
 		end
@@ -916,12 +916,12 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 	if nScriptId == 998776 then
 		strTarget = "" .. MissionTrack_2024PM_Mission3(nMissionIndex)
 	end
-	-- °æ2024Q2°ø–¬∞Ê±æ‘§»»-…Ω÷ÿÀÆ∏¥ ‘Ÿ’Ω≤‘…Ω
+	-- °æ2024Q2°ø–¬∞Ê±æ‘§»»-…Ω÷ÿÀÆ∏¥ ‘Ÿ†Ω≤‘…Ω
 	if nScriptId == 998777 then
 		strTarget = "" .. MissionTrack_2024PM_Mission4(nMissionIndex)
 	end
 	
-	-- £®6.21£©°æª≥æ…°ø°æ2024Q2°ø–¬∞Ê±æŒ»ªÓ-œƒ»’±˘‰ø¡‹ªÓ∂Ø°§≥Ã–Úœ‡πÿ
+	-- £®6.21£©°æª≥æ…°ø°æ2024Q2°ø–¬∞Ê±æŒ»ªÓ-œƒ»†±˘‰ø¡‹ªÓ∂Ø°§≥Ã–Úœ‡πÿ
 	if 998812 == nScriptId then
 		strTarget = "   "..MissionTrack_XRBQL(nMissionIndex)
 	end
@@ -959,7 +959,7 @@ function MissionTrack_JingJinMision( nMissionIndex )
 	local NPCname,LPname ,Npcscene = MissionTrack_GetItem_JingJinMission( nIndex1,nIndex2 )
 
 	if NPCname ~= "" and LPname ~= "" then
-		local strTemp = string.format("#W»•#G%s#W’“#R%s#W", Npcscene, NPCname);
+		local strTemp = string.format("#WKH—#G%s#WTr‰o#R%s#W", Npcscene, NPCname);
 
 		return strTemp
 	end
@@ -1067,23 +1067,23 @@ function MissionTrack_GetXunBaoLeFanTianTarget( nMissionIndex )
 
     local pos =
 	{
-		-- À’÷›	¬ÎÕ∑£®238£¨81£©°¢Œƒ√Ì£®90£¨81£©°¢≈∑“±◊”£®266£¨138£©
+		-- À†÷›	¬ÎÕ∑£®238£¨81£©°¢Œƒ√Ì£®90£¨81£©°¢≈∑“±◊”£®266£¨138£©
 		[1] = {
-			[1] = {SceneID = 1, PosX = 238, PosZ = 81,	SceneName = "À’÷›",	SubName = "¬ÎÕ∑"},
-			[2] = {SceneID = 1, PosX = 90,	PosZ = 81,	SceneName = "À’÷›",	SubName = "Œƒ√Ì"},
-			[3] = {SceneID = 1, PosX = 266, PosZ = 138,	SceneName = "À’÷›",	SubName = "≈∑“±◊”"},
+			[1] = {SceneID = 1, PosX = 238, PosZ = 81,	SceneName = "TÙ Ch‚u",	SubName = "B™n t‡u"},
+			[2] = {SceneID = 1, PosX = 90,	PosZ = 81,	SceneName = "TÙ Ch‚u",	SubName = "VÂn mi™u"},
+			[3] = {SceneID = 1, PosX = 266, PosZ = 138,	SceneName = "TÙ Ch‚u",	SubName = "¬u D„ Tÿ"},
 		},
 		-- ¬Â—Ù	Œ‰∆˜µÍ£®209£¨154£©°¢‘¬¿œ£®48£¨62£©°¢Ô⁄æ÷£®84£¨118£©
 		[2] = {
-			[1] = {SceneID = 0, PosX = 209, PosZ = 154,	SceneName = "¬Â—Ù",	SubName = "Œ‰∆˜µÍ"},
-			[2] = {SceneID = 0, PosX = 48,	PosZ = 62,	SceneName = "¬Â—Ù",	SubName = "‘¬¿œ"},
-			[3] = {SceneID = 0, PosX = 84, 	PosZ = 118,	SceneName = "¬Â—Ù",	SubName = "Ô⁄æ÷"},
+			[1] = {SceneID = 0, PosX = 209, PosZ = 154,	SceneName = "L’c DﬂΩng",	SubName = "V˚ khÌ i™m"},
+			[2] = {SceneID = 0, PosX = 48,	PosZ = 62,	SceneName = "L’c DﬂΩng",	SubName = "NguyÆt L„o"},
+			[3] = {SceneID = 0, PosX = 84, 	PosZ = 118,	SceneName = "L’c DﬂΩng",	SubName = "TiÍu c¯c"},
 		},
 		-- ¥Û¿Ì	Õ˚≤‘Ã®£®240,56£©°¢ŒÂª™Ã≥£®160,169£©°¢‘∆∆Æ∆Æ£®264,128£©
 		[3] = {
-			[1] = {SceneID = 2, PosX = 240, PosZ = 56,	SceneName = "¥Û¿Ì",	SubName = "Õ˚≤‘Ã®"},
-			[2] = {SceneID = 2, PosX = 160, PosZ = 169,	SceneName = "¥Û¿Ì",	SubName = "ŒÂª™Ã≥"},
-			[3] = {SceneID = 2, PosX = 264, PosZ = 128,	SceneName = "¥Û¿Ì",	SubName = "‘∆∆Æ∆Æ"},
+			[1] = {SceneID = 2, PosX = 240, PosZ = 56,	SceneName = "–’i L˝",	SubName = "V˜ng ThﬂΩng –‡i"},
+			[2] = {SceneID = 2, PosX = 160, PosZ = 169,	SceneName = "–’i L˝",	SubName = "Ng˚ Hoa –‡n"},
+			[3] = {SceneID = 2, PosX = 264, PosZ = 128,	SceneName = "–’i L˝",	SubName = "V‚n PhiÍu PhiÍu"},
 		},
 	}
     local index_suzhou = 1
@@ -1170,7 +1170,7 @@ function MissionTrack_2024PM_Mission3(nMissionIndex)
 	end
 	return strTarget
 end
--- °æ2024Q2°ø–¬∞Ê±æ‘§»»-…Ω÷ÿÀÆ∏¥ ‘Ÿ’Ω≤‘…Ω
+-- °æ2024Q2°ø–¬∞Ê±æ‘§»»-…Ω÷ÿÀÆ∏¥ ‘Ÿ†Ω≤‘…Ω
 function MissionTrack_2024PM_Mission4(nMissionIndex)
 	local strTarget = ""
 	local nFinished = DataPool:GetPlayerMission_Variable(nMissionIndex, 0)
@@ -1212,13 +1212,13 @@ function MissionTrack_UpdateWillGet()
 
 	CollectMissionOutline();
 
-	for iMissionType=1,200 do             --œ÷»ŒŒÒ¿‡–Õ“ªπ≤200÷÷
+	for iMissionType=1,200 do             --???????200?
 	    local strOutlineName = "#cff9900" .. DataPool:GetMissionInfo_Kind( iMissionType );  --#gFE7E82
 
 		if( strOutlineName ~= "" or strOutlineName ~= 0) then
 	   		local iStart = iMissionType*10000;
 	    	local DeployNum = GetMissionOutlineNum( iMissionType )
-	   		if( DeployNum > 0 and iMissionType ~= 50) then       --∞Ôª·≥« –»ŒŒÒ£¨’‚¿Ô≤ª“™¡À
+	   		if( DeployNum > 0 and iMissionType ~= 50) then       --??????,?????
 	        	local OutLineMission_Seq = {};
 	        	local i = 1;
 				for i=1, DeployNum do
@@ -1226,7 +1226,7 @@ function MissionTrack_UpdateWillGet()
 					local MissionLevel, MinLevel, MaxLevel, strNpcName, strNpcPos, strScene, strMissionName, PosX, PosY, SceneID = GetMissionOutlineInfo( iMissionType, i );
 					if( MissionLevel - nMyLevel <= 5 and MissionLevel >= nMyLevel -3) then
 						local strInfo = "";
-						strInfo = " #Y("..MissionLevel..")"..strMissionName;   --»ŒŒÒ√˚
+						strInfo = " #Y("..MissionLevel..")"..strMissionName;   --???
 						table.insert(OutLineMission_Seq,strInfo)
 						--MissionTrack_ListBoxTransparent:AddItemExWithoutLayout( strInfo, (iStart+i), 0);
 						strInfo = "";
@@ -1236,14 +1236,14 @@ function MissionTrack_UpdateWillGet()
 	    				else
 	    					strInfo = strInfo.."   #R"..strNpcName..strNpcPos
 	    				end
-						table.insert(OutLineMission_Seq,strInfo)        --»ŒŒÒ◊∑◊Ÿ–≈œ¢
+						table.insert(OutLineMission_Seq,strInfo)        --??????
 					end
 				end
 
 				if (table.getn(OutLineMission_Seq) > 0) then
 					MissionTrack_ListBoxTransparent:AddItemExWithoutLayout( strOutlineName, iStart, 0 )
 					local nn = 1;
-					color = "FFD9F80A";	--ª∆…´
+					color = "FFD9F80A";	--??
 					for nn,Per_Seq in ipairs(OutLineMission_Seq) do
 						MissionTrack_ListBoxTransparent:AddItemExWithoutLayout( Per_Seq, (iStart+nn), 0, color, 4);
 					end
@@ -1367,7 +1367,7 @@ end
 
 function MissionTrack_On_Lock()
 
-	if (g_LockState == 0) then   --◊º±∏À¯∂®
+	if (g_LockState == 0) then   --????
 		g_LockState = 1;
 		MissionTrack_UnLock:Show();
 		MissionTrack_Lock:Hide();
@@ -1382,7 +1382,7 @@ function MissionTrack_On_Lock()
 		MissionTrack_Width_Add:SetProperty("MouseHollow", "True");
 		MissionTrack_Width_Reduce:SetProperty("MouseHollow", "True");
 		MissionTrack_Reset:SetProperty("MouseHollow", "True");
-	else               --Ω‚À¯
+	else               --??
 		g_LockState = 0;
 		MissionTrack_Lock:Show();
 		MissionTrack_UnLock:Hide();
@@ -1530,17 +1530,17 @@ end
 function MissionTrack_GetXuanChuanYXDHTarget( nMissionIndex )
 
 	local MenPaiList = {
-		[0] = "#{BFHX_210203_07}",    --…Ÿ¡÷
-		[1] = "#{BFHX_210203_13}",    --√˜ΩÃ
-		[2] = "#{BFHX_210203_12}",    --ÿ§∞Ô
-		[3] = "#{BFHX_210203_14}",    --Œ‰µ±
-		[4] = "#{BFHX_210203_08}",    --∂Î√º
-		[5] = "#{BFHX_210203_11}",    --–«Àﬁ
-		[6] = "#{BFHX_210203_10}",    --ÃÏ¡˙
-		[7] = "#{BFHX_210203_09}",    --ÃÏ…Ω
-		[8] = "#{BFHX_210203_15}",     --Â–“£
-		[9] = "Œﬁ√≈≈…",     --Œﬁ√≈≈…
-		[10] = "#{GMGameInterface_Script_DataPool_Info_ManTuoShanZhuang}",     --¬¸Õ”…Ω◊Ø
+		[0] = "#{BFHX_210203_07}",    --??
+		[1] = "#{BFHX_210203_13}",    --??
+		[2] = "#{BFHX_210203_12}",    --??
+		[3] = "#{BFHX_210203_14}",    --??
+		[4] = "#{BFHX_210203_08}",    --??
+		[5] = "#{BFHX_210203_11}",    --??
+		[6] = "#{BFHX_210203_10}",    --??
+		[7] = "#{BFHX_210203_09}",    --??
+		[8] = "#{BFHX_210203_15}",     --??
+		[9] = "TÒ do",     --???
+		[10] = "#{GMGameInterface_Script_DataPool_Info_ManTuoShanZhuang}",     --????
 	}
 
 	local isDoneAll = 1
@@ -1605,16 +1605,16 @@ function MissionTrack_GetItem_JingJinMission( nIndex1,nIndex2 )
 	local LPname = ""
 	local MenPaiNpc = {
 
-	[0] ={MenPai="…Ÿ¡÷",SceneName="…Ÿ¡÷À¬",NPC={[0]="#{LLRW_230309_22}",[1]="#{LLRW_230309_21}"},LP={[0]="#{XLRW_210725_481}",[1]="#{XLRW_210725_480}"},},
-	[1] ={MenPai="√˜ΩÃ",SceneName="π‚√˜µÓ",NPC={[0]="#{LLRW_230309_26}",[1]="#{LLRW_230309_25}"},LP={[0]="#{XLRW_210725_485}",[1]="#{XLRW_210725_484}"},},
-	[2] ={MenPai="ÿ§∞Ô",SceneName="ÿ§∞Ô◊‹∂Ê",NPC={[0]="#{LLRW_230309_24}",[1]="#{LLRW_230309_23}"},LP={[0]="#{XLRW_210725_483}",[1]="#{XLRW_210725_482}"},},
-	[3] ={MenPai="Œ‰µ±",SceneName="Œ‰µ±…Ω",NPC={[0]="#{LLRW_230309_27}",[1]="#{LLRW_230309_28}"},LP={[0]="#{XLRW_210725_486}",[1]="#{XLRW_210725_487}"},},
-	[4] ={MenPai="∂Î·“",SceneName="∂Î·“…Ω",NPC={[0]="#{LLRW_230309_33}",[1]="#{LLRW_230309_34}"},LP={[0]="#{XLRW_210725_492}",[1]="#{XLRW_210725_493}"},},
-	[5] ={MenPai="–«Àﬁ",SceneName="–«Àﬁ∫£",NPC={[0]="#{LLRW_230309_35}",[1]="#{LLRW_230309_36}"},LP={[0]="#{XLRW_210725_494}",[1]="#{XLRW_210725_495}"},},
-	[6] ={MenPai="ÃÏ¡˙",SceneName="ÃÏ¡˙À¬",NPC={[0]="#{LLRW_230309_29}",[1]="#{LLRW_230309_30}"},LP={[0]="#{XLRW_210725_488}",[1]="#{XLRW_210725_489}"},},
-	[7] ={MenPai="ÃÏ…Ω",SceneName="ÃÏ…Ω",NPC={[0]="#{LLRW_230309_37}",[1]="#{LLRW_230309_38}"},LP={[0]="#{XLRW_210725_496}",[1]="#{XLRW_210725_497}"},},
-	[8] ={MenPai="Â–“£",SceneName="¡Ë≤®∂¥",NPC={[0]="#{LLRW_230309_31}",[1]="#{LLRW_230309_32}"},LP={[0]="#{XLRW_210725_490}",[1]="#{XLRW_210725_491}"},},
-	[10] ={MenPai="¬¸Õ”",SceneName="¬¸Õ”…Ω◊Ø",NPC={[0]="#{LLRW_230309_39}",[1]="#{LLRW_230309_40}"},LP={[0]="#{XLRW_210725_737}",[1]="#{XLRW_210725_738}"},},
+	[0] ={MenPai="Thi™u L‚m",SceneName="Thi™u L‚m TÒ",NPC={[0]="#{LLRW_230309_22}",[1]="#{LLRW_230309_21}"},LP={[0]="#{XLRW_210725_481}",[1]="#{XLRW_210725_480}"},},
+	[1] ={MenPai="Minh Gi·o",SceneName="Quang Minh –iÆn",NPC={[0]="#{LLRW_230309_26}",[1]="#{LLRW_230309_25}"},LP={[0]="#{XLRW_210725_485}",[1]="#{XLRW_210725_484}"},},
+	[2] ={MenPai="C·i Bang",SceneName="C·i Bang T±ng –‡",NPC={[0]="#{LLRW_230309_24}",[1]="#{LLRW_230309_23}"},LP={[0]="#{XLRW_210725_483}",[1]="#{XLRW_210725_482}"},},
+	[3] ={MenPai="Vı –ang",SceneName="Vı –ang SΩn",NPC={[0]="#{LLRW_230309_27}",[1]="#{LLRW_230309_28}"},LP={[0]="#{XLRW_210725_486}",[1]="#{XLRW_210725_487}"},},
+	[4] ={MenPai="Nga Mi",SceneName="Nga Mi SΩn",NPC={[0]="#{LLRW_230309_33}",[1]="#{LLRW_230309_34}"},LP={[0]="#{XLRW_210725_492}",[1]="#{XLRW_210725_493}"},},
+	[5] ={MenPai="Tinh T˙c",SceneName="Tinh T˙c H‰i",NPC={[0]="#{LLRW_230309_35}",[1]="#{LLRW_230309_36}"},LP={[0]="#{XLRW_210725_494}",[1]="#{XLRW_210725_495}"},},
+	[6] ={MenPai="ThiÍn Long",SceneName="ThiÍn Long TÒ",NPC={[0]="#{LLRW_230309_29}",[1]="#{LLRW_230309_30}"},LP={[0]="#{XLRW_210725_488}",[1]="#{XLRW_210725_489}"},},
+	[7] ={MenPai="ThiÍn SΩn",SceneName="ThiÍn SΩn",NPC={[0]="#{LLRW_230309_37}",[1]="#{LLRW_230309_38}"},LP={[0]="#{XLRW_210725_496}",[1]="#{XLRW_210725_497}"},},
+	[8] ={MenPai="TiÍu dao",SceneName="LÂng Ba –µng",NPC={[0]="#{LLRW_230309_31}",[1]="#{LLRW_230309_32}"},LP={[0]="#{XLRW_210725_490}",[1]="#{XLRW_210725_491}"},},
+	[10] ={MenPai="M’n –‡",SceneName="M’n –‡ SΩn Trang",NPC={[0]="#{LLRW_230309_39}",[1]="#{LLRW_230309_40}"},LP={[0]="#{XLRW_210725_737}",[1]="#{XLRW_210725_738}"},},
 
 	}
 	if nIndex1 < 0 or nIndex1 > 10 or nIndex1 == 9 or nIndex2 < 0 or nIndex2 >1 then
@@ -1678,16 +1678,16 @@ function MissionTrack_GetItem_LiLianMission4( nIndex1,nIndex2 )
 	local LPname = ""
 	local MenPaiNpc = {
 
-	[0] ={MenPai="…Ÿ¡÷",NPC={[0]="#{LLRW_231010_22}",[1]="#{LLRW_231010_21}"},LP={[0]="#{XLRW_210725_481}",[1]="#{XLRW_210725_480}"},},
-	[1] ={MenPai="√˜ΩÃ",NPC={[0]="#{LLRW_231010_26}",[1]="#{LLRW_231010_25}"},LP={[0]="#{XLRW_210725_485}",[1]="#{XLRW_210725_484}"},},
-	[2] ={MenPai="ÿ§∞Ô",NPC={[0]="#{LLRW_231010_24}",[1]="#{LLRW_231010_23}"},LP={[0]="#{XLRW_210725_483}",[1]="#{XLRW_210725_482}"},},
-	[3] ={MenPai="Œ‰µ±",NPC={[0]="#{LLRW_231010_27}",[1]="#{LLRW_231010_28}"},LP={[0]="#{XLRW_210725_486}",[1]="#{XLRW_210725_487}"},},
-	[4] ={MenPai="∂Î·“",NPC={[0]="#{LLRW_231010_33}",[1]="#{LLRW_231010_34}"},LP={[0]="#{XLRW_210725_492}",[1]="#{XLRW_210725_493}"},},
-	[5] ={MenPai="–«Àﬁ",NPC={[0]="#{LLRW_231010_35}",[1]="#{LLRW_231010_36}"},LP={[0]="#{XLRW_210725_494}",[1]="#{XLRW_210725_495}"},},
-	[6] ={MenPai="ÃÏ¡˙",NPC={[0]="#{LLRW_231010_29}",[1]="#{LLRW_231010_30}"},LP={[0]="#{XLRW_210725_488}",[1]="#{XLRW_210725_489}"},},
-	[7] ={MenPai="ÃÏ…Ω",NPC={[0]="#{LLRW_231010_37}",[1]="#{LLRW_231010_38}"},LP={[0]="#{XLRW_210725_496}",[1]="#{XLRW_210725_497}"},},
-	[8] ={MenPai="Â–“£",NPC={[0]="#{LLRW_231010_31}",[1]="#{LLRW_231010_32}"},LP={[0]="#{XLRW_210725_490}",[1]="#{XLRW_210725_491}"},},
-	[10] ={MenPai="¬¸Õ”",NPC={[0]="#{LLRW_231010_39}",[1]="#{LLRW_231010_40}"},LP={[0]="#{XLRW_210725_737}",[1]="#{XLRW_210725_738}"},},
+	[0] ={MenPai="Thi™u L‚m",NPC={[0]="#{LLRW_231010_22}",[1]="#{LLRW_231010_21}"},LP={[0]="#{XLRW_210725_481}",[1]="#{XLRW_210725_480}"},},
+	[1] ={MenPai="Minh Gi·o",NPC={[0]="#{LLRW_231010_26}",[1]="#{LLRW_231010_25}"},LP={[0]="#{XLRW_210725_485}",[1]="#{XLRW_210725_484}"},},
+	[2] ={MenPai="C·i Bang",NPC={[0]="#{LLRW_231010_24}",[1]="#{LLRW_231010_23}"},LP={[0]="#{XLRW_210725_483}",[1]="#{XLRW_210725_482}"},},
+	[3] ={MenPai="Vı –ang",NPC={[0]="#{LLRW_231010_27}",[1]="#{LLRW_231010_28}"},LP={[0]="#{XLRW_210725_486}",[1]="#{XLRW_210725_487}"},},
+	[4] ={MenPai="Nga Mi",NPC={[0]="#{LLRW_231010_33}",[1]="#{LLRW_231010_34}"},LP={[0]="#{XLRW_210725_492}",[1]="#{XLRW_210725_493}"},},
+	[5] ={MenPai="Tinh T˙c",NPC={[0]="#{LLRW_231010_35}",[1]="#{LLRW_231010_36}"},LP={[0]="#{XLRW_210725_494}",[1]="#{XLRW_210725_495}"},},
+	[6] ={MenPai="ThiÍn Long",NPC={[0]="#{LLRW_231010_29}",[1]="#{LLRW_231010_30}"},LP={[0]="#{XLRW_210725_488}",[1]="#{XLRW_210725_489}"},},
+	[7] ={MenPai="ThiÍn SΩn",NPC={[0]="#{LLRW_231010_37}",[1]="#{LLRW_231010_38}"},LP={[0]="#{XLRW_210725_496}",[1]="#{XLRW_210725_497}"},},
+	[8] ={MenPai="TiÍu dao",NPC={[0]="#{LLRW_231010_31}",[1]="#{LLRW_231010_32}"},LP={[0]="#{XLRW_210725_490}",[1]="#{XLRW_210725_491}"},},
+	[10] ={MenPai="M’n –‡",NPC={[0]="#{LLRW_231010_39}",[1]="#{LLRW_231010_40}"},LP={[0]="#{XLRW_210725_737}",[1]="#{XLRW_210725_738}"},},
 
 	}
 	if nIndex1 < 0 or nIndex1 > 10 or nIndex1 == 9 or nIndex2 < 0 or nIndex2 >1 then
@@ -1766,9 +1766,9 @@ function MissionTrack_QRJGW(nMissionIndex)
 end
 
 function MissionTrack_ShenFenTuPo(nMissionIndex)
-	local param1 = DataPool:GetPlayerMission_Variable( nMissionIndex, 1 )-- ˝¡ø
+	local param1 = DataPool:GetPlayerMission_Variable( nMissionIndex, 1 )--??
 --	local param2 = DataPool:GetPlayerMission_Variable( nMissionIndex, 2 )--–Ë“™µ¿æﬂid
-	local param3 = DataPool:GetPlayerMission_Variable( nMissionIndex, 3 )--–Ë“™µ¿æﬂcount
+	local param3 = DataPool:GetPlayerMission_Variable( nMissionIndex, 3 )--????count
 	
 --	local itemname = DataPool:LuaFnGetItemNameByTableIndex(param2)
 
@@ -1776,7 +1776,7 @@ function MissionTrack_ShenFenTuPo(nMissionIndex)
 end
 
 function MissionTrack_TianDeng(nMissionIndex)
-	local isQiYuanFinish = DataPool:GetPlayerMission_Variable( nMissionIndex, 1 )--1∫≈Œª¥Ê «∑ÒÕÍ≥…π˝∆Ì‘∏
+	local isQiYuanFinish = DataPool:GetPlayerMission_Variable( nMissionIndex, 1 )--1??????????
 	if isQiYuanFinish == 1 then
 		return "#W".."#{ZNTD_230720_209}"
 	else
@@ -1785,16 +1785,16 @@ function MissionTrack_TianDeng(nMissionIndex)
 end
 
 function MissionTrack_LongHaizi(nMissionIndex)
-	local scnIndex = DataPool:GetPlayerMission_Variable(nMissionIndex,2); --»ŒŒÒÀ˘‘⁄≥°æ∞
-	local clueIndex = DataPool:GetPlayerMission_Variable(nMissionIndex,4); --»ŒŒÒÀ˘‘⁄≥°æ∞
-	local tableclues = { --¬Â—Ù
+	local scnIndex = DataPool:GetPlayerMission_Variable(nMissionIndex,2); --??????
+	local clueIndex = DataPool:GetPlayerMission_Variable(nMissionIndex,4); --??????
+	local tableclues = { --??
 		"#{LNDK_231025_120}","#{LNDK_231025_121}","#{LNDK_231025_122}","#{LNDK_231025_123}",
 	}
-	if scnIndex == 1 then --À’÷›
+	if scnIndex == 1 then --??
 		tableclues = {
 			"#{LNDK_231025_124}","#{LNDK_231025_125}","#{LNDK_231025_126}","#{LNDK_231025_127}",
 		}
-	elseif scnIndex == 2 then --¥Û¿Ì
+	elseif scnIndex == 2 then --??
 		tableclues = {
 			"#{LNDK_231025_116}","#{LNDK_231025_117}","#{LNDK_231025_118}","#{LNDK_231025_119}",
 		}	

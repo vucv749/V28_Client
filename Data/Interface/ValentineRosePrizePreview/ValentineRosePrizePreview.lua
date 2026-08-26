@@ -52,15 +52,15 @@ function ValentineRosePrizePreview_OnEvent(event)
 		if g_ValentineRosePrizePreview_CurPage == 2 then
 			local strIcon = g_ValentineRosePrizePreview_Gift[1].icon
 			--ValentineRosePrizePreview_Client:SetText(strTitle)
-			ValentineRosePrizePreview_Pic:SetProperty("Image",strIcon)--显示指定图片
+			ValentineRosePrizePreview_Pic:SetProperty("Image",strIcon)--??????
 		elseif g_ValentineRosePrizePreview_CurPage == 3 then
 			local strIcon = g_ValentineRosePrizePreview_Gift[2].icon
 			--ValentineRosePrizePreview_Client:SetText(strTitle)
-			ValentineRosePrizePreview_Pic:SetProperty("Image",strIcon)--显示指定图片
+			ValentineRosePrizePreview_Pic:SetProperty("Image",strIcon)--??????
 		else
 			local strIcon = g_ValentineRosePrizePreview_Gift[3].icon
 			--ValentineRosePrizePreview_Client:SetText(strTitle)
-			ValentineRosePrizePreview_Pic:SetProperty("Image",strIcon)--显示指定图片
+			ValentineRosePrizePreview_Pic:SetProperty("Image",strIcon)--??????
 		end
 		this:Show()
 	elseif(event == "VIEW_RESOLUTION_CHANGED") then

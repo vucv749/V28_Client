@@ -5,7 +5,7 @@ local NEW_MESSAGE   = 0;
 local REPLY_MESSAGE = 1;
 local g_NewOrReply  = NEW_MESSAGE;
 
---Ì¯Ö÷»òÕßÂò¼ÒµÄ±êÖ¾	=1±íÊ¾Ì¯Ö÷  =0±íÊ¾Âò¼Ò
+--Ì¯Ö÷»ò ßÂò¼ÒµÄ±êÖ¾	=1±íÊ¾Ì¯Ö÷  =0±íÊ¾Âò¼Ò
 local SALESMAN = 1;
 local BUYER  = 0;
 local g_nSalesman = -1;
@@ -60,18 +60,18 @@ function StallMessage_OnEvent(event)
 			StallMessage_Checkbox_Locked:SetCheck(0);
 
 			if(g_AdState == AD_ISSUE) then
-				StallMessage_Ad:SetText("·¢²¼");
+				StallMessage_Ad:SetText("GØi");
 				StallMessage_EditText:Show();
 				StallMessage_StaticText:Hide();
 			else
-				StallMessage_Ad:SetText("¸ü¸Ä");
+				StallMessage_Ad:SetText("Ð±i");
 				StallMessage_EditText:Hide();
 				StallMessage_StaticText:Show();
 				StallMessage_StaticText:SetText("#c9CCF00".. StallSale:GetAdvertise(0));
 				StallMessage_EditText:SetText(StallSale:GetAdvertise(1));
 			end
 
-			--Ö»ÒªÊÇÌ¯Ö÷´ò¿ª£¬Ê¼ÖÕÐèÒªÏÔÊ¾Õâ¸ö°´Å¥			
+			--Ö»ÒªÊÇÌ¯Ö÷´ò¿ª£¬Ê¼Ö ÐèÒªÏÔÊ¾ â¸ö°´Å¥			
 			StallMessage_Ad:Show();
 			StallMessage_ClearMessage:Show()
 
@@ -107,7 +107,7 @@ end
 --===============================================
 --¸øAddChatBoardElementº¯Êý¼Ó¸ö²ÎÊý£¬´«Èëindex±íÊ¾ÊÇµÚ¼¸ÌõÏûÏ¢£¬
 --×Ô¼ºµÄ°ÚÌ¯ÖÐindexÎª -2 µ½ -21 £¬ ±ðÈËµÄ°ÚÌ¯ÖÐindexÎª -22 µ½ -41
---ÔÚÉÏÃæµã»÷ÓÒ¼üÊ±ÄÜÍ¨¹ýÕâ¸öIDµÃµ½·¢ÑÔÄÚÈÝ£¬ÓÃÓÚ¾Ù±¨¡£
+--ÔÚÉÏÃæµã»÷ÓÒ¼üÊ±ÄÜÍ¨¹ý â¸öIDµÃµ½·¢ÑÔÄÚÈÝ£¬ÓÃÓÚ¾Ù±¨¡£
 --by wangdw 2008.05.22
 function StallMessage_UpdateFrame(event)
 
@@ -127,7 +127,7 @@ function StallMessage_UpdateFrame(event)
 		StallMessage_StaticText:Show();
 		
 		g_AdState = AD_REJIGGER;
-		StallMessage_Ad:SetText("¸ü¸Ä");
+		StallMessage_Ad:SetText("Ð±i");
 
 		local nMessageNum = StallBbs:GetMessageNum("sale");
 		for i=1, nMessageNum do
@@ -141,7 +141,7 @@ function StallMessage_UpdateFrame(event)
 				StallMessage_Desc:AddChatBoardElement(szTime..":#c9CCF00"..szMessage);
 				
 			elseif(szAuthorName == "_SYSTEM")  then
-				StallMessage_Desc:AddChatBoardElement("¹ºÂò¼ÇÂ¼:"..szTime);
+				StallMessage_Desc:AddChatBoardElement("Mua bän ghi chép:"..szTime);
 				--StallMessage_Desc:AddChatBoardElement(szTime);
 				StallMessage_Desc:AddChatBoardElement("#R"..szMessage,i-1);
 			
@@ -152,11 +152,11 @@ function StallMessage_UpdateFrame(event)
 				StallMessage_Desc:AddChatBoardElement(szTime..":#c9CCF00"..szMessage);
 				--Èç¹ûÒÑ¾­ÓÐ»Ø¸´ÐÅÏ¢
 				if(bReply == true) then
-					StallMessage_Desc:AddChatBoardElement("  Ì¯Ö÷»Ø¸´£º"..szReplyMsg);
+					StallMessage_Desc:AddChatBoardElement("Than Chü h°i phøc:"..szReplyMsg);
 				else
 					--»Ø¸´°´Å¥
 					--StallMessage_Desc:AddOptionElement("»Ø¸´" .. tostring(nMsgId));
-					StallMessage_Desc:AddOptionElement("»Ø¸´&".. nMsgId ..",0$-1");
+					StallMessage_Desc:AddOptionElement("H°i phøc&".. nMsgId ..",0$-1");
 				end
 			
 			end
@@ -179,7 +179,7 @@ function StallMessage_UpdateFrame(event)
 			
 			if(szAuthorName == "_SYSTEM")  then
 				
-				StallMessage_Desc:AddChatBoardElement("¹ºÂò¼ÇÂ¼:"..szTime);
+				StallMessage_Desc:AddChatBoardElement("Mua bän ghi chép:"..szTime);
 				--StallMessage_Desc:AddChatBoardElement(szTime);
 				StallMessage_Desc:AddChatBoardElement("#R"..szMessage,i-1+20);
 
@@ -188,7 +188,7 @@ function StallMessage_UpdateFrame(event)
 				--StallMessage_Desc:AddChatBoardElement(szTime);
 				StallMessage_Desc:AddChatBoardElement(szTime..":#c9CCF00"..szMessage);
 				if(bReply == true) then
-					StallMessage_Desc:AddChatBoardElement("  Ì¯Ö÷»Ø¸´£º"..szReplyMsg);
+					StallMessage_Desc:AddChatBoardElement("Than Chü h°i phøc:"..szReplyMsg);
 				end
 			
 			end
@@ -275,7 +275,7 @@ function StallMessage_Ad_Clicked()
 		StallMessage_StaticText:Show();
 		
 		g_AdState = AD_REJIGGER;
-		StallMessage_Ad:SetText("¸ü¸Ä");
+		StallMessage_Ad:SetText("Ð±i");
 		
 		
 		StallMessage_EditText:SetProperty("DefaultEditBox", "False");
@@ -285,7 +285,7 @@ function StallMessage_Ad_Clicked()
 		StallMessage_EditText:Show();
 		StallMessage_StaticText:Hide();
 		g_AdState = AD_ISSUE;
-		StallMessage_Ad:SetText("·¢²¼");
+		StallMessage_Ad:SetText("GØi");
 		StallMessage_EditText:SetProperty("DefaultEditBox", "True");
 
 	end
@@ -309,7 +309,7 @@ function StallMessageOption_Clicked()
 	StallMessage_Checkbox_Locked:SetCheck(1);
 	StallMessage_Checkbox_Locked:Enable();
 	
-	StallMessage_Checkbox_Text:SetText("»Ø¸´ÁôÑÔ");
+	StallMessage_Checkbox_Text:SetText("H°i phøc nh¡n lÕi");
 	
 	StallMessage_EditInfoText:SetProperty("DefaultEditBox", "True");
 	

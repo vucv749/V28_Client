@@ -2,11 +2,11 @@
 
 local g_Frame_UnifiedPosition
 
-local g_CiJianXiangSi_Index --第几个任务
-local g_CiJianXiangSi_Finish --第几个任务是否完成
-local g_CiJianXiangSi_XiangSiDian --相思点数
-local g_CiJianXiangSi_PrizeState --相思点奖励情况
-local g_CiJianXiangSi_SpecialRedPoint --特殊小红点
+local g_CiJianXiangSi_Index --?????
+local g_CiJianXiangSi_Finish --?????????
+local g_CiJianXiangSi_XiangSiDian --????
+local g_CiJianXiangSi_PrizeState --???????
+local g_CiJianXiangSi_SpecialRedPoint --?????
 		
 local g_CiJianXiangSi_MissionName = {}
 local g_CiJianXiangSi_MissionImage = {}
@@ -22,7 +22,7 @@ local g_CiJianXiangSi_Item = {}
 function CiJianXiangSi_PreLoad()
 
 	this:RegisterEvent("UI_COMMAND",true)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
 	this:RegisterEvent("ADJEST_UI_POS",false)
 
@@ -79,7 +79,7 @@ function CiJianXiangSi_OnEvent(event)
 
 	if event == "UI_COMMAND" and tonumber(arg0) == 99827201 then
 		local nOperate = Get_XParam_INT(0)
-		 --关闭
+		 --关睜
 		if nOperate == 0 then
 			this:Hide()
 			return

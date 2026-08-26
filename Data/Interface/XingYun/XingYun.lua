@@ -8,37 +8,37 @@ local count = 0;
 --local prizetype_3 = 0;
 local ResultPos = 
 	{	
-		0, 		-- µÚÒ»ÕÅÅÆÎ»ÖÃ
-		0, 		-- µÚ¶şÕÅÅÆÎ»ÖÃ
-		0, 		-- µÚÈıÕÅÅÆÎ»ÖÃ
+		0, 		-- ??????
+		0, 		-- ??????
+		0, 		-- ??????
 	};
 	
 local PrizeImageInfo = 
 	{	
-		"set:Choujiang image:Choujiang_14", 		-- ¾­Ñé£¨´ó°ü¹ü£©
-		"set:Choujiang image:Choujiang_15", 		-- ¾­Ñé£¨Ğ¡°ü¹ü£©
-		"set:Choujiang image:Choujiang_12",		  -- µÀ¾ß£¨µÀ¾ß£©
-		"set:Choujiang image:Choujiang_16",		  -- ¿ÕÆø£¨Ò»ÍÅ¿ÕÆø£©
-		"set:Choujiang image:Choujiang_13",		  -- ¿ì»îÈı£¨³¬¼¶´ó½±£©
+		"set:Choujiang image:Choujiang_14", 		-- ??(???)
+		"set:Choujiang image:Choujiang_15", 		-- ??(???)
+		"set:Choujiang image:Choujiang_12",		  -- ??(??)
+		"set:Choujiang image:Choujiang_16",		  -- ??(????)
+		"set:Choujiang image:Choujiang_13",		  -- ???(????)
 	};
---ÎåÕÅÍ¼Æ¬µÄ»ÒÉ«°æ±¾
+--Îå ÅÍ¼Æ¬µÄ»ÒÉ«°æ±¾
 local DisPrizeImageInfo = 
 	{	
-		"set:Choujiang2 image:Choujiang2_1", 		-- ¾­Ñé£¨´ó°ü¹ü£©
-		"set:Choujiang2 image:Choujiang2_2", 		-- ¾­Ñé£¨Ğ¡°ü¹ü£©
-		"set:Choujiang2 image:Choujiang2_3",		  -- µÀ¾ß£¨µÀ¾ß£©
-		"set:Choujiang2 image:Choujiang2_4",		  -- ¿ÕÆø£¨Ò»ÍÅ¿ÕÆø£©
-		"set:Choujiang2 image:Choujiang2_5",		  -- ¿ì»îÈı£¨³¬¼¶´ó½±£©
+		"set:Choujiang2 image:Choujiang2_1", 		-- ??(???)
+		"set:Choujiang2 image:Choujiang2_2", 		-- ??(???)
+		"set:Choujiang2 image:Choujiang2_3",		  -- ??(??)
+		"set:Choujiang2 image:Choujiang2_4",		  -- ??(????)
+		"set:Choujiang2 image:Choujiang2_5",		  -- ???(????)
 	};
 
 local SoundInfo = 
 	{	
-		497, 		-- ¾­Ñé£¨´ó°ü¹ü£©µÄÒôĞ§
-		497, 		-- ¾­Ñé£¨Ğ¡°ü¹ü£©µÄÒôĞ§
-		497, 		-- µÀ¾ß£¨µÀ¾ß£©  µÄÒôĞ§
-		496,   -- ¿ÕÆø£¨Ò»ÍÅ¿ÕÆø£©ÒôĞ§
-		498, 		-- ¿ì»îÈıÒôĞ§
-		499,  --¼±´ÙµÄÒôĞ§
+		497, 		-- ??(???)???
+		497, 		-- ??(???)???
+		497, 		-- ??(??)  ???
+		496,   -- ??(????)??
+		498, 		-- ?????
+		499,  --?????
 	};
 
 local CardImageInfo = 
@@ -140,7 +140,7 @@ function XingYun_OnEvent(event)
 			local xx = Get_XParam_INT(0);
 			ObjCaredID = DataPool : GetNPCIDByServerID(xx);
 			if ObjCaredID == -1 then
-					PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£");
+					PushDebugMessage("Dæ li®u máy chü có v¤n ğ«");
 					return;
 			end
 			BeginCareObject_XingYun()
@@ -165,10 +165,10 @@ function XingYun_OnEvent(event)
       
       local pt = Get_XParam_INT(1)
         TBL_Head[pos_ani]:SetProperty("Image", PrizeImageInfo[pt]);
-	      Sound:PlaySound( SoundInfo[pt], false ) --¶ÔÓ¦½±ÀøµÄÒôĞ§
+	      Sound:PlaySound( SoundInfo[pt], false ) --???????
 		    WaitRecv = 0;
 		    
-		    --¸ù¾İ»ñµÃµÄ½±Àøµ÷ÕûÂÒĞòÊı×éÒÔÂú×ã1 9 10 ¹æÔò
+		    --¸ù¾İ»ñµÃµÄ½±Àøµ÷ ûÂÒĞòÊı×éÒÔÂú×ã1 9 10 ¹æÔò
 		    local temp = g_PrizeArray[pos_ani]
 		    g_PrizeArray[pos_ani] = pt
 		  
@@ -230,7 +230,7 @@ function XingYun_Update( pos_ui, pos_packet )
 end
 
 --=========================================================
---¹Ø±Õ
+--¹Ø± 
 --=========================================================
 function XingYun_Close()
 
@@ -239,8 +239,8 @@ function XingYun_Close()
 	end
   --ÊÇ·ñÑ¡ÔñÍêµÄÅĞ¶Ï
   if(count < 3) then
-    PushDebugMessage("ÄúµÄ½±»¹Ã»ÓĞ³éÍêÄØ£¡");
-    Clear_XSCRIPT();--·şÎñÆ÷¶ËÌáÊ¾ÏûÏ¢
+    PushDebugMessage("Nhçm Ğích Tß·ng còn không có Tr×u Hoàn Ni!");
+    Clear_XSCRIPT();--????????
 		Set_XSCRIPT_Function_Name("PlayerTip");
 		Set_XSCRIPT_ScriptID(808071);
 		Set_XSCRIPT_Parameter(0,1);
@@ -249,8 +249,8 @@ function XingYun_Close()
 	  return
 	end
 	
-	PushDebugMessage("¹§Ï²Äú£¡Äú½ñÌìµÄ¡°ĞÒÔË¿ì»îÈı¡±³é½±»î¶¯ÒÑ¾­Íê³É£¬ÇëÄúËæÊ±ÕÒÎÒÁìÈ¡½±Àø£¡");
-	Clear_XSCRIPT();--·şÎñÆ÷¶ËÌáÊ¾ÏûÏ¢
+	PushDebugMessage("Chúc m×ng Nhçm! Nhçm hôm nay Ğích'may m¡n khoái hoÕt Tam'Tr×u Tß·ng hoÕt ğµng ğã hoàn thành, Thïnh Nhçm tùy th¶i tìm ta lînh thß·ng cho!");
+	Clear_XSCRIPT();--????????
 		Set_XSCRIPT_Function_Name("PlayerTip");
 		Set_XSCRIPT_ScriptID(808071);
 		Set_XSCRIPT_Parameter(0,2);
@@ -271,7 +271,7 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØĞÄNPC£¬
---ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 --Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function BeginCareObject_XingYun()
@@ -294,7 +294,7 @@ function Play_Ani(pos_ui)
 	end
 	
 	TBL_Ani[pos_ui]:Show()
-  Sound:PlaySound( SoundInfo[6], false ) --¼±´ÙÒôĞ§
+  Sound:PlaySound( SoundInfo[6], false ) --????
   TBL_Head[pos_ui]:SetProperty("Disabled","true");
 
 	XingYunTimer_StopWatch1:SetProperty("Timer", "1");
@@ -355,7 +355,7 @@ function XingYun_TimeReach2()
 
      XingYunTimer_StopWatch2:SetProperty("Timer", "-1");
      
-     --Òş²Ø17ÕÅÅÆµÄ¶¯»­
+     --Òş²Ø17 ÅÅÆµÄ¶¯»­
 
        for i = 1,20 do
          if(i == ResultPos[1]) then

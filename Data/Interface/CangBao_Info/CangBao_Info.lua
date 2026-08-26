@@ -10,20 +10,20 @@ local MAX_OBJ_DISTANCE = 3.0
 local objCared = -1
 local g_Object = -1
 
-local g_CangBao_PlayerIdx = {}--¼ÇÂ¼ÏÂÍæ¼ÒË³Ðò µÚ¼¸¸öÍæ¼Ò
+local g_CangBao_PlayerIdx = {}--??????? ?????
 --g_CangBao_PlayerIdx[1]={nIndex = 1,nPlayerName = "aa", nItemID = 30000005, nAskIdx = 2, nAskRet = 0, nHeadID = 0}
 --¿Ø¼þ
-local g_CangBao_PlayerList = {} --6¸öÍæ¼Ò
-local g_CangBao_ItemList = {} --6¸ö½±Àø
-local g_CangBao_GetFlagList = {} --6¸öÒÑÁìÈ¡±ê¼Ç
-local g_CangBao_TextList = {} --6¸öÎÄ±¾Çø
-local g_CangBao_ChangeBtnList = {} --6¸ö½»»»°´Å¥
-local g_CangBao_AcceptBtnList = {} --6¸ö½ÓÊÜ½»»»°´Å¥
-local g_CangBao_PrizeBtnList = {} --6¸öÁì½±°´Å¥
-local g_CangBao_HeadImgList = {} --6¸öÍ·ÏñÇø
-local g_CangBao_MyImgList = {} --6¸öÏÔÊ¾×Ô¼º
-local g_CangBao_ExchangeTxtList = {} --6¸öÏÔÊ¾½»»»×´Ì¬
-local g_CangBao_GetTxtList = {} --6¸öÏÔÊ¾ÒÑÁìÈ¡
+local g_CangBao_PlayerList = {} --6???
+local g_CangBao_ItemList = {} --6???
+local g_CangBao_GetFlagList = {} --6??????
+local g_CangBao_TextList = {} --6????
+local g_CangBao_ChangeBtnList = {} --6?????
+local g_CangBao_AcceptBtnList = {} --6???????
+local g_CangBao_PrizeBtnList = {} --6?????
+local g_CangBao_HeadImgList = {} --6????
+local g_CangBao_MyImgList = {} --6?????
+local g_CangBao_ExchangeTxtList = {} --6???????
+local g_CangBao_GetTxtList = {} --6??????
 
 --=========================================================
 --PreLoad
@@ -180,7 +180,7 @@ end
 
 --=========================================================
 --´ò¿ª½çÃæ
---nAskRet 0 1ÕýÔÚ½»»» 2ÊÇ½»»»³É¹¦ÁìÈ¡  3ÊÇÒÑÁìÈ¡
+--nAskRet 0 1 ýÔÚ½»»» 2ÊÇ½»»»³É¹¦ÁìÈ¡  3ÊÇÒÑÁìÈ¡
 --=========================================================
 function CangBao_Info_Open(nItem1,nPlayer1,nPlayer1Info,nItem2,nPlayer2,nPlayer2Info,nItem3,nPlayer3,nPlayer3Info,nItem4,nPlayer4,nPlayer4Info,nItem5,nPlayer5,nPlayer5Info,nItem6,nPlayer6,nPlayer6Info,nTick)
 	CangBao_Info_Update(nItem1,nPlayer1,nPlayer1Info,nItem2,nPlayer2,nPlayer2Info,nItem3,nPlayer3,nPlayer3Info,nItem4,nPlayer4,nPlayer4Info,nItem5,nPlayer5,nPlayer5Info,nItem6,nPlayer6,nPlayer6Info,nTick)
@@ -189,7 +189,7 @@ end
 
 --=========================================================
 --´ò¿ª½çÃæ
---nAskRet 0 1ÕýÔÚ½»»» 2ÊÇ½»»»³É¹¦  3ÊÇÒÑÁìÈ¡½»»»½±Àø  4ÊÇ×Ô¼ºÁìÈ¡ÁË×Ô¼ºµÄ
+--nAskRet 0 1 ýÔÚ½»»» 2ÊÇ½»»»³É¹¦  3ÊÇÒÑÁìÈ¡½»»»½±Àø  4ÊÇ×Ô¼ºÁìÈ¡ÁË×Ô¼ºµÄ
 --=========================================================
 function CangBao_Info_Update(nItem1,nPlayer1,nPlayer1Info,nItem2,nPlayer2,nPlayer2Info,nItem3,nPlayer3,nPlayer3Info,nItem4,nPlayer4,nPlayer4Info,nItem5,nPlayer5,nPlayer5Info,nItem6,nPlayer6,nPlayer6Info,nTick)
 	g_CangBao_PlayerIdx = {}
@@ -331,7 +331,7 @@ function CangBao_Info_Update(nItem1,nPlayer1,nPlayer1Info,nItem2,nPlayer2,nPlaye
 						g_CangBao_ItemList[index]:SetActionItem(nShowActionA:GetID())
 					end
 				elseif g_CangBao_PlayerIdx[index].nAskRet == 2 then
-					--¸Õ½»»»Íê ÏÔÊ¾±ðÈËµÄitem
+					--¸ ½»»»Íê ÏÔÊ¾±ðÈËµÄitem
 					--%s0ÉÙÏÀ»ñµÃ
 					--g_CangBao_TextList[index]:SetText(ScriptGlobal_Format("#{ZDBT_240703_162}", nCurName))
 					--ÏÔÊ¾Ï¸½Ú ÎïÆ·
@@ -354,7 +354,7 @@ function CangBao_Info_Update(nItem1,nPlayer1,nPlayer1Info,nItem2,nPlayer2,nPlaye
 						--°´Å¥´¦Àí
 						g_CangBao_ChangeBtnList[index]:Show();
 						g_CangBao_ChangeBtnList[index]:Disable();
-						g_CangBao_ChangeBtnList[index]:SetText("#{ZDBT_240703_164}")--ÉêÇëÖÐ
+						g_CangBao_ChangeBtnList[index]:SetText("#{ZDBT_240703_164}")--???
 					else
 						--²»ÊÇÎÒµÄÄ¿±ê
 						--PushDebugMessage("²»ÊÇÎÒµÄÄ¿±ê ask="..g_CangBao_PlayerIdx[index].nAskIdx.." myIdx="..myIdx)
@@ -374,7 +374,7 @@ function CangBao_Info_Update(nItem1,nPlayer1,nPlayer1Info,nItem2,nPlayer2,nPlaye
 								--ÎÒ²»ÔÚ½»»»ÖÐÒ²Ã»Áì½±
 								g_CangBao_ChangeBtnList[index]:Show();
 								g_CangBao_ChangeBtnList[index]:Enable();
-								g_CangBao_ChangeBtnList[index]:SetText("#{ZDBT_240703_97}")--½»»»
+								g_CangBao_ChangeBtnList[index]:SetText("#{ZDBT_240703_97}")--??
 							else
 								--Ëû°®¸ÉÂï¸ÉÂï ¸úÎÒÃ»¹ØÏµÁË
 							end
@@ -386,12 +386,12 @@ function CangBao_Info_Update(nItem1,nPlayer1,nPlayer1Info,nItem2,nPlayer2,nPlaye
 			g_CangBao_PlayerList[index]:Hide();
 		end
 	end
-	--¹Ø±Õ¶þ´ÎÈ·ÈÏ½çÃæ
+	--¹Ø± ¶þ´ÎÈ·ÈÏ½çÃæ
 	PushEvent("CONFIRM_CANGBAOTU",-1,-1,-1,-1)
 	PushEvent("CONFIRM_CANGBAOTU_ACCEPT",-1,-1,-1,-1)
 end
 --=========================================================
---¹Ø±Õ½çÃæ
+--¹Ø± ½çÃæ
 --=========================================================
 function CangBao_Info_Close()
 	PushEvent("CONFIRM_CANGBAOTU",-1,-1,-1,-1)
@@ -425,7 +425,7 @@ end
 --°ïÖú
 --=========================================================
 function CangBao_Info_Help()
-	PushEvent("QUEST_HELPINFO", "È±×Öµä")--"#{XSX_220705_170}")
+	PushEvent("QUEST_HELPINFO", "Khuyªt tñ ði¬n")--"#{XSX_220705_170}")
 end
 
 --=========================================================
@@ -458,7 +458,7 @@ end
 --=========================================================
 function CangBao_Info_ExchangeClick(index)
 	if index < 1 or index > 6 then
-		PushDebugMessage("Êý¾Ý´íÎó ExchangeClick(index)"..index)
+		PushDebugMessage("S¯ li®u sai l¥m ExchangeClick(index)"..index)
 		return
 	end
 	--ÊÇ¸ö¶þ´ÎÈ·ÈÏ°´Å¥
@@ -482,7 +482,7 @@ end
 --=========================================================
 function CangBao_Info_AcceptClick(index)
 	if index < 1 or index > 6 then
-		PushDebugMessage("Êý¾Ý´íÎó AcceptClick(index)"..index)
+		PushDebugMessage("S¯ li®u sai l¥m AcceptClick(index)"..index)
 		return
 	end
 

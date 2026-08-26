@@ -4,28 +4,28 @@ local g_Icon = "";
 
 local Max_BtnNum = 10;
 local PetNames = {
-	"³ÉÄêÕäÊŞ",
-	"ÕäÊŞ±¦±¦",
-	"1¼¶±äÒì",
-	"2¼¶±äÒì",
-	"3¼¶±äÒì",
-	"4¼¶±äÒì",
-	"5¼¶±äÒì",
-	"6¼¶±äÒì",
-	"7¼¶±äÒì",
-	"8¼¶±äÒì",
+	"Trân Thú trß·ng thành",
+	"Trân Thú Bäo Bäo",
+	"Biªn d¸ c¤p 1",
+	"Biªn d¸ c¤p 2",
+	"Biªn d¸ c¤p 3",
+	"Biªn d¸ c¤p 4",
+	"Biªn d¸ c¤p 5",
+	"Biªn d¸ c¤p 6",
+	"Biªn d¸ c¤p 7",
+	"Biªn d¸ c¤p 8",
 };
 local PetNames_HH = {
-	"»Ã»¯ÕäÊŞ1",
-	"»Ã»¯ÕäÊŞ2",
-	"»Ã»¯ÕäÊŞ3",
-	"»Ã»¯ÕäÊŞ4",
-	"»Ã»¯ÕäÊŞ5",
-	"»Ã»¯ÕäÊŞ6",
-	"»Ã»¯ÕäÊŞ7",
-	"»Ã»¯ÕäÊŞ8",
-	"»Ã»¯ÕäÊŞ9",
-	"»Ã»¯ÕäÊŞ10",
+	"Biªn äo Trân Thú 1",
+	"Biªn äo Trân Thú 2",
+	"Biªn äo Trân Thú 3",
+	"Biªn äo Trân Thú 4",
+	"Biªn äo Trân Thú 5",
+	"Biªn äo Trân Thú 6",
+	"Biªn äo Trân Thú 7",
+	"Biªn äo Trân Thú 8",
+	"Biªn äo Trân Thú 9",
+	"Biªn äo Trân Thú 10",
 };
 
 -- ½çÃæµÄÄ¬ÈÏÏà¶ÔÎ»ÖÃ
@@ -134,7 +134,7 @@ function PetJian_Onshow()
 	else
 		strNeedLevelColor ="#c00FF00";
 	end
-	local strNeedLevel = strNeedLevelColor..tostring( nTakeLevel ).."¼¶#W¿ÉĞ¯´ø";
+	local strNeedLevel = strNeedLevelColor..tostring( nTakeLevel ).."C¤p#W Mang theo";
 	PetJian_NeedLevel:SetText( strNeedLevel );
 	-----------------------------------------------------
 	--get AttackTrait (ÔİÈ±)
@@ -149,21 +149,21 @@ function PetJian_Onshow()
 	local food = DataPool : PetsOneType_GetAttr(g_CurSel,"food");
 	strName = "";
 	if(food >= 1000) then
-		strName = strName .. "Èâ";
+		strName = strName .. "Th¸t";
 		food = food - 1000;
 		if food > 0 then
 			strName = strName .. ",";
 		end
 	end
 	if(food >= 100) then
-		strName = strName .. "²İ";
+		strName = strName .. "Thäo";
 		food = food - 100;
 		if food > 0 then
 			strName = strName .. ",";
 		end
 	end
 	if(food >= 10) then
-		strName = strName .. "³æ";
+		strName = strName .. "Sâu";
 		food = food - 10;
 		if food > 0 then
 			strName = strName .. ",";
@@ -171,7 +171,7 @@ function PetJian_Onshow()
 	end
 	
 	if(food >= 1) then
-		strName = strName .. "¹È";
+		strName = strName .. "Ngû c¯c";
 	end
 	PetJianFood_Type : Show();
 	PetJianFood_Type : SetToolTip( strName );
@@ -192,7 +192,7 @@ end
 
 ----------------------------------------------------------------------------------
 --
--- Ğı×ªÕäÊŞÄ£ĞÍ£¨Ïò×ó)
+-- Ğı×ª äÊŞÄ£ĞÍ£¨Ïò×ó)
 --
 function PetJian_Modle_TurnLeft(start)
 	--Ïò×óĞı×ª¿ªÊ¼
@@ -206,7 +206,7 @@ end
 
 ----------------------------------------------------------------------------------
 --
---Ğı×ªÕäÊŞÄ£ĞÍ£¨ÏòÓÒ)
+--Ğı×ª äÊŞÄ£ĞÍ£¨ÏòÓÒ)
 --
 function PetJian_Modle_TurnRight(start)
 	--ÏòÓÒĞı×ª¿ªÊ¼

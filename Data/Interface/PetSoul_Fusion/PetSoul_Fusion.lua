@@ -35,12 +35,12 @@ function PetSoul_Fusion_PreLoad()
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
 
-    this:RegisterEvent("OBJECT_CARED_EVENT");           --某逻辑对象的某些发生改变，用于距离NPC够远则关闭界面
+    this:RegisterEvent("OBJECT_CARED_EVENT");           --????????????,????NPC???????
     
 
-	this:RegisterEvent("PETSOUL_FUSION_PUTIN_ITEM"); --放入物品
-	this:RegisterEvent("PACKAGE_ITEM_CHANGED")			--背包中物品改变
-	this:RegisterEvent("RESUME_ENCHASE_GEM"); --拖拽回背包
+	this:RegisterEvent("PETSOUL_FUSION_PUTIN_ITEM"); --????
+	this:RegisterEvent("PACKAGE_ITEM_CHANGED")			--???????
+	this:RegisterEvent("RESUME_ENCHASE_GEM"); --?????
 
 end
 
@@ -80,10 +80,10 @@ function PetSoul_Fusion_OnEvent(event)
 
 		return
 	elseif( event == "RESUME_ENCHASE_GEM" and this:IsVisible() ) then
-		if(arg0~=nil and tonumber(arg0) == 27) then---xml里配置的是W27
+		if(arg0~=nil and tonumber(arg0) == 27) then---xml?????W27
 			PetSoul_Fusion_Resume_Equip()
 		end
-		if(arg0~=nil and tonumber(arg0) == 28) then---xml里配置的是W28
+		if(arg0~=nil and tonumber(arg0) == 28) then---xml?????W28
 			PetSoul_Fusion_Resume_Equip2()
 		end
 
@@ -118,7 +118,7 @@ function PetSoul_Fusion_OnEvent(event)
 			return;
 		end
 		
-		--如果和NPC的距离大于一定距离或者被删除，自动关闭
+		--如果和NPC的距离大于一定距离或犨被删除，自动关睜
 		if arg1 == "distance" and tonumber( arg2 ) > MAX_OBJ_DISTANCE or arg1 == "destroy" then
 			PetSoul_Fusion_Close()
 		end
@@ -295,7 +295,7 @@ end
 --interfaceIndex为放入的界面的框的标识  3表示右键点击放入不分左右
 function PetSoul_Fusion_ItemUpdate(bagPos,interfaceIndex)
 
-	--bagPos为-1，表示要初始化界面  关闭界面 右键取出物品时调用
+	--bagPos为-1，表示要初始化界面  关睜界面 右键取出物品时调用
 	if bagPos == -1 then
 		--蒙红物品解锁
 		if interfaceIndex == 1 then
@@ -308,7 +308,7 @@ function PetSoul_Fusion_ItemUpdate(bagPos,interfaceIndex)
 		return
 	end
 
-	--bagPos为正常物品BagIndex，表示放入物品
+	--bagPos为狚常物品BagIndex，表示放入物品
 	local theAction = EnumAction( bagPos, "packageitem");
 	if theAction:GetID() ~= 0 then
 
@@ -331,22 +331,22 @@ function PetSoul_Fusion_ItemUpdate(bagPos,interfaceIndex)
 
 		--检查是否加锁
 		if PlayerPackage:IsLock( bagPos ) == 1 then
-			PushDebugMessage("#{SHXT_20211230_65}")	--物品已上锁，无法放入
+			PushDebugMessage("#{SHXT_20211230_65}")	--?????,????
 			return
 		end
 		
-		if interfaceIndex == 1 then --向右边框拖入物品
+		if interfaceIndex == 1 then --????????
 			PetSoul_Fusion_ItemPut(bagPos,1,theAction)
-		elseif interfaceIndex == 2 then --向左边框拖入物品
+		elseif interfaceIndex == 2 then --????????
 			PetSoul_Fusion_ItemPut(bagPos,2,theAction)
-		elseif interfaceIndex == 3 then --点击右键添加物品
-			--左格空则放左边
+		elseif interfaceIndex == 3 then --????????
+			--左格繝则放左边
 			if g_PetSoul_Fusion_ItemBagIndex1 == -1 then
 				PetSoul_Fusion_ItemPut(bagPos,1,theAction)
-			--左格不空，右格空，则放右边
+			--左格不繝，右格繝，则放右边
 			elseif g_PetSoul_Fusion_ItemBagIndex1 ~= -1 and g_PetSoul_Fusion_ItemBagIndex2 == -1 then
 				PetSoul_Fusion_ItemPut(bagPos,2,theAction)
-			--两个格子都不空，放左边
+			--两个格子都不繝，放左边
 			elseif g_PetSoul_Fusion_ItemBagIndex1 ~= -1 and g_PetSoul_Fusion_ItemBagIndex2 ~= -1 then
 				LifeAbility : Lock_Packet_Item(g_PetSoul_Fusion_ItemBagIndex1,0);
 				PetSoul_Fusion_ItemPut(bagPos,1,theAction)
@@ -459,7 +459,7 @@ end
 
 --=========================================================
 --开始关心NPC，
---在开始关心之前需要先确定这个界面是不是已经有“关心”的NPC，
+--在开始关心之前需要先确定犫个界面是不是已经有“关心”的NPC，
 --如果有的话，先取消已经有的“关心”
 --=========================================================
 function PetSoul_Fusion_BeginCareObject( objCaredId )

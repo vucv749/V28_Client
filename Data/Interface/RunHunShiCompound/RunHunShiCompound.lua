@@ -4,10 +4,10 @@ local MAX_OBJ_DISTANCE = 3.0
 local objCared = -1
 local npcObjId = -1
 
-local g_RunHunShiCompound_Page = 0--Ä¬ÈÏÑ¡ÔñµÄÏû·Ñ·½Ê½ 1£º¿ì½İ 2£ºÆÕÍ¨
-local g_RunHunShiCompound_Num = 0--¶ş¼¶Ñ¡Ïî×Ü¸öÊı
-local g_RunHunShiCompound_Select = -1--Ä¬ÈÏÑ¡ÖĞ¶ş¼¶²Ëµ¥µÄ×ÜÏÂ±ê,´Ó0¿ªÊ¼
-local g_RunHunShiCompound_Index = {}--Ä¬ÈÏÑ¡ÖĞ¶ş¼¶²Ëµ¥ÏÂ±ê¶ÔÓ¦µÄÀàĞÍºÍ¶ş¼¶ÏÂ±ê
+local g_RunHunShiCompound_Page = 0--????????? 1:?? 2:??
+local g_RunHunShiCompound_Num = 0--???????
+local g_RunHunShiCompound_Select = -1--????????????,?0??
+local g_RunHunShiCompound_Index = {}--????????????????????
 
 -- Ñ¡ÏîĞÅÏ¢
 local g_RunHunShiCompound_Info = 
@@ -63,7 +63,7 @@ local g_RunHunShiCompound_Data =
 		[5] = { newlevel = 6, needlevel = 1, needcount = 162, needmoney = 455000, },
 		[6] = { newlevel = 7, needlevel = 1, needcount = 324, needmoney = 925000, },
 	},
-	-- ÆÕÍ¨
+	-- Æ Í¨
 	[2] = 
 	{
 		[1] = { newlevel = 2, needlevel = 1, needcount = 3, needmoney = 5000, },
@@ -80,51 +80,51 @@ local g_RunHunShiCompound_Item =
 {
 	[1]=
 	{
-		20310122,	--Èó»êÊ¯¡¤Óù£¨1¼¶£©
-		20310123,	--Èó»êÊ¯¡¤Óù£¨2¼¶£©
-		20310124,	--Èó»êÊ¯¡¤Óù£¨3¼¶£©
-		20310125,	--Èó»êÊ¯¡¤Óù£¨4¼¶£©
-		20310126,	--Èó»êÊ¯¡¤Óù£¨5¼¶£©
-		20310127,	--Èó»êÊ¯¡¤Óù£¨6¼¶£©
-		20310128,	--Èó»êÊ¯¡¤Óù£¨7¼¶£©
-		20310129,	--Èó»êÊ¯¡¤Óù£¨8¼¶£©
-		20310130,	--Èó»êÊ¯¡¤Óù£¨9¼¶£©
+		20310122,	--???·?(1?)
+		20310123,	--???·?(2?)
+		20310124,	--???·?(3?)
+		20310125,	--???·?(4?)
+		20310126,	--???·?(5?)
+		20310127,	--???·?(6?)
+		20310128,	--???·?(7?)
+		20310129,	--???·?(8?)
+		20310130,	--???·?(9?)
 	},
 	[2]=
 	{
-		20310131,	--Èó»êÊ¯¡¤»÷£¨1¼¶£©
-		20310132,	--Èó»êÊ¯¡¤»÷£¨2¼¶£©
-		20310133,	--Èó»êÊ¯¡¤»÷£¨3¼¶£©
-		20310134,	--Èó»êÊ¯¡¤»÷£¨4¼¶£©
-		20310135,	--Èó»êÊ¯¡¤»÷£¨5¼¶£©
-		20310136,	--Èó»êÊ¯¡¤»÷£¨6¼¶£©
-		20310137,	--Èó»êÊ¯¡¤»÷£¨7¼¶£©
-		20310138,	--Èó»êÊ¯¡¤»÷£¨8¼¶£©
-		20310139,	--Èó»êÊ¯¡¤»÷£¨9¼¶£©
+		20310131,	--???·?(1?)
+		20310132,	--???·?(2?)
+		20310133,	--???·?(3?)
+		20310134,	--???·?(4?)
+		20310135,	--???·?(5?)
+		20310136,	--???·?(6?)
+		20310137,	--???·?(7?)
+		20310138,	--???·?(8?)
+		20310139,	--???·?(9?)
 	},
 	[3]=
 	{
-		20310140,	--Èó»êÊ¯¡¤ÆÆ£¨1¼¶£©
-		20310141,	--Èó»êÊ¯¡¤ÆÆ£¨2¼¶£©
-		20310142,	--Èó»êÊ¯¡¤ÆÆ£¨3¼¶£©
-		20310143,	--Èó»êÊ¯¡¤ÆÆ£¨4¼¶£©
-		20310144,	--Èó»êÊ¯¡¤ÆÆ£¨5¼¶£©
-		20310145,	--Èó»êÊ¯¡¤ÆÆ£¨6¼¶£©
-		20310146,	--Èó»êÊ¯¡¤ÆÆ£¨7¼¶£©
-		20310147,	--Èó»êÊ¯¡¤ÆÆ£¨8¼¶£©
-		20310148,	--Èó»êÊ¯¡¤ÆÆ£¨9¼¶£©
+		20310140,	--???·?(1?)
+		20310141,	--???·?(2?)
+		20310142,	--???·?(3?)
+		20310143,	--???·?(4?)
+		20310144,	--???·?(5?)
+		20310145,	--???·?(6?)
+		20310146,	--???·?(7?)
+		20310147,	--???·?(8?)
+		20310148,	--???·?(9?)
 	},
 	[4]=
 	{
-		20310149,	--Èó»êÊ¯¡¤±©£¨1¼¶£©
-		20310150,	--Èó»êÊ¯¡¤±©£¨2¼¶£©
-		20310151,	--Èó»êÊ¯¡¤±©£¨3¼¶£©
-		20310152,	--Èó»êÊ¯¡¤±©£¨4¼¶£©
-		20310153,	--Èó»êÊ¯¡¤±©£¨5¼¶£©
-		20310154,	--Èó»êÊ¯¡¤±©£¨6¼¶£©
-		20310155,	--Èó»êÊ¯¡¤±©£¨7¼¶£©
-		20310156,	--Èó»êÊ¯¡¤±©£¨8¼¶£©
-		20310157,	--Èó»êÊ¯¡¤±©£¨9¼¶£©
+		20310149,	--???·?(1?)
+		20310150,	--???·?(2?)
+		20310151,	--???·?(3?)
+		20310152,	--???·?(4?)
+		20310153,	--???·?(5?)
+		20310154,	--???·?(6?)
+		20310155,	--???·?(7?)
+		20310156,	--???·?(8?)
+		20310157,	--???·?(9?)
 	},
 }
 
@@ -155,7 +155,7 @@ function RunHunShiCompound_OnEvent(event)
 	if ( event == "UI_COMMAND" and tonumber(arg0) == 2016110701 ) then
 		local objid = Get_XParam_INT(0)
 		local nPage = Get_XParam_INT(1)
-		-- ¹Ø±Õ½çÃæ
+		-- ¹Ø± ½çÃæ
 		if objid == nil or objid < 0 or nPage == nil or nPage < 1 or nPage > 2 then
 			if this:IsVisible() then
 				RunHunShiCompound_Close()
@@ -178,13 +178,13 @@ function RunHunShiCompound_OnEvent(event)
 		if(tonumber(arg0) ~= objCared) then
 			return
 		end
-		-- Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		-- Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
-			-- ¹Ø±Õ½çÃæ
+			-- ¹Ø± ½çÃæ
 			RunHunShiCompound_Close()
 		end	
 	elseif ( event == "SCENE_TRANSED" ) then
-		-- ¹Ø±Õ½çÃæ
+		-- ¹Ø± ½çÃæ
 		RunHunShiCompound_Close()
 	-- ½ğÇ®±ä¸ü
 	elseif event == "UNIT_MONEY" or event == "MONEYJZ_CHANGE" then
@@ -196,19 +196,19 @@ function RunHunShiCompound_OnEvent(event)
 end
 
 --=========================================================
--- ¹Ø±Õ½çÃæ£º½Å±¾¸÷ÖÖ¹Ø±ÕÂß¼­µ÷ÓÃn´Î µã»÷¹Ø±Õ½çÃæµ÷ÓÃÒ»´Î
+-- ¹Ø± ½çÃæ£º½Å±¾¸÷ÖÖ¹Ø± Âß¼­µ÷ÓÃn´Î µã»÷¹Ø± ½çÃæµ÷ÓÃÒ»´Î
 --=========================================================
 function RunHunShiCompound_Close()
-	-- Êı¾İÇå¿Õ
-	g_RunHunShiCompound_Page = 0--Ä¬ÈÏÑ¡ÔñµÄÏû·Ñ·½Ê½ 1£º¿ì½İ 2£ºÆÕÍ¨
-	g_RunHunShiCompound_Num = 0--¶ş¼¶Ñ¡Ïî×Ü¸öÊı
-	g_RunHunShiCompound_Select = -1--Ä¬ÈÏÑ¡ÖĞ¶ş¼¶²Ëµ¥ÏÂ±ê
-	g_RunHunShiCompound_Index = {}--Ä¬ÈÏÑ¡ÖĞ¶ş¼¶²Ëµ¥ÏÂ±ê¶ÔÓ¦µÄÀàĞÍºÍ¶ş¼¶ÏÂ±ê
+	-- Êı¾İÇå¿ 
+	g_RunHunShiCompound_Page = 0--????????? 1:?? 2:??
+	g_RunHunShiCompound_Num = 0--???????
+	g_RunHunShiCompound_Select = -1--??????????
+	g_RunHunShiCompound_Index = {}--????????????????????
 	for i=1, table.getn(g_RunHunShiCompound_Info) do	
 		g_RunHunShiCompound_Info[i].bShow = 0
 	end
 	
-	-- ÁĞ±íÇå¿Õ
+	-- ÁĞ±íÇå¿ 
 	--RunHunShiCompound_Bk1:CleanAllElement("RunHunShiCompound")
 	
 	this:Hide()
@@ -233,7 +233,7 @@ end
 --end
 
 --=========================================================
--- ½çÃæ¸üĞÂ£º·şÎñÆ÷¶Ë´ò¿ª»òÕß¸üĞÂ½çÃæµ÷ÓÃÒ»´Î
+-- ½çÃæ¸üĞÂ£º·şÎñÆ÷¶Ë´ò¿ª»ò ß¸üĞÂ½çÃæµ÷ÓÃÒ»´Î
 --=========================================================
 function RunHunShiCompound_Update(nPage)	
 	-- ½ğÇ®ÏÔÊ¾
@@ -244,7 +244,7 @@ function RunHunShiCompound_Update(nPage)
 	-- ÇĞ»»Ò³Ç©
 	RunHunShiCompound_SwitchPage(nPage)	
 	
-	--Çå¿ÕÒ³Ç©
+	--Çå¿ Ò³Ç©
 	--g_RunHunShiCompound_Page = 0
 	--g_RunHunShiCompound_BtnIndex = 1
 	--Ä¬ÈÏÑ¡ÖĞ½ğÇ®Ò³²¢ÇĞ»»µ½¸ÃÒ³
@@ -301,7 +301,7 @@ function RunHunShiCompound_UpdatePageInfo()
 	if g_RunHunShiCompound_Page == 1 then
 		-- ½éÉÜÎÄ×Ö
 		RunHunShiCompound_ExplainInfo:SetText( "#{RHSYH_161104_04}" )
-	-- Ò³Ç©2£ºÆÕÍ¨ºÏ³É
+	-- Ò³Ç©2£ºÆ Í¨ºÏ³É
 	elseif g_RunHunShiCompound_Page == 2 then
 		-- ½éÉÜÎÄ×Ö
 		RunHunShiCompound_ExplainInfo:SetText( "#{RHSYH_161104_57}" )
@@ -314,7 +314,7 @@ end
 --=========================================================
 function RunHunShiCompound_LeftLoad()
 	
-	-- ÁĞ±íÇå¿Õ
+	-- ÁĞ±íÇå¿ 
 	RunHunShiCompound_List:ClearListBox()
 	g_RunHunShiCompound_Index = {}
 	
@@ -391,11 +391,11 @@ function RunHunShiCompound_ListBox_Selected()
 		-- Ò»¼¶Ñ¡Ïî
 		local tInfo = g_RunHunShiCompound_Info[nIndex]
 		if tInfo ~= nil then
-			-- ¸Ä±äÒ»¼¶Ñ¡Ïî´ò¿ª¹Ø±Õ×´Ì¬
+			-- ¸Ä±äÒ»¼¶Ñ¡Ïî´ò¿ª¹Ø± ×´Ì¬
 			if tInfo.bShow == 1 then
 				tInfo.bShow = 0
 			else
-				-- ¹Ø±ÕÆäËûÁĞ±í
+				-- ¹Ø± ÆäËûÁĞ±í
 				for i=1, table.getn(g_RunHunShiCompound_Info) do	
 					g_RunHunShiCompound_Info[i].bShow = 0
 				end
@@ -416,10 +416,10 @@ function RunHunShiCompound_ListBox_Selected()
 end
 
 --=========================================================
--- Çå¿ÕÓÒ²àºÏ³ÉĞÅÏ¢
+-- Çå¿ ÓÒ²àºÏ³ÉĞÅÏ¢
 --=========================================================
 function RunHunShiCompound_ClearDetail()
-	-- ÏÔÊ¾¿ÕÄÚÈİ
+	-- ÏÔÊ¾¿ ÄÚÈİ
 	RunHunShiCompound_ChoiceInfo:SetText( "#{RHSYH_161104_39}" )
 	RunHunShiCompound_Item:SetActionItem(-1)
 	RunHunShiCompound_Need_Info:SetText( "#{RHSYH_161104_40}" )
@@ -465,7 +465,7 @@ end
 -- ÓÒ²àºÏ³ÉĞÅÏ¢£ºÑ¡ÖĞ×ó²àÁĞ±íµ÷ÓÃÒ»´Î
 --=========================================================
 function RunHunShiCompound_ShowDetail()
-	-- Çå¿ÕĞÅÏ¢
+	-- Çå¿ ĞÅÏ¢
 	RunHunShiCompound_ClearDetail()
 	
 	-- Ò³Ç©¼ì²â
@@ -546,7 +546,7 @@ function RunHunShiCompound_ShowDetail()
 	end
 	RunHunShiCompound_ChoiceInfo:SetText( szChoiceInfo )
 
-	-- µÀ¾ßÕ¹Ê¾ÇøÓò
+	-- µÀ¾ß ¹Ê¾ÇøÓò
 	local theAction = DataPool:CreateActionItemForShow(newItemId, 1)
 	if theAction:GetID() ~= 0 then
 		RunHunShiCompound_Item:SetActionItem(theAction:GetID())
@@ -621,10 +621,10 @@ function RunHunShiCompound_HeCheng()
 		Set_XSCRIPT_Function_Name( "RunHunShiCompound_New" )
 		Set_XSCRIPT_ScriptID(809270)
 		Set_XSCRIPT_Parameter(0,npcObjId)--npcid
-		Set_XSCRIPT_Parameter(1,g_RunHunShiCompound_Page)--1¿ì½İ2ÆÕÍ¨
-		Set_XSCRIPT_Parameter(2,nIndex)--ÀàĞÍ
-		Set_XSCRIPT_Parameter(3,nSubIndex)--×ÓÀàĞÍ
-		Set_XSCRIPT_Parameter(4,0)--¶ş´ÎÈ·ÈÏ
+		Set_XSCRIPT_Parameter(1,g_RunHunShiCompound_Page)--1??2??
+		Set_XSCRIPT_Parameter(2,nIndex)--??
+		Set_XSCRIPT_Parameter(3,nSubIndex)--???
+		Set_XSCRIPT_Parameter(4,0)--????
 		Set_XSCRIPT_ParamCount(5)
 	Send_XSCRIPT()
 	

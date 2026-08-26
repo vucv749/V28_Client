@@ -22,8 +22,8 @@ local BuLaoDian_Shop_CtrlList = nil
 function BuLaoDian_Shop_PreLoad()
     this:RegisterEvent("TJCPVP_SHOP_OPEN", true)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 	this:RegisterEvent("OBJECT_CARED_EVENT", false)
 end -- end func BuLaoDian_Shop_PreLoad()
 
@@ -43,7 +43,7 @@ function BuLaoDian_Shop_OnEvent(event)
 			return
         end
         
-		-- 如果和NPC的距离大于一定距离或者被删除，自动关闭
+		-- 如果和NPC的距离大于一定距离或犨被删除，自动关睜
         if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
             BuLaoDian_Shop_Hide()
         end
@@ -165,7 +165,7 @@ function BuLaoDian_Shop_Hide()
     this:Hide()
 end -- end func BuLaoDian_Shop_Hide()
 
--- 关闭按钮
+-- 关睜按钮
 function BuLaoDian_Shop_CloseShop()
     BuLaoDian_Shop_Hide()
 end -- end func BuLaoDian_Shop_CloseShop()

@@ -1,13 +1,13 @@
-local CU_MONEY			= 1	-- Ç®
-local CU_GOODBAD		= 2	-- ÉÆ¶ñÖµ
-local CU_MORALPOINT	= 3	-- Ê¦µÂµã
-local CU_TICKET			= 4 -- ¹ÙÆ±Ç®
-local CU_YUANBAO		= 5	-- Ôª±¦
-local CU_ZENGDIAN		= 6 -- Ôùµã
-local CU_MENPAI_POINT	= 7 -- Ê¦ÃÅ¹±Ï×¶È
-local CU_MONEYJZ		= 8 -- ½»×Ó
-local CU_BIND_YUANBAO	= 9 -- °ó¶¨Ôª±¦
-local CU_GIFTTOKEN	= 10 -- ·µÈ¯
+local CU_MONEY			= 1	-- ?
+local CU_GOODBAD		= 2	-- ???
+local CU_MORALPOINT	= 3	-- ???
+local CU_TICKET			= 4 -- ???
+local CU_YUANBAO		= 5	-- ??
+local CU_ZENGDIAN		= 6 -- ??
+local CU_MENPAI_POINT	= 7 -- ?????
+local CU_MONEYJZ		= 8 -- ??
+local CU_BIND_YUANBAO	= 9 -- ????
+local CU_GIFTTOKEN	= 10 -- ??
 
 local g_pos1;
 local g_pos2;
@@ -24,18 +24,18 @@ function DressSuperToolTip_GetUnlockingStr ( nUnlockElapsedTime )
 	local strLeftTime = "";
 		
 	if( nLeftTime <= 0 ) then
-		strLeftTime = "½âËø³É¹¦£¡ÇëÖØÐÂµÇÂ¼»òÇÐ»»³¡¾°ÕýÊ½½âËø¡£";
+		strLeftTime = "Giäi Toä thành công! Thïnh mµt l¥n næa ðång ký Ho£c c¡t trß¶ng cänh chính thÑc Giäi Toä.";
 	else
 		nLeftTime = math.ceil( nLeftTime/3600 );
 		if( nLeftTime >= 24 ) then
-			strLeftTime = ""..math.floor(nLeftTime/24).." Ìì";
+			strLeftTime = ""..math.floor(nLeftTime/24).." Ngày";
 			nLeftTime = math.mod(nLeftTime,24);
 		end
 		if( nLeftTime > 0 ) then 
-			strLeftTime = strLeftTime.." "..nLeftTime.." Ð¡Ê±";					
+			strLeftTime = strLeftTime.." "..nLeftTime.." Gi¶";					
 		end
 		
-		strLeftTime = strLeftTime.."ºóÕýÊ½½âËø";
+		strLeftTime = strLeftTime.."H§u chính thÑc Giäi Toä";
 	end
 	
 	return strLeftTime;
@@ -97,7 +97,7 @@ function DressSuperToolTip_OnEvent(event)
 end
 
 function DressSuperToolTip_Update()
-		-- ÏÈÇå¿ÕÒÔÇ°ÏÔÊ¾µÄÎÄ×Ö
+		-- ÏÈÇå¿ ÒÔÇ°ÏÔÊ¾µÄÎÄ×Ö
 		DressSuperToolTip_ClearText();
 		
 		local typeDesc = SuperTooltips:GetTypeDesc();
@@ -164,7 +164,7 @@ function DressSuperToolTip_Update()
 			toDisplay = toDisplay .. ";DressSuperToolTip_Property";
 		end
 
-		--×÷Õß
+		--×÷ ß
 		if(szAuthor ~= nil) then 
 			toDisplay = toDisplay .. ";DressSuperToolTip_Manufacturer_Frame";
 		end
@@ -212,7 +212,7 @@ function DressSuperToolTip_Update()
 			DressSuperToolTip_FashionBK:SetProperty("Image", DressIcon)
 		end
 		
-		if( T300Func:IsNoDifOpen(0) == 1) then--±¦Ê¯
+		if( T300Func:IsNoDifOpen(0) == 1) then--??
 			DressSuperToolTip_StaticPart_Gem1BK:Show()
 			DressSuperToolTip_StaticPart_Gem2BK:Show()
 			DressSuperToolTip_StaticPart_Gem3BK:Show()
@@ -224,7 +224,7 @@ function DressSuperToolTip_Update()
 			DressSuperToolTip_StaticPart_Gem4BK:Hide()
 		end
 
-		if( T300Func:IsNoDifOpen(1) == 1) then--µñÎÄ
+		if( T300Func:IsNoDifOpen(1) == 1) then--??
 			DressSuperToolTip_StaticPart_DWBK:Show()
 		else
 			DressSuperToolTip_StaticPart_DWBK:Hide()
@@ -344,7 +344,7 @@ end
 
 -------------------------------------------------------------------------------------------------------------------------------
 --
--- Çå¿ÕÏÔÊ¾ÎÄ±¾
+-- Çå¿ ÏÔÊ¾ÎÄ±¾
 --
 function DressSuperToolTip_ClearText()
 		DressSuperToolTip_StaticPart_Title:SetText("");
@@ -403,53 +403,53 @@ function DressSuperToolTip_SetupMoneyPart(type,nPrice)
 	if(nUnit==nil)then
 		nUnit = CU_MONEY;
 	end;
-	if(CU_MONEY	== nUnit or CU_TICKET == nUnit or CU_MONEYJZ == nUnit)       then      --Ç®£¬¹ÙÆ±Ç®, ½»×Ó
+	if(CU_MONEY	== nUnit or CU_TICKET == nUnit or CU_MONEYJZ == nUnit)       then      --?,???, ??
 			StaticPart_GB_Ctl:Hide()
 			StaticPart_Money_Ctl:Show();
 			StaticPart_Money_Ctl:SetProperty("MoneyNumber", tostring(nPrice));
 
-	elseif(CU_GOODBAD == nUnit) then			--ÉÆ¶ñÖµ
+	elseif(CU_GOODBAD == nUnit) then			--???
 			
 			StaticPart_GB_Ctl:Show()
 			StaticPart_Money_Ctl:Hide();
-			StaticPart_GB_Ctl:SetText("ÉÆ¶ñÖµ:" .. tostring(nPrice) .. " µã")
+			StaticPart_GB_Ctl:SetText("Thi®n ác Tr¸:" .. tostring(nPrice) .. " Ði¬m")
 
 
-	elseif(CU_MORALPOINT == nUnit)  then	--Ê¦µÂµã
+	elseif(CU_MORALPOINT == nUnit)  then	--???
 
 			StaticPart_GB_Ctl:Show()
 			DressSuperToolTip_StaticPart_Money:Hide();
-			StaticPart_GB_Ctl:SetText("Ê¦µÂµã:" .. tostring(nPrice) .. " µã")
+			StaticPart_GB_Ctl:SetText("Sß ÐÑc Ði¬m:" .. tostring(nPrice) .. " Ði¬m")
 
-	elseif(CU_BIND_YUANBAO == nUnit) then	--°ó¶¨Ôª±¦
+	elseif(CU_BIND_YUANBAO == nUnit) then	--????
 
 			StaticPart_GB_Ctl:Show()
 			StaticPart_Money_Ctl:Hide();
 			StaticPart_GB_Ctl:SetText("#{BDYB_090714_01}" .. tostring(nPrice))
 			
-	elseif(CU_GIFTTOKEN == nUnit) then	--·µÈ¯
+	elseif(CU_GIFTTOKEN == nUnit) then	--??
 
 			StaticPart_GB_Ctl:Show()
 			StaticPart_Money_Ctl:Hide();
 			StaticPart_GB_Ctl:SetText("#{YBFQ_XML_1}" .. tostring(nPrice))
 
-	elseif(CU_YUANBAO == nUnit) then	--Ôª±¦
+	elseif(CU_YUANBAO == nUnit) then	--??
 
 			StaticPart_GB_Ctl:Show()
 			StaticPart_Money_Ctl:Hide();
-			StaticPart_GB_Ctl:SetText("Ôª±¦£º" .. tostring(nPrice))
+			StaticPart_GB_Ctl:SetText("Nguyên bäo:" .. tostring(nPrice))
 
-	elseif(CU_ZENGDIAN == nUnit) then	--Ôùµã
-
-			StaticPart_GB_Ctl:Show()
-			StaticPart_Money_Ctl:Hide();
-			StaticPart_GB_Ctl:SetText("Ôùµã:" .. tostring(nPrice))
-
-	elseif(CU_MENPAI_POINT == nUnit) then	--Ê¦ÃÅ¹±Ï×¶È
+	elseif(CU_ZENGDIAN == nUnit) then	--??
 
 			StaticPart_GB_Ctl:Show()
 			StaticPart_Money_Ctl:Hide();
-			StaticPart_GB_Ctl:SetText("ÃÅÅÉ¹±Ï×¶È:" .. tostring(nPrice))
+			StaticPart_GB_Ctl:SetText("T£ng Ði¬m:" .. tostring(nPrice))
+
+	elseif(CU_MENPAI_POINT == nUnit) then	--?????
+
+			StaticPart_GB_Ctl:Show()
+			StaticPart_Money_Ctl:Hide();
+			StaticPart_GB_Ctl:SetText("Môn phái c¯ng hiªn Ðµ:" .. tostring(nPrice))
 
 	end	
 	

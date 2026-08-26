@@ -64,10 +64,10 @@ function SMSCode_Show( bBindPhone )
 	g_SMSCode_BindPhone = bBindPhone
 	if g_SMSCode_BindPhone == 0 then
 		SMSCode_Edit:SetProperty("MaxTextLength", "20")
-		SMSCode_Edit:SetText("ÓÎÏ·ÕËºÅÉÐÎ´ÈÏÖ¤ÊÖ»ú");
+		SMSCode_Edit:SetText("Trò ch½i tài khoän chßa chÑng thñc di ðµng");
 	elseif g_SMSCode_BindPhone == 1 then
 		SMSCode_Edit:SetProperty("MaxTextLength", "20")
-		SMSCode_Edit:SetText("Çëµã»÷»ñÈ¡ÑéÖ¤Âë°´Å¥");
+		SMSCode_Edit:SetText("Thïnh Ði¬m Kích thu hoÕch nghi®m chÑng Mã cái nút");
 	end
 	SMSCode_Get:SetText("#{YZGN_230830_21}");	
 	SMSCode_Get:Enable();
@@ -84,7 +84,7 @@ end
 
 --µÃµ½ÑéÖ¤Âë
 function SMSCode_OnGetPhoneTextClicked()
-	if g_SMSCode_BindPhone == 0 then   --Î´°ó¶¨×´Ì¬
+	if g_SMSCode_BindPhone == 0 then   --?????
 		return
 	end
 	
@@ -126,13 +126,13 @@ end
 
 function SMSCode_SecurityCode_Msg( nErrCode )
 
-	if nErrCode == 6 then		--Ò»Ìì50´Î³¬ÏÞÖÆ
+	if nErrCode == 6 then		--??50????
 		PushDebugMessage( "#{SJRZ_180827_29}");
-	elseif nErrCode == 88 then --º£Íâ¶ÌÐÅ·¢ËÍ¹¦ÄÜ±»¹Ø±Õ
+	elseif nErrCode == 88 then --???????????
 		PushDebugMessage( "#{SJRZ_180827_30}")
-	elseif nErrCode == 90 then --ÊÖ»úºÅ´¦ÓÚºÚÃûµ¥
+	elseif nErrCode == 90 then --????????
 		PushDebugMessage( "#{SJRZ_180827_31}")
-	elseif nErrCode == 98 then --·þÎñÆ÷IP²»ÔÚ°×Ãûµ¥ÖÐ»òÕß·¢ËÍ¶ÌÐÅµÄIPÊÜÏÞ
+	elseif nErrCode == 98 then --???IP?????????????IP??
 		PushDebugMessage( "#{SJRZ_180827_32}")
 	else
 		local strMsg =	ScriptGlobal_Format( "#{SJRZ_180827_28}", nErrCode)	

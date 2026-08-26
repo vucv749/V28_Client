@@ -25,8 +25,8 @@ function FuQi_Shop_Pop_PreLoad()
     this:RegisterEvent("UI_COMMAND", true)
     this:RegisterEvent("HIDE_ON_SCENE_TRANSED", true)
     this:RegisterEvent("OBJECT_CARED_EVENT", false)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
     this:RegisterEvent("FUQISHOP_CONFIRM_HIDE",false)
 end -- end func FuQi_Shop_Pop_PreLoad()
 
@@ -43,7 +43,7 @@ function FuQi_Shop_Pop_OnEvent(event)
 			return
         end
         
-		-- 如果和NPC的距离大于一定距离或者被删除，自动关闭
+		-- 如果和NPC的距离大于一定距离或犨被删除，自动关睜
         if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
             FuQi_Shop_Pop_Frame_OnHiden()
         end
@@ -120,7 +120,7 @@ function FuQi_Shop_Pop_OK_Clicked()
     FuQi_Shop_Pop_Frame_OnHiden()
 end -- end func FuQi_Shop_Pop_OK_Clicked()
 
--- 取消、关闭按钮事件
+-- 取消、关睜按钮事件
 function FuQi_Shop_Pop_Cancel_Clicked(arg)
 
     FuQi_Shop_Pop_StopCareObject()

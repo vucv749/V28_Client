@@ -1,8 +1,8 @@
 
 -- local g_ExteriorRideToolTip_Frame_UnifiedPosition
 local g_ExteriorRideId = -1
-local g_ExteriorType = 0 --坐骑
-local g_LeftTime = 0 --剩余时间
+local g_ExteriorType = 0 --??
+local g_LeftTime = 0 --????
 --=========
 --PreLoad==
 --=========
@@ -10,7 +10,7 @@ function ExteriorRideToolTip_PreLoad()
 	this:RegisterEvent("EXTERIOR_RIDE_TOOLTIP")
 	this:RegisterEvent("ADJEST_UI_POS")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--离开场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--????????
 end
 
 --=========

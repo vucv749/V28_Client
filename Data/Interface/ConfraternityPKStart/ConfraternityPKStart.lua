@@ -50,7 +50,7 @@ function ConfraternityPKStart_Accept_BtnClick()
 	end
 	local guid = ConfraternityPKStart_Input:GetText();
 	if(tonumber(guid)==nil)then
-		PushDebugMessage("°ï»áid²»ÄÜÎª¿Õ£¡");
+		PushDebugMessage("Bang hµi idkhông th¬ Vi Không!");
 		return;
 	end
 	City:SendAddEnemyMsg(tonumber(guid));

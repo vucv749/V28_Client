@@ -17,16 +17,16 @@ function PetShelizi_Msg_OnEvent(event)
 	
 	if ( event == "UI_COMMAND" and tonumber(arg0) == 3000771) then
 		local slzExp = Get_XParam_INT( 0 )
-		local levelCanUp = Get_XParam_INT( 1 ) --经验值可以升到的最高等级
+		local levelCanUp = Get_XParam_INT( 1 ) --????????????
 		local petLevel = Get_XParam_INT( 2 )
-		local HumanMaxLevel = Get_XParam_INT( 3 )  --人物携带最高等级
+		local HumanMaxLevel = Get_XParam_INT( 3 )  --????????
 		local PetGuidH = Get_XParam_INT( 4 )
 		local PetGuidL = Get_XParam_INT( 5 )
 		g_bagIndex = Get_XParam_INT( 6 )
 		g_petCurrLevel = petLevel;
 		local petClass = Pet:GetPetDBCName(PetGuidH,PetGuidL)
 		if levelCanUp == 0 then
-			--不能升级不会到这个界面，会到MessageBox_Self界面
+			--不能升级不会到犫个界面，会到MessageBox_Self界面
 			return
 		elseif levelCanUp > 0 then
 			
@@ -60,7 +60,7 @@ end
 -- 按钮1 点击事件
 function PetShelizi_Msg_Bn1Click()
 
-	local upToLevel = -1; --默认升级到最高级
+	local upToLevel = -1; --????????
 	if PetShelizi_Msg_Check : GetCheck() == 1 then 
 		local upToLevelText = PetShelizi_Msg_Moral_Value:GetText();
 		

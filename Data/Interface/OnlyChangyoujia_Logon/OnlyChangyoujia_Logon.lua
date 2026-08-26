@@ -1,6 +1,6 @@
 local g_Frame_UnifiedXPosition;
 local g_Frame_UnifiedYPosition;
-local g_OnlyChangyoujia_Logon_OnlineOrLogin = 1;		--1是Online，2是Login
+local g_OnlyChangyoujia_Logon_OnlineOrLogin = 1;		--1?Online,2?Login
 
 function OnlyChangyoujia_Logon_PreLoad()
 
@@ -29,13 +29,13 @@ function OnlyChangyoujia_Logon_OnEvent(event)
 		OnlyChangyoujia_Logon_ResetPos()
 	elseif( event == "VIEW_RESOLUTION_CHANGED") then
 		OnlyChangyoujia_Logon_ResetPos()
-	elseif ( event == "OPEN_RECHECK_APPWARE_UI") then	--已在线，验证畅游+
+	elseif ( event == "OPEN_RECHECK_APPWARE_UI") then	--???,????+
 		OnlyChangyoujia_Logon_Clear()
 		g_OnlyChangyoujia_Logon_OnlineOrLogin = 1;
 		OnlyChangyoujia_Logon_Text:SetText("#{DHYZ_140507_01}");
 		OnlyChangyoujia_Logon_ChangyoujiaBox:SetProperty("DefaultEditBox", "True");
 		this:Show()
-	elseif ( event == "OPEN_LOGIN_APPWARE_UI") then --登录时，验证畅游+
+	elseif ( event == "OPEN_LOGIN_APPWARE_UI") then --???,????+
 		PushEvent("GAMELOGIN_HIDEUI_LOGON");
 		OnlyChangyoujia_Logon_Clear()
 		OnlyChangyoujia_Logon_Text:SetText("#{DLLC_170814_27}");

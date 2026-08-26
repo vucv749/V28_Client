@@ -4,24 +4,24 @@
 local DoublePK_Over_UnifiedPosition = nil
 local DoublePK_Over_UICommandId = 99831901
 local DoublePK_Over_Type = {
-    invalid = 0,                                                    -- 无效
-    win_a = 1,                                                      -- 选项
-    win_b = 2,                                                      -- 选项
-    equal = 3,                                                      -- 选项
-    fail = 4,                                                       -- 选项
-    escwin_a = 5,                                                   -- 选项
-    escwin_b = 6,                                                   -- 选项
+    invalid = 0,                                                    -- ??
+    win_a = 1,                                                      -- ??
+    win_b = 2,                                                      -- ??
+    equal = 3,                                                      -- ??
+    fail = 4,                                                       -- ??
+    escwin_a = 5,                                                   -- ??
+    escwin_b = 6,                                                   -- ??
 }
-DoublePK_Over_TeamType                     = {                      -- 队伍分类，这个define是对应关系
-    team_a = 0,                                                     -- A队
-    team_b = 1,                                                     -- B队
-    team_max = 2,                                                   -- 队伍数量
+DoublePK_Over_TeamType                     = {                      -- ????,??define?????
+    team_a = 0,                                                     -- A?
+    team_b = 1,                                                     -- B?
+    team_max = 2,                                                   -- ????
 }
 function DoublePK_Over_PreLoad()
     this:RegisterEvent("UI_COMMAND", true)
 	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)
-	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- 窗口分辨率发生变化
-	this:RegisterEvent("ADJEST_UI_POS",false)               -- 窗口尺寸发生变化
+	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)     -- ?????????
+	this:RegisterEvent("ADJEST_UI_POS",false)               -- ????????
 end
 
 function DoublePK_Over_OnEvent(event)
@@ -146,7 +146,7 @@ function DoublePK_Over_Hide()
     this:Hide()
 end
 
--- 关闭按钮点击事件
+-- 关睜按钮点击事件
 function DoublePK_Over_Clicked_Close()
     DoublePK_Over_Hide()
 end

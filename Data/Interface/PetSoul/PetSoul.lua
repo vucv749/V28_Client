@@ -4,7 +4,7 @@ local g_PetSoul_Frame_UnifiedYPosition
 local g_PetIndex = -1
 local g_bSwitchModelBusy = 0
 
-local g_PetType = -1			--0.自己的珍兽 1.目标的珍兽 2.场景中珍兽
+local g_PetType = -1			--0.????? 1.????? 2.?????
 local g_bInit = 0
 local g_MaxCategoryNum = 0
 local g_CategoryList = {}

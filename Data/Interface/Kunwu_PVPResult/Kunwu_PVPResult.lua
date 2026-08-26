@@ -115,7 +115,7 @@ function Kunwu_PVPResult_InitUIData(lastTime)
 			if data ~= nil and type(data) == "table" then
 				local child = g_ui_list[i]
 				if (child ~= nil) then
-					-- 是否是自己的阵营					
+					-- 是否是自己的狊营					
 					
 					local campinfo = g_camp_info[data.pos+1]
 					if campinfo ~= nil then
@@ -211,7 +211,7 @@ function Kunwu_PVPResult_Mini()
 end
 
 --================================================
--- 关闭
+-- 关睜
 --================================================
 function Kunwu_PVPResult_CloseClicked()
 	this:Hide()

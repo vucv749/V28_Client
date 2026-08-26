@@ -6,7 +6,7 @@ local g_Frame_Pos = nil
 
 local g_AnimateTick = 0
 local g_YinJiAnimateTick = 0
-local g_YinJiFlag = 0--0从0-1--1从1-0
+local g_YinJiFlag = 0--0?0-1--1?1-0
 
 local g_ObjId = -1
 
@@ -17,7 +17,7 @@ function DaHua_DaiBanList_PreLoad()
 	this:RegisterEvent("UI_COMMAND", true)
 	this:RegisterEvent("ADJEST_UI_POS", false)
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED", false)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED", false)	--???????
 end
 
 --=========
@@ -41,8 +41,8 @@ function DaHua_DaiBanList_OnEvent(event)
 		elseif flag == 1 then
 			--显示界面
 			this:Show()
-			DaHua_DaiBanList_ClearAnimate()--清动画
-			DaHua_DaiBanList_ClearYinJiAnimate()--清动画
+			DaHua_DaiBanList_ClearAnimate()--???
+			DaHua_DaiBanList_ClearYinJiAnimate()--???
 			DaHua_DaiBanList_Open(tonumber(flag1),tonumber(flag2))
 		elseif flag == 2 then
 			--播放动画
@@ -83,34 +83,34 @@ function DaHua_DaiBanList_Open(flag1,flag2)
 	end
 	
 	--背景图
-	if flag1 == 1 then--新图
+	if flag1 == 1 then--??
 		DaHua_DaiBanList_Function_Image1:Show()
 		DaHua_DaiBanList_Function_Image2:Show()
-	else--旧图
+	else--??
 		DaHua_DaiBanList_Function_Image1:Show()
 		DaHua_DaiBanList_Function_Image2:Hide()
 	end
 	
 	--按钮部分
-	if flag2 == 0 then--未签约
+	if flag2 == 0 then--???
 		DaHua_DaiBanList_OK:Show()
 		DaHua_DaiBanList_OKTps:Show()
 		DaHua_DaiBanList_NoTps:Hide()
 		DaHua_DaiBanList_YinJi:Hide()		
 		DaHua_DaiBanList_Function_Animate:Show()
-	elseif flag2 == 1 then--已签约
+	elseif flag2 == 1 then--???
 		DaHua_DaiBanList_OK:Hide()
 		DaHua_DaiBanList_OKTps:Hide()
 		DaHua_DaiBanList_NoTps:Hide()
 		DaHua_DaiBanList_YinJi:Show()
 		DaHua_DaiBanList_Function_Animate:Hide()
-	elseif flag2 == 2 then--未解约
+	elseif flag2 == 2 then--???
 		DaHua_DaiBanList_OK:Show()
 		DaHua_DaiBanList_OKTps:Hide()
 		DaHua_DaiBanList_NoTps:Show()
 		DaHua_DaiBanList_Function_Animate:Show()
 		DaHua_DaiBanList_YinJi:Show()
-	elseif flag2 == 3 then--已解约
+	elseif flag2 == 3 then--???
 		DaHua_DaiBanList_OK:Hide()
 		DaHua_DaiBanList_OKTps:Hide()
 		DaHua_DaiBanList_NoTps:Hide()
@@ -120,11 +120,11 @@ function DaHua_DaiBanList_Open(flag1,flag2)
 end
 
 --=========
--- 关闭
+-- 关睜
 --=========
 function DaHua_DaiBanList_Closed()
-	DaHua_DaiBanList_ClearAnimate()--清动画
-	DaHua_DaiBanList_ClearYinJiAnimate()--清动画
+	DaHua_DaiBanList_ClearAnimate()--???
+	DaHua_DaiBanList_ClearYinJiAnimate()--???
 	this:Hide()
 end
 
@@ -159,10 +159,10 @@ end
 -- 播放动画
 --=========
 function DaHua_DaiBanList_PlayAnimate()
-		DaHua_DaiBanList_ClearAnimate()--清动画
+		DaHua_DaiBanList_ClearAnimate()--???
 		DaHua_DaiBanList_Function_Image2:Show()
 		DaHua_DaiBanList_Function_Image2:SetProperty("Alpha",0)
-		SetTimer("DaHua_DaiBanList","DaHua_DaiBanList_AnimateTimer()", 200)--计时器
+		SetTimer("DaHua_DaiBanList","DaHua_DaiBanList_AnimateTimer()", 200)--???
 end
 
 --=========
@@ -191,18 +191,18 @@ end
 -- 播放动画
 --=========
 function DaHua_DaiBanList_PlayYinJiAnimate()
-		DaHua_DaiBanList_ClearYinJiAnimate()--清动画
+		DaHua_DaiBanList_ClearYinJiAnimate()--???
 		DaHua_DaiBanList_OK:Hide()
 		DaHua_DaiBanList_OKTps:Hide()
 		DaHua_DaiBanList_NoTps:Hide()
 		DaHua_DaiBanList_Function_Animate:Hide()
 		DaHua_DaiBanList_YinJi:Show()
-		if g_YinJiFlag ~= 1 then--从0-1
+		if g_YinJiFlag ~= 1 then--?0-1
 			DaHua_DaiBanList_YinJi:SetProperty("Alpha",0)
 		else
 			DaHua_DaiBanList_YinJi:SetProperty("Alpha",1)
 		end
-		SetTimer("DaHua_DaiBanList","DaHua_DaiBanList_YinJiAnimateTimer()", 200)--计时器
+		SetTimer("DaHua_DaiBanList","DaHua_DaiBanList_YinJiAnimateTimer()", 200)--???
 end
 
 --=========
@@ -210,7 +210,7 @@ end
 --=========
 function DaHua_DaiBanList_YinJiAnimateTimer()
 		g_YinJiAnimateTick = g_YinJiAnimateTick+1
-		if g_YinJiFlag ~= 1 then--从0-1
+		if g_YinJiFlag ~= 1 then--?0-1
 				if g_YinJiAnimateTick > 0 and g_YinJiAnimateTick < 10 then
 						DaHua_DaiBanList_YinJi:SetProperty("Alpha",g_YinJiAnimateTick*0.1)						
 				elseif g_YinJiAnimateTick >= 10 then
@@ -218,7 +218,7 @@ function DaHua_DaiBanList_YinJiAnimateTimer()
 						DaHua_DaiBanList_YinJi:SetProperty("Alpha",1)
 						KillTimer("DaHua_DaiBanList_YinJiAnimateTimer()")
 				end
-		else--从1-0
+		else--?1-0
 				if g_YinJiAnimateTick > 0 and g_YinJiAnimateTick < 10 then
 						DaHua_DaiBanList_YinJi:SetProperty("Alpha",(10-g_YinJiAnimateTick)*0.1)						
 				elseif g_YinJiAnimateTick >= 10 then

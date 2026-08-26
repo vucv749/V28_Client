@@ -47,7 +47,7 @@ function KunWu_Expedition_Main_PreLoad()
 	this:RegisterEvent("UI_COMMAND")
 	this:RegisterEvent("REFRESH_PET_PAIQIAN_MAIN")
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED",false)
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--进场景关闭界面
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED",false)	--???????
 	this:RegisterEvent("ADJEST_UI_POS",false)
 	this:RegisterEvent("CHOSE_PET_PAIQIAN",false)
 	this:RegisterEvent("PET_PAIQIAN_LOCATE",false)

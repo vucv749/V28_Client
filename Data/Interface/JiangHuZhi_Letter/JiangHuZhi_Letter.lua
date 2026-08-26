@@ -5,8 +5,8 @@ local g_Frame_UnifiedPosition
 --=========
 function JiangHuZhi_Letter_PreLoad()
 
-	this:RegisterEvent("UI_COMMAND")--打开or刷新界面
-	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--进场景关闭界面
+	this:RegisterEvent("UI_COMMAND")--??or????
+	this:RegisterEvent("HIDE_ON_SCENE_TRANSED")	--???????
 	this:RegisterEvent("VIEW_RESOLUTION_CHANGED")
 	this:RegisterEvent("ADJEST_UI_POS")
 
@@ -65,7 +65,7 @@ end
 
 
 --=========
---兑换召唤券按钮点击
+--兑换犢唤券按钮点击
 --=========
 function JiangHuZhi_Letter_AddMission()
 	Clear_XSCRIPT();
@@ -75,8 +75,8 @@ function JiangHuZhi_Letter_AddMission()
 	Send_XSCRIPT();
 end
 
---响应：通过server判断，可以寻路找npc
+--响应：通过server判断，可以寻路犚npc
 function JiangHuZhi_Letter_GoToFindNpc()
-	AutoRuntoTargetExWithName(150, 208, 1, "百晓生")
+	AutoRuntoTargetExWithName(150, 208, 1, "B醕h Hi瑄 Sanh")
 	this:Hide()
 end

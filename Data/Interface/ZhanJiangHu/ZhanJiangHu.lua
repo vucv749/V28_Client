@@ -1,5 +1,5 @@
--- ÒÆÖ²-ÐÂ´ºÇ©µ½»î¶¯-Ìììû´º»ªÕ½½­ºþ
---Õ½½­ºþ½çÃæ
+-- ÒÆÖ²-ÐÂ´ºÇ©µ½»î¶¯-Ìììû´º»ª ½½­ºþ
+-- ½½­ºþ½çÃæ
 -- !!!reloadscript =ZhanJiangHu
 local g_ZhanJiangHu_Frame_UnifiedXPosition
 local g_ZhanJiangHu_Frame_UnifiedYPosition
@@ -8,22 +8,22 @@ local g_ZhanJiangHu_DataRefreshTime = 0
 
 local g_ZhanJiangHu_EventId2Data = 
 {	
-	[1] = 	{Len=12,Start = 0 },    --ÀÛ¼Æ»÷É±¹ÖÎïÊýÁ¿
-	[2] = 	{Len=5,Start = 12	},	  --Íê³É°ï»áÈÎÎñ´ÎÊý
-	[3] = 	{Len=1,Start = 17	},	 	--²Î¼Ó¾µºþ½Ë·Ë´ÎÊý
-	[4] = 	{Len=4,Start = 18	},	 	--²Î¼ÓÀÏÈý»·´ÎÊý
-	[5] = 	{Len=3,Start = 22	},	 	--Íê³ÉÑà×Ó´ÎÊý
-	[6] = 	{Len=3,Start = 25	},	 	--Íê³ÉÎÒ°®ÐÒÔË¿ì»îÈý´ÎÊý
-	[7] = 	{Len=1,Start = 28	},	 	--Íê³Éõí¾Ï´ÎÊý
-	[8] = 	{Len=1,Start = 29	},   	--Íê³É»ªÉ½ÂÛ½£´ÎÊý
-	[9] = 	{Len=1,Start = 30	},   	--Íê³É±ÈÎä´ó»á´ÎÊý
-	[10] = 	{Len=1,Start = 31	},	 	--Íê³ÉÖÙÏÄ³ýÄ§´ÎÊý
-	[11] =	{Len=3,Start = 32	},	 	--Íê³ÉÆå¾Ö´ÎÊý
-	[12] = 	{Len=3,Start = 35	},   	--Íê³ÉÐ¡Æ±´ÎÊý
-	[13] = 	{Len=2,Start = 38	},	 	--Íê³ÉÇ§Ñ°»î¶¯´ÎÊý
-	[14] = 	{Len=2,Start = 40	},	 	--Íê³É·ï»Ë¹Å³ÇÕù¶áÕ½´ÎÊý
-	[15] = 	{Len=2,Start = 42	},		--Íê³ÉÇ°ÊÀ½ñÉú´ÎÊý
-	[16] = 	{Len=6,Start = 44	},		--Íê³ÉÃ¿ÈÕÈÎÎñ»ý·ÖÊý£¨²»ÊÇÊÂ¼þ£©
+	[1] = 	{Len=12,Start = 0 },    --????????
+	[2] = 	{Len=5,Start = 12	},	  --????????
+	[3] = 	{Len=1,Start = 17	},	 	--????????
+	[4] = 	{Len=4,Start = 18	},	 	--???????
+	[5] = 	{Len=3,Start = 22	},	 	--??????
+	[6] = 	{Len=3,Start = 25	},	 	--???????????
+	[7] = 	{Len=1,Start = 28	},	 	--??????
+	[8] = 	{Len=1,Start = 29	},   	--????????
+	[9] = 	{Len=1,Start = 30	},   	--????????
+	[10] = 	{Len=1,Start = 31	},	 	--????????
+	[11] =	{Len=3,Start = 32	},	 	--??????
+	[12] = 	{Len=3,Start = 35	},   	--??????
+	[13] = 	{Len=2,Start = 38	},	 	--????????
+	[14] = 	{Len=2,Start = 40	},	 	--???????????
+	[15] = 	{Len=2,Start = 42	},		--????????
+	[16] = 	{Len=6,Start = 44	},		--?????????(????)
 }
 
 local g_ZhanJiangHu_HongFuSocreDataIndex = 16
@@ -32,53 +32,53 @@ local g_ZhanJiangHu_HongFuMaxValue = 25
 local g_ZhanJiangHu_AhieveIdData = 
 {
 	--³õ°Ë
-	[1]  = 	{EventId=1,	NeedValue = 100,FuValue=1,HFStateBit=0,Pos={},Tips="#{CJYJ_201222_98}",Desc="#{CJYJ_201222_12}",ToolTips="#{CJYJ_201222_52}",},   --»÷É±100¸ö¹ÖÎï
-	[2]  = 	{EventId=11,NeedValue = 1,	FuValue=1,HFStateBit=1,Pos={sceneId=2,x=274,z=95,npcName="ÁõÖÙ¸¦"},Tips="",Desc="#{CJYJ_201222_13}",ToolTips="#{CJYJ_201222_53}",},	 	--²Î¼Ó1´ÎÆå¾Ö
-	[3]  = 	{EventId=13,NeedValue = 1,	FuValue=1,HFStateBit=2,Pos={sceneId=1,x=129,z=213,npcName="×óÍ©"},Tips="",Desc="#{CJYJ_201222_14}",ToolTips="#{CJYJ_201222_54}",},		--Íê³É1´ÎÇ§Ñ°»î¶¯	 
-	[4]  = 	{EventId=6,	NeedValue = 1,	FuValue=1,HFStateBit=3,Pos={sceneId=1,x=130,z=230,npcName="ÁøÔÂºç"},Tips="",Desc="#{CJYJ_201222_15}",ToolTips="#{CJYJ_201222_55}",},	 		--Íê³É1´ÎÎÒ°®ÐÒÔË¿ì»îÈý
-	[5]  = 	{EventId=2,	NeedValue = 5,	FuValue=1,HFStateBit=4,Pos={},Tips="#{CJYJ_201222_114}",Desc="#{CJYJ_201222_16}",ToolTips="#{CJYJ_201222_56}",},	 		--Íê³É5´Î°ï»áÈÎÎñ
+	[1]  = 	{EventId=1,	NeedValue = 100,FuValue=1,HFStateBit=0,Pos={},Tips="#{CJYJ_201222_98}",Desc="#{CJYJ_201222_12}",ToolTips="#{CJYJ_201222_52}",},   --??100???
+	[2]  = 	{EventId=11,NeedValue = 1,	FuValue=1,HFStateBit=1,Pos={sceneId=2,x=274,z=95,npcName="Trß½ng D¸ch Qu¯c"},Tips="",Desc="#{CJYJ_201222_13}",ToolTips="#{CJYJ_201222_53}",},	 	--??1???
+	[3]  = 	{EventId=13,NeedValue = 1,	FuValue=1,HFStateBit=2,Pos={sceneId=1,x=129,z=213,npcName="Tä Ð°ng"},Tips="",Desc="#{CJYJ_201222_14}",ToolTips="#{CJYJ_201222_54}",},		--??1?????	 
+	[4]  = 	{EventId=6,	NeedValue = 1,	FuValue=1,HFStateBit=3,Pos={sceneId=1,x=130,z=230,npcName="Li­u Nguy®t H°ng"},Tips="",Desc="#{CJYJ_201222_15}",ToolTips="#{CJYJ_201222_55}",},	 		--??1????????
+	[5]  = 	{EventId=2,	NeedValue = 5,	FuValue=1,HFStateBit=4,Pos={},Tips="#{CJYJ_201222_114}",Desc="#{CJYJ_201222_16}",ToolTips="#{CJYJ_201222_56}",},	 		--??5?????
 	--³õ¾Å
-	[6]  = 	{EventId=1,	NeedValue = 500,FuValue=1,HFStateBit=5,Pos={},Tips="#{CJYJ_201222_99}",Desc="#{CJYJ_201222_17}",ToolTips="#{CJYJ_201222_57}",},	 	--»÷É±500¸ö¹ÖÎï
-	[7]  = 	{EventId=4,	NeedValue = 5,	FuValue=1,HFStateBit=6,Pos={sceneId=1,x=62,z=162,npcName="Ç®ºêÓî"},Tips="",Desc="#{CJYJ_201222_18}",ToolTips="#{CJYJ_201222_58}",},	 		--Íê³É5´ÎÀÏÈý»·
-	[8]  = 	{EventId=14,NeedValue = 1,	FuValue=1,HFStateBit=7,Pos={sceneId=260,x=150,z=152,npcName="ÀîÒ°"},Tips="",Desc="#{CJYJ_201222_19}",ToolTips="#{CJYJ_201222_59}",},		--Íê³É1´Î·ï»Ë¹Å³ÇÕù¶áÕ½
-	[9]  = 	{EventId=3,	NeedValue = 1,	FuValue=1,HFStateBit=8,Pos={sceneId=5,x=199,z=54,npcName="ÆëÉ·ÔÆ"},Tips="",Desc="#{CJYJ_201222_20}",ToolTips="#{CJYJ_201222_60}",},	 		--Íê³É1´Î¾µºþ½Ë·Ë
-	[10] = 	{EventId=2,	NeedValue = 10,	FuValue=1,HFStateBit=9,Pos={},Tips="#{CJYJ_201222_114}",Desc="#{CJYJ_201222_21}",ToolTips="#{CJYJ_201222_61}",},		--Íê³É10´Î°ï»áÈÎÎñ
+	[6]  = 	{EventId=1,	NeedValue = 500,FuValue=1,HFStateBit=5,Pos={},Tips="#{CJYJ_201222_99}",Desc="#{CJYJ_201222_17}",ToolTips="#{CJYJ_201222_57}",},	 	--??500???
+	[7]  = 	{EventId=4,	NeedValue = 5,	FuValue=1,HFStateBit=6,Pos={sceneId=1,x=62,z=162,npcName="Ti«n Hoành Vû"},Tips="",Desc="#{CJYJ_201222_18}",ToolTips="#{CJYJ_201222_58}",},	 		--??5????
+	[8]  = 	{EventId=14,NeedValue = 1,	FuValue=1,HFStateBit=7,Pos={sceneId=260,x=150,z=152,npcName="Lí Dã"},Tips="",Desc="#{CJYJ_201222_19}",ToolTips="#{CJYJ_201222_59}",},		--??1????????
+	[9]  = 	{EventId=3,	NeedValue = 1,	FuValue=1,HFStateBit=8,Pos={sceneId=5,x=199,z=54,npcName="T« Sát Vân"},Tips="",Desc="#{CJYJ_201222_20}",ToolTips="#{CJYJ_201222_60}",},	 		--??1?????
+	[10] = 	{EventId=2,	NeedValue = 10,	FuValue=1,HFStateBit=9,Pos={},Tips="#{CJYJ_201222_114}",Desc="#{CJYJ_201222_21}",ToolTips="#{CJYJ_201222_61}",},		--??10?????
 	--³õÊ®
-	[11] = 	{EventId=1,	NeedValue = 1000,FuValue=1,HFStateBit=10,Pos={},Tips="#{CJYJ_201222_100}",Desc="#{CJYJ_201222_22}",ToolTips="#{CJYJ_201222_62}",},	--»÷É±1000¸ö¹ÖÎï
-	[12] = 	{EventId=11,NeedValue = 2,	FuValue=1,HFStateBit=11,Pos={sceneId=2,x=274,z=95,npcName="ÁõÖÙ¸¦"},Tips="",Desc="#{CJYJ_201222_23}",ToolTips="#{CJYJ_201222_63}",},	 	--²Î¼Ó2´ÎÆå¾Ö
-	[13] =  {EventId=7,	NeedValue = 1,	FuValue=1,HFStateBit=12,Pos={sceneId=1,x=187,z=147,npcName="ÓÚÙ»Ù»"},Tips="",Desc="#{CJYJ_201222_24}",ToolTips="#{CJYJ_201222_64}",},	 		--Íê³É1´Îõí¾Ï
-	[14] =  {EventId=6,	NeedValue = 2,	FuValue=1,HFStateBit=13,Pos={sceneId=1,x=130,z=230,npcName="ÁøÔÂºç"},Tips="",Desc="#{CJYJ_201222_25}",ToolTips="#{CJYJ_201222_65}",},			--Íê³É2´ÎÎÒ°®ÐÒÔË¿ì»îÈý
-	[15] =  {EventId=5,	NeedValue = 3,	FuValue=1,HFStateBit=14,Pos={sceneId=4,x=70,z=119,npcName="Àî¸Ù"},Tips="",Desc="#{CJYJ_201222_26}",ToolTips="#{CJYJ_201222_66}",},			--Íê³É3´ÎÑà×Ó
+	[11] = 	{EventId=1,	NeedValue = 1000,FuValue=1,HFStateBit=10,Pos={},Tips="#{CJYJ_201222_100}",Desc="#{CJYJ_201222_22}",ToolTips="#{CJYJ_201222_62}",},	--??1000???
+	[12] = 	{EventId=11,NeedValue = 2,	FuValue=1,HFStateBit=11,Pos={sceneId=2,x=274,z=95,npcName="Trß½ng D¸ch Qu¯c"},Tips="",Desc="#{CJYJ_201222_23}",ToolTips="#{CJYJ_201222_63}",},	 	--??2???
+	[13] =  {EventId=7,	NeedValue = 1,	FuValue=1,HFStateBit=12,Pos={sceneId=1,x=187,z=147,npcName="Vu Sänh Sänh"},Tips="",Desc="#{CJYJ_201222_24}",ToolTips="#{CJYJ_201222_64}",},	 		--??1???
+	[14] =  {EventId=6,	NeedValue = 2,	FuValue=1,HFStateBit=13,Pos={sceneId=1,x=130,z=230,npcName="Li­u Nguy®t H°ng"},Tips="",Desc="#{CJYJ_201222_25}",ToolTips="#{CJYJ_201222_65}",},			--??2????????
+	[15] =  {EventId=5,	NeedValue = 3,	FuValue=1,HFStateBit=14,Pos={sceneId=4,x=70,z=119,npcName="Lý Cß½ng"},Tips="",Desc="#{CJYJ_201222_26}",ToolTips="#{CJYJ_201222_66}",},			--??3???
 	--Ê®Ò»
-	[16] = 	{EventId=1,	NeedValue = 1500,FuValue=1,HFStateBit=15,Pos={},Tips="#{CJYJ_201222_101}",Desc="#{CJYJ_201222_27}",ToolTips="#{CJYJ_201222_67}",},  --»÷É±1500¸ö¹ÖÎï
-	[17] = 	{EventId=4,	NeedValue = 10,	FuValue=1,HFStateBit=16,Pos={sceneId=1,x=62,z=162,npcName="Ç®ºêÓî"},Tips="",Desc="#{CJYJ_201222_28}",ToolTips="#{CJYJ_201222_68}",},   	--Íê³É10´ÎÀÏÈý»·
-	[18] = 	{EventId=12,NeedValue = 2,	FuValue=1,HFStateBit=17,Pos={sceneId=246,x=193,z=224,npcName="³ÌÇàËª"},Tips="",Desc="#{CJYJ_201222_29}",ToolTips="#{CJYJ_201222_69}",},	 	--Íê³É2´ÎÐ¡Æ±
-	[19] = 	{EventId=6,	NeedValue = 3,	FuValue=1,HFStateBit=18,Pos={sceneId=1,x=130,z=230,npcName="ÁøÔÂºç"},Tips="",Desc="#{CJYJ_201222_30}",ToolTips="#{CJYJ_201222_70}",},			--Íê³É3´ÎÎÒ°®ÐÒÔË¿ì»îÈý
-	[20] = 	{EventId=15,NeedValue = 1,	FuValue=1,HFStateBit=19,Pos={sceneId=0,x=194,z=180,npcName="Öî¸ð¿×ÁÁ"},Tips="",Desc="#{CJYJ_201222_31}",ToolTips="#{CJYJ_201222_71}",},	 	--Íê³É1´ÎÇ°ÊÀ½ñÉú
+	[16] = 	{EventId=1,	NeedValue = 1500,FuValue=1,HFStateBit=15,Pos={},Tips="#{CJYJ_201222_101}",Desc="#{CJYJ_201222_27}",ToolTips="#{CJYJ_201222_67}",},  --??1500???
+	[17] = 	{EventId=4,	NeedValue = 10,	FuValue=1,HFStateBit=16,Pos={sceneId=1,x=62,z=162,npcName="Ti«n Hoành Vû"},Tips="",Desc="#{CJYJ_201222_28}",ToolTips="#{CJYJ_201222_68}",},   	--??10????
+	[18] = 	{EventId=12,NeedValue = 2,	FuValue=1,HFStateBit=17,Pos={sceneId=246,x=193,z=224,npcName="Trình Thanh Sß½ng"},Tips="",Desc="#{CJYJ_201222_29}",ToolTips="#{CJYJ_201222_69}",},	 	--??2???
+	[19] = 	{EventId=6,	NeedValue = 3,	FuValue=1,HFStateBit=18,Pos={sceneId=1,x=130,z=230,npcName="Li­u Nguy®t H°ng"},Tips="",Desc="#{CJYJ_201222_30}",ToolTips="#{CJYJ_201222_70}",},			--??3????????
+	[20] = 	{EventId=15,NeedValue = 1,	FuValue=1,HFStateBit=19,Pos={sceneId=0,x=194,z=180,npcName="Gia Cát Kh±ng Minh"},Tips="",Desc="#{CJYJ_201222_31}",ToolTips="#{CJYJ_201222_71}",},	 	--??1?????
 	--Ê®¶þ
-	[21] = 	{EventId=1,	NeedValue = 2000,FuValue=1,HFStateBit=20,Pos={},Tips="#{CJYJ_201222_102}",Desc="#{CJYJ_201222_32}",ToolTips="#{CJYJ_201222_72}",},   --»÷É±2000¸ö¹ÖÎï
-	[22] = 	{EventId=11,NeedValue = 3,	FuValue=1,HFStateBit=21,Pos={sceneId=2,x=274,z=95,npcName="ÁõÖÙ¸¦"},Tips="",Desc="#{CJYJ_201222_33}",ToolTips="#{CJYJ_201222_73}",},    --Íê³É3´ÎÆå¾Ö
-	[23] = 	{EventId=8,	NeedValue = 1,	FuValue=1,HFStateBit=22,Pos={sceneId=1,x=193,z=138,npcName="ËÕ½£Áë"},Tips="",Desc="#{CJYJ_201222_34}",ToolTips="#{CJYJ_201222_74}",},   	--Íê³É1´Î»ªÉ½ÂÛ½£
-	[24] = 	{EventId=12,NeedValue = 4,	FuValue=1,HFStateBit=23,Pos={sceneId=246,x=193,z=224,npcName="³ÌÇàËª"},Tips="",Desc="#{CJYJ_201222_35}",ToolTips="#{CJYJ_201222_75}",},		--Íê³É4´ÎÐ¡Æ±
-	[25] = 	{EventId=2,	NeedValue = 15,	FuValue=1,HFStateBit=24,Pos={},Tips="#{CJYJ_201222_114}",Desc="#{CJYJ_201222_36}",ToolTips="#{CJYJ_201222_76}",},	 	--Íê³É15´Î°ï»áÈÎÎñ
+	[21] = 	{EventId=1,	NeedValue = 2000,FuValue=1,HFStateBit=20,Pos={},Tips="#{CJYJ_201222_102}",Desc="#{CJYJ_201222_32}",ToolTips="#{CJYJ_201222_72}",},   --??2000???
+	[22] = 	{EventId=11,NeedValue = 3,	FuValue=1,HFStateBit=21,Pos={sceneId=2,x=274,z=95,npcName="Trß½ng D¸ch Qu¯c"},Tips="",Desc="#{CJYJ_201222_33}",ToolTips="#{CJYJ_201222_73}",},    --??3???
+	[23] = 	{EventId=8,	NeedValue = 1,	FuValue=1,HFStateBit=22,Pos={sceneId=1,x=193,z=138,npcName="Tô Kiªm Lînh"},Tips="",Desc="#{CJYJ_201222_34}",ToolTips="#{CJYJ_201222_74}",},   	--??1?????
+	[24] = 	{EventId=12,NeedValue = 4,	FuValue=1,HFStateBit=23,Pos={sceneId=246,x=193,z=224,npcName="Trình Thanh Sß½ng"},Tips="",Desc="#{CJYJ_201222_35}",ToolTips="#{CJYJ_201222_75}",},		--??4???
+	[25] = 	{EventId=2,	NeedValue = 15,	FuValue=1,HFStateBit=24,Pos={},Tips="#{CJYJ_201222_114}",Desc="#{CJYJ_201222_36}",ToolTips="#{CJYJ_201222_76}",},	 	--??15?????
 	--Ê®Èý
-	[26] = 	{EventId=1,	NeedValue = 2500,FuValue=1,HFStateBit=25,Pos={},Tips="#{CJYJ_201222_103}",Desc="#{CJYJ_201222_37}",ToolTips="#{CJYJ_201222_77}",},  	--»÷É±2500¸ö¹ÖÎï
-	[27] = 	{EventId=9,	NeedValue = 1,	FuValue=1,HFStateBit=26,Pos={sceneId=1,x=173,z=130,npcName="Ëå±ªÃù"},Tips="",Desc="#{CJYJ_201222_38}",ToolTips="#{CJYJ_201222_78}",},    	--²Î¼Ó1´Î±ÈÎä´ó»á
-	[28] =  {EventId=10,NeedValue = 1,	FuValue=1,HFStateBit=27,Pos={sceneId=1,x=186,z=182,npcName="ÁºµÀÊ¿"},Tips="",Desc="#{CJYJ_201222_39}",ToolTips="#{CJYJ_201222_79}",},	 	--Íê³É1´ÎÖÙÏÄ³ýÄ§
-	[29] =  {EventId=6,	NeedValue = 4,	FuValue=1,HFStateBit=28,Pos={sceneId=1,x=130,z=230,npcName="ÁøÔÂºç"},Tips="",Desc="#{CJYJ_201222_40}",ToolTips="#{CJYJ_201222_80}",},	 		--Íê³É4´ÎÎÒ°®ÐÒÔË¿ì»îÈý
-	[30] = 	{EventId=14,NeedValue = 2,	FuValue=1,HFStateBit=29,Pos={sceneId=260,x=150,z=152,npcName="ÀîÒ°"},Tips="",Desc="#{CJYJ_201222_41}",ToolTips="#{CJYJ_201222_81}",},		--Íê³É2´Î·ï»Ë¹Å³ÇÕù¶áÕ½
+	[26] = 	{EventId=1,	NeedValue = 2500,FuValue=1,HFStateBit=25,Pos={},Tips="#{CJYJ_201222_103}",Desc="#{CJYJ_201222_37}",ToolTips="#{CJYJ_201222_77}",},  	--??2500???
+	[27] = 	{EventId=9,	NeedValue = 1,	FuValue=1,HFStateBit=26,Pos={sceneId=1,x=173,z=130,npcName="Tùy Báo Minh"},Tips="",Desc="#{CJYJ_201222_38}",ToolTips="#{CJYJ_201222_78}",},    	--??1?????
+	[28] =  {EventId=10,NeedValue = 1,	FuValue=1,HFStateBit=27,Pos={sceneId=1,x=186,z=182,npcName="Lß½ng ÐÕo Sî"},Tips="",Desc="#{CJYJ_201222_39}",ToolTips="#{CJYJ_201222_79}",},	 	--??1?????
+	[29] =  {EventId=6,	NeedValue = 4,	FuValue=1,HFStateBit=28,Pos={sceneId=1,x=130,z=230,npcName="Li­u Nguy®t H°ng"},Tips="",Desc="#{CJYJ_201222_40}",ToolTips="#{CJYJ_201222_80}",},	 		--??4????????
+	[30] = 	{EventId=14,NeedValue = 2,	FuValue=1,HFStateBit=29,Pos={sceneId=260,x=150,z=152,npcName="Lí Dã"},Tips="",Desc="#{CJYJ_201222_41}",ToolTips="#{CJYJ_201222_81}",},		--??2????????
   --Ê®ËÄ	
-	[31] = 	{EventId=1,	NeedValue = 3000,FuValue=1,HFStateBit=30,Pos={},Tips="#{CJYJ_201222_104}",Desc="#{CJYJ_201222_42}",ToolTips="#{CJYJ_201222_82}",},   --»÷É±3000¸ö¹ÖÎï
-	[32] = 	{EventId=4,	NeedValue = 15,	FuValue=1,HFStateBit=31,Pos={sceneId=1,x=62,z=162,npcName="Ç®ºêÓî"},Tips="",Desc="#{CJYJ_201222_43}",ToolTips="#{CJYJ_201222_83}",},    --Íê³É15´ÎÀÏÈý»·
-	[33] = 	{EventId=11,NeedValue = 4,	FuValue=1,HFStateBit=32,Pos={sceneId=2,x=274,z=95,npcName="ÁõÖÙ¸¦"},Tips="",Desc="#{CJYJ_201222_44}",ToolTips="#{CJYJ_201222_84}",},   	--Íê³É4´ÎÆå¾Ö
-	[34] =  {EventId=5,	NeedValue = 6,	FuValue=1,HFStateBit=33,Pos={sceneId=4,x=70,z=119,npcName="Àî¸Ù"},Tips="",Desc="#{CJYJ_201222_45}",ToolTips="#{CJYJ_201222_85}",},	 		--Íê³É6´ÎÑà×Ó
-	[35] = 	{EventId=15,NeedValue = 2,	FuValue=1,HFStateBit=34,Pos={sceneId=0,x=194,z=180,npcName="Öî¸ð¿×ÁÁ"},Tips="",Desc="#{CJYJ_201222_46}",ToolTips="#{CJYJ_201222_86}",},		--Íê³É2´ÎÇ°ÊÀ½ñÉú
+	[31] = 	{EventId=1,	NeedValue = 3000,FuValue=1,HFStateBit=30,Pos={},Tips="#{CJYJ_201222_104}",Desc="#{CJYJ_201222_42}",ToolTips="#{CJYJ_201222_82}",},   --??3000???
+	[32] = 	{EventId=4,	NeedValue = 15,	FuValue=1,HFStateBit=31,Pos={sceneId=1,x=62,z=162,npcName="Ti«n Hoành Vû"},Tips="",Desc="#{CJYJ_201222_43}",ToolTips="#{CJYJ_201222_83}",},    --??15????
+	[33] = 	{EventId=11,NeedValue = 4,	FuValue=1,HFStateBit=32,Pos={sceneId=2,x=274,z=95,npcName="Trß½ng D¸ch Qu¯c"},Tips="",Desc="#{CJYJ_201222_44}",ToolTips="#{CJYJ_201222_84}",},   	--??4???
+	[34] =  {EventId=5,	NeedValue = 6,	FuValue=1,HFStateBit=33,Pos={sceneId=4,x=70,z=119,npcName="Lý Cß½ng"},Tips="",Desc="#{CJYJ_201222_45}",ToolTips="#{CJYJ_201222_85}",},	 		--??6???
+	[35] = 	{EventId=15,NeedValue = 2,	FuValue=1,HFStateBit=34,Pos={sceneId=0,x=194,z=180,npcName="Gia Cát Kh±ng Minh"},Tips="",Desc="#{CJYJ_201222_46}",ToolTips="#{CJYJ_201222_86}",},		--??2?????
 	--Ê®Îå
-	[36] = 	{EventId=1,	NeedValue = 4000,FuValue=1,HFStateBit=35,Pos={},Tips="#{CJYJ_201222_105}",Desc="#{CJYJ_201222_47}",ToolTips="#{CJYJ_201222_87}",},   --»÷É±4000¸ö¹ÖÎï
-	[37] = 	{EventId=12,NeedValue = 6,	FuValue=1,HFStateBit=36,Pos={sceneId=246,x=193,z=224,npcName="³ÌÇàËª"},Tips="",Desc="#{CJYJ_201222_48}",ToolTips="#{CJYJ_201222_88}",},    --Íê³É6´ÎÐ¡Æ±
-	[38] = 	{EventId=13,NeedValue = 2,	FuValue=1,HFStateBit=37,Pos={sceneId=1,x=129,z=213,npcName="×óÍ©"},Tips="",Desc="#{CJYJ_201222_49}",ToolTips="#{CJYJ_201222_89}",},		--Íê³É2´ÎÇ§Ñ°»î¶¯
-	[39] = 	{EventId=6,	NeedValue = 5,	FuValue=1,HFStateBit=38,Pos={sceneId=1,x=130,z=230,npcName="ÁøÔÂºç"},Tips="",Desc="#{CJYJ_201222_50}",ToolTips="#{CJYJ_201222_90}",},   	--Íê³É5´ÎÎÒ°®ÐÒÔË¿ì»îÈý
-	[40] =  {EventId=2,	NeedValue = 20,	FuValue=1,HFStateBit=39,Pos={},Tips="#{CJYJ_201222_114}",Desc="#{CJYJ_201222_51}",ToolTips="#{CJYJ_201222_91}",},		--Íê³É20´Î°ï»áÈÎÎñ
+	[36] = 	{EventId=1,	NeedValue = 4000,FuValue=1,HFStateBit=35,Pos={},Tips="#{CJYJ_201222_105}",Desc="#{CJYJ_201222_47}",ToolTips="#{CJYJ_201222_87}",},   --??4000???
+	[37] = 	{EventId=12,NeedValue = 6,	FuValue=1,HFStateBit=36,Pos={sceneId=246,x=193,z=224,npcName="Trình Thanh Sß½ng"},Tips="",Desc="#{CJYJ_201222_48}",ToolTips="#{CJYJ_201222_88}",},    --??6???
+	[38] = 	{EventId=13,NeedValue = 2,	FuValue=1,HFStateBit=37,Pos={sceneId=1,x=129,z=213,npcName="Tä Ð°ng"},Tips="",Desc="#{CJYJ_201222_49}",ToolTips="#{CJYJ_201222_89}",},		--??2?????
+	[39] = 	{EventId=6,	NeedValue = 5,	FuValue=1,HFStateBit=38,Pos={sceneId=1,x=130,z=230,npcName="Li­u Nguy®t H°ng"},Tips="",Desc="#{CJYJ_201222_50}",ToolTips="#{CJYJ_201222_90}",},   	--??5????????
+	[40] =  {EventId=2,	NeedValue = 20,	FuValue=1,HFStateBit=39,Pos={},Tips="#{CJYJ_201222_114}",Desc="#{CJYJ_201222_51}",ToolTips="#{CJYJ_201222_91}",},		--??20?????
 }
 
 local g_ZhanJiangHu_CurPage = 0
@@ -120,8 +120,8 @@ local g_ZhanJiangHu_FlexState =
 	[2] = 0,
 }
 
-local g_ZhanJiangHu_PageMaxCount = 5--Ã¿ÈÕ»î¶¯ÊýÁ¿
-local g_ZhanJiangHu_MaxPage = 8--³õ°Ë-Ê®Îå
+local g_ZhanJiangHu_PageMaxCount = 5--??????
+local g_ZhanJiangHu_MaxPage = 8--??-??
 
 local g_ZhanJiangHu_AchieveContorl = {}
 local g_ZhanJiangHu_DaySwithcButon = {}
@@ -371,7 +371,7 @@ function ZhanJiangHu_RefreshHongFu()
 end
 
 --================================================
---Ë¢ÐÂÈÕÆÚÒ³Ç©ÏÔÊ¾
+--Ë¢ÐÂÈ ÆÚÒ³Ç©ÏÔÊ¾
 --================================================
 function ZhanJiangHu_RefreshDayButtons()
 	for i=1,table.getn(g_ZhanJiangHu_DaySwithcButon) do
@@ -389,7 +389,7 @@ function ZhanJiangHu_RefreshDayButtons()
 		end
 		--Ð¡ºìµã
 		if(g_ZhanJiangHu_DaySwithcButon[i].Tips ~= nil) then
-			local nState = ZhanJiangHu_HasRewardForDay(i)--µ±Ç°Ò³Ç©ÏÂÊÇ·ñ»¹ÓÐ»ý·Ö¿ÉÁìÈ¡
+			local nState = ZhanJiangHu_HasRewardForDay(i)--??????????????
 			if(nState == 1 ) then
 				g_ZhanJiangHu_DaySwithcButon[i].Tips:Show()
 			else
@@ -400,7 +400,7 @@ function ZhanJiangHu_RefreshDayButtons()
 end
 
 --================================================
---ÇÐ»»ÈÕÆÚ·Ö+ÏÔÊ¾¾ßÌå»î¶¯
+--ÇÐ»»È ÆÚ·Ö+ÏÔÊ¾¾ßÌå»î¶¯
 --================================================
 function ZhanJiangHu_SwitchPage(nPage)
 	if(nPage== nil or nPage < 1 or nPage > g_ZhanJiangHu_MaxPage) then
@@ -418,19 +418,19 @@ function ZhanJiangHu_SwitchPage(nPage)
 			local nSocre = ZhanJiangHu_GetEventDataById(g_ZhanJiangHu_AhieveIdData[AchieveId].EventId)
 			local nNeedValue = g_ZhanJiangHu_AhieveIdData[AchieveId].NeedValue
 			local szToolTips = g_ZhanJiangHu_AhieveIdData[AchieveId].ToolTips
-			if(nSocre >= nNeedValue) then--ÒÑÍê³É
+			if(nSocre >= nNeedValue) then--???
 				local HasGet = ZhanJiangHu_GetHongFuDianState(AchieveId)
-				if(HasGet == 1) then--ÒÑÁìÈ¡
+				if(HasGet == 1) then--???
 					g_ZhanJiangHu_AchieveContorl[i].Btn:Disable()
 					g_ZhanJiangHu_AchieveContorl[i].BtnText:SetText("#{CJYJ_180104_63}")
-				else--¿ÉÁìÈ¡
+				else--???
 					g_ZhanJiangHu_AchieveContorl[i].Btn:Enable()
 					g_ZhanJiangHu_AchieveContorl[i].BtnText:SetText("#{CJYJ_201222_106}")
 				end					
 				g_ZhanJiangHu_AchieveContorl[i].Btn:SetToolTip("")
 				g_ZhanJiangHu_AchieveContorl[i].Finish:Show()
 				g_ZhanJiangHu_AchieveContorl[i].ValueText:Hide()
-			else--Î´Íê³É
+			else--???
 				g_ZhanJiangHu_AchieveContorl[i].Btn:Enable()
 				g_ZhanJiangHu_AchieveContorl[i].BtnText:SetText("#{CJYJ_180104_61}")
 				g_ZhanJiangHu_AchieveContorl[i].Btn:SetToolTip(szToolTips)
@@ -484,7 +484,7 @@ function ZhanJiangHu_AskData(bOpen)
 end
 
 --================================================
---Õ½½­ºþÄ³¸ö³É¾ÍÊÇ·ñÍê³É
+-- ½½­ºþÄ³¸ö³É¾ÍÊÇ·ñÍê³É
 --================================================
 function ZhanJiangHu_AhieveHasFinish(AchieveId)
 	if(g_ZhanJiangHu_AhieveIdData[AchieveId] == nil) then
@@ -521,7 +521,7 @@ function ZhanJiangHu_HasRewardForDay(nDay)
 end
 
 --================================================
---ÈÕÆÚÊÇ·ñ¿ªÆô
+--È ÆÚÊÇ·ñ¿ªÆô
 --================================================
 function ZhanJiangHu_CheckDayHasOpen(nDayIndex)
 	if(nDayIndex == nil or g_ZhanJiangHu_PageAhieve[nDayIndex] == nil) then
@@ -589,7 +589,7 @@ function ZhanJiangHu_GetEventDataById(EventId)
 	local nNum = math.mod(nStart ,32)
 	local nRetValue = 0
 	local nRetValueLen = 0
-	local nMaxClycle = 99 --×öÒ»¸öÑ­»·ÏÞÖÆ
+	local nMaxClycle = 99 --???????
 	while(1) do
 		if(nIndex >= nMaxClycle) then
 			return -1
@@ -680,14 +680,14 @@ function ZhanJiangHu_RefreshFlexState()
 	local nFlex = 0
 	local nHongFu = ZhanJiangHu_GetHongFuValue()
 	for i=1,g_ZhanJiangHu_MaxPage do
-		if(ZhanJiangHu_CheckDayHasOpen(i) == 1) then--ÊÇ·ñ¿ª·ÅÒ³Ç©
-			if(ZhanJiangHu_HasRewardForDay(i) == 1) then--µ±Ç°Ò³Ç©ÏÂÊÇ·ñ»¹ÓÐ»ý·Ö¿ÉÁìÈ¡
+		if(ZhanJiangHu_CheckDayHasOpen(i) == 1) then--??????
+			if(ZhanJiangHu_HasRewardForDay(i) == 1) then--??????????????
 				nFlex = 1
 			end
 		end
 	end
 	for i=1,table.getn(g_ZhanJiangHu_HongFuButtons) do
-		local state = ZhanJiangHu_GetHFRewardState(i)--ÊÇ·ñÁì¹ýÀÛ¼Æ»ý·Ö½±Àø
+		local state = ZhanJiangHu_GetHFRewardState(i)--??????????
 		if(nHongFu >= g_ZhanJiangHu_HongFuReward[i].NeedHongFu and state == 0) then
 			nFlex = 1
 		end

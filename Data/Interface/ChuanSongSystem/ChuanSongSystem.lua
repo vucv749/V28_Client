@@ -47,7 +47,7 @@ function ChuanSongSystem_OnEvent(event)
 			return;
 		end
 
-		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»òÕß±»É¾³ı£¬×Ô¶¯¹Ø±Õ
+		--Èç¹ûºÍNPCµÄ¾àÀë´óÓÚÒ»¶¨¾àÀë»ò ß±»É¾³ı£¬×Ô¶¯¹Ø± 
 		if(arg1 == "distance" and tonumber(arg2)>MAX_OBJ_DISTANCE or arg1=="destroy") then
 			ChuanSongSystem_Close()
 		end
@@ -61,76 +61,76 @@ function ChuanSongSystem_OnLoad()
 	end
 	
 	sceninfo1 = {
-		{str="ÂåÑôÉÌ»á",Num=ChuanSongSystem_goto1},
-		{str="´ó    Àí",Num=ChuanSongSystem_goto2},
-		{str="ËÕ    Öİ",Num=ChuanSongSystem_goto3},
-		{str="ËÕÖİÌú½³ÆÌ",Num=ChuanSongSystem_goto4},
-		{str="Â¥À¼¹Å³Ç",Num=ChuanSongSystem_goto5},
-		{str="ÊøºÓ¹ÅÕò",Num=ChuanSongSystem_goto6},
-		{str="ĞÇ    ËŞ",Num=ChuanSongSystem_goto7},
-		{str="åĞ    Ò£",Num=ChuanSongSystem_goto8},
-		{str="ÉÙ    ÁÖ",Num=ChuanSongSystem_goto9},
-		{str="Ìì    É½",Num=ChuanSongSystem_goto10},
-		{str="Ìì    Áú",Num=ChuanSongSystem_goto11},
-		{str="¶ë    áÒ",Num=ChuanSongSystem_goto12},
-		{str="Îä    µ±",Num=ChuanSongSystem_goto13},
-		{str="Ã÷    ½Ì",Num=ChuanSongSystem_goto14},
-		{str="Ø¤    °ï",Num=ChuanSongSystem_goto15},
+		{str="LÕc Dß½ng thß½ng hµi",Num=ChuanSongSystem_goto1},
+		{str="ĞÕi Lı",Num=ChuanSongSystem_goto2},
+		{str="Tô Châu",Num=ChuanSongSystem_goto3},
+		{str="Tô Châu thş rèn Phô",Num=ChuanSongSystem_goto4},
+		{str="Lâu Lan C± Thành",Num=ChuanSongSystem_goto5},
+		{str="Thúc Hà C± Tr¤n",Num=ChuanSongSystem_goto6},
+		{str="Tinh Túc",Num=ChuanSongSystem_goto7},
+		{str="Tiêu Dao",Num=ChuanSongSystem_goto8},
+		{str="Thi¬u Lâm",Num=ChuanSongSystem_goto9},
+		{str="Thiên S½n",Num=ChuanSongSystem_goto10},
+		{str="Thiên Long",Num=ChuanSongSystem_goto11},
+		{str="Nga Mi",Num=ChuanSongSystem_goto12},
+		{str="Võ Ğang",Num=ChuanSongSystem_goto13},
+		{str="Minh Giáo",Num=ChuanSongSystem_goto14},
+		{str="Cái Bang",Num=ChuanSongSystem_goto15},
 		--{str="#cff99ccÑ§Ï°ĞÂÊÖ¼¼ÄÜ",Num=ChuanSongSystem_goto16},
 	}
 
 	sceninfo2 = {
-		{str="±¦²Ø¶´Ò»²ã",Num=ChuanSongSystem_goto1},
-		{str="±¦²Ø¶´Èı²ã",Num=ChuanSongSystem_goto2},
-		{str="±¦²Ø¶´Îå²ã",Num=ChuanSongSystem_goto3},
-		{str="Ä¦ ÑÂ ¶´",Num=ChuanSongSystem_goto4},
-		{str="¹ÅÄ¹Ò»²ã",Num=ChuanSongSystem_goto5},
-		{str="¹ÅÄ¹Îå²ã",Num=ChuanSongSystem_goto6},
-		{str="¹ÅÄ¹¾Å²ã",Num=ChuanSongSystem_goto7},
-		{str="µØ¹¬Ò»²ã",Num=ChuanSongSystem_goto8},
-		{str="µØ¹¬¶ş²ã",Num=ChuanSongSystem_goto9},
-		{str="µØ¹¬Èı²ã",Num=ChuanSongSystem_goto10},
-		{str="ÃÔ    ¹¬",Num=ChuanSongSystem_goto11},
-		{str="Ëş    ¿Ë",Num=ChuanSongSystem_goto12},
-		{str="º¹ Ñª Áë",Num=ChuanSongSystem_goto13},
-		{str="»ğ Ñæ ¹È",Num=ChuanSongSystem_goto14},
+		{str="Bäo Tàng Ğµng T¥ng 1",Num=ChuanSongSystem_goto1},
+		{str="Bäo Tàng Ğµng T¥ng 3",Num=ChuanSongSystem_goto2},
+		{str="Bäo Tàng Ğµng T¥ng 5",Num=ChuanSongSystem_goto3},
+		{str="Ma Nhai Ğµng",Num=ChuanSongSystem_goto4},
+		{str="C± MÕc Nh¤t T¢ng",Num=ChuanSongSystem_goto5},
+		{str="C± MÕc Ngû T¢ng",Num=ChuanSongSystem_goto6},
+		{str="C± MÕc CØu T¢ng",Num=ChuanSongSystem_goto7},
+		{str="Ğ¸a Cung Nh¤t T¢ng",Num=ChuanSongSystem_goto8},
+		{str="Ğ¸a Cung Nh¸ T¢ng",Num=ChuanSongSystem_goto9},
+		{str="Ğ¸a Cung Tam T¢ng",Num=ChuanSongSystem_goto10},
+		{str="Mê Cung",Num=ChuanSongSystem_goto11},
+		{str="Ğáp Kh¡c",Num=ChuanSongSystem_goto12},
+		{str="Hãn Huyªt Lînh",Num=ChuanSongSystem_goto13},
+		{str="Hoä Di®m C¯c",Num=ChuanSongSystem_goto14},
 		--{str="#GÎŞÁ¿É½-ĞÂÊÖBOSS",Num=ChuanSongSystem_goto15},
 		--{str="#G¶Ø»Í-ĞÂÊÖBOSS",Num=ChuanSongSystem_goto16},
 	}
 
 	sceninfo3 = {
-		{str="#Y²İÔ­-±ØÇÀ",Num=ChuanSongSystem_goto1},
-		{str="#Y²ÔÉ½-±ØÇÀ",Num=ChuanSongSystem_goto2},
-		{str="#YÎäÒÄ-±ØÇÀ",Num=ChuanSongSystem_goto3},
-		{str="#YĞşÎäµº-±ØÇÀ",Num=ChuanSongSystem_goto4},
-		{str="Æó ¶ì Íõ",Num=ChuanSongSystem_goto5},
-		{str="¹¤»êÓ°Ïñ",Num=ChuanSongSystem_goto6},
-		{str="Ø¤°ïËïÁ¢Õß",Num=ChuanSongSystem_goto7},
-		{str="¶ëáÒÔ¬¹«×Ó",Num=ChuanSongSystem_goto8},
-		{str="Ã÷½Ì½ğÉÑ",Num=ChuanSongSystem_goto9},
-		{str="ÉÙÁÖÅíºî",Num=ChuanSongSystem_goto10},
-		{str="ĞÇËŞÈıÊ®Äï",Num=ChuanSongSystem_goto11},
-		{str="ÌìÉ½°×á¯",Num=ChuanSongSystem_goto12},
-		{str="Îäµ±ÃÏÃÁ",Num=ChuanSongSystem_goto13},
-		{str="åĞÒ£¼Ö´¨",Num=ChuanSongSystem_goto14},
-		{str="ÌìÁúÍõ¾ı",Num=ChuanSongSystem_goto15},
+		{str="#YTHäo Nguyên-T¤t Thß½ng",Num=ChuanSongSystem_goto1},
+		{str="#YTHß½ng S½n-T¤t Thß½ng",Num=ChuanSongSystem_goto2},
+		{str="#YV Di-T¤t Thß½ng",Num=ChuanSongSystem_goto3},
+		{str="#YHUy«n Võ Ğäo-T¤t Thß½ng",Num=ChuanSongSystem_goto4},
+		{str="Xí Nga Vß½ng",Num=ChuanSongSystem_goto5},
+		{str="Công H°n Änh Tßşng",Num=ChuanSongSystem_goto6},
+		{str="Cái Bang Tôn L§p Giä",Num=ChuanSongSystem_goto7},
+		{str="Nga Mi Viên Công TØ",Num=ChuanSongSystem_goto8},
+		{str="Minh Giáo Kim Thß¶ng",Num=ChuanSongSystem_goto9},
+		{str="Thiªu Lâm Bành H¥u",Num=ChuanSongSystem_goto10},
+		{str="Tinh Túc ba mß½i Nß½ng",Num=ChuanSongSystem_goto11},
+		{str="Thiên S½n BÕch S¥m",Num=ChuanSongSystem_goto12},
+		{str="Võ Ğang MÕnh Muµi",Num=ChuanSongSystem_goto13},
+		{str="Tiêu dao C± Xuyên",Num=ChuanSongSystem_goto14},
+		{str="Thiên Long Vß½ng Quân",Num=ChuanSongSystem_goto15},
 	}
 
 	sceninfo4 = {
-		{str="ËÎÁÉ±ß¾³",Num=ChuanSongSystem_goto1},
-		{str="»Æ½ğÖ®Á´",Num=ChuanSongSystem_goto2},
-		{str="Æå    ¾Ö",Num=ChuanSongSystem_goto3},
-		{str="õí    ¾Ï",Num=ChuanSongSystem_goto4},
-		{str="Ñà ×Ó Îë",Num=ChuanSongSystem_goto5},
-		{str="Æ® Ãì ·å",Num=ChuanSongSystem_goto6},
-		{str="Â¥À¼Ñ°±¦",Num=ChuanSongSystem_goto7},
+		{str="T¯ng Liêu Biên Cänh",Num=ChuanSongSystem_goto1},
+		{str="Kiªm Tr× Yêu Ma",Num=ChuanSongSystem_goto2},
+		{str="KÏ Cøc",Num=ChuanSongSystem_goto3},
+		{str="Xúc Cúc",Num=ChuanSongSystem_goto4},
+		{str="Yên TØ ‘",Num=ChuanSongSystem_goto5},
+		{str="Phiêu Mi­u Phong",Num=ChuanSongSystem_goto6},
+		{str="Lâu Lan t¥m bäo",Num=ChuanSongSystem_goto7},
 		
 	}
 
 	sceninfo5 = {
-		{str="#cFF0000Ê¥ÊŞÉ½Áú¹ê-±ØÕù",Num=ChuanSongSystem_goto1},
-		{str="#cFF0000Ê¥ÊŞÉ½Ïä×Ó-±ØÕù",Num=ChuanSongSystem_goto2},
-		{str="#cFF0000ÖØÂ¥ËªÓ°",Num=ChuanSongSystem_goto3},
+		{str="#cFF0000Thánh Thú S½n Long Quân-T¤t Tranh",Num=ChuanSongSystem_goto1},
+		{str="#cFF0000Thánh Thú S½n thùng-T¤t Tranh",Num=ChuanSongSystem_goto2},
+		{str="#cFF0000Trùng Lâu Sß½ng Änh",Num=ChuanSongSystem_goto3},
 	}
 
 	g_Frame_UnifiedXPosition = ChuanSongSystem_Frame:GetProperty("UnifiedXPosition");
@@ -219,7 +219,7 @@ end
 
 --=========================================================
 --¿ªÊ¼¹ØĞÄNPC£¬
---ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨Õâ¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
+--ÔÚ¿ªÊ¼¹ØĞÄÖ®Ç°ĞèÒªÏÈÈ·¶¨ â¸ö½çÃæÊÇ²»ÊÇÒÑ¾­ÓĞ¡°¹ØĞÄ¡±µÄNPC£¬
 --Èç¹ûÓĞµÄ»°£¬ÏÈÈ¡ÏûÒÑ¾­ÓĞµÄ¡°¹ØĞÄ¡±
 --=========================================================
 function BeginCareObject_ChuanSongSystem()
