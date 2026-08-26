@@ -1,0 +1,9 @@
+--MisDescBegin
+--½Å±¾ºÅ
+x200044_g_ScriptId = 200044
+
+--ÈÎÎñºÅ
+x200044_g_MissionId = 37
+
+
+--MisDescEnd
