@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="ShenBingFB_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,220.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-330.000000},{0.500000,90.000000}}"/>
+    <Event Name="Hidden" Function="ShenBingFB_OnHiden()"/>
+
+    <Window Type="TLBB_MainFrame0" Name="ShenBingFB">
+      <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,210.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_DragTitle" Name="ShenBingFB_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-64.000000},{0.000000,26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,9.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="Title" />
+        <Property Name="DragTarget" Value="ShenBingFB_Frame" />
+        <Property Name="Tooltip" Value="#{SBRC_20230627_172}"/>
+        <Property Name="Text" Value="#{SBRC_20230627_171}" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="ShenBingFB_Image">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,13.000000}}"/>
+        <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+        <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+        <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+        <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>
+        <Event Name="Clicked" Function="ShenBingFB_OpenMini()" />
+      </Window>
+      <Window Type="TLBB_ButtonHelp" Name="ShenBingFB_Help">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-276.000000},{0.000000,13.000000}}"/>
+        <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*ShenBingFB&quot;);'/>
+      </Window>
+      <Window Type="DefaultWindow" Name="ShenBingFB_Frame_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,33.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Window Type="TLBB_SimpleText" Name="ShenBingFB_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TLBB_Frame_Lace4" Name="ShenBingFB_Mini_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,210.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0,66.000000},{0,9.000000}}"/>
+      <Property Name="AttachEnabled" Value="true" />
+      <Window Type="TLBB_DragTitle" Name="ShenBingFB_Mini_DragTitle">
+        <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,3.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.0,-45.000000},{0.000000,20.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="DragTarget" Value="ShenBingFB_Frame" />
+        <Window Type="TLBB_SimpleText" Name="ShenBingFB_Mini_PageHeader">
+          <Property Name="Position" Value="x:0.0 y:0.0" />
+          <Property Name="Size" Value="w:1.0 h:1.0" />
+          <Property Name="Font" Value="YouYuan11.25" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{SBRC_20230627_171}" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ShenBingFB_Mini">
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{1.0,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0.000000}}"/>
+        <Window Type="TLBB_ButtonNULL" Name="ShenBingFB_Mini_Small">
+          <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-8.000000}}"/>
+          <Property Name="PushedImage" Value="set:SongLiao02 image:Up_Pushed"/>
+          <Property Name="NormalImage" Value="set:SongLiao02 image:Up_Normal"/>
+          <Property Name="HoverImage" Value="set:SongLiao02 image:Up_Hover"/>
+          <Property Name="DisabledImage" Value="set:SongLiao02 image:Up_Disabled"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Tooltip" Value="#{SBRC_20230627_173}"/>
+          <Event Name="Clicked" Function="ShenBingFB_Mini_Small()"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

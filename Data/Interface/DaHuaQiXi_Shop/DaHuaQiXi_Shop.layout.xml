@@ -1,0 +1,2159 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="DaHuaQiXi_Shop_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,720.000000},{0.000000,460.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-360.000000},{0.500000,-230.000000}}"/>
+    <Event Name="Hidden" Function="DaHuaQiXi_Shop_OnHidden();"/>
+    <Window Type="TLBB_HeroTitle01" Name="DaHuaQiXi_Shop_DragTitle_Bk">
+      <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,-2.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="DaHuaQiXi_Shop_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-200.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,4.000000}}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="Text" Value="#{DHSD_20240522_7}" />
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="DaHuaQiXi_Shop_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="DaHuaQiXi_Shop_Help2">
+      <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,66.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="PushedImage" Value="set:CommonFrame36 image:ButtonHelpNew_Pushed"/>
+      <Property Name="NormalImage" Value="set:CommonFrame36 image:ButtonHelpNew_Normal"/>
+      <Property Name="HoverImage" Value="set:CommonFrame36 image:ButtonHelpNew_Hover"/>
+      <Property Name="DisabledImage" Value="set:CommonFrame36 image:ButtonHelpNew_Disabled"/>
+      <Event Name="Clicked" Function="DaHuaQiXi_Shop_Help_Clicked();"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose2" Name="DaHuaQiXi_Shop_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,9.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="DaHuaQiXi_Shop_OnHiden();"/>
+    </Window>
+
+
+    <Window Type="TLBB_HeroFrame01" Name="DaHuaQiXi_Shop_Client_Bk">
+      <Property Name="UnifiedSize" Value="{{0.000000,720.000000},{0.000000,460.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="AttachEnabled" Value="True"/>
+      <Window Type="TLBB_HeroLace01" Name="DaHuaQiXi_Shop_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,26.000000}}"/>
+        <Window Type="DefaultWindow" Name="DaHuaQiXi_Shop_ItemClient">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,470.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_Frame_Lace2" Name="DaHuaQiXi_Shop_Intro_TextBK">
+            <Property Name="UnifiedSize" Value="{{1.000000,-18.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,10.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_Shop_Intro_Text">
+              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+              <Property Name="TextColor" Value="FFFFF263"/>
+              <Property Name="Text" Value="#{DHSD_20240522_8}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="DaHuaQiXi_Shop_ItemList">
+            <Property Name="UnifiedSize" Value="{{0.000000,698.000000},{0.000000,312.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-349.000000},{0.000000,80.000000}}"/>
+            <Window Type="TLBB_Frame_Lace2" Name="DaHuaQiXi_ShopItem1">
+              <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+
+              <Window Type="TLBB_ButtonNULL" Name="DaHuaQiXi_ShopItem1Btn">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ActionButton" Name="DaHuaQiXi_ShopItem1_Icon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem1_NumBK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Pretty01 image:IconNumberBK"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem1_Icon_Discount">
+                    <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+                  </Window>
+                  <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem1_Num">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-46.000000}}"/>
+                    <Property Name="Text" Value="99"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                  <Window Type="TLBB_ButtonNULL" Name="DaHuaQiXi_ShopItem1_Eye">
+                    <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,32.000000}}"/>
+                    <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_EyeDis"/>
+                    <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_EyeNor"/>
+                    <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_EyeHover"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                    <Event Name="Clicked" Function="DaHuaQiXi_Shop_OnView();"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem1_IconMark">
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem1_IconMark1">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem1_IconMark2">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem1_IconMark3">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem1_Discount">
+                <Property Name="UnifiedSize" Value="{{0.000000,39.000000},{0.000000,17.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,157.000000},{0.000000,7.000000}}"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Text" Value="#{NDSD_20230510_13}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="Font" Value="SongTiBmp12"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem1_DiscountBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,53.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,143.000000},{0.000000,6.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Discount_BK"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem1_CostSign">
+                <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Small_Yuanbao"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem1_Cost">
+                <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_14}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem1_Name">
+                <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,11.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_15}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace2" Name="DaHuaQiXi_ShopItem2">
+              <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,234.000000},{0.000000,2.000000}}"/>
+
+              <Window Type="TLBB_ButtonNULL" Name="DaHuaQiXi_ShopItem2Btn">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ActionButton" Name="DaHuaQiXi_ShopItem2_Icon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem2_Icon_Discount">
+                    <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem2_NumBK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Pretty01 image:IconNumberBK"/>
+                  </Window>
+                  <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem2_Num">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-46.000000}}"/>
+                    <Property Name="Text" Value="99"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                  <Window Type="TLBB_ButtonNULL" Name="DaHuaQiXi_ShopItem2_Eye">
+                    <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,32.000000}}"/>
+                    <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_EyeDis"/>
+                    <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_EyeNor"/>
+                    <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_EyeHover"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                    <Event Name="Clicked" Function="DaHuaQiXi_Shop_OnView();"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem2_IconMark">
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem2_IconMark1">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem2_IconMark2">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem2_IconMark3">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem2_Discount">
+                <Property Name="UnifiedSize" Value="{{0.000000,39.000000},{0.000000,17.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,157.000000},{0.000000,7.000000}}"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Text" Value="#{NDSD_20230510_13}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="Font" Value="SongTiBmp12"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem2_DiscountBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,53.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,143.000000},{0.000000,6.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Discount_BK"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem2_CostSign">
+                <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Small_Yuanbao"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem2_Cost">
+                <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_14}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem2_Name">
+                <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,11.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_15}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace2" Name="DaHuaQiXi_ShopItem3">
+              <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,466.000000},{0.000000,2.000000}}"/>
+
+              <Window Type="TLBB_ButtonNULL" Name="DaHuaQiXi_ShopItem3Btn">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ActionButton" Name="DaHuaQiXi_ShopItem3_Icon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem3_Icon_Discount">
+                    <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem3_NumBK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Pretty01 image:IconNumberBK"/>
+                  </Window>
+                  <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem3_Num">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-46.000000}}"/>
+                    <Property Name="Text" Value="99"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem3_IconMark">
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem3_IconMark1">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem3_IconMark2">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem3_IconMark3">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem3_Discount">
+                <Property Name="UnifiedSize" Value="{{0.000000,39.000000},{0.000000,17.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,157.000000},{0.000000,7.000000}}"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Text" Value="#{NDSD_20230510_13}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="Font" Value="SongTiBmp12"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem3_DiscountBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,53.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,143.000000},{0.000000,6.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Discount_BK"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem3_CostSign">
+                <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Small_Yuanbao"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem3_Cost">
+                <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_14}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem3_Name">
+                <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,11.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_15}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace2" Name="DaHuaQiXi_ShopItem4">
+              <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,64.000000}}"/>
+
+              <Window Type="TLBB_ButtonNULL" Name="DaHuaQiXi_ShopItem4Btn">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ActionButton" Name="DaHuaQiXi_ShopItem4_Icon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem4_Icon_Discount">
+                    <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem4_NumBK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Pretty01 image:IconNumberBK"/>
+                  </Window>
+                  <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem4_Num">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-46.000000}}"/>
+                    <Property Name="Text" Value="99"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem4_IconMark">
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem4_IconMark1">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem4_IconMark2">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem4_IconMark3">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem4_Discount">
+                <Property Name="UnifiedSize" Value="{{0.000000,39.000000},{0.000000,17.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,157.000000},{0.000000,7.000000}}"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Text" Value="#{NDSD_20230510_13}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="Font" Value="SongTiBmp12"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem4_DiscountBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,53.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,143.000000},{0.000000,6.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Discount_BK"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem4_CostSign">
+                <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Small_Yuanbao"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem4_Cost">
+                <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_14}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem4_Name">
+                <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,11.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_15}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace2" Name="DaHuaQiXi_ShopItem5">
+              <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,234.000000},{0.000000,64.000000}}"/>
+
+              <Window Type="TLBB_ButtonNULL" Name="DaHuaQiXi_ShopItem5Btn">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ActionButton" Name="DaHuaQiXi_ShopItem5_Icon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem5_Icon_Discount">
+                    <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem5_NumBK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Pretty01 image:IconNumberBK"/>
+                  </Window>
+                  <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem5_Num">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-46.000000}}"/>
+                    <Property Name="Text" Value="99"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem5_IconMark">
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem5_IconMark1">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem5_IconMark2">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem5_IconMark3">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem5_Discount">
+                <Property Name="UnifiedSize" Value="{{0.000000,39.000000},{0.000000,17.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,157.000000},{0.000000,7.000000}}"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Text" Value="#{NDSD_20230510_13}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="Font" Value="SongTiBmp12"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem5_DiscountBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,53.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,143.000000},{0.000000,6.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Discount_BK"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem5_CostSign">
+                <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Small_Yuanbao"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem5_Cost">
+                <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_14}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem5_Name">
+                <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,11.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_15}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace2" Name="DaHuaQiXi_ShopItem6">
+              <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,466.000000},{0.000000,64.000000}}"/>
+
+              <Window Type="TLBB_ButtonNULL" Name="DaHuaQiXi_ShopItem6Btn">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ActionButton" Name="DaHuaQiXi_ShopItem6_Icon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem6_Icon_Discount">
+                    <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem6_NumBK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Pretty01 image:IconNumberBK"/>
+                  </Window>
+                  <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem6_Num">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-46.000000}}"/>
+                    <Property Name="Text" Value="99"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem6_IconMark">
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem6_IconMark1">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem6_IconMark2">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem6_IconMark3">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem6_Discount">
+                <Property Name="UnifiedSize" Value="{{0.000000,39.000000},{0.000000,17.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,157.000000},{0.000000,7.000000}}"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Text" Value="#{NDSD_20230510_13}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="Font" Value="SongTiBmp12"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem6_DiscountBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,53.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,143.000000},{0.000000,6.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Discount_BK"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem6_CostSign">
+                <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Small_Yuanbao"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem6_Cost">
+                <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_14}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem6_Name">
+                <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,11.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_15}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace2" Name="DaHuaQiXi_ShopItem7">
+              <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,126.000000}}"/>
+
+              <Window Type="TLBB_ButtonNULL" Name="DaHuaQiXi_ShopItem7Btn">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ActionButton" Name="DaHuaQiXi_ShopItem7_Icon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem7_Icon_Discount">
+                    <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem7_NumBK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Pretty01 image:IconNumberBK"/>
+                  </Window>
+                  <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem7_Num">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-46.000000}}"/>
+                    <Property Name="Text" Value="99"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem7_IconMark">
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem7_IconMark1">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem7_IconMark2">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem7_IconMark3">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem7_Discount">
+                <Property Name="UnifiedSize" Value="{{0.000000,39.000000},{0.000000,17.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,157.000000},{0.000000,7.000000}}"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Text" Value="#{NDSD_20230510_13}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="Font" Value="SongTiBmp12"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem7_DiscountBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,53.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,143.000000},{0.000000,6.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Discount_BK"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem7_CostSign">
+                <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Small_Yuanbao"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem7_Cost">
+                <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_14}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem7_Name">
+                <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,11.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_15}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace2" Name="DaHuaQiXi_ShopItem8">
+              <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,234.000000},{0.000000,126.000000}}"/>
+
+              <Window Type="TLBB_ButtonNULL" Name="DaHuaQiXi_ShopItem8Btn">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ActionButton" Name="DaHuaQiXi_ShopItem8_Icon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem8_Icon_Discount">
+                    <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem8_NumBK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Pretty01 image:IconNumberBK"/>
+                  </Window>
+                  <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem8_Num">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-46.000000}}"/>
+                    <Property Name="Text" Value="99"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem8_IconMark">
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem8_IconMark1">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem8_IconMark2">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem8_IconMark3">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem8_Discount">
+                <Property Name="UnifiedSize" Value="{{0.000000,39.000000},{0.000000,17.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,157.000000},{0.000000,7.000000}}"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Text" Value="#{NDSD_20230510_13}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="Font" Value="SongTiBmp12"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem8_DiscountBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,53.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,143.000000},{0.000000,6.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Discount_BK"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem8_CostSign">
+                <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Small_Yuanbao"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem8_Cost">
+                <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_14}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem8_Name">
+                <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,11.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_15}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace2" Name="DaHuaQiXi_ShopItem9">
+              <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,466.000000},{0.000000,126.000000}}"/>
+
+              <Window Type="TLBB_ButtonNULL" Name="DaHuaQiXi_ShopItem9Btn">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ActionButton" Name="DaHuaQiXi_ShopItem9_Icon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem9_Icon_Discount">
+                    <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem9_NumBK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Pretty01 image:IconNumberBK"/>
+                  </Window>
+                  <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem9_Num">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-46.000000}}"/>
+                    <Property Name="Text" Value="99"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem9_IconMark">
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem9_IconMark1">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem9_IconMark2">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem9_IconMark3">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem9_Discount">
+                <Property Name="UnifiedSize" Value="{{0.000000,39.000000},{0.000000,17.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,157.000000},{0.000000,7.000000}}"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Text" Value="#{NDSD_20230510_13}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="Font" Value="SongTiBmp12"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem9_DiscountBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,53.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,143.000000},{0.000000,6.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Discount_BK"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem9_CostSign">
+                <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Small_Yuanbao"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem9_Cost">
+                <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_14}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem9_Name">
+                <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,11.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_15}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace2" Name="DaHuaQiXi_ShopItem10">
+              <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,188.000000}}"/>
+
+              <Window Type="TLBB_ButtonNULL" Name="DaHuaQiXi_ShopItem10Btn">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ActionButton" Name="DaHuaQiXi_ShopItem10_Icon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem10_Icon_Discount">
+                    <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem10_NumBK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Pretty01 image:IconNumberBK"/>
+                  </Window>
+                  <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem10_Num">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-46.000000}}"/>
+                    <Property Name="Text" Value="99"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem10_IconMark">
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem10_IconMark1">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem10_IconMark2">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem10_IconMark3">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem10_Discount">
+                <Property Name="UnifiedSize" Value="{{0.000000,39.000000},{0.000000,17.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,157.000000},{0.000000,7.000000}}"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Text" Value="#{NDSD_20230510_13}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="Font" Value="SongTiBmp12"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem10_DiscountBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,53.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,143.000000},{0.000000,6.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Discount_BK"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem10_CostSign">
+                <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Small_Yuanbao"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem10_Cost">
+                <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_14}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem10_Name">
+                <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,11.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_15}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace2" Name="DaHuaQiXi_ShopItem11">
+              <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,234.000000},{0.000000,188.000000}}"/>
+
+              <Window Type="TLBB_ButtonNULL" Name="DaHuaQiXi_ShopItem11Btn">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ActionButton" Name="DaHuaQiXi_ShopItem11_Icon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem11_Icon_Discount">
+                    <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem11_NumBK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Pretty01 image:IconNumberBK"/>
+                  </Window>
+                  <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem11_Num">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-46.000000}}"/>
+                    <Property Name="Text" Value="99"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem11_IconMark">
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem11_IconMark1">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem11_IconMark2">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem11_IconMark3">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem11_Discount">
+                <Property Name="UnifiedSize" Value="{{0.000000,39.000000},{0.000000,17.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,157.000000},{0.000000,7.000000}}"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Text" Value="#{NDSD_20230510_13}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="Font" Value="SongTiBmp12"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem11_DiscountBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,53.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,143.000000},{0.000000,6.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Discount_BK"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem11_CostSign">
+                <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Small_Yuanbao"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem11_Cost">
+                <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_14}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem11_Name">
+                <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,11.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_15}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace2" Name="DaHuaQiXi_ShopItem12">
+              <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,466.000000},{0.000000,188.000000}}"/>
+
+              <Window Type="TLBB_ButtonNULL" Name="DaHuaQiXi_ShopItem12Btn">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ActionButton" Name="DaHuaQiXi_ShopItem12_Icon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem12_Icon_Discount">
+                    <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem12_NumBK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Pretty01 image:IconNumberBK"/>
+                  </Window>
+                  <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem12_Num">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-46.000000}}"/>
+                    <Property Name="Text" Value="99"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem12_IconMark">
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem12_IconMark1">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem12_IconMark2">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem12_IconMark3">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem12_Discount">
+                <Property Name="UnifiedSize" Value="{{0.000000,39.000000},{0.000000,17.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,157.000000},{0.000000,7.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_13}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="Font" Value="SongTiBmp12"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem12_DiscountBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,53.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,143.000000},{0.000000,6.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Discount_BK"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem12_CostSign">
+                <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Small_Yuanbao"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem12_Cost">
+                <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_14}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem12_Name">
+                <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,11.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_15}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace2" Name="DaHuaQiXi_ShopItem13">
+              <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,250.000000}}"/>
+
+              <Window Type="TLBB_ButtonNULL" Name="DaHuaQiXi_ShopItem13Btn">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ActionButton" Name="DaHuaQiXi_ShopItem13_Icon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem13_Icon_Discount">
+                    <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem13_NumBK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Pretty01 image:IconNumberBK"/>
+                  </Window>
+                  <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem13_Num">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-46.000000}}"/>
+                    <Property Name="Text" Value="99"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem13_IconMark">
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem13_IconMark1">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem13_IconMark2">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem13_IconMark3">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem13_Discount">
+                <Property Name="UnifiedSize" Value="{{0.000000,39.000000},{0.000000,17.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,157.000000},{0.000000,7.000000}}"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Text" Value="#{NDSD_20230510_13}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="Font" Value="SongTiBmp12"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem13_DiscountBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,53.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,143.000000},{0.000000,6.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Discount_BK"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem13_CostSign">
+                <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Small_Yuanbao"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem13_Cost">
+                <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_14}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem13_Name">
+                <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,11.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_15}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace2" Name="DaHuaQiXi_ShopItem14">
+              <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,234.000000},{0.000000,250.000000}}"/>
+
+              <Window Type="TLBB_ButtonNULL" Name="DaHuaQiXi_ShopItem14Btn">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ActionButton" Name="DaHuaQiXi_ShopItem14_Icon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem14_Icon_Discount">
+                    <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem14_NumBK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Pretty01 image:IconNumberBK"/>
+                  </Window>
+                  <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem14_Num">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-46.000000}}"/>
+                    <Property Name="Text" Value="99"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem14_IconMark">
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem14_IconMark1">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem14_IconMark2">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem14_IconMark3">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem14_Discount">
+                <Property Name="UnifiedSize" Value="{{0.000000,39.000000},{0.000000,17.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,157.000000},{0.000000,7.000000}}"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Text" Value="#{NDSD_20230510_13}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="Font" Value="SongTiBmp12"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem14_DiscountBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,53.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,143.000000},{0.000000,6.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Discount_BK"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem14_CostSign">
+                <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Small_Yuanbao"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem14_Cost">
+                <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_14}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem14_Name">
+                <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,11.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_15}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace2" Name="DaHuaQiXi_ShopItem15">
+              <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,466.000000},{0.000000,250.000000}}"/>
+
+              <Window Type="TLBB_ButtonNULL" Name="DaHuaQiXi_ShopItem15Btn">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ActionButton" Name="DaHuaQiXi_ShopItem15_Icon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem15_Icon_Discount">
+                    <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem15_NumBK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Pretty01 image:IconNumberBK"/>
+                  </Window>
+                  <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem15_Num">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-46.000000}}"/>
+                    <Property Name="Text" Value="99"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                  <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem15_IconMark">
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                  </Window>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem15_IconMark1">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem15_IconMark2">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem15_IconMark3">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,2.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem15_Discount">
+                <Property Name="UnifiedSize" Value="{{0.000000,39.000000},{0.000000,17.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,157.000000},{0.000000,7.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_13}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="Font" Value="SongTiBmp12"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem15_DiscountBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,53.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,143.000000},{0.000000,6.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Discount_BK"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_ShopItem15_CostSign">
+                <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Image" Value="set:Pretty01 image:Small_Yuanbao"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem15_Cost">
+                <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,39.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_14}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_ShopItem15_Name">
+                <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,11.000000}}"/>
+                <Property Name="Text" Value="#{NDSD_20230510_15}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="DaHuaQiXi_Shop_CurrencyClient1">
+          <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,25.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,466.000000},{1.000000,-34.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <!-- <Window Type="TLBB_ButtonCommon2" Name="DaHuaQiXi_Shop_Buy">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-11.000000}}"/>
+            <Property Name="Text" Value="#{HYCT_20210629_106}"/>
+            <Event Name="Clicked" Function="DaHuaQiXi_Shop_CurrencyBuy();"/>
+          </Window> -->
+          <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_Shop_CurrencyIcon1">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:DaHua_Guide image:DaHua_Shop_Icon"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_Shop_Currency1">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,4.000000}}"/>
+            <Property Name="Tooltip" Value="#{DHSD_20240522_20}"/>
+            <Property Name="Text" Value="#{DHSD_20240522_17}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DaHuaQiXi_Shop_CurrencyIcon2">
+            <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,187.000000},{0.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:DaHuaQiXi_Shop image:YuanYe_Mid"/>
+          </Window>
+          <Window Type="TLBB_ButtonCommon11" Name="DaHuaQiXi_Shop_Currency2_buy">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.500000,-12.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Tooltip" Value="#{DHSD_20240522_14}"/>
+            <Property Name="Text" Value="#{DHSD_20240522_87}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="DaHuaQiXi_Shop_CurrencyBuy();"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_Shop_Currency2">
+          <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.000000,-30.000000}}"/>
+          <Property Name="Tooltip" Value="#{DHSD_20240522_89}"/>
+          <Property Name="Text" Value="#{DHSD_20240522_88}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon11" Name="DaHuaQiXi_Shop_BulkBuy">
+          <Property Name="Visible" Value="False"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,25.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{1.000000,-34.000000}}"/>
+          <Property Name="Text" Value="#{INTERFACE_XML_489}" />
+          <Event Name="Clicked" Function="DaHuaQiXi_Shop_MultiBuy();"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="DaHuaQiXi_Shop_BottomClient">
+          <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-30.000000}}"/>
+          <Property Name="Visible" Value="False"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_ButtonCommon" Name="DaHuaQiXi_Shop_UpPage">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-96.000000},{0.500000,-12.000000}}"/>
+            <Property Name="Text" Value="#{DHSD_20240522_85}" />
+            <Event Name="Clicked" Function="DaHuaQiXi_Shop_PageUp();"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHuaQiXi_Shop_CurrentlyPage">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.500000,-12.000000}}"/>
+            <Property Name="Text" Value="#{DHSD_20240522_59}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="DaHuaQiXi_Shop_DownPage">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,32.000000},{0.500000,-12.000000}}"/>
+            <Property Name="Text" Value="#{DHSD_20240522_86}" />
+            <Event Name="Clicked" Function="DaHuaQiXi_Shop_PageDown();"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection2" Name="DoublePK_Over_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,320.000000},{0.000000,240.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-160.000000},{0.220000,0.000000}}"/>
+    <Event Name="Hidden" Function="DoublePK_Over_Clicked_Close();"/>
+    <Window Type="TLBB_DragTitle" Name="DoublePK_Over_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Text" Value="#{SRPK_230331_183}"/>
+      <Property Name="VertFormatting" Value="VertCentred"/>
+      <Property Name="DragTarget" Value="DoublePK_Over_Frame"/>
+    </Window>
+    <Window Type="TLBB_Affection_ButtonClose" Name="DoublePK_Over_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,10.000000}}"/>
+      <Event Name="Clicked" Function="DoublePK_Over_Clicked_Close();"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="DoublePK_Over_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="DoublePK_Over_Fight">
+        <Property Name="UnifiedSize" Value="{{0.000000,338.000000},{0.000000,69.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-169.000000},{0.000000,0.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:Makefriends image:SB"/>
+        <Property Name="Image" Value="set:Makefriends image:SL"/>
+        <Property Name="Image" Value="set:Makefriends image:PJ"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_Affection_TimeBK" Name="DoublePK_Over_TimeBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,70.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DoublePK_Over_Text1">
+        <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-140.000000},{0.000000,69.000000}}"/>
+        <Property Name="Text" Value="#{SRPK_230331_184}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DoublePK_Over_Text2">
+        <Property Name="UnifiedSize" Value="{{0.000000,260.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-130.000000},{0.000000,100.000000}}"/>
+        <Property Name="Text" Value="#{SRPK_230331_189}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DoublePK_Over_Text3">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,76.000000}}"/>
+        <Property Name="Text" Value="#{SRPK_230331_189}"/>
+        <Property Name="Visible" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_Affection_ButtonCommon" Name="DoublePK_Over_OK">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-36.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Text" Value="#{SRPK_230331_190}"/>
+        <Event Name="Clicked" Function="DoublePK_Over_Clicked_Close();"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

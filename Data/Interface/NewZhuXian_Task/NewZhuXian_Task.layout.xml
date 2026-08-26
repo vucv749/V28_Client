@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrameNULL" Name="NewZhuXian_Task_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,780.000000},{0.000000,550.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-390.000000},{0.500000,-270.500000}}"/>
+        <Window Type="TLBB_DragTitle" Name="NewZhuXian_Task_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="NewZhuXian_Task_Frame" />
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewZhuXian_Task_Close">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{0.000000,44.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="PushedImage" Value="set:NewZhuXian_Task image:NewZhuXian_ClosePush"/>
+          <Property Name="NormalImage" Value="set:NewZhuXian_Task image:NewZhuXian_CloseNor"/>
+          <Property Name="HoverImage" Value="set:NewZhuXian_Task image:NewZhuXian_CloseHover"/>
+          <Property Name="DisabledImage" Value="set:NewZhuXian_Task image:NewZhuXian_ClosePush"/>
+            <Event Name="Clicked" Function="NewZhuXian_Task_OnHiden();" />
+        </Window>
+      <Window Type="DefaultWindow" Name="NewZhuXian_Task_background_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,780.000000},{0.000000,550.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="NewZhuXian_Task_BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,780.000000},{0.000000,550.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:NewZhuXian_Task image:NewZhuXian_Xin"/>
+        </Window>
+      </Window>
+        <Window Type="DefaultWindow" Name="NewZhuXian_Task_Function_Frame">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:36.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}" />
+            <Window Type="TLBB_ButtonNULL" Name="NewZhuXian_Task_QianWang">
+              <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,214.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.000000,-230.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="PushedImage" Value="set:NewZhuXian_Task image:NewZhuXian_GoPush"/>
+              <Property Name="NormalImage" Value="set:NewZhuXian_Task image:NewZhuXian_GoNor"/>
+              <Property Name="HoverImage" Value="set:NewZhuXian_Task image:NewZhuXian_GoHover"/>
+              <Property Name="DisabledImage" Value="set:NewZhuXian_Task image:NewZhuXian_GoPush"/>
+               <Event Name="Clicked" Function="NewZhuXian_Task_Clicked()" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

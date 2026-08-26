@@ -1,0 +1,319 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="MenPaiFirstOne_Progress_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,526.000000},{0.000000,180.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{1.000000,-560.000000},{1.00000,-300.000000}}" />
+    <Window Type="DefaultWindow" Name="MenPaiFirstOne_Progress_FrameBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-18.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+      <Window Type="TLBB_DragTitle" Name="MenPaiFirstOne_Progress_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="Title" />
+        <Property Name="DragTarget" Value="MenPaiFirstOne_Progress_Frame" />
+        <Property Name="Text" Value="#{DYRCN_220427_10}" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="MenPaiFirstOne_Progress_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+        <Event Name="Clicked" Function="MenPaiFirstOne_Progress_CloseWindow()" />
+        <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+        <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+        <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+        <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+      </Window>
+      <Window Type="TLBB_ButtonHelp" Name="MenPaiFirstOne_Progress_Help">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_Progress_BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,510.000000},{0.000000,134.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Image" Value="set:MenPaiFirstOne01 image:MenPaiFirstOne_BK" />
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_Progress_Team1Win">
+        <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,88.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Win" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_Progress_Team2Win">
+        <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,88.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,0.000000}}" />
+        <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Win"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_Progress_Team1Draw">
+        <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,88.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Ping"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Visible" Value="False"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_Progress_Team2Draw">
+        <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,88.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,0.000000}}" />
+        <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Ping"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Visible" Value="False"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_Progress_Team1Fail">
+        <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,88.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Lost"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_Progress_Team2Fail">
+        <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,88.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,0.000000}}" />
+        <Property Name="Image" Value="set:HSLJ_01 image:HSLJ_Lost"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="MenPaiFirstOne_Progress_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="DefaultWindow" Name="MenPaiFirstOne_Progress_Client2">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,54.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,36.000000}}" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="DefaultWindow" Name="MenPaiFirstOne_Progress_LeftBK">
+          <Property Name="UnifiedSize" Value="{{0.500000,-5.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}" />
+          <Window Type="DefaultWindow" Name="MenPaiFirstOne_Progress_LeftList_Title">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Event Name="HeaderSegmentClicked" Function="" />
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Progress_LeftList_Title1">
+              <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.000000,0.000000}}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="Text" Value="#{DYRCN_220427_13}" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Progress_LeftList_Title2">
+              <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.550000,0.000000},{0.000000,0.000000}}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="Text" Value="#{DYRCN_220427_14}" />
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="MenPaiFirstOne_Progress_Left">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,22.000000}}" />
+            <Property Name="RiseOnClick" Value="True" />
+            <Window Type="DefaultWindow" Name="MenPaiFirstOne_Progress_Left1All">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,31.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+              <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_Progress_Left_1">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="False" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_ButtonNULL" Name="MenPaiFirstOne_Progress_Left_1_Click">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Event Name="MouseLClick" Function=""/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Progress_Left1Name">
+                  <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.000000,4.000000}}" />
+                  <Property Name="MouseMoveHollow" Value="True" />
+                  <Property Name="MouseHollow" Value="True" />
+                  <Property Name="Text" Value="#{DYRCN_220427_15}" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Progress_Left1Score">
+                  <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.550000,0.000000},{0.000000,4.000000}}" />
+                  <Property Name="MouseMoveHollow" Value="True" />
+                  <Property Name="MouseHollow" Value="True" />
+                  <Property Name="Text" Value="#{DYRCN_220427_16}" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                </Window>
+              </Window>
+              <Window Type="DefaultWindow" Name="MenPaiFirstOne_Progress_Left1PlayerHPBK">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Window Type="DefaultWindow" Name="MenPaiFirstOne_Progress_Left1PlayerHPBK2">
+                  <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,10.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,20.000000}}"/>
+                  <Property Name="MouseHollow" Value="True" />
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Window Type="TLBB_ProgressPropertyHRed" Name="MenPaiFirstOne_Progress_Left1PlayerHP">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,5.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                    <Property Name="CurrentProgress" Value="1.0" />
+                    <Property Name="EffectColor" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+                    <Property Name="EffectColorLevel" Value="index:0 tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+                    <Property Name="MoveSpeed" Value="1" />
+                    <Property Name="MouseHollow" Value="True" />
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                  </Window>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="MenPaiFirstOne_Progress_RightBK">
+          <Property Name="UnifiedSize" Value="{{0.500000,-5.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,1.000000},{0.000000,0.000000}}"/>
+          <Window Type="DefaultWindow" Name="MenPaiFirstOne_Progress_RightList_Title">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+            <Property Name="RiseOnClick" Value="False" />
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Progress_RightList_Title1">
+              <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.000000,0.000000}}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="Text" Value="#{DYRCN_220427_13}" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Progress_RightList_Title2">
+              <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.550000,0.000000},{0.000000,0.000000}}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="Text" Value="#{DYRCN_220427_14}" />
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="MenPaiFirstOne_Progress_Right">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,22.000000}}"/>
+            <Property Name="RiseOnClick" Value="True" />
+            <Window Type="DefaultWindow" Name="MenPaiFirstOne_Progress_Right1All">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,31.000000}}"/>
+              <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_Progress_Right_1">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="False" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_ButtonNULL" Name="MenPaiFirstOne_Progress_Right_1_Click">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Event Name="MouseLClick" Function=""/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Progress_Right1Name">
+                  <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.000000,4.000000}}" />
+                  <Property Name="MouseMoveHollow" Value="True" />
+                  <Property Name="MouseHollow" Value="True" />
+                  <Property Name="Text" Value="#{DYRCN_220427_15}" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Progress_Right1Score">
+                  <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{0.000000,20.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.550000,0.000000},{0.000000,4.000000}}" />
+                  <Property Name="MouseMoveHollow" Value="True" />
+                  <Property Name="MouseHollow" Value="True" />
+                  <Property Name="Text" Value="#{DYRCN_220427_16}" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                </Window>
+              </Window>
+              <Window Type="DefaultWindow" Name="MenPaiFirstOne_Progress_Right1PlayerHPBK">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Window Type="DefaultWindow" Name="MenPaiFirstOne_Progress_Right1PlayerHPBK2">
+                  <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,10.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,20.000000}}"/>
+                  <Property Name="MouseHollow" Value="True" />
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Window Type="TLBB_ProgressPropertyHRed" Name="MenPaiFirstOne_Progress_Right1PlayerHP">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,5.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                    <Property Name="CurrentProgress" Value="1.0" />
+                    <Property Name="EffectColor" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+                    <Property Name="EffectColorLevel" Value="index:0 tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+                    <Property Name="MoveSpeed" Value="1" />
+                    <Property Name="MouseHollow" Value="True" />
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                  </Window>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="MenPaiFirstOne_Progress_Time">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-40.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Progress_Leave">
+          <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-98.000000},{1.000000,-28.000000}}"/>
+          <Property Name="Text" Value="#{DYRCN_220427_17}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Progress_WatchText">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,44.000000},{1.000000,-28.000000}}"/>
+          <Property Name="Text" Value="00:00"/>
+          <Property Name="TextColor" Value="FFFFFF00"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StopWatch" Name="MenPaiFirstOne_Progress_TimeWatch">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,44.000000},{1.000000,-28.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="TextColor" Value="FFFFFF00"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

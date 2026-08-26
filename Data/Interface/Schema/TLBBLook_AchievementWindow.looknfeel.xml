@@ -1,0 +1,989 @@
+<?xml version="1.0" ?>
+<Falagard>
+
+  <!--
+    ***************************************************
+        WoWLook/TLBB_Look_SweepButton
+        扫荡
+    ***************************************************
+    -->
+  <WidgetLook name="TLBB_Look_SweepButton">
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_SuperBarImage1__">
+      <Property name="Image" value="set: image:"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="5" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="3" />
+        </Dim>
+        <!--将大小设置为0，不显示奖杯图标-->
+        <Dim type="Width">
+          <AbsoluteDim value="34" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="34" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_SuperBarImage2__">
+      <Property name="Image" value="set: image:"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="0" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_SuperBarImage3__">
+      <Property Name="Image" Value="set: image:"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="0" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_SuperBarImage_Te__">
+      <Property Name="Image" Value="set:Tequansaodang image:LZBZ"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="18" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="20" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="21" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="18" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_SuperBarText1__">
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="45" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="10" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="110" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_SuperBarText2__">
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="HorzFormatting" value="WordWrapCentred"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="143" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="10" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="60" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_SuperBarText3__">
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="HorzFormatting" value="WordWrapCentred"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="224" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="10" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="60" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_SuperBarText4__">
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="HorzFormatting" value="WordWrapCentred"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="286" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="10" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="80" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_SuperBarText5__">
+      <Property name="Visible" value="True"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="HorzFormatting" value="WordWrapCentred"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="371" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="10" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="80" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_SuperBarText6__">
+      <Property name="Visible" value="False"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="460" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="10" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="60" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_ButtonCheck" nameSuffix="__auto_SuperBarCheckButton1__">
+      <Property name="Visible" value="False"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="415" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="13" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="14" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="14" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_ButtonSweep_PT" nameSuffix="__auto_SuperBarButton1__">
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="550" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="4" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="29" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="30" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_ButtonSweep_JB" nameSuffix="__auto_SuperBarButton2__">
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="515" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="4" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="29" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="30" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_ButtonSweep_TQ" nameSuffix="__auto_SuperBarButton3__">
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="480" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="4" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="29" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="30" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_ButtonSweep_SDZ" nameSuffix="__auto_SuperBarButton4__">
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="457" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="10" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="143" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="27" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_ButtonSweep_YB" nameSuffix="__auto_SuperBarButton5__">
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="515" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="4" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="29" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="30" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_ButtonSweep_ZHZ" nameSuffix="__auto_SuperBarButton6__">
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="False"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="456" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="10" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="144" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="27" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_ButtonSweep_ZH" nameSuffix="__auto_SuperBarButton7__">
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="False"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="550" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="4" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="29" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="30" />
+        </Dim>
+      </Area>
+    </Child>
+    <ImagerySection name="background">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="600" />
+          </Dim>
+          <Dim type="Height">
+            <AbsoluteDim value="40" />
+          </Dim>
+        </Area>
+        <Image type="LeftEdge" imageset="hdrc_image_02" image="hdrc_Bar_Left" />
+        <Image type="RightEdge" imageset="hdrc_image_02" image="hdrc_Bar_Right" />
+        <Image type="Background" imageset="hdrc_image_02" image="hdrc_Bar_Mid" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="background_sp">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="600" />
+          </Dim>
+          <Dim type="Height">
+            <AbsoluteDim value="40" />
+          </Dim>
+        </Area>
+        <Image type="LeftEdge" imageset="hdrc_image_03" image="hdrc_BarSP_Left" />
+        <Image type="RightEdge" imageset="hdrc_image_03" image="hdrc_BarSP_Right" />
+        <Image type="Background" imageset="hdrc_image_03" image="hdrc_BarSP_Mid" />
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="EnabledBackground">
+      <Layer>
+        <Section section="background" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledBackground">
+    </StateImagery>
+    <ImagerySection name="SuperBarHoverSection">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" offset="0" type="RightEdge">
+            </UnifiedDim>
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" offset="0" type="BottomEdge">
+            </UnifiedDim>
+          </Dim>
+        </Area>
+        <Image type="LeftEdge" imageset="hdrc_image_02" image="hdrc_LightBar_Left" />
+        <Image type="RightEdge" imageset="hdrc_image_02" image="hdrc_LightBar_Right" />
+        <Image type="Background" imageset="hdrc_image_02" image="hdrc_LightBar_Mid" />
+      </FrameComponent>
+    </ImagerySection>
+    <ImagerySection name="SuperBarHoverSection_Te">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" offset="0" type="RightEdge">
+            </UnifiedDim>
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" offset="0" type="BottomEdge">
+            </UnifiedDim>
+          </Dim>
+        </Area>
+        <Image type="LeftEdge" imageset="hdrc_image_03" image="hdrc_LightBarSP_Left" />
+        <Image type="RightEdge" imageset="hdrc_image_03" image="hdrc_LightBarSP_Right" />
+        <Image type="Background" imageset="hdrc_image_03" image="hdrc_LightBarSP_Mid" />
+      </FrameComponent>
+    </ImagerySection>
+  </WidgetLook>
+
+
+  <!--
+    ***************************************************
+        WoWLook/TLBB_Look_AchievementWindow
+    ***************************************************
+    -->
+  <WidgetLook name="TLBB_Look_AchievementWindow">
+    <Property name="ChildItem" value="key:AchievementCatalog name:TLBB_AchievementCatalog_Button" />
+    <Property name="ChildItem" value="key:AchievementText name:TLBB_AchievementText_Button" />
+    <Property name="ChildItem" value="key:AchievementBar name:TLBB_AchievementBar_Button" />
+    <Property name="ChildItem" value="key:AchievementBarIntegrationCompare name:TLBB_AchievementBarCompareIntegration_Button" />
+    <Property name="ChildItem" value="key:FYL_Button name:TLBB_FYL_Button" />
+    <Property name="ChildItem" value="key:SuperBarButton name:TLBB_SuperBarButton" />
+    <!-- 扫荡 By 泽洋 -->
+    <Property name="ChildItem" value="key:SweepButton name:TLBB_SweepButton" />
+    <!-- 宋辽结算 By 旭航 -->
+    <Property name="ChildItem" value="key:HJSongliaoWarOver name:HJTLBB_SongliaoWarOver" />
+    <NamedArea name="Text">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="2" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="3" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="4" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="8000" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="AchievementCatalog">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="158" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="AchievementText">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="10" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="120" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="AchievementBar">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="1" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="501" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="69" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="AchievementBarIntegrationCompare">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="1" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="500" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="69" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="FYL_Button">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="1" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="366" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="69" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="SuperBarButton">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="1" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="554" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="40" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="ClientRect">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" offset ="0" type="RightEdge"/>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1" offset ="0" type="BottomEdge"/>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <NamedArea name="ClientRectVScroll">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1" offset="0" type="RightEdge">
+            <DimOperator op="Subtract">
+              <WidgetDim widget="__auto_vscrollbar__" dimension="Width" />
+            </DimOperator>
+          </UnifiedDim>
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1" offset ="-0" type="BottomEdge"/>
+        </Dim>
+      </Area>
+    </NamedArea>
+    <Child type="DefaultWindow" nameSuffix="__auto_parent__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="RightEdge">
+          <UnifiedDim scale="1.0" offset="0" type="RightEdge" />
+        </Dim>
+        <Dim type="BottomEdge">
+          <UnifiedDim scale="1.0" offset="0" type="BottomEdge" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_Scrollbar_Common" nameSuffix="__auto_vscrollbar__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="15" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="1.0" offset="0" type="Height" />
+        </Dim>
+      </Area>
+      <HorzAlignment type="RightAligned" />
+    </Child>
+    <!-- 扫荡 By 泽洋 -->
+    <NamedArea name="SweepButton">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="1" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="600" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="40" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <!-- 宋辽结算 By 旭航 -->
+    <NamedArea name="HJSongliaoWarOver">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="705" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="46" />
+        </Dim>
+      </Area>
+    </NamedArea>
+  </WidgetLook>
+  <!--
+  ***************************************************
+  WoWLook/HJTLBB_look_Exterior_Fitting
+  宋辽结算list界面
+  ***************************************************
+  -->
+  <WidgetLook name="HJTLBB_look_SongliaoWarOver">
+    <NamedArea name="HJSongliaoWarOver">
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="705" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="46" />
+        </Dim>
+      </Area>
+    </NamedArea>
+    <!--排名-->
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_FightScoreBarText__">
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="HorzFormatting" value="HorzCentred"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="14" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="12" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="37" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="22" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_FightScoreBarIconback__">
+      <Property name="Image" value="set:TopList image:one"/>
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Property name="AlwaysOnTop" Value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="14" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="4" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="32" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="40" />
+        </Dim>
+      </Area>
+    </Child>
+    <!--姓名-->
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_FightScoreBarTextBig__">
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property name="Visible" value="True"/>
+      <Property name="HorzFormatting" value="HorzCentred"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="71" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="12" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="174" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="22" />
+        </Dim>
+      </Area>
+    </Child>
+    <!--击杀-->
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_FightScoreBarText1_6__">
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="AlwaysOnTop" Value="True"/>
+      <Property name="Visible" value="True"/>
+      <Property name="HorzFormatting" value="HorzCentred"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="245" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="12" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="37" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="22" />
+        </Dim>
+      </Area>
+    </Child>
+    <!--战旗-->
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_FightScoreBarText2_6__">
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="AlwaysOnTop" Value="True"/>
+      <Property name="Visible" value="True"/>
+      <Property name="HorzFormatting" value="HorzCentred"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="282" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="12" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="70" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="22" />
+        </Dim>
+      </Area>
+    </Child>
+    <!--积分-->
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_FightScoreBarText3_6__">
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property name="Visible" value="True"/>
+      <Property name="HorzFormatting" value="HorzCentred"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="352" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="9" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="70" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="26" />
+        </Dim>
+      </Area>
+    </Child>
+    <!--奖励显示排名-->
+    <Child type="TLBB_ActionButton" nameSuffix="__auto_FightScoreBarIcon__">
+      <Property name="HorzLabelFormatting" value="LeftAligned" />
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property name="ClippedByParent" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="455" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="9" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="28" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="28" />
+        </Dim>
+      </Area>
+    </Child>
+    <!--奖励显示排名-->
+    <Child type="TLBB_ActionButton" nameSuffix="__auto_FightScoreBarIcon1__">
+      <Property name="HorzLabelFormatting" value="LeftAligned" />
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property name="ClippedByParent" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="502" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="9" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="28" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="28" />
+        </Dim>
+      </Area>
+    </Child>
+    <!--奖励显示胜负-->
+    <Child type="TLBB_ActionButton" nameSuffix="__auto_FightScoreBarIcon2__">
+      <Property name="HorzLabelFormatting" value="LeftAligned" />
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property name="ClippedByParent" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="597" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="9" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="28" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="28" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_ActionButton" nameSuffix="__auto_FightScoreBarIcon3__">
+      <Property name="HorzLabelFormatting" value="LeftAligned" />
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property name="ClippedByParent" value="True"/>
+      <Property name="Visible" value="True"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="644" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="9" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="28" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="28" />
+        </Dim>
+      </Area>
+    </Child>
+    <Child type="TLBB_SimpleText" nameSuffix="__auto_FightScoreBarText4_6__">
+      <Property name="MouseHollow" value="True"/>
+      <Property name="MouseMoveHollow" value="True"/>
+      <Property name="AlwaysOnTop" Value="True"/>
+      <Property name="Visible" value="True"/>
+      <Property name="HorzFormatting" value="HorzCentred"/>
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="606" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="12" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="70" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="22" />
+        </Dim>
+      </Area>
+    </Child>
+    <!--背景图-->
+    <ImagerySection name="background">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="Width">
+            <AbsoluteDim value="705" />
+          </Dim>
+          <Dim type="Height">
+            <AbsoluteDim value="46" />
+          </Dim>
+        </Area>
+      </FrameComponent>
+    </ImagerySection>
+    <StateImagery name="EnabledBackground">
+      <Layer>
+        <Section section="background" />
+      </Layer>
+    </StateImagery>
+    <StateImagery name="DisabledBackground">
+    </StateImagery>
+    <ImagerySection name="SuperBarHoverSection">
+      <FrameComponent>
+        <Area>
+          <Dim type="LeftEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="TopEdge">
+            <AbsoluteDim value="0" />
+          </Dim>
+          <Dim type="RightEdge">
+            <UnifiedDim scale="1" offset="0" type="RightEdge">
+            </UnifiedDim>
+          </Dim>
+          <Dim type="BottomEdge">
+            <UnifiedDim scale="1" offset="0" type="BottomEdge">
+            </UnifiedDim>
+          </Dim>
+        </Area>
+      </FrameComponent>
+    </ImagerySection>
+
+  </WidgetLook>
+</Falagard>

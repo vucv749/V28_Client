@@ -1,0 +1,186 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="ShiZhuang_ZhanShi_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,596.000000},{0.000000,456.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.500000,-230.000000}}"/>
+    <Event Name="Hidden" Function="ShiZhuang_ZhanShi_OnHidden()"/>
+    <Window Type="TLBB_HeroTitle01" Name="ShiZhuang_ZhanShi_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,314.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-157.500000},{0.000000,-2.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="ShiZhuang_ZhanShi_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Text" Value="#{JLTJ_230320_69}"/>
+      <Property Name="DragTarget" Value="ShiZhuang_ZhanShi_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="ShiZhuang_ZhanShi_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.000000,9.000000}}"/>
+      <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+      <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
+      <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
+      <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+      <Event Name="Clicked" Function="ShiZhuang_ZhanShi_CloseClicked();" />
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="ShiZhuang_ZhanShi_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+      <Property Name="RiseOnClick" Value="False" />
+      <Property Name="Image" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuangBK2"/>
+      <Window Type="TLBB_SimpleText" Name="ShiZhuang_ZhanShi_Frame_Text">
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,80.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,2.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="Text" Value="#{JLTJ_230320_60}"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="ShiZhuang_ZhanShi_CheckBox">
+        <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,90.000000}}"/>
+        <Window Type="TLBB_ButtonFenYe7" Name="ShiZhuang_ZhanShi_Time1">
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{JLTJ_230320_61}" />
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="ShiZhuang_ZhanShi_ChooseDay(1)"/>
+        </Window>
+        <Window Type="TLBB_ButtonFenYe7" Name="ShiZhuang_ZhanShi_Time2">
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{JLTJ_230320_62}" />
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="ShiZhuang_ZhanShi_ChooseDay(2)"/>
+        </Window>
+        <Window Type="TLBB_ButtonFenYe7" Name="ShiZhuang_ZhanShi_Time3">
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{JLTJ_230320_63}" />
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="ShiZhuang_ZhanShi_ChooseDay(3)"/>
+        </Window>
+        <Window Type="TLBB_ButtonFenYe7" Name="ShiZhuang_ZhanShi_Time4">
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{JLTJ_230320_64}" />
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="ShiZhuang_ZhanShi_ChooseDay(4)"/>
+        </Window>
+        <Window Type="TLBB_ButtonFenYe7" Name="ShiZhuang_ZhanShi_Time5">
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,280.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{JLTJ_230320_65}" />
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="ShiZhuang_ZhanShi_ChooseDay(5)"/>
+        </Window>
+        <Window Type="TLBB_ButtonFenYe7" Name="ShiZhuang_ZhanShi_Time6">
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,350.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{JLTJ_230320_66}" />
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="ShiZhuang_ZhanShi_ChooseDay(6)"/>
+        </Window>
+        <Window Type="TLBB_ButtonFenYe7" Name="ShiZhuang_ZhanShi_Time7">
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{JLTJ_230320_67}" />
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="ShiZhuang_ZhanShi_ChooseDay(7)"/>
+        </Window>
+
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShiZhuang_ZhanShi_Text1">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,104.000000},{0.000000,152.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Font" Value="YouYuan13"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShiZhuang_ZhanShi_Text2">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,152.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Font" Value="YouYuan13"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShiZhuang_ZhanShi_Text3">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.000000,152.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Font" Value="YouYuan13"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShiZhuang_ZhanShi_Text4">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,104.000000},{0.000000,204.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Font" Value="YouYuan13"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShiZhuang_ZhanShi_Text5">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,204.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Font" Value="YouYuan13"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShiZhuang_ZhanShi_Text6">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.000000,204.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Font" Value="YouYuan13"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShiZhuang_ZhanShi_Text7">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,104.000000},{0.000000,254.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Font" Value="YouYuan13"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShiZhuang_ZhanShi_Text8">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,254.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Font" Value="YouYuan13"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShiZhuang_ZhanShi_Text9">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.000000,254.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Font" Value="YouYuan13"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShiZhuang_ZhanShi_Text10">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,104.000000},{0.000000,304.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Font" Value="YouYuan13"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShiZhuang_ZhanShi_Text11">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,304.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Font" Value="YouYuan13"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShiZhuang_ZhanShi_Text12">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.000000,304.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Font" Value="YouYuan13"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShiZhuang_ZhanShi_Text13">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,104.000000},{0.000000,355.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Font" Value="YouYuan13"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShiZhuang_ZhanShi_Text14">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,355.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Font" Value="YouYuan13"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShiZhuang_ZhanShi_Text15">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.000000,355.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Font" Value="YouYuan13"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

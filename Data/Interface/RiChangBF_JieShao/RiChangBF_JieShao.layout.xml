@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="RiChangBF_JieShao_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,346.000000},{0.000000,252.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-173.000000},{0.500000,-126.000000}}"/>
+    <Event Name="Hidden" Function="RiChangBF_JieShao_OnHidden()"/>
+    <Window Type="TLBB_DragTitle" Name="RiChangBF_JieShao_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,2.000000}}"/>
+      <Property Name="DragTarget" Value="RiChangBF_JieShao_Frame"/>
+      <Property Name="Text" Value="#{FBXZ_240408_59}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose2" Name="RiChangBF_JieShao_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="RiChangBF_JieShao_OnClose()" />
+    </Window>
+    <Window Type="TLBB_HeroLace01" Name="RiChangBF_JieShao_MainFrame">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_StaticImageNULL" Name="RiChangBF_JieShao_Result1">
+        <Property Name="UnifiedSize" Value="{{0.000000,258.000000},{0.000000,44.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,6.000000}}"/>
+        <Property Name="Image" Value="set:RiChangBF1 image:RiChangBF_ZDBK"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="RiChangBF_JieShao_Text1">
+        <Property Name="VertFormatting" Value="TopAligned"/>
+        <Property Name="VertFormatting" Value="TopAligned"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,54.000000}}"/>
+        <Property Name="Text" Value="#{FBXZ_240408_60}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="RiChangBF_JieShao_Result2">
+        <Property Name="UnifiedSize" Value="{{0.000000,258.000000},{0.000000,44.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,98.000000}}"/>
+        <Property Name="Image" Value="set:RiChangBF1 image:RiChangBF_SXBK"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="RiChangBF_JieShao_Text2">
+        <Property Name="VertFormatting" Value="TopAligned"/>
+        <Property Name="VertFormatting" Value="TopAligned"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,70.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,144.000000}}"/>
+        <Property Name="Text" Value="#{FBXZ_240408_61}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

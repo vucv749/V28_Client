@@ -1,0 +1,284 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="RiChangBF_ChouQian_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,750.000000},{0.000000,530.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-375.000000},{0.500000,-265.000000}}"/>
+    <Event Name="Hidden" Function="RiChangBF_ChouQian_OnHidden()"/>
+    <Window Type="TLBB_HeroTitle01" Name="RiChangBF_ChouQian_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,314.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-157.500000},{0.000000,-2.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose2" Name="RiChangBF_ChouQian_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="RiChangBF_ChouQian_OnClose()"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="RiChangBF_ChouQian_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Text" Value="#{FBXZ_240408_20}" />
+      <Property Name="DragTarget" Value="RiChangBF_ChouQian_Frame"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="RiChangBF_ChouQian_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+      <Property Name="RiseOnClick" Value="False" />
+      <Window Type="TLBB_ButtonNULL" Name="RiChangBF_ChouQian_InfoBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,138.000000},{0.000000,32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-160.000000},{0.000000,160.000000}}"/>
+        <Property Name="PushedImage" Value="set:RiChangBF1 image:RiChangBF_SJ_Pushed"/>
+        <Property Name="NormalImage" Value="set:RiChangBF1 image:RiChangBF_SJ_Normal"/>
+        <Property Name="HoverImage" Value="set:RiChangBF1 image:RiChangBF_SJ_Hover"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="RiChangBF_ChouQian_InfoBtn();"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="RiChangBF_ChouQian_HelpBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,170.000000}}"/>
+        <Property Name="PushedImage" Value="set:RiChangBF1 image:RiChangBF_Help_ZDBtn_Pushed"/>
+        <Property Name="NormalImage" Value="set:RiChangBF1 image:RiChangBF_Help_ZDBtn_Normal"/>
+        <Property Name="HoverImage" Value="set:RiChangBF1 image:RiChangBF_Help_ZDBtn_Hover"/>
+        <Event Name="Clicked" Function="RiChangBF_ChouQian_HelpClick()"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+
+      <Window Type="TLBB_StaticImageNULL" Name="RiChangBF_ChouQian_Image">
+        <Property Name="UnifiedSize" Value="{{0.000000,747.000000},{0.000000,497.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:RiChangBF2 image:RiChangBF_BK"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="RiChangBF_ChouQian_Frame_Text">
+        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,70.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,2.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="Text" Value="#{FBXZ_240408_25}"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="RiChangBF_ChouQian_AllName1">
+        <Property Name="UnifiedSize" Value="{{0.000000,326.000000},{0.000000,70.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,100.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_StaticImageNULL" Name="RiChangBF_ChouQian_Title1">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,26.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,24.000000}}"/>
+          <Property Name="Image" Value="set:RiChangBF1 image:RiChangBF_KG"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="RiChangBF_ChouQian_Name1">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{FBXZ_240408_21}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="RiChangBF_ChouQian_Title2">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,26.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,124.000000},{0.000000,24.000000}}"/>
+          <Property Name="Image" Value="set:RiChangBF1 image:RiChangBF_KG"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="RiChangBF_ChouQian_Name2">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{FBXZ_240408_21}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="RiChangBF_ChouQian_Title3">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,26.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,235.000000},{0.000000,24.000000}}"/>
+          <Property Name="Image" Value="set:RiChangBF1 image:RiChangBF_KG"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="RiChangBF_ChouQian_Name3">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,224.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{FBXZ_240408_21}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="RiChangBF_ChouQian_AllName2">
+        <Property Name="UnifiedSize" Value="{{0.000000,326.000000},{0.000000,70.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,374.000000},{0.000000,100.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_StaticImageNULL" Name="RiChangBF_ChouQian_Title4">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,26.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,24.000000}}"/>
+          <Property Name="Image" Value="set:RiChangBF1 image:RiChangBF_KG"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="RiChangBF_ChouQian_Name4">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{FBXZ_240408_21}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="RiChangBF_ChouQian_Title5">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,26.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.000000,24.000000}}"/>
+          <Property Name="Image" Value="set:RiChangBF1 image:RiChangBF_KG"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="RiChangBF_ChouQian_Name5">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{FBXZ_240408_21}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="RiChangBF_ChouQian_Title6">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,26.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,235.000000},{0.000000,24.000000}}"/>
+          <Property Name="Image" Value="set:RiChangBF1 image:RiChangBF_KG"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="RiChangBF_ChouQian_Name6">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,224.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{FBXZ_240408_21}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCheckNULL" Name="RiChangBF_ChouQian_Choose1_Btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,236.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,158.000000},{0.000000,178.000000}}"/>
+        <Property Name="PushedImage" Value="set:RiChangBF1 image:RiChangBF_FP_Hover"/>
+        <Property Name="NormalImage" Value="set:RiChangBF1 image:RiChangBF_FP_Normal"/>
+        <Property Name="HoverImage" Value="set:RiChangBF1 image:RiChangBF_FP_Pushed"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Selected" Value="True"/>
+        <Event Name="Clicked" Function="RiChangBF_ChouQian_Choose1_BtnClicked();"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="RiChangBF_ChouQian_Choose1_Image">
+        <Property Name="UnifiedSize" Value="{{0.000000,214.000000},{0.000000,246.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,126.000000},{0.000000,178.000000}}"/>
+        <Property Name="Image" Value="set:RiChangBF1 image:RiChangBF_ZDXZ"/>
+
+        <Window Type="TLBB_SimpleText" Name="RiChangBF_ChouQian_Choose1_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,120.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,28.000000},{0.000000,90.000000}}"/>
+          <Property Name="Text" Value="#{}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="RiChangBF_ChouQian_Choose1_Win">
+        <Property Name="UnifiedSize" Value="{{0.000000,95.000000},{0.000000,234.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,184.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Visible" Value="False"/>
+        <Property Name="Image" Value="set:ValentinesDay_Guessing image:ChoosenOne_Dali"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonCheckNULL" Name="RiChangBF_ChouQian_Choose2_Btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,236.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,416.000000},{0.000000,178.000000}}"/>
+        <Property Name="PushedImage" Value="set:RiChangBF1 image:RiChangBF_FP_Hover"/>
+        <Property Name="NormalImage" Value="set:RiChangBF1 image:RiChangBF_FP_Normal"/>
+        <Property Name="HoverImage" Value="set:RiChangBF1 image:RiChangBF_FP_Pushed"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Selected" Value="True"/>
+        <Event Name="Clicked" Function="RiChangBF_ChouQian_Choose2_BtnClicked();"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="RiChangBF_ChouQian_Choose2_Image">
+        <Property Name="UnifiedSize" Value="{{0.000000,214.000000},{0.000000,246.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,392.000000},{0.000000,178.000000}}"/>
+        <Property Name="Image" Value="set:RiChangBF1 image:RiChangBF_SXWXZ"/>
+
+        <Window Type="TLBB_SimpleText" Name="RiChangBF_ChouQian_Choose2_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,120.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,28.000000},{0.000000,90.000000}}"/>
+          <Property Name="Text" Value="#{}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="RiChangBF_ChouQian_Choose2_Win">
+        <Property Name="UnifiedSize" Value="{{0.000000,95.000000},{0.000000,234.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,470.000000},{0.000000,184.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Visible" Value="False"/>
+        <Property Name="Image" Value="set:ValentinesDay_Guessing image:ChoosenOne_Luoyang"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="RiChangBF_ChouQian_After_Image">
+        <Property Name="UnifiedSize" Value="{{0.000000,312.000000},{0.000000,272.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,168.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:RiChangBF1 image:RiChangBF_SXZS"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="RiChangBF_ChouQian_After_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,60.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-170.000000},{1.000000,-100.000000}}"/>
+        <Property Name="Text" Value="#{FBXZ_240408_57}"/>
+        <Property Name="Font" Value="YouYuan11.25"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="RiChangBF_ChouQian_Do_Btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-57.000000},{0.000000,424.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:RiChangBF1 image:RiChangBF_OK_Pushed"/>
+        <Property Name="NormalImage" Value="set:RiChangBF1 image:RiChangBF_OK_Normal"/>
+        <Property Name="HoverImage" Value="set:RiChangBF1 image:RiChangBF_OK_Hover"/>
+        <Event Name="Clicked" Function="RiChangBF_ChouQian_DoClicked();" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="RiChangBF_ChouQian_DoAfter_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-170.000000},{1.000000,-85.000000}}"/>
+        <Property Name="Text" Value="#{FBXZ_240408_56}"/>
+        <Property Name="Font" Value="YouYuan11.25"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="RiChangBF_ChouQian_NumTextBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,38.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-111.000000},{0.500000,-190.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Image" Value="set:RiChangBF1 image:RiChangBF_TimeBK"/>
+        <Window Type="TLBB_SimpleText" Name="RiChangBF_ChouQian_NumText">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.500000,-14.000000}}"/>
+          <Property Name="Text" Value="#{FBXZ_240408_04}"/>
+          <Property Name="HorzFormatting" Value="RightAligned"/>
+        </Window>
+        <Window Type="TLBB_StopWatch" Name="RiChangBF_ChouQian_WatchText">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,50.000000},{0.500000,-14.000000}}"/>
+          <Property Name="Text" Value="00:00"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="HorzFormatting" Value="LeftAligned"/>
+        </Window>
+
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

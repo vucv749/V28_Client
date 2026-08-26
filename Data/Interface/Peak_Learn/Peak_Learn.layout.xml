@@ -1,0 +1,779 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="Peak_Learn_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,644.000000},{0.000000,479.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-322.000000},{0.500000,-239.000000}}"/>
+    <Event Name="Hidden" Function="Peak_Learn_OnHiden();" />
+    <Window Type="TLBB_DragTitle" Name="Peak_Learn_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Text" Value="#gFF0FA0武境真诀" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="DragTarget" Value="Peak_Learn_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Peak_Learn_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;Peak_Learn&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Peak_Learn_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="this:Hide();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Peak_Learn_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_Frame_Lace2" Name="Peak_Learn_InfoBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,93.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_SimpleText" Name="Peak_Learn_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="    #cfff263武境等级达到每整#G10#cfff263级时可获得#G攻击武诀点#cfff263或#G防御武诀点#cfff263，攻击武诀和守御武诀均只能对选择的门派生效，未选择的门派无效果。随着武境等级提升，最多分别可选择#G3#cfff263个门派生效。若对应门派的#G攻击武诀#cfff263高于对方的#G守御武诀#cfff263，则造成的#G伤害增加#cfff263，最多增加#G5%#cfff263。若对应门派的#G守御武诀#cfff263高于对方的#G攻击武诀#cfff263，则受到的伤害降低，最多降低#G5%#cfff263。全部所选门派和武诀点可通过消耗#G1#cfff263个#G武诀易筋丹#cfff263重置。" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="Peak_Learn_AllocationPoint">
+        <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,306.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,94.000000}}"/>
+        <Window Type="DefaultWindow" Name="Peak_Learn_AllocationPointBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,628.000000},{0.000000,302.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPointBK1">
+            <Property Name="UnifiedSize" Value="{{0.000000,628.000000},{0.000000,266.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Peak image:Peak_Learn_BK_T"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPointBK2">
+            <Property Name="UnifiedSize" Value="{{0.000000,396.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,266.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Peak image:Peak_Learn_BK_BL"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPointBK3">
+            <Property Name="UnifiedSize" Value="{{0.000000,232.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,396.000000},{0.000000,266.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Peak image:Peak_Learn_BK_BT"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_AttackMenpaiBK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,46.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,52.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Peak image:Peak_Learn_RedBK"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_Attack1_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,21.000000},{0.000000,21.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,1.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Peak image:Peak_RedIcon_Big"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Peak_Learn_AllocationPoint_Attack1">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.000000,2.000000}}"/>
+            <Property Name="Text" Value="999"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Peak_Learn_AllocationPoint_Attack_Addition1">
+            <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,3.000000}}"/>
+            <Property Name="PushedImage" Value="set:Peak image:Peak_Learn_Add_Pushed"/>
+            <Property Name="NormalImage" Value="set:Peak image:Peak_Learn_Add_Normal"/>
+            <Property Name="HoverImage" Value="set:Peak image:Peak_Learn_Add_Hover"/>
+            <Property Name="DisabledImage" Value="set:Peak image:Peak_Learn_Add_Disabled"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLeave" Function="Peak_Learn_AutoClick_Clear(1)"/>
+            <Event Name="MouseLButtonDown" Function="Peak_Learn_AutoClick_SetTimer(1)"/>
+            <Event Name="MouseEnter" Function="Peak_Learn_AutoClick_Clear(1)"/>
+            <Event Name="Clicked" Function="Peak_Learn_AutoClick_LButtonUp(1);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Peak_Learn_AllocationPoint_Attack_Decrease1">
+            <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,107.000000},{0.000000,3.000000}}"/>
+            <Property Name="PushedImage" Value="set:Peak image:Peak_Learn_Minus_Pushed"/>
+            <Property Name="NormalImage" Value="set:Peak image:Peak_Learn_Minus_Normal"/>
+            <Property Name="HoverImage" Value="set:Peak image:Peak_Learn_Minus_Hover"/>
+            <Property Name="DisabledImage" Value="set:Peak image:Peak_Learn_Minus_Disabled"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLeave" Function="Peak_Learn_AutoClick_Clear(4)"/>
+            <Event Name="MouseLButtonDown" Function="Peak_Learn_AutoClick_SetTimer(4)"/>
+            <Event Name="MouseEnter" Function="Peak_Learn_AutoClick_Clear(4)"/>
+            <Event Name="Clicked" Function="Peak_Learn_AutoClick_LButtonUp(4);"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Peak_Learn_AllocationPoint_AttackMenpaiText1">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,24.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="#cfff263门派:"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+          </Window>
+          <Window Type="TLBB_ComboList" Name="Peak_Learn_AllocationPoint_AttackMenpai1">
+            <Property Name="UnifiedSize" Value="{{0.00000,82.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,24.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="ListSelectionAccepted" Function="Peak_Learn_AllocationPoint_AttackMenpaiChanged(0);"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Peak_Learn_AllocationPoint_AttackMenpaiBK_Line1">
+          <Property Name="UnifiedSize" Value="{{0.000000,87.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,60.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_AttackMenpai_Line1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Peak image:Peak_Learn_RedLine1"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_AttackMenpaiBK2">
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,46.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{0.000000,141.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Peak image:Peak_Learn_RedBK"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_Attack2_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,21.000000},{0.000000,21.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,1.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Peak image:Peak_RedIcon_Big"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Peak_Learn_AllocationPoint_Attack2">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.000000,2.000000}}"/>
+            <Property Name="Text" Value="999"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Peak_Learn_AllocationPoint_Attack_Addition2">
+            <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,3.000000}}"/>
+            <Property Name="PushedImage" Value="set:Peak image:Peak_Learn_Add_Pushed"/>
+            <Property Name="NormalImage" Value="set:Peak image:Peak_Learn_Add_Normal"/>
+            <Property Name="HoverImage" Value="set:Peak image:Peak_Learn_Add_Hover"/>
+            <Property Name="DisabledImage" Value="set:Peak image:Peak_Learn_Add_Disabled"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLeave" Function="Peak_Learn_AutoClick_Clear(2)"/>
+            <Event Name="MouseLButtonDown" Function="Peak_Learn_AutoClick_SetTimer(2)"/>
+            <Event Name="MouseEnter" Function="Peak_Learn_AutoClick_Clear(2)"/>
+            <Event Name="Clicked" Function="Peak_Learn_AutoClick_LButtonUp(2);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Peak_Learn_AllocationPoint_Attack_Decrease2">
+            <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,107.000000},{0.000000,3.000000}}"/>
+            <Property Name="PushedImage" Value="set:Peak image:Peak_Learn_Minus_Pushed"/>
+            <Property Name="NormalImage" Value="set:Peak image:Peak_Learn_Minus_Normal"/>
+            <Property Name="HoverImage" Value="set:Peak image:Peak_Learn_Minus_Hover"/>
+            <Property Name="DisabledImage" Value="set:Peak image:Peak_Learn_Minus_Disabled"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLeave" Function="Peak_Learn_AutoClick_Clear(5)"/>
+            <Event Name="MouseLButtonDown" Function="Peak_Learn_AutoClick_SetTimer(5)"/>
+            <Event Name="MouseEnter" Function="Peak_Learn_AutoClick_Clear(5)"/>
+            <Event Name="Clicked" Function="Peak_Learn_AutoClick_LButtonUp(5);"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Peak_Learn_AllocationPoint_AttackMenpaiText2">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,24.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="#cfff263门派:"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+          </Window>
+          <Window Type="TLBB_ComboList" Name="Peak_Learn_AllocationPoint_AttackMenpai2">
+            <Property Name="UnifiedSize" Value="{{0.00000,82.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,24.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="ListSelectionAccepted" Function="Peak_Learn_AllocationPoint_AttackMenpaiChanged(1);"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Peak_Learn_AllocationPoint_AttackMenpaiBK_Line2">
+          <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,49.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,131.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_AttackMenpai_Line2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Peak image:Peak_Learn_RedLine2"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_AttackMenpaiBK3">
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,46.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,29.000000},{0.000000,216.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Peak image:Peak_Learn_RedBK"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_Attack3_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,21.000000},{0.000000,21.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,1.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Peak image:Peak_RedIcon_Big"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Peak_Learn_AllocationPoint_Attack3">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.000000,2.000000}}"/>
+            <Property Name="Text" Value="999"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Peak_Learn_AllocationPoint_Attack_Addition3">
+            <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,3.000000}}"/>
+            <Property Name="PushedImage" Value="set:Peak image:Peak_Learn_Add_Pushed"/>
+            <Property Name="NormalImage" Value="set:Peak image:Peak_Learn_Add_Normal"/>
+            <Property Name="HoverImage" Value="set:Peak image:Peak_Learn_Add_Hover"/>
+            <Property Name="DisabledImage" Value="set:Peak image:Peak_Learn_Add_Disabled"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLeave" Function="Peak_Learn_AutoClick_Clear(3)"/>
+            <Event Name="MouseLButtonDown" Function="Peak_Learn_AutoClick_SetTimer(3)"/>
+            <Event Name="MouseEnter" Function="Peak_Learn_AutoClick_Clear(3)"/>
+            <Event Name="Clicked" Function="Peak_Learn_AutoClick_LButtonUp(3);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Peak_Learn_AllocationPoint_Attack_Decrease3">
+            <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,107.000000},{0.000000,3.000000}}"/>
+            <Property Name="PushedImage" Value="set:Peak image:Peak_Learn_Minus_Pushed"/>
+            <Property Name="NormalImage" Value="set:Peak image:Peak_Learn_Minus_Normal"/>
+            <Property Name="HoverImage" Value="set:Peak image:Peak_Learn_Minus_Hover"/>
+            <Property Name="DisabledImage" Value="set:Peak image:Peak_Learn_Minus_Disabled"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLeave" Function="Peak_Learn_AutoClick_Clear(6)"/>
+            <Event Name="MouseLButtonDown" Function="Peak_Learn_AutoClick_SetTimer(6)"/>
+            <Event Name="MouseEnter" Function="Peak_Learn_AutoClick_Clear(6)"/>
+            <Event Name="Clicked" Function="Peak_Learn_AutoClick_LButtonUp(6);"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Peak_Learn_AllocationPoint_AttackMenpaiText3">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,24.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="#cfff263门派:"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+          </Window>
+          <Window Type="TLBB_ComboList" Name="Peak_Learn_AllocationPoint_AttackMenpai3">
+            <Property Name="UnifiedSize" Value="{{0.00000,82.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,24.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="ListSelectionAccepted" Function="Peak_Learn_AllocationPoint_AttackMenpaiChanged(2);"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Peak_Learn_AllocationPoint_AttackMenpaiBK_Line3">
+          <Property Name="UnifiedSize" Value="{{0.000000,109.000000},{0.000000,112.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,155.000000},{0.000000,143.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_AttackMenpai_Line3">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Peak image:Peak_Learn_RedLine3"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Peak_Learn_AllocationPoint_AttackMenpaiBK_Locked">
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,46.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{0.000000,50.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_SimpleText" Name="Peak_Learn_AllocationPoint_AttackMenpai_Locked">
+            <Property Name="UnifiedSize" Value="{{1.00000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#cfff263武境10级解锁"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Peak_Learn_AllocationPoint_AttackMenpaiBK_Locked1">
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,46.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{0.000000,141.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_SimpleText" Name="Peak_Learn_AllocationPoint_AttackMenpai_Locked1">
+            <Property Name="UnifiedSize" Value="{{1.00000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#cfff263武境50级解锁"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Peak_Learn_AllocationPoint_AttackMenpaiBK_Locked2">
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,46.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,29.000000},{0.000000,219.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_SimpleText" Name="Peak_Learn_AllocationPoint_AttackMenpai_Locked2">
+            <Property Name="UnifiedSize" Value="{{1.00000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#cfff263武境100级解锁"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_DefenceMenpaiBK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,46.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,430.000000},{0.000000,32.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Peak image:Peak_Learn_BlueBK"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_Defence1_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,1.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Peak image:Peak_BlueIcon_Big"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Peak_Learn_AllocationPoint_Defence1">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.000000,2.000000}}"/>
+            <Property Name="Text" Value="999"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Peak_Learn_AllocationPoint_Defence_Addition1">
+            <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,3.000000}}"/>
+            <Property Name="PushedImage" Value="set:Peak image:Peak_Learn_Add_Pushed"/>
+            <Property Name="NormalImage" Value="set:Peak image:Peak_Learn_Add_Normal"/>
+            <Property Name="HoverImage" Value="set:Peak image:Peak_Learn_Add_Hover"/>
+            <Property Name="DisabledImage" Value="set:Peak image:Peak_Learn_Add_Disabled"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLeave" Function="Peak_Learn_AutoClick_Clear(7)"/>
+            <Event Name="MouseLButtonDown" Function="Peak_Learn_AutoClick_SetTimer(7)"/>
+            <Event Name="MouseEnter" Function="Peak_Learn_AutoClick_Clear(7)"/>
+            <Event Name="Clicked" Function="Peak_Learn_AutoClick_LButtonUp(7);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Peak_Learn_AllocationPoint_Defence_Decrease1">
+            <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{0.000000,3.000000}}"/>
+            <Property Name="PushedImage" Value="set:Peak image:Peak_Learn_Minus_Pushed"/>
+            <Property Name="NormalImage" Value="set:Peak image:Peak_Learn_Minus_Normal"/>
+            <Property Name="HoverImage" Value="set:Peak image:Peak_Learn_Minus_Hover"/>
+            <Property Name="DisabledImage" Value="set:Peak image:Peak_Learn_Minus_Disabled"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLeave" Function="Peak_Learn_AutoClick_Clear(10)"/>
+            <Event Name="MouseLButtonDown" Function="Peak_Learn_AutoClick_SetTimer(10)"/>
+            <Event Name="MouseEnter" Function="Peak_Learn_AutoClick_Clear(10)"/>
+            <Event Name="Clicked" Function="Peak_Learn_AutoClick_LButtonUp(10);"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Peak_Learn_AllocationPoint_DefenceMenpaiText1">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,24.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="#cfff263门派:"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+          </Window>
+          <Window Type="TLBB_ComboList" Name="Peak_Learn_AllocationPoint_DefenceMenpai1">
+            <Property Name="UnifiedSize" Value="{{0.00000,82.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,47.000000},{0.000000,24.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="ListSelectionAccepted" Function="Peak_Learn_AllocationPoint_DefenceMenpaiChanged(0);"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Peak_Learn_AllocationPoint_DefenceMenpaiBK_Line1">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,137.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,344.000000},{0.000000,40.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_DefenceMenpai_Line1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Peak image:Peak_Learn_BlueLine1"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_DefenceMenpaiBK2">
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,46.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,463.000000},{0.000000,136.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Peak image:Peak_Learn_BlueBK"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_Defence2_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,1.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Peak image:Peak_BlueIcon_Big"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Peak_Learn_AllocationPoint_Defence2">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.000000,2.000000}}"/>
+            <Property Name="Text" Value="999"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Peak_Learn_AllocationPoint_Defence_Addition2">
+            <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,3.000000}}"/>
+            <Property Name="PushedImage" Value="set:Peak image:Peak_Learn_Add_Pushed"/>
+            <Property Name="NormalImage" Value="set:Peak image:Peak_Learn_Add_Normal"/>
+            <Property Name="HoverImage" Value="set:Peak image:Peak_Learn_Add_Hover"/>
+            <Property Name="DisabledImage" Value="set:Peak image:Peak_Learn_Add_Disabled"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLeave" Function="Peak_Learn_AutoClick_Clear(8)"/>
+            <Event Name="MouseLButtonDown" Function="Peak_Learn_AutoClick_SetTimer(8)"/>
+            <Event Name="MouseEnter" Function="Peak_Learn_AutoClick_Clear(8)"/>
+            <Event Name="Clicked" Function="Peak_Learn_AutoClick_LButtonUp(8);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Peak_Learn_AllocationPoint_Defence_Decrease2">
+            <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{0.000000,3.000000}}"/>
+            <Property Name="PushedImage" Value="set:Peak image:Peak_Learn_Minus_Pushed"/>
+            <Property Name="NormalImage" Value="set:Peak image:Peak_Learn_Minus_Normal"/>
+            <Property Name="HoverImage" Value="set:Peak image:Peak_Learn_Minus_Hover"/>
+            <Property Name="DisabledImage" Value="set:Peak image:Peak_Learn_Minus_Disabled"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLeave" Function="Peak_Learn_AutoClick_Clear(11)"/>
+            <Event Name="MouseLButtonDown" Function="Peak_Learn_AutoClick_SetTimer(11)"/>
+            <Event Name="MouseEnter" Function="Peak_Learn_AutoClick_Clear(11)"/>
+            <Event Name="Clicked" Function="Peak_Learn_AutoClick_LButtonUp(11);"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Peak_Learn_AllocationPoint_DefenceMenpaiText2">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,24.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="#cfff263门派:"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+          </Window>
+          <Window Type="TLBB_ComboList" Name="Peak_Learn_AllocationPoint_DefenceMenpai2">
+            <Property Name="UnifiedSize" Value="{{0.00000,82.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,47.000000},{0.000000,24.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="ListSelectionAccepted" Function="Peak_Learn_AllocationPoint_DefenceMenpaiChanged(1);"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Peak_Learn_AllocationPoint_DefenceMenpaiBK_Line2">
+          <Property Name="UnifiedSize" Value="{{0.000000,93.000000},{0.000000,46.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,384.000000},{0.000000,144.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_DefenceMenpai_Line2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Peak image:Peak_Learn_BlueLine2"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_DefenceMenpaiBK3">
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,46.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,467.000000},{0.000000,211.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Peak image:Peak_Learn_BlueBK"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_Defence3_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,1.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Peak image:Peak_BlueIcon_Big"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Peak_Learn_AllocationPoint_Defence3">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.000000,2.000000}}"/>
+            <Property Name="Text" Value="999"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Peak_Learn_AllocationPoint_Defence_Addition3">
+            <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,3.000000}}"/>
+            <Property Name="PushedImage" Value="set:Peak image:Peak_Learn_Add_Pushed"/>
+            <Property Name="NormalImage" Value="set:Peak image:Peak_Learn_Add_Normal"/>
+            <Property Name="HoverImage" Value="set:Peak image:Peak_Learn_Add_Hover"/>
+            <Property Name="DisabledImage" Value="set:Peak image:Peak_Learn_Add_Disabled"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLeave" Function="Peak_Learn_AutoClick_Clear(9)"/>
+            <Event Name="MouseLButtonDown" Function="Peak_Learn_AutoClick_SetTimer(9)"/>
+            <Event Name="MouseEnter" Function="Peak_Learn_AutoClick_Clear(9)"/>
+            <Event Name="Clicked" Function="Peak_Learn_AutoClick_LButtonUp(9);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Peak_Learn_AllocationPoint_Defence_Decrease3">
+            <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{0.000000,3.000000}}"/>
+            <Property Name="PushedImage" Value="set:Peak image:Peak_Learn_Minus_Pushed"/>
+            <Property Name="NormalImage" Value="set:Peak image:Peak_Learn_Minus_Normal"/>
+            <Property Name="HoverImage" Value="set:Peak image:Peak_Learn_Minus_Hover"/>
+            <Property Name="DisabledImage" Value="set:Peak image:Peak_Learn_Minus_Disabled"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLeave" Function="Peak_Learn_AutoClick_Clear(12)"/>
+            <Event Name="MouseLButtonDown" Function="Peak_Learn_AutoClick_SetTimer(12)"/>
+            <Event Name="MouseEnter" Function="Peak_Learn_AutoClick_Clear(12)"/>
+            <Event Name="Clicked" Function="Peak_Learn_AutoClick_LButtonUp(12);"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Peak_Learn_AllocationPoint_DefenceMenpaiText3">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,24.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="#cfff263门派:"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+          </Window>
+          <Window Type="TLBB_ComboList" Name="Peak_Learn_AllocationPoint_DefenceMenpai3">
+            <Property Name="UnifiedSize" Value="{{0.00000,82.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,47.000000},{0.000000,24.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="ListSelectionAccepted" Function="Peak_Learn_AllocationPoint_DefenceMenpaiChanged(2);"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Peak_Learn_AllocationPoint_DefenceMenpaiBK_Line3">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,47.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,385.000000},{0.000000,203.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_DefenceMenpai_Line3">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Peak image:Peak_Learn_BlueLine3"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Peak_Learn_AllocationPoint_DefenceMenpaiBK_Locked">
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,46.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,425.000000},{0.000000,32.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_SimpleText" Name="Peak_Learn_AllocationPoint_DefenceMenpai_Locked">
+            <Property Name="UnifiedSize" Value="{{1.00000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#cfff263武境20级解锁"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Peak_Learn_AllocationPoint_DefenceMenpaiBK_Locked1">
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,46.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,463.000000},{0.000000,137.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_SimpleText" Name="Peak_Learn_AllocationPoint_DefenceMenpai_Locked1">
+            <Property Name="UnifiedSize" Value="{{1.00000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#cfff263武境50级解锁"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Peak_Learn_AllocationPoint_DefenceMenpaiBK_Locked2">
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,46.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,467.000000},{0.000000,212.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_SimpleText" Name="Peak_Learn_AllocationPoint_DefenceMenpai_Locked2">
+            <Property Name="UnifiedSize" Value="{{1.00000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#cfff263武境100级解锁"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Peak_Learn_AllocationPoint_AttackMenpai_PointFrame">
+          <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,221.000000},{0.000000,128.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="DefaultWindow" Name="Peak_Learn_AllocationPoint_AttackMenpai_Point_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_AttackMenpai_Point_1_1">
+              <Property Name="UnifiedSize" Value="{{0.000000,8.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-4.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Peak image:Peak_Learn_Red0"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Peak_Learn_AllocationPoint_AttackMenpai_Point_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_AttackMenpai_Point_2_1">
+              <Property Name="UnifiedSize" Value="{{0.000000,8.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-8.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Peak image:Peak_Learn_Red0"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_AttackMenpai_Point_2_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,8.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Peak image:Peak_Learn_Red0"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Peak_Learn_AllocationPoint_AttackMenpai_Point_3">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_AttackMenpai_Point_3_1">
+              <Property Name="UnifiedSize" Value="{{0.000000,8.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Peak image:Peak_Learn_Red0"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_AttackMenpai_Point_3_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,8.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-4.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Peak image:Peak_Learn_Red0"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_AttackMenpai_Point_3_3">
+              <Property Name="UnifiedSize" Value="{{0.000000,8.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,4.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Peak image:Peak_Learn_Red0"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Peak_Learn_AllocationPoint_AttackMenpai_Point_4">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_AttackMenpai_Point_4_1">
+              <Property Name="UnifiedSize" Value="{{0.000000,8.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-16.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Peak image:Peak_Learn_Red0"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_AttackMenpai_Point_4_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,8.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-8.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Peak image:Peak_Learn_Red0"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_AttackMenpai_Point_4_3">
+              <Property Name="UnifiedSize" Value="{{0.000000,8.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Peak image:Peak_Learn_Red0"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_AttackMenpai_Point_4_4">
+              <Property Name="UnifiedSize" Value="{{0.000000,8.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,8.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Peak image:Peak_Learn_Red0"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_AttackMenpai_PointText">
+            <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-16.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Peak image:Peak_Learn_RedTitle"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Peak_Learn_AllocationPoint_DefenceMenpai_PointFrame">
+          <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,314.000000},{0.000000,209.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="DefaultWindow" Name="Peak_Learn_AllocationPoint_DefenceMenpai_Point_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_DefenceMenpai_Point_1_1">
+              <Property Name="UnifiedSize" Value="{{0.000000,8.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-4.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Peak image:Peak_Learn_Blue0"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Peak_Learn_AllocationPoint_DefenceMenpai_Point_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_DefenceMenpai_Point_2_1">
+              <Property Name="UnifiedSize" Value="{{0.000000,8.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-8.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Peak image:Peak_Learn_Blue0"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_DefenceMenpai_Point_2_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,8.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Peak image:Peak_Learn_Blue0"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Peak_Learn_AllocationPoint_DefenceMenpai_Point_3">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_DefenceMenpai_Point_3_1">
+              <Property Name="UnifiedSize" Value="{{0.000000,8.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Peak image:Peak_Learn_Blue0"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_DefenceMenpai_Point_3_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,8.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-4.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Peak image:Peak_Learn_Blue0"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_DefenceMenpai_Point_3_3">
+              <Property Name="UnifiedSize" Value="{{0.000000,8.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,4.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Peak image:Peak_Learn_Blue0"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Peak_Learn_AllocationPoint_DefenceMenpai_Point_4">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_DefenceMenpai_Point_4_1">
+              <Property Name="UnifiedSize" Value="{{0.000000,8.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-16.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Peak image:Peak_Learn_Blue0"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_DefenceMenpai_Point_4_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,8.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-8.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Peak image:Peak_Learn_Blue0"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_DefenceMenpai_Point_4_3">
+              <Property Name="UnifiedSize" Value="{{0.000000,8.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Peak image:Peak_Learn_Blue0"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_DefenceMenpai_Point_4_4">
+              <Property Name="UnifiedSize" Value="{{0.000000,8.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,8.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Peak image:Peak_Learn_Blue0"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Peak_Learn_AllocationPoint_DefenceMenpai_PointText">
+            <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-16.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Peak image:Peak_Learn_BlueTitle"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Peak_Learn_Recharge">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="重置" />
+        <Event Name="Clicked" Function="Peak_Learn_Recharge_Clicked();" />
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="Peak_Learn_Blank">
+        <Property Name="UnifiedSize" Value="{{1.000000,-122.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{1.000000,-20.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Peak_Learn_OK">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="确定" />
+        <Event Name="Clicked" Function="Peak_Learn_OK_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Peak_Learn_Cancel">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="取消" />
+        <Event Name="Clicked" Function="this:Hide();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

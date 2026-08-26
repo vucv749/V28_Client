@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="Weapon2_SkillShengJi_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,372.000000},{0.000000,540.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-190.000000},{0.500000,-254.000000}}"/>
+    <Event Name="Hidden" Function="Weapon2_SkillShengJi_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="Weapon2_SkillShengJi_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="DragTarget" Value="Weapon2_SkillShengJi_Frame" />
+      <Window Type="TLBB_SimpleText" Name="Weapon2_SkillShengJi_Title">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="Text" Value="#{SBFW_20230707_164}" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Weapon2_SkillShengJi_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="Weapon2_SkillShengJi_HelpClicked()" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Weapon2_SkillShengJi_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonHelp" />
+      <Event Name="Clicked" Function="Weapon2_SkillShengJi_CloseClicked();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Weapon2_SkillShengJi_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Weapon2_SkillShengJi_Explain1">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,106.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{SBFW_20230707_165}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Weapon2_SkillShengJi_Explain2">
+        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,115.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{SBFW_20230707_123}" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="Weapon2_SkillShengJi_Item">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000008}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,108.000000}}"/>
+        <Property Name="DraggingEnabled" Value="True" />
+        <Property Name="DragAcceptName" Value="W53" />
+        <Event Name="RBClicked" Function="Weapon2_SkillShengJi_ShenBing_OnRBClicked();" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Weapon2_SkillShengJi_Explain3">
+        <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,160.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{SBFW_20230707_166}" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="Weapon2_SkillShengJi_Skill1">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,152.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Weapon2_SkillShengJi_SelectSkill(1);" />
+        <Window Type="TLBB_StaticImageNULL" Name="Weapon2_SkillShengJi_Skill1Lock">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="Weapon2_SkillShengJi_Skill2">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,152.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Weapon2_SkillShengJi_SelectSkill(2);" />
+        <Window Type="TLBB_StaticImageNULL" Name="Weapon2_SkillShengJi_Skill2Lock">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="Weapon2_SkillShengJi_Skill3">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,152.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Weapon2_SkillShengJi_SelectSkill(3);" />
+        <Window Type="TLBB_StaticImageNULL" Name="Weapon2_SkillShengJi_Skill3Lock">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="Weapon2_SkillShengJi_Skill4">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,270.000000},{0.000000,152.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Weapon2_SkillShengJi_SelectSkill(4);" />
+        <Window Type="TLBB_StaticImageNULL" Name="Weapon2_SkillShengJi_Skill4Lock">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="Weapon2_SkillShengJi_Skill5">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.000000,152.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Weapon2_SkillShengJi_SelectSkill(5);" />
+        <Window Type="TLBB_StaticImageNULL" Name="Weapon2_SkillShengJi_Skill5Lock">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Weapon2_SkillShengJi_BeforeSkillTitle">
+        <Property Name="UnifiedSize" Value="{{0.500000,-10.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,190.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{SBFW_20230707_232}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+      <Window Type="TLBB_StaticText" Name="Weapon2_SkillShengJi_BeforeSkillText">
+        <Property Name="UnifiedSize" Value="{{0.500000,-4.000000},{0.000000,144.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,210.000000}}"/>
+        <Property Name="VertScrollbar" Value="True"/>
+        <Property Name="VertFormatting" Value="TopAligned"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Weapon2_SkillShengJi_AfterSkillTitle">
+        <Property Name="UnifiedSize" Value="{{0.500000,-10.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,5.000000},{0.000000,190.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{SBFW_20230707_233}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+      <Window Type="TLBB_StaticText" Name="Weapon2_SkillShengJi_AfterSkillText">
+        <Property Name="UnifiedSize" Value="{{0.500000,-4.000000},{0.000000,144.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,2.000000},{0.000000,210.000000}}"/>
+        <Property Name="VertScrollbar" Value="True"/>
+        <Property Name="VertFormatting" Value="TopAligned"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Weapon2_SkillShengJi_NowText">
+        <Property Name="UnifiedSize" Value="{{0.980000,0.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.010000,0.000000},{1.000000,-131.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{SBFW_20230707_250}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_SimpleText" Name="Weapon2_SkillShengJi_Now">
+          <Property Name="UnifiedSize" Value="{{0.750000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.250000,-6.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="#{SBFW_20230707_251}"/>
+          <Property Name="HorzFormatting" Value="RightAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Weapon2_SkillShengJi_GiveText">
+        <Property Name="UnifiedSize" Value="{{0.980000,0.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.010000,0.000000},{1.000000,-111.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{SBFW_20230707_252}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_SimpleText" Name="Weapon2_SkillShengJi_Give">
+          <Property Name="UnifiedSize" Value="{{0.750000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.250000,-6.000000},{0.000000,2.000000}}"/>
+          <Property Name="HorzFormatting" Value="RightAligned"/>
+          <Property Name="Text" Value="#{SBFW_20230707_253}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Weapon2_SkillShengJi_DemandMoney_Text">
+        <Property Name="UnifiedSize" Value="{{0.980000,0.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.010000,0.000000},{1.000000,-89.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{SBFW_20230707_38}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="Weapon2_SkillShengJi_DemandMoney">
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="AlignFix" Value="True" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Weapon2_SkillShengJi_CurrentlyJiaozi_Text">
+        <Property Name="UnifiedSize" Value="{{0.980000,0.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.010000,0.000000},{1.000000,-67.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{SBFW_20230707_39}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="Weapon2_SkillShengJi_SelfJiaozi">
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="AlignFix" Value="True" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Weapon2_SkillShengJi_CurrentlyMoney_Text">
+        <Property Name="UnifiedSize" Value="{{0.980000,0.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.010000,0.000000},{1.000000,-45.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{SBFW_20230707_40}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="Weapon2_SkillShengJi_SelfMoney">
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="AlignFix" Value="True" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Weapon2_SkillShengJi_OK">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{SBFW_20230707_41}" />
+        <Event Name="Clicked" Function="Weapon2_SkillShengJi_OK_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Weapon2_SkillShengJi_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_542}" />
+        <Event Name="Clicked" Function="Weapon2_SkillShengJi_CloseClicked();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

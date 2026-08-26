@@ -1,0 +1,360 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection1" Name="Biwuzhaoqin_Name_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,282.000000},{0.000000,440.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-141.000000},{0.500000,-220.000000}}"/>
+    <Event Name="Hidden" Function="Biwuzhaoqin_Name_CloseClicked();"/>
+    <Window Type="TLBB_TitleLace_Affection1" Name="Biwuzhaoqin_Name_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-90.000000},{0.000000,11.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Biwuzhaoqin_Name_PageHeader_Name">
+      <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,10.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+      <Property Name="Text" Value="" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="DragTarget" Value="Biwuzhaoqin_Name_Frame" />
+      <Property Name="Text" Value="#{BWZQ_20230329_145}" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Biwuzhaoqin_Name_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Biwuzhaoqin_Name_CloseClicked();"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Biwuzhaoqin_Name_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="Biwuzhaoqin_Name_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{1.000000,-35.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,35.000000}}"/>
+      <Window Type="TLBB_Frame_Lace3" Name="Biwuzhaoqin_Name_InfoBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,98.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,2.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Name_Info">
+          <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,84.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,8.000000}}"/>
+          <Property Name="Text" Value="#{BWZQ_20230329_359}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Biwuzhaoqin_Name_ListClient">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-118.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,103.000000}}"/>
+        <Window Type="TLBB_ButtonCheckAffection" Name="Biwuzhaoqin_Name_List1">
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Selected" Value="True"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="Biwuzhaoqin_Name_OnItemClick(1)"/>
+
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Name_List1_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_146}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_147}" />
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCheckAffection" Name="Biwuzhaoqin_Name_List2">
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,32.000000}}"/>
+          <Property Name="Selected" Value="True"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="Biwuzhaoqin_Name_OnItemClick(2)"/>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Name_List2_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_146}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_147}" />
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCheckAffection" Name="Biwuzhaoqin_Name_List3">
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,64.000000}}"/>
+          <Property Name="Selected" Value="True"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="Biwuzhaoqin_Name_OnItemClick(3)"/>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Name_List3_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_146}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_147}" />
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCheckAffection" Name="Biwuzhaoqin_Name_List4">
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,96.000000}}"/>
+          <Property Name="Selected" Value="True"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="Biwuzhaoqin_Name_OnItemClick(4)"/>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Name_List4_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_146}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_147}" />
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCheckAffection" Name="Biwuzhaoqin_Name_List5">
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,128.000000}}"/>
+          <Property Name="Selected" Value="True"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="Biwuzhaoqin_Name_OnItemClick(5)"/>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Name_List5_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_146}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_147}" />
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCheckAffection" Name="Biwuzhaoqin_Name_List6">
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,160.000000}}"/>
+          <Property Name="Selected" Value="True"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="Biwuzhaoqin_Name_OnItemClick(6)"/>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Name_List6_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_146}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_147}" />
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCheckAffection" Name="Biwuzhaoqin_Name_List7">
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,192.000000}}"/>
+          <Property Name="Selected" Value="True"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="Biwuzhaoqin_Name_OnItemClick(7)"/>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Name_List7_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_146}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_147}" />
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCheckAffection" Name="Biwuzhaoqin_Name_List8">
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,224.000000}}"/>
+          <Property Name="Selected" Value="True"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="Biwuzhaoqin_Name_OnItemClick(8)"/>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Name_List8_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_146}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_147}" />
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCheckAffection" Name="Biwuzhaoqin_Name_List9">
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,0.000000}}"/>
+          <Property Name="Selected" Value="True"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="Biwuzhaoqin_Name_OnItemClick(9)"/>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Name_List9_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_146}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_147}" />
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCheckAffection" Name="Biwuzhaoqin_Name_List10">
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,32.000000}}"/>
+          <Property Name="Selected" Value="True"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="Biwuzhaoqin_Name_OnItemClick(10)"/>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Name_List10_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_146}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_147}" />
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCheckAffection" Name="Biwuzhaoqin_Name_List11">
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,64.000000}}"/>
+          <Property Name="Selected" Value="True"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="Biwuzhaoqin_Name_OnItemClick(11)"/>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Name_List11_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_146}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_147}" />
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCheckAffection" Name="Biwuzhaoqin_Name_List12">
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,96.000000}}"/>
+          <Property Name="Selected" Value="True"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="Biwuzhaoqin_Name_OnItemClick(12)"/>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Name_List12_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_146}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_147}" />
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCheckAffection" Name="Biwuzhaoqin_Name_List13">
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,128.000000}}"/>
+          <Property Name="Selected" Value="True"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="Biwuzhaoqin_Name_OnItemClick(13)"/>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Name_List13_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_146}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_147}" />
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCheckAffection" Name="Biwuzhaoqin_Name_List14">
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,160.000000}}"/>
+          <Property Name="Selected" Value="True"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="Biwuzhaoqin_Name_OnItemClick(14)"/>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Name_List14_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_146}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_147}" />
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCheckAffection" Name="Biwuzhaoqin_Name_List15">
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,192.000000}}"/>
+          <Property Name="Selected" Value="True"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="Biwuzhaoqin_Name_OnItemClick(15)"/>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Name_List15_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_146}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_147}" />
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCheckAffection" Name="Biwuzhaoqin_Name_List16">
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,224.000000}}"/>
+          <Property Name="Selected" Value="True"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="Biwuzhaoqin_Name_OnItemClick(16)"/>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Name_List16_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_146}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_147}" />
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Affection_ButtonCommon" Name="Biwuzhaoqin_Name_OK_Button">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-23.000000}}"/>
+          <Property Name="Text" Value="#{BWZQ_20230329_72}"/>
+          <Event Name="Clicked" Function="Biwuzhaoqin_Name_Ok_Clicked();"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

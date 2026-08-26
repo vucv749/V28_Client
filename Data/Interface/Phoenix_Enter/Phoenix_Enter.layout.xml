@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrameNULL" Name="Phoenix_Enter_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,480.000000},{0.000000,500.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-240.000000},{0.500000,-250.000000}}"/>
+        <Event Name="Hidden" Function="Phoenix_Enter_Frame_OnHiden();" />
+        <Window Type="TLBB_StaticImageNULL" Name="Phoenix_Enter_DragonHead">
+            <Property Name="UnifiedSize" Value="{{0.000000,153.000000},{0.000000,51.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-76.000000},{0.000000,12.000000}}"/>
+            <Property Name="Image" Value="set:CommonFrame7 image:Phoenix_Fenghuang"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_MainFrame4" Name="Phoenix_Enter_ClientBK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,42.000000}}"/>
+            <Window Type="TLBB_ButtonClose2" Name="Phoenix_Enter_Close">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,25.000000}}"/>
+                <Event Name="Clicked" Function="this:Hide();" />
+            </Window>
+            <Window Type="TLBB_DragTitle" Name="Phoenix_Enter_DragTitle">
+                <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,20.000000}}"/>
+                <Property Name="DragTarget" Value="Phoenix_Enter_Frame" />
+                <Property Name="Text" Value="#{FHKF_20240315_35}" />
+                <Property Name="Font" Value="YouYuan11.25" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+            </Window>
+            <Window Type="DefaultWindow" Name="Phoenix_Enter_Client">
+                <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="Phoenix_Enter_Client_Text">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,60.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,10.000000}}"/>
+                    <Property Name="TextColor" Value="FFFFF263"/>
+                    <Property Name="Text" Value="#{FHKF_20240315_34}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                </Window>
+                <Window Type="TLBB_NotSuperList" Name="Phoenix_Enter_List">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-120.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,75.000000}}"/>
+                    <Property Name="MultiColumn" Value="1" />
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                    <Property Name="VScrollMode" Value="Show"/>
+                    <Window Type="TLBB_NotSuperListItemCommon5" Name="Phoenix_Enter_Client_Line1Btn_Bk">
+                        <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,32.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Window Type="TLBB_ButtonFenYe7" Name="Phoenix_Enter_Client_Line1Btn">
+                            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,26.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.500000,-13.000000}}"/>
+                            <Property Name="Text" Value="#{FHKF_20240315_36}"/>
+                            <Property Name="CheckMode" Value="1"/>
+                            <Event Name="Clicked" Function="Phoenix_Enter_Select(1);"/>
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_StaticText2" Name="Phoenix_Enter_Client_EnterBtnBk">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,40.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{1.000000,-40.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Window Type="TLBB_ButtonNULL" Name="Phoenix_Enter_Client_EnterBtn">
+                        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{0.500000,-12.000000}}"/>
+                        <Property Name="Text" Value="#{FHKF_20240315_46}"/>
+                        <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Button_Push"/>
+                        <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Button_Normal"/>
+                        <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Button_Hover"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                        <Event Name="Clicked" Function="Phoenix_Enter_Goto()"/>
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

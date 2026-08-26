@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection0" Name="DoublePlay_Choose_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,564.000000},{0.000000,420.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-280.000000},{0.120000,0.000000}}"/>
+    <Event Name="Hidden" Function="DoublePlay_Choose_Close();"/>
+    <Window Type="TLBB_TitleLace_Affection0" Name="DoublePlay_Choose_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,31.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="DoublePlay_Choose_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Text" Value="#{SRWF_230329_28}"/>
+      <Property Name="VertFormatting" Value="VertCentred"/>
+      <Property Name="DragTarget" Value="DoublePlay_Choose_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="DoublePlay_Choose_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Helper:GotoHelper(&quot;*Compensate&quot;);"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="DoublePlay_Choose_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="DoublePlay_Choose_Close();"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="DoublePlay_Choose_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Window Type="DefaultWindow" Name="DoublePlay_Choose_AllBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,246.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Choose_NPCBK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,246.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:DoubleGame02 image:DoubleGame_jiugongzhishu"/>
+          <Window Type="TLBB_ButtonNULL" Name="DoublePlay_Choose_Game1Info">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,33.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{1.000000,-34.000000}}"/>
+            <Property Name="PushedImage" Value="set:DoubleGame02 image:DoubleGame_xiangqingpush"/>
+            <Property Name="NormalImage" Value="set:DoubleGame02 image:DoubleGame_xiangqingnormal"/>
+            <Property Name="HoverImage" Value="set:DoubleGame02 image:DoubleGame_xiangqinghover"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="DoublePlay_Choose_NPCInfo_Click(2);"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Choose_NPCBK2">
+          <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,246.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-85.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:DoubleGame02 image:DoubleGame_wulixunhua"/>
+          <Window Type="TLBB_ButtonNULL" Name="DoublePlay_Choose_Game2Info">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,33.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{1.000000,-34.000000}}"/>
+            <Property Name="PushedImage" Value="set:DoubleGame02 image:DoubleGame_xiangqingpush"/>
+            <Property Name="NormalImage" Value="set:DoubleGame02 image:DoubleGame_xiangqingnormal"/>
+            <Property Name="HoverImage" Value="set:DoubleGame02 image:DoubleGame_xiangqinghover"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="DoublePlay_Choose_NPCInfo_Click(1);"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Choose_NPCBK3">
+          <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,246.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-170.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:DoubleGame02 image:DoubleGame_yingxiongjiumei"/>
+          <Window Type="TLBB_ButtonNULL" Name="DoublePlay_Choose_Game3Info">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,33.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{1.000000,-34.000000}}"/>
+            <Property Name="PushedImage" Value="set:DoubleGame02 image:DoubleGame_xiangqingpush"/>
+            <Property Name="NormalImage" Value="set:DoubleGame02 image:DoubleGame_xiangqingnormal"/>
+            <Property Name="HoverImage" Value="set:DoubleGame02 image:DoubleGame_xiangqinghover"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="DoublePlay_Choose_NPCInfo_Click(3);"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ComboList" Name="DoublePlay_Choose_PlayGame">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.000000,300.000000}}"/>
+        <Property Name="Visible" Value="False"/>
+      </Window>
+      <Window Type="TLBB_Affection_ButtonCommon" Name="DoublePlay_Choose_OK">
+        <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-110.000000},{0.000000,300.000000}}"/>
+        <Event Name="Clicked" Function="DoublePlay_Choose_NPCGo_Click(1);"/>
+        <Property Name="Text" Value="#{SRWF_230329_248}"/>
+      </Window>
+      <Window Type="TLBB_Affection_ButtonCommon" Name="DoublePlay_Choose_No">
+        <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,300.000000}}"/>
+        <Event Name="Clicked" Function="DoublePlay_Choose_No_Click();"/>
+        <Property Name="Text" Value="#{SRWF_230329_253}"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DoublePlay_Choose_Num">
+        <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-200.000000},{1.000000,-30.000000}}"/>
+        <Property Name="Text" Value="#{SRWF_230329_141}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DoublePlay_Choose_Num2">
+        <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{1.000000,-30.000000}}"/>
+        <Property Name="Text" Value="#{SRWF_230329_196}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

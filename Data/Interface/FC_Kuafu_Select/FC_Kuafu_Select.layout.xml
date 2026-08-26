@@ -1,0 +1,515 @@
+﻿<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="FC_Kuafu_Select_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,914.000000},{0.000000,678.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-450.000000},{0.500000,-300.000000}}"/>
+		<Property Name="AttachEnabled" Value="False"/>
+    <Window Type="TLBB_HeroTitle01" Name="FC_Kuafu_Select_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,380.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-190.000000},{0.000000,-2.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="FC_Kuafu_Select_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+      <Property Name="DragTarget" Value="FC_Kuafu_Select_Frame" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="Title" />
+      <Property Name="Text" Value="#{ZJKF_250331_19}" />
+    </Window>
+    <Window Type="TLBB_ButtonClose2" Name="FC_Kuafu_Select_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+			<Event Name="Clicked" Function="FC_Kuafu_Select_Close()"/>
+    </Window>
+    <Window Type="TLBB_HeroLace01" Name="FC_Kuafu_Select_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      
+      <Window Type="TLBB_StaticImageNULL" Name="XiaRi_SongBing_ImageBK1">
+        <Property Name="UnifiedSize" Value="{{0.000000,906.000000},{0.000000,646.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_BK"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_SelectServerText">
+        <Property Name="UnifiedSize" Value="{{1.000000,-180.000000},{0.000000,90.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,10.000000}}"/>
+        <Property Name="Text" Value="#{ZJKF_250331_20}"/>
+        <Property Name="VertFormatting" Value="TopAligned"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="FC_Kuafu_Select_SelectServer1">
+        <Property Name="UnifiedSize" Value="{{0.500000,-25.000000},{0.000000,240.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,80.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ButtonNULL" Name="FC_Kuafu_Select_SelectServerBtn1">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-28.000000},{0.500000,-108.000000}}"/>
+          <Property Name="PushedImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn2_Pushed"/>
+          <Property Name="NormalImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn2_Normal"/>
+          <Property Name="HoverImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn2_Hover"/>
+          <Property Name="DisabledImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn2_Disabled"/>
+          <Event Name="Clicked" Function="FC_Kuafu_Select_Entry(0)"/>
+          <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_SelectServerBtn1Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{ZJKF_250331_33}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="FC_Kuafu_Select_SelectServerBtn2">
+          <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-156.000000},{0.500000,0.000000}}"/>
+          <Property Name="PushedImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Pushed"/>
+          <Property Name="NormalImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Normal"/>
+          <Property Name="HoverImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Hover"/>
+          <Property Name="DisabledImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Disabled"/>          
+					<Event Name="Clicked" Function="FC_Kuafu_Select_Entry(1)"/>
+          <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_SelectServerBtn2Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{ZJKF_250331_34}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="FC_Kuafu_Select_SelectServerBtn3">
+          <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,84.000000},{0.500000,0.000000}}"/>
+          <Property Name="PushedImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Pushed"/>
+          <Property Name="NormalImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Normal"/>
+          <Property Name="HoverImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Hover"/>
+          <Property Name="DisabledImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Disabled"/>             
+					<Event Name="Clicked" Function="FC_Kuafu_Select_Entry(2)"/>
+          <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_SelectServerBtn3Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.500000,-15.000000}}"/>
+            <Property Name="Text" Value="#{ZJKF_250331_35}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="FC_Kuafu_Select_SelectServerBtn4">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-148.000000},{0.500000,-74.000000}}"/>
+          <Property Name="PushedImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Pushed"/>
+          <Property Name="NormalImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Normal"/>
+          <Property Name="HoverImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Hover"/>
+          <Property Name="DisabledImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Disabled"/>            
+					<Event Name="Clicked" Function="FC_Kuafu_Select_Entry(3)"/>
+          <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_SelectServerBtn4Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{ZJKF_250331_36}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="FC_Kuafu_Select_SelectServerBtn5">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,86.000000},{0.500000,-74.000000}}"/>
+          <Property Name="PushedImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Pushed"/>
+          <Property Name="NormalImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Normal"/>
+          <Property Name="HoverImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Hover"/>
+          <Property Name="DisabledImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Disabled"/>            
+					<Event Name="Clicked" Function="FC_Kuafu_Select_Entry(4)"/>
+          <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_SelectServerBtn5Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{ZJKF_250331_53}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            
+          </Window>
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="FC_Kuafu_Select_SelectServer2">
+        <Property Name="UnifiedSize" Value="{{0.500000,-25.000000},{0.000000,240.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,5.000000},{0.000000,80.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ButtonNULL" Name="FC_Kuafu_Select_SelectServerBtn6">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-91.000000},{0.500000,-108.000000}}"/>
+          <Property Name="PushedImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn2_Pushed"/>
+          <Property Name="NormalImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn2_Normal"/>
+          <Property Name="HoverImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn2_Hover"/>
+          <Property Name="DisabledImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn2_Disabled"/>
+					<Event Name="Clicked" Function="FC_Kuafu_Select_Entry(5)"/>
+          <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_SelectServerBtn6Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{ZJKF_250331_33}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="FC_Kuafu_Select_SelectServerBtn7">
+          <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-198.000000},{0.500000,0.000000}}"/>
+          <Property Name="PushedImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Pushed"/>
+          <Property Name="NormalImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Normal"/>
+          <Property Name="HoverImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Hover"/>
+          <Property Name="DisabledImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Disabled"/> 
+					<Event Name="Clicked" Function="FC_Kuafu_Select_Entry(6)"/>
+          <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_SelectServerBtn7Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{ZJKF_250331_34}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="FC_Kuafu_Select_SelectServerBtn8">
+          <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,46.000000},{0.500000,0.000000}}"/>
+          <Property Name="PushedImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Pushed"/>
+          <Property Name="NormalImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Normal"/>
+          <Property Name="HoverImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Hover"/>
+          <Property Name="DisabledImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Disabled"/>  
+          
+					<Event Name="Clicked" Function="FC_Kuafu_Select_Entry(7)"/>
+          <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_SelectServerBtn8Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{ZJKF_250331_35}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="FC_Kuafu_Select_SelectServerBtn9">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-204.000000},{0.500000,-74.000000}}"/>
+          <Property Name="PushedImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Pushed"/>
+          <Property Name="NormalImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Normal"/>
+          <Property Name="HoverImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Hover"/>
+          <Property Name="DisabledImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Disabled"/>  
+          
+					<Event Name="Clicked" Function="FC_Kuafu_Select_Entry(8)"/>
+          <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_SelectServerBtn9Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{ZJKF_250331_36}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="FC_Kuafu_Select_SelectServerBtn10">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,24.000000},{0.500000,-74.000000}}"/>
+          <Property Name="PushedImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Pushed"/>
+          <Property Name="NormalImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Normal"/>
+          <Property Name="HoverImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Hover"/>
+          <Property Name="DisabledImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Disabled"/>  
+					<Event Name="Clicked" Function="FC_Kuafu_Select_Entry(9)"/>
+          <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_SelectServerBtn10Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{ZJKF_250331_53}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="FC_Kuafu_Select_SelectServer3">
+        <Property Name="UnifiedSize" Value="{{0.500000,-25.000000},{0.000000,240.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,15.000000},{0.000000,300.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>      
+        <Window Type="TLBB_ButtonNULL" Name="FC_Kuafu_Select_SelectServerBtn11">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.500000,-120.000000}}"/>
+          <Property Name="PushedImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn2_Pushed"/>
+          <Property Name="NormalImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn2_Normal"/>
+          <Property Name="HoverImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn2_Hover"/>
+          <Property Name="DisabledImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn2_Disabled"/>          
+					<Event Name="Clicked" Function="FC_Kuafu_Select_Entry(10)"/>
+          <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_SelectServerBtn11Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{ZJKF_250331_33}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="FC_Kuafu_Select_SelectServerBtn12">
+          <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-204.000000},{0.500000,3.000000}}"/>
+          <Property Name="PushedImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Pushed"/>
+          <Property Name="NormalImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Normal"/>
+          <Property Name="HoverImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Hover"/>
+          <Property Name="DisabledImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Disabled"/> 
+					<Event Name="Clicked" Function="FC_Kuafu_Select_Entry(11)"/>
+          <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_SelectServerBtn12Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{ZJKF_250331_34}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="FC_Kuafu_Select_SelectServerBtn13">
+          <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,110.000000},{0.500000,3.000000}}"/>
+          <Property Name="PushedImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Pushed"/>
+          <Property Name="NormalImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Normal"/>
+          <Property Name="HoverImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Hover"/>
+          <Property Name="DisabledImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Disabled"/>  
+          
+					<Event Name="Clicked" Function="FC_Kuafu_Select_Entry(12)"/>
+          <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_SelectServerBtn13Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{ZJKF_250331_35}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="FC_Kuafu_Select_SelectServerBtn14">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-214.000000},{0.500000,-98.000000}}"/>
+          <Property Name="PushedImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Pushed"/>
+          <Property Name="NormalImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Normal"/>
+          <Property Name="HoverImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Hover"/>
+          <Property Name="DisabledImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Disabled"/>  
+          
+					<Event Name="Clicked" Function="FC_Kuafu_Select_Entry(13)"/>
+          <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_SelectServerBtn14Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{ZJKF_250331_36}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="FC_Kuafu_Select_SelectServerBtn15">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,80.000000},{0.500000,-98.000000}}"/>
+          <Property Name="PushedImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Pushed"/>
+          <Property Name="NormalImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Normal"/>
+          <Property Name="HoverImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Hover"/>
+          <Property Name="DisabledImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Disabled"/>  
+					<Event Name="Clicked" Function="FC_Kuafu_Select_Entry(14)"/>
+          <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_SelectServerBtn15Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{ZJKF_250331_53}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="FC_Kuafu_Select_SelectServer4">
+        <Property Name="UnifiedSize" Value="{{0.500000,-25.000000},{0.000000,240.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,300.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="AlwaysOnTop" Value="True"/>      
+        <Window Type="TLBB_ButtonNULL" Name="FC_Kuafu_Select_SelectServerBtn16">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-64.000000},{0.500000,-124.000000}}"/>
+          <Property Name="PushedImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn2_Pushed"/>
+          <Property Name="NormalImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn2_Normal"/>
+          <Property Name="HoverImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn2_Hover"/>
+          <Property Name="DisabledImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn2_Disabled"/>
+					<Event Name="Clicked" Function="FC_Kuafu_Select_Entry(15)"/>
+          <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_SelectServerBtn16Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{ZJKF_250331_33}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="FC_Kuafu_Select_SelectServerBtn17">
+          <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-230.000000},{0.500000,3.000000}}"/>
+          <Property Name="PushedImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Pushed"/>
+          <Property Name="NormalImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Normal"/>
+          <Property Name="HoverImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Hover"/>
+          <Property Name="DisabledImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Disabled"/> 
+					<Event Name="Clicked" Function="FC_Kuafu_Select_Entry(16)"/>
+          <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_SelectServerBtn17Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{ZJKF_250331_34}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="FC_Kuafu_Select_SelectServerBtn18">
+          <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,84.000000},{0.500000,3.000000}}"/>
+          <Property Name="PushedImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Pushed"/>
+          <Property Name="NormalImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Normal"/>
+          <Property Name="HoverImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Hover"/>
+          <Property Name="DisabledImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Disabled"/>  
+          
+					<Event Name="Clicked" Function="FC_Kuafu_Select_Entry(17)"/>
+          <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_SelectServerBtn18Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{ZJKF_250331_35}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="FC_Kuafu_Select_SelectServerBtn19">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-212.000000},{0.500000,-96.000000}}"/>
+          <Property Name="PushedImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Pushed"/>
+          <Property Name="NormalImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Normal"/>
+          <Property Name="HoverImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Hover"/>
+          <Property Name="DisabledImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Disabled"/>  
+					<Event Name="Clicked" Function="FC_Kuafu_Select_Entry(18)"/>
+          <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_SelectServerBtn19Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{ZJKF_250331_36}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="FC_Kuafu_Select_SelectServerBtn20">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,89.000000},{0.500000,-96.000000}}"/>
+          <Property Name="PushedImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Pushed"/>
+          <Property Name="NormalImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Normal"/>
+          <Property Name="HoverImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Hover"/>
+          <Property Name="DisabledImage" Value="set:FC_Kuafu_Select image:FC_Kuafu_Select_Btn1_Disabled"/>  
+					<Event Name="Clicked" Function="FC_Kuafu_Select_Entry(19)"/>
+          <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_SelectServerBtn20Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{ZJKF_250331_53}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace4" Name="FC_Kuafu_Select_Help_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,380.000000},{0.000000,29.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-190.000000},{1.000000,-39.000000}}" />
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_Help_Text1">
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,7.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}" />
+          <Property Name="Text" Value="#{ZJKF_250331_59}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_Help_Text2">
+          <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,7.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}" />
+          <Property Name="Text" Value="#{ZJKF_250331_60}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_Help_Text3">
+          <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,7.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}" />
+          <Property Name="Text" Value="#{ZJKF_250331_61}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="FC_Kuafu_Select_Help_Text4">
+          <Property Name="UnifiedPosition" Value="{{0.000000,280.000000},{0.000000,7.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}" />
+          <Property Name="Text" Value="#{ZJKF_250331_62}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

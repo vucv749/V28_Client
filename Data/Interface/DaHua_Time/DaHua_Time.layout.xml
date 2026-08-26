@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="DaHua_Time">
+    <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,224.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-284.000000},{0.500000,70.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="DaHua_Time_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-64.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,9.000000}}"/>
+      <Property Name="DragTarget" Value="DaHua_Time" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{QXPVE_240522_38}" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="DaHua_Time_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="DaHua_Time_Image">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,13.000000}}"/>
+      <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+      <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+      <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+      <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>
+      <Event Name="Clicked" Function="DaHua_Time_OpenMini()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="DaHua_Time_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-50.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,33.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_Frame_Lace1" Name="DaHua_Time_Up">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-80.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="DaHua_Time_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{QXPVE_240522_39}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="DaHua_Time_Down">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,76.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-78.000000}}"/>
+        <Window Type="DefaultWindow" Name="DaHua_Time_Pair_Title">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Visible" Value="False"/>
+          <Window Type="TLBB_SimpleText" Name="DaHua_Time_Pair_Title1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{.000000,25.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="Text" Value="#{详细信息}" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="DaHua_Time_Pair">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,70.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="TLBB_SimpleText" Name="DaHua_Time_TimeTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,25.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="Text" Value="#{QXPVE_240522_40}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_Time_TimeTitle2">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,50.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="Text" Value="#{QXPVE_240522_42}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_Time_TimeTitle3">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="Text" Value="#{QXPVE_240522_142}" />
+          </Window>
+          <Window Type="TLBB_StopWatch" Name="DaHua_Time_Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-74.000000},{0.000000,25.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_StopWatch" Name="DaHua_Time_Time2">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-74.000000},{0.000000,50.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Event Name="ReachedZero" Function="DaHua_Time_TimeOut();"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_Time_Time2Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-124.000000},{0.000000,50.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Text" Value="#{QXPVE_240522_140}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_Time_Time3Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-74.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Text" Value="" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

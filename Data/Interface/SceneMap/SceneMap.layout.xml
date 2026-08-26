@@ -1,0 +1,276 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="SceneMap_Frame">
+    <Property Name="UnifiedSize" Value="{{1.000000,-165.000000},{1.000000,-88.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,40.000000}}"/>
+    <Property Name="AttachEnabled" Value="False"/>
+    <Property Name="AlwaysOnTop" Value="True"/>
+    <Event Name="Hidden" Function="SceneMap_Hidden();"/>
+    <Window Type="TLBB_DragTitle" Name="SceneMap_SceneName">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="ScemeMap_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Helper:GotoHelper('*SceneMap');"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="ScemeMap_CloseButtons">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="SceneMap_Close();"/>
+    </Window>
+    <Window Type="TLBB_SimpleTextFrameLeft" Name="SceneMap_Text1">
+      <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,18.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,38.000000}}"/>
+      <Property Name="TextColor" Value="FFFFF263"/>
+      <Property Name="Text" Value="#{INTERFACE_XML_663}"/>
+    </Window>
+    <Window Type="TLBB_SimpleTextFrameRight" Name="SceneMap_Crood">
+      <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,18.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,115.000000},{0.000000,38.000000}}"/>
+    </Window>
+    <Window Type="TLBB_ComboList" Name="sceneMap_ComboList">
+      <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-75.000000},{0.000000,38.000000}}"/>
+      <Event Name="ListSelectionAccepted" Function="sceneMap_ComboList_Changed()" />
+    </Window>
+    <Window Type="TLBB_SimpleText" Name="SceneMap_Text2">
+      <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-150.000000},{0.000000,38.000000}}"/>
+      <Property Name="TextColor" Value="FFFFF263"/>
+      <Property Name="Text" Value="#{INTERFACE_XML_237}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+    </Window>
+    <Window Type="TLBB_ButtonSub" Name="ScemeMap_ZoomButtons1">
+      <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-165.000000},{0.000000,39.000000}}"/>
+      <Event Name="Clicked" Function="SceneMap_ZoomMode( 0 );"/>
+    </Window>
+    <Window Type="TLBB_ButtonAdd" Name="ScemeMap_ZoomButtons2">
+      <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,39.000000}}"/>
+      <Event Name="Clicked" Function="SceneMap_ZoomMode( 1 );"/>
+    </Window>
+    <Window Type="TLBB_SceneMap" Name="SceneMap_Board">
+      <Property Name="UnifiedPosition" Value="{{0.0,15.000000},{0.000000,62.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.0,-30.000000},{1.000000,-100.000000}" />
+      <Property Name="AutoReset" Value="false" />
+      <Property Name="IconImage" Value="type:Icon2 set:UIIcons image:Map_Teammate" />
+      <Property Name="IconImage" Value="type:Icon15 set:UIIcons image:Map_Gurid" />
+      <Property Name="IconImage" Value="type:Icon8 set:UIIcons image:Map_NPC" />
+      <Property Name="IconImage" Value="type:Icon16 set:UIIcons image:Map_Trip" />
+      <Property Name="IconImage" Value="type:Icon17 set:CommonFrame7 image:Phoenix_RedStone" />
+      <Property Name="IconImage" Value="type:Icon18 set:CommonFrame7 image:Phoenix_BlueStone" />
+      <Property Name="IconImage" Value="type:Icon19 set:CommonFrame7 image:Phoenix_BlackStone" />
+      <Property Name="IconImage" Value="type:Icon20 set:CommonFrame7 image:Phoenix_Qi" />
+      <Property Name="IconImage" Value="type:Icon24 set:UIIcons image:Map_Union" />
+      <Property Name="IconImage" Value="type:Icon25 set:MiNimap_Tips image:ShenFen_Yure_GTJ" />
+      <Property Name="IconImage" Value="type:Icon118 set:DaHua_PvE image:DaHua_PvEniu2" />
+      <Property Name="IconImage" Value="type:Icon119 set:DaHua_PvE image:DaHua_PvEhou2" />
+      <Property Name="IconImage" Value="type:Icon120 set:DaHua_PvE image:DaHua_PvEshen2" />
+      <Property Name="IconImage" Value="type:Icon121 set:DaHua_PvE image:DaHua_PvEniu3" />
+      <Property Name="IconImage" Value="type:Icon122 set:DaHua_PvE image:DaHua_PvEhou3" />
+      <Property Name="IconImage" Value="type:Icon123 set:DaHua_PvE image:DaHua_PvEshen3" />
+      <Property Name="IconImage" Value="type:Icon124 set:NewPvp image:NewPvp_bashe" />
+      <Property Name="IconImage" Value="type:Icon125 set:NewPvp image:NewPvp_henggong" />
+      <Property Name="IconImage" Value="type:Icon126 set:NewPvp image:NewPvp_xuejiu" />
+      <Property Name="IconImage" Value="type:Icon127 set:NewPvp image:NewPvp_zhanqi2" />
+      <Property Name="IconImage" Value="type:Icon128 set:NewPvp image:NewPvp_zhanqi2" />
+      <Property Name="IconImage" Value="type:Icon129 set:NewPvp image:NewPvp_zhanqi2" />
+      <Property Name="IconImage" Value="type:Icon130 set:NewPvp image:NewPvp_zhanqi1" />
+      <Property Name="IconImage" Value="type:Icon131 set:NewPvp image:NewPvp_zhanqi1" />
+      <Property Name="IconImage" Value="type:Icon132 set:NewPvp image:NewPvp_zhanqi1" />
+      <Property Name="IconImage" Value="type:Icon133 set:NewPvp image:NewPvp_longta" />
+      <Property Name="IconImage" Value="type:Icon134 set:NewPvp image:NewPvp_dasiming2" />
+      <Property Name="IconImage" Value="type:Icon135 set:NewPvp image:NewPvp_YaoTa1shui" />
+      <Property Name="IconImage" Value="type:Icon136 set:NewPvp image:NewPvp_YaoTa1shui" />
+      <Property Name="IconImage" Value="type:Icon137 set:NewPvp image:NewPvp_YaoTa2shui" />
+      <Property Name="IconImage" Value="type:Icon138 set:NewPvp image:NewPvp_YaoTa3shui" />
+      <Property Name="IconImage" Value="type:Icon139 set:NewPvp image:NewPvp_YaoTa4shui" />
+      <Property Name="IconImage" Value="type:Icon140 set:NewPvp image:NewPvp_YaoTa1huo" />
+      <Property Name="IconImage" Value="type:Icon141 set:NewPvp image:NewPvp_YaoTa2huo" />
+      <Property Name="IconImage" Value="type:Icon142 set:NewPvp image:NewPvp_YaoTa3huo" />
+      <Property Name="IconImage" Value="type:Icon143 set:NewPvp image:NewPvp_YaoTa4huo" />
+      <Property Name="IconImage" Value="type:Icon144 set:NewPvp image:NewPvp_YaoTa1mu" />
+      <Property Name="IconImage" Value="type:Icon145 set:NewPvp image:NewPvp_YaoTa2mu" />
+      <Property Name="IconImage" Value="type:Icon146 set:NewPvp image:NewPvp_YaoTa3mu" />
+      <Property Name="IconImage" Value="type:Icon147 set:NewPvp image:NewPvp_YaoTa4mu" />
+      <Property Name="IconImage" Value="type:Icon148 set:NewPvp image:NewPvp_LongTa1" />
+      <Property Name="IconImage" Value="type:Icon149 set:NewPvp image:NewPvp_LongTa2" />
+      <Property Name="IconImage" Value="type:Icon150 set:NewPvp image:NewPvp_LongTa3" />
+      <Property Name="IconImage" Value="type:Icon151 set:NewPvp image:NewPvp_dasiming" />
+      <Property Name="IconImage" Value="type:Icon152 set:SongLiao01 image:SL_QL_Dis" />
+      <Property Name="IconImage" Value="type:Icon153 set:SongLiao01 image:SL_QL_F" />
+      <Property Name="IconImage" Value="type:Icon154 set:SongLiao01 image:SL_QL_Fight" />
+      <Property Name="IconImage" Value="type:Icon155 set:SongLiao01 image:SL_QL_Hover" />
+      <Property Name="IconImage" Value="type:Icon156 set:SongLiao01 image:SL_QL_L" />
+      <Property Name="IconImage" Value="type:Icon157 set:SongLiao01 image:SL_QL_Normal" />
+      <Property Name="IconImage" Value="type:Icon158 set:SongLiao01 image:SL_QL_S" />
+      <Property Name="IconImage" Value="type:Icon159 set:SongLiao01 image:SL_BH_Dis" />
+      <Property Name="IconImage" Value="type:Icon160 set:SongLiao01 image:SL_BH_F" />
+      <Property Name="IconImage" Value="type:Icon161 set:SongLiao01 image:SL_BH_Fight" />
+      <Property Name="IconImage" Value="type:Icon162 set:SongLiao01 image:SL_BH_Hover" />
+      <Property Name="IconImage" Value="type:Icon163 set:SongLiao01 image:SL_BH_L" />
+      <Property Name="IconImage" Value="type:Icon164 set:SongLiao01 image:SL_BH_Normal" />
+      <Property Name="IconImage" Value="type:Icon165 set:SongLiao01 image:SL_BH_S" />
+      <Property Name="IconImage" Value="type:Icon166 set:SongLiao01 image:SL_XW_Dis" />
+      <Property Name="IconImage" Value="type:Icon167 set:SongLiao01 image:SL_XW_F" />
+      <Property Name="IconImage" Value="type:Icon168 set:SongLiao01 image:SL_XW_Fight" />
+      <Property Name="IconImage" Value="type:Icon169 set:SongLiao01 image:SL_XW_Hover" />
+      <Property Name="IconImage" Value="type:Icon170 set:SongLiao01 image:SL_XW_L" />
+      <Property Name="IconImage" Value="type:Icon171 set:SongLiao01 image:SL_XW_Normal" />
+      <Property Name="IconImage" Value="type:Icon172 set:SongLiao01 image:SL_XW_S" />
+      <Property Name="IconImage" Value="type:Icon173 set:SongLiao01 image:SL_ZQ_Dis" />
+      <Property Name="IconImage" Value="type:Icon174 set:SongLiao01 image:SL_ZQ_F" />
+      <Property Name="IconImage" Value="type:Icon175 set:SongLiao01 image:SL_ZQ_Fight" />
+      <Property Name="IconImage" Value="type:Icon176 set:SongLiao01 image:SL_ZQ_Hover" />
+      <Property Name="IconImage" Value="type:Icon177 set:SongLiao01 image:SL_ZQ_L" />
+      <Property Name="IconImage" Value="type:Icon178 set:SongLiao01 image:SL_ZQ_Normal" />
+      <Property Name="IconImage" Value="type:Icon179 set:SongLiao01 image:SL_ZQ_S" />
+      <Property Name="IconImage" Value="type:Icon180 set:QinChiDao image:Kui1" />
+      <Property Name="IconImage" Value="type:Icon181 set:QinChiDao image:FengXuan1" />
+      <Property Name="IconImage" Value="type:Icon182 set:QinChiDao image:HuDie1" />
+      <Property Name="IconImage" Value="type:Icon183 set:QinChiDao image:QiZhi1" />
+      <Property Name="IconImage" Value="type:Icon184 set:QinChiDao image:wuzhang" />
+      <Property Name="IconImage" Value="type:Icon185 set:QinChiDao image:shizhang" />
+      <Property Name="IconImage" Value="type:Icon186 set:QinChiDao image:baijiang" />
+      <Property Name="IconImage" Value="type:Icon187 set:Sanhuan image:Sanhuan_Npc_Boss" />
+      <Property Name="IconImage" Value="type:Icon188 set:Sanhuan image:Sanhuan_Npc_Feng" />
+      <Property Name="IconImage" Value="type:Icon189 set:Sanhuan image:Sanhuan_Npc_Yan" />
+      <Property Name="IconImage" Value="type:Icon190 set:Sanhuan image:Sanhuan_Npc_Di" />
+      <Property Name="IconImage" Value="type:Icon191 set:Sanhuan image:Sanhuan_Npc_Xuan" />
+      <Property Name="IconImage" Value="type:Icon192 set:Sanhuan image:Sanhuan_Npc_Du" />
+      <Property Name="IconImage" Value="type:Icon193 set:UIIcons image:Map_Animy" />
+      <Property Name="IconImage" Value="type:Icon194 set:ZSTX_ScenceMap image:DanDanJi" />
+      <Property Name="IconImage" Value="type:Icon195 set:ZSTX_ScenceMap image:DaiDaiNiu" />
+      <Property Name="IconImage" Value="type:Icon196 set:ZSTX_ScenceMap image:XiaoHuXian" />
+      <Property Name="IconImage" Value="type:Icon197 set:MiNimap_Tips image:GanEnJie_HuoJi" />
+      <Property Name="IconImage" Value="type:Icon198 set:HCZB_SceneMap image:ZB_Baihu" />
+      <Property Name="IconImage" Value="type:Icon199 set:HCZB_SceneMap image:ZB_Jiuwei" />
+      <Property Name="IconImage" Value="type:Icon200 set:HCZB_SceneMap image:ZB_Xuanwu" />
+      <Property Name="IconImage" Value="type:Icon201 set:MiNimap_Tips image:WuDao2_LingYao" />
+      <Property Name="IconImage" Value="type:Icon202 set:MiNimap_Tips image:WuDao2_NuanYangZhen" />
+      <Property Name="IconImage" Value="type:Icon203 set:QinChiDao image:BaoXiangDa" />
+      <Property Name="IconImage" Value="type:Icon204 set:QinChiDao image:BaoXiangXiao" />
+      <Property Name="IconImage" Value="type:Icon205 set:MiNimap_Tips image:PetSoul_JW" />
+      <Property Name="IconImage" Value="type:Icon206 set:MiNimap_Tips image:PetSoul_QL" />
+      <Property Name="IconImage" Value="type:Icon207 set:MiNimap_Tips image:PetSoul_XW" />
+      <Property Name="IconImage" Value="type:Icon208 set:MiNimap_Tips image:PetSoul_BH" />
+      <Property Name="IconImage" Value="type:Icon209 set:MiNimap_Tips image:PetSoul_ZQ" />
+      <Property Name="IconImage" Value="type:Icon210 set:QinChiDao image:jiangjun" />
+      <Property Name="IconImage" Value="type:Icon211 set:Labiao2 image:B_diji" />
+      <Property Name="IconImage" Value="type:Icon212 set:Labiao2 image:B_gaoji" />
+      <Property Name="IconImage" Value="type:Icon213 set:Labiao2 image:B_zhongji" />
+      <Property Name="IconImage" Value="type:Icon214 set:Labiao2 image:S_diji" />
+      <Property Name="IconImage" Value="type:Icon215 set:Labiao2 image:S_gaoji" />
+      <Property Name="IconImage" Value="type:Icon216 set:Labiao2 image:S_zhongji" />
+      <Property Name="IconImage" Value="type:Icon217 set:Wushi image:Renxingwushi" />
+      <Property Name="IconImage" Value="type:Icon218 set:Wushi image:Wushixiuqiu" />
+      <Property Name="IconImage" Value="type:Icon219 set:NewZhuXian_Task image:PVP_SstBossFyz" />
+      <Property Name="IconImage" Value="type:Icon220 set:NewZhuXian_Task image:PVP_SstBoss" />
+      <Property Name="IconImage" Value="type:Icon221 set:NewZhuXian_Task image:PVP_Sst" />
+      <Property Name="IconImage" Value="type:Icon222 set:NewZhuXian_Task image:PVP_YstBossfyz" />
+      <Property Name="IconImage" Value="type:Icon223 set:NewZhuXian_Task image:PVP_YstBoss" />
+      <Property Name="IconImage" Value="type:Icon224 set:NewZhuXian_Task image:PVP_Yst" />
+      <Property Name="IconImage" Value="type:Icon225 set:MiNimap_Tips image:Wakuang" />
+      <Property Name="IconImage" Value="type:Icon226 set:MiNimap_Tips image:Cijianxiangsi" />
+      <Property Name="IconImage" Value="type:Icon227 set:MiNimap_Tips image:Flag_Fire" />
+      <Property Name="IconImage" Value="type:Icon228 set:MiNimap_Tips image:Flag_Common" />
+      <Property Name="IconImage" Value="type:Icon229 set:MiNimap_Tips image:Flag_Dis" />
+      <Property Name="IconImage" Value="type:Icon230 set:MiNimap_Tips image:ZNQ_WaBaoZang" />
+      <Property Name="IconImage" Value="type:Icon231 set:MiNimap_Tips image:ZNQ_Car" />
+      <Property Name="IconImage" Value="type:Icon232 set:MiNimap_Tips image:TanChiJingLing" />
+      <Property Name="IconImage" Value="type:Icon233 set:MiNimap_Tips image:XiaJiWH_DanYao" />
+      <Property Name="IconImage" Value="type:Icon234 set:MiNimap_Tips image:Dahua_Zhizunbao" />
+      <Property Name="IconImage" Value="type:Icon235 set:MiNimap_Tips image:Dahua_Baigu" />
+      <Property Name="IconImage" Value="type:Icon236 set:MiNimap_Tips image:Dahua_Niuyao" />
+      <Property Name="IconImage" Value="type:Icon237 set:MiNimap_Tips image:Dahua_Tianbing" />
+      <Property Name="IconImage" Value="type:Icon238 set:MiNimap_Tips image:Dahua_jingcui" />
+      <Property Name="IconImage" Value="type:Icon239 set:MiNimap_Tips image:Dahua_jinghua" />
+      <Property Name="IconImage" Value="type:Icon240 set:MiNimap_Tips image:YouShenHuaChe" />
+      <Property Name="IconImage" Value="type:Icon241 set:MiNimap_Tips image:CaiYunBaoXiang" />
+      
+      <Property Name="AnimateImage" Value="type:Animate8 animate:Minimap_Direction2" />
+      <Property Name="AnimateImage" Value="type:Animate9 animate:Minimap_Direction" />
+      <Property Name="AnimateImage" Value="type:Animate10 animate:Minimap_arrow" />
+      <Property Name="AnimateImage" Value="type:Animate16 animate:Minimap_Direction2" />
+      <Property Name="FlashAnimateImage" Value="type:FlashAnimateImage8 animate:ActiveFlash" />
+      <Property Name="FlashAnimateImage" Value="type:FlashAnimateImage16 animate:ActiveFlash" />
+      <Property Name="MouseHollow" Value="false" />
+      <Event Name="MouseMove" Function="SceneMap_UpdateInfo();" />
+      <Event Name="MouseEnter" Function="SceneMap_UpdateInfo();" />
+      <Event Name="MouseLeave" Function="SceneMap_UpdateInfo();" />
+      <Event Name="MouseRButtonDownCtrl" Function="SceneMap_GM_GotoPos();" />
+      <Event Name="MouseLButtonClick" Function="SceneMap_GotoDirectly();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="SceneMap_Move">
+      <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,100.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-125.000000},{1.000000,-155.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Window Type="TLBB_ButtonNULL" Name="SceneMap_MoveUp">
+        <Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,33.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,33.000000},{0.000000,0.000000}}"/>
+        <Property Name="Tooltip" Value="#{INTERFACE_XML_751}"/>
+        <Property Name="PushedImage" Value="set:Buttons image:SceneMap_Up_Pushed"/>
+        <Property Name="NormalImage" Value="set:Buttons image:SceneMap_Up_Normal"/>
+        <Property Name="HoverImage" Value="set:Buttons image:SceneMap_Up_Hover"/>
+        <Event Name="MouseLButtonDown" Function="SceneMap_Board:DoScroll(1);"/>
+        <Event Name="MouseButtonUp" Function="SceneMap_Board:DoScroll(0);"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="SceneMap_MoveDown">
+        <Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,33.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,33.000000},{0.000000,66.000000}}"/>
+        <Property Name="Tooltip" Value="#{INTERFACE_XML_753}"/>
+        <Property Name="PushedImage" Value="set:Buttons image:SceneMap_Down_Pushed"/>
+        <Property Name="NormalImage" Value="set:Buttons image:SceneMap_Down_Normal"/>
+        <Property Name="HoverImage" Value="set:Buttons image:SceneMap_Down_Hover"/>
+        <Event Name="MouseLButtonDown" Function="SceneMap_Board:DoScroll(2);"/>
+        <Event Name="MouseButtonUp" Function="SceneMap_Board:DoScroll(0);"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="SceneMap_MoveL">
+        <Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,33.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,33.000000}}"/>
+        <Property Name="Tooltip" Value="#{INTERFACE_XML_755}"/>
+        <Property Name="PushedImage" Value="set:Buttons image:SceneMap_Left_Pushed"/>
+        <Property Name="NormalImage" Value="set:Buttons image:SceneMap_Left_Normal"/>
+        <Property Name="HoverImage" Value="set:Buttons image:SceneMap_Left_Hover"/>
+        <Event Name="MouseLButtonDown" Function="SceneMap_Board:DoScroll(3);"/>
+        <Event Name="MouseButtonUp" Function="SceneMap_Board:DoScroll(0);"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="SceneMap_MoveR">
+        <Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,33.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,33.000000}}"/>
+        <Property Name="Tooltip" Value="#{INTERFACE_XML_754}"/>
+        <Property Name="PushedImage" Value="set:Buttons image:SceneMap_Right_Pushed"/>
+        <Property Name="NormalImage" Value="set:Buttons image:SceneMap_Right_Normal"/>
+        <Property Name="HoverImage" Value="set:Buttons image:SceneMap_Right_Hover"/>
+        <Event Name="MouseLButtonDown" Function="SceneMap_Board:DoScroll(4);"/>
+        <Event Name="MouseButtonUp" Function="SceneMap_Board:DoScroll(0);"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_SimpleText" Name="SceneMap_Text3">
+      <Property Name="UnifiedSize" Value="{{0.000000,338.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-169.000000},{1.000000,-38.000000}}"/>
+      <Property Name="TextColor" Value="FFFFF263"/>
+      <Property Name="Text" Value="#{KCJXL_130417_1}"/>
+      <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="sceneMap_LargeMap">
+      <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-240.000000},{1.000000,-38.000000}}"/>
+      <Property Name="Tooltip" Value="#{DTQH_090305_4} "/>
+      <Property Name="Text" Value="#{DTQH_090305_2}"/>
+      <Event Name="Clicked" Function="sceneMap_LargeMap_Clicked();" />
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="sceneMap_back">
+      <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-125.000000},{1.000000,-38.000000}}"/>
+      <Property Name="Tooltip" Value="#{SJXL_120423_14}"/>
+      <Property Name="Text" Value="#{SJXL_120423_14}"/>
+      <Event Name="Clicked" Function="SceneMap_Show_CurrentScene();" />
+    </Window>
+  </Window>
+</GUILayout>

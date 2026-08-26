@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="NoDiffMatch_ZJSGMMatch_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,435.000000},{0.000000,280.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.150000,0.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="NoDiffMatch_ZJSGMMatch_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:40.000000 y:4.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="NoDiffMatch_ZJSGMMatch_Frame" />
+      <Window Type="TLBB_SimpleText" Name="NoDiffMatch_ZJSGMMatch_PageHeader">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,8.000000}}"/>
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="Text" Value="#{WCJS_180307_10}" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+      </Window>
+    </Window>
+
+    <Window Type="TLBB_ButtonClose" Name="NoDiffMatch_ZJSGMMatch_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="this:Hide();" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="NoDiffMatch_ZJSGMMatch_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="NoDiffMatch_ZJSGMMatch_Function_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-47.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,29.000000}}"/>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="NoDiffMatch_ZJSGMMatch_Demand_Text">
+        <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{1.000000,-138.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,8.000000}}"/>
+        <Property Name="Text" Value="#{WCJS_180307_11}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="NoDiffMatch_ZJSGMMatch_Text_BK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,108.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="NoDiffMatch_ZJSGMMatch_Text1">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="战队A的ID" />
+        </Window>
+        <Window Type="TLBB_EditBoxNormal" Name="NoDiffMatch_ZJSGMMatch_Input1">
+          <Property Name="UnifiedSize" Value="{{0.000000,151.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.500000,-9.000000}}"/>
+          <Property Name="MaxTextLength" Value="20" />
+          <Property Name="ValidationString" Value="[^#,&apos;?]*" />
+          <Property Name="Text" Value="请在此输入战队A的ID" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="NoDiffMatch_ZJSGMMatch_Text2_BK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,142.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="NoDiffMatch_ZJSGMMatch_Text2">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="战队B的ID" />
+        </Window>
+        <Window Type="TLBB_EditBoxNormal" Name="NoDiffMatch_ZJSGMMatch_Input2">
+          <Property Name="UnifiedSize" Value="{{0.000000,151.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.500000,-9.000000}}"/>
+          <Property Name="MaxTextLength" Value="30" />
+          <Property Name="ValidationString" Value="[^#,&apos;?]*" />
+          <Property Name="Text" Value="请在此输入战队B的ID" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="NoDiffMatch_ZJSGMMatch_Text3_BK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,174.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="NoDiffMatch_ZJSGMMatch_Text3">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="比赛场地" />
+        </Window>
+        <Window Type="TLBB_ComboList" Name="NoDiffMatch_ZJSGMMatch_select">
+          <Property Name="UnifiedSize" Value="{{0.000000,151.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.500000,-9.000000}}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="NoDiffMatch_ZJSGMMatch_Blank">
+        <Property Name="UnifiedSize" Value="{{1.000000,-124.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-21.000000}}"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="NoDiffMatch_ZJSGMMatch_Ensure">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-123.000000},{1.000000,-21.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{WCJS_180307_12}" />
+        <Event Name="Clicked" Function="NoDiffMatch_ZJSGMMatch_Submit_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="NoDiffMatch_ZJSGMMatch_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-43.000000},{1.000000,-21.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{WCJS_180307_13}" />
+        <Event Name="Clicked" Function="NoDiffMatch_ZJSGMMatch_Cancel_Clicked();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

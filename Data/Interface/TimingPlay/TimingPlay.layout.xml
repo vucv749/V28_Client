@@ -1,0 +1,313 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="TimingPlay_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,810.000000},{0.000000,477.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-405.000000},{0.500000,-240.000000}}"/>
+    <Event Name="Hidden" Function="TimingPlay_OnHiden()"/>
+    <Window Type="TLBB_HeroTitle01" Name="TimingPlay_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,314.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-157.500000},{0.000000,-2.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="TimingPlay_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Text" Value="#{JZF_230821_11}" />
+      <Property Name="DragTarget" Value="TimingPlay_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose2" Name="TimingPlay_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+      <Event Name="Clicked" Function="TimingPlay_OnHiden()" />
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="TimingPlay_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+      <Property Name="RiseOnClick" Value="False" />
+      <Property Name="Image" Value="set:TimingPlay03 image:TimingPlayBK"/>
+      <Window Type="DefaultWindow" Name="TimingPlay_InfoBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.000000,10.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="TimingPlay_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{JZF_230821_12}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="TimingPlay_ImgClient">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,338.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,50.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="TimingPlay_TextBK1_BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,178.000000},{0.000000,338.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:TimingPlay01 image:TimingPlay_BK4"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="TimingPlay_TextBK2_BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,178.000000},{0.000000,338.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:TimingPlay01 image:TimingPlay_BK4"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="TimingPlay_TextBK3_BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,178.000000},{0.000000,338.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,408.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:TimingPlay01 image:TimingPlay_BK4"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="TimingPlay_TextBK4_BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,178.000000},{0.000000,338.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,596.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:TimingPlay01 image:TimingPlay_BK4"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="TimingPlay_TextBK1_Star">
+          <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,54.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,144.000000},{0.000000,162.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:TimingPlay01 image:TimingPlay_JJKQ"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="TimingPlay_TextBK2_Star">
+          <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,54.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,332.000000},{0.000000,162.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:TimingPlay01 image:TimingPlay_JJKQ"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="TimingPlay_TextBK3_Star">
+          <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,54.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,520.000000},{0.000000,162.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:TimingPlay01 image:TimingPlay_JJKQ"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="TimingPlay_TextBK4_Star">
+          <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,54.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,708.000000},{0.000000,162.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:TimingPlay01 image:TimingPlay_JJKQ"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="TimingPlay_TextBK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,178.000000},{0.000000,338.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:TimingPlay01 image:TimingPlay_DFZJ1"/>
+          <Window Type="TLBB_ButtonNULL" Name="TimingPlay_TextBK1_Mask">
+            <Property Name="UnifiedSize" Value="{{0.000000,178.000000},{0.000000,338.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="PushedImage" Value="set:TimingPlay01 image:TimingPlay_DFZJ3"/>
+            <Property Name="HoverImage" Value="set:TimingPlay01 image:TimingPlay_DFZJ2"/>
+            <Event Name="Clicked" Function="TimingPlay_Click(1)"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TimingPlay_TextBK1_Info">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,194.000000}}"/>
+            <Property Name="Text" Value="#{JZF_230821_37}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TimingPlay_TextBK1_Info_BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.000000,300.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:JiangHuShiJi image:TimingPlay_Text_BK"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="TimingPlay_TextBK1_Info2">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{JZF_230821_28}"/>
+              <Property Name="Font" Value="YouYuan13"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="TimingPlay_TextBK2">
+          <Property Name="UnifiedSize" Value="{{0.000000,178.000000},{0.000000,338.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:TimingPlay01 image:TimingPlay_DFZJ1"/>
+          <Window Type="TLBB_ButtonNULL" Name="TimingPlay_TextBK2_Mask">
+            <Property Name="UnifiedSize" Value="{{0.000000,178.000000},{0.000000,338.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="PushedImage" Value="set:TimingPlay01 image:TimingPlay_DFZJ3"/>
+            <Property Name="HoverImage" Value="set:TimingPlay01 image:TimingPlay_DFZJ2"/>
+            <Event Name="Clicked" Function="TimingPlay_Click(2)"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TimingPlay_TextBK2_Info">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,194.000000}}"/>
+            <Property Name="Text" Value="#{JZF_230821_13}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TimingPlay_TextBK2_info3_BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.000000,300.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:JiangHuShiJi image:TimingPlay_Text_BK"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="TimingPlay_TextBK2_Info2">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{JZF_230821_28}"/>
+              <Property Name="Font" Value="YouYuan13"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="TimingPlay_TextBK3">
+          <Property Name="UnifiedSize" Value="{{0.000000,178.000000},{0.000000,338.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,408.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:TimingPlay01 image:TimingPlay_DFZJ1"/>
+          <Window Type="TLBB_ButtonNULL" Name="TimingPlay_TextBK3_Mask">
+            <Property Name="UnifiedSize" Value="{{0.000000,178.000000},{0.000000,338.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="PushedImage" Value="set:TimingPlay01 image:TimingPlay_DFZJ3"/>
+            <Property Name="HoverImage" Value="set:TimingPlay01 image:TimingPlay_DFZJ2"/>
+            <Event Name="Clicked" Function="TimingPlay_Click(3)"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TimingPlay_TextBK3_Info">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,194.000000}}"/>
+            <Property Name="Text" Value="#{JZF_230821_15}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TimingPlay_TextBK3_info3_BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.000000,300.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:JiangHuShiJi image:TimingPlay_Text_BK"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="TimingPlay_TextBK3_Info2">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{JZF_230821_28}"/>
+              <Property Name="Font" Value="YouYuan13"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="TimingPlay_TextBK4">
+          <Property Name="UnifiedSize" Value="{{0.000000,178.000000},{0.000000,338.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,596.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:TimingPlay01 image:TimingPlay_DFZJ1"/>
+          <Window Type="TLBB_ButtonNULL" Name="TimingPlay_TextBK4_Mask">
+            <Property Name="UnifiedSize" Value="{{0.000000,178.000000},{0.000000,338.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="PushedImage" Value="set:TimingPlay01 image:TimingPlay_DFZJ3"/>
+            <Property Name="HoverImage" Value="set:TimingPlay01 image:TimingPlay_DFZJ2"/>
+            <Event Name="Clicked" Function="TimingPlay_Click(4)"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TimingPlay_TextBK4_Info">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,194.000000}}"/>
+            <Property Name="Text" Value="#{JZF_230821_17}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TimingPlay_TextBK4_Info_BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.000000,300.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:JiangHuShiJi image:TimingPlay_Text_BK"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="TimingPlay_TextBK4_Info2">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{JZF_230821_28}"/>
+              <Property Name="Font" Value="YouYuan13"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="TimingPlay_UpPage">
+        <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-22.000000}}"/>
+        <Event Name="Clicked" Function="TimingPlay_PageUp();"/>
+        <Property Name="PushedImage" Value="set:TimingPlay01 image:TimingPlay_L3"/>
+        <Property Name="NormalImage" Value="set:TimingPlay01 image:TimingPlay_L2"/>
+        <Property Name="HoverImage" Value="set:TimingPlay01 image:TimingPlay_L1"/>
+        <Property Name="DisabledImage" Value="set:TimingPlay01 image:TimingPlay_L4"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="TimingPlay_DownPage">
+        <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-26.000000},{0.500000,-22.000000}}"/>
+        <Event Name="Clicked" Function="TimingPlay_PageDown();"/>
+        <Property Name="PushedImage" Value="set:TimingPlay01 image:TimingPlay_R3"/>
+        <Property Name="NormalImage" Value="set:TimingPlay01 image:TimingPlay_R2"/>
+        <Property Name="HoverImage" Value="set:TimingPlay01 image:TimingPlay_R1"/>
+        <Property Name="DisabledImage" Value="set:TimingPlay01 image:TimingPlay_R4"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

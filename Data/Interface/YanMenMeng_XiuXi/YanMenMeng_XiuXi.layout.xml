@@ -1,0 +1,567 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="YanMenMeng_XiuXi_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,914.000000},{0.000000,678.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-450.000000},{0.500000,-300.000000}}"/>
+    <Event Name="Hidden" Function="YanMenMeng_XiuXi_Frame_On_ResetPos();"/>
+    <Window Type="TLBB_HeroTitle01" Name="YanMenMeng_XiuXi_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,380.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-190.000000},{0.000000,-2.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="YanMenMeng_XiuXi_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+      <Property Name="DragTarget" Value="YanMenMeng_XiuXi_Frame" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="Title" />
+      <Property Name="Text" Value="#{YMMJ_230626_261}" />
+    </Window>
+    <Window Type="TLBB_ButtonClose2" Name="YanMenMeng_XiuXi_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+      <Event Name="Clicked" Function="YanMenMeng_XiuXi_Close()" />
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="YanMenMeng_XiuXi_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Image" Value="set:YanMenMeng image:YanMenMengBK2"/>
+      <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_SelectServerText">
+        <Property Name="UnifiedSize" Value="{{1.000000,-240.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,10.000000}}"/>
+        <Property Name="Text" Value="#{YMMJ_230626_379}"/>
+        <Property Name="VertFormatting" Value="TopAligned"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="YanMenMeng_XiuXi_Level1">
+        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,94.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,284.000000},{0.000000,420.000000}}"/>
+        <Property Name="Image" Value="set:YanMenMeng image:YanMenMeng_60"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="YanMenMeng_XiuXi_Level2">
+        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,94.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,604.000000},{0.000000,240.000000}}"/>
+        <Property Name="Image" Value="set:YanMenMeng image:YanMenMeng_70"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="YanMenMeng_XiuXi_Level3">
+        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,94.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,176.000000}}"/>
+        <Property Name="Image" Value="set:YanMenMeng image:YanMenMeng_80"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="YanMenMeng_XiuXi_Level4">
+        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,94.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,290.000000},{0.000000,100.000000}}"/>
+        <Property Name="Image" Value="set:YanMenMeng image:YanMenMeng_90"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="YanMenMeng_XiuXi_SelectServerBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,162.000000},{0.000000,38.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-210.000000},{0.000000,50.000000}}"/>
+        <Property Name="PushedImage" Value="set:YanMenMeng image:YanMenMeng_BtnPush"/>
+        <Property Name="NormalImage" Value="set:YanMenMeng image:YanMenMeng_BtnNormal"/>
+        <Property Name="HoverImage" Value="set:YanMenMeng image:YanMenMeng_BtnHover"/>
+        <Event Name="Clicked" Function="YanMenMeng_XiuXi_Self()" />
+      </Window>
+      <Window Type="DefaultWindow" Name="YanMenMeng_XiuXi_SelectServer1">
+        <Property Name="UnifiedSize" Value="{{0.000000,312.000000},{0.000000,172.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-140.000000},{0.000000,90.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ButtonNULL" Name="YanMenMeng_XiuXi_SelectServerBtn1">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-54.000000},{0.500000,0.000000}}"/>
+          <Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+          <Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+          <Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+          <Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+          <Property Name="Font" Value="YouYuan18"/>
+          <Event Name="Clicked" Function="YanMenMeng_XiuXi_Other(1)" />
+          <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_SelectServerBtn1Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{YMMJ_230626_265}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+            <Property Name="Font" Value="YouYuan18"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YanMenMeng_XiuXi_SelectServerBtn2">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-142.000000},{0.500000,30.000000}}"/>
+          <Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+          <Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+          <Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+          <Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+          <Property Name="Font" Value="YouYuan18"/>
+          <Event Name="Clicked" Function="YanMenMeng_XiuXi_Other(2)" />
+          <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_SelectServerBtn2Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{YMMJ_230626_265}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+            <Property Name="Font" Value="YouYuan18"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YanMenMeng_XiuXi_SelectServerBtn3">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-92.000000},{0.500000,-78.000000}}"/>
+          <Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+          <Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+          <Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+          <Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+          <Property Name="Font" Value="YouYuan18"/>
+          <Event Name="Clicked" Function="YanMenMeng_XiuXi_Other(3)" />
+          <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_SelectServerBtn3Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{YMMJ_230626_265}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+            <Property Name="Font" Value="YouYuan18"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YanMenMeng_XiuXi_SelectServerBtn4">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,96.000000},{0.500000,-2.000000}}"/>
+          <Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+          <Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+          <Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+          <Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+          <Property Name="Font" Value="YouYuan18"/>
+          <Event Name="Clicked" Function="YanMenMeng_XiuXi_Other(4)" />
+          <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_SelectServerBtn4Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{YMMJ_230626_265}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+            <Property Name="Font" Value="YouYuan18"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YanMenMeng_XiuXi_SelectServerBtn5">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,30.000000},{0.500000,-44.000000}}"/>
+          <Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+          <Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+          <Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+          <Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+          <Property Name="Font" Value="YouYuan18"/>
+          <Event Name="Clicked" Function="YanMenMeng_XiuXi_Other(5)" />
+          <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_SelectServerBtn5Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{YMMJ_230626_265}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+            <Property Name="Font" Value="YouYuan18"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="YanMenMeng_XiuXi_SelectServer2">
+        <Property Name="UnifiedSize" Value="{{0.000000,298.000000},{0.000000,180.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-122.000000},{0.000000,424.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ButtonNULL" Name="YanMenMeng_XiuXi_SelectServerBtn6">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{0.500000,-76.000000}}"/>
+          <Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+          <Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+          <Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+          <Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+          <Property Name="Font" Value="YouYuan18"/>
+          <Event Name="Clicked" Function="YanMenMeng_XiuXi_Other(6)" />
+          <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_SelectServerBtn6Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{YMMJ_230626_265}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+            <Property Name="Font" Value="YouYuan18"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YanMenMeng_XiuXi_SelectServerBtn7">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-134.000000},{0.500000,-68.000000}}"/>
+          <Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+          <Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+          <Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+          <Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+          <Property Name="Font" Value="YouYuan18"/>
+          <Event Name="Clicked" Function="YanMenMeng_XiuXi_Other(7)" />
+          <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_SelectServerBtn7Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{YMMJ_230626_265}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+            <Property Name="Font" Value="YouYuan18"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YanMenMeng_XiuXi_SelectServerBtn8">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,86.000000},{0.500000,-14.000000}}"/>
+          <Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+          <Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+          <Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+          <Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+          <Property Name="Font" Value="YouYuan18"/>
+          <Event Name="Clicked" Function="YanMenMeng_XiuXi_Other(8)" />
+          <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_SelectServerBtn8Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{YMMJ_230626_265}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+            <Property Name="Font" Value="YouYuan18"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YanMenMeng_XiuXi_SelectServerBtn9">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,4.000000},{0.500000,26.000000}}"/>
+          <Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+          <Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+          <Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+          <Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+          <Property Name="Font" Value="YouYuan18"/>
+          <Event Name="Clicked" Function="YanMenMeng_XiuXi_Other(9)" />
+          <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_SelectServerBtn9Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{YMMJ_230626_265}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+            <Property Name="Font" Value="YouYuan18"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YanMenMeng_XiuXi_SelectServerBtn10">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-136.000000},{0.500000,20.000000}}"/>
+          <Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+          <Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+          <Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+          <Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+          <Property Name="Font" Value="YouYuan18"/>
+          <Event Name="Clicked" Function="YanMenMeng_XiuXi_Other(10)" />
+          <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_SelectServerBtn10Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{YMMJ_230626_265}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+            <Property Name="Font" Value="YouYuan18"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="YanMenMeng_XiuXi_SelectServer3">
+        <Property Name="UnifiedSize" Value="{{0.000000,250.000000},{0.000000,254.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,174.000000},{0.000000,208.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ButtonNULL" Name="YanMenMeng_XiuXi_SelectServerBtn11">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,58.000000},{0.500000,-12.000000}}"/>
+          <Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+          <Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+          <Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+          <Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+          <Event Name="Clicked" Function="YanMenMeng_XiuXi_Other(11)" />
+          <Property Name="Font" Value="YouYuan18"/>
+          <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_SelectServerBtn11Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{YMMJ_230626_265}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+            <Property Name="Font" Value="YouYuan18"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YanMenMeng_XiuXi_SelectServerBtn12">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-102.000000},{0.500000,14.000000}}"/>
+          <Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+          <Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+          <Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+          <Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+          <Property Name="Font" Value="YouYuan18"/>
+          <Event Name="Clicked" Function="YanMenMeng_XiuXi_Other(12)" />
+          <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_SelectServerBtn12Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{YMMJ_230626_265}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+            <Property Name="Font" Value="YouYuan18"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YanMenMeng_XiuXi_SelectServerBtn13">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-22.000000},{0.500000,-44.000000}}"/>
+          <Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+          <Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+          <Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+          <Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+          <Property Name="Font" Value="YouYuan18"/>
+          <Event Name="Clicked" Function="YanMenMeng_XiuXi_Other(13)" />
+          <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_SelectServerBtn13Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{YMMJ_230626_265}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+            <Property Name="Font" Value="YouYuan18"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YanMenMeng_XiuXi_SelectServerBtn14">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.500000,50.000000}}"/>
+          <Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+          <Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+          <Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+          <Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+          <Property Name="Font" Value="YouYuan18"/>
+          <Event Name="Clicked" Function="YanMenMeng_XiuXi_Other(14)" />
+          <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_SelectServerBtn14Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{YMMJ_230626_265}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+            <Property Name="Font" Value="YouYuan18"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YanMenMeng_XiuXi_SelectServerBtn15">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-14.000000},{0.500000,-114.000000}}"/>
+          <Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+          <Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+          <Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+          <Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+          <Property Name="Font" Value="YouYuan18"/>
+          <Event Name="Clicked" Function="YanMenMeng_XiuXi_Other(15)" />
+          <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_SelectServerBtn15Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{YMMJ_230626_265}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+            <Property Name="Font" Value="YouYuan18"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="YanMenMeng_XiuXi_SelectServer4">
+        <Property Name="UnifiedSize" Value="{{0.000000,252.000000},{0.000000,248.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-418.000000},{0.000000,170.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ButtonNULL" Name="YanMenMeng_XiuXi_SelectServerBtn16">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{0.500000,-10.000000}}"/>
+          <Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+          <Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+          <Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+          <Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+          <Property Name="Font" Value="YouYuan18"/>
+          <Event Name="Clicked" Function="YanMenMeng_XiuXi_Other(16)" />
+          <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_SelectServerBtn16Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{YMMJ_230626_265}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+            <Property Name="Font" Value="YouYuan18"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YanMenMeng_XiuXi_SelectServerBtn17">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-80.000000},{0.500000,60.000000}}"/>
+          <Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+          <Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+          <Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+          <Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+          <Property Name="Font" Value="YouYuan18"/>
+          <Event Name="Clicked" Function="YanMenMeng_XiuXi_Other(17)" />
+          <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_SelectServerBtn17Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{YMMJ_230626_265}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+            <Property Name="Font" Value="YouYuan18"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YanMenMeng_XiuXi_SelectServerBtn18">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,66.000000},{0.500000,12.000000}}"/>
+          <Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+          <Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+          <Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+          <Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+          <Property Name="Font" Value="YouYuan18"/>
+          <Event Name="Clicked" Function="YanMenMeng_XiuXi_Other(18)" />
+          <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_SelectServerBtn18Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{YMMJ_230626_265}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+            <Property Name="Font" Value="YouYuan18"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YanMenMeng_XiuXi_SelectServerBtn19">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.500000,-82.000000}}"/>
+          <Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+          <Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+          <Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+          <Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+          <Event Name="Clicked" Function="YanMenMeng_XiuXi_Other(19)" />
+          <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_SelectServerBtn19Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{YMMJ_230626_265}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+            <Property Name="Font" Value="YouYuan18"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YanMenMeng_XiuXi_SelectServerBtn20">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,40.000000},{0.500000,-60.000000}}"/>
+          <Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+          <Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+          <Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+          <Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+          <Property Name="Font" Value="YouYuan18"/>
+          <Event Name="Clicked" Function="YanMenMeng_XiuXi_Other(20)" />
+          <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_SelectServerBtn20Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{YMMJ_230626_265}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+            <Property Name="Font" Value="YouYuan18"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="YanMenMeng_XiuXi_SelectTextBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,192.000000},{0.000000,25.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-226.000000},{1.000000,-36.000000}}"/>
+        <Property Name="Image" Value="set:YanMenMeng image:YanMenMengBK3"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_SelectText">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{YMMJ_230626_268}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace4" Name="YanMenMeng_XiuXi_Help_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,380.000000},{0.000000,29.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-190.000000},{1.000000,-39.000000}}" />
+        <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_Help_Text1">
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,7.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}" />
+          <Property Name="Text" Value="#{DLZX_230314_129}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_Help_Text2">
+          <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,7.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}" />
+          <Property Name="Text" Value="#{DLZX_230314_130}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_Help_Text3">
+          <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,7.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}" />
+          <Property Name="Text" Value="#{DLZX_230314_131}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="YanMenMeng_XiuXi_Help_Text4">
+          <Property Name="UnifiedPosition" Value="{{0.000000,280.000000},{0.000000,7.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}" />
+          <Property Name="Text" Value="#{DLZX_230314_132}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="ShenFen_Yure_Puzzle_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,794.000000},{0.000000,598.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-397.000000},{0.500000,-299.000000}}"/>
+    <Event Name="Hidden" Function="ShenFen_Yure_Puzzle_OnHiden()"/>
+    <Window Type="TLBB_HeroTitle01" Name="ShenFen_Yure_Puzzle_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,314.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-157.500000},{0.000000,-2.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="ShenFen_Yure_Puzzle_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Text" Value="#{SFYR_240104_220}" />
+      <Property Name="DragTarget" Value="ShenFen_Yure_Puzzle_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose2" Name="ShenFen_Yure_Puzzle_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+      <Event Name="Clicked" Function="ShenFen_Yure_Puzzle_OnHiden()" />
+    </Window>
+    <Window Type="TLBB_HeroLace01" Name="ShenFen_Yure_Puzzle_Client">
+      <Property Name="UnifiedSize" Value="{{0.000000,786.000000},{0.000000,566.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-393.000000},{0.000000,28.000000}}"/>
+      <Property Name="RiseOnClick" Value="False" />
+      <Window Type="TLBB_StaticImageNULL" Name="ShenFen_Yure_Puzzle_ClientBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,786.000000},{0.000000,566.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_BK"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShenFen_Yure_Puzzle_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,-64.000000},{0.000000,58.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,8.000000}}"/>
+        <Property Name="Text" Value="#{SFYR_240104_221}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="ShenFen_Yure_Puzzle_MainFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,340.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,142.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="DefaultWindow" Name="ShenFen_Yure_Puzzle_Block1">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,66.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,196.000000},{0.000000,77.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ButtonCheckNULL" Name="ShenFen_Yure_Puzzle_Block1_Action">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="PushedImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Null_Pushed"/>
+            <Property Name="HoverImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Null_Pushed"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Event Name="Clicked" Function="ShenFen_Yure_Puzzle_Block_Clicked(1);"/>
+            <Window Type="TLBB_StaticImageNULL" Name="ShenFen_Yure_Puzzle_Block1_Image">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Piece3_Normal"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShenFen_Yure_Puzzle_Block2">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,66.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,425.000000},{0.000000,221.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ButtonCheckNULL" Name="ShenFen_Yure_Puzzle_Block2_Action">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="PushedImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Null_Pushed"/>
+            <Property Name="HoverImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Null_Pushed"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Event Name="Clicked" Function="ShenFen_Yure_Puzzle_Block_Clicked(2);"/>
+            <Window Type="TLBB_StaticImageNULL" Name="ShenFen_Yure_Puzzle_Block2_Image">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Piece4_Normal"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShenFen_Yure_Puzzle_Block3">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,66.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,477.000000},{0.000000,106.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ButtonCheckNULL" Name="ShenFen_Yure_Puzzle_Block3_Action">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="PushedImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Null_Pushed"/>
+            <Property Name="HoverImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Null_Pushed"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Event Name="Clicked" Function="ShenFen_Yure_Puzzle_Block_Clicked(3);"/>
+            <Window Type="TLBB_StaticImageNULL" Name="ShenFen_Yure_Puzzle_Block3_Image">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Piece5_Normal"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+
+      </Window>
+      <Window Type="DefaultWindow" Name="ShenFen_Yure_Puzzle_BottomFrame">
+        <Property Name="UnifiedSize" Value="{{0.000000,530.000000},{0.000000,66.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-265.000000},{0.000000,75.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ButtonCheckNULL" Name="ShenFen_Yure_Puzzle_BottonBlock1_Action">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,66.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="PushedImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Piece3_Pushed"/>
+          <Property Name="NormalImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Piece3_Normal"/>
+          <Property Name="HoverImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Piece3_Hover"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="ShenFen_Yure_Puzzle_BottonBlock_Clicked(1);"/>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="ShenFen_Yure_Puzzle_BottonBlock2_Action">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,66.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,108.000000},{0.000000,0.000000}}"/>
+          <Property Name="PushedImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Piece2_Pushed"/>
+          <Property Name="NormalImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Piece2_Normal"/>
+          <Property Name="HoverImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Piece2_Hover"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="ShenFen_Yure_Puzzle_BottonBlock_Clicked(2);"/>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="ShenFen_Yure_Puzzle_BottonBlock3_Action">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,66.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,216.000000},{0.000000,0.000000}}"/>
+          <Property Name="PushedImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Piece1_Pushed"/>
+          <Property Name="NormalImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Piece1_Normal"/>
+          <Property Name="HoverImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Piece1_Hover"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="ShenFen_Yure_Puzzle_BottonBlock_Clicked(3);"/>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="ShenFen_Yure_Puzzle_BottonBlock4_Action">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,66.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,324.000000},{0.000000,0.000000}}"/>
+          <Property Name="PushedImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Piece4_Pushed"/>
+          <Property Name="NormalImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Piece4_Normal"/>
+          <Property Name="HoverImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Piece4_Hover"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="ShenFen_Yure_Puzzle_BottonBlock_Clicked(4);"/>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="ShenFen_Yure_Puzzle_BottonBlock5_Action">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,66.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,432.000000},{0.000000,0.000000}}"/>
+          <Property Name="PushedImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Piece5_Pushed"/>
+          <Property Name="NormalImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Piece5_Normal"/>
+          <Property Name="HoverImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Piece5_Hover"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="ShenFen_Yure_Puzzle_BottonBlock_Clicked(5);"/>
+        </Window>
+
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="ShenFen_Yure_Puzzle_Submit">
+        <Property Name="UnifiedSize" Value="{{0.000000,138.000000},{0.000000,38.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-69.000000},{1.000000,-48.000000}}"/>
+        <Property Name="PushedImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Submit_Pushed"/>
+        <Property Name="NormalImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Submit_Normal"/>
+        <Property Name="HoverImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Submit_Hover"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="ShenFen_Yure_Puzzle_SubmitClicked();"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="ShenFen_Yure_Puzzle_Quash">
+        <Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,25.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-140.000000},{1.000000,-41.000000}}"/>
+        <Property Name="PushedImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Quash_Pushed"/>
+        <Property Name="NormalImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Quash_Normal"/>
+        <Property Name="HoverImage" Value="set:ShenFen_Yure image:ShenFen_Yure_Puzzle_Quash_Hover"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="ShenFen_Yure_Puzzle_QuashClicked();"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,554 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="Cloud_SelectServer_Frame">
+    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+    <Window Type="DefaultWindow" Name="Cloud_SelectServer_Client">
+      <Property Name="UnifiedSize" Value="{{0.000000,750.000000},{0.000000,700.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-450.000000},{0.500000,-350.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Window Type="TLBB_MainFrame_SelectServer" Name="Cloud_SelectServer_Background_Frame">
+        <Property Name="UnifiedSize" Value="{{1.000000,-36.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Cloud_SelectServer_Background_LeftImage">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,211.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:CommonStaticImage4 image:SelectSever"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Cloud_SelectServer_Background_RedLine">
+        <Property Name="UnifiedSize" Value="{{0.000000,5.000000},{0.000000,83.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,211.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Button4 image:RedLine"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="Cloud_SelectServer_AreaSelectFrame">
+        <Property Name="UnifiedSize" Value="{{0.000000,210.000000},{1.000000,-28.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,20.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_NotSuperList" Name="Cloud_SelectServer_AreaSelectList">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_NotSuperListItemCommon3" Name="Cloud_SelectServer_AreaSelectListItem">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,80.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_Cloud_ButtonCheckCommon" Name="Cloud_SelectServer_AreaSelect">
+              <Property Name="UnifiedSize" Value="{{0.000000,188.000000},{0.000000,80.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+              <Property Name="CheckMode" Value="1"/>
+              <Property Name="Text" Value="#{YYTL_230213_08}"/>
+              <Property Name="Font" Value="YouYuanMono"/>
+              <Event Name="MouseLButtonDown" Function="Cloud_SelectServer_AreaSelect_Clicked();"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="Cloud_SelectServer_AreaPageFrame">
+        <Property Name="UnifiedSize" Value="{{0.000000,484.000000},{1.000000,-28.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,256.000000},{0.000000,20.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_Frame_Lace2" Name="Cloud_SelectServer_AreaPageTopFrame">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_Frame_Lace2" Name="Cloud_SelectServer_SearchNameBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,288.000000},{0.000000,49.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.500000,-25.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_Cloud_EditBoxNormal" Name="Cloud_SelectServer_SearchName">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MaxTextLength" Value="12"/>
+              <Property Name="DefaultEditBox" Value="True"/>
+              <Property Name="Text" Value="#{YYTL_230213_09}"/>
+              <Property Name="Font" Value="YouYuanMono"/>
+              <Event Name="TextAccepted" Function="Cloud_SelectServer_SearchOK_Clicked();"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_SearchOK">
+            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,296.000000},{0.500000,-25.000000}}"/>
+            <Property Name="Text" Value="#{YYTL_230213_10}"/>
+            <Property Name="Font" Value="YouYuanMono"/>
+            <Event Name="Clicked" Function="Cloud_SelectServer_SearchOK_Clicked();"/>
+          </Window>
+          <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_SearchReflash">
+            <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,384.000000},{0.500000,-25.000000}}"/>
+            <Property Name="Text" Value="#{YYTL_230213_11}"/>
+            <Property Name="Font" Value="YouYuanMono"/>
+            <Event Name="Clicked" Function="Cloud_SelectServer_SearchReflash_Click();"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace2" Name="Cloud_SelectServer_AreaPageMiddleFrame">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,565.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,65.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_Frame_Lace2" Name="Cloud_SelectServer_AreaPage_AllClient">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="DefaultWindow" Name="Cloud_SelectServer_AreaPage_AllList">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_AllSelect1">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_AllSelect_Click(1);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_AllSelect2">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,242.000000},{0.000000,10.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_AllSelect_Click(2);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_AllSelect3">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,90.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_AllSelect_Click(3);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_AllSelect4">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,242.000000},{0.000000,90.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_AllSelect_Click(4);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_AllSelect5">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,170.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_AllSelect_Click(5);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_AllSelect6">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,242.000000},{0.000000,170.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_AllSelect_Click(6);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_AllSelect7">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,250.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_AllSelect_Click(7);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_AllSelect8">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,242.000000},{0.000000,250.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_AllSelect_Click(8);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_AllSelect9">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,330.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_AllSelect_Click(9);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_AllSelect10">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,242.000000},{0.000000,330.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_AllSelect_Click(10);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_AllSelect11">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,410.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_AllSelect_Click(11);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_AllSelect12">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,242.000000},{0.000000,410.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_AllSelect_Click(12);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon2" Name="Cloud_SelectServer_AllSelectUpPage">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,42.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-142.000000},{1.000000,-60.000000}}"/>
+                <Property Name="Text" Value="#{YYTL_230213_15}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_AllSelectUp_Click();"/>
+              </Window>
+              <Window Type="TLBB_SimpleMulitiTextFrame" Name="Cloud_SelectServer_AllSelectCurrentlyPage">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-59.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Text" Value="#{YYTL_230213_17}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon2" Name="Cloud_SelectServer_AllSelectDownPage">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,42.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,32.000000},{1.000000,-60.000000}}"/>
+                <Property Name="Text" Value="#{YYTL_230213_16}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_AllSelectDown_Click();"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="Cloud_SelectServer_AreaPage_SearchClient">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="DefaultWindow" Name="Cloud_SelectServer_AreaPage_SearchList">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Cloud_SelectServer_AreaPage_SearchTitleBK">
+                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,35.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,1.000000}}"/>
+                <Property Name="Image" Value="set:Talent image:Talent_LeftBK"/>
+                <Window Type="TLBB_SimpleText" Name="Cloud_SelectServer_AreaPage_SearchTitle">
+                  <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+                  <Property Name="TextColor" Value="FFFFF263"/>
+                  <Property Name="Text" Value="#{YYTL_230213_12}"/>
+                  <Property Name="Font" Value="YouYuanMono"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_SearchSelect1">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,35.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_SearchSelect_Click(1);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_SearchSelect2">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,242.000000},{0.000000,35.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_SearchSelect_Click(2);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_SearchSelect3">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,115.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_SearchSelect_Click(3);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_SearchSelect4">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,242.000000},{0.000000,115.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_SearchSelect_Click(4);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_SearchSelect5">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,195.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_SearchSelect_Click(5);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_SearchSelect6">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,242.000000},{0.000000,195.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_SearchSelect_Click(6);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_SearchSelect7">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,275.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_SearchSelect_Click(7);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_SearchSelect8">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,242.000000},{0.000000,275.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_SearchSelect_Click(8);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_SearchSelect9">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,355.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_SearchSelect_Click(9);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_SearchSelect10">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,242.000000},{0.000000,355.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_SearchSelect_Click(10);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_SearchSelect11">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,435.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_SearchSelect_Click(11);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_SearchSelect12">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,242.000000},{0.000000,435.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_SearchSelect_Click(12);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon2" Name="Cloud_SelectServer_SearchSelectUp">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,42.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-142.000000},{1.000000,-48.000000}}"/>
+                <Property Name="Text" Value="#{YYTL_230213_15}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_SearchSelectUp_Click();"/>
+              </Window>
+              <Window Type="TLBB_SimpleMulitiTextFrame" Name="Cloud_SelectServer_SearchSelectCurrently">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-47.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+                <Property Name="Text" Value="#{YYTL_230213_17}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Font" Value="YouYuan13"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon2" Name="Cloud_SelectServer_SearchSelectDown">
+                <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,42.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,32.000000},{1.000000,-48.000000}}"/>
+                <Property Name="Text" Value="#{YYTL_230213_16}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_SearchSelectDown_Click();"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="Cloud_SelectServer_AreaPage_RecommendClient">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="DefaultWindow" Name="Cloud_SelectServer_AreaPage_RecommendList">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Cloud_SelectServer_AreaPage_RecommendTitleBK1">
+                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,35.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,1.000000}}"/>
+                <Property Name="Image" Value="set:Talent image:Talent_LeftBK"/>
+                <Window Type="TLBB_SimpleText" Name="Cloud_SelectServer_AreaPage_RecommendTitle1">
+                  <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+                  <Property Name="TextColor" Value="FFFFF263"/>
+                  <Property Name="Text" Value="#{YYTL_230213_13}"/>
+                  <Property Name="Font" Value="YouYuanMono"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_RecommendSelectLast">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,40.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_RecommendSelectLast_Click();"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Cloud_SelectServer_AreaPage_RecommendTitleBK2">
+                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,35.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,125.000000}}"/>
+                <Property Name="Image" Value="set:Talent image:Talent_LeftBK"/>
+                <Window Type="TLBB_SimpleText" Name="Cloud_SelectServer_AreaPage_RecommendTitle2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+                  <Property Name="TextColor" Value="FFFFF263"/>
+                  <Property Name="Text" Value="#{YYTL_230213_14}"/>
+                  <Property Name="Font" Value="YouYuan11.25"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_RecommendSelect1">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,165.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_RecommendSelect1_Click(1);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_RecommendSelect2">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,242.000000},{0.000000,165.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_RecommendSelect1_Click(2);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_RecommendSelect3">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,245.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_RecommendSelect1_Click(3);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_RecommendSelect4">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,242.000000},{0.000000,245.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_RecommendSelect1_Click(4);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_RecommendSelect5">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,325.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_RecommendSelect1_Click(5);"/>
+              </Window>
+              <Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_SelectServer_AreaPage_RecommendSelect6">
+                <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,75.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,242.000000},{0.000000,325.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Event Name="Clicked" Function="Cloud_SelectServer_RecommendSelect1_Click(6);"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace2" Name="Cloud_SelectServer_AreaPageBottomFrame">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,35.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.000000,-41.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_SimpleText" Name="Cloud_SelectServer_AreaStatus_Text1">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,9.000000}}"/>
+            <Property Name="Text" Value="#{YYTL_230213_18}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Cloud_SelectServer_AreaStatus_Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,9.000000}}"/>
+            <Property Name="Text" Value="#{YYTL_230213_19}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Cloud_SelectServer_AreaStatus_Text3">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,195.000000},{0.000000,9.000000}}"/>
+            <Property Name="Text" Value="#{YYTL_230213_20}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Cloud_SelectServer_AreaStatus_Text4">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,290.000000},{0.000000,9.000000}}"/>
+            <Property Name="Text" Value="#{YYTL_230213_21}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Cloud_SelectServer_AreaStatus_Text5">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,385.000000},{0.000000,9.000000}}"/>
+            <Property Name="Text" Value="#{YYTL_230213_22}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="Cloud_SelectServer_ImageFrame">
+      <Property Name="UnifiedSize" Value="{{0.000000,1024.000000},{0.000000,626.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-512.000000},{0.500000,-313.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Window Type="TLBB_ButtonNULL" Name="Cloud_SelectServer_Image_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,79.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,36.000000}}"/>
+        <Property Name="PushedImage" Value="set:CloudGames image:Cloud_ImageClose_Normal"/>
+        <Property Name="NormalImage" Value="set:CloudGames image:Cloud_ImageClose_Normal"/>
+        <Property Name="HoverImage" Value="set:CloudGames image:Cloud_ImageClose_Normal"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Cloud_SelectServer_Image_OnClosed();"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="Cloud_SelectServer_Image_BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,988.000000},{0.000000,626.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-494.000000},{0.500000,-313.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Cloud_SelectServer_Image">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:CloudGames image:Cloud_HelpImage"/>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TLBB_Frame1" Name="Cloud_SelectServer_Image2Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,300.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.500000,-150.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Window Type="TLBB_ButtonNULL" Name="Cloud_SelectServer_Image2_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:CloudGames image:Cloud_ButtonClose_Pushed"/>
+        <Property Name="NormalImage" Value="set:CloudGames image:Cloud_ButtonClose_Normal"/>
+        <Property Name="HoverImage" Value="set:CloudGames image:Cloud_ButtonClose_Hover"/>
+        <Property Name="DisabledImage" Value="set:CloudGames image:Cloud_ButtonClose_Disabled"/>
+        <Event Name="Clicked" Function="Cloud_SelectServer_Image2_OnClosed();"/>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="Cloud_SelectServer_Image2_BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,160.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-80.000000},{0.500000,-80.000000}}"/>
+        <Window Type="DefaultWindow" Name="Cloud_SelectServer_Image2">
+          <Property Name="UnifiedSize" Value="{{0.000000,155.000000},{0.000000,155.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Cloud_SelectServer_Image2_L">
+            <Property Name="UnifiedSize" Value="{{0.000000,124.000000},{0.000000,155.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:CloudGames image:Cloud_MP_QRCode_L"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Cloud_SelectServer_Image2_R">
+            <Property Name="UnifiedSize" Value="{{0.000000,31.000000},{0.000000,155.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,124.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:CloudGames image:Cloud_MP_QRCode_R"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="Cloud_SelectServer_Background_Client">
+      <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,700.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-204.000000},{0.500000,-350.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_ButtonNULL" Name="Cloud_SelectServer_Regist">
+        <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,60.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+        <Property Name="PushedImage" Value="set:CloudGames image:Cloud_RequisitionID_Pushed"/>
+        <Property Name="NormalImage" Value="set:CloudGames image:Cloud_RequisitionID_Normal"/>
+        <Property Name="HoverImage" Value="set:CloudGames image:Cloud_RequisitionID_Hover"/>
+        <Property Name="DisabledImage" Value="set:CloudGames image:Cloud_RequisitionID_Disabled"/>
+        <Event Name="MouseLeave" Function="Cloud_SelectServer_MouseLeave();"/>
+        <Event Name="MouseEnter" Function="Cloud_SelectServer_RequisitionID_MouseEnter();"/>
+        <Event Name="Clicked" Function="Cloud_SelectServer_AccountReg();"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Cloud_SelectServer_Follow">
+        <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,60.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,70.000000}}"/>
+        <Property Name="PushedImage" Value="set:CloudGames image:Cloud_Follow_Pushed"/>
+        <Property Name="NormalImage" Value="set:CloudGames image:Cloud_Follow_Normal"/>
+        <Property Name="HoverImage" Value="set:CloudGames image:Cloud_Follow_Hover"/>
+        <Property Name="DisabledImage" Value="set:CloudGames image:Cloud_Follow_Disabled"/>
+        <Event Name="Clicked" Function="Cloud_SelectServer_FollowClicked();"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Cloud_SelectServer_Desktop">
+        <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,60.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,140.000000}}"/>
+        <Property Name="PushedImage" Value="set:CloudGames image:Cloud_Desktop_Pushed"/>
+        <Property Name="NormalImage" Value="set:CloudGames image:Cloud_Desktop_Normal"/>
+        <Property Name="HoverImage" Value="set:CloudGames image:Cloud_Desktop_Hover"/>
+        <Property Name="DisabledImage" Value="set:CloudGames image:Cloud_Desktop_Disabled"/>
+        <Event Name="Clicked" Function="Cloud_SelectServer_DesktopClicked();"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

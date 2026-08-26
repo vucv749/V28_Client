@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Frozen_PVPScoreTask_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,260.000000},{0.000000,152.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-284.000000},{0.500000,-212.000000}}"/>
+    <Window Type="TLBB_StaticImageNULL" Name="Frozen_PVPScoreTask_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,238.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-119.000000},{0.000000,2.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Image" Value="set:Frozen_PVP image:Frozen_TitleBK"/>
+    </Window>
+  <Window Type="TLBB_MainFrame_Frozen2" Name="Frozen_PVPScoreTask_FrameBK">
+    <Property Name="UnifiedSize" Value="{{0.000000,260.000000},{0.000000,140.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+    <Window Type="TLBB_ButtonClose" Name="Frozen_PVPScoreTask_Mini">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,4.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Frozen_PVPScoreTask_Mini()"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Frozen_PVPScoreTask_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,18.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,2.000000}}"/>
+      <Property Name="DragTarget" Value="Frozen_PVPScoreTask_Frame"/>
+      <Window Type="TLBB_SimpleText" Name="Frozen_PVPScoreTask_PageHeader">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{BXDZ_240918_174}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="Font" Value="YouYuan11.25"/>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="Frozen_PVPScoreTask_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-34.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Frozen_PVPScoreTask_Text1">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+        <Property Name="Text" Value="#{BXDZ_240918_361}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Window Type="TLBB_SimpleText" Name="Frozen_PVPScoreTask_Text1_2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Frozen_PVPScoreTask_Text2">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,22.000000}}"/>
+        <Property Name="Text" Value="#{BXDZ_240918_362}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Window Type="TLBB_SimpleText" Name="Frozen_PVPScoreTask_Text2_2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Frozen_PVPScoreTask_Text3">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,42.000000}}"/>
+        <Property Name="Text" Value="#{BXDZ_240918_363}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Window Type="TLBB_SimpleText" Name="Frozen_PVPScoreTask_Text1_3">
+          <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+          <Property Name="Text" Value="#{BXDZ_240918_357}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Frozen_PVPScoreTask_Text4">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,62.000000}}"/>
+        <Property Name="Text" Value="#{BXDZ_240918_364}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Window Type="TLBB_SimpleText" Name="Frozen_PVPScoreTask_Text4_2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Frozen_PVPScoreTask_Text5">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{1.000000,-24.000000}}"/>
+        <Property Name="Text" Value="#{BXDZ_240918_180}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+    </Window>
+  </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="UnionChoose_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,184.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.500000,-122.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="UnionChoose_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="DragTarget" Value="UnionChoose_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="UnionChoose_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonHelp" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*UnionChoose&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="UnionChoose_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="this:Hide();" />
+    </Window>
+    <Window Type="TLBB_SimpleText" Name="UnionChoose_Lock_Text">
+      <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,33.000000}}"/>
+      <Property Name="TextColor" Value="FFFFF263" />
+      <Property Name="Text" Value="#{TDGZ_XML_28}" />
+      <Property Name="HorzFormatting" Value="LeftAligned" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="RiseOnClick" Value="False" />
+    </Window>
+    <Window Type="TLBB_MultiColumnList" Name="UnionChoose_InvitationList" >
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,89.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
+      <Property Name="ColumnHeader" Value="text:#{TDGZ_XML_29} width:0.7 id:0" />
+      <Property Name="ColumnHeader" Value="text:#{TDGZ_XML_30} width:0.3 id:1" />
+      <Property Name="ForceHorzScrollbar" Value="False" />
+      <Property Name="ForceVertScrollbar" Value="False" />
+      <Property Name="SortSettingEnabled" Value="False" />
+      <Property Name="SelectionMode" Value="RowSingle" />
+    </Window>
+    <Window Type="TLBB_Frame_Lace5" Name="UnionChoose_Blank">
+      <Property Name="UnifiedSize" Value="{{1.000000,-94.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{1.000000,-39.000000}}"/>
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="UnionChoose_Accept">
+      <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-87.000000},{1.000000,-39.000000}}"/>
+      <Property Name="Text" Value="#{INTERFACE_XML_557}" />
+      <Event Name="Clicked" Function="UnionChoose_Accept_Clicked()" />
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="UnionChoose_Cancel">
+      <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-47.000000},{1.000000,-39.000000}}"/>
+      <Property Name="Text" Value="#{INTERFACE_XML_542}" />
+      <Event Name="Clicked" Function="UnionChoose_Cancel_Clicked();" />
+    </Window>
+  </Window>
+</GUILayout>

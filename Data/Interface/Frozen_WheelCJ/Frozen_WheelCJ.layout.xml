@@ -1,0 +1,671 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Frozen_WheelCJ_FrameNULL">
+    <Property Name="UnifiedSize" Value="{{0.000000,944.000000},{0.000000,560.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-472.000000},{0.500000,-280.000000}}"/>
+    <Event Name="Hidden" Function="Frozen_WheelCJ_OnHiden()"/>
+    <Window Type="TLBB_DragTitle" Name="Frozen_WheelCJ_DragTitle">
+      <Property Name="UnifiedSize" Value="{{0.000000,158.000000},{0.000000,316.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="DragTarget" Value="Frozen_WheelCJ_FrameNULL"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Frozen_WheelCJ_DragTitle2">
+      <Property Name="UnifiedSize" Value="{{0.000000,682.000000},{0.000000,84.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,174.000000},{0.000000,0.000000}}"/>
+      <Property Name="DragTarget" Value="Frozen_WheelCJ_FrameNULL"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJ_MainFrame">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="Image" Value="set:Frozen_WheelCJ image:Frozen_WheelCJBK"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_ButtonNULL" Name="Frozen_WheelCJ_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{0.000000,36.000000}}"/>
+        <Event Name="Clicked" Function="Frozen_WheelCJ_Close();"/>
+        <Property Name="PushedImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn3Pushed"/>
+        <Property Name="NormalImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn3Normal"/>
+        <Property Name="HoverImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn3Hover"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Frozen_WheelCJ_Description_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,680.000000},{0.000000,76.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,158.000000},{0.000000,40.000000}}"/>
+        <Property Name="Text" Value="#{BXZP_240911_29}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Window Type="TLBB_ButtonNULL" Name="Frozen_WheelCJ_AwardBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-130.000000},{1.000000,-24.000000}}"/>
+          <Property Name="PushedImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn4Pushed"/>
+          <Property Name="NormalImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn4Normal"/>
+          <Property Name="HoverImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn4Hover"/>
+          <Event Name="MouseLButtonDown" Function="Frozen_WheelCJ_Preview();"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="Frozen_WheelCJ_Help">
+          <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{1.000000,-26.000000}}"/>
+          <Property Name="PushedImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn6Pushed"/>
+          <Property Name="NormalImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn6Normal"/>
+          <Property Name="HoverImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn6Hover"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="Frozen_WheelCJ_Help_Clicked();"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Frozen_WheelCJAward_Client">
+        <Property Name="UnifiedSize" Value="{{0.000000,750.000000},{0.000000,350.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,158.000000},{0.000000,118.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJAward1">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,134.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:Frozen_WheelCJ image:Frozen_WheelCJBK2"/>
+          <Window Type="TLBB_ActionButton" Name="Frozen_WheelCJAward_Icon1">
+            <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-28.000000},{0.500000,-42.000000}}"/>
+            <Window Type="TLBB_Animate" Name="Frozen_WheelCJAward1_Light">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+              <Property Name="Animate" Value="JFMZ_Light1"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJAward2">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,134.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,380.000000},{0.000000,24.000000}}"/>
+          <Property Name="Image" Value="set:Frozen_WheelCJ image:Frozen_WheelCJBK2"/>
+          <Window Type="TLBB_ActionButton" Name="Frozen_WheelCJAward_Icon2">
+            <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-28.000000},{0.500000,-42.000000}}"/>
+            <Window Type="TLBB_Animate" Name="Frozen_WheelCJAward2_Light">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+              <Property Name="Animate" Value="JFMZ_Light1"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJAward3">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,134.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,610.000000},{0.000000,84.000000}}"/>
+          <Property Name="Image" Value="set:Frozen_WheelCJ image:Frozen_WheelCJBK2"/>
+          <Window Type="TLBB_ActionButton" Name="Frozen_WheelCJAward_Icon3">
+            <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-28.000000},{0.500000,-42.000000}}"/>
+            <Window Type="TLBB_Animate" Name="Frozen_WheelCJAward3_Light">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+              <Property Name="Animate" Value="JFMZ_Light1"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJAward4">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,134.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,534.000000},{0.000000,186.000000}}"/>
+          <Property Name="Image" Value="set:Frozen_WheelCJ image:Frozen_WheelCJBK2"/>
+          <Window Type="TLBB_ActionButton" Name="Frozen_WheelCJAward_Icon4">
+            <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-28.000000},{0.500000,-42.000000}}"/>
+            <Window Type="TLBB_Animate" Name="Frozen_WheelCJAward4_Light">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+              <Property Name="Animate" Value="JFMZ_Light1"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJAward5">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,134.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,388.000000},{0.000000,162.000000}}"/>
+          <Property Name="Image" Value="set:Frozen_WheelCJ image:Frozen_WheelCJBK2"/>
+          <Window Type="TLBB_ActionButton" Name="Frozen_WheelCJAward_Icon5">
+            <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-28.000000},{0.500000,-42.000000}}"/>
+            <Window Type="TLBB_Animate" Name="Frozen_WheelCJAward5_Light">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+              <Property Name="Animate" Value="JFMZ_Light1"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJAward6">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,134.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,202.000000},{0.000000,96.000000}}"/>
+          <Property Name="Image" Value="set:Frozen_WheelCJ image:Frozen_WheelCJBK2"/>
+          <Window Type="TLBB_ActionButton" Name="Frozen_WheelCJAward_Icon6">
+            <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-28.000000},{0.500000,-42.000000}}"/>
+            <Window Type="TLBB_Animate" Name="Frozen_WheelCJAward6_Light">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+              <Property Name="Animate" Value="JFMZ_Light1"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJAward7">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,134.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,98.000000},{0.000000,190.000000}}"/>
+          <Property Name="Image" Value="set:Frozen_WheelCJ image:Frozen_WheelCJBK2"/>
+          <Window Type="TLBB_ButtonNULL" Name="Frozen_WheelCJAward7_Preview">
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.000000,26.000000}}"/>
+            <Property Name="PushedImage" Value="set:FeelFeedBack1 image:Anniversary_Rich_GiftRewards_Pushed"/>
+            <Property Name="NormalImage" Value="set:FeelFeedBack1 image:Anniversary_Rich_GiftRewards_Normal"/>
+            <Property Name="HoverImage" Value="set:FeelFeedBack1 image:Anniversary_Rich_GiftRewards_Hover"/>
+            <Property Name="DisabledImage" Value="set:FeelFeedBack1 image:Anniversary_Rich_GiftRewards_Disabled"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Frozen_WheelCJAward7_Preview()"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Frozen_WheelCJAward_Icon7">
+            <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-28.000000},{0.500000,-42.000000}}"/>
+            <Window Type="TLBB_Animate" Name="Frozen_WheelCJAward7_Light">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+              <Property Name="Animate" Value="JFMZ_Light1"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJAward8">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,134.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,66.000000}}"/>
+          <Property Name="Image" Value="set:Frozen_WheelCJ image:Frozen_WheelCJBK2"/>
+          <Window Type="TLBB_ActionButton" Name="Frozen_WheelCJAward_Icon8">
+            <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-28.000000},{0.500000,-42.000000}}"/>
+            <Window Type="TLBB_Animate" Name="Frozen_WheelCJAward8_Light">
+              <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+              <Property Name="Animate" Value="JFMZ_Light1"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJ_Reward_ResultBK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,184.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,532.000000},{0.000000,300.000000}}"/>
+          <Property Name="Image" Value="set:Frozen_WheelCJ image:Frozen_WheelCJBK4"/>
+          <Window Type="TLBB_SimpleText" Name="Frozen_WheelCJ_Reward_ResultText1">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-150.000000},{0.000000,12.000000}}"/>
+            <Property Name="Text" Value="#{BXZP_240911_30}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Frozen_WheelCJ_BuyBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.500000,-15.000000}}"/>
+            <Property Name="PushedImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn2Pushed"/>
+            <Property Name="NormalImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn2Normal"/>
+            <Property Name="HoverImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn2Hover"/>
+            <Event Name="MouseLButtonDown" Function="Frozen_WheelCJ_BuyBtn(1);"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Frozen_WheelCJ_LotteryBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,158.000000},{0.000000,26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-79.000000},{0.500000,140.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn5Pushed"/>
+        <Property Name="NormalImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn5Normal"/>
+        <Property Name="HoverImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn5Hover"/>
+        <Event Name="Clicked" Function="Frozen_WheelCJ_LotteryBtnClick();"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJ_Reward_ResultText2BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,186.000000},{0.000000,458.000000}}"/>
+        <Property Name="Image" Value="set:Frozen_WheelCJ image:Frozen_WheelCJTipsBK"/>
+        <Property Name="Tooltip" Value="#{BXZP_240911_127}"/>
+        <Window Type="TLBB_SimpleText" Name="Frozen_WheelCJ_Reward_ResultText2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-6.000000}}"/>
+          <Property Name="Text" Value="#{BXZP_240911_111}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJ_RewardText3BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,138.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-69.000000},{0.000000,448.000000}}"/>
+        <Property Name="Image" Value="set:Frozen_WheelCJ image:Frozen_WheelCJBK3"/>
+        <Window Type="TLBB_SimpleText" Name="Frozen_WheelCJ_RewardText3">
+          <Property Name="UnifiedSize" Value="{{0.000000,138.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{BXZP_240911_124}"/>
+          <Property Name="VertFormatting" Value="VertCentred"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJ_Reward2Image">
+        <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,54.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,302.000000},{0.000000,448.000000}}"/>
+        <Property Name="Image" Value="set:Frozen_WheelCJ image:Frozen_WheelCJImage"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="Frozen_WheelCJ_RewardContentBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,586.000000},{0.000000,60.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{1.000000,-66.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="DefaultWindow" Name="Frozen_WheelCJ_Reward1">
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-30.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ButtonNULL" Name="Frozen_WheelCJ_Reward1Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-27.000000},{0.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{BXZP_240911_114}"/>
+            <Property Name="PushedImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Pushed"/>
+            <Property Name="NormalImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Normal"/>
+            <Property Name="HoverImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Hover"/>
+            <Property Name="DisabledImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Disabled"/>
+            <Event Name="Clicked" Function="Frozen_WheelCJ_GetReward(1)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJ_Reward1_tips">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJ_Reward1BtnOK">
+            <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.000000,8.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Anniversary01 image:Anniversary_YiLingQu"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="Frozen_WheelCJ_Reward1Text_Bk">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{1.000000,-18.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="Frozen_WheelCJ_Reward1Text">
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,-3.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{BXZP_240911_41}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Frozen_WheelCJ_Reward2">
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{0.500000,-30.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ButtonNULL" Name="Frozen_WheelCJ_Reward2Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-27.000000},{0.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{BXZP_240911_115}"/>
+            <Property Name="PushedImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Pushed"/>
+            <Property Name="NormalImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Normal"/>
+            <Property Name="HoverImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Hover"/>
+            <Property Name="DisabledImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Disabled"/>
+            <Event Name="Clicked" Function="Frozen_WheelCJ_GetReward(2)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJ_Reward2_tips">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJ_Reward2BtnOK">
+            <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.000000,8.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Anniversary01 image:Anniversary_YiLingQu"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="Frozen_WheelCJ_Reward2Text_Bk">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{1.000000,-18.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="Frozen_WheelCJ_Reward2Text">
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,-3.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{BXZP_240911_42}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Frozen_WheelCJ_Reward3">
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.500000,-30.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ButtonNULL" Name="Frozen_WheelCJ_Reward3Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-27.000000},{0.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{BXZP_240911_116}"/>
+            <Property Name="PushedImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Pushed"/>
+            <Property Name="NormalImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Normal"/>
+            <Property Name="HoverImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Hover"/>
+            <Property Name="DisabledImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Disabled"/>
+            <Event Name="Clicked" Function="Frozen_WheelCJ_GetReward(3)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJ_Reward3_tips">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJ_Reward3BtnOK">
+            <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.000000,8.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Anniversary01 image:Anniversary_YiLingQu"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="Frozen_WheelCJ_Reward3Text_Bk">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{1.000000,-18.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="Frozen_WheelCJ_Reward3Text">
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,-3.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{BXZP_240911_43}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Frozen_WheelCJ_Reward4">
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,255.000000},{0.500000,-30.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ButtonNULL" Name="Frozen_WheelCJ_Reward4Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-27.000000},{0.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{BXZP_240911_117}"/>
+            <Property Name="PushedImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Pushed"/>
+            <Property Name="NormalImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Normal"/>
+            <Property Name="HoverImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Hover"/>
+            <Property Name="DisabledImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Disabled"/>
+            <Event Name="Clicked" Function="Frozen_WheelCJ_GetReward(4)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJ_Reward4_tips">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJ_Reward4BtnOK">
+            <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.000000,8.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Anniversary01 image:Anniversary_YiLingQu"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="Frozen_WheelCJ_Reward4Text_Bk">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{1.000000,-18.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="Frozen_WheelCJ_Reward4Text">
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,-3.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{BXZP_240911_44}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Frozen_WheelCJ_Reward5">
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.500000,-30.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ButtonNULL" Name="Frozen_WheelCJ_Reward5Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-27.000000},{0.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{BXZP_240911_118}"/>
+            <Property Name="PushedImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Pushed"/>
+            <Property Name="NormalImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Normal"/>
+            <Property Name="HoverImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Hover"/>
+            <Property Name="DisabledImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Disabled"/>
+            <Event Name="Clicked" Function="Frozen_WheelCJ_GetReward(5)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJ_Reward5_tips">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJ_Reward5BtnOK">
+            <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.000000,8.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Anniversary01 image:Anniversary_YiLingQu"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="Frozen_WheelCJ_Reward5Text_Bk">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{1.000000,-18.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="Frozen_WheelCJ_Reward5Text">
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,-3.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{BXZP_240911_121}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Frozen_WheelCJ_Reward6">
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,425.000000},{0.500000,-30.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ButtonNULL" Name="Frozen_WheelCJ_Reward6Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-27.000000},{0.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{BXZP_240911_119}"/>
+            <Property Name="PushedImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Pushed"/>
+            <Property Name="NormalImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Normal"/>
+            <Property Name="HoverImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Hover"/>
+            <Property Name="DisabledImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Disabled"/>
+            <Event Name="Clicked" Function="Frozen_WheelCJ_GetReward(6)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJ_Reward6_tips">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJ_Reward6BtnOK">
+            <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.000000,8.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Anniversary01 image:Anniversary_YiLingQu"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="Frozen_WheelCJ_Reward6Text_Bk">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{1.000000,-18.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="Frozen_WheelCJ_Reward6Text">
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,-3.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{BXZP_240911_122}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Frozen_WheelCJ_Reward7">
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,510.000000},{0.500000,-30.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ButtonNULL" Name="Frozen_WheelCJ_Reward7Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-27.000000},{0.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{BXZP_240911_120}"/>
+            <Property Name="PushedImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Pushed"/>
+            <Property Name="NormalImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Normal"/>
+            <Property Name="HoverImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Hover"/>
+            <Property Name="DisabledImage" Value="set:Frozen_WheelCJ image:Frozen_WheelCJ_Btn1Disabled"/>
+            <Event Name="Clicked" Function="Frozen_WheelCJ_GetReward(7)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJ_Reward7_tips">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJ_Reward7BtnOK">
+            <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.000000,8.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Anniversary01 image:Anniversary_YiLingQu"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="Frozen_WheelCJ_Reward7Text_Bk">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{1.000000,-18.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="Frozen_WheelCJ_Reward7Text">
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,-3.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{BXZP_240911_123}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJ_RewardTextBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,138.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.000000,502.000000}}"/>
+        <Property Name="Image" Value="set:Frozen_WheelCJ image:Frozen_WheelCJBK3"/>
+        <Window Type="TLBB_SimpleText" Name="Frozen_WheelCJ_RewardText">
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{BXZP_240911_33}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Frozen_WheelCJ_RewardText2">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-102.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{BXZP_240911_34}"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

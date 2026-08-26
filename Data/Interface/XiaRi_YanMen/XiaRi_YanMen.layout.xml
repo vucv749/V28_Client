@@ -1,0 +1,320 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="XiaRi_YanMen_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,974.000000},{0.000000,510.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-487.000000},{0.500000,-255.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="XiaRi_YanMen_DragTitle2">
+      <Property Name="UnifiedSize" Value="{{1.000000,-136.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,86.000000},{0.000000,0.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="DragTarget" Value="XiaRi_YanMen_Frame"/>
+    </Window>
+    <Window Type="TLBB_HeroFrame01" Name="XiaRi_YanMen_MainFrame">
+      <Property Name="UnifiedSize" Value="{{1.000000,-108.000000},{1.000000,-17.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,86.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_DragTitle" Name="XiaRi_YanMen_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,2.000000}}"/>
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="Text" Value="#{XHSYM_20220426_22}" />
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="DragTarget" Value="XiaRi_YanMen_Frame"/>
+      </Window>
+      <Window Type="TLBB_HeroTitle01" Name="XiaRi_YanMen_DragTitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,-2.000000}}"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="XiaRi_YanMen_RightImage">
+      <Property Name="UnifiedSize" Value="{{0.000000,974.000000},{0.000000,504.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-504.000000}}"/>
+      <Property Name="Image" Value="set:XiaRi_YanMen2 image:XiaRi_YanMen2BK"/>
+      <Window Type="DefaultWindow" Name="XiaRi_YanMen_Frame_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-38.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        
+        <Window Type="TLBB_ButtonClose2" Name="XiaRi_YanMen_Close">
+          <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{0.000000,0.000000}}"/>
+          <Event Name="Clicked" Function="XiaRi_YanMen_OnClose();" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="XiaRi_YanMen_TextInfo">
+          <Property Name="UnifiedSize" Value="{{1.000000,-160.000000},{0.000000,80.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,20.000000}}"/>
+          <Property Name="Text" Value="#{XHSYM_20220426_23}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Window Type="TLBB_ButtonHelp" Name="XiaRi_YanMen_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-14.000000},{1.000000,-14.000000}}"/>
+            <Event Name="Clicked" Function="XiaRi_YanMen_OnClickHelp()"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="XiaRi_YanMen_Down">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-106.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,106.000000}}"/>
+
+          <Window Type="TLBB_ProgressPropertyYanMen" Name="XiaRi_YanMen_Exp">
+            <Property Name="UnifiedSize" Value="{{0.000000,635.000000},{0.000000,4.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,254.000000},{0.000000,216.000000}}"/>
+            <Property Name="MoveSpeed" Value="1.0"/>
+            <Property Name="EffectColor" Value="1"/>
+            <Property Name="CurrentProgress" Value="1.000000"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="XiaRi_YanMen_Exptips">
+            <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,146.000000},{0.000000,218.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="Text" Value="#{XHSYM_20220426_29}"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="XiaRi_YanMen_Text_OKbtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,142.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-42.000000},{1.000000,-80.000000}}"/>
+            <Property Name="PushedImage" Value="set:XiaRi_YanMen2 image:XiaRi_YanMen2Button_Pushed"/>
+            <Property Name="NormalImage" Value="set:XiaRi_YanMen2 image:XiaRi_YanMen2Button_Normal"/>
+            <Property Name="HoverImage" Value="set:XiaRi_YanMen2 image:XiaRi_YanMen2Button_Hover"/>
+            <Property Name="DisabledImage" Value="set:XiaRi_YanMen2 image:XiaRi_YanMen2Button_Disabled"/>
+            <Event Name="Clicked" Function="XiaRi_YanMen_OnSubmitDaiBi()"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="XiaRi_YanMen_Text_SubmitText">
+            <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-78.000000},{1.000000,-42.000000}}"/>
+            <Property Name="Text" Value="#{XHSYM_20220426_143}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="XiaRi_YanMen_Finish">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-14.000000},{1.000000,-80.000000}}"/>
+            <Property Name="Image" Value="set:XiaRi_YanMen image:XiaRi_YanMenFinish"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="XiaRi_YanMen_Items">
+            <Property Name="UnifiedSize" Value="{{1.000000,-160.000000},{0.000000,160.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,250.000000},{0.000000,56.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="XiaRi_YanMen_Item_1Name">
+              <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,106.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,142.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:XiaRi_YanMen2 image:XiaRi_YanMen2Time1"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="XiaRi_YanMen_Item_1BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,120.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,147.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:XiaRi_YanMen2 image:XiaRi_YanMenItemBK"/>
+              <Window Type="TLBB_ActionButton" Name="XiaRi_YanMen_Item_1">
+                <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.000000,25.000000}}"/>
+                <Window Type="TLBB_Animate" Name="XiaRi_YanMen_Item_1Animate">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="Equip_Zhizun"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="XiaRi_YanMen_Item_1Mark">
+                  <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,38.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.500000,-19.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                </Window>
+                <Event Name="Clicked" Function="XiaRi_YanMen_OnGetAllFinishReward(1);" />
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="XiaRi_YanMen_Item_1Line">
+              <Property Name="UnifiedSize" Value="{{0.000000,4.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,193.000000},{0.000000,120.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:XiaRi_YanMen image:XiaRi_YanMenItemLine"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="XiaRi_YanMen_Item_2Name">
+              <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,106.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,333.000000},{0.000000,40.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:XiaRi_YanMen2 image:XiaRi_YanMen2Time2"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="XiaRi_YanMen_Item_2BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,120.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,338.000000},{0.000000,40.000000}}"/>
+              <Property Name="Image" Value="set:XiaRi_YanMen2 image:XiaRi_YanMenItemBK"/>
+              <Window Type="TLBB_ActionButton" Name="XiaRi_YanMen_Item_2">
+                <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.000000,25.000000}}"/>
+                <Event Name="Clicked" Function="XiaRi_YanMen_OnGetAllFinishReward(2);" />
+                <Window Type="TLBB_Animate" Name="XiaRi_YanMen_Item_2Animate">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="Equip_Zhizun"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="XiaRi_YanMen_Item_2Mark">
+                  <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,38.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.500000,-19.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="XiaRi_YanMen_Item_3Name">
+              <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,106.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,460.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:XiaRi_YanMen2 image:XiaRi_YanMen2Time3"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="XiaRi_YanMen_Item_3BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,160.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,465.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:XiaRi_YanMen2 image:XiaRi_YanMen2ItemBK"/>
+              <Window Type="TLBB_ActionButton" Name="XiaRi_YanMen_Item_3">
+                <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.000000,25.000000}}"/>
+                <Event Name="Clicked" Function="XiaRi_YanMen_OnGetAllFinishReward(3);" />
+                <Window Type="TLBB_Animate" Name="XiaRi_YanMen_Item_3Animate">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="Equip_Zhizun"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="XiaRi_YanMen_Item_3Mark">
+                  <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,38.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.500000,-19.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="XiaRi_YanMen_Item_3Line">
+              <Property Name="UnifiedSize" Value="{{0.000000,4.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,511.000000},{0.000000,120.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <!-- <Property Name="Image" Value="set:XiaRi_YanMen2 image:XiaRi_YanMen2ItemLine"/> -->
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="XiaRi_YanMen_Item_4Name">
+              <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,106.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,587.000000},{0.000000,40.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:XiaRi_YanMen2 image:XiaRi_YanMen2Time4"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="XiaRi_YanMen_Item_4BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,120.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,592.000000},{0.000000,40.000000}}"/>
+              <Property Name="Image" Value="set:XiaRi_YanMen2 image:XiaRi_YanMenItemBK"/>
+              <Window Type="TLBB_ActionButton" Name="XiaRi_YanMen_Item_4">
+                <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.000000,25.000000}}"/>
+                <Event Name="Clicked" Function="XiaRi_YanMen_OnGetAllFinishReward(4);" />
+                <Window Type="TLBB_Animate" Name="XiaRi_YanMen_Item_4Animate">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="Equip_Zhizun"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="XiaRi_YanMen_Item_4Mark">
+                  <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,38.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.500000,-19.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="XiaRi_YanMen_Text_Progress">
+            <Property Name="UnifiedSize" Value="{{1.000000,-160.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,250.000000},{0.000000,226.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="XiaRi_YanMen_Text_Progress1">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,165.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{XHSYM_20220426_25}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="XiaRi_YanMen_Text_Progress2">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,355.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{XHSYM_20220426_26}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="XiaRi_YanMen_Text_Progress3">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,482.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{XHSYM_20220426_27}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="XiaRi_YanMen_Text_Progress4">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,608.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{XHSYM_20220426_28}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+        </Window>
+              <Window Type="TLBB_Animate" Name="XiaRi_YanMen_Animate">
+        <Property Name="UnifiedSize" Value="{{0.000000,242.000000},{0.000000,62.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-96.000000},{0.500000,146.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Animate" Value="XiaRi_YanMenAnimate"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

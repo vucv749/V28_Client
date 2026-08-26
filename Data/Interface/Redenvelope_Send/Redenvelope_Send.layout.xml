@@ -1,0 +1,261 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="RedPacket_Send_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,380.000000},{0.000000,358.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-190.000000},{0.500000,-179.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="RedPacket_Send_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="RedPacket_Send_Frame" />
+      <Window Type="TLBB_SimpleText" Name="RedPacket_Send_PageHeader_Text">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Text" Value="#{HBXTS_221214_1}" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="RedPacket_Send_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*RedPacket_Send&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="RedPacket_Send_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="RedPacket_Send_Close_Clicked();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="RedPacket_Send_Frame_Client">
+      <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+f
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_Frame_Lace1" Name="RedPacket_Send_IntroFrame">
+        <Property Name="UnifiedSize" Value="{{0.000000,367.000000},{0.000000,130.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_SimpleText" Name="RedPacket_Send_IntroText">
+          <Property Name="UnifiedSize" Value="{{1.000000,-27.000000},{0.000000,115.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,7.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{HBXTS_221214_123}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="RedPacket_Send_HistoryBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="#{HBXTS_221214_2}" />
+        <Property Name="Tooltip" Value="#{HBXTS_221214_132}"/>
+        <Event Name="Clicked" Function="Redenvelope_Send_History_Clicked();" />
+      </Window>
+      <Window Type="DefaultWindow" Name="RedPacket_Send_Numbers_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,192.000000},{1.000000,-95.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="RedPacket_Send_NumbersText">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{HBXTS_221214_19}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_EditBoxNormal" Name="RedPacket_Send_Numbers">
+          <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,0.000000}}"/>
+          <Property Name="ValidationString" Value="[0-9]*"/>
+          <Event Name="TextChanged" Function="RedEnvelopeNumClicked(2);" />
+        </Window>
+        <Window Type="TLBB_ButtonAdd" Name="RedPacket_Send_Addition_Button">
+          <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,2.000000}}"/>
+          <Event Name="Clicked" Function="RedEnvelopeNumClicked(1);"/>
+        </Window>
+        <Window Type="TLBB_ButtonSub" Name="RedPacket_Send_Decrease_Button">
+          <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,147.000000},{0.000000,2.000000}}"/>
+          <Event Name="Clicked" Function="RedEnvelopeNumClicked(0);"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="RedPacket_Send_Type_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{1.000000,-170.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="RedPacket_Send_TypeText">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="Text" Value="#{HBXTS_221214_3}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_ComboList" Name="RedPacket_Send_Type">
+          <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.00000,110.000000},{0.000000,20.000000}" />
+          <Event Name="ListSelectionAccepted" Function="Redenvelope_Send_MoneyTypeChanged();" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="RedPacket_Send_Distribute_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{1.000000,-145.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="RedPacket_Send_DistributeText">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="Text" Value="#{HBXTS_221214_5}" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_ComboList" Name="RedPacket_Send_Distribute">
+          <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.00000,110.000000},{0.000000,20.000000}" />
+          <Event Name="ListSelectionAccepted" Function=" Redenvelope_Send_TypeChanged();" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="RedPacket_Send_LeftTimes">
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{1.000000,-144.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{HBXTS_221214_27}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="RedPacket_Send_Send_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{1.000000,-170.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="RedPacket_Send_RangeText">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="Text" Value="#{HBXTS_221214_8}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_ComboList" Name="RedPacket_Send_Range">
+          <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.00000,110.000000},{0.000000,20.000000}" />
+          <Event Name="ListSelectionAccepted" Function="Redenvelope_Send_ChannelChanged();" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="RedPacket_Send_Amount_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{1.000000,-95.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="RedPacket_Send_AmountText">
+          <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="Text" Value="#{HBXTS_221214_18}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_EditBoxNormal" Name="RedPacket_Send_Amount">
+          <Property Name="UnifiedSize" Value="{{0.000000,105.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,63.000000},{0.000000,0.000000}}"/>
+          <Property Name="ValidationString" Value="[0-9]*"/>
+          <Property Name="MaxTextLength" Value="6"/>
+          <Property Name="DefaultEditBox" Value="True"/>
+          <Event Name="TextChanged" Function="Redenvelope_Send_MoneyCountChanged();" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="RedPacket_Send_Word_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,360.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-120.000000}}"/>
+        <Window Type="TLBB_ButtonCheck" Name="RedPacket_Send_WordCheck">
+          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,3.000000}}"/>
+          <Event Name="Clicked" Function="Redenvelope_Send_CiphereClicked();"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="RedPacket_Send_WordText">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.000000,0.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{HBXTS_221214_29}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_ComboList" Name="RedPacket_Send_Word">
+          <Property Name="UnifiedSize" Value="{{0.000000,293.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,67.000000},{0.000000,0.000000}}"/>
+          <Event Name="ListSelectionAccepted" Function="Redenvelope_Send_CiphereChanged();" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="RedPacket_Send_Blank">
+        <Property Name="UnifiedSize" Value="{{1.000000,-161.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{1.000000,-20.000000}}"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="RedPacket_Send_SendOutBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="#{HBXTS_221214_1}" />
+        <Property Name="Tooltip" Value="#{HBXTS_221214_133}"/>
+        <Event Name="Clicked" Function="Redenvelope_Send_SendOut_Clicked();" />
+      </Window>
+      <Window Type="DefaultWindow" Name="RedPacket_Send_Balance">
+        <Property Name="UnifiedSize" Value="{{0.000000,363.000000},{0.000000,44.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-68.000000}}"/>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="RedPacket_Send_Balance_HaveText">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{HBXTS_221214_13}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_Money" Name="RedPacket_Send_Balance_HaveTextNumber">
+          <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-205.000000},{0.000000,21.000000}}"/>
+          <Property Name="Text" Value="999"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="RightAligned"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="RedPacket_Send_Balance_HaveYuanbaoNumber">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.000000,22.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{HBXTS_221214_122}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="RightAligned"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="RedPacket_Send_Balance_HaveYuanbaoIcon">
+          <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,18.000000}}"/>
+          <Property Name="Image" Value="set:UIIcons image:UI_Yuanbao"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="RedPacket_Send_Balance_NeedText">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{HBXTS_221214_16}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_Money" Name="RedPacket_Send_Balance_NeedTextNumber">
+          <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-205.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="999"/>
+          <Property Name="MoneyColor" Value=""/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="RightAligned"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="RedPacket_Send_Balance_NeedYuanbaoNumber">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.000000,2.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="999"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="RightAligned"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="RedPacket_Send_Balance_NeedYuanbaoIcon">
+          <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,-3.000000}}"/>
+          <Property Name="Image" Value="set:UIIcons image:UI_Yuanbao"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Frozen1" Name="Frozen_PVPXuanRen_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,330.000000},{0.000000,264.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-160.000000},{0.500000,-132.000000}}"/>
+    <Window Type="TLBB_StaticImageNULL" Name="Frozen_PVPXuanRen_TitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,238.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-119.000000},{0.000000,2.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Image" Value="set:Frozen_PVP image:Frozen_TitleBK"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Frozen_PVPXuanRen_Title">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Text" Value="#{BXDZ_240918_139}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="Frozen_PVPXuanRen_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Frozen_PVPXuanRen_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Frozen_PVPXuanRen_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Frozen_PVPXuanRen_Close();"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="Frozen_PVPXuanRen_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Window Type="DefaultWindow" Name="Frozen_PVPXuanRen_Content_1">
+        <Property Name="UnifiedSize" Value="{{0.000000,133.000000},{0.000000,175.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-136.000000},{0.000000,6.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_Frame_Lace2" Name="Frozen_PVPXuanRen_ContentBK_1">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,175.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Frozen_PVPXuanRen_Img_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,133.000000},{0.000000,175.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Frozen_PVP image:Frozen_PVPImage1"/>
+            <Window Type="TLBB_ButtonCheckNULL" Name="Frozen_PVPXuanRen_Img_1Btn">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="CheckMode" Value="1"/>
+              <Property Name="Tooltip" Value="#{BXDZ_240918_143}"/>
+              <Property Name="PushedImage" Value="set:Frozen_PVP image:Frozen_PVPImagePush"/>
+              <Event Name="Clicked" Function="Frozen_PVPXuanRen_Img_1Btn_Click(0);"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Frozen_PVPXuanRen_ContentTitle_1">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="Frozen_PVPXuanRen_ContentTitle_Info_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="#{BXDZ_240918_140}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Frozen_PVPXuanRen_Content_2">
+        <Property Name="UnifiedSize" Value="{{0.000000,133.000000},{0.000000,175.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,3.000000},{0.000000,6.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_Frame_Lace2" Name="Frozen_PVPXuanRen_ContentBK_2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Frozen_PVPXuanRen_Img_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,133.000000},{0.000000,175.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Frozen_PVP image:Frozen_PVPImage2"/>
+            <Window Type="TLBB_ButtonCheckNULL" Name="Frozen_PVPXuanRen_Img_2Btn">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="CheckMode" Value="1"/>
+              <Property Name="Tooltip" Value="#{BXDZ_240918_144}"/>
+              <Property Name="PushedImage" Value="set:Frozen_PVP image:Frozen_PVPImagePush"/>
+              <Event Name="Clicked" Function="Frozen_PVPXuanRen_Img_1Btn_Click(1);"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Frozen_PVPXuanRen_Img_2BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Frozen_PVP image:Frozen_PVPImageBK"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Frozen_PVPXuanRen_ContentTitle_2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="Frozen_PVPXuanRen_ContentTitle_Info_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="#{BXDZ_240918_141}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="Frozen_PVPXuanRen_OK">
+      <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.50000,-40.000000},{1.000000,-40.000000}}"/>
+      <Property Name="Text" Value="#{BXDZ_240918_147}"/>
+      <Event Name="Clicked" Function="Frozen_PVPXuanRen_OK();"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Tooltip" Value="#{TLCJ_20240709_194}"/>
+    </Window>
+  </Window>
+</GUILayout>

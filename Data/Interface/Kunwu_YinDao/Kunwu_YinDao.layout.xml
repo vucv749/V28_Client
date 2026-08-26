@@ -1,0 +1,362 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="Kunwu_YinDaoFrame">
+    <Property Name="UnifiedSize" Value="{{0.000000,694.000000},{0.000000,502.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-342.000000},{0.500000,-251.000000}}"/>
+    <Window Type="TLBB_HeroTitle01" Name="Kunwu_YinDaoFrame_DragTitle_BK">
+      <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-140.000000},{0.000000,-2.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Kunwu_YinDaoFrame_Title">
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,4.000000}}"/>
+      <Property Name="DragTarget" Value="Kunwu_YinDaoFrame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{ZSYD_241218_03}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="VertFormatting" Value="VertCentred"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="Kunwu_YinDaoFrame_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,8.000000}}"/>
+      <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+      <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
+      <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
+      <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+      <Event Name="Clicked" Function="Kunwu_YinDaoFrame_Charts_CloseClick();"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="Kunwu_YinDaoFrame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-24.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,24.000000}}"/>
+
+      <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YinDaoFrame_ClientBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,690.000000},{0.000000,470.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,4.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Kunwu_YinDao image:Kunwu_YinDao_BK"/>
+        <Window Type="TLBB_ButtonNULL" Name="Kunwu_YinDaoFrame_Help">
+          <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,610.000000},{0.000000,102.000000}}"/>
+          <Property Name="PushedImage" Value="set:Kunwu_YinDao image:Kunwu_YinDao_WH_Pushed"/>
+          <Property Name="NormalImage" Value="set:Kunwu_YinDao image:Kunwu_YinDao_WH_Normal"/>
+          <Property Name="HoverImage" Value="set:Kunwu_YinDao image:Kunwu_YinDao_WH_Hover"/>
+          <Property Name="DisabledImage" Value="set:Kunwu_YinDao image:Kunwu_YinDao_WH_Disabled"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="Kunwu_YinDaoFrame_HelpClick();"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="Kunwu_YinDaoFrame_BK1">
+          <Property Name="UnifiedSize" Value="{{1.000000,.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="DefaultWindow" Name="Kunwu_YinDaoFrame_ButtonBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{1.000000,-240.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,202.000000}}"/>
+            <Window Type="TLBB_ButtonNULL" Name="Kunwu_YinDaoFrame_Button1">
+              <Property Name="UnifiedSize" Value="{{0.000000,127.000000},{0.000000,35.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,36.000000}}"/>
+              <Property Name="PushedImage" Value="set:Kunwu_YinDao image:Kunwu_YinDao_QH_Over"/>
+              <Property Name="HoverImage" Value="set:Kunwu_YinDao image:Kunwu_YinDao_QH_Over"/>
+              <Property Name="NormalImage" Value="set:Kunwu_YinDao image:Kunwu_YinDao_QH_Normal"/>
+              <Event Name="Clicked" Function="Kunwu_YinDaoFrame_Button1_Click(1);"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YinDaoFrame_Button1_Cover">
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,37.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,20.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Kunwu_YinDao image:Kunwu_YinDao_Over"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="Kunwu_YinDaoFrame_Button2">
+              <Property Name="UnifiedSize" Value="{{0.000000,127.000000},{0.000000,35.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,76.000000}}"/>
+              <Property Name="PushedImage" Value="set:Kunwu_YinDao image:Kunwu_YinDao_SW_Over"/>
+              <Property Name="NormalImage" Value="set:Kunwu_YinDao image:Kunwu_YinDao_SW_Normal"/>
+              <Property Name="HoverImage" Value="set:Kunwu_YinDao image:Kunwu_YinDao_SW_Over"/>
+              <Event Name="Clicked" Function="Kunwu_YinDaoFrame_Button1_Click(2);"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YinDaoFrame_Button2_Cover">
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,37.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,60.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Kunwu_YinDao image:Kunwu_YinDao_Over"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="Kunwu_YinDaoFrame_Button3">
+              <Property Name="UnifiedSize" Value="{{0.000000,127.000000},{0.000000,35.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,116.000000}}"/>
+              <Property Name="PushedImage" Value="set:Kunwu_YinDao image:Kunwu_YinDao_XLuo_Over"/>
+              <Property Name="NormalImage" Value="set:Kunwu_YinDao image:Kunwu_YinDao_XLuo_Normal"/>
+              <Property Name="HoverImage" Value="set:Kunwu_YinDao image:Kunwu_YinDao_XLuo_Over"/>
+              <Event Name="Clicked" Function="Kunwu_YinDaoFrame_Button1_Click(3);"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YinDaoFrame_Button3_Cover">
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,37.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,100.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Kunwu_YinDao image:Kunwu_YinDao_Over"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="Kunwu_YinDaoFrame_Button4">
+              <Property Name="UnifiedSize" Value="{{0.000000,127.000000},{0.000000,35.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,156.000000}}"/>
+              <Property Name="PushedImage" Value="set:Kunwu_YinDao image:Kunwu_YinDao_XL_Over"/>
+              <Property Name="NormalImage" Value="set:Kunwu_YinDao image:Kunwu_YinDao_XL_Normal"/>
+              <Property Name="HoverImage" Value="set:Kunwu_YinDao image:Kunwu_YinDao_XL_Over"/>
+              <Event Name="Clicked" Function="Kunwu_YinDaoFrame_Button1_Click(4);"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YinDaoFrame_Button4_Cover">
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,37.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,140.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Kunwu_YinDao image:Kunwu_YinDao_Over"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="Kunwu_YinDaoFrame_Button5">
+              <Property Name="UnifiedSize" Value="{{0.000000,127.000000},{0.000000,35.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,196.000000}}"/>
+              <Property Name="PushedImage" Value="set:Kunwu_YinDao image:Kunwu_YinDao_ZS_Over"/>
+              <Property Name="HoverImage" Value="set:Kunwu_YinDao image:Kunwu_YinDao_ZS_Over"/>
+              <Property Name="NormalImage" Value="set:Kunwu_YinDao image:Kunwu_YinDao_ZS_Normal"/>
+              <Event Name="Clicked" Function="Kunwu_YinDaoFrame_Button1_Click(5);"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YinDaoFrame_Button5_Cover">
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,37.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,180.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Kunwu_YinDao image:Kunwu_YinDao_Over"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+
+
+          </Window>
+          <Window Type="DefaultWindow" Name="Kunwu_YinDaoFrame_Lace1">
+            <Property Name="UnifiedSize" Value="{{1.000000,-170.000000},{0.000000,140.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,140.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Window Type="TLBB_SimpleText" Name="Kunwu_YinDaoFrame_Intro">
+              <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,80.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YinDaoFrame_Lace1_TitleBk1">
+              <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,55.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,76.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Kunwu_YinDao image:Kunwu_YinDao_IconBK1"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YinDaoFrame_Lace1_TitleBk2">
+              <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,55.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,76.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Kunwu_YinDao image:Kunwu_YinDao_IconBK2"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Kunwu_YinDaoFrame_Item1">
+              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,360.000000},{1.000000,-56.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Event Name="Clicked" Function="Kunwu_YinDaoFrame_Item(1);"/>
+              <Window Type="TLBB_Animate" Name="Kunwu_YinDaoFrame_Item1_Animate">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Animate" Value="Equip_Zhizun"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YinDaoFrame_Item1_Mask">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Kunwu_YinDaoFrame_Item2">
+              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,408.000000},{1.000000,-56.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Event Name="Clicked" Function="Kunwu_YinDaoFrame_Item(2);"/>
+              <Window Type="TLBB_Animate" Name="Kunwu_YinDaoFrame_Item2_Animate">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Animate" Value="Equip_Zhizun"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YinDaoFrame_Item2_Mask">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+              </Window>
+
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Kunwu_YinDaoFrame_Item3">
+              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,456.000000},{1.000000,-56.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Event Name="Clicked" Function="Kunwu_YinDaoFrame_Item(3);"/>
+              <Window Type="TLBB_Animate" Name="Kunwu_YinDaoFrame_Item3_Animate">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Animate" Value="Equip_Zhizun"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YinDaoFrame_Item3_Mask">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+              </Window>
+
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Kunwu_YinDaoFrame_Lace2">
+            <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,120.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-90.000000},{1.000000,-200.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Window Type="DefaultWindow" Name="Kunwu_YinDaoFrame_Intro2">
+              <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,10.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YinDaoFrame_Intro2_Image1">
+                <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,12.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,10.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Kunwu_YinDao image:Kunwu_YinDao_BJ"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Kunwu_YinDaoFrame_Intro2_Text1">
+                <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{1.000000,-102.000000}}"/>
+                <Property Name="Text" Value="#{ZSYD_241218_38}" />
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                <Property Name="VertFormatting" Value="VertCentred"/>
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YinDaoFrame_Intro2_Image2">
+                <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,12.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,45.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Kunwu_YinDao image:Kunwu_YinDao_BJ"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Kunwu_YinDaoFrame_Intro2_Text3">
+                <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{1.000000,-67.000000}}"/>
+                <Property Name="Text" Value="#{ZSYD_241218_39}" />
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                <Property Name="VertFormatting" Value="VertCentred"/>
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YinDaoFrame_Intro2_Image3">
+                <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,12.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,80.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Kunwu_YinDao image:Kunwu_YinDao_BJ"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Kunwu_YinDaoFrame_Intro2_Text5">
+                <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{1.000000,-32.000000}}"/>
+                <Property Name="Text" Value="#{ZSYD_241218_40}" />
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                <Property Name="VertFormatting" Value="VertCentred"/>
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Kunwu_YinDaoFrame_Lace3">
+            <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,75.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,154.000000},{0.000000,60.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YinDaoFrame_Lace3Bk">
+              <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,50.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{0.000000,30.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Kunwu_YinDao image:Kunwu_YinDao_TitleBK"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YinDaoFrame_Lace3_Title">
+                <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,26.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,12.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Kunwu_YinDao image:Kunwu_YinDao_QH_Hover"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Kunwu_YinDaoFrame_BK2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-180.000000},{1.000000,-160.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,165.000000},{0.000000,80.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="Kunwu_YinDaoFrame_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,-66.000000},{1.000000,-168.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,58.000000}}"/>
+            <Property Name="Text" Value="#{ZSYD_241218_04}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Kunwu_YinDaoFrame_Button">
+            <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-318.000000},{0.000000,215.000000}}"/>
+            <Property Name="PushedImage" Value="set:Kunwu_YinDao image:Kunwu_YinDao_GL_Pushed"/>
+            <Property Name="NormalImage" Value="set:Kunwu_YinDao image:Kunwu_YinDao_GL_Normal"/>
+            <Property Name="HoverImage" Value="set:Kunwu_YinDao image:Kunwu_YinDao_GL_Hover"/>
+            <Property Name="DisabledImage" Value="set:Kunwu_YinDao image:Kunwu_YinDao_GL_Disabled"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Kunwu_YinDaoFrame_Charts_ButtonClick();"/>
+          </Window>
+
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

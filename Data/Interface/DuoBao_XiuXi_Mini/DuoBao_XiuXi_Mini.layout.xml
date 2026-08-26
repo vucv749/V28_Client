@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="DuoBao_XiuXi_Mini_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{0.000000,36.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-204.000000},{1.000000,-171.000000}}"/>
+    <Window Type="TLBB_Frame_Lace4" Name="DuoBao_XiuXi_Mini">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_DragTitle" Name="DuoBao_XiuXi_Mini_PageHeader">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{DDDB_20240711_53}"/>
+        <Property Name="DragTarget" Value="DuoBao_XiuXi_Mini_Frame"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="DuoBao_XiuXi_Mini_Image">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.500000,-7.000000}}"/>
+        <Property Name="PushedImage" Value="set:SongLiao02 image:Up_Pushed"/>
+        <Property Name="NormalImage" Value="set:SongLiao02 image:Up_Normal"/>
+        <Property Name="HoverImage" Value="set:SongLiao02 image:Up_Hover"/>
+        <Property Name="DisabledImage" Value="set:SongLiao02 image:Up_Disabled"/>
+        <Event Name="Clicked" Function="DuoBao_XiuXi_Mini_Clicked()" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

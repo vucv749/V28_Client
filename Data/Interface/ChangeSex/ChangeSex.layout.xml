@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="ChangeSex_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,456.000000},{0.000000,372.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.000000,279.000000},{0.000000,164.000000}}"/>
+    <Event Name="Hidden" Function="ChangeSex_Close();"/>
+    <Window Type="TLBB_DragTitle" Name="ChangeSex_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="DragTarget" Value="ChangeSex_Frame"/>
+      <Window Type="TLBB_SimpleText" Name="ChangeSex_Title">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Font" Value="YouYuan11.25"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Text" Value="#{ZXD_20120406_01}"/>
+        <Property Name="VertFormatting" Value="VertCentred"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="ChangeSex_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonHelp" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*ChangeMinorPassword&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="ChangeSex_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="ChangeSex_Close();"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="ChangeSex_Frame1">
+      <Property Name="UnifiedSize" Value="{{0.000000,446.000000},{0.000000,327.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,29.000000}}"/>
+      <Window Type="TLBB_MeshWindow" Name="ChangeSex_FakeObject_Left">
+        <Property Name="UnifiedSize" Value="{{0.000000,184.000000},{0.000000,267.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,10.000000}}"/>
+        <Property Name="MouseHollow" Value="True" />
+        <Property Name="ShowControl" Value="SelfEquip_Frame" />
+        <Window Type="TLBB_ButtonTurnLeft" Name="ChangeSex_TurnLeft_Left">
+          <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.820000,0.000000}}"/>
+          <Event Name="MouseButtonDown" Function="ChangeSex_TurnLeft_Left(1);" />
+          <Event Name="MouseButtonUp" Function="ChangeSex_TurnLeft_Left(0)" />
+        </Window>
+        <Window Type="TLBB_ButtonTurnRight" Name="ChangeSex_TurnRight_Left">
+          <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.950000,-25.000000},{0.820000,0.000000}}"/>
+          <Event Name="MouseButtonDown" Function="ChangeSex_TurnRight_Left(1);" />
+          <Event Name="MouseButtonUp" Function="ChangeSex_TurnRight_Left(0)" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_MeshWindow" Name="ChangeSex_FakeObject_Right">
+        <Property Name="UnifiedSize" Value="{{0.000000,184.000000},{0.000000,267.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,246.000000},{0.000000,10.000000}}"/>
+        <Property Name="MouseHollow" Value="True" />
+        <Property Name="ShowControl" Value="SelfEquip_Frame" />
+        <Window Type="TLBB_ButtonTurnLeft" Name="ChangeSex_TurnLeft_Right">
+          <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.820000,0.000000}}"/>
+          <Event Name="MouseButtonDown" Function="ChangeSex_TurnLeft_Right(1);" />
+          <Event Name="MouseButtonUp" Function="ChangeSex_TurnLeft_Right(0)" />
+        </Window>
+        <Window Type="TLBB_ButtonTurnRight" Name="ChangeSex_TurnRight_Right">
+          <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.950000,-25.000000},{0.820000,0.000000}}"/>
+          <Event Name="MouseButtonDown" Function="ChangeSex_TurnRight_Right(1);" />
+          <Event Name="MouseButtonUp" Function="ChangeSex_TurnRight_Right(0)" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="ChangeSex_Client1">
+        <Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,295.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,199.000000},{0.000000,7.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="ChangeSex_Blank">
+        <Property Name="UnifiedSize" Value="{{0.000000,325.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,304.000000}}"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="ChangeSex_Accept">
+        <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,329.000000},{0.000000,304.000000}}"/>
+        <Property Name="Text" Value="#{ZXD_20120406_09}" />
+        <Event Name="Clicked" Function="ChangeSex_Accept_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="ChangeSex_Cancel">
+        <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,394.000000},{0.000000,304.000000}}"/>
+        <Property Name="Text" Value="#{INTERFACE_XML_1059}" />
+        <Event Name="Clicked" Function="ChangeSex_Close();" />
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="ChangeSex_Jiantou">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,204.000000},{0.000000,127.000000}}"/>
+        <Property Name="Image" Value="set:Buttons image:SceneMap_Right_Normal"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+      </Window>
+
+    </Window>
+  </Window>
+</GUILayout>

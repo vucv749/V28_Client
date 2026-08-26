@@ -1,0 +1,141 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="Lingyu_Zhuanyi_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,294.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-140.000000},{0.500000,-150.000000}}"/>
+    <Event Name="Hidden" Function="Lingyu_Zhuanyi_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="Lingyu_Zhuanyi_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="Lingyu_Zhuanyi_Frame" />
+      <Window Type="TLBB_SimpleText" Name="Lingyu_Zhuanyi_Title">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="Text" Value="#{SZXT_221216_144}" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Lingyu_Zhuanyi_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonHelp" />
+      <Event Name="Clicked" Function="Lingyu_Zhuanyi_HelpClicked()" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Lingyu_Zhuanyi_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="Lingyu_Zhuanyi_CloseClicked()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Lingyu_Zhuanyi_Frame_Client">
+      <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+      <Property Name="RiseOnClick" Value="False" />
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Lingyu_Zhuanyi_Info1">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,70.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{SZXT_221216_145}" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Lingyu_Zhuanyi_Info2">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,74.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{SZXT_221216_146}" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="Lingyu_Zhuanyi_From">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,49.000000},{0.000000,98.000000}}"/>
+        <Property Name="Empty" Value="false" />
+        <Property Name="DragAcceptName" Value="W39" />
+        <Property Name="DraggingEnabled" Value="True" />
+        <Event Name="MouseRClick" Function="Lingyu_Zhuanyi_LingYu_OnRBClicked(0)" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Lingyu_Zhuanyi_Info5">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-116.000000},{0.000000,74.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{SZXT_221216_147}" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="Lingyu_Zhuanyi_To">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-85.000000},{0.000000,98.000000}}"/>
+        <Property Name="Empty" Value="false" />
+        <Property Name="DragAcceptName" Value="W40" />
+        <Property Name="DraggingEnabled" Value="True" />
+        <Event Name="MouseRClick" Function="Lingyu_Zhuanyi_LingYu_OnRBClicked(1)" />
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Lingyu_Zhuanyi_Icon">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.000000,100.000000}}"/>
+        <Property Name="Image" Value="set:Buttons image:SceneMap_Right_Normal"/>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Lingyu_Zhuanyi_Info">
+        <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-91.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{INTERFACE_XML_789}" />
+        <Window Type="TLBB_Money" Name="Lingyu_Zhuanyi_DemandMoney">
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Lingyu_Zhuanyi_SelfJiaozi_Text">
+        <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-69.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{BDJB_051210_1}" />
+        <Window Type="TLBB_Money" Name="Lingyu_Zhuanyi_SelfJiaozi">
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Lingyu_Zhuanyi_SelfMoney_Text">
+        <Property Name="UnifiedPosition" Value="{{0.05,0.000000},{1.000000,-47.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.9,0.000000},{0.000000,22.000000}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{INTERFACE_XML_834}" />
+        <Window Type="TLBB_Money" Name="Lingyu_Zhuanyi_SelfMoney">
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="Lingyu_Zhuanyi_Blank">
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-85.000000},{0.000000,20.000000}" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Lingyu_Zhuanyi_OK">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-83.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_557}" />
+        <Event Name="Clicked" Function="Lingyu_Zhuanyi_OK_Clicked()" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Lingyu_Zhuanyi_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-43.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_542}" />
+        <Event Name="Clicked" Function="Lingyu_Zhuanyi_CloseClicked()" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

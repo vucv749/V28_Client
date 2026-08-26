@@ -1,0 +1,192 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrameNULL" Name="MonthPVP_Result_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,560.000000},{0.000000,396.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-280.000000},{0.500000,-240.000000}}"/>
+		<Window Type="TLBB_StaticImageNULL" Name="MonthPVP_Result_DragTitleBK">
+			<Property Name="UnifiedSize" Value="{{0.000000,454.000000},{0.000000,49.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.500000,-227.000000},{0.000000,0.000000}}"/>
+			<Property Name="MouseRButtonHollow" Value="True"/>
+			<Property Name="MouseMoveHollow" Value="True"/>
+			<Property Name="MouseLButtonHollow" Value="True"/>
+			<Property Name="MouseHollow" Value="True"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_TitleBK"/>
+		</Window>		
+		<Window Type="TLBB_FrameY" Name="MonthPVP_Result_FrameBK">
+			<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,372.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-372.000000}}"/>
+			<Window Type="TLBB_DragTitle" Name="MonthPVP_Result_DragTitle">
+				<Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,23.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+				<Property Name="DragTarget" Value="MonthPVP_Result_Frame"/>
+				<Window Type="TLBB_SimpleText" Name="MonthPVP_Result_PageHeader">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{LLKC_240517_149}"/>
+					<Property Name="HorzFormatting" Value="HorzCentred"/>
+					<Property Name="Font" Value="YouYuan11.25"/>
+				</Window>
+			</Window>
+
+			<Window Type="TLBB_Frame_Lace3" Name="MonthPVP_Result_Client">
+				<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,348.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-350.000000}}"/>
+				<Window Type="TLBB_StaticImageNULL" Name="MonthPVP_Result_ClientBK">
+					<Property Name="UnifiedSize" Value="{{0.000000,542.000000},{0.000000,344.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+					<Property Name="MouseRButtonHollow" Value="True"/>
+					<Property Name="MouseMoveHollow" Value="True"/>
+					<Property Name="MouseLButtonHollow" Value="True"/>
+					<Property Name="MouseHollow" Value="True"/>
+					<Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_BK"/>
+					<Window Type="DefaultWindow" Name="MonthPVP_Result_Camp1">
+						<Property Name="UnifiedSize" Value="{{0.330000,0.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.005000,0.000000},{0.000000,0.000000}}"/>
+						<Window Type="TLBB_StaticImageNULL" Name="MonthPVP_Result_Camp1_Title">
+							<Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,160.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-80.000000},{0.000000,24.000000}}"/>
+							<Property Name="RiseOnClick" Value="False"/>
+							<Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Bai"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="MonthPVP_Result_Camp1_My">
+							<Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,70.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,18.000000}}"/>
+							<Property Name="RiseOnClick" Value="False"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_MY"/>
+						</Window>                
+						<Window Type="TLBB_SimpleText" Name="MonthPVP_Result_Camp1_Text1">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,18.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,46.000000}}"/>
+							<Property Name="Text" Value="#{LLKC_240517_139}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="RiseOnClick" Value="False"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="MonthPVP_Result_Camp1_Line1">
+							<Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,1.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-47.000000},{0.500000,64.000000}}"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Line1"/>
+						</Window>
+
+						<Window Type="TLBB_StaticImageNULL" Name="MonthPVP_Result_Camp1_ItemBK">
+							<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,45.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-21.000000},{0.500000,63.000000}}"/>
+							<Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_ItemBK"/>
+							<Window Type="TLBB_ActionButton" Name="MonthPVP_Result_Camp1_Item">
+								<Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.500000,-15.000000},{0.500000,-14.000000}}"/>
+							</Window>
+						</Window>
+					</Window>
+					<Window Type="DefaultWindow" Name="MonthPVP_Result_Camp2">
+						<Property Name="UnifiedSize" Value="{{0.330000,0.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.335000,0.000000},{0.000000,0.000000}}"/>
+						<Window Type="TLBB_StaticImageNULL" Name="MonthPVP_Result_Camp2_Title">
+							<Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,160.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-80.000000},{0.000000,6.000000}}"/>
+							<Property Name="RiseOnClick" Value="False"/>
+							<Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Zi"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="MonthPVP_Result_Camp2_My">
+							<Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,70.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,18.000000}}"/>
+							<Property Name="RiseOnClick" Value="False"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_MY"/>
+						</Window>                
+						<Window Type="TLBB_SimpleText" Name="MonthPVP_Result_Camp2_Text1">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,18.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,46.000000}}"/>
+							<Property Name="Text" Value="#{LLKC_240517_139}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="RiseOnClick" Value="False"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="MonthPVP_Result_Camp2_Line1">
+							<Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,1.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-47.000000},{0.500000,64.000000}}"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Line1"/>
+						</Window>
+
+						<Window Type="TLBB_StaticImageNULL" Name="MonthPVP_Result_Camp2_ItemBK">
+							<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,45.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-21.000000},{0.500000,63.000000}}"/>
+							<Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_ItemBK"/>
+							<Window Type="TLBB_ActionButton" Name="MonthPVP_Result_Camp2_Item">
+								<Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.500000,-15.000000},{0.500000,-14.000000}}"/>
+							</Window>
+						</Window>
+					</Window>
+					<Window Type="DefaultWindow" Name="MonthPVP_Result_Camp3">
+						<Property Name="UnifiedSize" Value="{{0.330000,0.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.665000,0.000000},{0.000000,0.000000}}"/>
+						<Window Type="TLBB_StaticImageNULL" Name="MonthPVP_Result_Camp3_Title">
+							<Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,160.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-80.000000},{0.000000,24.000000}}"/>
+							<Property Name="RiseOnClick" Value="False"/>
+							<Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Niu"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="MonthPVP_Result_Camp3_My">
+							<Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,70.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,18.000000}}"/>
+							<Property Name="RiseOnClick" Value="False"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_MY"/>
+						</Window>                
+						<Window Type="TLBB_SimpleText" Name="MonthPVP_Result_Camp3_Text1">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,18.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,46.000000}}"/>
+							<Property Name="Text" Value="#{LLKC_240517_139}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="RiseOnClick" Value="False"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="MonthPVP_Result_Camp3_Line1">
+							<Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,1.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-47.000000},{0.500000,64.000000}}"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Line1"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="MonthPVP_Result_Camp3_ItemBK">
+							<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,45.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-21.000000},{0.500000,63.000000}}"/>
+							<Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_ItemBK"/>
+							<Window Type="TLBB_ActionButton" Name="MonthPVP_Result_Camp3_Item">
+								<Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.500000,-15.000000},{0.500000,-14.000000}}"/>
+							</Window>
+						</Window>
+					</Window>
+				</Window>					
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="MonthPVP_Result_TopList_info">
+				<Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-50.000000}}"/>
+				<Property Name="Text" Value="#{LLKC_240517_150}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+			</Window>
+			<Window Type="TLBB_StopWatch" Name="MonthPVP_Result_TopList_Time">
+				<Property Name="UnifiedSize" Value="{{1.000000,-314.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{1.000000,-30.000000}}"/>
+				<Property Name="Text" Value="00:00"/>
+				<Property Name="MouseRButtonHollow" Value="True"/>
+				<Property Name="MouseLButtonHollow" Value="True"/>
+				<Property Name="MouseHollow" Value="True"/>
+				<Property Name="AlwaysOnTop" Value="True" />
+				<Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+			</Window>			
+			<Window Type="TLBB_SimpleText" Name="MonthPVP_Result_TopList_TimeText">
+				<Property Name="UnifiedSize" Value="{{1.000000,-262.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,256.000000},{1.000000,-30.000000}}"/>
+				<Property Name="Text" Value="#{LLKC_240517_210}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+			</Window>		
+
+		</Window>
+	</Window>
+
+</GUILayout>

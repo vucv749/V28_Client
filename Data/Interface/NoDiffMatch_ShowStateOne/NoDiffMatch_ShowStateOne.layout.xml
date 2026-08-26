@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="NoDiffMatch_ShowStateOne_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,500.000000},{0.000000,360.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-250.000000},{0.500000,-180.000000}}"/>
+    <Event Name="Hidden" Function="NoDiffMatch_ShowStateOne_CloseClicked();" />
+    <Window Type="TLBB_DragTitle" Name="NoDiffMatch_ShowStateOne_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,10.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+      <Property Name="DragTarget" Value="NoDiffMatch_ShowStateOne_Frame"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="Text" Value="#{WCBZ_180128_180}" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="NoDiffMatch_ShowStateOne_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="NoDiffMatch_ShowStateOne_CloseClicked();" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="NoDiffMatch_ShowStateOne_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="NoDiffMatch_ShowStateOne_TopFrame">
+      <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{0.000000,25.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,32.000000}}"/>
+      <!-- <Window Type="TLBB_ButtonFenYe2" Name="NoDiffMatch_ShowStateOne_YXSJJ">
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
+        <Property Name="Text" Value="#{WCBZ_180128_561}" />
+        <Property Name="CheckMode" Value="1" />
+        <Event Name="Clicked" Function="NoDiffMatch_ShowStateOne_YXSJJ_Clicked();" />
+      </Window> -->
+      <!-- <Window Type="TLBB_ButtonFenYe2" Name="NoDiffMatch_ShowStateOne_YXSJS">
+        <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,25.000000}}"/>
+        <Property Name="Text" Value="#{WCBZ_180128_562}" />
+        <Property Name="CheckMode" Value="1" />
+        <Event Name="Clicked" Function="NoDiffMatch_ShowStateOne_YXSJS_Clicked();" />
+      </Window> -->
+    </Window>
+    <Window Type="DefaultWindow" Name="NoDiffMatch_ShowStateOne_ListFrame">
+      <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{1.000000,-72.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_Frame_Lace6" Name="NoDiffMatch_ShowStateOne_Explain">
+        <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,90.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="NoDiffMatch_ShowStateOne_ExplainText">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{WCBZ_180128_181}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_MultiColumnList" Name="NoDiffMatch_ShowStateOne_ListInfo">
+        <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{1.000000,-112.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,90.000000}}"/>
+        <Property Name="ColumnHeader" Value="text:#{WCBZ_180128_573} width:0.15 id:0" />
+        <Property Name="ColumnHeader" Value="text:#{WCBZ_180128_182} width:0.30 id:1" />
+        <Property Name="ColumnHeader" Value="text:#{WCBZ_180128_183} width:0.30 id:2" />
+        <Property Name="ColumnHeader" Value="text:#{WCBZ_180128_185} width:0.25 id:3" />
+        <Property Name="ForceVertScrollbar" Value="True"/>
+        <Property Name="ColumnsSizable" Value="False"/>
+        <Property Name="ColumnsMovable" Value="False"/>
+        <Event Name="SelectionChanged" Function="NoDiffMatch_ShowStateOne_ListInfo_On_SelectionChanged();"/>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="NoDiffMatch_ShowStateOne_ButtonFrame">
+      <Property Name="UnifiedSize" Value="{{1.000000,-55.000000},{0.000000,24.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{1.000000,-48.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_ButtonCommon" Name="NoDiffMatch_ShowStateOne_TeamInfo">
+        <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{WCBZ_180128_552}" />
+        <Event Name="Clicked" Function="NoDiffMatch_ShowStateOne_TeamInfo_Clicked();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

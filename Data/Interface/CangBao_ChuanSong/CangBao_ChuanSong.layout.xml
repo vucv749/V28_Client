@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="CangBao_ChuanSong_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,768.000000},{0.000000,524.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-384.000000},{0.500000,-262.000000}}"/>
+    <Event Name="Hidden" Function="CangBao_ChuanSong_Close();" />
+    <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_Client">
+      <Property Name="UnifiedSize" Value="{{0.000000,768.000000},{0.000000,524.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="Image" Value="set:CangBao image:CangBao_BK"/>
+      <Window Type="TLBB_DragTitle" Name="CangBao_ChuanSong_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-70.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="DragTarget" Value="CangBao_ChuanSong_Frame" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="CangBao_ChuanSong_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,60.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{0.000000,8.000000}}"/>
+        <Event Name="Clicked" Function="CangBao_ChuanSong_Close();" />
+        <Property Name="PushedImage" Value="set:CangBao image:CangBao_BtnCloseP"/>
+        <Property Name="NormalImage" Value="set:CangBao image:CangBao_BtnCloseN"/>
+        <Property Name="HoverImage" Value="set:CangBao image:CangBao_BtnCloseH"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="CangBao_ChuanSong_GetPrize">
+        <Property Name="UnifiedSize" Value="{{0.000000,119.000000},{0.000000,35.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.000000,458.000000}}"/>
+        <Property Name="PushedImage" Value="set:CangBao image:CangBao_BtnGoP"/>
+        <Property Name="NormalImage" Value="set:CangBao image:CangBao_BtnGoN"/>
+        <Property Name="HoverImage" Value="set:CangBao image:CangBao_BtnGoH"/>
+        <Event Name="Clicked" Function="CangBao_ChuanSong_Goto();" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="CangBao_ChuanSong_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.000000,40.000000}}"/>
+        <Property Name="Text" Value="#{ZDBT_240703_93}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Window Type="TLBB_ButtonHelp" Name="CangBao_ChuanSong_Help2">
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.500000,-7.000000}}"/>
+          <Event Name="Clicked" Function="CangBao_ChuanSong_Help();"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_TextBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,124.000000},{0.000000,27.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,546.000000},{0.000000,446.000000}}"/>
+        <Property Name="Image" Value="set:CangBao image:CangBao_BK2"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="CangBao_ChuanSong_Text2">
+        <Property Name="UnifiedSize" Value="{{0.000000,124.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,560.000000},{0.000000,450.000000}}"/>
+        <Property Name="Text" Value="#{ZDBT_240703_94}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_TextTime">
+        <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,300.000000},{0.000000,440.000000}}"/>
+        <Property Name="Image" Value="set:CangBao image:CangBao_Time"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="CangBao_ChuanSong_Text3">
+        <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,316.000000},{0.000000,438.000000}}"/>
+        <Property Name="Text" Value="#{ZDBT_240703_95}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_StopWatch" Name="CangBao_ChuanSong_Text3Time">
+        <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,410.000000},{0.000000,438.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Text" Value="00:00"/>
+        <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="CangBao_ChuanSong_ALLRoom">
+        <Property Name="UnifiedSize" Value="{{0.000000,660.000000},{0.000000,364.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-330.000000},{0.000000,68.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_Room1_Back">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,78.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{0.000000,248.000000}}"/>
+          <Property Name="Image" Value="set:CangBao image:CangBao_PlayN"/>
+          <Window Type="TLBB_ButtonCheckNULL" Name="CangBao_ChuanSong_RoomInfo1">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,78.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Property Name="PushedImage" Value="set:CangBao image:CangBao_PlayP"/>
+            <Property Name="NormalImage" Value="set:CangBao image:CangBao_PlayN"/>
+            <Property Name="HoverImage" Value="set:CangBao image:CangBao_PlayN"/>
+            <Property Name="DisabledImage" Value="set:CangBao image:CangBao_PlayD"/>
+            <Property Name="PushedImage" Value="set:CangBao image:CangBao_BossP"/>
+            <!-- <Property Name="NormalImage" Value="set:CangBao image:CangBao_BossH"/> -->
+            <Property Name="HoverImage" Value="set:CangBao image:CangBao_BossP"/>
+            <Property Name="DisabledImage" Value="set:CangBao image:CangBao_BossN"/>
+            <Event Name="MouseClick" Function="CangBao_ChuanSong_Select(1);" />
+            <Window Type="TLBB_Animate" Name="CangBao_ChuanSong_Room1_Ani">
+              <Property Name="UnifiedPosition" Value="{{0,0},{0,0}" />
+              <Property Name="Size" Value="w:1 h:1" />
+              <Property Name="Animate" Value="CangBao_Animate" />
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True" />
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_RoomInfo_Player1">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,52.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CangBao image:CangBao_Now"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_RoomInfo_Cover1">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-28.000000}}"/>
+            <Property Name="Image" Value="set:CangBao image:CangBao_Get" />
+            <Property Name="MouseMoveHollow" Value="True" />
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_Room2_Back">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,78.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,299.000000},{0.000000,268.000000}}"/>
+          <Property Name="Image" Value="set:CangBao image:CangBao_PlayN"/>
+          <Window Type="TLBB_ButtonCheckNULL" Name="CangBao_ChuanSong_RoomInfo2">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,78.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Property Name="PushedImage" Value="set:CangBao image:CangBao_PlayP"/>
+            <Property Name="NormalImage" Value="set:CangBao image:CangBao_PlayN"/>
+            <Property Name="HoverImage" Value="set:CangBao image:CangBao_PlayN"/>
+            <Property Name="DisabledImage" Value="set:CangBao image:CangBao_PlayD"/>
+            <Property Name="PushedImage" Value="set:CangBao image:CangBao_BossP"/>
+            <!-- <Property Name="NormalImage" Value="set:CangBao image:CangBao_BossH"/> -->
+            <Property Name="HoverImage" Value="set:CangBao image:CangBao_BossP"/>
+            <Property Name="DisabledImage" Value="set:CangBao image:CangBao_BossN"/>
+            <Event Name="MouseClick" Function="CangBao_ChuanSong_Select(2);" />
+            <Window Type="TLBB_Animate" Name="CangBao_ChuanSong_Room2_Ani">
+              <Property Name="UnifiedPosition" Value="{{0,0},{0,0}" />
+              <Property Name="Size" Value="w:1 h:1" />
+              <Property Name="Animate" Value="CangBao_Animate" />
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True" />
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_RoomInfo_Player2">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,52.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CangBao image:CangBao_Now"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_RoomInfo_Cover2">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-28.000000}}"/>
+            <Property Name="Image" Value="set:CangBao image:CangBao_Get" />
+            <Property Name="MouseMoveHollow" Value="True" />
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_Room3_Back">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,78.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,510.000000},{0.000000,268.000000}}"/>
+          <Property Name="Image" Value="set:CangBao image:CangBao_PlayN"/>
+          <Window Type="TLBB_ButtonCheckNULL" Name="CangBao_ChuanSong_RoomInfo3">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,78.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Property Name="PushedImage" Value="set:CangBao image:CangBao_PlayP"/>
+            <Property Name="NormalImage" Value="set:CangBao image:CangBao_PlayN"/>
+            <Property Name="HoverImage" Value="set:CangBao image:CangBao_PlayN"/>
+            <Property Name="DisabledImage" Value="set:CangBao image:CangBao_PlayD"/>
+            <Property Name="PushedImage" Value="set:CangBao image:CangBao_BossP"/>
+            <!-- <Property Name="NormalImage" Value="set:CangBao image:CangBao_BossH"/> -->
+            <Property Name="HoverImage" Value="set:CangBao image:CangBao_BossP"/>
+            <Property Name="DisabledImage" Value="set:CangBao image:CangBao_BossN"/>
+            <Event Name="MouseClick" Function="CangBao_ChuanSong_Select(3);" />
+            <Window Type="TLBB_Animate" Name="CangBao_ChuanSong_Room3_Ani">
+              <Property Name="UnifiedPosition" Value="{{0,0},{0,0}" />
+              <Property Name="Size" Value="w:1 h:1" />
+              <Property Name="Animate" Value="CangBao_Animate" />
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True" />
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_RoomInfo_Player3">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,52.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CangBao image:CangBao_Now"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_RoomInfo_Cover3">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-28.000000}}"/>
+            <Property Name="Image" Value="set:CangBao image:CangBao_Get" />
+            <Property Name="MouseMoveHollow" Value="True" />
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_Room4_Back">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,78.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,142.000000}}"/>
+          <Property Name="Image" Value="set:CangBao image:CangBao_PlayN"/>
+          <Window Type="TLBB_ButtonCheckNULL" Name="CangBao_ChuanSong_RoomInfo4">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,78.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Property Name="PushedImage" Value="set:CangBao image:CangBao_PlayP"/>
+            <Property Name="NormalImage" Value="set:CangBao image:CangBao_PlayN"/>
+            <Property Name="HoverImage" Value="set:CangBao image:CangBao_PlayN"/>
+            <Property Name="DisabledImage" Value="set:CangBao image:CangBao_PlayD"/>
+            <Property Name="PushedImage" Value="set:CangBao image:CangBao_BossP"/>
+            <!-- <Property Name="NormalImage" Value="set:CangBao image:CangBao_BossH"/> -->
+            <Property Name="HoverImage" Value="set:CangBao image:CangBao_BossP"/>
+            <Property Name="DisabledImage" Value="set:CangBao image:CangBao_BossN"/>
+            <Event Name="MouseClick" Function="CangBao_ChuanSong_Select(4);" />
+            <Window Type="TLBB_Animate" Name="CangBao_ChuanSong_Room4_Ani">
+              <Property Name="UnifiedPosition" Value="{{0,0},{0,0}" />
+              <Property Name="Size" Value="w:1 h:1" />
+              <Property Name="Animate" Value="CangBao_Animate" />
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True" />
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_RoomInfo_Player4">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,52.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CangBao image:CangBao_Now"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_RoomInfo_Cover4">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-28.000000}}"/>
+            <Property Name="Image" Value="set:CangBao image:CangBao_Get" />
+            <Property Name="MouseMoveHollow" Value="True" />
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_Room5_Back">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,78.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,248.000000},{0.000000,156.000000}}"/>
+          <Property Name="Image" Value="set:CangBao image:CangBao_PlayN"/>
+          <Window Type="TLBB_ButtonCheckNULL" Name="CangBao_ChuanSong_RoomInfo5">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,78.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Property Name="PushedImage" Value="set:CangBao image:CangBao_PlayP"/>
+            <Property Name="NormalImage" Value="set:CangBao image:CangBao_PlayN"/>
+            <Property Name="HoverImage" Value="set:CangBao image:CangBao_PlayN"/>
+            <Property Name="DisabledImage" Value="set:CangBao image:CangBao_PlayD"/>
+            <Property Name="PushedImage" Value="set:CangBao image:CangBao_BossP"/>
+            <!-- <Property Name="NormalImage" Value="set:CangBao image:CangBao_BossH"/> -->
+            <Property Name="HoverImage" Value="set:CangBao image:CangBao_BossP"/>
+            <Property Name="DisabledImage" Value="set:CangBao image:CangBao_BossN"/>
+            <Event Name="MouseClick" Function="CangBao_ChuanSong_Select(5);" />
+            <Window Type="TLBB_Animate" Name="CangBao_ChuanSong_Room5_Ani">
+              <Property Name="UnifiedPosition" Value="{{0,0},{0,0}" />
+              <Property Name="Size" Value="w:1 h:1" />
+              <Property Name="Animate" Value="CangBao_Animate" />
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True" />
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_RoomInfo_Player5">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,52.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CangBao image:CangBao_Now"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_RoomInfo_Cover5">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-28.000000}}"/>
+            <Property Name="Image" Value="set:CangBao image:CangBao_Get" />
+            <Property Name="MouseMoveHollow" Value="True" />
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_Room6_Back">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,78.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,471.000000},{0.000000,136.000000}}"/>
+          <Property Name="Image" Value="set:CangBao image:CangBao_PlayN"/>
+          <Window Type="TLBB_ButtonCheckNULL" Name="CangBao_ChuanSong_RoomInfo6">
+            <Property Name="UnifiedSize" Value="{{0.000000,121.000000},{0.000000,78.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Property Name="PushedImage" Value="set:CangBao image:CangBao_PlayP"/>
+            <Property Name="NormalImage" Value="set:CangBao image:CangBao_PlayN"/>
+            <Property Name="HoverImage" Value="set:CangBao image:CangBao_PlayN"/>
+            <Property Name="DisabledImage" Value="set:CangBao image:CangBao_PlayD"/>
+            <Property Name="PushedImage" Value="set:CangBao image:CangBao_BossP"/>
+            <!-- <Property Name="NormalImage" Value="set:CangBao image:CangBao_BossH"/> -->
+            <Property Name="HoverImage" Value="set:CangBao image:CangBao_BossP"/>
+            <Property Name="DisabledImage" Value="set:CangBao image:CangBao_BossN"/>
+            <Event Name="MouseClick" Function="CangBao_ChuanSong_Select(6);" />
+            <Window Type="TLBB_Animate" Name="CangBao_ChuanSong_Room6_Ani">
+              <Property Name="UnifiedPosition" Value="{{0,0},{0,0}" />
+              <Property Name="Size" Value="w:1 h:1" />
+              <Property Name="Animate" Value="CangBao_Animate" />
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True" />
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_RoomInfo_Player6">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,52.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CangBao image:CangBao_Now"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_RoomInfo_Cover6">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-28.000000}}"/>
+            <Property Name="Image" Value="set:CangBao image:CangBao_Get" />
+            <Property Name="MouseMoveHollow" Value="True" />
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_Room7_Back">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,78.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,30.000000}}"/>
+          <Property Name="Image" Value="set:CangBao image:CangBao_PlayN"/>
+          <Window Type="TLBB_ButtonCheckNULL" Name="CangBao_ChuanSong_RoomInfo7">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,78.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Property Name="PushedImage" Value="set:CangBao image:CangBao_PlayP"/>
+            <Property Name="NormalImage" Value="set:CangBao image:CangBao_PlayN"/>
+            <Property Name="HoverImage" Value="set:CangBao image:CangBao_PlayN"/>
+            <Property Name="DisabledImage" Value="set:CangBao image:CangBao_PlayD"/>
+            <Property Name="PushedImage" Value="set:CangBao image:CangBao_BossP"/>
+            <!-- <Property Name="NormalImage" Value="set:CangBao image:CangBao_BossH"/> -->
+            <Property Name="HoverImage" Value="set:CangBao image:CangBao_BossP"/>
+            <Property Name="DisabledImage" Value="set:CangBao image:CangBao_BossN"/>
+            <Event Name="MouseClick" Function="CangBao_ChuanSong_Select(7);" />
+            <Window Type="TLBB_Animate" Name="CangBao_ChuanSong_Room7_Ani">
+              <Property Name="UnifiedPosition" Value="{{0,0},{0,0}" />
+              <Property Name="Size" Value="w:1 h:1" />
+              <Property Name="Animate" Value="CangBao_Animate" />
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True" />
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_RoomInfo_Player7">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,52.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CangBao image:CangBao_Now"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_RoomInfo_Cover7">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-28.000000}}"/>
+            <Property Name="Image" Value="set:CangBao image:CangBao_Get" />
+            <Property Name="MouseMoveHollow" Value="True" />
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_Room8_Back">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,78.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,241.000000},{0.000000,15.000000}}"/>
+          <Property Name="Image" Value="set:CangBao image:CangBao_PlayN"/>
+          <Window Type="TLBB_ButtonCheckNULL" Name="CangBao_ChuanSong_RoomInfo8">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,78.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Property Name="PushedImage" Value="set:CangBao image:CangBao_PlayP"/>
+            <Property Name="NormalImage" Value="set:CangBao image:CangBao_PlayN"/>
+            <Property Name="HoverImage" Value="set:CangBao image:CangBao_PlayN"/>
+            <Property Name="DisabledImage" Value="set:CangBao image:CangBao_PlayD"/>
+            <Property Name="PushedImage" Value="set:CangBao image:CangBao_BossP"/>
+            <!-- <Property Name="NormalImage" Value="set:CangBao image:CangBao_BossH"/> -->
+            <Property Name="HoverImage" Value="set:CangBao image:CangBao_BossP"/>
+            <Property Name="DisabledImage" Value="set:CangBao image:CangBao_BossN"/>
+            <Event Name="MouseClick" Function="CangBao_ChuanSong_Select(8);" />
+            <Window Type="TLBB_Animate" Name="CangBao_ChuanSong_Room8_Ani">
+              <Property Name="UnifiedPosition" Value="{{0,0},{0,0}" />
+              <Property Name="Size" Value="w:1 h:1" />
+              <Property Name="Animate" Value="CangBao_Animate" />
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True" />
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_RoomInfo_Player8">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,52.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CangBao image:CangBao_Now"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_RoomInfo_Cover8">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-28.000000}}"/>
+            <Property Name="Image" Value="set:CangBao image:CangBao_Get" />
+            <Property Name="MouseMoveHollow" Value="True" />
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_Room9_Back">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,78.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,511.000000},{0.000000,22.000000}}"/>
+          <Property Name="Image" Value="set:CangBao image:CangBao_PlayN"/>
+          <Window Type="TLBB_ButtonCheckNULL" Name="CangBao_ChuanSong_RoomInfo9">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,78.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Property Name="PushedImage" Value="set:CangBao image:CangBao_PlayP"/>
+            <Property Name="NormalImage" Value="set:CangBao image:CangBao_PlayN"/>
+            <Property Name="HoverImage" Value="set:CangBao image:CangBao_PlayN"/>
+            <Property Name="DisabledImage" Value="set:CangBao image:CangBao_PlayD"/>
+            <Property Name="PushedImage" Value="set:CangBao image:CangBao_BossP"/>
+            <!-- <Property Name="NormalImage" Value="set:CangBao image:CangBao_BossH"/> -->
+            <Property Name="HoverImage" Value="set:CangBao image:CangBao_BossP"/>
+            <Property Name="DisabledImage" Value="set:CangBao image:CangBao_BossN"/>
+            <Event Name="MouseClick" Function="CangBao_ChuanSong_Select(9);" />
+            <Window Type="TLBB_Animate" Name="CangBao_ChuanSong_Room9_Ani">
+              <Property Name="UnifiedPosition" Value="{{0,0},{0,0}" />
+              <Property Name="Size" Value="w:1 h:1" />
+              <Property Name="Animate" Value="CangBao_Animate" />
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True" />
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_RoomInfo_Player9">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,52.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CangBao image:CangBao_Now"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="CangBao_ChuanSong_RoomInfo_Cover9">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-28.000000}}"/>
+            <Property Name="Image" Value="set:CangBao image:CangBao_Get" />
+            <Property Name="MouseMoveHollow" Value="True" />
+            <Property Name="MouseHollow" Value="true" />
+            <Property Name="AlwaysOnTop" Value="True" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

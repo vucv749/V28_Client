@@ -1,0 +1,424 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="ShangPinXinXi_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,720.000000},{0.000000,456.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-360.000000},{0.500000,-228.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="ShangPinXinXi_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,26.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,8.000000}}" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="DragTarget" Value="ShangPinXinXi_Frame" />
+      <Property Name="Font" Value="Title" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="Text" Value="#{PSGN_180327_14}" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="ShangPinXinXi_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonClose"/>
+      <Event Name="Clicked" Function="ShangPinXinXi_OnClose();"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="ShangPinXinXi__Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonHelp"/>
+      <Event Name="Clicked" Function="Helper:GotoHelper('*HJTopList');"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="ShangPinXinXi_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-54.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,36.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_Frame_Lace1" Name="ShangPinXinXi_L">
+        <Property Name="UnifiedSize" Value="{{0.000000,405.000000},{0.000000,400.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,1.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="ShangPinXinXi_image">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Image" Value="set:PaoShang2 image:Ditu" />
+        </Window>
+        <Window Type="DefaultWindow" Name="ShangPinXinXi_Dunhuang">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{0.000000,80.000000}}" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Window Type="TLBB_ButtonCheckNULL" Name="ShangPinXinXi_Dunhuang_Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{0.000000,12.000000}}" />
+            <Property Name="NormalImage" Value="set:PaoShang image:Yewai_ButtonNormal" />
+            <Property Name="HoverImage" Value="set:PaoShang image:Yewai_ButtonChecked" />
+            <Property Name="PushedImage" Value="set:PaoShang image:Yewai_ButtonChecked" />
+            <Property Name="Tooltip" Value="" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Event Name="Clicked" Function="ShangPinXinXi_CityClick(8)" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShangPinXinXi_Jiange">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{0.000000,150.000000}}" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Window Type="TLBB_ButtonCheckNULL" Name="ShangPinXinXi_Jiange_Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-8.000000},{0.000000,10.000000}}" />
+            <Property Name="NormalImage" Value="set:PaoShang image:Yewai_ButtonNormal" />
+            <Property Name="HoverImage" Value="set:PaoShang image:Yewai_ButtonChecked" />
+            <Property Name="PushedImage" Value="set:PaoShang image:Yewai_ButtonChecked" />
+            <Property Name="Tooltip" Value="" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Event Name="Clicked" Function="ShangPinXinXi_CityClick(7)" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShangPinXinXi_Dali">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,70.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,104.000000},{0.000000,220.000000}}" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Window Type="TLBB_ButtonCheckNULL" Name="ShangPinXinXi_Dali_Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,60.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-48.000000},{0.000000,1.000000}}" />
+            <Property Name="NormalImage" Value="set:PaoShang image:Dali_ButtonNormal" />
+            <Property Name="HoverImage" Value="set:PaoShang image:Dali_ButtonChecked" />
+            <Property Name="PushedImage" Value="set:PaoShang image:Dali_ButtonChecked" />
+            <Property Name="Tooltip" Value="" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Event Name="Clicked" Function="ShangPinXinXi_CityClick(6)" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShangPinXinXi_Wulianshan">
+          <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,35.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,300.000000}}" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Window Type="TLBB_ButtonCheckNULL" Name="ShangPinXinXi_Wulianshan_Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-7.000000},{0.000000,11.000000}}" />
+            <Property Name="NormalImage" Value="set:PaoShang image:Yewai_ButtonNormal" />
+            <Property Name="HoverImage" Value="set:PaoShang image:Yewai_ButtonChecked" />
+            <Property Name="PushedImage" Value="set:PaoShang image:Yewai_ButtonChecked" />
+            <Property Name="Tooltip" Value="" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Event Name="Clicked" Function="ShangPinXinXi_CityClick(5)" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShangPinXinXi_Jinghu">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,325.000000},{0.000000,280.000000}}" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Window Type="TLBB_ButtonCheckNULL" Name="ShangPinXinXi_Jinghu_Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-10.500000},{0.000000,4.000000}}" />
+            <Property Name="NormalImage" Value="set:PaoShang image:Yewai_ButtonNormal" />
+            <Property Name="HoverImage" Value="set:PaoShang image:Yewai_ButtonChecked" />
+            <Property Name="PushedImage" Value="set:PaoShang image:Yewai_ButtonChecked" />
+            <Property Name="Tooltip" Value="" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Event Name="Clicked" Function="ShangPinXinXi_CityClick(4)" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShangPinXinXi_Suzhou">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,60.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,278.000000},{0.000000,140.000000}}" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Window Type="TLBB_ButtonCheckNULL" Name="ShangPinXinXi_Suzhou_Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,56.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.000000,0.000000}}" />
+            <Property Name="NormalImage" Value="set:PaoShang image:Suzhou_ButtonNormal" />
+            <Property Name="HoverImage" Value="set:PaoShang image:Suzhou_ButtonChecked" />
+            <Property Name="PushedImage" Value="set:PaoShang image:Suzhou_ButtonChecked" />
+            <Property Name="Tooltip" Value="" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Event Name="Clicked" Function="ShangPinXinXi_CityClick(3)" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShangPinXinXi_Taihu">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,80.000000}}" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Window Type="TLBB_ButtonCheckNULL" Name="ShangPinXinXi_Taihu_Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-11.000000},{0.000000,13.000000}}" />
+            <Property Name="NormalImage" Value="set:PaoShang image:Yewai_ButtonNormal" />
+            <Property Name="HoverImage" Value="set:PaoShang image:Yewai_ButtonChecked" />
+            <Property Name="PushedImage" Value="set:PaoShang image:Yewai_ButtonChecked" />
+            <Property Name="Tooltip" Value="" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Event Name="Clicked" Function="ShangPinXinXi_CityClick(2)" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShangPinXinXi_Songshan">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,160.000000}}" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Window Type="TLBB_ButtonCheckNULL" Name="ShangPinXinXi_Songshan_Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-11.000000},{0.000000,1.000000}}" />
+            <Property Name="NormalImage" Value="set:PaoShang image:Yewai_ButtonNormal" />
+            <Property Name="HoverImage" Value="set:PaoShang image:Yewai_ButtonChecked" />
+            <Property Name="PushedImage" Value="set:PaoShang image:Yewai_ButtonChecked" />
+            <Property Name="Tooltip" Value="" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Event Name="Clicked" Function="ShangPinXinXi_CityClick(1)" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShangPinXinXi_Luoyang">
+          <Property Name="UnifiedSize" Value="{{0.000000,105.000000},{0.000000,50.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,56.000000}}" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Window Type="TLBB_ButtonCheckNULL" Name="ShangPinXinXi_Luoyang_Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,48.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-54.500000},{0.000000,-1.000000}}" />
+            <Property Name="NormalImage" Value="set:PaoShang image:Luoyang_ButtonNormal" />
+            <Property Name="HoverImage" Value="set:PaoShang image:Luoyang_ButtonChecked" />
+            <Property Name="PushedImage" Value="set:PaoShang image:Luoyang_ButtonChecked" />
+            <Property Name="Tooltip" Value="" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Event Name="Clicked" Function="ShangPinXinXi_CityClick(0)" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShangPinXinXi_Huocang_Text11">
+          <Property Name="UnifiedSize" Value="{{1.000000,-193.000000},{0.000000,18.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,374.000000}}" />
+          <Property Name="Text" Value="#{PSGN_180515_127}" />
+          <Property Name="Tooltip" Value="" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="HorizontalAlignment" Value="Left" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="ShangPinXinXi_R1">
+        <Property Name="UnifiedSize" Value="{{0.000000,304.000000},{1.000000,-188.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,410.000000},{0.000000,3.000000}}"/>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShangPinXinXi_Name_TitleBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ShangPinXinXi_Goumai_Text1">
+            <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.500000,-12.000000}}"/>
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="Text" Value="#{PSGN_180327_15}" />
+            <Property Name="Font" Value="Title"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShangPinXinXi_Goumai">
+          <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{0.000000,180.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,36.000000}}"/>
+          <Window Type="TLBB_ActionButton" Name="ShangPinXinXi_Goumai_But">
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}}"/>
+            <Property Name="DraggingEnabled" Value="True" />
+            <Window Type="TLBB_StaticImageNULL" Name="ShangPinXinXi_Goumai_Tuijian">
+              <Property Name="UnifiedSize" Value="{{0.000000,31.000000},{0.000000,27.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseLButtonHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Property Name="Image" Value="set:PaoShang2 image:Cornermark_TuiJian" />
+            </Window>
+          </Window>
+          <Window Type="TLBB_MultiColumnList" Name="ShangPinXinXi_Goumai_BK">
+            <Property Name="UnifiedSize" Value="{{1.000000,-64.000000},{0.000000,56.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="ShangPinXinXi_Goumai_Text">
+              <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+              <Property Name="Text" Value="#{PSGN_180327_16}" />
+              <Property Name="Font" Value="SongTiBmp12"/>
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseLButtonHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShangPinXinXi_Goumai_shuliang">
+              <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{0.500000,-12.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="Text" Value="12345" />
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseLButtonHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShangPinXinXi_Goumai_Text_1">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,105.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="Text" Value="#{PSGN_180515_113}" />
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseLButtonHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ShangPinXinXi_Goumai_jinbi">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.500000,-10.000000}}"/>
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="Image" Value="set:PaoShang2 image:HJ_PaoShang" />
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseLButtonHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="ShangPinXinXi_Goumai_But1">
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,60.000000}}"/>
+            <Property Name="DraggingEnabled" Value="True" />
+            <Window Type="TLBB_StaticImageNULL" Name="ShangPinXinXi_Goumai_Tuijian1">
+              <Property Name="UnifiedSize" Value="{{0.000000,31.000000},{0.000000,27.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseLButtonHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Property Name="Image" Value="set:PaoShang2 image:Cornermark_TuiJian" />
+            </Window>
+          </Window>
+          <Window Type="TLBB_MultiColumnList" Name="ShangPinXinXi_Goumai_BK1">
+            <Property Name="UnifiedSize" Value="{{1.000000,-64.000000},{0.000000,56.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.000000,60.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="ShangPinXinXi_Goumai_Text2">
+              <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="Text" Value="#{PSGN_180327_17}" />
+              <Property Name="Font" Value="SongTiBmp12"/>
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseLButtonHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShangPinXinXi_Goumai_shuliang1">
+              <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{0.500000,-12.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="Text" Value="12345" />
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseLButtonHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ShangPinXinXi_Goumai_jinbi1">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.500000,-10.000000}}"/>
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="Image" Value="set:PaoShang2 image:HJ_PaoShang" />
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseLButtonHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShangPinXinXi_Goumai_Text2_1">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,105.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="Text" Value="#{PSGN_180515_113}" />
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseLButtonHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="ShangPinXinXi_Goumai_But2">
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,120.000000}}"/>
+            <Property Name="DraggingEnabled" Value="True" />
+            <Window Type="TLBB_StaticImageNULL" Name="ShangPinXinXi_Goumai_Tuijian2">
+              <Property Name="UnifiedSize" Value="{{0.000000,31.000000},{0.000000,27.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseLButtonHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Property Name="Image" Value="set:PaoShang2 image:Cornermark_TuiJian" />
+            </Window>
+          </Window>
+          <Window Type="TLBB_MultiColumnList" Name="ShangPinXinXi_Goumai_BK2">
+            <Property Name="UnifiedSize" Value="{{1.000000,-64.000000},{0.000000,56.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.000000,120.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="ShangPinXinXi_Goumai_Text3">
+              <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{PSGN_180327_17}" />
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+              <Property Name="Font" Value="SongTiBmp12"/>
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseLButtonHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShangPinXinXi_Goumai_shuliang2">
+              <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{0.500000,-12.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="Text" Value="12345" />
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseLButtonHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ShangPinXinXi_Goumai_jinbi2">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.500000,-10.000000}}"/>
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="Image" Value="set:PaoShang2 image:HJ_PaoShang" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShangPinXinXi_Goumai_Text3_1">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,105.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{PSGN_180515_113}" />
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseLButtonHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ShangPinXinXi_R2">
+        <Property Name="UnifiedSize" Value="{{0.000000,302.000000},{0.000000,180.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,410.000000},{0.000000,220.000000}}"/>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShangPinXinXi_Name_TitleBK1">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ShangPinXinXi_Huocang_Text1">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.500000,-11.000000}}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="Text" Value="#{PSGN_180515_247}" />
+            <Property Name="Font" Value="Title"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace2" Name="ShangPinXinXi_Jieshao_BK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-32.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,32.000000}}" />
+          <Window Type="DefaultWindow" Name="ShangPinXinXi_Jieshao_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Window Type="TLBB_SimpleText" Name="ShangPinXinXi_Jieshao_Text1">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="Text" Value="#{PSGN_180515_128}" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

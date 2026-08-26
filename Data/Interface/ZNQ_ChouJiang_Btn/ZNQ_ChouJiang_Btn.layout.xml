@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="DefaultWindow" Name="ZNQ_ChouJiang_Btn_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,64.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-274.000000},{0.000000,240.000000}}"/>
+        <Property Name="Text" Value="" />
+        <Property Name="MouseHollow" Value="true" />
+        <Window Type="TLBB_ButtonNULL" Name="ZNQ_ChouJiang_Btn_BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,0.000000}}"/>
+            <Property Name="PushedImage" Value="set:ZNQ_ChouJiang_Btn image:ZNQ_ChouJiang_Btn_P"/>
+            <Property Name="NormalImage" Value="set:ZNQ_ChouJiang_Btn image:ZNQ_ChouJiang_Btn_N"/>
+            <Property Name="HoverImage" Value="set:ZNQ_ChouJiang_Btn image:ZNQ_ChouJiang_Btn_H"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="ZNQ_ChouJiang_Btn_OnClickEvent();"/>
+            <Window Type="TLBB_StaticImageNULL" Name="ZNQ_ChouJiang_Btn_Tips">
+                <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-150.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_Animate" Name="ZNQ_ChouJiang_Btn_Animate">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Animate" Value="ZNQ_ChouJiang_BtnAnima"/>
+            </Window>
+        </Window>
+        <!-- <Window Type="TLBB_StaticImageNULL" Name="ZNQ_ChouJiang_Btn_Time_Text_BK_Small">
+            <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.000000,9.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:ZNQ_ChouJiang_Btn image:ZNQ_ChouJiang_Text_Bk1"/>
+        </Window> -->
+        <Window Type="TLBB_SimpleText" Name="ZNQ_ChouJiang_Btn_Time_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,20.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Text" Value="00:00" />
+            <Property Name="Font" Value="SongTiBmp12"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <!-- <Window Type="TLBB_StaticImageNULL" Name="ZNQ_ChouJiang_Btn_Time_Text_BK_Big">
+            <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.000000,8.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:ZNQ_ChouJiang_Btn image:ZNQ_ChouJiang_Text_Bk2"/>
+        </Window> -->
+        <Window Type="TLBB_SimpleText" Name="ZNQ_ChouJiang_Btn_123_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,36.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Text" Value=""/>
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="YanMenMeng">
+		<Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,170.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-283.000000},{0.500000,70.000000}}"/>
+      <Window Type="TLBB_DragTitle" Name="YanMenMeng_DragTitle">
+		<Property Name="UnifiedSize" Value="{{1.000000,-64.000000},{0.000000,26.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,9.000000}}"/>
+        <Property Name="DragTarget" Value="YanMenMeng" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="Title" />
+        <Property Name="Text" Value="#{YMMJ_230626_23}" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="YanMenMeng_Image">
+		<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,13.000000}}"/>
+        <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+        <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+        <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+        <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>
+        <Event Name="Clicked" Function="YanMenMeng_OpenMini()" />
+      </Window>
+      <Window Type="TLBB_ButtonHelp" Name="YanMenMeng_Help">
+		<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-276.000000},{0.000000,13.000000}}"/>
+		<Event Name="Clicked" Function='Helper:GotoHelper(&quot;*YanMenMeng&quot;);'/>
+      </Window>
+    <Window Type="DefaultWindow" Name="YanMenMeng_Frame_Client">
+		<Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-50.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,33.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_Frame_Lace1" Name="YanMenMeng_Up">
+		<Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{1.000000,-8.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,4.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="YanMenMeng_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{YMMJ_230626_24}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

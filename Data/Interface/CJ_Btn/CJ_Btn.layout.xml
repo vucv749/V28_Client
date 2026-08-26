@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<GUILayout>
+    <Window Type="TLBB_MainFrameNULL" Name="CJ_Btn_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,64.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-410.000000},{1.000000,-160.000000}}"/>
+        <Window Type="TLBB_ButtonNULL" Name="CJ_Btn_ZhengHeButton">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="PushedImage" Value="set:CJ_Image image:CJ_Backpack_Push"/>
+            <Property Name="NormalImage" Value="set:CJ_Image image:CJ_Backpack_Normal"/>
+            <Property Name="HoverImage" Value="set:CJ_Image image:CJ_Backpack_Hover"/>
+            <Property Name="DisabledImage" Value="set:CJ_Image image:CJ_Backpack_Disable"/>
+            <Property Name="Tooltip" Value="#{TLCJ_20240709_119}"/>
+            <Event Name="Clicked" Function="CJ_Btn_ZhengHeButton_Clicked()"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="CJ_Btn_DaoJuBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,0.000000}}"/>
+            <Property Name="PushedImage" Value="set:CJ_Image image:CJ_DaoJu_Push"/>
+            <Property Name="NormalImage" Value="set:CJ_Image image:CJ_DaoJu_Normal"/>
+            <Property Name="HoverImage" Value="set:CJ_Image image:CJ_DaoJu_Hover"/>
+            <Property Name="DisabledImage" Value="set:CJ_Image image:CJ_DaoJu_Disable"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Tooltip" Value="#{TLCJ_20240709_136}"/>
+            <Event Name="Clicked" Function="CJ_Btn_DaoJuBtn_Clicked();"/>
+        </Window>
+    </Window>
+</GUILayout>

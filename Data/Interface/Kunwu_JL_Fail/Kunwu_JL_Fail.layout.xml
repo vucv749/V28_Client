@@ -1,0 +1,111 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Kunwu_JL_Fail_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,460.000000},{0.000000,300.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-230.000000},{0.500000,-150.000000}}"/>
+    <Event Name="Hidden" Function="Kunwu_JL_Fail_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="Kunwu_JL_Fail_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-62.000000},{0.000000,65.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.000000,8.000000}}"/>
+      <Property Name="Text" Value=""/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="DragTarget" Value="Kunwu_JL_Fail_Frame"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Fail_ImageBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,106.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Image" Value="set:Kunwu_JL_Identify image:Kunwu_JL_Fail"/>
+    </Window>
+    <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_JL_Fail_FrameBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,228.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-200.000000},{1.000000,-250.000000}}"/>
+      <Window Type="DefaultWindow" Name="Kunwu_JL_Fail_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,8.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Fail_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,55.000000}}"/>
+          <Property Name="Text" Value="#{JLYC_241217_186}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+
+        <Window Type="DefaultWindow" Name="Kunwu_JL_Fail_BK2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,140.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,10.000000}}"/>
+
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Fail_Icon1BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,92.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,32.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_JL_Identify image:Kunwu_JL_IconBK"/>
+            <Window Type="TLBB_ActionButton" Name="Kunwu_JL_Fail_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-24.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Fail_Name1">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-140.000000},{0.500000,-46.000000}}"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Fail_Level1">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-140.000000},{0.500000,42.000000}}"/>
+            <Property Name="Text" Value="#{JLYC_241217_185}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Fail_Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-44.000000},{0.500000,-20.000000}}"/>
+            <Property Name="Image" Value="set:Kunwu_JL_Identify image:Kunwu_JL_Arrow"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Fail_Icon2BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,92.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-154.000000},{0.000000,32.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_JL_Identify image:Kunwu_JL_IconBK"/>
+            <Window Type="TLBB_ActionButton" Name="Kunwu_JL_Fail_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-24.000000}}"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Fail_Name2">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.500000,-46.000000}}"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Fail_Level2">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.500000,42.000000}}"/>
+            <Property Name="Text" Value="#{JLYC_241217_185}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="Kunwu_JL_Fail_OKBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-20.000000}}"/>
+          <Property Name="Text" Value="#{JLYC_241217_42}"/>
+          <Event Name="Clicked" Function="Kunwu_JL_Fail_OnCloseClicked();"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

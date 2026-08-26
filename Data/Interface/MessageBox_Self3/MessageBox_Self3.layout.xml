@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="DefaultWindow" Name="MessageBox_Self3_Window">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Event Name="Hidden" Function="MessageBox_Self3_Frame_OnHiden();" />
+        <Window Type="TLBB_Frame3" Name="MessageBox_Self3_Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,346.000000},{0.000000,154.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-173.000000},{0.500000,-77.000000}}"/>
+            <Window Type="TLBB_SelfWindow" Name="MessageBox_Self3_Text">
+                <Property Name="AbsolutePosition" Value="x:8.000000 y:20.000000" />
+                <Property Name="AbsoluteSize" Value="w:330.000000 h:90.000000" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="MaxWidth" Value="330" />
+                <Property Name="MinHeight" Value="25" />
+                <Property Name="Text" Value="#{GXDJ_200323_40}" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="MessageBox_Self3_OK_Button">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-85.000000},{1.000000,-25.000000}" />
+                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+                <Property Name="Text" Value="#{GXDJ_200323_41}" />
+                <Event Name="Clicked" Function="" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="MessageBox_Self3_Cancel_Button">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-45.000000},{1.000000,-25.000000}" />
+                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+                <Property Name="Text" Value="#{INTERFACE_XML_542}" />
+                <Event Name="Clicked" Function="" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

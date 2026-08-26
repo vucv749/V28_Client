@@ -1,0 +1,527 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame6" Name="CJ_Backpack_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,619.000000},{0.000000,445.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-309.000000},{0.500000,-222.000000}}"/>
+    <Window Type="TLBB_ButtonClose" Name="CJ_Backpack_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,4.000000}}"/>
+      <Event Name="Clicked" Function="CJ_Backpack_Close_OnClicked()"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="CJ_Backpack_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-90.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,0.000000}}"/>
+      <Property Name="Text" Value="#{TLCJ_20240709_120}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="CJ_Backpack_Frame"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="CJ_Backpack_FunctionClient">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-24.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,24.000000}}"/>
+      <Window Type="TLBB_Frame_Lace2" Name="CJ_Backpack_LevelClient">
+        <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,56.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="CJ_Backpack_MenPaiImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,396.000000},{0.000000,52.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+          <Property Name="Image" Value="set:CJ_Image image:CJ_ERG"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CJ_Backpack_Level_EXPLaceBK">
+            <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,11.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{1.000000,-18.000000}}"/>
+            <Property Name="Image" Value="set:CJ_Image image:CJ_JinDuBK"/>
+            <Property Name="RiseOnClick" Value="Flase" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_ProgressFrozen_HotSpring" Name="CJ_Backpack_Level_EXPLace">
+              <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,9.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="CurrentProgress" Value="1.0" />
+              <Property Name="MoveSpeed" Value="1" />
+              <Property Name="RiseOnClick" Value="Flase" />
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="CJ_Backpack_LevelBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,6.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Level">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="TextColor" Value="FFFAFFA4"/>
+              <Property Name="Text" Value="#{TLCJ_20240709_235}"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Level_Num">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-99.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{INTERFACE_XML_114}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="CJ_Backpack_NextLVNeedBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,162.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,233.000000},{0.000000,6.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_SimpleText" Name="CJ_Backpack_NextLVNeed">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="TextColor" Value="FFFAFFA4"/>
+              <Property Name="Text" Value="#{TLCJ_20240709_233}"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="CJ_Backpack_NextLVNeed_Num">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-109.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="99999"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="CJ_Backpack_MiddleClient">
+        <Property Name="UnifiedSize" Value="{{0.000000,354.000000},{1.000000,-50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,50.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="CJ_Backpack_MiddleImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,346.000000},{0.000000,352.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-173.000000},{0.500000,-170.000000}}"/>
+          <Property Name="Image" Value="set:CJ_Image image:CJ_Middle"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="CJ_Backpack_ShuXingAttackBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-59.000000},{1.000000,-26.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CJ_Backpack_IceFastness">
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-38.000000},{0.500000,-8.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:UIIcons image:Ice_Repellency_Normal"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="CJ_Backpack_FireFastness">
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-8.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:UIIcons image:Fire_Repellency_Normal"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="CJ_Backpack_ThunderFastness">
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,2.000000},{0.500000,-8.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:UIIcons image:Thunder_Repellency_Normal"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="CJ_Backpack_PoisonFastness">
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,22.000000},{0.500000,-8.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:UIIcons image:Poison_Repellency_Normal"/>
+          </Window>
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="CJ_Backpack_EquipActionButtonClient">
+        <Property Name="UnifiedSize" Value="{{0.000000,348.000000},{1.000000,-100.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,75.000000}}"/>
+        <Window Type="TLBB_ActionButton" Name="CJ_Backpack_Equip_1">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-109.000000},{0.000000,2.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Cap" />
+          <Event Name="MouseRClick" Function="CJ_Backpack_Equip_Click( 1,0 );"/>
+          <Event Name="Clicked" Function="CJ_Backpack_Equip_Click( 1,1 );"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CJ_Backpack_Equip_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-146.000000},{0.000000,54.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Shoulder" />
+          <Event Name="MouseRClick" Function="CJ_Backpack_Equip_Click( 2,0 );"/>
+          <Event Name="Clicked" Function="CJ_Backpack_Equip_Click( 2,1 );"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CJ_Backpack_Equip_3">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,77.000000},{0.000000,2.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Armo" />
+          <Event Name="MouseRClick" Function="CJ_Backpack_Equip_Click( 3,0 );"/>
+          <Event Name="Clicked" Function="CJ_Backpack_Equip_Click( 3,1 );"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CJ_Backpack_Equip_4">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-168.000000},{0.000000,106.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Wrist" />
+          <Event Name="MouseRClick" Function="CJ_Backpack_Equip_Click( 4,0 );"/>
+          <Event Name="Clicked" Function="CJ_Backpack_Equip_Click( 4,1 );"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CJ_Backpack_Equip_5">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-168.000000},{0.000000,160.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Hand" />
+          <Event Name="MouseRClick" Function="CJ_Backpack_Equip_Click( 5,0 );"/>
+          <Event Name="Clicked" Function="CJ_Backpack_Equip_Click( 5,1 );"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CJ_Backpack_Equip_6">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-147.000000},{0.000000,212.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Sash" />
+          <Event Name="MouseRClick" Function="CJ_Backpack_Equip_Click( 6,0 );"/>
+          <Event Name="Clicked" Function="CJ_Backpack_Equip_Click( 6,1 );"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CJ_Backpack_Equip_7">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-110.000000},{0.000000,264.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Shot" />
+          <Event Name="MouseRClick" Function="CJ_Backpack_Equip_Click( 7,0 );"/>
+          <Event Name="Clicked" Function="CJ_Backpack_Equip_Click( 7,1 );"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CJ_Backpack_Equip_8">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-15.000000},{0.000000,262.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Weapon" />
+          <Event Name="MouseRClick" Function="CJ_Backpack_Equip_Click( 8,0 );"/>
+          <Event Name="Clicked" Function="CJ_Backpack_Equip_Click( 8,1 );"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CJ_Backpack_Equip_9">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,114.000000},{0.000000,54.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Nacket" />
+          <Event Name="MouseRClick" Function="CJ_Backpack_Equip_Click( 9,0 );"/>
+          <Event Name="Clicked" Function="CJ_Backpack_Equip_Click( 9,1 );"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CJ_Backpack_Equip_10">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,136.000000},{0.000000,106.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Ring" />
+          <Event Name="MouseRClick" Function="CJ_Backpack_Equip_Click( 10,0 );"/>
+          <Event Name="Clicked" Function="CJ_Backpack_Equip_Click( 10,1 );"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CJ_Backpack_Equip_11">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,136.000000},{0.000000,160.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Ring" />
+          <Event Name="MouseRClick" Function="CJ_Backpack_Equip_Click( 11,0 );"/>
+          <Event Name="Clicked" Function="CJ_Backpack_Equip_Click( 11,1 );"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CJ_Backpack_Equip_12">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,115.000000},{0.000000,212.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Pifeng" />
+          <Event Name="MouseRClick" Function="CJ_Backpack_Equip_Click( 12,0 );"/>
+          <Event Name="Clicked" Function="CJ_Backpack_Equip_Click( 12,1 );"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CJ_Backpack_Equip_13">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,78.000000},{0.000000,264.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Pifeng" />
+          <Event Name="MouseRClick" Function="CJ_Backpack_Equip_Click( 13,0 );"/>
+          <Event Name="Clicked" Function="CJ_Backpack_Equip_Click( 13,1 );"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="CJ_Backpack_BagClient">
+        <Property Name="UnifiedSize" Value="{{1.000000,-405.000000},{1.000000,-6.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,405.000000},{0.000000,4.000000}}"/>
+        <Window Type="TLBB_Frame_Lace2" Name="CJ_Backpack_EquipClient">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="DefaultWindow" Name="CJ_Backpack_ShuXingTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="CJ_Backpack_ShuXingTitle_TitlePoint">
+              <Property Name="UnifiedSize" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+              <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Point"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="CJ_Backpack_ShuXingTitle_Text">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,0.000000}}"/>
+              <Property Name="TextColor" Value="FFFAFFA4"/>
+              <Property Name="Text" Value="#{TLCJ_20240709_279}"/>
+              <Property Name="HorzFormatting" Value="LeftAligned"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="CJ_Backpack_ShuXingClientBK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}"/>
+            <Window Type="DefaultWindow" Name="CJ_Backpack_ShuXingClient">
+              <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-4.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_StaticImageNULL" Name="CJ_Backpack_ShuXingClient_Line1">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,23.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Line1"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="CJ_Backpack_ShuXingClient_Line2">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,50.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Line1"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="CJ_Backpack_ShuXingClient_Line3">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,75.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Line1"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="CJ_Backpack_ShuXingClient_Line4">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,102.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Line1"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="CJ_Backpack_ShuXingClient_Line5">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,129.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Line1"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="CJ_Backpack_ShuXingClient_Line6">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,156.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Line1"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="CJ_Backpack_ShuXingClient_Line7">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,183.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Line1"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="CJ_Backpack_ShuXingClient_Line8">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,210.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Line1"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="CJ_Backpack_ShuXingClient_Line9">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,237.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Line1"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="CJ_Backpack_ShuXingClient_Line10">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,264.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Line1"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="CJ_Backpack_ShuXingClient_Line11">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,291.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Line1"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="CJ_Backpack_ShuXingClient_Line12">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,318.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Line1"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="CJ_Backpack_ShuXingClient_Line13">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,345.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Line1"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="CJ_Backpack_HP">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="TextColor" Value="FFFAFFA4"/>
+                <Property Name="Text" Value="#{INTERFACE_XML_805}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Backpack_HP_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-109.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="0/0"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="RightAligned"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Str">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,27.000000}}"/>
+                <Property Name="TextColor" Value="FFFAFFA4"/>
+                <Property Name="Text" Value="#{INTERFACE_XML_429}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Str_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-109.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99999"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="RightAligned"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Nimbus">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,54.000000}}"/>
+                <Property Name="TextColor" Value="FFFAFFA4"/>
+                <Property Name="Text" Value="#{INTERFACE_XML_437}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Nimbus_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-109.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99999"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="RightAligned"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="CJ_Backpack_PhysicalStrength">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,79.000000}}"/>
+                <Property Name="TextColor" Value="FFFAFFA4"/>
+                <Property Name="Text" Value="#{INTERFACE_XML_685}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Backpack_PhysicalStrength_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-109.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99999"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="RightAligned"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Stability">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,108.000000}}"/>
+                <Property Name="TextColor" Value="FFFAFFA4"/>
+                <Property Name="Text" Value="#{INTERFACE_XML_250}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Stability_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-109.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99999"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="RightAligned"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Footwork">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,135.000000}}"/>
+                <Property Name="TextColor" Value="FFFAFFA4"/>
+                <Property Name="Text" Value="#{INTERFACE_XML_628}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Footwork_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-109.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99999"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="RightAligned"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Perporty1">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,162.000000}}"/>
+                <Property Name="TextColor" Value="FFFAFFA4"/>
+                <Property Name="Text" Value="#{INTERFACE_XML_707}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Perporty1_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-109.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99999"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="RightAligned"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Perporty2">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,189.000000}}"/>
+                <Property Name="TextColor" Value="FFFAFFA4"/>
+                <Property Name="Text" Value="#{INTERFACE_XML_471}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Perporty2_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-109.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99999"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="RightAligned"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Perporty3">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,214.000000}}"/>
+                <Property Name="TextColor" Value="FFFAFFA4"/>
+                <Property Name="Text" Value="#{INTERFACE_XML_706}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Perporty3_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-109.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99999"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="RightAligned"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Perporty4">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,241.000000}}"/>
+                <Property Name="TextColor" Value="FFFAFFA4"/>
+                <Property Name="Text" Value="#{INTERFACE_XML_470}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Perporty4_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-109.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99999"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="RightAligned"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Perporty5">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,268.000000}}"/>
+                <Property Name="TextColor" Value="FFFAFFA4"/>
+                <Property Name="Text" Value="#{INTERFACE_XML_468}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Perporty5_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-109.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99999"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="RightAligned"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Perporty6">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,295.000000}}"/>
+                <Property Name="TextColor" Value="FFFAFFA4"/>
+                <Property Name="Text" Value="#{INTERFACE_XML_586}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Perporty6_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-109.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99999"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="RightAligned"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Perporty7">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,322.000000}}"/>
+                <Property Name="TextColor" Value="FFFAFFA4"/>
+                <Property Name="Text" Value="#{INTERFACE_XML_338}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Perporty7_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-109.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99999"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="RightAligned"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Perporty8">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,349.000000}}"/>
+                <Property Name="TextColor" Value="FFFAFFA4"/>
+                <Property Name="Text" Value="#{INTERFACE_XML_337}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Backpack_Perporty8_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-109.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99999"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="RightAligned"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame1" Name="NewZhanLing_BuyLevel_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,227.000000},{0.000000,176.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-217.000000},{0.500000,-88.000000}}"/>
+		<Property Name="AlwaysOnTop" Value="True" />
+		<Window Type="TLBB_ButtonHelp" Name="NewZhanLing_BuyLevel_Help">
+			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+			<Event Name="Clicked" Function="Helper:GotoHelper('*NewZhanLing_BuyLevel');"/>
+		</Window>
+		<Window Type="TLBB_ButtonClose" Name="NewZhanLing_BuyLevel_Close">
+			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+			<Event Name="Clicked" Function="NewZhanLing_BuyLevel_Close_Clicked();"/>
+		</Window>
+		<Window Type="TLBB_DragTitle" Name="NewZhanLing_BuyLevel_DragTitle">
+			<Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,4.000000}}"/>
+			<Property Name="DragTarget" Value="NewZhanLing_BuyLevel_Frame"/>
+			<Window Type="TLBB_SimpleText" Name="NewZhanLing_BuyLevel_PageHeader">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,7.000000}}"/>
+				<Property Name="Text" Value="#{ZLSJ_231106_28}"/>
+				<Property Name="HorzFormatting" Value="HorzCentred"/>
+				<Property Name="Font" Value="YouYuan11.25"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+			</Window>
+		</Window>
+		<Window Type="DefaultWindow" Name="NewZhanLing_BuyLevel_Function_Frame">
+			<Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-44.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+			<Window Type="TLBB_SimpleMulitiTextFrame" Name="NewZhanLing_BuyLevel_ItemInfo">
+				<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,36.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+				<Window Type="TLBB_SimpleText" Name="NewZhanLing_BuyLevel_ItemInfo_Text">
+					<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{ZLSJ_231106_80}"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="NewZhanLing_BuyLevel_BuyNum_Text">
+				<Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,16.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,42.000000}}"/>
+				<Property Name="Text" Value="#{ZLSJ_231106_29}"/>
+			</Window>
+			<Window Type="TLBB_EditBoxNormal" Name="NewZhanLing_BuyLevel_InputNum">
+        <Property Name="UnifiedSize" Value="{{1.000000,-144.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,40.000000}}"/>
+				<Property Name="ValidationString" Value="[0-9]*"/>
+				<Property Name="Text" Value="1"/>
+				<Property Name="MaxTextLength" Value="6"/>
+				<Event Name="TextChanged" Function="NewZhanLing_BuyLevel_EditEnter();"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="NewZhanLing_BuyLevel_MAX">
+				<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{0.000000,40.000000}}"/>
+				<Property Name="Text" Value="#{ZLSJ_231106_30}"/>
+				<Event Name="Clicked" Function="NewZhanLing_BuyLevel_OnMax();"/>
+			</Window>
+			<Window Type="TLBB_SimpleTextFrame" Name="NewZhanLing_BuyLevel_Price">
+				<Property Name="UnifiedSize" Value="{{1.000000,-7.000000},{0.000000,16.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-70.000000}}"/>
+				<Property Name="Text" Value="#{ZLSJ_231106_31}"/>
+				<Window Type="TLBB_SimpleText" Name="NewZhanLing_BuyLevel_Price_Yuanbao">
+					<Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,0.000000}}"/>
+					<Property Name="HorzFormatting" Value="RightAligned"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_SimpleTextFrame" Name="NewZhanLing_BuyLevel_Cash">
+				<Property Name="UnifiedSize" Value="{{1.000000,-7.000000},{0.000000,16.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-50.000000}}"/>
+				<Property Name="Text" Value="#{ZLSJ_231106_33}"/>
+				<Window Type="TLBB_SimpleText" Name="NewZhanLing_BuyLevel_Cash_Yuanbao">
+					<Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,0.000000}}"/>
+					<Property Name="HorzFormatting" Value="RightAligned"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_Frame_Lace5" Name="NewZhanLing_BuyLevel_Blank">
+				<Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-31.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="NewZhanLing_BuyLevel_Buy">
+				<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-83.000000},{1.000000,-30.000000}}"/>
+				<Property Name="Text" Value="#{FFSDGZ_120615_92}"/>
+				<Event Name="Clicked" Function="NewZhanLing_BuyLevel_OK_Clicked();"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="NewZhanLing_BuyLevel_Cancel">
+				<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-43.000000},{1.000000,-30.000000}}"/>
+				<Property Name="Text" Value="#{FFSDGZ_120615_93}"/>
+				<Event Name="Clicked" Function="NewZhanLing_BuyLevel_Close_Clicked();"/>
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

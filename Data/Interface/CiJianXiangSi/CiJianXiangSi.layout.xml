@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection0" Name="CiJianXiangSi_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,732.000000},{0.000000,490.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-366.000000},{0.500000,-270.000000}}"/>
+    <Event Name="Hidden" Function="CiJianXiangSi_Close()" />
+    <Window Type="TLBB_TitleLace_Affection0" Name="CiJianXiangSi_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,31.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="CiJianXiangSi_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,11.000000}}"/>
+      <Property Name="DragTarget" Value="CiJianXiangSi_Frame" />
+      <Property Name="Text" Value="#{CJXS_230330_01}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="CiJianXiangSi_Help2">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="CiJianXiangSi_HelpClicked()"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="CiJianXiangSi_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="CiJianXiangSi_Close()" />
+    </Window>
+    <Window Type="TLBB_HeroLace01" Name="CiJianXiangSi_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="CiJianXiangSi_ClientBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,718.000000},{0.000000,434.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:CiJianXiangSi image:BK"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="CiJianXiangSi_Explain_text">
+        <Property Name="UnifiedSize" Value="{{1.000000,-73.000000},{1.000000,-367.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,4.000000}}"/>
+        <Property Name="Text" Value="#{CJXS_230330_38}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="VertFormatting" Value="TopAligned"/>
+
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="CiJianXiangSi_TitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,118.000000}}"/>
+        <Property Name="Image" Value="set:CiJianXiangSi image:Title1"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="CiJianXiangSi_Text1">
+        <Property Name="UnifiedSize" Value="{{0.000000,216.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,194.000000},{0.000000,148.000000}}"/>
+        <Property Name="Image" Value="set:CiJianXiangSi image:Image1"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="CiJianXiangSi_Text2">
+        <Property Name="UnifiedSize" Value="{{1.000000,-220.000000},{0.000000,106.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,51.000000},{0.000000,205.000000}}"/>
+        <Property Name="Text" Value="#{CJXS_230330_44}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="CiJianXiangSi_Text3">
+        <Property Name="UnifiedSize" Value="{{1.000000,-400.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,143.000000},{0.000000,342.000000}}"/>
+        <Property Name="Text" Value="#{CJXS_230330_45}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="CiJianXiangSi_Over">
+        <Property Name="UnifiedSize" Value="{{0.000000,103.000000},{0.000000,72.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,102.000000},{0.000000,318.000000}}"/>
+        <Property Name="Image" Value="set:Bulao_Yure image:Bulao_Yure_Over"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="CiJianXiangSi_Reward">
+        <Property Name="UnifiedSize" Value="{{1.000000,-590.000000},{0.000000,120.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,564.000000},{0.000000,164.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="DefaultWindow" Name="CiJianXiangSi_Item1">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,56.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,17.0000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_ActionButton" Name="CiJianXiangSi_Button1">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,0.000000}}"/>
+            <Event Name="Clicked" Function="CiJianXiangSi_GetPrize(1)"/>
+            <Window Type="TLBB_Animate" Name="CiJianXiangSi_ButtonAnimate1">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="JFMZ_Light1"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="CiJianXiangSi_Mark1">
+              <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,25.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-14.000000},{0.000000,6.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="CiJianXiangSi_Item1_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+            <Property Name="Text" Value="#{CJXS_230330_49}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="VertFormatting" Value="VertCentred"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="CiJianXiangSi_Item2">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,56.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,69.0000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_ActionButton" Name="CiJianXiangSi_Button2">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,0.000000}}"/>
+            <Event Name="Clicked" Function="CiJianXiangSi_GetPrize(2)"/>
+            <Window Type="TLBB_Animate" Name="CiJianXiangSi_ButtonAnimate2">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="JFMZ_Light1"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="CiJianXiangSi_Mark2">
+              <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,25.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-14.000000},{0.000000,6.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="CiJianXiangSi_Item2_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+            <Property Name="Text" Value="#{CJXS_230330_50}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="VertFormatting" Value="VertCentred"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="CiJianXiangSi_Item3">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,56.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,17.0000},{0.000000,60.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_ActionButton" Name="CiJianXiangSi_Button3">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,0.000000}}"/>
+            <Event Name="Clicked" Function="CiJianXiangSi_GetPrize(3)"/>
+            <Window Type="TLBB_Animate" Name="CiJianXiangSi_ButtonAnimate3">
+              <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="JFMZ_Light1"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="CiJianXiangSi_Mark3">
+              <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,25.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-14.000000},{0.000000,6.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="CiJianXiangSi_Item3_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+            <Property Name="Text" Value="#{CJXS_230330_51}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="VertFormatting" Value="VertCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CiJianXiangSi_NUM_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,29.000000},{0.000000,124.000000}}"/>
+          <Property Name="Text" Value="#{CJXS_230330_236}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="CiJianXiangSi_Item4">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,120.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,591.000000},{0.000000,320.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_StaticImageNULL" Name="CiJianXiangSi_Item4_BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,100.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:CiJianXiangSi image:Car_Normal"/>
+          <Property Name="Tooltip" Value="#{CJXS_230330_54}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CiJianXiangSi_Item4_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,-8.000000},{1.000000,-30.000000}}"/>
+          <Property Name="Text" Value="#{CJXS_230330_52}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

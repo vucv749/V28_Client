@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="SweepAll_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,620.000000},{0.000000,570.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-310.000000},{0.500000,-275.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="SweepAll_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="DragTarget" Value="SweepAll_Frame" />
+      <Window Type="TLBB_SimpleText" Name="SweepAll_Title">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{FBSD_150126_10}" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="SweepAll_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="SweepAll_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="SweepAll_OnClosed()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="SweepAll_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="SweepAll_Explain">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.210000,10.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{FBSD_150126_11}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="VertFormatting" Value="TopAligned"/>
+        <Window Type="TLBB_SimpleText" Name="SweepAll_Explain1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{1.000000,-22.000000}}"/>
+          <Property Name="Text" Value="#{}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="VertFormatting" Value="BottomAligned"/>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="SweepAll_ExplainHelp">
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{1.000000,-18.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="SweepAll_HelpClicked()"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="SweepAll_Bk">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.790000,-30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.210000,30.000000}}"/>
+        <Window Type="TLBB_MultiColumnList3" Name="SweepAll_Title_Frame">
+          <Property Name="AbsolutePosition" Value="x:0.000 y:0.000" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+          <Property Name="ForceHorzScrollbar" Value="False" />
+          <Property Name="SortSettingEnabled" Value="False" />
+          <Property Name="SelectionMode" Value="RowSingle" />
+          <Property Name="ColumnHeader" Value="text: width:0.21 id:0" />
+          <Property Name="ColumnHeader" Value="text: width:0.150 id:1" />
+          <Property Name="ColumnHeader" Value="text: width:0.120 id:2" />
+          <Property Name="ColumnHeader" Value="text: width:0.120 id:3" />
+          <Property Name="ColumnHeader" Value="text: width:0.160 id:4" />
+          <Property Name="ColumnHeader" Value="text: width:0.2 id:5" />
+          <Property Name="ColumnsSizable" Value="False" />
+          <Property Name="ColumnsMovable" Value="False" />
+          <Property Name="ColumnsAdjust" Value="True" />
+          <Window Type="TLBB_SimpleText" Name="SweepAll_Title_activity">
+            <Property Name="UnifiedSize" Value="{{0.210000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="Text" Value="#{FBSD_150126_12}" />
+            <Property Name="Tooltip" Value="#{FBSD_150126_75}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SweepAll_Title_level">
+            <Property Name="UnifiedSize" Value="{{0.150000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.210000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="Text" Value="#{FBSD_150126_13}" />
+            <Property Name="Tooltip" Value="#{FBSD_150126_76}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SweepAll_Title_allpoint">
+            <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.360000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="Text" Value="#{FBSD_150126_14}" />
+            <Property Name="Tooltip" Value="#{FBSD_150126_77}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SweepAll_Title_point">
+            <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.48000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="Text" Value="#{FBSD_150126_15}" />
+            <Property Name="Tooltip" Value="#{FBSD_150126_78}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SweepAll_Title_times">
+            <Property Name="UnifiedSize" Value="{{0.160000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="Text" Value="#{FBSD_150126_16}" />
+            <Property Name="Tooltip" Value="#{FBSD_150126_79}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SweepAll_Title_sweep">
+            <Property Name="UnifiedSize" Value="{{0.20000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.76000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="Text" Value="#{FBSD_150126_17}" />
+            <Property Name="Tooltip" Value="#{FBSD_150126_80}"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_AchievementWindow" Name="SweepAll_List">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-20.000000}" />
+          <Event Name="ElementLClick" Function="SweepAll_OnItemClick();"/>
+          <Event Name="EventElementCheckButton1Click" Function="SweepAll_OnCheckClick();"/>
+          <Event Name="EventElementButton1Click" Function="SweepAll_OnButtonClick();"/>
+          <Event Name="EventElementButton2Click" Function="SweepAll_OnMoneyButtonClick();"/>
+          <Event Name="EventElementButton3Click" Function="SweepAll_OnPrivilegeButtonClick();"/>
+          <Event Name="EventElementButton4Click" Function="SweepAll_OnSweepButtonClick();"/>
+          <Event Name="EventElementButton5Click" Function="SweepAll_OnSilverMoneyButtonClick();"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="SweepAll_Activate">
+        <Property Name="VertFormatting" Value="TopAligned"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,116.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="SweepAll_ActivateText">
+          <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-360.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{TQJF_221108_01}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+          <Property Name="VertFormatting" Value="BottomAligned"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="SweepAll_ActivateText2">
+          <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{TQJF_230425_01}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="VertFormatting" Value="BottomAligned"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="SweepAll_ActivateBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{0.000000,1.000000}}"/>
+          <Property Name="Text" Value="#{TQJF_221108_04}"/>
+          <Event Name="Clicked" Function="SweepAll_ActivateBtn_Clicked();"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

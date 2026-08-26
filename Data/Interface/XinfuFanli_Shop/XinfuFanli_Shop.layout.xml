@@ -1,0 +1,344 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="XinfuFanli_Shop_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,704.000000},{0.000000,560.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-352.000000},{0.500000,-280.000000}}"/>
+    <Event Name="Hidden" Function="XinfuFanli_Shop_Hidden();" />
+    <Window Type="TLBB_HeroTitle01" Name="XinfuFanli_Shop_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,314.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-157.500000},{0.000000,-2.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="XinfuFanli_Shop_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,0.000000}}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="Text" Value="#{XFFL_250522_03}" />
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="XinfuFanli_Shop_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonClose2" Name="XinfuFanli_Shop_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+      <Event Name="Clicked" Function="XinfuFanli_Shop_Hidden();"/>
+    </Window>
+    <Window Type="TLBB_HeroLace01" Name="XinfuFanli_Shop_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-33.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,30.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="XinfuFanli_Shop_InfoBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,703.000000},{0.000000,174.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-352.000000},{0.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:XinfuFanli_Shop1 image:XinfuFanli_Shop_banner"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_SimpleText" Name="XinfuFanli_Shop_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{1.000000,-100.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,2.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Text" Value="#{XFFL_250522_04}" />
+          <Window Type="TLBB_ButtonNULL" Name="XinfuFanli_Shop_Info_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{1.000000,-26.000000}}"/>
+            <Property Name="PushedImage" Value="set:XinfuFanli_Shop1 image:XinfuFanli_Shop_HelpPush"/>
+            <Property Name="NormalImage" Value="set:XinfuFanli_Shop1 image:XinfuFanli_Shop_HelpNormal"/>
+            <Property Name="HoverImage" Value="set:XinfuFanli_Shop1 image:XinfuFanli_Shop_HelpHover"/>
+            <Property Name="DisabledImage" Value="set:XinfuFanli_Shop1 image:XinfuFanli_Shop_HelpDis"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="XinfuFanli_Shop_Info_ShowHelp();"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="XinfuFanli_Shop_Goto_Button">
+        <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-96.000000},{0.000000,142.000000}}"/>
+        <Property Name="Text" Value="#{XFFL_250522_58}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="XinfuFanli_OpenURL();"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="XinfuFanli_Shop_YQClient">
+        <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,178.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_ButtonFenYe2" Name="XinfuFanli_Shop_YQ1">
+          <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{XFFL_250522_05}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="XinfuFanli_Shop_OnShown(1);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="XinfuFanli_Shop_YQ1_Tips">
+            <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonFenYe2" Name="XinfuFanli_Shop_YQ2">
+          <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{XFFL_250522_06}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="XinfuFanli_Shop_OnShown(2);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="XinfuFanli_Shop_YQ2_Tips">
+            <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="XinfuFanli_Shop_ItemClient">
+        <Property Name="UnifiedSize" Value="{{0.000000,690.000000},{0.000000,295.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,200.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_NotSuperList1" Name="XinfuFanli_Shop_ItemList">
+          <Property Name="UnifiedSize" Value="{{1.000000,-3.000000},{1.000000,-8.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,4.000000}}"/>
+          <Property Name="MultiColumn" Value="1" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_NotSuperListItemCommon3" Name="XinfuFanli_Shop_Item1BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,222.000000},{0.000000,70.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_Frame_Lace10" Name="XinfuFanli_Shop_Item1Lace">
+              <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{1.000000,-5.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="XinfuFanli_Shop_Item1">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-25.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_StaticImageNULL" Name="XinfuFanli_Shop_Item1_LockImg">
+                  <Property Name="Visible" Value="False"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+
+                <Window Type="TLBB_SimpleText" Name="XinfuFanli_Shop_Item1_LimitText">
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,2.000000}}"/>
+                  <Property Name="Text" Value="#{XFFL_250522_09}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+              </Window>
+              <Window Type="DefaultWindow" Name="XinfuFanli_Shop_Item1Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-156.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="XinfuFanli_Shop_Item1Text">
+                  <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Text" Value="#{XFFL_250522_08}"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="XinfuFanli_Shop_Item1_NameText">
+                  <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-30.000000}}"/>
+                  <Property Name="Text" Value="#{}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_ButtonCommon" Name="XinfuFanli_Shop_Item1_Button">
+                  <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,24.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{1.000000,-34.000000}}"/>
+                  <Property Name="Text" Value="#{XFFL_250522_11}"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="XinfuFanli_Shop_Text1">
+        <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-140.000000},{1.000000,-25.000000}}"/>
+        <Property Name="Text" Value="#{XFFL_250522_07}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="RightAligned"/>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="XinfuFanli_Shop_TaskClient">
+        <Property Name="UnifiedSize" Value="{{0.000000,690.000000},{0.000000,295.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,200.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_NotSuperList1" Name="XinfuFanli_Shop_TaskList">
+          <Property Name="UnifiedSize" Value="{{1.000000,-3.000000},{1.000000,-8.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,4.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="VScrollMode" Value="Hide" />
+          <Property Name="MultiColumn" Value="1" />
+          <Window Type="TLBB_NotSuperListItemCommon3" Name="XinfuFanli_Shop_Task1BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,342.000000},{0.000000,90.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_Frame_Lace10" Name="XinfuFanli_Shop_Task1Lace">
+              <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{1.000000,-5.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+              <Window Type="TLBB_StaticImageNULL" Name="XinfuFanli_Shop_Task1">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-24.000000}}"/>
+                <Property Name="Image" Value="set:Huodong_19 image:Huodong_19_7"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_StaticImageNULL" Name="XinfuFanli_Shop_Task1_WeekTextBK">
+                  <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame37 image:Lace50"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="XinfuFanli_Shop_Task1_WeekText">
+                  <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                  <Property Name="Text" Value="#{XFFL_250522_36}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                </Window>
+
+              </Window>
+              <Window Type="DefaultWindow" Name="XinfuFanli_Shop_Task1Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,264.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-264.000000},{0.000000,0.000000}}"/>
+                <Window Type="TLBB_SimpleText" Name="XinfuFanli_Shop_Task1Text">
+                  <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Text" Value="#{XFFL_250522_20}"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="XinfuFanli_Shop_Task1_UsageText">
+                  <Property Name="UnifiedSize" Value="{{0.000000,250.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-45.000000}}"/>
+                  <Property Name="Text" Value="#{XFFL_250522_23}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="XinfuFanli_Shop_Task1_TokenText">
+                  <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,142.000000},{0.000000,20.000000}}"/>
+                  <Property Name="Text" Value="#{XFFL_250522_24}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="RightAligned"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="XinfuFanli_Shop_Task1_GetText">
+                  <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{1.000000,-26.000000}}"/>
+                  <Property Name="Text" Value="#{XFFL_250522_25}"/>
+                  <Property Name="HorzFormatting" Value="RightAligned"/>
+                </Window>
+                <Window Type="TLBB_ButtonCommon" Name="XinfuFanli_Shop_Task1_Button">
+                  <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{1.000000,-28.000000}}"/>
+                  <Property Name="Text" Value="#{XFFL_250522_39}"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="XinfuFanli_Shop_Task2BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,320.000000},{0.000000,76.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,378.000000},{0.000000,400.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_StaticImageNULL" Name="XinfuFanli_Shop_Task2Image">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:XinfuFanli_Shop1 image:XinfuFanli_Shop_GiftBK"/>
+          <Window Type="TLBB_ActionButton" Name="XinfuFanli_Shop_Task2">
+            <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{0.500000,-48.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="XinfuFanli_Shop_Task2_WeekTextBK">
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Lace50"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="XinfuFanli_Shop_Task2_WeekText">
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+              <Property Name="Text" Value="#{XFFL_250522_36}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="XinfuFanli_Shop_Task2Info">
+            <Property Name="UnifiedSize" Value="{{0.000000,188.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-286.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_SimpleText" Name="XinfuFanli_Shop_Task2Text">
+              <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{1.000000,-30.000000}}"/>
+              <Property Name="Text" Value="#{XFFL_250522_44}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="XinfuFanli_Shop_Task2_UsageText">
+              <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,20.000000}}"/>
+              <Property Name="Text" Value="#{XFFL_250522_43}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="XinfuFanli_Shop_Task2_Button">
+            <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,215.000000},{1.000000,-30.000000}}"/>
+            <Property Name="PushedImage" Value="set:XinfuFanli_Shop1 image:XinfuFanli_Shop_GetPush"/>
+            <Property Name="NormalImage" Value="set:XinfuFanli_Shop1 image:XinfuFanli_Shop_GetNormal"/>
+            <Property Name="HoverImage" Value="set:XinfuFanli_Shop1 image:XinfuFanli_Shop_GetHover"/>
+            <Property Name="DisabledImage" Value="set:XinfuFanli_Shop1 image:XinfuFanli_Shop_GetDis"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="XinfuFanli_MainDian_LingQu(6);"/>
+            <Window Type="TLBB_StaticImageNULL" Name="XinfuFanli_Shop_Task1_Button_Tips">
+              <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="XinfuFanli_Shop_Task2_ButtonNULL">
+            <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,215.000000},{1.000000,-30.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:ZNQ_ChouJiang image:ZNQ_ChouJiang_YLQ_BK"/>
+          </Window>
+
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="XinfuFanli_Shop_Task1_TitleText">
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{1.000000,-25.000000}}"/>
+        <Property Name="Text" Value="#{XFFL_250522_26}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="XinfuFanli_Shop_Task2_TitleText">
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{1.000000,-25.000000}}"/>
+        <Property Name="Text" Value="#{XFFL_250522_30}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

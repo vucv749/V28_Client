@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="MonthPVP_DaoJuBao_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,318.000000},{0.000000,102.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-332.000000},{0.500000,140.000000}}"/>
+    <Window Type="TLBB_FrameY" Name="MonthPVP_DaoJuBao_FrameBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="MonthPVP_DaoJuBao_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,18.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,2.000000}}"/>
+      <Property Name="Text" Value="#{LLKC_240517_362}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="MonthPVP_DaoJuBao_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="MonthPVP_DaoJuBao_Hide">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,4.000000}}"/>
+      <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+      <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+      <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+      <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>
+      <Event Name="Clicked" Function="MonthPVP_DaoJuBao_Hide_OnClick()"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="MonthPVP_DaoJuBao_EquipClient">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-34.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+      <Window Type="DefaultWindow" Name="MonthPVP_DaoJuBao_Equip_BK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,168.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,10.000000}}"/>
+        <Window Type="TLBB_ActionButton" Name="MonthPVP_DaoJuBao_Equip_Item1">
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-142.000000},{0.000000,0.000000}}"/>
+          <Event Name="MouseRClick" Function="MonthPVP_DaoJuBao_Equip_Item_Click( 1,0 );"/>
+          <Event Name="Clicked" Function="MonthPVP_DaoJuBao_Equip_Item_Click( 1,1 );"/>
+          <Window Type="TLBB_StaticImageNULL" Name="MonthPVP_DaoJuBao_Equip_Item1_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MonthPVP_DaoJuBao_Equip_Item2">
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-94.000000},{0.000000,0.000000}}"/>
+          <Event Name="MouseRClick" Function="MonthPVP_DaoJuBao_Equip_Item_Click( 2,0 );"/>
+          <Event Name="Clicked" Function="MonthPVP_DaoJuBao_Equip_Item_Click( 2,1 );"/>
+          <Window Type="TLBB_StaticImageNULL" Name="MonthPVP_DaoJuBao_Equip_Item2_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MonthPVP_DaoJuBao_Equip_Item3">
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-46.000000},{0.000000,0.000000}}"/>
+          <Event Name="MouseRClick" Function="MonthPVP_DaoJuBao_Equip_Item_Click( 3,0 );"/>
+          <Event Name="Clicked" Function="MonthPVP_DaoJuBao_Equip_Item_Click( 3,1 );"/>
+          <Window Type="TLBB_StaticImageNULL" Name="MonthPVP_DaoJuBao_Equip_Item3_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MonthPVP_DaoJuBao_Equip_Item4">
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,2.000000},{0.000000,0.000000}}"/>
+          <Event Name="MouseRClick" Function="MonthPVP_DaoJuBao_Equip_Item_Click( 4,0 );"/>
+          <Event Name="Clicked" Function="MonthPVP_DaoJuBao_Equip_Item_Click( 4,1 );"/>
+          <Window Type="TLBB_StaticImageNULL" Name="MonthPVP_DaoJuBao_Equip_Item4_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MonthPVP_DaoJuBao_Equip_Item5">
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,50.000000},{0.000000,0.000000}}"/>
+          <Event Name="MouseRClick" Function="MonthPVP_DaoJuBao_Equip_Item_Click( 5,0 );"/>
+          <Event Name="Clicked" Function="MonthPVP_DaoJuBao_Equip_Item_Click( 5,1 );"/>
+          <Window Type="TLBB_StaticImageNULL" Name="MonthPVP_DaoJuBao_Equip_Item5_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="MonthPVP_DaoJuBao_Equip_Item6">
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,98.000000},{0.000000,0.000000}}"/>
+          <Event Name="MouseRClick" Function="MonthPVP_DaoJuBao_Equip_Item_Click( 6,0 );"/>
+          <Event Name="Clicked" Function="MonthPVP_DaoJuBao_Equip_Item_Click( 6,1 );"/>
+          <Window Type="TLBB_StaticImageNULL" Name="MonthPVP_DaoJuBao_Equip_Item6_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    </Window>
+  </Window>
+</GUILayout>

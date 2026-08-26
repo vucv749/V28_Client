@@ -1,0 +1,1228 @@
+<?xml version="1.0" ?>
+<GUILayout>
+
+  <Window Type="TLBB_MainFrame1" Name="Makefriends_Activity_Watch_Frame">
+    <Property Name="UnifiedPosition" Value="{{0.500000,-462.000000},{0.500000,-240.000000}" />
+    <Property Name="UnifiedSize" Value="{{0.000000,925.000000},{0.000000,480.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="Makefriends_Activity_Watch_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:40.000000 y:10.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="Makefriends_Activity_Watch_Frame" />
+      <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Title">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Makefriends_Activity_Watch_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Makefriends_Activity_Watch&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,13.000000}}"/>
+      <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+      <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+      <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+      <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>
+      <Event Name="Clicked" Function="Makefriends_Activity_Watch_OnHiden();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Makefriends_Activity_Watch_ClientBK">
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,40.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-85.000000}" />
+      <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Right_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-215.000000},{0.000000,20.000000}}"/>
+        <Property Name="Text" Value="#{JYHD_230331_65}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="Makefriends_Activity_Watch_RightBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-605.000000},{1.000000,-50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,605.000000},{0.000000,55.000000}}"/>
+        <Window Type="TLBB_FramePlayerOther" Name="Makefriends_Activity_Watch_Frame_Client_Other">
+          <Property Name="AbsolutePosition" Value="x:8.000000 y:0.000000" />
+          <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{1.000000,-56.000000}" />
+          <Window Type="TLBB_MeshWindow" Name="Makefriends_Activity_Watch_FakeObject">
+            <Property Name="UnifiedSize" Value="{{0.918919,0.000000},{0.876405,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.043243,0.000000},{0.041199,0.000000}}"/>
+            <Property Name="MouseHollow" Value="True" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_ButtonTurnLeft" Name="Makefriends_Activity_Watch_Model_TurnLeft">
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.000000,-42.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:25.000000 h:25.000000" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseButtonDown" Function="Makefriends_Activity_Watch_TurnLeft(1);" />
+            <Event Name="MouseButtonUp" Function="Makefriends_Activity_Watch_TurnLeft(0);" />
+          </Window>
+          <Window Type="TLBB_ButtonTurnRight" Name="Makefriends_Activity_Watch_Model_TurnRight">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-35.000000},{1.000000,-42.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:25.000000 h:25.000000" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseButtonDown" Function="Makefriends_Activity_Watch_TurnRight(1);" />
+            <Event Name="MouseButtonUp" Function="Makefriends_Activity_Watch_TurnRight(0);" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,10.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="Text" Value="#{JYHD_230331_66}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-65.000000},{0.000000,10.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+            <Property Name="Text" Value="#{JYHD_230331_67}" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Makefriends_Activity_Watch_Frame_Client">
+          <Property Name="UnifiedSize" Value="{{1.000000,-215.000000},{1.000000,-40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,-2.000000}}"/>
+          <Window Type="DefaultWindow" Name="Makefriends_Activity_Watch_Frame1_Client_Part1">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}" />
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="Makefriends_Activity_Watch_Info">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,130.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,160.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="Text" Value="#{JYHD_230331_73}" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Info2">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="Text" Value="#{JYHD_230331_68}" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Info3">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,40.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="Text" Value="#{JYHD_230331_69}" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Info4">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,70.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="Text" Value="#{JYHD_230331_70}" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Info5">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,100.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="Text" Value="#{JYHD_230331_71}" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Info6">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,130.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="Text" Value="#{JYHD_230331_72}" />
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="Makefriends_Activity_Watch_B1">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-120.000000},{0.500000,140.000000}}"/>
+          <Property Name="Text" Value="#{}"/>
+          <Event Name="Clicked" Function="Makefriends_Activity_Watch_AddFriend();"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="Makefriends_Activity_Watch_B2">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,30.000000},{0.500000,140.000000}}"/>
+          <Property Name="Text" Value="#{}"/>
+          <Event Name="Clicked" Function="Makefriends_Activity_Watch_B2_SelectClicked();"/>
+        </Window>
+
+      </Window>
+      <Window Type="DefaultWindow" Name="Makefriends_Activity_Watch_MedBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{1.000000,-5.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,255.000000},{0.000000,10.000000}}"/>
+        <Window Type="TLBB_Frame_Lace3" Name="Makefriends_Activity_Watch_Title_Frame">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Info1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_118}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Makefriends_Activity_Watch_Info2_Frame">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-35.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,35.000000}}"/>
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="DefaultWindow" Name="Makefriends_Activity_Watch_Info2_FrameBK1">
+            <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_Number_InfoBK1">
+              <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Btn1">
+                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(3,1)"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Name1">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Gender1">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_50}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_Number_Plus1">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.000000,8.000000}}"/>
+
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Good1">
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+                <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+                <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_Number_InfoBK2">
+              <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,40.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Btn2">
+                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(3,2)"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Name2">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Gender2">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_50}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_Number_Plus2">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.000000,8.000000}}"/>
+
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Good2">
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+                <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+                <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_Number_InfoBK3">
+              <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,75.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Btn3">
+                <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(3,3)"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Name3">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Gender3">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_50}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_Number_Plus3">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.000000,8.000000}}"/>
+
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Good3">
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+                <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+                <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_Number_InfoBK4">
+              <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,110.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Btn4">
+                <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(3,4)"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Name4">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Gender4">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_110}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_Number_Plus4">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.000000,8.000000}}"/>
+
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Good4">
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+                <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+                <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_Number_InfoBK5">
+              <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,145.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Btn5">
+                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(3,5)"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Name5">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Gender5">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_110}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_Number_Plus5">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.000000,8.000000}}"/>
+
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Good5">
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+                <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+                <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_Number_InfoBK6">
+              <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,180.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Btn6">
+                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(3,6)"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Name6">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Gender6">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_110}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_Number_Plus6">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.000000,8.000000}}"/>
+
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Good6">
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+                <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+                <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_Number_InfoBK7">
+              <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,215.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Btn7">
+                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(3,7)"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Name7">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Gender7">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_110}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_Number_Plus7">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.000000,8.000000}}"/>
+
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Good7">
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+                <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+                <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_Number_InfoBK8">
+              <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,250.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Btn8">
+                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(3,8)"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Name8">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Gender8">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_110}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_Number_Plus8">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.000000,8.000000}}"/>
+
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Good8">
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+                <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+                <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_Number_InfoBK9">
+              <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,285.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Btn9">
+                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(3,9)"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Name9">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Gender9">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_110}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_Number_Plus9">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.000000,8.000000}}"/>
+
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Good9">
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+                <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+                <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_Number_InfoBK10">
+              <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,320.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Btn10">
+                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(3,10)"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Name10">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Gender10">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_110}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_Number_Plus10">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.000000,8.000000}}"/>
+
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Good10">
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+                <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+                <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Makefriends_Activity_Watch_Info2_FrameBK2">
+            <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-180.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_Number_InfoBK11">
+              <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Btn11">
+                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(3,11)"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Name11">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Gender11">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_110}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_Number_Plus11">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.000000,8.000000}}"/>
+
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Good11">
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+                <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+                <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_Number_InfoBK12">
+              <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,40.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Btn12">
+                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(3,12)"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Name12">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Gender12">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_110}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_Number_Plus12">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.000000,8.000000}}"/>
+
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Good12">
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+                <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+                <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_Number_InfoBK13">
+              <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,75.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Btn13">
+                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(3,13)"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Name13">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Gender13">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_110}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_Number_Plus13">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.000000,8.000000}}"/>
+
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Good13">
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+                <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+                <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_Number_InfoBK14">
+              <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,110.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Btn14">
+                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(3,14)"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Name14">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Gender14">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_110}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_Number_Plus14">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.000000,8.000000}}"/>
+
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Good14">
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+                <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+                <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_Number_InfoBK15">
+              <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,145.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Btn15">
+                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(3,15)"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Name15">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Gender15">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_110}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_Number_Plus15">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.000000,8.000000}}"/>
+
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Good15">
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+                <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+                <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_Number_InfoBK16">
+              <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,180.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Btn16">
+                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(3,16)"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Name16">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Gender16">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_110}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_Number_Plus16">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.000000,8.000000}}"/>
+
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Good16">
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+                <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+                <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_Number_InfoBK17">
+              <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,215.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Btn17">
+                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(3,17)"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Name17">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Gender17">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_110}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_Number_Plus17">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.000000,8.000000}}"/>
+
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Good17">
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+                <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+                <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_Number_InfoBK18">
+              <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,250.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Btn18">
+                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(3,18)"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Name18">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_Gender18">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_110}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_Number_Plus18">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.000000,8.000000}}"/>
+
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_Good18">
+                <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+                <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+                <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Makefriends_Activity_Watch_LeftBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,250.000000},{1.000000,-255.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+        <Window Type="TLBB_Frame_Lace3" Name="Makefriends_Activity_Watch_Title_LeftBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK_Title">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_116}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_LeftBK_InfoBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,40.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_LeftBK_Btn1">
+            <Property Name="UnifiedSize" Value="{{0.000000,195.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(1,1)"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK_Name1">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK_Gender1">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_110}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK_Info1">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_119}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_LeftBK_Plus1">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,8.000000}}"/>
+            <Event Name="Clicked" Function="Makefriends_Activity_Watch_B1_AddFriend(1,1);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_LeftBK_Good1">
+            <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+            <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+            <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+            <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_LeftBK_InfoBK2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,75.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_LeftBK_Btn2">
+            <Property Name="UnifiedSize" Value="{{0.000000,195.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(1,2)"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK_Name2">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK_Gender2">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_110}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK_Info2">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_119}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_LeftBK_Plus2">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,8.000000}}"/>
+            <Event Name="Clicked" Function="Makefriends_Activity_Watch_B1_AddFriend(1,2);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_LeftBK_Good2">
+            <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+            <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+            <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+            <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_LeftBK_InfoBK3">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,110.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_LeftBK_Btn3">
+            <Property Name="UnifiedSize" Value="{{0.000000,195.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(1,3)"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK_Name3">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK_Gender3">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_110}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK_Info3">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_119}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_LeftBK_Plus3">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,8.000000}}"/>
+            <Event Name="Clicked" Function="Makefriends_Activity_Watch_B1_AddFriend(1,3);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_LeftBK_Good3">
+            <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+            <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+            <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+            <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Makefriends_Activity_Watch_LeftBK2">
+        <Property Name="UnifiedSize" Value="{{0.000000,250.000000},{1.000000,-145.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,150.000000}}"/>
+        <Window Type="TLBB_Frame_Lace3" Name="Makefriends_Activity_Watch_TitleLeftBK2_Frame">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK2_Title">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_117}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_LeftBK2_InfoBK1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,40.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_LeftBK2_Btn1">
+            <Property Name="UnifiedSize" Value="{{0.000000,195.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(2,1)"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK2_Name1">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK2_Gender1">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_110}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK2_Info1">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_120}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_LeftBK2_Plus1">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,8.000000}}"/>
+            <Event Name="Clicked" Function="Makefriends_Activity_Watch_B1_AddFriend(2,1);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_LeftBK2_Good1">
+            <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+            <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+            <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+            <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_LeftBK2_InfoBK2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,75.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_LeftBK2_Btn2">
+            <Property Name="UnifiedSize" Value="{{0.000000,195.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(2,2)"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK2_Name2">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK2_Gender2">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_110}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK2_Info2">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_120}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_LeftBK2_Plus2">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,8.000000}}"/>
+            <Event Name="Clicked" Function="Makefriends_Activity_Watch_B1_AddFriend(2,2);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_LeftBK2_Good2">
+            <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+            <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+            <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+            <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_LeftBK2_InfoBK3">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,110.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_LeftBK2_Btn3">
+            <Property Name="UnifiedSize" Value="{{0.000000,195.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(2,3)"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK2_Name3">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK2_Gender3">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_110}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK2_Info3">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_120}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_LeftBK2_Plus3">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,8.000000}}"/>
+            <Event Name="Clicked" Function="Makefriends_Activity_Watch_B1_AddFriend(2,3);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_LeftBK2_Good3">
+            <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+            <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+            <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+            <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_LeftBK2_InfoBK4">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,145.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_LeftBK2_Btn4">
+            <Property Name="UnifiedSize" Value="{{0.000000,195.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(2,4)"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK2_Name4">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK2_Gender4">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_110}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK2_Info4">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_119}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_LeftBK2_Plus4">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,8.000000}}"/>
+            <Event Name="Clicked" Function="Makefriends_Activity_Watch_B1_AddFriend(2,4);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_LeftBK2_Good4">
+            <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+            <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+            <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+            <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_LeftBK2_InfoBK5">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,180.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_LeftBK2_Btn5">
+            <Property Name="UnifiedSize" Value="{{0.000000,195.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(2,5)"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK2_Name5">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK2_Gender5">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_110}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK2_Info5">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_120}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_LeftBK2_Plus5">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,8.000000}}"/>
+            <Event Name="Clicked" Function="Makefriends_Activity_Watch_B1_AddFriend(2,5);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_LeftBK2_Good5">
+            <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+            <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+            <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+            <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace1" Name="Makefriends_Activity_Watch_LeftBK2_InfoBK6">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,215.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_LeftBK2_Btn6">
+            <Property Name="UnifiedSize" Value="{{0.000000,195.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Makefriends_Activity_Watch_Btn_SelectEvery(2,6)"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK2_Name6">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK2_Gender6">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_110}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_LeftBK2_Info6">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_120}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonAdd" Name="Makefriends_Activity_Watch_LeftBK2_Plus6">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,8.000000}}"/>
+            <Event Name="Clicked" Function="Makefriends_Activity_Watch_B1_AddFriend(2,6);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_Watch_LeftBK2_Good6">
+            <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+            <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+            <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+            <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+
+    <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_InfoText">
+      <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{1.000000,-40.000000}}"/>
+      <Property Name="Text" Value="#{JYHD_230331_50}"/>
+      <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+    </Window>
+
+    <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Watch_InfoTime">
+      <Property Name="UnifiedSize" Value="{{0.000000,135.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-250.000000},{1.000000,-40.000000}}"/>
+      <Property Name="Text" Value="#{JYHD_230331_50}"/>
+      <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+    </Window>
+    <Window Type="TLBB_StopWatch" Name="Makefriends_Activity_Watch_TimeWatch">
+      <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,18.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-40.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="Text" Value="00:00"/>
+    </Window>
+  </Window>
+</GUILayout>

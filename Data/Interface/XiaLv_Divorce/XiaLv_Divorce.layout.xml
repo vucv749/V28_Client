@@ -1,0 +1,159 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection0" Name="XiaLv_Divorce_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,648.000000},{0.000000,431.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-324.000000},{0.500000,-220.000000}}"/>
+    <Event Name="Hidden" Function="XiaLv_Divorce_OnHiden()"/>
+    <Window Type="TLBB_TitleLace_Affection0" Name="XiaLv_Divorce_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,31.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="XiaLv_Divorce_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="Title"/>
+      <Property Name="Text" Value="#{JHYH_230330_74}"/>
+      <Property Name="DragTarget" Value="XiaLv_Divorce_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="XiaLv_Divorce_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="XiaLv_Divorce_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="XiaLv_Divorce_Close_Click();"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Divorce_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,36.000000}}"/>
+      <Property Name="Image" Value="set:Xialv01 image:XiaLvBK12"/>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Divorce_Decoration">
+        <Property Name="UnifiedSize" Value="{{0.000000,128.000000},{0.000000,124.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-64.000000},{0.000000,20.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Xialv01 image:XiaLvBK20"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Divorce_WomanHeart">
+        <Property Name="UnifiedSize" Value="{{0.000000,216.000000},{0.000000,80.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-244.000000},{0.000000,52.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Xialv01 image:XiaLvBK16"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Divorce_WomanHeartBroken">
+        <Property Name="UnifiedSize" Value="{{0.000000,216.000000},{0.000000,80.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-244.000000},{0.000000,52.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Xialv01 image:XiaLvBK18"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Divorce_ManHeart">
+        <Property Name="UnifiedSize" Value="{{0.000000,216.000000},{0.000000,80.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,36.000000},{0.000000,52.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Xialv01 image:XiaLvBK15"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Divorce_ManHeartBroken">
+        <Property Name="UnifiedSize" Value="{{0.000000,216.000000},{0.000000,80.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,36.000000},{0.000000,52.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Xialv01 image:XiaLvBK17"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="XiaLv_Divorce_ManClient">
+        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,86.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-236.000000},{0.000000,56.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Divorce_Man_HeadBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:Xialv01 image:XiaLvBK10"/>
+          <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Divorce_Man_Head">
+            <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,58.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Divorce_Man_NameBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,66.000000}}"/>
+          <Property Name="Image" Value="set:Xialv01 image:XiaLvBK13"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="XiaLv_Divorce_Man_Name">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+            <Property Name="Text" Value="名字六个文字"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="ColorTrans" Value="True"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="XiaLv_Divorce_WomanClient">
+        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,86.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,92.000000},{0.000000,56.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Divorce_Woman_Head_IconBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:Xialv01 image:XiaLvBK10"/>
+          <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Divorce_Woman_Head">
+            <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,58.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Divorce_Woman_NameBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,66.000000}}"/>
+          <Property Name="Image" Value="set:Xialv01 image:XiaLvBK13"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="XiaLv_Divorce_Woman_Name">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+            <Property Name="Text" Value="名字六个文字"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="ColorTrans" Value="True"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Divorce_Text1BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,444.000000},{0.000000,108.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-222.000000},{0.000000,150.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Xialv01 image:XiaLvBK14"/>
+        <Window Type="TLBB_SimpleText" Name="XiaLv_Divorce_Text1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{JHYH_230330_77}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="ColorTrans" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="XiaLv_Divorce_ConfirmText">
+        <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,54.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.000000,252.000000}}"/>
+        <Property Name="Text" Value="#{JHYH_230330_81}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="ColorTrans" Value="True"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="XiaLv_Divorce_CancleBtn">
+      <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{1.000000,-86.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="XiaLv_Divorce_Close_Click();"/>
+      <Property Name="PushedImage" Value="set:Xialv01 image:XiaLv_Btn4Push"/>
+      <Property Name="NormalImage" Value="set:Xialv01 image:XiaLv_Btn4Normal"/>
+      <Property Name="HoverImage" Value="set:Xialv01 image:XiaLv_Btn4Hover"/>
+      <Property Name="DisabledImage" Value="set:Xialv01 image:XiaLv_Btn4Dis"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="XiaLv_Divorce_OkBtn">
+      <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-270.000000},{1.000000,-86.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="XiaLv_Divorce_OkBtn_Click();"/>
+      <Property Name="PushedImage" Value="set:Xialv01 image:XiaLv_Btn3Push"/>
+      <Property Name="NormalImage" Value="set:Xialv01 image:XiaLv_Btn3Normal"/>
+      <Property Name="HoverImage" Value="set:Xialv01 image:XiaLv_Btn3Hover"/>
+      <Property Name="DisabledImage" Value="set:Xialv01 image:XiaLv_Btn3Dis"/>
+    </Window>
+  </Window>
+</GUILayout>

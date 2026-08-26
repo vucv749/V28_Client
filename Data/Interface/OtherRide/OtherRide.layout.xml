@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame3" Name="OtherRide_Frame">
+    <Property Name="UnifiedPosition" Value="{{0.38,0},{0.12,0}}" />
+    <Property Name="AbsoluteSize" Value="w:360 h:402" />
+    <Window Type="TLBB_DragTitle" Name="OtherRide_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:108.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-133.000000},{0.000000,20.000000}" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="Text" Value="#{INTERFACE_XML_51}" />
+      <Property Name="DragTarget" Value="OtherRide_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="OtherRide_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*OtherRide&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="OtherRide_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="this:Hide();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="OtherRide_Frame_Client">
+      <Property Name="AbsolutePosition" Value="x:9.000000 y:33.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-60.000000}" />
+      <Window Type="TLBB_Frame_Lace1" Name="OtherRide_FakeObject_bak_Frame">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_FramePlayerOther" Name="OtherRide_FakeObject_bak">
+          <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,270.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+          <Window Type="TLBB_MeshWindow" Name="OtherRide_FakeObject">
+            <Property Name="Position" Value="x:0.03 y:0.05" />
+            <Property Name="Size" Value="w:0.94 h:0.9" />
+            <Property Name="ShowControl" Value="OtherRide_Frame" />
+            <Property Name="RiseOnClick" Value="false" />
+          </Window>
+          <Window Type="TLBB_ButtonTurnLeft" Name="OtherRide_Model_TurnLeft">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,65.000000},{0.000000,220.000000}}"/>
+            <Event Name="MouseButtonDown" Function="OtherRide_Model_TurnLeft(1);" />
+            <Event Name="MouseButtonUp" Function="OtherRide_Model_TurnLeft(0);" />
+          </Window>
+          <Window Type="TLBB_ButtonTurnRight" Name="OtherRide_Model_TurnRight">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{0.000000,220.000000}}"/>
+            <Event Name="MouseButtonDown" Function="OtherRide_Model_TurnRight(1);" />
+            <Event Name="MouseButtonUp" Function="OtherRide_Model_TurnRight(0);" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="OtherRide_Equip">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.5000000,-17.0000000},{1.00000,-50.0000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Rade" />
+          <Property Name="Empty" Value="True" />
+          <Property Name="DraggingEnabled" Value="False" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Event Name="Clicked" Function="OtherRide_Equip_Click(1)" />
+          <Event Name="MouseRClick" Function="OtherRide_Equip_Click(0)" />
+          <Property Name="Tooltip" Value="#{INTERFACE_XML_911}" />
+          <Window Type="TLBB_StaticImageNULL" Name="OtherRide_Equip_Mask">
+            <Property Name="Position" Value="x:0 y:0" />
+            <Property Name="Size" Value="w:1 h:1" />
+            <Property Name="MouseLButtonHollow" Value="true" />
+            <Property Name="MouseRButtonHollow" Value="true" />
+            <Property Name="MouseMoveHollow" Value="true" />
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="OtherRide_Checkbox_Frame">
+      <Property Name="UnifiedPosition" Value="{{0.0,8.000000},{1.000000,-25.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.96,0.000000},{0.000000,24.000000}" />
+      <Window Type="TLBB_ButtonPageDown" Name="OtherRide_TargetEquip">
+        <Property Name="AbsolutePosition" Value="x:0.0 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Text" Value="#{INTERFACE_XML_13}" />
+        <Property Name="HorzLabelFormatting" Value="WordWrapCentreAligned" />
+        <Property Name="MouseRButtonHollow" Value="true" />
+        <Event Name="MouseButtonUp" Function="OtherRide_TargetEquip_Down();" />
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="OtherRide_TargetData">
+        <Property Name="AbsolutePosition" Value="x:42.0 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Text" Value="#{INTERFACE_XML_14}" />
+        <Property Name="MouseRButtonHollow" Value="true" />
+        <Event Name="MouseButtonUp" Function="OtherRide_TargetData_Down();" />
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="OtherRide_Pet">
+        <Property Name="AbsolutePosition" Value="x:84.0 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Event Name="MouseButtonUp" Function="OtherRide_OtherPet_Down();" />
+        <Property Name="MouseRButtonHollow" Value="true" />
+        <Property Name="Text" Value="#{INTERFACE_XML_5}" />
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="OtherRide_TargetWuhun">
+        <Property Name="AbsolutePosition" Value="x:126.0 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Text" Value="#{WH_xml_XX(95)}" />
+        <Property Name="MouseRButtonHollow" Value="true" />
+        <Event Name="MouseButtonUp" Function="OtherRide_TargetWuhun_Switch();" />
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="OtherRide_Ride">
+        <Property Name="AbsolutePosition" Value="x:168.0 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Text" Value="#{INTERFACE_XML_497}" />
+        <Property Name="MouseRButtonHollow" Value="true" />
+        <Property Name="Selected" Value="true" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

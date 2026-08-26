@@ -1,0 +1,1433 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Frame">
+    <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.0000000,0.000000}}" />
+    <Property Name="UnifiedSize" Value="{{0.000000,720.000000},{0.000000,49.000000}}" />
+    <Property Name="MouseHollow" Value="True" />
+    <Property Name="MouseMoveHollow" Value="True" />
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Open">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-45.000000},{0.000000,0.000000}}" />
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_OpenButton">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="PushedImage" Value="set:KJRK_8 image:KJRK_Open_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_8 image:KJRK_Open_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_8 image:KJRK_Open_Hover"/>
+        <Property Name="DisabledImage" Value="set:KJRK_8 image:KJRK_Open_Dis"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Tooltip" Value="#{YCAN_150114_2}" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Open_Clicked();" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_OpenButton_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-45.000000},{0.000000,0.000000}}" />
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_CloseButton">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="PushedImage" Value="set:KJRK_8 image:KJRK_Close_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_8 image:KJRK_Close_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_8 image:KJRK_Close_Hover"/>
+        <Property Name="DisabledImage" Value="set:KJRK_8 image:KJRK_Close_Dis"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Tooltip" Value="" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Close_Clicked();" />
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk1">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{0.000000,0.000000}}" />
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image1">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="PushedImage" Value="set:KJRK_1 image:fbsd_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_1 image:fbsd_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_1 image:fbsd_Hover"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Tooltip" Value="" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(1);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image1_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk2">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-135.000000},{0.000000,0.000000}}" />
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image2">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="PushedImage" Value="set:KJRK_1 image:ZhouHuoYue_Quick_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_1 image:ZhouHuoYue_Quick_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_1 image:ZhouHuoYue_Quick_Hover"/>
+        <Property Name="Tooltip" Value="#{ZHY_210301_01}"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Tooltip" Value="" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(2);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image2_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk3">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-180.000000},{0.000000,0.000000}}" />
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image3">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{HJHL_201224_74}"/>
+        <Property Name="PushedImage" Value="set:KJRK_1 image:YXGL_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_1 image:YXGL_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_1 image:YXGL_Hover"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Tooltip" Value="" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(3);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image3_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk4">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-225.000000},{0.000000,0.000000}}" />
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image4">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{TFYD_210729_560}"/>
+        <Property Name="PushedImage" Value="set:KJRK_3 image:CWD_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_3 image:CWD_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_3 image:CWD_Hover"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Tooltip" Value="" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(4);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image4_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk5">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-270.000000},{0.000000,0.000000}}" />
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image5">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{SHYD_20211227_02}"/>
+        <Property Name="PushedImage" Value="set:KJRK_7 image:PetsoulLetter_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_7 image:PetsoulLetter_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_7 image:PetsoulLetter_Hover"/>
+        <Property Name="DisabledImage" Value="set:KJRK_7 image:PetsoulLetter_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Tooltip" Value="" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(5);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image5_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk6">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-315.000000},{0.000000,0.000000}}" />
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image6">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{XYSHFC_20211229_100}"/>
+        <Property Name="PushedImage" Value="set:KJRK_3 image:PS_FHLPush"/>
+        <Property Name="NormalImage" Value="set:KJRK_3 image:PS_FHLNormal"/>
+        <Property Name="HoverImage" Value="set:KJRK_3 image:PS_FHLHover"/>
+        <Property Name="DisabledImage" Value="set:KJRK_3 image:PS_FHLDis"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Tooltip" Value="" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(6);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image6_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk7">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-360.000000},{0.000000,0.000000}}" />
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image7">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{XYSHFC_20211229_100}"/>
+        <Property Name="PushedImage" Value="set:KJRK_8 image:TCMT_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_8 image:TCMT_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_8 image:TCMT_Hover"/>
+        <Property Name="DisabledImage" Value="set:KJRK_8 image:TCMT_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Tooltip" Value="" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(7);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image7_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk8">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-405.000000},{0.000000,0.000000}}" />
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image8">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{XYSHFC_20211229_100}"/>
+        <Property Name="PushedImage" Value="set:KJRK_14 image:LMY_P"/>
+        <Property Name="NormalImage" Value="set:KJRK_14 image:LMY_N"/>
+        <Property Name="HoverImage" Value="set:KJRK_14 image:LMY_H"/>
+        <Property Name="DisabledImage" Value="set:KJRK_14 image:LMY_D"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Tooltip" Value="" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(8);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image8_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk9">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-450.000000},{0.000000,0.000000}}" />
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image9">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{JNHZB_20201105_04}"/>
+        <Property Name="HoverImage" Value="set:KJRK_15 image:JNH_Hover"/>
+        <Property Name="NormalImage" Value="set:KJRK_15 image:JNH_Normal"/>
+        <Property Name="PushedImage" Value="set:KJRK_15 image:JNH_Pushed"/>
+        <Property Name="DisabledImage" Value="set:KJRK_15 image:JNH_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Tooltip" Value="" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(9);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image9_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk10">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-495.000000},{0.000000,0.000000}}" />
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image10">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{JNHZB_20201105_04}"/>
+        <Property Name="HoverImage" Value="set:KJRK_9 image:XZX_H"/>
+        <Property Name="NormalImage" Value="set:KJRK_9 image:XZX_N"/>
+        <Property Name="PushedImage" Value="set:KJRK_9 image:XZX_P"/>
+        <Property Name="DisabledImage" Value="set:KJRK_9 image:XZX_P"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Tooltip" Value="" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(10);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image10_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk11">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-540.000000},{0.000000,0.000000}}" />
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image11">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{}"/>
+        <Property Name="HoverImage" Value="set:KJRK_5 image:Bulao_YR_Hover"/>
+        <Property Name="NormalImage" Value="set:KJRK_5 image:Bulao_YR_Normal"/>
+        <Property Name="PushedImage" Value="set:KJRK_5 image:Bulao_YR_Pushed"/>
+        <Property Name="DisabledImage" Value="set:KJRK_5 image:Bulao_YR_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Tooltip" Value="" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(11);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image11_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk12">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-585.000000},{0.000000,0.000000}}" />
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image12">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{CCYR_221220_129}"/>
+        <Property Name="HoverImage" Value="set:KJRK_9 image:XZY_H"/>
+        <Property Name="NormalImage" Value="set:KJRK_9 image:XZY_N"/>
+        <Property Name="PushedImage" Value="set:KJRK_9 image:XZY_P"/>
+        <Property Name="DisabledImage" Value="set:KJRK_9 image:XZY_D"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Tooltip" Value="" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(12);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image12_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk13">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-630.000000},{0.000000,0.000000}}" />
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image13">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{CCYR_221220_129}"/>
+        <Property Name="HoverImage" Value="set:KJRK_9 image:TXZ_H"/>
+        <Property Name="NormalImage" Value="set:KJRK_9 image:TXZ_N"/>
+        <Property Name="PushedImage" Value="set:KJRK_9 image:TXZ_P"/>
+        <Property Name="DisabledImage" Value="set:KJRK_9 image:TXZ_D"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Tooltip" Value="" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(13);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image13_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk14">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-675.000000},{0.000000,0.000000}}" />
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image14">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{CJXS_230330_36}"/>
+        <Property Name="HoverImage" Value="set:KJRK_16 image:XSK_Hover"/>
+        <Property Name="NormalImage" Value="set:KJRK_16 image:XSK_Normal"/>
+        <Property Name="PushedImage" Value="set:KJRK_16 image:XSK_Pushed"/>
+        <Property Name="DisabledImage" Value="set:KJRK_16 image:XSK_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(14);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image14_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk15">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}" />
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image15">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{CJXS_230330_36}"/>
+        <Property Name="HoverImage" Value="set:KJRK_17 image:BDHX_H"/>
+        <Property Name="NormalImage" Value="set:KJRK_17 image:BDHX_N"/>
+        <Property Name="PushedImage" Value="set:KJRK_17 image:BDHX_P"/>
+        <Property Name="DisabledImage" Value="set:KJRK_17 image:BDHX_D"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(15);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image15_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk16">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}" />
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image16">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{CJXS_230330_36}"/>
+        <Property Name="HoverImage" Value="set:KJRK_17 image:WangQian_Hover"/>
+        <Property Name="NormalImage" Value="set:KJRK_17 image:WangQian_Normal"/>
+        <Property Name="PushedImage" Value="set:KJRK_17 image:WangQian_Pushed"/>
+        <Property Name="DisabledImage" Value="set:KJRK_17 image:WangQian_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(16);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image16_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk17">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}" />
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image17">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{QXFL_20230721_17}"/>
+        <Property Name="HoverImage" Value="set:KJRK_16 image:QXHLJ_Hover"/>
+        <Property Name="NormalImage" Value="set:KJRK_16 image:QXHLJ_Normal"/>
+        <Property Name="PushedImage" Value="set:KJRK_16 image:QXHLJ_Pushed"/>
+        <Property Name="DisabledImage" Value="set:KJRK_16 image:QXHLJ_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(17);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image17_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk18">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}" />
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image18">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{SQYD_230802_02}"/>
+        <Property Name="PushedImage" Value="set:KJRK_18 image:wenqiqing_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_18 image:wenqiqing_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_18 image:wenqiqing_Hover"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(18);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image18_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk19">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-765.000000},{0.000000,0.000000}}" />
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image19">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{SQYD_230802_02}"/>
+        <Property Name="PushedImage" Value="set:KJRK_18 image:JHRY_P"/>
+        <Property Name="NormalImage" Value="set:KJRK_18 image:JHRY_N"/>
+        <Property Name="HoverImage" Value="set:KJRK_18 image:JHRY_H"/>
+        <Property Name="DisabledImage" Value="set:KJRK_18 image:JHRY_D"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(19);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image19_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk20">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image20">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{SQYD_230802_02}"/>
+        <Property Name="PushedImage" Value="set:KJRK_3 image:jnh_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_3 image:jnh_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_3 image:jnh_Hover"/>
+        <Property Name="DisabledImage" Value="set:KJRK_3 image:jnh_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(20);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image20_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk21">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image21">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{SZPM_230913_86}"/>
+        <Property Name="PushedImage" Value="set:KJRK_18 image:GYHS3"/>
+        <Property Name="NormalImage" Value="set:KJRK_18 image:GYHS1"/>
+        <Property Name="HoverImage" Value="set:KJRK_18 image:GYHS2"/>
+        <Property Name="DisabledImage" Value="set:KJRK_18 image:GYHS4"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(21);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image21_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk22">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image22">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{ZLSJ_231106_03}"/>
+        <Property Name="PushedImage" Value="set:KJRK_18 image:YXJY1"/>
+        <Property Name="NormalImage" Value="set:KJRK_18 image:YXJY3"/>
+        <Property Name="HoverImage" Value="set:KJRK_18 image:YXJY2"/>
+        <Property Name="DisabledImage" Value="set:KJRK_18 image:YXJY4"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(22);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image22_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk23">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image23">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{ZLSJ_231106_03}"/>
+        <Property Name="PushedImage" Value="set:KJRK_18 image:JHMH_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_18 image:JHMH_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_18 image:JHMH_Hover"/>
+        <Property Name="DisabledImage" Value="set:KJRK_18 image:JHMH_Pushed"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(23);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image23_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk24">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image24">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{SFYR_240104_41}"/>
+        <Property Name="PushedImage" Value="set:KJRK_11 image:ShenFen_Yure_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_11 image:ShenFen_Yure_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_11 image:ShenFen_Yure_Hover"/>
+        <Property Name="DisabledImage" Value="set:KJRK_11 image:ShenFen_Yure_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(24);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image24_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk25">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image25">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{WYCJ_20240320_43}"/>
+        <Property Name="PushedImage" Value="set:KJRK_19 image:THXL_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_19 image:THXL_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_19 image:THXL_Hover"/>
+        <Property Name="DisabledImage" Value="set:KJRK_19 image:THXL_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(25);" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image25_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk26">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image26">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{JJFY_240407_25}"/>
+        <Property Name="PushedImage" Value="set:KJRK_19 image:JianJue_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_19 image:JianJue_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_19 image:JianJue_Hover"/>
+        <Property Name="DisabledImage" Value="set:KJRK_19 image:JianJue_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(26)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image26_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk27">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image27">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{}"/>
+        <Property Name="PushedImage" Value="set:KJRK_19 image:JHZ_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_19 image:JHZ_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_19 image:JHZ_Hover"/>
+        <Property Name="DisabledImage" Value="set:KJRK_19 image:JHZ_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(27)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image27_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk28">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image28">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{}"/>
+        <Property Name="PushedImage" Value="set:KJRK_20 image:YMHXY_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_20 image:YMHXY_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_20 image:YMHXY_Hover"/>
+        <Property Name="DisabledImage" Value="set:KJRK_20 image:YMHXY_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(28)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image28_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk29">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image29">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{DHYR_240515_04}"/>
+        <Property Name="PushedImage" Value="set:KJRK_20 image:DaHua_Yure_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_20 image:DaHua_Yure_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_20 image:DaHua_Yure_Hover"/>
+        <Property Name="DisabledImage" Value="set:KJRK_20 image:DaHua_Yure_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(29)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image29_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk30">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image30">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{FCER_240626_01}"/>
+        <Property Name="PushedImage" Value="set:KJRK_21 image:WXWD_P"/>
+        <Property Name="NormalImage" Value="set:KJRK_21 image:WXWD_N"/>
+        <Property Name="HoverImage" Value="set:KJRK_21 image:WXWD_H"/>
+        <Property Name="DisabledImage" Value="set:KJRK_21 image:WXWD_D"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(30)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image30_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk31">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image31">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{ERYR_240701_24}"/>
+        <Property Name="PushedImage" Value="set:KJRK_21 image:GSYA_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_21 image:GSYA_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_21 image:GSYA_Hover"/>
+        <Property Name="DisabledImage" Value="set:KJRK_21 image:GSYA_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(31)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image31_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk32">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image32">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{ERYR_240701_24}"/>
+        <Property Name="PushedImage" Value="set:KJRK_22 image:TXLYBP"/>
+        <Property Name="NormalImage" Value="set:KJRK_22 image:TXLYBN"/>
+        <Property Name="HoverImage" Value="set:KJRK_22 image:TXLYBH"/>
+        <Property Name="DisabledImage" Value="set:KJRK_22 image:TXLYBD"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(32)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image32_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk33">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image33">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{BXJZH_240927_01}"/>
+        <Property Name="PushedImage" Value="set:KJRK_11 image:FrozenGuide_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_11 image:FrozenGuide_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_11 image:FrozenGuide_Hover"/>
+        <Property Name="DisabledImage" Value="set:KJRK_11 image:FrozenGuide_Disable"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(33)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image33_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk34">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image34">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{BXJZH_240927_01}"/>
+        <Property Name="PushedImage" Value="set:KJRK_28 image:BXJYR2025_P"/>
+        <Property Name="NormalImage" Value="set:KJRK_28 image:BXJYR2025_N"/>
+        <Property Name="HoverImage" Value="set:KJRK_28 image:BXJYR2025_H"/>
+        <Property Name="DisabledImage" Value="set:KJRK_28 image:BXJYR2025_D"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(34)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image34_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk35">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image35">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{BXJZH_240927_01}"/>
+        <Property Name="PushedImage" Value="set:KJRK_23 image:NewShengXiao_P"/>
+        <Property Name="NormalImage" Value="set:KJRK_23 image:NewShengXiao_N"/>
+        <Property Name="HoverImage" Value="set:KJRK_23 image:NewShengXiao_H"/>
+        <Property Name="DisabledImage" Value="set:KJRK_23 image:NewShengXiao_D"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(35)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image35_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk36">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image36">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{ZSYD_241218_02}"/>
+        <Property Name="PushedImage" Value="set:KJRK_23 image:KWLJ_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_23 image:KWLJ_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_23 image:KWLJ_Hover"/>
+        <Property Name="DisabledImage" Value="set:KJRK_23 image:KWLJ_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(36)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image36_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk37">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image37">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{ZSYD_241218_02}"/>
+        <Property Name="PushedImage" Value="set:KJRK_12 image:SJYY_P"/>
+        <Property Name="NormalImage" Value="set:KJRK_12 image:SJYY_N"/>
+        <Property Name="HoverImage" Value="set:KJRK_12 image:SJYY_H"/>
+        <Property Name="DisabledImage" Value="set:KJRK_12 image:SJYY_D"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(37)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image37_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk38">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image38">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{ZSYD_241218_02}"/>
+        <Property Name="PushedImage" Value="set:KJRK_24 image:CJX_3"/>
+        <Property Name="NormalImage" Value="set:KJRK_24 image:CJX_2"/>
+        <Property Name="HoverImage" Value="set:KJRK_24 image:CJX_1"/>
+        <Property Name="DisabledImage" Value="set:KJRK_24 image:CJX_4"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(38)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image38_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk39">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image39">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{JOMY_20250403_36}"/>
+        <Property Name="PushedImage" Value="set:KJRK_11 image:FC_WarmUp_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_11 image:FC_WarmUp_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_11 image:FC_WarmUp_Hover"/>
+        <Property Name="DisabledImage" Value="set:KJRK_11 image:FC_WarmUp_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(39)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image39_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk40">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image40">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{JOMY_20250403_36}"/>
+        <Property Name="PushedImage" Value="set:KJRK_25 image:CBG_P"/>
+        <Property Name="NormalImage" Value="set:KJRK_25 image:CBG_N"/>
+        <Property Name="HoverImage" Value="set:KJRK_25 image:CBG_H"/>
+        <Property Name="DisabledImage" Value="set:KJRK_25 image:CBG_D"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(40)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image40_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk41">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image41">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{WGFC_250509_01}"/>
+        <Property Name="PushedImage" Value="set:KJRK_25 image:CJG_P"/>
+        <Property Name="NormalImage" Value="set:KJRK_25 image:CJG_N"/>
+        <Property Name="HoverImage" Value="set:KJRK_25 image:CJG_H"/>
+        <Property Name="DisabledImage" Value="set:KJRK_25 image:CJG_D"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(41)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image41_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk42">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image42">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{XFFL_250522_01}"/>
+        <Property Name="PushedImage" Value="set:KJRK_24 image:FQXZ_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_24 image:FQXZ_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_24 image:FQXZ_Hover"/>
+        <Property Name="DisabledImage" Value="set:KJRK_24 image:FQXZ_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(42)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image42_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk43">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image43">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{WGFC_250509_01}"/>
+        <Property Name="PushedImage" Value="set:KJRK_27 image:QXSQHJ_P"/>
+        <Property Name="NormalImage" Value="set:KJRK_27 image:QXSQHJ_N"/>
+        <Property Name="HoverImage" Value="set:KJRK_27 image:QXSQHJ_H"/>
+        <Property Name="DisabledImage" Value="set:KJRK_27 image:QXSQHJ_D"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(43)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image43_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk44">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image44">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{CTCJ_20250703_43}"/>
+        <Property Name="PushedImage" Value="set:KJRK_26 image:ZDQY_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_26 image:ZDQY_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_26 image:ZDQY_Hover"/>
+        <Property Name="DisabledImage" Value="set:KJRK_26 image:ZDQY_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(44)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image44_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk45">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image45">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{QCXY_250704_02}"/>
+        <Property Name="PushedImage" Value="set:KJRK_26 image:ZDXL_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_26 image:ZDXL_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_26 image:ZDXL_Hover"/>
+        <Property Name="DisabledImage" Value="set:KJRK_26 image:ZDXL_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(45)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image45_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk46">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image46">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{DFYD_250716_02}"/>
+        <Property Name="PushedImage" Value="set:KJRK_28 image:WJLT_P"/>
+        <Property Name="NormalImage" Value="set:KJRK_28 image:WJLT_N"/>
+        <Property Name="HoverImage" Value="set:KJRK_28 image:WJLT_H"/>
+        <Property Name="DisabledImage" Value="set:KJRK_28 image:WJLT_D"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(46)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image46_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk47">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image47">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{}"/>
+        <Property Name="PushedImage" Value="set:KJRK_12 image:ZhouNian_Shop_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_12 image:ZhouNian_Shop_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_12 image:ZhouNian_Shop_Hover"/>
+        <Property Name="DisabledImage" Value="set:KJRK_12 image:ZhouNian_Shop_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(47)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image47_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk48">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image48">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{}"/>
+        <Property Name="PushedImage" Value="set:KJRK_21 image:XXQLF_Pushed"/>
+        <Property Name="NormalImage" Value="set:KJRK_21 image:XXQLF_Normal"/>
+        <Property Name="HoverImage" Value="set:KJRK_21 image:XXQLF_Hover"/>
+        <Property Name="DisabledImage" Value="set:KJRK_16 image:XXQLF_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(48)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image48_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk49">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image49">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="Tooltip" Value="#{ZBZB_250902_01}"/>
+        <Property Name="PushedImage" Value="set:KJRK_28 image:ZBSZB_P"/>
+        <Property Name="NormalImage" Value="set:KJRK_28 image:ZBSZB_N"/>
+        <Property Name="HoverImage" Value="set:KJRK_28 image:ZBSZB_H"/>
+        <Property Name="DisabledImage" Value="set:KJRK_28 image:ZBSZB_D"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="MouseEnter" Function="PlayerQuicklyEnter_JBSLiveMouseEnter();" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(49)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image49_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk50">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image50">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="PushedImage" Value="set:KJRK_29 image:XSTP_P"/>
+        <Property Name="NormalImage" Value="set:KJRK_29 image:XSTP_N"/>
+        <Property Name="HoverImage" Value="set:KJRK_29 image:XSTP_H"/>
+        <Property Name="DisabledImage" Value="set:KJRK_29 image:XSTP_D"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(50)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image50_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk51">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image51">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="PushedImage" Value="set:KJRK_29 image:JHQH_P"/>
+        <Property Name="NormalImage" Value="set:KJRK_29 image:JHQH_N"/>
+        <Property Name="HoverImage" Value="set:KJRK_29 image:JHQH_H"/>
+        <Property Name="DisabledImage" Value="set:KJRK_29 image:JHQH_D"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(51)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image51_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk52">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image52">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="PushedImage" Value="set:KJRK_28 image:XYTZ_P"/>
+        <Property Name="NormalImage" Value="set:KJRK_28 image:XYTZ_N"/>
+        <Property Name="HoverImage" Value="set:KJRK_28 image:XYTZ_H"/>
+        <Property Name="DisabledImage" Value="set:KJRK_28 image:XYTZ_D"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(52)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image52_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="PlayerQuicklyEnter_Bk54">
+      <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.000000,0.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_AnimateButton" Name="PlayerQuicklyEnter_Image54">
+        <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,49.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="PushedImage" Value="set:KJRK_30 image:JQKL_P"/>
+        <Property Name="NormalImage" Value="set:KJRK_30 image:JQKL_N"/>
+        <Property Name="HoverImage" Value="set:KJRK_30 image:JQKL_H"/>
+        <Property Name="DisabledImage" Value="set:KJRK_30 image:JQKL_D"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="PlayerQuicklyEnter_Clicked(54)" />
+        <Window Type="TLBB_StaticImageNULL" Name="PlayerQuicklyEnter_Image54_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}" />
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

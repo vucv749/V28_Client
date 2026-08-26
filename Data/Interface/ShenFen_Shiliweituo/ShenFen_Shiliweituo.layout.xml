@@ -1,0 +1,140 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="ShenFen_Shiliweituo_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,460.000000},{0.000000,410.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-230.000000},{0.500000,-205.000000}}"/>
+    <Event Name="Hidden" Function="ShenFen_Shiliweituo_OnHiden();" />
+    <Window Type="TLBB_DragTitle" Name="ShenFen_Shiliweituo_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:40.000000 y:4.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="ShenFen_Shiliweituo_Frame" />
+      <Window Type="TLBB_SimpleText" Name="ShenFen_Shiliweituo_Title">
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SZSW_231228_12}" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="ShenFen_Shiliweituo_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonHelp" />
+      <Event Name="Clicked" Function='ShenFen_Shiliweituo_Help_Clicked()' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="ShenFen_Shiliweituo_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="ShenFen_Shiliweituo_Close();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="ShenFen_Shiliweituo_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-37.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,28.000000}}"/>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShenFen_Shiliweituo_Info">
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,8.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,110.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SZSW_231228_13}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShenFen_Shiliweituo_Text1">
+        <Property Name="UnifiedSize" Value="{{0.500000,-2.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,120.000000}}"/>
+        <Property Name="Text" Value="#{SZSW_231228_14}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShenFen_Shiliweituo_Text2">
+        <Property Name="UnifiedSize" Value="{{0.500000,-2.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,120.000000}}"/>
+        <Property Name="Text" Value="#{SZSW_231228_15}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShenFen_Shiliweituo_Text3">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,145.000000}}"/>
+        <Property Name="Text" Value="#{SZSW_231228_16}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShenFen_Shiliweituo_Text4">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,170.000000}}"/>
+        <Property Name="Text" Value="#{SZSW_231228_17}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShenFen_Shiliweituo_Text5">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,195.000000}}"/>
+        <Property Name="Text" Value="#{SZSW_231228_18}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShenFen_Shiliweituo_Info2">
+        <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-188.000000},{1.000000,-120.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SZSW_231228_19}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="ShenFen_Shiliweituo_Object">
+        <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-15.000000},{1.000000,-135.000000}}"/>
+        <Property Name="DragAcceptName" Value="G170" />
+        <Property Name="DraggingEnabled" Value="True" />
+        <Event Name="RBClicked" Function="ShenFen_Shiliweituo_Resume_Equip();" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShenFen_Shiliweituo_Info3">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,32.000000},{1.000000,-120.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_ButtonHelp" Name="ShenFen_Shiliweituo_Bk2_Btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,410.000000},{1.000000,-140.000000}}"/>
+        <Property Name="Text" Value="TLBB_ButtonHelp"/>
+        <Event Name="Clicked" Function="NewWuhunSkill_SaveChange_OK();" />
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShenFen_Shiliweituo_Text6">
+        <Property Name="UnifiedSize" Value="{{0.500000,-2.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-60.000000}}"/>
+        <Property Name="Text" Value="#{SZSW_231228_20}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShenFen_Shiliweituo_Text7">
+        <Property Name="UnifiedSize" Value="{{0.500000,-2.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{1.000000,-60.000000}}"/>
+        <Property Name="Text" Value="#{SZSW_231228_21}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="ShenFen_Shiliweituo_Blank">
+        <Property Name="UnifiedSize" Value="{{1.000000,-85.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-30.000000}}"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="ShenFen_Shiliweituo_OK">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-30.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_557}" />
+        <Event Name="Clicked" Function="ShenFen_Shiliweituo_OK_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="ShenFen_Shiliweituo_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-30.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_542}" />
+        <Event Name="Clicked" Function="ShenFen_Shiliweituo_Close();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="Huoyuezhiduixian_Frame">
+    <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.150000,-53.000004}" />
+    <Property Name="AbsoluteSize" Value="w:256.000000 h:226.000000" />
+    <Event Name="Hidden" Function="Huoyuezhiduixian_Close()"/>
+    <Window Type="TLBB_DragTitle" Name="Huoyuezhiduixian_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="Huoyuezhiduixian_Frame" />
+      <Property Name="Text" Value="#{XHYZ_XML_4}" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Huoyuezhiduixian_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*HuoyuezhiDuixian&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Huoyuezhiduixian_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="Huoyuezhiduixian_Cancel_Clicked();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Huoyuezhiduixian_Function_Frame">
+      <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_SimpleText" Name="Huoyuezhiduixian_Text2">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,60.000000}}"/>
+        <Property Name="Text" Value="#{XHYZ_XML_6}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_EditBoxNormal" Name="Huoyuezhiduixian_Moral_Value">
+        <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,80.000000}}"/>
+        <Property Name="MaxTextLength" Value="4" />
+        <Property Name="ValidationString" Value="[0-9]*" />
+        <Event Name="TextChanged" Function="Huoyuezhiduixian_CheckIfOK(1);" />
+        <Event Name="MouseLClick" Function="Huoyuezhiduixian_ResetSelect(1);"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Huoyuezhiduixian_Moral_Value_Icon">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,82.000000},{0.000000,82.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Button2 image:Icon_GoldCoin"/>
+      </Window>
+      <Window Type="TLBB_EditBoxNormal" Name="Huoyuezhiduixian_Moral_Value2">
+        <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,80.000000}}"/>
+        <Property Name="MaxTextLength" Value="2" />
+        <Property Name="ValidationString" Value="[0-9]*" />
+        <Event Name="TextChanged" Function="Huoyuezhiduixian_CheckIfOK(2);" />
+        <Event Name="MouseLClick" Function="Huoyuezhiduixian_ResetSelect(2);"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Huoyuezhiduixian_Moral_Value_Icon2">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,132.000000},{0.000000,82.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Button2 image:Icon_SilverCoin"/>
+      </Window>
+      <Window Type="TLBB_EditBoxNormal" Name="Huoyuezhiduixian_Moral_Value3">
+        <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,80.000000}}"/>
+        <Property Name="MaxTextLength" Value="2" />
+        <Property Name="ValidationString" Value="[0-9]*" />
+        <Event Name="TextChanged" Function="Huoyuezhiduixian_CheckIfOK(3);" />
+        <Event Name="MouseLClick" Function="Huoyuezhiduixian_ResetSelect(3);"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Huoyuezhiduixian_Moral_Value_Icon3">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,182.000000},{0.000000,82.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Button2 image:Icon_CopperCoin"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Huoyuezhiduixian_Max">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.000000,81.000000}}"/>
+        <Property Name="Text" Value="#{INTERFACE_XML_903}" />
+        <Event Name="Clicked" Function="Huoyuezhiduixian_Max_Clicked();" />
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Huoyuezhiduixian_Text3">
+        <Property Name="AbsolutePosition" Value="x:0.000000 y:105.000000" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{XHYZ_XML_7}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Huoyuezhiduixian_Text1">
+        <Property Name="AbsolutePosition" Value="x:0.000000 y:126.000000" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{XHYZ_XML_8}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Huoyuezhiduixian_Text4">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{XHYZ_XML_5}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="Huoyuezhiduixian_Blank">
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Huoyuezhiduixian_OK">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{HYZ_091118_19}" />
+        <Event Name="Clicked" Function="Huoyuezhiduixian_OK_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Huoyuezhiduixian_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_542}" />
+        <Event Name="Clicked" Function="Huoyuezhiduixian_Cancel_Clicked();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

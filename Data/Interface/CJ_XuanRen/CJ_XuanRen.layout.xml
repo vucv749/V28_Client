@@ -1,0 +1,253 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame6" Name="CJ_XuanRen_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,550.000000},{0.000000,430.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-275.000000},{0.500000,-220.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="CJ_XuanRen_Title">
+      <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+      <Property Name="Text" Value="#{TLCJ_20240709_177}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="CJ_XuanRen_Frame"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="CJ_XuanRen_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-62.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,26.000000}}"/>
+      <Window Type="DefaultWindow" Name="CJ_XuanRen_TimeBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{1.000000,-30.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="CJ_XuanRen_Time_ClockImg">
+          <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,174.000000},{0.500000,-7.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:DuoBao1 image:DuoBao1_MiniTime"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="CJ_XuanRen_Time_Client">
+          <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-68.000000},{0.500000,-8.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="CJ_XuanRen_Time_Text">
+            <Property Name="UnifiedSize" Value="{{0.750000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{TLCJ_20240709_244}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+          </Window>
+          <Window Type="TLBB_StopWatch" Name="CJ_XuanRen_Time_StopWatch">
+            <Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.750000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonMenPaiSelect" Name="CJ_XuanRen_Select_1">
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,330.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-261.000000},{0.000000,6.000000}}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="CJ_XuanRen_Select(1);"/>
+        <Window Type="DefaultWindow" Name="CJ_XuanRen_SkillBK_1">
+          <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,86.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,244.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ActionButton" Name="CJ_XuanRen_SkillBK_1_SkillActionBtn_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-77.000000},{0.000000,6.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="CJ_XuanRen_SkillBK_1_SkillActionBtn_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-37.000000},{0.000000,6.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="CJ_XuanRen_SkillBK_1_SkillActionBtn_3">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,3.000000},{0.000000,6.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="CJ_XuanRen_SkillBK_1_SkillActionBtn_4">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,43.000000},{0.000000,6.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="CJ_XuanRen_SkillBK_1_SkillActionBtn_5">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-77.000000},{0.000000,46.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="CJ_XuanRen_SkillBK_1_SkillActionBtn_6">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-37.000000},{0.000000,46.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="CJ_XuanRen_SkillBK_1_SkillActionBtn_7">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,3.000000},{0.000000,46.000000}}"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonMenPaiSelect" Name="CJ_XuanRen_Select_2">
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,330.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-85.000000},{0.000000,6.000000}}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="CJ_XuanRen_Select(2);"/>
+        <Window Type="DefaultWindow" Name="CJ_XuanRen_SkillBK_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,86.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,244.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ActionButton" Name="CJ_XuanRen_SkillBK_2_SkillActionBtn_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-77.000000},{0.000000,6.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="CJ_XuanRen_SkillBK_2_SkillActionBtn_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-37.000000},{0.000000,6.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="CJ_XuanRen_SkillBK_2_SkillActionBtn_3">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,3.000000},{0.000000,6.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="CJ_XuanRen_SkillBK_2_SkillActionBtn_4">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,43.000000},{0.000000,6.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="CJ_XuanRen_SkillBK_2_SkillBK_2_SkillActionBtn_5">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-77.000000},{0.000000,46.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="CJ_XuanRen_SkillBK_2_SkillActionBtn_6">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-37.000000},{0.000000,46.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="CJ_XuanRen_SkillBK_2_SkillActionBtn_7">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,3.000000},{0.000000,46.000000}}"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonMenPaiSelect" Name="CJ_XuanRen_Select_3">
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,330.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,91.000000},{0.000000,6.000000}}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="CJ_XuanRen_Select(3);"/>
+        <Window Type="DefaultWindow" Name="CJ_XuanRen_SkillBK_3">
+          <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,86.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,244.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ActionButton" Name="CJ_XuanRen_SkillBK_3_SkillActionBtn_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-77.000000},{0.000000,6.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="CJ_XuanRen_SkillBK_3_SkillActionBtn_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-37.000000},{0.000000,6.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="CJ_XuanRen_SkillBK_3_SkillActionBtn_3">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,3.000000},{0.000000,6.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="CJ_XuanRen_SkillBK_3_SkillActionBtn_4">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,43.000000},{0.000000,6.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="CJ_XuanRen_SkillBK_3_SkillBK_2_SkillActionBtn_5">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-77.000000},{0.000000,46.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="CJ_XuanRen_SkillBK_3_SkillActionBtn_6">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-37.000000},{0.000000,46.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="CJ_XuanRen_SkillBK_3_SkillActionBtn_7">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,3.000000},{0.000000,46.000000}}"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="CJ_XuanRen_Content_1">
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,354.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-261.000000},{0.000000,6.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_Frame_Lace2" Name="CJ_XuanRen_ContentBK_1">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,330.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CJ_XuanRen_Img_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ModifyMenPai image:Modify_GuiGu"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace2" Name="CJ_XuanRen_ContentTitle_1">
+          <Property Name="Visible" Value="False"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-24.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_SimpleText" Name="CJ_XuanRen_ContentTitle_Info_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Text" Value="#{TLCJ_20240709_178}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="CJ_XuanRen_Content_2">
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,354.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-85.000000},{0.000000,6.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_Frame_Lace2" Name="CJ_XuanRen_ContentBK_2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CJ_XuanRen_Img_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ModifyMenPai14 image:Modify_TaoHuaDao"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace2" Name="CJ_XuanRen_ContentTitle_2">
+          <Property Name="Visible" Value="False"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-24.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_SimpleText" Name="CJ_XuanRen_ContentTitle_Info_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Text" Value="#{TLCJ_20240709_178}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="CJ_XuanRen_Content_3">
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,354.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,91.000000},{0.000000,6.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_Frame_Lace2" Name="CJ_XuanRen_ContentBK_3">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,330.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CJ_XuanRen_Img_3">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ModifyMenPai3 image:Modify_TianShan"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace2" Name="CJ_XuanRen_ContentTitle_3">
+          <Property Name="Visible" Value="False"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-24.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_SimpleText" Name="CJ_XuanRen_ContentTitle_Info_3">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Text" Value="#{TLCJ_20240709_178}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="CJ_XuanRen_OK">
+      <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,22.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.50000,-40.000000},{1.000000,-28.000000}}"/>
+      <Property Name="Text" Value="#{TLCJ_20240709_140}"/>
+      <Event Name="Clicked" Function="CJ_XuanRen_OK();"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Tooltip" Value="#{TLCJ_20240709_194}"/>
+    </Window>
+  </Window>
+</GUILayout>

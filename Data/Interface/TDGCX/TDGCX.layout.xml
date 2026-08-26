@@ -1,0 +1,627 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="TDGCX_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,746.000000},{0.000000,800.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-373.000000},{0.500000,-400.000000}}"/>
+    <Window Type="TLBB_MainFrameNULL" Name="TDGCX_Window1">
+      <Property Name="UnifiedSize" Value="{{0.000000,746.000000},{0.000000,547.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-373.000000},{0.500000,-260.000000}}"/>    
+      <Window Type="TLBB_HeroFrame01" Name="TDGCX_BKFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,513.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="TDGCX_BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,734.000000},{0.000000,519.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,28.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_BK"/>
+      </Window>      
+      <Window Type="TLBB_DragTitle" Name="TDGCX_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,25.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{TDCX_221220_106}"/>
+        <Property Name="Font" Value="YouYuan11.25"/>        
+        <Property Name="DragTarget" Value="TDGCX_Frame"/>
+      </Window>
+      <!-- <Window Type="TLBB_ButtonNULL" Name="TDGCX_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-95.000000},{0.000000,106.000000}}"/>
+        <Property Name="PushedImage" Value="set:FangYanHua image:FangYanHua_ClosePush"/>
+        <Property Name="NormalImage" Value="set:FangYanHua image:FangYanHua_CloseNormal"/>
+        <Property Name="HoverImage" Value="set:FangYanHua image:FangYanHua_CloseHover"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="" />
+      </Window> -->
+      <Window Type="DefaultWindow" Name="TDGCX_Client">
+        <Property Name="UnifiedSize" Value="{{0.000000,734.000000},{0.000000,519.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,28.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/> 
+        <Window Type="TLBB_SimpleText" Name="TDGCX_Info">
+          <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,65.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,350.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{TDCX_221220_107}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="TDGCX_TimeAll">
+            <Property Name="UnifiedSize" Value="{{0.000000,210.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,410.000000},{0.000000,68.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>      
+          <Window Type="TLBB_StaticImageNULL" Name="TDGCX_TimeImage">
+            <Property Name="UnifiedSize" Value="{{0.000000,210.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Time"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TDGCX_TimeText">
+            <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,5.000000}}"/>
+            <Property Name="Text" Value="#{FYH_220407_56}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_StopWatch" Name="TDGCX_Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,132.000000},{0.000000,4.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="00:00"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Event Name="ReachedZero" Function="TDGCX_TimeOut()" />
+          </Window>
+        </Window>  
+
+        <Window Type="DefaultWindow" Name="TDGCX_TextAll">
+          <Property Name="UnifiedSize" Value="{{0.000000,386.000000},{0.000000,474.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,43.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/> 
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>          
+          <Window Type="DefaultWindow" Name="TDGCX_Text1">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,200.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,203.000000},{0.000000,42.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text1_BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_2 image:TDGCX_Blank1_Hover"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text1_line">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Day1_01"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>     
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text1_Wrony">
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,58.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,2.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Wrony"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>                   
+          </Window>   
+          <Window Type="DefaultWindow" Name="TDGCX_Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,200.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,251.000000},{0.000000,240.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text2_BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_2 image:TDGCX_Blank1_Hover"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text2_line">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Day1_02"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>   
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text2_Wrony">
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,58.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,2.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Wrony"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>                    
+          </Window>  
+          <Window Type="DefaultWindow" Name="TDGCX_Text3">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,200.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,51.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text3_BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_2 image:TDGCX_Blank1_Hover"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text3_line">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Day1_03"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>    
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text3_Wrony">
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,58.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,2.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Wrony"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>                   
+          </Window>  
+          <Window Type="DefaultWindow" Name="TDGCX_Text4">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,200.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.000000,248.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text4_BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_2 image:TDGCX_Blank1_Hover"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text4_line">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Day1_04"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>    
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text4_Wrony">
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,58.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,2.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Wrony"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>                   
+          </Window> 
+          <Window Type="DefaultWindow" Name="TDGCX_Text5">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,200.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,129.000000},{0.000000,61.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text5_BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_2 image:TDGCX_Blank1_Hover"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text5_line">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Day1_05"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>    
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text5_Wrony">
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,58.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,2.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Wrony"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>                   
+          </Window> 
+          <Window Type="DefaultWindow" Name="TDGCX_Text6">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,200.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,177.000000},{0.000000,258.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text6_BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_2 image:TDGCX_Blank1_Hover"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text6_line">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Day1_06"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>    
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text6_Wrony">
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,58.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,2.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Wrony"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>                   
+          </Window> 
+          <Window Type="DefaultWindow" Name="TDGCX_Text7">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,200.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,93.000000},{0.000000,70.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text7_BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_2 image:TDGCX_Blank1_Hover"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text7_line">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Day1_07"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>    
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text7_Wrony">
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,58.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,2.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Wrony"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>                   
+          </Window> 
+          <Window Type="DefaultWindow" Name="TDGCX_Text8">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,200.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,268.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text8_BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_2 image:TDGCX_Blank1_Hover"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text8_line">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Day1_08"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>    
+            <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Text8_Wrony">
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,58.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,2.000000}}"/>
+              <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Wrony"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>                   
+          </Window> 
+
+        </Window>
+
+
+
+        <Window Type="TLBB_ButtonNULL" Name="TDGCX_Btn1">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,200.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,633.000000},{0.000000,136.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="DisabledImage" Value="set:TDGCX_1 image:TDGCX_Btn1_Hover"/>
+          <Property Name="PushedImage" Value="set:TDGCX_1 image:TDGCX_Btn1_Pushed"/>
+          <Property Name="NormalImage" Value="set:TDGCX_1 image:TDGCX_Btn1_Normal"/>
+          <Property Name="HoverImage" Value="set:TDGCX_1 image:TDGCX_Btn1_Hover"/>
+          <Property Name="Text" Value=""/>
+          <Event Name="Clicked" Function="TDGCX_OnChooseWordClick(1)"/>        
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="TDGCX_Btn2">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,200.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,584.000000},{0.000000,181.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="DisabledImage" Value="set:TDGCX_1 image:TDGCX_Btn2_Hover"/>
+          <Property Name="PushedImage" Value="set:TDGCX_1 image:TDGCX_Btn2_Pushed"/>
+          <Property Name="NormalImage" Value="set:TDGCX_1 image:TDGCX_Btn2_Normal"/>
+          <Property Name="HoverImage" Value="set:TDGCX_1 image:TDGCX_Btn2_Hover"/>
+          <Property Name="Text" Value=""/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="TDGCX_OnChooseWordClick(2)"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="TDGCX_Btn3">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,200.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,532.000000},{0.000000,131.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="DisabledImage" Value="set:TDGCX_1 image:TDGCX_Btn3_Hover"/>
+          <Property Name="PushedImage" Value="set:TDGCX_1 image:TDGCX_Btn3_Pushed"/>
+          <Property Name="NormalImage" Value="set:TDGCX_1 image:TDGCX_Btn3_Normal"/>
+          <Property Name="HoverImage" Value="set:TDGCX_1 image:TDGCX_Btn3_Hover"/>
+          <Property Name="Text" Value=""/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="TDGCX_OnChooseWordClick(3)"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="TDGCX_Btn4">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,200.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,480.000000},{0.000000,177.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="DisabledImage" Value="set:TDGCX_1 image:TDGCX_Btn4_Hover"/>
+          <Property Name="PushedImage" Value="set:TDGCX_1 image:TDGCX_Btn4_Pushed"/>
+          <Property Name="NormalImage" Value="set:TDGCX_1 image:TDGCX_Btn4_Normal"/>
+          <Property Name="HoverImage" Value="set:TDGCX_1 image:TDGCX_Btn4_Hover"/>
+          <Property Name="Text" Value=""/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="TDGCX_OnChooseWordClick(4)"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="TDGCX_Btn5">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,200.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,429.000000},{0.000000,134.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="DisabledImage" Value="set:TDGCX_1 image:TDGCX_Btn5_Hover"/>
+          <Property Name="PushedImage" Value="set:TDGCX_1 image:TDGCX_Btn5_Pushed"/>
+          <Property Name="NormalImage" Value="set:TDGCX_1 image:TDGCX_Btn5_Normal"/>
+          <Property Name="HoverImage" Value="set:TDGCX_1 image:TDGCX_Btn5_Hover"/>
+          <Property Name="Text" Value=""/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="TDGCX_OnChooseWordClick(5)"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="TDGCX_Btn6">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,200.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,375.000000},{0.000000,176.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="DisabledImage" Value="set:TDGCX_1 image:TDGCX_Btn6_Hover"/>
+          <Property Name="PushedImage" Value="set:TDGCX_1 image:TDGCX_Btn6_Pushed"/>
+          <Property Name="NormalImage" Value="set:TDGCX_1 image:TDGCX_Btn6_Normal"/>
+          <Property Name="HoverImage" Value="set:TDGCX_1 image:TDGCX_Btn6_Hover"/>
+          <Property Name="Text" Value=""/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="TDGCX_OnChooseWordClick(6)"/>
+        </Window>
+
+      </Window>
+
+      <!-- <Window Type="TLBB_ButtonNULL" Name="TDGCX_Btn_Help">
+        <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-144.000000},{0.500000,-98.000000}}"/>
+        <Property Name="PushedImage" Value="set:ZNQ_ChouJiang image:ZNQ_ChouJiang_Help_P"/>
+        <Property Name="NormalImage" Value="set:ZNQ_ChouJiang image:ZNQ_ChouJiang_Help_N"/>
+        <Property Name="HoverImage" Value="set:ZNQ_ChouJiang image:ZNQ_ChouJiang_Help_H"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="TDGCX_Btn_OnHelpClicked()"/>
+      </Window> -->
+      <Window Type="TLBB_ButtonNULL" Name="TDGCX_Btn_OK">
+        <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-294.000000},{1.000000,-90.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>        
+        <Property Name="PushedImage" Value="set:TDGCX_1 image:TDGCX_Ok_Pushed"/>
+        <Property Name="NormalImage" Value="set:TDGCX_1 image:TDGCX_Ok_Normal"/>
+        <Property Name="HoverImage" Value="set:TDGCX_1 image:TDGCX_Ok_Hover"/>
+        <Property Name="Tooltip" Value="#{TDCX_221220_111}"/>
+        <Event Name="Clicked" Function="TDGCX_OnSubmitBtnClicked()"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="TDGCX_OK_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,294.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,378.000000},{0.000000,425.000000}}"/>
+        <Property Name="Text" Value="#{TDCX_221220_109}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="TDGCX_Info2_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,294.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,390.000000},{0.000000,124.000000}}"/>
+        <Property Name="Text" Value="#{TDCX_221220_116}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>      
+    </Window>  
+
+    <Window Type="TLBB_MainFrameNULL" Name="TDGCX_Window2">
+      <Property Name="UnifiedSize" Value="{{0.000000,402.000000},{0.000000,770.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-201.000000},{0.500000,-420.000000}}"/> 
+      <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Window2_BK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:TDGCX_3 image:TDGCX_BK2"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>   
+      <Window Type="DefaultWindow" Name="TDGCX_Window2_TextAll">
+        <Property Name="UnifiedSize" Value="{{0.000000,386.000000},{0.000000,474.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,294.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/> 
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>          
+        <Window Type="DefaultWindow" Name="TDGCX_Window2_Text1">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,200.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,203.000000},{0.000000,42.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Window2_Text1_line">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Day1_01"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>                      
+        </Window>   
+        <Window Type="DefaultWindow" Name="TDGCX_Window2_Text2">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,200.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,251.000000},{0.000000,240.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Window2_Text2_line">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Day1_02"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>                     
+        </Window>  
+        <Window Type="DefaultWindow" Name="TDGCX_Window2_Text3">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,200.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,51.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Window2_Text3_line">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Day1_03"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>                      
+        </Window>  
+        <Window Type="DefaultWindow" Name="TDGCX_Window2_Text4">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,200.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.000000,248.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Window2_Text4_line">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Day1_04"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>                     
+        </Window> 
+        <Window Type="DefaultWindow" Name="TDGCX_Window2_Text5">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,200.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,129.000000},{0.000000,61.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Window2_Text5_line">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Day1_05"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>                     
+        </Window> 
+        <Window Type="DefaultWindow" Name="TDGCX_Window2_Text6">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,200.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,177.000000},{0.000000,258.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Window2_Text6_line">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Day1_06"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>                     
+        </Window> 
+        <Window Type="DefaultWindow" Name="TDGCX_Window2_Text7">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,200.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,93.000000},{0.000000,70.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Window2_Text7_line">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Day1_07"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>                     
+        </Window> 
+        <Window Type="DefaultWindow" Name="TDGCX_Window2_Text8">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,200.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,268.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TDGCX_Window2_Text8_line">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:TDGCX_1 image:TDGCX_Day1_08"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>                      
+        </Window> 
+
+      </Window>
+ 
+
+    </Window> 
+
+
+  </Window>
+
+
+</GUILayout>

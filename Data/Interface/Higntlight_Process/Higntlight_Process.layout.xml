@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrameNULL" Name="Higntlight_Process_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,382.000000},{0.000000,86.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-191.000000},{0.000000,140.000000}}"/>
+      <Event Name="Hidden" Function="Higntlight_Process_OnHiden();"/>
+      <Window Type="DefaultWindow" Name="Higntlight_Process_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="DefaultWindow" Name="Higntlight_Process_Img">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="Higntlight_Process_Name">
+            <Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,53.000000},{0.000000,47.000000}}"/>
+            <Property Name="Text" Value="角色最长六字"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_Animate" Name="Higntlight_Process_AnimateNuhuo">
+            <Property Name="UnifiedSize" Value="{{0.000000,382.000000},{0.000000,86.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Higntlight_mingjiao"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>  
+          <Window Type="TLBB_Animate" Name="Higntlight_Process_AnimateXishan">
+            <Property Name="UnifiedSize" Value="{{0.000000,382.000000},{0.000000,86.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Higntlight_xiaoyao"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>                  
+          <Window Type="TLBB_StaticImageNULL" Name="Higntlight_Process_TitleNuhuo">
+            <Property Name="UnifiedSize" Value="{{0.000000,382.000000},{0.000000,86.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Higntlight image:mingjiao"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Higntlight_Process_TitleXishan">
+            <Property Name="UnifiedSize" Value="{{0.000000,382.000000},{0.000000,86.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Higntlight image:xiaoyao"/>
+          </Window>                  
+        </Window>                        
+      </Window>
+    </Window>
+ </GUILayout>

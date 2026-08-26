@@ -1,0 +1,89 @@
+﻿<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection2" Name="XiaLv_JinCheng_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,412.000000},{0.000000,230.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-412.000000},{0.500000,40.000000}}"/>
+    <Property Name="RiseOnClick" Value="False"/>
+    <Property Name="AttachEnabled" Value="True"/>
+    <Window Type="TLBB_DragTitle" Name="XiaLv_JinCheng_DragTitle">
+      <Property Name="UnifiedSize" Value="{{0.000000,402.000000},{0.000000,100.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-201.000000},{0.000000,10.000000}}"/>
+      <Property Name="DragTarget" Value="XiaLv_JinCheng_Frame"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="XiaLv_JinCheng_BK">
+      <Property Name="UnifiedSize" Value="{{0.000000,402.000000},{0.000000,100.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-201.000000},{0.000000,10.000000}}"/>
+      <Property Name="Image" Value="set:Xialv02 image:XiaLv_MarryStatus_StageBK1"/>
+      <Window Type="TLBB_SimpleText" Name="XiaLv_JinCheng_Man">
+        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,50.000000}}"/>
+        <Property Name="Text" Value="#{JHYH_230330_144}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="XiaLv_JinCheng_Woman">
+        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,60.000000},{0.000000,50.000000}}"/>
+        <Property Name="Text" Value="#{JHYH_230330_145}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="XiaLv_JinCheng_BK2">
+      <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,48.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-170.000000},{0.000000,110.000000}}"/>
+      <Property Name="Image" Value="set:Xialv02 image:XiaLv_MarryStatus_StageBK2"/>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaLv_JinCheng_NowTime2">
+        <Property Name="UnifiedSize" Value="{{0.000000,148.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-74.000000},{0.000000,24.000000}}"/>
+        <Property Name="Text" Value="#{JHYH_230330_147}"/>
+        <Property Name="Image" Value="set:Xialv02 image:XiaLv_MarryStatus_Stage1"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_Affection_ButtonCommon" Name="XiaLv_JinCheng_Get">
+      <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-140.000000},{1.000000,-56.000000}}"/>
+      <Property Name="Text" Value="#{JHYH_230330_154}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function=""/>
+    </Window>
+    <Window Type="TLBB_Affection_ButtonCommon" Name="XiaLv_JinCheng_Get2">
+      <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-56.000000}}"/>
+      <Property Name="Text" Value="#{JHYH_230330_154}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="TLBB_Affection_ButtonCommon" Name="XiaLv_JinCheng_OK">
+      <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,60.000000},{1.000000,-56.000000}}"/>
+      <Property Name="Text" Value="#{JHYH_230330_155}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>  
+    <Window Type="TLBB_ButtonNULL" Name="XiaLv_JinCheng_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-56.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Help_Pushed"/>
+      <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Help_Normal"/>
+      <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Help_Hover"/>
+      <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Help_Disabled"/>
+    </Window>
+    <Window Type="TLBB_SimpleText" Name="XiaLv_JinCheng_XinNiangInfo">
+      <Property Name="UnifiedSize" Value="{{1.000000,-84.000000},{0.000000,50.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{1.000000,-68.000000}}"/>
+      <Property Name="Text" Value="#{JHYH_230330_157}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+    </Window>
+    <Window Type="TLBB_SimpleText" Name="XiaLv_JinCheng_BingKeInfo">
+      <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,18.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.000000,-36.000000}}"/>
+      <Property Name="Text" Value="#{JHYH_230330_158}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame1" Name="ZhouNian_Shop_CurrencyBuy_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,312.000000},{0.000000,228.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-156.000000},{0.500000,-120.000000}}"/>
+		<Property Name="AlwaysOnTop" Value="True"/>
+		<Event Name="Hidden" Function="ZhouNian_Shop_CurrencyBuy_Close_Clicked();"/>
+		<Window Type="TLBB_DragTitle" Name="ZhouNian_Shop_CurrencyBuy_DragTitle">
+			<Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+			<Property Name="Text" Value="#{WYSD_20250807_43}"/>
+			<Property Name="Font" Value="YouYuan11.25"/>
+			<Property Name="DragTarget" Value="ZhouNian_Shop_CurrencyBuy_Frame"/>
+		</Window>
+		<Window Type="TLBB_ButtonHelp" Name="ZhouNian_Shop_CurrencyBuy_Help">
+			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+		</Window>
+		<Window Type="TLBB_ButtonClose" Name="ZhouNian_Shop_CurrencyBuy_Close">
+			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Event Name="Clicked" Function="ZhouNian_Shop_CurrencyBuy_Close_Clicked();"/>
+		</Window>
+		<Window Type="DefaultWindow" Name="ZhouNian_Shop_CurrencyBuy_Client">
+			<Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-44.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+			<Property Name="RiseOnClick" Value="False"/>
+			<Window Type="TLBB_SimpleMulitiTextFrame" Name="ZhouNian_Shop_CurrencyBuy_ItemInfo">
+				<Property Name="UnifiedSize" Value="{{0.000000,295.000000},{0.000000,64.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,4.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Property Name="Text" Value="#{WYSD_20250807_44}"/>
+				<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+			</Window>
+			<Window Type="DefaultWindow" Name="ZhouNian_Shop_CurrencyBuy_BuyNumBK">
+				<Property Name="UnifiedSize" Value="{{0.000000,294.000000},{0.000000,24.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,70.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_CurrencyBuy_BuyNum_Text">
+					<Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+					<Property Name="Text" Value="#{WYSD_20250807_45}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+				</Window>
+				<Window Type="TLBB_EditBoxNormal" Name="ZhouNian_Shop_CurrencyBuy_InputNumBK">
+					<Property Name="ValidationString" Value="[0-9]*"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,105.000000},{0.500000,-10.000000}}"/>
+					<Property Name="MaxTextLength" Value="6"/>
+					<Event Name="TextChanged" Function="ZhouNian_Shop_CurrencyBuy_TextChanged();"/>
+				</Window>
+				<Window Type="TLBB_ButtonCommon" Name="ZhouNian_Shop_CurrencyBuy_Max">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.500000,-10.000000}}"/>
+					<Property Name="Text" Value="#{WYSD_20250807_46}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Event Name="Clicked" Function="ZhouNian_Shop_CurrencyBuy_CalMax();"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_SimpleTextFrame" Name="ZhouNian_Shop_CurrencyBuy_Price">
+				<Property Name="UnifiedSize" Value="{{0.000000,292.000000},{0.000000,24.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,96.000000}}"/>
+				<Property Name="Text" Value="#{WYSD_20250807_47}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_CurrencyBuy_PriceNum">
+					<Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{WYSD_20250807_49}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="HorzFormatting" Value="RightAligned"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_SimpleTextFrame" Name="ZhouNian_Shop_CurrencyBuy_Cash">
+				<Property Name="UnifiedSize" Value="{{0.000000,292.000000},{0.000000,24.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,122.000000}}"/>
+				<Property Name="Text" Value="#{WYSD_20250807_37}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_CurrencyBuy_CashNum">
+					<Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{WYSD_20250807_39}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="HorzFormatting" Value="RightAligned"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_Frame_Lace5" Name="ZhouNian_Shop_CurrencyBuy_Blank">
+				<Property Name="UnifiedSize" Value="{{1.000000,-83.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-31.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="ZhouNian_Shop_CurrencyBuy_Submit">
+				<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-31.000000}}"/>
+				<Property Name="Text" Value="#{WYSD_20250807_40}"/>
+				<Event Name="Clicked" Function="ZhouNian_Shop_CurrencyBuy_OK_Clicked();"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="ZhouNian_Shop_CurrencyBuy_Cancel">
+				<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-31.000000}}"/>
+				<Property Name="Text" Value="#{WYSD_20250807_34}"/>
+				<Event Name="Clicked" Function="ZhouNian_Shop_CurrencyBuy_Close_Clicked();"/>
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

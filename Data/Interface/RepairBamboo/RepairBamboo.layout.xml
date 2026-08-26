@@ -1,0 +1,214 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="RepairBamboo_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,700.000000},{0.000000,440.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-350.000000},{0.500000,-220.000000}}"/>
+    <Event Name="Hidden" Function=""/>
+    <Window Type="TLBB_HeroTitle01" Name="RepairBamboo_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,330.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-165.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="RepairBamboo_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,5.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Text" Value="#{TGX_231229_52}" />
+      <Property Name="DragTarget" Value="RepairBamboo_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose2" Name="RepairBamboo_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,9.000000}}"/>
+      <Event Name="Clicked" Function="this:Hide();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="RepairBamboo_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+      <Property Name="RiseOnClick" Value="False" />
+      <Window Type="TLBB_StaticImageNULL" Name="RepairBamboo_Frame_BK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:RepairBamboo image:BK"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="RepairBamboo_Text1">
+        <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,76.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,18.000000}}"/>
+        <Property Name="Text" Value="#{TGX_231229_53}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="RepairBamboo_Frame_Center1">
+        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,132.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,27.000000},{0.000000,286.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="DefaultWindow" Name="RepairBamboo_CUM1">
+          <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,107.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.00000,198.00000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>          
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ButtonNULL" Name="RepairBamboo_CUM1Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.000000,8.000000}}"/>
+            <Property Name="Tooltip" Value="#{TGX_231229_93}"/>
+            <Property Name="PushedImage" Value="set:RepairBamboo image:Gift_Pushed"/>            
+            <Property Name="NormalImage" Value="set:RepairBamboo image:Gift_Normal"/>
+            <Property Name="HoverImage" Value="set:RepairBamboo image:Gift_Hover"/>
+            <Property Name="DisabledImage" Value="set:RepairBamboo image:Gift_Disabled"/>
+            <Event Name="Clicked" Function="RepairBamboo_GetBouns_Clicked(1);"/>
+            <Window Type="TLBB_StaticImageNULL" Name="RepairBamboo_CUM1_tips">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>                
+          </Window>          
+          <Window Type="TLBB_StaticImageNULL" Name="RepairBamboo_CUM1BtnOK">
+            <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-39.000000},{0.500000,-24.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:RepairBamboo image:Got"/>
+          </Window>  
+          <Window Type="TLBB_SimpleText" Name="RepairBamboo_CUM1Text">
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,-2.000000},{1.000000,-20.000000}}"/>
+            <Property Name="Text" Value="#{TGX_231229_92}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>            
+        </Window> 
+        <Window Type="DefaultWindow" Name="RepairBamboo_CUM2">
+          <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,107.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.00000,289.00000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>          
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ButtonNULL" Name="RepairBamboo_CUM2Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,66.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-42.000000},{0.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{TGX_231229_94}"/>
+            <Property Name="PushedImage" Value="set:RepairBamboo image:Gift2_Pushed"/>
+            <Property Name="NormalImage" Value="set:RepairBamboo image:Gift2_Normal"/>
+            <Property Name="HoverImage" Value="set:RepairBamboo image:Gift2_Hover"/>
+            <Property Name="DisabledImage" Value="set:RepairBamboo image:Gift2_Disabled"/>    
+            <Event Name="Clicked" Function="RepairBamboo_GetBouns_Clicked(2);"/>
+            <Window Type="TLBB_StaticImageNULL" Name="RepairBamboo_CUM2_tips">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.000000,2.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>               
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="RepairBamboo_CUM2BtnOK">
+            <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.500000,-24.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:RepairBamboo image:Got"/>
+          </Window>            
+          <Window Type="TLBB_SimpleText" Name="RepairBamboo_CUM2Text">
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,-2.000000},{1.000000,-20.000000}}"/>
+            <Property Name="Text" Value="#{TGX_231229_92}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>            
+        </Window>   
+        <Window Type="DefaultWindow" Name="RepairBamboo_CUM3">
+          <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,107.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.00000,448.00000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>          
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ButtonNULL" Name="RepairBamboo_CUM3Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,66.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-42.000000},{0.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{TGX_231229_95}"/>
+            <Property Name="PushedImage" Value="set:RepairBamboo image:Gift2_Pushed"/>
+            <Property Name="NormalImage" Value="set:RepairBamboo image:Gift2_Normal"/>
+            <Property Name="HoverImage" Value="set:RepairBamboo image:Gift2_Hover"/>
+            <Property Name="DisabledImage" Value="set:RepairBamboo image:Gift2_Disabled"/>               
+            <Event Name="Clicked" Function="RepairBamboo_GetBouns_Clicked(3);"/>
+            <Window Type="TLBB_StaticImageNULL" Name="RepairBamboo_CUM3_tips">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.000000,2.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>               
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="RepairBamboo_CUM3BtnOK"> 
+            <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.500000,-24.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:RepairBamboo image:Got"/>
+          </Window>            
+          <Window Type="TLBB_SimpleText" Name="RepairBamboo_CUM3Text">
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,-2.000000},{1.000000,-20.000000}}"/>
+            <Property Name="Text" Value="#{TGX_231229_92}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>            
+        </Window>  
+
+        <Window Type="DefaultWindow" Name="RepairBamboo_Progressbk">
+          <Property Name="UnifiedSize" Value="{{0.000000,319.000000},{0.000000,4.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,172.000000},{0.000000,73.000000}}"/>
+          <Window Type="TLBB_ProgressPropertySpringFestival_Reward" Name="RepairBamboo_Progress">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.0000000},{0.000000,0.000000}}" />
+            <Property Name="CurrentProgress" Value="1" />
+            <Property Name="MoveSpeed" Value="1" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="RepairBamboo_BottomTextBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,56.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_SimpleText" Name="RepairBamboo_BottomText">
+            <Property Name="VerticalAlignment" Value="Centre"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,202.000000},{0.000000,29.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="Text" Value="#{TGX_231229_74}"/>
+            <Property Name="Font" Value="YouYuan9.75" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+
+</GUILayout>

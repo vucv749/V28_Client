@@ -1,0 +1,222 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection0" Name="CoupleZone_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,954.000000},{0.000000,626.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-477.000000},{0.500000,-313.000000}}"/>
+    <Event Name="Hidden" Function="CoupleZone_OnClose()"/>
+    <Window Type="DefaultWindow" Name="CoupleZone_MainFrame">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_TitleLace_Affection0" Name="CoupleZone_DragTitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,31.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_DragTitle" Name="CoupleZone_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,11.000000}}"/>
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="Text" Value="#{QLKJ_230331_30}" />
+        <Property Name="DragTarget" Value="CoupleZone_Frame"/>
+      </Window>
+      <Window Type="TLBB_ButtonHelp" Name="CoupleZone_Help">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>      
+      <Window Type="TLBB_ButtonClose" Name="CoupleZone_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+        <Event Name="Clicked" Function="CoupleZone_OnClose();" />
+      </Window>
+      <Window Type="DefaultWindow" Name="CoupleZone_Frame_Client">
+        <Property Name="UnifiedSize" Value="{{0.000000,946.000000},{0.000000,572.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,34.000000}}"/>
+
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_Image2">
+          <Property Name="UnifiedSize" Value="{{0.000000,946.000000},{0.000000,572.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>         
+          <Property Name="Image" Value="set:CoupleZone4 image:BiyiBK"/>
+        </Window>        
+        <Window Type="TLBB_NotSuperListItemCommon5" Name="CoupleZone_Client1">
+          <Property Name="UnifiedSize" Value="{{0.000000,452.000000},{0.000000,116.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-226.000000},{0.000000,416.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_Name1">
+            <Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,100.000000}}"/>
+            <Property Name="Text" Value="sdgfs"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>        
+          <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_Head1">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{0.000000,45.000000}}"/>
+            <Property Name="Image" Value="set: image:"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>    
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_Day">
+            <Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-46.000000},{0.000000,62.000000}}"/>
+            <Property Name="Text" Value="#{QLKJ_230331_37}"/>
+            <Property Name="Font" Value="YouYuan18"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>         
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>             
+          <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_Head2">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,358.000000},{0.000000,45.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set: image:"/>
+          </Window> 
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_Name2">
+            <Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,337.000000},{0.000000,100.000000}}"/>
+            <Property Name="Text" Value="dghss"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window> 
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_Date">
+            <Property Name="UnifiedSize" Value="{{0.000000,188.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-94.000000},{0.000000,95.000000}}"/>
+            <Property Name="Text" Value="#{QLKJ_230331_36}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>            
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>   
+        </Window> 
+        <Window Type="TLBB_ButtonNULL" Name="CoupleZone_Marry">
+          <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-572.000000},{0.000000,500.000000}}"/>
+          <Property Name="Tooltip" Value="#{JHYH_230330_302}"/>
+          <Property Name="PushedImage" Value="set:CoupleZone4 image:Marry_P"/>
+          <Property Name="NormalImage" Value="set:CoupleZone4 image:Marry_N"/>
+          <Property Name="HoverImage" Value="set:CoupleZone4 image:Marry_H"/>       
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="CoupleZone_OnClicked_Marry()"/>
+        </Window>          
+        <Window Type="TLBB_ButtonNULL" Name="CoupleZone_Jianghu">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,126.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-673.000000},{0.000000,136.000000}}"/>
+          <Property Name="PushedImage" Value="set:CoupleZone4 image:Hong_P"/>
+          <Property Name="NormalImage" Value="set:CoupleZone4 image:Hong_N"/>
+          <Property Name="HoverImage" Value="set:CoupleZone4 image:Hong_H"/>
+          <Property Name="DisabledImage" Value="set:CoupleZone4 image:Hong_D"/>
+          <Property Name="Tooltip" Value="#{QLKJ_230331_05}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="CoupleZone_OnClicked_Annal();"/>
+        </Window>    
+        <Window Type="TLBB_ButtonNULL" Name="CoupleZone_Calendar">
+          <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,128.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-563.000000},{0.000000,73.000000}}"/>
+          <Property Name="PushedImage" Value="set:CoupleZone4 image:Zhaomu_P"/>
+          <Property Name="NormalImage" Value="set:CoupleZone4 image:Zhaomu_N"/>
+          <Property Name="HoverImage" Value="set:CoupleZone4 image:Zhaomu_H"/>
+          <Property Name="DisabledImage" Value="set:CoupleZone4 image:Zhaomu_D"/>
+          <Property Name="Tooltip" Value="#{QLKJ_230331_03}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="CoupleZone_OnClicked_Calendar();"/>
+        </Window>  
+        <Window Type="TLBB_ButtonNULL" Name="CoupleZone_Task">
+          <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,128.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-378.000000},{0.000000,95.000000}}"/>
+          <Property Name="PushedImage" Value="set:CoupleZone4 image:Miai_P"/>
+          <Property Name="NormalImage" Value="set:CoupleZone4 image:Miai_N"/>
+          <Property Name="HoverImage" Value="set:CoupleZone4 image:Miai_H"/>
+          <Property Name="DisabledImage" Value="set:CoupleZone4 image:Miai_D"/>
+          <Property Name="Tooltip" Value="#{QLKJ_230331_06}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="CoupleZone_OnClicked_Mission();"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_Task_Tips">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>          
+        </Window>   
+        <Window Type="TLBB_ButtonNULL" Name="CoupleZone_Shop">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,130.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-263.000000},{0.000000,147.000000}}"/>
+          <Property Name="PushedImage" Value="set:CoupleZone4 image:Tongxin_P"/>
+          <Property Name="NormalImage" Value="set:CoupleZone4 image:Tongxin_N"/>
+          <Property Name="HoverImage" Value="set:CoupleZone4 image:Tongxin_H"/>
+          <Property Name="DisabledImage" Value="set:CoupleZone4 image:Tongxin_D"/>
+          <Property Name="Tooltip" Value="#{QLKJ_230331_07}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="CoupleZone_OnClicked_Shop();"/>
+        </Window>     
+        <Window Type="TLBB_ButtonNULL" Name="CoupleZone_Jinku">
+          <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,128.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,112.000000}}"/>
+          <Property Name="PushedImage" Value="set:CoupleZone4 image:Yuanyang_P"/>
+          <Property Name="NormalImage" Value="set:CoupleZone4 image:Yuanyang_N"/>
+          <Property Name="HoverImage" Value="set:CoupleZone4 image:Yuanyang_H"/>
+          <Property Name="DisabledImage" Value="set:CoupleZone4 image:Yuanyang_D"/>
+          <Property Name="Tooltip" Value="#{QLKJ_230331_08}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="CoupleZone_OnClicked_Vault();"/>
+        </Window>                                 
+        <Window Type="TLBB_ButtonNULL" Name="CoupleZone_Zhanbu">
+          <Property Name="UnifiedSize" Value="{{0.000000,124.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-66.000000},{0.000000,525.000000}}"/>
+          <Property Name="PushedImage" Value="set:CoupleZone4 image:Tianding_P"/>
+          <Property Name="NormalImage" Value="set:CoupleZone4 image:Tianding_N"/>
+          <Property Name="HoverImage" Value="set:CoupleZone4 image:Tianding_H"/>
+          <Property Name="DisabledImage" Value="set:CoupleZone4 image:Tianding_D"/>
+          <Property Name="Tooltip" Value="#{QLKJ_230331_01}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="CoupleZone_OnClicked_Scry();"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_Zhanbu_Tips">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,4.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>        
+        </Window> 
+        <Window Type="TLBB_Animate" Name="CoupleZone_Zhanbu_Anim">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,214.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.500000,-140.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Animate" Value="CoupleZone_Anim"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>        
+        <Window Type="TLBB_ButtonNULL" Name="CoupleZone_Diary">
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,148.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-822.000000},{0.000000,219.000000}}"/>
+          <Property Name="PushedImage" Value="set:CoupleZone4 image:Suiqing_P"/>
+          <Property Name="NormalImage" Value="set:CoupleZone4 image:Suiqing_N"/>
+          <Property Name="HoverImage" Value="set:CoupleZone4 image:Suiqing_H"/>
+          <Property Name="DisabledImage" Value="set:CoupleZone4 image:Suiqing_D"/>
+          <Property Name="Tooltip" Value="#{QLKJ_230331_04}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="CoupleZone_OnClicked_Diary()"/>
+        </Window>                                                 
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

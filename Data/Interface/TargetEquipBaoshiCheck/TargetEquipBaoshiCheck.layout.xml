@@ -1,0 +1,96 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame2" Name="TargetEquipBaoshiCheck_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,330.000000},{0.000000,211.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.300000,147.799988},{0.150000,11.799995}}"/>
+    <Property Name="AttachEnabled" Value="True"/>
+    <Event Name="Hidden" Function="TargetEquipBaoshiCheck_OnHidden();"/>
+		<Window Type="TLBB_DragTitle" Name="TargetEquipBaoshiCheck_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,4.000000}}"/>
+      <Property Name="Text" Value="#{WBSS_120727_11}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="TargetEquipBaoshiCheck_Frame"/>
+    </Window>
+		<Window Type="TLBB_ButtonClose" Name="TargetEquipBaoshiCheck_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}}"/>
+      <Event Name="Clicked" Function="TargetEquipBaoshiCheck_Close_Clicked();"/>
+    </Window>
+		<Window Type="TLBB_ButtonHelp" Name="TargetEquipBaoshiCheck_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+    </Window>
+		<Window Type="DefaultWindow" Name="TargetEquipBaoshiCheck_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,25.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+			<Window Type="DefaultWindow" Name="TargetEquipBaoshiCheck_yuanzhuangbei">
+        <Property Name="UnifiedSize" Value="{{0.000000,310.000000},{0.000000,93.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-1.000000}}"/>
+        <Window Type="TLBB_ActionButton" Name="TargetEquipBaoshiCheck_Special_Button1">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,35.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{0.000000,32.000000}}"/>
+          <Property Name="DragAcceptName" Value="G12"/>
+        </Window>
+				<Window Type="TLBB_ActionButton" Name="TargetEquipBaoshiCheck_Special_Button2">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,35.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,189.000000},{0.000000,32.000000}}"/>
+          <Property Name="DragAcceptName" Value="G12"/>
+        </Window>
+				<Window Type="TLBB_ActionButton" Name="TargetEquipBaoshiCheck_Special_Button3">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,35.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,226.000000},{0.000000,32.000000}}"/>
+          <Property Name="DragAcceptName" Value="G12"/>
+        </Window>
+				<Window Type="TLBB_ActionButton" Name="TargetEquipBaoshiCheck_Special_Button4">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,35.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,263.000000},{0.000000,32.000000}}"/>
+          <Property Name="DragAcceptName" Value="G12"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TargetEquipBaoshiCheck_dangqianBaoShi">
+          <Property Name="UnifiedSize" Value="{{0.000000,133.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,34.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{WBSS_120727_85}"/>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="TargetEquipBaoshiCheck_TXT">
+          <Property Name="UnifiedSize" Value="{{0.000000,149.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{0.000000,31.000000}}"/>
+          <Property Name="Text" Value="#{WBSS_120727_13}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="TargetEquipBaoshiCheck_mubiaozhuangbei">
+        <Property Name="UnifiedSize" Value="{{0.000000,312.000000},{0.000000,79.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,64.000000}}"/>
+        <Window Type="TLBB_ActionButton" Name="TargetEquipBaoshiCheck_Special_Button6">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,35.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{0.000000,32.000000}}"/>
+          <Property Name="DragAcceptName" Value="G12"/>
+        </Window>
+				<Window Type="TLBB_ActionButton" Name="TargetEquipBaoshiCheck_Special_Button7">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,35.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,189.000000},{0.000000,32.000000}}"/>
+          <Property Name="DragAcceptName" Value="G12"/>
+        </Window>
+				<Window Type="TLBB_ActionButton" Name="TargetEquipBaoshiCheck_Special_Button8">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,35.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,226.000000},{0.000000,32.000000}}"/>
+          <Property Name="DragAcceptName" Value="G12"/>
+        </Window>
+				<Window Type="TLBB_ActionButton" Name="TargetEquipBaoshiCheck_Special_Button9">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,35.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,263.000000},{0.000000,32.000000}}"/>
+          <Property Name="DragAcceptName" Value="G12"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TargetEquipBaoshiCheck_zhuangbeiweiBaoShi">
+          <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,31.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{WBSS_120727_86}"/>
+        </Window>
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

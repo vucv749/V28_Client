@@ -1,0 +1,229 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrameNULL" Name="Higntlight_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,350.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-270.000000},{0.500000,-175.000000}}"/>	
+		<Window Type="TLBB_DragTitle" Name="Higntlight_DragTitle">
+			<Property Name="UnifiedSize" Value="{{1.000000,-96.000000},{0.000000,78.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,14.000000}}"/>		
+			<Property Name="DragTarget" Value="Higntlight_Frame"/>
+		</Window>
+		<Window Type="TLBB_ButtonNULL" Name="Higntlight_Close">
+			<Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,68.000000}}"/>
+			<Property Name="PushedImage" Value="set:Higntlight image:Close_Pushed"/>
+			<Property Name="NormalImage" Value="set:Higntlight image:Close_Normal"/>
+			<Property Name="HoverImage" Value="set:Higntlight image:Close_Hover"/>
+			<Property Name="DisabledImage" Value="set:Higntlight image:Close_Disabled"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Event Name="Clicked" Function="Higntlight_OnClose()"/>
+		</Window>
+		<Window Type="TLBB_StaticImageNULL" Name="Higntlight_Client">
+			<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+			<Property Name="RiseOnClick" Value="False"/>
+			<Property Name="Image" Value="set:Higntlight image:Higntlight_BK"/>					
+			<Window Type="TLBB_StaticImageNULL" Name="Higntlight_Damage">
+				<Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,22.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.500000,-88.000000},{0.000000,110.000000}}"/>
+				<Property Name="Image" Value="set:Higntlight image:Damage"/>
+			</Window>	
+			<Window Type="DefaultWindow" Name="Higntlight_LikesDetail">
+				<Property Name="UnifiedSize" Value="{{0.000000,260.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.500000,-133.000000},{0.000000,140.000000}}"/>
+				<Property Name="MouseRButtonHollow" Value="True"/>
+				<Property Name="MouseMoveHollow" Value="True"/>
+				<Property Name="MouseLButtonHollow" Value="True"/>
+				<Property Name="MouseHollow" Value="True"/>	
+				<Property Name="AlwaysOnTop" Value="True"/>					
+				<Window Type="TLBB_SimpleText" Name="Higntlight_LikesDetail_PAOPAO">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="ABCDe"/>
+					<Property Name="TextColor" Value="FFFFFF00"/>
+					<Property Name="MouseRButtonHollow" Value="True"/>
+					<Property Name="MouseMoveHollow" Value="True"/>
+					<Property Name="MouseLButtonHollow" Value="True"/>
+					<Property Name="MouseHollow" Value="True"/>						
+					<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+				</Window>																								
+			</Window>						
+			<Window Type="TLBB_StaticImageNULL" Name="Higntlight_Item">
+				<Property Name="UnifiedSize" Value="{{0.000000,260.000000},{0.000000,68.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.500000,-133.000000},{0.000000,168.000000}}"/>
+				<Property Name="Image" Value="set:Higntlight image:Higntlight_ItemBK"/>			
+				<Window Type="TLBB_SimpleText" Name="Higntlight_ImageMenpai">
+					<Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,2.000000}}"/>
+					<Property Name="Text" Value="曼陀"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="Higntlight_RoleName">
+					<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,2.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="Higntlight_RoleName_Text2">
+						<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="#{GGSK_221221_13}"/>
+						<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>						
+					</Window>					
+				</Window>	
+				<Window Type="TLBB_SimpleText" Name="Higntlight_DamageCount">
+					<Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,21.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="Higntlight_DamageCount_Text1">
+						<Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="TextColor" Value="FFFFFF00"/>
+						<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>							
+						<Property Name="Text" Value="#{GGSK_221221_14}"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="Higntlight_DamageCount_Text2">
+						<Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,65.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="#{GGSK_221221_15}"/>
+						<Property Name="HorzFormatting" Value="WordWrapRightAligned"/>						
+					</Window>	
+					<Window Type="TLBB_SimpleText" Name="Higntlight_DamageCount_Text3">
+						<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="#{GGSK_221221_61}"/>
+						<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>						
+					</Window>										
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="Higntlight_Title">
+					<Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,40.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.000000,0.000000}}"/>
+					<Property Name="Image" Value="set:Higntlight image:Higntlight_Title"/>
+				</Window>	
+				<Window Type="TLBB_ButtonNULL" Name="Higntlight_AddFriend">
+					<Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-88.000000},{1.000000,-25.000000}}"/>
+					<Property Name="PushedImage" Value="set:Higntlight image:AddFriend_Pushed"/>
+					<Property Name="NormalImage" Value="set:Higntlight image:AddFriend_Normal"/>
+					<Property Name="HoverImage" Value="set:Higntlight image:AddFriend_Hover"/>
+					<Property Name="DisabledImage" Value="set:Higntlight image:AddFriend_Disabled"/>
+					<Property Name="Tooltip" Value="#{GGSK_221221_03}"/>
+					<Event Name="Clicked" Function="Higntlight_AddFriend1(1)"/>
+				</Window>	
+				<Window Type="TLBB_ButtonNULL" Name="Higntlight_Like1">
+					<Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{1.000000,-25.000000}}"/>
+					<Property Name="PushedImage" Value="set:Higntlight image:Like_Pushed"/>
+					<Property Name="NormalImage" Value="set:Higntlight image:Like_Normal"/>
+					<Property Name="HoverImage" Value="set:Higntlight image:Like_Hover"/>
+					<Property Name="DisabledImage" Value="set:Higntlight image:Like_Disabled"/>
+					<Property Name="Tooltip" Value="#{GGSK_221221_05}"/>
+					<Event Name="Clicked" Function="Higntlight_Like(1)"/>
+				</Window>	
+				<Window Type="TLBB_ButtonNULL" Name="Higntlight_Share1">
+					<Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-38.000000},{1.000000,-25.000000}}"/>
+					<Property Name="PushedImage" Value="set:Higntlight image:Share_Pushed"/>
+					<Property Name="NormalImage" Value="set:Higntlight image:Share_Normal"/>
+					<Property Name="HoverImage" Value="set:Higntlight image:Share_Hover"/>
+					<Property Name="DisabledImage" Value="set:Higntlight image:Share_Disabled"/>
+					<Property Name="Tooltip" Value="#{GGSK_221221_10}"/>
+					<Event Name="Clicked" Function="Higntlight_Share(1)"/>
+				</Window>									
+			</Window>
+			<Window Type="DefaultWindow" Name="Higntlight_LikesDetail3">
+				<Property Name="UnifiedSize" Value="{{0.000000,260.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.500000,-133.000000},{0.000000,240.000000}}"/>
+				<Property Name="MouseRButtonHollow" Value="True"/>
+				<Property Name="MouseMoveHollow" Value="True"/>
+				<Property Name="MouseLButtonHollow" Value="True"/>
+				<Property Name="MouseHollow" Value="True"/>	
+				<Property Name="AlwaysOnTop" Value="True"/>					
+				<Window Type="TLBB_SimpleText" Name="Higntlight_LikesDetail_PAOPAO3">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="hfdsge"/>
+					<Property Name="TextColor" Value="FFFFFF00"/>
+					<Property Name="MouseRButtonHollow" Value="True"/>
+					<Property Name="MouseMoveHollow" Value="True"/>
+					<Property Name="MouseLButtonHollow" Value="True"/>
+					<Property Name="MouseHollow" Value="True"/>						
+					<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+				</Window>																								
+			</Window>			
+			<Window Type="TLBB_StaticImageNULL" Name="Higntlight_Item3">
+				<Property Name="UnifiedSize" Value="{{0.000000,260.000000},{0.000000,68.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.500000,-133.000000},{0.000000,269.000000}}"/>	
+				<Property Name="Image" Value="set:Higntlight image:Higntlight_ItemBK"/>		
+				<Window Type="TLBB_SimpleText" Name="Higntlight_ImageMenpai3">
+					<Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,2.000000}}"/>
+					<Property Name="Text" Value="曼陀"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="Higntlight_RoleName3">
+					<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,2.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="Higntlight_RoleName3_Text2">
+						<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="#{GGSK_221221_13}"/>
+						<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>						
+					</Window>					
+				</Window>	
+				<Window Type="TLBB_SimpleText" Name="Higntlight_DamageCount3">
+					<Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,21.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="Higntlight_DamageCount3_Text1">
+						<Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="TextColor" Value="FFFFFF00"/>
+						<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>							
+						<Property Name="Text" Value="#{GGSK_221221_14}"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="Higntlight_DamageCount3_Text2">
+						<Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,65.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="#{GGSK_221221_13}"/>
+						<Property Name="HorzFormatting" Value="WordWrapRightAligned"/>						
+					</Window>	
+					<Window Type="TLBB_SimpleText" Name="Higntlight_DamageCount3_Text3">
+						<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="#{GGSK_221221_61}"/>
+						<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>						
+					</Window>										
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="Higntlight_Title3">
+					<Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,40.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.000000,0.000000}}"/>
+					<Property Name="Image" Value="set:Higntlight image:Higntlight_Title"/>
+				</Window>
+				<Window Type="TLBB_ButtonNULL" Name="Higntlight_AddFriend3">
+					<Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-88.000000},{1.000000,-25.000000}}"/>
+					<Property Name="Tooltip" Value="#{GGSK_221221_03}"/>
+					<Property Name="PushedImage" Value="set:Higntlight image:AddFriend_Pushed"/>
+					<Property Name="NormalImage" Value="set:Higntlight image:AddFriend_Normal"/>
+					<Property Name="HoverImage" Value="set:Higntlight image:AddFriend_Hover"/>
+					<Property Name="DisabledImage" Value="set:Higntlight image:AddFriend_Disabled"/>
+					<Event Name="Clicked" Function="Higntlight_AddFriend1(3)"/>
+				</Window>	
+				<Window Type="TLBB_ButtonNULL" Name="Higntlight_Like3">
+					<Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{1.000000,-25.000000}}"/>
+					<Property Name="Tooltip" Value="#{GGSK_221221_05}"/>
+					<Property Name="PushedImage" Value="set:Higntlight image:Like_Pushed"/>
+					<Property Name="NormalImage" Value="set:Higntlight image:Like_Normal"/>
+					<Property Name="HoverImage" Value="set:Higntlight image:Like_Hover"/>
+					<Property Name="DisabledImage" Value="set:Higntlight image:Like_Disabled"/>
+					<Event Name="Clicked" Function="Higntlight_Like(3)"/>
+				</Window>					
+				<Window Type="TLBB_ButtonNULL" Name="Higntlight_Share3">
+					<Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-38.000000},{1.000000,-25.000000}}"/>
+					<Property Name="Tooltip" Value="#{GGSK_221221_10}"/>
+					<Property Name="PushedImage" Value="set:Higntlight image:Share_Pushed"/>
+					<Property Name="NormalImage" Value="set:Higntlight image:Share_Normal"/>
+					<Property Name="HoverImage" Value="set:Higntlight image:Share_Hover"/>
+					<Property Name="DisabledImage" Value="set:Higntlight image:Share_Disabled"/>
+					<Event Name="Clicked" Function="Higntlight_Share(3)"/>
+				</Window>										
+			</Window>									
+		</Window>		
+	</Window>
+</GUILayout>

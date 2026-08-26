@@ -1,0 +1,614 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="DWJinJie_Change_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,656.000000},{0.000000,482.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-328.000000},{0.500000,-240.000000}}"/>
+    <Event Name="Hidden" Function="DWJinJie_Change_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="DWJinJie_Change_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-64.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,9.000000}}"/>
+      <Property Name="DragTarget" Value="DWJinJie_Change_Frame" />
+      <Window Type="TLBB_SimpleText" Name="DWJinJie_Change_PageHeader">
+        <Property Name="Position" Value="x:0.02 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{DWJJ_240329_166}"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="DWJinJie_Change_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,13.000000}}"/>
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*DWJinJie_Change&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="DWJinJie_Change_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="DWJinJie_Change_CloseClicked()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="DWJinJie_Change_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-58.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,35.000000}}"/>
+      <Window Type="TLBB_Frame_Lace2" Name="DWJinJie_Change_List">
+        <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,00.000000}}"/>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_Change_EquipItem1">
+          <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Weapon" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="MouseLButtonDown" Function="DWJinJie_Change_EquipClicked(1)" />
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask1_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_Change_EquipItem9">
+          <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,10.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Ring" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="MouseLButtonDown" Function="DWJinJie_Change_EquipClicked(9)" />
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask9">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask9_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_Change_EquipItem10">
+          <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Ring" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="MouseLButtonDown" Function="DWJinJie_Change_EquipClicked(10)" />
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask10">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask10_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_Change_EquipItem13">
+          <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,62.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Armo" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="MouseLButtonDown" Function="DWJinJie_Change_EquipClicked(13)" />
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask13">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask13_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_Change_EquipItem2">
+          <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,218.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Weapon" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="MouseLButtonDown" Function="DWJinJie_Change_EquipClicked(2)" />
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask2_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_Change_EquipItem3">
+          <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,218.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Cap" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="MouseLButtonDown" Function="DWJinJie_Change_EquipClicked(3)" />
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask3">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask3_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_Change_EquipItem4">
+          <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,322.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Shoulder" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="MouseLButtonDown" Function="DWJinJie_Change_EquipClicked(4)" />
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask4">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask4_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_Change_EquipItem5">
+          <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,114.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Wrist" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="MouseLButtonDown" Function="DWJinJie_Change_EquipClicked(5)" />
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask5">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask5_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_Change_EquipItem6">
+          <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,114.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Hand" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="MouseLButtonDown" Function="DWJinJie_Change_EquipClicked(6)" />
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask6">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask6_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_Change_EquipItem7">
+          <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,166.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Sash" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="MouseLButtonDown" Function="DWJinJie_Change_EquipClicked(7)" />
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask7">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask7_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_Change_EquipItem8">
+          <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,166.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Shot" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="MouseLButtonDown" Function="DWJinJie_Change_EquipClicked(8)" />
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask8">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask8_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_Change_EquipItem11">
+          <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,270.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Pifeng" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="MouseLButtonDown" Function="DWJinJie_Change_EquipClicked(11)" />
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask11">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask11_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_Change_EquipItem12">
+          <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,270.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Pifeng" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="MouseLButtonDown" Function="DWJinJie_Change_EquipClicked(12)" />
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask12">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask12_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_Change_EquipItem14">
+          <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,322.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Nacket" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="MouseLButtonDown" Function="DWJinJie_Change_EquipClicked(14)" />
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask14">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask14_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_Change_EquipItem15">
+          <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,374.000000}}"/>
+          <Property Name="BackImage" Value="set:UIIcons image:Equip_Anqi" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="MouseLButtonDown" Function="DWJinJie_Change_EquipClicked(15)" />
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask15">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask15_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_Change_EquipItem16">
+          <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,374.000000}}"/>
+          <Property Name="BackImage" Value="set:CommonFrame7 image:WuhunEquip" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="MouseLButtonDown" Function="DWJinJie_Change_EquipClicked(16)" />
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask16">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Mask16_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="DWJinJie_ChangeClient">
+        <Property Name="UnifiedSize" Value="{{1.000000,-116.000000},{0.000000,170.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,134.000000},{0.000000,74.000000}}"/>
+          <Property Name="Image" Value="set:Buttons image:SceneMap_Right_Normal"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_Frame_Lace2" Name="DWJinJie_ChangeItem">
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,164.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+          <Window Type="TLBB_ActionButton" Name="DWJinJie_Change_EquipItem">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-21.000000},{0.000000,4.000000}}"/>
+            <!-- <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/> -->
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_EquipItemMask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="DWJinJie_Change_DWLevelBK">
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,46.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_SimpleText" Name="DWJinJie_Change_DWLevel">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="DWJinJie_Change_DWLevelUpBK">
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,66.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_SimpleText" Name="DWJinJie_Change_DWLevelUp">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DWJinJie_Change_DWLevelUpNum">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="DWJinJie_Change_DWShuXingBK">
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,56.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,106.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_SimpleText" Name="DWJinJie_Change_DWShuXingUp">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,50.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace2" Name="DWJinJie_Change_TextBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,-172.000000},{0.000000,164.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,168.000000},{0.000000,4.000000}}"/>
+          <Window Type="TLBB_ActionButton" Name="DWJinJie_Change_DWItem">
+            <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,49.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="DragAcceptName" Value="FE1" />
+            <Event Name="MouseRClick" Function="DWJinJie_Change_RemoveFeatures()" />
+            <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_DWItemMask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="DWJinJie_Change_Title">
+            <Property Name="UnifiedSize" Value="{{0.000000,172.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="DWJinJie_Change_NumLevel">
+            <Property Name="UnifiedSize" Value="{{0.000000,175.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,177.000000},{0.000000,4.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="DWJinJie_Change_ShuXing">
+            <Property Name="UnifiedSize" Value="{{0.000000,348.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,24.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="DWJinJie_Change_Havelevel">
+            <Property Name="UnifiedSize" Value="{{0.000000,304.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,48.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="DWJinJie_Change_Nowlevel">
+            <Property Name="UnifiedSize" Value="{{0.000000,304.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,68.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="Tooltip" Value="#{DWJJ_240329_358}"/>
+          </Window>
+          <Window Type="TLBB_Frame_Lace3" Name="DWJinJie_Change_InfoTextBK">
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,74.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,88.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True" />
+            <Property Name="MouseMoveHollow" Value="True" />
+            <Property Name="MouseLButtonHollow" Value="True" />
+            <Property Name="MouseHollow" Value="True" />
+          <Window Type="TLBB_StaticText" Name="DWJinJie_Change_InfoText">
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Property Name="VertScrollbar" Value="true" />
+          </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="DWJinJie_Change_DWTeXingClient2">
+        <Property Name="UnifiedSize" Value="{{1.000000,-116.000000},{1.000000,-170.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,170.000000}}"/>
+        <Window Type="DefaultWindow" Name="DWJinJie_Change_DWTeXing_PageBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,28.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ButtonFenYe7" Name="DWJinJie_Change_DWTeXing_Page1">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,2.000000}}"/>
+            <Property Name="Text" Value="#{DWJJ_240329_09}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Event Name="MouseLButtonDown" Function="DWJinJie_Change_SwitchInfo(1);"/>
+          </Window>
+          <Window Type="TLBB_ButtonFenYe7" Name="DWJinJie_Change_DWTeXing_Page2">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,2.000000}}"/>
+            <Property Name="Text" Value="#{DWJJ_240329_169}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Event Name="MouseLButtonDown" Function="DWJinJie_Change_SwitchInfo(2);"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DWJinJie_Change_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-240.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{DWJJ_240329_350}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonHelp" Name="DWJinJie_Change_Help2">
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.500000,-8.000000}}"/>
+            <Event Name="Clicked" Function="DWJinJie_Change_DWTeXingInfo_Clicked()"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace1" Name="DWJinJie_Change_DWTeXingList1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-28.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+          <Window Type="TLBB_Frame_Lace4" Name="DWJinJie_Change_DWTeXing_TopList1">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-8.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Window Type="TLBB_ComplexWindow" Name="DWJinJie_Change_DWTeXing_TopList_Item1">
+              <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-8.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace1" Name="DWJinJie_Change_DWTeXingList2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-28.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+          <Window Type="TLBB_NotSuperList" Name="DWJinJie_Change_DWTeXing_TopList2">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-8.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="SelectMode" Value="Single" />
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MultiColumn" Value="1" />
+            <Window Type="TLBB_NotSuperListItemCommon" Name="DWJinJie_Change_DWTeXing_TopListItem2">
+              <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,92.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="DWJinJie_Change_DWTeXing_TopListItem2Action">
+                <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-21.000000},{0.500000,-32.000000}}"/>
+                <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_Change_DWTeXing_TopListItem2_Mask">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="DWJinJie_Change_DWTeXing_TopListItem2ActionName">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-28.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

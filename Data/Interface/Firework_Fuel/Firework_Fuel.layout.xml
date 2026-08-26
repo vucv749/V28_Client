@@ -1,0 +1,250 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Firework_Fuel_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,800.000000},{0.000000,554.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-400.000000},{0.500000,-277.000000}}"/>
+    <Window Type="TLBB_HeroFrame01" Name="Firework_Fuel_FrameBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Event Name="Hidden" Function="Firework_Fuel_OnHiden()"/>
+      <Window Type="TLBB_DragTitle" Name="Firework_Fuel_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="Text" Value="#{YHWH_240614_49}" />
+        <Property Name="DragTarget" Value="Firework_Fuel_Frame"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Firework_Fuel_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,9.000000}}"/>
+        <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+        <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
+        <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
+        <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+        <Event Name="Clicked" Function="Firework_Fuel_Close();" />
+      </Window>
+      <Window Type="DefaultWindow" Name="Firework_Fuel_Frame_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Firework_Fuel_BKPic1">
+          <Property Name="UnifiedSize" Value="{{0.000000,800.000000},{0.000000,384.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Firework_Fuel image:Firework_Fuel_BK1"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Firework_Fuel_BKPic2">
+          <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,138.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,384.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Firework_Fuel image:Firework_Fuel_BK2"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Firework_Fuel_BKPic3">
+          <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,138.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,384.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Firework_Fuel image:Firework_Fuel_BK3"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Firework_Fuel_BKPic4">
+          <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,138.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.000000,384.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Firework_Fuel image:Firework_Fuel_BK4"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Firework_Fuel_BKPic5">
+          <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,69.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,600.000000},{0.000000,384.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Firework_Fuel image:Firework_Fuel_BK5"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Firework_Fuel_BKPic6">
+          <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,69.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,600.000000},{0.000000,453.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Firework_Fuel image:Firework_Fuel_BK6"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="Firework_Fuel_Frame_TextBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,700.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-350.000000},{0.000000,12.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_SimpleText" Name="Firework_Fuel_Text1">
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,2.000000}}"/>
+            <Property Name="Text" Value="#{YHWH_240614_50}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Firework_Fuel_Frame_Center1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-260.000000},{0.000000,160.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,360.000000}}"/>
+          <Window Type="DefaultWindow" Name="Firework_Fuel_Icon1">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,38.000000}}"/>
+            <Window Type="TLBB_ButtonNULL" Name="Firework_Fuel_Icon1Btn">
+              <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,10.000000}}"/>
+              <Property Name="Tooltip" Value="#{YHWH_240614_53}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="PushedImage" Value="set:Firework_Fuel image:Firework_Fuel_S_Pushed"/>
+              <Property Name="NormalImage" Value="set:Firework_Fuel image:Firework_Fuel_S_Normal"/>
+              <Property Name="HoverImage" Value="set:Firework_Fuel image:Firework_Fuel_S_Hover"/>
+              <Property Name="DisabledImage" Value="set:Firework_Fuel image:Firework_Fuel_S_Disable"/>
+              <Event Name="Clicked" Function="Firework_Fuel_IconBtn(1)"/>
+
+              <Window Type="TLBB_StaticImageNULL" Name="Firework_Fuel_Icon1_Tips">
+                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-14.000000},{0.000000,14.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Firework_Fuel_oneText">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.00000},{1.000000,-38.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="VertFormatting" Value="VertCentred"/>
+              <Property Name="Text" Value="#{}"/>
+              <Property Name="Font" Value="TitleMini"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Firework_Fuel_Icon2">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,274.000000},{0.000000,38.000000}}"/>
+            <Window Type="TLBB_ButtonNULL" Name="Firework_Fuel_Icon2Btn">
+              <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,10.000000}}"/>
+              <Property Name="Tooltip" Value="#{YHWH_240614_54}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="PushedImage" Value="set:Firework_Fuel image:Firework_Fuel_S_Pushed"/>
+              <Property Name="NormalImage" Value="set:Firework_Fuel image:Firework_Fuel_S_Normal"/>
+              <Property Name="HoverImage" Value="set:Firework_Fuel image:Firework_Fuel_S_Hover"/>
+              <Property Name="DisabledImage" Value="set:Firework_Fuel image:Firework_Fuel_S_Disable"/>
+              <Event Name="Clicked" Function="Firework_Fuel_IconBtn(2)"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Firework_Fuel_Icon2_Tips">
+                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-14.000000},{0.000000,14.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Firework_Fuel_twoText">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.00000},{1.000000,-38.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="VertFormatting" Value="VertCentred"/>
+              <Property Name="Text" Value="#{}"/>
+              <Property Name="Font" Value="TitleMini"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Firework_Fuel_Icon3">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,454.000000},{0.000000,38.000000}}"/>
+            <Window Type="TLBB_ButtonNULL" Name="Firework_Fuel_Icon3Btn">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,62.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Tooltip" Value="#{YHWH_240614_55}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="PushedImage" Value="set:Firework_Fuel image:Firework_Fuel_B_Pushed"/>
+              <Property Name="NormalImage" Value="set:Firework_Fuel image:Firework_Fuel_B_Normal"/>
+              <Property Name="HoverImage" Value="set:Firework_Fuel image:Firework_Fuel_B_Hover"/>
+              <Property Name="DisabledImage" Value="set:Firework_Fuel image:Firework_Fuel_B_Disable"/>
+              <Event Name="Clicked" Function="Firework_Fuel_IconBtn(3)"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Firework_Fuel_Icon3_Tips">
+                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-14.000000},{0.000000,14.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Firework_Fuel_threeText">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.00000},{1.000000,-38.000000}}"/>
+              <Property Name="Text" Value="#{}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="VertFormatting" Value="VertCentred"/>
+              <Property Name="Font" Value="TitleMini"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Firework_Fuel_Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,80.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Firework_Fuel image:Firework_Fuel_Guanzi"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Firework_Fuel_BottomTextBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,134.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,84.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <!-- <Property Name="Image" Value="set:Firework_Fuel image:Back"/> -->
+            <Window Type="TLBB_SimpleText" Name="Firework_Fuel_BottomText1">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{0.000000,0.000000}}"/>
+              <Property Name="HorzFormatting" Value="RightAligned"/>
+              <Property Name="Font" Value="YouYuan13"/>
+              <Property Name="Text" Value="#{YHWH_240614_51}"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Firework_Fuel_BottomText2">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,20.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="#{YHWH_240614_52}"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Firework_Fuel_EXPBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,360.000000},{0.000000,10.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,92.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_ProgressFirework_Fuel" Name="Firework_Fuel_EXP">
+              <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,4.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,4.000000}}"/>
+              <Property Name="ProgressImage" Value="set:HeXinChun2 image:EXPGreen"/>
+              <Property Name="MoveSpeed" Value="1.0"/>
+              <Property Name="EffectColor" Value="1"/>
+              <Property Name="CurrentProgress" Value="1.000000"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+
+      </Window>
+
+    </Window>
+  </Window>
+</GUILayout>

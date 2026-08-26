@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Frozen_DodgeBall_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,266.000000},{0.000000,146.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-290.000000},{1.000000,-400.000000}}"/>
+    <Property Name="AttachEnabled" Value="true" />
+    <Window Type="TLBB_MainFrame_Frozen2" Name="Frozen_DodgeBall_ClientBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+    </Window>
+    <Window Type="TLBB_TitleLace_Frozen" Name="Frozen_DodgeBall_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,19.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.000000,3.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Frozen_DodgeBall_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-48.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,2.000000}}"/>
+      <Property Name="Text" Value="#{BXDK_240909_42}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="DragTarget" Value="Frozen_DodgeBall_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Frozen_DodgeBall_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,5.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Frozen_DodgeBall_Close_Clicked()"/>
+    </Window>
+
+    <Window Type="DefaultWindow" Name="Frozen_DodgeBall_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,24.000000}}"/>
+      <Window Type="DefaultWindow" Name="Frozen_DodgeBall_InfoBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Frozen_DodgeBall_RulesInfo">
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{BXDK_240909_43}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Frozen_DodgeBall_Finish">
+          <Property Name="Visible" Value="False"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,7.000000}}"/>
+          <Property Name="Text" Value="#{BXDK_240909_51}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="ReachedZero" Function=""/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Frozen_DodgeBall_GameInfoBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,97.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,38.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Frozen_DodgeBall_Health">
+          <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Visible" Value="False"/>
+          <Property Name="Text" Value="#{BXDK_240909_44}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Frozen_DodgeBall_TeamMember">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,12.000000}}"/>
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{BXDK_240909_46}" />
+        </Window>
+        <Window Type="DefaultWindow" Name="Frozen_DodgeBall_CountdownTimeBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,26.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Frozen_DodgeBall_CountdownIcon">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.500000,-7.000000}}"/>
+            <Property Name="Image" Value="set:FangYanHua image:FangYanHua_miniTime"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Frozen_DodgeBall_CountdownTime">
+            <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.5000000,-9.000000}}"/>
+            <Property Name="Text" Value="#{BXDK_240909_45}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Frozen_DodgeBall_Success">
+        <Property Name="Visible" Value="False"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,60.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,42.000000}}"/>
+        <Property Name="Text" Value="#{BXDK_240909_52}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Frozen_DodgeBall_Fail">
+        <Property Name="Visible" Value="False"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,62.000000}}"/>
+        <Property Name="Text" Value="#{BXDK_240909_51}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="Frozen_DodgeBall_BattleBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,85.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,30.000000}}"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

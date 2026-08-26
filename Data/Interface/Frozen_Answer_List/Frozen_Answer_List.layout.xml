@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Frozen2" Name="Frozen_Answer_List_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,640.000000},{0.000000,530.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-320.000000},{0.500000,-265.000000}}"/>
+    <Window Type="TLBB_ButtonClose" Name="Frozen_Answer_List_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,6.000000}}"/>
+      <Event Name="Clicked" Function="Frozen_Answer_List_Close()"/>
+    </Window>
+    <Window Type="TLBB_TitleLace_Frozen" Name="Frozen_Answer_List_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,19.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-135.000000},{0.000000,2.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+
+    <Window Type="TLBB_DragTitle" Name="Frozen_Answer_List_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-110.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,65.000000},{0.000000,2.000000}}"/>
+      <Property Name="Text" Value="#{DXDT_240920_61}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="Frozen_Answer_List_Frame" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Frozen_Answer_List_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,26.000000}}"/>
+      <Window Type="DefaultWindow" Name="Frozen_Answer_List_FrameBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-10.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_Frame_Lace3" Name="Frozen_Answer_List_IntroBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,70.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="Frozen_Answer_List_Intro">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-4.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.00000,2.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="VertFormatting" Value="VertCentred"/>
+            <Property Name="Text" Value="#{DXDT_240920_62}"/>
+          </Window>
+        </Window>
+
+        <Window Type="DefaultWindow" Name="Frozen_Answer_List_ListFrame1">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-150.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,74.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_MultiColumnList" Name="Frozen_Answer_List_TopList">
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
+            <Property Name="ForceHorzScrollbar" Value="False" />
+            <Property Name="ForceVertScrollbar" Value="False" />
+            <Property Name="SortSettingEnabled" Value="False" />
+            <Property Name="SelectionMode" Value="RowSingle" />
+            <Property Name="ColumnHeader" Value="text: width:0.2 id:0" />
+            <Property Name="ColumnHeader" Value="text: width:0.3 id:1" />
+            <Property Name="ColumnHeader" Value="text: width:0.2 id:2" />
+            <Property Name="ColumnHeader" Value="text: width:0.3 id:2" />
+            <Property Name="ColumnsSizable" Value="False" />
+            <Property Name="ColumnsAdjust" Value="True" />
+            <Property Name="ColumnsMovable" Value="False" />
+          </Window>
+          <Window Type="DefaultWindow" Name="Frozen_Answer_List_TopListTextInfo">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
+            <Window Type="TLBB_SimpleText" Name="Frozen_Answer_List_TopListText1">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.00000,2.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="#{DXDT_240920_63}"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Frozen_Answer_List_TopListText2">
+              <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.200000,2.000000},{0.00000,2.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="#{DXDT_240920_64}"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Frozen_Answer_List_TopListText3">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,2.000000},{0.00000,2.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="#{DXDT_240920_65}"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Frozen_Answer_List_TopListText4">
+              <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.700000,2.000000},{0.00000,2.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="#{DXDT_240920_126}"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_NotSuperList" Name="Frozen_Answer_List_Lace">
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,22.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_NotSuperListItemCommon1" Name="Frozen_Answer_List_Info1">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Frozen_Answer_List_Rank1">
+                <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,41.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,5.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Frozen_Answer image:Frozen_Answer_NumOne"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Frozen_Answer_List_Name1">
+                <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.200000,4.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Frozen_Answer_List_Num1">
+                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,10.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="Frozen_Answer_List_Reward1">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.700000,86.000000},{0.500000,-18.000000}}"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_NotSuperListItemCommon1" Name="Frozen_Answer_List_Info2">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,52.000000}}"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Frozen_Answer_List_Rank2">
+                <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,41.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,5.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Frozen_Answer image:Frozen_Answer_NumTwo"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Frozen_Answer_List_Name2">
+                <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.200000,4.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Frozen_Answer_List_Num2">
+                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,10.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="Frozen_Answer_List_Reward2">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.700000,86.000000},{0.500000,-18.000000}}"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_NotSuperListItemCommon1" Name="Frozen_Answer_List_Info3">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,104.000000}}"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Frozen_Answer_List_Rank3">
+                <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,41.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,5.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Frozen_Answer image:Frozen_Answer_NumThree"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Frozen_Answer_List_Name3">
+                <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.200000,4.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Frozen_Answer_List_Num3">
+                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,10.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="Frozen_Answer_List_Reward3">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.700000,86.000000},{0.500000,-18.000000}}"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_NotSuperListItemCommon1" Name="Frozen_Answer_List_Info4">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,52.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,156.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="Frozen_Answer_List_Rank4">
+                <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{DXDT_240920_66}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Frozen_Answer_List_Name4">
+                <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.200000,4.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Frozen_Answer_List_Num4">
+                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,10.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="Frozen_Answer_List_Reward4">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.700000,86.000000},{0.500000,-18.000000}}"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_NotSuperListItemCommon1" Name="Frozen_Answer_List_Self">
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,52.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-75.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="Frozen_Answer_List_Self_Rank">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{DXDT_240920_76}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Frozen_Answer_List_Self_Name">
+            <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.200000,2.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Frozen_Answer_List_Self_Num">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,2.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+
+          <Window Type="TLBB_ActionButton" Name="Frozen_Answer_Self_Reward">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.700000,76.000000},{0.500000,-18.000000}}"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="Frozen_Answer_List_GetButton">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-18.000000}}"/>
+          <Property Name="Text" Value="#{DXDT_240920_142}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Tooltip" Value="#{DXDT_240920_81}"/>
+          <Event Name="Clicked" Function="Frozen_Answer_List_GetClick()"/>
+        </Window>
+      </Window>
+    </Window>
+
+  </Window>
+</GUILayout>

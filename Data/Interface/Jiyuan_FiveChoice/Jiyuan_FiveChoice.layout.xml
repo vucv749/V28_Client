@@ -1,0 +1,158 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="Jiyuan_FiveChoice_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,470.000000},{0.000000,277.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-235.000000},{0.500000,-140.000000}}"/>
+    <Event Name="Hidden" Function="Jiyuan_FiveChoice_OnClose()" />
+    <Window Type="TLBB_DragTitle" Name="Jiyuan_FiveChoice_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{SDHDRW_220808_13}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>      
+      <Property Name="DragTarget" Value="Jiyuan_FiveChoice_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Jiyuan_FiveChoice_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Jiyuan_FiveChoice_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Jiyuan_FiveChoice_OnClose()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Jiyuan_FiveChoice_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="Jiyuan_FiveChoiceBK1">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,222.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Thanks6 image:ThanksMiniBK"/>
+      </Window>
+        <Window Type="TLBB_SimpleText" Name="Jiyuan_FiveChoice_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,26.000000}}"/>
+          <Property Name="Text" Value="#{SDHDRW_220808_14}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>     
+      <Window Type="DefaultWindow" Name="Jiyuan_FiveChoice_Gift">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,110.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="Jiyuan_FiveChoice_Gift1_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.180000,-24.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="Jiyuan_FiveChoice_2_Select(1);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Jiyuan_FiveChoice_Gift1_OKBtnOK">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Jiyuan_FiveChoice_Gift2_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.340000,-24.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="Jiyuan_FiveChoice_2_Select(2);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Jiyuan_FiveChoice_Gift2_OKBtnOK">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+          </Window>          
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Jiyuan_FiveChoice_Gift3_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="Jiyuan_FiveChoice_2_Select(3);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Jiyuan_FiveChoice_Gift3_OKBtnOK">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+          </Window>            
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Jiyuan_FiveChoice_Gift4_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.660000,-24.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="Jiyuan_FiveChoice_2_Select(4);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Jiyuan_FiveChoice_Gift4_OKBtnOK">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+          </Window>            
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Jiyuan_FiveChoice_Gift5_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.820000,-24.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="Jiyuan_FiveChoice_2_Select(5);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Jiyuan_FiveChoice_Gift5_OKBtnOK">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+          </Window>            
+        </Window>        
+        <Window Type="TLBB_SimpleText" Name="Jiyuan_FiveChoice_Gift1_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.180000,-30.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{SDHDRW_220808_15}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Jiyuan_FiveChoice_Gift2_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.340000,-30.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{SDHDRW_220808_16}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Jiyuan_FiveChoice_Gift3_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{SDHDRW_220808_17}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Jiyuan_FiveChoice_Gift4_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.660000,-30.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{SDHDRW_220808_18}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Jiyuan_FiveChoice_Gift5_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.820000,-30.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{SDHDRW_220808_19}"/>
+        </Window>        
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Jiyuan_FiveChoice_Gift_Select">
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-42.000000},{1.000000,-42.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:Seven image:Seven_lingqupush"/>
+        <Property Name="NormalImage" Value="set:Seven image:Seven_lingquNormal"/>
+        <Property Name="HoverImage" Value="set:Seven image:Seven_lingquHover"/>
+        <Property Name="DisabledImage" Value="set:Seven image:Seven_lingquDis"/>
+        <Event Name="Clicked" Function="Jiyuan_FiveChoice_Confirm()"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

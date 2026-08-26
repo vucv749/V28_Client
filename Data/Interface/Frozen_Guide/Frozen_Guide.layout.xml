@@ -1,0 +1,466 @@
+<?xml version="1.0"?>
+<GUILayout>
+    <Window Type="TLBB_MainFrameNULL" Name="Frozen_Guide_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,1016.000000},{0.000000,608.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-508.000000},{0.500000,-304.000000}}"/>
+        <Window Type="TLBB_ButtonNULL" Name="Frozen_Guide_Close">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{0.000000,38.000000}}"/>
+            <Property Name="PushedImage" Value="set:Frozen_Guide image:Frozen_Guide_CloseButton_Pushed"/>
+            <Property Name="NormalImage" Value="set:Frozen_Guide image:Frozen_Guide_CloseButton_Normal"/>
+            <Property Name="HoverImage" Value="set:Frozen_Guide image:Frozen_Guide_CloseButton_Hover"/>
+            <Property Name="DisabledImage" Value="set:Frozen_Guide image:Frozen_Guide_CloseButton_Disabled"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Frozen_Guide_Close();"/>
+        </Window>
+        <Window Type="TLBB_DragTitle" Name="Frozen_Guide_DragTitle">
+            <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="DragTarget" Value="Frozen_Guide_Frame" />
+        </Window>
+        <Window Type="TLBB_DragTitle" Name="Frozen_Guide_DragTitle2">
+            <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,70.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="DragTarget" Value="Frozen_Guide_Frame" />
+        </Window>
+        <Window Type="DefaultWindow" Name="Frozen_Guide_Client">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Frozen_Guide_ClientBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,1016.000000},{0.000000,608.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:Frozen_Guide image:Frozen_Guide_BK"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="Frozen_Guide_Btn8_Frame">
+                <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,142.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,164.000000},{0.000000,116.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ButtonNULL" Name="Frozen_Guide_Btn8">
+                    <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,142.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="PushedImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_QXSD_Pushed"/>
+                    <Property Name="NormalImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_QXSD_Normal"/>
+                    <Property Name="HoverImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_QXSD_Hover"/>
+                    <Property Name="DisabledImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_QXSD_Disabled"/>
+                    <Property Name="Tooltip" Value="#{BXJZH_240927_05}"/>
+                    <Event Name="Clicked" Function="Frozen_Guide_Clicked(8);"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Frozen_Guide_Btn8_Tips">
+                    <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Frozen_Guide_Btn13_Frame">
+                <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,142.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,164.000000},{0.000000,116.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ButtonNULL" Name="Frozen_Guide_Btn13">
+                    <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,142.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="PushedImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_YDJB_Pushed"/>
+                    <Property Name="NormalImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_YDJB_Normal"/>
+                    <Property Name="HoverImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_YDJB_Hover"/>
+                    <Property Name="DisabledImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_YDJB_Disabled"/>
+                    <Property Name="Tooltip" Value="#{BXJZH_240927_05}"/>
+                    <Event Name="Clicked" Function="Frozen_Guide_Clicked(13);"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Frozen_Guide_Btn13_Tips">
+                    <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Frozen_Guide_Btn3_Frame">
+                <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,142.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{0.000000,80.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ButtonNULL" Name="Frozen_Guide_Btn3">
+                    <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,142.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="PushedImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_YXYT_Pushed"/>
+                    <Property Name="NormalImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_YXYT_Normal"/>
+                    <Property Name="HoverImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_YXYT_Hover"/>
+                    <Property Name="DisabledImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_YXYT_Disabled"/>
+                    <Property Name="Tooltip" Value="#{BXJZH_240927_05}"/>
+                    <Event Name="Clicked" Function="Frozen_Guide_Clicked(3);"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Frozen_Guide_Btn3_Tips">
+                    <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Frozen_Guide_Btn12_Frame">
+                <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,142.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{0.000000,80.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ButtonNULL" Name="Frozen_Guide_Btn12">
+                    <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,142.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="PushedImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_YXYT_Pushed"/>
+                    <Property Name="NormalImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_YXYT_Normal"/>
+                    <Property Name="HoverImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_YXYT_Hover"/>
+                    <Property Name="DisabledImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_YXYT_Disabled"/>
+                    <Property Name="Tooltip" Value="#{BXJZH_240927_05}"/>
+                    <Event Name="Clicked" Function="Frozen_Guide_Clicked(12);"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Frozen_Guide_Btn12_Tips">
+                    <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Frozen_Guide_Btn2_Frame">
+                <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,160.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,292.000000},{0.000000,116.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ButtonNULL" Name="Frozen_Guide_Btn2">
+                    <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,160.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="PushedImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_BMDWS_Pushed"/>
+                    <Property Name="NormalImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_BMDWS_Normal"/>
+                    <Property Name="HoverImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_BMDWS_Hover"/>
+                    <Property Name="DisabledImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_BMDWS_Disabled"/>
+                    <Property Name="Tooltip" Value="#{BXJZH_240927_05}"/>
+                    <Event Name="Clicked" Function="Frozen_Guide_Clicked(2);"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Frozen_Guide_Btn2_Tips">
+                    <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Frozen_Guide_Btn1_Frame">
+                <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,160.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,356.000000},{0.000000,116.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ButtonNULL" Name="Frozen_Guide_Btn1">
+                    <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,160.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="PushedImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_BXDZZ_Pushed"/>
+                    <Property Name="NormalImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_BXDZZ_Normal"/>
+                    <Property Name="HoverImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_BXDZZ_Hover"/>
+                    <Property Name="DisabledImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_BXDZZ_Disabled"/>
+                    <Property Name="Tooltip" Value="#{BXJZH_240927_05}"/>
+                    <Event Name="Clicked" Function="Frozen_Guide_Clicked(1);"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Frozen_Guide_Btn1_Tips">
+                    <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Frozen_Guide_Btn4_Frame">
+                <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,142.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,80.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ButtonNULL" Name="Frozen_Guide_Btn4">
+                    <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,142.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="PushedImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_XHXB_Pushed"/>
+                    <Property Name="NormalImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_XHXB_Normal"/>
+                    <Property Name="HoverImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_XHXB_Hover"/>
+                    <Property Name="DisabledImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_XHXB_Disabled"/>
+                    <Property Name="Tooltip" Value="#{BXJZH_240927_05}"/>
+                    <Event Name="Clicked" Function="Frozen_Guide_Clicked(4);"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Frozen_Guide_Btn4_Tips">
+                    <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Frozen_Guide_Btn10_Frame">
+                <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,142.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,484.000000},{0.000000,80.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ButtonNULL" Name="Frozen_Guide_Btn10">
+                    <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,142.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="Tooltip" Value="#{BXJZH_240927_05}"/>
+                    <Property Name="PushedImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_GYHC_Pushed"/>
+                    <Property Name="NormalImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_GYHC_Normal"/>
+                    <Property Name="HoverImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_GYHC_Hover"/>
+                    <Property Name="DisabledImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_GYHC_Disabled"/>
+                    <Event Name="Clicked" Function="Frozen_Guide_Clicked(10);"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Frozen_Guide_Btn10_Tips">
+                    <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Frozen_Guide_Btn11_Frame">
+                <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,142.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,548.000000},{0.000000,116.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ButtonNULL" Name="Frozen_Guide_Btn11">
+                    <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,142.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="Tooltip" Value="#{BXJZH_240927_05}"/>
+                    <Property Name="PushedImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_WHTJ_Pushed"/>
+                    <Property Name="NormalImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_WHTJ_Normal"/>
+                    <Property Name="HoverImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_WHTJ_Hover"/>
+                    <Property Name="DisabledImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_WHTJ_Disabled"/>
+                    <Event Name="Clicked" Function="Frozen_Guide_Clicked(11);"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Frozen_Guide_Btn11_Tips">
+                    <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Frozen_Guide_Btn14_Frame">
+                <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,160.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,612.000000},{0.000000,116.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ButtonNULL" Name="Frozen_Guide_Btn14">
+                    <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,160.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="PushedImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_BXCYJ_Pushed"/>
+                    <Property Name="NormalImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_BXCYJ_Normal"/>
+                    <Property Name="HoverImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_BXCYJ_Hover"/>
+                    <Property Name="DisabledImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_BXCYJ_Disabled"/>
+                    <Property Name="Tooltip" Value="#{BXJZH_240927_05}"/>
+                    <Event Name="Clicked" Function="Frozen_Guide_Clicked(14);"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Frozen_Guide_Btn14_Tips">
+                    <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Frozen_Guide_Btn6_Frame">
+                <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,160.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,676.000000},{0.000000,80.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ButtonNULL" Name="Frozen_Guide_Btn6">
+                    <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,160.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="PushedImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_MHPPB_Pushed"/>
+                    <Property Name="NormalImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_MHPPB_Normal"/>
+                    <Property Name="HoverImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_MHPPB_Hover"/>
+                    <Property Name="DisabledImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_MHPPB_Disabled"/>
+                    <Property Name="Tooltip" Value="#{BXJZH_240927_05}"/>
+                    <Event Name="Clicked" Function="Frozen_Guide_Clicked(6);"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Frozen_Guide_Btn6_Tips">
+                    <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Frozen_Guide_Btn7_Frame">
+                <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,142.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,804.000000},{0.000000,116.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ButtonNULL" Name="Frozen_Guide_Btn7">
+                    <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,142.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="PushedImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_MSZC_Pushed"/>
+                    <Property Name="NormalImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_MSZC_Normal"/>
+                    <Property Name="HoverImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_MSZC_Hover"/>
+                    <Property Name="DisabledImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_MSZC_Disabled"/>
+                    <Property Name="Tooltip" Value="#{BXJZH_240927_05}"/>
+                    <Event Name="Clicked" Function="Frozen_Guide_Clicked(7);"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Frozen_Guide_Btn7_Tips">
+                    <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Frozen_Guide_Btn9_Frame">
+                <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,160.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,868.000000},{0.000000,80.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ButtonNULL" Name="Frozen_Guide_Btn9">
+                    <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,160.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="PushedImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_XRMGC_Pushed"/>
+                    <Property Name="NormalImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_XRMGC_Normal"/>
+                    <Property Name="HoverImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_XRMGC_Hover"/>
+                    <Property Name="DisabledImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_XRMGC_Disabled"/>
+                    <Property Name="Tooltip" Value="#{BXJZH_240927_05}"/>
+                    <Event Name="Clicked" Function="Frozen_Guide_Clicked(9);"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Frozen_Guide_Btn9_Tips">
+                    <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Frozen_Guide_Btn5_Frame">
+                <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,142.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,740.000000},{0.000000,80.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ButtonNULL" Name="Frozen_Guide_Btn5">
+                    <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,142.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="PushedImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_DDNG_Pushed"/>
+                    <Property Name="NormalImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_DDNG_Normal"/>
+                    <Property Name="HoverImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_DDNG_Hover"/>
+                    <Property Name="DisabledImage" Value="set:Frozen_Guide image:Frozen_Guide_Action_DDNG_Disabled"/>
+                    <Property Name="Tooltip" Value="#{BXJZH_240927_05}"/>
+                    <Event Name="Clicked" Function="Frozen_Guide_Clicked(5);"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Frozen_Guide_Btn5_Tips">
+                    <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,13.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Frozen_Guide_Btn4_Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,72.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,458.000000},{0.000000,156.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Frozen_Guide image:Frozen_Guide_HXL_Tips"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Frozen_Guide_Btn14_Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,53.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,650.000000},{0.000000,218.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Frozen_Guide image:Frozen_Guide_JF_Tips"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

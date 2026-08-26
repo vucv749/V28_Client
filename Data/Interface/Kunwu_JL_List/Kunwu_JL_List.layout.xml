@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="Kunwu_JL_List_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,200.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,210.000000},{0.500000,-215.000000}}"/>
+        <Window Type="TLBB_DragTitle" Name="Kunwu_JL_List_DragTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+            <Property Name="Font" Value="YouYuan11.25" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="Text" Value="#{KWCC_241219_69}" />
+            <Property Name="DragTarget" Value="Kunwu_JL_List_Frame" />
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="Kunwu_JL_List_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Kunwu_JL_List&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="Kunwu_JL_List_Close">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+            <Event Name="Clicked" Function="Kunwu_JL_List_Refuse_Click();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="Kunwu_JL_List_Client">
+            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+            <Window Type="TLBB_ListBoxCommon" Name="Kunwu_JL_List_List">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Event Name="ItemSelectionChanged" Function="Kunwu_JL_List_Selected();" />
+                <Event Name="MouseRClick" Function="Kunwu_JL_List_ShowTargetPet();" />
+            </Window>
+            <Window Type="TLBB_Frame_Lace5" Name="Kunwu_JL_List_Choose_Blank">
+                <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="Kunwu_JL_List_Choose_Button">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}}"/>
+                <Property Name="Text" Value="#{KWCC_241219_19}" />
+                <Event Name="Clicked" Function="Kunwu_JL_List_Choose_Click();" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="Kunwu_JL_List_Refuse_Button">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}}"/>
+                <Property Name="Text" Value="#{KWCC_241219_20}" />
+                <Event Name="Clicked" Function="Kunwu_JL_List_Refuse_Click();" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

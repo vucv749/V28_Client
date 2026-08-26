@@ -1,0 +1,261 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Bingxuejie_Yr">
+    <Property Name="UnifiedSize" Value="{{0.000000,1010.000000},{0.000000,660.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-505.000000},{0.500000,-330.000000}}"/>
+    <Event Name="Hidden" Function="Bingxuejie_Yr_OnHiden();" />
+    <Window Type="TLBB_ButtonNULL" Name="Bingxuejie_Yr_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,58.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-146.000000},{0.000000,116.000000}}"/>
+      <Property Name="PushedImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Close_Push"/>
+      <Property Name="NormalImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Close_Normal"/>
+      <Property Name="HoverImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Close_Hover"/>
+      <Property Name="DisabledImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Close_Disable"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Bingxuejie_Yr_OnHiden();" />
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Bingxuejie_Yr_DragTitle">
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-285.000000},{0.000000,134.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,108.000000},{0.000000,18.000000}}"/>
+      <Property Name="DragTarget" Value="Bingxuejie_Yr" />
+    </Window>    
+    <Window Type="TLBB_StaticImageNULL" Name="Bingxuejie_Yr_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,1010.000000},{0.000000,660.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+		  <Property Name="Image" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_BG"/>
+      <Window Type="TLBB_SimpleText" Name="Bingxuejie_Yr_Info">
+        <Property Name="UnifiedSize" Value="{{0.000000,552.000000},{0.000000,73.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-276.000000},{0.000000,157.000000}}"/>
+        <Property Name="Text" Value="#{DDBB_240912_12}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>        
+      <Window Type="TLBB_ButtonNULL" Name="Bingxuejie_Yr_Help">
+        <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-254.000000},{0.000000,202.000000}}"/>
+        <Property Name="PushedImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Help_P"/>
+        <Property Name="NormalImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Help_N"/>
+        <Property Name="HoverImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Help_H"/>
+        <Property Name="DisabledImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Help_D"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Bingxuejie_Yr_ShowHelp();"/>
+      </Window>      
+      <Window Type="DefaultWindow" Name="Bingxuejie_Yr_Client1">
+        <Property Name="UnifiedSize" Value="{{1.000000,-360.000000},{0.000000,290.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,250.000000}}"/>      
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="DefaultWindow" Name="Bingxuejie_Yr_Item1">
+          <Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,140.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,123.000000},{0.000000,122.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="Bingxuejie_Yr_Item1_Callable2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-38.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{DDBB_240912_13}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Bingxuejie_Yr_Item1_InfoBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,100.000000}}"/>
+            <Property Name="Image" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Finish"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Bingxuejie_Yr_Item1_InfoBK_Lock">
+            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,100.000000}}"/>
+            <Property Name="Image" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Lock"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+          </Window>          
+          <Window Type="TLBB_ButtonNULL" Name="Bingxuejie_Yr_Item1_GoToBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,100.000000}}"/>
+            <Property Name="PushedImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_GoTo_Push"/>
+            <Property Name="NormalImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_GoTo_Normal"/>
+            <Property Name="HoverImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_GoTo_Hover"/>
+            <Property Name="DisabledImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_GoTo_Disable"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Bingxuejie_Yr_Goto(1);"/>
+          </Window>
+        </Window>        
+        <Window Type="DefaultWindow" Name="Bingxuejie_Yr_Item2">
+          <Property Name="UnifiedSize" Value="{{0.000000,164.000000},{0.000000,140.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,360.000000},{0.000000,124.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="Bingxuejie_Yr_Item2_UnCallable_Icon">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-38.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{DDBB_240912_14}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>           
+          <Window Type="TLBB_StaticImageNULL" Name="Bingxuejie_Yr_Item2_InfoBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,100.000000}}"/>
+            <Property Name="Image" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Finish"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Bingxuejie_Yr_Item2_InfoBK_Lock">
+            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,100.000000}}"/>
+            <Property Name="Image" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Lock"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+          </Window>   
+          <Window Type="TLBB_ButtonNULL" Name="Bingxuejie_Yr_Item2_GoToBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.000000,100.000000}}"/>
+            <Property Name="PushedImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_GoTo_Push"/>
+            <Property Name="NormalImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_GoTo_Normal"/>
+            <Property Name="HoverImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_GoTo_Hover"/>
+            <Property Name="DisabledImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_GoTo_Disable"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Bingxuejie_Yr_Goto(2);"/>
+          </Window>                                  
+        </Window>                                                           
+      </Window>
+      <Window Type="TLBB_ProgressBXJYR" Name="Bingxuejie_Yr_EXP">
+        <Property Name="UnifiedSize" Value="{{1.000000,-569.000000},{0.000000,8.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,328.000000},{0.000000,570.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="CurrentProgress" Value="1.000000"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="Bingxuejie_Yr_Reward1">
+        <Property Name="UnifiedSize" Value="{{0.000000,95.000000},{0.000000,81.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,390.000000},{0.000000,552.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_SimpleText" Name="Bingxuejie_Yr_Text1">
+          <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-36.000000},{1.000000,-34.000000}}"/>
+          <Property Name="Text" Value="#{DDBB_240912_168}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="Bingxuejie_Yr_CatItem1">
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,49.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.000000,0.000000}}"/>
+          <Property Name="PushedImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Chest1_Push"/>
+          <Property Name="NormalImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Chest1_Normal"/>
+          <Property Name="HoverImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Chest1_Hover"/>
+          <Property Name="DisabledImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Chest1_Normal"/>
+          <Property Name="Tooltip" Value="#{DDBB_240912_174}"/>
+          <Event Name="Clicked" Function="Bingxuejie_Yr_Reward_OnRewardClick(1)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Bingxuejie_Yr_RedDot1">
+            <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Bingxuejie_Yr_Received1">
+          <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-74.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Anniversary01 image:Anniversary_YiLingQu"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Bingxuejie_Yr_Reward2">
+        <Property Name="UnifiedSize" Value="{{0.000000,95.000000},{0.000000,81.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,530.000000},{0.000000,552.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_SimpleText" Name="Bingxuejie_Yr_Text2">
+          <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-36.000000},{1.000000,-34.000000}}"/>
+          <Property Name="Text" Value="#{DDBB_240912_169}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="Bingxuejie_Yr_CatItem2">
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,49.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.000000,0.000000}}"/>
+          <Property Name="PushedImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Chest1_Push"/>
+          <Property Name="NormalImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Chest1_Normal"/>
+          <Property Name="HoverImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Chest1_Hover"/>
+          <Property Name="DisabledImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Chest1_Normal"/>
+          <Property Name="Tooltip" Value="#{DDBB_240912_175}"/>
+          <Event Name="Clicked" Function="Bingxuejie_Yr_Reward_OnRewardClick(2)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Bingxuejie_Yr_RedDot2">
+            <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Bingxuejie_Yr_Received2">
+          <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-74.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Anniversary01 image:Anniversary_YiLingQu"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Bingxuejie_Yr_Reward3">
+        <Property Name="UnifiedSize" Value="{{0.000000,95.000000},{0.000000,81.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,746.000000},{0.000000,540.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_SimpleText" Name="Bingxuejie_Yr_Text3">
+          <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-36.000000},{1.000000,-23.000000}}"/>
+          <Property Name="Text" Value="#{DDBB_240912_170}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="Bingxuejie_Yr_CatItem3">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{0.000000,0.000000}}"/>
+          <Property Name="PushedImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Chest2_Push"/>
+          <Property Name="NormalImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Chest2_Normal"/>
+          <Property Name="HoverImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Chest2_Hover"/>
+          <Property Name="DisabledImage" Value="set:Bingxuejie_Yr2 image:Bingxuejie_Yr_Chest2_Normal"/>
+          <Property Name="Tooltip" Value="#{DDBB_240912_176}"/>
+          <Event Name="Clicked" Function="Bingxuejie_Yr_Reward_OnRewardClick(3)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Bingxuejie_Yr_RedDot3">
+            <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-26.000000},{0.000000,1.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Bingxuejie_Yr_Received3">
+          <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-39.000000},{1.000000,-64.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Anniversary01 image:Anniversary_YiLingQu"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Bingxuejie_Yr_GiftTips">
+        <Property Name="UnifiedSize" Value="{{0.000000,118.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,168.000000},{0.000000,565.000000}}"/>
+        <Property Name="Text" Value="#{DDBB_240912_172}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Bingxuejie_Yr_GiftTips_Num"> 
+        <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,284.000000},{0.000000,565.000000}}"/>
+        <Property Name="Text" Value="#{DDBB_240912_134}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

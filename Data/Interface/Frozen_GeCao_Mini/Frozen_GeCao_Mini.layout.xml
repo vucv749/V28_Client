@@ -1,0 +1,114 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Frozen2" Name="Frozen_GeCao_Mini_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,316.000000},{0.000000,130.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-342.000000},{1.000000,-163.000000}}"/>
+    <Property Name="AttachEnabled" Value="true" />
+      <Window Type="DefaultWindow" Name="Frozen_GeCao_Mini_DragTitleBK">
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,19.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.000000,3.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+    <Window Type="TLBB_DragTitle" Name="Frozen_GeCao_Mini_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-48.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,2.000000}}"/>
+      <Property Name="Text" Value="#{BXDR_20240920_77}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="DragTarget" Value="Frozen_GeCao_Mini_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Frozen_GeCao_Mini_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Frozen_GeCao_Mini_Help_Clicked()"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="Frozen_GeCao_Mini_Small">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,4.000000}}"/>
+      <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+      <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+      <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+      <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Frozen_GeCao_Mini_Frame_Close_Clicked()"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="Frozen_GeCao_Mini_Client">
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,24.000000}}"/>
+      <Window Type="DefaultWindow" Name="Frozen_GeCao_Mini_Client1">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_GeCao_Mini_CountdownIcon">
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,10.000000}}"/>
+          <Property Name="Image" Value="set:DuoBao1 image:DuoBao1_MiniTime"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Mini_Countdown">
+          <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,129.000000},{0.000000,8.000000}}"/>
+          <Property Name="Text" Value="#{BXDR_20240920_80}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_StopWatch" Name="Frozen_GeCao_Mini_Countdown_Time">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,7.000000}}"/>
+          <Property Name="Text" Value="00:00"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Mini_Countdown_TimeFinish">
+          <Property Name="Visible" Value="False"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,7.000000}}"/>
+          <Property Name="Text" Value="#{BXDR_20240920_81}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="Frozen_GeCao_Mini_Client2">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,32.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Mini_Level">
+          <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{BXDR_20240920_82}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Mini_EXP">
+          <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{BXDR_20240920_83}" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Frozen_GeCao_Mini_Client3">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-39.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Mini_TeamNum">
+          <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-32.000000}}"/>
+          <Property Name="Text" Value="#{BXDR_20240920_119}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Mini_TeamRank">
+          <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{1.000000,-32.000000}}"/>
+          <Property Name="Text" Value="#{BXDR_20240920_120}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>      
+    </Window>
+  </Window>
+</GUILayout>

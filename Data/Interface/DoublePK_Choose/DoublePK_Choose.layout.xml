@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection2" Name="DoublePK_Choose_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,666.000000},{0.000000,460.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-333.000000},{0.120000,0.000000}}"/>
+    <Event Name="Hidden" Function="DoublePK_Choose_Clicked_Close();"/>
+    <Window Type="TLBB_SimpleText" Name="DoublePK_Choose_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Text" Value="#{SRPK_230331_50}"/>
+      <Property Name="VertFormatting" Value="VertCentred"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="DoublePK_Choose_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-56.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_PKBK1"/>
+      <Window Type="TLBB_SimpleText" Name="DoublePK_Choose_Gamer3Text">
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,2.000000}}"/>
+        <Property Name="Text" Value="#{SRPK_230331_58}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DoublePK_Choose_Gamer1Info">
+        <Property Name="UnifiedSize" Value="{{0.500000,-20.000000},{0.000000,80.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,280.000000}}"/>
+        <Property Name="Text" Value="#{SRPK_230331_53}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DoublePK_Choose_Gamer2Info">
+        <Property Name="UnifiedSize" Value="{{0.500000,-20.000000},{0.000000,80.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,10.000000},{0.000000,280.000000}}"/>
+        <Property Name="Text" Value="#{SRPK_230331_54}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DoublePK_Choose_Gamer1Image1">
+        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,360.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_Self"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DoublePK_Choose_Gamer1Image2">
+        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,360.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_Other"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DoublePK_Choose_Gamer2Image1">
+        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,590.000000},{0.000000,360.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_Self"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DoublePK_Choose_Gamer2Image2">
+        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,620.000000},{0.000000,360.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_Other"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_Animate" Name="DoublePK_Choose_TimeAnimate">
+        <Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,78.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-66.000000},{0.500000,-76.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Animate" Value="DoubleGame_Time3"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DoublePK_Choose_GamerOK">
+        <Property Name="UnifiedSize" Value="{{0.000000,278.000000},{0.000000,72.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-126.000000},{0.500000,0.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_JianKe"/>
+        <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_QinShi"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_Affection_ButtonCommon" Name="DoublePK_Choose_OK1">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.250000,-50.000000},{0.000000,370.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Text" Value="#{SRPK_230331_55}"/>
+        <Event Name="Clicked" Function="DoublePK_Choose_ClickSelect(2);"/>
+      </Window>
+      <Window Type="TLBB_Affection_ButtonCommon" Name="DoublePK_Choose_OK2">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.750000,-50.000000},{0.000000,370.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Text" Value="#{SRPK_230331_55}"/>
+        <Event Name="Clicked" Function="DoublePK_Choose_ClickSelect(1);"/>
+      </Window>
+    </Window> 
+  </Window>
+</GUILayout>

@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="MenPaiFirstOne_BattleSign_Frame">
+    <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.500000,-250.000000}" />
+    <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,500.000000}" />
+    <Event Name="Hidden" Function="MenPaiFirstOne_BattleSign_Close()" />
+    <Window Type="TLBB_DragTitle" Name="MenPaiFirstOne_BattleSign_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="MenPaiFirstOne_BattleSign_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{MPDYR_20220427_103}" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="MenPaiFirstOne_BattleSign_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="MenPaiFirstOne_BattleSign_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+      <Event Name="Clicked" Function="MenPaiFirstOne_BattleSign_Close()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="MenPaiFirstOne_BattleSign_Client">
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-56.000000}" />
+      <Window Type="TLBB_Frame_Lace3" Name="MenPaiFirstOne_BattleSign_InfoBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,70.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleSign_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{MPDYR_20220427_104}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="MenPaiFirstOne_BattleSign_InfoTips">
+          <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{1.000000,-20.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+          <Event Name="Clicked" Function="MenPaiFirstOne_BattleSign_Help_Click()" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="MenPaiFirstOne_BattleSign_MenPaiBK">
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,70.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{1.000000,-70.000000}" />
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="MenPaiFirstOne_BattleSign_MenPai1">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.000000,5.000000}}"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="Text" Value="#{MPDYR_20220427_40}"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleSign_MenPai_Click(0)" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="MenPaiFirstOne_BattleSign_MenPai2">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.000000,35.000000}}"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="Text" Value="#{MPDYR_20220427_41}"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleSign_MenPai_Click(1)" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="MenPaiFirstOne_BattleSign_MenPai3">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.000000,65.000000}}"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="Text" Value="#{MPDYR_20220427_42}"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleSign_MenPai_Click(2)" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="MenPaiFirstOne_BattleSign_MenPai4">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.000000,95.000000}}"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="Text" Value="#{MPDYR_20220427_43}"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleSign_MenPai_Click(3)" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="MenPaiFirstOne_BattleSign_MenPai5">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.000000,125.000000}}"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="Text" Value="#{MPDYR_20220427_44}"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleSign_MenPai_Click(4)" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="MenPaiFirstOne_BattleSign_MenPai6">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.000000,155.000000}}"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="Text" Value="#{MPDYR_20220427_45}"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleSign_MenPai_Click(5)" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="MenPaiFirstOne_BattleSign_MenPai7">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.000000,185.000000}}"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="Text" Value="#{MPDYR_20220427_46}"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleSign_MenPai_Click(6)" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="MenPaiFirstOne_BattleSign_MenPai8">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.000000,215.000000}}"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="Text" Value="#{MPDYR_20220427_47}"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleSign_MenPai_Click(7)" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="MenPaiFirstOne_BattleSign_MenPai9">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.000000,245.000000}}"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="Text" Value="#{MPDYR_20220427_48}"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleSign_MenPai_Click(8)" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="MenPaiFirstOne_BattleSign_MenPai10">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.000000,275.000000}}"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="Text" Value="#{MPDYR_20220427_176}"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleSign_MenPai_Click(10)" />
+        </Window>
+      </Window>
+
+      <Window Type="TLBB_Frame_Lace2" Name="MenPaiFirstOne_BattleSign_ListBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{1.000000,-140.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,70.000000}}"/>
+        <Window Type="TLBB_MultiColumnList" Name="MenPaiFirstOne_BattleSign_ListTitle">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="ForceHorzScrollbar" Value="False" />
+          <Property Name="SelectionMode" Value="RowSingle" />
+          <Property Name="ColumnHeader" Value="text:#{MPDYR_20220427_105} width:0.10 id:0" />
+          <Property Name="ColumnHeader" Value="text:#{MPDYR_20220427_106} width:0.45 id:1" />
+          <Property Name="ColumnHeader" Value="text:#{MPDYR_20220427_107} width:0.10 id:2" />
+          <Property Name="ColumnHeader" Value="text:#{MPDYR_20220427_108} width:0.10 id:3" />
+          <Property Name="ColumnHeader" Value="text:#{MPDYR_20220427_109} width:0.25 id:4" />
+        </Window>
+        <Window Type="TLBB_Frame_Lace2" Name="MenPaiFirstOne_BattleSign_ListItem1BK">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="Visible" Value="False"/>
+          <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleSign_ListItem1_Number">
+            <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleSign_ListItem1_Name">
+            <Property Name="UnifiedSize" Value="{{0.450000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.100000,0.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleSign_ListItem1_Level">
+            <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.550000,0.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleSign_ListItem1_Menpai">
+            <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.650000,0.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleSign_ListItem1_Time">
+            <Property Name="UnifiedSize" Value="{{0.250000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.750000,0.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+      </Window>
+
+      <Window Type="TLBB_ButtonCommon" Name="MenPaiFirstOne_BattleSign_Sign">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,10.000000},{1.000000,-40.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Text" Value="#{MPDYR_20220427_111}"/>
+        <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleSign_Sign_Click()" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="MenPaiFirstOne_BattleSign_F5">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{1.000000,-40.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Text" Value="#{MPDYR_20220427_150}"/>
+        <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleSign_Refresh_Click( )" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

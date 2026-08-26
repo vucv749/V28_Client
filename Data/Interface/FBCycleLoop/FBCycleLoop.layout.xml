@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="FBCycleLoop_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,860.000000},{0.000000,620.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-430.000000},{0.500000,-310.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="FBCycleLoop_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Text" Value="#{CTYM_251020_03}" />
+      <Property Name="DragTarget" Value="FBCycleLoop_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="FBCycleLoop_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="FBCycleLoop_OnClosed()" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="FBCycleLoop_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="FBCycleLoop_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Property Name="RiseOnClick" Value="False" />
+      <Window Type="TLBB_StaticImageNULL" Name="FBCycleLoop_BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,846.000000},{0.000000,564.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Tooltip" Value="#{QYFB_20231110_43}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:FBCycleLoop image:FBCycleLoop_BK"/>
+      <Window Type="DefaultWindow" Name="FBCycleLoop_Explain1">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,56.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Window Type="TLBB_SimpleText" Name="FBCycleLoop_Explain_text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-8.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+          <Property Name="Text" Value="#{CTYM_251020_02}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="VertFormatting" Value="TopAligned"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="FBCycleLoop_Explain2">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-80.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,76.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="DefaultWindow" Name="FBCycleLoop_LevelItem1">
+          <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ButtonNULL" Name="FBCycleLoop_LevelItem1_RewardBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,38.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,178.000000},{1.000000,-52.000000}}"/>
+            <Property Name="PushedImage" Value="set:FBCycleLoop image:FBCycleLoop_BtnP"/>
+            <Property Name="NormalImage" Value="set:FBCycleLoop image:FBCycleLoop_BtnN"/>
+            <Property Name="HoverImage" Value="set:FBCycleLoop image:FBCycleLoop_BtnH"/>
+            <Event Name="Clicked" Function="FBCycleLoop_Goto(1)"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="FBCycleLoop_LevelItem2">
+          <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ButtonNULL" Name="FBCycleLoop_LevelItem2_RewardBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,38.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{1.000000,-54.000000}}"/>
+            <Property Name="PushedImage" Value="set:FBCycleLoop image:FBCycleLoop_BtnP"/>
+            <Property Name="NormalImage" Value="set:FBCycleLoop image:FBCycleLoop_BtnN"/>
+            <Property Name="HoverImage" Value="set:FBCycleLoop image:FBCycleLoop_BtnH"/>
+            <Event Name="Clicked" Function="FBCycleLoop_Goto(2)"/>
+          </Window>
+        </Window>
+      </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

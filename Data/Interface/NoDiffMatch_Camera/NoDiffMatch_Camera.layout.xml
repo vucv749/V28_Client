@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="NoDiffMatch_Camera_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,474.000000},{0.000000,56.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-237.000000},{0.000000,98.000000}}"/>
+    <Property Name="AttachEnabled" Value="true" />
+    <Window Type="TLBB_DragTitle" Name="NoDiffMatch_Camera_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,3.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.0,-30.000000},{0.000000,20.000000}}"/>
+      <Property Name="DragTarget" Value="NoDiffMatch_Camera_Frame" />
+      <Property Name="AlwaysOnTop" Value="True" />
+    </Window>
+    <Window Type="TLBB_SimpleText" Name="NoDiffMatch_Camera_PageHeader">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-30.000000}}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="Text" Value="#{DFSZ_190613_122}" />
+      <Property Name="Font" Value="YouYuan11.25" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="NoDiffMatch_Camera_Small">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-26.000000},{0.000000,6.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+      <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed"/>
+      <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal"/>
+      <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="NoDiffMatch_Camera_OnShowTinyUI()"/>
+    </Window>
+    <Window Type="TLBB_Frame2" Name="NoDiffMatch_Camera_Client">
+      <Property Name="UnifiedSize" Value="{{1.0,0.000000},{1.0,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0.000000}}"/>
+      <Window Type="DefaultWindow" Name="NoDiffMatch_Camera_ButtonFrame">
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,28.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,21.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_ButtonCommon" Name="NoDiffMatch_Camera_East">
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,21.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{DFSZ_190613_124}" />
+          <Property Name="Tooltip" Value="#{ZBS_ZJS_120706_77}"/>
+          <Event Name="Clicked" Function="NoDiffMatch_Camera_East_Clicked();" />
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="NoDiffMatch_Camera_West">
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,21.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{DFSZ_190613_125}" />
+          <Property Name="Tooltip" Value="#{ZBS_ZJS_120706_77}"/>
+          <Event Name="Clicked" Function="NoDiffMatch_Camera_West_Clicked();" />
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="NoDiffMatch_Camera_South">
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,21.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,158.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{DFSZ_190613_126}" />
+          <Property Name="Tooltip" Value="#{ZBS_ZJS_120706_77}"/>
+          <Event Name="Clicked" Function="NoDiffMatch_Camera_South_Clicked();" />
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="NoDiffMatch_Camera_North">
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,21.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,236.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{DFSZ_190613_127}" />
+          <Property Name="Tooltip" Value="#{ZBS_ZJS_120706_77}"/>
+          <Event Name="Clicked" Function="NoDiffMatch_Camera_North_Clicked();" />
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="NoDiffMatch_Camera_Center">
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,21.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,314.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{DFSZ_190613_128}" />
+          <Property Name="Tooltip" Value="#{ZBS_ZJS_120706_77}"/>
+          <Event Name="Clicked" Function="NoDiffMatch_Camera_Center_Clicked();" />
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="NoDiffMatch_Camera_Player">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,21.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,392.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{DFSZ_190613_129}" />
+          <Property Name="Tooltip" Value="#{ZBS_ZJS_120706_77}"/>
+          <Event Name="Clicked" Function="NoDiffMatch_Camera_Player_Clicked();" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

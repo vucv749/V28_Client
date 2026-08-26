@@ -1,0 +1,144 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Phoenix_Rank_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,460.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.500000,-230.000000}}"/>
+    <Window Type="TLBB_StaticImageNULL" Name="Phoenix_Rank_DragonHead">
+      <Property Name="UnifiedSize" Value="{{0.000000,153.000000},{0.000000,51.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-76.000000},{0.000000,12.000000}}"/>
+      <Property Name="Image" Value="set:CommonFrame7 image:Phoenix_Fenghuang"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+
+    <Window Type="TLBB_MainFrame4" Name="Phoenix_Rank_FrameBk">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-42.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,42.000000}}"/>
+      <Event Name="Hidden" Function="PhoenixPlainWarMulti_Close();"/>
+      <Window Type="TLBB_DragTitle" Name="Phoenix_Rank_PageHeader_Name">
+        <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+        <Property Name="Text" Value="" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="DragTarget" Value="Phoenix_Rank_Frame" />
+        <Property Name="Text" Value="#{FHKF_20240315_84}" />
+      </Window>
+      <Window Type="TLBB_ButtonClose" Name="Phoenix_Rank_Small">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,20.000000}}"/>
+        <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomIn_Pushed"/>
+        <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomIn_Normal"/>
+        <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomIn_Hover"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Phoenix_Rank_CloseClicked();"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Phoenix_Rank_Exit">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.000000,38.000000}}"/>
+        <Property Name="Text" Value="#{FHKF_20240315_229}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Phoenix_Rank_ExitCliecked()"/>
+      </Window>
+
+      <Window Type="TLBB_ButtonFenYe2" Name="Phoenix_Rank_Client01_Btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,34.000000}}"/>
+        <Property Name="Text" Value="#{FHKF_20240315_85}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="Clicked" Function="Phoenix_Rank_Clicked(1);"/>
+      </Window>
+      <Window Type="TLBB_ButtonFenYe2" Name="Phoenix_Rank_Client02_Btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,34.000000}}"/>
+        <Property Name="Text" Value="#{FHKF_20240315_86}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="Clicked" Function="Phoenix_Rank_Clicked(2);"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="Phoenix_Rank_Client01">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-80.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,60.000000}}"/>
+        <Window Type="TLBB_MultiColumnList" Name="Phoenix_Rank_NUM_ListInfo">
+          <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}}"/>
+          <Property Name="ColumnHeader" Value="text:#{FHKF_20240315_87} width:0.10 id:0" />
+          <Property Name="ColumnHeader" Value="text:#{FHKF_20240315_88} width:0.10 id:1" />
+          <Property Name="ColumnHeader" Value="text:#{FHKF_20240315_93} width:0.25 id:2" />
+          <Property Name="ColumnHeader" Value="text:#{FHKF_20240315_94} width:0.25 id:3" />
+          <Property Name="ColumnHeader" Value="text:#{FHKF_20240315_95} width:0.15 id:4" />
+          <Property Name="ColumnHeader" Value="text:#{FHKF_20240315_176} width:0.15 id:5" />
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="ForceVertScrollbar" Value="False"/>
+          <Property Name="ColumnsSizable" Value="False"/>
+          <Property Name="ColumnsMovable" Value="False"/>
+          <Event Name="SelectionChanged" Function="Phoenix_Rank_ListInfo_On_SelectionChanged(1);"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Phoenix_Rank_Client02">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-100.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,60.000000}}"/>
+        <Window Type="TLBB_MultiColumnList" Name="Phoenix_Rank_DPS_ListInfo">
+          <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}}"/>
+          <Property Name="ColumnHeader" Value="text:#{FHKF_20240315_87} width:0.10 id:0" />
+          <Property Name="ColumnHeader" Value="text:#{FHKF_20240315_88} width:0.20 id:1" />
+          <Property Name="ColumnHeader" Value="text:#{FHKF_20240315_96} width:0.25 id:2" />
+          <Property Name="ColumnHeader" Value="text:#{FHKF_20240315_97} width:0.25 id:3" />
+          <Property Name="ColumnHeader" Value="text:#{FHKF_20240315_176} width:0.20 id:4" />
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="ForceVertScrollbar" Value="False"/>
+          <Property Name="ColumnsSizable" Value="False"/>
+          <Property Name="ColumnsMovable" Value="False"/>
+          <Event Name="SelectionChanged" Function="Phoenix_Rank_ListInfo_On_SelectionChanged(2);"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="Phoenix_Rank_Client03">
+        <Property Name="UnifiedSize" Value="{{1.000000,-26.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,378.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Phoenix_Rank_Client03_Text1">
+          <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,1.000000}}"/>
+          <Property Name="Text" Value="999999"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Phoenix_Rank_Client03_Text2">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.100000,8.000000},{0.000000,1.000000}}"/>
+          <Property Name="Text" Value="999999"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Phoenix_Rank_Client03_Text3">
+          <Property Name="UnifiedSize" Value="{{0.250000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.300000,8.000000},{0.000000,1.000000}}"/>
+          <Property Name="Text" Value="999999"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Phoenix_Rank_Client03_Text4">
+          <Property Name="UnifiedSize" Value="{{0.250000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.550000,8.000000},{0.000000,1.000000}}"/>
+          <Property Name="Text" Value="999999"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Phoenix_Rank_Client03_Text5">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.80000,8.000000},{0.000000,1.000000}}"/>
+          <Property Name="Text" Value="999999"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+      </Window>
+    </Window>
+
+  </Window>
+</GUILayout>

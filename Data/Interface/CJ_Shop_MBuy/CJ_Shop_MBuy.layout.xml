@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame1" Name="CJ_Shop_MBuy_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,312.000000},{0.000000,228.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-156.000000},{0.500000,-120.000000}}"/>
+		<Property Name="AlwaysOnTop" Value="True"/>
+		<Event Name="Hidden" Function="CJ_Shop_MBuy_Close_Clicked();"/>
+		<Window Type="TLBB_DragTitle" Name="CJ_Shop_MBuy_DragTitle">
+			<Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+			<Property Name="Text" Value="#{TLCJ_250319_18}"/>
+			<Property Name="Font" Value="YouYuan11.25"/>
+			<Property Name="DragTarget" Value="CJ_Shop_MBuy_Frame"/>
+		</Window>
+		<Window Type="TLBB_ButtonHelp" Name="CJ_Shop_MBuy_Help">
+			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+		</Window>
+		<Window Type="TLBB_ButtonClose" Name="CJ_Shop_MBuy_Close">
+			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Event Name="Clicked" Function="CJ_Shop_MBuy_Close_Clicked();"/>
+		</Window>
+		<Window Type="DefaultWindow" Name="CJ_Shop_MBuy_Client">
+			<Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-44.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+			<Property Name="RiseOnClick" Value="False"/>
+			<Window Type="TLBB_ActionButton" Name="CJ_Shop_MBuy_Item">
+				<Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+				<Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_MBuy_Item_Mask">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+					<Property Name="MouseRButtonHollow" Value="True"/>
+					<Property Name="MouseMoveHollow" Value="True"/>
+					<Property Name="MouseLButtonHollow" Value="True"/>
+					<Property Name="MouseHollow" Value="True"/>
+					<Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_MBuy_Item_BuyLimitNumBK">
+					<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,18.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+					<Property Name="MouseRButtonHollow" Value="True"/>
+					<Property Name="MouseMoveHollow" Value="True"/>
+					<Property Name="MouseLButtonHollow" Value="True"/>
+					<Property Name="MouseHollow" Value="True"/>
+					<Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_NameBK"/>
+					<Window Type="TLBB_SimpleText" Name="CJ_Shop_MBuy_Item_BuyLimitNum">
+						<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,-1.000000}}"/>
+						<Property Name="Text" Value="99"/>
+						<Property Name="MouseRButtonHollow" Value="True"/>
+						<Property Name="MouseMoveHollow" Value="True"/>
+						<Property Name="MouseLButtonHollow" Value="True"/>
+						<Property Name="MouseHollow" Value="True"/>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="TLBB_Frame_Lace3" Name="CJ_Shop_MBuy_ItemInfo">
+				<Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,64.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,4.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_MBuy_Item_WeekLimit">
+					<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_MBuy_Item_DayLimit">
+					<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+					<Property Name="MouseRButtonHollow" Value="True"/>
+					<Property Name="MouseMoveHollow" Value="True"/>
+					<Property Name="MouseLButtonHollow" Value="True"/>
+					<Property Name="MouseHollow" Value="True"/>
+					<Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_MBuy_Item_ForeverLimit">
+					<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Discount"/>
+          <Window Type="TLBB_SimpleText" Name="CJ_Shop_MBuy_Item_ForeverLimitText">
+            <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Text" Value="#{TLCJ_250319_29}"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+          </Window>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="CJ_Shop_MBuy_ItemInfo_Text">
+					<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,22.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+					<Property Name="Text" Value="#{}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="CJ_Shop_MBuy_ItemInfo_Lilianzhi2">
+					<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,22.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,34.000000}}"/>
+					<Property Name="Text" Value="#{}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="CJ_Shop_MBuy_BuyNumBK">
+				<Property Name="UnifiedSize" Value="{{0.000000,294.000000},{0.000000,24.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,70.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Window Type="TLBB_SimpleText" Name="CJ_Shop_MBuy_BuyNum_Text">
+					<Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+					<Property Name="Text" Value="#{HYCT_20210629_15}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+				</Window>
+				<Window Type="TLBB_EditBoxNormal" Name="CJ_Shop_MBuy_InputNumBK">
+					<Property Name="ValidationString" Value="[0-9]*"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,175.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,74.000000},{0.500000,-10.000000}}"/>
+					<Property Name="MaxTextLength" Value="6"/>
+					<Event Name="TextChanged" Function="CJ_Shop_MBuy_TextChanged();"/>
+				</Window>
+				<Window Type="TLBB_ButtonCommon" Name="CJ_Shop_MBuy_Max">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.500000,-10.000000}}"/>
+					<Property Name="Text" Value="#{TLCJ_250319_23}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Event Name="Clicked" Function="CJ_Shop_MBuy_CalMax();"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_SimpleTextFrame" Name="CJ_Shop_MBuy_Price">
+				<Property Name="UnifiedSize" Value="{{0.000000,294.000000},{0.000000,24.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,96.000000}}"/>
+				<Property Name="Text" Value="#{TLCJ_20240709_340}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Window Type="TLBB_SimpleText" Name="CJ_Shop_MBuy_PriceNum">
+					<Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{HYCT_20210629_20}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="HorzFormatting" Value="RightAligned"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_SimpleTextFrame" Name="CJ_Shop_MBuy_Cash">
+				<Property Name="UnifiedSize" Value="{{0.000000,294.000000},{0.000000,24.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,122.000000}}"/>
+				<Property Name="Text" Value="#{TLCJ_20240709_341}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Window Type="TLBB_SimpleText" Name="CJ_Shop_MBuy_CashNum">
+					<Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{HYCT_20210629_23}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="HorzFormatting" Value="RightAligned"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_Frame_Lace5" Name="CJ_Shop_MBuy_Blank">
+				<Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-31.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="CJ_Shop_MBuy_Submit">
+				<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-83.000000},{1.000000,-30.000000}}"/>
+				<Property Name="Text" Value="#{TLCJ_20240709_140}"/>
+				<Event Name="Clicked" Function="CJ_Shop_MBuy_OK_Clicked();"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="CJ_Shop_MBuy_Cancel">
+				<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-43.000000},{1.000000,-30.000000}}"/>
+				<Property Name="Text" Value="#{TLCJ_20240709_141}"/>
+				<Event Name="Clicked" Function="CJ_Shop_MBuy_Close_Clicked();"/>
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

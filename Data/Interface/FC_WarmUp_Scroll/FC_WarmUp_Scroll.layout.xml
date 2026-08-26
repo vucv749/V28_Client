@@ -1,0 +1,54 @@
+﻿<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="FC_WarmUp_Scroll_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,516.000000},{0.000000,338.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-258.000000},{0.500000,-169.000000}}"/>
+    <Event Name="Hidden" Function="FC_WarmUp_Scroll_Closed();"/>
+    <Window Type="TLBB_DragTitle" Name="FC_WarmUp_Scroll_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-72.000000},{0.000000,60.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,0.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="DragTarget" Value="FC_WarmUp_Scroll_Frame" />
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="FC_WarmUp_Scroll_DragTitle2">
+      <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="DragTarget" Value="FC_WarmUp_Scroll_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="FC_WarmUp_Scroll_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.000000,27.000000}}"/>
+      <Property Name="PushedImage" Value="set:Anniversary01 image:Anniversary_BtnPush"/>
+      <Property Name="NormalImage" Value="set:Anniversary01 image:Anniversary_BtnNormal"/>
+      <Property Name="HoverImage" Value="set:Anniversary01 image:Anniversary_BtnHover"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="FC_WarmUp_Scroll_Closed();"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="FC_WarmUp_Scroll_FrameBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_Scroll_LetterBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,516.000000},{0.000000,338.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:FC_WarmUp image:FC_WarmUp_Scroll_BK"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="FC_WarmUp_Scroll_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,24.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_SimpleText" Name="FC_WarmUp_Scroll_LetterText">
+          <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,100.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.000000,105.000000}}"/>
+          <Property Name="Text" Value="#{JOMY_20250403_57}"/>
+          <Property Name="Font" Value="YouYuan13"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="VertFormatting" Value="TopAligned"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

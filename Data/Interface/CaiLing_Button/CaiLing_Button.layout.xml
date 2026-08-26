@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="CaiLing_Button_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,178.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.50000,-100.000000},{0.500000,70.000000}}"/>
+    <Event Name="Hidden" Function="CaiLing_Button_OnHiden();"/>
+    <Window Type="TLBB_Animate" Name="CaiLing_Button_OnEffect">
+      <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,130.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-75.00000},{0.500000,-75.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="Animate" Value="CaiLing_Animate"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>   
+    <Window Type="DefaultWindow" Name="CaiLing_Button_Client">
+      <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,130.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-75.00000},{0.500000,-75.000000}}"/>
+      <Property Name="AttachEnabled" Value="True"/>
+      <Window Type="TLBB_StaticImageNULL" Name="CaiLing_Button_BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,130.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:CaiLingPic image:CaiLingPic_Btn_Kuang"/>
+      </Window>      
+      <Window Type="TLBB_ButtonNULL" Name="CaiLing_Button_Btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,130.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="PushedImage" Value="set:CaiLingPic image:CaiLingPic_Btn_Pushed"/>
+        <Property Name="NormalImage" Value="set:CaiLingPic image:CaiLingPic_Btn_Normal"/>
+        <Property Name="HoverImage" Value="set:CaiLingPic image:CaiLingPic_Btn_Hover"/>
+        <Property Name="DisabledImage" Value="set:CaiLingPic image:CaiLingPic_Btn_Disabled"/>     
+        <Event Name="Clicked" Function="CaiLing_Button_Click();"/>  
+      
+        <Window Type="TLBB_StaticImageNULL" Name="CaiLing_Button_TextBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,130.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/> 
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Image" Value="set:CaiLingPic image:CaiLingPic_Btn_Kuang"/>
+        </Window>        
+        <Window Type="DefaultWindow" Name="CaiLing_Button_OffEffectBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,80.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{0.500000,-40.000000}}"/>   
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>             
+          <Window Type="TLBB_StaticImageNULL" Name="CaiLing_Button_OffEffect">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,80.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{0.500000,-40.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>          
+            <Property Name="Image" Value="set:CaiLingPic image:CaiLingPic_Btn_Mask"/>
+          </Window>        
+        </Window>        
+      </Window>     
+
+    </Window>
+  </Window>
+</GUILayout>

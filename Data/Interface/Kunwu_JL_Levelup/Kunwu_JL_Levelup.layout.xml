@@ -1,0 +1,683 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="Kunwu_JL_Levelup_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,524.000000},{0.000000,700.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-262.000000},{0.500000,-350.000000}}"/>
+        <Event Name="Hidden" Function="Kunwu_JL_Levelup_OnHidden();" />
+        <Window Type="TLBB_DragTitle" Name="Kunwu_JL_Levelup_DragTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+            <Property Name="DragTarget" Value="Kunwu_JL_Levelup_Frame" />
+            <Window Type="TLBB_SimpleTextFrame" Name="Kunwu_JL_Levelup_SkillType_Text">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}" />
+                <Property Name="Font" Value="YouYuan11.25" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="#{JLYC_241217_57}" />
+            </Window>
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="Kunwu_JL_Levelup_Close">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+            <Event Name="Clicked" Function="Kunwu_JL_Levelup_CloseClicked();" />
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="Kunwu_JL_Levelup_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*PetSkillStudy&quot;);' />
+        </Window>
+        <Window Type="DefaultWindow" Name="Kunwu_JL_Levelup_Function_Frame">
+            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_JL_Levelup_Function_Text">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,128.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="Text" Value="#{JLYC_241217_58}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_Frame_Lace2" Name="Kunwu_JL_Levelup_Function_TopFrame">
+                <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,70.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,128.000000}}"/>
+                <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Levelup_Function_Top_Object_TitlePoint">
+                    <Property Name="UnifiedSize" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,21.000000},{0.000000,9.000000}}"/>
+                    <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Point"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Function_Top_Object_Text">
+                    <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,2.000000}}"/>
+                    <Property Name="Text" Value="#{JLYC_241217_128}"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+
+                <Window Type="TLBB_ActionButton" Name="Kunwu_JL_Levelup_Function_Top_ObjectBK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.500000,-13.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Levelup_Function_Top_Object">
+                    <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.500000,-12.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Image" Value="set:PetHeader1 image:PetHeader1_1"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Function_Top_Object_Text2">
+                    <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.000000,22.000000}}"/>
+                    <Property Name="Text" Value="#{}"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_ButtonCommon" Name="Kunwu_JL_Levelup_Function_Left_Button">
+                    <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{1.000000,-26.000000}}"/>
+                    <Property Name="Text" Value="#{JLYC_241217_116}"/>
+                    <Event Name="Clicked" Function="Kunwu_JL_Levelup_OpenPetList();"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Levelup_Function_Left_Name_TitlePoint">
+                    <Property Name="UnifiedSize" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,223.000000},{0.000000,9.000000}}"/>
+                    <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Point"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Function_Left_NameText">
+                    <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,232.000000},{0.000000,2.000000}}"/>
+                    <Property Name="Text" Value="#{JLYC_241217_129}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_JL_Levelup_Function_Left_Set1_Icon">
+                    <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,232.000000},{0.500000,-13.000000}}"/>
+                    <Event Name="Clicked" Function="Kunwu_JL_Levelup_Elf_Clicked(1)"/>
+                    <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Levelup_Function_Left_Set1_Icon_LockImg">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_JL_Levelup_Function_Left_Set2_Icon">
+                    <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,285.000000},{0.500000,-13.000000}}"/>
+                    <Event Name="Clicked" Function="Kunwu_JL_Levelup_Elf_Clicked(2)"/>
+                    <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Levelup_Function_Left_Set2_Icon_LockImg">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_JL_Levelup_Function_Left_Set3_Icon">
+                    <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,338.000000},{0.500000,-13.000000}}"/>
+                    <Event Name="Clicked" Function="Kunwu_JL_Levelup_Elf_Clicked(3)"/>
+                    <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Levelup_Function_Left_Set3_Icon_LockImg">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_JL_Levelup_Function_Left_Set4_Icon">
+                    <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,391.000000},{0.500000,-13.000000}}"/>
+                    <Event Name="Clicked" Function="Kunwu_JL_Levelup_Elf_Clicked(4)"/>
+                    <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Levelup_Function_Left_Set4_Icon_LockImg">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_JL_Levelup_Function_Left_Set5_Icon">
+                    <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,444.000000},{0.500000,-13.000000}}"/>
+                    <Event Name="Clicked" Function="Kunwu_JL_Levelup_Elf_Clicked(5)"/>
+                    <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Levelup_Function_Left_Set5_Icon_LockImg">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Kunwu_JL_Levelup_Function_RightFrame">
+                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-204.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,204.000000}}"/>
+                <Window Type="DefaultWindow" Name="Kunwu_JL_Levelup_Function_RightFrame_Top">
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-130.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Window Type="DefaultWindow" Name="Kunwu_JL_Levelup_Skill_Frame">
+                        <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,36.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,-90.000000},{0.000000,214.000000}}"/>
+                        <Window Type="TLBB_ActionButton" Name="Kunwu_JL_Levelup_Skill1">
+                            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,0.000000}}"/>
+                            <Property Name="DraggingEnabled" Value="True" />
+                            <Property Name="DragAcceptName" Value="W61" />
+                            <Event Name="RBClicked" Function="Kunwu_JL_Levelup_Elf_OnRBClicked(1);" />
+                            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Levelup_Skill1_LockImg">
+                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                                <Property Name="MouseRButtonHollow" Value="True"/>
+                                <Property Name="MouseMoveHollow" Value="True"/>
+                                <Property Name="MouseLButtonHollow" Value="True"/>
+                                <Property Name="MouseHollow" Value="True"/>
+                                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+                            </Window>
+                            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Levelup_Skill1_NumBK">
+                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-18.000000}}"/>
+                                <Property Name="MouseRButtonHollow" Value="True"/>
+                                <Property Name="MouseMoveHollow" Value="True"/>
+                                <Property Name="MouseLButtonHollow" Value="True"/>
+                                <Property Name="MouseHollow" Value="True"/>
+                                <Property Name="Image" Value="set:CommonFrame37 image:Lace50"/>
+                            </Window>
+                            <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Skill1_Num">
+                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-18.000000}}"/>
+                                <Property Name="Text" Value="#{JLYC_241217_147}"/>
+                                <Property Name="MouseRButtonHollow" Value="True"/>
+                                <Property Name="MouseMoveHollow" Value="True"/>
+                                <Property Name="MouseLButtonHollow" Value="True"/>
+                                <Property Name="MouseHollow" Value="True"/>
+                                <Property Name="HorzFormatting" Value="RightAligned"/>
+                                <Property Name="AlwaysOnTop" Value="True"/>
+                            </Window>
+
+                        </Window>
+                        <Window Type="TLBB_ActionButton" Name="Kunwu_JL_Levelup_Skill2">
+                            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,0.000000}}"/>
+                            <Property Name="DraggingEnabled" Value="True" />
+                            <Property Name="DragAcceptName" Value="W62" />
+                            <Event Name="RBClicked" Function="Kunwu_JL_Levelup_Elf_OnRBClicked(2);" />
+                            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Levelup_Skill2_LockImg">
+                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                                <Property Name="MouseRButtonHollow" Value="True"/>
+                                <Property Name="MouseMoveHollow" Value="True"/>
+                                <Property Name="MouseLButtonHollow" Value="True"/>
+                                <Property Name="MouseHollow" Value="True"/>
+                                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+                            </Window>
+                            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Levelup_Skill2_NumBK">
+                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-18.000000}}"/>
+                                <Property Name="MouseRButtonHollow" Value="True"/>
+                                <Property Name="MouseMoveHollow" Value="True"/>
+                                <Property Name="MouseLButtonHollow" Value="True"/>
+                                <Property Name="MouseHollow" Value="True"/>
+                                <Property Name="Image" Value="set:CommonFrame37 image:Lace50"/>
+                            </Window>
+                            <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Skill2_Num">
+                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-18.000000}}"/>
+                                <Property Name="Text" Value="#{JLYC_241217_147}"/>
+                                <Property Name="MouseRButtonHollow" Value="True"/>
+                                <Property Name="MouseMoveHollow" Value="True"/>
+                                <Property Name="MouseLButtonHollow" Value="True"/>
+                                <Property Name="MouseHollow" Value="True"/>
+                                <Property Name="HorzFormatting" Value="RightAligned"/>
+                                <Property Name="AlwaysOnTop" Value="True"/>
+                            </Window>
+                        </Window>
+                        <Window Type="TLBB_ActionButton" Name="Kunwu_JL_Levelup_Skill3">
+                            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.500000,34.000000},{0.000000,0.000000}}"/>
+                            <Property Name="DraggingEnabled" Value="True" />
+                            <Property Name="DragAcceptName" Value="W63" />
+                            <Event Name="RBClicked" Function="Kunwu_JL_Levelup_Elf_OnRBClicked(3);" />
+                            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Levelup_Skill3_LockImg">
+                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                                <Property Name="MouseRButtonHollow" Value="True"/>
+                                <Property Name="MouseMoveHollow" Value="True"/>
+                                <Property Name="MouseLButtonHollow" Value="True"/>
+                                <Property Name="MouseHollow" Value="True"/>
+                                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+                            </Window>
+                            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Levelup_Skill3_NumBK">
+                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-18.000000}}"/>
+                                <Property Name="MouseRButtonHollow" Value="True"/>
+                                <Property Name="MouseMoveHollow" Value="True"/>
+                                <Property Name="MouseLButtonHollow" Value="True"/>
+                                <Property Name="MouseHollow" Value="True"/>
+                                <Property Name="Image" Value="set:CommonFrame37 image:Lace50"/>
+                            </Window>
+                            <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Skill3_Num">
+                                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-18.000000}}"/>
+                                <Property Name="Text" Value="#{JLYC_241217_147}"/>
+                                <Property Name="MouseRButtonHollow" Value="True"/>
+                                <Property Name="MouseMoveHollow" Value="True"/>
+                                <Property Name="MouseLButtonHollow" Value="True"/>
+                                <Property Name="MouseHollow" Value="True"/>
+                                <Property Name="HorzFormatting" Value="RightAligned"/>
+                                <Property Name="AlwaysOnTop" Value="True"/>
+                            </Window>
+                        </Window>
+                    </Window>
+                    <Window Type="TLBB_ButtonCheck" Name="Kunwu_JL_Levelup_Info_Item">
+                        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,-87.000000},{0.000000,286.000000}}"/>
+                        <Property Name="Tooltip" Value="#{JLYC_241217_199}"/>
+                        <Event Name="MouseLButtonDown" Function="Kunwu_JL_Levelup_Protect()"/>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Info_Item_Text1">
+                        <Property Name="UnifiedSize" Value="{{0.000000,182.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,-69.000000},{0.000000,282.000000}}"/>
+                        <Property Name="Text" Value="#{JLYC_241217_200}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Info_Item_Text2">
+                        <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,-140.000000},{0.000000,282.000000}}"/>
+                        <Property Name="Text" Value="#{JLYC_241217_198}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="HorzFormatting" Value="HorzCentred"/>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Info1_Text">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,194.000000}}"/>
+                        <Property Name="Text" Value="#{JLYC_241217_119}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="HorzFormatting" Value="HorzCentred"/>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Info2_Text">
+                        <Property Name="UnifiedSize" Value="{{0.000000,185.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="#{JLYC_241217_174}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="HorzFormatting" Value="HorzCentred"/>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Info2_Text2">
+                        <Property Name="UnifiedSize" Value="{{0.000000,185.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-215.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="#{JLYC_241217_174}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="HorzFormatting" Value="HorzCentred"/>
+                    </Window>
+                    <Window Type="TLBB_Frame_Lace2" Name="Kunwu_JL_Levelup_Zizhi1">
+                        <Property Name="UnifiedSize" Value="{{0.000000,185.000000},{0.000000,165.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,22.000000}}"/>
+                        <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Levelup_Info2_Title1BK">
+                            <Property Name="UnifiedSize" Value="{{1.000000,-3.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                            <Property Name="Image" Value="set:Talent image:Talent_RightBK"/>
+                            <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Info2_Title1">
+                                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.000000,0.000000}}"/>
+                                <Property Name="Text" Value="#{JLYC_241217_175}"/>
+                                <Property Name="RiseOnClick" Value="False"/>
+                                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                            </Window>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Info2_Name">
+                            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.000000,20.000000}}"/>
+                            <Property Name="Text" Value="#{JLYC_241217_177}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                            <Property Name="HorzFormatting" Value="HorzCentred"/>
+                        </Window>
+                        <Window Type="TLBB_ButtonNULL" Name="Kunwu_JL_Levelup_Zizhi1_Lookup">
+                            <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,23.000000}}"/>
+                            <Property Name="Tooltip" Value="#{JLYC_241217_172}"/>
+                            <Property Name="PushedImage" Value="set:Button7 image:Friend_Serach_Pushed"/>
+                            <Property Name="NormalImage" Value="set:Button7 image:Friend_Serach_Normal"/>
+                            <Property Name="HoverImage" Value="set:Button7 image:Friend_Serach_Hover"/>
+                            <Property Name="DisabledImage" Value="set:Button7 image:Friend_Serach_Disable"/>
+                            <Event Name="Clicked" Function="Kunwu_JL_Levelup_OpenSkill();"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Levelup_Info2_Title2BK">
+                            <Property Name="UnifiedSize" Value="{{1.000000,-3.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,42.000000}}"/>
+                            <Property Name="Image" Value="set:Talent image:Talent_RightBK"/>
+                            <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Info2_Title2">
+                                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.000000,0.000000}}"/>
+                                <Property Name="Text" Value="#{JLYC_241217_176}"/>
+                                <Property Name="RiseOnClick" Value="False"/>
+                                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                            </Window>
+                        </Window>
+                        <Window Type="DefaultWindow" Name="Kunwu_JL_Levelup_Info2">
+                            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-56.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
+                            <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Attribute1_Text1">
+                                <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,20.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,4.000000}}"/>
+                                <Property Name="Text" Value="#{}" />
+                                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                                <Property Name="VertFormatting" Value="VertCentred" />
+                                <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Attribute1_Text2">
+                                    <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+                                    <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.000000,0.000000}}"/>
+                                    <Property Name="Text" Value="" />
+                                    <Property Name="HorzFormatting" Value="RightAligned"/>
+                                </Window>
+                            </Window>
+                            <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Attribute2_Text1">
+                                <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,20.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,25.000000}}"/>
+                                <Property Name="Text" Value="#{}" />
+                                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                                <Property Name="VertFormatting" Value="VertCentred" />
+                                <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Attribute2_Text2">
+                                    <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+                                    <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.000000,0.000000}}"/>
+                                    <Property Name="Text" Value="" />
+                                    <Property Name="HorzFormatting" Value="RightAligned"/>
+                                </Window>
+                            </Window>
+                            <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Attribute3_Text1">
+                                <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,20.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,46.000000}}"/>
+                                <Property Name="Text" Value="#{}" />
+                                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                                <Property Name="VertFormatting" Value="VertCentred" />
+                                <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Attribute3_Text2">
+                                    <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+                                    <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.000000,0.000000}}"/>
+                                    <Property Name="Text" Value="" />
+                                    <Property Name="HorzFormatting" Value="RightAligned"/>
+                                </Window>
+                            </Window>
+                            <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Attribute4_Text1">
+                                <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,20.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,67.000000}}"/>
+                                <Property Name="Text" Value="#{}" />
+                                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                                <Property Name="VertFormatting" Value="VertCentred" />
+                                <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Attribute4_Text2">
+                                    <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+                                    <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.000000,0.000000}}"/>
+                                    <Property Name="Text" Value="" />
+                                    <Property Name="HorzFormatting" Value="RightAligned"/>
+                                </Window>
+                            </Window>
+                            <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Attribute5_Text1">
+                                <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,20.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,88.000000}}"/>
+                                <Property Name="Text" Value="#{}" />
+                                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                                <Property Name="VertFormatting" Value="VertCentred" />
+                                <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Attribute5_Text2">
+                                    <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+                                    <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.000000,0.000000}}"/>
+                                    <Property Name="Text" Value="" />
+                                    <Property Name="HorzFormatting" Value="RightAligned"/>
+                                </Window>
+                            </Window>
+                        </Window>
+                    </Window>
+                    <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Levelup_Arrow">
+                        <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,28.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,-15.000000},{0.000000,90.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="Image" Value="set:Button13 image:Btn_Right_Normal"/>
+                    </Window>
+                    <Window Type="TLBB_Frame_Lace2" Name="Kunwu_JL_Levelup_Zizhi2">
+                        <Property Name="UnifiedSize" Value="{{0.000000,185.000000},{0.000000,165.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-215.000000},{0.000000,22.000000}}"/>
+                        <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Levelup_Info3_Title1BK">
+                            <Property Name="UnifiedSize" Value="{{1.000000,-3.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+                            <Property Name="Image" Value="set:Talent image:Talent_RightBK"/>
+                            <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Info3_Title1">
+                                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.000000,0.000000}}"/>
+                                <Property Name="Text" Value="#{JLYC_241217_175}"/>
+                                <Property Name="RiseOnClick" Value="False"/>
+                                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                            </Window>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Info3_Name">
+                            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.000000,20.000000}}"/>
+                            <Property Name="Text" Value="#{JLYC_241217_177}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                            <Property Name="HorzFormatting" Value="HorzCentred"/>
+                        </Window>
+                        <Window Type="TLBB_ButtonNULL" Name="Kunwu_JL_Levelup_Zizhi2_Lookup">
+                            <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,23.000000}}"/>
+                            <Property Name="Tooltip" Value="#{JLYC_241217_172}"/>
+                            <Property Name="PushedImage" Value="set:Button7 image:Friend_Serach_Pushed"/>
+                            <Property Name="NormalImage" Value="set:Button7 image:Friend_Serach_Normal"/>
+                            <Property Name="HoverImage" Value="set:Button7 image:Friend_Serach_Hover"/>
+                            <Property Name="DisabledImage" Value="set:Button7 image:Friend_Serach_Disable"/>
+                            <Event Name="Clicked" Function="Kunwu_JL_Levelup_OpenSkill();"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Levelup_Info3_Title2BK">
+                            <Property Name="UnifiedSize" Value="{{1.000000,-3.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,42.000000}}"/>
+                            <Property Name="Image" Value="set:Talent image:Talent_RightBK"/>
+                            <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Info3_Title2">
+                                <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.000000,0.000000}}"/>
+                                <Property Name="Text" Value="#{JLYC_241217_176}"/>
+                                <Property Name="RiseOnClick" Value="False"/>
+                                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                            </Window>
+                        </Window>
+                        <Window Type="DefaultWindow" Name="Kunwu_JL_Levelup_Info3">
+                            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-56.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
+                            <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Attribute6_Text1">
+                                <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,20.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,4.000000}}"/>
+                                <Property Name="Text" Value="#{}" />
+                                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                                <Property Name="VertFormatting" Value="VertCentred" />
+                                <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Attribute6_Text2">
+                                    <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+                                    <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.000000,0.000000}}"/>
+                                    <Property Name="Text" Value="" />
+                                    <Property Name="HorzFormatting" Value="RightAligned"/>
+                                </Window>
+                            </Window>
+                            <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Attribute7_Text1">
+                                <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,20.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,25.000000}}"/>
+                                <Property Name="Text" Value="#{}" />
+                                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                                <Property Name="VertFormatting" Value="VertCentred" />
+                                <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Attribute7_Text2">
+                                    <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+                                    <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.000000,0.000000}}"/>
+                                    <Property Name="Text" Value="" />
+                                    <Property Name="HorzFormatting" Value="RightAligned"/>
+                                </Window>
+                            </Window>
+                            <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Attribute8_Text1">
+                                <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,20.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,46.000000}}"/>
+                                <Property Name="Text" Value="#{}" />
+                                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                                <Property Name="VertFormatting" Value="VertCentred" />
+                                <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Attribute8_Text2">
+                                    <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+                                    <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.000000,0.000000}}"/>
+                                    <Property Name="Text" Value="" />
+                                    <Property Name="HorzFormatting" Value="RightAligned"/>
+                                </Window>
+                            </Window>
+                            <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Attribute9_Text1">
+                                <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,20.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,67.000000}}"/>
+                                <Property Name="Text" Value="#{}" />
+                                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                                <Property Name="VertFormatting" Value="VertCentred" />
+                                <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Attribute9_Text2">
+                                    <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+                                    <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.000000,0.000000}}"/>
+                                    <Property Name="Text" Value="" />
+                                    <Property Name="HorzFormatting" Value="RightAligned"/>
+                                </Window>
+                            </Window>
+                            <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Attribute10_Text1">
+                                <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,20.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,88.000000}}"/>
+                                <Property Name="Text" Value="#{}" />
+                                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                                <Property Name="VertFormatting" Value="VertCentred" />
+                                <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Attribute10_Text2">
+                                    <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+                                    <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.000000,0.000000}}"/>
+                                    <Property Name="Text" Value="" />
+                                    <Property Name="HorzFormatting" Value="RightAligned"/>
+                                </Window>
+                            </Window>
+                        </Window>
+                    </Window>
+                    <Window Type="TLBB_Frame_Lace1" Name="Kunwu_JL_Levelup_SuccessFrame">
+                        <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,22.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,-78.000000},{0.000000,254.000000}}"/>
+                        <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_SuccessText">
+                            <Property Name="UnifiedSize" Value="{{1.00000,-30.000000},{1.000000,0.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,0.000000}}"/>
+                            <Property Name="Text" Value="#{JLYC_241217_105}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                            <Property Name="HorzFormatting" Value="LeftAligned"/>
+                            <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Success">
+                                <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,20.000000}}"/>
+                                <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,1.000000}}"/>
+                                <Property Name="Text" Value="100%"/>
+                                <Property Name="RiseOnClick" Value="False"/>
+                                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                            </Window>
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Type="DefaultWindow" Name="Kunwu_JL_Levelup_Function_RightFrame_Mid">
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-130.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Down_Text">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{0.000000,22.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,124.000000}}"/>
+                        <Property Name="Text" Value="#{JLYC_241217_118}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="HorzFormatting" Value="HorzCentred"/>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_JL_Levelup_MoneyInfo">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,22.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{1.000000,-89.000000}}"/>
+                    <Property Name="Text" Value="#{JLYC_241217_22}" />
+                    <Window Type="TLBB_Money" Name="Kunwu_JL_Levelup_Money">
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
+                        <Property Name="CopperIcon" Value="set:Button6 image:Lace_JiaoziTong" />
+                        <Property Name="GoldIcon" Value="set:Button6 image:Lace_JiaoziJin" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="MoneyNumber" Value="0" />
+                        <Property Name="SilverIcon" Value="set:Button6 image:Lace_JiaoziYin" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_JL_Levelup_SelfJiaozi_Info">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,22.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{1.000000,-67.000000}}"/>
+                    <Property Name="Text" Value="#{JLYC_241217_24}" />
+                    <Window Type="TLBB_Money" Name="Kunwu_JL_Levelup_SelfJiaozi">
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
+                        <Property Name="CopperIcon" Value="set:Button6 image:Lace_JiaoziTong" />
+                        <Property Name="GoldIcon" Value="set:Button6 image:Lace_JiaoziJin" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="MoneyNumber" Value="0" />
+                        <Property Name="SilverIcon" Value="set:Button6 image:Lace_JiaoziYin" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_JL_Levelup_SelfMoney_Info">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,22.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{1.000000,-45.000000}}"/>
+                    <Property Name="Text" Value="#{JLYC_241217_26}" />
+                    <Window Type="TLBB_Money" Name="Kunwu_JL_Levelup_SelfMoney">
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="MoneyNumber" Value="0" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_Frame_Lace5" Name="Kunwu_JL_Levelup_Blank">
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-21.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+                    <Window Type="TLBB_ButtonCheck" Name="Kunwu_JL_Levelup_Button">
+                        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,4.000000}}"/>
+                        <Property Name="Tooltip" Value="#{JLYC_241217_230}"/>
+                        <Event Name="MouseLButtonDown" Function="Kunwu_JL_Levelup_YBPayConfirm()"/>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Button_Text1">
+                        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="#{JLYC_241217_233}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                    </Window>
+
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_JL_Levelup_ConsumptionText">
+                    <Property Name="UnifiedSize" Value="{{1.00000,-40.000000},{0.000000,22.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{1.000000,-111.000000}}"/>
+                    <Property Name="Text" Value="#{JLYC_241217_122}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Consumption">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="#{}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="HorzFormatting" Value="RightAligned"/>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_JL_Levelup_SpiritualityText">
+                    <Property Name="UnifiedSize" Value="{{1.00000,-40.000000},{0.000000,22.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{1.000000,-133.000000}}"/>
+                    <Property Name="Text" Value="#{JLYC_241217_121}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Levelup_Spirituality">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="#{}"/>
+                        <Property Name="HorzFormatting" Value="RightAligned"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_ButtonCommon" Name="Kunwu_JL_Levelup_Accept">
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
+                    <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}" />
+                    <Property Name="Text" Value="#{JLYC_241217_62}" />
+                    <Event Name="Clicked" Function="Kunwu_JL_Levelup_OK_Clicked();" />
+                </Window>
+                <Window Type="TLBB_ButtonCommon" Name="Kunwu_JL_Levelup_Cancel">
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+                    <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}" />
+                    <Property Name="Text" Value="#{JLYC_241217_63}" />
+                    <Event Name="Clicked" Function="Kunwu_JL_Levelup_CloseClicked();" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

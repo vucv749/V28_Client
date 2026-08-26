@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame2" Name="CJ_Guide_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,605.000000},{0.000000,455.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.500000,-229.000000}}"/>
+		<Window Type="TLBB_DragTitle" Name="CJ_Guide_DragTitle">
+			<Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,4.000000}}"/>
+			<Property Name="DragTarget" Value="CJ_Guide_Frame"/>
+			<Window Type="TLBB_SimpleText" Name="CJ_Guide_PageHeader">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+				<Property Name="Text" Value="#{TLCJ_20240709_282}"/>
+				<Property Name="HorzFormatting" Value="HorzCentred"/>
+				<Property Name="Font" Value="YouYuan11.25"/>
+			</Window>
+		</Window>
+    <Window Type="TLBB_ButtonHelp" Name="CJ_Guide_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="CJ_Guide_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}}"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Event Name="Clicked" Function="CJ_Guide_OnClose()"/>
+		</Window>
+		<Window Type="DefaultWindow" Name="CJ_Guide_Client">
+			<Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,421.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,29.000000}}"/>
+
+			<Window Type="TLBB_ButtonNULL" Name="CJ_Guide_LeftArrow">
+				<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,60.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-30.000000}}"/>
+				<Property Name="PushedImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowL_Pushed"/>
+				<Property Name="NormalImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowL_Normal"/>
+				<Property Name="HoverImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowL_Hover"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+				<Event Name="Clicked" Function="CJ_Guide_Page_Left()"/>
+			</Window>
+			<Window Type="TLBB_ButtonNULL" Name="CJ_Guide_RightArrow">
+				<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,60.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.500000,-30.000000}}"/>
+				<Property Name="PushedImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowR_Pushed"/>
+				<Property Name="NormalImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowR_Normal"/>
+				<Property Name="HoverImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowR_Hover"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+				<Event Name="Clicked" Function="CJ_Guide_Page_Right()"/>
+			</Window>	
+			<Window Type="TLBB_StaticImageNULL" Name="CJ_Guide_ImageBk_01">
+				<Property Name="UnifiedSize" Value="{{0.000000,591.000000},{0.000000,421.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Property Name="Image" Value="set:CJ_Guide1 image:CJ_Guide_Image1"/>
+			</Window>		
+		</Window>
+
+		
+
+	</Window>
+</GUILayout>

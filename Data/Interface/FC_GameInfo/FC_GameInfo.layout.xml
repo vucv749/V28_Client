@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="FC_GameInfo_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,580.000000},{0.000000,90.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-290.000000},{0.000000,140.000000}}"/>
+    <Property Name="AlwaysOnTop" Value="True"/>
+    <Property Name="MouseRButtonHollow" Value="True"/>
+    <Property Name="MouseMoveHollow" Value="True"/>
+    <Property Name="MouseLButtonHollow" Value="True"/>
+    <Property Name="MouseHollow" Value="True"/>
+    <Event Name="Hidden" Function="FC_GameInfo_OnHide();" />
+    <Window Type="DefaultWindow" Name="FC_GameInfo_Left">
+      <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,38.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,12.000000}}"/>
+      <Window Type="TLBB_SimpleText" Name="FC_GameInfo_Left_Text">
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.000000,-29.000000}}"/>
+        <Property Name="Text" Value="Name"/>
+        <Property Name="HorzFormatting" Value="RightAligned"/>
+        <Property Name="Font" Value="SongTiBmp12"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="FC_GameInfo_Middle">
+      <Property Name="UnifiedSize" Value="{{0.000000,542.000000},{0.000000,104.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-269.000000},{0.500000,-50.500000}}"/>
+      <Property Name="Image" Value="set:FC_Battle image:Battle_BK"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="FC_GameInfo_Right">
+      <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,38.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-180.000000},{0.500000,12.000000}}"/>
+      <Window Type="TLBB_SimpleText" Name="FC_GameInfo_Right_Text">
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{1.000000,-29.000000}}"/>
+        <Property Name="Text" Value="Name"/>
+        <Property Name="HorzFormatting" Value="LeftAligned"/>
+        <Property Name="Font" Value="SongTiBmp12"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="FC_GameInfo_Frame_BK">
+      <Property Name="UnifiedSize" Value="{{0.000000,194.000000},{0.000000,66.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-97.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="Image" Value="set:FC_Battle image:Battle_BK_1"/>
+    </Window>
+  </Window>
+</GUILayout>

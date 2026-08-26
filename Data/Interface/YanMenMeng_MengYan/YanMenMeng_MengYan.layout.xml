@@ -1,0 +1,106 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="YanMenMeng_MengYan">
+    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+    <Property Name="MouseRButtonHollow" Value="True"/>
+    <Property Name="MouseMoveHollow" Value="True"/>
+    <Property Name="MouseLButtonHollow" Value="True"/>
+    <Property Name="MouseHollow" Value="True"/>
+    <Window Type="Falagard/PS" Name="YanMenMeng_MengYan_MengYanTime">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.00000,0.000000}}"/>
+      <Property Name="Effect" Value="UI_pm_yanwu"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="EffectAuto" Value="True"/>
+      <Window Type="DefaultWindow" Name="YanMenMeng_MengYanBK1">
+        <Property Name="UnifiedSize" Value="{{0.2000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="YanMenMeng_MengYanBK2">
+        <Property Name="UnifiedSize" Value="{{1.0000000,0.000000},{0.200000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="YanMenMeng_MengYanBK3">
+        <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-240.000000},{0.000000,0.000000}}"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="YanMenMeng_MengYanBK4">
+        <Property Name="UnifiedSize" Value="{{0.500000,-220.000000},{0.000000,76.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-76.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="YanMenMeng_MengYanBK5">
+        <Property Name="UnifiedSize" Value="{{0.500000,-220.000000},{0.000000,76.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,220.000000},{1.000000,-76.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_MainFrameNULL" Name="YanMenMeng_MengYan_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,360.000000},{0.000000,100.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-400.000000},{1.000000,-248.000000}}"/>
+      <Event Name="Hidden" Function="YanMenMeng_MengYan_OnHiden()"/>
+      <Window Type="TLBB_StaticImageNULL" Name="YanMenMeng_MengYan_Frame_Client">
+        <Property Name="UnifiedSize" Value="{{0.000000,360.000000},{0.000000,100.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:YanMenMeng image:YanMenMengBK1"/>
+        <Window Type="TLBB_StaticImageNULL" Name="YanMenMeng_MengYan_info2">
+          <Property Name="UnifiedSize" Value="{{0.000000,229.000000},{0.000000,56.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,18.000000}}"/>
+          <Property Name="Image" Value="set:YanMenMeng image:YanMenMeng_MengYanup"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="YanMenMeng_MengYan_info">
+          <Property Name="UnifiedSize" Value="{{0.000000,229.000000},{0.000000,56.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,18.000000}}"/>
+          <Property Name="Image" Value="set:YanMenMeng image:YanMenMeng_MengYanTime"/>
+          <Window Type="TLBB_SimpleText" Name="YanMenMeng_MengYan_infoText">
+            <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{YMMJ_230626_57}"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_StopWatch" Name="YanMenMeng_MengYan_Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-106.000000},{0.000000,30.000000}}"/>
+            <Property Name="Text" Value="#{YMMJ_230626_58}"/>
+            <Property Name="Font" Value="YouYuan13"/>
+            <Property Name="TextColor" Value="FFFF0000"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+            <Event Name="ReachedZero" Function="YanMenMeng_MengYan_OnTimerEnd();"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="YanMenMeng_MengYan_Text2">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,168.000000},{0.000000,70.000000}}"/>
+          <Property Name="Text" Value="#{YMMJ_230626_60}"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="YanMenMeng_MengYan_FeelGoodProgressbk">
+          <Property Name="UnifiedSize" Value="{{0.000000,246.000000},{0.000000,8.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,87.0000000},{0.000000,75.000000}}" />
+          <Window Type="TLBB_ProgressPropertyPurple2" Name="YanMenMeng_MengYan_FeelGoodProgress">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.0000000},{0.000000,0.000000}}" />
+            <Property Name="CurrentProgress" Value="1.0" />
+            <Property Name="EffectColor" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="EffectColorLevel" Value="index:0 tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="MoveSpeed" Value="1" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YanMenMeng_MengYan_Help">
+          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,74.000000},{0.000000,81.000000}}"/>
+          <Event Name="Clicked" Function="YanMenMeng_MengYan_ShowHelp()"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="PushedImage" Value="set:YanMenMeng image:YanMenMeng_HelpP"/>
+          <Property Name="NormalImage" Value="set:YanMenMeng image:YanMenMeng_HelpN"/>
+          <Property Name="HoverImage" Value="set:YanMenMeng image:YanMenMeng_HelpH"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame0" Name="Kunwu_TuJian_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,550.000000},{0.000000,384.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-275.000000},{0.500000,-192.000000}}"/>
+        <Event Name="Hidden" Function="Kunwu_TuJian_OnHidden();" />
+        <Window Type="TLBB_DragTitle" Name="Kunwu_TuJian_DragTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,11.000000}}"/>
+            <Property Name="DragTarget" Value="Kunwu_TuJian_Frame" />
+            <Window Type="TLBB_SimpleText" Name="Kunwu_TuJian_PageHeader">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="Font" Value="YouYuan11.25" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="#{JLJC_241216_50}" />
+            </Window>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="Kunwu_TuJian_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,14.000000}}"/>
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Kunwu_TuJian&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="Kunwu_TuJian_Close">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+            <Event Name="Clicked" Function="Kunwu_TuJian_OnCloseClicked();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="Kunwu_TuJian_Client">
+            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-54.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,35.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="DefaultWindow" Name="Kunwu_TuJian_PageFrame">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_ButtonFenYe2" Name="Kunwu_TuJian_Page1">
+                    <Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,25.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                    <Property Name="Text" Value="#{JLJC_241216_51}"/>
+                    <Property Name="CheckMode" Value="1"/>
+                    <Event Name="MouseLButtonDown" Function="Kunwu_TuJian_Page_Switch(0);"/>
+                </Window>
+                <Window Type="TLBB_ButtonFenYe2" Name="Kunwu_TuJian_Page2">
+                    <Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,25.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,96.000000},{0.000000,0.000000}}"/>
+                    <Property Name="Text" Value="#{JLJC_241216_52}"/>
+                    <Property Name="CheckMode" Value="1"/>
+                    <Event Name="MouseLButtonDown" Function="Kunwu_TuJian_Page_Switch(1);"/>
+                </Window>
+                <Window Type="TLBB_HLine" Name="Kunwu_TuJian_Pageine">
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,4.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,24.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Kunwu_TuJian_DetailFrame">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}"/>
+                <Window Type="TLBB_ListBoxCommon" Name="Kunwu_TuJian_List">
+                    <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{1.000000,0.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}"/>
+                    <Event Name="ItemSelectionChanged" Function="Kunwu_TuJian_List_Clicked();" />
+                </Window>
+                <Window Type="TLBB_StaticText" Name="Kunwu_TuJian_TextList">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-110.000000},{1.000000,0.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,111.000000},{0.000000,0.000000}}"/>
+                    <Property Name="VertScrollbar" Value="True"/>
+                    <Property Name="VertFormatting" Value="TopAligned"/>
+                    <Property Name="Text" Value="#{JLJC_241216_53}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>
+    

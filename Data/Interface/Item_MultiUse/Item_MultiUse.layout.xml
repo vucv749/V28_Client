@@ -1,0 +1,88 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame1" Name="Item_MultiUse_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,227.000000},{0.000000,154.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-114.000000},{0.50000,-77.000000}}"/>
+		<Property Name="AlwaysOnTop" Value="True" />
+		<Window Type="TLBB_ButtonHelp" Name="Item_MultiUse_Help">
+			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+			<Event Name="Clicked" Function="Helper:GotoHelper('*Item_MultiUse');"/>
+		</Window>
+		<Window Type="TLBB_ButtonClose" Name="Item_MultiUse_Close">
+			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+			<Event Name="Clicked" Function="Item_MultiUse_Close_Clicked();"/>
+		</Window>
+		<Window Type="TLBB_DragTitle" Name="Item_MultiUse_DragTitle">
+			<Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,10.000000}}"/>
+			<Property Name="DragTarget" Value="Item_MultiUse_Frame"/>
+			<Window Type="TLBB_SimpleText" Name="Item_MultiUse_PageHeader">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+				<Property Name="Text" Value="#{CLDHDB_210510_47}"/>
+				<Property Name="HorzFormatting" Value="HorzCentred"/>
+				<Property Name="Font" Value="YouYuan11.25"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+			</Window>
+		</Window>
+		<Window Type="DefaultWindow" Name="Item_MultiUse_Function_Frame">
+			<Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-37.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,29.000000}}"/>
+			<Window Type="TLBB_ActionButton" Name="Item_MultiUse_Item">
+				<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,10.000000}}"/>
+			</Window>
+			<Window Type="TLBB_SimpleMulitiTextFrame" Name="Item_MultiUse_ItemInfo">
+				<Property Name="UnifiedSize" Value="{{1.000000,-42.000000},{0.000000,36.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,10.000000}}"/>
+				<Window Type="TLBB_SimpleText" Name="Item_MultiUse_ItemInfo_Text">
+					<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,18.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="Item_MultiUse_ItemInfo_GB">
+					<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,18.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,18.000000}}"/>
+					<Property Name="HorzFormatting" Value="RightAligned"/>
+					<Property Name="Text" Value="#{CLDHDB_210510_48}"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="Item_MultiUse_BuyNum_Text">
+				<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,16.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,56.000000}}"/>
+				<Property Name="Text" Value="#{CLDHDB_210510_49}"/>
+			</Window>
+			<Window Type="TLBB_EditBoxNormal" Name="Item_MultiUse_InputNum">
+				<Property Name="ValidationString" Value="[0-9]*"/>
+				<Property Name="UnifiedSize" Value="{{1.000000,-106.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,63.000000},{0.000000,54.000000}}"/>
+				<Property Name="Text" Value="1"/>
+				<Property Name="MaxTextLength" Value="6"/>
+				<Property Name="DefaultEditBox" Value="True"/>
+				<Event Name="TextChanged" Function="Item_MultiUse_TextChanged();"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="Item_MultiUse_MAX">
+				<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{0.000000,54.000000}}"/>
+				<Property Name="Text" Value="#{CLDHDB_210510_50}"/>
+				<Event Name="Clicked" Function="Item_MultiUse_CalMax();"/>
+			</Window>
+			<Window Type="TLBB_Frame_Lace5" Name="Item_MultiUse_Blank">
+				<Property Name="UnifiedSize" Value="{{1.000000,-85.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-31.000000}}"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="Item_MultiUse_Use">
+				<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-83.000000},{1.000000,-30.000000}}"/>
+				<Property Name="Text" Value="#{CLDHDB_210510_51}"/>
+				<Event Name="Clicked" Function="Item_MultiUse_BuyMulti_Clicked();"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="Item_MultiUse_Cancel">
+				<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-43.000000},{1.000000,-30.000000}}"/>
+				<Property Name="Text" Value="#{CLDHDB_210510_54}"/>
+				<Event Name="Clicked" Function="Item_MultiUse_Close_Clicked();"/>
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

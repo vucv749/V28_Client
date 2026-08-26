@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Kunwu_PVPScore_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,310.000000},{0.000000,240.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-316.000000},{0.500000,0.000000}}"/>
+  <Window Type="TLBB_FrameY" Name="Kunwu_PVPScore_FrameBK">
+    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+    <Window Type="TLBB_ButtonNULL" Name="Kunwu_PVPScore_Mini">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,4.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+      <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+      <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+      <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>
+      <Event Name="Clicked" Function="Kunwu_PVPScore_MiniClick()"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Kunwu_PVPScore_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,18.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,2.000000}}"/>
+      <Property Name="DragTarget" Value="Kunwu_PVPScore_Frame"/>
+      <Window Type="TLBB_SimpleText" Name="Kunwu_PVPScore_PageHeader">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{ZSYC_241211_138}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="Font" Value="YouYuan11.25"/>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="Kunwu_PVPScore_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-34.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+      <Window Type="TLBB_SimpleText" Name="Kunwu_PVPScore_Text2">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,4.000000}}"/>
+        <Property Name="Text" Value="#{ZSYC_241211_253}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Kunwu_PVPScore_CountdownIcon2">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.000000,22.000000}}"/>
+        <Property Name="Image" Value="set:DuoBao1 image:DuoBao1_MiniTime"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Kunwu_PVPScore_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.000000,22.000000}}"/>
+        <Property Name="Text" Value="#{ZSYC_241211_141}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_StopWatch" Name="Kunwu_PVPScore_Text_Time">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-18.000000}}"/>
+          <Property Name="Text" Value="00:00"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="Kunwu_PVPScore_Info">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,58.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,40.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Kunwu_PVPScore_Info_TitlePointBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,262.000000},{0.000000,50.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:DuoBao1 image:DuoBao1_UsualBackground"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Kunwu_PVPScore_Info_TitlePoint">
+          <Property Name="UnifiedSize" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,15.000000}}"/>
+          <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Point"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Kunwu_PVPScore_Info_Title">
+          <Property Name="UnifiedSize" Value="{{1.000000,-170.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{ZSYC_241211_261}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Kunwu_PVPScore_Num">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,28.000000}}"/>
+          <Property Name="Text" Value="#{ZSYC_241211_139}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Kunwu_PVPScore_Level">
+          <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,28.000000}}"/>
+          <Property Name="Text" Value="#{ZSYC_241211_140}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="Kunwu_PVPScore_Top">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,160.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,98.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Kunwu_PVPScore_Top_TitleBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,262.000000},{0.000000,50.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:DuoBao1 image:DuoBao1_UsualBackground"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Kunwu_PVPScore_Top_TitlePoint">
+          <Property Name="UnifiedSize" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,15.000000}}"/>
+          <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Point"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Kunwu_PVPScore_Top_Title">
+          <Property Name="UnifiedSize" Value="{{1.000000,-170.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{ZSYC_241211_142}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="Kunwu_PVPScore_TopList">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-94.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="#{ZSYC_241211_150}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="Kunwu_PVPScore_TopListClick()"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="Kunwu_PVPScore_TopList_List">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-26.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,26.000000}}"/>
+          <Window Type="TLBB_NotSuperList" Name="Kunwu_PVPScore_TopList_ListFrame">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-4.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="VScrollMode" Value="Hide"/>
+            <Property Name="MultiColumn" Value="1" />
+            <Window Type="TLBB_NotSuperListItemCommon3" Name="Kunwu_PVPScore_TopList_List_Item">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,80.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Kunwu_PVPScore_TopList_List_ItemBK">
+                  <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,31.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,18.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+ 		<Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_MY2"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Kunwu_PVPScore_TopList_List_Line1">
+                <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Line1"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Kunwu_PVPScore_TopList_List_Line2">
+                <Property Name="UnifiedSize" Value="{{0.000000,2.000000},{0.000000,46.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-2.000000},{0.500000,-23.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Line2"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Kunwu_PVPScore_TopList_List_Rank">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,10.000000}}"/>
+                <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_No1"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Kunwu_PVPScore_TopList_List_Name">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,10.000000}}"/>
+                <Property Name="Text" Value="#{ZSYC_241211_146}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Kunwu_PVPScore_TopList_List_Score">
+                <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,46.000000}}"/>
+                <Property Name="Text" Value="#{ZSYC_241211_149}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+  </Window>
+</GUILayout>

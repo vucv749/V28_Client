@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection0" Name="XiaLv_Task4_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,901.000000},{0.000000,630.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-450.000000},{0.500000,-315.000000}}"/>
+    <Event Name="Hidden" Function="XiaLv_Task4_OnClose()" />
+    <Window Type="TLBB_TitleLace_Affection0" Name="XiaLv_Task4_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,31.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="XiaLv_Task4_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{FQZC_230331_54}"/>
+      <Property Name="DragTarget" Value="XiaLv_Task4_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="XiaLv_Task4_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function=""/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="XiaLv_Task4_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="XiaLv_Task4_OnClose()" />
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Task4_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,36.000000}}"/>
+      <Property Name="Image" Value="set:Xialv07 image:XiaLv_Shiqingyi_BK"/>
+        <Window Type="TLBB_SimpleText" Name="XiaLv_Task4_InfoText">
+          <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+          <Property Name="Text" Value="#{FQZC_230331_96}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      <Window Type="DefaultWindow" Name="XiaLv_Task4_Play1BK">
+        <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{1.000000,-72.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,72.000000}}"/>
+        <Window Type="DefaultWindow" Name="XiaLv_Task4_Play1AllBtn">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,104.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+          <Window Type="TLBB_ButtonNULL" Name="XiaLv_Task4_Play1Btn1">
+            <Property Name="UnifiedSize" Value="{{0.000000,145.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Font" Value="YouYuan13"/>
+            <Property Name="Text" Value="#{FQZC_230331_236}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button01_Pushed"/>
+            <Property Name="NormalImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button01_Normal"/>
+            <Property Name="HoverImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button01_Hover"/>
+            <Event Name="Clicked" Function="XiaLv_Task4_OnChooseWordClick(1)"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="XiaLv_Task4_Play1Btn2">
+            <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,39.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,145.000000},{0.000000,0.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button02_Pushed"/>
+            <Property Name="NormalImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button02_Normal"/>
+            <Property Name="HoverImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button02_Hover"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Font" Value="YouYuan13"/>
+            <Property Name="Text" Value="#{FQZC_230331_236}"/>
+            <Event Name="Clicked" Function="XiaLv_Task4_OnChooseWordClick(2)"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="XiaLv_Task4_Play1Btn3">
+            <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.000000,49.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,290.000000},{0.000000,0.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button03_Pushed"/>
+            <Property Name="NormalImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button03_Normal"/>
+            <Property Name="HoverImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button03_Hover"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Font" Value="YouYuan13"/>
+            <Property Name="Text" Value="#{FQZC_230331_236}"/>
+            <Event Name="Clicked" Function="XiaLv_Task4_OnChooseWordClick(3)"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="XiaLv_Task4_Play1Btn4">
+            <Property Name="UnifiedSize" Value="{{0.000000,153.000000},{0.000000,39.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,50.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button04_Pushed"/>
+            <Property Name="NormalImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button04_Normal"/>
+            <Property Name="HoverImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button04_Hover"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Font" Value="YouYuan13"/>
+            <Property Name="Text" Value="#{FQZC_230331_236}"/>
+            <Event Name="Clicked" Function="XiaLv_Task4_OnChooseWordClick(4)"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="XiaLv_Task4_Play1Btn5">
+            <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,39.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,153.000000},{0.000000,50.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button05_Pushed"/>
+            <Property Name="NormalImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button05_Normal"/>
+            <Property Name="HoverImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button05_Hover"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Font" Value="YouYuan13"/>
+            <Property Name="Text" Value="#{FQZC_230331_236}"/>
+            <Event Name="Clicked" Function="XiaLv_Task4_OnChooseWordClick(5)"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="XiaLv_Task4_Play1Btn6">
+            <Property Name="UnifiedSize" Value="{{0.000000,151.000000},{0.000000,53.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,298.000000},{0.000000,50.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button06_Pushed"/>
+            <Property Name="NormalImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button06_Normal"/>
+            <Property Name="HoverImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button06_Hover"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Font" Value="YouYuan13"/>
+            <Property Name="Text" Value="#{FQZC_230331_236}"/>
+            <Event Name="Clicked" Function="XiaLv_Task4_OnChooseWordClick(6)"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="XiaLv_Task4_Play1_Text1">
+          <Property Name="UnifiedSize" Value="{{0.000000,232.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,212.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Font" Value="YouYuan18"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{FQZC_230331_236}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="XiaLv_Task4_Play1_Text2">
+          <Property Name="UnifiedSize" Value="{{0.000000,232.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,108.000000},{0.000000,290.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Font" Value="YouYuan18"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{FQZC_230331_236}"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="XiaLv_Task4_Play1BtnF5">
+          <Property Name="UnifiedSize" Value="{{0.000000,117.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,368.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_ChongzhiButton_Pushed"/>
+          <Property Name="NormalImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_ChongzhiButton_Normal"/>
+          <Property Name="HoverImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_ChongzhiButton_Hover"/>
+          <Event Name="Clicked" Function="XiaLv_Task4_OnResetClick()"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="XiaLv_Task4_Play1BtnOK">
+          <Property Name="UnifiedSize" Value="{{0.000000,117.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,368.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_SuQingButton_Pushed"/>
+          <Property Name="NormalImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_SuQingButton_Normal"/>
+          <Property Name="HoverImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_SuQingButton_Hover"/>
+          <Event Name="Clicked" Function="XiaLv_Task4_OnOkBtnClicked()"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="XiaLv_Task4_Play1BK2">
+        <Property Name="UnifiedSize" Value="{{0.000000,424.000000},{0.000000,477.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,90.000000}}"/>
+        <Property Name="Visible" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Task4_Play1_Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,424.000000},{0.000000,477.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Xialv04 image:XiaLv_Shiqingyi_MaskPaper"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="XiaLv_Task4_Play2BK">
+        <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{1.000000,-72.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,72.000000}}"/>
+        <Window Type="DefaultWindow" Name="XiaLv_Task4_Play2AllBtn">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,104.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+          <Window Type="TLBB_ButtonNULL" Name="XiaLv_Task4_Play2Btn1">
+            <Property Name="UnifiedSize" Value="{{0.000000,145.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Font" Value="YouYuan13"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button07_Pushed"/>
+            <Property Name="NormalImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button07_Normal"/>
+            <Property Name="HoverImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button07_Hover"/>
+            <Property Name="Text" Value="#{FQZC_230331_236}"/>
+            <Event Name="Clicked" Function="XiaLv_Task4_OnChooseWordClick(7)"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="XiaLv_Task4_Play2Btn2">
+            <Property Name="UnifiedSize" Value="{{0.000000,149.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,146.000000},{0.000000,0.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Font" Value="YouYuan13"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button08_Pushed"/>
+            <Property Name="NormalImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button08_Normal"/>
+            <Property Name="HoverImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button08_Hover"/>
+            <Property Name="Text" Value="#{FQZC_230331_236}"/>
+            <Event Name="Clicked" Function="XiaLv_Task4_OnChooseWordClick(8)"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="XiaLv_Task4_Play2Btn3">
+            <Property Name="UnifiedSize" Value="{{0.000000,153.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,290.000000},{0.000000,0.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Font" Value="YouYuan13"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button09_Pushed"/>
+            <Property Name="NormalImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button09_Normal"/>
+            <Property Name="HoverImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button09_Hover"/>
+            <Property Name="Text" Value="#{FQZC_230331_236}"/>
+            <Event Name="Clicked" Function="XiaLv_Task4_OnChooseWordClick(9)"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="XiaLv_Task4_Play2Btn4">
+            <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,44.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Font" Value="YouYuan13"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button10_Pushed"/>
+            <Property Name="NormalImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button10_Normal"/>
+            <Property Name="HoverImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button10_Hover"/>
+            <Property Name="Text" Value="#{FQZC_230331_236}"/>
+            <Event Name="Clicked" Function="XiaLv_Task4_OnChooseWordClick(10)"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="XiaLv_Task4_Play2Btn5">
+            <Property Name="UnifiedSize" Value="{{0.000000,145.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,44.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Font" Value="YouYuan13"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button02_Pushed"/>
+            <Property Name="NormalImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button02_Normal"/>
+            <Property Name="HoverImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button02_Hover"/>
+            <Property Name="Text" Value="#{FQZC_230331_236}"/>
+            <Event Name="Clicked" Function="XiaLv_Task4_OnChooseWordClick(11)"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="XiaLv_Task4_Play2Btn6">
+            <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,39.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,290.000000},{0.000000,44.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Font" Value="YouYuan13"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button01_Pushed"/>
+            <Property Name="NormalImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button01_Normal"/>
+            <Property Name="HoverImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_Button01_Hover"/>
+            <Property Name="Text" Value="#{FQZC_230331_236}"/>
+            <Event Name="Clicked" Function="XiaLv_Task4_OnChooseWordClick(12)"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="XiaLv_Task4_Play2_Text1">
+          <Property Name="UnifiedSize" Value="{{0.000000,232.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,92.000000},{0.000000,212.000000}}"/>
+          <Property Name="Text" Value="#{FQZC_230331_236}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Font" Value="YouYuan18"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="XiaLv_Task4_Play2_Text2">
+          <Property Name="UnifiedSize" Value="{{0.000000,232.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,92.000000},{0.000000,286.000000}}"/>
+          <Property Name="Text" Value="#{FQZC_230331_236}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Font" Value="YouYuan18"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="XiaLv_Task4_Play2BtnF5">
+          <Property Name="UnifiedSize" Value="{{0.000000,117.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,368.000000}}"/>
+          <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_ChongzhiButton_Pushed"/>
+          <Property Name="NormalImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_ChongzhiButton_Normal"/>
+          <Property Name="HoverImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_ChongzhiButton_Hover"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="XiaLv_Task4_OnResetClick()"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="XiaLv_Task4_Play2BtnOK">
+          <Property Name="UnifiedSize" Value="{{0.000000,117.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,368.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_SuQingButton_Pushed"/>
+          <Property Name="NormalImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_SuQingButton_Normal"/>
+          <Property Name="HoverImage" Value="set:Xialv05 image:XiaLv_Shiqingyi_SuQingButton_Hover"/>
+          <Event Name="Clicked" Function="XiaLv_Task4_OnOkBtnClicked()"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="XiaLv_Task4_Play2BK2">
+        <Property Name="UnifiedSize" Value="{{0.000000,424.000000},{0.000000,477.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,6.000000},{0.000000,90.000000}}"/>
+        <Property Name="Visible" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Task4_Play2_Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,424.000000},{0.000000,477.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Xialv04 image:XiaLv_Shiqingyi_MaskPaper"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="XiaLv_Task4_TimeAll">
+        <Property Name="UnifiedSize" Value="{{0.000000,179.000000},{0.000000,37.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,680.000000},{0.000000,36.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Task4_TimeImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,179.000000},{0.000000,37.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Xialv05 image:XiaLv_Shiqingyi_TimeBK"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="XiaLv_Task4_TimeText">
+          <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{FYH_220407_56}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_StopWatch" Name="XiaLv_Task4_Time">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,0.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="00:00"/>
+          <Property Name="Font" Value="YouYuan18"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Event Name="ReachedZero" Function="XiaLv_Task4_TimeOut()" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Task4_State">
+        <Property Name="UnifiedSize" Value="{{0.000000,249.000000},{0.000000,64.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-125.000000},{0.750000,-80.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:Xialv04 image:XiaLv_shiqingyiok1"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

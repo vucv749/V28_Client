@@ -1,0 +1,167 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="DressPreview_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,420.000000},{0.000000,520.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-240.000000},{0.500000,-300.000000}" />
+    <Event Name="Hidden" Function="DressPreview_OnHiden();" />
+    <Window Type="TLBB_DragTitle" Name="DressPreview_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="DressPreview_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="DressPreview_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Helper:GotoHelper('*Shop');"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="DressPreview_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="this:Hide();" />
+    </Window>
+    <Window Type="TLBB_FramePlayerOther" Name="DressPreview_Function_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Window Type="TLBB_MeshWindow" Name="DressPreview_FakeObject">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonTurnLeft" Name="DressPreview_Model_TurnLeft">
+        <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.800000,0.000000}}"/>
+        <Event Name="MouseButtonUp" Function="DressPreview_FakeObject_TurnLeft(0);"/>
+        <Event Name="MouseButtonDown" Function="DressPreview_FakeObject_TurnLeft(1);"/>
+        <Event Name="CaptureLost" Function="DressPreview_FakeObject_TurnLeft(0);"/>
+      </Window>
+      <Window Type="TLBB_ButtonTurnRight" Name="DressPreview_Model_TurnRight">
+        <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.800000,0.000000}}"/>
+        <Event Name="MouseButtonUp" Function="DressPreview_FakeObject_TurnRight(0);"/>
+        <Event Name="MouseButtonDown" Function="DressPreview_FakeObject_TurnRight(1);"/>
+        <Event Name="CaptureLost" Function="DressPreview_FakeObject_TurnRight(0);"/>
+      </Window>
+      <Window Type="TLBB_ButtonAdd" Name="DressPreview_Model_Plus">
+        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.500000,-30.000000}}"/>
+        <Event Name="Clicked" Function="DressPreview_FakeObject_ZoomIn();" />
+      </Window>
+      <Window Type="TLBB_ButtonSub" Name="DressPreview_Model_Subtract">
+        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.500000,40.000000}}"/>
+        <Event Name="Clicked" Function="DressPreview_FakeObject_ZoomOut();" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DressPreview_DressName">
+        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,10.000000}}"/>
+        <Property Name="Text" Value="#{HDSZYL_210325_04}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DressPreview_TitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,196.000000},{0.000000,25.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-99.000000},{0.000000,2.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Image" Value="set:DressPreview01 image:DressPreview_Title_BK"/>
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="DressPreview_DressBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+        <Property Name="Tooltip" Value=""/>
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="DressPreview_HairBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,90.000000}}"/>
+        <Property Name="Tooltip" Value=""/>
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="DressPreview_FaceBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,160.000000}}"/>
+        <Property Name="Tooltip" Value=""/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="DressPreview_DressAction_Btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.000000,20.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Normal"/>
+        <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Pushed"/>
+        <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Hover"/>
+        <Property Name="DisabledImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Disabled"/>
+        <Event Name="Clicked" Function="DressPreview_OnAction(1);"/>
+        <Property Name="Tooltip" Value="#{SZDZ_231110_07}"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DressPreview_DressAction_1">
+        <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,103.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="DressPreview_DressAction_Btn2">
+        <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.000000,50.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Normal"/>
+        <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Pushed"/>
+        <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Hover"/>
+        <Property Name="DisabledImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Disabled"/>
+        <Event Name="Clicked" Function="DressPreview_OnAction(2);"/>
+        <Property Name="Tooltip" Value="#{SZDZ_231110_07}"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DressPreview_DressAction_2">
+        <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,147.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="DressPreview_DressAction_Btn3">
+        <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.000000,80.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Normal"/>
+        <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Pushed"/>
+        <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Hover"/>
+        <Property Name="DisabledImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Disabled"/>
+        <Event Name="Clicked" Function="DressPreview_OnAction(3);"/>
+        <Property Name="Tooltip" Value="#{SZDZ_231110_07}"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DressPreview_DressAction_3">
+        <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,187.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ComboList" Name="DressPreview_ColorList">
+        <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-75.000000},{1.000000,-45.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Text" Value=""/>
+        <Event Name="ListSelectionAccepted" Function="DressPreview_ColorChanged();"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DressPreview_ColorList_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-65.000000},{1.000000,-70.000000}}"/>
+        <Property Name="Text" Value="#{HDSZYL_210325_02}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,721 @@
+<?xml version="1.0" ?>
+<Falagard>
+  <!--
+    ***************************************************
+        WoWLook/CreatureBoard
+    ***************************************************
+    -->
+  <WidgetLook name="TLBB_Look_CreatureBoard">
+    <Property name="RiseOnClick" value="False" />
+    <Property name="MouseHollow" value="True" />
+    <Property name="ClippedByParent" value="False" />
+    <Property name="Visible" value="False" />
+    <Property name="LeftAnimate" value="index:0 x:64 y:68 w:74 h:78 name: "/>
+    <Property name="LeftAnimate" value="index:1 x:64 y:68 w:74 h:78 name:nihongleft "/>
+    <Property name="LeftAnimate" value="index:2 x:64 y:68 w:74 h:78 name:wuqizuo"/>
+    <Property name="LeftAnimate" value="index:3 x:64 y:68 w:74 h:78 name:yifuzuo"/>
+    <Property name="LeftAnimate" value="index:4 x:64 y:68 w:74 h:78 name:chongwuzuo "/>
+    <Property name="LeftAnimate" value="index:5 x:64 y:68 w:74 h:78 name:baoshizuo "/>
+    <Property name="RightAnimate" value="index:0 x:10 y:68 w:74 h:78 name:  "/>
+    <Property name="RightAnimate" value="index:1 x:10 y:68 w:74 h:78 name:nihongright"/>
+    <Property name="RightAnimate" value="index:2 x:10 y:68 w:74 h:78 name:wuqiyou"/>
+    <Property name="RightAnimate" value="index:3 x:10 y:68 w:74 h:78 name:yifuyou "/>
+    <Property name="RightAnimate" value="index:4 x:10 y:68 w:74 h:78 name:chongwuyou "/>
+    <Property name="RightAnimate" value="index:5 x:10 y:68 w:74 h:78 name:baoshiyou "/>
+
+    <Child type="TLBB_SelfWindow" nameSuffix="__auto_playername__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <UnifiedDim scale="0.666666" type="Height" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1.0" type="Width" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="0.333333" type="Height" />
+        </Dim>
+      </Area>
+      <Property name="Visible" value="False" />
+      <Property name="RiseOnClick" value="False" />
+      <Property name="Font" value="TLNA__" />
+      <Property name="MouseHollow" value="True" />
+      <Property name="HorzFormatting" value="HorzCentred" />
+      <Property name="FitType" value="Bottom" />
+    </Child>
+    <Child type="TLBB_SelfWindow" nameSuffix="__auto_playertitle__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <UnifiedDim scale="0.333333" type="Height" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1.0" type="Width" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="0.333333" type="Height" />
+        </Dim>
+      </Area>
+      <Property name="Visible" value="False" />
+      <Property name="MouseHollow" value="True" />
+      <Property name="HorzFormatting" value="HorzCentred" />
+      <Property name="RiseOnClick" value="True" />
+      <Property name="ClippedByParent" value="False" />
+      <Property name="FitType" value="Bottom" />
+      <Property name="Font" value="TLNA__" />
+      <Property name="MaxWidth" value="500" />
+      <Property name="MinHeight" value="32" />
+    </Child>
+    <Child type="TLBB_MapImage" nameSuffix="__auto_leaderflag__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="13" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="13" />
+        </Dim>
+      </Area>
+      <Property name="MouseHollow" value="True" />
+      <Property name="RiseOnClick" value="True" />
+      <Property name="ClippedByParent" value="False" />
+      <Property name="ChildImage" value="name:leaderfull set:UIIcons image:LeaderFull" />
+      <Property name="ChildImage" value="name:leaderopening set:UIIcons image:LeaderOpening" />
+      <Property name="ChildImage" value="name:memberfull set:UIIcons image:MemberFull" />
+      <Property name="ChildImage" value="name:memberopening set:UIIcons image:MemberOpening" />
+      <Property name="ChildImage" value="name:Union_LeaderIcon_S set:Union1 image:Union_LeaderIcon_S" />
+      <Property name="ChildImage" value="name:Union_MemberIcon_S set:Union1 image:Union_MemberIcon_S" />
+      <Property name="ChildImage" value="name:Union_LeaderIcon_S_Disabled set:Union1 image:Union_LeaderIcon_S_Disabled" />
+      <Property name="ChildImage" value="name:Union_MemberIcon_S_Disabled set:Union1 image:Union_MemberIcon_S_Disabled" />
+      <Property name="ChildImage" value="name:Union_MemberIcon2_S set:Union1 image:Union_MemberIcon2_S" />
+      <Property name="ChildImage" value="name:Union_MemberIcon2_S_Disabled set:Union1 image:Union_MemberIcon2_S_Disabled" />
+    </Child>
+    <Child type="TLBB_MapImage" nameSuffix="__auto_PK__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="20" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+      <Property name="MouseHollow" value="True" />
+      <Property name="RiseOnClick" value="True" />
+      <Property name="ClippedByParent" value="False" />
+      <Property name="ChildImage" value="name:PKV0 set:UIIcons image:newPK_Flag_1" />
+      <Property name="ChildImage" value="name:PKV1 set:UIIcons image:newPK_Flag_2" />
+      <Property name="ChildImage" value="name:PKV2 set:UIIcons image:newPK_Flag_3" />
+      <Property name="ChildImage" value="name:PKV3 set:UIIcons image:newPK_Flag_3" />
+      <Property name="ChildImage" value="name:PKV4 set:UIIcons image:newPK_Flag_4" />
+      <Property name="ChildImage" value="name:PKV5 set:UIIcons image:newPK_Flag_5" />
+      <Property name="ChildImage" value="name:PKV6 set:UIIcons image:newPK_Flag_6" />
+      <Property name="ChildImage" value="name:PKV7 set:UIIcons image:newPK_Flag_7" />
+    </Child>
+
+
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_bangpaiflag__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <UnifiedDim scale="0.333333" type="Height" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1.0" type="Width" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="0.333333" type="Height" />
+        </Dim>
+      </Area>
+      <Property name="MouseHollow" value="True" />
+      <Property name="RiseOnClick" value="True" />
+      <Property name="ClippedByParent" value="False" />
+    </Child>
+    <Child type="TLBB_Animate" nameSuffix="__auto_leftAnimate_">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <UnifiedDim scale="0.0" type="Height" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1.0" type="Width" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="0.3333333" type="Height" />
+        </Dim>
+      </Area>
+      <Property name="AlwaysOnTop" value="true" />
+      <Property name="MouseHollow" value="True" />
+    </Child>
+    <Child type="TLBB_Animate" nameSuffix="__auto_rightAnimate_">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <UnifiedDim scale="0.0" type="Height" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1.0" type="Width" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="0.3333333" type="Height" />
+        </Dim>
+      </Area>
+      <Property name="AlwaysOnTop" value="true" />
+      <Property name="MouseHollow" value="True" />
+    </Child>
+    <Child type="TLBB_Animate" nameSuffix="__auto_leftTitleAnimate_">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <UnifiedDim scale="0.0" type="Height" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1.0" type="Width" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="0.3333333" type="Height" />
+        </Dim>
+      </Area>
+      <Property name="AlwaysOnTop" value="true" />
+      <Property name="MouseHollow" value="True" />
+    </Child>
+    <Child type="TLBB_Animate" nameSuffix="__auto_rightTitleAnimate_">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <UnifiedDim scale="0.0" type="Height" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1.0" type="Width" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="0.3333333" type="Height" />
+        </Dim>
+      </Area>
+      <Property name="AlwaysOnTop" value="true" />
+      <Property name="MouseHollow" value="True" />
+    </Child>
+    <Child type="TLBB_Animate" nameSuffix="__auto_animplayertitle__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="20" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="20" />
+        </Dim>
+      </Area>
+      <Property name="AlwaysOnTop" value="true" />
+      <Property name="MouseHollow" value="True" />
+    </Child>
+    <Child type="TLBB_ButtonStall" nameSuffix="__auto_salessign__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <UnifiedDim scale="0.0" type="Height" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1.0" type="Width" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="0.3333333" type="Height" />
+        </Dim>
+      </Area>
+      <Property name="MinHeight" value="28" />
+    </Child>
+    <Child type="TLBB_PaoPao" nameSuffix="__auto_paopao__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <UnifiedDim scale="0.0" type="Height" />
+        </Dim>
+        <Dim type="Width">
+          <UnifiedDim scale="1.0" type="Width" />
+        </Dim>
+        <Dim type="Height">
+          <UnifiedDim scale="0.3333333" type="Height" />
+        </Dim>
+      </Area>
+      <Property name="RiseOnClick" value="True" />
+      <Property name="MouseHollow" value="True" />
+      <Property name="ClippedByParent" value="False" />
+      <Property name="HorzFormatting" value="WordWrapLeftAligned" />
+      <Property name="VertFormatting" value="TopAligned" />
+      <Property name="FitType" value="Bottom" />
+      <Property name="MaxWidth" value="200" />
+      <Property name="Life" value="7" />
+      <Property name="FadeInTime" value="1" />
+      <Property name="FadeOutTime" value="2" />
+    </Child>
+    <Child type="TLBB_MapImage" nameSuffix="__auto_huiliunewflag__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="49" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="21" />
+        </Dim>
+      </Area>
+      <Property name="MouseHollow" value="True" />
+      <Property name="RiseOnClick" value="True" />
+      <Property name="ClippedByParent" value="False" />
+      <Property name="ChildImage" value="name:refluenceflag set:HerosReturns01 image:HerosReturnsIcon" />
+    </Child>
+    <Child type="TLBB_MapImage" nameSuffix="__auto_petsoulflag1__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="30" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="33" />
+        </Dim>
+      </Area>
+      <Property name="MouseHollow" value="True" />
+      <Property name="RiseOnClick" value="True" />
+      <Property name="ClippedByParent" value="False" />
+      <Property name="ChildImage" value="name:petsoulflag1 set:PetSoul_Fenghunlu image:PetSoul_1" />
+    </Child>
+    <Child type="TLBB_MapImage" nameSuffix="__auto_petsoulflag2__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="32" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="36" />
+        </Dim>
+      </Area>
+      <Property name="MouseHollow" value="True" />
+      <Property name="RiseOnClick" value="True" />
+      <Property name="ClippedByParent" value="False" />
+      <Property name="ChildImage" value="name:petsoulflag2 set:PetSoul_Fenghunlu image:PetSoul_2" />
+    </Child>
+    <Child type="TLBB_MapImage" nameSuffix="__auto_petsoulflag3__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="34" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="38" />
+        </Dim>
+      </Area>
+      <Property name="MouseHollow" value="True" />
+      <Property name="RiseOnClick" value="True" />
+      <Property name="ClippedByParent" value="False" />
+      <Property name="ChildImage" value="name:petsoulflag3 set:PetSoul_Fenghunlu image:PetSoul_3" />
+    </Child>
+    <Child type="TLBB_MapImage" nameSuffix="__auto_petexterior__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="24" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="24" />
+        </Dim>
+      </Area>
+      <Property name="MouseHollow" value="True" />
+      <Property name="RiseOnClick" value="True" />
+      <Property name="ClippedByParent" value="False" />
+      <Property name="ChildImage" value="name:petexterior set:PetSoul_Fenghunlu image:PetTitle_SkinChange" />
+    </Child>
+    <!--
+    ***************************************************
+       争霸赛观战界面血条
+    ***************************************************
+    -->
+    <Child type="TLBB_StaticImageNULL" nameSuffix="__auto_autochesshpback__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="106" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="8" />
+        </Dim>
+      </Area>
+      <Property name="MouseHollow" value="True" />
+      <Property name="RiseOnClick" value="True" />
+      <Property name="ClippedByParent" value="False" />
+      <Property name="Image" value="set:OB image:OBPadProgressBK" />
+    </Child>
+    <Child type="TLBB_ProgressPropertyGreen" nameSuffix="__auto_autochesshp__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="106" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="8" />
+        </Dim>
+      </Area>
+      <Property name="RiseOnClick" value="True" />
+      <Property name="MouseHollow" value="True" />
+      <Property name="AlwaysOnTop" value="True"/>
+      <Property name="ClippedByParent" value="False" />
+      <Property name="CurrentProgress" value="100.0" />
+      <Property name="EffectColor" value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+      <Property name="EffectColorLevel" value="index:0 tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+      <Property name="MoveSpeed" value="50000" />
+    </Child>
+    <Child type="TLBB_ProgressPropertyRed" nameSuffix="__auto_autochesshpenemy__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="106" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="8" />
+        </Dim>
+      </Area>
+      <Property name="RiseOnClick" value="True" />
+      <Property name="AlwaysOnTop" value="True"/>
+      <Property name="MouseHollow" value="True" />
+      <Property name="ClippedByParent" value="False" />
+      <Property name="CurrentProgress" value="100.0" />
+      <Property name="EffectColor" value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+      <Property name="EffectColorLevel" value="index:0 tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+      <Property name="MoveSpeed" value="50000" />
+    </Child>
+    <Child type="TLBB_MapImage" nameSuffix="__auto_Frozen_GeCao_Team__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="86" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="32" />
+        </Dim>
+      </Area>
+      <Property name="MouseHollow" value="True" />
+      <Property name="AlwaysOnTop" value="True"/>
+      <Property name="RiseOnClick" value="True" />
+      <Property name="ClippedByParent" value="False" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Team1 set:Frozen_GeCao image:Frozen_GeCao_Level1" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Team2 set:Frozen_GeCao image:Frozen_GeCao_Level2" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Team3 set:Frozen_GeCao image:Frozen_GeCao_Level3" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Team4 set:Frozen_GeCao image:Frozen_GeCao_Level4" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Team5 set:Frozen_GeCao image:Frozen_GeCao_Level5" />
+    </Child>
+    <Child type="TLBB_MapImage" nameSuffix="__auto_Frozen_GeCao_HurtImg__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="86" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="32" />
+        </Dim>
+      </Area>
+      <Property name="MouseHollow" value="True" />
+      <Property name="AlwaysOnTop" value="True"/>
+      <Property name="RiseOnClick" value="True" />
+      <Property name="ClippedByParent" value="False" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_HurtImg1 set:Frozen_GeCao image:Frozen_GeCao_HurtImg" />
+    </Child>
+    <Child type="TLBB_MapImage" nameSuffix="__auto_Frozen_GeCao_Num1__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="14" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="16" />
+        </Dim>
+      </Area>
+      <Property name="MouseHollow" value="True" />
+      <Property name="AlwaysOnTop" value="True"/>
+      <Property name="ClippedByParent" value="False" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num1_0 set:Frozen_GeCao image:Frozen_GeCao_Num0" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num1_1 set:Frozen_GeCao image:Frozen_GeCao_Num1" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num1_2 set:Frozen_GeCao image:Frozen_GeCao_Num2" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num1_3 set:Frozen_GeCao image:Frozen_GeCao_Num3" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num1_4 set:Frozen_GeCao image:Frozen_GeCao_Num4" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num1_5 set:Frozen_GeCao image:Frozen_GeCao_Num5" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num1_6 set:Frozen_GeCao image:Frozen_GeCao_Num6" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num1_7 set:Frozen_GeCao image:Frozen_GeCao_Num7" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num1_8 set:Frozen_GeCao image:Frozen_GeCao_Num8" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num1_9 set:Frozen_GeCao image:Frozen_GeCao_Num9" />
+    </Child>
+    <Child type="TLBB_MapImage" nameSuffix="__auto_Frozen_GeCao_Num2__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="14" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="16" />
+        </Dim>
+      </Area>
+      <Property name="MouseHollow" value="True" />
+      <Property name="AlwaysOnTop" value="True"/>
+      <Property name="ClippedByParent" value="False" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num2_0 set:Frozen_GeCao image:Frozen_GeCao_Num0" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num2_1 set:Frozen_GeCao image:Frozen_GeCao_Num1" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num2_2 set:Frozen_GeCao image:Frozen_GeCao_Num2" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num2_3 set:Frozen_GeCao image:Frozen_GeCao_Num3" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num2_4 set:Frozen_GeCao image:Frozen_GeCao_Num4" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num2_5 set:Frozen_GeCao image:Frozen_GeCao_Num5" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num2_6 set:Frozen_GeCao image:Frozen_GeCao_Num6" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num2_7 set:Frozen_GeCao image:Frozen_GeCao_Num7" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num2_8 set:Frozen_GeCao image:Frozen_GeCao_Num8" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num2_9 set:Frozen_GeCao image:Frozen_GeCao_Num9" />
+    </Child>
+    <Child type="TLBB_MapImage" nameSuffix="__auto_Frozen_GeCao_Num3__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="14" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="16" />
+        </Dim>
+      </Area>
+      <Property name="MouseHollow" value="True" />
+      <Property name="AlwaysOnTop" value="True"/>
+      <Property name="ClippedByParent" value="False" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num3_0 set:Frozen_GeCao image:Frozen_GeCao_Num0" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num3_1 set:Frozen_GeCao image:Frozen_GeCao_Num1" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num3_2 set:Frozen_GeCao image:Frozen_GeCao_Num2" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num3_3 set:Frozen_GeCao image:Frozen_GeCao_Num3" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num3_4 set:Frozen_GeCao image:Frozen_GeCao_Num4" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num3_5 set:Frozen_GeCao image:Frozen_GeCao_Num5" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num3_6 set:Frozen_GeCao image:Frozen_GeCao_Num6" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num3_7 set:Frozen_GeCao image:Frozen_GeCao_Num7" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num3_8 set:Frozen_GeCao image:Frozen_GeCao_Num8" />
+      <Property name="ChildImage" value="name:Frozen_GeCao_Num3_9 set:Frozen_GeCao image:Frozen_GeCao_Num9" />
+    </Child>
+    <Child type="TLBB_MapImage" nameSuffix="__auto_Pet_PVP_HurtImg__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="86" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="32" />
+        </Dim>
+      </Area>
+      <Property name="MouseHollow" value="True" />
+      <Property name="AlwaysOnTop" value="True"/>
+      <Property name="RiseOnClick" value="True" />
+      <Property name="ClippedByParent" value="False" />
+      <Property name="ChildImage" value="name:Pet_PVP_HurtImg1 set:Kunwu_PVP image:Kunwu_PVP_NumBK" />
+    </Child>
+    <Child type="TLBB_MapImage" nameSuffix="__auto_Pet_PVP_Num1__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="14" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="16" />
+        </Dim>
+      </Area>
+      <Property name="MouseHollow" value="True" />
+      <Property name="AlwaysOnTop" value="True"/>
+      <Property name="ClippedByParent" value="False" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Num1_0 set:Frozen_GeCao image:Frozen_GeCao_Num0" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Num1_1 set:Frozen_GeCao image:Frozen_GeCao_Num1" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Num1_2 set:Frozen_GeCao image:Frozen_GeCao_Num2" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Num1_3 set:Frozen_GeCao image:Frozen_GeCao_Num3" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Num1_4 set:Frozen_GeCao image:Frozen_GeCao_Num4" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Num1_5 set:Frozen_GeCao image:Frozen_GeCao_Num5" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Num1_6 set:Frozen_GeCao image:Frozen_GeCao_Num6" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Num1_7 set:Frozen_GeCao image:Frozen_GeCao_Num7" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Num1_8 set:Frozen_GeCao image:Frozen_GeCao_Num8" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Num1_9 set:Frozen_GeCao image:Frozen_GeCao_Num9" />
+    </Child>
+    <Child type="TLBB_MapImage" nameSuffix="__auto_Pet_PVP_Num2__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="14" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="16" />
+        </Dim>
+      </Area>
+      <Property name="MouseHollow" value="True" />
+      <Property name="AlwaysOnTop" value="True"/>
+      <Property name="ClippedByParent" value="False" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Num2_0 set:Frozen_GeCao image:Frozen_GeCao_Num0" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Num2_1 set:Frozen_GeCao image:Frozen_GeCao_Num1" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Num2_2 set:Frozen_GeCao image:Frozen_GeCao_Num2" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Num2_3 set:Frozen_GeCao image:Frozen_GeCao_Num3" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Num2_4 set:Frozen_GeCao image:Frozen_GeCao_Num4" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Num2_5 set:Frozen_GeCao image:Frozen_GeCao_Num5" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Num2_6 set:Frozen_GeCao image:Frozen_GeCao_Num6" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Num2_7 set:Frozen_GeCao image:Frozen_GeCao_Num7" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Num2_8 set:Frozen_GeCao image:Frozen_GeCao_Num8" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Num2_9 set:Frozen_GeCao image:Frozen_GeCao_Num9" />
+    </Child>
+    <Child type="TLBB_MapImage" nameSuffix="__auto_Pet_PVP_Num3__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="86" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="32" />
+        </Dim>
+      </Area>
+      <Property name="MouseHollow" value="True" />
+      <Property name="AlwaysOnTop" value="True"/>
+      <Property name="ClippedByParent" value="False" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Level1 set:Kunwu_PVP image:Kunwu_PVP_Level1" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Level2 set:Kunwu_PVP image:Kunwu_PVP_Level2" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Level3 set:Kunwu_PVP image:Kunwu_PVP_Level3" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Level4 set:Kunwu_PVP image:Kunwu_PVP_Level4" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Level5 set:Kunwu_PVP image:Kunwu_PVP_Level5" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Level6 set:Kunwu_PVP image:Kunwu_PVP_Level6" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Level7 set:Kunwu_PVP image:Kunwu_PVP_Level7" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Level8 set:Kunwu_PVP image:Kunwu_PVP_Level8" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Level9 set:Kunwu_PVP image:Kunwu_PVP_Level9" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Level10 set:Kunwu_PVP image:Kunwu_PVP_Level10" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Level11 set:Kunwu_PVP image:Kunwu_PVP_Level11" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Level12 set:Kunwu_PVP image:Kunwu_PVP_Level12" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Level13 set:Kunwu_PVP image:Kunwu_PVP_Level13" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Level14 set:Kunwu_PVP image:Kunwu_PVP_Level14" />
+      <Property name="ChildImage" value="name:auto_Pet_PVP_Level15 set:Kunwu_PVP image:Kunwu_PVP_Level15" />
+    </Child>
+    <Child type="TLBB_Animate" nameSuffix="__auto_faceauthflag__">
+      <Area>
+        <Dim type="LeftEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="TopEdge">
+          <AbsoluteDim value="0" />
+        </Dim>
+        <Dim type="Width">
+          <AbsoluteDim value="28" />
+        </Dim>
+        <Dim type="Height">
+          <AbsoluteDim value="28" />
+        </Dim>
+      </Area>
+      <Property name="MouseHollow" value="True" />
+      <Property name="RiseOnClick" value="True" />
+    </Child>
+  </WidgetLook>
+</Falagard>

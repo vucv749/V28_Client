@@ -1,0 +1,638 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="DWJinJie_GiftBox_More_Frame_BK">
+    <Property Name="UnifiedSize" Value="{{0.000000,542.000000},{0.000000,345.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-270.000000},{0.500000,-170.000000}}"/>
+		<Event Name="Hidden" Function="DWJinJie_GiftBox_More_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="DWJinJie_GiftBox_More_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{SQYD_230802_66}"/>
+      <Property Name="DragTarget" Value="DWJinJie_GiftBox_More_Frame_BK"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="DWJinJie_GiftBox_More_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function=""/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="DWJinJie_GiftBox_More_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnHidden();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="DWJinJie_GiftBox_More_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Window Type="DefaultWindow" Name="DWJinJie_GiftBox_MoreBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_MoreBK1">
+        <Property Name="UnifiedSize" Value="{{0.000000,530.000000},{0.000000,290.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:OptionalGiftBox image:SBZX_BK"/>
+      </Window>
+      </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="Text" Value="#{DWJJ_240329_326}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+      <Window Type="DefaultWindow" Name="DWJinJie_GiftBox_More_Six_ItemBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,310.000000},{0.000000,158.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,60.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Six_Item1">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(1)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Six_Item1_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Six_Item2">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(2)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Six_Item2_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Six_Item3">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(3)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Six_Item3_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Six_Item4">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.500000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(4)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Six_Item4_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Six_Item5">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(5)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Six_Item5_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Six_Item6">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.500000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(6)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Six_Item6_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Six_Item1_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{1.000000,-96.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Six_Item2_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-96.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Six_Item3_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,222.000000},{1.000000,-96.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Six_Item4_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{1.000000,-21.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Six_Item5_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-21.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Six_Item6_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,222.000000},{1.000000,-21.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="DWJinJie_GiftBox_More_Nine_ItemBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,390.000000},{0.000000,158.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,60.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Nine_Item1">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.200000,-24.000000},{0.000000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(1)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Nine_Item1_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Nine_Item2">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.400000,-24.000000},{0.000000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(2)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Nine_Item2_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Nine_Item3">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.600000,-24.000000},{0.000000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(3)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Nine_Item3_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Nine_Item4">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.800000,-24.000000},{0.000000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(4)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Nine_Item4_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Nine_Item5">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(5)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Nine_Item5_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Nine_Item6">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.500000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(6)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Nine_Item6_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Nine_Item7">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.500000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(7)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Nine_Item7_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Nine_Item8">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,250.000000},{0.500000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(8)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Nine_Item8_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Nine_Item9">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,330.000000},{0.500000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(9)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Nine_Item9_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Nine_Item1_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.200000,-30.000000},{1.000000,-96.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Nine_Item2_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.400000,-30.000000},{1.000000,-96.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Nine_Item3_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.600000,-30.000000},{1.000000,-96.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Nine_Item4_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.800000,-30.000000},{1.000000,-96.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Nine_Item5_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{1.000000,-21.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Nine_Item6_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{1.000000,-21.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Nine_Item7_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,164.000000},{1.000000,-21.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Nine_Item8_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,244.000000},{1.000000,-21.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Nine_Item9_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,324.000000},{1.000000,-21.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="DWJinJie_GiftBox_More_Twelne_ItemBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,390.000000},{0.000000,158.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,60.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Twelne_Item1">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(1)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Twelne_Item1_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Twelne_Item2">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,74.000000},{0.000000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(2)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Twelne_Item2_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Twelne_Item3">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,138.000000},{0.000000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(3)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Twelne_Item3_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Twelne_Item4">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,202.000000},{0.000000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(4)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Twelne_Item4_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Twelne_Item5">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,266.000000},{0.000000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(5)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Twelne_Item5_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Twelne_Item6">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,330.000000},{0.000000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(6)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Twelne_Item6_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Twelne_Item7">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(7)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Twelne_Item7_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Twelne_Item8">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,74.000000},{0.500000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(8)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Twelne_Item8_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Twelne_Item9">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,138.000000},{0.500000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(9)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Twelne_Item9_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Twelne_Item10">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,202.000000},{0.500000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(10)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Twelne_Item10_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Twelne_Item11">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,266.000000},{0.500000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(11)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Twelne_Item11_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DWJinJie_GiftBox_More_Twelne_Item12">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,330.000000},{0.500000,5.000000}}"/>
+          <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnItemClicked(12)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DWJinJie_GiftBox_More_Twelne_Item12_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Twelne_Item1_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-96.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Twelne_Item2_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{1.000000,-96.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Twelne_Item3_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{1.000000,-96.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Twelne_Item4_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,194.000000},{1.000000,-96.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Twelne_Item5_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,258.000000},{1.000000,-96.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Twelne_Item6_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,322.000000},{1.000000,-96.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Twelne_Item7_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-21.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Twelne_Item8_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{1.000000,-21.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Twelne_Item9_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{1.000000,-21.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Twelne_Item10_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,194.000000},{1.000000,-21.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Twelne_Item11_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,258.000000},{1.000000,-21.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJie_GiftBox_More_Twelne_Item12_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,322.000000},{1.000000,-21.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="DWJinJie_GiftBox_More_GetButton">
+        <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,38.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-52.000000},{1.000000,-50.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:Seven image:Seven_lingqupush"/>
+        <Property Name="NormalImage" Value="set:Seven image:Seven_lingquNormal"/>
+        <Property Name="HoverImage" Value="set:Seven image:Seven_lingquHover"/>
+        <Property Name="DisabledImage" Value="set:Seven image:Seven_lingquDis"/>
+        <Event Name="Clicked" Function="DWJinJie_GiftBox_More_OnGetClicked()"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

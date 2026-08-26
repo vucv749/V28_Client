@@ -1,0 +1,149 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="Weapon2_SkillXuanZe_Frame">
+    <Property Name="UnifiedPosition" Value="{{0.500000,-174.000000},{0.500000,-180.000000}" />
+    <Property Name="UnifiedSize" Value="{{0.000000,348.000000},{0.000000,400.000000}}"/>
+    <Event Name="Hidden" Function="Weapon2_SkillXuanZe_OnHidden();" />
+    <Window Type="TLBB_ButtonHelp" Name="Weapon2_SkillXuanZe_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Weapon2_SkillXuanZe_HelpClicked()" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Weapon2_SkillXuanZe_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Weapon2_SkillXuanZe_CloseClicked();" />
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Weapon2_SkillXuanZe_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="DragTarget" Value="Weapon2_SkillXuanZe_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{SBFW_20230707_148}" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Weapon2_SkillXuanZe_Function_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Weapon2_SkillXuanZe_Explain1">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="Text" Value="#{SBFW_20230707_149}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="RiseOnClick" Value="False" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Weapon2_SkillXuanZe_Explain2" >
+        <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,64.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SBFW_20230707_123}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="Weapon2_SkillXuanZe_Item">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{0.000000,64.000000}}"/>
+        <Property Name="DraggingEnabled" Value="True" />
+        <Property Name="Empty" Value="false" />
+        <Property Name="DragAcceptName" Value="W51" />
+        <Event Name="RBClicked" Function="Weapon2_SkillXuanZe_ShenBing_OnRBClicked();" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Weapon2_SkillXuanZe_Explain3" >
+        <Property Name="UnifiedSize" Value="{{0.000000,97.000000},{0.000000,15.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,100.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SBFW_20230707_249}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Weapon2_SkillXuanZe_Explain4" >
+        <Property Name="UnifiedSize" Value="{{0.000000,97.000000},{0.000000,15.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,8.000000},{0.000000,100.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SBFW_20230707_248}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_StaticText" Name="Weapon2_SkillXuanZe_Explain3_Info">
+        <Property Name="UnifiedSize" Value="{{0.500000,-8.000000},{0.000000,160.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,162.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="VertScrollbar" Value="True"/>
+        <Property Name="VertFormatting" Value="TopAligned"/>
+      </Window>
+      <Window Type="TLBB_StaticText" Name="Weapon2_SkillXuanZe_Explain4_Info">
+        <Property Name="UnifiedSize" Value="{{0.500000,-8.000000},{0.000000,160.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,4.000000},{0.000000,162.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="VertScrollbar" Value="True"/>
+        <Property Name="VertFormatting" Value="TopAligned"/>
+      </Window>
+      `	<Window Type="TLBB_ActionButton" Name="Weapon2_SkillXuanZe_Kong01">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,120.000000}}"/>
+        <Property Name="Empty" Value="false" />
+        <Event Name="Clicked" Function="Weapon2_SkillXuanZe_SelectSkill(0, 1);" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="Weapon2_SkillXuanZe_Kong02">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{0.000000,120.000000}}"/>
+        <Property Name="Empty" Value="false" />
+        <Event Name="Clicked" Function="Weapon2_SkillXuanZe_SelectSkill(0, 2);" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="Weapon2_SkillXuanZe_Kong03">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,86.000000},{0.000000,120.000000}}"/>
+        <Property Name="Empty" Value="false" />
+        <Event Name="Clicked" Function="Weapon2_SkillXuanZe_SelectSkill(0, 3);" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="Weapon2_SkillXuanZe_Kong04">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,124.000000},{0.000000,120.000000}}"/>
+        <Property Name="Empty" Value="false" />
+        <Event Name="Clicked" Function="Weapon2_SkillXuanZe_SelectSkill(0, 4);" />
+      </Window>
+      `	<Window Type="TLBB_ActionButton" Name="Weapon2_SkillXuanZe_Kong05">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,10.000000},{0.000000,120.000000}}"/>
+        <Property Name="Empty" Value="false" />
+        <Event Name="Clicked" Function="Weapon2_SkillXuanZe_SelectSkill(1, 1);" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="Weapon2_SkillXuanZe_Kong06">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,48.000000},{0.000000,120.000000}}"/>
+        <Property Name="Empty" Value="false" />
+        <Event Name="Clicked" Function="Weapon2_SkillXuanZe_SelectSkill(1, 2);" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="Weapon2_SkillXuanZe_Kong07">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,86.000000},{0.000000,120.000000}}"/>
+        <Property Name="Empty" Value="false" />
+        <Event Name="Clicked" Function="Weapon2_SkillXuanZe_SelectSkill(1, 3);" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="Weapon2_SkillXuanZe_Kong08">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,124.000000},{0.000000,120.000000}}"/>
+        <Property Name="Empty" Value="false" />
+        <Event Name="Clicked" Function="Weapon2_SkillXuanZe_SelectSkill(1, 4);" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Weapon2_SkillXuanZe_Accept">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{SBFW_20230707_41}" />
+        <Event Name="Clicked" Function="Weapon2_SkillXuanZe_OK_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Weapon2_SkillXuanZe_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{SBFW_20230707_42}" />
+        <Event Name="Clicked" Function="Weapon2_SkillXuanZe_CloseClicked();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

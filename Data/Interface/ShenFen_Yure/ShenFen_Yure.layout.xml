@@ -1,0 +1,213 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="ShenFen_Yure_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,732.000000},{0.000000,486.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-366.000000},{0.500000,-243.000000}}"/>
+    <Event Name="Hidden" Function="ShenFen_Yure_Clear()"/>
+    <Window Type="TLBB_HeroTitle01" Name="ShenFen_Yure_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,314.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-157.500000},{0.000000,-2.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="ShenFen_Yure_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,25.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,0.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{SFYR_240104_43}"/>
+      <Property Name="DragTarget" Value="ShenFen_Yure_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose2" Name="ShenFen_Yure_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+      <Event Name="Clicked" Function="ShenFen_Yure_OnClose()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="ShenFen_Yure_Client">
+      <Property Name="UnifiedSize" Value="{{0.000000,724.000000},{0.000000,454.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-362.000000},{0.000000,28.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="ShenFen_Yure_ClientBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,724.000000},{0.000000,454.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:ShenFen_Yure image:ShenFen_Yure_BK"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShenFen_Yure_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,-46.000000},{0.000000,70.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,8.000000}}"/>
+        <Property Name="Text" Value="#{SFYR_240104_44}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="ShenFen_Yure_TaskPart">
+        <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,98.000000},{0.000000,128.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Image" Value="set:ShenFen_Yure image:ShenFen_Yure_Stage1"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="ShenFen_Yure_TaskName">
+        <Property Name="UnifiedSize" Value="{{0.000000,168.000000},{0.000000,46.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,224.000000},{0.000000,160.000000}}"/>
+        <Property Name="Image" Value="set:ShenFen_Yure image:ShenFen_Yure_Title1"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="ShenFen_Yure_TaskOver">
+        <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,72.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,448.000000},{0.000000,328.000000}}"/>
+        <Property Name="Image" Value="set:Bulao_Yure image:Bulao_Yure_Over"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShenFen_Yure_TaskInfo">
+        <Property Name="UnifiedSize" Value="{{0.000000,470.000000},{0.000000,65.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,68.000000},{0.000000,242.000000}}"/>
+        <Property Name="Text" Value="#{SFYR_240104_50}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShenFen_Yure_TaskInfo2">
+        <Property Name="UnifiedSize" Value="{{0.000000,278.000000},{0.000000,28.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,164.000000},{0.000000,354.000000}}"/>
+        <Property Name="Text" Value="#{SFYR_240104_54}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="ShenFen_Yure_Gift">
+        <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,112.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,589.000000},{0.000000,234.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="ShenFen_Yure_Gift1_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Event Name="Clicked" Function="ShenFen_Yure_PrizeClicked(1)"/>
+          <Window Type="TLBB_Animate" Name="ShenFen_Yure_Gift1_Icon_Animate">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ShenFen_Yure_Gift1_Icon_Get">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ShenFen_Yure_Gift2_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{0.000000,0.000000}}"/>
+          <Event Name="Clicked" Function="ShenFen_Yure_PrizeClicked(2)"/>
+          <Window Type="TLBB_Animate" Name="ShenFen_Yure_Gift2_Icon_Animate">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ShenFen_Yure_Gift2_Icon_Get">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ShenFen_Yure_Gift3_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-56.000000}}"/>
+          <Event Name="Clicked" Function="ShenFen_Yure_PrizeClicked(3)"/>
+          <Window Type="TLBB_Animate" Name="ShenFen_Yure_Gift3_Icon_Animate">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ShenFen_Yure_Gift3_Icon_Get">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ShenFen_Yure_Gift4_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{1.000000,-56.000000}}"/>
+          <Event Name="Clicked" Function="ShenFen_Yure_PrizeClicked(4)"/>
+          <Window Type="TLBB_Animate" Name="ShenFen_Yure_Gift4_Icon_Animate">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ShenFen_Yure_Gift4_Icon_Get">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShenFen_Yure_Gift1_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{SFYR_240104_62}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShenFen_Yure_Gift2_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{0.000000,36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{SFYR_240104_63}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShenFen_Yure_Gift3_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{SFYR_240104_64}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShenFen_Yure_Gift4_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{1.000000,-20.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{SFYR_240104_65}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShenFen_Yure_Now">
+        <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-122.000000},{1.000000,-100.000000}}"/>
+        <Property Name="HorzFormatting" Value="LeftAligned"/>
+        <Property Name="Text" Value="#{SFYR_240104_67}"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

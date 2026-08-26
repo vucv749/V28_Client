@@ -1,0 +1,462 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame2" Name="Action_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,264.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{1.000000,-318.000000}}"/>
+    <Property Name="MouseRButtonHollow" Value="True"/>
+    <Property Name="MouseMoveHollow" Value="True"/>
+    <Property Name="MouseLButtonHollow" Value="True"/>
+    <Property Name="MouseHollow" Value="True"/>
+    <Property Name="AlwaysOnTop" Value="True"/>
+    <Window Type="TLBB_DragTitle" Name="Action_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,2.000000}}"/>
+      <Property Name="DragTarget" Value="Action_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{INTERFACE_XML_76}" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Action_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Action&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Action_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="this:Hide();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Action_CheckBox">
+      <Property Name="UnifiedSize" Value="{{1.000000,-19.000000},{0.000000,21.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,29.000000}}"/>
+      <Window Type="TLBB_ButtonPageUp" Name="Action_Index1">
+        <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,21.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{SRDZ_20221107_01}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="MouseLButtonDown" Function="Action_Page_Switch(1)"/>
+      </Window>
+      <Window Type="TLBB_ButtonPageUp" Name="Action_Index2">
+        <Property Name="UnifiedSize" Value="{{0.0,32.0},{0.0,21.0}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0,32.0},{0.0,0.0}}"/>
+        <Property Name="Text" Value="#{SRDZ_20221107_02}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="MouseLButtonDown" Function="Action_Page_Switch(2)" />
+      </Window>
+      <Window Type="TLBB_ButtonPageUp" Name="Action_Index3">
+        <Property Name="UnifiedSize" Value="{{0.0,32.0},{0.0,21.0}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0,63.0},{0.0,0.0}}"/>
+        <Property Name="Text" Value="#{SRDZ_20221107_03}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="MouseLButtonDown" Function="Action_Page_Switch(3)" />
+      </Window>
+      <Window Type="TLBB_ButtonPageUp" Name="Action_Index4">
+        <Property Name="UnifiedSize" Value="{{0.0,32.0},{0.0,21.0}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0,94.0},{0.0,0.0}}"/>
+        <Property Name="Text" Value="#{SRDZ_20221107_04}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="MouseLButtonDown" Function="Action_Page_Switch(4)" />
+      </Window>
+      <Window Type="TLBB_ButtonPageUp" Name="Action_Index5">
+        <Property Name="UnifiedSize" Value="{{0.0,32.0},{0.0,21.0}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0,125.0},{0.0,0.0}}"/>
+        <Property Name="Text" Value="#{SRDZ_20221107_05}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="MouseLButtonDown" Function="Action_Page_Switch(5)" />
+      </Window>
+      <Window Type="TLBB_ButtonPageUp" Name="Action_Index6">
+        <Property Name="UnifiedSize" Value="{{0.0,32.0},{0.0,21.0}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0,156.0},{0.0,0.0}}"/>
+        <Property Name="Text" Value="#{SRDZ_20221107_06}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="MouseLButtonDown" Function="Action_Page_Switch(6)" />
+      </Window>
+      <Window Type="TLBB_ButtonPageUp" Name="Action_Index7">
+        <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,21.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,187.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{SZDZ_231110_02}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="MouseLButtonDown" Function="Action_Page_Switch(7)" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_Frame_Lace1" Name="Action_Time">
+      <Property Name="UnifiedSize" Value="{{0.000000,113.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{1.000000,-24.000000}}"/>
+      <Window Type="TLBB_SimpleText" Name="Action_Frame_TimeText">
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-4.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,2.000000}}"/>
+        <Property Name="Tooltip" Value="#{SRDZ_20221107_17}"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="Action_Uninstall">
+      <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-84.000000},{1.000000,-24.000000}}"/>
+      <Property Name="Text" Value="#{SRDZ_20221107_13}"/>
+      <Event Name="Clicked" Function="Action_Uninstall_Click()"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="Action_Function_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-50.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,50.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Window Type="DefaultWindow" Name="Action_Set">
+        <Property Name="UnifiedSize" Value="{{0.000000,190.000000},{0.000000,190.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-95.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_ActionButton" Name="Action_1">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_1:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_2">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_2:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_3">
+          <Property Name="AbsolutePosition" Value="x:76.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_3:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_4">
+          <Property Name="AbsolutePosition" Value="x:114.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_4:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_5">
+          <Property Name="AbsolutePosition" Value="x:152.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_5:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_6">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:38.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_6:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_7">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:38.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_7:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_8">
+          <Property Name="AbsolutePosition" Value="x:76.000000 y:38.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_8:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_9">
+          <Property Name="AbsolutePosition" Value="x:114.000000 y:38.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_9:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_10">
+          <Property Name="AbsolutePosition" Value="x:152.000000 y:38.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_10:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_11">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:76.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_11:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_12">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:76.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_12:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_13">
+          <Property Name="AbsolutePosition" Value="x:76.000000 y:76.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_13:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_14">
+          <Property Name="AbsolutePosition" Value="x:114.000000 y:76.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_14:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_15">
+          <Property Name="AbsolutePosition" Value="x:152.000000 y:76.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_15:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_16">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:114.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_16:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_17">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:114.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_17:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_18">
+          <Property Name="AbsolutePosition" Value="x:76.000000 y:114.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_18:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_19">
+          <Property Name="AbsolutePosition" Value="x:114.000000 y:114.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_19:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_20">
+          <Property Name="AbsolutePosition" Value="x:152.000000 y:114.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_20:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_21">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:152.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_21:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_22">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:152.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_22:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_23">
+          <Property Name="AbsolutePosition" Value="x:76.000000 y:152.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_23:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_24">
+          <Property Name="AbsolutePosition" Value="x:114.000000 y:152.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_24:DoAction();" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_25">
+          <Property Name="AbsolutePosition" Value="x:152.000000 y:152.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_25:DoAction();" />
+        </Window>
+
+        <Window Type="TLBB_ActionButton" Name="Action_D1">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(1);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D2">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(2);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D3">
+          <Property Name="AbsolutePosition" Value="x:76.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(3);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D4">
+          <Property Name="AbsolutePosition" Value="x:114.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(4);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D5">
+          <Property Name="AbsolutePosition" Value="x:152.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(5);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D6">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:38.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(6);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D7">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:38.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(7);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D8">
+          <Property Name="AbsolutePosition" Value="x:76.000000 y:38.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(8);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D9">
+          <Property Name="AbsolutePosition" Value="x:114.000000 y:38.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(9);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D10">
+          <Property Name="AbsolutePosition" Value="x:152.000000 y:38.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(10);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D11">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:76.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(11);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D12">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:76.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(12);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D13">
+          <Property Name="AbsolutePosition" Value="x:76.000000 y:76.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(13);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D14">
+          <Property Name="AbsolutePosition" Value="x:114.000000 y:76.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(14);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D15">
+          <Property Name="AbsolutePosition" Value="x:152.000000 y:76.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(15);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D16">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:114.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(16);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D17">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:114.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(17);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D18">
+          <Property Name="AbsolutePosition" Value="x:76.000000 y:114.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(18);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D19">
+          <Property Name="AbsolutePosition" Value="x:114.000000 y:114.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(19);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D20">
+          <Property Name="AbsolutePosition" Value="x:152.000000 y:114.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(20);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D21">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:152.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(21);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D22">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:152.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(22);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D23">
+          <Property Name="AbsolutePosition" Value="x:76.000000 y:152.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(23);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D24">
+          <Property Name="AbsolutePosition" Value="x:114.000000 y:152.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(24);" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Action_D25">
+          <Property Name="AbsolutePosition" Value="x:152.000000 y:152.000000" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:35.000000" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Property Name="UseDefaultTooltip" Value="true" />
+          <Event Name="Clicked" Function="Action_CanDoDoubleAction(25);" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

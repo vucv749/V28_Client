@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection0" Name="Biwuzhaoqin_Vote_Frame">
+    <Property Name="UnifiedPosition" Value="{{0.500000,-276.000000},{0.500000,-235.000000}" />
+    <Property Name="UnifiedSize" Value="{{0.000000,552.000000},{0.000000,470.000000}" />
+    <Event Name="Hidden" Function="Biwuzhaoqin_Vote_Close()" />
+    <Window Type="TLBB_TitleLace_Affection1" Name="Biwuzhaoqin_Vote_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,31.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-80.000000},{0.000000,11.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Biwuzhaoqin_Vote_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="Biwuzhaoqin_Vote_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{BWZQ_20230329_88}" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Biwuzhaoqin_Vote_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Biwuzhaoqin_Vote_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+      <Event Name="Clicked" Function="Biwuzhaoqin_Vote_Close();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Biwuzhaoqin_Vote_Client">
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_StaticImageNULL" Name="Biwuzhaoqin_Vote_chendi">
+        <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,118.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Biwuzhaoqin image:BWZQ_bk"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="Biwuzhaoqin_Vote_InfoBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,74.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="#{BWZQ_20230329_89}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Affection_MultiColumnList" Name="Biwuzhaoqin_Vote_ListTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,-1.000000},{0.000000,105.000000}}"/>
+        <Property Name="ForceHorzScrollbar" Value="False" />
+        <Property Name="SortSettingEnabled" Value="False" />
+        <Property Name="SelectionMode" Value="RowSingle" />
+        <Property Name="ColumnHeader" Value="text: width:0.14 id:0" />
+        <Property Name="ColumnHeader" Value="text: width:0.20 id:1" />
+        <Property Name="ColumnHeader" Value="text: width:0.14 id:2" />
+        <Property Name="ColumnHeader" Value="text: width:0.14 id:3" />
+        <Property Name="ColumnHeader" Value="text: width:0.38 id:4" />
+        <Property Name="ColumnsSizable" Value="False" />
+        <Property Name="ColumnsMovable" Value="False" />
+        <Property Name="ColumnsAdjust" Value="True" />
+        <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_ListTitle_Rank">
+          <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="#{BWZQ_20230329_90}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_ListTitle_Name">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.140000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="#{BWZQ_20230329_91}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_ListTitle_Level">
+          <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.340000,-6.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="#{BWZQ_20230329_92}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_ListTitle_Count">
+          <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.480000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="#{BWZQ_20230329_93}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_ListTitle_Details">
+          <Property Name="UnifiedSize" Value="{{0.380000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.620000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="#{BWZQ_20230329_350}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+
+      <Window Type="TLBB_Affection_NotSuperList" Name="Biwuzhaoqin_Vote_List">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-150.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,128.000000}}"/>
+        <Property Name="SelectMode" Value="Single" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="MultiColumn" Value="1" />
+        <Window Type="TLBB_Affection_NotSuperListItemCommon_Small" Name="Biwuzhaoqin_Vote_ListItem">
+          <Property Name="UnifiedSize" Value="{{1.00000,-16.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Biwuzhaoqin_Vote_ListItem_Rank">
+            <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Biwuzhaoqin image:BWZQ_01"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_ListItem_Name">
+            <Property Name="UnifiedSize" Value="{{0.140000,32.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.140000,0.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_99}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_ListItem_Level">
+            <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.360000,-6.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_100}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_ListItem_Count">
+            <Property Name="UnifiedSize" Value="{{0.200000,-32.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.480000,10.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_101}"/>
+          </Window>
+          <Window Type="TLBB_Animate" Name="Biwuzhaoqin_Vote_ListItem_Animate">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,258.000000},{0.000000,6.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="BWZQ_TP"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_Affection_ButtonCommon" Name="Biwuzhaoqin_Vote_ListItem_VoteButton">
+            <Property Name="UnifiedSize" Value="{{0.00000,40.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-150.000000},{0.500000,-12.000000}}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_351}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_104}"/>
+          </Window>
+          <Window Type="TLBB_Affection_ButtonCommon" Name="Biwuzhaoqin_Vote_ListItem_XinButton">
+            <Property Name="UnifiedSize" Value="{{0.00000,40.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-12.000000}}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_352}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_105}"/>
+          </Window>
+          <Window Type="TLBB_Affection_ButtonCommon" Name="Biwuzhaoqin_Vote_ListItem_ChaButton">
+            <Property Name="UnifiedSize" Value="{{0.00000,40.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{0.500000,-12.000000}}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_353}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_107}"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Affection_NotSuperListItemCommon_Small" Name="Biwuzhaoqin_Vote_ListItem2">
+          <Property Name="UnifiedSize" Value="{{1.00000,-16.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,44.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Biwuzhaoqin_Vote_ListItem2_Rank">
+            <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Biwuzhaoqin image:BWZQ_02"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_ListItem2_Name">
+            <Property Name="UnifiedSize" Value="{{0.140000,32.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.140000,0.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_99}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_ListItem2_Level">
+            <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.360000,-6.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_100}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_ListItem2_Count">
+            <Property Name="UnifiedSize" Value="{{0.200000,-32.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.480000,10.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_101}"/>
+          </Window>
+          <Window Type="TLBB_Animate" Name="Biwuzhaoqin_Vote_ListItem2_Animate">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,258.000000},{0.000000,6.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="BWZQ_TP"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_Affection_ButtonCommon" Name="Biwuzhaoqin_Vote_ListItem2_VoteButton">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-150.000000},{0.500000,-12.000000}}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_351}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_104}"/>
+          </Window>
+          <Window Type="TLBB_Affection_ButtonCommon" Name="Biwuzhaoqin_Vote_ListItem2_XinButton">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-12.000000}}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_105}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_352}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_Affection_ButtonCommon" Name="Biwuzhaoqin_Vote_ListItem2_ChaButton">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{0.500000,-12.000000}}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_107}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_353}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Affection_NotSuperListItemCommon_Small" Name="Biwuzhaoqin_Vote_ListItem3">
+          <Property Name="UnifiedSize" Value="{{1.00000,-16.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,88.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Biwuzhaoqin_Vote_ListItem3_Rank">
+            <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Biwuzhaoqin image:BWZQ_03"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_ListItem3_Name">
+            <Property Name="UnifiedSize" Value="{{0.140000,32.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.140000,0.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_99}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_ListItem3_Level">
+            <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.360000,-6.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_100}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_ListItem3_Count">
+            <Property Name="UnifiedSize" Value="{{0.200000,-32.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.480000,10.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_101}"/>
+          </Window>
+          <Window Type="TLBB_Animate" Name="Biwuzhaoqin_Vote_ListItem3_Animate">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,258.000000},{0.000000,6.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="BWZQ_TP"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_Affection_ButtonCommon" Name="Biwuzhaoqin_Vote_ListItem3_VoteButton">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-150.000000},{0.500000,-12.000000}}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_104}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_351}"/>
+          </Window>
+          <Window Type="TLBB_Affection_ButtonCommon" Name="Biwuzhaoqin_Vote_ListItem3_XinButton">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-12.000000}}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_105}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_352}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_Affection_ButtonCommon" Name="Biwuzhaoqin_Vote_ListItem3_ChaButton">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{0.500000,-12.000000}}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_107}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_353}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Affection_NotSuperListItemCommon_Small" Name="Biwuzhaoqin_Vote_ListItem4">
+          <Property Name="UnifiedSize" Value="{{1.00000,-16.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,132.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Biwuzhaoqin_Vote_ListItem4_Rank">
+            <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Biwuzhaoqin image:BWZQ_04"/>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_ListItem4_RankText">
+              <Property Name="UnifiedSize" Value="{{0.140000,15.440001},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.140000,-0.560000},{0.500000,-8.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              <Property Name="Text" Value="4"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_ListItem4_Name">
+            <Property Name="UnifiedSize" Value="{{0.140000,32.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.140000,0.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_99}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_ListItem4_Level">
+            <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.360000,-6.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_100}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_ListItem4_Count">
+            <Property Name="UnifiedSize" Value="{{0.200000,-32.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.480000,10.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_101}"/>
+          </Window>
+          <Window Type="TLBB_Affection_ButtonCommon" Name="Biwuzhaoqin_Vote_ListItem4_VoteButton">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-150.000000},{0.500000,-12.000000}}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_104}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_351}"/>
+          </Window>
+          <Window Type="TLBB_Animate" Name="Biwuzhaoqin_Vote_ListItem4_Animate">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,258.000000},{0.000000,6.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="BWZQ_TP"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_Affection_ButtonCommon" Name="Biwuzhaoqin_Vote_ListItem4_XinButton">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-12.000000}}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_105}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_352}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_Affection_ButtonCommon" Name="Biwuzhaoqin_Vote_ListItem4_ChaButton">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{0.500000,-12.000000}}"/>
+            <Property Name="Tooltip" Value="#{BWZQ_20230329_107}"/>
+            <Property Name="Text" Value="#{BWZQ_20230329_353}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Level_AllNumber">
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+        <Property Name="Text" Value="#{BWZQ_20230329_94}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_ListTitle_Time">
+        <Property Name="UnifiedSize" Value="{{0.00000,90.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-170.000000},{0.000000,74.000000}}"/>
+        <Property Name="Text" Value="#{BWZQ_20230329_95}"/>
+        <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+      </Window>
+      <Window Type="TLBB_Affection_ButtonCommon" Name="Biwuzhaoqin_Vote_ListTitle_VoteButton">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{0.000000,74.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.00000,60.000000},{0.000000,24.000000}}"/>
+        <Property Name="Text" Value="#{JXGZ_220427_56}"/>
+        <Property Name="Tooltip" Value="#{BWZQ_20230329_102}"/>
+        <Event Name="Clicked" Function="Biwuzhaoqin_Vote_Refresh_Clicked();"/>
+      </Window>
+
+    </Window>
+  </Window>
+</GUILayout>

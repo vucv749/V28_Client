@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrameNULL" Name="MonthPVP_Guide_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,603.000000},{0.000000,451.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-301.000000},{0.500000,-225.000000}}"/>
+
+		<Window Type="TLBB_FrameY" Name="MonthPVP_Guide_FrameBK">
+			<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+			<Window Type="TLBB_DragTitle" Name="MonthPVP_Guide_DragTitle">
+				<Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,23.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,0.000000}}"/>
+				<Property Name="DragTarget" Value="MonthPVP_Guide_Frame"/>
+				<Window Type="TLBB_SimpleText" Name="MonthPVP_Guide_PageHeader">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{LLKC_240517_348}"/>
+					<Property Name="HorzFormatting" Value="HorzCentred"/>
+					<Property Name="Font" Value="YouYuan11.25"/>
+				</Window>
+			</Window>			
+			<Window Type="TLBB_ButtonClose" Name="MonthPVP_Guide_Close">
+				<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,4.000000}}"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+				<Event Name="Clicked" Function="MonthPVP_Guide_OnClose()"/>
+			</Window>			
+			<Window Type="TLBB_Frame_Lace3" Name="MonthPVP_Guide_Client">
+				<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-22.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,22.000000}}"/>	
+				<Window Type="TLBB_ButtonNULL" Name="MonthPVP_Guide_LeftArrow">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,60.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-30.000000}}"/>
+					<Property Name="PushedImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowL_Pushed"/>
+					<Property Name="NormalImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowL_Normal"/>
+					<Property Name="HoverImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowL_Hover"/>
+					<Property Name="DisabledImage" Value="set:DaHua_PVP2 image:MPLeftButton_Disable"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Event Name="Clicked" Function="MonthPVP_Guide_Page_Left()"/>
+				</Window>
+				<Window Type="TLBB_ButtonNULL" Name="MonthPVP_Guide_RightArrow">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,60.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.500000,-30.000000}}"/>
+					<Property Name="PushedImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowR_Pushed"/>
+					<Property Name="NormalImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowR_Normal"/>
+					<Property Name="HoverImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowR_Hover"/>
+					<Property Name="DisabledImage" Value="set:DaHua_PVP2 image:MPRightButton_Disable"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Event Name="Clicked" Function="MonthPVP_Guide_Page_Right()"/>
+				</Window>	
+				<Window Type="TLBB_StaticImageNULL" Name="MonthPVP_Guide_ImageBk">
+					<Property Name="UnifiedSize" Value="{{0.000000,591.000000},{0.000000,421.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="Image" Value="set:DaHua_PVP2 image:DaHua_PVP2_Guide1"/>
+				</Window>				
+			</Window>
+		</Window>		
+
+
+		
+
+	</Window>
+</GUILayout>

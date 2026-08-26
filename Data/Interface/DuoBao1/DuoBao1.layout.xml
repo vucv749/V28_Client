@@ -1,0 +1,412 @@
+<?xml version="1.0"?>
+<GUILayout>
+	<Window Type="TLBB_MainFrameNULL" Name="DuoBao1_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,336.000000},{0.000000,320.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-336.000000},{1.000000,-428.000000}}"/>   
+    <Event Name="Hidden" Function="DuoBao1_OnHiden()"/>
+    <Window Type="TLBB_DragTitle" Name="DuoBao1_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-48.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,2.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{DDDB_20240711_79}" />
+      <Property Name="DragTarget" Value="DuoBao1_Frame"/>
+    </Window>
+    <Window Type="TLBB_FrameY" Name="DuoBao1_Frame_ClientBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+    </Window>    
+    <Window Type="DefaultWindow" Name="DuoBao1_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,24.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="DefaultWindow" Name="DuoBao1_Client1_Title_BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,287.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-143.500000},{0.000000,5.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Window Type="TLBB_SimpleText" Name="DuoBao1_Client1_Title">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred" />
+          <Property Name="Text" Value="#{DDDB_20240711_165}" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DuoBao1_Client1_TimeIcon">
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,132.000000},{0.000000,2.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:DuoBao1 image:DuoBao1_MiniTime"/>
+        </Window>    
+        <Window Type="TLBB_SimpleText" Name="DuoBao1_Client1_Time">
+          <Property Name="UnifiedSize" Value="{{0.000000,138.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-136.000000},{0.000000,0.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{DDDB_20240711_90}" />
+        </Window>        
+      </Window>          
+      <Window Type="TLBB_Frame_Lace2" Name="DuoBao1_Client1">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,96.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,98.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="DuoBao1_Client1_TitleBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,262.000000},{0.000000,50.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:DuoBao1 image:DuoBao1_UsualBackground"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+        </Window>        
+        <Window Type="TLBB_StaticImageNULL" Name="DuoBao1_Client1_TitlePoint">
+          <Property Name="UnifiedSize" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
+          <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Point"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DuoBao1_Client1_Title2">
+          <Property Name="UnifiedSize" Value="{{0.000000,107.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,7.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{DDDB_20240711_91}" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>        
+        <Window Type="TLBB_SimpleText" Name="DuoBao1_Client1_Text1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-25.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,28.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{DDDB_20240711_92}" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>    
+        <Window Type="TLBB_ButtonHelp" Name="DuoBao1_Client1_Help">
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="DuoBao1_Client1_ShowHelp()"/>
+        </Window>   
+        <Window Type="TLBB_SimpleText" Name="DuoBao1_Client1_Text2">
+          <Property Name="UnifiedSize" Value="{{0.000000,118.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{0.000000,68.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{DDDB_20240711_168}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DuoBao1_Client1_Text3">
+          <Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{0.000000,68.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{DDDB_20240711_93}" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="DuoBao1_Client2">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,68.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,28.000000}}"/>
+        <Window Type="DefaultWindow" Name="DuoBao1_Client2_WeiXuanZe">
+          <Property Name="UnifiedSize" Value="{{0.000000,142.000000},{1.000000,-2.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,1.000000}}"/>         
+          <Window Type="TLBB_SimpleText" Name="DuoBao1_Client2_WeiXuanZe_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{DDDB_20240711_87}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>    
+        <Window Type="TLBB_StaticImageNULL" Name="DuoBao1_Client2_ZhiLiao">
+          <Property Name="UnifiedSize" Value="{{0.000000,192.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+          <Property Name="Image" Value="set:DuoBao1 image:DuoBao1_BlueBackground"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="DuoBao1_Client2_ZhiLiao_Text1">
+            <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,82.000000},{0.000000,11.000000}}"/>
+            <Property Name="Text" Value="#{DDDB_20240711_86}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DuoBao1_Client2_ZhiLiao_Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,82.000000},{0.000000,31.000000}}"/>
+            <Property Name="Text" Value="#{DDDB_20240711_89}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+        </Window>    
+        <Window Type="TLBB_StaticImageNULL" Name="DuoBao1_Client2_ZengShang">
+          <Property Name="UnifiedSize" Value="{{0.000000,192.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+          <Property Name="Image" Value="set:DuoBao1 image:DuoBao1_RedBackground"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="DuoBao1_Client2_ZengShang_Text1">
+            <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,82.000000},{0.000000,11.000000}}"/>
+            <Property Name="Text" Value="#{DDDB_20240711_86}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DuoBao1_Client2_ZengShang_Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,82.000000},{0.000000,31.000000}}"/>
+            <Property Name="Text" Value="#{DDDB_20240711_88}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+        </Window>            
+        <Window Type="TLBB_ActionButton" Name="DuoBao1_Client2_Skill1">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,21.000000},{0.500000,-27.000000}}"/>
+          <Event Name="Clicked" Function="DuoBao1_Client2_Skill(1)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DuoBao1_Client2_Skill1_Img">
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{1.000000,-18.000000}}"/>
+            <Property Name="Image" Value="set:DuoBao1 image:DuoBao1_Arrow"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>  
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DuoBao1_Client2_Skill1_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,55.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,11.000000},{0.500000,12.000000}}"/>
+          <Property Name="Text" Value="#{DDDB_20240711_230}"/>   
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>       
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="DuoBao1_Client2_Skill2">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,88.000000},{0.500000,-27.000000}}"/>
+          <Event Name="Clicked" Function="DuoBao1_Client2_Skill(2)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DuoBao1_Client2_Skill2_Img">
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{1.000000,-18.000000}}"/>
+            <Property Name="Image" Value="set:DuoBao1 image:DuoBao1_Arrow"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>            
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DuoBao1_Client2_Skill2_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,55.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,81.000000},{0.500000,11.000000}}"/>
+          <Property Name="Text" Value="#{DDDB_20240711_231}"/>  
+        </Window>
+      </Window>   
+      <Window Type="TLBB_Frame_Lace2" Name="DuoBao1_Client4">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,92.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-97.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="DuoBao1_Client4_TitleBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,262.000000},{0.000000,50.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:DuoBao1 image:DuoBao1_UsualBackground"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DuoBao1_Client4_TitlePoint">
+          <Property Name="UnifiedSize" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
+          <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Point"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>        
+        <Window Type="TLBB_SimpleText" Name="DuoBao1_Client4_Title">
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,7.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{DDDB_20240711_235}" />
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="DuoBao1_Client4_Btn">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{0.000000,6.000000}}"/>
+          <Property Name="Text" Value="#{DDDB_20240711_260}"/>
+          <Event Name="Clicked" Function="DuoBao1_Client4_ClickBtn()"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="DuoBao1_ScoreNo1">
+          <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,30.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DuoBao1_ScoreNo1_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,21.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_No1"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DuoBao1_ScoreNo1_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,5.000000}}"/>
+            <Property Name="Text" Value="#{DDDB_20240711_80}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DuoBao1_ScoreNo1_3">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{1.000000,-35.000000}}"/>
+            <Property Name="Text" Value="#{DDDB_20240711_85}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DuoBao1_ScoreNo1_My">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,31.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_MY2"/>
+          </Window>          
+          <Window Type="TLBB_StaticImageNULL" Name="DuoBao1_ScoreNo1_Line">
+            <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.500000,-32.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:DuoBao1 image:DuoBao1_Line"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="DuoBao1_ScoreNo2">
+          <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,30.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DuoBao1_ScoreNo2_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,21.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>            
+            <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_No2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DuoBao1_ScoreNo2_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,5.000000}}"/>
+            <Property Name="Text" Value="#{DDDB_20240711_81}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DuoBao1_ScoreNo2_3">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{1.000000,-35.000000}}"/>
+            <Property Name="Text" Value="#{DDDB_20240711_85}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DuoBao1_ScoreNo2_My">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,31.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_MY2"/>
+          </Window>          
+          <Window Type="TLBB_StaticImageNULL" Name="DuoBao1_ScoreNo2_Line">
+            <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.500000,-32.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:DuoBao1 image:DuoBao1_Line"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="DuoBao1_ScoreNo3">
+          <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,30.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DuoBao1_ScoreNo3_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,21.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>            
+            <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_No3"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DuoBao1_ScoreNo3_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,5.000000}}"/>
+            <Property Name="Text" Value="#{DDDB_20240711_82}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DuoBao1_ScoreNo3_3">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{1.000000,-35.000000}}"/>
+            <Property Name="Text" Value="#{DDDB_20240711_85}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DuoBao1_ScoreNo3_My">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,31.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_MY2"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DuoBao1_ScoreNo3_Line">
+            <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.500000,-32.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:DuoBao1 image:DuoBao1_Line"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="DuoBao1_ScoreNo4">
+          <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,244.000000},{0.000000,30.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DuoBao1_ScoreNo4_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:DuoBao1 image:DuoBao1_No4"/>        
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DuoBao1_ScoreNo4_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,5.000000}}"/>
+            <Property Name="Text" Value="#{DDDB_20240711_83}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DuoBao1_ScoreNo4_3">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{1.000000,-35.000000}}"/>
+            <Property Name="Text" Value="#{DDDB_20240711_85}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="DuoBao1_ScoreNo4_My">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,31.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_MY2"/>
+          </Window>
+        </Window>
+      </Window>
+     
+    </Window>   
+	</Window>
+</GUILayout>

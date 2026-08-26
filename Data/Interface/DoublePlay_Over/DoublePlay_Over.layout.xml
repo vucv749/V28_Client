@@ -1,0 +1,313 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection0" Name="DoublePlay_Over_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,650.000000},{0.000000,330.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-325.000000},{0.500000,-200.000000}}"/>
+    <Event Name="Hidden" Function="DoublePlay_Over_Clicked_Close();"/>
+	<Window Type="TLBB_TitleLace_Affection0" Name="DoublePlay_Over_DragTitleBK">
+		<Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,31.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.000000,0.000000}}"/>
+		<Property Name="RiseOnClick" Value="False"/>
+	</Window>
+
+    <Window Type="TLBB_DragTitle" Name="DoublePlay_Over_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Text" Value="#{SRWF_230329_143}"/>
+      <Property Name="VertFormatting" Value="VertCentred"/>
+      <Property Name="DragTarget" Value="DoublePlay_Over_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="DoublePlay_Over_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Helper:GotoHelper(&quot;*Compensate&quot;);"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="DoublePlay_Over_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="DoublePlay_Over_Clicked_Close();"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="DoublePlay_Over_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_Affection_MultiColumnList" Name="DoublePlay_Over_ListTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,22.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}" />
+        <Property Name="ForceHorzScrollbar" Value="False" />
+        <Property Name="SortSettingEnabled" Value="False" />
+        <Property Name="SelectionMode" Value="RowSingle" />
+        <Property Name="ColumnHeader" Value="text: width:0.15 id:0" />
+        <Property Name="ColumnHeader" Value="text: width:0.15 id:1" />
+        <Property Name="ColumnHeader" Value="text: width:0.3 id:2" />
+        <Property Name="ColumnHeader" Value="text: width:0.2 id:3" />
+        <Property Name="ColumnHeader" Value="text: width:0.2 id:4" />
+        <Property Name="ColumnsSizable" Value="False" />
+        <Property Name="ColumnsMovable" Value="False" />
+        <Property Name="ColumnsAdjust" Value="True" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_ListTitle_Number">
+          <Property Name="UnifiedSize" Value="{{0.150000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="Text" Value="#{SRWF_230329_144}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_ListTitle_Team">
+          <Property Name="UnifiedSize" Value="{{0.150000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.150000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="Text" Value="#{SRWF_230329_145}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_ListTitle_Name">
+          <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="Text" Value="#{SRWF_230329_146}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_ListTitle_Award">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="Text" Value="#{SRWF_230329_147}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_ListTitle_Num">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="Text" Value="#{SRWF_230329_148}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="DoublePlay_Over_Team1BK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,24.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team1Number">
+          <Property Name="UnifiedSize" Value="{{0.150000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-11.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_149}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team1Team">
+          <Property Name="UnifiedSize" Value="{{0.150000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.150000,0.000000},{0.500000,-11.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_154}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team1Name">
+          <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.500000,-24.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_154}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team1Name2">
+          <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.500000,2.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_154}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team1Award">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.500000,-11.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_155}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team1Num">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.500000,-11.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_156}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="DoublePlay_Over_Team2BK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,74.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team2Number">
+          <Property Name="UnifiedSize" Value="{{0.150000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-11.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_149}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team2Team">
+          <Property Name="UnifiedSize" Value="{{0.150000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.150000,0.000000},{0.500000,-11.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_154}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team2Name">
+          <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.500000,-24.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_154}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team2Name2">
+          <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.500000,2.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_154}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team2Award">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.500000,-11.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_155}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team2Num">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.500000,-11.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_156}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="DoublePlay_Over_Team3BK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,124.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team3Number">
+          <Property Name="UnifiedSize" Value="{{0.150000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-11.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_149}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team3Team">
+          <Property Name="UnifiedSize" Value="{{0.150000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.150000,0.000000},{0.500000,-11.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_154}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team3Name">
+          <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.500000,-24.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_154}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team3Name2">
+          <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.500000,2.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_154}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team3Award">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.500000,-11.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_155}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team3Num">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.500000,-11.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_156}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="DoublePlay_Over_Team4BK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,174.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team4Number">
+          <Property Name="UnifiedSize" Value="{{0.150000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-11.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_149}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team4Team">
+          <Property Name="UnifiedSize" Value="{{0.150000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.150000,0.000000},{0.500000,-11.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_154}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team4Name">
+          <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.500000,-24.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_154}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team4Name2">
+          <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.500000,2.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_154}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team4Award">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.500000,-11.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_155}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team4Num">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.500000,-11.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_156}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="DoublePlay_Over_Team5BK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,224.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team5Number">
+          <Property Name="UnifiedSize" Value="{{0.150000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-11.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_149}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team5Team">
+          <Property Name="UnifiedSize" Value="{{0.150000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.150000,0.000000},{0.500000,-11.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_154}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team5Name">
+          <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.500000,-24.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_154}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team5Name2">
+          <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.500000,2.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_154}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team5Award">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.500000,-11.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_155}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Over_Team5Num">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.500000,-11.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_156}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="DaHua_ListMini_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,140.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-303.000000},{0.500000,78.000000}}"/>
+  <Window Type="TLBB_FrameY" Name="DaHua_ListMini_FrameBK">
+    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="DaHua_ListMini_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,2.000000}}"/>
+      <Property Name="Text" Value="#{QXPVE_240522_148}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="DaHua_ListMini_Frame"/>
+    </Window>
+    <Window Type="TLBB_Frame_Lace2" Name="DaHua_ListMini_PairBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-65.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,30.000000}}"/>
+      <Window Type="DefaultWindow" Name="DaHua_ListMini_Pair">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,70.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,4.000000}}" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_SimpleText" Name="DaHua_ListMini_TimeTitle">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{QXPVE_240522_190}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DaHua_ListMini_TimeTitle2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,25.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{QXPVE_240522_191}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DaHua_ListMini_TimeTitle3">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,50.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{QXPVE_240522_188}" />
+        </Window>
+        <Window Type="TLBB_StopWatch" Name="DaHua_ListMini_Time2">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-74.000000},{0.000000,25.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_StopWatch" Name="DaHua_ListMini_Time3">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-74.000000},{0.000000,50.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="DaHua_ListMini_btn1">
+      <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{1.000000,-30.000000}}"/>
+      <Property Name="Tooltip" Value="#{QXPVE_240522_187}"/>
+      <Property Name="Text" Value="#{QXPVE_240628_29}"/>
+      <Event Name="Clicked" Function="DaHua_ListMini_Open()"/>
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="DaHua_ListMini_btn2">
+      <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-67.000000},{1.000000,-30.000000}}"/>
+      <Property Name="Text" Value="#{QXPVE_240628_30}"/>
+      <Property Name="Tooltip" Value="#{QXPVE_240628_35}"/>
+      <Event Name="Clicked" Function="DaHua_ListMini_Leave()"/>
+    </Window>
+  </Window>
+  </Window>
+</GUILayout>

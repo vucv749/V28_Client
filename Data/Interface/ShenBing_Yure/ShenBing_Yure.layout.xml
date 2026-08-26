@@ -1,0 +1,218 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="ShenBing_Yure_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,736.000000},{0.000000,508.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-368.000000},{0.500000,-254.000000}}"/>
+    <Event Name="Hidden" Function="ShenBing_Yure_OnHidden()"/>
+    <Window Type="TLBB_DragTitle" Name="ShenBing_Yure_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{SBYR_230707_36}"/>
+      <Property Name="DragTarget" Value="ShenBing_Yure_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="ShenBing_Yure_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="ShenBing_Yure_Help()"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="ShenBing_Yure_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="ShenBing_Yure_OnClose()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="ShenBing_Yure_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Window Type="DefaultWindow" Name="ShenBing_Yure_ClientBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="ShenBing_Yure_ClientBK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,724.000000},{0.000000,454.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:ShenBing_YuRe image:ShenBing_Yure_Bk"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShenBing_Yure_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,-46.000000},{0.000000,70.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,2.000000}}"/>
+        <Property Name="Text" Value="#{SBYR_230707_37}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="ShenBing_Yure_TaskPart">
+        <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,130.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Image" Value="set:Bulao_Yure image:Bulao_Yure_Part1"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="ShenBing_Yure_TaskName">
+        <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,48.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,214.000000},{0.000000,160.000000}}"/>
+        <Property Name="Image" Value="set:ShenBing_YuRe image:ShenBing_Yure_P1"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="ShenBing_Yure_TaskOver">
+        <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,72.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,450.000000},{0.000000,325.000000}}"/>
+        <Property Name="Image" Value="set:ShenBing_YuRe image:ShenBing_Yure_Over"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShenBing_Yure_TaskInfo2">
+        <Property Name="UnifiedSize" Value="{{0.000000,412.000000},{0.000000,54.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,246.000000}}"/>
+        <Property Name="Text" Value="#{SBYR_230707_48}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShenBing_Yure_TaskInfo3">
+        <Property Name="UnifiedSize" Value="{{0.000000,395.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{0.000000,360.000000}}"/>
+        <Property Name="Text" Value="#{SBYR_230707_47}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="ShenBing_Yure_Gift">
+        <Property Name="UnifiedSize" Value="{{1.000000,-612.000000},{0.000000,120.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,580.000000},{0.000000,220.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="ShenBing_Yure_Gift1_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.500000,-50.000000}}"/>
+          <Event Name="Clicked" Function="ShenBing_Yure_PrizeClicked(1)"/>
+          <Window Type="TLBB_Animate" Name="ShenBing_Yure_Gift1_Icon_Animate">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ShenBing_Yure_Gift1_Icon_Get">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ShenBing_Yure_Gift2_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.500000,-50.000000}}"/>
+          <Event Name="Clicked" Function="ShenBing_Yure_PrizeClicked(2)"/>
+          <Window Type="TLBB_Animate" Name="ShenBing_Yure_Gift2_Icon_Animate">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ShenBing_Yure_Gift2_Icon_Get">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ShenBing_Yure_Gift3_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.500000,6.000000}}"/>
+          <Event Name="Clicked" Function="ShenBing_Yure_PrizeClicked(3)"/>
+          <Window Type="TLBB_Animate" Name="ShenBing_Yure_Gift3_Icon_Animate">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ShenBing_Yure_Gift3_Icon_Get">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ShenBing_Yure_Gift4_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,37.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.500000,6.000000}}"/>
+          <Event Name="Clicked" Function="ShenBing_Yure_PrizeClicked(4)"/>
+          <Window Type="TLBB_Animate" Name="ShenBing_Yure_Gift4_Icon_Animate">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ShenBing_Yure_Gift4_Icon_Get">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+
+        <Window Type="TLBB_SimpleText" Name="ShenBing_Yure_Gift1_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-72.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{SBYR_230707_54}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShenBing_Yure_Gift2_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{1.000000,-72.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{SBYR_230707_55}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShenBing_Yure_Gift3_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-14.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{SBYR_230707_56}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShenBing_Yure_Gift4_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{1.000000,-14.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{SBYR_230707_57}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShenBing_Yure_Now">
+        <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-123.000000},{1.000000,-100.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="Text" Value="#{CCYR_221220_167}"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

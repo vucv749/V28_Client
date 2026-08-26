@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_Frame3" Name="Union_Ensure_Frame">
+    <Property Name="UnifiedPosition" Value="{{0.500000,-120.00000},{0.300000,0.000000}" />
+    <Property Name="AbsoluteSize" Value="w:240.000000 h:128.000000"  />
+    <Property Name="AlwaysOnTop" Value="True" />
+    <Window Type="TLBB_SimpleText" Name="Union_Ensure_Text1" >
+      <Property Name="AbsolutePosition" Value="x:9.000000 y:12.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-18.000000},{0.000000,80.000000}" />
+      <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+      <Property Name="RiseOnClick" Value="False" />
+      <Property Name="Text" Value="#{TDGZ_100809_29}" />
+      <Property Name="TextColor" Value="FFFFF263" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="Union_Ensure_Button1">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-85.000000},{1.000000,-25.000000}" />
+      <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+      <Property Name="Text" Value="#{INTERFACE_XML_557}" />
+      <Event Name="Clicked" Function="Union_Ensure_ConfirmClick();" />
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="Union_Ensure_Button2">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-45.000000},{1.000000,-25.000000}" />
+      <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+      <Property Name="Text" Value="#{INTERFACE_XML_542}" />
+      <Event Name="Clicked" Function="Union_Ensure_CancelClick();" />
+    </Window>
+  </Window>
+    </GUILayout>
+    

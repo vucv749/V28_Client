@@ -1,0 +1,491 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Kunwu_YuRe_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,770.000000},{0.000000,500.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-385.000000},{0.500000,-250.000000}}"/>
+    <Event Name="Hidden" Function="Kunwu_YuRe_Close();" />
+    <Window Type="TLBB_HeroTitle01" Name="Kunwu_YuRe_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,320.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-160.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Kunwu_YuRe_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,0.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{SJYY_20241216_37}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="DragTarget" Value="Kunwu_YuRe_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonClose2" Name="Kunwu_YuRe_OnClosed">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,10.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Kunwu_YuRe_Close();" />
+    </Window>
+    <Window Type="TLBB_HeroFrame01" Name="Kunwu_YuRe_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-2.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+      <Window Type="TLBB_HeroLace01" Name="Kunwu_YuRe_Page">
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_Page_Bk">
+          <Property Name="UnifiedSize" Value="{{0.000000,754.000000},{0.000000,460.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,2.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Bk"/>
+        </Window>
+
+        <Window Type="DefaultWindow" Name="Kunwu_YuRe_InfoFrame">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,65.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="Kunwu_YuRe_Info">
+            <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,1.000000}}"/>
+            <Property Name="Text" Value="#{SJYY_20241216_38}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_ButtonHelp" Name="Kunwu_YuRe_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{1.000000,-26.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Kunwu_YuRe_Help_Clicked();"/>
+          </Window>
+        </Window>
+
+        <Window Type="DefaultWindow" Name="Kunwu_YuRe_HuoyueFrame1">
+          <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,300.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{1.000000,-350.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_HuoyueFrame1_GiftBk">
+            <Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-132.000000},{1.000000,-50.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_BrownBk"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="Kunwu_YuRe_HuoyueFrame1_GiftText">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{SJYY_20241216_271}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Kunwu_YuRe_RenWu_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,110.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,87.000000},{1.000000,-230.000000}}"/>
+            <Property Name="PushedImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu1_P"/>
+            <Property Name="NormalImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu1_N"/>
+            <Property Name="HoverImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu1_H"/>
+            <Property Name="DisabledImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu1_D"/>
+            <Event Name="Clicked" Function="Kunwu_YuRe_RenWuClicked(1)"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_RenWu_Bk1">
+            <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,118.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,87.000000},{1.000000,-230.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu1_Down"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_RenWu_1_Over">
+            <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,94.000000},{0.000000,160.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_OK_L"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+
+          <Window Type="TLBB_ButtonNULL" Name="Kunwu_YuRe_RenWu_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,110.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,126.000000},{1.000000,-233.000000}}"/>
+            <Property Name="PushedImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu2_P"/>
+            <Property Name="NormalImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu2_N"/>
+            <Property Name="HoverImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu2_H"/>
+            <Property Name="DisabledImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu2_D"/>
+            <Event Name="Clicked" Function="Kunwu_YuRe_RenWuClicked(2)"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_RenWu_Bk2">
+            <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,118.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,126.000000},{1.000000,-233.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu2_Down"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_RenWu_2_Over">
+            <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,132.000000},{0.000000,154.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_OK_C"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Kunwu_YuRe_RenWu_3">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,110.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,163.000000},{1.000000,-236.000000}}"/>
+            <Property Name="PushedImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu3_P"/>
+            <Property Name="NormalImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu3_N"/>
+            <Property Name="HoverImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu3_H"/>
+            <Property Name="DisabledImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu3_D"/>
+            <Event Name="Clicked" Function="Kunwu_YuRe_RenWuClicked(3)"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_RenWu_Bk3">
+            <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,118.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,163.000000},{1.000000,-236.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu3_Down"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_RenWu_3_Over">
+            <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.000000,150.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_OK_R"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Kunwu_YuRe_RenWu_Item1">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,34.000000},{1.000000,-100.000000}}"/>
+            <Event Name="Clicked" Function="Kunwu_YuRe_AwardClicked(1)"/>
+            <Window Type="TLBB_Animate" Name="Kunwu_YuRe_RenWu_ItemAnimate1">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="Equip_Zhizun"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_RenWu_Down1">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Kunwu_YuRe_HuoyueFrame2">
+          <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,300.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{1.000000,-390.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_HuoyueFrame2_GiftBk">
+            <Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-132.000000},{1.000000,-30.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_BrownBk"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="Kunwu_YuRe_HuoyueFrame2_GiftText">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{SJYY_20241216_271}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_HuoyueFrame2_TimeBk">
+            <Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-132.000000},{1.000000,-30.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_BlueBk"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="Kunwu_YuRe_HuoyueFrame2_TimeText">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{SJYY_20241216_272}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Kunwu_YuRe_RenWu_4">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,110.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,96.000000},{1.000000,-234.000000}}"/>
+            <Property Name="PushedImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu4_P"/>
+            <Property Name="NormalImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu4_N"/>
+            <Property Name="HoverImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu4_H"/>
+            <Property Name="DisabledImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu4_D"/>
+            <Event Name="Clicked" Function="Kunwu_YuRe_RenWuClicked(4)"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_RenWu_Bk4">
+            <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,118.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,96.000000},{1.000000,-234.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu4_Down"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_RenWu_4_Over">
+            <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,98.000000},{0.000000,154.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_OK_L"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Kunwu_YuRe_RenWu_5">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,110.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{1.000000,-235.000000}}"/>
+            <Property Name="PushedImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu5_P"/>
+            <Property Name="NormalImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu5_N"/>
+            <Property Name="HoverImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu5_H"/>
+            <Property Name="DisabledImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu5_D"/>
+            <Event Name="Clicked" Function="Kunwu_YuRe_RenWuClicked(5)"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_RenWu_Bk5">
+            <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,118.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{1.000000,-235.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu5_Down"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_RenWu_5_Over">
+            <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,138.000000},{0.000000,152.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_OK_C"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Kunwu_YuRe_RenWu_6">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,110.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,174.000000},{1.000000,-234.000000}}"/>
+            <Property Name="PushedImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu6_P"/>
+            <Property Name="NormalImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu6_N"/>
+            <Property Name="HoverImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu6_H"/>
+            <Property Name="DisabledImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu6_D"/>
+            <Event Name="Clicked" Function="Kunwu_YuRe_RenWuClicked(6)"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_RenWu_Bk6">
+            <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,118.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,174.000000},{1.000000,-234.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu6_Down"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_RenWu_6_Over">
+            <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,176.000000},{0.000000,152.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_OK_R"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Kunwu_YuRe_RenWu_Item2">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,36.000000},{1.000000,-80.000000}}"/>
+            <Event Name="Clicked" Function="Kunwu_YuRe_AwardClicked(2)"/>
+            <Window Type="TLBB_Animate" Name="Kunwu_YuRe_RenWu_ItemAnimate2">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="Equip_Zhizun"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_RenWu_Down2">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Kunwu_YuRe_HuoyueFrame3">
+          <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,300.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,500.000000},{1.000000,-350.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_HuoyueFrame3_GiftBk">
+            <Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-172.000000},{1.000000,-30.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_BrownBk"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="Kunwu_YuRe_HuoyueFrame3_GiftText">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{SJYY_20241216_271}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_HuoyueFrame3_TimeBk">
+            <Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-172.000000},{1.000000,-30.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_BlueBk"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="Kunwu_YuRe_HuoyueFrame3_TimeText">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{SJYY_20241216_273}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Kunwu_YuRe_RenWu_7">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,110.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{1.000000,-236.000000}}"/>
+            <Property Name="PushedImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu7_P"/>
+            <Property Name="NormalImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu7_N"/>
+            <Property Name="HoverImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu7_H"/>
+            <Property Name="DisabledImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu7_D"/>
+            <Event Name="Clicked" Function="Kunwu_YuRe_RenWuClicked(7)"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_RenWu_Bk7">
+            <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,118.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{1.000000,-236.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu7_Down"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_RenWu_7_Over">
+            <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.000000,150.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_OK_L"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Kunwu_YuRe_RenWu_8">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,110.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,146.000000},{1.000000,-232.000000}}"/>
+            <Property Name="PushedImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu8_P"/>
+            <Property Name="NormalImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu8_N"/>
+            <Property Name="HoverImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu8_H"/>
+            <Property Name="DisabledImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu8_D"/>
+            <Event Name="Clicked" Function="Kunwu_YuRe_RenWuClicked(8)"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_RenWu_Bk8">
+            <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,118.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,146.000000},{1.000000,-232.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu8_Down"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_RenWu_8_Over">
+            <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,144.000000},{0.000000,154.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_OK_C"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Kunwu_YuRe_RenWu_9">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,110.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,182.000000},{1.000000,-226.000000}}"/>
+            <Property Name="PushedImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu9_P"/>
+            <Property Name="NormalImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu9_N"/>
+            <Property Name="HoverImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu9_H"/>
+            <Property Name="DisabledImage" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu9_D"/>
+            <Event Name="Clicked" Function="Kunwu_YuRe_RenWuClicked(9)"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_RenWu_Bk9">
+            <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,118.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,182.000000},{1.000000,-226.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_Renwu9_Down"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_RenWu_9_Over">
+            <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,178.000000},{0.000000,160.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_OK_R"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Kunwu_YuRe_RenWu_Item3">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-80.000000}}"/>
+            <Event Name="Clicked" Function="Kunwu_YuRe_AwardClicked(3)"/>
+            <Window Type="TLBB_Animate" Name="Kunwu_YuRe_RenWu_ItemAnimate3">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="Equip_Zhizun"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_RenWu_Down3">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Kunwu_YuRe_RenWu_Item4">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,24.000000},{1.000000,-80.000000}}"/>
+            <Event Name="Clicked" Function="Kunwu_YuRe_AwardClicked(4)"/>
+            <Window Type="TLBB_Animate" Name="Kunwu_YuRe_RenWu_ItemAnimate4">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="Equip_Zhizun"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_YuRe_RenWu_Down4">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+
+
+        </Window>
+
+
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

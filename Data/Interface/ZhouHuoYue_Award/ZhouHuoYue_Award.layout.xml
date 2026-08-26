@@ -1,0 +1,869 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="ZhouHuoYue_Award_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,627.000000},{0.000000,574.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-316.000000},{0.500000,-300.000000}}"/>
+    <Event Name="Hidden" Function="ZhouHuoYue_Award_Close();"/>
+    <Window Type="TLBB_DragTitle" Name="ZhouHuoYue_Award_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="DragTarget" Value="ZhouHuoYue_Award_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{FLFC_230310_01}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="ZhouHuoYue_Award_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="ZhouHuoYue_Award_Close();" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="ZhouHuoYue_Award_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="ZhouHuoYue_Award_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="DefaultWindow" Name="ZhouHuoYue_Award_CheckBox">
+        <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}}"/>
+        <Property Name="Visible" Value="False"/>
+        <Window Type="TLBB_ButtonFenYe7" Name="ZhouHuoYue_Award_Index0">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{QRDL_20211229_16}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="ZhouHuoYue_Award_Index(0)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Award_Index0_Tips">
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonFenYe7" Name="ZhouHuoYue_Award_Index1">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,128.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{FLFC_230310_01}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="ZhouHuoYue_Award_Index(1)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Award_Index1_Tips">
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ZhouHuoYue_Award">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="DefaultWindow" Name="ZhouHuoYue_AwardALLBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardBK1">
+            <Property Name="UnifiedSize" Value="{{0.000000,614.000000},{0.000000,524.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:ZhouHuoYue2 image:ZhouHuoYue_Award2BK"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardBK2">
+            <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,512.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardBK3">
+            <Property Name="UnifiedSize" Value="{{0.000000,314.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,300.000000},{0.000000,512.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ZhouHuoYue_Award_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,-68.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{0.000000,2.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Award_Infotext">
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="Text" Value="#{FLFC_230310_04}"/>
+            <Window Type="TLBB_ButtonHelp" Name="ZhouHuoYue_Award_Help2">
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+              <Event Name="Clicked" Function="ZhouHuoYue_Award_HelpClicked();"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ZhouHuoYue_Award_Items">
+          <Property Name="UnifiedSize" Value="{{0.000000,420.000000},{0.000000,81.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-440.000000},{0.000000,420.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Award_Item_1BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,81.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ZhouHuoYue2 image:ZhouHuoYue_Award3"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_Award_Item_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+            <Event Name="Clicked" Function="ZhouHuoYue_Award_Special_Clicked(1);" />
+            <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Award_Item_1_Animate">
+              <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Award_Item_1OK">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Award_Item_2BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,81.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ZhouHuoYue2 image:ZhouHuoYue_Award3"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_Award_Item_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+            <Event Name="Clicked" Function="ZhouHuoYue_Award_Special_Clicked(2);" />
+            <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Award_Item_2OK">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Award_Item_2_Animate">
+              <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Award_Item_3BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,81.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,218.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ZhouHuoYue2 image:ZhouHuoYue_Award3"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_Award_Item_3">
+            <Event Name="Clicked" Function="ZhouHuoYue_Award_Special_Clicked(3);" />
+            <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Award_Item_3OK">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Award_Item_3_Animate">
+              <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Award_Item_4BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,81.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ZhouHuoYue2 image:ZhouHuoYue_Award3"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_Award_Item_4">
+            <Event Name="Clicked" Function="ZhouHuoYue_Award_Special_Clicked(4);" />
+            <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-26.000000},{0.500000,-26.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Award_Item_4OK">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Award_Item_4_Animate">
+              <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ZhouHuoYue_AwardProgress">
+          <Property Name="UnifiedSize" Value="{{0.000000,470.000000},{0.000000,5.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-198.000000},{0.000000,458.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="DefaultWindow" Name="ZhouHuoYue_AwardEXPTip">
+            <Property Name="UnifiedSize" Value="{{0.000000,470.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ProgressPropertyZhouHuoYue3" Name="ZhouHuoYue_AwardEXP">
+            <Property Name="UnifiedSize" Value="{{0.000000,470.000000},{0.000000,5.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="CurrentProgress" Value="1.0" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Award_TextProgressNum">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,58.000000},{0.000000,466.000000}}"/>
+          <Property Name="Font" Value="YouYuan13"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="ZhouHuoYue_Award_TextProgress">
+          <Property Name="UnifiedSize" Value="{{0.000000,450.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-204.000000},{0.000000,500.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Award_TextProgress2BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:ZhouHuoYue_Award image:ZhouHuoYue_AwardBK4"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Award_TextProgress2">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#c6a39063"/>
+            <Property Name="Font" Value="YouYuan13"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Award_TextProgress3BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:ZhouHuoYue_Award image:ZhouHuoYue_AwardBK4"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Award_TextProgress3">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#c6a39065"/>
+            <Property Name="Font" Value="YouYuan13"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Award_TextProgress4BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:ZhouHuoYue_Award image:ZhouHuoYue_AwardBK4"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Award_TextProgress4">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#c6a39068"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Font" Value="YouYuan13"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Award_TextProgress5BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:ZhouHuoYue_Award image:ZhouHuoYue_AwardBK4"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Award_TextProgress5">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#c6a390610"/>
+            <Property Name="Font" Value="YouYuan13"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_Award_TextNull">
+          <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,440.000000},{0.000000,68.000000}}"/>
+          <Property Name="Image" Value="set:ZhouHuoYue2 image:ZhouHuoYue_Award2Text"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Award_TextNull2">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,524.000000},{0.000000,70.000000}}"/>
+          <Property Name="Text" Value="#{FLFC_230310_12}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="ZhouHuoYue_Award_Info2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,300.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,110.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Award_Text1">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,120.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,20.000000}}"/>
+            <Property Name="Text" Value="#{FLFC_230310_35}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Award_Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,120.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,142.000000}}"/>
+            <Property Name="Text" Value="#{FLFC_230310_36}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Award_TextTime1">
+          <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,74.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{FLFC_230310_28}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Award_TextTime2">
+          <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{FLFC_230310_29}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Award_TextTime3">
+          <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,224.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{FLFC_230310_30}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Award_TextTime4">
+          <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,300.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{FLFC_230310_31}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Award_TextTime5">
+          <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,374.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{FLFC_230310_32}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Award_TextTime6">
+          <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,450.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{FLFC_230310_33}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ZhouHuoYue_Award_TextTime7">
+          <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,524.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{FLFC_230310_34}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_AwardIcon1">
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,48.000000}}"/>
+          <Event Name="Clicked" Function="ZhouHuoYue_Award_Day_Clicked(1, 1);" />
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon1_Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon1_OK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon1_Disable">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_AwardIcon2">
+          <Event Name="Clicked" Function="ZhouHuoYue_Award_Day_Clicked(1, 2);" />
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,172.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon2_Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon2_OK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon2_Disable">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_AwardIcon3">
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,142.000000},{0.000000,48.000000}}"/>
+          <Event Name="Clicked" Function="ZhouHuoYue_Award_Day_Clicked(2, 1);" />
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon3_Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon3_OK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon3_Disable">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_AwardIcon4">
+          <Event Name="Clicked" Function="ZhouHuoYue_Award_Day_Clicked(2, 2);" />
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,142.000000},{0.000000,172.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon4_Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon4_OK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon4_Disable">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_AwardIcon5">
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,218.000000},{0.000000,48.000000}}"/>
+          <Event Name="Clicked" Function="ZhouHuoYue_Award_Day_Clicked(3, 1);" />
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon5_Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon5_OK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon5_Disable">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_AwardIcon6">
+          <Event Name="Clicked" Function="ZhouHuoYue_Award_Day_Clicked(3, 2);" />
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,218.000000},{0.000000,172.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon6_Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon6_OK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon6_Disable">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_AwardIcon7">
+          <Event Name="Clicked" Function="ZhouHuoYue_Award_Day_Clicked(4, 1);" />
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,292.000000},{0.000000,48.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon7_Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon7_OK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon7_Disable">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_AwardIcon8">
+          <Event Name="Clicked" Function="ZhouHuoYue_Award_Day_Clicked(4, 2);" />
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,292.000000},{0.000000,172.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon8_Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon8_OK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon8_Disable">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_AwardIcon9">
+          <Event Name="Clicked" Function="ZhouHuoYue_Award_Day_Clicked(5, 1);" />
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,368.000000},{0.000000,48.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon9_Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon9_OK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon9_Disable">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_AwardIcon10">
+          <Event Name="Clicked" Function="ZhouHuoYue_Award_Day_Clicked(5, 2);" />
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,368.000000},{0.000000,172.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon10_Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon10_OK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon10_Disable">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_AwardIcon11">
+          <Event Name="Clicked" Function="ZhouHuoYue_Award_Day_Clicked(6, 1);" />
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,442.000000},{0.000000,48.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon11_Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon11_OK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon11_Disable">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_AwardIcon12">
+          <Event Name="Clicked" Function="ZhouHuoYue_Award_Day_Clicked(6, 2);" />
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,442.000000},{0.000000,172.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon12_Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon12_OK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon12_Disable">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_AwardIcon13">
+          <Event Name="Clicked" Function="ZhouHuoYue_Award_Day_Clicked(7, 1);" />
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,518.000000},{0.000000,48.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon13_Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon13_OK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon13_Disable">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ZhouHuoYue_AwardIcon14">
+          <Event Name="Clicked" Function="ZhouHuoYue_Award_Day_Clicked(7, 2);" />
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,518.000000},{0.000000,172.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon14_Animate">
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon14_OK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouHuoYue_AwardIcon14_Disable">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+          </Window>
+        </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

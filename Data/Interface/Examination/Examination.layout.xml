@@ -1,0 +1,176 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame0" Name="Examination_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,336.000000},{0.000000,370.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-168.000000},{0.500000,-180.000000}" />
+        <Event Name="Hidden" Function="Examination_OnHiden()"/>
+        <Window Type="TLBB_DragTitle" Name="Examination_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="Examination_Frame" />
+            <Window Type="TLBB_SimpleText" Name="Examination_Pageheader">
+                <Property Name="Position" Value="x:0.0 y:0.0" />
+                <Property Name="Size" Value="w:1.0 h:1.0" />
+                <Property Name="Font" Value="YouYuan11.25" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="Text" Value="#{KJYH_221013_118}" />
+            </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Examination_BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,320.000000},{0.000000,154.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-160.000000},{1.000000,-174.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:New_Keju image:New_Keju_BK2"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>       
+        <Window Type="TLBB_StaticImageNULL" Name="Examination_Result">
+            <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,37.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{1.000000,-240.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:New_Keju image:New_Keju_Yes"/>
+        </Window>          
+        <Window Type="TLBB_ButtonHelp" Name="Examination_Help">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonHelp" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Examination&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="Examination_Close">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonClose" />
+            <Event Name="Clicked" Function="Examination_Cancel_Clicked();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="Examination_Frame_Client">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:36.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}" />
+            <Window Type="TLBB_SimpleText" Name="Examination_NPCName_Text">
+                <Property Name="Position" Value="x:0.0 y:0.0" />
+                <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,18.000000}" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="Text" Value="#{INTERFACE_XML_400}" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Examination_Type_Text">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,18.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.5,0.000000},{0.000000,18.000000}" />
+                <Property Name="HorzFormatting" Value="HorzLeft" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="Text" Value="#{INTERFACE_XML_423}" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Examination_Number_Text">
+                <Property Name="UnifiedPosition" Value="{{0.7,0.000000},{0.000000,18.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.3,0.000000},{0.000000,18.000000}" />
+                <Property Name="HorzFormatting" Value="RightAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="Text" Value="#{INTERFACE_XML_236}" />
+            </Window>
+            <Window Type="TLBB_StaticText" Name="Examination_Text">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,36.000000}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,106.000000}" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="Text" Value="#{INTERFACE_XML_117}" />
+                <Property Name="VertScrollbar" Value="true" />
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="Examination_Button_1">
+                <Property Name="UnifiedSize" Value="{{ 0.000000,310.000000},{0.000000,30.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-155.000000},{1.000000,-155.000000}" />
+                <Property Name="PushedImage" Value="set:New_Keju image:New_Keju_Btn_Pushed"/>
+                <Property Name="NormalImage" Value="set:New_Keju image:New_Keju_Btn_Normal"/>
+                <Property Name="HoverImage" Value="set:New_Keju image:New_Keju_Btn_Hover"/>
+                <Property Name="DisabledImage" Value="set:New_Keju image:New_Keju_Btn_Disabled"/>                
+                <Event Name="Clicked" Function="Examination_Button_Clicked(1);" />
+                <Property Name="Text" Value="#{INTERFACE_XML_95}" />
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="Examination_Button_2">
+                <Property Name="UnifiedSize" Value="{{ 0.000000,310.000000},{0.000000,30.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-155.000000},{1.000000,-115.000000}" />
+                <Property Name="PushedImage" Value="set:New_Keju image:New_Keju_Btn_Pushed"/>
+                <Property Name="NormalImage" Value="set:New_Keju image:New_Keju_Btn_Normal"/>
+                <Property Name="HoverImage" Value="set:New_Keju image:New_Keju_Btn_Hover"/>
+                <Property Name="DisabledImage" Value="set:New_Keju image:New_Keju_Btn_Disabled"/>  
+                <Event Name="Clicked" Function="Examination_Button_Clicked(2);" />
+                <Property Name="Text" Value="#{INTERFACE_XML_96}" />
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="Examination_Button_3">
+                <Property Name="UnifiedSize" Value="{{ 0.000000,310.000000},{0.000000,30.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.500000,-155.000000},{1.000000,-75.000000}" />
+                <Property Name="PushedImage" Value="set:New_Keju image:New_Keju_Btn_Pushed"/>
+                <Property Name="NormalImage" Value="set:New_Keju image:New_Keju_Btn_Normal"/>
+                <Property Name="HoverImage" Value="set:New_Keju image:New_Keju_Btn_Hover"/>
+                <Property Name="DisabledImage" Value="set:New_Keju image:New_Keju_Btn_Disabled"/>  
+                <Event Name="Clicked" Function="Examination_Button_Clicked(3);" />
+                <Property Name="Text" Value="#{INTERFACE_XML_98}" />
+            </Window>
+
+            <Window Type="TLBB_ButtonCommon" Name="Examination_Button_Next">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-30.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}" />
+                <Event Name="Clicked" Function="Examination_Next_Clicked();" />
+                <Property Name="Text" Value="#{KJYH_221013_81}" />
+            </Window>
+
+            <Window Type="TLBB_SimpleText" Name="Examination_Total_StopWatch_Text">
+                <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{1.000000,-18.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,85.000000},{0.000000,18.000000}" />
+                <Property Name="HorzFormatting" Value="HorzLeft" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="Text" Value="#{INTERFACE_XML_424}" />
+				<Property Name="Visible" Value="False" />
+            </Window>
+            <Window Type="TLBB_StopWatch" Name="Examination_Total_StopWatch">
+                <Property Name="UnifiedPosition" Value="{{0.0,85.000000},{1.000000,-18.000000}" />
+                <Property Name="AbsoluteSize" Value="w:40.000000 h:18.000000" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="Text" Value="06:15" />
+				<Property Name="Visible" Value="False" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Examination_StopWatch_Text">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-125.000000},{1.000000,-20.000000}" />
+                <Property Name="AbsoluteSize" Value="w:85.000000 h:18.000000" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="TextColor" Value="FFFFF263" />
+                <Property Name="Text" Value="#{INTERFACE_XML_195}" />
+				<Property Name="Visible" Value="False" />
+            </Window>
+            <Window Type="TLBB_StopWatch" Name="Examination_StopWatch">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+                <Property Name="AbsoluteSize" Value="w:40.000000 h:18.000000" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="Text" Value="00:15" />
+                --<Event Name="ReachedZero" Function="Examination_OverTime();" />
+				<Property Name="Visible" Value="False" />
+            </Window>
+            <Window Type="TLBB_StopWatch" Name="Examination_Time_Text">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+                <Property Name="AbsoluteSize" Value="w:0.000000 h:0.000000" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />                  
+                <Property Name="Text" Value="00:00" />              
+                <Event Name="ReachedZero" Function="Examination_TimeOut();" />                                
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

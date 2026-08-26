@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="ChatSpeaker_Rumi_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,406.000000},{0.000000,275.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-203.000000},{0.500000,-137.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="ChatSpeaker_Rumi_Frame_Title">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="DragTarget" Value="ChatSpeaker_Rumi_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="Text" Value="#{SFDJ_240117_97}" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="ChatSpeaker_Rumi_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function=""/>
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*ChatSpeaker_Rumi&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="ChatSpeaker_Rumi_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="ChatSpeaker_Rumi_Hide()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="ChatSpeaker_Rumi_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-11.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_Frame_Lace6" Name="ChatSpeaker_Rumi_kuang">
+        <Property Name="UnifiedSize" Value="{{0.900000,32.000000},{0.000000,114.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,1.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="ChatSpeaker_Rumi_Text">
+          <Property Name="UnifiedSize" Value="{{0.900000,16.200008},{0.000000,97.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,9.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="Text" Value="#{SFDJ_240117_98}" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_MultiIMEEditBox" Name="ChatSpeaker_Rumi_Edit">
+        <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{1.000000,-138.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,116.000000}}"/>
+        <Property Name="MaxTextLength" Value="64" />
+        <Property Name="OnReturnEnable" Value="False" />
+        <Property Name="ActiveSelectionColour" Value="FF00FF00" />
+        <Property Name="SelectedTextColour" Value="FFFFFFFF" />
+        <Event Name="TextAccepted" Function="ChatSpeaker_Rumi_SendMessage();" />
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="ChatSpeaker_Rumi_ChatButton_Frame">
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-21.000000}" />
+        <Property Name="AbsoluteSize" Value="w:39.000000 h:22.000000" />
+        <Window Type="TLBB_ButtonNULL" Name="ChatSpeaker_Rumi_LetterColor">
+          <Property Name="AbsolutePosition" Value="x:3.000000 y:3.000000" />
+          <Property Name="AbsoluteSize" Value="w:16.000000 h:16.000000" />
+          <Property Name="NormalImage" Value="set:Button2 image:BtnA_Normal" />
+          <Property Name="HoverImage" Value="set:Button2 image:BtnA_Hover" />
+          <Property Name="PushedImage" Value="set:Button2 image:BtnA_Pushed" />
+          <Property Name="DisabledImage" Value="set:Button2 image:BtnA_Disable" />
+          <Property Name="Tooltip" Value="#{SFDJ_240117_99}" />
+          <Event Name="Clicked" Function="ChatSpeaker_Rumi_SelectTextColor();" />
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="ChatSpeaker_Rumi_Face">
+          <Property Name="AbsolutePosition" Value="x:20.000000 y:3.000000" />
+          <Property Name="AbsoluteSize" Value="w:16.000000 h:16.000000" />
+          <Property Name="NormalImage" Value="set:Button2 image:BtnFace_Normal" />
+          <Property Name="HoverImage" Value="set:Button2 image:BtnFace_Hover" />
+          <Property Name="PushedImage" Value="set:Button2 image:BtnFace_Pushed" />
+          <Property Name="DisabledImage" Value="set:Button2 image:BtnFace_Disable" />
+          <Property Name="Tooltip" Value="#{SFDJ_240117_100}" />
+          <Event Name="Clicked" Function="ChatSpeaker_Rumi_SelectFaceMotion();" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="ChatSpeaker_Rumi_Blank">
+        <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-163.000000},{0.000000,20.000000}" />
+        <Property Name="RiseOnClick" Value="False" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="ChatSpeaker_Rumi_OK">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-123.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+        <Property Name="Text" Value="#{SFDJ_240117_90}" />
+        <Event Name="Clicked" Function="ChatSpeaker_Rumi_SendMessage();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="ChatSpeaker_Rumi_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+        <Property Name="Text" Value="#{SFDJ_240117_95}" />
+        <Event Name="Clicked" Function="ChatSpeaker_Rumi_Hide();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

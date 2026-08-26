@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="NoDiffMatch_Score_Tiny_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,28.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.0,-350.000000},{1.0,-150.000000}}"/>
+    <Property Name="AttachEnabled" Value="true" />
+    <Window Type="TLBB_DragTitle" Name="NoDiffMatch_Score_Tiny_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,3.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.0,-28.000000},{0.000000,20.000000}}"/>
+      <Property Name="DragTarget" Value="NoDiffMatch_Score_Tiny_Frame" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_SimpleText" Name="NoDiffMatch_Score_Tiny_PageHeader">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{WCBZ_180128_246}" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_Frame2" Name="NoDiffMatch_Score_Tiny">
+      <Property Name="UnifiedSize" Value="{{1.0,0.000000},{1.0,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0.000000}}"/>
+      <Window Type="TLBB_ButtonNULL" Name="NoDiffMatch_Score_Tiny_Small">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-23.000000},{0.000000,5.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+        <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomIn_Pushed"/>
+        <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomIn_Normal"/>
+        <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomIn_Hover"/>
+        <Event Name="Clicked" Function="NoDiffMatch_Score_Tiny_OnShowNormalUI()"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

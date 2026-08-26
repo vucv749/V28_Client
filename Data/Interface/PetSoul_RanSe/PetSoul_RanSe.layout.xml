@@ -1,0 +1,346 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="PetSoul_RanSe_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,654.000000},{0.000000,460.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-372.000000},{0.500000,-230.000000}}"/>
+    <Event Name="Hidden" Function="PetSoul_RanSe_Close();" />
+    <Window Type="TLBB_DragTitle" Name="PetSoul_RanSe_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="DragTarget" Value="PetSoul_RanSe_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="Text" Value="#{SHRS_230621_12}" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="PetSoul_RanSe_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="PetSoul_RanSe_Close();" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="PetSoul_RanSe_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonHelp"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="PetSoul_RanSe_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_Frame_Lace2" Name="PetSoul_RanSe_Frame_MiddleClient">
+        <Property Name="UnifiedSize" Value="{{0.500000,46.000000},{1.000000,-22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_MeshBackOldEx" Name="PetSoul_RanSe_FakeObject">
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+          <Property name="BackgroundName" value="Common/MeshBackNewEx.dds" />
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_ButtonNULL" Name="PetSoul_RanSe_Jian">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.000000,12.000000}}"/>
+            <Property Name="Tooltip" Value="#{SHRS_230621_162}"/>
+            <Property Name="PushedImage" Value="set:CommonFrame6 image:TuJian_Pushed"/>
+            <Property Name="NormalImage" Value="set:CommonFrame6 image:TuJian_Normal"/>
+            <Property Name="HoverImage" Value="set:CommonFrame6 image:TuJian_Hover"/>
+            <Event Name="MouseLClick" Function="PetSoul_RanSe_JianClicked();"/>
+          </Window>
+          <Window Type="TLBB_ButtonTurnLeft" Name="PetSoul_RanSe_Model_TurnLeft">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.800000,0.000000}}"/>
+            <Event Name="CaptureLost" Function="PetSoul_RanSe_FakeObject_TurnLeft(0);" />
+            <Event Name="MouseButtonDown" Function="PetSoul_RanSe_FakeObject_TurnLeft(1);" />
+            <Event Name="MouseButtonUp" Function="PetSoul_RanSe_FakeObject_TurnLeft(0);" />
+          </Window>
+          <Window Type="TLBB_ButtonTurnRight" Name="PetSoul_RanSe_Model_TurnRight">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.800000,0.000000}}"/>
+            <Event Name="CaptureLost" Function="PetSoul_RanSe_FakeObject_TurnRight(0);" />
+            <Event Name="MouseButtonDown" Function="PetSoul_RanSe_FakeObject_TurnRight(1);" />
+            <Event Name="MouseButtonUp" Function="PetSoul_RanSe_FakeObject_TurnRight(0);" />
+          </Window>
+          <Window Type="TLBB_ButtonAdd" Name="PetSoul_RanSe_Model_Plus">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.500000,-30.000000}}"/>
+            <Event Name="Clicked" Function="PetSoul_RanSe_ZoomIn();"/>
+          </Window>
+          <Window Type="TLBB_ButtonSub" Name="PetSoul_RanSe_Model_Subtract">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.500000,40.000000}}"/>
+            <Event Name="Clicked" Function="PetSoul_RanSe_ZoomOut();"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="PetSoul_RanSe_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.000000,-20.000000}}"/>
+            <Property Name="Text" Value="#{SHRS_230621_21}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="PetSoul_RanSe_Text2">
+            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.000000,-40.000000}}"/>
+            <Property Name="Text" Value="#{SHRS_230621_21}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="PetSoul_RanSe_RightClient">
+        <Property Name="UnifiedSize" Value="{{0.0000000,274.000000},{1.000000,-22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-274.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_Frame_Lace16" Name="PetSoul_RanSe_RightBK">
+          <Property Name="UnifiedSize" Value="{{1.0000000,-8.000000},{0.000000,150.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="PetSoul_RanSe_RightTitle">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+          <Property Name="Text" Value="#{SHRS_230621_14}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_NotSuperList" Name="PetSoul_RanSe_List">
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,120.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,26.000000}}"/>
+          <Property Name="SelectMode" Value="Single" />
+          <Property Name="VScrollMode" Value="Auto"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="MultiColumn" Value="1" />
+          <Window Type="TLBB_NotSuperListItemCommon3" Name="PetSoul_RanSe_SuperListItem">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="PetSoul_RanSe_SuperListItemAction">
+              <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-21.000000},{0.500000,-21.000000}}"/>
+              <Window Type="TLBB_StaticImageNULL" Name="PetSoul_RanSe_Equip">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="PetSoul_RanSe_ShiYong">
+                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shiyongzhong"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="PetSoul_RanSe_Lock">
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="PetSoul_RanSe_Mark">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace16" Name="PetSoul_RanSe_RightBK2">
+          <Property Name="UnifiedSize" Value="{{1.0000000,-8.000000},{0.000000,108.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,152.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="PetSoul_RanSe_RightTitle2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+          <Property Name="Text" Value="#{SHRS_230621_15}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="PetSoul_RanSe_ColorItem1">
+          <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-90.000000},{0.000000,36.000000}}"/>
+           <Event Name="MouseLButtonDown" Function="PetSoul_RanSe_SelectColorButton(1);" />
+          <Window Type="TLBB_Animate" Name="PetSoul_RanSe_Item1ActionLuxury">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="NewExterior_Ride_Animate"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="PetSoul_RanSe_ColorListItemLock1">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:ItemRed"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="PetSoul_RanSe_ColorItem2">
+          <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,36.000000}}"/>
+          <Event Name="MouseLButtonDown" Function="PetSoul_RanSe_SelectColorButton(2);" />
+          <Window Type="TLBB_Animate" Name="PetSoul_RanSe_Item2ActionLuxury">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="NewExterior_Ride_Animate"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="PetSoul_RanSe_ColorListItemLock2">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:ItemRed"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="PetSoul_RanSe_ColorItem3">
+          <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,54.000000},{0.000000,36.000000}}"/>
+         <Event Name="MouseLButtonDown" Function="PetSoul_RanSe_SelectColorButton(3);" />
+          <Window Type="TLBB_Animate" Name="PetSoul_RanSe_Item3ActionLuxury">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="NewExterior_Ride_Animate"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="PetSoul_RanSe_ColorListItemLock3">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:ItemRed"/>
+          </Window>
+        </Window>
+          <Window Type="TLBB_SimpleText" Name="PetSoul_RanSe_RightText">
+            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.000000,-22.000000}}"/>
+            <Property Name="Text" Value="#{SHRS_230621_146}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window> 
+      </Window>
+        <Window Type="TLBB_SimpleText" Name="PetSoul_RanSe_NeedText">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-106.000000},{0.000000,278.000000}}"/>
+          <Property Name="Text" Value="#{SHRS_230621_18}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="PetSoul_RanSe_NeedIcon">
+          <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,270.000000}}"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="PetSoul_RanSe_Money">
+          <Property Name="UnifiedSize" Value="{{1.00000,-4.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.0000000},{1.000000,-64.000000}}"/>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_RanSe_Want">
+            <Property Name="UnifiedSize" Value="{{1,0.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="#{INTERFACE_XML_789}" />
+            <Window Type="TLBB_JiaoZi" Name="PetSoul_RanSe_WantNum">
+              <Property Name="UnifiedPosition" Value="{{0.0,80.000000},{0.000000,2.000000}" />
+              <Property Name="UnifiedSize" Value="{{1.0,-86.000000},{1.000000,-4.000000}" />
+              <Property Name="HorzFormatting" Value="RightAligned" />
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_RanSe_Have">
+            <Property Name="UnifiedSize" Value="{{1,0.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}" />
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="#{BDJB_051210_1}" />
+            <Window Type="TLBB_JiaoZi" Name="PetSoul_RanSe_HaveNum">
+              <Property Name="UnifiedPosition" Value="{{0.0,80.000000},{0.000000,2.000000}" />
+              <Property Name="UnifiedSize" Value="{{1.0,-86.000000},{1.000000,-4.000000}" />
+              <Property Name="HorzFormatting" Value="RightAligned" />
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetSoul_RanSe_HaveGold">
+            <Property Name="UnifiedSize" Value="{{1,0.000000},{0.000000,20.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,40.000000}" />
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="#{INTERFACE_XML_834}" />
+            <Window Type="TLBB_Money" Name="PetSoul_RanSe_HaveGoldNum">
+              <Property Name="UnifiedPosition" Value="{{0.0,80.000000},{0.000000,2.000000}" />
+              <Property Name="UnifiedSize" Value="{{1.0,-86.000000},{1.000000,-4.000000}" />
+              <Property Name="HorzFormatting" Value="RightAligned" />
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCheck" Name="PetSoul_RanSe_querenzhifuBind">
+        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{1.000000,-16.000000}}"/>
+        <Property Name="CheckMode" Value="0"/>
+        <Property Name="Tooltip" Value="#{RSYH_231120_17}"/>
+        <Event Name="Clicked" Function="PetSoul_RanSe_QueRenZhiFu_Clicked();"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="PetSoul_RanSe_querenzhifuBind_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{1.000000,-20.000000}}"/>
+        <Property Name="HorzFormatting" Value="LeftAligned"/>
+        <Property Name="Text" Value="#{RSYH_231120_03}"/>
+        <Property Name="Tooltip" Value="#{RSYH_231120_17}"/>
+      </Window>
+      <Window Type="TLBB_ComboList" Name="PetSoul_RanSe_Zidong_ALLChoice">
+        <Property Name="UnifiedSize" Value="{{0.000000,141.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="#{SHRS_230621_149}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="ListSelectionAccepted" Function="PetSoul_RanSe_AutoListChanged();"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="PetSoul_RanSe_Zidong_ALLChoice_Pic">
+        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,233.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Image" Value="set:Button3 image:ComboListButton_Normal"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="PetSoul_RanSe_Zidong">
+        <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,276.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="#{SHRS_230621_152}"/>
+        <Window Type="TLBB_Animate" Name="PetSoul_RanSe_Zidong_Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Animate" Value="YBNotice_65"/>
+          <Event Name="Clicked" Function="PetSoul_RanSe_Zidong_Clicked();"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="PetSoul_RanSe_OK">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{SHCX_20211229_05}" />
+        <Event Name="Clicked" Function="PetSoul_RanSe_OK_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="PetSoul_RanSe_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{SHCX_20211229_06}" />
+        <Event Name="Clicked" Function="PetSoul_RanSe_Close();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<GUILayout>
+	<Window Type="TLBB_MainFrameNULL" Name="MonthPVP_Rest_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,313.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-310.000000},{0.500000,20.000000}}"/>
+    <Window Type="TLBB_StaticImageNULL" Name="MonthPVP_Rest_DragTitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,242.000000},{0.000000,49.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-121.000000},{0.000000,0.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_TitleBK2"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>    
+    <Window Type="TLBB_FrameY" Name="MonthPVP_Rest_FrameBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-23.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,23.000000}}"/>
+      <Window Type="TLBB_DragTitle" Name="MonthPVP_Rest_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-48.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,2.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Font" Value="YouYuan11.25"/>
+        <Property Name="Text" Value="#{LLKC_240517_198}" />
+        <Property Name="DragTarget" Value="MonthPVP_Rest_Frame"/>
+      </Window>
+
+      <Window Type="TLBB_ButtonNULL" Name="MonthPVP_Rest_Mini">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,4.000000}}"/>
+        <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+        <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+        <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+        <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>   
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="MonthPVP_Rest_OnClose();"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="MonthPVP_Rest_Frame_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,24.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Window Type="TLBB_Frame_Lace1" Name="MonthPVP_Rest_Up">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-92.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="MonthPVP_Rest_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+            <Property Name="Text" Value="#{LLKC_240517_37}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace1" Name="MonthPVP_Rest_Down">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,90.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-90.000000}}"/>
+          <Window Type="DefaultWindow" Name="MonthPVP_Rest_Pair">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,70.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-34.000000}}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Window Type="TLBB_SimpleText" Name="MonthPVP_Rest_StartTitle">
+              <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}" />
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+              <Property Name="Text" Value="#{LLKC_240517_38}" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="MonthPVP_Rest_TimeTitle">
+              <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,25.000000}}" />
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+              <Property Name="Text" Value="#{LLKC_240517_40}" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="MonthPVP_Rest_PersonNumTitle">
+              <Property Name="UnifiedSize" Value="{{1.000000,-28.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,50.000000}}" />
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+              <Property Name="Text" Value="#{LLKC_240517_320}" />
+            </Window>             
+            <Window Type="TLBB_StopWatch" Name="MonthPVP_Rest_Start">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{0.000000,0.000000}}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Text" Value="00:00" />
+              <Event Name="ReachedZero" Function="MonthPVP_Rest_StartTime();" />
+            </Window>
+            <Window Type="TLBB_StopWatch" Name="MonthPVP_Rest_Time">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{0.000000,25.000000}}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Text" Value="00:00" />
+              <Event Name="ReachedZero" Function="MonthPVP_Rest_TimeOut();" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="MonthPVP_Rest_PersonNum">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{0.000000,50.000000}}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Text" Value="0" />
+            </Window>                         
+          </Window>
+        
+        </Window>
+      </Window>
+    </Window>    
+	</Window>
+
+</GUILayout>

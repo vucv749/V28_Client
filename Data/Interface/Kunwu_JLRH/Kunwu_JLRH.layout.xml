@@ -1,0 +1,333 @@
+<?xml version="1.0"?>
+<GUILayout>
+	<Window Type="TLBB_MainFrameNULL" Name="Kunwu_JLRH_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,644.000000},{0.000000,510.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-322.000000},{0.500000,-255.000000}}"/>   
+    <Event Name="Hidden" Function=""/>
+    <Window Type="TLBB_HeroFrame01" Name="Kunwu_JLRH_FrameBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-76.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,76.000000}}"/>
+      <Window Type="TLBB_HeroTitle01" Name="Kunwu_JLRH_DragTitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,282.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-141.000000},{0.000000,-2.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_DragTitle" Name="Kunwu_JLRH_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-48.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,2.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Font" Value="YouYuan11.25"/>
+        <Property Name="DragTarget" Value="Kunwu_JLRH_Frame"/> 
+      </Window>
+      <Window Type="TLBB_ButtonClose2" Name="Kunwu_JLRH_Close">
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,8.000000}}"/>
+        <Event Name="Clicked" Function="Kunwu_JLRH_Frame_Close_Clicked()"/>
+      </Window>
+      <Window Type="TLBB_HeroLace01" Name="Kunwu_JLRH_ClientBK1">
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Kunwu_JLRH image:Kunwu_JLRH_BK2"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JLRH_ClientBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,636.000000},{0.000000,402.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Kunwu_JLRH2 image:Kunwu_JLRH_BK"/>
+        </Window>  
+      </Window>  
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JLRH_ZhenshouBK">
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,358.000000},{0.000000,322.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,134.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="Image" Value="set:Kunwu_JLRH image:Kunwu_JLRH_Img5"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JLRH_Client0">
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,266.000000},{0.000000,128.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,359.000000},{0.000000,41.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="Image" Value="set:Kunwu_JLRH image:Kunwu_JLRH_BK3"/>
+      <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JLRH_TimeBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-82.000000},{0.000000,76.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:Kunwu_JLRH image:Kunwu_JLRH_BK2"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>      
+      <Window Type="TLBB_SimpleText" Name="Kunwu_JLRH_Time">
+        <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-187.000000},{0.000000,75.000000}}"/>
+        <Property Name="Text" Value="#{JLRH_241211_164}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="Font" Value="YouYuan13"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StopWatch" Name="Kunwu_JLRH_Time2">
+        <Property Name="UnifiedSize" Value="{{0.000000,55.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{0.000000,77.000000}}"/>
+        <Property Name="Text" Value="00:00"/>
+        <Property Name="TextColor" Value="FF800000"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window> 
+      <Window Type="TLBB_SimpleText" Name="Kunwu_JLRH_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,-56.000000},{0.000000,54.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,28.000000},{0.000000,20.000000}}"/>
+        <Property Name="Text" Value="#{JLRH_241211_159}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+    </Window>  
+	<Window Type="DefaultWindow" Name="Kunwu_JLRH_Client">
+		<Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-108.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,104.000000}}"/>
+		<Property Name="AlwaysOnTop" Value="True"/>
+    <Window Type="DefaultWindow" Name="Kunwu_JLRH_Client1">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,287.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_Animate" Name="Kunwu_JLRH_Client1_Result_Animate">
+        <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,184.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-170.000000},{0.000000,44.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Animate" Value="Kunwu_JLRH_3minWin"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="Kunwu_JLRH_Client1_YiTiJiaoImg1">
+        <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,105.000000},{0.000000,121.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JLRH_Client1_Img1">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:CircularTaskTool147 image:CircularTaskTool147_15"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Kunwu_JLRH_Client1_PaopaoImg1">
+        <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,105.000000},{0.000000,121.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_SimpleText" Name="Kunwu_JLRH_Client1_PaopaoImg1_WeiTiJiao">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,26.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-13.000000}}"/>
+          <Property Name="Text" Value="#{JLRH_241211_247}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Kunwu_JLRH_Client1_YiTiJiaoImg2">
+        <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,284.000000},{0.000000,201.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Kunwu_JLRH image:Kunwu_JLRH_PaopaoImg"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JLRH_Client1_Img2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:CircularTaskTool147 image:CircularTaskTool147_16"/>
+        </Window>
+      </Window>    
+      <Window Type="DefaultWindow" Name="Kunwu_JLRH_Client1_PaopaoImg2">
+        <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,284.000000},{0.000000,201.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Kunwu_JLRH image:Kunwu_JLRH_PaopaoImg"/>
+        <Window Type="TLBB_SimpleText" Name="Kunwu_JLRH_Client1_PaopaoImg2_WeiTiJiao">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,26.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-13.000000}}"/>
+          <Property Name="Text" Value="#{JLRH_241211_247}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Kunwu_JLRH_Client1_YiTiJiaoImg3">
+        <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,476.000000},{0.000000,121.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Kunwu_JLRH image:Kunwu_JLRH_PaopaoImg"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JLRH_Client1_Img3">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:CircularTaskTool148 image:CircularTaskTool148_1"/>
+        </Window> 
+      </Window>
+      <Window Type="DefaultWindow" Name="Kunwu_JLRH_Client1_PaopaoImg3">
+        <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,476.000000},{0.000000,121.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Kunwu_JLRH image:Kunwu_JLRH_PaopaoImg"/>
+        <Window Type="TLBB_SimpleText" Name="Kunwu_JLRH_Client1_PaopaoImg3_WeiTiJiao">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,26.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-13.000000}}"/>
+          <Property Name="Text" Value="#{JLRH_241211_247}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>  
+      <Window Type="TLBB_ButtonNULL" Name="Kunwu_JLRH_Client1_ALLDelete">
+        <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,64.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,219.000000}}"/>
+        <Property Name="Tooltip" Value="#{JLRH_241211_227}"/>
+        <Property Name="PushedImage" Value="set:Kunwu_JLRH image:Kunwu_JLRH_Btn2_Pushed"/>
+        <Property Name="NormalImage" Value="set:Kunwu_JLRH image:Kunwu_JLRH_Btn2_Normal"/>
+        <Property Name="HoverImage" Value="set:Kunwu_JLRH image:Kunwu_JLRH_Btn2_Hover"/>
+        <Property Name="DisabledImage" Value="set:Kunwu_JLRH image:Kunwu_JLRH_Btn2_Disabled"/>
+        <Event Name="Clicked" Function="Kunwu_JLRH_Frame_GiveUpAnswer()"/>
+      </Window>   
+      <Window Type="DefaultWindow" Name="Kunwu_JLRH_Client3">
+        <Property Name="UnifiedSize" Value="{{0.000000,232.000000},{0.000000,71.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-237.000000},{0.000000,206.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Kunwu_JLRH_Result">
+          <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,26.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-221.000000},{0.000000,39.000000}}"/>
+          <Property Name="Text" Value="#{JLRH_241211_162}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>   
+        <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JLRH_Result_Img1">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{0.000000,36.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:CircularTaskTool147 image:CircularTaskTool147_15"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JLRH_Result_Img2">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,153.000000},{0.000000,36.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:CircularTaskTool147 image:CircularTaskTool147_15"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JLRH_Result_Img3">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,192.000000},{0.000000,36.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:CircularTaskTool147 image:CircularTaskTool147_15"/>
+        </Window>  
+        <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JLRH_Result_Img1Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,109.000000},{0.000000,4.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Kunwu_JLRH image:Kunwu_JLRH_Correct"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JLRH_Result_Img2Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,148.000000},{0.000000,4.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Kunwu_JLRH image:Kunwu_JLRH_Correct"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JLRH_Result_Img3Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,188.000000},{0.000000,4.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Kunwu_JLRH image:Kunwu_JLRH_Wrong"/>
+        </Window>  
+      </Window>      
+    </Window>   
+    <Window Type="DefaultWindow" Name="Kunwu_JLRH_Client2">
+      <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,110.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-110.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JLRH_Client2_TextBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,10.000000}}"/>
+        <Property Name="Image" Value="set:Kunwu_JLRH2 image:Kunwu_JLRH_BK4"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>      
+      <Window Type="TLBB_SimpleText" Name="Kunwu_JLRH_Client2_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,143.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,28.000000},{0.000000,11.000000}}"/>
+        <Property Name="Text" Value="#{JLRH_241211_254}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+      <Window Type="TLBB_ButtonKunwu_JLRH" Name="Kunwu_JLRH_GiftBtn1">
+        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,32.000000}}"/>
+        <Property Name="Text" Value="#{JLRH_241211_183}"/>
+        <Event Name="Clicked" Function="Kunwu_JLRH_Frame_AddAnswer(1)"/>
+      </Window>
+      <Window Type="TLBB_ButtonKunwu_JLRH" Name="Kunwu_JLRH_GiftBtn2">
+        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,30.000000}}"/>
+	    	<Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,32.000000}}"/>
+        <Property Name="Text" Value="#{JLRH_241211_184}"/>
+        <Event Name="Clicked" Function="Kunwu_JLRH_Frame_AddAnswer(2)"/>
+      </Window>
+      <Window Type="TLBB_ButtonKunwu_JLRH" Name="Kunwu_JLRH_GiftBtn3">
+        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,30.000000}}"/>
+	    	<Property Name="UnifiedPosition" Value="{{1.000000,-210.000000},{0.000000,32.000000}}"/>
+        <Property Name="Text" Value="#{JLRH_241211_185}"/>
+        <Event Name="Clicked" Function="Kunwu_JLRH_Frame_AddAnswer(3)"/>
+      </Window>
+      <Window Type="TLBB_ButtonKunwu_JLRH" Name="Kunwu_JLRH_GiftBtn4">
+        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,30.000000}}"/>
+	    	<Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,64.000000}}"/>
+        <Property Name="Text" Value="#{JLRH_241211_186}"/>
+        <Event Name="Clicked" Function="Kunwu_JLRH_Frame_AddAnswer(4)"/>
+      </Window>
+      <Window Type="TLBB_ButtonKunwu_JLRH" Name="Kunwu_JLRH_GiftBtn5">
+        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,30.000000}}"/>
+	    	<Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,64.000000}}"/>
+        <Property Name="Text" Value="#{JLRH_241211_187}"/>
+        <Event Name="Clicked" Function="Kunwu_JLRH_Frame_AddAnswer(5)"/>
+      </Window>
+      <Window Type="TLBB_ButtonKunwu_JLRH" Name="Kunwu_JLRH_GiftBtn6">
+        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,30.000000}}"/>
+	    	<Property Name="UnifiedPosition" Value="{{1.000000,-210.000000},{0.000000,64.000000}}"/>
+        <Property Name="Text" Value="#{JLRH_241211_188}"/>
+        <Event Name="Clicked" Function="Kunwu_JLRH_Frame_AddAnswer(6)"/>
+      </Window>
+    </Window>    
+    <Window Type="DefaultWindow" Name="Kunwu_JLRH_Client4">
+      <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,110.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-110.000000}}"/>
+      <Window Type="TLBB_SimpleText" Name="Kunwu_JLRH_Client4_Text1">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,35.000000}}"/>
+        <Property Name="Text" Value="#{JLRH_241211_265}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Kunwu_JLRH_Client4_Text2">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,55.000000}}"/>
+        <Property Name="Text" Value="#{JLRH_241211_266}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+    </Window>    
+	</Window>
+	</Window>
+</GUILayout>

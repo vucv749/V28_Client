@@ -1,0 +1,167 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="DoublePlay_GameMini_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,310.000000},{0.000000,140.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-310.000000},{0.500000,80.000000}}"/>
+    <Event Name="Hidden" Function="DoublePlay_GameMini_OnHiden();" />
+    <Window Type="TLBB_DragTitle" Name="DoublePlay_GameMini_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="DoublePlay_GameMini_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="DoublePlay_GameMini_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonHelp" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Christmas_Wish&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="DoublePlay_GameMini_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="PushedImage" Value="set:SongLiao02 image:Up_Pushed"/>
+      <Property Name="NormalImage" Value="set:SongLiao02 image:Up_Normal"/>
+      <Property Name="HoverImage" Value="set:SongLiao02 image:Up_Hover"/>
+      <Property Name="DisabledImage" Value="set:SongLiao02 image:Up_Disabled"/>
+      <Event Name="Clicked" Function="DoublePlay_GameMini_Close();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="DoublePlay_GameMini_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Property Name="RiseOnClick" Value="False" />
+      <Window Type="DefaultWindow" Name="DoublePlay_GameMini_Game1">
+        <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,52.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+      <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_GameMini_Image1">
+        <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,2.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_1"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_2"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_3"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_4"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_5"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_6"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_7"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_8"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_9"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_GameMini_Mark">
+        <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,2.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_EmptySeat"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_GameMini_Image2">
+        <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,2.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_1"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_2"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_3"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_4"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_5"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_6"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_7"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_8"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_9"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_GameMini_Mark2">
+        <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,2.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_EmptySeat"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_GameMini_Image3">
+        <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,2.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_1"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_2"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_3"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_4"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_5"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_6"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_7"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_8"/>
+        <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_9"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_GameMini_Image4">
+          <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,50.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,252.000000},{0.000000,2.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_1"/>
+          <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_2"/>
+          <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_3"/>
+          <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_4"/>
+          <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_5"/>
+          <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_6"/>
+          <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_7"/>
+          <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_8"/>
+          <Property Name="Image" Value="set:YuanDan_PaiHang image:YuanDan_PaiHang_B_9"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="DoublePlay_GameMini_Game2">
+        <Property Name="UnifiedSize" Value="{{0.000000,250.000000},{0.000000,52.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_GameMini_Game2Image1">
+          <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,2.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_EmptySeat"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_GameMini_Game2Image2">
+          <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,2.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:ZhongQiu_TuanYuanFan1 image:TuanYuanFan_EmptySeat"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DoublePlay_GameMini_Time">
+        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,60.000000}}"/>
+        <Property Name="Text" Value="#{SRWF_230329_53}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DoublePlay_GameMini_Num">
+        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,60.000000}}"/>
+        <Property Name="Text" Value="#{SRWF_230329_54}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

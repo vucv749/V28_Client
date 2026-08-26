@@ -1,0 +1,72 @@
+﻿<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="Frozen_GeCao_Goto_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,596.000000},{0.000000,440.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-298.000000},{0.500000,-220.000000}}"/>
+    <Event Name="Hidden" Function="Frozen_GeCao_Goto_OnHide();" />
+      <Window Type="TLBB_HeroTitle01" Name="Frozen_GeCao_Goto_DragTitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,320.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-165.000000},{0.000000,-2.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+    <Window Type="TLBB_DragTitle" Name="Frozen_GeCao_Goto_DragTitle">
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,-2.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{BXDR_20240920_7}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="DragTarget" Value="Frozen_GeCao_Goto_Frame" />
+    </Window>
+      <Window Type="TLBB_ButtonClose2" Name="Frozen_GeCao_Goto_Close">
+		<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+        <Event Name="Clicked" Function="Frozen_GeCao_Goto_OnHide();" />
+      </Window>
+      <Window Type="TLBB_HeroLace01" Name="Frozen_GeCao_Goto_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_GeCao_Goto_BKPic">
+          <Property Name="UnifiedSize" Value="{{0.000000,588.000000},{0.000000,408.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-294.000000},{1.000000,-408.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Frozen_GeCao image:Frozen_GeCao_GotoBK"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_GeCao_Goto_TextBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,576.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,3.000000}}"/>
+          <Property Name="Image" Value="set:FeelFeedBack2 image:FeelFeedBack_ImageBK4"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Goto_Text">
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,15.000000}}"/>
+            <Property Name="Text" Value="#{BXDR_20240920_8}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Window Type="TLBB_ButtonHelp" Name="Frozen_GeCao_Goto_Text_Help">
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{1.000000,-24.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Event Name="Clicked" Function="Frozen_GeCao_Goto_ShowHelp();" />
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCommon12" Name="Frozen_GeCao_Goto_GoBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-130.000000},{1.000000,-54.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Text" Value="#{BXDR_20240920_219}"/>
+          <Event Name="Clicked" Function="Frozen_GeCao_Goto_Goto();" />
+        </Window>
+      </Window>
+  </Window>
+</GUILayout>

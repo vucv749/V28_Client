@@ -1,0 +1,165 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="SpecialGift_FiveChoice_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,440.000000},{0.000000,277.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-220.000000},{0.500000,-140.000000}}"/>
+		<Event Name="Hidden" Function="SpecialGift_FiveChoice_OnClose();" />
+    <Window Type="TLBB_DragTitle" Name="SpecialGift_FiveChoice_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="SpecialGift_FiveChoice_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="SpecialGift_FiveChoice_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function=""/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="SpecialGift_FiveChoice_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="SpecialGift_FiveChoice_OnClose()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="SpecialGift_FiveChoice_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Window Type="DefaultWindow" Name="FeelFeedBackGiftAllBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="FeelFeedBackGiftBK1">
+        <Property Name="UnifiedSize" Value="{{0.000000,428.000000},{0.000000,222.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Thanks6 image:ThanksMiniBK"/>
+      </Window>
+      </Window>
+        <Window Type="TLBB_SimpleText" Name="SpecialGift_FiveChoice_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,26.000000}}"/>
+          <Property Name="Text" Value="#{MYGEHK_20110_37}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+      <Window Type="DefaultWindow" Name="SpecialGift_FiveChoice_Gift">
+        <Property Name="UnifiedSize" Value="{{0.000000,380.000000},{0.000000,110.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,60.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="SpecialGift_FiveChoice_Gift1_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="SpecialGift_FiveChoice_1_Select(1);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="SpecialGift_FiveChoice_Gift1_Icon_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="SpecialGift_FiveChoice_Gift2_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,93.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="SpecialGift_FiveChoice_1_Select(2);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="SpecialGift_FiveChoice_Gift2_Icon_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="SpecialGift_FiveChoice_Gift3_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="SpecialGift_FiveChoice_1_Select(3);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="SpecialGift_FiveChoice_Gift3_Icon_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="SpecialGift_FiveChoice_Gift4_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,239.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="SpecialGift_FiveChoice_1_Select(4);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="SpecialGift_FiveChoice_Gift4_Icon_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="SpecialGift_FiveChoice_Gift5_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,312.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="SpecialGift_FiveChoice_1_Select(5);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="SpecialGift_FiveChoice_Gift5_Icon_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="SpecialGift_FiveChoice_Gift1_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{MYGEHK_20110_43}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="SpecialGift_FiveChoice_Gift2_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,91.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{MYGEHK_20110_44}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="SpecialGift_FiveChoice_Gift3_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,164.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{MYGEHK_20110_45}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="SpecialGift_FiveChoice_Gift4_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,237.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{MYGEHK_20110_44}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="SpecialGift_FiveChoice_Gift5_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{MYGEHK_20110_45}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="SpecialGift_FiveChoice_Gift_Select">
+        <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,38.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-52.000000},{1.000000,-50.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:Seven image:Seven_lingqupush"/>
+        <Property Name="NormalImage" Value="set:Seven image:Seven_lingquNormal"/>
+        <Property Name="HoverImage" Value="set:Seven image:Seven_lingquHover"/>
+        <Property Name="DisabledImage" Value="set:Seven image:Seven_lingquDis"/>
+        <Event Name="Clicked" Function="SpecialGift_FiveChoice_Confirm()"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection0" Name="XiaLv_Task5_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,901.000000},{0.000000,630.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-450.000000},{0.500000,-320.000000}}"/>
+    <Event Name="Hidden" Function="XiaLv_Task5_OnClose()" />
+    <Window Type="TLBB_TitleLace_Affection0" Name="XiaLv_Task5_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,31.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="XiaLv_Task5_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{FQZC_230331_55}"/>
+      <Property Name="DragTarget" Value="XiaLv_Task5_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="XiaLv_Task5_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function=""/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="XiaLv_Task5_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="XiaLv_Task5_OnClose()" />
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Task5_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,36.000000}}"/>
+      <Property Name="Image" Value="set:Xialv08 image:XiaLv_Zhouchang_zhuqingbk"/>
+      <Window Type="DefaultWindow" Name="XiaLv_Task5_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,90.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,2.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="XiaLv_Task5_InfoText">
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="#{FQZC_230331_107}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="XiaLv_Task5_Play1BK">
+        <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{1.000000,-92.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,92.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="XiaLv_Task5_Play1Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{FQZC_230331_227}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Task5_Play1_Image2">
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,210.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,84.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Xialv04 image:XiaLv_Queqiaoxian_xiangsige"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="XiaLv_Task5_Play1Info">
+          <Property Name="UnifiedSize" Value="{{0.000000,304.000000},{0.000000,304.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-140.000000},{0.000000,82.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play1_Jigsaw1">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,6.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push1"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover1"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal1"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(1)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play1_Jigsaw2">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,6.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push2"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover2"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal2"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(2)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play1_Jigsaw3">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,156.000000},{0.000000,6.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push3"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover3"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal3"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(3)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play1_Jigsaw4">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,6.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push4"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover4"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal4"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(4)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play1_Jigsaw5">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,83.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push5"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover5"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal5"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(5)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play1_Jigsaw6">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,83.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push6"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover6"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal6"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(6)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play1_Jigsaw7">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,156.000000},{0.000000,83.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push7"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover7"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal7"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(7)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play1_Jigsaw8">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,83.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push8"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover8"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal8"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(8)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play1_Jigsaw9">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,158.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push9"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover9"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal9"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(9)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play1_Jigsaw10">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,158.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push10"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover10"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal10"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(10)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play1_Jigsaw11">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,156.000000},{0.000000,158.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push11"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover11"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal11"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(11)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play1_Jigsaw12">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,158.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push12"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover12"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal12"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(12)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play1_Jigsaw13">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,231.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push13"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover13"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal13"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(13)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play1_Jigsaw14">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,231.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push14"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover14"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal14"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(14)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play1_Jigsaw15">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,156.000000},{0.000000,231.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push15"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover15"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal15"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(15)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play1_Jigsaw16">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,231.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push16"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover16"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal16"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(16)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="XiaLv_Task5_Play1BtnOK">
+          <Property Name="UnifiedSize" Value="{{0.000000,138.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,418.000000}}"/>
+          <Property Name="PushedImage" Value="set:Xialv04 image:XiaLv_Queqiaoxian_zhuqingpush"/>
+          <Property Name="HoverImage" Value="set:Xialv04 image:XiaLv_Queqiaoxian_zhuqinghover"/>
+          <Property Name="NormalImage" Value="set:Xialv04 image:XiaLv_Queqiaoxian_zhuqingnormal"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="XiaLv_Task5_OnOkBtnClicked()"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="XiaLv_Task5_Play1BK2">
+        <Property Name="UnifiedSize" Value="{{0.000000,424.000000},{0.000000,477.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,90.000000}}"/>
+        <Property Name="Visible" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Task5_Play1_Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,424.000000},{0.000000,477.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Xialv04 image:XiaLv_Shiqingyi_MaskPaper"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="XiaLv_Task5_Play2BK">
+        <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{1.000000,-92.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,92.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="XiaLv_Task5_Play2Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{FQZC_230331_227}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Task5_Play2_Image2">
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,210.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,84.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Xialv04 image:XiaLv_Queqiaoxian_xiangsige"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="XiaLv_Task5_Play2Info">
+          <Property Name="UnifiedSize" Value="{{0.000000,304.000000},{0.000000,304.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-166.000000},{0.000000,86.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play2_Jigsaw1">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,6.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push1"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover1"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal1"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(17)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play2_Jigsaw2">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,6.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push2"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover2"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal2"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(18)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play2_Jigsaw3">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,156.000000},{0.000000,6.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push3"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover3"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal3"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(19)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play2_Jigsaw4">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,6.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push4"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover4"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal4"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(20)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play2_Jigsaw5">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,83.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push5"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover5"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal5"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(21)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play2_Jigsaw6">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,83.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push6"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover6"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal6"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(22)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play2_Jigsaw7">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,156.000000},{0.000000,83.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push7"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover7"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal7"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(23)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play2_Jigsaw8">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,83.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push8"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover8"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal8"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(24)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play2_Jigsaw9">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,158.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push9"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover9"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal9"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(25)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play2_Jigsaw10">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,158.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push10"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover10"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal10"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(26)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play2_Jigsaw11">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,156.000000},{0.000000,158.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push11"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover11"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal11"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(27)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play2_Jigsaw12">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,158.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push12"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover12"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal12"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(28)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play2_Jigsaw13">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,231.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push13"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover13"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal13"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(29)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play2_Jigsaw14">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,231.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push14"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover14"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal14"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(30)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play2_Jigsaw15">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,156.000000},{0.000000,231.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push15"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover15"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal15"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(31)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="XiaLv_Task5_Play2_Jigsaw16">
+            <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,231.000000}}"/>
+            <Property Name="PushedImage" Value="set:Xialv05 image:XiaLv_Queqiaoxian_push16"/>
+            <Property Name="HoverImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_hover16"/>
+            <Property Name="NormalImage" Value="set:Xialv06 image:XiaLv_Queqiaoxian_normal16"/>
+            <Event Name="MouseLButtonDown" Function="XiaLv_Task5_OnTileClicked(32)"/>
+            <Property Name="CheckMode" Value="2"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="XiaLv_Task5_Play2BtnOK">
+          <Property Name="UnifiedSize" Value="{{0.000000,138.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,418.000000}}"/>
+          <Property Name="PushedImage" Value="set:Xialv04 image:XiaLv_Queqiaoxian_zhuqingpush"/>
+          <Property Name="NormalImage" Value="set:Xialv04 image:XiaLv_Queqiaoxian_zhuqingnormal"/>
+          <Property Name="HoverImage" Value="set:Xialv04 image:XiaLv_Queqiaoxian_zhuqinghover"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="XiaLv_Task5_OnOkBtnClicked()"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="XiaLv_Task5_Play2BK2">
+        <Property Name="UnifiedSize" Value="{{0.000000,424.000000},{0.000000,477.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,6.000000},{0.000000,90.000000}}"/>
+        <Property Name="Visible" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Task5_Play2_Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,424.000000},{0.000000,477.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Xialv04 image:XiaLv_Shiqingyi_MaskPaper"/>
+        </Window>
+      </Window>
+      
+      <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Task5_State">
+        <Property Name="UnifiedSize" Value="{{0.000000,506.000000},{0.000000,102.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-253.000000},{0.750000,-80.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Image" Value="set:Xialv05 image:Xialv_queqiaoxianlan"/>
+        <Property Name="Image" Value="set:Xialv05 image:XiaLv_queqiaoxianhong"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

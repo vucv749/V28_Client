@@ -1,0 +1,274 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="Bulao_Yure_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,724.000000},{0.000000,454.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-280.000000},{0.500000,-200.000000}}"/>
+    <Event Name="Hidden" Function="Bulao_Yure_Clear()"/>
+    <Window Type="TLBB_DragTitle" Name="Bulao_Yure_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{CCYR_221220_08}"/>
+      <Property Name="DragTarget" Value="Bulao_Yure_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Bulao_Yure_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Bulao_Yure_Help()"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Bulao_Yure_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Bulao_Yure_OnClose()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Bulao_Yure_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Window Type="DefaultWindow" Name="Bulao_Yure_ClientBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Bulao_Yure_ClientBK1">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,1.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Bulao_Yure image:Bulao_Yure_BK"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Bulao_Yure_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,-46.000000},{0.000000,70.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,2.000000}}"/>
+        <Property Name="Text" Value="#{CCYR_221220_09}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Bulao_Yure_TaskPart">
+        <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,116.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Image" Value="set:Bulao_Yure image:Bulao_Yure_Part1"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Bulao_Yure_TaskName">
+        <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,54.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,224.000000},{0.000000,132.000000}}"/>
+        <Property Name="Image" Value="set:Bulao_Yure image:Bulao_Yure_P1"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Bulao_Yure_TaskOver">
+        <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,72.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,448.000000},{0.000000,275.000000}}"/>
+        <Property Name="Image" Value="set:Bulao_Yure image:Bulao_Yure_Over"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>      
+      <Window Type="TLBB_SimpleText" Name="Bulao_Yure_TaskInfo">
+        <Property Name="UnifiedSize" Value="{{1.000000,-247.000000},{0.000000,64.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,65.000000},{0.000000,210.000000}}"/>
+        <Property Name="Text" Value="#{CCYR_221220_12}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Bulao_Yure_TaskInfo2">
+        <Property Name="UnifiedSize" Value="{{0.000000,278.000000},{0.000000,28.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,161.000000},{0.000000,312.000000}}"/>
+        <Property Name="Text" Value="#{CCYR_221220_19}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>       
+      <Window Type="TLBB_SimpleText" Name="Bulao_Yure_TaskInfo3">
+        <Property Name="UnifiedSize" Value="{{0.000000,395.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{0.000000,330.000000}}"/>
+        <Property Name="Text" Value="#{CCYR_221220_168}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>  
+
+      <Window Type="DefaultWindow" Name="Bulao_Yure_Gift">
+        <Property Name="UnifiedSize" Value="{{1.000000,-612.000000},{0.000000,120.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,571.000000},{0.000000,196.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="Bulao_Yure_Gift1_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.500000,-50.000000}}"/>
+          <Event Name="Clicked" Function="Bulao_Yure_PrizeClicked(1)"/>
+          <Window Type="TLBB_Animate" Name="Bulao_Yure_Gift1_Icon_Animate">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Bulao_Yure_Gift1_Icon_Get">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>          
+          <!-- <Window Type="TLBB_StaticImageNULL" Name="Bulao_Yure_Gift1_Icon_Canget">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Bulao_Yure_Gift1_Icon_Notget">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,2.000000}}"/>
+            <Property Name="Image" Value="set:JiXiangNang03 image:HaoYe"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window> -->
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Bulao_Yure_Gift2_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.500000,-50.000000}}"/>
+          <Event Name="Clicked" Function="Bulao_Yure_PrizeClicked(2)"/>
+          <Window Type="TLBB_Animate" Name="Bulao_Yure_Gift2_Icon_Animate">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Bulao_Yure_Gift2_Icon_Get">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>          
+          <!-- <Window Type="TLBB_StaticImageNULL" Name="Bulao_Yure_Gift2_Icon_Canget">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Bulao_Yure_Gift2_Icon_Notget">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,2.000000}}"/>
+            <Property Name="Image" Value="set:JiXiangNang03 image:HaoYe"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window> -->
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Bulao_Yure_Gift3_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.500000,6.000000}}"/>
+          <Event Name="Clicked" Function="Bulao_Yure_PrizeClicked(3)"/>
+          <Window Type="TLBB_Animate" Name="Bulao_Yure_Gift3_Icon_Animate">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Bulao_Yure_Gift3_Icon_Get">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>          
+          <!-- <Window Type="TLBB_StaticImageNULL" Name="Bulao_Yure_Gift3_Icon_Canget">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Bulao_Yure_Gift3_Icon_Notget">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,2.000000}}"/>
+            <Property Name="Image" Value="set:JiXiangNang03 image:HaoYe"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window> -->
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Bulao_Yure_Gift4_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,37.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.500000,6.000000}}"/>
+          <Event Name="Clicked" Function="Bulao_Yure_PrizeClicked(4)"/>
+          <Window Type="TLBB_Animate" Name="Bulao_Yure_Gift4_Icon_Animate">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Bulao_Yure_Gift4_Icon_Get">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>          
+          <!-- <Window Type="TLBB_StaticImageNULL" Name="Bulao_Yure_Gift4_Icon_Canget">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Bulao_Yure_Gift4_Icon_Notget">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,2.000000}}"/>
+            <Property Name="Image" Value="set:JiXiangNang03 image:HaoYe"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window> -->
+        </Window>
+
+        <Window Type="TLBB_SimpleText" Name="Bulao_Yure_Gift1_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-74.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{CCYR_221220_22}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Bulao_Yure_Gift2_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{1.000000,-74.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{CCYR_221220_23}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Bulao_Yure_Gift3_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{CCYR_221220_24}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Bulao_Yure_Gift4_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{1.000000,-20.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{CCYR_221220_25}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Bulao_Yure_Now">
+        <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-123.000000},{1.000000,-88.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="Text" Value="#{CCYR_221220_167}"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

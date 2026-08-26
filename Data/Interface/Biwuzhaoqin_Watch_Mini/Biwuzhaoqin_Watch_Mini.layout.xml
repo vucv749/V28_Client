@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Biwuzhaoqin_Watch_Mini_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,28.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.0,-350.000000},{1.0,-150.000000}}"/>
+    <Property Name="AttachEnabled" Value="true" />
+    <Window Type="TLBB_DragTitle" Name="Biwuzhaoqin_Watch_Mini_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,3.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.0,-28.000000},{0.000000,20.000000}}"/>
+      <Property Name="DragTarget" Value="Biwuzhaoqin_Watch_Mini_Frame" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Watch_Mini_PageHeader">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{BWZQ_20230329_196}" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_Frame2" Name="Biwuzhaoqin_Watch_Mini">
+      <Property Name="UnifiedSize" Value="{{1.0,0.000000},{1.0,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0.000000}}"/>
+      <Window Type="TLBB_ButtonNULL" Name="Biwuzhaoqin_Watch_Mini_Small">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.500000,-9.000000}}"/>
+        <Property Name="PushedImage" Value="set:SongLiao02 image:Up_Pushed"/>
+        <Property Name="NormalImage" Value="set:SongLiao02 image:Up_Normal"/>
+        <Property Name="HoverImage" Value="set:SongLiao02 image:Up_Hover"/>
+        <Property Name="DisabledImage" Value="set:SongLiao02 image:Up_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Biwuzhaoqin_Watch_Mini_OnShowNormalUI()"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

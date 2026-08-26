@@ -1,0 +1,1880 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame2" Name="PayReward_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,552.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-270.000000},{0.500000,-300.000000}}"/>
+		<Event Name="Hidden" Function="PayReward_OnHiden();"/>
+		<Window Type="TLBB_DragTitle" Name="PayReward_DragTitle">
+			<Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,2.000000}}"/>
+			<Property Name="DragTarget" Value="PayReward_Frame"/>
+			<Property Name="Font" Value="YouYuan11.25"/>
+			<Property Name="Text" Value="#gFF0FA0每日豪礼"/>
+		</Window>
+		<Window Type="TLBB_ButtonHelp" Name="PayReward_Help">
+			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+			<Property Name="Text" Value="TLBB_ButtonHelp"/>
+		</Window>
+		<Window Type="TLBB_ButtonClose" Name="PayReward_Close">
+			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}}"/>
+			<Property Name="Text" Value="TLBB_ButtonClose"/>
+			<Event Name="Clicked" Function="this:Hide();"/>
+		</Window>
+		<Window Type="DefaultWindow" Name="PayReward_Frame_Client">
+			<Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-30.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,25.000000}}"/>
+			<Property Name="RiseOnClick" Value="False"/>
+			<Window Type="TLBB_Frame_Lace6" Name="PayReward_Frame1">
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,90.000000}}"/>
+				<Window Type="TLBB_SimpleText" Name="PayReward_Frame1_Info">
+					<Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+					<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="TextColor" Value="FFFFF263"/>
+					<Property Name="Text" Value="    #cfff263每日大礼，自在江湖行。#r    每位新进入的少侠，只要#G点数#cfff263满足一定的条件即可赢取#G自选每日豪礼#cfff263。返利多多，机会难得千万不要错过。#r    #G小提示：点击奖励右侧的展开图标#cff0000可自行选择更换奖励#G。"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="PayReward_AwardShowbk1">
+				<Property Name="AbsolutePosition" Value="x:0.000000 y:90.000000"/>
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,54.000000}"/>
+				<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardList1">
+					<Property Name="UnifiedSize" Value="{{0.000000,54.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.0,0.5}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_HL1"/>
+				</Window>
+				<Window Type="TLBB_Frame_Lace3" Name="PayReward_Awardbk1">
+					<Property Name="UnifiedSize" Value="{{1.000000,-54.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.000000,0.000000}}"/>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo1_1">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,10.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum1_1">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="Font" Value="SongTiBmp12"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward1_1">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo1_2">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,51.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum1_2">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward1_2">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo1_3">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,92.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum1_3">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward1_3">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo1_4">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,133.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum1_4">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward1_4">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButtonNULL" Name="PayReward_AwardInfo1_5">
+						<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,174.000000},{0.500000,-17.000000}}"/>
+						<Property Name="Empty" Value="False"/>
+						<Property Name="PushedImage" Value="set:SlotUI02 image:YHYT_BankON_Select"/>
+						<Property Name="NormalImage" Value="set:SlotUI02 image:YHYT_BankON_Normal"/>
+						<Property Name="HoverImage" Value="set:SlotUI02 image:YHYT_BankON_Hover"/>
+						<Property Name="DisabledImage" Value="set:SlotUI02 image:YHYT_BankON_Disabled"/>
+						<Event Name="Clicked" Function="PayReward_OpenOptionalAward(1);"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="PayReward_AwardNeed1">
+						<Property Name="UnifiedSize" Value="{{1.000000,-311.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.5,-10.000000}}"/>
+						<Property Name="VertFormatting" Value="BottomAligned"/>
+						<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+					</Window>
+					<Window Type="TLBB_ButtonNULL" Name="PayReward_AwardClick1">
+						<Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{1.000000,-99.000000},{0.5,-18}}"/>
+						<Property Name="PushedImage" Value="set:XinShouNewBK image:XinShouNew_LQPUSH"/>
+						<Property Name="NormalImage" Value="set:XinShouNewBK image:XinShouNew_LQNORMAL"/>
+						<Property Name="HoverImage" Value="set:XinShouNewBK image:XinShouNew_LQHOVER"/>
+						<Property Name="DisabledImage" Value="set:XinShouNewBK image:XinShouNew_LQDIS"/>
+						<Event Name="Clicked" Function="PayReward_AwardClicked(1)"/>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="PayReward_AwardShowbk2">
+				<Property Name="AbsolutePosition" Value="x:0.000000 y:144.000000"/>
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,54.000000}"/>
+				<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardList2">
+					<Property Name="UnifiedSize" Value="{{0.000000,54.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.0,0.5}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_HL2"/>
+				</Window>
+				<Window Type="TLBB_Frame_Lace3" Name="PayReward_Awardbk2">
+					<Property Name="UnifiedSize" Value="{{1.000000,-54.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.000000,0.000000}}"/>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo2_1">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,10.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum2_1">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward2_1">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo2_2">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,51.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum2_2">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward2_2">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo2_3">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,92.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum2_3">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward2_3">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo2_4">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,133.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum2_4">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward2_4">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButtonNULL" Name="PayReward_AwardInfo2_5">
+						<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,174.000000},{0.500000,-17.000000}}"/>
+						<Property Name="Empty" Value="False"/>
+						<Property Name="PushedImage" Value="set:SlotUI02 image:YHYT_BankON_Select"/>
+						<Property Name="NormalImage" Value="set:SlotUI02 image:YHYT_BankON_Normal"/>
+						<Property Name="HoverImage" Value="set:SlotUI02 image:YHYT_BankON_Hover"/>
+						<Property Name="DisabledImage" Value="set:SlotUI02 image:YHYT_BankON_Disabled"/>
+						<Event Name="Clicked" Function="PayReward_OpenOptionalAward(2);"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="PayReward_AwardNeed2">
+						<Property Name="UnifiedSize" Value="{{1.000000,-311.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.5,-10.000000}}"/>
+						<Property Name="VertFormatting" Value="BottomAligned"/>
+						<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+					</Window>
+					<Window Type="TLBB_ButtonNULL" Name="PayReward_AwardClick2">
+						<Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{1.000000,-99.000000},{0.5,-18}}"/>
+						<Property Name="PushedImage" Value="set:XinShouNewBK image:XinShouNew_LQPUSH"/>
+						<Property Name="NormalImage" Value="set:XinShouNewBK image:XinShouNew_LQNORMAL"/>
+						<Property Name="HoverImage" Value="set:XinShouNewBK image:XinShouNew_LQHOVER"/>
+						<Property Name="DisabledImage" Value="set:XinShouNewBK image:XinShouNew_LQDIS"/>
+						<Event Name="Clicked" Function="PayReward_AwardClicked(2)"/>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="PayReward_AwardShowbk3">
+				<Property Name="AbsolutePosition" Value="x:0.000000 y:198.000000"/>
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,54.000000}"/>
+				<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardList3">
+					<Property Name="UnifiedSize" Value="{{0.000000,54.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.0,0.5}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_HL3"/>
+				</Window>
+				<Window Type="TLBB_Frame_Lace3" Name="PayReward_Awardbk3">
+					<Property Name="UnifiedSize" Value="{{1.000000,-54.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.000000,0.000000}}"/>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo3_1">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,10.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum3_1">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward3_1">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo3_2">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,51.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum3_2">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward3_2">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo3_3">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,92.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum3_3">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward3_3">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo3_4">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,133.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum3_4">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward3_4">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButtonNULL" Name="PayReward_AwardInfo3_5">
+						<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,174.000000},{0.500000,-17.000000}}"/>
+						<Property Name="Empty" Value="False"/>
+						<Property Name="PushedImage" Value="set:SlotUI02 image:YHYT_BankON_Select"/>
+						<Property Name="NormalImage" Value="set:SlotUI02 image:YHYT_BankON_Normal"/>
+						<Property Name="HoverImage" Value="set:SlotUI02 image:YHYT_BankON_Hover"/>
+						<Property Name="DisabledImage" Value="set:SlotUI02 image:YHYT_BankON_Disabled"/>
+						<Event Name="Clicked" Function="PayReward_OpenOptionalAward(3);"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="PayReward_AwardNeed3">
+						<Property Name="UnifiedSize" Value="{{1.000000,-311.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.5,-10.000000}}"/>
+						<Property Name="VertFormatting" Value="BottomAligned"/>
+						<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+					</Window>
+					<Window Type="TLBB_ButtonNULL" Name="PayReward_AwardClick3">
+						<Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{1.000000,-99.000000},{0.5,-18}}"/>
+						<Property Name="PushedImage" Value="set:XinShouNewBK image:XinShouNew_LQPUSH"/>
+						<Property Name="NormalImage" Value="set:XinShouNewBK image:XinShouNew_LQNORMAL"/>
+						<Property Name="HoverImage" Value="set:XinShouNewBK image:XinShouNew_LQHOVER"/>
+						<Property Name="DisabledImage" Value="set:XinShouNewBK image:XinShouNew_LQDIS"/>
+						<Event Name="Clicked" Function="PayReward_AwardClicked(3)"/>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="PayReward_AwardShowbk4">
+				<Property Name="AbsolutePosition" Value="x:0.000000 y:252.000000"/>
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,54.000000}"/>
+				<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardList4">
+					<Property Name="UnifiedSize" Value="{{0.000000,54.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.0,0.5}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_HL4"/>
+				</Window>
+				<Window Type="TLBB_Frame_Lace3" Name="PayReward_Awardbk4">
+					<Property Name="UnifiedSize" Value="{{1.000000,-54.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.000000,0.000000}}"/>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo4_1">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,10.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum4_1">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward4_1">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo4_2">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,51.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum4_2">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward4_2">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo4_3">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,92.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum4_3">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward4_3">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo4_4">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,133.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum4_4">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward4_4">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButtonNULL" Name="PayReward_AwardInfo4_5">
+						<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,174.000000},{0.500000,-17.000000}}"/>
+						<Property Name="Empty" Value="False"/>
+						<Property Name="PushedImage" Value="set:SlotUI02 image:YHYT_BankON_Select"/>
+						<Property Name="NormalImage" Value="set:SlotUI02 image:YHYT_BankON_Normal"/>
+						<Property Name="HoverImage" Value="set:SlotUI02 image:YHYT_BankON_Hover"/>
+						<Property Name="DisabledImage" Value="set:SlotUI02 image:YHYT_BankON_Disabled"/>
+						<Event Name="Clicked" Function="PayReward_OpenOptionalAward(4);"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="PayReward_AwardNeed4">
+						<Property Name="UnifiedSize" Value="{{1.000000,-311.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.5,-10.000000}}"/>
+						<Property Name="VertFormatting" Value="BottomAligned"/>
+						<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+					</Window>
+					<Window Type="TLBB_ButtonNULL" Name="PayReward_AwardClick4">
+						<Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{1.000000,-99.000000},{0.5,-18}}"/>
+						<Property Name="PushedImage" Value="set:XinShouNewBK image:XinShouNew_LQPUSH"/>
+						<Property Name="NormalImage" Value="set:XinShouNewBK image:XinShouNew_LQNORMAL"/>
+						<Property Name="HoverImage" Value="set:XinShouNewBK image:XinShouNew_LQHOVER"/>
+						<Property Name="DisabledImage" Value="set:XinShouNewBK image:XinShouNew_LQDIS"/>
+						<Event Name="Clicked" Function="PayReward_AwardClicked(4)"/>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="PayReward_AwardShowbk5">
+				<Property Name="AbsolutePosition" Value="x:0.000000 y:306.000000"/>
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,54.000000}"/>
+				<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardList5">
+					<Property Name="UnifiedSize" Value="{{0.000000,54.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.0,0.5}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_HL5"/>
+				</Window>
+				<Window Type="TLBB_Frame_Lace3" Name="PayReward_Awardbk5">
+					<Property Name="UnifiedSize" Value="{{1.000000,-54.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.000000,0.000000}}"/>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo5_1">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,10.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum5_1">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward5_1">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo5_2">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,51.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum5_2">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward5_2">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo5_3">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,92.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum5_3">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward5_3">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo5_4">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,133.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum5_4">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward5_4">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButtonNULL" Name="PayReward_AwardInfo5_5">
+						<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,174.000000},{0.500000,-17.000000}}"/>
+						<Property Name="Empty" Value="False"/>
+						<Property Name="PushedImage" Value="set:SlotUI02 image:YHYT_BankON_Select"/>
+						<Property Name="NormalImage" Value="set:SlotUI02 image:YHYT_BankON_Normal"/>
+						<Property Name="HoverImage" Value="set:SlotUI02 image:YHYT_BankON_Hover"/>
+						<Property Name="DisabledImage" Value="set:SlotUI02 image:YHYT_BankON_Disabled"/>
+						<Event Name="Clicked" Function="PayReward_OpenOptionalAward(5);"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="PayReward_AwardNeed5">
+						<Property Name="UnifiedSize" Value="{{1.000000,-311.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.5,-10.000000}}"/>
+						<Property Name="VertFormatting" Value="BottomAligned"/>
+						<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+					</Window>
+					<Window Type="TLBB_ButtonNULL" Name="PayReward_AwardClick5">
+						<Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{1.000000,-99.000000},{0.5,-18}}"/>
+						<Property Name="PushedImage" Value="set:XinShouNewBK image:XinShouNew_LQPUSH"/>
+						<Property Name="NormalImage" Value="set:XinShouNewBK image:XinShouNew_LQNORMAL"/>
+						<Property Name="HoverImage" Value="set:XinShouNewBK image:XinShouNew_LQHOVER"/>
+						<Property Name="DisabledImage" Value="set:XinShouNewBK image:XinShouNew_LQDIS"/>
+						<Event Name="Clicked" Function="PayReward_AwardClicked(5)"/>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="PayReward_AwardShowbk6">
+				<Property Name="AbsolutePosition" Value="x:0.000000 y:360.000000"/>
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,54.000000}"/>
+				<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardList6">
+					<Property Name="UnifiedSize" Value="{{0.000000,54.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.0,0.5}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_HL6"/>
+				</Window>
+				<Window Type="TLBB_Frame_Lace3" Name="PayReward_Awardbk6">
+					<Property Name="UnifiedSize" Value="{{1.000000,-54.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.000000,0.000000}}"/>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo6_1">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,10.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum6_1">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward6_1">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo6_2">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,51.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum6_2">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward6_2">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo6_3">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,92.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum6_3">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward6_3">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo6_4">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,133.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum6_4">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward6_4">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButtonNULL" Name="PayReward_AwardInfo6_5">
+						<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,174.000000},{0.500000,-17.000000}}"/>
+						<Property Name="Empty" Value="False"/>
+						<Property Name="PushedImage" Value="set:SlotUI02 image:YHYT_BankON_Select"/>
+						<Property Name="NormalImage" Value="set:SlotUI02 image:YHYT_BankON_Normal"/>
+						<Property Name="HoverImage" Value="set:SlotUI02 image:YHYT_BankON_Hover"/>
+						<Property Name="DisabledImage" Value="set:SlotUI02 image:YHYT_BankON_Disabled"/>
+						<Event Name="Clicked" Function="PayReward_OpenOptionalAward(6);"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="PayReward_AwardNeed6">
+						<Property Name="UnifiedSize" Value="{{1.000000,-311.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.5,-10.000000}}"/>
+						<Property Name="VertFormatting" Value="BottomAligned"/>
+						<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+					</Window>
+					<Window Type="TLBB_ButtonNULL" Name="PayReward_AwardClick6">
+						<Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{1.000000,-99.000000},{0.5,-18}}"/>
+						<Property Name="PushedImage" Value="set:XinShouNewBK image:XinShouNew_LQPUSH"/>
+						<Property Name="NormalImage" Value="set:XinShouNewBK image:XinShouNew_LQNORMAL"/>
+						<Property Name="HoverImage" Value="set:XinShouNewBK image:XinShouNew_LQHOVER"/>
+						<Property Name="DisabledImage" Value="set:XinShouNewBK image:XinShouNew_LQDIS"/>
+						<Event Name="Clicked" Function="PayReward_AwardClicked(6)"/>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="PayReward_AwardShowbk7">
+				<Property Name="AbsolutePosition" Value="x:0.000000 y:414.000000"/>
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,54.000000}"/>
+				<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardList7">
+					<Property Name="UnifiedSize" Value="{{0.000000,54.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.0,0.5}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_HL7"/>
+				</Window>
+				<Window Type="TLBB_Frame_Lace3" Name="PayReward_Awardbk7">
+					<Property Name="UnifiedSize" Value="{{1.000000,-54.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.000000,0.000000}}"/>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo7_1">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,10.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum7_1">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward7_1">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo7_2">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,51.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum7_2">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward7_2">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo7_3">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,92.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum7_3">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward7_3">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo7_4">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,133.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum7_4">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward7_4">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButtonNULL" Name="PayReward_AwardInfo7_5">
+						<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,174.000000},{0.500000,-17.000000}}"/>
+						<Property Name="Empty" Value="False"/>
+						<Property Name="PushedImage" Value="set:SlotUI02 image:YHYT_BankON_Select"/>
+						<Property Name="NormalImage" Value="set:SlotUI02 image:YHYT_BankON_Normal"/>
+						<Property Name="HoverImage" Value="set:SlotUI02 image:YHYT_BankON_Hover"/>
+						<Property Name="DisabledImage" Value="set:SlotUI02 image:YHYT_BankON_Disabled"/>
+						<Event Name="Clicked" Function="PayReward_OpenOptionalAward(7);"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="PayReward_AwardNeed7">
+						<Property Name="UnifiedSize" Value="{{1.000000,-311.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.5,-10.000000}}"/>
+						<Property Name="VertFormatting" Value="BottomAligned"/>
+						<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+					</Window>
+					<Window Type="TLBB_ButtonNULL" Name="PayReward_AwardClick7">
+						<Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{1.000000,-99.000000},{0.5,-18}}"/>
+						<Property Name="PushedImage" Value="set:XinShouNewBK image:XinShouNew_LQPUSH"/>
+						<Property Name="NormalImage" Value="set:XinShouNewBK image:XinShouNew_LQNORMAL"/>
+						<Property Name="HoverImage" Value="set:XinShouNewBK image:XinShouNew_LQHOVER"/>
+						<Property Name="DisabledImage" Value="set:XinShouNewBK image:XinShouNew_LQDIS"/>
+						<Event Name="Clicked" Function="PayReward_AwardClicked(7)"/>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="PayReward_AwardShowbk8">
+				<Property Name="AbsolutePosition" Value="x:0.000000 y:468.000000"/>
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,54.000000}"/>
+				<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardList8">
+					<Property Name="UnifiedSize" Value="{{0.000000,54.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.0,0.5}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_HL8"/>
+				</Window>
+				<Window Type="TLBB_Frame_Lace3" Name="PayReward_Awardbk8">
+					<Property Name="UnifiedSize" Value="{{1.000000,-54.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.000000,0.000000}}"/>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo8_1">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,10.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum8_1">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward8_1">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo8_2">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,51.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum8_2">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward8_2">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo8_3">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,92.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum8_3">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward8_3">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo8_4">
+						<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.0,133.000000},{0.5,-18.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_AwardNum8_4">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+							<Property Name="VertFormatting" Value="BottomAligned"/>
+							<Property Name="HorzFormatting" Value="RightAligned"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward8_4">
+							<Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}"/>
+							<Property Name="Image" Value="set:UIIcons image:Icon_Lock"/>
+							<Property Name="Tooltip" Value="#{PayRewardText1}"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_ActionButtonNULL" Name="PayReward_AwardInfo8_5">
+						<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,174.000000},{0.500000,-17.000000}}"/>
+						<Property Name="Empty" Value="False"/>
+						<Property Name="PushedImage" Value="set:SlotUI02 image:YHYT_BankON_Select"/>
+						<Property Name="NormalImage" Value="set:SlotUI02 image:YHYT_BankON_Normal"/>
+						<Property Name="HoverImage" Value="set:SlotUI02 image:YHYT_BankON_Hover"/>
+						<Property Name="DisabledImage" Value="set:SlotUI02 image:YHYT_BankON_Disabled"/>
+						<Event Name="Clicked" Function="PayReward_OpenOptionalAward(8);"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="PayReward_AwardNeed8">
+						<Property Name="UnifiedSize" Value="{{1.000000,-311.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.5,-10.000000}}"/>
+						<Property Name="VertFormatting" Value="BottomAligned"/>
+						<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+					</Window>
+					<Window Type="TLBB_ButtonNULL" Name="PayReward_AwardClick8">
+						<Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,36.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{1.000000,-99.000000},{0.5,-18}}"/>
+						<Property Name="PushedImage" Value="set:XinShouNewBK image:XinShouNew_LQPUSH"/>
+						<Property Name="NormalImage" Value="set:XinShouNewBK image:XinShouNew_LQNORMAL"/>
+						<Property Name="HoverImage" Value="set:XinShouNewBK image:XinShouNew_LQHOVER"/>
+						<Property Name="DisabledImage" Value="set:XinShouNewBK image:XinShouNew_LQDIS"/>
+						<Event Name="Clicked" Function="PayReward_AwardClicked(8)"/>
+					</Window>
+				</Window>
+			</Window>
+			<!-- %1  0  1 -->
+			<!-- %2  0  0 -->
+			<!-- %3  90 54 -->
+			<!-- %4  1  1 -->
+			<!-- <Window Type="DefaultWindow" Name="PayReward_AwardShowbk%1"> -->
+			<!-- <Property Name="AbsolutePosition" Value="x:%2.000000 y:%3.000000" /> -->
+			<!-- <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,54.000000}" /> -->
+			<!-- <Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardList%1"> -->
+			<!-- <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{1.000000,0.0}}"/> -->
+			<!-- <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.0,0.5}}"/> -->
+			<!-- <Property Name="RiseOnClick" Value="False"/> -->
+			<!-- <Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_HL%4"/> -->
+			<!-- </Window> -->
+			<!-- <Window Type="TLBB_Frame_Lace3" Name="PayReward_Awardbk%1"> -->
+			<!-- <Property Name="UnifiedSize" Value="{{1.000000,-54.000000},{1.000000,0.000000}}"/> -->
+			<!-- <Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.000000,0.000000}}"/> -->
+			<!-- <Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo%1_1"> -->
+			<!-- <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/> -->
+			<!-- <Property Name="UnifiedPosition" Value="{{0.0,10.000000},{0.5,-18.000000}}"/> -->
+			<!-- <Property Name="RiseOnClick" Value="False"/> -->
+			<!-- <Window Type="TLBB_SimpleText" Name="PayReward_AwardNum%1_1"> -->
+			<!-- <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/> -->
+			<!-- <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/> -->
+			<!-- <Property Name="VertFormatting" Value="BottomAligned"/> -->
+			<!-- <Property Name="HorzFormatting" Value="RightAligned"/> -->
+			<!-- <Property Name="MouseRButtonHollow" Value="True"/> -->
+			<!-- <Property Name="MouseMoveHollow" Value="True"/> -->
+			<!-- <Property Name="MouseLButtonHollow" Value="True"/> -->
+			<!-- <Property Name="MouseHollow" Value="True"/> -->
+			<!-- </Window> -->
+			<!-- <Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward%1_1"> -->
+			<!-- <Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/> -->
+			<!-- <Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}" /> -->
+			<!-- <Property Name="Image" Value="set:UIIcons image:Icon_Lock" /> -->
+			<!-- <Property Name="Tooltip" Value="#{PayRewardText1}" /> -->
+			<!-- </Window> -->
+			<!-- </Window> -->
+			<!-- <Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo%1_2"> -->
+			<!-- <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/> -->
+			<!-- <Property Name="UnifiedPosition" Value="{{0.0,51.000000},{0.5,-18.000000}}"/> -->
+			<!-- <Property Name="RiseOnClick" Value="False"/> -->
+			<!-- <Window Type="TLBB_SimpleText" Name="PayReward_AwardNum%1_2"> -->
+			<!-- <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/> -->
+			<!-- <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/> -->
+			<!-- <Property Name="VertFormatting" Value="BottomAligned"/> -->
+			<!-- <Property Name="HorzFormatting" Value="RightAligned"/> -->
+			<!-- <Property Name="MouseRButtonHollow" Value="True"/> -->
+			<!-- <Property Name="MouseMoveHollow" Value="True"/> -->
+			<!-- <Property Name="MouseLButtonHollow" Value="True"/> -->
+			<!-- <Property Name="MouseHollow" Value="True"/> -->
+			<!-- </Window> -->
+			<!-- <Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward%1_2"> -->
+			<!-- <Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/> -->
+			<!-- <Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}" /> -->
+			<!-- <Property Name="Image" Value="set:UIIcons image:Icon_Lock" /> -->
+			<!-- <Property Name="Tooltip" Value="#{PayRewardText1}" /> -->
+			<!-- </Window> -->
+			<!-- </Window> -->
+			<!-- <Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo%1_3"> -->
+			<!-- <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/> -->
+			<!-- <Property Name="UnifiedPosition" Value="{{0.0,92.000000},{0.5,-18.000000}}"/> -->
+			<!-- <Property Name="RiseOnClick" Value="False"/> -->
+			<!-- <Window Type="TLBB_SimpleText" Name="PayReward_AwardNum%1_3"> -->
+			<!-- <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/> -->
+			<!-- <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/> -->
+			<!-- <Property Name="VertFormatting" Value="BottomAligned"/> -->
+			<!-- <Property Name="HorzFormatting" Value="RightAligned"/> -->
+			<!-- <Property Name="MouseRButtonHollow" Value="True"/> -->
+			<!-- <Property Name="MouseMoveHollow" Value="True"/> -->
+			<!-- <Property Name="MouseLButtonHollow" Value="True"/> -->
+			<!-- <Property Name="MouseHollow" Value="True"/> -->
+			<!-- </Window> -->
+			<!-- <Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward%1_3"> -->
+			<!-- <Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/> -->
+			<!-- <Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}" /> -->
+			<!-- <Property Name="Image" Value="set:UIIcons image:Icon_Lock" /> -->
+			<!-- <Property Name="Tooltip" Value="#{PayRewardText1}" /> -->
+			<!-- </Window> -->
+			<!-- </Window> -->
+			<!-- <Window Type="TLBB_ActionButton" Name="PayReward_AwardInfo%1_4"> -->
+			<!-- <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/> -->
+			<!-- <Property Name="UnifiedPosition" Value="{{0.0,133.000000},{0.5,-18.000000}}"/> -->
+			<!-- <Property Name="RiseOnClick" Value="False"/> -->
+			<!-- <Window Type="TLBB_SimpleText" Name="PayReward_AwardNum%1_4"> -->
+			<!-- <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/> -->
+			<!-- <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/> -->
+			<!-- <Property Name="VertFormatting" Value="BottomAligned"/> -->
+			<!-- <Property Name="HorzFormatting" Value="RightAligned"/> -->
+			<!-- <Property Name="MouseRButtonHollow" Value="True"/> -->
+			<!-- <Property Name="MouseMoveHollow" Value="True"/> -->
+			<!-- <Property Name="MouseLButtonHollow" Value="True"/> -->
+			<!-- <Property Name="MouseHollow" Value="True"/> -->
+			<!-- </Window> -->
+			<!-- <Window Type="TLBB_StaticImageNULL" Name="PayReward_AwardSAward%1_4"> -->
+			<!-- <Property Name="UnifiedPosition" Value="{{0.5,-9.0},{0.5,-7.0}}"/> -->
+			<!-- <Property Name="UnifiedSize" Value="{{0.0,18.0},{0.0,14.0}" /> -->
+			<!-- <Property Name="Image" Value="set:UIIcons image:Icon_Lock" /> -->
+			<!-- <Property Name="Tooltip" Value="#{PayRewardText1}" /> -->
+			<!-- </Window> -->
+			<!-- </Window> -->
+			<!-- <Window Type="TLBB_ActionButtonNULL" Name="PayReward_AwardInfo%1_5"> -->
+			<!-- <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/> -->
+			<!-- <Property Name="UnifiedPosition" Value="{{0.000000,174.000000},{0.500000,-17.000000}}"/> -->
+			<!-- <Property Name="Empty" Value="False" /> -->
+			<!-- <Property Name="PushedImage" Value="set:SlotUI02 image:YHYT_BankON_Select"/> -->
+			<!-- <Property Name="NormalImage" Value="set:SlotUI02 image:YHYT_BankON_Normal"/> -->
+			<!-- <Property Name="HoverImage" Value="set:SlotUI02 image:YHYT_BankON_Hover"/> -->
+			<!-- <Property Name="DisabledImage" Value="set:SlotUI02 image:YHYT_BankON_Disabled"/> -->
+			<!-- <Event Name="Clicked" Function="PayReward_OpenOptionalAward(%1);" /> -->
+			<!-- </Window> -->
+			<!-- <Window Type="TLBB_SimpleText" Name="PayReward_AwardNeed%1"> -->
+			<!-- <Property Name="UnifiedSize" Value="{{1.000000,-312.000000},{0.000000,20.000000}}"/> -->
+			<!-- <Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.5,-10.000000}}"/> -->
+			<!-- <Property Name="VertFormatting" Value="BottomAligned"/> -->
+			<!-- <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/> -->
+			<!-- </Window> -->
+			<!-- <Window Type="TLBB_ButtonNULL" Name="PayReward_AwardClick%1"> -->
+			<!-- <Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,36.000000}}"/> -->
+			<!-- <Property Name="UnifiedPosition" Value="{{1.000000,-99.000000},{0.5,-18}}"/> -->
+			<!-- <Property Name="PushedImage" Value="set:XinShouNewBK image:XinShouNew_LQPUSH"/> -->
+			<!-- <Property Name="NormalImage" Value="set:XinShouNewBK image:XinShouNew_LQNORMAL"/> -->
+			<!-- <Property Name="HoverImage" Value="set:XinShouNewBK image:XinShouNew_LQHOVER"/> -->
+			<!-- <Property Name="DisabledImage" Value="set:XinShouNewBK image:XinShouNew_LQDIS"/> -->
+			<!-- <Event Name="Clicked" Function="PayReward_AwardClicked(%1)"/> -->
+			<!-- </Window> -->
+			<!-- </Window> -->
+			<!-- </Window> -->
+			<!-- <Window Type="TLBB_Frame_Lace5" Name="PayReward_Blank"> -->
+			<!-- <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-20.000000}" /> -->
+			<!-- <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}" /> -->
+			<!-- </Window> -->
+		</Window>
+		<Window Type="DefaultWindow" Name="PayReward_FrameSelectBox">
+			<Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000"/>
+			<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Window Type="TLBB_MainFrame2" Name="PayReward_FrameTwo">
+				<Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,322.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.500000,-270.000000},{0.0,120.0}}"/>
+				<Window Type="TLBB_DragTitle" Name="PayReward_DragTitleSelectBox">
+					<Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,2.000000}}"/>
+					<Property Name="DragTarget" Value="PayReward_Frame"/>
+					<Property Name="Font" Value="YouYuan11.25"/>
+					<Property Name="Text" Value="#gFF0FA0豪礼选择"/>
+				</Window>
+				<Window Type="TLBB_ButtonHelp" Name="PayReward_HelpSelectBox">
+					<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+					<Property Name="Text" Value="TLBB_ButtonHelp"/>
+				</Window>
+				<Window Type="TLBB_ButtonClose" Name="PayReward_CloseSelectBox">
+					<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}}"/>
+					<Property Name="Text" Value="TLBB_ButtonClose"/>
+					<!-- <Event Name="Clicked" Function="PayReward_FrameSelectBox:Hide();" /> -->
+					<Event Name="Clicked" Function="PayReward_CloseOptionalAward();"/>
+				</Window>
+				<Window Type="DefaultWindow" Name="PayReward_Frame_ClientSelectBox">
+					<Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-30.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,25.000000}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Window Type="TLBB_Frame_Lace3" Name="PayReward_Awardbk1SelectBox">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,72.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_Frame1_InfoSelectBox">
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+							<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+							<Property Name="VertFormatting" Value="VertCentred"/>
+							<Property Name="HorzFormatting" Value="HorzCentred"/>
+							<Property Name="RiseOnClick" Value="False"/>
+							<Property Name="TextColor" Value="FFFFF263"/>
+							<Property Name="Text" Value="    位置选择:先选中对应的位置再自选物品填充。"/>
+						</Window>
+						<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfoOne">
+							<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.5,-87.000000},{0.0,28.000000}}"/>
+							<Event Name="Clicked" Function="PayReward_SelectClick(1);"/>
+							<Window Type="TLBB_SimpleText" Name="PayReward_SelectNumOne">
+								<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+								<Property Name="VertFormatting" Value="BottomAligned"/>
+								<Property Name="HorzFormatting" Value="RightAligned"/>
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>
+							</Window>
+							<Window Type="TLBB_StaticImageNULL" Name="PayReward_SelectGou1">
+								<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+								<Property Name="RiseOnClick" Value="False"/>
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>
+								<Property Name="Image" Value="set:Seven image:Seven_ke"/>
+							</Window>
+						</Window>
+						<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfoTwo">
+							<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.5,-41.000000},{0.0,28.000000}}"/>
+							<Event Name="Clicked" Function="PayReward_SelectClick(2);"/>
+							<Window Type="TLBB_SimpleText" Name="PayReward_SelectNumTwo">
+								<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+								<Property Name="VertFormatting" Value="BottomAligned"/>
+								<Property Name="HorzFormatting" Value="RightAligned"/>
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>
+							</Window>
+							<Window Type="TLBB_StaticImageNULL" Name="PayReward_SelectGou2">
+								<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+								<Property Name="RiseOnClick" Value="False"/>
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>
+								<Property Name="Image" Value="set:Seven image:Seven_ke"/>
+							</Window>
+						</Window>
+						<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfoThree">
+							<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.5,5.000000},{0.0,28.000000}}"/>
+							<Event Name="Clicked" Function="PayReward_SelectClick(3);"/>
+							<Window Type="TLBB_SimpleText" Name="PayReward_SelectNumThree">
+								<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+								<Property Name="VertFormatting" Value="BottomAligned"/>
+								<Property Name="HorzFormatting" Value="RightAligned"/>
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>
+							</Window>
+							<Window Type="TLBB_StaticImageNULL" Name="PayReward_SelectGou3">
+								<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+								<Property Name="RiseOnClick" Value="False"/>
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>
+								<Property Name="Image" Value="set:Seven image:Seven_ke"/>
+							</Window>
+						</Window>
+						<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfoFour">
+							<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.5,51.000000},{0.0,28.000000}}"/>
+							<Event Name="Clicked" Function="PayReward_SelectClick(4);"/>
+							<Window Type="TLBB_SimpleText" Name="PayReward_SelectNumFour">
+								<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+								<Property Name="VertFormatting" Value="BottomAligned"/>
+								<Property Name="HorzFormatting" Value="RightAligned"/>
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>
+							</Window>
+							<Window Type="TLBB_StaticImageNULL" Name="PayReward_SelectGou4">
+								<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,28.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-14.000000}}"/>
+								<Property Name="RiseOnClick" Value="False"/>
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>
+								<Property Name="Image" Value="set:Seven image:Seven_ke"/>
+							</Window>
+						</Window>
+					</Window>
+					<Window Type="TLBB_Frame_Lace3" Name="PayReward_Awardbk2SelectBox">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,176.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,72.000000}}"/>
+						<Window Type="TLBB_SimpleText" Name="PayReward_Frame2_Info">
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+							<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+							<Property Name="VertFormatting" Value="VertCentred"/>
+							<Property Name="HorzFormatting" Value="HorzCentred"/>
+							<Property Name="RiseOnClick" Value="False"/>
+							<Property Name="TextColor" Value="FFFFF263"/>
+							<Property Name="Text" Value="    物品选择:下列物品中自行选择。"/>
+						</Window>
+						<Window Type="DefaultWindow" Name="PayReward_SelectInfoBk">
+							<Property Name="UnifiedPosition" Value="{{0.5,-235.000000},{0.000000,28.000000}}"/>
+							<Property Name="UnifiedSize" Value="{{0.000000,470.000000},{0.000000,148.000000}"/>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo1">
+								<Property Name="UnifiedPosition" Value="{{0.0,10.000000},{0.0,10.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(1);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum1">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo2">
+								<Property Name="UnifiedPosition" Value="{{0.0,56.000000},{0.0,10.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(2);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum2">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo3">
+								<Property Name="UnifiedPosition" Value="{{0.0,102.000000},{0.0,10.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(3);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum3">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo4">
+								<Property Name="UnifiedPosition" Value="{{0.0,148.000000},{0.0,10.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(4);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum4">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo5">
+								<Property Name="UnifiedPosition" Value="{{0.0,194.000000},{0.0,10.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(5);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum5">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo6">
+								<Property Name="UnifiedPosition" Value="{{0.0,240.000000},{0.0,10.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(6);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum6">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo7">
+								<Property Name="UnifiedPosition" Value="{{0.0,286.000000},{0.0,10.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(7);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum7">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo8">
+								<Property Name="UnifiedPosition" Value="{{0.0,332.000000},{0.0,10.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(8);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum8">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo9">
+								<Property Name="UnifiedPosition" Value="{{0.0,378.000000},{0.0,10.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(9);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum9">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo10">
+								<Property Name="UnifiedPosition" Value="{{0.0,424.000000},{0.0,10.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(10);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum10">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo11">
+								<Property Name="UnifiedPosition" Value="{{0.0,10.000000},{0.0,56.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(11);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum11">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo12">
+								<Property Name="UnifiedPosition" Value="{{0.0,56.000000},{0.0,56.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(12);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum12">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo13">
+								<Property Name="UnifiedPosition" Value="{{0.0,102.000000},{0.0,56.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(13);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum13">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo14">
+								<Property Name="UnifiedPosition" Value="{{0.0,148.000000},{0.0,56.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(14);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum14">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo15">
+								<Property Name="UnifiedPosition" Value="{{0.0,194.000000},{0.0,56.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(15);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum15">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo16">
+								<Property Name="UnifiedPosition" Value="{{0.0,240.000000},{0.0,56.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(16);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum16">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo17">
+								<Property Name="UnifiedPosition" Value="{{0.0,286.000000},{0.0,56.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(17);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum17">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo18">
+								<Property Name="UnifiedPosition" Value="{{0.0,332.000000},{0.0,56.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(18);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum18">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo19">
+								<Property Name="UnifiedPosition" Value="{{0.0,378.000000},{0.0,56.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(19);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum19">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo20">
+								<Property Name="UnifiedPosition" Value="{{0.0,424.000000},{0.0,56.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(20);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum20">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo21">
+								<Property Name="UnifiedPosition" Value="{{0.0,10.000000},{0.0,102.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(21);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum21">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo22">
+								<Property Name="UnifiedPosition" Value="{{0.0,56.000000},{0.0,102.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(22);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum22">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo23">
+								<Property Name="UnifiedPosition" Value="{{0.0,102.000000},{0.0,102.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(23);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum23">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo24">
+								<Property Name="UnifiedPosition" Value="{{0.0,148.000000},{0.0,102.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(24);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum24">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo25">
+								<Property Name="UnifiedPosition" Value="{{0.0,194.000000},{0.0,102.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(25);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum25">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo26">
+								<Property Name="UnifiedPosition" Value="{{0.0,240.000000},{0.0,102.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(26);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum26">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo27">
+								<Property Name="UnifiedPosition" Value="{{0.0,286.000000},{0.0,102.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(27);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum27">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo28">
+								<Property Name="UnifiedPosition" Value="{{0.0,332.000000},{0.0,102.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(28);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum28">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo29">
+								<Property Name="UnifiedPosition" Value="{{0.0,378.000000},{0.0,102.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(29);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum29">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo30">
+								<Property Name="UnifiedPosition" Value="{{0.0,424.000000},{0.0,102.000000}}"/>
+								<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+								<Event Name="Clicked" Function="PayReward_SelectClickTwo(30);"/>
+								<Window Type="TLBB_SimpleText" Name="PayReward_SelectNum30">
+									<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/>
+									<Property Name="VertFormatting" Value="BottomAligned"/>
+									<Property Name="HorzFormatting" Value="RightAligned"/>
+									<Property Name="MouseRButtonHollow" Value="True"/>
+									<Property Name="MouseMoveHollow" Value="True"/>
+									<Property Name="MouseLButtonHollow" Value="True"/>
+									<Property Name="MouseHollow" Value="True"/>
+								</Window>
+							</Window>
+							<!-- <Window Type="TLBB_ActionButton" Name="PayReward_SelectInfo%1"> -->
+							<!-- <Property Name="UnifiedPosition" Value="{{0.0,%2.000000},{0.0,%3.000000}}"/> -->
+							<!-- <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/> -->
+							<!-- <Event Name="Clicked" Function="PayReward_SelectClickTwo(%1);" /> -->
+							<!-- <Window Type="TLBB_SimpleText" Name="PayReward_SelectNum%1"> -->
+							<!-- <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,15.000000}}"/> -->
+							<!-- <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-16.000000}}"/> -->
+							<!-- <Property Name="VertFormatting" Value="BottomAligned"/> -->
+							<!-- <Property Name="HorzFormatting" Value="RightAligned"/> -->
+							<!-- <Property Name="MouseRButtonHollow" Value="True"/> -->
+							<!-- <Property Name="MouseMoveHollow" Value="True"/> -->
+							<!-- <Property Name="MouseLButtonHollow" Value="True"/> -->
+							<!-- <Property Name="MouseHollow" Value="True"/> -->
+							<!-- </Window> -->
+							<!-- </Window> -->
+						</Window>
+					</Window>
+					<Window Type="TLBB_Frame_Lace3" Name="PayReward_Awardbk3SelectBox">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,44.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,248.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="PayReward_AwardClick8xxx">
+							<Property Name="UnifiedSize" Value="{{0.000000,142.000000},{0.000000,34.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.5,-71.000000},{0.0,5.0}}"/>
+							<Property Name="PushedImage" Value="set:XiaRi_YanMen image:XiaRi_YanMenButton_Pushed"/>
+							<Property Name="NormalImage" Value="set:XiaRi_YanMen image:XiaRi_YanMenButton_Normal"/>
+							<Property Name="HoverImage" Value="set:XiaRi_YanMen image:XiaRi_YanMenButton_Hover"/>
+							<Property Name="DisabledImage" Value="set:XiaRi_YanMen image:XiaRi_YanMenButton_Disabled"/>
+							<Event Name="Clicked" Function="PayReward_SubmitSecect()"/>
+						</Window>
+						<!-- <Window Type="TLBB_Frame_Lace5" Name="PayReward_Blank"> -->
+						<!-- <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" /> -->
+						<!-- <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" /> -->
+						<!-- </Window> -->
+						<!-- <Window Type="TLBB_ButtonCommon" Name="PayReward_SelectOk"> -->
+						<!-- <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" /> -->
+						<!-- <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" /> -->
+						<!-- <Property Name="Text" Value="#{INTERFACE_XML_557}" /> -->
+						<!-- <Event Name="Clicked" Function="PayReward_SelectOk_Clicked();" /> -->
+						<!-- </Window> -->
+						<!-- <Window Type="TLBB_ButtonCommon" Name="PayReward_SelectCancel"> -->
+						<!-- <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" /> -->
+						<!-- <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" /> -->
+						<!-- <Property Name="Text" Value="#{INTERFACE_XML_542}" /> -->
+						<!-- <Event Name="Clicked" Function="PayReward_SelectCancel_Clicked();" /> -->
+						<!-- </Window> -->
+					</Window>
+				</Window>
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

@@ -1,0 +1,649 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="DoublePlay_Game_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,334.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-340.000000},{0.500000,80.000000}}"/>
+    <Event Name="Hidden" Function="DoublePlay_Game_OnHiden();" />
+    <Window Type="TLBB_MainFrame_Affection2" Name="DoublePlay_Game_Game1">
+      <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,220.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False" />
+      <Property Name="Visible" Value="False"/>
+      <Window Type="TLBB_DragTitle" Name="DoublePlay_Game_Game1DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,10.000000}}"/>
+        <Property Name="DragTarget" Value="DoublePlay_Game_Frame" />
+        <Property Name="Font" Value="YouYuan11.25"/>
+        <Property Name="Text" Value="#{SRWF_230329_51}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+      <Window Type="TLBB_Affection_TimeBK" Name="DoublePlay_Game_Game1BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,32.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Game1Round">
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_52}"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Game1Time">
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_53}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="DoublePlay_Game_Game1Question">
+        <Property Name="UnifiedSize" Value="{{1.000000,-26.000000},{0.000000,110.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,62.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Game1Image1BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,74.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-37.000000}}"/>
+          <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_BKnormal"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Game1Image1">
+          <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,29.000000},{0.500000,-14.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_R0"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Game1Mark">
+          <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.500000,-13.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_YCH"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Game1Image2BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,74.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,124.000000},{0.500000,-37.000000}}"/>
+          <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_BKnormal"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Game1Image2">
+          <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,149.000000},{0.500000,-14.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_R0"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Game1Mark2">
+          <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,206.000000},{0.500000,-13.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_YDH"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Game1Image3">
+          <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,248.000000},{0.500000,-14.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_R0"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Game1Image4">
+          <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,272.000000},{0.500000,-14.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_R0"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Game1Image5">
+          <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-86.000000},{1.000000,-22.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_WanCheng"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Game1Rank">
+        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,180.000000}}"/>
+        <Property Name="Text" Value="#{SRWF_230329_213}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Game1Num">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.000000,180.000000}}"/>
+        <Property Name="Text" Value="#{SRWF_230329_54}"/>
+        <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="DoublePlay_Game_Game1RankInfo">
+        <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-44.000000}}"/>
+        <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Details_Pushed"/>
+        <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Details_Normal"/>
+        <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Details_Hover"/>
+        <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Details_Disabled"/>
+        <Event Name="Clicked" Function="DoublePlay_Game_GameRankInfo_Click()"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_MainFrame_Affection2" Name="DoublePlay_Game_Game2">
+      <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,220.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False" />
+      <Window Type="TLBB_DragTitle" Name="DoublePlay_Game_Game2DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,10.000000}}"/>
+        <Property Name="DragTarget" Value="DoublePlay_Game_Frame" />
+        <Property Name="Font" Value="YouYuan11.25"/>
+        <Property Name="Text" Value="#{SRWF_230329_66}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+      <Window Type="TLBB_Affection_TimeBK" Name="DoublePlay_Game_Game2BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,32.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Game2Round">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_67}"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Game2Time">
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_68}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="DoublePlay_Game_Game2Question">
+        <Property Name="UnifiedSize" Value="{{1.000000,-26.000000},{0.000000,110.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,62.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Game2Image1">
+          <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,80.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-90.000000},{0.000000,2.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_DD"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Game2Image1Get">
+          <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,58.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.000000,2.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_yihuode"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Game2Image1_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,74.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-90.000000},{0.000000,20.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_BKHover"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Game2Get1">
+          <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-86.000000},{1.000000,-22.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_WanCheng"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Game2Image2">
+          <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,80.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,22.000000},{0.000000,2.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_DDLJ"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Game2Image2Get">
+          <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,58.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,76.000000},{0.000000,2.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_yihuode"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Game2Image2_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,74.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_BKHover"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Game2Get2">
+          <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,12.000000},{0.000000,38.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Visible" Value="False"/>
+          <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_WanCheng"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Game2Rank">
+        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,180.000000}}"/>
+        <Property Name="Text" Value="#{SRWF_230329_213}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Game2Num">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.000000,180.000000}}"/>
+        <Property Name="Text" Value="#{SRWF_230329_54}"/>
+        <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="DoublePlay_Game_Game2RankInfo">
+        <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-44.000000}}"/>
+        <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Details_Pushed"/>
+        <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Details_Normal"/>
+        <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Details_Hover"/>
+        <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Details_Disabled"/>
+        <Event Name="Clicked" Function="DoublePlay_Game_GameRankInfo_Click()"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_MainFrame_Affection2" Name="DoublePlay_Game_Game3">
+      <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,220.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_DragTitle" Name="DoublePlay_Game_Game3DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,10.000000}}"/>
+        <Property Name="DragTarget" Value="DoublePlay_Game_Frame" />
+        <Property Name="Font" Value="YouYuan11.25"/>
+        <Property Name="Text" Value="#{SRWF_230329_73}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+      <Window Type="TLBB_Affection_TimeBK" Name="DoublePlay_Game_Game3BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,32.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Game3Round">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_67}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Game3Time">
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{SRWF_230329_68}"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="DoublePlay_Game_Game3Question">
+        <Property Name="UnifiedSize" Value="{{0.000000,274.000000},{0.000000,110.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-137.000000},{0.000000,62.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Game3Image1">
+          <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,110.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:DoubleGame02 image:DoubleGame_jiguanhouzi"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Game3Image2">
+          <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,110.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:DoubleGame02 image:DoubleGame_huohai"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Game3Image3">
+          <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,110.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:DoubleGame02 image:DoubleGame_anqixianjing"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Game3Rank">
+        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,180.000000}}"/>
+        <Property Name="Text" Value="#{SRWF_230329_213}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Game3Num">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.000000,180.000000}}"/>
+        <Property Name="Text" Value="#{SRWF_230329_54}"/>
+        <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="DoublePlay_Game_Game3RankInfo">
+        <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-44.000000}}"/>
+        <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Details_Pushed"/>
+        <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Details_Normal"/>
+        <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Details_Hover"/>
+        <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Details_Disabled"/>
+        <Event Name="Clicked" Function="DoublePlay_Game_GameRankInfo_Click()"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_Frame2" Name="DoublePlay_Game_Rank">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,130.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,204.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Window Type="TLBB_Affection_MultiColumnList" Name="DoublePlay_Game_RankTitleBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+        <Property Name="ForceHorzScrollbar" Value="False" />
+        <Property Name="SortSettingEnabled" Value="False" />
+        <Property Name="SelectionMode" Value="RowSingle" />
+        <Property Name="ColumnHeader" Value="text: width:0.2 id:0" />
+        <Property Name="ColumnHeader" Value="text: width:0.2 id:1" />
+        <Property Name="ColumnHeader" Value="text: width:0.4 id:2" />
+        <Property Name="ColumnHeader" Value="text: width:0.2 id:3" />
+        <Property Name="ColumnsSizable" Value="False" />
+        <Property Name="ColumnsMovable" Value="False" />
+        <Property Name="ColumnsAdjust" Value="True" />
+          <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_RankTitle1">
+            <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+            <Property Name="Text" Value="名次"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_RankTitle2">
+            <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.200000,0.000000},{0.000000,2.000000}}"/>
+            <Property Name="Text" Value="队伍"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_RankTitle3">
+            <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.400000,0.000000},{0.000000,2.000000}}"/>
+            <Property Name="Text" Value="积分"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_RankTitle4">
+            <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.000000,2.000000}}"/>
+            <Property Name="Text" Value="状态"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Rank1">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,22.000000}}"/>
+        <Window Type="TLBB_Affection_ListLineSelected" Name="DoublePlay_Game_Rank1Line2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="HorzStretched"/>
+        </Window>
+        <Window Type="TLBB_Affection_ListLine" Name="DoublePlay_Game_Rank1Line">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,13.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-13.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="HorzStretched"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank1Text1">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="名次"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank1Text2">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.200000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="队伍"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank1Text3">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.400000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="积分"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank1Text3_2">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="积分"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank1Text4">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="状态"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Rank2">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,44.000000}}"/>
+        <Window Type="TLBB_Affection_ListLineSelected" Name="DoublePlay_Game_Rank2Line2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="HorzStretched"/>
+        </Window>
+        <Window Type="TLBB_Affection_ListLine" Name="DoublePlay_Game_Rank2Line">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,13.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-13.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="HorzStretched"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank2Text1">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="名次"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank2Text2">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.200000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="队伍"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank2Text3">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.400000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="积分"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank2Text3_2">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="积分"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank2Text4">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="状态"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Rank3">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,66.000000}}"/>
+        <Window Type="TLBB_Affection_ListLineSelected" Name="DoublePlay_Game_Rank3Line2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="HorzStretched"/>
+        </Window>
+        <Window Type="TLBB_Affection_ListLine" Name="DoublePlay_Game_Rank3Line">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,13.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-13.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="HorzStretched"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank3Text1">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="名次"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank3Text2">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.200000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="队伍"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank3Text3">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.400000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="积分"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank3Text3_2">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="积分"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank3Text4">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="状态"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Rank4">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,88.000000}}"/>
+        <Window Type="TLBB_Affection_ListLineSelected" Name="DoublePlay_Game_Rank4Line2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="HorzStretched"/>
+        </Window>
+        <Window Type="TLBB_Affection_ListLine" Name="DoublePlay_Game_Rank4Line">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,13.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-13.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="HorzStretched"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank4Text1">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="名次"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank4Text2">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.200000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="队伍"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank4Text3">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.400000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="积分"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank4Text3_2">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="积分"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank4Text4">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="状态"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DoublePlay_Game_Rank5">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,110.000000}}"/>
+        <Window Type="TLBB_Affection_ListLineSelected" Name="DoublePlay_Game_Rank5Line2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="HorzStretched"/>
+        </Window>
+        <Window Type="TLBB_Affection_ListLine" Name="DoublePlay_Game_Rank5Line">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,13.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-13.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="HorzStretched"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank5Text1">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="名次"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank5Text2">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.200000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="队伍"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank5Text3">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.400000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="积分"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank5Text3_2">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="积分"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePlay_Game_Rank5Text4">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="状态"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

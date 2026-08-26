@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame_Affection1" Name="Biwuzhaoqin_appearance_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,290.000000},{0.000000,380.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-145.000000},{0.000000,150.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Hidden" Function="Biwuzhaoqin_appearance_OnClose();" />
+        <Window Type="TLBB_TitleLace_Affection1" Name="Biwuzhaoqin_appearance_DragTitleBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-90.000000},{0.000000,11.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_DragTitle" Name="Biwuzhaoqin_appearance_PageHeader_Name">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="Font" Value="YouYuan11.25" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="Text" Value="#{BWZQ_20230329_305}" />
+            <Property Name="DragTarget" Value="Biwuzhaoqin_appearance_Frame" />
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="Biwuzhaoqin_appearance_Help">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Biwuzhaoqin_appearance&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="Biwuzhaoqin_appearance_Button_Close">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Event Name="Clicked" Function="Biwuzhaoqin_appearance_OnClose();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="Biwuzhaoqin_appearance_Client">
+            <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+            <Window Type="TLBB_Frame_Lace4" Name="Biwuzhaoqin_appearance_Watch">
+                <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{1.000000,-4.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,2.000000}}"/>
+                <Window Type="TLBB_FramePlayerOther" Name="Biwuzhaoqin_appearance_Watch_Client">
+                    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Window Type="TLBB_MeshWindow" Name="Biwuzhaoqin_appearance_FakeObject">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="MouseHollow" Value="True" />
+                        <Property Name="ShowControl" Value="Biwuzhaoqin_appearance_Frame" />
+                    </Window>
+                    <Window Type="TLBB_ButtonTurnLeft" Name="Biwuzhaoqin_appearance_Model_TurnLeft">
+                        <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}" />
+                        <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{1.000000,-35.000000}}"/>
+                        <Event Name="MouseButtonDown" Function="Biwuzhaoqin_appearance_TurnLeft(1)" />
+                        <Event Name="MouseButtonUp" Function="Biwuzhaoqin_appearance_TurnLeft(0)" />
+                        <Event Name="CaptureLost" Function="Biwuzhaoqin_appearance_TurnLeft(0);"/>
+                    </Window>
+                    <Window Type="TLBB_ButtonTurnRight" Name="Biwuzhaoqin_appearance_Model_TurnRight">
+                        <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-65.000000},{1.000000,-35.000000}}"/>
+                        <Event Name="MouseButtonDown" Function="Biwuzhaoqin_appearance_TurnRight(1)" />
+                        <Event Name="MouseButtonUp" Function="Biwuzhaoqin_appearance_TurnRight(0)" />
+                        <Event Name="CaptureLost" Function="Biwuzhaoqin_appearance_TurnRight(0);"/>
+                    </Window>
+                    <Window Type="TLBB_ButtonAdd" Name="Biwuzhaoqin_appearance_Model_Plus">
+                        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,-30.000000}}"/>
+                        <Event Name="Clicked" Function="Biwuzhaoqin_appearance_ZoomIn();"/>
+                    </Window>
+                    <Window Type="TLBB_ButtonSub" Name="NBiwuzhaoqin_appearance_Model_Subtract">
+                        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.500000,40.000000}}"/>
+                        <Event Name="Clicked" Function="Biwuzhaoqin_appearance_ZoomOut();"/>
+                    </Window>
+
+                </Window>
+                <Window Type="TLBB_ComplexWindow" Name="Biwuzhaoqin_appearance_Desc">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{1.000000,-46.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,6.000000}}"/>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

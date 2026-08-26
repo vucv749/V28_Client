@@ -1,0 +1,111 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection1" Name="ShuYou_DressBox_Frame_BK">
+    <Property Name="UnifiedSize" Value="{{0.000000,780.000000},{0.000000,500.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-390.000000},{0.500000,-250.000000}}"/>
+    <Event Name="Hidden" Function="ShuYou_DressBox_OnHidden();"/>
+    <Window Type="TLBB_DragTitle" Name="ShuYou_DressBox_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{SXZL_032901_151}"/>
+      <Property Name="DragTarget" Value="ShuYou_DressBox_Frame_BK"/>
+    </Window>
+    <Window Type="TLBB_TitleLace_Affection0" Name="ShuYou_DressBox_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,31.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="ShuYou_DressBox_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="ShuYou_DressBox_Help();"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="ShuYou_DressBox_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="ShuYou_DressBox_Close();"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="ShuYou_DressBox_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+
+      <Window Type="DefaultWindow" Name="ShuYou_DressBoxBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="ShuYou_DressBoxBK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,768.000000},{0.000000,440.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:SYZL image:SYZL_SZBK"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShuYou_DressBox_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+        <Property Name="Text" Value="#{SXZL_032901_168}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="ShuYou_DressBox_ItemBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,166.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,415.000000},{0.000000,230.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="ShuYou_DressBox_Item1">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.500000,-36.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ShuYou_DressBox_Item1_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ShuYou_DressBox_Item2">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-66.000000},{0.500000,-36.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ShuYou_DressBox_Item2_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShuYou_DressBox_Item1_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,-10.000000},{1.000000,-66.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{SXZL_032901_154}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShuYou_DressBox_Item2_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-116.000000},{1.000000,-66.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{SXZL_032901_155}"/>
+        </Window>
+        <Window Type="TLBB_Affection_ButtonCommon" Name="ShuYou_DressBox_Item1_Get">
+          <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,25.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{1.000000,-40.000000}}"/>
+          <Property Name="Tooltip" Value="#{}"/>
+          <Property Name="Text" Value="#{SXZL_032901_156}"/>
+          <Event Name="Clicked" Function="ShuYou_DressBox_ItemGet_Clicked(1);"/>
+        </Window>
+        <Window Type="TLBB_Affection_ButtonCommon" Name="ShuYou_DressBox_Item2_Get">
+          <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,25.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{1.000000,-40.000000}}"/>
+          <Property Name="Tooltip" Value="#{}"/>
+          <Property Name="Text" Value="#{SXZL_032901_157}"/>
+          <Event Name="Clicked" Function="ShuYou_DressBox_ItemGet_Clicked(2);"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

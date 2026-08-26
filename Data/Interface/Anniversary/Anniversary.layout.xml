@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="Anniversary_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,654.000000},{0.000000,474.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-327.000000},{0.500000,-237.000000}}"/>
+    <Event Name="Hidden" Function="Anniversary_OnClose();"/> 
+    <Window Type="TLBB_DragTitle" Name="Anniversary_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+      <Property Name="DragTarget" Value="Anniversary_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Text" Value="#{WYCJ_20240320_7}" />
+    </Window>
+    <Window Type="TLBB_HeroTitle01" Name="Anniversary_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,314.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-157.500000},{0.000000,-2.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose2" Name="Anniversary_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,9.000000}}"/>
+      <Event Name="Clicked" Function="Anniversary_OnClose()" />
+    </Window>
+    <Window Type="TLBB_HeroLace01" Name="Anniversary_ClientBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+    </Window>
+    <Window Type="TLBB_Frame_Lace1" Name="Anniversary_UpBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-37.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,30.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>     
+      <Window Type="TLBB_ButtonFenYe7" Name="Anniversary_CheckButton1">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,10.000000}}"/>
+        <Property Name="Text" Value="#{WYCJ_20240320_52}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="MouseLButtonDown" Function="Anniversary_PageClicked(1)"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Anniversary_CheckButton1_Tips">
+        <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,77.000000},{0.000000,6.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonFenYe7" Name="Anniversary_CheckButton2">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,94.000000},{0.000000,10.000000}}"/>
+        <Property Name="Text" Value="#{WYCJ_20240320_53}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="MouseLButtonDown" Function="Anniversary_PageClicked(2)"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Anniversary_CheckButton2_Tips">
+        <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,165.000000},{0.000000,6.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonFenYe7" Name="Anniversary_CheckButton3">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,182.000000},{0.000000,10.000000}}"/>
+        <Property Name="Text" Value="#{WYCJ_20240320_54}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="MouseLButtonDown" Function="Anniversary_PageClicked(3)"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Anniversary_CheckButton3_Tips">
+        <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,253.000000},{0.000000,6.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="Anniversary_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-18.000000},{0.000000,401.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,64.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_StaticImageNULL" Name="Anniversary_Left_Image">
+        <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,401.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>            
+        <Property Name="Image" Value="set:Anniversary06 image:Anniversary06_BK1"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Anniversary_Right_Image1">
+        <Property Name="UnifiedSize" Value="{{0.000000,124.000000},{0.000000,401.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Anniversary06 image:Anniversary06_FeiHuangLi"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Anniversary_Text1">
+        <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,71.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,312.000000},{0.000000,30.000000}}"/>
+        <Property Name="Text" Value="#{WYCJ_20240320_8}"/>         
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="Anniversary_BK2">
+        <Property Name="UnifiedSize" Value="{{1.000000,-381.000000},{0.000000,46.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,307.000000},{1.000000,-187.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="Anniversary_BK2_Button1">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Anniversary_BK2_Button2">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.330000,-16.000000},{0.000000,0.000000}}"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Anniversary_BK2_Button3">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.670000,-32.000000},{0.000000,0.000000}}"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Anniversary_BK2_Button4">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-48.000000},{0.000000,0.000000}}"/>
+        </Window>
+      </Window>    
+      <Window Type="TLBB_ButtonHelp" Name="Anniversary_ButtonHelp">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+	    	<Property Name="UnifiedPosition" Value="{{0.500000,242.500000},{1.000000,-309.000000}}"/>
+        <Property Name="PushedImage" Value="set:CommonFrame36 image:ButtonHelpNew_Pushed"/>
+        <Property Name="NormalImage" Value="set:CommonFrame36 image:ButtonHelpNew_Normal"/>
+        <Property Name="HoverImage" Value="set:CommonFrame36 image:ButtonHelpNew_Hover"/>
+        <Property Name="DisabledImage" Value="set:CommonFrame36 image:ButtonHelpNew_Disabled"/>       
+        <Event Name="Clicked" Function="Anniversary_Zidian_HelpClicked()"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>   
+      <Window Type="DefaultWindow" Name="Anniversary_ClientBottom">
+        <Property Name="UnifiedSize" Value="{{1.000000,-320.000000},{1.000000,-287.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,279.000000},{0.000000,278.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_FeiHuang" Name="Anniversary_Button">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,28.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-59.000000},{0.000000,63.000000}}"/>
+          <Property Name="Tooltip" Value="#{WYCJ_20240320_15}"/>
+          <Property Name="Text" Value="#{WYCJ_20240320_14}"/>
+          <Event Name="Clicked" Function="Anniversary_Zidian_Clicked()"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Anniversary_Button_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,44.000000},{0.000000,60.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Anniversary_Button_Received">
+          <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.000000,36.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:ZNQ_ChouJiang image:ZNQ_ChouJiang_YLQ_BK"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>                   
+        <Window Type="TLBB_StaticImageNULL" Name="Anniversary_Text2BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,214.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,8.000000},{0.000000,301.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Anniversary06 image:TimeBK"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="Anniversary_Text2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>   
+        </Window>
+
+    </Window>
+  </Window>
+</GUILayout>

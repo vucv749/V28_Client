@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame1" Name="TestFrame_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,580.000000},{0.000000,400.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,150.000000}}"/>
+		<Event Name="Hidden" Function="TestFrame_Close();"/>
+		<Window Type="TLBB_DragTitle" Name="TestFrame_DragTitle">
+			<Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+			<Property Name="DragTarget" Value="TestFrame_Frame"/>
+			<Window Type="TLBB_SimpleText" Name="TestFrame_Title">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+				<Property Name="Font" Value="YouYuan11.25"/>
+				<Property Name="HorzFormatting" Value="HorzCentred"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Property Name="Text" Value="XueWu_Test"/>
+				<Property Name="VertFormatting" Value="VertCentred"/>
+			</Window>
+		</Window>
+		<Window Type="TLBB_ButtonHelp" Name="TestFrame_Help">
+			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+			<Property Name="Text" Value="TLBB_ButtonHelp"/>
+			<Event Name="Clicked" Function='Helper:GotoHelper(&quot;*ChangeMinorPassword&quot;);'/>
+		</Window>
+		<Window Type="TLBB_ButtonClose" Name="TestFrame_Close">
+			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+			<Property Name="Text" Value="TLBB_ButtonClose"/>
+			<Event Name="Clicked" Function="TestFrame_Close();"/>
+		</Window>
+		<Window Type="DefaultWindow" Name="TestFrame_Frame1">
+			<Property Name="UnifiedSize" Value="{{0.000000,570.000000},{0.000000,355.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,29.000000}}"/>
+			
+			<!-- 第一行模型窗口 -->
+			<Window Type="TLBB_MeshWindow" Name="TestFrame_FakeObject_1">
+				<Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,150.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+				<Property Name="MouseHollow" Value="True"/>
+				<Property Name="ShowControl" Value="SelfEquip_Frame"/>
+				<Window Type="TLBB_ButtonTurnLeft" Name="TestFrame_TurnLeft_1">
+					<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.850000,0.000000}}"/>
+					<Event Name="MouseButtonDown" Function="TestFrame_TurnLeft_1(1);"/>
+					<Event Name="MouseButtonUp" Function="TestFrame_TurnLeft_1(0)"/>
+				</Window>
+				<Window Type="TLBB_ButtonTurnRight" Name="TestFrame_TurnRight_1">
+					<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.950000,-20.000000},{0.850000,0.000000}}"/>
+					<Event Name="MouseButtonDown" Function="TestFrame_TurnRight_1(1);"/>
+					<Event Name="MouseButtonUp" Function="TestFrame_TurnRight_1(0)"/>
+				</Window>
+			</Window>
+			
+			<Window Type="TLBB_MeshWindow" Name="TestFrame_FakeObject_2">
+				<Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,150.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,10.000000}}"/>
+				<Property Name="MouseHollow" Value="True"/>
+				<Property Name="ShowControl" Value="SelfEquip_Frame"/>
+				<Window Type="TLBB_ButtonTurnLeft" Name="TestFrame_TurnLeft_2">
+					<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.850000,0.000000}}"/>
+					<Event Name="MouseButtonDown" Function="TestFrame_TurnLeft_2(1);"/>
+					<Event Name="MouseButtonUp" Function="TestFrame_TurnLeft_2(0)"/>
+				</Window>
+				<Window Type="TLBB_ButtonTurnRight" Name="TestFrame_TurnRight_2">
+					<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.950000,-20.000000},{0.850000,0.000000}}"/>
+					<Event Name="MouseButtonDown" Function="TestFrame_TurnRight_2(1);"/>
+					<Event Name="MouseButtonUp" Function="TestFrame_TurnRight_2(0)"/>
+				</Window>
+			</Window>
+			
+			<Window Type="TLBB_MeshWindow" Name="TestFrame_FakeObject_3">
+				<Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,150.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,290.000000},{0.000000,10.000000}}"/>
+				<Property Name="MouseHollow" Value="True"/>
+				<Property Name="ShowControl" Value="SelfEquip_Frame"/>
+				<Window Type="TLBB_ButtonTurnLeft" Name="TestFrame_TurnLeft_3">
+					<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.850000,0.000000}}"/>
+					<Event Name="MouseButtonDown" Function="TestFrame_TurnLeft_3(1);"/>
+					<Event Name="MouseButtonUp" Function="TestFrame_TurnLeft_3(0)"/>
+				</Window>
+				<Window Type="TLBB_ButtonTurnRight" Name="TestFrame_TurnRight_3">
+					<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.950000,-20.000000},{0.850000,0.000000}}"/>
+					<Event Name="MouseButtonDown" Function="TestFrame_TurnRight_3(1);"/>
+					<Event Name="MouseButtonUp" Function="TestFrame_TurnRight_3(0)"/>
+				</Window>
+			</Window>
+			
+			<Window Type="TLBB_MeshWindow" Name="TestFrame_FakeObject_4">
+				<Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,150.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,430.000000},{0.000000,10.000000}}"/>
+				<Property Name="MouseHollow" Value="True"/>
+				<Property Name="ShowControl" Value="SelfEquip_Frame"/>
+				<Window Type="TLBB_ButtonTurnLeft" Name="TestFrame_TurnLeft_4">
+					<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.850000,0.000000}}"/>
+					<Event Name="MouseButtonDown" Function="TestFrame_TurnLeft_4(1);"/>
+					<Event Name="MouseButtonUp" Function="TestFrame_TurnLeft_4(0)"/>
+				</Window>
+				<Window Type="TLBB_ButtonTurnRight" Name="TestFrame_TurnRight_4">
+					<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.950000,-20.000000},{0.850000,0.000000}}"/>
+					<Event Name="MouseButtonDown" Function="TestFrame_TurnRight_4(1);"/>
+					<Event Name="MouseButtonUp" Function="TestFrame_TurnRight_4(0)"/>
+				</Window>
+			</Window>
+			
+			<!-- 第二行模型窗口 -->
+			<Window Type="TLBB_MeshWindow" Name="TestFrame_FakeObject_5">
+				<Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,150.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,170.000000}}"/>
+				<Property Name="MouseHollow" Value="True"/>
+				<Property Name="ShowControl" Value="SelfEquip_Frame"/>
+				<Window Type="TLBB_ButtonTurnLeft" Name="TestFrame_TurnLeft_5">
+					<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.850000,0.000000}}"/>
+					<Event Name="MouseButtonDown" Function="TestFrame_TurnLeft_5(1);"/>
+					<Event Name="MouseButtonUp" Function="TestFrame_TurnLeft_5(0)"/>
+				</Window>
+				<Window Type="TLBB_ButtonTurnRight" Name="TestFrame_TurnRight_5">
+					<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.950000,-20.000000},{0.850000,0.000000}}"/>
+					<Event Name="MouseButtonDown" Function="TestFrame_TurnRight_5(1);"/>
+					<Event Name="MouseButtonUp" Function="TestFrame_TurnRight_5(0)"/>
+				</Window>
+			</Window>
+			
+			<Window Type="TLBB_MeshWindow" Name="TestFrame_FakeObject_6">
+				<Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,150.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,170.000000}}"/>
+				<Property Name="MouseHollow" Value="True"/>
+				<Property Name="ShowControl" Value="SelfEquip_Frame"/>
+				<Window Type="TLBB_ButtonTurnLeft" Name="TestFrame_TurnLeft_6">
+					<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.850000,0.000000}}"/>
+					<Event Name="MouseButtonDown" Function="TestFrame_TurnLeft_6(1);"/>
+					<Event Name="MouseButtonUp" Function="TestFrame_TurnLeft_6(0)"/>
+				</Window>
+				<Window Type="TLBB_ButtonTurnRight" Name="TestFrame_TurnRight_6">
+					<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.950000,-20.000000},{0.850000,0.000000}}"/>
+					<Event Name="MouseButtonDown" Function="TestFrame_TurnRight_6(1);"/>
+					<Event Name="MouseButtonUp" Function="TestFrame_TurnRight_6(0)"/>
+				</Window>
+			</Window>
+			
+			<Window Type="TLBB_MeshWindow" Name="TestFrame_FakeObject_7">
+				<Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,150.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,290.000000},{0.000000,170.000000}}"/>
+				<Property Name="MouseHollow" Value="True"/>
+				<Property Name="ShowControl" Value="SelfEquip_Frame"/>
+				<Window Type="TLBB_ButtonTurnLeft" Name="TestFrame_TurnLeft_7">
+					<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.850000,0.000000}}"/>
+					<Event Name="MouseButtonDown" Function="TestFrame_TurnLeft_7(1);"/>
+					<Event Name="MouseButtonUp" Function="TestFrame_TurnLeft_7(0)"/>
+				</Window>
+				<Window Type="TLBB_ButtonTurnRight" Name="TestFrame_TurnRight_7">
+					<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.950000,-20.000000},{0.850000,0.000000}}"/>
+					<Event Name="MouseButtonDown" Function="TestFrame_TurnRight_7(1);"/>
+					<Event Name="MouseButtonUp" Function="TestFrame_TurnRight_7(0)"/>
+				</Window>
+			</Window>
+			
+			<Window Type="TLBB_MeshWindow" Name="TestFrame_FakeObject_8">
+				<Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,150.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,430.000000},{0.000000,170.000000}}"/>
+				<Property Name="MouseHollow" Value="True"/>
+				<Property Name="ShowControl" Value="SelfEquip_Frame"/>
+				<Window Type="TLBB_ButtonTurnLeft" Name="TestFrame_TurnLeft_8">
+					<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.850000,0.000000}}"/>
+					<Event Name="MouseButtonDown" Function="TestFrame_TurnLeft_8(1);"/>
+					<Event Name="MouseButtonUp" Function="TestFrame_TurnLeft_8(0)"/>
+				</Window>
+				<Window Type="TLBB_ButtonTurnRight" Name="TestFrame_TurnRight_8">
+					<Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.950000,-20.000000},{0.850000,0.000000}}"/>
+					<Event Name="MouseButtonDown" Function="TestFrame_TurnRight_8(1);"/>
+					<Event Name="MouseButtonUp" Function="TestFrame_TurnRight_8(0)"/>
+				</Window>
+			</Window>
+	
+			<Window Type="TLBB_Frame_Lace5" Name="TestFrame_Blank">
+				<Property Name="UnifiedSize" Value="{{0.000000,450.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,330.000000}}"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="TestFrame_Accept">
+				<Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,329.000000},{0.000000,330.000000}}"/>
+				<Property Name="Text" Value="#{ZXD_20120406_09}"/>
+				<Event Name="Clicked" Function="TestFrame_Accept_Clicked();"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="TestFrame_Cancel">
+				<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,394.000000},{0.000000,330.000000}}"/>
+				<Property Name="Text" Value="#{INTERFACE_XML_1059}"/>
+				<Event Name="Clicked" Function="TestFrame_Close();"/>
+			</Window>
+
+		</Window>
+	</Window>
+</GUILayout>

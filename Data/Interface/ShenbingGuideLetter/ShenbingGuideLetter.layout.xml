@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="ShenbingGuideLetter_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,620.000000},{0.000000,510.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-310.000000},{0.500000,-255.500000}}"/>
+    <Window Type="TLBB_DragTitle" Name="ShenbingGuideLetter_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:100.000000 y:35.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-190.000000},{0.000000,34.000000}" />
+      <Property Name="DragTarget" Value="ShenbingGuideLetter_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="ShenbingGuideLetter_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-75.000000},{0.000000,26.000000}}"/>
+      <Property Name="PushedImage" Value="set:NewZhuXian_Task image:NewZhuXian_ClosePush"/>
+      <Property Name="NormalImage" Value="set:NewZhuXian_Task image:NewZhuXian_CloseNor"/>
+      <Property Name="HoverImage" Value="set:NewZhuXian_Task image:NewZhuXian_CloseHover"/>
+      <Property Name="DisabledImage" Value="set:NewZhuXian_Task image:NewZhuXian_ClosePush"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="ShenbingGuideLetter_OnHiden();" />
+    </Window>
+    <Window Type="TLBB_ButtonCheckNULL" Name="ShenbingGuideLetter_Btn1">
+      <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,116.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,47.000000}}"/>
+      <Property Name="PushedImage" Value="set:ShenbingGuide image:QRYD_N"/>
+      <Property Name="NormalImage" Value="set:ShenbingGuide image:QRYD_P"/>
+      <Property Name="HoverImage" Value="set:ShenbingGuide image:QRYD_H"/>
+      <Property Name="CheckMode" Value="1"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Tooltip" Value="#{SQYD_230802_115}"/>
+      <Event Name="Clicked" Function="ShenbingGuideLetter_OnFenYeClicked(1);"/>
+    </Window>
+    <Window Type="TLBB_ButtonCheckNULL" Name="ShenbingGuideLetter_Btn2">
+      <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,116.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,170.000000}}"/>
+      <Property Name="PushedImage" Value="set:ShenbingGuide image:QQWS_N"/>
+      <Property Name="NormalImage" Value="set:ShenbingGuide image:QQWS_P"/>
+      <Property Name="HoverImage" Value="set:ShenbingGuide image:QQWS_H"/>
+      <Property Name="DisabledImage" Value="set:ShenbingGuide image:QQWS_S"/>
+
+      <Property Name="CheckMode" Value="1"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Tooltip" Value="#{SQYD_230802_116}"/>
+      <Event Name="Clicked" Function="ShenbingGuideLetter_OnFenYeClicked(2);"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="ShenbingGuideLetter_background_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,564.000000},{0.000000,518.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="Image" Value="set:ShenbingGuide image:LetterBK"/>
+      <Window Type="TLBB_StaticImageNULL" Name="ShenbingGuideLetter_background1">
+        <Property Name="UnifiedSize" Value="{{0.000000,382.000000},{0.000000,398.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,108.000000},{0.000000,68.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:ShenbingGuide image:Letter_zts"/>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="ShenbingGuideLetter_Function_Frame">
+      <Property Name="AbsolutePosition" Value="x:94.000000 y:48.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-200.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_ButtonNULL" Name="ShenbingGuideLetter_QianWang">
+        <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,170.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{1.000000,-182.000000}}"/>
+        <Property Name="PushedImage" Value="set:ShenbingGuide image:XRFY_P"/>
+        <Property Name="NormalImage" Value="set:ShenbingGuide image:XRFY_N"/>
+        <Property Name="HoverImage" Value="set:ShenbingGuide image:XRFY_H"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="ShenbingGuideLetter_Clicked()" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="ShenbingGuideLetter_QianWang2">
+        <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,154.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{1.000000,-178.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:WangQianChen image:Go_Pushed"/>
+        <Property Name="NormalImage" Value="set:WangQianChen image:Go_Normal"/>
+        <Property Name="HoverImage" Value="set:WangQianChen image:Go_Hover"/>
+        <Property Name="DisabledImage" Value="set:WangQianChen image:Go_Disabled"/>
+        <Event Name="Clicked" Function="ShenbingGuideLetter_MengQianChenClicked()" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

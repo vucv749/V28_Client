@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="PaoShangQuickly_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,60.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{1.000000,-326.000000},{0.000000,250.000000}}" />
+    <Window Type="TLBB_ButtonCheckNULL" Name="PaoShangQuickly_Mache_But">
+      <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,36.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,-2.000000}}" />
+      <Property Name="PushedImage" Value="set:PaoShang2 image:mache_ButtonPushed" />
+      <Property Name="NormalImage" Value="set:PaoShang2 image:mache_ButtonNormal" />
+      <Property Name="HoverImage" Value="set:PaoShang2 image:mache_ButtonHover" />
+      <Property Name="DisabledImage" Value="set:PaoShang2 image:mache_ButtonDisable" />
+      <Event Name="Clicked" Function="PaoShangQuickly_ShowDetail()" />
+    </Window>
+    <Window Type="TLBB_ButtonCheckNULL" Name="PaoShangQuickly_But1">
+      <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,26.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,3.000000}}" />
+      <Property Name="PushedImage" Value="set:PaoShang2 image:MainInterfaceL_Pushed" />
+      <Property Name="NormalImage" Value="set:PaoShang2 image:MainInterfaceL_Normal" />
+      <Property Name="HoverImage" Value="set:PaoShang2 image:MainInterfaceL_Hover" />
+      <Property Name="DisabledImage" Value="" />
+      <Event Name="Clicked" Function="PaoShangQuickly_ShowDetail()" />
+    </Window>
+    <Window Type="TLBB_Frame_Lace4" Name="PaoShangQuickly_BK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-31.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,31.000000}}" />
+      <Property Name="RiseOnClick" Value="False" />
+    </Window>
+    <Window Type="TLBB_StopWatch" Name="PaoShangQuickly_StopWatch">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-31.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,31.000000}}" />
+      <Property Name="Text" Value="00:00" />
+      <Property Name="MouseRButtonHollow" Value="True" />
+      <Property Name="MouseMoveHollow" Value="True" />
+      <Property Name="MouseLButtonHollow" Value="True" />
+      <Property Name="MouseHollow" Value="True" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="HorzFormatting" Value="WordWrapCentred" />
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,954 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame_Affection0" Name="Makefriends_Settlement_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,396.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.500000,-198.000000}}"/>
+        <Event Name="Hidden" Function="Makefriends_Settlement_OnHiden();" />
+        <Window Type="TLBB_TitleLace_Affection0" Name="Makefriends_Settlement_DragTitleBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,31.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_DragTitle" Name="Makefriends_Settlement_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:12.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="Text" Value="#{JYHD_230331_178}"/>
+            <Property Name="Font" Value="YouYuan11.25"/>
+            <Property Name="DragTarget" Value="Makefriends_Settlement_Frame" />
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="Makefriends_Settlement_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+            <Property Name="Text" Value="TLBB_ButtonHelp"/>
+            <Event Name="Clicked" Function="Helper:GotoHelper('*Makefriends_Settlement');"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="Makefriends_Settlement_Close">
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,12.000000}}"/>
+            <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+            <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+            <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+            <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>
+            <Event Name="Clicked" Function="Makefriends_Settlement_Close();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="Makefriends_Settlement_Frame_Client">
+            <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,50.000000}}"/>
+            <Property Name="RiseOnClick" Value="False" />
+
+            <Window Type="DefaultWindow" Name="Makefriends_Settlement_Info2_Frame">
+                <Property Name="UnifiedSize" Value="{{1.000000,-46.000000},{1.000000,-140.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,23.000000},{0.000000,100.000000}}"/>
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="DefaultWindow" Name="Makefriends_Settlement_Info2_FrameBK1">
+                    <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{1.000000,-10.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Window Type="DefaultWindow" Name="Makefriends_Settlement_Number_InfoBK1">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                        <Window Type="TLBB_Affection_ListLine" Name="Makefriends_Settlement_Number_ItemLine1">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,13.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-13.000000}}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                            <Property Name="HorzFormatting" Value="HorzStretched"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Info2">
+                            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set: Button8 image:IM_M_Online"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Makefriends_Settlement_Info3">
+                            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,8.000000}}"/>
+                            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                        </Window>
+                        <Window Type="TLBB_ButtonNULL" Name="Makefriends_Settlement_Good1">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,8.000000}}"/>
+                            <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Like_Pushed"/>
+                            <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Like_Normal"/>
+                            <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Like_Hover"/>
+                            <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Like_Disabled"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                            <Event Name="Clicked" Function="Makefriends_Settlement_Good(1);"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Good1_Null">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:DZ"/>
+                        </Window>
+                    </Window>
+                    <Window Type="DefaultWindow" Name="Makefriends_Settlement_Number_InfoBK2">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,35.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                        <Window Type="TLBB_Affection_ListLine" Name="Makefriends_Settlement_Number_ItemLine2">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,13.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-13.000000}}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Info4">
+                            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set: Button8 image:IM_F_Online"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Makefriends_Settlement_Info5">
+                            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,8.000000}}"/>
+                            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                        </Window>
+                        <Window Type="TLBB_ButtonNULL" Name="Makefriends_Settlement_Good2">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,8.000000}}"/>
+                            <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Like_Pushed"/>
+                            <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Like_Normal"/>
+                            <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Like_Hover"/>
+                            <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Like_Disabled"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                            <Event Name="Clicked" Function="Makefriends_Settlement_Good(2);"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Good2_Null">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:DZ"/>
+                        </Window>
+                    </Window>
+                    <Window Type="DefaultWindow" Name="Makefriends_Settlement_Number_InfoBK3">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,65.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                        <Window Type="TLBB_Affection_ListLine" Name="Makefriends_Settlement_Number_ItemLine3">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,13.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-13.000000}}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Info6">
+                            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:SB"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Makefriends_Settlement_Info7">
+                            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,8.000000}}"/>
+                            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                        </Window>
+                        <Window Type="TLBB_ButtonNULL" Name="Makefriends_Settlement_Good3">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,8.000000}}"/>
+                            <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Like_Pushed"/>
+                            <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Like_Normal"/>
+                            <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Like_Hover"/>
+                            <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Like_Disabled"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                            <Event Name="Clicked" Function="Makefriends_Settlement_Good(3);"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Good3_Null">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:DZ"/>
+                        </Window>
+                    </Window>
+                    <Window Type="DefaultWindow" Name="Makefriends_Settlement_Number_InfoBK4">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,95.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                        <Window Type="TLBB_Affection_ListLine" Name="Makefriends_Settlement_Number_ItemLine4">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,13.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-13.000000}}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                        </Window>
+
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Info8">
+                            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:SB"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Makefriends_Settlement_Info9">
+                            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,8.000000}}"/>
+                            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                        </Window>
+                        <Window Type="TLBB_ButtonNULL" Name="Makefriends_Settlement_Good4">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,8.000000}}"/>
+                            <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Like_Pushed"/>
+                            <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Like_Normal"/>
+                            <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Like_Hover"/>
+                            <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Like_Disabled"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                            <Event Name="Clicked" Function="Makefriends_Settlement_Good(4);"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Good4_Null">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:DZ"/>
+                        </Window>
+                    </Window>
+                    <Window Type="DefaultWindow" Name="Makefriends_Settlement_Number_InfoBK5">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,125.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                        <Window Type="TLBB_Affection_ListLine" Name="Makefriends_Settlement_Number_ItemLine5">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,13.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-13.000000}}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Info10">
+                            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:SB"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Makefriends_Settlement_Info11">
+                            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,8.000000}}"/>
+                            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                        </Window>
+                        <Window Type="TLBB_ButtonNULL" Name="Makefriends_Settlement_Good5">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,8.000000}}"/>
+                            <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Like_Pushed"/>
+                            <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Like_Normal"/>
+                            <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Like_Hover"/>
+                            <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Like_Disabled"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                            <Event Name="Clicked" Function="Makefriends_Settlement_Good(5);"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Good5_Null">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:DZ"/>
+                        </Window>
+                    </Window>
+                    <Window Type="DefaultWindow" Name="Makefriends_Settlement_Number_InfoBK6">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,155.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                        <Window Type="TLBB_Affection_ListLine" Name="Makefriends_Settlement_Number_ItemLine6">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,13.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-13.000000}}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                        </Window>
+
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Info12">
+                            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:SB"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Makefriends_Settlement_Info13">
+                            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,8.000000}}"/>
+                            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                        </Window>
+                        <Window Type="TLBB_ButtonNULL" Name="Makefriends_Settlement_Good6">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,8.000000}}"/>
+                            <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Like_Pushed"/>
+                            <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Like_Normal"/>
+                            <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Like_Hover"/>
+                            <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Like_Disabled"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                            <Event Name="Clicked" Function="Makefriends_Settlement_Good(6);"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Good6_Null">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:DZ"/>
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Type="DefaultWindow" Name="Makefriends_Settlement_Info2_FrameBK2">
+                    <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{1.000000,-10.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,0.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Window Type="DefaultWindow" Name="Makefriends_Settlement_Number_InfoBK7">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                        <Window Type="TLBB_Affection_ListLine" Name="Makefriends_Settlement_Number_ItemLine7">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,13.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-13.000000}}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                            <Property Name="HorzFormatting" Value="HorzStretched"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Info14">
+                            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:SB"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Makefriends_Settlement_Info15">
+                            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,8.000000}}"/>
+                            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                        </Window>
+                        <Window Type="TLBB_ButtonNULL" Name="Makefriends_Settlement_Good7">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,8.000000}}"/>
+                            <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Like_Pushed"/>
+                            <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Like_Normal"/>
+                            <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Like_Hover"/>
+                            <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Like_Disabled"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                            <Event Name="Clicked" Function="Makefriends_Settlement_Good(7);"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Good7_Null">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:DZ"/>
+                        </Window>
+                    </Window>
+                    <Window Type="DefaultWindow" Name="Makefriends_Settlement_Number_InfoBK8">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,35.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                        <Window Type="TLBB_Affection_ListLine" Name="Makefriends_Settlement_Number_ItemLine8">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,13.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-13.000000}}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Info16">
+                            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:SB"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Makefriends_Settlement_Info17">
+                            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,8.000000}}"/>
+                            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                        </Window>
+                        <Window Type="TLBB_ButtonNULL" Name="Makefriends_Settlement_Good8">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,8.000000}}"/>
+                            <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Like_Pushed"/>
+                            <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Like_Normal"/>
+                            <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Like_Hover"/>
+                            <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Like_Disabled"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                            <Event Name="Clicked" Function="Makefriends_Settlement_Good(8);"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Good8_Null">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:DZ"/>
+                        </Window>
+                    </Window>
+                    <Window Type="DefaultWindow" Name="Makefriends_Settlement_Number_InfoBK9">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,65.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                        <Window Type="TLBB_Affection_ListLine" Name="Makefriends_Settlement_Number_ItemLine9">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,13.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-13.000000}}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Info18">
+                            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:SB"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Makefriends_Settlement_Info19">
+                            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,8.000000}}"/>
+                            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                        </Window>
+                        <Window Type="TLBB_ButtonNULL" Name="Makefriends_Settlement_Good9">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,8.000000}}"/>
+                            <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Like_Pushed"/>
+                            <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Like_Normal"/>
+                            <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Like_Hover"/>
+                            <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Like_Disabled"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                            <Event Name="Clicked" Function="Makefriends_Settlement_Good(9);"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Good9_Null">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:DZ"/>
+                        </Window>
+                    </Window>
+                    <Window Type="DefaultWindow" Name="Makefriends_Settlement_Number_InfoBK10">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,95.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                        <Window Type="TLBB_Affection_ListLine" Name="Makefriends_Settlement_Number_ItemLine10">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,13.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-13.000000}}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                        </Window>
+
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Info20">
+                            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:SB"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Makefriends_Settlement_Info21">
+                            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,8.000000}}"/>
+                            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                        </Window>
+                        <Window Type="TLBB_ButtonNULL" Name="Makefriends_Settlement_Good10">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,8.000000}}"/>
+                            <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Like_Pushed"/>
+                            <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Like_Normal"/>
+                            <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Like_Hover"/>
+                            <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Like_Disabled"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                            <Event Name="Clicked" Function="Makefriends_Settlement_Good(10);"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Good10_Null">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:DZ"/>
+                        </Window>
+                    </Window>
+                    <Window Type="DefaultWindow" Name="Makefriends_Settlement_Number_InfoBK11">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,125.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                        <Window Type="TLBB_Affection_ListLine" Name="Makefriends_Settlement_Number_ItemLine11">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,13.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-13.000000}}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Info22">
+                            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:SB"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Makefriends_Settlement_Info23">
+                            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,8.000000}}"/>
+                            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                        </Window>
+                        <Window Type="TLBB_ButtonNULL" Name="Makefriends_Settlement_Good11">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,8.000000}}"/>
+                            <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Like_Pushed"/>
+                            <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Like_Normal"/>
+                            <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Like_Hover"/>
+                            <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Like_Disabled"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                            <Event Name="Clicked" Function="Makefriends_Settlement_Good(11);"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Good11_Null">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:DZ"/>
+                        </Window>
+                    </Window>
+                    <Window Type="DefaultWindow" Name="Makefriends_Settlement_Number_InfoBK12">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,155.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                        <Window Type="TLBB_Affection_ListLine" Name="Makefriends_Settlement_Number_ItemLine12">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,13.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-13.000000}}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                        </Window>
+
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Info24">
+                            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:SB"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Makefriends_Settlement_Info25">
+                            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,8.000000}}"/>
+                            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                        </Window>
+                        <Window Type="TLBB_ButtonNULL" Name="Makefriends_Settlement_Good12">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,8.000000}}"/>
+                            <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Like_Pushed"/>
+                            <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Like_Normal"/>
+                            <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Like_Hover"/>
+                            <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Like_Disabled"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                            <Event Name="Clicked" Function="Makefriends_Settlement_Good(12);"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Good12_Null">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:DZ"/>
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Type="DefaultWindow" Name="Makefriends_Settlement_Info2_FrameBK3">
+                    <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{1.000000,-10.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,380.000000},{0.000000,0.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Window Type="DefaultWindow" Name="Makefriends_Settlement_Number_InfoBK13">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                        <Window Type="TLBB_Affection_ListLine" Name="Makefriends_Settlement_Number_ItemLine13">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,13.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-13.000000}}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                            <Property Name="HorzFormatting" Value="HorzStretched"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Info26">
+                            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:SB"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Makefriends_Settlement_Info27">
+                            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,8.000000}}"/>
+                            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                        </Window>
+                        <Window Type="TLBB_ButtonNULL" Name="Makefriends_Settlement_Good13">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,8.000000}}"/>
+                            <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Like_Pushed"/>
+                            <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Like_Normal"/>
+                            <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Like_Hover"/>
+                            <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Like_Disabled"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                            <Event Name="Clicked" Function="Makefriends_Settlement_Good(13);"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Good13_Null">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:DZ"/>
+                        </Window>
+                    </Window>
+                    <Window Type="DefaultWindow" Name="Makefriends_Settlement_Number_InfoBK14">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,35.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                        <Window Type="TLBB_Affection_ListLine" Name="Makefriends_Settlement_Number_ItemLine14">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,13.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-13.000000}}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Info28">
+                            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:SB"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Makefriends_Settlement_Info29">
+                            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,8.000000}}"/>
+                            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                        </Window>
+                        <Window Type="TLBB_ButtonNULL" Name="Makefriends_Settlement_Good14">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,8.000000}}"/>
+                            <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Like_Pushed"/>
+                            <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Like_Normal"/>
+                            <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Like_Hover"/>
+                            <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Like_Disabled"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                            <Event Name="Clicked" Function="Makefriends_Settlement_Good(14);"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Good14_Null">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:DZ"/>
+                        </Window>
+                    </Window>
+                    <Window Type="DefaultWindow" Name="Makefriends_Settlement_Number_InfoBK15">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,65.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                        <Window Type="TLBB_Affection_ListLine" Name="Makefriends_Settlement_Number_ItemLine15">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,13.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-13.000000}}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Info30">
+                            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:SB"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Makefriends_Settlement_Info31">
+                            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,8.000000}}"/>
+                            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                        </Window>
+                        <Window Type="TLBB_ButtonNULL" Name="Makefriends_Settlement_Good15">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,8.000000}}"/>
+                            <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Like_Pushed"/>
+                            <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Like_Normal"/>
+                            <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Like_Hover"/>
+                            <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Like_Disabled"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                            <Event Name="Clicked" Function="Makefriends_Settlement_Good(15);"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Good15_Null">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:DZ"/>
+                        </Window>
+                    </Window>
+                    <Window Type="DefaultWindow" Name="Makefriends_Settlement_Number_InfoBK16">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,95.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                        <Window Type="TLBB_Affection_ListLine" Name="Makefriends_Settlement_Number_ItemLine16">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,13.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-13.000000}}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                        </Window>
+
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Info32">
+                            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:SB"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Makefriends_Settlement_Info33">
+                            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,8.000000}}"/>
+                            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                        </Window>
+                        <Window Type="TLBB_ButtonNULL" Name="Makefriends_Settlement_Good16">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,8.000000}}"/>
+                            <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Like_Pushed"/>
+                            <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Like_Normal"/>
+                            <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Like_Hover"/>
+                            <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Like_Disabled"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                            <Event Name="Clicked" Function="Makefriends_Settlement_Good(16);"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Good16_Null">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:DZ"/>
+                        </Window>
+                    </Window>
+                    <Window Type="DefaultWindow" Name="Makefriends_Settlement_Number_InfoBK17">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,125.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                        <Window Type="TLBB_Affection_ListLine" Name="Makefriends_Settlement_Number_ItemLine17">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,13.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-13.000000}}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Info34">
+                            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:SB"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Makefriends_Settlement_Info35">
+                            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,8.000000}}"/>
+                            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                        </Window>
+                        <Window Type="TLBB_ButtonNULL" Name="Makefriends_Settlement_Good17">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,8.000000}}"/>
+                            <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Like_Pushed"/>
+                            <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Like_Normal"/>
+                            <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Like_Hover"/>
+                            <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Like_Disabled"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                            <Event Name="Clicked" Function="Makefriends_Settlement_Good(17);"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Good17_Null">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:DZ"/>
+                        </Window>
+                    </Window>
+                    <Window Type="DefaultWindow" Name="Makefriends_Settlement_Number_InfoBK18">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,155.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                        <Window Type="TLBB_Affection_ListLine" Name="Makefriends_Settlement_Number_ItemLine18">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,13.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-13.000000}}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                        </Window>
+
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Info36">
+                            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:SB"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Makefriends_Settlement_Info37">
+                            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,8.000000}}"/>
+                            <Property Name="Text" Value="#{JYHD_230331_109}"/>
+                            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                        </Window>
+                        <Window Type="TLBB_ButtonNULL" Name="Makefriends_Settlement_Good18">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,8.000000}}"/>
+                            <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Like_Pushed"/>
+                            <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Like_Normal"/>
+                            <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Like_Hover"/>
+                            <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Like_Disabled"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                            <Event Name="Clicked" Function="Makefriends_Settlement_Good(18);"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Good18_Null">
+                            <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,10.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:Makefriends image:DZ"/>
+                        </Window>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Makefriends_Settlement_Info3_Frame">
+                <Property Name="UnifiedSize" Value="{{1.000000,-46.000000},{0.000000,94.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Settlement_Info3_Null">
+                    <Property Name="UnifiedSize" Value="{{0.000000,338.000000},{0.000000,69.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-169.000000},{0.000000,0.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Makefriends image:SB"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_Affection_TimeBK" Name="Makefriends_Settlement_Info3_Null2">
+                    <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{1.000000,-30.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+
+                    <Window Type="TLBB_SimpleText" Name="Makefriends_Settlement_Info39">
+                        <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.00000,20.000000},{0.000000,10.000000}}"/>
+                        <Property Name="Text" Value="#{}"/>
+                        <Property Name="HorzFormatting" Value="RightAligned"/>
+                    </Window>
+                    <Window Type="TLBB_StopWatch" Name="Makefriends_Settlement_TimeWatch">
+                        <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,-10.000000},{0.000000,10.000000}}"/>
+                        <Property Name="TextColor" Value="FFFFFF00"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="Text" Value="00:00"/>
+                        <Event Name="ReachedZero" Function="Makefriends_Settlement_ReachZero();" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Makefriends_Settlement_Info40">
+                        <Property Name="UnifiedSize" Value="{{.000000,140.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,30.000000},{0.000000,10.000000}}"/>
+                        <Property Name="Text" Value="#{}"/>
+                        <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    </Window>
+                </Window>
+
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Makefriends_Settlement_Info38">
+                <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.000000,-35.000000}}"/>
+                <Property Name="Text" Value="#{JYHD_230331_133}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+
+
+        </Window>
+
+
+    </Window>
+</GUILayout>

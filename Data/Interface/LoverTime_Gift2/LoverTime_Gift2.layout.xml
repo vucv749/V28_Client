@@ -1,0 +1,192 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="LoverTime_Gift2Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,434.000000},{0.000000,328.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-208.000000},{0.500000,-160.000000}}"/>
+    <Event Name="Hidden" Function="LoverTime_Gift2_OnHidden();"/>
+    <Window Type="TLBB_DragTitle" Name="LoverTime_Gift2DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{QXHB_20210701_313}"/>
+      <Property Name="DragTarget" Value="LoverTime_Gift2Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="LoverTime_Gift2Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function=""/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="LoverTime_Gift2Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="LoverTime_Gift2OnClose()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="LoverTime_Gift2Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-54.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Window Type="DefaultWindow" Name="LoverTime_Gift2ClientBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="LoverTime_Gift2ClientBK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,422.000000},{0.000000,274.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:LoverTime07 image:LoverTime07BK"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="LoverTime_Gift2Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,26.000000}}"/>
+        <Property Name="Text" Value="#{QRZM_231017_18}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="LoverTime_Gift2Gift">
+        <Property Name="UnifiedSize" Value="{{1.000000,-88.000000},{0.000000,160.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,44.000000},{0.000000,70.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="LoverTime_Gift2Gift1_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.300000,-24.000000},{0.000000,10.000000}}"/>
+          <Event Name="Clicked" Function="LoverTime_Gift21_Select(1);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="LoverTime_Gift2Gift1_Icon_Mask">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="LoverTime_Gift2Gift2_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.700000,-24.000000},{0.000000,10.000000}}"/>
+          <Event Name="Clicked" Function="LoverTime_Gift21_Select(2);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="LoverTime_Gift2Gift2_Icon_Mask">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="LoverTime_Gift2Gift3_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.30000,-24.000000},{0.000000,84.000000}}"/>
+          <Event Name="Clicked" Function="LoverTime_Gift21_Select(3);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="LoverTime_Gift2Gift3_Icon_Mask">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="LoverTime_Gift2Gift4_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.70000,-24.000000},{0.000000,84.000000}}"/>
+          <Event Name="Clicked" Function="LoverTime_Gift21_Select(4);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="LoverTime_Gift2Gift4_Icon_Mask">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="LoverTime_Gift2Gift5_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,84.000000}}"/>
+          <Event Name="Clicked" Function="LoverTime_Gift21_Select(5);"/>
+          <Property Name="Visible" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="LoverTime_Gift2Gift5_Icon_Mask">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="LoverTime_Gift2Gift6_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.750000,-24.000000},{0.000000,84.000000}}"/>
+          <Event Name="Clicked" Function="LoverTime_Gift21_Select(6);"/>
+          <Property Name="Visible" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="LoverTime_Gift2Gift6_Icon_Mask">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="LoverTime_Gift2Gift1_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.300000,-36.000000},{0.000000,62.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{QXHB_20210701_288}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="LoverTime_Gift2Gift2_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.700000,-36.000000},{0.000000,62.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{QXHB_20210701_288}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="LoverTime_Gift2Gift3_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.300000,-36.000000},{0.000000,138.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{QXHB_20210701_288}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="LoverTime_Gift2Gift4_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.70000,-36.000000},{0.000000,138.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{QXHB_20210701_288}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="LoverTime_Gift2Gift5_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-36.000000},{0.000000,138.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Visible" Value="False"/>
+          <Property Name="Text" Value="#{QXHB_20210701_288}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="LoverTime_Gift2Gift6_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.750000,-36.000000},{0.000000,138.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Visible" Value="False"/>
+          <Property Name="Text" Value="#{QXHB_20210701_288}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="LoverTime_Gift2Gift_Select">
+        <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-36.000000},{1.000000,-34.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:LoverTime07 image:LoverTime07Btn2"/>
+        <Property Name="NormalImage" Value="set:LoverTime07 image:LoverTime07Btn1"/>
+        <Property Name="HoverImage" Value="set:LoverTime07 image:LoverTime07Btn3"/>
+        <Property Name="DisabledImage" Value="set:LoverTime07 image:LoverTime07Btn4"/>
+        <Event Name="Clicked" Function="LoverTime_Gift2Confirm()"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

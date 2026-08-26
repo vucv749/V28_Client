@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrameNULL" Name="ShengdanYingjing_Timing_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,80.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-52.000000},{0.000000,140.000000}}"/>
+      <Event Name="Hidden" Function="ShengdanYingjing_Timing_OnHiden();"/>
+      <Window Type="TLBB_DragTitle" Name="ShengdanYingjing_Timing_DragTitle">
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="UnifiedSize" Value="{{1.00000,0.00000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.000000,0.000000}}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="DragTarget" Value="ShengdanYingjing_Timing_Frame"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="ShengdanYingjing_Timing_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.00000,0.00000},{0.000000,0.000000}}"/>
+        <Property Name="AttachEnabled" Value="True"/>
+        <Window Type="TLBB_Animate" Name="ShengdanYingjing_Timing_Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,80.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Animate" Value="ShengdanYingjing_CountDown"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+    </Window>
+ </GUILayout>

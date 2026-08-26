@@ -1,0 +1,944 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="YearEndBonus_FrameBK">
+    <Property Name="UnifiedSize" Value="{{0.000000,920.000000},{0.000000,570.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-460.000000},{0.500000,-280.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="YearEndBonus_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+      <Property Name="Text" Value="#{HKCJ_241127_07}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="YearEndBonus_FrameBK"/>
+    </Window>
+    <Window Type="TLBB_HeroFrame01" Name="YearEndBonus_BKClient">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Event Name="Hidden" Function="YearEndBonus_OnHiden()"/>
+      <Window Type="TLBB_HeroTitle01" Name="YearEndBonus_DragTitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,-2.000000}}"/>
+      </Window>
+      <Window Type="TLBB_ButtonClose2" Name="YearEndBonus_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+        <Event Name="Clicked" Function="YearEndBonus_Close();"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_BKImage">
+        <Property Name="UnifiedSize" Value="{{0.000000,909.000000},{0.000000,535.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-454.000000},{0.000000,30.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:YearEndBonus image:BK_L_Disable"/>
+        <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Shop1BKImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,294.000000},{0.000000,393.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,116.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:YearEndBonus image:ShopBK_ZBL"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Shop2BKImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,294.000000},{0.000000,393.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,308.000000},{0.000000,116.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:YearEndBonus image:ShopBK_QWL"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Shop3BKImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,294.000000},{0.000000,393.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,606.000000},{0.000000,116.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:YearEndBonus image:ShopBK_WHL"/>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TLBB_SimpleText" Name="YearEndBonus_IntroText">
+      <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,100.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,25.000000}}"/>
+      <Property Name="Text" Value="#{HKCJ_241127_09}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="YearEndBonus_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.000000,100.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Tooltip" Value="#{}"/>
+      <Event Name="Clicked" Function="YearEndBonus_OnClickHelp()"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="YearEndBonus_Box1_Client">
+      <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,400.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,140.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Window Type="DefaultWindow" Name="YearEndBonus_Box1_BKFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="DefaultWindow" Name="YearEndBonus_Box1_Goods1BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,145.000000},{0.000000,200.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,129.000000}}"/>
+          <Window Type="DefaultWindow" Name="YearEndBonus_Box1_Goods1_NameBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,114.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box1_Goods1_NameText">
+              <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value=""/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="YearEndBonus_Box1_Goods1_Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.000000,50.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box1_Goods1_Item_Red">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Tooltip" Value="#{HKCJ_241127_27}"/>
+              <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box1_Goods1_Item_SoldOut">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame20 image:JueWei_Shou"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box1_Goods1_Item_Lock">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:ItemRed"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box1_Goods1_Item_Eye">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-16.000000}}"/>
+              <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_EyeDis"/>
+              <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_EyeNor"/>
+              <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_EyeHover"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Tooltip" Value="#{HKCJ_241127_75}"/>
+              <Event Name="Clicked" Function="YearEndBonus_Incom_Eye(1,1);"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box1_Goods1_ItemPrice">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,130.000000}}"/>
+            <Property Name="Text" Value="#{HKCJ_241127_14}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box1_Goods1_LockBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,19.000000}}"/>
+		        <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{1.000000,-157.000000}}"/>
+            <Property Name="PushedImage" Value="set:YearEndBonus image:Unlock_Pushed"/>
+            <Property Name="NormalImage" Value="set:YearEndBonus image:Unlock_Normal"/>
+            <Property Name="HoverImage" Value="set:YearEndBonus image:Unlock_Hover"/>
+            <Property Name="DisabledImage" Value="set:YearEndBonus image:Unlock_Disabled"/>
+            <Property Name="Tooltip" Value="#{HKCJ_241127_17}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="YearEndBonus_Lock(1,1);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box1_Goods1_SelectBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.000000,10.000000}}"/>
+            <Property Name="PushedImage" Value="set:YearEndBonus image:BtnZBL_Pushed"/>
+            <Property Name="NormalImage" Value="set:YearEndBonus image:BtnZBL_Normal"/>
+            <Property Name="HoverImage" Value="set:YearEndBonus image:BtnZBL_Hover"/>
+            <Property Name="DisabledImage" Value="set:YearEndBonus image:BtnZBL_Disabled"/>
+            <Property Name="Tooltip" Value="#{HKCJ_241127_19}"/>
+            <Event Name="Clicked" Function="YearEndBonus_Select(1,1);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box1_Goods1_BuyBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.5000000,-24.000000},{1.000000,-44.000000}}"/>
+            <Property Name="PushedImage" Value="set:YearEndBonus image:BtnBuy_Pushed"/>
+            <Property Name="NormalImage" Value="set:YearEndBonus image:BtnBuy_Normal"/>
+            <Property Name="HoverImage" Value="set:YearEndBonus image:BtnBuy_Hover"/>
+            <Property Name="DisabledImage" Value="set:YearEndBonus image:BtnBuy_Disabled"/>
+            <Property Name="Tooltip" Value="#{HKCJ_241127_23}"/>
+            <Event Name="Clicked" Function="YearEndBonus_Buy(1,1);"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="YearEndBonus_Box1_Goods2BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,145.000000},{0.000000,200.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,151.000000},{0.000000,129.000000}}"/>
+          <Window Type="DefaultWindow" Name="YearEndBonus_Box1_Goods2_NameBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,114.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box1_Goods2_NameText">
+              <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value=""/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="YearEndBonus_Box1_Goods2_Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.000000,50.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box1_Goods2_Item_Red">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Tooltip" Value="#{HKCJ_241127_27}"/>
+              <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box1_Goods2_Item_SoldOut">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame20 image:JueWei_Shou"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box1_Goods2_Item_Lock">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:ItemRed"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box1_Goods2_Item_Eye">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-16.000000}}"/>
+              <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_EyeDis"/>
+              <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_EyeNor"/>
+              <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_EyeHover"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Tooltip" Value="#{HKCJ_241127_75}"/>
+              <Event Name="Clicked" Function="YearEndBonus_Incom_Eye(1,2);"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box1_Goods2_ItemPrice">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,130.000000}}"/>
+            <Property Name="Text" Value="#{HKCJ_241127_14}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box1_Goods2_LockBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,19.000000}}"/>
+		        <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{1.000000,-157.000000}}"/>
+            <Property Name="PushedImage" Value="set:YearEndBonus image:Unlock_Pushed"/>
+            <Property Name="NormalImage" Value="set:YearEndBonus image:Unlock_Normal"/>
+            <Property Name="HoverImage" Value="set:YearEndBonus image:Unlock_Hover"/>
+            <Property Name="DisabledImage" Value="set:YearEndBonus image:Unlock_Disabled"/>
+            <Property Name="Tooltip" Value="#{HKCJ_241127_17}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="YearEndBonus_Lock(1,2);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box1_Goods2_SelectBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.000000,10.000000}}"/>
+            <Property Name="PushedImage" Value="set:YearEndBonus image:BtnZBL_Pushed"/>
+            <Property Name="NormalImage" Value="set:YearEndBonus image:BtnZBL_Normal"/>
+            <Property Name="HoverImage" Value="set:YearEndBonus image:BtnZBL_Hover"/>
+            <Property Name="DisabledImage" Value="set:YearEndBonus image:BtnZBL_Disabled"/>
+            <Property Name="Tooltip" Value="#{HKCJ_241127_19}"/>
+            <Event Name="Clicked" Function="YearEndBonus_Select(1,2);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box1_Goods2_BuyBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-23.500000},{1.000000,-44.000000}}"/>
+            <Property Name="PushedImage" Value="set:YearEndBonus image:BtnBuy_Pushed"/>
+            <Property Name="NormalImage" Value="set:YearEndBonus image:BtnBuy_Normal"/>
+            <Property Name="HoverImage" Value="set:YearEndBonus image:BtnBuy_Hover"/>
+            <Property Name="DisabledImage" Value="set:YearEndBonus image:BtnBuy_Disabled"/>
+            <Property Name="Tooltip" Value="#{HKCJ_241127_23}"/>
+            <Event Name="Clicked" Function="YearEndBonus_Buy(1,2);"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box1_RefreshBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,23.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{1.000000,-66.000000}}"/>
+          <Property Name="PushedImage" Value="set:YearEndBonus image:Refresh_Pushed"/>
+          <Property Name="NormalImage" Value="set:YearEndBonus image:Refresh_Normal"/>
+          <Property Name="HoverImage" Value="set:YearEndBonus image:Refresh_Hover"/>
+          <Property Name="DisabledImage" Value="set:YearEndBonus image:Refresh_Disabled"/>
+          <Property Name="Tooltip" Value="#{HKCJ_241127_16}"/>
+          <Event Name="Clicked" Function="YearEndBonus_ChouJiang(1,0);"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box1_RefreshBtn_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,133.000000},{0.000000,328.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box1_RefreshText">
+          <Property Name="UnifiedSize" Value="{{1.000000,-150.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{1.000000,-42.000000}}"/>
+          <Property Name="Text" Value="#{HKCJ_241127_82}"/>
+          <Property Name="Tooltip" Value="#{HKCJ_241127_118}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box1_YBRefreshBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,23.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,167.000000},{1.000000,-66.000000}}"/>
+          <Property Name="PushedImage" Value="set:YearEndBonus image:YBRefresh_Pushed"/>
+          <Property Name="NormalImage" Value="set:YearEndBonus image:YBRefresh_Normal"/>
+          <Property Name="HoverImage" Value="set:YearEndBonus image:YBRefresh_Hover"/>
+          <Property Name="DisabledImage" Value="set:YearEndBonus image:YBRefresh_Disabled"/>
+          <Property Name="Tooltip" Value="#{HKCJ_241127_141}"/>
+          <Event Name="Clicked" Function="YearEndBonus_ChouJiang(1,1);"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box1_YBRefreshText">
+          <Property Name="UnifiedSize" Value="{{1.000000,-130.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,126.000000},{1.000000,-42.000000}}"/>
+          <Property Name="Text" Value="#{HKCJ_241127_116}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box1_CoinAText">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-113.000000},{0.000000,109.000000}}"/>
+          <Property Name="Text" Value="#{HKCJ_241127_81}"/>
+          <Property Name="Tooltip" Value="#{HKCJ_241127_122}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box1_CoinATextIcon">
+          <Property Name="UnifiedSize" Value="{{0.000000,123.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-133.000000},{0.000000,108.000000}}"/>
+          <Property Name="Tooltip" Value="#{HKCJ_241127_122}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Image" Value="set:YearEndBonus image:ZBLBK"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box1_SoldOutText">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-80.000000}}"/>
+          <Property Name="Text" Value="#{HKCJ_241127_125}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="YearEndBonus_Box2_Client">
+      <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,400.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,312.000000},{0.000000,140.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Window Type="DefaultWindow" Name="YearEndBonus_Box2_BKFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="DefaultWindow" Name="YearEndBonus_Box2_Goods1BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,145.000000},{0.000000,200.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,129.000000}}"/>
+          <Window Type="DefaultWindow" Name="YearEndBonus_Box2_Goods1_NameBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,114.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box2_Goods1_NameText">
+              <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value=""/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="YearEndBonus_Box2_Goods1_Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.000000,50.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box2_Goods1_Item_Red">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Tooltip" Value="#{HKCJ_241127_27}"/>
+              <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box2_Goods1_Item_SoldOut">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame20 image:JueWei_Shou"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box2_Goods1_Item_Lock">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:ItemRed"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box2_Goods1_Item_Eye">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-16.000000}}"/>
+              <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_EyeDis"/>
+              <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_EyeNor"/>
+              <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_EyeHover"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Tooltip" Value="#{HKCJ_241127_75}"/>
+              <Event Name="Clicked" Function="YearEndBonus_Incom_Eye(2,1);"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box2_Goods1_ItemPrice">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,130.000000}}"/>
+            <Property Name="Text" Value="#{HKCJ_241127_14}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box2_Goods1_LockBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,19.000000}}"/>
+		        <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{1.000000,-157.000000}}"/>
+            <Property Name="PushedImage" Value="set:YearEndBonus image:Unlock_Pushed"/>
+            <Property Name="NormalImage" Value="set:YearEndBonus image:Unlock_Normal"/>
+            <Property Name="HoverImage" Value="set:YearEndBonus image:Unlock_Hover"/>
+            <Property Name="DisabledImage" Value="set:YearEndBonus image:Unlock_Disabled"/>
+            <Property Name="Tooltip" Value="#{HKCJ_241127_17}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="YearEndBonus_Lock(2,1);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box2_Goods1_SelectBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.000000,10.000000}}"/>
+            <Property Name="PushedImage" Value="set:YearEndBonus image:BtnQWL_Pushed"/>
+            <Property Name="NormalImage" Value="set:YearEndBonus image:BtnQWL_Normal"/>
+            <Property Name="HoverImage" Value="set:YearEndBonus image:BtnQWL_Hover"/>
+            <Property Name="DisabledImage" Value="set:YearEndBonus image:BtnQWL_Disabled"/>
+            <Property Name="Tooltip" Value="#{HKCJ_241127_19}"/>
+            <Event Name="Clicked" Function="YearEndBonus_Select(2,1);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box2_Goods1_BuyBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-23.500000},{1.000000,-44.000000}}"/>
+            <Property Name="PushedImage" Value="set:YearEndBonus image:BtnBuy_Pushed"/>
+            <Property Name="NormalImage" Value="set:YearEndBonus image:BtnBuy_Normal"/>
+            <Property Name="HoverImage" Value="set:YearEndBonus image:BtnBuy_Hover"/>
+            <Property Name="DisabledImage" Value="set:YearEndBonus image:BtnBuy_Disabled"/>
+            <Property Name="Tooltip" Value="#{HKCJ_241127_23}"/>
+            <Event Name="Clicked" Function="YearEndBonus_Buy(2,1);"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="YearEndBonus_Box2_Goods2BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,145.000000},{0.000000,200.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,148.000000},{0.000000,129.000000}}"/>
+          <Window Type="DefaultWindow" Name="YearEndBonus_Box2_Goods2_NameBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,114.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box2_Goods2_NameText">
+              <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value=""/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="YearEndBonus_Box2_Goods2_Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.000000,50.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box2_Goods2_Item_Red">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Tooltip" Value="#{HKCJ_241127_27}"/>
+              <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box2_Goods2_Item_SoldOut">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame20 image:JueWei_Shou"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box2_Goods2_Item_Lock">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:ItemRed"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box2_Goods2_Item_Eye">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-16.000000}}"/>
+              <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_EyeDis"/>
+              <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_EyeNor"/>
+              <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_EyeHover"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Tooltip" Value="#{HKCJ_241127_75}"/>
+              <Event Name="Clicked" Function="YearEndBonus_Incom_Eye(2,2);"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box2_Goods2_ItemPrice">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,130.000000}}"/>
+            <Property Name="Text" Value="#{HKCJ_241127_14}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box2_Goods2_LockBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,19.000000}}"/>
+		        <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{1.000000,-157.000000}}"/>
+            <Property Name="PushedImage" Value="set:YearEndBonus image:Unlock_Pushed"/>
+            <Property Name="NormalImage" Value="set:YearEndBonus image:Unlock_Normal"/>
+            <Property Name="HoverImage" Value="set:YearEndBonus image:Unlock_Hover"/>
+            <Property Name="DisabledImage" Value="set:YearEndBonus image:Unlock_Disabled"/>
+            <Property Name="Tooltip" Value="#{HKCJ_241127_17}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="YearEndBonus_Lock(2,2);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box2_Goods2_SelectBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.000000,10.000000}}"/>
+            <Property Name="PushedImage" Value="set:YearEndBonus image:BtnQWL_Pushed"/>
+            <Property Name="NormalImage" Value="set:YearEndBonus image:BtnQWL_Normal"/>
+            <Property Name="HoverImage" Value="set:YearEndBonus image:BtnQWL_Hover"/>
+            <Property Name="DisabledImage" Value="set:YearEndBonus image:BtnQWL_Disabled"/>
+            <Property Name="Tooltip" Value="#{HKCJ_241127_19}"/>
+            <Event Name="Clicked" Function="YearEndBonus_Select(2,2);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box2_Goods2_BuyBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-23.500000},{1.000000,-44.000000}}"/>
+            <Property Name="PushedImage" Value="set:YearEndBonus image:BtnBuy_Pushed"/>
+            <Property Name="NormalImage" Value="set:YearEndBonus image:BtnBuy_Normal"/>
+            <Property Name="HoverImage" Value="set:YearEndBonus image:BtnBuy_Hover"/>
+            <Property Name="DisabledImage" Value="set:YearEndBonus image:BtnBuy_Disabled"/>
+            <Property Name="Tooltip" Value="#{HKCJ_241127_23}"/>
+            <Event Name="Clicked" Function="YearEndBonus_Buy(2,2);"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box2_RefreshBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,23.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{1.000000,-66.000000}}"/>
+          <Property Name="PushedImage" Value="set:YearEndBonus image:Refresh_Pushed"/>
+          <Property Name="NormalImage" Value="set:YearEndBonus image:Refresh_Normal"/>
+          <Property Name="HoverImage" Value="set:YearEndBonus image:Refresh_Hover"/>
+          <Property Name="DisabledImage" Value="set:YearEndBonus image:Refresh_Disabled"/>
+          <Property Name="Tooltip" Value="#{HKCJ_241127_16}"/>
+          <Event Name="Clicked" Function="YearEndBonus_ChouJiang(2,0);"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box2_RefreshBtn_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,132.000000},{0.000000,328.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box2_RefreshText">
+          <Property Name="UnifiedSize" Value="{{1.000000,-150.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{1.000000,-42.000000}}"/>
+          <Property Name="Text" Value="#{HKCJ_241127_82}"/>
+          <Property Name="Tooltip" Value="#{HKCJ_241127_118}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box2_YBRefreshBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,23.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,163.000000},{1.000000,-66.000000}}"/>
+          <Property Name="Tooltip" Value="#{HKCJ_241127_141}"/>
+          <Property Name="PushedImage" Value="set:YearEndBonus image:YBRefresh_Pushed"/>
+          <Property Name="NormalImage" Value="set:YearEndBonus image:YBRefresh_Normal"/>
+          <Property Name="HoverImage" Value="set:YearEndBonus image:YBRefresh_Hover"/>
+          <Property Name="DisabledImage" Value="set:YearEndBonus image:YBRefresh_Disabled"/>
+          <Event Name="Clicked" Function="YearEndBonus_ChouJiang(2,1);"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box2_YBRefreshText">
+          <Property Name="UnifiedSize" Value="{{1.000000,-130.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,123.000000},{1.000000,-42.000000}}"/>
+          <Property Name="Text" Value="#{HKCJ_241127_116}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box2_CoinAText">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-113.000000},{0.000000,109.000000}}"/>
+          <Property Name="Text" Value="#{HKCJ_241127_81}"/>
+          <Property Name="Tooltip" Value="#{HKCJ_241127_123}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box2_CoinATextIcon">
+          <Property Name="UnifiedSize" Value="{{0.000000,123.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-133.000000},{0.000000,108.000000}}"/>
+          <Property Name="Tooltip" Value="#{HKCJ_241127_123}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Image" Value="set:YearEndBonus image:QWL_BK"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box2_SoldOutText">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-80.000000}}"/>
+          <Property Name="Text" Value="#{HKCJ_241127_125}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="YearEndBonus_Box3_Client">
+      <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,400.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,610.000000},{0.000000,140.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Window Type="DefaultWindow" Name="YearEndBonus_Box3_BKFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="DefaultWindow" Name="YearEndBonus_Box3_Goods1BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,145.000000},{0.000000,200.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,129.000000}}"/>
+          <Window Type="DefaultWindow" Name="YearEndBonus_Box3_Goods1_NameBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,114.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box3_Goods1_NameText">
+              <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value=""/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="YearEndBonus_Box3_Goods1_Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.000000,50.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box3_Goods1_Item_Red">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Tooltip" Value="#{HKCJ_241127_27}"/>
+              <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box3_Goods1_Item_SoldOut">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame20 image:JueWei_Shou"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box3_Goods1_Item_Lock">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:ItemRed"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box3_Goods1_Item_Eye">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-16.000000}}"/>
+              <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_EyeDis"/>
+              <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_EyeNor"/>
+              <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_EyeHover"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Tooltip" Value="#{HKCJ_241127_75}"/>
+              <Event Name="Clicked" Function="YearEndBonus_Incom_Eye(3,1);"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box3_Goods1_ItemPrice">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,130.000000}}"/>
+            <Property Name="Text" Value="#{HKCJ_241127_14}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box3_Goods1_LockBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,19.000000}}"/>
+		        <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{1.000000,-157.000000}}"/>
+            <Property Name="PushedImage" Value="set:YearEndBonus image:Unlock_Pushed"/>
+            <Property Name="NormalImage" Value="set:YearEndBonus image:Unlock_Normal"/>
+            <Property Name="HoverImage" Value="set:YearEndBonus image:Unlock_Hover"/>
+            <Property Name="DisabledImage" Value="set:YearEndBonus image:Unlock_Disabled"/>
+            <Property Name="Tooltip" Value="#{HKCJ_241127_17}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="YearEndBonus_Lock(3,1);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box3_Goods1_SelectBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.000000,10.000000}}"/>
+            <Property Name="PushedImage" Value="set:YearEndBonus image:BtnWHL_Pushed"/>
+            <Property Name="NormalImage" Value="set:YearEndBonus image:BtnWHL_Normal"/>
+            <Property Name="HoverImage" Value="set:YearEndBonus image:BtnWHL_Hover"/>
+            <Property Name="DisabledImage" Value="set:YearEndBonus image:BtnWHL_Disabled"/>
+            <Property Name="Tooltip" Value="#{HKCJ_241127_19}"/>
+            <Event Name="Clicked" Function="YearEndBonus_Select(3,1);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box3_Goods1_BuyBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-23.500000},{1.000000,-44.000000}}"/>
+            <Property Name="PushedImage" Value="set:YearEndBonus image:BtnBuy_Pushed"/>
+            <Property Name="NormalImage" Value="set:YearEndBonus image:BtnBuy_Normal"/>
+            <Property Name="HoverImage" Value="set:YearEndBonus image:BtnBuy_Hover"/>
+            <Property Name="DisabledImage" Value="set:YearEndBonus image:BtnBuy_Disabled"/>
+            <Property Name="Tooltip" Value="#{HKCJ_241127_23}"/>
+            <Event Name="Clicked" Function="YearEndBonus_Buy(3,1);"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="YearEndBonus_Box3_Goods2BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,145.000000},{0.000000,200.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,148.000000},{0.000000,129.000000}}"/>
+          <Window Type="DefaultWindow" Name="YearEndBonus_Box3_Goods2_NameBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,114.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box3_Goods2_NameText">
+              <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value=""/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="YearEndBonus_Box3_Goods2_Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.000000,50.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box3_Goods2_Item_Red">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Tooltip" Value="#{HKCJ_241127_27}"/>
+              <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box3_Goods2_Item_SoldOut">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame20 image:JueWei_Shou"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box3_Goods2_Item_Lock">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:ItemRed"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box3_Goods2_Item_Eye">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-16.000000}}"/>
+              <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_EyeDis"/>
+              <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_EyeNor"/>
+              <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_EyeHover"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Tooltip" Value="#{HKCJ_241127_75}"/>
+              <Event Name="Clicked" Function="YearEndBonus_Incom_Eye(3,2);"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box3_Goods2_ItemPrice">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,130.000000}}"/>
+            <Property Name="Text" Value="#{HKCJ_241127_14}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box3_Goods2_LockBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,19.000000}}"/>
+		        <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{1.000000,-157.000000}}"/>
+            <Property Name="PushedImage" Value="set:YearEndBonus image:Unlock_Pushed"/>
+            <Property Name="NormalImage" Value="set:YearEndBonus image:Unlock_Normal"/>
+            <Property Name="HoverImage" Value="set:YearEndBonus image:Unlock_Hover"/>
+            <Property Name="DisabledImage" Value="set:YearEndBonus image:Unlock_Disabled"/>
+            <Property Name="Tooltip" Value="#{HKCJ_241127_17}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="YearEndBonus_Lock(3,2);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box3_Goods2_SelectBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.000000,10.000000}}"/>
+            <Property Name="PushedImage" Value="set:YearEndBonus image:BtnWHL_Pushed"/>
+            <Property Name="NormalImage" Value="set:YearEndBonus image:BtnWHL_Normal"/>
+            <Property Name="HoverImage" Value="set:YearEndBonus image:BtnWHL_Hover"/>
+            <Property Name="DisabledImage" Value="set:YearEndBonus image:BtnWHL_Disabled"/>
+            <Property Name="Tooltip" Value="#{HKCJ_241127_19}"/>
+            <Event Name="Clicked" Function="YearEndBonus_Select(3,2);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box3_Goods2_BuyBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-23.500000},{1.000000,-44.000000}}"/>
+            <Property Name="PushedImage" Value="set:YearEndBonus image:BtnBuy_Pushed"/>
+            <Property Name="NormalImage" Value="set:YearEndBonus image:BtnBuy_Normal"/>
+            <Property Name="HoverImage" Value="set:YearEndBonus image:BtnBuy_Hover"/>
+            <Property Name="DisabledImage" Value="set:YearEndBonus image:BtnBuy_Disabled"/>
+            <Property Name="Tooltip" Value="#{HKCJ_241127_23}"/>
+            <Event Name="Clicked" Function="YearEndBonus_Buy(3,2);"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box3_RefreshBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,23.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,44.000000},{1.000000,-66.000000}}"/>
+          <Property Name="PushedImage" Value="set:YearEndBonus image:Refresh_Pushed"/>
+          <Property Name="NormalImage" Value="set:YearEndBonus image:Refresh_Normal"/>
+          <Property Name="HoverImage" Value="set:YearEndBonus image:Refresh_Hover"/>
+          <Property Name="DisabledImage" Value="set:YearEndBonus image:Refresh_Disabled"/>
+          <Property Name="Tooltip" Value="#{HKCJ_241127_16}"/>
+          <Event Name="Clicked" Function="YearEndBonus_ChouJiang(3,0);"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box3_RefreshBtn_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,132.000000},{0.000000,328.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box3_RefreshText">
+          <Property Name="UnifiedSize" Value="{{1.000000,-150.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{1.000000,-42.000000}}"/>
+          <Property Name="Text" Value="#{HKCJ_241127_82}"/>
+          <Property Name="Tooltip" Value="#{HKCJ_241127_118}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="YearEndBonus_Box3_YBRefreshBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,23.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{1.000000,-66.000000}}"/>
+          <Property Name="Tooltip" Value="#{HKCJ_241127_141}"/>
+          <Property Name="PushedImage" Value="set:YearEndBonus image:YBRefresh_Pushed"/>
+          <Property Name="NormalImage" Value="set:YearEndBonus image:YBRefresh_Normal"/>
+          <Property Name="HoverImage" Value="set:YearEndBonus image:YBRefresh_Hover"/>
+          <Property Name="DisabledImage" Value="set:YearEndBonus image:YBRefresh_Disabled"/>
+          <Event Name="Clicked" Function="YearEndBonus_ChouJiang(3,1);"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box3_YBRefreshText">
+          <Property Name="UnifiedSize" Value="{{1.000000,-130.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,126.000000},{1.000000,-42.000000}}"/>
+          <Property Name="Text" Value="#{HKCJ_241127_116}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box3_CoinAText">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-113.000000},{0.000000,109.000000}}"/>
+          <Property Name="Text" Value="#{HKCJ_241127_81}"/>
+          <Property Name="Tooltip" Value="#{HKCJ_241127_124}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="YearEndBonus_Box3_CoinATextIcon">
+          <Property Name="UnifiedSize" Value="{{0.000000,123.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-133.000000},{0.000000,108.000000}}"/>
+          <Property Name="Tooltip" Value="#{HKCJ_241127_124}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Image" Value="set:YearEndBonus image:WHL_BK"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="YearEndBonus_Box3_SoldOutText">
+          <Property Name="UnifiedSize" Value="{{1.000000,-.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-80.000000}}"/>
+          <Property Name="Text" Value="#{HKCJ_241127_125}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+    </Window>
+
+    <Window Type="DefaultWindow" Name="YearEndBonus_YuanBaoCheck_Client">
+      <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,542.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Window Type="TLBB_ButtonCheck" Name="YearEndBonus_YuanBaoCheck_Btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+        <Property Name="Selected" Value="True"/>
+        <Property Name="Tooltip" Value="#{HKCJ_241127_109}"/>
+		<Event Name="Clicked" Function="YearEndBonus_YuanBaoCheck_Click();"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="YearEndBonus_YuanBaoCheck_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{HKCJ_241127_13}"/>
+        <Property Name="Tooltip" Value="#{HKCJ_241127_109}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="YearEndBonus_Box1_RewardPreviewBtn">
+      <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-94.000000},{0.000000,122.000000}}"/>
+      <Property Name="Tooltip" Value="#{HKCJ_241127_21}"/>
+      <Property Name="Text" Value="#{HKCJ_241127_20}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="YearEndBonus_JiangChi();"/>
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="YearEndBonus_Box1_CoinAChangeBtn">
+      <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-182.000000},{0.000000,122.000000}}"/>
+      <Property Name="Tooltip" Value="#{HKCJ_241127_142}"/>
+      <Property Name="Text" Value="令牌熔金"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="YearEndBonus_JZ();"/>
+    </Window>
+    <Window Type="TLBB_SimpleText" Name="YearEndBonus_ActiveText">
+      <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,124.000000}}"/>
+      <Property Name="Text" Value="#{HKCJ_241127_87}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+    </Window>
+    <Window Type="TLBB_SimpleText" Name="YearEndBonus_ActiveTimeText">
+      <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,124.000000}}"/>
+      <Property Name="Text" Value="#{HKCJ_241127_86}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+    </Window>
+    <Window Type="TLBB_SimpleText" Name="YearEndBonus_LockInfoText">
+      <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-200.000000},{1.000000,-26.000000}}"/>
+      <Property Name="TextColor" Value="FF00FF00"/>
+      <Property Name="Text" Value="#{HKCJ_241127_143}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+    </Window>
+  </Window>
+</GUILayout>

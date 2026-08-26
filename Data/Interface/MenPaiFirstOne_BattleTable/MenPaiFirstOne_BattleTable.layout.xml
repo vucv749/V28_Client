@@ -1,0 +1,926 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="MenPaiFirstOne_BattleTable_Frame">
+    <Property Name="UnifiedPosition" Value="{{0.500000,-497.000000},{0.500000,-292.000000}" />
+    <Property Name="UnifiedSize" Value="{{0.000000,996.000000},{0.000000,584.000000}" />
+    <Event Name="Hidden" Function="AcceSetup_Cancel_Clicked()" />
+    <Window Type="TLBB_DragTitle" Name="MenPaiFirstOne_BattleTable_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="MenPaiFirstOne_BattleTable_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{MPDYR_20220427_27}" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="MenPaiFirstOne_BattleTable_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="MenPaiFirstOne_BattleTable_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+      <Event Name="Clicked" Function="MenPaiFirstOne_BattleTable_Close()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="MenPaiFirstOne_BattleTable_Client">
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-56.000000}" />
+      <Window Type="TLBB_Frame_Lace3" Name="MenPaiFirstOne_BattleTable_InfoBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,70.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{MPDYR_20220427_28}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="MenPaiFirstOne_BattleTable_Info_Help">
+          <Property Name="UnifiedPosition" Value="{{1.000000,-95.000000},{1.000000,-20.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleTable_Help_Click()" />
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="MenPaiFirstOne_BattleTable_Info_Award">
+          <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-25.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.00000,70.000000},{0.000000,20.000000}}"/>
+          <Property Name="Text" Value="#{MPDYR_20220427_30}" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleTable_Preview_Click()" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="MenPaiFirstOne_BattleTable_MenPaiBK">
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,95.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{1.000000,-95.000000}" />
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="MenPaiFirstOne_BattleTable_MenPai1">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.000000,5.000000}}"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="Text" Value="#{MPDYR_20220427_40}"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleTable_MenPai_Click(0)" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="MenPaiFirstOne_BattleTable_MenPai2">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.000000,35.000000}}"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="Text" Value="#{MPDYR_20220427_41}"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleTable_MenPai_Click(1)" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="MenPaiFirstOne_BattleTable_MenPai3">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.000000,65.000000}}"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="Text" Value="#{MPDYR_20220427_42}"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleTable_MenPai_Click(2)" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="MenPaiFirstOne_BattleTable_MenPai4">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.000000,95.000000}}"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="Text" Value="#{MPDYR_20220427_43}"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleTable_MenPai_Click(3)" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="MenPaiFirstOne_BattleTable_MenPai5">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.000000,125.000000}}"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="Text" Value="#{MPDYR_20220427_44}"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleTable_MenPai_Click(4)" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="MenPaiFirstOne_BattleTable_MenPai6">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.000000,155.000000}}"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="Text" Value="#{MPDYR_20220427_45}"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleTable_MenPai_Click(5)" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="MenPaiFirstOne_BattleTable_MenPai7">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.000000,185.000000}}"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="Text" Value="#{MPDYR_20220427_46}"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleTable_MenPai_Click(6)" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="MenPaiFirstOne_BattleTable_MenPai8">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.000000,215.000000}}"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="Text" Value="#{MPDYR_20220427_47}"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleTable_MenPai_Click(7)" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="MenPaiFirstOne_BattleTable_MenPai9">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.000000,245.000000}}"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="Text" Value="#{MPDYR_20220427_48}"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleTable_MenPai_Click(8)" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="MenPaiFirstOne_BattleTable_MenPai10">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.000000,275.000000}}"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="Text" Value="#{MPDYR_20220427_176}"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleTable_MenPai_Click(10)" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="MenPaiFirstOne_BattleTable_LevelBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,75.000000}}"/>
+        <Property Name="Visible" Value="False"/>
+        <Window Type="TLBB_ButtonFenYe2" Name="MenPaiFirstOne_BattleTable_Level1">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{MPDYR_20220427_32}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleTable_DuanWei_Click(2)" />
+        </Window>
+        <Window Type="TLBB_ButtonFenYe2" Name="MenPaiFirstOne_BattleTable_Level2">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{MPDYR_20220427_33}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleTable_DuanWei_Click(1)" />
+        </Window>
+        <Window Type="TLBB_ButtonFenYe2" Name="MenPaiFirstOne_BattleTable_Level3">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{MPDYR_20220427_34}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleTable_DuanWei_Click(0)" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="MenPaiFirstOne_BattleTable_BetBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,75.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Bet_Info">
+          <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-350.000000},{0.500000,-10.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="MenPaiFirstOne_BattleTable_Bet_Enter">
+          <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.500000,-10.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.00000,100.000000},{0.000000,20.000000}}"/>
+          <Property Name="Text" Value="#{MPDYR_20220427_166}" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="MenPaiFirstOne_BattleTable_YaZhu_Click()" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="MenPaiFirstOne_BattleTable_TableBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{1.000000,-95.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,95.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_TableBKImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,880.000000},{0.000000,432.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_BK"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="MenPaiFirstOne_BattleTable_TimeBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-22.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Time1">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Text" Value="#{MPDYR_20220427_53}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Time2">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Text" Value="#{MPDYR_20220427_53}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Time3">
+            <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Text" Value="#{MPDYR_20220427_52}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Time4">
+            <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-226.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Text" Value="#{MPDYR_20220427_52}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Time5">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-185.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Text" Value="#{MPDYR_20220427_51}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Time6">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,85.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Text" Value="#{MPDYR_20220427_51}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Time7">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Text" Value="#{MPDYR_20220427_50}"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="MenPaiFirstOne_BattleTable_Table1BK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name1BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name1">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name1Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name2BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,52.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name2">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name2Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name3BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,110.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name3">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name3Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name4BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,159.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name4">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name4Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name5BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,218.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name5">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name5Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name6BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,266.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name6">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name6Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name7BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,323.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name7">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name7Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name8BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,369.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name8">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name8Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name9BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.000000,5.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK2"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name9">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name9Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name10BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.000000,52.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK2"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name10">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name10Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name11BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.000000,110.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK2"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name11">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name11Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name12BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.000000,159.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK2"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name12">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name12Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name13BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.000000,218.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK2"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name13">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name13Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name14BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.000000,266.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK2"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name14">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name14Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name15BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.000000,323.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK2"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name15">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name15Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name16BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.000000,369.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK2"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name16">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name16Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="MenPaiFirstOne_BattleTable_Table2BK">
+          <Property Name="UnifiedSize" Value="{{1.000000,-220.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name21BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,29.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name21">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name21Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name22BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,135.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name22">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name22Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name23BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,242.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name23">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name23Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name24BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,345.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name24">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name24Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name25BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.000000,29.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK2"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name25">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name25Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name26BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.000000,135.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK2"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name26">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name26Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name27BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.000000,242.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK2"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name27">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name27Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name28BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.000000,345.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK2"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name28">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name28Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="MenPaiFirstOne_BattleTable_Table3BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,430.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-215.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name31BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,82.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name31">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name31Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name32BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,293.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name32">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name32Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name33BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.000000,82.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK2"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name33">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name33Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name34BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.000000,293.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK2"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name34">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name34Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="MenPaiFirstOne_BattleTable_Table4BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,330.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-165.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name41BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-30.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name41">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name41Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Name43BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.500000,-30.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_NameBK2"/>
+            <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name42">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+              <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name42Animate">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Animate" Value="YBNotice_65"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="MenPaiFirstOne_BattleTable_Table5BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,100.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.500000,-55.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_BattleTable_Name51">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{1.000000,-20.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Text" Value="六个字名字版"/>
+            <Window Type="TLBB_Animate" Name="MenPaiFirstOne_BattleTable_Name51Animate">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="Animate" Value="YBNotice_65"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="MenPaiFirstOne_BattleTable_LineBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,00.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line1">
+            <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,98.000000},{0.000000,15.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_LeftLine1"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line2">
+            <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,98.000000},{0.000000,51.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_LeftLine2"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line3">
+            <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,98.000000},{0.000000,121.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_LeftLine1"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line4">
+            <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,98.000000},{0.000000,157.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_LeftLine2"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line5">
+            <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,98.000000},{0.000000,228.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_LeftLine1"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line6">
+            <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,98.000000},{0.000000,264.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_LeftLine2"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line7">
+            <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,98.000000},{0.000000,331.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_LeftLine1"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line8">
+            <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,98.000000},{0.000000,367.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_LeftLine2"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line9">
+            <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-171.000000},{0.000000,15.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_RightLine1"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line10">
+            <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-171.000000},{0.000000,51.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_RightLine2"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line11">
+            <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-171.000000},{0.000000,121.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_RightLine1"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line12">
+            <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-171.000000},{0.000000,157.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_RightLine2"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line13">
+            <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-171.000000},{0.000000,228.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_RightLine1"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line14">
+            <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-171.000000},{0.000000,264.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_RightLine2"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line15">
+            <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-171.000000},{0.000000,331.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_RightLine1"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line16">
+            <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-171.000000},{0.000000,367.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_RightLine2"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line17">
+            <Property Name="UnifiedSize" Value="{{0.000000,31.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,38.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_LeftLine3"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line18">
+            <Property Name="UnifiedSize" Value="{{0.000000,31.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,92.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_LeftLine4"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line19">
+            <Property Name="UnifiedSize" Value="{{0.000000,31.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,251.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_LeftLine3"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line20">
+            <Property Name="UnifiedSize" Value="{{0.000000,31.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,305.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_LeftLine4"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line21">
+            <Property Name="UnifiedSize" Value="{{0.000000,31.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-240.000000},{0.000000,38.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_RightLine3"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line22">
+            <Property Name="UnifiedSize" Value="{{0.000000,31.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-240.000000},{0.000000,92.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_RightLine4"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line23">
+            <Property Name="UnifiedSize" Value="{{0.000000,31.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-240.000000},{0.000000,251.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_RightLine3"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line24">
+            <Property Name="UnifiedSize" Value="{{0.000000,31.000000},{0.000000,63.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-240.000000},{0.000000,305.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_RightLine4"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line25">
+            <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,104.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,325.000000},{0.000000,91.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_LeftLine5"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line26">
+            <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,104.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,325.000000},{0.000000,210.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_LeftLine6"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line27">
+            <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,104.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-344.000000},{0.000000,91.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_RightLine5"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line28">
+            <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,104.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-344.000000},{0.000000,210.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_RightLine6"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line29">
+            <Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,10.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,380.000000},{0.000000,198.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_LeftLine7"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_BattleTable_Line30">
+            <Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,10.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-400.000000},{0.000000,198.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleTable_RightLine7"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="MenPaiFirstOne_BattleTable_Get">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,10.000000},{1.000000,-70.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Text" Value="奖励领取"/>
+        <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_BattleTable_Prize_Click()" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

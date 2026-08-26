@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrameNULL" Name="DaHua_StoryLine1_LuoPan_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,390.000000},{0.000000,312.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,30.000000},{0.500000,0.000000}}"/>
+      <Event Name="Hidden" Function="DaHua_StoryLine1_LuoPan_OnHiden();"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+        <Window Type="TLBB_DragTitle" Name="DaHua_StoryLine1_LuoPan_DragTitle">
+          <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,90.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,4.000000}}"/>
+          <Property Name="DragTarget" Value="DaHua_StoryLine1_LuoPan_Frame"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      <Window Type="TLBB_ButtonNULL" Name="DaHua_StoryLine1_LuoPan_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,28.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-69.000000},{0.000000,48.000000}}"/>
+        <Property Name="PushedImage" Value="set:GuiShi_ChanXiao_1 image:guanbi_Checked"/>
+        <Property Name="NormalImage" Value="set:GuiShi_ChanXiao_1 image:guanbi_Normal"/>
+        <Property Name="HoverImage" Value="set:GuiShi_ChanXiao_1 image:guanbi_Hover"/>
+        <Property Name="DisabledImage" Value="set:GuiShi_ChanXiao_1 image:guanbi_Disabled"/>
+        <Property Name="Tooltip" Value="收回罗盘。"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="this:Hide()"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="DaHua_StoryLine1_LuoPan_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="AttachEnabled" Value="True"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Window Type="TLBB_StaticImageNULL" Name="DaHua_StoryLine1_LuoPan_FrameButBk">
+          <Property Name="UnifiedSize" Value="{{0.000000,390.000000},{0.000000,312.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-195.000000},{0.500000,-156.000000}}"/>
+          <Property Name="Image" Value="set:DaHua_Luopan image:DaHua_Luopan_BK"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+        </Window>
+
+        <Window Type="DefaultWindow" Name="DaHua_StoryLine1_LuoPan_Point">
+          <Property Name="UnifiedSize" Value="{{0.000000,99.000000},{0.000000,97.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-56.000000},{0.500000,-60.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="DaHua_StoryLine1_LuoPan_PointImg">
+            <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,66.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-27.000000},{0.500000,-33.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:DaHua_Luopan image:DaHua_Luopan_Ring"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_Animate" Name="DaHua_StoryLine1_LuoPan_FrameBK_Arrival">
+            <Property Name="UnifiedSize" Value="{{0.000000,99.000000},{0.000000,97.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="DHXY_Guangquan"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>          
+        </Window>
+
+
+        <Window Type="TLBB_SimpleText" Name="DaHua_StoryLine1_LuoPan_Distance">
+          <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-44.000000},{0.500000,127.000000}}"/>
+          <Property Name="Text" Value="#{DHJDY_240521_66}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Font" Value="YouYuan9.75"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+       </Window> 
+      </Window>
+ </GUILayout>

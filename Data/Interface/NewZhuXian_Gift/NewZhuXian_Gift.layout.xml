@@ -1,0 +1,141 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="NewZhuXian_Gift_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,596.000000},{0.000000,376.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-292.000000},{0.500000,-160.000000}}"/>
+    <Event Name="Hidden" Function="NewZhuXian_Gift_OnClose();" />
+    <Window Type="TLBB_DragTitle" Name="NewZhuXian_Gift_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{ZXJQ_221225_538}"/>
+      <Property Name="DragTarget" Value="NewZhuXian_Gift_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="NewZhuXian_Gift_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function=""/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="NewZhuXian_Gift_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="NewZhuXian_Gift_OnClose()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="NewZhuXian_Gift_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Window Type="DefaultWindow" Name="NewZhuXian_GiftAllBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="NewZhuXian_GiftBK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,584.000000},{0.000000,320.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:NewZhuXian_Task image:NewZhuXian_BK"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="NewZhuXian_Gift_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,68.000000}}"/>
+        <Property Name="Text" Value="#{ZXJQ_221225_539}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+      <Window Type="TLBB_Frame_Lace9" Name="NewZhuXian_Gift_Gift1">
+        <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,120.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,28.000000},{0.000000,104.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="NewZhuXian_Gift_Gift1_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-26.000000}}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NewZhuXian_Gift_Gift1_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-38.000000},{1.000000,-32.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{ZXJQ_221225_540}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace9" Name="NewZhuXian_Gift_Gift2">
+        <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,120.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,104.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="NewZhuXian_Gift_Gift2_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-26.000000}}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NewZhuXian_Gift_Gift2_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-38.000000},{1.000000,-32.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{ZXJQ_221225_541}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace9" Name="NewZhuXian_Gift_Gift3">
+        <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,120.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,304.000000},{0.000000,104.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="NewZhuXian_Gift_Gift3_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-26.000000}}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NewZhuXian_Gift_Gift3_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-38.000000},{1.000000,-32.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{ZXJQ_221225_542}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace9" Name="NewZhuXian_Gift_Gift4">
+        <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,120.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,442.000000},{0.000000,104.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="NewZhuXian_Gift_Gift4_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-26.000000}}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NewZhuXian_Gift_Gift4_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-38.000000},{1.000000,-32.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{ZXJQ_221225_543}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon11" Name="NewZhuXian_Gift_Gift_Select1">
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{1.000000,-70.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Text" Value="#{ZXJQ_221225_544}"/>
+        <Event Name="Clicked" Function="NewZhuXian_Gift_ConfirmClick(1)"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon11" Name="NewZhuXian_Gift_Gift_Select2">
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-112.000000},{1.000000,-70.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Text" Value="#{ZXJQ_221225_545}"/>
+        <Event Name="Clicked" Function="NewZhuXian_Gift_ConfirmClick(2)"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon11" Name="NewZhuXian_Gift_Gift_Select3">
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,318.000000},{1.000000,-70.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Text" Value="#{ZXJQ_221225_546}"/>
+        <Event Name="Clicked" Function="NewZhuXian_Gift_ConfirmClick(3)"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon11" Name="NewZhuXian_Gift_Gift_Select4">
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,456.000000},{1.000000,-70.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Text" Value="#{ZXJQ_221225_547}"/>
+        <Event Name="Clicked" Function="NewZhuXian_Gift_ConfirmClick(4)"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="NewZhuXian_Gift_Info2">
+        <Property Name="UnifiedSize" Value="{{1.000000,-44.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{1.000000,-32.000000}}"/>
+        <Property Name="Text" Value="#{ZXJQ_221225_581}"/>
+        <Property Name="HorzFormatting" Value="LeftAligned"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

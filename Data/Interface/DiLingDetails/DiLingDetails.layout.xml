@@ -1,0 +1,988 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_HeroFrame01" Name="DiLingDetails_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,904.000000},{0.000000,768.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-452.000000},{0.500000,-384.000000}}"/>
+		<Window Type="TLBB_HeroTitle01" Name="DiLingDetails_DragTitle_BK">
+			<Property Name="UnifiedSize" Value="{{0.000000,410.000000},{0.000000,30.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.500000,-205.000000},{0.000000,-2.000000}}"/>
+			<Property Name="RiseOnClick" Value="False"/>
+		</Window>
+		<Window Type="TLBB_DragTitle" Name="DiLingDetails_DragTitle">
+			<Property Name="UnifiedSize" Value="{{1.000000,-70.000000},{0.000000,30.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,0.000000}}"/>
+			<Property Name="Text" Value="#{DLZX_230314_27}"/>
+			<Property Name="Font" Value="YouYuan11.25"/>
+			<Property Name="DragTarget" Value="DiLingDetails_Frame"/>
+		</Window>
+		<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Close">
+			<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,9.000000}}"/>
+			<Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+			<Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
+			<Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
+			<Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+			<Event Name="Clicked" Function="DiLingDetails_Clicked_Close();"/>
+		</Window>
+		<Window Type="DefaultWindow" Name="DiLingDetails_Client">
+			<Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-34.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,30.000000}}"/>
+			<Window Type="DefaultWindow" Name="DiLingDetails_ClientBK">
+				<Property Name="UnifiedSize" Value="{{0.000000,896.000000},{0.000000,734.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+				<Property Name="MouseRButtonHollow" Value="True"/>
+				<Property Name="MouseMoveHollow" Value="True"/>
+				<Property Name="MouseLButtonHollow" Value="True"/>
+				<Property Name="MouseHollow" Value="True"/>					
+				<Property Name="RiseOnClick" Value="False"/>
+				<Window Type="TLBB_StaticImageNULL" Name="DiLingDetails_ClientBK1">
+					<Property Name="UnifiedSize" Value="{{0.000000,896.000000},{0.000000,734.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="MouseRButtonHollow" Value="True"/>
+					<Property Name="MouseMoveHollow" Value="True"/>
+					<Property Name="MouseLButtonHollow" Value="True"/>
+					<Property Name="MouseHollow" Value="True"/>						
+					<Property Name="Image" Value="set:DiLingDetails image:BK1"/>
+				</Window>	
+			</Window>			
+			<Window Type="TLBB_SimpleText" Name="DiLingDetails_Info">
+				<Property Name="VertFormatting" Value="TopAligned"/>
+				<Property Name="UnifiedSize" Value="{{1.000000,-36.000000},{0.000000,136.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,10.000000}}"/>
+				<Property Name="Text" Value="#{DLZX_230314_28}"/>
+				<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+				<Property Name="MouseRButtonHollow" Value="True"/>
+				<Property Name="MouseMoveHollow" Value="True"/>
+				<Property Name="MouseLButtonHollow" Value="True"/>
+				<Property Name="MouseHollow" Value="True"/>						
+			</Window>
+			<Window Type="DefaultWindow" Name="DiLingDetails_Select">
+				<Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,-114.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,74.000000}}"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+				<Window Type="DefaultWindow" Name="DiLingDetails_Select_QingLong">
+					<Property Name="UnifiedSize" Value="{{0.000000,229.000000},{0.000000,204.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.500000,-106.000000},{0.000000,46.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>					
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_QingLong1Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,27.000000},{0.000000,16.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_QingLong1">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_QingLong(1);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_QingLong1_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value="YI"/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_QingLong1_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>					
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_QingLong2Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{1.000000,-89.000000},{0.000000,17.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_QingLong2">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_QingLong(2);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_QingLong2_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_QingLong2_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>	
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_QingLong3Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,128.000000},{0.000000,78.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_QingLong3">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_QingLong(3);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_QingLong3_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_QingLong3_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>	
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_QingLong4Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{1.000000,-68.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_QingLong4">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_QingLong(4);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_QingLong4_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_QingLong4_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>																					
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_QingLong5Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,124.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_QingLong5">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_QingLong(5);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_QingLong5_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_QingLong5_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>										
+				</Window>	
+				<Window Type="DefaultWindow" Name="DiLingDetails_Select_BaiHu">
+					<Property Name="UnifiedSize" Value="{{0.000000,274.000000},{0.000000,217.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.500000,-286.000000},{0.000000,371.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>							
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_BaiHu1Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{0.000000,11.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_BaiHu1">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_BaiHu(1);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_BaiHu1_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_BaiHu1_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>									
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_BaiHu2Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{0.000000,59.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_BaiHu2">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_BaiHu(2);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_BaiHu2_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_BaiHu2_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>	
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_BaiHu3Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.000000,92.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_BaiHu3">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_BaiHu(3);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_BaiHu3_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_BaiHu3_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>	
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_BaiHu4Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,142.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_BaiHu4">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_BaiHu(4);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_BaiHu4_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_BaiHu4_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>	
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_BaiHu5Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,165.000000},{1.000000,-68.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_BaiHu5">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_BaiHu(5);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_BaiHu5_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_BaiHu5_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>																				
+				</Window>		
+				<Window Type="DefaultWindow" Name="DiLingDetails_Select_ZhuQue">
+					<Property Name="UnifiedSize" Value="{{0.000000,223.000000},{0.000000,213.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.500000,144.000000},{0.000000,146.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>									
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_ZhuQue1Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,20.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_ZhuQue1">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_ZhuQue(1);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_ZhuQue1_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_ZhuQue1_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>									
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_ZhuQue2Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{0.000000,83.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_ZhuQue2">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_ZhuQue(2);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_ZhuQue2_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_ZhuQue2_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>	
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_ZhuQue3Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,103.000000},{0.000000,124.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_ZhuQue3">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_ZhuQue(3);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_ZhuQue3_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_ZhuQue3_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>	
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_ZhuQue4Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,37.000000},{0.000000,90.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_ZhuQue4">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_ZhuQue(4);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_ZhuQue4_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_ZhuQue4_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>	
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_ZhuQue5Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-68.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_ZhuQue5">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_ZhuQue(5);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_ZhuQue5_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_ZhuQue5_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>						
+				</Window>	
+				<Window Type="DefaultWindow" Name="DiLingDetails_Select_XuanWu">
+					<Property Name="UnifiedSize" Value="{{0.000000,252.000000},{0.000000,248.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.500000,-391.000000},{0.000000,104.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>										
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_XuanWu1Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,115.000000},{0.000000,34.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_XuanWu1">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_XuanWu(1);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_XuanWu1_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_XuanWu1_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>									
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_XuanWu2Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,52.000000},{0.000000,81.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_XuanWu2">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_XuanWu(2);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_XuanWu2_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_XuanWu2_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>	
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_XuanWu3Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,146.000000},{0.000000,98.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_XuanWu3">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_XuanWu(3);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_XuanWu3_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_XuanWu3_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>	
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_XuanWu4Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,140.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_XuanWu4">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_XuanWu(4);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_XuanWu4_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_XuanWu4_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>	
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_XuanWu5Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{1.000000,-68.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_XuanWu5">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_XuanWu(5);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_XuanWu5_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_XuanWu5_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>						
+				</Window>	
+				<Window Type="DefaultWindow" Name="DiLingDetails_Select_QiLin">
+					<Property Name="UnifiedSize" Value="{{0.000000,243.000000},{0.000000,213.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.500000,42.000000},{0.000000,397.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>										
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_QiLin1Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,148.000000},{0.000000,13.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_QiLin1">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_QiLin(1);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_QiLin1_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_QiLin1_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>									
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_QiLin2Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,107.000000},{0.000000,57.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_QiLin2">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_QiLin(2);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_QiLin2_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_QiLin2_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>	
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_QiLin3Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,62.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_QiLin3">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_QiLin(3);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_QiLin3_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_QiLin3_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>	
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_QiLin4Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,44.000000},{1.000000,-68.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_QiLin4">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_QiLin(4);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_QiLin4_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_QiLin4_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>	
+					<Window Type="DefaultWindow" Name="DiLingDetails_Select_QiLin5Frame">
+						<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,153.000000},{0.000000,116.000000}}"/>
+						<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Select_QiLin5">
+							<Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-22.000000}}"/>
+							<Property Name="PushedImage" Value="set:DiLingDetails image:Button_Pushed"/>
+							<Property Name="NormalImage" Value="set:DiLingDetails image:Button_Normal"/>
+							<Property Name="HoverImage" Value="set:DiLingDetails image:Button_Hover"/>
+							<Property Name="DisabledImage" Value="set:DiLingDetails image:Button_Disable"/>
+							<Event Name="Clicked" Function="DiLingDetails_Clicked_QiLin(5);"/>
+							<Window Type="TLBB_SimpleText" Name="DiLingDetails_Select_QiLin5_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuan18"/>	
+								<Property Name="MouseRButtonHollow" Value="True"/>
+								<Property Name="MouseMoveHollow" Value="True"/>
+								<Property Name="MouseLButtonHollow" Value="True"/>
+								<Property Name="MouseHollow" Value="True"/>													
+								<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+							</Window>											
+						</Window>
+						<Window Type="TLBB_Animate" Name="DiLingDetails_Select_QiLin5_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,68.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Animate" Value=""/>
+						</Window>	
+					</Window>						
+				</Window>					
+				<Window Type="TLBB_ButtonNULL" Name="DiLingDetails_Button">
+					<Property Name="UnifiedSize" Value="{{0.000000,79.000000},{0.000000,69.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.500000,-21.000000}}"/>
+					<Property Name="PushedImage" Value="set:DiLingDetails2 image:Dragon_Pushed"/>
+					<Property Name="NormalImage" Value="set:DiLingDetails2 image:Dragon_Normal"/>
+					<Property Name="HoverImage" Value="set:DiLingDetails2 image:Dragon_Hover"/>
+					<Property Name="DisabledImage" Value="set:DiLingDetails2 image:Dragon_Dis"/>		
+					<Event Name="Clicked" Function="DiLingDetails_Clicked_EnterDLSY();"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+				</Window>															
+			</Window>
+			<Window Type="TLBB_Frame_Lace4" Name="DiLingDetails_Help_Text">
+				<Property Name="UnifiedSize" Value="{{0.000000,380.000000},{0.000000,29.000000}}" />
+				<Property Name="UnifiedPosition" Value="{{0.500000,-190.000000},{1.000000,-39.000000}}" />
+				<Window Type="TLBB_SimpleText" Name="DiLingDetails_Help_Text1">
+					<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,7.000000}}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}" />
+					<Property Name="Text" Value="#{DLZX_230314_129}" />
+					<Property Name="HorzFormatting" Value="LeftAligned" />
+					<Property Name="VertFormatting" Value="VertCentred" />
+					<Property Name="RiseOnClick" Value="False" />
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="DiLingDetails_Help_Text2">
+					<Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,7.000000}}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}" />
+					<Property Name="Text" Value="#{DLZX_230314_130}" />
+					<Property Name="HorzFormatting" Value="LeftAligned" />
+					<Property Name="VertFormatting" Value="VertCentred" />
+					<Property Name="RiseOnClick" Value="False" />
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="DiLingDetails_Help_Text3">
+					<Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,7.000000}}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}" />
+					<Property Name="Text" Value="#{DLZX_230314_131}" />
+					<Property Name="HorzFormatting" Value="LeftAligned" />
+					<Property Name="VertFormatting" Value="VertCentred" />
+					<Property Name="RiseOnClick" Value="False" />
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="DiLingDetails_Help_Text4">
+					<Property Name="UnifiedPosition" Value="{{0.000000,280.000000},{0.000000,7.000000}}" />
+					<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}" />
+					<Property Name="Text" Value="#{DLZX_230314_132}" />
+					<Property Name="HorzFormatting" Value="LeftAligned" />
+					<Property Name="VertFormatting" Value="VertCentred" />
+					<Property Name="RiseOnClick" Value="False" />
+				</Window>
+			</Window>					
+		</Window>
+	</Window>
+</GUILayout>

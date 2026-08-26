@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<GUILayout>
+<Window Type="TLBB_MainFrameNULL" Name="Kunwu_SWSC_Frame">
+  <Property Name="UnifiedSize" Value="{{0.000000,452.000000},{0.000000,306.000000}}"/>
+  <Property Name="UnifiedPosition" Value="{{0.500000,-225.000000},{0.500000,-144.000000}}"/>
+  <Event Name="Hidden" Function="Kunwu_SWSC_OnHidden();" />
+  <Window Type="TLBB_MainFrame0" Name="Kunwu_SWSC_FrameBK">
+    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+    <Window Type="TLBB_ButtonClose" Name="Kunwu_SWSC_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+		  <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Kunwu_SWSC_OnHidden()" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Kunwu_SWSC_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Kunwu_SWSC_DragTitle">
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{ZSSW_241211_02}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="DragTarget" Value="Kunwu_SWSC_Frame" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Kunwu_SWSC_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-35.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,32.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="DefaultWindow" Name="Kunwu_SWSC_TextClient2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-114.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,22.000000}}"/>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_SWSC_TextBK">
+            <Property Name="UnifiedSize" Value="{{1.0000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Kunwu_SWSC_SWTips">
+              <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,128.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-64.000000}}"/>
+              <Property Name="Text" Value="#{ZSSW_241211_04}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Kunwu_SWSC_Title1">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="#{ZSSW_241211_03}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Kunwu_SWSC_Title2">
+          <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-58.000000},{0.000000,181.000000}}"/>
+          <Property Name="Text" Value="#{ZSSW_241211_05}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_SWSC_TextBK2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,53.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,202.000000}}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Kunwu_SWSC_SWLevel_Tips">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,54.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,202.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="Text" Value="#{ZSSW_241211_06}"/>
+        </Window>
+    </Window>
+  </Window>
+</Window>
+</GUILayout>

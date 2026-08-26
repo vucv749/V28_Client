@@ -1,0 +1,704 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame3" Name="TargetPeak_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,646.000000},{0.000000,456.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.120000,0.000000}}"/>
+    <Property Name="AttachEnabled" Value="False"/>
+    <Event Name="Hidden" Function="TargetPeak_CloseUI();" />
+    <Window Type="TLBB_DragTitle" Name="TargetPeak_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-133.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,108.000000},{0.000000,11.000000}}"/>
+      <Property Name="Text" Value="#gFF0FA0武境" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="DragTarget" Value="TargetPeak_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="TargetPeak_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*SelfPeak&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="TargetPeak_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="this:Hide();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="TargetPeak_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-60.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,34.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="TargetPeak_TopFrame">
+        <Property Name="UnifiedSize" Value="{{0.000000,632.000000},{0.000000,246.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:Peak image:Peak_LevelBK"/>
+        <Window Type="DefaultWindow" Name="TargetPeak_LevelFrame">
+          <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,58.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.500000,-50.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="DefaultWindow" Name="TargetPeak_LevelFrame_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetPeak_LevelFrame_1_1">
+              <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-14.000000},{0.500000,-23.000000}}"/>
+              <Property Name="Image" Value="set:Peak image:Peak_LevelNum0"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="TargetPeak_LevelFrame_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetPeak_LevelFrame_2_1">
+              <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-28.000000},{0.500000,-23.000000}}"/>
+              <Property Name="Image" Value="set:Peak image:Peak_LevelNum0"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetPeak_LevelFrame_2_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.500000,-23.000000}}"/>
+              <Property Name="Image" Value="set:Peak image:Peak_LevelNum0"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="TargetPeak_LevelFrame_3">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetPeak_LevelFrame_3_1">
+              <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-42.000000},{0.500000,-23.000000}}"/>
+              <Property Name="Image" Value="set:Peak image:Peak_LevelNum0"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetPeak_LevelFrame_3_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-14.000000},{0.500000,-23.000000}}"/>
+              <Property Name="Image" Value="set:Peak image:Peak_LevelNum0"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetPeak_LevelFrame_3_3">
+              <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,14.000000},{0.500000,-23.000000}}"/>
+              <Property Name="Image" Value="set:Peak image:Peak_LevelNum0"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="TargetPeak_BottomFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,150.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-150.000000}}"/>
+        <Window Type="TLBB_Frame_Lace2" Name="TargetPeak_BottomLeftFrame">
+          <Property Name="UnifiedSize" Value="{{0.000000,286.000000},{1.000000,-4.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+          <Window Type="DefaultWindow" Name="TargetPeak_PropertiesTitleBK">
+            <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{0.000000,21.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,2.00000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetPeak_PropertiesTitleBK2">
+              <Property Name="UnifiedSize" Value="{{0.000000,510.000000},{0.000000,21.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:Talent image:Talent_LeftBK"/>
+              <Window Type="TLBB_StaticImageNULL" Name="TargetPeak_PropertiesTitleDot">
+                <Property Name="UnifiedSize" Value="{{0.000000,7.000000},{0.000000,7.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,7.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:Talent image:Talent_JuXing"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="TargetPeak_PropertiesTitle">
+                <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,0.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+                <Property Name="Font" Value="YouYuan13"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                <Property Name="Text" Value="#cfff263属性加成"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="TargetPeak_ListContent_AttrText1">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,24.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="力量:"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+            <Window Type="TLBB_SimpleText" Name="TargetPeak_ListContent_Attr1">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{0.000000,0.000000}}"/>
+              <Property Name="TextColor" Value="FFFFF263"/>
+              <Property Name="Text" Value=""/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="TargetPeak_ListContent_AttrText2">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,48.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="灵气:"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+            <Window Type="TLBB_SimpleText" Name="TargetPeak_ListContent_Attr2">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{0.000000,0.000000}}"/>
+              <Property Name="TextColor" Value="FFFFF263"/>
+              <Property Name="Text" Value=""/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="TargetPeak_ListContent_AttrText3">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,72.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="定力:"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+            <Window Type="TLBB_SimpleText" Name="TargetPeak_ListContent_Attr3">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{0.000000,0.000000}}"/>
+              <Property Name="TextColor" Value="FFFFF263"/>
+              <Property Name="Text" Value=""/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="TargetPeak_ListContent_AttrText4">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,96.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="身法:"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+            <Window Type="TLBB_SimpleText" Name="TargetPeak_ListContent_Attr4">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{0.000000,0.000000}}"/>
+              <Property Name="TextColor" Value="FFFFF263"/>
+              <Property Name="Text" Value=""/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="TargetPeak_ListContent_AttrText5">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,144.000000},{0.000000,24.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="外功攻击:"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+            <Window Type="TLBB_SimpleText" Name="TargetPeak_ListContent_Attr5">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{0.000000,0.000000}}"/>
+              <Property Name="TextColor" Value="FFFFF263"/>
+              <Property Name="Text" Value=""/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="TargetPeak_ListContent_AttrText6">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,144.000000},{0.000000,48.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="内功攻击:"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+            <Window Type="TLBB_SimpleText" Name="TargetPeak_ListContent_Attr6">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{0.000000,0.000000}}"/>
+              <Property Name="TextColor" Value="FFFFF263"/>
+              <Property Name="Text" Value=""/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="TargetPeak_ListContent_AttrText7">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,144.000000},{0.000000,72.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="外功防御:"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+            <Window Type="TLBB_SimpleText" Name="TargetPeak_ListContent_Attr7">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{0.000000,0.000000}}"/>
+              <Property Name="TextColor" Value="FFFFF263"/>
+              <Property Name="Text" Value=""/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="TargetPeak_ListContent_AttrText8">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,144.000000},{0.000000,96.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="内功防御:"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+            <Window Type="TLBB_SimpleText" Name="TargetPeak_ListContent_Attr8">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{0.000000,0.000000}}"/>
+              <Property Name="TextColor" Value="FFFFF263"/>
+              <Property Name="Text" Value=""/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="TargetPeak_ListContent_AttrText9">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,120.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="体力:"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+            <Window Type="TLBB_SimpleText" Name="TargetPeak_ListContent_Attr9">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{0.000000,0.000000}}"/>
+              <Property Name="TextColor" Value="FFFFF263"/>
+              <Property Name="Text" Value=""/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="TargetPeak_ListContent_AttrText10">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,144.000000},{0.000000,120.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+            <Window Type="TLBB_SimpleText" Name="TargetPeak_ListContent_Attr10">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{0.000000,0.000000}}"/>
+              <Property Name="TextColor" Value="FFFFF263"/>
+              <Property Name="Text" Value=""/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace2" Name="TargetPeak_BottomRightFrame">
+          <Property Name="UnifiedSize" Value="{{0.000000,342.000000},{1.000000,-4.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-344.000000},{0.000000,2.000000}}"/>
+          <Window Type="DefaultWindow" Name="TargetPeak_BottomRightTitleBK">
+            <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{0.000000,21.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,2.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetPeak_BottomRightTitleBK2">
+              <Property Name="UnifiedSize" Value="{{0.000000,510.000000},{0.000000,21.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:Talent image:Talent_LeftBK"/>
+              <Window Type="TLBB_StaticImageNULL" Name="TargetPeak_BottomRightTitleDot">
+                <Property Name="UnifiedSize" Value="{{0.000000,7.000000},{0.000000,7.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,7.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:Talent image:Talent_JuXing"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="TargetPeak_BottomRightTitle">
+                <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,0.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+                <Property Name="Font" Value="YouYuan13"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                <Property Name="Text" Value="#cfff263武境真诀"/>
+                <Property Name="RiseOnClick" Value="False"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="TargetPeak_WuxueLearn_Attack_BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,168.000000},{1.000000,-26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,24.000000}}"/>
+            <Window Type="DefaultWindow" Name="TargetPeak_WuxueLearn_AttackTitle_BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,21.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-38.000000},{0.000000,6.000000}}"/>
+              <Window Type="TLBB_StaticImageNULL" Name="TargetPeak_WuxueLearn_AttackTitle_Icon">
+                <Property Name="UnifiedSize" Value="{{0.000000,21.000000},{0.000000,21.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="Image" Value="set:Peak image:Peak_RedIcon_Big"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="TargetPeak_WuxueLearn_AttackTitle">
+                <Property Name="UnifiedSize" Value="{{0.000000,55.000000},{0.000000,21.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-55.000000},{0.000000,0.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+                <Property Name="Text" Value="#cfff263攻击武诀"/>
+                <Property Name="Tooltip" Value="角色可在武境等级达到每#G整10级#cfff263时获得武境真诀点，可前往#G大理（219，43）玄智法师#cfff263处进行加点与重置操作。"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_TitleLace_Peak1" Name="TargetPeak_WuxueLearn_Attack1BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-7.000000},{0.000000,26.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,32.000000}}"/>
+              <Window Type="DefaultWindow" Name="TargetPeak_WuxueLearn_Attack1Text">
+                <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,26.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="TargetPeak_WuxueLearn_Attack1">
+                  <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,0.000000}}"/>
+                  <Property Name="TextColor" Value="FFFFF263"/>
+                  <Property Name="Text" Value="少林"/>
+                  <Property Name="Tooltip" Value=""/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="TargetPeak_WuxueLearn_Attack1_NumIcon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,17.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{0.500000,-9.000000}}"/>
+                  <Property Name="Image" Value="set:Peak image:Peak_RedIcon_Small"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="TargetPeak_WuxueLearn_Attack1_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,0.000000}}"/>
+                  <Property Name="TextColor" Value="FFFFF263"/>
+                  <Property Name="Text" Value=""/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_TitleLace_Peak2" Name="TargetPeak_WuxueLearn_Attack1_Locked">
+              <Property Name="UnifiedSize" Value="{{1.000000,-7.000000},{0.000000,26.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,32.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_SimpleText" Name="TargetPeak_WuxueLearn_Attack1_LockedText">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+                <Property Name="Text" Value="#cfff263武境#G10#cfff263级可获取"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_TitleLace_Peak1" Name="TargetPeak_WuxueLearn_Attack2BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-7.000000},{0.000000,26.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,60.000000}}"/>
+              <Window Type="DefaultWindow" Name="TargetPeak_WuxueLearn_Attack2Text">
+                <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,26.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="TargetPeak_WuxueLearn_Attack2">
+                  <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,0.000000}}"/>
+                  <Property Name="TextColor" Value="FFFFF263"/>
+                  <Property Name="Text" Value="少林"/>
+                  <Property Name="Tooltip" Value=""/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="TargetPeak_WuxueLearn_Attack2_NumIcon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,17.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{0.500000,-9.000000}}"/>
+                  <Property Name="Image" Value="set:Peak image:Peak_RedIcon_Small"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="TargetPeak_WuxueLearn_Attack2_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,0.000000}}"/>
+                  <Property Name="TextColor" Value="FFFFF263"/>
+                  <Property Name="Text" Value=""/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_TitleLace_Peak2" Name="TargetPeak_WuxueLearn_Attack2_Locked">
+              <Property Name="UnifiedSize" Value="{{1.000000,-7.000000},{0.000000,26.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,60.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_SimpleText" Name="TargetPeak_WuxueLearn_Attack2_LockedText">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+                <Property Name="Text" Value="#cfff263武境50级解锁"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_TitleLace_Peak1" Name="TargetPeak_WuxueLearn_Attack3BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-7.000000},{0.000000,26.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,88.000000}}"/>
+              <Window Type="DefaultWindow" Name="TargetPeak_WuxueLearn_Attack3Text">
+                <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,26.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="TargetPeak_WuxueLearn_Attack3">
+                  <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,0.000000}}"/>
+                  <Property Name="TextColor" Value="FFFFF263"/>
+                  <Property Name="Text" Value="少林"/>
+                  <Property Name="Tooltip" Value=""/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="TargetPeak_WuxueLearn_Attack3_NumIcon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,17.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{0.500000,-9.000000}}"/>
+                  <Property Name="Image" Value="set:Peak image:Peak_RedIcon_Small"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="TargetPeak_WuxueLearn_Attack3_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,0.000000}}"/>
+                  <Property Name="TextColor" Value="FFFFF263"/>
+                  <Property Name="Text" Value=""/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_TitleLace_Peak2" Name="TargetPeak_WuxueLearn_Attack3_Locked">
+              <Property Name="UnifiedSize" Value="{{1.000000,-7.000000},{0.000000,26.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,88.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_SimpleText" Name="TargetPeak_WuxueLearn_Attack3_LockedText">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+                <Property Name="Text" Value="#cfff263武境100级解锁"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="TargetPeak_WuxueLearn_Defence_BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,168.000000},{1.000000,-26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,171.000000},{0.000000,24.000000}}"/>
+            <Window Type="DefaultWindow" Name="TargetPeak_WuxueLearn_DefenceTitle_BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,21.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-38.000000},{0.000000,6.000000}}"/>
+              <Window Type="TLBB_StaticImageNULL" Name="TargetPeak_WuxueLearn_DefenceTitle_Icon">
+                <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="Image" Value="set:Peak image:Peak_BlueIcon_Big"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="TargetPeak_WuxueLearn_DefenceTitle">
+                <Property Name="UnifiedSize" Value="{{0.000000,55.000000},{0.000000,21.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-55.000000},{0.000000,0.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+                <Property Name="Text" Value="#cfff263守御武诀"/>
+                <Property Name="Tooltip" Value="角色可在武境等级达到每#G整10级#cfff263时获得武境真诀点，可前往#G大理（219，43）玄智法师#cfff263处进行加点与重置操作。"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_TitleLace_Peak1" Name="TargetPeak_WuxueLearn_Defence1BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-7.000000},{0.000000,26.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,32.000000}}"/>
+              <Window Type="DefaultWindow" Name="TargetPeak_WuxueLearn_Defence1Text">
+                <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,26.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="TargetPeak_WuxueLearn_Defence1">
+                  <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,0.000000}}"/>
+                  <Property Name="TextColor" Value="FFFFF263"/>
+                  <Property Name="Text" Value="少林"/>
+                  <Property Name="Tooltip" Value=""/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="TargetPeak_WuxueLearn_Defence1_NumIcon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,16.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.500000,-9.000000}}"/>
+                  <Property Name="Image" Value="set:Peak image:Peak_BlueIcon_Small"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="TargetPeak_WuxueLearn_Defence1_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,0.000000}}"/>
+                  <Property Name="TextColor" Value="FFFFF263"/>
+                  <Property Name="Text" Value=""/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_TitleLace_Peak2" Name="TargetPeak_WuxueLearn_Defence1_Locked">
+              <Property Name="UnifiedSize" Value="{{1.000000,-7.000000},{0.000000,26.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,32.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_SimpleText" Name="TargetPeak_WuxueLearn_Defence1_LockedText">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+                <Property Name="Text" Value="#cfff263武境#G20#cfff263级可获取"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_TitleLace_Peak1" Name="TargetPeak_WuxueLearn_Defence2BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-7.000000},{0.000000,26.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,60.000000}}"/>
+              <Window Type="DefaultWindow" Name="TargetPeak_WuxueLearn_Defence2Text">
+                <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,26.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="TargetPeak_WuxueLearn_Defence2">
+                  <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,0.000000}}"/>
+                  <Property Name="TextColor" Value="FFFFF263"/>
+                  <Property Name="Text" Value="少林"/>
+                  <Property Name="Tooltip" Value=""/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="TargetPeak_WuxueLearn_Defence2_NumIcon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,16.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.500000,-9.000000}}"/>
+                  <Property Name="Image" Value="set:Peak image:Peak_BlueIcon_Small"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="TargetPeak_WuxueLearn_Defence2_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,0.000000}}"/>
+                  <Property Name="TextColor" Value="FFFFF263"/>
+                  <Property Name="Text" Value=""/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_TitleLace_Peak2" Name="TargetPeak_WuxueLearn_Defence2_Locked">
+              <Property Name="UnifiedSize" Value="{{1.000000,-7.000000},{0.000000,26.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,60.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_SimpleText" Name="TargetPeak_WuxueLearn_Defence2_LockedText">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+                <Property Name="Text" Value="#cfff263武境50级解锁"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_TitleLace_Peak1" Name="TargetPeak_WuxueLearn_Defence3BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-7.000000},{0.000000,26.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,88.000000}}"/>
+              <Window Type="DefaultWindow" Name="TargetPeak_WuxueLearn_Defence3Text">
+                <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,26.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="TargetPeak_WuxueLearn_Defence3">
+                  <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,0.000000}}"/>
+                  <Property Name="TextColor" Value="FFFFF263"/>
+                  <Property Name="Text" Value="少林"/>
+                  <Property Name="Tooltip" Value=""/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="TargetPeak_WuxueLearn_Defence3_NumIcon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,16.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.500000,-9.000000}}"/>
+                  <Property Name="Image" Value="set:Peak image:Peak_BlueIcon_Small"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="TargetPeak_WuxueLearn_Defence3_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,0.000000}}"/>
+                  <Property Name="TextColor" Value="FFFFF263"/>
+                  <Property Name="Text" Value=""/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_TitleLace_Peak2" Name="TargetPeak_WuxueLearn_Defence3_Locked">
+              <Property Name="UnifiedSize" Value="{{1.000000,-7.000000},{0.000000,26.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,88.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_SimpleText" Name="TargetPeak_WuxueLearn_Defence3_LockedText">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+                <Property Name="Text" Value="#cfff263武境100级解锁"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="TargetPeak_Checkbox_Frame">
+      <Property Name="UnifiedSize" Value="{{1.00000,-8.000000},{0.000000,24.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{1.000000,-25.000000}}"/>
+      <Window Type="TLBB_ButtonPageDown" Name="TargetPeak_SelfEquip">
+        <Property Name="AbsolutePosition" Value="x:0.0 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Text" Value="#{INTERFACE_XML_13}" />
+        <Property Name="HorzLabelFormatting" Value="WordWrapCentreAligned" />
+        <Property Name="MouseRButtonHollow" Value="true" />
+        <Event Name="MouseButtonUp" Function="TargetPeak_OnPageClicked(1);" />
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="TargetPeak_TargetData">
+        <Property Name="AbsolutePosition" Value="x:42.0 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Text" Value="#{INTERFACE_XML_7}" />
+        <Property Name="MouseRButtonHollow" Value="true" />
+        <Event Name="MouseButtonUp" Function="TargetPeak_OnPageClicked(2);" />
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="TargetPeak_Pet">
+        <Property Name="AbsolutePosition" Value="x:84.0 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Text" Value="#{INTERFACE_XML_12}" />
+        <Property Name="MouseRButtonHollow" Value="true" />
+        <Event Name="MouseButtonUp" Function="TargetPeak_OnPageClicked(3);" />
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="TargetPeak_TargetWuhun">
+        <Property Name="AbsolutePosition" Value="x:126.0 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Text" Value="#{WH_xml_XX(95)}" />
+        <Property Name="MouseRButtonHollow" Value="true" />
+        <Event Name="MouseButtonUp" Function="TargetPeak_OnPageClicked(4);" />
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="TargetPeak_TargetLingyu">
+        <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,168.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{SZXT_221216_22}" />
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="MouseButtonUp" Function="TargetPeak_OnPageClicked(5);"/>
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="TargetPeak_TargetWeapon2">
+        <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{SBFW_20230707_1}" />
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="MouseButtonUp" Function="TargetPeak_OnPageClicked(6)"/>
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="TargetPeak_TargetDWJinJie">
+        <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,252.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{DWJJ_240329_153}" />
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="MouseButtonUp" Function="TargetPeak_OnPageClicked(7);"/>
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="TargetPeak_TargetPeak">
+        <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,294.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{DFJC_250709_1}" />
+        <Property Name="Selected" Value="True"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="MouseButtonUp" Function="TargetPeak_OnPageClicked(8);"/>
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="TargetPeak_TargetProfile">
+        <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,336.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{GRYM_221213_22}" />
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="MouseButtonUp" Function="TargetPeak_OnPageClicked(9);"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="DefaultWindow" Name="Frozen_GeCao_Countdown_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,468.000000},{0.000000,204.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-234.000000},{0.000000,115.000000}}"/>
+		<Property Name="MouseRButtonHollow" Value="True"/>
+		<Property Name="MouseMoveHollow" Value="True"/>
+		<Property Name="MouseLButtonHollow" Value="True"/>
+		<Property Name="MouseHollow" Value="True"/>	
+		<Property Name="AlwaysOnTop" Value="True"/>
+		<Window Type="TLBB_Animate" Name="Frozen_GeCao_Countdown_Animate">
+			<Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,184.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.500000,-78.000000},{0.500000,-92.000000}}"/>
+			<Property Name="MouseRButtonHollow" Value="True"/>
+			<Property Name="MouseMoveHollow" Value="True"/>
+			<Property Name="MouseLButtonHollow" Value="True"/>
+			<Property Name="MouseHollow" Value="True"/>
+			<Property Name="Animate" Value="Frozen_GeCao_Countdown_Time"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Event Name="AnimateEnd" Function=""/>
+		</Window>
+		<Window Type="TLBB_StaticImageNULL" Name="Frozen_GeCao_Countdown_Start">
+			<Property Name="UnifiedSize" Value="{{0.000000,310.000000},{0.000000,102.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.500000,-155.000000},{0.500000,-51.000000}}"/>
+			<Property Name="RiseOnClick" Value="False"/>
+			<Property Name="MouseRButtonHollow" Value="True"/>
+			<Property Name="MouseMoveHollow" Value="True"/>
+			<Property Name="MouseLButtonHollow" Value="True"/>
+			<Property Name="MouseHollow" Value="True"/>
+			<Property Name="Image" Value="set:Frozen_GeCao image:Frozen_GeCao_Countdown_Start"/>
+		</Window>
+		<Window Type="TLBB_StaticImageNULL" Name="Frozen_GeCao_Countdown_End">
+			<Property Name="UnifiedSize" Value="{{0.000000,310.000000},{0.000000,102.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.500000,-155.000000},{0.500000,-51.000000}}"/>
+			<Property Name="RiseOnClick" Value="False"/>
+			<Property Name="MouseRButtonHollow" Value="True"/>
+			<Property Name="MouseMoveHollow" Value="True"/>
+			<Property Name="MouseLButtonHollow" Value="True"/>
+			<Property Name="MouseHollow" Value="True"/>
+			<Property Name="Image" Value="set:Frozen_GeCao image:Frozen_GeCao_Countdown_End"/>
+		</Window>
+	</Window>
+</GUILayout>

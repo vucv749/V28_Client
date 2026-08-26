@@ -1,0 +1,1825 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="TowerBox_ProjectInfo_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,1022.000000},{0.000000,667.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-511.000000},{0.500000,-334.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="TowerBox_ProjectInfo_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,11.000000}}"/>
+      <Property Name="Text" Value="#{PTDB_231225_44}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="TowerBox_ProjectInfo_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="TowerBox_ProjectInfo_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="TowerBox_ProjectInfo_OnClosed();"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="TowerBox_ProjectInfo_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,35.000000}}"/>
+      <Property Name="Image" Value="set:NewPvp2 image:NewPvpBK1"/>
+      <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_SearchModeImage">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,744.000000},{0.000000,60.000000}}"/>
+        <Property Name="Image" Value="set:NewPvp image:NewPvp_AwardImage"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_SearchModeText">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,770.000000},{0.000000,66.000000}}"/>
+        <Property Name="Text" Value="#{PTDB_231225_254}"/>
+        <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ComboList" Name="TowerBox_ProjectInfo_SearchMode">
+        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,850.000000},{0.000000,66.000000}}"/>
+        <Event Name="ListSelectionAccepted" Function="TowerBox_ProjectInfo_Box_Changed();"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="TowerBox_ProjectInfo_Tower1">
+        <Property Name="UnifiedSize" Value="{{0.000000,356.000000},{0.000000,158.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,625.000000},{0.000000,273.000000}}"/>
+        <Window Type="DefaultWindow" Name="TowerBox_ProjectInfo_Tower1_1">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,56.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_1Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-13.000000},{0.500000,-13.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Self"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_1BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,56.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-36.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_Tower2_4"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_1Line">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_RD"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_1Line2">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_RH"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_1Box1">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{0.000000,14.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower2_Box4"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_1Box2">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{0.000000,14.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower2_Box4_2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Tower1_1Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.000000,18.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_60}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="TowerBox_ProjectInfo_Tower1_2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,46.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,41.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_2Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-13.000000},{0.500000,-13.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Self"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_2BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-41.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_Tower2_3"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_2Line">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,8.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_RD"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_2Line2">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,8.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_RH"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_2Box1">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{0.000000,4.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower2_Box3"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_2Box2">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{0.000000,4.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower2_Box3_2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Tower1_2Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.000000,8.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_60}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="TowerBox_ProjectInfo_Tower1_3">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,46.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,61.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_3Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-13.000000},{0.500000,-13.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Self"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_3BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,38.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-43.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_Tower2_2"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_3Line">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-156.000000},{0.000000,18.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_LD"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_3Line2">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-156.000000},{0.000000,18.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_LH"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_3Box1">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,14.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower2_Box2"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_3Box2">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,14.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower2_Box2_2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Tower1_3Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,-6.000000},{0.000000,18.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_60}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="TowerBox_ProjectInfo_Tower1_4">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,83.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_4Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-13.000000},{0.500000,-13.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Self"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_4BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,58.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-49.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_Tower2_1"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_4Line">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-156.000000},{0.000000,28.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_LD"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_4Line2">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-156.000000},{0.000000,28.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_LH"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_4Box1">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,24.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower2_Box1"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower1_4Box2">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,24.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower2_Box1_2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Tower1_4Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,-6.000000},{0.000000,28.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_60}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="TowerBox_ProjectInfo_Tower2">
+        <Property Name="UnifiedSize" Value="{{0.000000,356.000000},{0.000000,158.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,586.000000},{0.000000,106.000000}}"/>
+        <Window Type="DefaultWindow" Name="TowerBox_ProjectInfo_Tower2_1">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,56.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_1Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-13.000000},{0.500000,-13.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Self"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_1BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,56.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-36.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_Tower1_4"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_1Line">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-156.000000},{0.000000,18.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_LD"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_1Line2">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-156.000000},{0.000000,18.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_LH"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_1Box1">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,14.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower1_Box4"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_1Box2">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,14.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower1_Box4_2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Tower2_1Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,-6.000000},{0.000000,18.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_60}"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="TowerBox_ProjectInfo_Tower2_2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,46.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,41.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_2Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-13.000000},{0.500000,-13.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Self"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_2BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-41.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_Tower1_3"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_2Line">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,8.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_RD"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_2Line2">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,8.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_RH"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_2Box1">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{0.000000,4.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower1_Box3"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_2Box2">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{0.000000,4.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower1_Box3_2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Tower2_2Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.000000,8.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_60}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="TowerBox_ProjectInfo_Tower2_3">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,46.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,61.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_3Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-13.000000},{0.500000,-13.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Self"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_3BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,38.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-43.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_Tower1_2"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_3Line">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_RD"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_3Line2">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_RH"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_3Box1">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{0.000000,14.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower1_Box2"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_3Box2">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{0.000000,14.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower1_Box2_2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Tower2_3Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-116.000000},{0.000000,18.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_60}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="TowerBox_ProjectInfo_Tower2_4">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,83.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_4Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-13.000000},{0.500000,-13.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Self"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_4BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,58.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-49.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_Tower1_1"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_4Line">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,28.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_RD"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_4Line2">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,28.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_RH"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_4Box1">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{0.000000,24.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower1_Box1"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower2_4Box2">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{0.000000,24.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower1_Box1_2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Tower2_4Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-116.000000},{0.000000,28.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_60}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="TowerBox_ProjectInfo_Tower3">
+        <Property Name="UnifiedSize" Value="{{0.000000,356.000000},{0.000000,158.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,123.000000}}"/>
+        <Window Type="DefaultWindow" Name="TowerBox_ProjectInfo_Tower3_1">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,56.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_1Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-13.000000},{0.500000,-13.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Self"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_1BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,56.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-36.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_Tower3_4"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_1Line">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_RD"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_1Line2">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_RH"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_1Box1">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{0.000000,14.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower3_Box4"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_1Box2">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{0.000000,14.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower3_Box4_2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Tower3_1Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.000000,18.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_60}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="TowerBox_ProjectInfo_Tower3_2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,46.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,41.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_2Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-13.000000},{0.500000,-13.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Self"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_2BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-41.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_Tower3_3"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_2Line">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-156.000000},{0.000000,8.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_LD"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_2Line2">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-156.000000},{0.000000,8.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_LH"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_2Box1">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,4.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower3_Box3"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_2Box2">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,4.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower3_Box3_2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Tower3_2Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,-6.000000},{0.000000,8.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_60}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="TowerBox_ProjectInfo_Tower3_3">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,46.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,61.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_3Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-13.000000},{0.500000,-13.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Self"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_3BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,38.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-43.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_Tower3_2"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_3Line">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-156.000000},{0.000000,18.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_LD"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_3Line2">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-156.000000},{0.000000,18.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_LH"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_3Box1">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,14.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower3_Box2"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_3Box2">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,14.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower3_Box2_2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Tower3_3Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,-6.000000},{0.000000,18.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_60}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="TowerBox_ProjectInfo_Tower3_4">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,83.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_4Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-13.000000},{0.500000,-13.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Self"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_4BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,58.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-49.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_Tower3_1"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_4Line">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-156.000000},{0.000000,28.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_LD"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_4Line2">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-156.000000},{0.000000,28.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_LH"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_4Box1">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,24.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower3_Box1"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower3_4Box2">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,24.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower3_Box1_1"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Tower3_4Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,-6.000000},{0.000000,28.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_60}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="TowerBox_ProjectInfo_Tower4">
+        <Property Name="UnifiedSize" Value="{{0.000000,356.000000},{0.000000,260.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,278.000000},{0.000000,125.000000}}"/>
+        <Window Type="DefaultWindow" Name="TowerBox_ProjectInfo_Tower4_0">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,82.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_0Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-13.000000},{0.500000,-13.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Self"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_0BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,76.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-47.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_Tower4_4"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_0Line">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,34.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_RD"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_0Line2">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,34.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_RH"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_0Box1">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{0.000000,30.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower4_Box3"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_0Box2">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{0.000000,30.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower4_Box3_2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Tower4_0Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.000000,34.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_60}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="TowerBox_ProjectInfo_Tower4_1">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,66.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_1Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-13.000000},{0.500000,-13.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Self"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_1BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,124.000000},{0.000000,52.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-62.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_Tower4_3"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_1Line">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,24.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_RD"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_1Line2">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,24.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_RH"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_1Box1">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{0.000000,20.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower4_Box2"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_1Box2">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{0.000000,20.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower4_Box2_2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Tower4_1Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.000000,24.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_60}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="TowerBox_ProjectInfo_Tower4_2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,70.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,106.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_2Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-13.000000},{0.500000,-13.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Self"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_2BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,66.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-68.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_Tower4_2"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_2Line">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,30.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_RD"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_2Line2">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,30.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_RH"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_2Box1">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{0.000000,26.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower4_Box1"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_2Box2">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{0.000000,26.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower4_Box1_2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Tower4_2Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.000000,30.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_60}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="TowerBox_ProjectInfo_Tower4_3">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,100.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,140.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_3Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-13.000000},{0.500000,-13.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Self"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_3BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,176.000000},{0.000000,92.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-87.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_Tower4_1"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_3Line">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-156.000000},{0.000000,48.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_LD"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_3Line2">
+            <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-156.000000},{0.000000,48.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_LH"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_3Box1">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,44.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower4_Box0"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Tower4_3Box2">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,44.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_Tower4_Box0_2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Tower4_3Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,-6.000000},{0.000000,48.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_60}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+          </Window>
+        </Window>
+      </Window>
+        <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Right_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,46.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="#{PTDB_231225_67}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      <Window Type="DefaultWindow" Name="TowerBox_ProjectInfo_Award2">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,154.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-154.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item1_Frame">
+          <Property Name="UnifiedSize" Value="{{0.000000,196.000000},{0.000000,154.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,810.000000},{0.000000,0.000000}}"/>
+          <Property Name="Visible" Value="False"/>
+          <Property Name="Image" Value="set:NewPvp2 image:NewPvp_AwardD"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item_Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,196.000000},{0.000000,154.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_AwardH"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item_End">
+            <Property Name="UnifiedSize" Value="{{0.000000,196.000000},{0.000000,154.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_AwardN"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award_1Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_2140"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award_1Time2">
+            <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_2140_2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Award_1Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.500000,0.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_73}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Award_1Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,12.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_149}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TowerBox_ProjectInfo_Award2_Item1_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-63.000000},{0.500000,0.000000}}"/>
+            <Property Name="DraggingEnabled" Value="True"/>
+            <Property Name="DragAcceptName" Value="G72"/>
+            <Property Name="BackImage" Value="set:NewPvp2 image:NewPvpIcon1"/>
+            <Event Name="Clicked" Function="TowerBox_ProjectInfo_Award2_Item1(1);"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item1_1Get">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewPvp2 image:NewPvpIcon2"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TowerBox_ProjectInfo_Award2_Item1_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,13.000000},{0.500000,0.000000}}"/>
+            <Property Name="DraggingEnabled" Value="True"/>
+            <Property Name="DragAcceptName" Value="G72"/>
+            <Property Name="BackImage" Value="set:NewPvp2 image:NewPvpIcon1"/>
+            <Event Name="Clicked" Function="TowerBox_ProjectInfo_Award2_Item1(1);"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item1_2Get">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewPvp2 image:NewPvpIcon2"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item2_Frame">
+          <Property Name="UnifiedSize" Value="{{0.000000,196.000000},{0.000000,154.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,804.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:NewPvp2 image:NewPvp_AwardD"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item2_Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,196.000000},{0.000000,154.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_AwardH"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item2_End">
+            <Property Name="UnifiedSize" Value="{{0.000000,196.000000},{0.000000,154.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_AwardN"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award_2Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_2130"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award_2Time2">
+            <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_2130_2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Award_2Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.500000,0.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_73}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Award_2Get2">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.500000,60.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_73}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Award_2Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,12.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_150}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TowerBox_ProjectInfo_Award2_Item2_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-44.000000},{0.500000,-42.000000}}"/>
+            <Property Name="DraggingEnabled" Value="True"/>
+            <Property Name="DragAcceptName" Value="G72"/>
+            <Property Name="BackImage" Value="set:NewPvp2 image:NewPvpIcon1"/>
+            <Event Name="Clicked" Function="TowerBox_ProjectInfo_Award2_Item1(1);"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item2_1Get">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewPvp2 image:NewPvpIcon2"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item2_1Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TowerBox_ProjectInfo_Award2_Item2_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,2.000000},{0.500000,-42.000000}}"/>
+            <Property Name="DraggingEnabled" Value="True"/>
+            <Property Name="DragAcceptName" Value="G72"/>
+            <Property Name="BackImage" Value="set:NewPvp2 image:NewPvpIcon1"/>
+            <Event Name="Clicked" Function="TowerBox_ProjectInfo_Award2_Item1(1);"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item2_2Get">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewPvp2 image:NewPvpIcon2"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item2_2Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item2_1Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,134.000000},{0.000000,36.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_NowAward"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item2_2Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,134.000000},{0.000000,36.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_NowAward"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TowerBox_ProjectInfo_Award2_Item2_3">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-44.000000},{0.500000,20.000000}}"/>
+            <Property Name="DraggingEnabled" Value="True"/>
+            <Property Name="DragAcceptName" Value="G72"/>
+            <Property Name="BackImage" Value="set:NewPvp2 image:NewPvpIcon1"/>
+            <Event Name="Clicked" Function="TowerBox_ProjectInfo_Award2_Item1(1);"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item2_3Get">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewPvp2 image:NewPvpIcon2"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item2_3Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TowerBox_ProjectInfo_Award2_Item2_4">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,2.000000},{0.500000,20.000000}}"/>
+            <Property Name="DraggingEnabled" Value="True"/>
+            <Property Name="DragAcceptName" Value="G72"/>
+            <Property Name="BackImage" Value="set:NewPvp2 image:NewPvpIcon1"/>
+            <Event Name="Clicked" Function="TowerBox_ProjectInfo_Award2_Item1(1);"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item2_4Get">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewPvp2 image:NewPvpIcon2"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item2_4Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item2_3Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,134.000000},{0.000000,96.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_NowAward"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item2_4Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,134.000000},{0.000000,96.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_NowAward"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item3_Frame">
+          <Property Name="UnifiedSize" Value="{{0.000000,196.000000},{0.000000,154.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,574.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:NewPvp2 image:NewPvp_AwardD"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item3_Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,196.000000},{0.000000,154.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_AwardH"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item3_End">
+            <Property Name="UnifiedSize" Value="{{0.000000,196.000000},{0.000000,154.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_AwardN"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award_3Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_2120"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award_3Time2">
+            <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_2120_2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Award_3Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.500000,0.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_73}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Award_3Get2">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.500000,60.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_73}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Award_3Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,12.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_151}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TowerBox_ProjectInfo_Award2_Item3_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-21.000000},{0.500000,-42.000000}}"/>
+            <Property Name="DraggingEnabled" Value="True"/>
+            <Property Name="DragAcceptName" Value="G72"/>
+            <Property Name="BackImage" Value="set:NewPvp2 image:NewPvpIcon1"/>
+            <Event Name="Clicked" Function="TowerBox_ProjectInfo_Award2_Item1(1);"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item3_1Get">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewPvp2 image:NewPvpIcon2"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item3_1Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item3_1Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_NowAward"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TowerBox_ProjectInfo_Award2_Item3_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-44.000000},{0.500000,20.000000}}"/>
+            <Property Name="DraggingEnabled" Value="True"/>
+            <Property Name="DragAcceptName" Value="G72"/>
+            <Property Name="BackImage" Value="set:NewPvp2 image:NewPvpIcon1"/>
+            <Event Name="Clicked" Function="TowerBox_ProjectInfo_Award2_Item1(1);"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item3_2Get">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewPvp2 image:NewPvpIcon2"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item3_2Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TowerBox_ProjectInfo_Award2_Item3_3">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,2.000000},{0.500000,20.000000}}"/>
+            <Property Name="DraggingEnabled" Value="True"/>
+            <Property Name="DragAcceptName" Value="G72"/>
+            <Property Name="BackImage" Value="set:NewPvp2 image:NewPvpIcon1"/>
+            <Event Name="Clicked" Function="TowerBox_ProjectInfo_Award2_Item1(1);"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item3_3Get">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewPvp2 image:NewPvpIcon2"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item3_3Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item3_2Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,134.000000},{0.000000,96.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_NowAward"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item3_3Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,134.000000},{0.000000,96.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_NowAward"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item4_Frame">
+          <Property Name="UnifiedSize" Value="{{0.000000,196.000000},{0.000000,154.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,344.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:NewPvp2 image:NewPvp_AwardD"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item4_Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,196.000000},{0.000000,154.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_AwardH"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item4_End">
+            <Property Name="UnifiedSize" Value="{{0.000000,196.000000},{0.000000,154.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_AwardN"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award_4Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_2110"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award_4Time2">
+            <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_2110_2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Award_4Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.500000,0.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_73}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Award_4Get2">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.500000,60.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_73}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Award_4Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,12.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_152}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TowerBox_ProjectInfo_Award2_Item4_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-21.000000},{0.500000,-42.000000}}"/>
+            <Property Name="DraggingEnabled" Value="True"/>
+            <Property Name="DragAcceptName" Value="G72"/>
+            <Property Name="BackImage" Value="set:NewPvp2 image:NewPvpIcon1"/>
+            <Event Name="Clicked" Function="TowerBox_ProjectInfo_Award2_Item1(1);"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item4_1Get">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewPvp2 image:NewPvpIcon2"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item4_1Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item4_1Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_NowAward"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TowerBox_ProjectInfo_Award2_Item4_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-21.000000},{0.500000,18.000000}}"/>
+            <Property Name="DraggingEnabled" Value="True"/>
+            <Property Name="DragAcceptName" Value="G72"/>
+            <Property Name="BackImage" Value="set:NewPvp2 image:NewPvpIcon1"/>
+            <Event Name="Clicked" Function="TowerBox_ProjectInfo_Award2_Item1(1);"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item4_2Get">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewPvp2 image:NewPvpIcon2"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item4_2Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item4_2Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,96.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_NowAward"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item5_Frame">
+          <Property Name="UnifiedSize" Value="{{0.000000,196.000000},{0.000000,154.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:NewPvp2 image:NewPvp_AwardD"/>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item5_Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,196.000000},{0.000000,154.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_AwardH"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item5_End">
+            <Property Name="UnifiedSize" Value="{{0.000000,196.000000},{0.000000,154.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_AwardN"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award_5Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_21"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award_5Time2">
+            <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp2 image:NewPvp_21_2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Award_5Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.500000,0.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_73}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Award_5Get2">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.500000,60.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_73}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TowerBox_ProjectInfo_Award_5Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,12.000000}}"/>
+            <Property Name="Text" Value="#{PTDB_231225_153}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TowerBox_ProjectInfo_Award2_Item5_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-21.000000},{0.500000,-42.000000}}"/>
+            <Property Name="DraggingEnabled" Value="True"/>
+            <Property Name="DragAcceptName" Value="G72"/>
+            <Property Name="BackImage" Value="set:NewPvp2 image:NewPvpIcon1"/>
+            <Event Name="Clicked" Function="TowerBox_ProjectInfo_Award2_Item1(1);"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item5_1Get">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewPvp2 image:NewPvpIcon2"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item5_1Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item5_1Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_NowAward"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TowerBox_ProjectInfo_Award2_Item5_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-21.000000},{0.500000,18.000000}}"/>
+            <Property Name="DraggingEnabled" Value="True"/>
+            <Property Name="DragAcceptName" Value="G72"/>
+            <Property Name="BackImage" Value="set:NewPvp2 image:NewPvpIcon1"/>
+            <Event Name="Clicked" Function="TowerBox_ProjectInfo_Award2_Item1(1);"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item5_2Get">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewPvp2 image:NewPvpIcon2"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item5_2Mask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="TowerBox_ProjectInfo_Award2_Item5_2Now">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,96.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewPvp image:NewPvp_NowAward"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

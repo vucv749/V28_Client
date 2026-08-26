@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<GUILayout>
+	<Window Type="TLBB_MainFrameNULL" Name="DuoBao_XiuXi_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,266.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-339.000000},{1.000000,-401.000000}}"/>   
+    <Event Name="Hidden" Function="DuoBao_XiuXi_OnHiden()"/>
+    <Window Type="TLBB_DragTitle" Name="DuoBao_XiuXi_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-48.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,2.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{DDDB_20240711_53}" />
+      <Property Name="DragTarget" Value="DuoBao_XiuXi_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="DuoBao_XiuXi_MiniButton">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,4.000000}}"/>
+      <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+      <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+      <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+      <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>   
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="DuoBao_XiuXi_MiniButton_Clicked()"/>
+    </Window>
+    <Window Type="TLBB_FrameY" Name="DuoBao_XiuXi_Frame_ClientBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="DuoBao_XiuXi_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,24.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_Frame_Lace1" Name="DuoBao_XiuXi_Up">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-123.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="DuoBao_XiuXi_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{DDDB_20240711_54}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="DuoBao_XiuXi_Down">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,118.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-120.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="DuoBao_XiuXi_Down_Title">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,9.000000}}"/>
+          <Property Name="Text" Value="#{DDDB_20240711_55}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="DuoBao_XiuXi_Pair">
+          <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,70.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{1.000000,-83.000000}}" />
+          <Window Type="TLBB_SimpleText" Name="DuoBao_XiuXi_TeamNUM">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="Text" Value="#{DDDB_20240711_56}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DuoBao_XiuXi_StartTime">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,25.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="Text" Value="#{DDDB_20240711_57}" />
+          </Window>   
+          <Window Type="TLBB_SimpleText" Name="DuoBao_XiuXi_FinishTime">
+            <Property Name="UnifiedSize" Value="{{1.000000,-28.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,50.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="Text" Value="#{DDDB_20240711_60}" />
+          </Window>            
+          <Window Type="TLBB_SimpleText" Name="DuoBao_XiuXi_TeamNUM2">
+            <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-97.000000},{0.000000,0.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="Text" Value="#{DDDB_20240711_61}" />
+          </Window>
+          <Window Type="TLBB_StopWatch" Name="DuoBao_XiuXi_StartTime2">
+            <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-97.000000},{0.000000,25.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="Text" Value="00:00" />
+          </Window>
+          <Window Type="TLBB_StopWatch" Name="DuoBao_XiuXi_FinishTime2">
+            <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-97.000000},{0.000000,50.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="Text" Value="00:00" />
+          </Window>                            
+        </Window>
+      </Window>
+    </Window>   
+	</Window>
+</GUILayout>

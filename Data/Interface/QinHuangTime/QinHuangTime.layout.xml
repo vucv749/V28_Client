@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="QinHuangTime">
+    <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,286.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-303.000000},{0.500000,70.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="QinHuangTime_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-64.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,9.000000}}"/>
+      <Property Name="DragTarget" Value="QinHuangTime" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="Title" />
+      <Property Name="Text" Value="#{MJXZ_210510_18}" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="QinHuangTime_Image">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,13.000000}}"/>
+      <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+      <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+      <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+      <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>
+      <Event Name="Clicked" Function="QinHuangTime_OpenMini()" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="QinHuangTime_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,13.000000}}"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="QinHuangTime_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-50.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,33.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_Frame_Lace1" Name="QinHuangTime_Up">
+        <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{1.000000,-115.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,4.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="QinHuangTime_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{MJXZ_210510_19}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="QinHuangTime_Down">
+        <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,107.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-110.000000}}"/>
+        <Window Type="DefaultWindow" Name="QinHuangTime_Pair_Title">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="TLBB_SimpleText" Name="QinHuangTime_Pair_Title1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{.000000,25.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="Text" Value="#{MJXZ_210510_11}" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="QinHuangTime_Pair">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,70.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,25.000000}}" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="TLBB_SimpleText" Name="QinHuangTime_NumTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="Text" Value="#{MJXZ_210510_12}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="QinHuangTime_TimeTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,25.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="Text" Value="#{MJXZ_210510_15}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="QinHuangTime_TimeTitle2">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,50.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="Text" Value="#{MJXZ_210510_17}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="QinHuangTime_Num">
+            <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-190.000000},{0.000000,0.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Text" Value="#{MJXZ_210510_13}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="QinHuangTime_Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-190.000000},{0.000000,25.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="Text" Value="%s" />
+          </Window>
+          <Window Type="TLBB_StopWatch" Name="QinHuangTime_Time2">
+            <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-190.000000},{0.000000,50.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="Text" Value="00:00" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

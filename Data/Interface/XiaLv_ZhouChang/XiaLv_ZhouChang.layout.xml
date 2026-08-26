@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection0" Name="XiaLv_ZhouChang_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,700.000000},{0.000000,455.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-350.000000},{0.500000,-180.000000}}"/>
+    <Window Type="TLBB_TitleLace_Affection0" Name="XiaLv_ZhouChang_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,31.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="XiaLv_ZhouChang_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="Text" Value="#{FQZC_230331_26}" />
+      <Property Name="DragTarget" Value="XiaLv_ZhouChang_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="XiaLv_ZhouChang_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+       <Event Name="Clicked" Function="XiaLv_ZhouChang_HelpClicked()" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="XiaLv_ZhouChang_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="XiaLv_ZhouChang_OnClose()" />
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="XiaLv_ZhouChang_ClientOpen">
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,36.000000}}"/>
+      <Property Name="Image" Value="set:Xialv07 image:XiaLv_Zhouchang_ImageBK"/>
+        <Window Type="TLBB_SimpleText" Name="XiaLv_ZhouChang_OpenInfo1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-140.000000},{0.000000,160.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,40.000000}}"/>
+          <Property Name="Text" Value="#{FQZC_230331_27}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      <Window Type="TLBB_ButtonNULL" Name="XiaLv_ZhouChang_OpenBtnGo">
+        <Property Name="UnifiedSize" Value="{{0.000000,218.000000},{0.000000,38.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-109.000000},{0.000000,260.000000}}"/>
+        <Property Name="PushedImage" Value="set:Xialv02 image:XiaLv_KQZCBtnPush"/>
+        <Property Name="NormalImage" Value="set:Xialv02 image:XiaLv_KQZCBtnNormal"/>
+        <Property Name="HoverImage" Value="set:Xialv02 image:XiaLv_KQZCBtnHover"/>
+        <Property Name="DisabledImage" Value="set:Xialv02 image:XiaLv_KQZCBtnDis"/>
+        <Event Name="Clicked" Function="XiaLv_ZhouChang_OpenThisWeekMission()"/>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="XiaLv_ZhouChang_AllClient">
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,37.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaLv_ZhouChang_CheckBox">
+        <Property Name="UnifiedSize" Value="{{0.000000,113.000000},{0.000000,353.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:Xialv01 image:XiaLv_Zhouchang_LeftBK"/>
+        <Window Type="TLBB_Affection_PageButton1" Name="XiaLv_ZhouChang_Index0">
+          <Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,50.000000}}"/>
+          <Property Name="Text" Value=""/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="XiaLv_ZhouChang_TabClicked(1)"/>
+        </Window>
+        <Window Type="TLBB_Affection_PageButton1" Name="XiaLv_ZhouChang_Index1">
+          <Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,100.000000}}"/>
+          <Property Name="Text" Value=""/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="XiaLv_ZhouChang_TabClicked(2)"/>
+        </Window>
+        <Window Type="TLBB_Affection_PageButton1" Name="XiaLv_ZhouChang_Index2">
+          <Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,150.000000}}"/>
+          <Property Name="Text" Value=""/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="XiaLv_ZhouChang_TabClicked(3)"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaLv_ZhouChang_DownBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,690.000000},{0.000000,47.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,353.000000}}"/>
+        <Property Name="Image" Value="set:Xialv01 image:XiaLv_Zhouchang_BottomBK"/>
+        <Window Type="TLBB_SimpleText" Name="XiaLv_ZhouChang_AwardText">
+          <Property Name="UnifiedSize" Value="{{0.000000,250.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{FQZC_230331_92}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="XiaLv_ZhouChang_AwardItem">
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,270.000000},{0.500000,-22.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="XiaLv_ZhouChang_OnAwardCliecked()"/>
+          <Window Type="TLBB_Animate" Name="XiaLv_ZhouChang_AwardItem_Animate">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="XiaLv_ZhouChang_AwardItem_OK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaLv_ZhouChang_Client1">
+        <Property Name="UnifiedSize" Value="{{0.000000,577.000000},{0.000000,354.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,113.000000},{0.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:Xialv02 image:XiaLv_Zhouchang_Inage_Dali"/>
+        <Property Name="Image" Value="set:Xialv02 image:XiaLv_Zhouchang_Inage_Dali"/>
+        <Property Name="Image" Value="set:Xialv05 image:XiaLv_Zhouchang_Inage_Taihu"/>
+        <Property Name="Image" Value="set:Xialv06 image:XiaLv_Zhouchang_Inage_Shuhe"/>
+        <Property Name="Image" Value="set:Xialv06 image:XiaLv_Zhouchang_Inage_Yexihu2"/>
+          <Window Type="TLBB_SimpleText" Name="XiaLv_ZhouChang_Info1Text1">
+            <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{FQZC_230331_44}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        <Window Type="TLBB_Affection_ButtonCommon" Name="XiaLv_ZhouChang_Task1BtnGo">
+          <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{1.000000,-40.000000}}"/>
+          <Property Name="Text" Value="#{FQZC_230331_45}"/>
+          <Event Name="Clicked" Function="XiaLv_ZhouChang_OnGotoBtnClicked()"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_ZhouChang_Task1Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,122.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-130.000000},{1.000000,-48.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Image" Value="set:Xialv04 image:XiaLv_youjiangshan"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="XiaLv_ZhouChang_Info1Text2">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{1.000000,-20.000000}}"/>
+          <Property Name="Text" Value="#{FQZC_230331_302}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaLv_ZhouChang_Client2">
+        <Property Name="UnifiedSize" Value="{{0.000000,577.000000},{0.000000,354.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,113.000000},{0.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:Xialv05 image:XiaLv_Zhouchang_Inage_Yexihu"/>
+          <Window Type="TLBB_SimpleText" Name="XiaLv_ZhouChang_Info2Text1">
+            <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{FQZC_230331_73}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        <Window Type="TLBB_Affection_ButtonCommon" Name="XiaLv_ZhouChang_Task2BtnGo">
+          <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{1.000000,-40.000000}}"/>
+          <Property Name="Text" Value="#{FQZC_230331_103}"/>
+          <Event Name="Clicked" Function="XiaLv_ZhouChang_OnGotoBtnClicked()"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_ZhouChang_Task2Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,122.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-130.000000},{1.000000,-48.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Image" Value="set:Xialv04 image:XiaLv_wanxinghe"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="XiaLv_ZhouChang_Info2Text2">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{1.000000,-20.000000}}"/>
+          <Property Name="Text" Value="#{FQZC_230331_302}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaLv_ZhouChang_Client3">
+        <Property Name="UnifiedSize" Value="{{0.000000,577.000000},{0.000000,354.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,113.000000},{0.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:Xialv04 image:XiaLv_Zhouchang_Inage_Suzhou"/>
+          <Window Type="TLBB_SimpleText" Name="XiaLv_ZhouChang_Info3Text1">
+            <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{FQZC_230331_81}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        <Window Type="TLBB_Affection_ButtonCommon" Name="XiaLv_ZhouChang_Task3BtnGo">
+          <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{1.000000,-40.000000}}"/>
+          <Property Name="Text" Value="#{FQZC_230331_103}"/>
+          <Event Name="Clicked" Function="XiaLv_ZhouChang_OnGotoBtnClicked()"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_ZhouChang_Task3Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,122.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-130.000000},{1.000000,-48.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Image" Value="set:Xialv04 image:XiaLv_dianlingxi"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="XiaLv_ZhouChang_Info3Text2">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{1.000000,-20.000000}}"/>
+          <Property Name="Text" Value="#{FQZC_230331_302}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaLv_ZhouChang_Client4">
+        <Property Name="UnifiedSize" Value="{{0.000000,577.000000},{0.000000,354.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,113.000000},{0.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:Xialv04 image:XiaLv_Zhouchang_Inage_Suzhou2"/>
+          <Window Type="TLBB_SimpleText" Name="XiaLv_ZhouChang_Info4Text1">
+            <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{FQZC_230331_91}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        <Window Type="TLBB_Affection_ButtonCommon" Name="XiaLv_ZhouChang_Task4BtnGo">
+          <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{1.000000,-40.000000}}"/>
+          <Property Name="Text" Value="#{FQZC_230331_103}"/>
+          <Event Name="Clicked" Function="XiaLv_ZhouChang_OnGotoBtnClicked()"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_ZhouChang_Task4Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,122.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-130.000000},{1.000000,-48.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Image" Value="set:Xialv04 image:XiaLv_shiqingyi"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="XiaLv_ZhouChang_Info4Text2">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{1.000000,-20.000000}}"/>
+          <Property Name="Text" Value="#{FQZC_230331_302}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaLv_ZhouChang_Client5">
+        <Property Name="UnifiedSize" Value="{{0.000000,577.000000},{0.000000,354.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,113.000000},{0.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:Xialv02 image:XiaLv_Zhouchang_Inage_Luoyang"/>
+          <Window Type="TLBB_SimpleText" Name="XiaLv_ZhouChang_Info5Text1">
+            <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{FQZC_230331_102}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        <Window Type="TLBB_Affection_ButtonCommon" Name="XiaLv_ZhouChang_Task5BtnGo">
+          <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{1.000000,-40.000000}}"/>
+          <Property Name="Text" Value="#{FQZC_230331_103}"/>
+          <Event Name="Clicked" Function="XiaLv_ZhouChang_OnGotoBtnClicked()"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_ZhouChang_Task5Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,122.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-130.000000},{1.000000,-48.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Image" Value="set:Xialv04 image:XiaLv_queqiaoxian"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="XiaLv_ZhouChang_Info5Text2">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{1.000000,-20.000000}}"/>
+          <Property Name="Text" Value="#{FQZC_230331_302}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

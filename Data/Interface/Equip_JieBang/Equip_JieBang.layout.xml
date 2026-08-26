@@ -1,0 +1,141 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="Equip_JieBang_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,260.000000},{0.000000,370.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-130.000000},{0.500000,-150.000000}}"/>
+    <Event Name="Hidden" Function="Equip_JieBang_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="Equip_JieBang_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="Equip_JieBang_Frame" />
+      <Window Type="TLBB_SimpleText" Name="Equip_JieBang_Title">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{ZBJB_20230526_13}"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Equip_JieBang_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonHelp" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Equip_JieBang_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="Equip_JieBang_CloseClicked()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Equip_JieBang_Frame_Client">
+      <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Equip_JieBang_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,144.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000000,0.000000},{0.0000000,0.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{ZBJB_20230526_14}"/>
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Equip_JieBang_Info2">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0000000,26.000000},{0.000000,154.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{ZBJB_20230526_15}"/>
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="Equip_JieBang_Item">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0000000,165.000000},{0.000000,154.000000}}"/>
+        <Property Name="DragAcceptName" Value="W44" />
+        <Property Name="DraggingEnabled" Value="True" />
+        <Event Name="RBClicked" Function="Equip_JieBang_LingYu_OnRBClicked()" />
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Equip_JieBang_HaveText">
+        <Property Name="UnifiedPosition" Value="{{0.00,0.000000},{1.000000,-111.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="Text" Value="#{ZBJB_20230526_17}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_SimpleText" Name="Equip_JieBang_Have">
+          <Property Name="UnifiedSize" Value="{{0.750000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.250000,-6.000000},{0.000000,2.000000}}"/>
+          <Property Name="HorzFormatting" Value="RightAligned" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Equip_JieBang_Demand_Jiaozi_Text">
+        <Property Name="UnifiedPosition" Value="{{0.00,0.000000},{1.000000,-89.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="Text" Value="#{INTERFACE_XML_1249}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="Equip_JieBang_DemandMoney">
+          <Property Name="UnifiedPosition" Value="{{0.25,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.75,0.000000},{0.000000,18.000000}" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Equip_JieBang_Currently_Jiaozi_Text">
+        <Property Name="UnifiedPosition" Value="{{0.00,0.000000},{1.000000,-67.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="Text" Value="#{BDJB_051021_3}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="Equip_JieBang_SelfJiaozi">
+          <Property Name="UnifiedPosition" Value="{{0.25,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.75,0.000000},{0.000000,18.000000}" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Equip_JieBang_Currently_Money_Text">
+        <Property Name="UnifiedPosition" Value="{{0.00,0.000000},{1.000000,-45.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="Text" Value="#{INTERFACE_XML_833}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="Equip_JieBang_SelfMoney">
+          <Property Name="UnifiedPosition" Value="{{0.25,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.75,0.000000},{0.000000,18.000000}" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="Equip_JieBang_Blank">
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Equip_JieBang_OK">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{SHXT_20211230_61}" />
+        <Event Name="Clicked" Function="Equip_JieBang_OK_Clicked()" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Equip_JieBang_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_542}" />
+        <Event Name="Clicked" Function="Equip_JieBang_CloseClicked()" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

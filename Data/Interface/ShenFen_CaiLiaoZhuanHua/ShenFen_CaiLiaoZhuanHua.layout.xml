@@ -1,0 +1,115 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="ShenFen_CaiLiaoZhuanHua_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,250.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-170.000000},{0.500000,-180.000000}}"/>
+    <Event Name="Hidden" Function="ShenFen_CaiLiaoZhuanHua_OnHiden();" />
+    <Window Type="TLBB_DragTitle" Name="ShenFen_CaiLiaoZhuanHua_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="ShenFen_CaiLiaoZhuanHua_Frame" />
+      <Window Type="TLBB_SimpleText" Name="ShenFen_CaiLiaoZhuanHua_Title">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SZSW_230402_02}"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="ShenFen_CaiLiaoZhuanHua_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonHelp" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*PetEquipSuitDepart&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="ShenFen_CaiLiaoZhuanHua_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="this:Hide();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="ShenFen_CaiLiaoZhuanHua_Frame_Client">
+      <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShenFen_CaiLiaoZhuanHua_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,100.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000000,0.000000},{0.0000000,0.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SZSW_230402_03}"/>
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShenFen_CaiLiaoZhuanHua_Info2">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,104.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{SZSW_230402_04}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="ShenFen_CaiLiaoZhuanHua_Icon1">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,128.000000}}"/>
+        <Property Name="DragAcceptName" Value="W55" />
+        <Property Name="DraggingEnabled" Value="True" />
+        <Event Name="RBClicked" Function="ShenFen_CaiLiaoZhuanHua_Resume(1);" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="ShenFen_CaiLiaoZhuanHua_Icon2">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,128.000000}}"/>
+        <Property Name="DragAcceptName" Value="W56" />
+        <Property Name="DraggingEnabled" Value="True" />
+        <Event Name="RBClicked" Function="ShenFen_CaiLiaoZhuanHua_Resume(2);" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="ShenFen_CaiLiaoZhuanHua_Icon3">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,128.000000}}"/>
+        <Property Name="DragAcceptName" Value="W57" />
+        <Property Name="DraggingEnabled" Value="True" />
+        <Event Name="RBClicked" Function="ShenFen_CaiLiaoZhuanHua_Resume(3);" />
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="ShenFen_CaiLiaoZhuanHua_JianTou">
+        <Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,33.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,158.000000},{0.000000,129.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Buttons image:SceneMap_Right_Normal"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShenFen_CaiLiaoZhuanHua_Info3">
+        <Property Name="UnifiedSize" Value="{{0.000000,158.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,168.000000},{0.000000,104.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{SZSW_230402_05}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+      <Window Type="TLBB_ComboList" Name="ShenFen_CaiLiaoZhuanHua_Bind">
+        <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,206.000000},{0.000000,136.000000}}"/>
+        <Event Name="ListSelectionAccepted" Function="ShenFen_CaiLiaoZhuanHua_DstChanged();" />
+        <Window Type="TLBB_ButtonNULL" Name="ShenFen_CaiLiaoZhuanHua_Bindtip">
+          <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="ShenFen_CaiLiaoZhuanHua_Blank">
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="ShenFen_CaiLiaoZhuanHua_OK">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{SHXT_20211230_61}" />
+        <Event Name="Clicked" Function="ShenFen_CaiLiaoZhuanHua_Confirm_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="ShenFen_CaiLiaoZhuanHua_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_542}" />
+        <Event Name="Clicked" Function="this:Hide();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

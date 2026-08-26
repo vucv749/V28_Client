@@ -1,0 +1,367 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="DefaultWindow" Name="Cloud_Login_Frame">
+		<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+		<Event Name="Hidden" Function="Cloud_Login_Frame_OnHiden();"/>
+		<Window Type="DefaultWindow" Name="Cloud_Login_Background1_Frame">
+			<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+			<Property Name="RiseOnClick" Value="False"/>
+			<Window Type="TLBB_StaticImageNULL" Name="Cloud_Login_Bak1">
+				<Property Name="UnifiedSize" Value="{{0.640000,0.000000},{0.853333,0.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+			</Window>
+			<Window Type="TLBB_StaticImageNULL" Name="Cloud_Login_Bak2">
+				<Property Name="UnifiedSize" Value="{{0.320000,0.000000},{0.853333,0.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.640000,0.000000},{0.000000,0.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+			</Window>
+			<Window Type="TLBB_StaticImageNULL" Name="Cloud_Login_Bak3">
+				<Property Name="UnifiedSize" Value="{{0.320000,0.000000},{0.146667,0.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.853333,0.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+			</Window>
+			<Window Type="TLBB_StaticImageNULL" Name="Cloud_Login_Bak4">
+				<Property Name="UnifiedSize" Value="{{0.320000,0.000000},{0.146667,0.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.320000,0.000000},{0.853333,0.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+			</Window>
+			<Window Type="TLBB_StaticImageNULL" Name="Cloud_Login_Bak5">
+				<Property Name="UnifiedSize" Value="{{0.320000,0.000000},{0.146667,0.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.640000,0.000000},{0.853333,0.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+			</Window>
+			<Window Type="TLBB_StaticImageNULL" Name="Cloud_Login_Bak6">
+				<Property Name="UnifiedSize" Value="{{0.040000,0.000000},{0.426667,0.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.960000,0.000000},{0.000000,0.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+			</Window>
+			<Window Type="TLBB_StaticImageNULL" Name="Cloud_Login_Bak7">
+				<Property Name="UnifiedSize" Value="{{0.040000,0.000000},{0.426667,0.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.960000,0.000000},{0.426667,0.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+			</Window>
+			<Window Type="TLBB_StaticImageNULL" Name="Cloud_Login_Bak8">
+				<Property Name="UnifiedSize" Value="{{0.040000,0.000000},{0.146667,0.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.958750,0.000000},{0.853088,0.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+			</Window>
+		</Window>
+		<Window Type="DefaultWindow" Name="Cloud_Login_Client">
+			<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+			<Property Name="RiseOnClick" Value="False"/>
+			<Window Type="DefaultWindow" Name="Cloud_Login_JoinFrame">
+				<Property Name="UnifiedSize" Value="{{0.000000,600.000000},{1.000000,0.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.000000,0.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Window Type="DefaultWindow" Name="Cloud_Login_Input_Background_Frame">
+					<Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,398.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.500000,-200.000000}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Window Type="TLBB_StaticImageNULL" Name="Cloud_Login_Input_Background_DragonHead">
+						<Property Name="UnifiedSize" Value="{{0.000000,115.000000},{0.000000,74.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.500000,-56.000000},{0.000000,1.000000}}"/>
+						<Property Name="AlwaysOnTop" Value="True"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:Button4 image:Dragon_Head"/>
+					</Window>
+					<Window Type="TLBB_MainFrame_Logon" Name="Cloud_Login_Input_Background">
+						<Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,368.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{1.000000,-368.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_ButtonFenYe7" Name="Cloud_Login_Tradition">
+							<Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,50.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-200.000000},{0.000000,45.000000}}"/>
+							<Property Name="Text" Value="#{YYTL_230213_06}"/>
+							<Property Name="Font" Value="YouYuanMono"/>
+							<Property Name="CheckMode" Value="1"/>
+							<Event Name="Clicked" Function="Cloud_Login_Tradition_MouseDown()"/>
+						</Window>
+						<Window Type="TLBB_ButtonFenYe7" Name="Cloud_Login_QRCodeLogin">
+							<Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,50.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,45.000000}}"/>
+							<Property Name="Text" Value="#{YYTL_230213_07}"/>
+							<Property Name="Font" Value="YouYuanMono"/>
+							<Property Name="CheckMode" Value="1"/>
+							<Event Name="Clicked" Function="Cloud_Login_QRCodeLogin_MouseDown()"/>
+						</Window>
+						<Window Type="TLBB_Frame_Lace1" Name="Cloud_Login_InputFrame">
+							<Property Name="UnifiedSize" Value="{{0.000000,550.000000},{0.000000,250.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-275.000000},{1.000000,-270.000000}}"/>
+							<Property Name="RiseOnClick" Value="False"/>
+							<Window Type="TLBB_StaticImageNULL" Name="Cloud_Login_ID_Dot">
+								<Property Name="UnifiedSize" Value="{{0.000000,7.000000},{0.000000,7.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.500000,-256.000000},{0.000000,39.000000}}"/>
+								<Property Name="RiseOnClick" Value="False"/>
+								<Property Name="Image" Value="set:Talent image:Talent_JuXing"/>
+							</Window>
+							<Window Type="TLBB_SimpleText" Name="Cloud_Login_ID_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,228.000000},{0.000000,20.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.500000,-236.000000},{0.000000,30.000000}}"/>
+								<Property Name="TextColor" Value="FFFEE601"/>
+								<Property Name="Text" Value="#{INTERFACE_XML_661}"/>
+								<Property Name="RiseOnClick" Value="False"/>
+								<Property Name="Font" Value="YouYuanMono"/>
+								<Property Name="HorzFormatting" Value="LeftAligned"/>
+							</Window>
+							<Window Type="TLBB_Cloud_EditBoxNormal" Name="Cloud_Login_ID">
+								<Property Name="UnifiedSize" Value="{{0.000000,248.000000},{0.000000,38.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.500000,-256.000000},{0.000000,60.000000}}"/>
+								<Property Name="MaxTextLength" Value="50"/>
+								<Property Name="DisableCopyPaste" Value="True"/>
+								<Event Name="TextAccepted" Function="Cloud_Login_ID_Return();"/>
+								<Event Name="TabPressed" Function="Cloud_Login_ID_TabPressed();"/>
+								<Event Name="MouseLeave" Function="Cloud_Login_MouseLeave();"/>
+								<Event Name="MouseEnter" Function="Cloud_Login_ID_MouseEnter();"/>
+								<Event Name="Activated" Function="Cloud_Login_ID_Active();"/>
+							</Window>
+							<Window Type="TLBB_StaticImageNULL" Name="Cloud_Login_Region_Dot">
+								<Property Name="UnifiedSize" Value="{{0.000000,7.000000},{0.000000,7.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.500000,8.000000},{0.000000,39.000000}}"/>
+								<Property Name="RiseOnClick" Value="False"/>
+								<Property Name="Image" Value="set:Talent image:Talent_JuXing"/>
+							</Window>
+							<Window Type="TLBB_SimpleText" Name="Cloud_Login_Region_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,228.000000},{0.000000,20.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.500000,28.000000},{0.000000,30.000000}}"/>
+								<Property Name="TextColor" Value="FFFEE601"/>
+								<Property Name="Text" Value="#{DLYH_091208_2}"/>
+								<Property Name="RiseOnClick" Value="False"/>
+								<Property Name="Font" Value="YouYuanMono"/>
+								<Property Name="HorzFormatting" Value="LeftAligned"/>
+							</Window>
+							<Window Type="TLBB_Cloud_ComboList" Name="Cloud_Login_Region">
+								<Property Name="UnifiedSize" Value="{{0.000000,248.000000},{0.000000,38.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.500000,8.000000},{0.000000,60.000000}}"/>
+								<Property Name="Text" Value=""/>
+								<Property Name="Font" Value="YouYuanMono"/>
+								<Property Name="ReadOnly" Value="True"/>
+								<Event Name="MouseLeave" Function="Cloud_Login_MouseLeave();"/>
+								<Event Name="MouseEnter" Function="Cloud_Login_Region_MouseEnter();"/>
+							</Window>
+							<Window Type="TLBB_StaticImageNULL" Name="Cloud_Login_PassWord_Dot">
+								<Property Name="UnifiedSize" Value="{{0.000000,7.000000},{0.000000,7.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.500000,-256.000000},{0.000000,139.000000}}"/>
+								<Property Name="RiseOnClick" Value="False"/>
+								<Property Name="Image" Value="set:Talent image:Talent_JuXing"/>
+							</Window>
+							<Window Type="TLBB_SimpleText" Name="Cloud_Login_PassWord_Text">
+								<Property Name="UnifiedSize" Value="{{0.000000,228.000000},{0.000000,20.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.500000,-236.000000},{0.000000,130.000000}}"/>
+								<Property Name="TextColor" Value="FFFEE601"/>
+								<Property Name="Text" Value="#{INTERFACE_XML_658}"/>
+								<Property Name="RiseOnClick" Value="False"/>
+								<Property Name="Font" Value="YouYuanMono"/>
+								<Property Name="HorzFormatting" Value="LeftAligned"/>
+							</Window>
+							<Window Type="TLBB_Cloud_EditBoxSafe" Name="Cloud_Login_PassWord">
+								<Property Name="UnifiedSize" Value="{{0.000000,248.000000},{0.000000,38.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.500000,-256.000000},{0.000000,160.000000}}"/>
+								<Property Name="MaxTextLength" Value="32"/>
+								<Property Name="MaskText" Value="True"/>
+								<Event Name="TextAccepted" Function="Cloud_Login_Password_Return();"/>
+								<Event Name="TabPressed" Function="Cloud_Login_Password_TabPressed();"/>
+								<Event Name="MouseLeave" Function="Cloud_Login_MouseLeave();"/>
+								<Event Name="MouseEnter" Function="Cloud_Login_PassWord_MouseEnter();"/>
+								<Event Name="Activated" Function="Cloud_Login_PassWord_Active();"/>
+							</Window>
+							<Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_Login_Input_LostPassword">
+								<Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,50.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.500000,8.000000},{0.000000,154.000000}}"/>
+								<Property Name="Text" Value="#{DLLC_170814_20}"/>
+								<Property Name="Font" Value="YouYuanMono"/>
+								<Event Name="Clicked" Function="Cloud_Login_LostPassWord()"/>
+							</Window>
+							<Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_Login_Input_Help">
+								<Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,50.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.500000,178.000000},{0.000000,154.000000}}"/>
+								<Property Name="Text" Value="#{INTERFACE_XML_135}"/>
+								<Property Name="Font" Value="YouYuanMono"/>
+								<Event Name="Clicked" Function="Helper:GotoHelper('*LoginCloud_Login');"/>
+							</Window>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="TLBB_ButtonNULL" Name="Cloud_Login_Game">
+					<Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,70.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{1.000000,-140.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="PushedImage" Value="set:CloudGames image:Cloud_Game_Pushed"/>
+					<Property Name="NormalImage" Value="set:CloudGames image:Cloud_Game_Normal"/>
+					<Property Name="HoverImage" Value="set:CloudGames image:Cloud_Game_Hover"/>
+					<Property Name="DisabledImage" Value="set:CloudGames image:Cloud_Game_Disabled"/>
+					<Event Name="Clicked" Function="Cloud_Login_CheckAccount();"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="Cloud_Login_Tips">
+					<Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.500000,-200.000000},{1.000000,-50.000000}}"/>
+					<Property Name="Text" Value="#{DHMB_90417_1}"/>
+					<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_Frame1" Name="Cloud_Login_QRCodeFrame">
+				<Property Name="UnifiedSize" Value="{{0.000000,740.000000},{0.000000,500.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.500000,-370.000000},{0.500000,-250.000000}}"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Window Type="TLBB_ButtonNULL" Name="Cloud_Login_QRCode_Close_Button">
+					<Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="PushedImage" Value="set:CloudGames image:Cloud_ButtonClose_Pushed"/>
+					<Property Name="NormalImage" Value="set:CloudGames image:Cloud_ButtonClose_Normal"/>
+					<Property Name="HoverImage" Value="set:CloudGames image:Cloud_ButtonClose_Hover"/>
+					<Property Name="DisabledImage" Value="set:CloudGames image:Cloud_ButtonClose_Disabled"/>
+					<Event Name="Clicked" Function="Cloud_Login_QRCode_OnClosed();"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="Cloud_Login_QRCode_Info_Cloud">
+					<Property Name="UnifiedSize" Value="{{0.000000,584.000000},{0.000000,120.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.500000,-292.000000},{0.000000,20.000000}}"/>
+					<Property Name="Text" Value="#{YYTL_221013_01}"/>
+					<Property Name="Font" Value="YouYuanMono"/>
+					<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+				</Window>
+				<Window Type="TLBB_ButtonNULL" Name="Cloud_Login_QRCode_DownLoadCYJ">
+					<Property Name="Visible" Value="False"/>
+					<Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,22.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.500000,152.000000},{0.000000,348.000000}}"/>
+					<Property Name="PushedImage" Value="set:Logon01 image:XiaZai_Pushed"/>
+					<Property Name="NormalImage" Value="set:Logon01 image:XiaZai_Normal"/>
+					<Property Name="HoverImage" Value="set:Logon01 image:XiaZai_Hover"/>
+					<Property Name="DisabledImage" Value="set:Logon01 image:Dis_Hover"/>
+					<Event Name="Clicked" Function="Cloud_Login_Download_CYJ_OnClicked();"/>
+				</Window>
+				<Window Type="TLBB_Frame_Campaign" Name="Cloud_Login_QRCode_BK">
+					<Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,226.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.500000,-110.000000},{0.500000,-108.000000}}"/>
+					<Window Type="DefaultWindow" Name="Cloud_Login_QRCode">
+						<Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,200.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.500000,-100.000000}}"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="Cloud_Login_QRCode_Text">
+						<Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,200.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.500000,-100.000000}}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+					</Window>
+				</Window>
+				<Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_Login_QRCode_F5btn">
+					<Property Name="UnifiedSize" Value="{{0.000000,186.000000},{0.000000,60.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.500000,-93.000000},{1.000000,-100.000000}}"/>
+					<Property Name="Text" Value="#{DLLC_170814_74}"/>
+					<Property Name="Font" Value="YouYuanMono"/>
+					<Event Name="Clicked" Function="Cloud_Login_ReFalshQRCode_OnClicked();"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="Cloud_Login_ImageFrame">
+				<Property Name="UnifiedSize" Value="{{0.000000,1024.000000},{0.000000,626.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.500000,-512.000000},{0.500000,-313.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+				<Window Type="TLBB_ButtonNULL" Name="Cloud_Login_Image_Close">
+					<Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,79.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.000000,36.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="PushedImage" Value="set:CloudGames image:Cloud_ImageClose_Normal"/>
+					<Property Name="NormalImage" Value="set:CloudGames image:Cloud_ImageClose_Normal"/>
+					<Property Name="HoverImage" Value="set:CloudGames image:Cloud_ImageClose_Normal"/>
+					<Event Name="Clicked" Function="Cloud_Login_Image_OnClosed();"/>
+				</Window>
+				<Window Type="DefaultWindow" Name="Cloud_Login_Image_BK">
+					<Property Name="UnifiedSize" Value="{{0.000000,988.000000},{0.000000,626.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.500000,-494.000000},{0.500000,-313.000000}}"/>
+					<Window Type="TLBB_StaticImageNULL" Name="Cloud_Login_Image">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:CloudGames image:Cloud_HelpImage"/>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="TLBB_Frame1" Name="Cloud_Login_Image2Frame">
+				<Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,300.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.500000,-150.000000}}"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Window Type="TLBB_ButtonNULL" Name="Cloud_Login_Image2_Close">
+					<Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="PushedImage" Value="set:CloudGames image:Cloud_ButtonClose_Pushed"/>
+					<Property Name="NormalImage" Value="set:CloudGames image:Cloud_ButtonClose_Normal"/>
+					<Property Name="HoverImage" Value="set:CloudGames image:Cloud_ButtonClose_Hover"/>
+					<Property Name="DisabledImage" Value="set:CloudGames image:Cloud_ButtonClose_Disabled"/>
+					<Event Name="Clicked" Function="Cloud_Login_Image2_OnClosed();"/>
+				</Window>
+				<Window Type="TLBB_Frame_Lace1" Name="Cloud_Login_Image2_BK">
+					<Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,160.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.500000,-80.000000},{0.500000,-80.000000}}"/>
+					<Window Type="DefaultWindow" Name="Cloud_Login_Image2">
+						<Property Name="UnifiedSize" Value="{{0.000000,155.000000},{0.000000,155.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_StaticImageNULL" Name="Cloud_Login_Image2_L">
+							<Property Name="UnifiedSize" Value="{{0.000000,124.000000},{0.000000,155.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+							<Property Name="RiseOnClick" Value="False"/>
+							<Property Name="Image" Value="set:CloudGames image:Cloud_MP_QRCode_L"/>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="Cloud_Login_Image2_R">
+							<Property Name="UnifiedSize" Value="{{0.000000,31.000000},{0.000000,155.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,124.000000},{0.000000,0.000000}}"/>
+							<Property Name="RiseOnClick" Value="False"/>
+							<Property Name="Image" Value="set:CloudGames image:Cloud_MP_QRCode_R"/>
+						</Window>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="Cloud_Login_ButtonFrame">
+				<Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,700.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-204.000000},{0.500000,-350.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Window Type="TLBB_ButtonNULL" Name="Cloud_Login_RequisitionID">
+					<Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,60.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+					<Property Name="PushedImage" Value="set:CloudGames image:Cloud_RequisitionID_Pushed"/>
+					<Property Name="NormalImage" Value="set:CloudGames image:Cloud_RequisitionID_Normal"/>
+					<Property Name="HoverImage" Value="set:CloudGames image:Cloud_RequisitionID_Hover"/>
+					<Property Name="DisabledImage" Value="set:CloudGames image:Cloud_RequisitionID_Disabled"/>
+					<Event Name="MouseLeave" Function="Cloud_Login_MouseLeave();"/>
+					<Event Name="MouseEnter" Function="Cloud_Login_RequisitionID_MouseEnter();"/>
+					<Event Name="Clicked" Function="Cloud_Login_AccountReg();"/>
+				</Window>
+				<Window Type="TLBB_ButtonNULL" Name="Cloud_Login_Follow">
+					<Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,60.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,70.000000}}"/>
+					<Property Name="PushedImage" Value="set:CloudGames image:Cloud_Follow_Pushed"/>
+					<Property Name="NormalImage" Value="set:CloudGames image:Cloud_Follow_Normal"/>
+					<Property Name="HoverImage" Value="set:CloudGames image:Cloud_Follow_Hover"/>
+					<Property Name="DisabledImage" Value="set:CloudGames image:Cloud_Follow_Disabled"/>
+					<Event Name="Clicked" Function="Cloud_Login_FollowClicked();"/>
+				</Window>
+				<Window Type="TLBB_ButtonNULL" Name="Cloud_Login_Desktop">
+					<Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,60.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,140.000000}}"/>
+					<Property Name="PushedImage" Value="set:CloudGames image:Cloud_Desktop_Pushed"/>
+					<Property Name="NormalImage" Value="set:CloudGames image:Cloud_Desktop_Normal"/>
+					<Property Name="HoverImage" Value="set:CloudGames image:Cloud_Desktop_Hover"/>
+					<Property Name="DisabledImage" Value="set:CloudGames image:Cloud_Desktop_Disabled"/>
+					<Event Name="Clicked" Function="Cloud_Login_DesktopClicked();"/>
+				</Window>
+				<Window Type="TLBB_ButtonNULL" Name="Cloud_Login_Last">
+					<Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,60.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.000000,-100.000000}}"/>
+					<Property Name="PushedImage" Value="set:CloudGames image:Cloud_Last_Pushed"/>
+					<Property Name="NormalImage" Value="set:CloudGames image:Cloud_Last_Normal"/>
+					<Property Name="HoverImage" Value="set:CloudGames image:Cloud_Last_Hover"/>
+					<Property Name="DisabledImage" Value="set:CloudGames image:Cloud_Last_Disabled"/>
+					<Event Name="MouseLeave" Function="Cloud_Login_MouseLeave();"/>
+					<Event Name="MouseEnter" Function="Cloud_Login_Last_MouseEnter();"/>
+					<Event Name="Clicked" Function="Cloud_Login_ExitToSelectServer();"/>
+				</Window>
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

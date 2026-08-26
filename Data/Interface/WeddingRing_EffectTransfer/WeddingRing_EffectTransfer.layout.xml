@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="WeddingRing_EffectTransfer_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,274.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.500000,-178.000000}}"/>
+    <Event Name="Hidden" Function="WeddingRing_EffectTransfer_OnHiden();" />
+    <Window Type="TLBB_DragTitle" Name="WeddingRing_EffectTransfer_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,11.000000}}"/>
+      <Property Name="DragTarget" Value="WeddingRing_EffectTransfer_Frame" />
+      <Window Type="TLBB_SimpleText" Name="WeddingRing_EffectTransfer_Title">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="Text" Value="#{HJZY_220520_5}" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="WeddingRing_EffectTransfer_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Helper:GotoHelper('*WeddingRing_EffectTransfer');"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="WeddingRing_EffectTransfer_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="WeddingRing_EffectTransfer_Close();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="WeddingRing_EffectTransfer_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-46.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,37.000000}}"/>
+      <Property Name="RiseOnClick" Value="False" />
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="WeddingRing_EffectTransfer_IntroText">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-141.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{HJZY_220520_6}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="WeddingRing_EffectTransfer_Require_Info1">
+        <Property Name="UnifiedSize" Value="{{0.700000,0.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.00000,110.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{HJZY_220520_7}" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="WeddingRing_EffectTransfer_Object1">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,186.000000},{0.00000,100.000000}}"/>
+        <Property Name="DragAcceptName" Value="G174" />
+        <Property Name="DraggingEnabled" Value="True" />
+        <Event Name="RBClicked" Function="WeddingRing_EffectTransfer_RingRClick();" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="WeddingRing_EffectTransfer_Require_Info2">
+        <Property Name="UnifiedSize" Value="{{0.600000,0.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.00000,160.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{HJZY_220520_8}" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="WeddingRing_EffectTransfer_Object2">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,186.000000},{0.00000,150.000000}}"/>
+        <Property Name="DragAcceptName" Value="G175" />
+        <Property Name="DraggingEnabled" Value="True" />
+        <Event Name="RBClicked" Function="WeddingRing_EffectTransfer_ItemRClick();" />
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="WeddingRing_EffectTransfer_Blank">
+        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-30.000000}}"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="WeddingRing_EffectTransfer_OK">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-30.000000}}"/>
+        <Property Name="Text" Value="#{HJZY_220520_9}" />
+        <Property Name="Tooltip" Value="#{HJZY_220520_10}"/>
+        <Event Name="Clicked" Function="WeddingRing_EffectTransfer_Buttons_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="WeddingRing_EffectTransfer_Cancel">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-30.000000}}"/>
+        <Property Name="Text" Value="#{HJZY_220520_30}" />
+        <Event Name="Clicked" Function="WeddingRing_EffectTransfer_Cancel_Clicked();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

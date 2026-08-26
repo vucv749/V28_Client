@@ -1,0 +1,178 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="FC_FreeChoices_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,440.000000},{0.000000,277.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-220.000000},{0.500000,-140.000000}}"/>
+    <Event Name="Hidden" Function="FC_FreeChoices_CloseShop();" />
+    <Window Type="TLBB_DragTitle" Name="FC_FreeChoices_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="FC_FreeChoices_Frame" />
+      <Property Name="Text" Value="#{DFXD_250326_145}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="FC_FreeChoices_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="FC_FreeChoices_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="FC_FreeChoices_CloseShop();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="FC_FreeChoices_Background_Frame1">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Window Type="DefaultWindow" Name="FC_FreeChoices_Background_FiveBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Window Type="TLBB_StaticImageNULL" Name="FC_FreeChoices_Background_FiveBK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,428.000000},{0.000000,222.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:OptionalGiftBox image:big"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="FC_FreeChoices_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,26.000000}}"/>
+        <Property Name="Text" Value="#{DFXD_250326_146}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="FC_FreeChoices_Action_Set">
+        <Property Name="UnifiedSize" Value="{{0.000000,310.000000},{0.000000,110.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,59.000000},{0.000000,56.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="FC_FreeChoices_Item1">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="FC_FreeChoices_ItemClicked(1);" />
+          <Window Type="TLBB_StaticImageNULL" Name="FC_FreeChoices_Item1_Object1Select">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="FC_FreeChoices_ItemInfo1_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{1.000000,-46.000000}}"/>
+          <Property Name="Text" Value="#{}" />
+          <Property Name="TextColor" Value="FF800000"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="FC_FreeChoices_Item2">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="FC_FreeChoices_ItemClicked(2);" />
+          <Window Type="TLBB_StaticImageNULL" Name="FC_FreeChoices_Item2_Object1Select">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="FC_FreeChoices_ItemInfo2_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{1.000000,-46.000000}}"/>
+          <Property Name="Text" Value="#{}" />
+          <Property Name="TextColor" Value="FF800000"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="FC_FreeChoices_Item3">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="FC_FreeChoices_ItemClicked(3);" />
+          <Window Type="TLBB_StaticImageNULL" Name="FC_FreeChoices_Item3_Object1Select">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="FC_FreeChoices_ItemInfo3_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{1.000000,-46.000000}}"/>
+          <Property Name="Text" Value="#{}" />
+          <Property Name="TextColor" Value="FF800000"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="FC_FreeChoices_Item4">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="FC_FreeChoices_ItemClicked(4);" />
+          <Window Type="TLBB_StaticImageNULL" Name="FC_FreeChoices_Item4_Object1Select">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="FC_FreeChoices_ItemInfo4_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-130.000000},{1.000000,-46.000000}}"/>
+          <Property Name="Text" Value="#{}" />
+          <Property Name="TextColor" Value="FF800000"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+
+        <Window Type="TLBB_ActionButton" Name="FC_FreeChoices_Item5">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="FC_FreeChoices_ItemClicked(5);" />
+          <Window Type="TLBB_StaticImageNULL" Name="FC_FreeChoices_Item5_Object1Select">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="FC_FreeChoices_ItemInfo5_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{1.000000,-46.000000}}"/>
+          <Property Name="Text" Value="#{}" />
+          <Property Name="TextColor" Value="FF800000"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="FC_FreeChoices_ConfirmBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,38.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-52.000000},{1.000000,-50.000000}}"/>
+        <Property Name="PushedImage" Value="set:Seven image:Seven_lingqupush"/>
+        <Property Name="NormalImage" Value="set:Seven image:Seven_lingquNormal"/>
+        <Property Name="HoverImage" Value="set:Seven image:Seven_lingquHover"/>
+        <Property Name="DisabledImage" Value="set:Seven image:Seven_lingquDis"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="FC_FreeChoices_SelectClicked();"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

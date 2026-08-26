@@ -1,0 +1,86 @@
+﻿<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Frozen2" Name="Frozen_XQHC_Mini_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,278.000000},{0.000000,206.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-290.000000},{1.000000,-257.000000}}"/>
+    <Window Type="TLBB_TitleLace_Frozen" Name="Frozen_XQHC_Mini_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,19.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,3.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Frozen_XQHC_Mini_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-48.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,2.000000}}"/>
+      <Property Name="DragTarget" Value="Frozen_XQHC_Mini_Frame" />
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{XBDK_240922_36}"/>
+    </Window>    
+    <Window Type="DefaultWindow" Name="Frozen_XQHC_Mini_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,24.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_Frame_Lace2" Name="Frozen_XQHC_Mini_Up">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,74.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Frozen_XQHC_Mini_Text3">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{XBDK_240922_78}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="Frozen_XQHC_Mini_Down">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,74.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-76.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Frozen_XQHC_Mini_Text1">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,17.000000}}"/>
+          <Property Name="Text" Value="#{XBDK_240922_40}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Frozen_XQHC_Mini_Text2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-28.000000},{0.000000,57.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,4.000000}}"/>
+          <Property Name="Text" Value="#{XBDK_240922_41}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="VertFormatting" Value="BottomAligned"/>
+        </Window>        
+      </Window>
+      <Window Type="DefaultWindow" Name="Frozen_XQHC_Mini_Mid">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_XQHC_Mini_CountdownIcon">
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.000000,7.000000}}"/>
+          <Property Name="Image" Value="set:DuoBao1 image:DuoBao1_MiniTime"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Frozen_XQHC_Mini_Countdown">
+          <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,83.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{XBDK_240922_87}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_StopWatch" Name="Frozen_XQHC_Mini_Countdown_Time">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,144.000000},{0.000000,4.000000}}"/>
+          <Property Name="Text" Value="00:00"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="Frozen_XQHC_Mini_Countdown_Help">
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,191.000000},{0.500000,-8.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="Frozen_XQHC_Mini_Countdown_Help_Cliecked()"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

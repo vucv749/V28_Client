@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Labiao_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,380.000000},{0.000000,270.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-400.000000},{0.000000,244.000000}}"/>
+    <Property Name="MouseRButtonHollow" Value="True"/>
+    <Property Name="MouseMoveHollow" Value="True"/>
+    <Property Name="MouseLButtonHollow" Value="True"/>
+    <Property Name="MouseHollow" Value="True"/>
+    <Window Type="TLBB_MainFrame0" Name="Labiao_FrameBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,332.000000},{1.000000,-37.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,0.000000}}" />
+      <Window Type="TLBB_DragTitle" Name="Labiao_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="Title" />
+        <Property Name="DragTarget" Value="Labiao_Frame" />
+        <Property Name="Text" Value="#{LBZC_220810_62}" />
+      </Window>
+      <Window Type="TLBB_ButtonClose" Name="Labiao_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,14.000000}}"/>
+        <Event Name="Clicked" Function="Labiao_OnHiden()" />
+        <Property Name="AlwaysOnTop" Value="True" />
+      </Window>
+      <Window Type="TLBB_ButtonHelp" Name="Labiao_Help">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Labiao_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-60.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,40.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Window Type="DefaultWindow" Name="Labiao_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{1.000000,-174.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Labiao_Text1_Null">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,10.000000}}"/>
+            <Property Name="Image" Value="set:Labiao image:LX"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Labiao_Text2_Null">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,50.000000}}"/>
+            <Property Name="Image" Value="set:Labiao image:WZ"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Labiao_Text3_Null">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,90.000000}}"/>
+            <Property Name="Image" Value="set:Labiao image:MB"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Labiao_Text4_Null">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,130.000000}}"/>
+            <Property Name="Image" Value="set:Labiao image:SY"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="Labiao_Text1_Frame">
+            <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,18.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Labiao_Text1">
+              <Property Name="UnifiedSize" Value="{{1.000000,-135.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Text" Value="#{LBZC_220810_63}" />
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Labiao_Qidian">
+              <Property Name="UnifiedSize" Value="{{0.000000,135.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,68.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Text" Value="#{LBZC_220810_64}" />
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Labiao_Text5_Frame">
+            <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,138.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Labiao_Text5">
+              <Property Name="UnifiedSize" Value="{{1.000000,-135.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Text" Value="#{LBZC_220810_81}" />
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Labiao_Shouyi">
+              <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,68.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Text" Value="#{LBZC_220810_82}" />
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Labiao_Text6_Frame">
+            <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,58.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Labiao_Text6">
+              <Property Name="UnifiedSize" Value="{{1.000000,-135.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Text" Value="#{LBZC_220810_83}" />
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Labiao_Weizhi">
+              <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,68.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Text" Value="#{LBZC_220810_84}" />
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Labiao_Text7_Frame">
+            <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,98.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Labiao_Text7">
+              <Property Name="UnifiedSize" Value="{{1.000000,-135.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Text" Value="#{LBZC_220810_142}" />
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Labiao_Biaoshi">
+              <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,68.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Text" Value="#{LBZC_220810_143}" />
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Labiao_Fail_Null">
+          <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.000000,90.000000}}"/>
+          <Property Name="Image" Value="set:Labiao image:SB"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TLBB_MainFrameNULL" Name="Labiao_Time">
+      <Property Name="UnifiedSize" Value="{{0.000000,348.000000},{0.000000,58.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{1.000000,-63.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Image" Value="set:Labiao image:DK_D"/>
+      <Window Type="DefaultWindow" Name="Labiao_TimeBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{0.000000,11.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Labiao_TimeNull">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,8.000000}}"/>
+          <Property Name="Image" Value="set:Labiao image:DJS"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Labiao_Leave">
+          <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-95.000000},{1.000000,-21.000000}}"/>
+          <Property Name="Text" Value="#{LBZC_220810_85}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Labiao_Time_OverText">
+        <Property Name="UnifiedSize" Value="{{0.000000,263.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-115.000000},{1.000000,-38.000000}}"/>
+        <Property Name="Text" Value="#{LBZC_220810_90}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+      </Window>
+      <Window Type="TLBB_DragTitle" Name="Labiao_MiniDragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-240.000000},{1.000000,-12.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,4.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Font" Value="Title" />
+        <Property Name="DragTarget" Value="Labiao_Frame" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Labiao_Down">
+        <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,13.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,24.000000}}"/>
+        <Property Name="PushedImage" Value="set:Labiao image:UP_AN"/>
+        <Property Name="NormalImage" Value="set:Labiao image:UP_PU"/>
+        <Property Name="HoverImage" Value="set:Labiao image:UP_LIANG"/>
+        <Property Name="DisabledImage" Value="set:Labiao image:UP_HUI"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Labiao_MiniCloseClicked()"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Labiao_Up">
+        <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,13.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,24.000000}}"/>
+        <Property Name="PushedImage" Value="set:Labiao image:ON_AN"/>
+        <Property Name="NormalImage" Value="set:Labiao image:ON_PU"/>
+        <Property Name="HoverImage" Value="set:Labiao image:ON_LIANG"/>
+        <Property Name="DisabledImage" Value="set:Labiao image:ON_HUI"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Tooltip" Value="#{LBZC_220810_86}"/>
+        <Event Name="Clicked" Function="Labiao_MiniOpenClicked()"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

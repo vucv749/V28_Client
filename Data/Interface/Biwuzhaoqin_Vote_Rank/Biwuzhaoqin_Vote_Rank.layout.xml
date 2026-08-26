@@ -1,0 +1,374 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection0" Name="Biwuzhaoqin_Vote_Rank_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,386.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-200.000000},{0.500000,-193.000000}}"/>
+    <Property Name="AlwaysOnTop" Value="true" />
+    <Window Type="TLBB_TitleLace_Affection1" Name="Biwuzhaoqin_Vote_Rank_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,22.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-110.000000},{0.000000,11.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Biwuzhaoqin_Vote_Rank_PageHeader_Name">
+      <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,10.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+      <Property Name="Text" Value="" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="DragTarget" Value="Biwuzhaoqin_Vote_Rank_Frame" />
+      <Property Name="Text" Value="#{BWZQ_20230329_305}" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Biwuzhaoqin_Vote_Rank_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Biwuzhaoqin_Vote_Rank_CloseClicked();"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Biwuzhaoqin_Vote_Rank_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="Biwuzhaoqin_Vote_Rank_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-44.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_Frame_Lace3" Name="Biwuzhaoqin_Vote_Rank_ListFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{1.000000,-10.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}"/>
+        <Property Name="SortSettingEnabled" Value="False" />
+        <Window Type="TLBB_Affection_MultiColumnList" Name="Biwuzhaoqin_Vote_Rank_ListTitleClient">
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,4.000000}}"/>
+          <Property Name="ForceHorzScrollbar" Value="False" />
+          <Property Name="SortSettingEnabled" Value="False" />
+          <Property Name="SelectionMode" Value="RowSingle" />
+          <Property Name="ColumnHeader" Value="text: width:0.3 id:0" />
+          <Property Name="ColumnHeader" Value="text: width:0.3 id:1" />
+          <Property Name="ColumnHeader" Value="text: width:0.2 id:2" />
+          <Property Name="ColumnHeader" Value="text: width:0.2 id:3" />
+          <Property Name="ColumnsSizable" Value="False" />
+          <Property Name="ColumnsMovable" Value="False" />
+          <Property Name="ColumnsAdjust" Value="True" />
+          <Window Type="DefaultWindow" Name="Biwuzhaoqin_Vote_Rank_ListTitle1">
+            <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_ListTitle1_text">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_90}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Biwuzhaoqin_Vote_Rank_ListTitle2">
+            <Property Name="UnifiedSize" Value="{{0.30000,0.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.30000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_ListTitle2_text">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_91}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Biwuzhaoqin_Vote_Rank_ListTitle3">
+            <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.60000,.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_ListTitle3_text">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_92}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Biwuzhaoqin_Vote_Rank_ListTitle4">
+            <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.800000,.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_ListTitle4_text">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_93}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Biwuzhaoqin_Vote_Rank_ListClient">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-26.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,26.000000}}"/>
+          <Window Type="TLBB_Frame_Lace2" Name="Biwuzhaoqin_Vote_Rank_List1">
+            <Property Name="UnifiedSize" Value="{{1.0000,-10.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List1_Num">
+              <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List1_1">
+              <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_99}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List1_2">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_100}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List1_3">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_101}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="Biwuzhaoqin_Vote_Rank_List2">
+            <Property Name="UnifiedSize" Value="{{1.0000,-10.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,30.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List2_Num">
+              <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List2_1">
+              <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_99}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List2_2">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_100}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List2_3">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_101}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="Biwuzhaoqin_Vote_Rank_List3">
+            <Property Name="UnifiedSize" Value="{{1.0000,-10.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,60.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List3_Num">
+              <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List3_1">
+              <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_99}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List3_2">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_100}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List3_3">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_101}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="Biwuzhaoqin_Vote_Rank_List4">
+            <Property Name="UnifiedSize" Value="{{1.0000,-10.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,90.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List4_Num">
+              <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List4_1">
+              <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_99}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List4_2">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_100}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List4_3">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_101}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="Biwuzhaoqin_Vote_Rank_List5">
+            <Property Name="UnifiedSize" Value="{{1.0000,-10.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,120.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List5_Num">
+              <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List5_1">
+              <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_99}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List5_2">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_100}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List5_3">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_101}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="Biwuzhaoqin_Vote_Rank_List6">
+            <Property Name="UnifiedSize" Value="{{1.0000,-10.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,150.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List6_Num">
+              <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List6_1">
+              <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_99}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List6_2">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_100}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List6_3">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_101}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="Biwuzhaoqin_Vote_Rank_List7">
+            <Property Name="UnifiedSize" Value="{{1.0000,-10.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,180.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List7_Num">
+              <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List7_1">
+              <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_99}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List7_2">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_100}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List7_3">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_101}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="Biwuzhaoqin_Vote_Rank_List8">
+            <Property Name="UnifiedSize" Value="{{1.0000,-10.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,210.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List8_Num">
+              <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List8_1">
+              <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_99}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List8_2">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_100}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List8_3">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_101}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="Biwuzhaoqin_Vote_Rank_List9">
+            <Property Name="UnifiedSize" Value="{{1.0000,-10.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,240.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List9_Num">
+              <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List9_1">
+              <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_99}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List9_2">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_100}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List9_3">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_101}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="Biwuzhaoqin_Vote_Rank_List10">
+            <Property Name="UnifiedSize" Value="{{1.0000,-10.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,270.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List10_Num">
+              <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List10_1">
+              <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_99}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List10_2">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_100}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Vote_Rank_List10_3">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="#{BWZQ_20230329_101}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

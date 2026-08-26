@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="ModifyMenPai_HandBook_FrameNULL">
+    <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,440.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.500000,-220.000000}}"/>
+    <Event Name="Hidden" Function="ModifyMenPai_HandBook_OnHiden();" />
+    <Window Type="TLBB_ButtonClose" Name="ModifyMenPai_HandBook_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="ModifyMenPai_HandBook_CloseWindow();"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="ModifyMenPai_HandBook_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="ModifyMenPai_HandBook_DragTitle">
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-48.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,10.000000}}"/>
+      <Property Name="DragTarget" Value="ModifyMenPai_HandBook_FrameNULL"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="VertFormatting" Value="VertCentred"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Text" Value="#{YDS_180907_05}"/>
+    </Window>
+    <Window Type="TLBB_MainFrame0" Name="ModifyMenPai_HandBook_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="AttachEnabled" Value="True"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="DefaultWindow" Name="ModifyMenPai_HandBook_ZhiYin1">
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,35.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="ModifyMenPai_HandBook_ZhiYin1_1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-51.000000},{0.000000,300.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,31.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ModifyMenPai_HandBook_ZhiYin1_1_Explain">
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{YDS_180907_34}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ModifyMenPai_HandBook_ZhiYin2">
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,35.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="ModifyMenPai_HandBook_ZhiYin2_TextLace">
+          <Property Name="UnifiedSize" Value="{{1.000000,-51.000000},{0.000000,300.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,31.000000}}"/>
+          <Property Name="Text" Value=""/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Window Type="TLBB_SimpleText" Name="ModifyMenPai_HandBook_ZhiYin2_Text">
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,6.000000}}"/>
+            <Property Name="Text" Value="#{YDS_180907_35}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="ModifyMenPai_HandBook_Button">
+        <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{1.000000,-58.000000}}"/>
+        <Window Type="TLBB_ButtonNULL" Name="ModifyMenPai_HandBook_UpPage">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,250.000000},{0.500000,-15.000000}}"/>
+          <Property Name="PushedImage" Value="set:TXHW image:TXHWButtonL_Pushed"/>
+          <Property Name="NormalImage" Value="set:TXHW image:TXHWButtonL_Normal"/>
+          <Property Name="HoverImage" Value="set:TXHW image:TXHWButtonL_Hover"/>
+          <Property Name="DisabledImage" Value="set:TXHW image:TXHWButtonL_Disable"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="ModifyMenPai_HandBook_Pre_Click(1)" />
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="ModifyMenPai_HandBook_DownPage">
+          <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-270.000000},{0.500000,-15.000000}}"/>
+          <Property Name="PushedImage" Value="set:TXHW image:TXHWButtonR_Pushed"/>
+          <Property Name="NormalImage" Value="set:TXHW image:TXHWButtonR_Normal"/>
+          <Property Name="HoverImage" Value="set:TXHW image:TXHWButtonR_Hover"/>
+          <Property Name="DisabledImage" Value="set:TXHW image:TXHWButtonR_Disable"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="ModifyMenPai_HandBook_Next_Click(1)" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

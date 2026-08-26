@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrameNULL" Name="DuoBao2_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,192.000000},{0.000000,156.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-534.000000},{1.000000,-266.000000}}"/>
+		<Window Type="TLBB_DragTitle" Name="DuoBao2_DragTitle">
+			<Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,26.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+			<Property Name="Text" Value="#{DDDB_20240711_94}"/>
+			<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+			<Property Name="Font" Value="YouYuan11.25"/>
+			<Property Name="DragTarget" Value="DuoBao2_Frame"/>
+		</Window>
+		<Window Type="TLBB_ButtonClose" Name="DuoBao2_Close">
+			<Property Name="Visible" Value="False"/>
+			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,13.000000}}"/>
+			<Event Name="Clicked" Function=""/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+		</Window>
+		<Window Type="TLBB_StaticImageNULL" Name="DuoBao2_Bang">
+			<Property Name="UnifiedSize" Value="{{0.000000,192.000000},{0.000000,152.000000}}"/>
+			<Property Name="Image" Value="set:Phoenix_RankSmall image:Phoenix_BK"/>
+			<Property Name="RiseOnClick" Value="False"/>
+			<Property Name="MouseRButtonHollow" Value="True"/>
+			<Property Name="MouseMoveHollow" Value="True"/>
+			<Property Name="MouseLButtonHollow" Value="True"/>
+			<Property Name="MouseHollow" Value="True"/>
+		</Window>
+		<Window Type="DefaultWindow" Name="DuoBao2_ScoreNo1">
+			<Property Name="UnifiedSize" Value="{{0.000000,172.000000},{0.000000,22.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,38.000000}}"/>
+			<Window Type="TLBB_StaticImageNULL" Name="DuoBao2_ScoreNo1_1">
+				<Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,21.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}"/>
+				<Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_No1"/>
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="DuoBao2_ScoreNo1_Text1">
+				<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,3.000000}}"/>
+				<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+				<Property Name="Text" Value="#{DDDB_20240711_80}" />
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="DuoBao2_ScoreNo1_Text2">
+				<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,86.000000},{0.000000,1.000000}}"/>
+				<Property Name="HorzFormatting" Value="RightAligned" />
+				<Property Name="Text" Value="9999999999999" />
+				<Property Name="TextColor" Value="FF00ff00"/>
+			</Window>
+		</Window>
+		<Window Type="DefaultWindow" Name="DuoBao2_ScoreNo2">
+			<Property Name="UnifiedSize" Value="{{0.000000,172.000000},{0.000000,22.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,65.000000}}"/>
+			<Window Type="TLBB_StaticImageNULL" Name="DuoBao2_ScoreNo2_1">
+				<Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,21.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}"/>
+				<Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_No2"/>
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="DuoBao2_ScoreNo2_Text1">
+				<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,3.000000}}"/>
+				<Property Name="VertFormatting" Value="VertCentred" />
+				<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+				<Property Name="Text" Value="#{DDDB_20240711_81}" />
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="DuoBao2_ScoreNo2_Text2">
+				<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,86.000000},{0.000000,1.000000}}"/>
+				<Property Name="HorzFormatting" Value="RightAligned" />
+				<Property Name="VertFormatting" Value="VertCentred" />
+				<Property Name="Text" Value="9999999999" />
+				<Property Name="TextColor" Value="FF00ff00"/>
+			</Window>
+		</Window>
+		<Window Type="DefaultWindow" Name="DuoBao2_ScoreNo3">
+			<Property Name="UnifiedSize" Value="{{0.000000,172.000000},{0.000000,22.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,94.000000}}"/>
+			<Window Type="TLBB_StaticImageNULL" Name="DuoBao2_ScoreNo3_1">
+				<Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,21.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}"/>
+				<Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_No3"/>
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="DuoBao2_ScoreNo3_Text1">
+				<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,3.000000}}"/>
+				<Property Name="VertFormatting" Value="VertCentred" />
+				<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+				<Property Name="Text" Value="#{DDDB_20240711_82}" />
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="DuoBao2_ScoreNo3_Text2">
+				<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,86.000000},{0.000000,1.000000}}"/>
+				<Property Name="HorzFormatting" Value="RightAligned" />
+				<Property Name="VertFormatting" Value="VertCentred" />
+				<Property Name="Text" Value="9999999999" />
+				<Property Name="TextColor" Value="FF00ff00"/>
+			</Window>
+		</Window>
+		<Window Type="DefaultWindow" Name="DuoBao2_ScoreNo4">
+			<Property Name="UnifiedSize" Value="{{0.000000,172.000000},{0.000000,22.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,123.000000}}"/>
+			<Window Type="TLBB_StaticImageNULL" Name="DuoBao2_ScoreNo4_1">
+				<Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}}"/>
+				<Property Name="Image" Value="set:DuoBao1 image:DuoBao1_No4"/>
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="DuoBao2_ScoreNo4_Text1">
+				<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,3.000000}}"/>
+				<Property Name="VertFormatting" Value="VertCentred" />
+				<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+				<Property Name="Text" Value="#{DDDB_20240711_83}" />
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="DuoBao2_ScoreNo4_Text2">
+				<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,86.000000},{0.000000,1.000000}}"/>
+				<Property Name="HorzFormatting" Value="RightAligned" />
+				<Property Name="VertFormatting" Value="VertCentred" />
+				<Property Name="Text" Value="9999999999" />
+				<Property Name="TextColor" Value="FF00ff00"/>
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

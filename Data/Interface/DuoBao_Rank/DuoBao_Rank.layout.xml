@@ -1,0 +1,289 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="DuoBao_Rank_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,642.000000},{0.000000,264.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-321.000000},{0.500000,-132.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="DuoBao_Rank_PageHeader_Name">
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-48.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,2.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="WordWrapCentred" />
+      <Property Name="DragTarget" Value="DuoBao_Rank_Frame" />
+      <Property Name="Text" Value="#{DDDB_20240711_145}" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="DuoBao_Rank_Close">
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,4.000000}}"/>
+      <Event Name="Clicked" Function="DuoBao_Rank_Close()"/>
+    </Window>
+    <Window Type="TLBB_FrameY" Name="DuoBao_Rank_FrameBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+    </Window>        
+      <Window Type="TLBB_ButtonCommon" Name="DuoBao_Rank_Exit">
+        <Property Name="Visible" Value="False"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-25.000000}}"/>
+        <Property Name="Text" Value="#{DDDB_20240711_152}"/>
+        <Event Name="Clicked" Function="DuoBao_Rank_Exit()"/>
+      </Window>
+      <Window Type="TLBB_Frame_Lace3" Name="DuoBao_Rank1">
+        <Property Name="UnifiedSize" Value="{{1.000000,-18.000000},{0.000000,230.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,28.000000}}"/>
+        <Window Type="TLBB_MultiColumnList" Name="DuoBao_Rank1_TitleClient">
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,4.000000}}"/>
+          <Property Name="ForceHorzScrollbar" Value="False" />
+          <Property Name="SortSettingEnabled" Value="False" />
+          <Property Name="SelectionMode" Value="RowSingle" />
+          <Property Name="ColumnHeader" Value="text: width:0.14 id:0" />
+          <Property Name="ColumnHeader" Value="text: width:0.14 id:1" />
+          <Property Name="ColumnHeader" Value="text: width:0.14 id:2" />
+          <Property Name="ColumnHeader" Value="text: width:0.14 id:3" />
+          <Property Name="ColumnHeader" Value="text: width:0.14 id:4" />
+          <Property Name="ColumnHeader" Value="text: width:0.18 id:5" />
+          <Property Name="ColumnHeader" Value="text: width:0.12 id:6" />
+          <Property Name="ColumnsSizable" Value="False" />
+          <Property Name="ColumnsMovable" Value="False" />
+          <Property Name="ColumnsAdjust" Value="True" />
+          <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_Title1">
+            <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{DDDB_20240711_146}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_Title2">
+            <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.140000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{DDDB_20240711_147}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_Title3">
+            <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.280000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{DDDB_20240711_148}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_Title4">
+            <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.420000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{DDDB_20240711_149}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_Title5">
+            <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.560000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{DDDB_20240711_150}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_Title6">
+            <Property Name="UnifiedSize" Value="{{0.180000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.700000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{DDDB_20240711_192}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_Title7">
+            <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.880000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{DDDB_20240711_193}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="DuoBao_Rank1_ListClient">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,204.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,26.000000}}"/>
+          <Window Type="TLBB_Frame_Lace2" Name="DuoBao_Rank1_List1">
+            <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List1_1">
+              <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_226}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List1_2">
+              <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.140000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_84}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List1_3">
+              <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.280000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_85}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List1_4">
+              <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.420000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_85}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List1_5">
+              <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.560000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_85}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List1_6">
+              <Property Name="UnifiedSize" Value="{{0.180000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.700000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_85}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List1_7">
+              <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.880000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="DuoBao_Rank1_List2">
+            <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,50.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List2_1">
+              <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_227}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List2_2">
+              <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.140000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_84}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List2_3">
+              <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.280000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_85}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List2_4">
+              <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.420000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_85}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List2_5">
+              <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.560000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_85}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List2_6">
+              <Property Name="UnifiedSize" Value="{{0.180000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.700000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_85}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List2_7">
+              <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.880000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="DuoBao_Rank1_List3">
+            <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,100.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List3_1">
+              <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_228}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List3_2">
+              <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.140000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_84}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List3_3">
+              <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.280000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_85}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List3_4">
+              <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.420000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_85}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List3_5">
+              <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.560000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_85}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List3_6">
+              <Property Name="UnifiedSize" Value="{{0.180000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.700000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_85}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List3_7">
+              <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.880000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="DuoBao_Rank1_List4">
+            <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,150.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List4_1">
+              <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_229}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List4_2">
+              <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.140000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_84}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List4_3">
+              <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.280000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_85}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List4_4">
+              <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.420000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_85}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List4_5">
+              <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.560000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_85}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List4_6">
+              <Property Name="UnifiedSize" Value="{{0.180000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.700000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{DDDB_20240711_85}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DuoBao_Rank1_List4_7">
+              <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.880000,0.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+  </Window>
+</GUILayout>

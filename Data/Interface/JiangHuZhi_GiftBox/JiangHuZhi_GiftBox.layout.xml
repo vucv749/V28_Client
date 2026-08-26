@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="JiangHuZhi_GiftBoxFrame">
+    <Property Name="UnifiedSize" Value="{{0.000000,362.000000},{0.000000,255.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-181.000000},{0.500000,-128.000000}}"/>
+    <Event Name="Hidden" Function="JiangHuZhi_GiftBox_OnHidden();"/>
+    <Window Type="TLBB_DragTitle" Name="JiangHuZhi_GiftBoxDragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{QEYD_240402_75}"/>
+      <Property Name="DragTarget" Value="JiangHuZhi_GiftBoxFrame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="JiangHuZhi_GiftBoxHelp">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="JiangHuZhi_GiftBoxClose">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="JiangHuZhi_GiftBoxOnClose()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="JiangHuZhi_GiftBoxClient">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Window Type="DefaultWindow" Name="JiangHuZhi_GiftBoxClientBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="JiangHuZhi_GiftBoxClientBK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,200.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:OptionalGiftBox image:small"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="JiangHuZhi_GiftBoxInfo">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,22.000000}}"/>
+        <Property Name="Text" Value="#{QEYD_240402_81}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="JiangHuZhi_GiftBoxGift1">
+        <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,92.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,68.000000},{0.000000,50.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="JiangHuZhi_GiftBoxGift1_Icon1">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.500000,-36.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="JiangHuZhi_GiftBoxGift1_Icon_Mask1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="JiangHuZhi_GiftBoxGift1_Icon2">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{0.500000,-36.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="JiangHuZhi_GiftBoxGift1_Icon_Mask2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="JiangHuZhi_GiftBoxGift1_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-89.000000},{1.000000,-26.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="TextColor" Value="FF800000"/>
+          <Property Name="Text" Value="#{QEYD_240402_164}"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="JiangHuZhi_GiftBoxGift1_Preview">
+          <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-31.000000},{0.000000,6.000000}}"/>
+          <Property Name="PushedImage" Value="set:FeelFeedBack1 image:Anniversary_Rich_GiftRewards_Pushed"/>
+          <Property Name="NormalImage" Value="set:FeelFeedBack1 image:Anniversary_Rich_GiftRewards_Normal"/>
+          <Property Name="HoverImage" Value="set:FeelFeedBack1 image:Anniversary_Rich_GiftRewards_Hover"/>
+          <Property Name="DisabledImage" Value="set:FeelFeedBack1 image:Anniversary_Rich_GiftRewards_Disabled"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="JiangHuZhi_GiftBoxPreview(1)"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon11" Name="JiangHuZhi_GiftBoxGift1_Select">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{1.000000,-40.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Text" Value="#{QEYD_240402_117}"/>
+        <Event Name="Clicked" Function="JiangHuZhi_GiftBoxConfirm(1)"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

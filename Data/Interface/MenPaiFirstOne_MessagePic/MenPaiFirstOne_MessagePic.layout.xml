@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="MenPaiFirstOne_MessagePic_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,530.000000},{0.000000,191.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-264.000000},{0.500000,-240.000000}}" />
+    <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_MessagePic_ImageBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,530.000000},{0.000000,186.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+      <Property Name="Image" Value="set:MenPaiFirstOne01 image:MenPaiFirstOne_Win" />   
+      <!-- 失败时调用 set:MenPaiFirstOne01 image:MenPaiFirstOne_Shibai -->        
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="MenPaiFirstOne_MessagePic_TextBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,26.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.500000,-200.000000},{1.000000,-26.000000}}" />
+      <Property Name="Image" Value="set:MenPaiFirstOne01 image:MenPaiFirstOne_TextBK" />     
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>    
+    <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_MessagePic_Text">
+      <Property Name="UnifiedSize" Value="{{0.000000,500.000000},{0.000000,24.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-250.000000},{1.000000,-25.000000}}"/>
+      <Property Name="Text" Value="#{DYRCN_220427_31}"/>
+      <Property Name="Font" Value="YouYuan9.75"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="VertFormatting" Value="TopAligned"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window> 
+  </Window>
+</GUILayout>

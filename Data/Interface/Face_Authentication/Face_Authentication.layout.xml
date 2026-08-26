@@ -1,0 +1,97 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="Face_Authentication_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,210.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-200.000000},{0.500000,-105.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="Face_Authentication_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:40.000000 y:4.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="Face_Authentication_Frame" />
+      <Window Type="TLBB_SimpleText" Name="Face_Authentication_Text">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="Text" Value="#{RLYZ_20240516_7}" />
+        <Property Name="RiseOnClick" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Face_Authentication_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonHelp" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Face_Authentication&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Face_Authentication_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="Face_Authentication_Close_Clicked();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Face_Authentication_Function_Frame">
+      <Property Name="AbsolutePosition" Value="x:7.000000 y:30.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-40.000000}" />
+      <Window Type="TLBB_SimpleText" Name="Face_Authentication_Info_Text">
+        <Property Name="UnifiedSize" Value="{{1.000000,-36.000000},{0.000000,96.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,5.000000}}"/>
+        <Property Name="Text" Value="#{RLYZ_20240516_9}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Face_Authentication_State1_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,105.000000}}"/>
+        <Property Name="Text" Value="#{RLYZ_20240516_10}" />
+        <Property Name="HorzFormatting" Value="RightAligned"/>
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Face_Authentication_State2_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,105.000000}}"/>
+        <Property Name="Text" Value="#{RLYZ_20240516_11}" />
+        <Property Name="HorzFormatting" Value="LeftAligned"/>
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Face_Authentication_Gender1_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.000000,105.000000}}"/>
+        <Property Name="Text" Value="#{RLYZ_20240516_13}" />
+        <Property Name="HorzFormatting" Value="RightAligned"/>
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Face_Authentication_TypeBut">
+        <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.000000,105.000000}}"/>
+        <Property Name="Tooltip" Value="#{RLYZ_20240516_17}"/>
+        <Property Name="Text" Value="#{RLYZ_20240516_16}"/>
+        <Event Name="Clicked" Function="Face_Authentication_TypeBut_Clicked();"/>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="Face_Authentication_Blank">
+        <Property Name="UnifiedSize" Value="{{1.000000,-174.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,132.000000},{1.000000,-29.000000}}"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Face_Authentication_but1">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-30.000000}}"/>
+        <Property Name="Text" Value="#{RLYZ_20240516_8}" />
+        <Event Name="Clicked" Function="Face_Authentication_Close_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Face_Authentication_but2">
+        <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-30.000000}}"/>
+        <Property Name="Text" Value="#{RLYZ_20240516_21}" />
+        <Property Name="Tooltip" Value="#{RLYZ_20240516_24}"/>
+        <Event Name="Clicked" Function="Face_Authentication_ShowOrHide_Clicked();" />
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Face_Authentication_but2Image">
+        <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-30.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Tooltip" Value="#{RLYZ_20240516_24}"/>
+        <Property Name="Image" Value=""/>
+      </Window>
+
+    </Window>
+  </Window>
+</GUILayout>

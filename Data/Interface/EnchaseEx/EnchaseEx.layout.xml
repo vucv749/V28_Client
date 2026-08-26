@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="EnchaseEx_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,322.000000},{0.000000,458.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-130.000000},{0.500000,-229.000000}}"/>
+    <Event Name="Shown" Function="EnchaseEx_OnShown();" />
+    <Event Name="Hidden" Function="EnchaseEx_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="EnchaseEx_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="DragTarget" Value="EnchaseEx_Frame" />
+      <Window Type="TLBB_SimpleText" Name="EnchaseEx_Title">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="Text" Value="#{INTERFACE_XML_19}" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="EnchaseEx_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*EnchaseEx&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="EnchaseEx_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonHelp" />
+      <Event Name="Clicked" Function="this:Hide();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="EnchaseEx_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="EnchaseEx_Explain1">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-274.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{BSLCYH_130529_137}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="EnchaseEx_Explain2">
+        <Property Name="UnifiedSize" Value="{{0.650000,-30.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{1.000000,-252.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{BSLCYH_130529_46}" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="EnchaseEx_Item">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000008}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{1.000000,-260.000000}}"/>
+        <Property Name="DraggingEnabled" Value="True" />
+        <Property Name="DragAcceptName" Value="G141" />
+        <Event Name="RBClicked" Function="Resume_EnchaseEx(1);" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="EnchaseEx_Explain3">
+        <Property Name="UnifiedSize" Value="{{0.650000,-55.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{1.000000,-210.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{BSLCYH_130529_47}" />
+      </Window>
+      <Window Type="TLBB_Animate" Name="EnchaseExCheck1">
+        <Property Name="UnifiedSize" Value="{{0.000000,37.000000},{0.000000,37.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{1.000000,-220.000000}}"/>
+        <Property Name="Animate" Value="BaoShiCheck" />
+      </Window>
+      <Window Type="TLBB_Animate" Name="EnchaseExCheck2">
+        <Property Name="UnifiedSize" Value="{{0.000000,37.000000},{0.000000,37.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,188.000000},{1.000000,-220.000000}}"/>
+        <Property Name="Animate" Value="BaoShiCheck" />
+      </Window>
+      <Window Type="TLBB_Animate" Name="EnchaseExCheck3">
+        <Property Name="UnifiedSize" Value="{{0.000000,37.000000},{0.000000,37.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,226.000000},{1.000000,-220.000000}}"/>
+        <Property Name="Animate" Value="BaoShiCheck" />
+      </Window>
+      <Window Type="TLBB_Animate" Name="EnchaseExCheck4">
+        <Property Name="UnifiedSize" Value="{{0.000000,37.000000},{0.000000,37.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,264.000000},{1.000000,-220.000000}}"/>
+        <Property Name="Animate" Value="BaoShiCheck" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="EnchaseEx_Gem1">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{1.000000,-218.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="DraggingEnabled" Value="True" />
+        <Property Name="DragAcceptName" Value="G142" />
+        <Event Name="RBClicked" Function="Resume_EnchaseEx(2);" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="EnchaseEx_Gem2">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{1.000000,-218.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="DraggingEnabled" Value="True" />
+        <Property Name="DragAcceptName" Value="G143" />
+        <Event Name="RBClicked" Function="Resume_EnchaseEx(3);" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="EnchaseEx_Gem3">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{1.000000,-218.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="DraggingEnabled" Value="True" />
+        <Property Name="DragAcceptName" Value="G144" />
+        <Event Name="RBClicked" Function="Resume_EnchaseEx(4);" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="EnchaseEx_Gem4">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,266.000000},{1.000000,-218.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="DraggingEnabled" Value="True" />
+        <Property Name="DragAcceptName" Value="G145" />
+        <Event Name="RBClicked" Function="Resume_EnchaseEx(5);" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="EnchaseEx_Explain4">
+        <Property Name="UnifiedSize" Value="{{0.500000,-24.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{1.000000,-168.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{BSLCYH_130529_51}" />
+      </Window>
+
+      <Window Type="TLBB_SimpleText" Name="EnchaseEx_Explain5">
+        <Property Name="UnifiedSize" Value="{{0.500000,-37.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{1.000000,-126.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{BSLCYH_130529_52}" />
+      </Window>
+
+      <Window Type="TLBB_ActionButton" Name="EnchaseEx_Fu">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{1.000000,-176.000000}}"/>
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="EnchaseEx_Material">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{1.000000,-134.000000}}"/>
+        <Property Name="DraggingEnabled" Value="True" />
+        <Property Name="DragAcceptName" Value="G146" />
+        <Event Name="RBClicked" Function="Resume_EnchaseEx(6);" />
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="EnchaseEx_DemandMoney_Text">
+        <Property Name="UnifiedSize" Value="{{0.980000,0.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.010000,0.000000},{1.000000,-89.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{INTERFACE_XML_789}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="EnchaseEx_DemandMoney">
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="AlignFix" Value="True" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="EnchaseEx_CurrentlyJiaozi_Text">
+        <Property Name="UnifiedSize" Value="{{0.980000,0.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.010000,0.000000},{1.000000,-67.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{BDJB_051210_1}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="EnchaseEx_CurrentlyJiaozi">
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="AlignFix" Value="True" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="EnchaseEx_CurrentlyMoney_Text">
+        <Property Name="UnifiedSize" Value="{{0.980000,0.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.010000,0.000000},{1.000000,-45.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="Text" Value="#{INTERFACE_XML_834}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="EnchaseEx_CurrentlyMoney">
+          <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,20.000000}" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="AlignFix" Value="True" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCheck" Name="EnchaseEx_YuanBaoPay_Button">
+        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{1.000000,-16.000000}}"/>
+        <Property Name="Tooltip" Value="#{BSLCYH_130529_55}"/>
+        <Event Name="MouseButtonUp" Function="EnchaseEx_YuanbaoAuto();"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="EnchaseEx_YuanBaoPay_TXT">
+        <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="#{BSLCYH_130529_18}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="EnchaseEx_OK">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{BSLCYH_130529_56}" />
+        <Event Name="Clicked" Function="EnchaseEx_Submit();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="EnchaseEx_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_542}" />
+        <Event Name="Clicked" Function="this:Hide();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="OptionalGiftBox_Four_Frame_BK">
+    <Property Name="UnifiedSize" Value="{{0.000000,440.000000},{0.000000,277.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-220.000000},{0.500000,-140.000000}}"/>
+    <Event Name="Hidden" Function="OptionalGiftBox_Four_OnHidden();"/>
+    <Window Type="TLBB_DragTitle" Name="OptionalGiftBox_Four_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{%s0 TYLB_20220809_07 }"/>
+      <Property Name="DragTarget" Value="OptionalGiftBox_Four_Frame_BK"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="OptionalGiftBox_Four_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function=""/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="OptionalGiftBox_Four_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="OptionalGiftBox_Four_OnHidden();"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="OptionalGiftBox_Four_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Window Type="DefaultWindow" Name="OptionalGiftBox_FourBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="OptionalGiftBox_FourBK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,428.000000},{0.000000,222.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:OptionalGiftBox image:big"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="OptionalGiftBox_Four_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,26.000000}}"/>
+        <Property Name="Text" Value="#{TYLB_20220809_08}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="OptionalGiftBox_Four_ItemBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,297.000000},{0.000000,110.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-148.000000},{0.000000,56.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="OptionalGiftBox_Four_Item1">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="OptionalGiftBox_Four_OnItemClicked(1)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="OptionalGiftBox_Four_Item1_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="OptionalGiftBox_Four_Item2">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="OptionalGiftBox_Four_OnItemClicked(2)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="OptionalGiftBox_Four_Item2_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="OptionalGiftBox_Four_Item3">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,161.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="OptionalGiftBox_Four_OnItemClicked(3)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="OptionalGiftBox_Four_Item3_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="OptionalGiftBox_Four_Item4">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-63.000000},{0.500000,-40.000000}}"/>
+          <Event Name="Clicked" Function="OptionalGiftBox_Four_OnItemClicked(4)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="OptionalGiftBox_Four_Item4_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="OptionalGiftBox_Four_Item1_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{1.000000,-46.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="OptionalGiftBox_Four_Item2_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,82.000000},{1.000000,-46.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="OptionalGiftBox_Four_Item3_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,156.000000},{1.000000,-46.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="OptionalGiftBox_Four_Item4_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-68.000000},{1.000000,-46.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="OptionalGiftBox_Four_GetButton">
+        <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,38.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-52.000000},{1.000000,-50.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:Seven image:Seven_lingqupush"/>
+        <Property Name="NormalImage" Value="set:Seven image:Seven_lingquNormal"/>
+        <Property Name="HoverImage" Value="set:Seven image:Seven_lingquHover"/>
+        <Property Name="DisabledImage" Value="set:Seven image:Seven_lingquDis"/>
+        <Event Name="Clicked" Function="OptionalGiftBox_Four_OnGetClicked()"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

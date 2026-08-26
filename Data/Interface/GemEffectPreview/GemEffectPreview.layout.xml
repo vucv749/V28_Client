@@ -1,0 +1,173 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="GemEffectPreview_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,420.000000},{0.000000,520.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-240.000000},{0.500000,-300.000000}" />
+    <Event Name="Hidden" Function="GemEffectPreview_OnHiden();" />
+    <Window Type="TLBB_DragTitle" Name="GemEffectPreview_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{SZZS_240821_13}"/>
+      <Property Name="DragTarget" Value="GemEffectPreview_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="GemEffectPreview_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="GemEffectPreview_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="this:Hide();" />
+    </Window>
+    <Window Type="TLBB_FramePlayerOther" Name="GemEffectPreview_Function_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Window Type="TLBB_MeshWindow" Name="GemEffectPreview_FakeObject">
+        <Property Name="UnifiedSize" Value="{{0.000000,376.000000},{1.000000,-120.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-186.000000},{0.000000,0.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonTurnLeft" Name="GemEffectPreview_Model_TurnLeft">
+        <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.800000,-40.000000}}"/>
+        <Event Name="MouseButtonUp" Function="GemEffectPreview_FakeObject_TurnLeft(0);"/>
+        <Event Name="MouseButtonDown" Function="GemEffectPreview_FakeObject_TurnLeft(1);"/>
+        <Event Name="CaptureLost" Function="GemEffectPreview_FakeObject_TurnLeft(0);"/>
+      </Window>
+      <Window Type="TLBB_ButtonTurnRight" Name="GemEffectPreview_Model_TurnRight">
+        <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.800000,-40.000000}}"/>
+        <Event Name="MouseButtonUp" Function="GemEffectPreview_FakeObject_TurnRight(0);"/>
+        <Event Name="MouseButtonDown" Function="GemEffectPreview_FakeObject_TurnRight(1);"/>
+        <Event Name="CaptureLost" Function="GemEffectPreview_FakeObject_TurnRight(0);"/>
+      </Window>
+      <Window Type="TLBB_ButtonAdd" Name="GemEffectPreview_Model_Plus">
+        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.500000,-30.000000}}"/>
+        <Event Name="Clicked" Function="GemEffectPreview_FakeObject_ZoomIn();" />
+      </Window>
+      <Window Type="TLBB_ButtonSub" Name="GemEffectPreview_Model_Subtract">
+        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.500000,40.000000}}"/>
+        <Event Name="Clicked" Function="GemEffectPreview_FakeObject_ZoomOut();" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="GemEffectPreview_DressName">
+        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,10.000000}}"/>
+        <Property Name="Text" Value="#{HDSZYL_210325_04}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="GemEffectPreview_TitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,196.000000},{0.000000,25.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-99.000000},{0.000000,2.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Image" Value="set:GemEffectPreview01 image:GemEffectPreview_Title_BK"/>
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="GemEffectPreview_DressBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+        <Property Name="Tooltip" Value=""/>
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="GemEffectPreview_HairBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,90.000000}}"/>
+        <Property Name="Tooltip" Value=""/>
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="GemEffectPreview_FaceBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,160.000000}}"/>
+        <Property Name="Tooltip" Value=""/>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="GemEffectPreview_Shoulder_BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,88.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-160.000000},{1.000000,-98.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Window Type="TLBB_ComboList" Name="GemEffectPreview_ShoulderList">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-20.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Text" Value=""/>
+          <Event Name="ListSelectionAccepted" Function="GemEffectPreview_SelectedChanged(1);"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="GemEffectPreview_ShoulderList_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-40.000000}}"/>
+          <Property Name="Text" Value="#{SZZS_240821_3}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="GemEffectPreview_Shoulder_Item">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,0.000000}}"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="GemEffectPreview_Waist_BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,88.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-98.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Window Type="TLBB_ComboList" Name="GemEffectPreview_WaistList">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-20.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Text" Value=""/>
+          <Event Name="ListSelectionAccepted" Function="GemEffectPreview_SelectedChanged(2);"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="GemEffectPreview_WaistList_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-40.000000}}"/>
+          <Property Name="Text" Value="#{SZZS_240821_4}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="GemEffectPreview_Waist_Item">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,0.000000}}"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="GemEffectPreview_Foot_BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,88.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,80.000000},{1.000000,-98.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Window Type="TLBB_ComboList" Name="GemEffectPreview_FootList">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-20.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Text" Value=""/>
+          <Event Name="ListSelectionAccepted" Function="GemEffectPreview_SelectedChanged(3);"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="GemEffectPreview_FootList_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-40.000000}}"/>
+          <Property Name="Text" Value="#{SZZS_240821_5}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="GemEffectPreview_Foot_Item">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{0.000000,0.000000}}"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

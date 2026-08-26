@@ -1,0 +1,258 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="ShuYou_Progress_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,494.000000},{0.000000,286.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-249.000000},{0.500000,-143.000000}}"/>
+    <Event Name="Hidden" Function="ShuYou_Progress_OnHiden()"/>
+    <Window Type="TLBB_MainFrame_Affection1" Name="ShuYou_Progress_MainFrame">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_DragTitle" Name="ShuYou_Progress_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,10.000000}}"/>
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="Text" Value="#{SXZL_032901_129}" />
+        <Property Name="DragTarget" Value="ShuYou_Progress_Frame"/>
+      </Window>
+      <Window Type="TLBB_TitleLace_Affection0" Name="ShuYou_Progress_DragTitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,360.000000},{0.000000,31.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-180.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_ButtonClose" Name="ShuYou_Progress_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+        <Event Name="Clicked" Function="ShuYou_Progress_Close();" />
+      </Window>
+      <Window Type="TLBB_ButtonHelp" Name="ShuYou_Progress_Help">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="ShuYou_Progress_Frame_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,240.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,30.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_StaticImageNULL" Name="ShuYou_Progress_Frame_Client_BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,488.000000},{0.000000,240.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:SYZL image:SYZL_LJJL"/>
+        </Window>
+
+        <Window Type="DefaultWindow" Name="ShuYou_Progress_Frame_Detail">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,240.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,1.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ShuYou_Progress_Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,176.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,165.000000},{0.000000,65.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:SYZL image:SYZL_JLZQ"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="ShuYou_Progress_Icon_Frame">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,170.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,93.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="ShuYou_Progress_Text3">
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,112.000000},{0.000000,28.000000}}"/>
+              <Property Name="Text" Value="#{SXZL_032901_135}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              <Property Name="Font" Value="YouYuan11.25"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="ShuYou_Progress_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,72.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,156.000000},{0.000000,22.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_ActionButton" Name="ShuYou_Progress_Icon1Item">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,0.000000}}"/>
+                <Event Name="Clicked" Function="ShuYou_Progress_Page1_OnClick(1)"/>
+                <Window Type="TLBB_Animate" Name="ShuYou_Progress_Icon1Animate">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.0000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="JFMZ_Light1"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ShuYou_Progress_Icon1Mark">
+                <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.500000,-28.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:Anniversary01 image:Anniversary_YiLingQu"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShuYou_Progress_Icon1Text">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{1.000000,-34.000000}}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="VertFormatting" Value="VertCentred"/>
+                <Property Name="Text" Value="2"/>
+                <Property Name="Font" Value="YouYuan9.75"/>
+                <Property Name="Font" Value="TitleMini"/>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="ShuYou_Progress_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,72.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,22.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_ActionButton" Name="ShuYou_Progress_Icon2Item">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,0.000000}}"/>
+                <Event Name="Clicked" Function="ShuYou_Progress_Page1_OnClick(2)"/>
+                <Window Type="TLBB_Animate" Name="ShuYou_Progress_Icon2Animate">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.0000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="JFMZ_Light1"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ShuYou_Progress_Icon2Mark">
+                <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.500000,-28.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:Anniversary01 image:Anniversary_YiLingQu"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShuYou_Progress_Icon2Text">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{1.000000,-34.000000}}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="VertFormatting" Value="VertCentred"/>
+                <Property Name="Text" Value="2"/>
+                <Property Name="Font" Value="YouYuan9.75"/>
+                <Property Name="Font" Value="TitleMini"/>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="ShuYou_Progress_Icon3">
+              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,72.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,290.000000},{0.000000,22.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_ActionButton" Name="ShuYou_Progress_Icon3Item">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,0.000000}}"/>
+                <Event Name="Clicked" Function="ShuYou_Progress_Page1_OnClick(3)"/>
+                <Window Type="TLBB_Animate" Name="ShuYou_Progress_Icon3Animate">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.0000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="JFMZ_Light1"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ShuYou_Progress_Icon3Mark">
+                <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.500000,-28.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:Anniversary01 image:Anniversary_YiLingQu"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShuYou_Progress_Icon3Text">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{1.000000,-34.000000}}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="VertFormatting" Value="VertCentred"/>
+                <Property Name="Text" Value="2"/>
+                <Property Name="Font" Value="YouYuan9.75"/>
+                <Property Name="Font" Value="TitleMini"/>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="ShuYou_Progress_Icon4">
+              <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,72.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,380.000000},{0.000000,22.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_ActionButton" Name="ShuYou_Progress_Icon4Item">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,0.000000}}"/>
+                <Event Name="Clicked" Function="ShuYou_Progress_Page1_OnClick(4)"/>
+                <Window Type="TLBB_Animate" Name="ShuYou_Progress_Icon4Animate">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.0000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="JFMZ_Light1"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ShuYou_Progress_Icon4Mark">
+                <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.500000,-28.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:Anniversary01 image:Anniversary_YiLingQu"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShuYou_Progress_Icon4Text">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{1.000000,-34.000000}}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="VertFormatting" Value="VertCentred"/>
+                <Property Name="Text" Value="2"/>
+                <Property Name="Font" Value="YouYuan9.75"/>
+                <Property Name="Font" Value="TitleMini"/>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="ShuYou_Progress_EXPBK">
+              <Property Name="UnifiedSize" Value="{{0.000000,260.000000},{0.000000,30.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-95.000000},{0.000000,24.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ShuYou_Progress_EXPBG">
+                <Property Name="UnifiedSize" Value="{{0.000000,260.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:ZLHeroMeeting image:EXPBK"/>
+              </Window>
+              <Window Type="TLBB_ProgressPropertyZhouHuoYue" Name="ShuYou_Progress_EXP">
+                <Property Name="UnifiedSize" Value="{{0.000000,260.000000},{0.000000,10.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,11.000000}}"/>
+                <Property Name="MoveSpeed" Value="1.0"/>
+                <Property Name="EffectColor" Value="1"/>
+                <Property Name="CurrentProgress" Value="0.200000"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

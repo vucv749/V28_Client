@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection2" Name="XiaLv_PldgeLove_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,252.000000},{0.000000,210.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-126.000000},{0.500000,-100.000000}}"/>
+    <Event Name="Hidden" Function="XiaLv_PldgeLove_OnHiden();" />
+    <Window Type="TLBB_DragTitle" Name="XiaLv_PldgeLove_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
+      <Property Name="DragTarget" Value="XiaLv_PldgeLove_Frame" />
+      <Window Type="TLBB_SimpleText" Name="XiaLv_PldgeLove_Title">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{JHYH_230330_262}"/>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="XiaLv_PldgeLove_Client">
+      <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_Affection_TimeBK" Name="XiaLv_PldgeLove_TextBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_SimpleText" Name="XiaLv_PldgeLove_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{JHYH_230330_186}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaLv_PldgeLove_IconBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.000000,40.000000}}"/>
+        <Property Name="Image" Value="set:Xialv01 image:XiaLvBK10"/>
+      <Window Type="TLBB_ActionButton" Name="XiaLv_PldgeLove_Icon">
+        <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,58.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{0.500000,-29.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="DraggingEnabled" Value="True"/>
+        <Property Name="DragAcceptName" Value="W43"/>
+      </Window>
+      </Window>
+      <Window Type="TLBB_Affection_ButtonCommon" Name="XiaLv_PldgeLove_OK">
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-80.000000},{1.000000,-36.000000}}"/>
+        <Property Name="Text" Value="#{JHYH_230330_260}"/>
+        <Event Name="Clicked" Function="XiaLv_PldgeLove_Finish_Clicked();"/>
+      </Window>
+
+      <Window Type="TLBB_Affection_ButtonCommon" Name="XiaLv_PldgeLove_Pass">
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{1.000000,-36.000000}}"/>
+        <Property Name="Text" Value="#{JHYH_230330_261}"/>
+        <Event Name="Clicked" Function="XiaLv_PldgeLove_Finish_Skip();"/>
+      </Window>
+
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame2" Name="Profile_Share_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,470.000000},{0.000000,434.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-235.000000},{0.50000,-217.000000}}"/>
+    <Event Name="Hidden" Function="Profile_Share_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="Profile_Share_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.500000,-207.000000},{0.000000,1.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,414.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="Profile_Share_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{GRYM_221213_22}"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Profile_Share_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,5.000000}}"/>
+      <Event Name="Clicked" Function="Profile_Share_HelpClick()" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Profile_Share_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}}"/>
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="Profile_Share_Close();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Profile_Share_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,24.000000}}"/>
+      <Window Type="TLBB_Frame_Lace2" Name="Profile_Share_Frame_LeftClient">
+        <Property Name="UnifiedSize" Value="{{0.000000,119.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+        <Window Type="DefaultWindow" Name="Profile_Share_Dress_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Profile_Share_Dress_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_ShiZhuang_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Profile_Share_Dress_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_Animate" Name="Profile_Share_Dress_LuxuryImage">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="NewExterior_Ride_Animate"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Profile_Share_Dress_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Profile_Share_Dress1">
+            <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,1.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-1.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_fengexian"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Profile_Share_Ride_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,70.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Profile_Share_Ride_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_ZuoQi_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Profile_Share_Ride_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Profile_Share_Ride_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Profile_Share_Ride1">
+            <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,1.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-1.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_fengexian"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Profile_Share_FaceStyle_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,136.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Profile_Share_FaceStyle_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_LianXing_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Profile_Share_FaceStyle_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Profile_Share_FaceStyle_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Profile_Share_FaceStyle1">
+            <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,1.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-1.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_fengexian"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Profile_Share_HairStyle_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,202.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Profile_Share_HairStyle_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_FaXing_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Profile_Share_HairStyle_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Profile_Share_HairStyle_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Profile_Share_HairStyle1">
+            <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,1.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-1.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_yeqian_fengexian"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Profile_Share_Weapon_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,268.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Profile_Share_Weapon_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_HuanShi_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Profile_Share_Weapon_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Profile_Share_Weapon_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Profile_Share_PetSoul_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,334.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Profile_Share_PetSoul_LeftCheckBtnActive">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_HunLu_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Profile_Share_PetSoul_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Profile_Share_PetSoul_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="Profile_Share_Frame_MiddleClient">
+        <Property Name="UnifiedSize" Value="{{0.000000,335.000000},{0.000000,404.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,124.000000},{0.000000,0.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_MeshWindow" Name="Profile_Share_FakeObject">
+          <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-8.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_ButtonTurnLeft" Name="Profile_Share_Model_TurnLeft">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.900000,0.000000}}"/>
+            <Event Name="CaptureLost" Function="Profile_Share_FakeObject_TurnLeft(0);" />
+            <Event Name="MouseButtonDown" Function="Profile_Share_FakeObject_TurnLeft(1);" />
+            <Event Name="MouseButtonUp" Function="Profile_Share_FakeObject_TurnLeft(0);" />
+          </Window>
+          <Window Type="TLBB_ButtonTurnRight" Name="Profile_Share_Model_TurnRight">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.900000,0.000000}}"/>
+            <Event Name="CaptureLost" Function="Profile_Share_FakeObject_TurnRight(0);" />
+            <Event Name="MouseButtonDown" Function="Profile_Share_FakeObject_TurnRight(1);" />
+            <Event Name="MouseButtonUp" Function="Profile_Share_FakeObject_TurnRight(0);" />
+          </Window>
+          <Window Type="TLBB_ButtonAdd" Name="Profile_Share_Model_Plus">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{1.000000,-160.000000}}"/>
+            <Event Name="Clicked" Function="Profile_Share_ZoomIn();"/>
+          </Window>
+          <Window Type="TLBB_ButtonSub" Name="Profile_Share_Model_Subtract">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{1.000000,-120.000000}}"/>
+            <Event Name="Clicked" Function="Profile_Share_ZoomOut();"/>
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="Profile_Share_PreviewBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{0.000000,22.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Text" Value="#{GRYM_221213_161}"/>
+            <Event Name="Clicked" Function="Profile_Share_Preview_SwithViewMode();"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

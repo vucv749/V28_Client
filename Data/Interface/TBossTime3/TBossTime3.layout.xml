@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="TBossTime3">
+    <Property Name="UnifiedSize" Value="{{0.000000,306.000000},{0.000000,326.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-309.000000},{0.500000,20.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="TBossTime3_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-64.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,9.000000}}"/>
+      <Property Name="DragTarget" Value="TBossTime3" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="Title" />
+      <Property Name="Text" Value="#{KFRC_240326_03}" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="TBossTime3_Image">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,13.000000}}"/>
+      <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+      <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+      <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+      <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>
+      <Event Name="Clicked" Function="TBossTime3_OpenMini()" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="TBossTime3_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,13.000000}}"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="TBossTime3_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-50.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,33.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_Frame_Lace1" Name="TBossTime3_Up">
+        <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,180.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,4.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="TBossTime3_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-8.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+          <Property Name="Text" Value="#{KFRC_240326_118}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="TBossTime3_Down">
+        <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,92.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-92.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="TBossTime3_ZhuXieEnt2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,6.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{KFRC_240326_132}" />
+        </Window>
+        <Window Type="TLBB_StopWatch" Name="TBossTime3_ZhuXieEnt2_Num">
+          <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,6.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TBossTime3_ZhuXieEnt3">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,26.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{KFRC_240326_134}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TBossTime3_ZhuXieEnt3_Num">
+          <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,26.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+          <Property Name="Text" Value="#{KFRC_240326_135}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TBossTime3_ZhuXieAward">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,46.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{KFRC_240326_09}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TBossTime3_ZhuXieAward_Num">
+          <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,46.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+          <Property Name="Text" Value="#{KFRC_240326_119}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TBossTime3_ZhuXieTime">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,66.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{KFRC_240326_60}" />
+        </Window>
+        <Window Type="TLBB_StopWatch" Name="TBossTime3_ZhuXieTime_Num">
+          <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,66.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame6" Name="CJ_NormalTipsMini_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,228.000000},{0.000000,90.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-242.000000},{0.000000,240.000000}}"/>
+    <Event Name="Hidden" Function="CJ_NormalTipsMini_OnHide();" />
+    <Window Type="TLBB_DragTitle" Name="CJ_NormalTipsMini_PageHeader">
+      <Property Name="UnifiedSize" Value="{{1.000000,-90.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,0.000000}}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="Text" Value="#{TLCJ_20240709_200}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="DragTarget" Value="CJ_NormalTipsMini_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="CJ_NormalTipsMini_Btn">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,4.000000}}"/>
+      <Event Name="Clicked" Function="CJ_NormalTipsMini_Btn_Clicked()" />
+      <Property Name="PushedImage" Value="set:SongLiao02 image:Up_Pushed"/>
+      <Property Name="NormalImage" Value="set:SongLiao02 image:Up_Normal"/>
+      <Property Name="HoverImage" Value="set:SongLiao02 image:Up_Hover"/>
+      <Property Name="DisabledImage" Value="set:SongLiao02 image:Up_Disabled"/>
+    </Window>
+    <Window Type="TLBB_Frame_Lace2" Name="CJ_NormalTipsMini_TimeClock_BK">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,21.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,34.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="CJ_NormalTipsMini_TimeClockClient">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="CJ_NormalTipsMini_Time_ClockImg">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.500000,-7.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:DuoBao1 image:DuoBao1_MiniTime"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="CJ_NormalTipsMini_Time_Num">
+        <Property Name="UnifiedSize" Value="{{0.000000,174.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-174.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{TLCJ_20240709_86}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_Frame_Lace2" Name="CJ_NormalTipsMini_ReliveTimeClock_BK">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,21.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,62.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="CJ_NormalTipsMini_ReliveTimeClockClient">
+      <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-81.000000},{0.000000,63.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="CJ_NormalTipsMini_ReliveTime_ClockImg">
+        <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-8.000000}}"/>
+        <Property Name="Image" Value="set:CommonFrame38 image:FB_Time"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="CJ_NormalTipsMini_ReliveTime_Num">
+        <Property Name="UnifiedSize" Value="{{0.000000,162.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-148.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{TLCJ_20240709_445}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+  </Window>
+</GUILayout>

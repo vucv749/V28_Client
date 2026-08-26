@@ -1,0 +1,890 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="DaHua_List_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,660.000000},{0.000000,490.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-330.000000},{0.500000,-275.000000}}"/>
+    <Property Name="AttachEnabled" Value="True"/>
+    <Event Name="Hidden" Function="DaHua_List_OnClose()"/>
+    <Window Type="TLBB_StaticImageNULL" Name="DaHua_List_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,238.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-119.000000},{0.000000,2.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="Image" Value="set:Frozen_PVP image:Frozen_TitleBK"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="DaHua_List_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Text" Value="#{QXPVE_240522_148}" />
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="DaHua_List_Frame" />
+      <Property Name="AlwaysOnTop" Value="True" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="DaHua_List_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="DaHua_List_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="DaHua_List_OnClose()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="DaHua_List_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="DefaultWindow" Name="DaHua_List_ListFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-65.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+        <Window Type="DefaultWindow" Name="DaHua_List_ListTitleBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}"/>
+          <Window Type="TLBB_MultiColumnList" Name="DaHua_List_ListTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}" />
+            <Property Name="ForceHorzScrollbar" Value="False" />
+            <Property Name="ForceVertScrollbar" Value="False" />
+            <Property Name="SortSettingEnabled" Value="False" />
+            <Property Name="SelectionMode" Value="RowSingle" />
+            <Property Name="ColumnHeader" Value="text: width:0.1 id:0" />
+            <Property Name="ColumnHeader" Value="text: width:0.25 id:1" />
+            <Property Name="ColumnHeader" Value="text: width:0.15 id:2" />
+            <Property Name="ColumnHeader" Value="text: width:0.1 id:3" />
+            <Property Name="ColumnHeader" Value="text: width:0.25 id:4" />
+            <Property Name="ColumnHeader" Value="text: width:0.15 id:5" />
+            <Window Type="TLBB_SimpleText" Name="DaHua_List_ListTitle_Ranking">
+              <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}" />
+              <Property Name="Text" Value="#{QXPVE_240522_57}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DaHua_List_ListTitle_Name">
+              <Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.100000,0.000000},{0.000000,0.000000}}" />
+              <Property Name="Text" Value="#{QXPVE_240522_58}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DaHua_List_ListTitle_Career">
+              <Property Name="UnifiedSize" Value="{{0.150000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.35000,0.000000},{0.000000,0.000000}}" />
+              <Property Name="Text" Value="#{QXPVE_240522_59}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DaHua_List_ListTitle_Level">
+              <Property Name="UnifiedSize" Value="{{0.10000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.5000,0.000000},{0.000000,0.000000}}" />
+              <Property Name="Text" Value="#{QXPVE_240522_60}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DaHua_List_ListTitle_Server">
+              <Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,0.000000}}" />
+              <Property Name="Text" Value="#{QXPVE_240522_61}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DaHua_List_ListTitle_Point">
+              <Property Name="UnifiedSize" Value="{{0.150000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.85000,0.000000},{0.000000,0.000000}}" />
+              <Property Name="Text" Value="#{QXPVE_240522_62}" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="DaHua_List_RankingList">
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-54.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,27.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="MouseRButtonHollow" Value="True" />
+        <!-- <Property Name="SelectMode" Value="Single" /> -->
+        <Window Type="DefaultWindow" Name="DaHua_List_Player1_Client">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}" />
+          <!-- <Property Name="CheckMode" Value="1"/> -->
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player1Rank">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player1Name">
+            <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player1Career">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_64}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player1Level">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player1Server">
+            <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,376.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player1Point">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,536.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_64}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="DaHua_List_Player2_Client">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,32.000000}}" />
+          <!-- <Property Name="CheckMode" Value="1"/> -->
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player2Rank">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player2Name">
+            <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player2Career">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_64}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player2Level">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player2Server">
+            <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,376.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player2Point">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,536.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_64}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="DaHua_List_Player3_Client">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,64.000000}}" />
+          <!-- <Property Name="CheckMode" Value="1"/> -->
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player3Rank">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player3Name">
+            <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player3Career">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_64}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player3Level">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player3Server">
+            <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,376.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player3Point">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,536.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_64}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="DaHua_List_Player4_Client">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,96.000000}}" />
+          <!-- <Property Name="CheckMode" Value="1"/> -->
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player4Rank">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player4Name">
+            <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player4Career">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_64}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player4Level">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player4Server">
+            <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,376.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player4Point">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,536.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_64}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="DaHua_List_Player5_Client">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,128.000000}}" />
+          <!-- <Property Name="CheckMode" Value="1"/> -->
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player5Rank">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player5Name">
+            <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player5Career">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_64}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player5Level">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player5Server">
+            <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,376.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player5Point">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,536.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_64}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="DaHua_List_Player6_Client">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,160.000000}}" />
+          <!-- <Property Name="CheckMode" Value="1"/> -->
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player6Rank">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player6Name">
+            <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player6Career">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_64}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player6Level">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player6Server">
+            <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,376.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player6Point">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,536.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_64}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="DaHua_List_Player7_Client">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,192.000000}}" />
+          <!-- <Property Name="CheckMode" Value="1"/> -->
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player7Rank">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player7Name">
+            <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player7Career">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_64}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player7Level">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player7Server">
+            <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,376.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player7Point">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,536.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_64}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="DaHua_List_Player8_Client">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,224.000000}}" />
+          <!-- <Property Name="CheckMode" Value="1"/> -->
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player8Rank">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player8Name">
+            <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player8Career">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_64}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player8Level">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player8Server">
+            <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,376.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player8Point">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,536.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_64}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="DaHua_List_Player9_Client">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,256.000000}}" />
+          <!-- <Property Name="CheckMode" Value="1"/> -->
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player9Rank">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player9Name">
+            <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player9Career">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_64}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player9Level">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player9Server">
+            <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,376.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player9Point">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,536.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_64}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="DaHua_List_Player10_Client">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,288.000000}}" />
+          <!-- <Property Name="CheckMode" Value="1"/> -->
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player10Rank">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player10Name">
+            <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player10Career">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_64}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player10Level">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_63}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player10Server">
+            <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,376.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{}" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_List_Player10Point">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,536.000000},{0.500000,-10.000000}}" />
+            <Property Name="Text" Value="#{QXPVE_240522_64}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="DaHua_List_Myself_ClientBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-34.000000}}"/>
+          <Window Type="TLBB_SimpleTextFrame" Name="DaHua_List_Myself_Client">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-30.000000}}" />
+            <Window Type="TLBB_SimpleText" Name="DaHua_List_MyselfRank">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-10.000000}}" />
+              <Property Name="Text" Value="#{QXPVE_240522_63}" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DaHua_List_MyselfName">
+              <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,22.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.500000,-10.000000}}" />
+              <Property Name="Text" Value="#{QXPVE_240522_63}" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DaHua_List_MyselfCareer">
+              <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.500000,-10.000000}}" />
+              <Property Name="Text" Value="#{}" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DaHua_List_MyselfLevel">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.500000,-10.000000}}" />
+              <Property Name="Text" Value="#{QXPVE_240522_64}" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DaHua_List_MyselfServer">
+              <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,22.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,376.000000},{0.500000,-10.000000}}" />
+              <Property Name="Text" Value="#{QXPVE_240522_63}" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="DaHua_List_MyselfPoint">
+              <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,536.000000},{0.500000,-10.000000}}" />
+              <Property Name="Text" Value="#{SJBS_240124_96}" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="DaHua_List_Flip_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-22.000000}}" />
+        <Window Type="TLBB_ButtonCommon" Name="DaHua_List_Flip_Flip_UpPage">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-85.000000},{0.500000,-9.000000}}"/>
+          <Property Name="Text" Value="#{QXPVE_240522_68}"/>
+          <Event Name="Clicked" Function="DaHua_List_Flip_Flip_UpPage_Clicked();"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="DaHua_List_Flip_Flip_DownPage">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,35.000000},{0.500000,-9.000000}}"/>
+          <Property Name="Text" Value="#{QXPVE_240522_69}"/>
+          <Event Name="Clicked" Function="DaHua_List_Flip_Flip_DownPage_Clicked();"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DaHua_List_Flip_Flip_CurrentlyPage">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.500000,-10.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{QXPVE_240522_70}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

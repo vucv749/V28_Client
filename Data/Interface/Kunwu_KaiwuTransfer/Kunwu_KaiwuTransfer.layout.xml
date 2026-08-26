@@ -1,0 +1,436 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="Kunwu_KaiwuTransfer_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,494.000000},{0.000000,490.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-247.000000},{0.500000,-245.000000}}"/>
+    <Event Name="Hidden" Function="Kunwu_KaiwuTransfer_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="Kunwu_KaiwuTransfer_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Text" Value="#{KWCC_241219_43}" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="DragTarget" Value="Kunwu_KaiwuTransfer_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Kunwu_KaiwuTransfer_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Kunwu_KaiwuTransfer&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Kunwu_KaiwuTransfer_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Kunwu_KaiwuTransfer_CloseClicked();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Kunwu_KaiwuTransfer_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Property Name="RiseOnClick" Value="False" />
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_KaiwuTransfer_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,100.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{KWCC_241219_44}" />
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="Kunwu_KaiwuTransfer_ActionLeft_FrameBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,225.000000},{0.000000,232.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,102.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_FramePet" Name="Kunwu_KaiwuTransfer_FakeObjectLeft_Frame">
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,138.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-110.000000},{0.000000,4.000000}}"/>
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="TLBB_MeshWindow" Name="Kunwu_KaiwuTransfer_FakeObjectLeft">
+            <Property Name="UnifiedSize" Value="{{0.800000,0.000000},{0.850000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.100000,0.000000},{0.100000,0.000000}}"/>
+            <Property Name="ShowControl" Value="Kunwu_KaiwuTransfer_Frame" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_KaiwuTransfer_FakeObjectLeft_PetHead">
+            <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-34.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:CommonItem image:PetFrame_Head" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Kunwu_KaiwuTransfer_FakeObjectLeft_Type">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-26.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="Text" Value="#{}" />
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Kunwu_KaiwuTransfer_FakeObjectLeft_Model_Wuxing">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,14.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="#{KWCC_241219_56}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Kunwu_KaiwuTransfer_FakeObjectLeft_Model_Lingxing">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,32.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="#{KWCC_241219_57}"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Kunwu_KaiwuTransfer_ActionLeft_Locked">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,144.000000}}"/>
+          <Property Name="Text" Value="#{KWCC_241219_23}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="Kunwu_KaiwuTransfer_ActionLeft_Chooice">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-24.000000}}"/>
+          <Property Name="Text" Value="#{KWCC_241219_19}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="Kunwu_KaiwuTransfer_OpenPetList(0);"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="Kunwu_KaiwuTransfer_ActionLeft_Frame">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-66.000000}}"/>
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="TLBB_ActionButton" Name="Kunwu_KaiwuTransfer_ActionLeftItem1">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-98.000000},{0.500000,-18.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_KaiwuTransfer_ActionLeftItem1Lock">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Kunwu_KaiwuTransfer_ActionLeftItem2">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-58.000000},{0.500000,-18.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_KaiwuTransfer_ActionLeftItem2Lock">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Kunwu_KaiwuTransfer_ActionLeftItem3">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_KaiwuTransfer_ActionLeftItem3Lock">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Kunwu_KaiwuTransfer_ActionLeftItem4">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,22.000000},{0.500000,-18.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_KaiwuTransfer_ActionLeftItem4Lock">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Kunwu_KaiwuTransfer_ActionLeftItem5">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,62.000000},{0.500000,-18.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_KaiwuTransfer_ActionLeftItem5Lock">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Kunwu_KaiwuTransfer_Arrow">
+        <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,28.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-15.000000},{0.000000,204.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Image" Value="set:Button13 image:Btn_Right_Normal"/>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="Kunwu_KaiwuTransfer_ActionRight_FrameBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,225.000000},{0.000000,232.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-226.000000},{0.000000,102.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_FramePet" Name="Kunwu_KaiwuTransfer_FakeObjectRight_Frame">
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,138.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-110.000000},{0.000000,4.000000}}"/>
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="TLBB_MeshWindow" Name="Kunwu_KaiwuTransfer_FakeObjectRight">
+            <Property Name="UnifiedSize" Value="{{0.800000,0.000000},{0.850000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.100000,0.000000},{0.100000,0.000000}}"/>
+            <Property Name="ShowControl" Value="Kunwu_KaiwuTransfer_Frame" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_KaiwuTransfer_FakeObjectRight_PetHead">
+            <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-34.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:CommonItem image:PetFrame_Head" />
+            <Property Name="RiseOnClick" Value="False" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Kunwu_KaiwuTransfer_FakeObjectRight_Type">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-26.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="Text" Value="#{}" />
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Kunwu_KaiwuTransfer_FakeObjectRight_Model_Wuxing">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,14.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="#{KWCC_241219_56}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Kunwu_KaiwuTransfer_FakeObjectRight_Model_Lingxing">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,32.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="#{KWCC_241219_57}"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Kunwu_KaiwuTransfer_ActionRight_Locked">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,144.000000}}"/>
+          <Property Name="Text" Value="#{KWCC_241219_23}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="Kunwu_KaiwuTransfer_ActionRight_Chooice">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-24.000000}}"/>
+          <Property Name="Text" Value="#{KWCC_241219_19}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="Kunwu_KaiwuTransfer_OpenPetList(1);"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="Kunwu_KaiwuTransfer_ActionRight_Frame">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-66.000000}}"/>
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="TLBB_ActionButton" Name="Kunwu_KaiwuTransfer_ActionRightItem1">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-98.000000},{0.500000,-18.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_KaiwuTransfer_ActionRightItem1Lock">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Kunwu_KaiwuTransfer_ActionRightItem2">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-58.000000},{0.500000,-18.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_KaiwuTransfer_ActionRightItem2Lock">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Kunwu_KaiwuTransfer_ActionRightItem3">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_KaiwuTransfer_ActionRightItem3Lock">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Kunwu_KaiwuTransfer_ActionRightItem4">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,22.000000},{0.500000,-18.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_KaiwuTransfer_ActionRightItem4Lock">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Kunwu_KaiwuTransfer_ActionRightItem5">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,62.000000},{0.500000,-18.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_KaiwuTransfer_ActionRightItem5Lock">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <!-- <Window Type="TLBB_Frame_Lace2" Name="Kunwu_KaiwuTransfer_ActionRight_FrameBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,219.000000},{0.000000,96.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-220.000000},{0.000000,240.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_SimpleText" Name="Kunwu_KaiwuTransfer_ActionRight_Locked">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,4.000000}}"/>
+          <Property Name="Text" Value="#{KWCC_241219_23}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="Kunwu_KaiwuTransfer_ActionRight_Chooice">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-24.000000}}"/>
+          <Property Name="Text" Value="#{KWCC_241219_19}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="Kunwu_KaiwuTransfer_OpenPetList(1);"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="Kunwu_KaiwuTransfer_ActionRight_Frame">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-68.000000}}"/>
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="TLBB_ActionButton" Name="Kunwu_KaiwuTransfer_ActionRightItem1">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-98.000000},{0.500000,-18.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_KaiwuTransfer_ActionRightItem1Lock">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Kunwu_KaiwuTransfer_ActionRightItem2">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-58.000000},{0.500000,-18.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_KaiwuTransfer_ActionRightItem2Lock">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Kunwu_KaiwuTransfer_ActionRightItem3">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.500000,-18.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_KaiwuTransfer_ActionRightItem3Lock">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Kunwu_KaiwuTransfer_ActionRightItem4">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,22.000000},{0.500000,-18.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_KaiwuTransfer_ActionRightItem4Lock">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Kunwu_KaiwuTransfer_ActionRightItem5">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,62.000000},{0.500000,-18.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_KaiwuTransfer_ActionRightItem5Lock">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window> -->
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_KaiwuTransfer_Demand_Jiaozi_Text">
+        <Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-91.000000}}"/>
+        <Property Name="Text" Value="#{KWCC_241219_25}" />
+        <Window Type="TLBB_Money" Name="Kunwu_KaiwuTransfer_DemandMoney">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_KaiwuTransfer_SelfJiaozi_Text">
+        <Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-69.000000}}"/>
+        <Property Name="Text" Value="#{KWCC_241219_27}" />
+        <Window Type="TLBB_Money" Name="Kunwu_KaiwuTransfer_SelfJiaozi">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_KaiwuTransfer_SelfMoney_Text">
+        <Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-47.000000}}"/>
+        <Property Name="Text" Value="#{KWCC_241219_28}" />
+        <Window Type="TLBB_Money" Name="Kunwu_KaiwuTransfer_SelfMoney">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="Kunwu_KaiwuTransfer_Blank">
+        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Kunwu_KaiwuTransfer_OK">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="#{KWCC_241219_45}" />
+        <Event Name="Clicked" Function="Kunwu_KaiwuTransfer_OK_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Kunwu_KaiwuTransfer_Cancel">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="#{KWCC_241219_20}" />
+        <Event Name="Clicked" Function="Kunwu_KaiwuTransfer_CloseClicked();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

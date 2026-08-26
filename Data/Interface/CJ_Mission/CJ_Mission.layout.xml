@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame6" Name="CJ_Mission_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,318.000000},{0.000000,200.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-332.000000},{0.000000,425.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="CJ_Mission_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-90.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,0.000000}}"/>
+      <Property Name="DragTarget" Value="CJ_Mission_Frame" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{TLCJ_20240709_278}" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="CJ_Mission_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+      <Event Name="Clicked" Function="CJ_Mission_OpenHelp();"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="CJ_Mission_Btn">
+      <Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.000000,2.000000}}"/>
+      <Property Name="PushedImage" Value="set:CommonFrame38 image:WorldBoss_Close_Pushed"/>
+      <Property Name="NormalImage" Value="set:CommonFrame38 image:WorldBoss_Close_Normal"/>
+      <Property Name="HoverImage" Value="set:CommonFrame38 image:WorldBoss_Close_Hover"/>
+      <Property Name="DisabledImage" Value="set:CommonFrame38 image:WorldBoss_Close_Disable"/>
+      <Event Name="Clicked" Function="CJ_Mission_OpenMini()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="CJ_Mission_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,26.000000}}"/>
+      <Window Type="TLBB_Frame_Lace2" Name="CJ_Misson_Explain">
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-92.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="CJ_Misson_Explain_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{TLCJ_20240709_246}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="CJ_Mission_BK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-90.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,82.000000}}"/>
+        <Window Type="DefaultWindow" Name="CJ_Mission_Content">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="CJ_Mission_Text_1">
+            <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{TLCJ_20240709_201}"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="CJ_Mission_Text_1_Num">
+            <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{TLCJ_20240709_202}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="CJ_Mission_Text_2">
+            <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,24.000000}}"/>
+            <Property Name="Text" Value="#{TLCJ_20240709_205}"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="CJ_Mission_Text_2_Num">
+            <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,24.000000}}"/>
+            <Property Name="Text" Value="#{TLCJ_20240709_287}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="CJ_Mission_Text_3">
+            <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,48.000000}}"/>
+            <Property Name="Text" Value="#{TLCJ_20240709_206}"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="CJ_Mission_Text_3_Num">
+            <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,48.000000}}"/>
+            <Property Name="Text" Value="#{TLCJ_20240709_203}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

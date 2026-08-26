@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Dahua_Incom_Feipinhuishou_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,372.000000},{0.000000,216.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-186.000000},{0.500000,-108.000000}}"/>
+    <Event Name="Hidden" Function="Dahua_Incom_Feipinhuishou_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="Dahua_Incom_Feipinhuishou_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,40.000000}}"/>
+      <Property Name="DragTarget" Value="Dahua_Incom_Feipinhuishou_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_Feipinhuishou_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-43.000000},{0.000000,6.000000}}"/>
+      <Property Name="PushedImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Close_P"/>
+      <Property Name="NormalImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Close_N"/>
+      <Property Name="HoverImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Close_H"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Dahua_Incom_Feipinhuishou_OnClose();" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_Feipinhuishou_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{0.000000,52.000000}}"/>
+      <Property Name="PushedImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Help_P"/>
+      <Property Name="NormalImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Help_N"/>
+      <Property Name="HoverImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Help_H"/>
+      <Property Name="DisabledImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Help_D"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Dahua_Incom_Feipinhuishou_Help();"/>
+    </Window>
+
+    <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Feipinhuishou_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False" />
+      <Property Name="Image" Value="set:Dahua_Incom01 image:Dahua_Incom_Feipinhuishou"/>
+      <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Feipinhuishou_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,46.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{DHLS_240611_100}" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Feipinhuishou_Before">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,100.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.000000,-170.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Feipinhuishou_BeforeText">
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-110.000000},{0.000000,60.000000}}"/>
+          <Property Name="Text" Value="#{DHLS_240611_101}" />
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Dahua_Incom_Feipinhuishou_BeforeIcon">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,50.000000},{0.000000,50.000000}}"/>
+          <Property Name="DragAcceptName" Value="G201" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Event Name="RBClicked" Function="Dahua_Incom_Feipinhuishou_Clear();" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_Feipinhuishou_Yes">
+        <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-130.000000},{1.000000,-30.000000}}"/>
+        <Property Name="PushedImage" Value="set:Dahua_Incom02 image:Dahua_Incom_Yes_P"/>
+        <Property Name="NormalImage" Value="set:Dahua_Incom02 image:Dahua_Incom_Yes_N"/>
+        <Property Name="HoverImage" Value="set:Dahua_Incom02 image:Dahua_Incom_Yes_H"/>
+        <Property Name="DisabledImage" Value="set:Dahua_Incom02 image:Dahua_Incom_Yes_D"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Dahua_Incom_Feipinhuishou_Click()"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon2" Name="Dahua_Incom_Feipinhuishou_No">
+        <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-74.000000},{1.000000,-30.000000}}"/>
+        <Property Name="PushedImage" Value="set:Dahua_Incom02 image:Dahua_Incom_No_P"/>
+        <Property Name="NormalImage" Value="set:Dahua_Incom02 image:Dahua_Incom_No_N"/>
+        <Property Name="HoverImage" Value="set:Dahua_Incom02 image:Dahua_Incom_No_H"/>
+        <Property Name="DisabledImage" Value="set:Dahua_Incom02 image:Dahua_Incom_No_D"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Dahua_Incom_Feipinhuishou_OnClose()"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Feipinhuishou_AfterText1">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{1.000000,-70.000000}}"/>
+        <Property Name="Text" Value="#{DHLS_240611_102}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

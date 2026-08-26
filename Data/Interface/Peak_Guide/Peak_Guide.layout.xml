@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="Peak_Guide_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,616.000000},{0.000000,396.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-308.000000},{0.500000,-198.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="Peak_Guide_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Text" Value="#{DFYD_250716_245}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="Peak_Guide_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Peak_Guide_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Helper:GotoHelper('*Peak_Guide_BossChoice');"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Peak_Guide_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Peak_Guide_OnClose()"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="Peak_Guide_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="Peak_Guide_ClientFrame">
+        <Property Name="UnifiedSize" Value="{{0.000000,604.000000},{0.000000,336.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:Peak_Guide image:Peak_Guide_BK"/>
+        <Window Type="DefaultWindow" Name="Peak_Guide_Left">
+          <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{1.000000,-4.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,4.000000}}"/>
+          <Window Type="TLBB_ButtonCheckNULL" Name="Peak_Guide_Bind1">
+            <Property Name="UnifiedSize" Value="{{0.000000,198.000000},{0.000000,52.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,10.000000}}"/>
+            <Property Name="PushedImage" Value="set:Peak_Guide image:Peak_Guide_Bind1_C"/>
+            <Property Name="NormalImage" Value="set:Peak_Guide image:Peak_Guide_Bind1_N"/>
+            <Property Name="HoverImage" Value="set:Peak_Guide image:Peak_Guide_Bind1_H"/>
+            <Property Name="DisabledImage" Value="set:Peak_Guide image:Peak_Guide_Bind1_D"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Event Name="MouseLButtonDown" Function="Peak_Guide_ModeClicked(1);"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="Peak_Guide_Bind2">
+            <Property Name="UnifiedSize" Value="{{0.000000,198.000000},{0.000000,52.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,68.000000}}"/>
+            <Property Name="PushedImage" Value="set:Peak_Guide image:Peak_Guide_Bind2_C"/>
+            <Property Name="NormalImage" Value="set:Peak_Guide image:Peak_Guide_Bind2_N"/>
+            <Property Name="HoverImage" Value="set:Peak_Guide image:Peak_Guide_Bind2_H"/>
+            <Property Name="DisabledImage" Value="set:Peak_Guide image:Peak_Guide_Bind2_D"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Event Name="MouseLButtonDown" Function="Peak_Guide_ModeClicked(2);"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="Peak_Guide_Bind4">
+            <Property Name="UnifiedSize" Value="{{0.000000,198.000000},{0.000000,52.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,126.000000}}"/>
+            <Property Name="PushedImage" Value="set:Peak_Guide image:Peak_Guide_Bind3_C"/>
+            <Property Name="NormalImage" Value="set:Peak_Guide image:Peak_Guide_Bind3_N"/>
+            <Property Name="HoverImage" Value="set:Peak_Guide image:Peak_Guide_Bind3_H"/>
+            <Property Name="DisabledImage" Value="set:Peak_Guide image:Peak_Guide_Bind3_D"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Event Name="MouseLButtonDown" Function="Peak_Guide_ModeClicked(3);"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Peak_Guide_Right1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-235.000000},{1.000000,-4.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,235.000000},{0.000000,4.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="Peak_Guide_Right1_Text">
+            <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,52.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{1.000000,-120.000000}" />
+            <Property Name="Text" Value="#{DFYD_250716_250}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

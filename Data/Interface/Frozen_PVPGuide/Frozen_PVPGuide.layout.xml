@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Frozen0" Name="Frozen_PVPGuide_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,605.000000},{0.000000,478.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.500000,-229.000000}}"/>
+    <Window Type="TLBB_StaticImageNULL" Name="Frozen_PVPGuide_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,238.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-119.000000},{0.000000,2.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Image" Value="set:Frozen_PVP image:Frozen_TitleBK"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Frozen_PVPGuide_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-64.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,9.000000}}"/>
+      <Property Name="DragTarget" Value="Frozen_PVPGuide_Frame"/>
+      <Window Type="TLBB_SimpleText" Name="Frozen_PVPGuide_PageHeader">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{BXDZ_240918_339}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="Font" Value="YouYuan11.25"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Frozen_PVPGuide_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,15.000000}}"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Frozen_PVPGuide_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Frozen_PVPGuide_OnClose()"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="Frozen_PVPGuide_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,421.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_ButtonNULL" Name="Frozen_PVPGuide_LeftArrow">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,60.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-30.000000}}"/>
+        <Property Name="PushedImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowL_Pushed"/>
+        <Property Name="NormalImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowL_Normal"/>
+        <Property Name="HoverImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowL_Hover"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Frozen_PVPGuide_Page_Left()"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Frozen_PVPGuide_RightArrow">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,60.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.500000,-30.000000}}"/>
+        <Property Name="PushedImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowR_Pushed"/>
+        <Property Name="NormalImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowR_Normal"/>
+        <Property Name="HoverImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowR_Hover"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Frozen_PVPGuide_Page_Right()"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Frozen_PVPGuide_ImageBk_01">
+        <Property Name="UnifiedSize" Value="{{0.000000,591.000000},{0.000000,421.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Frozen_PVP image:Frozen_PVPImage4"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="ShengWang_Pass_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,562.000000},{0.000000,454.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-230.000000},{0.120000,0.000000}}"/>
+    <Event Name="Hidden" Function="ShengWang_Pass_CloseClicked();"/>
+    <Window Type="TLBB_DragTitle" Name="ShengWang_Pass_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Text" Value="#{SWXT_221213_113}"/>
+      <Property Name="VertFormatting" Value="VertCentred"/>
+      <Property Name="DragTarget" Value="ShengWang_Pass_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="ShengWang_Pass_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="ShengWang_Pass_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="ShengWang_Pass_CloseClicked();"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="ShengWang_Pass_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Property Name="Image" Value="set:ShengWang02 image:ShengWang_PassBK"/>
+      <Window Type="DefaultWindow" Name="ShengWang_Pass_Award_PregressAll">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,100.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="ShengWang_Pass_Award_PregressInfo">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,54.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,6.000000}}"/>
+          <Property Name="Text" Value="#{SWXT_221213_246}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ShengWang_Pass_Award_PregressLevelBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,12.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,72.000000}}"/>
+          <Property Name="Image" Value="set:ShengWang01 image:ShengWang_YXDJ"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShengWang_Pass_Award_PregressLevel">
+          <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,70.000000}}"/>
+          <Property Name="Text" Value="#{SWXT_221213_15}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ShengWang_Pass_Award_PregressBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,330.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,146.000000},{0.000000,69.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ShengWang_Pass_Award_PregressText">
+            <Property Name="UnifiedSize" Value="{{0.000000,330.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{XYSHFC_20211229_153}"/>
+            <Property Name="Text" Value="#{SWXT_221213_16}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ProgressPropertyZhouHuoYue" Name="ShengWang_Pass_Award_Pregress">
+            <Property Name="UnifiedSize" Value="{{0.000000,330.000000},{0.000000,6.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-3.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="CurrentProgress" Value="1.0" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="ShengWang_Pass_Help2">
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,510.000000},{0.000000,72.000000}}"/>
+          <Event Name="Clicked" Function="ShengWang_Pass_Help_Clicked();"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="ShengWang_Pass_Plus">
+          <Property Name="UnifiedSize" Value="{{0.000000,23.000000},{0.000000,25.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,480.000000},{0.000000,66.000000}}"/>
+          <Event Name="Clicked" Function="ShengWang_Pass_ClickBuy()"/>
+          <Property Name="PushedImage" Value="set:ShengWang01 image:ShengWang_JHHover"/>
+          <Property Name="NormalImage" Value="set:ShengWang01 image:ShengWang_JHNolmal"/>
+          <Property Name="HoverImage" Value="set:ShengWang01 image:ShengWang_JHHover"/>
+          <Property Name="DisabledImage" Value="set:ShengWang01 image:ShengWang_JHDis"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShengWang_Pass_PlusBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,23.000000},{0.000000,25.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,480.000000},{0.000000,66.000000}}"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ShengWang_Pass_Page">
+        <Property Name="UnifiedSize" Value="{{0.000000,544.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,104.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ButtonCheckNULL" Name="ShengWang_PassBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+          <Property Name="PushedImage" Value="set:ShengWang01 image:ShengWang_AwardHover"/>
+          <Property Name="NormalImage" Value="set:ShengWang01 image:ShengWang_AwardNormal"/>
+          <Property Name="HoverImage" Value="set:ShengWang01 image:ShengWang_AwardHover"/>
+          <Property Name="DisabledImage" Value="set:ShengWang01 image:ShengWang_AwardDis2"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="ShengWang_Pass_OnCheckClick(0);"/>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="ShengWang_PassTaskBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,0.000000}}"/>
+          <Property Name="PushedImage" Value="set:ShengWang01 image:ShengWang_AllPush"/>
+          <Property Name="NormalImage" Value="set:ShengWang01 image:ShengWang_AllNormal"/>
+          <Property Name="HoverImage" Value="set:ShengWang01 image:ShengWang_AllHover"/>
+          <Property Name="DisabledImage" Value="set:ShengWang01 image:ShengWang_AllDis2"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="ShengWang_Pass_OnCheckClick(1);"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShengWang_Pass_Award_PregressTime">
+          <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-150.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{SWXT_221213_17}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ShengWang_Pass_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,272.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,128.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Window Type="TLBB_Frame_Lace10" Name="ShengWang_Pass_RewardListBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ShengWang_Pass_RewardListTitleBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,519.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,2.000000}}"/>
+            <Property Name="Image" Value="set:ShengWang01 image:ShengWang_PassTitle"/>
+          </Window>
+          <Window Type="TLBB_NotSuperList1" Name="ShengWang_Pass_RewardList">
+            <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-34.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,32.000000}}"/>
+            <Property Name="SelectMode" Value="Single" />
+            <Window Type="TLBB_NotSuperListItemCommon3" Name="ShengWang_Pass_RewardContent">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ShengWang_Pass_RewardListBK2">
+                <Property Name="UnifiedSize" Value="{{0.000000,519.000000},{0.000000,46.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="Image" Value="set:ShengWang01 image:ShengWang_PassList"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWang_Pass_RewardLevel">
+                <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{SWXT_221213_37}" />
+                <Property Name="TextColor" Value="FF800000"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Font" Value="YouYuan13"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="ShengWang_Pass_Reward_NormalItem1">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,76.000000},{0.500000,-19.000000}}"/>
+              </Window>
+              <Window Type="TLBB_ButtonCommon" Name="ShengWang_Pass_Reward_BasicGetButton">
+                <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.500000,-12.000000}}"/>
+                <Property Name="Text" Value="#{SWXT_221213_89}"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ShengWang_Pass_Reward_BasicGetMark">
+                <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,22.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,134.000000},{0.500000,-11.000000}}"/>
+                <Property Name="Image" Value="set:ShengWang01 image:ShengWang_YWC"/>
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ShengWang_Pass_Reward_BasicDisableMark">
+                <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,22.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,134.000000},{0.500000,-11.000000}}"/>
+                <Property Name="Image" Value="set:ShengWang01 image:ShengWang_WDC"/>
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Tooltip" Value=""/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="ShengWang_Pass_Reward_EliteItem1">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.50000,-19.000000}}"/>
+                <Window Type="TLBB_Animate" Name="ShengWang_Pass_Reward_EliteItem1_Animate">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="JunXian_Flash3"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="ShengWang_Pass_Reward_AdvancedArouseButton">
+                <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,284.000000},{0.500000,-10.000000}}"/>
+                <Property Name="PushedImage" Value="set:ShengWang01 image:ShengWang_DZPush"/>
+                <Property Name="NormalImage" Value="set:ShengWang01 image:ShengWang_DZNolmal"/>
+                <Property Name="HoverImage" Value="set:ShengWang01 image:ShengWang_DZHover"/>
+              </Window>
+              <Window Type="TLBB_ButtonCommon" Name="ShengWang_Pass_Reward_AdvancedGetButton">
+                <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,292.000000},{0.500000,-12.000000}}"/>
+                <Event Name="Clicked" Function=""/>
+                <Property Name="Text" Value="#{SWXT_221213_89}"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ShengWang_Pass_Reward_AdvancedGetMark">
+                <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,22.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,286.000000},{0.500000,-11.000000}}"/>
+                <Property Name="Image" Value="set:ShengWang01 image:ShengWang_YWC"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ShengWang_Pass_Reward_AdvancedDisableMark">
+                <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,22.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,286.000000},{0.500000,-11.000000}}"/>
+                <Property Name="Image" Value="set:ShengWang01 image:ShengWang_WDC"/>
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="ShengWang_Pass_Reward_HighItem1">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,382.000000},{0.50000,-19.000000}}"/>
+                <Window Type="TLBB_Animate" Name="ShengWang_Pass_Reward_HighItem1_Animate">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="JunXian_Flash3"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_ButtonNULL" Name="ShengWang_Pass_Reward_HighArouseButton">
+                <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,442.000000},{0.500000,-10.000000}}"/>
+                <Property Name="PushedImage" Value="set:ShengWang01 image:ShengWang_TBPush"/>
+                <Property Name="NormalImage" Value="set:ShengWang01 image:ShengWang_TBNolmal"/>
+                <Property Name="HoverImage" Value="set:ShengWang01 image:ShengWang_TBHover"/>
+              </Window>
+              <Window Type="TLBB_ButtonCommon" Name="ShengWang_Pass_Reward_HighGetButton">
+                <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,450.000000},{0.500000,-12.000000}}"/>
+                <Event Name="Clicked" Function=""/>
+                <Property Name="Text" Value="#{SWXT_221213_89}"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ShengWang_Pass_Reward_HighGetMark">
+                <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,22.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,444.000000},{0.500000,-11.000000}}"/>
+                <Property Name="Image" Value="set:ShengWang01 image:ShengWang_YWC"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ShengWang_Pass_Reward_HighDisableMark">
+                <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,22.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,444.000000},{0.500000,-11.000000}}"/>
+                <Property Name="Image" Value="set:ShengWang01 image:ShengWang_WDC"/>
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace10" Name="ShengWang_Pass_RewardTaskBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_NotSuperList" Name="ShengWang_Pass_RewardTask">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-4.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,2.000000}}"/>
+            <Property Name="VScrollMode" Value="Hide" />
+            <Window Type="TLBB_NotSuperListItemCommon10" Name="ShengWang_Pass_RewardTaskContent">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,66.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+
+              <Window Type="TLBB_SimpleText" Name="ShengWang_Pass_RewardTaskName">
+                <Property Name="UnifiedSize" Value="{{0.000000,450.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.500000,-20.000000}}"/>
+                <Property Name="Text" Value="100"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWang_Pass_RewardTaskNum">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,458.000000},{0.500000,-20.000000}}"/>
+                <Property Name="TextColor" Value="FF800000"/>
+                <Property Name="Text" Value="100"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

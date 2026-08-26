@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame0" Name="Fenxian_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,190.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-140.000000},{0.500000,-95.000000}}"/>
+        <Window Type="TLBB_DragTitle" Name="Fenxian_DragTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,3.000000}}"/>
+            <Property Name="Text" Value="#{DFFX_20240515_5}" />
+            <Property Name="Font" Value="YouYuan11.25" />
+            <Property Name="DragTarget" Value="Fenxian_Frame" />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="Fenxian_Close">
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Fenxian_Cancel_Clicked();" />
+        </Window>
+      <Window Type="TLBB_FrameY" Name="Fenxian__ClientBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+        <Window Type="DefaultWindow" Name="Fenxian_Client">
+            <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-61.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,30.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="Fenxian_Info">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="Text" Value="#{DFFX_20240515_7}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                <Window Type="TLBB_ButtonHelp" Name="Fenxian_Help">
+                  <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,241.000000},{0.000000,10.000000}}"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                    <Event Name="Clicked" Function="Fenxian_Help_Clicked();"/>
+                </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Fenxian_CurrentScene">
+                <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,72.000000}}"/>
+                <Property Name="Text" Value="#{DFFX_20240515_8}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Fenxian_TargetScene">
+                <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,100.000000}}"/>
+                <Property Name="Text" Value="#{DFFX_20240515_9}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                <Window Type="TLBB_ComboList" Name="Fenxian_TargetSceneList">
+                    <Property Name="UnifiedSize" Value="{{0.000000,165.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,0.000000}}"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                    <Event Name="ListSelectionAccepted" Function="Fenxian_TargetSceneList_Clicked();"/>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

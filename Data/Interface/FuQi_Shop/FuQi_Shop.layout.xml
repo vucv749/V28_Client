@@ -1,0 +1,662 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection1" Name="FuQi_Shop_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,412.000000},{0.000000,440.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-190.000000},{0.500000,-220.000000}}"/>
+    <Event Name="Hidden" Function="FuQi_Shop_CloseShop();" />
+    <Window Type="TLBB_TitleLace_Affection0" Name="FuQi_Shop_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,320.000000},{0.000000,31.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-160.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+
+    <Window Type="TLBB_DragTitle" Name="FuQi_Shop_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="FuQi_Shop_Frame" />
+      <Property Name="Text" Value="#{FQSD_230328_33}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="FuQi_Shop_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="FuQi_Shop_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="FuQi_Shop_CloseShop();" />
+    </Window>
+    <Window Type="TLBB_Frame_Lace2" Name="FuQi_Shop_F5_Text_BK">
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,90.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,35.000000}}"/>
+      <Window Type="TLBB_SimpleText" Name="FuQi_Shop_F5_Text">
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{FQSD_230328_11}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+    </Window>
+
+    <Window Type="DefaultWindow" Name="FuQi_Shop_Background_Frame1">
+      <Property Name="AbsolutePosition" Value="x:5.000000 y:36.000000"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Window Type="DefaultWindow" Name="FuQi_Shop_Action_Set">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,230.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,100.000000}}"/>
+        <Window Type="TLBB_ActionButton" Name="FuQi_Shop_Item1">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+          <Event Name="Clicked" Function="FuQi_Shop_ItemClicked(1);" />
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_Item1Num">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="FuQi_Shop_Item2">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,39.000000}}"/>
+          <Event Name="Clicked" Function="FuQi_Shop_ItemClicked(2);" />
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_Item2Num">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="FuQi_Shop_Item3">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,77.000000}}"/>
+          <Event Name="Clicked" Function="FuQi_Shop_ItemClicked(3);" />
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_Item3Num">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="FuQi_Shop_Item4">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,115.000000}}"/>
+          <Event Name="Clicked" Function="FuQi_Shop_ItemClicked(4);" />
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_Item4Num">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="FuQi_Shop_Item5">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,153.000000}}"/>
+          <Event Name="Clicked" Function="FuQi_Shop_ItemClicked(5);" />
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_Item5Num">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="FuQi_Shop_Item6">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,191.000000}}"/>
+          <Event Name="Clicked" Function="FuQi_Shop_ItemClicked(6);" />
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_Item6Num">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="FuQi_Shop_Item7">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,2.000000},{0.000000,1.000000}}"/>
+          <Event Name="Clicked" Function="FuQi_Shop_ItemClicked(7);" />
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_Item7Num">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="FuQi_Shop_Item8">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,2.000000},{0.000000,39.000000}}"/>
+          <Event Name="Clicked" Function="FuQi_Shop_ItemClicked(8);" />
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_Item8Num">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="FuQi_Shop_Item9">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,2.000000},{0.000000,77.000000}}"/>
+          <Event Name="Clicked" Function="FuQi_Shop_ItemClicked(9);" />
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_Item9Num">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="FuQi_Shop_Item10">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,2.000000},{0.000000,115.000000}}"/>
+          <Event Name="Clicked" Function="FuQi_Shop_ItemClicked(10);" />
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_Item10Num">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="FuQi_Shop_Item11">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,2.000000},{0.000000,153.000000}}"/>
+          <Event Name="Clicked" Function="FuQi_Shop_ItemClicked(11);" />
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_Item11Num">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="FuQi_Shop_Item12">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,2.000000},{0.000000,191.000000}}"/>
+          <Event Name="Clicked" Function="FuQi_Shop_ItemClicked(12);" />
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_Item12Num">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="FuQi_Shop_ItemInfo1">
+          <Property Name="UnifiedSize" Value="{{0.500000,-40.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo1_DaiBi">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,12.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame38 image:FuQi_DaiBi"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo1_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="Text" Value="#{INTERFACE_XML_909}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo1_BK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{FQSD_230328_12}"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo1_Price">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-117.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="FuQi_Shop_ItemInfo2">
+          <Property Name="UnifiedSize" Value="{{0.500000,-40.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo2_DaiBi">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,12.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame38 image:FuQi_DaiBi"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo2_BK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{FQSD_230328_12}"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo2_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo2_Price">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-117.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="FuQi_Shop_ItemInfo3">
+          <Property Name="UnifiedSize" Value="{{0.500000,-40.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,76.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo3_DaiBi">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,12.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame38 image:FuQi_DaiBi"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo3_BK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{FQSD_230328_12}"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo3_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo3_Price">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-117.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="FuQi_Shop_ItemInfo4">
+          <Property Name="UnifiedSize" Value="{{0.500000,-40.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,114.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo4_DaiBi">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,12.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame38 image:FuQi_DaiBi"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo4_BK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{FQSD_230328_12}"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo4_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo4_Price">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-117.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="FuQi_Shop_ItemInfo5">
+          <Property Name="UnifiedSize" Value="{{0.500000,-40.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,152.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo5_DaiBi">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,12.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame38 image:FuQi_DaiBi"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo5_BK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{FQSD_230328_12}"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo5_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo5_Price">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-117.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="FuQi_Shop_ItemInfo6">
+          <Property Name="UnifiedSize" Value="{{0.500000,-40.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,190.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo6_DaiBi">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,12.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame38 image:FuQi_DaiBi"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo6_BK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{FQSD_230328_12}"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo6_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo6_Price">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-117.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="FuQi_Shop_ItemInfo7">
+          <Property Name="UnifiedSize" Value="{{0.500000,-40.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,40.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo7_DaiBi">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,12.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame38 image:FuQi_DaiBi"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo7_BK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{FQSD_230328_12}"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo7_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo7_Price">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-117.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="FuQi_Shop_ItemInfo8">
+          <Property Name="UnifiedSize" Value="{{0.500000,-40.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,40.000000},{0.000000,38.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo8_DaiBi">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,12.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame38 image:FuQi_DaiBi"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo8_BK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{FQSD_230328_12}"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo8_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo8_Price">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-117.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="FuQi_Shop_ItemInfo9">
+          <Property Name="UnifiedSize" Value="{{0.500000,-40.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,40.000000},{0.000000,76.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo9_DaiBi">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,12.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame38 image:FuQi_DaiBi"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo9_BK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{FQSD_230328_12}"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo9_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo9_Price">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-117.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="FuQi_Shop_ItemInfo10">
+          <Property Name="UnifiedSize" Value="{{0.500000,-40.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,40.000000},{0.000000,114.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo10_DaiBi">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,12.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame38 image:FuQi_DaiBi"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo10_BK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{FQSD_230328_12}"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo10_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo10_Price">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-117.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="FuQi_Shop_ItemInfo11">
+          <Property Name="UnifiedSize" Value="{{0.500000,-40.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,40.000000},{0.000000,152.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo11_DaiBi">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,12.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame38 image:FuQi_DaiBi"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo11_BK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{FQSD_230328_12}"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo11_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo11_Price">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-117.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="FuQi_Shop_ItemInfo12">
+          <Property Name="UnifiedSize" Value="{{0.500000,-40.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,40.000000},{0.000000,190.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo12_DaiBi">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,12.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame38 image:FuQi_DaiBi"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_ItemInfo12_BK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{FQSD_230328_12}"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo12_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:135.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FuQi_Shop_ItemInfo12_Price">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-117.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="RightAligned" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TLBB_Affection_ButtonCommon" Name="FuQi_Shop_ReviewBtn">
+      <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,24.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,369.000000}}"/>
+      <Property Name="Text" Value="#{FQSD_230328_13}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="FuQi_Shop_OpenFitting();"/>
+    </Window>
+    <Window Type="TLBB_Affection_ButtonCommon" Name="FuQi_Shop_UpPage">
+      <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,24.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.000000,369.000000}}"/>
+      <Property Name="Text" Value="#{FQSD_230328_14}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="FuQi_Shop_OnPageUpClick();"/>
+    </Window>
+    <Window Type="TLBB_SimpleMulitiTextFrame" Name="FuQi_Shop_CurrentlyPage">
+      <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{0.000000,368.000000}}"/>
+      <Property Name="TextColor" Value="FFFFF263"/>
+      <Property Name="Text" Value="999/999"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+    </Window>
+    <Window Type="TLBB_Affection_ButtonCommon" Name="FuQi_Shop_DownPage">
+      <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,24.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,40.000000},{0.000000,369.000000}}"/>
+      <Property Name="Text" Value="#{FQSD_230328_15}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="FuQi_Shop_OnPageDownClick();"/>
+    </Window>
+    <Window Type="TLBB_Frame_Lace2" Name="FuQi_Shop_Blank_BK">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,25.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{1.000000,-42.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_Frame_Lace5" Name="FuQi_Shop_Blank">
+        <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-22.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="FuQi_Shop_MoneyInfo_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-190.000000},{0.000000,4.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{FQSD_230328_16}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="FuQi_Shop_MoneyInfo_DaiBi">
+        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.500000,-10.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:CommonFrame38 image:FuQi_DaiBi"/>
+      </Window>
+      <Window Type="TLBB_ButtonCheck" Name="FuQi_Shop_TeamInfo">
+        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.500000,-6.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Tooltip" Value="#{FQSD_230328_40}"/>
+        <Event Name="Clicked" Function="FuQi_Shop_OnConfirmClick();"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="FuQi_Shop_Num_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,4.000000}}"/>
+        <Property Name="Text" Value="#{FQSD_230328_06}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

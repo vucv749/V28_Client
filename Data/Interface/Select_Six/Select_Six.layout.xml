@@ -1,0 +1,197 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="Select_Six_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,542.000000},{0.000000,345.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-270.000000},{0.500000,-170.000000}}"/>
+    <Event Name="Hidden" Function="Select_Six_CloseShop();" />
+    <Window Type="TLBB_DragTitle" Name="Select_Six_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="Select_Six_Frame" />
+      <Property Name="Text" Value="#{DFXD_250326_145}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Select_Six_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Select_Six_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Select_Six_CloseShop();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Select_Six_Background_Frame1">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Window Type="DefaultWindow" Name="Select_Six_Background_FiveBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Select_Six_Background_FiveBK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,530.000000},{0.000000,290.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:OptionalGiftBox image:SBZX_BK"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Select_Six_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,18.000000}}"/>
+        <Property Name="Text" Value="#{SHYBJ_20210805_32}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="Select_Six_ItemBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,310.000000},{0.000000,162.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,56.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="Select_Six_Item1">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,5.000000}}"/>
+          <Event Name="Clicked" Function="Select_Six_OnItemClicked(1)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Select_Six_Item1_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Select_Six_Item2">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,5.000000}}"/>
+          <Event Name="Clicked" Function="Select_Six_OnItemClicked(2)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Select_Six_Item2_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Select_Six_Item3">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,5.000000}}"/>
+          <Event Name="Clicked" Function="Select_Six_OnItemClicked(3)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Select_Six_Item3_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Select_Six_Item4">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.500000,3.000000}}"/>
+          <Event Name="Clicked" Function="Select_Six_OnItemClicked(4)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Select_Six_Item4_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Select_Six_Item5">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,3.000000}}"/>
+          <Event Name="Clicked" Function="Select_Six_OnItemClicked(5)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Select_Six_Item5_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Select_Six_Item6">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.500000,3.000000}}"/>
+          <Event Name="Clicked" Function="Select_Six_OnItemClicked(6)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Select_Six_Item6_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Select_Six_Item1_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,28.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{1.000000,-106.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Select_Six_Item2_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,28.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-106.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Select_Six_Item3_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,28.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,222.000000},{1.000000,-106.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Select_Six_Item4_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,28.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{1.000000,-28.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Select_Six_Item5_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,28.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-28.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Select_Six_Item6_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,28.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,222.000000},{1.000000,-28.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Select_Six_ConfirmBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,38.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-52.000000},{1.000000,-50.000000}}"/>
+        <Property Name="PushedImage" Value="set:Seven image:Seven_lingqupush"/>
+        <Property Name="NormalImage" Value="set:Seven image:Seven_lingquNormal"/>
+        <Property Name="HoverImage" Value="set:Seven image:Seven_lingquHover"/>
+        <Property Name="DisabledImage" Value="set:Seven image:Seven_lingquDis"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Select_Six_SelectClicked();"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

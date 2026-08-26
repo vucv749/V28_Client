@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="XiaLv_Task3_Blank">
+    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+    <Property Name="MouseRButtonHollow" Value="True"/>
+    <Property Name="MouseMoveHollow" Value="True"/>
+    <Property Name="MouseLButtonHollow" Value="True"/>
+    <Property Name="MouseHollow" Value="True"/>
+    <Event Name="Hidden" Function="XiaLv_Task3_OnClose();"/>
+    <Window Type="DefaultWindow" Name="XiaLv_Task3_Blank1">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-76.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="XiaLv_Task3_Blank2">
+      <Property Name="UnifiedSize" Value="{{0.500000,-220.000000},{0.000000,76.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-76.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="XiaLv_Task3_Blank3">
+      <Property Name="UnifiedSize" Value="{{0.500000,-220.000000},{0.000000,76.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,220.000000},{1.000000,-76.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="XiaLv_Task3_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,800.000000},{0.000000,400.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-400.000000},{0.500000,-335.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Window Type="DefaultWindow" Name="XiaLv_Task3_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Task3_State">
+          <Property Name="UnifiedSize" Value="{{0.000000,368.000000},{0.000000,114.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-184.000000},{0.750000,-124.000000}}"/>
+          <Property Name="Image" Value="set:Xialv04 image:Xialv_dui"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+        </Window>
+        <Window Type="TLBB_Affection_TopTipsBK1" Name="XiaLv_Task3_InfoBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,520.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-260.000000},{0.000000,100.000000}}"/>
+          <Window Type="TLBB_Animate" Name="XiaLv_Task3_Info">
+            <Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,78.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,140.000000},{0.500000,-40.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="DoubleGame_Time5"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_Animate" Name="XiaLv_Task3_Info_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,78.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,140.000000},{0.500000,-40.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="DoubleGame_Time5_2"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="XiaLv_Task3_Info1">
+            <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{1.000000,-20.000000}}"/>
+            <Property Name="Text" Value="#{开局提示}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="XiaLv_Task3_Info2">
+            <Property Name="UnifiedSize" Value="{{1.000000,-150.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,108.000000},{0.000000,24.000000}}"/>
+            <Property Name="Text" Value="#{题目}"/>
+            <Property Name="Font" Value="YouYuan11.25"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="VertFormatting" Value="TopAligned"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Affection_ButtonCommon" Name="XiaLv_Task3_Btn">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,23.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,163.000000},{0.000000,182.000000}}"/>
+          <Property Name="Text" Value="#{FQZC_230331_86}"/>
+          <Property Name="Font" Value="YouYuan13"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="XiaLv_Task3_Stop()"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

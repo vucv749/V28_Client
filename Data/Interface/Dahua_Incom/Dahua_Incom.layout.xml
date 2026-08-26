@@ -1,0 +1,1557 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Dahua_Incom_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,1004.000000},{0.000000,612.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-502.000000},{0.500000,-306.000000}}"/>
+    <Event Name="Hidden" Function="Dahua_Incom_Close();"/>
+    <Window Type="TLBB_DragTitle" Name="Dahua_Incom_DragTitle">
+      <Property Name="UnifiedSize" Value="{{0.000000,142.000000},{0.000000,356.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="DragTarget" Value="Dahua_Incom_Frame" />
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,142.000000},{0.000000,604.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="Image" Value="set:Dahua_Incom01 image:Dahua_Incom_DragTitle"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{0.000000,30.000000}}"/>
+      <Property Name="PushedImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Close_P"/>
+      <Property Name="NormalImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Close_N"/>
+      <Property Name="HoverImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Close_H"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Dahua_Incom_Close()" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_ButtonHelp">
+      <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{1.000000,-536.000000}}"/>
+      <Property Name="PushedImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Help_P"/>
+      <Property Name="NormalImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Help_N"/>
+      <Property Name="HoverImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Help_H"/>
+      <Property Name="DisabledImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Help_D"/>
+      <Event Name="Clicked" Function="Dahua_Incom_HelpClicked()"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+
+    <Window Type="DefaultWindow" Name="Dahua_Incom_UpBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,176.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,350.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Window Type="TLBB_ButtonCheckNULL" Name="Dahua_Incom_CheckButton1">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,116.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{0.000000,0.000000}}"/>
+        <Property Name="PushedImage" Value="set:Dahua_Incom01 image:Dahua_Incom_CXRY_N"/>
+        <Property Name="NormalImage" Value="set:Dahua_Incom01 image:Dahua_Incom_CXRY_P"/>
+        <Property Name="HoverImage" Value="set:Dahua_Incom01 image:Dahua_Incom_CXRY_N"/>
+        <Property Name="DisabledImage" Value="set:Dahua_Incom01 image:Dahua_Incom_CXRY_N"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="MouseLButtonDown" Function="Dahua_Incom_TabClicked(1)"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_CheckButton1_Tips">
+        <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,2.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonCheckNULL" Name="Dahua_Incom_CheckButton2">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,116.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-116.000000}}"/>
+        <Property Name="PushedImage" Value="set:Dahua_Incom01 image:Dahua_Incom_XJYX_N"/>
+        <Property Name="NormalImage" Value="set:Dahua_Incom01 image:Dahua_Incom_XJYX_P"/>
+        <Property Name="HoverImage" Value="set:Dahua_Incom01 image:Dahua_Incom_XJYX_N"/>
+        <Property Name="DisabledImage" Value="set:Dahua_Incom01 image:Dahua_Incom_XJYX_N"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="MouseLButtonDown" Function="Dahua_Incom_TabClicked(2)"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_CheckButton2_Tips">
+        <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,60.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="Dahua_Incom_Client1">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.0000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Info01">
+        <Property Name="UnifiedSize" Value="{{1.000000,-350.000000},{0.000000,70.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,32.000000}}"/>
+        <Property Name="Text" Value="#{DHLS_240611_07}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_ClientBK01">
+        <Property Name="UnifiedSize" Value="{{0.000000,862.000000},{0.000000,612.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,142.000000},{0.000000,12.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Dahua_Incom01 image:Dahua_Incom_Bk01"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_Image1_Btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,670.000000},{0.000000,262.000000}}"/>
+        <Property Name="PushedImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_P"/>
+        <Property Name="NormalImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_N"/>
+        <Property Name="HoverImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_H"/>
+        <Property Name="DisabledImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_D"/>
+        <Property Name="Tooltip" Value="#{DHLS_240611_15}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Dahua_Incom_ChouJiang_Preview(1);"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_Image2_Btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,634.000000},{0.000000,424.000000}}"/>
+        <Property Name="PushedImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_P"/>
+        <Property Name="NormalImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_N"/>
+        <Property Name="HoverImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_H"/>
+        <Property Name="DisabledImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_D"/>
+        <Property Name="Tooltip" Value="#{DHLS_240611_15}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Dahua_Incom_ChouJiang_Preview(2);"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_Image3_Btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,318.000000},{0.000000,308.000000}}"/>
+        <Property Name="PushedImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_P"/>
+        <Property Name="NormalImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_N"/>
+        <Property Name="HoverImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_H"/>
+        <Property Name="DisabledImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_D"/>
+        <Property Name="Tooltip" Value="#{DHLS_240611_15}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Dahua_Incom_ChouJiang_Preview(3);"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_Image4_Btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,226.000000},{0.000000,440.000000}}"/>
+        <Property Name="PushedImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_P"/>
+        <Property Name="NormalImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_N"/>
+        <Property Name="HoverImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_H"/>
+        <Property Name="DisabledImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_D"/>
+        <Property Name="Tooltip" Value="#{DHLS_240611_15}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Dahua_Incom_ChouJiang_Preview(4);"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_Image5_Btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,864.000000},{0.000000,306.000000}}"/>
+        <Property Name="PushedImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_P"/>
+        <Property Name="NormalImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_N"/>
+        <Property Name="HoverImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_H"/>
+        <Property Name="DisabledImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_D"/>
+        <Property Name="Tooltip" Value="#{DHLS_240611_15}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Dahua_Incom_ChouJiang_Preview(5);"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Stage_StageNum">
+        <Property Name="VertFormatting" Value="TopAligned"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,238.000000},{0.000000,544.000000}}"/>
+        <Property Name="Text" Value="#{DHLS_240611_22}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Dahua_Incom_Stage">
+        <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,70.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,412.000000},{1.000000,-86.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_Stage_Button1">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,33.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="Tooltip" Value="#{DHLS_240611_89}"/>
+          <Property Name="PushedImage" Value="set:Dahua_Incom01 image:Dahua_Incom_BoxClosed_P"/>
+          <Property Name="NormalImage" Value="set:Dahua_Incom01 image:Dahua_Incom_BoxClosed_N"/>
+          <Property Name="HoverImage" Value="set:Dahua_Incom01 image:Dahua_Incom_BoxClosed_H"/>
+          <Property Name="DisabledImage" Value="set:Dahua_Incom01 image:Dahua_Incom_BoxClosed_D"/>
+          <Event Name="Clicked" Function="Dahua_Incom_ChouJiang_GetLeiJi_Clicked(1);"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Stage_Button1Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,18.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Stage_Button1OK">
+          <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,41.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-176.000000},{0.500000,-22.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Tooltip" Value="#{DHLS_240611_90}"/>
+          <Property Name="Image" Value="set:Dahua_Incom01 image:Dahua_Incom_BoxOpen_N"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Stage_Button1_Text">
+          <Property Name="VertFormatting" Value="TopAligned"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.00000,-10.000000},{0.000000,50.000000}}"/>
+          <Property Name="Text" Value="#{DHLS_240611_18}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_Stage_Button2">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,33.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.330000,-16.000000},{0.000000,20.000000}}"/>
+          <Property Name="Tooltip" Value="#{DHLS_240611_89}"/>
+          <Property Name="PushedImage" Value="set:Dahua_Incom01 image:Dahua_Incom_BoxClosed_P"/>
+          <Property Name="NormalImage" Value="set:Dahua_Incom01 image:Dahua_Incom_BoxClosed_N"/>
+          <Property Name="HoverImage" Value="set:Dahua_Incom01 image:Dahua_Incom_BoxClosed_H"/>
+          <Property Name="DisabledImage" Value="set:Dahua_Incom01 image:Dahua_Incom_BoxClosed_D"/>
+          <Event Name="Clicked" Function="Dahua_Incom_ChouJiang_GetLeiJi_Clicked(2);"/>
+        </Window>
+
+        <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Stage_Button2Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,18.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Stage_Button2OK">
+          <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,41.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.330000,-16.000000},{0.500000,-22.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Tooltip" Value="#{DHLS_240611_90}"/>
+          <Property Name="Image" Value="set:Dahua_Incom01 image:Dahua_Incom_BoxOpen_N"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Stage_Button2_Text">
+          <Property Name="VertFormatting" Value="TopAligned"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.330000,-20.000000},{0.000000,50.000000}}"/>
+          <Property Name="Text" Value="#{DHLS_240611_19}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_Stage_Button3">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,33.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.670000,-32.000000},{0.000000,20.000000}}"/>
+          <Property Name="Tooltip" Value="#{DHLS_240611_89}"/>
+          <Property Name="PushedImage" Value="set:Dahua_Incom01 image:Dahua_Incom_BoxClosed_P"/>
+          <Property Name="NormalImage" Value="set:Dahua_Incom01 image:Dahua_Incom_BoxClosed_N"/>
+          <Property Name="HoverImage" Value="set:Dahua_Incom01 image:Dahua_Incom_BoxClosed_H"/>
+          <Property Name="DisabledImage" Value="set:Dahua_Incom01 image:Dahua_Incom_BoxClosed_D"/>
+          <Event Name="Clicked" Function="Dahua_Incom_ChouJiang_GetLeiJi_Clicked(3);"/>
+        </Window>
+
+        <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Stage_Button3Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,246.000000},{0.000000,18.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Stage_Button3OK">
+          <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,41.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.670000,-32.000000},{0.500000,-22.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Tooltip" Value="#{DHLS_240611_90}"/>
+          <Property Name="Image" Value="set:Dahua_Incom01 image:Dahua_Incom_BoxOpen_N"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Stage_Button3_Text">
+          <Property Name="VertFormatting" Value="TopAligned"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.670000,-40.000000},{0.000000,50.000000}}"/>
+          <Property Name="Text" Value="#{DHLS_240611_20}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_Stage_Button4">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,33.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+          <Property Name="Tooltip" Value="#{DHLS_240611_89}"/>
+          <Property Name="PushedImage" Value="set:Dahua_Incom01 image:Dahua_Incom_BoxClosed_P"/>
+          <Property Name="NormalImage" Value="set:Dahua_Incom01 image:Dahua_Incom_BoxClosed_N"/>
+          <Property Name="HoverImage" Value="set:Dahua_Incom01 image:Dahua_Incom_BoxClosed_H"/>
+          <Property Name="DisabledImage" Value="set:Dahua_Incom01 image:Dahua_Incom_BoxClosed_D"/>
+          <Event Name="Clicked" Function="Dahua_Incom_ChouJiang_GetLeiJi_Clicked(4);"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Stage_Button4Animate">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.000000,18.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Stage_Button4OK">
+          <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,41.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-56.000000},{0.500000,-22.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Tooltip" Value="#{DHLS_240611_90}"/>
+          <Property Name="Image" Value="set:Dahua_Incom01 image:Dahua_Incom_BoxOpen_N"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Stage_Button4_Text">
+          <Property Name="VertFormatting" Value="TopAligned"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,50.000000}}"/>
+          <Property Name="Text" Value="#{DHLS_240611_21}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+
+      <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_Feipinhuishou_btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,866.000000},{0.000000,160.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Feipinhuishou_P"/>
+        <Property Name="NormalImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Feipinhuishou_N"/>
+        <Property Name="HoverImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Feipinhuishou_H"/>
+        <Property Name="DisabledImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Feipinhuishou_D"/>
+        <Event Name="Clicked" Function="Dahua_Incom_FenJie_Clicked()"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_RewardBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,850.000000},{0.000000,122.000000}}"/>
+        <Property Name="Tooltip" Value="#{DHLS_240611_08}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Preview_P"/>
+        <Property Name="NormalImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Preview_N"/>
+        <Property Name="HoverImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Preview_H"/>
+        <Property Name="DisabledImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Preview_D"/>
+        <Event Name="Clicked" Function="Dahua_Incom_ChouJiang_RewardBtn_Clicked()"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="Dahua_Incom_ClientBottom">
+        <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.000000,490.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_ButtonOne">
+          <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,28.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-14.000000}}"/>
+          <Property Name="Tooltip" Value="#{DHLS_240611_93}"/>
+          <Property Name="PushedImage" Value="set:Dahua_Incom01 image:Dahua_Incom_OneButton_P"/>
+          <Property Name="NormalImage" Value="set:Dahua_Incom01 image:Dahua_Incom_OneButton_N"/>
+          <Property Name="HoverImage" Value="set:Dahua_Incom01 image:Dahua_Incom_OneButton_H"/>
+          <Property Name="DisabledImage" Value="set:Dahua_Incom01 image:Dahua_Incom_OneButton_D"/>
+          <Event Name="Clicked" Function="Dahua_Incom_ChouJiang_Clicked(1)"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_ButtonOne_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,5.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_ButtonTen">
+          <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-115.000000},{0.500000,-19.000000}}"/>
+          <Property Name="Tooltip" Value="#{DHLS_240611_94}"/>
+          <Property Name="PushedImage" Value="set:Dahua_Incom01 image:Dahua_Incom_TenButton_P"/>
+          <Property Name="NormalImage" Value="set:Dahua_Incom01 image:Dahua_Incom_TenButton_N"/>
+          <Property Name="HoverImage" Value="set:Dahua_Incom01 image:Dahua_Incom_TenButton_H"/>
+          <Property Name="DisabledImage" Value="set:Dahua_Incom01 image:Dahua_Incom_TenButton_D"/>
+          <Event Name="Clicked" Function="Dahua_Incom_ChouJiang_Clicked(2)"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_ButtonTen_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-15.000000},{0.000000,5.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Dahua_Incom_JiangQuanBk">
+        <Property Name="UnifiedSize" Value="{{0.000000,210.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,740.000000},{0.000000,474.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_JiangQuanImg">
+          <Property Name="UnifiedSize" Value="{{0.000000,148.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Dahua_Incom01 image:Dahua_Incom_Icons_bk"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_JiangQuan_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-12.000000}}"/>
+          <Property Name="Tooltip" Value="#{DHLS_240611_47}"/>
+          <Property Name="Image" Value="set:Dahua_Incom01 image:Dahua_Incom_Icon_qts"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Dahua_Incom_JiangQuan">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,10.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Text" Value="#{DHLS_240611_16}"/>
+          <Property Name="Tooltip" Value="#{DHLS_240611_17}"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_AddJiangQuan">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.500000,-9.000000}}"/>
+          <Property Name="PushedImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Buy_P"/>
+          <Property Name="NormalImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Buy_N"/>
+          <Property Name="HoverImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Buy_H"/>
+          <Property Name="DisabledImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Buy_D"/>
+          <Event Name="Clicked" Function="Dahua_Incom_BuyDaibi();"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Dahua_Incom_Client1_DaibiBk">
+        <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,740.000000},{1.000000,-110.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Client1_DaibiImg">
+          <Property Name="UnifiedSize" Value="{{0.000000,148.000000},{0.000000,40.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Dahua_Incom01 image:Dahua_Incom_Icons_bk"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Client1_Daibi_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-12.000000}}"/>
+          <Property Name="Tooltip" Value="#{DHLS_240611_47}"/>
+          <Property Name="Image" Value="set:Dahua_Incom01 image:Dahua_Incom_Icon_lz"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Client1_Daibi">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.500000,-10.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{DHLS_240611_46}"/>
+          <Property Name="Tooltip" Value="#{DHLS_240611_47}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="Dahua_Incom_Client2">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Info02">
+        <Property Name="UnifiedSize" Value="{{1.000000,-340.000000},{0.000000,70.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,50.000000}}"/>
+        <Property Name="Text" Value="#{DHLS_240611_37}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_ClientBK02">
+        <Property Name="UnifiedSize" Value="{{0.000000,862.000000},{0.000000,612.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,142.000000},{0.000000,12.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Dahua_Incom02 image:Dahua_Incom_Bk02"/>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="Dahua_Incom_List">
+        <Property Name="UnifiedSize" Value="{{0.000000,730.000000},{0.000000,356.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,140.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="DefaultWindow" Name="Dahua_Incom_BK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,235.000000},{0.000000,79.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK1_Img">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Dahua_Incom02 image:Dahua_Incom_Buy_N"/>
+            <Window Type="TLBB_ActionButton" Name="Dahua_Incom_BK1_Icon">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-30.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+              <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_BK1_Icon_Eye">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,44.000000}}"/>
+                <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_EyeDis"/>
+                <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_EyeNor"/>
+                <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_EyeHover"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Dahua_Incom_Eye_Clicked(1);"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Item1LimitNumberBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:GuiShiBase image:GuiShiNumberBK"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Item1LimitNumber">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Event Name="Clicked" Function="Dahua_Incom_Shop_BuyGift(1);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK1_Icon_Mask">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK1_Icon_BuyLimit">
+                <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK1_SellOut">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,27.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:NationalDay2 image:ItemNumMark2"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK1_ItemName">
+              <Property Name="UnifiedSize" Value="{{0.0000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,18.000000}}"/>
+              <Property Name="Text" Value="#LItemName"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK1_ItemMoney">
+              <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,0.000000}}"/>
+              <Property Name="Text" Value="#{SJFH_230425_55}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Dahua_Incom_BK2">
+          <Property Name="UnifiedSize" Value="{{0.000000,235.000000},{0.000000,79.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,245.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK2_Img">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Dahua_Incom02 image:Dahua_Incom_Buy_N"/>
+            <Window Type="TLBB_ActionButton" Name="Dahua_Incom_BK2_Icon">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-30.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+              <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_BK2_Icon_Eye">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,44.000000}}"/>
+                <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_EyeDis"/>
+                <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_EyeNor"/>
+                <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_EyeHover"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Dahua_Incom_Eye_Clicked(2);"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Item2LimitNumberBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:GuiShiBase image:GuiShiNumberBK"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Item2LimitNumber">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Event Name="Clicked" Function="Dahua_Incom_Shop_BuyGift(2);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK2_Icon_Mask">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK2_Icon_BuyLimit">
+                <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK2_SellOut">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,27.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:NationalDay2 image:ItemNumMark2"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK2_ItemName">
+              <Property Name="UnifiedSize" Value="{{0.0000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,18.000000}}"/>
+              <Property Name="Text" Value="#LItemName"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK2_ItemMoney">
+              <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,0.000000}}"/>
+              <Property Name="Text" Value="#{SJFH_230425_55}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Dahua_Incom_BK3">
+          <Property Name="UnifiedSize" Value="{{0.000000,235.000000},{0.000000,79.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,490.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK3_Img">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Dahua_Incom02 image:Dahua_Incom_Buy_N"/>
+            <Window Type="TLBB_ActionButton" Name="Dahua_Incom_BK3_Icon">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-30.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+              <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_BK3_Icon_Eye">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,44.000000}}"/>
+                <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_EyeDis"/>
+                <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_EyeNor"/>
+                <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_EyeHover"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Dahua_Incom_Eye_Clicked(3);"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Item3LimitNumberBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:GuiShiBase image:GuiShiNumberBK"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Item3LimitNumber">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Event Name="Clicked" Function="Dahua_Incom_Shop_BuyGift(3);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK3_Icon_Mask">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK3_Icon_BuyLimit">
+                <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK3_SellOut">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,27.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:NationalDay2 image:ItemNumMark2"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK3_ItemName">
+              <Property Name="UnifiedSize" Value="{{0.0000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,18.000000}}"/>
+              <Property Name="Text" Value="#LItemName"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK3_ItemMoney">
+              <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,0.000000}}"/>
+              <Property Name="Text" Value="#{SJFH_230425_55}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Dahua_Incom_BK4">
+          <Property Name="UnifiedSize" Value="{{0.000000,235.000000},{0.000000,79.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,89.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK4_Img">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Dahua_Incom02 image:Dahua_Incom_Buy_N"/>
+            <Window Type="TLBB_ActionButton" Name="Dahua_Incom_BK4_Icon">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-30.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+              <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_BK4_Icon_Eye">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,44.000000}}"/>
+                <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_EyeDis"/>
+                <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_EyeNor"/>
+                <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_EyeHover"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Dahua_Incom_Eye_Clicked(4);"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Item4LimitNumberBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:GuiShiBase image:GuiShiNumberBK"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Item4LimitNumber">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Event Name="Clicked" Function="Dahua_Incom_Shop_BuyGift(4);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK4_Icon_Mask">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK4_Icon_BuyLimit">
+                <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK4_SellOut">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,27.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:NationalDay2 image:ItemNumMark2"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK4_ItemName">
+              <Property Name="UnifiedSize" Value="{{0.0000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,18.000000}}"/>
+              <Property Name="Text" Value="#LItemName"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK4_ItemMoney">
+              <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,0.000000}}"/>
+              <Property Name="Text" Value="#{SJFH_230425_55}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Dahua_Incom_BK5">
+          <Property Name="UnifiedSize" Value="{{0.000000,235.000000},{0.000000,79.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,245.000000},{0.000000,89.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK5_Img">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Dahua_Incom02 image:Dahua_Incom_Buy_N"/>
+            <Window Type="TLBB_ActionButton" Name="Dahua_Incom_BK5_Icon">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-30.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+              <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_BK5_Icon_Eye">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,44.000000}}"/>
+                <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_EyeDis"/>
+                <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_EyeNor"/>
+                <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_EyeHover"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Dahua_Incom_Eye_Clicked(5);"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Item5LimitNumberBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:GuiShiBase image:GuiShiNumberBK"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Item5LimitNumber">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Event Name="Clicked" Function="Dahua_Incom_Shop_BuyGift(5);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK5_Icon_Mask">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK5_Icon_BuyLimit">
+                <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK5_SellOut">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,27.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:NationalDay2 image:ItemNumMark2"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK5_ItemName">
+              <Property Name="UnifiedSize" Value="{{0.0000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,18.000000}}"/>
+              <Property Name="Text" Value="#LItemName"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK5_ItemMoney">
+              <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,0.000000}}"/>
+              <Property Name="Text" Value="#{SJFH_230425_55}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Dahua_Incom_BK6">
+          <Property Name="UnifiedSize" Value="{{0.000000,235.000000},{0.000000,79.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,490.000000},{0.000000,89.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK6_Img">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Dahua_Incom02 image:Dahua_Incom_Buy_N"/>
+            <Window Type="TLBB_ActionButton" Name="Dahua_Incom_BK6_Icon">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-30.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+              <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_BK6_Icon_Eye">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,44.000000}}"/>
+                <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_EyeDis"/>
+                <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_EyeNor"/>
+                <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_EyeHover"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Dahua_Incom_Eye_Clicked(6);"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Item6LimitNumberBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:GuiShiBase image:GuiShiNumberBK"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Item6LimitNumber">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Event Name="Clicked" Function="Dahua_Incom_Shop_BuyGift(6);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK6_Icon_Mask">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK6_Icon_BuyLimit">
+                <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK6_SellOut">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,27.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:NationalDay2 image:ItemNumMark2"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK6_ItemName">
+              <Property Name="UnifiedSize" Value="{{0.0000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,18.000000}}"/>
+              <Property Name="Text" Value="#LItemName"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK6_ItemMoney">
+              <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,0.000000}}"/>
+              <Property Name="Text" Value="#{SJFH_230425_55}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Dahua_Incom_BK7">
+          <Property Name="UnifiedSize" Value="{{0.000000,235.000000},{0.000000,79.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,178.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK7_Img">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Dahua_Incom02 image:Dahua_Incom_Buy_N"/>
+            <Window Type="TLBB_ActionButton" Name="Dahua_Incom_BK7_Icon">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-30.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+              <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_BK7_Icon_Eye">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,44.000000}}"/>
+                <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_EyeDis"/>
+                <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_EyeNor"/>
+                <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_EyeHover"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Dahua_Incom_Eye_Clicked(7);"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Item7LimitNumberBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:GuiShiBase image:GuiShiNumberBK"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Item7LimitNumber">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Event Name="Clicked" Function="Dahua_Incom_Shop_BuyGift(7);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK7_Icon_Mask">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK7_Icon_BuyLimit">
+                <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK7_SellOut">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,27.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:NationalDay2 image:ItemNumMark2"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK7_ItemName">
+              <Property Name="UnifiedSize" Value="{{0.0000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,18.000000}}"/>
+              <Property Name="Text" Value="#LItemName"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK7_ItemMoney">
+              <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,0.000000}}"/>
+              <Property Name="Text" Value="#{SJFH_230425_55}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Dahua_Incom_BK8">
+          <Property Name="UnifiedSize" Value="{{0.000000,235.000000},{0.000000,79.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,245.000000},{0.000000,178.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK8_Img">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Dahua_Incom02 image:Dahua_Incom_Buy_N"/>
+            <Window Type="TLBB_ActionButton" Name="Dahua_Incom_BK8_Icon">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-30.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+              <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_BK8_Icon_Eye">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,44.000000}}"/>
+                <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_EyeDis"/>
+                <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_EyeNor"/>
+                <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_EyeHover"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Dahua_Incom_Eye_Clicked(8);"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Item8LimitNumberBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:GuiShiBase image:GuiShiNumberBK"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Item8LimitNumber">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Event Name="Clicked" Function="Dahua_Incom_Shop_BuyGift(8);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK8_Icon_Mask">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK8_Icon_BuyLimit">
+                <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK8_SellOut">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,27.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:NationalDay2 image:ItemNumMark2"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK8_ItemName">
+              <Property Name="UnifiedSize" Value="{{0.0000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,18.000000}}"/>
+              <Property Name="Text" Value="#LItemName"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK8_ItemMoney">
+              <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,0.000000}}"/>
+              <Property Name="Text" Value="#{SJFH_230425_55}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Dahua_Incom_BK9">
+          <Property Name="UnifiedSize" Value="{{0.000000,235.000000},{0.000000,79.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,490.000000},{0.000000,178.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK9_Img">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Dahua_Incom02 image:Dahua_Incom_Buy_N"/>
+            <Window Type="TLBB_ActionButton" Name="Dahua_Incom_BK9_Icon">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-30.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+              <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_BK9_Icon_Eye">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,44.000000}}"/>
+                <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_EyeDis"/>
+                <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_EyeNor"/>
+                <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_EyeHover"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Dahua_Incom_Eye_Clicked(9);"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Item9LimitNumberBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:GuiShiBase image:GuiShiNumberBK"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Item9LimitNumber">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Event Name="Clicked" Function="Dahua_Incom_Shop_BuyGift(9);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK9_Icon_Mask">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK9_Icon_BuyLimit">
+                <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK9_SellOut">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,27.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:NationalDay2 image:ItemNumMark2"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK9_ItemName">
+              <Property Name="UnifiedSize" Value="{{0.0000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,18.000000}}"/>
+              <Property Name="Text" Value="#LItemName"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK9_ItemMoney">
+              <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,0.000000}}"/>
+              <Property Name="Text" Value="#{SJFH_230425_55}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Dahua_Incom_BK10">
+          <Property Name="UnifiedSize" Value="{{0.000000,235.000000},{0.000000,79.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,268.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK10_Img">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Dahua_Incom02 image:Dahua_Incom_Buy_N"/>
+            <Window Type="TLBB_ActionButton" Name="Dahua_Incom_BK10_Icon">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-30.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+              <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_BK10_Icon_Eye">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,44.000000}}"/>
+                <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_EyeDis"/>
+                <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_EyeNor"/>
+                <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_EyeHover"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Dahua_Incom_Eye_Clicked(10);"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Item10LimitNumberBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:GuiShiBase image:GuiShiNumberBK"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Item10LimitNumber">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Event Name="Clicked" Function="Dahua_Incom_Shop_BuyGift(10);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK10_Icon_Mask">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK10_Icon_BuyLimit">
+                <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK10_SellOut">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,27.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:NationalDay2 image:ItemNumMark2"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK10_ItemName">
+              <Property Name="UnifiedSize" Value="{{0.0000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,18.000000}}"/>
+              <Property Name="Text" Value="#LItemName"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK10_ItemMoney">
+              <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,0.000000}}"/>
+              <Property Name="Text" Value="#{SJFH_230425_55}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Dahua_Incom_BK11">
+          <Property Name="UnifiedSize" Value="{{0.000000,235.000000},{0.000000,79.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,245.000000},{0.000000,268.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK11_Img">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Dahua_Incom02 image:Dahua_Incom_Buy_N"/>
+            <Window Type="TLBB_ActionButton" Name="Dahua_Incom_BK11_Icon">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-30.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+              <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_BK11_Icon_Eye">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,44.000000}}"/>
+                <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_EyeDis"/>
+                <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_EyeNor"/>
+                <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_EyeHover"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Dahua_Incom_Eye_Clicked(11);"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Item11LimitNumberBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:GuiShiBase image:GuiShiNumberBK"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Item11LimitNumber">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Event Name="Clicked" Function="Dahua_Incom_Shop_BuyGift(11);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK11_Icon_Mask">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK11_Icon_BuyLimit">
+                <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK11_SellOut">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,27.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:NationalDay2 image:ItemNumMark2"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK11_ItemName">
+              <Property Name="UnifiedSize" Value="{{0.0000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,18.000000}}"/>
+              <Property Name="Text" Value="#LItemName"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK11_ItemMoney">
+              <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,0.000000}}"/>
+              <Property Name="Text" Value="#{SJFH_230425_55}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Dahua_Incom_BK12">
+          <Property Name="UnifiedSize" Value="{{0.000000,235.000000},{0.000000,79.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,490.000000},{0.000000,268.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK12_Img">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Dahua_Incom02 image:Dahua_Incom_Buy_N"/>
+            <Window Type="TLBB_ActionButton" Name="Dahua_Incom_BK12_Icon">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,60.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-30.000000}}"/>
+              <Property Name="Tooltip" Value=""/>
+              <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_BK12_Icon_Eye">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,44.000000}}"/>
+                <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_EyeDis"/>
+                <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_EyeNor"/>
+                <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_EyeHover"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="Dahua_Incom_Eye_Clicked(12);"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Item12LimitNumberBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:GuiShiBase image:GuiShiNumberBK"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Item12LimitNumber">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="Text" Value="99"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Event Name="Clicked" Function="Dahua_Incom_Shop_BuyGift(12);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK12_Icon_Mask">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK12_Icon_BuyLimit">
+                <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame20 image:Item_Limit"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_BK12_SellOut">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,27.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:NationalDay2 image:ItemNumMark2"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK12_ItemName">
+              <Property Name="UnifiedSize" Value="{{0.0000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,18.000000}}"/>
+              <Property Name="Text" Value="#LItemName"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Dahua_Incom_BK12_ItemMoney">
+              <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.500000,0.000000}}"/>
+              <Property Name="Text" Value="#{SJFH_230425_55}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Dahua_Incom_Client2_Page">
+        <Property Name="UnifiedSize" Value="{{0.000000,266.000000},{0.000000,28.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{1.000000,-94.000000}}"/>
+        <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_Last">
+          <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,28.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="PushedImage" Value="set:Dahua_Incom02 image:Dahua_Incom_Up_P"/>
+          <Property Name="NormalImage" Value="set:Dahua_Incom02 image:Dahua_Incom_Up_N"/>
+          <Property Name="HoverImage" Value="set:Dahua_Incom02 image:Dahua_Incom_Up_H"/>
+          <Property Name="DisabledImage" Value="set:Dahua_Incom02 image:Dahua_Incom_Up_D"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="Dahua_Incom_PageUp();"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_PageNumBk">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.500000,-11.000000}}"/>
+          <Property Name="Image" Value="set:Dahua_Incom02 image:Dahua_Incom_Page_BK"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="Dahua_Incom_PageNum">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="99"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_Next">
+          <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,28.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-108.000000},{0.000000,0.000000}}"/>
+          <Property Name="PushedImage" Value="set:Dahua_Incom02 image:Dahua_Incom_Down_P"/>
+          <Property Name="NormalImage" Value="set:Dahua_Incom02 image:Dahua_Incom_Down_N"/>
+          <Property Name="HoverImage" Value="set:Dahua_Incom02 image:Dahua_Incom_Down_H"/>
+          <Property Name="DisabledImage" Value="set:Dahua_Incom02 image:Dahua_Incom_Down_D"/>
+          <Event Name="Clicked" Function="Dahua_Incom_PageDown();"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Dahua_Incom_DaibiBk">
+        <Property Name="UnifiedSize" Value="{{0.000000,210.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,740.000000},{1.000000,-100.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_DaibiImg">
+          <Property Name="UnifiedSize" Value="{{0.000000,148.000000},{0.000000,40.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Dahua_Incom01 image:Dahua_Incom_Icons_bk"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Daibi_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-12.000000}}"/>
+          <Property Name="Tooltip" Value="#{DHLS_240611_47}"/>
+          <Property Name="Image" Value="set:Dahua_Incom01 image:Dahua_Incom_Icon_lz"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Daibi">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.500000,-10.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{DHLS_240611_46}"/>
+          <Property Name="Tooltip" Value="#{DHLS_240611_47}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="Dahua_Incom_AddDaibi">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.500000,-9.000000}}"/>
+          <Property Name="PushedImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Buy_P"/>
+          <Property Name="NormalImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Buy_N"/>
+          <Property Name="HoverImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Buy_H"/>
+          <Property Name="DisabledImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Buy_D"/>
+          <Event Name="Clicked" Function="Dahua_Incom_BuyDaibi();"/>
+        </Window>
+
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

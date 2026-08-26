@@ -1,0 +1,595 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="KunWu_Expedition_MainFrameBK">
+    <Property Name="UnifiedSize" Value="{{0.000000,900.000000},{0.000000,590.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-450.000000},{0.500000,-251.000000}}"/>
+	 <Event Name="Hidden" Function="KunWu_Expedition_Main_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="KunWu_Expedition_MainDragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,10.000000}}"/>
+      <Property Name="Text" Value="#{ZSPQ_241216_28}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="KunWu_Expedition_MainFrameBK"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="KunWu_Expedition_MainHelp">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Helper:GotoHelper();"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="KunWu_Expedition_MainClose">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="KunWu_Expedition_Main_Close_Click();"/>
+    </Window>
+    <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_MainIntroText">
+      <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,60.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,35.000000}}"/>
+      <Property Name="Text" Value="#{ZSPQ_241216_29}"/>
+      <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      <Window Type="TLBB_ButtonHelp" Name="KunWu_Expedition_MainInfoHelp">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,34.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="KunWu_Expedition_MainInfo_GetHelp()"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_Frame_Lace1" Name="KunWu_Expedition_MainSelfInfoClient">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{1.000000,-44.000000}}"/>
+      <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_MainSelfInfo_ExpeditionLevel">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{ZSPQ_241216_42}"/>
+        <Property Name="Visible" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_MainSelfInfo_QueueBtn_tips">
+        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-14.000000},{0.000000,2.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Visible" Value="False"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="KunWu_Expedition_MainSelfInfo_QueueBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-130.000000},{0.500000,-10.000000}}"/>
+        <Property Name="Text" Value="#{ZSPQ_241216_109}"/>
+        <Property Name="Visible" Value="False"/>
+        <Event Name="Clicked" Function="KunWu_Expedition_Main_CheckAllDispatchTeam();"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_MainMissionList_LeftTime">
+        <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-110.000000},{0.000000,6.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{ZSPQ_241216_108}"/>
+        <Property Name="Tooltip" Value="#{ZSPQ_241216_145}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="KunWu_Expedition_MainMissionClient">
+      <Property Name="UnifiedSize" Value="{{0.000000,263.000000},{0.000000,451.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,92.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_MainMissionClient_BKImage">
+        <Property Name="UnifiedSize" Value="{{0.000000,263.000000},{0.000000,451.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:KunWu_Expedition01 image:ListBK"/>
+        <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_MainMissionClient_TitleDot">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:KunWu_Expedition01 image:Tips_Dot"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_MainMissionList_Title">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,0.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{ZSPQ_241216_41}"/>
+        <Property Name="Font" Value="YouYuan9.75"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_NotSuperList1" Name="KunWu_Expedition_MainMissionList">
+        <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,425.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,26.000000}}"/>
+        <Property Name="SelectMode" Value="Single"/>
+        <Property Name="MultiColumn" Value="1" />
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="ElementLClick" Function="" />
+        <Window Type="TLBB_NotSuperListItemCommon5" Name="KunWu_Expedition_MainMissionListBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,234.000000},{0.000000,80.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_MainMissionList_CheckBtnImage">
+            <Property Name="UnifiedSize" Value="{{0.000000,234.000000},{0.000000,80.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:KunWu_Expedition01 image:ListBtn_LXL_Normal"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="KunWu_Expedition_MainMissionList_CheckBtn">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Property Name="PushedImage" Value="set:KunWu_Expedition01 image:ListBtn_ALL_Hover"/>
+            <Property Name="HoverImage" Value="set:KunWu_Expedition01 image:ListBtn_ALL_Hover"/>
+            <Event Name="MouseLButtonDown" Function="KunWu_Expedition_MainMissionList_Check();"/>
+            <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_MainMissionList_MissionName">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-126.000000},{0.000000,-28.000000}}"/>
+              <Property Name="TextColor" Value="FFFFF263"/>
+              <Property Name="Text" Value="#{ZSPQ_241216_46}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Visible" Value="False"/>
+              <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_MainMissionList_MissionLevel">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-135.000000},{1.000000,-28.000000}}"/>
+              <Property Name="TextColor" Value="FFFFF263"/>
+              <Property Name="Text" Value="#{ZSPQ_241216_45}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Visible" Value="False"/>
+              <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_MainMissionList_ExpeditionLevel">
+              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-125.000000},{1.000000,-28.000000}}"/>
+              <Property Name="TextColor" Value="FFFFF263"/>
+              <Property Name="Text" Value="#{ZSPQ_241216_44}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_MainMissionList_ExpeditionTimes">
+              <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-195.000000},{1.000000,-28.000000}}"/>
+              <Property Name="TextColor" Value="FFFFF263"/>
+              <Property Name="Text" Value="#{ZSPQ_241216_51}"/>
+              <Property Name="Tooltip" Value="#{ZSPQ_241216_106}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_MainMissionList_StateText">
+              <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-68.000000},{0.000000,2.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:KunWu_Expedition01 image:Mark_PQZ"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_MainMissionList_LockImage">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:KunWu_Expedition01 image:ListBtn_ALL_Pushed"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TLBB_Frame_Lace1" Name="KunWu_Expedition_MainDetiailClient">
+      <Property Name="UnifiedSize" Value="{{0.000000,625.000000},{0.000000,451.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,268.000000},{0.000000,92.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_MainDetiailClient_BKImage">
+        <Property Name="UnifiedSize" Value="{{0.000000,621.000000},{0.000000,447.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:KunWu_Expedition01 image:MissionBK"/>
+        <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_MainMissionInfo_BKImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,358.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:KunWu_Expedition02 image:BK_QQSLE"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="KunWu_Expedition_MainQueueClient">
+        <Property Name="UnifiedSize" Value="{{0.000000,470.000000},{0.000000,42.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,316.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="DefaultWindow" Name="KunWu_Expedition_MainQueue_Pet1">
+          <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_MainQueue_Pet1Tips">
+            <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:KunWu_Expedition01 image:Team_YGL"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="KunWu_Expedition_MainQueue_Pet1_HighLight">
+            <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-28.000000}}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Property Name="PushedImage" Value="set:KunWu_Expedition01 image:BtnM_Team1_Hover"/>
+            <Property Name="NormalImage" Value="set:KunWu_Expedition01 image:BtnM_Team1_Pushed"/>
+            <Property Name="HoverImage" Value="set:KunWu_Expedition01 image:BtnM_Team1_Hover"/>
+            <Event Name="MouseLButtonDown" Function="KunWu_Expedition_Main_DispatchPetItem_Check(0)"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="KunWu_Expedition_MainQueue_Pet2">
+          <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,154.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_MainQueue_Pet2Tips">
+            <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:KunWu_Expedition01 image:Team_YGL"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="KunWu_Expedition_MainQueue_Pet2_HighLight">
+            <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-28.000000}}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Property Name="PushedImage" Value="set:KunWu_Expedition01 image:BtnM_Team2_Hover"/>
+            <Property Name="NormalImage" Value="set:KunWu_Expedition01 image:BtnM_Team2_Pushed"/>
+            <Property Name="HoverImage" Value="set:KunWu_Expedition01 image:BtnM_Team2_Hover"/>
+            <Event Name="MouseLButtonDown" Function="KunWu_Expedition_Main_DispatchPetItem_Check(1)"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="KunWu_Expedition_MainQueue_Pet3">
+          <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,308.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_MainQueue_Pet3Tips">
+            <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:KunWu_Expedition01 image:Team_YGL"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="KunWu_Expedition_MainQueue_Pet3_HighLight">
+            <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-28.000000}}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Property Name="PushedImage" Value="set:KunWu_Expedition01 image:BtnM_Team3_Hover"/>
+            <Property Name="NormalImage" Value="set:KunWu_Expedition01 image:BtnM_Team3_Pushed"/>
+            <Property Name="HoverImage" Value="set:KunWu_Expedition01 image:BtnM_Team3_Hover"/>
+            <Event Name="MouseLButtonDown" Function="KunWu_Expedition_Main_DispatchPetItem_Check(2)"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="KunWu_Expedition_MainMissionInfoBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,265.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_MainMissionInfo_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,17.000000},{0.000000,15.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{ZSPQ_241216_60}"/>
+          <Property Name="Visible" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_MainMissionInfo_Intro">
+          <Property Name="UnifiedSize" Value="{{1.000000,-90.000000},{0.000000,70.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,14.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="蛋蛋鸡被绑架了，请派出你的珍兽去xxx营救它吧！"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="KunWu_Expedition_MainMissionInfo_PetClient">
+        <Property Name="UnifiedSize" Value="{{0.000000,602.000000},{0.000000,82.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,356.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_MainMissionInfo_PetClient_BKImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,602.000000},{0.000000,82.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:KunWu_Expedition02 image:PetBK"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_MainMissionInfo_Pet1Item">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.500000,-24.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Image" Value="set:PetHeader1 image:PetHeader1_1"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="KunWu_Expedition_MainMissionInfo_Pet1ItemBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.500000,-24.000000}}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_MainMissionInfo_Pet1Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{1.000000,-70.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="珍兽名字"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_MainMissionInfo_Pet1EXpoint">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{1.000000,-50.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{ZSPQ_241216_61}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="KunWu_Expedition_MainMissionInfo_Pet1Item_ChangeBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{1.000000,-30.000000}}"/>
+          <Property Name="Text" Value="更换"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="KunWu_Expedition_Main_ChangePetBtn_Clicked()"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_MainDetiail_TimeText">
+          <Property Name="UnifiedSize" Value="{{1.000000,-420.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.000000,20.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{ZSPQ_241216_64}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="KunWu_Expedition_MainMission_StartBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-200.000000},{1.000000,-42.000000}}"/>
+          <Property Name="PushedImage" Value="set:KunWu_Expedition01 image:BtnL_Start_Pushed"/>
+          <Property Name="NormalImage" Value="set:KunWu_Expedition01 image:BtnL_Start_Normal"/>
+          <Property Name="HoverImage" Value="set:KunWu_Expedition01 image:BtnL_Start_Hover"/>
+          <Property Name="DisabledImage" Value="set:KunWu_Expedition01 image:BtnL_Start_Disabled"/>
+          <Event Name="Clicked" Function="KunWu_Expedition_Main_DoDispatch_Clicked();"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="KunWu_Expedition_MainMission_StopBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-200.000000},{1.000000,-42.000000}}"/>
+          <Property Name="PushedImage" Value="set:KunWu_Expedition01 image:BtnL_Stop_Pushed"/>
+          <Property Name="NormalImage" Value="set:KunWu_Expedition01 image:BtnL_Stop_HoverNormal"/>
+          <Property Name="HoverImage" Value="set:KunWu_Expedition01 image:BtnL_Stop_Hover"/>
+          <Event Name="Clicked" Function="KunWu_Expedition_Main_StopDispatch_Clicked();"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="KunWu_Expedition_MainMission_GetBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-200.000000},{1.000000,-42.000000}}"/>
+          <Property Name="PushedImage" Value="set:KunWu_Expedition01 image:BtnL_Finish_Pushed"/>
+          <Property Name="NormalImage" Value="set:KunWu_Expedition01 image:BtnL_Finish_Normal"/>
+          <Property Name="HoverImage" Value="set:KunWu_Expedition01 image:BtnL_Finish_Hover"/>
+          <Property Name="Tooltip" Value=""/>
+          <Event Name="Clicked" Function="KunWu_Expedition_Main_GetDispatchReward_Clicked();"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_MainAward_PreviewTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-253.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,385.000000},{0.000000,90.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{ZSPQ_241216_31}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_MainAward_PreviewInfo_FB">
+        <Property Name="UnifiedSize" Value="{{1.000000,-349.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,374.000000},{0.000000,204.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{ZSPQ_241216_180}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_MainAward_PreviewInfo_MH">
+        <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,374.000000},{0.000000,202.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{ZSPQ_241216_181}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_MainAward_PreviewTitle_Dot">
+        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,365.000000},{0.000000,90.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:KunWu_Expedition01 image:Tips_Dot"/>
+      </Window>
+
+      <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_MainAward_PreviewTitle_Tips">
+        <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,440.000000},{0.000000,90.000000}}"/>
+        <Property Name="Tooltip" Value="#{ZSPQ_241216_140}"/>
+        <Property Name="Image" Value="set:KunWu_Expedition01 image:Tips_Mark"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="KunWu_Expedition_MainAward_PreviewBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,90.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,365.000000},{0.000000,110.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_MainAward_PreviewBK_Image">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:KunWu_Expedition01 image:ItemBK"/>
+        </Window>
+        <Window Type="TLBB_NotSuperList1" Name="KunWu_Expedition_MainAward_PreviewList">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,5.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MultiColumn" Value="1" />
+          <Property Name="VScrollMode" Value="Hide" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_NotSuperListItemCommon4" Name="KunWu_Expedition_MainAward_PreviewItemBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="KunWu_Expedition_MainAward_PreviewItem">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_MainAward_ItemTips">
+                <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,16s.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:KunWu_Expedition01 image:Item_Bichu"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_MainDetiail_RequireText">
+        <Property Name="UnifiedSize" Value="{{1.000000,-200.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,90.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{ZSPQ_241216_63}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_MainDetiail_RequireText_Dot">
+        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,90.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:KunWu_Expedition01 image:Tips_Dot"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_MainDetiail_JuexingText">
+        <Property Name="UnifiedSize" Value="{{1.000000,-200.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,110.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="所需珍兽觉醒等级：0/3"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_MainDetiail_JuexingText_Dot">
+        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,110.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:KunWu_Expedition01 image:Tips_Dot"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_MainDetiail_LingxingText">
+        <Property Name="UnifiedSize" Value="{{1.000000,-200.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,130.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="所需珍兽灵性等级：0/3"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_MainDetiail_LingxingText_Dot">
+        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,130.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:KunWu_Expedition01 image:Tips_Dot"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_MainDetiail_BuffText">
+        <Property Name="UnifiedSize" Value="{{1.000000,-300.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,252.000000},{0.000000,330.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Visible" Value="False"/>
+        <Property Name="Text" Value="#{ZSPQ_241216_77}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_MainDetiail_ProgressText">
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,393.000000},{0.000000,24.000000}}"/>
+        <Property Name="Image" Value="set:KunWu_Expedition01 image:Mark_PQZ"/>
+        <Property Name="Visible" Value="False"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_Frame_Lace1" Name="KunWu_Expedition_MainLockedClient">
+      <Property Name="UnifiedSize" Value="{{0.000000,625.000000},{0.000000,451.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,267.000000},{0.000000,92.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_MainLocked_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,466.000000},{0.000000,226.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.5000000,-233.000000},{0.5000000,-113.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Image" Value="set:KunWu_Expedition05 image:BK_NoJoin"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

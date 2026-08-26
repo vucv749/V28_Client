@@ -1,0 +1,121 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="DaHua_Shop_DoubleChoice_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,370.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.500000,-185.000000}}"/>
+    <Event Name="Hidden" Function="DaHua_Shop_DoubleChoice_OnHidden();"/>
+    <Window Type="TLBB_ButtonClose" Name="DaHua_Shop_DoubleChoice_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="DaHua_Shop_DoubleChoice_OnClose()"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="DaHua_Shop_DoubleChoice_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="DaHua_Shop_DoubleChoice_DragTitle">
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-99.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.000000,0.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="DragTarget" Value="DaHua_Shop_DoubleChoice_Frame" />
+      <Property Name="Text" Value="#{DHSD_20240522_72}"/>
+    </Window>
+    <Window Type="TLBB_MainFrame2" Name="DaHua_Shop_DoubleChoice_Frame1">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="DefaultWindow" Name="DaHua_Shop_DoubleChoice_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,250.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,60.000000}}"/>
+        <Window Type="TLBB_Frame_Lace1" Name="DaHua_Shop_DoubleChoice_Lace">
+          <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.0000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="DefaultWindow" Name="DaHua_Shop_DoubleChoice_Jinfen">
+            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="DaHua_Shop_DoubleChoice_Jinfen_text">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+              <Property Name="Text" Value="#{DHSD_20240522_73}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_HLine2" Name="DaHua_Shop_DoubleChoice_Yuanbao_Hline">
+            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,2.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,33.000000}}"/>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="DaHua_Shop_DoubleChoice_Yuanbao_IconBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,148.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.500000,-81.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="DaHua_Shop_DoubleChoice_Yuanbao_Icon">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-28.000000},{0.500000,-28.000000}}"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="DaHua_Shop_DoubleChoice_ReFresh_Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{1.000000,-48.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Text" Value="#{DHSD_20240522_75}"/>
+            <Property Name="Font" Value="YouYuan11.25"/>
+            <Event Name="Clicked" Function="DaHua_Shop_DoubleChoice_GetFree()" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DaHua_Shop_DoubleChoice_Alternative">
+          <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,194.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{0.500000,-97.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:CommonFrame36 image:Alternative"/>
+        </Window>
+        <Window Type="TLBB_Frame_Lace1" Name="DaHua_Shop_DoubleChoice_Lace2">
+          <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.60000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="DefaultWindow" Name="DaHua_Shop_DoubleChoice_Giftbox">
+            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="DaHua_Shop_DoubleChoice_Giftbox_text">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+              <Property Name="Text" Value="#{DHSD_20240522_74}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_HLine2" Name="DaHua_Shop_DoubleChoice_Yuanbao2_Hline">
+            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,2.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,33.000000}}"/>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="DaHua_Shop_DoubleChoice_Yuanbao2_IconBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,148.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.500000,-81.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="DaHua_Shop_DoubleChoice_Yuanbao2_Icon">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-28.000000},{0.500000,-28.000000}}"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="DaHua_Shop_DoubleChoice_ReFresh_text">
+            <Property Name="UnifiedSize" Value="{{1.000000,-70.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,152.000000}}"/>
+            <Property Name="Text" Value="#{DHSD_20240522_76}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="DaHua_Shop_DoubleChoice_ReFresh_Btn2">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{1.000000,-48.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Text" Value="#{DHSD_20240522_77}"/>
+            <Property Name="Font" Value="YouYuan11.25"/>
+            <Event Name="Clicked" Function="DaHua_Shop_DoubleChoice_Buy()" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

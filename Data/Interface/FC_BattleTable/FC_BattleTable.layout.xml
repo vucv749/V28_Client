@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="FC_BattleTable_Frame">
+    <Property Name="UnifiedPosition" Value="{{0.500000,-403.000000},{0.500000,-319.000000}" />
+    <Property Name="UnifiedSize" Value="{{0.000000,806.000000},{0.000000,638.000000}" />
+    <Event Name="Hidden" Function="FC_BattleTable_Hide()" />
+    <Window Type="TLBB_DragTitle" Name="FC_BattleTable_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="FC_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{DFXD_250326_82}" />
+      <Property Name="DragTarget" Value="FC_BattleTable_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="FC_BattleTable_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="FC_BattleTable_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+      <Event Name="Clicked" Function="FC_BattleTable_Hide()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="FC_BattleTable_Client">
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-56.000000}" />
+      <Window Type="TLBB_Frame_Lace3" Name="FC_BattleTable_InfoBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,70.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_ButtonCommon" Name="FC_BattleTable_GiftBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{1.000000,-30.000000}}"/>
+          <Property Name="Text" Value="#{DFXD_250326_121}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="FC_BattleTable_OpenAwardUI();"/>
+        </Window>
+
+
+        <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{DFXD_250326_83}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+
+
+      <Window Type="TLBB_Frame_Lace2" Name="FC_BattleTable_TableBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-95.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,70.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_TableBKImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,786.000000},{0.000000,485.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_BK"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+
+
+        <Window Type="DefaultWindow" Name="FC_BattleTable_Table2BK">
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Name21BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,100.000000}}"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_WinBK"/>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Name21">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Sever21">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,22.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="服务器名字"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Name22BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,204.000000}}"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_WinBK"/>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Name22">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Sever22">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,22.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="服务器名字"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Name23BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,308.000000}}"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_WinBK"/>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Name23">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Sever23">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,22.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="服务器名字"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Name24BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,412.000000}}"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_WinBK"/>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Name24">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Sever24">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,22.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="服务器名字"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Name25BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-134.000000},{0.000000,100.000000}}"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_WinBK"/>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Name25">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.500000,-20.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Sever25">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.500000,2.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="服务器名字"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Name26BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-134.000000},{0.000000,204.000000}}"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_WinBK"/>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Name26">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.500000,-20.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Sever26">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.500000,2.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="服务器名字"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Name27BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-134.000000},{0.000000,308.000000}}"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_WinBK"/>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Name27">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.500000,-20.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Sever27">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.500000,2.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="服务器名字"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Name28BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-134.000000},{0.000000,412.000000}}"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_WinBK"/>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Name28">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.500000,-20.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Sever28">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.500000,2.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="服务器名字"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="FC_BattleTable_Table3BK">
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,500.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-250.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Name31BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,152.000000}}"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_WinBK"/>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Name31">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Sever31">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="服务器名字"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Name32BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,364.000000}}"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_WinBK"/>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Name32">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Sever32">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="服务器名字"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Name33BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-126.000000},{0.000000,152.000000}}"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_WinBK"/>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Name33">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.500000,-20.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Sever33">
+              <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.500000,2.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="服务器名字"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Name34BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-126.000000},{0.000000,364.000000}}"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_WinBK"/>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Name34">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.500000,-20.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Sever34">
+              <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.500000,2.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="服务器名字"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="FC_BattleTable_Table4BK">
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-200.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Name41BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,256.000000}}"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_WinBK"/>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Name41">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Sever41">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.500000,2.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="服务器名字"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Name43BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-126.000000},{0.00000,258.000000}}"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_WinBK"/>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Name42">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-110.000000},{0.500000,-20.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="六个字名字版"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Sever42">
+              <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.500000,2.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="服务器名字"/>
+            </Window>
+          </Window>
+        </Window>
+
+        <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Table5BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,162.000000},{0.000000,50.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-81.000000},{0.500000,120.000000}}"/>
+          <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_No1_BK"/>
+          <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Name51">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Text" Value="六个字名字版"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FC_BattleTable_Name51_Sever">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,34.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Text" Value="服务器名字"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="FC_BattleTable_LineBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,00.000000},{0.000000,0.000000}}"/>
+
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Line17">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.000000,114.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_Left8_Top4"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Line18">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.000000,166.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_Left8_Down4"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Line19">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.000000,322.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_Left8_Top4"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Line20">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.000000,374.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_Left8_Down4"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Line21">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-178.000000},{0.000000,114.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_Right8_Top4"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Line22">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-178.000000},{0.000000,166.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_Right8_Down4"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Line23">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-178.000000},{0.000000,324.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_Right8_Top4"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Line24">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-178.000000},{0.000000,376.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_Right8_Down4"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Line25">
+            <Property Name="UnifiedSize" Value="{{0.000000,97.000000},{0.000000,113.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,174.000000},{0.000000,166.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_Left4_Top2"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Line26">
+            <Property Name="UnifiedSize" Value="{{0.000000,97.000000},{0.000000,113.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,174.000000},{0.000000,272.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_Left4_Down2"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Line27">
+            <Property Name="UnifiedSize" Value="{{0.000000,97.000000},{0.000000,113.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-268.000000},{0.000000,166.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_Right4_Top2"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Line28">
+            <Property Name="UnifiedSize" Value="{{0.000000,97.000000},{0.000000,113.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-268.000000},{0.000000,272.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_Right4_Down2"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Line29">
+            <Property Name="UnifiedSize" Value="{{0.000000,107.000000},{0.000000,119.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,264.000000},{0.000000,270.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_Left"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_BattleTable_Line30">
+            <Property Name="UnifiedSize" Value="{{0.000000,107.000000},{0.000000,119.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,422.000000},{0.000000,270.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:FC_Battle image:FC_BattleTable_Right"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

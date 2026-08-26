@@ -1,0 +1,185 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="NoDiffMatch_Attend_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,380.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.500000,-190.000000}}"/>
+    <Window Type="TLBB_ButtonClose" Name="NoDiffMatch_Attend_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="NoDiffMatch_Attend_ClickClose();"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="NoDiffMatch_Attend_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,10.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Text" Value="#{WCBZ_230605_28}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="DragTarget" Value="NoDiffMatch_Attend_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="NoDiffMatch_Attend_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="NoDiffMatch_Attend_StageBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,557.000000},{0.000000,304.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,40.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="NoDiffMatch_Attend_1">
+        <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,28.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,142.000000},{1.000000,-295.000000}}"/>
+        <Property Name="Image" Value="set:OB image:Match"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="NoDiffMatch_Attend_2">
+        <Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,297.000000},{1.000000,-298.000000}}"/>
+        <Property Name="Image" Value="set:OB image:TwoVsTwo"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="NoDiffMatch_Attend_Di">
+        <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{1.000000,-300.000000}}"/>
+        <Property Name="Image" Value="set:OB image:BottOM"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="NoDiffMatch_Attend_Text1">
+        <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{1.000000,-266.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,50.000000}}"/>
+        <Property Name="Text" Value="#{WCBZ_230605_32}"/>
+      </Window>
+      <Window Type="TLBB_Frame_Lace6" Name="NoDiffMatch_Attend_HeadBK1">
+        <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-220.000000},{0.500000,-37.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="NoDiffMatch_Attend_BK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,7.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NoDiffMatch_Attend_Head1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace6" Name="NoDiffMatch_Attend_HeadBK2">
+        <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.500000,-37.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="NoDiffMatch_Attend_BK2">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,7.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NoDiffMatch_Attend_Head2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace6" Name="NoDiffMatch_Attend_HeadBK3">
+        <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,150.000000},{0.500000,-37.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="NoDiffMatch_Attend_BK3">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,7.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NoDiffMatch_Attend_Head3">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="NoDiffMatch_Attend_XinXi_Image1">
+        <Property Name="UnifiedSize" Value="{{0.000000,87.000000},{0.000000,38.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-232.000000},{1.000000,-120.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="NoDiffMatch_Attend_XingMing_Text1">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-20.000000}}"/>
+          <Property Name="Text" Value="凤凰就是最帅"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NoDiffMatch_Attend_MenPai_Text1">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-5.000000}}"/>
+          <Property Name="Text" Value="武当"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NoDiffMatch_Attend_KongQue_Text1">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,33.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-18.000000}}"/>
+          <Property Name="Text" Value="#{WCBZ_230605_35}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="NoDiffMatch_Attend_XinXi_Image2">
+        <Property Name="UnifiedSize" Value="{{0.000000,87.000000},{0.000000,38.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-42.000000},{1.000000,-120.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="NoDiffMatch_Attend_XingMing_Text2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-20.000000}}"/>
+          <Property Name="Text" Value="凤凰就是最帅"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NoDiffMatch_Attend_MenPai_Text2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-5.000000}}"/>
+          <Property Name="Text" Value="武当"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NoDiffMatch_Attend_KongQue_Text2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,33.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-18.000000}}"/>
+          <Property Name="Text" Value="#{WCBZ_230605_35}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="NoDiffMatch_Attend_XinXi_Image3">
+        <Property Name="UnifiedSize" Value="{{0.000000,87.000000},{0.000000,38.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,138.000000},{1.000000,-120.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="NoDiffMatch_Attend_XingMing_Text3">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-20.000000}}"/>
+          <Property Name="Text" Value="凤凰就是最帅"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NoDiffMatch_Attend_MenPai_Text3">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-5.000000}}"/>
+          <Property Name="Text" Value="武当"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NoDiffMatch_Attend_KongQue_Text3">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,33.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-18.000000}}"/>
+          <Property Name="Text" Value="#{WCBZ_230605_35}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="NoDiffMatch_Attend_StageBK_Image">
+        <Property Name="UnifiedSize" Value="{{0.000000,168.000000},{0.000000,25.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-84.000000},{1.000000,-75.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="NoDiffMatch_Attend_StageBK_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{WCBZ_230605_37}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon2" Name="NoDiffMatch_Attend_ShangZheng_Btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{1.000000,-35.000000}}"/>
+        <Property Name="Tooltip" Value=""/>
+        <Property Name="Text" Value="#{WCBZ_230605_38}"/>
+        <Property Name="Font" Value="YouYuan11.25"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="NoDiffMatch_Attend_ClickOk();"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon2" Name="NoDiffMatch_Attend_ShangZheng1_Btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,30.000000},{1.000000,-35.000000}}"/>
+        <Property Name="Tooltip" Value=""/>
+        <Property Name="Text" Value="#{WCBZ_230605_39}"/>
+        <Property Name="Font" Value="YouYuan11.25"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="NoDiffMatch_Attend_ClickCancel();"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

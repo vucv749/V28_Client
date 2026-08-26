@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="NoDiffMatch_ZJSGMList_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,520.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.050000,0.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="NoDiffMatch_ZJSGMList_Name">
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,10.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,20.000000}}"/>
+      <Property Name="Text" Value="" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="DragTarget" Value="NoDiffMatch_ZJSGMList_Frame" />
+      <Property Name="Text" Value="#{WCJS_180307_04}" />
+    </Window>
+
+    <Window Type="TLBB_ButtonClose" Name="NoDiffMatch_ZJSGMList_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="this:Hide();"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="NoDiffMatch_ZJSGMList_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="NoDiffMatch_ZJSGMList_Function_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{1.000000,-54.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,32.000000}}"/>
+      <Window Type="TLBB_MultiColumnList" Name="NoDiffMatch_ZJSGMList_List">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-28.000000}}"/>
+        <Property Name="ColumnHeader" Value="text:#{WCJS_180307_05} width:0.2 id:0" />
+        <Property Name="ColumnHeader" Value="text:#{WCJS_180307_06} width:0.25 id:1" />
+        <Property Name="ColumnHeader" Value="text:#{WCJS_180307_07} width:0.15 id:2" />
+        <Property Name="ColumnHeader" Value="text:#{WCBZ_240628_2} width:0.2 id:3" />
+        <Property Name="ColumnHeader" Value="text:#{WCBZ_240628_3} width:0.2 id:4" />
+        <Event Name="SelectionChanged" Function="NoDiffMatch_ZJSGMList_List_On_SelectionChanged();" />
+        <Property Name="ForceVertScrollbar" Value="True"/>
+        <Property Name="ColumnsSizable" Value="False"/>
+        <Property Name="ColumnsMovable" Value="False"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="NoDiffMatch_ZJSGMListBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window> 
+      <Window Type="TLBB_ButtonCommon" Name="NoDiffMatch_ZJSGMList_Refresh">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.50000,-40.000000},{1.000000,-26.000000}}"/>
+        <Property Name="Text" Value="#{WCJS_180307_43}"/>
+        <Event Name="Clicked" Function="NoDiffMatch_ZJSGMList_RefreshClicked();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

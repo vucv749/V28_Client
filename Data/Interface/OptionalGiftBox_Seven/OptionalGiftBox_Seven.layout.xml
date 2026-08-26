@@ -1,0 +1,208 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="OptionalGiftBox_Seven_Frame_BK">
+    <Property Name="UnifiedSize" Value="{{0.000000,542.000000},{0.000000,345.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-255.000000},{0.500000,-170.000000}}"/>
+		<Event Name="Hidden" Function="OptionalGiftBox_Seven_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="OptionalGiftBox_Seven_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{SQYD_230802_66}"/>
+      <Property Name="DragTarget" Value="OptionalGiftBox_Seven_Frame_BK"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="OptionalGiftBox_Seven_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function=""/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="OptionalGiftBox_Seven_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="OptionalGiftBox_Seven_OnHidden();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="OptionalGiftBox_Seven_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Window Type="DefaultWindow" Name="OptionalGiftBox_SevenBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="OptionalGiftBox_SevenBK1">
+        <Property Name="UnifiedSize" Value="{{0.000000,530.000000},{0.000000,290.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:OptionalGiftBox image:SBZX_BK"/>
+      </Window>
+      </Window>
+        <Window Type="TLBB_SimpleText" Name="OptionalGiftBox_Seven_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="Text" Value="#{SQYD_230802_67}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+      <Window Type="DefaultWindow" Name="OptionalGiftBox_Seven_ItemBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,310.000000},{0.000000,158.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,60.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="OptionalGiftBox_Seven_Item1">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,5.000000}}"/>
+          <Event Name="Clicked" Function="OptionalGiftBox_Seven_OnItemClicked(1)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="OptionalGiftBox_Seven_Item1_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="OptionalGiftBox_Seven_Item2">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,5.000000}}"/>
+          <Event Name="Clicked" Function="OptionalGiftBox_Seven_OnItemClicked(2)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="OptionalGiftBox_Seven_Item2_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="OptionalGiftBox_Seven_Item3">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.000000,5.000000}}"/>
+          <Event Name="Clicked" Function="OptionalGiftBox_Seven_OnItemClicked(3)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="OptionalGiftBox_Seven_Item3_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="OptionalGiftBox_Seven_Item4">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,5.000000}}"/>
+          <Event Name="Clicked" Function="OptionalGiftBox_Seven_OnItemClicked(4)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="OptionalGiftBox_Seven_Item4_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="OptionalGiftBox_Seven_Item5">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-244.000000},{0.500000,5.000000}}"/>
+          <Event Name="Clicked" Function="OptionalGiftBox_Seven_OnItemClicked(5)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="OptionalGiftBox_Seven_Item5_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="OptionalGiftBox_Seven_Item6">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-174.000000},{0.500000,5.000000}}"/>
+          <Event Name="Clicked" Function="OptionalGiftBox_Seven_OnItemClicked(6)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="OptionalGiftBox_Seven_Item6_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="OptionalGiftBox_Seven_Item7">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-104.000000},{0.500000,5.000000}}"/>
+          <Event Name="Clicked" Function="OptionalGiftBox_Seven_OnItemClicked(7)"/>
+          <Window Type="TLBB_StaticImageNULL" Name="OptionalGiftBox_Seven_Item7_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="OptionalGiftBox_Seven_Item1_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{1.000000,-96.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="OptionalGiftBox_Seven_Item2_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,92.000000},{1.000000,-96.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="OptionalGiftBox_Seven_Item3_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,162.000000},{1.000000,-96.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="OptionalGiftBox_Seven_Item4_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,232.000000},{1.000000,-96.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="OptionalGiftBox_Seven_Item5_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-252.000000},{1.000000,-21.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="OptionalGiftBox_Seven_Item6_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-182.000000},{1.000000,-21.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="OptionalGiftBox_Seven_Item7_Name">
+          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-112.000000},{1.000000,-21.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="OptionalGiftBox_Seven_GetButton">
+        <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,38.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-52.000000},{1.000000,-50.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:Seven image:Seven_lingqupush"/>
+        <Property Name="NormalImage" Value="set:Seven image:Seven_lingquNormal"/>
+        <Property Name="HoverImage" Value="set:Seven image:Seven_lingquHover"/>
+        <Property Name="DisabledImage" Value="set:Seven image:Seven_lingquDis"/>
+        <Event Name="Clicked" Function="OptionalGiftBox_Seven_OnGetClicked()"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

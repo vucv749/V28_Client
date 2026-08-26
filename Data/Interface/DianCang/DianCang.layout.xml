@@ -1,0 +1,511 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_HeroFrame01" Name="DianCang_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,900.000000},{0.000000,600.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-450.000000},{0.500000,-289.000000}}"/>
+		<Event Name="Hidden" Function="DianCang_Close();"/>
+		<Window Type="TLBB_HeroTitle01" Name="DianCang_DragTitleBK">
+			<Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,-2.000000}}"/>
+			<Window Type="TLBB_StaticImageNULL" Name="DianCang_DragTitle_Image">
+				<Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.500000,-51.000000},{0.000000,7.000000}}"/>
+				<Property Name="MouseRButtonHollow" Value="True"/>
+				<Property Name="MouseMoveHollow" Value="True"/>
+				<Property Name="MouseLButtonHollow" Value="True"/>
+				<Property Name="MouseHollow" Value="True"/>
+			</Window>
+		</Window>
+		<Window Type="TLBB_DragTitle" Name="DianCang_DragTitle">
+			<Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,3.000000}}"/>
+			<Property Name="DragTarget" Value="DianCang_Frame"/>
+			<Property Name="Text" Value="#cfff263怪物图鉴"/>
+			<Property Name="Font" Value="YouYuan11.25"/>
+		</Window>
+		<Window Type="TLBB_ButtonClose" Name="DianCang_Close">
+			<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+			<Event Name="Clicked" Function="DianCang_Close();"/>
+		</Window>
+		<Window Type="TLBB_SimpleText" Name="DianCang_AttrText">
+			<Property Name="UnifiedPosition" Value="{{0.000000,748.000000},{0.000000,30.000000}"/>
+			<Property Name="AbsoluteSize" Value="w:150.000000 h:20.000000"/>
+			<Property Name="Text" Value="#u#cCCFF33莽贼荒兽典藏增加总属性"/>
+			<Property Name="Tooltip" Value="悬浮窗"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+		</Window>
+		<!-- 分页 -->
+		<Window Type="TLBB_Frame_Lace1" Name="DianCang_Condition">
+			<Property Name="UnifiedSize" Value="{{0.000000,105.000000},{1.000000,-58.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,51.000000}}"/>
+			<Window Type="TLBB_ButtonFenYe7" Name="DianCang_FenYe1">
+				<Property Name="UnifiedSize" Value="{{0.000000,101.000000},{0.000000,30.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,5.000000}}"/>
+				<Property Name="CheckMode" Value="1"/>
+				<Property Name="Text" Value="野外场景"/>
+				<Event Name="MouseLButtonDown" Function="DianCang_OnTabClick(1);"/>
+			</Window>
+			<Window Type="TLBB_ButtonFenYe7" Name="DianCang_FenYe2">
+				<Property Name="UnifiedSize" Value="{{0.000000,101.000000},{0.000000,30.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,35.000000}}"/>
+				<Property Name="CheckMode" Value="1"/>
+				<Property Name="Text" Value="历练场景"/>
+				<Event Name="MouseLButtonDown" Function="DianCang_OnTabClick(2);"/>
+			</Window>
+			<Window Type="TLBB_ButtonFenYe7" Name="DianCang_FenYe3">
+				<Property Name="UnifiedSize" Value="{{0.000000,101.000000},{0.000000,30.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,65.000000}}"/>
+				<Property Name="CheckMode" Value="1"/>
+				<Property Name="Text" Value="特殊场景"/>
+				<Event Name="MouseLButtonDown" Function="DianCang_OnTabClick(3);"/>
+			</Window>
+			<Window Type="TLBB_ButtonFenYe7" Name="DianCang_FenYe4">
+				<Property Name="UnifiedSize" Value="{{0.000000,101.000000},{0.000000,30.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,95.000000}}"/>
+				<Property Name="CheckMode" Value="1"/>
+				<Property Name="Text" Value="副本场景"/>
+				<Event Name="MouseLButtonDown" Function="DianCang_OnTabClick(4);"/>
+			</Window>
+		</Window>
+		<Window Type="TLBB_ListBoxCommon" Name="DianCang_List">
+			<Property Name="UnifiedPosition" Value="{{0.000000,107.000000},{0.000000,51.000000}}"/>
+			<Property Name="UnifiedSize" Value="{{0.000000,95.000000},{1.000000,-58.000000}}"/>
+			<Event Name="ItemSelectionChanged" Function="DianCang_OnGroupSelected();"/>
+		</Window>
+		<!-- 模型窗口 -->
+		<Window Type="DefaultWindow" Name="DianCang_Client">
+			<Property Name="UnifiedSize" Value="{{1.000000,-113.000000},{1.000000,-50.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,197.000000},{0.000000,46.000000}}"/>
+			<Window Type="TLBB_Frame_Lace1" Name="DianCangCFK_Condition">
+				<Property Name="UnifiedSize" Value="{{0.000000,691.000000},{0.000000,542.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+				<Window Type="TLBB_StaticImageNULL" Name="DianCang_CFK_1">
+					<Property Name="UnifiedSize" Value="{{0.000000,168.000000},{0.000000,253.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,7.000000}}"/>
+					<Property Name="MouseRButtonHollow" Value="True"/>
+					<Property Name="MouseMoveHollow" Value="True"/>
+					<Property Name="MouseLButtonHollow" Value="True"/>
+					<Property Name="MouseHollow" Value="True"/>
+					<Property Name="Image" Value="set:DianCang image:DianCang_1"/>
+					<Window Type="TLBB_SimpleText" Name="DianCang_name1">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+						<Property Name="Text" Value="布尔善"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Font" Value="YouYuan9.75"/>
+					</Window>
+					<Window Type="TLBB_ButtonCommon" Name="DianCang_JH_1">
+						<Property Name="AbsoluteSize" Value="w:60.000000 h:25.000000"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{0.000000,218.000000}}"/>
+						<Property Name="Text" Value="激 活"/>
+						<Event Name="Clicked" Function="DianCang_JH_Click(1);"/>
+					</Window>
+					<Window Type="TLBB_ButtonNULL" Name="DianCang_qianwang1">
+						<Property Name="AbsolutePosition" Value="x:130.000000 y:220.000000"/>
+						<Property Name="AbsoluteSize" Value="w:22.000000 h:22.000000"/>
+						<Property Name="NormalImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Normal"/>
+						<Property Name="HoverImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Hover"/>
+						<Property Name="PushedImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Pushed"/>
+						<Event Name="Clicked" Function="DianCang_qianwangFunc(1);"/>
+						<Property Name="Tooltip" Value="#Y点击前往"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="DianCang_shuxing1">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,210.000000}}"/>
+						<Property Name="Text" Value="#G血上限+ 720"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+					</Window>
+					<Window Type="TLBB_ButtonCommon" Name="DianCang_SJ1">
+						<Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{0.000000,230.000000}}"/>
+						<Property Name="Text" Value="升级"/>
+						<Event Name="Clicked" Function="DianCang_SJ_Click(1);"/>
+					</Window>
+					<Window Type="TLBB_MeshWindow" Name="DianCang_FakeObj1">
+						<Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,176.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,30.000000}}"/>
+						<Property Name="Tooltip" Value="#W该典藏已激活"/>
+						<Window Type="TLBB_StaticImageNULL" Name="DianCang_jh1">
+							<Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,103.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,135.000000},{0.000000,30.000000}}"/>
+							<Property Name="Image" Value="set:DianCang image:DianCangjh_1"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="DianCang_CFK_2">
+					<Property Name="UnifiedSize" Value="{{0.000000,168.000000},{0.000000,253.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,177.000000},{0.000000,7.000000}}"/>
+					<Property Name="Image" Value="set:DianCang image:DianCang_1"/>
+					<Window Type="TLBB_SimpleText" Name="DianCang_name2">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+						<Property Name="Text" Value="大铁网"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Font" Value="YouYuan9.75"/>
+					</Window>
+					<Window Type="TLBB_ButtonCommon" Name="DianCang_JH_2">
+						<Property Name="AbsoluteSize" Value="w:60.000000 h:25.000000"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{0.000000,218.000000}}"/>
+						<Property Name="Text" Value="激 活"/>
+						<Event Name="Clicked" Function="DianCang_JH_Click(2);"/>
+					</Window>
+					<Window Type="TLBB_ButtonNULL" Name="DianCang_qianwang2">
+						<Property Name="AbsolutePosition" Value="x:130.000000 y:220.000000"/>
+						<Property Name="AbsoluteSize" Value="w:22.000000 h:22.000000"/>
+						<Property Name="NormalImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Normal"/>
+						<Property Name="HoverImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Hover"/>
+						<Property Name="PushedImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Pushed"/>
+						<Event Name="Clicked" Function="DianCang_qianwangFunc(2);"/>
+						<Property Name="Tooltip" Value="#Y点击前往"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="DianCang_shuxing2">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,210.000000}}"/>
+						<Property Name="Text" Value="#G血上限+ 720"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+					</Window>
+					<Window Type="TLBB_ButtonCommon" Name="DianCang_SJ2">
+						<Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{0.000000,230.000000}}"/>
+						<Property Name="Text" Value="升级"/>
+						<Event Name="Clicked" Function="DianCang_SJ_Click(2);"/>
+					</Window>
+					<Window Type="TLBB_MeshWindow" Name="DianCang_FakeObj2">
+						<Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,176.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,30.000000}}"/>
+						<Property Name="Tooltip" Value="#W该典藏已激活"/>
+						<Window Type="TLBB_StaticImageNULL" Name="DianCang_jh2">
+							<Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,103.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,135.000000},{0.000000,30.000000}}"/>
+							<Property Name="Image" Value="set:DianCang image:DianCangjh_1"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="DianCang_CFK_3">
+					<Property Name="UnifiedSize" Value="{{0.000000,168.000000},{0.000000,253.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,347.000000},{0.000000,7.000000}}"/>
+					<Property Name="Image" Value="set:DianCang image:DianCang_1"/>
+					<Window Type="TLBB_SimpleText" Name="DianCang_name3">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+						<Property Name="Text" Value="闪电豹"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Font" Value="YouYuan9.75"/>
+					</Window>
+					<Window Type="TLBB_ButtonCommon" Name="DianCang_JH_3">
+						<Property Name="AbsoluteSize" Value="w:60.000000 h:25.000000"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{0.000000,218.000000}}"/>
+						<Property Name="Text" Value="激 活"/>
+						<Event Name="Clicked" Function="DianCang_JH_Click(3);"/>
+					</Window>
+					<Window Type="TLBB_ButtonNULL" Name="DianCang_qianwang3">
+						<Property Name="AbsolutePosition" Value="x:130.000000 y:220.000000"/>
+						<Property Name="AbsoluteSize" Value="w:22.000000 h:22.000000"/>
+						<Property Name="NormalImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Normal"/>
+						<Property Name="HoverImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Hover"/>
+						<Property Name="PushedImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Pushed"/>
+						<Event Name="Clicked" Function="DianCang_qianwangFunc(3);"/>
+						<Property Name="Tooltip" Value="#Y点击前往"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="DianCang_shuxing3">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,210.000000}}"/>
+						<Property Name="Text" Value="#G血上限+ 720"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+					</Window>
+					<Window Type="TLBB_ButtonCommon" Name="DianCang_SJ3">
+						<Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{0.000000,230.000000}}"/>
+						<Property Name="Text" Value="升级"/>
+						<Event Name="Clicked" Function="DianCang_SJ_Click(3);"/>
+					</Window>
+					<Window Type="TLBB_MeshWindow" Name="DianCang_FakeObj3">
+						<Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,176.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,30.000000}}"/>
+						<Property Name="Tooltip" Value="#W该典藏已激活"/>
+						<Window Type="TLBB_StaticImageNULL" Name="DianCang_jh3">
+							<Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,103.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,135.000000},{0.000000,30.000000}}"/>
+							<Property Name="Image" Value="set:DianCang image:DianCangjh_1"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="DianCang_CFK_4">
+					<Property Name="UnifiedSize" Value="{{0.000000,168.000000},{0.000000,253.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,517.000000},{0.000000,7.000000}}"/>
+					<Property Name="Image" Value="set:DianCang image:DianCang_1"/>
+					<Window Type="TLBB_SimpleText" Name="DianCang_name4">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+						<Property Name="Text" Value="山蛛"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Font" Value="YouYuan9.75"/>
+					</Window>
+					<Window Type="TLBB_ButtonCommon" Name="DianCang_JH_4">
+						<Property Name="AbsoluteSize" Value="w:60.000000 h:25.000000"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{0.000000,218.000000}}"/>
+						<Property Name="Text" Value="激 活"/>
+						<Event Name="Clicked" Function="DianCang_JH_Click(4);"/>
+					</Window>
+					<Window Type="TLBB_ButtonNULL" Name="DianCang_qianwang4">
+						<Property Name="AbsolutePosition" Value="x:130.000000 y:220.000000"/>
+						<Property Name="AbsoluteSize" Value="w:22.000000 h:22.000000"/>
+						<Property Name="NormalImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Normal"/>
+						<Property Name="HoverImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Hover"/>
+						<Property Name="PushedImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Pushed"/>
+						<Event Name="Clicked" Function="DianCang_qianwangFunc(4);"/>
+						<Property Name="Tooltip" Value="#Y点击前往"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="DianCang_shuxing4">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,210.000000}}"/>
+						<Property Name="Text" Value="#G血上限+ 720"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+					</Window>
+					<Window Type="TLBB_ButtonCommon" Name="DianCang_SJ4">
+						<Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{0.000000,230.000000}}"/>
+						<Property Name="Text" Value="升级"/>
+						<Event Name="Clicked" Function="DianCang_SJ_Click(4);"/>
+					</Window>
+					<Window Type="TLBB_MeshWindow" Name="DianCang_FakeObj4">
+						<Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,176.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,30.000000}}"/>
+						<Property Name="Tooltip" Value="#W该典藏已激活"/>
+						<Window Type="TLBB_StaticImageNULL" Name="DianCang_jh4">
+							<Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,103.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,135.000000},{0.000000,30.000000}}"/>
+							<Property Name="Image" Value="set:DianCang image:DianCangjh_1"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="DianCang_CFK_5">
+					<Property Name="UnifiedSize" Value="{{0.000000,168.000000},{0.000000,253.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,262.000000}}"/>
+					<Property Name="Image" Value="set:DianCang image:DianCang_1"/>
+					<Window Type="TLBB_SimpleText" Name="DianCang_name5">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+						<Property Name="Text" Value="大黄蜂"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Font" Value="YouYuan9.75"/>
+					</Window>
+					<Window Type="TLBB_ButtonCommon" Name="DianCang_JH_5">
+						<Property Name="AbsoluteSize" Value="w:60.000000 h:25.000000"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{0.000000,218.000000}}"/>
+						<Property Name="Text" Value="激 活"/>
+						<Event Name="Clicked" Function="DianCang_JH_Click(5);"/>
+					</Window>
+					<Window Type="TLBB_ButtonNULL" Name="DianCang_qianwang5">
+						<Property Name="AbsolutePosition" Value="x:130.000000 y:220.000000"/>
+						<Property Name="AbsoluteSize" Value="w:22.000000 h:22.000000"/>
+						<Property Name="NormalImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Normal"/>
+						<Property Name="HoverImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Hover"/>
+						<Property Name="PushedImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Pushed"/>
+						<Event Name="Clicked" Function="DianCang_qianwangFunc(5);"/>
+						<Property Name="Tooltip" Value="#Y点击前往"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="DianCang_shuxing5">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,210.000000}}"/>
+						<Property Name="Text" Value="#G血上限+ 720"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+					</Window>
+					<Window Type="TLBB_ButtonCommon" Name="DianCang_SJ5">
+						<Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{0.000000,230.000000}}"/>
+						<Property Name="Text" Value="升级"/>
+						<Event Name="Clicked" Function="DianCang_SJ_Click(5);"/>
+					</Window>
+					<Window Type="TLBB_MeshWindow" Name="DianCang_FakeObj5">
+						<Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,176.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,30.000000}}"/>
+						<Property Name="Tooltip" Value="#W该典藏已激活"/>
+						<Window Type="TLBB_StaticImageNULL" Name="DianCang_jh5">
+							<Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,103.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,135.000000},{0.000000,30.000000}}"/>
+							<Property Name="Image" Value="set:DianCang image:DianCangjh_1"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="DianCang_CFK_6">
+					<Property Name="UnifiedSize" Value="{{0.000000,168.000000},{0.000000,253.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,177.000000},{0.000000,262.000000}}"/>
+					<Property Name="Image" Value="set:DianCang image:DianCang_1"/>
+					<Window Type="TLBB_SimpleText" Name="DianCang_name6">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+						<Property Name="Text" Value="高山白猿"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Font" Value="YouYuan9.75"/>
+					</Window>
+					<Window Type="TLBB_ButtonCommon" Name="DianCang_JH_6">
+						<Property Name="AbsoluteSize" Value="w:60.000000 h:25.000000"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{0.000000,218.000000}}"/>
+						<Property Name="Text" Value="激 活"/>
+						<Event Name="Clicked" Function="DianCang_JH_Click(6);"/>
+					</Window>
+					<Window Type="TLBB_ButtonNULL" Name="DianCang_qianwang6">
+						<Property Name="AbsolutePosition" Value="x:130.000000 y:220.000000"/>
+						<Property Name="AbsoluteSize" Value="w:22.000000 h:22.000000"/>
+						<Property Name="NormalImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Normal"/>
+						<Property Name="HoverImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Hover"/>
+						<Property Name="PushedImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Pushed"/>
+						<Event Name="Clicked" Function="DianCang_qianwangFunc(6);"/>
+						<Property Name="Tooltip" Value="#Y点击前往"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="DianCang_shuxing6">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,210.000000}}"/>
+						<Property Name="Text" Value="#G血上限+ 720"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+					</Window>
+					<Window Type="TLBB_ButtonCommon" Name="DianCang_SJ6">
+						<Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{0.000000,230.000000}}"/>
+						<Property Name="Text" Value="升级"/>
+						<Event Name="Clicked" Function="DianCang_SJ_Click(6);"/>
+					</Window>
+					<Window Type="TLBB_MeshWindow" Name="DianCang_FakeObj6">
+						<Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,176.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,30.000000}}"/>
+						<Property Name="Tooltip" Value="#W该典藏已激活"/>
+						<Window Type="TLBB_StaticImageNULL" Name="DianCang_jh6">
+							<Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,103.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,135.000000},{0.000000,30.000000}}"/>
+							<Property Name="Image" Value="set:DianCang image:DianCangjh_1"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="DianCang_CFK_7">
+					<Property Name="UnifiedSize" Value="{{0.000000,168.000000},{0.000000,253.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,347.000000},{0.000000,262.000000}}"/>
+					<Property Name="Image" Value="set:DianCang image:DianCang_1"/>
+					<Window Type="TLBB_SimpleText" Name="DianCang_name7">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+						<Property Name="Text" Value="剪径小贼"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Font" Value="YouYuan9.75"/>
+					</Window>
+					<Window Type="TLBB_ButtonCommon" Name="DianCang_JH_7">
+						<Property Name="AbsoluteSize" Value="w:60.000000 h:25.000000"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{0.000000,218.000000}}"/>
+						<Property Name="Text" Value="激 活"/>
+						<Event Name="Clicked" Function="DianCang_JH_Click(7);"/>
+					</Window>
+					<Window Type="TLBB_ButtonNULL" Name="DianCang_qianwang7">
+						<Property Name="AbsolutePosition" Value="x:130.000000 y:220.000000"/>
+						<Property Name="AbsoluteSize" Value="w:22.000000 h:22.000000"/>
+						<Property Name="NormalImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Normal"/>
+						<Property Name="HoverImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Hover"/>
+						<Property Name="PushedImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Pushed"/>
+						<Event Name="Clicked" Function="DianCang_qianwangFunc(7);"/>
+						<Property Name="Tooltip" Value="#Y点击前往"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="DianCang_shuxing7">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,210.000000}}"/>
+						<Property Name="Text" Value="#G血上限+ 720"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+					</Window>
+					<Window Type="TLBB_ButtonCommon" Name="DianCang_SJ7">
+						<Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{0.000000,230.000000}}"/>
+						<Property Name="Text" Value="升级"/>
+						<Event Name="Clicked" Function="DianCang_SJ_Click(7);"/>
+					</Window>
+					<Window Type="TLBB_MeshWindow" Name="DianCang_FakeObj7">
+						<Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,176.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,30.000000}}"/>
+						<Property Name="Tooltip" Value="#W该典藏已激活"/>
+						<Window Type="TLBB_StaticImageNULL" Name="DianCang_jh7">
+							<Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,103.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,135.000000},{0.000000,30.000000}}"/>
+							<Property Name="Image" Value="set:DianCang image:DianCangjh_1"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="DianCang_CFK_8">
+					<Property Name="UnifiedSize" Value="{{0.000000,168.000000},{0.000000,253.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,517.000000},{0.000000,262.000000}}"/>
+					<Property Name="Image" Value="set:DianCang image:DianCang_1"/>
+					<Window Type="TLBB_SimpleText" Name="DianCang_name8">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+						<Property Name="Text" Value="芦苇草人"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Font" Value="YouYuan9.75"/>
+					</Window>
+					<Window Type="TLBB_ButtonCommon" Name="DianCang_JH_8">
+						<Property Name="AbsoluteSize" Value="w:60.000000 h:25.000000"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{0.000000,218.000000}}"/>
+						<Property Name="Text" Value="激 活"/>
+						<Event Name="Clicked" Function="DianCang_JH_Click(8);"/>
+					</Window>
+					<Window Type="TLBB_ButtonNULL" Name="DianCang_qianwang8">
+						<Property Name="AbsolutePosition" Value="x:130.000000 y:220.000000"/>
+						<Property Name="AbsoluteSize" Value="w:22.000000 h:22.000000"/>
+						<Property Name="NormalImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Normal"/>
+						<Property Name="HoverImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Hover"/>
+						<Property Name="PushedImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Pushed"/>
+						<Event Name="Clicked" Function="DianCang_qianwangFunc(8);"/>
+						<Property Name="Tooltip" Value="#Y点击前往"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="DianCang_shuxing8">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,210.000000}}"/>
+						<Property Name="Text" Value="#G血上限+ 720"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+					</Window>
+					<Window Type="TLBB_ButtonCommon" Name="DianCang_SJ8">
+						<Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{0.000000,230.000000}}"/>
+						<Property Name="Text" Value="升级"/>
+						<Event Name="Clicked" Function="DianCang_SJ_Click(8);"/>
+					</Window>
+					<Window Type="TLBB_MeshWindow" Name="DianCang_FakeObj8">
+						<Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,176.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,30.000000}}"/>
+						<Property Name="Tooltip" Value="#W该典藏已激活"/>
+						<Window Type="TLBB_StaticImageNULL" Name="DianCang_jh8">
+							<Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,103.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,135.000000},{0.000000,30.000000}}"/>
+							<Property Name="Image" Value="set:DianCang image:DianCangjh_1"/>
+						</Window>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="TLBB_ButtonNULL" Name="DianCang_UpPage">
+				<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,28.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,313.000000},{1.000000,-30.000000}}"/>
+				<Property Name="PushedImage" Value="set:Button13 image:Btn_Left_Pushed"/>
+				<Property Name="NormalImage" Value="set:Button13 image:Btn_Left_Normal"/>
+				<Property Name="HoverImage" Value="set:Button13 image:Btn_Left_Hover"/>
+				<Property Name="DisabledImage" Value="set:Button13 image:Btn_Left_Disable"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+				<Event Name="Clicked" Function="DianCang_Pre_Click(1)"/>
+			</Window>
+			<Window Type="TLBB_ButtonNULL" Name="DianCang_DownPage">
+				<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,28.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,360.000000},{1.000000,-30.000000}}"/>
+				<Property Name="PushedImage" Value="set:Button13 image:Btn_Right_Pushed"/>
+				<Property Name="NormalImage" Value="set:Button13 image:Btn_Right_Normal"/>
+				<Property Name="HoverImage" Value="set:Button13 image:Btn_Right_Hover"/>
+				<Property Name="DisabledImage" Value="set:Button13 image:Btn_Right_Disable"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+				<Event Name="Clicked" Function="DianCang_Pre_Click(2)"/>
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

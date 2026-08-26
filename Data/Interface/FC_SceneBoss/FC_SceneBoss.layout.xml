@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="FC_SceneBoss_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,324.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-283.000000},{1.000000,-400.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="FC_SceneBoss_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-64.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,9.000000}}"/>
+      <Property Name="DragTarget" Value="FC_SceneBoss_Frame" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{SWZJ_250328_14}" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="FC_SceneBoss_Image">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,13.000000}}"/>
+      <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+      <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+      <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+      <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>
+      <Event Name="Clicked" Function="FC_SceneBoss_ClickClose()" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="FC_SceneBoss_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-276.000000},{0.000000,13.000000}}"/>
+      <Event Name="Clicked" Function="" />
+    </Window>
+    <Window Type="DefaultWindow" Name="FC_SceneBoss_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-50.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,33.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_Frame_Lace1" Name="FC_SceneBoss_Up">
+        <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{1.000000,-140.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,4.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="FC_SceneBoss_Up_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{SWZJ_250328_32}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="FC_SceneBoss_Down">
+        <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,132.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-135.000000}}"/>
+        <Window Type="DefaultWindow" Name="FC_SceneBoss_Pair_Title">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}" />
+          <Window Type="TLBB_SimpleText" Name="FC_SceneBoss_Pair_Title1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{.000000,25.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="Text" Value="#{SWZJ_250328_15}" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="FC_SceneBoss_Pair">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,120.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,31.000000}}" />
+          <Window Type="TLBB_SimpleText" Name="FC_SceneBoss_NumTitle2">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="Text" Value="#{SWZJ_250328_26}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FC_SceneBoss_NumTitle3">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,25.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="Text" Value="#{SWZJ_250328_29}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FC_SceneBoss_NumTitle4">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,50.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="Text" Value="#{SWZJ_250328_02}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FC_SceneBoss_TimeTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,75.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="Text" Value="#{SWZJ_250328_18}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FC_SceneBoss_Num2">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-83.000000},{0.000000,0.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="Text" Value="#{SWZJ_250328_27}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FC_SceneBoss_Num3">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-83.000000},{0.000000,25.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="Text" Value="#{SWZJ_250328_27}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FC_SceneBoss_Num4">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-83.000000},{0.000000,50.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="Text" Value="#{SWZJ_250328_64}" />
+          </Window>
+          <Window Type="TLBB_StopWatch" Name="FC_SceneBoss_Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{1.000000,-83.000000},{0.000000,75.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Event Name="ReachedZero" Function="FC_SceneBoss_ZeroClose()" />
+            <Property Name="Text" Value="00:00" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

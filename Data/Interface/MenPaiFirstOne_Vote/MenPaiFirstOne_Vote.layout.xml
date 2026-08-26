@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="MenPaiFirstOne_Vote_Frame">
+    <Property Name="UnifiedPosition" Value="{{0.500000,-250.000000},{0.500000,-200.000000}" />
+    <Property Name="UnifiedSize" Value="{{0.000000,500.000000},{0.000000,400.000000}" />
+    <Event Name="Hidden" Function="MenPaiFirstOne_Vote_Close()" />
+    <Window Type="TLBB_DragTitle" Name="MenPaiFirstOne_Vote_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="MenPaiFirstOne_Vote_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{JXGZ_220427_43}" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="MenPaiFirstOne_Vote_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="MenPaiFirstOne_Vote_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+      <Event Name="Clicked" Function="MenPaiFirstOne_Vote_Close();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="MenPaiFirstOne_Vote_Client">
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_Frame_Lace3" Name="MenPaiFirstOne_Vote_InfoBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,70.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Vote_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{JXGZ_220427_44}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="MenPaiFirstOne_Vote_Info_Award">
+          <Property Name="UnifiedPosition" Value="{{1.000000,-92.000000},{1.000000,-24.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.00000,70.000000},{0.000000,20.000000}}"/>
+          <Property Name="Text" Value="#{JXGZ_220427_76}" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="MenPaiFirstOne_Vote_YuLanAward_Clicked();" />
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="MenPaiFirstOne_Vote_Info_Help">
+          <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{1.000000,-20.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="MenPaiFirstOne_Vote_Help_Clicked();" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="MenPaiFirstOne_Vote_LevelBK">
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,70.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}" />
+        <Property Name="Visible" Value="False"/>
+        <Window Type="TLBB_ButtonFenYe2" Name="MenPaiFirstOne_Vote_Level1">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="Text" Value="#{JXGZ_220427_46}"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_Vote_LevelType_Clicked(2)" />
+        </Window>
+        <Window Type="TLBB_ButtonFenYe2" Name="MenPaiFirstOne_Vote_Level2">
+          <Property Name="UnifiedPosition" Value="{{0.000000,82.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="Text" Value="#{JXGZ_220427_47}"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_Vote_LevelType_Clicked(1)" />
+        </Window>
+        <Window Type="TLBB_ButtonFenYe2" Name="MenPaiFirstOne_Vote_Level3">
+          <Property Name="UnifiedPosition" Value="{{0.000000,164.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+          <Property Name="CheckMode" Value="1" />
+          <Property Name="Text" Value="#{JXGZ_220427_48}"/>
+          <Event Name="MouseLButtonDown" Function="MenPaiFirstOne_Vote_LevelType_Clicked(0)" />
+        </Window>
+
+      </Window>
+      <Window Type="TLBB_MultiColumnList" Name="MenPaiFirstOne_Vote_ListTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,70.000000}}"/>
+        <Property Name="ForceHorzScrollbar" Value="False" />
+        <Property Name="SortSettingEnabled" Value="False" />
+        <Property Name="SelectionMode" Value="RowSingle" />
+        <Property Name="ColumnHeader" Value="text: width:0.15 id:0" />
+        <Property Name="ColumnHeader" Value="text: width:0.30 id:1" />
+        <Property Name="ColumnHeader" Value="text: width:0.15 id:2" />
+        <Property Name="ColumnHeader" Value="text: width:0.20 id:3" />
+        <Property Name="ColumnHeader" Value="text: width:0.20 id:4" />
+        <Property Name="ColumnsSizable" Value="False" />
+        <Property Name="ColumnsMovable" Value="False" />
+        <Property Name="ColumnsAdjust" Value="True" />
+        <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Vote_ListTitle_Rank">
+          <Property Name="UnifiedSize" Value="{{0.150000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="#{JXGZ_220427_49}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Vote_ListTitle_Name">
+          <Property Name="UnifiedSize" Value="{{0.300000,0.000002},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.150000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="#{JXGZ_220427_50}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Vote_ListTitle_Level">
+          <Property Name="UnifiedSize" Value="{{0.150000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.450000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="#{JXGZ_220427_51}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Vote_ListTitle_Count">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="#{JXGZ_220427_52}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Vote_ListTitle_Vote">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="#{JXGZ_220427_97}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_NotSuperList" Name="MenPaiFirstOne_Vote_List">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-150.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,90.000000}}"/>
+        <Property Name="SelectMode" Value="Single" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="MultiColumn" Value="1" />
+        <Window Type="TLBB_NotSuperListItemCommon3" Name="MenPaiFirstOne_Vote_ListItem">
+          <Property Name="UnifiedSize" Value="{{1.00000,0.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Vote_ListItem_Rank">
+            <Property Name="UnifiedSize" Value="{{0.150000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Vote_ListItem_Name">
+            <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.150000,0.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Vote_ListItem_Level">
+            <Property Name="UnifiedSize" Value="{{0.150000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.450000,0.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Vote_ListItem_Count">
+            <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.500000,-10.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="MenPaiFirstOne_Vote_ListItem_VoteButton">
+            <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.820000,0.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{JXGZ_220427_98}"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Vote_List_Finish">
+        <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{1.000000,-170.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.000000,115.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Text" Value="#{JXGZ_220427_101}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+      <Window Type="TLBB_Frame_Lace3" Name="MenPaiFirstOne_Vote_MyInfoBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-52.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Vote_MyInfo_Rank">
+          <Property Name="UnifiedSize" Value="{{0.150000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Vote_MyInfo_Name">
+          <Property Name="UnifiedSize" Value="{{0.300000,-6.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.150000,0.000000},{0.500000,-10.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Vote_MyInfo_Level">
+          <Property Name="UnifiedSize" Value="{{0.150000,-12.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.450000,0.000000},{0.500000,-10.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Vote_MyInfo_Count">
+          <Property Name="UnifiedSize" Value="{{0.200000,-16.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.500000,-10.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="MenPaiFirstOne_Vote_MyInfo_GetButton">
+          <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.820000,0.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{JXGZ_220427_99}"/>
+          <Event Name="Clicked" Function="MenPaiFirstOne_Vote_GetAward_Clicked();" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Vote_MyInfo_Voting">
+          <Property Name="UnifiedSize" Value="{{0.140000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.820000,0.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{JXGZ_220427_100}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+
+      </Window>
+      <Window Type="TLBB_Frame_Lace3" Name="MenPaiFirstOne_Vote_MyInfo_NOBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-52.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Vote_MyInfo_NO">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{JXGZ_220427_102}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Vote_Level_AllNumber">
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+        <Property Name="Text" Value="#{JXGZ_220427_85}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="MenPaiFirstOne_Vote_ListTitle_Time">
+        <Property Name="UnifiedSize" Value="{{0.00000,230.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-302.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="#{JXGZ_220427_65}"/>
+        <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="MenPaiFirstOne_Vote_ListTitle_VoteButton">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-72.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.00000,70.000000},{0.000000,20.000000}}"/>
+        <Property Name="Text" Value="#{JXGZ_220427_56}"/>
+        <Event Name="Clicked" Function="MenPaiFirstOne_Refresh_Clicked();"/>
+      </Window>
+
+    </Window>
+  </Window>
+</GUILayout>

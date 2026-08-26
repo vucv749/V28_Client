@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="DaHua_StoryLine2_List_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,800.000000},{0.000000,500.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-400.000000},{0.500000,-250.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="DaHua_StoryLine2_List_DragTitle">
+      <Property Name="UnifiedSize" Value="{{0.000000,243.000000},{0.000000,100.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-378.000000},{0.000000,25.000000}}"/>
+      <Property Name="DragTarget" Value="DaHua_StoryLine2_List_Frame" />
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="DaHua_StoryLine2_List_FrameBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <!-- <Property Name="AttachEnabled" Value="True"/> -->
+      <Window Type="TLBB_StaticImageNULL" Name="DaHua_StoryLine2_List_LetterBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,792.000000},{0.000000,489.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:DaHua_StoryLine2_List1 image:DaHua_StoryLine2_List_BK"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DaHua_StoryLine2_List_TextSelect">
+        <Property Name="UnifiedSize" Value="{{0.000000,286.000000},{0.000000,204.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,240.000000}}"/>
+        <Property Name="Image" Value="set:DaHua_StoryLine2_List2 image:DaHua_StoryLine2_List_over"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="DaHua_StoryLine2_List_Letter_Btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,98.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,640.000000},{0.000000,348.000000}}"/>
+        <Property Name="PushedImage" Value="set:DaHua_StoryLine2_List1 image:DaHua_StoryLine2_List_Pushed"/>
+        <Property Name="NormalImage" Value="set:DaHua_StoryLine2_List1 image:DaHua_StoryLine2_List_Normal"/>
+        <Property Name="HoverImage" Value="set:DaHua_StoryLine2_List1 image:DaHua_StoryLine2_List_Hover"/>
+        <Property Name="DisabledImage" Value="set:DaHua_StoryLine2_List1 image:DaHua_StoryLine2_List_yiyue"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="DaHua_StoryLine2_List_Letter_Btn_Click();"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

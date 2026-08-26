@@ -1,0 +1,82 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="Feipinhuishou_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,290.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-135.000000},{0.500000,-150.000000}}"/>
+    <Event Name="Hidden" Function="Feipinhuishou_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="Feipinhuishou_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,10.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+      <Property Name="DragTarget" Value="Feipinhuishou_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="Text" Value="#{KJTZ_230706_5}" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Feipinhuishou_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="Feipinhuishou_OnClose();" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Feipinhuishou_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Helper:GotoHelper();"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="Feipinhuishou_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-40.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,30.000000}}"/>
+      <Property Name="RiseOnClick" Value="False" />
+      <Window Type="TLBB_Frame_Lace1" Name="Feipinhuishou_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,60.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,10.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Feipinhuishou_InfoText">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{KJTZ_230706_6}" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Feipinhuishou_Before">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,100.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.000000,-170.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Feipinhuishou_BeforeText">
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,15.000000}}"/>
+          <Property Name="Text" Value="#{KJTZ_230706_7}" />
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Feipinhuishou_BeforeIcon">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.000000,50.000000}}"/>
+          <Property Name="DragAcceptName" Value="G176" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Event Name="RBClicked" Function="Feipinhuishou_Clear();" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Feipinhuishou_Recycle">
+        <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,23.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-52.000000},{1.000000,-30.000000}}"/>
+        <Property Name="Text" Value="#{KJTZ_230706_8}"/>
+        <Property Name="Tooltip" Value="#{KJTZ_230706_9}"/>
+        <Event Name="Clicked" Function="Feipinhuishou_Click()"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Feipinhuishou_AfterText1">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.000000,-60.000000}}"/>
+        <Property Name="Text" Value="#{KJTZ_230706_10}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_Money" Name="Feipinhuishou_AfterText2">
+        <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-155.000000},{1.000000,-60.000000}}"/>
+        <Property Name="SilverIcon" Value="set:Button6 image:Lace_JiaoziYin"/>
+        <Property Name="HorzFormatting" Value="RightAligned"/>
+        <Property Name="GoldIcon" Value="set:Button6 image:Lace_JiaoziJin"/>
+        <Property Name="CopperIcon" Value="set:Button6 image:Lace_JiaoziTong"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

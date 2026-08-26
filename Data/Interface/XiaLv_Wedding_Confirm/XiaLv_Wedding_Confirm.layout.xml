@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="XiaLv_Wedding_Confirm_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,730.000000},{0.000000,468.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-360.000000},{0.500000,-234.000000}}"/>
+    <Event Name="Hidden" Function="XiaLv_Wedding_OnHidden()" />
+    <Window Type="TLBB_MainFrame_Affection0" Name="XiaLv_Wedding_Confirm_Frame1">
+      <Property Name="UnifiedSize" Value="{{0.000000,648.000000},{0.000000,430.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-324.000000},{0.500000,-216.000000}}"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_Frame2">
+      <Property Name="UnifiedSize" Value="{{0.000000,714.000000},{0.000000,426.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,18.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="Image" Value="set:Xialv09 image:XiaLvBK1_2"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="XiaLv_Wedding_Confirm_ClientBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,648.000000},{0.000000,432.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-324.000000},{0.500000,-216.000000}}"/>
+      <Window Type="TLBB_TitleLace_Affection0" Name="XiaLv_Wedding_Confirm_DragTitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,31.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_DragTitle" Name="XiaLv_Wedding_Confirm_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="DragTarget" Value="XiaLv_Wedding_Confirm_Frame" />
+        <Property Name="Font" Value="Title" />
+        <Property Name="Text" Value="#{JHYH_230330_35}" />
+      </Window>
+      <Window Type="TLBB_ButtonHelp" Name="XiaLv_Wedding_Confirm_Help">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      </Window>
+      <Window Type="TLBB_ButtonClose" Name="XiaLv_Wedding_Confirm_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+        <Event Name="Clicked" Function="XiaLv_Wedding_Confirm_Close();"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_Client">
+        <Property Name="UnifiedSize" Value="{{0.000000,638.000000},{0.000000,376.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,36.000000}}"/>
+        <Property Name="Image" Value="set:Xialv01 image:XiaLvBK1"/>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_Decoration">
+          <Property Name="UnifiedSize" Value="{{0.000000,128.000000},{0.000000,124.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-64.000000},{0.000000,40.000000}}"/>
+          <Property Name="Image" Value="set:Xialv01 image:XiaLvBK9"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_ManBackLight">
+          <Property Name="UnifiedSize" Value="{{0.000000,216.000000},{0.000000,80.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-216.000000},{0.000000,58.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Xialv01 image:XiaLvBK6"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_WomanBackLight">
+          <Property Name="UnifiedSize" Value="{{0.000000,216.000000},{0.000000,80.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,58.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Xialv01 image:XiaLvBK5"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="XiaLv_Wedding_Confirm_ManClient">
+          <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,86.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-236.000000},{0.000000,56.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_Man_HeadBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Xialv01 image:XiaLvBK10"/>
+            <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_Man_Head">
+              <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,58.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_Man_NameBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,66.000000}}"/>
+            <Property Name="Image" Value="set:Xialv01 image:XiaLvBK4"/>
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Window Type="TLBB_SimpleText" Name="XiaLv_Wedding_Confirm_Man_Name">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+              <Property Name="Text" Value="#{JHYH_230330_119}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              <Property Name="Font" Value="YouYuan13"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="XiaLv_Wedding_Confirm_WomanClient">
+          <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,86.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,92.000000},{0.000000,56.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_Woman_HeadBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Xialv01 image:XiaLvBK10"/>
+            <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_Woman_Head">
+              <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,58.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_Woman_NameBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,66.000000}}"/>
+            <Property Name="Image" Value="set:Xialv01 image:XiaLvBK4"/>
+            <Window Type="TLBB_SimpleText" Name="XiaLv_Wedding_Confirm_Woman_Name">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+              <Property Name="Text" Value="#{JHYH_230330_119}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              <Property Name="Font" Value="YouYuan13"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_CongratsBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.000000,170.000000}}"/>
+          <Property Name="Image" Value="set:Xialv01 image:XiaLvBK3"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="XiaLv_Wedding_Confirm_Congrats">
+          <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-270.000000},{0.000000,171.000000}}"/>
+          <Property Name="Text" Value="#{JHYH_230330_57}" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_Bk1">
+          <Property Name="UnifiedSize" Value="{{0.000000,214.000000},{0.000000,138.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-240.000000},{0.000000,192.000000}}"/>
+          <Property Name="Image" Value="set:Xialv01 image:XiaLvBK8"/>
+          <Window Type="TLBB_SimpleText" Name="XiaLv_Wedding_Confirm_Bridegroom_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,190.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-96.000000},{0.000000,24.000000}}"/>
+            <Property Name="Text" Value="" />
+            <Property Name="TextColor" Value="FF993333"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="ColorTrans" Value="True" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_Bk2">
+          <Property Name="UnifiedSize" Value="{{0.000000,214.000000},{0.000000,138.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,26.000000},{0.000000,192.000000}}"/>
+          <Property Name="Image" Value="set:Xialv01 image:XiaLvBK8"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Window Type="TLBB_SimpleText" Name="XiaLv_Wedding_Confirm_Bride_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,190.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-96.000000},{0.000000,24.000000}}"/>
+            <Property Name="Text" Value="" />
+            <Property Name="TextColor" Value="FF993333"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="ColorTrans" Value="True" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_Congrats2BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.000000,332.000000}}"/>
+          <Property Name="Image" Value="set:Xialv01 image:XiaLvBK3"/>
+          <Property Name="Visible" Value="False"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="XiaLv_Wedding_Confirm_Congrats2">
+          <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-270.000000},{0.000000,333.000000}}"/>
+          <Property Name="Text" Value="#{JHYH_230330_325}" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="XiaLv_Wedding_Confirm_Client2">
+        <Property Name="UnifiedSize" Value="{{0.000000,638.000000},{0.000000,376.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,36.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_Decoration_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,142.000000},{0.000000,132.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,40.000000}}" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="Image" Value="set:Xialv09 image:XiaLvBK9_2"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_ManBackLight_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,230.000000},{0.000000,110.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-260.000000},{0.000000,18.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Xialv09 image:XiaLvBK6_2"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_WomanBackLight_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,268.000000},{0.000000,72.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,18.000000},{0.000000,40.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Xialv09 image:XiaLvBK5_2"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="XiaLv_Wedding_Confirm_ManClient_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,86.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-236.000000},{0.000000,56.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_Man_HeadBK_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{0.000000,0.000000}}" />
+            <Property Name="Image" Value="set:Xialv09 image:XiaLvBK10_2"/>
+            <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_Man_Head_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,58.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_Man_NameBK_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,66.000000}}" />
+            <Property Name="Image" Value="set:Xialv09 image:XiaLvBK4_2"/>
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Window Type="TLBB_SimpleText" Name="XiaLv_Wedding_Confirm_Man_Name_2">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+              <Property Name="Text" Value="#{JHYH_230330_119}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              <Property Name="Font" Value="YouYuan13"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="XiaLv_Wedding_Confirm_WomanClient_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,86.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,92.000000},{0.000000,56.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_Woman_HeadBK_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,62.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{0.000000,0.000000}}" />
+            <Property Name="Image" Value="set:Xialv09 image:XiaLvBK10_2"/>
+            <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_Woman_Head_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,58.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_Woman_NameBK_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,66.000000}}" />
+            <Property Name="Image" Value="set:Xialv09 image:XiaLvBK4_2"/>
+            <Window Type="TLBB_SimpleText" Name="XiaLv_Wedding_Confirm_Woman_Name_2">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+              <Property Name="Text" Value="#{JHYH_230330_119}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              <Property Name="Font" Value="YouYuan13"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_CongratsBK_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,612.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-306.000000},{0.000000,156.000000}}"/>
+          <Property Name="Image" Value="set:Xialv09 image:XiaLvBK11_2"/>
+          <Window Type="TLBB_SimpleText" Name="XiaLv_Wedding_Confirm_Congrats_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-270.000000},{0.000000,16.000000}}"/>
+            <Property Name="Text" Value="#{JHYH_230330_57}" />
+            <Property Name="HorzFormatting" Value="WordWrapCentred" />
+            <Property Name="AlwaysOnTop" Value="True" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_Bk1_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,138.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-240.000000},{0.000000,192.000000}}"/>
+          <Property Name="Image" Value="set:Xialv09 image:XiaLvBK8_2"/>
+          <Window Type="TLBB_SimpleText" Name="XiaLv_Wedding_Confirm_Bridegroom_Text_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,190.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-94.000000},{0.000000,24.000000}}"/>
+            <Property Name="Text" Value="" />
+            <Property Name="TextColor" Value="FF993333"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="ColorTrans" Value="True" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_Wedding_Confirm_Bk2_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,138.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,26.000000},{0.000000,192.000000}}"/>
+          <Property Name="Image" Value="set:Xialv09 image:XiaLvBK8_2"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Window Type="TLBB_SimpleText" Name="XiaLv_Wedding_Confirm_Bride_Text_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,190.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-94.000000},{0.000000,24.000000}}"/>
+            <Property Name="Text" Value="" />
+            <Property Name="TextColor" Value="FF993333"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="ColorTrans" Value="True" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="XiaLv_Wedding_Confirm_Congrats2_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-270.000000},{0.000000,333.000000}}"/>
+          <Property Name="Text" Value="#{JHYH_230330_325}" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred" />
+          <Property Name="AlwaysOnTop" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

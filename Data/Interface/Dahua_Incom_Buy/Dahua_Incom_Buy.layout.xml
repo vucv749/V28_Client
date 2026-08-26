@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Dahua_Incom_Buy_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,372.000000},{0.000000,216.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.500000,-200.000004}}"/>
+    <Window Type="TLBB_DragTitle" Name="Dahua_Incom_Buy_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,44.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+      <Property Name="DragTarget" Value="Dahua_Incom_Buy_Frame" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="Dahua_Incom_Buy_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{0.000000,10.000000}}"/>
+      <Property Name="PushedImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Close_P"/>
+      <Property Name="NormalImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Close_N"/>
+      <Property Name="HoverImage" Value="set:Dahua_Incom01 image:Dahua_Incom_Close_H"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Dahua_Incom_Buy_Cancel_Clicked();" />
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Buy_FrameBk">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="Image" Value="set:Dahua_Incom02 image:Dahua_Incom_BulkBuy_Bk"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="Dahua_Incom_Buy_Function_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,-66.000000},{1.000000,-54.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,50.000000}}"/>
+      <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Buy_Text2">
+        <Property Name="UnifiedSize" Value="{{1.000000,-236.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,-6.000000},{0.000000,66.000000}}"/>
+        <Property Name="Text" Value="#{DHLS_240611_50}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Buy_Tips">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,-6.000000},{0.000000,130.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{DHLS_240611_92}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_EditBoxNormal" Name="Dahua_Incom_Buy_Moral_Value">
+        <Property Name="UnifiedSize" Value="{{1.000000,-114.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,63.000000}}"/>
+        <Property Name="MaxTextLength" Value="6" />
+        <Property Name="ValidationString" Value="[0-9]*" />
+        <Event Name="TextChanged" Function="Dahua_Incom_Buy_Count_Change();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Dahua_Incom_Buy_Max">
+        <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-48.000000},{0.000000,64.000000}}"/>
+        <Property Name="PushedImage" Value="set:Dahua_Incom02 image:Dahua_Incom_Max_P"/>
+        <Property Name="NormalImage" Value="set:Dahua_Incom02 image:Dahua_Incom_Max_N"/>
+        <Property Name="HoverImage" Value="set:Dahua_Incom02 image:Dahua_Incom_Max_H"/>
+        <Property Name="DisabledImage" Value="set:Dahua_Incom02 image:Dahua_Incom_Max_D"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Dahua_Incom_Buy_Max_Clicked();" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Buy_HaveYB_Text">
+        <Property Name="UnifiedSize" Value="{{1.000000,-236.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,-6.000000},{0.000000,100.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{DHLS_240611_54}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Buy_HaveYB">
+        <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,100.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="DHLS_240611_55"/>
+        <Property Name="HorzFormatting" Value="RightAligned"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Buy_SpendYB_Text">
+        <Property Name="UnifiedSize" Value="{{1.000000,-236.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,-6.000000},{0.000000,83.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{DHLS_240611_52}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Buy_SpendYB">
+        <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,82.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="DHLS_240611_53"/>
+        <Property Name="HorzFormatting" Value="RightAligned"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+
+      <Window Type="TLBB_ActionButton" Name="Dahua_Incom_Buy_Item">
+        <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,6.000000}}"/>
+        <Property Name="Empty" Value="False"/>
+        <Property Name="DraggingEnabled" Value="True"/>
+        <Property Name="DragAcceptName" Value="W36"/>
+      </Window>
+
+      <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Buy_Text4">
+        <Property Name="UnifiedSize" Value="{{1.000000,-130.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,6.000000}}"/>
+        <Property Name="Text" Value="#{}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Dahua_Incom_Buy_NeedYB">
+        <Property Name="UnifiedSize" Value="{{1.000000,-240.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,36.000000}}"/>
+        <Property Name="Text" Value="#{DHLS_240611_88}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Dahua_Incom_Buy_OK">
+        <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-30.000000}}"/>
+        <Property Name="PushedImage" Value="set:Dahua_Incom02 image:Dahua_Incom_Yes_P"/>
+        <Property Name="NormalImage" Value="set:Dahua_Incom02 image:Dahua_Incom_Yes_N"/>
+        <Property Name="HoverImage" Value="set:Dahua_Incom02 image:Dahua_Incom_Yes_H"/>
+        <Property Name="DisabledImage" Value="set:Dahua_Incom02 image:Dahua_Incom_Yes_D"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Dahua_Incom_Buy_OK_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Dahua_Incom_Buy_Cancel">
+        <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-48.000000},{1.000000,-30.000000}}"/>
+        <Property Name="PushedImage" Value="set:Dahua_Incom02 image:Dahua_Incom_No_P"/>
+        <Property Name="NormalImage" Value="set:Dahua_Incom02 image:Dahua_Incom_No_N"/>
+        <Property Name="HoverImage" Value="set:Dahua_Incom02 image:Dahua_Incom_No_H"/>
+        <Property Name="DisabledImage" Value="set:Dahua_Incom02 image:Dahua_Incom_No_D"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Dahua_Incom_Buy_Cancel_Clicked();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

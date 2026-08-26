@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Frozen_Select_Btn_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,728.000000},{0.000000,600.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-364.000000},{0.500000,-300.000000}}"/>
+    <Property Name="MouseRButtonHollow" Value="True"/>
+    <Property Name="MouseMoveHollow" Value="True"/>
+    <Property Name="MouseLButtonHollow" Value="True"/>
+    <Property Name="MouseHollow" Value="True"/>
+    <Event Name="Hidden" Function="Frozen_Select_Btn_OnHidden();"/>
+    <Window Type="DefaultWindow" Name="Frozen_Select_Btn01_Group">
+      <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,170.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,40.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Window Type="TLBB_ButtonNULL" Name="Frozen_Select_Btn01">
+        <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,108.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-54.000000},{0.500000,-54.000000}}"/>
+        <Property Name="PushedImage" Value="set:Frozen_Select_Btn image:Frozen_Select_Btn_P"/>
+        <Property Name="NormalImage" Value="set:Frozen_Select_Btn image:Frozen_Select_Btn_N"/>
+        <Property Name="HoverImage" Value="set:Frozen_Select_Btn image:Frozen_Select_Btn_H"/>
+        <Event Name="Clicked" Function="Frozen_Select_Btn_Snow_Click(1)"/>
+        <Window Type="TLBB_Animate" Name="Frozen_Select_Btn01_Animate01">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Animate" Value="Frozen_Ice_Btn"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Animate" Name="Frozen_Select_Btn01_Animate">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Animate" Value="Frozen_Ice"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="Frozen_Select_Btn02_Group">
+      <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,170.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,330.000000},{0.000000,220.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Window Type="TLBB_ButtonNULL" Name="Frozen_Select_Btn02">
+        <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,108.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-54.000000},{0.500000,-54.000000}}"/>
+        <Property Name="PushedImage" Value="set:Frozen_Select_Btn image:Frozen_Select_Btn_P"/>
+        <Property Name="NormalImage" Value="set:Frozen_Select_Btn image:Frozen_Select_Btn_N"/>
+        <Property Name="HoverImage" Value="set:Frozen_Select_Btn image:Frozen_Select_Btn_H"/>
+        <Event Name="Clicked" Function="Frozen_Select_Btn_Snow_Click(2)"/>
+        <Window Type="TLBB_Animate" Name="Frozen_Select_Btn02_Animate02">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Animate" Value="Frozen_Ice_Btn"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Animate" Name="Frozen_Select_Btn02_Animate">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Animate" Value="Frozen_Ice"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="Frozen_Select_Btn03_Group">
+      <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,170.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,320.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Window Type="TLBB_ButtonNULL" Name="Frozen_Select_Btn03">
+        <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,108.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-54.000000},{0.500000,-54.000000}}"/>
+        <Property Name="PushedImage" Value="set:Frozen_Select_Btn image:Frozen_Select_Btn_P"/>
+        <Property Name="NormalImage" Value="set:Frozen_Select_Btn image:Frozen_Select_Btn_N"/>
+        <Property Name="HoverImage" Value="set:Frozen_Select_Btn image:Frozen_Select_Btn_H"/>
+        <Event Name="Clicked" Function="Frozen_Select_Btn_Snow_Click(3)"/>
+        <Window Type="TLBB_Animate" Name="Frozen_Select_Btn03_Animate03">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Animate" Value="Frozen_Ice_Btn"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+
+      <Window Type="TLBB_Animate" Name="Frozen_Select_Btn03_Animate">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Animate" Value="Frozen_Ice"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="Frozen_Select_Btn04_Group">
+      <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,170.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,10.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Window Type="TLBB_ButtonNULL" Name="Frozen_Select_Btn04">
+        <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,108.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-54.000000},{0.500000,-54.000000}}"/>
+        <Property Name="PushedImage" Value="set:Frozen_Select_Btn image:Frozen_Select_Btn_P"/>
+        <Property Name="NormalImage" Value="set:Frozen_Select_Btn image:Frozen_Select_Btn_N"/>
+        <Property Name="HoverImage" Value="set:Frozen_Select_Btn image:Frozen_Select_Btn_H"/>
+        <Event Name="Clicked" Function="Frozen_Select_Btn_Snow_Click(4)"/>
+        <Window Type="TLBB_Animate" Name="Frozen_Select_Btn04_Animate04">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Animate" Value="Frozen_Ice_Btn"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+
+      <Window Type="TLBB_Animate" Name="Frozen_Select_Btn04_Animate">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Animate" Value="Frozen_Ice"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="Frozen_Select_Btn05_Group">
+      <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,170.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,560.000000},{0.000000,110.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Window Type="TLBB_ButtonNULL" Name="Frozen_Select_Btn05">
+        <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,108.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-54.000000},{0.500000,-54.000000}}"/>
+        <Property Name="PushedImage" Value="set:Frozen_Select_Btn image:Frozen_Select_Btn_P"/>
+        <Property Name="NormalImage" Value="set:Frozen_Select_Btn image:Frozen_Select_Btn_N"/>
+        <Property Name="HoverImage" Value="set:Frozen_Select_Btn image:Frozen_Select_Btn_H"/>
+        <Event Name="Clicked" Function="Frozen_Select_Btn_Snow_Click(5)"/>
+        <Window Type="TLBB_Animate" Name="Frozen_Select_Btn05_Animate05">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Animate" Value="Frozen_Ice_Btn"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Animate" Name="Frozen_Select_Btn05_Animate">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Animate" Value="Frozen_Ice"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="Frozen_Select_Btn_Img">
+      <Property Name="UnifiedSize" Value="{{0.000000,398.000000},{0.000000,76.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-199.000000},{1.000000,-76.000000}}"/>
+      <Property Name="Image" Value="set:Frozen_Select_Btn image:Frozen_Select_Btn_Bk"/>
+      <Property Name="Tooltip" Value="#{MSZC_20240910_168}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="Frozen_Select_Btn_ProgressBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,284.000000},{0.000000,10.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,62.000000},{0.000000,33.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:NationalDay4 image:NDPGBK"/>
+        <Window Type="TLBB_ProgressPropertyGreen" Name="Frozen_Select_Btn_Progress">
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,8.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-4.000000}}"/>
+          <Property Name="CurrentProgress" Value="1.0" />
+          <Property Name="EffectColor" Value="tl:FFfff000 tr:FFfff000 bl:FFfff000 br:FFfff000" />
+          <Property Name="MoveSpeed" Value="5000" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Frozen_Select_Btn_Level1">
+        <Property Name="UnifiedSize" Value="{{0.000000,3.000000},{0.000000,12.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.400000,0.000000},{0.000000,32.000000}}"/>
+        <Property Name="Image" Value="set:Frozen_Select_Btn image:Frozen_Select_Btn_Line"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Frozen_Select_Btn_Level1_Img">
+        <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.400000,-12.000000},{0.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:Frozen_Select_Btn image:Frozen_Select_Btn_S"/>
+        <Property Name="Tooltip" Value="#{MSZC_20240910_166}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Frozen_Select_Btn_Level2">
+        <Property Name="UnifiedSize" Value="{{0.000000,3.000000},{0.000000,12.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.660000,0.000000},{0.000000,32.000000}}"/>
+        <Property Name="Image" Value="set:Frozen_Select_Btn image:Frozen_Select_Btn_Line"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Frozen_Select_Btn_Level2_Img">
+        <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.700000,-28.000000},{0.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:Frozen_Select_Btn image:Frozen_Select_Btn_B"/>
+        <Property Name="Tooltip" Value="#{MSZC_20240910_167}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Frozen_Select_Btn_Text">
+        <Property Name="UnifiedSize" Value="{{1.000000,-70.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,50.000000}}"/>
+        <Property Name="Text" Value="#{MSZC_20240910_169}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Font" Value="YouYuan9.75"/>
+      </Window>
+
+    </Window>
+
+
+  </Window>
+</GUILayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame6" Name="FC_Mission_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,130.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-332.000000},{0.000000,425.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="FC_Mission_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-90.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,0.000000}}"/>
+      <Property Name="DragTarget" Value="FC_Mission_Frame" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{DFXD_250326_82}" />
+    </Window>
+
+    <Window Type="DefaultWindow" Name="FC_Mission_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,26.000000}}"/>
+      <Window Type="DefaultWindow" Name="FC_Misson_Explain">
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-80.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="FC_Misson_Explain_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-150.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+          <Property Name="Text" Value="#{DFXD_250326_110}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="FC_Misson_Btn">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,60.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{DFXD_250326_111}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="FC_Mission_Frame_Info_Clicked();"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="FC_Mission_BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,287.000000},{0.000000,69.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,30.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:FC_Battle image:MissionBK"/>
+        <Window Type="DefaultWindow" Name="FC_Mission_Content">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="FC_Mission_Text_1">
+            <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{DFXD_250326_27}"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FC_Mission_Text_1_Num">
+            <Property Name="UnifiedSize" Value="{{0.500000,78.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-78.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{DFXD_250326_28}"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FC_Mission_Text_2">
+            <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,24.000000}}"/>
+            <Property Name="Text" Value="#{DFXD_250326_33}"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+          </Window>
+          <Window Type="TLBB_StopWatch" Name="FC_Mission_Text_2_Num">
+            <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,24.000000}}"/>
+            <Property Name="Text" Value="00:00"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame0" Name="Profile_Save_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,460.000000},{0.000000,300.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-230.000000},{0.500000,-150.000000}}"/>
+        <Event Name="Hidden" Function="Profile_Save_OnHiden();" />
+        <Window Type="TLBB_DragTitle" Name="Profile_Save_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="Profile_Save_Frame" />
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="Profile_Save_Help">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonHelp" />
+            <Event Name="Clicked" Function="Profile_Save_HelpClick()" />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="Profile_Save_Close">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonClose" />
+            <Event Name="Clicked" Function="Profile_Save_CloseClick();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="Profile_Save_Frame_Client">
+            <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+            <Property Name="RiseOnClick" Value="False" />
+            <Window Type="TLBB_Frame_Lace3" Name="Profile_Save_Item_Frame">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,205.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="DefaultWindow" Name="Profile_Save_Item1_Frame">
+                    <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,90.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,10.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False" />
+                    <Window Type="TLBB_ActionButton" Name="Profile_Save_Item1_Icon">
+                        <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-26.000000}}"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Profile_Save_Item1_Text">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="方案1"/>
+                        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                    </Window>
+                  <Window Type="TLBB_ButtonCommon" Name="Profile_Save_SavePlan1Btn">
+                    <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{1.000000,-20.000000}}"/>
+                    <Property Name="Text" Value="保存"/>
+                    <Event Name="Clicked" Function="Profile_Save_SavePlanClicked(1);"/>
+                  </Window>
+                </Window>
+                <Window Type="DefaultWindow" Name="Profile_Save_Item2_Frame">
+                    <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,90.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{0.000000,10.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False" />
+                    <Window Type="TLBB_ActionButton" Name="Profile_Save_Item2_Icon">
+                        <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-26.000000}}"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Profile_Save_Item2_Text">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="方案二"/>
+                        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                    </Window>
+                  <Window Type="TLBB_ButtonCommon" Name="Profile_Save_SavePlan2Btn">
+                    <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{1.000000,-20.000000}}"/>
+                    <Property Name="Text" Value="保存"/>
+                    <Event Name="Clicked" Function="Profile_Save_SavePlanClicked(2);"/>
+                  </Window>
+                </Window>
+                <Window Type="DefaultWindow" Name="Profile_Save_Item3_Frame">
+                    <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,90.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-140.000000},{0.000000,10.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False" />
+                    <Window Type="TLBB_ActionButton" Name="Profile_Save_Item3_Icon">
+                        <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-26.000000}}"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Profile_Save_Item3_Text">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="方案三"/>
+                        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                    </Window>
+                  <Window Type="TLBB_ButtonCommon" Name="Profile_Save_SavePlan3Btn">
+                    <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{1.000000,-20.000000}}"/>
+                    <Property Name="Text" Value="保存"/>
+                    <Event Name="Clicked" Function="Profile_Save_SavePlanClicked(3);"/>
+                  </Window>
+                </Window>
+                <Window Type="DefaultWindow" Name="Profile_Save_Item4_Frame">
+                <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,90.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,100.000000}}"/>
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_ActionButton" Name="Profile_Save_Item4_Icon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-26.000000}}"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Profile_Save_Item4_Text">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="方案四"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_ButtonCommon" Name="Profile_Save_SavePlan4Btn">
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{1.000000,-20.000000}}"/>
+                  <Property Name="Text" Value="保存"/>
+                  <Event Name="Clicked" Function="Profile_Save_SavePlanClicked(4);"/>
+                </Window>
+              </Window>
+                <Window Type="DefaultWindow" Name="Profile_Save_Item5_Frame">
+                <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,90.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{0.000000,100.000000}}"/>
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_ActionButton" Name="Profile_Save_Item5_Icon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-26.000000}}"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Profile_Save_Item5_Text">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="方案五"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_ButtonCommon" Name="Profile_Save_SavePlan5Btn">
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{1.000000,-20.000000}}"/>
+                  <Property Name="Text" Value="保存"/>
+                  <Event Name="Clicked" Function="Profile_Save_SavePlanClicked(5);"/>
+                </Window>
+              </Window>
+                <Window Type="DefaultWindow" Name="Profile_Save_Item6_Frame">
+                <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,90.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-140.000000},{0.000000,100.000000}}"/>
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_ActionButton" Name="Profile_Save_Item6_Icon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-26.000000}}"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Profile_Save_Item6_Text">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="方案六"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_ButtonCommon" Name="Profile_Save_SavePlan6Btn">
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-20.000000},{1.000000,-20.000000}}"/>
+                  <Property Name="Text" Value="保存"/>
+                  <Event Name="Clicked" Function="Profile_Save_SavePlanClicked(6);"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace3" Name="Profile_Save_Btn_Frame">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-40.000000}}"/>
+                <Property Name="RiseOnClick" Value="False" />
+              <Window Type="TLBB_ButtonCommon" Name="Profile_Save_GotoBtn">
+                <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-110.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="前往个人展示"/>
+                <Event Name="Clicked" Function="Profile_Save_GotoClicked();"/>
+              </Window>
+                <Window Type="TLBB_ButtonCommon" Name="Profile_Save_ConfirmBtn">
+                    <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,10.000000},{0.500000,-10.000000}}"/>
+                    <Property Name="Text" Value="返回时装编辑"/>
+                    <Event Name="Clicked" Function="Profile_Save_ConfirmClicked();"/>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

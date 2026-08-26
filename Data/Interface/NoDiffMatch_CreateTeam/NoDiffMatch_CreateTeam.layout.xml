@@ -1,0 +1,362 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="NoDiffMatch_CreateTeam_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,332.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-200.000000},{0.500000,-210.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="NoDiffMatch_CreateTeam_PageHeader_Name">
+      <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,10.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+      <Property Name="Text" Value="" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="DragTarget" Value="NoDiffMatch_CreateTeam_Frame" />
+      <Property Name="Text" Value="#{WCBZ_180128_46}" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="NoDiffMatch_CreateTeam_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="NoDiffMatch_CreateTeam_CloseClicked();"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="NoDiffMatch_CreateTeam_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="NoDiffMatch_CreateTeam_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{1.000000,-45.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,29.000000}}"/>
+      <Window Type="TLBB_Frame_Lace3" Name="NoDiffMatch_CreateTeam_TopFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,4.000000}}"/>
+        <Window Type="DefaultWindow" Name="NoDiffMatch_CreateTeam_Top_TextLace">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-25.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_Top_Text1">
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-10.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+            <Property Name="Text" Value="#{WCBZ_180128_47}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_EditBoxNormal" Name="NoDiffMatch_CreateTeam_Top_NameInput">
+            <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,75.000000},{0.500000,-12.000000}}"/>
+            <Event Name="TextAccepted" Function="" />
+            <Event Name="TabPressed" Function="" />
+            <Event Name="MouseEnter" Function="" />
+            <Event Name="MouseLeave" Function="" />
+            <Event Name="Activated" Function="" />
+            <Property Name="MaxTextLength" Value="12" />
+            <Window Type="TLBB_ButtonNULL" Name="NoDiffMatch_CreateTeam_Top_NameInputNull">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Event Name="Clicked" Function="NoDiffMatch_CreateTeam_Top_NameInputNull_Clicked();"/>
+              <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_Top_Text4">
+                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-2.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,2.000000}}"/>
+                <Property Name="Text" Value="#{WCBZ_180128_51}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_Top_Text2">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-104.000000},{0.500000,-10.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+            <Property Name="Text" Value="#{WCBZ_180128_49}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_Top_Text3">
+            <Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{WCBZ_180128_50}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace3" Name="NoDiffMatch_CreateTeam_ListFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,220.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,34.000000}}"/>
+        <Window Type="TLBB_MultiColumnList" Name="NoDiffMatch_CreateTeam_ListTitleClient">
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,4.000000}}"/>
+          <Property Name="ForceHorzScrollbar" Value="False" />
+          <Property Name="SortSettingEnabled" Value="False" />
+          <Property Name="SelectionMode" Value="RowSingle" />
+          <Property Name="ColumnHeader" Value="text: width:0.4 id:0" />
+          <Property Name="ColumnHeader" Value="text: width:0.3 id:1" />
+          <Property Name="ColumnHeader" Value="text: width:0.3 id:2" />
+          <Property Name="ColumnsSizable" Value="False" />
+          <Property Name="ColumnsMovable" Value="False" />
+          <Property Name="ColumnsAdjust" Value="True" />
+          <Window Type="DefaultWindow" Name="NoDiffMatch_CreateTeam_ListTitle1">
+            <Property Name="UnifiedSize" Value="{{0.0000,146.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_ListTitle1_text">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{WCBZ_180128_52}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NoDiffMatch_CreateTeam_ListTitle2">
+            <Property Name="UnifiedSize" Value="{{0.0000,112.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.4000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_ListTitle2_text">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{WCBZ_180128_53}"/>
+              <Property Name="Tooltip" Value="#{WCBZ_180128_56}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NoDiffMatch_CreateTeam_ListTitle3">
+            <Property Name="UnifiedSize" Value="{{0.0000,112.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.4000,114.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_ListTitle3_text">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{WCBZ_180128_54}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="NoDiffMatch_CreateTeam_ListClient">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,183.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,26.000000}}"/>
+          <Window Type="TLBB_Frame_Lace2" Name="NoDiffMatch_CreateTeam_List1">
+            <Property Name="UnifiedSize" Value="{{1.0000,-10.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="NoDiffMatch_CreateTeam_List1_Pic">
+              <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,4.000000}}"/>
+              <Property Name="Image" Value="set:Union1 image:Union_MemberIcon_L"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_List1_1">
+              <Property Name="UnifiedSize" Value="{{0.400000,-70.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="777777777777"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_List1_2">
+              <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.400000,36.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="22222"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_List1_3">
+              <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,90.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="333"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="NoDiffMatch_CreateTeam_List2">
+            <Property Name="UnifiedSize" Value="{{1.0000,-10.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,30.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="NoDiffMatch_CreateTeam_List2_Pic">
+              <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,4.000000}}"/>
+              <Property Name="Image" Value="set:Union1 image:Union_MemberIcon_L"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_List2_1">
+              <Property Name="UnifiedSize" Value="{{0.400000,-70.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="1111"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_List2_2">
+              <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.400000,36.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="22222"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_List2_3">
+              <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,90.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="333"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_ButtonCheck" Name="NoDiffMatch_CreateTeam_List2_ViceLeaderBtn">
+              <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-58.000000},{0.000000,10.000000}}"/>
+              <Property Name="CheckMode" Value="1"/>
+              <Event Name="MouseLButtonDown" Function="NoDiffMatch_CreateTeam_ViceLeaderBtn(2)"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_List2_ViceLeaderText">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.000000,6.000000}}"/>
+              <Property Name="Text" Value="#{WCBZ_240314_2}"/>
+              <Property Name="Tooltip" Value="#{WCBZ_240314_1}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="NoDiffMatch_CreateTeam_List3">
+            <Property Name="UnifiedSize" Value="{{1.0000,-10.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,60.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="NoDiffMatch_CreateTeam_List3_Pic">
+              <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,4.000000}}"/>
+              <Property Name="Image" Value="set:Union1 image:Union_MemberIcon_L"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_List3_1">
+              <Property Name="UnifiedSize" Value="{{0.400000,-70.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="1111"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_List3_2">
+              <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.400000,36.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="22222"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_List3_3">
+              <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,90.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="333"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_ButtonCheck" Name="NoDiffMatch_CreateTeam_List3_ViceLeaderBtn">
+              <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-58.000000},{0.000000,10.000000}}"/>
+              <Property Name="CheckMode" Value="1"/>
+              <Event Name="MouseLButtonDown" Function="NoDiffMatch_CreateTeam_ViceLeaderBtn(3)"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_List3_ViceLeaderText">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.000000,6.000000}}"/>
+              <Property Name="Text" Value="#{WCBZ_240314_2}"/>
+              <Property Name="Tooltip" Value="#{WCBZ_240314_1}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="NoDiffMatch_CreateTeam_List4">
+            <Property Name="UnifiedSize" Value="{{1.0000,-10.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,90.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="NoDiffMatch_CreateTeam_List4_Pic">
+              <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,4.000000}}"/>
+              <Property Name="Image" Value="set:Union1 image:Union_MemberIcon_L"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_List4_1">
+              <Property Name="UnifiedSize" Value="{{0.400000,-70.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="1111"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_List4_2">
+              <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.400000,36.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="22222"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_List4_3">
+              <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,90.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="333"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_ButtonCheck" Name="NoDiffMatch_CreateTeam_List4_ViceLeaderBtn">
+              <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-58.000000},{0.000000,10.000000}}"/>
+              <Property Name="CheckMode" Value="1"/>
+              <Event Name="MouseLButtonDown" Function="NoDiffMatch_CreateTeam_ViceLeaderBtn(4)"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_List4_ViceLeaderText">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.000000,6.000000}}"/>
+              <Property Name="Text" Value="#{WCBZ_240314_2}"/>
+              <Property Name="Tooltip" Value="#{WCBZ_240314_1}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="NoDiffMatch_CreateTeam_List5">
+            <Property Name="UnifiedSize" Value="{{1.0000,-10.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,120.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="NoDiffMatch_CreateTeam_List5_Pic">
+              <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,4.000000}}"/>
+              <Property Name="Image" Value="set:Union1 image:Union_MemberIcon_L"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_List5_1">
+              <Property Name="UnifiedSize" Value="{{0.400000,-70.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="1111"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_List5_2">
+              <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.400000,36.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="22222"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_List5_3">
+              <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,90.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="333"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_ButtonCheck" Name="NoDiffMatch_CreateTeam_List5_ViceLeaderBtn">
+              <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-58.000000},{0.000000,10.000000}}"/>
+              <Property Name="CheckMode" Value="1"/>
+              <Event Name="MouseLButtonDown" Function="NoDiffMatch_CreateTeam_ViceLeaderBtn(5)"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_List5_ViceLeaderText">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.000000,6.000000}}"/>
+              <Property Name="Text" Value="#{WCBZ_240314_2}"/>
+              <Property Name="Tooltip" Value="#{WCBZ_240314_1}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="NoDiffMatch_CreateTeam_List6">
+            <Property Name="UnifiedSize" Value="{{1.0000,-10.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,150.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="NoDiffMatch_CreateTeam_List6_Pic">
+              <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,4.000000}}"/>
+              <Property Name="Image" Value="set:Union1 image:Union_MemberIcon_L"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_List6_1">
+              <Property Name="UnifiedSize" Value="{{0.400000,-70.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="1111"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_List6_2">
+              <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.400000,36.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="22222"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_List6_3">
+              <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,90.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="333"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+            <Window Type="TLBB_ButtonCheck" Name="NoDiffMatch_CreateTeam_List6_ViceLeaderBtn">
+              <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-58.000000},{0.000000,10.000000}}"/>
+              <Property Name="CheckMode" Value="1"/>
+              <Event Name="MouseLButtonDown" Function="NoDiffMatch_CreateTeam_ViceLeaderBtn(6)"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="NoDiffMatch_CreateTeam_List6_ViceLeaderText">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.000000,6.000000}}"/>
+              <Property Name="Text" Value="#{WCBZ_240314_2}"/>
+              <Property Name="Tooltip" Value="#{WCBZ_240314_1}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="NoDiffMatch_CreateTeam_Accept">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{1.000000,-30.000000}}"/>
+        <Property Name="Text" Value="#{WCBZ_180128_71}" />
+        <Event Name="Clicked" Function="NoDiffMatch_CreateTeam_Accept_Clicked();"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Mount_Auction_Exterior_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,580.000000},{0.000000,520.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-418.000000},{0.500000,-262.000000}" />
+    <Event Name="Hidden" Function="Mount_Auction_Exterior_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="Mount_Auction_Exterior_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,11.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Text" Value="#{ZQPM_240402_134}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="Mount_Auction_Exterior_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Mount_Auction_Exterior_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Mount_Auction_Exterior_CloseClick();" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Mount_Auction_Exterior_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonHelp"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function=""/>
+    </Window>
+    <Window Type="TLBB_MainFrame0" Name="Mount_Auction_Exterior_BK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="Mount_Auction_Exterior_Function_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,32.000000}}"/>
+      <Window Type="TLBB_Frame_Lace2" Name="Mount_Auction_Exterior_Frame_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,4.000000}}"/>
+        <Window Type="TLBB_MeshBackOldEx" Name="Mount_Auction_Exterior_FakeObject">
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_ButtonTurnLeft" Name="Mount_Auction_Exterior_Model_TurnLeft">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.800000,0.000000}}"/>
+            <Event Name="CaptureLost" Function="Mount_Auction_Exterior_FakeObject_TurnLeft(0);" />
+            <Event Name="MouseButtonDown" Function="Mount_Auction_Exterior_FakeObject_TurnLeft(1);" />
+            <Event Name="MouseButtonUp" Function="Mount_Auction_Exterior_FakeObject_TurnLeft(0);" />
+          </Window>
+          <Window Type="TLBB_ButtonTurnRight" Name="Mount_Auction_Exterior_Model_TurnRight">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.800000,0.000000}}"/>
+            <Event Name="CaptureLost" Function="Mount_Auction_Exterior_FakeObject_TurnRight(0);" />
+            <Event Name="MouseButtonDown" Function="Mount_Auction_Exterior_FakeObject_TurnRight(1);" />
+            <Event Name="MouseButtonUp" Function="Mount_Auction_Exterior_FakeObject_TurnRight(0);" />
+          </Window>
+
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

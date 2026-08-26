@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="ShenbingGuide_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,744.000000},{0.000000,600.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-372.000000},{0.500000,-300.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="ShenbingGuide_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Text" Value="#{SQYD_230802_43}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="ShenbingGuide_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="ShenbingGuide_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Helper:GotoHelper('*ShenbingGuide_BossChoice');"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="ShenbingGuide_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="ShenbingGuide_OnClose()"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="ShenbingGuide_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Window Type="DefaultWindow" Name="ShenbingGuide_AllBtn">
+        <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,28.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_ButtonFenYe2" Name="ShenbingGuide_Choice_1">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,-2.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="#{SQYD_230802_45}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="ShenbingGuide_FenyeClicked(1);"/>
+        </Window>
+        <Window Type="TLBB_ButtonFenYe2" Name="ShenbingGuide_Choice_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="#{SQYD_230802_51}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="ShenbingGuide_FenyeClicked(2);"/>
+        </Window>
+        <Window Type="TLBB_ButtonFenYe2" Name="ShenbingGuide_Choice_3">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="#{SQYD_230802_55}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="ShenbingGuide_FenyeClicked(3);"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="ShenbingGuide_ClientFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{1.000000,-30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,30.000000}}"/>
+        <Property Name="Image" Value=""/>
+        <Window Type="TLBB_Frame_Lace3" Name="ShenbingGuide_Left">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{1.000000,-4.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,4.000000}}"/>
+          <Window Type="TLBB_ButtonCheckForRMBShop" Name="ShenbingGuide_Bind">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,10.000000}}"/>
+            <Property Name="Text" Value="#{SQYD_230802_46}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Selected" Value="True"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Event Name="MouseLButtonDown" Function="ShenbingGuide_ModeClicked(1);"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckForRMBShop" Name="ShenbingGuide_Bind2">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,40.000000}}"/>
+            <Property Name="Text" Value="#{SQYD_230802_47}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Selected" Value="True"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Event Name="MouseLButtonDown" Function="ShenbingGuide_ModeClicked(2);"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckForRMBShop" Name="ShenbingGuide_Bind3">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,70.000000}}"/>
+            <Property Name="Text" Value="#{SQYD_230802_79}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Selected" Value="True"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Event Name="MouseLButtonDown" Function="ShenbingGuide_ModeClicked(3);"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckForRMBShop" Name="ShenbingGuide_Bind4">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,100.000000}}"/>
+            <Property Name="Text" Value="#{SQYD_230802_48}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Selected" Value="True"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Event Name="MouseLButtonDown" Function="ShenbingGuide_ModeClicked(4);"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckForRMBShop" Name="ShenbingGuide_Bind5">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,130.000000}}"/>
+            <Property Name="Text" Value="#{SQYD_230802_49}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Selected" Value="True"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Event Name="MouseLButtonDown" Function="ShenbingGuide_ModeClicked(5);"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckForRMBShop" Name="ShenbingGuide_Bind6">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,160.000000}}"/>
+            <Property Name="Text" Value="#{SQYD_230802_18}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Selected" Value="True"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Event Name="MouseLButtonDown" Function="ShenbingGuide_ModeClicked(6);"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckForRMBShop" Name="ShenbingGuide_Bind7">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,190.000000}}"/>
+            <Property Name="Text" Value="#{SQYD_230802_50}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Selected" Value="True"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Event Name="MouseLButtonDown" Function="ShenbingGuide_ModeClicked(7);"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace3" Name="ShenbingGuide_Right1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-95.000000},{0.000000,130.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,4.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ShenbingGuide_Right1_Info1BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,5.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Christmas_WishGift image:Christmas_WishGift_TextBK"/>
+            <Window Type="TLBB_SimpleText" Name="ShenbingGuide_Right1_Info1">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.500000,-8.000000}}"/>
+              <Property Name="Text" Value="#{SQYD_230802_48}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticText" Name="ShenbingGuide_Right1_Text">
+            <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,26.000000}" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-34.000000}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="VertFormatting" Value="TopAligned" />
+            <Property Name="Text" Value="#{SQYD_230802_80}" />
+            <Property Name="VertScrollbar" Value="true" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace3" Name="ShenbingGuide_Right2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-95.000000},{1.000000,-138.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,138.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ShenbingGuide_Right2_Info1BK">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,5.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Christmas_WishGift image:Christmas_WishGift_TextBK"/>
+            <Window Type="TLBB_SimpleText" Name="ShenbingGuide_Right2_Info1">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.500000,-8.000000}}"/>
+              <Property Name="Text" Value="#{SQYD_230802_49}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="ShenbingGuide_Right2_Info2">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-35.000000},{1.000000,-25.000000}}"/>
+            <Property Name="Text" Value="#{SQYD_230802_113}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ShenbingGuide_Right2_Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,340.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,59.000000},{0.000000,30.000000}}"/>
+            <Property Name="Image" Value="set:ShenbingGuide2 image:ShenbingGuide_jnjs"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="ShenbingGuide_Right2_PageUp">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,37.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.500000,2.000000}}"/>
+            <Property Name="PushedImage" Value="set:ModifyMenPai image:MPLeftButton_Pushed"/>
+            <Property Name="NormalImage" Value="set:ModifyMenPai image:MPLeftButton_Normal"/>
+            <Property Name="HoverImage" Value="set:ModifyMenPai image:MPLeftButton_Hover"/>
+            <Property Name="DisabledImage" Value="set:ModifyMenPai image:MPLeftButton_Disable"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="ShenbingGuide_PageUp();"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="ShenbingGuide_Right2_PageDown">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,37.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.500000,2.000000}}"/>
+            <Property Name="PushedImage" Value="set:ModifyMenPai image:MPRightButton_Pushed"/>
+            <Property Name="NormalImage" Value="set:ModifyMenPai image:MPRightButton_Normal"/>
+            <Property Name="HoverImage" Value="set:ModifyMenPai image:MPRightButton_Hover"/>
+            <Property Name="DisabledImage" Value="set:ModifyMenPai image:MPRightButton_Disable"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="ShenbingGuide_PageDown();"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

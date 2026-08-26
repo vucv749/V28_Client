@@ -1,0 +1,109 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Redenvelope_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,289.000000},{0.000000,438.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-145.000000},{0.500000,-219.000000}}"/>
+    <Event Name="Hidden" Function="Redenvelope_OnHidden()"/>
+    <Window Type="TLBB_DragTitle" Name="Redenvelope_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-62.000000},{0.000000,60.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.000000,4.000000}}"/>
+      <Property Name="Text" Value="#{HBXTS_221214_61}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="DragTarget" Value="Redenvelope_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="Redenvelope_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,22.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-34.000000},{0.000000,5.000000}}"/>
+      <Property Name="PushedImage" Value="set:Redenvelope image:Close_Pushed"/>
+      <Property Name="NormalImage" Value="set:Redenvelope image:Close_Normal"/>
+      <Property Name="HoverImage" Value="set:Redenvelope image:Close_Hover"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Redenvelope_ButtonCloseOnClicked();"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="Redenvelope_Frame_BK_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000000,0.000000}}"/>
+    <Window Type="TLBB_StaticImageNULL" Name="Redenvelope_BK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="Image" Value="set:Redenvelope image:BK_Large"/>
+    </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="Redenvelope_Text_Lace">
+      <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-110.000000},{0.000000,105.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Window Type="TLBB_SimpleText" Name="Redenvelope_Text">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{HBXTS_221214_62}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="Redenvelope_List_Lace">
+      <Property Name="UnifiedSize" Value="{{0.000000,252.000000},{0.000000,221.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-126.500000},{0.000000,148.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Window Type="TLBB_NotSuperList" Name="Redenvelope_List">
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-10.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_NotSuperListItemCommon3" Name="Redenvelope_List_Item">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="Redenvelope_List_Name">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{HBXTS_221214_65}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Redenvelope_List_Money">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,98.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{HBXTS_221214_66}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Redenvelope_List_Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,41.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{0.500000,-16.000000}}"/>
+            <Property Name="Image" Value="set:Redenvelope image:TheChosenOne"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="Redenvelope_Image">
+      <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,25.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-119.000000},{0.000000,151.000000}}"/>
+      <Property Name="Visible" Value="False"/>
+      <Property Name="Image" Value="set:CommonFrame31 image:Redenvelope_op"/>
+    </Window>
+    <Window Type="TLBB_SimpleText" Name="Redenvelope_Text2">
+      <Property Name="UnifiedSize" Value="{{0.000000,260.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-125.000000},{0.000000,375.000000}}"/>
+      <Property Name="Text" Value="#{HBXTS_221214_111}"/>
+      <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="Redenvelope_Button">
+      <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-34.000000},{1.000000,-45.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="PushedImage" Value="set:Redenvelope image:Refresh_Pushed"/>
+      <Property Name="NormalImage" Value="set:Redenvelope image:Refresh_Normal"/>
+      <Property Name="HoverImage" Value="set:Redenvelope image:Refresh_Hover"/>
+      <Event Name="Clicked" Function="Redenvelope_ButtonRefreshOnClicked();"/>
+    </Window>
+  </Window>
+</GUILayout>

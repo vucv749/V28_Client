@@ -1,0 +1,124 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="Kunwu_GiftBox_Frame_BK">
+    <Property Name="UnifiedSize" Value="{{0.000000,596.000000},{0.000000,376.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-298.000000},{0.500000,-188.000000}}"/>
+    <Event Name="Hidden" Function="Kunwu_GiftBox_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="Kunwu_GiftBox_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{JLJC_241216_63}"/>
+      <Property Name="DragTarget" Value="Kunwu_GiftBox_Frame_BK"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Kunwu_GiftBox_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Kunwu_GiftBox_HelpClicked()"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Kunwu_GiftBox_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Kunwu_GiftBox_CloseClicked();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Kunwu_GiftBox_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Window Type="DefaultWindow" Name="Kunwu_GiftBoxBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Kunwu_GiftBoxBK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,584.000000},{0.000000,320.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:NewZhuXian_Task image:NewZhuXian_BK"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Kunwu_GiftBox_InfoBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,21.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Image" Value="set:FeelFeedBack2 image:FeelFeedBack_TextBK2"/>
+        <Window Type="TLBB_SimpleText" Name="Kunwu_GiftBox_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{JLJC_241216_64}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Kunwu_GiftBox_Action_Set">
+        <Property Name="UnifiedSize" Value="{{0.000000,460.000000},{0.000000,220.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-230.000000},{0.000000,41.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ButtonFenYe7" Name="Kunwu_GiftBox_Page1_Btn">
+          <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{JLJC_241216_65}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="Kunwu_GiftBox_SelectPage(1)"/>
+        </Window>
+        <Window Type="TLBB_ButtonFenYe7" Name="Kunwu_GiftBox_Page2_Btn">
+          <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,79.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{JLJC_241216_66}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="Kunwu_GiftBox_SelectPage(2)"/>
+        </Window>
+        <Window Type="TLBB_ButtonFenYe7" Name="Kunwu_GiftBox_Page3_Btn">
+          <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,158.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{JLJC_241216_67}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="Kunwu_GiftBox_SelectPage(3)"/>
+        </Window>
+        <Window Type="TLBB_Frame_Lace9" Name="Kunwu_GiftBox_Action_SuperListBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,194.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-194.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_NotSuperList" Name="Kunwu_GiftBox_Action_SuperList">
+            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-10.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+            <Property Name="SelectMode" Value="Single" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MultiColumn" Value="1" />
+            <Window Type="TLBB_NotSuperListItemCommon3" Name="Kunwu_GiftBox_Action_SuperListItem">
+              <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,80.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="Kunwu_GiftBox_Item1">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,4.000000}}"/>
+                <Event Name="Clicked" Function="Kunwu_GiftBox_ItemClicked(1);" />
+                <Window Type="TLBB_StaticImageNULL" Name="Kunwu_GiftBox_Item1_Object1Select">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Kunwu_GiftBox_ItemInfo1_Text">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-24.000000}}"/>
+                <Property Name="Text" Value="#{}" />
+                <Property Name="TextColor" Value="FF800000"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon11" Name="Kunwu_GiftBox_GetButton">
+        <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-42.000000},{1.000000,-48.000000}}"/>
+        <Property Name="Text" Value="#{JLJC_241216_68}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Kunwu_GiftBox_OK_Clicked()"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

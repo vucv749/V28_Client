@@ -1,0 +1,592 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="NewShengXiao_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,842.000000},{0.000000,552.000000}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-421.000000},{0.500000,-276.000000}" />
+    <Event Name="Hidden" Function="NewShengXiao_Close();" />
+    <Window Type="TLBB_HeroTitle01" Name="Jianglixuanze_DragTitle_BK">
+      <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-140.000000},{0.000000,-2.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="NewShengXiao_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+		  <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,2.000000}}"/>
+      <Property Name="DragTarget" Value="NewShengXiao_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{SXXG_241111_04}" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="NewShengXiao_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,761.000000},{0.000000,83.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}" />
+      <Property Name="PushedImage" Value="set:NewShengXiao_Image image:NewShengXiao_Help_P"/>
+      <Property Name="NormalImage" Value="set:NewShengXiao_Image image:NewShengXiao_Help_N"/>
+      <Property Name="HoverImage" Value="set:NewShengXiao_Image image:NewShengXiao_Help_H"/>
+      <Property Name="DisabledImage" Value="set:NewShengXiao_Image image:NewShengXiao_Help_D"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="NewShengXiao_HelpClk();" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="NewShengXiao_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,9.000000}}"/>
+      <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+      <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
+      <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
+      <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+      <Event Name="Clicked" Function="NewShengXiao_Close();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="NewShengXiao_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+		  <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_ImageBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,834.000000},{0.000000,520.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_BG"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="NewShengXiao_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,-90.000000},{1.000000,-445.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="NewShengXiao_Info_Des">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{SXXG_241111_05}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="NewShengXiao_1">
+        <Property Name="UnifiedSize" Value="{{0.000000,178.000000},{0.000000,361.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,71.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_1_HighLight">
+          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,294.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,13.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_Shade"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewShengXiao_1_Btn">
+          <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,32.000000}}"/>
+		      <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{1.000000,-135.000000}}"/>
+          <Property Name="PushedImage" Value="set:NewShengXiao_Image image:NewShengXiao_GoTo_P"/>
+          <Property Name="NormalImage" Value="set:NewShengXiao_Image image:NewShengXiao_GoTo_N"/>
+          <Property Name="HoverImage" Value="set:NewShengXiao_Image image:NewShengXiao_GoTo_H"/>
+          <Property Name="DisabledImage" Value="set:NewShengXiao_Image image:NewShengXiao_GoTo_D"/>
+          <Property Name="Tooltip" Value="#{SXXG_241111_330} "/>
+          <Event Name="Clicked" Function="NewShengXiao_GoBtn_Clicked(1);"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_1_Btn_TimeOutImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-19.000000},{1.000000,-130.000000}}"/>
+          <Property Name="Image" Value="set:Fashion_Auction image:Fashion_Auction_Over"/>
+          <Property Name="Tooltip" Value="#{SXXG_241111_334}"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="NewShengXiao_1_BK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,-3.000000},{0.000000,290.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_1_BK_ItemBtn_Gray">
+            <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,40.000000}}"/>
+		        <Property Name="UnifiedPosition" Value="{{0.500000,-14.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Tooltip" Value="#{SXXG_241111_325}"/>
+            <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_D"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="NewShengXiao_1_BK_ItemBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,40.000000}}"/>
+		        <Property Name="UnifiedPosition" Value="{{0.500000,-14.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Tooltip" Value="#{SXXG_241111_14}"/>
+            <Property Name="PushedImage" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_P"/>
+            <Property Name="NormalImage" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_N"/>
+            <Property Name="HoverImage" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_H"/>
+            <Property Name="DisabledImage" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_D"/>
+            <Event Name="Clicked" Function="NewShengXiao_ItemBtn_Clicked(1);"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_1_BK_ItemImage">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_Open"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_1_BK_Light">
+            <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+		        <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,21.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NewShengXiao_1_Des">
+          <Property Name="UnifiedSize" Value="{{1.000000,-45.000000},{1.000000,-330.000000}}"/>
+		      <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,188.000000}}"/>
+          <Property Name="Text" Value="#{SXXG_241111_06}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NewShengXiao_1_MissionProcess">
+          <Property Name="UnifiedSize" Value="{{1.000000,-37.000000},{1.000000,-346.000000}}"/>
+		      <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.000000,260.000000}}"/>
+          <Property Name="Text" Value="#{SXXG_241111_323}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_1_TaskOverImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.000000,227.000000}}"/>
+          <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_Finsh"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_1_AcceptImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,26.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,14.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_Zhe_BK"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="NewShengXiao_1_AcceptImageText">
+            <Property Name="UnifiedSize" Value="{{1.000000,-22.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{SXXG_241111_350}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_1_BIGTitle">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,216.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_FirstTitle"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+
+      <Window Type="DefaultWindow" Name="NewShengXiao_2">
+        <Property Name="UnifiedSize" Value="{{0.000000,178.000000},{0.000000,361.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,222.000000},{0.000000,101.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_2_HighLight">
+          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,294.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,13.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_Shade"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewShengXiao_2_Btn">
+          <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,32.000000}}"/>
+		      <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{1.000000,-135.000000}}"/>
+          <Property Name="Tooltip" Value="#{SXXG_241111_331} "/>
+          <Property Name="PushedImage" Value="set:NewShengXiao_Image image:NewShengXiao_GoTo_P"/>
+          <Property Name="NormalImage" Value="set:NewShengXiao_Image image:NewShengXiao_GoTo_N"/>
+          <Property Name="HoverImage" Value="set:NewShengXiao_Image image:NewShengXiao_GoTo_H"/>
+          <Property Name="DisabledImage" Value="set:NewShengXiao_Image image:NewShengXiao_GoTo_D"/>
+          <Event Name="Clicked" Function="NewShengXiao_GoBtn_Clicked(2);"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_2_Btn_TimeOutImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,22.000000}}"/>
+		      <Property Name="UnifiedPosition" Value="{{0.500000,-19.000000},{1.000000,-130.000000}}"/>
+          <Property Name="Image" Value="set:Fashion_Auction image:Fashion_Auction_Over"/>
+          <Property Name="Tooltip" Value="#{SXXG_241111_334}"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="NewShengXiao_2_BK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}"/>
+		      <Property Name="UnifiedPosition" Value="{{0.000000,-4.000000},{0.000000,285.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_2_BK_ItemBtn_Gray">
+            <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,40.000000}}"/>
+		        <Property Name="UnifiedPosition" Value="{{0.500000,-14.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Tooltip" Value="#{SXXG_241111_325}"/>
+            <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_D"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="NewShengXiao_2_BK_ItemBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,40.000000}}"/>
+		        <Property Name="UnifiedPosition" Value="{{0.500000,-14.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Tooltip" Value="#{SXXG_241111_53}"/>
+            <Property Name="PushedImage" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_P"/>
+            <Property Name="NormalImage" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_N"/>
+            <Property Name="HoverImage" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_H"/>
+            <Property Name="DisabledImage" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_D"/>
+            <Event Name="Clicked" Function="NewShengXiao_ItemBtn_Clicked(2);"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_2_BK_ItemImage">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_Open"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_2_BK_Light">
+            <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+		        <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,21.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NewShengXiao_2_Des">
+          <Property Name="UnifiedSize" Value="{{1.000000,-45.000000},{1.000000,-330.000000}}"/>
+		      <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,188.000000}}"/>
+          <Property Name="Text" Value="#{SXXG_241111_07}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NewShengXiao_2_MissionProcess">
+          <Property Name="UnifiedSize" Value="{{1.000000,-37.000000},{1.000000,-346.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.000000,260.000000}}"/>
+          <Property Name="Text" Value="#{SXXG_241111_324}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_2_TaskOverImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.000000,227.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_Finsh"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_2_AcceptImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,26.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,14.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_Zhe_BK"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="NewShengXiao_2_AcceptImageText">
+            <Property Name="UnifiedSize" Value="{{1.000000,-22.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{SXXG_241111_350}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_2_BIGTitle">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,216.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_SecondTitle"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="NewShengXiao_3">
+        <Property Name="UnifiedSize" Value="{{0.000000,178.000000},{0.000000,361.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,419.000000},{0.000000,106.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_3_HighLight">
+          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,294.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,13.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_Shade"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewShengXiao_3_Btn">
+          <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,32.000000}}"/>
+		      <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{1.000000,-135.000000}}"/>
+          <Property Name="Tooltip" Value="#{SXXG_241111_332} "/>
+          <Property Name="PushedImage" Value="set:NewShengXiao_Image image:NewShengXiao_GoTo_P"/>
+          <Property Name="NormalImage" Value="set:NewShengXiao_Image image:NewShengXiao_GoTo_N"/>
+          <Property Name="HoverImage" Value="set:NewShengXiao_Image image:NewShengXiao_GoTo_H"/>
+          <Property Name="DisabledImage" Value="set:NewShengXiao_Image image:NewShengXiao_GoTo_D"/>
+          <Event Name="Clicked" Function="NewShengXiao_GoBtn_Clicked(3);"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_3_Btn_TimeOutImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,22.000000}}"/>
+		      <Property Name="UnifiedPosition" Value="{{0.500000,-19.000000},{1.000000,-130.000000}}"/>
+          <Property Name="Image" Value="set:Fashion_Auction image:Fashion_Auction_Over"/>
+          <Property Name="Tooltip" Value="#{SXXG_241111_334}"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="NewShengXiao_3_BK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}"/>
+		      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,289.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_3_BK_ItemBtn_Gray">
+            <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,40.000000}}"/>
+		        <Property Name="UnifiedPosition" Value="{{0.500000,-14.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Tooltip" Value="#{SXXG_241111_325}"/>
+            <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_D"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="NewShengXiao_3_BK_ItemBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,40.000000}}"/>
+		        <Property Name="UnifiedPosition" Value="{{0.500000,-14.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Tooltip" Value="#{SXXG_241111_335}"/>
+            <Property Name="PushedImage" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_P"/>
+            <Property Name="NormalImage" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_N"/>
+            <Property Name="HoverImage" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_H"/>
+            <Property Name="DisabledImage" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_D"/>
+            <Event Name="Clicked" Function="NewShengXiao_ItemBtn_Clicked(3);"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_3_BK_ItemImage">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_Open"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_3_BK_Light">
+            <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+		        <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,21.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NewShengXiao_3_Des">
+          <Property Name="UnifiedSize" Value="{{1.000000,-45.000000},{1.000000,-330.000000}}"/>
+		      <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,188.000000}}"/>
+          <Property Name="Text" Value="#{SXXG_241111_08}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NewShengXiao_3_MissionProcess">
+          <Property Name="UnifiedSize" Value="{{1.000000,-37.000000},{1.000000,-346.000000}}"/>
+		      <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.000000,260.000000}}"/>
+          <Property Name="Text" Value="#{SXXG_241111_325}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_3_TaskOverImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.000000,227.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_Finsh"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_3_AcceptImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,26.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,14.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_Zhe_BK"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="NewShengXiao_3_AcceptImageText">
+            <Property Name="UnifiedSize" Value="{{1.000000,-22.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{SXXG_241111_350}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_3_BIGTitle">
+          <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,216.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,-4.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_ThirdTitle"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="NewShengXiao_4">
+        <Property Name="UnifiedSize" Value="{{0.000000,178.000000},{0.000000,361.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,612.000000},{0.000000,72.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_4_HighLight">
+          <Property Name="UnifiedSize" Value="{{0.000000,152.000000},{0.000000,294.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,13.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_Shade"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewShengXiao_4_Btn">
+          <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,32.000000}}"/>
+		      <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{1.000000,-135.000000}}"/>
+          <Property Name="Tooltip" Value="#{SXXG_241111_333} "/>
+          <Property Name="PushedImage" Value="set:NewShengXiao_Image image:NewShengXiao_GoTo_P"/>
+          <Property Name="NormalImage" Value="set:NewShengXiao_Image image:NewShengXiao_GoTo_N"/>
+          <Property Name="HoverImage" Value="set:NewShengXiao_Image image:NewShengXiao_GoTo_H"/>
+          <Property Name="DisabledImage" Value="set:NewShengXiao_Image image:NewShengXiao_GoTo_D"/>
+          <Event Name="Clicked" Function="NewShengXiao_GoBtn_Clicked(4);"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_4_Btn_TimeOutImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,22.000000}}"/>
+		      <Property Name="UnifiedPosition" Value="{{0.500000,-19.000000},{1.000000,-130.000000}}"/>
+          <Property Name="Image" Value="set:Fashion_Auction image:Fashion_Auction_Over"/>
+          <Property Name="Tooltip" Value="#{SXXG_241111_334}"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="NewShengXiao_4_BK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}"/>
+		      <Property Name="UnifiedPosition" Value="{{0.000000,-2.000000},{0.000000,282.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_4_BK_ItemBtn_Gray">
+            <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,40.000000}}"/>
+		        <Property Name="UnifiedPosition" Value="{{0.500000,-14.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Tooltip" Value="#{SXXG_241111_325}"/>
+            <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_D"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="NewShengXiao_4_BK_ItemBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,40.000000}}"/>
+		        <Property Name="UnifiedPosition" Value="{{0.500000,-14.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Tooltip" Value="#{SXXG_241111_336}"/>
+            <Property Name="PushedImage" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_P"/>
+            <Property Name="NormalImage" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_N"/>
+            <Property Name="HoverImage" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_H"/>
+            <Property Name="DisabledImage" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_D"/>
+            <Event Name="Clicked" Function="NewShengXiao_ItemBtn_Clicked(4);"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_4_BK_ItemImage">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_SChest_Open"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_4_BK_Light">
+            <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+		        <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,21.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NewShengXiao_4_Des">
+          <Property Name="UnifiedSize" Value="{{1.000000,-45.000000},{1.000000,-330.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,188.000000}}"/>
+          <Property Name="Text" Value="#{SXXG_241111_09}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NewShengXiao_4_MissionProcess">
+          <Property Name="UnifiedSize" Value="{{1.000000,-37.000000},{1.000000,-346.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.000000,260.000000}}"/>
+          <Property Name="Text" Value="#{SXXG_241111_326}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_4_TaskOverImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.000000,227.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_Finsh"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_4_AcceptImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,26.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,14.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_Zhe_BK"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="NewShengXiao_4_AcceptImageText">
+            <Property Name="UnifiedSize" Value="{{1.000000,-22.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{SXXG_241111_350}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_4_BIGTitle">
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,222.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,-2.000000},{0.000000,-4.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_FourthTitle"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="NewShengXiao_5">
+        <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,108.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,279.000000},{0.500000,152.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_5_ChestBtn_Open">
+          <Property Name="UnifiedSize" Value="{{0.000000,122.000000},{0.000000,94.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-55.500000},{0.500000,-52.000000}}"/>
+          <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_Chest_Open"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewShengXiao_5_ChestBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,84.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.500000,-42.000000}}"/>
+          <Property Name="Tooltip" Value="#{SXXG_241111_337}"/>
+          <Property Name="PushedImage" Value="set:NewShengXiao_Image image:NewShengXiao_Chest_P"/>
+          <Property Name="NormalImage" Value="set:NewShengXiao_Image image:NewShengXiao_Chest_N"/>
+          <Property Name="HoverImage" Value="set:NewShengXiao_Image image:NewShengXiao_Chest_H"/>
+          <Property Name="DisabledImage" Value="set:NewShengXiao_Image image:NewShengXiao_Chest_D"/>
+          <Event Name="Clicked" Function="NewShengXiao_ItemBtn_Clicked(5);"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewShengXiao_5_FuZi_GoToBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,122.000000},{0.000000,102.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-61.000000},{0.500000,-51.000000}}"/>
+          <Property Name="Tooltip" Value="#{SXXG_241111_10}"/>
+          <Property Name="PushedImage" Value="set:NewShengXiao_Image image:NewShengXiao_Fuzi_P"/>
+          <Property Name="NormalImage" Value="set:NewShengXiao_Image image:NewShengXiao_Fuzi_N"/>
+          <Property Name="HoverImage" Value="set:NewShengXiao_Image image:NewShengXiao_Fuzi_H"/>
+          <Property Name="DisabledImage" Value="set:NewShengXiao_Image image:NewShengXiao_Fuzi_D"/>
+          <Event Name="Clicked" Function="NewShengXiao_GoBtn_Clicked(5);"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_5_FuZi_Disable">
+          <Property Name="UnifiedSize" Value="{{0.000000,122.000000},{0.000000,102.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-61.000000},{0.500000,-51.000000}}"/>
+          <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_Fuzi_D"/>
+          <Property Name="Tooltip" Value="#{SXXG_241111_340}"/>
+        </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_5_TipsBK_Red">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-57.000000},{0.500000,31.000000}}"/>
+            <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_RedBK"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_5_TipsBK_Green">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-57.000000},{0.500000,31.000000}}"/>
+            <Property Name="Image" Value="set:NewShengXiao_Image image:NewShengXiao_GreenBK"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewShengXiao_5_TipsGroup">
+            <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-57.000000},{0.500000,31.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="NewShengXiao_5_MissionProcess">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{SXXG_241111_312}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="NewShengXiao_5_BK_Light">
+          <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-27.000000},{0.000000,21.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

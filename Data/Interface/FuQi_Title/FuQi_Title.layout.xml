@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame_Affection1" Name="FuQi_Title_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,180.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.150000,0.000000}}"/>
+        <Window Type="TLBB_TitleLace_Affection1" Name="FuQi_Title_DragTitleBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-90.000000},{0.000000,11.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_DragTitle" Name="FuQi_Title_DragTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+            <Property Name="DragTarget" Value="FuQi_Title_Frame" />
+            <Window Type="TLBB_SimpleText" Name="FuQi_Title_PageHeader">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Font" Value="YouYuan11.25" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="Text" Value="#{FQCH_20230330_26}" />
+            </Window>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="FuQi_Title_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+            <Property Name="Text" Value="TLBB_ButtonHelp" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*FuQi_Title&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="FuQi_Title_Close">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+            <Property Name="Text" Value="TLBB_ButtonClose" />
+            <Event Name="Clicked" Function="FuQi_Title_Cancel()" />
+        </Window>
+        <Window Type="DefaultWindow" Name="FuQi_Title_Function_Frame">
+            <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="FuQi_Title_Text">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,42.000000}}"/>
+                <Property Name="Text" Value="#{FQCH_20230330_27}" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+            </Window>
+            <Window Type="DefaultWindow" Name="FuQi_Title_ZiDingYi_Frame">
+                <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,42.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,50.000000}}"/>
+                <Window Type="TLBB_Frame_Lace2" Name="FuQi_Title_ZidingYi_Name_BK">
+                    <Property Name="UnifiedSize" Value="{{0.40000,0.000000},{1.000000,-20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.00000,15.000000},{0.000000,10.000000}}"/>
+                    <Window Type="TLBB_SimpleText" Name="FuQi_Title_ZidingYi_PlayerName">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                        <Property Name="Text" Value="" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="FuQi_Title_ZidingYi_info">
+                    <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{1.000000,-20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-8.000000},{0.000000,10.000000}}"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="VertFormatting" Value="VertCentred" />
+                    <Property Name="TextColor" Value="FFFFF263" />
+                </Window>
+                <Window Type="TLBB_EditBoxNormal" Name="FFuQi_Title_ZidingYi_Input">
+                    <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{1.000000,-20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,10.000000}}"/>
+                    <Property Name="MaxTextLength" Value="8" />
+                    <Property Name="Text" Value="" />
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="FuQi_Title_XiuGai_Frame">
+                <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,42.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,50.000000}}"/>
+                <!-- <Window Type="TLBB_SimpleTextFrame" Name="FuQi_Title_Text3">
+                    <Property Name="Position" Value="x:-0.065789 y:-0.025000" />
+                    <Property Name="Size" Value="w:0.385965 h:0.900000" />
+                    <Property Name="TextColor" Value="FFFFF263" />
+                    <Property Name="HorzFormatting" Value="RightAligned" />
+                    <Property Name="VertFormatting" Value="VertCentred" />
+                </Window> -->
+                <Window Type="TLBB_Frame_Lace2" Name="FuQi_Title_XiuGai_Name_BK">
+                    <Property Name="UnifiedSize" Value="{{0.40000,0.000000},{1.000000,-20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.00000,15.000000},{0.000000,10.000000}}"/>
+                    <Window Type="TLBB_SimpleText" Name="FuQi_Title_XiuGai_Text">
+                        <Property Name="UnifiedSize" Value="{{1.00000,0.000000},{1.000000,0.000000}}"/>
+                        <Property Name="TextColor" Value="FFFFF263" />
+                        <Property Name="Text" Value="" />
+                        <Property Name="HorzFormatting" Value="HorzCentred" />
+                        <Property Name="VertFormatting" Value="VertCentred" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_EditBoxNormal" Name="FuQi_Title_XiuGai_Input">
+                    <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{1.000000,-20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,10.000000}}"/>
+                    <Property Name="MaxTextLength" Value="8" />
+                    <Property Name="Text" Value="" />
+                </Window>
+
+                <Window Type="TLBB_SimpleText" Name="FuQi_Title_XiuGai_Info">
+                    <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{1.000000,-20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-8.000000},{0.000000,10.000000}}"/>
+                    <Property Name="Text" Value="" />
+                    <Property Name="TextColor" Value="FFFFF263" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="VertFormatting" Value="VertCentred" />
+                </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace5" Name="FuQi_Title_Blank">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+            </Window>
+            <Window Type="TLBB_Affection_ButtonCommon" Name="FuQi_Title_OK">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,22.000000}}"/>
+                <Property Name="Text" Value="#{FQCH_20230330_29}" />
+                <Event Name="Clicked" Function="FuQi_Title_Accept()" />
+            </Window>
+            <Window Type="TLBB_Affection_ButtonCommon" Name="FuQi_Title_Cancel">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,22.000000}}"/>
+                <Property Name="Text" Value="#{FQCH_20230330_28}" />
+                <Event Name="Clicked" Function="FuQi_Title_Cancel()" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

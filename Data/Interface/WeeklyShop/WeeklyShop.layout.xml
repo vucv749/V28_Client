@@ -1,0 +1,535 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="WeeklyShop_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,340.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.120000,0.000000}}"/>
+    <Event Name="Hidden" Function="WeeklyShop_Close();" />
+    <Window Type="TLBB_DragTitle" Name="WeeklyShop_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="Text" Value="#{SDHDRW_220808_09}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="WeeklyShop_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="WeeklyShop_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="WeeklyShop_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="WeeklyShop_Close();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="WeeklyShop_Background_Frame1">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,36.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_SimpleText" Name="WeeklyShop_Total_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,6.000000}}"/>
+        <Property Name="Text" Value="#{SDHDRW_220808_05}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_ButtonCheck" Name="WeeklyShop_Buy">
+        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,10.000000}}"/>
+        <Property Name="CheckMode" Value="0" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="WeeklyShop_querengoumai_Clicked();"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="WeeklyShop_Buy_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{0.000000,6.000000}}"/>
+        <Property Name="Text" Value="#{SDHDRW_220808_10}" />
+        <Property Name="Tooltip" Value="#{INTERFACE_XML_SHOP_QUREN2}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+      </Window>
+      <Window Type="DefaultWindow" Name="WeeklyShop_Action_Set">
+        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,230.0000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,30.000000}}"/>
+        <Window Type="TLBB_ActionButton" Name="WeeklyShop_Item1">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Event Name="Clicked" Function="WeeklyShop_Btn_Clicked(1);" />
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_Item_Amount1">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="WeeklyShop_Item_Amount1_Discount">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="WeeklyShop_Item2">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,39.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Event Name="Clicked" Function="WeeklyShop_Btn_Clicked(2);" />
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_Item_Amount2">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="WeeklyShop_Item_Amount2_Discount">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="WeeklyShop_Item3">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,77.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Event Name="Clicked" Function="WeeklyShop_Btn_Clicked(3);" />
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_Item_Amount3">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="WeeklyShop_Item_Amount3_Discount">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="WeeklyShop_Item4">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,115.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Event Name="Clicked" Function="WeeklyShop_Btn_Clicked(4);" />
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_Item_Amount4">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="WeeklyShop_Item_Amount4_Discount">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="WeeklyShop_Item5">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,153.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Event Name="Clicked" Function="WeeklyShop_Btn_Clicked(5);" />
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_Item_Amount5">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="WeeklyShop_Item_Amount5_Discount">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="WeeklyShop_Item6">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,191.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Event Name="Clicked" Function="WeeklyShop_Btn_Clicked(6);" />
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_Item_Amount6">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="WeeklyShop_Item_Amount6_Discount">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="WeeklyShop_Item7">
+          <Property Name="UnifiedPosition" Value="{{0.000000,164.000000},{0.000000,1.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Event Name="Clicked" Function="WeeklyShop_Btn_Clicked(7);" />
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_Item_Amount7">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="WeeklyShop_Item_Amount7_Discount">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="WeeklyShop_Item8">
+          <Property Name="UnifiedPosition" Value="{{0.000000,164.000000},{0.000000,39.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Event Name="Clicked" Function="WeeklyShop_Btn_Clicked(8);" />
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_Item_Amount8">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="WeeklyShop_Item_Amount8_Discount">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="WeeklyShop_Item9">
+          <Property Name="UnifiedPosition" Value="{{0.000000,164.000000},{0.000000,77.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Event Name="Clicked" Function="WeeklyShop_Btn_Clicked(9);" />
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_Item_Amount9">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="WeeklyShop_Item_Amount9_Discount">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="WeeklyShop_Item10">
+          <Property Name="UnifiedPosition" Value="{{0.000000,164.000000},{0.000000,115.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Event Name="Clicked" Function="WeeklyShop_Btn_Clicked(10);" />
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_Item_Amount10">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="WeeklyShop_Item_Amount10_Discount">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="WeeklyShop_Item11">
+          <Property Name="UnifiedPosition" Value="{{0.000000,164.000000},{0.000000,153.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Event Name="Clicked" Function="WeeklyShop_Btn_Clicked(11);" />
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_Item_Amount11">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="WeeklyShop_Item_Amount11_Discount">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="WeeklyShop_Item12">
+          <Property Name="UnifiedPosition" Value="{{0.000000,164.000000},{0.000000,191.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Event Name="Clicked" Function="WeeklyShop_Btn_Clicked(12);" />
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_Item_Amount12">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="WeeklyShop_Item_Amount12_Discount">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame20 image:Item_Discount"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WeeklyShop_ItemInfo1">
+          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo1_Text">
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="Text" Value="#{INTERFACE_XML_909}" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo1_GB">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,113.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WeeklyShop_ItemInfo2">
+          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo2_Text">
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo2_GB">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,113.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WeeklyShop_ItemInfo3">
+          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo3_Text">
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo3_GB">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,113.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WeeklyShop_ItemInfo4">
+          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,114.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo4_Text">
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo4_GB">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,113.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WeeklyShop_ItemInfo5">
+          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,152.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo5_Text">
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo5_GB">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,113.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WeeklyShop_ItemInfo6">
+          <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,190.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo6_Text">
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo6_GB">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,113.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WeeklyShop_ItemInfo7">
+          <Property Name="UnifiedPosition" Value="{{0.000000,202.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo7_Text">
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo7_GB">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,113.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WeeklyShop_ItemInfo8">
+          <Property Name="UnifiedPosition" Value="{{0.000000,202.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo8_Text">
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo8_GB">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,113.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WeeklyShop_ItemInfo9">
+          <Property Name="UnifiedPosition" Value="{{0.000000,202.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo9_Text">
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo9_GB">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,113.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WeeklyShop_ItemInfo10">
+          <Property Name="UnifiedPosition" Value="{{0.000000,202.000000},{0.000000,114.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo10_Text">
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo10_GB">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,113.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WeeklyShop_ItemInfo11">
+          <Property Name="UnifiedPosition" Value="{{0.000000,202.000000},{0.000000,152.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo11_Text">
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo11_GB">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,113.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WeeklyShop_ItemInfo12">
+          <Property Name="UnifiedPosition" Value="{{0.000000,202.000000},{0.000000,190.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo12_Text">
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WeeklyShop_ItemInfo12_GB">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,113.000000},{0.000000,18.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="WeeklyShop_Bk">
+        <Property Name="Visible" Value="False"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+        <Window Type="TLBB_ButtonCommon2" Name="WeeklyShop_UpPage">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{INTERFACE_XML_499}" />
+          <Event Name="Clicked" Function="WeeklyShop_PageUp();" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="WeeklyShop_CurrentlyPage">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="999/999" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_ButtonCommon2" Name="WeeklyShop_DownPage">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{INTERFACE_XML_325}" />
+          <Event Name="Clicked" Function="WeeklyShop_PageDown();" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

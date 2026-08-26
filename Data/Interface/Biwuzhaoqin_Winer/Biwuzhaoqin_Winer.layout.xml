@@ -1,0 +1,89 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame_Affection0" Name="Biwuzhaoqin_Winer_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,316.000000},{0.000000,286.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-158.000000},{0.500000,-143.000000}}"/>
+        <Window Type="TLBB_TitleLace_Affection1" Name="Biwuzhaoqin_Winer_DragTitleBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-90.000000},{0.000000,11.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_DragTitle" Name="Biwuzhaoqin_Winer_DragTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+            <Property Name="DragTarget" Value="Biwuzhaoqin_Winer_Frame" />
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Winer_PageHeader">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Font" Value="YouYuan11.25" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="Text" Value="#{BWZQ_20230329_375}" />
+            </Window>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="Biwuzhaoqin_Winer_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+            <Property Name="Text" Value="TLBB_ButtonHelp" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Biwuzhaoqin_Winer&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="Biwuzhaoqin_Winer_Close">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+            <Property Name="Text" Value="TLBB_ButtonClose" />
+            <Event Name="Clicked" Function="Biwuzhaoqin_Winer_CancelClick()" />
+        </Window>
+        <Window Type="DefaultWindow" Name="Biwuzhaoqin_Winer_Function_Frame">
+            <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Biwuzhaoqin_Winer_BK">
+                <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,230.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:Biwuzhaoqin image:BWZQ_diban2"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Winer_Text">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,70.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,126.000000}}"/>
+                <Property Name="Text" Value="#{BWZQ_20230329_380}" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+            </Window>
+            <Window Type="DefaultWindow" Name="Biwuzhaoqin_Winer_InfoBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,302.000000},{0.000000,120.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,0.000000}}"/>
+                <Window Type="TLBB_StaticImageNULL" Name="Biwuzhaoqin_Winer_InfoBK1">
+                    <Property Name="UnifiedSize" Value="{{0.000000,223.000000},{0.000000,83.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,23.000000},{0.000000,20.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Image" Value="set:Biwuzhaoqin image:BWZQ_huoshengzhe"/>
+                    <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Winer_Info2">
+                        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,30.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{0.000000,53.000000}}"/>
+                        <Property Name="Text" Value="#{BWZQ_20230329_378}" />
+                        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Biwuzhaoqin_Winer_InfoBK2">
+                    <Property Name="UnifiedSize" Value="{{0.000000,155.000000},{0.000000,57.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,18.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Image" Value="set:Biwuzhaoqin image:BWZQ_weijinxing"/>
+                </Window>
+
+
+            </Window>
+            <Window Type="TLBB_Affection_ButtonCommon" Name="Biwuzhaoqin_Winer_OK">
+                <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{1.000000,-28.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}"/>
+                <Property Name="Text" Value="#{BWZQ_20230329_383}" />
+                <Event Name="Clicked" Function="Biwuzhaoqin_Winer_Accept()" />
+            </Window>
+            <Window Type="TLBB_Affection_ButtonCommon" Name="Biwuzhaoqin_Winer_Cancel">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-130.000000},{1.000000,-28.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,22.000000}}"/>
+                <Property Name="Text" Value="#{BWZQ_20230329_73}" />
+                <Event Name="Clicked" Function="Biwuzhaoqin_Winer_CancelClick()" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

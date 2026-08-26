@@ -1,0 +1,266 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame_Frozen2" Name="Frozen_GeCao_Result_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,560.000000},{0.000000,370.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-280.000000},{0.500000,-185.000000}}"/>
+      <Window Type="DefaultWindow" Name="Frozen_GeCao_Result_DragTitleBK">
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,19.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.000000,3.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+		<Window Type="TLBB_DragTitle" Name="Frozen_GeCao_Result_DragTitle">
+			<Property Name="UnifiedSize" Value="{{1.000000,-48.000000},{0.000000,20.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,2.000000}}"/>
+			<Property Name="Text" Value="#{BXDR_20240920_203}"/>
+			<Property Name="Font" Value="YouYuan11.25"/>
+			<Property Name="DragTarget" Value="Frozen_GeCao_Result_Frame"/>
+		</Window>    
+		<Window Type="DefaultWindow" Name="Frozen_GeCao_Result_Client">
+			<Property Name="UnifiedSize" Value="{{1.000000,-18.000000},{0.000000,287.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,28.000000}}"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Window Type="TLBB_Frame_Lace3" Name="Frozen_GeCao_Result_List_Frame">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-3.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+				<Window Type="TLBB_MultiColumnList" Name="Frozen_GeCao_Result_ListTitleBK">
+					<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,4.000000}}"/>
+					<Property Name="ForceHorzScrollbar" Value="False" />
+					<Property Name="SortSettingEnabled" Value="False" />
+					<Property Name="SelectionMode" Value="RowSingle" />
+					<Property Name="ColumnHeader" Value="text: width:0.25 id:0" />
+					<Property Name="ColumnHeader" Value="text: width:0.25 id:1" />
+					<Property Name="ColumnHeader" Value="text: width:0.25 id:2" />
+					<Property Name="ColumnHeader" Value="text: width:0.25 id:3" />
+					<Property Name="ColumnsSizable" Value="False" />
+					<Property Name="ColumnsMovable" Value="False" />
+					<Property Name="ColumnsAdjust" Value="True" />
+					<Window Type="DefaultWindow" Name="Frozen_GeCao_Result_ListTitle">
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+						<Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Result_Title_Rank">
+							<Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="Text" Value="#{BXDR_20240920_210}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Result_Title_Name">
+							<Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.250000,0.000000},{0.000000,2.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="Text" Value="#{BXDR_20240920_211}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Result_Title_Score">
+							<Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,2.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="Text" Value="#{BXDR_20240920_212}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Result_Title_Icon">
+							<Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.750000,0.000000},{0.000000,2.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="Text" Value="#{BXDR_20240920_213}"/>
+						</Window>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="Frozen_GeCao_Result_List">
+				<Property Name="AlwaysOnTop" Value="True"/>
+				<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-36.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,29.000000}}"/>
+				<Window Type="TLBB_Frame_Lace2" Name="Frozen_GeCao_Result_Camp1">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,50.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,0.000000}}"/> 
+					<Window Type="TLBB_StaticImageNULL" Name="Frozen_GeCao_Result_Camp1_My">
+						<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,31.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.250000,100.000000},{0.500000,-15.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_MY2"/>
+					</Window> 
+					<Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Result_Camp1_Rank">
+						<Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="#{BXDR_20240920_135}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="RiseOnClick" Value="False"/>
+					</Window>              
+					<Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Result_Camp1_Text1">
+						<Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.250000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="#{BXDR_20240920_140}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="RiseOnClick" Value="False"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Result_Camp1_Text2">
+						<Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="#{BXDR_20240920_131}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="RiseOnClick" Value="False"/>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="Frozen_GeCao_Result_Camp1_Icon">
+						<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.7500000,49.000000},{0.500000,-20.000000}}"/>
+					</Window>
+				</Window>
+				<Window Type="TLBB_Frame_Lace2" Name="Frozen_GeCao_Result_Camp2">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,50.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,50.000000}}"/> 
+					<Window Type="TLBB_StaticImageNULL" Name="Frozen_GeCao_Result_Camp2_My">
+						<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,31.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.250000,100.000000},{0.500000,-15.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_MY2"/>
+					</Window>    
+					<Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Result_Camp2_Rank">
+						<Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="#{BXDR_20240920_136}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="RiseOnClick" Value="False"/>
+					</Window>                 
+					<Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Result_Camp2_Text1">
+						<Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.250000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="#{BXDR_20240920_140}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="RiseOnClick" Value="False"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Result_Camp2_Text2">
+						<Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="#{BXDR_20240920_131}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="RiseOnClick" Value="False"/>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="Frozen_GeCao_Result_Camp2_Icon">
+						<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.7500000,49.000000},{0.500000,-20.000000}}"/>
+					</Window>
+				</Window>
+				<Window Type="TLBB_Frame_Lace2" Name="Frozen_GeCao_Result_Camp3">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,50.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,100.000000}}"/> 
+					<Window Type="TLBB_StaticImageNULL" Name="Frozen_GeCao_Result_Camp3_My">
+						<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,31.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.250000,100.000000},{0.500000,-15.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_MY2"/>
+					</Window> 
+					<Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Result_Camp3_Rank">
+						<Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="#{BXDR_20240920_137}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="RiseOnClick" Value="False"/>
+					</Window>                
+					<Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Result_Camp3_Text1">
+						<Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.250000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="#{BXDR_20240920_140}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="RiseOnClick" Value="False"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Result_Camp3_Text2">
+						<Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="#{BXDR_20240920_131}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="RiseOnClick" Value="False"/>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="Frozen_GeCao_Result_Camp3_Icon">
+						<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.7500000,49.000000},{0.500000,-20.000000}}"/>
+					</Window>
+				</Window>		
+				<Window Type="TLBB_Frame_Lace2" Name="Frozen_GeCao_Result_Camp4">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,50.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,150.000000}}"/> 
+					<Window Type="TLBB_StaticImageNULL" Name="Frozen_GeCao_Result_Camp4_My">
+						<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,31.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.250000,100.000000},{0.500000,-15.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_MY2"/>
+					</Window>     
+					<Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Result_Camp4_Rank">
+						<Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="#{BXDR_20240920_138}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="RiseOnClick" Value="False"/>
+					</Window>            
+					<Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Result_Camp4_Text1">
+						<Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.250000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="#{BXDR_20240920_140}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="RiseOnClick" Value="False"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Result_Camp4_Text2">
+						<Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="#{BXDR_20240920_131}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="RiseOnClick" Value="False"/>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="Frozen_GeCao_Result_Camp4_Icon">
+						<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.7500000,49.000000},{0.500000,-20.000000}}"/>
+					</Window>
+				</Window>	
+				<Window Type="TLBB_Frame_Lace2" Name="Frozen_GeCao_Result_Camp5">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,50.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,200.000000}}"/> 
+					<Window Type="TLBB_StaticImageNULL" Name="Frozen_GeCao_Result_Camp5_My">
+						<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,31.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.250000,100.000000},{0.500000,-15.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_MY2"/>
+					</Window>       
+					<Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Result_Camp5_Rank">
+						<Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="#{BXDR_20240920_139}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="RiseOnClick" Value="False"/>
+					</Window>            
+					<Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Result_Camp5_Text1">
+						<Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.250000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="#{BXDR_20240920_140}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="RiseOnClick" Value="False"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Result_Camp5_Text2">
+						<Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="#{BXDR_20240920_131}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="RiseOnClick" Value="False"/>
+					</Window>
+					<Window Type="TLBB_ActionButton" Name="Frozen_GeCao_Result_Camp5_Icon">
+						<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.7500000,49.000000},{0.500000,-20.000000}}"/>
+					</Window>
+				</Window>
+			</Window>			
+		</Window>
+		<Window Type="TLBB_Frame_Lace2" Name="Frozen_GeCao_Result_TopList_infoBK">
+			<Property Name="UnifiedSize" Value="{{1.000000,-19.000000},{0.000000,48.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{1.000000,-55.000000}}"/>
+			<Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Result_TopList_info">
+				<Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,0.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}}"/>
+				<Property Name="Text" Value="#{BXDR_20240920_145}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

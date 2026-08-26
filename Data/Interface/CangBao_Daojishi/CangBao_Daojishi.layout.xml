@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_FrameY" Name="CangBao_Daojishi">
+    <Property Name="UnifiedSize" Value="{{0.000000,304.000000},{0.000000,190.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-304.000000},{0.500000,70.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="CangBao_Daojishi_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-64.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,0.000000}}"/>
+      <Property Name="DragTarget" Value="CangBao_Daojishi" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="Title" />
+      <Property Name="Text" Value="#{ZDBT_240703_74}" />
+    </Window>
+    <Window Type="DefaultWindow" Name="CangBao_Daojishi_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-50.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,24.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_StaticImageNULL" Name="CangBao_Daojishi_Up">
+        <Property Name="UnifiedSize" Value="{{0.000000,292.000000},{0.000000,64.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:CangBao image:CangBao_levelBK"/>
+        <Window Type="TLBB_SimpleText" Name="CangBao_Daojishi_Text2">
+          <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,26.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_76}" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CangBao_Daojishi_Text3_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,68.000000},{0.000000,16.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_330}"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CangBao_Daojishi_Text3">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,36.000000}}"/>
+          <Property Name="Text" Value="#{YMMJ_230626_60}"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="CangBao_Daojishi_AwardBrn">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,218.000000},{1.000000,-28.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_233}"/>
+          <Event Name="Clicked" Function="CangBao_Daojishi_ShowItem();"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_Daojishi_Progressbk">
+          <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,6.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,62.0000000},{0.000000,42.000000}}" />
+          <Window Type="TLBB_ProgressPropertyTan" Name="CangBao_Daojishi_Progress">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.0000000},{0.000000,0.000000}}" />
+            <Property Name="CurrentProgress" Value="1.0" />
+            <Property Name="EffectColor" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="EffectColorLevel" Value="index:0 tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="MoveSpeed" Value="1" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="CangBao_Daojishi_Down">
+        <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,74.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-74.000000}}"/>
+        <Window Type="DefaultWindow" Name="CangBao_Daojishi_Pair_Title">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="TLBB_SimpleText" Name="CangBao_Daojishi_Pair_Title1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{.000000,18.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="Text" Value="#{ZDBT_240703_272}" />
+            <Property Name="Font" Value="YouYuan13"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CangBao_Daojishi_Pair_Text1">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,24.000000}}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="Text" Value="#{ZDBT_240703_89}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CangBao_Daojishi_Pair_Text2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,44.000000}}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Text" Value="#{ZDBT_240703_80}" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TLBB_Frame_Lace2" Name="CangBao_Daojishi_Pair_Text3BK">
+      <Property Name="UnifiedSize" Value="{{1.000000,-11.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.000000,-24.000000}}" />
+      <Property Name="RiseOnClick" Value="False"/>
+    <Window Type="TLBB_SimpleText" Name="CangBao_Daojishi_Pair_Text3">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="Text" Value="#{ZDBT_240703_91}" />
+    </Window>
+    </Window>
+    <Window Type="TLBB_StopWatch" Name="CangBao_Daojishi_Time">
+      <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{1.000000,-24.000000}}" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="Text" Value="00:00" />
+    </Window>
+  </Window>
+</GUILayout>

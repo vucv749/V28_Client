@@ -1,0 +1,192 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="Synthesize_Lingyu_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,330.000000},{0.000000,324.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.350000,0.000000},{0.120000,0.000000}}"/>
+    <Event Name="Shown" Function="Synthesize_Lingyu_OnShown();" />
+    <Event Name="Hidden" Function="Synthesize_Lingyu_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="Synthesize_Lingyu_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="Synthesize_Lingyu_Frame" />
+      <Window Type="TLBB_SimpleText" Name="Synthesize_Lingyu_PageHeader_Name">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SZXT_221216_82}" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Synthesize_Lingyu_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Synthesize_Lingyu&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Synthesize_Lingyu_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="Synthesize_Lingyu_Cancel_Clicked();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Synthesize_Lingyu_Text_Frame">
+      <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_ListBoxCommon" Name="Synthesize_Lingyu_Item_List">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,128.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,4.000000}}"/>
+        <Event Name="ItemSelectionChanged" Function="Synthesize_Lingyu_ListBox_Selected();" />
+      </Window>
+      <Window Type="DefaultWindow" Name="Synthesize_Lingyu_Item_Frame">
+        <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,132.000000}}"/>
+        <Window Type="TLBB_ActionButton" Name="Synthesize_Lingyu_Item">
+          <Property Name="Position" Value="x:0.0 y:0.0" />
+          <Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Synthesize_Lingyu_Amount">
+          <Property Name="UnifiedPosition" Value="{{0.0,3.000000},{0.0,20.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.0,30.000000},{0.000000,15.000000}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="1/99" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Synthesize_Lingyu_Item_Name_Text">
+          <Property Name="UnifiedPosition" Value="{{0.0,36.000000},{0.0,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,-36.000000},{0.000000,36.000000}" />
+          <Property Name="Text" Value="#{INTERFACE_XML_552}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Synthesize_Lingyu_Material_Text">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,168.000000}}"/>
+        <Property Name="Text" Value="#{INTERFACE_XML_672}" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="DefaultWindow" Name="Synthesize_Lingyu_MaterialIcon1_Frame">
+        <Property Name="UnifiedSize" Value="{{0.500000,-2.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,188.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_StaticImageNULL" Name="Synthesize_Lingyu_MaterialIcon1_Bk">
+          <Property Name="Position" Value="x:0.0 y:0.0" />
+          <Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Image" Value="set:CommonItem image:ActionBK" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Synthesize_Lingyu_MaterialIcon1">
+          <Property Name="Position" Value="x:0.0 y:0.0" />
+          <Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="TLBB_StaticImageNULL" Name="Synthesize_Lingyu_MaterialIcon1_Mask">
+            <Property Name="Position" Value="x:0 y:0" />
+            <Property Name="Size" Value="w:1 h:1" />
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Synthesize_Lingyu_MaterialIcon1_Amount">
+          <Property Name="UnifiedPosition" Value="{{0.0,3.000000},{0.0,20.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.0,30.000000},{0.000000,15.000000}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="1/9" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Synthesize_Lingyu_Material1_Name_Text">
+          <Property Name="UnifiedPosition" Value="{{0.0,36.000000},{0.0,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,-36.000000},{0.000000,36.000000}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="Text" Value="#{INTERFACE_XML_552}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Synthesize_Lingyu_MaterialIcon2_Frame">
+        <Property Name="UnifiedSize" Value="{{0.500000,-2.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,188.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_StaticImageNULL" Name="Synthesize_Lingyu_MaterialIcon2_Bk">
+          <Property Name="Position" Value="x:0.0 y:0.0" />
+          <Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Image" Value="set:CommonItem image:ActionBK" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Synthesize_Lingyu_MaterialIcon2">
+          <Property Name="Position" Value="x:0.0 y:0.0" />
+          <Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Event Name="RBClicked" Function="Synthesize_Lingyu_OnSpecialItemRClicked()" />
+          <Property Name="DragAcceptName" Value="W35" />
+          <Window Type="TLBB_StaticImageNULL" Name="Synthesize_Lingyu_MaterialIcon2_Mask">
+            <Property Name="Position" Value="x:0 y:0" />
+            <Property Name="Size" Value="w:1 h:1" />
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Synthesize_Lingyu_MaterialIcon2_Amount">
+          <Property Name="UnifiedPosition" Value="{{0.0,3.000000},{0.0,20.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.0,30.000000},{0.000000,15.000000}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="99/99" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Synthesize_Lingyu_Material2_Name_Text">
+          <Property Name="UnifiedPosition" Value="{{0.0,36.000000},{0.0,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,-36.000000},{0.000000,36.000000}" />
+          <Property Name="Text" Value="#{INTERFACE_XML_552}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="TextColor" Value="FFFFF263" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Synthesize_Lingyu_SpecialMaterial_Text">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,224.000000}}"/>
+        <Property Name="Text" Value="#{SZXT_221216_90}" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="TextColor" Value="FFE6BA00" />
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="Synthesize_Lingyu_Blank">
+        <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-160.000000},{0.000000,20.000000}" />
+        <Property Name="RiseOnClick" Value="False" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Synthesize_Lingyu_Make">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_870}" />
+        <Event Name="Clicked" Function="Synthesize_Lingyu_Do_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Synthesize_Lingyu_Refuse">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_301}" />
+        <Event Name="Clicked" Function="Synthesize_Lingyu_Cancel_Clicked();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

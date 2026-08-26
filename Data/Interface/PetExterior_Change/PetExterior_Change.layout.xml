@@ -1,0 +1,259 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame1" Name="PetExterior_Change_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,538.000000},{0.000000,404.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-269.000000},{0.500000,-202.000000}" />
+		<Event Name="Hidden" Function="PetExterior_Change_OnHidden();" />		
+		<Window Type="TLBB_DragTitle" Name="PetExterior_Change_DragTitle">
+			<Property Name="AbsolutePosition" Value="x:40.000000 y:8.000000" />
+			<Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+			<Property Name="DragTarget" Value="PetExterior_Change_Frame" />
+			<Property Name="Font" Value="YouYuan11.25" />
+			<Property Name="HorzFormatting" Value="HorzCentred" />
+			<Property Name="VertFormatting" Value="VertCentred" />
+			<Property Name="Text" Value="#{ZSHF_20230705_38}" />
+		</Window>
+		<Window Type="TLBB_ButtonHelp" Name="PetExterior_Change_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+			<Property Name="Text" Value="TLBB_ButtonHelp" />
+			<Event Name="Clicked" Function='' />
+		</Window>
+		<Window Type="TLBB_ButtonClose" Name="PetExterior_Change_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+			<Property Name="Text" Value="TLBB_ButtonClose" />
+			<Event Name="Clicked" Function="PetExterior_Change_Close_Window();" />
+		</Window>
+    <Window Type="TLBB_FramePet" Name="PetExterior_Change_FakeObject_Frame" >
+      <Property Name="UnifiedSize" Value="{{0.000000,282.000000},{0.000000,308.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,34.000000}}"/>
+      <Property Name="RiseOnClick" Value="False" />
+      <Window Type="TLBB_ComboList" Name="PetExterior_Change_Choose_Select">
+        <Property Name="UnifiedPosition" Value="{{0.500000,-44.000000},{0.000000,32.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,20.000000}" />
+        <Event Name="ListSelectionAccepted" Function="PetExterior_Change_OnSelectPet();"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="PetExterior_Change_Pet_Grow2">
+        <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,15.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,31.000000}}"/>
+        <Property Name="Text" Value="#{ZSHP_190716_06}" />
+        <Property Name="TextColor" Value="FF000000"/>
+        <Property Name="Visible" Value="False"/>
+      </Window>
+      <Window Type="TLBB_MeshWindow" Name="PetExterior_Change_FakeObject" >
+        <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{1.000000,-66.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,54.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="ShowControl" Value="PetExterior_Change_Frame" />
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="PetExterior_Change_FakeObject_Frame_PetHead" >
+        <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-34.000000},{0.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:CommonItem image:PetFrame_Head" />
+        <Property Name="RiseOnClick" Value="False" />
+      </Window>
+      <Window Type="TLBB_ButtonTurnLeft" Name="PetExterior_Change_Model_TurnLeft" >
+        <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,258.000000}}"/>
+        <Event Name="CaptureLost" Function="PetExterior_Change_Pet_Modle_TurnLeft(0)" />
+        <Event Name="MouseButtonDown" Function="PetExterior_Change_Pet_Modle_TurnLeft(1)" />
+        <Event Name="MouseButtonUp" Function="PetExterior_Change_Pet_Modle_TurnLeft(0)" />
+      </Window>
+      <Window Type="TLBB_ButtonTurnRight" Name="PetExterior_Change_Model_TurnRight" >
+        <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-49.000000},{0.000000,258.000000}}"/>
+        <Event Name="CaptureLost" Function="PetExterior_Change_Pet_Modle_TurnRight(0)" />
+        <Event Name="MouseButtonDown" Function="PetExterior_Change_Pet_Modle_TurnRight(1)" />
+        <Event Name="MouseButtonUp" Function="PetExterior_Change_Pet_Modle_TurnRight(0)" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="PetExterior_Change_Pet_Name">
+        <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,15.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-90.000000},{1.000000,-50.000000}}"/>
+        <Property Name="Text" Value=""/>
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="PetExterior_Change_Pet_BianYi">
+        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,15.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{1.000000,-28.000000}}"/>
+        <Property Name="Text" Value=""/>
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="PetExterior_Change_Pet_Choose_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,15.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,34.000000}}"/>
+        <Property Name="Text" Value="#{ZSHF_20230705_143}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+	</Window>
+    <Window Type="TLBB_SimpleText" Name="PetExterior_Change_SkinListTitle">
+      <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,24.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,290.000000},{0.000000,36.000000}}"/>
+      <Property Name="Text" Value="#{ZSHF_20230705_113}"/>
+      <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      <Window Type="TLBB_ButtonCommon" Name="PetExterior_Change_Delete">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,0.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}"/>
+        <Property Name="Text" Value="#{ZSHF_20230705_94}" />
+        <Property Name="Tooltip" Value="#{ZSHF_20230705_121}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="PetExterior_Change_Delete_Clicked();" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_Frame_Lace1" Name="PetExterior_Change_SkinListBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,248.000000},{0.000000,304.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,284.000000},{0.000000,58.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Window Type="TLBB_ButtonPageUp" Name="PetExterior_Change_Page1">
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{ZSHF_20230705_145}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="Clicked" Function="PetExterior_Change_Page_Clicked(0);"/>
+      </Window>
+      <Window Type="TLBB_ButtonPageUp" Name="PetExterior_Change_Page2">
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{ZSHF_20230705_40}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="Clicked" Function="PetExterior_Change_Page_Clicked(11);"/>
+      </Window>
+      <Window Type="TLBB_ButtonPageUp" Name="PetExterior_Change_Page3">
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,122.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{ZSHF_20230705_41}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="Clicked" Function="PetExterior_Change_Page_Clicked(12);"/>
+      </Window>
+      <Window Type="TLBB_ButtonPageUp" Name="PetExterior_Change_Page4">
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{ZSHF_20230705_42}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="Clicked" Function="PetExterior_Change_Page_Clicked(13);"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_NotSuperList" Name="PetExterior_Change_SkinList">
+      <Property Name="UnifiedSize" Value="{{0.000000,248.000000},{0.000000,280.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,284.000000},{0.000000,78.000000}}"/>
+	  <Property Name="SelectMode" Value="Single" />
+      <Property Name="VScrollMode" Value="Auto"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="MultiColumn" Value="1" />
+      <Window Type="TLBB_NotSuperListItemCommon" Name="PetExterior_Change_SkinList_Clent">
+        <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,8.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="PetExterior_Change_SkinList_ItemBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+          <Property Name="Image" Value="set:Ach image:Ach_AchIconBack"/>
+          <Window Type="TLBB_ActionButton" Name="PetExterior_Change_SkinList_Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="PetExterior_Change_SkinList_Item_Tips1">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,36.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-2.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shiyongzhong"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="PetExterior_Change_SkinList_Item_Tips2">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,29.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-2.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_yulan"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="PetExterior_Change_SkinList_ItemRed">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="PetExterior_Change_SkinList_ItemNew">
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-14.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_xin"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="PetExterior_Change_SkinList_ItemLevel">
+              <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{1.000000,-14.000000}}"/>
+              <Property Name="Text" Value="95"/>
+              <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetExterior_Change_PetData1">
+      <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,18.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,344.000000}}"/>
+      <Property Name="Text" Value="" />
+      <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+    </Window>
+    <Window Type="TLBB_SimpleText" Name="PetExterior_Change_PetData1Type">
+      <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,344.000000}}"/>
+      <Property Name="Text" Value="#{ZSHF_20230705_144}" />
+      <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+    </Window>
+    <Window Type="TLBB_SimpleMulitiTextFrame" Name="PetExterior_Change_PetData2">
+      <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,18.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,144.000000},{0.000000,344.000000}}"/>
+      <Property Name="Text" Value="" />
+      <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+    </Window>
+    <Window Type="TLBB_SimpleText" Name="PetExterior_Change_PetData2Type">
+      <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,344.000000}}"/>
+      <Property Name="Text" Value="#{ZSHF_20230705_39}" />
+      <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="PetExterior_Change_OK">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-124.000000},{1.000000,-40.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}"/>
+      <Property Name="Text" Value="#{ZSHF_20230705_95}" />
+      <Property Name="Tooltip" Value="#{ZSHF_20230705_146}"/>
+      <Event Name="Clicked" Function="PetExterior_Change_OK_Clicked();" />
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="PetExterior_Change_Cancel">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{1.000000,-40.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}"/>
+      <Property Name="Text" Value="#{ZSHF_20230705_96}" />
+      <Property Name="Tooltip" Value="#{ZSHF_20230705_147}"/>
+      <Event Name="Clicked" Function="PetExterior_Change_Cancel_Clicked();" />
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="PetExterior_Change_Goto">
+      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.000000,-40.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,22.000000}}"/>
+      <Property Name="Text" Value="前往拓形" />
+      <Property Name="Tooltip" Value="#{ZSHF_20230705_152}"/>
+      <Event Name="Clicked" Function="PetExterior_Change_Goto_Clicked();" />
+    </Window>
+	</Window>
+</GUILayout>

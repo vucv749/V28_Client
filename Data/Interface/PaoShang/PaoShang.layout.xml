@@ -1,0 +1,660 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="PaoShang_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,610.000000},{0.000000,420.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-305.000000},{0.500000,-210.000000}}"/>
+    <Event Name="Hidden" Function="PaoShang_OnClose();" />
+    <Window Type="TLBB_DragTitle" Name="PaoShang_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,26.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,8.000000}}" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="DragTarget" Value="PaoShang_Frame" />
+      <Property Name="Font" Value="Title" />
+      <Property Name="Text" Value="#{PSGN_180327_23}" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="PaoShang_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonClose"/>
+      <Event Name="Clicked" Function="PaoShang_OnClose();"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="PaoShang__Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonHelp"/>
+      <Event Name="Clicked" Function="Helper:GotoHelper('*HJTopList');"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="PaoShang_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{1.000000,-50.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,30.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_Frame_Lace2" Name="PaoShang_Left">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{1.000000,-6.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,3.000000}}"/>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="PaoShang_Name_TitleBK1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,3.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="PaoShang_ShangPin_Text1">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.500000,-11.000000}}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="Text" Value="#{PSGN_180327_24}" />
+            <Property Name="Font" Value="Title"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="PaoShang_ShangPin_BK">
+          <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,186.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,32.000000}}"/>
+          <Window Type="TLBB_Look_ButtonCheckFJTX" Name="PaoShang_Action_Set1">
+            <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Event Name="Clicked" Function="PaoShang_OnItemClick(1)"/>
+            <Window Type="TLBB_ActionButton" Name="PaoShang_But1">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,6.000000}}" />
+              <Event Name="Clicked" Function="PaoShang_OnItemClick(1)" />
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="PaoShang_Goumai_Tuijian1">
+              <Property Name="UnifiedSize" Value="{{0.000000,31.000000},{0.000000,27.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,6.000000}}" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseLButtonHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Property Name="Image" Value="set:PaoShang2 image:Cornermark_TuiJian" />
+            </Window>
+            <Window Type="DefaultWindow" Name="PaoShang_ItemInfo1">
+              <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}" />
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseLButtonHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Window Type="TLBB_SimpleText" Name="PaoShang_ItemInfo1_Text">
+                <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,13.000000}}" />
+                <Property Name="Text" Value="最最长的" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="PaoShang_ItemInfo1_Price">
+                <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,18.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,96.000000},{0.000000,13.000000}}" />
+                <Property Name="HorzFormatting" Value="WordWrapCentred" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Look_ButtonCheckFJTX" Name="PaoShang_Action_Set2">
+            <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,62.000000}}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Event Name="Clicked" Function="PaoShang_OnItemClick(2)"/>
+            <Window Type="TLBB_ActionButton" Name="PaoShang_But2">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,6.000000}}" />
+              <Event Name="Clicked" Function="PaoShang_OnItemClick(2)" />
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="PaoShang_Goumai_Tuijian2">
+              <Property Name="UnifiedSize" Value="{{0.000000,31.000000},{0.000000,27.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,6.000000}}" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseLButtonHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Property Name="Image" Value="set:PaoShang2 image:Cornermark_TuiJian" />
+            </Window>
+            <Window Type="DefaultWindow" Name="PaoShang_ItemInfo2">
+              <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}" />
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseLButtonHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Window Type="TLBB_SimpleText" Name="PaoShang_ItemInfo2_Text">
+                <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,13.000000}}" />
+                <Property Name="Text" Value="最最长的" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="PaoShang_ItemInfo2_Price">
+                <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,18.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,96.000000},{0.000000,13.000000}}" />
+                <Property Name="HorzFormatting" Value="WordWrapCentred" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Look_ButtonCheckFJTX" Name="PaoShang_Action_Set3">
+            <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,124.000000}}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Event Name="Clicked" Function="PaoShang_OnItemClick(3)"/>
+            <Window Type="TLBB_ActionButton" Name="PaoShang_But3">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,6.000000}}" />
+              <Event Name="Clicked" Function="PaoShang_OnItemClick(3)" />
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="PaoShang_Goumai_Tuijian3">
+              <Property Name="UnifiedSize" Value="{{0.000000,31.000000},{0.000000,27.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,6.000000}}" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseLButtonHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Property Name="Image" Value="set:PaoShang2 image:Cornermark_TuiJian" />
+            </Window>
+            <Window Type="DefaultWindow" Name="PaoShang_ItemInfo3">
+              <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}" />
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseLButtonHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Window Type="TLBB_SimpleText" Name="PaoShang_ItemInfo3_Text">
+                <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,13.299988}}" />
+                <Property Name="Text" Value="最最长的" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="PaoShang_ItemInfo3_Price">
+                <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,18.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,96.000000},{0.000000,13.000000}}" />
+                <Property Name="HorzFormatting" Value="WordWrapCentred" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace2" Name="PaoShang_ShangPin_MairuiBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,143.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{1.000000,-145.000000}}"/>
+          <Window Type="TLBB_Frame_Lace2" Name="PaoShang_Text3BK">
+            <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="PaoShang_Text3">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{PSGN_180515_129}" />
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+              <Property Name="VertFormatting" Value="VertCentred"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="PaoShang_Str1">
+              <Property Name="UnifiedSize" Value="{{1.000000,-110.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,105.000000},{0.500000,-10.000000}}"/>
+              <Window Type="TLBB_EditBoxNormal" Name="PaoShang_Num1">
+                <Property Name="UnifiedSize" Value="{{1.000000,-42.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.500000,-10.000000}}"/>
+                <Property Name="ValidationString" Value="[0-9]*" />
+                <Property Name="Text" Value="123456" />
+                <Property Name="MaxTextLength" Value="6" />
+                <Property Name="HorizontalAlignment" Value="Left" />
+                <Property Name="DefaultEditBox" Value="True" />
+                <Event Name="TextChanged" Function="PaoShang_ChangeBuyNum()" />
+              </Window>
+              <Window Type="TLBB_ButtonAdd" Name="PaoShang_Addition_Button1">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,0.000000}}"/>
+                <Event Name="Clicked" Function="PaoShang_AutoClick_LButtonUp(1);" />
+                <Event Name="MouseEnter" Function="PaoShang_AutoClick_Clear(1)" />
+                <Event Name="MouseLeave" Function="PaoShang_AutoClick_Clear(1)" />
+                <Event Name="MouseLButtonDown" Function="PaoShang_AutoClick_SetTimer(1)" />
+              </Window>
+              <Window Type="TLBB_ButtonSub" Name="PaoShang_Decrease_Button1">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Event Name="Clicked" Function="PaoShang_AutoClick_LButtonUp(2);" />
+                <Event Name="MouseEnter" Function="PaoShang_AutoClick_Clear(2)" />
+                <Event Name="MouseLeave" Function="PaoShang_AutoClick_Clear(2)" />
+                <Event Name="MouseLButtonDown" Function="PaoShang_AutoClick_SetTimer(2)" />
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="PaoShang_Text1BK">
+            <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,34.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="PaoShang_ZiJin1_Text1">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{PSGN_180515_115}" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="PaoShang_Money1_Need">
+              <Property Name="UnifiedSize" Value="{{1.000000,-110.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,105.000000},{0.500000,-10.000000}}" />
+              <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="PaoShang_Text2BK">
+            <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,59.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="PaoShang_ZiJin1_Text2">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{PSGN_180515_116}" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="PaoShang_Money2_Need">
+              <Property Name="UnifiedSize" Value="{{1.000000,-110.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,105.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+
+          <Window Type="TLBB_ButtonCommon" Name="PaoShang_Button1">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,95.000000}}"/>
+            <Property Name="Text" Value="#{PSGN_180327_26}" />
+            <Event Name="Clicked" Function="PaoShang_Buy()" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="PaoShang_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-120.000000},{1.000000,-20.000000}}"/>
+            <Property Name="Text" Value="#{PSGN_180515_131}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="HorzFormatting" Value="WordWrapCentred" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="PaoShang_Right">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{1.000000,-4.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-300.000000},{0.000000,2.000000}}"/>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="PaoShang_Name_TitleBK2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="PaoShang_Huocang_Text1">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.500000,-11.000000}}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="Text" Value="#{PSGN_180327_21}" />
+            <Property Name="Font" Value="Title"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="PaoShang_HuoCang_BK">
+          <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,186.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,32.000000}}"/>
+          <Window Type="TLBB_Look_ButtonCheckFJTX" Name="PaoShang_Action_Set5">
+            <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,0.000000}}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Event Name="Clicked" Function="PaoShang_OnSellItemClick(4)"/>
+            <Window Type="TLBB_ActionButton" Name="PaoShang_But5">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,6.000000}}" />
+              <Event Name="Clicked" Function="PaoShang_OnSellItemClick(4)" />
+              <Window Type="TLBB_SimpleText" Name="PaoShang_Text5">
+                <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{1.000000,-30.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}" />
+                <Property Name="Text" Value="1/100" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="PaoShang_ItemInfo5">
+              <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseLButtonHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Window Type="TLBB_SimpleText" Name="PaoShang_ItemInfo5_Text">
+                <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,13.000000}}" />
+                <Property Name="Text" Value="最最长的" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="PaoShang_ItemInfo5_Text1">
+                <Property Name="UnifiedSize" Value="{{0.000000,91.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,96.000000},{0.000000,13.000000}}" />
+                <Property Name="Text" Value="最最长的的的" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="PaoShang_Huocang_shuliang5">
+                <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,133.000000},{0.000000,23.000000}}" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                <Property Name="Text" Value="12345" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="PaoShang_Huocang_Text5">
+                <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,5.000000}}" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="Text" Value="#{PSGN_180515_113}" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="PaoShang_Huocang_shuliang5_1">
+                <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,133.000000},{0.000000,3.000000}}" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                <Property Name="Text" Value="12345" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="PaoShang_Huocang_Text5_1">
+                <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,25.000000}}" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="Text" Value="#{PSGN_180515_114}" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Look_ButtonCheckFJTX" Name="PaoShang_Action_Set6">
+            <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,62.000000}}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Event Name="Clicked" Function="PaoShang_OnSellItemClick(5)"/>
+            <Window Type="TLBB_ActionButton" Name="PaoShang_But6">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,6.000000}}" />
+              <Event Name="Clicked" Function="PaoShang_OnSellItemClick(5)" />
+              <Window Type="TLBB_SimpleText" Name="PaoShang_Text6">
+                <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{1.000000,-30.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}" />
+                <Property Name="Text" Value="1/100" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="PaoShang_ItemInfo6">
+              <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}" />
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseLButtonHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Window Type="TLBB_SimpleText" Name="PaoShang_ItemInfo6_Text">
+                <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,13.000000}}" />
+                <Property Name="Text" Value="最最长的" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="PaoShang_ItemInfo6_Text1">
+                <Property Name="UnifiedSize" Value="{{0.000000,91.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,96.000000},{0.000000,13.000000}}" />
+                <Property Name="Text" Value="最最长的的的" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="PaoShang_Huocang_shuliang6">
+                <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,133.000000},{0.000000,23.000000}}" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                <Property Name="Text" Value="12345" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="PaoShang_Huocang_Text6">
+                <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,5.000000}}" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="Text" Value="#{PSGN_180515_113}" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="PaoShang_Huocang_shuliang6_1">
+                <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,133.000000},{0.000000,3.000000}}" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="Text" Value="12345" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="PaoShang_Huocang_Text6_1">
+                <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,25.000000}}" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="Text" Value="#{PSGN_180515_114}" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Look_ButtonCheckFJTX" Name="PaoShang_Action_Set7">
+            <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,124.000000}}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Event Name="Clicked" Function="PaoShang_OnSellItemClick(6)"/>
+            <Window Type="TLBB_ActionButton" Name="PaoShang_But7">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,6.000000}}" />
+              <Event Name="Clicked" Function="PaoShang_OnSellItemClick(6)" />
+              <Window Type="TLBB_SimpleText" Name="PaoShang_Text7">
+                <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{1.000000,-30.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}" />
+                <Property Name="Text" Value="1/100" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="PaoShang_ItemInfo7">
+              <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,48.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}" />
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseLButtonHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Window Type="TLBB_SimpleText" Name="PaoShang_ItemInfo7_Text">
+                <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,13.000000}}" />
+                <Property Name="Text" Value="最最长的" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="PaoShang_ItemInfo7_Text1">
+                <Property Name="UnifiedSize" Value="{{0.000000,91.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,96.000000},{0.000000,13.000000}}" />
+                <Property Name="Text" Value="最最长的的的" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="PaoShang_Huocang_shuliang7">
+                <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,133.000000},{0.000000,23.000000}}" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                <Property Name="Text" Value="12345" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="PaoShang_Huocang_Text7">
+                <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,5.000000}}" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="Text" Value="#{PSGN_180515_113}" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="PaoShang_Huocang_shuliang7_1">
+                <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,133.000000},{0.000000,3.000000}}" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                <Property Name="Text" Value="12345" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="PaoShang_Huocang_Text7_1">
+                <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,25.000000}}" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="Text" Value="#{PSGN_180515_114}" />
+                <Property Name="MouseRButtonHollow" Value="True" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseLButtonHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace2" Name="PaoShang_ShangPin_MaichuBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,143.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-145.000000}}"/>
+          <Window Type="TLBB_Frame_Lace2" Name="PaoShang_Text4BK">
+            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,3.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="PaoShang_Text4">
+              <Property Name="VertFormatting" Value="VertCentred"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{PSGN_180515_244}" />
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            </Window>
+            <Window Type="TLBB_Frame_Lace3" Name="PaoShang_Str2">
+              <Property Name="UnifiedSize" Value="{{1.000000,-110.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,105.000000},{0.500000,-10.000000}}"/>
+              <Window Type="TLBB_EditBoxNormal" Name="PaoShang_Num2">
+                <Property Name="ValidationString" Value="[0-9]*" />
+                <Property Name="UnifiedSize" Value="{{1.000000,-42.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="123456" />
+                <Property Name="MaxTextLength" Value="6" />
+                <Property Name="DefaultEditBox" Value="True" />
+                <Property Name="HorizontalAlignment" Value="Left" />
+                <Event Name="TextChanged" Function="PaoShang_ChangeSellNum()" />
+              </Window>
+              <Window Type="TLBB_ButtonAdd" Name="PaoShang_Addition_Button2">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,0.000000}}"/>
+                <Event Name="Clicked" Function="PaoShang_AutoClick_LButtonUp(3);" />
+                <Event Name="MouseEnter" Function="PaoShang_AutoClick_Clear(3)" />
+                <Event Name="MouseLeave" Function="PaoShang_AutoClick_Clear(3)" />
+                <Event Name="MouseLButtonDown" Function="PaoShang_AutoClick_SetTimer(3)" />
+              </Window>
+              <Window Type="TLBB_ButtonSub" Name="PaoShang_Decrease_Button2">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+                <Event Name="Clicked" Function="PaoShang_AutoClick_LButtonUp(4);" />
+                <Event Name="MouseEnter" Function="PaoShang_AutoClick_Clear(4)" />
+                <Event Name="MouseLeave" Function="PaoShang_AutoClick_Clear(4)" />
+                <Event Name="MouseLButtonDown" Function="PaoShang_AutoClick_SetTimer(4)" />
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="PaoShang_ZiJin2BK">
+            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,34.000000}}"/>
+
+            <Window Type="TLBB_SimpleText" Name="PaoShang_ZiJin2_Text1">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{PSGN_180515_117}" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="PaoShang_Money3_Need">
+              <Property Name="UnifiedSize" Value="{{1.000000,-110.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,105.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="PaoShang_ZiJin2_Text2BK">
+            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,59.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="PaoShang_ZiJin2_Text2">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-10.000000}}"/>
+              <Property Name="Text" Value="#{PSGN_180515_116}" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="PaoShang_Money4_Need">
+              <Property Name="UnifiedSize" Value="{{1.000000,-110.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,105.000000},{0.500000,-10.000000}}"/>
+              <Property Name="HorzFormatting" Value="RightAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="PaoShang_Button2">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,95.000000}}"/>
+            <Property Name="Text" Value="出售" />
+            <Event Name="Clicked" Function="PaoShang_Sell()" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

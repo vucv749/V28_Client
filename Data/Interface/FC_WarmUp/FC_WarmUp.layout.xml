@@ -1,0 +1,463 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="FC_WarmUp_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,762.000000},{0.000000,495.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-381.000000},{0.500000,-247.000000}}"/>
+    <Event Name="Hidden" Function="FC_WarmUp_Close();" />
+    <Window Type="TLBB_HeroTitle01" Name="FC_WarmUp_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,290.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-145.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="FC_WarmUp_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,0.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{JOMY_20250403_37}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="DragTarget" Value="FC_WarmUp_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonClose2" Name="FC_WarmUp_OnClosed">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,10.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="FC_WarmUp_Close();" />
+    </Window>
+    <Window Type="TLBB_HeroFrame01" Name="FC_WarmUp_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-2.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+      <Window Type="TLBB_HeroLace01" Name="FC_WarmUp_Page">
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_Page_Bk">
+          <Property Name="UnifiedSize" Value="{{0.000000,754.000000},{0.000000,461.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:FC_WarmUp image:FC_WarmUp_BK"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="FC_WarmUp_InfoFrame">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,65.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="FC_WarmUp_Info">
+            <Property Name="UnifiedSize" Value="{{1.000000,-160.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.000000,1.000000}}"/>
+            <Property Name="Text" Value="#{JOMY_20250403_38}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_ButtonHelp" Name="FC_WarmUp_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-58.000000},{1.000000,-48.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="FC_WarmUp_Help_Clicked();"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="FC_WarmUp_HuoyueFrame1">
+          <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,300.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{1.000000,-350.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_ButtonNULL" Name="FC_WarmUp_RenWu_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,75.000000},{1.000000,-222.000000}}"/>
+            <Property Name="PushedImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu1_Pushed"/>
+            <Property Name="NormalImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu1_Normal"/>
+            <Property Name="HoverImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu1_Hover"/>
+            <Property Name="DisabledImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu1_Disabled"/>
+            <Event Name="Clicked" Function="FC_WarmUp_RenWuClicked(1)"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_RenWu_Bk1">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,75.000000},{1.000000,-222.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:FC_WarmUp image:FC_WarmUp_Renwu1_Finished"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_RenWu_1_Over">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,93.000000},{0.000000,171.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:FC_WarmUp image:FC_WarmUp_CheckMark_Left"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="FC_WarmUp_RenWu_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,119.000000},{1.000000,-212.000000}}"/>
+            <Property Name="PushedImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu2_Pushed"/>
+            <Property Name="NormalImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu2_Normal"/>
+            <Property Name="HoverImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu2_Hover"/>
+            <Property Name="DisabledImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu2_Disabled"/>
+            <Event Name="Clicked" Function="FC_WarmUp_RenWuClicked(2)"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_RenWu_Bk2">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,119.000000},{1.000000,-212.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:FC_WarmUp image:FC_WarmUp_Renwu2_Finished"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_RenWu_2_Over">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,137.000000},{0.000000,181.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:FC_WarmUp image:FC_WarmUp_CheckMark_Left"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="FC_WarmUp_RenWu_3">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,163.000000},{1.000000,-202.000000}}"/>
+            <Property Name="PushedImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu3_Pushed"/>
+            <Property Name="NormalImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu3_Normal"/>
+            <Property Name="HoverImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu3_Hover"/>
+            <Property Name="DisabledImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu3_Disabled"/>
+            <Event Name="Clicked" Function="FC_WarmUp_RenWuClicked(3)"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_RenWu_Bk3">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,163.000000},{1.000000,-202.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:FC_WarmUp image:FC_WarmUp_Renwu3_Finished"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_RenWu_3_Over">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,181.000000},{0.000000,191.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:FC_WarmUp image:FC_WarmUp_CheckMark_Left"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="FC_WarmUp_RenWu_Item1">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,42.000000},{1.000000,-76.000000}}"/>
+            <Event Name="Clicked" Function="FC_WarmUp_AwardClicked(1)"/>
+            <Window Type="TLBB_Animate" Name="FC_WarmUp_RenWu_ItemAnimate1">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="Equip_Zhizun"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_RenWu_Down1">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_HuoyueFrame1_GiftBk">
+            <Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{1.000000,-26.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_BrownBk"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="FC_WarmUp_HuoyueFrame1_GiftText">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{JOMY_20250403_271}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="FC_WarmUp_HuoyueFrame2">
+          <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,320.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{1.000000,-390.000000}}"/>
+          <Window Type="TLBB_ButtonNULL" Name="FC_WarmUp_RenWu_4">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,102.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,81.000000},{1.000000,-240.000000}}"/>
+            <Property Name="PushedImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu4_Pushed"/>
+            <Property Name="NormalImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu4_Normal"/>
+            <Property Name="HoverImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu4_Hover"/>
+            <Property Name="DisabledImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu4_Disabled"/>
+            <Event Name="Clicked" Function="FC_WarmUp_RenWuClicked(4)"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_RenWu_Bk4">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,102.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,81.000000},{1.000000,-240.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:FC_WarmUp image:FC_WarmUp_Renwu4_Finished"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_RenWu_4_Over">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,19.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,86.000000},{0.000000,176.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:FC_WarmUp image:FC_WarmUp_CheckMark_Middle"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="FC_WarmUp_RenWu_5">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,102.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{1.000000,-220.000000}}"/>
+            <Property Name="PushedImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu5_Pushed"/>
+            <Property Name="NormalImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu5_Normal"/>
+            <Property Name="HoverImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu5_Hover"/>
+            <Property Name="DisabledImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu5_Disabled"/>
+            <Event Name="Clicked" Function="FC_WarmUp_RenWuClicked(5)"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_RenWu_Bk5">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,102.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{1.000000,-220.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:FC_WarmUp image:FC_WarmUp_Renwu5_Finished"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_RenWu_5_Over">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,19.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,196.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:FC_WarmUp image:FC_WarmUp_CheckMark_Middle"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="FC_WarmUp_RenWu_6">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,102.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,167.000000},{1.000000,-202.000000}}"/>
+            <Property Name="PushedImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu6_Pushed"/>
+            <Property Name="NormalImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu6_Normal"/>
+            <Property Name="HoverImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu6_Hover"/>
+            <Property Name="DisabledImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu6_Disabled"/>
+            <Event Name="Clicked" Function="FC_WarmUp_RenWuClicked(6)"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_RenWu_Bk6">
+            <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,102.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,167.000000},{1.000000,-202.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:FC_WarmUp image:FC_WarmUp_Renwu6_Finished"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_RenWu_6_Over">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,19.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,172.000000},{0.000000,214.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:FC_WarmUp image:FC_WarmUp_CheckMark_Middle"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="FC_WarmUp_RenWu_Item2">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,36.000000},{1.000000,-80.000000}}"/>
+            <Event Name="Clicked" Function="FC_WarmUp_AwardClicked(2)"/>
+            <Window Type="TLBB_Animate" Name="FC_WarmUp_RenWu_ItemAnimate2">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="Equip_Zhizun"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_RenWu_Down2">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_HuoyueFrame2_GiftBk">
+            <Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-126.000000},{1.000000,-30.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_BrownBk"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="FC_WarmUp_HuoyueFrame2_GiftText">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{JOMY_20250403_271}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_HuoyueFrame2_TimeBk">
+            <Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-126.000000},{1.000000,-30.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_BlueBk"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="FC_WarmUp_HuoyueFrame2_TimeText">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{JOMY_20250403_272}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="FC_WarmUp_HuoyueFrame3">
+          <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,320.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,500.000000},{1.000000,-350.000000}}"/>
+          <Window Type="TLBB_ButtonNULL" Name="FC_WarmUp_RenWu_7">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,92.000000},{1.000000,-242.000000}}"/>
+            <Property Name="PushedImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu7_Pushed"/>
+            <Property Name="NormalImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu7_Normal"/>
+            <Property Name="HoverImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu7_Hover"/>
+            <Property Name="DisabledImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu7_Disabled"/>
+            <Event Name="Clicked" Function="FC_WarmUp_RenWuClicked(7)"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_RenWu_Bk7">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,92.000000},{1.000000,-242.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:FC_WarmUp image:FC_WarmUp_Renwu7_Finished"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_RenWu_7_Over">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,94.000000},{0.000000,175.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:FC_WarmUp image:FC_WarmUp_CheckMark_Right"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="FC_WarmUp_RenWu_8">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,133.000000},{1.000000,-221.000000}}"/>
+            <Property Name="PushedImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu8_Pushed"/>
+            <Property Name="NormalImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu8_Normal"/>
+            <Property Name="HoverImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu8_Hover"/>
+            <Property Name="DisabledImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu8_Disabled"/>
+            <Event Name="Clicked" Function="FC_WarmUp_RenWuClicked(8)"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_RenWu_Bk8">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,133.000000},{1.000000,-221.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:FC_WarmUp image:FC_WarmUp_Renwu8_Finished"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_RenWu_8_Over">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,135.000000},{0.000000,196.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:FC_WarmUp image:FC_WarmUp_CheckMark_Right"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="FC_WarmUp_RenWu_9">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,174.000000},{1.000000,-199.000000}}"/>
+            <Property Name="PushedImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu9_Pushed"/>
+            <Property Name="NormalImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu9_Normal"/>
+            <Property Name="HoverImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu9_Hover"/>
+            <Property Name="DisabledImage" Value="set:FC_WarmUp image:FC_WarmUp_Renwu9_Disabled"/>
+            <Event Name="Clicked" Function="FC_WarmUp_RenWuClicked(9)"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_RenWu_Bk9">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,100.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,174.000000},{1.000000,-199.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:FC_WarmUp image:FC_WarmUp_Renwu9_Finished"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_RenWu_9_Over">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,175.000000},{0.000000,218.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:FC_WarmUp image:FC_WarmUp_CheckMark_Right"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="FC_WarmUp_RenWu_Item3">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{1.000000,-76.000000}}"/>
+            <Event Name="Clicked" Function="FC_WarmUp_AwardClicked(3)"/>
+            <Window Type="TLBB_Animate" Name="FC_WarmUp_RenWu_ItemAnimate3">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="Equip_Zhizun"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_RenWu_Down3">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_HuoyueFrame3_GiftBk">
+            <Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-142.000000},{1.000000,-26.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_BrownBk"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="FC_WarmUp_HuoyueFrame3_GiftText">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{JOMY_20250403_271}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="FC_WarmUp_HuoyueFrame3_TimeBk">
+            <Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-142.000000},{1.000000,-26.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Kunwu_YuRe image:Kunwu_YuRe_BlueBk"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="FC_WarmUp_HuoyueFrame3_TimeText">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{JOMY_20250403_273}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

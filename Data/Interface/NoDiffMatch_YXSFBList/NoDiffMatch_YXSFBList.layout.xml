@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="NoDiffMatch_YXSFBList_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,510.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-249.000000},{0.050000,0.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="NoDiffMatch_YXSFBList_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,10.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+      <Property Name="Text" Value="" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="DragTarget" Value="NoDiffMatch_YXSFBList_Frame" />
+      <Property Name="Text" Value="#{WCJS_180307_37}" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="NoDiffMatch_YXSFBList_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="NoDiffMatch_YXSFBList_CloseClicked();"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="NoDiffMatch_YXSFBList_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="NoDiffMatch_YXSFBList_Function_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{1.000000,-54.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,34.000000}}"/>
+      <Window Type="TLBB_MultiColumnList" Name="NoDiffMatch_YXSFBList_List">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-28.000000}}"/>
+        <Property Name="ForceVertScrollbar" Value="True"/>
+        <Property Name="ColumnsSizable" Value="False"/>
+        <Property Name="ColumnsMovable" Value="False"/>
+        <Property Name="ColumnHeader" Value="text:#{WCJS_180307_38} width:0.125 id:0" />
+        <Property Name="ColumnHeader" Value="text:#{WCJS_180307_39} width:0.1375 id:1" />
+        <Property Name="ColumnHeader" Value="text:#{WCJS_180307_40} width:0.3 id:2" />
+        <Property Name="ColumnHeader" Value="text:#{WCJS_180307_39} width:0.1375 id:3" />
+        <Property Name="ColumnHeader" Value="text:#{WCJS_180307_40} width:0.3 id:4" />
+
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="NoDiffMatch_YXSFBList_Refresh">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.250000,-40.000000},{1.000000,-27.000000}}"/>
+        <Property Name="Text" Value="#{WCJS_180307_43}"/>
+        <Event Name="Clicked" Function="NoDiffMatch_YXSFBList_RefreshClicked();"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="NoDiffMatch_YXSFBList_Enter">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.750000,-40.000000},{1.000000,-27.000000}}"/>
+        <Property Name="Text" Value="#{WCJS_180307_45}"/>
+        <Event Name="Clicked" Function="NoDiffMatch_YXSFBList_EnterClicked();"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

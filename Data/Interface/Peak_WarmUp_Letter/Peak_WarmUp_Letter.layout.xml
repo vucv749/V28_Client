@@ -1,0 +1,51 @@
+﻿<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Peak_WarmUp_Letter_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,384.000000},{0.000000,514.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-192.000000},{0.500000,-257.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="Peak_WarmUp_Letter_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-85.000000},{0.000000,70.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="DragTarget" Value="Peak_WarmUp_Letter_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="Peak_WarmUp_Letter_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,58.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{0.000000,5.000000}}"/>
+      <Property Name="PushedImage" Value="set:Peak_WarmUp image:Peak_WarmUp_LetterClose_Pushed"/>
+      <Property Name="NormalImage" Value="set:Peak_WarmUp image:Peak_WarmUp_LetterClose_Normal"/>
+      <Property Name="HoverImage" Value="set:Peak_WarmUp image:Peak_WarmUp_LetterClose_Hover"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Peak_WarmUp_Letter_OnClose();"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="Peak_WarmUp_Letter_FrameBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Window Type="TLBB_StaticImageNULL" Name="Peak_WarmUp_Letter_LetterBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:Peak_WarmUp image:Peak_WarmUp_LetterBK"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Peak_WarmUp_Letter_Goto">
+        <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,155.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,61.000000},{0.000000,315.000000}}"/>
+        <Property Name="PushedImage" Value="set:Peak_WarmUp image:Peak_WarmUp_Letter_Goto_Pushed"/>
+        <Property Name="NormalImage" Value="set:Peak_WarmUp image:Peak_WarmUp_Letter_Goto_Normal"/>
+        <Property Name="HoverImage" Value="set:Peak_WarmUp image:Peak_WarmUp_Letter_Goto_Hover"/>
+        <Property Name="DisabledImage" Value="set:Peak_WarmUp image:Peak_WarmUp_Letter_Goto_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Peak_WarmUp_Letter_OnGoButtonClicked();"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

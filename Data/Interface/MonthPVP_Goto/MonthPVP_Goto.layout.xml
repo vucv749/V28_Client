@@ -1,0 +1,74 @@
+﻿<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="MonthPVP_Goto_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,448.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.500000,-224.000000}}"/>
+    <Window Type="TLBB_HeroFrame01" Name="MonthPVP_Goto_FrameBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="AttachEnabled" Value="True"/>
+      <Event Name="Hidden" Function="MonthPVP_Goto_OnHide();" />
+      <Window Type="TLBB_ButtonNULL" Name="MonthPVP_Goto_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,9.000000}}"/>
+        <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+        <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
+        <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
+        <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+        <Event Name="Clicked" Function="MonthPVP_Goto_OnHide();" />
+      </Window>
+      <Window Type="TLBB_DragTitle" Name="MonthPVP_Goto_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,2.000000}}"/>
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="Text" Value="#{LLKC_240517_185}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="DragTarget" Value="MonthPVP_Goto_Frame" />
+      </Window>
+      <Window Type="TLBB_HeroTitle01" Name="MonthPVP_Goto_DragTitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,314.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-153.000000},{0.000000,-2.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+      <Window Type="TLBB_HeroLace01" Name="MonthPVP_Goto_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,28.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="MonthPVP_Goto_BKPic">
+          <Property Name="UnifiedSize" Value="{{0.000000,592.000000},{0.000000,412.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_GotoBK"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="MonthPVP_Goto_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,566.000000},{0.000000,66.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-283.000000},{0.000000,3.000000}}"/>
+          <Property Name="Text" Value="#{LLKC_240517_186}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="VertFormatting" Value="VertCentred"/>
+          <Window Type="TLBB_ButtonHelp" Name="MonthPVP_Goto_Text_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="MonthPVP_Goto_ShowHelp();" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCommon12" Name="MonthPVP_Goto_GoBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-130.000000},{1.000000,-54.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Text" Value="#{LLKC_240517_317}"/>
+          <Event Name="Clicked" Function="MonthPVP_Goto_Goto();" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

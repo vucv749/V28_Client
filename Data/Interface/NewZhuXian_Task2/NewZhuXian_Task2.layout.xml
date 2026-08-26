@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrameNULL" Name="NewZhuXian_Task2_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,1024.000000},{0.000000,556.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-512.000000},{0.500000,-280.500000}}"/>
+        <Window Type="TLBB_DragTitle" Name="NewZhuXian_Task2_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="NewZhuXian_Task2_Frame" />
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewZhuXian_Task2_Close">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{0.000000,40.000000}}"/>
+          <Property Name="PushedImage" Value="set:NewZhuXian_Task image:NewZhuXian_ClosePush"/>
+          <Property Name="NormalImage" Value="set:NewZhuXian_Task image:NewZhuXian_CloseNor"/>
+          <Property Name="HoverImage" Value="set:NewZhuXian_Task image:NewZhuXian_CloseHover"/>
+          <Property Name="DisabledImage" Value="set:NewZhuXian_Task image:NewZhuXian_ClosePush"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="NewZhuXian_Task2_OnHiden();" />
+        </Window>
+      <Window Type="DefaultWindow" Name="NewZhuXian_Task2_background_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,1024.000000},{0.000000,556.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="NewZhuXian_Task2_BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,1024.000000},{0.000000,556.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:NewZhuXian_Task2 image:NewZhuXian_Xin2"/>
+        </Window>
+      </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Makefriends_Show_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,76.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.500000,-280.000000}}" />
+
+    <Window Type="TLBB_DragTitle" Name="Makefriends_Show_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-170.000000},{0.000000,36.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,34.000000}}"/>
+      <Property Name="DragTarget" Value="Makefriends_Show_Frame" />
+      <Property Name="AlwaysOnTop" Value="True" />
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Show_BK">
+      <Property Name="UnifiedSize" Value="{{0.000000,590.000000},{0.000000,70.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="Image" Value="set:Makefriends image:BD_BK"/>
+      <Window Type="TLBB_SimpleText" Name="Makefriends_Show_Text">
+        <Property Name="UnifiedSize" Value="{{1.000000,-260.000000},{1.000000,-38.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,115.000000},{0.000000,35.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{JYHD_230331_139}"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Makefriends_Show_Btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,95.000000},{0.000000,39.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-125.000000},{0.000000,35.000000}}"/>
+        <Property Name="PushedImage" Value="set:Makefriends image:TJHY_Push"/>
+        <Property Name="NormalImage" Value="set:Makefriends image:TJHY_Normal"/>
+        <Property Name="HoverImage" Value="set:Makefriends image:TJHY-Hover"/>
+        <Property Name="DisabledImage" Value="set:Makefriends image:TJHY-Dis"/>
+        <Event Name="Clicked" Function="Makefriends_Show_Btn_Clicked();"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

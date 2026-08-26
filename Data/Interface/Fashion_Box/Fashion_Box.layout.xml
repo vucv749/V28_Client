@@ -1,0 +1,219 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="Fashion_Box_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,408.000000},{0.000000,346.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-204.000000},{0.500000,-200.000000}}"/>
+    <Event Name="Hidden" Function="Fashion_Box_Clear()"/>
+    <Window Type="TLBB_HeroTitle01" Name="Fashion_Box_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,314.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-157.500000},{0.000000,-2.000000}}"/>
+      <Property Name="DragTarget" Value="Fashion_Box_Frame"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Fashion_Box_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+      <Property Name="Text" Value="#{SZSJ_231114_36}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="Fashion_Box_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose2" Name="Fashion_Box_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+      <Event Name="Clicked" Function="Fashion_Box_Close_Click();" />
+    </Window>
+    <Window Type="TLBB_HeroLace01" Name="Fashion_Box_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="Fashion_Box_ClientBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,694.000000},{0.000000,257.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,-208.000000},{1.000000,-257.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:Redenvelope image:History_BK"/>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="Fashion_Box_Explain">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,70.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_SimpleText" Name="Fashion_Box_Explain_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{SZSJ_231114_15}"/>
+          <Property Name="VertFormatting" Value="TopAligned"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Window Type="TLBB_ButtonNULL" Name="Fashion_Box_Explain_Text_links">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-128.000000},{1.000000,-24.000000}}"/>
+            <Property Name="Text" Value="#{SZSJ_231114_16}"/>
+            <Event Name="Clicked" Function="Fashion_Box_ShopClicked()"/>
+          </Window>
+          <Window Type="TLBB_ButtonHelp" Name="Fashion_Box_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,36.000000}}"/>
+            <Event Name="Clicked" Function="Fashion_Box_HelpClicked()"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Fashion_Box_Exchange_Frame">
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,220.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,80.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Fashion_Box_Exchange_Item1">
+          <Property Name="UnifiedSize" Value="{{0.000000,182.000000},{0.000000,62.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="Image" Value="set:Talent image:Talent_HoverBK"/>
+          <Window Type="TLBB_ActionButton" Name="Fashion_Box_Exchange_Item1_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,6.000000}}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Fashion_Box_Exchange_Item1_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,10.000000}}"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+            <Property Name="Text" Value="#{QRZM_211119_265}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Fashion_Box_Exchange_Item1_Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,10.000000}}"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+            <Property Name="Text" Value="#{QRZM_211119_265}"/>
+          </Window>
+          <Window Type="TLBB_ButtonCommon10" Name="Fashion_Box_Exchange_Item1_Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,124.000000},{0.000000,34.000000}}"/>
+            <Event Name="Clicked" Function="Fashion_Box_Exchange_Click(1)" />
+            <Property Name="Text" Value="#{QRZM_211119_265}"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Fashion_Box_Exchange_Item1_ItemPreview">
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.000000,8.000000}}"/>
+            <Property Name="PushedImage" Value="set:FeelFeedBack1 image:Anniversary_Rich_GiftRewards_Pushed"/>
+            <Property Name="NormalImage" Value="set:FeelFeedBack1 image:Anniversary_Rich_GiftRewards_Normal"/>
+            <Property Name="HoverImage" Value="set:FeelFeedBack1 image:Anniversary_Rich_GiftRewards_Hover"/>
+            <Property Name="DisabledImage" Value="set:FeelFeedBack1 image:Anniversary_Rich_GiftRewards_Disabled"/>
+            <Event Name="Clicked" Function="Fashion_Box_ItemPreview()"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Fashion_Box_Exchange_Item2">
+          <Property Name="UnifiedSize" Value="{{0.000000,182.000000},{0.000000,62.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,10.000000}}"/>
+          <Property Name="Image" Value="set:Talent image:Talent_HoverBK"/>
+          <Window Type="TLBB_ActionButton" Name="Fashion_Box_Exchange_Item2_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,6.000000}}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Fashion_Box_Exchange_Item2_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,10.000000}}"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Fashion_Box_Exchange_Item2_Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,34.000000}}"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+          </Window>
+          <Window Type="TLBB_ButtonCommon10" Name="Fashion_Box_Exchange_Item2_Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,124.000000},{0.000000,34.000000}}"/>
+            <Event Name="Clicked" Function="Fashion_Box_Exchange_Click(2)" />
+            <Property Name="Text" Value="#{QRZM_211119_265}"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Fashion_Box_Exchange_Item3">
+          <Property Name="UnifiedSize" Value="{{0.000000,182.000000},{0.000000,62.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,80.000000}}"/>
+          <Property Name="Image" Value="set:Talent image:Talent_HoverBK"/>
+          <Window Type="TLBB_ActionButton" Name="Fashion_Box_Exchange_Item3_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,6.000000}}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Fashion_Box_Exchange_Item3_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,10.000000}}"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+            <Property Name="Text" Value="#{QRZM_211119_265}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Fashion_Box_Exchange_Item3_Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,10.000000}}"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+          </Window>
+          <Window Type="TLBB_ButtonCommon10" Name="Fashion_Box_Exchange_Item3_Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,124.000000},{0.000000,34.000000}}"/>
+            <Event Name="Clicked" Function="Fashion_Box_Exchange_Click(3)" />
+            <Property Name="Text" Value="#{QRZM_211119_265}"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Fashion_Box_Exchange_Item4">
+          <Property Name="UnifiedSize" Value="{{0.000000,182.000000},{0.000000,62.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,80.000000}}"/>
+          <Property Name="Image" Value="set:Talent image:Talent_HoverBK"/>
+          <Window Type="TLBB_ActionButton" Name="Fashion_Box_Exchange_Item4_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,6.000000}}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Fashion_Box_Exchange_Item4_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,10.000000}}"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+            <Property Name="Text" Value="#{QRZM_211119_265}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Fashion_Box_Exchange_Item4_Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,10.000000}}"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+          </Window>
+          <Window Type="TLBB_ButtonCommon10" Name="Fashion_Box_Exchange_Item4_Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,124.000000},{0.000000,34.000000}}"/>
+            <Event Name="Clicked" Function="Fashion_Box_Exchange_Click(4)" />
+            <Property Name="Text" Value="#{QRZM_211119_265}"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Fashion_Box_Exchange_Item5">
+          <Property Name="UnifiedSize" Value="{{0.000000,182.000000},{0.000000,62.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,150.000000}}"/>
+          <Property Name="Image" Value="set:Talent image:Talent_HoverBK"/>
+          <Window Type="TLBB_ActionButton" Name="Fashion_Box_Exchange_Item5_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,6.000000}}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Fashion_Box_Exchange_Item5_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,10.000000}}"/>
+            <Property Name="HorzFormatting" Value="LeftAligned"/>
+            <Property Name="Text" Value="#{QRZM_211119_265}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Fashion_Box_Exchange_Item5_Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,10.000000}}"/>
+            <Property Name="HorzFormatting" Value="RightAligned"/>
+          </Window>
+          <Window Type="TLBB_ButtonCommon10" Name="Fashion_Box_Exchange_Item5_Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,124.000000},{0.000000,34.000000}}"/>
+            <Event Name="Clicked" Function="Fashion_Box_Exchange_Click(5)" />
+            <Property Name="Text" Value="#{QRZM_211119_265}"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Fashion_Box_TextNumBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{1.000000,-40.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Profile image:TagBK"/>
+          <Window Type="TLBB_SimpleText" Name="Fashion_Box_TextNum">
+            <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.000000,2.000000}}"/>
+            <Property Name="Text" Value="#{SZSJ_231114_37}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

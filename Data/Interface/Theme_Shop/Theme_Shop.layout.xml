@@ -1,0 +1,307 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="Theme_Shop_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,412.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.500000,-206.000000}}"/>
+    <Event Name="Hidden" Function="Theme_Shop_Close()"/>
+    <Window Type="TLBB_DragTitle" Name="Theme_Shop_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="DragTarget" Value="Theme_Shop_Frame" />
+      <Property Name="Text" Value="#{ZTFC_20230620_5}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Theme_Shop_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Helper:GotoHelper('*Theme_Shop');"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Theme_Shop_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Theme_Shop_Close()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Theme_Shop_Background_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_Frame_Lace2" Name="Theme_Shop_InfoBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,90.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,2.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Theme_Shop_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{ZTFC_20230620_6}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>        
+      </Window>      
+      <Window Type="DefaultWindow" Name="Theme_Shop_Action_Set">
+        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,230.0000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,101.000000}}"/>
+        <Window Type="TLBB_ActionButton" Name="Theme_Shop_Item1">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:1.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Theme_Shop_Clicked(1)" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Theme_Shop_Item2">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:39.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Theme_Shop_Clicked(2)" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Theme_Shop_Item3">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:77.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Theme_Shop_Clicked(3)" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Theme_Shop_Item4">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:115.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Theme_Shop_Clicked(4)" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Theme_Shop_Item5">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:153.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Theme_Shop_Clicked(5)" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Theme_Shop_Item6">
+          <Property Name="AbsolutePosition" Value="x:0.000000 y:191.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Theme_Shop_Clicked(6)" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Theme_Shop_Item7">
+          <Property Name="AbsolutePosition" Value="x:164.000000 y:1.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Theme_Shop_Clicked(7)" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Theme_Shop_Item8">
+          <Property Name="AbsolutePosition" Value="x:164.000000 y:39.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Theme_Shop_Clicked(8)" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Theme_Shop_Item9">
+          <Property Name="AbsolutePosition" Value="x:164.000000 y:77.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Theme_Shop_Clicked(9)" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Theme_Shop_Item10">
+          <Property Name="AbsolutePosition" Value="x:164.000000 y:115.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Theme_Shop_Clicked(10)" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Theme_Shop_Item11">
+          <Property Name="AbsolutePosition" Value="x:164.000000 y:153.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Theme_Shop_Clicked(11)" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="Theme_Shop_Item12">
+          <Property Name="AbsolutePosition" Value="x:164.000000 y:191.000000" />
+          <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+          <Event Name="Clicked" Function="Theme_Shop_Clicked(12)" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Theme_Shop_ItemInfo1">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo1_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo1_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Theme_Shop_ItemInfo2">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:38.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo2_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo2_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Theme_Shop_ItemInfo3">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:76.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo3_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo3_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Theme_Shop_ItemInfo4">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:114.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo4_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo4_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Theme_Shop_ItemInfo5">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:152.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo5_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo5_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Theme_Shop_ItemInfo6">
+          <Property Name="AbsolutePosition" Value="x:38.000000 y:190.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo6_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo6_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Theme_Shop_ItemInfo7">
+          <Property Name="AbsolutePosition" Value="x:202.000000 y:0.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo7_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo7_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Theme_Shop_ItemInfo8">
+          <Property Name="AbsolutePosition" Value="x:202.000000 y:38.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo8_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo8_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Theme_Shop_ItemInfo9">
+          <Property Name="AbsolutePosition" Value="x:202.000000 y:76.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo9_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo9_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Theme_Shop_ItemInfo10">
+          <Property Name="AbsolutePosition" Value="x:202.000000 y:114.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo10_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo10_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Theme_Shop_ItemInfo11">
+          <Property Name="AbsolutePosition" Value="x:202.000000 y:152.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo11_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo11_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Theme_Shop_ItemInfo12">
+          <Property Name="AbsolutePosition" Value="x:202.000000 y:190.000000" />
+          <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo12_Text">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+            <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Theme_Shop_ItemInfo12_GB">
+            <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+            <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="Theme_Shop_Bk">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+        <Window Type="TLBB_ButtonCommon" Name="Theme_Shop_Try">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{ZTFC_20230620_20}"/>
+          <Event Name="Clicked" Function="Theme_Shop_OpenFitting()"/>
+        </Window>  
+        <Window Type="TLBB_SimpleText" Name="Theme_Shop_NUM">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-224.000000},{0.000000,0.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{ZTFC_20230620_9}"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+        </Window>          
+        <Window Type="TLBB_SimpleText" Name="Theme_Shop_Yuanbao">
+          <Property Name="UnifiedSize" Value="{{0.000000,118.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-129.000000},{0.000000,0.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{ZTFC_20230620_21}"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+        </Window>              
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

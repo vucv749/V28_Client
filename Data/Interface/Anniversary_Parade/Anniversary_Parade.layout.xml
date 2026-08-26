@@ -1,0 +1,66 @@
+﻿<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="Anniversary_Parade_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,658.000000},{0.000000,450.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-329.000000},{0.500000,-225.000000}}"/>
+    <Event Name="Hidden" Function="Anniversary_Parade_OnHide();" />
+    <Window Type="TLBB_ButtonNULL" Name="Anniversary_Parade_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,9.000000}}"/>
+      <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+      <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
+      <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
+      <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Anniversary_Parade_OnHide();" />
+    </Window>
+    <Window Type="TLBB_HeroTitle01" Name="Anniversary_Parade_Title">
+      <Property Name="UnifiedSize" Value="{{0.000000,314.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-153.000000},{0.000000,-2.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Anniversary_Parade_DragTitle">
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,2.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{ZNXY_250312_09}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="DragTarget" Value="Anniversary_Parade_Frame" />
+    </Window>
+    <Window Type="TLBB_HeroLace01" Name="Anniversary_Parade_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,28.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="AttachEnabled" Value="True"/>
+      <Window Type="TLBB_StaticImageNULL" Name="Anniversary_Parade_ClientBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,24.000000}}"/>
+        <Property Name="Image" Value="set:Anniversary_Parade image:2025parade"/>
+        <Window Type="DefaultWindow" Name="Anniversary_Parade_InfoBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,50.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.000000,8.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="Anniversary_Parade_Info">
+            <Property Name="VertFormatting" Value="VertCentred"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-28.000000}}"/>
+            <Property Name="Text" Value="#{ZNXY_250312_10}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Window Type="TLBB_ButtonHelp" Name="Anniversary_Parade_Help">
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Event Name="Clicked" Function="Anniversary_Parade_ShowHelp();"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

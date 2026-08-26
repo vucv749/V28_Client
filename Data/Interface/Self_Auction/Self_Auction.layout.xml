@@ -1,0 +1,306 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="Self_Auction_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,876.000000},{0.000000,478.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-438.000000},{0.500000,-239.000000}}"/>
+    <Event Name="Hidden" Function="Self_Auction_OnHidden();"/>
+    <Window Type="TLBB_DragTitle" Name="Self_Auction_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,10.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{ZZPM_250325_08}"/>
+      <Property Name="DragTarget" Value="Self_Auction_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Self_Auction_Frame1_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Helper:GotoHelper('*Self_Auction');"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Self_Auction_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Self_Auction_CloseClicked();"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="Self_Auction_Frame1">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,465.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="Image" Value="set:Fashion_Auction_Mount1 image:Fashion_Auction_MountBK"/>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Self_Auction_PageClient">
+        <Property Name="UnifiedSize" Value="{{1.000000,-32.000000},{0.000000,58.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,46.000000}}"/>
+        <Window Type="TLBB_ButtonHelp" Name="Self_Auction_Help_Btn">
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-31.000000},{0.000000,37.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="Self_Auction_Help_Btn_Clicked();"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Self_Auction_Frame1_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,-32.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{ZZPM_250325_09}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Self_Auction_Page1">
+        <Property Name="UnifiedSize" Value="{{1.000000,-22.000000},{1.000000,-94.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,106.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_ButtonCommon" Name="Self_Auction_Shuaxin">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-68.000000},{0.500000,-180.000000}}"/>
+          <Property Name="Text" Value="#{ZZPM_250325_11}"/>
+          <Event Name="Clicked" Function="Self_Auction_Shuaxin()"/>
+        </Window>
+        <Window Type="TLBB_ComboList" Name="Self_Auction_Search">
+          <Property Name="UnifiedSize" Value="{{0.000000,165.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-240.000000},{0.500000,-178.000000}}"/>
+          <Event Name="ListSelectionAccepted" Function="Self_Auction_Type_Changed();"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="Self_Auction_Page1_Middle">
+          <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{1.000000,-76.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,30.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_Frame_Lace2" Name="Self_Auction_Page1_ListFrameBK">
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-35.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,25.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="Self_Auction_Page1_ListFrame">
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,6.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_MultiColumnList" Name="Self_Auction_Page1_ListTitle">
+              <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="ForceHorzScrollbar" Value="False"/>
+              <Property Name="SortSettingEnabled" Value="False"/>
+              <Property Name="SelectionMode" Value="RowSingle"/>
+              <Property Name="ColumnHeader" Value="text: width:0.08 id:0"/>
+              <Property Name="ColumnHeader" Value="text: width:0.08 id:1"/>
+              <Property Name="ColumnHeader" Value="text: width:0.16 id:2"/>
+              <Property Name="ColumnHeader" Value="text: width:0.12 id:3"/>
+              <Property Name="ColumnHeader" Value="text: width:0.12 id:4"/>
+              <Property Name="ColumnHeader" Value="text: width:0.12 id:5"/>
+              <Property Name="ColumnHeader" Value="text: width:0.32 id:6"/>
+              <Property Name="ColumnsSizable" Value="False"/>
+              <Property Name="ColumnsMovable" Value="False"/>
+              <Property Name="ColumnsAdjust" Value="True"/>
+              <Window Type="DefaultWindow" Name="Self_Auction_Page1_ListTitle_TextBK">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_SimpleText" Name="Self_Auction_Page1_ListTitle1">
+                  <Property Name="UnifiedSize" Value="{{0.080000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+                  <Property Name="Text" Value="#{ZZPM_250325_13}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Self_Auction_Page1_ListTitle2">
+                  <Property Name="UnifiedSize" Value="{{0.080000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.080000,0.000000},{0.000000,1.000000}}"/>
+                  <Property Name="Text" Value="#{ZZPM_250325_14}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Self_Auction_Page1_ListTitle3">
+                  <Property Name="UnifiedSize" Value="{{0.160000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.160000,0.000000},{0.000000,1.000000}}"/>
+                  <Property Name="Text" Value="#{ZZPM_250325_15}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Self_Auction_Page1_ListTitle4">
+                  <Property Name="UnifiedSize" Value="{{0.120000,4.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.320000,0.000000},{0.000000,1.000000}}"/>
+                  <Property Name="Text" Value="#{ZZPM_250325_16}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Self_Auction_Page1_ListTitle5">
+                  <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.440000,0.000000},{0.000000,1.000000}}"/>
+                  <Property Name="Text" Value="#{ZZPM_250325_17}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Self_Auction_Page1_ListTitle6">
+                  <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.560000,0.000000},{0.000000,1.000000}}"/>
+                  <Property Name="Text" Value="#{ZZPM_250325_18}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Self_Auction_Page1_ListTitle7">
+                  <Property Name="UnifiedSize" Value="{{0.320000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.680000,0.000000},{0.000000,1.000000}}"/>
+                  <Property Name="Text" Value="#{ZZPM_250325_19}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_NotSuperList" Name="Self_Auction_Page1_List">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-22.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Window Type="TLBB_NotSuperListItemCommon1" Name="Self_Auction_Page1_ListItem">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Window Type="TLBB_ButtonCommon" Name="Self_Auction_Page1_XiaJia">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,24.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-56.000000},{0.500000,-12.000000}}"/>
+                  <Property Name="Text" Value="#{ZZPM_250325_140}"/>
+                </Window>
+                <Window Type="TLBB_ButtonCheckNULL" Name="Self_Auction_Page1_ListItem_Collect">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.500000,-10.000000}}"/>
+                  <Property Name="PushedImage" Value="set:Fashion_Auction image:Fashion_Auction_X_Hover"/>
+                  <Property Name="NormalImage" Value="set:Fashion_Auction image:Fashion_Auction_XBK_Normal"/>
+                  <Property Name="HoverImage" Value="set:Fashion_Auction image:Fashion_Auction_X_Pushed"/>
+                  <Property Name="DisabledImage" Value="set:Fashion_Auction image:Fashion_Auction_X_Disable"/>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Self_Auction_Page1_ListItem_Icon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.080000,11.000000},{0.500000,-23.000000}}"/>
+                  <Window Type="TLBB_ButtonNULL" Name="Self_Auction_Page1_ListItem_Icon_Tips">
+                    <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,12.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,2.000000}}"/>
+                    <Property Name="PushedImage" Value="set:Fashion_Auction image:Fashion_Auction_eye_Pushed"/>
+                    <Property Name="NormalImage" Value="set:Fashion_Auction image:Fashion_Auction_eye_Normal"/>
+                    <Property Name="HoverImage" Value="set:Fashion_Auction image:Fashion_Auction_eye_Hover"/>
+                    <Property Name="DisabledImage" Value="set:Fashion_Auction image:Fashion_Auction_eye_Disable"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                    <Property Name="Tooltip" Value="#{ZZPM_250325_23}"/>
+                  </Window>
+                </Window>
+
+                <Window Type="TLBB_SimpleText" Name="Self_Auction_Page1_ListItem_Text1">
+                  <Property Name="UnifiedSize" Value="{{0.160000,0.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.160000,0.000000},{0.500000,-10.000000}}"/>
+                  <Property Name="Text" Value="#{}"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Self_Auction_Page1_ListItem_Text2">
+                  <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.320000,0.000000},{0.500000,-10.000000}}"/>
+                  <Property Name="Text" Value="#{}"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Self_Auction_Page1_ListItem_Text3">
+                  <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.440000,0.000000},{0.500000,-10.000000}}"/>
+                  <Property Name="Text" Value="#{ZZPM_250325_30}"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                </Window>
+                <Window Type="TLBB_ButtonCommon" Name="Self_Auction_Page1_ListItem_Button">
+                  <Property Name="UnifiedSize" Value="{{0.120000,-20.000000},{0.000000,24.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.560000,10.000000},{0.500000,-13.000000}}"/>
+                  <Property Name="Text" Value="#{ZZPM_250325_34}"/>
+                  <Event Name="Clicked" Function="Self_Auction_Page1_List_ButtonClicked(1);"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Self_Auction_Page1_ListItem_Text4">
+                  <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,22.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.560000,21.000000},{0.500000,-10.000000}}"/>
+                  <Property Name="Image" Value="set:Fashion_Auction image:Fashion_Auction_Over"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Self_Auction_Page1_ListItem_BeforeText">
+                  <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{0.000000,22.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.560000,0.000000},{0.500000,-10.000000}}"/>
+                  <Property Name="Text" Value="#{SZPM_230913_21}"/>
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Self_Auction_Page1_ListItem_Name">
+                  <Property Name="UnifiedSize" Value="{{0.320000,-48.000000},{0.000000,40.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.680000,24.000000},{0.500000,-20.000000}}"/>
+                  <Property Name="Text" Value="#{SZPM_230913_21}"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Self_Auction_Page1_ListItem_TipsIcon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-22.0000000},{0.500000,-12.000000}}"/>
+                  <Property Name="Image" Value="set:CommonFrame38 image:Affection_Tips"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Tooltip" Value="#{ZZPM_250325_135}"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Self_Auction_Page1_ListItem_Line">
+                  <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,1.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,10.0000000},{1.000000,-2.000000}}"/>
+                  <Property Name="Image" Value="set:Fashion_Auction image:Fashion_Auction_Line"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Self_Auction_Page1_Bottom">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-42.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_ButtonCommon" Name="Self_Auction_Page1_ShangJia">
+            <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,620.000000},{0.500000,-12.000000}}"/>
+            <Property Name="Text" Value="#{ZZPM_250325_54}"/>
+            <Event Name="Clicked" Function="Self_Auction_Page1_ShangJia_Clicked()"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Self_Auction_Page1_YuanbaoText">
+            <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{ZZPM_250325_44}"/>
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="Self_Auction_Page1_ReceiveYuanbao">
+            <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,158.000000},{0.500000,-12.000000}}"/>
+            <Property Name="Text" Value="#{ZZPM_250325_46}"/>
+            <Property Name="Tooltip" Value="#{ZZPM_250325_45}"/>
+            <Event Name="Clicked" Function="Self_Auction_Get_YuanBao()"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Self_Auction_Page1_ReceiveYuanbaoTip">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Fashion_Auction_ButtonBig" Name="Self_Auction_Page1_ReceiveProp">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-98.000000},{0.500000,-12.000000}}"/>
+            <Property Name="Text" Value="#{ZZPM_250325_70}"/>
+            <Property Name="Tooltip" Value="#{ZZPM_250325_71}"/>
+            <Event Name="Clicked" Function="Self_Auction_Get_Self()"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Self_Auction_Page1_ReceivePropTip">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

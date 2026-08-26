@@ -1,0 +1,458 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrameNULL" Name="Kunwu_DBShop_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,428.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.500000,-183.000000}}"/>
+    <Window Type="TLBB_MainFrame0" Name="Kunwu_DBShop_FrameBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_DragTitle" Name="Kunwu_DBShop_DragTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,11.000000}}"/>
+            <Property Name="DragTarget" Value="Kunwu_DBShop_Frame" />
+            <Property Name="Font" Value="YouYuan11.25"/>
+            <Property Name="Text" Value="#{ZSSD_241211_6}"/>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="Kunwu_DBShop_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="Kunwu_DBShop_Close">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+		    <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+            <Event Name="Clicked" Function="Kunwu_DBShop_Close();" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_DBShop_Info">
+            <Property Name="UnifiedSize" Value="{{1.000000,-28.000000},{0.000000,98.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,43.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_Info_Text1">
+                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-52.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+                <Property Name="Text" Value="#{ZSSD_241211_25}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_Info_Text2">
+                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-70.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,60.000000}}"/>
+                <Property Name="Text" Value="#{ZSSD_241211_26}"/>
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Kunwu_DBShop_Background_Frame1">
+            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-164.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,144.000000}}"/>
+            <Window Type="TLBB_ButtonCheck" Name="Kunwu_DBShop_querengoumai">
+                <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,244.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+                <Property Name="CheckMode" Value="0" />
+                <Event Name="Clicked" Function="Kunwu_DBShop_querengoumai_Clicked();" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_DBNum_Text">
+                <Property Name="UnifiedSize" Value="{{1.000000,-186.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,240.000000}}"/>
+                <Property Name="Text" Value="#{ZSSD_241211_7}"/>
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_querengoumai_Text">
+                <Property Name="UnifiedPosition" Value="{{0.000000,28.000000},{0.000000,240.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,20.000000}" />
+                <Property Name="Text" Value="#{ZSSD_241211_8}"/>
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="Tooltip" Value="#{ZSSD_241211_9}" />
+                <Event Name="Clicked" Function="Kunwu_DBShop_querengoumai_Clicked();" />
+            </Window>
+
+            <Window Type="DefaultWindow" Name="Kunwu_DBShop_Action_Set">
+                <Property Name="UnifiedSize" Value="{{0.000000,322.000000},{0.000000,230.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,8.000000}}"/>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_DBShop_Item1">
+                    <Property Name="AbsolutePosition" Value="x:0.000000 y:1.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="Kunwu_DBShop_Btn_Clicked(1);" />
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_DBShop_Item2">
+                    <Property Name="AbsolutePosition" Value="x:0.000000 y:39.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="Kunwu_DBShop_Btn_Clicked(2);" />
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_DBShop_Item3">
+                    <Property Name="AbsolutePosition" Value="x:0.000000 y:77.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="Kunwu_DBShop_Btn_Clicked(3);" />
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_DBShop_Item4">
+                    <Property Name="AbsolutePosition" Value="x:0.000000 y:115.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="Kunwu_DBShop_Btn_Clicked(4);" />
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_DBShop_Item5">
+                    <Property Name="AbsolutePosition" Value="x:0.000000 y:153.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="Kunwu_DBShop_Btn_Clicked(5);" />
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_DBShop_Item6">
+                    <Property Name="AbsolutePosition" Value="x:0.000000 y:191.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="Kunwu_DBShop_Btn_Clicked(6);" />
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_DBShop_Item7">
+                    <Property Name="AbsolutePosition" Value="x:164.000000 y:1.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="Kunwu_DBShop_Btn_Clicked(7);" />
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_DBShop_Item8">
+                    <Property Name="AbsolutePosition" Value="x:164.000000 y:39.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="Kunwu_DBShop_Btn_Clicked(8);" />
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_DBShop_Item9">
+                    <Property Name="AbsolutePosition" Value="x:164.000000 y:77.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="Kunwu_DBShop_Btn_Clicked(9);" />
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_DBShop_Item10">
+                    <Property Name="AbsolutePosition" Value="x:164.000000 y:115.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="Kunwu_DBShop_Btn_Clicked(10);" />
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_DBShop_Item11">
+                    <Property Name="AbsolutePosition" Value="x:164.000000 y:153.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="Kunwu_DBShop_Btn_Clicked(11);" />
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_DBShop_Item12">
+                    <Property Name="AbsolutePosition" Value="x:164.000000 y:191.000000" />
+                    <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+                    <Event Name="Clicked" Function="Kunwu_DBShop_Btn_Clicked(12);" />
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Kunwu_DBShop_Item1_Mask">
+                    <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+		            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Kunwu_DBShop_Item2_Mask">
+                    <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+		            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,39.000000}}"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Kunwu_DBShop_Item3_Mask">
+                    <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+		            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,77.000000}}"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Kunwu_DBShop_Item4_Mask">
+                    <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,115.000000}}"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Kunwu_DBShop_Item5_Mask">
+                    <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,153.000000}}"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Kunwu_DBShop_Item6_Mask">
+                    <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+		            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,191.000000}}"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Kunwu_DBShop_Item7_Mask">
+                    <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+		            <Property Name="UnifiedPosition" Value="{{0.000000,164.000000},{0.000000,1.000000}}"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Kunwu_DBShop_Item8_Mask">
+                    <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+		            <Property Name="UnifiedPosition" Value="{{0.000000,164.000000},{0.000000,39.000000}}"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Kunwu_DBShop_Item9_Mask">
+                    <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,164.000000},{0.000000,77.000000}}"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Kunwu_DBShop_Item10_Mask">
+                    <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,164.000000},{0.000000,115.000000}}"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Kunwu_DBShop_Item11_Mask">
+                    <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,164.000000},{0.000000,153.000000}}"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Kunwu_DBShop_Item12_Mask">
+                    <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,164.000000},{0.000000,191.000000}}"/>
+                    <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_DBShop_ItemInfo1">
+                    <Property Name="AbsolutePosition" Value="x:38.000000 y:0.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo1_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="Text" Value="#{INTERFACE_XML_909}" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo1_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo1_LevelLimit">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_DBShop_ItemInfo2">
+                    <Property Name="AbsolutePosition" Value="x:38.000000 y:38.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo2_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo2_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo2_LevelLimit">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_DBShop_ItemInfo3">
+                    <Property Name="AbsolutePosition" Value="x:38.000000 y:76.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo3_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo3_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo3_LevelLimit">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_DBShop_ItemInfo4">
+                    <Property Name="AbsolutePosition" Value="x:38.000000 y:114.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo4_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo4_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo4_LevelLimit">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_DBShop_ItemInfo5">
+                    <Property Name="AbsolutePosition" Value="x:38.000000 y:152.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo5_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo5_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo5_LevelLimit">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_DBShop_ItemInfo6">
+                    <Property Name="AbsolutePosition" Value="x:38.000000 y:190.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo6_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo6_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo6_LevelLimit">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_DBShop_ItemInfo7">
+                    <Property Name="AbsolutePosition" Value="x:202.000000 y:0.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo7_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo7_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo7_LevelLimit">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_DBShop_ItemInfo8">
+                    <Property Name="AbsolutePosition" Value="x:202.000000 y:38.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo8_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo8_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo8_LevelLimit">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_DBShop_ItemInfo9">
+                    <Property Name="AbsolutePosition" Value="x:202.000000 y:76.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo9_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo9_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo9_LevelLimit">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_DBShop_ItemInfo10">
+                    <Property Name="AbsolutePosition" Value="x:202.000000 y:114.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo10_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo10_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo10_LevelLimit">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_DBShop_ItemInfo11">
+                    <Property Name="AbsolutePosition" Value="x:202.000000 y:152.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo11_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo11_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo11_LevelLimit">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_DBShop_ItemInfo12">
+                    <Property Name="AbsolutePosition" Value="x:202.000000 y:190.000000" />
+                    <Property Name="AbsoluteSize" Value="w:120.000000 h:36.000000" />
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo12_Text">
+                        <Property Name="AbsolutePosition" Value="x:6.000000 y:0.000000" />
+                        <Property Name="AbsoluteSize" Value="w:120.000000 h:18.000000" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo12_Price">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="TextColor" Value="FFFFF263" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_DBShop_ItemInfo12_LevelLimit">
+                        <Property Name="AbsolutePosition" Value="x:0.000000 y:18.000000" />
+                        <Property Name="AbsoluteSize" Value="w:113.000000 h:18.000000" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+    </Window>
+</GUILayout>

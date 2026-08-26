@@ -1,0 +1,300 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection0" Name="DoublePK_TopList_MainFrame">
+    <Property Name="UnifiedSize" Value="{{0.000000,670.000000},{0.000000,492.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-335.000000},{0.500000,-250.000000}}" />
+    <Window Type="TLBB_TitleLace_Affection0" Name="DoublePK_TopList_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,31.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>    
+    <Window Type="TLBB_DragTitle" Name="DoublePK_TopList_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,11.000000}}" />
+      <Property Name="Text" Value="#{SRPK_230331_92}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="DoublePK_TopList_MainFrame" />
+      <Property Name="AlwaysOnTop" Value="True" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="DoublePK_TopList_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function=""/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="DoublePK_TopList_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Event Name="Clicked" Function="DoublePK_TopList_Close();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="DoublePK_TopList_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="DefaultWindow" Name="DoublePK_TopList_InfoBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,70.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Window Type="TLBB_SimpleText" Name="DoublePK_TopList_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,-32.000000},{1.000000,-10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{SRPK_230331_93}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Window Type="TLBB_ButtonNULL" Name="DoublePK_TopList_Info_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-23.000000}}"/>
+            <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Help_Pushed"/>
+            <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Help_Normal"/>
+            <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Help_Hover"/>
+            <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Help_Disabled"/>            
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="DoublePK_TopList_Help_Click()"/>
+          </Window>
+          <Window Type="TLBB_Affection_ButtonCommon" Name="DoublePK_TopList_Info_Award">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{1.000000,-23.000000}}"/>
+            <Property Name="Text" Value="#{SRPK_230331_94}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="DoublePK_TopList_Preview_Click()"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Affection_MultiColumnList" Name="DoublePK_TopList_ListTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,22.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,70.000000}}" />
+        <Property Name="ForceHorzScrollbar" Value="False" />
+        <Property Name="SortSettingEnabled" Value="False" />
+        <Property Name="SelectionMode" Value="RowSingle" />
+        <Property Name="ColumnHeader" Value="text: width:0.1 id:0" />
+        <Property Name="ColumnHeader" Value="text: width:0.5 id:1" />
+        <Property Name="ColumnHeader" Value="text: width:0.2 id:2" />
+        <Property Name="ColumnHeader" Value="text: width:0.2 id:3" />
+        <Property Name="ColumnsSizable" Value="False" />
+        <Property Name="ColumnsMovable" Value="False" />
+        <Property Name="ColumnsAdjust" Value="True" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Window Type="TLBB_SimpleText" Name="DoublePK_TopList_ListTitle_Number">
+          <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}" />
+          <Property Name="Text" Value="#{SRPK_230331_96}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePK_TopList_ListTitle_Team">
+          <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.100000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="Text" Value="#{SRPK_230331_97}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePK_TopList_ListTitle_Relation">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="Text" Value="#{SRPK_230331_98}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePK_TopList_ListTitle_Time">
+          <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="Text" Value="#{SRPK_230331_99}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="DoublePK_TopList_List">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-174.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,90.000000}}"/>
+        <Window Type="TLBB_Affection_NotSuperList" Name="DoublePK_TopList">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-2.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Event Name="ElementLClick" Function="" />
+          <Property Name="SelectMode" Value="Single" />
+          <Window Type="TLBB_Affection_NotSuperListItemCommon_Large" Name="DoublePK_TopList_Item">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_Frame_Lace1" Name="DoublePK_TopList_ItemBK">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+              <Window Type="DefaultWindow" Name="DoublePK_TopList_ItemBKImage">
+                <Property Name="UnifiedSize" Value="{{0.000000,652.000000},{0.000000,62.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Window Type="TLBB_SimpleText" Name="DoublePK_TopList_Number">
+                  <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,22.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-11.000000}}" />
+                  <Property Name="Text" Value="#{SRPK_230331_100}" />
+                  <Property Name="AlwaysOnTop" Value="True" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="DoublePK_TopList_NumberImage">
+                  <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}" />
+                  <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-28.000000}}" />
+                  <Property Name="RiseOnClick" Value="False" />
+                  <Property Name="HorzFormatting" Value="HorzCentred" />
+                  <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_TopListTop1" />
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+                <Window Type="DefaultWindow" Name="DoublePK_TopList_Team">
+                  <Property Name="UnifiedSize" Value="{{0.000000,576.000000},{0.000000,62.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,0.000000}}"/>
+                  <Window Type="DefaultWindow" Name="DoublePK_TopList_TeamMember1">
+                    <Property Name="UnifiedSize" Value="{{0.000000,330.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-22.000000}}"/>
+                    <Window Type="TLBB_StaticImageNULL" Name="DoublePK_TopList_LeaderIcon">
+                      <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                      <Property Name="UnifiedPosition" Value="{{0.0000000,6.000000},{0.0000000,4.000000}}"/>
+                      <Property Name="RiseOnClick" Value="False"/>
+                      <Property Name="Image" Value="set:UIIcons image:LeaderOpening"/>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="DoublePK_TopList_Name1">
+                      <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+                      <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,0.000000}}"/>
+                      <Property Name="Text" Value="名字名字名字@服务器名字" />
+                      <Property Name="RiseOnClick" Value="False" />
+                      <Property Name="HorzFormatting" Value="HorzCentred" />
+                      <Property Name="MouseRButtonHollow" Value="True"/>
+                      <Property Name="MouseMoveHollow" Value="True"/>
+                      <Property Name="MouseLButtonHollow" Value="True"/>
+                      <Property Name="MouseHollow" Value="True"/>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="DoublePK_TopList_School1">
+                      <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}" />
+                      <Property Name="UnifiedPosition" Value="{{1.000000,-130.000000},{0.000000,0.000000}}" />
+                      <Property Name="Text" Value="曼陀" />
+                      <Property Name="RiseOnClick" Value="False" />
+                      <Property Name="HorzFormatting" Value="HorzCentred" />
+                      <Property Name="MouseRButtonHollow" Value="True"/>
+                      <Property Name="MouseMoveHollow" Value="True"/>
+                      <Property Name="MouseLButtonHollow" Value="True"/>
+                      <Property Name="MouseHollow" Value="True"/>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="DoublePK_TopList_Level1">
+                      <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}" />
+                      <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,0.000000}}" />
+                      <Property Name="Text" Value="119级" />
+                      <Property Name="RiseOnClick" Value="False" />
+                      <Property Name="HorzFormatting" Value="HorzCentred" />
+                      <Property Name="MouseRButtonHollow" Value="True"/>
+                      <Property Name="MouseMoveHollow" Value="True"/>
+                      <Property Name="MouseLButtonHollow" Value="True"/>
+                      <Property Name="MouseHollow" Value="True"/>
+                    </Window>
+                  </Window>
+                  <Window Type="DefaultWindow" Name="DoublePK_TopList_TeamMember2">
+                    <Property Name="UnifiedSize" Value="{{0.000000,330.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,2.000000}}"/>
+                    <Window Type="TLBB_SimpleText" Name="DoublePK_TopList_Name2">
+                      <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+                      <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,0.000000}}"/>
+                      <Property Name="Text" Value="名字名字名字@服务器名字" />
+                      <Property Name="RiseOnClick" Value="False" />
+                      <Property Name="HorzFormatting" Value="HorzCentred" />
+                      <Property Name="MouseRButtonHollow" Value="True"/>
+                      <Property Name="MouseMoveHollow" Value="True"/>
+                      <Property Name="MouseLButtonHollow" Value="True"/>
+                      <Property Name="MouseHollow" Value="True"/>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="DoublePK_TopList_School2">
+                      <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}" />
+                      <Property Name="UnifiedPosition" Value="{{1.000000,-130.000000},{0.000000,0.000000}}" />
+                      <Property Name="Text" Value="曼陀" />
+                      <Property Name="RiseOnClick" Value="False" />
+                      <Property Name="HorzFormatting" Value="HorzCentred" />
+                      <Property Name="MouseRButtonHollow" Value="True"/>
+                      <Property Name="MouseMoveHollow" Value="True"/>
+                      <Property Name="MouseLButtonHollow" Value="True"/>
+                      <Property Name="MouseHollow" Value="True"/>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="DoublePK_TopList_Level2">
+                      <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}" />
+                      <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,0.000000}}" />
+                      <Property Name="Text" Value="119级" />
+                      <Property Name="RiseOnClick" Value="False" />
+                      <Property Name="HorzFormatting" Value="HorzCentred" />
+                      <Property Name="MouseRButtonHollow" Value="True"/>
+                      <Property Name="MouseMoveHollow" Value="True"/>
+                      <Property Name="MouseLButtonHollow" Value="True"/>
+                      <Property Name="MouseHollow" Value="True"/>
+                    </Window>
+                  </Window>
+                  <Window Type="TLBB_SimpleText" Name="DoublePK_TopList_Relation">
+                    <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,330.000000},{0.500000,-10.000000}}"/>
+                    <Property Name="Text" Value="#{关系：夫妻}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="HorzFormatting" Value="HorzCentred"/>
+                  </Window>
+                  <Window Type="TLBB_SimpleText" Name="DoublePK_TopList_Num">
+                    <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.500000,-10.000000}}"/>
+                    <Property Name="Text" Value="#{SRPK_230331_101}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="DoublePK_TopList_TeamNull">
+                  <Property Name="UnifiedSize" Value="{{0.000000,480.000000},{0.000000,62.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{SRPK_230331_103}" />
+                  <Property Name="HorzFormatting" Value="HorzCentred"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="DoublePK_TopList_ReachInfo">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-80.000000}}" />
+        <Window Type="TLBB_SimpleText" Name="DoublePK_TopList_ReachNum">
+          <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}" />
+          <Property Name="Text" Value="#{SRPK_230331_104}"/>
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePK_TopList_ReachTop">
+          <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.500000,-10.000000}}" />
+          <Property Name="Text" Value="#{SRPK_230331_106}"/>
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="DoublePK_TopList_My">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,56.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-56.000000}}" />
+        <Window Type="TLBB_Affection_TimeBK" Name="DoublePK_TopList_MyBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{1.000000,-30.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePK_TopList_MyNumber">
+          <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{1.000000,-22.000000}}" />
+          <Property Name="Text" Value="#{SRPK_230331_111}" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+        <Window Type="TLBB_Affection_ButtonCommon" Name="DoublePK_TopList_Btn">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{0.500000,-25.000000}}"/>
+          <Property Name="Text" Value="#{SRPK_230331_114}"/>
+          <Event Name="Clicked" Function="DoublePK_TopList_Prize_Click()"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

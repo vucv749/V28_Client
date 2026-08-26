@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrameNULL" Name="JiangHuZhi_Letter_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,610.000000},{0.000000,550.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-305.000000},{0.500000,-270.500000}}"/>
+        <Window Type="TLBB_DragTitle" Name="JiangHuZhi_Letter_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="JiangHuZhi_Letter_Frame" />
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="JiangHuZhi_Letter_Close">
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="PushedImage" Value="set:NewZhuXian_Task image:NewZhuXian_ClosePush"/>
+          <Property Name="NormalImage" Value="set:NewZhuXian_Task image:NewZhuXian_CloseNor"/>
+          <Property Name="HoverImage" Value="set:NewZhuXian_Task image:NewZhuXian_CloseHover"/>
+          <Property Name="DisabledImage" Value="set:NewZhuXian_Task image:NewZhuXian_ClosePush"/>
+            <Event Name="Clicked" Function="JiangHuZhi_Letter_OnHiden();" />
+        </Window>
+      <Window Type="DefaultWindow" Name="JiangHuZhi_Letter_background_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,598.000000},{0.000000,538.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="JiangHuZhi_Letter_BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,598.000000},{0.000000,538.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:JiangHuZhi_01 image:Letter"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="JiangHuZhi_Letter_QianWang">
+        <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,154.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{1.000000,-206.000000}}"/>
+        <Property Name="PushedImage" Value="set:JiangHuZhi_01 image:GotoBtn_Pushed"/>
+        <Property Name="NormalImage" Value="set:JiangHuZhi_01 image:GotoBtn_Normal"/>
+        <Property Name="HoverImage" Value="set:JiangHuZhi_01 image:GotoBtn_Hover"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="JiangHuZhi_Letter_Clicked()" />
+      </Window>
+    </Window>
+</GUILayout>

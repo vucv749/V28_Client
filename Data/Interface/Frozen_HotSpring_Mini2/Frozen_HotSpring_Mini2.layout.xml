@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Frozen_HotSpring_Mini2_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,28.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-200.000000},{1.000000,-160.000000}}"/>
+    <Property Name="AttachEnabled" Value="True"/>
+    <Window Type="TLBB_DragTitle" Name="Frozen_HotSpring_Mini2_PageHeader">
+        <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-32.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+      <Property Name="DragTarget" Value="Frozen_HotSpring_Mini2_Frame"/>
+      <Window Type="TLBB_SimpleText" Name="Frozen_HotSpring_Mini2_PageHeaderText">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{BXPWQ_240927_59}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="Font" Value="YouYuan11.25"/>
+      </Window>
+
+      </Window>
+    <Window Type="TLBB_Frame2" Name="Frozen_HotSpring_Mini2_WatchMini">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_ButtonNULL" Name="Frozen_HotSpring_Mini2_Image">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.500000,-8.000000}}"/>
+        <Property Name="PushedImage" Value="set:SongLiao02 image:Up_Pushed"/>
+        <Property Name="NormalImage" Value="set:SongLiao02 image:Up_Normal"/>
+        <Property Name="HoverImage" Value="set:SongLiao02 image:Up_Hover"/>
+        <Property Name="DisabledImage" Value="set:SongLiao02 image:Up_Disabled"/>
+      <Event Name="Clicked" Function="Frozen_HotSpring_Mini2_Clicked()" />
+        <Property Name="AlwaysOnTop" Value="True" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

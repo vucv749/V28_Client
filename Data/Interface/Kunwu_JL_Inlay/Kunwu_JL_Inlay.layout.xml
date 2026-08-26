@@ -1,0 +1,537 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="Kunwu_JL_Inlay_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,518.000000},{0.000000,650.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-259.000000},{0.500000,-325.000000}}"/>
+        <Event Name="Hidden" Function="Kunwu_JL_Inlay_OnHidden();" />
+        <Window Type="TLBB_DragTitle" Name="Kunwu_JL_Inlay_DragTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+            <Property Name="DragTarget" Value="Kunwu_JL_Inlay_Frame" />
+            <Window Type="TLBB_SimpleTextFrame" Name="Kunwu_JL_Inlay_SkillType_Text">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}" />
+                <Property Name="Font" Value="YouYuan11.25" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="#{JLYC_241217_44}" />
+            </Window>
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="Kunwu_JL_Inlay_Close">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+            <Event Name="Clicked" Function="Kunwu_JL_Inlay_CloseClicked();" />
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="Kunwu_JL_Inlay_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*PetSkillStudy&quot;);' />
+        </Window>
+        <Window Type="DefaultWindow" Name="Kunwu_JL_Inlay_Function_Frame">
+            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_JL_Inlay_Function_Text">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,90.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="Text" Value="#{JLYC_241217_45}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_Frame_Lace2" Name="Kunwu_JL_Inlay_Function_TopFrame">
+                <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,70.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,90.000000}}"/>
+                <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Inlay_Function_Top_Object_TitlePoint">
+                    <Property Name="UnifiedSize" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,21.000000},{0.000000,9.000000}}"/>
+                    <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Point"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Function_Top_Object_Text">
+                    <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,2.000000}}"/>
+                    <Property Name="Text" Value="#{JLYC_241217_128}"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_JL_Inlay_Function_Top_ObjectBK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.500000,-13.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Inlay_Function_Top_Object">
+                    <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.500000,-12.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Image" Value="set:PetHeader1 image:PetHeader1_1"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Function_Top_Object_Text2">
+                    <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.000000,22.000000}}"/>
+                    <Property Name="Text" Value="#{}"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Inlay_Function_Left_Name_TitlePoint">
+                    <Property Name="UnifiedSize" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,223.000000},{0.000000,9.000000}}"/>
+                    <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Point"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Function_Top_Object_Text3">
+                    <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,232.000000},{0.000000,2.000000}}"/>
+                    <Property Name="Text" Value="#{JLYC_241217_129}"/>
+                    <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_ButtonCommon" Name="Kunwu_JL_Inlay_Function_Left_Button">
+                    <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{1.000000,-26.000000}}"/>
+                    <Property Name="Text" Value="#{JLYC_241217_116}"/>
+                    <Event Name="Clicked" Function="Kunwu_JL_Inlay_OpenPetList();"/>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_JL_Inlay_Skill1">
+                    <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,232.000000},{0.500000,-13.000000}}"/>
+                    <Event Name="Clicked" Function="Kunwu_JL_Inlay_Elf_Clicked(1);"/>
+                    <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Inlay_Function_Left_Set1_Icon_LockImg">
+                        <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_JL_Inlay_Skill2">
+                    <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,285.000000},{0.500000,-13.000000}}"/>
+                    <Event Name="Clicked" Function="Kunwu_JL_Inlay_Elf_Clicked(2);"/>
+                    <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Inlay_Function_Left_Set2_Icon_LockImg">
+                        <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_JL_Inlay_Skill3">
+                    <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,338.000000},{0.500000,-13.000000}}"/>
+                    <Event Name="Clicked" Function="Kunwu_JL_Inlay_Elf_Clicked(3);"/>
+                    <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Inlay_Function_Left_Set3_Icon_LockImg">
+                        <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_JL_Inlay_Skill4">
+                    <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,391.000000},{0.500000,-13.000000}}"/>
+                    <Event Name="Clicked" Function="Kunwu_JL_Inlay_Elf_Clicked(4);"/>
+                    <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Inlay_Function_Left_Set4_Icon_LockImg">
+                        <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_JL_Inlay_Skill5">
+                    <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,444.000000},{0.500000,-13.000000}}"/>
+                    <Event Name="Clicked" Function="Kunwu_JL_Inlay_Elf_Clicked(5);"/>
+                    <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Inlay_Function_Left_Set5_Icon_LockImg">
+                        <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Kunwu_JL_Inlay_Function_RightFrame">
+                <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-166.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,166.000000}}"/>
+                <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Inlay_Object2BK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,92.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,86.000000},{0.000000,0.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Kunwu_JL_Identify image:Kunwu_JL_IconBK"/>
+                    <Window Type="TLBB_ActionButton" Name="Kunwu_JL_Inlay_Object2">
+                        <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,-21.000000},{0.500000,-21.000000}}"/>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_PetModel1_Text1">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="#{}"/>
+                        <Property Name="HorzFormatting" Value="HorzCentred"/>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_PetModel1_Text2">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+                        <Property Name="Text" Value="#{}"/>
+                        <Property Name="HorzFormatting" Value="HorzCentred"/>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Inlay_Function_RightNULL">
+                    <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,60.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-44.000000},{0.000000,16.000000}}"/>
+                    <Property Name="Image" Value="set:Kunwu_JL_Identify image:Kunwu_JL_Arrow"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Kunwu_JL_Inlay_ObjectBK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,92.000000},{0.000000,92.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-179.000000},{0.000000,0.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Image" Value="set:Kunwu_JL_Identify image:Kunwu_JL_IconBK"/>
+                    <Window Type="TLBB_ActionButton" Name="Kunwu_JL_Inlay_Object">
+                        <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,-21.000000},{0.500000,-21.000000}}"/>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_PetModel2_Text1">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="#{}"/>
+                        <Property Name="HorzFormatting" Value="HorzCentred"/>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_PetModel2_Text2">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+                        <Property Name="Text" Value="#{}"/>
+                        <Property Name="HorzFormatting" Value="HorzCentred"/>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_Frame_Lace2" Name="Kunwu_JL_Inlay_Zizhi1">
+                    <Property Name="UnifiedSize" Value="{{0.000000,185.000000},{0.000000,105.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,94.000000}}"/>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Zizhi1_Text2">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,18.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,5.000000}}"/>
+                        <Property Name="Text" Value="#{}" />
+                        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Zizhi1_Text2_1">
+                            <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-66.000000},{0.000000,0.000000}}"/>
+                            <Property Name="Text" Value="" />
+                            <Property Name="HorzFormatting" Value="RightAligned"/>
+                        </Window>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Zizhi1_Text3">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,18.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,25.000000}}"/>
+                        <Property Name="Text" Value="#{}" />
+                        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Zizhi1_Text3_1">
+                            <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-66.000000},{0.000000,0.000000}}"/>
+                            <Property Name="Text" Value="" />
+                            <Property Name="HorzFormatting" Value="RightAligned"/>
+                        </Window>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Zizhi1_Text4">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,18.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,45.000000}}"/>
+                        <Property Name="Text" Value="#{}" />
+                        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Zizhi1_Text4_1">
+                            <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-66.000000},{0.000000,0.000000}}"/>
+                            <Property Name="Text" Value="" />
+                            <Property Name="HorzFormatting" Value="RightAligned"/>
+                        </Window>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Zizhi1_Text5">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,18.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,65.000000}}"/>
+                        <Property Name="Text" Value="#{}" />
+                        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Zizhi1_Text5_1">
+                            <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-66.000000},{0.000000,0.000000}}"/>
+                            <Property Name="Text" Value="" />
+                            <Property Name="HorzFormatting" Value="RightAligned"/>
+                        </Window>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Zizhi1_Text6">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,18.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,85.000000}}"/>
+                        <Property Name="Text" Value="#{}" />
+                        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Zizhi1_Text6_1">
+                            <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-66.000000},{0.000000,0.000000}}"/>
+                            <Property Name="Text" Value="" />
+                            <Property Name="HorzFormatting" Value="RightAligned"/>
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_ButtonNULL" Name="Kunwu_JL_Inlay_Zizhi1_Lookup">
+                    <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,75.000000}}"/>
+                    <Property Name="Tooltip" Value="#{JLYC_241217_172}"/>
+                    <Property Name="PushedImage" Value="set:Button7 image:Friend_Serach_Pushed"/>
+                    <Property Name="NormalImage" Value="set:Button7 image:Friend_Serach_Normal"/>
+                    <Property Name="HoverImage" Value="set:Button7 image:Friend_Serach_Hover"/>
+                    <Property Name="DisabledImage" Value="set:Button7 image:Friend_Serach_Disable"/>
+                    <Event Name="Clicked" Function="Kunwu_JL_Inlay_OpenSkill(1);"/>
+                </Window>
+                <Window Type="TLBB_Frame_Lace2" Name="Kunwu_JL_Inlay_Zizhi2">
+                    <Property Name="UnifiedSize" Value="{{0.000000,185.000000},{0.000000,105.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-225.000000},{0.000000,94.000000}}"/>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Zizhi2_Text2">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,18.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,5.000000}}"/>
+                        <Property Name="Text" Value="#{}" />
+                        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Zizhi2_Text2_1">
+                            <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-66.000000},{0.000000,0.000000}}"/>
+                            <Property Name="Text" Value="" />
+                            <Property Name="HorzFormatting" Value="RightAligned"/>
+                        </Window>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Zizhi2_Text3">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,18.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,25.000000}}"/>
+                        <Property Name="Text" Value="#{}" />
+                        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Zizhi2_Text3_1">
+                            <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-66.000000},{0.000000,0.000000}}"/>
+                            <Property Name="Text" Value="" />
+                            <Property Name="HorzFormatting" Value="RightAligned"/>
+                        </Window>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Zizhi2_Text4">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,18.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,45.000000}}"/>
+                        <Property Name="Text" Value="#{}" />
+                        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Zizhi2_Text4_1">
+                            <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-66.000000},{0.000000,0.000000}}"/>
+                            <Property Name="Text" Value="" />
+                            <Property Name="HorzFormatting" Value="RightAligned"/>
+                        </Window>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Zizhi2_Text5">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,18.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,65.000000}}"/>
+                        <Property Name="Text" Value="#{}" />
+                        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Zizhi2_Text5_1">
+                            <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-66.000000},{0.000000,0.000000}}"/>
+                            <Property Name="Text" Value="" />
+                            <Property Name="HorzFormatting" Value="RightAligned"/>
+                        </Window>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Zizhi2_Text6">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,18.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,85.000000}}"/>
+                        <Property Name="Text" Value="#{}" />
+                        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                        <Property Name="VertFormatting" Value="TopAligned" />
+                        <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Zizhi2_Text6_1">
+                            <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,16.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-66.000000},{0.000000,0.000000}}"/>
+                            <Property Name="Text" Value="" />
+                            <Property Name="HorzFormatting" Value="RightAligned"/>
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_ButtonNULL" Name="Kunwu_JL_Inlay_Zizhi2_Lookup">
+                    <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-55.000000},{0.000000,75.000000}}"/>
+                    <Property Name="Tooltip" Value="#{JLYC_241217_172}"/>
+                    <Property Name="PushedImage" Value="set:Button7 image:Friend_Serach_Pushed"/>
+                    <Property Name="NormalImage" Value="set:Button7 image:Friend_Serach_Normal"/>
+                    <Property Name="HoverImage" Value="set:Button7 image:Friend_Serach_Hover"/>
+                    <Property Name="DisabledImage" Value="set:Button7 image:Friend_Serach_Disable"/>
+                    <Event Name="Clicked" Function="Kunwu_JL_Inlay_OpenSkill(2);"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Icon_Text">
+                    <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.000000,210.000000}}"/>
+                    <Property Name="Text" Value="#{JLYC_241217_86}"/>
+                    <Property Name="HorzFormatting" Value="HorzCentred"/>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_JL_Inlay_Icon">
+                    <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-21.000000},{0.000000,230.000000}}"/>
+                    <Property Name="DraggingEnabled" Value="True"/>
+                    <Property Name="DragAcceptName" Value="W60"/>
+                    <Event Name="RBClicked" Function="Kunwu_JL_Inlay_Elf_OnRBClicked();"/>
+                </Window>
+
+                <Window Type="TLBB_Frame_Lace2" Name="Kunwu_JL_Inlay_Info">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,50.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,282.000000}}"/>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Info_Text">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,40.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+                        <Property Name="Text" Value="#{JLYC_241217_160}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                    </Window>
+                </Window>
+                <Window Type="DefaultWindow" Name="Kunwu_JL_Inlay_Info2">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,52.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,282.000000}}"/>
+                    <Window Type="TLBB_ButtonCheck" Name="Kunwu_JL_Inlay_Info2_Item1">
+                        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{0.000000,6.000000}}"/>
+                        <Property Name="CheckMode" Value="1" />
+                        <Event Name="MouseLButtonDown" Function="Kunwu_JL_Inlay_SelectMode(1)" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Info2_Item1_Text1">
+                        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,2.000000}}"/>
+                        <Property Name="Text" Value="#{JLYC_241217_161}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    </Window>
+                    <Window Type="TLBB_Frame_Lace1" Name="Kunwu_JL_Inlay_Info2_Item1_TextBk">
+                        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,24.000000}}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="HorzFormatting" Value="HorzCentred"/>
+                        <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Info2_Item1_Text">
+                            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,0.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                            <Property Name="Text" Value="#{JLYC_241217_162}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                            <Property Name="HorzFormatting" Value="LeftAligned"/>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Info2_Item1_Text3">
+                            <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,0.000000}}"/>
+                            <Property Name="Text" Value="#{}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                            <Property Name="HorzFormatting" Value="RightAligned"/>
+                        </Window>
+                    </Window>
+                    <Window Type="TLBB_ButtonCheck" Name="Kunwu_JL_Inlay_Info2_Item2">
+                        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-146.000000},{0.000000,6.000000}}"/>
+                        <Property Name="CheckMode" Value="1" />
+                        <Event Name="MouseLButtonDown" Function="Kunwu_JL_Inlay_SelectMode(2)" />
+                    </Window>
+
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Info2_Item2_Text1">
+                        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-132.000000},{0.000000,2.000000}}"/>
+                        <Property Name="Text" Value="#{JLYC_241217_163}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    </Window>
+                    <Window Type="TLBB_Frame_Lace1" Name="Kunwu_JL_Inlay_Info2_Item2_TextBK">
+                        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-180.000000},{0.000000,24.000000}}"/>
+                        <Property Name="Text" Value="#{JLYC_241217_164}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                        <Property Name="HorzFormatting" Value="HorzCentred"/>
+                        <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Info2_Item2_Text2">
+                            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,0.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                            <Property Name="Text" Value="#{JLYC_241217_164}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                            <Property Name="HorzFormatting" Value="HorzCentred"/>
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_JL_Inlay_MoneyInfo">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,22.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{1.000000,-89.000000}}"/>
+                    <Property Name="Text" Value="#{JLYC_241217_22}" />
+                    <Window Type="TLBB_Money" Name="Kunwu_JL_Inlay_Money">
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
+                        <Property Name="CopperIcon" Value="set:Button6 image:Lace_JiaoziTong" />
+                        <Property Name="GoldIcon" Value="set:Button6 image:Lace_JiaoziJin" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="MoneyNumber" Value="0" />
+                        <Property Name="SilverIcon" Value="set:Button6 image:Lace_JiaoziYin" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_JL_Inlay_SelfJiaozi_Info">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,22.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{1.000000,-67.000000}}"/>
+                    <Property Name="Text" Value="#{JLYC_241217_24}" />
+                    <Window Type="TLBB_Money" Name="Kunwu_JL_Inlay_SelfJiaozi">
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
+                        <Property Name="CopperIcon" Value="set:Button6 image:Lace_JiaoziTong" />
+                        <Property Name="GoldIcon" Value="set:Button6 image:Lace_JiaoziJin" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="MoneyNumber" Value="0" />
+                        <Property Name="SilverIcon" Value="set:Button6 image:Lace_JiaoziYin" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_JL_Inlay_SelfMoney_Info">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,22.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{1.000000,-45.000000}}"/>
+                    <Property Name="Text" Value="#{JLYC_241217_26}" />
+                    <Window Type="TLBB_Money" Name="Kunwu_JL_Inlay_SelfMoney">
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                        <Property Name="MoneyNumber" Value="0" />
+                    </Window>
+                </Window>
+                <Window Type="TLBB_Frame_Lace5" Name="Kunwu_JL_Inlay_Blank">
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+                    <Window Type="TLBB_ButtonCheck" Name="Kunwu_JL_Inlay_Button">
+                        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,4.000000}}"/>
+                        <Property Name="CheckMode" Value="0" />
+                        <Property Name="Tooltip" Value="#{JLYC_241217_194}"/>
+                        <Event Name="MouseLButtonDown" Function="Kunwu_JL_Inlay_YBPayConfirm()" />
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Kunwu_JL_Inlay_Button_Text1">
+                        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="#{JLYC_241217_193}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_ButtonCommon" Name="Kunwu_JL_Inlay_Accept">
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
+                    <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}" />
+                    <Property Name="Text" Value="#{JLYC_241217_50}" />
+                    <Event Name="Clicked" Function="Kunwu_JL_Inlay_OK_Clicked();" />
+                </Window>
+                <Window Type="TLBB_ButtonCommon" Name="Kunwu_JL_Inlay_Cancel">
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+                    <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}" />
+                    <Property Name="Text" Value="#{JLYC_241217_63}" />
+                    <Event Name="Clicked" Function="Kunwu_JL_Inlay_CloseClicked();" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

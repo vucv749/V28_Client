@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Talent_TreasureHunt_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,388.000000},{0.000000,268.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-194.000000},{0.500000,-134.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="Talent_TreasureHunt_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="Talent_TreasureHunt_Frame"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="Talent_TreasureHunt_BK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="Image" Value="set:Talent_TreasureHunt02 image:TreasureHunt_BK"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="Talent_TreasureHunt_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-52.000000},{0.000000,6.000000}}"/>
+      <Property Name="PushedImage" Value="set:Talent_TreasureHunt02 image:TreasureHunt_Close_Pushed"/>
+      <Property Name="NormalImage" Value="set:Talent_TreasureHunt02 image:TreasureHunt_Close_Normal"/>
+      <Property Name="HoverImage" Value="set:Talent_TreasureHunt02 image:TreasureHunt_Close_Hover"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Talent_TreasureHuntGift_OnClose()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Talent_TreasureHunt_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="Talent_TreasureHunt_Image">
+        <Property Name="UnifiedSize" Value="{{0.000000,338.000000},{0.000000,188.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,28.000000},{0.000000,20.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Talent_TreasureHunt01 image:wuliangshan_1"/>
+      </Window>     
+      <Window Type="TLBB_SimpleText" Name="Talent_TreasureHunt_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,-65.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,208.000000}}"/>
+        <Property Name="Text" Value="#{ZQSS_220429_224}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

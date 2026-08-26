@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame6" Name="Higntlight_List_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,286.000000},{0.000000,160.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-332.000000},{0.000000,425.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="Higntlight_List_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-90.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,0.000000}}"/>
+      <Property Name="DragTarget" Value="Higntlight_List_Frame" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{SHYH_20250714_1}" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="Higntlight_List_Image">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,4.000000}}"/>
+      <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+      <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+      <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+      <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>
+      <Event Name="Clicked" Function="Higntlight_List_OpenMini()"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="Higntlight_List_Btn">
+      <Property Name="UnifiedSize" Value="{{0.000000,27.000000},{0.000000,29.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.000000,2.000000}}"/>
+      <Property Name="PushedImage" Value="set:CommonFrame38 image:WorldBoss_Close_Pushed"/>
+      <Property Name="NormalImage" Value="set:CommonFrame38 image:WorldBoss_Close_Normal"/>
+      <Property Name="HoverImage" Value="set:CommonFrame38 image:WorldBoss_Close_Hover"/>
+      <Property Name="DisabledImage" Value="set:CommonFrame38 image:WorldBoss_Close_Disable"/>
+      <Event Name="Clicked" Function="Higntlight_List_OpenMini()" />
+    </Window>
+    
+    
+    <Window Type="TLBB_MultiColumnList" Name="Higntlight_List_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,22.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,25.000000}}"/>
+      <Property Name="ForceHorzScrollbar" Value="False" />
+      <Property Name="SortSettingEnabled" Value="False" />
+      <Property Name="SelectionMode" Value="RowSingle" />
+      <Property Name="ColumnHeader" Value="text: width:0.15 id:0" />
+      <Property Name="ColumnHeader" Value="text: width:0.4 id:1" />
+      <Property Name="ColumnHeader" Value="text: width:0.45 id:2" />
+      <Property Name="ColumnsSizable" Value="False" />
+      <Property Name="ColumnsMovable" Value="False" />
+      <Property Name="ColumnsAdjust" Value="True" />
+      <Property Name="AlwaysOnTop" Value="True" />
+        <Window Type="TLBB_SimpleText" Name="Higntlight_List_Level_Text">
+          <Property Name="UnifiedSize" Value="{{0.150000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}" />
+          <Property Name="Text" Value="#{SHYH_20250714_2}" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Higntlight_List_Name_Text">
+          <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.150000,0.000000},{0.000000,1.000000}}" />
+          <Property Name="Text" Value="#{SHYH_20250714_3}" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Higntlight_List_Hurt_Text">
+          <Property Name="UnifiedSize" Value="{{0.450000,0.000000},{1.000000,0.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.550000,0.000000},{0.000000,1.000000}}" />
+          <Property Name="Text" Value="#{SHYH_20250714_4}" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+    </Window>
+    
+    
+    
+      <Window Type="DefaultWindow" Name="Higntlight_List_Frame_Client1">
+        <Property Name="UnifiedSize" Value="{{0.000000,273.000000},{0.000000,35.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,48.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Higntlight_List_PickOneBK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,271.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Higntlight_List image:Higntlight_List_BK1"/>
+        </Window>
+      <Window Type="DefaultWindow" Name="Higntlight_List_Level1">
+        <Property Name="UnifiedSize" Value="{{1.000000,-250.000000},{1.000000,-8.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,2.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Higntlight_List_Level_Text1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{1.000000,-5.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{SHYH_20250714_5}" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Higntlight_List_Name1">
+        <Property Name="UnifiedSize" Value="{{1.000000,-165.000000},{1.000000,-8.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,4.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Higntlight_List_Name_Text1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{1.000000,-5.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{SHYH_20250714_8}" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Higntlight_List_Hurt1">
+        <Property Name="UnifiedSize" Value="{{1.000000,-159.000000},{1.000000,-8.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,151.000000},{0.000000,4.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Higntlight_List_Hurt_Text1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{1.000000,-5.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{SHYH_20250714_8}" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Higntlight_List_Progressbk1">
+          <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,155.000000},{0.000000,10.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Higntlight_List image:Higntlight_List_ZB1"/>
+          <Window Type="TLBB_HigntlightListRed" Name="Higntlight_List_Progress1">
+            <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{1.000000,-5.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,3.0000000},{0.000000,2.000000}}" />
+            <Property Name="CurrentProgress" Value="0.625" />
+            <Property Name="MoveSpeed" Value="1" />
+          </Window>
+        </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="Higntlight_List_Frame_Client2">
+      <Property Name="UnifiedSize" Value="{{0.000000,273.000000},{0.000000,35.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,85.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="Higntlight_List_PickOneBK2">
+        <Property Name="UnifiedSize" Value="{{0.000000,271.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Higntlight_List image:Higntlight_List_BK2"/>
+      <Window Type="DefaultWindow" Name="Higntlight_List_Level2">
+        <Property Name="UnifiedSize" Value="{{1.000000,-250.000000},{1.000000,-8.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,2.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Higntlight_List_Level_Text2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{1.000000,-5.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{SHYH_20250714_5}" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Higntlight_List_Name2">
+        <Property Name="UnifiedSize" Value="{{1.000000,-165.000000},{1.000000,-8.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,4.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Higntlight_List_Name_Text2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{1.000000,-5.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{SHYH_20250714_8}" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Higntlight_List_Hurt2">
+        <Property Name="UnifiedSize" Value="{{1.000000,-159.000000},{1.000000,-8.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,151.000000},{0.000000,4.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Higntlight_List_Hurt_Text2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{1.000000,-5.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{SHYH_20250714_8}" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Higntlight_List_Progressbk2">
+        <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,155.000000},{0.000000,10.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Higntlight_List image:Higntlight_List_ZB2"/>
+        <Window Type="TLBB_HigntlightListYellow" Name="Higntlight_List_Progress2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{1.000000,-5.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.0000000},{0.000000,2.000000}}" />
+          <Property Name="CurrentProgress" Value="0.625" />
+          <Property Name="MoveSpeed" Value="1" />
+        </Window>
+      </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="Higntlight_List_Frame_Client3">
+      <Property Name="UnifiedSize" Value="{{0.000000,273.000000},{0.000000,35.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,122.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="Higntlight_List_PickOneBK3">
+        <Property Name="UnifiedSize" Value="{{0.000000,271.000000},{0.000000,34.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Higntlight_List image:Higntlight_List_BK3"/>
+      <Window Type="DefaultWindow" Name="Higntlight_List_Level3">
+        <Property Name="UnifiedSize" Value="{{1.000000,-250.000000},{1.000000,-8.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,2.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Higntlight_List_Level_Text3">
+          <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{1.000000,-5.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{SHYH_20250714_5}" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Higntlight_List_Name3">
+        <Property Name="UnifiedSize" Value="{{1.000000,-165.000000},{1.000000,-8.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,4.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Higntlight_List_Name_Text3">
+          <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{1.000000,-5.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{SHYH_20250714_8}" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Higntlight_List_Hurt3">
+        <Property Name="UnifiedSize" Value="{{1.000000,-159.000000},{1.000000,-8.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,151.000000},{0.000000,4.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Higntlight_List_Hurt_Text3">
+          <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{1.000000,-5.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{SHYH_20250714_8}" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Higntlight_List_Progressbk3">
+        <Property Name="UnifiedSize" Value="{{0.000000,108.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,155.000000},{0.000000,10.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:Higntlight_List image:Higntlight_List_ZB1"/>
+        <Window Type="TLBB_HigntlightListYellow" Name="Higntlight_List_Progress3">
+          <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{1.000000,-5.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.0000000},{0.000000,2.000000}}" />
+          <Property Name="CurrentProgress" Value="0.625" />
+          <Property Name="MoveSpeed" Value="1" />
+        </Window>
+      </Window>
+    </Window>
+    </Window>
+  </Window>
+</GUILayout>

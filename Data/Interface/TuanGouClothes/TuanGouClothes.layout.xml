@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="TuanGouClothes_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,1024.000000},{0.000000,546.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-512.000000},{0.500000,-273.000000}}"/>
+    <Event Name="Hidden" Function="TuanGouClothes_OnHiden();"/>
+    <Window Type="TLBB_HeroTitle01" Name="TuanGouClothes_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,320.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-160.000000},{0.000000,-2.000000}}"/>
+    </Window>    
+    <Window Type="TLBB_DragTitle" Name="TuanGouClothes_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+      <Property Name="Text" Value="#{SZTG_230825_51}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="TuanGouClothes_Frame"/>
+    </Window>   
+    <Window Type="TLBB_ButtonClose2" Name="TuanGouClothes_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.000000,9.000000}}"/>
+      <Event Name="Clicked" Function="TuanGouClothes_Close();"/>
+    </Window>    
+    <Window Type="TLBB_HeroLace01" Name="TuanGouClothes_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>        
+      <Window Type="TLBB_StaticImageNULL" Name="TuanGouClothes_ClientBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,1016.000000},{0.000000,512.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/> 
+        <Property Name="Image" Value="set:TuanGou2 image:PreviewBK"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>        
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="TuanGouClothes_Preview">
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,19.000000},{0.000000,42.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,470.000000},{0.000000,292.000000}}"/>
+        <Property Name="PushedImage" Value="set:TuanGou image:Preview_Pushed"/>
+        <Property Name="NormalImage" Value="set:TuanGou image:Preview_Normal"/>
+        <Property Name="HoverImage" Value="set:TuanGou image:Preview_Hover"/>
+        <Property Name="DisabledImage" Value="set:TuanGou image:Preview_Disabled"/>
+	      <Event Name="Clicked" Function="TuanGouClothes_OnPreviewClick();"/>
+      </Window>  
+  </Window>    
+  </Window>
+</GUILayout>

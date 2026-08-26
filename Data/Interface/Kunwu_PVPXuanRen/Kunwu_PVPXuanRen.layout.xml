@@ -1,0 +1,213 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Kunwu_PVPXuanRen_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,552.000000},{0.000000,386.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-276.000000},{0.500000,-132.000000}}"/>
+    <Window Type="TLBB_FrameY" Name="Kunwu_PVPXuanRen_FrameBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,388.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="Kunwu_PVPXuanRen_Title">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,0.000000}}"/>
+      <Property Name="Text" Value="#{ZSYC_241211_62}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="Kunwu_PVPXuanRen_Frame"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="Kunwu_PVPXuanRen_Client">
+      <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,360.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,22.000000}}"/>
+      <Property Name="Image" Value="set:Kunwu_PVP image:Kunwu_PVPBK3"/>
+      <Window Type="DefaultWindow" Name="Kunwu_PVPXuanRen_Content_1">
+        <Property Name="UnifiedSize" Value="{{0.000000,176.000000},{0.000000,280.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,26.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="DefaultWindow" Name="Kunwu_PVPXuanRen_ContentBK_1">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_PVPXuanRen_Img_1">
+            <Property Name="UnifiedSize" Value="{{0.000000,176.000000},{0.000000,280.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Kunwu_PVP image:Kunwu_PVPDDN"/>
+            <Window Type="TLBB_ButtonCheckNULL" Name="Kunwu_PVPXuanRen_Img_1Btn">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="CheckMode" Value="1"/>
+              <Property Name="PushedImage" Value="set:Frozen_PVP image:Frozen_PVPImagePush"/>
+              <Event Name="Clicked" Function="Kunwu_PVPXuanRen_Img_1Btn_Click(0);"/>
+              <Window Type="DefaultWindow" Name="Kunwu_PVPXuanRen_Img_1Skill">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,-6.000000},{1.000000,-52.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_PVPXuanRen_Img_1_SkillActionBtn_1">
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,0.000000}}"/>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_PVPXuanRen_Img_1_SkillActionBtn_2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.000000,0.000000}}"/>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_PVPXuanRen_Img_1_SkillActionBtn_3">
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,0.000000}}"/>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_PVPXuanRen_Img_1_SkillActionBtn_4">
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,0.000000}}"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Kunwu_PVPXuanRen_ContentTitle_1">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="Kunwu_PVPXuanRen_ContentTitle_Info_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="#{BXDZ_240918_140}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Visible" Value="False"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Kunwu_PVPXuanRen_Content_2">
+        <Property Name="UnifiedSize" Value="{{0.000000,176.000000},{0.000000,280.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-88.000000},{0.000000,26.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="DefaultWindow" Name="Kunwu_PVPXuanRen_ContentBK_2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_PVPXuanRen_Img_2">
+            <Property Name="UnifiedSize" Value="{{0.000000,176.000000},{0.000000,280.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Kunwu_PVP image:Kunwu_PVPJLYH"/>
+            <Window Type="TLBB_ButtonCheckNULL" Name="Kunwu_PVPXuanRen_Img_2Btn">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="CheckMode" Value="1"/>
+              <Property Name="PushedImage" Value="set:Frozen_PVP image:Frozen_PVPImagePush"/>
+              <Event Name="Clicked" Function="Kunwu_PVPXuanRen_Img_1Btn_Click(1);"/>
+                <Window Type="DefaultWindow" Name="Kunwu_PVPXuanRen_Img_2Skill">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,-6.000000},{1.000000,-52.000000}}"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Window Type="TLBB_ActionButton" Name="Kunwu_PVPXuanRen_Img_2_SkillActionBtn_1">
+                    <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,0.000000}}"/>
+                  </Window>
+                  <Window Type="TLBB_ActionButton" Name="Kunwu_PVPXuanRen_Img_2_SkillActionBtn_2">
+                    <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.000000,0.000000}}"/>
+                  </Window>
+                  <Window Type="TLBB_ActionButton" Name="Kunwu_PVPXuanRen_Img_2_SkillActionBtn_3">
+                    <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,0.000000}}"/>
+                  </Window>
+                  <Window Type="TLBB_ActionButton" Name="Kunwu_PVPXuanRen_Img_2_SkillActionBtn_4">
+                    <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,0.000000}}"/>
+                  </Window>
+                </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Kunwu_PVPXuanRen_ContentTitle_2">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="Kunwu_PVPXuanRen_ContentTitle_Info_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="#{BXDZ_240918_141}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Visible" Value="False"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Kunwu_PVPXuanRen_Content_3">
+        <Property Name="UnifiedSize" Value="{{0.000000,176.000000},{0.000000,280.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-176.000000},{0.000000,26.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="DefaultWindow" Name="Kunwu_PVPXuanRen_ContentBK_3">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_PVPXuanRen_Img_3">
+            <Property Name="UnifiedSize" Value="{{0.000000,176.000000},{0.000000,280.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Kunwu_PVP image:Kunwu_PVPMF"/>
+            <Window Type="TLBB_ButtonCheckNULL" Name="Kunwu_PVPXuanRen_Img_3Btn">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="CheckMode" Value="1"/>
+              <Property Name="PushedImage" Value="set:Frozen_PVP image:Frozen_PVPImagePush"/>
+              <Event Name="Clicked" Function="Kunwu_PVPXuanRen_Img_1Btn_Click(2);"/>
+              <Window Type="DefaultWindow" Name="Kunwu_PVPXuanRen_Img_3Skill">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,-6.000000},{1.000000,-52.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_PVPXuanRen_Img_3_SkillActionBtn_1">
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,0.000000}}"/>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_PVPXuanRen_Img_3_SkillActionBtn_2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.000000,0.000000}}"/>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_PVPXuanRen_Img_3_SkillActionBtn_3">
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,0.000000}}"/>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_PVPXuanRen_Img_3_SkillActionBtn_4">
+                  <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,0.000000}}"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Kunwu_PVPXuanRen_ContentTitle_3">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="Kunwu_PVPXuanRen_ContentTitle_Info_3">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="#{BXDZ_240918_141}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="Visible" Value="False"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Kunwu_PVPXuanRen_CountdownIcon">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,194.000000},{1.000000,-353.000000}}"/>
+        <Property Name="Image" Value="set:DuoBao1 image:DuoBao1_MiniTime"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="Kunwu_PVPXuanRen_Time">
+        <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-54.000000},{0.500000,-174.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Kunwu_PVPXuanRen_Time_Text">
+          <Property Name="UnifiedSize" Value="{{0.750000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{ZSYC_241211_63}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+        </Window>
+        <Window Type="TLBB_StopWatch" Name="Kunwu_PVPXuanRen_StopWatch">
+          <Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.750000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonCommon12" Name="Kunwu_PVPXuanRen_OK">
+      <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.50000,-48.000000},{1.000000,-42.000000}}"/>
+      <Property Name="Text" Value="#{ZSYC_241211_64}"/>
+      <Event Name="Clicked" Function="Kunwu_PVPXuanRen_OK();"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Tooltip" Value="#{ZSYC_241211_65}"/>
+    </Window>
+    </Window>
+  </Window>
+</GUILayout>

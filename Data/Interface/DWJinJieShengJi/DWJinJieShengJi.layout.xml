@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="DWJinJieShengJi_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,440.000000},{0.000000,380.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-220.000000},{0.500000,-190.000000}}"/>
+    <Event Name="Hidden" Function="DWJinJieShengJi_OnHiden();" />
+    <Window Type="TLBB_DragTitle" Name="DWJinJieShengJi_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="DragTarget" Value="DWJinJieShengJi_Frame" />
+      <Window Type="TLBB_SimpleText" Name="DWJinJieShengJi_Title">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{DWJJ_240329_38}" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="DWJinJieShengJi_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonHelp" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="DWJinJieShengJi_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="this:Hide();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="DWJinJieShengJi_Frame_Client">
+      <Property Name="AbsolutePosition" Value="x:7.000000 y:30.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-39.000000}}" />
+      <Window Type="DefaultWindow" Name="DWJinJieShengJi_Frame_YQ">
+        <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,25.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,4.000000}}"/>
+        <Window Type="TLBB_ButtonFenYe2" Name="DWJinJieShengJi_Frame_YQ1">
+          <Property Name="UnifiedSize" Value="{{0.000000,124.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,124.000000},{0.000000,0.000000}}"/>
+          <Property Name="Tooltip" Value=""/>
+          <Property Name="Text" Value="#{DWJJ_240329_156}"/>
+          <Property Name="Selected" Value="True"/>
+          <Property Name="CheckMode" Value="1"/>
+        </Window>
+        <Window Type="TLBB_ButtonFenYe2" Name="DWJinJieShengJi_Frame_YQ2">
+          <Property Name="UnifiedSize" Value="{{0.000000,124.000000},{0.000000,27.000000}}"/>
+          <Property Name="Tooltip" Value=""/>
+          <Property Name="Text" Value="#{DWJJ_240329_157}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="DWJinJieShengJi_ChangeTabIndex();" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="DWJinJieShengJi_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.00000,120.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,27.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{DWJJ_240329_161}" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DWJinJieShengJi_Info2">
+        <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.150000,0.000000},{0.000000,150.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{DWJJ_240329_40}" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="DWJinJieShengJi_Object">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.700000,0.000000},{0.000000,152.000000}}"/>
+        <Property Name="DragAcceptName" Value="G183" />
+        <Property Name="DraggingEnabled" Value="True" />
+        <Event Name="RBClicked" Function="DWJinJieShengJi_Resume_DWInfo();" />
+      </Window>
+      <Window Type="DefaultWindow" Name="DWJinJieShengJi_Type1">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,30.000000}}"/>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="DWJinJieShengJi_Type1_name">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="LeftAligned"/>
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="" />
+        </Window>
+        <Window Type="TLBB_ComboList" Name="DWJinJieShengJi_Type1_Level">
+          <Property Name="UnifiedSize" Value="{{0.250000,10.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.000000,0.000000}}"/>
+          <Event Name="ListSelectionAccepted" Function="DWJinJieShengJi_Type1_Changed();"/>
+          <Window Type="TLBB_ButtonNULL" Name="DWJinJieShengJi_Type1_Leveltip">
+            <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.000000,0.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="DWJinJieShengJi_Type1_Leveltip_Click();" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJieShengJi_Type1_Levelup">
+          <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.580000,10.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="LeftAligned"/>
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{DWJJ_240329_348}" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="DWJinJieShengJi_Type1_Info">
+          <Property Name="UnifiedSize" Value="{{0.210000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.695000,32.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="DWJinJieShengJi_JCSneed">
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{1.000000,-99.000000}}"/>
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{DWJJ_240329_43}" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Window Type="TLBB_SimpleText" Name="DWJinJieShengJi_JCSneed_Text">
+          <Property Name="UnifiedSize" Value="{{0.480000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="RightAligned"/>
+          <Property Name="Text" Value="" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="DWJinJieShengJi_JCSown">
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{1.000000,-77.000000}}"/>
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{DWJJ_240329_48}" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Window Type="TLBB_SimpleText" Name="DWJinJieShengJi_JCSown_Text">
+          <Property Name="UnifiedSize" Value="{{0.480000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="RightAligned"/>
+          <Property Name="Text" Value="" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="DWJinJieShengJi_Yuanbao">
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{1.000000,-55.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,22.000000}}" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{DWJJ_240329_52}" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Window Type="TLBB_SimpleText" Name="DWJinJieShengJi_Yuanbao_Text">
+          <Property Name="UnifiedSize" Value="{{0.480000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="RightAligned"/>
+          <Property Name="Text" Value="" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="DWJinJieShengJi_Blank">
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-30.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-124.000000},{0.000000,20.000000}}" />
+        <Window Type="TLBB_ButtonCheck" Name="DWJinJieShengJi_cost">
+          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+          <Property Name="Selected" Value="True"/>
+          <Event Name="MouseButtonUp" Function=""/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJieShengJi_cost_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{DWJJ_240329_54}"/>
+          <Property Name="Tooltip" Value="#{DWJJ_240329_55}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_ButtonCheck" Name="DWJinJieShengJi_cost2">
+          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,4.000000}}"/>
+          <Property Name="Selected" Value="True"/>
+          <Property Name="Visible" Value="False"/>
+          <Event Name="MouseButtonUp" Function=""/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DWJinJieShengJi_cost2_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,134.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{DWJJ_240329_54}"/>
+          <Property Name="Tooltip" Value="#{DWJJ_240329_55}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Visible" Value="False"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="DWJinJieShengJi_OK">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-122.000000},{1.000000,-30.000000}}"/>
+        <Property Name="Text" Value="#{DWJJ_240329_56}" />
+        <Event Name="Clicked" Function="DWJinJieShengJi_OK_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="DWJinJieShengJi_Cancel">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-30.000000}}"/>
+        <Property Name="Text" Value="#{DWJJ_240329_27}" />
+        <Event Name="Clicked" Function="this:Hide();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

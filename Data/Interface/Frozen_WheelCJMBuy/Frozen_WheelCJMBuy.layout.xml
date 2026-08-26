@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Frozen0" Name="Frozen_WheelCJMBuy_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,304.000000},{0.000000,298.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-152.000000},{0.150000,-52.000000}}"/>
+    <Property Name="AlwaysOnTop" Value="True"/>
+    <Event Name="Hidden" Function="Frozen_WheelCJMBuy_OnHidden();"/>
+    <Window Type="TLBB_TitleLace_Frozen" Name="Frozen_WheelCJMBuy_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,19.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-135.000000},{0.000000,12.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Frozen_WheelCJMBuy_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,10.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Text" Value="#{BXZP_240911_68}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="Frozen_WheelCJMBuy_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Frozen_WheelCJMBuy_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Frozen_WheelCJMBuy_Close_Clicked();"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Frozen_WheelCJMBuy_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="Frozen_WheelCJMBuy_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-50.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,33.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_Frame_Lace1" Name="Frozen_WheelCJMBuy_ItemInfo">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,104.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,6.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_SimpleText" Name="Frozen_WheelCJMBuy_ItemInfo_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{1.000000,-4.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="#{BXZP_240911_69}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Frozen_WheelCJMBuy_BuyNumBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,112.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_SimpleText" Name="Frozen_WheelCJMBuy_Item1_CashText">
+          <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{BXZP_240911_70}"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="Frozen_WheelCJMBuy_Item1_CashBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,74.000000},{0.500000,-10.000000}}"/>
+          <Window Type="TLBB_EditBoxNormal" Name="Frozen_WheelCJMBuy_Item1_Cash">
+            <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="ValidationString" Value="[0-9]*"/>
+            <Property Name="Text" Value="1"/>
+            <Property Name="MaxTextLength" Value="6"/>
+            <Event Name="TextChanged" Function="Frozen_WheelCJMBuy_TextChanged();"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="Frozen_WheelCJMBuy_Max">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,26.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Text" Value="#{CLHC_170901_51}"/>
+          <Event Name="Clicked" Function="Frozen_WheelCJMBuy_CalMax();"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleTextFrame" Name="Frozen_WheelCJMBuy_Have">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,142.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Text" Value="#{BXZP_240911_125}"/>
+        <Window Type="TLBB_SimpleText" Name="Frozen_WheelCJMBuy_HaveNum">
+          <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="RightAligned"/>
+          <Property Name="Text" Value="#{BXZP_240911_126}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleTextFrame" Name="Frozen_WheelCJMBuy_Price">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,168.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Text" Value="#{BXZP_240911_72}"/>
+        <Window Type="TLBB_SimpleText" Name="Frozen_WheelCJMBuy_PriceNum">
+          <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="RightAligned"/>
+          <Property Name="Text" Value="#{BXZP_240911_73}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleTextFrame" Name="Frozen_WheelCJMBuy_Cash">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,194.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Text" Value="#{BXZP_240911_74}"/>
+        <Window Type="TLBB_SimpleText" Name="Frozen_WheelCJMBuy_CashNum">
+          <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="RightAligned"/>
+          <Property Name="Text" Value="#{BXZP_240911_75}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="Frozen_WheelCJMBuy_ButtonFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,222.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_Frame_Lace5" Name="Frozen_WheelCJMBuy_ButtonBlank">
+          <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="Frozen_WheelCJMBuy_Item1_GetButton">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{0.000000,2.000000}}"/>
+          <Event Name="Clicked" Function="Frozen_WheelCJMBuy_GetClick(1);"/>
+          <Property Name="Text" Value="#{BXZP_240911_58}" />
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="Frozen_WheelCJMBuy_CancelButton">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{0.000000,2.000000}}"/>
+          <Event Name="Clicked" Function="Frozen_WheelCJMBuy_Close_Clicked();" />
+          <Property Name="Text" Value="#{BXZP_240911_59}"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

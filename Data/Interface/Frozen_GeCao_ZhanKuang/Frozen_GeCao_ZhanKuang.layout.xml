@@ -1,0 +1,324 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Frozen2" Name="Frozen_GeCao_ZhanKuang_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,342.000000},{0.000000,368.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-366.000000},{1.000000,-386.000000}}"/>
+    <Property Name="AttachEnabled" Value="true"/>
+      <Window Type="DefaultWindow" Name="Frozen_GeCao_ZhanKuang_DragTitleBK">
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,19.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.000000,3.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+      <Window Type="TLBB_DragTitle" Name="Frozen_GeCao_ZhanKuang_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-48.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,2.000000}}"/>
+        <Property Name="Text" Value="#{BXDR_20240920_77}"/>
+        <Property Name="Font" Value="YouYuan11.25"/>
+        <Property Name="DragTarget" Value="Frozen_GeCao_ZhanKuang_Frame"/>
+      </Window>
+      <Window Type="TLBB_ButtonHelp" Name="Frozen_GeCao_ZhanKuang_Help">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Frozen_GeCao_ZhanKuang_Help_Clicked()"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Frozen_GeCao_ZhanKuang_OnClosed">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,4.000000}}"/>
+        <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+        <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+        <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+        <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>   
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Frozen_GeCao_ZhanKuang_Frame_Close_Clicked()"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="Frozen_GeCao_ZhanKuang_Progress_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,24.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="DefaultWindow" Name="Frozen_GeCao_ZhanKuang_InfoBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Frozen_GeCao_ZhanKuang_CountdownIcon">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,10.000000}}"/>
+            <Property Name="Image" Value="set:DuoBao1 image:DuoBao1_MiniTime"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_Countdown">
+            <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,129.000000},{0.000000,8.000000}}"/>
+            <Property Name="Text" Value="#{BXDR_20240920_80}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_StopWatch" Name="Frozen_GeCao_ZhanKuang_Countdown_Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,7.000000}}"/>
+            <Property Name="Text" Value="00:00"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="ReachedZero" Function=""/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_Countdown_TimeFinish">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,7.000000}}"/>
+            <Property Name="Text" Value="#{BXDR_20240920_81}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="Frozen_GeCao_ZhanKuang_PersonalInfo">
+            <Property Name="UnifiedSize" Value="{{1.000000,-2.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,30.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_PersonalInfo_Level">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{BXDR_20240920_82}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_PersonalInfo_EXP">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,176.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{BXDR_20240920_83}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+          </Window>          
+        </Window>
+        <Window Type="TLBB_Frame_Lace3" Name="Frozen_GeCao_ZhanKuang_TopList_List_Frame">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,188.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,61.000000}}"/>
+          <Window Type="DefaultWindow" Name="Frozen_GeCao_ZhanKuang_TopList_ListTitleBK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,4.000000}}"/>
+            <Window Type="TLBB_MultiColumnList" Name="Frozen_GeCao_ZhanKuang_TopList_ListTitle">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="ForceHorzScrollbar" Value="False" />
+              <Property Name="SortSettingEnabled" Value="False" />
+              <Property Name="SelectionMode" Value="RowSingle" />
+              <Property Name="ColumnHeader" Value="text: width:0.3 id:0" />
+              <Property Name="ColumnHeader" Value="text: width:0.4 id:1" />
+              <Property Name="ColumnHeader" Value="text: width:0.3 id:2" />
+              <Property Name="ColumnsSizable" Value="False" />
+              <Property Name="ColumnsMovable" Value="False" />
+              <Property Name="ColumnsAdjust" Value="True" />  
+            <Window Type="DefaultWindow" Name="Frozen_GeCao_ZhanKuang_TopList_ListTitle_Text">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_TopList_Title_Rank">
+                <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+                <Property Name="Text" Value="#{BXDR_20240920_84}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_TopList_Title_Name">
+                <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.000000,2.000000}}"/>
+                <Property Name="Text" Value="#{BXDR_20240920_85}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_TopList_Title_AllScore">
+                <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.700000,0.000000},{0.000000,2.000000}}"/>
+                <Property Name="Text" Value="#{BXDR_20240920_86}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+            </Window>                             
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Frozen_GeCao_ZhanKuang_TopList_List">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,26.000000}}"/>
+            <Window Type="DefaultWindow" Name="Frozen_GeCao_ZhanKuang_TopList_ListFrame">
+              <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{1.000000,-4.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,2.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_NotSuperListItemCommon3" Name="Frozen_GeCao_ZhanKuang_TopList_AItem1">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_TopList_AItem1_Rank">
+                  <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{BXDR_20240920_25}"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_TopList_AItem1_Name">
+                  <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{BXDR_20240920_25}"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_TopList_AItem1_AllScore">
+                  <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.700000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{BXDR_20240920_25}"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_NotSuperListItemCommon3" Name="Frozen_GeCao_ZhanKuang_TopList_AItem2">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,32.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_TopList_AItem2_Rank">
+                  <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{BXDR_20240920_25}"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_TopList_AItem2_Name">
+                  <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{BXDR_20240920_25}"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_TopList_AItem2_AllScore">
+                  <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.700000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{BXDR_20240920_25}"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_NotSuperListItemCommon3" Name="Frozen_GeCao_ZhanKuang_TopList_AItem3">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,62.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_TopList_AItem3_Rank">
+                  <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{BXDR_20240920_25}"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_TopList_AItem3_Name">
+                  <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{BXDR_20240920_25}"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_TopList_AItem3_AllScore">
+                  <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.700000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{BXDR_20240920_25}"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_NotSuperListItemCommon3" Name="Frozen_GeCao_ZhanKuang_TopList_AItem4">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,92.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_TopList_AItem4_Rank">
+                  <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{BXDR_20240920_25}"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_TopList_AItem4_Name">
+                  <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{BXDR_20240920_25}"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_TopList_AItem4_AllScore">
+                  <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.700000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{BXDR_20240920_25}"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_NotSuperListItemCommon3" Name="Frozen_GeCao_ZhanKuang_TopList_AItem5">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,122.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_TopList_AItem5_Rank">
+                  <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{BXDR_20240920_25}"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_TopList_AItem5_Name">
+                  <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{BXDR_20240920_25}"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_TopList_AItem5_AllScore">
+                  <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.700000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{BXDR_20240920_25}"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace2" Name="Frozen_GeCao_ZhanKuang_TeamInfoBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-91.000000}}"/>
+          <Window Type="DefaultWindow" Name="Frozen_GeCao_ZhanKuang_TeamInfo">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_TeamInfo_Rank">
+              <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{BXDR_20240920_25}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_TeamInfo_Name">
+              <Property Name="UnifiedSize" Value="{{0.400000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{BXDR_20240920_25}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_TeamInfo_Score">
+              <Property Name="UnifiedSize" Value="{{0.300000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.700000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{BXDR_20240920_25}"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace2" Name="Frozen_GeCao_ZhanKuang_Client3">
+          <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-56.000000}}"/>
+          <Window Type="TLBB_ButtonCommon" Name="Frozen_GeCao_ZhanKuang_PersonalInfo_Detail">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{1.000000,-26.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Text" Value="#{BXDR_20240920_87}"/>
+            <Property Name="Tooltip" Value="#{BXDR_20240920_88}"/>
+            <Event Name="Clicked" Function="Frozen_GeCao_ZhanKuang_Frame_OpenSelf()"/>
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="Frozen_GeCao_ZhanKuang_PersonalInfo_Leave">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-84.000000},{1.000000,-26.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Text" Value="#{BXDR_20240920_123}"/>
+            <Property Name="Tooltip" Value="#{BXDR_20240920_98}"/>
+            <Event Name="Clicked" Function="Frozen_GeCao_ZhanKuang_Frame_Leave()"/>
+          </Window>
+        </Window>  
+        <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_ZhanKuang_Tips">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-22.000000}}"/>
+          <Property Name="Text" Value="#{BXDR_20240920_238}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+  </Window>
+</GUILayout>

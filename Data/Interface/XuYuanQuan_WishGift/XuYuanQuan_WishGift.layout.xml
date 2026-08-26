@@ -1,0 +1,222 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrameNULL" Name="XuYuanQuan_WishGift_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,704.000000},{0.000000,446.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-348.000000},{0.500000,-223.000000}}"/>
+        <Event Name="Hidden" Function="XuYuanQuan_WishGift_OnHiden();" />
+        <Window Type="TLBB_HeroFrame01" Name="XuYuanQuan_WishGift_FrameBK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_HeroTitle01" Name="XuYuanQuan_WishGift_DragTitleBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,-2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_DragTitle" Name="XuYuanQuan_WishGift_DragTitle">
+                <Property Name="UnifiedSize" Value="{{1.000000,-70.000000},{0.000000,22.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,2.000000}}"/>
+                <Property Name="Text" Value="#{ZNSC_220624_57}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                <Property Name="DragTarget" Value="XuYuanQuan_WishGift_Frame" />
+            </Window>
+            <Window Type="TLBB_ButtonClose2" Name="XuYuanQuan_WishGift_Close">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+                <Event Name="Clicked" Function="XuYuanQuan_WishGift_Close();" />
+            </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="XuYuanQuan_WishGift_ImageBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,694.000000},{0.000000,410.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,30.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:XuYuanQuan image:XuYuanQuan_BK"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="XuYuanQuan_WishGift_Frame_Client">
+            <Property Name="UnifiedSize" Value="{{0.000000,690.000000},{0.000000,404.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-345.000000},{0.500000,-191.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_SimpleText" Name="XuYuanQuan_WishGift_Info">
+                <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,80.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="Text" Value="#{ZNSC_220624_58}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="XuYuanQuan_WishGift_Item1_Anima_BK">
+                <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,142.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,120.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:XuYuanQuan image:XuYuanQuan_bub"/>
+            </Window>
+            <Window Type="TLBB_Animate" Name="XuYuanQuan_WishGift_Item1_Anima">
+                <Property Name="UnifiedSize" Value="{{0.000000,174.000000},{0.000000,155.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,120.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Animate" Value="XuYuanQuan_BubAnima"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+
+            <Window Type="DefaultWindow" Name="XuYuanQuan_WishGift_Item1BK">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,165.000000},{0.000000,155.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ActionButton" Name="XuYuanQuan_WishGift_Item1">
+                    <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-27.000000},{0.500000,-27.000000}}"/>
+                    <Event Name="Clicked" Function="XuYuanQuan_WishGift_ItemClicked(1);"/>
+                    <Window Type="TLBB_Animate" Name="XuYuanQuan_WishGift_ItemAnimate1">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Animate" Value="Equip_Zhizun"/>
+                    </Window>
+                    <Window Type="TLBB_StaticImageNULL" Name="XuYuanQuan_WishGift_ItemOK1">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="False"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="False"/>
+                        <Property Name="MouseHollow" Value="False"/>
+                        <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Type="TLBB_Animate" Name="XuYuanQuan_WishGift_Item2_Anima">
+                <Property Name="UnifiedSize" Value="{{0.000000,174.000000},{0.000000,155.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,262.000000},{0.000000,88.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Animate" Value="XuYuanQuan_BubAnima"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="XuYuanQuan_WishGift_Item2_Anima_BK">
+                <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,142.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,268.000000},{0.000000,88.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:XuYuanQuan image:XuYuanQuan_bub"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="XuYuanQuan_WishGift_Item2BK">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,314.000000},{0.000000,124.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Window Type="TLBB_ActionButton" Name="XuYuanQuan_WishGift_Item2">
+                    <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-27.000000},{0.500000,-27.000000}}"/>
+                    <Event Name="Clicked" Function="XuYuanQuan_WishGift_ItemClicked(2);"/>
+                    <Window Type="TLBB_Animate" Name="XuYuanQuan_WishGift_ItemAnimate2">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Animate" Value="Equip_Zhizun"/>
+                    </Window>
+                    <Window Type="TLBB_StaticImageNULL" Name="XuYuanQuan_WishGift_ItemOK2">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="False"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="False"/>
+                        <Property Name="MouseHollow" Value="False"/>
+                        <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Type="TLBB_Animate" Name="XuYuanQuan_WishGift_Item3_Anima">
+                <Property Name="UnifiedSize" Value="{{0.000000,174.000000},{0.000000,155.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,410.000000},{0.000000,120.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Animate" Value="XuYuanQuan_BubAnima"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="XuYuanQuan_WishGift_Item3_Anima_BK">
+                <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,142.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,416.000000},{0.000000,120.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:XuYuanQuan image:XuYuanQuan_bub"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="XuYuanQuan_WishGift_Item3BK">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,462.000000},{0.000000,155.000000}}"/>
+                <Window Type="TLBB_ActionButton" Name="XuYuanQuan_WishGift_Item3">
+                    <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-27.000000},{0.500000,-27.000000}}"/>
+                    <Event Name="Clicked" Function="XuYuanQuan_WishGift_ItemClicked(3);"/>
+                    <Window Type="TLBB_Animate" Name="XuYuanQuan_WishGift_ItemAnimate3">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Animate" Value="Equip_Zhizun"/>
+                    </Window>
+                    <Window Type="TLBB_StaticImageNULL" Name="XuYuanQuan_WishGift_ItemOK3">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="False"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="False"/>
+                        <Property Name="MouseHollow" Value="False"/>
+                        <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="XuYuanQuan_WishGift_WishPoint1BK">
+                <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,26.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,155.000000},{0.000000,220.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:XuYuanQuan image:XuYuanQuan_Text1"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="XuYuanQuan_WishGift_WishPoint2BK">
+                <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,26.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,304.000000},{0.000000,188.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:XuYuanQuan image:XuYuanQuan_Text2"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="XuYuanQuan_WishGift_WishPoint3BK">
+                <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,26.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,454.000000},{0.000000,220.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:XuYuanQuan image:XuYuanQuan_Text3"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="XuYuanQuan_WishGift_WishPointNumBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,540.000000},{1.000000,-30.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:XuYuanQuan image:XuYuanQuan_Text_BK"/>
+                <Window Type="TLBB_SimpleText" Name="XuYuanQuan_WishGift_WishPointNum">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{1.000000,0.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,0.000000}}"/>
+                    <Property Name="Text" Value="#{ZNSC_220624_98}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                </Window>
+                <Window Type="TLBB_ButtonNULL" Name="XuYuanQuan_WishGift_WishPonitNum_HelpDetail">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.500000,-10.000000}}"/>
+                    <Property Name="PushedImage" Value="set:XuYuanQuan image:XuYuanQuan_Help_P"/>
+                    <Property Name="NormalImage" Value="set:XuYuanQuan image:XuYuanQuan_Help_N"/>
+                    <Property Name="HoverImage" Value="set:XuYuanQuan image:XuYuanQuan_Help_H"/>
+                    <Property Name="DisabledImage" Value="set:XuYuanQuan image:XuYuanQuan_Help_D"/>
+                    <Event Name="Clicked" Function="XuYuanQuan_WishGift_WishPonitNum_HelpClick();"/>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

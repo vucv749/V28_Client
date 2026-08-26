@@ -1,0 +1,266 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame1" Name="QuickLogin_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,210.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-114.000000},{0.50000,-77.000000}}"/>
+		<Property Name="AlwaysOnTop" Value="True"/>
+		<Window Type="TLBB_ButtonClose" Name="QuickLogin_Close">
+			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+			<Event Name="Clicked" Function="QuickLogin_Close_Clicked();"/>
+		</Window>
+		<Window Type="TLBB_DragTitle" Name="QuickLogin_DragTitle">
+			<Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,10.000000}}"/>
+			<Property Name="DragTarget" Value="QuickLogin_Frame"/>
+			<Window Type="TLBB_SimpleText" Name="QuickLogin_PageHeader">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+				<Property Name="Text" Value="#cfff263《天龙八部》历史账号管理"/>
+				<Property Name="HorzFormatting" Value="HorzCentred"/>
+				<Property Name="Font" Value="YouYuan11.25"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+			</Window>
+		</Window>
+		<Window Type="DefaultWindow" Name="QuickLogin_Function_Frame">
+			<Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,176.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,29.000000}}"/>
+			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_Panel1">
+				<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,7.000000}"/>
+				<Property Name="UnifiedSize" Value="{{0.000000,159.000000},{0.000000,24.000000}"/>
+				<Event Name="MouseButtonUp" Function="QuickLogin_SelectAccount(1);"/>
+				<Window Type="TLBB_ButtonCheck" Name="QuickLogin_Button1">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,6.000000}}"/>
+					<Event Name="MouseButtonUp" Function="QuickLogin_SelectAccount(1);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="QuickLogin_AccountField1">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,1.000000}}"/>
+					<Property Name="Text" Value="123123"/>
+					<Property Name="HorzFormatting" Value="HorzCentred"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_Panel2">
+				<Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,7.000000}"/>
+				<Property Name="UnifiedSize" Value="{{0.000000,159.000000},{0.000000,24.000000}"/>
+				<Event Name="MouseButtonUp" Function="QuickLogin_SelectAccount(2);"/>
+				<Window Type="TLBB_ButtonCheck" Name="QuickLogin_Button2">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,6.000000}}"/>
+					<Event Name="MouseButtonUp" Function="QuickLogin_SelectAccount(2);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="QuickLogin_AccountField2">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,1.000000}}"/>
+					<Property Name="Text" Value="00000"/>
+					<Property Name="HorzFormatting" Value="HorzCentred"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_Panel3">
+				<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,34.000000}"/>
+				<Property Name="UnifiedSize" Value="{{0.000000,159.000000},{0.000000,24.000000}"/>
+				<Event Name="MouseButtonUp" Function="QuickLogin_SelectAccount(3);"/>
+				<Window Type="TLBB_ButtonCheck" Name="QuickLogin_Button3">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,6.000000}}"/>
+					<Event Name="MouseButtonUp" Function="QuickLogin_SelectAccount(3);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="QuickLogin_AccountField3">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,1.000000}}"/>
+					<Property Name="Text" Value="123123"/>
+					<Property Name="HorzFormatting" Value="HorzCentred"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_Panel4">
+				<Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,34.000000}"/>
+				<Property Name="UnifiedSize" Value="{{0.000000,159.000000},{0.000000,24.000000}"/>
+				<Event Name="MouseButtonUp" Function="QuickLogin_SelectAccount(4);"/>
+				<Window Type="TLBB_ButtonCheck" Name="QuickLogin_Button4">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,6.000000}}"/>
+					<Event Name="MouseButtonUp" Function="QuickLogin_SelectAccount(4);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="QuickLogin_AccountField4">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,1.000000}}"/>
+					<Property Name="Text" Value="00000"/>
+					<Property Name="HorzFormatting" Value="HorzCentred"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_Panel5">
+				<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,61.000000}"/>
+				<Property Name="UnifiedSize" Value="{{0.000000,159.000000},{0.000000,24.000000}"/>
+				<Event Name="MouseButtonUp" Function="QuickLogin_SelectAccount(5);"/>
+				<Window Type="TLBB_ButtonCheck" Name="QuickLogin_Button5">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,6.000000}}"/>
+					<Event Name="MouseButtonUp" Function="QuickLogin_SelectAccount(5);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="QuickLogin_AccountField5">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,1.000000}}"/>
+					<Property Name="Text" Value="123123"/>
+					<Property Name="HorzFormatting" Value="HorzCentred"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_Panel6">
+				<Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,61.000000}"/>
+				<Property Name="UnifiedSize" Value="{{0.000000,159.000000},{0.000000,24.000000}"/>
+				<Event Name="MouseButtonUp" Function="QuickLogin_SelectAccount(6);"/>
+				<Window Type="TLBB_ButtonCheck" Name="QuickLogin_Button6">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,6.000000}}"/>
+					<Event Name="MouseButtonUp" Function="QuickLogin_SelectAccount(6);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="QuickLogin_AccountField6">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,1.000000}}"/>
+					<Property Name="Text" Value="00000"/>
+					<Property Name="HorzFormatting" Value="HorzCentred"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_Panel7">
+				<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,88.000000}"/>
+				<Property Name="UnifiedSize" Value="{{0.000000,159.000000},{0.000000,24.000000}"/>
+				<Event Name="MouseButtonUp" Function="QuickLogin_SelectAccount(7);"/>
+				<Window Type="TLBB_ButtonCheck" Name="QuickLogin_Button7">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,6.000000}}"/>
+					<Event Name="MouseButtonUp" Function="QuickLogin_SelectAccount(7);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="QuickLogin_AccountField7">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,1.000000}}"/>
+					<Property Name="Text" Value="123123"/>
+					<Property Name="HorzFormatting" Value="HorzCentred"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_Panel8">
+				<Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,88.000000}"/>
+				<Property Name="UnifiedSize" Value="{{0.000000,159.000000},{0.000000,24.000000}"/>
+				<Event Name="MouseButtonUp" Function="QuickLogin_SelectAccount(8);"/>
+				<Window Type="TLBB_ButtonCheck" Name="QuickLogin_Button8">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,6.000000}}"/>
+					<Event Name="MouseButtonUp" Function="QuickLogin_SelectAccount(8);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="QuickLogin_AccountField8">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,1.000000}}"/>
+					<Property Name="Text" Value="00000"/>
+					<Property Name="HorzFormatting" Value="HorzCentred"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_Panel9">
+				<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,115.000000}"/>
+				<Property Name="UnifiedSize" Value="{{0.000000,159.000000},{0.000000,24.000000}"/>
+				<Event Name="MouseButtonUp" Function="QuickLogin_SelectAccount(9);"/>
+				<Window Type="TLBB_ButtonCheck" Name="QuickLogin_Button9">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,6.000000}}"/>
+					<Event Name="MouseButtonUp" Function="QuickLogin_SelectAccount(9);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="QuickLogin_AccountField9">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,1.000000}}"/>
+					<Property Name="Text" Value="123123"/>
+					<Property Name="HorzFormatting" Value="HorzCentred"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_Panel10">
+				<Property Name="UnifiedPosition" Value="{{0.000000,166.000000},{0.000000,115.000000}"/>
+				<Property Name="UnifiedSize" Value="{{0.000000,159.000000},{0.000000,24.000000}"/>
+				<Event Name="MouseButtonUp" Function="QuickLogin_SelectAccount(10);"/>
+				<Window Type="TLBB_ButtonCheck" Name="QuickLogin_Button10">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,6.000000}}"/>
+					<Event Name="MouseButtonUp" Function="QuickLogin_SelectAccount(10);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="QuickLogin_AccountField10">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,1.000000}}"/>
+					<Property Name="Text" Value="00000"/>
+					<Property Name="HorzFormatting" Value="HorzCentred"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_previous">
+				<Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,19.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-33.000000}}"/>
+				<Property Name="Text" Value="#cfff263上一页"/>
+				<Event Name="Clicked" Function="QuickLogin_previousPage();"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_next">
+				<Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,19.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{1.000000,-33.000000}}"/>
+				<Property Name="Text" Value="#cfff263下一页"/>
+				<Event Name="Clicked" Function="QuickLogin_nextPage();"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_Login">
+				<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,19.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,118.000000},{1.000000,-33.000000}}"/>
+				<Property Name="Text" Value="#G选择"/>
+				<Property Name="Tooltip" Value="#Y选择好账号以后点此登录"/>
+				<Event Name="Clicked" Function="QuickLogin_AccountLoginClick();"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_Remove">
+				<Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,19.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,258.000000},{1.000000,-33.000000}}"/>
+				<Property Name="Text" Value="#cFF0000删除"/>
+				<Property Name="Tooltip" Value="#Y删除勾选账号的保存记录"/>
+				<Event Name="Clicked" Function="QuickLogin_RemoveSavedAccounts();"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_modify">
+				<Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,19.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,291.000000},{1.000000,-33.000000}}"/>
+				<Property Name="Text" Value="#cFF0000修改"/>
+				<Property Name="Tooltip" Value="#Y修改勾选账号信息"/>
+				<Event Name="Clicked" Function="QuickLogin_modifyAccounts();"/>
+			</Window>
+		</Window>	
+		<Window Type="TLBB_FramePlayerOther" Name="QuickLogin_modify_Frame">
+			<Property Name="UnifiedSize" Value="{{0.000000,162.000000},{0.000000,132.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,332.000000},{0.000000,36.000000}}"/>
+			<Window Type="TLBB_SimpleText" Name="QuickLogin_AccountZhangHao">
+				<Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,120.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,-25.000000},{0.000000,0.000000}}"/>
+				<Property Name="Text" Value="账号："/>
+				<Property Name="HorzFormatting" Value="HorzCentred"/>
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="QuickLogin_AccountMiMa">
+				<Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,120.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,-25.000000},{0.000000,20.000000}}"/>
+				<Property Name="Text" Value="密码："/>
+				<Property Name="HorzFormatting" Value="HorzCentred"/>
+			</Window>
+			<Window Type="TLBB_EditBoxNormal" Name="QuickLogin_Edix1">
+				<Property Name="UnifiedSize" Value="{{0.000000,117.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.0000000,51.000000}}"/>
+				<Property Name="MaxTextLength" Value="20"/>
+			</Window>
+			<Window Type="TLBB_EditBoxNormal" Name="QuickLogin_Edix2">
+				<Property Name="UnifiedSize" Value="{{0.000000,117.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.0000000,71.000000}}"/>
+				<Property Name="MaxTextLength" Value="20"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_OK">
+				<Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,19.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,90.000000}}"/>
+				<Property Name="Text" Value="#cFF0000确认"/>
+				<Event Name="Clicked" Function="QuickLogin_modifyOK(1);"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_QuXiao">
+				<Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,19.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,90.000000}}"/>
+				<Property Name="Text" Value="#cFF0000取消"/>
+				<Event Name="Clicked" Function="QuickLogin_modifyOK(2);"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+			</Window>
+		</Window>
+		<Window Type="TLBB_Frame_Lace5" Name="QuickLogin_Blank">
+			<Property Name="UnifiedPosition" Value="{{0.000000,116.000000},{0.000000,173.000000}" />
+			<Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,17.000000}" />
+        </Window>
+	</Window>
+</GUILayout>

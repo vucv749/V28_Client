@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="QNYH_StoryPanel_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,186.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-314.000000},{1.000000,-256.000000}}"/>
+    <Property Name="MouseRButtonHollow" Value="True"/>
+    <Property Name="MouseMoveHollow" Value="True"/>
+    <Property Name="MouseLButtonHollow" Value="True"/>
+    <Property Name="MouseHollow" Value="True"/>
+    <Window Type="TLBB_FrameY" Name="QNYH_StoryPanel_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>      
+      <Window Type="DefaultWindow" Name="QNYH_StoryPanel_DragTitleBK">
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,19.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.000000,3.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+      <Window Type="TLBB_DragTitle" Name="QNYH_StoryPanel_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-48.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,2.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Font" Value="YouYuan11.25"/>
+        <Property Name="Text" Value="#{QXPVE_250701_9}" />
+        <Property Name="DragTarget" Value="QNYH_StoryPanel_Frame" />
+      </Window>  
+      <Window Type="TLBB_ButtonNULL" Name="QNYH_StoryPanel_Image">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,4.000000}}"/>
+        <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+        <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+        <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+        <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="QNYH_StoryPanel_small()"/>
+      </Window> 
+      <Window Type="TLBB_Frame_Lace2" Name="QNYH_StoryPanel_TextBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,24.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Window Type="TLBB_SimpleText" Name="QNYH_StoryPanel_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{QXPVE_250701_10}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+      </Window>     
+    </Window>
+    <Window Type="DefaultWindow" Name="QNYH_StoryPanel_Mini_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{0.000000,36.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Window Type="TLBB_Frame_Lace4" Name="QNYH_StoryPanel_Mini">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_DragTitle" Name="QNYH_StoryPanel_Mini_PageHeader">
+          <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{QXPVE_250701_9}"/>
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="DragTarget" Value="QNYH_StoryPanel_Frame"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="QNYH_StoryPanel_Mini_Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.500000,-7.000000}}"/>
+          <Property Name="PushedImage" Value="set:SongLiao02 image:Up_Pushed"/>
+          <Property Name="NormalImage" Value="set:SongLiao02 image:Up_Normal"/>
+          <Property Name="HoverImage" Value="set:SongLiao02 image:Up_Hover"/>
+          <Property Name="DisabledImage" Value="set:SongLiao02 image:Up_Disabled"/>
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Event Name="Clicked" Function="QNYH_StoryPanel_big()"/>
+        </Window>  
+      </Window>
+    </Window>
+
+  </Window>    
+</GUILayout>

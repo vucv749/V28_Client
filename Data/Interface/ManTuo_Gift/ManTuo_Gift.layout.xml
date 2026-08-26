@@ -1,0 +1,213 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrameNULL" Name="ManTuo_Gift_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,585.000000},{0.000000,357.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-292.000000},{0.500000,-178.000000}}"/>
+        <Event Name="Hidden" Function="ManTuo_Gift_OnHiden();"/>
+        <Window Type="TLBB_DragTitle" Name="ManTuo_Gift_DragTitle1">
+            <Property Name="UnifiedSize" Value="{{1.000000,-55.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,32.000000}}"/>
+            <Property Name="DragTarget" Value="ManTuo_Gift_Frame"/>
+        </Window>
+        <Window Type="TLBB_DragTitle" Name="ManTuo_Gift_DragTitle2">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{1.000000,-106.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,32.000000}}"/>
+            <Property Name="DragTarget" Value="ManTuo_Gift_Frame"/>
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="ManTuo_Gift_Close">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,36.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="ManTuo_Gift_Close();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="ManTuo_Gift_Frame_Client">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False" />
+            <Window Type="DefaultWindow" Name="ManTuo_Gift_BK">
+                <Property Name="UnifiedSize" Value="{{0.000000,585.000000},{0.000000,357.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False" />
+                <Window Type="TLBB_StaticImageNULL" Name="ManTuo_Gift_BK1">
+                    <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,357.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False" />
+                    <Property Name="Image" Value="set:ManTuo_Gift image:ManTuo_Gift_BK1"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="ManTuo_Gift_BK2">
+                    <Property Name="UnifiedSize" Value="{{0.000000,73.000000},{0.000000,140.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,28.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False" />
+                    <Property Name="Image" Value="set:ManTuo_Gift image:ManTuo_Gift_BK2"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="ManTuo_Gift_BK3">
+                    <Property Name="UnifiedSize" Value="{{0.000000,73.000000},{0.000000,140.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,168.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False" />
+                    <Property Name="Image" Value="set:ManTuo_Gift image:ManTuo_Gift_BK3"/>
+                </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ManTuo_Gift_InfoText">
+                <Property Name="UnifiedSize" Value="{{1.000000,-238.000000},{0.000000,74.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,182.000000},{0.000000,50.000000}}"/>
+                <Property Name="Text" Value="#{XMPWH_20220906_12}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                <Property Name="VertFormatting" Value="VertCentred"/>
+            </Window>
+            <Window Type="TLBB_ButtonHelp" Name="ManTuo_Gift_Help">
+                <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-54.000000},{0.000000,102.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="MouseLButtonDown" Function="ManTuo_Gift_Help_Click();"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="ManTuo_Gift_AwardFrame">
+                <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,100.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,164.000000},{1.000000,-214.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="DefaultWindow" Name="ManTuo_Gift_Award1BK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-115.000000},{0.500000,-38.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Window Type="TLBB_ActionButton" Name="ManTuo_Gift_Award1">
+                        <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,-22.000000},{0.500000,-22.000000}}"/>
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Event Name="Clicked" Function="ManTuo_Gift_Award_Item_Clicked(1);"/>
+                        <Window Type="TLBB_Animate" Name="ManTuo_Gift_Award1Animate">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Animate" Value="Equip_Zhizun"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="ManTuo_Gift_Award1OK">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="ManTuo_Gift_Award1Text_Arrow">
+                    <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-95.000000},{1.000000,-40.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Image" Value="set:ManTuo_Gift image:ManTuo_Gift_Arrow"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ManTuo_Gift_Award1Text">
+                    <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-115.000000},{1.000000,-28.000000}}"/>
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="Text" Value="#{XMPWH_20220906_14}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="DefaultWindow" Name="ManTuo_Gift_Award2BK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.500000,-38.000000}}"/>
+                    <Window Type="TLBB_ActionButton" Name="ManTuo_Gift_Award2">
+                        <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,-22.000000},{0.500000,-22.000000}}"/>
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Event Name="Clicked" Function="ManTuo_Gift_Award_Item_Clicked(2);"/>
+                        <Window Type="TLBB_Animate" Name="ManTuo_Gift_Award2Animate">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Animate" Value="Equip_Zhizun"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="ManTuo_Gift_Award2OK">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="ManTuo_Gift_Award2Text_Arrow">
+                    <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-5.000000},{1.000000,-40.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Image" Value="set:ManTuo_Gift image:ManTuo_Gift_Arrow"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ManTuo_Gift_Award2Text">
+                    <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{1.000000,-28.000000}}"/>
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="Text" Value="#{XMPWH_20220906_14}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="DefaultWindow" Name="ManTuo_Gift_Award3BK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,65.000000},{0.500000,-38.000000}}"/>
+                    <Window Type="TLBB_ActionButton" Name="ManTuo_Gift_Award3">
+                        <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,-22.000000},{0.500000,-22.000000}}"/>
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Event Name="Clicked" Function="ManTuo_Gift_Award_Item_Clicked(3);"/>
+                        <Window Type="TLBB_Animate" Name="ManTuo_Gift_Award3Animate">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Animate" Value="Equip_Zhizun"/>
+                            <Property Name="AlwaysOnTop" Value="True"/>
+                        </Window>
+                        <Window Type="TLBB_StaticImageNULL" Name="ManTuo_Gift_Award3OK">
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                            <Property Name="MouseRButtonHollow" Value="True"/>
+                            <Property Name="MouseMoveHollow" Value="True"/>
+                            <Property Name="MouseLButtonHollow" Value="True"/>
+                            <Property Name="MouseHollow" Value="True"/>
+                            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="ManTuo_Gift_Award3Text_Arrow">
+                    <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,85.000000},{1.000000,-40.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Image" Value="set:ManTuo_Gift image:ManTuo_Gift_Arrow"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="ManTuo_Gift_Award3Text">
+                    <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,65.000000},{1.000000,-28.000000}}"/>
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="Text" Value="#{XMPWH_20220906_14}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ManTuo_Gift_TakeOn_Hua">
+                <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,216.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:ManTuo_Gift image:ManTuo_Gift_Hua"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ManTuo_Gift_TakeOn_Text2">
+                <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{0.000000,216.000000}}"/>
+                <Property Name="VertFormatting" Value="TopAligned"/>
+                <Property Name="Text" Value="#{XMPWH_20220906_13}"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrameNULL" Name="DaHua_DaiBanList_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,800.000000},{0.000000,570.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-400.000000},{0.50000,-265.000000}}"/>
+        <Window Type="TLBB_DragTitle" Name="DaHua_DaiBanList_DragTitle">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,340.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,32.000000}}"/>
+            <Property Name="DragTarget" Value="DaHua_DaiBanList_Frame" />
+            <Property Name="Font" Value="YouYuan11.25" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="DaHua_DaiBanList_Close">
+            <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{0.000000,50.000000}}"/>
+            <Property Name="PushedImage" Value="set:DaHua_DaiBanList01 image:DaHua_DaiBanList_Close_P"/>
+            <Property Name="NormalImage" Value="set:DaHua_DaiBanList01 image:DaHua_DaiBanList_Close_N"/>
+            <Property Name="HoverImage" Value="set:DaHua_DaiBanList01 image:DaHua_DaiBanList_Close_H"/>
+            <Property Name="DisabledImage" Value="set:DaHua_DaiBanList01 image:DaHua_DaiBanList_Close_D"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="DaHua_DaiBanList_Cancel_Clicked();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="DaHua_DaiBanList_Function_Frame">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+
+            <Window Type="TLBB_StaticImageNULL" Name="DaHua_DaiBanList_Function_Image1">
+                <Property Name="UnifiedSize" Value="{{0.000000,792.000000},{0.000000,568.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="Image" Value="set:DaHua_DaiBanList02 image:DaHua_DaiBanList_QuSe"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="DaHua_DaiBanList_Function_Image2">
+                <Property Name="UnifiedSize" Value="{{0.000000,792.000000},{0.000000,568.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="Image" Value="set:DaHua_DaiBanList01 image:DaHua_DaiBanList_ShangSe"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_Animate" Name="DaHua_DaiBanList_Function_Animate">
+                <Property Name="UnifiedSize" Value="{{0.000000,138.000000},{0.000000,138.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,220.000000},{0.000000,390.000000}}"/>
+                <Property Name="Animate" Value="DaHua_DaiBanList"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+            </Window>
+
+            <Window Type="TLBB_StaticImageNULL" Name="DaHua_DaiBanList_PuTao">
+                <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,86.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,640.000000},{0.000000,404.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:DaHua_DaiBanList01 image:DaHua_DaiBanList_PuTao"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="DaHua_DaiBanList_YinJi">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,74.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,668.000000},{0.000000,422.000000}}"/>
+                <Property Name="Image" Value="set:DaHua_DaiBanList01 image:DaHua_DaiBanList_SY"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="DaHua_DaiBanList_OK">
+                <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,80.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-150.000000},{1.000000,-140.000000}}"/>
+                <Event Name="Clicked" Function="DaHua_DaiBanList_OK_Clicked();" />
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="DaHua_DaiBanList_OKTps">
+                <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,620.000000},{0.000000,500.000000}}"/>
+                <Property Name="Image" Value="set:DaHua_DaiBanList01 image:DaHua_DaiBanList_QianYue"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="DaHua_DaiBanList_NoTps">
+                <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,25.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,620.000000},{0.000000,500.000000}}"/>
+                <Property Name="Image" Value="set:DaHua_DaiBanList01 image:DaHua_DaiBanList_JieYue"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

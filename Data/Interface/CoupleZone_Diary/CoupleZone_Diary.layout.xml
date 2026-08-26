@@ -1,0 +1,260 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection0" Name="CoupleZone_Diary_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,802.000000},{0.000000,568.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-401.000000},{0.500000,-284.000000}}"/>
+    <Event Name="Hidden" Function="CoupleZone_Diary_OnClose()"/>
+    <Window Type="DefaultWindow" Name="CoupleZone_Diary_MainFrame">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_TitleLace_Affection0" Name="CoupleZone_Diary_DragTitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,31.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_DragTitle" Name="CoupleZone_Diary_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,11.000000}}"/>
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="Text" Value="#{QLKJ_230331_34}" />
+        <Property Name="DragTarget" Value="CoupleZone_Diary_Frame"/>
+      </Window>
+      <Window Type="TLBB_ButtonHelp" Name="CoupleZone_Diary_Help">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>      
+      <Window Type="TLBB_ButtonClose" Name="CoupleZone_Diary_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+        <Event Name="Clicked" Function="CoupleZone_Diary_OnClose()" />
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_Diary_Client">
+        <Property Name="UnifiedSize" Value="{{0.000000,790.000000},{0.000000,512.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,34.000000}}"/>
+        <Property Name="Image" Value="set:CoupleZone3 image:Diary_BK"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="DefaultWindow" Name="CoupleZone_Diary_Client1">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_Diary_Item1">
+            <Property Name="UnifiedSize" Value="{{0.000000,324.000000},{0.000000,118.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,55.000000}}"/>
+            <Property Name="Image" Value="set:CoupleZone3 image:Diary_BK1"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_SimpleText" Name="CoupleZone_Diary_Item1_Text1">
+              <Property Name="UnifiedSize" Value="{{0.000000,298.000000},{0.000000,78.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-309.000000},{0.000000,30.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="Text" Value="#{}"/>
+            </Window>      
+            <Window Type="TLBB_SimpleText" Name="CoupleZone_Diary_Item1_Text2">
+              <Property Name="UnifiedSize" Value="{{0.000000,244.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,9.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              <Property Name="Text" Value="#{QLKJ_230331_50}"/>
+            </Window>   
+            <Window Type="TLBB_ButtonNULL" Name="CoupleZone_Diary_Item1_Delete">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-55.000000},{0.000000,8.000000}}"/>
+              <Property Name="PushedImage" Value="set:CoupleZone3 image:Delete_P"/>
+              <Property Name="NormalImage" Value="set:CoupleZone3 image:Delete_N"/>
+              <Property Name="HoverImage" Value="set:CoupleZone3 image:Delete_H"/>
+              <Property Name="DisabledImage" Value="set:CoupleZone3 image:Delete_D"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Event Name="Clicked" Function="CoupleZone_Diary_OnClicked_Delete(1)"/>
+            </Window>                               
+          </Window>       
+          <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_Diary_Item2">
+            <Property Name="UnifiedSize" Value="{{0.000000,324.000000},{0.000000,118.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,180.000000}}"/>
+            <Property Name="Image" Value="set:CoupleZone3 image:Diary_BK1"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_SimpleText" Name="CoupleZone_Diary_Item2_Text1">
+              <Property Name="UnifiedSize" Value="{{0.000000,298.000000},{0.000000,78.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-309.000000},{0.000000,30.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="Text" Value="#{}"/>
+            </Window>      
+            <Window Type="TLBB_SimpleText" Name="CoupleZone_Diary_Item2_Text2">
+              <Property Name="UnifiedSize" Value="{{0.000000,244.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,9.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              <Property Name="Text" Value="#{QLKJ_230331_50}"/>
+            </Window>   
+            <Window Type="TLBB_ButtonNULL" Name="CoupleZone_Diary_Item2_Delete">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-55.000000},{0.000000,8.000000}}"/>
+              <Property Name="PushedImage" Value="set:CoupleZone3 image:Delete_P"/>
+              <Property Name="NormalImage" Value="set:CoupleZone3 image:Delete_N"/>
+              <Property Name="HoverImage" Value="set:CoupleZone3 image:Delete_H"/>
+              <Property Name="DisabledImage" Value="set:CoupleZone3 image:Delete_D"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Event Name="Clicked" Function="CoupleZone_Diary_OnClicked_Delete(2)"/>
+            </Window>                               
+          </Window>   
+          <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_Diary_Item3">
+            <Property Name="UnifiedSize" Value="{{0.000000,324.000000},{0.000000,118.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,305.000000}}"/>
+            <Property Name="Image" Value="set:CoupleZone3 image:Diary_BK1"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_SimpleText" Name="CoupleZone_Diary_Item3_Text1">
+              <Property Name="UnifiedSize" Value="{{0.000000,298.000000},{0.000000,78.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-309.000000},{0.000000,30.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="Text" Value="#{}"/>
+            </Window>      
+            <Window Type="TLBB_SimpleText" Name="CoupleZone_Diary_Item3_Text2">
+              <Property Name="UnifiedSize" Value="{{0.000000,244.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,9.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              <Property Name="Text" Value="#{QLKJ_230331_50}"/>
+            </Window>   
+            <Window Type="TLBB_ButtonNULL" Name="CoupleZone_Diary_Item3_Delete">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-55.000000},{0.000000,8.000000}}"/>
+              <Property Name="PushedImage" Value="set:CoupleZone3 image:Delete_P"/>
+              <Property Name="NormalImage" Value="set:CoupleZone3 image:Delete_N"/>
+              <Property Name="HoverImage" Value="set:CoupleZone3 image:Delete_H"/>
+              <Property Name="DisabledImage" Value="set:CoupleZone3 image:Delete_D"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Event Name="Clicked" Function="CoupleZone_Diary_OnClicked_Delete(3)"/>
+            </Window>                               
+          </Window>     
+          <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_Diary_Item4">
+            <Property Name="UnifiedSize" Value="{{0.000000,324.000000},{0.000000,118.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-376.000000},{0.000000,55.000000}}"/>
+            <Property Name="Image" Value="set:CoupleZone3 image:Diary_BK1"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_SimpleText" Name="CoupleZone_Diary_Item4_Text1">
+              <Property Name="UnifiedSize" Value="{{0.000000,298.000000},{0.000000,78.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-309.000000},{0.000000,30.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="Text" Value="#{}"/>
+            </Window>      
+            <Window Type="TLBB_SimpleText" Name="CoupleZone_Diary_Item4_Text2">
+              <Property Name="UnifiedSize" Value="{{0.000000,244.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,9.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              <Property Name="Text" Value="#{QLKJ_230331_50}"/>
+            </Window>   
+            <Window Type="TLBB_ButtonNULL" Name="CoupleZone_Diary_Item4_Delete">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-55.000000},{0.000000,8.000000}}"/>
+              <Property Name="PushedImage" Value="set:CoupleZone3 image:Delete_P"/>
+              <Property Name="NormalImage" Value="set:CoupleZone3 image:Delete_N"/>
+              <Property Name="HoverImage" Value="set:CoupleZone3 image:Delete_H"/>
+              <Property Name="DisabledImage" Value="set:CoupleZone3 image:Delete_D"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Event Name="Clicked" Function="CoupleZone_Diary_OnClicked_Delete(4)"/>
+            </Window>                               
+          </Window>  
+          <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_Diary_Item5">
+            <Property Name="UnifiedSize" Value="{{0.000000,324.000000},{0.000000,118.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-376.000000},{0.000000,180.000000}}"/>
+            <Property Name="Image" Value="set:CoupleZone3 image:Diary_BK1"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_SimpleText" Name="CoupleZone_Diary_Item5_Text1">
+              <Property Name="UnifiedSize" Value="{{0.000000,298.000000},{0.000000,78.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-309.000000},{0.000000,30.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="Text" Value="#{}"/>
+            </Window>      
+            <Window Type="TLBB_SimpleText" Name="CoupleZone_Diary_Item5_Text2">
+              <Property Name="UnifiedSize" Value="{{0.000000,244.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,9.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              <Property Name="Text" Value="#{QLKJ_230331_50}"/>
+            </Window>   
+            <Window Type="TLBB_ButtonNULL" Name="CoupleZone_Diary_Item5_Delete">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-55.000000},{0.000000,8.000000}}"/>
+              <Property Name="PushedImage" Value="set:CoupleZone3 image:Delete_P"/>
+              <Property Name="NormalImage" Value="set:CoupleZone3 image:Delete_N"/>
+              <Property Name="HoverImage" Value="set:CoupleZone3 image:Delete_H"/>
+              <Property Name="DisabledImage" Value="set:CoupleZone3 image:Delete_D"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Event Name="Clicked" Function="CoupleZone_Diary_OnClicked_Delete(5)"/>
+            </Window>                               
+          </Window>   
+          <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_Diary_Item6">
+            <Property Name="UnifiedSize" Value="{{0.000000,324.000000},{0.000000,118.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-376.000000},{0.000000,305.000000}}"/>
+            <Property Name="Image" Value="set:CoupleZone3 image:Diary_BK1"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_SimpleText" Name="CoupleZone_Diary_Item6_Text1">
+              <Property Name="UnifiedSize" Value="{{0.000000,298.000000},{0.000000,78.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-309.000000},{0.000000,30.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              <Property Name="VertFormatting" Value="TopAligned"/>
+              <Property Name="Text" Value="#{}"/>
+            </Window>      
+            <Window Type="TLBB_SimpleText" Name="CoupleZone_Diary_Item6_Text2">
+              <Property Name="UnifiedSize" Value="{{0.000000,244.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,9.000000}}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              <Property Name="Text" Value="#{QLKJ_230331_50}"/>
+            </Window>   
+            <Window Type="TLBB_ButtonNULL" Name="CoupleZone_Diary_Item6_Delete">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-55.000000},{0.000000,8.000000}}"/>
+              <Property Name="PushedImage" Value="set:CoupleZone3 image:Delete_P"/>
+              <Property Name="NormalImage" Value="set:CoupleZone3 image:Delete_N"/>
+              <Property Name="HoverImage" Value="set:CoupleZone3 image:Delete_H"/>
+              <Property Name="DisabledImage" Value="set:CoupleZone3 image:Delete_D"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Event Name="Clicked" Function="CoupleZone_Diary_OnClicked_Delete(6)"/>
+            </Window>                               
+          </Window>   
+          <Window Type="TLBB_Affection_ButtonCommon" Name="CoupleZone_Diary_Client1_Button">
+            <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-129.000000},{1.000000,-52.000000}}"/>
+            <Property Name="Text" Value="#{QLKJ_230331_53}"/>
+            <Event Name="Clicked" Function="CoupleZone_Diary_OnClicked_Write()"/>
+          </Window>                                                       
+        </Window>        
+        <Window Type="DefaultWindow" Name="CoupleZone_Diary_Client2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-460.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,239.000000},{1.000000,-81.000000}}"/>
+          <Window Type="TLBB_ButtonNULL" Name="CoupleZone_Diary_UpPage">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-56.000000},{0.000000,0.000000}}"/>
+            <Property Name="PushedImage" Value="set:CoupleZone3 image:LastPage_P"/>
+            <Property Name="NormalImage" Value="set:CoupleZone3 image:LastPage_N"/>
+            <Property Name="HoverImage" Value="set:CoupleZone3 image:LastPage_H"/>
+            <Property Name="DisabledImage" Value="set:CoupleZone3 image:LastPage_D"/>
+            <Event Name="Clicked" Function="CoupleZone_Diary_OnClicked_LastPage()"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_Diary_PageBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:CoupleZone3 image:Diary_BK2"/>
+            <Window Type="TLBB_SimpleText" Name="CoupleZone_Diary_Page">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.000000,0.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="Text" Value="#{}"/>
+            </Window>                
+          </Window>          
+          <Window Type="TLBB_ButtonNULL" Name="CoupleZone_Diary_DownPage">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,32.000000},{0.000000,0.000000}}"/>
+            <Property Name="PushedImage" Value="set:CoupleZone3 image:NextPage_P"/>
+            <Property Name="NormalImage" Value="set:CoupleZone3 image:NextPage_N"/>
+            <Property Name="HoverImage" Value="set:CoupleZone3 image:NextPage_H"/>
+            <Property Name="DisabledImage" Value="set:CoupleZone3 image:NextPage_D"/>            
+            <Event Name="Clicked" Function="CoupleZone_Diary_OnClicked_NextPage()"/>
+          </Window>
+        </Window>       
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

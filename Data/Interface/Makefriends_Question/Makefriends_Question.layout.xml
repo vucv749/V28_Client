@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Makefriends_Question_Frame">
+    <Event Name="Hidden" Function="Makefriends_Question_OnHiden();"/>
+    <Property Name="UnifiedSize" Value="{{0.000000,500.000000},{0.000000,112.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-250.000000},{0.500000,-290.000000}}" />
+    <Window Type="TLBB_DragTitle" Name="Makefriends_Question_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="DragTarget" Value="Makefriends_Question_Frame" />
+      <Property Name="Font" Value="YouYuan11.25"/>
+    </Window>
+    <Window Type="TLBB_Affection_TopTipsBK2" Name="Makefriends_Question_Frame_Client">
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}" />
+
+      <Window Type="DefaultWindow" Name="Makefriends_Question_Client">
+        <Property Name="UnifiedSize" Value="{{0.000000,456.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-220.000000},{0.000000,20.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Question_BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,366.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-183.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Makefriends image:TS_BK"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Makefriends_Question_Help">
+          <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,10.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Makefriends image:WH"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Makefriends_Question_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-47.000000},{0.000000,25.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.000000,4.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Makefriends_Question_Time">
+        <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,22.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-155.00000},{0.000000,86.000000}}" />
+        <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{}" />
+      </Window>
+      <Window Type="TLBB_StopWatch" Name="Makefriends_Question_WatchText">
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-200.000000},{0.000000,88.000000}}"/>
+        <Property Name="Text" Value="00:00"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+
+
+      <Window Type="TLBB_Affection_ButtonCommon" Name="Makefriends_Question_Button">
+        <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{1.000000,-50.000000}}"/>
+        <Property Name="Text" Value="#{JYHD_230331_159}"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="Makefriends_Question_Button_Clicked();"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame_Affection0" Name="Couples_Vault_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,358.000000},{0.000000,406.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-179.000000},{0.500000,-203.000000}}"/>
+        <Event Name="Hidden" Function="Couples_Vault_Frame_Close();" />
+        <Window Type="TLBB_TitleLace_Affection1" Name="Couples_Vault_DragTitleBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-90.000000},{0.000000,11.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+
+        <Window Type="TLBB_DragTitle" Name="Couples_Vault_DragTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+            <Property Name="DragTarget" Value="Couples_Vault_Frame" />
+            <Window Type="TLBB_SimpleText" Name="Couples_Vault_Title">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="Font" Value="YouYuan11.25" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="Text" Value="#{YYJG_20230407_43}" />
+            </Window>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="Couples_Vault_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+            <Property Name="Text" Value="TLBB_ButtonHelp" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;Couples_Vault&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="Couples_Vault_Close">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+            <Property Name="Text" Value="TLBB_ButtonClose" />
+            <Event Name="Clicked" Function="this:Hide();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="Couples_Vault_Client">
+            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,36.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Couples_Vault_Null">
+                <Property Name="UnifiedSize" Value="{{0.000000,344.000000},{0.000000,352.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:Couples_Vault image:FQJG"/>
+            </Window>
+
+            <Window Type="DefaultWindow" Name="Couples_Vault_Info">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,80.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Window Type="TLBB_SimpleText" Name="Couples_Vault_Info_Text">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-6.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,3.000000}}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                    <Property Name="RiseOnClick" Value="False" />
+                    <Property Name="Text" Value="#{YYJG_20230407_108}" />
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Couples_Vault_Money">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,60.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,80.000000}}"/>
+                <Window Type="TLBB_StaticImageNULL" Name="Couples_Vault_Money_Null">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,3.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Image" Value="set:Couples_Vault image:FQJG_TQ"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="Couples_Vault_Yuanbao_Null">
+                    <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,16.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,32.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Image" Value="set:Couples_Vault image:FQJG_YB"/>
+                </Window>
+                <Window Type="DefaultWindow" Name="Couples_Vault_Money1BK">
+                    <Property Name="UnifiedPosition" Value="{{0.00000,60.000000},{0.000000,0.000000}" />
+                    <Property Name="UnifiedSize" Value="{{1,-80.000000},{0.000000,30.000000}" />
+                    <Window Type="TLBB_SimpleText" Name="Couples_Vault_Money1_Text">
+                        <Property Name="UnifiedPosition" Value="{{0.00000,10.000000},{0.000000,0.000000}" />
+                        <Property Name="UnifiedSize" Value="{{0,90.000000},{0.000000,22.000000}" />
+                        <Property Name="Text" Value="#{YYJG_20230407_52}"/>
+                        <Property Name="Font" Value="YouYuan11.25"/>
+                        <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    </Window>
+
+                    <Window Type="TLBB_SimpleText" Name="Couples_Vault_Money1">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-188.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,0.000000}}"/>
+                        <Property Name="HorzFormatting" Value="RightAligned"/>
+                        <Property Name="Text" Value="#{YYJG_20230407_89}"/>
+                    </Window>
+                </Window>
+                <Window Type="DefaultWindow" Name="Couples_Vault_Money2BK">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,30.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,30.000000}}"/>
+                    <Window Type="TLBB_SimpleText" Name="Couples_Vault_Money2_Text">
+                        <Property Name="UnifiedPosition" Value="{{0.00000,10.000000},{0.000000,0.000000}" />
+                        <Property Name="UnifiedSize" Value="{{0,90.000000},{0.000000,22.000000}" />
+                        <Property Name="Text" Value="#{YYJG_20230407_53}"/>
+                        <Property Name="Font" Value="YouYuan11.25"/>
+                        <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Couples_Vault_Money2">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-190.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,0.000000}}"/>
+                        <Property Name="HorzFormatting" Value="RightAligned" />
+                    </Window>
+                </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace2" Name="Couples_Vault_InfoBK">
+                <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{1.000000,-175.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,137.000000}}"/>
+                <Window Type="TLBB_Affection_NotSuperList" Name="Couples_Vault_List">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-10.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,5.000000}}"/>
+                    <Property Name="SelectMode" Value="Single" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="MultiColumn" Value="1" />
+
+                    <Window Type="TLBB_NotSuperListItemCommon3" Name="Couples_Vault_Info3">
+                        <Property Name="UnifiedSize" Value="{{0.000000,306.000000},{0.000000,102.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Window Type="TLBB_StaticImageNULL" Name="Couples_Vault_Null2">
+                            <Property Name="UnifiedSize" Value="{{0.000000,306.000000},{0.000000,102.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-51.000000}}"/>
+                            <Property Name="RiseOnClick" Value="False"/>
+                            <Property Name="Image" Value="set:Couples_Vault image:FQJG_DW"/>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Couples_Vault_InfoText1">
+                            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,2.000000}}"/>
+                            <Property Name="Text" Value="#{YYJG_20230407_90}"/>
+                            <Property Name="HorzFormatting" Value="LeftAligned"/>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Couples_Vault_InfoText2">
+                            <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,30.000000}}"/>
+                            <Property Name="Text" Value="#{YYJG_20230407_91}"/>
+                            <Property Name="HorzFormatting" Value="LeftAligned"/>
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Couples_Vault_InfoText3">
+                            <Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,40.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,54.000000}}"/>
+                            <Property Name="Text" Value="#{YYJG_20230407_92}"/>
+                            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                        </Window>
+                        <Window Type="TLBB_SimpleText" Name="Couples_Vault_InfoText4">
+                            <Property Name="UnifiedSize" Value="{{0.000000,182.000000},{0.000000,20.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{1.000000,-192.000000},{0.000000,2.000000}}"/>
+                            <Property Name="Text" Value="#{YYJG_20230407_94}"/>
+                            <Property Name="HorzFormatting" Value="RightAligned"/>
+                        </Window>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Type="TLBB_Affection_ButtonCommon" Name="Couples_Vault_OK">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{1.000000,-28.000000}}"/>
+                <Property Name="Text" Value="#{YYJG_20230407_48}" />
+                <Event Name="Clicked" Function="Couples_Vault_InYBOrMoney_Click();" />
+            </Window>
+            <Window Type="TLBB_Affection_ButtonCommon" Name="Couples_Vault_Cancel">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-28.000000}}"/>
+                <Property Name="Text" Value="#{YYJG_20230407_49}" />
+                <Event Name="Clicked" Function="Couples_Vault_OutYBOrMoney_Click();" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

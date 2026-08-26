@@ -1,0 +1,161 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame6" Name="CJ_DaoJuBag_Team_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,172.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-596.000000},{1.000000,-404.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="CJ_DaoJuBag_Team_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,0.000000}}"/>
+      <Property Name="Text" Value="#{TLCJ_20240709_383}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="CJ_DaoJuBag_Team_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="CJ_DaoJuBag_Team_Hide">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,4.000000}}"/>
+      <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+      <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+      <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+      <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>
+      <Event Name="Clicked" Function="CJ_DaoJuBag_Team_Hide_OnClick()"/>
+    </Window>
+    <Window Type="TLBB_Frame_Lace2" Name="CJ_DaoJuBag_Team_EquipClient">
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,110.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,26.000000}}"/>
+      <Window Type="DefaultWindow" Name="CJ_DaoJuBag_Team_Equip_BK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,92.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,10.000000}}"/>
+        <Window Type="TLBB_ActionButton" Name="CJ_DaoJuBag_Team_Equip_Item1">
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-106.000000},{0.000000,0.000000}}"/>
+          <Event Name="MouseRClick" Function="CJ_DaoJuBag_Team_Equip_Item_Click( 1,0 );"/>
+          <Event Name="Clicked" Function="CJ_DaoJuBag_Team_Equip_Item_Click( 1,1 );"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CJ_DaoJuBag_Team_Equip_Item1_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CJ_DaoJuBag_Team_Equip_Item2">
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.000000,0.000000}}"/>
+          <Event Name="MouseRClick" Function="CJ_DaoJuBag_Team_Equip_Item_Click( 2,0 );"/>
+          <Event Name="Clicked" Function="CJ_DaoJuBag_Team_Equip_Item_Click( 2,1 );"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CJ_DaoJuBag_Team_Equip_Item2_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CJ_DaoJuBag_Team_Equip_Item3">
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,6.000000},{0.000000,0.000000}}"/>
+          <Event Name="MouseRClick" Function="CJ_DaoJuBag_Team_Equip_Item_Click( 3,0 );"/>
+          <Event Name="Clicked" Function="CJ_DaoJuBag_Team_Equip_Item_Click( 3,1 );"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CJ_DaoJuBag_Team_Equip_Item3_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CJ_DaoJuBag_Team_Equip_Item4">
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,62.000000},{0.000000,0.000000}}"/>
+          <Event Name="MouseRClick" Function="CJ_DaoJuBag_Team_Equip_Item_Click( 4,0 );"/>
+          <Event Name="Clicked" Function="CJ_DaoJuBag_Team_Equip_Item_Click( 4,1 );"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CJ_DaoJuBag_Team_Equip_Item4_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CJ_DaoJuBag_Team_Equip_Item5">
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-106.000000},{0.000000,48.000000}}"/>
+          <Event Name="MouseRClick" Function="CJ_DaoJuBag_Team_Equip_Item_Click( 5,0 );"/>
+          <Event Name="Clicked" Function="CJ_DaoJuBag_Team_Equip_Item_Click( 5,1 );"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CJ_DaoJuBag_Team_Equip_Item5_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CJ_DaoJuBag_Team_Equip_Item6">
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{0.000000,48.000000}}"/>
+          <Event Name="MouseRClick" Function="CJ_DaoJuBag_Team_Equip_Item_Click( 6,0 );"/>
+          <Event Name="Clicked" Function="CJ_DaoJuBag_Team_Equip_Item_Click( 6,1 );"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CJ_DaoJuBag_Team_Equip_Item6_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CJ_DaoJuBag_Team_Equip_Item7">
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,6.000000},{0.000000,48.000000}}"/>
+          <Event Name="MouseRClick" Function="CJ_DaoJuBag_Team_Equip_Item_Click( 7,0 );"/>
+          <Event Name="Clicked" Function="CJ_DaoJuBag_Team_Equip_Item_Click( 7,1 );"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CJ_DaoJuBag_Team_Equip_Item7_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CJ_DaoJuBag_Team_Equip_Item8">
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,62.000000},{0.000000,48.000000}}"/>
+          <Event Name="MouseRClick" Function="CJ_DaoJuBag_Team_Equip_Item_Click( 8,0 );"/>
+          <Event Name="Clicked" Function="CJ_DaoJuBag_Team_Equip_Item_Click( 8,1 );"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CJ_DaoJuBag_Team_Equip_Item8_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TLBB_Frame_Lace2" Name="CJ_DaoJuBag_Team_ItemClient">
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,136.000000}}"/>
+      <Window Type="TLBB_ButtonCommon" Name="CJ_DaoJuBag_Team_Equip_ALLBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-9.000000}}"/>
+        <Property Name="Text" Value="#{TLCJ_20240709_388}"/>
+        <Event Name="Clicked" Function="CJ_DaoJuBag_Team_Equip_ALLBtn_Clicked();"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

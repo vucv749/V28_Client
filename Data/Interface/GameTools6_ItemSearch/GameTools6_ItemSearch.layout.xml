@@ -1,0 +1,131 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame1" Name="GameTools6_ItemSearch_Frame">
+		<Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.500000,-118.000000}"/>
+		<Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,500.000000}"/>
+		<Property Name="AlwaysOnTop" Value="True"/>
+		<Event Name="Hidden" Function="GameTools6_ItemSearch_Cancel_Clicked();"/>
+		<Window Type="TLBB_DragTitle" Name="GameTools6_ItemSearch_DragTitle">
+			<Property Name="AbsolutePosition" Value="x:45.000000 y:11.000000" />
+			<Property Name="UnifiedSize" Value="{{1.000000,-90.000000},{0.000000,20.000000}" />
+			<Property Name="DragTarget" Value="GameTools6_ItemSearch_Frame"/>
+			<Property Name="Font" Value="YouYuan11.25"/>
+			<Property Name="HorzFormatting" Value="HorzCentred"/>
+			<Property Name="VertFormatting" Value="VertCentred"/>
+			<Property Name="Text" Value="#gFF0FA0物品珍兽搜索"/>
+		</Window>
+		<Window Type="TLBB_ButtonHelp" Name="GameTools6_ItemSearch_Help">
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+		</Window>
+		<Window Type="TLBB_ButtonClose" Name="GameTools6_ItemSearch_Close">
+			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+			<Event Name="Clicked" Function="this:Hide();"/>
+		</Window>
+		<!-- 列表框标题组件 -->
+		<Window Type="TLBB_MultiColumnList" Name="GameTools6_ItemSearch_lvwEquipTitle">
+			<Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,69.000000}"/>
+			<Property Name="AbsoluteSize" Value="w:285 h:22"/>
+			<Property Name="ForceHorzScrollbar" Value="False"/>
+			<Property Name="ForceVertScrollbar" Value="True"/>
+			<Property Name="SortSettingEnabled" Value="False"/>
+			<Property Name="SelectionMode" Value="RowSingle"/>
+			<Property Name="ColumnHeader" Value="text:道具名字 width:0.500 id:0"/>
+			<Property Name="ColumnHeader" Value="text:叠加数量 width:0.500 id:1"/>
+			<Property Name="ColumnsSizable" Value="False"/>
+			<Property Name="ColumnsAdjust" Value="True"/>
+			<Property Name="ColumnsMovable" Value="False"/>
+		</Window>
+		<!-- 单选框 物品 珍兽 -->
+		<Window Type="TLBB_ButtonCheck" Name="GameTools6_ItemSearch_electWuPing">
+			<Property Name="UnifiedPosition" Value="{{0.0,8.0},{0.0,36.0}"/>
+			<Property Name="UnifiedSize" Value="{{0.0,12.0},{0.0,12.0}}"/>
+			<Event Name="MouseButtonUp" Function="GameTools6_ItemSearch_Select_Clicked(1);"/>
+		</Window>
+		<Window Type="TLBB_SimpleText" Name="GameTools6_ItemSearch_SelectWuPingText">
+			<Property Name="UnifiedPosition" Value="{{0.0,20.0},{0.0,33.0}"/>
+			<Property Name="UnifiedSize" Value="{{0.25,-14.0},{0.0,20.0}"/>
+			<Property Name="HorzFormatting" Value="HorzCentred"/>
+			<Property Name="Text" Value="#W&lt;&lt;#B物品   "/>
+			<Property Name="RiseOnClick" Value="False"/>
+		</Window>
+		<Window Type="TLBB_ButtonCheck" Name="GameTools6_ItemSearch_SelectPet">
+			<Property Name="UnifiedPosition" Value="{{0.25,8.0},{0.0,36.0}"/>
+			<Property Name="UnifiedSize" Value="{{0.0,12.0},{0.0,12.0}}"/>
+			<Event Name="MouseButtonUp" Function="GameTools6_ItemSearch_Select_Clicked(2);"/>
+		</Window>
+		<Window Type="TLBB_SimpleText" Name="GameTools6_ItemSearch_SelectPetText">
+			<Property Name="UnifiedPosition" Value="{{0.25,20.0},{0.0,33.0}"/>
+			<Property Name="UnifiedSize" Value="{{0.25,-14.0},{0.0,20.0}"/>
+			<Property Name="HorzFormatting" Value="HorzCentred"/>
+			<Property Name="Text" Value="#W&lt;&lt;#B珍兽   "/>
+			<Property Name="RiseOnClick" Value="False"/>
+		</Window>
+		<!-- 搜索按钮 -->
+		<Window Type="TLBB_Frame_Lace5" Name="GameTools6_ItemSearch_Blank">
+			<Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,48.000000}"/>
+			<Property Name="UnifiedSize" Value="{{1.000000,-94.000000},{0.000000,20.000000}"/>
+			<Window Type="TLBB_SimpleText" Name="GameTools6_ItemSearch_Text1">
+				<Property Name="UnifiedPosition" Value="{{0,10},{0,1}"/>
+				<Property Name="UnifiedSize" Value="{{0.000000,55.000000},{0.000000,18.000000}"/>
+				<Property Name="HorzFormatting" Value="LeftAligned"/>
+				<Property Name="Text" Value="搜索内容:"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+				<Property Name="VertFormatting" Value="VertCentred"/>
+			</Window>
+			<Window Type="TLBB_EditBoxInput" Name="GameTools6_ItemSearch_Text2">
+				<Property Name="UnifiedPosition" Value="{{0,68},{0,1}"/>
+				<Property Name="AbsoluteSize" Value="w:130.000000 h:18.000000"/>
+			</Window>
+		</Window>
+		<Window Type="TLBB_ButtonCommon" Name="GameTools6_ItemSearch_OK_Button">
+			<Property Name="UnifiedPosition" Value="{{1.000000,-86.000000},{0.000000,48.000000}"/>
+			<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000"/>
+			<Property Name="Text" Value="#G搜索"/>
+			<Event Name="Clicked" Function="GameTools6_ItemSearch_OK_Clicked();"/>
+		</Window>
+		<Window Type="TLBB_Animate" Name="GameTools6_ItemSearch_OK_Animate">
+			<Property Name="UnifiedPosition" Value="{{1.000000,-86.000000},{0.000000,48.000000}"/>
+			<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000"/>
+			<Property Name="Animate" Value="YBNotice_65"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Property Name="MouseRButtonHollow" Value="True"/>
+			<Property Name="MouseMoveHollow" Value="True"/>
+			<Property Name="MouseLButtonHollow" Value="True"/>
+			<Property Name="MouseHollow" Value="True"/>
+			<Event Name="Clicked" Function="GameTools6_ItemSearch_OK_Clicked()"/>
+		</Window>
+		<Window Type="TLBB_ButtonCommon" Name="GameTools6_ItemSearch_Cancel_Button">
+			<Property Name="UnifiedPosition" Value="{{1.000000,-47.000000},{0.000000,48.000000}"/>
+			<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000"/>
+			<Property Name="Text" Value="#cFF0000关闭"/>
+			<Event Name="Clicked" Function="this:Hide();"/>
+		</Window>
+		<!-- 搜索显示内容 -->
+		<Window Type="DefaultWindow" Name="GameTools6_ItemSearch_Frame_Client">
+			<Property Name="AbsolutePosition" Value="x:7.000000 y:90.000000"/>
+			<Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-110.000000}"/>
+			<!-- 列表选项 -->
+			<Window Type="TLBB_ListBoxCommon" Name="GameTools6_ItemSearch_List">
+				<Property Name="UnifiedPosition" Value="{{0,0},{0,0}"/>
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-23.000000}"/>
+				<Event Name="ItemSelectionChanged" Function="GameTools6_ItemSearch_List_Selected();"/>
+				<!-- 道具图标 -->
+				<Window Type="TLBB_ActionButton" Name="GameTools6_ItemSearch_Act">
+					<Property Name="UnifiedSize" Value="{{0.0,40.0},{0.0,40.0}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.0,-60.0},{0.0,6.0}}"/>
+				</Window>
+			</Window>
+		</Window>
+		<!-- 温馨小提示 -->
+		<Window Type="TLBB_SimpleText" Name="GameTools6_ItemSearch_Text_TiShi">
+			<Property Name="UnifiedPosition" Value="{{0,20},{1,-38}"/>
+			<Property Name="UnifiedSize" Value="{{0.000000,260.000000},{0.000000,18.000000}"/>
+			<Property Name="HorzFormatting" Value="LeftAligned"/>
+			<Property Name="Text" Value="#G搜索结果过多？试用更精确的关键词定位信息"/>
+			<Property Name="TextColor" Value="FFFFF263"/>
+			<Property Name="VertFormatting" Value="VertCentred"/>
+		</Window>
+	</Window>
+</GUILayout>

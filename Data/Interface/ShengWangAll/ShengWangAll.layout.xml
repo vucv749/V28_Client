@@ -1,0 +1,1007 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="ShengWangAll_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,648.000000},{0.000000,444.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-340.000000},{0.120000,0.000000}}"/>
+    <Event Name="Hidden" Function="ShengWangAll_Close();"/>
+    <Window Type="TLBB_DragTitle" Name="ShengWangAll_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Text" Value="#{SWXT_221213_12}"/>
+      <Property Name="VertFormatting" Value="VertCentred"/>
+      <Property Name="DragTarget" Value="ShengWangAll_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="ShengWangAll_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Helper:GotoHelper(&quot;*Compensate&quot;);"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="ShengWangAll_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="ShengWangAll_Close();"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="ShengWangAll_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="ShengWangAll_NpcImage">
+        <Property Name="UnifiedSize" Value="{{0.000000,635.000000},{0.000000,388.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:ShengWang01 image:ShengWangAll_BK1"/>
+        <Window Type="DefaultWindow" Name="ShengWangAll_Info">
+          <Property Name="UnifiedSize" Value="{{0.000000,500.000000},{0.000000,80.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="ShengWangAll_InfoText">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-8.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{SWXT_221213_99}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShengWangAll_Page">
+          <Property Name="UnifiedSize" Value="{{0.000000,414.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,80.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ButtonCheckNULL" Name="ShengWangAll_TaskBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Property Name="PushedImage" Value="set:ShengWang01 image:ShengWang_TJRWHover"/>
+            <Property Name="NormalImage" Value="set:ShengWang01 image:ShengWang_TJRWNolmal"/>
+            <Property Name="HoverImage" Value="set:ShengWang01 image:ShengWang_TJRWHover"/>
+            <Property Name="DisabledImage" Value="set:ShengWang01 image:ShengWang_TJRWDis"/>
+            <Event Name="MouseLButtonDown" Function="ClickShengWangAll_TaskBtn();"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="ShengWangAll_ShopBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,104.000000},{0.000000,0.000000}}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Property Name="PushedImage" Value="set:ShengWang01 image:ShengWang_TJMKHover"/>
+            <Property Name="NormalImage" Value="set:ShengWang01 image:ShengWang_TJMKNormal"/>
+            <Property Name="HoverImage" Value="set:ShengWang01 image:ShengWang_TJMKHover"/>
+            <Property Name="DisabledImage" Value="set:ShengWang01 image:ShengWang_TJMKDis"/>
+            <Event Name="MouseLButtonDown" Function="ClickShengWangAll_ShopBtn();"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheckNULL" Name="ShengWangAll_Shop2Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,204.000000},{0.000000,0.000000}}"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Property Name="PushedImage" Value="set:ShengWang01 image:ShengWang_TJSHHover"/>
+            <Property Name="NormalImage" Value="set:ShengWang01 image:ShengWang_TJSHNormal"/>
+            <Property Name="HoverImage" Value="set:ShengWang01 image:ShengWang_TJSHHover"/>
+            <Property Name="DisabledImage" Value="set:ShengWang01 image:ShengWang_TJSHDis"/>
+            <Event Name="MouseLButtonDown" Function="ClickShengWangAll_Shop2Btn();"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShengWangAll_Task">
+          <Property Name="UnifiedSize" Value="{{0.000000,500.000000},{0.000000,288.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,102.000000}}"/>
+          <Window Type="TLBB_Frame_Lace10" Name="ShengWangAll_LingyuItemBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,120.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-135.000000},{0.000000,0.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="ShengWangAll_LingyuItem1">
+              <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.500000,-30.000000}}"/>
+              <Property Name="Image" Value="set:ShengWang01 image:Lingyu_BS2"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ShengWangAll_LingyuItem2">
+              <Property Name="UnifiedSize" Value="{{0.000000,54.000000},{0.000000,54.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,162.000000},{0.500000,-30.000000}}"/>
+              <Property Name="Image" Value="set:ShengWang01 image:Lingyu_MJ2"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShengWangAll_LingyuItemText">
+              <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{1.000000,-30.000000}}"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ShengWangAll_TaskInfoImage">
+            <Property Name="UnifiedSize" Value="{{0.000000,266.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-133.000000},{0.000000,130.000000}}"/>
+            <Property Name="Image" Value="set:ShengWang01 image:ShengWangAllBK4"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="ShengWangAll_TaskGet">
+            <Property Name="UnifiedSize" Value="{{0.000000,194.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-97.000000},{0.000000,160.000000}}"/>
+            <Property Name="PushedImage" Value="set:ShengWang01 image:ShengWang_BXHPush"/>
+            <Property Name="NormalImage" Value="set:ShengWang01 image:ShengWang_BXHNolmal"/>
+            <Property Name="HoverImage" Value="set:ShengWang01 image:ShengWang_BXHHover"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="ClickShengWangAll_Join();"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="ShengWangAll_TaskGet2">
+            <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,170.000000}}"/>
+            <Property Name="Text" Value="#{SWXT_221213_104}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_NotSuperList" Name="ShengWangAll_TaskList_List">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,244.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,4.000000}}"/>
+            <Property Name="VScrollMode" Value="Hide"/>
+            <Window Type="TLBB_NotSuperListItemCommon10" Name="ShengWangAll_TaskList_Item">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,80.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ShengWangAll_TaskList_Item_RankImage">
+                <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,80.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="Image" Value="set:ShengWang01 image:ShengWangAll_JianDan"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_TaskList_Item_Name">
+                <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,18.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,74.000000},{0.000000,2.000000}}"/>
+                <Property Name="Text" Value="#{SWXT_221213_189}"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_TaskList_Item_Info">
+                <Property Name="UnifiedSize" Value="{{0.0000000,330.000000},{1.000000,-20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+                <Property Name="Text" Value="#{SWXT_221213_174}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ShengWangAll_TaskList_ItemMask">
+                <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,22.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,418.000000},{0.500000,-22.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ShengWang01 image:ShengWang_YWC"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ShengWangAll_TaskList_Item_RankText2Image">
+                <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,16.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.00000,412.000000},{0.500000,4.000000}}"/>
+                <Property Name="Image" Value="set:ShengWang01 image:ShengWang_ZhanLing"/>
+                <Property Name="Visible" Value="False"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_TaskList_Item_RankText2">
+                <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.00000,424.000000},{0.500000,2.000000}}"/>
+                <Property Name="Text" Value=""/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_TaskList_Item_RankText3">
+                <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,18.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.00000,202.000000},{0.000000,2.000000}}"/>
+                <Property Name="Text" Value="#{SWXT_230919_1}"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_ButtonCommon" Name="ShengWangAll_TaskList_AItem_Go">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,430.000000},{0.500000,-22.000000}}"/>
+                <Property Name="Text" Value="#{SWXT_221213_91}"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="ShengWangAll_Task_ActivateBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-30.000000}}"/>
+            <Property Name="Text" Value="#{SWXT_230919_2}"/>
+            <Property Name="Tooltip" Value="#{SWXT_230919_3}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="ShengWangAll_Task_ActivateBtn_Click()"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="ShengWangAll_TaskInfo2">
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-36.000000}}"/>
+            <Property Name="Text" Value="#{SWXT_221213_92}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="ShengWangAll_TaskInfo3">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+            <Property Name="Text" Value="#{SWXT_221213_245}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShengWangAll_Shop">
+          <Property Name="UnifiedSize" Value="{{0.000000,500.000000},{0.000000,288.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,102.000000}}"/>
+          <Property Name="Visible" Value="False"/>
+          <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop_F5_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{SWXT_221213_194}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop_Num_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{1.000000,-34.000000}}"/>
+            <Property Name="Text" Value="#{SWXT_221213_87}"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="ShengWangAll_Action_Set">
+            <Property Name="UnifiedPosition" Value="{{0.500000,-180.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,370.000000},{0.000000,226.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Item1">
+              <Property Name="AbsolutePosition" Value="x:0.000000 y:1.000000"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton_Clicked(1);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Item_Amount1">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Item2">
+              <Property Name="AbsolutePosition" Value="x:0.000000 y:39.000000"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton_Clicked(2);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Item_Amount2">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Item3">
+              <Property Name="AbsolutePosition" Value="x:0.000000 y:77.000000"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton_Clicked(3);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Item_Amount3">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Item4">
+              <Property Name="AbsolutePosition" Value="x:0.000000 y:115.000000"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton_Clicked(4);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Item_Amount4">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Item5">
+              <Property Name="AbsolutePosition" Value="x:0.000000 y:153.000000"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton_Clicked(5);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Item_Amount5">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Item6">
+              <Property Name="AbsolutePosition" Value="x:0.000000 y:191.000000"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton_Clicked(6);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Item_Amount6">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Item7">
+              <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,1.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton_Clicked(7);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Item_Amount7">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Item8">
+              <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,39.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton_Clicked(8);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Item_Amount8">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Item9">
+              <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,77.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton_Clicked(9);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Item_Amount9">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Item10">
+              <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,115.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton_Clicked(10);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Item_Amount10">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Item11">
+              <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,153.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton_Clicked(11);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Item_Amount11">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Item12">
+              <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,191.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton_Clicked(12);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Item_Amount12">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_ItemInfo1">
+              <Property Name="AbsolutePosition" Value="x:37.000000 y:0.000000"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo1_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo1_GB">
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_ItemInfo2">
+              <Property Name="AbsolutePosition" Value="x:37.000000 y:38.000000"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo2_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo2_GB">
+                <Property Name="AbsolutePosition" Value="x:4.000000 y:18.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_ItemInfo3">
+              <Property Name="AbsolutePosition" Value="x:37.000000 y:76.000000"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo3_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo3_GB">
+                <Property Name="AbsolutePosition" Value="x:4.000000 y:18.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_ItemInfo4">
+              <Property Name="AbsolutePosition" Value="x:37.000000 y:114.000000"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo4_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo4_GB">
+                <Property Name="AbsolutePosition" Value="x:4.000000 y:18.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_ItemInfo5">
+              <Property Name="AbsolutePosition" Value="x:37.000000 y:152.000000"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo5_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo5_GB">
+                <Property Name="AbsolutePosition" Value="x:4.000000 y:18.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_ItemInfo6">
+              <Property Name="AbsolutePosition" Value="x:37.000000 y:190.000000"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo6_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo6_GB">
+                <Property Name="AbsolutePosition" Value="x:4.000000 y:18.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_ItemInfo7">
+              <Property Name="UnifiedPosition" Value="{{0.000000,221.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo7_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo7_GB">
+                <Property Name="AbsolutePosition" Value="x:4.000000 y:18.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_ItemInfo8">
+              <Property Name="UnifiedPosition" Value="{{0.000000,221.000000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo8_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo8_GB">
+                <Property Name="AbsolutePosition" Value="x:4.000000 y:18.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_ItemInfo9">
+              <Property Name="UnifiedPosition" Value="{{0.000000,221.000000},{0.000000,76.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo9_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo9_GB">
+                <Property Name="AbsolutePosition" Value="x:4.000000 y:18.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_ItemInfo10">
+              <Property Name="UnifiedPosition" Value="{{0.000000,221.000000},{0.000000,114.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo10_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo10_GB">
+                <Property Name="AbsolutePosition" Value="x:4.000000 y:18.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_ItemInfo11">
+              <Property Name="UnifiedPosition" Value="{{0.000000,221.000000},{0.000000,152.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo11_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo11_GB">
+                <Property Name="AbsolutePosition" Value="x:4.000000 y:18.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_ItemInfo12">
+              <Property Name="UnifiedPosition" Value="{{0.000000,221.000000},{0.000000,190.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo12_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_ItemInfo12_GB">
+                <Property Name="AbsolutePosition" Value="x:4.000000 y:18.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace5" Name="ShengWangAll_ShopPageBk">
+            <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,172.000000},{1.000000,-36.000000}}"/>
+            <Window Type="TLBB_ButtonCommon2" Name="ShengWangAll_ShopUpPage">
+              <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{INTERFACE_XML_499}" />
+              <Event Name="Clicked" Function="ShengWangAll_PageUp();" />
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_ShopCurrentlyPage">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="999/999" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="RiseOnClick" Value="False" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon2" Name="ShengWangAll_ShopDownPage">
+              <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{INTERFACE_XML_325}" />
+              <Event Name="Clicked" Function="ShengWangAll_PageDown();" />
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShengWangAll_Shop2">
+          <Property Name="UnifiedSize" Value="{{0.000000,500.000000},{0.000000,288.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,102.000000}}"/>
+          <Property Name="Visible" Value="False"/>
+          <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2_F5_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{SWXT_221213_250}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2_Num_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{1.000000,-34.000000}}"/>
+            <Property Name="Text" Value="#{SWXT_221213_87}"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheck" Name="ShengWangAll_Shop2_querengoumai">
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,300.000000},{0.000000,6.000000}}"/>
+            <Event Name="Clicked" Function="ShengWangAll_Shop2_querengoumai_Clicked();"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2_querengoumai_Text">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,312.000000},{0.000000,4.000000}}"/>
+            <Property Name="Tooltip" Value="#{INTERFACE_XML_SHOP_QUREN2}"/>
+            <Property Name="Text" Value="#{INTERFACE_XML_SHOP_QUREN1}"/>
+            <Event Name="Clicked" Function="ShengWangAll_Shop2_querengoumai_Clicked();"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="ShengWangAll_Action_Set2">
+            <Property Name="UnifiedSize" Value="{{0.000000,370.000000},{0.000000,226.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-180.000000},{0.000000,22.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Shop2Item1">
+              <Property Name="AbsolutePosition" Value="x:0.000000 y:1.000000"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton2_Clicked(1);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2Item_Amount1">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Shop2Item2">
+              <Property Name="AbsolutePosition" Value="x:0.000000 y:39.000000"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton2_Clicked(2);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2Item_Amount2">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Shop2Item3">
+              <Property Name="AbsolutePosition" Value="x:0.000000 y:77.000000"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton2_Clicked(3);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2Item_Amount3">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Shop2Item4">
+              <Property Name="AbsolutePosition" Value="x:0.000000 y:115.000000"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton2_Clicked(4);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2Item_Amount4">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Shop2Item5">
+              <Property Name="AbsolutePosition" Value="x:0.000000 y:153.000000"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton2_Clicked(5);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2Item_Amount5">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Shop2Item6">
+              <Property Name="AbsolutePosition" Value="x:0.000000 y:191.000000"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton2_Clicked(6);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2Item_Amount6">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Shop2Item7">
+              <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,1.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton2_Clicked(7);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2Item_Amount7">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Shop2Item8">
+              <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,39.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton2_Clicked(8);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2Item_Amount8">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Shop2Item9">
+              <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,77.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton2_Clicked(9);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2Item_Amount9">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Shop2Item10">
+              <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,115.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton2_Clicked(10);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2Item_Amount10">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Shop2Item11">
+              <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,153.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton2_Clicked(11);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2Item_Amount11">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ShengWangAll_Shop2Item12">
+              <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,191.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000"/>
+              <Event Name="Clicked" Function="ShengWangAll_GoodButton2_Clicked(12);"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2Item_Amount12">
+                <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_Shop2ItemInfo1">
+              <Property Name="AbsolutePosition" Value="x:37.000000 y:0.000000"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo1_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo1_GB">
+                <Property Name="AbsolutePosition" Value="x:4.000000 y:18.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_Shop2ItemInfo2">
+              <Property Name="AbsolutePosition" Value="x:37.000000 y:38.000000"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo2_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo2_GB">
+                <Property Name="AbsolutePosition" Value="x:4.000000 y:18.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_Shop2ItemInfo3">
+              <Property Name="AbsolutePosition" Value="x:37.000000 y:76.000000"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo3_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo3_GB">
+                <Property Name="AbsolutePosition" Value="x:4.000000 y:18.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_Shop2ItemInfo4">
+              <Property Name="AbsolutePosition" Value="x:37.000000 y:114.000000"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo4_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo4_GB">
+                <Property Name="AbsolutePosition" Value="x:4.000000 y:18.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_Shop2ItemInfo5">
+              <Property Name="AbsolutePosition" Value="x:37.000000 y:152.000000"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo5_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo5_GB">
+                <Property Name="AbsolutePosition" Value="x:4.000000 y:18.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_Shop2ItemInfo6">
+              <Property Name="AbsolutePosition" Value="x:37.000000 y:190.000000"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo6_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo6_GB">
+                <Property Name="AbsolutePosition" Value="x:4.000000 y:18.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_Shop2ItemInfo7">
+              <Property Name="UnifiedPosition" Value="{{0.000000,221.000000},{0.000000,0.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo7_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo7_GB">
+                <Property Name="AbsolutePosition" Value="x:4.000000 y:18.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_Shop2ItemInfo8">
+              <Property Name="UnifiedPosition" Value="{{0.000000,221.000000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo8_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo8_GB">
+                <Property Name="AbsolutePosition" Value="x:4.000000 y:18.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_Shop2ItemInfo9">
+              <Property Name="UnifiedPosition" Value="{{0.000000,221.000000},{0.000000,76.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo9_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo9_GB">
+                <Property Name="AbsolutePosition" Value="x:4.000000 y:18.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_Shop2ItemInfo10">
+              <Property Name="UnifiedPosition" Value="{{0.000000,221.000000},{0.000000,114.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo10_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo10_GB">
+                <Property Name="AbsolutePosition" Value="x:4.000000 y:18.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_Shop2ItemInfo11">
+              <Property Name="UnifiedPosition" Value="{{0.000000,221.000000},{0.000000,152.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo11_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo11_GB">
+                <Property Name="AbsolutePosition" Value="x:4.000000 y:18.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_Shop2ItemInfo12">
+              <Property Name="UnifiedPosition" Value="{{0.000000,221.000000},{0.000000,190.000000}}"/>
+              <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,36.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo12_Text">
+                <Property Name="AbsolutePosition" Value="x:5.000000 y:0.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,139.000000},{0.000000,18.000000}}"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ShengWangAll_Shop2ItemInfo12_GB">
+                <Property Name="AbsolutePosition" Value="x:4.000000 y:18.000000"/>
+                <Property Name="UnifiedSize" Value="{{0.000000,137.000000},{0.000000,18.000000}}"/>
+                <Property Name="HorzFormatting" Value="RightAligned"/>
+                <Property Name="TextColor" Value="FFFFF263"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace5" Name="ShengWangAll_Shop2PageBk">
+            <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,172.000000},{1.000000,-36.000000}}"/>
+            <Window Type="TLBB_ButtonCommon2" Name="ShengWangAll_Shop2UpPage">
+              <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{INTERFACE_XML_499}" />
+              <Event Name="Clicked" Function="ShengWangAll_PageUp();" />
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWangAll_Shop2CurrentlyPage">
+              <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="999/999" />
+              <Property Name="TextColor" Value="FFFFF263" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="RiseOnClick" Value="False" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon2" Name="ShengWangAll_Shop2DownPage">
+              <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{INTERFACE_XML_325}" />
+              <Event Name="Clicked" Function="ShengWangAll_PageDown();" />
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+
+    </Window>
+  </Window>
+</GUILayout>

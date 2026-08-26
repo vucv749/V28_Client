@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="CangBao_FightEnd_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,396.000000},{0.000000,200.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-200.000000},{0.500000,-100.000000}}" />
+    <Event Name="Hidden" Function="CangBao_FightEnd_Close();" />
+    <Window Type="TLBB_ButtonNULL" Name="CangBao_FightEnd_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,40.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="CangBao_FightEnd_Close()"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="PushedImage" Value="set:JiCheShen image:Close3"/>
+      <Property Name="NormalImage" Value="set:JiCheShen image:Close1"/>
+      <Property Name="HoverImage" Value="set:JiCheShen image:Close2"/>
+      <Property Name="DisabledImage" Value="set:JiCheShen image:Close4"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="CangBao_FightEnd_ImageBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,396.000000},{0.000000,200.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+      <Property Name="Image" Value="set:CangBao image:CangBao_End" />
+    </Window>
+  </Window>
+</GUILayout>

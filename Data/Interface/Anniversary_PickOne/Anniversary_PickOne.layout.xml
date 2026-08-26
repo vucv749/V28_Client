@@ -1,0 +1,102 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="Anniversary_PickOne_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,596.000000},{0.000000,376.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-292.000000},{0.500000,-160.000000}}"/>
+    <Event Name="Hidden" Function="Anniversary_PickOne_OnClose()" />
+    <Window Type="TLBB_DragTitle" Name="Anniversary_PickOne_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{WYCJ_20240320_27}"/>
+      <Property Name="DragTarget" Value="Anniversary_PickOne_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Anniversary_PickOne_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function=""/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Anniversary_PickOne_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Anniversary_PickOne_OnClose()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Anniversary_PickOne_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Window Type="DefaultWindow" Name="Anniversary_PickOneAllBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Anniversary_PickOneBK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,584.000000},{0.000000,320.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:SpringFestival_NewClothes01 image:Box_BK"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Anniversary_PickOne_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,-96.000000},{0.000000,33.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,58.000000},{0.000000,50.000000}}"/>
+        <Property Name="Text" Value="#{WYCJ_20240320_32}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_Frame_Lace9" Name="Anniversary_PickOne_Gift1">
+        <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,140.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,95.000000},{0.000000,104.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="Anniversary_PickOne_Gift1_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-33.000000}}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Anniversary_PickOne_Gift1_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-32.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{WYCJ_20240320_28}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Anniversary_PickOne_Alternative">
+        <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,194.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{0.500000,-62.500000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:Anniversary06 image:Alternative"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_Frame_Lace9" Name="Anniversary_PickOne_Gift2">
+        <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,140.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-225.000000},{0.000000,104.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="Anniversary_PickOne_Gift2_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-33.000000}}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Anniversary_PickOne_Gift2_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-32.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{WYCJ_20240320_29}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon11" Name="Anniversary_PickOne_Gift_Select1">
+        <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,113.000000},{1.000000,-67.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Text" Value="#{WYCJ_20240320_42}"/>
+        <Property Name="Tooltip" Value="#{WYCJ_20240320_30}"/>
+        <Event Name="Clicked" Function="Anniversary_PickOne_Left()"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon11" Name="Anniversary_PickOne_Gift_Select2">
+        <Property Name="UnifiedSize" Value="{{0.000000,94.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-207.000000},{1.000000,-67.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Text" Value="#{WYCJ_20240320_42}"/>
+        <Property Name="Tooltip" Value="#{WYCJ_20240320_31}"/>
+        <Event Name="Clicked" Function="Anniversary_PickOne_Right()"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

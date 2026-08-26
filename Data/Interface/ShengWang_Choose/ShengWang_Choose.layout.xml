@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="ShengWang_Choose_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,564.000000},{0.000000,454.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-280.000000},{0.120000,0.000000}}"/>
+    <Event Name="Hidden" Function="ShengWang_Choose_Close();"/>
+    <Window Type="TLBB_DragTitle" Name="ShengWang_Choose_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Text" Value="#{ZYXZ_230104_1}"/>
+      <Property Name="VertFormatting" Value="VertCentred"/>
+      <Property Name="DragTarget" Value="ShengWang_Choose_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="ShengWang_Choose_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Helper:GotoHelper(&quot;*Compensate&quot;);"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="ShengWang_Choose_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="ShengWang_Choose_Close();"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="ShengWang_Choose_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Window Type="DefaultWindow" Name="ShengWang_Choose_AllBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="ShengWang_Choose_NPCBK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,366.000000},{0.000000,400.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:ShengWang01 image:ShengWang_ChooseBK1"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ShengWang_Choose_NPCBK2">
+          <Property Name="UnifiedSize" Value="{{0.000000,184.000000},{0.000000,400.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,366.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:ShengWang01 image:ShengWang_ChooseBK2"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShengWang_Choose_Text">
+        <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,54.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,10.000000}}"/>
+        <Property Name="Text" Value="#{ZYXZ_230104_8}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="ShengWang_Choose_NPC2Info">
+        <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,25.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,314.000000}}"/>
+        <Property Name="PushedImage" Value="set:ShengWang01 image:ShengWang_InfoPush"/>
+        <Property Name="NormalImage" Value="set:ShengWang01 image:ShengWang_InfoNormal"/>
+        <Property Name="HoverImage" Value="set:ShengWang01 image:ShengWang_InfoHover"/>
+        <Property Name="Tooltip" Value="#{ZYXZ_230104_6}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="ShengWang_Choose_NPCInfo_Click(2);"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="ShengWang_Choose_NPC2Go">
+        <Property Name="UnifiedSize" Value="{{0.000000,147.000000},{0.000000,32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,350.000000}}"/>
+        <Property Name="PushedImage" Value="set:ShengWang01 image:ShengWang_GoPush"/>
+        <Property Name="NormalImage" Value="set:ShengWang01 image:ShengWang_GoNormal"/>
+        <Property Name="HoverImage" Value="set:ShengWang01 image:ShengWang_GoHover"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="ShengWang_Choose_NPCGo_Click(2);"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="ShengWang_Choose_NPC1Info">
+        <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,25.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,314.000000}}"/>
+        <Property Name="PushedImage" Value="set:ShengWang01 image:ShengWang_InfoPush"/>
+        <Property Name="NormalImage" Value="set:ShengWang01 image:ShengWang_InfoNormal"/>
+        <Property Name="HoverImage" Value="set:ShengWang01 image:ShengWang_InfoHover"/>
+        <Property Name="Tooltip" Value="#{ZYXZ_230104_6}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="ShengWang_Choose_NPCInfo_Click(1);"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="ShengWang_Choose_NPC1Go">
+        <Property Name="UnifiedSize" Value="{{0.000000,147.000000},{0.000000,32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,204.000000},{0.000000,350.000000}}"/>
+        <Property Name="PushedImage" Value="set:ShengWang01 image:ShengWang_GoPush"/>
+        <Property Name="NormalImage" Value="set:ShengWang01 image:ShengWang_GoNormal"/>
+        <Property Name="HoverImage" Value="set:ShengWang01 image:ShengWang_GoHover"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="ShengWang_Choose_NPCGo_Click(1);"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="ShengWang_Choose_NPC3Info">
+        <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,25.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,374.000000},{0.000000,314.000000}}"/>
+        <Property Name="PushedImage" Value="set:ShengWang01 image:ShengWang_InfoPush"/>
+        <Property Name="NormalImage" Value="set:ShengWang01 image:ShengWang_InfoNormal"/>
+        <Property Name="HoverImage" Value="set:ShengWang01 image:ShengWang_InfoHover"/>
+        <Property Name="Tooltip" Value="#{ZYXZ_230104_6}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="ShengWang_Choose_NPCInfo_Click(3);"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="ShengWang_Choose_NPC3Go">
+        <Property Name="UnifiedSize" Value="{{0.000000,147.000000},{0.000000,32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,386.000000},{0.000000,350.000000}}"/>
+        <Property Name="PushedImage" Value="set:ShengWang01 image:ShengWang_GoPush"/>
+        <Property Name="NormalImage" Value="set:ShengWang01 image:ShengWang_GoNormal"/>
+        <Property Name="HoverImage" Value="set:ShengWang01 image:ShengWang_GoHover"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="ShengWang_Choose_NPCGo_Click(3);"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="DaHua_Yure_Letter_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,504.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-200.000000},{0.500000,-252.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="DaHua_Yure_Letter_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-85.000000},{0.000000,70.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="DragTarget" Value="DaHua_Yure_Letter_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="DaHua_Yure_Letter_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,58.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-93.000000},{0.000000,10.000000}}"/>
+      <Property Name="PushedImage" Value="set:DaHua_Yure image:DaHua_Yure_LetterClose_Pushed"/>
+      <Property Name="NormalImage" Value="set:DaHua_Yure image:DaHua_Yure_LetterClose_Normal"/>
+      <Property Name="HoverImage" Value="set:DaHua_Yure image:DaHua_Yure_LetterClose_Hover"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="DaHua_Yure_Letter_OnClose()"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="DaHua_Yure_Letter_FrameBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Window Type="TLBB_StaticImageNULL" Name="DaHua_Yure_Letter_LetterBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:DaHua_Yure image:DaHua_Yure_LetterBK"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="DaHua_Yure_Letter_Goto">
+        <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,144.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,27.000000},{0.000000,327.000000}}"/>
+        <Property Name="PushedImage" Value="set:DaHua_Yure image:DaHua_Yure_Letter_Goto_Pushed"/>
+        <Property Name="NormalImage" Value="set:DaHua_Yure image:DaHua_Yure_Letter_Goto_Normal"/>
+        <Property Name="HoverImage" Value="set:DaHua_Yure image:DaHua_Yure_Letter_Goto_Hover"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="DaHua_Yure_Letter_OnGoButtonClicked()"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

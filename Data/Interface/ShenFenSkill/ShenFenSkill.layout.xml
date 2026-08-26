@@ -1,0 +1,367 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame3" Name="ShenFenSkill_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,362.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.120000,0.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="ShenFenSkill_Frame1_Title">
+      <Property Name="UnifiedSize" Value="{{1.000000,-133.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,108.000000},{0.000000,11.000000}}"/>
+      <Property Name="Text" Value="#{YCGZ_231225_03}" />
+      <Property Name="DragTarget" Value="ShenFenSkill_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="ShenFenSkill_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Helper:GotoHelper(&quot;*Operation&quot;);" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="ShenFenSkill_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="ShenFenSkill_OnClose();" />
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="ShenFenSkill_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{0.000000,242.000000},{0.000000,300.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,36.000000}}"/>
+      <Property Name="Image" Value="set:CommonFrame29 image:ShenFen_BK"/>
+      <Window Type="DefaultWindow" Name="ShenFenSkill_Job1">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,72.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="DefaultWindow" Name="ShenFenSkill_Job1_Name">
+          <Property Name="UnifiedSize" Value="{{1.000000,-75.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,6.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job1_NameText">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{YCGZ_231225_124}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ShenFenSkill_Job1_Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Image" Value="set:CommonFrame29 image:DangQian"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShenFenSkill_Job1_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,74.000000},{0.000000,27.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job1_Not">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{YCGZ_231225_83}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="ShenFenSkill_Job1_Info2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job1_ForceLevel">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.50000,-20.000000}}"/>
+              <Property Name="Text" Value="#{YCGZ_231225_11}" />
+              <Property Name="HorzFormatting" Value="LeftAligned" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="RiseOnClick" Value="False" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job1_ForceSleight">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,0.000000}}"/>
+              <Property Name="Text" Value="#{YCGZ_231225_12}" />
+              <Property Name="HorzFormatting" Value="LeftAligned" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="RiseOnClick" Value="False" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job1_ForceLevelText">
+              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-20.000000}}"/>
+              <Property Name="HorzFormatting" Value="RightAligned" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="Text" Value="999" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job1_ForceSleightText">
+              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,0.000000}}"/>
+              <Property Name="HorzFormatting" Value="RightAligned" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="Text" Value="999" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="ShenFenSkill_Job1_Use">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.500000,0.000000}}"/>
+              <Property Name="Text" Value="#{SFJN_231225_35}"/>
+              <Property Name="Tooltip" Value="#{SFJN_231225_63}"/>
+              <Event Name="Clicked" Function="ShenFenSkill_Button_Clicked();"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ShenFenSkill_Job2">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,72.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,75.000000}}"/>
+        <Window Type="DefaultWindow" Name="ShenFenSkill_Job2_Name">
+          <Property Name="UnifiedSize" Value="{{1.000000,-75.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,6.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job2_NameText">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{YCGZ_231225_124}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ShenFenSkill_Job2_Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Image" Value="set:CommonFrame29 image:DangQian"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShenFenSkill_Job2_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,74.000000},{0.000000,27.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job2_Not">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{YCGZ_231225_83}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="ShenFenSkill_Job2_Info2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job2_ForceLevel">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.50000,-20.000000}}"/>
+              <Property Name="Text" Value="#{YCGZ_231225_11}" />
+              <Property Name="HorzFormatting" Value="LeftAligned" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="RiseOnClick" Value="False" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job2_ForceSleight">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,0.000000}}"/>
+              <Property Name="Text" Value="#{YCGZ_231225_12}" />
+
+              <Property Name="HorzFormatting" Value="LeftAligned" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="RiseOnClick" Value="False" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job2_ForceLevelText">
+              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-20.000000}}"/>
+              <Property Name="HorzFormatting" Value="RightAligned" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="Text" Value="999" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job2_ForceSleightText">
+              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,0.000000}}"/>
+              <Property Name="HorzFormatting" Value="RightAligned" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="Text" Value="999" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="ShenFenSkill_Job2_Use">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.500000,0.000000}}"/>
+              <Property Name="Text" Value="#{SFJN_231225_35}"/>
+              <Property Name="Tooltip" Value="#{SFJN_231225_63}"/>
+              <Event Name="Clicked" Function="ShenFenSkill_Button_Clicked();"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ShenFenSkill_Job3">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,72.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,150.000000}}"/>
+        <Window Type="DefaultWindow" Name="ShenFenSkill_Job3_Name">
+          <Property Name="UnifiedSize" Value="{{1.000000,-75.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,6.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job3_NameText">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{YCGZ_231225_124}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ShenFenSkill_Job3_Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Image" Value="set:CommonFrame29 image:DangQian"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShenFenSkill_Job3_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,74.000000},{0.000000,27.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job3_Not">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{YCGZ_231225_83}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="ShenFenSkill_Job3_Info2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job3_ForceLevel">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.50000,-20.000000}}"/>
+              <Property Name="Text" Value="#{YCGZ_231225_11}" />
+              <Property Name="HorzFormatting" Value="LeftAligned" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="RiseOnClick" Value="False" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job3_ForceSleight">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,0.000000}}"/>
+              <Property Name="Text" Value="#{YCGZ_231225_12}" />
+              <Property Name="HorzFormatting" Value="LeftAligned" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="RiseOnClick" Value="False" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job3_ForceLevelText">
+              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-20.000000}}"/>
+              <Property Name="HorzFormatting" Value="RightAligned" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="Text" Value="999" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job3_ForceSleightText">
+              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,0.000000}}"/>
+              <Property Name="HorzFormatting" Value="RightAligned" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="Text" Value="999" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="ShenFenSkill_Job3_Use">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.500000,0.000000}}"/>
+              <Property Name="Text" Value="#{SFJN_231225_35}"/>
+              <Property Name="Tooltip" Value="#{SFJN_231225_63}"/>
+              <Event Name="Clicked" Function="ShenFenSkill_Button_Clicked();"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ShenFenSkill_Job4">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,72.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,225.000000}}"/>
+        <Window Type="DefaultWindow" Name="ShenFenSkill_Job4_Name">
+          <Property Name="UnifiedSize" Value="{{1.000000,-75.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,72.000000},{0.000000,6.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job4_NameText">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{YCGZ_231225_124}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ShenFenSkill_Job4_Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,47.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Image" Value="set:CommonFrame29 image:DangQian"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ShenFenSkill_Job4_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,44.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,74.000000},{0.000000,27.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job4_Not">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{YCGZ_231225_83}" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="ShenFenSkill_Job4_Info2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job4_ForceLevel">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.50000,-20.000000}}"/>
+              <Property Name="Text" Value="#{YCGZ_231225_11}" />
+
+              <Property Name="HorzFormatting" Value="LeftAligned" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="RiseOnClick" Value="False" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job4_ForceSleight">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,0.000000}}"/>
+              <Property Name="Text" Value="#{YCGZ_231225_12}" />
+
+              <Property Name="HorzFormatting" Value="LeftAligned" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="RiseOnClick" Value="False" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job4_ForceLevelText">
+              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-20.000000}}"/>
+              <Property Name="HorzFormatting" Value="RightAligned" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="Text" Value="999" />
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ShenFenSkill_Job4_ForceSleightText">
+              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,0.000000}}"/>
+              <Property Name="HorzFormatting" Value="RightAligned" />
+              <Property Name="VertFormatting" Value="VertCentred" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="Text" Value="999" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="ShenFenSkill_Job4_Use">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.500000,0.000000}}"/>
+              <Property Name="Text" Value="#{SFJN_231225_35}"/>
+              <Property Name="Tooltip" Value="#{SFJN_231225_63}"/>
+              <Event Name="Clicked" Function="ShenFenSkill_Button_Clicked();"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="ShenFenSkill_Checkbox_Frame">
+      <Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,24.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{1.000000,-25.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="RiseOnClick" Value="False" />
+      <Window Type="TLBB_ButtonPageDown" Name="ShenFenSkill_CommonlySkill">
+        <Property Name="AbsolutePosition" Value="x:0.0 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Text" Value="#{INTERFACE_XML_494}" />
+        <Event Name="Clicked" Function="ShenFenSkill_Common_Page_Switch();" />
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="ShenFenSkill_ActionSkill">
+        <Property Name="AbsolutePosition" Value="x:44 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Text" Value="#{INTERFACE_XML_448}" />
+        <Event Name="Clicked" Function="ShenFenSkill_Action_Page_Switch();" />
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="ShenFenSkill_ShenFenSkill">
+        <Property Name="AbsolutePosition" Value="x:88.0 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Text" Value="#{YCGZ_231225_134}" />
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="ShenFenSkill_LifeSkill">
+        <Property Name="AbsolutePosition" Value="x:132.0 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Text" Value="#{INTERFACE_XML_635}" />
+        <Event Name="Clicked" Function="ShenFenSkill_Life_Page_Switch();" />
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="ShenFenSkill_AutoAttack">
+        <Property Name="AbsolutePosition" Value="x:176.0 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Text" Value="#{ZDZD_200724_08}" />
+        <Event Name="Clicked" Function="ShenFenSkill_AutoAttack_Page_Switch()" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="CaiLing_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,250.000000},{0.000000,94.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{1.000000,-260.000000},{0.500000,70.000000}}" />
+    <Window Type="TLBB_DragTitle" Name="CaiLing_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="DragTarget" Value="CaiLing_Frame"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+
+    <Window Type="TLBB_StaticImageNULL" Name="CaiLing_ImageBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-2.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+      <Property Name="Image" Value="set:CaiLingPic image:CaiLingPic_BK"/>
+  
+      <Window Type="TLBB_SimpleText" Name="CaiLing_Text1">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,24.000000},{1.000000,-68.000000}}"/>
+        <Property Name="Text" Value="#{CLCW_240328_71}"/>
+        <Property Name="Font" Value="YouYuan9.75"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="VertFormatting" Value="TopAligned"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window> 
+      <Window Type="TLBB_SimpleText" Name="CaiLing_Text2">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,24.000000},{1.000000,-40.000000}}"/>
+        <Property Name="Text" Value="#{CLCW_240328_72}"/>
+        <Property Name="Font" Value="YouYuan13"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>           
+    </Window>
+ 
+  </Window>
+</GUILayout>

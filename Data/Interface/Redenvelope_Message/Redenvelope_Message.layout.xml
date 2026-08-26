@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="Redenvelope_Message_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,66.000000},{0.000000,79.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-38.000000},{1.000000,-310.000000}}"/>
+    <Property Name="MouseHollow" Value="True" />
+    <Property Name="MouseMoveHollow" Value="True"/>
+    <Property Name="AlwaysOnTop" Value="True" />
+    <Window Type="TLBB_ButtonNULL" Name="Redenvelope_Message_Button_Action1_Mask">
+      <Property Name="UnifiedSize" Value="{{0.000000,67.000000},{0.000000,79.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="PushedImage" Value="set:Redenvelope image:Button_Gold_Pushed"/>
+      <Property Name="NormalImage" Value="set:Redenvelope image:Button_Gold_Normal"/>
+      <Property Name="HoverImage" Value="set:Redenvelope image:Button_Gold_Hover"/>
+      <Property Name="Tooltip" Value="#{}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Event Name="Clicked" Function="Redenvelope_Message_ButtonOnClicked(0);"/>
+      <Window Type="TLBB_StaticImageNULL" Name="Redenvelope_Message_Button_Action1_Image">
+        <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,9.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,63.000000}}"/>
+        <Property Name="Image" Value="set:Redenvelope image:Button_World"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_Animate" Name="Redenvelope_Message_Button_Action1_Animate">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Animate" Value="Redenvelope_GoldButton"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Redenvelope_Message_Button_Action1_BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,39.000000},{0.000000,0.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Image" Value="set:Redenvelope image:TimeBK"/>
+        <Window Type="TLBB_StopWatch" Name="Redenvelope_Message_Button_Action1_Watch">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="TextColor" Value="FF00FFFF"/>
+          <Property Name="Font" Value="YouYuan13"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="HorzFormatting" Value="RightAligned"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="ReachedZero" Function="Redenvelope_Message_HideButton(0);"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

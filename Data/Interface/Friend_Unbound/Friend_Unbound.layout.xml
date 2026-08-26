@@ -1,0 +1,59 @@
+﻿<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="Friend_Unbound">
+    <Property Name="UnifiedSize" Value="{{0.000000,288.000000},{0.000000,196.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-144.000000},{0.500000,-98.000000}}"/>
+  
+    <Window Type="TLBB_DragTitle" Name="Friend_Unbound_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-64.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,9.000000}}"/>
+      <Property Name="DragTarget" Value="Friend_Unbound" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="Title" />
+      <Property Name="Text" Value="#{QYHY_230330_84}" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Friend_Unbound_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function=""/>
+    </Window>
+	<Window Type="TLBB_ButtonClose" Name="Friend_Unbound_Close">
+		<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+        <Event Name="Clicked" Function="this:Hide();"/>
+		<Property Name="AlwaysOnTop" Value="True"/>
+	</Window>
+
+  <Window Type="TLBB_SimpleText" Name="Friend_Unbound_Text">
+    <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,72.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.000000,42.000000}}"/>
+    <Property Name="TextColor" Value="FFFFF263"/>
+    <Property Name="Text" Value="#{QYHY_230330_151}"/>
+    <Property Name="RiseOnClick" Value="False"/>
+    <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+  </Window>    
+  <Window Type="TLBB_ComboList" Name="Friend_Unbound_Select">
+    <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-80.000000},{0.000000,112.000000}}"/>
+  </Window>
+
+	<Window Type="TLBB_Frame_Lace5" Name="Friend_Unbound_Blank">
+		<Property Name="UnifiedSize" Value="{{1.000000,-160.000000},{0.000000,20.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{1.000000,-39.000000}}"/>
+		<Property Name="RiseOnClick" Value="False"/>
+	</Window>
+	<Window Type="TLBB_ButtonCommon" Name="Friend_Unbound_OK_Button">
+		<Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,20.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-152.000000},{1.000000,-39.000000}}"/>
+		<Property Name="Text" Value="#{INTERFACE_XML_557}"/>
+		<Event Name="Clicked" Function="Friend_Unbound_OK_Clicked()"/>
+	</Window>
+	<Window Type="TLBB_ButtonCommon" Name="Friend_Unbound_Cancel_Button">
+		<Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,20.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-78.000000},{1.000000,-39.000000}}"/>
+		<Property Name="Text" Value="#{INTERFACE_XML_542}"/>
+		<Event Name="Clicked" Function="Friend_Unbound_Hide()"/>
+	</Window>
+
+  </Window>
+</GUILayout>

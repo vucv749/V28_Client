@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame_Frozen2" Name="Frozen_GeCao_Guide_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,601.000000},{0.000000,448.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.500000,-224.000000}}"/>		
+		<Window Type="TLBB_DragTitle" Name="Frozen_GeCao_Guide_DragTitle">
+			<Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,4.000000}}"/>
+			<Property Name="DragTarget" Value="Frozen_GeCao_Guide_Frame"/>
+			<Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Guide_PageHeader">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+				<Property Name="Text" Value="#{BXDR_20240920_237}"/>
+				<Property Name="HorzFormatting" Value="HorzCentred"/>
+				<Property Name="Font" Value="YouYuan11.25"/>
+			</Window>
+		</Window>
+		<Window Type="TLBB_ButtonClose" Name="Frozen_GeCao_Guide_Close">
+			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,4.000000}}"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Event Name="Clicked" Function="Frozen_GeCao_Guide_OnClose();"/>
+		</Window>
+		<Window Type="DefaultWindow" Name="Frozen_GeCao_Guide_Client">
+			<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-26.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,24.000000}}"/>
+			<Window Type="TLBB_ButtonNULL" Name="Frozen_GeCao_Guide_LeftArrow">
+				<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,60.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-30.000000}}"/>
+				<Property Name="PushedImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowL_Pushed"/>
+				<Property Name="NormalImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowL_Normal"/>
+				<Property Name="HoverImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowL_Hover"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+				<Event Name="Clicked" Function="Frozen_GeCao_Guide_Page_Left();"/>
+			</Window>
+			<Window Type="TLBB_ButtonNULL" Name="Frozen_GeCao_Guide_RightArrow">
+				<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,60.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.500000,-30.000000}}"/>
+				<Property Name="PushedImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowR_Pushed"/>
+				<Property Name="NormalImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowR_Normal"/>
+				<Property Name="HoverImage" Value="set:DaHua_PVP2 image:DaHua_PVP2_ArrowR_Hover"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+				<Event Name="Clicked" Function="Frozen_GeCao_Guide_Page_Right();"/>
+			</Window>	
+			<Window Type="TLBB_StaticImageNULL" Name="Frozen_GeCao_Guide_ImageBk">
+				<Property Name="UnifiedSize" Value="{{0.000000,591.000000},{0.000000,421.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Property Name="Image" Value="set:Frozen_GeCao2 image:Frozen_GeCao2_Guide1"/>
+			</Window>			
+		</Window>
+	</Window>
+</GUILayout>

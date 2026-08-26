@@ -1,0 +1,187 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="ValentinesDay_Guessing_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,736.000000},{0.000000,490.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-368.000000},{0.500000,-245.000000}}"/>
+    <Event Name="Hidden" Function="ValentinesDay_Guessing_OnHiden()"/>
+    <Window Type="TLBB_HeroFrame01" Name="ValentinesDay_Guessing_MainFrame">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_HeroTitle01" Name="ValentinesDay_Guessing_DragTitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,-2.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_DragTitle" Name="ValentinesDay_Guessing_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,2.000000}}"/>
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="Text" Value="#{QRWH_221115_106}" />
+        <Property Name="DragTarget" Value="ValentinesDay_Guessing_Frame"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="ValentinesDay_Guessing_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.000000,9.000000}}"/>
+        <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+        <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
+        <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
+        <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+        <Event Name="Clicked" Function="ValentinesDay_Guessing_Close();" />
+      </Window>
+      <Window Type="DefaultWindow" Name="ValentinesDay_Guessing_Frame_Client">
+        <Property Name="UnifiedSize" Value="{{0.000000,724.000000},{0.000000,454.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,29.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_StaticImageNULL" Name="ValentinesDay_Guessing_Frame_Bk">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+          <Property Name="Image" Value="set:ValentinesDay_Guessing image:BK_Large"/>
+          <Property Name="RiseOnClick" Value="False" /> 
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ValentinesDay_Guessing_Frame_Text1">
+          <Property Name="UnifiedSize" Value="{{0.000000,613.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,59.000000},{0.000000,14.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="Text" Value="#{QRWH_221115_88}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ValentinesDay_Guessing_Frame_Text2">
+          <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,263.000000},{0.000000,82.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="Text" Value="#{QRWH_221115_89}"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ValentinesDay_Guessing_Frame_Text2BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,274.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-137.000000},{0.000000,80.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:ValentinesDay_Guessing image:SubtitleBK"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="ValentinesDay_Guessing_Frame_Bk1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-427.000000},{1.000000,-7.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ButtonCheckNULL" Name="ValentinesDay_Guessing_Frame_Bk1_CheckCity">
+            <Property Name="UnifiedSize" Value="{{0.000000,198.000000},{0.000000,292.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{0.000000,113.000000}}"/>
+            <Property Name="PushedImage" Value="set:ValentinesDay_Guessing image:SelectBox"/>
+            <Property Name="NormalImage" Value="set:ValentinesDay_Guessing image:"/>
+            <Property Name="HoverImage" Value="set:ValentinesDay_Guessing image:SelectBox"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="ValentinesDay_Guessing_CheckClk(1);"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ValentinesDay_Guessing_Frame_Bk1_Choosen">
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,390.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:ValentinesDay_Guessing image:Selected"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ValentinesDay_Guessing_Frame_Bk1_Win">
+            <Property Name="UnifiedSize" Value="{{0.000000,246.000000},{0.000000,402.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-114.500000},{0.000000,24.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>            
+            <Property Name="Image" Value="set:ValentinesDay_Guessing image:ChoosenOne"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ValentinesDay_Guessing_Frame_Bk2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-425.000000},{1.000000,-7.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_ButtonCheckNULL" Name="ValentinesDay_Guessing_Frame_Bk2_CheckCity">
+            <Property Name="UnifiedSize" Value="{{0.000000,198.000000},{0.000000,292.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,53.000000},{0.000000,115.000000}}"/>
+            <Property Name="PushedImage" Value="set:ValentinesDay_Guessing image:SelectBox"/>
+            <Property Name="NormalImage" Value="set:ValentinesDay_Guessing image:"/>
+            <Property Name="HoverImage" Value="set:ValentinesDay_Guessing image:SelectBox"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="ValentinesDay_Guessing_CheckClk(2);"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ValentinesDay_Guessing_Frame_Bk2_Choosen">
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-49.000000},{0.000000,390.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:ValentinesDay_Guessing image:Selected"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ValentinesDay_Guessing_Frame_Bk2_Win">
+            <Property Name="UnifiedSize" Value="{{0.000000,246.000000},{0.000000,402.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-114.500000},{0.000000,24.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:ValentinesDay_Guessing image:ChoosenOne"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ValentinesDay_Guessing_Frame_Bk3">
+          <Property Name="UnifiedSize" Value="{{1.000000,-433.000000},{1.000000,-7.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,429.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ButtonCheckNULL" Name="ValentinesDay_Guessing_Frame_Bk3_CheckCity">
+            <Property Name="UnifiedSize" Value="{{0.000000,198.000000},{0.000000,292.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,115.000000}}"/>
+            <Property Name="PushedImage" Value="set:ValentinesDay_Guessing image:SelectBox"/>
+            <Property Name="NormalImage" Value="set:ValentinesDay_Guessing image:"/>
+            <Property Name="HoverImage" Value="set:ValentinesDay_Guessing image:SelectBox"/>
+            <Property Name="CheckMode" Value="1"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="ValentinesDay_Guessing_CheckClk(3);"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ValentinesDay_Guessing_Frame_Bk3_Choosen">
+            <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-49.000000},{0.000000,390.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:ValentinesDay_Guessing image:Selected"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ValentinesDay_Guessing_Frame_Bk3_Win">
+            <Property Name="UnifiedSize" Value="{{0.000000,246.000000},{0.000000,402.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-114.500000},{0.000000,24.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:ValentinesDay_Guessing image:ChoosenOne"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="ValentinesDay_Guessing_Frame_SelectBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,97.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-47.000000},{0.000000,417.000000}}"/>
+          <Property Name="Tooltip" Value="#{}"/>
+          <Property Name="NormalImage" Value="set:ValentinesDay_Guessing image:Btn_Normal"/>
+          <Property Name="HoverImage" Value="set:ValentinesDay_Guessing image:Btn_Hover"/>
+          <Property Name="PushedImage" Value="set:ValentinesDay_Guessing image:Btn_Pushed"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="ValentinesDay_Guessing_SelectClk();" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

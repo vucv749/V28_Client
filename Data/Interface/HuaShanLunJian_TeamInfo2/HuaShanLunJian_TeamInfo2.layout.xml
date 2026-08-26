@@ -1,0 +1,168 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="HuaShanLunJian_TeamInfo2_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,290.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-220.000000},{0.200000,49.399994}}"/>
+    <Window Type="TLBB_DragTitle" Name="HuaShanLunJian_TeamInfo2_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,10.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="HuaShanLunJian_TeamInfo2_Frame"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="Text" Value="#{JZGN_20230710_130}" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="HuaShanLunJian_TeamInfo2_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="HuaShanLunJian_TeamInfo2_CloseClicked();"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="HuaShanLunJian_TeamInfo2_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="TLBB_Frame_Lace2" Name="HuaShanLunJian_TeamInfo2_BasicInfo">
+      <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{0.000000,22.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,33.000000}}"/>
+      <Property Name="Visible" Value="True" />
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="DefaultWindow" Name="HuaShanLunJian_TeamInfo2_Infomation1">
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,1.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
+        <Property Name="Visible" Value="True" />
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_TeamInfo2_part1">
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+          <Property Name="UnifiedSize" Value="{{0.60000,-8.0000},{1.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{JZGN_20230710_162}" />
+        </Window>
+
+        <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_TeamInfo2_part2">
+          <Property Name="UnifiedSize" Value="{{0.400000,-4.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{WCBZ_180128_515}" />
+        </Window>
+      </Window>
+    </Window>
+    <!-- <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_TeamInfo2_BasicInfo2">
+      <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{0.000000,18.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,59.000000}}"/>
+      <Property Name="Text" Value="#{WCBZ_180128_610}"/>
+      <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+    </Window> -->
+    <Window Type="DefaultWindow" Name="HuaShanLunJian_TeamInfo2_MemberInfo">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,212.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,52.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_MultiColumnList" Name="HuaShanLunJian_TeamInfo2_List">
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
+        <Property Name="ForceHorzScrollbar" Value="False" />
+        <Property Name="ForceVertScrollbar" Value="False" />
+        <Property Name="SortSettingEnabled" Value="False" />
+        <Property Name="ColumnHeader" Value="text:#{JZGN_20230710_132} width:0.4 id:0" />
+        <Property Name="ColumnHeader" Value="text:#{JZGN_20230710_32} width:0.14 id:1" />
+        <Property Name="ColumnHeader" Value="text:#{JZGN_20230710_51} width:0.14 id:2" />
+        <Property Name="ColumnHeader" Value="text:#{JZGN_20230710_179} width:0.32 id:3" />
+        <Property Name="ColumnsSizable" Value="False" />
+        <Property Name="ColumnsMovable" Value="False" />
+        <Property Name="ColumnsAdjust" Value="True" />
+      </Window>
+      <Window Type="TLBB_NotSuperList" Name="HuaShanLunJian_TeamInfo2_ListClient">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,190.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="SelectMode" Value="Single" />
+        <Window Type="TLBB_NotSuperListItemCommon5" Name="HuaShanLunJian_TeamInfo2_List_Frame">
+          <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="DefaultWindow" Name="HuaShanLunJian_TeamInfo2_List1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_StaticImageNULL" Name="HuaShanLunJian_TeamInfo2_List1_Pic">
+              <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+              <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_L"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_TeamInfo2_List1_1">
+              <Property Name="UnifiedSize" Value="{{0.400000,5.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="名字有六个字@后面有六个字"/>
+              <Property Name="TextColor" Value="FFFFFF00"/>
+              <Property Name="HorzFormatting" Value="LeftAligned"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_TeamInfo2_List1_2">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.0000000,220.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="22222"/>
+              <Property Name="TextColor" Value="FFFFFF00"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_TeamInfo2_List1_3">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,298.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="333"/>
+              <Property Name="TextColor" Value="FFFFFF00"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="HuaShanLunJian_TeamInfo2_List1_4">
+              <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,368.000000},{0.000000,5.000000}}"/>
+              <Property Name="Text" Value="333"/>
+              <Property Name="TextColor" Value="FFFFFF00"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <!-- <Window Type="TLBB_ButtonCommon12" Name="HuaShanLunJian_TeamInfo2_ViewInfo">
+      <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-176.000000},{1.000000,-29.000000}}"/>
+      <Property Name="Text" Value="#{WCBZ_180128_193}" />
+      <Event Name="Clicked" Function="HuaShanLunJian_TeamInfo2_ViewInfo_Clicked();"/>
+    </Window>
+    <Window Type="TLBB_ButtonCommon12" Name="HuaShanLunJian_TeamInfo2_PrivateChat">
+      <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-94.000000},{1.000000,-29.000000}}"/>
+      <Property Name="Text" Value="#{WCBZ_180128_194}" />
+      <Event Name="Clicked" Function="HuaShanLunJian_TeamInfo2_PrivateChat_Clicked();"/>
+    </Window> -->
+  </Window>
+</GUILayout>

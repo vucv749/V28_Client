@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="FC_Over_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,318.000000},{0.000000,227.000000}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-182.000000},{0.500000,-156.000000}" />
+    <Event Name="Hidden" Function="FC_Over_Frame_Close_Clicked();" />
+    <Window Type="TLBB_DragTitle" Name="FC_Over_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,50.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,50.000000}" />
+      <Property Name="DragTarget" Value="FC_Over_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+    </Window>
+
+    <Window Type="TLBB_ButtonClose" Name="FC_Over_Close">
+      <Property Name="Visible" Value="False"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+      <Event Name="Clicked" Function="FC_Over_Frame_Close_Clicked();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="FC_Over_Client">
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+
+      <Window Type="DefaultWindow" Name="FC_Over_AwardBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="FC_Over_BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,318.000000},{0.000000,100.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-159.000000},{0.500000,-20.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:FC_Battle image:FC_Over_BK"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="FC_Over_AwardBK_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-70.000000},{1.000000,-120.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,80.000000}}"/>
+          <Property Name="Text" Value="#{}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+
+        <Window Type="TLBB_StaticImageNULL" Name="FC_Over_AwardBK_Win">
+          <Property Name="UnifiedSize" Value="{{0.000000,318.000000},{0.000000,100.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-159.000000},{0.500000,-80.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:FC_Battle image:FC_Over_Win"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="FC_Over_AwardBK_Fail">
+          <Property Name="UnifiedSize" Value="{{0.000000,318.000000},{0.000000,100.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-159.000000},{0.500000,-80.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:FC_Battle image:FC_Over_Fail"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="FC_Over_AwardBK_No1">
+          <Property Name="UnifiedSize" Value="{{0.000000,318.000000},{0.000000,100.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-159.000000},{0.500000,-80.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:FC_Battle image:FC_Over_No1"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="FC_Over_AwardBK_No2">
+          <Property Name="UnifiedSize" Value="{{0.000000,318.000000},{0.000000,100.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-159.000000},{0.500000,-80.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:FC_Battle image:FC_Over_No2"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="FC_Over_AwardBK_YesBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-35.000000},{1.000000,-40.000000}}"/>
+          <Property Name="Text" Value="#{DFXD_250326_105}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="FC_Over_Frame_Close_Clicked()"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="FC_Over_AwardBK_ExitBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-35.000000},{1.000000,-40.000000}}"/>
+          <Property Name="Text" Value="#{DFXD_250326_105}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="FC_Over_Frame_Exit_Clicked()"/>
+        </Window>
+
+
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

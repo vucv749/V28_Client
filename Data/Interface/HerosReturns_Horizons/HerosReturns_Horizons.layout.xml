@@ -1,0 +1,904 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="HerosReturns_Horizons_FrameFull">
+    <Property Name="UnifiedSize" Value="{{0.000000,821.000000},{0.000000,543.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-410.000000},{0.500000,-288.000000}}"/>
+    <Event Name="Hidden" Function="HerosReturns_Horizons_OnHidden()"/>
+    <Window Type="DefaultWindow" Name="HerosReturns_Horizons_ButtonLeft">
+      <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,430.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_ButtonLeft_Image1">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,44.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-8.000000},{0.000000,0.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:SpecialFrame image:SpecialFrame01ImageL1"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonCheckNULL" Name="HerosReturns_Horizons_Buttontab01">
+        <Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,82.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,38.000000}}"/>
+        <Property Name="PushedImage" Value="set:HerosReturns01 image:HerosReturnsPage1_Hover"/>
+        <Property Name="NormalImage" Value="set:HerosReturns01 image:HerosReturnsPage1_Normal"/>
+        <Property Name="HoverImage" Value="set:HerosReturns01 image:HerosReturnsPage1_Hover"/>
+        <Property Name="DisabledImage" Value="set:HerosReturns01 image:HerosReturnsPage1_Normal"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="Clicked" Function="HerosReturns_Horizons_FenYe_Clicked(1)"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Buttontab01_tips">
+        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,28.000000},{0.000000,36.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_ButtonLeft_Image2">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-8.000000},{0.000000,116.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:SpecialFrame image:SpecialFrame01ImageL2"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonCheckNULL" Name="HerosReturns_Horizons_Buttontab02">
+        <Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,82.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,120.000000}}"/>
+        <Property Name="PushedImage" Value="set:HerosReturns01 image:HerosReturnsPage2_Hover"/>
+        <Property Name="NormalImage" Value="set:HerosReturns01 image:HerosReturnsPage2_Normal"/>
+        <Property Name="HoverImage" Value="set:HerosReturns01 image:HerosReturnsPage2_Hover"/>
+        <Property Name="DisabledImage" Value="set:HerosReturns01 image:HerosReturnsPage2_Normal"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="Clicked" Function="HerosReturns_Horizons_FenYe_Clicked(2)"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Buttontab02_tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,28.000000},{0.000000,118.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_ButtonLeft_Image3">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-8.000000},{0.000000,198.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:SpecialFrame image:SpecialFrame01ImageL2"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonCheckNULL" Name="HerosReturns_Horizons_Buttontab03">
+        <Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,82.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,202.000000}}"/>
+        <Property Name="PushedImage" Value="set:HerosReturns01 image:HerosReturnsPage3_Hover"/>
+        <Property Name="NormalImage" Value="set:HerosReturns01 image:HerosReturnsPage3_Normal"/>
+        <Property Name="HoverImage" Value="set:HerosReturns01 image:HerosReturnsPage3_Hover"/>
+        <Property Name="DisabledImage" Value="set:HerosReturns01 image:HerosReturnsPage3_Normal"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="Clicked" Function="HerosReturns_Horizons_FenYe_Clicked(3)"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Buttontab03_tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,28.000000},{0.000000,200.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_ButtonLeft_Image4">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-8.000000},{0.000000,280.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:SpecialFrame image:SpecialFrame01ImageL2"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonCheckNULL" Name="HerosReturns_Horizons_Buttontab04">
+        <Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,82.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,285.000000}}"/>
+        <Property Name="PushedImage" Value="set:HerosReturns07 image:Button_Fenye_Hover"/>
+        <Property Name="NormalImage" Value="set:HerosReturns07 image:Button_Fenye_Normal"/>
+        <Property Name="HoverImage" Value="set:HerosReturns07 image:Button_Fenye_Hover"/>
+        <Property Name="DisabledImage" Value="set:HerosReturns07 image:Button_Fenye_Normal"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="Clicked" Function="HerosReturns_Horizons_FenYe_Clicked(4)"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Buttontab04_tips">
+        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,28.000000},{0.000000,284.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_ButtonLeft_Image5">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,46.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-8.000000},{0.000000,363.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Tooltip" Value="江湖见闻"/>        
+        <Property Name="Image" Value="set:SpecialFrame image:SpecialFrame01ImageL3"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_SpecialFrame01" Name="HerosReturns_Horizons_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_SpecialTitle01" Name="HerosReturns_Horizons_DragTitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,27.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_DragTitle" Name="HerosReturns_Horizons_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,3.000000}}"/>
+        <Property Name="DragTarget" Value="HerosReturns_Horizons_FrameFull" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="Text" Value="#{HLYH_220613_2}" />
+      </Window>
+      <Window Type="TLBB_SpecialClose" Name="HerosReturns_Horizons_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,45.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.000000,0.000000}}"/>
+        <Event Name="Clicked" Function="HerosReturns_Horizons_Close();" />
+      </Window>
+      <Window Type="DefaultWindow" Name="HerosReturns_Horizons_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{1.000000,-50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,30.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="DefaultWindow" Name="HerosReturns_Horizons_LaceBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,232.000000},{0.000000,317.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,152.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_LaceBK_Image">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:HerosReturns07 image:BK_Left"/>
+          </Window>
+        <Window Type="TLBB_NotSuperList1" Name="HerosReturns_Horizons_Lace">
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,1.000000}}"/>
+          <Property Name="SelectMode" Value="Single" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="MultiColumn" Value="1" />
+          <Window Type="TLBB_NotSuperListItemCommon8" Name="HerosReturns_Horizons_CoinAItem1">
+            <Property Name="UnifiedSize" Value="{{0.000000,217.000000},{0.000000,78.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="HerosReturns_Horizons_CoinAItem1_Name">
+              <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,16.000000}}"/>
+              <Property Name="Text" Value="#{HLYH_220613_41}"/>
+              <Property Name="Font" Value="YouYuan11.25"/>
+              <Property Name="HorzFormatting" Value="LeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="HerosReturns_Horizons_CoinAItem1_Text">
+              <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{1.000000,-35.000000}}"/>
+              <Property Name="Text" Value="#{HLYH_220613_42}"/>
+              <Property Name="HorzFormatting" Value="LeftAligned"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_CoinAItem1_Icon">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.500000,-24.000000}}"/>
+              <Property Name="Image" Value="set:PetSoulEquip1 image:PetSoulEquip1_9"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_CoinAItem1_Tag">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,26.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,164.000000},{0.000000,8.000000}}"/>
+              <Property Name="Image" Value="set:HerosReturns07 image:Tag_Raid"/>
+            </Window>
+          </Window>
+        </Window>
+         </Window>
+        <Window Type="DefaultWindow" Name="HerosReturns_Horizons_InfomationBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,509.000000},{0.000000,317.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,232.000000},{0.000000,151.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_InfomationBK_Images">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:HerosReturns07 image:BK_Right"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Subtitle_Images">
+            <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-55.000000},{0.000000,13.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:HerosReturns07 image:Subtitle_Shouhun"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="HerosReturns_Horizons_Infomation_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,145.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,40.000000}}"/>
+            <Property Name="Text" Value="#{HLYH_220613_4}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="HerosReturns_Horizons_MissionBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,382.000000},{0.000000,88.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,66.000000},{0.000000,190.000000}}"/>
+            <Window Type="DefaultWindow" Name="HerosReturns_Horizons_Mission1_BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,382.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Mission1_NameIcon">
+                <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,14.000000}}"/>
+                <Property Name="Image" Value="set:HerosReturns07 image:Mission_Point"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="HerosReturns_Horizons_Mission1_Name">
+                <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,14.000000}}"/>
+                <Property Name="Text" Value="#{HLYH_220613_9}"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Mission1_Image">
+                <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,197.000000},{0.000000,9.000000}}"/>
+                <Property Name="Image" Value="set:HerosReturns07 image:Icon_Jianwen"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="HerosReturns_Horizons_Mission1_Num">
+                <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{0.000000,14.000000}}"/>
+                <Property Name="Text" Value="#{HLYH_220613_22}"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+              </Window>
+              <Window Type="TLBB_ButtonCommon" Name="HerosReturns_Horizons_Mission1_GotoBtn">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,300.000000},{0.000000,15.000000}}"/>
+                <Property Name="Text" Value="#{HLYH_220613_19}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="HerosReturns_Horizons_Mission1_GotoBtn_Clicked()"/>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="HerosReturns_Horizons_Mission2_BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,382.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,45.000000}}"/>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Mission2_NameIcon">
+                <Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,14.000000}}"/>
+                <Property Name="Image" Value="set:HerosReturns07 image:Mission_Point"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="HerosReturns_Horizons_Mission2_Name">
+                <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,14.000000}}"/>
+                <Property Name="Text" Value="#{HLYH_220613_10}"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Mission2_Image">
+                <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,28.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,197.000000},{0.000000,9.000000}}"/>
+                <Property Name="Image" Value="set:HerosReturns07 image:Icon_Jianwen"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="HerosReturns_Horizons_Mission2_Num">
+                <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{0.000000,14.000000}}"/>
+                <Property Name="Text" Value="#{HLYH_220613_22}"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+              </Window>
+              <Window Type="TLBB_ButtonCommon" Name="HerosReturns_Horizons_Mission2_GotoBtn">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,300.000000},{0.000000,15.000000}}"/>
+                <Property Name="Text" Value="#{HLYH_220613_19}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Event Name="Clicked" Function="HerosReturns_Horizons_Mission2_GotoBtn_Clicked()"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="HerosReturns_Horizons_ProgressBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,741.000000},{0.000000,151.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_ProgressBK_Images">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:HerosReturns07 image:Banner"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="HerosReturns_Horizons_Progress_Jianwen">
+            <Property Name="UnifiedSize" Value="{{0.000000,183.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,90.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="HerosReturns_Horizons_Progress_Name">
+              <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,127.000000},{0.000000,14.000000}}"/>
+              <Property Name="Text" Value="#{HLYH_220613_22}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Progress_Icon">
+              <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,28.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,7.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:HerosReturns07 image:Icon_Jianwen"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Progress_IconBK">
+              <Property Name="UnifiedSize" Value="{{0.000000,183.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:HerosReturns07 image:BK_Jianwen"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="HerosReturns_Horizons_Progress1_Client">
+            <Property Name="UnifiedSize" Value="{{0.000000,624.000000},{0.000000,75.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,72.000000}}"/>
+            <Window Type="DefaultWindow" Name="HerosReturns_Horizons_Progress1_BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,182.000000},{0.000000,36.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_EXP1_BK">
+                <Property Name="UnifiedSize" Value="{{0.000000,419.000000},{0.000000,7.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:HerosReturns07 image:Progress_BK"/>
+              </Window>
+              <Window Type="TLBB_ProgressPropertyHuiLiu" Name="HerosReturns_Horizons_EXP1">
+                <Property Name="UnifiedSize" Value="{{0.000000,419.000000},{0.000000,7.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="CurrentProgress" Value="0.7500000"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="HerosReturns_Horizons_Progress_Item1_BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,250.000000},{0.000000,5.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="HerosReturns_Horizons_Progress1_Item1_Num">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-15.000000}}"/>
+                <Property Name="Text" Value="5"/>
+                <Property Name="TextColor" Value="FF800000"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="HerosReturns_Horizons_Progress_Item1">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-17.000000}}"/>
+                <Property Name="Tooltip" Value="#{ZHY_210301_05}"/>
+				        <Event Name="Clicked" Function="HerosReturns_Horizons_BonusClicked(1);" />
+                <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Progress_Item1_Grey">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+                </Window>
+                <Window Type="TLBB_Animate" Name="HerosReturns_Horizons_Progress_Item1_Tips">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="Equip_Zhizun"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Progress_Item1_Received">
+                <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,26.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{0.500000,-13.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:HerosReturns07 image:Received"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="HerosReturns_Horizons_Progress_Item2_BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,366.000000},{0.000000,5.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="HerosReturns_Horizons_Progress_Item2_Num">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-15.000000}}"/>
+                <Property Name="Text" Value="10"/>
+                <Property Name="TextColor" Value="FF800000"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="HerosReturns_Horizons_Progress_Item2">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-17.000000}}"/>
+				        <Event Name="Clicked" Function="HerosReturns_Horizons_BonusClicked(2);" />
+                <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Progress_Item2_Grey">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+                </Window>
+                <Window Type="TLBB_Animate" Name="HerosReturns_Horizons_Progress_Item2_Tips">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="Equip_Zhizun"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Progress_Item2_Received">
+                <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,26.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{0.500000,-13.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:HerosReturns07 image:Received"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="HerosReturns_Horizons_Progress_Item3_BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,470.000000},{0.000000,5.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_SimpleText" Name="HerosReturns_Horizons_Progress1_Item3_Num">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-15.000000}}"/>
+                <Property Name="Text" Value="15"/>
+                <Property Name="TextColor" Value="FF800000"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="HerosReturns_Horizons_Progress_Item3">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-17.000000}}"/>
+				        <Event Name="Clicked" Function="HerosReturns_Horizons_BonusClicked(3);" />
+                <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Progress_Item3_Grey">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+                </Window>
+                <Window Type="TLBB_Animate" Name="HerosReturns_Horizons_Progress_Item3_Tips">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="Equip_Zhizun"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Progress_Item3_Received">
+                <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,26.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{0.500000,-13.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:HerosReturns07 image:Received"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="HerosReturns_Horizons_Progress_Item4_BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,562.000000},{0.000000,5.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_SimpleText" Name="HerosReturns_Horizons_Progress1_Item4_Num">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-15.000000}}"/>
+                <Property Name="Text" Value="20"/>
+                <Property Name="TextColor" Value="FF800000"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="HerosReturns_Horizons_Progress_Item4">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-17.000000}}"/>
+				        <Event Name="Clicked" Function="HerosReturns_Horizons_BonusClicked(4);" />
+                <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Progress_Item4_Grey">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+                </Window>
+                <Window Type="TLBB_Animate" Name="HerosReturns_Horizons_Progress_Item4_Tips">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="Equip_Zhizun"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Progress_Item4_Received">
+                <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,26.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{0.500000,-13.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:HerosReturns07 image:Received"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="HerosReturns_Horizons_Progress2_Client">
+            <Property Name="UnifiedSize" Value="{{0.000000,624.000000},{0.000000,75.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,72.000000}}"/>
+            <Window Type="DefaultWindow" Name="HerosReturns_Horizons_Progress2_BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,182.000000},{0.000000,36.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_EXP2_BK">
+                <Property Name="UnifiedSize" Value="{{0.000000,419.000000},{0.000000,7.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:HerosReturns07 image:Progress_BK"/>
+              </Window>
+              <Window Type="TLBB_ProgressPropertyHuiLiu" Name="HerosReturns_Horizons_EXP2">
+                <Property Name="UnifiedSize" Value="{{0.000000,419.000000},{0.000000,7.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="CurrentProgress" Value="1.0000000"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="HerosReturns_Horizons_Progress2_Item1_BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,5.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="HerosReturns_Horizons_Progress2_Item1_Num">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-15.000000}}"/>
+                <Property Name="Text" Value="5"/>
+                <Property Name="TextColor" Value="FF800000"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="HerosReturns_Horizons_Progress2_Item1">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-17.000000}}"/>
+				        <Event Name="Clicked" Function="HerosReturns_Horizons_BonusClicked(1);" />
+                <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Progress2_Item1_Grey">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+                </Window>
+                <Window Type="TLBB_Animate" Name="HerosReturns_Horizons_Progress2_Item1_Tips">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="Equip_Zhizun"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Progress2_Item1_Received">
+                <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,26.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{0.500000,-13.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:HerosReturns07 image:Received"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="HerosReturns_Horizons_Progress2_Item2_BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,285.000000},{0.000000,5.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="HerosReturns_Horizons_Progress2_Item2_Num">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-15.000000}}"/>
+                <Property Name="Text" Value="10"/>
+                <Property Name="TextColor" Value="FF800000"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="HerosReturns_Horizons_Progress2_Item2">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-17.000000}}"/>
+				        <Event Name="Clicked" Function="HerosReturns_Horizons_BonusClicked(2);" />
+                <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Progress2_Item2_Grey">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+                </Window>
+                <Window Type="TLBB_Animate" Name="HerosReturns_Horizons_Progress2_Item2_Tips">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="Equip_Zhizun"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Progress2_Item2_Received">
+                <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,26.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{0.500000,-13.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:HerosReturns07 image:Received"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="HerosReturns_Horizons_Progress2_Item3_BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,360.000000},{0.000000,5.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="HerosReturns_Horizons_Progress2_Item3_Num">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-15.000000}}"/>
+                <Property Name="Text" Value="15"/>
+                <Property Name="TextColor" Value="FF800000"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="HerosReturns_Horizons_Progress2_Item3">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-17.000000}}"/>
+				        <Event Name="Clicked" Function="HerosReturns_Horizons_BonusClicked(3);" />
+                <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Progress2_Item3_Grey">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+                </Window>
+                <Window Type="TLBB_Animate" Name="HerosReturns_Horizons_Progress2_Item3_Tips">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="Equip_Zhizun"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Progress2_Item3_Received">
+                <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,26.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{0.500000,-13.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:HerosReturns07 image:Received"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="HerosReturns_Horizons_Progress2_Item4_BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,425.000000},{0.000000,5.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="HerosReturns_Horizons_Progress2_Item4_Num">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-15.000000}}"/>
+                <Property Name="Text" Value="20"/>
+                <Property Name="TextColor" Value="FF800000"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="HerosReturns_Horizons_Progress2_Item4">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-17.000000}}"/>
+				        <Event Name="Clicked" Function="HerosReturns_Horizons_BonusClicked(4);" />
+                <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Progress2_Item4_Grey">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+                </Window>
+                <Window Type="TLBB_Animate" Name="HerosReturns_Horizons_Progress2_Item4_Tips">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="Equip_Zhizun"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Progress2_Item4_Received">
+                <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,26.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{0.500000,-13.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:HerosReturns07 image:Received"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="HerosReturns_Horizons_Progress2_Item5_BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,490.000000},{0.000000,5.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="HerosReturns_Horizons_Progress2_Item5_Num">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-15.000000}}"/>
+                <Property Name="Text" Value="25"/>
+                <Property Name="TextColor" Value="FF800000"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="HerosReturns_Horizons_Progress2_Item5">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-17.000000}}"/>
+				        <Event Name="Clicked" Function="HerosReturns_Horizons_BonusClicked(5);" />
+                <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Progress2_Item5_Grey">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+                </Window>
+                <Window Type="TLBB_Animate" Name="HerosReturns_Horizons_Progress2_Item5_Tips">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="Equip_Zhizun"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Progress2_Item5_Received">
+                <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,26.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{0.500000,-13.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:HerosReturns07 image:Received"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="HerosReturns_Horizons_Progress2_Item6_BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,555.000000},{0.000000,5.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="HerosReturns_Horizons_Progress2_Item6_Num">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-15.000000}}"/>
+                <Property Name="Text" Value="30"/>
+                <Property Name="TextColor" Value="FF800000"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="HerosReturns_Horizons_Progress2_Item6">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-17.000000}}"/>
+				        <Event Name="Clicked" Function="HerosReturns_Horizons_BonusClicked(6);" />
+                <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Progress2_Item6_Grey">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+                </Window>
+                <Window Type="TLBB_Animate" Name="HerosReturns_Horizons_Progress2_Item6_Tips">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="Equip_Zhizun"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="HerosReturns_Horizons_Progress2_Item6_Received">
+                <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,26.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{0.500000,-13.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:HerosReturns07 image:Received"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="HerosReturns_HorizonsTextBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,25.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-25.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_Frame_Lace3" Name="HerosReturns_HorizonsTextBK_Image">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0 .000000,0 .000000}}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="HerosReturns_HorizonsText_Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,181.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,2.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Text" Value="#{HLYH_220613_50}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="HerosReturns_HorizonsText">
+            <Property Name="UnifiedSize" Value="{{0.000000,118.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,516.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{HJHL_201224_28}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="HerosReturns_HorizonsText2">
+            <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,620.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{HJHL_201224_29}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

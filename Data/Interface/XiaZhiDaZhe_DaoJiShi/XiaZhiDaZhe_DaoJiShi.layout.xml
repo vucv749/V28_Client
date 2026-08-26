@@ -1,0 +1,60 @@
+﻿<?xml version="1.0"?>
+<GUILayout>
+  <!-- <Window Type="TLBB_DragTitle" Name="XiaZhiDaZhe_DaoJiShiDragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,18.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{}"/>
+      <Property Name="DragTarget" Value="XiaZhiDaZhe_DaoJiShiFrame_BK" />
+    </Window> -->
+
+  <Window Type="TLBB_MainFrameNULL" Name="XiaZhiDaZhe_DaoJiShiFrame">
+    <Property Name="UnifiedSize" Value="{{0.000000,278.000000},{0.000000,70.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,160.000000}}"/>
+    <Property Name="RiseOnClick" Value="False"/>
+    <Property Name="AttachEnabled" Value="True"/>
+
+    <Window Type="TLBB_StaticImageNULL" Name="XiaZhiDaZhe_DaoJiShiMiniTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,278.000000},{0.000000,65.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="Image" Value="set:XiaZhiDaZhe_DaoJiShi image:DaoJiShi_BK"/>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaZhiDaZhe_DaoJiShiMiniTitle_sj_icons">
+        <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:XiaZhiDaZhe_DaoJiShi image:DaoJiShi_sj"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaZhiDaZhe_DaoJiShiMiniTitle_SJ">
+        <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{0.000000,0.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:XiaZhiDaZhe_DaoJiShi image:DaoJiShi_10s"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="XiaZhiDaZhe_DaoJiShiMiniTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-92.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,23.000000},{0.000000,7.000000}}"/>
+        <Property Name="Text" Value="#{XZDZ_220428_115}"/>
+        <Property Name="HorzFormatting" Value="LeftAligned"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonCommon" Name="XiaZhiDaZhe_DaoJiShiOK_Button">
+      <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-48.000000},{0.000000,34.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{XZDZ_220428_116}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="XiaZhiDaZhe_DaoJiShi_Clicked()" />
+    </Window>
+  </Window>
+</GUILayout>

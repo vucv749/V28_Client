@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="Makefriends_Activity_Modify_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,290.000000},{0.000000,180.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-145.000000},{0.500000,-90.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="Makefriends_Activity_Modify_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:40.000000 y:4.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="Makefriends_Activity_Modify_Frame" />
+      <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Modify_PageHeader">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,8.000000}}"/>
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="Text" Value="#{}" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+      </Window>
+    </Window>
+
+    <Window Type="TLBB_ButtonClose" Name="Makefriends_Activity_Modify_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="this:Hide();" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Makefriends_Activity_Modify_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="Makefriends_Activity_Modify_Function_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-47.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,29.000000}}"/>
+      <Window Type="TLBB_MultiIMEEditBox" Name="Makefriends_Activity_Modify_Edit">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+        <Property Name="SelectedTextColour" Value="FFFFFFFF"/>
+        <Property Name="OnReturnEnable" Value=""/>
+        <Property Name="MaxTextLength" Value="64"/>
+        <Property Name="DefaultEditBox" Value="True"/>
+        <Property Name="ActiveSelectionColour" Value="FF00FF00"/>
+        <Event Name="TextAccepted" Function="Makefriends_Activity_Modify_SendMessage();"/>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="Makefriends_Activity_Modify_Blank">
+        <Property Name="UnifiedSize" Value="{{1.000000,-84.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-21.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Modify_Info">
+          <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{JYHD_230331_57}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_Modify_Info2">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{JYHD_230331_58}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Makefriends_Activity_Modify_Ensure">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-83.000000},{1.000000,-21.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{INTERFACE_XML_1058}" />
+        <Event Name="Clicked" Function="Makefriends_Activity_Modify_Submit_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Makefriends_Activity_Modify_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-43.000000},{1.000000,-21.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}" />
+        <Property Name="Text" Value="#{WCJS_180307_13}" />
+        <Event Name="Clicked" Function="Makefriends_Activity_Modify_Cancel_Clicked();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

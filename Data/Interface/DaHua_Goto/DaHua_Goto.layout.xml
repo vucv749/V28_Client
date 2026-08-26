@@ -1,0 +1,65 @@
+﻿<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="DaHua_Goto_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,598.000000},{0.000000,434.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-299.000000},{0.500000,-217.000000}}"/>
+    <Event Name="Hidden" Function="DaHua_Goto_OnHide();" />
+    <Window Type="TLBB_ButtonClose2" Name="DaHua_Goto_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,9.000000}}"/>
+      <Event Name="Clicked" Function="DaHua_Goto_OnHide();" />
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="DaHua_Goto_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{QXPVE_240522_7}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="DragTarget" Value="DaHua_Goto_Frame" />
+    </Window>
+    <Window Type="TLBB_HeroTitle01" Name="DaHua_Goto_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,314.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-157.500000},{0.000000,-2.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+    </Window>
+      <Window Type="TLBB_HeroLace01" Name="DaHua_Goto_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="DaHua_Goto_BKPic">
+          <Property Name="UnifiedSize" Value="{{0.000000,586.000000},{0.000000,398.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:DaHua_PvE image:DaHua_PVE"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DaHua_Goto_Text">
+          <Property Name="VertFormatting" Value="VertCentred"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,566.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-283.000000},{0.000000,3.000000}}"/>
+          <Property Name="Text" Value="#{QXPVE_240522_8}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Window Type="TLBB_ButtonHelp" Name="DaHua_Goto_Text_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="DaHua_Goto_ShowHelp();" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCommon12" Name="DaHua_Goto_GoBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-130.000000},{1.000000,-54.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Tooltip" Value="#{QXPVE_240522_11}"/>
+          <Property Name="Text" Value="#{QXPVE_240628_36}"/>
+          <Event Name="Clicked" Function="DaHua_Goto_Goto();" />
+        </Window>
+      </Window>
+    </Window>
+</GUILayout>

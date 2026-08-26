@@ -1,0 +1,345 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="SpringFestival_RewardFrame">
+    <Property Name="UnifiedSize" Value="{{0.000000,654.000000},{0.000000,356.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-327.000000},{0.500000,-178.000000}}"/>
+    <Event Name="Clicked" Function="SpringFestival_RewardOnHiden()" /> 
+    <Window Type="TLBB_HeroTitle01" Name="SpringFestival_RewardDragTitle_BK">
+      <Property Name="UnifiedSize" Value="{{0.000000,290.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-122.000000},{0.000000,-2.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="AlwaysOnTop" Value="True"/> 
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="SpringFestival_RewardDragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,81.000000},{0.000000,0.000000}}"/>
+      <Property Name="Text" Value="#{CJDG_221110_62}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="SpringFestival_RewardFrame"/>
+      <Property Name="AlwaysOnTop" Value="True"/> 
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="SpringFestival_RewardClose">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,9.000000}}"/>
+      <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+      <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
+      <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
+      <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+      <Property Name="AlwaysOnTop" Value="True"/> 
+      <Event Name="Clicked" Function="SpringFestival_RewardOnHiden()" />      
+    </Window>
+      <Window Type="TLBB_HeroFrame01" Name="SpringFestival_RewardClientBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-29.000000},{1.000000,0.000000}}"/>
+	    	<Property Name="UnifiedPosition" Value="{{0.000000,29.000000},{0.000000,0.000000}}"/>        
+      </Window>    
+    <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_RewardClient">
+      <Property Name="UnifiedSize" Value="{{0.000000,652.000000},{0.000000,324.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,28.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="AlwaysOnTop" Value="True"/>        
+      <Property Name="Image" Value="set:SpringFestival_Reward2 image:SpringFestival_RewardBK"/>    
+      <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_Reward_Explain1">
+        <Property Name="UnifiedSize" Value="{{0.000000,416.000000},{0.000000,88.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,67.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="DefaultWindow" Name="SpringFestival_Reward_TitleBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,40.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_SimpleText" Name="SpringFestival_Reward_TitleText">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{CJDG_221110_63}"/>
+            <Property Name="Font" Value="YouYuan9.75"/>
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>           
+        <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_Reward_Title1">
+          <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,22.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:SpringFestival_Reward2 image:Title1"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_Reward_Title2">
+          <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,22.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:SpringFestival_Reward2 image:Title2"/>
+        </Window>  
+        <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_Reward_Title3">
+          <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,22.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:SpringFestival_Reward2 image:Title3"/>
+        </Window>        
+        <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_Reward_Title4">
+          <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,22.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:SpringFestival_Reward2 image:Title4"/>
+        </Window>                       
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_Reward_Explain2">
+        <Property Name="UnifiedSize" Value="{{0.000000,452.000000},{0.000000,110.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,126.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="DefaultWindow" Name="SpringFestival_Reward_TextBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,56.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,37.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_SimpleText" Name="SpringFestival_Reward_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{CJDG_221110_68}"/>
+            <Property Name="Font" Value="YouYuan9.75"/>
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SpringFestival_Reward_CUMText">
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,31.000000}}"/>
+            <Property Name="Text" Value="#{CJDG_221110_100}"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_Reward_CUMIcon">
+            <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,32.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:SpringFestival_Reward2 image:GongShiLeiJi_Icon"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>          
+        </Window> 
+        <Window Type="DefaultWindow" Name="SpringFestival_Reward_CUM1">
+          <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,100.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.00000,182.00000},{0.000000,25.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>          
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ButtonNULL" Name="SpringFestival_Reward_CUM1Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{CJDG_221110_71}"/>
+            <Property Name="PushedImage" Value="set:SpringFestival_Reward image:JinNangSmall_Pushed"/>            
+            <Property Name="NormalImage" Value="set:SpringFestival_Reward image:JinNangSmall_Normal"/>
+            <Property Name="HoverImage" Value="set:SpringFestival_Reward image:JinNangSmall_Hover"/>
+            <Property Name="DisabledImage" Value="set:SpringFestival_Reward image:JinNangSmall_Disabled"/>
+            <Event Name="Clicked" Function="SpringFestival_Reward_OnRewardClick(1)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_Reward_CUM1_tips">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:SpringFestival_Reward image:JinNangSmall_Shine"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>                
+          </Window>          
+          <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_Reward_CUM1BtnOK">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-40.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+          </Window>  
+          <Window Type="TLBB_SimpleText" Name="SpringFestival_Reward_CUM1Text">
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,-2.000000},{0.000000,47.000000}}"/>
+            <Property Name="Text" Value="#{CJDG_221110_101}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>            
+        </Window> 
+        <Window Type="DefaultWindow" Name="SpringFestival_Reward_CUM2">
+          <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,100.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.00000,248.00000},{0.000000,25.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>          
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ButtonNULL" Name="SpringFestival_Reward_CUM2Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{CJDG_221110_72}"/>
+            <Property Name="PushedImage" Value="set:SpringFestival_Reward image:JinNangSmall_Pushed"/>
+            <Property Name="NormalImage" Value="set:SpringFestival_Reward image:JinNangSmall_Normal"/>
+            <Property Name="HoverImage" Value="set:SpringFestival_Reward image:JinNangSmall_Hover"/>
+            <Property Name="DisabledImage" Value="set:SpringFestival_Reward image:JinNangSmall_Disabled"/> 
+            <Event Name="Clicked" Function="SpringFestival_Reward_OnRewardClick(2)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_Reward_CUM2_tips">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:SpringFestival_Reward image:JinNangSmall_Shine"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>               
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_Reward_CUM2BtnOK">
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-40.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+          </Window>            
+          <Window Type="TLBB_SimpleText" Name="SpringFestival_Reward_CUM2Text">
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,-2.000000},{0.000000,47.000000}}"/>
+            <Property Name="Text" Value="#{CJDG_221110_102}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>            
+        </Window>   
+        <Window Type="DefaultWindow" Name="SpringFestival_Reward_CUM3">
+          <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,100.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.00000,286.00000},{0.000000,25.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>          
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ButtonNULL" Name="SpringFestival_Reward_CUM3Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{CJDG_221110_73}"/>
+            <Property Name="PushedImage" Value="set:SpringFestival_Reward image:JinNangSmall_Pushed"/>
+            <Property Name="NormalImage" Value="set:SpringFestival_Reward image:JinNangSmall_Normal"/>
+            <Property Name="HoverImage" Value="set:SpringFestival_Reward image:JinNangSmall_Hover"/>
+            <Property Name="DisabledImage" Value="set:SpringFestival_Reward image:JinNangSmall_Disabled"/>              
+            <Event Name="Clicked" Function="SpringFestival_Reward_OnRewardClick(3)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_Reward_CUM3_tips">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:SpringFestival_Reward image:JinNangSmall_Shine"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>               
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_Reward_CUM3BtnOK"> 
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-40.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+          </Window>            
+          <Window Type="TLBB_SimpleText" Name="SpringFestival_Reward_CUM3Text">
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,-2.000000},{0.000000,47.000000}}"/>
+            <Property Name="Text" Value="#{CJDG_221110_103}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>            
+        </Window>  
+        <Window Type="DefaultWindow" Name="SpringFestival_Reward_CUM4">
+          <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,100.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.00000,374.00000},{0.000000,25.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>          
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ButtonNULL" Name="SpringFestival_Reward_CUM4Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,0.000000}}"/>
+            <Property Name="Tooltip" Value="#{CJDG_221110_74}"/>
+            <Property Name="PushedImage" Value="set:SpringFestival_Reward image:JinNangBig_Pushed"/>
+            <Property Name="NormalImage" Value="set:SpringFestival_Reward image:JinNangBig_Normal"/>
+            <Property Name="HoverImage" Value="set:SpringFestival_Reward image:JinNangBig_Hover"/>
+            <Property Name="DisabledImage" Value="set:SpringFestival_Reward image:JinNangBig_Pushed"/>              
+            <Event Name="Clicked" Function="SpringFestival_Reward_OnRewardClick(4)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_Reward_CUM4_tips">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:SpringFestival_Reward image:JinNangBig_Shine"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>               
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="SpringFestival_Reward_CUM4BtnOK"> 
+            <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-40.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+          </Window>              
+          <Window Type="TLBB_SimpleText" Name="SpringFestival_Reward_CUM4Text">
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,-2.000000},{0.000000,47.000000}}"/>
+            <Property Name="Text" Value="#{CJDG_221110_104}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>            
+        </Window>                                                                 
+        <Window Type="DefaultWindow" Name="SpringFestival_Reward_Progressbk">
+          <Property Name="UnifiedSize" Value="{{0.000000,272.000000},{0.000000,11.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,144.0000000},{0.000000,44.000000}}" />
+          <Window Type="TLBB_ProgressPropertySpringFestival_Reward" Name="SpringFestival_Reward_Progress">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.0000000},{0.000000,0.000000}}" />
+            <Property Name="CurrentProgress" Value="0.625" />
+            <Property Name="MoveSpeed" Value="1" />
+          </Window>
+        </Window>
+      </Window>  
+      <Window Type="TLBB_Animate" Name="SpringFestival_Reward_CUM_Animate">
+        <Property Name="UnifiedSize" Value="{{0.000000,229.000000},{0.000000,38.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,363.000000},{0.000000,123.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Animate" Value="SpringFestival_RewardBaoJi"/>
+      </Window> 
+    </Window>
+  </Window>
+</GUILayout>

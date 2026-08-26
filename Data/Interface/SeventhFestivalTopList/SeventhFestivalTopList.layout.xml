@@ -1,0 +1,792 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="SeventhFestivalTopList_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,848.000000},{0.000000,546.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-425.000000},{0.500000,-260.000000}}"/>
+    <Event Name="Hidden" Function="SeventhFestivalTopList_Close_Click()"/>
+    <Window Type="TLBB_HeroTitle01" Name="SeventhFestivalTopList_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,314.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-157.500000},{0.000000,-2.000000}}"/>
+      <Property Name="DragTarget" Value="SeventhFestivalTopList_Frame"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="SeventhFestivalTopList_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+      <Property Name="Text" Value="#{QXHB_20210701_77}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="SeventhFestivalTopList_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose2" Name="SeventhFestivalTopList_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+      <Event Name="Clicked" Function="SeventhFestivalTopList_Close_Click();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="SeventhFestivalTopList_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_ClientBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,840.000000},{0.000000,516.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_ClientBK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,840.000000},{0.000000,516.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBK1"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_ClientBK2">
+          <Property Name="UnifiedSize" Value="{{0.000000,840.000000},{0.000000,516.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:QiXi_HuaBang11 image:QiXi3_HuaBangBK2"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_ClientBK3">
+          <Property Name="UnifiedSize" Value="{{0.000000,840.000000},{0.000000,516.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:QiXi_HuaBang12 image:QiXi3_HuaBangBK3"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_ClientBK4">
+          <Property Name="UnifiedSize" Value="{{0.000000,840.000000},{0.000000,516.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:QiXi_HuaBang13 image:QiXi3_HuaBangBK4"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="SeventhFestivalTopList_Explain">
+        <Property Name="UnifiedSize" Value="{{0.000000,572.000000},{0.000000,64.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,154.000000},{0.000000,26.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_Explain_TextTitle">
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,6.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Explain_Text">
+          <Property Name="VertFormatting" Value="TopAligned"/>
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-8.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+          <Property Name="Text" Value="#{QXHB_20210701_94}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Window Type="TLBB_ButtonHelp" Name="SeventhFestivalTopList_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,34.000000}}"/>
+            <Event Name="Clicked" Function="SeventhFestivalTopList_HelpClicked()"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Explain_links">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-148.000000},{1.000000,-24.000000}}"/>
+            <Property Name="Text" Value="#{QXHB_20210701_266}"/>
+            <Event Name="Clicked" Function="SeventhFestivalTopList_BuyRose()"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="SeventhFestivalTopList_Top_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,204.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,270.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ButtonCheckNULL" Name="SeventhFestivalTopList_Top_TopList1">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,2.000000}}"/>
+          <Property Name="PushedImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn1_2Hover"/>
+          <Property Name="NormalImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn1_2Normal"/>
+          <Property Name="HoverImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn1_2Hover"/>
+          <Property Name="DisabledImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn1_2Dis"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="SeventhFestivalTopList_Page_Click(1)"/>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="SeventhFestivalTopList_Top_TopList2">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,-4.000000},{0.000000,42.000000}}"/>
+          <Property Name="PushedImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn2_2Hover"/>
+          <Property Name="NormalImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn2_2Normal"/>
+          <Property Name="HoverImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn2_2Hover"/>
+          <Property Name="DisabledImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn2_2Dis"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="SeventhFestivalTopList_Page_Click(3)"/>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="SeventhFestivalTopList_Top_TopList3">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,88.000000}}"/>
+          <Property Name="PushedImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn3_2Hover"/>
+          <Property Name="NormalImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn3_2Normal"/>
+          <Property Name="HoverImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn3_2Hover"/>
+          <Property Name="DisabledImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn3_2Push"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="SeventhFestivalTopList_Page_Click(2)"/>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="SeventhFestivalTopList_Top_TopList4">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,-2.000000},{0.000000,132.000000}}"/>
+          <Property Name="PushedImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn4Hover"/>
+          <Property Name="NormalImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn4Normal"/>
+          <Property Name="HoverImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn4Hover"/>
+          <Property Name="DisabledImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn4Push"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="SeventhFestivalTopList_Page_Click(4)"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="SeventhFestivalTopList_Ranking_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,610.000000},{0.000000,350.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,110.000000}}"/>
+        <Window Type="DefaultWindow" Name="SeventhFestivalTopList_CountDownbk">
+          <Property Name="UnifiedSize" Value="{{0.000000,424.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,6.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_CountDown">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{QXHB_20210701_206}"/>
+            <Property Name="Font" Value="YouYuan11.25"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_AwardPreview">
+          <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,26.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-146.000000},{0.000000,4.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="PushedImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn7Push"/>
+          <Property Name="NormalImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn7Normal"/>
+          <Property Name="HoverImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn7Hover"/>
+          <Property Name="DisabledImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn7Push"/>
+          <Event Name="Clicked" Function="SeventhFestivalTopList_RankClick_Award();"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_Ranking_Present_Frame">
+          <Property Name="UnifiedSize" Value="{{0.000000,284.000000},{0.000000,262.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-290.000000},{0.000000,62.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Ranking_Present_Title">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.000000,0.000000}}"/>
+            <Property Name="Font" Value="YouYuan9.75"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Ranking_Present_TitleNum">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,24.000000}}"/>
+            <Property Name="Text" Value="#{QXHB_20210701_262}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Ranking_Present_TitleName">
+            <Property Name="UnifiedSize" Value="{{0.000000,134.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,24.000000}}"/>
+            <Property Name="Text" Value="#{QXHB_20210701_263}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Ranking_Present_TitleNum2">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,24.000000}}"/>
+            <Property Name="Text" Value="#{QXHB_20210701_264}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_NotSuperList1" Name="SeventhFestivalTopList_Ranking_Present_ListContent">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-98.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,48.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="SelectMode" Value="Single"/>
+            <Window Type="TLBB_NotSuperListItemCommon5" Name="SeventhFestivalTopList_Ranking_Present_List_CoinAItem">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_Ranking_Present_List_CoinAItemBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,275.000000},{0.000000,33.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value=""/>
+                <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Ranking_Present_List_NumText">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.50000,-10.000000}}"/>
+                  <Property Name="Text" Value="#{QXHB_20210701_97}"/>
+                  <Property Name="TextColor" Value="FFFFFF00"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_Ranking_Present_List_NumTop">
+                  <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,28.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.00000,0.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangNum1"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Ranking_Present_List_NameText">
+                  <Property Name="UnifiedSize" Value="{{0.000000,134.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.500000,-10.000000}}"/>
+                  <Property Name="Text" Value="#{QXHB_20210701_98}"/>
+                  <Property Name="TextColor" Value="FFFFFF00"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Ranking_Present_List_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.500000,-10.000000}}"/>
+                  <Property Name="Text" Value="#{QXHB_20210701_101}"/>
+                  <Property Name="TextColor" Value="FFFFFF00"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_Ranking_Present_List_Xian">
+                  <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,1.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,25.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:QiXi_HuaBang11 image:QiXi3_HuaBangxian"/>
+                </Window>              
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="SeventhFestivalTopList_Ranking_PresentMe">
+            <Property Name="UnifiedSize" Value="{{0.000000,284.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-50.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Ranking_Present_Me">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-6.000000}}"/>
+              <Property Name="Text" Value="#{QXHB_20210701_102}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Ranking_Present_MeNum">
+              <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.500000,-6.000000}}"/>
+              <Property Name="Text" Value="#{QXHB_20210701_103}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Ranking_Present_Rose">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.500000,-6.000000}}"/>
+              <Property Name="Text" Value="#{QXHB_20210701_105}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Ranking_Present_AwardBtn">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,22.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{0.500000,-10.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="PushedImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn6Push"/>
+              <Property Name="NormalImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn6Normal"/>
+              <Property Name="HoverImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn6Hover"/>
+              <Property Name="DisabledImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn6Push"/>
+              <Event Name="Clicked" Function="SeventhFestivalTopList_Prize_Present()"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_Ranking_Receive_Frame">
+          <Property Name="UnifiedSize" Value="{{0.000000,284.000000},{0.000000,262.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-2.000000},{0.000000,62.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Ranking_Receive_Title">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.000000,0.000000}}"/>
+            <Property Name="Font" Value="YouYuan9.75"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Ranking_Receive_TitleNum">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,24.000000}}"/>
+            <Property Name="Text" Value="#{QXHB_20210701_262}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Ranking_Receive_TitleName">
+            <Property Name="UnifiedSize" Value="{{0.000000,134.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,24.000000}}"/>
+            <Property Name="Text" Value="#{QXHB_20210701_263}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Ranking_Receive_TitleNum2">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,24.000000}}"/>
+            <Property Name="Text" Value="#{QXHB_20210701_264}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_NotSuperList1" Name="SeventhFestivalTopList_Ranking_Receive_ListContent">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-98.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,48.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="SelectMode" Value="Single"/>
+            <Window Type="TLBB_NotSuperListItemCommon5" Name="SeventhFestivalTopList_Ranking_Receive_List_CoinAItem">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_Ranking_Receive_List_CoinAItemBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,275.000000},{0.000000,33.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value=""/>
+                <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Ranking_Receive_List_NumText">
+                  <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-10.000000}}"/>
+                  <Property Name="Text" Value="#{QXHB_20210701_116}"/>
+                  <Property Name="TextColor" Value="FFFFFF00"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_Ranking_Receive_List_NumTop">
+                  <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,28.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,0.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangNum1"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Ranking_Receive_List_NameText">
+                  <Property Name="UnifiedSize" Value="{{0.000000,134.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.500000,-10.000000}}"/>
+                  <Property Name="Text" Value="#{QXHB_20210701_117}"/>
+                  <Property Name="TextColor" Value="FFFFFF00"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Ranking_Receive_List_Num">
+                  <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.500000,-10.000000}}"/>
+                  <Property Name="Text" Value="#{QXHB_20210701_120}"/>
+                  <Property Name="TextColor" Value="FFFFFF00"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_Ranking_Receive_List_Xian2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,1.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.00000,25.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:QiXi_HuaBang11 image:QiXi3_HuaBangxian"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="SeventhFestivalTopList_Ranking_ReceiveMe">
+            <Property Name="UnifiedSize" Value="{{0.000000,284.000000},{0.000000,32.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-50.000000}}"/>
+            <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Ranking_Receive_Me">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-6.000000}}"/>
+              <Property Name="Text" Value="#{QXHB_20210701_102}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Ranking_Receive_MeNum">
+              <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.500000,-6.000000}}"/>
+              <Property Name="Text" Value="#{QXHB_20210701_103}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Ranking_Receive_Rose">
+              <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.500000,-6.000000}}"/>
+              <Property Name="Text" Value="#{QXHB_20210701_255}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Ranking_Receive_AwardBtn">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,22.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{0.500000,-10.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="PushedImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn6Push"/>
+              <Property Name="NormalImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn6Normal"/>
+              <Property Name="HoverImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn6Hover"/>
+              <Property Name="DisabledImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn6Push"/>
+              <Event Name="Clicked" Function="SeventhFestivalTopList_Prize_Receive()"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Ranking_Present_F5">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-105.000000},{1.000000,-24.000000}}"/>
+          <Property Name="PushedImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn8Push"/>
+          <Property Name="NormalImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn8Normal"/>
+          <Property Name="HoverImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn8Hover"/>
+          <Property Name="DisabledImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn8Push"/>
+          <Event Name="Clicked" Function="SeventhFestivalTopList_RankClick_Refresh();"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Ranking_Receive_F5">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-105.000000},{1.000000,-24.000000}}"/>
+          <Property Name="PushedImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn8Push"/>
+          <Property Name="NormalImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn8Normal"/>
+          <Property Name="HoverImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn8Hover"/>
+          <Property Name="DisabledImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn8Push"/>
+          <Event Name="Clicked" Function="SeventhFestivalTopList_RankClick_Refresh();"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="SeventhFestivalTopList_Exchange_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,660.000000},{0.000000,400.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-264.000000},{0.000000,108.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_Exchange_Item1">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,156.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBK5"/>
+          <Window Type="TLBB_ActionButton" Name="SeventhFestivalTopList_Exchange_Item1_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.000000,38.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Exchange_Item1_Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-50.000000}}"/>
+            <Property Name="PushedImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Push"/>
+            <Property Name="NormalImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Normal"/>
+            <Property Name="HoverImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Hover"/>
+            <Property Name="DisabledImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Push"/>
+            <Event Name="Clicked" Function="SeventhFestivalTopList_Exchange_Click(1)" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Exchange_Item1_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,16.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Exchange_Item1_Text2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-68.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Exchange_Item1_ItemPreview">
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.500000,-28.000000}}"/>
+            <Property Name="PushedImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Push"/>
+            <Property Name="NormalImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Normal"/>
+            <Property Name="HoverImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Hover"/>
+            <Property Name="DisabledImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Dis"/>
+            <Event Name="Clicked" Function="SeventhFestivalTopList_Exchange_ItemPreview(1)"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_Exchange_Item2">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,156.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBK5"/>
+          <Window Type="TLBB_ActionButton" Name="SeventhFestivalTopList_Exchange_Item2_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.000000,38.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Exchange_Item2_Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-50.000000}}"/>
+            <Property Name="PushedImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Push"/>
+            <Property Name="NormalImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Normal"/>
+            <Property Name="HoverImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Hover"/>
+            <Property Name="DisabledImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Push"/>
+            <Event Name="Clicked" Function="SeventhFestivalTopList_Exchange_Click(2)" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Exchange_Item2_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,16.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Exchange_Item2_Text2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-68.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Exchange_Item2_ItemPreview">
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.500000,-28.000000}}"/>
+            <Property Name="PushedImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Push"/>
+            <Property Name="NormalImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Normal"/>
+            <Property Name="HoverImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Hover"/>
+            <Property Name="DisabledImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Dis"/>
+            <Event Name="Clicked" Function="SeventhFestivalTopList_Exchange_ItemPreview(2)"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_Exchange_Item3">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,156.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBK5"/>
+          <Window Type="TLBB_ActionButton" Name="SeventhFestivalTopList_Exchange_Item3_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.000000,38.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Exchange_Item3_Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-50.000000}}"/>
+            <Property Name="PushedImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Push"/>
+            <Property Name="NormalImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Normal"/>
+            <Property Name="HoverImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Hover"/>
+            <Property Name="DisabledImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Push"/>
+            <Event Name="Clicked" Function="SeventhFestivalTopList_Exchange_Click(3)" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Exchange_Item3_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,16.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Exchange_Item3_Text2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-68.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Exchange_Item3_ItemPreview">
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.500000,-28.000000}}"/>
+            <Property Name="PushedImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Push"/>
+            <Property Name="NormalImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Normal"/>
+            <Property Name="HoverImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Hover"/>
+            <Property Name="DisabledImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Dis"/>
+            <Event Name="Clicked" Function="SeventhFestivalTopList_Exchange_ItemPreview(3)"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_Exchange_Item4">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,156.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBK5"/>
+          <Window Type="TLBB_ActionButton" Name="SeventhFestivalTopList_Exchange_Item4_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.000000,38.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Exchange_Item4_Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-50.000000}}"/>
+            <Property Name="PushedImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Push"/>
+            <Property Name="NormalImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Normal"/>
+            <Property Name="HoverImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Hover"/>
+            <Property Name="DisabledImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Push"/>
+            <Event Name="Clicked" Function="SeventhFestivalTopList_Exchange_Click(4)" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Exchange_Item4_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,16.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Exchange_Item4_Text2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-68.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Exchange_Item4_ItemPreview">
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.500000,-28.000000}}"/>
+            <Property Name="PushedImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Push"/>
+            <Property Name="NormalImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Normal"/>
+            <Property Name="HoverImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Hover"/>
+            <Property Name="DisabledImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Dis"/>
+            <Event Name="Clicked" Function="SeventhFestivalTopList_Exchange_ItemPreview(4)"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_Exchange_Item5">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,156.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,450.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBK5"/>
+          <Window Type="TLBB_ActionButton" Name="SeventhFestivalTopList_Exchange_Item5_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.000000,38.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Exchange_Item5_Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-50.000000}}"/>
+            <Property Name="PushedImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Push"/>
+            <Property Name="NormalImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Normal"/>
+            <Property Name="HoverImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Hover"/>
+            <Property Name="DisabledImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Push"/>
+            <Event Name="Clicked" Function="SeventhFestivalTopList_Exchange_Click(5)" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Exchange_Item5_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,16.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Exchange_Item5_Text2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-68.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Exchange_Item5_ItemPreview">
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.500000,-28.000000}}"/>
+            <Property Name="PushedImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Push"/>
+            <Property Name="NormalImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Normal"/>
+            <Property Name="HoverImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Hover"/>
+            <Property Name="DisabledImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Dis"/>
+            <Event Name="Clicked" Function="SeventhFestivalTopList_Exchange_ItemPreview(5)"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_Exchange_Item6">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,156.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,162.000000}}"/>
+          <Property Name="Image" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBK5"/>
+          <Window Type="TLBB_ActionButton" Name="SeventhFestivalTopList_Exchange_Item6_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.000000,38.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Exchange_Item6_Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-50.000000}}"/>
+            <Property Name="PushedImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Push"/>
+            <Property Name="NormalImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Normal"/>
+            <Property Name="HoverImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Hover"/>
+            <Property Name="DisabledImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Push"/>
+            <Event Name="Clicked" Function="SeventhFestivalTopList_Exchange_Click(6)" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Exchange_Item6_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,16.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Exchange_Item6_Text2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-68.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Exchange_Item6_ItemPreview">
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.500000,-28.000000}}"/>
+            <Property Name="PushedImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Push"/>
+            <Property Name="NormalImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Normal"/>
+            <Property Name="HoverImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Hover"/>
+            <Property Name="DisabledImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Dis"/>
+            <Event Name="Clicked" Function="SeventhFestivalTopList_Exchange_ItemPreview(6)"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_Exchange_Item7">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,156.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,162.000000}}"/>
+          <Property Name="Image" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBK5"/>
+          <Window Type="TLBB_ActionButton" Name="SeventhFestivalTopList_Exchange_Item7_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.000000,38.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Exchange_Item7_Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-50.000000}}"/>
+            <Property Name="PushedImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Push"/>
+            <Property Name="NormalImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Normal"/>
+            <Property Name="HoverImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Hover"/>
+            <Property Name="DisabledImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Push"/>
+            <Event Name="Clicked" Function="SeventhFestivalTopList_Exchange_Click(7)" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Exchange_Item7_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,16.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Exchange_Item7_Text2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-68.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Exchange_Item7_ItemPreview">
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.500000,-28.000000}}"/>
+            <Property Name="PushedImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Push"/>
+            <Property Name="NormalImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Normal"/>
+            <Property Name="HoverImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Hover"/>
+            <Property Name="DisabledImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Dis"/>
+            <Event Name="Clicked" Function="SeventhFestivalTopList_Exchange_ItemPreview(7)"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_Exchange_Item8">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,156.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,162.000000}}"/>
+          <Property Name="Image" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBK5"/>
+          <Window Type="TLBB_ActionButton" Name="SeventhFestivalTopList_Exchange_Item8_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.000000,38.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Exchange_Item8_Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-50.000000}}"/>
+            <Property Name="PushedImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Push"/>
+            <Property Name="NormalImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Normal"/>
+            <Property Name="HoverImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Hover"/>
+            <Property Name="DisabledImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Push"/>
+            <Event Name="Clicked" Function="SeventhFestivalTopList_Exchange_Click(8)" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Exchange_Item8_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,16.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Exchange_Item8_Text2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-68.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Exchange_Item8_ItemPreview">
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.500000,-28.000000}}"/>
+            <Property Name="PushedImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Push"/>
+            <Property Name="NormalImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Normal"/>
+            <Property Name="HoverImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Hover"/>
+            <Property Name="DisabledImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Dis"/>
+            <Event Name="Clicked" Function="SeventhFestivalTopList_Exchange_ItemPreview(8)"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_Exchange_Item9">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,156.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.000000,162.000000}}"/>
+          <Property Name="Image" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBK5"/>
+          <Window Type="TLBB_ActionButton" Name="SeventhFestivalTopList_Exchange_Item9_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.000000,38.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Exchange_Item9_Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-50.000000}}"/>
+            <Property Name="PushedImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Push"/>
+            <Property Name="NormalImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Normal"/>
+            <Property Name="HoverImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Hover"/>
+            <Property Name="DisabledImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Push"/>
+            <Event Name="Clicked" Function="SeventhFestivalTopList_Exchange_Click(9)" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Exchange_Item9_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,16.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Exchange_Item9_Text2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-68.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Exchange_Item9_ItemPreview">
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.500000,-28.000000}}"/>
+            <Property Name="PushedImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Push"/>
+            <Property Name="NormalImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Normal"/>
+            <Property Name="HoverImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Hover"/>
+            <Property Name="DisabledImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Dis"/>
+            <Event Name="Clicked" Function="SeventhFestivalTopList_Exchange_ItemPreview(9)"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_Exchange_Item10">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,156.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,450.000000},{0.000000,162.000000}}"/>
+          <Property Name="Image" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBK5"/>
+          <Window Type="TLBB_ActionButton" Name="SeventhFestivalTopList_Exchange_Item10_Icon">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.000000,38.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Exchange_Item10_Get">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-50.000000}}"/>
+            <Property Name="PushedImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Push"/>
+            <Property Name="NormalImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Normal"/>
+            <Property Name="HoverImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Hover"/>
+            <Property Name="DisabledImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn5Push"/>
+            <Event Name="Clicked" Function="SeventhFestivalTopList_Exchange_Click(10)" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Exchange_Item10_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,16.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_Exchange_Item10_Text2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-68.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_Exchange_Item10_ItemPreview">
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-22.000000},{0.500000,-28.000000}}"/>
+            <Property Name="PushedImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Push"/>
+            <Property Name="NormalImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Normal"/>
+            <Property Name="HoverImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Hover"/>
+            <Property Name="DisabledImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn10Dis"/>
+            <Event Name="Clicked" Function="SeventhFestivalTopList_Exchange_ItemPreview(10)"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="SeventhFestivalTopList_TextNumBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,500.000000},{1.000000,-40.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:XuYuanQuan image:XuYuanQuan_Text_BK"/>
+          <Window Type="TLBB_SimpleText" Name="SeventhFestivalTopList_TextNum">
+            <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.000000,2.000000}}"/>
+            <Property Name="Text" Value="#{QXHB_20210701_178}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="SeventhFestivalTopList_DuiHuan">
+          <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,414.000000},{1.000000,-30.000000}}"/>
+          <Property Name="Visible" Value="False"/>
+          <Property Name="PushedImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn9Push"/>
+          <Property Name="NormalImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn9Normal"/>
+          <Property Name="HoverImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn9Hover"/>
+          <Property Name="DisabledImage" Value="set:QiXi_HuaBang3 image:QiXi2_HuaBangBtn9Push"/>
+          <Event Name="Clicked" Function="SeventhFestivalTopList_DuiHuan()"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

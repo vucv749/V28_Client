@@ -1,0 +1,338 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="Levelup_TopListAward_Frame">
+    <Property Name="UnifiedPosition" Value="{{0.500000,-182.000000},{0.500000,-240.000000}" />
+    <Property Name="UnifiedSize" Value="{{0.000000,394.000000},{0.000000,490.000000}" />
+    <Event Name="Hidden" Function="" />
+    <Window Type="TLBB_DragTitle" Name="Levelup_TopListAward_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="Levelup_TopListAward_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Levelup_TopListAward_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Levelup_TopListAward_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}" />
+      <Event Name="Clicked" Function="Levelup_TopListAward_Hide()"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="Levelup_TopListAward_Client">
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+      <Window Type="DefaultWindow" Name="Levelup_TopListAward_AwardBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_Frame_Lace3" Name="Levelup_TopListAward_Award1BK">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,380.000000},{0.000000,62.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Levelup_TopListAward_Award1Image">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,52.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleAward1"/>
+            <Window Type="TLBB_SimpleText" Name="Levelup_TopListAward_AwardInfo1">
+              <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.500000,-8.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+              <Property Name="Text" Value="#{TXLY_240904_21}" />
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Levelup_TopListAward_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.500000,-20.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Levelup_TopListAward_Icon1_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.500000,-20.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Levelup_TopListAward_Icon1_3">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,250.000000},{0.500000,-20.000000}}"/>
+            </Window> 
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="Levelup_TopListAward_Get1">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{TXLY_240904_27}"/>
+            <Property Name="Tooltip" Value="#{TXLY_240904_28}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="Levelup_TopListAward_Click( )"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Levelup_TopListAward_Get1Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Anniversary01 image:Anniversary_YiLingQu"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace3" Name="Levelup_TopListAward_Award2BK">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,62.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,380.000000},{0.000000,62.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Levelup_TopListAward_Award2Image">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,52.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleAward2"/>
+            <Window Type="TLBB_SimpleText" Name="Levelup_TopListAward_AwardInfo2">
+              <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.500000,-8.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+              <Property Name="Text" Value="#{TXLY_240904_22}" />
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Levelup_TopListAward_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.500000,-20.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Levelup_TopListAward_Icon2_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.500000,-20.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Levelup_TopListAward_Icon2_3">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,250.000000},{0.500000,-20.000000}}"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="Levelup_TopListAward_Get2">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{0.500000,-10.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Text" Value="#{TXLY_240904_27}"/>
+            <Property Name="Tooltip" Value="#{TXLY_240904_28}"/>
+            <Event Name="MouseLButtonDown" Function="Levelup_TopListAward_Click( )"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Levelup_TopListAward_Get2Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Anniversary01 image:Anniversary_YiLingQu"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace3" Name="Levelup_TopListAward_Award3BK">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,124.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,380.000000},{0.000000,62.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Levelup_TopListAward_Award3Image">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,52.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleAward3"/>
+            <Window Type="TLBB_SimpleText" Name="Levelup_TopListAward_AwardInfo3">
+              <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.500000,-8.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+              <Property Name="Text" Value="#{TXLY_240904_23}" />
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Levelup_TopListAward_Icon3">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.500000,-20.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Levelup_TopListAward_Icon3_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.500000,-20.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Levelup_TopListAward_Icon3_3">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,250.000000},{0.500000,-20.000000}}"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="Levelup_TopListAward_Get3">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{0.500000,-10.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Text" Value="#{TXLY_240904_27}"/>
+            <Property Name="Tooltip" Value="#{TXLY_240904_28}"/>
+            <Event Name="MouseLButtonDown" Function="Levelup_TopListAward_Click( )"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Levelup_TopListAward_Get3Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Anniversary01 image:Anniversary_YiLingQu"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace3" Name="Levelup_TopListAward_Award4BK">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,186.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,380.000000},{0.000000,62.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Levelup_TopListAward_Award4Image">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,52.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleAward3"/>
+            <Window Type="TLBB_SimpleText" Name="Levelup_TopListAward_AwardInfo4">
+              <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.500000,-8.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+              <Property Name="Text" Value="#{TXLY_240904_24}" />
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Levelup_TopListAward_Icon4">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.500000,-20.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Levelup_TopListAward_Icon4_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.500000,-20.000000}}"/>
+            </Window>
+
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="Levelup_TopListAward_Get4">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{0.500000,-10.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Text" Value="#{TXLY_240904_27}"/>
+            <Property Name="Tooltip" Value="#{TXLY_240904_28}"/>
+            <Event Name="MouseLButtonDown" Function="Levelup_TopListAward_Click( )"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Levelup_TopListAward_Get4Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Anniversary01 image:Anniversary_YiLingQu"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace3" Name="Levelup_TopListAward_Award5BK">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,248.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,380.000000},{0.000000,62.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Levelup_TopListAward_Award5Image">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,52.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleAward3"/>
+            <Window Type="TLBB_SimpleText" Name="Levelup_TopListAward_AwardInfo5">
+              <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.500000,-8.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+              <Property Name="Text" Value="#{TXLY_240904_25}" />
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Levelup_TopListAward_Icon5">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.500000,-20.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Levelup_TopListAward_Icon5_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.500000,-20.000000}}"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="Levelup_TopListAward_Get5">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{0.500000,-10.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Text" Value="#{TXLY_240904_27}"/>
+            <Property Name="Tooltip" Value="#{TXLY_240904_28}"/>
+            <Event Name="MouseLButtonDown" Function="Levelup_TopListAward_Click( )"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Levelup_TopListAward_Get5Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Anniversary01 image:Anniversary_YiLingQu"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace3" Name="Levelup_TopListAward_Award6BK">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,310.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,380.000000},{0.000000,62.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Levelup_TopListAward_Award6Image">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,52.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleAward3"/>
+            <Window Type="TLBB_SimpleText" Name="Levelup_TopListAward_AwardInfo6">
+              <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.500000,-8.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+              <Property Name="Text" Value="#{TXLY_240904_26}" />
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Levelup_TopListAward_Icon6">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.500000,-20.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Levelup_TopListAward_Icon6_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.500000,-20.000000}}"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="Levelup_TopListAward_Get6">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{0.500000,-10.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Text" Value="#{TXLY_240904_27}"/>
+            <Property Name="Tooltip" Value="#{TXLY_240904_28}"/>
+            <Event Name="MouseLButtonDown" Function="Levelup_TopListAward_Click( )"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Levelup_TopListAward_Get6Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Anniversary01 image:Anniversary_YiLingQu"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace3" Name="Levelup_TopListAward_Award7BK">
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,372.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,380.000000},{0.000000,62.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Levelup_TopListAward_Award7Image">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,52.000000}}"/>
+            <Property Name="Image" Value="set:MenPaiFirstOne_BattleTable image:MenPaiFirstOne_BattleAward3"/>
+            <Window Type="TLBB_SimpleText" Name="Levelup_TopListAward_AwardInfo7">
+              <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.500000,-8.000000}" />
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+              <Property Name="Text" Value="#{TXLY_240904_26}" />
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Levelup_TopListAward_Icon7">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.500000,-20.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Levelup_TopListAward_Icon7_2">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.500000,-20.000000}}"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="Levelup_TopListAward_Get7">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{0.500000,-10.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Text" Value="#{TXLY_240904_27}"/>
+            <Property Name="Tooltip" Value="#{TXLY_240904_28}"/>
+            <Event Name="MouseLButtonDown" Function="Levelup_TopListAward_Click( )"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Levelup_TopListAward_Get7Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Anniversary01 image:Anniversary_YiLingQu"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

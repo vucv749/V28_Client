@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="DaHua_Yure_FrameNULL">
+    <Property Name="UnifiedSize" Value="{{0.000000,846.000000},{0.000000,498.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-423.000000},{0.500000,-249.000000}}"/>
+    <Event Name="Hidden" Function="DaHua_Yure_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="DaHua_Yure_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-659.000000},{0.000000,409.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+      <Property Name="DragTarget" Value="DaHua_Yure_FrameNULL"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="DaHua_Yure_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-77.000000},{0.000000,26.000000}}"/>
+      <Property Name="PushedImage" Value="set:DaHua_Yure image:DaHua_Yure_Close_Pushed"/>
+      <Property Name="NormalImage" Value="set:DaHua_Yure image:DaHua_Yure_Close_Normal"/>
+      <Property Name="HoverImage" Value="set:DaHua_Yure image:DaHua_Yure_Close_Hover"/>
+      <Property Name="DisabledImage" Value="set:DaHua_Yure image:DaHua_Yure_Close_Disabled"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="DaHua_Yure_OnClose();" />
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="DaHua_Yure_BK1">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="Image" Value="set:DaHua_Yure image:DaHua_Yure_BK"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="DaHua_Yure_InfoFrame">
+      <Property Name="UnifiedSize" Value="{{1.000000,-268.000000},{0.000000,65.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,162.000000},{0.000000,42.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_SimpleText" Name="DaHua_Yure_InfoText">
+        <Property Name="UnifiedSize" Value="{{1.000000,-21.000000},{1.000000,-10.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,11.000000},{0.000000,5.000000}}"/>
+        <Property Name="Text" Value="#{DHYR_240515_07}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="VertFormatting" Value="VertCentred"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="DaHua_Yure_HelpButton">
+        <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{1.000000,-26.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:DaHua_Yure image:DaHua_Yure_Help_Pushed"/>
+        <Property Name="NormalImage" Value="set:DaHua_Yure image:DaHua_Yure_Help_Normal"/>
+        <Property Name="HoverImage" Value="set:DaHua_Yure image:DaHua_Yure_Help_Hover"/>
+        <Property Name="DisabledImage" Value="set:DaHua_Yure image:DaHua_Yure_Help_Disabled"/>
+        <Event Name="Clicked" Function="DaHua_Yure_OnHelpButtonClicked();" />
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="DaHua_Yure_Score">
+      <Property Name="UnifiedSize" Value="{{1.000000,-210.000000},{0.000000,133.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,111.000000},{1.000000,-153.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="DefaultWindow" Name="DaHua_Yure_Score_ProgressBKImage">
+        <Property Name="UnifiedSize" Value="{{0.000000,455.000000},{0.000000,5.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,132.000000},{1.000000,-31.000000}}"/>
+        <Window Type="TLBB_ProgressDaHuaYureBlue" Name="DaHua_Yure_Score_ProgressBar">
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,5.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="CurrentProgress" Value="0.5" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DaHua_Yure_Icon1BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,90.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,188.000000},{0.000000,10.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Image" Value="set:DaHua_Yure image:DaHua_Yure_BoxBK1"/>
+        <Window Type="TLBB_ButtonNULL" Name="DaHua_Yure_Icon1">
+          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,50.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.000000,13.000000}}"/>
+          <Property Name="PushedImage" Value="set:DaHua_Yure image:DaHua_Yure_Box1_Pushed"/>
+          <Property Name="NormalImage" Value="set:DaHua_Yure image:DaHua_Yure_Box1_Normal"/>
+          <Property Name="HoverImage" Value="set:DaHua_Yure image:DaHua_Yure_Box1_Hover"/>
+          <Property Name="DisabledImage" Value="set:DaHua_Yure image:DaHua_Yure_Box1_Disabled"/>
+          <Property Name="Tooltip" Value="#{DHYR_240515_11}"/>
+		      <Event Name="Clicked" Function="DaHua_Yure_GetReward(1);" />
+          <Window Type="TLBB_StaticImageNULL" Name="DaHua_Yure_Icon1Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,4.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DaHua_Yure_Icon1Disabled">
+          <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-39.000000},{0.000000,25.000000}}"/>
+          <Property Name="Image" Value="set:DaHua_Yure image:DaHua_Yure_YiLingQu"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DaHua_Yure_Icon2BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,90.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,324.000000},{0.000000,10.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Image" Value="set:DaHua_Yure image:DaHua_Yure_BoxBK1"/>
+        <Window Type="TLBB_ButtonNULL" Name="DaHua_Yure_Icon2">
+          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,50.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.000000,13.000000}}"/>
+          <Property Name="PushedImage" Value="set:DaHua_Yure image:DaHua_Yure_Box2_Pushed"/>
+          <Property Name="NormalImage" Value="set:DaHua_Yure image:DaHua_Yure_Box2_Normal"/>
+          <Property Name="HoverImage" Value="set:DaHua_Yure image:DaHua_Yure_Box2_Hover"/>
+          <Property Name="DisabledImage" Value="set:DaHua_Yure image:DaHua_Yure_Box2_Disabled"/>
+          <Property Name="Tooltip" Value="#{DHYR_240515_163}"/>
+		      <Event Name="Clicked" Function="DaHua_Yure_GetReward(2);" />
+          <Window Type="TLBB_StaticImageNULL" Name="DaHua_Yure_Icon2Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,4.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DaHua_Yure_Icon2Disabled">
+          <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-39.000000},{0.000000,25.000000}}"/>
+          <Property Name="Image" Value="set:DaHua_Yure image:DaHua_Yure_YiLingQu"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DaHua_Yure_Icon3BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,100.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,549.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Image" Value="set:DaHua_Yure image:DaHua_Yure_BoxBK2"/>
+        <Window Type="TLBB_ButtonNULL" Name="DaHua_Yure_Icon3">
+          <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,50.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.000000,16.000000}}"/>
+          <Property Name="PushedImage" Value="set:DaHua_Yure image:DaHua_Yure_Box3_Pushed"/>
+          <Property Name="NormalImage" Value="set:DaHua_Yure image:DaHua_Yure_Box3_Normal"/>
+          <Property Name="HoverImage" Value="set:DaHua_Yure image:DaHua_Yure_Box3_Hover"/>
+          <Property Name="DisabledImage" Value="set:DaHua_Yure image:DaHua_Yure_Box3_Disabled"/>
+          <Property Name="Tooltip" Value="#{DHYR_240515_164}"/>
+		      <Event Name="Clicked" Function="DaHua_Yure_GetReward(3);" />
+          <Window Type="TLBB_StaticImageNULL" Name="DaHua_Yure_Icon3Tip">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,4.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="DaHua_Yure_Icon3Disabled">
+          <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-39.000000},{0.000000,29.000000}}"/>
+          <Property Name="Image" Value="set:DaHua_Yure image:DaHua_Yure_YiLingQu"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DaHua_Yure_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,105.000000},{0.000000,29.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,11.000000},{0.000000,84.000000}}"/>
+        <Property Name="Text" Value="#{DHYR_240515_09}"/>
+        <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="DaHua_Yure_List">
+      <Property Name="UnifiedSize" Value="{{1.000000,-693.000000},{0.000000,182.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,597.000000},{1.000000,-359.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_SimpleText" Name="DaHua_Yure_List_Txet1">
+        <Property Name="UnifiedSize" Value="{{0.000000,149.000000},{0.000000,33.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,-4.000000},{0.000000,-4.000000}}"/>
+        <Property Name="Text" Value="#{DHYR_240515_118}"/>
+        <Property Name="Font" Value="YouYuan11.25"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DaHua_Yure_List_Txet2">
+        <Property Name="UnifiedSize" Value="{{0.000000,81.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{0.000000,40.000000}}"/>
+        <Property Name="Text" Value="#{DHYR_240515_119}"/>
+        <Property Name="Font" Value="YouYuan13"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DaHua_Yure_List_Txet3">
+        <Property Name="UnifiedSize" Value="{{0.000000,81.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{0.000000,63.000000}}"/>
+        <Property Name="Text" Value="#{DHYR_240515_120}"/>
+        <Property Name="Font" Value="YouYuan13"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DaHua_Yure_List_Txet4">
+        <Property Name="UnifiedSize" Value="{{0.000000,81.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{0.000000,86.000000}}"/>
+        <Property Name="Text" Value="#{DHYR_240515_121}"/>
+        <Property Name="Font" Value="YouYuan13"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DaHua_Yure_List_Txet5">
+        <Property Name="UnifiedSize" Value="{{0.000000,81.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{0.000000,109.000000}}"/>
+        <Property Name="Text" Value="#{DHYR_240515_122}"/>
+        <Property Name="Font" Value="YouYuan13"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DaHua_Yure_List_Icon1">
+        <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,40.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:DaHua_Yure image:DaHua_Yure_OK"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DaHua_Yure_List_Icon2">
+        <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,63.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:DaHua_Yure image:DaHua_Yure_OK"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DaHua_Yure_List_Icon3">
+        <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,86.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:DaHua_Yure image:DaHua_Yure_OK"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="DaHua_Yure_List_Icon4">
+        <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,109.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:DaHua_Yure image:DaHua_Yure_OK"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="DaHua_Yure_Go">
+        <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-57.000000},{1.000000,-40.000000}}"/>
+        <Property Name="Tooltip" Value="#{}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:DaHua_Yure image:DaHua_Yure_Goto_Pushed"/>
+        <Property Name="NormalImage" Value="set:DaHua_Yure image:DaHua_Yure_Goto_Normal"/>
+        <Property Name="HoverImage" Value="set:DaHua_Yure image:DaHua_Yure_Goto_Hover"/>
+        <Property Name="DisabledImage" Value="set:DaHua_Yure image:DaHua_Yure_Goto_Disabled"/>
+        <Event Name="Clicked" Function="DaHua_Yure_OnGoButtonClicked();"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame2" Name="SelfDWJinJie_Packet_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,414.000000},{0.000000,250.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.00000,-648.000000},{1.00000,-455.000000}}"/>
+    <Event Name="Hidden" Function="SelfDWJinJie_Packet_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="SelfDWJinJie_Packet_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,2.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="SelfDWJinJie_Packet_Frame"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="VertFormatting" Value="VertCentred"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Text" Value="#{DWJJ_240329_341}"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="SelfDWJinJie_Packet_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}}"/>
+      <Event Name="Clicked" Function="SelfDWJinJie_Packet_CloseClicked();"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="SelfDWJinJie_Packet_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="SelfDWJinJie_Packet_BK">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,22.000000}}"/>
+        <Window Type="TLBB_NotSuperList" Name="SelfDWJinJie_Packet_ActionsList">
+          <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-8.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}" />
+          <Property Name="MultiColumn" Value="1" />
+          <Window Type="TLBB_NotSuperListItemCommon" Name="SelfDWJinJie_Packet_TopListItem2">
+            <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,92.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="SelfDWJinJie_Packet_TopListItem2Action">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-21.000000},{0.500000,-32.000000}}"/>
+              <Window Type="TLBB_StaticImageNULL" Name="SelfDWJinJie_Packet_TopListItem2Action_Mask16">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="SelfDWJinJie_Packet_TopListItem2ActionName">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-28.000000}}"/>
+              <Property Name="Text" Value="天龙八部"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="HorzFormatting" Value="HorzCentred"/>
+            </Window>
+          </Window>
+        </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="TalentGuideLetter_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,552.000000},{0.000000,382.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-266.000000},{0.500000,-163.500000}}"/>
+    <Window Type="TLBB_DragTitle" Name="TalentGuideLetter_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="TalentGuideLetter_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="TalentGuideLetter_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,10.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="TalentGuideLetter_OnHiden();" />
+    </Window>
+    <Window Type="TLBB_ButtonCheckNULL" Name="TalentGuideLetter_Btn1">
+      <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,86.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,8.000000}}"/>
+      <Event Name="Clicked" Function="TalentGuideLetter_OnFenYeClicked(1);"/>
+      <Property Name="CheckMode" Value="1"/>
+      <Property Name="PushedImage" Value="set:Talent3 image:Talent3_XiuXingNormal"/>
+      <Property Name="NormalImage" Value="set:Talent3 image:Talent3_XiuXingPush"/>
+      <Property Name="HoverImage" Value="set:Talent3 image:Talent3_XiuXingHover"/>
+      <Property Name="DisabledImage" Value="set:Talent3 image:Talent3_XiuXing"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="TLBB_ButtonCheckNULL" Name="TalentGuideLetter_Btn2">
+      <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,86.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,98.000000}}"/>
+      <Property Name="CheckMode" Value="1"/>
+      <Property Name="PushedImage" Value="set:Talent3 image:Talent3_LiLianNormal"/>
+      <Property Name="NormalImage" Value="set:Talent3 image:Talent3_LiLianPush"/>
+      <Property Name="HoverImage" Value="set:Talent3 image:Talent3_LiLianHover"/>
+      <Property Name="DisabledImage" Value="set:Talent3 image:Talent3_LiLian"/>
+      <Event Name="Clicked" Function="TalentGuideLetter_OnFenYeClicked(2);"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="TLBB_ButtonCheckNULL" Name="TalentGuideLetter_Btn3">
+      <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,86.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,188.000000}}"/>
+      <Property Name="CheckMode" Value="1"/>
+      <Property Name="PushedImage" Value="set:Talent3 image:Talent3_JingJinNormal"/>
+      <Property Name="NormalImage" Value="set:Talent3 image:Talent3_JingJinPush"/>
+      <Property Name="HoverImage" Value="set:Talent3 image:Talent3_JingJinHover"/>
+      <Property Name="DisabledImage" Value="set:Talent3 image:Talent3_JingJin"/>
+      <Event Name="Clicked" Function="TalentGuideLetter_OnFenYeClicked(3);"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="TLBB_ButtonCheckNULL" Name="TalentGuideLetter_Btn4">
+      <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,86.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,278.000000}}"/>
+      <Property Name="CheckMode" Value="1"/>
+      <Property Name="PushedImage" Value="set:Talent3 image:ZLLetter_mingxinNormal"/>
+      <Property Name="NormalImage" Value="set:Talent3 image:ZLLetter_mingxinPush"/>
+      <Property Name="HoverImage" Value="set:Talent3 image:ZLLetter_mingxinHover"/>
+      <Property Name="DisabledImage" Value="set:Talent3 image:ZLLetter_mingxinDis2"/>
+      <Event Name="Clicked" Function="TalentGuideLetter_OnFenYeClicked(4);"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="TalentGuideLetter_background_Frame">
+      <Property Name="UnifiedSize" Value="{{0.000000,530.000000},{0.000000,382.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-532.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="DefaultWindow" Name="TalentGuideLetter_background1">
+        <Property Name="UnifiedSize" Value="{{0.000000,530.000000},{0.000000,382.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="TalentGuideLetter_background1_1">
+          <Property Name="UnifiedSize" Value="{{0.000000,530.000000},{0.000000,382.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Talent4 image:ZLLetter_xiuxing"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="TalentGuideLetter_background1_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,328.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="TalentGuideLetter_background2">
+        <Property Name="UnifiedSize" Value="{{0.000000,530.000000},{0.000000,382.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="TalentGuideLetter_background2_1">
+          <Property Name="UnifiedSize" Value="{{0.000000,530.000000},{0.000000,382.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Talent3 image:ZLLetter_lilian"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="TalentGuideLetter_background2_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,328.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="TalentGuideLetter_background3">
+        <Property Name="UnifiedSize" Value="{{0.000000,530.000000},{0.000000,382.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="TalentGuideLetter_background3_1">
+          <Property Name="UnifiedSize" Value="{{0.000000,530.000000},{0.000000,382.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Talent3 image:ZLLetter_JingJin"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="TalentGuideLetter_background3_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,382.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="TalentGuideLetter_background4">
+        <Property Name="UnifiedSize" Value="{{0.000000,530.000000},{0.000000,382.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="TalentGuideLetter_background4_1">
+          <Property Name="UnifiedSize" Value="{{0.000000,530.000000},{0.000000,382.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:Talent4 image:ZLLetter_mingxin"/>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="TalentGuideLetter_Function_Frame">
+      <Property Name="AbsolutePosition" Value="x:6.000000 y:36.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_ButtonCommon" Name="TalentGuideLetter_QianWang">
+        <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-86.000000},{1.000000,-32.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Text" Value="#{TFYD_210729_01}" />
+        <Event Name="Clicked" Function="TalentGuideLetter_Clicked()" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

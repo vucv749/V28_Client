@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame6" Name="CJ_EndTips_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,318.000000},{0.000000,120.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-159.000000},{0.500000,-60.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="CJ_EndTips_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-90.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,0.000000}}"/>
+      <Property Name="DragTarget" Value="CJ_EndTips_Frame" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{TLCJ_20240709_200}" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="CJ_EndTips_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}}"/>
+      <Event Name="Clicked" Function="CJ_EndTips_Close_OnClicked()"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="CJ_EndTips_RankBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,40.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_SimpleText" Name="CJ_EndTips_RankNow">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-10.000000}}"/>
+        <Property Name="Text" Value="#{TLCJ_20240709_303}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="CJ_EndTips_KillBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,78.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_SimpleText" Name="CJ_EndTips_KillNow">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-10.000000}}"/>
+        <Property Name="Text" Value="#{TLCJ_20240709_304}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

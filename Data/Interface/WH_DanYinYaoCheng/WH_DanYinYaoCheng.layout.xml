@@ -1,0 +1,206 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="WH_DanYinYaoChengFrame">
+    <Property Name="UnifiedSize" Value="{{0.000000,700.000000},{0.000000,440.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-350.000000},{0.500000,-220.000000}}"/>
+    <Event Name="Clicked" Function="WH_DanYinYaoCheng_OnHidden()" />
+    <Window Type="TLBB_HeroTitle01" Name="WH_DanYinYaoChengDragTitle_BK">
+      <Property Name="UnifiedSize" Value="{{0.000000,290.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-145.000000},{0.000000,-2.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Window Type="TLBB_DragTitle" Name="WH_DanYinYaoChengDragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{XRBG_20240412_95}"/>
+        <Property Name="Font" Value="YouYuan11.25"/>
+        <Property Name="DragTarget" Value="WH_DanYinYaoChengFrame"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="WH_DanYinYaoChengClose">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,9.000000}}"/>
+      <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+      <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
+      <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
+      <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="WH_DanYinYaoCheng_OnHidden()" />
+    </Window>
+    <Window Type="TLBB_HeroFrame01" Name="WH_DanYinYaoChengClientBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="WH_DanYinYaoChengClient">
+      <Property Name="UnifiedSize" Value="{{0.000000,690.000000},{0.000000,408.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,28.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Image" Value="set:WH_DanYinYaoCheng image:DYYC_BK"/>
+      <Window Type="TLBB_SimpleText" Name="WH_DanYinYaoCheng_Info">
+        <Property Name="UnifiedSize" Value="{{0.000000,490.000000},{0.000000,60.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-245.000000},{0.000000,5.000000}}"/>
+        <Property Name="Text" Value="#{XRBG_20240412_96}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="WH_DanYinYaoCheng_CUMText">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,346.000000}}"/>
+        <Property Name="VertFormatting" Value="TopAligned"/>
+        <Property Name="Text" Value="#{XRBG_20240412_97}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Font" Value="YouYuan13"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="WH_DanYinYaoCheng_Explain2">
+        <Property Name="UnifiedSize" Value="{{0.000000,330.000000},{0.000000,90.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,296.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+
+        <Window Type="DefaultWindow" Name="WH_DanYinYaoCheng_CUM1">
+          <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,70.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.00000,32.00000},{0.000000,25.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ActionButton" Name="WH_DanYinYaoCheng_CUM1Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,12.000000}}"/>
+            <Event Name="Clicked" Function="WH_DanYinYaoCheng_OnRewardClick(1)"/>
+            <Window Type="TLBB_Animate" Name="WH_DanYinYaoCheng_CUM1Btn_ItemAnimate">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="Equip_Zhizun"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="WH_DanYinYaoCheng_CUM1BtnOK">
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-12.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WH_DanYinYaoCheng_CUM1Text">
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,47.000000}}"/>
+            <Property Name="Text" Value="#{XRBG_20240412_99}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="WH_DanYinYaoCheng_CUM2">
+          <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,70.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,25.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ActionButton" Name="WH_DanYinYaoCheng_CUM2Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,12.000000}}"/>
+            <Event Name="Clicked" Function="WH_DanYinYaoCheng_OnRewardClick(2)"/>
+            <Window Type="TLBB_Animate" Name="WH_DanYinYaoCheng_CUM2Btn_ItemAnimate">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="Equip_Zhizun"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="WH_DanYinYaoCheng_CUM2BtnOK">
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-12.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WH_DanYinYaoCheng_CUM2Text">
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,47.000000}}"/>
+            <Property Name="Text" Value="#{XRBG_20240412_100}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+
+        <Window Type="DefaultWindow" Name="WH_DanYinYaoCheng_CUM3">
+          <Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,70.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.00000,260.00000},{0.000000,25.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_ActionButton" Name="WH_DanYinYaoCheng_CUM3Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,12.000000}}"/>
+            <Event Name="Clicked" Function="WH_DanYinYaoCheng_OnRewardClick(3)"/>
+            <Window Type="TLBB_Animate" Name="WH_DanYinYaoCheng_CUM3Btn_ItemAnimate">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="Equip_Zhizun"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="WH_DanYinYaoCheng_CUM3BtnOK">
+              <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,25.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-17.000000},{0.500000,-12.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="WH_DanYinYaoCheng_CUM3Text">
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{0.000000,47.000000}}"/>
+            <Property Name="Text" Value="#{XRBG_20240412_101}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="WH_DanYinYaoCheng_Progressbk">
+          <Property Name="UnifiedSize" Value="{{0.000000,298.000000},{0.000000,9.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,55.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:ZNWH_WaBaoZang image:ZNWH_ProgressBar"/>
+          <Window Type="TLBB_ProgressPropertySpringFestival_Reward" Name="WH_DanYinYaoCheng_Progress">
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,6.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.0000000},{0.000000,1.000000}}" />
+            <Property Name="CurrentProgress" Value="1" />
+            <Property Name="MoveSpeed" Value="1" />
+          </Window>
+        </Window>
+      </Window>
+
+    </Window>
+  </Window>
+</GUILayout>

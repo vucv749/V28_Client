@@ -1,0 +1,1142 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame2" Name="SelectHairColor_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,493.000000},{0.000000,410.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-246.000000},{0.500000,-205.000000}}"/>
+    <Event Name="Hidden" Function="SelectHairColor_OnHidden();" />
+    <Window Type="TLBB_ButtonHelp" Name="SelectHairColor_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*SelectHairColor&quot;);' />
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="SelectHairColor_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,3.000000}}"/>
+      <Property Name="Text" Value="#{INTERFACE_XML_80}" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="DragTarget" Value="SelectHairColor_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="SelectHairColor_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}}"/>
+      <Event Name="Clicked" Function="SelectHairColor_OnClose();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="SelectHairColor_Function_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-36.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,30.000000}}"/>
+      <Window Type="TLBB_FramePlayerOther" Name="SelectHairColor_Model_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,340.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+        <Window Type="TLBB_MeshWindow" Name="SelectHairColor_Model">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.0000000},{0.000000,5.000000}}"/>
+          <Property Name="ShowControl" Value="SelectHairColor_Frame" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_ButtonTurnLeft" Name="SelectHairColor_Model_TurnLeft">
+          <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-72.000000},{1.000000,-42.000000}}"/>
+          <Event Name="MouseButtonDown" Function="SelectHairColor_Model_OnTurnLeft(1);" />
+          <Event Name="MouseButtonUp" Function="SelectHairColor_Model_OnTurnLeft(0);" />
+        </Window>
+        <Window Type="TLBB_ButtonTurnRight" Name="SelectHairColor_Model_TurnRight">
+          <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,50.000000},{1.000000,-42.000000}}"/>
+          <Event Name="MouseButtonDown" Function="SelectHairColor_Model_OnTurnRight(1);" />
+          <Event Name="MouseButtonUp" Function="SelectHairColor_Model_OnTurnRight(0);" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="SelectHairColor_ColorList">
+        <Property Name="UnifiedSize" Value="{{1.000000,-259.000000},{0.000000,81.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,252.000000},{0.000000,204.000000}}"/>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="SelectHairColor_Red_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,20.000000}}"/>
+          <Property Name="Text" Value="#{INTERFACE_XML_323}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+        <Window Type="TLBB_Slider" Name="SelectHairColor_Red">
+          <Property Name="UnifiedSize" Value="{{1.000000,-91.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,3.000000}}"/>
+          <Event Name="ScrollPosChanged" Function="SelectHairColor_SliderChanged();" />
+        </Window>
+        <Window Type="TLBB_EditBoxNormal" Name="SelectHairColor_Red_NumericalValue">
+          <Property Name="ValidationString" Value="[0-9]*" />
+          <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-45.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="244" />
+          <Property Name="MaxTextLength" Value="3" />
+          <Event Name="TextChanged" Function="SelectHairColor_ColorText_Change();" />
+          <Event Name="CaptureLost" Function="SelectHairColor_ColorText_Lost();" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="SelectHairColor_Green_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="Text" Value="#{INTERFACE_XML_445}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+        <Window Type="TLBB_Slider" Name="SelectHairColor_Green">
+          <Property Name="UnifiedSize" Value="{{1.000000,-91.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,23.000000}}"/>
+          <Event Name="ScrollPosChanged" Function="SelectHairColor_SliderChanged();" />
+        </Window>
+        <Window Type="TLBB_EditBoxNormal" Name="SelectHairColor_Green_NumericalValue">
+          <Property Name="ValidationString" Value="[0-9]*"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-45.000000},{0.000000,22.000000}}"/>
+          <Property Name="Text" Value="244" />
+          <Property Name="MaxTextLength" Value="3" />
+          <Event Name="TextChanged" Function="SelectHairColor_ColorText_Change();" />
+          <Event Name="CaptureLost" Function="SelectHairColor_ColorText_Lost();" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="SelectHairColor_Blue_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,40.000000}}"/>
+          <Property Name="Text" Value="#{INTERFACE_XML_422}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+        <Window Type="TLBB_Slider" Name="SelectHairColor_Blue">
+          <Property Name="UnifiedSize" Value="{{1.000000,-91.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,43.000000}}"/>
+          <Event Name="ScrollPosChanged" Function="SelectHairColor_SliderChanged();" />
+        </Window>
+        <Window Type="TLBB_EditBoxNormal" Name="SelectHairColor_Blue_NumericalValue">
+          <Property Name="ValidationString" Value="[0-9]*"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-45.000000},{0.000000,42.000000}}"/>
+          <Property Name="Text" Value="244" />
+          <Property Name="MaxTextLength" Value="3" />
+          <Event Name="TextChanged" Function="SelectHairColor_ColorText_Change();" />
+          <Event Name="CaptureLost" Function="SelectHairColor_ColorText_Lost();" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="SelectHairColor_Brightness_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}"/>
+          <Property Name="Text" Value="#{INTERFACE_XML_434}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+        <Window Type="TLBB_Slider" Name="SelectHairColor_Brightness">
+          <Property Name="UnifiedSize" Value="{{1.000000,-91.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,45.000000},{0.000000,63.000000}}"/>
+          <Event Name="ScrollPosChanged" Function="SelectHairColor_Lumination_Changed();" />
+        </Window>
+        <Window Type="TLBB_EditBoxNormal" Name="SelectHairColor_Brightness_NumericalValue">
+          <Property Name="ValidationString" Value="[0-9]*"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-45.000000},{0.000000,62.000000}}"/>
+          <Property Name="Text" Value="244" />
+          <Property Name="MaxTextLength" Value="3" />
+          <Event Name="TextChanged" Function="SelectHairColor_LuminationText_Change();" />
+          <Event Name="CaptureLost" Function="SelectHairColor_ColorText_Lost();" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="SelectHairColor_AlreadyList">
+        <Property Name="UnifiedSize" Value="{{1.000000,-280.000000},{0.000000,161.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,263.000000},{0.000000,5.000000}}"/>
+        <Window Type="DefaultWindow" Name="SelectHairColor_One">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_ActionButtonNULL" Name="SelectHairColor_Item_One">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Event Name="MouseLButtonDown" Function="SelectHairColor_Color_Clicked(1);" />
+            <Window Type="TLBB_StaticImageTextColor" Name="SelectHairColor_OneIcon">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_ItemLock1">
+              <Property Name="UnifiedSize" Value="{{0.85000,0.000000},{0.85000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionDef1">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_zhuangebi"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionTry1">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="SelectHairColor_Two">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_ActionButtonNULL" Name="SelectHairColor_Item_Two">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Event Name="MouseLButtonDown" Function="SelectHairColor_Color_Clicked(2);" />
+            <Window Type="TLBB_StaticImageTextColor" Name="SelectHairColor_TwoIcon">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_ItemLock2">
+              <Property Name="UnifiedSize" Value="{{0.85000,0.000000},{0.85000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionDef2">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_zhuangebi"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionTry2">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="SelectHairColor_Three">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,79.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_ActionButtonNULL" Name="SelectHairColor_Item_Three">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Event Name="MouseLButtonDown" Function="SelectHairColor_Color_Clicked(3);" />
+            <Window Type="TLBB_StaticImageTextColor" Name="SelectHairColor_ThreeIcon">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_ItemLock3">
+              <Property Name="UnifiedSize" Value="{{0.85000,0.000000},{0.85000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionDef3">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_zhuangebi"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionTry3">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="SelectHairColor_Four">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,118.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_ActionButtonNULL" Name="SelectHairColor_Item_Four">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Event Name="MouseLButtonDown" Function="SelectHairColor_Color_Clicked(4);" />
+            <Window Type="TLBB_StaticImageTextColor" Name="SelectHairColor_FourIcon">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_ItemLock4">
+              <Property Name="UnifiedSize" Value="{{0.85000,0.000000},{0.85000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionDef4">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_zhuangebi"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionTry4">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="SelectHairColor_Five">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,157.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_ActionButtonNULL" Name="SelectHairColor_Item_Five">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Event Name="MouseLButtonDown" Function="SelectHairColor_Color_Clicked(5);" />
+            <Window Type="TLBB_StaticImageTextColor" Name="SelectHairColor_FiveIcon">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_ItemLock5">
+              <Property Name="UnifiedSize" Value="{{0.85000,0.000000},{0.85000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionDef5">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_zhuangebi"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionTry5">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="SelectHairColor_Six">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,40.000000}}"/>
+          <Window Type="TLBB_ActionButtonNULL" Name="SelectHairColor_Item_Six">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Event Name="MouseLButtonDown" Function="SelectHairColor_Color_Clicked(6);" />
+            <Window Type="TLBB_StaticImageTextColor" Name="SelectHairColor_SixIcon">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_ItemLock6">
+              <Property Name="UnifiedSize" Value="{{0.85000,0.000000},{0.85000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionDef6">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_zhuangebi"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionTry6">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="SelectHairColor_Seven">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+          <Window Type="TLBB_ActionButtonNULL" Name="SelectHairColor_Item_Seven">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Event Name="MouseLButtonDown" Function="SelectHairColor_Color_Clicked(7);" />
+            <Window Type="TLBB_StaticImageTextColor" Name="SelectHairColor_SevenIcon">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_ItemLock7">
+              <Property Name="UnifiedSize" Value="{{0.85000,0.000000},{0.85000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionDef7">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_zhuangebi"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionTry7">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="SelectHairColor_Eight">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,79.000000},{0.000000,40.000000}}"/>
+          <Window Type="TLBB_ActionButtonNULL" Name="SelectHairColor_Item_Eight">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Event Name="MouseLButtonDown" Function="SelectHairColor_Color_Clicked(8);" />
+            <Window Type="TLBB_StaticImageTextColor" Name="SelectHairColor_EightIcon">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_ItemLock8">
+              <Property Name="UnifiedSize" Value="{{0.85000,0.000000},{0.85000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionDef8">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_zhuangebi"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionTry8">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="SelectHairColor_Nine">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,118.000000},{0.000000,40.000000}}"/>
+          <Window Type="TLBB_ActionButtonNULL" Name="SelectHairColor_Item_Nine">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Event Name="MouseLButtonDown" Function="SelectHairColor_Color_Clicked(9);" />
+            <Window Type="TLBB_StaticImageTextColor" Name="SelectHairColor_NineIcon">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_ItemLock9">
+              <Property Name="UnifiedSize" Value="{{0.85000,0.000000},{0.85000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionDef9">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_zhuangebi"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionTry9">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="SelectHairColor_Ten">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,157.000000},{0.000000,40.000000}}"/>
+          <Window Type="TLBB_ActionButtonNULL" Name="SelectHairColor_Item_Ten">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Event Name="MouseLButtonDown" Function="SelectHairColor_Color_Clicked(10);" />
+            <Window Type="TLBB_StaticImageTextColor" Name="SelectHairColor_TenIcon">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_ItemLock10">
+              <Property Name="UnifiedSize" Value="{{0.85000,0.000000},{0.85000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionDef10">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_zhuangebi"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionTry10">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="SelectHairColor_Eleven">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,79.000000}}"/>
+          <Window Type="TLBB_ActionButtonNULL" Name="SelectHairColor_Item_Eleven">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Event Name="MouseLButtonDown" Function="SelectHairColor_Color_Clicked(11);" />
+            <Window Type="TLBB_StaticImageTextColor" Name="SelectHairColor_ElevenIcon">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_ItemLock11">
+              <Property Name="UnifiedSize" Value="{{0.85000,0.000000},{0.85000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionDef11">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_zhuangebi"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionTry11">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="SelectHairColor_Twelve">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,79.000000}}"/>
+          <Window Type="TLBB_ActionButtonNULL" Name="SelectHairColor_Item_Twelve">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Event Name="MouseLButtonDown" Function="SelectHairColor_Color_Clicked(12);" />
+            <Window Type="TLBB_StaticImageTextColor" Name="SelectHairColor_TwelveIcon">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_ItemLock12">
+              <Property Name="UnifiedSize" Value="{{0.85000,0.000000},{0.85000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionDef12">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_zhuangebi"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionTry12">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="SelectHairColor_Thirteen">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,79.000000},{0.000000,79.000000}}"/>
+          <Window Type="TLBB_ActionButtonNULL" Name="SelectHairColor_Item_Thirteen">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Event Name="MouseLButtonDown" Function="SelectHairColor_Color_Clicked(13);" />
+            <Window Type="TLBB_StaticImageTextColor" Name="SelectHairColor_ThirteenIcon">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_ItemLock13">
+              <Property Name="UnifiedSize" Value="{{0.85000,0.000000},{0.85000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionDef13">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_zhuangebi"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionTry13">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="SelectHairColor_Fourteen">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,118.000000},{0.000000,79.000000}}"/>
+          <Window Type="TLBB_ActionButtonNULL" Name="SelectHairColor_Item_Fourteen">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Event Name="MouseLButtonDown" Function="SelectHairColor_Color_Clicked(14);" />
+            <Window Type="TLBB_StaticImageTextColor" Name="SelectHairColor_FourteenIcon">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_ItemLock14">
+              <Property Name="UnifiedSize" Value="{{0.85000,0.000000},{0.85000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionDef14">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_zhuangebi"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionTry14">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="SelectHairColor_Fifteen">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,157.000000},{0.000000,79.000000}}"/>
+          <Window Type="TLBB_ActionButtonNULL" Name="SelectHairColor_Item_Fifteen">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Event Name="MouseLButtonDown" Function="SelectHairColor_Color_Clicked(15);" />
+            <Window Type="TLBB_StaticImageTextColor" Name="SelectHairColor_FifteenIcon">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_ItemLock15">
+              <Property Name="UnifiedSize" Value="{{0.85000,0.000000},{0.85000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionDef15">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_zhuangebi"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionTry15">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="SelectHairColor_Sixteen">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,118.000000}}"/>
+          <Window Type="TLBB_ActionButtonNULL" Name="SelectHairColor_Item_Sixteen">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Event Name="MouseLButtonDown" Function="SelectHairColor_Color_Clicked(16);" />
+            <Window Type="TLBB_StaticImageTextColor" Name="SelectHairColor_SixteenIcon">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_ItemLock16">
+              <Property Name="UnifiedSize" Value="{{0.85000,0.000000},{0.85000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionDef16">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_zhuangebi"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionTry16">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="SelectHairColor_Seventeen">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,118.000000}}"/>
+          <Window Type="TLBB_ActionButtonNULL" Name="SelectHairColor_Item_Seventeen">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Event Name="MouseLButtonDown" Function="SelectHairColor_Color_Clicked(17);" />
+            <Window Type="TLBB_StaticImageTextColor" Name="SelectHairColor_SeventeenIcon">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_ItemLock17">
+              <Property Name="UnifiedSize" Value="{{0.85000,0.000000},{0.85000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionDef17">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_zhuangebi"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionTry17">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="SelectHairColor_Eighteen">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,79.000000},{0.000000,118.000000}}"/>
+          <Window Type="TLBB_ActionButtonNULL" Name="SelectHairColor_Item_Eighteen">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Event Name="MouseLButtonDown" Function="SelectHairColor_Color_Clicked(18);" />
+            <Window Type="TLBB_StaticImageTextColor" Name="SelectHairColor_EighteenIcon">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_ItemLock18">
+              <Property Name="UnifiedSize" Value="{{0.85000,0.000000},{0.85000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionDef18">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_zhuangebi"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionTry18">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="SelectHairColor_Nineteen">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,118.000000},{0.000000,118.000000}}"/>
+          <Window Type="TLBB_ActionButtonNULL" Name="SelectHairColor_Item_Nineteen">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Event Name="MouseLButtonDown" Function="SelectHairColor_Color_Clicked(19);" />
+            <Window Type="TLBB_StaticImageTextColor" Name="SelectHairColor_NineteenIcon">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_ItemLock19">
+              <Property Name="UnifiedSize" Value="{{0.85000,0.000000},{0.85000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionDef19">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_zhuangebi"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionTry19">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="SelectHairColor_Twenty">
+          <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,157.000000},{0.000000,118.000000}}"/>
+          <Window Type="TLBB_ActionButtonNULL" Name="SelectHairColor_Item_Twenty">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False"/>
+            <Event Name="MouseLButtonDown" Function="SelectHairColor_Color_Clicked(20);" />
+            <Window Type="TLBB_StaticImageTextColor" Name="SelectHairColor_TwentyIcon">
+              <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="ImageColours" Value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_ItemLock20">
+              <Property Name="UnifiedSize" Value="{{0.85000,0.000000},{0.85000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionDef20">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_zhuangebi"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectHairColor_SuperListItemActionTry20">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="SelectHairColor_WarningText">
+        <Property Name="UnifiedSize" Value="{{1.000000,-260.000000},{1.000000,-318.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,257.000000},{0.000000,289.000000}}"/>
+        <Property Name="Text" Value="#{GXHDZ_141121_41}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+      </Window>
+      <Window Type="TLBB_Frame_Lace3" Name="SelectHairColor_Expendable">
+        <Property Name="UnifiedSize" Value="{{1.000000,-235.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,349.000000}}"/>
+        <Window Type="TLBB_ButtonCheck" Name="SelectHairColor_Expendable_Queren">
+          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="SelectHairColor_YB_Clicked()" />
+          <Event Name="MouseButtonUp" Function="SelectHairColor_YB_MouseButtonUp()"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="SelectHairColor_Expendable_Queren_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,85.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,1.000000}}"/>
+          <Property Name="Text" Value="#{KJXF_161121_01}"/>
+          <Property Name="Tooltip" Value="#{KJXF_161121_09}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="SelectHairColor_Accept">
+        <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,342.000000},{0.000000,350.000000}}"/>
+        <Property Name="Text" Value="#{GXHDZ_141121_33}" />
+        <Event Name="Clicked" Function="SelectHairColor_OK_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="SelectHairColor_ChangeButton">
+        <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,340.600006},{0.000000,165.200012}}"/>
+        <Property Name="Text" Value="#{GXHDZ_141121_04}"/>
+        <Event Name="Clicked" Function="SelectHairColor_ChangeBtnClicked();" />
+      </Window>
+      <Window Type="TLBB_Frame_Lace3" Name="SelectHairColor_Blank">
+        <Property Name="UnifiedSize" Value="{{1.000000,-254.000000},{0.000000,13.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,251.000000},{0.000000,186.000000}}"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

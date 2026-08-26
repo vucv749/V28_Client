@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="Peak_LuckyTime">
+    <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,284.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-284.000000},{0.500000,70.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="Peak_LuckyTime_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-64.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,9.000000}}"/>
+      <Property Name="DragTarget" Value="Peak_LuckyTime" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{JYMJ_250711_55}" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Peak_LuckyTime_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="Peak_LuckyTime_Image">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,13.000000}}"/>
+      <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+      <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+      <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+      <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>
+      <Event Name="Clicked" Function="Peak_LuckyTime_OpenMini()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Peak_LuckyTime_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-50.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,33.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_Frame_Lace1" Name="Peak_LuckyTime_Up">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,154.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Peak_LuckyTime_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{JYMJ_250711_56}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="Peak_LuckyTime_Down">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,80.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-80.000000}}"/>
+        <Window Type="DefaultWindow" Name="Peak_LuckyTime_Pair">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,70.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="TLBB_SimpleText" Name="Peak_LuckyTime_TimeTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="Text" Value="#{JYMJ_250711_57}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Peak_LuckyTime_TextTitle3">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,25.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="Text" Value="#{JYMJ_250711_87}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Peak_LuckyTime_TimeTitle2">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,45.000000}}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="Text" Value="#{JYMJ_250711_65}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Peak_LuckyTime_Time">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-74.000000},{0.000000,5.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Text" Value="#{JYMJ_250711_58}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Peak_LuckyTime_Text3">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-74.000000},{0.000000,25.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Text" Value="#{JYMJ_250711_88}" />
+          </Window>
+          <Window Type="TLBB_StopWatch" Name="Peak_LuckyTime_Time2">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-74.000000},{0.000000,45.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Event Name="ReachedZero" Function="Peak_LuckyTime_TimeOut();"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

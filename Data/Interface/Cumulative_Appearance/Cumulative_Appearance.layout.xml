@@ -1,0 +1,356 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="Cumulative_Appearance_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,840.000000},{0.000000,610.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-420.000000},{0.500000,-305.000000}}"/>
+    <Window Type="TLBB_HeroTitle01" Name="Cumulative_Appearance_BK">
+      <Property Name="UnifiedSize" Value="{{0.000000,410.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-205.000000},{0.000000,-2.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Cumulative_Appearance_Title">
+      <Property Name="UnifiedSize" Value="{{1.000000,-160.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.000000,3.000000}}"/>
+      <Property Name="Text" Value="#{LJSZ_250808_6}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="Cumulative_Appearance_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="Cumulative_Appearance_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,9.000000}}"/>
+      <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+      <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
+      <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
+      <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Cumulative_Appearance_OnClose()"/>
+    </Window>
+
+    <Window Type="DefaultWindow" Name="Cumulative_Appearance_Client">
+      <Property Name="UnifiedSize" Value="{{0.000000,836.000000},{0.000000,576.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,28.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="Cumulative_Appearance_ClientBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,836.000000},{0.000000,576.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:Cumulative_Appearance2 image:Cumulative_Appearance_BK"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Cumulative_Appearance_InfoBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,836.000000},{0.000000,78.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Image" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_TopBK"/>
+
+        <Window Type="TLBB_SimpleText" Name="Cumulative_Appearance_InfoText">
+          <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{1.000000,-20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{LJSZ_250808_9}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="Cumulative_Appearance_Info_Help">
+          <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{0.000000,42.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="PushedImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_WH_Pushed"/>
+          <Property Name="NormalImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_WH_Normal"/>
+          <Property Name="HoverImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_WH_Hover"/>
+          <Property Name="DisabledImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_WH_Disabled"/>
+          <Event Name="Clicked" Function="Cumulative_Appearance_HelpClicked();"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Cumulative_Appearance_Content_BK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="DefaultWindow" Name="Cumulative_Appearance_Content_1">
+          <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,464.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,96.000000},{0.000000,22.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Cumulative_Appearance_Img_1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Dao_Activate"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Cumulative_Appearance_Img_1_LockImg">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Dao_Activate"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Cumulative_Appearance_Img_1_Get">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Dao_Normal"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Cumulative_Appearance_Content_3">
+          <Property Name="UnifiedSize" Value="{{0.000000,468.000000},{0.000000,422.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,367.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Cumulative_Appearance_Img_3">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Niao_Activate"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Cumulative_Appearance_Img_3_LockImg">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Niao_Activate"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Cumulative_Appearance_Img_3_Get">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Niao_Normal"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Cumulative_Appearance_Content_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,388.000000},{0.000000,416.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,194.000000},{0.000000,62.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Cumulative_Appearance_Img_2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Cumulative_Appearance3 image:Cumulative_Appearance_Ren_Unactivate"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Cumulative_Appearance_Img_2_LockImg">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Cumulative_Appearance3 image:Cumulative_Appearance_Ren_Unactivate"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Cumulative_Appearance_Img_2_Get">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:Cumulative_Appearance2 image:Cumulative_Appearance_Ren_Normal"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="Cumulative_Appearance_Info_Shop">
+          <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,82.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-184.000000},{1.000000,-110.000000}}"/>
+          <Property Name="Tooltip" Value="#{}"/>
+          <Property Name="PushedImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Goto_Pushed"/>
+          <Property Name="NormalImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Goto_Normal"/>
+          <Property Name="HoverImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Goto_Hover"/>
+          <Property Name="DisabledImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Goto_Disabled"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="Cumulative_Appearance_ShopClicked();"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Cumulative_Appearance_Content_ProgressBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-200.000000},{0.000000,96.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,18.000000},{0.000000,475.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_SimpleText" Name="Cumulative_Appearance_TextTips">
+          <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,48.000000}}"/>
+          <Property Name="Text" Value="#{LJSZ_250808_15}"/>
+          <Property Name="Visible" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="Cumulative_Appearance_Reward1">
+          <Property Name="UnifiedSize" Value="{{0.000000,95.000000},{0.000000,90.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,142.000000},{0.000000,4.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="Cumulative_Appearance_Text1">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-46.000000},{1.000000,-18.000000}}"/>
+            <Property Name="Text" Value="#{LJSZ_250808_27}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Cumulative_Appearance_Item1">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.000000,0.000000}}"/>
+            <Property Name="PushedImage" Value="set:Cumulative_Appearance2 image:Cumulative_Appearance_B_Pushed"/>
+            <Property Name="NormalImage" Value="set:Cumulative_Appearance2 image:Cumulative_Appearance_B_Normal"/>
+            <Property Name="HoverImage" Value="set:Cumulative_Appearance2 image:Cumulative_Appearance_B_Hover"/>
+            <Property Name="DisabledImage" Value="set:Cumulative_Appearance2 image:Cumulative_Appearance_B_Disable"/>
+            <Property Name="Tooltip" Value="#{LJSZ_250808_16}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Cumulative_Appearance_Reward_OnRewardClick(1)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Cumulative_Appearance_RedDot1">
+              <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-14.000000},{0.000000,20.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Cumulative_Appearance_Received1">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-32.000000},{1.000000,-85.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Cumulative_Appearance2 image:Cumulative_Appearance_B_Open"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+
+        <Window Type="DefaultWindow" Name="Cumulative_Appearance_Reward2">
+          <Property Name="UnifiedSize" Value="{{0.000000,95.000000},{0.000000,90.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,293.000000},{0.000000,4.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="Cumulative_Appearance_Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-46.000000},{1.000000,-18.000000}}"/>
+            <Property Name="Text" Value="#{LJSZ_250808_28}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Cumulative_Appearance_Item2">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-36.000000},{0.000000,0.000000}}"/>
+            <Property Name="PushedImage" Value="set:Cumulative_Appearance2 image:Cumulative_Appearance_B_Pushed"/>
+            <Property Name="NormalImage" Value="set:Cumulative_Appearance2 image:Cumulative_Appearance_B_Normal"/>
+            <Property Name="HoverImage" Value="set:Cumulative_Appearance2 image:Cumulative_Appearance_B_Hover"/>
+            <Property Name="DisabledImage" Value="set:Cumulative_Appearance2 image:Cumulative_Appearance_B_Disable"/>
+            <Property Name="Tooltip" Value="#{LJSZ_250808_17}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Cumulative_Appearance_Reward_OnRewardClick(2)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Cumulative_Appearance_RedDot2">
+              <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-14.000000},{0.000000,20.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Cumulative_Appearance_Received2">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-36.000000},{1.000000,-85.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Cumulative_Appearance2 image:Cumulative_Appearance_B_Open"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+
+        <Window Type="DefaultWindow" Name="Cumulative_Appearance_Reward3">
+          <Property Name="UnifiedSize" Value="{{0.000000,135.000000},{0.000000,90.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,4.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="Cumulative_Appearance_Text3">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-46.000000},{1.000000,-18.000000}}"/>
+            <Property Name="Text" Value="#{LJSZ_250808_29}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Cumulative_Appearance_Item3">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-36.000000},{0.000000,0.000000}}"/>
+            <Property Name="PushedImage" Value="set:Cumulative_Appearance2 image:Cumulative_Appearance_B_Pushed"/>
+            <Property Name="NormalImage" Value="set:Cumulative_Appearance2 image:Cumulative_Appearance_B_Normal"/>
+            <Property Name="HoverImage" Value="set:Cumulative_Appearance2 image:Cumulative_Appearance_B_Hover"/>
+            <Property Name="DisabledImage" Value="set:Cumulative_Appearance2 image:Cumulative_Appearance_B_Disable"/>
+            <Property Name="Tooltip" Value="#{LJSZ_250808_18}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Cumulative_Appearance_Reward_OnRewardClick(3)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Cumulative_Appearance_RedDot3">
+              <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-14.000000},{0.000000,20.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Cumulative_Appearance_Received3">
+            <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,60.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-36.000000},{1.000000,-85.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Cumulative_Appearance2 image:Cumulative_Appearance_B_Open"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Cumulative_Appearance_Reward3_Preview">
+            <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,54.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,4.000000}}"/>
+            <Property Name="PushedImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Preview2_Pushed"/>
+            <Property Name="NormalImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Preview2_Normal"/>
+            <Property Name="HoverImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Preview2_Hover"/>
+            <Property Name="DisabledImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Preview2_Disabled"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Event Name="Clicked" Function="Cumulative_Appearance_OnView(4);"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Cumulative_Appearance_Content_PreviewBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,450.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,0.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Cumulative_Appearance_PreviewImg1">
+          <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,204.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,152.000000}}"/>
+          <Property Name="Image" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_YQ_DAO"/>
+          <Window Type="TLBB_ButtonNULL" Name="Cumulative_Appearance_Info_Preview1">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{1.000000,-42.000000}}"/>
+            <Property Name="PushedImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Preview_Pushed"/>
+            <Property Name="NormalImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Preview_Normal"/>
+            <Property Name="HoverImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Preview_Hover"/>
+            <Property Name="DisabledImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Preview_Disabled"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Cumulative_Appearance_OnView(1);"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Cumulative_Appearance_PreviewImg2">
+          <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,204.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,192.000000},{0.000000,62.000000}}"/>
+          <Property Name="Image" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_YQ_REN"/>
+          <Window Type="TLBB_ButtonNULL" Name="Cumulative_Appearance_Info_Preview2">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{1.000000,-60.000000}}"/>
+            <Property Name="PushedImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Preview_Pushed"/>
+            <Property Name="NormalImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Preview_Normal"/>
+            <Property Name="HoverImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Preview_Hover"/>
+            <Property Name="DisabledImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Preview_Disabled"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Cumulative_Appearance_OnView(2);"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Cumulative_Appearance_PreviewImg3">
+          <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,204.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,662.000000},{0.000000,160.000000}}"/>
+          <Property Name="Image" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_YQ_NIAO"/>
+          <Window Type="TLBB_ButtonNULL" Name="Cumulative_Appearance_Info_Preview3">
+            <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{1.000000,-60.000000}}"/>
+            <Property Name="PushedImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Preview_Pushed"/>
+            <Property Name="NormalImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Preview_Normal"/>
+            <Property Name="HoverImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Preview_Hover"/>
+            <Property Name="DisabledImage" Value="set:Cumulative_Appearance1 image:Cumulative_Appearance_Preview_Disabled"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Cumulative_Appearance_OnView(3);"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

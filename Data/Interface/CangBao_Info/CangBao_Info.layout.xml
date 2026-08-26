@@ -1,0 +1,560 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="CangBao_Info_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,420.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-260.000000},{0.120000,0.000000}}"/>
+    <Event Name="Hidden" Function="CangBao_Info_Close();" />
+    <Window Type="TLBB_DragTitle" Name="CangBao_Info_DragTitle">
+      <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,11.000000}}"/>
+      <Property Name="DragTarget" Value="CangBao_Info_Frame" />
+      <Window Type="TLBB_SimpleText" Name="CangBao_Info_PageHeader">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{ZDBT_240703_271}" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="CangBao_Info_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*PetJian&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="CangBao_Info_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="CangBao_Info_Close()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="CangBao_Info_Client">
+      <Property Name="AbsolutePosition" Value="x:10.000000 y:35.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_TimeImage">
+        <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:CangBao image:CangBao_Time"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="CangBao_Info_TimeText">
+        <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,8.000000}}"/>
+        <Property Name="Text" Value="#{ZDBT_240703_106}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_StopWatch" Name="CangBao_Info_Time">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,126.000000},{0.000000,8.000000}}"/>
+        <Property Name="Text" Value="00:00"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_MultiColumnList" Name="CangBao_Info_ListTitleClient">
+        <Property Name="UnifiedSize" Value="{{0.000000,490.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,28.000000}}"/>
+        <Property Name="ForceHorzScrollbar" Value="False" />
+        <Property Name="SortSettingEnabled" Value="False" />
+        <Property Name="SelectionMode" Value="RowSingle" />
+        <Property Name="ColumnHeader" Value="text: width:0.39 id:0" />
+        <Property Name="ColumnHeader" Value="text: width:0.25 id:1" />
+        <Property Name="ColumnHeader" Value="text: width:0.36 id:2" />
+        <Property Name="ColumnsSizable" Value="False" />
+        <Property Name="ColumnsMovable" Value="False" />
+        <Property Name="ColumnsAdjust" Value="True" />
+        <Window Type="DefaultWindow" Name="CangBao_Info_ListTitle1">
+          <Property Name="UnifiedSize" Value="{{0.390000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="CangBao_Info_ListTitle1_text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{ZDBT_240703_315}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="CangBao_Info_ListTitle2">
+          <Property Name="UnifiedSize" Value="{{0.25000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.39000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="CangBao_Info_ListTitle2_text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{ZDBT_240703_316}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="CangBao_Info_ListTitle3">
+          <Property Name="UnifiedSize" Value="{{0.360000,0.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.640000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="CangBao_Info_ListTitle3_text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{ZDBT_240703_317}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player1">
+        <Property Name="UnifiedSize" Value="{{0.000000,490.000000},{0.000000,50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,50.000000}}"/>
+        <Property Name="Image" Value="set:CangBao image:CangBao_LittleBK1"/>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player1BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,490.000000},{0.000000,50.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:CangBao image:CangBao_LittleBK2"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player1Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,15.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,154.000000},{0.500000,-8.000000}}"/>
+          <Property Name="Image" Value="set:CangBao image:CangBao_Player"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CangBao_Info_Player1_Item">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{0.500000,-20.000000}}"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player1_Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-20.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CangBao_Info_Player1_Exchange">
+          <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_165}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="CangBao_Info_Player1_ExchangeBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_97}"/>
+          <Event Name="Clicked" Function="CangBao_Info_ExchangeClick(1);"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CangBao_Info_Player1_Exchange2">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,356.000000},{0.500000,-20.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_165}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="CangBao_Info_Player1_OKBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,0.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_98}"/>
+          <Event Name="Clicked" Function="CangBao_Info_AcceptClick(1);"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="CangBao_Info_Player1_GetBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_154}"/>
+          <Event Name="Clicked" Function="CangBao_Info_GetMyAward();"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CangBao_Info_Player1_GetBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,-10.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Text" Value="#{ZDBT_240703_161}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player2">
+        <Property Name="UnifiedSize" Value="{{0.000000,490.000000},{0.000000,50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,102.000000}}"/>
+        <Property Name="Image" Value="set:CangBao image:CangBao_LittleBK1"/>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player2BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,490.000000},{0.000000,50.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:CangBao image:CangBao_LittleBK2"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player2Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,15.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,154.000000},{0.500000,-8.000000}}"/>
+          <Property Name="Image" Value="set:CangBao image:CangBao_Player"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CangBao_Info_Player2_Item">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{0.500000,-20.000000}}"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player2_Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-20.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CangBao_Info_Player2_Exchange">
+          <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_165}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="CangBao_Info_Player2_ExchangeBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_97}"/>
+          <Event Name="Clicked" Function="CangBao_Info_ExchangeClick(2);"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CangBao_Info_Player2_Exchange2">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,356.000000},{0.500000,-20.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_165}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="CangBao_Info_Player2_OKBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,0.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_98}"/>
+          <Event Name="Clicked" Function="CangBao_Info_AcceptClick(2);"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="CangBao_Info_Player2_GetBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_154}"/>
+          <Event Name="Clicked" Function="CangBao_Info_GetMyAward();"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CangBao_Info_Player2_GetBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,-10.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Text" Value="#{ZDBT_240703_161}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player3">
+        <Property Name="UnifiedSize" Value="{{0.000000,490.000000},{0.000000,50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,154.000000}}"/>
+        <Property Name="Image" Value="set:CangBao image:CangBao_LittleBK1"/>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player3BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,490.000000},{0.000000,50.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:CangBao image:CangBao_LittleBK2"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player3Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,15.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,154.000000},{0.500000,-8.000000}}"/>
+          <Property Name="Image" Value="set:CangBao image:CangBao_Player"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CangBao_Info_Player3_Item">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{0.500000,-20.000000}}"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player3_Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-20.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CangBao_Info_Player3_Exchange">
+          <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_165}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="CangBao_Info_Player3_ExchangeBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_97}"/>
+          <Event Name="Clicked" Function="CangBao_Info_ExchangeClick(3);"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CangBao_Info_Player3_Exchange2">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,356.000000},{0.500000,-20.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_165}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="CangBao_Info_Player3_OKBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,0.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_98}"/>
+          <Event Name="Clicked" Function="CangBao_Info_AcceptClick(3);"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="CangBao_Info_Player3_GetBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_154}"/>
+          <Event Name="Clicked" Function="CangBao_Info_GetMyAward();"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CangBao_Info_Player3_GetBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,-10.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Text" Value="#{ZDBT_240703_161}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player4">
+        <Property Name="UnifiedSize" Value="{{0.000000,490.000000},{0.000000,50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,206.000000}}"/>
+        <Property Name="Image" Value="set:CangBao image:CangBao_LittleBK1"/>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player4BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,490.000000},{0.000000,50.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:CangBao image:CangBao_LittleBK2"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player4Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,15.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,154.000000},{0.500000,-8.000000}}"/>
+          <Property Name="Image" Value="set:CangBao image:CangBao_Player"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CangBao_Info_Player4_Item">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{0.500000,-20.000000}}"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player4_Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-20.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CangBao_Info_Player4_Exchange">
+          <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_165}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="CangBao_Info_Player4_ExchangeBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_97}"/>
+          <Event Name="Clicked" Function="CangBao_Info_ExchangeClick(4);"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CangBao_Info_Player4_Exchange2">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,356.000000},{0.500000,-20.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_165}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="CangBao_Info_Player4_OKBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,0.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_98}"/>
+          <Event Name="Clicked" Function="CangBao_Info_AcceptClick(4);"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="CangBao_Info_Player4_GetBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_154}"/>
+          <Event Name="Clicked" Function="CangBao_Info_GetMyAward();"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CangBao_Info_Player4_GetBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,-10.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Text" Value="#{ZDBT_240703_161}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player5">
+        <Property Name="UnifiedSize" Value="{{0.000000,490.000000},{0.000000,50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,258.000000}}"/>
+        <Property Name="Image" Value="set:CangBao image:CangBao_LittleBK1"/>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player5BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,490.000000},{0.000000,50.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:CangBao image:CangBao_LittleBK2"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player5Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,15.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,154.000000},{0.500000,-8.000000}}"/>
+          <Property Name="Image" Value="set:CangBao image:CangBao_Player"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CangBao_Info_Player5_Item">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{0.500000,-20.000000}}"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player5_Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-20.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CangBao_Info_Player5_Exchange">
+          <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_165}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="CangBao_Info_Player5_ExchangeBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_97}"/>
+          <Event Name="Clicked" Function="CangBao_Info_ExchangeClick(5);"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CangBao_Info_Player5_Exchange2">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,356.000000},{0.500000,-20.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_165}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="CangBao_Info_Player5_OKBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,0.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_98}"/>
+          <Event Name="Clicked" Function="CangBao_Info_AcceptClick(5);"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="CangBao_Info_Player5_GetBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_154}"/>
+          <Event Name="Clicked" Function="CangBao_Info_GetMyAward();"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CangBao_Info_Player5_GetBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,-10.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Text" Value="#{ZDBT_240703_161}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player6">
+        <Property Name="UnifiedSize" Value="{{0.000000,490.000000},{0.000000,50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,310.000000}}"/>
+        <Property Name="Image" Value="set:CangBao image:CangBao_LittleBK1"/>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player6BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,490.000000},{0.000000,50.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:CangBao image:CangBao_LittleBK2"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player6Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,15.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,154.000000},{0.500000,-8.000000}}"/>
+          <Property Name="Image" Value="set:CangBao image:CangBao_Player"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="CangBao_Info_Player6_Item">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-12.000000},{0.500000,-20.000000}}"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="CangBao_Info_Player6_Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-20.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CangBao_Info_Player6_Exchange">
+          <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,54.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_165}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="CangBao_Info_Player6_ExchangeBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_97}"/>
+          <Event Name="Clicked" Function="CangBao_Info_ExchangeClick(6);"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CangBao_Info_Player6_Exchange2">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,356.000000},{0.500000,-20.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_165}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="CangBao_Info_Player6_OKBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,0.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_98}"/>
+          <Event Name="Clicked" Function="CangBao_Info_AcceptClick(6);"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="CangBao_Info_Player6_GetBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{ZDBT_240703_154}"/>
+          <Event Name="Clicked" Function="CangBao_Info_GetMyAward();"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CangBao_Info_Player6_GetBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,372.000000},{0.500000,-10.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Text" Value="#{ZDBT_240703_161}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

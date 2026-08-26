@@ -1,0 +1,1609 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame2" Name="CJ_Shop_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,698.000000},{0.0000000,472.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-349.000000},{0.500000,-226.000000}}"/>
+    <Event Name="Hidden" Function="CJ_Shop_Hidden();" />
+    <Window Type="TLBB_DragTitle" Name="CJ_Shop_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,26.000000}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,0.000000}}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="Text" Value="#{TLCJ_20240709_331}" />
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="CJ_Shop_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="CJ_Shop_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}}"/>
+      <Event Name="Clicked" Function="CJ_Shop_CloseShop();"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="CJ_Shop_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+      <Event Name="Clicked" Function="Helper:GotoHelper('*ArmorGem_Gilding');"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="CJ_Shop_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-38.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,29.000000}}"/>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="CJ_Shop_InfoBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{0.000000,76.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,5.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_SimpleText" Name="CJ_Shop_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Text" Value="#{TLCJ_20240709_332}" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="CJ_Shop_ItemClient">
+        <Property Name="UnifiedSize" Value="{{0.000000,678.000000},{0.000000,310.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,86.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="DefaultWindow" Name="CJ_Shop_ItemList">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="MultiColumn" Value="1"/>
+          <Property Name="VScrollMode" Value="Hide"/>
+          <Window Type="DefaultWindow" Name="CJ_Shop_Item1Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,226.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_Frame_Lace3" Name="CJ_Shop_Item1BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-2.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="CJ_Shop_Item1">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                <Event Name="Clicked" Function="CJ_Shop_Clicked(1);"/>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item1_BuyLimitNumBK">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item1_BuyLimitNum">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                    <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item1_Mask">
+                  <Property Name="Visible" Value="False"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+              <Window Type="DefaultWindow" Name="CJ_Shop_Item1Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item1Text">
+                  <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_320}"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item1Info_WeekLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item1Info_ForeverLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Discount"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item1Info_ForeverLimitText">
+                    <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,18.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Text" Value="#{TLCJ_250319_29}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item1Info_DayLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item1Info_CostNum">
+                  <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{1.000000,-26.000000}}"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item1Info_CostyIcon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_SilverCoin"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item1Info_CostyIcon2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_GoldCoin"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="CJ_Shop_Item2Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,226.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,226.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_Frame_Lace3" Name="CJ_Shop_Item2BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-2.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="CJ_Shop_Item2">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                <Event Name="Clicked" Function="CJ_Shop_Clicked(2);"/>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item2_BuyLimitNumBK">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item2_BuyLimitNum">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                    <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item2_Mask">
+                  <Property Name="Visible" Value="False"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+              <Window Type="DefaultWindow" Name="CJ_Shop_Item2Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item2Text">
+                  <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_320}"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item2Info_ForeverLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Discount"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item2Info_ForeverLimitText">
+                    <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,18.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Text" Value="#{TLCJ_250319_29}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item2Info_DayLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item2Info_WeekLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item2Info_CostNum">
+                  <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{1.000000,-26.000000}}"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item2Info_CostyIcon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_SilverCoin"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item2Info_CostyIcon2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_GoldCoin"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="CJ_Shop_Item3Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,226.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,452.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_Frame_Lace3" Name="CJ_Shop_Item3BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-2.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="CJ_Shop_Item3">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                <Event Name="Clicked" Function="CJ_Shop_Clicked(3);"/>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item3_BuyLimitNumBK">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item3_BuyLimitNum">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                    <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item3_Mask">
+                  <Property Name="Visible" Value="False"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+              <Window Type="DefaultWindow" Name="CJ_Shop_Item3Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item3Text">
+                  <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_320}"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item3Info_ForeverLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Discount"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item3Info_ForeverLimitText">
+                    <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,18.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Text" Value="#{TLCJ_250319_29}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item3Info_DayLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item3Info_WeekLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item3Info_CostNum">
+                  <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{1.000000,-26.000000}}"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item3Info_CostyIcon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_SilverCoin"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item3Info_CostyIcon2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_GoldCoin"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="CJ_Shop_Item4Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,226.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,62.000000}}"/>
+            <Window Type="TLBB_Frame_Lace3" Name="CJ_Shop_Item4BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-2.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="CJ_Shop_Item4">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                <Event Name="Clicked" Function="CJ_Shop_Clicked(4);"/>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item4_BuyLimitNumBK">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item4_BuyLimitNum">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                    <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item4_Mask">
+                  <Property Name="Visible" Value="False"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+              <Window Type="DefaultWindow" Name="CJ_Shop_Item4Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item4Text">
+                  <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_320}"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item4Info_ForeverLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Discount"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item4Info_ForeverLimitText">
+                    <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,18.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Text" Value="#{TLCJ_250319_29}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item4Info_DayLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item4Info_WeekLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item4Info_CostNum">
+                  <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{1.000000,-26.000000}}"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item4Info_CostyIcon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_SilverCoin"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item4Info_CostyIcon2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_GoldCoin"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="CJ_Shop_Item5Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,226.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,226.000000},{0.000000,62.000000}}"/>
+            <Window Type="TLBB_Frame_Lace3" Name="CJ_Shop_Item5BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-2.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="CJ_Shop_Item5">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                <Event Name="Clicked" Function="CJ_Shop_Clicked(5);"/>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item5_BuyLimitNumBK">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item5_BuyLimitNum">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                    <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item5_Mask">
+                  <Property Name="Visible" Value="False"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+              <Window Type="DefaultWindow" Name="CJ_Shop_Item5Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item5Text">
+                  <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_320}"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item5Info_ForeverLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Discount"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item5Info_ForeverLimitText">
+                    <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,18.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Text" Value="#{TLCJ_250319_29}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item5Info_DayLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item5Info_WeekLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item5Info_CostNum">
+                  <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{1.000000,-26.000000}}"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item5Info_CostyIcon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_SilverCoin"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item5Info_CostyIcon2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_GoldCoin"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="CJ_Shop_Item6Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,226.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,452.000000},{0.000000,62.000000}}"/>
+            <Window Type="TLBB_Frame_Lace3" Name="CJ_Shop_Item6BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-2.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="CJ_Shop_Item6">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                <Event Name="Clicked" Function="CJ_Shop_Clicked(6);"/>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item6_BuyLimitNumBK">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item6_BuyLimitNum">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                    <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item6_Mask">
+                  <Property Name="Visible" Value="False"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+              <Window Type="DefaultWindow" Name="CJ_Shop_Item6Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item6Text">
+                  <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_320}"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item6Info_ForeverLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Discount"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item6Info_ForeverLimitText">
+                    <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,18.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Text" Value="#{TLCJ_250319_29}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item6Info_DayLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item6Info_WeekLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item6Info_CostNum">
+                  <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{1.000000,-26.000000}}"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item6Info_CostyIcon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_SilverCoin"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item6Info_CostyIcon2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_GoldCoin"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="CJ_Shop_Item7Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,226.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,124.000000}}"/>
+            <Window Type="TLBB_Frame_Lace3" Name="CJ_Shop_Item7BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-2.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="CJ_Shop_Item7">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                <Event Name="Clicked" Function="CJ_Shop_Clicked(7);"/>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item7_BuyLimitNumBK">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item7_BuyLimitNum">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                    <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item7_Mask">
+                  <Property Name="Visible" Value="False"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+              <Window Type="DefaultWindow" Name="CJ_Shop_Item7Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item7Text">
+                  <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_320}"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item7Info_ForeverLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Discount"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item7Info_ForeverLimitText">
+                    <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,18.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Text" Value="#{TLCJ_250319_29}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item7Info_DayLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item7Info_WeekLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item7Info_CostNum">
+                  <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{1.000000,-26.000000}}"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item7Info_CostyIcon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_SilverCoin"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item7Info_CostyIcon2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_GoldCoin"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="CJ_Shop_Item8Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,226.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,226.000000},{0.000000,124.000000}}"/>
+            <Window Type="TLBB_Frame_Lace3" Name="CJ_Shop_Item8BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-2.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="CJ_Shop_Item8">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                <Event Name="Clicked" Function="CJ_Shop_Clicked(8);"/>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item8_BuyLimitNumBK">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item8_BuyLimitNum">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                    <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item8_Mask">
+                  <Property Name="Visible" Value="False"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+              <Window Type="DefaultWindow" Name="CJ_Shop_Item8Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item8Text">
+                  <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_320}"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item8Info_ForeverLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Discount"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item8Info_ForeverLimitText">
+                    <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,18.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Text" Value="#{TLCJ_250319_29}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item8Info_DayLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item8Info_WeekLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item8Info_CostNum">
+                  <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{1.000000,-26.000000}}"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item8Info_CostyIcon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_SilverCoin"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item8Info_CostyIcon2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_GoldCoin"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="CJ_Shop_Item9Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,226.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,452.000000},{0.000000,124.000000}}"/>
+            <Window Type="TLBB_Frame_Lace3" Name="CJ_Shop_Item9BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-2.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="CJ_Shop_Item9">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                <Event Name="Clicked" Function="CJ_Shop_Clicked(9);"/>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item9_BuyLimitNumBK">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item9_BuyLimitNum">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                    <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item9_Mask">
+                  <Property Name="Visible" Value="False"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+              <Window Type="DefaultWindow" Name="CJ_Shop_Item9Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item9Text">
+                  <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_320}"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item9Info_ForeverLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Discount"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item9Info_ForeverLimitText">
+                    <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,18.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Text" Value="#{TLCJ_250319_29}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item9Info_DayLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item9Info_WeekLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item9Info_CostNum">
+                  <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{1.000000,-26.000000}}"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item9Info_CostyIcon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_SilverCoin"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item9Info_CostyIcon2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_GoldCoin"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="CJ_Shop_Item10Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,226.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,186.000000}}"/>
+            <Window Type="TLBB_Frame_Lace3" Name="CJ_Shop_Item10BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-2.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="CJ_Shop_Item10">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                <Event Name="Clicked" Function="CJ_Shop_Clicked(10);"/>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item10_BuyLimitNumBK">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item10_BuyLimitNum">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                    <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item10_Mask">
+                  <Property Name="Visible" Value="False"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+              <Window Type="DefaultWindow" Name="CJ_Shop_Item10Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item10Text">
+                  <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_320}"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item10Info_ForeverLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Discount"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item10Info_ForeverLimitText">
+                    <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,18.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Text" Value="#{TLCJ_250319_29}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item10Info_DayLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item10Info_WeekLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item10Info_CostNum">
+                  <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{1.000000,-26.000000}}"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item10Info_CostyIcon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_SilverCoin"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item10Info_CostyIcon2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_GoldCoin"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="CJ_Shop_Item11Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,226.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,226.000000},{0.000000,186.000000}}"/>
+            <Window Type="TLBB_Frame_Lace3" Name="CJ_Shop_Item11BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-2.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="CJ_Shop_Item11">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                <Event Name="Clicked" Function="CJ_Shop_Clicked(11);"/>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item11_BuyLimitNumBK">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item11_BuyLimitNum">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                    <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item11_Mask">
+                  <Property Name="Visible" Value="False"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+              <Window Type="DefaultWindow" Name="CJ_Shop_Item11Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item11Text">
+                  <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_320}"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item11Info_ForeverLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Discount"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item11Info_ForeverLimitText">
+                    <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,18.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Text" Value="#{TLCJ_250319_29}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item11Info_DayLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item11Info_WeekLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item11Info_CostNum">
+                  <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{1.000000,-26.000000}}"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item11Info_CostyIcon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_SilverCoin"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item11Info_CostyIcon2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_GoldCoin"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="CJ_Shop_Item12Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,226.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,452.000000},{0.000000,186.000000}}"/>
+            <Window Type="TLBB_Frame_Lace3" Name="CJ_Shop_Item12BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-2.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="CJ_Shop_Item12">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                <Event Name="Clicked" Function="CJ_Shop_Clicked(12);"/>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item12_BuyLimitNumBK">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item12_BuyLimitNum">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                    <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item12_Mask">
+                  <Property Name="Visible" Value="False"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+              <Window Type="DefaultWindow" Name="CJ_Shop_Item12Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item12Text">
+                  <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_320}"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item12Info_ForeverLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Discount"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item12Info_ForeverLimitText">
+                    <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,18.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Text" Value="#{TLCJ_250319_29}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item12Info_DayLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item12Info_WeekLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item12Info_CostNum">
+                  <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{1.000000,-26.000000}}"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item12Info_CostyIcon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_SilverCoin"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item12Info_CostyIcon2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_GoldCoin"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="CJ_Shop_Item13Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,226.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,248.000000}}"/>
+            <Window Type="TLBB_Frame_Lace3" Name="CJ_Shop_Item13BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-2.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="CJ_Shop_Item13">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                <Event Name="Clicked" Function="CJ_Shop_Clicked(13);"/>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item13_BuyLimitNumBK">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item13_BuyLimitNum">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                    <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item13_Mask">
+                  <Property Name="Visible" Value="False"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+              <Window Type="DefaultWindow" Name="CJ_Shop_Item13Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item13Text">
+                  <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_320}"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item13Info_ForeverLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Discount"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item13Info_ForeverLimitText">
+                    <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,18.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Text" Value="#{TLCJ_250319_29}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item13Info_DayLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item13Info_WeekLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item13Info_CostNum">
+                  <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{1.000000,-26.000000}}"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item13Info_CostyIcon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_SilverCoin"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item13Info_CostyIcon2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_GoldCoin"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="CJ_Shop_Item14Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,226.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,226.000000},{0.000000,248.000000}}"/>
+            <Window Type="TLBB_Frame_Lace3" Name="CJ_Shop_Item14BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-2.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="CJ_Shop_Item14">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                <Event Name="Clicked" Function="CJ_Shop_Clicked(14);"/>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item14_BuyLimitNumBK">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item14_BuyLimitNum">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                    <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item14_Mask">
+                  <Property Name="Visible" Value="False"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+              <Window Type="DefaultWindow" Name="CJ_Shop_Item14Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item14Text">
+                  <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_320}"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item14Info_ForeverLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Discount"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item14Info_ForeverLimitText">
+                    <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,18.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Text" Value="#{TLCJ_250319_29}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item14Info_DayLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item14Info_WeekLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item14Info_CostNum">
+                  <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{1.000000,-26.000000}}"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item14Info_CostyIcon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_SilverCoin"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item14Info_CostyIcon2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_GoldCoin"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="CJ_Shop_Item15Frame">
+            <Property Name="UnifiedSize" Value="{{0.000000,226.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,452.000000},{0.000000,248.000000}}"/>
+            <Window Type="TLBB_Frame_Lace3" Name="CJ_Shop_Item15BK">
+              <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-2.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="CJ_Shop_Item15">
+                <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-24.000000}}"/>
+                <Event Name="Clicked" Function="CJ_Shop_Clicked(15);"/>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item15_BuyLimitNumBK">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item15_BuyLimitNum">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                    <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item15_Mask">
+                  <Property Name="Visible" Value="False"/>
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+                </Window>
+              </Window>
+              <Window Type="DefaultWindow" Name="CJ_Shop_Item15Info">
+                <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item15Text">
+                  <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,6.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_320}"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item15Info_ForeverLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Discount"/>
+                  <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item15Info_ForeverLimitText">
+                    <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,18.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Text" Value="#{TLCJ_250319_29}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+                  </Window>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item15Info_DayLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Day"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item15Info_WeekLimit">
+                  <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="CJ_Shop_Item15Info_CostNum">
+                  <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,18.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{1.000000,-26.000000}}"/>
+                  <Property Name="Text" Value="#{TLCJ_20240709_325}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item15Info_CostyIcon">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_SilverCoin"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_Item15Info_CostyIcon2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.00000,-28.000000}}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="Image" Value="set:CJ_Image image:CJ_GoldCoin"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="CJ_Shop_BottomClient">
+        <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-30.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_CurrencyIcon1">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Tooltip" Value="#{TLCJ_20240709_336}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:CJ_Image image:CJ_SilverCoin"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CJ_Shop_Currency1">
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,32.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{TLCJ_20240709_341}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="CJ_Shop_CurrencyIcon2">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,175.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Tooltip" Value="#{TLCJ_20240709_362}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:CJ_Image image:CJ_GoldCoin"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="CJ_Shop_Currency2">
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,198.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{TLCJ_20240709_364}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon2" Name="CJ_Shop_UpPage">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,142.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{FMSD_220705_22}" />
+          <Event Name="Clicked" Function="CJ_Shop_PageUp();"/>
+          <Property Name="Visible" Value="False"/>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="CJ_Shop_CurrentlyPage">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,197.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{FMSD_220705_24}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Visible" Value="False"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon2" Name="CJ_Shop_DownPage">
+          <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,262.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{FMSD_220705_23}" />
+          <Event Name="Clicked" Function="CJ_Shop_PageDown();"/>
+          <Property Name="Visible" Value="False"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

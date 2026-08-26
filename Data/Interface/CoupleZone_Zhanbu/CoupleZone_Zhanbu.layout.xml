@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection2" Name="CoupleZone_Zhanbu_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,450.000000},{0.000000,326.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-225.000000},{0.500000,-163.000000}}"/>
+    <Event Name="Hidden" Function="CoupleZone_Zhanbu_OnHidden()"/>
+    <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_Zhanbu_MainFrame">
+      <Property Name="UnifiedSize" Value="{{0.000000,438.000000},{0.000000,304.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,5.000000}}"/>
+      <Property Name="Image" Value="set:CoupleZone3 image:Zhanbu_BK"/>
+      <Window Type="TLBB_DragTitle" Name="CoupleZone_Zhanbu_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-79.000000},{0.000000,78.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,29.000000},{0.000000,5.000000}}"/>
+        <Property Name="DragTarget" Value="CoupleZone_Zhanbu_Frame"/>
+      </Window>
+      <Window Type="TLBB_ButtonClose" Name="CoupleZone_Zhanbu_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,10.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="CoupleZone_Zhanbu_OnClose()" />
+      </Window>
+      <Window Type="TLBB_Animate" Name="CoupleZone_Zhanbu_Animate">
+        <Property Name="UnifiedSize" Value="{{0.000000,62.000000},{0.000000,122.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-31.000000},{0.500000,-80.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Animate" Value="JiCheShen_Chou"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_Zhanbu_Result">
+        <Property Name="UnifiedSize" Value="{{0.000000,154.000000},{0.000000,58.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-77.000000},{0.000000,22.000000}}"/>
+        <Property Name="Image" Value="set:CoupleZone3 image:Zhanbu_Image1"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>    
+      <Window Type="TLBB_SimpleText" Name="CoupleZone_Zhanbu_Text2">
+        <Property Name="VertFormatting" Value="TopAligned"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,120.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,130.000000}}"/>
+        <Property Name="Text" Value="#{QLKJ_230331_43}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>           
+    </Window>
+  </Window>
+</GUILayout>

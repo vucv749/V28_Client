@@ -1,0 +1,144 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="SelectFacestyle_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,480.000000},{0.000000,350.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-240.000000},{0.500000,-175.000000}}"/>
+    <Event Name="Hidden" Function="SelectFacestyle_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="SelectFacestyle_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,10.000000}}"/>
+      <Property Name="DragTarget" Value="SelectFacestyle_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{INTERFACE_XML_981}" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="SelectFacestyle_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*SelectFacestyle&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="SelectFacestyle_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="SelectFacestyle_OnClose()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="SelectFacestyle_Function_Frame">
+      <Property Name="AbsolutePosition" Value="x:7.000000 y:32.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-41.000000}" />
+      <Window Type="TLBB_FramePlayerOther" Name="SelectFacestyle_Model_Frame">
+        <Property Name="UnifiedSize" Value="{{0.500000,0.000000},{0.000000,260.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,10.000000}}"/>
+        <Window Type="TLBB_MeshWindow" Name="SelectFacestyle_Model">
+          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{1.000000,-15.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,5.000008}}"/>
+          <Property Name="ShowControl" Value="SelectFacestyle_Frame" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_ButtonTurnLeft" Name="SelectFacestyle_Model_TurnLeft">
+          <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-61.000000},{1.000000,-40.000000}}"/>
+          <Event Name="MouseButtonDown" Function="SelectFacestyle_Modle_TurnLeft(1);" />
+          <Event Name="MouseButtonUp" Function="SelectFacestyle_Modle_TurnLeft(0);" />
+        </Window>
+        <Window Type="TLBB_ButtonTurnRight" Name="SelectFacestyle_Model_TurnRight">
+          <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,39.000000},{1.000000,-40.000000}}"/>
+          <Event Name="MouseButtonDown" Function="SelectFacestyle_Modle_TurnRight(1);" />
+          <Event Name="MouseButtonUp" Function="SelectFacestyle_Modle_TurnRight(0);" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_NotSuperList" Name="SelectFacestyle_StyleList">
+        <Property Name="UnifiedSize" Value="{{0.000000,216.000000},{0.000000,184.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-222.000000},{0.000000,5.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="MultiColumn" Value="1" />
+        <Window Type="TLBB_NotSuperListItemCommon3" Name="SelectFacestyle_SuperListItem">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+          <Window Type="TLBB_ActionButton" Name="SelectFacestyle_SuperListItemAction">
+            <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,38.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,0.000000}}"/>
+            <Property Name="Empty" Value="False" />
+            <Property Name="UseDefaultTooltip" Value="True" />
+            <Window Type="TLBB_StaticImageNULL" Name="SelectFacestyle_SuperListItemActionMask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseLButtonHollow" Value="true" />
+              <Property Name="MouseRButtonHollow" Value="true" />
+              <Property Name="MouseMoveHollow" Value="true" />
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectFacestyle_SuperListItemActionLock">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:CommonFrame8 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectFacestyle_SuperListItemActionDef">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_zhuangebi"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="SelectFacestyle_SuperListItemActionTry">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:DressBox image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="SelectFacestyle_WarningText">
+        <Property Name="UnifiedSize" Value="{{1.000000,-250.000000},{1.00000,-240.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,245.000000},{0.000000,208.000000}}"/>
+        <Property Name="Text" Value="#{INTERFACE_XML_1013}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="SelectFacestyle_Blank">
+        <Property Name="UnifiedSize" Value="{{1.000000,-85.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-30.000000}}"/>
+        <Window Type="TLBB_ButtonCheck" Name="SelectFacestyle_Blank_Queren">
+          <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="SelectFacestyle_YB_Clicked()" />
+          <Event Name="MouseButtonUp" Function="SelectFacestyle_YB_MouseButtonUp()"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="SelectFacestyle_Blank_Queren_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,85.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,1.000000}}"/>
+          <Property Name="Text" Value="#{KJXF_161121_01}"/>
+          <Property Name="Tooltip" Value="#{KJXF_161121_07}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="SelectFacestyle_Accept">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-83.000000},{1.000000,-30.000000}}"/>
+        <Property Name="Text" Value="#{INTERFACE_XML_557}" />
+        <Event Name="Clicked" Function="SelectFacestyle_OK_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="SelectFacestyle_Cancel">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-43.000000},{1.000000,-30.000000}}"/>
+        <Property Name="Text" Value="#{INTERFACE_XML_542}" />
+        <Event Name="Clicked" Function="SelectFacestyle_OnCancel()" />
+      </Window>
+      <Window Type="TLBB_Frame_Lace3" Name="SelectFacestyle_Blankbox">
+        <Property Name="UnifiedSize" Value="{{1.000000,-245.000000},{0.000000,13.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,244.000000},{0.000000,192.000000}}"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

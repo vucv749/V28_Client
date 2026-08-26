@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Peak_Guide_Time_Frame">
+    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+    <Property Name="MouseRButtonHollow" Value="True"/>
+    <Property Name="MouseMoveHollow" Value="True"/>
+    <Property Name="MouseLButtonHollow" Value="True"/>
+    <Property Name="MouseHollow" Value="True"/>
+    <Property Name="RiseOnClick" Value="False"/>
+    <Window Type="TLBB_Animate" Name="Peak_Guide_Time_Animate">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="Animate" Value="Animate_PKWarning_Y"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="Peak_Guide_Time_ImageBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,666.000000},{0.000000,60.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-333.000000},{0.500000,-320.000000}}"/>
+      <Property Name="Image" Value="set:WangQianChen image:TishiBK"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Window Type="TLBB_SimpleText" Name="Peak_Guide_Time_Text">
+        <Property Name="VertFormatting" Value="TopAligned"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,33.000000}}"/>
+        <Property Name="Text" Value="#{DFYD_250716_225}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="Font" Value="YouYuan9.75"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+      <Window Type="TLBB_StopWatch" Name="Peak_Guide_Time_Text2">
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,35.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,346.000000},{0.000000,25.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="00:00"/>
+        <Property Name="Font" Value="YouYuan18"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Event Name="ReachedZero" Function="Peak_Guide_Time_TimeOut()"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

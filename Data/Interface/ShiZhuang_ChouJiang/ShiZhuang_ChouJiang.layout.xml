@@ -1,0 +1,263 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="ShiZhuang_ChouJiang_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,689.000000},{0.000000,479.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-350.000000},{0.500000,-244.000000}}"/>
+    <Event Name="Hidden" Function="ShiZhuang_ChouJiang_OnHidden()"/>
+    <Window Type="TLBB_HeroTitle01" Name="ShiZhuang_ChouJiang_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,314.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-157.500000},{0.000000,-2.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="ShiZhuang_ChouJiang_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Text" Value="#{JLTJ_230320_08}" />
+      <Property Name="DragTarget" Value="ShiZhuang_ChouJiang_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="ShiZhuang_ChouJiang_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.000000,9.000000}}"/>
+      <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+      <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
+      <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
+      <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+      <Event Name="Clicked" Function="ShiZhuang_ChouJiang_CloseClicked();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="ShiZhuang_ChouJiang_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+      <Property Name="RiseOnClick" Value="False" />
+      <Window Type="TLBB_StaticImageNULL" Name="ShiZhuang_ChouJiang_Image">
+        <Property Name="UnifiedSize" Value="{{0.000000,681.000000},{0.000000,447.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-681.000000},{1.000000,-447.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:ShiZhuang_ChouJiang2 image:ShiZhuang_ZhenShou"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="ShiZhuang_ChouJiang_InfoBK1">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,138.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-520.000000},{1.000000,-138.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:ShiZhuang_ChouJiang2 image:ShiZhuangBK3_1"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="ShiZhuang_ChouJiang_InfoBK2">
+        <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,138.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-220.000000},{1.000000,-138.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:ShiZhuang_ChouJiang2 image:ShiZhuangBK3_2"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShiZhuang_ChouJiang_Frame_Text">
+        <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,80.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,2.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="Text" Value="#{JLTJ_230320_09}"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="ShiZhuang_ChouJiang_ALLBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,187.000000},{0.000000,280.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,120.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ButtonCheckNULL" Name="ShiZhuang_ChouJiang_Btn1">
+          <Property Name="UnifiedSize" Value="{{0.000000,187.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Property Name="PushedImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn54push"/>
+          <Property Name="NormalImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn54Normal"/>
+          <Property Name="HoverImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn54push"/>
+          <Property Name="DisabledImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn54Normal"/>
+          <Event Name="MouseLButtonDown" Function="ShiZhuang_ChouJiang_Select_Lottery(1)"/>
+          <Window Type="TLBB_SimpleText" Name="ShiZhuang_ChouJiang_Title1Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{JLTJ_230320_18}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="ShiZhuang_ChouJiang_Btn2">
+          <Property Name="UnifiedSize" Value="{{0.000000,187.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,40.000000}}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Property Name="PushedImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn55push"/>
+          <Property Name="NormalImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn55Normal"/>
+          <Property Name="HoverImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn55push"/>
+          <Property Name="DisabledImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn55Normal"/>
+          <Event Name="MouseLButtonDown" Function="ShiZhuang_ChouJiang_Select_Lottery(2)"/>
+          <Window Type="TLBB_SimpleText" Name="ShiZhuang_ChouJiang_Title2Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{JLTJ_230320_18}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="ShiZhuang_ChouJiang_Btn3">
+          <Property Name="UnifiedSize" Value="{{0.000000,187.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,80.000000}}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Property Name="PushedImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn56push"/>
+          <Property Name="NormalImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn56Normal"/>
+          <Property Name="HoverImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn56push"/>
+          <Property Name="DisabledImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn56Normal"/>
+          <Event Name="MouseLButtonDown" Function="ShiZhuang_ChouJiang_Select_Lottery(3)"/>
+          <Window Type="TLBB_SimpleText" Name="ShiZhuang_ChouJiang_Title3Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{JLTJ_230320_18}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="ShiZhuang_ChouJiang_Btn4">
+          <Property Name="UnifiedSize" Value="{{0.000000,187.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,120.000000}}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Property Name="PushedImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn57push"/>
+          <Property Name="NormalImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn57Normal"/>
+          <Property Name="HoverImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn57push"/>
+          <Property Name="DisabledImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn57Normal"/>
+          <Event Name="MouseLButtonDown" Function="ShiZhuang_ChouJiang_Select_Lottery(4)"/>
+          <Window Type="TLBB_SimpleText" Name="ShiZhuang_ChouJiang_Title4Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{JLTJ_230320_18}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="ShiZhuang_ChouJiang_Btn5">
+          <Property Name="UnifiedSize" Value="{{0.000000,187.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,160.000000}}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Property Name="PushedImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn58push"/>
+          <Property Name="NormalImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn58Normal"/>
+          <Property Name="HoverImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn58push"/>
+          <Property Name="DisabledImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn58Normal"/>
+          <Event Name="MouseLButtonDown" Function="ShiZhuang_ChouJiang_Select_Lottery(5)"/>
+          <Window Type="TLBB_SimpleText" Name="ShiZhuang_ChouJiang_Title5Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{JLTJ_230320_18}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="ShiZhuang_ChouJiang_Btn6">
+          <Property Name="UnifiedSize" Value="{{0.000000,187.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,200.000000}}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Property Name="PushedImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn59push"/>
+          <Property Name="NormalImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn59Normal"/>
+          <Property Name="HoverImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn59push"/>
+          <Property Name="DisabledImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn59Normal"/>
+          <Event Name="MouseLButtonDown" Function="ShiZhuang_ChouJiang_Select_Lottery(6)"/>
+          <Window Type="TLBB_SimpleText" Name="ShiZhuang_ChouJiang_Title6Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{JLTJ_230320_18}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="ShiZhuang_ChouJiang_Btn7">
+          <Property Name="UnifiedSize" Value="{{0.000000,187.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,240.000000}}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Property Name="PushedImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn510push"/>
+          <Property Name="NormalImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn510Normal"/>
+          <Property Name="HoverImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn510push"/>
+          <Property Name="DisabledImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn510Normal"/>
+          <Event Name="MouseLButtonDown" Function="ShiZhuang_ChouJiang_Select_Lottery(7)"/>
+          <Window Type="TLBB_SimpleText" Name="ShiZhuang_ChouJiang_Title7Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{JLTJ_230320_18}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ShiZhuang_ChouJiang_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,-190.000000},{0.000000,354.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0000,190.000000},{0.000000,90.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="ShiZhuang_ChouJiang_Bonus_Item">
+          <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,134.000000},{0.000000,255.000000}}"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="ShiZhuang_ChouJiang_Preview_Btn">
+          <Property Name="UnifiedSize" Value="{{0.000000,63.000000},{0.000000,63.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-70.000000},{0.000000,114.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="PushedImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn5Push"/>
+          <Property Name="NormalImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn5Normal"/>
+          <Property Name="HoverImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn5Hover"/>
+          <Property Name="DisabledImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn5Dis"/>
+          <Event Name="Clicked" Function="ShiZhuang_ChouJiang_Preview()" />
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="ShiZhuang_ChouJiang_Do_Btn">
+          <Property Name="UnifiedSize" Value="{{0.000000,143.000000},{0.000000,29.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,196.000000},{0.000000,310.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="PushedImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn3push"/>
+          <Property Name="NormalImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn3Normal"/>
+          <Property Name="HoverImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn3Hover"/>
+          <Property Name="DisabledImage" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_btn3Dis"/>
+          <Event Name="Clicked" Function="ShiZhuang_ChouJiang_DoClicked();" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ShiZhuang_ChouJiang_Get_Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,163.000000},{0.000000,25.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,186.000000},{0.000000,310.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuangGet"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ShiZhuang_ChouJiang_Not_Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,163.000000},{0.000000,25.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,186.000000},{0.000000,310.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuangNot"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ShiZhuang_ChouJiang_Wait_Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,163.000000},{0.000000,25.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,186.000000},{0.000000,310.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuangWait"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShiZhuang_ChouJiang_NumText">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,274.000000},{0.000000,268.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="Text" Value="#{JLTJ_230320_10}"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ShiZhuang_ChouJiang_Result_Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,55.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-144.000000},{0.000000,248.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:ShiZhuang_ChouJiang1 image:ShiZhuang_ChouJiangGet"/>         
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Frozen2" Name="Frozen_GeCao_Rest_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,237.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-314.000000},{1.000000,-256.000000}}"/>
+      <Window Type="DefaultWindow" Name="Frozen_GeCao_Rest_DragTitleBK">
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,19.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.000000,3.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+    <Window Type="TLBB_DragTitle" Name="Frozen_GeCao_Rest_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-48.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,2.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{BXDR_20240920_51}" />
+      <Property Name="DragTarget" Value="Frozen_GeCao_Rest_Frame" />
+    </Window>  
+    <Window Type="DefaultWindow" Name="Frozen_GeCao_Rest_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,24.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_Frame_Lace2" Name="Frozen_GeCao_Rest_Up">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-100.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Rest_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{BXDR_20240920_52}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="Frozen_GeCao_Rest_Down">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,90.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-96.000000}}"/>
+        <Window Type="DefaultWindow" Name="Frozen_GeCao_Rest_Pair">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,70.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-35.000000}}"/>
+          <Property Name="RiseOnClick" Value="False" />
+          <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Rest_PersonNum">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="Text" Value="#{BXDR_20240920_53}" />
+          </Window>             
+          <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Rest_StartTime">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,25.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="Text" Value="#{BXDR_20240920_54}" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Rest_FinishTime">
+            <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,50.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="Text" Value="#{BXDR_20240920_55}" />
+          </Window>      
+          <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Rest_PersonNum2">
+            <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="Text" Value="0" />
+          </Window>              
+          <Window Type="TLBB_StopWatch" Name="Frozen_GeCao_Rest_StartTime2">
+            <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.000000,25.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Text" Value="00:00" />
+            <Event Name="ReachedZero" Function="Frozen_GeCao_Rest_StartTime();" />
+          </Window>
+          <Window Type="TLBB_StopWatch" Name="Frozen_GeCao_Rest_FinishTime2">
+            <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.000000,50.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Text" Value="00:00" />
+            <Event Name="ReachedZero" Function="Frozen_GeCao_Rest_TimeOut();" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Frozen_GeCao_Rest_GameOver">
+            <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-152.000000},{0.000000,50.000000}}"/>
+            <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+            <Property Name="Text" Value="#{BXDR_20240920_56}" />
+          </Window> 
+        </Window>
+      </Window>
+    </Window>
+  </Window>    
+</GUILayout>

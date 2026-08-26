@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="TimingPlay_Info_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,416.000000},{0.000000,240.000000}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-208.000000},{0.500000,-120.000000}" />
+    <Property Name="AlwaysOnTop" Value="True" />
+    <Window Type="TLBB_HeroTitle01" Name="TimingPlay_Info_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-140.000000},{0.000000,-2.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="TimingPlay_Info_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+      <Property Name="DragTarget" Value="TimingPlay_Info_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+    </Window>
+    <Window Type="TLBB_ButtonClose2" Name="TimingPlay_Info_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+      <Event Name="Clicked" Function="this:Hide();" />
+    </Window>
+    <Window Type="TLBB_HeroLace01" Name="TimingPlay_Info_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="STimingPlay_InfoBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:TimingPlay03 image:TimingPlayBK"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="STimingPlay_Info_tianzhan" >
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-4.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,2.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

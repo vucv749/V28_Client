@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_FrameY" Name="SMSCode_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,432.000000},{0.000000,330.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-216.000000},{0.500000,-165.000000}}"/>
+    <Property Name="AlwaysOnTop" Value="True" />
+    <Event Name="Hidden" Function="SMSCode_OnHide();" />
+    <Window Type="TLBB_DragTitle" Name="SMSCode_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,1.000000}}"/>
+      <Property Name="DragTarget" Value="SMSCode_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="Text" Value="#{YZGN_230830_16}"/>
+    </Window>
+    <!-- <Window Type="TLBB_ButtonClose" Name="SMSCode_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="this:Hide()"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="SMSCode_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window> -->
+    <Window Type="DefaultWindow" Name="SMSCode_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,36.000000}}"/>
+    <Window Type="TLBB_Frame_Lace6" Name="SMSCode_Info">
+      <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{1.000000,-106.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_SimpleText" Name="SMSCode_Info_Des">
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-10.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+        <Property Name="Text" Value="#{YZGN_230830_17}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Window Type="TLBB_ButtonCommon" Name="SMSCode_ChangePhone">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{1.000000,-30.000000}}"/>
+          <Property Name="Text" Value="#{YZGN_230830_26}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="SMSCode_OnChangePhoneClicked()"/>
+        </Window>
+
+      </Window>
+    </Window>
+    <Window Type="TLBB_SimpleText" Name="SMSCode_Text">
+      <Property Name="UnifiedSize" Value="{{0.000000,190.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-200.000000},{1.000000,-86.000000}}"/>
+      <Property Name="Text" Value="#{YZGN_230830_20}" />
+      <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+    </Window>    
+    <Window Type="TLBB_EditBoxNormal" Name="SMSCode_Edit">
+      <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{1.000000,-66.000000}}"/>
+      <Property Name="ValidationString" Value="[0-9]*" />
+      <Property Name="MaxTextLength" Value="12" />
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Activated" Function="SMSCode_InputCode_OnActived();" />
+    </Window>
+    <Window Type="TLBB_ButtonGreen" Name="SMSCode_Get">
+      <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,10.000000},{1.000000,-66.000000}}"/>
+      <Property Name="Text" Value="#{YZGN_230830_21}" />
+      <Event Name="Clicked" Function="SMSCode_OnGetPhoneTextClicked()"/>
+    </Window>    
+    <Window Type="TLBB_SimpleText" Name="SMSCode_TimeRight">
+      <Property Name="UnifiedSize" Value="{{0.000000,334.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{1.000000,-18.000000}}"/>
+      <Property Name="Text" Value="#{YZGN_230830_23}" />
+      <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+    </Window>
+    <Window Type="TLBB_SimpleText" Name="SMSCode_TimeLeft">
+      <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{1.000000,-18.000000}}"/>
+      <Property Name="Text" Value="#{YZGN_230830_24}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    </Window>
+  </Window>
+</GUILayout>

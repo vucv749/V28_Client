@@ -1,0 +1,864 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="ERen_Fuchi_FrameNULL">
+    <Property Name="UnifiedSize" Value="{{0.000000,670.000000},{0.000000,500.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-373.000000},{0.500000,-250.000000}}"/>
+    <Event Name="Hidden" Function="ERen_Fuchi_Close();" />
+    <Window Type="TLBB_HeroTitle01" Name="ERen_FuchiDragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-140.000000},{0.000000,-2.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="ERen_Fuchi_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,0.000000}}"/>
+      <Property Name="Text" Value="#{FCER_240626_05}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="ERen_Fuchi_FrameNULL"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="ERen_Fuchi_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,9.000000}}"/>
+      <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+      <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
+      <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
+      <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+      <Event Name="Clicked" Function="ERen_Fuchi_Close();" />
+    </Window>
+    <Window Type="TLBB_HeroLace01" Name="ERen_Fuchi_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{1.000000,-38.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,30.000000}}"/>
+      <Window Type="TLBB_ButtonFenYe7" Name="ERen_Fuchi_Left_Buttontab01">
+        <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,10.000000}}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Property Name="Text" Value="#{FCER_240626_07}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="ERen_Fuchi_Tab_Click(1)"/>
+        <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Left_Buttontab01_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonFenYe7" Name="ERen_Fuchi_Left_Buttontab02">
+        <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,10.000000}}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Text" Value="#{FCER_240626_11}"/>
+        <Event Name="Clicked" Function="ERen_Fuchi_Tab_Click(2)"/>
+        <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Left_Buttontab02_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonFenYe7" Name="ERen_Fuchi_Left_Buttontab03">
+        <Property Name="UnifiedSize" Value="{{0.000000,74.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,172.000000},{0.000000,10.000000}}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Text" Value="#{FCER_240626_13}"/>
+        <Event Name="Clicked" Function="ERen_Fuchi_Tab_Click(3)"/>
+        <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Left_Buttontab03_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_TimeText">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,412.000000},{0.000000,14.000000}}"/>
+        <Property Name="Text" Value="#{FCER_240626_06}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client1">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:ManTuo_Fuchi image:ManTuo_Fuchi1"/>
+        <Window Type="DefaultWindow" Name="ERen_Fuchi_Act1">
+          <Property Name="UnifiedSize" Value="{{0.000000,172.000000},{0.000000,396.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,36.000000},{0.000000,54.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_ActText1">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,226.000000}}"/>
+            <Property Name="Text" Value="#{FCER_240626_15}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="VertFormatting" Value="VertCentred"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Act1Icon1">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,280.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Act1Icon2">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.000000,280.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Act1Icon3">
+            <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,280.000000}}"/>
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="ERen_Fuchi_Act1Btn">
+            <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-34.000000},{1.000000,-60.000000}}"/>
+            <Property Name="Text" Value="#{FCER_240626_16}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="ERen_Fuchi_Client1_GetGift();"/>
+            <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Act1Btn_Tips">
+              <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ERen_Fuchi_Act2">
+          <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,184.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.00000,252.000000},{0.000000,234.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_ActTitle2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,35.000000}}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_ActText2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{FCER_240626_26}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ERen_Fuchi_Act3">
+          <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,184.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,456.000000},{0.000000,234.000000}}"/>
+          <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_ActTitle3">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,153.000000}}"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_ActText3">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,200.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-194.000000}}"/>
+            <Property Name="Text" Value="#{FCER_240626_28}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client2">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:ManTuo_Fuchi image:ManTuo_Fuchi2"/>
+        <Window Type="DefaultWindow" Name="ERen_Fuchi_Client2_InfoBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,78.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,46.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client2_InfoBK1">
+            <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,78.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ManTuo_Fuchi image:ManTuo_Fuchi4_1"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client2_InfoBK2">
+            <Property Name="UnifiedSize" Value="{{0.000000,138.000000},{0.000000,78.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ManTuo_Fuchi image:ManTuo_Fuchi4_2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client2_Info">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Text" Value="#{FCER_240626_29}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ERen_Fuchi_Client2_ShowBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,334.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,124.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Window Type="DefaultWindow" Name="ERen_Fuchi_Client2_Item1">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,55.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client2_Item1_Icon">
+              <Property Name="UnifiedSize" Value="{{0.000000,69.000000},{0.000000,49.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-24.000000}}"/>
+              <Property Name="Image" Value="set:ManTuo_Fuchi image:ManTuo_Fuchi40"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client2_Item1_Text">
+              <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,10.000000}}"/>
+              <Property Name="Text" Value="#{FCER_240626_30}"/>
+              <Property Name="HorzFormatting" Value="LeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client2_Item1_Text2">
+              <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,32.000000}}"/>
+              <Property Name="Text" Value="#{FCER_240626_32}"/>
+              <Property Name="HorzFormatting" Value="LeftAligned"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client2_Item1_Icon0">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,280.000000},{0.500000,-22.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client2_Item1_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.500000,-22.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client2_Item1_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.500000,-22.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="ERen_Fuchi_Client2_Item1_OK">
+              <Property Name="UnifiedSize" Value="{{0.000000,93.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,534.000000},{0.000000,12.000000}}"/>
+              <Property Name="PushedImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Pushed"/>
+              <Property Name="NormalImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Normal"/>
+              <Property Name="HoverImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Hover"/>
+              <Property Name="DisabledImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Disable"/>
+              <Event Name="Clicked" Function="ERen_Fuchi_Client2OKClick(1);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client2_Item1_Tips">
+                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client2_Item1_Received">
+              <Property Name="UnifiedSize" Value="{{0.000000,93.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,534.000000},{0.000000,12.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Disable"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="ERen_Fuchi_Client2_Item2">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,55.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,55.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client2_Item2_Icon">
+              <Property Name="UnifiedSize" Value="{{0.000000,69.000000},{0.000000,49.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-24.000000}}"/>
+              <Property Name="Image" Value="set:ManTuo_Fuchi image:ManTuo_Fuchi50"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client2_Item2_Text">
+              <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,10.000000}}"/>
+              <Property Name="Text" Value="#{FCER_240626_30}"/>
+              <Property Name="HorzFormatting" Value="LeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client2_Item2_Text2">
+              <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,32.000000}}"/>
+              <Property Name="Text" Value="#{FCER_240626_32}"/>
+              <Property Name="HorzFormatting" Value="LeftAligned"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client2_Item2_Icon0">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,280.000000},{0.500000,-22.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client2_Item2_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.500000,-22.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client2_Item2_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.500000,-22.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="ERen_Fuchi_Client2_Item2_OK">
+              <Property Name="UnifiedSize" Value="{{0.000000,93.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,534.000000},{0.000000,12.000000}}"/>
+              <Property Name="PushedImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Pushed"/>
+              <Property Name="NormalImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Normal"/>
+              <Property Name="HoverImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Hover"/>
+              <Property Name="DisabledImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Disable"/>
+              <Event Name="Clicked" Function="ERen_Fuchi_Client2OKClick(2);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client2_Item2_Tips">
+                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client2_Item2_Received">
+              <Property Name="UnifiedSize" Value="{{0.000000,93.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,534.000000},{0.000000,12.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Disable"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="ERen_Fuchi_Client2_Item3">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,55.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,110.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client2_Item3_Icon">
+              <Property Name="UnifiedSize" Value="{{0.000000,69.000000},{0.000000,49.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-24.000000}}"/>
+              <Property Name="Image" Value="set:ManTuo_Fuchi image:ManTuo_Fuchi60"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client2_Item3_Text">
+              <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,10.000000}}"/>
+              <Property Name="Text" Value="#{FCER_240626_30}"/>
+              <Property Name="HorzFormatting" Value="LeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client2_Item3_Text2">
+              <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,32.000000}}"/>
+              <Property Name="Text" Value="#{FCER_240626_32}"/>
+              <Property Name="HorzFormatting" Value="LeftAligned"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client2_Item3_Icon0">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,280.000000},{0.500000,-22.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client2_Item3_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.500000,-22.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client2_Item3_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.500000,-22.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="ERen_Fuchi_Client2_Item3_OK">
+              <Property Name="UnifiedSize" Value="{{0.000000,93.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,534.000000},{0.000000,12.000000}}"/>
+              <Property Name="PushedImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Pushed"/>
+              <Property Name="NormalImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Normal"/>
+              <Property Name="HoverImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Hover"/>
+              <Property Name="DisabledImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Disable"/>
+              <Event Name="Clicked" Function="ERen_Fuchi_Client2OKClick(3);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client2_Item3_Tips">
+                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client2_Item3_Received">
+              <Property Name="UnifiedSize" Value="{{0.000000,93.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,534.000000},{0.000000,12.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Disable"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="ERen_Fuchi_Client2_Item4">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,55.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,165.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client2_Item4_Icon">
+              <Property Name="UnifiedSize" Value="{{0.000000,69.000000},{0.000000,49.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-24.000000}}"/>
+              <Property Name="Image" Value="set:ManTuo_Fuchi image:ManTuo_Fuchi70"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client2_Item4_Text">
+              <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,10.000000}}"/>
+              <Property Name="Text" Value="#{FCER_240626_30}"/>
+              <Property Name="HorzFormatting" Value="LeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client2_Item4_Text2">
+              <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,32.000000}}"/>
+              <Property Name="Text" Value="#{FCER_240626_32}"/>
+              <Property Name="HorzFormatting" Value="LeftAligned"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client2_Item4_Icon0">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,280.000000},{0.500000,-22.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client2_Item4_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.500000,-22.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client2_Item4_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.500000,-22.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="ERen_Fuchi_Client2_Item4_OK">
+              <Property Name="UnifiedSize" Value="{{0.000000,93.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,534.000000},{0.000000,12.000000}}"/>
+              <Property Name="PushedImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Pushed"/>
+              <Property Name="NormalImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Normal"/>
+              <Property Name="HoverImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Hover"/>
+              <Property Name="DisabledImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Disable"/>
+              <Event Name="Clicked" Function="ERen_Fuchi_Client2OKClick(4);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client2_Item4_Tips">
+                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+
+            <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client2_Item4_Received">
+              <Property Name="UnifiedSize" Value="{{0.000000,93.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,534.000000},{0.000000,12.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Disable"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="ERen_Fuchi_Client2_Item5">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,55.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,220.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client2_Item5_Icon">
+              <Property Name="UnifiedSize" Value="{{0.000000,69.000000},{0.000000,49.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-24.000000}}"/>
+              <Property Name="Image" Value="set:ManTuo_Fuchi image:ManTuo_Fuchi80"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client2_Item5_Text">
+              <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,10.000000}}"/>
+              <Property Name="Text" Value="#{FCER_240626_30}"/>
+              <Property Name="HorzFormatting" Value="LeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client2_Item5_Text2">
+              <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,32.000000}}"/>
+              <Property Name="Text" Value="#{FCER_240626_32}"/>
+              <Property Name="HorzFormatting" Value="LeftAligned"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client2_Item5_Icon0">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,280.000000},{0.500000,-22.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client2_Item5_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.500000,-22.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client2_Item5_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.500000,-22.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="ERen_Fuchi_Client2_Item5_OK">
+              <Property Name="UnifiedSize" Value="{{0.000000,93.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,534.000000},{0.000000,12.000000}}"/>
+              <Property Name="PushedImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Pushed"/>
+              <Property Name="NormalImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Normal"/>
+              <Property Name="HoverImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Hover"/>
+              <Property Name="DisabledImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Disable"/>
+              <Event Name="Clicked" Function="ERen_Fuchi_Client2OKClick(5);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client2_Item5_Tips">
+                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+
+            <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client2_Item5_Received">
+              <Property Name="UnifiedSize" Value="{{0.000000,93.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,534.000000},{0.000000,12.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Disable"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="ERen_Fuchi_Client2_Item6">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,55.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,275.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client2_Item6_Icon">
+              <Property Name="UnifiedSize" Value="{{0.000000,69.000000},{0.000000,49.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.500000,-24.000000}}"/>
+              <Property Name="Image" Value="set:ManTuo_Fuchi image:ManTuo_Fuchi90"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client2_Item6_Text">
+              <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,10.000000}}"/>
+              <Property Name="Text" Value="#{FCER_240626_30}"/>
+              <Property Name="HorzFormatting" Value="LeftAligned"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client2_Item6_Text2">
+              <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,32.000000}}"/>
+              <Property Name="Text" Value="#{FCER_240626_32}"/>
+              <Property Name="HorzFormatting" Value="LeftAligned"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client2_Item6_Icon0">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,280.000000},{0.500000,-22.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client2_Item6_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.500000,-22.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client2_Item6_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.500000,-22.000000}}"/>
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="ERen_Fuchi_Client2_Item6_OK">
+              <Property Name="UnifiedSize" Value="{{0.000000,93.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,534.000000},{0.000000,12.000000}}"/>
+              <Property Name="PushedImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Pushed"/>
+              <Property Name="NormalImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Normal"/>
+              <Property Name="HoverImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Hover"/>
+              <Property Name="DisabledImage" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Disable"/>
+              <Event Name="Clicked" Function="ERen_Fuchi_Client2OKClick(6);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client2_Item6_Tips">
+                <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-13.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+
+            <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client2_Item6_Received">
+              <Property Name="UnifiedSize" Value="{{0.000000,93.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,534.000000},{0.000000,12.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:ServerNewUI2 image:ServerNewUI_LQ_Disable"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ERen_Fuchi_Client3">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="DefaultWindow" Name="ERen_Fuchi_Client3_Info_TextBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,78.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,46.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client3_InfoBK1">
+            <Property Name="UnifiedSize" Value="{{0.000000,512.000000},{0.000000,78.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ManTuo_Fuchi image:ManTuo_FuchiBK3_1"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client3_InfoBK2">
+            <Property Name="UnifiedSize" Value="{{0.000000,138.000000},{0.000000,78.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,512.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ManTuo_Fuchi image:ManTuo_FuchiBK3_2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client3_Info_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+            <Property Name="Text" Value="#{FCER_240626_44}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ERen_Fuchi_Client3_AllBk">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,334.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,124.000000}}"/>
+          <Window Type="TLBB_Frame_Lace3" Name="ERen_Fuchi_Client3_Bk1">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,55.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client3_Bk1_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,8.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client3_Bk1_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,8.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="ERen_Fuchi_Client3_Bk1_Info1">
+              <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,55.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,216.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client3_Bk1_Text1_1">
+                <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{FCER_240626_46}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client3_Bk1_Text1_2">
+                <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{FCER_240626_47}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="ERen_Fuchi_Client3_Bk1_Button1">
+              <Property Name="UnifiedSize" Value="{{0.000000,93.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.500000,-16.000000}}"/>
+              <Property Name="PushedImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Pushed"/>
+              <Property Name="NormalImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Normal"/>
+              <Property Name="HoverImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Hover"/>
+              <Property Name="DisabledImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Disable"/>
+              <Event Name="Clicked" Function="ERen_Fuchi_Client3_GetGift(1);"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client3_Bk1_Info2">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-24.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_HL1"/>
+            </Window>>
+          </Window>
+          <Window Type="TLBB_Frame_Lace3" Name="ERen_Fuchi_Client3_Bk2">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,55.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,55.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client3_Bk2_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,8.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client3_Bk2_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,8.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="ERen_Fuchi_Client3_Bk2_Info1">
+              <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,55.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,216.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client3_Bk2_Text1_1">
+                <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+                <Property Name="VertFormatting" Value="BottomAligned"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                <Property Name="Text" Value="#{FCER_240626_46}"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client3_Bk2_Text1_2">
+                <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{FCER_240626_47}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="ERen_Fuchi_Client3_Bk2_Button1">
+              <Property Name="UnifiedSize" Value="{{0.000000,93.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.500000,-16.000000}}"/>
+              <Property Name="PushedImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Pushed"/>
+              <Property Name="NormalImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Normal"/>
+              <Property Name="HoverImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Hover"/>
+              <Property Name="DisabledImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Disable"/>
+              <Event Name="Clicked" Function="ERen_Fuchi_Client3_GetGift(2);"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client3_Bk2_Info2">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-24.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_HL2"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace3" Name="ERen_Fuchi_Client3_Bk3">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,55.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,110.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client3_Bk3_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,8.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client3_Bk3_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,8.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="ERen_Fuchi_Client3_Bk3_Info1">
+              <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,55.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,216.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client3_Bk3_Text1_1">
+                <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+                <Property Name="VertFormatting" Value="BottomAligned"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                <Property Name="Text" Value="#{FCER_240626_46}"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client3_Bk3_Text1_2">
+                <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{FCER_240626_47}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="ERen_Fuchi_Client3_Bk3_Button1">
+              <Property Name="UnifiedSize" Value="{{0.000000,93.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.500000,-16.000000}}"/>
+              <Property Name="PushedImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Pushed"/>
+              <Property Name="NormalImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Normal"/>
+              <Property Name="HoverImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Hover"/>
+              <Property Name="DisabledImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Disable"/>
+              <Event Name="Clicked" Function="ERen_Fuchi_Client3_GetGift(3);"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client3_Bk3_Info2">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-24.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_HL3"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace3" Name="ERen_Fuchi_Client3_Bk4">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,55.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,165.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client3_Bk4_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,8.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client3_Bk4_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,8.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="ERen_Fuchi_Client3_Bk4_Info1">
+              <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,55.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,216.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client3_Bk4_Text1_1">
+                <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+                <Property Name="VertFormatting" Value="BottomAligned"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                <Property Name="Text" Value="#{FCER_240626_46}"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client3_Bk4_Text1_2">
+                <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{FCER_240626_47}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="ERen_Fuchi_Client3_Bk4_Button1">
+              <Property Name="UnifiedSize" Value="{{0.000000,93.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.500000,-16.000000}}"/>
+              <Property Name="PushedImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Pushed"/>
+              <Property Name="NormalImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Normal"/>
+              <Property Name="HoverImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Hover"/>
+              <Property Name="DisabledImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Disable"/>
+              <Event Name="Clicked" Function="ERen_Fuchi_Client3_GetGift(4);"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client3_Bk4_Info2">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-24.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_HL4"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace3" Name="ERen_Fuchi_Client3_Bk5">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,55.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,220.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client3_Bk5_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,8.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client3_Bk5_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,8.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="ERen_Fuchi_Client3_Bk5_Info1">
+              <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,55.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,216.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client3_Bk5_Text1_1">
+                <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+                <Property Name="VertFormatting" Value="BottomAligned"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                <Property Name="Text" Value="#{FCER_240626_46}"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client3_Bk5_Text1_2">
+                <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{FCER_240626_47}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="ERen_Fuchi_Client3_Bk5_Button1">
+              <Property Name="UnifiedSize" Value="{{0.000000,93.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.500000,-16.000000}}"/>
+              <Property Name="PushedImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Pushed"/>
+              <Property Name="NormalImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Normal"/>
+              <Property Name="HoverImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Hover"/>
+              <Property Name="DisabledImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Disable"/>
+              <Event Name="Clicked" Function="ERen_Fuchi_Client3_GetGift(5);"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client3_Bk5_Info2">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-24.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_HL5"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace3" Name="ERen_Fuchi_Client3_Bk6">
+            <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,55.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,275.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client3_Bk6_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,8.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="ERen_Fuchi_Client3_Bk6_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,8.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="ERen_Fuchi_Client3_Bk6_Info1">
+              <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,55.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,216.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client3_Bk6_Text1_1">
+                <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+                <Property Name="VertFormatting" Value="BottomAligned"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                <Property Name="Text" Value="#{FCER_240626_46}"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ERen_Fuchi_Client3_Bk6_Text1_2">
+                <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.500000,-10.000000}}"/>
+                <Property Name="Text" Value="#{FCER_240626_47}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="ERen_Fuchi_Client3_Bk6_Button1">
+              <Property Name="UnifiedSize" Value="{{0.000000,93.000000},{0.000000,32.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-114.000000},{0.500000,-16.000000}}"/>
+              <Property Name="PushedImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Pushed"/>
+              <Property Name="NormalImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Normal"/>
+              <Property Name="HoverImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Hover"/>
+              <Property Name="DisabledImage" Value="set:ServerNewUI4 image:XinShouYueUI_GM_Disable"/>
+              <Event Name="Clicked" Function="ERen_Fuchi_Client3_GetGift(6);"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="ERen_Fuchi_Client3_Bk6_Info2">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-24.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:XinShouNewBK image:XinShouNew_HL6"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="Frozen_BXJR_YD_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,434.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.500000,-217.000000}}"/>
+    <Event Name="Hidden" Function="Frozen_BXJR_YD_OnHide();" />
+    <Window Type="TLBB_ButtonClose2" Name="Frozen_BXJR_YD_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,9.000000}}"/>
+      <Event Name="Clicked" Function="Frozen_BXJR_YD_OnHide();" />
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Frozen_BXJR_YD_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{BXJR_240913_14}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="DragTarget" Value="Frozen_BXJR_YD_Frame" />
+    </Window>
+    <Window Type="TLBB_HeroTitle01" Name="Frozen_BXJR_YD_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,314.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-157.500000},{0.000000,-2.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+    </Window>
+      <Window Type="TLBB_HeroLace01" Name="Frozen_BXJR_YD_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_BXJR_YD_BKPic">
+          <Property Name="UnifiedSize" Value="{{0.000000,588.000000},{0.000000,400.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Frozen_BXJR_2 image:Frozen_BXJRYD_Pic"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_BXJR_YD_TextBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,641.000000},{0.000000,99.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,-26.000000},{0.000000,2.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:CommonFrame37 image:ItemGrey"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Frozen_BXJR_YD_Text">
+          <Property Name="VertFormatting" Value="VertCentred"/>
+          <Property Name="UnifiedSize" Value="{{0.000000,566.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-283.000000},{0.000000,13.000000}}"/>
+          <Property Name="Text" Value="#{BXJR_240913_83}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Window Type="TLBB_ButtonHelp" Name="Frozen_BXJR_YD_Text_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Frozen_BXJR_YD_ShowHelp();" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonCommon12" Name="Frozen_BXJR_YD_GoBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-130.000000},{1.000000,-54.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Text" Value="#{QXPVE_240628_36}"/>
+          <Event Name="Clicked" Function="Frozen_BXJR_YD_Goto();" />
+        </Window>
+      </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="DefaultWindow" Name="Cloud_Agreement_MainFrame_Back">
+		<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+		<Property Name="AlwaysOnTop" Value="True"/>
+		<Window Type="DefaultWindow" Name="Cloud_Agreement_MainFrame">
+			<Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{1.000000,-100.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+			<Window Type="TLBB_MainFrame_Logon" Name="Cloud_Agreement_Frame">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+				<Window Type="TLBB_Frame_Lace4" Name="Cloud_Agreement_Bk">
+					<Property Name="UnifiedSize" Value="{{1.000000,-48.000000},{1.000000,-260.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,34.000000}}"/>
+					<Window Type="TLBB_StaticText" Name="Cloud_Agreement_Text">
+						<Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-24.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,12.000000}}"/>
+						<Property Name="VertScrollbar" Value="True"/>
+						<Property Name="VertFormatting" Value="TopAligned"/>
+						<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+					</Window>
+				</Window>
+				<Window Type="TLBB_Frame_Lace1" Name="Cloud_Agreement_Bind_Frame">
+					<Property Name="UnifiedSize" Value="{{1.000000,-48.000000},{0.000000,95.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{1.000000,-225.000000}}"/>
+					<Property Name="MouseRButtonHollow" Value="True"/>
+					<Property Name="MouseMoveHollow" Value="True"/>
+					<Property Name="MouseLButtonHollow" Value="True"/>
+					<Property Name="MouseHollow" Value="True"/>
+					<Window Type="DefaultWindow" Name="Cloud_Agreement_User_Frame">
+						<Property Name="UnifiedSize" Value="{{0.500000,-115.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.500000,-335.000000},{0.000000,0.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_Cloud_CheckBox" Name="Cloud_Agreement_User_Bind">
+							<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.500000,-25.000000}}"/>
+							<Event Name="Clicked" Function="Cloud_Agreement_User_SetCheck();"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="Cloud_Agreement_User_Text">
+							<Property Name="UnifiedSize" Value="{{0.000000,192.000000},{0.000000,34.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{1.000000,-192.000000},{0.500000,-17.000000}}"/>
+							<Property Name="Text" Value="#{TYXY_20211105_01}"/>
+							<Property Name="Font" Value="YouYuan18"/>
+							<Event Name="MouseLeave" Function="Cloud_Agreement_User_MouseLeave();"/>
+							<Event Name="MouseEnter" Function="Cloud_Agreement_User_MouseEnter();"/>
+							<Event Name="MouseClick" Function="Cloud_Agreement_User_ShowText();"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="Cloud_Agreement_User_Text2">
+							<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,34.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.500000,-17.000000}}"/>
+							<Property Name="Text" Value="#{TYXY_20211105_07}"/>
+							<Property Name="Font" Value="YouYuan18"/>
+						</Window>
+					</Window>
+					<Window Type="DefaultWindow" Name="Cloud_Agreement_Privacy_Frame">
+						<Property Name="UnifiedSize" Value="{{0.500000,-115.000000},{1.000000,0.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.500000,10.000000},{0.000000,0.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Window Type="TLBB_Cloud_CheckBox" Name="Cloud_Agreement_Privacy_Bind">
+							<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,50.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.500000,-25.000000}}"/>
+							<Event Name="Clicked" Function="Cloud_Agreement_Privacy_SetCheck();"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="Cloud_Agreement_Privacy_Text">
+							<Property Name="UnifiedSize" Value="{{0.000000,192.000000},{0.000000,34.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{1.000000,-192.000000},{0.500000,-17.000000}}"/>
+							<Property Name="Text" Value="#{TYXY_20211105_02}"/>
+							<Property Name="Font" Value="YouYuan18"/>
+							<Event Name="MouseLeave" Function="Cloud_Agreement_Privacy_MouseLeave();"/>
+							<Event Name="MouseEnter" Function="Cloud_Agreement_Privacy_MouseEnter();"/>
+							<Event Name="MouseClick" Function="Cloud_Agreement_Privacy_ShowText();"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="Cloud_Agreement_Privacy_Text2">
+							<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,34.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.500000,-17.000000}}"/>
+							<Property Name="Text" Value="#{TYXY_20211105_07}"/>
+							<Property Name="Font" Value="YouYuan18"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="DefaultWindow" Name="Cloud_Agreement_Button_Frame">
+					<Property Name="UnifiedSize" Value="{{1.000000,-48.000000},{0.000000,60.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{1.000000,-105.000000}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_Agreement_Button_Accept">
+						<Property Name="UnifiedSize" Value="{{0.000000,185.000000},{0.000000,60.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.500000,-194.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="#{Agreement_Info_OK}"/>
+						<Property Name="Font" Value="YouYuanMono"/>
+						<Event Name="Clicked" Function="Cloud_Agreement_Accept();"/>
+					</Window>
+					<Window Type="TLBB_Cloud_ButtonCommon" Name="Cloud_Agreement_Button_Continue">
+						<Property Name="UnifiedSize" Value="{{0.000000,185.000000},{.000000,60.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.500000,10.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="#{INTERFACE_XML_542}"/>
+						<Property Name="Font" Value="YouYuanMono"/>
+						<Event Name="Clicked" Function="Cloud_Agreement_Cancel();"/>
+					</Window>
+				</Window>
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

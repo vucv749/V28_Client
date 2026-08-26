@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="NewPvpTime2_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,280.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-303.000000},{1.000000,-400.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="NewPvpTime2_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-64.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,9.000000}}"/>
+      <Property Name="DragTarget" Value="NewPvpTime2_Frame" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="Title" />
+      <Property Name="Text" Value="#{RPVP_240102_12}" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="NewPvpTime2_Image">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,13.000000}}"/>
+      <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+      <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+      <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+      <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>
+      <Event Name="Clicked" Function="NewPvpTime2_OpenMini()" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="NewPvpTime2_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,13.000000}}"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="NewPvpTime2_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-50.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,33.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_Frame_Lace1" Name="NewPvpTime2_Up">
+        <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,110.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,4.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="NewPvpTime2_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-12.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,6.000000}}"/>
+          <Property Name="Text" Value="#{RPVP_240102_13}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="NewPvpTime2_Down">
+        <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,114.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-116.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="NewPvpTime2_Pair_Title">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{.000000,25.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="Text" Value="#{RPVP_240102_46}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NewPvpTime2_BossNumTitle">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,28.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NewPvpTime2_BossNumTitle2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,48.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NewPvpTime2_AwardsNumTitle">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,88.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NewPvpTime2_TimeTitle">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,68.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NewPvpTime2_BossNum">
+          <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-190.000000},{0.000000,28.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NewPvpTime2_BossNum2">
+          <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-190.000000},{0.000000,48.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="NewPvpTime2_AwardsNum">
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-150.000000},{0.000000,88.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_StopWatch" Name="NewPvpTime2_Time">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{0.000000,68.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

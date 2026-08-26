@@ -1,0 +1,287 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection0" Name="XiaLv_ChooseWedding_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,640.000000},{0.000000,440.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-320.000000},{0.500000,-220.000000}}"/>
+    <Event Name="Hidden" Function="XiaLv_ChooseWedding_OnHidden()"/>
+    <Window Type="TLBB_TitleLace_Affection0" Name="XiaLv_ChooseWedding_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,380.000000},{0.000000,31.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-190.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="XiaLv_ChooseWedding_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="Title"/>
+      <Property Name="Text" Value="#{JHYH_230330_259}"/>
+      <Property Name="DragTarget" Value="XiaLv_ChooseWedding_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="XiaLv_ChooseWedding_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="XiaLv_ChooseWedding_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="XiaLv_ChooseWedding_Close_Click();"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="XiaLv_ChooseWedding_Client1">
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaLv_ChooseWedding_Client1TitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,630.000000},{0.000000,58.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:Xialv01 image:XiaLv_MarryChoose_TextBK"/>
+      <Window Type="TLBB_SimpleText" Name="XiaLv_ChooseWedding_Client1Title">
+        <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,58.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,2.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="Text" Value="#{JHYH_230330_121}"/>
+      </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="XiaLv_ChooseWedding_Client1_CheckBox">
+        <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,64.000000}}"/>
+        <Window Type="TLBB_Affection_PageButton1" Name="XiaLv_ChooseWedding_Client1_Index1">
+          <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{JHYH_230330_109}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="XiaLv_ChooseWedding_PlaneClick(1)"/>
+        </Window>
+        <Window Type="TLBB_Affection_PageButton1" Name="XiaLv_ChooseWedding_Client1_Index2">
+          <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,116.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{JHYH_230330_110}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="XiaLv_ChooseWedding_PlaneClick(2)"/>
+        </Window>
+        <Window Type="TLBB_Affection_PageButton1" Name="XiaLv_ChooseWedding_Client1_Index3">
+          <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{JHYH_230330_111}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="XiaLv_ChooseWedding_PlaneClick(3)"/>
+        </Window>
+        <Window Type="TLBB_Affection_PageButton1" Name="XiaLv_ChooseWedding_Client1_Index4">
+          <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,340.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{JHYH_230330_112}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="XiaLv_ChooseWedding_PlaneClick(4)"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="XiaLv_ChooseWedding_Client1_PageBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,238.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,98.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_Affection_PageButton2" Name="XiaLv_ChooseWedding_Client1_ChangDi">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,14.000000}}"/>
+          <Property Name="Text" Value="#{JHYH_230330_120}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="XiaLv_ChooseWedding_PageClick(1);"/>
+        </Window>
+        <Window Type="TLBB_Affection_PageButton2" Name="XiaLv_ChooseWedding_Client1_ShiZhuang">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,54.000000}}"/>
+          <Property Name="Text" Value="#{JHYH_230330_122}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="XiaLv_ChooseWedding_PageClick(2);"/>
+        </Window>
+        <Window Type="TLBB_Affection_PageButton2" Name="XiaLv_ChooseWedding_Client1_DaoJu">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,94.000000}}"/>
+          <Property Name="Text" Value="#{JHYH_230330_123}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="XiaLv_ChooseWedding_PageClick(3);"/>
+        </Window>
+        <Window Type="TLBB_Affection_PageButton2" Name="XiaLv_ChooseWedding_Client1_HuaChe">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,138.000000}}"/>
+          <Property Name="Text" Value="#{JHYH_230330_126}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="XiaLv_ChooseWedding_PageClick(4);"/>
+        </Window>
+        <Window Type="TLBB_Affection_PageButton2" Name="XiaLv_ChooseWedding_Client1_JinYue">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,182.000000}}"/>
+          <Property Name="Text" Value="#{JHYH_230330_331}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="XiaLv_ChooseWedding_PageClick(5);"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="XiaLv_ChooseWedding_Client1_Page2BK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-106.000000},{0.000000,238.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,98.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaLv_ChooseWedding_Client1_Image">
+        <Property Name="UnifiedSize" Value="{{0.000000,444.000000},{0.000000,204.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-222.000000},{0.500000,-102.000000}}"/>
+        <Property Name="Image" Value="set:Xialv03 image:XiaLv_MarryChoose_Image6"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="XiaLv_ChooseWedding_Client1_Option">
+        <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,236.000000},{0.000000,280.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Text" Value="#{JHYH_230330_119}"/>
+        <Property Name="Visible" Value="False"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="XiaLv_ChooseWedding_Client1_Plus">
+        <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-16.000000}}"/>
+        <Event Name="Clicked" Function="XiaLv_ChooseWedding_Last();"/>
+        <Property Name="PushedImage" Value="set:Xialv01 image:XiaLv_MarryChoose_Left_Pushed"/>
+        <Property Name="NormalImage" Value="set:Xialv01 image:XiaLv_MarryChoose_Left_Normal"/>
+        <Property Name="HoverImage" Value="set:Xialv01 image:XiaLv_MarryChoose_Left_Hover"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="XiaLv_ChooseWedding_Client1_Subtract">
+        <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.500000,-16.000000}}"/>
+        <Event Name="Clicked" Function="XiaLv_ChooseWedding_Next();"/>
+        <Property Name="PushedImage" Value="set:Xialv01 image:XiaLv_MarryChoose_Right_Pushed"/>
+        <Property Name="NormalImage" Value="set:Xialv01 image:XiaLv_MarryChoose_Right_Normal"/>
+        <Property Name="HoverImage" Value="set:Xialv01 image:XiaLv_MarryChoose_Right_Hover"/>
+      </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="XiaLv_ChooseWedding_Client1_OptionNum">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,354.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Text" Value="#{JHYH_230330_131}"/>
+      </Window>
+      <Window Type="TLBB_Affection_ButtonCommon" Name="XiaLv_ChooseWedding_Client1_OK">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.000000,352.000000}}"/>
+        <Property Name="Text" Value="#{JHYH_230330_133}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="XiaLv_ChooseWedding_OK_Click()"/>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="XiaLv_ChooseWedding_Client2">
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaLv_ChooseWedding_Client2TitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,630.000000},{0.000000,58.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.00000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:Xialv01 image:XiaLv_MarryChoose_TextBK"/>
+        <Window Type="TLBB_SimpleText" Name="XiaLv_ChooseWedding_Client2Title">
+          <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,58.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,2.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="Text" Value="#{JHYH_230330_235}"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="XiaLv_ChooseWedding_Client2_CheckBox">
+        <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,64.000000}}"/>
+        <Window Type="TLBB_Affection_PageButton1" Name="XiaLv_ChooseWedding_Client2_Index1">
+          <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{JHYH_230330_111}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="XiaLv_ChooseWedding_PlaneClick(3)"/>
+        </Window>
+        <Window Type="TLBB_Affection_PageButton1" Name="XiaLv_ChooseWedding_Client2_Index2">
+          <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,116.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{JHYH_230330_112}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="XiaLv_ChooseWedding_PlaneClick(4)"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="XiaLv_ChooseWedding_Client2_PageBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,238.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,98.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_Affection_PageButton2" Name="XiaLv_ChooseWedding_Client2_ChangDi">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,14.000000}}"/>
+          <Property Name="Text" Value="#{JHYH_230330_120}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="XiaLv_ChooseWedding_PageClick(1);"/>
+        </Window>
+        <Window Type="TLBB_Affection_PageButton2" Name="XiaLv_ChooseWedding_Client2_ShiZhuang">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,54.000000}}"/>
+          <Property Name="Text" Value="#{JHYH_230330_122}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="XiaLv_ChooseWedding_PageClick(2);"/>
+        </Window>
+        <Window Type="TLBB_Affection_PageButton2" Name="XiaLv_ChooseWedding_Client2_DaoJu">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,94.000000}}"/>
+          <Property Name="Text" Value="#{JHYH_230330_123}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="XiaLv_ChooseWedding_PageClick(3);"/>
+        </Window>
+        <Window Type="TLBB_Affection_PageButton2" Name="XiaLv_ChooseWedding_Client2_HuaChe">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,138.000000}}"/>
+          <Property Name="Text" Value="#{JHYH_230330_126}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="XiaLv_ChooseWedding_PageClick(4);"/>
+        </Window>
+        <Window Type="TLBB_Affection_PageButton2" Name="XiaLv_ChooseWedding_Client2_JinYue">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,182.000000}}"/>
+          <Property Name="Text" Value="#{JHYH_230330_331}"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="MouseLButtonDown" Function="XiaLv_ChooseWedding_PageClick(5);"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="XiaLv_ChooseWedding_Client2_Page2BK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-106.000000},{0.000000,238.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,98.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_StaticImageNULL" Name="XiaLv_ChooseWedding_Client2_Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,444.000000},{0.000000,204.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-222.000000},{0.500000,-102.000000}}"/>
+          <Property Name="Image" Value="set:Xialv03 image:XiaLv_MarryChoose_Image6"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="XiaLv_ChooseWedding_Client2_Option">
+          <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,236.000000},{0.000000,280.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Visible" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="#{JHYH_230330_119}"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="XiaLv_ChooseWedding_Client2_Plus">
+          <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-16.000000}}"/>
+          <Property Name="PushedImage" Value="set:Xialv01 image:XiaLv_MarryChoose_Left_Pushed"/>
+          <Property Name="NormalImage" Value="set:Xialv01 image:XiaLv_MarryChoose_Left_Normal"/>
+          <Property Name="HoverImage" Value="set:Xialv01 image:XiaLv_MarryChoose_Left_Hover"/>
+          <Event Name="Clicked" Function="XiaLv_ChooseWedding_Last();"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="XiaLv_ChooseWedding_Client2_Subtract">
+          <Property Name="UnifiedSize" Value="{{0.000000,26.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{0.500000,-16.000000}}"/>
+          <Property Name="PushedImage" Value="set:Xialv01 image:XiaLv_MarryChoose_Right_Pushed"/>
+          <Property Name="NormalImage" Value="set:Xialv01 image:XiaLv_MarryChoose_Right_Normal"/>
+          <Property Name="HoverImage" Value="set:Xialv01 image:XiaLv_MarryChoose_Right_Hover"/>
+          <Event Name="Clicked" Function="XiaLv_ChooseWedding_Next();"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="XiaLv_ChooseWedding_Client2_OptionNum">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,354.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="Text" Value="#{JHYH_230330_131}"/>
+      </Window>
+      <Window Type="TLBB_Affection_ButtonCommon" Name="XiaLv_ChooseWedding_Client2_OK">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.000000,352.000000}}"/>
+        <Property Name="Text" Value="#{JHYH_230330_133}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="XiaLv_ChooseWedding_OK_Click()"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

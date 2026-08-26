@@ -1,0 +1,892 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="NewExterior_DressBox_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,836.000000},{0.000000,652.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-418.000000},{0.500000,-326.000000}" />
+    <Event Name="Hidden" Function="NewExterior_DressBox_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="NewExterior_DressBox_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,11.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Text" Value="#{WGTJ_201222_175}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="NewExterior_DressBox_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="NewExterior_DressBox_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="NewExterior_DressBox_CloseClick();" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="NewExterior_DressBox_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonHelp"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function=""/>
+    </Window>
+    <Window Type="TLBB_MainFrame0" Name="NewExterior_DressBox_BK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="NewExterior_DressBox_Function_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,32.000000}}"/>
+      <Window Type="TLBB_Frame_Lace2" Name="NewExterior_DressBox_Frame_LeftClient">
+        <Property Name="UnifiedSize" Value="{{0.000000,119.000000},{1.000000,-24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,4.000000}}"/>
+        <Window Type="TLBB_ButtonNULL" Name="NewExterior_DressBox_Dress_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+          <Event Name="Clicked" Function="NewExterior_DressBox_OpenFashion()"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_Dress_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_ShiZhuang_Pushed"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_DressBox_Dress_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_DressBox_OpenFashion()"/>
+            <Event Name="MouseRClick" Function="NewExterior_DressBox_ActionToDressBox();" />
+            <Window Type="TLBB_Animate" Name="NewExterior_DressBox_Dress_LeftBtnLuxury">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="NewExterior_Ride_Animate"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_Dress_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_Dress_ActionImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_Dress_Tip">
+              <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewExterior_DressBox_Ride_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,70.000000}}"/>
+          <Event Name="Clicked" Function="NewExterior_DressBox_OpenRide()"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_Ride_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_ZuoQi_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_DressBox_Ride_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_DressBox_OpenRide()"/>
+            <Event Name="MouseRClick" Function="NewExterior_DressBox_TakeOffRide();" />
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_Ride_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_Ride_ActionImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_Ride_Tip">
+              <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewExterior_DressBox_FaceStyle_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,136.000000}}"/>
+          <Event Name="Clicked" Function="NewExterior_DressBox_OpenFace()"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_FaceStyle_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_LianXing_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_DressBox_FaceStyle_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_DressBox_OpenFace()"/>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_FaceStyle_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_FaceStyle_ActionImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_FaceStyle_Tip">
+              <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewExterior_DressBox_HairStyle_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,202.000000}}"/>
+          <Event Name="Clicked" Function="NewExterior_DressBox_OpenHair()"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_HairStyle_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_FaXing_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_DressBox_HairStyle_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_DressBox_OpenHair()"/>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_HairStyle_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_HairStyle_ActionImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_HairStyle_Tip">
+              <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewExterior_DressBox_PlayerFrame_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,268.000000}}"/>
+          <Event Name="Clicked" Function="NewExterior_DressBox_OpenPortrait()"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_PlayerFrame_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_TouXiang_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_DressBox_PlayerFrame_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_DressBox_OpenPortrait()"/>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_PlayerFrame_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_PlayerFrame_ActionImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_PlayerFrame_Tip">
+              <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewExterior_DressBox_Weapon_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,334.000000}}"/>
+          <Event Name="Clicked" Function="NewExterior_DressBox_OpenWeapon()"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_Weapon_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_HuanShi_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_DressBox_Weapon_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_DressBox_OpenWeapon()"/>
+            <Event Name="MouseRClick" Function="NewExterior_DressBox_TakeOffWeapon()" />
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_Weapon_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_Weapon_ActionImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_Weapon_Tip">
+              <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewExterior_DressBox_Headdress_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,400.000000}}"/>
+          <Event Name="Clicked" Function="NewExterior_DressBox_OpenOrnamentsHead()"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_Headdress_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_TouShi_Pushed"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_DressBox_Headdress_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_DressBox_OpenOrnamentsHead()"/>
+            <Event Name="MouseRClick" Function="NewExterior_DressBox_ActionToOrnamentsHead()" />
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_Headdress_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_Headdress_ActionImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_Headdress_Tip">
+              <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewExterior_DressBox_Widget_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,464.000000}}"/>
+          <Event Name="Clicked" Function="NewExterior_DressBox_OpenOrnamentsBack()"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_Widget_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_BeiShi_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_DressBox_Widget_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_DressBox_OpenOrnamentsBack()"/>
+            <Event Name="MouseRClick" Function="NewExterior_DressBox_ActionToOrnamentsBack()" />
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_Widget_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_Widget_ActionImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_Widget_Tip">
+              <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="NewExterior_DressBox_PetSoul_LeftCheckBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,528.000000}}"/>
+          <Event Name="Clicked" Function="NewExterior_DressBox_OpenPoss()"/>
+          <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_PetSoul_LeftCheckBtnActive">
+            <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,64.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:NewExterior3 image:NewExterior_HunLu_Normal"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="NewExterior_DressBox_PetSoul_LeftBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.500000,-23.000000}}"/>
+            <Property Name="Tooltip" Value=""/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="MouseLButtonDown" Function="NewExterior_DressBox_OpenPoss()"/>
+            <Event Name="MouseRClick" Function="NewExterior_DressBox_TakeOffPoss()" />
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_PetSoul_LockImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_suo_di"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_PetSoul_ActionImg">
+              <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_PetSoul_Tip">
+              <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace2" Name="NewExterior_DressBox_Frame_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-132.000000},{1.000000,-24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,126.000000},{0.000000,4.000000}}"/>
+        <Window Type="DefaultWindow" Name="NewExterior_DressBox_Frame_MiddleClient">
+          <Property Name="UnifiedSize" Value="{{0.000000,396.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_MeshBackOldEx" Name="NewExterior_DressBox_FakeObject">
+            <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-4.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Window Type="TLBB_ButtonTurnLeft" Name="NewExterior_DressBox_Model_TurnLeft">
+              <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.800000,0.000000}}"/>
+              <Event Name="CaptureLost" Function="NewExterior_DressBox_FakeObject_TurnLeft(0);" />
+              <Event Name="MouseButtonDown" Function="NewExterior_DressBox_FakeObject_TurnLeft(1);" />
+              <Event Name="MouseButtonUp" Function="NewExterior_DressBox_FakeObject_TurnLeft(0);" />
+            </Window>
+            <Window Type="TLBB_ButtonTurnRight" Name="NewExterior_DressBox_Model_TurnRight">
+              <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.800000,0.000000}}"/>
+              <Event Name="CaptureLost" Function="NewExterior_DressBox_FakeObject_TurnRight(0);" />
+              <Event Name="MouseButtonDown" Function="NewExterior_DressBox_FakeObject_TurnRight(1);" />
+              <Event Name="MouseButtonUp" Function="NewExterior_DressBox_FakeObject_TurnRight(0);" />
+            </Window>
+            <Window Type="TLBB_ButtonAdd" Name="NewExterior_DressBox_Model_Plus">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.500000,-20.000000}}"/>
+              <Event Name="Clicked" Function="NewExterior_DressBox_ZoomIn();"/>
+            </Window>
+            <Window Type="TLBB_ButtonSub" Name="NewExterior_DressBox_Model_Subtract">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.500000,30.000000}}"/>
+              <Event Name="Clicked" Function="NewExterior_DressBox_ZoomOut();"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="NewExterior_DressBox_FashionAction_MidBtn1">
+              <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.000000,10.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Normal"/>
+              <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Pushed"/>
+              <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Hover"/>
+              <Property Name="DisabledImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Disabled"/>
+              <Property Name="Tooltip" Value="#{SZDZ_231110_07}"/>
+              <Event Name="Clicked" Function="NewExterior_DressBox_onAction(1);"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="NewExterior_DressBox_FashionAction_MidBtn2">
+              <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.000000,40.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Normal"/>
+              <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Pushed"/>
+              <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Hover"/>
+              <Property Name="DisabledImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Disabled"/>
+              <Property Name="Tooltip" Value="#{SZDZ_231110_07}"/>
+              <Event Name="Clicked" Function="NewExterior_DressBox_onAction(2);"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="NewExterior_DressBox_FashionAction_MidBtn3">
+              <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.000000,70.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Normal"/>
+              <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Pushed"/>
+              <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Hover"/>
+              <Property Name="DisabledImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Disabled"/>
+              <Property Name="Tooltip" Value="#{SZDZ_231110_07}"/>
+              <Event Name="Clicked" Function="NewExterior_DressBox_onAction(3);"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="NewExterior_DressBox_FashionAction_MidBtn4">
+              <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.000000,100.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Normal"/>
+              <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Pushed"/>
+              <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Hover"/>
+              <Property Name="DisabledImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Disabled"/>
+              <Property Name="Tooltip" Value="#{SZDZ_231110_07}"/>
+              <Event Name="Clicked" Function="NewExterior_DressBox_onAction(4);"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="NewExterior_DressBox_FashionAction_MidBtn5">
+              <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-46.000000},{0.000000,130.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="PushedImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Normal"/>
+              <Property Name="NormalImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Pushed"/>
+              <Property Name="HoverImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Hover"/>
+              <Property Name="DisabledImage" Value="set:NewExterior2 image:NewExterior_shizhuang_Disabled"/>
+              <Property Name="Tooltip" Value="#{SZDZ_231110_07}"/>
+              <Event Name="Clicked" Function="NewExterior_DressBox_onAction(5);"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="NewExterior_DressBox_CollectBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-50.000000},{1.000000,-40.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Tooltip" Value="#{WGTJ_201222_102}"/>
+            <Property Name="Text" Value="#{WGTJ_201222_167}"/>
+            <Event Name="Clicked" Function="NewExterior_DressBox_Undo()"/>
+          </Window>
+          <Window Type="TLBB_ButtonCommon2" Name="NewExterior_DressBox_DressChange_RightBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-35.000000},{1.000000,-40.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Text" Value="#{WGTJ_201222_164}"/>
+            <Property Name="Tooltip" Value="#{WGTJ_201222_101}"/>
+            <Event Name="Clicked" Function="NewExterior_DressBox_DressChange_Save()"/>
+          </Window>
+          <Window Type="TLBB_ButtonCheck" Name="NewExterior_DressBox_Dress_Type">
+            <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,19.000000}}"/>
+            <Property Name="Tooltip" Value="#{WGTJ_201222_119}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="NewExterior_DressBox_FashionDisplay();"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="NewExterior_DressBox_Dress_TypeText">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,28.000000},{0.000000,15.000000}}"/>
+            <Property Name="Text" Value="#{WGTJ_201222_163}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Tooltip" Value="#{WGTJ_201222_119}"/>
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="NewExterior_DressBox_ShareBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.000000,-40.000000}}"/>
+            <Property Name="Tooltip" Value="#{GRYM_221213_03}"/>
+            <Property Name="Text" Value="#{GRYM_221213_02}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="NewExterior_DressBox_Share_Clicked();"/>
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="NewExterior_DressBox_SaveChangeBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,40.000000}}"/>
+            <Property Name="Text" Value="#{GRYM_221213_04}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="NewExterior_DressBox_SaveChange_Clicked();"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_Frame_Lace1" Name="NewExterior_DressBox_Frame_RightClient">
+          <Property Name="UnifiedSize" Value="{{0.000000,308.000000},{1.000000,-6.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,394.000000},{0.000000,4.000000}}"/>
+          <Window Type="DefaultWindow" Name="NewExterior_DressBox_SuperListTitleUP">
+            <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,3.000000}}"/>
+            <Window Type="TLBB_ButtonCheckNULL" Name="NewExterior_DressBox_SuperListMineBtn">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,24.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+              <Property Name="Text" Value="#{FQYG_20230410_1}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="PushedImage" Value="set:AgnameLayout image:AgnameLayout_BK_Normal"/>
+              <Property Name="NormalImage" Value="set:AgnameLayout image:AgnameLayout_BK_Pushed"/>
+              <Property Name="HoverImage" Value="set:AgnameLayout image:AgnameLayout_BK_Hover"/>
+              <Property Name="DisabledImage" Value="set:AgnameLayout image:AgnameLayout_BK_Disable"/>
+              <Property Name="CheckMode" Value="1"/>
+              <Event Name="Clicked" Function="NewExterior_DressBox_OnOpenMyBox()"/>
+            </Window>
+            <Window Type="TLBB_ButtonCheckNULL" Name="NewExterior_DressBox_SuperListOurBtn">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,24.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,2.000000}}"/>
+              <Property Name="Tooltip" Value="#{FQYG_20230410_3}"/>
+              <Property Name="Text" Value="#{FQYG_20230410_2}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="PushedImage" Value="set:AgnameLayout image:AgnameLayout_BK_Normal"/>
+              <Property Name="NormalImage" Value="set:AgnameLayout image:AgnameLayout_BK_Pushed"/>
+              <Property Name="HoverImage" Value="set:AgnameLayout image:AgnameLayout_BK_Hover"/>
+              <Property Name="DisabledImage" Value="set:AgnameLayout image:AgnameLayout_BK_Disable"/>
+              <Property Name="CheckMode" Value="1"/>
+              <Event Name="Clicked" Function="NewExterior_DressBox_OnOpenOurBox()"/>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_SuperListOurBtn_Tip">
+                <Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-10.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:UIIcons image:Map_Trip"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="NewExterior_DressBox_SuperListTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,21.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+            <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_SuperListTitle_BK">
+              <Property Name="UnifiedSize" Value="{{0.000000,510.000000},{0.000000,21.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:Talent image:Talent_LeftBK"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_SuperListTitle_Dot">
+                <Property Name="UnifiedSize" Value="{{0.000000,7.000000},{0.000000,7.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,7.000000}}"/>
+                <Property Name="Image" Value="set:Talent image:Talent_JuXing"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="NewExterior_DressBox_SuperListTit_Text">
+                <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-2.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,-1.000000}}"/>
+                <Property Name="Text" Value="#{WGTJ_201222_176}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                <Property Name="Font" Value="Title"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="NewExterior_DressBox_SuperListArrangeBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-68.000000},{0.000000,29.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Text" Value="#{WGTJ_201222_166}"/>
+            <Event Name="Clicked" Function="NewExterior_DressBox_ClickClearUpBtn()"/>
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="NewExterior_DressBox_SuperListShareBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-140.000000},{0.000000,29.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Text" Value="#{FQYG_20230410_6}"/>
+            <Property Name="Tooltip" Value="#{FQYG_20230410_8}"/>
+            <Event Name="Clicked" Function="NewExterior_DressBox_CoupleDress_Clicked()"/>
+          </Window>
+          <Window Type="TLBB_NotSuperList" Name="NewExterior_DressBox_SuperList">
+            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,534.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,50.000000}}"/>
+            <Property Name="SelectMode" Value="Single" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MultiColumn" Value="1" />
+            <Window Type="TLBB_NotSuperListItemCommon3" Name="NewExterior_DressBox_SuperListItem">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="NewExterior_DressBox_SuperListItemAction">
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+                <Window Type="TLBB_Animate" Name="NewExterior_DressBox_SuperListItemActionLuxury">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="NewExterior_Ride_Animate"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_SuperListItemActionShare">
+                  <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,32.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-34.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_gongxiangzhong"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_SuperListItemActionShare2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,32.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-34.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_kegongxiang"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_SuperListItemActionZhan">
+                  <Property Name="UnifiedSize" Value="{{0.000000,11.000000},{0.000000,13.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-11.000000},{1.000000,-13.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhanyong"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_SuperListItemActionTip">
+                  <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-16.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_xin"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_SuperListItemActionTry">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_SuperListItemActionEqu">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="TLBB_NotSuperList" Name="NewExterior_DressBox_SuperList2">
+            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,534.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,50.000000}}"/>
+            <Property Name="SelectMode" Value="Single" />
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="MultiColumn" Value="1" />
+            <Window Type="TLBB_NotSuperListItemCommon3" Name="NewExterior_DressBox_SuperList2Item">
+              <Property Name="UnifiedSize" Value="{{0.000000,56.000000},{0.000000,56.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Window Type="TLBB_ActionButton" Name="NewExterior_DressBox_SuperList2ItemAction">
+                <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,46.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{0.500000,-23.000000}}"/>
+                <Window Type="TLBB_Animate" Name="NewExterior_DressBox_SuperList2ItemActionLuxury">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="NewExterior_Ride_Animate"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_SuperList2ItemActionShare">
+                  <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,32.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-34.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_gongxiangzhong"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_SuperList2ItemActionShare2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,32.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-34.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_kegongxiang"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_SuperList2ItemActionTip">
+                  <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-16.000000},{0.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_xin"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_SuperList2ItemActionZhan">
+                  <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,14.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-12.000000},{1.000000,-14.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhanyong"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_SuperList2ItemActionTry">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_shichuan"/>
+                </Window>
+                <Window Type="TLBB_StaticImageNULL" Name="NewExterior_DressBox_SuperList2ItemActionEqu">
+                  <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,33.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,1.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_zhuangebi"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

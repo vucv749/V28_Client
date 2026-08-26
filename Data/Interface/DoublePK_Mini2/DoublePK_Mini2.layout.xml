@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="DoublePK_Mini2_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,28.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.0,-350.000000},{1.0,-150.000000}}"/>
+    <Property Name="AttachEnabled" Value="true" />
+    <Window Type="TLBB_DragTitle" Name="DoublePK_Mini2_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,3.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.0,-28.000000},{0.000000,20.000000}}"/>
+      <Property Name="DragTarget" Value="DoublePK_Mini2_Frame" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_SimpleText" Name="DoublePK_Mini2_PageHeader">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SRPK_230331_205}" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_Frame2" Name="DoublePK_Mini2">
+      <Property Name="UnifiedSize" Value="{{1.0,0.000000},{1.0,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0.000000}}"/>
+      <Window Type="TLBB_Affection_ButtonMiniMize" Name="DoublePK_Mini2_Small">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,8.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="DoublePK_Mini2_Small()"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

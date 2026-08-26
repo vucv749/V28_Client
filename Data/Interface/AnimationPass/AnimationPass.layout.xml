@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="AnimationPass_Frame">
+    <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+    <Property Name="AlwaysOnTop" Value="True"/>
+    <Window Type="DefaultWindow" Name="AnimationPass_Bk">
+      <Property Name="UnifiedSize" Value="{{0.000000,146.000000},{0.000000,32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-210.000000},{0.000000,50.000000}}"/>
+      <Window Type="TLBB_AnimateButton" Name="AnimationPass_Image">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="PushedImage" Value="set:SuperWeapon9 image:TiaoGuo_Pushed"/>
+        <Property Name="NormalImage" Value="set:SuperWeapon9 image:TiaoGuo_Normal"/>
+        <Property Name="HoverImage" Value="set:SuperWeapon9 image:TiaoGuo_Hover"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="AnimationPass_OnClick()"/> 
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="AnimationPass_Movie">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Window Type="TLBB_Frame_LaceMovie" Name="AnimationPass_BackUP">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,100.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      </Window>
+      <Window Type="TLBB_Frame_LaceMovie" Name="AnimationPass_BackDown">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,100.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-100.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="AnimationPass_Subtitles">
+          <Property Name="UnifiedSize" Value="{{0.600000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.200000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="TextColor" Value="FFDDDDDD"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Font" Value="TitleMini"/>
+        </Window>
+      </Window>
+    </Window>
+
+  </Window>
+</GUILayout>

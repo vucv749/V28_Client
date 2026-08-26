@@ -1,0 +1,143 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="Weapon2_FenJie_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,370.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.500000,-180.000000}}"/>
+	<Event Name="Shown" Function="Weapon2_FenJie_OnShown()" />
+    <Event Name="Hidden" Function="Weapon2_FenJie_OnHidden()" />
+    <Window Type="TLBB_DragTitle" Name="Weapon2_FenJie_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="Weapon2_FenJie_Frame" />
+      <Window Type="TLBB_SimpleText" Name="Weapon2_FenJie_Title">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SBFW_20230707_271}"/>
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Weapon2_FenJie_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonHelp" />
+      <Event Name="Clicked" Function="Weapon2_FenJie_HelpClicked()" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Weapon2_FenJie_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Property Name="Text" Value="TLBB_ButtonClose" />
+      <Event Name="Clicked" Function="Weapon2_FenJie_CloseClicked()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Weapon2_FenJie_Frame_Client">
+      <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Weapon2_FenJie_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,160.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000000,0.000000},{0.0000000,0.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SBFW_20230707_272}"/>
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Weapon2_FenJie_Info2">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0000000,60.000000},{0.000000,164.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SBFW_20230707_273}"/>
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="Weapon2_FenJie_Item">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.0000000,196.000000},{0.000000,164.000000}}"/>
+        <Property Name="DragAcceptName" Value="W46" />
+        <Property Name="DraggingEnabled" Value="True" />
+        <Event Name="RBClicked" Function="Weapon2_FenJie_ShenBing_OnRBClicked()" />
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Weapon2_FenJie_GiveText">
+        <Property Name="UnifiedPosition" Value="{{0.00,0.000000},{1.000000,-111.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="Text" Value="#{SBFW_20230707_274}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_SimpleText" Name="Weapon2_FenJie_Give">
+          <Property Name="UnifiedSize" Value="{{0.750000,0.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.250000,-6.000000},{0.000000,2.000000}}"/>
+          <Property Name="HorzFormatting" Value="RightAligned" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Weapon2_FenJie_Demand_Jiaozi_Text">
+        <Property Name="UnifiedPosition" Value="{{0.00,0.000000},{1.000000,-89.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="Text" Value="#{SBFW_20230707_38}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="Weapon2_FenJie_DemandMoney">
+          <Property Name="UnifiedPosition" Value="{{0.25,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.75,0.000000},{0.000000,18.000000}" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Weapon2_FenJie_Currently_Jiaozi_Text">
+        <Property Name="UnifiedPosition" Value="{{0.00,0.000000},{1.000000,-67.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="Text" Value="#{SBFW_20230707_39}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="Weapon2_FenJie_SelfJiaozi">
+          <Property Name="UnifiedPosition" Value="{{0.25,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.75,0.000000},{0.000000,18.000000}" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Weapon2_FenJie_Currently_Money_Text">
+        <Property Name="UnifiedPosition" Value="{{0.00,0.000000},{1.000000,-45.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.0,0.000000},{0.000000,22.000000}" />
+        <Property Name="Text" Value="#{SBFW_20230707_40}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+        <Property Name="HorzFormatting" Value="LeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_Money" Name="Weapon2_FenJie_SelfMoney">
+          <Property Name="UnifiedPosition" Value="{{0.25,0.000000},{0.000000,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.75,0.000000},{0.000000,18.000000}" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="Weapon2_FenJie_Blank">
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Weapon2_FenJie_OK">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{SBFW_20230707_41}" />
+        <Event Name="Clicked" Function="Weapon2_FenJie_OK_Clicked()" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Weapon2_FenJie_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{SBFW_20230707_42}" />
+        <Event Name="Clicked" Function="Weapon2_FenJie_CloseClicked()" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

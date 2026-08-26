@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Examination_TopList_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,532.000000},{0.000000,475.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-266.000000},{0.500000,-250.000000}}" />
+    <Event Name="Hidden" Function="Examination_TopList_OnHidden()"/>
+    <Window Type="TLBB_DragTitle" Name="Examination_TopList_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-110.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{0.000000,11.000000}}" />
+      <Property Name="Text" Value="#{KJYH_221013_100}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="Examination_TopList_Frame" />
+      <Property Name="AlwaysOnTop" Value="True" />
+    </Window>
+    <Window Type="TLBB_MainFrame0" Name="Examination_TopList_MainFrame">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+      <Property Name="RiseOnClick" Value="False" />
+      <Window Type="TLBB_ButtonHelp" Name="Examination_TopList_Help">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+        <Event Name="Clicked" Function="Examination_TopList_OnHelp()"/>
+      </Window>
+      <Window Type="TLBB_ButtonClose" Name="Examination_TopList_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Event Name="Clicked" Function="Examination_TopList_OnClose()" />
+      </Window>
+      <Window Type="TLBB_Frame_NewKeju2" Name="Examination_TopList_PageClient">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,104.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,40.000000}}" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Window Type="TLBB_SimpleText" Name="Examination_TopList_Page_info">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{KJYH_221013_46}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Examination_TopList_BK">
+        <Property Name="UnifiedSize" Value="{{0.000000,520.000000},{0.000000,120.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-260.000000},{1.000000,-138.000000}}" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="Image" Value="set:New_Keju image:New_Keju_BK1" />
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="Examination_TopList_Frame_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-165.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,149.000000}}" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Window Type="TLBB_Frame_NewKeju1" Name="Examination_TopList_ListTitle">
+          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+          <!--<Window Type="TLBB_MultiColumnList" Name="Examination_TopList_ListTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" /><Property Name="ForceHorzScrollbar" Value="False" />
+            <Property Name="SortSettingEnabled" Value="False" />
+            <Property Name="SelectionMode" Value="RowSingle" />
+            <Property Name="ColumnHeader" Value="text: width:0.25 id:0" />
+            <Property Name="ColumnHeader" Value="text: width:0.3 id:1" />
+            <Property Name="ColumnHeader" Value="text: width:0.2 id:2" />
+            <Property Name="ColumnHeader" Value="text: width:0.25 id:3" />
+            <Property Name="ColumnsSizable" Value="False" />
+            <Property Name="ColumnsMovable" Value="False" />
+            <Property Name="ColumnsAdjust" Value="True" /> -->
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Window Type="TLBB_SimpleText" Name="Examination_TopList_ListTitle_Ranking">
+            <Property Name="UnifiedSize" Value="{{0.160000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}" />
+            <Property Name="Text" Value="#{KJYH_221013_47}" />
+            <Property Name="Font" Value="YouYuan13"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Examination_TopList_ListTitle_Name">
+            <Property Name="UnifiedSize" Value="{{0.320000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.160000,0.000000},{0.000000,0.000000}}" />
+            <Property Name="Text" Value="#{KJYH_221013_48}" />
+            <Property Name="Font" Value="YouYuan13"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Examination_TopList_ListTitle_Num">
+            <Property Name="UnifiedSize" Value="{{0.240000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.480000,0.000000},{0.000000,0.000000}}" />
+            <Property Name="Text" Value="#{KJYH_221013_49}" />
+            <Property Name="Font" Value="YouYuan13"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Examination_TopList_ListTitle_Time">
+            <Property Name="UnifiedSize" Value="{{0.280000,0.000000},{1.000000,0.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.720000,0.000000},{0.000000,0.000000}}" />
+            <Property Name="Text" Value="#{KJYH_221013_50}" />
+            <Property Name="Font" Value="YouYuan13"/>
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Examination_TopList_List">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-56.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,22.000000}}" />
+          <Window Type="TLBB_NotSuperList" Name="Examination_TopList">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-2.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,.000000},{0.000000,2.000000}}" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="MouseRButtonHollow" Value="True" />
+            <Property Name="SelectMode" Value="Single" />
+            <Window Type="TLBB_NotSuperListItemCommon1" Name="Examination_TopList_Item">
+              <Property Name="UnifiedSize" Value="{{0.000000,510.000000},{0.000000,51.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+              <Window Type="TLBB_StaticImageNULL" Name="Examination_TopList_ItemBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,494.000000},{0.000000,50.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="Image" Value="set:New_Keju image:New_Keju_ListBK" />
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Examination_TopList_Ranking">
+                <Property Name="UnifiedSize" Value="{{0.160000,-4.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.500000,-11.000000}}" />
+                <Property Name="Text" Value="1" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Examination_TopList_RankingImage">
+                <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,50.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-25.000000}}" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="Image" Value="set:New_Keju image:New_Keju_No1" />
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Examination_TopList_Name">
+                <Property Name="UnifiedSize" Value="{{0.320000,-4.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.160000,-2.000000},{0.500000,-10.000000}}" />
+                <Property Name="Text" Value="名字要有七个字" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Examination_TopList_Num">
+                <Property Name="UnifiedSize" Value="{{0.240000,-4.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.480000,-6.000000},{0.500000,-10.000000}}" />
+                <Property Name="Text" Value="100" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Examination_TopList_Time">
+                <Property Name="UnifiedSize" Value="{{0.280000,-4.000000},{0.000000,22.000000}}" />
+                <Property Name="UnifiedPosition" Value="{{0.720000,-8.000000},{0.500000,-10.000000}}" />
+                <Property Name="Text" Value="119" />
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Examination_TopList_My">
+          <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,30.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-32.000000}}" />
+          <Window Type="TLBB_SimpleText" Name="Examination_TopList_MyRanking">
+            <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,22.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.500000,-11.000000}}" />
+            <Property Name="Text" Value="您本次科举省试排名：%s0" />
+            <Property Name="RiseOnClick" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+          </Window>
+          <Window Type="TLBB_ButtonCommon" Name="Examination_TopList_MyGet">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-90.000000},{0.500000,-10.000000}}"/>
+            <Property Name="Text" Value="#{KJYH_221013_77}"/>
+            <Event Name="Clicked" Function="Examination_TopList_OnMyGet()" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

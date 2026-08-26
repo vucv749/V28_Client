@@ -1,0 +1,617 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame3" Name="TargetProfile_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,522.000000},{0.000000,380.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.380000,0.000000},{0.120000,0.000000}}"/>
+    <Event Name="Hidden" Function="TargetProfile_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="TargetProfile_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:108.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-133.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="TargetProfile_Frame" />
+      <Window Type="TLBB_SimpleText" Name="TargetProfile_PageHeader">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="玩家名字" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="TargetProfile_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,88.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*TargetProfile&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="TargetProfile_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="TargetProfile_CloseClick();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="TargetProfile_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-60.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,33.000000}}"/>
+      <Window Type="TLBB_FramePlayerOther" Name="TargetProfile_Frame_MiddleClient">
+        <Property Name="UnifiedSize" Value="{{0.000000,240.000000},{1.000000,-8.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,4.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ButtonCommon" Name="TargetProfile_Frame_LikeBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-61.000000},{0.000000,12.000000}}"/>
+          <Property Name="Text" Value="点赞"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="TargetProfile_Frame_LikeBtn_Clicked();"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TargetProfile_Dress_LikeBtn_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-199.000000},{0.000000,14.000000}}"/>
+          <Property Name="Text" Value="#{GRYM_221213_30}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_MeshWindow" Name="TargetProfile_FakeObject">
+          <Property Name="UnifiedSize" Value="{{1.000000,-24.000000},{1.000000,-7.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property name="BackgroundName" value="Common/MeshBackNewEx.dds" />
+          <Window Type="TLBB_ButtonTurnLeft" Name="TargetProfile_Model_TurnLeft">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.900000,0.000000}}"/>
+            <Event Name="CaptureLost" Function="TargetProfile_FakeObject_TurnLeft(0);" />
+            <Event Name="MouseButtonDown" Function="TargetProfile_FakeObject_TurnLeft(1);" />
+            <Event Name="MouseButtonUp" Function="TargetProfile_FakeObject_TurnLeft(0);" />
+          </Window>
+          <Window Type="TLBB_ButtonTurnRight" Name="TargetProfile_Model_TurnRight">
+            <Property Name="UnifiedSize" Value="{{0.000000,25.000000},{0.000000,25.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{0.900000,0.000000}}"/>
+            <Event Name="CaptureLost" Function="TargetProfile_FakeObject_TurnRight(0);" />
+            <Event Name="MouseButtonDown" Function="TargetProfile_FakeObject_TurnRight(1);" />
+            <Event Name="MouseButtonUp" Function="TargetProfile_FakeObject_TurnRight(0);" />
+          </Window>
+          <Window Type="TLBB_ButtonAdd" Name="TargetProfile_Model_Plus">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-23.000000},{0.500000,0.000000}}"/>
+            <Event Name="Clicked" Function="TargetProfile_ZoomIn();"/>
+          </Window>
+          <Window Type="TLBB_ButtonSub" Name="TargetProfile_Model_Subtract">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-23.000000},{0.500000,35.000000}}"/>
+            <Event Name="Clicked" Function="TargetProfile_ZoomOut();"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="TargetProfile_Frame_RightClient">
+        <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{1.000000,-10.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,253.000000},{0.000000,5.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="DefaultWindow" Name="TargetProfile_Frame_TagClient">
+          <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{0.000000,75.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,7.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="TargetProfile_Frame_Tag_SubtitleText">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,22.000000}}"/>
+            <Property Name="Text" Value="#{GRYM_221213_149}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TargetProfile_Frame_Tag_TagText1">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,30.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="TextColor" Value="FFFFFFA0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetProfile_Frame_Tag_TagText1Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Profile image:TagBK"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TargetProfile_Frame_Tag_TagText2">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,82.000000},{0.000000,30.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="TextColor" Value="FFFFFFA0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetProfile_Frame_Tag_TagText2Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Profile image:TagBK"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TargetProfile_Frame_Tag_TagText3">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,162.000000},{0.000000,30.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="TextColor" Value="FFFFFFA0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetProfile_Frame_Tag_TagText3Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Profile image:TagBK"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TargetProfile_Frame_Tag_TagText4">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,55.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="TextColor" Value="FFFFFFA0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetProfile_Frame_Tag_TagText4Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Profile image:TagBK"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TargetProfile_Frame_Tag_TagText5">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,82.000000},{0.000000,55.000000}}"/>
+            <Property Name="Text" Value=""/>
+            <Property Name="TextColor" Value="FFFFFFA0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetProfile_Frame_Tag_TagText5Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Profile image:TagBK"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="TargetProfile_Frame_Tag_TagText6">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,162.000000},{0.000000,55.000000}}"/>
+            <Property Name="Text" Value="标签五个字"/>
+            <Property Name="TextColor" Value="FFFFFFA0"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetProfile_Frame_Tag_TagText6Image">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:Profile image:TagBK"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="TargetProfile_Frame_DressClient">
+          <Property Name="UnifiedSize" Value="{{1.000000,-18.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,94.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="TargetProfile_Frame_Dress_SubtitleText">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,22.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{GRYM_221213_139}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TargetProfile_Frame_Dress_Object1">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,24.000000}}"/>
+            <Event Name="MouseLButtonDown" Function="TargetProfile_Dress_ObjectClick(1);"/>
+            <Window Type="TLBB_Animate" Name="TargetProfile_Frame_Dress_Object1Luxury">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="NewExterior_Ride_Animate"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TargetProfile_Frame_Dress_Object2">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,24.000000}}"/>
+            <Event Name="MouseLButtonDown" Function="TargetProfile_Dress_ObjectClick(2);"/>
+            <Window Type="TLBB_Animate" Name="TargetProfile_Frame_Dress_Object2Luxury">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="NewExterior_Ride_Animate"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TargetProfile_Frame_Dress_Object3">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+            <Event Name="MouseLButtonDown" Function="TargetProfile_Dress_ObjectClick(3);"/>
+            <Window Type="TLBB_Animate" Name="TargetProfile_Frame_Dress_Object3Luxury">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="NewExterior_Ride_Animate"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TargetProfile_Frame_Dress_Object4">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,24.000000}}"/>
+            <Event Name="MouseLButtonDown" Function="TargetProfile_Dress_ObjectClick(4);"/>
+            <Window Type="TLBB_Animate" Name="TargetProfile_Frame_Dress_Object4Luxury">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="NewExterior_Ride_Animate"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TargetProfile_Frame_Dress_Object5">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,24.000000}}"/>
+            <Event Name="MouseLButtonDown" Function="TargetProfile_Dress_ObjectClick(5);"/>
+            <Window Type="TLBB_Animate" Name="TargetProfile_Frame_Dress_Object5Luxury">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="NewExterior_Ride_Animate"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TargetProfile_Frame_Dress_Object6">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,24.000000}}"/>
+            <Event Name="MouseLButtonDown" Function="TargetProfile_Dress_ObjectClick(6);"/>
+            <Window Type="TLBB_Animate" Name="TargetProfile_Frame_Dress_Object6Luxury">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="NewExterior_Ride_Animate"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="TargetProfile_Frame_RideClient">
+          <Property Name="UnifiedSize" Value="{{1.000000,-18.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,168.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="TargetProfile_Frame_Ride_SubtitleText">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{GRYM_221213_140}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TargetProfile_Frame_Ride_Object1">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,24.000000}}"/>
+            <Event Name="MouseLButtonDown" Function="TargetProfile_Ride_ObjectClick(1);"/>
+            <Window Type="TLBB_Animate" Name="TargetProfile_Frame_Ride_Object1Luxury">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="NewExterior_Ride_Animate"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetProfile_Frame_Ride_Object1Time">
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-16.000000},{1.000000,-15.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_xianshi"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TargetProfile_Frame_Ride_Object2">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,24.000000}}"/>
+            <Event Name="MouseLButtonDown" Function="TargetProfile_Ride_ObjectClick(2);"/>
+            <Window Type="TLBB_Animate" Name="TargetProfile_Frame_Ride_Object2Luxury">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="NewExterior_Ride_Animate"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetProfile_Frame_Ride_Object2Time">
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-16.000000},{1.000000,-15.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_xianshi"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TargetProfile_Frame_Ride_Object3">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+            <Event Name="MouseLButtonDown" Function="TargetProfile_Ride_ObjectClick(3);"/>
+            <Window Type="TLBB_Animate" Name="TargetProfile_Frame_Ride_Object3Luxury">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="NewExterior_Ride_Animate"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetProfile_Frame_Ride_Object3Time">
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-16.000000},{1.000000,-15.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_xianshi"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TargetProfile_Frame_Ride_Object4">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,24.000000}}"/>
+            <Event Name="MouseLButtonDown" Function="TargetProfile_Ride_ObjectClick(4);"/>
+            <Window Type="TLBB_Animate" Name="TargetProfile_Frame_Ride_Object4Luxury">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="NewExterior_Ride_Animate"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetProfile_Frame_Ride_Object4Time">
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-16.000000},{1.000000,-15.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_xianshi"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TargetProfile_Frame_Ride_Object5">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,24.000000}}"/>
+            <Event Name="MouseLButtonDown" Function="TargetProfile_Ride_ObjectClick(5);"/>
+            <Window Type="TLBB_Animate" Name="TargetProfile_Frame_Ride_Object5Luxury">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="NewExterior_Ride_Animate"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetProfile_Frame_Ride_Object5Time">
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-16.000000},{1.000000,-15.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_xianshi"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TargetProfile_Frame_Ride_Object6">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,24.000000}}"/>
+            <Event Name="MouseLButtonDown" Function="TargetProfile_Ride_ObjectClick(6);"/>
+            <Window Type="TLBB_Animate" Name="TargetProfile_Frame_Ride_Object6Luxury">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="NewExterior_Ride_Animate"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetProfile_Frame_Ride_Object6Time">
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-16.000000},{1.000000,-15.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_xianshi"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="TargetProfile_Frame_WeaponClient">
+          <Property Name="UnifiedSize" Value="{{1.000000,-18.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,9.000000},{0.000000,242.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleMulitiTextFrame" Name="TargetProfile_Frame_Weapon_SubtitleText">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{GRYM_221213_141}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TargetProfile_Frame_Weapon_Object1">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,24.000000}}"/>
+            <Event Name="MouseLButtonDown" Function="TargetProfile_Weapon_ObjectClick(1)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetProfile_Frame_Weapon_Object1Time">
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-16.000000},{1.000000,-15.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_xianshi"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TargetProfile_Frame_Weapon_Object2">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,24.000000}}"/>
+            <Event Name="MouseLButtonDown" Function="TargetProfile_Weapon_ObjectClick(2)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetProfile_Frame_Weapon_Object2Time">
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-16.000000},{1.000000,-15.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_xianshi"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TargetProfile_Frame_Weapon_Object3">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+            <Event Name="MouseLButtonDown" Function="TargetProfile_Weapon_ObjectClick(3)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetProfile_Frame_Weapon_Object3Time">
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-16.000000},{1.000000,-15.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_xianshi"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TargetProfile_Frame_Weapon_Object4">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,120.000000},{0.000000,24.000000}}"/>
+            <Event Name="MouseLButtonDown" Function="TargetProfile_Weapon_ObjectClick(4)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetProfile_Frame_Weapon_Object4Time">
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-16.000000},{1.000000,-15.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_xianshi"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TargetProfile_Frame_Weapon_Object5">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,24.000000}}"/>
+            <Event Name="MouseLButtonDown" Function="TargetProfile_Weapon_ObjectClick(5)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetProfile_Frame_Weapon_Object5Time">
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-16.000000},{1.000000,-15.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_xianshi"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="TargetProfile_Frame_Weapon_Object6">
+            <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,24.000000}}"/>
+            <Event Name="MouseLButtonDown" Function="TargetProfile_Weapon_ObjectClick(6)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="TargetProfile_Frame_Weapon_Object6Time">
+              <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-16.000000},{1.000000,-15.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:NewExterior3 image:NewExterior_jiaobiao_xianshi"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="TargetProfile_Checkbox_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,24.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{1.000000,-25.000000}}"/>
+      <Window Type="TLBB_ButtonPageDown" Name="TargetProfile_SelfEquip">
+        <Property Name="AbsolutePosition" Value="x:0.0 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Text" Value="#{INTERFACE_XML_13}" />
+        <Property Name="HorzLabelFormatting" Value="WordWrapCentreAligned" />
+        <Property Name="MouseRButtonHollow" Value="true" />
+        <Event Name="MouseButtonUp" Function="TargetProfile_OnPageClicked(1);" />
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="TargetProfile_TargetProfile">
+        <Property Name="AbsolutePosition" Value="x:42.0 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Text" Value="#{INTERFACE_XML_7}" />
+        <Property Name="MouseRButtonHollow" Value="true" />
+        <Property Name="Selected" Value="true" />
+        <Event Name="MouseButtonUp" Function="TargetProfile_OnPageClicked(2);" />
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="TargetProfile_Pet">
+        <Property Name="AbsolutePosition" Value="x:84.0 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Text" Value="#{INTERFACE_XML_12}" />
+        <Property Name="MouseRButtonHollow" Value="true" />
+        <Event Name="MouseButtonUp" Function="TargetProfile_OnPageClicked(3);" />
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="TargetProfile_TargetWuhun">
+        <Property Name="AbsolutePosition" Value="x:126.0 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Text" Value="#{WH_xml_XX(95)}" />
+        <Property Name="MouseRButtonHollow" Value="true" />
+        <Event Name="MouseButtonUp" Function="TargetProfile_OnPageClicked(4);" />
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="TargetProfile_Lingyu">
+        <Property Name="AbsolutePosition" Value="x:168.0 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Text" Value="#{SZXT_221216_22}" />
+        <Property Name="Selected" Value="true" />
+        <Property Name="MouseRButtonHollow" Value="true" />
+        <Event Name="MouseButtonUp" Function="TargetProfile_OnPageClicked(5);" />
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="TargetProfile_TargetWeapon2">
+        <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{SBFW_20230707_1}" />
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Event Name="MouseButtonUp" Function="TargetProfile_OnPageClicked(6)"/>
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="TargetProfile_TargetDWJinJie">
+        <Property Name="AbsolutePosition" Value="x:252.0 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Text" Value="#{DWJJ_240329_153}" />
+        <Property Name="MouseRButtonHollow" Value="true" />
+        <Event Name="MouseButtonUp" Function="TargetProfile_OnPageClicked(7);" />
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="TargetProfile_Peak">
+        <Property Name="AbsolutePosition" Value="x:294.0 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Text" Value="#{DFJC_250709_1}" />
+        <Property Name="MouseRButtonHollow" Value="true" />
+        <Event Name="MouseButtonUp" Function="TargetProfile_OnPageClicked(8);" />
+      </Window>
+      <Window Type="TLBB_ButtonPageDown" Name="TargetProfile_Profile">
+        <Property Name="AbsolutePosition" Value="x:336.0 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="CheckMode" Value="1" />
+        <Property Name="Text" Value="#{GRYM_221213_22}" />
+        <Property Name="MouseRButtonHollow" Value="true" />
+        <Event Name="MouseButtonUp" Function="TargetProfile_OnPageClicked(9);" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

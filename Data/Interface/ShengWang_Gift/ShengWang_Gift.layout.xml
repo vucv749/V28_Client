@@ -1,0 +1,178 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="ShengWang_GiftFrame">
+    <Property Name="UnifiedSize" Value="{{0.000000,596.000000},{0.000000,376.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-292.000000},{0.500000,-160.000000}}"/>
+    <Event Name="Hidden" Function="ShengWang_Gift_OnHidden();"/>
+    <Window Type="TLBB_DragTitle" Name="ShengWang_GiftDragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{SWXT_221213_201}"/>
+      <Property Name="DragTarget" Value="ShengWang_GiftFrame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="ShengWang_GiftHelp">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function=""/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="ShengWang_GiftClose">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="ShengWang_GiftOnClose()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="ShengWang_GiftClient">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Window Type="DefaultWindow" Name="ShengWang_GiftClientBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="ShengWang_GiftClientBK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,584.000000},{0.000000,320.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:NewZhuXian_Task image:NewZhuXian_BK"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShengWang_GiftInfo">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,68.000000}}"/>
+        <Property Name="Text" Value="#{SWXT_221213_210}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+      <Window Type="TLBB_Frame_Lace9" Name="ShengWang_GiftGift">
+        <Property Name="UnifiedSize" Value="{{0.000000,500.000000},{0.000000,142.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-250.000000},{0.000000,108.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="ShengWang_GiftGift1_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.500000,-38.000000}}"/>
+          <Event Name="Clicked" Function="ShengWang_Gift1_Select(1);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ShengWang_GiftGift1_Icon_Mask">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ShengWang_GiftGift2_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,108.000000},{0.500000,-38.000000}}"/>
+          <Event Name="Clicked" Function="ShengWang_Gift1_Select(2);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ShengWang_GiftGift2_Icon_Mask">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ShengWang_GiftGift3_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,186.000000},{0.500000,-38.000000}}"/>
+          <Event Name="Clicked" Function="ShengWang_Gift1_Select(3);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ShengWang_GiftGift3_Icon_Mask">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ShengWang_GiftGift4_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,264.000000},{0.500000,-38.000000}}"/>
+          <Event Name="Clicked" Function="ShengWang_Gift1_Select(4);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ShengWang_GiftGift4_Icon_Mask">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ShengWang_GiftGift5_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,342.000000},{0.500000,-38.000000}}"/>
+          <Event Name="Clicked" Function="ShengWang_Gift1_Select(5);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ShengWang_GiftGift5_Icon_Mask">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="ShengWang_GiftGift6_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.500000,-38.000000}}"/>
+          <Event Name="Clicked" Function="ShengWang_Gift1_Select(6);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ShengWang_GiftGift6_Icon_Mask">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShengWang_GiftGift1_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{1.000000,-42.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShengWang_GiftGift2_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,94.000000},{1.000000,-42.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShengWang_GiftGift3_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{1.000000,-42.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShengWang_GiftGift4_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,250.000000},{1.000000,-42.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShengWang_GiftGift5_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,326.000000},{1.000000,-42.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShengWang_GiftGift6_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,404.000000},{1.000000,-42.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon11" Name="ShengWang_GiftGift_Select">
+        <Property Name="UnifiedSize" Value="{{0.000000,68.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-34.000000},{1.000000,-50.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Text" Value="#{SWXT_221213_204}"/>
+        <Event Name="Clicked" Function="ShengWang_GiftConfirm()"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

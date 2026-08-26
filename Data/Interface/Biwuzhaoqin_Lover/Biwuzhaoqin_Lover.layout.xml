@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame_Affection1" Name="Biwuzhaoqin_Lover_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,646.000000},{0.000000,265.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-323.000000},{0.500000,-290.000000}}"/>
+        <Window Type="TLBB_TitleLace_Affection0" Name="Biwuzhaoqin_Lover_DragTitleBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,420.000000},{0.000000,31.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-210.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_DragTitle" Name="Biwuzhaoqin_Lover_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="Biwuzhaoqin_Lover_Frame" />
+            <Property Name="Font" Value="YouYuan11.25" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="Text" Value="#{BWZQ_20230329_246}" />
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="Biwuzhaoqin_Lover_Help">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonHelp" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Biwuzhaoqin_Lover&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="Biwuzhaoqin_Lover_Close">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonClose" />
+            <Event Name="Clicked" Function="NewUserCard_Close();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="Biwuzhaoqin_Lover_Text_Frame">
+            <Property Name="AbsolutePosition" Value="x:6.000000 y:36.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}" />
+            <Window Type="TLBB_StaticImageNULL" Name="Biwuzhaoqin_Lover_BK">
+                <Property Name="UnifiedSize" Value="{{0.000000,636.000000},{0.000000,210.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Biwuzhaoqin image:BWZQ_diban"/>
+
+                <Window Type="TLBB_Animate" Name="Biwuzhaoqin_Lover_Animate1">
+                    <Property Name="UnifiedSize" Value="{{0.000000,271.000000},{0.000000,100.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-272.000000},{0.000000,79.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Animate" Value="BWZQ_ZXR"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_Animate" Name="Biwuzhaoqin_Lover_Animate2">
+                    <Property Name="UnifiedSize" Value="{{0.000000,273.000000},{0.000000,100.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,23.000000},{0.000000,79.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="Animate" Value="BWZQ_WQK"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Lover_Text3">
+                    <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,118.000000},{0.000000,145.000000}}"/>
+                    <Property Name="Text" Value="#{BWZQ_20230329_248}" />
+                    <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Lover_Text4">
+                    <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1,-208.000000},{0.000000,145.000000}" />
+                    <Property Name="Text" Value="#{BWZQ_20230329_250}" />
+                    <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_StopWatch" Name="Biwuzhaoqin_Lover_Watch">
+                    <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,380.000000},{0.500000,72.000000}}"/>
+                    <Property Name="Text" Value="00:00"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                    <Event Name="ReachedZero" Function="Biwuzhaoqin_Lover_OnTimerEnd();"/>
+                </Window>
+
+                <Window Type="TLBB_SimpleText" Name="Biwuzhaoqin_Lover_Text5">
+                    <Property Name="UnifiedSize" Value="{{0.000000,260.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0,110.000000},{0.500000,72.000000}" />
+                    <Property Name="Text" Value="#{BWZQ_20230329_371}" />
+                    <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

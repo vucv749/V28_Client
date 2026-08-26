@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Makefriends_Activity_WatchMini_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,28.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.0,-350.000000},{1.0,-150.000000}}"/>
+    <Property Name="AttachEnabled" Value="true" />
+    <Window Type="TLBB_DragTitle" Name="Makefriends_Activity_WatchMini_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,3.000000}}"/>
+      <Property Name="UnifiedSize" Value="{{1.0,-28.000000},{0.000000,20.000000}}"/>
+      <Property Name="DragTarget" Value="Makefriends_Activity_WatchMini_Frame" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_SimpleText" Name="Makefriends_Activity_WatchMini_Page Header">
+        <Property Name="Position" Value="x:0.0 y:0.0" />
+        <Property Name="Size" Value="w:1.0 h:1.0" />
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{JYHD_230331_176}" />
+      </Window>
+    </Window>
+    <Window Type="TLBB_Frame2" Name="Makefriends_Activity_WatchMini">
+      <Property Name="UnifiedSize" Value="{{1.0,0.000000},{1.0,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0.000000}}"/>
+      <Window Type="TLBB_ButtonNULL" Name="Makefriends_Activity_WatchMini_Small">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.500000,-8.000000}}" />
+        <Property Name="PushedImage" Value="set:SongLiao02 image:Up_Pushed"/>
+        <Property Name="NormalImage" Value="set:SongLiao02 image:Up_Normal"/>
+        <Property Name="HoverImage" Value="set:SongLiao02 image:Up_Hover"/>
+        <Property Name="DisabledImage" Value="set:SongLiao02 image:Up_Disabled"/>
+        <Event Name="Clicked" Function="Makefriends_Activity_WatchMini_OnShowNormalUI()"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

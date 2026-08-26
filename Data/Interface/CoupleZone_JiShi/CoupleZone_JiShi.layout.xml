@@ -1,0 +1,328 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection0" Name="CoupleZone_JiShi_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,898.000000},{0.000000,612.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-449.000000},{0.500000,-306.000000}}"/>
+    <Event Name="Hidden" Function="CoupleZone_JiShi_OnClose()"/>
+    <Window Type="DefaultWindow" Name="CoupleZone_JiShi_MainFrame">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_TitleLace_Affection0" Name="CoupleZone_JiShi_DragTitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,320.000000},{0.000000,31.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-160.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+      <Window Type="TLBB_DragTitle" Name="CoupleZone_JiShi_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,11.000000}}"/>
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="Text" Value="#{QLKJ_230331_31}" />
+        <Property Name="DragTarget" Value="CoupleZone_JiShi_Frame"/>
+      </Window>
+      <Window Type="TLBB_ButtonClose" Name="CoupleZone_JiShi_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="CoupleZone_JiShi_OnClose()" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="CoupleZone_JiShi_Help">
+        <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,850.000000},{0.000000,55.000000}}"/>
+        <Property Name="PushedImage" Value="set:CommonFrame38 image:Affection_Help_Pushed"/>
+        <Property Name="NormalImage" Value="set:CommonFrame38 image:Affection_Help_Normal"/>
+        <Property Name="HoverImage" Value="set:CommonFrame38 image:Affection_Help_Hover"/>
+        <Property Name="DisabledImage" Value="set:CommonFrame38 image:Affection_Help_Disabled"/>        
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="CoupleZone_JiShi_OnClickedHelp()"/>
+      </Window>
+      <Window Type="TLBB_ButtonHelp" Name="CoupleZone_JiShi_Help2">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>          
+      <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_JiShi_Client">
+        <Property Name="UnifiedSize" Value="{{0.000000,886.000000},{0.000000,560.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+        <Property Name="Image" Value="set:CoupleZone1 image:JH_BK"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_SimpleText" Name="CoupleZone_JiShi_Bijian_TextNUM">
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,19.000000},{0.000000,231.000000}}"/>
+          <Property Name="Text" Value="#{QLKJ_230331_38}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>             
+        <Window Type="TLBB_SimpleText" Name="CoupleZone_JiShi_Xieshou_TextNUM">
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,19.000000},{0.000000,506.000000}}"/>
+          <Property Name="Text" Value="#{QLKJ_230331_38}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>                 
+        <Window Type="DefaultWindow" Name="CoupleZone_JiShi_Item1">
+          <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,164.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,14.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_JiShi_Item1_Img1">
+            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,150.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-75.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CoupleZone1 image:BI1"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_JiShi_Item1_Text1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-54.000000}}"/>
+            <Property Name="Text" Value="#{QLKJ_230331_76}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>     
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_JiShi_Item1_Text2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-16.000000}}"/>
+            <Property Name="Text" Value="#{QLKJ_230331_87}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>            
+        </Window>   
+        <Window Type="DefaultWindow" Name="CoupleZone_JiShi_Item2">
+          <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,164.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,233.000000},{0.000000,84.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_JiShi_Item2_Img1">
+            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,150.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-75.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CoupleZone1 image:BI2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_JiShi_Item2_Text1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-54.000000}}"/>
+            <Property Name="Text" Value="#{QLKJ_230331_77}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>     
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_JiShi_Item2_Text2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-16.000000}}"/>
+            <Property Name="Text" Value="#{QLKJ_230331_87}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>            
+        </Window>      
+        <Window Type="DefaultWindow" Name="CoupleZone_JiShi_Item3">
+          <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,164.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,396.000000},{0.000000,15.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_JiShi_Item3_Img1">
+            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,150.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-78.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CoupleZone1 image:BI3"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_JiShi_Item3_Text1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-55.000000}}"/>
+            <Property Name="Text" Value="#{QLKJ_230331_78}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>     
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_JiShi_Item3_Text2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-16.000000}}"/>
+            <Property Name="Text" Value="#{QLKJ_230331_87}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>            
+        </Window>   
+        <Window Type="DefaultWindow" Name="CoupleZone_JiShi_Item4">
+          <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,164.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,560.000000},{0.000000,81.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_JiShi_Item4_Img1">
+            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,150.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-78.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CoupleZone1 image:BI4"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_JiShi_Item4_Text1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-53.000000}}"/>
+            <Property Name="Text" Value="#{QLKJ_230331_79}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>     
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_JiShi_Item4_Text2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-16.000000}}"/>
+            <Property Name="Text" Value="#{QLKJ_230331_87}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>            
+        </Window>     
+        <Window Type="DefaultWindow" Name="CoupleZone_JiShi_Item5">
+          <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,164.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,702.000000},{0.000000,13.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_JiShi_Item5_Img1">
+            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,150.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-75.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CoupleZone1 image:BI5"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_JiShi_Item5_Text1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-54.000000}}"/>
+            <Property Name="Text" Value="#{QLKJ_230331_80}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>     
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_JiShi_Item5_Text2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-16.000000}}"/>
+            <Property Name="Text" Value="#{QLKJ_230331_87}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>            
+        </Window>  
+        <Window Type="DefaultWindow" Name="CoupleZone_JiShi_Item6">
+          <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,164.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,74.000000},{0.000000,294.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_JiShi_Item6_Img1">
+            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,150.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-75.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CoupleZone1 image:Shou1"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_JiShi_Item6_Text1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-56.000000}}"/>
+            <Property Name="Text" Value="#{QLKJ_230331_71}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>     
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_JiShi_Item6_Text2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-16.000000}}"/>
+            <Property Name="Text" Value="#{QLKJ_230331_87}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>            
+        </Window>   
+        <Window Type="DefaultWindow" Name="CoupleZone_JiShi_Item7">
+          <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,164.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,235.000000},{0.000000,360.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_JiShi_Item7_Img1">
+            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,150.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-75.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CoupleZone1 image:Shou2"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_JiShi_Item7_Text1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-53.000000}}"/>
+            <Property Name="Text" Value="#{QLKJ_230331_72}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>     
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_JiShi_Item7_Text2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-16.000000}}"/>
+            <Property Name="Text" Value="#{QLKJ_230331_87}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>            
+        </Window>      
+        <Window Type="DefaultWindow" Name="CoupleZone_JiShi_Item8">
+          <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,164.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,397.000000},{0.000000,293.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_JiShi_Item8_Img1">
+            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,150.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-77.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CoupleZone1 image:Shou3"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_JiShi_Item8_Text1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-54.000000}}"/>
+            <Property Name="Text" Value="#{QLKJ_230331_73}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>     
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_JiShi_Item8_Text2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-16.000000}}"/>
+            <Property Name="Text" Value="#{QLKJ_230331_87}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>            
+        </Window>   
+        <Window Type="DefaultWindow" Name="CoupleZone_JiShi_Item9">
+          <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,164.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,558.000000},{0.000000,360.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_JiShi_Item9_Img1">
+            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,150.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-77.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CoupleZone1 image:Shou4"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_JiShi_Item9_Text1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-53.000000}}"/>
+            <Property Name="Text" Value="#{QLKJ_230331_74}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>     
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_JiShi_Item9_Text2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-16.000000}}"/>
+            <Property Name="Text" Value="#{QLKJ_230331_87}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>            
+        </Window>     
+        <Window Type="DefaultWindow" Name="CoupleZone_JiShi_Item10">
+          <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,164.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,700.000000},{0.000000,292.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_StaticImageNULL" Name="CoupleZone_JiShi_Item10_Img1">
+            <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,150.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-73.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CoupleZone1 image:Shou5"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_JiShi_Item10_Text1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-54.000000}}"/>
+            <Property Name="Text" Value="#{QLKJ_230331_75}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>     
+          <Window Type="TLBB_SimpleText" Name="CoupleZone_JiShi_Item10_Text2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,18.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-16.000000}}"/>
+            <Property Name="Text" Value="#{QLKJ_230331_87}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>            
+        </Window>                                                           
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

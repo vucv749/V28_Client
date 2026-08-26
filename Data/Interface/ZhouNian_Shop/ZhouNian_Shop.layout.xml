@@ -1,0 +1,1247 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="ZhouNian_Shop_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,991.000000},{0.000000,552.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-495.000000},{0.500000,-276.000000}}"/>
+    <Event Name="Hidden" Function="ZhouNian_Shop_On_Hide();" />
+    <Window Type="TLBB_HeroTitle01" Name="ZhouNian_Shop_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-86.00000},{0.000000,10.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="ZhouNian_Shop_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-170.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,137.000000},{0.000000,10.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{WYSD_20250807_14}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+      <Property Name="DragTarget" Value="ZhouNian_Shop_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonClose2" Name="ZhouNian_Shop_OnClosed">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,20.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="ZhouNian_Shop_OnClose();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="ZhouNian_Shop_Client">
+      <Property Name="UnifiedSize" Value="{{0.000000,991.000000},{0.000000,552.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="DefaultWindow" Name="ZhouNian_Shop_ClientBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,991.000000},{0.000000,552.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_HeroFrame01" Name="ZhouNian_Shop_ClientBK_1">
+          <Property Name="UnifiedSize" Value="{{0.000000,879.000000},{0.000000,537.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-882.000000},{1.000000,-540.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ClientBK_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,991.000000},{0.000000,552.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,1.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_BK"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ZhouNian_Shop_InfoBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,674.000000},{0.000000,64.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-680.000000},{0.000000,42.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{WYSD_20250807_16}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="ZhouNian_Shop_Help">
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="ZhouNian_Shop_HelpClicked();"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemList">
+        <Property Name="UnifiedSize" Value="{{0.000000,678.000000},{0.000000,374.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-687.000000},{0.000000,110.000000}}"/>
+        <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemFrame1">
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,13.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemBK1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_ItemBK"/>
+            <Window Type="TLBB_ActionButton" Name="ZhouNian_Shop_Item1">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-32.000000}}"/>
+              <Event Name="Clicked" Function="ZhouNian_Shop_Clicked(1);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_BuyLimitNumBK1">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_Item_BuyLimitNum1">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                  <Property Name="Text" Value="%s0"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_Mask1">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemInfo1">
+              <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemText1">
+                <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,12.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Text" Value="#{WYSD_20250807_21}"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_ForeverLimit1">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_WeekLimit1">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item1Info_CostIcon1">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{1.000000,-34.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_CurrencyIcon"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNumText1">
+                <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{1.000000,-30.000000}}"/>
+                <Property Name="Text" Value="#{WYSD_20250807_19}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNum1">
+                  <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{WYSD_20250807_20}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemTips1">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Tooltip" Value="#{}"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemFrame2">
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,229.000000},{0.000000,13.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemBK2">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_ItemBK"/>
+            <Window Type="TLBB_ActionButton" Name="ZhouNian_Shop_Item2">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-32.000000}}"/>
+              <Event Name="Clicked" Function="ZhouNian_Shop_Clicked(2);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_BuyLimitNumBK2">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_Item_BuyLimitNum2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                  <Property Name="Text" Value="%s0"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_Mask2">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemInfo2">
+              <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemText2">
+                <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,12.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Text" Value="#{WYSD_20250807_21}"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_ForeverLimit2">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_WeekLimit2">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item1Info_CostIcon2">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{1.000000,-34.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_CurrencyIcon"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNumText2">
+                <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{1.000000,-30.000000}}"/>
+                <Property Name="Text" Value="#{WYSD_20250807_19}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNum2">
+                  <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{WYSD_20250807_20}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemTips2">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Tooltip" Value="#{}"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemFrame3">
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,454.000000},{0.000000,13.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemBK3">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_ItemBK"/>
+            <Window Type="TLBB_ActionButton" Name="ZhouNian_Shop_Item3">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-32.000000}}"/>
+              <Event Name="Clicked" Function="ZhouNian_Shop_Clicked(3);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_BuyLimitNumBK3">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_Item_BuyLimitNum3">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                  <Property Name="Text" Value="%s0"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_Mask3">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemInfo3">
+              <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemText3">
+                <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,12.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Text" Value="#{WYSD_20250807_21}"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_ForeverLimit3">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_WeekLimit3">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item1Info_CostIcon3">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{1.000000,-34.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_CurrencyIcon"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNumText3">
+                <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{1.000000,-30.000000}}"/>
+                <Property Name="Text" Value="#{WYSD_20250807_19}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNum3">
+                  <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{WYSD_20250807_20}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemTips3">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Tooltip" Value="#{}"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemFrame4">
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,94.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemBK4">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_ItemBK"/>
+            <Window Type="TLBB_ActionButton" Name="ZhouNian_Shop_Item4">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-32.000000}}"/>
+              <Event Name="Clicked" Function="ZhouNian_Shop_Clicked(4);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_BuyLimitNumBK4">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_Item_BuyLimitNum4">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                  <Property Name="Text" Value="%s0"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_Mask4">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemInfo4">
+              <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemText4">
+                <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,12.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Text" Value="#{WYSD_20250807_21}"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_ForeverLimit4">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_WeekLimit4">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item1Info_CostIcon4">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{1.000000,-34.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_CurrencyIcon"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNumText4">
+                <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{1.000000,-30.000000}}"/>
+                <Property Name="Text" Value="#{WYSD_20250807_19}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNum4">
+                  <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{WYSD_20250807_20}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemTips4">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Tooltip" Value="#{}"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemFrame5">
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,229.000000},{0.000000,94.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemBK5">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_ItemBK"/>
+            <Window Type="TLBB_ActionButton" Name="ZhouNian_Shop_Item5">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-32.000000}}"/>
+              <Event Name="Clicked" Function="ZhouNian_Shop_Clicked(5);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_BuyLimitNumBK5">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_Item_BuyLimitNum5">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                  <Property Name="Text" Value="%s0"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_Mask5">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemInfo5">
+              <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemText5">
+                <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,12.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Text" Value="#{WYSD_20250807_21}"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_ForeverLimit5">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_WeekLimit5">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item1Info_CostIcon5">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{1.000000,-34.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_CurrencyIcon"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNumText5">
+                <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{1.000000,-30.000000}}"/>
+                <Property Name="Text" Value="#{WYSD_20250807_19}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNum5">
+                  <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{WYSD_20250807_20}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemTips5">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Tooltip" Value="#{}"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemFrame6">
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,454.000000},{0.000000,94.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemBK6">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_ItemBK"/>
+            <Window Type="TLBB_ActionButton" Name="ZhouNian_Shop_Item6">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-32.000000}}"/>
+              <Event Name="Clicked" Function="ZhouNian_Shop_Clicked(6);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_BuyLimitNumBK6">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_Item_BuyLimitNum6">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                  <Property Name="Text" Value="%s0"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_Mask6">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemInfo6">
+              <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemText6">
+                <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,12.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Text" Value="#{WYSD_20250807_21}"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_ForeverLimit6">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_WeekLimit6">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item1Info_CostIcon6">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{1.000000,-34.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_CurrencyIcon"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNumText6">
+                <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{1.000000,-30.000000}}"/>
+                <Property Name="Text" Value="#{WYSD_20250807_19}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNum6">
+                  <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{WYSD_20250807_20}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemTips6">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Tooltip" Value="#{}"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemFrame7">
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,175.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemBK7">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_ItemBK"/>
+            <Window Type="TLBB_ActionButton" Name="ZhouNian_Shop_Item7">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-32.000000}}"/>
+              <Event Name="Clicked" Function="ZhouNian_Shop_Clicked(7);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_BuyLimitNumBK7">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_Item_BuyLimitNum7">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                  <Property Name="Text" Value="%s0"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_Mask7">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemInfo7">
+              <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemText7">
+                <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,12.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Text" Value="#{WYSD_20250807_21}"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_ForeverLimit7">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_WeekLimit7">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item1Info_CostIcon7">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{1.000000,-34.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_CurrencyIcon"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNumText7">
+                <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{1.000000,-30.000000}}"/>
+                <Property Name="Text" Value="#{WYSD_20250807_19}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNum7">
+                  <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{WYSD_20250807_20}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemTips7">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Tooltip" Value="#{}"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemFrame8">
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,229.000000},{0.000000,175.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemBK8">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_ItemBK"/>
+            <Window Type="TLBB_ActionButton" Name="ZhouNian_Shop_Item8">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-32.000000}}"/>
+              <Event Name="Clicked" Function="ZhouNian_Shop_Clicked(8);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_BuyLimitNumBK8">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_Item_BuyLimitNum8">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                  <Property Name="Text" Value="%s0"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_Mask8">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemInfo8">
+              <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemText8">
+                <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,12.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Text" Value="#{WYSD_20250807_21}"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_ForeverLimit8">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_WeekLimit8">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item1Info_CostIcon8">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{1.000000,-34.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_CurrencyIcon"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNumText8">
+                <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{1.000000,-30.000000}}"/>
+                <Property Name="Text" Value="#{WYSD_20250807_19}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNum8">
+                  <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{WYSD_20250807_20}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemTips8">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Tooltip" Value="#{}"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemFrame9">
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,454.000000},{0.000000,175.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemBK9">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_ItemBK"/>
+            <Window Type="TLBB_ActionButton" Name="ZhouNian_Shop_Item9">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-32.000000}}"/>
+              <Event Name="Clicked" Function="ZhouNian_Shop_Clicked(9);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_BuyLimitNumBK9">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_Item_BuyLimitNum9">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                  <Property Name="Text" Value="%s0"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_Mask9">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemInfo9">
+              <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemText9">
+                <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,12.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Text" Value="#{WYSD_20250807_21}"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_ForeverLimit9">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_WeekLimit9">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item1Info_CostIcon9">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{1.000000,-34.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_CurrencyIcon"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNumText9">
+                <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{1.000000,-30.000000}}"/>
+                <Property Name="Text" Value="#{WYSD_20250807_19}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNum9">
+                  <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{WYSD_20250807_20}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemTips9">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Tooltip" Value="#{}"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemFrame10">
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,256.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemBK10">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_ItemBK"/>
+            <Window Type="TLBB_ActionButton" Name="ZhouNian_Shop_Item10">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-32.000000}}"/>
+              <Event Name="Clicked" Function="ZhouNian_Shop_Clicked(10);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_BuyLimitNumBK10">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_Item_BuyLimitNum10">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                  <Property Name="Text" Value="%s0"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_Mask10">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemInfo10">
+              <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemText10">
+                <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,12.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Text" Value="#{WYSD_20250807_21}"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_ForeverLimit10">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_WeekLimit10">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item1Info_CostIcon10">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{1.000000,-34.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_CurrencyIcon"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNumText10">
+                <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{1.000000,-30.000000}}"/>
+                <Property Name="Text" Value="#{WYSD_20250807_19}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNum10">
+                  <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{WYSD_20250807_20}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemTips10">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Tooltip" Value="#{}"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemFrame11">
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,229.000000},{0.000000,256.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemBK11">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_ItemBK"/>
+            <Window Type="TLBB_ActionButton" Name="ZhouNian_Shop_Item11">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-32.000000}}"/>
+              <Event Name="Clicked" Function="ZhouNian_Shop_Clicked(11);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_BuyLimitNumBK11">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_Item_BuyLimitNum11">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                  <Property Name="Text" Value="%s0"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_Mask11">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemInfo11">
+              <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemText11">
+                <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,12.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Text" Value="#{WYSD_20250807_21}"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_ForeverLimit11">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_WeekLimit11">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item1Info_CostIcon11">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{1.000000,-34.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_CurrencyIcon"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNumText11">
+                <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{1.000000,-30.000000}}"/>
+                <Property Name="Text" Value="#{WYSD_20250807_19}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNum11">
+                  <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{WYSD_20250807_20}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemTips11">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Tooltip" Value="#{}"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemFrame12">
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,76.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,454.000000},{0.000000,256.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemBK12">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_ItemBK"/>
+            <Window Type="TLBB_ActionButton" Name="ZhouNian_Shop_Item12">
+              <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-32.000000}}"/>
+              <Event Name="Clicked" Function="ZhouNian_Shop_Clicked(12);"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_BuyLimitNumBK12">
+                <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,12.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:CommonFrame38 image:ActionButtonNumberBK"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_Item_BuyLimitNum12">
+                  <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,-5.000000}}"/>
+                  <Property Name="Text" Value="%s0"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                </Window>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item_Mask12">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Face_04 image:Remind_Bak"/>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemInfo12">
+              <Property Name="UnifiedSize" Value="{{0.000000,166.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-166.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemText12">
+                <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,12.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Text" Value="#{WYSD_20250807_21}"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_ForeverLimit12">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Forever"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_ItemInfo_WeekLimit12">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:ActivitySchedule image:ActivitySchedule_ShopTips_Week"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_Item1Info_CostIcon12">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{1.000000,-34.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_CurrencyIcon"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNumText12">
+                <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{1.000000,-30.000000}}"/>
+                <Property Name="Text" Value="#{WYSD_20250807_19}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="LeftAligned"/>
+                <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemInfo_CostNum12">
+                  <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,0.000000}}"/>
+                  <Property Name="Text" Value="#{WYSD_20250807_20}"/>
+                  <Property Name="RiseOnClick" Value="False"/>
+                  <Property Name="HorzFormatting" Value="LeftAligned"/>
+                </Window>
+              </Window>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_ItemTips12">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Tooltip" Value="#{}"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="ZhouNian_Shop_ItemPageFrame">
+          <Property Name="UnifiedSize" Value="{{0.000000,202.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-101.000000},{1.000000,-33.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_Fashion_Auction_ButtonSmall" Name="ZhouNian_Shop_ItemUpPage">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-11.000000}}"/>
+            <Property Name="Text" Value="#{WYSD_20250807_23}"/>
+            <Event Name="Clicked" Function="ZhouNian_Shop_PrevPage();"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="ZhouNian_ItemShop_PageNum">
+            <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.500000,-11.000000}}"/>
+            <Property Name="Text" Value="#{WYSD_20250807_24}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_Fashion_Auction_ButtonSmall" Name="ZhouNian_Shop_ItemDownPage">
+            <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-64.000000},{0.500000,-11.000000}}"/>
+            <Property Name="Text" Value="#{WYSD_20250807_25}"/>
+            <Event Name="Clicked" Function="ZhouNian_Shop_NextPage();"/>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_Currency_MaxWeek">
+        <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{1.000000,-56.000000}}"/>
+        <Property Name="Tooltip" Value="#{WYSD_20250807_27}"/>
+        <Property Name="Text" Value="#{WYSD_20250807_26}"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_Currency_MaxDay">
+        <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{1.000000,-36.000000}}"/>
+        <Property Name="Tooltip" Value="#{WYSD_20250807_74}"/>
+        <Property Name="Text" Value="#{WYSD_20250807_73}"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="ZhouNian_Shop_CurrencyFrame">
+        <Property Name="UnifiedSize" Value="{{0.000000,246.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-264.000000},{1.000000,-48.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="ZhouNian_Shop_CurrencyIcon">
+          <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-12.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:ZhouNian_Shop image:ZhouNian_Shop_CurrencyIcon"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ZhouNian_Shop_Currency">
+          <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.500000,-11.000000}}"/>
+          <Property Name="Text" Value="#{WYSD_20250807_75}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_Fashion_Auction_ButtonBig" Name="ZhouNian_Shop_Currency_Buy">
+          <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-96.000000},{0.500000,-12.000000}}"/>
+          <Property Name="Text" Value="#{WYSD_20250807_66}"/>
+          <Event Name="Clicked" Function="ZhouNian_Shop_Currency_BuyClicked();"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="ZhouNian_Shop_Review">
+        <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,32.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,253.000000},{0.000000,414.000000}}"/>
+        <Property Name="PushedImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_P"/>
+        <Property Name="NormalImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_N"/>
+        <Property Name="HoverImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_H"/>
+        <Property Name="DisabledImage" Value="set:Dahua_Incom01 image:Dahua_Incom_View_D"/>
+        <Event Name="Clicked" Function="ZhouNian_Shop_ReviewClicked();"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

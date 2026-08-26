@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Kunwu_PVPTopList_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,500.000000},{0.000000,300.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-250.000000},{0.500000,-210.000000}}"/>
+    <Window Type="TLBB_FrameY" Name="Kunwu_PVPTopList_FrameBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,280.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}}"/>
+      <Window Type="TLBB_DragTitle" Name="Kunwu_PVPTopList_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-88.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,44.000000},{0.000000,4.000000}}"/>
+        <Property Name="DragTarget" Value="Kunwu_PVPTopList_Frame" />
+        <Window Type="TLBB_SimpleText" Name="Kunwu_PVPTopList_PageHeader">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Font" Value="YouYuan11.25" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="Text" Value="#{ZSYC_241211_151}" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonClose" Name="Kunwu_PVPTopList_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,6.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="Kunwu_PVPTopList_CloseClick()"/>
+      </Window>
+      <Window Type="TLBB_Frame_Lace3" Name="Kunwu_PVPTopList_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-23.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,23.000000}}"/>
+        <Window Type="TLBB_MultiColumnList" Name="Kunwu_PVPTopList_List">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+          <Property Name="SortSettingEnabled" Value="False" />
+          <Property Name="ColumnHeader" Value="text:#{ZSYC_241211_152} width:0.2 id:0" />
+          <Property Name="ColumnHeader" Value="text:#{ZSYC_241211_153} width:0.4 id:1" />
+          <Property Name="ColumnHeader" Value="text:#{ZSYC_241211_155} width:0.2 id:2" />
+          <Property Name="ColumnHeader" Value="text:#{ZSYC_241211_157} width:0.2 id:3" />
+          <Property Name="ForceHorzScrollbar" Value="False" />
+          <Property Name="ForceVertScrollbar" Value="True" />
+          <Property Name="ColumnsSizable" Value="False" />
+          <Property Name="ColumnsAdjust" Value="True" />
+          <Property Name="ColumnsMovable" Value="False" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Kunwu_PVPTopList_My">
+          <Property Name="UnifiedSize" Value="{{1.000000,-46.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.000000,-22.000000}}"/>
+          <Property Name="Text" Value="#{个人击杀数量：%s0 }"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Kunwu_PVPTopList_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-46.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{1.000000,-22.000000}}"/>
+          <Property Name="Text" Value="#{ZSYC_241211_159}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

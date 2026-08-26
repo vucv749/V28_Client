@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="Redenvelope_HistoryList_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,710.000000},{0.000000,514.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-360.000000},{0.500000,-257.000000}}" />
+    <Event Name="Hidden" Function="Redenvelope_HistoryList_OnHidden()"/>
+    <Window Type="TLBB_DragTitle" Name="Redenvelope_HistoryList_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-57.000000},{0.000000,27.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,28.000000},{0.000000,3.000000}}"/>
+      <Property Name="Text" Value="#{HBXTS_221214_31}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="DragTarget" Value="Redenvelope_HistoryList_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Redenvelope_HistoryList_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="Redenvelope_HistoryList_BK">
+      <Property Name="UnifiedSize" Value="{{0.000000,694.000000},{0.000000,257.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-347.000000},{0.000000,237.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="Image" Value="set:Redenvelope image:History_BK"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Redenvelope_HistoryList_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Event Name="Clicked" Function="Redenvelope_HistoryList_OnClose()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Redenvelope_HistoryList_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-50.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,30.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_Frame_Lace1" Name="Redenvelope_HistoryList_ListBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,5.000000}}"/>
+        <Window Type="TLBB_NotSuperList" Name="Redenvelope_HistoryList">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-8.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,4.000000}}" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="MultiColumn" Value="4" />
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Window Type="TLBB_NotSuperListItemCommon3" Name="Redenvelope_HistoryList_Item">
+            <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,182.000000}}" />
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+            <Window Type="TLBB_StaticImageNULL" Name="Redenvelope_HistoryList_Type">
+              <Property Name="UnifiedSize" Value="{{0.0000000,62.000000},{0.000000,27.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.5000000,-31.000000},{0.000000,83.000000}}" />
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Redenvelope image:History_Fortune"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Redenvelope_HistoryList_WideRange">
+              <Property Name="UnifiedSize" Value="{{0.0000000,49.000000},{0.000000,28.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.500000,-25.000000},{0.000000,145.000000}}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Redenvelope image:History_World"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Redenvelope_HistoryList_Name">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}" />
+              <Property Name="UnifiedPosition" Value="{{0.5000000,-50.000000},{0.000000,120.000000}}" />
+              <Property Name="Text" Value="名字要有七个字" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="Redenvelope_HistoryList_GetBtn">
+              <Property Name="UnifiedSize" Value="{{0.000000,126.000000},{0.000000,182.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+              <Property Name="PushedImage" Value="set:Redenvelope image:HistoryButton_Yuanbao_Pushed"/>
+              <Property Name="NormalImage" Value="set:Redenvelope image:HistoryButton_Yuanbao_Normal"/>
+              <Property Name="HoverImage" Value="set:Redenvelope image:HistoryButton_Yuanbao_Hover"/>
+              <Event Name="Clicked" Function="Redenvelope_HistoryList_Get()" />
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Redenvelope_HistoryList_Received">
+              <Property Name="UnifiedSize" Value="{{0.000000,41.000000},{0.000000,34.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-45.000000},{0.000000,39.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Redenvelope image:Received"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Redenvelope_HistoryList_Empty">
+              <Property Name="UnifiedSize" Value="{{0.000000,41.000000},{0.000000,34.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{1.000000,-45.000000},{0.000000,39.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Redenvelope image:Empty"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Redenvelope_HistoryList_RefreshBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.5000000,-40.000000},{1.000000,-29.000000}}"/>
+        <Property Name="Text" Value="#{HBXTS_221214_32}"/>
+        <Event Name="Clicked" Function="Redenvelope_HistoryList_RefreshClicked()" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

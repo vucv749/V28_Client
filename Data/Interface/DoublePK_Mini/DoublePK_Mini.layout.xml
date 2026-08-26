@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection2" Name="DoublePK_Mini_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,286.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-400.000000},{0.500000,0.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="DoublePK_Mini_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
+      <Property Name="Text" Value="#{SRPK_230331_205}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="InterfaceName2_Frame"/>
+    </Window>
+    <Window Type="TLBB_Affection_ButtonMiniMize" Name="DoublePK_Mini_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-24.000000},{0.000000,8.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="DoublePK_Mini_Close();"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="DoublePK_Mini">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_SimpleText" Name="DoublePK_Mini_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,120.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+        <Property Name="Text" Value="#{SRPK_230331_307}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_Affection_ListLine" Name="DoublePK_Mini_InfoBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,13.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,110.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="HorzStretched"/>
+      </Window>
+      <Window Type="TLBB_Affection_MultiColumnList" Name="DoublePK_Mini_ListTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,22.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,124.000000}}" />
+        <Property Name="ForceHorzScrollbar" Value="False" />
+        <Property Name="SortSettingEnabled" Value="False" />
+        <Property Name="SelectionMode" Value="RowSingle" />
+        <Property Name="ColumnHeader" Value="text: width:0.16 id:0" />
+        <Property Name="ColumnHeader" Value="text: width:0.12 id:1" />
+        <Property Name="ColumnHeader" Value="text: width:0.12 id:2" />
+        <Property Name="ColumnHeader" Value="text: width:0.12 id:3" />
+        <Property Name="ColumnHeader" Value="text: width:0.12 id:4" />
+        <Property Name="ColumnHeader" Value="text: width:0.12 id:5" />
+        <Property Name="ColumnHeader" Value="text: width:0.12 id:6" />
+        <Property Name="ColumnHeader" Value="text: width:0.12 id:7" />
+        <Property Name="ColumnsSizable" Value="False" />
+        <Property Name="ColumnsMovable" Value="False" />
+        <Property Name="ColumnsAdjust" Value="True" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Window Type="TLBB_SimpleText" Name="DoublePK_Mini_PageHeader">
+          <Property Name="UnifiedSize" Value="{{0.160000,0.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{SRPK_230331_308}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePK_Mini_PageHeader1">
+          <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.160000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{SRPK_230331_310}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePK_Mini_PageHeader2">
+          <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.280000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{SRPK_230331_311}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePK_Mini_PageHeader3">
+          <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.400000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{SRPK_230331_312}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePK_Mini_PageHeader4">
+          <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.520000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{SRPK_230331_313}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePK_Mini_PageHeader5">
+          <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.640000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{SRPK_230331_314}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePK_Mini_PageHeader6">
+          <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.760000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{SRPK_230331_315}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePK_Mini_PageHeader7">
+          <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.880000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{SRPK_230331_316}" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Affection_MultiColumnList" Name="DoublePK_Mini_List">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,22.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,147.000000}}" />
+        <Property Name="ForceHorzScrollbar" Value="False" />
+        <Property Name="SortSettingEnabled" Value="False" />
+        <Property Name="SelectionMode" Value="RowSingle" />
+        <Property Name="ColumnHeader" Value="text: width:0.16 id:0" />
+        <Property Name="ColumnHeader" Value="text: width:0.12 id:1" />
+        <Property Name="ColumnHeader" Value="text: width:0.12 id:2" />
+        <Property Name="ColumnHeader" Value="text: width:0.12 id:3" />
+        <Property Name="ColumnHeader" Value="text: width:0.12 id:4" />
+        <Property Name="ColumnHeader" Value="text: width:0.12 id:5" />
+        <Property Name="ColumnHeader" Value="text: width:0.12 id:6" />
+        <Property Name="ColumnHeader" Value="text: width:0.12 id:7" />
+        <Property Name="ColumnsSizable" Value="False" />
+        <Property Name="ColumnsMovable" Value="False" />
+        <Property Name="ColumnsAdjust" Value="True" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Window Type="TLBB_SimpleText" Name="DoublePK_Mini_PageHeaderText">
+          <Property Name="UnifiedSize" Value="{{0.160000,0.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{SRPK_230331_309}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePK_Mini_PageHeaderText1">
+          <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.160000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{SRPK_230331_310}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePK_Mini_PageHeaderText2">
+          <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.280000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{SRPK_230331_311}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePK_Mini_PageHeaderText3">
+          <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.400000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{SRPK_230331_312}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePK_Mini_PageHeaderText4">
+          <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.520000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{SRPK_230331_313}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePK_Mini_PageHeaderText5">
+          <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.640000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{SRPK_230331_314}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePK_Mini_PageHeaderText6">
+          <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.760000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{SRPK_230331_315}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="DoublePK_Mini_PageHeaderText7">
+          <Property Name="UnifiedSize" Value="{{0.120000,0.000000},{0.000000,22.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.880000,0.000000},{0.000000,0.000000}}" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{SRPK_230331_316}" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DoublePK_Mini_WinText">
+        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,24.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{1.000000,-50.000000}}" />
+        <Property Name="HorzFormatting" Value="WordWrapCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SRPK_230331_318}" />
+      </Window>
+      <Window Type="TLBB_Affection_ButtonCommon" Name="DoublePK_Mini_WinGo">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,80.000000},{1.000000,-50.000000}}" />
+        <Property Name="Text" Value="#{SRPK_230331_322}"/>
+		<Event Name="Clicked" Function="DoublePK_Mini_ClickFighting();"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DoublePK_Mini_PageHeaderTimeText">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-64.000000},{1.000000,-24.000000}}" />
+        <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{SRPK_230331_209}" />
+      </Window>
+      <Window Type="TLBB_StopWatch" Name="DoublePK_Mini_PageHeaderTime">
+        <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,36.000000},{1.000000,-24.000000}}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Event Name="ReachedZero" Function="DoublePK_Mini_TimeOut();" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DoublePK_Mini_PageHeaderTime2">
+        <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,36.000000},{1.000000,-24.000000}}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

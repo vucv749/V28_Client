@@ -1,0 +1,255 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="KunWu_Expedition_ResultFrameBK">
+    <Property Name="UnifiedSize" Value="{{0.000000,370.000000},{0.000000,464.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-240.000000},{0.500000,-232.000000}}"/>
+	<Event Name="Hidden" Function="KunWu_Expedition_Result_OnHidden();" />
+    <Window Type="TLBB_ButtonClose" Name="KunWu_Expedition_Result_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="KunWu_Expedition_Result_Close();"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="KunWu_Expedition_ResultDragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,10.000000}}"/>
+      <Property Name="Text" Value=""/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="KunWu_Expedition_ResultFrameBK"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="KunWu_Expedition_Result_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Helper:GotoHelper();"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_Result_FinishImage">
+      <Property Name="UnifiedSize" Value="{{0.000000,356.000000},{0.000000,122.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-178.000000},{0.000000,38.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="Image" Value="set:KunWu_Expedition01 image:Image_Finish"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="KKunWu_Expedition_Result_StopImage">
+      <Property Name="UnifiedSize" Value="{{0.000000,356.000000},{0.000000,122.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-178.000000},{0.000000,38.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="Visible" Value="False"/>
+      <Property Name="Image" Value="set:KunWu_Expedition01 image:Image_Stop"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="KunWu_Expedition_Result_ReturnBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,356.000000},{1.000000,-145.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,120.000000}}"/>
+      <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_Result_Return_Cost">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+        <Property Name="Text" Value="#{ZSPQ_241216_186}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_Result_Return_NameBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,42.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:KunWu_Expedition01 image:FinishBK"/>
+        <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_Result_Return_Name">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.500000,-9.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{ZSPQ_241216_187}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_Result_Return_NameDot">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-8.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:KunWu_Expedition01 image:Tips_Dot"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_Result_Return_EXP">
+        <Property Name="UnifiedSize" Value="{{1.000000,-200.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,202.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{ZSPQ_241216_89}"/>
+        <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_Result_Return_Story">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,80.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,60.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{ZSPQ_241216_104}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_Result_Return_Ending">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,120.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{ZSPQ_241216_127}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_Result_Return_AwardTitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,200.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:KunWu_Expedition01 image:FinishBK"/>
+        <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_Result_Return_AwardTitleDot">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-8.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:KunWu_Expedition01 image:Tips_Dot"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_Result_Return_AwardTitle">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.500000,-8.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{ZSPQ_241216_90}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="KunWu_Expedition_Result_Return_AwardBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,55.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,227.000000}}"/>
+        <Window Type="TLBB_NotSuperList1" Name="KunWu_Expedition_Result_Return_AwardList">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,5.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MultiColumn" Value="1" />
+          <Property Name="VScrollMode" Value="Hide" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_NotSuperListItemCommon4" Name="KunWu_Expedition_Result_Return_AwardItemBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,42.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="KunWu_Expedition_Result_Return_AwardItem">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="KunWu_Expedition_Result_Return_OKBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-24.000000}}"/>
+        <Property Name="Text" Value="#{ZSPQ_241216_91}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="KunWu_Expedition_Result_Close();"/>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="KunWu_Expedition_Result_StopBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,356.000000},{1.000000,-145.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,120.000000}}"/>
+      <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_Result_Stop_Cost">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+        <Property Name="Text" Value="#{ZSPQ_241216_186}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_Result_Stop_NameBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,42.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:KunWu_Expedition01 image:FinishBK"/>
+        <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_Result_Stop_Name">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.500000,-9.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{ZSPQ_241216_188}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_Result_Stop_NameDot">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-8.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:KunWu_Expedition01 image:Tips_Dot"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_Result_Stop_Ending">
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,60.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,80.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{ZSPQ_241216_128}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_Result_Stop_EXP">
+        <Property Name="UnifiedSize" Value="{{1.000000,-200.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,202.000000}}"/>
+        <Property Name="TextColor" Value="FFFFF263"/>
+        <Property Name="Text" Value="#{ZSPQ_241216_89}"/>
+        <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_Result_Stop_AwardTitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,200.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:KunWu_Expedition01 image:FinishBK"/>
+        <Window Type="TLBB_StaticImageNULL" Name="KunWu_Expedition_Result_Stop_AwardTitleDot">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-8.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:KunWu_Expedition01 image:Tips_Dot"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="KunWu_Expedition_Result_Stop_AwardTitle">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,26.000000},{0.500000,-8.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{ZSPQ_241216_90}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="KunWu_Expedition_Result_Stop_AwardBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,55.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,227.000000}}"/>
+        <Window Type="TLBB_NotSuperList1" Name="KunWu_Expedition_Result_Stop_AwardList">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-10.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,5.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MultiColumn" Value="1" />
+          <Property Name="VScrollMode" Value="Hide" />
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_NotSuperListItemCommon4" Name="KunWu_Expedition_Result_Stop_AwardItemBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+            <Window Type="TLBB_ActionButton" Name="KunWu_Expedition_Result_Stop_AwardItem">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="KunWu_Expedition_Result_Stop_OKBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-24.000000}}"/>
+        <Property Name="Text" Value="#{ZSPQ_241216_91}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Clicked" Function="KunWu_Expedition_Result_Close();"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

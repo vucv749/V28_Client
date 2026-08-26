@@ -1,0 +1,632 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Qixi_HuaJuan_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,1020.000000},{0.000000,670.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-510.000000},{0.500000,-335.000000}}"/>
+    <Event Name="Hidden" Function="Qixi_HuaJuan_Close();" />
+    <Window Type="DefaultWindow" Name="Qixi_HuaJuan_Story_BK">
+      <Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,600.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-300.000000},{0.500000,-300.000000}}"/>
+      <Window Type="TLBB_DragTitle" Name="Qixi_Story_DragTitle_1">
+        <Property Name="UnifiedSize" Value="{{1.000000,-168.000000},{0.000000,37.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,44.000000},{0.000000,59.000000}}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="DragTarget" Value="Qixi_HuaJuan_Frame" />
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Qixi_Story_OnClosed_Btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,56.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,488.000000},{0.000000,46.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:QXHJ2 image:QXHJ2_CloseBtn_P"/>
+        <Property Name="NormalImage" Value="set:QXHJ2 image:QXHJ2_CloseBtn_N"/>
+        <Property Name="HoverImage" Value="set:QXHJ2 image:QXHJ2_CloseBtn_H"/>
+        <Property Name="DisableImage" Value="set:QXHJ2 image:QXHJ2_CloseBtn_D"/>
+        <Event Name="Clicked" Function="Qixi_HuaJuan_Close();" />
+      </Window>
+      <Window Type="DefaultWindow" Name="Qixi_HuaJuan_Story_Client">
+        <Property Name="UnifiedSize" Value="{{0.000000,562.0000000},{0.000000,518.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-281.000000},{0.000000,28.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_Story_BKPic">
+          <Property Name="UnifiedSize" Value="{{0.000000,562.000000},{0.000000,518.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-281.000000},{0.000000,0.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:QXHJ2 image:QXHJ2_Ditu"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="Qixi_HuaJuan_Story_GoBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,154.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,49.000000},{0.000000,325.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="PushedImage" Value="set:QXHJ2 image:QXHJ2_GoToBtn_P"/>
+          <Property Name="NormalImage" Value="set:QXHJ2 image:QXHJ2_GoToBtn_N"/>
+          <Property Name="HoverImage" Value="set:QXHJ2 image:QXHJ2_GoToBtn_H"/>
+          <Property Name="DisabledImage" Value="set:QXHJ2 image:QXHJ2_GoToBtn_D"/>
+          <Event Name="Clicked" Function="Qixi_HuaJuan_Story_Goto();" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="Qixi_HuaJuan_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-2.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+      <Window Type="TLBB_DragTitle" Name="Qixi_Story_DragTitle_2">
+        <Property Name="UnifiedSize" Value="{{0.000000,136.000000},{0.000000,362.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,11.000000},{0.000000,6.000000}}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="DragTarget" Value="Qixi_HuaJuan_Frame" />
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_DragTitle" Name="Qixi_Story_DragTitle_3">
+        <Property Name="UnifiedSize" Value="{{0.000000,838.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,107.000000},{0.000000,29.000000}}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="DragTarget" Value="Qixi_HuaJuan_Frame" />
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Qixi_HuaJuan_Help">
+        <Property Name="UnifiedSize" Value="{{0.000000,22.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,935.000000},{0.000000,63.000000}}"/>
+        <Property Name="PushedImage" Value="set:QXHJ image:QXHJ_HelpBtn_P"/>
+        <Property Name="NormalImage" Value="set:QXHJ image:QXHJ_HelpBtn_N"/>
+        <Property Name="HoverImage" Value="set:QXHJ image:QXHJ_HelpBtn_H"/>
+        <Event Name="Clicked" Function="Qixi_HuaJuan_Help_Clicked();" />
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Qixi_HuaJuan_OnClosed">
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{0.000000,30.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:QXHJ image:QXHJ_CloseBtn_P"/>
+        <Property Name="NormalImage" Value="set:QXHJ image:QXHJ_CloseBtn_N"/>
+        <Property Name="HoverImage" Value="set:QXHJ image:QXHJ_CloseBtn_H"/>
+        <Property Name="DisabledImage" Value="set:QXHJ image:QXHJ_CloseBtn_D"/>
+        <Event Name="Clicked" Function="Qixi_HuaJuan_Close();" />
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_Page">
+        <Property Name="UnifiedSize" Value="{{0.000000,1018.000000},{0.000000,664.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:QXHJ3 image:QXHJ3_BK"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_Mission_1_Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,882.000000},{0.000000,496.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,105.000000},{0.000000,90.000000}}"/>
+          <Property Name="Image" Value="set:QXHJ4 image:QXHJ4_DiTu_1"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_Mission_2_Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,882.000000},{0.000000,496.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,105.000000},{0.000000,90.000000}}"/>
+          <Property Name="Image" Value="set:QXHJ4 image:QXHJ4_DiTu_2"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_Mission_3_Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,882.000000},{0.000000,496.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,105.000000},{0.000000,90.000000}}"/>
+          <Property Name="Image" Value="set:QXHJ5 image:QXHJ5_DiTu_3"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_Mission_4_Image">
+          <Property Name="UnifiedSize" Value="{{0.000000,882.000000},{0.000000,496.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,105.000000},{0.000000,90.000000}}"/>
+          <Property Name="Image" Value="set:QXHJ5 image:QXHJ5_DiTu_4"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="Qixi_HuaJuan_MF_UnfoldBtn_1">
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,158.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,193.000000},{0.000000,103.000000}}"/>
+          <Property Name="Tooltip" Value="#{QNHJ_250609_97}"/>
+          <Property Name="PushedImage" Value="set:QXHJ image:QXHJ_PageBtn_1_H"/>
+          <Property Name="NormalImage" Value="set:QXHJ image:QXHJ_PageBtn_1_P"/>
+          <Property Name="HoverImage" Value="set:QXHJ image:QXHJ_PageBtn_1_N"/>
+          <Property Name="DisabledImage" Value="set:QXHJ image:QXHJ_PageBtn_1_D"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="Qixi_HuaJuan_Mission_Unfold(1)"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_MF_UnfoldBtn_1_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.000000,99.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="Qixi_HuaJuan_MF_UnfoldBtn_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,158.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,239.000000},{0.000000,103.000000}}"/>
+          <Property Name="Tooltip" Value="#{QNHJ_250609_98}"/>
+          <Property Name="PushedImage" Value="set:QXHJ image:QXHJ_PageBtn_2_H"/>
+          <Property Name="NormalImage" Value="set:QXHJ image:QXHJ_PageBtn_2_P"/>
+          <Property Name="HoverImage" Value="set:QXHJ image:QXHJ_PageBtn_2_N"/>
+          <Property Name="DisabledImage" Value="set:QXHJ image:QXHJ_PageBtn_2_D"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="Qixi_HuaJuan_Mission_Unfold(2)"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_MF_UnfoldBtn_2_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,267.000000},{0.000000,99.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="Qixi_HuaJuan_MF_UnfoldBtn_3">
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,158.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,285.000000},{0.000000,103.000000}}"/>
+          <Property Name="Tooltip" Value="#{QNHJ_250609_99}"/>
+          <Property Name="PushedImage" Value="set:QXHJ image:QXHJ_PageBtn_3_H"/>
+          <Property Name="NormalImage" Value="set:QXHJ image:QXHJ_PageBtn_3_P"/>
+          <Property Name="HoverImage" Value="set:QXHJ image:QXHJ_PageBtn_3_N"/>
+          <Property Name="DisabledImage" Value="set:QXHJ image:QXHJ_PageBtn_3_D"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="Qixi_HuaJuan_Mission_Unfold(3)"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_MF_UnfoldBtn_3_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,313.000000},{0.000000,99.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="Qixi_HuaJuan_MF_UnfoldBtn_4">
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,158.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,331.000000},{0.000000,103.000000}}"/>
+          <Property Name="Tooltip" Value="#{QNHJ_250609_100}"/>
+          <Property Name="PushedImage" Value="set:QXHJ image:QXHJ_PageBtn_4_H"/>
+          <Property Name="NormalImage" Value="set:QXHJ image:QXHJ_PageBtn_4_P"/>
+          <Property Name="HoverImage" Value="set:QXHJ image:QXHJ_PageBtn_4_N"/>
+          <Property Name="DisabledImage" Value="set:QXHJ image:QXHJ_PageBtn_4_D"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="Qixi_HuaJuan_Mission_Unfold(4)"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_MF_UnfoldBtn_4_Tips">
+          <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,359.000000},{0.000000,99.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="Qixi_HuaJuan_MF_UnfoldBtn_2_Lock">
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,158.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,239.000000},{0.000000,103.000000}}"/>
+          <Property Name="Tooltip" Value="#{QNHJ_250609_92}"/>
+          <Property Name="PushedImage" Value="set:QXHJ3 image:QXHJ3_PageLock_2_N"/>
+          <Property Name="NormalImage" Value="set:QXHJ3 image:QXHJ3_PageLock_2_P"/>
+          <Property Name="HoverImage" Value="set:QXHJ3 image:QXHJ3_PageLock_2_H"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="Qixi_HuaJuan_Mission_Unfold(2)"/>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="Qixi_HuaJuan_MF_UnfoldBtn_3_Lock">
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,158.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,285.000000},{0.000000,103.000000}}"/>
+          <Property Name="Tooltip" Value="#{QNHJ_250609_38}"/>
+          <Property Name="PushedImage" Value="set:QXHJ3 image:QXHJ3_PageLock_3_N"/>
+          <Property Name="NormalImage" Value="set:QXHJ3 image:QXHJ3_PageLock_3_P"/>
+          <Property Name="HoverImage" Value="set:QXHJ3 image:QXHJ3_PageLock_3_H"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="Qixi_HuaJuan_Mission_Unfold(3)"/>
+        </Window>
+        <Window Type="TLBB_ButtonCheckNULL" Name="Qixi_HuaJuan_MF_UnfoldBtn_4_Lock">
+          <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,158.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,331.000000},{0.000000,103.000000}}"/>
+          <Property Name="Tooltip" Value="#{QNHJ_250609_42}"/>
+          <Property Name="PushedImage" Value="set:QXHJ3 image:QXHJ3_PageLock_4_N"/>
+          <Property Name="NormalImage" Value="set:QXHJ3 image:QXHJ3_PageLock_4_P"/>
+          <Property Name="HoverImage" Value="set:QXHJ3 image:QXHJ3_PageLock_4_H"/>
+          <Property Name="CheckMode" Value="1"/>
+          <Event Name="Clicked" Function="Qixi_HuaJuan_Mission_Unfold(4)"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="Qixi_HuaJuan_ShopButton">
+          <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,86.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,113.000000},{0.000000,490.000000}}"/>
+          <Property Name="PushedImage" Value="set:QXHJ image:QXHJ_ShopBtn_P"/>
+          <Property Name="NormalImage" Value="set:QXHJ image:QXHJ_ShopBtn_N"/>
+          <Property Name="HoverImage" Value="set:QXHJ image:QXHJ_ShopBtn_H"/>
+          <Property Name="DisabledImage" Value="set:QXHJ image:QXHJ_ShopBtn_D"/>
+          <Event Name="Clicked" Function="Qixi_HuaJuan_ShopButton_Clicked();"/>
+          <Property Name="Tooltip" Value="#{DHSD_20240522_2}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_ShopButton_Tips">
+            <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-23.000000},{0.000000,6.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Zhanjianghu image:Red_00"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Qixi_HuaJuan_InfoFrame">
+          <Property Name="UnifiedSize" Value="{{1.000000,-159.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,46.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="Qixi_HuaJuan_Info">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{QNHJ_250609_20}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Qixi_HuaJuan_MF_1">
+          <Property Name="UnifiedSize" Value="{{0.000000,602.000000},{0.000000,214.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-637.000000},{1.000000,-565.000000}}"/>
+          <Window Type="TLBB_ButtonNULL" Name="Qixi_HuaJuan_MF1_Mission_1_GoBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,528.000000},{0.000000,49.000000}}"/>
+            <Property Name="PushedImage" Value="set:QXHJ image:QXHJ_GoToBtn_P"/>
+            <Property Name="NormalImage" Value="set:QXHJ image:QXHJ_GoToBtn_N"/>
+            <Property Name="HoverImage" Value="set:QXHJ image:QXHJ_GoToBtn_H"/>
+            <Property Name="DisabledImage" Value="set:QXHJ image:QXHJ_GoToBtn_D"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Tooltip" Value="#{QNHJ_250609_90}"/>
+            <Event Name="Clicked" Function="Qixi_HuaJuan_Goto(1);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Qixi_HuaJuan_MF1_Mission_1_LQBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,528.000000},{0.000000,49.000000}}"/>
+            <Property Name="PushedImage" Value="set:QXHJ image:QXHJ_LQBtn_P"/>
+            <Property Name="NormalImage" Value="set:QXHJ image:QXHJ_LQBtn_N"/>
+            <Property Name="HoverImage" Value="set:QXHJ image:QXHJ_LQBtn_H"/>
+            <Property Name="DisabledImage" Value="set:QXHJ image:QXHJ_LQBtn_D"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Qixi_HuaJuan_LQbtn_OnClicked(1);"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Qixi_HuaJuan_MF1_Mission_1_Finsh">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,62.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,528.000000},{0.000000,49.000000}}"/>
+            <Property Name="PushedImage" Value="set:QXHJ image:QXHJ_GoToBtn_P"/>
+            <Property Name="NormalImage" Value="set:QXHJ image:QXHJ_GoToBtn_N"/>
+            <Property Name="HoverImage" Value="set:QXHJ image:QXHJ_GoToBtn_H"/>
+            <Property Name="DisabledImage" Value="set:QXHJ image:QXHJ_GoToBtn_D"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Qixi_HuaJuan_Goto(1);"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_MF1_Mission_1_InfoText">
+            <Property Name="UnifiedSize" Value="{{0.000000,418.000000},{0.000000,214.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:QXHJ image:QXHJ_ShiJu_1"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_MF1_Mission_1_RewardBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,78.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,142.000000},{0.000000,41.000000}}"/>
+            <Property Name="Image" Value="set:QXHJ image:QXHJ_RewardBK_1"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+          <Window Type="TLBB_ActionButton" Name="Qixi_HuaJuan_MF1_Mission_1_Reward">
+            <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,157.000000},{0.000000,56.000000}}"/>
+            <Event Name="Clicked" Function="Qixi_HuaJuan_RewardClicked(1)"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_MF1_Mission_1_reciveMask">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Visible" Value="False"/>
+              <Property Name="Image" Value="set:QXHJ3 image:QXHJ3_ItemMask"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_MF1_Mission_1_recive">
+              <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-16.000000},{0.500000,-8.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Image" Value="set:QXHJ image:QXHJ_DuiHao"/>
+            </Window>
+            <Window Type="TLBB_Animate" Name="Qixi_HuaJuan_MF1_Mission_1_RewardTips">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Animate" Value="Equip_Zhizun"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Qixi_HuaJuan_MF_2">
+          <Property Name="UnifiedSize" Value="{{0.000000,602.000000},{0.000000,214.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-637.000000},{1.000000,-565.000000}}"/>
+            <Window Type="TLBB_ButtonNULL" Name="Qixi_HuaJuan_MF2_Mission_2_GoBtn">
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,62.000000}}"/>
+		          <Property Name="UnifiedPosition" Value="{{0.000000,528.000000},{0.000000,49.000000}}"/>
+              <Property Name="PushedImage" Value="set:QXHJ image:QXHJ_GoToBtn_P"/>
+              <Property Name="NormalImage" Value="set:QXHJ image:QXHJ_GoToBtn_N"/>
+              <Property Name="HoverImage" Value="set:QXHJ image:QXHJ_GoToBtn_H"/>
+              <Property Name="DisabledImage" Value="set:QXHJ image:QXHJ_GoToBtn_D"/>
+              <Property Name="Tooltip" Value="#{QNHJ_250609_90}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Event Name="Clicked" Function="Qixi_HuaJuan_Goto(2);"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="Qixi_HuaJuan_MF2_Mission_2_LQBtn">
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,62.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,528.000000},{0.000000,49.000000}}"/>
+              <Property Name="PushedImage" Value="set:QXHJ image:QXHJ_LQBtn_P"/>
+              <Property Name="NormalImage" Value="set:QXHJ image:QXHJ_LQBtn_N"/>
+              <Property Name="HoverImage" Value="set:QXHJ image:QXHJ_LQBtn_H"/>
+              <Property Name="DisabledImage" Value="set:QXHJ image:QXHJ_LQBtn_D"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Event Name="Clicked" Function="Qixi_HuaJuan_LQbtn_OnClicked(2);"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="Qixi_HuaJuan_MF2_Mission_2_Finsh">
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,62.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,528.000000},{0.000000,49.000000}}"/>
+              <Property Name="PushedImage" Value="set:QXHJ image:QXHJ_GoToBtn_P"/>
+              <Property Name="NormalImage" Value="set:QXHJ image:QXHJ_GoToBtn_N"/>
+              <Property Name="HoverImage" Value="set:QXHJ image:QXHJ_GoToBtn_H"/>
+              <Property Name="DisabledImage" Value="set:QXHJ image:QXHJ_GoToBtn_D"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Event Name="Clicked" Function="Qixi_HuaJuan_Goto(2);"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_MF2_Mission_2_InfoText">
+              <Property Name="UnifiedSize" Value="{{0.000000,418.000000},{0.000000,214.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:QXHJ image:QXHJ_ShiJu_2"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_MF2_Mission_2_RewardBK">
+              <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,78.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,142.000000},{0.000000,41.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:QXHJ image:QXHJ_RewardBK_1"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Qixi_HuaJuan_MF2_Mission_2_Reward">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,157.000000},{0.000000,56.000000}}"/>
+              <Event Name="Clicked" Function="Qixi_HuaJuan_RewardClicked(2)"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_MF2_Mission_2_reciveMask">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:QXHJ3 image:QXHJ3_ItemMask"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_MF2_Mission_2_recive">
+                <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-16.000000},{0.500000,-8.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:QXHJ image:QXHJ_DuiHao"/>
+              </Window>
+              <Window Type="TLBB_Animate" Name="Qixi_HuaJuan_MF2_Mission_2_RewardTips">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Animate" Value="Equip_Zhizun"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Qixi_HuaJuan_MF_3">
+          <Property Name="UnifiedSize" Value="{{0.000000,602.000000},{0.000000,214.000000}}"/>
+		      <Property Name="UnifiedPosition" Value="{{1.000000,-637.000000},{1.000000,-565.000000}}"/>
+            <Window Type="TLBB_ButtonNULL" Name="Qixi_HuaJuan_MF3_Mission_3_GoBtn">
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,62.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,528.000000},{0.000000,49.000000}}"/>
+              <Property Name="PushedImage" Value="set:QXHJ image:QXHJ_GoToBtn_P"/>
+              <Property Name="NormalImage" Value="set:QXHJ image:QXHJ_GoToBtn_N"/>
+              <Property Name="HoverImage" Value="set:QXHJ image:QXHJ_GoToBtn_H"/>
+              <Property Name="DisabledImage" Value="set:QXHJ image:QXHJ_GoToBtn_D"/>
+              <Property Name="Tooltip" Value="#{QNHJ_250609_90}"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Event Name="Clicked" Function="Qixi_HuaJuan_Goto(3);"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="Qixi_HuaJuan_MF3_Mission_3_LQBtn">
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,62.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,528.000000},{0.000000,49.000000}}"/>
+              <Property Name="PushedImage" Value="set:QXHJ image:QXHJ_LQBtn_P"/>
+              <Property Name="NormalImage" Value="set:QXHJ image:QXHJ_LQBtn_N"/>
+              <Property Name="HoverImage" Value="set:QXHJ image:QXHJ_LQBtn_H"/>
+              <Property Name="DisabledImage" Value="set:QXHJ image:QXHJ_LQBtn_D"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Event Name="Clicked" Function="Qixi_HuaJuan_LQbtn_OnClicked(3);"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="Qixi_HuaJuan_MF3_Mission_3_Finsh">
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,62.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,528.000000},{0.000000,49.000000}}"/>
+              <Property Name="PushedImage" Value="set:QXHJ image:QXHJ_GoToBtn_P"/>
+              <Property Name="NormalImage" Value="set:QXHJ image:QXHJ_GoToBtn_N"/>
+              <Property Name="HoverImage" Value="set:QXHJ image:QXHJ_GoToBtn_H"/>
+              <Property Name="DisabledImage" Value="set:QXHJ image:QXHJ_GoToBtn_D"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Event Name="Clicked" Function="Qixi_HuaJuan_Goto(3);"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_MF3_Mission_3_InfoText">
+              <Property Name="UnifiedSize" Value="{{0.000000,418.000000},{0.000000,214.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:QXHJ image:QXHJ_ShiJu_3"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_MF3_Mission_3_RewardBK">
+              <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,78.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,142.000000},{0.000000,41.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:QXHJ image:QXHJ_RewardBK_1"/>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Qixi_HuaJuan_MF3_Mission_3_Reward">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,157.000000},{0.000000,56.000000}}"/>
+              <Event Name="Clicked" Function="Qixi_HuaJuan_RewardClicked(3)"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_MF3_Mission_3_reciveMask">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:QXHJ3 image:QXHJ3_ItemMask"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_MF3_Mission_3_recive">
+                <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-16.000000},{0.500000,-8.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:QXHJ image:QXHJ_DuiHao"/>
+              </Window>
+              <Window Type="TLBB_Animate" Name="Qixi_HuaJuan_MF3_Mission_3_RewardTips">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Animate" Value="Equip_Zhizun"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Qixi_HuaJuan_MF_4">
+          <Property Name="UnifiedSize" Value="{{0.000000,602.000000},{0.000000,214.000000}}"/>
+		      <Property Name="UnifiedPosition" Value="{{1.000000,-637.000000},{1.000000,-565.000000}}"/>
+            <Window Type="TLBB_ButtonNULL" Name="Qixi_HuaJuan_MF4_Mission_4_GoBtn">
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,62.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,528.000000},{0.000000,49.000000}}"/>
+              <Property Name="PushedImage" Value="set:QXHJ image:QXHJ_GoToBtn_P"/>
+              <Property Name="NormalImage" Value="set:QXHJ image:QXHJ_GoToBtn_N"/>
+              <Property Name="HoverImage" Value="set:QXHJ image:QXHJ_GoToBtn_H"/>
+              <Property Name="DisabledImage" Value="set:QXHJ image:QXHJ_GoToBtn_D"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="Tooltip" Value="#{QNHJ_250609_90}"/>
+              <Event Name="Clicked" Function="Qixi_HuaJuan_Goto(4);"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="Qixi_HuaJuan_MF4_Mission_4_LQBtn">
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,62.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,528.000000},{0.000000,49.000000}}"/>
+              <Property Name="PushedImage" Value="set:QXHJ image:QXHJ_LQBtn_P"/>
+              <Property Name="NormalImage" Value="set:QXHJ image:QXHJ_LQBtn_N"/>
+              <Property Name="HoverImage" Value="set:QXHJ image:QXHJ_LQBtn_H"/>
+              <Property Name="DisabledImage" Value="set:QXHJ image:QXHJ_LQBtn_D"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Event Name="Clicked" Function="Qixi_HuaJuan_LQbtn_OnClicked(4);"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="Qixi_HuaJuan_MF4_Mission_4_Finsh">
+              <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,62.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,528.000000},{0.000000,49.000000}}"/>
+              <Property Name="PushedImage" Value="set:QXHJ image:QXHJ_GoToBtn_P"/>
+              <Property Name="NormalImage" Value="set:QXHJ image:QXHJ_GoToBtn_N"/>
+              <Property Name="HoverImage" Value="set:QXHJ image:QXHJ_GoToBtn_H"/>
+              <Property Name="DisabledImage" Value="set:QXHJ image:QXHJ_GoToBtn_D"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Event Name="Clicked" Function="Qixi_HuaJuan_Goto(4);"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_MF4_Mission_4_InfoText">
+              <Property Name="UnifiedSize" Value="{{0.000000,418.000000},{0.000000,214.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="Image" Value="set:QXHJ image:QXHJ_ShiJu_4"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_MF4_Mission_4_RewardBK">
+              <Property Name="UnifiedSize" Value="{{0.000000,78.000000},{0.000000,138.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,142.000000},{0.000000,12.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="Image" Value="set:QXHJ image:QXHJ_RewardBK_2"/>
+            </Window>            
+            <Window Type="TLBB_ActionButton" Name="Qixi_HuaJuan_MF4_Mission_4_Reward">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,157.000000},{0.000000,25.000000}}"/>
+              <Event Name="Clicked" Function="Qixi_HuaJuan_RewardClicked(4)"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_MF4_Mission_4_reciveMask">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:QXHJ3 image:QXHJ3_ItemMask"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_MF4_Mission_4_recive">
+                <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-16.000000},{0.500000,-8.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:QXHJ image:QXHJ_DuiHao"/>
+              </Window>
+              <Window Type="TLBB_Animate" Name="Qixi_HuaJuan_MF4_Mission_4_RewardTips">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Animate" Value="Equip_Zhizun"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_ActionButton" Name="Qixi_HuaJuan_MF4_Mission_4_Reward2">
+              <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,157.000000},{0.000000,88.000000}}"/>
+              <Event Name="Clicked" Function="Qixi_HuaJuan_RewardClicked(4)"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_MF4_Mission_4_reciveMask2">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Visible" Value="False"/>
+                <Property Name="Image" Value="set:QXHJ3 image:QXHJ3_ItemMask"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_MF4_Mission_4_recive2">
+                <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-16.000000},{0.500000,-8.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:QXHJ image:QXHJ_DuiHao"/>
+              </Window>
+              <Window Type="TLBB_Animate" Name="Qixi_HuaJuan_MF4_Mission_4_Reward2Tips">
+                  <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="Equip_Zhizun"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Qixi_HuaJuan_MF_Lock">
+          <Property Name="UnifiedSize" Value="{{0.000000,602.000000},{0.000000,214.000000}}"/>
+		      <Property Name="UnifiedPosition" Value="{{1.000000,-637.000000},{1.000000,-565.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Qixi_HuaJuan_MF_LockText">
+            <Property Name="UnifiedSize" Value="{{0.000000,418.000000},{0.000000,214.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Image" Value="set:QXHJ3 image:QXHJ3_NoPoem"/>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="Fashion_AuctionEnter_Frame">
+    <Property Name="UnifiedPosition" Value="{{1.0,-166},{0.0,240}}" />
+    <Property Name="AbsoluteSize" Value="w:64 h:70" />
+    <Window Type="TLBB_AnimateButton" Name="Fashion_AuctionEnter_Icon">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="PushedImage" Value="set:Fashion_Auction image:WHTJ_Pushed"/>
+      <Property Name="NormalImage" Value="set:Fashion_Auction image:WHTJ_Normal"/>
+      <Property Name="HoverImage" Value="set:Fashion_Auction image:WHTJ_Hover"/>
+      <Property Name="DisabledImage" Value="set:Fashion_Auction image:WHTJ_Disable"/>
+      <Event Name="Clicked" Function="Fashion_AuctionEnter_OnClick()" />
+      <Window Type="TLBB_Animate" Name="Fashion_AuctionEnter_Animate">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Animate" Value="WHTJ_Animate"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

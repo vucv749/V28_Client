@@ -1,0 +1,573 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Anniversary_DBZH_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,978.000000},{0.000000,616.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-489.000000},{0.500000,-313.000000}}"/>
+    <Window Type="TLBB_ButtonNULL" Name="Anniversary_DBZH_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,42.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-45.000000},{0.000000,35.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="PushedImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_Close_P"/>
+      <Property Name="NormalImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_Close_N"/>
+      <Property Name="HoverImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_Close_H"/>
+      <Event Name="Clicked" Function="Anniversary_DBZH_ClickClose();"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Anniversary_DBZH_DragTitle">
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,490.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="DragTarget" Value="Anniversary_DBZH_Frame" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Anniversary_DBZH_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Client_Frame">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BK"/>
+        <Window Type="TLBB_ButtonNULL" Name="Anniversary_DBZH_Btn_YL">
+          <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,810.000000},{0.000000,130.000000}}"/>
+          <Property Name="PushedImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_JLBtn_P"/>
+          <Property Name="NormalImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_JLBtn_N"/>
+          <Property Name="HoverImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_JLBtn_H"/>
+          <Property Name="DisabledImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_JLBtn_D"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Visible" Value="False"/>
+          <Event Name="Clicked" Function="Anniversary_DBZH_PreviewBtnClicked()"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="Anniversary_DBZH_TextBk">
+          <Property Name="UnifiedSize" Value="{{1.000000,-286.000000},{1.000000,-546.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,213.000000},{0.000000,56.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_SimpleText" Name="Anniversary_DBZH_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-10.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+            <Property Name="Text" Value="#{ZNDB_230215_13}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Anniversary_DBZH_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,17.000000},{0.000000,17.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{1.000000,-30.000000}}"/>
+            <Property Name="PushedImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_Help_P"/>
+            <Property Name="NormalImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_Help_N"/>
+            <Property Name="HoverImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_Help_H"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="AnniversaryShow_Help();"/>
+          </Window>
+        </Window>
+
+        <!-- <Window Type="TLBB_SimpleText" Name="Anniversary_DBZH_Text02">
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,25.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-175.000000},{1.000000,-175.000000}}"/>
+          <Property Name="Text" Value="#{ZNDB_230215_35}"/>
+          <Property Name="Tooltip" Value="#{ZNDB_230215_36}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window> -->
+        <Window Type="DefaultWindow" Name="Anniversary_DBZH_Bk">
+          <Property Name="UnifiedSize" Value="{{0.000000,420.000000},{0.000000,80.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-170.000000},{0.500000,135.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Btn01_Bk">
+            <Property Name="UnifiedSize" Value="{{0.000000,124.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,37.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Anniversary_DBZH image:Anniversary_DBZH_JL_Bk"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Btn02_Bk">
+            <Property Name="UnifiedSize" Value="{{0.000000,124.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-124.000000},{0.000000,37.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:Anniversary_DBZH image:Anniversary_DBZH_JL_Bk"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Anniversary_DBZH_Btn01">
+            <Property Name="UnifiedSize" Value="{{0.000000,124.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+            <Property Name="PushedImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_Btn_P"/>
+            <Property Name="NormalImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_Btn_N"/>
+            <Property Name="HoverImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_Btn_H"/>
+            <Property Name="DisabledImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_Btn_D"/>
+            <Property Name="Tooltip" Value="#{ZNDB_230215_28}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Anniversary_DBZH_ExchangeBtnClicked(1)"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Anniversary_DBZH_Info03">
+            <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,40.000000}}"/>
+            <Property Name="Text" Value="#{ZNDB_230215_150}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Anniversary_DBZH_Info04">
+            <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,330.000000},{0.000000,40.000000}}"/>
+            <Property Name="Text" Value="#{ZNDB_230215_151}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+
+          <Window Type="TLBB_ButtonNULL" Name="Anniversary_DBZH_Btn02">
+            <Property Name="UnifiedSize" Value="{{0.000000,124.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-124.000000},{0.000000,0.000000}}"/>
+            <Property Name="PushedImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_Btn_P"/>
+            <Property Name="NormalImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_Btn_N"/>
+            <Property Name="HoverImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_Btn_H"/>
+            <Property Name="DisabledImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_Btn_D"/>
+            <Property Name="Tooltip" Value="#{ZNDB_230215_29}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Anniversary_DBZH_ExchangeBtnClicked(2)"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_ItemBk">
+          <Property Name="UnifiedSize" Value="{{0.000000,174.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,120.000000},{1.000000,-90.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Anniversary_DBZH image:Anniversary_DBZH_Icon_Bk01"/>
+          <Window Type="TLBB_SimpleText" Name="Anniversary_DBZH_ItemNum">
+            <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{1.000000,-4.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{ZNDB_230215_51}"/>
+            <Property Name="Tooltip" Value="#{ZNDB_230215_154}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_ActiveBk">
+          <Property Name="UnifiedSize" Value="{{0.000000,174.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-180.000000},{1.000000,-90.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Anniversary_DBZH image:Anniversary_DBZH_Icon_Bk03"/>
+          <Window Type="TLBB_SimpleText" Name="Anniversary_DBZH_ActiveNum">
+            <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{1.000000,-4.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{ZNDB_230215_157}"/>
+            <Property Name="Tooltip" Value="#{ZNDB_230215_153}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window>
+        <!-- <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Text01_Bk">
+          <Property Name="UnifiedSize" Value="{{0.000000,174.000000},{0.000000,42.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-87.000000},{1.000000,-90.000000}}"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:Anniversary_DBZH image:Anniversary_DBZH_Icon_Bk02"/>
+          <Window Type="TLBB_SimpleText" Name="Anniversary_DBZH_Text01">
+            <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{1.000000,-4.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,4.000000}}"/>
+            <Property Name="Text" Value="#{ZNDB_230215_34}"/>
+            <Property Name="Tooltip" Value="#{ZNDB_230215_36}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+        </Window> -->
+        <!-- 进度条相关2024年Q1修改不要了，怕后面再要就先注释了 -->
+        <!-- <Window Type="DefaultWindow" Name="Anniversary_DBZH_LeiJi_BK">
+          <Property Name="UnifiedSize" Value="{{0.000000,800.000000},{0.000000,80.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-375.000000},{0.500000,190.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_SimpleText" Name="Anniversary_DBZH_RewardText">
+            <Property Name="VertFormatting" Value="TopAligned"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-386.000000},{0.000000,46.000000}}"/>
+            <Property Name="Text" Value="#{ZNDB_230215_129}"/>
+            <Property Name="Tooltip" Value="#{ZNDB_230215_130}"/>
+            <Property Name="Font" Value="YouYuan9.75"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="Anniversary_DBZH_Reward1">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,76.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.00000,100.00000},{0.000000,5.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward1_Bk">
+              <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-42.000000},{1.000000,-40.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_Bk"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="Anniversary_DBZH_Reward1Btn">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,58.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.50000,-35.00000},{0.000000,0.000000}}"/>
+              <Property Name="Tooltip" Value="#{ZNDB_230215_137}"/>
+              <Property Name="PushedImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_P"/>
+              <Property Name="NormalImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_N"/>
+              <Property Name="HoverImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_H"/>
+              <Property Name="DisabledImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_D"/>
+              <Event Name="Clicked" Function="Anniversary_DBZH_ExchangeAwardBtnClicked(1)"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward1_tips">
+                <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{1.000000,-35.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:Anniversary_Guide10 image:Anniversary_Guide10_Hongdian"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward1BtnOK">
+              <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.000000,30.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:GuanShanHai16 image:Q1_YiLingQu"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward1Text_Bk">
+              <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{1.000000,-18.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Anniversary_DBZH image:Anniversary_DBZH_Text_Bk"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_SimpleText" Name="Anniversary_DBZH_Reward1Text">
+                <Property Name="VertFormatting" Value="TopAligned"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Text" Value="#{ZNDB_230215_131}"/>
+                <Property Name="TextColor" Value="FF6A3906"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Anniversary_DBZH_Reward2">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,76.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.00000,220.00000},{0.000000,5.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward2_Bk">
+              <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-42.000000},{1.000000,-40.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_Bk"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="Anniversary_DBZH_Reward2Btn">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,58.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.50000,-35.00000},{0.000000,0.000000}}"/>
+              <Property Name="Tooltip" Value="#{ZNDB_230215_138}"/>
+              <Property Name="PushedImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_P"/>
+              <Property Name="NormalImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_N"/>
+              <Property Name="HoverImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_H"/>
+              <Property Name="DisabledImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_D"/>
+              <Event Name="Clicked" Function="Anniversary_DBZH_ExchangeAwardBtnClicked(2)"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward2_tips">
+                <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{1.000000,-35.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:Anniversary_Guide10 image:Anniversary_Guide10_Hongdian"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward2BtnOK">
+              <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.000000,30.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:GuanShanHai16 image:Q1_YiLingQu"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward2Text_Bk">
+              <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{1.000000,-18.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Anniversary_DBZH image:Anniversary_DBZH_Text_Bk"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_SimpleText" Name="Anniversary_DBZH_Reward2Text">
+                <Property Name="VertFormatting" Value="TopAligned"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Text" Value="#{ZNDB_230215_132}"/>
+                <Property Name="TextColor" Value="FF6A3906"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Anniversary_DBZH_Reward3">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,76.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.00000,340.00000},{0.000000,5.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward3_Bk">
+              <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-42.000000},{1.000000,-40.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_Bk"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="Anniversary_DBZH_Reward3Btn">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,58.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.50000,-35.00000},{0.000000,0.000000}}"/>
+              <Property Name="Tooltip" Value="#{ZNDB_230215_139}"/>
+              <Property Name="PushedImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_P"/>
+              <Property Name="NormalImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_N"/>
+              <Property Name="HoverImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_H"/>
+              <Property Name="DisabledImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_D"/>
+              <Event Name="Clicked" Function="Anniversary_DBZH_ExchangeAwardBtnClicked(3)"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward3_tips">
+                <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{1.000000,-35.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:Anniversary_Guide10 image:Anniversary_Guide10_Hongdian"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward3BtnOK">
+              <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.000000,30.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:GuanShanHai16 image:Q1_YiLingQu"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward3Text_Bk">
+              <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{1.000000,-18.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Anniversary_DBZH image:Anniversary_DBZH_Text_Bk"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_SimpleText" Name="Anniversary_DBZH_Reward3Text">
+                <Property Name="VertFormatting" Value="TopAligned"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Text" Value="#{ZNDB_230215_133}"/>
+                <Property Name="TextColor" Value="FF6A3906"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Anniversary_DBZH_Reward4">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,76.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.00000,460.00000},{0.000000,5.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward4_Bk">
+              <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-42.000000},{1.000000,-40.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_Bk"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="Anniversary_DBZH_Reward4Btn">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,58.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.50000,-35.00000},{0.000000,0.000000}}"/>
+              <Property Name="Tooltip" Value="#{ZNDB_230215_140}"/>
+              <Property Name="PushedImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_P"/>
+              <Property Name="NormalImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_N"/>
+              <Property Name="HoverImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_H"/>
+              <Property Name="DisabledImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_D"/>
+              <Event Name="Clicked" Function="Anniversary_DBZH_ExchangeAwardBtnClicked(4)"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward4_tips">
+                <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{1.000000,-35.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:Anniversary_Guide10 image:Anniversary_Guide10_Hongdian"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward4BtnOK">
+              <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.000000,30.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:GuanShanHai16 image:Q1_YiLingQu"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward4Text_Bk">
+              <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{1.000000,-18.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Anniversary_DBZH image:Anniversary_DBZH_Text_Bk"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_SimpleText" Name="Anniversary_DBZH_Reward4Text">
+                <Property Name="VertFormatting" Value="TopAligned"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Text" Value="#{ZNDB_230215_134}"/>
+                <Property Name="TextColor" Value="FF6A3906"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Anniversary_DBZH_Reward5">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,76.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.00000,580.00000},{0.000000,5.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward5_Bk">
+              <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-42.000000},{1.000000,-40.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_Bk"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="Anniversary_DBZH_Reward5Btn">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,58.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.50000,-35.00000},{0.000000,0.000000}}"/>
+              <Property Name="Tooltip" Value="#{ZNDB_230215_141}"/>
+              <Property Name="PushedImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_P"/>
+              <Property Name="NormalImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_N"/>
+              <Property Name="HoverImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_H"/>
+              <Property Name="DisabledImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_D"/>
+              <Event Name="Clicked" Function="Anniversary_DBZH_ExchangeAwardBtnClicked(5)"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward5_tips">
+                <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{1.000000,-35.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:Anniversary_Guide10 image:Anniversary_Guide10_Hongdian"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward5BtnOK">
+              <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.000000,30.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:GuanShanHai16 image:Q1_YiLingQu"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward5Text_Bk">
+              <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{1.000000,-18.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Anniversary_DBZH image:Anniversary_DBZH_Text_Bk"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_SimpleText" Name="Anniversary_DBZH_Reward5Text">
+                <Property Name="VertFormatting" Value="TopAligned"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Text" Value="#{ZNDB_230215_135}"/>
+                <Property Name="TextColor" Value="FF6A3906"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+            </Window>
+          </Window>
+          <Window Type="DefaultWindow" Name="Anniversary_DBZH_Reward6">
+            <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,76.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.00000,700.00000},{0.000000,5.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward6_Bk">
+              <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,40.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-42.000000},{1.000000,-40.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_Bk"/>
+            </Window>
+            <Window Type="TLBB_ButtonNULL" Name="Anniversary_DBZH_Reward6Btn">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,58.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.50000,-35.00000},{0.000000,0.000000}}"/>
+              <Property Name="Tooltip" Value="#{ZNDB_230215_142}"/>
+              <Property Name="PushedImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_P"/>
+              <Property Name="NormalImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_N"/>
+              <Property Name="HoverImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_H"/>
+              <Property Name="DisabledImage" Value="set:Anniversary_DBZH image:Anniversary_DBZH_BXBtn_D"/>
+              <Event Name="Clicked" Function="Anniversary_DBZH_ExchangeAwardBtnClicked(6)"/>
+              <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward6_tips">
+                <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-25.000000},{1.000000,-35.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+                <Property Name="Image" Value="set:Anniversary_Guide10 image:Anniversary_Guide10_Hongdian"/>
+              </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward6BtnOK">
+              <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,23.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{0.000000,30.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:GuanShanHai16 image:Q1_YiLingQu"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Anniversary_DBZH_Reward6Text_Bk">
+              <Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,18.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-29.000000},{1.000000,-18.000000}}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:Anniversary_DBZH image:Anniversary_DBZH_Text_Bk"/>
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Window Type="TLBB_SimpleText" Name="Anniversary_DBZH_Reward6Text">
+                <Property Name="VertFormatting" Value="TopAligned"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="Text" Value="#{ZNDB_230215_136}"/>
+                <Property Name="TextColor" Value="FF6A3906"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window> -->
+
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

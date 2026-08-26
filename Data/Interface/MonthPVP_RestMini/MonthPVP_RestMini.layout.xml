@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="MonthPVP_RestMini_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,35.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-173.000000},{0.500000,60.000000}}"/>
+    <Window Type="TLBB_Frame_Lace4" Name="MonthPVP_RestMini">
+      <Property Name="UnifiedSize" Value="{{1.0,0.000000},{1.0,0.000000}}" />
+      <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,0.000000}}" />
+      <Window Type="TLBB_DragTitle" Name="MonthPVP_RestMini_PageHeader">
+        <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{1.000000,0.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="Text" Value="#{LLKC_240517_198}" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="DragTarget" Value="MonthPVP_RestMini_Frame" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="MonthPVP_RestMini_Btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.500000,-7.000000}}"/>
+        <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+        <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+        <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+        <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>   
+        <Event Name="Clicked" Function="MonthPVP_RestMini_OnClose();"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

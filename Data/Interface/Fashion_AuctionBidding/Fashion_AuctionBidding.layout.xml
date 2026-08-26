@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="Fashion_AuctionBidding_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,336.000000},{0.000000,260.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-168.000000},{0.500000,-130.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Hidden" Function="Fashion_AuctionBidding_OnHidden();"/>
+        <Window Type="TLBB_ButtonHelp" Name="Fashion_AuctionBidding_Help_Clicked()">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+            <Event Name="Clicked" Function="Helper:GotoHelper('*BanggongExchange');"/>
+        </Window>
+        <Window Type="TLBB_DragTitle" Name="Fashion_AuctionBidding_DragTitle">
+            <Property Name="UnifiedSize" Value="{{0.000000,248.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-124.000000},{0.000000,10.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="VertFormatting" Value="VertCentred"/>
+            <Property Name="Text" Value="#{SZPM_230913_46}"/>
+            <Property Name="Font" Value="YouYuan11.25"/>
+            <Property Name="DragTarget" Value="Fashion_AuctionBidding_Frame"/>
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="Fashion_AuctionBidding_Close">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Fashion_AuctionBidding_CloseClicked();"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="Fashion_AuctionBidding_Client">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_ActionButton" Name="Fashion_AuctionBidding_Item">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,38.000000}}"/>
+            </Window>
+            <Window Type="TLBB_Frame_Lace3" Name="Fashion_AuctionBidding_ItemInfo">
+                <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,64.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,94.000000},{0.000000,38.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="Fashion_AuctionBidding_ItemInfo_Text1">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,22.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+                    <Property Name="Text" Value="#{SZPM_230913_47}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Fashion_AuctionBidding_ItemInfo_Text2">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,22.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,34.000000}}"/>
+                    <Property Name="Text" Value="#{SZPM_230913_48}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                    <Window Type="TLBB_StopWatch" Name="Fashion_AuctionBidding_ItemInfo_StopWatch">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-90.000000},{1.000000,0.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="00:00"/>
+                        <Property Name="TextColor" Value="FFFFF263"/>
+                        <Event Name="ReachedZero" Function="Fashion_AuctionBidding_TimeOut();"/>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Fashion_AuctionBidding_HighestBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,294.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,112.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_Animate" Name="Fashion_AuctionBidding_HighestAnimate">
+                    <Property Name="UnifiedSize" Value="{{0.000000,219.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Animate" Value="LightUpFlash"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Fashion_AuctionBidding_Highest">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+                    <Property Name="Text" Value="#{SZPM_230913_50}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Window Type="TLBB_SimpleText" Name="Fashion_AuctionBidding_HighestNum">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-70.000000},{1.000000,0.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="#{SZPM_230913_51}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_ButtonCommon" Name="Fashion_AuctionBidding_Refresh">
+                    <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.500000,-10.000000}}"/>
+                    <Property Name="Text" Value="#{SZPM_230913_55}"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                    <Event Name="Clicked" Function="Fashion_AuctionBidding_Refresh();"/>
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Fashion_AuctionBidding_MineBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,294.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,136.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="Fashion_AuctionBidding_Mine">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+                    <Property Name="Text" Value="#{SZPM_230913_52}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Window Type="TLBB_SimpleText" Name="Fashion_AuctionBidding_MineNum">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-70.000000},{1.000000,0.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,70.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="#{SZPM_230913_53}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Type="TLBB_SimpleTextFrame" Name="Fashion_AuctionBidding_YuanbaoNum">
+                <Property Name="UnifiedSize" Value="{{0.000000,294.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,160.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                <Property Name="Text" Value="#{SZPM_230913_89}"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="Fashion_AuctionBidding_NumBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,294.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,182.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_ButtonSub" Name="Fashion_AuctionBidding_RaiseSub">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.500000,-8.000000}}"/>
+                    <Property Name="Tooltip" Value="#{SZPM_230913_64}"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                    <Event Name="Clicked" Function="Fashion_AuctionBidding_AddYuanBao(0);"/>
+                </Window>
+                <Window Type="TLBB_EditBoxNormal" Name="Fashion_AuctionBidding_Num">
+                    <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,30.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.500000,-13.000000}}"/>
+                    <Property Name="ValidationString" Value="[0-9]*"/>
+                    <Property Name="MaxTextLength" Value="9"/>
+                    <Property Name="DefaultEditBox" Value="True"/>
+                    <Event Name="TextChanged" Function="Fashion_AuctionBidding_TextChanged();"/>
+                </Window>
+                <Window Type="TLBB_ButtonAdd" Name="Fashion_AuctionBidding_RaiseAdd">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.500000,-8.000000}}"/>
+                    <Property Name="Tooltip" Value="#{SZPM_230913_63}"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                    <Event Name="Clicked" Function="Fashion_AuctionBidding_AddYuanBao(1);"/>
+                </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="Fashion_AuctionBidding_NotStarted">
+                <Property Name="UnifiedSize" Value="{{0.000000,294.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,185.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="Text" Value="#{SZPM_230913_65}"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="Fashion_AuctionBidding_ButtonFrame">
+                <Property Name="UnifiedSize" Value="{{0.000000,315.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,220.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_ButtonCommon" Name="Fashion_AuctionBidding_Submit">
+                    <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{0.000000,0.000000}}"/>
+                    <Property Name="Text" Value="#{SZPM_230913_56}"/>
+                    <Event Name="Clicked" Function="Fashion_AuctionBidding_DoBidding();"/>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

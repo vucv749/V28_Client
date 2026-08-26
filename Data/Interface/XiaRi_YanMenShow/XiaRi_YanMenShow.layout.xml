@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="XiaRi_YanMenShow_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,992.000000},{0.000000,504.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-446.000000},{0.500000,-257.000000}}"/>
+    <Event Name="Hidden" Function="XiaRi_YanMenShow_OnHiden()"/>
+    <Window Type="TLBB_DragTitle" Name="XiaRi_YanMenShow_DragTitle">
+      <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,50.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,10.000000}}"/>
+      <Property Name="DragTarget" Value="XiaRi_YanMenShow_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="XiaRi_YanMenShow_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,38.000000},{0.000000,34.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-132.000000},{0.000000,32.000000}}"/>
+      <Event Name="Clicked" Function="XiaRi_YanMenShow_OnClose()" />
+      <Property Name="PushedImage" Value="set:XiaRi_YanMenShow image:XiaRi_YanMenShow_ClosePushed"/>
+      <Property Name="NormalImage" Value="set:XiaRi_YanMenShow image:XiaRi_YanMenShow_CloseNormal"/>
+      <Property Name="HoverImage" Value="set:XiaRi_YanMenShow image:XiaRi_YanMenShow_CloseHover"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="XiaRi_YanMenShow_ALLImage">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaRi_YanMenShow_Image1">
+        <Property Name="UnifiedSize" Value="{{0.000000,960.000000},{0.000000,504.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:XiaRi_YanMenShow image:XiaRi_YanMenShow1"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="XiaRi_YanMenShow_Image2">
+        <Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,70.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-32.000000},{1.000000,-70.000000}}"/>
+        <Property Name="Image" Value="set:XiaRi_YanMenShow image:XiaRi_YanMenShow2"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

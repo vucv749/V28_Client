@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="FujiatianxiaTopList_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,520.000000},{0.000000,420.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-260.000000},{0.500000,-210.000000}}"/>
+    <Event Name="Hidden" Function="FujiatianxiaTopList_On_Hide()" />
+    <Window Type="TLBB_DragTitle" Name="FujiatianxiaTopList_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,10.000000}}"/>
+      <Property Name="Text" Value="#{PSGN_180515_224}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="FujiatianxiaTopList_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="FujiatianxiaTopList_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonClose"/>
+      <Event Name="Clicked" Function="FujiatianxiaTopList_Cancel_Clicked();"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="FujiatianxiaTopList__Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="Text" Value="TLBB_ButtonHelp"/>
+      <Event Name="Clicked" Function="Helper:GotoHelper('*HJTopList');"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="FujiatianxiaTopList_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,35.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_Frame_Lace2" Name="FujiatianxiaTopList_RightBut2">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="Visible" Value="False"/>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="FujiatianxiaTopList_But1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="#{PSGN_180515_210}" />
+          <Property Name="CheckMode" Value="1" />
+          <Event Name="Clicked" Function="FujiatianxiaTopList_RightBut2_Click(1);" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="FujiatianxiaTopList_But2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,40.000000}}"/>
+          <Property Name="Text" Value="#{PSGN_180515_204}" />
+          <Property Name="CheckMode" Value="1" />
+          <Event Name="Clicked" Function="FujiatianxiaTopList_RightBut2_Click(2);" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="FujiatianxiaTopList_But3">
+          <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,70.000000}}"/>
+          <Property Name="Text" Value="#{PSGN_180515_205}" />
+          <Property Name="CheckMode" Value="1" />
+          <Event Name="Clicked" Function="FujiatianxiaTopList_RightBut2_Click(3);" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="FujiatianxiaTopList_But4">
+          <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,100.000000}}"/>
+          <Property Name="Text" Value="#{PSGN_180515_206}" />
+          <Property Name="CheckMode" Value="1" />
+          <Event Name="Clicked" Function="FujiatianxiaTopList_RightBut2_Click(4);" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="FujiatianxiaTopList_But5">
+          <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,130.000000}}"/>
+          <Property Name="Text" Value="#{PSGN_180515_207}" />
+          <Property Name="CheckMode" Value="1" />
+          <Event Name="Clicked" Function="FujiatianxiaTopList_RightBut2_Click(5);" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="FujiatianxiaTopList_But6">
+          <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,160.000000}}"/>
+          <Property Name="Text" Value="#{PSGN_180515_208}" />
+          <Property Name="CheckMode" Value="1" />
+          <Event Name="Clicked" Function="FujiatianxiaTopList_RightBut2_Click(6);" />
+        </Window>
+        <Window Type="TLBB_ButtonCheckForRMBShop" Name="FujiatianxiaTopList_But7">
+          <Property Name="UnifiedSize" Value="{{1.000000,-30.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,190.000000}}"/>
+          <Property Name="Text" Value="#{PSGN_180515_209}" />
+          <Property Name="CheckMode" Value="1" />
+          <Event Name="Clicked" Function="FujiatianxiaTopList_RightBut2_Click(7);" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="FujiatianxiaTopList_RightContent_ListClient">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-35.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_MultiColumnList" Name="FujiatianxiaTopList_RightContent_Title">
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,5.000000}}"/>
+          <Property Name="ColumnsSizable" Value="False"/>
+          <Property Name="ColumnsMovable" Value="False"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="ColumnHeader" Value="text: width:0.11 id:0" />
+          <Property Name="ColumnHeader" Value="text: width:0.29 id:1" />
+          <Property Name="ColumnHeader" Value="text: width:0.2 id:2" />
+          <Property Name="ColumnHeader" Value="text: width:0.15 id:3" />
+          <Property Name="ColumnHeader" Value="text: width:0.25 id:4" />
+          <Window Type="TLBB_SimpleText" Name="FujiatianxiaTopList_Number">
+            <Property Name="UnifiedSize" Value="{{0.110000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{PSGN_180515_212}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FujiatianxiaTopList_Name">
+            <Property Name="UnifiedSize" Value="{{0.290000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.110000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{PSGN_180515_213}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FujiatianxiaTopList_Duan">
+            <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.400000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{PSGN_180515_214}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FujiatianxiaTopList_Level">
+            <Property Name="UnifiedSize" Value="{{0.150000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{PSGN_180515_215}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="FujiatianxiaTopList_School">
+            <Property Name="UnifiedSize" Value="{{0.250000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.750000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="Text" Value="#{PSGN_180515_216}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+          </Window>
+
+        </Window>
+        <Window Type="TLBB_NotSuperList" Name="FujiatianxiaTopList_RightContent_List">
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-27.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,27.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Window Type="TLBB_NotSuperListItemCommon3" Name="FujiatianxiaTopList_RightContent_Shilian_Item">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+            <Window Type="TLBB_SimpleText" Name="FujiatianxiaTopList_RightContent_Shilian_Text1">
+              <Property Name="UnifiedSize" Value="{{0.000000,55.000000},{0.000000,26.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+              <Property Name="Text" Value="" />
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="FujiatianxiaTopList_RightContent_Shilian_Text2">
+              <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{0.000000,2.000000}}"/>
+              <Property Name="Text" Value="" />
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="FujiatianxiaTopList_RightContent_Shilian_Text3">
+              <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,205.000000},{0.000000,2.000000}}"/>
+              <Property Name="Text" Value="" />
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="FujiatianxiaTopList_RightContent_Shilian_Text4">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,305.000000},{0.000000,2.000000}}"/>
+              <Property Name="Text" Value="" />
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="FujiatianxiaTopList_RightContent_Shilian_Text5">
+              <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,376.000000},{0.000000,2.000000}}"/>
+              <Property Name="HorzFormatting" Value="RightAligned"/>
+              <Property Name="Text" Value="" />
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="FujiatianxiaTopList_RightContent_Shilian_jinbi">
+              <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,458.000000},{0.000000,8.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="Image" Value="set:PaoShang2 image:HJ_PaoShang"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="FujiatianxiaTopList_RightContent_ListInfo">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,35.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-35.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="FujiatianxiaTopList_RightContent_ListInfo1">
+          <Property Name="UnifiedSize" Value="{{0.000000,55.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="Text" Value="" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="FujiatianxiaTopList_RightContent_ListInfo2">
+          <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="FujiatianxiaTopList_RightContent_ListInfo3">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,205.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="FujiatianxiaTopList_RightContent_ListInfo4">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,305.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="FujiatianxiaTopList_RightContent_ListInfo5">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.000000,2.000000}}"/>
+          <Property Name="HorzFormatting" Value="RightAligned"/>
+          <Property Name="Text" Value="" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="FujiatianxiaTopList_RightContent_ListInfo5_jinbi">
+          <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,8.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseMoveHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="Image" Value="set:PaoShang2 image:HJ_PaoShang"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="FujiatianxiaTopList_RightContent_ListInfoNone">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,26.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}" />
+          <Property Name="Text" Value="" />
+          <Property Name="MouseRButtonHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseLButtonHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="TongTianTaTime_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,334.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-303.000000},{1.000000,-400.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="TongTianTaTime_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-64.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,9.000000}}"/>
+      <Property Name="DragTarget" Value="TongTianTaTime_Frame" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="Title" />
+      <Property Name="Text" Value="#{TTBT_250715_93}" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="TongTianTaTime_Image">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,13.000000}}"/>
+      <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+      <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+      <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+      <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>
+      <Event Name="Clicked" Function="TongTianTaTime_OpenMini()" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="TongTianTaTime_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,13.000000}}"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="TongTianTaTime_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-50.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,33.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_Frame_Lace1" Name="TongTianTaTime_Up">
+        <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,130.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,2.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="TongTianTaTime_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-12.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,6.000000}}"/>
+          <Property Name="Text" Value="#{TTBT_250715_94}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="TongTianTaTime_Down">
+        <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,150.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-152.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="TongTianTaTime_BossTimeTitle">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{TTBT_250715_98}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TongTianTaTime_BossTimeText">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-74.000000},{0.000000,10.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_StopWatch" Name="TongTianTaTime_BossTime">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-74.000000},{0.000000,10.000000}}"/>
+          <Property Name="Text" Value="00:00"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_HLine2" Name="TongTianTaTime_HLine">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,1.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,122.000000}}"/>
+        </Window>
+        <Window Type="TLBB_VLine2" Name="TongTianTaTime_VLine">
+          <Property Name="UnifiedSize" Value="{{0.000000,1.000000},{0.000000,60.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-1.000000},{0.000000,52.000000}}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TongTianTaTime_BossTitle">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,30.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{TTBT_250715_102}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TongTianTaTime_BossTitle1">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,50.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{TTBT_250715_103}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TongTianTaTime_BossTitle2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,70.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{TTBT_250715_104}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TongTianTaTime_BossTitle3">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,90.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{TTBT_250715_105}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TongTianTaTime_BossTitle4">
+          <Property Name="UnifiedSize" Value="{{0.500000,-20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,50.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{TTBT_250715_106}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TongTianTaTime_BossTitle5">
+          <Property Name="UnifiedSize" Value="{{0.500000,-20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,70.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{TTBT_250715_107}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TongTianTaTime_BossText1">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.000000,50.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+          <Property Name="Text" Value="#{TTBT_250715_108}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TongTianTaTime_BossText2">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.000000,70.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+          <Property Name="Text" Value="#{TTBT_250715_108}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TongTianTaTime_BossText3">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.000000,90.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+          <Property Name="Text" Value="#{TTBT_250715_108}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TongTianTaTime_BossText4">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,60.000000},{0.000000,50.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+          <Property Name="Text" Value="#{TTBT_250715_108}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TongTianTaTime_BossText5">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,60.000000},{0.000000,70.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+          <Property Name="Text" Value="#{TTBT_250715_108}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TongTianTaTime_NumTitle">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,126.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="Text" Value="#{TTBT_250715_97}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TongTianTaTime_Num">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-74.000000},{0.000000,126.000000}}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

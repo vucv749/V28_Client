@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="JNH_AwardChange_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,240.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.500000,-120.000000}}"/>
+    <Event Name="Hidden" Function="JNH_AwardChange_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="JNH_AwardChange_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
+      <Property Name="DragTarget" Value="JNH_AwardChange_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="Text" Value="#{JJNH_251024_01}"/>
+      <Property Name="VertFormatting" Value="VertCentred" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="JNH_AwardChange_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="JNH_AwardChange_Cancel_Clicked();" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="JNH_AwardChange_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="Helper:GotoHelper(&quot;*JNH_AwardChange&quot;);" />
+    </Window>
+    <Window Type="DefaultWindow" Name="JNH_AwardChange_Frame_Client">
+      <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}" />
+      <Property Name="RiseOnClick" Value="False" />
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="JNH_AwardChange_Info">
+        <Property Name="RelativePosition" Value="x:0.000000 y:0.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,243.000000},{0.000000,96.000000}}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{JJNH_251024_02}"/>
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="DefaultWindow" Name="JNH_AwardChange_Special">
+        <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,106.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,38.000000}}" />
+        <Window Type="TLBB_SimpleText" Name="JNH_AwardChange_Static2">
+          <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,0.000000}}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,36.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="#{JJNH_251024_09}"/>
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="JNH_AwardChange_Special_Button">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.000000,0.000000}}"/>
+          <Property Name="DragAcceptName" Value="G203" />
+          <Property Name="DraggingEnabled" Value="True" />
+          <Event Name="RBClicked" Function="JNH_AwardChange_Resume();" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="JNH_AwardChange_Blank">
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,20.000000}}" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="JNH_AwardChange_OK">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{1.000000,-20.000000}}" />
+        <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+        <Property Name="Text" Value="#{JJNH_251024_10}" />
+        <Event Name="Clicked" Function="JNH_AwardChange_OK_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="JNH_AwardChange_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{1.000000,-20.000000}}" />
+        <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+        <Property Name="Text" Value="#{JJNH_251024_11}" />
+        <Event Name="Clicked" Function="JNH_AwardChange_Cancel_Clicked();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

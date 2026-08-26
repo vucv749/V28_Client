@@ -1,0 +1,197 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="Kunwu_Kaiwu2_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,540.000000},{0.000000,536.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-270.000000},{0.500000,-268.000000}}"/>
+    <Event Name="Hidden" Function="Kunwu_Kaiwu2_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="Kunwu_Kaiwu2_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Text" Value="#{KWCC_241219_72}" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="DragTarget" Value="Kunwu_Kaiwu2_Frame" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Kunwu_Kaiwu2_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Kunwu_Kaiwu2&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Kunwu_Kaiwu2_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Kunwu_Kaiwu2_CloseClicked();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Kunwu_Kaiwu2_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Property Name="RiseOnClick" Value="False" />
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_Kaiwu2_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,70.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{KWCC_241219_37}" />
+      </Window>
+      <Window Type="DefaultWindow" Name="Kunwu_Kaiwu2_Pet_Choose_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,264.000000},{0.000000,44.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-132.000000},{0.000000,80.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Kunwu_Kaiwu2_Pet_Choose_Title">
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,2.000000}}"/>
+          <Property Name="Text" Value="#{KWCC_241219_97}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_Kaiwu2_Pet_Choose_Text">
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{1.000000,-22.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,20.000000}" />
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="Kunwu_Kaiwu2_Pet_Choose">
+          <Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{1.000000,-22.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}" />
+          <Property Name="Text" Value="#{KWCC_241219_96}" />
+          <Event Name="Clicked" Function="Kunwu_Kaiwu2_ChoosePet_Clicked();" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Kunwu_Kaiwu2_Update_Frame">
+        <Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,172.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.000000,134.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_SimpleText" Name="Kunwu_Kaiwu2_Update_TextLeft">
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{KWCC_241219_98}"/>
+          <Property Name="Font" Value="YouYuan13"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Kunwu_Kaiwu2_Update_TextRight">
+          <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-220.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{KWCC_241219_106}"/>
+          <Property Name="Font" Value="YouYuan13"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="Kunwu_Kaiwu2_UpdateInfo_Frame">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,150.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-150.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Window Type="TLBB_Frame_Lace2" Name="Kunwu_Kaiwu2_UpdateInfo_TextLeftBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_SimpleText" Name="Kunwu_Kaiwu2_UpdateInfo_TextLeft">
+              <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{KWCC_241219_99}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Kunwu_Kaiwu2_UpdateInfo_Arrow">
+            <Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,28.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-15.000000},{0.500000,-14.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Button13 image:Btn_Right_Normal"/>
+          </Window>
+          <Window Type="TLBB_Frame_Lace2" Name="Kunwu_Kaiwu2_UpdateInfo_TextRightBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-220.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_SimpleText" Name="Kunwu_Kaiwu2_UpdateInfo_TextRight">
+              <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.000000,0.000000}}"/>
+              <Property Name="Text" Value="#{KWCC_241219_107}"/>
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_Kaiwu2_Model_Wuxing_Text">
+        <Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-157.000000}}"/>
+        <Property Name="Text" Value="#{KWCC_241219_85}" />
+        <Window Type="TLBB_SimpleText" Name="Kunwu_Kaiwu2_Model_Wuxing">
+          <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="Text" Value="%s0/%s1" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_Kaiwu2_Model_Lingxing_Text">
+        <Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-135.000000}}"/>
+        <Property Name="Text" Value="#{KWCC_241219_86}" />
+        <Window Type="TLBB_SimpleText" Name="Kunwu_Kaiwu2_Model_Lingxing">
+          <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="Text" Value="%s0/%s1" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_Kaiwu2_KaiwuTJ_Text">
+        <Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-113.000000}}"/>
+        <Property Name="Text" Value="#{KWCC_241219_87}" />
+        <Window Type="TLBB_SimpleText" Name="Kunwu_Kaiwu2_KaiwuTJ">
+          <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="Text" Value="%s0/%s1" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_Kaiwu2_Demand_Jiaozi_Text">
+        <Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-91.000000}}"/>
+        <Property Name="Text" Value="#{KWCC_241219_25}" />
+        <Window Type="TLBB_Money" Name="Kunwu_Kaiwu2_DemandMoney">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_Kaiwu2_SelfJiaozi_Text">
+        <Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-69.000000}}"/>
+        <Property Name="Text" Value="#{KWCC_241219_27}" />
+        <Window Type="TLBB_Money" Name="Kunwu_Kaiwu2_SelfJiaozi">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+          <Property Name="GoldIcon" Value = "set:Button6 image:Lace_JiaoziJin" />
+          <Property Name="SilverIcon" Value = "set:Button6 image:Lace_JiaoziYin" />
+          <Property Name="CopperIcon" Value = "set:Button6 image:Lace_JiaoziTong" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="Kunwu_Kaiwu2_SelfMoney_Text">
+        <Property Name="UnifiedSize" Value="{{0.900000,0.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{1.000000,-47.000000}}"/>
+        <Property Name="Text" Value="#{KWCC_241219_28}" />
+        <Window Type="TLBB_Money" Name="Kunwu_Kaiwu2_SelfMoney">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="MoneyNumber" Value="0" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace5" Name="Kunwu_Kaiwu2_Blank">
+        <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Kunwu_Kaiwu2_OK">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="#{KWCC_241219_70}" />
+        <Event Name="Clicked" Function="Kunwu_Kaiwu2_OK_Clicked();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Kunwu_Kaiwu2_Cancel">
+        <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="#{KWCC_241219_20}" />
+        <Event Name="Clicked" Function="Kunwu_Kaiwu2_CloseClicked();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

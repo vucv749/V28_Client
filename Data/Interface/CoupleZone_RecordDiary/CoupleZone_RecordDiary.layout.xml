@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame_Affection1" Name="CoupleZone_RecordDiary_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,242.000000},{0.000000,180.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-121.000000},{0.500000,-90.000000}}"/>
+		<Event Name="Hidden" Function="CoupleZone_RecordDiary_OnClose()"/>
+		<Window Type="TLBB_TitleLace_Affection1" Name="CoupleZone_RecordDiary_Frame_DragTitleBK">
+			<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.500000,-45.000000},{0.000000,11.000000}}"/>
+			<Property Name="RiseOnClick" Value="False"/>
+		</Window>		
+		<Window Type="TLBB_DragTitle" Name="CoupleZone_RecordDiary_Frame_Title">
+			<Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+			<Property Name="DragTarget" Value="CoupleZone_RecordDiary_Frame" />
+			<Property Name="Font" Value="YouYuan11.25" />
+			<Property Name="HorzFormatting" Value="HorzCentred" />
+			<Property Name="VertFormatting" Value="VertCentred" />
+			<Property Name="Text" Value="#{QLKJ_230331_35}" />
+		</Window>
+		<Window Type="TLBB_ButtonClose" Name="CoupleZone_RecordDiary_Close">
+			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+			<Event Name="Clicked" Function="CoupleZone_RecordDiary_OnClose()" />
+		</Window>
+		<Window Type="TLBB_ButtonHelp" Name="CoupleZone_RecordDiary_Help">
+			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+		</Window>
+		<Window Type="DefaultWindow" Name="CoupleZone_RecordDiary_Client">
+			<Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+			<Window Type="DefaultWindow" Name="CoupleZone_RecordDiary_EditBK">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-24.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+				<Window Type="TLBB_MultiIMEEditBox" Name="CoupleZone_RecordDiary_Edit">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+					<Property Name="MaxTextLength" Value="64" />
+					<Property Name="OnReturnEnable" Value="False" />
+					<Property Name="ActiveSelectionColour" Value="FF00FF00" />
+					<Property Name="SelectedTextColour" Value="FFFFFFFF" />
+					<Event Name="TextChanged" Function="CoupleZone_RecordDiary_CheckState(1)" />
+					<Property Name="DefaultEditBox" Value="True"/>
+				</Window>					
+			</Window>	
+			<Window Type="TLBB_SimpleText" Name="CoupleZone_RecordDiary_EditText">
+				<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-202.000000},{1.000000,-19.000000}}"/>
+				<Property Name="Text" Value="#{QLKJ_230331_98}"/>
+				<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+				<Property Name="MouseRButtonHollow" Value="True"/>
+				<Property Name="MouseMoveHollow" Value="True"/>
+				<Property Name="MouseLButtonHollow" Value="True"/>
+				<Property Name="MouseHollow" Value="True"/>					
+			</Window>							
+			<Window Type="TLBB_ButtonNULL" Name="CoupleZone_RecordDiary_Face">
+				<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-18.000000}}"/>
+				<Property Name="NormalImage" Value="set:Button2 image:BtnFace_Normal" />
+				<Property Name="HoverImage" Value="set:Button2 image:BtnFace_Hover" />
+				<Property Name="PushedImage" Value="set:Button2 image:BtnFace_Pushed" />
+				<Property Name="DisabledImage" Value="set:Button2 image:BtnFace_Disable" />
+				<Event Name="Clicked" Function="CoupleZone_RecordDiary_OnClicked_Emoji()" />
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="CoupleZone_RecordDiary_OK">
+				<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{1.000000,-21.000000}}"/>
+				<Property Name="Text" Value="#{QLKJ_230331_49}" />
+				<Property Name="Tooltip" Value="#{QLKJ_230331_09}" />
+				<Event Name="Clicked" Function="CoupleZone_RecordDiary_OnClicked_OK()" />
+			</Window>
+		</Window>			
+	</Window>
+</GUILayout>

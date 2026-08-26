@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame6" Name="CJ_Dying_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,332.000000},{0.000000,140.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-236.000000},{0.500000,-73.000000}}"/>
+    <Event Name="Hidden" Function="CJ_Dying_OnHide();" />
+    <Window Type="TLBB_DragTitle" Name="CJ_Dying_Title">
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,0.000000}}"/>
+      <Property Name="Text" Value="#{TLCJ_20240709_110}"/>
+      <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="CJ_Dying_Frame"/>
+    </Window>
+    <Window Type="TLBB_Frame_Lace2" Name="CJ_Dying_TextFrame">
+      <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{0.000000,106.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,26.000000}}"/>
+      <Window Type="TLBB_SimpleText" Name="CJ_Dying_Text">
+        <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,60.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.500000,-30.000000}}"/>
+        <Property Name="Text" Value="#{TLCJ_20240709_111}"/>
+        <Property Name="HorzFormatting" Value="LeftAligned"/>
+        <Property Name="RiseOnClick" Value="False"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_Frame2" Name="CJ_Relive_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,104.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-110.000000},{0.500000,-52.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="CJ_Relive_Text">
+            <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{0.000000,40.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,6.000000}}"/>
+            <Property Name="TextColor" Value="FFFFF263"/>
+            <Property Name="Text" Value="#{TLCJ_20240709_208}"/>
+            <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="CJ_Relive_FuHuo">
+            <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-82.000000},{1.000000,-30.000000}}"/>
+            <Property Name="Text" Value="#{TLCJ_20240709_209}"/>
+            <Event Name="Clicked" Function="CJ_Relive_FuHuo_Clicked();"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="CJ_Relive_AnQuanQu">
+            <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-18.000000},{1.000000,-30.000000}}"/>
+            <Property Name="Text" Value="#{TLCJ_20240709_210}"/>
+            <Event Name="Clicked" Function="CJ_Relive_AnQuanQu_Clicked();"/>
+        </Window>
+    </Window>
+</GUILayout>

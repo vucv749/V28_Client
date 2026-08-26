@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection2" Name="DoublePK_CaiQuan_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,378.000000},{0.000000,390.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-200.000000},{0.120000,0.000000}}"/>
+    <Event Name="Hidden" Function="DoublePK_CaiQuan_Clicked_Close();"/>
+    <Window Type="TLBB_StaticImageNULL" Name="DoublePK_CaiQuan_Client">
+      <Property Name="UnifiedSize" Value="{{0.000000,366.000000},{0.000000,366.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,6.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_PKBK2"/>
+      <Window Type="TLBB_DragTitle" Name="DoublePK_CaiQuan_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
+        <Property Name="Font" Value="YouYuan11.25"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="Text" Value="#{SRPK_230331_59}"/>
+        <Property Name="VertFormatting" Value="VertCentred"/>
+        <Property Name="DragTarget" Value="DoublePK_CaiQuan_Frame"/>
+      </Window>
+      <Window Type="TLBB_Affection_TimeBK" Name="DoublePK_CaiQuan_TimeTextBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,32.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_SimpleText" Name="DoublePK_CaiQuan_TimeText">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.000000,10.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+          <Property Name="Text" Value="#{SRPK_230331_66}"/>
+        </Window>
+        <Window Type="TLBB_StopWatch" Name="DoublePK_CaiQuan_Time">
+          <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,10.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          <Property Name="Text" Value="00:00"/>
+          <Event Name="ReachedZero" Function="DoublePK_CaiQuan_OnTimerEnd();"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="DoublePK_CaiQuan_GuiZe">
+        <Property Name="UnifiedSize" Value="{{0.000000,46.000000},{0.000000,50.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.000000,0.000000}}"/>
+        <Property Name="PushedImage" Value="set:DoubleGame01 image:DoubleGame_BtnPush"/>
+        <Property Name="NormalImage" Value="set:DoubleGame01 image:DoubleGame_BtnNormal"/>
+        <Property Name="HoverImage" Value="set:DoubleGame01 image:DoubleGame_BtnHover"/>
+        <Property Name="DisabledImage" Value="set:DoubleGame01 image:DoubleGame_BtnPush"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Visible" Value="False"/>
+        <Event Name="Clicked" Function="DoublePK_CaiQuan_OnOpenRuleUI();"/>
+      </Window>
+      <Window Type="TLBB_ButtonCheckNULL" Name="DoublePK_CaiQuan_Buff1Btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-46.000000},{0.000000,148.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:DoubleGame02 image:DoubleGame_chirlinkongpush"/>
+        <Property Name="NormalImage" Value="set:DoubleGame02 image:DoubleGame_chirlinkongnormal"/>
+        <Property Name="HoverImage" Value="set:DoubleGame02 image:DoubleGame_chirlinkonghover"/>
+        <Property Name="DisabledImage" Value="set:DoubleGame02 image:DoubleGame_chirlinkongnormal"/>
+        <Event Name="Clicked" Function="DoublePK_CaiQuan_OnSelectClick(1);"/>
+      </Window>
+      <Window Type="TLBB_ButtonCheckNULL" Name="DoublePK_CaiQuan_Buff2Btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-130.000000},{0.000000,288.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:DoubleGame02 image:DoubleGame_yuechuyunhaipush"/>
+        <Property Name="NormalImage" Value="set:DoubleGame02 image:DoubleGame_yuechuyunhainormal"/>
+        <Property Name="HoverImage" Value="set:DoubleGame02 image:DoubleGame_yuechuyunhaihover"/>
+        <Property Name="DisabledImage" Value="set:DoubleGame02 image:DoubleGame_yuechuyunhainormal"/>
+        <Event Name="Clicked" Function="DoublePK_CaiQuan_OnSelectClick(2);"/>
+      </Window>
+      <Window Type="TLBB_ButtonCheckNULL" Name="DoublePK_CaiQuan_Buff3Btn">
+        <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.5000000,40.000000},{0.000000,288.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="PushedImage" Value="set:DoubleGame02 image:DoubleGame_hanxingdianlupush"/>
+        <Property Name="NormalImage" Value="set:DoubleGame02 image:DoubleGame_hanxingdianlunormal"/>
+        <Property Name="HoverImage" Value="set:DoubleGame02 image:DoubleGame_hanxingdianluhover"/>
+        <Property Name="DisabledImage" Value="set:DoubleGame02 image:DoubleGame_hanxingdianlunormal"/>
+        <Event Name="Clicked" Function="DoublePK_CaiQuan_OnSelectClick(3);"/>
+      </Window>
+      <Window Type="TLBB_Affection_ButtonCommon" Name="DoublePK_CaiQuan_OK">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{0.000000,328.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Visible" Value="False"/>
+        <Property Name="Text" Value="#{SRPK_230331_55}"/>
+        <Event Name="Clicked" Function="DoublePK_CaiQuan_OnClickOk();"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="DoublePK_CaiQuan_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,400.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-200.000000},{1.000000,-30.000000}}"/>
+        <Property Name="Text" Value="#{SRPK_230331_334}"/>
+        <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

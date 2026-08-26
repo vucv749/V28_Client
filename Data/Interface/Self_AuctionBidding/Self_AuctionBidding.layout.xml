@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrameNULL" Name="Self_AuctionBidding_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,336.000000},{0.000000,254.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-168.000000},{0.500000,-130.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="Hidden" Function="Self_AuctionBidding_OnHidden();"/>
+        <Window Type="TLBB_DragTitle" Name="Self_AuctionBidding_DragTitle">
+            <Property Name="UnifiedSize" Value="{{0.000000,248.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-124.000000},{0.000000,0.000000}}"/>
+            <Property Name="HorzFormatting" Value="HorzCentred"/>
+            <Property Name="VertFormatting" Value="VertCentred"/>
+            <Property Name="Text" Value="#{ZZPM_250325_79}"/>
+            <Property Name="Font" Value="YouYuan11.25"/>
+            <Property Name="DragTarget" Value="Self_AuctionBidding_Frame"/>
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="Self_AuctionBidding_Close">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,6.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Self_AuctionBidding_CloseClicked();"/>
+        </Window>
+        <Window Type="TLBB_FrameY" Name="Self_AuctionBidding_Client">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_ActionButton" Name="Self_AuctionBidding_Item">
+                <Property Name="UnifiedSize" Value="{{0.000000,64.000000},{0.000000,64.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,38.000000}}"/>
+            </Window>
+            <Window Type="TLBB_Frame_Lace3" Name="Self_AuctionBidding_ItemInfo">
+                <Property Name="UnifiedSize" Value="{{0.000000,220.000000},{0.000000,64.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,94.000000},{0.000000,38.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="Self_AuctionBidding_ItemInfo_Text1">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,22.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,6.000000}}"/>
+                    <Property Name="Text" Value="#{ZZPM_250325_80}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Self_AuctionBidding_ItemInfo_Text2">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,22.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,34.000000}}"/>
+                    <Property Name="Text" Value="#{ZZPM_250325_81}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                    <Window Type="TLBB_StopWatch" Name="Self_AuctionBidding_ItemInfo_StopWatch">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-90.000000},{1.000000,0.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,90.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="#{ZZPM_250325_82}"/>
+                        <Property Name="TextColor" Value="FFFFF263"/>
+                        <Event Name="ReachedZero" Function="Self_AuctionBidding_TimeOut();"/>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Self_AuctionBidding_HighestBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,294.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,112.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_Animate" Name="Self_AuctionBidding_HighestAnimate">
+                    <Property Name="UnifiedSize" Value="{{0.000000,219.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="Animate" Value="HSLJ_LightUpFlash"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Self_AuctionBidding_Highest">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+                    <Property Name="Text" Value="#{ZZPM_250325_83}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Window Type="TLBB_SimpleText" Name="Self_AuctionBidding_HighestNum">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-70.000000},{1.000000,0.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="#{ZZPM_250325_84}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                    </Window>
+                </Window>
+                <Window Type="TLBB_ButtonCommon" Name="Self_AuctionBidding_Refresh">
+                    <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.500000,-10.000000}}"/>
+                    <Property Name="Text" Value="#{ZZPM_250325_89}"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                    <Event Name="Clicked" Function="Self_AuctionBidding_Refresh();"/>
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Self_AuctionBidding_MineBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,294.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,136.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="Self_AuctionBidding_Mine">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+                    <Property Name="Text" Value="#{ZZPM_250325_85}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Window Type="TLBB_SimpleText" Name="Self_AuctionBidding_MineNum">
+                        <Property Name="UnifiedSize" Value="{{1.000000,-70.000000},{1.000000,0.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="#{ZZPM_250325_86}"/>
+                        <Property Name="RiseOnClick" Value="False"/>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Type="TLBB_SimpleTextFrame" Name="Self_AuctionBidding_YuanbaoNum">
+                <Property Name="UnifiedSize" Value="{{0.000000,294.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,160.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                <Property Name="Text" Value="#{ZZPM_250325_96}"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="Self_AuctionBidding_NumBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,294.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,182.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_ButtonSub" Name="Self_AuctionBidding_RaiseSub">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.500000,-8.000000}}"/>
+                    <Property Name="Tooltip" Value="#{ZZPM_250325_98}"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                    <Event Name="Clicked" Function="Self_AuctionBidding_AddYuanBao(0);"/>
+                </Window>
+                <Window Type="TLBB_EditBoxNormal" Name="Self_AuctionBidding_Num">
+                    <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{0.500000,-8.000000}}"/>
+                    <Property Name="ValidationString" Value="[0-9]*"/>
+                    <Property Name="MaxTextLength" Value="7"/>
+                    <Property Name="DefaultEditBox" Value="True"/>
+                    <Property Name="ReadOnly" Value="True"/>
+                    <Event Name="TextChanged" Function="Self_AuctionBidding_TextChanged();"/>
+                </Window>
+                <Window Type="TLBB_ButtonAdd" Name="Self_AuctionBidding_RaiseAdd">
+                    <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.500000,-8.000000}}"/>
+                    <Property Name="Tooltip" Value="#{ZZPM_250325_97}"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                    <Event Name="Clicked" Function="Self_AuctionBidding_AddYuanBao(1);"/>
+                </Window>
+            </Window>
+            <Window Type="TLBB_SimpleMulitiTextFrame" Name="Self_AuctionBidding_NotStarted">
+                <Property Name="UnifiedSize" Value="{{0.000000,294.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,185.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+                <Property Name="Text" Value="#{ZZPM_250325_99}"/>
+            </Window>
+            <Window Type="DefaultWindow" Name="Self_AuctionBidding_ButtonFrame">
+                <Property Name="UnifiedSize" Value="{{0.000000,315.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,220.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_ButtonCommon" Name="Self_AuctionBidding_Submit">
+                    <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{0.000000,0.000000}}"/>
+                    <Property Name="Text" Value="#{ZZPM_250325_90}"/>
+                    <Event Name="Clicked" Function="Self_AuctionBidding_DoBidding();"/>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

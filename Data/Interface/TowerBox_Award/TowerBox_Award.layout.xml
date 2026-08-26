@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="TowerBox_Award_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,456.000000},{0.000000,300.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-456.000000},{0.500000,0.000000}}"/>
+    <Event Name="Hidden" Function="TowerBox_Award_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="TowerBox_Award_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,43.000000},{0.000000,11.000000}}"/>
+      <Property Name="Text" Value="#{PTDB_231225_44}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="TowerBox_Award_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="TowerBox_Award_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,14.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+      <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+      <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+      <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>
+      <Event Name="Clicked" Function="TowerBox_Award_OnClosed();"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="TowerBox_Award_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="TowerBox_Award_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,35.000000}}"/>
+      <Property Name="Image" Value="set:NewPvp image:NewPvpBK"/>
+      <Window Type="TLBB_SimpleText" Name="TowerBox_Award_Info">
+        <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,60.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,2.000000}}"/>
+        <Property Name="Text" Value="#{PTDB_231225_179}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Window Type="TLBB_ButtonCommon13" Name="TowerBox_Award_PreviewBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-20.000000}}"/>
+          <Property Name="Text" Value="#{PTDB_231225_194}"/>
+          <Event Name="Clicked" Function="TowerBox_Award_PreviewBtn(1)"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="TowerBox_Award_Box1Num">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,22.000000},{0.000000,112.000000}}"/>
+        <Property Name="Text" Value="#{PTDB_231225_180}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="TowerBox_Award_Box2Num">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-68.000000},{0.000000,112.000000}}"/>
+        <Property Name="Text" Value="#{PTDB_231225_181}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="TowerBox_Award_Box3Num">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-146.000000},{0.000000,112.000000}}"/>
+        <Property Name="Text" Value="#{PTDB_231225_182}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon10" Name="TowerBox_Award_Box1NumBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,42.000000},{0.000000,204.000000}}"/>
+        <Property Name="Text" Value="#{PTDB_231225_222}"/>
+        <Event Name="Clicked" Function="TowerBox_Award_BoxNumBtn(1)"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon10" Name="TowerBox_Award_Box2NumBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,176.000000},{0.000000,204.000000}}"/>
+        <Property Name="Text" Value="#{PTDB_231225_223}"/>
+        <Event Name="Clicked" Function="TowerBox_Award_BoxNumBtn(2)"/>
+      </Window>
+      <Window Type="TLBB_ButtonCommon10" Name="TowerBox_Award_Box3NumBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,316.000000},{0.000000,204.000000}}"/>
+        <Property Name="Text" Value="#{PTDB_231225_224}"/>
+        <Event Name="Clicked" Function="TowerBox_Award_BoxNumBtn(3)"/>
+      </Window>
+      <Window Type="TLBB_StaticImageNULL" Name="TowerBox_Award_TextInfoTime">
+        <Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{0.000000,72.000000}}"/>
+        <Property Name="Image" Value="set:NewPvp image:NewPvp_Time"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="TowerBox_Award_TextInfo">
+        <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,70.000000}}"/>
+        <Property Name="Text" Value="#{PTDB_231225_191}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="TowerBox_Award_NumText">
+        <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-200.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="#{PTDB_231225_187}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

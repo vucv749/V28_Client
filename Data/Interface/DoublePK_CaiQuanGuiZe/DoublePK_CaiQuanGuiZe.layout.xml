@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Affection0" Name="DoublePK_CaiQuanGuiZe_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,356.000000},{0.000000,377.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-284.000000},{0.120000,0.000000}}"/>
+    <Event Name="Hidden" Function="DoublePK_CaiQuanGuiZe_Clicked_Close();"/>
+    <Window Type="TLBB_TitleLace_Affection1" Name="DoublePK_CaiQuanGuiZe_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{0.000000,11.000000}}"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="DoublePK_CaiQuanGuiZe_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Text" Value="#{SRPK_230331_195}"/>
+      <Property Name="VertFormatting" Value="VertCentred"/>
+      <Property Name="DragTarget" Value="DoublePK_CaiQuanGuiZe_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="DoublePK_CaiQuanGuiZe_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Helper:GotoHelper(&quot;*Compensate&quot;);"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="DoublePK_CaiQuanGuiZe_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="DoublePK_CaiQuanGuiZe_Clicked_Close();"/>
+    </Window>
+    <Window Type="TLBB_StaticImageNULL" Name="DoublePK_CaiQuanGuiZe_Image">
+      <Property Name="UnifiedSize" Value="{{0.000000,346.000000},{0.000000,324.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,36.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="Image" Value="set:DoubleGame01 image:DoubleGame_PKBK2"/>
+    </Window>
+  </Window>
+</GUILayout>

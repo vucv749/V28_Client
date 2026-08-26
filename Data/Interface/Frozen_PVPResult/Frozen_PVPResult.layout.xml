@@ -1,0 +1,244 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Frozen_PVPResult_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,572.000000},{0.000000,396.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-290.000000},{0.500000,-160.000000}}"/>
+    <Window Type="TLBB_StaticImageNULL" Name="Frozen_PVPResult_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,238.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-119.000000},{0.000000,2.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="Image" Value="set:Frozen_PVP image:Frozen_TitleBK"/>
+    </Window>
+    <Window Type="TLBB_MainFrame_Frozen2" Name="Frozen_PVPResult_FrameBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,572.000000},{0.000000,386.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+      <Window Type="TLBB_DragTitle" Name="Frozen_PVPResult_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,2.000000}}"/>
+        <Property Name="DragTarget" Value="Frozen_PVPResult_Frame"/>
+        <Window Type="TLBB_SimpleText" Name="Frozen_PVPResult_PageHeader">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{BXDZ_240918_321}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Font" Value="YouYuan11.25"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="Frozen_PVPResult_Client">
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,26.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_PVPResult_TopList_TimeImage">
+          <Property Name="UnifiedSize" Value="{{0.000000,13.000000},{0.000000,13.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,6.000000}}"/>
+          <Property Name="Image" Value="set:DuoBao1 image:DuoBao1_MiniTime"/>
+        </Window>
+        <Window Type="TLBB_StopWatch" Name="Frozen_PVPResult_TopList_Time">
+          <Property Name="UnifiedSize" Value="{{1.000000,-314.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+          <Property Name="Text" Value="00:00"/>
+          <Property Name="MouseRButtonHollow" Value="True"/>
+          <Property Name="MouseLButtonHollow" Value="True"/>
+          <Property Name="MouseHollow" Value="True"/>
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Frozen_PVPResult_TopList_TimeText">
+          <Property Name="UnifiedSize" Value="{{1.000000,-262.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,256.000000},{0.000000,4.000000}}"/>
+          <Property Name="Text" Value="#{BXDZ_240918_208}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="Frozen_PVPResult_TopList_ListTitleBK">
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,26.000000}}"/>
+          <Window Type="TLBB_MultiColumnList" Name="Frozen_PVPResult_TopList_ListTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,-18.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+            <Property Name="ForceHorzScrollbar" Value="False" />
+            <Property Name="SortSettingEnabled" Value="False" />
+            <Property Name="SelectionMode" Value="RowSingle" />
+            <Property Name="ColumnHeader" Value="text: width:0.1 id:0" />
+            <Property Name="ColumnHeader" Value="text: width:0.2 id:1" />
+            <Property Name="ColumnHeader" Value="text: width:0.1 id:2" />
+            <Property Name="ColumnHeader" Value="text: width:0.2 id:3" />
+            <Property Name="ColumnHeader" Value="text: width:0.2 id:4" />
+            <Property Name="ColumnHeader" Value="text: width:0.2 id:5" />
+            <Property Name="ColumnsSizable" Value="False" />
+            <Property Name="ColumnsMovable" Value="False" />
+            <Property Name="ColumnsAdjust" Value="True" />
+            <Window Type="TLBB_SimpleText" Name="Frozen_PVPResult_TopList_Title_Rank">
+              <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+              <Property Name="Text" Value="#{BXDZ_240918_198}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Frozen_PVPResult_TopList_Title_Camp">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.100000,0.000000},{0.000000,2.000000}}"/>
+              <Property Name="Text" Value="#{BXDZ_240918_199}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Frozen_PVPResult_TopList_Title_SnowManNum">
+              <Property Name="UnifiedSize" Value="{{0.100000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.300000,0.000000},{0.000000,2.000000}}"/>
+              <Property Name="Text" Value="#{BXDZ_240918_201}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Frozen_PVPResult_TopList_Title_SnowManLevel">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.400000,0.000000},{0.000000,2.000000}}"/>
+              <Property Name="Text" Value="#{BXDZ_240918_203}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Frozen_PVPResult_TopList_Title_RankAward">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.600000,0.000000},{0.000000,2.000000}}"/>
+              <Property Name="Text" Value="#{BXDZ_240918_205}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Frozen_PVPResult_TopList_Title_LevelAward">
+              <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.800000,0.000000},{0.000000,2.000000}}"/>
+              <Property Name="Text" Value="#{BXDZ_240918_206}"/>
+              <Property Name="MouseRButtonHollow" Value="True"/>
+              <Property Name="MouseMoveHollow" Value="True"/>
+              <Property Name="MouseLButtonHollow" Value="True"/>
+              <Property Name="MouseHollow" Value="True"/>
+              <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Frozen_PVPResult_TopList_List">
+          <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,268.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,46.000000}}"/>
+          <Window Type="TLBB_NotSuperList" Name="Frozen_PVPResult_TopList_ListFrame">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-4.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="VScrollMode" Value="Hide"/>
+            <Window Type="TLBB_NotSuperListItemCommon3" Name="Frozen_PVPResult_TopList_List_Item">
+              <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,44.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_Frame_Lace2" Name="Frozen_PVPResult_TopList_List_ItemBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,542.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Frozen_PVPResult_TopList_List_Rank">
+                <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Property Name="Text" Value="%s0"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Frozen_PVPResult_TopList_List_Camp">
+                <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,58.000000},{0.000000,0.000000}}"/>
+                <Property Name="Text" Value="%s0"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Frozen_PVPResult_TopList_List_SnowManNum">
+                <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,164.000000},{0.000000,0.000000}}"/>
+                <Property Name="Text" Value="%s0"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Frozen_PVPResult_TopList_List_SnowManLevel">
+                <Property Name="UnifiedSize" Value="{{0.000000,102.000000},{1.000000,0.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,222.000000},{0.000000,0.000000}}"/>
+                <Property Name="Text" Value="%s0"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="Frozen_PVPResult_TopList_RankAward1">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,334.000000},{0.500000,-20.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="Frozen_PVPResult_TopList_RankAward2">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,384.000000},{0.500000,-20.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="Frozen_PVPResult_TopList_LevelAward1">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,444.000000},{0.500000,-20.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_ActionButton" Name="Frozen_PVPResult_TopList_LevelAward2">
+                <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,40.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,490.000000},{0.500000,-20.000000}}"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+              <Window Type="TLBB_StaticImageNULL" Name="Frozen_PVPResult_TopList_List_Line1">
+                <Property Name="UnifiedSize" Value="{{0.000000,229.000000},{0.000000,1.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-114.000000},{1.000000,-1.000000}}"/>
+                <Property Name="Image" Value="set:DaHua_PVP image:DaHua_PVP_Line1"/>
+                <Property Name="AlwaysOnTop" Value="True"/>
+              </Window>
+
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Frozen_PVPResult_TopList_info">
+          <Property Name="UnifiedSize" Value="{{1.000000,-82.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-30.000000}}"/>
+          <Property Name="Text" Value="#{BXDZ_240918_207}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon" Name="Frozen_PVPResult_TopList_Btn">
+          <Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-34.000000}}"/>
+          <Property Name="Text" Value="#{BXDZ_240918_254}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="Frozen_PVPResult_TopList()"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+  </GUILayout>

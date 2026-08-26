@@ -1,0 +1,228 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="ValentinesDay_GrandTotal_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,432.000000},{0.000000,283.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-266.000000},{0.500000,-142.000000}}"/>
+    <Event Name="Hidden" Function="ValentinesDay_GrandTotal_OnHiden()"/>
+    <Window Type="TLBB_HeroFrame01" Name="ValentinesDay_GrandTotal_MainFrame">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_DragTitle" Name="ValentinesDay_GrandTotal_DragTitle">
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,5.000000}}"/>
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="HorzFormatting" Value="HorzCentred"/>
+        <Property Name="Text" Value="#{QRWH_221115_107}" />
+        <Property Name="DragTarget" Value="ValentinesDay_GrandTotal_Frame"/>
+      </Window>
+      <Window Type="TLBB_HeroTitle01" Name="ValentinesDay_GrandTotal_DragTitleBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,-2.000000}}"/>
+      </Window>
+      <Window Type="TLBB_ButtonClose2" Name="ValentinesDay_GrandTotal_Close">
+        <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+        <Event Name="Clicked" Function="ValentinesDay_GrandTotal_Close();" />
+      </Window>
+      <Window Type="DefaultWindow" Name="ValentinesDay_GrandTotal_Frame_Client">
+        <Property Name="UnifiedSize" Value="{{0.000000,422.000000},{0.000000,244.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,30.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="DefaultWindow" Name="ValentinesDay_GrandTotal_Frame_Detail">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="ValentinesDay_GrandTotal_Frame_DetailBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,422.000000},{0.000000,244.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:ValentinesDay_Guessing image:BK_Small"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="ValentinesDay_GrandTotal_Text1">
+            <Property Name="UnifiedSize" Value="{{0.000000,416.000000},{0.000000,86.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-208.000000},{0.000000,1.000000}}"/>
+            <Property Name="Text" Value="#{QRWH_221115_55}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="ValentinesDay_GrandTotal_Text2">
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-190.000000},{1.000000,-32.000000}}"/>
+            <Property Name="Text" Value="#{QRWH_221115_59}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+          </Window>
+          <Window Type="DefaultWindow" Name="ValentinesDay_GrandTotal_Frame_Center1">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,90.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,84.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="DefaultWindow" Name="ValentinesDay_GrandTotal_Page1_Icon1">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,0.000000}}"/>
+				      <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ValentinesDay_GrandTotal_Page1_one_Button">
+                <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-35.000000},{0.500000,-40.000000}}"/>
+                <Property Name="Image" Value="set:ValentinesDay_GrandTotal image:NotGet_Item"/>
+                <Window Type="TLBB_Animate" Name="ValentinesDay_GrandTotal_Page1_one_ButtonAnimate">
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="JFMZ_Light1"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="ValentinesDay_GrandTotal_Page1_one">
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Event Name="Clicked" Function="ValentinesDay_GrandTotal_Page1_OnClick(1)"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="ValentinesDay_GrandTotal_Page1_oneMark">
+                    <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,34.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-22.750000},{1.000000,-42.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                    <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                  </Window>
+                </Window>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ValentinesDay_GrandTotal_oneText">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-22.000000}}"/>
+                <Property Name="Text" Value="#{QRWH_221115_56}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="ValentinesDay_GrandTotal_Page1_Icon2">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.00000,140.000000},{0.000000,0.000000}}"/>
+				      <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ValentinesDay_GrandTotal_Page1_two_Button">
+                <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-35.000000},{0.500000,-40.000000}}"/>
+                <Property Name="Image" Value="set:ValentinesDay_GrandTotal image:NotGet_Item"/>
+                <Window Type="TLBB_Animate" Name="ValentinesDay_GrandTotal_Page1_two_ButtonAnimate">
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="JFMZ_Light1"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="ValentinesDay_GrandTotal_Page1_two">
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Event Name="Clicked" Function="ValentinesDay_GrandTotal_Page1_OnClick(2)"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="ValentinesDay_GrandTotal_Page1_twoMark">
+                    <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,34.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-22.750000},{1.000000,-42.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                    <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                  </Window>
+                </Window>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ValentinesDay_GrandTotal_twoText">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-22.000000}}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                <Property Name="Text" Value="#{QRWH_221115_57}"/>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="ValentinesDay_GrandTotal_Page1_Icon3">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,230.0000},{0.000000,0.000000}}"/>
+			        <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ValentinesDay_GrandTotal_Page1_three_Button">
+                <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-35.000000},{0.500000,-40.000000}}"/>
+                <Property Name="Image" Value="set:ValentinesDay_GrandTotal image:NotGet_Item"/>
+                <Window Type="TLBB_Animate" Name="ValentinesDay_GrandTotal_Page1_three_ButtonAnimate">
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="JFMZ_Light1"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="ValentinesDay_GrandTotal_Page1_three">
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Event Name="Clicked" Function="ValentinesDay_GrandTotal_Page1_OnClick(3)"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="ValentinesDay_GrandTotal_Page1_threeMark">
+                    <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,34.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-22.750000},{1.000000,-42.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                    <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                  </Window>
+                </Window>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ValentinesDay_GrandTotal_threeText">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-22.000000}}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                <Property Name="Text" Value="#{QRWH_221115_58}"/>
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="ValentinesDay_GrandTotal_Page1_Icon4">
+              <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{1.000000,0.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,320.0000},{0.000000,0.000000}}"/>
+              <Property Name="RiseOnClick" Value="False"/>
+              <Window Type="TLBB_StaticImageNULL" Name="ValentinesDay_GrandTotal_Page1_four_Button">
+                <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,70.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-35.000000},{0.500000,-40.000000}}"/>
+                <Property Name="Image" Value="set:ValentinesDay_GrandTotal image:NotGet_Item"/>
+                <Window Type="TLBB_Animate" Name="ValentinesDay_GrandTotal_Page1_four_ButtonAnimate">
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Property Name="MouseRButtonHollow" Value="True"/>
+                  <Property Name="MouseMoveHollow" Value="True"/>
+                  <Property Name="MouseLButtonHollow" Value="True"/>
+                  <Property Name="MouseHollow" Value="True"/>
+                  <Property Name="Animate" Value="JFMZ_Light1"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="ValentinesDay_GrandTotal_Page1_four">
+                  <Property Name="UnifiedSize" Value="{{0.000000,49.000000},{0.000000,49.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.500000,-23.750000},{1.000000,-60.000000}}"/>
+                  <Event Name="Clicked" Function="ValentinesDay_GrandTotal_Page1_OnClick(4)"/>
+                  <Window Type="TLBB_StaticImageNULL" Name="ValentinesDay_GrandTotal_Page1_fourMark">
+                    <Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,34.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-22.750000},{1.000000,-42.000000}}"/>
+                    <Property Name="MouseRButtonHollow" Value="True"/>
+                    <Property Name="MouseMoveHollow" Value="True"/>
+                    <Property Name="MouseLButtonHollow" Value="True"/>
+                    <Property Name="MouseHollow" Value="True"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                    <Property Name="Image" Value="set:Seven image:Seven_ke"/>
+                  </Window>
+                </Window>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="ValentinesDay_GrandTotal_fourText">
+                <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-30.000000},{1.000000,-22.000000}}"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                <Property Name="Text" Value="#{QRWH_221115_100}"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

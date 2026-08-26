@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="Self_Auction_UpItem_Frame">
+        <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.500000,-84.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,168.000000}}"/>
+		<Event Name="Hidden" Function="Self_Auction_UpItem_OnHidden();" />
+        <Window Type="TLBB_DragTitle" Name="Self_Auction_UpItem_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+            <Property Name="DragTarget" Value="Self_Auction_UpItem_Frame" />
+            <Property Name="Text" Value="#{ZZPM_250325_55}" />
+            <Property Name="Font" Value="YouYuan11.25" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="Self_Auction_UpItem_Help">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Self_Auction_UpItem&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="Self_Auction_UpItem_Close">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Event Name="Clicked" Function="Self_Auction_UpItem_Cancel_Clicked();" />
+        </Window>
+        <Window Type="DefaultWindow" Name="Self_Auction_UpItem_Function_Frame">
+            <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
+            <Window Type="TLBB_SimpleText" Name="Self_Auction_UpItem_Info1">
+                <Property Name="AbsolutePosition" Value="x:14.0 y:15.0" />
+                <Property Name="UnifiedSize" Value="{{0.0,208.000000},{0.000000,20.000000}" />
+                <Property Name="Text" Value="#{ZZPM_250325_56}" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="VertFormatting" Value="VertCentred" />
+                <Property Name="TextColor" Value="FFFFF263" />
+            </Window>
+          <Window Type="TLBB_ActionButton" Name="Self_Auction_UpItem_Object" >
+            <Property Name="AbsolutePosition" Value="x:230.000000 y:9.000000" />
+            <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+			<Property Name="DragAcceptName" Value="W1" />
+            <Property Name="DraggingEnabled" Value="False" />
+            <Event Name="RBClicked" Function="Self_Auction_UpItem_Update(-1);" />
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Self_Auction_UpItem_Info2">
+            <Property Name="AbsolutePosition" Value="x:14.0 y:56.0" />
+            <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,20.000000}" />
+            <Property Name="Text" Value="#{ZZPM_250325_58}" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_EditBoxNormal" Name="Self_Auction_UpItem_Moral_Value">
+                <Property Name="AbsolutePosition" Value="x:126.0 y:55.0" />
+                <Property Name="UnifiedSize" Value="{{0.0,100.000000},{0.000000,20.000000}" />
+				<Property Name="MaxTextLength" Value="7" />
+                <Property Name="ValidationString" Value="[0-9]*" />
+                <Event Name="TextChanged" Function="Self_Auction_UpItem_Count_Change();" />
+            </Window>
+          <Window Type="TLBB_SimpleText" Name="Self_Auction_UpItem_Info3">
+            <Property Name="AbsolutePosition" Value="x:227.0 y:56.0" />
+            <Property Name="UnifiedSize" Value="{{0.0,40.000000},{0.000000,20.000000}" />
+            <Property Name="Text" Value="#{YBSC_XML_48}" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="VertFormatting" Value="VertCentred" />
+            <Property Name="TextColor" Value="FFFFF263" />
+          </Window>
+          <Window Type="TLBB_Frame_Lace5" Name="Self_Auction_UpItem_Blank">
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="Self_Auction_UpItem_OK">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
+                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+                <Property Name="Text" Value="#{ZZPM_250325_60}" />
+                <Event Name="Clicked" Function="Self_Auction_UpItem_OK_Clicked();" />
+            </Window>
+            <Window Type="TLBB_ButtonCommon" Name="Self_Auction_UpItem_Cancel">
+                <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{1.000000,-20.000000}" />
+                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+                <Property Name="Text" Value="#{ZZPM_250325_59}" />
+                <Event Name="Clicked" Function="Self_Auction_UpItem_Cancel_Clicked();" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

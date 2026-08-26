@@ -1,0 +1,157 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Frozen_HotSpring2_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,810.000000},{0.000000,154.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-405.000000},{1.000000,-230.000000}}"/>
+    <Event Name="Hidden" Function="Frozen_HotSpring_OnHiden()"/>
+    <Window Type="TLBB_DragTitle" Name="Frozen_HotSpring2_DragTitle">
+      <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,146.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,65.000000},{0.000000,5.000000}}"/>
+      <Property Name="DragTarget" Value="Frozen_HotSpring2_Frame"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="Frozen_HotSpring2_Frame_TextBK">
+      <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_HotSpring2_image">
+        <Property Name="UnifiedSize" Value="{{0.000000,778.000000},{0.000000,154.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:Frozen_HotSpring image:Frozen_HotSpring_GGL"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Frozen_HotSpring2_Text8">
+        <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{1.000000,-100.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,5.000000}}"/>
+          <Property Name="Text" Value="#{BXPWQ_240927_106}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+        <Window Type="DefaultWindow" Name="Frozen_HotSpring2_EXPBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,500.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,298.000000},{0.000000,106.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Window Type="TLBB_Animate" Name="Frozen_HotSpring2_Blue">
+        <Property Name="UnifiedSize" Value="{{0.000000,499.000000},{0.000000,10.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Animate" Value="Frozen_HotSpring_BlueProgress"/>
+      </Window>
+      <Window Type="TLBB_Animate" Name="Frozen_HotSpring2_Red">
+        <Property Name="UnifiedSize" Value="{{0.000000,499.000000},{0.000000,10.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,10.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Animate" Value="Frozen_HotSpring_RedProgress"/>
+      </Window>
+      <Window Type="TLBB_ProgressFrozen_HotSpring" Name="Frozen_HotSpring2_EXP">
+        <Property Name="UnifiedSize" Value="{{0.000000,491.000000},{0.000000,8.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,11.000000}}"/>
+            <Property Name="MoveSpeed" Value="1.0"/>
+            <Property Name="EffectColor" Value="1"/>
+            <Property Name="CurrentProgress" Value="1.000000"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_HotSpring2_Icon1">
+      <Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,305.000000},{0.000000,78.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="Image" Value="set:Frozen_HotSpring image:Frozen_HotSpring_GGL0"/>
+          </Window>
+
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_HotSpring2_Icon3">
+      <Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,500.000000},{0.000000,78.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="Image" Value="set:Frozen_HotSpring image:Frozen_HotSpring_ST50"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_HotSpring2_Icon5">
+      <Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,642.000000},{0.000000,78.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="Image" Value="set:Frozen_HotSpring image:Frozen_HotSpring_ZTK100"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_HotSpring2_Icon6">
+      <Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,718.000000},{0.000000,78.000000}}"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+      <Property Name="Image" Value="set:Frozen_HotSpring image:Frozen_HotSpring_ZLR0"/>
+        </Window>
+      <Window Type="TLBB_SimpleText" Name="Frozen_HotSpring2_Text">
+        <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,555.000000},{1.000000,-114.000000}}"/>
+        <Property Name="Text" Value="#{BXPWQ_240927_58}"/>
+        <Property Name="HorzFormatting" Value="LeftAligned"/>
+      </Window>
+        <Window Type="TLBB_SimpleText" Name="Frozen_HotSpring2_TimeText">
+      <Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,440.000000},{0.000000,40.000000}}"/>
+          <Property Name="Text" Value="#{BXPWQ_240927_118}"/>
+          <Property Name="HorzFormatting" Value="LeftAligned"/>
+        </Window>
+    <Window Type="DefaultWindow" Name="Frozen_HotSpring2_TimeBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,68.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{1.000000,-70.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_HotSpring2_TimeReward1">
+        <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="Image" Value="set:Frozen_HotSpring image:SY_Hover"/>
+        <Property Name="Tooltip" Value="#{BXPWQ_240927_125}"/>
+        </Window>
+
+        <Window Type="TLBB_SimpleText" Name="Frozen_HotSpring2_TimeText1">
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{1.000000,-67.000000}}"/>
+        <Property Name="Text" Value="#{BXPWQ_240927_119}"/>
+        <Property Name="HorzFormatting" Value="LeftAligned"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_HotSpring2_TimeReward2">
+        <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,21.000000}}"/>
+        <Property Name="Image" Value="set:Frozen_HotSpring image:QY_Disabled"/>
+          <Property Name="Tooltip" Value="#{BXPWQ_240927_126}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Frozen_HotSpring2_TimeText2">
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{1.000000,-44.000000}}"/>
+        <Property Name="Text" Value="#{BXPWQ_240927_120}"/>
+        <Property Name="HorzFormatting" Value="LeftAligned"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_HotSpring2_TimeReward3">
+        <Property Name="UnifiedSize" Value="{{0.000000,112.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,42.000000}}"/>
+        <Property Name="Image" Value="set:Frozen_HotSpring image:RY_Disabled"/>
+        <Property Name="Tooltip" Value="#{BXPWQ_240927_127}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Frozen_HotSpring2_TimeText3">
+          <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,34.000000},{1.000000,-24.000000}}"/>
+        <Property Name="Text" Value="#{BXPWQ_240927_121}"/>
+        <Property Name="HorzFormatting" Value="LeftAligned"/>
+        </Window>
+      </Window>
+
+  </Window>
+</GUILayout>

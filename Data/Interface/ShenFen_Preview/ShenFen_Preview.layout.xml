@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="ShenFen_Preview_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,330.000000},{0.000000,400.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-170.000000},{0.500000,-200.0000000}}"/>
+    <Event Name="Hidden" Function="ShenFen_Preview_Close();" />
+    <Window Type="TLBB_DragTitle" Name="ShenFen_Preview_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="ShenFen_Preview_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{YCGZ_231225_53}"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="ShenFen_Preview_Help">
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="Helper:GotoHelper(&quot;*Operation&quot;);" />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="ShenFen_Preview_Close">
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+      <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+      <Event Name="Clicked" Function="ShenFen_Preview_Close();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="ShenFen_Preview_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_ListBoxCommon" Name="ShenFen_Preview_List">
+        <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{0.000000,178.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+        <Event Name="ItemSelectionChanged" Function="ShenFen_Preview_ListBox_Selected();" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShenFen_Preview_Title2">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,182.000000}}"/>
+        <Property Name="Text" Value="#{YCGZ_231225_55}"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="ShenFen_Preview_Item_Frame">
+        <Property Name="UnifiedSize" Value="{{0.500000,-20.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.000000,202.000000}}"/>
+        <Window Type="TLBB_StaticImageFrame" Name="ShenFen_Preview_Item">
+          <Property Name="Position" Value="x:0.0 y:0.0" />
+          <Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Event Name="MouseEnter" Function="ShenFen_Preview_OnShowToolTip(0);" />
+          <Event Name="MouseLeave" Function="ShenFen_Preview_OnHideToolTip();" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShenFen_Preview_Amount">
+          <Property Name="UnifiedPosition" Value="{{0.0,3.000000},{0.0,20.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.0,30.000000},{0.000000,15.000000}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="1/99" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="MouseHollow" Value="True" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShenFen_Preview_Item_Name_Text">
+          <Property Name="UnifiedPosition" Value="{{0.0,36.000000},{0.0,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,-36.000000},{0.000000,36.000000}" />
+          <Property Name="Text" Value="#{INTERFACE_XML_552}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShenFen_Preview_LianYao">
+        <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,72.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,186.000000}}"/>
+        <Property Name="Text" Value="#{SFJN_231225_87}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="ShenFen_Preview_Title3">
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,240.000000}}"/>
+        <Property Name="Text" Value="#{YCGZ_231225_56}"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="ShenFen_Preview_MaterialIcon1_Frame">
+        <Property Name="UnifiedSize" Value="{{0.450000,0.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.000000,264.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_StaticImageNULL" Name="ShenFen_Preview_MaterialIcon1_Bk">
+          <Property Name="Position" Value="x:0.0 y:0.0" />
+          <Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Image" Value="set:CommonItem image:ActionBK" />
+        </Window>
+        <Window Type="TLBB_StaticImageFrame" Name="ShenFen_Preview_MaterialIcon1">
+          <Property Name="Position" Value="x:0.0 y:0.0" />
+          <Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Event Name="MouseEnter" Function="ShenFen_Preview_OnShowToolTip(1);" />
+          <Event Name="MouseLeave" Function="ShenFen_Preview_OnHideToolTip();" />
+          <Window Type="TLBB_StaticImageNULL" Name="ShenFen_Preview_MaterialIcon1_Mask">
+            <Property Name="Position" Value="x:0 y:0" />
+            <Property Name="Size" Value="w:1 h:1" />
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+            <Event Name="MouseEnter" Function="ShenFen_Preview_OnShowToolTip(1);" />
+            <Event Name="MouseLeave" Function="ShenFen_Preview_OnHideToolTip();" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShenFen_Preview_MaterialIcon1_Amount">
+          <Property Name="UnifiedPosition" Value="{{0.0,3.000000},{0.0,20.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.0,30.000000},{0.000000,15.000000}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="1/9" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShenFen_Preview_Material1_Name_Text">
+          <Property Name="UnifiedPosition" Value="{{0.0,36.000000},{0.0,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,-36.000000},{0.000000,36.000000}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="Text" Value="#{INTERFACE_XML_552}" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ShenFen_Preview_MaterialIcon2_Frame">
+        <Property Name="UnifiedSize" Value="{{0.450000,0.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,264.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_StaticImageNULL" Name="ShenFen_Preview_MaterialIcon2_Bk">
+          <Property Name="Position" Value="x:0.0 y:0.0" />
+          <Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Image" Value="set:CommonItem image:ActionBK" />
+        </Window>
+        <Window Type="TLBB_StaticImageFrame" Name="ShenFen_Preview_MaterialIcon2">
+          <Property Name="Position" Value="x:0.0 y:0.0" />
+          <Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Event Name="MouseEnter" Function="ShenFen_Preview_OnShowToolTip(2);" />
+          <Event Name="MouseLeave" Function="ShenFen_Preview_OnHideToolTip();" />
+          <Window Type="TLBB_StaticImageNULL" Name="ShenFen_Preview_MaterialIcon2_Mask">
+            <Property Name="Position" Value="x:0 y:0" />
+            <Property Name="Size" Value="w:1 h:1" />
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+            <Event Name="MouseEnter" Function="ShenFen_Preview_OnShowToolTip(2);" />
+            <Event Name="MouseLeave" Function="ShenFen_Preview_OnHideToolTip();" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShenFen_Preview_MaterialIcon2_Amount">
+          <Property Name="UnifiedPosition" Value="{{0.0,3.000000},{0.0,20.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.0,30.000000},{0.000000,15.000000}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="99/99" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShenFen_Preview_Material2_Name_Text">
+          <Property Name="UnifiedPosition" Value="{{0.0,36.000000},{0.0,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,-36.000000},{0.000000,36.000000}" />
+          <Property Name="Text" Value="#{INTERFACE_XML_552}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="TextColor" Value="FFFFF263" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ShenFen_Preview_MaterialIcon3_Frame">
+        <Property Name="UnifiedSize" Value="{{0.450000,0.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.050000,0.000000},{0.000000,300.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_StaticImageNULL" Name="ShenFen_Preview_MaterialIcon3_Bk">
+          <Property Name="Position" Value="x:0.0 y:0.0" />
+          <Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Image" Value="set:CommonItem image:ActionBK" />
+        </Window>
+        <Window Type="TLBB_StaticImageFrame" Name="ShenFen_Preview_MaterialIcon3">
+          <Property Name="Position" Value="x:0.0 y:0.0" />
+          <Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Event Name="MouseEnter" Function="ShenFen_Preview_OnShowToolTip(3);" />
+          <Event Name="MouseLeave" Function="ShenFen_Preview_OnHideToolTip();" />
+          <Window Type="TLBB_StaticImageNULL" Name="ShenFen_Preview_MaterialIcon3_Mask">
+            <Property Name="Position" Value="x:0 y:0" />
+            <Property Name="Size" Value="w:1 h:1" />
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+            <Property Name="MouseHollow" Value="True" />
+            <Property Name="MouseMoveHollow" Value="True" />
+			<Event Name="MouseEnter" Function="ShenFen_Preview_OnShowToolTip(3);" />
+			<Event Name="MouseLeave" Function="ShenFen_Preview_OnHideToolTip();" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShenFen_Preview_MaterialIcon3_Amount">
+          <Property Name="UnifiedPosition" Value="{{0.0,3.000000},{0.0,20.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.0,30.000000},{0.000000,15.000000}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="99/99" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShenFen_Preview_Material3_Name_Text">
+          <Property Name="UnifiedPosition" Value="{{0.0,36.000000},{0.0,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,-36.000000},{0.000000,36.000000}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="TextColor" Value="FFFFF263" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ShenFen_Preview_MaterialIcon4_Frame">
+        <Property Name="UnifiedSize" Value="{{0.450000,0.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,0.000000},{0.000000,300.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_StaticImageNULL" Name="ShenFen_Preview_MaterialIcon4_Bk">
+          <Property Name="Position" Value="x:0.0 y:0.0" />
+          <Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Image" Value="set:CommonItem image:ActionBK" />
+        </Window>
+        <Window Type="TLBB_StaticImageFrame" Name="ShenFen_Preview_MaterialIcon4">
+          <Property Name="Position" Value="x:0.0 y:0.0" />
+          <Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Event Name="MouseEnter" Function="ShenFen_Preview_OnShowToolTip(4);" />
+          <Event Name="MouseLeave" Function="ShenFen_Preview_OnHideToolTip();" />
+          <Window Type="TLBB_StaticImageNULL" Name="ShenFen_Preview_MaterialIcon4_Mask">
+            <Property Name="Position" Value="x:0 y:0" />
+            <Property Name="Size" Value="w:1 h:1" />
+            <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+            <Event Name="MouseEnter" Function="ShenFen_Preview_OnShowToolTip(4);" />
+            <Event Name="MouseLeave" Function="ShenFen_Preview_OnHideToolTip();" />
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="ShenFen_Preview_MaterialIcon4_Amount">
+          <Property Name="UnifiedPosition" Value="{{0.0,3.000000},{0.0,20.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.0,30.000000},{0.000000,15.000000}" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Text" Value="99/99" />
+          <Property Name="TextColor" Value="FFFFF263" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+        </Window>
+        <Window Type="TLBB_SimpleMulitiTextFrame" Name="ShenFen_Preview_Material4_Name_Text">
+          <Property Name="UnifiedPosition" Value="{{0.0,36.000000},{0.0,0.000000}" />
+          <Property Name="UnifiedSize" Value="{{1.0,-36.000000},{0.000000,36.000000}" />
+          <Property Name="HorzFormatting" Value="LeftAligned" />
+          <Property Name="VertFormatting" Value="VertCentred" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="TextColor" Value="FFFFF263" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

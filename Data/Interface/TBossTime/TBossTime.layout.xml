@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="TBossTime">
+    <Property Name="UnifiedSize" Value="{{0.000000,306.000000},{0.000000,342.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-309.000000},{0.500000,20.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="TBossTime_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-64.000000},{0.000000,26.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,9.000000}}"/>
+      <Property Name="DragTarget" Value="TBossTime" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="Font" Value="Title" />
+      <Property Name="Text" Value="#{KFRC_240326_03}" />
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="TBossTime_Image">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,13.000000}}"/>
+      <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+      <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+      <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+      <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>
+      <Event Name="Clicked" Function="TBossTime_OpenMini()" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="TBossTime_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,13.000000}}"/>
+    </Window>
+    <Window Type="DefaultWindow" Name="TBossTime_Frame_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-50.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,33.000000}}"/>
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Window Type="TLBB_Frame_Lace1" Name="TBossTime_Up">
+        <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,178.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,4.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="TBossTime_Text">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-8.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,4.000000}}"/>
+          <Property Name="Text" Value="#{KFRC_240326_04}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="TBossTime_Down">
+        <Property Name="UnifiedSize" Value="{{1.000000,-1.000000},{0.000000,110.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-110.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="TBossTime_YaoTaEnt">
+          <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,6.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{KFRC_240326_05}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TBossTime_YaoTaEnt_Num">
+          <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,6.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TBossTime_YaoTaEnt2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,26.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{KFRC_240326_06}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TBossTime_YaoTaEnt2_Num">
+          <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,26.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TBossTime_YaoTaEnt3">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,46.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{KFRC_240326_07}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TBossTime_YaoTaEnt3_Num">
+          <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,46.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TBossTime_YaoTaAward">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,66.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{KFRC_240326_09}" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TBossTime_YaoTaAward_Num">
+          <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,66.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="TBossTime_YaoTaTime">
+          <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,86.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="Text" Value="#{KFRC_240326_60}" />
+        </Window>
+        <Window Type="TLBB_StopWatch" Name="TBossTime_YaoTaTime_Num">
+          <Property Name="UnifiedSize" Value="{{1.000000,-52.000000},{0.000000,20.000000}}" />
+          <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,86.000000}}" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

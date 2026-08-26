@@ -1,0 +1,201 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame1" Name="Profile_TagChoose_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,265.000000},{0.000000,310.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,525.000000},{0.1200000,0.000000}}"/>
+        <Event Name="Hidden" Function="Profile_TagChoose_OnHiden();" />
+        <Window Type="TLBB_DragTitle" Name="Profile_TagChoose_DragTitle">
+            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+          <Property Name="Text" Value="#{GRYM_221213_150}"/>
+          <Property Name="Font" Value="YouYuan9.75"/>
+            <Property Name="DragTarget" Value="Profile_TagChoose_Frame" />
+        </Window>
+        <Window Type="TLBB_ButtonHelp" Name="Profile_TagChoose_Help">
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonHelp" />
+            <Event Name="Clicked" Function="Profile_TagChoose_HelpClick()" />
+        </Window>
+        <Window Type="TLBB_ButtonClose" Name="Profile_TagChoose_Close">
+            <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}" />
+            <Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
+            <Property Name="Text" Value="TLBB_ButtonClose" />
+            <Event Name="Clicked" Function="Profile_TagChoose_CloseClick();" />
+        </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="Profile_TagChoose_List_TextFrame">
+        <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{0.000000,90.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,34.000000}}"/>
+        <Window Type="TLBB_SimpleText" Name="Profile_TagChoose_Text2">
+          <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
+          <Property Name="TextColor" Value="FFFFF263"/>
+          <Property Name="Text" Value="#{GRYM_221213_130}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Profile_TagChoose_List_TagText1">
+          <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,32.000000}}"/>
+          <Property Name="Text" Value=""/>
+            <Property Name="TextColor" Value="FFFFFFA0"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Profile_TagChoose_List_TagText1Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Profile image:TagBK"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Profile_TagChoose_List_TagText2">
+          <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,82.000000},{0.000000,32.000000}}"/>
+          <Property Name="Text" Value=""/>
+            <Property Name="TextColor" Value="FFFFFFA0"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Profile_TagChoose_List_TagText2Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Profile image:TagBK"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Profile_TagChoose_List_TagText3">
+          <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,162.000000},{0.000000,32.000000}}"/>
+          <Property Name="Text" Value=""/>
+            <Property Name="TextColor" Value="FFFFFFA0"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Profile_TagChoose_List_TagText3Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Profile image:TagBK"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Profile_TagChoose_List_TagText4">
+          <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,58.000000}}"/>
+          <Property Name="Text" Value=""/>
+            <Property Name="TextColor" Value="FFFFFFA0"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Profile_TagChoose_List_TagText4Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Profile image:TagBK"/>
+          </Window>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Profile_TagChoose_List_TagText5">
+          <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,82.000000},{0.000000,58.000000}}"/>
+          <Property Name="Text" Value=""/>
+            <Property Name="TextColor" Value="FFFFFFA0"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Profile_TagChoose_List_TagText5Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Profile image:TagBK"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Profile_TagChoose_List_TagText6">
+          <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,162.000000},{0.000000,58.000000}}"/>
+          <Property Name="Text" Value=""/>
+            <Property Name="TextColor" Value="FFFFFFA0"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Profile_TagChoose_List_TagText6Image">
+            <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="Image" Value="set:Profile image:TagBK"/>
+          </Window>
+        </Window>
+      </Window>
+        <Window Type="DefaultWindow" Name="Profile_TagChoose_Frame_Client">
+          <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-168.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{1.000000,-184.000000}}"/>
+            <Property Name="RiseOnClick" Value="False" />
+          <Window Type="DefaultWindow" Name="Profile_TagChoose_Check_Frame">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,24.000000}" />
+            <Window Type="TLBB_ButtonPageUp" Name="Profile_TagChoose_Tab1">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,24.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="CheckMode" Value="1" />
+              <Property Name="Text" Value="#{GRYM_221213_126}" />
+              <Property Name="Selected" Value="True" />
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Event Name="MouseButtonDown" Function="Profile_TagChoose_SelectTab(1);" />
+            </Window>
+            <Window Type="TLBB_ButtonPageUp" Name="Profile_TagChoose_Tab2">
+              <Property Name="UnifiedSize" Value="{{0.000000,65.000000},{0.000000,24.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.000000,0.000000}}"/>
+              <Property Name="CheckMode" Value="1" />
+              <Property Name="Text" Value="#{GRYM_221213_127}" />
+              <Property Name="Selected" Value="False" />
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Event Name="MouseButtonDown" Function="Profile_TagChoose_SelectTab(2);" />
+            </Window>
+            <Window Type="TLBB_ButtonPageUp" Name="Profile_TagChoose_Tab3">
+              <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,24.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,0.000000}}"/>
+              <Property Name="CheckMode" Value="1" />
+              <Property Name="Text" Value="#{GRYM_221213_128}" />
+              <Property Name="Selected" Value="False" />
+              <Property Name="MouseRButtonHollow" Value="True" />
+              <Event Name="MouseButtonDown" Function="Profile_TagChoose_SelectTab(3);" />
+            </Window>
+          </Window>
+          <Window Type="TLBB_Frame_Lace1" Name="Profile_TagChoose_List_Frame">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-26.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,24.000000}}"/>
+            <Window Type="TLBB_NotSuperList" Name="Profile_TagChoose_TagList">
+              <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-8.000000}}"/>
+              <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,4.000000}}"/>
+              <Property Name="MultiColumn" Value="3" />
+              <Property Name="AlwaysOnTop" Value="True"/>
+              <Property Name="VScrollMode" Value="Show"/>
+              <Window Type="TLBB_NotSuperListItemCommon3" Name="Profile_TagChoose_TagList_Item">
+                <Property Name="UnifiedSize" Value="{{0.000000,114.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,4.000000}}"/>
+                <Window Type="TLBB_ButtonCheck" Name="Profile_TagChoose_TagList_ChecBtn">
+                  <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.500000,-6.000000}}"/>
+                  <Property Name="AlwaysOnTop" Value="True"/>
+                  <Event Name="MouseButtonUp" Function="Profile_TagChoose_TagList_CheckClicked();"/>
+                </Window>
+                <Window Type="TLBB_SimpleText" Name="Profile_TagChoose_TagList_TagName">
+                  <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.500000,-9.000000}}"/>
+                  <Property Name="TextColor" Value="FFFFFFA0"/>
+                  <Property Name="Text" Value="标签五个字"/>
+                  <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="TLBB_SimpleMulitiTextFrame" Name="Profile_TagChoose_TagList_ItemBK">
+                  <Property Name="UnifiedSize" Value="{{1.000000,-6.000000},{0.000000,24.000000}}"/>
+                  <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+                </Window>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+      <Window Type="DefaultWindow" Name="Profile_TagChoose_Btn_Frame">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-40.000000}}"/>
+        <Property Name="RiseOnClick" Value="False" />
+        <Window Type="TLBB_ButtonCommon" Name="Profile_TagChoose_ConfirmBtn">
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-68.000000},{0.500000,-10.000000}}"/>
+          <Property Name="Text" Value="#{GRYM_221213_31}"/>
+          <Event Name="Clicked" Function="Profile_TagChoose_ConfirmClicked();"/>
+        </Window>
+      </Window>
+    </Window>
+</GUILayout>

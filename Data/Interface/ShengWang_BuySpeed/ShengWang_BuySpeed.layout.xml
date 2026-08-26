@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame1" Name="ShengWang_BuySpeed_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,227.000000},{0.000000,176.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-217.000000},{0.500000,-88.000000}}"/>
+		<Property Name="AlwaysOnTop" Value="True" />
+		<Window Type="TLBB_ButtonHelp" Name="ShengWang_BuySpeed_Help">
+			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+		</Window>
+		<Window Type="TLBB_ButtonClose" Name="ShengWang_BuySpeed_Close">
+			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+			<Event Name="Clicked" Function="ShengWang_BuySpeed_Close_Clicked();"/>
+		</Window>
+		<Window Type="TLBB_DragTitle" Name="ShengWang_BuySpeed_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+			<Property Name="DragTarget" Value="ShengWang_BuySpeed_Frame"/>
+      <Property Name="Text" Value="#{SWXT_221213_18}"/>
+      <Property Name="HorzFormatting" Value="HorzCentred"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="TextColor" Value="FFFFF263"/>
+		</Window>
+		<Window Type="DefaultWindow" Name="ShengWang_BuySpeed_Function_Frame">
+			<Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-44.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+			<Window Type="TLBB_SimpleMulitiTextFrame" Name="ShengWang_BuySpeed_ItemInfo">
+				<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,36.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,2.000000}}"/>
+				<Window Type="TLBB_SimpleText" Name="ShengWang_BuySpeed_ItemInfo_Text">
+					<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,36.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+          <Property Name="Text" Value="#{SWXT_221213_19}"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="ShengWang_BuySpeed_ItemInfo_GB">
+					<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,18.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,18.000000}}"/>
+					<Property Name="HorzFormatting" Value="RightAligned"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="ShengWang_BuySpeed_BuyNum_Text">
+				<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,16.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,42.000000}}"/>
+				<Property Name="Text" Value="#{SWXT_221213_20}"/>
+			</Window>
+			<Window Type="TLBB_EditBoxNormal" Name="ShengWang_BuySpeed_InputNum">
+				<Property Name="ValidationString" Value="[0-9]*"/>
+				<Property Name="UnifiedSize" Value="{{1.000000,-106.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,63.000000},{0.000000,40.000000}}"/>
+				<Property Name="Text" Value="1"/>
+				<Property Name="MaxTextLength" Value="6"/>
+				<Event Name="TextChanged" Function="ShengWang_BuySpeed_EditEnter();"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="ShengWang_BuySpeed_MAX">
+				<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{0.000000,40.000000}}"/>
+				<Property Name="Text" Value="#{SWXT_221213_21}"/>
+				<Event Name="Clicked" Function="ShengWang_BuySpeed_OnMax();"/>
+			</Window>
+			<Window Type="TLBB_SimpleTextFrame" Name="ShengWang_BuySpeed_Price">
+				<Property Name="UnifiedSize" Value="{{1.000000,-7.000000},{0.000000,16.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-70.000000}}"/>
+				<Property Name="Text" Value="#{FFSDGZ_120615_24}"/>
+				<Window Type="TLBB_SimpleText" Name="ShengWang_BuySpeed_Price_Yuanbao">
+					<Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,0.000000}}"/>
+					<Property Name="HorzFormatting" Value="RightAligned"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_SimpleTextFrame" Name="ShengWang_BuySpeed_Cash">
+				<Property Name="UnifiedSize" Value="{{1.000000,-7.000000},{0.000000,16.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-50.000000}}"/>
+				<Property Name="Text" Value="#{FFSDGZ_120615_25}"/>
+				<Window Type="TLBB_SimpleText" Name="ShengWang_BuySpeed_Cash_Yuanbao">
+					<Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,0.000000}}"/>
+					<Property Name="HorzFormatting" Value="RightAligned"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_Frame_Lace5" Name="ShengWang_BuySpeed_Blank">
+				<Property Name="UnifiedSize" Value="{{1.000000,-86.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{1.000000,-31.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="ShengWang_BuySpeed_Buy">
+				<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-83.000000},{1.000000,-30.000000}}"/>
+				<Property Name="Text" Value="#{FFSDGZ_120615_92}"/>
+				<Event Name="Clicked" Function="ShengWang_BuySpeed_OK_Clicked();"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="ShengWang_BuySpeed_Cancel">
+				<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-43.000000},{1.000000,-30.000000}}"/>
+				<Property Name="Text" Value="#{FFSDGZ_120615_93}"/>
+				<Event Name="Clicked" Function="ShengWang_BuySpeed_Close_Clicked();"/>
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

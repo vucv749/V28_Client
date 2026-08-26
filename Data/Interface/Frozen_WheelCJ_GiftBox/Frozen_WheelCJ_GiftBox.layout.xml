@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame_Frozen0" Name="Frozen_WheelCJ_GiftBoxFrame">
+    <Property Name="UnifiedSize" Value="{{0.000000,596.000000},{0.000000,376.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-292.000000},{0.500000,-160.000000}}"/>
+    <Event Name="Hidden" Function="Frozen_WheelCJ_GiftBox_OnHidden();"/>
+    <Window Type="TLBB_TitleLace_Frozen" Name="Frozen_WheelCJ_GiftBoxDragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,270.000000},{0.000000,19.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-135.000000},{0.000000,12.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Frozen_WheelCJ_GiftBoxDragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{BXZP_240911_88}"/>
+      <Property Name="DragTarget" Value="Frozen_WheelCJ_GiftBoxFrame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Frozen_WheelCJ_GiftBoxHelp">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function=""/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Frozen_WheelCJ_GiftBoxClose">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="Frozen_WheelCJ_GiftBoxOnClose()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Frozen_WheelCJ_GiftBoxClient">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Window Type="DefaultWindow" Name="Frozen_WheelCJ_GiftBoxClientBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJ_GiftBoxClientBK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,584.000000},{0.000000,320.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:SpringFestival_NewClothes01 image:Box_BK"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Frozen_WheelCJ_GiftBoxInfo">
+        <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,46.000000}}"/>
+        <Property Name="Text" Value="#{BXZP_240911_98}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+      </Window>
+      <Window Type="TLBB_Frame_Lace9" Name="Frozen_WheelCJ_GiftBoxGift1">
+        <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,180.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-200.000000},{0.000000,94.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="Frozen_WheelCJ_GiftBoxGift1_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,42.000000}}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Frozen_WheelCJ_GiftBoxGift1_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-90.000000},{1.000000,-70.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{BXZP_240911_89}"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="Frozen_WheelCJ_GiftBoxGift1_Preview">
+          <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,42.000000}}"/>
+          <Property Name="PushedImage" Value="set:FeelFeedBack1 image:Anniversary_Rich_GiftRewards_Pushed"/>
+          <Property Name="NormalImage" Value="set:FeelFeedBack1 image:Anniversary_Rich_GiftRewards_Normal"/>
+          <Property Name="HoverImage" Value="set:FeelFeedBack1 image:Anniversary_Rich_GiftRewards_Hover"/>
+          <Property Name="DisabledImage" Value="set:FeelFeedBack1 image:Anniversary_Rich_GiftRewards_Disabled"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="Frozen_WheelCJ_GiftBoxPreview(1)"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon11" Name="Frozen_WheelCJ_GiftBoxGift1_Select">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{1.000000,-40.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Text" Value="#{BXZP_240911_91}"/>
+          <Event Name="Clicked" Function="Frozen_WheelCJ_GiftBoxConfirm(1)"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace9" Name="Frozen_WheelCJ_GiftBoxGift2">
+        <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,180.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,20.000000},{0.000000,94.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="Frozen_WheelCJ_GiftBoxGift2_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,42.000000}}"/>
+          <Window Type="TLBB_StaticImageNULL" Name="Frozen_WheelCJ_GiftBoxGift2_Icon_Mask">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Frozen_WheelCJ_GiftBoxGift2_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-90.000000},{1.000000,-70.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{BXZP_240911_90}"/>
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="Frozen_WheelCJ_GiftBoxGift2_Preview">
+          <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,32.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,42.000000}}"/>
+          <Property Name="PushedImage" Value="set:FeelFeedBack1 image:Anniversary_Rich_GiftRewards_Pushed"/>
+          <Property Name="NormalImage" Value="set:FeelFeedBack1 image:Anniversary_Rich_GiftRewards_Normal"/>
+          <Property Name="HoverImage" Value="set:FeelFeedBack1 image:Anniversary_Rich_GiftRewards_Hover"/>
+          <Property Name="DisabledImage" Value="set:FeelFeedBack1 image:Anniversary_Rich_GiftRewards_Disabled"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="Frozen_WheelCJ_GiftBoxPreview(2)"/>
+        </Window>
+        <Window Type="TLBB_ButtonCommon11" Name="Frozen_WheelCJ_GiftBoxGift2_Select">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,24.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{1.000000,-40.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="Text" Value="#{BXZP_240911_92}"/>
+          <Event Name="Clicked" Function="Frozen_WheelCJ_GiftBoxConfirm(2)"/>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

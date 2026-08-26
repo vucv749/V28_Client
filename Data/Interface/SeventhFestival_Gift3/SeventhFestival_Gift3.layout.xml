@@ -1,0 +1,259 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="SeventhFestival_Gift3_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,414.000000},{0.000000,252.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-160.000000},{0.500000,-140.000000}}"/>
+    <Event Name="Hidden" Function="SeventhFestival_Gift3_OnHidden();" />
+    <Window Type="TLBB_DragTitle" Name="SeventhFestival_Gift3_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="DragTarget" Value="SeventhFestival_Gift3_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="SeventhFestival_Gift3_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function=""/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="SeventhFestival_Gift3_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="SeventhFestival_Gift3_OnClose()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="SeventhFestival_Gift3_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Window Type="DefaultWindow" Name="FeelFeedBack100GiftAllBK">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="FeelFeedBack100GiftBK1">
+        <Property Name="UnifiedSize" Value="{{0.000000,402.000000},{0.000000,198.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBK6"/>
+      </Window>
+      </Window>
+        <Window Type="TLBB_SimpleText" Name="SeventhFestival_Gift3_Info">
+          <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,26.000000}}"/>
+          <Property Name="Text" Value="#{QXHB_20230711_31}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+      <Window Type="DefaultWindow" Name="SeventhFestival_Gift3_Gift">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,110.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="SeventhFestival_Gift3_Gift1_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.30000,-24.000000},{0.500000,-36.000000}}"/>
+          <Event Name="Clicked" Function="SeventhFestival_Gift3_1_Select(1);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="SeventhFestival_Gift3_Gift1_Icon_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="SeventhFestival_Gift3_Gift2_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.700000,-24.000000},{0.500000,-36.000000}}"/>
+          <Event Name="Clicked" Function="SeventhFestival_Gift3_1_Select(2);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="SeventhFestival_Gift3_Gift2_Icon_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="SeventhFestival_Gift3_Gift1_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.30000,-50.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{QXHB_20230711_32}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="SeventhFestival_Gift3_Gift2_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.700000,-50.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{QXHB_20230711_33}"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="SeventhFestival_Gift3_Gift2">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,110.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="SeventhFestival_Gift3_Gift2_1_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.20000,-24.000000},{0.500000,-36.000000}}"/>
+          <Event Name="Clicked" Function="SeventhFestival_Gift3_1_Select(1);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="SeventhFestival_Gift3_Gift2_1_Icon_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="SeventhFestival_Gift3_Gift2_2_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.400000,-24.000000},{0.500000,-36.000000}}"/>
+          <Event Name="Clicked" Function="SeventhFestival_Gift3_1_Select(2);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="SeventhFestival_Gift3_Gift2_2_Icon_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="SeventhFestival_Gift3_Gift2_3_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.60000,-24.000000},{0.500000,-36.000000}}"/>
+          <Event Name="Clicked" Function="SeventhFestival_Gift3_1_Select(1);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="SeventhFestival_Gift3_Gift2_3_Icon_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="SeventhFestival_Gift3_Gift2_4_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.800000,-24.000000},{0.500000,-36.000000}}"/>
+          <Event Name="Clicked" Function="SeventhFestival_Gift3_1_Select(2);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="SeventhFestival_Gift3_Gift2_4_Icon_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="SeventhFestival_Gift3_Gift2_1_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.20000,-50.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{QXHB_20230711_32}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="SeventhFestival_Gift3_Gift2_2_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.400000,-50.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{QXHB_20230711_33}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="SeventhFestival_Gift3_Gift2_3_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.60000,-50.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{QXHB_20230711_32}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="SeventhFestival_Gift3_Gift2_4_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.800000,-50.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{QXHB_20230711_33}"/>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="SeventhFestival_Gift3_Gift3">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,110.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,60.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="SeventhFestival_Gift3_Gift3_1_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.25000,-24.000000},{0.500000,-36.000000}}"/>
+          <Event Name="Clicked" Function="SeventhFestival_Gift3_3_Select(1);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="SeventhFestival_Gift3_Gift3_1_Icon_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="SeventhFestival_Gift3_Gift3_2_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.500000,-36.000000}}"/>
+          <Event Name="Clicked" Function="SeventhFestival_Gift3_3_Select(2);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="SeventhFestival_Gift3_Gift3_2_Icon_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="SeventhFestival_Gift3_Gift3_3_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.75000,-24.000000},{0.500000,-36.000000}}"/>
+          <Event Name="Clicked" Function="SeventhFestival_Gift3_3_Select(3);"/>
+          <Window Type="TLBB_StaticImageNULL" Name="SeventhFestival_Gift3_Gift3_3_Icon_Mask">
+            <Property Name="Visible" Value="False"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="SeventhFestival_Gift3_Gift3_1_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.25000,-50.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{QXHB_20230711_32}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="SeventhFestival_Gift3_Gift3_2_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-50.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{QXHB_20230711_33}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="SeventhFestival_Gift3_Gift3_3_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.75000,-50.000000},{1.000000,-36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{QXHB_20230711_32}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="SeventhFestival_Gift3_Gift_Select">
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,22.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-40.000000},{1.000000,-30.000000}}"/>
+        <Property Name="PushedImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn9Push"/>
+        <Property Name="NormalImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn9Normal"/>
+        <Property Name="HoverImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn9Hover"/>
+        <Property Name="DisabledImage" Value="set:QiXi_HuaBang10 image:QiXi3_HuaBangBtn9Dis"/>
+        <Event Name="Clicked" Function="SeventhFestival_Gift3_Confirm()"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

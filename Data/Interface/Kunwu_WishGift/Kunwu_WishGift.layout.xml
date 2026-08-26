@@ -1,0 +1,273 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrameNULL" Name="Kunwu_WishGift_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,844.000000},{0.000000,546.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-422.000000},{0.500000,-273.000000}}"/>
+        <Event Name="Hidden" Function="Kunwu_WishGift_OnHiden();" />
+        <Window Type="TLBB_HeroFrame01" Name="Kunwu_WishGift_FrameBK">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Window Type="TLBB_HeroTitle01" Name="Kunwu_WishGift_DragTitleBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,-2.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+            </Window>
+            <Window Type="TLBB_DragTitle" Name="Kunwu_WishGift_DragTitle">
+                <Property Name="UnifiedSize" Value="{{1.000000,-70.000000},{0.000000,22.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,2.000000}}"/>
+                <Property Name="Text" Value="#{QYWH_241210_51}"/>
+                <Property Name="Font" Value="YouYuanMono"/>
+                <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                <Property Name="DragTarget" Value="Kunwu_WishGift_Frame" />
+            </Window>
+            <Window Type="TLBB_ButtonClose2" Name="Kunwu_WishGift_Close">
+                <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+                <Event Name="Clicked" Function="Kunwu_WishGift_Close();" />
+            </Window>
+        </Window>
+
+        <Window Type="DefaultWindow" Name="Kunwu_WishGift_Frame_Client">
+            <Property Name="UnifiedSize" Value="{{0.000000,834.000000},{0.000000,510.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,30.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_WishGift_ImageBK">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Kunwu_WishGift image:Kunwu_WishGift_BK"/>
+            </Window>
+            <Window Type="TLBB_SimpleText" Name="Kunwu_WishGift_Info">
+                <Property Name="UnifiedSize" Value="{{1.000000,-40.000000},{0.000000,80.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,0.000000}}"/>
+                <Property Name="Text" Value="#{QYWH_241210_52}"/>
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_WishGift_1BK">
+                <Property Name="UnifiedSize" Value="{{0.000000,138.000000},{0.000000,142.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,480.000000},{0.000000,300.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Kunwu_WishGift image:Kunwu_WishGift_1_H"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_WishGift_1Name">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,156.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,580.000000},{0.000000,290.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Kunwu_WishGift image:Kunwu_WishGift_BKLS_Bk"/>
+            </Window>
+
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_WishGift_Item1BK">
+                <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,64.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,460.000000},{0.000000,390.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Window Type="TLBB_SimpleText" Name="Kunwu_WishGift_WishPoint1BK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,16.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,50.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                    <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                    <Property Name="Text" Value="#{QYWH_241210_53}"/>
+                </Window>
+                <Property Name="Image" Value="set:Kunwu_WishGift image:Kunwu_WishGift_ItemOkBk"/>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_WishGift_Item1">
+                    <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,0.000000}}"/>
+                    <Event Name="Clicked" Function="Kunwu_WishGift_ItemClicked(1);"/>
+                    <Window Type="TLBB_Animate" Name="Kunwu_WishGift_ItemAnimate1">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Animate" Value="Equip_Zhizun"/>
+                    </Window>
+
+                    <Window Type="TLBB_StaticImageNULL" Name="Kunwu_WishGift_ItemOK1">
+                        <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,22.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-48.000000},{1.000000,-22.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                        <Property Name="Image" Value="set:Kunwu_WishGift image:Kunwu_WishGift_OK"/>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_WishGift_2BK_H">
+                <Property Name="UnifiedSize" Value="{{0.000000,134.000000},{0.000000,164.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,180.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Kunwu_WishGift image:Kunwu_WishGift_2_H"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_WishGift_2BK_D">
+                <Property Name="UnifiedSize" Value="{{0.000000,134.000000},{0.000000,164.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,180.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Kunwu_WishGift image:Kunwu_WishGift_2_D"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_WishGift_2Name">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,156.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,150.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Kunwu_WishGift image:Kunwu_WishGift_YTXM_Bk"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_WishGift_Item2BK">
+                <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,64.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,140.000000},{0.000000,310.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Kunwu_WishGift image:Kunwu_WishGift_ItemOkBk"/>
+                <Window Type="TLBB_SimpleText" Name="Kunwu_WishGift_WishPoint2BK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,14.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,50.000000}}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                    <Property Name="Text" Value="#{QYWH_241210_54}"/>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_WishGift_Item2">
+                    <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,0.000000}}"/>
+                    <Event Name="Clicked" Function="Kunwu_WishGift_ItemClicked(2);"/>
+                    <Window Type="TLBB_Animate" Name="Kunwu_WishGift_ItemAnimate2">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Animate" Value="Equip_Zhizun"/>
+                    </Window>
+                    <Window Type="TLBB_StaticImageNULL" Name="Kunwu_WishGift_ItemOK2">
+                        <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,22.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-48.000000},{1.000000,-22.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Image" Value="set:Kunwu_WishGift image:Kunwu_WishGift_OK"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                    </Window>
+                </Window>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_WishGift_3BK_H">
+                <Property Name="UnifiedSize" Value="{{0.000000,172.000000},{0.000000,182.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,500.000000},{0.000000,70.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Kunwu_WishGift image:Kunwu_WishGift_3_H"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_WishGift_3BK_D">
+                <Property Name="UnifiedSize" Value="{{0.000000,172.000000},{0.000000,182.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,500.000000},{0.000000,70.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Kunwu_WishGift image:Kunwu_WishGift_3_D"/>
+            </Window>
+
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_WishGift_3Name">
+                <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,156.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,650.000000},{0.000000,80.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Kunwu_WishGift image:Kunwu_WishGift_TYSJ_Bk"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_WishGift_Item3BK">
+                <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,64.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,480.000000},{0.000000,190.000000}}"/>
+                <Property Name="MouseRButtonHollow" Value="True"/>
+                <Property Name="MouseMoveHollow" Value="True"/>
+                <Property Name="MouseLButtonHollow" Value="True"/>
+                <Property Name="MouseHollow" Value="True"/>
+                <Property Name="Image" Value="set:Kunwu_WishGift image:Kunwu_WishGift_ItemOkBk"/>
+                <Window Type="TLBB_SimpleText" Name="Kunwu_WishGift_WishPoint3BK">
+                    <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,14.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,50.000000}}"/>
+                    <Property Name="Text" Value="#{QYWH_241210_55}"/>
+                    <Property Name="RiseOnClick" Value="False"/>
+                    <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                    <Property Name="AlwaysOnTop" Value="True"/>
+                </Window>
+                <Window Type="TLBB_ActionButton" Name="Kunwu_WishGift_Item3">
+                    <Property Name="UnifiedSize" Value="{{0.000000,48.000000},{0.000000,48.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.500000,-24.000000},{0.000000,0.000000}}"/>
+                    <Event Name="Clicked" Function="Kunwu_WishGift_ItemClicked(3);"/>
+                    <Window Type="TLBB_Animate" Name="Kunwu_WishGift_ItemAnimate3">
+                        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Animate" Value="Equip_Zhizun"/>
+                    </Window>
+                    <Window Type="TLBB_StaticImageNULL" Name="Kunwu_WishGift_ItemOK3">
+                        <Property Name="UnifiedSize" Value="{{0.000000,28.000000},{0.000000,22.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-48.000000},{1.000000,-22.000000}}"/>
+                        <Property Name="MouseRButtonHollow" Value="True"/>
+                        <Property Name="MouseMoveHollow" Value="True"/>
+                        <Property Name="MouseLButtonHollow" Value="True"/>
+                        <Property Name="MouseHollow" Value="True"/>
+                        <Property Name="Image" Value="set:Kunwu_WishGift image:Kunwu_WishGift_OK"/>
+                        <Property Name="AlwaysOnTop" Value="True"/>
+                    </Window>
+                </Window>
+            </Window>
+
+
+            <Window Type="TLBB_ButtonNULL" Name="Kunwu_WishGift_WishPonitNum_HelpDetail">
+                <Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{1.000000,-720.000000},{0.500000,226.000000}}"/>
+                <Property Name="PushedImage" Value="set:Kunwu_WishGift image:Kunwu_WishGift_Help_P"/>
+                <Property Name="NormalImage" Value="set:Kunwu_WishGift image:Kunwu_WishGift_Help_N"/>
+                <Property Name="HoverImage" Value="set:Kunwu_WishGift image:Kunwu_WishGift_Help_H"/>
+                <Property Name="DisabledImage" Value="set:Kunwu_WishGift image:Kunwu_WishGift_Help_D"/>
+                <Event Name="Clicked" Function="Kunwu_WishGift_WishPonitNum_HelpClick();"/>
+            </Window>
+            <Window Type="TLBB_StaticImageNULL" Name="Kunwu_WishGift_WishPointNumBK">
+                <Property Name="UnifiedSize" Value="{{0.000000,86.000000},{0.000000,92.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{1.000000,-92.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Property Name="Image" Value="set:Kunwu_WishGift image:Kunwu_WishGift_Num_Bk"/>
+                <Window Type="TLBB_SimpleText" Name="Kunwu_WishGift_WishPointNum">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-60.000000},{0.000000,30.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,30.000000},{0.000000,36.000000}}"/>
+                    <Property Name="Text" Value="#{QYWH_241210_56}"/>
+                    <Property Name="Font" Value="YouYuan13"/>
+                    <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

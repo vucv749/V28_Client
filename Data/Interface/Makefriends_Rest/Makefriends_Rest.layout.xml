@@ -1,0 +1,127 @@
+<?xml version="1.0" ?>
+<GUILayout>
+    <Window Type="TLBB_MainFrame_Affection0" Name="Makefriends_Rest_Frame">
+        <Property Name="UnifiedSize" Value="{{0.000000,430.000000},{0.000000,270.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-215.000000},{0.500000,-135.000000}}"/>
+        <Event Name="Hidden" Function="this:Hide();" />
+        <Window Type="TLBB_TitleLace_Affection0" Name="Makefriends_Rest_DragTitleBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,350.000000},{0.000000,31.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-175.000000},{0.000000,0.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_DragTitle" Name="Makefriends_Rest_DragTitle">
+            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+            <Property Name="Text" Value="#{JYHD_230331_30}"/>
+            <Property Name="Font" Value="YouYuan11.25"/>
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="DragTarget" Value="Makefriends_Rest_Frame"/>
+        </Window>
+
+        <Window Type="TLBB_ButtonHelp" Name="Makefriends_Rest_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+            <Property Name="Text" Value="TLBB_ButtonHelp"/>
+            <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*Makefriends_Rest&quot;);' />
+        </Window>
+        <Window Type="TLBB_ButtonNULL" Name="Makefriends_Rest_Close">
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{0.000000,13.000000}}"/>
+            <Property Name="PushedImage" Value="set:SongLiao02 image:Down_Pushed"/>
+            <Property Name="NormalImage" Value="set:SongLiao02 image:Down_Normal"/>
+            <Property Name="HoverImage" Value="set:SongLiao02 image:Down_Hover"/>
+            <Property Name="DisabledImage" Value="set:SongLiao02 image:Down_Disabled"/>
+            <Event Name="Clicked" Function="Makefriends_Rest_OpenMini();"/>
+        </Window>
+        <Window Type="DefaultWindow" Name="Makefriends_Rest_Frame_Client">
+            <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-55.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Window Type="TLBB_Frame_Lace3" Name="Makefriends_Rest_Info_Frame">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,85.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                <Window Type="TLBB_SimpleText" Name="Makefriends_Rest_Info1">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,66.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.500000,-33.000000}}"/>
+                    <Property Name="Text" Value="#{JYHD_230331_31}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+                </Window>
+            </Window>
+            <Window Type="TLBB_Frame_Lace3" Name="Makefriends_Rest_Info2_Frame">
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,130.000000}}"/>
+                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,85.000000}}"/>
+                <Property Name="RiseOnClick" Value="False"/>
+                <Window Type="TLBB_SimpleText" Name="Makefriends_Rest_Info11">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+                    <Property Name="Text" Value="#{JYHD_230331_32}"/>
+                    <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+                </Window>
+                <Window Type="DefaultWindow" Name="Makefriends_Rest_InfoBK1">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,40.000000}}"/>
+                    <Window Type="TLBB_SimpleText" Name="Makefriends_Rest_Info3">
+                        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="#{JYHD_230331_33}"/>
+                        <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Makefriends_Rest_Info4">
+                        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="#{JYHD_230331_67}"/>
+                        <Property Name="HorzFormatting" Value="RightAligned"/>
+                    </Window>
+                </Window>
+                <Window Type="DefaultWindow" Name="Makefriends_Rest_InfoBK2">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,60.000000}}"/>
+                    <Window Type="TLBB_SimpleText" Name="Makefriends_Rest_Info5">
+                        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="#{JYHD_230331_35}"/>
+                        <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    </Window>
+                    <Window Type="TLBB_StopWatch" Name="Makefriends_Rest_Info6">
+                        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="00:00"/>
+                        <Property Name="HorzFormatting" Value="RightAligned"/>
+                    </Window>
+                </Window>
+                <Window Type="DefaultWindow" Name="Makefriends_Rest_InfoBK3">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,80.000000}}"/>
+                    <Window Type="TLBB_SimpleText" Name="Makefriends_Rest_Info7">
+                        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="#{JYHD_230331_37}"/>
+                        <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    </Window>
+                    <Window Type="TLBB_StopWatch" Name="Makefriends_Rest_Info8">
+                        <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="00:00"/>
+                        <Property Name="HorzFormatting" Value="RightAligned"/>
+                    </Window>
+                </Window>
+                <Window Type="DefaultWindow" Name="Makefriends_Rest_InfoBK4">
+                    <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+                    <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,100.000000}}"/>
+                    <Window Type="TLBB_SimpleText" Name="Makefriends_Rest_Info9">
+                        <Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="#{JYHD_230331_141}"/>
+                        <Property Name="HorzFormatting" Value="LeftAligned"/>
+                    </Window>
+                    <Window Type="TLBB_SimpleText" Name="Makefriends_Rest_Info10">
+                        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{0.000000,0.000000}}"/>
+                        <Property Name="Text" Value="#{JYHD_230331_144}"/>
+                        <Property Name="HorzFormatting" Value="RightAligned"/>
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

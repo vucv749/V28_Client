@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="Dahua_Incom_Preview_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,610.000000},{0.000000,350.000000}" />
+    <Property Name="UnifiedPosition" Value="{{0.500000,-305.000000},{0.500000,-160.000000}" />
+    <Event Name="Hidden" Function="Dahua_Incom_Preview_Close();" />
+    <Window Type="TLBB_HeroTitle01" Name="Dahua_Incom_Preview_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,-2.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="Dahua_Incom_Preview_DragTitle">
+      <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,0.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,24.000000}" />
+      <Property Name="DragTarget" Value="Dahua_Incom_Preview_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{DHLS_240611_91}" />
+    </Window>
+    <Window Type="TLBB_ButtonClose2" Name="Dahua_Incom_Preview_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-28.000000},{0.000000,8.000000}}"/>
+      <Event Name="Clicked" Function="Dahua_Incom_Preview_Close();"/>
+    </Window>
+    <Window Type="TLBB_HeroLace01" Name="Dahua_Incom_Preview_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-8.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,28.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="Dahua_Incom_Preview_Image">
+        <Property Name="UnifiedSize" Value="{{0.000000,596.000000},{0.000000,314.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-298.000000},{0.000000,2.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Property Name="Image" Value="set:Dahua_Incom_ShowImg image:Dahua_Incom_Show1"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

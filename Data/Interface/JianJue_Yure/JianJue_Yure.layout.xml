@@ -1,0 +1,297 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame0" Name="JianJue_Yure_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,736.000000},{0.000000,508.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-368.000000},{0.500000,-254.000000}}"/>
+    <Event Name="Hidden" Function="JianJue_Yure_OnHidden()"/>
+    <Window Type="TLBB_DragTitle" Name="JianJue_Yure_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25"/>
+      <Property Name="Text" Value="#{JJFY_240407_27}"/>
+      <Property Name="DragTarget" Value="JianJue_Yure_Frame"/>
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="JianJue_Yure_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="JianJue_Yure_Help"/>
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="JianJue_Yure_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="JianJue_Yure_OnClose()" />
+    </Window>
+    <Window Type="DefaultWindow" Name="JianJue_Yure_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_StaticImageNULL" Name="JianJue_Yure_ClientBK">
+        <Property Name="UnifiedSize" Value="{{0.000000,724.000000},{0.000000,454.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="Image" Value="set:JianJue_Yure image:JianJue_Yure_BK"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="JianJue_Yure_Info">
+        <Property Name="UnifiedSize" Value="{{0.000000,674.000000},{0.000000,53.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.000000,6.000000}}"/>
+        <Property Name="Text" Value="#{JJFY_240407_168}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+      </Window>
+
+      <Window Type="TLBB_ButtonCheckNULL" Name="JianJue_Yure_CheckButton1">
+        <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,31.000000},{0.000000,71.000000}}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Property Name="PushedImage" Value="set:JianJue_Yure image:CheckButton1_Hover"/>
+        <Property Name="NormalImage" Value="set:JianJue_Yure image:CheckButton1_Pushed"/>
+        <Property Name="HoverImage" Value="set:JianJue_Yure image:CheckButton1_Hover"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="MouseLButtonDown" Function="JianJue_Yure_CheckButton_ButtonDown(1)"/>
+      </Window>
+      <Window Type="TLBB_ButtonCheckNULL" Name="JianJue_Yure_CheckButton2">
+        <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,121.000000},{0.000000,71.000000}}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Property Name="PushedImage" Value="set:JianJue_Yure image:CheckButton2_Hover"/>
+        <Property Name="NormalImage" Value="set:JianJue_Yure image:CheckButton2_Pushed"/>
+        <Property Name="HoverImage" Value="set:JianJue_Yure image:CheckButton2_Hover"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="MouseLButtonDown" Function="JianJue_Yure_CheckButton_ButtonDown(2)"/>
+      </Window>
+      <Window Type="TLBB_ButtonCheckNULL" Name="JianJue_Yure_CheckButton3">
+        <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,211.000000},{0.000000,71.000000}}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Property Name="PushedImage" Value="set:JianJue_Yure image:CheckButton3_Hover"/>
+        <Property Name="NormalImage" Value="set:JianJue_Yure image:CheckButton3_Pushed"/>
+        <Property Name="HoverImage" Value="set:JianJue_Yure image:CheckButton3_Hover"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="MouseLButtonDown" Function="JianJue_Yure_CheckButton_ButtonDown(3)"/>
+      </Window>
+      <Window Type="TLBB_ButtonCheckNULL" Name="JianJue_Yure_CheckButton4">
+        <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,301.000000},{0.000000,71.000000}}"/>
+        <Property Name="CheckMode" Value="1"/>
+        <Property Name="PushedImage" Value="set:JianJue_Yure image:CheckButton4_Hover"/>
+        <Property Name="NormalImage" Value="set:JianJue_Yure image:CheckButton4_Pushed"/>
+        <Property Name="HoverImage" Value="set:JianJue_Yure image:CheckButton4_Hover"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Event Name="MouseLButtonDown" Function="JianJue_Yure_CheckButton_ButtonDown(4)"/>
+      </Window>
+      <Window Type="DefaultWindow" Name="JianJue_Yure_Unlock">
+        <Property Name="UnifiedSize" Value="{{1.000000,-188.000000},{1.000000,-151.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,109.000000}}"/>
+        <Window Type="TLBB_StaticImageNULL" Name="JianJue_Yure_Unlock_TaskNameBK1">
+          <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,83.000000},{0.000000,51.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:JianJue_Yure image:TitleBK_L"/>
+        </Window>     
+        <Window Type="TLBB_StaticImageNULL" Name="JianJue_Yure_Unlock_TaskNameBK2">
+          <Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-171.000000},{0.000000,51.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:JianJue_Yure image:TitleBK_R"/>
+        </Window>  
+        <Window Type="TLBB_StaticImageNULL" Name="JianJue_Yure_Unlock_TaskNameBK3">
+          <Property Name="UnifiedSize" Value="{{0.000000,436.000000},{0.000000,1.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-218.000000},{0.000000,87.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:JianJue_Yure image:LineBK"/>
+        </Window>        
+        <Window Type="TLBB_StaticImageNULL" Name="JianJue_Yure_Unlock_TaskName">
+          <Property Name="UnifiedSize" Value="{{0.000000,156.000000},{0.000000,52.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-78.000000},{0.000000,32.000000}}"/>
+          <Property Name="Image" Value="set:JianJue_Yure image:JianJue_Yure_P1"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="JianJue_Yure_Unlock_TaskInfoBK">
+          <Property Name="UnifiedSize" Value="{{0.000000,462.000000},{0.000000,78.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-231.000000},{0.000000,132.000000}}"/>
+          <Property Name="RiseOnClick" Value="False"/>
+          <Property Name="Image" Value="set:JianJue_Yure image:TextBK1"/>
+        </Window>  
+        <Window Type="TLBB_SimpleText" Name="JianJue_Yure_Unlock_TaskInfo">
+          <Property Name="UnifiedSize" Value="{{0.000000,470.000000},{0.000000,65.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-235.000000},{0.000000,141.000000}}"/>
+          <Property Name="Text" Value="#{JJFY_240407_35}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="JianJue_Yure_Unlock_TaskOver">
+          <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,72.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-115.000000},{1.000000,-81.000000}}"/>
+          <Property Name="Image" Value="set:Bulao_Yure image:Bulao_Yure_Over"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>   
+        <Window Type="TLBB_SimpleText" Name="JianJue_Yure_Unlock_Tips">
+          <Property Name="UnifiedSize" Value="{{1.000000,-187.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,93.000000},{0.000000,252.000000}}"/>
+          <Property Name="Text" Value="#{JJFY_240407_31}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>     
+      </Window>
+      <Window Type="DefaultWindow" Name="JianJue_Yure_Lock">
+        <Property Name="UnifiedSize" Value="{{1.000000,-188.000000},{1.000000,-151.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,109.000000}}"/>
+        <Property Name="Text" Value="#{JJFY_240407_40}"/>
+        <!-- <Property Name="HorzFormatting" Value="WordWrapCentred"/> -->
+        <Property Name="Font" Value="YouYuan18"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_StaticImageNULL" Name="JianJue_Yure_Lock_Img">
+          <Property Name="UnifiedSize" Value="{{0.000000,406.000000},{0.000000,70.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.500000,-203.000000},{0.000000,108.000000}}"/>
+          <Property Name="Image" Value="set:JianJue_Yure image:TextBK2"/>
+          <Property Name="AlwaysOnTop" Value="True"/>   
+        </Window>   
+        <Window Type="TLBB_SimpleText" Name="JianJue_Yure_Lock_Tips">
+          <Property Name="UnifiedSize" Value="{{1.000000,-187.000000},{0.000000,22.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,106.000000},{0.000000,136.000000}}"/>
+          <Property Name="Text" Value="#{JJFY_240407_28}"/>
+          <Property Name="HorzFormatting" Value="WordWrapCentred"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+        </Window>    
+      </Window>
+      <Window Type="DefaultWindow" Name="JianJue_Yure_Gift">
+        <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,112.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,589.000000},{0.000000,234.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Window Type="TLBB_ActionButton" Name="JianJue_Yure_Gift1_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Event Name="Clicked" Function="JianJue_Yure_PrizeClicked(1)"/>
+          <Window Type="TLBB_Animate" Name="JianJue_Yure_Gift1_Icon_Animate">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="JianJue_Yure_Gift1_Icon_Get">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="JianJue_Yure_Gift2_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{0.000000,0.000000}}"/>
+          <Event Name="Clicked" Function="JianJue_Yure_PrizeClicked(2)"/>
+          <Window Type="TLBB_Animate" Name="JianJue_Yure_Gift2_Icon_Animate">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="JianJue_Yure_Gift2_Icon_Get">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="JianJue_Yure_Gift3_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-56.000000}}"/>
+          <Event Name="Clicked" Function="JianJue_Yure_PrizeClicked(3)"/>
+          <Window Type="TLBB_Animate" Name="JianJue_Yure_Gift3_Icon_Animate">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="JianJue_Yure_Gift3_Icon_Get">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_ActionButton" Name="JianJue_Yure_Gift4_Icon">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{1.000000,-56.000000}}"/>
+          <Event Name="Clicked" Function="JianJue_Yure_PrizeClicked(4)"/>
+          <Window Type="TLBB_Animate" Name="JianJue_Yure_Gift4_Icon_Animate">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Animate" Value="Equip_Zhizun"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="JianJue_Yure_Gift4_Icon_Get">
+            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="MouseRButtonHollow" Value="True"/>
+            <Property Name="MouseMoveHollow" Value="True"/>
+            <Property Name="MouseLButtonHollow" Value="True"/>
+            <Property Name="MouseHollow" Value="True"/>
+            <Property Name="Visible" Value="False"/>
+            <Property Name="Image" Value="set:CommonFrame37 image:Item_Choices_Checkmark"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="JianJue_Yure_Gift1_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{JJFY_240407_41}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="JianJue_Yure_Gift2_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{0.000000,36.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{JJFY_240407_42}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="JianJue_Yure_Gift3_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{JJFY_240407_43}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="JianJue_Yure_Gift4_Text">
+          <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,16.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-36.000000},{1.000000,-20.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="Text" Value="#{JJFY_240407_44}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="JianJue_Yure_Now">
+        <Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-122.000000},{1.000000,-100.000000}}"/>
+        <Property Name="HorzFormatting" Value="LeftAligned"/>
+        <Property Name="Text" Value="#{JJFY_240407_46}"/>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

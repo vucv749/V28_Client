@@ -1,0 +1,1491 @@
+﻿<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrame0" Name="GameTools5_Frame">
+		<Property Name="UnifiedPosition" Value="{{0.5,-230},{0.5,-185}}"/>
+		<Property Name="AbsoluteSize" Value="w:660 h:520"/>
+		<Window Type="TLBB_DragTitle" Name="GameTools5_DragTitle">
+			<Property Name="AbsolutePosition" Value="x:45.000000 y:11.000000"/>
+			<Property Name="UnifiedSize" Value="{{1.000000,-90.000000},{0.000000,20.000000}"/>
+			<Property Name="DragTarget" Value="GameTools5_Frame"/>
+			<Window Type="TLBB_SimpleText" Name="GameTools5_Title">
+				<Property Name="Position" Value="x:0.0 y:0.0"/>
+				<Property Name="Size" Value="w:1.0 h:1.0"/>
+				<Property Name="Font" Value="YouYuan11.25"/>
+				<Property Name="HorzFormatting" Value="HorzCentred"/>
+				<Property Name="Text" Value="#gFF0FA0《天龙八部·雪舞》管理工具·装备"/>
+			</Window>
+		</Window>
+		<Window Type="TLBB_ButtonHelp" Name="GameTools5_Help">
+			<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
+			<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+		</Window>
+		<Window Type="TLBB_ButtonClose" Name="GameTools5_Close">
+			<Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}"/>
+			<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000"/>
+			<Event Name="Clicked" Function="GameTools5_Close();"/>
+		</Window>
+		<Window Type="TLBB_ButtonFenYe2" Name="GameTools5_FenYe1">
+			<Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,482.000000}}"/>
+			<Property Name="Text" Value="资源"/>
+			<Property Name="Selected" Value="False"/>
+			<Property Name="CheckMode" Value="1"/>
+			<Event Name="MouseLButtonDown" Function="GameTools5_ChangeTabIndex(1);"/>
+		</Window>
+		<Window Type="TLBB_ButtonFenYe2" Name="GameTools5_FenYe2">
+			<Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,55.000000},{0.000000,482.000000}}"/>
+			<Property Name="Text" Value="数值"/>
+			<Property Name="Selected" Value="False"/>
+			<Property Name="CheckMode" Value="1"/>
+			<Event Name="MouseLButtonDown" Function="GameTools5_ChangeTabIndex(2);"/>
+		</Window>
+		<Window Type="TLBB_ButtonFenYe2" Name="GameTools5_FenYe3">
+			<Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,98.000000},{0.000000,482.000000}}"/>
+			<Property Name="Text" Value="属性"/>
+			<Property Name="Selected" Value="False"/>
+			<Property Name="CheckMode" Value="1"/>
+			<Event Name="MouseLButtonDown" Function="GameTools5_ChangeTabIndex(3);"/>
+		</Window>
+		<Window Type="TLBB_ButtonFenYe2" Name="GameTools5_FenYe4">
+			<Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,141.000000},{0.000000,482.000000}}"/>
+			<Property Name="Text" Value="打造"/>
+			<Property Name="Selected" Value="False"/>
+			<Property Name="CheckMode" Value="1"/>
+			<Event Name="MouseLButtonDown" Function="GameTools5_ChangeTabIndex(4);"/>
+		</Window>
+		<Window Type="TLBB_ButtonFenYe2" Name="GameTools5_FenYe5">
+			<Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,184.000000},{0.000000,482.000000}}"/>
+			<Property Name="Text" Value="装备"/>
+			<Property Name="Selected" Value="True"/>
+			<Property Name="CheckMode" Value="1"/>
+			<Event Name="MouseLButtonDown" Function="GameTools5_ChangeTabIndex(5);"/>
+		</Window>
+		<Window Type="TLBB_ButtonFenYe2" Name="GameTools5_FenYe6">
+			<Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,227.000000},{0.000000,482.000000}}"/>
+			<Property Name="Text" Value="珍兽"/>
+			<Property Name="Selected" Value="False"/>
+			<Property Name="CheckMode" Value="1"/>
+			<Event Name="MouseLButtonDown" Function="GameTools5_ChangeTabIndex(6);"/>
+		</Window>
+		<Window Type="TLBB_ButtonFenYe2" Name="GameTools5_FenYe7">
+			<Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,269.000000},{0.000000,482.000000}}"/>
+			<Property Name="Text" Value="超管"/>
+			<Property Name="Selected" Value="False"/>
+			<Property Name="CheckMode" Value="1"/>
+			<Event Name="MouseLButtonDown" Function="GameTools5_ChangeTabIndex(7);"/>
+		</Window>
+		<!-- 第一个单选类型 -->
+		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_Kuang1">
+			<Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,195.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,35.000000}}"/>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond1">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton1">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(1);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock1">
+					<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="血上限"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond2">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,25.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton2">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(2);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock2">
+					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="血上限百分比"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond3">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,50.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton3">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(3);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock3">
+					<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="气上限"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond4">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,75.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton4">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(4);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock4">
+					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="气上限百分比"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond14">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,100.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton14">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(14);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock14">
+					<Property Name="UnifiedSize" Value="{{0.000000,55.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="外攻攻击"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond17">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,125.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton17">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(17);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock17">
+					<Property Name="UnifiedSize" Value="{{0.000000,55.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="外攻防御"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond21">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,150.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton21">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(21);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock21">
+					<Property Name="UnifiedSize" Value="{{0.000000,55.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="内攻攻击"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond24">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,175.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton24">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(24);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock24">
+					<Property Name="UnifiedSize" Value="{{0.000000,55.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="内攻防御"/>
+				</Window>
+			</Window>
+		</Window>
+		<!-- 第二个单选类型 -->
+		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_Kuang2">
+			<Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,195.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,135.000000},{0.000000,35.000000}}"/>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond5">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton5">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(5);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock5">
+					<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="冰攻击"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond7">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,25.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton7">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(7);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock7">
+					<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="火攻击"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond9">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,50.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton9">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(9);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock9">
+					<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="玄攻击"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond11">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,75.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton11">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(11);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock11">
+					<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="毒攻击"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond6">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,100.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton6">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(6);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock6">
+					<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="冰抗"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond8">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,125.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton8">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(8);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock8">
+					<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="火抗"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond10">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,150.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton10">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(10);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock10">
+					<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="玄抗"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond12">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,175.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton12">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(12);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock12">
+					<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="毒抗"/>
+				</Window>
+			</Window>
+		</Window>
+		<!-- 第三个单选类型 -->
+		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_Kuang3">
+			<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,195.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,207.000000},{0.000000,35.000000}}"/>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond31">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton31">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(31);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock31">
+					<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="力量"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond32">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,25.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton32">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(32);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock32">
+					<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="灵气"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond33">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,50.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton33">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(33);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock33">
+					<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="体力"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond34">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,75.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton34">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(34);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock34">
+					<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="定力"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond35">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,100.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton35">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(35);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock35">
+					<Property Name="UnifiedSize" Value="{{0.000000,25.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="身法"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond28">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,125.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton28">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(28);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock28">
+					<Property Name="UnifiedSize" Value="{{0.000000,25.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="命中"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond29">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,150.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton29">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(29);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock29">
+					<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="闪避"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond30">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,175.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton30">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(30);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock30">
+					<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="会心"/>
+				</Window>
+			</Window>
+		</Window>
+		<!-- 第四个单选类型 -->
+		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_Kuang4">
+			<Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,195.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,267.000000},{0.000000,35.000000}}"/>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond36">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton36">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(36);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock36">
+					<Property Name="UnifiedSize" Value="{{0.000000,55.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="会心防御"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond37">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,25.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton37">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(37);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock37">
+					<Property Name="UnifiedSize" Value="{{0.000000,55.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="所有属性"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond13">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,55.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton13">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(13);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock13">
+					<Property Name="UnifiedSize" Value="{{0.000000,55.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="所有抗性"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond38">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,85.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton38">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(38);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock38">
+					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="忽略目标冰抗"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond39">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,115.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton39">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(39);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock39">
+					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="忽略目标火抗"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond40">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,145.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton40">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(40);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock40">
+					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="忽略目标玄抗"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond41">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,175.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton41">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(41);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock41">
+					<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="忽略目标毒抗"/>
+				</Window>
+			</Window>
+		</Window>
+		<!-- 第五个单选类型 -->
+		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_Kuang5">
+			<Property Name="UnifiedSize" Value="{{0.000000,175.000000},{0.000000,195.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,377.000000},{0.000000,35.000000}}"/>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond20">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton20">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(20);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock20">
+					<Property Name="UnifiedSize" Value="{{0.000000,120.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="抵消外攻伤害百分比"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond27">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,16.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton27">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(27);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock27">
+					<Property Name="UnifiedSize" Value="{{0.000000,120.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="抵消内攻伤害百分比"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond15">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,36.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton15">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(15);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock15">
+					<Property Name="UnifiedSize" Value="{{0.000000,120.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="基础外攻攻击百分比"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond18">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,56.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton18">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(18);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock18">
+					<Property Name="UnifiedSize" Value="{{0.000000,115.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="基础外攻防御百分比"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond22">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,76.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton22">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(22);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock22">
+					<Property Name="UnifiedSize" Value="{{0.000000,115.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="基础内攻攻击百分比"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond25">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,96.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton25">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(25);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock25">
+					<Property Name="UnifiedSize" Value="{{0.000000,120.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="基础内攻防御百分比"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond16">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,116.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton16">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(16);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock16">
+					<Property Name="UnifiedSize" Value="{{0.000000,145.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="武器基础外攻攻击百分比"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond19">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,136.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton19">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(19);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock19">
+					<Property Name="UnifiedSize" Value="{{0.000000,150.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="防具基础外攻防御百分比"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond23">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,156.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton23">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(23);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock23">
+					<Property Name="UnifiedSize" Value="{{0.000000,145.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="武器基础内攻攻击百分比"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_AttrSecond26">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,176.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AttrSecondButton26">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="勾选您需要的属性"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_Clicked(26);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AttrSecondLock26">
+					<Property Name="UnifiedSize" Value="{{0.000000,145.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="防具基础内攻防御百分比"/>
+				</Window>
+			</Window>
+		</Window>
+		<!-- 星级修改 -->
+		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_Star">
+			<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,232.000000}"/>
+			<Property Name="UnifiedSize" Value="{{0.000000,165.000000},{0.000000,24.000000}"/>
+			<Property Name="Text" Value="星级"/>
+			<Property Name="TextColor" Value="FFFFF263"/>
+			<Window Type="TLBB_ComboList" Name="GameTools5_StarEdix">
+				<Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.0000000,3.000000}}"/>
+				<Event Name="ListSelectionAccepted" Function="GameTools5_ListBox_Selected();"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="GameTools5_StarXiugai">
+				<Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.000000,3.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:58.000000 h:18.000000"/>
+				<Property Name="Text" Value="修改星级"/>
+				<Event Name="Clicked" Function="GameTools5_Star_Clicked();"/>
+			</Window>
+		</Window>
+		<!-- 强化修改 -->
+		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_strengthen">
+			<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,258.000000}"/>
+			<Property Name="UnifiedSize" Value="{{0.000000,165.000000},{0.000000,24.000000}"/>
+			<Property Name="Text" Value="强化"/>
+			<Property Name="TextColor" Value="FFFFF263"/>
+			<Window Type="TLBB_EditBoxNormal" Name="GameTools5_strengthenEdix">
+				<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.0000000,3.000000}}"/>
+				<Property Name="MaxTextLength" Value="3"/>
+				<Property Name="ValidationString" Value="[0-9]*"/>
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="GameTools5_strengtheTxt">
+				<Property Name="UnifiedSize" Value="{{0.000000,31.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{0.000000,3.000000}}"/>
+				<Property Name="Text" Value="级"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="GameTools5_strengthenButton">
+				<Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.000000,3.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:58.000000 h:18.000000"/>
+				<Property Name="Text" Value="修改强化"/>
+				<Event Name="Clicked" Function="GameTools5_strengthen_Clicked();"/>
+			</Window>
+		</Window>
+		<!-- 孔数 -->
+		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_KongShu">
+			<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,282.500000}"/>
+			<Property Name="UnifiedSize" Value="{{0.000000,165.000000},{0.000000,24.000000}"/>
+			<Property Name="Text" Value="孔数"/>
+			<Property Name="TextColor" Value="FFFFF263"/>
+			<Window Type="TLBB_ComboList" Name="GameTools5_KongShuEdix">
+				<Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.0000000,3.000000}}"/>
+				<Event Name="ListSelectionAccepted" Function="VIP_EquipItem_KongShuListBox_Selected();"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="GameTools5_KongShuButton">
+				<Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.000000,3.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:58.000000 h:18.000000"/>
+				<Property Name="Text" Value="修改孔数"/>
+				<Event Name="Clicked" Function="GameTools5_KongShu_Clicked();"/>
+			</Window>
+		</Window>
+		<!-- 外观修改 -->
+		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_Visual">
+			<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,308.500000}"/>
+			<Property Name="UnifiedSize" Value="{{0.000000,165.000000},{0.000000,24.000000}"/>
+			<Property Name="Text" Value="外观"/>
+			<Property Name="TextColor" Value="FFFFF263"/>
+			<Window Type="TLBB_EditBoxNormal" Name="GameTools5_VisualEdix">
+				<Property Name="UnifiedSize" Value="{{0.000000,51.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.0000000,3.000000}}"/>
+				<Property Name="MaxTextLength" Value="5"/>
+				<Property Name="ValidationString" Value="[0-9]*"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="GameTools5_VisualButton">
+				<Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.000000,3.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:58.000000 h:18.000000"/>
+				<Property Name="Text" Value="修改外观"/>
+				<Event Name="Clicked" Function="GameTools5_Visual_Clicked();"/>
+			</Window>
+		</Window>
+		<!-- 创建者信息（文本） （作者信息） -->
+		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_Creat">
+			<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,338.000000}"/>
+			<Property Name="UnifiedSize" Value="{{0.000000,635.000000},{0.000000,24.000000}"/>
+			<Property Name="Text" Value="文本"/>
+			<Property Name="TextColor" Value="FFFFF263"/>
+			<Window Type="TLBB_EditBoxNormal" Name="GameTools5_CreatEdix">
+				<Property Name="UnifiedSize" Value="{{0.000000,545.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.0000000,3.000000}}"/>
+				<Property Name="MaxTextLength" Value="57"/>
+			</Window>
+			<!-- <Window Type="TLBB_ButtonCommon" Name="GameTools5_CreatButton1">
+				<Property Name="UnifiedPosition" Value="{{0.000000,562.000000},{0.000000,4.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:32.000000 h:15.000000"/>
+				<Property Name="Text" Value="复制"/>
+				<Event Name="Clicked" Function="GameTools5_Creat_Clicked(1);"/>
+			</Window> -->
+			<Window Type="TLBB_ButtonCommon" Name="GameTools5_CreatButton2">
+				<Property Name="UnifiedPosition" Value="{{0.000000,595.000000},{0.000000,3.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:35.000000 h:18.000000"/>
+				<Property Name="Text" Value="#G修改"/>
+				<Event Name="Clicked" Function="GameTools5_Creat_Clicked(2);"/>
+			</Window>
+		</Window>
+		<!-- 浮动修改 -->
+		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_FuDong">
+			<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,362.500000}"/>
+			<Property Name="UnifiedSize" Value="{{0.000000,165.000000},{0.000000,24.000000}"/>
+			<Property Name="Text" Value="浮动"/>
+			<Property Name="TextColor" Value="FFFFF263"/>
+			<Window Type="TLBB_EditBoxNormal" Name="GameTools5_FuDongEdix">
+				<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.0000000,3.000000}}"/>
+				<Property Name="MaxTextLength" Value="5"/>
+				<Property Name="ValidationString" Value="[0-9]*"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="GameTools5_FuDongButton">
+				<Property Name="UnifiedPosition" Value="{{0.000000,82.000000},{0.000000,4.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:85.000000 h:15.000000"/>
+				<Property Name="Text" Value="修改属性浮动"/>
+				<Event Name="Clicked" Function="GameTools5_FuDong_Clicked();"/>
+			</Window>
+		</Window>
+		<!-- 耐久修改 -->
+		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_DurValue">
+			<Property Name="UnifiedPosition" Value="{{0.000000,185.000000},{0.000000,362.500000}"/>
+			<Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,24.000000}"/>
+			<Property Name="Text" Value="剩余耐久"/>
+			<Property Name="TextColor" Value="FFFFF263"/>
+			<Window Type="TLBB_EditBoxNormal" Name="GameTools5_DurValueEdix">
+				<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.0000000,3.000000}}"/>
+				<Property Name="MaxTextLength" Value="3"/>
+				<Property Name="ValidationString" Value="[0-9]*"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="GameTools5_DurValueButton">
+				<Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,4.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:35.000000 h:15.000000"/>
+				<Property Name="Text" Value="修改"/>
+				<Event Name="Clicked" Function="GameTools5_DurValue_Clicked();"/>
+			</Window>
+		</Window>
+		<!-- 耐久上限修改 -->
+		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_MaxDurValue">
+			<Property Name="UnifiedPosition" Value="{{0.000000,185.000000},{0.000000,387.500000}"/>
+			<Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,24.000000}"/>
+			<Property Name="Text" Value="耐久上限"/>
+			<Property Name="TextColor" Value="FFFFF263"/>
+			<Window Type="TLBB_EditBoxNormal" Name="GameTools5_MaxDurValueEdix">
+				<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.0000000,3.000000}}"/>
+				<Property Name="MaxTextLength" Value="3"/>
+				<Property Name="ValidationString" Value="[0-9]*"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="GameTools5_MaxDurValueButton">
+				<Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,4.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:35.000000 h:15.000000"/>
+				<Property Name="Text" Value="修改"/>
+				<Event Name="Clicked" Function="GameTools5_MaxDurValue_Clicked();"/>
+			</Window>
+		</Window>
+		<!-- 修理次数 -->
+		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_XiuLiCount">
+			<Property Name="UnifiedPosition" Value="{{0.000000,185.000000},{0.000000,412.000000}"/>
+			<Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,24.000000}"/>
+			<Property Name="Text" Value="已修理次数:"/>
+			<Property Name="TextColor" Value="FFFFF263"/>
+			<Window Type="TLBB_EditBoxNormal" Name="GameTools5_XiuLiCountEdix">
+				<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{0.0000000,3.000000}}"/>
+				<Property Name="MaxTextLength" Value="1"/>
+				<Property Name="ValidationString" Value="[0-9]*"/>
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="GameTools5_XiuLiCountText">
+				<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{1.000000,0.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,124.000000},{0.000000,0.000000}}"/>
+				<Property Name="Text" Value="Max:3"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="GameTools5_XiuLiCountButton">
+				<Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,4.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:35.000000 h:15.000000"/>
+				<Property Name="Text" Value="修改"/>
+				<Event Name="Clicked" Function="GameTools5_XiuLiCount_Clicked();"/>
+			</Window>
+		</Window>
+		<!-- 复制装备 -->
+		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_KeLong">
+			<Property Name="UnifiedPosition" Value="{{0.000000,185.000000},{0.000000,436.500000}"/>
+			<Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,24.000000}"/>
+			<Property Name="Text" Value="复制一件装备"/>
+			<Property Name="TextColor" Value="FFFFF263"/>
+			<Window Type="TLBB_ButtonCommon" Name="GameTools5_KeLongButton">
+				<Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{0.000000,3.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:110.000000 h:18.000000"/>
+				<Property Name="Text" Value="#gFF0FA0完整克隆这件装备"/>
+				<Event Name="Clicked" Function="GameTools5_KeLong_Clicked();"/>
+			</Window>
+		</Window>
+		<!-- 随机打乱属性（重洗） -->
+		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_ChongXi">
+			<Property Name="UnifiedPosition" Value="{{0.000000,185.000000},{0.000000,460.000000}"/>
+			<Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,24.000000}"/>
+			<Property Name="Text" Value="条数"/>
+			<Property Name="TextColor" Value="FFFFF263"/>
+			<Window Type="TLBB_EditBoxNormal" Name="GameTools5_ChongXiEdix">
+				<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,33.000000},{0.0000000,3.000000}}"/>
+				<Property Name="MaxTextLength" Value="2"/>
+				<Property Name="ValidationString" Value="[0-9]*"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="GameTools5_ChongXiButton1">
+				<Property Name="UnifiedPosition" Value="{{0.000000,64.000000},{0.000000,3.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:85.000000 h:18.000000"/>
+				<Property Name="Text" Value="#gFF0FA0只洗属性类型"/>
+				<Event Name="Clicked" Function="GameTools5_ChongXi_Clicked(1);"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="GameTools5_ChongXiButton2">
+				<Property Name="UnifiedPosition" Value="{{0.000000,149.000000},{0.000000,3.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:46.000000 h:18.000000"/>
+				<Property Name="Text" Value="#gFF0FA0纯随机"/>
+				<Event Name="Clicked" Function="GameTools5_ChongXi_Clicked(2);"/>
+			</Window>
+		</Window>
+		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_ID">
+			<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,387.500000}"/>
+			<Property Name="UnifiedSize" Value="{{0.000000,165.000000},{0.000000,24.000000}"/>
+			<Property Name="Text" Value="ID"/>
+			<Property Name="TextColor" Value="FFFFF263"/>
+			<Window Type="TLBB_EditBoxNormal" Name="GameTools5_IDEdix">
+				<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.0000000,3.000000}}"/>
+				<Property Name="MaxTextLength" Value="8"/>
+				<Property Name="ValidationString" Value="[0-9]*"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="GameTools5_IDButton">
+				<Property Name="UnifiedPosition" Value="{{0.000000,82.000000},{0.000000,4.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:85.000000 h:15.000000"/>
+				<Property Name="Text" Value="修改装备ID"/>
+				<Event Name="Clicked" Function="GameTools5_ID_Clicked();"/>
+			</Window>
+		</Window>
+		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_ZhuangTai">
+			<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,413.000000}"/>
+			<Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,71.000000}"/>
+			<Property Name="VertFormatting" Value="VertCentred"/>
+			<Window Type="DefaultWindow" Name="GameTools5_ZhuangTai1">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,2.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_ZhuangTaiButton1">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="请勾选"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_ZhuangTaiClicked(1);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_ZhuangTaiLock1">
+					<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="已绑定"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_ZhuangTai2">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,22.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_ZhuangTaiButton2">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="请勾选"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_ZhuangTaiClicked(2);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_ZhuangTaiLock2">
+					<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="已鉴定"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_ZhuangTai3">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,94.000000},{0.000000,2.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_ZhuangTaiButton3">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="请勾选"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_ZhuangTaiClicked(3);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_ZhuangTaiLock3">
+					<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="已锁定"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_ZhuangTai4">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,94.000000},{0.000000,22.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_ZhuangTaiButton4">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="请勾选"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_ZhuangTaiClicked(4);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_ZhuangTaiLock4">
+					<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="已刻铭"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="GameTools5_ZhuangTai5">
+				<Property Name="UnifiedSize" Value="{{0.000000,43.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,44.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_ZhuangTaiButton5">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="请勾选"/>
+					<Property Name="CheckMode" Value="0"/>
+					<Event Name="MouseButtonUp" Function="GameTools5_ZhuangTaiClicked(5);"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_ZhuangTaiLock5">
+					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="资质已鉴定"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="GameTools5_ZhuangTaiTiJiaoButton">
+				<Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,44.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:35.000000 h:18.000000"/>
+				<Property Name="Text" Value="保存"/>
+				<Event Name="Clicked" Function="GameTools5_ZhuangTai_Clicked();"/>
+			</Window>
+		</Window>
+		
+		<!-- 雕纹信息 -->
+		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_DWinfo">
+			<Property Name="UnifiedPosition" Value="{{0.000000,552.000000},{0.000000,35.000000}"/>
+			<Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,195.000000}"/>
+			<Property Name="VertFormatting" Value="VertCentred"/>
+
+			<!-- 雕纹名 -->
+			<Window Type="TLBB_SimpleText" Name="GameTools5_DWinfoTxt1">
+				<Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,36.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,3.000000}}"/>
+				<Property Name="Text" Value="无雕纹"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+			</Window>
+			
+			<!-- 雕纹ID编辑框 -->
+			<Window Type="TLBB_EditBoxNormal" Name="GameTools5_DWinfoEdix1">
+				<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.0000000,40.000000}}"/>
+				<Property Name="MaxTextLength" Value="8"/>
+				<Property Name="ValidationString" Value="[0-9]*"/>
+			</Window>
+			
+			<Window Type="TLBB_ButtonCommon" Name="GameTools5_DWButton1">
+				<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,60.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:91.000000 h:18.000000"/>
+				<Property Name="Text" Value="修改装备雕纹"/>
+				<Event Name="Clicked" Function="GameTools5_DWinfo_Clicked(1);"/>
+			</Window>
+			
+			<Window Type="TLBB_SimpleText" Name="GameTools5_DWADDTxt1">
+				<Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,79.000000}}"/>
+				<Property Name="Text" Value="加成信息:"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="GameTools5_DWattrTxt1">
+				<Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,94.000000}}"/>
+				<Property Name="Text" Value="属性:"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+			</Window>
+	
+			<Window Type="TLBB_SimpleText" Name="GameTools5_DWSumtxt">
+				<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,118.000000}}"/>
+				<Property Name="Text" Value="升级所需材料数:#G0/0"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="GameTools5_DWSum">
+				<Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,131.000000}}"/>
+				<Property Name="Text" Value="#G0/0"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+			</Window>
+			<Window Type="TLBB_EditBoxNormal" Name="GameTools5_DWSumEdix1">
+				<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.0000000,151.000000}}"/>
+				<Property Name="MaxTextLength" Value="5"/>
+				<Property Name="ValidationString" Value="[0-9]*"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="GameTools5_DWButton2">
+				<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,171.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:91.000000 h:18.000000"/>
+				<Property Name="Text" Value="修改剩余材料"/>
+				<Event Name="Clicked" Function="GameTools5_DWinfo_Clicked(2);"/>
+			</Window>
+			
+		</Window>
+		
+		
+		<!-- 宝石信息 -->
+		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_Geminfo">
+			<Property Name="UnifiedPosition" Value="{{0.000000,405.000000},{0.000000,238.000000}"/>
+			<Property Name="UnifiedSize" Value="{{0.000000,245.000000},{0.000000,78.000000}"/>
+			<Property Name="VertFormatting" Value="VertCentred"/>
+			<Window Type="TLBB_ActionButton" Name="GameTools5_Gem1">
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000008}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,4.000000}}"/>
+				<Property Name="DraggingEnabled" Value="True"/>
+				<Property Name="DragAcceptName" Value="G7"/>
+				<Event Name="RBClicked" Function="GameTools5Resume_GemEx(1);"/>
+			</Window>
+			<Window Type="TLBB_ActionButton" Name="GameTools5_Gem2">
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000008}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,22.000000}}"/>
+				<Property Name="DraggingEnabled" Value="True"/>
+				<Property Name="DragAcceptName" Value="G7"/>
+				<Event Name="RBClicked" Function="GameTools5Resume_GemEx(2);"/>
+			</Window>
+			<Window Type="TLBB_ActionButton" Name="GameTools5_Gem3">
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000008}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,40.000000}}"/>
+				<Property Name="DraggingEnabled" Value="True"/>
+				<Property Name="DragAcceptName" Value="G7"/>
+				<Event Name="RBClicked" Function="GameTools5Resume_GemEx(3);"/>
+			</Window>
+			<Window Type="TLBB_ActionButton" Name="GameTools5_Gem4">
+				<Property Name="UnifiedSize" Value="{{0.000000,15.000000},{0.000000,15.000008}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,58.000000}}"/>
+				<Property Name="DraggingEnabled" Value="True"/>
+				<Property Name="DragAcceptName" Value="G7"/>
+				<Event Name="RBClicked" Function="GameTools5Resume_GemEx(4);"/>
+			</Window>
+			<!-- 宝石ID编辑框 -->
+			<Window Type="TLBB_EditBoxNormal" Name="GameTools5_GeminfoEdix1">
+				<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.0000000,3.000000}}"/>
+				<Property Name="MaxTextLength" Value="8"/>
+				<Property Name="ValidationString" Value="[0-9]*"/>
+			</Window>
+			<Window Type="TLBB_EditBoxNormal" Name="GameTools5_GeminfoEdix2">
+				<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.0000000,21.000000}}"/>
+				<Property Name="MaxTextLength" Value="8"/>
+				<Property Name="ValidationString" Value="[0-9]*"/>
+			</Window>
+			<Window Type="TLBB_EditBoxNormal" Name="GameTools5_GeminfoEdix3">
+				<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.0000000,39.000000}}"/>
+				<Property Name="MaxTextLength" Value="8"/>
+				<Property Name="ValidationString" Value="[0-9]*"/>
+			</Window>
+			<Window Type="TLBB_EditBoxNormal" Name="GameTools5_GeminfoEdix4">
+				<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.0000000,56.000000}}"/>
+				<Property Name="MaxTextLength" Value="8"/>
+				<Property Name="ValidationString" Value="[0-9]*"/>
+			</Window>
+			<!-- 宝石名 -->
+			<Window Type="TLBB_SimpleText" Name="GameTools5_GeminfoTxt1">
+				<Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{0.000000,3.000000}}"/>
+				<Property Name="Text" Value="孔位无宝石"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="GameTools5_GeminfoTxt2">
+				<Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{0.000000,20.000000}}"/>
+				<Property Name="Text" Value="孔位无宝石"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="GameTools5_GeminfoTxt3">
+				<Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{0.000000,38.000000}}"/>
+				<Property Name="Text" Value="孔位无宝石"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="GameTools5_GeminfoTxt4">
+				<Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,18.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{0.000000,58.000000}}"/>
+				<Property Name="Text" Value="孔位无宝石"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="GameTools5_GemButton1">
+				<Property Name="UnifiedPosition" Value="{{0.000000,217.000000},{0.000000,3.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:25.000000 h:15.000000"/>
+				<Property Name="Text" Value="改"/>
+				<Event Name="Clicked" Function="GameTools5_Geminfo_Clicked(1);"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="GameTools5_GemButton2">
+				<Property Name="UnifiedPosition" Value="{{0.000000,217.000000},{0.000000,20.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:25.000000 h:15.000000"/>
+				<Property Name="Text" Value="改"/>
+				<Event Name="Clicked" Function="GameTools5_Geminfo_Clicked(2);"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="GameTools5_GemButton3">
+				<Property Name="UnifiedPosition" Value="{{0.000000,217.000000},{0.000000,38.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:25.000000 h:15.000000"/>
+				<Property Name="Text" Value="改"/>
+				<Event Name="Clicked" Function="GameTools5_Geminfo_Clicked(3);"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="GameTools5_GemButton4">
+				<Property Name="UnifiedPosition" Value="{{0.000000,217.000000},{0.000000,58.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:25.000000 h:15.000000"/>
+				<Property Name="Text" Value="改"/>
+				<Event Name="Clicked" Function="GameTools5_Geminfo_Clicked(4);"/>
+			</Window>
+		</Window>
+		<!-- <Window Type="TLBB_ButtonCommon" Name="GameTools5_Geminfo_ShuaXin">
+			<Property Name="UnifiedPosition" Value="{{0.000000,565.000000},{0.000000,317.000000}"/>
+			<Property Name="AbsoluteSize" Value="w:85.000000 h:20.000000"/>
+			<Property Name="Text" Value="#G刷新宝石评分"/>
+			<Event Name="Clicked" Function="GameTools5_Geminfo_ShuaXin_Clicked();"/>
+		</Window> -->
+		<!-- 装备资质 -->
+		<Window Type="DefaultWindow" Name="GameTools5_ColorList">
+			<Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,110.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.000000,232.000000}}"/>
+			<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_ZiZhiPinZhi_Text1">
+				<Property Name="UnifiedSize" Value="{{0.000000,225.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,0.000000}}"/>
+				<Property Name="Text" Value="外攻资质"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+				<Property Name="VertFormatting" Value="VertCentred"/>
+				<Window Type="TLBB_Slider" Name="GameTools5_ZiZhiPinZhi1">
+					<Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,14.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,4.000000}}"/>
+					<Event Name="ScrollPosChanged" Function="GameTools5_SliderChanged1();"/>
+				</Window>
+				<Window Type="TLBB_EditBoxNormal" Name="GameTools5_ZiZhiPinZhi_NumericalValue1">
+					<Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,15.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,183.000000},{0.000000,3.000000}}"/>
+					<Property Name="Text" Value="255"/>
+					<Property Name="MaxTextLength" Value="3"/>
+					<Property Name="ValidationString" Value="[0-9]*"/>
+					<Event Name="TextChanged" Function="GameTools5ZiZhiPinZhi1_Change();"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_ZiZhiPinZhi_Text2">
+				<Property Name="UnifiedSize" Value="{{0.000000,225.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,18.000000}}"/>
+				<Property Name="Text" Value="内攻资质"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+				<Property Name="VertFormatting" Value="VertCentred"/>
+				<Window Type="TLBB_Slider" Name="GameTools5_ZiZhiPinZhi2">
+					<Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,14.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,4.000000}}"/>
+					<Event Name="ScrollPosChanged" Function="GameTools5_SliderChanged2();"/>
+				</Window>
+				<Window Type="TLBB_EditBoxNormal" Name="GameTools5_ZiZhiPinZhi_NumericalValue2">
+					<Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,15.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,183.000000},{0.000000,3.000000}}"/>
+					<Property Name="Text" Value="255"/>
+					<Property Name="MaxTextLength" Value="3"/>
+					<Property Name="ValidationString" Value="[0-9]*"/>
+					<Event Name="TextChanged" Function="GameTools5ZiZhiPinZhi2_Change();"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_ZiZhiPinZhi_Text3">
+				<Property Name="UnifiedSize" Value="{{0.000000,225.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,35.000000}}"/>
+				<Property Name="Text" Value="外防资质"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+				<Property Name="VertFormatting" Value="VertCentred"/>
+				<Window Type="TLBB_Slider" Name="GameTools5_ZiZhiPinZhi3">
+					<Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,14.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,4.000000}}"/>
+					<Event Name="ScrollPosChanged" Function="GameTools5_SliderChanged3();"/>
+				</Window>
+				<Window Type="TLBB_EditBoxNormal" Name="GameTools5_ZiZhiPinZhi_NumericalValue3">
+					<Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,15.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,183.000000},{0.000000,3.000000}}"/>
+					<Property Name="Text" Value="255"/>
+					<Property Name="MaxTextLength" Value="3"/>
+					<Property Name="ValidationString" Value="[0-9]*"/>
+					<Event Name="TextChanged" Function="GameTools5ZiZhiPinZhi3_Change();"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_ZiZhiPinZhi_Text4">
+				<Property Name="UnifiedSize" Value="{{0.000000,225.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,52.000000}}"/>
+				<Property Name="Text" Value="内防资质"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+				<Property Name="VertFormatting" Value="VertCentred"/>
+				<Window Type="TLBB_Slider" Name="GameTools5_ZiZhiPinZhi4">
+					<Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,14.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,4.000000}}"/>
+					<Event Name="ScrollPosChanged" Function="GameTools5_SliderChanged4();"/>
+				</Window>
+				<Window Type="TLBB_EditBoxNormal" Name="GameTools5_ZiZhiPinZhi_NumericalValue4">
+					<Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,15.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,183.000000},{0.000000,3.000000}}"/>
+					<Property Name="Text" Value="255"/>
+					<Property Name="MaxTextLength" Value="3"/>
+					<Property Name="ValidationString" Value="[0-9]*"/>
+					<Event Name="TextChanged" Function="GameTools5ZiZhiPinZhi4_Change();"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_ZiZhiPinZhi_Text5">
+				<Property Name="UnifiedSize" Value="{{0.000000,225.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,69.000000}}"/>
+				<Property Name="Text" Value="闪避资质"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+				<Property Name="VertFormatting" Value="VertCentred"/>
+				<Window Type="TLBB_Slider" Name="GameTools5_ZiZhiPinZhi5">
+					<Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,14.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,4.000000}}"/>
+					<Event Name="ScrollPosChanged" Function="GameTools5_SliderChanged5();"/>
+				</Window>
+				<Window Type="TLBB_EditBoxNormal" Name="GameTools5_ZiZhiPinZhi_NumericalValue5">
+					<Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,15.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,183.000000},{0.000000,3.000000}}"/>
+					<Property Name="Text" Value="255"/>
+					<Property Name="MaxTextLength" Value="3"/>
+					<Property Name="ValidationString" Value="[0-9]*"/>
+					<Event Name="TextChanged" Function="GameTools5ZiZhiPinZhi5_Change();"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_ZiZhiPinZhi_Text6">
+				<Property Name="UnifiedSize" Value="{{0.000000,225.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,86.000000}}"/>
+				<Property Name="Text" Value="命中资质"/>
+				<Property Name="TextColor" Value="FFFFF263"/>
+				<Property Name="VertFormatting" Value="VertCentred"/>
+				<Window Type="TLBB_Slider" Name="GameTools5_ZiZhiPinZhi6">
+					<Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,14.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,4.000000}}"/>
+					<Event Name="ScrollPosChanged" Function="GameTools5_SliderChanged6();"/>
+				</Window>
+				<Window Type="TLBB_EditBoxNormal" Name="GameTools5_ZiZhiPinZhi_NumericalValue6">
+					<Property Name="UnifiedSize" Value="{{0.000000,35.000000},{0.000000,15.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,183.000000},{0.000000,3.000000}}"/>
+					<Property Name="Text" Value="255"/>
+					<Property Name="MaxTextLength" Value="3"/>
+					<Property Name="ValidationString" Value="[0-9]*"/>
+					<Event Name="TextChanged" Function="GameTools5ZiZhiPinZhi6_Change();"/>
+				</Window>
+			</Window>
+		</Window>
+		<Window Type="TLBB_ButtonCommon" Name="GameTools5_ZiZhiPinZhi_OK">
+			<Property Name="UnifiedPosition" Value="{{0.000000,405.000000},{0.000000,317.000000}"/>
+			<Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000"/>
+			<Property Name="Text" Value="#G修改资质"/>
+			<Event Name="Clicked" Function="GameTools5_ZiZhiPinZhi_OK_Clicked();"/>
+		</Window>
+		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools5_BaoCun">
+			<Property Name="UnifiedSize" Value="{{0.000000,265.000000},{0.000000,122.500000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,385.000000},{0.000000,362.000000}}"/>
+			<!-- 装备名称 -->
+			<Window Type="TLBB_SimpleText" Name="GameTools5_Name">
+				<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,0.000000}}"/>
+				<Property Name="Text" Value="#c0066ff名称:"/>
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="GameTools5_Level">
+				<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,15.000000}}"/>
+				<Property Name="Text" Value="#c0066ff等级:"/>
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="GameTools5_EqType">
+				<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,30.000000}}"/>
+				<Property Name="Text" Value="#c0066ff类型:"/>
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="GameTools5_EqType2">
+				<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,45.000000}}"/>
+				<Property Name="Text" Value="#c0066ff装备点:"/>
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="GameTools5_Goods">
+				<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,60.000000}}"/>
+				<Property Name="Text" Value="#c0066ff品质:"/>
+			</Window>
+			<!-- 属性选择数量 -->
+			<Window Type="TLBB_SimpleText" Name="GameTools5_YiXuanTXT">
+				<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,30.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,0.000000}}"/>
+				<Property Name="Text" Value="#cFF0000已选择0种属性"/>
+			</Window>
+			<!-- 单选框-全部都要修改 -->
+			<!-- <Window Type="DefaultWindow" Name="GameTools5_AllXiugai">
+				<Property Name="UnifiedSize" Value="{{0.000000,130.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,14.000000},{0.000000,20.000000}}"/>
+				<Window Type="TLBB_ButtonCheck" Name="GameTools5_AllXiugaiButton">
+					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-44.000000},{0.000000,4.000000}}"/>
+					<Property Name="Tooltip" Value="选中后，本界面所有的选项均进行修改,不勾选只会修改装备的属性类型"/>
+					<Property Name="CheckMode" Value="0"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="GameTools5_AllXiugaiTxt">
+					<Property Name="UnifiedSize" Value="{{0.000000,130.000000},{1.000000,0.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#G同时修改本页全部选项"/>
+				</Window>
+			</Window> -->
+			<!-- 装备框 道具 装备 ID -->
+			<Window Type="TLBB_ActionButton" Name="GameTools5_Item">
+				<Property Name="UnifiedSize" Value="{{0.000000,58.000000},{0.000000,58.000008}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,102.000000},{0.000000,50.000000}}"/>
+				<Property Name="DraggingEnabled" Value="True"/>
+				<Property Name="DragAcceptName" Value="G7"/>
+				<Event Name="RBClicked" Function="GameTools5_XieXia(1);"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="GameTools5_DuQu">
+				<Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,50.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:100.000000 h:20.000000"/>
+				<Property Name="Text" Value="#cFF0000读取装备数据"/>
+				<Event Name="Clicked" Function="GameTools5_DuQu_Clicked();"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="GameTools5_QuXiao">
+				<Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,70.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:100.000000 h:20.000000"/>
+				<Property Name="Text" Value="取消全部已选"/>
+				<Event Name="Clicked" Function="GameTools5_QuXiao_Clicked();"/>
+			</Window>
+			<Window Type="TLBB_ButtonCommon" Name="GameTools5_OK">
+				<Property Name="UnifiedPosition" Value="{{0.000000,160.000000},{0.000000,90.000000}"/>
+				<Property Name="AbsoluteSize" Value="w:100.000000 h:20.000000"/>
+				<Property Name="Text" Value="#G修改装备属性"/>
+				<Event Name="Clicked" Function="GameTools5_OK_Clicked();"/>
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

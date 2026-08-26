@@ -1,0 +1,81 @@
+﻿<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_HeroFrame01" Name="Frozen_HotSpringEnter2_Frame_BK">
+    <Property Name="UnifiedSize" Value="{{0.000000,590.000000},{0.000000,438.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-295.000000},{0.500000,-219.000000}}"/>
+    <Event Name="Hidden" Function="Frozen_HotSpringEnter2_OnClose();" />
+    <Window Type="TLBB_DragTitle" Name="Frozen_HotSpringEnter2_DragTitle">
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,2.000000}}"/>
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{BXPWQ_240927_86}"/>
+      <Property Name="DragTarget" Value="Frozen_HotSpringEnter2_Frame_BK" />
+    </Window>
+    <Window Type="TLBB_HeroTitle01" Name="Frozen_HotSpringEnter2_DragTitleBK">
+      <Property Name="UnifiedSize" Value="{{0.000000,314.000000},{0.000000,30.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-153.000000},{0.000000,-2.000000}}"/>
+      <Property Name="RiseOnClick" Value="False"/>
+      <Property Name="MouseRButtonHollow" Value="True"/>
+      <Property Name="MouseMoveHollow" Value="True"/>
+      <Property Name="MouseLButtonHollow" Value="True"/>
+      <Property Name="MouseHollow" Value="True"/>
+    </Window>
+    <Window Type="TLBB_ButtonNULL" Name="Frozen_HotSpringEnter2_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,9.000000}}"/>
+      <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+      <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
+      <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
+      <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+      <Event Name="Clicked" Function="Frozen_HotSpringEnter2_OnClose();" />
+    </Window>
+    <Window Type="TLBB_HeroLace01" Name="Frozen_HotSpringEnter2_Frame_BK1">
+      <Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,-32.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,28.000000}}"/>
+      <Window Type="DefaultWindow" Name="Frozen_HotSpringEnter2_BKPic">
+        <Property Name="UnifiedSize" Value="{{0.000000,586.000000},{0.000000,406.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_HotSpringEnter2_BKPicL">
+          <Property Name="UnifiedSize" Value="{{0.000000,525.000000},{0.000000,406.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:Frozen_HotSpring image:Frozen_HotSpringEnterBKL"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Frozen_HotSpringEnter2_BKPicR">
+          <Property Name="UnifiedSize" Value="{{0.000000,61.000000},{0.000000,406.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,525.000000},{0.000000,0.000000}}"/>
+          <Property Name="Image" Value="set:Frozen_HotSpring image:Frozen_HotSpringEnterBKR"/>
+          <Property Name="RiseOnClick" Value="False"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="Frozen_HotSpringEnter2_Text">
+        <Property Name="VertFormatting" Value="VertCentred"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,548.000000},{0.000000,88.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,13.000000},{0.000000,3.000000}}"/>
+        <Property Name="Text" Value="#{BXPWQ_240927_87}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+        <Window Type="TLBB_ButtonHelp" Name="Frozen_HotSpringEnter2_Text_Help">
+          <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-20.000000},{1.000000,-20.000000}}"/>
+          <Property Name="AlwaysOnTop" Value="True"/>
+          <Event Name="Clicked" Function="Frozen_HotSpringEnter2_Help();" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon12" Name="Frozen_HotSpringEnter2_GoBtn">
+        <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-130.000000},{1.000000,-54.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="Tooltip" Value="#{}"/>
+        <Property Name="Text" Value="#{LLKC_240517_317}"/>
+        <Event Name="Clicked" Function="Frozen_HotSpringEnter2_Goto();" />
+      </Window>
+
+    </Window>
+  </Window>
+</GUILayout>

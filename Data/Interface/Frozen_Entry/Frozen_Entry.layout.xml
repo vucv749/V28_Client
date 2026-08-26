@@ -1,0 +1,93 @@
+﻿<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Frozen_Entry_Frame_BK">
+    <Property Name="UnifiedSize" Value="{{0.000000,702.000000},{0.000000,540.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-351.000000},{0.500000,-270.000000}}"/>
+    <Event Name="Hidden" Function="" />
+
+    <Window Type="TLBB_ButtonNULL" Name="Frozen_Entry_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{0.000000,60.000000}}"/>
+      <Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+      <Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
+      <Property Name="HoverImage" Value="set:ZLHeroMeeting image:Close_Hover"/>
+      <Property Name="DisabledImage" Value="set:ZLHeroMeeting image:Close_Push"/>
+      <Property Name="AlwaysOnTop" Value="True"/>
+      <Event Name="Clicked" Function="Frozen_Entry_Close()" />
+    </Window>
+
+    <Window Type="DefaultWindow" Name="Frozen_Entry_Frame_BK1">
+      <Property Name="UnifiedSize" Value="{{0.000000,702.000000},{0.000000,463.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.500000,-351.000000},{0.500000,-237.000000}}"/>
+      <Window Type="TLBB_HeroTitle01" Name="Frozen_Entry_Title">
+        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,30.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.000000,18.000000}}"/>
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="MouseRButtonHollow" Value="True"/>
+        <Property Name="MouseMoveHollow" Value="True"/>
+        <Property Name="MouseLButtonHollow" Value="True"/>
+        <Property Name="MouseHollow" Value="True"/>
+      </Window>
+      <Window Type="TLBB_DragTitle" Name="Frozen_Entry_DragTitle">
+        <Property Name="AlwaysOnTop" Value="True"/>
+        <Property Name="UnifiedSize" Value="{{1.000000,-200.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,24.000000}}"/>
+        <Property Name="Font" Value="YouYuan11.25" />
+        <Property Name="Text" Value="#{MSZC_20240910_122}"/>
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="DragTarget" Value="Frozen_Entry_Frame_BK" />
+      </Window>
+      <Window Type="TLBB_HeroFrame01" Name="Frozen_Entry_Frame">
+        <Property Name="UnifiedSize" Value="{{1.000000,-104.000000},{1.000000,-26.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+        <Property Name="RiseOnClick" Value="False"/>
+        <Property Name="AttachEnabled" Value="True"/>
+        <Window Type="DefaultWindow" Name="Frozen_Entry_Client">
+          <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-30.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,24.000000}}"/>
+
+          <Window Type="DefaultWindow" Name="Frozen_Entry_TextBK">
+            <Property Name="UnifiedSize" Value="{{0.000000,523.000000},{0.000000,53.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,38.000000},{0.000000,8.000000}}"/>
+            <Property Name="RiseOnClick" Value="False"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_SimpleText" Name="Frozen_Entry_Text">
+            <Property Name="VertFormatting" Value="VertCentred"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,466.000000},{0.000000,46.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.500000,-238.000000},{0.000000,10.000000}}"/>
+            <Property Name="Text" Value="#{MSZC_20240910_123}"/>
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+          </Window>
+          <Window Type="TLBB_ButtonNULL" Name="Frozen_Entry_Text_Help">
+            <Property Name="UnifiedSize" Value="{{0.000000,20.000000},{0.000000,20.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,37.000000}}"/>
+            <Property Name="PushedImage" Value="set:CommonFrame36 image:ButtonHelpNew_Pushed"/>
+            <Property Name="NormalImage" Value="set:CommonFrame36 image:ButtonHelpNew_Normal"/>
+            <Property Name="HoverImage" Value="set:CommonFrame36 image:ButtonHelpNew_Hover"/>
+            <Property Name="DisabledImage" Value="set:CommonFrame36 image:ButtonHelpNew_Disabled"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Event Name="Clicked" Function="Frozen_Entry_OnClickedHelp()" />
+          </Window>
+          <Window Type="TLBB_StaticImageNULL" Name="Frozen_Entry_FrameImage1">
+            <Property Name="UnifiedSize" Value="{{0.000000,586.000000},{0.000000,406.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{0.000000,8.000000}}"/>
+            <Property Name="Image" Value="set:Frozen_Entry image:Frozen_Entry"/>
+            <Property Name="RiseOnClick" Value="False"/>
+          </Window>
+
+          <Window Type="TLBB_ButtonCommon12" Name="Frozen_Entry_GoBtn">
+            <Property Name="UnifiedSize" Value="{{0.000000,96.000000},{0.000000,24.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{1.000000,-130.000000},{1.000000,-54.000000}}"/>
+            <Property Name="AlwaysOnTop" Value="True"/>
+            <Property Name="Text" Value="#{QXPVE_240628_36}"/>
+            <Property Name="Tooltip" Value="#{MSZC_20240910_124}"/>
+            <Event Name="Clicked" Function="Frozen_Entry_OnClickedGoto()" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

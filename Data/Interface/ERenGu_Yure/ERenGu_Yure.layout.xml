@@ -1,0 +1,687 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrameNULL" Name="ERenGu_Yure_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,929.000000},{0.000000,527.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-464.000000},{0.500000,-263.000000}}"/>
+		<Event Name="Hidden" Function="ERenGu_Yure_CloseFunc();"/>
+		<Window Type="TLBB_DragTitle" Name="ERenGu_Yure_DragTitle">
+			<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,340.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+			<Property Name="DragTarget" Value="ERenGu_Yure_Frame"/>
+			<Property Name="Font" Value="YouYuan11.25"/>
+			<Property Name="HorzFormatting" Value="HorzCentred"/>
+			<Property Name="Text" Value=""/>
+		</Window>
+		<Window Type="DefaultWindow" Name="ERenGu_Yure_Client1">
+			<Property Name="UnifiedSize" Value="{{0.000000,416.000000},{0.000000,522.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.500000,-208.000000},{0.500000,-261.000000}}"/>
+			<Property Name="RiseOnClick" Value="False"/>
+			<Window Type="TLBB_ButtonNULL" Name="ERenGu_Yure_Close">
+				<Property Name="UnifiedSize" Value="{{0.000000,42.000000},{0.000000,45.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,19.000000}}"/>
+				<Property Name="PushedImage" Value="set:ERenGu_Yure_02 image:LetterClose_Pushed"/>
+				<Property Name="NormalImage" Value="set:ERenGu_Yure_02 image:LetterClose_Normal"/>
+				<Property Name="HoverImage" Value="set:ERenGu_Yure_02 image:LetterClose_Hover"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+				<Event Name="Clicked" Function="ERenGu_Yure_CloseFunc();"/>
+			</Window>
+			<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client1_InfoBK">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Property Name="Image" Value="set:ERenGu_Yure_02 image:LetterBK"/>
+				<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client1_InfoImage">
+					<Property Name="UnifiedSize" Value="{{0.000000,268.000000},{0.000000,416.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,78.000000},{0.000000,59.000000}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="Image" Value="set:ERenGu_Yure_02 image:Letter_Day1"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="ERenGu_Yure_Client1_Info">
+				<Property Name="UnifiedSize" Value="{{1.000000,-270.000000},{0.000000,270.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,144.000000},{0.000000,56.000000}}"/>
+				<Property Name="Text" Value="#{ERYR_240701_26}"/>
+				<Property Name="Visible" Value="False"/>
+				<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+			</Window>
+			<Window Type="TLBB_ButtonNULL" Name="ERenGu_Yure_Client1_GotoBtn">
+				<Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,112.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,28.000000},{1.000000,-158.000000}}"/>
+				<Property Name="PushedImage" Value="set:ERenGu_Yure_02 image:GotoMission_Pushed"/>
+				<Property Name="NormalImage" Value="set:ERenGu_Yure_02 image:GotoMission_Normal"/>
+				<Property Name="HoverImage" Value="set:ERenGu_Yure_02 image:GotoMission_Hover"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+				<Event Name="Clicked" Function="ERenGu_Yure_Client1_Goto_Clicked();"/>
+			</Window>
+		</Window>
+		<Window Type="DefaultWindow" Name="ERenGu_Yure_Client2">
+			<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+			<Property Name="RiseOnClick" Value="False"/>
+			<Window Type="TLBB_ButtonNULL" Name="ERenGu_Yure_Close2">
+				<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,60.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{0.000000,10.000000}}"/>
+				<Property Name="PushedImage" Value="set:ERenGu_Yure_01 image:Close_Pushed"/>
+				<Property Name="NormalImage" Value="set:ERenGu_Yure_01 image:Close_Normal"/>
+				<Property Name="HoverImage" Value="set:ERenGu_Yure_01 image:Close_Hover"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+				<Event Name="Clicked" Function="ERenGu_Yure_CloseFunc();"/>
+			</Window>
+			<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_LargeBK">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Property Name="Image" Value="set:ERenGu_Yure_01 image:ER_Yure_BK"/>
+			</Window>
+			<Window Type="TLBB_SimpleText" Name="ERenGu_Yure_Client2_Info">
+				<Property Name="UnifiedSize" Value="{{1.000000,-192.000000},{0.000000,42.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,93.000000},{0.000000,22.000000}}"/>
+				<Property Name="Text" Value="#{ERYR_240701_36}"/>
+				<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+			</Window>
+			<Window Type="TLBB_ButtonNULL" Name="ERenGu_Yure_Help">
+				<Property Name="UnifiedSize" Value="{{0.000000,24.000000},{0.000000,24.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,762.000000},{0.000000,38.000000}}"/>
+				<Property Name="PushedImage" Value="set:ERenGu_Yure_01 image:Help_Pushed"/>
+				<Property Name="NormalImage" Value="set:ERenGu_Yure_01 image:Help_Normal"/>
+				<Property Name="HoverImage" Value="set:ERenGu_Yure_01 image:Help_Hover"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+				<Event Name="Clicked" Function="ERenGu_Yure_ClickHelp();"/>
+			</Window>
+			<Window Type="DefaultWindow" Name="ERenGu_Yure_Client2_ClueFrame">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,477.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,52.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Property Name="MouseRButtonHollow" Value="True"/>
+				<Property Name="MouseLButtonHollow" Value="True"/>
+				<Property Name="MouseHollow" Value="True"/>
+				<Window Type="DefaultWindow" Name="ERenGu_Yure_Client2_FenYeFrame">
+					<Property Name="UnifiedSize" Value="{{0.000000,97.000000},{0.000000,116.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,11.000000},{0.000000,298.000000}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Window Type="TLBB_ButtonCheckNULL" Name="ERenGu_Yure_Client2_Clue_FenYe1">
+						<Property Name="UnifiedSize" Value="{{0.000000,97.000000},{0.000000,38.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="PushedImage" Value="set:ERenGu_Yure_01 image:DayOne_Hover"/>
+						<Property Name="NormalImage" Value="set:ERenGu_Yure_01 image:DayOne_Normal"/>
+						<Property Name="HoverImage" Value="set:ERenGu_Yure_01 image:DayOne_Hover"/>
+						<Property Name="DisabledImage" Value="set:ERenGu_Yure_01 image:DayOne_Normal"/>
+						<Property Name="CheckMode" Value="1"/>
+						<Event Name="MouseLButtonDown" Function="ERenGu_Yure_Client2_PageClick(0);"/>
+					</Window>
+					<Window Type="TLBB_ButtonNULL" Name="ERenGu_Yure_Client2_Clue_FenYe2Tips">
+						<Property Name="UnifiedSize" Value="{{0.000000,97.000000},{0.000000,38.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,39.000000}}"/>
+						<Property Name="PushedImage" Value="set: image:"/>
+						<Property Name="NormalImage" Value="set: image:"/>
+						<Property Name="HoverImage" Value="set: image:"/>
+						<Property Name="AlwaysOnTop" Value="True"/>
+						<Property Name="Tooltip" Value="#{ERYR_240701_343}"/>
+						<Event Name="MouseLButtonDown" Function="ERenGu_Yure_Client2_Clue_FenYeTipsClick(1);"/>
+					</Window>
+					<Window Type="TLBB_ButtonCheckNULL" Name="ERenGu_Yure_Client2_Clue_FenYe2">
+						<Property Name="UnifiedSize" Value="{{0.000000,97.000000},{0.000000,38.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,39.000000}}"/>
+						<Property Name="PushedImage" Value="set:ERenGu_Yure_01 image:DayTwo_Hover"/>
+						<Property Name="NormalImage" Value="set:ERenGu_Yure_01 image:DayTwo_Normal"/>
+						<Property Name="HoverImage" Value="set:ERenGu_Yure_01 image:DayTwo_Hover"/>
+						<Property Name="DisabledImage" Value="set:ERenGu_Yure_01 image:DayTwo_Normal"/>
+						<Property Name="CheckMode" Value="1"/>
+						<Event Name="MouseLButtonDown" Function="ERenGu_Yure_Client2_PageClick(1);"/>
+					</Window>
+					<Window Type="TLBB_ButtonNULL" Name="ERenGu_Yure_Client2_Clue_FenYe3Tips">
+						<Property Name="UnifiedSize" Value="{{0.000000,97.000000},{0.000000,38.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,78.000000}}"/>
+						<Property Name="PushedImage" Value="set: image:"/>
+						<Property Name="NormalImage" Value="set: image:"/>
+						<Property Name="HoverImage" Value="set: image:"/>
+						<Property Name="AlwaysOnTop" Value="True"/>
+						<Property Name="Tooltip" Value="#{ERYR_240701_344}"/>
+						<Event Name="MouseLButtonDown" Function="ERenGu_Yure_Client2_Clue_FenYeTipsClick(2);"/>
+					</Window>
+					<Window Type="TLBB_ButtonCheckNULL" Name="ERenGu_Yure_Client2_Clue_FenYe3">
+						<Property Name="UnifiedSize" Value="{{0.000000,97.000000},{0.000000,38.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,78.000000}}"/>
+						<Property Name="PushedImage" Value="set:ERenGu_Yure_01 image:DayThree_Hover"/>
+						<Property Name="NormalImage" Value="set:ERenGu_Yure_01 image:DayThree_Normal"/>
+						<Property Name="HoverImage" Value="set:ERenGu_Yure_01 image:DayThree_Hover"/>
+						<Property Name="DisabledImage" Value="set:ERenGu_Yure_01 image:DayThree_Normal"/>
+						<Property Name="CheckMode" Value="1"/>
+						<Event Name="MouseLButtonDown" Function="ERenGu_Yure_Client2_PageClick(2);"/>
+					</Window>
+				</Window>
+				<Window Type="DefaultWindow" Name="ERenGu_Yure_Client2_CluePage">
+					<Property Name="UnifiedSize" Value="{{0.000000,829.000000},{0.000000,477.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,0.000000}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<!-- <Property Name="Image" Value="set:ERenGu_Yure_01 image:ClueBK"/> -->
+					<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_CluePage_ClueCollect">
+						<Property Name="UnifiedSize" Value="{{0.000000,235.000000},{0.000000,477.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:ERenGu_Yure_01 image:ClueBK"/>
+						<Window Type="TLBB_Animate" Name="ERenGu_Yure_Client2_CluePage_ClueBtn1_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,178.000000},{0.000000,45.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-88.000000},{0.000000,80.000000}}"/>
+							<Property Name="RiseOnClick" Value="False"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="Animate" Value="ERenGu_Yure_Select"/>
+						</Window>
+						<Window Type="TLBB_ButtonCheckNULL" Name="ERenGu_Yure_Client2_CluePage_ClueBtn1">
+							<Property Name="UnifiedSize" Value="{{0.000000,171.000000},{0.000000,40.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-85.000000},{0.000000,83.000000}}"/>
+							<Property Name="Text" Value="#{ERYR_240701_41}"/>
+							<Property Name="PushedImage" Value="set:ERenGu_Yure_01 image:Clue_Hover"/>
+							<Property Name="NormalImage" Value="set:ERenGu_Yure_01 image:Clue_Normal"/>
+							<Property Name="HoverImage" Value="set:ERenGu_Yure_01 image:Clue_Hover"/>
+							<Property Name="DisabledImage" Value="set:ERenGu_Yure_01 image:Clue_Disabled"/>
+							<Property Name="CheckMode" Value="1"/>
+							<Event Name="Clicked" Function="ERenGu_Yure_Client2_CluePage_ClueCheck_Clicked(1);"/>
+						</Window>
+						<Window Type="TLBB_Animate" Name="ERenGu_Yure_Client2_CluePage_ClueBtn2_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,178.000000},{0.000000,45.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-88.000000},{0.000000,134.000000}}"/>
+							<Property Name="RiseOnClick" Value="False"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="Animate" Value="ERenGu_Yure_Select"/>
+						</Window>
+						<Window Type="TLBB_ButtonCheckNULL" Name="ERenGu_Yure_Client2_CluePage_ClueBtn2">
+							<Property Name="UnifiedSize" Value="{{0.000000,171.000000},{0.000000,40.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-85.000000},{0.000000,137.000000}}"/>
+							<Property Name="Text" Value="#{ERYR_240701_42}"/>
+							<Property Name="PushedImage" Value="set:ERenGu_Yure_01 image:Clue_Hover"/>
+							<Property Name="NormalImage" Value="set:ERenGu_Yure_01 image:Clue_Normal"/>
+							<Property Name="HoverImage" Value="set:ERenGu_Yure_01 image:Clue_Hover"/>
+							<Property Name="DisabledImage" Value="set:ERenGu_Yure_01 image:Clue_Disabled"/>
+							<Property Name="CheckMode" Value="1"/>
+							<Event Name="Clicked" Function="ERenGu_Yure_Client2_CluePage_ClueCheck_Clicked(2);"/>
+						</Window>
+						<Window Type="TLBB_Animate" Name="ERenGu_Yure_Client2_CluePage_ClueBtn3_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,178.000000},{0.000000,45.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-88.000000},{0.000000,186.000000}}"/>
+							<Property Name="RiseOnClick" Value="False"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="Animate" Value="ERenGu_Yure_Select"/>
+						</Window>
+						<Window Type="TLBB_ButtonCheckNULL" Name="ERenGu_Yure_Client2_CluePage_ClueBtn3">
+							<Property Name="UnifiedSize" Value="{{0.000000,171.000000},{0.000000,40.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-85.000000},{0.000000,189.000000}}"/>
+							<Property Name="Text" Value="#{ERYR_240701_43}"/>
+							<Property Name="PushedImage" Value="set:ERenGu_Yure_01 image:Clue_Hover"/>
+							<Property Name="NormalImage" Value="set:ERenGu_Yure_01 image:Clue_Normal"/>
+							<Property Name="HoverImage" Value="set:ERenGu_Yure_01 image:Clue_Hover"/>
+							<Property Name="DisabledImage" Value="set:ERenGu_Yure_01 image:Clue_Disabled"/>
+							<Property Name="CheckMode" Value="1"/>
+							<Event Name="Clicked" Function="ERenGu_Yure_Client2_CluePage_ClueCheck_Clicked(3);"/>
+						</Window>
+						<Window Type="TLBB_Animate" Name="ERenGu_Yure_Client2_CluePage_ClueBtn4_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,178.000000},{0.000000,45.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-88.000000},{0.000000,238.000000}}"/>
+							<Property Name="RiseOnClick" Value="False"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="Animate" Value="ERenGu_Yure_Select"/>
+						</Window>
+						<Window Type="TLBB_ButtonCheckNULL" Name="ERenGu_Yure_Client2_CluePage_ClueBtn4">
+							<Property Name="UnifiedSize" Value="{{0.000000,171.000000},{0.000000,40.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-85.000000},{0.000000,242.000000}}"/>
+							<Property Name="Text" Value="#{ERYR_240701_44}"/>
+							<Property Name="PushedImage" Value="set:ERenGu_Yure_01 image:Clue_Hover"/>
+							<Property Name="NormalImage" Value="set:ERenGu_Yure_01 image:Clue_Normal"/>
+							<Property Name="HoverImage" Value="set:ERenGu_Yure_01 image:Clue_Hover"/>
+							<Property Name="DisabledImage" Value="set:ERenGu_Yure_01 image:Clue_Disabled"/>
+							<Property Name="CheckMode" Value="1"/>
+							<Event Name="Clicked" Function="ERenGu_Yure_Client2_CluePage_ClueCheck_Clicked(4);"/>
+						</Window>
+						<Window Type="TLBB_Animate" Name="ERenGu_Yure_Client2_CluePage_ClueBtn5_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,178.000000},{0.000000,45.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-88.000000},{0.000000,292.000000}}"/>
+							<Property Name="RiseOnClick" Value="False"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="Animate" Value="ERenGu_Yure_Select"/>
+						</Window>
+						<Window Type="TLBB_ButtonCheckNULL" Name="ERenGu_Yure_Client2_CluePage_ClueBtn5">
+							<Property Name="UnifiedSize" Value="{{0.000000,171.000000},{0.000000,40.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-85.000000},{0.000000,295.000000}}"/>
+							<Property Name="Text" Value="#{ERYR_240701_45}"/>
+							<Property Name="PushedImage" Value="set:ERenGu_Yure_01 image:Clue_Hover"/>
+							<Property Name="NormalImage" Value="set:ERenGu_Yure_01 image:Clue_Normal"/>
+							<Property Name="HoverImage" Value="set:ERenGu_Yure_01 image:Clue_Hover"/>
+							<Property Name="DisabledImage" Value="set:ERenGu_Yure_01 image:Clue_Disabled"/>
+							<Property Name="CheckMode" Value="1"/>
+							<Event Name="Clicked" Function="ERenGu_Yure_Client2_CluePage_ClueCheck_Clicked(5);"/>
+						</Window>
+						<Window Type="TLBB_Animate" Name="ERenGu_Yure_Client2_CluePage_ClueBtn6_Animate">
+							<Property Name="UnifiedSize" Value="{{0.000000,178.000000},{0.000000,45.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-88.000000},{0.000000,344.000000}}"/>
+							<Property Name="RiseOnClick" Value="False"/>
+							<Property Name="MouseRButtonHollow" Value="True"/>
+							<Property Name="MouseMoveHollow" Value="True"/>
+							<Property Name="MouseLButtonHollow" Value="True"/>
+							<Property Name="MouseHollow" Value="True"/>
+							<Property Name="Animate" Value="ERenGu_Yure_Select"/>
+						</Window>
+						<Window Type="TLBB_ButtonCheckNULL" Name="ERenGu_Yure_Client2_CluePage_ClueBtn6">
+							<Property Name="UnifiedSize" Value="{{0.000000,171.000000},{0.000000,40.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-85.000000},{0.000000,348.000000}}"/>
+							<Property Name="Text" Value="#{ERYR_240701_46}"/>
+							<Property Name="PushedImage" Value="set:ERenGu_Yure_01 image:Clue_Hover"/>
+							<Property Name="NormalImage" Value="set:ERenGu_Yure_01 image:Clue_Normal"/>
+							<Property Name="HoverImage" Value="set:ERenGu_Yure_01 image:Clue_Hover"/>
+							<Property Name="DisabledImage" Value="set:ERenGu_Yure_01 image:Clue_Disabled"/>
+							<Property Name="CheckMode" Value="1"/>
+							<Event Name="Clicked" Function="ERenGu_Yure_Client2_CluePage_ClueCheck_Clicked(6);"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="ERenGu_Yure_Client2_RluesInfo">
+							<Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,24.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,420.000000}}"/>
+							<Property Name="Text" Value="#{ERYR_240701_40}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						</Window>
+					</Window>
+					<Window Type="DefaultWindow" Name="ERenGu_Yure_Client2_CluePage_ClueSelect">
+						<Property Name="UnifiedSize" Value="{{0.000000,171.000000},{0.000000,335.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,234.000000},{0.000000,58.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="AlwaysOnTop" Value="True"/>
+						<Window Type="DefaultWindow" Name="ERenGu_Yure_Client2_CluePage_SelectBK1">
+							<Property Name="UnifiedSize" Value="{{0.000000,171.000000},{0.000000,40.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,2.000000}}"/>
+							<Window Type="TLBB_SimpleText" Name="ERenGu_Yure_Client2_CluePage_SelectInfo1">
+								<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+								<Property Name="Text" Value="#{ERYR_240701_41}"/>
+								<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+								<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_CluePage_SelectInfo1Image">
+									<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+									<Property Name="RiseOnClick" Value="False"/>
+									<Property Name="Image" Value="set:ERenGu_Yure_01 image:Clue_Normal"/>
+								</Window>
+							</Window>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="ERenGu_Yure_Client2_CluePage_SelectBK2">
+							<Property Name="UnifiedSize" Value="{{0.000000,171.000000},{0.000000,40.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,43.000000}}"/>
+							<!-- <Property Name="Image" Value="set: image:"/> -->
+							<Window Type="TLBB_SimpleText" Name="ERenGu_Yure_Client2_CluePage_SelectInfo2">
+								<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+								<Property Name="Text" Value="#{ERYR_240701_42}"/>
+								<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+								<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_CluePage_SelectInfo2Image">
+									<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+									<Property Name="RiseOnClick" Value="False"/>
+									<Property Name="Image" Value="set:ERenGu_Yure_01 image:Clue_Normal"/>
+								</Window>
+							</Window>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="ERenGu_Yure_Client2_CluePage_SelectBK3">
+							<Property Name="UnifiedSize" Value="{{0.000000,171.000000},{0.000000,40.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,118.000000}}"/>
+							<!-- <Property Name="Image" Value="set: image:"/> -->
+							<Window Type="TLBB_SimpleText" Name="ERenGu_Yure_Client2_CluePage_SelectInfo3">
+								<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+								<Property Name="Text" Value="#{ERYR_240701_43}"/>
+								<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+								<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_CluePage_SelectInfo3Image">
+									<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+									<Property Name="RiseOnClick" Value="False"/>
+									<Property Name="Image" Value="set:ERenGu_Yure_01 image:Clue_Normal"/>
+								</Window>
+							</Window>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="ERenGu_Yure_Client2_CluePage_SelectBK4">
+							<Property Name="UnifiedSize" Value="{{0.000000,171.000000},{0.000000,40.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,170.000000}}"/>
+							<!-- <Property Name="Image" Value="set: image:MenPaiFirstOne_BattleTable_NameBK"/> -->
+							<Window Type="TLBB_SimpleText" Name="ERenGu_Yure_Client2_CluePage_SelectInfo4">
+								<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+								<Property Name="Text" Value="#{ERYR_240701_44}"/>
+								<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+								<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_CluePage_SelectInfo4Image">
+									<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+									<Property Name="RiseOnClick" Value="False"/>
+									<Property Name="Image" Value="set:ERenGu_Yure_01 image:Clue_Normal"/>
+								</Window>
+							</Window>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="ERenGu_Yure_Client2_CluePage_SelectBK5">
+							<Property Name="UnifiedSize" Value="{{0.000000,171.000000},{0.000000,40.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,255.000000}}"/>
+							<!-- <Property Name="Image" Value="set: image:"/> -->
+							<Window Type="TLBB_SimpleText" Name="ERenGu_Yure_Client2_CluePage_SelectInfo5">
+								<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+								<Property Name="Text" Value="#{ERYR_240701_45}"/>
+								<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+								<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_CluePage_SelectInfo5Image">
+									<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+									<Property Name="RiseOnClick" Value="False"/>
+									<Property Name="Image" Value="set:ERenGu_Yure_01 image:Clue_Normal"/>
+								</Window>
+							</Window>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="ERenGu_Yure_Client2_CluePage_SelectBK6">
+							<Property Name="UnifiedSize" Value="{{0.000000,171.000000},{0.000000,40.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,296.000000}}"/>
+							<!-- <Property Name="Image" Value="set: image:"/> -->
+							<Window Type="TLBB_SimpleText" Name="ERenGu_Yure_Client2_CluePage_SelectInfo6">
+								<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+								<Property Name="Text" Value="#{ERYR_240701_46}"/>
+								<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+								<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_CluePage_SelectInfo6Image">
+									<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
+									<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+									<Property Name="RiseOnClick" Value="False"/>
+									<Property Name="Image" Value="set:ERenGu_Yure_01 image:Clue_Normal"/>
+								</Window>
+							</Window>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_CluePage_AnswerFrame">
+						<Property Name="UnifiedSize" Value="{{0.000000,535.000000},{0.000000,417.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,237.000000},{0.000000,48.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:ERenGu_Yure_01 image:MindMap_BK"/>
+						<Window Type="DefaultWindow" Name="ERenGu_Yure_Client2_Clue_LockText1">
+							<Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,287.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.500000,-63.500000},{0.500000,-168.500000}}"/>
+							<Property Name="RiseOnClick" Value="False"/>
+							<!-- <Property Name="HorzFormatting" Value="WordWrapCentred"/> -->
+							<Window Type="TLBB_SimpleText" Name="ERenGu_Yure_Client2_Clue_LockText_Line1">
+								<Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.500000,-80.000000},{0.000000,0.000000}}"/>
+								<Property Name="Text" Value="#{ERYR_240701_38}"/>
+								<Property Name="RiseOnClick" Value="False"/>
+								<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							</Window>
+							<Window Type="TLBB_SimpleText" Name="ERenGu_Yure_Client2_Clue_LockText_Line2">
+								<Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.500000,-80.500000},{0.000000,132.500000}}"/>
+								<Property Name="Text" Value="#{ERYR_240701_38}"/>
+								<Property Name="RiseOnClick" Value="False"/>
+								<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							</Window>
+							<Window Type="TLBB_SimpleText" Name="ERenGu_Yure_Client2_Clue_LockText_Line3">
+								<Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.500000,-79.500000},{0.000000,254.500000}}"/>
+								<Property Name="Text" Value="#{ERYR_240701_38}"/>
+								<Property Name="RiseOnClick" Value="False"/>
+								<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							</Window>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_Clue_AnswerText1Image">
+							<Property Name="UnifiedSize" Value="{{0.000000,191.000000},{0.000000,55.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,27.000000}}"/>
+							<Property Name="RiseOnClick" Value="False"/>
+							<Property Name="Image" Value="set:ERenGu_Yure_01 image:ConclusionBK"/>
+							<Window Type="TLBB_SimpleText" Name="ERenGu_Yure_Client2_Clue_AnswerText1">
+								<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,55.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+								<Property Name="Text" Value="#{ERYR_240701_69}"/>
+								<Property Name="RiseOnClick" Value="False"/>
+								<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							</Window>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_Clue_AnswerText2Image">
+							<Property Name="UnifiedSize" Value="{{0.000000,191.000000},{0.000000,55.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,191.000000},{0.000000,155.000000}}"/>
+							<Property Name="RiseOnClick" Value="False"/>
+							<Property Name="Image" Value="set:ERenGu_Yure_01 image:ConclusionBK"/>
+							<Window Type="TLBB_SimpleText" Name="ERenGu_Yure_Client2_Clue_AnswerText2">
+								<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,55.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+								<Property Name="Text" Value="#{ERYR_240701_70}"/>
+								<Property Name="RiseOnClick" Value="False"/>
+								<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							</Window>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_Clue_AnswerText3Image">
+							<Property Name="UnifiedSize" Value="{{0.000000,191.000000},{0.000000,55.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,191.000000},{0.000000,278.000000}}"/>
+							<Property Name="RiseOnClick" Value="False"/>
+							<Property Name="Image" Value="set:ERenGu_Yure_01 image:ConclusionBK"/>
+							<Window Type="TLBB_SimpleText" Name="ERenGu_Yure_Client2_Clue_AnswerText3">
+								<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,55.000000}}"/>
+								<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+								<Property Name="Text" Value="#{ERYR_240701_71}"/>
+								<Property Name="RiseOnClick" Value="False"/>
+								<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							</Window>
+						</Window>
+						<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_Clue_Answer_Finished">
+							<Property Name="UnifiedSize" Value="{{0.000000,98.000000},{0.000000,94.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,433.000000},{0.000000,204.000000}}"/>
+							<Property Name="RiseOnClick" Value="False"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+							<Property Name="Image" Value="set:ERenGu_Yure_02 image:DayFinished"/>
+						</Window>
+						<Window Type="TLBB_ButtonNULL" Name="ERenGu_Yure_Client2_Clue_Answer_GotoBtn">
+							<Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,26.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{1.000000,-107.000000},{1.000000,-172.000000}}"/>
+							<Property Name="PushedImage" Value="set:ERenGu_Yure_01 image:GotoWRY_Pushed"/>
+							<Property Name="NormalImage" Value="set:ERenGu_Yure_01 image:GotoWRY_Normal"/>
+							<Property Name="HoverImage" Value="set:ERenGu_Yure_01 image:GotoWRY_Hover"/>
+							<Property Name="DisabledImage" Value="set:ERenGu_Yure_01 image:GotoWRY_Disabled"/>
+							<Event Name="Clicked" Function="ERenGu_Yure_Client1_Goto_Clicked();"/>
+						</Window>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="ERenGu_Yure_Client2_CluePage_CloseCaseFrame">
+				<Property Name="UnifiedSize" Value="{{1.000000,-146.000000},{0.000000,423.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,111.000000},{0.000000,70.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Window Type="DefaultWindow" Name="ERenGu_Yure_Client2_CluePage_CloseCaseTextFrame">
+					<Property Name="UnifiedSize" Value="{{1.000000,-146.000000},{0.000000,350.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,12.000000}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_CluePage_CloseCase_TitleImage">
+						<Property Name="UnifiedSize" Value="{{0.000000,149.000000},{0.000000,17.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,292.000000},{0.000000,35.000000}}"/>
+						<Property Name="Image" Value="set:ERenGu_Yure_01 image:Title_Answer"/>
+						<Property Name="RiseOnClick" Value="False"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_CluePage_CloseCase_TitleImage_Day1">
+						<Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,25.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{0.000000,76.000000}}"/>
+						<Property Name="Image" Value="set:ERenGu_Yure_01 image:Title_Day1"/>
+						<Property Name="RiseOnClick" Value="False"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_CluePage_CloseCase_TitleImage_Day2">
+						<Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,25.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{0.000000,160.000000}}"/>
+						<Property Name="Image" Value="set:ERenGu_Yure_01 image:Title_Day2"/>
+						<Property Name="RiseOnClick" Value="False"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_CluePage_CloseCase_TitleImage_Day3">
+						<Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,25.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,85.000000},{0.000000,254.000000}}"/>
+						<Property Name="Image" Value="set:ERenGu_Yure_01 image:Title_Day3"/>
+						<Property Name="RiseOnClick" Value="False"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_CluePage_CloseCase_EvidenceText1">
+						<Property Name="UnifiedSize" Value="{{0.000000,556.000000},{0.000000,21.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,104.000000}}"/>
+						<Property Name="Image" Value="set:ERenGu_Yure_02 image:Clue1Old"/>
+						<Property Name="RiseOnClick" Value="False"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_CluePage_CloseCase_EvidenceText2">
+						<Property Name="UnifiedSize" Value="{{0.000000,556.000000},{0.000000,21.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,196.000000}}"/>
+						<Property Name="Image" Value="set:ERenGu_Yure_02 image:Clue2Old"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_CluePage_CloseCase_EvidenceText3">
+						<Property Name="UnifiedSize" Value="{{0.000000,556.000000},{0.000000,21.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,114.000000},{0.000000,288.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:ERenGu_Yure_02 image:Clue3Old"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_CluePage_CloseCase_NewEvidence1">
+						<Property Name="UnifiedSize" Value="{{0.000000,409.000000},{0.000000,40.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,175.000000},{0.000000,104.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:ERenGu_Yure_02 image:Clue1New"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_CluePage_CloseCase_NewEvidence2">
+						<Property Name="UnifiedSize" Value="{{0.000000,409.000000},{0.000000,40.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,178.000000},{0.000000,191.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:ERenGu_Yure_02 image:Clue2New"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_CluePage_CloseCase_NewEvidence3">
+						<Property Name="UnifiedSize" Value="{{0.000000,409.000000},{0.000000,40.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,288.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:ERenGu_Yure_02 image:Clue3New"/>
+					</Window>
+				</Window>
+				<Window Type="DefaultWindow" Name="ERenGu_Yure_Client2_CluePage_CloseCaseImageFrame">
+					<Property Name="UnifiedSize" Value="{{0.000000,179.000000},{0.000000,218.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,594.000000},{0.000000,95.000000}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_CluePage_CloseCase_SuspectImage1">
+						<Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,138.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{1.000000,-104.000000},{1.000000,-138.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="MouseRButtonHollow" Value="True"/>
+						<Property Name="MouseMoveHollow" Value="True"/>
+						<Property Name="MouseLButtonHollow" Value="True"/>
+						<Property Name="MouseHollow" Value="True"/>
+						<Property Name="Image" Value="set:ERenGu_Yure_02 image:Image_XKSHR"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_CluePage_CloseCase_SuspectImage2">
+						<Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,138.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="MouseRButtonHollow" Value="True"/>
+						<Property Name="MouseMoveHollow" Value="True"/>
+						<Property Name="MouseLButtonHollow" Value="True"/>
+						<Property Name="MouseHollow" Value="True"/>
+						<Property Name="Image" Value="set:ERenGu_Yure_02 image:Image_ERGJC"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_CluePage_CloseCase_Cutline">
+						<Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,180.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,10.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="MouseRButtonHollow" Value="True"/>
+						<Property Name="MouseMoveHollow" Value="True"/>
+						<Property Name="MouseLButtonHollow" Value="True"/>
+						<Property Name="MouseHollow" Value="True"/>
+						<Property Name="Image" Value="set:ERenGu_Yure_01 image:CutLine"/>
+					</Window>
+				</Window>
+				<Window Type="TLBB_ButtonNULL" Name="ERenGu_Yure_Client2_CluePage_CloseCase_GotoBtn1">
+					<Property Name="UnifiedSize" Value="{{0.000000,135.000000},{0.000000,26.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.500000,-67.500000},{1.000000,-55.000000}}"/>
+					<Property Name="PushedImage" Value="set:ERenGu_Yure_01 image:Answer1Btn_Pushed"/>
+					<Property Name="NormalImage" Value="set:ERenGu_Yure_01 image:Answer1Btn_Normal"/>
+					<Property Name="HoverImage" Value="set:ERenGu_Yure_01 image:Answer1Btn_Hover"/>
+					<Event Name="Clicked" Function="ERenGu_Yure_Client2_CluePage_Goto_Clicked();"/>
+				</Window>
+				<Window Type="TLBB_ButtonNULL" Name="ERenGu_Yure_Client2_CluePage_CloseCase_GotoBtn2">
+					<Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,26.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.500000,-51.500000},{1.000000,-55.000000}}"/>
+					<Property Name="PushedImage" Value="set:ERenGu_Yure_01 image:Answer2Btn_Pushed"/>
+					<Property Name="NormalImage" Value="set:ERenGu_Yure_01 image:Answer2Btn_Normal"/>
+					<Property Name="HoverImage" Value="set:ERenGu_Yure_01 image:Answer2Btn_Hover"/>
+					<Event Name="Clicked" Function="ERenGu_Yure_Client2_CluePage_Goto_Clicked();"/>
+				</Window>
+				<Window Type="TLBB_Animate" Name="ERenGu_Yure_Client2_CluePage_CloseCase_SuspectAnimate">
+					<Property Name="UnifiedSize" Value="{{0.000000,453.000000},{0.000000,281.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,170.000000},{0.000000,70.000000}}"/>
+					<Property Name="MouseRButtonHollow" Value="True"/>
+					<Property Name="MouseMoveHollow" Value="True"/>
+					<Property Name="MouseLButtonHollow" Value="True"/>
+					<Property Name="MouseHollow" Value="True"/>
+					<Property Name="Animate" Value="ERenGu_Yure_Chace"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+				</Window>
+			</Window>
+			<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_SuspectImage1">
+				<Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,138.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,778.000000},{0.000000,198.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Property Name="MouseRButtonHollow" Value="True"/>
+				<Property Name="MouseMoveHollow" Value="True"/>
+				<Property Name="MouseLButtonHollow" Value="True"/>
+				<Property Name="MouseHollow" Value="True"/>
+				<Property Name="Image" Value="set:ERenGu_Yure_02 image:Image_XKSHR"/>
+			</Window>
+			<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client2_SuspectImage2">
+				<Property Name="UnifiedSize" Value="{{0.000000,104.000000},{0.000000,138.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,753.000000},{0.000000,186.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Property Name="MouseRButtonHollow" Value="True"/>
+				<Property Name="MouseMoveHollow" Value="True"/>
+				<Property Name="MouseLButtonHollow" Value="True"/>
+				<Property Name="MouseHollow" Value="True"/>
+				<Property Name="Image" Value="set:ERenGu_Yure_02 image:Image_ERGJC"/>
+			</Window>
+		</Window>
+		<Window Type="DefaultWindow" Name="ERenGu_Yure_Client3">
+			<Property Name="UnifiedSize" Value="{{0.000000,471.000000},{0.000000,160.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.500000,-235.000000},{0.500000,-80.000000}}"/>
+			<Property Name="RiseOnClick" Value="False"/>
+			<Window Type="TLBB_ButtonNULL" Name="ERenGu_Yure_Close3">
+				<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,60.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{1.000000,-68.000000},{0.000000,20.000000}}"/>
+				<Property Name="PushedImage" Value="set:ERenGu_Yure_01 image:Close_Pushed"/>
+				<Property Name="NormalImage" Value="set:ERenGu_Yure_01 image:Close_Normal"/>
+				<Property Name="HoverImage" Value="set:ERenGu_Yure_01 image:Close_Hover"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+				<Event Name="Clicked" Function="ERenGu_Yure_CloseFunc();"/>
+			</Window>
+			<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client3_LargeBK">
+				<Property Name="UnifiedSize" Value="{{0.000000,471.000000},{0.000000,134.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.500000,-235.000000},{0.000000,0.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Property Name="Image" Value="set:ERenGu_Yure_02 image:Chase_BK"/>
+			</Window>
+			<Window Type="TLBB_ButtonNULL" Name="ERenGu_Yure_Client3_GotoBtn">
+				<Property Name="UnifiedSize" Value="{{0.000000,102.000000},{0.000000,26.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.500000,-51.000000},{1.000000,-30.000000}}"/>
+				<Property Name="PushedImage" Value="set:ERenGu_Yure_01 image:Chase_Pushed"/>
+				<Property Name="NormalImage" Value="set:ERenGu_Yure_01 image:Chase_Normal"/>
+				<Property Name="HoverImage" Value="set:ERenGu_Yure_01 image:Chase_Hover"/>
+				<Event Name="Clicked" Function="ERenGu_Yure_Client3_Goto_Clicked();"/>
+			</Window>
+			<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client3_Finished1">
+				<Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,72.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,294.000000},{0.000000,59.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+				<Property Name="Image" Value="set:ERenGu_Yure_01 image:Brick_Finished"/>
+			</Window>
+			<Window Type="TLBB_StaticImageNULL" Name="ERenGu_Yure_Client3_Finished2">
+				<Property Name="UnifiedSize" Value="{{0.000000,76.000000},{0.000000,72.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,294.000000},{0.000000,59.000000}}"/>
+				<Property Name="RiseOnClick" Value="False"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+				<Property Name="Image" Value="set:ERenGu_Yure_02 image:Brick_Finished2"/>
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

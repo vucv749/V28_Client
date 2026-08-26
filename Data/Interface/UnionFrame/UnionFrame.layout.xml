@@ -1,0 +1,1655 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame2" Name="Union_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,608.000000},{0.000000,390.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-303.000000},{0.150000,0.000000}}"/>
+    <Window Type="TLBB_DragTitle" Name="Union_DragTitle">
+      <Property Name="AbsolutePosition" Value="x:40.000000 y:4.000000" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+      <Property Name="DragTarget" Value="Union_Frame" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="Text" Value="#{TDGZ_XML_02}" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="Union_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*UnionFrame&quot;);' />
+    </Window>
+    <Window Type="TLBB_ButtonClose" Name="Union_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,5.000000}}"/>
+      <Event Name="Clicked" Function="UnionFrame_CloseWindow();" />
+    </Window>
+    <Window Type="DefaultWindow" Name="Union_Function_Frame">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,30.000000}}"/>
+      <Window Type="DefaultWindow" Name="Union_Player1">
+        <Property Name="AbsolutePosition" Value="x:396.000000 y:167.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,197.000000},{0.000000,183.000000}" />
+        <Property Name="RiseOnClick" Value="True" />
+        <Window Type="TLBB_MeshWindow" Name="UnionFrame_FakeObject1">
+          <Property Name="Position" Value="x:0.1 y:0.05" />
+          <Property Name="Size" Value="w:0.8 h:0.9" />
+          <Property Name="ShowControl" Value="Union_Frame" />
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace3" Name="Union_Model">
+        <Property Name="AbsolutePosition" Value="x:396.000000 y:164.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,197.000000},{0.000000,189.000000}" />
+        <Window Type="TLBB_StaticImageNULL" Name="Union_Captain_Icon">
+          <Property Name="Visible" Value="False"/>
+          <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,9.000000}" />
+          <Property Name="AbsoluteSize" Value="w:31.000000 h:29.000000" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_L" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Union_Die_Icon">
+          <Property Name="UnifiedPosition" Value="{{1.0,-44.000000},{1.000000,-44.000000}" />
+          <Property Name="AbsoluteSize" Value="w:32.000000 h:32.000000" />
+          <Property Name="Image" Value="set:UIIcons image:Icon_Death" />
+          <Property Name="RiseOnClick" Value="False" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Union_Downline_Icon">
+          <Property Name="UnifiedPosition" Value="{{1.0,-44.000000},{1.000000,-44.000000}" />
+          <Property Name="AbsoluteSize" Value="w:32.000000 h:32.000000" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="Image" Value="set:UIIcons image:Icon_OutLine" />
+        </Window>
+        <Window Type="TLBB_StaticImageNULL" Name="Union_Model_Disable">
+          <Property Name="Position" Value="x:0.0 y:0.0" />
+          <Property Name="Size" Value="w:1.0 h:1.0" />
+          <Property Name="Visible" Value="False" />
+          <Property Name="RiseOnClick" Value="False" />
+          <Property Name="MouseHollow" Value="True" />
+          <Property Name="MouseMoveHollow" Value="True" />
+          <Property Name="Image" Value="set:Face_04 image:Remind2_Bak" />
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Union_Model_Level">
+          <Property Name="Visible" Value="False"/>
+          <Property Name="UnifiedPosition" Value="{{0.0,35.000000},{0.000000,18.000000}" />
+          <Property Name="AbsoluteSize" Value="w:35.000000 h:20.000000" />
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Union_Model_Career">
+          <Property Name="Visible" Value="False"/>
+          <Property Name="UnifiedPosition" Value="{{1.0,-54.000000},{0.000000,18.000000}" />
+          <Property Name="AbsoluteSize" Value="w:50.000000 h:20.000000" />
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Union_Model_FuWuQi">
+          <Property Name="UnifiedSize" Value="{{0.0,68.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{0.000000,149.000000}}"/>
+          <Property Name="HorzFormatting" Value="HorzCentred"/>
+          <Property Name="TextColor" Value="FFFF00FF" />
+
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Union_Model_PingFen">
+          <Property Name="Visible" Value="False"/>
+          <Property Name="UnifiedPosition" Value="{{0.0,20.000000},{0.000000,5.000000}" />
+          <Property Name="AbsoluteSize" Value="w:140.000000 h:20.000000" />
+          <Property Name="HorzFormatting" Value="LeftAligned"/>
+          <Property Name="Text" Value="#{BHXX_160531_3}"/>
+        </Window>
+        <Window Type="TLBB_SimpleText" Name="Union_Model_Banghui">
+          <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,7.000000}}"/>
+          <Property Name="HorzFormatting" Value="LeftAligned"/>
+          <Property Name="Text" Value="#{BHXX_160531_1}"/>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Union_Team1_0">
+        <Property Name="UnifiedSize" Value="{{0.000000,197.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="NormalImage" Value="set:Union1 image:Union_Team1_Normal" />
+        <Property Name="HoverImage" Value="set:Union1 image:Union_Team1_Hover" />
+        <Property Name="PushedImage" Value="set:Union2 image:Union_Team1_Pushed" />
+        <Property Name="Tooltip" Value="#{TDGZ_100809_27}"/>
+        <Event Name="Clicked" Function="UnionFrame_SquadButton_Clicked(1);" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Union_Team2_0">
+        <Property Name="UnifiedSize" Value="{{0.000000,197.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,198.000000},{0.000000,0.000000}}"/>
+        <Property Name="NormalImage" Value="set:Union1 image:Union_Team2_Normal" />
+        <Property Name="HoverImage" Value="set:Union1 image:Union_Team2_Hover" />
+        <Property Name="PushedImage" Value="set:Union2 image:Union_Team2_Pushed" />
+        <Property Name="Tooltip" Value="#{TDGZ_100809_27}"/>
+        <Event Name="Clicked" Function="UnionFrame_SquadButton_Clicked(2);" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Union_Team3_0">
+        <Property Name="UnifiedSize" Value="{{0.000000,197.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,396.000000},{0.000000,0.000000}}"/>
+        <Property Name="NormalImage" Value="set:Union1 image:Union_Team3_Normal" />
+        <Property Name="HoverImage" Value="set:Union1 image:Union_Team3_Hover" />
+        <Property Name="PushedImage" Value="set:Union2 image:Union_Team3_Pushed" />
+        <Property Name="Tooltip" Value="#{TDGZ_100809_27}"/>
+        <Event Name="Clicked" Function="UnionFrame_SquadButton_Clicked(3);" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Union_Team4_0">
+        <Property Name="UnifiedSize" Value="{{0.000000,197.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,164.000000}}"/>
+        <Property Name="NormalImage" Value="set:Union1 image:Union_Team4_Normal" />
+        <Property Name="HoverImage" Value="set:Union1 image:Union_Team4_Hover" />
+        <Property Name="PushedImage" Value="set:Union2 image:Union_Team4_Pushed" />
+        <Property Name="Tooltip" Value="#{TDGZ_100809_27}"/>
+        <Event Name="Clicked" Function="UnionFrame_SquadButton_Clicked(4);" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Union_Team5_0">
+        <Property Name="UnifiedSize" Value="{{0.000000,197.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,198.000000},{0.000000,164.000000}}"/>
+        <Property Name="NormalImage" Value="set:Union1 image:Union_Team5_Normal" />
+        <Property Name="HoverImage" Value="set:Union1 image:Union_Team5_Hover" />
+        <Property Name="PushedImage" Value="set:Union2 image:Union_Team5_Pushed" />
+        <Property Name="Tooltip" Value="#{TDGZ_100809_27}"/>
+        <Event Name="Clicked" Function="UnionFrame_SquadButton_Clicked(5);" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Union_Team1_0_Hover">
+        <Property Name="UnifiedSize" Value="{{0.000000,197.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="NormalImage" Value="set:Union3 image:Union_Team1_Normal_Self" />
+        <Property Name="HoverImage" Value="set:Union3 image:Union_Team1_Hover_Self" />
+        <Property Name="PushedImage" Value="set:Union4 image:Union_Team1_Pushed_Self" />
+        <Property Name="Tooltip" Value="#{TDGZ_100809_27}"/>
+        <Event Name="Clicked" Function="UnionFrame_SquadButton_Clicked(1);" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Union_Team2_0_Hover">
+        <Property Name="UnifiedSize" Value="{{0.000000,197.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,198.000000},{0.000000,0.000000}}"/>
+        <Property Name="NormalImage" Value="set:Union3 image:Union_Team2_Normal_Self" />
+        <Property Name="HoverImage" Value="set:Union3 image:Union_Team2_Hover_Self" />
+        <Property Name="PushedImage" Value="set:Union4 image:Union_Team2_Pushed_Self" />
+        <Property Name="Tooltip" Value="#{TDGZ_100809_27}"/>
+        <Event Name="Clicked" Function="UnionFrame_SquadButton_Clicked(2);" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Union_Team3_0_Hover">
+        <Property Name="UnifiedSize" Value="{{0.000000,197.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,396.000000},{0.000000,0.000000}}"/>
+        <Property Name="NormalImage" Value="set:Union3 image:Union_Team3_Normal_Self" />
+        <Property Name="HoverImage" Value="set:Union3 image:Union_Team3_Hover_Self" />
+        <Property Name="PushedImage" Value="set:Union4 image:Union_Team3_Pushed_Self" />
+        <Property Name="Tooltip" Value="#{TDGZ_100809_27}"/>
+        <Event Name="Clicked" Function="UnionFrame_SquadButton_Clicked(3);" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Union_Team4_0_Hover">
+        <Property Name="UnifiedSize" Value="{{0.000000,197.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,164.000000}}"/>
+        <Property Name="NormalImage" Value="set:Union3 image:Union_Team4_Normal_Self" />
+        <Property Name="HoverImage" Value="set:Union3 image:Union_Team4_Hover_Self" />
+        <Property Name="PushedImage" Value="set:Union4 image:Union_Team4_Pushed_Self" />
+        <Property Name="Tooltip" Value="#{TDGZ_100809_27}"/>
+        <Event Name="Clicked" Function="UnionFrame_SquadButton_Clicked(4);" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Union_Team5_0_Hover">
+        <Property Name="UnifiedSize" Value="{{0.000000,197.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,198.000000},{0.000000,164.000000}}"/>
+        <Property Name="NormalImage" Value="set:Union3 image:Union_Team5_Normal_Self" />
+        <Property Name="HoverImage" Value="set:Union3 image:Union_Team5_Hover_Self" />
+        <Property Name="PushedImage" Value="set:Union4 image:Union_Team5_Pushed_Self" />
+        <Property Name="Tooltip" Value="#{TDGZ_100809_27}"/>
+        <Event Name="Clicked" Function="UnionFrame_SquadButton_Clicked(5);" />
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="Union_Team1">
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,21.000000}}"/>
+        <Property Name="AbsoluteSize" Value="w:197.000000 h:142.000000" />
+        <Property Name="RiseOnClick" Value="True" />
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team1_1_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team1_1_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(1,1);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(1,1);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team1_1">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team1_1_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team1_1_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team1_1_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team1_1_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team1_2_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,26.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team1_2_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(1,2);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(1,2);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team1_2">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team1_2_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team1_2_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team1_2_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team1_2_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team1_3_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,49.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team1_3_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(1,3);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(1,3);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team1_3">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team1_3_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team1_3_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team1_3_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team1_3_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team1_4_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,72.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team1_4_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(1,4);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(1,4);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team1_4">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team1_4_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team1_4_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team1_4_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team1_4_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team1_5_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,95.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team1_5_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(1,5);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(1,5);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team1_5">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team1_5_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team1_5_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team1_5_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team1_5_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team1_6_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,118.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team1_6_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(1,6);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(1,6);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team1_6">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team1_6_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team1_6_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team1_6_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team1_6_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="Union_Team2">
+        <Property Name="UnifiedPosition" Value="{{0.000000,198.000000},{0.000000,21.000000}}"/>
+        <Property Name="AbsoluteSize" Value="w:197.000000 h:142.000000" />
+        <Property Name="RiseOnClick" Value="True" />
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team2_1_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team2_1_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(2,1);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(2,1);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team2_1">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team2_1_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team2_1_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team2_1_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team2_1_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team2_2_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,26.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team2_2_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(2,2);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(2,2);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team2_2">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team2_2_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team2_2_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team2_2_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team2_2_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team2_3_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,49.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team2_3_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(2,3);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(2,3);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team2_3">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team2_3_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team2_3_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team2_3_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team2_3_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team2_4_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,72.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team2_4_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(2,4);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(2,4);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team2_4">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team2_4_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team2_4_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team2_4_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team2_4_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team2_5_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,95.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team2_5_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(2,5);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(2,5);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team2_5">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team2_5_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team2_5_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team2_5_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team2_5_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team2_6_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,118.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team2_6_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(2,6);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(2,6);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team2_6">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team2_6_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team2_6_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team2_6_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team2_6_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="Union_Team3">
+        <Property Name="UnifiedPosition" Value="{{0.000000,396.000000},{0.000000,21.000000}}"/>
+        <Property Name="AbsoluteSize" Value="w:197.000000 h:142.000000" />
+        <Property Name="RiseOnClick" Value="True" />
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team3_1_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team3_1_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(3,1);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(3,1);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team3_1">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team3_1_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team3_1_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team3_1_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team3_1_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team3_2_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,26.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team3_2_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(3,2);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(3,2);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team3_2">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team3_2_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team3_2_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team3_2_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team3_2_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team3_3_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,49.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team3_3_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(3,3);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(3,3);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team3_3">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team3_3_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team3_3_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team3_3_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team3_3_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team3_4_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,72.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team3_4_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(3,4);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(3,4);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team3_4">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team3_4_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team3_4_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team3_4_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team3_4_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team3_5_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,95.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team3_5_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(3,5);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(3,5);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team3_5">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team3_5_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team3_5_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team3_5_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team3_5_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team3_6_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,118.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team3_6_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(3,6);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(3,6);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team3_6">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team3_6_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team3_6_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team3_6_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team3_6_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="Union_Team4">
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,185.000000}}"/>
+        <Property Name="AbsoluteSize" Value="w:197.000000 h:142.000000" />
+        <Property Name="RiseOnClick" Value="True" />
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team4_1_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team4_1_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(4,1);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(4,1);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team4_1">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team4_1_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team4_1_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team4_1_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team4_1_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team4_2_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,26.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team4_2_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(4,2);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(4,2);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team4_2">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team4_2_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team4_2_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team4_2_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team4_2_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team4_3_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,49.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team4_3_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(4,3);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(4,3);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team4_3">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team4_3_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team4_3_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team4_3_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team4_3_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team4_4_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,72.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team4_4_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(4,4);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(4,4);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team4_4">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team4_4_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team4_4_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team4_4_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team4_4_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team4_5_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,95.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team4_5_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(4,5);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(4,5);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team4_5">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team4_5_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team4_5_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team4_5_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team4_5_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team4_6_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,118.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team4_6_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(4,6);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(4,6);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team4_6">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team4_6_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team4_6_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team4_6_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team4_6_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_Frame_Lace1" Name="Union_Team5">
+        <Property Name="UnifiedPosition" Value="{{0.000000,198.000000},{0.000000,185.000000}}"/>
+        <Property Name="AbsoluteSize" Value="w:197.000000 h:142.000000" />
+        <Property Name="RiseOnClick" Value="True" />
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team5_1_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,3.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team5_1_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(5,1);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(5,1);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team5_1">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team5_1_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team5_1_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team5_1_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team5_1_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team5_2_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,26.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team5_2_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(5,2);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(5,2);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team5_2">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team5_2_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team5_2_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team5_2_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team5_2_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team5_3_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,49.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team5_3_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(5,3);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(5,3);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team5_3">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team5_3_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team5_3_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team5_3_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team5_3_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team5_4_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,72.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team5_4_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(5,4);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(5,4);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team5_4">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team5_4_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team5_4_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team5_4_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team5_4_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team5_5_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,95.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team5_5_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(5,5);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(5,5);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team5_5">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team5_5_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team5_5_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team5_5_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team5_5_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TLBB_UnionDragTarget" Name="Union_Team5_6_All">
+          <Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{0.000000,118.000000}}"/>
+          <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+          <Window Type="TLBB_UnionDragItem" Name="Union_Team5_6_Drag">
+            <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+            <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+            <Event Name="MouseLClick" Function="UnionFrame_Member_Clicked(5,6);" />
+            <Event Name="MouseRClick" Function="UnionFrame_ToggleMemberMenu(5,6);" />
+            <Event Name="DragStarted" Function="UnionFrame_Member_DragStarted();" />
+            <Window Type="TLBB_StaticImageNULL" Name="Union_Team5_6">
+              <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+              <Property Name="AbsoluteSize" Value="w:191.000000 h:21.000000" />
+              <Property Name="RiseOnClick" Value="False" />
+              <Property Name="MouseMoveHollow" Value="True" />
+              <Property Name="MouseHollow" Value="True" />
+              <Window Type="TLBB_StaticImageNULL" Name="Union_Team5_6_Icon">
+                <Property Name="UnifiedPosition" Value="{{0.0,11.000000},{0.000000,4.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,13.000000},{0.000000,13.000000}" />
+                <Property Name="Image" Value="set:Union1 image:Union_LeaderIcon_S" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="RiseOnClick" Value="False" />
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team5_6_name">
+                <Property Name="UnifiedPosition" Value="{{0.0,26.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,90.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team5_6_Career">
+                <Property Name="UnifiedPosition" Value="{{0.0,111.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+              <Window Type="TLBB_SimpleText" Name="Union_Team5_6_Level">
+                <Property Name="UnifiedPosition" Value="{{0.0,153.000000},{0.000000,1.000000}" />
+                <Property Name="UnifiedSize" Value="{{0.0,35.000000},{0.000000,20.000000}" />
+                <Property Name="MouseMoveHollow" Value="True" />
+                <Property Name="MouseHollow" Value="True" />
+                <Property Name="HorzFormatting" Value="HorzCentred"/>
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Union_Button_Frame0">
+        <Property Name="AbsolutePosition" Value="x:-2.000000 y:331.000000" />
+        <Property Name="AbsoluteSize" Value="w:100.000000 h:20.000000" />
+        <Property Name="Text" Value="#{TDGZ_XML_14}" />
+        <Event Name="Clicked" Function="UnionFrame_ShowAll_Click();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Union_Button_Frame1">
+        <Property Name="AbsolutePosition" Value="x:98.000000 y:331.000000" />
+        <Property Name="AbsoluteSize" Value="w:100.000000 h:20.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_923}" />
+        <Event Name="Clicked" Function="UnionFrame_ApplicationList_Click();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Union_Button_Frame2">
+        <Property Name="AbsolutePosition" Value="x:197.000000 y:331.000000" />
+        <Property Name="AbsoluteSize" Value="w:100.000000 h:20.000000" />
+        <Property Name="Text" Value="#{TDGZ_XML_24}" />
+        <Event Name="Clicked" Function="UnionFrame_QuitRaid_Click();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="Union_Button_Frame3">
+        <Property Name="AbsolutePosition" Value="x:296.000000 y:331.000000" />
+        <Property Name="AbsoluteSize" Value="w:100.000000 h:20.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_356}" />
+        <Event Name="Clicked" Function="Union_Button_Frame3_Click();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

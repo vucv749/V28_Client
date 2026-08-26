@@ -1,0 +1,147 @@
+<?xml version="1.0" ?>
+<GUILayout>
+  <Window Type="TLBB_MainFrame1" Name="SplitGemEx_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,322.000000},{0.000000,394.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-130.000000},{0.50000,-229.000000}}"/>
+    <Event Name="Shown" Function="SplitGemEx_OnShown();" />
+    <Event Name="Hidden" Function="SplitGemEx_OnHidden();" />
+    <Window Type="TLBB_ButtonClose" Name="SplitGemEx_Close">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{1.000000,-19.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function="this:Hide();" />
+    </Window>
+    <Window Type="TLBB_ButtonHelp" Name="SplitGemEx_Help">
+      <Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}}"/>
+      <Event Name="Clicked" Function='Helper:GotoHelper(&quot;*SplitGemEx&quot;);' />
+    </Window>
+    <Window Type="TLBB_DragTitle" Name="SplitGemEx_DragTitle">
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,11.000000}}"/>
+      <Property Name="DragTarget" Value="SplitGemEx_Frame" />
+      <Property Name="Font" Value="YouYuan11.25" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="Text" Value="#{INTERFACE_XML_20}" />
+      <Property Name="VertFormatting" Value="VertCentred" />
+    </Window>
+    <Window Type="DefaultWindow" Name="SplitGemEx_Client">
+      <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,36.000000}}"/>
+      <Window Type="TLBB_SimpleMulitiTextFrame" Name="SplitGemEx_Explain1">
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-210.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{BSLCYH_130529_106}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="SplitGemEx_Explain2">
+        <Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,18.000008}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{1.000000,-188.159996}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{BSLCYH_130529_107}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="SplitGemEx_Explain3">
+        <Property Name="UnifiedSize" Value="{{0.000000,145.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{1.000000,-146.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{BSLCYH_130529_108}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="SplitGemEx_Explain4">
+        <Property Name="UnifiedSize" Value="{{1.000000,-184.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{1.000000,-104.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{BSLCYH_130529_112}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="SplitGemEx_Explain5">
+        <Property Name="UnifiedSize" Value="{{1.000000,-184.000000},{0.000000,16.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{1.000000,-62.000000}}"/>
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{BSLCYH_130529_113}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="SplitGemEx_Item">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{1.000000,-196.000000}}"/>
+        <Property Name="Empty" Value="false" />
+        <Property Name="DraggingEnabled" Value="True" />
+        <Property Name="DragAcceptName" Value="G161" />
+        <Event Name="RBClicked" Function="Resume_SplitGemEx(1);" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="SplitGemEx_Gem1">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,152.000000},{1.000000,-154.000000}}"/>
+        <Property Name="Empty" Value="false" />
+        <Event Name="Clicked" Function="SplitGemEx_Selected(1);" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="SplitGemEx_Gem2">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{1.000000,-154.000000}}"/>
+        <Property Name="Empty" Value="false" />
+        <Event Name="Clicked" Function="SplitGemEx_Selected(2);" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="SplitGemEx_Gem3">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{1.000000,-154.000000}}"/>
+        <Property Name="Empty" Value="false" />
+        <Event Name="Clicked" Function="SplitGemEx_Selected(3);" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="SplitGemEx_Gem4">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,266.000000},{1.000000,-154.000000}}"/>
+        <Property Name="Empty" Value="false" />
+        <Event Name="Clicked" Function="SplitGemEx_Selected(4);" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="SplitGemEx_fu1">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{1.000000,-112.000000}}"/>
+        <Property Name="Empty" Value="false" />
+      </Window>
+      <Window Type="TLBB_ActionButton" Name="SplitGemEx_fu2">
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,228.000000},{1.000000,-70.160004}}"/>
+        <Property Name="Empty" Value="false" />
+        <Property Name="DraggingEnabled" Value="True" />
+        <Property Name="DragAcceptName" Value="G162" />
+        <Event Name="RBClicked" Function="Resume_SplitGemEx(2);" />
+      </Window>
+      <Window Type="TLBB_ButtonCheck" Name="SplitGemEx_YuanBaoPay_Button">
+        <Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,12.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{1.000000,-16.000000}}"/>
+        <Property Name="CheckMode" Value="0"/>
+        <Property Name="Tooltip" Value="#{BSLCYH_130529_48}"/>
+        <Event Name="MouseLButtonDown" Function="YuanbaoShop_querengoumai_Clicked();"/>
+      </Window>
+      <Window Type="TLBB_SimpleText" Name="SplitGemEx_YuanBaoPay_TXT">
+        <Property Name="UnifiedSize" Value="{{0.000000,106.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,24.000000},{1.000000,-20.000000}}"/>
+        <Property Name="Text" Value="#{BSLCYH_130529_18}" />
+        <Property Name="TextColor" Value="FFFFF263" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="SplitGemEx_OK">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-82.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{BSLCYH_130529_139}" />
+        <Event Name="Clicked" Function="SplitGemEx_Submit();" />
+      </Window>
+      <Window Type="TLBB_ButtonCommon" Name="SplitGemEx_Cancel">
+        <Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="Text" Value="#{INTERFACE_XML_542}" />
+        <Event Name="Clicked" Function="this:Hide();" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

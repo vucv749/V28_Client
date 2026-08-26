@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<GUILayout>
+  <Window Type="TLBB_MainFrameNULL" Name="Wakuang_Mini_Frame">
+    <Property Name="UnifiedSize" Value="{{0.000000,111.000000},{0.000000,32.000000}}" />
+    <Property Name="UnifiedPosition" Value="{{1.000000,-160.000000},{0.500000,80.000000}}"/>
+      <Window Type="TLBB_SimpleText" Name="Wakuang_Mini_PageHeader">
+        <Property Name="UnifiedSize" Value="{{0.000000,82.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.500000,-48.000000},{0.500000,-10.000000}}" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="Text" Value="#{CJWK_221220_32}" />
+      </Window>
+      <Window Type="TLBB_ButtonNULL" Name="Wakuang_Small">
+        <Property Name="UnifiedSize" Value="{{0.000000,111.000000},{0.000000,32.000000}}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+        <Property Name="PushedImage" Value="set:HSLJ_01 image:HSLJ_Fight1"/>
+        <Property Name="NormalImage" Value="set:HSLJ_01 image:HSLJ_Fight4"/>
+        <Property Name="HoverImage" Value="set:HSLJ_01 image:HSLJ_Fight3"/>
+        <Property Name="DisabledImage" Value="set:HSLJ_01 image:HSLJ_Fight2"/>
+        <Event Name="Clicked" Function="Wakuang_Mini_Open()" />
+      </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,1459 @@
+<?xml version="1.0" ?>
+<GUILayout>
+	<Window Type="TLBB_MainFrameNULL" Name="OB_Over_Frame">
+		<Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,345.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{1.000000,-800.000000},{1.000000,-375.000000}}"/>
+		<Event Name="Hidden" Function="OB_Over_Hide();"/>
+		<Window Type="TLBB_MainFrame20" Name="OB_Over_Single_ClientBK">
+			<Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,345.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+			<Property Name="RiseOnClick" Value="False"/>
+		</Window>
+		<Window Type="TLBB_MainFrame20" Name="OB_Over_Team_ClientBK">
+			<Property Name="UnifiedSize" Value="{{0.000000,600.000000},{0.000000,185.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+			<Property Name="RiseOnClick" Value="False"/>
+		</Window>
+		<Window Type="TLBB_StaticImageNULL" Name="OB_Over_DragTitleBK">
+			<Property Name="UnifiedSize" Value="{{0.000000,502.000000},{0.000000,27.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.500000,-251.000000},{0.000000,0.000000}}"/>
+			<Property Name="RiseOnClick" Value="False"/>
+			<Property Name="Image" Value="set:OB image:OBTitleBK"/>
+		</Window>
+		<Window Type="TLBB_DragTitle" Name="OB_Over_DragTitle">
+			<Property Name="UnifiedPosition" Value="{{0.000000,100.000000},{0.000000,2.000000}}"/>
+			<Property Name="UnifiedSize" Value="{{1.000000,-200.000000},{0.000000,20.000000}}"/>
+			<Property Name="DragTarget" Value="OB_Over_Frame" />
+			<Window Type="TLBB_SimpleText" Name="OB_Over_Title">
+				<Property Name="Position" Value="x:0.0 y:0.0" />
+				<Property Name="Size" Value="w:1.0 h:1.0" />
+				<Property Name="Font" Value="YouYuan11.25" />
+				<Property Name="HorzFormatting" Value="HorzCentred"/>
+				<Property Name="Text" Value="#{SJYH_210426_23}" />
+			</Window>
+		</Window>
+		<Window Type="TLBB_ButtonCheckNULL" Name="OB_Over_Single_Title_Tab">
+			<Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,20.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,6.000000}}"/>
+			<Property Name="PushedImage" Value="set:OB image:OBSelfButton_Hover"/>
+			<Property Name="NormalImage" Value="set:OB image:OBSelfButton_Normal"/>
+			<Property Name="HoverImage" Value="set:OB image:OBSelfButton_Hover"/>
+			<Property Name="Disabled" Value="set:OB image:OBSelfButton_Pushed"/>
+			<Property Name="Tooltip" Value="#{SJYH_210426_17}"/>
+			<Event Name="Clicked" Function="OB_Over_Switch_Show_Single();" />
+			<Property Name="AlwaysOnTop" Value="True"/>
+		</Window>
+		<Window Type="TLBB_ButtonCheckNULL" Name="OB_Over_Team_Title_Tab">
+			<Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,20.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,56.000000},{0.000000,6.000000}}"/>
+			<Property Name="PushedImage" Value="set:OB image:OBTeamButton_Hover"/>
+			<Property Name="NormalImage" Value="set:OB image:OBTeamButton_Normal"/>
+			<Property Name="HoverImage" Value="set:OB image:OBTeamButton_Hover"/>
+			<Property Name="Disabled" Value="set:OB image:OBTeamButton_Pushed"/>
+			<Property Name="Tooltip" Value="#{SJYH_210426_19}"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Event Name="Clicked" Function="OB_Over_Switch_Show_Team();" />
+		</Window>
+		<Window Type="TLBB_ButtonNULL" Name="OB_Over_Change_Title_Tab">
+			<Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,20.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{1.000000,-88.000000},{0.000000,6.000000}}"/>
+			<Property Name="PushedImage" Value="set:OB image:OBChangeButton_Pushed"/>
+			<Property Name="NormalImage" Value="set:OB image:OBChangeButton_Normal"/>
+			<Property Name="HoverImage" Value="set:OB image:OBChangeButton_Hover"/>
+			<Property Name="Tooltip" Value="#{SJYH_210426_21}"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Event Name="Clicked" Function="OB_Over_Switch_Data_Click();" />
+		</Window>
+		<Window Type="TLBB_ButtonNULL" Name="OB_Over_Close">
+			<Property Name="UnifiedPosition" Value="{{1.000000,-42.000000},{0.000000,6.000000}" />
+			<Property Name="UnifiedSize" Value="{{0.000000,32.000000},{0.000000,20.000000}}"/>
+			<Property Name="PushedImage" Value="set:OB image:OBMiniButton_Pushed"/>
+			<Property Name="NormalImage" Value="set:OB image:OBMiniButton_Normal"/>
+			<Property Name="HoverImage" Value="set:OB image:OBMiniButton_Hover"/>
+			<Property Name="Tooltip" Value="#{SJYH_210426_22}"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Event Name="Clicked" Function="OB_Over_OpenMember_Click();" />
+		</Window>
+
+		<Window Type="DefaultWindow" Name="OB_Over_Single_Client">
+			<Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{1.000000,-45.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,35.000000}}"/>
+			<Window Type="DefaultWindow" Name="OB_Over_Single_Team1Title_Client">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1Title_NameIcon">
+					<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-8.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBIcon0"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1Title_Name">
+					<Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="" />
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1Title_FB">
+					<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,205.000000},{0.000000,0.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBFirstKill"/>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1Title_Line1">
+					<Property Name="UnifiedSize" Value="{{0.000000,3.000000},{0.000000,24.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,256.000000},{0.500000,-12.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBLine"/>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1Title_KillIcon">
+					<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.500000,-8.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBIcon1"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1Title_Kill">
+					<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,280.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{SJYH_210426_25}" />
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1Title_Line2">
+					<Property Name="UnifiedSize" Value="{{0.000000,3.000000},{0.000000,24.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,311.000000},{0.500000,-12.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBLine"/>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1Title_DamageIcon">
+					<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,330.000000},{0.500000,-8.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBIcon2"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1Title_Damage">
+					<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,350.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{SJYH_210426_26}" />
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1Title_Line3">
+					<Property Name="UnifiedSize" Value="{{0.000000,3.000000},{0.000000,24.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,396.000000},{0.500000,-12.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBLine"/>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1Title_TankIcon">
+					<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,415.000000},{0.500000,-8.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBIcon3"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1Title_Tank">
+					<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,435.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{SJYH_210426_27}" />
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1Title_Line4">
+					<Property Name="UnifiedSize" Value="{{0.000000,3.000000},{0.000000,24.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,481.000000},{0.500000,-12.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBLine"/>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1Title_HealIcon">
+					<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,500.000000},{0.500000,-8.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBIcon4"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1Title_Heal">
+					<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,520.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{SJYH_210426_28}" />
+				</Window>
+			</Window>
+			<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Client">
+				<Property Name="UnifiedSize" Value="{{0.000000,580.000000},{0.000000,127.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}}"/>
+				<Property Name="Image" Value="set:OB image:OBRedBK"/>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Win">
+					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,60.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.000000,30.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:Wangzhe1 image:Wangzhe_sheng"/>
+				</Window>
+				<Window Type="DefaultWindow" Name="OB_Over_Single_Team1_Player1">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player1_Name">
+						<Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="玩家名六个字@服务器六个字"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player1_MenPai">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="绝情谷"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+					</Window>
+					<!-- <Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player1_FB">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,0.000000}}"/>
+						<Property Name="AlwaysOnTop" Value="True"/>
+						<Property Name="Image" Value="set:OB image:OBFirstKill"/>
+						<Property Name="Visible" Value="False"/>
+					</Window> -->
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player1_Kill">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,0.000000}}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Text" Value="6"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player1_DamageBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,315.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team1_Player1_Damage">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player1_DamageText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player1_TankBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team1_Player1_Tank">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player1_TankText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player1_HealBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,485.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyGreen" Name="OB_Over_Single_Team1_Player1_Heal">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player1_HealText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="DefaultWindow" Name="OB_Over_Single_Team1_Player2">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,21.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player2_Name">
+						<Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="玩家名六个字@服务器六个字"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player2_MenPai">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="桃花岛"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+					</Window>
+					<!-- <Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player2_FB">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,0.000000}}"/>
+						<Property Name="AlwaysOnTop" Value="True"/>
+						<Property Name="Image" Value="set:OB image:OBFirstKill"/>
+						<Property Name="Visible" Value="False"/>
+					</Window> -->
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player2_Kill">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,0.000000}}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Text" Value="6"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player2_DamageBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,315.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team1_Player2_Damage">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player2_DamageText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player2_TankBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team1_Player2_Tank">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player2_TankText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player2_HealBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,485.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyGreen" Name="OB_Over_Single_Team1_Player2_Heal">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player2_HealText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="DefaultWindow" Name="OB_Over_Single_Team1_Player3">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,42.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player3_Name">
+						<Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="玩家名六个字@服务器六个字"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player3_MenPai">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="峨眉"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+					</Window>
+					<!-- <Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player3_FB">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,0.000000}}"/>
+						<Property Name="AlwaysOnTop" Value="True"/>
+						<Property Name="Image" Value="set:OB image:OBFirstKill"/>
+						<Property Name="Visible" Value="False"/>
+					</Window> -->
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player3_Kill">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,0.000000}}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Text" Value="6"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player3_DamageBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,315.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team1_Player3_Damage">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player3_DamageText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player3_TankBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team1_Player3_Tank">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player3_TankText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player3_HealBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,485.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyGreen" Name="OB_Over_Single_Team1_Player3_Heal">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player3_HealText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="DefaultWindow" Name="OB_Over_Single_Team1_Player4">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,63.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player4_Name">
+						<Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="玩家名六个字@服务器六个字"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player4_MenPai">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="武当"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+					</Window>
+					<!-- <Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player4_FB">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,0.000000}}"/>
+						<Property Name="AlwaysOnTop" Value="True"/>
+						<Property Name="Image" Value="set:OB image:OBFirstKill"/>
+						<Property Name="Visible" Value="False"/>
+					</Window> -->
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player4_Kill">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,0.000000}}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Text" Value="6"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player4_DamageBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,315.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team1_Player4_Damage">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player4_DamageText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player4_TankBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team1_Player4_Tank">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player4_TankText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player4_HealBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,485.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyGreen" Name="OB_Over_Single_Team1_Player4_Heal">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player4_HealText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="DefaultWindow" Name="OB_Over_Single_Team1_Player5">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,84.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player5_Name">
+						<Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="玩家名六个字@服务器六个字"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player5_MenPai">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="丐帮"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+					</Window>
+					<!-- <Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player5_FB">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,0.000000}}"/>
+						<Property Name="AlwaysOnTop" Value="True"/>
+						<Property Name="Image" Value="set:OB image:OBFirstKill"/>
+						<Property Name="Visible" Value="False"/>
+					</Window> -->
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player5_Kill">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,0.000000}}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Text" Value="6"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player5_DamageBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,315.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team1_Player5_Damage">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player5_DamageText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player5_TankBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team1_Player5_Tank">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player5_TankText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player5_HealBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,485.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyGreen" Name="OB_Over_Single_Team1_Player5_Heal">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player5_HealText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="DefaultWindow" Name="OB_Over_Single_Team1_Player6">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,105.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player6_Name">
+						<Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="玩家名六个字@服务器六个字"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player6_MenPai">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="明教"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+					</Window>
+					<!-- <Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player6_FB">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,0.000000}}"/>
+						<Property Name="AlwaysOnTop" Value="True"/>
+						<Property Name="Image" Value="set:OB image:OBFirstKill"/>
+						<Property Name="Visible" Value="False"/>
+					</Window> -->
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player6_Kill">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,0.000000}}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Text" Value="6"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player6_DamageBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,315.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team1_Player6_Damage">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player6_DamageText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player6_TankBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team1_Player6_Tank">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player6_TankText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team1_Player6_HealBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,485.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyGreen" Name="OB_Over_Single_Team1_Player6_Heal">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team1_Player6_HealText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+				</Window>
+			</Window>
+
+			<Window Type="DefaultWindow" Name="OB_Over_Single_Team2Title_Client">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,150.000000}}"/>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2Title_NameIcon">
+					<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-8.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBIcon0"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2Title_Name">
+					<Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="" />
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2Title_FB">
+					<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,205.000000},{0.000000,0.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBFirstKill"/>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2Title_Line1">
+					<Property Name="UnifiedSize" Value="{{0.000000,3.000000},{0.000000,24.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,256.000000},{0.500000,-12.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBLine"/>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2Title_KillIcon">
+					<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.500000,-8.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBIcon1"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2Title_Kill">
+					<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,280.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{SJYH_210426_25}" />
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2Title_Line2">
+					<Property Name="UnifiedSize" Value="{{0.000000,3.000000},{0.000000,24.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,311.000000},{0.500000,-12.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBLine"/>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2Title_DamageIcon">
+					<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,330.000000},{0.500000,-8.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBIcon2"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2Title_Damage">
+					<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,350.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{SJYH_210426_26}" />
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2Title_Line3">
+					<Property Name="UnifiedSize" Value="{{0.000000,3.000000},{0.000000,24.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,396.000000},{0.500000,-12.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBLine"/>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2Title_TankIcon">
+					<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,415.000000},{0.500000,-8.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBIcon3"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2Title_Tank">
+					<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,435.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{SJYH_210426_27}" />
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2Title_Line4">
+					<Property Name="UnifiedSize" Value="{{0.000000,3.000000},{0.000000,24.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,481.000000},{0.500000,-12.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBLine"/>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2Title_HealIcon">
+					<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,500.000000},{0.500000,-8.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBIcon4"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2Title_Heal">
+					<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,520.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{SJYH_210426_28}" />
+				</Window>
+			</Window>
+			<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Client">
+				<Property Name="UnifiedSize" Value="{{0.000000,580.000000},{0.000000,127.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,170.000000}}"/>
+				<Property Name="Image" Value="set:OB image:OBBlueBK"/>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Win">
+					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,60.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.000000,30.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:Wangzhe1 image:Wangzhe_sheng"/>
+				</Window>
+				<Window Type="DefaultWindow" Name="OB_Over_Single_Team2_Player1">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player1_Name">
+						<Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="玩家名六个字@服务器六个字"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player1_MenPai">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,0.000000}}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Text" Value="星宿"/>
+					</Window>
+					<!-- <Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player1_FB">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,0.000000}}"/>
+						<Property Name="AlwaysOnTop" Value="True"/>
+						<Property Name="Image" Value="set:OB image:OBFirstKill"/>
+						<Property Name="Visible" Value="False"/>
+					</Window> -->
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player1_Kill">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,0.000000}}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Text" Value="2"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player1_DamageBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,315.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team2_Player1_Damage">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player1_DamageText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player1_TankBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team2_Player1_Tank">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player1_TankText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player1_HealBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,485.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyGreen" Name="OB_Over_Single_Team2_Player1_Heal">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player1_HealText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="DefaultWindow" Name="OB_Over_Single_Team2_Player2">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,21.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player2_Name">
+						<Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="玩家名六个字@服务器六个字"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player2_MenPai">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,0.000000}}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Text" Value="逍遥"/>
+					</Window>
+					<!-- <Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player2_FB">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,0.000000}}"/>
+						<Property Name="AlwaysOnTop" Value="True"/>
+						<Property Name="Image" Value="set:OB image:OBFirstKill"/>
+						<Property Name="Visible" Value="False"/>
+					</Window> -->
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player2_Kill">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,0.000000}}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Text" Value="1"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player2_DamageBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,315.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team2_Player2_Damage">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player2_DamageText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player2_TankBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team2_Player2_Tank">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player2_TankText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player2_HealBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,485.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyGreen" Name="OB_Over_Single_Team2_Player2_Heal">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player2_HealText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="DefaultWindow" Name="OB_Over_Single_Team2_Player3">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,42.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player3_Name">
+						<Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="玩家名六个字@服务器六个字"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player3_MenPai">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,0.000000}}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Text" Value="少林"/>
+					</Window>
+					<!-- <Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player3_FB">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,0.000000}}"/>
+						<Property Name="AlwaysOnTop" Value="True"/>
+						<Property Name="Image" Value="set:OB image:OBFirstKill"/>
+						<Property Name="Visible" Value="False"/>
+					</Window> -->
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player3_Kill">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,0.000000}}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Text" Value="1"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player3_DamageBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,315.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team2_Player3_Damage">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player3_DamageText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player3_TankBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team2_Player3_Tank">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player3_TankText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player3_HealBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,485.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyGreen" Name="OB_Over_Single_Team2_Player3_Heal">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player3_HealText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="DefaultWindow" Name="OB_Over_Single_Team2_Player4">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,63.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player4_Name">
+						<Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="玩家名六个字@服务器六个字"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player4_MenPai">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="慕容"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+					</Window>
+					<!-- <Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player4_FB">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,0.000000}}"/>
+						<Property Name="AlwaysOnTop" Value="True"/>
+						<Property Name="Image" Value="set:OB image:OBFirstKill"/>
+						<Property Name="Visible" Value="False"/>
+					</Window> -->
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player4_Kill">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,0.000000}}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Text" Value="1"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player4_DamageBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,315.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team2_Player4_Damage">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player4_DamageText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player4_TankBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team2_Player4_Tank">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player4_TankText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player4_HealBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,485.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyGreen" Name="OB_Over_Single_Team2_Player4_Heal">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player4_HealText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="DefaultWindow" Name="OB_Over_Single_Team2_Player5">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,84.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player5_Name">
+						<Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="玩家名六个字@服务器六个字"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player5_MenPai">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,0.000000}}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Text" Value="唐门"/>
+					</Window>
+					<!-- <Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player5_FB">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,0.000000}}"/>
+						<Property Name="AlwaysOnTop" Value="True"/>
+						<Property Name="Image" Value="set:OB image:OBFirstKill"/>
+						<Property Name="Visible" Value="False"/>
+					</Window> -->
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player5_Kill">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,0.000000}}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Text" Value="1"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player5_DamageBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,315.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team2_Player5_Damage">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player5_DamageText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player5_TankBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team2_Player5_Tank">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player5_TankText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player5_HealBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,485.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyGreen" Name="OB_Over_Single_Team2_Player5_Heal">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player5_HealText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="DefaultWindow" Name="OB_Over_Single_Team2_Player6">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,105.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player6_Name">
+						<Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="玩家名六个字@服务器六个字"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player6_MenPai">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,0.000000}}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Text" Value="鬼谷"/>
+					</Window>
+					<!-- <Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player6_FB">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,150.000000},{0.000000,0.000000}}"/>
+						<Property Name="AlwaysOnTop" Value="True"/>
+						<Property Name="Image" Value="set:OB image:OBFirstKill"/>
+						<Property Name="Visible" Value="False"/>
+					</Window> -->
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player6_Kill">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,0.000000}}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Text" Value="0"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player6_DamageBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,315.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team2_Player6_Damage">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player6_DamageText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player6_TankBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Single_Team2_Player6_Tank">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player6_TankText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Single_Team2_Player6_HealBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,485.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyGreen" Name="OB_Over_Single_Team2_Player6_Heal">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Single_Team2_Player6_HealText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+				</Window>
+			</Window>
+		</Window>
+
+		<Window Type="DefaultWindow" Name="OB_Over_Team_Client">
+			<Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,140.000000}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,35.000000}}"/>
+			<Window Type="DefaultWindow" Name="OB_Over_Team_Title_Client">
+				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Team_Title_NameIcon">
+					<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.500000,-8.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBIcon0"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="OB_Over_Team_Title_Name">
+					<Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{SJYH_210426_30}" />
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Team_Title_Line1">
+					<Property Name="UnifiedSize" Value="{{0.000000,3.000000},{0.000000,24.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,256.000000},{0.500000,-12.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBLine"/>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Team_Title_KillIcon">
+					<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.500000,-8.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBIcon1"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="OB_Over_Team_Title_Kill">
+					<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,280.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{SJYH_210426_25}" />
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Team_Title_Line2">
+					<Property Name="UnifiedSize" Value="{{0.000000,3.000000},{0.000000,24.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,311.000000},{0.500000,-12.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBLine"/>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Team_Title_DamageIcon">
+					<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,330.000000},{0.500000,-8.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBIcon2"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="OB_Over_Team_Title_Damage">
+					<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,350.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{SJYH_210426_26}" />
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Team_Title_Line3">
+					<Property Name="UnifiedSize" Value="{{0.000000,3.000000},{0.000000,24.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,396.000000},{0.500000,-12.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBLine"/>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Team_Title_TankIcon">
+					<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,415.000000},{0.500000,-8.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBIcon3"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="OB_Over_Team_Title_Tank">
+					<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,435.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{SJYH_210426_27}" />
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Team_Title_Line4">
+					<Property Name="UnifiedSize" Value="{{0.000000,3.000000},{0.000000,24.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,481.000000},{0.500000,-12.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBLine"/>
+				</Window>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Team_Title_HealIcon">
+					<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,500.000000},{0.500000,-8.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:OB image:OBIcon4"/>
+				</Window>
+				<Window Type="TLBB_SimpleText" Name="OB_Over_Team_Title_Heal">
+					<Property Name="UnifiedSize" Value="{{0.000000,30.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,520.000000},{0.000000,0.000000}}"/>
+					<Property Name="Text" Value="#{SJYH_210426_28}" />
+				</Window>
+			</Window>
+			<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Team_Team1_Client">
+				<Property Name="UnifiedSize" Value="{{0.000000,580.000000},{0.000000,60.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}}"/>
+				<Property Name="Image" Value="set:OB image:OBRedBK"/>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Team_Team1_Win">
+					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,60.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.000000,0.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:Wangzhe1 image:Wangzhe_sheng"/>
+				</Window>
+				<Window Type="DefaultWindow" Name="OB_Over_Team_Team1">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Team_Team1_Name">
+						<Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="玩家名六个字@服务器六个字"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Team_Team1_MenPai">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="曼陀"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Team_Team1_FB">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,185.000000},{0.000000,0.000000}}"/>
+						<Property Name="AlwaysOnTop" Value="True"/>
+						<Property Name="Image" Value="set:OB image:OBFirstKill"/>
+						<Property Name="Visible" Value="False"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Team_Team1_Kill">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,0.000000}}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Text" Value="1"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Team_Team1_DamageBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,315.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Team_Team1_Damage">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Team_Team1_DamageText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Team_Team1_TankBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Team_Team1_Tank">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Team_Team1_TankText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Team_Team1_HealBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,485.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyGreen" Name="OB_Over_Team_Team1_Heal">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Team_Team1_HealText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Team_Team2_Client">
+				<Property Name="UnifiedSize" Value="{{0.000000,580.000000},{0.000000,60.000000}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,80.000000}}"/>
+				<Property Name="Image" Value="set:OB image:OBBlueBK"/>
+				<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Team_Team2_Win">
+					<Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,60.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{0.000000,0.000000}}"/>
+					<Property Name="AlwaysOnTop" Value="True"/>
+					<Property Name="Image" Value="set:Wangzhe1 image:Wangzhe_sheng"/>
+				</Window>
+				<Window Type="DefaultWindow" Name="OB_Over_Team_Team2">
+					<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-10.000000}}"/>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Team_Team2_Name">
+						<Property Name="UnifiedSize" Value="{{0.000000,180.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="玩家名六个字@服务器六个字"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Team_Team2_MenPai">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,0.000000}}"/>
+						<Property Name="Text" Value="天山"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Team_Team2_FB">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,185.000000},{0.000000,0.000000}}"/>
+						<Property Name="AlwaysOnTop" Value="True"/>
+						<Property Name="Image" Value="set:OB image:OBFirstKill"/>
+						<Property Name="Visible" Value="False"/>
+					</Window>
+					<Window Type="TLBB_SimpleText" Name="OB_Over_Team_Team2_Kill">
+						<Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,260.000000},{0.000000,0.000000}}"/>
+						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+						<Property Name="Text" Value="1"/>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Team_Team2_DamageBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,315.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Team_Team2_Damage">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Team_Team2_DamageText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Team_Team2_TankBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyRed" Name="OB_Over_Team_Team2_Tank">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Team_Team2_TankText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+					<Window Type="TLBB_StaticImageNULL" Name="OB_Over_Team_Team2_HealBK">
+						<Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,16.000000}}"/>
+						<Property Name="UnifiedPosition" Value="{{0.000000,485.000000},{0.500000,-8.000000}}"/>
+						<Property Name="RiseOnClick" Value="False"/>
+						<Property Name="Image" Value="set:OB image:OBProgressBK"/>
+						<Window Type="TLBB_ProgressPropertyGreen" Name="OB_Over_Team_Team2_Heal">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{0.000000,14.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.500000,-7.000000}}"/>
+						</Window>
+						<Window Type="TLBB_SimpleText" Name="OB_Over_Team_Team2_HealText">
+							<Property Name="UnifiedSize" Value="{{1.000000,-4.000000},{1.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,2.000000},{0.000000,0.000000}}"/>
+							<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+							<Property Name="AlwaysOnTop" Value="True"/>
+						</Window>
+					</Window>
+				</Window>
+			</Window>
+		</Window>
+
+	</Window>
+</GUILayout>
