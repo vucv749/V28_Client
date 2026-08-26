@@ -1,61 +1,61 @@
 --MisDescBegin
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x600034_g_ScriptId = 600034
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x600034_g_MissionId = 1109
 
---ÈÎÎñÄ¿±ênpc
-x600034_g_Name = "Îä´óÍş"
+--nhi®m vø møc tiêu Npc
+x600034_g_Name = "Võ ĞÕi Uy"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x600034_g_MissionKind = 50
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x600034_g_MissionLevel = 10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x600034_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
-x600034_g_IsMissionOkFail = 0							-- ÈÎÎñÍê³É±ê¼Ç
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+x600034_g_IsMissionOkFail = 0							-- ??????
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñ±äÁ¿µÚÒ»Î»ÓÃÀ´´æ´¢Ëæ»úµÃµ½µÄ½Å±¾ºÅ
---ÈÎÎñÎÄ±¾ÃèÊö
-x600034_g_MissionName = "´ÌÉ±Ì°¹Ù"
-x600034_g_MissionInfo = ""													--ÈÎÎñÃèÊö
-x600034_g_MissionTarget = "    Ì°¹Ù%s%sÏÖ×÷%s£¬ËûÆÛÑ¹°ÙĞÕ£¬Ô¹ÉùÔØµÀ£¬ÎÒÒÑ¾­°²ÅÅÁË%nÁË½âµ½ÁËÇé±¨£¬ĞĞ´ÌËûµÄÈÎÎñ¾Í½»¸øÄãÁË¡£#r#{BHRW_091224_1}"	--ÈÎÎñÄ¿±ê
-x600034_g_ContinueInfo = "    ÄãµÄÈÎÎñ»¹Ã»ÓĞÍê³ÉÃ´£¿"						--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x600034_g_MissionComplete = "    ¸ÉµÃ²»´í£¬ÉõºÃÉõºÃ¡£"						--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø lßşng biªn ğ±i ğ® nh¤t v¸ dùng ğ¬ t°n træ TuÏ C½ nh§n ğßşc Ğích k¸ch bän g¯c Hào
+--nhi®m vø vån bän miêu tä
+x600034_g_MissionName = "Ám sát tham quan"
+x600034_g_MissionInfo = ""													--????
+x600034_g_MissionTarget = "Tham quan%s%sHi®n Tác%s, Tha Ñc hiªp dân chúng, tiªng oán than d§y ğ¤t, Ngã ğã an bài Li­u%nhi¬u biªt t¾i r°i Tình Báo, ám sát Tha Ğích nhi®m vø Tñu giao cho Nhî Li­u. #r#{BHRW_091224_1}"	--????
+x600034_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"						--??????npc??
+x600034_g_MissionComplete = "Làm ğßşc không t°i, r¤t t¯t r¤t t¯t."						--????npc????
 x600034_g_MissionRound = 79
 
--- Í¨ÓÃ³ÇÊĞÈÎÎñ½Å±¾
+-- thông døng thành th¸ nhi®m vø k¸ch bän g¯c
 x600034_g_CityMissionScript = 600001
 x600034_g_MilitaryScript = 600030
 
 x600034_g_StrForePart=4
 
-x600034_g_StrList = {[0]="Àî",
-										 [1]="ÕÔ",
-										 [2]="ÖÜ",
-										 [3]="º«",
-										 [4]="µË",
-										 [5]="Á®",
-										 [6]="½à",
-										 [7]="Õş",
-										 [8]="ÇÚ",
-										 [9]="ÎÄ",
-										 [10]="ÊÌÀÉ",
-										 [11]="ÖĞÊéÊÌÀÉ",
-										 [12]="ÊàÃÜÔºÊ¹",
-										 [13]="ÊàÃÜÔº¸±Ê¹",
-										 [14]="ÓùÊ·ÖĞØ©",
-								  	 [15]="ÓùÊ·´ó·ò",
+x600034_g_StrList = {[0]="Lí",
+										 [1]="Tri®u",
+										 [2]="Châu",
+										 [3]="Hàn",
+										 [4]="Ğ£ng",
+										 [5]="Liêm",
+										 [6]="Khiªt",
+										 [7]="?ş",
+										 [8]="Ú",
+										 [9]="Vån",
+										 [10]="Th¸ lang",
+										 [11]="Trung thß th¸ lang",
+										 [12]="Khu m§t vi®n sØ",
+										 [13]="Khu m§t vi®n phó sØ",
+										 [14]="Ngñ sØ trung th×a",
+								  	 [15]="Ngñ sØ ğÕi phu",
 								  	 [16]="ÓÒÚÉÒé´ó·ò",
-								  	 [17]="×óÚÉÒé´ó·ò",
-								  	 [18]="ÖĞÊéÉáÈË",
+								  	 [17]="»óÚÉÒé´ó·ò",
+								  	 [18]="ĞÊéÉáÈË",
 										 }
 
 

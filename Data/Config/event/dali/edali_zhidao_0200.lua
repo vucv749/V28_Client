@@ -1,45 +1,45 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x210200_g_ScriptId = 210200
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x210200_g_Position_X=216.6208
 x210200_g_Position_Z=133.6347
 x210200_g_SceneID=2
-x210200_g_AccomplishNPC_Name="ÆÑÁ¼"
+x210200_g_AccomplishNPC_Name="B° Lß½ng"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x210200_g_MissionId = 440
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 --g_MissionIdPre = 
 
---Ä¿±êNPC
-x210200_g_Name	="ÆÑÁ¼"
+--møc tiêu NPC
+x210200_g_Name	="B° Lß½ng"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x210200_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x210200_g_MissionLevel = 1
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x210200_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x210200_g_MissionName="µÚÒ»°ÑÎäÆ÷"
-x210200_g_MissionInfo_1="  Õâ²»ÊÇ#R"
-x210200_g_MissionInfo_2="#{event_dali_0001}" --Ó¦ÎÒÃÇÕòÄÏÍõµÄÑûÇëÇ°À´²Î¼ÓÎäÁÖ´ó»á¡£
+--nhi®m vø Danh
+x210200_g_MissionName="Thanh vû khí thÑ nh¤t"
+x210200_g_MissionInfo_1="  Ğây không phäi là #R"
+x210200_g_MissionInfo_2="#{event_dali_0001}" --??????????????????
 x210200_g_MissionTarget="#{xinshou_001}"
 x210200_g_MissionComplete="#{event_dali_0002}"
 x210200_g_MoneyBonus=1
-x210200_g_SignPost = {x = 216, z = 135, tip = "ÆÑÁ¼"}
+x210200_g_SignPost = {x = 216, z = 135, tip = "B° Lß½ng"}
 
 x210200_g_ItemBonus={id=30101001, num=10}
 x210200_g_RadioItemBonus={{id=10101000 ,num=1},{id=10102000,num=1},{id=10104000,num=1},{id=10103000,num=1},{id=10106016,num=1}}
 
-x210200_g_Custom	= { {id="ÒÑÕÒµ½ÆÑÁ¼",num=1} }
-x210200_g_IsMissionOkFail = 1		--±äÁ¿µÄµÚ0Î»
+x210200_g_Custom	= { {id="Ğã tìm th¤y B° Lß½ng",num=1} }
+x210200_g_IsMissionOkFail = 1		--????0?
 
 
 --MisDescEnd

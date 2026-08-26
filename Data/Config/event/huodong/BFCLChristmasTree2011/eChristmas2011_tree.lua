@@ -1,26 +1,26 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x889646_g_ScriptId = 889646
 
---½ÓÊÜÈÎÎñNPCÊôÐÔ
+--nh§n nhi®m vø NPCthuµc tính
 x889646_g_Position_X = 261
 x889646_g_Position_Z = 342
 x889646_g_SceneID = 0
-x889646_g_AccomplishNPC_Name ="Ê¥µ®Ê÷"
+x889646_g_AccomplishNPC_Name ="Cây Thông"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x889646_g_MissionId = 1279
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x889646_g_MissionKind = 11
 
---Ä¿±êNPC
-x889646_g_Name ="Ê¥µ®Ê÷"
+--møc tiêu NPC
+x889646_g_Name ="Cây Thông"
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x889646_g_MissionLevel = 10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x889646_g_IfMissionElite = 0
 
 x889646_g_MissionName="#{CLSDS_111102_04}"
@@ -30,9 +30,9 @@ x889646_g_ContinueInfo="#{SQXY_09061_19}"
 x889646_g_MissionComplete ="#{CLSDS_111102_18}"
 x889646_g_IsMissionOkFail = 0
 x889646_g_ItemBonus={{id=38000193 ,num=1}}
-x889646_g_Custom = {{id="ÒÑ×°ÊÎÊ¥µ®Ê÷",num=1}}
+x889646_g_Custom = {{id="Ðã trang trí Cây Noel",num=1}}
 
---½ÇÉ«µÈ¼¶ÏÞÖÆ
+--vai di­n c¤p b§c hÕn chª
 x889646_g_LimitLevel = 10
 
 --MisDescEnd

@@ -1,30 +1,30 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x225900_g_ScriptId = 225900
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x225900_g_MissionId = 1089
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 --g_MissionIdPre = 
 
---Ä¿±êNPC
-x225900_g_Name	="ÇØ¹Û"
+--møc tiêu NPC
+x225900_g_Name	="T¥n Quán"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x225900_g_MissionKind = 25
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x225900_g_MissionLevel = 10
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x225900_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x225900_g_MissionName="ÎªÊ¦ÃÅ¶øÕ½"
+--nhi®m vø Danh
+x225900_g_MissionName="Chiªn ğ¤u vì sß môn"
 x225900_g_MissionInfo="#{event_xiaoyao_0001}"
-x225900_g_MissionTarget="    ÔÚÁè²¨¶´ÕÒµ½ÇØ¹Û#{_INFOAIM119,152,14,ÇØ¹Û}¡£"
-x225900_g_MissionComplete="  ÄãÊÇĞÂÀ´µÄÍ¬ÃÅ°É£¬ÄãÀ´µÃÌ«ºÃÁË£¬ÎÒÕâÀïÓĞºÜ¶àÊÂÇéĞèÒªÄã°ïÃ¦ÄØ¡£"
+x225900_g_MissionTarget="TÕi Lång Ba Ğµng tìm ğßşc T¥n Quan#{_INFOAIM119, 152, 14, T¥n Quan}."
+x225900_g_MissionComplete="  Các hÕ là ğ°ng môn m¾i ğªn phäi không. Các hÕ làm tuy®t l¡m. Ta · ğây có nhi«u vi®c c¥n các hÕ giúp ğŞ"
 x225900_g_MoneyJZBonus=800
 
 

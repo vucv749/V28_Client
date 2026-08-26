@@ -1,38 +1,38 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x890105_g_ScriptId	= 890105
 
 x890105_g_KDZZID = 1006000562
 x890105_g_SubKDZZID = 0
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x890105_g_MissionId			= 2155
 
---Íê³ÉÈÎÎñNPCÊôĞÔ
+--hoàn thành nhi®m vø NPCthuµc tính
 x890105_g_Position_X=130
 x890105_g_Position_Z=190
 x890105_g_SceneID=1292
-x890105_g_AccomplishNPC_Name="Ä«Èç"
+x890105_g_AccomplishNPC_Name="M£c Nhß"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x890105_g_MissionKind			= 64
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x890105_g_MissionLevel		= 85
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x890105_g_IfMissionElite	= 0
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x890105_g_IsMissionOkFail	= 0		--ÈÎÎñ²ÎÊıµÄµÚ0Î»
+--nhi®m vø hay không ğã hoàn thành
+x890105_g_IsMissionOkFail	= 0		--??????0?
 
---ÈÎÎñÎÄ±¾ÃèÊö
+--nhi®m vø vån bän miêu tä
 x890105_g_MissionName			= "#{BLCC_20221214_463}"
---ÈÎÎñÃèÊö
+--nhi®m vø miêu tä
 x890105_g_MissionInfo			= ""
---x890105_g_ContinueInfo = "#{BLCC_20221214_381}"		--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»° ?	#ÉÙÏÀ¿ÉÓĞ²ù³ıµôÑ©Ô³£¿
---ÈÎÎñÄ¿±ê
+--x890105_g_ContinueInfo = "#{BLCC_20221214_381}" --chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi?	#thiªu hi®p có th¬ có di®t tr× Ğiªu Vßşn Tuyªt?
+--nhi®m vø møc tiêu
 x890105_g_MissionTarget		= "#{BLCC_20221214_383}"
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x890105_g_Custom	= { {id="ÖÆ·ü±ùÊ´Ä¾÷Ê",num=1} }
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x890105_g_Custom	= { {id="Chª phøc Bång Thñc Mµc Y¬m",num=1} }
 
 
 --MisDescEnd

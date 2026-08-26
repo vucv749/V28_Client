@@ -1,35 +1,35 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x893302_g_ScriptId	= 893302
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x893302_g_MissionId		= 2111
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x893302_g_MissionKind		= 11
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x893302_g_MissionLevel		= 30
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x893302_g_IfMissionElite	= 0
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x893302_g_IsMissionOkFail	= 0		--ÈÎÎñ²ÎÊıµÄµÚ0Î»
+--nhi®m vø hay không ğã hoàn thành
+x893302_g_IsMissionOkFail	= 0		--??????0?
 
---ÈÎÎñÎÄ±¾ÃèÊö
+--nhi®m vø vån bän miêu tä
 x893302_g_MissionName		= "#{ZNSC_220624_07}"
---ÈÎÎñÃèÊö
+--nhi®m vø miêu tä
 x893302_g_MissionInfo		= "#{ZNSC_220624_32}"
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x893302_g_MissionTarget		= "#{ZNSC_220624_32}"
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
 x893302_g_ContinueInfo		= "#{ZNSC_220624_32}"
---Íê³ÉÈÎÎñnpcËµµÄ»°
+--hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
 x893302_g_MissionComplete	= "#{ZNSC_220624_14}"
---¿ÉÒÔÍê³ÉµÄ»·Êı
+--có th¬ hoàn thành Ğích Hoàn S±
 x893302_g_MaxRound	= -1
---¿ØÖÆ½Å±¾
+--kh¯ng chª k¸ch bän g¯c
 x893302_g_ControlScript		= 893302
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x893302_g_Custom	= { {id="°ïÃ¦Öş½¨ÆíÔ¸ÑşÌÁ",num=6} }
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x893302_g_Custom	= { {id="H² trş Trúc Kiªn KÏ Nguy®n Dao Ğß¶ng",num=6} }
 
 --MisDescEnd

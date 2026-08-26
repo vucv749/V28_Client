@@ -1,34 +1,34 @@
 --MisDescBegin
 
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x892384_g_ScriptId = 892384
 
--- ÈÎÎñºÅ
+-- nhi®m vø Hào
 x892384_g_MissionId = 1388
 
--- ÈÎÎñÃû×Ö
+-- nhi®m vø tên
 x892384_g_MissionName = "#{YXCDM_161114_58}"
 
--- ÈÎÎñÄ¿±ê
+-- nhi®m vø møc tiêu
 x892384_g_MissionTarget = "" 
 
 
--- Ìá½»ÈÎÎñNPCÊôĞÔ
+-- ğ® trình nhi®m vø NPCthuµc tính
 x892384_g_Position_X 	= 179
 x892384_g_Position_Z 	= 202
 x892384_g_SceneID 		= 0
-x892384_g_AccomplishNPC_Name = "²ÌÃÖ"
+x892384_g_AccomplishNPC_Name = "Thái Di"
 
--- ÈÎÎñ¹éÀà
-x892384_g_MissionKind = 11  -- ÂåÑô
+-- nhi®m vø phân loÕi
+x892384_g_MissionKind = 11  -- ??
 
--- ÈÎÎñµÈ¼¶
+-- nhi®m vø c¤p b§c
 x892384_g_MissionLevel = 10000
 
--- Íê³ÉÇé¿ö
+-- hoàn thành tình hu¯ng
 x892384_g_Custom = ""
 
--- ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+-- hay không Th¸ tinh anh nhi®m vø
 x892384_g_IfMissionElite = 0
 
 

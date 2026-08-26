@@ -1,52 +1,52 @@
 --MisDescBegin
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x600013_g_ScriptId = 600013
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x600013_g_MissionId = 1107
 
---ÈÎÎñÄ¿±ênpc
-x600013_g_Name = "¹¶Ğ´"
+--nhi®m vø møc tiêu Npc
+x600013_g_Name = "C¦u Tä"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x600013_g_MissionKind = 50
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x600013_g_MissionLevel = 10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x600013_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
-x600013_g_IsMissionOkFail = 0							-- ÈÎÎñÍê³É±ê¼Ç
-x600013_g_MissionParam_SubId = 1						-- ×ÓÈÎÎñ½Å±¾ºÅ´æ·ÅÎ»ÖÃ
-x600013_g_MissionParam_PoemIssued = 2					-- ÊÇ·ñÒÑ¾­·¢²¼Ê«¾ä
-x600013_g_MissionParam_IsFailed = 3						-- ÕıÈ·´ğ°¸Ë÷Òı´æ·ÅÎ»ÖÃ
-x600013_g_MissionParam_PoemIndex = 4					-- Ê«¾äË÷Òı´æ·ÅÎ»ÖÃ
-x600013_g_MissionParam_AnswerIndex = 5					-- ÕıÈ·´ğ°¸Ë÷Òı´æ·ÅÎ»ÖÃ
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+x600013_g_IsMissionOkFail = 0							-- ??????
+x600013_g_MissionParam_SubId = 1						-- ??????????
+x600013_g_MissionParam_PoemIssued = 2					-- ????????
+x600013_g_MissionParam_IsFailed = 3						-- ??????????
+x600013_g_MissionParam_PoemIndex = 4					-- ????????
+x600013_g_MissionParam_AnswerIndex = 5					-- ??????????
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñ±äÁ¿µÚÒ»Î»ÓÃÀ´´æ´¢Ëæ»úµÃµ½µÄ½Å±¾ºÅ
+--nhi®m vø lßşng biªn ğ±i ğ® nh¤t v¸ dùng ğ¬ t°n træ TuÏ C½ nh§n ğßşc Ğích k¸ch bän g¯c Hào
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x600013_g_MissionName = "¿Æ¼¼ÈÎÎñ"
-x600013_g_MissionInfo = "    ½ñÌìÎÒÏëÒª %s ÁË£¬È¥°ïÎÒÕÒÀ´°É£¡"			--ÈÎÎñÃèÊö
-x600013_g_MissionTarget = "    ´ğ¶Ô¹ÅÊ«¶Ô¾äÒ»Ìâ¡£#r#{BHRW_091224_1}"	--ÈÎÎñÄ¿±ê
-x600013_g_ContinueInfo = "    ÄãµÄÈÎÎñ»¹Ã»ÓĞÍê³ÉÃ´£¿"					--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x600013_g_SubmitInfo = "    ÊÂÇé½øÕ¹µÃÈçºÎ£¿"							--Íê³ÉÎ´Ìá½»Ê±µÄnpc¶Ô»°
-x600013_g_MissionComplete = "    ¸ÉµÃ²»´í£¬ÉõºÃÉõºÃ¡£"					--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø vån bän miêu tä
+x600013_g_MissionName = "Nhi®m vø kÛ thu§t"
+x600013_g_MissionInfo = "Hôm nay ta nghî Yêu %s Li­u, ği giúp Ngã Träo ğªn ğây ği!"			--????
+x600013_g_MissionTarget = "Trä l¶i th½ c± Ğ¯i Câu Nh¤t Ğ«. #r#{BHRW_091224_1}"	--????
+x600013_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"					--??????npc??
+x600013_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"							--???????npc??
+x600013_g_MissionComplete = "Làm ğßşc không t°i, r¤t t¯t r¤t t¯t."					--????npc????
 
 x600013_g_StrForePart = 5
-x600013_g_Offset = 140000												-- Suppose to 150000, ±íÀïµÚ¼¸¸öÎïÆ·ÁĞµÄÆ«ÒÆÁ¿
+x600013_g_Offset = 140000												-- Suppose to 150000, ????????????
 
 x600013_g_MissionRound = 42
 
--- Í¨ÓÃ³ÇÊĞÈÎÎñ½Å±¾
+-- thông døng thành th¸ nhi®m vø k¸ch bän g¯c
 x600013_g_CityMissionScript = 600001
 x600013_g_SciTechScript = 600012
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 
 
 --MisDescEnd

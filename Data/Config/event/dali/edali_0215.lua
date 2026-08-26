@@ -1,45 +1,45 @@
 --MisDescBegin
 
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x210215_g_ScriptId = 210215
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x210215_g_Position_X=265
 x210215_g_Position_Z=129
 x210215_g_SceneID=2
-x210215_g_AccomplishNPC_Name="ÔÆÆ®Æ®"
+x210215_g_AccomplishNPC_Name="Vân Phiêu Phiêu"
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x210215_g_MissionIdPre = 454
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x210215_g_MissionId = 455
 
---ÈÎÎñÄ¿±ênpc
-x210215_g_Name	="ÔÆÆ®Æ®"
+--nhi®m vø møc tiêu Npc
+x210215_g_Name	="Vân Phiêu Phiêu"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x210215_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x210215_g_MissionLevel = 5
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x210215_g_IfMissionElite = 0
 
---********ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö******
+--********phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng******
 
---**********************************ÒÔÉÏÊÇ¶¯Ì¬****************************
+--**********************************ğã ngoài Th¸ ğµng thái****************************
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x210215_g_MissionName="ÕäÊŞÉı¼¶À²"
-x210215_g_MissionInfo="#{event_dali_0021}"  --ÈÎÎñÃèÊö
-x210215_g_MissionTarget="#{event_dali_0022}"		--ÈÎÎñÄ¿±ê
-x210215_g_ContinueInfo="  Ğ¡ÍÃ×ÓÉıµ½2¼¶ÁËÂğ£¿"		--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x210215_g_MissionComplete="#{event_dali_0023}"					--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
-x210215_g_SignPost = {x = 263, z = 129, tip = "ÔÆÆ®Æ®"}
+--nhi®m vø vån bän miêu tä
+x210215_g_MissionName="Thú quı lên c¤p r°i"
+x210215_g_MissionInfo="#{event_dali_0021}"  --????
+x210215_g_MissionTarget="#{event_dali_0022}"		--????
+x210215_g_ContinueInfo="Con thö nhö TØ lên t¾i C¤p 2 Li­u Ma?"		--??????npc??
+x210215_g_MissionComplete="#{event_dali_0023}"					--????npc????
+x210215_g_SignPost = {x = 263, z = 129, tip = "Vân Phiêu Phiêu"}
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 x210215_g_MoneyBonus=20
 x210215_g_ItemBonus = {{id = 30603001,num = 20}}
 

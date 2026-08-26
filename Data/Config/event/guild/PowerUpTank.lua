@@ -1,32 +1,32 @@
 --MisDescBegin
 
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x600051_g_ScriptId = 600051
 
--- ÈÎÎñÄ¿±ê NPC
-x600051_g_Name = "³½Ïª"
-x600051_g_Name2 = "Í¯Çå"
+-- nhi®m vø møc tiêu NPC
+x600051_g_Name = "Th¥n Khê"
+x600051_g_Name2 = "Ð°ng Thanh"
 
-----°ïÕ½Êý¾ÝË÷Òý£¬¶ÔÓ¦³ÌÐòÖÐµÄ enum GUILDWAR_INT_ARRAY
+----Bang Chiªn s¯ li®u hß¾ng dçn tra cÑu, ð¯i Ñng trình tñ Trung Ðích enum GUILDWAR_INT_ARRAY
 --x600051_g_A_LingShiIndex = 2
 --x600051_g_B_LingShiIndex = 7
 --
---x600051_g_LingShi = {"ÇàÁúÊ¯","°×»¢Ê¯","ÖìÈ¸Ê¯","ÐþÎäÊ¯","ÅÌ¹ÅÊ¯"}		--ÁéÊ¯Ãû×Ö
---x600051_g_LingShiID = {30603001,30603002,30603003,30603004,30603005}	--ÁéÊ¯ID
+--x600051_g_LingShi = {"Thanh Long ThÕch", "BÕch H± ThÕch", "Chu Tß¾c ThÕch", "Huy«n Võ ThÕch", "Bàn C± ThÕch"} --Linh ThÕch tên
+--x600051_g_LingShiID = {30603001, 30603002, 30603003, 30603004, 30603005}	--Linh ThÕch ID
 
---°ïÕ½¸±±¾½Å±¾
+--Bang Chiªn bän sao k¸ch bän g¯c
 --x600051_g_BangzhanScriptId	= 402047
 
-x600051_g_TankBuff = {31577, 31578, 31579, 31580, 31581,	--ò¿ÓÈ¼ÝÊ»buff
-											31582, 31583, 31584, 31585, 31586}	--Ñ×»Æ¼ÝÊ»buff
+x600051_g_TankBuff = {31577, 31578, 31579, 31580, 31581,	--????buff
+											31582, 31583, 31584, 31585, 31586}	--????buff
 
-x600051_g_AttrBuff = {31567, 31568, 31569, 31570, 31571,	--ò¿ÓÈÕ½³µbuff
-											31572, 31573, 31574, 31575, 31576}	--Ñ×»ÆÕ½³µbuff
+x600051_g_AttrBuff = {31567, 31568, 31569, 31570, 31571,	--????buff
+											31572, 31573, 31574, 31575, 31576}	--????buff
 
-x600051_g_A_TankID = {13339, 13340, 13341, 13342, 13343}--¿Éµã»÷Õ½³µNPCµÄID
-x600051_g_B_TankID = {13334, 13335, 13336, 13337, 13338}--¿Éµã»÷Õ½³µNPCµÄID
+x600051_g_A_TankID = {13339, 13340, 13341, 13342, 13343}--?????NPC?ID
+x600051_g_B_TankID = {13334, 13335, 13336, 13337, 13338}--?????NPC?ID
 
-x600051_g_ImmuneControlBuff = 10474							--NPCÃâÒß¿ØÖÆbuff
+x600051_g_ImmuneControlBuff = 10474							--NPC????buff
 
 x600051_g_Msg = {"#{BHXZ_081103_28}",
 								"#{BHXZ_081103_29}",
@@ -34,22 +34,22 @@ x600051_g_Msg = {"#{BHXZ_081103_28}",
 								"#{BHXZ_081103_31}",
 								"#{BHXZ_081103_32}"}
 
-x600051_g_TankName = {"ÇàÁúÕ½³µ","°×»¢Õ½³µ","ÖìÈ¸Õ½³µ","ÐþÎäÕ½³µ","ÅÌ¹ÅÕ½³µ"}
+x600051_g_TankName = {"Thanh Long Chiªn Xa","BÕch H± Chiªn Xa","Chu Tß¾c Chiªn Xa","Huy«n Vû Chiªn Xa","Bän C± Chiªn Xa"}
 
-x600051_g_A_FirstTankManSelfID = 13						--A°ï±ä»¯³ÉÕ½³µµÄÍæ¼ÒµÄselfidÔÚ32¸ö¸±±¾Êý¾ÝÖÐµÄË÷Òý
-x600051_g_A_SecondTankManSelfID = 14					--A°ï±ä»¯³ÉÕ½³µµÄÍæ¼ÒµÄselfidÔÚ32¸ö¸±±¾Êý¾ÝÖÐµÄË÷Òý
-x600051_g_B_FirstTankManSelfID = 15						--B°ï±ä»¯³ÉÕ½³µµÄÍæ¼ÒµÄselfidÔÚ32¸ö¸±±¾Êý¾ÝÖÐµÄË÷Òý
-x600051_g_B_SecondTankManSelfID = 16					--B°ï±ä»¯³ÉÕ½³µµÄÍæ¼ÒµÄselfidÔÚ32¸ö¸±±¾Êý¾ÝÖÐµÄË÷Òý
-x600051_g_A_FirstTankBuff = 17								--A°ï±ä»¯³ÉÕ½³µµÄBuffIDÔÚ32¸ö¸±±¾Êý¾ÝÖÐµÄË÷Òý
-x600051_g_A_SecondTankBuff = 18								--A°ï±ä»¯³ÉÕ½³µµÄBuffIDÔÚ32¸ö¸±±¾Êý¾ÝÖÐµÄË÷Òý
-x600051_g_B_FirstTankBuff = 19								--B°ï±ä»¯³ÉÕ½³µµÄBuffIDÔÚ32¸ö¸±±¾Êý¾ÝÖÐµÄË÷Òý
-x600051_g_B_SecondTankBuff = 20								--B°ï±ä»¯³ÉÕ½³µµÄBuffIDÔÚ32¸ö¸±±¾Êý¾ÝÖÐµÄË÷Òý
-x600051_g_A_FirstTankPos = 21									--A°ï±ä»¯³ÉÕ½³µµÄPosÔÚ32¸ö¸±±¾Êý¾ÝÖÐµÄË÷Òý
-x600051_g_A_SecondTankPos = 22								--A°ï±ä»¯³ÉÕ½³µµÄPosÔÚ32¸ö¸±±¾Êý¾ÝÖÐµÄË÷Òý
-x600051_g_B_FirstTankPos = 23									--B°ï±ä»¯³ÉÕ½³µµÄPosÔÚ32¸ö¸±±¾Êý¾ÝÖÐµÄË÷Òý
-x600051_g_B_SecondTankPos = 24								--B°ï±ä»¯³ÉÕ½³µµÄPosÔÚ32¸ö¸±±¾Êý¾ÝÖÐµÄË÷Òý
-x600051_g_A_TankColdTime = 25									--A°ïÕ½³µÀäÈ´Ê±¼äÔÚ32¸ö¸±±¾Êý¾ÝÖÐµÄË÷Òý
-x600051_g_B_TankColdTime = 26									--B°ïÕ½³µÀäÈ´Ê±¼äÔÚ32¸ö¸±±¾Êý¾ÝÖÐµÄË÷Òý
+x600051_g_A_FirstTankManSelfID = 13						--A??????????selfid?32?????????
+x600051_g_A_SecondTankManSelfID = 14					--A??????????selfid?32?????????
+x600051_g_B_FirstTankManSelfID = 15						--B??????????selfid?32?????????
+x600051_g_B_SecondTankManSelfID = 16					--B??????????selfid?32?????????
+x600051_g_A_FirstTankBuff = 17								--A???????BuffID?32?????????
+x600051_g_A_SecondTankBuff = 18								--A???????BuffID?32?????????
+x600051_g_B_FirstTankBuff = 19								--B???????BuffID?32?????????
+x600051_g_B_SecondTankBuff = 20								--B???????BuffID?32?????????
+x600051_g_A_FirstTankPos = 21									--A???????Pos?32?????????
+x600051_g_A_SecondTankPos = 22								--A???????Pos?32?????????
+x600051_g_B_FirstTankPos = 23									--B???????Pos?32?????????
+x600051_g_B_SecondTankPos = 24								--B???????Pos?32?????????
+x600051_g_A_TankColdTime = 25									--A????????32?????????
+x600051_g_B_TankColdTime = 26									--B????????32?????????
 
 
 --MisDescEnd

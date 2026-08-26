@@ -1,30 +1,30 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x222900_g_ScriptId = 222900
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x222900_g_MissionId = 1074
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 --g_MissionIdPre = 
 
---Ä¿±êNPC
-x222900_g_Name	="ÁÖÑÒ"
+--møc tiêu NPC
+x222900_g_Name	="Lâm Nham"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x222900_g_MissionKind = 22
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x222900_g_MissionLevel = 10
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x222900_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x222900_g_MissionName="ÎªÊ¦ÃÅ¶øÕ½"
+--nhi®m vø Danh
+x222900_g_MissionName="Chiªn ğ¤u vì sß môn"
 x222900_g_MissionInfo="#{event_mingjiao_0001}"
-x222900_g_MissionTarget="    ÔÚ¹âÃ÷µîÕÒµ½ÁÖÑÒ#{_INFOAIM98,105,11,ÁÖÑÒ}¡£"
-x222900_g_MissionComplete="  ÄãÊÇĞÂÀ´µÄÍ¬ÃÅ°É£¬ÄãÀ´µÃÌ«ºÃÁË£¬ÎÒÕâÀïÓĞºÜ¶àÊÂÇéĞèÒªÄã°ïÃ¦ÄØ¡£"
+x222900_g_MissionTarget="    — Quang Minh ğïnh tìm Lam Nham #{_INFOAIM98,105,11, Lam Nham}."
+x222900_g_MissionComplete="  Các hÕ là ğ°ng môn m¾i ğªn phäi không. Các hÕ làm tuy®t l¡m. Ta · ğây có nhi«u vi®c c¥n các hÕ giúp ğŞ"
 x222900_g_MoneyJZBonus=800
 
 

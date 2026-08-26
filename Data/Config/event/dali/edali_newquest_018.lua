@@ -1,52 +1,52 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x210266_g_ScriptId = 210266
 x210266_g_NextScriptId = 210278
 
---½»ÈÎÎñNPCÊôĞÔ
+--Giao nhi®m vø NPCthuµc tính
 x210266_g_Position_X = 160
 x210266_g_Position_Z = 158
 x210266_g_SceneID = 2
-x210266_g_AccomplishNPC_Name = "ÕÔÌìÊ¦" 
+x210266_g_AccomplishNPC_Name = "Tri®u Thiên Sß" 
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x210266_g_MissionIdPre =0
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x210266_g_MissionId = 1417
 
---ÈÎÎñÄ¿±ênpc
-x210266_g_Name	="ÕÔÌìÊ¦" 
+--nhi®m vø møc tiêu Npc
+x210266_g_Name	="Tri®u Thiên Sß" 
 
 x210266_g_ItemId = 30505273
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x210266_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x210266_g_MissionLevel = 8
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x210266_g_IfMissionElite = 0
 
---********ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö******
-x210266_g_IsMissionOkFail = 0					--±äÁ¿µÄµÚ0Î»
---**********************************ÒÔÉÏÊÇ¶¯Ì¬****************************
+--********phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng******
+x210266_g_IsMissionOkFail = 0					--????0?
+--**********************************ğã ngoài Th¸ ğµng thái****************************
 
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x210266_g_MissionName="Ï²ÇìÑæ»ğ"
-x210266_g_MissionInfo="#{XSRW_100111_39}"  --ÈÎÎñÃèÊöÖÁÓÚÊ²Ã´µØ·½ºÏÊÊ£¬ÄãÖ»Òª´ò¿ª#Y±³°ü#WÀïµÄÈÎÎñµÀ¾ßÀ¸£¬ÓÒ¼üµãÒ»ÏÂÕâ¸ö#Y´«Ñ¶Ñæ»ğ#W£¬Ëü¾ÍÄÜ¸øÄãÏà¹ØµÄÌáÊ¾¡£
-x210266_g_MissionTarget="#{XSRW_100111_95}"		--ÈÎÎñÄ¿±ê
-x210266_g_ContinueInfo="#{XSRW_100111_96}"		--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x210266_g_MissionComplete="#{XSRW_100111_40}"					--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø vån bän miêu tä
+x210266_g_MissionName="HÖ Khánh Di®m Höa"
+x210266_g_MissionInfo="#{XSRW_100111_39}"  --????????????,?????#Y??#W???????,???????#Y????#W,???????????
+x210266_g_MissionTarget="#{XSRW_100111_95}"		--????
+x210266_g_ContinueInfo="#{XSRW_100111_96}"		--??????npc??
+x210266_g_MissionComplete="#{XSRW_100111_40}"					--????npc????
 --x210266_g_ItemBonus={{id=10111000,num=1}}
-x210266_g_SignPost = {x = 160, z = 157, tip = "ÕÔÌìÊ¦"}
+x210266_g_SignPost = {x = 160, z = 157, tip = "Tri®u Thiên Sß"}
 x210266_g_MoneyJZBonus=100
 x210266_g_ExpBonus=600
-x210266_g_SignPost_1 = {x = 139, z = 169, tip = "Ñæ»ğÈ¼·Åµã"}
+x210266_g_SignPost_1 = {x = 139, z = 169, tip = "Ği¬m ğ¯t Höa pháo"}
 
-x210266_g_Custom	= { {id="ÒÑÈ¼·ÅÑæ»ğ",num=1} }
+x210266_g_Custom	= { {id="Ğã ğ¯t lØa",num=1} }
 
 
 --MisDescEnd

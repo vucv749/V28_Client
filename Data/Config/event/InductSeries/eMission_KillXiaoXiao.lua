@@ -1,50 +1,50 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x500607_g_ScriptId	= 500607
 
---Ä¿±êÈÎÎñNPCÊôĞÔ
+--møc tiêu nhi®m vø NPCthuµc tính
 x500607_g_Position_X=160.2399
 x500607_g_Position_Z=134.1486
 x500607_g_SceneID=0
-x500607_g_AccomplishNPC_Name="ÖÜÌìÊ¦"
+x500607_g_AccomplishNPC_Name="Châu Thiên Sß"
 
---Ç°ĞøÈÎÎñºÅ
+--Ti«n Tøc nhi®m vø Hào
 x500607_g_PreMissionId	=	416
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x500607_g_MissionId			= 417
---ÏÂÒ»¸öÈÎÎñµÄID
+--kª tiªp nhi®m vø Ğích ID
 x500607_g_MissionIdNext	= 418
---ÏÂÒ»¸öÈÎÎñµÄScriptId
+--kª tiªp nhi®m vø Ğích ScriptId
 x500607_g_NextScriptId	= 500608
---ÁìÈ¡ÈÎÎñÄ¿±êËùÔÚ³¡¾°
+--lînh nhi®m vø møc tiêu ch², n½i trß¶ng cänh
 x500607_g_AcceptNPC_SceneID	=	0
---ÁìÈ¡ÈÎÎñnpc
-x500607_g_Name 					= "Á¢·±"
---ÈÎÎñ¹éÀà
+--lînh nhi®m vø Npc
+x500607_g_Name 					= "L§p Ph°n"
+--nhi®m vø phân loÕi
 x500607_g_MissionKind			= 11
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x500607_g_MissionLevel		= 35
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x500607_g_IfMissionElite	= 0
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x500607_g_IsMissionOkFail	= 0		--ÈÎÎñ²ÎÊıµÄµÚ0Î»
+--nhi®m vø hay không ğã hoàn thành
+x500607_g_IsMissionOkFail	= 0		--??????0?
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x500607_g_MissionName			= "½­ºşÏüĞ¡"
---ÈÎÎñÃèÊö
+--nhi®m vø vån bän miêu tä
+x500607_g_MissionName			= "ĞÕo Chích Giang h°"
+--nhi®m vø miêu tä
 x500607_g_MissionInfo			= "#{YD_20080421_57}"
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x500607_g_MissionTarget		= "#{YD_20080421_56}"
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
 x500607_g_ContinueInfo		= "#{YD_20080421_190}"
---Íê³ÉÈÎÎñnpcËµµÄ»°
+--hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
 x500607_g_MissionComplete	= "#{YD_20080421_58}"
---¿ÉÒÔÍê³ÉµÄ»·Êı
+--có th¬ hoàn thành Ğích Hoàn S±
 x500607_g_MaxRound	= 1
---¿ØÖÆ½Å±¾
+--kh¯ng chª k¸ch bän g¯c
 x500607_g_ControlScript		= 001066
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x500607_g_Custom	= { {id="ÒÑÉ±ËÀ¶ñ°Ô",num=1} }
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x500607_g_Custom	= { {id="Ğã tìm th¤y ğßşc ngß¶i hß¾ng dçn bäo v® Môn Phái",num=1} }
 
 --MisDescEnd

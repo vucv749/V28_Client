@@ -1,41 +1,41 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200026_g_ScriptId = 200026
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200026_g_MissionId = 47
 
---Ç°ĞøÈÎÎñ
+--Ti«n Tøc nhi®m vø
 x200026_g_PreMissionId = 21
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x200026_g_Position_X=277
 x200026_g_Position_Z=133
 x200026_g_SceneID=0
-x200026_g_AccomplishNPC_Name="ÇÇ·å"
+x200026_g_AccomplishNPC_Name="Ki«u Phong"
 
---Ä¿±êNPC
-x200026_g_Name	="ÇÇ·å"
+--møc tiêu NPC
+x200026_g_Name	="Ki«u Phong"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200026_g_MissionKind = 47
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200026_g_MissionLevel = 40
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200026_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x200026_g_MissionName="ºó»áÓĞÆÚ"
-x200026_g_MissionInfo="  $N£¬ÄãµÄ°ïÖú£¬ÇÇÄ³²»Ê¤¸Ğ¼¤¡£#r  ÇÇÄ³Ã÷ÈÕÒ»Ôç±ãÒª´ø°¢ÖìÀ´¾ÛÏÍ×¯£¬ÇëÑ¦ÉñÒ½¸øËıÖÎÉË¡£¾ÛÏÍ×¯ÀïÄÇĞ©ÎŞÖªĞ¡ÈË¶ÔÎÒÇÇÄ³ÔìÒ¥ÎÜÃï£¬µ¹ÊÇ²»ÄÑ£¬Òª³öÊÖÉËÎÒ£¬Î´±ØÓĞÕâÃ´ÈİÒ×¡£#r  $N£¬Ã÷ÈÕÒ»Ôç£¬ÎÒÃÇÂåÑô³Ç¶«ÃÅÔÙ¼û£¡"
-x200026_g_MissionTarget="  ÔÚ#GÂåÑô³Ç¶«ÃÅ#W¸½½üÕÒµ½#RÇÇ·å#W#{_INFOAIM275,134,0,ÇÇ·å}¡£"
-x200026_g_MissionComplete="  $N£¬ÓŞĞÖÀ´³Ù£¬ÀÍÄãÔÚÕâÀïµÈºò¶àÊ±ÁË¡£ÎÒÃÇÕâ¾Í³ö·¢È¥¾ÛÏÍ×¯°É¡£"
+--nhi®m vø Danh
+x200026_g_MissionName="KÏ sau g£p m£t"
+x200026_g_MissionInfo="  $N, Sñ giúp ğŞ cüa các hÕ, Ki«u m² vô cùng cäm kích. #rSáng s¾m ngày mai Ki«u m² phäi ğßa A Châu t¾i Tø Hi«n Trang, M¶i Tiªt Th¥n Y tr¸ thß½ng giúp cô ta. Nhæng kë ti¬u nhân vô tri trong Tø Hi«n Trang vu cáo b¸a ğ£t ğ¯i v¾i Ki«u m² không có gì là khó, nhßng mu¯n ra tay ğã thß½ng ta, không phäi là d­. #r$N, sáng s¾m ngày mai, cØa Ğông thành LÕc Dß½ng chúng ta g£p nhau!"
+x200026_g_MissionTarget="  — g¥n #GĞÔng môn thành LÕc Dß½ng#W tìm#R Tiêu Phong #W#{_INFOAIM275,134,0, Tiêu Phong}."
+x200026_g_MissionComplete="  $N, huynh ğªn muµn, Phi«n ğ® · ğây ğşi lâu. Chúng ta xu¤t hành ği Tø Hi«n Trang thôi"
 
 x200026_g_MoneyJZBonus=5940
 x200026_g_exp=5400
 
-x200026_g_Custom	= { {id="ÒÑÕÒµ½ÇÇ·å",num=1} }
+x200026_g_Custom	= { {id="Ğã tìm ğßşc Ki«u Phong",num=1} }
 x200026_g_IsMissionOkFail = 0
 
 

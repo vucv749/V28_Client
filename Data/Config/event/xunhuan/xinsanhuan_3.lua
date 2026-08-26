@@ -1,37 +1,37 @@
 --MisDescBegin
 
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x050222_g_ScriptId = 050222
 
---½ÇÉ«»îÔ¾Öµ¸±±¾µÄindex
+--vai di­n sinh ğµng Tr¸ bän sao Ğích index
 x050222_g_activePointIndex = 11
 
--- ÈÎÎñºÅ
-x050222_g_MissionId = 1258					--1256 »Æ½ğÖ®Á´--1257 Ğş·ğÖé--1258 ÈÛÑÒÖ®µØ
+-- nhi®m vø Hào
+x050222_g_MissionId = 1258					--1256 ????--1257 ???--1258 ????
 
--- ÈÎÎñÄ¿±ê NPC
-x050222_g_Name = "ºÎÔÃ"
+-- nhi®m vø møc tiêu NPC
+x050222_g_Name = "Hà Duy®t"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x050222_g_MissionKind = 8
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x050222_g_MissionLevel = 10000
 
--- ÈÎÎñÎÄ±¾ÃèÊö
-x050222_g_MissionName = "ÈÛÑÒÖ®µØ"
-x050222_g_MissionInfo = "    "														-- ÈÎÎñÃèÊö
-x050222_g_MissionTarget = "    #{LLFBM_80918_3}"						-- ÈÎÎñÄ¿±ê
---x050222_g_ContinueInfo = "    "					-- Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x050222_g_SubmitInfo = "#{LLFB_80816_53}"										-- Ìá½»Ê±µÄ´ğ¸´
---x050222_g_MissionComplete = "   #{LLFB_80816_53}"	--Íê³ÉÈÎÎñnpcËµµÄ»°
+-- nhi®m vø vån bän miêu tä
+x050222_g_MissionName = "Dung Nham Chi Ğ¸a"
+x050222_g_MissionInfo = "    "														-- ????
+x050222_g_MissionTarget = "    #{LLFBM_80918_3}"						-- ????
+--x050222_g_ContinueInfo = " " -- chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
+x050222_g_SubmitInfo = "#{LLFB_80816_53}"										-- ??????
+--x050222_g_MissionComplete = " #{LLFB_80816_53}"	--hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
 
-x050222_g_IsMissionOkFail = 0														-- 0 ºÅÎ»ÖÃ£ºµ±Ç°ÈÎÎñÊÇ·ñÍê³É(0Î´Íê³É£»1Íê³É£»2Ê§°Ü)
-x050222_g_IsKillBossFire = 1														-- 1 ºÅÎ»ÖÃ£ºÉ±ËÀ»ğÑæÑıÄ§ÊıÁ¿(0ºÍ1)
-x050222_g_Param_sceneid = 3															-- 3 ºÅÎ»ÖÃ£ºµ±Ç°ÈÎÎñÊı¾İµÄ3Î»ÖÃÉèÖÃÎª³¡¾°ID
+x050222_g_IsMissionOkFail = 0														-- 0 ???:????????(0???;1??;2??)
+x050222_g_IsKillBossFire = 1														-- 1 ???:????????(0?1)
+x050222_g_Param_sceneid = 3															-- 3 ???:???????3???????ID
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,´ÓÈÎÎñ²ÎÊıµÄµÚ1Î»¿ªÊ¼
-x050222_g_Custom	= { {id="ÒÑÉ±ËÀ£º#r  »ğÑæÑıÄ§",num=1} }
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, Thung nhi®m vø tham s¯ Ğích Ğ® 1V¸ b¡t ğ¥u
+x050222_g_Custom	= { {id="Ğã ğánh bÕi: #r Höa Di®m Yêu Ma",num=1} }
 
 
 --MisDescEnd

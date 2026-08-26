@@ -1,37 +1,37 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200053_g_ScriptId = 200053
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200053_g_MissionId = 43
 
---Ç°ĞøÈÎÎñºÅ
+--Ti«n Tøc nhi®m vø Hào
 x200053_g_PreMissionId = 42
 
---Ä¿±êNPC
-x200053_g_Name = "ÏşÀÙ"
+--møc tiêu NPC
+x200053_g_Name = "Hi¬u Lôi"
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200053_g_IfMissionElite = 1
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200053_g_MissionLevel = 70
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200053_g_MissionKind = 49
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x200053_g_MissionName="¾Æ°ÕÎÊ¾ıÈıÓï"
+--nhi®m vø vån bän miêu tä
+x200053_g_MissionName="Bày ti®c rßşu höi Quân Tam Ngæ"
 x200053_g_MissionInfo="#{Mis_juqing_0043}"
-x200053_g_MissionTarget="#{Mis_juqing_Tar_0043}"	--ÈÎÎñÄ¿±ê
-x200053_g_MissionComplete="  Äã²»ÊÇ$NÂğ£¿ÎÒÃÇ¹«Ö÷Ò²³£³£ÌáÆğÄãÄØ£¡¿ìÇë×ø£¬¿ìÇë×ø¡£"
+x200053_g_MissionTarget="#{Mis_juqing_Tar_0043}"	--????
+x200053_g_MissionComplete="  Huynh không phäi là $N sao? Công chúa chúng ta luôn nh¡c t¾i huynh. Mau ng°i ği"
 
 x200053_g_MoneyBonus=48600
 x200053_g_exp=86400
 
 x200053_g_RadioItemBonus={{id=10414017 ,num=1},{id=10414018,num=1},{id=10414019,num=1}}
 
-x200053_g_Custom	= { {id="ÒÑÕÒµ½ÏşÀÙ",num=1} }
+x200053_g_Custom	= { {id="Ğã tìm ğßşc Hi¬u Lôi",num=1} }
 
 
 --MisDescEnd

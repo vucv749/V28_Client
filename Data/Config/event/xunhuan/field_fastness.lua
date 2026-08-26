@@ -1,40 +1,40 @@
 --MisDescBegin
 
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x050102_g_ScriptId = 050102
 
---½ÇÉ«»îÔ¾Öµ¸±±¾µÄindex
+--vai di­n sinh ğµng Tr¸ bän sao Ğích index
 x050102_g_activePointIndex = 8
 
--- ÈÎÎñºÅ
+-- nhi®m vø Hào
 x050102_g_MissionId = 1262					-- 1260 - 1269
 
--- ÉÏÒ»¸öÈÎÎñµÄ ID
+-- Thßşng mµt cái nhi®m vø Ğích ID
 -- g_MissionIdPre = 1260
 
--- ÈÎÎñÄ¿±ê NPC
-x050102_g_Name = "Ç®ºêÓî"
+-- nhi®m vø møc tiêu NPC
+x050102_g_Name = "Ti«n Hoành Vû"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x050102_g_MissionKind = 8
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x050102_g_MissionLevel = 10000
 
--- ÈÎÎñÎÄ±¾ÃèÊö
-x050102_g_MissionName = "½Ë·Ë"
-x050102_g_MissionInfo = "    ÖÕÓÚÕÒµ½·ËÍ½µÄÀÏ³²ÁË£¬%s£¬ÏÂÃæ»¹ÓĞ¸ü¼ÓÖØÒªµÄÈÎÎñ½»¸øÄã¡£È¥É±ËÀ·ËÍ½Ê×Áì¸ğÈÙ£¬ÎªÁËÎÒÃÇµÄ¼ÒÔ°£¡"	-- ÈÎÎñÃèÊö
-x050102_g_MissionTarget = "    ËÕÖİµÄÇ®ºêÓî#{_INFOAIM62,162,1,Ç®ºêÓî}ÈÃÄãÉ±ËÀ·ËÍ½Ê×Áì¸ğÈÙ¡£#r    #{FQSH_090206_01}"									-- ÈÎÎñÄ¿±ê
-x050102_g_ContinueInfo = "    ´ËÈ¥·Ë³²½Ë·ËÊÆ±ØÀ§ÄÑÖØÖØ£¬%s£¬Äã×¼±¸ºÃÁËÃ´£¿"			-- Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x050102_g_SubmitInfo = "    ÈÎÎñ×öµÃÔõÃ´ÑùÁË£¿"										-- Ìá½»Ê±µÄ´ğ¸´
-x050102_g_MissionComplete = "    ÎªÄã»¶ºô£¬×ğ¾´µÄ%s£¬¸ĞĞ»ÄãÊÖÈĞ·ËÊ×£¬ÎªÎÒÃÇ´øÀ´ÁËºÍÆ½¡£ÇëÊÕÏÂÕâĞ©À¡Ôù¡£"	--Íê³ÉÈÎÎñnpcËµµÄ»°
+-- nhi®m vø vån bän miêu tä
+x050102_g_MissionName = "Sào huy®t cüa phï"
+x050102_g_MissionInfo = "R¯t cøc tìm ğßşc ğÕo t£c Ğích ± Li­u, %s, phía dß¾i còn có càng thêm tr÷ng yªu Ğích nhi®m vø giao cho Nhî. KhÑ giªt chªt ğÕo t£c thü lînh Cát Vinh, vì nhà cüa chúng ta Viên!"	-- ????
+x050102_g_MissionTarget = "Tô Châu Ğích Ti«n H°ng Vû#{_INFOAIM62, 162, 1, Ti«n H°ng Vû}cho ngß½i giªt chªt ğÕo t£c thü lînh Cát Vinh. #r #{FQSH_090206_01}"									-- ????
+x050102_g_ContinueInfo = "ThØ KhÑ sào huy®t tiêu di®t thª t¤t khó khån th§t mÕnh, %s, Nhî chu¦n b¸ t¯t Li­u Ma?"			-- ??????npc??
+x050102_g_SubmitInfo = "Nhi®m vø làm ğßşc thª nào Li­u?"										-- ??????
+x050102_g_MissionComplete = "Cho ngß½i hoan hô, tôn kính Ğích%s, Cäm TÕ Nhî chính tay ğâm trùm th± phï, cho chúng ta mang ğªn Li­u hòa bình. Thïnh nh§n l¤y này ğó t£ng."	--????npc???
 
-x050102_g_IsMissionOkFail = 0														-- 0 ºÅ£ºµ±Ç°ÈÎÎñÊÇ·ñÍê³É(0Î´Íê³É£»1Íê³É£»2Ê§°Ü)
-x050102_g_DemandKill = { { id = 4130, num = 1 } }									-- 1 ºÅ£¬¹ÖÎïĞÅÏ¢
-x050102_g_Param_sceneid = 2															-- 2 ºÅ£ºµ±Ç°¸±±¾ÈÎÎñµÄ³¡¾°ºÅ
+x050102_g_IsMissionOkFail = 0														-- 0 ?:????????(0???;1??;2??)
+x050102_g_DemandKill = { { id = 4130, num = 1 } }									-- 1 ?,????
+x050102_g_Param_sceneid = 2															-- 2 ?:??????????
 
--- ÈÎÎñ½±Àø
--- ½±Àø¾­Ñé = Íæ¼ÒµÈ¼¶ * x050102_g_k - x050102_g_b
+-- nhi®m vø thß·ng cho
+-- thß·ng cho kinh nghi®m = ngß¶i ch½i c¤p b§c * x050102_g_k - x050102_g_b
 x050102_g_k = 3323
 x050102_g_b = 45613
 

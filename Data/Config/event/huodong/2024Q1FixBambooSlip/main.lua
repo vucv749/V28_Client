@@ -9,35 +9,35 @@ x998681_g_LevelLimit = 30
 x998681_g_TimeStart = 20240329
 x998681_g_TimeEnd = 20240410
 
---½ÓÈÎÎñnpc
-x998681_g_AcceptNPC_Name="Å·ÑôÔÂ"--½ÓÈÎÎñµÄnpc»òÕßnpcÁĞ±í
+--tiªp nh§n chÑc vø Vø Npc
+x998681_g_AcceptNPC_Name="Âu Dß½ng Nguy®t"--????npc??npc??
 
---½»ÈÎÎñnpc
-x998681_g_Position_X=177--Íê³ÉÈÎÎñNPCÊôĞÔ
+--Giao nhi®m vø Npc
+x998681_g_Position_X=177--????NPC??
 x998681_g_Position_Z=97
 x998681_g_SceneID=0
-x998681_g_AccomplishNPC_Name="Å·ÑôÔÂ"
+x998681_g_AccomplishNPC_Name="Âu Dß½ng Nguy®t"
 
 
---ÈÎÎñÊı¾İ
+--nhi®m vø s¯ li®u
 x998681_g_MissionKind = 3
 x998681_g_MissionLevel = 30
 x998681_g_IfMissionElite = 0
 
-x998681_g_IsMissionOkFail = 0--ÈÎÎñÍê³É±êÖ¾Î»(Ò»¶¨ÒªÎª0)
-x998681_g_IsMissionTargetDone = 1--ÈÎÎñÍê³É±êÖ¾Î»
-x998681_g_IsMissionSubmitType = 3 --ÈÎÎñÌá½»ÀàĞÍ1£¬ÆÕÍ¨2£¬¸ß¼¶
+x998681_g_IsMissionOkFail = 0--???????(????0)
+x998681_g_IsMissionTargetDone = 1--???????
+x998681_g_IsMissionSubmitType = 3 --??????1,??2,??
 
 
-x998681_g_MissionName="#{TGX_231229_3}"--ÈÎÎñÃû
-x998681_g_MissionInfo="#{TGX_231229_9}"--ÈÎÎñÎÄ±¾ÃèÊö£¨ÈÎÎñÁìÈ¡¶Ô°×£©
-x998681_g_MissionComplete="#{TGX_231229_21}"--ÈÎÎñÍê³É¶Ô°×
-x998681_g_MissionUnComplete="#{TGX_231229_22}"--ÈÎÎñÎ´Íê³É¶Ô°×
-x998681_g_MissionTarget="#{TGX_231229_20}"--ÈÎÎñÄ¿±ê(ÈÎÎñÃæ°åÖĞÈÎÎñĞÅÏ¢ÏÔÊ¾ÄÚÈİ)
+x998681_g_MissionName="#{TGX_231229_3}"--???
+x998681_g_MissionInfo="#{TGX_231229_9}"--??????(??????)
+x998681_g_MissionComplete="#{TGX_231229_21}"--??????
+x998681_g_MissionUnComplete="#{TGX_231229_22}"--???????
+x998681_g_MissionTarget="#{TGX_231229_20}"--????(?????????????)
 
---×Ô¶¨ÒåÍê³ÉÇé¿ö£¬ÄÚÈİ²»ÄÜÊ¹ÓÃ×Öµä£¬·Ö±ğ¶ÔÓ¦missionparamµÄµÚ1Î»ºóÑÓ
-x998681_g_Custom = {{id="ÏòÅ·ÑôÔÂÌá½»½ğÎÄÖñ¼ò",num=1}}
-x998681_g_ParamIndex = 2--ÈÎÎñ²ÎÊı0-Íê³É±ê¼Ç1-Íê³ÉÇé¿ö2-Ëæ»úË÷Òı
+--Tñ ğ¸nh nghîa hoàn thành tình hu¯ng, nµi dung không th¬ sØ døng tñ ği¬n, phân bi®t ğ¯i Ñng missionparamĞích Ğ® 1V¸ H§u Diên
+x998681_g_Custom = {{id="Hß¾ng Âu Dß½ng Nguy®t ğ® trình kim vån thë tre",num=1}}
+x998681_g_ParamIndex = 2--????0-????1-????2-????
 
 
 --MisDescEnd

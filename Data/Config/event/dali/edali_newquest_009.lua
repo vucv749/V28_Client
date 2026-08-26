@@ -1,48 +1,48 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x210274_g_ScriptId = 210274
 x210274_g_NextScriptId = 210280
 
---½»ÈÎÎñNPCÊôĞÔ
+--Giao nhi®m vø NPCthuµc tính
 x210274_g_Position_X=214
 x210274_g_Position_Z=284
 x210274_g_SceneID=2
-x210274_g_AccomplishNPC_Name="¶ÎÑÓÇì"
+x210274_g_AccomplishNPC_Name="Ğoàn Diên Khánh"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x210274_g_MissionId = 1408
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x210274_g_MissionIdPre = 1407
 
---½ÓÈÎÎñNPC
-x210274_g_Name	="¸ßÉıÏé"
+--tiªp nh§n chÑc vø Vø NPC
+x210274_g_Name	="Cao Thång Tß¶ng"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x210274_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x210274_g_MissionLevel = 5
 x210274_g_MinMissionLevel = 5
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x210274_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x210274_g_MissionName="´óÀí¹ÖÈË"
+--nhi®m vø Danh
+x210274_g_MissionName="ĞÕi Lı Quái Nhân"
 x210274_g_MissionTarget="#{XSRW_100111_59}"
 x210274_g_MissionInfo="#{XSRW_100111_20}"
 x210274_g_ContinueInfo ="#{XSRW_100111_71}"
 x210274_g_MissionComplete="#{XSRW_100111_21}"
 x210274_g_MoneyJZBonus=100
 x210274_g_ExpBonus = 800
-x210274_g_SignPost = {x = 214, z = 284, tip = "¶ÎÑÓÇì"}
+x210274_g_SignPost = {x = 214, z = 284, tip = "Ğoàn Diên Khánh"}
 
 x210274_g_RadioItemBonus={}
 x210274_g_ItemBonus={}
 
-x210274_g_Custom = { {id="ÒÑÕÒµ½¶ÎÑÓÇì",num=1} }
-x210274_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
+x210274_g_Custom = { {id="Ğã tìm ğßşc Ğoàn Diên Khánh",num=1} }
+x210274_g_IsMissionOkFail = 0		--????0?
 
 
 --MisDescEnd

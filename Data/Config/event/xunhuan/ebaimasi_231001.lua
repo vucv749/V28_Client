@@ -1,54 +1,54 @@
 --MisDescBegin
 
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x231001_g_ScriptId = 231001
 
---¸±±¾Ãû³Æ
-x231001_g_CopySceneName="ÕäççÆå¾Ö"
+--bän sao tên
+x231001_g_CopySceneName="Trân Long KÏ Cuµc"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x231001_g_MissionId = 4013
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x231001_g_MissionIdPre = 4011
 
---Ä¿±êNPC
-x231001_g_Name = "Íõ»ıĞ½"
+--møc tiêu NPC
+x231001_g_Name = "Vß½ng Tích Tân"
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x231001_g_IfMissionElite = 1
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x231001_g_MissionLevel = 10000
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x231001_g_MissionKind = 1
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x231001_g_MissionName="ÕäççÆå¾Ö"
-x231001_g_MissionInfo="É±ËÀÆåÅÌÉÏËùÓĞµÄ108Ã¶Æå×Ó£¬½«Íõ»ıĞ½´ÓÕäççÆå¾ÖµÄ¿ØÖÆÖĞ½â¾È³öÀ´¡£"  --ÈÎÎñÃèÊö
-x231001_g_MissionTarget="É±ËÀ108Ã¶Æå×Ó¡£"	--ÈÎÎñÄ¿±ê
-x231001_g_ContinueInfo="ÄãÒÑ¾­É±ËÀ108Ã¶Æå×ÓÁËÂğ£¿"	--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x231001_g_MissionComplete="Ğ»Ğ»°¡£¬ÎÒÖÕÓÚ´ÓÎŞÊ¤¸ºµÄÆå¾ÖÖĞ½âÍÑ³öÀ´ÁË¡£"	--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø vån bän miêu tä
+x231001_g_MissionName="Trân Long KÏ Cuµc"
+x231001_g_MissionInfo="Giªt chªt bàn c¶ Thßşng t¤t cä Ğích 108Mai quân c¶, Tß¾ng Vß½ng Tích Tân Thung Trân Lung KÏ Cøc Ğích kh¯ng chª Trung giäi cÑu ği ra."  --????
+x231001_g_MissionTarget="Giªt chªt 108Mai quân c¶."	--????
+x231001_g_ContinueInfo="Nhî ğã giªt chªt 108Mai quân c¶ Li­u Ma?"	--??????npc??
+x231001_g_MissionComplete="Cám ½n A, Ngã r¯t cøc chßa t×ng th¡ng bÕi Ğích ván c¶ Trung giäi thoát ği ra Li­u."	--????npc????
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 x231001_g_MoneyBonus=5000
 
---********ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö******
---Ñ­»·ÈÎÎñµÄÊı¾İË÷Òı£¬ÀïÃæ´æ×ÅÒÑ×öµÄ»·Êı MD_LINGLONG_HUAN
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
+--********phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng******
+--tu¥n hoàn nhi®m vø Ğích s¯ li®u hß¾ng dçn tra cÑu, bên trong T°n Trß¾c Dî T¯ Ğích Hoàn S± MD_LINGLONG_HUAN
+--nhi®m vø hay không ğã hoàn thành
 --MissionRound =
---**********************************ÒÔÉÏÊÇ¶¯Ì¬****************************
---½ÇÉ«Mission±äÁ¿ËµÃ÷
-x231001_g_IsMissionOkFail	= 0	--0ºÅ£ºµ±Ç°ÈÎÎñÊÇ·ñÍê³É(0Î´Íê³É£»1Íê³É)
+--**********************************ğã ngoài Th¸ ğµng thái****************************
+--vai di­n Missionlßşng biªn ğ±i thuyªt minh
+x231001_g_IsMissionOkFail	= 0	--0?:????????(0???;1??)
 x231001_g_MissionRound		= 5	--Define MD_BAIMASI_HUAN from ScriptGlobal.lua
 --x231001_g_DemandKill		= { {id=700,num=108} }
-x231001_g_Custom					= { {id="ÒÑÉ±ËÀ£º#rÆå×Ó",num=108} }
-x231001_g_Param_killcount	=	1	--1ºÅ£ºÉ±ËÀÈÎÎñ¹ÖµÄÊıÁ¿
-x231001_g_Param_sceneid		= 2	--2ºÅ£ºµ±Ç°¸±±¾ÈÎÎñµÄ³¡¾°ºÅ
-x231001_g_Param_teamid		= 3	--3ºÅ£º½Ó¸±±¾ÈÎÎñÊ±ºòµÄ¶ÓÎéºÅ
-x231001_g_Param_time			= 4	--4ºÅ£ºÍê³É¸±±¾ËùÓÃÊ±¼ä(µ¥Î»£ºÃë)
---6ºÅ£º¾ßÌå¸±±¾ÊÂ¼ş½Å±¾Õ¼ÓÃ
---7ºÅ£º¾ßÌå¸±±¾ÊÂ¼ş½Å±¾Õ¼ÓÃ
+x231001_g_Custom					= { {id="Ğã di®t: #r#r Kì TØ",num=108} }
+x231001_g_Param_killcount	=	1	--1?:????????
+x231001_g_Param_sceneid		= 2	--2?:??????????
+x231001_g_Param_teamid		= 3	--3?:???????????
+x231001_g_Param_time			= 4	--4?:????????(??:?)
+--6Hào: Cø th¬ bän sao sñ ki®n k¸ch bän g¯c chiªm døng
+--7Hào: Cø th¬ bän sao sñ ki®n k¸ch bän g¯c chiªm døng
 
 --MisDescEnd

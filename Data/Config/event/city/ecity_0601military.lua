@@ -1,38 +1,38 @@
 --MisDescBegin
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x600031_g_ScriptId = 600031
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x600031_g_MissionId = 1109
 
---ÈÎÎñÄ¿±ênpc
-x600031_g_Name = "Îä´óÍş"
+--nhi®m vø møc tiêu Npc
+x600031_g_Name = "Võ ĞÕi Uy"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x600031_g_MissionKind = 50
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x600031_g_MissionLevel = 10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x600031_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
-x600031_g_IsMissionOkFail = 0							-- ÈÎÎñÍê³É±ê¼Ç
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+x600031_g_IsMissionOkFail = 0							-- ??????
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñ±äÁ¿µÚÒ»Î»ÓÃÀ´´æ´¢Ëæ»úµÃµ½µÄ½Å±¾ºÅ
---ÈÎÎñÎÄ±¾ÃèÊö
-x600031_g_MissionName = "¹ú·ÀÈÎÎñ"
-x600031_g_MissionInfo = ""													--ÈÎÎñÃèÊö
-x600031_g_MissionTarget = "    Ê¹ÓÃÑ²ÂßÁî£¬ÄÃÏÂ¿ÉÒÉµÄÈË¡£#r#{BHRW_091224_1}"	--ÈÎÎñÄ¿±ê
-x600031_g_ContinueInfo = "    ÊÂÇé½øÕ¹µÃÈçºÎ£¿"						--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x600031_g_MissionComplete = "    ¸ÉµÃ²»´í£¬ÉõºÃÉõºÃ¡£"						--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø lßşng biªn ğ±i ğ® nh¤t v¸ dùng ğ¬ t°n træ TuÏ C½ nh§n ğßşc Ğích k¸ch bän g¯c Hào
+--nhi®m vø vån bän miêu tä
+x600031_g_MissionName = "Nhi®m vø qu¯c phòng"
+x600031_g_MissionInfo = ""													--????
+x600031_g_MissionTarget = "SØ døng Tu¥n La Linh, b¡t khä nghi Ğích Nhân. #r#{BHRW_091224_1}"	--????
+x600031_g_ContinueInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"						--??????npc??
+x600031_g_MissionComplete = "Làm ğßşc không t°i, r¤t t¯t r¤t t¯t."						--????npc????
 
 x600031_g_MissionRound = 79
 
--- Í¨ÓÃ³ÇÊĞÈÎÎñ½Å±¾
+-- thông døng thành th¸ nhi®m vø k¸ch bän g¯c
 x600031_g_CityMissionScript = 600001
 x600031_g_MilitaryScript = 600030
 

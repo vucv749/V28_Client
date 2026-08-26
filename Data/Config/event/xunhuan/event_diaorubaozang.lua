@@ -1,39 +1,39 @@
 --MisDescBegin
 
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x229021_g_ScriptId = 229021
 
---¸±±¾Ãû³Æ
-x229021_g_CopySceneName="±¦²Ø"
+--bän sao tên
+x229021_g_CopySceneName="Kho báu"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x229021_g_MissionId = 702
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x229021_g_MissionIdPre = 701
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x229021_g_IfMissionElite = 1
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x229021_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x229021_g_MissionLevel = 7
 
---********ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö******
---Ñ­»·ÈÎÎñµÄÊı¾İË÷Òı£¬ÀïÃæ´æ×ÅÒÑ×öµÄ»·Êı MD_MURENXIANG_HUAN
+--********phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng******
+--tu¥n hoàn nhi®m vø Ğích s¯ li®u hß¾ng dçn tra cÑu, bên trong T°n Trß¾c Dî T¯ Ğích Hoàn S± MD_MURENXIANG_HUAN
 --g_MissionRound = 9
---**********************************ÒÔÉÏÊÇ¶¯Ì¬****************************
+--**********************************ğã ngoài Th¸ ğµng thái****************************
 
---ÈÎÎñÎÄ±¾ÃèÊö
+--nhi®m vø vån bän miêu tä
 x229021_g_MissionName=""
-x229021_g_MissionInfo=""  --ÈÎÎñÃèÊö
-x229021_g_MissionTarget=""	--ÈÎÎñÄ¿±ê
-x229021_g_ContinueInfo=""	--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x229021_g_MissionComplete=""	--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+x229021_g_MissionInfo=""  --????
+x229021_g_MissionTarget=""	--????
+x229021_g_ContinueInfo=""	--??????npc??
+x229021_g_MissionComplete=""	--????npc????
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 x229021_g_MoneyBonus=1
 
 

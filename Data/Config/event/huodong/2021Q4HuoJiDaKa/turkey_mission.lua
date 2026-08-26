@@ -1,39 +1,39 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x888767_g_ScriptId = 888767
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x888767_g_Position_X=177
 x888767_g_Position_Z=98
 x888767_g_SceneID=0
---x888767_g_AccomplishNPC_Name="»ğ¼¦ÏÈÉú"
+--x888767_g_AccomplishNPC_Name="gà tây tiên sinh"
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x888767_g_MissionIdPre = -1
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x888767_g_MissionId = 2040
 
---ÈÎÎñÄ¿±ênpc
-x888767_g_Name	="°¢ÎØ"
+--nhi®m vø møc tiêu Npc
+x888767_g_Name	="A Ô"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x888767_g_MissionKind = 3
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x888767_g_MissionLevel		= 30
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x888767_g_IfMissionElite	= 0
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x888767_g_IsMissionOkFail	= 0		--ÈÎÎñ²ÎÊıµÄµÚ0Î»
+--nhi®m vø hay không ğã hoàn thành
+x888767_g_IsMissionOkFail	= 0		--??????0?
 
---ÈÎÎñÎÄ±¾ÃèÊö
+--nhi®m vø vån bän miêu tä
 x888767_g_MissionName			= "#{XRBG_20240412_79}"
---ÈÎÎñÃèÊö
---x888767_g_MissionInfo			= "»ğ¼¦µÄÈÎÎñÃèÊö×Öµä"
---ÈÎÎñÄ¿±ê
+--nhi®m vø miêu tä
+--x888767_g_MissionInfo = "gà tây Ğích nhi®m vø miêu tä tñ ği¬n"
+--nhi®m vø møc tiêu
 x888767_g_MissionTarget		= ""
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x888767_g_Custom	= { {id="ÒÑÍê³É»ğ¼¦×°ÅÌ",num=1} }
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x888767_g_Custom	= { {id="Dî hoàn thành gà tây Trang Bàn",num=1} }
 
 --MisDescEnd

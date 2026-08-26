@@ -1,45 +1,45 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x600045_g_ScriptId	= 600045
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x600045_g_Position_X=133
 x600045_g_Position_Z=50
 
-x600045_g_AccomplishNPC_Name="Îä´óÍş"
+x600045_g_AccomplishNPC_Name="Võ ĞÕi Uy"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x600045_g_MissionId			= 1121
 
---ÈÎÎñÄ¿±ênpc
-x600045_g_Name 					= "Îä´óÍş"
---ÈÎÎñ¹éÀà
-x600045_g_MissionKind			= 50 --Íæ¼Ò³ÇÊĞ
---ÈÎÎñµÈ¼¶
+--nhi®m vø møc tiêu Npc
+x600045_g_Name 					= "Võ ĞÕi Uy"
+--nhi®m vø phân loÕi
+x600045_g_MissionKind			= 50 --????
+--nhi®m vø c¤p b§c
 x600045_g_MissionLevel		= 10000
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x600045_g_IfMissionElite	= 0
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x600045_g_IsMissionOkFail	= 0		--ÈÎÎñ²ÎÊıµÄµÚ0Î»
+--nhi®m vø hay không ğã hoàn thành
+x600045_g_IsMissionOkFail	= 0		--??????0?
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x600045_g_MissionName			= "´òÌ½ÏûÏ¢"
---ÈÎÎñÃèÊö
-x600045_g_MissionInfo			= "°ïÅÉÈÎÎñ£¬ÀûÓÃÇé±¨²¾´òÌ½ÆäËû°ïÅÉ³ÇÊĞĞÅÏ¢£¡"
---ÈÎÎñÄ¿±ê
-x600045_g_MissionTarget		= "    ĞèÒªºÍ±¾°ï³ÉÔ±×é¶ÓÊÕ¼¯3¸ö²»Í¬°ïÅÉ³ÇÊĞÇé±¨£¬È»ºóµ½#GÎä´óÍş#B[133,50]#W´¦ÁìÈ¡½±Àø£¡"
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x600045_g_ContinueInfo		= "¿´À´Äã»¹Ã»ÓĞÍê³É°¡£¡"
---Íê³ÉÈÎÎñnpcËµµÄ»°
-x600045_g_MissionComplete	= "×öµÄºÜºÃ£¬¸ĞĞ»ÄãÎª±¾°ïÅÉ×ö³öµÄ¹±Ï×£¡"
+--nhi®m vø vån bän miêu tä
+x600045_g_MissionName			= "Do Thám tin tÑc"
+--nhi®m vø miêu tä
+x600045_g_MissionInfo			= "Nhi®m vø bang phái, dùng s± tình báo ğ¬ do thám thông tin các bang phái khác!"
+--nhi®m vø møc tiêu
+x600045_g_MissionTarget		= "    Thành l§p ğµi cùng thành viên bang hµi và ği thu th§p tình báo cüa 3 bang phái khác nhau. Sau ğó ğªn ch² #GV  ĞÕi Uy#B[133,50]#W lãnh thß·ng!"
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
+x600045_g_ContinueInfo		= "Chßa hoàn thành!"
+--hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
+x600045_g_MissionComplete	= "Ğa tÕ các hÕ ğã c¯ng hiªn cho bang phái!"
 
---ÈÎÎñÊÇ·ñÍê³É
---x600045_g_Mission_IsComplete = 0		--ÈÎÎñ²ÎÊıµÄµÚ0Î»
---´òÌ½µÚ¼¸¸ö³ÇÊĞ
-x600045_g_city 				 	= 1		 --ÈÎÎñ²ÎÊıµÄµÚ1Î»
+--nhi®m vø hay không hoàn thành
+--x600045_g_Mission_IsComplete = 0 --nhi®m vø tham s¯ Ğích Ğ® 0V¸
+--tìm hi¬u ğ® m¤y Cá thành th¸
+x600045_g_city 				 	= 1		 --??????1?
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
 
-x600045_g_Custom	= { {id="ÒÑ´òÌ½³ÇÊĞ",num=3} }
+x600045_g_Custom	= { {id="Ğã Do thám thành th¸",num=3} }
 
 --MisDescEnd

@@ -1,47 +1,47 @@
 --MisDescBegin
 x893065_g_ScriptId = 893065
-x893065_g_MainScriptId = 893069--Ö÷½Å±¾ºÅ
+x893065_g_MainScriptId = 893069--????
 x893065_g_KDZZID = 1001000182
 x893065_g_KDZZSubID = 2
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x893065_g_MissionId = 2051
 x893065_g_MissionKind = 9
 x893065_g_MissionLevel = 50
 x893065_g_IfMissionElite = 0
 x893065_g_PreMissionId = 2050
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x893065_g_MissionName="#{ZSYR_211227_64}"
 x893065_g_MissionTarget="#{ZSYR_211227_67}"
 x893065_g_MissionComplete="#{ZSYR_211227_66}"
-x893065_g_Custom={ {id="ÒÑ¸§Î¿ÕäÊÞ",num=1} }
+x893065_g_Custom={ {id="Dî an üi Trân Thú",num=1} }
 
---Íê³ÉÈÎÎñNPCÊôÐÔ
+--hoàn thành nhi®m vø NPCthuµc tính
 x893065_g_Position_X=265
 x893065_g_Position_Z=129
 x893065_g_SceneID=2
-x893065_g_AccomplishNPC_Name="ÔÆÆ®Æ®"
+x893065_g_AccomplishNPC_Name="Vân Phiêu Phiêu"
 
---ÈÎÎñ²ÎÊý
-x893065_g_IsMissionOkFail = 0--ÊÇ·ñÍê³É
+--nhi®m vø tham s¯
+x893065_g_IsMissionOkFail = 0--????
 
---npc¾àÀë
+--Npc khoäng cách
 x893065_g_NpcDist = 5
 
---±³°ü¿ÕÎ»
+--tay nãi không v¸
 x893065_g_TaskSpace = 2
---µÀ¾ßÊ¹ÓÃ
+--ðÕo cø sØ døng
 x893065_g_TanXiangId = 38002512
 x893065_g_TanXiangCDTime = 15000--15s
 x893065_g_ShouLongId = 38002513
 x893065_g_ShouLongDist = 3
 
---±³°ü¿ÕÎ»
+--tay nãi không v¸
 x893065_g_BagSpace = 1
---½±ÀøµÀ¾ß
+--thß·ng cho ðÕo cø
 x893065_g_BonusItem = 38002488
---½±Àø
+--thß·ng cho
 x893065_g_ExpBonus =
 {
 	[30]=337438, [31]=347256, [32]=357095, [33]=366923, [34]=377147, [35]=386987, [36]=396817, [37]=406656, [38]=416879, [39]=426706, 

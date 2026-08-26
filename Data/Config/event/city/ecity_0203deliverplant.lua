@@ -1,49 +1,49 @@
 --MisDescBegin
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x600010_g_ScriptId = 600010
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x600010_g_MissionId = 1106
 
---ÈÎÎñÄ¿±ênpc
-x600010_g_Name = "ÖìÊÀÓÑ"
+--nhi®m vø møc tiêu Npc
+x600010_g_Name = "Chu Thª Hæu"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x600010_g_MissionKind = 50
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x600010_g_MissionLevel = 10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x600010_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
-x600010_g_IsMissionOkFail = 0							-- ÈÎÎñÍê³É±ê¼Ç
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+x600010_g_IsMissionOkFail = 0							-- ??????
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñ±äÁ¿µÚÒ»Î»ÓÃÀ´´æ´¢Ëæ»úµÃµ½µÄ½Å±¾ºÅ
+--nhi®m vø lßşng biªn ğ±i ğ® nh¤t v¸ dùng ğ¬ t°n træ TuÏ C½ nh§n ğßşc Ğích k¸ch bän g¯c Hào
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x600010_g_MissionName = "·¢Õ¹ÈÎÎñ"
-x600010_g_MissionInfo = "    ½ñÌìÎÒÏëÒª %s ÁË£¬È¥°ïÎÒÕÒÀ´°É£¡"			--ÈÎÎñÃèÊö
-x600010_g_MissionTarget = "    ½«%iËÍ¸ø%n¡£#r#{BHRW_091224_1}"			--ÈÎÎñÄ¿±ê
-x600010_g_ContinueInfo = "    ÄãµÄÈÎÎñ»¹Ã»ÓĞÍê³ÉÃ´£¿"					--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x600010_g_SubmitInfo = "    ÊÂÇé½øÕ¹µÃÈçºÎ£¿"							--Íê³ÉÎ´Ìá½»Ê±µÄnpc¶Ô»°
-x600010_g_MissionComplete = "    ¸ÉµÃ²»´í£¬ÉõºÃÉõºÃ¡£"					--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø vån bän miêu tä
+x600010_g_MissionName = "Nhi®m vø phát tri¬n"
+x600010_g_MissionInfo = "Hôm nay ta nghî Yêu %s Li­u, ği giúp Ngã Träo ğªn ğây ği!"			--????
+x600010_g_MissionTarget = "Tß¾ng%iğßa cho%n. #r#{BHRW_091224_1}"			--????
+x600010_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"					--??????npc??
+x600010_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"							--???????npc??
+x600010_g_MissionComplete = "Làm ğßşc không t°i, r¤t t¯t r¤t t¯t."					--????npc????
 
 x600010_g_StrForePart = 5
-x600010_g_ItemOffset = 19												-- Suppose to 19, ±íÀïµÚ¼¸¸öÎïÆ·ÁĞµÄÆ«ÒÆÁ¿
-x600010_g_NPCOffset = 12												-- Suppose to 12, ±íÀïµÚ¼¸ÁĞ NPC µÄÆ«ÒÆÁ¿
-x600010_g_NPCOffsetEx = 247											-- Suppose to 12, ±íÀïµÚ¼¸ÁĞ NPC µÄÆ«ÒÆÁ¿
+x600010_g_ItemOffset = 19												-- Suppose to 19, ????????????
+x600010_g_NPCOffset = 12												-- Suppose to 12, ????? NPC ????
+x600010_g_NPCOffsetEx = 247											-- Suppose to 12, ????? NPC ????
 
 x600010_g_MissionRound = 40
 
--- Í¨ÓÃ³ÇÊĞÈÎÎñ½Å±¾
+-- thông døng thành th¸ nhi®m vø k¸ch bän g¯c
 x600010_g_CityMissionScript = 600001
 x600010_g_DevelopmentScript = 600007
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 
 
 --MisDescEnd

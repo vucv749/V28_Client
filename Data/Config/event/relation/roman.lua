@@ -1,29 +1,29 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x505010_g_ScriptId = 505010
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x505010_g_MissionId = 2189
 
---ÈÎÎñ¹éÀà
-x505010_g_MissionKind = 11 -- Â·¾¶£º\Client\Config\MissionKind.txt
+--nhi®m vø phân loÕi
+x505010_g_MissionKind = 11 -- ??:\Client\Config\MissionKind.txt
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x505010_g_MissionLevel = 10000
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x505010_g_MissionName="#{QYHY_230330_48}"
 
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x505010_g_MissionTarget=""
 
---±ê¼Ç³É¹¦ÊÇÄÄºÅÎ» ÕâÀï±ê¼ÇµÄÊÇ0ºÅÎ»
+--d¤u hi®u thành công Th¸ Ná Hào V¸ n½i này d¤u hi®u chính là 0Hào V¸
 x505010_g_IsMissionOkFail=0
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x505010_g_Custom = { {id="ÒÑ½áÔµ",num=1} }
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x505010_g_Custom = { {id="Dî kªt duyên",num=1} }
 
---½»×Ó ÒÔ¼° ¾­Ñé ½±Àø
+--Giao TØ cùng v¾i kinh nghi®m thß·ng cho
 --x505010_g_MoneyJZBonus = 10000
 --x505010_g_ExpBonus = 80000
 

@@ -1,42 +1,42 @@
 --MisDescBegin
 
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200089_g_ScriptId = 200089
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200089_g_MissionId = 19
 
---Ç°ĞøÈÎÎñ
+--Ti«n Tøc nhi®m vø
 x200089_g_PreMissionId = 18
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x200089_g_Position_X=38
 x200089_g_Position_Z=99
 x200089_g_SceneID=9
-x200089_g_AccomplishNPC_Name="Ğş´È"
+x200089_g_AccomplishNPC_Name="Huy«n T×"
 
---Ä¿±êNPC
-x200089_g_Name	="Ğş´È"
+--møc tiêu NPC
+x200089_g_Name	="Huy«n T×"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200089_g_MissionKind = 47
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200089_g_MissionLevel = 40
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200089_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x200089_g_MissionName="ÌìÏÂÎä¹¦³öÉÙÁÖ"
+--nhi®m vø Danh
+x200089_g_MissionName="Thiên hÕ võ công xu¤t Thiªu Lâm"
 x200089_g_MissionInfo="#{Mis_juqing_0019}"
 x200089_g_MissionTarget="#{Mis_juqing_Tar_0019}"
-x200089_g_MissionComplete="  °¢ÃÖÍÓ·ğ£¬Ê©Ö÷À´ÎÒÉÙÁÖµÄÄ¿µÄÀÏñÄÒÑ¾­²Âµ½ÁË¡£¿ÉÏ§ÀÏñÄÉíÔÚºì³¾Íâ£¬²»ÎÊºì³¾ÊÂÁË£¬°¢ÃÖÍÓ·ğ¡­¡­"
+x200089_g_MissionComplete="  A di ğà Ph§t, lão nÕp ğã ğoán ğßşc møc ğích cüa thí chü t¾i Thiªu Lâm ta. Tiªc thay lão nÕp thân ğã thoát bøi tr¥n, ğ×ng höi chuy®n h°ng tr¥n næa. A di ğà Ph§t..."
 
 x200089_g_MoneyJZBonus=5940
 x200089_g_exp=5400
 
-x200089_g_Custom	= { {id="ÒÑÕÒµ½Ğş´È",num=1} }
+x200089_g_Custom	= { {id="Ğã tìm ğßşc Huy«n T×",num=1} }
 x200089_g_IsMissionOkFail = 0
 
 

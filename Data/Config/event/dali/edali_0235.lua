@@ -1,50 +1,50 @@
 --MisDescBegin
---½Å±¾ºÅ
---×¢Òâ£¬Óù´Í¾«·ÄÏµÁĞµÄÈÎÎñ£¬¶¼Ã»ÓĞ½ÓÈÎÎñµÄÁ÷³Ì£¬Ò²¾ÍÊÇ²»»áaddMission£¬ËùÒÔisHaveMissionºÍdelMission¿Ï¶¨³ö´íyuanfengfeng-2009-7-29
+--k¸ch bän g¯c Hào
+--chú ı, Ngñ TÑ Tinh Phß·ng dçy Ğích nhi®m vø, ğ«u không có tiªp nh§n chÑc vø Vø Ğích nß¾c chäy, Dã chính là s¨ không addMission, cho nên isHaveMissionHoà delMissionkhÆng ğ¸nh làm l²i yuanfengfeng-2009-7-29
 x210235_g_ScriptId = 210235
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x210235_g_Position_X=160.4355
 x210235_g_Position_Z=127.9695
 x210235_g_SceneID=2
-x210235_g_AccomplishNPC_Name="Àî¹¤²¿"
+x210235_g_AccomplishNPC_Name="Lı Công Bµ"
 
---Ç°ÌáÈÎÎñ
+--ği«u ki®n tiên quyªt nhi®m vø
 --g_MissionIdPre =
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x210235_g_MissionId = 715
 
---ÈÎÎñÄ¿±ênpc
-x210235_g_Name	="Àî¹¤²¿"
+--nhi®m vø møc tiêu Npc
+x210235_g_Name	="Lı Công Bµ"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x210235_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x210235_g_MissionLevel = 6
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x210235_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x210235_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+--nhi®m vø hay không ğã hoàn thành
+x210235_g_IsMissionOkFail = 0		--????0?
 
---ÈÎÎñĞèÒªµÃµ½µÄÎïÆ·
-x210235_g_DemandItem={{id=20309003,num=1},{id=20309007,num=1}}		--´Ó±³°üÖĞ¼ÆËã
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--nhi®m vø c¥n nh§n ğßşc Ğích v§t ph¦m
+x210235_g_DemandItem={{id=20309003,num=1},{id=20309007,num=1}}		--??????
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñ±äÁ¿µÚÒ»Î»ÓÃÀ´´æ´¢Ëæ»úµÃµ½µÄ½Å±¾ºÅ
+--nhi®m vø lßşng biªn ğ±i ğ® nh¤t v¸ dùng ğ¬ t°n træ TuÏ C½ nh§n ğßşc Ğích k¸ch bän g¯c Hào
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x210235_g_MissionName="Óù´Í¾«·Ä»¤ÊÖ"
-x210235_g_MissionInfo="#{event_dali_0048}"  --ÈÎÎñÃèÊö
-x210235_g_MissionTarget="ÕÒµ½Ò»Æ·Òø¶úºÍÒ»Æ·ÓóÍ·£¬È»ºó»Ø#G´óÀí³ÇÎå»ªÌ³#WÕÒËÄ´óÉÆÈËÖ®Ò»µÄ#RÀî¹¤²¿#W#{_INFOAIM160,128,2,Àî¹¤²¿}¡£"		--ÈÎÎñÄ¿±ê
-x210235_g_ContinueInfo="  Ò»Æ·Òø¶úºÍÒ»Æ·ÓóÍ·ÄãÒÑ¾­ÕÒµ½ÁË£¿"		--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x210235_g_MissionComplete="  ÄêÇáÈË£¬×öµÄ²»´í¡£"					--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø vån bän miêu tä
+x210235_g_MissionName="Ngñ TÑ Tinh Phß·ng Hµ Thü"
+x210235_g_MissionInfo="#{event_dali_0048}"  --????
+x210235_g_MissionTarget="Tìm ğßşc Nh¤t Ph¦m Ngân Nhî Hoà Nh¤t Ph¦m Vu Ğ¥u, sau ğó H°i#GTHành ĞÕi Lı Ngû Hoa Ğàn#WTräo tÑ ğÕi hi«n nhân mµt trong Ğích#RLí Công Bµ#W#{_INFOAIM160, 128, 2, Lí Công Bµ}."		--????
+x210235_g_ContinueInfo="Nh¤t Ph¦m Ngân Nhî Hoà Nh¤t Ph¦m Vu Ğ¥u Nhî ğã tìm ğßşc r°i?"		--??????npc??
+x210235_g_MissionComplete="Ngß¶i trë tu±i, T¯ Ğích không t°i."					--????npc????
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 x210235_g_ItemBonus={{id=10412047,num=1}}
 x210235_g_MoneyBonus=0
 

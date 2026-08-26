@@ -1,30 +1,30 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x893310_g_ScriptId = 893310
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x893310_g_MissionId = 2127
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 --g_MissionIdPre = 
 
---Ä¿±êNPC
-x893310_g_Name	="Íõ°²¸è"
+--møc tiêu NPC
+x893310_g_Name	="Vß½ng An Ca"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x893310_g_MissionKind = 61
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x893310_g_MissionLevel = 10
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x893310_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x893310_g_MissionName="ÎªÊ¦ÃÅ¶øÕ½"
+--nhi®m vø Danh
+x893310_g_MissionName="Chiªn ğ¤u vì sß môn"
 x893310_g_MissionInfo="#{event_mantuo_0001}"
-x893310_g_MissionTarget="    ÔÚÂüÍÓÉ½×¯ÕÒµ½Íõ°²¸è#{_INFOAIM129,106,592,Íõ°²¸è}¡£"
-x893310_g_MissionComplete="  ÄãÊÇĞÂÀ´µÄÍ¬ÃÅ°É£¬ÄãÀ´µÃÌ«ºÃÁË£¬ÎÒÕâÀïÓĞºÜ¶àÊÂÇéĞèÒªÄã°ïÃ¦ÄØ¡£"
+x893310_g_MissionTarget="TÕi MÕn Ğà S½n Trang tìm ğßşc Vß½ng An Ca#{_INFOAIM129, 106, 592, Vß½ng An Ca}."
+x893310_g_MissionComplete="  Các hÕ là ğ°ng môn m¾i ğªn phäi không. Các hÕ làm tuy®t l¡m. Ta · ğây có nhi«u vi®c c¥n các hÕ giúp ğŞ"
 x893310_g_MoneyJZBonus=800
 
 

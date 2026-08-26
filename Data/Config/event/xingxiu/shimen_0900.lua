@@ -1,30 +1,30 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x227900_g_ScriptId = 227900
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x227900_g_MissionId = 1099
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 --g_MissionIdPre = 
 
---Ä¿±êNPC
-x227900_g_Name	="ÍõÑå"
+--møc tiêu NPC
+x227900_g_Name	="Vß½ng NgÕn"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x227900_g_MissionKind = 27
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x227900_g_MissionLevel = 10
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x227900_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x227900_g_MissionName="ÎªÊ¦ÃÅ¶øÕ½"
+--nhi®m vø Danh
+x227900_g_MissionName="Chiªn ğ¤u vì sß môn"
 x227900_g_MissionInfo="#{event_xingxiu_0001}"
-x227900_g_MissionTarget="    ÔÚĞÇËŞº£ÕÒµ½ÍõÑå#{_INFOAIM96,92,16,ÍõÑå}¡£"
-x227900_g_MissionComplete="  ÄãÊÇĞÂÀ´µÄÍ¬ÃÅ°É£¬ÄãÀ´µÃÌ«ºÃÁË£¬ÎÒÕâÀïÓĞºÜ¶àÊÂÇéĞèÒªÄã°ïÃ¦ÄØ¡£"
+x227900_g_MissionTarget="    — Tinh Túc Häi tìm ğªn Vß½ng NgÕn #{_INFOAIM96,92,16, Vß½ng NgÕn}."
+x227900_g_MissionComplete="  Các hÕ là ğ°ng môn m¾i ğªn phäi không. Các hÕ làm tuy®t l¡m. Ta · ğây có nhi«u vi®c c¥n các hÕ giúp ğŞ"
 x227900_g_MoneyJZBonus=800
 
 

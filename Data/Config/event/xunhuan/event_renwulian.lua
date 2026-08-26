@@ -1,61 +1,61 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x229022_g_scriptId = 229022
 
---Ç°ÌáÈÎÎñ
+--ği«u ki®n tiên quyªt nhi®m vø
 --g_MissionIdPre =
 
---ÈÎÎñÄ¿±ênpc[94,177]
-x229022_g_Name	= "Íõ·òÈË"
+--nhi®m vø møc tiêu Npc[94, 177]
+x229022_g_Name	= "Vß½ng Phu Nhân"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x229022_g_MissionId = 1202
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x229022_g_MissionKind = 1
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x229022_g_MissionLevel = 10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x229022_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x229022_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+--nhi®m vø hay không ğã hoàn thành
+x229022_g_IsMissionOkFail = 0		--????0?
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñ±äÁ¿µÚÒ»Î»ÓÃÀ´´æ´¢Ëæ»úµÃµ½µÄ½Å±¾ºÅ
+--nhi®m vø lßşng biªn ğ±i ğ® nh¤t v¸ dùng ğ¬ t°n træ TuÏ C½ nh§n ğßşc Ğích k¸ch bän g¯c Hào
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x229022_g_MissionName="Á¬»·ÈÎÎñ"
-x229022_g_MissionInfo=""  --ÈÎÎñÃèÊö
+--nhi®m vø vån bän miêu tä
+x229022_g_MissionName="Nhi®m vø liên hoàn"
+x229022_g_MissionInfo=""  --????
 x229022_g_MissionTarget = "%f"
-x229022_g_ContinueInfo="¸ÉµÃ²»´í"		--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x229022_g_MissionComplete="àÅ, ÎÒÖªµÀÁË, Äã¸ÉµÃ²»´í"					--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+x229022_g_ContinueInfo="Làm ğßşc không t°i"		--??????npc??
+x229022_g_MissionComplete="Ân, Ngã ğã biªt, Nhî làm ğßşc không t°i"					--????npc????
 
---ÓÃÀ´±£´æ×Ö·û´®¸ñÊ½»¯µÄÊı¾İ
+--dùng ğ¬ bäo t°n tñ phù Xuyªn cách thÑc Hoá Ğích s¯ li®u
 x229022_g_FormatList = {
-								"ÕÒµ½%n",
-								"½«%iËÍ¸ø%n",
-								"½«#Y%p#WËÍ¸ø%n#r  #GĞ¡ÌáÊ¾£ºÈç¹ûĞèÒª±äÒìÕäÊŞ£¬Ò²¿ÉÒÔÕÒÍ¬Àà¶ş´úÕäÊŞ´úÌæ¡£",
-								"½ÌÑµ%n",
+								"Tìm %n",
+								"Ğem%i t£ng cho %n",
+								"Mang #Y%P#W t£ng cho %n#r  #GNh¡c nh·: Nªu nhß c¥n Trân Thú biªn d¸, vçn có th¬ tìm Trân Thú ğ¶i 2 ğ¬ thay thª.",
+								"DÕy bäo %n",
 								}
 
---Ö»ÊÇÎª¿Í»§¶ËÏÔÊ¾MissionTarget¶ø×ö, ËùÓĞµÄ¶¯Ì¬µÄ×Ö·û´®¶¼Ğè×¢²áµ½¸ÃList±íÖĞ
+--chính là Vi hµ khách Ğoan bi¬u hi®n MissionTargetNhi T¯, t¤t cä Ğích ğµng thái Ğích tñ phù Xuyªn Ğô Nhu ğång kí Ğáo Cai ListBi¬u Trung
 x229022_g_StrList = {
-						 "Ëû",
-						 "Ëı",
+						 "Huynh ¤y",
+						 "Muµi ¤y",
 						 }
 
---¸ñÊ½×Ö·û´®ÖĞ¶ÔÓ¦ÓÚg_StringListÖĞ×Ö·û´®µÄË÷Òı, ±íÊ¾´Ó4¿ªÊ¼,ºó¶àÉÙÎ»ÊÓSetMissionByIndexEx(...)µÄ¶àÉÙ¶ø¶¨
+--cách thÑc tñ phù Xuyªn Trung ğ¯i Ñng Vu g_StringListTrung tñ phù Xuyªn Ğích hß¾ng dçn tra cÑu, tö vë Thung 4b¡t ğ¥u, H§u nhi«u ít V¸ Th¸ SetMissionByIndexEx(. . . )Ğích nhi«u ít Nhi Ğ¸nh
 x229022_g_StrForePart=4
 
---¶¯Ì¬item±àºÅÔÚmissionparam´æ´¢µÄÆğÊ¼Î»ÖÃ
+--ğµng thái itemğánh s¯ TÕi missionparamt°n træ Ğích lúc ğ¥u v¸ trí
 x229022_g_ItemForePart=6
 
-x229022_g_MissionRound	= 35		--¼ÇÂ¼Ñ­»·ÈÎÎñ±äÁ¿
+x229022_g_MissionRound	= 35		--????????
 
 x229022_g_MissionLimitTime = 1800000
 

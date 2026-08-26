@@ -1,30 +1,30 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x998388_g_ScriptId = 998388
 
---Íê³ÉÈÎÎñNPCÊôĞÔ
-x998388_g_Position_X=277  --Ìæ´ú
-x998388_g_Position_Z=151 --Ìæ´ú
+--hoàn thành nhi®m vø NPCthuµc tính
+x998388_g_Position_X=277  --??
+x998388_g_Position_Z=151 --??
 x998388_g_SceneID=3
-x998388_g_AccomplishNPC_Name="Ïô·å"
+x998388_g_AccomplishNPC_Name="Tiêu Phong"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x998388_g_MissionId = 2220
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x998388_g_MissionKind = 5
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x998388_g_MissionLevel = 65
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x998388_g_IfMissionElite = 0
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x998388_g_MissionName="#{SBJQ_230627_41}"
 x998388_g_MissionTarget="#{SBJQ_230627_16}"
 x998388_g_IsMissionOkFail=0
-x998388_g_Custom = {{ id = "Ç°ÍùÏô·å´¦ÁË½âÏêÇé", num = 1}}
+x998388_g_Custom = {{ id = "Ği trß¾c Tiêu Phong ch² Giäi tình hình cø th¬ và tï mï", num = 1}}
 x998388_g_ContinueInfo = ""
 x998388_g_MissionComplete = "#{SBJQ_230627_49}"
 

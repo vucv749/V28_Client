@@ -1,39 +1,39 @@
 --MisDescBegin
 
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x050101_g_ScriptId = 050101
 
---½ÇÉ«»îÔ¾Öµ¸±±¾µÄindex
+--vai di­n sinh ğµng Tr¸ bän sao Ğích index
 x050101_g_activePointIndex = 7
 
--- ÈÎÎñºÅ
+-- nhi®m vø Hào
 x050101_g_MissionId = 1261					-- 1260 - 1269
 
--- ÉÏÒ»¸öÈÎÎñµÄ ID
+-- Thßşng mµt cái nhi®m vø Ğích ID
 -- g_MissionIdPre = 1260
 
--- ÈÎÎñÄ¿±ê NPC
-x050101_g_Name = "»¨½£Óê"
+-- nhi®m vø møc tiêu NPC
+x050101_g_Name = "Hoa Kiªm Vû"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x050101_g_MissionKind = 8
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x050101_g_MissionLevel = 10000
 
--- ÈÎÎñÎÄ±¾ÃèÊö
-x050101_g_MissionName = "³ıº¦"
-x050101_g_MissionInfo = "    "														-- ÈÎÎñÃèÊö
-x050101_g_MissionTarget = "    ËÕÖİµÄ»¨½£Óê#{_INFOAIM251,108,1,»¨½£Óê}ÈÃÄãÉ±ËÀ80Ö»Ò°ĞÜ£¬²¢É±ËÀºìĞÜÍõ¡£#r    #{FQSH_090206_01}"						-- ÈÎÎñÄ¿±ê
-x050101_g_ContinueInfo = "    ÄãÃÇ×¼±¸ºÃÁË¾ÍÇëÇ°È¥ÖñÁÖÏûÃğºìĞÜÍõ£¡"					-- Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x050101_g_SubmitInfo = "    ÈÎÎñ×öµÃÔõÃ´ÑùÁË£¿"										-- Ìá½»Ê±µÄ´ğ¸´
-x050101_g_MissionComplete = "    ¼ÈÈ»ÄãÃÇÒÑ¾­É±ËÀºìĞÜÍõÁË£¬ÄÇÃ´ÒÀÔ¼ÎÒÒ²¸Ã¸æËßÄãÃÇÕâ¿éÁîÅÆµÄÀ´ÀúÁË¡£ÄãÃÇ°ÑÕâ·âĞÅ½»¸øÇ®ºêÓî#{_INFOAIM62,162,1,Ç®ºêÓî},Ëû×ÔÈ»»áÃ÷°×Ò»ÇĞµÄ¡£"	--Íê³ÉÈÎÎñnpcËµµÄ»°
+-- nhi®m vø vån bän miêu tä
+x050101_g_MissionName = "Tr× hÕi"
+x050101_g_MissionInfo = "    "														-- ????
+x050101_g_MissionTarget = "Tô Châu Ğích Hoa Kiªm Vû#{_INFOAIM251, 108, 1, Hoa Kiªm Vû}cho ngß½i giªt chªt 80Chích Dã Hùng, Tính giªt chªt H°ng Hùng Vß½ng. #r #{FQSH_090206_01}"						-- ????
+x050101_g_ContinueInfo = "Các ngß½i chu¦n b¸ t¯t Li­u xin m¶i tiªn ğªn Trúc Lâm tiêu di®t H°ng Hùng Vß½ng!"					-- ??????npc??
+x050101_g_SubmitInfo = "Nhi®m vø làm ğßşc thª nào Li­u?"										-- ??????
+x050101_g_MissionComplete = "Ngß½i ğã Môn ğã giªt chªt H°ng Hùng Vß½ng Li­u, nhß v§y ğúng h©n Ngã cûng nên nói cho các ngß½i Giá Kh¯i Linh Bài Ğích lai l¸ch Li­u. Các ngß½i Bä Giá phong thß giao cho Ti«n H°ng Vû#{_INFOAIM62, 162, 1, Ti«n H°ng Vû}, Tha tñ nhiên s¨ minh bÕch hªt thäy Ğích."	--????npc???
 
-x050101_g_IsMissionOkFail = 0														-- 0 ºÅ£ºµ±Ç°ÈÎÎñÊÇ·ñÍê³É(0Î´Íê³É£»1Íê³É£»2Ê§°Ü)
-x050101_g_DemandKill = { { id = 4110, num = 80 },  { id = 4120, num = 1 } }			-- 1 ~ 2 ºÅ£¬¹ÖÎïĞÅÏ¢
-x050101_g_Param_sceneid = 3															-- 3 ºÅ£ºµ±Ç°¸±±¾ÈÎÎñµÄ³¡¾°ºÅ
+x050101_g_IsMissionOkFail = 0														-- 0 ?:????????(0???;1??;2??)
+x050101_g_DemandKill = { { id = 4110, num = 80 },  { id = 4120, num = 1 } }			-- 1 ~ 2 ?,????
+x050101_g_Param_sceneid = 3															-- 3 ?:??????????
 x050101_BossSecKill = {4120,4121,4122,4123,4124,4125,4126,4127,4128,4129,34120,34121,34122,34123,34124,34125,34126,34127,34128,34129}	
--- ÈÎÎñ½±Àø
+-- nhi®m vø thß·ng cho
 
 
 --MisDescEnd

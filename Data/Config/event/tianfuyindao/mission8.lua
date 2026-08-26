@@ -1,25 +1,25 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x893242_g_ScriptId = 893242
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x893242_g_MissionId = 2079
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x893242_g_MissionKind = 9
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x893242_g_MissionLevel = 65
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x893242_g_IfMissionElite = 0
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x893242_g_MissionName="#{WDEC_220425_22}"
 x893242_g_MissionTarget=""
 x893242_g_IsMissionOkFail=0
-x893242_g_MissionLiuPai = 1-- Á÷ÅÉ
-x893242_g_MissionMenPai = 2-- ÃÅÅÉ
+x893242_g_MissionLiuPai = 1-- ??
+x893242_g_MissionMenPai = 2-- ??
 x893242_g_Custom = {}
 x893242_g_ContinueInfo = ""
 x893242_g_MissionComplete = ""

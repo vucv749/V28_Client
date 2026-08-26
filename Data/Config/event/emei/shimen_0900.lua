@@ -1,30 +1,30 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x226900_g_ScriptId = 226900
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x226900_g_MissionId = 1094
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 --g_MissionIdPre = 
 
---Ä¿±êNPC
-x226900_g_Name	="ÃÏÁú"
+--møc tiêu NPC
+x226900_g_Name	="Mãnh Long"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x226900_g_MissionKind = 26
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x226900_g_MissionLevel = 10
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x226900_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x226900_g_MissionName="ÎªÊ¦ÃÅ¶øÕ½"
+--nhi®m vø Danh
+x226900_g_MissionName="Chiªn ğ¤u vì sß môn"
 x226900_g_MissionInfo="#{event_emei_0001}"
-x226900_g_MissionTarget="    ÔÚ¶ëáÒÉ½ÕÒµ½ÃÏÁú#{_INFOAIM95,86,15,ÃÏÁú}¡£"
-x226900_g_MissionComplete="  ÄãÊÇĞÂÀ´µÄÍ¬ÃÅ°É£¬ÄãÀ´µÃÌ«ºÃÁË£¬ÎÒÕâÀïÓĞºÜ¶àÊÂÇéĞèÒªÄã°ïÃ¦ÄØ¡£"
+x226900_g_MissionTarget="    Núi Nga My tìm Mãnh Long #{_INFOAIM95,86,15, Mãnh Long}."
+x226900_g_MissionComplete="  Các hÕ là ğ°ng môn m¾i ğªn phäi không. Các hÕ làm tuy®t l¡m. Ta · ğây có nhi«u vi®c c¥n các hÕ giúp ğŞ"
 x226900_g_MoneyJZBonus=800
 
 

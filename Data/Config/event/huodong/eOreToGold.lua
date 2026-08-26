@@ -3,29 +3,29 @@ x808140_g_ScriptId = 808140
 x808140_g_Position_X=239
 x808140_g_Position_Z=101
 x808140_g_SceneID=1
-x808140_g_AccomplishNPC_Name="Î¤´óÊå"
+x808140_g_AccomplishNPC_Name="Vi ĞÕi Thúc"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x808140_g_MissionId = 1148
 
---Ä¿±êNPC
-x808140_g_Name	="Î¤´óÊå"
+--møc tiêu NPC
+x808140_g_Name	="Vi ĞÕi Thúc"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x808140_g_MissionKind = 12
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x808140_g_MissionLevel = 10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x808140_g_IfMissionElite = 0
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x808140_g_MissionName="#{DSCJ_090414_02}"
 x808140_g_MissionTarget="#{DSCJ_090414_16}"
-x808140_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
-x808140_g_MissionLimitTime = 23*60*60*1000   --23Ğ¡Ê±
+x808140_g_IsMissionOkFail = 0		--????0?
+x808140_g_MissionLimitTime = 23*60*60*1000   --23??
 x808140_g_StopWatch_Pause_Flag = 57
-x808140_g_Custom = {{id = "µÈ´ıµãÊ¯³É½ğÍê³É",num = 1}}
+x808140_g_Custom = {{id = "Ch¶ ği¬m thÕch thành kim hoàn thành",num = 1}}
 
 --MisDescEnd

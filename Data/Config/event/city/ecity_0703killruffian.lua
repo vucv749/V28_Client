@@ -1,44 +1,44 @@
 --MisDescBegin
 
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x600039_g_ScriptId = 600039
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x600039_g_MissionId = 1111
 
---Ä¿±êNPC
-x600039_g_Name = "Ö£ÎŞÃû"
+--møc tiêu NPC
+x600039_g_Name = "Tr¸nh Vô Danh"
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x600039_g_MissionLevel = 10000
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x600039_g_MissionKind = 50
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x600039_g_IfMissionElite = 0
 
---********ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö******
---½ÇÉ«Mission±äÁ¿ËµÃ÷
+--********phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng******
+--vai di­n Missionlßşng biªn ğ±i thuyªt minh
 
-x600039_g_IsMissionOkFail			=0	--0 ÈÎÎñÍê³É±ê¼Ç
-x600039_g_MissionParam_SubId		=1	--1 ×ÓÈÎÎñ½Å±¾ºÅ´æ·ÅÎ»ÖÃ
-x600039_g_Param_sceneid				=2	--2 µ±Ç°¸±±¾ÈÎÎñµÄ³¡¾°ºÅ
-x600039_g_MissionParam_BossIndex	=3	--3 Ä³ Boss µÄÃû×ÖË÷Òı
-x600039_g_Param_Killed				=4	--4 ÒÑÉ±ËÀµÄÊıÁ¿
-x600039_g_Param_Needed				=5	--5 ĞèÉ±ËÀµÄÊıÁ¿
+x600039_g_IsMissionOkFail			=0	--0 ??????
+x600039_g_MissionParam_SubId		=1	--1 ??????????
+x600039_g_Param_sceneid				=2	--2 ??????????
+x600039_g_MissionParam_BossIndex	=3	--3 ? Boss ?????
+x600039_g_Param_Killed				=4	--4 ??????
+x600039_g_Param_Needed				=5	--5 ??????
 
---Ñ­»·ÈÎÎñµÄÊı¾İË÷Òı£¬ÀïÃæ´æ×ÅÒÑ×öµÄ»·Êı
+--tu¥n hoàn nhi®m vø Ğích s¯ li®u hß¾ng dçn tra cÑu, bên trong T°n Trß¾c Dî T¯ Ğích Hoàn S±
 x600039_g_MissionRound = 59
---**********************************ÒÔÉÏÊÇ¶¯Ì¬****************************
+--**********************************ğã ngoài Th¸ ğµng thái****************************
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x600039_g_MissionName = "½¨ÉèÈÎÎñ"
-x600039_g_MissionInfo = ""													--ÈÎÎñÃèÊö
-x600039_g_MissionTarget = "    ÕÒµ½½­ºşÈË³Æ%sµÄÍ·ÁìºÍËû´øÀ´µÄÑ°ĞÆĞ¡±²²¢É±ËÀËûÃÇ¡£#r#{BHRW_091224_1}"	--ÈÎÎñÄ¿±ê
-x600039_g_ContinueInfo = "    ÄãµÄÈÎÎñ»¹Ã»ÓĞÍê³ÉÃ´£¿"						--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x600039_g_SubmitInfo = "    ÊÂÇé½øÕ¹µÃÈçºÎ£¿"								--Íê³ÉÎ´Ìá½»Ê±µÄnpc¶Ô»°
-x600039_g_MissionComplete = "    ÉõºÃ£¬ÉõºÃ£¬½¨ÖşµÄ½ø¶ÈÓÖ¼Ó¿ìÁË¡£"			--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø vån bän miêu tä
+x600039_g_MissionName = "Xây dñng nhi®m vø"
+x600039_g_MissionInfo = ""													--????
+x600039_g_MissionTarget = "Tìm ğßşc ngß¶i giang h° XÑng%sĞích ğ¥u lînh Hoà Tha mang ğªn Ğích T¥m H¤n Ti¬u B¯i Tính giªt chªt b÷n h÷. #r#{BHRW_091224_1}"	--????
+x600039_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"						--??????npc??
+x600039_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"								--???????npc??
+x600039_g_MissionComplete = "R¤t t¯t, r¤t t¯t, kiªn trúc Ğích tiªn ğµ Hñu nhanh h½n Li­u."			--????npc????
 
 x600039_g_Parameter_Kill_CountRandom = { { id = 300471, numNeeded = 5, numKilled = 4 } }
 
@@ -46,35 +46,35 @@ x600039_g_StrForePart = 3
 
 x600039_g_StrList = {
 	[0 ] = "",
-	[1 ] = "Ğ¡Ì«Ëê",
-	[2 ] = "ÈüÌ«Ëê",
-	[3 ] = "»îÌ«Ëê",
-	[4 ] = "²¡Ì«Ëê",
-	[5 ] = "µ±ÖµÌ«Ëê",
-	[6 ] = "ÇàÃæÌ«Ëê",
-	[7 ] = "ÑªÊÖÌ«Ëê",
-	[8 ] = "°ËÃæÌ«Ëê",
-	[9 ] = "¶ñÊÖÑÖÂŞ",
-	[10] = "Ğ¡ÑÖÂŞ",
-	[11] = "ÈüÑÖÂŞ",
-	[12] = "»îÑÖÂŞ",
-	[13] = "²¡ÑÖÂŞ",
-	[14] = "¾ÅÍ·ÑÖÂŞ",
-	[15] = "½ğÑÛÑÖÂŞ",
-	[16] = "½ğÕÆ°ÔÍõ",
-	[17] = "ÌúÈ­°ÔÍõ",
-	[18] = "ÆÃ°ÔÍõ",
-	[19] = "²¡°ÔÍõ",
-	[20] = "Ğ¡°ÔÍõ",
-	[21] = "Èü°ÔÍõ",
-	[22] = "»î°ÔÍõ",
+	[1 ] = "Ti¬u Thái Tuª",
+	[2 ] = "Hàn Thái Tuª",
+	[3 ] = "HoÕt Thái Tuª",
+	[4 ] = "B®nh Thái Tuª",
+	[5 ] = "Ğang Trñc Thái tuª",
+	[6 ] = "Thanh Di®n Thái Tuª",
+	[7 ] = "Huyªt Thü Thái Tuª",
+	[8 ] = "Bát Di®n Thái Tuª",
+	[9 ] = "Ác Thü Diêm La",
+	[10] = "Ti¬u Diêm La",
+	[11] = "Hàn Diêm La",
+	[12] = "HoÕt Diêm La",
+	[13] = "B®nh Diêm La",
+	[14] = "CØu Ğ¥u Diêm La",
+	[15] = "Kim Nhãn Diêm La",
+	[16] = "Kim chß·ng Diêm La",
+	[17] = "Thiªt Quy«n Bá Vß½ng",
+	[18] = "Bát Bá Vß½ng",
+	[19] = "B®nh Bá Vß½ng",
+	[20] = "Ti¬u Bá Vß½ng",
+	[21] = "TrÕi Bá Vß½ng",
+	[22] = "HoÕt Bá Vß½ng",
 }
 
--- Í¨ÓÃ³ÇÊĞÈÎÎñ½Å±¾
+-- thông døng thành th¸ nhi®m vø k¸ch bän g¯c
 x600039_g_CityMissionScript = 600001
 x600039_g_ConstructionScript = 600035
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 
 
 --MisDescEnd

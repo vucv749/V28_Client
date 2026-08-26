@@ -1,52 +1,52 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x500618_g_ScriptId	= 500618
 
---Ä¿±êÈÎÎñNPCÊôĞÔ
+--møc tiêu nhi®m vø NPCthuµc tính
 x500618_g_Position_X=244.4806
 x500618_g_Position_Z=215.3521
 x500618_g_SceneID=1
-x500618_g_AccomplishNPC_Name="ºôÑÓ±ª"
+x500618_g_AccomplishNPC_Name="Hô Diên Báo"
 
---Ç°ĞøÈÎÎñºÅ
+--Ti«n Tøc nhi®m vø Hào
 x500618_g_PreMissionId	=	470
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x500618_g_MissionId			= 471
---ÏÂÒ»¸öÈÎÎñµÄID
+--kª tiªp nhi®m vø Ğích ID
 x500618_g_MissionIdNext	= 472
---ÁìÈ¡ÈÎÎñÄ¿±êËùÔÚ³¡¾°
+--lînh nhi®m vø møc tiêu ch², n½i trß¶ng cänh
 x500618_g_AcceptNPC_SceneID	=	1
---ÏÂÒ»¸öÈÎÎñµÄIndex
+--kª tiªp nhi®m vø Ğích Index
 x500618_g_MissionIndexNext	= 1018720
---ÏÂÒ»¸öÈÎÎñµÄScriptId
+--kª tiªp nhi®m vø Ğích ScriptId
 x500618_g_NextScriptId	= 006668
---ÁìÈ¡ÈÎÎñnpc
-x500618_g_Name 					= "ºôÑÓ±ª"
---ÈÎÎñ¹éÀà
+--lînh nhi®m vø Npc
+x500618_g_Name 					= "Hô Diên Báo"
+--nhi®m vø phân loÕi
 x500618_g_MissionKind			= 12
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x500618_g_MissionLevel		= 45
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x500618_g_IfMissionElite	= 0
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x500618_g_IsMissionOkFail	= 0		--ÈÎÎñ²ÎÊıµÄµÚ0Î»
+--nhi®m vø hay không ğã hoàn thành
+x500618_g_IsMissionOkFail	= 0		--??????0?
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x500618_g_MissionName			= "Ì«ºşË®Õ¯"
---ÈÎÎñÃèÊö
+--nhi®m vø vån bän miêu tä
+x500618_g_MissionName			= "Thái H° Thüy TrÕi"
+--nhi®m vø miêu tä
 x500618_g_MissionInfo			= "#{YD_20080421_116}"
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x500618_g_MissionTarget		= "#{YD_20080421_115}"
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
 x500618_g_ContinueInfo		= "#{YD_20080421_206}"
---Íê³ÉÈÎÎñnpcËµµÄ»°
+--hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
 x500618_g_MissionComplete	= "#{YD_20080421_207}"
---¿ÉÒÔÍê³ÉµÄ»·Êı
+--có th¬ hoàn thành Ğích Hoàn S±
 x500618_g_MaxRound	= 1
---¿ØÖÆ½Å±¾
+--kh¯ng chª k¸ch bän g¯c
 x500618_g_ControlScript		= 001066
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x500618_g_Custom	= { {id="ÒÑÉ±ËÀÇô·¸",num=20} }
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x500618_g_Custom	= { {id="Ğã ğánh bÕi Tù PhÕm",num=20} }
 
 --MisDescEnd

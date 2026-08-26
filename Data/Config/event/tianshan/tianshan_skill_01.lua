@@ -1,45 +1,45 @@
 --MisDescBegin
 
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x228902_g_ScriptId = 228902
 
--- Ä¿±ê NPC
+-- møc tiêu NPC
 x228902_g_Position_X = 217
 x228902_g_Position_Z = 255
 x228902_g_SceneID = 2
-x228902_g_AccomplishNPC_Name = "ÍõÉØ"
+x228902_g_AccomplishNPC_Name = "Vß½ng Thi«u"
 
--- ÈÎÎñºÅ
+-- nhi®m vø Hào
 x228902_g_MissionId = 944
 
--- Ç°ĞøÈÎÎñ
+-- Ti«n Tøc nhi®m vø
 -- g_PreMissionId = -1
 
--- ½ÓÊÜÈÎÎñ NPC ÊôĞÔ
-x228902_g_Name = "À¼½£"
+-- nh§n nhi®m vø NPC thuµc tính
+x228902_g_Name = "Lan Kiªm"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x228902_g_MissionKind = 28
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x228902_g_MissionLevel = 30
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x228902_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x228902_g_MissionName = "×ÔÁ¢ÃÅ»§"
+--nhi®m vø Danh
+x228902_g_MissionName = "Li­u Ám Hoa Minh-Tñ l§p môn hµ"
 x228902_g_MissionInfo = "#{TIANSHAN_SKILL_01}"
-x228902_g_MissionTarget = "    ÔÚ#G´óÀí³ÇĞŞÎÄÌ¨#WÕÒµ½#RÍõÉØ#W#{_INFOAIM217,255,2,ÍõÉØ}¡£"
+x228902_g_MissionTarget = "    TÕi #GtHành ĞÕi Lı Tu Vån Ğài#W tìm #RVß½ng Thi«u #W#{_INFOAIM217,255,2,Vß½ng Thi«u}."
 x228902_g_MissionContinue = "    "
 x228902_g_MissionComplete = "#{TIANSHAN_SKILL_02}"
 
 x228902_g_MoneyBonus = 1000
 x228902_g_exp = 2000
 
-x228902_g_IsMissionOkFail = 0					-- ÊÇ·ñÍê³ÉÈÎÎñµÄ±ê¼ÇÎ»
-x228902_g_IsFindTarget = 1						-- ÊÇ·ñÕÒµ½ÍõÉØ±ê¼ÇÎ»
-x228902_g_Custom = { { id = "ÒÑÕÒµ½ÍõÉØ", num = 1 } }
+x228902_g_IsMissionOkFail = 0					-- ??????????
+x228902_g_IsFindTarget = 1						-- ?????????
+x228902_g_Custom = { { id = "Ğã tìm ğßşc Vß½ng Thi«u", num = 1 } }
 
 
 --MisDescEnd

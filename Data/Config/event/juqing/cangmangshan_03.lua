@@ -1,41 +1,41 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200032_g_ScriptId = 200032
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200032_g_MissionId = 28
 
---Ç°ĞøÈÎÎñºÅ
+--Ti«n Tøc nhi®m vø Hào
 x200032_g_PreMissionId = 27
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x200032_g_Position_X=195
 x200032_g_Position_Z=41
 x200032_g_SceneID=19
-x200032_g_AccomplishNPC_Name="Ò®ÂÉÓà¶Ã"
+x200032_g_AccomplishNPC_Name="Gia Lu§t Dß Ğ²"
 
---Ä¿±êNPC
-x200032_g_Name = "Ò®ÂÉÓà¶Ã"
+--møc tiêu NPC
+x200032_g_Name = "Gia Lu§t Dß Ğ²"
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200032_g_IfMissionElite = 1
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200032_g_MissionLevel = 50
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200032_g_MissionKind = 52
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x200032_g_MissionName="ÇÚÍõ"
+--nhi®m vø vån bän miêu tä
+x200032_g_MissionName="C¥n Vß½ng"
 x200032_g_MissionInfo="#{Mis_juqing_0028}"
-x200032_g_MissionTarget="#{Mis_juqing_Tar_0028}"	--ÈÎÎñÄ¿±ê
-x200032_g_MissionComplete="  Ä©½«½ÓÖ¼£¬Ò»¶¨²»¸º»ÊµÛÖØÍĞ¡£"	--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+x200032_g_MissionTarget="#{Mis_juqing_Tar_0028}"	--????
+x200032_g_MissionComplete="MÕt tß¾ng Tiªp Chï, nh¤t ğ¸nh không phø hoàng ğª sñ phó thác."	--????npc????
 
 x200032_g_MoneyJZBonus=23760
 x200032_g_exp=26400
 
-x200032_g_Custom	= { {id="ÒÑµÃµ½ÁÉ¹ú»ÊµÛµÄÊ¥Ö¼",num=1} }
+x200032_g_Custom	= { {id="Ğã ğÕt ğßşc thánh chï hoàng ğª Li­u qu¯c",num=1} }
 
 
 --MisDescEnd

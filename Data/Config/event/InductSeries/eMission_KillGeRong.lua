@@ -1,48 +1,48 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x500611_g_ScriptId	= 500611
 
---Ä¿±êÈÎÎñNPCÊôĞÔ
+--møc tiêu nhi®m vø NPCthuµc tính
 x500611_g_Position_X=62.6751
 x500611_g_Position_Z=162.6368
 x500611_g_SceneID=1
-x500611_g_AccomplishNPC_Name="Ç®ºêÓî"
+x500611_g_AccomplishNPC_Name="Ti«n Hoành Vû"
 
---Ç°ĞøÈÎÎñºÅ
+--Ti«n Tøc nhi®m vø Hào
 x500611_g_PreMissionId	=	425
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x500611_g_MissionId			= 426
---ÏÂÒ»¸öÈÎÎñµÄID
+--kª tiªp nhi®m vø Ğích ID
 x500611_g_MissionIdNext	= 427
---ÁìÈ¡ÈÎÎñÄ¿±êËùÔÚ³¡¾°
+--lînh nhi®m vø møc tiêu ch², n½i trß¶ng cänh
 x500611_g_AcceptNPC_SceneID	=	1
---ÁìÈ¡ÈÎÎñnpc
-x500611_g_Name 					= "Ç®ºêÓî"
---ÈÎÎñ¹éÀà
+--lînh nhi®m vø Npc
+x500611_g_Name 					= "Ti«n Hoành Vû"
+--nhi®m vø phân loÕi
 x500611_g_MissionKind			= 12
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x500611_g_MissionLevel		= 38
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x500611_g_IfMissionElite	= 0
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x500611_g_IsMissionOkFail	= 0		--ÈÎÎñ²ÎÊıµÄµÚ0Î»
+--nhi®m vø hay không ğã hoàn thành
+x500611_g_IsMissionOkFail	= 0		--??????0?
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x500611_g_MissionName			= "¸ÉµôÉ½Õ¯´óÍõ"
---ÈÎÎñÃèÊö
+--nhi®m vø vån bän miêu tä
+x500611_g_MissionName			= "XØ lı S½n TrÕi ĞÕi Vß½ng"
+--nhi®m vø miêu tä
 x500611_g_MissionInfo			= "#{YD_20080421_75}"
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x500611_g_MissionTarget		= "#{YD_20080421_74}"
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
 x500611_g_ContinueInfo		= "#{YD_20080421_195}"
---Íê³ÉÈÎÎñnpcËµµÄ»°
+--hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
 x500611_g_MissionComplete	= "#{YD_20080421_76}"
---¿ÉÒÔÍê³ÉµÄ»·Êı
+--có th¬ hoàn thành Ğích Hoàn S±
 x500611_g_MaxRound	= 1
---¿ØÖÆ½Å±¾
+--kh¯ng chª k¸ch bän g¯c
 x500611_g_ControlScript		= 001066
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x500611_g_Custom	= { {id="ÒÑÉ±ËÀÉ½Õ¯´óÍõ",num=1} }
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x500611_g_Custom	= { {id="Ğã giªt chªt S½n TrÕi ĞÕi Vß½ng",num=1} }
 
 --MisDescEnd

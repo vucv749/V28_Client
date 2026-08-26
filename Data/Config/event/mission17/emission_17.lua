@@ -1,33 +1,33 @@
 --MisDescBegin
 x891096_g_ScriptId = 891096
 x891096_g_KDZZID = 1006000025
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x891096_g_MissionId = 2016
 x891096_g_LastMissionId = 2015
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x891096_g_MissionKind = 9
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x891096_g_MissionLevel = 80
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x891096_g_IfMissionElite = 0
 
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x891096_g_MissionName="#{YXDHYD_20210207_97}"
 x891096_g_MissionTarget="#{YXDHYD_20210207_231}"
 x891096_g_IsMissionOkFail = 0		
-x891096_g_Custom1 = {{id = "ÁË½âÓ¢ĞÛ´ó»á",num = 1}}
+x891096_g_Custom1 = {{id = "Hi¬u biªt anh hùng ğÕi hµi",num = 1}}
 
---Íê³ÉÈÎÎñNPCÊôĞÔ
+--hoàn thành nhi®m vø NPCthuµc tính
 x891096_g_Position_X=169
 x891096_g_Position_Z=97
 x891096_g_SceneID=0
-x891096_g_AccomplishNPC_Name="ÀîÓ¦ĞÛ"
+x891096_g_AccomplishNPC_Name="Lı ºng Hùng"
 
---½±Àø
+--thß·ng cho
 x891096_g_MoneyJZBonus					=	30000
 x891096_g_ExpBonus						= 250000
 

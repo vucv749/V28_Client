@@ -1,42 +1,42 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x212120_g_ScriptId = 212120
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x212120_g_Position_X=129
 x212120_g_Position_Z=50
 x212120_g_SceneID=18
-x212120_g_AccomplishNPC_Name="Ò®ÂÉÄª¸ç"
+x212120_g_AccomplishNPC_Name="Gia Lu§t MÕc Ca"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x212120_g_MissionId = 926
 
---Ä¿±êNPC
-x212120_g_Name	="Ò®ÂÉÄª¸ç"
+--møc tiêu NPC
+x212120_g_Name	="Gia Lu§t MÕc Ca"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x212120_g_MissionKind = 29
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x212120_g_MissionLevel = 31
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x212120_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x212120_g_MissionName="Ë½Í¨ÁÉ¹ú"
+--nhi®m vø Danh
+x212120_g_MissionName="Tß thông Liêu Qu¯c"
 x212120_g_MissionInfo="#{Mis_30_60_desc_001}"
-x212120_g_MissionTarget="    °ÑÂí³ĞÙ»ÃÜº¯ËÍ¸øÑãÄÏµÄÒ®ÂÉÄª¸ç#{_INFOAIM128,50,18,Ò®ÂÉÄª¸ç}¡£"
-x212120_g_MissionContinue="  ÎÒÌıËµ´óËÎµÄ¹ÙÔ±¶¼ºÜÌ°²Æ£¬²»ÖªµÀÊÇ²»ÊÇÕæµÄ¡£"
-x212120_g_MissionComplete="  ÕâÊÇÂí³ĞÙ»¸øÎÒµÄĞÅ£¿¿ìÄÃÀ´¸øÎÒ¿´¿´¡£àÅ¡­¡­àÅ£¬Ô­À´ÊÇÕâÑù£¬Ì«ºÃÁË£¬´óËÎÓĞÈç´Ë¹ÙÔ±£¬ÄÄÅÂÓĞÔÙ¶àµÄËÎ³¯½«Ê¿ÔÚÕ½³¡ÉÏÔ¡Ñª·ÜÕ½¶¼²»¿ÉÅÂÁË¡£¹ş¹ş£¬ÕæÄËÌìÖúÎÒÃÇ´óÁÉ¹ú£¡#r  <Ò®ÂÉÄª¸çÁ³ÉÏÂ¶³öÁËµÃÒâµÄĞ¦Èİ¡£>"
+x212120_g_MissionTarget="    Mang m§t hàm cüa Mã Th×a Sänh ğßa cho Gia Lu§t MÕc Ca · NhÕn Nam #{_INFOAIM128,50,18,Gia Lu§t MÕc Ca}."
+x212120_g_MissionContinue="  Ta nghe nói quan viên cüa ĞÕi T¯ng r¤t tham lam, không biªt có th§t hay không?"
+x212120_g_MissionComplete="  Ğây là lá thß Mã Th×a Sänh ğßa cho ta ß? Mau mang cho ta xem., à... ... À thì ra là v§y, v§y là quá t¯t r°i. ĞÕi T¯ng có quan viên nhß thª dù có thêm bao nhiêu tß¾ng sî ĞÕi T¯ng dûng cäm chiªn ğ¤u cûng không ğáng sş. Haha ğúng là tr¶i giúp nß¾c ĞÕi Liêu ta! #R<Gia Lu§t MÕc Ca lµ ra vë ğ¡c ı trên khuôn m£t.>"
 
 x212120_g_MoneyJZBonus=6000
 x212120_g_exp=7000
 
-x212120_g_Custom	= { {id="ÒÑµÃµ½Âí³ĞÙ»ÃÜº¯",num=1} }
+x212120_g_Custom	= { {id="Ğã l¤y ğßşc m§t hàm cüa Mã Th×a Sänh",num=1} }
 x212120_g_IsMissionOkFail = 0
 
-x212120_g_MisItemId = 40004416 --Âí³ĞÙ»ÃÜº¯
+x212120_g_MisItemId = 40004416 --?????
 
 
 --MisDescEnd

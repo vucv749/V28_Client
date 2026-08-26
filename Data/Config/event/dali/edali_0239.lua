@@ -1,52 +1,52 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x210239_g_ScriptId = 210239
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x210239_g_Position_X=160.0895
 x210239_g_Position_Z=156.9309
 x210239_g_SceneID=2
-x210239_g_AccomplishNPC_Name="ÕÔÌìÊ¦"
+x210239_g_AccomplishNPC_Name="Tri®u Thiên Sß"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x210239_g_MissionId = 719
---Ç°ÖÃÈÎÎñID
+--Ti«n Trí nhi®m vø ID
 x210239_g_MissionIdPer = 718
 
---Ä¿±êNPC
-x210239_g_Name	="ÕÔÌìÊ¦"
+--møc tiêu NPC
+x210239_g_Name	="Tri®u Thiên Sß"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x210239_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x210239_g_MissionLevel = 10
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x210239_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x210239_g_MissionName="ÃûÃÅÕıÅÉ"
---ÈÎÎñÃèÊö
+--nhi®m vø Danh
+x210239_g_MissionName="Danh Môn Chính Phái"
+--nhi®m vø miêu tä
 x210239_g_MissionInfo  = ""
-x210239_g_MissionInfo1 = "    $N£¬ÄãÖÕÓÚÀ´ÁË¡£#r    ²»´í²»´í£¬ÄãÏÖÔÚµÄ¸ù»ùÒÑ¾­´òµÃÏàµ±ÔúÊµ£¬È¥Ê®´óÃÅÅÉÑ§Ï°¸ßÉîÎä¹¦ÒÑ¾­ÊÇË³Àí³ÉÕÂÖ®ÊÂÁË¡£"
-x210239_g_MissionInfo2 = "    ¶Ô£¬ÄãÃ»ÓĞÌı´í£¬¾ÍÊÇ´«ËµÖĞµÄÊ®´óÃÅÅÉ¡£ĞÇËŞÅÉÊÇÎ÷Óò´ó×Ú£¬ÌìÉ½ÅÉÊÇÎ÷±±Ææİâ£¬ÌìÁúÅÉÊÇÌìÄÏÖ§Öù£¬åĞÒ£ÅÉÉñ³ö¹íÃ»£¬¶ëáÒÅÉÍò·ğ³¯×Ú£¬Îäµ±ÅÉµÀ¹ÇÏÉ·ç£¬Ã÷½ÌÊÇÌìÏÂµÚÒ»´ó½Ì£¬Ø¤°ïÊÇÌìÏÂµÚÒ»´ó°ï£¬ÉÙÁÖÅÉ¸üÊÇÌìÏÂÎäÁÖµÄÌ©É½±±¶·¡£"
-x210239_g_MissionInfo3 = "    ÎŞÂÛÄã°İÈëÁËÄÄÒ»¸öÃÅÅÉ£¬¶¼ÊÇÌ¤ÉÏÁËÒ»Ìõ½ğ¹â´óµÀ°¡£¬ÎÒÃÇÀÏ¸ç¶ù¼¸¸öÁ³ÉÏ¶¼ÓĞ¹â°¡¡£"
-x210239_g_MissionInfo4 = "    ÕâÑù°É£¬ÄãÈ¥ÕÒÊ®´óÃÅÅÉµÄÊÕÂ¼ÈËÁÄÁÄ£¬ÌıËûÃÇ½²½²¸÷´óÃÅÅÉµÄÌØÉ«£¬È»ºóÑ¡ÔñÒ»¸öÃÅÅÉ¼ÓÈë¡£µÈÄã³ÉÎªÁËÊ®´óÃÅÅÉµÄµÜ×Ó£¬ÄãÔÙÀ´ÕÒÎÒ£¬ÎÒÃÇ»á¸øÄã¿ªÒ»¸öÇì¹¦ÑçµÄ¡£"
+x210239_g_MissionInfo1 = "$N, Nhî r¯t cøc ğªn ğây. #r không t°i không t°i, Nhî hi®n tÕi Ğích cån c½ ğã ğánh cho tß½ng ğß½ng væng ch¡c, KhÑ Th§p ğÕi môn phái H÷c T§p cao thâm võ công ğã Th¸ thu§n lı thành chß½ng vi®c Li­u."
+x210239_g_MissionInfo2 = "Ğ¯i, Nhî không có nghe Thác, chính là trong truy«n thuyªt Ğích Th§p ğÕi môn phái. Tinh Tú Phái Th¸ Tây Vñc hàng loÕt, Phái Thiên S½n Th¸ tây b¡c C½ Ba, Thiên Long Phái Th¸ Thiên Nam cây trø, Tiêu Dao Phái xu¤t quÖ nh§p th¥n, Phái Nga Mi M£c Ph§t Tri«u Tôn, Phái Võ Ğang ĞÕo C¯t Tiên Phong, Minh Giáo Th¸ thiên hÕ thÑ nh¤t ĞÕi Giáo, Cái Bang Th¸ thiên hÕ thÑ nh¤t ğÕi bang, Phái Thiªu Lâm lÕi thiên hÕ võ lâm Ğích ngôi sao sáng."
+x210239_g_MissionInfo3 = "    Dù các hÕ bái nh§p môn phái nào, ğ«u là bß¾c trên con ğß¶ng ğÕi ğÕo quang minh, m¤y lão già chúng ta cûng ğßşc th½m lây."
+x210239_g_MissionInfo4 = "Nhß v§y ği, ngß½i ği Träo Th§p ğÕi môn phái Ğích thu nh§n sØ døng Nhân tâm sñ, nghe b÷n h¡n nói mµt chút Các ğÕi môn phái Ğích ğ£c s¡c, sau ğó lña ch÷n mµt cái môn phái gia nh§p. Ch¶ ngß½i tr· thành Li­u Th§p ğÕi môn phái ğ® tØ, Nhî lÕi ğªn tìm ta, chúng ta s¨ cho Nhî Khai mµt cái Khánh Công Yªn Ğích."
 
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x210239_g_MissionTarget="#{MIS_dali_ZTS_001}"
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x210239_g_ContinueInfo="    ÒÑ¾­³ÉÎªÊ®´óÃÅÅÉµÄµÜ×ÓÁËÂğ£¿"
---Ìá½»Ê±npcµÄ»°
-x210239_g_MissionComplete="    ¿´À´ÄãÒÑ¾­Ñ¡ºÃÁËÕıÈ·µÄÈËÉúµÀÂ·£¬Ïò×ÅÎ´À´±¼ÅÜ°É£¡"
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
+x210239_g_ContinueInfo="Ğã tr· thành Th§p ğÕi môn phái ğ® tØ Li­u Ma?"
+--ğ® trình Th¶i Npc trong l¶i nói
+x210239_g_MissionComplete="    Xem ra các hÕ ğã ch÷n con ğß¶ng ğúng, hãy hß¾ng thÆng t¾i tß½ng lai!"
 
 
 x210239_g_ItemBonus={}
 
 
-x210239_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
-x210239_g_Custom	= { {id="ÒÑ¼ÓÈëÃÅÅÉ",num=1} }--±äÁ¿µÄµÚ1Î»
+x210239_g_IsMissionOkFail = 0		--????0?
+x210239_g_Custom	= { {id="Ğã gia nh§p môn phái",num=1} }--????1?
 
 
 

@@ -1,9 +1,9 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200014_g_ScriptId = 200014
 
---¸±±¾Ãû³Æ
-x200014_g_CopySceneName="Ñà×ÓÎë"
---ÈÎÎñÎÄ±¾ÃèÊö
+--bän sao tên
+x200014_g_CopySceneName="Yªn TØ ‘"
+--nhi®m vø vån bän miêu tä
 
 --MisDescEnd

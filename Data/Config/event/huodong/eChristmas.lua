@@ -1,74 +1,74 @@
---MisDescBegin ÈÎÎñ¶¨ÒåÐÅÏ¢¿ªÊ¼£¬²»ÒªÉ¾³ý´ËÐÐ£¬¿Í»§¶Ë»á×Ô¶¯·ÖÎö¶ÁÈ¡ MisDescBegin Óë MisDescEnd Ö®¼äµÄÄÚÈÝ
---ÈÎÎñÃû³Æ
-x808200_g_MissionName					= "°Ù»¨Ôµ"
---ÈÎÎñÄ¿±ê
+--MisDescBegin nhi®m vø ð¸nh nghîa tin tÑc b¡t ð¥u, không c¥n xóa bö vi®c này, hµ khách Ðoan Hµi tñ ðµng phân tích Ð§u Thü MisDescBegin Dß MisDescEnd trong lúc ðó Ðích nµi dung
+--nhi®m vø tên
+x808200_g_MissionName					= "Bách hoa Duyên"
+--nhi®m vø møc tiêu
 x808200_g_MissionTarget					= "%f"
---ÈÎÎñÀàÐÍ
+--nhi®m vø loÕi hình
 x808200_g_MissionKind					= 1
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x808200_g_MissionLevel					= 10000
---Íê³ÉÈÎÎñNPCµÄÃû×Ö
-x808200_g_AccomplishNPC_Name			= "°¢Àï"
---Íê³ÉÈÎÎñNPCµÄ³¡¾°
+--hoàn thành nhi®m vø NPCÐích tên
+x808200_g_AccomplishNPC_Name			= "A Lý"
+--hoàn thành nhi®m vø NPCÐích trß¶ng cänh
 x808200_g_SceneID						= 2
---Íê³ÉÈÎÎñNPCµÄ×ø±êX
+--hoàn thành nhi®m vø NPCÐích t÷a ðµ X
 x808200_g_Position_X					= 181
---Íê³ÉÈÎÎñNPCµÄ×ø±êZ
+--hoàn thành nhi®m vø NPCÐích t÷a ðµ Z
 x808200_g_Position_Z					= 75
---¾­Ñé½±Àø
+--kinh nghi®m thß·ng cho
 --x808200_g_ExpBonus					= 0
---½ð±Ò½±Àø
+--Kim T® thß·ng cho
 --x808200_g_MoneyBonus					= 0
---½»×Ó½±Àø
+--Giao TØ thß·ng cho
 --x808200_g_MoneyJZBonus				= 0
---ÈÎÎñÐèÇóÉ±¹Ö
+--nhi®m vø nhu c¥u giªt quái
 --x808200_g_DemandKill					= {}
---ÈÎÎñÐèÇóÎïÆ·
+--nhi®m vø nhu c¥u v§t ph¦m
 --x808200_g_DemandItem					= {}
---¹Ì¶¨ÎïÆ·½±Àø
+--c¯ ð¸nh v§t ph¦m thß·ng cho
 --x808200_g_ItemBonus					= {}
---Ëæ»úÎïÆ·½±Àø
+--TuÏ C½ v§t ph¦m thß·ng cho
 --x808200_g_RandomItemBonus				= {}
---¿ÉÑ¡ÎïÆ·½±Àø
+--Khä Tuy¬n v§t ph¦m thß·ng cho
 --x808200_g_RadioItemBonus				= {}
---ÈÎÎñ»·Êý
+--nhi®m vø Hoàn S±
 x808200_g_MissionRound					= 358
---ÊÇ·ñË«±¶¾­Ñé
+--hay không Song Bµi kinh nghi®m
 x808200_g_DoubleExp						= 359
---ÌØÊâ±ê¼ÇµÄ¿ªÊ¼Î»ÖÃ
+--ð£c thù d¤u hi®u Ðích b¡t ð¥u v¸ trí
 x808200_g_StrForePart					= 4
---²ÎÊý×Ö·û´®
---¾¯¸æ£º´Ë×Ö·û´®µÄË³Ðò²»µÃ¸Ä±ä£¬·ñÔò»áµ¼ÖÂÒÑ½ÓÈÎÎñµÄÍæ¼ÒÏÔÊ¾´íÂÒÇÒÎÞ·¨Íê³ÉÈÎÎñ£¡ÈçÐèÔö¼ÓÊý¾Ý£¬ÇëÔÚ½áÎ²´¦½øÐÐ£¡
+--tham s¯ tñ phù Xuyªn
+--cänh cáo: ThØ tñ phù Xuyªn Ðích trình tñ không ðßþc thay ð±i, nªu không Hµi làm cho Dî tiªp nh§n chÑc vø Vø Ðích ngß¶i ch½i bi¬u hi®n thác loÕn Thß không th¬ hoàn thành nhi®m vø! Nhß Nhu gia tång s¯ li®u, Thïnh TÕi kªt cøc XØ tiªn hành!
 x808200_g_StrList						= {
-	"Î´ÕÒµ½µÄ×Ö·û´®",
-	--×¢£ºÒÔÏÂ×Ö·û´®½«ÔÚQuestLog.luaÖÐ¶ÁÈ¡²¢×ö´Ë½Å±¾µÄÌØÊâ´¦Àí
-	"ÒÑÕÒµ½ÒÅÊ§µÄÐ¡²ù×Ó £º %s / 10",
-	"ÊÕ¼¯Ï¡ÓÐµÄ»¨Åè £º %s / 5",
-	"ÒÑ²É¼¯ÜÔÀò»¨ £º %s / 3",
-	"ÒÑ°Ý·Ã £º %s / 1",
-	"ÒÑÕÒµ½°Ç¼¦ £º %s / 1",
-	"ÒÑÕÒµ½ÒÅÊ§µÄÐ¡²ù×Ó £º %s / 5",	--²ß»®½«É±¹ÖÈÎÎñÐÞ¸ÄÎªÈÎºÎ¹Ö¶¼µôÂä£¬ÎªÁË²»¸øÒÔÇ°ÒÑ´æÔÚµÄÈÎÎñ´øÀ´Ó°Ïì£¬ÕâÀïÐÂÔöÒ»¸öÀàËÆÈÎÎñ 2009-12-16
-	"±£Áô",
-	"±£Áô",
-	"±£Áô",
-	"±£Áô",
-	--×¢£º´ò¹Ö×ÓÈÎÎñ²»µÃ²»ÓÃÃû×Ö¼ÇÂ¼Íæ¼ÒÒª´òµÄ¹Ö£¬ÒòÎª¶à¸ö²»Í¬IDµÄ¹Ö¶ÔÓ¦Ò»¸öÃû×Ö£¬Íæ¼Ò´òÄÄ¸ö¾ù¿É
-	"ÃÜÌ½ÏÈ·æ",	"Ä¾ÈËà¶ÂÞ",	"Ä¾ÍõÖ©Öë",	"ÌìÉ½Ð¡Ñ©¹Ö",	"ÑýÒìÐÄÄ§",	"¸¯Ìå¿þÀÜ",	"ÃðÑý¿þÀÜ",
-	"ÇàÆìÌ½Âí", "Ä¾ÈË¾«Ó¢",	"Ë®ÍõÖ©Öë",	"ÌìÉ½´óÑ©¹Ö",	"ÆÆàÁÐÄÄ§",	"Ê´ÐÄ¿þÀÜ",	"ÖïÏÉ¿þÀÜ",
-	"À¶ÆìÌ½Âí",	"Ä¾ÈËÎäÊ¿",	"»ðÍõÖ©Öë",	"ÌìÉ½Ñ©¹ÖÍõ",	"É±ÓûÐÄÄ§",	"»¯ÆÇ¿þÀÜ",	"ß±Éñ¿þÀÜ",
-	"¹âÃ÷µî",	"Ê¯¸Õ",		"¹âÃ÷µî#{_INFOAIM95,160,11,Ê¯¸Õ}Ê¯¸Õ",
-	"ÉÙÁÖËÂ",	"ÐþÖ¤",		"ÉÙÁÖËÂ#{_INFOAIM99,145,9,ÐþÖ¤}ÐþÖ¤",
-	"ÐÇËÞº£",	"Ììè¯×Ó",	"ÐÇËÞº£#{_INFOAIM99,142,16,Ììè¯×Ó}Ììè¯×Ó",
-	"ÌìÉ½",		"µËÆÅ",		"ÌìÉ½#{_INFOAIM95,148,17,µËÆÅ}µËÆÅ",
-	"Îäµ±É½",	"ÏôÌìÒÝ",	"Îäµ±É½#{_INFOAIM100,181,12,ÏôÌìÒÝ}ÏôÌìÒÝ",
-	"Áè²¨¶´",	"¹«Ò±×Ó³¤",	"Áè²¨¶´#{_INFOAIM44,125,14,¹«Ò±×Ó³¤}¹«Ò±×Ó³¤",
-	"ÌìÁúËÂ",	"±¾Ãû",		"ÌìÁúËÂ#{_INFOAIM99,142,13,±¾Ãû}±¾Ãû",
-	"´óÀí",		"¶ÎÕý´¾",	"¶ÎÕý´¾#{_INFOAIM63,36,2,¶ÎÕý´¾}",
-	"ÂåÑô",		"ÖÇÇå´óÊ¦",	"ÖÇÇå´óÊ¦#{_INFOAIM79,52,0,ÖÇÇå´óÊ¦}",
-	"ËÕÖÝ",		"ËÕéø",		"ËÕéø#{_INFOAIM97,204,1,ËÕéø}",
+	"Không tìm ðßþc Ðích tñ phù Xuyªn",
+--Chú: Dß¾i tñ phù Xuyªn Tß¾ng TÕi QuestLog. LuaTrung Ð§u Thü Tính T¯ ThØ k¸ch bän g¯c Ðích ð£c thù xØ lý
+	"Dî tìm ðßþc D¸ Th¤t Ðích Ti¬u Sän TØ: %s / 10",
+	"Thu th§p Hi Hæu Ðích Hoa B°n: %s / 5",
+	"Dî thu th§p hoa lài: %s / 3",
+	"Dî bái phöng: %s / 1",
+	"Dî tìm ðßþc Bát Kê: %s / 1",
+	"Dî tìm ðßþc D¸ Th¤t Ðích Ti¬u Sän TØ: %s / 5",	--????????????????,????????????????,?????????? 2009-12-16
+	"Giæ lÕi",
+	"Giæ lÕi",
+	"Giæ lÕi",
+	"Giæ lÕi",
+--Chú: Tá Quái TØ nhi®m vø không th¬ không Døng tên bän ghi chép ngß¶i ch½i mu¯n ðánh Ðích Quái, b·i vì nhi«u khác nhau IDÐích Quái ð¯i Ñng mµt cái tên, ngß¶i ch½i Tá ngß¶i nào Quân Khä
+	"M§t Thám Tiên Phong",	"Mµc Nhân Lâu La",	"Mµc Vß½ng Tri Thù",	"Thiên S½n Ti¬u Tuyªt Quái",	"Yêu D¸ Tâm Ma",	"Hü Th¬ ‘i LuÛ",	"Di®t Yêu ‘i LuÛ",
+	"Thanh KÏ Thám Mã", "Mµc Nhân Tinh Anh",	"ThuÖ Vß½ng Tri Thù",	"Thiên S½n ÐÕi Tuyªt Quái",	"Phá Sân Tâm Ma",	"Thñc Tâm ‘i LuÛ",	"Chu Tiên ‘i LuÛ",
+	"Lam KÏ Thám Mã",	"Mµc Nhân Võ Sî",	"Höa Vß½ng Tri Thù",	"Thiên S½n Tuyªt Quái Vß½ng",	"Sát Døc Tâm Ma",	"Hoá Phách ‘i LuÛ",	"Thí Th¥n ‘i LuÛ",
+	"Quang Minh Ði®n",	"ThÕch Cß½ng",		"Quang Minh Ði®n#{_INFOAIM95, 160, 11, ThÕch Cß½ng}ThÕch Cß½ng",
+	"Thiªu Lâm Tñ",	"Huy«n ChÑng",		"Thiªu Lâm Tñ#{_INFOAIM99, 145, 9, Huy«n ChÑng}Huy«n ChÑng",
+	"Tinh Túc Häi",	"Thiên Toàn TØ",	"Tinh Tú Häi#{_INFOAIM99, 142, 16, Thiên Toàn TØ}Thiên Toàn TØ",
+	"Thiên S½n",		"Ð£ng Bà",		"Thiên S½n#{_INFOAIM95, 148, 17, Ð£ng Bà}Ð£ng Bà",
+	"Võ Ðang S½n",	"Tiêu Thiên D§t",	"Núi Võ Ðang#{_INFOAIM100, 181, 12, Tiêu Thiên D§t}Tiêu Thiên D§t",
+	"Lång Ba Ðµng",	"Công Dã TØ Trß¶ng",	"Lång Ba Ðµng#{_INFOAIM44, 125, 14, Công Dã TØ Trß¶ng}Công Dã TØ Trß¶ng",
+	"Thiên Long Tñ",	"Hµ Tñ Trß·ng Lão",		"Thiên Long Tñ#{_INFOAIM99, 142, 13, B±n Danh}B±n Danh",
+	"ÐÕi Lý",		"Ðoàn Chính Thu¥n",	"Ðoàn Chính Thu¥n#{_INFOAIM63, 36, 2, Ðoàn Chính Thu¥n}",
+	"LÕc Dß½ng",		"Trí Thanh ÐÕi Sß",	"Trí Thanh ÐÕi Sß#{_INFOAIM79, 52, 0, Trí Thanh ÐÕi Sß}",
+	"Tô Châu",		"Tô ThÑc",		"Tô ThÑc#{_INFOAIM97, 204, 1, Tô ThÑc}",
 }
---¸ñÊ½×Ö·û´®
---¾¯¸æ£º´Ë×Ö·û´®µÄË³Ðò²»µÃ¸Ä±ä£¬·ñÔò»áµ¼ÖÂÒÑ½ÓÈÎÎñµÄÍæ¼ÒÏÔÊ¾´íÂÒÇÒÎÞ·¨Íê³ÉÈÎÎñ£¡ÈçÐèÔö¼ÓÊý¾Ý£¬ÇëÔÚ½áÎ²´¦½øÐÐ£¡
+--cách thÑc tñ phù Xuyªn
+--cänh cáo: ThØ tñ phù Xuyªn Ðích trình tñ không ðßþc thay ð±i, nªu không Hµi làm cho Dî tiªp nh§n chÑc vø Vø Ðích ngß¶i ch½i bi¬u hi®n thác loÕn Thß không th¬ hoàn thành nhi®m vø! Nhß Nhu gia tång s¯ li®u, Thïnh TÕi kªt cøc XØ tiªn hành!
 x808200_g_FormatList					= {
 	"#{SDHDRW_091109_36}%s#{SDHDRW_091109_37}%s#{SDHDRW_091109_38}%s#{SDHDRW_091109_39}",
 	"#{SDHDRW_091109_36}%s#{SDHDRW_091109_40}%s#{SDHDRW_091109_39}",

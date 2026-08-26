@@ -1,38 +1,38 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x250037_g_ScriptId = 250037
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x250037_g_MissionId = 1021
 
---ÈÎÎñÄ¿±ênpc
-x250037_g_TargetNpcName	="Ï²À´ÀÖ"
+--nhi®m vø møc tiêu Npc
+x250037_g_TargetNpcName	="HÖ Lai LÕc"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x250037_g_MissionKind = 3
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x250037_g_MissionLevel = 1
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x250037_g_IfMissionElite = 0
 
---ÈÎÎñÏŞÊ±
-x250037_g_MissionLimitTime = 60 * 60 * 1000; --ºÁÃë
+--nhi®m vø HÕn Th¶i
+x250037_g_MissionLimitTime = 60 * 60 * 1000; --??
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x250037_g_MissionName="»éÀñ¡¤°İÌìµØ";
-x250037_g_MissionInfo="ÇëÕÒÂåÑô[177,94]µÄÏ²À´ÀÖ°²ÅÅ°İÌìµØ¡£";
-x250037_g_MissionTarget="    ÕÒÂåÑôÏ²À´ÀÖ#{_INFOAIM177,94,0,Ï²À´ÀÖ}°²ÅÅ°İÌìµØ¡£";		--ÈÎÎñÄ¿±ê
-x250037_g_ContinueInfo1="ÄãÃÇÀ´µÄÊµÔÚÌ«ÍíÁË£¬¼ªÊ±ÒÑ¹ı£¬ÎÒÒ²Ã»°ì·¨ÁË¡£";
-x250037_g_ContinueInfo2="ÕâÀïÒª²ß»®À´Ëµ£¬Ğ»Ğ»¡£";
-x250037_g_MissionComplete="ÄÇÈÃÎÒÃÇ¿ªÊ¼°É¡£";
+--nhi®m vø vån bän miêu tä
+x250037_g_MissionName="Hôn l­·bái thiên ğ¸a";
+x250037_g_MissionInfo="M¶i ğªn LÕc Dß½ng[177,94] HÖ Lai LÕc s¡p xªp bái thiên ğ¸a.";
+x250037_g_MissionTarget="Träo LÕc Dß½ng Hï Lai LÕc#{_INFOAIM177, 94, 0, Hï Lai LÕc}an bài bái thiên ğ¸a.";		--????
+x250037_g_ContinueInfo1="Các ngß½i t¾i muµn quá, gi¶ lành ğã qua, ta không còn cách nào khác";
+x250037_g_ContinueInfo2="— ğây c¥n l§p kª hoÕch, cám ½n";
+x250037_g_MissionComplete="Hãy ğ¬ chúng ta b¡t ğ¥u";
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 x250037_g_MoneyBonus = 0
 
 

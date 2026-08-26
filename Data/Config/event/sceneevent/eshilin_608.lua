@@ -1,40 +1,40 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x212104_g_ScriptId = 212104
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x212104_g_MissionId = 608
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x212104_g_MissionKind = 37
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x212104_g_MissionLevel = 63
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x212104_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x212104_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+--nhi®m vø hay không ğã hoàn thành
+x212104_g_IsMissionOkFail = 0		--????0?
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñĞèÒªµÃµ½µÄÎïÆ·
-x212104_g_DemandItem={{id=40002112,num=1}}		--±äÁ¿µÚ1Î»
+--nhi®m vø c¥n nh§n ğßşc Ğích v§t ph¦m
+x212104_g_DemandItem={{id=40002112,num=1}}		--???1?
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x212104_g_MissionName="¿ÉÅÂµÄÕæÏà"
+--nhi®m vø vån bän miêu tä
+x212104_g_MissionName="Sñ th§t ğáng sş"
 x212104_g_MissionInfo="#{Lua_Shilin_005}"
-x212104_g_MissionTarget="  °Ñ#Y°¢Ö§µÄÅäÊÎ#W½»¸ø#GÔ²ÔÂ´å#WµÄ´å³¤#RÖ£Ğş#W#{_INFOAIM182,163,26,Ö£Ğş}¡£"
-x212104_g_ContinueInfo="  ÄãÓĞÊ²Ã´ÊÂÂğ£¿"
-x212104_g_MissionComplete="  Õâ£¬ÕâÄÑµÀ¾ÍÊÇÙÈÊ¦ÉçÊ×ÁìµÄÅäÊÎ£¿"
+x212104_g_MissionTarget="Bä#YA Chi Ğích Ph¯i SÑc#Wgiao cho#Gtrång tròn Thôn#WĞích thôn trß¶ng#RTr¸nh Huy«n#W#{_INFOAIM182, 163, 26, Tr¸nh Huy«n}."
+x212104_g_ContinueInfo="  Ngß½i có chuy®n gì?"
+x212104_g_MissionComplete="Giá, Giá chÆng l¨ chính là Y¬n Sß Xã thü lînh Ğích Ph¯i SÑc?"
 
---»õÎïID
+--hàng hóa ID
 x212104_g_ItemID = 40002112
 
---ÊÕ»õÈË
-x212104_g_Name = "Ö£Ğş"
+--Thu Hoá Nhân
+x212104_g_Name = "Tr¸nh Huy«n"
 
 x212104_g_MoneyJZBonus=26900
 x212104_g_Exp = 22000

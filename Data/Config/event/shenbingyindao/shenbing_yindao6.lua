@@ -1,21 +1,21 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x890288_g_ScriptId = 890288
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x890288_g_MissionId = 2245
---ÈÎÎñ¹éÀà
-x890288_g_MissionKind = 9 --Òıµ¼ÈÎÎñ ÀàĞÍ£º9 Â·¾¶£º\Client\Config\MissionKind.txt
---ÈÎÎñµÈ¼¶
+--nhi®m vø phân loÕi
+x890288_g_MissionKind = 9 --???? ??:9 ??:\Client\Config\MissionKind.txt
+--nhi®m vø c¤p b§c
 x890288_g_MissionLevel = 65
---ÈÎÎñÃû
-x890288_g_MissionName = "#{SQYD_230802_123}" --Òıµ¼ÈÎÎñÁù£ºÇéÈĞÒıµ¼?ÇéÈĞ¶Ò»»
---ÈÎÎñÄ¿±ê
+--nhi®m vø Danh
+x890288_g_MissionName = "#{SQYD_230802_123}" --?????:?????????
+--nhi®m vø møc tiêu
 x890288_g_MissionTarget = "#{SQYD_230802_127}"
---±ê¼Ç³É¹¦ÊÇÄÄºÅÎ» ÕâÀï±ê¼ÇµÄÊÇ0ºÅÎ»
+--d¤u hi®u thành công Th¸ Ná Hào V¸ n½i này d¤u hi®u chính là 0Hào V¸
 x890288_g_IsMissionOkFail = 0
--- ÈÎÎñÍê³ÉÇé¿ö,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x890288_g_Custom = { { id = "Ê¹ÓÃÆßÇé²ĞÆ¬»òÆßÇéÊ¯½øĞĞÒ»´ÎÆßÇéÈĞ¶Ò»»", num = 1 } }
---ÈÎÎñ½±Àø
+-- nhi®m vø hoàn thành tình hu¯ng, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x890288_g_Custom = { { id = "SØ døng th¤t tình Tàn Phiªn Ho£c th¤t tình ThÕch tiªn hành mµt l¥n th¤t tình Nhçn ğ±i", num = 1 } }
+--nhi®m vø thß·ng cho
 --x890288_g_ItemBonus={{id=38002946,num=1},{id=38002948,num=1}}
 x890288_g_ExpBonus = 400000
 x890288_g_MoneyJZBonus = 100000

@@ -1,40 +1,40 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200038_g_ScriptId = 200038
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200038_g_MissionId = 32
 
---Ç°ĞøÈÎÎñºÅ
+--Ti«n Tøc nhi®m vø Hào
 x200038_g_PreMissionId = 31
 
---Ä¿±êNPC
-x200038_g_Name	="Ïô·å"
+--møc tiêu NPC
+x200038_g_Name	="Tiêu Phong"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200038_g_MissionKind = 52
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200038_g_MissionLevel = 50
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200038_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x200038_g_MissionName="Áù¾ü±ÙÒ×"
---ÈÎÎñÃèÊö
+--nhi®m vø Danh
+x200038_g_MissionName="Løc Quân T¸ D¸ch"
+--nhi®m vø miêu tä
 x200038_g_MissionInfo="#{Mis_juqing_0032}"
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x200038_g_MissionTarget="#{Mis_juqing_Tar_0032}"		
---Ìá½»Ê±npcµÄ»°
-x200038_g_MissionComplete="  Ò®ÂÉºé»ùÖØ¼ûÌìÈÕ£¬È«¿¿ÒåµÜÏô·åºÍ$N´óÏÀÖ®Á¦¡£¶şÎ»ÇëÊÜÒ®ÂÉºé»ùÒ»°İ£¡"		
+--ğ® trình Th¶i Npc trong l¶i nói
+x200038_g_MissionComplete="  Gia Lu§t H°ng C½ lÕi nhìn th¤y m£t tr¶i, t¤t cä ğ«u dña vào sÑc nghîa ğ® Tiêu Phong và $N ğÕi hi®p. Hai v¸ xin nh§n mµt lÕy cüa Gia Lu§t H°ng C½!"		
 
 x200038_g_MoneyJZBonus=59400
 x200038_g_exp=62400
 
 x200038_g_RadioItemBonus={{id=10422007 ,num=1},{id=10422008,num=1},{id=10422009,num=1},{id=10422010,num=1}}
 
-x200038_g_Custom	= { {id="ÒÑ»¤ËÍÏô·åºÍ»ÊÌ«Êå»Ø²ÔÃ£É½±±Õ¯",num=1} }
+x200038_g_Custom	= { {id="Ğã hµ t¯ng Tiêu Phong và Hoàng Thái Thúc quay v« trÕi B¡c núi Thß½ng Mang",num=1} }
 
 
 --MisDescEnd

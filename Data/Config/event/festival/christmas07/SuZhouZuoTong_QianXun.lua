@@ -1,41 +1,41 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x229024_g_ScriptId	= 229024
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x229024_g_Position_X=129.2676
 x229024_g_Position_Z=213.0914
 x229024_g_SceneID=1
-x229024_g_AccomplishNPC_Name="×óÍ©"
+x229024_g_AccomplishNPC_Name="Tä Ğ°ng"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x229024_g_MissionId			= 421
---ÏÂÒ»¸öÈÎÎñµÄID
+--kª tiªp nhi®m vø Ğích ID
 x229024_g_MissionIdNext	= 421
---ÈÎÎñÄ¿±ênpc
-x229024_g_Name			= "×óÍ©"
---ÈÎÎñ¹éÀà
+--nhi®m vø møc tiêu Npc
+x229024_g_Name			= "Tä Ğ°ng"
+--nhi®m vø phân loÕi
 x229024_g_MissionKind			= 12
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x229024_g_MissionLevel		= 10
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x229024_g_IfMissionElite	= 0
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x229024_g_IsMissionOkFail	= 0		--±äÁ¿µÄµÚ0Î»
+--nhi®m vø hay không ğã hoàn thành
+x229024_g_IsMissionOkFail	= 0		--????0?
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x229024_g_MissionName			= "Ç§Ñ°"
---ÈÎÎñÃèÊö
+--nhi®m vø vån bän miêu tä
+x229024_g_MissionName			= "Thiên t¥m"
+--nhi®m vø miêu tä
 x229024_g_MissionInfo			= "#{QX_20071129_026}"
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x229024_g_MissionTarget		= "#{QX_20071129_025}"
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
 x229024_g_ContinueInfo		= "#{QIANXUN_INFO_19}"
---Íê³ÉÈÎÎñnpcËµµÄ»°
+--hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
 x229024_g_MissionComplete	= "#{QX_20071129_039}"
---Ã¿ÌìÃ¿ÖÖ¹ØÏµµÄ»·ÊıÉÏÏŞ
+--m²i ngày M²i Xung quan h® Ğích Hoàn S± hÕn mÑc cao nh¤t
 x229024_g_MaxRound	= 10
---¿ØÖÆ½Å±¾
+--kh¯ng chª k¸ch bän g¯c
 x229024_g_ControlScript		= 001066
 
 --MisDescEnd

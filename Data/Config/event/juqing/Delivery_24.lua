@@ -1,42 +1,42 @@
 --MisDescBegin
 
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200091_g_ScriptId = 200091
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x200091_g_Position_X=220
 x200091_g_Position_Z=206
 x200091_g_SceneID=0
-x200091_g_AccomplishNPC_Name="¿µÃô"
+x200091_g_AccomplishNPC_Name="Khang Mçn"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200091_g_MissionId = 24
 
---Ç°ĞøÈÎÎñ
+--Ti«n Tøc nhi®m vø
 x200091_g_PreMissionId = 23
 
---Ä¿±êNPC
-x200091_g_Name	="¿µÃô"
+--møc tiêu NPC
+x200091_g_Name	="Khang Mçn"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200091_g_MissionKind = 52
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200091_g_MissionLevel = 50
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200091_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x200091_g_MissionName="±£»¤Âí·òÈË"
+--nhi®m vø Danh
+x200091_g_MissionName="Bäo v® Mã Phu Nhân"
 x200091_g_MissionInfo="#{Mis_juqing_0024}"
 x200091_g_MissionTarget="#{Mis_juqing_Tar_0024}"
-x200091_g_MissionComplete="  ´óÏÀÔ¶µÀ¶øÀ´£¬²»·Á½øÎİºÈ±­²è£¬ĞªĞª½Å"
+x200091_g_MissionComplete="  ĞÕi hi®p ğß¶ng xa t¾i, xin m¶i vào nhà u¯ng trà, nghï ng½i"
 
 x200091_g_MoneyJZBonus=7920
 x200091_g_exp=9360
 
-x200091_g_Custom	= { {id="ÒÑÕÒµ½¿µÃô",num=1} }
+x200091_g_Custom	= { {id="Ğã tìm ğßşc Khang Mçn",num=1} }
 x200091_g_IsMissionOkFail = 0
 
 

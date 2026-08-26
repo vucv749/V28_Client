@@ -1,45 +1,45 @@
 --MisDescBegin
 x893068_g_ScriptId = 893068
-x893068_g_MainScriptId = 893069--Ö÷½Å±¾ºÅ
+x893068_g_MainScriptId = 893069--????
 x893068_g_KDZZID = 1001000182
 x893068_g_KDZZSubID = 5
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x893068_g_MissionId = 2054
 x893068_g_MissionKind = 9
 x893068_g_MissionLevel = 50
 x893068_g_IfMissionElite = 0
 x893068_g_PreMissionId = 2053
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x893068_g_MissionName="#{ZSYR_211227_223}"
 x893068_g_MissionTarget="#{ZSYR_211227_225}"
 x893068_g_MissionComplete="#{ZSYR_211227_224}"
-x893068_g_Custom={ {id="ÒÑµ÷²éÆæ¹ÖµÄ»¨²İ",num=1} }
+x893068_g_Custom={ {id="Dî ği«u tra kÏ quái Ğích hoa cö",num=1} }
 
---Íê³ÉÈÎÎñNPCÊôĞÔ
+--hoàn thành nhi®m vø NPCthuµc tính
 x893068_g_Position_X=265
 x893068_g_Position_Z=129
 x893068_g_SceneID=2
-x893068_g_AccomplishNPC_Name="ÔÆÆ®Æ®"
+x893068_g_AccomplishNPC_Name="Vân Phiêu Phiêu"
 
---ÈÎÎñ²ÎÊı
-x893068_g_IsMissionOkFail = 0--ÊÇ·ñÍê³É
+--nhi®m vø tham s¯
+x893068_g_IsMissionOkFail = 0--????
 
---npc¾àÀë
+--Npc khoäng cách
 x893068_g_NpcDist = 5
---±³°ü¿ÕÎ»
+--tay nãi không v¸
 x893068_g_BagSpace = 1
---½±ÀøµÀ¾ß
+--thß·ng cho ğÕo cø
 x893068_g_BonusItem = 38002491
---Ã¿ÈÕÈÎÎñ´ÎÊıÏÂÏŞ
+--m²i ngày nhi®m vø s¯ l¥n hÕn cu¯i
 x893068_g_MinCount = 3
 
---²É¼¯monster
+--thu th§p monster
 x893068_g_MonsterId = 49495
 x893068_g_MonsterDist = 3
 
---½±Àø
+--thß·ng cho
 --x893068_g_ExpBonus = 10000
 
 --MisDescEnd

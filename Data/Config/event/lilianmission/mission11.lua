@@ -1,54 +1,54 @@
 --MisDescBegin
 x893186_g_ScriptId = 893186
 x893186_g_MissionId = 2081
-x893186_g_MainScriptId = 893185--Ö÷½Å±¾ºÅ
+x893186_g_MainScriptId = 893185--????
 
 --kdzz
 x893186_g_KDZZID = 1006000552
 x893186_g_KDZZSubID = 1
 
---·ÅÆúÈÎÎñÖØÖÃ±ê¼Ç
+--vÑt bö nhi®m vø Trùng Trí d¤u hi®u
 x893186_g_LastMissionId = 2092
 
---Ç°ÖÃÈÎÎñ
-x893186_g_PreScirptId = 893186--ÉÏÒ»½Å±¾ºÅ
-x893186_g_PreMissionId = 2080--ÉÏÒ»ÈÎÎñºÅ
+--Ti«n Trí nhi®m vø
+x893186_g_PreScirptId = 893186--?????
+x893186_g_PreMissionId = 2080--?????
 
---ºóĞøÈÎÎñ
-x893186_g_NextScirptId = 893187--ÏÂÒ»½Å±¾ºÅ
-x893186_g_NextMissionId = 2083--ÏÂÒ»ÈÎÎñºÅ
+--ğªn tiªp sau nhi®m vø
+x893186_g_NextScirptId = 893187--?????
+x893186_g_NextMissionId = 2083--?????
 
---½ÓÈÎÎñnpc
-x893186_g_AcceptNPC_Name="°ÙÏşÉú"--½ÓÈÎÎñµÄnpc»òÕßnpcÁĞ±í
+--tiªp nh§n chÑc vø Vø Npc
+x893186_g_AcceptNPC_Name="Bách Hi¬u Sanh"--????npc??npc??
 
---½»ÈÎÎñnpc
-x893186_g_Position_X=150--Íê³ÉÈÎÎñNPCÊôĞÔ
+--Giao nhi®m vø Npc
+x893186_g_Position_X=150--????NPC??
 x893186_g_Position_Z=208
 x893186_g_SceneID=1
-x893186_g_AccomplishNPC_Name="°ÙÏşÉú"
+x893186_g_AccomplishNPC_Name="Bách Hi¬u Sanh"
 
---ÈÎÎñÊı¾İ
+--nhi®m vø s¯ li®u
 x893186_g_MissionKind = 7
 x893186_g_MissionLevel = 65
 x893186_g_IfMissionElite = 0
-x893186_g_IsMissionOkFail = 0--ÈÎÎñÍê³É±êÖ¾Î»(Ò»¶¨ÒªÎª0)
+x893186_g_IsMissionOkFail = 0--???????(????0)
 
-x893186_g_MissionName="#{ZQSS_220429_1}"--ÈÎÎñÃû
-x893186_g_MissionInfo="#{ZQSS_220429_2}"--ÈÎÎñÎÄ±¾ÃèÊö£¨ÈÎÎñÁìÈ¡¶Ô°×£©
-x893186_g_MissionComplete="#{ZQSS_220429_3}"--ÈÎÎñÍê³É¶Ô°×
-x893186_g_MissionTarget="#{ZQSS_220429_4}"--ÈÎÎñÄ¿±ê(ÈÎÎñÃæ°åÖĞÈÎÎñĞÅÏ¢ÏÔÊ¾ÄÚÈİ)
+x893186_g_MissionName="#{ZQSS_220429_1}"--???
+x893186_g_MissionInfo="#{ZQSS_220429_2}"--??????(??????)
+x893186_g_MissionComplete="#{ZQSS_220429_3}"--??????
+x893186_g_MissionTarget="#{ZQSS_220429_4}"--????(?????????????)
 
---×Ô¶¨ÒåÍê³ÉÇé¿ö£¬ÄÚÈİ²»ÄÜÊ¹ÓÃ×Öµä£¬·Ö±ğ¶ÔÓ¦missionparamµÄµÚ1Î»ºóÑÓ
-x893186_g_Custom = {{id="Ñ°ÕÒ½­ºş°ÙÏşÉú",num=1}}
-x893186_g_ParamIndex = 2--ÈÎÎñ²ÎÊı0-Íê³É±ê¼Ç1-Íê³ÉÇé¿ö2-Ëæ»úË÷Òı
+--Tñ ğ¸nh nghîa hoàn thành tình hu¯ng, nµi dung không th¬ sØ døng tñ ği¬n, phân bi®t ğ¯i Ñng missionparamĞích Ğ® 1V¸ H§u Diên
+x893186_g_Custom = {{id="Tìm kiªm giang h° Bách Hi¬u Sanh",num=1}}
+x893186_g_ParamIndex = 2--????0-????1-????2-????
 
---npc¾àÀë
+--Npc khoäng cách
 x893186_g_NpcDist = 5
 
 x893186_g_accept_JZ = 600000
 x893186_g_AcceptItemId = 38002582
 
---½±Àø
+--thß·ng cho
 x893186_g_WDPoint_max =2970
 x893186_g_WDPointTotal_max =2970 + 2430
 

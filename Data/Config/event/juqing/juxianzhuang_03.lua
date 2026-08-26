@@ -1,41 +1,41 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200022_g_ScriptId = 200022
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200022_g_MissionId = 22
 
---Ç°ĞøÈÎÎñºÅ
+--Ti«n Tøc nhi®m vø Hào
 x200022_g_PreMissionId = 47
 
---Ä¿±êNPC
-x200022_g_Name	="ÇÇ·å"
-x200022_g_Name1 ="Ğì¾ªÀ×"
+--møc tiêu NPC
+x200022_g_Name	="Ki«u Phong"
+x200022_g_Name1 ="T× Kinh Lôi"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200022_g_MissionKind = 47
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200022_g_MissionLevel = 40
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200022_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x200022_g_MissionName="ËäÍòÇ§ÈËÎáÍùÒÓ"
---ÈÎÎñÃèÊö
+--nhi®m vø Danh
+x200022_g_MissionName="Dù vÕn ngß¶i, ta vçn cÑ tiªn"
+--nhi®m vø miêu tä
 x200022_g_MissionInfo="#{Mis_juqing_0022}"
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x200022_g_MissionTarget="#{Mis_juqing_Tar_0022}"		
---Ìá½»Ê±npcµÄ»°
-x200022_g_MissionComplete="  ÇÇ·åÕæÊÇ¡­¡­ÄÑµÀËûÕæµÄÎªÁËÒ»¸öĞ¡¹ÃÄï£¬Á¬×Ô¼ºµÄĞÔÃü¶¼²»ÒªÁËÂğ£¿¾ÛÏÍ×¯ÄÚÏÖÔÚÒ²ĞíÒÑ¾­´óÂÒÁË°É¡­¡­"		
+--ğ® trình Th¶i Npc trong l¶i nói
+x200022_g_MissionComplete="  Ki«u Phong th§t là...L¨ nào huynh ta chï vì mµt cô nß½ng, dám quên cä tính mÕng mình? Không khéo gi¶ ğây Tø Hi«n Trang ğã ğÕi loÕn m¤t.."		
 
 x200022_g_MoneyJZBonus=9900
 x200022_g_exp=9600
 
 x200022_g_RadioItemBonus={{id=10423008 ,num=1},{id=10423009,num=1},{id=10423010,num=1},{id=10423011,num=1}}
 
-x200022_g_Custom	= {{id="ËäÍòÇ§ÈËÎáÍùÒÓ",num=1}}
+x200022_g_Custom	= {{id="Dù vÕn ngß¶i, ta vçn cÑ tiªn",num=1}}
 
 
 --MisDescEnd

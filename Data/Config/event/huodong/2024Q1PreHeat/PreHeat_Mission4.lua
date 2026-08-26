@@ -1,39 +1,39 @@
 --MisDescBegin
---½Å±¾ºÅ
-x998698_g_ScriptId  = 998698                --½Å±¾ºÅ
+--k¸ch bän g¯c Hào
+x998698_g_ScriptId  = 998698                --???
 x998698_g_KDZZID = 1001000259
 
-x998698_g_AcceptNpcName = "´»ÄÌÄÌ"
---ÈÎÎñºÅ
+x998698_g_AcceptNpcName = "Xuân nãi nãi, bà nµi"
+--nhi®m vø Hào
 x998698_g_MissionId = 2303
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x998698_g_MissionKind       = 67
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x998698_g_MissionLevel      = 30
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x998698_g_IfMissionElite    = 0
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x998698_g_IsMissionOkFail   = 0     --ÈÎÎñ²ÎÊıµÄµÚ0Î»
-x998698_g_Param   			= 1     --ÈÎÎñ²ÎÊıµÄµÚ1Î»
-x998698_g_CangEr   			= 2     --ÈÎÎñ²ÎÊıµÄµÚ2Î»
-x998698_g_AiLiangQing  		= 3     --ÈÎÎñ²ÎÊıµÄµÚ3Î»
-x998698_g_GongShuLing   	= 4     --ÈÎÎñ²ÎÊıµÄµÚ4Î»
-x998698_g_XiaoLian 			= 5     --ÈÎÎñ²ÎÊıµÄµÚ5Î»
+--nhi®m vø hay không ğã hoàn thành
+x998698_g_IsMissionOkFail   = 0     --??????0?
+x998698_g_Param   			= 1     --??????1?
+x998698_g_CangEr   			= 2     --??????2?
+x998698_g_AiLiangQing  		= 3     --??????3?
+x998698_g_GongShuLing   	= 4     --??????4?
+x998698_g_XiaoLian 			= 5     --??????5?
 
---ÈÎÎñÎÄ±¾ÃèÊö
+--nhi®m vø vån bän miêu tä
 x998698_g_MissionName       = "#{SFYR_240104_09}"
---ÈÎÎñÃèÊö
+--nhi®m vø miêu tä
 x998698_g_MissionInfo       = "#{SFYR_240104_151}"
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x998698_g_MissionTarget     = ""
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
 x998698_g_ContinueInfo      = "#{SFYR_240104_133}"
---Íê³ÉÈÎÎñnpcËµµÄ»°
+--hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
 x998698_g_MissionComplete   = ""
 
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
 x998698_g_Custom    = {}
 
 --MisDescEnd

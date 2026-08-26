@@ -1,38 +1,38 @@
 --MisDescBegin
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x600033_g_ScriptId = 600033
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x600033_g_MissionId = 1109
 
---ÈÎÎñÄ¿±ênpc
-x600033_g_Name = "Îä´óÍş"
+--nhi®m vø møc tiêu Npc
+x600033_g_Name = "Võ ĞÕi Uy"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x600033_g_MissionKind = 50
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x600033_g_MissionLevel = 10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x600033_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö
-x600033_g_IsMissionOkFail = 0							-- ÈÎÎñÍê³É±ê¼Ç
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng
+x600033_g_IsMissionOkFail = 0							-- ??????
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñ±äÁ¿µÚÒ»Î»ÓÃÀ´´æ´¢Ëæ»úµÃµ½µÄ½Å±¾ºÅ
---ÈÎÎñÎÄ±¾ÃèÊö
-x600033_g_MissionName = "ËÍ½»Çé±¨"
-x600033_g_MissionInfo = ""													--ÈÎÎñÃèÊö
-x600033_g_MissionTarget = "    Õâ·İ¹Ø¼üµÄÇé±¨£¬ĞèÒªÄã»ğËÙËÍµ½%n£¬¼Ó¼±¼Ó¼±¡£#r#{BHRW_091224_1}"	--ÈÎÎñÄ¿±ê
-x600033_g_ContinueInfo = "    ÄãµÄÈÎÎñ»¹Ã»ÓĞÍê³ÉÃ´£¿"				--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x600033_g_MissionComplete = "    ¸ÉµÃ²»´í£¬ÉõºÃÉõºÃ¡£"			--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø lßşng biªn ğ±i ğ® nh¤t v¸ dùng ğ¬ t°n træ TuÏ C½ nh§n ğßşc Ğích k¸ch bän g¯c Hào
+--nhi®m vø vån bän miêu tä
+x600033_g_MissionName = "Chuy¬n giao tình báo"
+x600033_g_MissionInfo = ""													--????
+x600033_g_MissionTarget = "Giá Ph¥n m¤u ch¯t ğích tình Báo, c¥n Nhî hoä t¯c ğßa ğªn%n, k¸ch li®t k¸ch li®t. #r#{BHRW_091224_1}"	--????
+x600033_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"				--??????npc??
+x600033_g_MissionComplete = "Làm ğßşc không t°i, r¤t t¯t r¤t t¯t."			--????npc????
 
 x600033_g_MissionRound = 79
 
--- Í¨ÓÃ³ÇÊĞÈÎÎñ½Å±¾
+-- thông døng thành th¸ nhi®m vø k¸ch bän g¯c
 x600033_g_CityMissionScript = 600001
 x600033_g_MilitaryScript = 600030
 

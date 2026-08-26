@@ -1,41 +1,41 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200096_g_ScriptId = 200096
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200096_g_MissionId = 39
 
---Ç°ĞøÈÎÎñ
+--Ti«n Tøc nhi®m vø
 x200096_g_PreMissionId = 38
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x200096_g_Position_X=91
 x200096_g_Position_Z=44
 x200096_g_SceneID=17
-x200096_g_AccomplishNPC_Name="Ã·½£"
+x200096_g_AccomplishNPC_Name="Mai Kiªm"
 
---Ä¿±êNPC
-x200096_g_Name	="Ã·½£"
+--møc tiêu NPC
+x200096_g_Name	="Mai Kiªm"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200096_g_MissionKind = 49
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200096_g_MissionLevel = 70
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200096_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x200096_g_MissionName="Ò»½£ÉÏÌìÉ½"
+--nhi®m vø Danh
+x200096_g_MissionName="Nh¤t kiªm thßşng thiên s½n"
 x200096_g_MissionInfo="#{Mis_juqing_0039}"
 x200096_g_MissionTarget="#{Mis_juqing_Tar_0039}"
-x200096_g_MissionComplete="  ÀîÇïË®£¬Ç°¼¸ÌìÀÏ×ğÖ÷Ò»Ö±ÔÚÌáµ½Õâ¸öÃû×Ö¡£µ«Ëı¾¿¾¹ÊÇÊ²Ã´ÈË£¬ÎÒÃÇÒ²²»´óÇå³ş¡£"
+x200096_g_MissionComplete="  Lı Thu Thüy, m¤y ngày trß¾c lão tång trßşng luôn nh¡c t¾i cái tên này, Nhßng nàng r¯t cuµc là ngß¶i nhß thª nào, chúng ta cûng không rõ"
 
 x200096_g_MoneyBonus=10800
 x200096_g_exp=19800
 
-x200096_g_Custom	= { {id="ÒÑÕÒµ½Ã·½£",num=1} }
+x200096_g_Custom	= { {id="Ğã tìm ğßşc Mai Kiªm",num=1} }
 x200096_g_IsMissionOkFail = 0
 
 

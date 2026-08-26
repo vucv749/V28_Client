@@ -1,36 +1,36 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x212114_g_ScriptId = 212114
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x212114_g_MissionId = 688
 
---Ç°ĞøÈÎÎñ
+--Ti«n Tøc nhi®m vø
 x212114_g_PreMissionId = 687
 
---Ä¿±êNPC
-x212114_g_Name	="Ò¶Á÷·²"
+--møc tiêu NPC
+x212114_g_Name	="Di®p Lßu Phàm"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x212114_g_MissionKind = 45
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x212114_g_MissionLevel = 82
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x212114_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x212114_g_MissionName="µÚ¶ş¿éÑª¼£"
+--nhi®m vø Danh
+x212114_g_MissionName="Vªt Ğö ThÑ 2"
 x212114_g_MissionInfo="#{Mis_S_Nanhai_1010193}"
-x212114_g_MissionTarget="  °Ñ#YÑªÒÂ#WËÍ¸ø#GÄÏº£½£ÅÉ#WµÄ#RÒ¶Á÷·²#W#{_INFOAIM115,58,34,Ò¶Á÷·²}¡£"
-x212114_g_MissionContinue="  ÄãÕÒÎÒÓĞÊ²Ã´ÊÂÇéÂğ£¿"
-x212114_g_MissionComplete="  Õâ¡­¡­Õâ¼şÑªÒÂ¡­¡­ºÃÏñÊÇÒ»¼şÄÏÚ¯°×ÃçÈËµÄÒÂ·ş¡£"
+x212114_g_MissionTarget="  Mang #YHUyªt y#W t£ng cho #RDi®p Lßu Phàm#W · #GNam Vñc Kiªm Phái #W#{_INFOAIM115,58,34,Lßu Di®p Phàm}."
+x212114_g_MissionContinue="  Các hÕ tìm ta có vi®c gì?"
+x212114_g_MissionComplete="  T¤m... T¤m huyªt y này dß¶ng nhß là y trang cüa Nam Chiêu BÕch Miêu Nhân"
 
 x212114_g_MoneyBonus=36900
 x212114_g_exp=35000
 
-x212114_g_Custom	= { {id="ÒÑµÃµ½ÑªÒÂ",num=1} }
+x212114_g_Custom	= { {id="Ğã ğÕt ğßşc t¤m huyªt y",num=1} }
 x212114_g_IsMissionOkFail = 0
 
 

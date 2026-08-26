@@ -1,46 +1,46 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x210228_g_ScriptId = 210228
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x210228_g_Position_X=215
 x210228_g_Position_Z=284
 x210228_g_SceneID=2
-x210228_g_AccomplishNPC_Name="¶ÎÑÓÇì"
+x210228_g_AccomplishNPC_Name="Ğoàn Diên Khánh"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x210228_g_MissionId = 708
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x210228_g_MissionIdPre = 707
 
---Ä¿±êNPC
-x210228_g_Name	="¶ÎÑÓÇì"
+--møc tiêu NPC
+x210228_g_Name	="Ğoàn Diên Khánh"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x210228_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x210228_g_MissionLevel = 8
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x210228_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x210228_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+--nhi®m vø hay không ğã hoàn thành
+x210228_g_IsMissionOkFail = 0		--????0?
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x210228_g_MissionName="ËÍ¿ó³ú"
-x210228_g_MissionInfo="  [ÓĞ³ÔµÄ£¬ÓĞ´©µÄ£¬ÄÇ¸ö#RĞ¡ÆòØ¤#W»¹ÊÇ²»ÄÜÉú»î°¡¡£È¥ÕÒÒ»°Ñ#Y¿ó³ú#WËÍ¸øËû°É£¬ÈÃËûÒÔºóÄÜ¹»×ÔÊ³ÆäÁ¦¡£]#r  #e00f000Ğ¡ÌáÊ¾£º#e000000Äã¿ÉÒÔÕÒ±ßÉÏµÄ #gfff0f0ÑøµñÈË #g000000Ö±½Ó·Éµ½ÔÓ»õÆÌ¸½½ü¡£#r"
+--nhi®m vø vån bän miêu tä
+x210228_g_MissionName="T£ng cu¯c ğào mö"
+x210228_g_MissionInfo="[Hæu Ng§t Ğích, Hæu Xuyên Ğích, cái kia#RTI¬u Kh¤t Cái#Wvçn là không th¬ cuµc s¯ng A. Ği tìm mµt phen#YKhoáng S×#Wğßa cho h¡n Ba, Nhßşng Tha v« sau có th¬ tay làm hàm nhai. ]#r #e00f000Ti¬u nêu lên: #e000000Nhî có th¬ Träo bên cÕnh Ğích #gfff0f0DßŞng Ğiêu Nhân #g000000trñc tiªp bay ğªn tÕp hoá Phô g¥n ğây. #r"
 x210228_g_MissionTarget="#{event_dali_0040}"
-x210228_g_ContinueInfo="  [ÄãÒÑ¾­°Ñ#Y¿ó³ú#WËÍµ½#RĞ¡ÆòØ¤#WÊÖÖĞÁËÂğ£¿]"
+x210228_g_ContinueInfo="  [Các hÕ ğã ğßa #YcU¯c khai khoáng#W cho #Rti¬u kh¤t cái#W chßa?]"
 x210228_g_MissionComplete="#{event_dali_0041}"
-x210228_g_SignPost = {x = 199, z = 256, tip = "Ğ¡ÆòØ¤"}
-x210228_g_Custom	= { {id="¸øĞ¡ÆòØ¤ËÍ¿ó³ú£¡",num=1} }
---ÈÎÎñ½±Àø
+x210228_g_SignPost = {x = 199, z = 256, tip = "Ti¬u Kh¤t Cái"}
+x210228_g_Custom	= { {id="Ğßa cu¯c khai khoáng cho ti¬u kh¤t cái!",num=1} }
+--nhi®m vø thß·ng cho
 x210228_g_MoneyBonus=240
 --g_ItemBonus={{id=40002108,num=1}}
 

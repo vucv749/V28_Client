@@ -1,35 +1,35 @@
 --MisDescBegin
---½Å±¾ºÅ
-x998696_g_ScriptId  = 998696                --½Å±¾ºÅ
+--k¸ch bän g¯c Hào
+x998696_g_ScriptId  = 998696                --???
 x998696_g_KDZZID = 1001000259
 
-x998696_g_AcceptNpcName = "¿Ü×¼"
-x998696_g_TargetNpcName = "´»ÄÌÄÌ"
---ÈÎÎñºÅ
+x998696_g_AcceptNpcName = "Kh¤u Chu¦n"
+x998696_g_TargetNpcName = "Xuân nãi nãi, bà nµi"
+--nhi®m vø Hào
 x998696_g_MissionId = 2301  
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x998696_g_MissionKind       = 67
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x998696_g_MissionLevel      = 30
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x998696_g_IfMissionElite    = 0
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x998696_g_IsMissionOkFail   = 0     --ÈÎÎñ²ÎÊıµÄµÚ0Î»
+--nhi®m vø hay không ğã hoàn thành
+x998696_g_IsMissionOkFail   = 0     --??????0?
 
---ÈÎÎñÎÄ±¾ÃèÊö
+--nhi®m vø vån bän miêu tä
 x998696_g_MissionName       = "#{SFYR_240104_08}"
---ÈÎÎñÃèÊö
+--nhi®m vø miêu tä
 x998696_g_MissionInfo       = "#{SFYR_240104_129}"
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x998696_g_MissionTarget     = "#{SFYR_240104_130}"
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
 x998696_g_ContinueInfo      = "#{SFYR_240104_133}"
---Íê³ÉÈÎÎñnpcËµµÄ»°
+--hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
 x998696_g_MissionComplete   = "#{YDQDJ_20211115_33}"
 
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x998696_g_Custom    = { {id="³É¹¦Æ´ºÏµØÍ¼£º",num=1} }
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x998696_g_Custom    = { {id="Thành công Phanh Hşp bän ğ°:",num=1} }
 
 --MisDescEnd

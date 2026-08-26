@@ -1,31 +1,31 @@
 --MisDescBegin
 x050073_g_ScriptId = 050073
 x050073_g_KDZZID = 1006000002
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x050073_g_MissionId = 1180
 
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x050073_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x050073_g_MissionLevel = 10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x050073_g_IfMissionElite = 0
 
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x050073_g_MissionName="#{SXGS_091105_11}"
 x050073_g_MissionTarget="#{SXGS_091105_14}"
 x050073_g_IsMissionOkFail = 0
-x050073_g_Custom = {{id = "ÒÑÕÒµ½ÔÆÆ®Æ®",num = 1}}
+x050073_g_Custom = {{id = "Tìm th¤y Vân Phiêu Phiêu",num = 1}}
 
---Íê³ÉÈÎÎñNPCÊôĞÔ
+--hoàn thành nhi®m vø NPCthuµc tính
 x050073_g_Position_X=265
 x050073_g_Position_Z=129
 x050073_g_SceneID=2
-x050073_g_AccomplishNPC_Name="ÔÆÆ®Æ®"
+x050073_g_AccomplishNPC_Name="Vân Phiêu Phiêu"
 
 
 --MisDescEnd

@@ -1,53 +1,53 @@
 --MisDescBegin
 x891274_g_ScriptId = 891274
-x891274_g_MainScriptId = 891272--÷˜Ω≈±æ∫≈
-x891274_g_NpcScriptId = 891273--npcΩ≈±æ∫≈
+x891274_g_MainScriptId = 891272--????
+x891274_g_NpcScriptId = 891273--npc???
 x891274_g_KDZZID = 1006000536
 x891274_g_KDZZSubID = 1
 
---»ŒŒÒ∫≈
+--nhiÆm v¯ H‡o
 x891274_g_MissionId = 2030
 x891274_g_MissionKind = 7
 x891274_g_MissionLevel = 60
 x891274_g_IfMissionElite = 0
 
---»ŒŒÒ√˚
+--nhiÆm v¯ Danh
 x891274_g_MissionName="#{XLRW_210725_472}"
 x891274_g_MissionTarget=""
 x891274_g_Custom = {}
 
---»ŒŒÒ≤Œ ˝
-x891274_g_IsMissionOkFail = 0-- «∑ÒÕÍ≥…
-x891274_g_MissionLiuPai = 1-- ¡˜≈…
-x891274_g_MissionMenPai = 2-- √≈≈…
-x891274_g_Param_NpcIndex = 3--ƒø±ÍnpcÀ˜“˝
-x891274_g_Param_QuestionIndex = 4--Ã‚ƒøÀ˜“˝
-x891274_g_Param_Custom = 5--ÕÍ≥…«Èøˆ
+--nhiÆm v¯ tham sØ
+x891274_g_IsMissionOkFail = 0--????
+x891274_g_MissionLiuPai = 1-- ??
+x891274_g_MissionMenPai = 2-- ??
+x891274_g_Param_NpcIndex = 3--??npc??
+x891274_g_Param_QuestionIndex = 4--????
+x891274_g_Param_Custom = 5--????
 
---ÕÍ≥…»ŒŒÒNPC
+--ho‡n th‡nh nhiÆm v¯ NPC
 x891274_g_AccomplishNPC = 
 {
-	[1] = { sname = "#{XLRW_210725_263}", npcname = "#{XLRW_210725_267}", name = "≈·–˚", sceneid = 0, },
-	[2] = { sname = "#{XLRW_210725_263}", npcname = "#{XLRW_210725_268}", name = "÷‹∞Ó—Â", sceneid = 0, },
-	[3] = { sname = "#{XLRW_210725_263}", npcname = "#{XLRW_210725_269}", name = "Õıª˝–Ω", sceneid = 0, },
-	[4] = { sname = "#{XLRW_210725_263}", npcname = "#{XLRW_210725_270}", name = "ª≥±˚", sceneid = 0, },
-	[5] = { sname = "#{XLRW_210725_263}", npcname = "#{XLRW_210725_271}", name = "’¬ê™", sceneid = 0, },
-	[6] = { sname = "#{XLRW_210725_263}", npcname = "#{XLRW_210725_272}", name = "¬¿ª›«‰", sceneid = 0, },
-	[7] = { sname = "#{XLRW_210725_264}", npcname = "#{XLRW_210725_273}", name = "ø›»Ÿ¥Û ¶", sceneid = 2, },
-	[8] = { sname = "#{XLRW_210725_264}", npcname = "#{XLRW_210725_274}", name = "∫È¥ÛπÛ", sceneid = 2, },
-	[9] = { sname = "#{XLRW_210725_264}", npcname = "#{XLRW_210725_275}", name = "Õı…ÿ", sceneid = 2, },
-	[10] = { sname = "#{XLRW_210725_264}", npcname = "#{XLRW_210725_276}", name = "∑Ô≥Ø—Ù", sceneid = 2, },
-	[11] = { sname = "#{XLRW_210725_264}", npcname = "#{XLRW_210725_277}", name = "ƒæÕÒ«Â", sceneid = 2, },
-	[12] = { sname = "#{XLRW_210725_264}", npcname = "#{XLRW_210725_278}", name = "∑∂ÊË", sceneid = 2, },
-	[13] = { sname = "#{XLRW_210725_265}", npcname = "#{XLRW_210725_279}", name = "’≈‘Ò∂À", sceneid = 1, },
-	[14] = { sname = "#{XLRW_210725_265}", npcname = "#{XLRW_210725_280}", name = "Œ∫’Ê", sceneid = 1, },
-	[15] = { sname = "#{XLRW_210725_265}", npcname = "#{XLRW_210725_281}", name = "–ª…–", sceneid = 1, },
-	[16] = { sname = "#{XLRW_210725_265}", npcname = "#{XLRW_210725_282}", name = "µÀ∞Ÿ¥®", sceneid = 1, },
-	[17] = { sname = "#{XLRW_210725_265}", npcname = "#{XLRW_210725_283}", name = "÷Ïµ§≥º", sceneid = 1, },
-	[18] = { sname = "#{XLRW_210725_265}", npcname = "#{XLRW_210725_284}", name = "ª®Ω£”Í", sceneid = 1, },
+	[1] = { sname = "#{XLRW_210725_263}", npcname = "#{XLRW_210725_267}", name = "B˘i TuyÍn", sceneid = 0, },
+	[2] = { sname = "#{XLRW_210725_263}", npcname = "#{XLRW_210725_268}", name = "Ch‚u Bang Ng’n", sceneid = 0, },
+	[3] = { sname = "#{XLRW_210725_263}", npcname = "#{XLRW_210725_269}", name = "VﬂΩng TÌch T‚n", sceneid = 0, },
+	[4] = { sname = "#{XLRW_210725_263}", npcname = "#{XLRW_210725_270}", name = "Ho‡i BÌnh", sceneid = 0, },
+	[5] = { sname = "#{XLRW_210725_263}", npcname = "#{XLRW_210725_271}", name = "ChﬂΩng –Ùn", sceneid = 0, },
+	[6] = { sname = "#{XLRW_210725_263}", npcname = "#{XLRW_210725_272}", name = "L„ HuÆ Khanh", sceneid = 0, },
+	[7] = { sname = "#{XLRW_210725_264}", npcname = "#{XLRW_210725_273}", name = "KhÙ Vinh –’i Sﬂ", sceneid = 2, },
+	[8] = { sname = "#{XLRW_210725_264}", npcname = "#{XLRW_210725_274}", name = "H∞ng –’i Qu˝", sceneid = 2, },
+	[9] = { sname = "#{XLRW_210725_264}", npcname = "#{XLRW_210725_275}", name = "VﬂΩng Thi´u", sceneid = 2, },
+	[10] = { sname = "#{XLRW_210725_264}", npcname = "#{XLRW_210725_276}", name = "Ph¯ng Tri´u DﬂΩng", sceneid = 2, },
+	[11] = { sname = "#{XLRW_210725_264}", npcname = "#{XLRW_210725_277}", name = "Mµc Uy¨n Thanh", sceneid = 2, },
+	[12] = { sname = "#{XLRW_210725_264}", npcname = "#{XLRW_210725_278}", name = "ó∂ÊË", sceneid = 2, },
+	[13] = { sname = "#{XLRW_210725_265}", npcname = "#{XLRW_210725_279}", name = "TrﬂΩng Tr’ch –oan", sceneid = 1, },
+	[14] = { sname = "#{XLRW_210725_265}", npcname = "#{XLRW_210725_280}", name = "Ngu‹ Ch‚n", sceneid = 1, },
+	[15] = { sname = "#{XLRW_210725_265}", npcname = "#{XLRW_210725_281}", name = "T’ Thﬂ˛ng", sceneid = 1, },
+	[16] = { sname = "#{XLRW_210725_265}", npcname = "#{XLRW_210725_282}", name = "–£ng B·ch XuyÍn", sceneid = 1, },
+	[17] = { sname = "#{XLRW_210725_265}", npcname = "#{XLRW_210725_283}", name = "Chu –an Th•n", sceneid = 1, },
+	[18] = { sname = "#{XLRW_210725_265}", npcname = "#{XLRW_210725_284}", name = "Hoa Ki™m V˚", sceneid = 1, },
 }
 
---¥Ã‚¡–±Ì
+--–·p –´ LiÆt Bi¨u
 x891274_g_QuestionList = 
 {
 	[1] = { question = "#{XLRW_210725_225}", answer1 = "#{XLRW_210725_410}", answer2 = "#{XLRW_210725_411}", answer3 = "#{XLRW_210725_412}", answerid = 2, },
@@ -72,12 +72,12 @@ x891274_g_QuestionList =
 	[20] = { question = "#{XLRW_210725_244}", answer1 = "#{XLRW_210725_467}", answer2 = "#{XLRW_210725_468}", answer3 = "#{XLRW_210725_469}", answerid = 3, },
 }
 
---npcæ‡¿Î
+--Npc kho‰ng c·ch
 x891274_g_NpcDist = 5
---±≥∞¸ø’Œª
+--tay n„i khÙng v∏
 x891274_g_BagSpace = 1
 
---Ω±¿¯
+--thﬂ∑ng cho
 --x891274_g_MoneyJZBonus					=	30000
 --x891274_g_ExpBonus						= 250000
 

@@ -1,25 +1,25 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x892760_g_ScriptId = 892760
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x892760_g_MissionId = 2115
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x892760_g_MissionKind = 1
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x892760_g_MissionLevel		= 40
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x892760_g_IfMissionElite	= 0
 
---ÈÎÎñÎÄ±¾ÃèÊö
+--nhi®m vø vån bän miêu tä
 x892760_g_MissionName			= "#{PSGN_180327_02}"
---ÈÎÎñÃèÊö
+--nhi®m vø miêu tä
 --x892760_g_MissionInfo			= "#{PSGN_180515_219}"
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x892760_g_MissionTarget		= "#{PSGN_180515_219}"
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
 x892760_g_Custom	= {}
 
 --MisDescEnd

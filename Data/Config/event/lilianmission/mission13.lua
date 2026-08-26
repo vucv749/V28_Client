@@ -1,54 +1,54 @@
 --MisDescBegin
 x893188_g_ScriptId = 893188
 x893188_g_MissionId = 2083
-x893188_g_MainScriptId = 893185--Ö÷½Å±¾ºÅ
+x893188_g_MainScriptId = 893185--????
 
 --kdzz
 x893188_g_KDZZID = 1006000552
 x893188_g_KDZZSubID = 3
 
---·ÅÆúÈÎÎñÖØÖÃ±ê¼Ç
+--vÑt bö nhi®m vø Trùng Trí d¤u hi®u
 x893188_g_LastMissionId = 2092
 
---Ç°ÖÃÈÎÎñ
-x893188_g_PreScirptId = 893187--ÉÏÒ»½Å±¾ºÅ
-x893188_g_PreMissionId = 2082--ÉÏÒ»ÈÎÎñºÅ
+--Ti«n Trí nhi®m vø
+x893188_g_PreScirptId = 893187--?????
+x893188_g_PreMissionId = 2082--?????
 
---ºóĞøÈÎÎñ
-x893188_g_NextScirptId = 893189--ÏÂÒ»½Å±¾ºÅ
-x893188_g_NextMissionId = 2084--ÏÂÒ»ÈÎÎñºÅ
+--ğªn tiªp sau nhi®m vø
+x893188_g_NextScirptId = 893189--?????
+x893188_g_NextMissionId = 2084--?????
 
---½ÓÈÎÎñnpc
-x893188_g_AcceptNPC_Name="°ÙÏşÉú"--½ÓÈÎÎñµÄnpc»òÕßnpcÁĞ±í
+--tiªp nh§n chÑc vø Vø Npc
+x893188_g_AcceptNPC_Name="Bách Hi¬u Sanh"--????npc??npc??
 
---½»ÈÎÎñnpc
-x893188_g_Position_X=150--Íê³ÉÈÎÎñNPCÊôĞÔ
+--Giao nhi®m vø Npc
+x893188_g_Position_X=150--????NPC??
 x893188_g_Position_Z=208
 x893188_g_SceneID=1
-x893188_g_AccomplishNPC_Name="°ÙÏşÉú"
+x893188_g_AccomplishNPC_Name="Bách Hi¬u Sanh"
 
---ÈÎÎñÊı¾İ
+--nhi®m vø s¯ li®u
 x893188_g_MissionKind = 7
 x893188_g_MissionLevel = 65
 x893188_g_IfMissionElite = 0
-x893188_g_IsMissionOkFail = 0--ÈÎÎñÍê³É±êÖ¾Î»(Ò»¶¨ÒªÎª0)
+x893188_g_IsMissionOkFail = 0--???????(????0)
 
-x893188_g_MissionName="#{ZQSS_220429_80}"--ÈÎÎñÃû
-x893188_g_MissionInfo="#{ZQSS_220429_81}"--ÈÎÎñÎÄ±¾ÃèÊö£¨ÈÎÎñÁìÈ¡¶Ô°×£©
-x893188_g_MissionComplete="#{ZQSS_220429_82}"--ÈÎÎñÍê³É¶Ô°×
-x893188_g_MissionTarget="#{ZQSS_220429_101}"--ÈÎÎñÄ¿±ê(ÈÎÎñÃæ°åÖĞÈÎÎñĞÅÏ¢ÏÔÊ¾ÄÚÈİ)
+x893188_g_MissionName="#{ZQSS_220429_80}"--???
+x893188_g_MissionInfo="#{ZQSS_220429_81}"--??????(??????)
+x893188_g_MissionComplete="#{ZQSS_220429_82}"--??????
+x893188_g_MissionTarget="#{ZQSS_220429_101}"--????(?????????????)
 
---×Ô¶¨ÒåÍê³ÉÇé¿ö£¬ÄÚÈİ²»ÄÜÊ¹ÓÃ×Öµä£¬·Ö±ğ¶ÔÓ¦missionparamµÄµÚ1Î»ºóÑÓ
-x893188_g_Custom = {{id = "ÓëËÄ½ÜÖ®Ò»³©Ì¸", num = 1}}
+--Tñ ğ¸nh nghîa hoàn thành tình hu¯ng, nµi dung không th¬ sØ døng tñ ği¬n, phân bi®t ğ¯i Ñng missionparamĞích Ğ® 1V¸ H§u Diên
+x893188_g_Custom = {{id = "Dß TÑ Ki®t mµt trong tâm tình", num = 1}}
 
---npc¾àÀë
+--Npc khoäng cách
 x893188_g_NpcDist = 5
 
---ÈÎÎñµÀ¾ß
+--nhi®m vø ğÕo cø
 x893188_g_TaskItem = {id=38002579, num=1}
 x893188_g_BagSpace = 1
 
---½±Àø
+--thß·ng cho
 --x893188_g_MoneyJZBonus					=	30000
 --x893188_g_ExpBonus						= 250000
 

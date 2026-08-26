@@ -1,41 +1,41 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x210210_g_ScriptId = 210210
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x210210_g_Position_X=172.7304
 x210210_g_Position_Z=146.4640
 x210210_g_SceneID=2
-x210210_g_AccomplishNPC_Name="Ëï°ËÒ¯"
+x210210_g_AccomplishNPC_Name="Tôn Bát Gia"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x210210_g_MissionId = 450
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 --g_MissionIdPre = 
 
---Ä¿±êNPC
-x210210_g_Name	="Ëï°ËÒ¯"
+--møc tiêu NPC
+x210210_g_Name	="Tôn Bát Gia"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x210210_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x210210_g_MissionLevel = 3
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x210210_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x210210_g_MissionName="×öÒ»´Î´óÏÀ"
+--nhi®m vø Danh
+x210210_g_MissionName="Mµt l¥n làm ğÕi hi®p"
 x210210_g_MissionInfo_1="#{event_dali_0012}"
-x210210_g_MissionInfo_2="#W£¬ÄÑµÀÄã²»Ó¦¸ÃÈ¥°ï°ïËûÂğ£¿"
-x210210_g_MissionTarget="ÔÚ#G´óÀí³ÇÎå»ªÌ³#WÕÒµ½ËÄ´óÉÆÈËÖ®Ò»µÄ#RËï°ËÒ¯#W#{_INFOAIM173,146,2,Ëï°ËÒ¯}¡£#b#G£¨ÇëÓÃ×ó¼üµã»÷´øÏÂ»®ÏßµÄ×ø±ê£¬°ïÖúÄúÕÒµ½¸ÃNPC£©#l"
-x210210_g_MissionComplete="  °¥Ñ½£¬ÎÒµÄÀÏÅóÓÑ£¬ÎÒ¾ÍÖªµÀÄã»áÀ´°ïÎÒµÄ¡£"
+x210210_g_MissionInfo_2="#W, cHÆng l¨ Nhî không nên ği giúp giúp h¡n Ma?"
+x210210_g_MissionTarget="TÕi#GTHành ĞÕi Lı Ngû Hoa Ğàn#Wtìm ğßşc tÑ ğÕi hi«n nhân mµt trong Ğích#RTôn Bát Gia#W#{_INFOAIM173, 146, 2, Tôn Bát Gia}. #b#G(Thïnh Døng Tä Ki®n Ği¬m Kích b®nh bÕch ğ¾i phác h÷a Ğích t÷a ğµ, trş giúp Nhçm tìm ğßşc Cai NPC)#l"
+x210210_g_MissionComplete="  Ái chà, các\\u0020hÕ cû cüa ta à, ta biªt là các hÕ s¨ ğªn giúp ta"
 x210210_g_MoneyBonus=72
-x210210_g_SignPost = {x = 173, z = 147, tip = "Ëï°ËÒ¯"}
+x210210_g_SignPost = {x = 173, z = 147, tip = "Tôn Bát Gia"}
 
-x210210_g_Custom	= { {id="ÒÑÕÒµ½Ëï°ËÒ¯",num=1} }
+x210210_g_Custom	= { {id="Ğã tìm th¤y Tôn Bát Gia",num=1} }
 
 
 --MisDescEnd

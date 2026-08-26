@@ -1,49 +1,49 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x893243_g_ScriptId = 893243
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x893243_g_MissionId = 2080
 
---Ç°ÖÃÈÎÎñ
+--Ti«n Trí nhi®m vø
 x893243_g_PreMissionId = 2079
 x893243_g_PreMissionName = "#{WDEC_220425_22}"
 
---Ä¿±êNPC
+--møc tiêu NPC
 x893243_g_AcceptNpcInfo	= {
-	[MP_SHAOLIN] = {sceneId=9, name={[1]="ÐþÔÄ", [2]="ÐþÀé"}},
-	[MP_MINGJIAO] = {sceneId=11, name={[1]="ÄªË¼¹é", [2]="ÁÖìÍ"}},
-	[MP_GAIBANG] = {sceneId=10, name={[1]="¶ÅÉÙ¿µ", [2]="Â·ÀÏ´ó"}},
-	[MP_WUDANG] = {sceneId=12, name={[1]="±ÌÂäÉ¢ÈË", [2]="ÖðÀËÉ¢ÈË"}},
-	[MP_EMEI] = {sceneId=15, name={[1]="¾ÛÂä»¨", [2]="ËÕ¸ê"}},
-	[MP_XINGSU] = {sceneId=16, name={[1]="ÝïÀ³×Ó", [2]="Á«ÖÛ×Ó"}},
-	[MP_DALI] = {sceneId=13, name={[1]="±¾Ï²", [2]="±¾È»"}},
-	[MP_TIANSHAN] = {sceneId=17, name={[1]="ÎâÉ­É­", [2]="Îâíµíµ"}},
-	[MP_XIAOYAO] = {sceneId=14, name={[1]="°¬Á¹ºÓ", [2]="ÇØÑÌÂÜ"}},
-	[MP_MANTUO] = {sceneId=1283, name={[1]="ïúñö·ç", [2]="ïú·ö¹â"}},
+	[MP_SHAOLIN] = {sceneId=9, name={[1]="Huy«n Duy®t", [2]="Huy«n Li"}},
+	[MP_MINGJIAO] = {sceneId=11, name={[1]="MÕc Tß Quy", [2]="Lâm Di­m"}},
+	[MP_GAIBANG] = {sceneId=10, name={[1]="Ð² Thi¬u Khang", [2]="Lµ lão ÐÕi"}},
+	[MP_WUDANG] = {sceneId=12, name={[1]="Bích LÕc Tän Nhân", [2]="Trøc Lãng Tän Nhân"}},
+	[MP_EMEI] = {sceneId=15, name={[1]="Làng xóm Hoa", [2]="Tô Qua"}},
+	[MP_XINGSU] = {sceneId=16, name={[1]="Khao Lai TØ", [2]="Liên chu tØ"}},
+	[MP_DALI] = {sceneId=13, name={[1]="B±n Hï", [2]="B±n Nhiên"}},
+	[MP_TIANSHAN] = {sceneId=17, name={[1]="Ngô dày ð£c", [2]="Ngô Di¬u Di¬u"}},
+	[MP_XIAOYAO] = {sceneId=14, name={[1]="Ngäi Lß½ng Hà", [2]="T¥n Yên La"}},
+	[MP_MANTUO] = {sceneId=1283, name={[1]="Kê Linh Phong", [2]="Kê Phù Quang"}},
 }
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x893243_g_MissionKind = 9
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x893243_g_MissionLevel = 65
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x893243_g_IfMissionElite = 0
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x893243_g_MissionName="#{WDEC_220425_73}"
 x893243_g_MissionTarget=""
 x893243_g_Custom = {}
---ÈÎÎñ²ÎÊý
-x893243_g_IsMissionOkFail = 0	--ÊÇ·ñÍê³É
-x893243_g_MissionLiuPai = 1		-- ±¾Á÷ÅÉ
-x893243_g_MissionMenPai = 2		-- ±¾ÃÅÅÉ
+--nhi®m vø tham s¯
+x893243_g_IsMissionOkFail = 0	--????
+x893243_g_MissionLiuPai = 1		-- ???
+x893243_g_MissionMenPai = 2		-- ???
 x893243_g_MissionPaopao = 3	
 
 
---npc¾àÀë
+--Npc khoäng cách
 x893243_g_NpcDist = 5
 
 x893243_g_MoneyJZBonus = 10000

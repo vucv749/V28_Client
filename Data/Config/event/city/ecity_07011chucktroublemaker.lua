@@ -1,48 +1,48 @@
 --MisDescBegin
 
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x600037_g_ScriptId = 600037
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x600037_g_MissionId = 1112
 
---¸¸ÈÎÎñºÅ
+--Phù nhi®m vø Hào
 x600037_g_UpMissionId = 1111
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x600037_g_MissionLevel = 10000
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x600037_g_MissionKind = 50
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x600037_g_IfMissionElite = 0
 
---********ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö******
---½ÇÉ«Mission±äÁ¿ËµÃ÷
-x600037_g_IsMissionOkFail			=0	--0 ÈÎÎñÍê³É±ê¼Ç[Öµ²»ÄÜ±ä]
-x600037_g_MissionParam_SubId		=1	--1 ×ÓÈÎÎñ½Å±¾ºÅ´æ·ÅÎ»ÖÃ[Öµ²»ÄÜ±ä]
-x600037_g_MissionParam_KillNumber	=2	--2 ĞèÒªÏûÃğµÄ¹ÖÎïÊıÁ¿
-x600037_g_Param_sceneid				=3	--3ºÅ£ºµ±Ç°¸±±¾ÈÎÎñµÄ³¡¾°ºÅ
-x600037_g_Param_killcount			=4	--4ºÅ£ºÉ±ËÀÈÎÎñ¹ÖµÄÊıÁ¿
---6ºÅ£ºÎ´ÓÃ
---7ºÅ£ºÎ´ÓÃ
+--********phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng******
+--vai di­n Missionlßşng biªn ğ±i thuyªt minh
+x600037_g_IsMissionOkFail			=0	--0 ??????[????]
+x600037_g_MissionParam_SubId		=1	--1 ??????????[????]
+x600037_g_MissionParam_KillNumber	=2	--2 ?????????
+x600037_g_Param_sceneid				=3	--3?:??????????
+x600037_g_Param_killcount			=4	--4?:????????
+--6Hào: Không dùng
+--7Hào: Không dùng
 
---**********************************ÒÔÉÏÊÇ¶¯Ì¬****************************
+--**********************************ğã ngoài Th¸ ğµng thái****************************
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x600037_g_MissionName = "ÓëÈË³öÍ·"
-x600037_g_MissionInfo = ""													--ÈÎÎñÃèÊö
-x600037_g_MissionTarget = "    ¸Ï×ß×ÌÊÂÕß¡£#r#{BHRW_091224_1}"				--ÈÎÎñÄ¿±ê
+--nhi®m vø vån bän miêu tä
+x600037_g_MissionName = "Xu¤t ğ¥u lµ di®n cùng m÷i ngß¶i"
+x600037_g_MissionInfo = ""													--????
+x600037_g_MissionTarget = "Ğu±i ği Tß Sñ Giä. #r#{BHRW_091224_1}"				--????
 
 x600037_g_Parameter_Kill_CountRandom = { { id = 300470, numNeeded = 2, numKilled = 4 } }
 
--- Í¨ÓÃ³ÇÊĞÈÎÎñ½Å±¾
+-- thông døng thành th¸ nhi®m vø k¸ch bän g¯c
 x600037_g_CityMissionScript = 600001
 x600037_g_ConstructionScript = 600035
 x600037_g_TransScript = 400900
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 
 
 --MisDescEnd

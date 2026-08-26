@@ -1,42 +1,42 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x250551_g_ScriptId = 250551
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x250551_g_MissionId = 721
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 --g_MissionIdPre = 
 
---Ä¿±êNPC
-x250551_g_Name	="ÇñĞĞÂå"
+--møc tiêu NPC
+x250551_g_Name	="Khâu Hành LÕc"
 
---ÈÎÎñ¹éÀà 
+--nhi®m vø phân loÕi
 x250551_g_MissionKind = 11
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x250551_g_MissionLevel = 10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x250551_g_IfMissionElite = 0
 
---ÈÎÎñĞèÒªµÃµ½µÄÎïÆ·
+--nhi®m vø c¥n nh§n ğßşc Ğích v§t ph¦m
 --g_DemandItem={{id=30701021,num=1}}
 
 
---ÈÎÎñÃû
-x250551_g_MissionName="ÉÓ¿ÚĞÅ"
-x250551_g_MissionInfo="°ïÎÒ¸æËß%s%s[%d,%d]£¬õí¾Ï´ó»á¾ÍÒª¿ªÊ¼ÁË¡£"
+--nhi®m vø Danh
+x250551_g_MissionName="Truy«n kh¦u tín"
+x250551_g_MissionInfo="Hãy giúp ta thông báo %s %s [%d,%d], ğÕi hµi Ğá C¥u s¡p b¡t ğ¥u"
 x250551_g_MissionTarget="%f"
-x250551_g_ContinueInfo="¸ÉµÃ²»´í"		--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x250551_g_MissionComplete="ÎÒÖªµÀÁË£¬ÕâÊÇ¸øÄãµÄ½±Àø"
+x250551_g_ContinueInfo="Làm ğßşc không t°i"		--??????npc??
+x250551_g_MissionComplete="Ta biªt, ğây là t£ng thß·ng cho ngß½i"
 
---ÓÃÀ´±£´æ×Ö·û´®¸ñÊ½»¯µÄÊı¾İ
+--dùng ğ¬ bäo t°n tñ phù Xuyªn cách thÑc Hoá Ğích s¯ li®u
 x250551_g_FormatList = {
-								"ÕÒµ½%n",
+								"Tìm %n",
 								}
 								
---¸ñÊ½×Ö·û´®ÖĞ¶ÔÓ¦ÓÚg_StringListÖĞ×Ö·û´®µÄË÷Òı, ±íÊ¾´Ó4¿ªÊ¼,ºó¶àÉÙÎ»ÊÓSetMissionByIndexEx(...)µÄ¶àÉÙ¶ø¶¨
+--cách thÑc tñ phù Xuyªn Trung ğ¯i Ñng Vu g_StringListTrung tñ phù Xuyªn Ğích hß¾ng dçn tra cÑu, tö vë Thung 4b¡t ğ¥u, H§u nhi«u ít V¸ Th¸ SetMissionByIndexEx(. . . )Ğích nhi«u ít Nhi Ğ¸nh
 x250551_g_StrForePart=4
 
 

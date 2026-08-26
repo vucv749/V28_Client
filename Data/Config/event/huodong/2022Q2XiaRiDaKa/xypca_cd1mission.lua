@@ -1,35 +1,35 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x893177_g_ScriptId	= 893177
 
 x893177_g_KDZZID = 1001000191
 x893177_g_SubKDZZID = 0
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x893177_g_MissionId			= 2101
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x893177_g_MissionKind			= 3
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x893177_g_MissionLevel		= 30
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x893177_g_IfMissionElite	= 0
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x893177_g_IsMissionOkFail	= 0		--ÈÎÎñ²ÎÊıµÄµÚ0Î»
+--nhi®m vø hay không ğã hoàn thành
+x893177_g_IsMissionOkFail	= 0		--??????0?
 
---ÈÎÎñÎÄ±¾ÃèÊö
+--nhi®m vø vån bän miêu tä
 x893177_g_MissionName			= "#{XRDK_220428_414}"
---ÈÎÎñÃèÊö
+--nhi®m vø miêu tä
 x893177_g_MissionInfo			= ""
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x893177_g_MissionTarget		= "#{XRDK_220428_219}"
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
 --x893177_g_ContinueInfo		= "#{SDXY_211103_51}"
---Íê³ÉÈÎÎñnpcËµµÄ»°
+--hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
 x893177_g_MissionComplete	= "#{XRDK_220428_282}"
 
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x893177_g_Custom	= {{id="½½¹àÅèÖĞ»¨",num=1} }
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x893177_g_Custom	= {{id="Ğúc B°n Trung Hoa",num=1} }
 
 --MisDescEnd

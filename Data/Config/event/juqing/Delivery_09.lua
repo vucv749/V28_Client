@@ -1,41 +1,41 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200083_g_ScriptId = 200083
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x200083_g_Position_X=128.5046
 x200083_g_Position_Z=74.7418
 x200083_g_SceneID=1
-x200083_g_AccomplishNPC_Name="°¢±Ì"
+x200083_g_AccomplishNPC_Name="A Bích"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200083_g_MissionId = 9
 
---Ç°ĞøÈÎÎñ
+--Ti«n Tøc nhi®m vø
 x200083_g_PreMissionId = 8
 
---Ä¿±êNPC
-x200083_g_Name	="°¢±Ì"
+--møc tiêu NPC
+x200083_g_Name	="A Bích"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200083_g_MissionKind = 48
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200083_g_MissionLevel = 30
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200083_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x200083_g_MissionName="¹ÃËÕÄ½Èİ"
+--nhi®m vø Danh
+x200083_g_MissionName="Cô Tô Mµ Dung"
 x200083_g_MissionInfo="#{Mis_juqing_0009}"
 x200083_g_MissionTarget="#{Mis_juqing_Tar_0009}"
-x200083_g_MissionComplete="  $N£¬ÄãÖÕÓÚÀ´ÁË£¬ÎÒµÈÄãºÃ¾ÃÁË¡£"
+x200083_g_MissionComplete="  $N, cu¯i cùng ngß½i ğã t¾i, ta tìm ngß½i quá lâu"
 
 x200083_g_MoneyJZBonus=5280
 x200083_g_exp=4800
 
-x200083_g_Custom	= { {id="ÒÑÕÒµ½°¢±Ì",num=1} }
+x200083_g_Custom	= { {id="Ğã tìm ğßşc A Bích",num=1} }
 x200083_g_IsMissionOkFail = 0
 
 

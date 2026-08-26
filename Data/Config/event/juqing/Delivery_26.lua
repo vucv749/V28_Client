@@ -1,42 +1,42 @@
 --MisDescBegin
 
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200093_g_ScriptId = 200093
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200093_g_MissionId = 26
 
---Ç°ĞøÈÎÎñ
+--Ti«n Tøc nhi®m vø
 x200093_g_PreMissionId = 25
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x200093_g_Position_X=128
 x200093_g_Position_Z=50
 x200093_g_SceneID=18
-x200093_g_AccomplishNPC_Name="Ò®ÂÉÄª¸ç"
+x200093_g_AccomplishNPC_Name="Gia Lu§t MÕc Ca"
 
---Ä¿±êNPC
-x200093_g_Name	="Ïô·å"
+--møc tiêu NPC
+x200093_g_Name	="Tiêu Phong"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200093_g_MissionKind = 52
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200093_g_MissionLevel = 50
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200093_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x200093_g_MissionName="Ô¶¸°²ÔÃ£É½"
+--nhi®m vø Danh
+x200093_g_MissionName="T¾i núi Thß½ng Mang"
 x200093_g_MissionInfo="#{Mis_juqing_0026}"
 x200093_g_MissionTarget="#{Mis_juqing_Tar_0026}"
-x200093_g_MissionComplete="  $N£¬Ê²Ã´·ç°ÑÄã´µÀ´ÁË£¿ÕæÊÇÏëÉ·¸ç¸çÁË£¡"
+x200093_g_MissionComplete="  $N, ng÷n gió nào th±i ngß½i t¾i ğây? Ğúng là nh¾ ca ca phäi không?"
 
 x200093_g_MoneyJZBonus=25740
 x200093_g_exp=31920
 
-x200093_g_Custom	= { {id="ÒÑÕÒµ½Ïô·å",num=1} }
+x200093_g_Custom	= { {id="Ğã tìm ğßşc Tiêu Phong",num=1} }
 x200093_g_IsMissionOkFail = 0
 
 

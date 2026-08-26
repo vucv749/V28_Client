@@ -1,36 +1,36 @@
 --MisDescBegin
---½Å±¾ºÅ
-x892980_g_ScriptId  = 892980                --½Å±¾ºÅ
+--k¸ch bän g¯c Hào
+x892980_g_ScriptId  = 892980                --???
 x892980_g_KDZZID = 1001000175
-x892980_g_StartTime = 20220101      --  ÈÎÎñ¿ªÊ¼Ê±¼ä
-x892980_g_EndTime = 20220112        --  ÈÎÎñ½áÊøÊ±¼ä
+x892980_g_StartTime = 20220101      --  ??????
+x892980_g_EndTime = 20220112        --  ??????
 
-x892980_g_Name = "Ğ¡ºüÏÉ"
---ÈÎÎñºÅ
+x892980_g_Name = "Ti¬u H° Tiên"
+--nhi®m vø Hào
 x892980_g_MissionId = 2043   
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x892980_g_MissionKind       = 3
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x892980_g_MissionLevel      = 30
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x892980_g_IfMissionElite    = 0
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x892980_g_IsMissionOkFail   = 0     --ÈÎÎñ²ÎÊıµÄµÚ0Î»
+--nhi®m vø hay không ğã hoàn thành
+x892980_g_IsMissionOkFail   = 0     --??????0?
 
---ÈÎÎñÎÄ±¾ÃèÊö
+--nhi®m vø vån bän miêu tä
 x892980_g_MissionName       = "#{YDQDJ_20211115_29}"
---ÈÎÎñÃèÊö
+--nhi®m vø miêu tä
 x892980_g_MissionInfo       = "#{YDQDJ_20211115_30}"
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x892980_g_MissionTarget     = "#{YDQDJ_20211115_36}"
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
 x892980_g_ContinueInfo      = "#{YDQDJ_20211115_32}"
---Íê³ÉÈÎÎñnpcËµµÄ»°
+--hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
 x892980_g_MissionComplete   = "#{YDQDJ_20211115_33}"
 
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x892980_g_Custom    = { {id="°ïÖúĞ¡ºüÏÉµÄÅóÓÑ²¢»ñµÃĞÅÎï",num=1} }
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x892980_g_Custom    = { {id="Trş giúp Ti¬u H° Tiên Ğích b¢ng hæu Tính nh§n ğßşc tín v§t",num=1} }
 
 --MisDescEnd

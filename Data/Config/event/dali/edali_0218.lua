@@ -1,36 +1,36 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x210218_g_ScriptId = 210218
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x210218_g_MissionId = 458
 
---ÈÎÎñÄ¿±ênpc
-x210218_g_Name	="ÔÆÆ®Æ®" 
+--nhi®m vø møc tiêu Npc
+x210218_g_Name	="Vân Phiêu Phiêu" 
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x210218_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x210218_g_MissionLevel = 1
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x210218_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x210218_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+--nhi®m vø hay không ğã hoàn thành
+x210218_g_IsMissionOkFail = 0		--????0?
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
 x210218_g_PetDataID = 3000
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x210218_g_MissionName="ÎÒÏëÒªÖ»ÍÃ×Ó"
-x210218_g_MissionInfo="ºÃ°É£¬¿´ÄãÊÇĞÂÀ´µÄ£¬¾Í¸øÄãÒ»Ö»ÍÃ×Ó°É£¬ÄãÒªºÃºÃµÄ°®»¤Ëü¡£"  --ÈÎÎñÃèÊö
-x210218_g_MissionTarget="    ½ĞÎÒÒ»ÉùÆ®Æ®½ã¡£"		--ÈÎÎñÄ¿±ê
-x210218_g_ContinueInfo="ÕâÊÇÎÒÑøµÄÍÃ×ÓÖĞ×î¿É°®µÄÒ»Ö»£¬ÄãÒªºÃºÃÕÕ¹ËËü¡£"		--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x210218_g_MissionComplete="ÔÚ´óÀíºÃºÃÍæ¡£"					--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø vån bän miêu tä
+x210218_g_MissionName="Ta mu¯n 1 Phiêu Phiêu Th¯"
+x210218_g_MissionInfo="Ğßşc r°i, nhìn ngß½i Th¸ m¾i t¾i Ğích, Tñu cho ngß½i Nh¤t Chích Th¯ TØ Ba, Nhî t¯t t¯t bäo v® Tha."  --????
+x210218_g_MissionTarget="Bäo ta mµt tiªng Phiêu Phiêu Thß."		--????
+x210218_g_ContinueInfo="Ğây là Ngã DßŞng Ğích Th¯ TØ Trung ğáng yêu nh¤t Ğích Nh¤t Chích, Nhî t¯t Häo chiªu c¯ Tha."		--??????npc??
+x210218_g_MissionComplete="TÕi ĞÕi Lı häo häo NgoÕn."					--????npc????
 
 
 --MisDescEnd

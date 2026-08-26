@@ -1,37 +1,37 @@
 --MisDescBegin
 
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x311004_g_ScriptId = 311004
 
---¸±±¾Ãû³Æ
-x311004_g_CopySceneName="Í­ÂàÍå"
+--bän sao tên
+x311004_g_CopySceneName="Chiêng ğ°ng cong"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x311004_g_MissionId = 4001
 
---Ä¿±êNPC
-x311004_g_Name = "³ÂÓÀÈÊ"
+--møc tiêu NPC
+x311004_g_Name = "Tr¥n Vînh Nhân"
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x311004_g_IfMissionElite = 1
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x311004_g_MissionKind = 1
 
---********ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö******
---Ñ­»·ÈÎÎñµÄÊı¾İË÷Òı£¬ÀïÃæ´æ×ÅÒÑ×öµÄ»·Êı MD_PINPAN_HUAN
+--********phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng******
+--tu¥n hoàn nhi®m vø Ğích s¯ li®u hß¾ng dçn tra cÑu, bên trong T°n Trß¾c Dî T¯ Ğích Hoàn S± MD_PINPAN_HUAN
 x311004_g_MissionRound = 1
---**********************************ÒÔÉÏÊÇ¶¯Ì¬****************************
+--**********************************ğã ngoài Th¸ ğµng thái****************************
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x311004_g_MissionName="Æ½¶¨ÅÑÂÒ"
-x311004_g_MissionInfo="ÎÒÃÇÒÑ¾­ÕÆÎÕÁËÎåÌ¨É½ÅÑ¾üµÄÈ«²¿µ×Ï¸£¬ÄãÈ¥ºÍ³ÂÓÀÈÊÁªÏµ£¬É±ËÀÈ«²¿ÅÑ¾ü£¬Ò»¸ö²»Áô£¡"  --ÈÎÎñÃèÊö
-x311004_g_MissionTarget="ÔÚ³ÂÓÀÈÊµÄ°ïÖúÏÂ½øÈëÅÑ¾üÓªµØ£¬É±ËÀ1ÃûÅÑ¾üÊ×Áì£¬13ÃûÅÑ¾üÊØÎÀ£¬6ÃûÅÑ¾üÃÅÎÀ"	--ÈÎÎñÄ¿±ê
-x311004_g_ContinueInfo="ÄãÒª¼ÌĞøÅ¬Á¦°¡£¡"	--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x311004_g_MissionComplete="Ğ»Ğ»°¡£¬°³ÃÇÖÕÓÚ¸Ò³öÃÅÁË"	--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø vån bän miêu tä
+x311004_g_MissionName="Bình ğ¸nh phiªn loÕn"
+x311004_g_MissionInfo="Chúng ta ğã n¡m giæ Li­u Ngû Ğài S½n phän quân Ğích toàn bµ chi tiªt, ngß½i ği Hoà Tr¥n Vînh Nhân liên h®, giªt chªt toàn bµ phän quân, mµt cái b¤t lßu!"  --????
+x311004_g_MissionTarget="TÕi Tr¥n Vînh Nhân Ğích dß¾i sñ trş giúp tiªn vào Các\\u0020hÕ Quân Dinh Ğ¸a, giªt chªt 1Danh phän quân thü lînh, 13Danh phän quân thü v®, 6Danh phän quân bäo v® cØa"	--????
+x311004_g_ContinueInfo="Nhî Yêu tiªp tøc c¯ g¡ng A!"	--??????npc??
+x311004_g_MissionComplete="Cám ½n A, Y¬m Môn r¯t cøc Cäm xu¤t môn Li­u"	--????npc????
 
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 x311004_g_MoneyBonus=909
 
 

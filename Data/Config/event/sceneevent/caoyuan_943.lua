@@ -1,39 +1,39 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x212125_g_ScriptId = 212125
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x212125_g_Position_X=164
 x212125_g_Position_Z=159
 x212125_g_SceneID=20
-x212125_g_AccomplishNPC_Name="ÏôÇ¾"
+x212125_g_AccomplishNPC_Name="Tiêu Tß¶ng"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x212125_g_MissionId = 943
 
---Ä¿±êNPC
-x212125_g_Name	="ÏôÇ¾"
+--møc tiêu NPC
+x212125_g_Name	="Tiêu Tß¶ng"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x212125_g_MissionKind = 31
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x212125_g_MissionLevel = 59
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x212125_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x212125_g_MissionName="²İÔ­µÄ½Ù·Ë"
+--nhi®m vø Danh
+x212125_g_MissionName="Thäo Nguyên kiªp phï"
 x212125_g_MissionInfo="#{Mis_30_60_desc_018}"
-x212125_g_MissionTarget="    ²İÔ­À¼Áê¿¤µÄÏôÇ¾#{_INFOAIM163,158,20,ÏôÇ¾}ÈÃÄãÉ±ËÀ30¸öÍäµ¶Âí·Ë#{_INFOAIM273,156,20,-1}¡£"
-x212125_g_MissionContinue="  ÄãÒÑ¾­É±ÁË30¸öÍäµ¶Âí·ËÁËÂğ£¿"
-x212125_g_MissionComplete="  Ã»¿´³öÀ´Äã»¹ÕæÓĞÁ½ÏÂ×Ó¡£"
+x212125_g_MissionTarget="    Tiêu Tß¶ng cüa thäo nguyên Lan Lång Qu§n #{_INFOAIM163,158,20,Tiêu Tß¶ng} yêu c¥u ngß½i di®t 30 tên Loan Ğao Mã Phï #{_INFOAIM273,156,20,-1}."
+x212125_g_MissionContinue="  Các hÕ ğã di®t 30 tên Loan Ğao Mã Phï chßa?"
+x212125_g_MissionComplete="  Không ng¶ các hÕ vçn còn 2 lßşt."
 
 x212125_g_MoneyBonus=10000
 x212125_g_exp=15000
 
-x212125_g_Custom	= { {id="ÒÑÉ±ËÀÍäµ¶Âí·Ë",num=30} }
+x212125_g_Custom	= { {id="Ğã ğánh bÕi Loan Ğao Mã Phï",num=30} }
 x212125_g_IsMissionOkFail = 0
 
 

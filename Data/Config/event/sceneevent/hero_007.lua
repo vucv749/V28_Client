@@ -1,42 +1,42 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x212134_g_ScriptId = 212134
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x212134_g_Position_X=160
 x212134_g_Position_Z=127
 x212134_g_SceneID=2
-x212134_g_AccomplishNPC_Name="Àî¹¤²¿"
+x212134_g_AccomplishNPC_Name="Lı Công Bµ"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x212134_g_MissionId = 256
---Ç°ĞøÈÎÎñºÅ
+--Ti«n Tøc nhi®m vø Hào
 x212134_g_PreMissionId_1 = 253
 x212134_g_PreMissionId_2 = 254
 x212134_g_PreMissionId_3 = 255
 
---Ä¿±êNPC
-x212134_g_Name	="Àî¹¤²¿"
+--møc tiêu NPC
+x212134_g_Name	="Lı Công Bµ"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x212134_g_MissionKind = 55
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x212134_g_MissionLevel = 75
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x212134_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x212134_g_MissionName="¸ÇÊÀÓ¢ĞÛ"
+--nhi®m vø Danh
+x212134_g_MissionName="Cái thª anh hùng"
 x212134_g_MissionInfo="#{Mis_Hero_end}"
-x212134_g_MissionTarget="    ÔÚ´óÀí³ÇÕÒµ½Àî¹¤²¿#{_INFOAIM160,128,2,Àî¹¤²¿}¡£"
-x212134_g_MissionComplete="  ºÇºÇ£¬ÄêÇáÈË£¬Äã¹ûÈ»²»¸ºÖÚÍû¡£ĞĞÍòÀïÂ·£¬Ê¶ÍòÇ§ÈË£¬³ıÍòÖÖÑı£¬¼¯´ÏÃ÷²ÅÖÇÓëÓÂÃÍ¹û¸ÒÓÚÒ»Éí£¬Õâ¸ö¸ÇÊÀÓ¢ĞÛµÄ³ÆºÅÔùÓëÄãµ±Ö®ÎŞÀ¢£¡"
+x212134_g_MissionTarget="TÕi Thành ĞÕi Lı tìm ğßşc Lí Công Bµ#{_INFOAIM160, 128, 2, Lí Công Bµ}."
+x212134_g_MissionComplete="  A, ngß¶i thanh niên, các hÕ quä nhiên không phø kÏ v÷ng cua ta. Các hÕ ğã sØ dùng lòng dûng cäm và thông minh tài trí cüa mình träi qua biªt bao ch£n ğß¶ng, quen biªt bao nhiêu ngß¶i, tr× hÕi vô s¯ là yêu quái. Danh hi®u anh hùng cái thª ta t£ng cho ngß¶i cûng không tiªc chút nào!"
 
 x212134_g_MoneyBonus=500000
 x212134_g_exp=700000
 
-x212134_g_Custom	= { {id="ÒÑÕÒµ½Àî¹¤²¿",num=1} }
+x212134_g_Custom	= { {id="Ğã tìm ğßşc Lı Công Bµ",num=1} }
 x212134_g_IsMissionOkFail = 0
 
 x212134_g_RadioItemBonus={{id=10553037 ,num=1},{id=10514077,num=1},{id=10521057,num=1}}

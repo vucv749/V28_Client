@@ -1,54 +1,54 @@
 --MisDescBegin
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x600027_g_ScriptId = 600027
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x600027_g_MissionId = 1110
 
---ÈÎÎñÄ¿±ênpc
-x600027_g_Name = "Ù¡Ü½ÈØ"
+--nhi®m vø møc tiêu Npc
+x600027_g_Name = "Ğông Phù Dung"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x600027_g_MissionKind = 50
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x600027_g_MissionLevel = 10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x600027_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
-x600027_g_IsMissionOkFail			=0	--0 ÈÎÎñÍê³É±ê¼Ç[Öµ²»ÄÜ±ä]
-x600027_g_MissionParam_SubId		=1	--1 ×ÓÈÎÎñ½Å±¾ºÅ´æ·ÅÎ»ÖÃ[Öµ²»ÄÜ±ä]
-x600027_g_GemCount					=2	--2 ĞèÒªµÄ±¦Ê¯ÊıÁ¿
-x600027_g_GemSerialNum				=3	--3 ĞèÒªµÄ±¦Ê¯
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+x600027_g_IsMissionOkFail			=0	--0 ??????[????]
+x600027_g_MissionParam_SubId		=1	--1 ??????????[????]
+x600027_g_GemCount					=2	--2 ???????
+x600027_g_GemSerialNum				=3	--3 ?????
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñ±äÁ¿µÚÒ»Î»ÓÃÀ´´æ´¢Ëæ»úµÃµ½µÄ½Å±¾ºÅ
+--nhi®m vø lßşng biªn ğ±i ğ® nh¤t v¸ dùng ğ¬ t°n træ TuÏ C½ nh§n ğßşc Ğích k¸ch bän g¯c Hào
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x600027_g_MissionName = "À©ÕÅÈÎÎñ"
-x600027_g_MissionInfo = ""			--ÈÎÎñÃèÊö
-x600027_g_MissionTarget = "    ÕÒ%s¸ö%i½»»¹µ½±¾°ïµÄÙ¡Ü½ÈØ ( 148, 96 )´¦¡£#r#{BHRW_091224_1}"	--ÈÎÎñÄ¿±ê
-x600027_g_ContinueInfo = "    ÄãµÄÈÎÎñ»¹Ã»ÓĞÍê³ÉÃ´£¿"					--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x600027_g_SubmitInfo = "    ÊÂÇé½øÕ¹µÃÈçºÎ£¿"							--Íê³ÉÎ´Ìá½»Ê±µÄnpc¶Ô»°
-x600027_g_MissionComplete = "    ÉõºÃÉõºÃ¡£"							--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø vån bän miêu tä
+x600027_g_MissionName = "Nhi®m vø khuªch trß½ng"
+x600027_g_MissionInfo = ""			--????
+x600027_g_MissionTarget = "Träo%sCá%iträ lÕi Ğáo bän bang Ğích Ğ°ng Phù Dung (148, 96)XØ. #r#{BHRW_091224_1}"	--????
+x600027_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"					--??????npc??
+x600027_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"							--???????npc??
+x600027_g_MissionComplete = "R¤t t¯t r¤t t¯t."							--????npc????
 
 x600027_g_Parameter_Item_AllRandom = { { id = 3, num = 2 } }
 
 x600027_g_StrForePart = 2
-x600027_g_Offset = 35													-- Suppose to £¿, ±íÀïµÚ¼¸¸öÎïÆ·ÁĞµÄÆ«ÒÆÁ¿
+x600027_g_Offset = 35													-- Suppose to ?, ????????????
 
 x600027_g_MissionRound = 55
 
--- Í¨ÓÃ³ÇÊĞÈÎÎñ½Å±¾
+-- thông døng thành th¸ nhi®m vø k¸ch bän g¯c
 x600027_g_CityMissionScript = 600001
 x600027_g_ExpandScript = 600023
 
 x600027_g_StrList = { " 0 ", " 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 ", " 10 " }
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 
 
 

@@ -1,53 +1,53 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x210249_g_ScriptId 						= 210249
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x210249_g_Position_X 					= 172.7304
 x210249_g_Position_Z 					= 146.4640
 x210249_g_SceneID 						= 2
-x210249_g_AccomplishNPC_Name	= "Ëï°ËÒ¯"
---ÈÎÎñºÅ
+x210249_g_AccomplishNPC_Name	= "Tôn Bát Gia"
+--nhi®m vø Hào
 x210249_g_MissionId 					= 1154
---Ä¿±êNPC
-x210249_g_Name 								= "Ëï°ËÒ¯"
---ÈÎÎñ¹éÀà
+--møc tiêu NPC
+x210249_g_Name 								= "Tôn Bát Gia"
+--nhi®m vø phân loÕi
 x210249_g_MissionKind 				= 13
---ÈÎÎñ»·Êı
---MD_LABORISGLORIOUS_ROUND£¨288£©
+--nhi®m vø Hoàn S±
+--MD_LABORISGLORIOUS_ROUND(288)
 x210249_g_MissionRound				= 288
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x210249_g_MissionLevel 				= 10000
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x210249_g_IfMissionElite 			= 0
---ÊÇ·ñÍê³É
+--hay không hoàn thành
 x210249_g_IsMissionOkFail			= 0		
---ÈÎÎñÃû
-x210249_g_MissionName 				= "ÀÍ¶¯×î¹âÈÙ"
---ÈÎÎñÃèÊö
+--nhi®m vø Danh
+x210249_g_MissionName 				= "Lao Ğµng T¯i Quang Vinh"
+--nhi®m vø miêu tä
 x210249_g_MissionInfo					= ""
 
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x210249_g_MissionTarget				= "%f"
 
 x210249_g_StrForePart 				= 4
 
---ÓÃÀ´±£´æ×Ö·û´®¸ñÊ½»¯µÄÊı¾İ
+--dùng ğ¬ bäo t°n tñ phù Xuyªn cách thÑc Hoá Ğích s¯ li®u
 --x210249_g_FormatList = {"#{WYHD_090410_33}%s#{WYHD_090410_34}",}
-x210249_g_FormatList = {"ÇëÄãÇ°Íù%s´¦ÖÖÖ²Õâ¿ÅÏ£ÍûµÄÖÖ×Ó£¬Íê³ÉÖ®ºóµ½´óÀíËï°ËÒ¯´¦ÁìÈ¡ÀÍ¶¯×î¹âÈÙ»î¶¯µÄ½±Àø¡£#r#G×¢Òâ£ºÕâ¸ö»î¶¯Ã¿ÌìÖ»¿ÉÒÔ²Î¼ÓÒ»´Î£¬²¢ÇÒ·ÅÆúÈÎÎñ½ñÌì¾Í²»¿ÉÒÔÔÙ²Î¼ÓÀÍ¶¯×î¹âÈÙµÄÈÎÎñÁË¡£",}
+x210249_g_FormatList = {"M¶i ngß½i ği trß¾c%sXØ gieo tr°ng Giá Khoä hy v÷ng Ğích m¥m móng, hoàn thành lúc sau ğªn l¾n Lı Tôn Bát Gia XØ lînh Lao Ğµng T¯i Quang Vinh hoÕt ğµng Ğích thß·ng cho. #r#GcHú ı: Này hoÕt ğµng m²i ngày Chích có th¬ tham gia mµt l¥n, h½n næa vÑt bö nhi®m vø hôm nay lÕi không th¬ Dî Tái tham gia Lao Ğµng T¯i Quang Vinh Ğích nhi®m vø Li­u.",}
 
 x210249_g_StrList = {
-	"½£¸ó#{_INFOAIM58,189,7,}",
-	"ÑãÄÏ#{_INFOAIM168,114,18,}",
-	"ÎŞÁ¿É½#{_INFOAIM249,42,6,}",
+	"Kiªm Các#{_INFOAIM58, 189, 7, }",
+	"NhÕn Nam#{_INFOAIM168, 114, 18, }",
+	"Vô Lßşng S½n#{_INFOAIM249, 42, 6, }",
 	"Ì«ºş#{_INFOAIM97,177,4,}",
-	"áÔÉ½#{_INFOAIM132,198,3,}",
+	"ÁÔÉ½#{_INFOAIM132,198,3,}",
  }
 
- --¿ØÖÆ½Å±¾
+--kh¯ng chª k¸ch bän g¯c
 x210249_g_ControlScript				= 210249
---ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x210249_g_Custom							= { {id="ÒÑÖÖÖ²ÖÖ×Ó",num=1}}
+--nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x210249_g_Custom							= { {id="Dî gieo tr°ng m¥m móng",num=1}}
 
 
 --MisDescEnd

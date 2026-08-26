@@ -1,41 +1,41 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x210212_g_ScriptId = 210212
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x210212_g_Position_X=160.0895
 x210212_g_Position_Z=156.9309
 x210212_g_SceneID=2
-x210212_g_AccomplishNPC_Name="ÕÔÌìÊ¦"
+x210212_g_AccomplishNPC_Name="Tri®u Thiên Sß"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x210212_g_MissionId = 452
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x210212_g_MissionIdPre = 451
 
---Ä¿±êNPC
-x210212_g_Name	="ÕÔÌìÊ¦"
+--møc tiêu NPC
+x210212_g_Name	="Tri®u Thiên Sß"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x210212_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x210212_g_MissionLevel = 3
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x210212_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x210212_g_MissionName="µÚÈı·âÍÆ¼öĞÅ"
+--nhi®m vø Danh
+x210212_g_MissionName="Lá thß tiªn cØ thÑ 3"
 x210212_g_MissionInfo="#{event_dali_0016}"
-x210212_g_MissionTarget="    »Ø#G´óÀí³ÇÎå»ªÌ³#WÕÒµ½#RÕÔÌìÊ¦#W#{_INFOAIM160,157,2,ÕÔÌìÊ¦}¡£#b#G£¨ÇëÓÃ×ó¼üµã»÷´øÏÂ»®ÏßµÄ×ø±ê£¬°ïÖúÄúÕÒµ½¸ÃNPC£©#l"
+x210212_g_MissionTarget="H°i#GTHành ĞÕi Lı Ngû Hoa Ğàn#Wtìm ğßşc#RTri®u Thiên Sß#W#{_INFOAIM160, 157, 2, Tri®u Thiên Sß}. #b#G(Thïnh Døng Tä Ki®n Ği¬m Kích b®nh bÕch ğ¾i phác h÷a Ğích t÷a ğµ, trş giúp Nhçm tìm ğßşc Cai NPC)#l"
 x210212_g_MissionComplete="#{event_dali_0017}"
 x210212_g_MoneyBonus=72
-x210212_g_SignPost = {x = 160, z = 156, tip = "ÕÔÌìÊ¦"}
+x210212_g_SignPost = {x = 160, z = 156, tip = "Tri®u Thiên Sß"}
 x210212_g_ItemBonus={{id=40002108,num=1}}
 
-x210212_g_Custom	= { {id="ÒÑÕÒµ½ÕÔÌìÊ¦",num=1} }
+x210212_g_Custom	= { {id="Tìm th¤y Tri®u Thiên Sß",num=1} }
 
 
 --MisDescEnd

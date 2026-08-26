@@ -1,94 +1,94 @@
 --MisDescBegin
 
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 
 x805026_g_ScriptId = 805026
 
 
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 
 x805026_g_MissionId = 443
 
 
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 
 x805026_g_MissionIdPre = 441
 
 
 
---Ä¿±êNPC
+--møc tiêu NPC
 
-x805026_g_Name	="°ï»á´ó×Ü¹Ü"
+x805026_g_Name	="Bang hµi ĞÕi t±ng quän"
 
 
 
---ÈÎÎñµÀ¾ß±àºÅ
+--nhi®m vø ğÕo cø ğánh s¯
 
 x805026_g_ItemId = 30101001
 
 
 
---ÈÎÎñµÀ¾ßĞèÇóÊıÁ¿
+--nhi®m vø ğÕo cø nhu c¥u s¯ lßşng
 
 x805026_g_ItemNeedNum = 1
 
 
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 
 x805026_g_MissionKind = 13
 
 
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 
 x805026_g_MissionLevel = 1
 
 
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 
 x805026_g_IfMissionElite = 0
 
 
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
 
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
+--nhi®m vø hay không ğã hoàn thành
 
-x805026_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
-
-
-
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+x805026_g_IsMissionOkFail = 0		--????0?
 
 
 
---ÈÎÎñĞèÒªµÃµ½µÄÎïÆ·
-
-x805026_g_DemandItem={{id=30101001,num=1}}		--±äÁ¿µÚ1Î»
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
 
 
---ÈÎÎñÃû
+--nhi®m vø c¥n nh§n ğßşc Ğích v§t ph¦m
 
-x805026_g_MissionName="Éı¼¶ÑĞ¾¿"
+x805026_g_DemandItem={{id=30101001,num=1}}		--???1?
+
+
+
+--nhi®m vø Danh
+
+x805026_g_MissionName="Thång c¤p nghiên cÑu"
 
 x805026_g_MissionInfo_1="  #R"
 
 x805026_g_MissionInfo_2="#{city0_levelup_0001}"
 
-x805026_g_MissionTarget="¸ø°ï»á´ó×Ü¹Ü5¸ö½ğ±Ò"
+x805026_g_MissionTarget="C¤p bang hµi ĞÕi t±ng quän 5Cá Kim T®"
 
-x805026_g_MissionContinue="ÄãÓĞ5¸ö½ğ±ÒÁËÂğ£¿"
+x805026_g_MissionContinue="Nhî Hæu 5Cá Kim T® Li­u Ma?"
 
-x805026_g_MissionComplete="  àÅ£¬×öµÃ²»´í¡£¿´À´ÄãºÜÓĞÇ®Âğ¡£"
+x805026_g_MissionComplete="Ân, làm ğßşc không t°i. Xem ra Nhî r¤t có Ti«n Ma."
 
 x805026_g_MoneyBonus=0
 
-x805026_g_SignPost = {x = 109, z = 167, tip = "°ï»á´ó×Ü¹Ü"}
+x805026_g_SignPost = {x = 109, z = 167, tip = "Bang hµi ĞÕi t±ng quän"}
 
 x805026_g_ItemBonus={{id=30304001,num=1}}
 

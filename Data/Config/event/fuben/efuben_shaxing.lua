@@ -1,39 +1,39 @@
 --MisDescBegin
 
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x402048_g_ScriptId 				= 402048
 
---½ÇÉ«»îÔ¾Öµ¸±±¾µÄindex
+--vai di­n sinh ğµng Tr¸ bän sao Ğích index
 x402048_g_activePointIndex = 14
 
----- ÈÎÎñºÅ
-x402048_g_MissionId 			= 1146					--É±ĞÇÈÎÎñ
+---- nhi®m vø Hào
+x402048_g_MissionId 			= 1146					--????
 
----- ÈÎÎñÄ¿±ê NPC
-x402048_g_Name 				= "¿İÈÙ´óÊ¦"
+---- nhi®m vø møc tiêu NPC
+x402048_g_Name 				= "Khô Vinh ĞÕi Sß"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x402048_g_MissionKind 		= 8
 
---½ÓÈ¡ÈÎÎñµÄ×îµÍµÈ¼¶
+--nh§n nhi®m vø Ğích th¤p nh¤t c¤p b§c
 x402048_g_minLevel 			= 70
 x402048_g_minXinFaLevel		= 45
 
 x402048_g_MissionLevel		= 10000
 
--- ÈÎÎñÎÄ±¾ÃèÊö
+-- nhi®m vø vån bän miêu tä
 x402048_g_MissionName 		= "#{SXRW_090119_002}"
-x402048_g_MissionInfo 		= ""										-- ÈÎÎñÃèÊö
-x402048_g_MissionTarget 	= "#{SXRW_090119_139}"						-- ÈÎÎñÄ¿±ê
-x402048_g_SubmitInfo 		= "#{SXRW_090119_042}"						-- Ìá½»Ê±µÄ´ğ¸´
-x402048_g_AcceptInfo 		= "#{SXRW_090119_014}"						-- ½ÓÊÜÈÎÎñÊÇµÄ´ğ¸´
-x402048_g_MissionComplete 	= "#{SXRW_090119_042}"					 	--Íê³ÉÈÎÎñnpcËµµÄ»°
+x402048_g_MissionInfo 		= ""										-- ????
+x402048_g_MissionTarget 	= "#{SXRW_090119_139}"						-- ????
+x402048_g_SubmitInfo 		= "#{SXRW_090119_042}"						-- ??????
+x402048_g_AcceptInfo 		= "#{SXRW_090119_014}"						-- ????????
+x402048_g_MissionComplete 	= "#{SXRW_090119_042}"					 	--????npc???
 
-x402048_g_IsMissionOkFail = 0			-- 0ºÅË÷Òı£ºµ±Ç°ÈÎÎñÊÇ·ñÍê³É(0Î´Íê³É£»1Íê³É£»2Ê§°Ü)
-x402048_g_KillMonsterNum 	= 1			-- 1 ºÅË÷Òı£ºÉ±Ê®¶şÉ·ĞÇµÄ¸öÊı
-x402048_g_Param_sceneid 	= 2			-- 2ºÅË÷Òı£ºµ±Ç°ÈÎÎñÊı¾İµÄ2Î»ÖÃÉèÖÃÎª³¡¾°ID
+x402048_g_IsMissionOkFail = 0			-- 0???:????????(0???;1??;2??)
+x402048_g_KillMonsterNum 	= 1			-- 1 ???:????????
+x402048_g_Param_sceneid 	= 2			-- 2???:???????2???????ID
 --~ x402048_g_Parameter_Kill_CountRandom = { { id = 1700152, numNeeded = 6, numKilled = 1 } }
-x402048_g_Custom	= { {id="ÒÑÍê³ÉÉ±ĞÇÈÎÎñ",num=1} }
+x402048_g_Custom	= { {id="Ğã hoàn thành nhi®m vø sát tinh",num=1} }
 
 
 --MisDescEnd

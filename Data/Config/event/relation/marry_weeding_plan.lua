@@ -1,16 +1,16 @@
 --MisDescBegin
-x806021_g_ScriptId	= 806021	--½Å±¾ºÅ
-x806021_g_MissionId = 2197		--ÈÎÎñºÅ
-x806021_g_TargetNpcName	="ÔÂÀÏ"	--ÈÎÎñÄ¿±ênpc
+x806021_g_ScriptId	= 806021	--???
+x806021_g_MissionId = 2197		--???
+x806021_g_TargetNpcName	="Nguy®t Lão"	--????npc
 
-x806021_g_MissionKind = 3		--ÈÎÎñ¹éÀà
-x806021_g_MissionLevel = 1		--ÈÎÎñµÈ¼¶
-x806021_g_IfMissionElite = 0	--ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+x806021_g_MissionKind = 3		--????
+x806021_g_MissionLevel = 1		--????
+x806021_g_IfMissionElite = 0	--???????
 
-x806021_g_MissionName	= "#{JHYH_230330_02}"	--ÈÎÎñÃû³Æ
-x806021_g_MissionTarget	= "#{JHYH_230330_314}"		--ÈÎÎñÄ¿±ê
+x806021_g_MissionName	= "#{JHYH_230330_02}"	--????
+x806021_g_MissionTarget	= "#{JHYH_230330_314}"		--????
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 x806021_g_MoneyBonus = 0
 
 --MisDescEnd

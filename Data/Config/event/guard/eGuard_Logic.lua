@@ -1,41 +1,41 @@
 --MisDescBegin
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x888160_g_ScriptId = 888160
 
 -- KDZZ
 x888160_g_KDZZID   = 1001000203
 x888160_g_SubKDZZID   = 1
 
---½ÓÈÎÎñnpc
-x888160_g_AcceptNPC_Name="À×ºØ"--½ÓÈÎÎñµÄnpc»òÕßnpcÁĞ±í
+--tiªp nh§n chÑc vø Vø Npc
+x888160_g_AcceptNPC_Name="Lôi HÕ"--????npc??npc??
 
---½»ÈÎÎñnpc
-x888160_g_Position_X=211--Íê³ÉÈÎÎñNPCÊôĞÔ
+--Giao nhi®m vø Npc
+x888160_g_Position_X=211--????NPC??
 x888160_g_Position_Z=202
 x888160_g_SceneID=2
-x888160_g_AccomplishNPC_Name="À×ºØ"
+x888160_g_AccomplishNPC_Name="Lôi HÕ"
 
---ÈÎÎñÊı¾İ
+--nhi®m vø s¯ li®u
 x888160_g_MissionId = 2113
 x888160_g_MissionKind = 13
 x888160_g_MissionLevel = 40
 x888160_g_IfMissionElite = 0
 
-x888160_g_IsMissionOkFail = 0--ÈÎÎñÍê³É±êÖ¾Î»(Ò»¶¨ÒªÎª0)
-x888160_g_MParamCarHp = 1--1ºÅ¼ÇïÚ³µ´«ËÍÇ°ÑªÁ¿
-x888160_g_MParamCarType = 2--2ºÅ¼ÇïÚ³µÀàĞÍ
-x888160_g_MParamCarTime = 3--3ºÅ¼ÇÔËïÚ¿ªÊ¼Ê±¼ä
-x888160_g_MParamRobFlag = 4--4ºÅ¼Ç±»½ÙïÚ±ê¼Ç
-x888160_g_MParamCarObjId = 5--5ºÅ¼ÇïÚ³µnpcid
-x888160_g_MParamCarSceneId = 6--6ºÅ¼ÇïÚ³µµ±Ç°ËùÔÚ³¡¾°
-x888160_g_MParamCarStep = 7--7ºÅ¼ÇïÚ³µµ±Ç°ËùÔÚ³¡¾°²½Êı+Î»ÖÃ
+x888160_g_IsMissionOkFail = 0--???????(????0)
+x888160_g_MParamCarHp = 1--1?????????
+x888160_g_MParamCarType = 2--2??????
+x888160_g_MParamCarTime = 3--3????????
+x888160_g_MParamRobFlag = 4--4???????
+x888160_g_MParamCarObjId = 5--5????npcid
+x888160_g_MParamCarSceneId = 6--6??????????
+x888160_g_MParamCarStep = 7--7????????????+??
 
-x888160_g_MissionName="#{LBZC_220810_01}"--ÈÎÎñÃû
-x888160_g_MissionInfo="#{LBZC_220810_02}"--ÈÎÎñÎÄ±¾ÃèÊö£¨ÈÎÎñÁìÈ¡¶Ô°×£©
-x888160_g_MissionComplete="#{LBZC_220810_09}"--ÈÎÎñÍê³É¶Ô°×
-x888160_g_MissionTarget=""--ÈÎÎñÄ¿±ê(ÈÎÎñÃæ°åÖĞÈÎÎñĞÅÏ¢ÏÔÊ¾ÄÚÈİ)
+x888160_g_MissionName="#{LBZC_220810_01}"--???
+x888160_g_MissionInfo="#{LBZC_220810_02}"--??????(??????)
+x888160_g_MissionComplete="#{LBZC_220810_09}"--??????
+x888160_g_MissionTarget=""--????(?????????????)
 
---×Ô¶¨ÒåÍê³ÉÇé¿ö£¬ÄÚÈİ²»ÄÜÊ¹ÓÃ×Öµä£¬·Ö±ğ¶ÔÓ¦missionparamµÄµÚ1Î»ºóÑÓ
+--Tñ ğ¸nh nghîa hoàn thành tình hu¯ng, nµi dung không th¬ sØ døng tñ ği¬n, phân bi®t ğ¯i Ñng missionparamĞích Ğ® 1V¸ H§u Diên
 x888160_g_Custom = {}
 
 

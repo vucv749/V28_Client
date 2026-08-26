@@ -1,5 +1,5 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x808058_g_ScriptId = 808058
 x808058_g_LongpaiId = 30505092
 x808058_g_Longpai75Id =	30505907

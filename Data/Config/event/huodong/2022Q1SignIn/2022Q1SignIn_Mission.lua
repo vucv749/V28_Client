@@ -1,37 +1,37 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x893090_g_ScriptId			= 893090
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x893090_g_Position_X		= 185
 x893090_g_Position_Z		= 160
 x893090_g_SceneID			= 0
-x893090_g_AccomplishNPC_Name= "ÔÆº£"
+x893090_g_AccomplishNPC_Name= "Bi¬n mây"
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x893090_g_MissionIdPre		= -1
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x893090_g_MissionId			= 2055
---ÈÎÎñÄ¿±ênpc
-x893090_g_Name				= "ÔÆº£"
+--nhi®m vø møc tiêu Npc
+x893090_g_Name				= "Bi¬n mây"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x893090_g_MissionKind		= 3
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x893090_g_MissionLevel		= 30
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x893090_g_IfMissionElite	= 0
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x893090_g_IsMissionOkFail	= 0		--ÈÎÎñ²ÎÊıµÄµÚ0Î»
+--nhi®m vø hay không ğã hoàn thành
+x893090_g_IsMissionOkFail	= 0		--??????0?
 
---ÈÎÎñÎÄ±¾ÃèÊö
+--nhi®m vø vån bän miêu tä
 x893090_g_MissionName		= "#{BBYJ_220104_138}"
---ÈÎÎñÃèÊö
+--nhi®m vø miêu tä
 --x893090_g_MissionInfo			= ""
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x893090_g_MissionTarget		= ""
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
 x893090_g_Custom			= { }
 
 x893090_g_ItemBonus			= {{id=38002538,num=1}}

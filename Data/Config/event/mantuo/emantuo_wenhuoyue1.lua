@@ -1,32 +1,32 @@
 --MisDescBegin
 x889988_g_ScriptId = 889988
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x889988_g_Position_X=125
 x889988_g_Position_Z=122
 x889988_g_SceneID=1283
-x889988_g_AccomplishNPC_Name="ÍõÁéËÌ"
+x889988_g_AccomplishNPC_Name="Vß½ng Linh Tøng"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x889988_g_MissionId = 2114
 
---ÈÎÎñÄ¿±ênpc
-x889988_g_Name	="ÍõÁéËÌ" 
+--nhi®m vø møc tiêu Npc
+x889988_g_Name	="Vß½ng Linh Tøng" 
 
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x889988_g_MissionKind = 61
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x889988_g_MissionLevel = 30
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x889988_g_IfMissionElite = 0
 
---********ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö******
-x889988_g_IsMissionOkFail = 0					--±äÁ¿µÄµÚ0Î»
-x889988_g_DemandItem={{id=38002691,num=5}}		--±äÁ¿µÚ1Î»,ÈÎÎñĞèÒªµÃµ½µÄÎïÆ·
---ÈÎÎñÃû
+--********phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng******
+x889988_g_IsMissionOkFail = 0					--????0?
+x889988_g_DemandItem={{id=38002691,num=5}}		--???1?,?????????
+--nhi®m vø Danh
 x889988_g_MissionName="#{XMPWH_20220906_03}"
 
 x889988_g_MissionInfo="#{XMPWH_20220906_21}"

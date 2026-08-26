@@ -1,46 +1,46 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x210226_g_ScriptId = 210226
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x210226_g_Position_X=215
 x210226_g_Position_Z=284
 x210226_g_SceneID=2
-x210226_g_AccomplishNPC_Name="¶ÎÑÓÇì"
+x210226_g_AccomplishNPC_Name="Ğoàn Diên Khánh"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x210226_g_MissionId = 706
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x210226_g_MissionIdPre = 705
 
---Ä¿±êNPC
-x210226_g_Name	="¶ÎÑÓÇì"
+--møc tiêu NPC
+x210226_g_Name	="Ğoàn Diên Khánh"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x210226_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x210226_g_MissionLevel = 8
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x210226_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x210226_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+--nhi®m vø hay không ğã hoàn thành
+x210226_g_IsMissionOkFail = 0		--????0?
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x210226_g_MissionName="ËÍÂøÍ·"
-x210226_g_MissionInfo="  [Ô­À´ÄãÊÇÎªÁËÄÇ¸æÊ¾À´µÄ¡£ÎÒ²»¸úÄã·Ï»°¡£ÄÇ±ßÓĞ¸ö#RĞ¡ÆòØ¤#W¿ìÒª¶öËÀÁË£¬ÄãÈ¥ÕÒ¸ö#YÂøÍ·#WËÍ¸øËû¡£]"
+--nhi®m vø vån bän miêu tä
+x210226_g_MissionName="T£ng bánh bao"
+x210226_g_MissionInfo="  [Té ra các hÕ vì cáo th¸ này mà ğªn. Ta không m¤t th¶i gian v¾i các hÕ. Bên kia có tên #RtI¬u kh¤t cái#W ğói s¡p chªt. Các hÕ hãy ği tìm #Ybánh bao#W cho h¡n. ]"
 x210226_g_MissionTarget="#{event_dali_0037}"
-x210226_g_ContinueInfo="  [ÄãÒÑ¾­°Ñ#YÂøÍ·#WËÍµ½#RĞ¡ÆòØ¤#WÊÖÖĞÁËÂğ£¿]"
-x210226_g_MissionComplete="  [àÅ£¬¿´À´ÄãÕâ¸öÄêÇáÈË»¹ÊÇ¸ö¿ÉÔìÖ®²Ä¡£]"
-x210226_g_SignPost = {x = 199, z = 256, tip = "Ğ¡ÆòØ¤"}
-x210226_g_Custom	= { {id="¸øĞ¡ÆòØ¤ËÍÂøÍ·£¡",num=1} }
---ÈÎÎñ½±Àø
+x210226_g_ContinueInfo="  [Các hÕ ğã ğßa #YbÁnh bao#W cho #Rti¬u kh¤t cái#W chßa?]"
+x210226_g_MissionComplete="  [Chà, xem ra con ngß¶i trë tu±i các hÕ vçn là tài nång có th¬ ğào tÕo.]"
+x210226_g_SignPost = {x = 199, z = 256, tip = "Ti¬u Kh¤t Cái"}
+x210226_g_Custom	= { {id="Ğßa bánh bao cho ti¬u kh¤t cái!",num=1} }
+--nhi®m vø thß·ng cho
 x210226_g_MoneyBonus=100
 --g_ItemBonus={{id=40002108,num=1}}
 

@@ -1,26 +1,26 @@
 --MisDescBegin
 x503000_g_ScriptId = 503000
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x503000_g_MissionId = 2057
 
---ÈÎÎñÄ¿±ênpc
-x503000_g_Name = "ÔÆÆ®Æ®"
+--nhi®m vø møc tiêu Npc
+x503000_g_Name = "Vân Phiêu Phiêu"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x503000_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x503000_g_MissionLevel = 10000
 x503000_g_MinMissionLevel = 50
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x503000_g_IfMissionElite = 0
 
-x503000_g_IsMissionOkFail = 0							-- ÈÎÎñÍê³É±ê¼Ç
+x503000_g_IsMissionOkFail = 0							-- ??????
 
---ÈÎÎñÎÄ±¾ÃèÊö
+--nhi®m vø vån bän miêu tä
 x503000_g_MissionName="#{BBYRS_220309_18}"
-x503000_g_MissionTarget="#{BBYRS_220309_35}"	--ÈÎÎñÄ¿±ê
+x503000_g_MissionTarget="#{BBYRS_220309_35}"	--????
 
 
 

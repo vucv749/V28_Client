@@ -1,39 +1,39 @@
 --MisDescBegin
 
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x050100_g_ScriptId = 050100
 
--- ÈÎÎñºÅ
+-- nhi®m vø Hào
 x050100_g_MissionId = 1260					-- 1260 - 1269
 
---½ÇÉ«»îÔ¾Öµ¸±±¾µÄindex
+--vai di­n sinh ğµng Tr¸ bän sao Ğích index
 x050100_g_activePointIndex = 6
 
--- ÉÏÒ»¸öÈÎÎñµÄ ID
+-- Thßşng mµt cái nhi®m vø Ğích ID
 -- g_MissionIdPre = 1260
 
--- ÈÎÎñÄ¿±ê NPC
-x050100_g_Name = "Ç®ºêÓî"
+-- nhi®m vø møc tiêu NPC
+x050100_g_Name = "Ti«n Hoành Vû"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x050100_g_MissionKind = 8
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x050100_g_MissionLevel = 10000
 
--- ÈÎÎñÎÄ±¾ÃèÊö
-x050100_g_MissionName = "Ò»¸ö¶¼²»ÄÜÅÜ"
-x050100_g_MissionInfo = "    "				-- ÈÎÎñÃèÊö
-x050100_g_MissionTarget = "    ËÕÖİµÄÇ®ºêÓî#{_INFOAIM62,162,1,Ç®ºêÓî}ÈÃÄãÔÚ30·ÖÖÓÄÚÒı³ö²¢É±ËÀÓà¶¾¡£#r    #{FQSH_090206_01}"						-- ÈÎÎñÄ¿±ê
-x050100_g_ContinueInfo = "    ±ß¾³Ò»Õ½¹ØÏµÖØ´ó£¬Ò»¶¨²»¿ÉµôÒÔÇáĞÄ¡£Äã×¼±¸ºÃÇ°Íù±ß¾³½ËÔôÁËÃ´£¿"	-- Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x050100_g_SubmitInfo = "    ÈÎÎñ×öµÃÔõÃ´ÑùÁË£¿"										-- Ìá½»Ê±µÄ´ğ¸´
-x050100_g_MissionComplete = "    Äã×öµÄºÃ¼«ÁË£¬ÎÒÃÇ¿ÉÒÔÍ¨¹ıÕâ¿éÁîÅÆÕÒµ½Õâ»ï·ËÍ½µÄÓªÕ¯¡£È¥ïÚ¾ÖÕÒ»¨½£Óê#{_INFOAIM251,109,1,»¨½£Óê}£¬Ëû¿ÉÒÔ¸æËßÄãÁîÅÆµÄÀ´Àú¡£"	--Íê³ÉÈÎÎñnpcËµµÄ»°
+-- nhi®m vø vån bän miêu tä
+x050100_g_MissionName = "Di®t G÷n"
+x050100_g_MissionInfo = "    "				-- ????
+x050100_g_MissionTarget = "Tô Châu Ğích Ti«n H°ng Vû#{_INFOAIM62, 162, 1, Ti«n H°ng Vû}cho ngß½i TÕi 30Phút Nµi dçn Tính giªt chªt Dß Ğµc. #r #{FQSH_090206_01}"						-- ????
+x050100_g_ContinueInfo = "Biên cänh mµt tr§n chiªn quan h® tr÷ng ğÕi, nh¤t ğ¸nh không th¬ ph¾t l¶. Nhî chu¦n b¸ t¯t ği trß¾c biên cänh Ti­u T£c Li­u Ma?"	-- ??????npc??
+x050100_g_SubmitInfo = "Nhi®m vø làm ğßşc thª nào Li­u?"										-- ??????
+x050100_g_MissionComplete = "Nhî T¯ th§t là t¯t cñc kÏ, chúng ta có th¬ thông qua Giá Kh¯i Linh Bài tìm ğßşc Giá Hoä ğÕo t£c Ğích doanh trÕi. KhÑ tiêu cøc Träo Hoa Kiªm Vû#{_INFOAIM251, 109, 1, Hoa Kiªm Vû}, Tha có th¬ nói cho Nhî Linh Bài Ğích lai l¸ch."	--????npc???
 
-x050100_g_IsMissionOkFail = 0				-- 0 ºÅ£ºµ±Ç°ÈÎÎñÊÇ·ñÍê³É(0Î´Íê³É£»1Íê³É£»2Ê§°Ü)
-x050100_g_DemandKill = { { id = 4060, num = 50 }, { id = 4070, num = 10 }, { id = 4080, num = 1 }, { id = 4090, num = 1 }, { id = 4100, num = 1 } }	-- 1 ~ 5 ºÅ£¬¹ÖÎïĞÅÏ¢
-x050100_g_Param_sceneid = 6					-- 6 ºÅ£ºµ±Ç°¸±±¾ÈÎÎñµÄ³¡¾°ºÅ
+x050100_g_IsMissionOkFail = 0				-- 0 ?:????????(0???;1??;2??)
+x050100_g_DemandKill = { { id = 4060, num = 50 }, { id = 4070, num = 10 }, { id = 4080, num = 1 }, { id = 4090, num = 1 }, { id = 4100, num = 1 } }	-- 1 ~ 5 ?,????
+x050100_g_Param_sceneid = 6					-- 6 ?:??????????
 
--- ÈÎÎñ½±Àø
+-- nhi®m vø thß·ng cho
 
 
 --MisDescEnd

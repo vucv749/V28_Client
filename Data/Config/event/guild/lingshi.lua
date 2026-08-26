@@ -1,27 +1,27 @@
 --MisDescBegin
 
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x600050_g_ScriptId = 600050
 
--- ÈÎÎñÄ¿±ê NPC
-x600050_g_Name = "ÉÏ¹Ù±ù"
-x600050_g_Name2 = "ÉÏ¹ÙÑ©"
+-- nhi®m vø møc tiêu NPC
+x600050_g_Name = "Thßşng Quan Bång"
+x600050_g_Name2 = "Thßşng Quan Tuyªt"
 
---°ïÕ½Êı¾İË÷Òı£¬¶ÔÓ¦³ÌĞòÖĞµÄ enum GUILDWAR_INT_ARRAY
+--Bang Chiªn s¯ li®u hß¾ng dçn tra cÑu, ğ¯i Ñng trình tñ Trung Ğích enum GUILDWAR_INT_ARRAY
 x600050_g_A_LingShiIndex = 2
 x600050_g_B_LingShiIndex = 7
 
---¸öÈË»ı·ÖÊı¾İË÷Òı£¬¶ÔÓ¦³ÌĞòenum GUILDWAR_INT_INDEX
-x600050_g_Human_ResourceNumIndex = 4					--¸öÈË½»ÄÉ×ÊÔ´¸öÊıË÷Òı
+--cá nhân vi tích phân s¯ li®u hß¾ng dçn tra cÑu, ğ¯i Ñng trình tñ enum GUILDWAR_INT_INDEX
+x600050_g_Human_ResourceNumIndex = 4					--??????????
 
 
-x600050_g_LingShi = {"ÇàÁúÊ¯","°×»¢Ê¯","ÖìÈ¸Ê¯","ĞşÎäÊ¯","ÅÌ¹ÅÊ¯"}		--ÁéÊ¯Ãû×Ö
-x600050_g_LingShiID = {30900051,30900052,30900053,30900054,30900055}	--ÁéÊ¯ID
+x600050_g_LingShi = {"Thanh Long ThÕch","BÕch H± ThÕch","Chu Tß¾c ThÕch","Huy«n Vû ThÕch","Bàn C± ThÕch"}		--????
+x600050_g_LingShiID = {30900051,30900052,30900053,30900054,30900055}	--??ID
 
---°ïÕ½¸±±¾½Å±¾
+--Bang Chiªn bän sao k¸ch bän g¯c
 x600050_g_BangzhanScriptId	= 402047
 
-x600050_g_GuildPoint_LingShi = 1						--»ı·Ö¹æÔòË÷Òı£¬±íGuildWarPoint.txtµÄID
+x600050_g_GuildPoint_LingShi = 1						--??????,?GuildWarPoint.txt?ID
 
 
 --MisDescEnd

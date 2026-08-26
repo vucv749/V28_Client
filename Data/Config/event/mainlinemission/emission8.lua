@@ -1,36 +1,36 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x890161_g_ScriptId = 890161
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x890161_g_MissionId = 2168
 
---Ç°ÖÃÈÎÎñ
+--Ti«n Trí nhi®m vø
 x890161_g_PreMissionId = 2167
 x890161_g_PreMissionName = "#{ZXJQ_221225_154}"
 
---Ä¿±êNPC
-x890161_g_AcceptNpcInfo	= {name="ËÕĞÇºÓ", sceneId=14, posx=123, posz=146}
+--møc tiêu NPC
+x890161_g_AcceptNpcInfo	= {name="Tô Tinh Hà", sceneId=14, posx=123, posz=146}
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x890161_g_MissionKind = 9
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x890161_g_MissionLevel = 85
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x890161_g_IfMissionElite = 0
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x890161_g_MissionName="#{ZXJQ_221225_168}"
 x890161_g_MissionTarget="#{ZXJQ_221225_173}"
 x890161_g_IsMissionOkFail=0
-x890161_g_Custom = {{ id = "ÁË½âÈıÈË¾³¿ö£¬ÔñÒ»ÈËÏàÖú", num = 1}}
+x890161_g_Custom = {{ id = "Hi¬u biªt ba ngß¶i tình trÕng, TrÕch mµt ngß¶i tß½ng trş", num = 1}}
 x890161_g_ContinueInfo = ""
 x890161_g_MissionComplete = ""
 
 x890161_g_ExpBonus = 280000
---½±ÀøµÀ¾ß
+--thß·ng cho ğÕo cø
 x890161_g_ItemBonus={{id=20600000,num=1}}
 
 --MisDescEnd

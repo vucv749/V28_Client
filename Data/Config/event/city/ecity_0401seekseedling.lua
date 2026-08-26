@@ -1,49 +1,49 @@
 --MisDescBegin
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x600018_g_ScriptId = 600018
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x600018_g_MissionId = 1108
 
---ÈÎÎñÄ¿±ênpc
-x600018_g_Name = "ÄÂÒ×"
+--nhi®m vø møc tiêu Npc
+x600018_g_Name = "Mµc D¸ch"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x600018_g_MissionKind = 50
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x600018_g_MissionLevel = 10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x600018_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
-x600018_g_IsMissionOkFail = 0							-- ÈÎÎñÍê³É±ê¼Ç
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+x600018_g_IsMissionOkFail = 0							-- ??????
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñ±äÁ¿µÚÒ»Î»ÓÃÀ´´æ´¢Ëæ»úµÃµ½µÄ½Å±¾ºÅ
+--nhi®m vø lßşng biªn ğ±i ğ® nh¤t v¸ dùng ğ¬ t°n træ TuÏ C½ nh§n ğßşc Ğích k¸ch bän g¯c Hào
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x600018_g_MissionName = "ÊĞ¼¯ÈÎÎñ"
-x600018_g_MissionInfo = ""			--ÈÎÎñÃèÊö
-x600018_g_MissionTarget = "    Ñ°ÕÒ%i£¬½»¸ø°ï»á³ÇÊĞµÄÄÂÒ× ( 46, 91 )¡£#r#{BHRW_091224_1}"	--ÈÎÎñÄ¿±ê
-x600018_g_ContinueInfo = "    ÄãµÄÈÎÎñ»¹Ã»ÓĞÍê³ÉÃ´£¿"					--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x600018_g_SubmitInfo = "    ÊÂÇé½øÕ¹µÃÈçºÎ£¿"							--Íê³ÉÎ´Ìá½»Ê±µÄnpc¶Ô»°
-x600018_g_MissionComplete = "    ¸ÉµÃ²»´í£¬ÉõºÃÉõºÃ¡£"					--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø vån bän miêu tä
+x600018_g_MissionName = "Nhi®m vø thß½ng nghi®p"
+x600018_g_MissionInfo = ""			--????
+x600018_g_MissionTarget = "Tìm kiªm%i, giao cho bang hµi thành th¸ Ğích Møc D¸ch (46, 91). #r#{BHRW_091224_1}"	--????
+x600018_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"					--??????npc??
+x600018_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"							--???????npc??
+x600018_g_MissionComplete = "Làm ğßşc không t°i, r¤t t¯t r¤t t¯t."					--????npc????
 
 x600018_g_Parameter_Item_IDRandom = { { id = 5, num = 1 } }
 
 x600018_g_StrForePart = 5
-x600018_g_Offset = 14													-- Suppose to 14, ±íÀïµÚ¼¸¸öÎïÆ·ÁĞµÄÆ«ÒÆÁ¿
+x600018_g_Offset = 14													-- Suppose to 14, ????????????
 
 x600018_g_MissionRound = 44
 
--- Í¨ÓÃ³ÇÊĞÈÎÎñ½Å±¾
+-- thông døng thành th¸ nhi®m vø k¸ch bän g¯c
 x600018_g_CityMissionScript = 600001
 x600018_g_MarketScript = 600017
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 
 
 --MisDescEnd

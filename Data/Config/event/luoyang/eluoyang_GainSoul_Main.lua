@@ -1,37 +1,37 @@
 --MisDescBegin
 
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x505100_g_ScriptId = 505100
 
---Íê³ÉÈÎÎñNPCĞÅÏ¢(Ğ¡µØÍ¼ºÍµØÍ¼ÏÔÊ¾ÓÃ)
+--hoàn thành nhi®m vø NPCtin tÑc(Ti¬u bän ğ° Hoà bän ğ° bi¬u hi®n Døng)
 x505100_g_Position_X = 144
 x505100_g_Position_Z = 99
 x505100_g_SceneID = 0
-x505100_g_AccomplishNPC_Name= "ÔÆ±ù±ù"
+x505100_g_AccomplishNPC_Name= "Vân Bång Bång"
 
---ÈÎÎñÄ¿±ênpc
-x505100_g_Name = "ÔÆ±ù±ù"
---ÈÎÎñºÅ(ÕÒ²ß»®Òª)
+--nhi®m vø møc tiêu Npc
+x505100_g_Name = "Vân Bång Bång"
+--nhi®m vø Hào(Träo bày ra Yêu)
 x505100_g_MissionId = 1195
---ÈÎÎñÃû
-x505100_g_MissionName = "Ô¸Ñ°²ĞÆÇ¸§Çå»Ô"
---ÈÎÎñÃèÊö
+--nhi®m vø Danh
+x505100_g_MissionName = "Nguy®n T¥m Tàn Phách Phü Thanh Huy"
+--nhi®m vø miêu tä
 x505100_g_MissionInfo = "#{BBWH_211230_28}"
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x505100_g_MissionTarget = "#{BBWH_211230_38}"
 
---ÈÎÎñÀàĞÍ ¶ÔÓ¦Client/Config/MissionKind.txt
+--nhi®m vø loÕi hình ğ¯i Ñng Client/Config/MissionKind. Txt
 x505100_g_MissionKind = 11
 
 x505100_g_IfMissionElite = 0
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x505100_g_MissionLevel = 10000
 
---ÈÎÎñÍê³É±êÖ¾Î»
+--nhi®m vø hoàn thành d¤u hi®u V¸
 x505100_g_IsMissionOkFail = 0
 
-x505100_g_Custom = { {id = "ÒÑ¾»»¯ÊŞ»ê²ĞÆÇ", num = 6} }
+x505100_g_Custom = { {id = "Dî T¸nh Hoá Thú H°n Tàn Phách", num = 6} }
 
 
 --MisDescEnd

@@ -1,37 +1,37 @@
 --MisDescBegin
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x600044_g_ScriptId = 600044
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x600044_g_MissionId = 1109
 
---ÈÎÎñÄ¿±ênpc
-x600044_g_Name = "Îä´óÍş"
+--nhi®m vø møc tiêu Npc
+x600044_g_Name = "Võ ĞÕi Uy"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x600044_g_MissionKind = 50
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x600044_g_MissionLevel = 10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x600044_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
-x600044_g_IsMissionOkFail			= 0									--0 ÈÎÎñÍê³É±ê¼Ç[Öµ²»ÄÜ±ä]
-x600044_g_MissionParam_SubId		= 1									--1 ×ÓÈÎÎñ½Å±¾ºÅ´æ·ÅÎ»ÖÃ[Öµ²»ÄÜ±ä]
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+x600044_g_IsMissionOkFail			= 0									--0 ??????[????]
+x600044_g_MissionParam_SubId		= 1									--1 ??????????[????]
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñ±äÁ¿µÚÒ»Î»ÓÃÀ´´æ´¢Ëæ»úµÃµ½µÄ½Å±¾ºÅ
+--nhi®m vø lßşng biªn ğ±i ğ® nh¤t v¸ dùng ğ¬ t°n træ TuÏ C½ nh§n ğßşc Ğích k¸ch bän g¯c Hào
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x600044_g_MissionName = "¹ú·ÀÈÎÎñ"
-x600044_g_MissionInfo = "    ¹ú·ÀÈÎÎñ"									--ÈÎÎñÃèÊö
-x600044_g_MissionTarget = "    ÄãµÄÈÎÎñÊÇÉ±ËÀ%n¡£#r#{BHRW_091224_1}"	--ÈÎÎñÄ¿±ê
-x600044_g_ContinueInfo = "    ÄãµÄÈÎÎñ»¹Ã»ÓĞÍê³ÉÃ´£¿"					--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x600044_g_SubmitInfo = "    ÊÂÇé½øÕ¹µÃÈçºÎ£¿"							--Íê³ÉÎ´Ìá½»Ê±µÄnpc¶Ô»°
-x600044_g_MissionComplete = "    ¸ÉµÃ²»´í£¬ÉõºÃÉõºÃ¡£"					--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø vån bän miêu tä
+x600044_g_MissionName = "Nhi®m vø qu¯c phòng"
+x600044_g_MissionInfo = "    Nhi®m vø qu¯c phòng"									--????
+x600044_g_MissionTarget = "Nhi®m vø cüa ngß½i Th¸ giªt chªt%n. #r#{BHRW_091224_1}"	--????
+x600044_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"					--??????npc??
+x600044_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"							--???????npc??
+x600044_g_MissionComplete = "Làm ğßşc không t°i, r¤t t¯t r¤t t¯t."					--????npc????
 
 x600044_g_StrForePart = 4
 
@@ -39,11 +39,11 @@ x600044_g_MissionRound = 79
 
 x600044_g_Parameter_Kill_AllRandom = { { id = 4, numNeeded = 5, numKilled = 6 } }
 
--- Í¨ÓÃ³ÇÊĞÈÎÎñ½Å±¾
+-- thông døng thành th¸ nhi®m vø k¸ch bän g¯c
 x600044_g_CityMissionScript = 600001
 x600044_g_MilitaryScript = 600030
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 
 
 --MisDescEnd

@@ -1,30 +1,30 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x890080_g_ScriptId = 890080
 
---Íê³ÉÈÎÎñNPCÊôĞÔ
-x890080_g_Position_X=75	--Ìæ´ú
-x890080_g_Position_Z=60	--Ìæ´ú
-x890080_g_SceneID=1294	--Ìæ´ú
-x890080_g_AccomplishNPC_Name="Ä«»Ø"	--Ìæ´ú
+--hoàn thành nhi®m vø NPCthuµc tính
+x890080_g_Position_X=75	--??
+x890080_g_Position_Z=60	--??
+x890080_g_SceneID=1294	--??
+x890080_g_AccomplishNPC_Name="M£c H°i"	--??
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x890080_g_MissionId = 2145
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x890080_g_MissionKind = 64
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x890080_g_MissionLevel = 85 --10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x890080_g_IfMissionElite = 0
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x890080_g_MissionName="#{BLCC_20221214_277}"
 x890080_g_MissionTarget="#{BLCC_20221214_165}"
 x890080_g_IsMissionOkFail=0
-x890080_g_Custom = {{id = "Çı¸Ï¿ñÈÈµÄ×åÈË", num = 10}} --Ìæ´ú
+x890080_g_Custom = {{id = "Khu Cän cu°ng nhi®t Ğích tµc nhân", num = 10}} --??
 x890080_g_ContinueInfo = ""
 x890080_g_MissionComplete = "#{BLCC_20221214_164}"
 

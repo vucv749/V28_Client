@@ -1,38 +1,38 @@
 --MisDescBegin
 
--- ½Å±¾ºÅ Í¬Ê±¹ÒÔÚ½ÓÊÜÈÎÎñNPCºÍÌá½»ÈÎÎñNPCÉíÉÏ
+-- k¸ch bän g¯c Hào ğ°ng th¶i b¡t tÕi nh§n nhi®m vø NPCHoà ğ® trình nhi®m vø NPCtrên ngß¶i
 x791098_g_ScriptId 				= 791098
--- Ö÷¿Ø½Å±¾
+-- Chü Kh±ng k¸ch bän g¯c
 x791098_g_MainScriptId 			= 791095
 
---Íê³ÉÈÎÎñNPCÊôĞÔ
+--hoàn thành nhi®m vø NPCthuµc tính
 -- x791098_g_Position_X			= 194
 -- x791098_g_Position_Z			= 132
 -- x791098_g_SceneID				= 1
--- x791098_g_AccomplishNPC_Name	= "ÍõºÍÁå"
+-- x791098_g_AccomplishNPC_Name	= "Vß½ng Hoà Linh"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x791098_g_MissionId 			= 2196
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x791098_g_MissionKind 			= 3
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x791098_g_MissionLevel 			= 30
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x791098_g_IfMissionElite 		= 0
 
--- ÈÎÎñÃû
--- QMXY_20230331_34	Í¬ÓÎÈË¼äÁ¼³½¾°
+-- nhi®m vø Danh
+-- QMXY_20230331_34	ğ°ng du nhân gian ngày t¯t Cänh
 x791098_g_MissionName			= "#{QMXY_20230331_34}"
--- ÈÎÎñÄ¿±ê
+-- nhi®m vø møc tiêu
 x791098_g_MissionTarget			= "#{QMXY_20230331_35}"	
--- ÈÎÎñ²ÎÊı 0ºÅÇ±¹æÔòÖ»ÄÜÓÃ×÷±ê¼ÇÈÎÎñÊÇ·ñÍê³É£¬»á×Ô¶¯Ó°Ïì¿Í»§¶ËÈÎÎñÁĞ±íÊÇ·ñÏÔÊ¾ÒÑÍê³É
+-- nhi®m vø tham s¯ 0Hào Ti«m quy t¡c chï có th¬ dùng làm d¤u hi®u nhi®m vø hay không hoàn thành, Hµi tñ ğµng änh hß·ng hµ khách Ğoan nhi®m vø Li®t Bi¬u hay không bi¬u hi®n Dî hoàn thành
 x791098_g_IsMissionOkFail		= 0
-x791098_g_Custom 				= {{ id = "Íê³ÉÓÎÀú", num = 1}} 
+x791098_g_Custom 				= {{ id = "Hoàn thành du l¸ch", num = 1}} 
 x791098_g_ContinueInfo 			= ""
--- Íê³ÉÈÎÎñµÄNPC¶Ô»°
+-- hoàn thành nhi®m vø Ğích NPCğ¯i thoÕi
 x791098_g_MissionComplete 		= "#{}"
 
 x791098_g_MoneyJZBonus 			= 0

@@ -1,40 +1,40 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x212132_g_ScriptId = 212132
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x212132_g_Position_X=207
 x212132_g_Position_Z=212
 x212132_g_SceneID=0
-x212132_g_AccomplishNPC_Name="Ë¾Âí¹â"
+x212132_g_AccomplishNPC_Name="Tß Mã Quang"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x212132_g_MissionId = 254
---Ç°ĞøÈÎÎñºÅ
+--Ti«n Tøc nhi®m vø Hào
 x212132_g_PreMissionId = 349
 
---Ä¿±êNPC
-x212132_g_Name	="Ë¾Âí¹â"
+--møc tiêu NPC
+x212132_g_Name	="Tß Mã Quang"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x212132_g_MissionKind = 55
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x212132_g_MissionLevel = 75
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x212132_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x212132_g_MissionName="¼ÅÄ¯¸ßÊÖ"
+--nhi®m vø Danh
+x212132_g_MissionName="T¸ch m¸ch cao thü"
 x212132_g_MissionInfo="#{Mis_Hero_songxin_02}"
-x212132_g_MissionTarget="    ÔÚÂåÑô³ÇÕÒµ½Ë¾Âí¹â#{_INFOAIM207,212,0,Ë¾Âí¹â}¡£"
-x212132_g_MissionComplete="  ÄãµÄ½»¼ÊºÍÃûÎ»¶¼ÒÑ¾­¶À²½½­ºş£¬¾àÀëÓ¢ĞÛµÄ³ÆºÅÒ²Ô½À´Ô½½üÁË¡£"
+x212132_g_MissionTarget="TÕi Thành LÕc Dß½ng tìm ğßşc Tß Mã Quang#{_INFOAIM207, 212, 0, Tß Mã Quang}."
+x212132_g_MissionComplete="  Ğ¸a v¸ và quan h® cüa các hÕ ğ«u ğã ğµc bá giang h°, cách danh hi®u anh hùng không còn bao xa."
 
 x212132_g_MoneyBonus=50000
 x212132_g_exp=700000
 
-x212132_g_Custom	= { {id="ÒÑÕÒµ½Ë¾Âí¹â",num=1} }
+x212132_g_Custom	= { {id="Ğã tìm th¤y Tß Mã Quang",num=1} }
 x212132_g_IsMissionOkFail = 0
 
 x212132_g_RadioItemBonus={{id=10510047 ,num=1},{id=10515027,num=1}}

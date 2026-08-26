@@ -1,46 +1,46 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x500625_g_ScriptId = 500625
 
 x500625_g_Position_X=182.4375
 x500625_g_Position_Z=157.3685
 x500625_g_SceneID=0
-x500625_g_AccomplishNPC_Name="ÔÆÃìÃì"
+x500625_g_AccomplishNPC_Name="Vân Diêu Diêu"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x500625_g_MissionId = 1191
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x500625_g_MissionIdPre = 1190
 
---Ä¿±êNPC
-x500625_g_Name	="ÔÆÃìÃì"
+--møc tiêu NPC
+x500625_g_Name	="Vân Diêu Diêu"
 
 
---ÈÎÎñµÀ¾ßĞèÇóÊıÁ¿
+--nhi®m vø ğÕo cø nhu c¥u s¯ lßşng
 x500625_g_ItemNeedNum = 1
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x500625_g_MissionKind = 11
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x500625_g_MissionLevel = 45
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x500625_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñĞèÒªµÃµ½µÄÎïÆ·
-x500625_g_Custom	= { {id="ÒÑ¸øÕäÊŞÑ§Ï°¼¼ÄÜ",num=2} }
-x500625_g_IsMissionOkFail = 1		--±äÁ¿µÄµÚ0Î»
+--nhi®m vø c¥n nh§n ğßşc Ğích v§t ph¦m
+x500625_g_Custom	= { {id="Ğã ğ¬ Trân Thú h÷c kÛ nång",num=2} }
+x500625_g_IsMissionOkFail = 1		--????0?
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x500625_g_MissionName="#{YDXF_XML_5}"
 x500625_g_MissionTarget="#{YDXF_091229_28}"
-x500625_g_SignPost = {x = 177, z = 184, tip = "Åí»³Óñ"}
+x500625_g_SignPost = {x = 177, z = 184, tip = "Bành Hoài Ng÷c"}
 x500625_g_ItemBonus={{id=30402071 ,num=1},{id=30008003,num=1}}
 
 --MisDescEnd

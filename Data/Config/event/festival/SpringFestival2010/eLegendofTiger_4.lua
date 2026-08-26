@@ -1,21 +1,21 @@
 --MisDescBegin
 x050075_g_ScriptId = 050075
 x050075_g_KDZZID = 1006000004
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x050075_g_MissionId = 1182
 
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x050075_g_MissionKind = 12
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x050075_g_MissionLevel = 10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x050075_g_IfMissionElite = 0
 
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x050075_g_MissionName="#{SXGS_091105_22}"
 
 x050075_g_MissionTarget="%f"
@@ -27,57 +27,57 @@ x050075_g_FormatList = {"%s%s%s",}
 
 x050075_g_StrList = {
 	  "#{SXGS_091105_24}",
-    "³ÉÄêºï×Ó#{_INFOAIM203,69,112,}",	--3050
-		"³ÉÄê¹·#{_INFOAIM234,57,112,}",	--3030
-		"³ÉÄê´Ìâ¬#{_INFOAIM139,111,112,}",	--3040
-    "³ÉÄêä½ÐÜ#{_INFOAIM115,122,112,}",--3070
-		"³ÉÄêËÉÊó#{_INFOAIM175,128,112,}",	--3060
-		"³ÉÄêðÐðÄ#{_INFOAIM153,157,112,}",	--3080
-		"³ÉÄêòùòð#{_INFOAIM228,166,112,}",	--3100
-		"³ÉÄê´óó«òë#{_INFOAIM59,151,112,}",	--3110
-		"³ÉÄêòáòæ#{_INFOAIM101,155,112,}",	--3090
-		"³ÉÄêâµ#{_INFOAIM62,256,112,}",--3140
-		"³ÉÄêÀÏ»¢#{_INFOAIM96,254,112,}",	--3150
-		"³ÉÄêÃ¨Í·Ó¥#{_INFOAIM61,218,112,}",	--3130
-		"³ÉÄêÒ°Öí#{_INFOAIM127,254,112,}",	--3160
-    "³ÉÄê±ª×Ó#{_INFOAIM250,236,112,}",	--3200
-		"³ÉÄê±ù²Ï#{_INFOAIM192,232,112,}",	--3170
-		"³ÉÄêÍÒÄñ#{_INFOAIM181,268,112,}",	--3190
-		"³ÉÄêÓ¥#{_INFOAIM216,270,112,}",	--3180
-    "³ÉÄê±±¼«ÐÜ#{_INFOAIM216,223,112,}",	--3210
-		"³ÉÄê´óÐÉÐÉ#{_INFOAIM276,121,112,}",	--3240
-		"³ÉÄê½£³Ý»¢#{_INFOAIM285,149,112,}",	--3230
-		"³ÉÄê¿×È¸#{_INFOAIM263,166,112,}",	--3220
-    "³ÉÄêñ•Âí#{_INFOAIM247,98,112,}",	--3280
-		"³ÉÄê½£Áú#{_INFOAIM275,85,112,}",	--3270
-		"³ÉÄêÏ¬Å£#{_INFOAIM227,92,112,}",	--3250
-		"³ÉÄê±ª×Ó#{_INFOAIM250,236,112,}",	--3200
-		"³ÉÄê±ù²Ï#{_INFOAIM192,232,112,}",	--3170
-		"³ÉÄêÍÒÄñ#{_INFOAIM181,268,112,}",	--3190
-		"³ÉÄêÓ¥#{_INFOAIM216,270,112,}",	--3180
-		"³ÉÄê±±¼«ÐÜ#{_INFOAIM216,223,112,}",	--3210
-		"³ÉÄê´óÐÉÐÉ#{_INFOAIM276,121,112,}",	--3240
-		"³ÉÄê½£³Ý»¢#{_INFOAIM285,149,112,}",	--3230
-		"³ÉÄê¿×È¸#{_INFOAIM263,166,112,}",	--3220
-		"³ÉÄêâµ#{_INFOAIM62,256,112,}",	--3140
-		"³ÉÄêÀÏ»¢#{_INFOAIM96,254,112,}",	--3150
-		"³ÉÄêÃ¨Í·Ó¥#{_INFOAIM61,218,112,}",	--3130
-		"³ÉÄêÒ°Öí#{_INFOAIM127,254,112,}",	--3160
-		"³ÉÄêòáòæ#{_INFOAIM101,155,112,}",	--3090
-		"³ÉÄêòùòð#{_INFOAIM228,166,112,}",	--3100
-		"³ÉÄê´óó«òë#{_INFOAIM59,151,112,}",	--3110
-		"³ÉÄêöùÓã#{_INFOAIM68,121,112,}",	--3120
+    "H¥u TØ Trß·ng Thành #{_INFOAIM203,69,112,}",	--3050
+		"C¦u TØ Trß·ng Thành #{_INFOAIM234,57,112,}",	--3030
+		"Nhím Trß·ng Thành #{_INFOAIM139,111,112,}",	--3040
+    "Hoán Hùng Trß·ng Thành #{_INFOAIM115,122,112,}",--3070
+		"Tùng ThØ Trß·ng Thành #{_INFOAIM175,128,112,}",	--3060
+		"Anh Vû Trß·ng Thành #{_INFOAIM153,157,112,}",	--3080
+		"D½i Trß·ng Thành #{_INFOAIM228,166,112,}",	--3100
+		"Ðß¶ng Lang Trß·ng Thành #{_INFOAIM59,151,112,}",	--3110
+		"Tích D¸ch Trß·ng Thành #{_INFOAIM101,155,112,}",	--3090
+		"Ch°n Trß·ng Thành #{_INFOAIM62,256,112,}",--3140
+		"H± Trß·ng Thành #{_INFOAIM96,254,112,}",	--3150
+		"Miêu Ð¥u ¿ng Trß·ng Thành #{_INFOAIM61,218,112,}",	--3130
+		"Dã Trß Trß·ng Thành #{_INFOAIM127,254,112,}",	--3160
+    "Báo Trß·ng Thành #{_INFOAIM250,236,112,}",	--3200
+		"Bång T¢m Trß·ng Thành #{_INFOAIM192,232,112,}",	--3170
+		"Ðà Ði¬u Trß·ng Thành #{_INFOAIM181,268,112,}",	--3190
+		"¿ng Trß·ng Thành #{_INFOAIM216,270,112,}",	--3180
+    "B¡c Cñc Hùng Trß·ng Thành #{_INFOAIM216,223,112,}",	--3210
+		"ÐÕi Tinh Tinh Trß·ng Thành #{_INFOAIM276,121,112,}",	--3240
+		"Kiªm Xï H± Trß·ng Thành #{_INFOAIM285,149,112,}",	--3230
+		"Kh±ng Tß¾c Trß·ng Thành #{_INFOAIM263,166,112,}",	--3220
+    "Bác Mã Trß·ng Thành #{_INFOAIM247,98,112,}",	--3280
+		"Kiªm Long Trß·ng Thành #{_INFOAIM275,85,112,}",	--3270
+		"Tê Ngßu Trß·ng Thành #{_INFOAIM227,92,112,}",	--3250
+		"Báo Trß·ng Thành #{_INFOAIM250,236,112,}",	--3200
+		"Bång T¢m Trß·ng Thành #{_INFOAIM192,232,112,}",	--3170
+		"Ðà Ði¬u Trß·ng Thành #{_INFOAIM181,268,112,}",	--3190
+		"¿ng Trß·ng Thành #{_INFOAIM216,270,112,}",	--3180
+		"B¡c Cñc Hùng Trß·ng Thành #{_INFOAIM216,223,112,}",	--3210
+		"ÐÕi Tinh Tinh Trß·ng Thành #{_INFOAIM276,121,112,}",	--3240
+		"Kiªm Xï H± Trß·ng Thành #{_INFOAIM285,149,112,}",	--3230
+		"Kh±ng Tß¾c Trß·ng Thành #{_INFOAIM263,166,112,}",	--3220
+		"Ch°n Trß·ng Thành #{_INFOAIM62,256,112,}",	--3140
+		"H± Trß·ng Thành #{_INFOAIM96,254,112,}",	--3150
+		"Miêu Ð¥u ¿ng Trß·ng Thành #{_INFOAIM61,218,112,}",	--3130
+		"Dã Trß Trß·ng Thành #{_INFOAIM127,254,112,}",	--3160
+		"Tích D¸ch Trß·ng Thành #{_INFOAIM101,155,112,}",	--3090
+		"D½i Trß·ng Thành #{_INFOAIM228,166,112,}",	--3100
+		"Ðß¶ng Lang Trß·ng Thành #{_INFOAIM59,151,112,}",	--3110
+		"NgÕc Ngß Trß·ng Thành #{_INFOAIM68,121,112,}",	--3120
 		"#{SXGS_091105_25}",   
 	}
 
 x050075_g_IsMissionOkFail = 0
-x050075_g_Custom = {{id = "×¼±¸ÐÂÄêÀñÎï",num = 1}}
+x050075_g_Custom = {{id = "Chu¦n b¸ L­ V§t Nåm M¾i",num = 1}}
 
---Íê³ÉÈÎÎñNPCÊôÐÔ
+--hoàn thành nhi®m vø NPCthuµc tính
 x050075_g_Position_X=87
 x050075_g_Position_Z=140
 x050075_g_SceneID=1
-x050075_g_AccomplishNPC_Name="°¬»¢"
+x050075_g_AccomplishNPC_Name="Ngäi H±"
 
 
 --MisDescEnd

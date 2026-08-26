@@ -1,39 +1,39 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x212122_g_ScriptId = 212122
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x212122_g_Position_X=234
 x212122_g_Position_Z=192
 x212122_g_SceneID=19
-x212122_g_AccomplishNPC_Name="Çú¶Ë"
+x212122_g_AccomplishNPC_Name="Khúc Ğoan"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x212122_g_MissionId = 935
 
---Ä¿±êNPC
-x212122_g_Name	="Çú¶Ë"
+--møc tiêu NPC
+x212122_g_Name	="Khúc Ğoan"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x212122_g_MissionKind = 30
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x212122_g_MissionLevel = 46
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x212122_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x212122_g_MissionName="Çå³ıĞÜ»¼"
+--nhi®m vø Danh
+x212122_g_MissionName="D©p yên loÕn G¤u"
 x212122_g_MissionInfo="#{Mis_30_60_desc_010}"
-x212122_g_MissionTarget="    Ñã±±µÄÇú¶Ë#{_INFOAIM233,192,19,Çú¶Ë}ÒªÄãÈ¥É±ËÀ20Ö»ºì·ãĞÜ#{_INFOAIM233,93,19,-1}¡£"
-x212122_g_MissionContinue="  ÄãÒÑ¾­É±ËÀ20Ö»ºì·ãĞÜÁËÃ´£¿"
-x212122_g_MissionComplete="  ÕæÊÇÌ«ºÃÁË£¬ÕâÑùÒ»À´£¬¾ÍÃ»ÓĞºì·ãĞÜÔÙ¸ÒÀ´Íµ³Ô¾üÁ¸ÁË¡£"
+x212122_g_MissionTarget="    Khúc Ğoan · NhÕn B¡c #{_INFOAIM233,192,19,Khúc Ğoan} yêu c¥u các hÕ ği di®t 20 con H°ng Phong Hùng #{_INFOAIM233,93,19,-1}."
+x212122_g_MissionContinue="  Các hÕ ğã ğánh bÕi 20 con H°ng Phong Hùng chßa?"
+x212122_g_MissionComplete="  Th§t là quá t¯t r°i, cÑ nhß thª, H°ng Phong Hùng s¨ không dám ğªn ån trµm quân lß½ng næa r°i."
 
 x212122_g_MoneyJZBonus=10000
 x212122_g_exp=12000
 
-x212122_g_Custom	= { {id="ÒÑÉ±ËÀºì·ãĞÜ",num=20} }
+x212122_g_Custom	= { {id="Ğã ğánh bÕi H°ng Phong Hùng",num=20} }
 x212122_g_IsMissionOkFail = 0
 
 

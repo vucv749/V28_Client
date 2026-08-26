@@ -1,46 +1,46 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200004_g_ScriptId = 200004
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200004_g_MissionId = 4
 
---Ç°ĞøÈÎÎñ
+--Ti«n Tøc nhi®m vø
 x200004_g_PreMissionId = 3
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 --g_MissionIdPre = 
 
---Ä¿±êNPC
-x200004_g_Name	="¶ÎÕı´¾"
+--møc tiêu NPC
+x200004_g_Name	="Ğoàn Chính Thu¥n"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200004_g_MissionKind = 51
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200004_g_MissionLevel = 20
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200004_g_IfMissionElite = 0
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x200004_g_Position_X=62.9422
 x200004_g_Position_Z=35.9417
 x200004_g_SceneID=2
-x200004_g_AccomplishNPC_Name="¶ÎÕı´¾"
+x200004_g_AccomplishNPC_Name="Ğoàn Chính Thu¥n"
 
---ÈÎÎñÃû
-x200004_g_MissionName="¶ñ¹áÂúÓ¯"
+--nhi®m vø Danh
+x200004_g_MissionName="Ác Quán Mãn Doanh"
 x200004_g_MissionInfo="#{Mis_juqing_0004}"
 x200004_g_MissionTarget="#{Mis_juqing_Tar_0004}"
-x200004_g_MissionComplete="  Õâ£¬Õâ£¬ÎÒÂíÉÏ°ÑÕâ¼şÊÂÇéÍ¨Öª»ÊĞÖ¡£"
+x200004_g_MissionComplete="  Này, này, ta l§p tÑc thông báo vi®c này cho hoàng huynh"
 
 x200004_g_MoneyJZBonus=11
 x200004_g_exp=6900
 
 x200004_g_RadioItemBonus={{id=10414001 ,num=1},{id=10414002,num=1},{id=10414003,num=1},{id=10414004,num=1}}
 
-x200004_g_Custom	= { {id="ÒÑÕÒµ½¶ÎÕı´¾",num=1} }
+x200004_g_Custom	= { {id="Ğã tìm ğßşc Ğoàn Chính Thu¥n",num=1} }
 
 
 --MisDescEnd

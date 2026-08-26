@@ -1,51 +1,51 @@
 --MisDescBegin
 x893187_g_ScriptId = 893187
 x893187_g_MissionId = 2082
-x893187_g_MainScriptId = 893185--Ö÷½Å±¾ºÅ
+x893187_g_MainScriptId = 893185--????
 
 --kdzz
 x893187_g_KDZZID = 1006000552
 x893187_g_KDZZSubID = 2
 
---·ÅÆúÈÎÎñÖØÖÃ±ê¼Ç
+--vÑt bö nhi®m vø Trùng Trí d¤u hi®u
 x893187_g_LastMissionId = 2092
 
---Ç°ÖÃÈÎÎñ
-x893187_g_PreScirptId = 893186--ÉÏÒ»½Å±¾ºÅ
-x893187_g_PreMissionId = 2081--ÉÏÒ»ÈÎÎñºÅ
+--Ti«n Trí nhi®m vø
+x893187_g_PreScirptId = 893186--?????
+x893187_g_PreMissionId = 2081--?????
 
---ºóĞøÈÎÎñ
-x893187_g_NextScirptId = 893188--ÏÂÒ»½Å±¾ºÅ
-x893187_g_NextMissionId = 2083--ÏÂÒ»ÈÎÎñºÅ
+--ğªn tiªp sau nhi®m vø
+x893187_g_NextScirptId = 893188--?????
+x893187_g_NextMissionId = 2083--?????
 
---½ÓÈÎÎñnpc
-x893187_g_AcceptNPC_Name="°ÙÏşÉú"--½ÓÈÎÎñµÄnpc»òÕßnpcÁĞ±í
+--tiªp nh§n chÑc vø Vø Npc
+x893187_g_AcceptNPC_Name="Bách Hi¬u Sanh"--????npc??npc??
 
---½»ÈÎÎñnpc
-x893187_g_Position_X=150--Íê³ÉÈÎÎñNPCÊôĞÔ
+--Giao nhi®m vø Npc
+x893187_g_Position_X=150--????NPC??
 x893187_g_Position_Z=208
 x893187_g_SceneID=1
-x893187_g_AccomplishNPC_Name="°ÙÏşÉú"
+x893187_g_AccomplishNPC_Name="Bách Hi¬u Sanh"
 
---ÈÎÎñÊı¾İ
+--nhi®m vø s¯ li®u
 x893187_g_MissionKind = 7
 x893187_g_MissionLevel = 65
 x893187_g_IfMissionElite = 0
-x893187_g_IsMissionOkFail = 0--ÈÎÎñÍê³É±êÖ¾Î»(Ò»¶¨ÒªÎª0)
+x893187_g_IsMissionOkFail = 0--???????(????0)
 
-x893187_g_MissionName="#{ZQSS_220429_54}"--ÈÎÎñÃû
-x893187_g_MissionInfo="#{ZQSS_220429_55}"--ÈÎÎñÎÄ±¾ÃèÊö£¨ÈÎÎñÁìÈ¡¶Ô°×£©
-x893187_g_MissionComplete="#{ZQSS_220429_56}"--ÈÎÎñÍê³É¶Ô°×
-x893187_g_MissionTarget=""--ÈÎÎñÄ¿±ê(ÈÎÎñÃæ°åÖĞÈÎÎñĞÅÏ¢ÏÔÊ¾ÄÚÈİ)
+x893187_g_MissionName="#{ZQSS_220429_54}"--???
+x893187_g_MissionInfo="#{ZQSS_220429_55}"--??????(??????)
+x893187_g_MissionComplete="#{ZQSS_220429_56}"--??????
+x893187_g_MissionTarget=""--????(?????????????)
 
---×Ô¶¨ÒåÍê³ÉÇé¿ö£¬ÄÚÈİ²»ÄÜÊ¹ÓÃ×Öµä£¬·Ö±ğ¶ÔÓ¦missionparamµÄµÚ1Î»ºóÑÓ
+--Tñ ğ¸nh nghîa hoàn thành tình hu¯ng, nµi dung không th¬ sØ døng tñ ği¬n, phân bi®t ğ¯i Ñng missionparamĞích Ğ® 1V¸ H§u Diên
 x893187_g_Custom = {}
-x893187_g_ParamIndex = 2--ÈÎÎñ²ÎÊı0-Íê³É±ê¼Ç1-Íê³ÉÇé¿ö2-Ëæ»úË÷Òı
+x893187_g_ParamIndex = 2--????0-????1-????2-????
 
---npc¾àÀë
+--Npc khoäng cách
 x893187_g_NpcDist = 5
 
---½±Àø
+--thß·ng cho
 --x893187_g_MoneyJZBonus					=	30000
 --x893187_g_ExpBonus						= 250000
 

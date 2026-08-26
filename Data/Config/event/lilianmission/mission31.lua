@@ -1,48 +1,48 @@
 --MisDescBegin
 x893206_g_ScriptId = 893206
 x893206_g_MissionId = 2089
-x893206_g_MainScriptId = 893185--Ö÷½Å±¾ºÅ
+x893206_g_MainScriptId = 893185--????
 
 --kdzz
 x893206_g_KDZZID = 1006000554
 x893206_g_KDZZSubID = 1
 
---·ÅÆúÈÎÎñÖØÖÃ±ê¼Ç
+--vÑt bö nhi®m vø Trùng Trí d¤u hi®u
 x893206_g_LastMissionId = 2088
 
---Ç°ÖÃÈÎÎñ
-x893206_g_PreScirptId = 893206--ÉÏÒ»½Å±¾ºÅ
-x893206_g_PreMissionId = 2080--ÉÏÒ»ÈÎÎñºÅ
+--Ti«n Trí nhi®m vø
+x893206_g_PreScirptId = 893206--?????
+x893206_g_PreMissionId = 2080--?????
 
---ºóĞøÈÎÎñ
-x893206_g_NextScirptId = 893207--ÏÂÒ»½Å±¾ºÅ
-x893206_g_NextMissionId = 2090--ÏÂÒ»ÈÎÎñºÅ
+--ğªn tiªp sau nhi®m vø
+x893206_g_NextScirptId = 893207--?????
+x893206_g_NextMissionId = 2090--?????
 
---½ÓÈÎÎñnpc
-x893206_g_AcceptNPC_Name="ÆîÆÅÆÅ"--½ÓÈÎÎñµÄnpc»òÕßnpcÁĞ±í
+--tiªp nh§n chÑc vø Vø Npc
+x893206_g_AcceptNPC_Name="KÏ bà bà"--????npc??npc??
 
---½»ÈÎÎñnpc
-x893206_g_Position_X=267--Íê³ÉÈÎÎñNPCÊôĞÔ
+--Giao nhi®m vø Npc
+x893206_g_Position_X=267--????NPC??
 x893206_g_Position_Z=210
 x893206_g_SceneID=2
-x893206_g_AccomplishNPC_Name="ÆîÆÅÆÅ"
+x893206_g_AccomplishNPC_Name="KÏ bà bà"
 
---ÈÎÎñÊı¾İ
+--nhi®m vø s¯ li®u
 x893206_g_MissionKind = 7
 x893206_g_MissionLevel = 65
 x893206_g_IfMissionElite = 0
-x893206_g_IsMissionOkFail = 0--ÈÎÎñÍê³É±êÖ¾Î»(Ò»¶¨ÒªÎª0)
+x893206_g_IsMissionOkFail = 0--???????(????0)
 
-x893206_g_MissionName="#{LNQZ_220429_1}"--ÈÎÎñÃû
-x893206_g_MissionInfo="#{LNQZ_220429_2}"--ÈÎÎñÎÄ±¾ÃèÊö£¨ÈÎÎñÁìÈ¡¶Ô°×£©
-x893206_g_MissionComplete="#{LNQZ_220429_3}"--ÈÎÎñÍê³É¶Ô°×
-x893206_g_MissionTarget="#{LNQZ_220429_4}"--ÈÎÎñÄ¿±ê(ÈÎÎñÃæ°åÖĞÈÎÎñĞÅÏ¢ÏÔÊ¾ÄÚÈİ)
+x893206_g_MissionName="#{LNQZ_220429_1}"--???
+x893206_g_MissionInfo="#{LNQZ_220429_2}"--??????(??????)
+x893206_g_MissionComplete="#{LNQZ_220429_3}"--??????
+x893206_g_MissionTarget="#{LNQZ_220429_4}"--????(?????????????)
 
---×Ô¶¨ÒåÍê³ÉÇé¿ö£¬ÄÚÈİ²»ÄÜÊ¹ÓÃ×Öµä£¬·Ö±ğ¶ÔÓ¦missionparamµÄµÚ1Î»ºóÑÓ
-x893206_g_Custom = {{id="°İ·Ã´óÀíÆîÆÅÆÅ",num=1}}
-x893206_g_ParamIndex = 2--ÈÎÎñ²ÎÊı0-Íê³É±ê¼Ç1-Íê³ÉÇé¿ö2-Ëæ»úË÷Òı
+--Tñ ğ¸nh nghîa hoàn thành tình hu¯ng, nµi dung không th¬ sØ døng tñ ği¬n, phân bi®t ğ¯i Ñng missionparamĞích Ğ® 1V¸ H§u Diên
+x893206_g_Custom = {{id="Bái phöng ĞÕi Lı KÏ bà bà",num=1}}
+x893206_g_ParamIndex = 2--????0-????1-????2-????
 
---npc¾àÀë
+--Npc khoäng cách
 x893206_g_NpcDist = 5
 
 x893206_g_accept_JZ = 600000

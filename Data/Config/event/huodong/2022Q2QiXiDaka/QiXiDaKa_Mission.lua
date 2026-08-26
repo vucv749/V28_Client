@@ -1,42 +1,42 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x893245_g_ScriptId 						= 893245
---ÈÎÎñºÅ(ÕÒ²ß»®Òª)
+--nhi®m vø Hào(Träo bày ra Yêu)
 x893245_g_MissionId 					= 2112
---ÈÎÎñÃû
+--nhi®m vø Danh
 x893245_g_MissionName					= "#{QXDK_20220623_03}"
---Íê³ÉÈÎÎñNPCĞÅÏ¢(Ğ¡µØÍ¼ºÍµØÍ¼ÏÔÊ¾ÓÃ)
+--hoàn thành nhi®m vø NPCtin tÑc(Ti¬u bän ğ° Hoà bän ğ° bi¬u hi®n Døng)
 x893245_g_Position_X					= 169
 x893245_g_Position_Z					= 107
 x893245_g_SceneID							= 0
-x893245_g_AccomplishNPC_Name	= "ºÎğ¨ğ¨"
+x893245_g_AccomplishNPC_Name	= "Hà sáng trong"
 
---ÈÎÎñÀàĞÍ(ÕÒ²ß»®Òª£¬¶ÔÓ¦Client/Config/MissionKind.txt)
+--nhi®m vø loÕi hình(Träo bày ra Yêu, ğ¯i Ñng Client/Config/MissionKind. Txt)
 x893245_g_MissionKind 				= 11
---ÈÎÎñµÈ¼¶(10000ÎªµÈ¼¶×ÔÊÊÓ¦, ÆäËûÎª¾ßÌåµÈ¼¶)
+--nhi®m vø c¤p b§c(10000Vi c¤p b§c thanh thän ¿ng, m£t khác Vi cø th¬ c¤p b§c)
 x893245_g_MissionLevel 				= 30
---ÈÎÎñÄ¿±ê(ÈÎÎñÃæ°åÖĞÈÎÎñĞÅÏ¢ÏÔÊ¾ÄÚÈİ)
+--nhi®m vø møc tiêu(nhi®m vø Di®n Bän Trung nhi®m vø tin tÑc bi¬u hi®n nµi dung)
 x893245_g_MissionTarget 			= "#{QXDK_20220623_28}"
---ÈÎÎñÍê³É±êÖ¾Î»(Ò»¶¨ÒªÎª0)
+--nhi®m vø hoàn thành d¤u hi®u V¸(nh¤t ğ¸nh phäi Vi 0)
 x893245_g_IsMissionOkFail			= 0
 
---ÈÎÎñÍê³ÉÇé¿öÖĞÏÔÊ¾£¬¸ù¾İÀà±ğÀ´Ê¹ÓÃ
---Íê³ÉÈÎÎñĞèÒªÎïÆ·µÄÀàĞÍ£¨Ñ°Îï½Å±¾£©,id¼ûCommonItem.txt
+--nhi®m vø hoàn thành tình hu¯ng Trung bi¬u hi®n, cån cÑ LoÕi Bi®t ğ¯i xØ Døng
+--hoàn thành nhi®m vø c¥n v§t ph¦m Ğích loÕi hình(T¥m V§t k¸ch bän g¯c), idKiªn CommonItem. Txt
 --x893245_g_DemandItem 					= {{id=20309001, num=1}, {id=20309005, num=1}}
---ÈÎÎñĞèÒªÉ±µÄ¹ÖÎï£¨É±¹ÖÈÎÎñ£©£¬id¼ûMonsterAttrExTable.txt
+--nhi®m vø c¥n giªt quái v§t(giªt quái nhi®m vø), idKiªn MonsterAttrExTable. Txt
 --x893245_g_DemandKill 					= {id=779, num=8}
---×Ô¶¨ÒåÍê³ÉÇé¿ö£¬ÄÚÈİ²»ÄÜÊ¹ÓÃ×Öµä£¬·Ö±ğ¶ÔÓ¦missionparamµÄµÚ1Î»ºóÑÓ
-x893245_g_Custom							= {{id="ÒÑÍê³ÉÖÆÒÂ",num=1}}
+--Tñ ğ¸nh nghîa hoàn thành tình hu¯ng, nµi dung không th¬ sØ døng tñ ği¬n, phân bi®t ğ¯i Ñng missionparamĞích Ğ® 1V¸ H§u Diên
+x893245_g_Custom							= {{id="Dî hoàn thành Chª Y",num=1}}
 
---ÎïÆ·½±Àø£¨²»ÓÃÑ¡Ôñ£©
+--v§t ph¦m thß·ng cho(không c¥n lña ch÷n)
 x893245_g_ItemBonus						= {{id=38002594, num=1}}
---Ëæ»úÎïÆ·½±Àø£¨Ëæ»úÒ»Ïî£©
+--TuÏ C½ v§t ph¦m thß·ng cho(TuÏ C½ hÕng nh¤t)
 --x893245_g_RandomItemBonus 		= {{id=20309001, num=1}, {id=20309005, num=1}}
---ÎïÆ·½±Àø£¨ĞèÒªÓÃ»§Ñ¡ÔñÒ»Ïî£©
+--v§t ph¦m thß·ng cho(c¥n ngß¶i sØ døng lña ch÷n hÕng nh¤t)
 --x893245_g_RadioItemBonus 			= {{id=20309001, num=1}, {id=20309005, num=1}}
---½ğÇ®½±Àø£¬Í­±ÒÊıÁ¿
+--ti«n tài thß·ng cho, ti«n ğ°ng s¯ lßşng
 --x893245_g_MoneyBonus 					= 1
---½»×Ó½ğÇ®½±Àø£¬ÈÎÎñÒ»°ã²»¸ø½»×Ó£¬¶¼ÊÇ¸ø½ğ±Ò
+--Giao lşi tÑc Ti«n thß·ng cho, nhi®m vø bình thß¶ng không ğ¬ cho Giao TØ, ğ«u là C¤p Kim T®
 --x893245_g_MoneyJZBonus				= 1
 
 

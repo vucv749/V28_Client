@@ -1,54 +1,54 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x210267_g_ScriptId = 210267
 x210267_g_NextScriptId = 210269
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x210267_g_Position_X = 160
 x210267_g_Position_Z = 158
 x210267_g_SceneID = 2
-x210267_g_AccomplishNPC_Name = "ÕÔÌìÊ¦"
+x210267_g_AccomplishNPC_Name = "Tri®u Thiên Sß"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x210267_g_MissionId = 1419
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x210267_g_MissionIdPre = 1418
 
---Ä¿±êNPC
-x210267_g_Name	="Ç®Áú"
+--møc tiêu NPC
+x210267_g_Name	="Ti«n Long"
 
---ÈÎÎñµÀ¾ß±àºÅ
+--nhi®m vø ğÕo cø ğánh s¯
 --g_ItemId = 20101001
 
---ÈÎÎñµÀ¾ßĞèÇóÊıÁ¿
+--nhi®m vø ğÕo cø nhu c¥u s¯ lßşng
 --g_ItemNeedNum = 1
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x210267_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x210267_g_MissionLevel = 9
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x210267_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x210267_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
-x210267_g_Custom	= { {id="ÒÑÁ¬Ğø´ğ¶ÔÇ®ÁúµÄÎå¸öÎÊÌâ",num=1} }
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+--nhi®m vø hay không ğã hoàn thành
+x210267_g_IsMissionOkFail = 0		--????0?
+x210267_g_Custom	= { {id="Ğã liên tøc ğáp ğúng 5 câu höi cüa Ti«n Long",num=1} }
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñÃû
-x210267_g_MissionName="½­ºşÎÊ´ğ"
+--nhi®m vø Danh
+x210267_g_MissionName="V¤n Ğáp Giang H°"
 x210267_g_MissionInfo="#{XSRW_100111_43}"
 x210267_g_MissionTarget="#{XSRW_100111_92}"
-x210267_g_ContinueInfo="#{XSRW_100111_44}"		--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+x210267_g_ContinueInfo="#{XSRW_100111_44}"		--??????npc??
 x210267_g_MissionComplete="#{XSRW_100111_45}"
 x210267_g_MoneyJZBonus=100
 x210267_g_ExpBonus=600
-x210267_g_SignPost = {x = 145, z = 138, tip = "Ç®Áú"}
+x210267_g_SignPost = {x = 145, z = 138, tip = "Ti«n Long"}
 x210267_g_ItemBonus={{id=10111000,num=1}}
 
 

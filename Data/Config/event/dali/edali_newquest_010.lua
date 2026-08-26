@@ -1,49 +1,49 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x210280_g_ScriptId = 210280
 x210280_g_NextScriptId = 210275
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x210280_g_Position_X=215
 x210280_g_Position_Z=284
 x210280_g_SceneID=2
-x210280_g_AccomplishNPC_Name="¶ÎÑÓÇì"
+x210280_g_AccomplishNPC_Name="Ğoàn Diên Khánh"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x210280_g_MissionId = 1423
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x210280_g_MissionIdPre = 1408
 
---Ä¿±êNPC
-x210280_g_Name	="¶ÎÑÓÇì"
-x210280_g_StuffName = "»Æ¹«µÀ"
-x210280_g_QigaiName = "Ğ¡ÆòØ¤"
+--møc tiêu NPC
+x210280_g_Name	="Ğoàn Diên Khánh"
+x210280_g_StuffName = "Hoàng Công ĞÕo"
+x210280_g_QigaiName = "Ti¬u Kh¤t Cái"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x210280_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x210280_g_MissionLevel = 5
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x210280_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x210280_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+--nhi®m vø hay không ğã hoàn thành
+x210280_g_IsMissionOkFail = 0		--????0?
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x210280_g_MissionName="ºÎÎ½ĞĞÉÆ"
+--nhi®m vø vån bän miêu tä
+x210280_g_MissionName="Thª nào g÷i là hành thi®n"
 x210280_g_MissionInfo="#{XSRW_100111_109}"
 x210280_g_MissionTarget="#{XSRW_100111_120}"
 x210280_g_ContinueInfo="#{XSRW_100111_119}"
 x210280_g_MissionComplete="#{XSRW_100111_121}"
-x210280_g_SignPost = {x = 199, z = 256, tip = "Ğ¡ÆòØ¤"}
-x210280_g_Custom	= { {id="µÃµ½ÒªÔùÓëĞ¡ÆòØ¤µÄÎïÆ·",num=1},{id="ÔùËÍÂøÍ·¸øĞ¡ÆòØ¤",num=1},{id="ÔùËÍÒÂ·ş¸øĞ¡ÆòØ¤",num=1},{id="ÔùËÍ³úÍ·¸øĞ¡ÆòØ¤",num=1} }
---ÈÎÎñ½±Àø
+x210280_g_SignPost = {x = 199, z = 256, tip = "Ti¬u Kh¤t Cái"}
+x210280_g_Custom	= { {id="ĞÕt ğßşc v§t ph¦m mu¯n t£ng cho Ti¬u Kh¤t Cái",num=1},{id="T£ng Bánh Bao cho Ti¬u Kh¤t Cái",num=1},{id="T£ng B¯ Y cho Ti¬u Kh¤t Cái",num=1},{id="T£ng Cu¯c cho Ti¬u Kh¤t Cái",num=1} }
+--nhi®m vø thß·ng cho
 x210280_g_MoneyJZBonus=300
 x210280_g_ExpBonus=1500
 --g_ItemBonus={{id=40002108,num=1}}

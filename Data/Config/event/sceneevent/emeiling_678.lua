@@ -1,45 +1,45 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x212113_g_ScriptId = 212113
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x212113_g_MissionId = 678
 
---Ç°ĞøÈÎÎñºÅ
+--Ti«n Tøc nhi®m vø Hào
 x212113_g_PreMissionId1 = 673
 x212113_g_PreMissionId2 = 674
 x212113_g_PreMissionId3 = 675
 
---Ä¿±êNPC
-x212113_g_Name	="ÔÂ¼¾"
+--møc tiêu NPC
+x212113_g_Name	="Nguy®t Lı"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x212113_g_MissionKind = 44
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x212113_g_MissionLevel = 70
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x212113_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x212113_g_MissionName="×ï¿ı»öÊ×"
---ÈÎÎñÃèÊö
+--nhi®m vø Danh
+x212113_g_MissionName="Ğ¥u sö tµi ác"
+--nhi®m vø miêu tä
 x212113_g_MissionInfo="#{Mis_K_Meiling_1000183}"
---ÈÎÎñÄ¿±ê
-x212113_g_MissionTarget="    Ã·ÁëµÄÔÂ¼¾#{_INFOAIM192,70,33,ÔÂ¼¾}ÒªÇóÄãÉ±ËÀÑÏ°×»¢¡£Ğ¡ĞÄ£¬Ö»ÒªÔÂ¼¾¿ªÊ¼¼Àìë£¬#RÑÏ°×»¢#W¾Í»á³öÏÖ¡£"		
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x212113_g_ContinueInfo="  ÄãÒÑ¾­É±ËÀÑÏ°×»¢ÁËÂğ£¿"
---Ìá½»Ê±npcµÄ»°
-x212113_g_MissionComplete="  Ğ»Ğ»Äã£¬Ğ»Ğ»Äã¡£¿È¿È¡­¡­ÎÒÃ»ÊÂ£¬Ã¿´Î¼Àìë×Ü»áÏûºÄÒ»Ğ©ÕæÆøµÄ¡­¡­"		
+--nhi®m vø møc tiêu
+x212113_g_MissionTarget="    Nguy®t Lı · Mai Lînh #{_INFOAIM192,70,33,Nguy®t Lı} yêu c¥u ngß½i ğánh bÕi Nghiêm BÕch H±. C¦n th§n, chï c¥n Nguy®t Lı b¡t ğ¥u cúng tª, #RNGhiêm BÕch H±#W s¨ xu¤t hi®n ngay."		
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
+x212113_g_ContinueInfo="  Ngß½i ğã ğánh bÕi Nghiêm BÕch H± chßa?"
+--ğ® trình Th¶i Npc trong l¶i nói
+x212113_g_MissionComplete="  Ğa tÕ ngß½i, ğa tÕ. Ha ha... Ta không sao. CÑ m²i l¥n cúng tª lÕi t±n hao ít chân khí.."		
 
 x212113_g_MoneyBonus=51700
 x212113_g_exp=37000
 
-x212113_g_szMonsterName = "ÑÏ°×»¢"
+x212113_g_szMonsterName = "Nghiêm BÕch H±"
 x212113_g_MonsterID = 525
 
-x212113_g_Custom	= { {id="ÒÑÉ±ËÀÑÏ°×»¢",num=1} }
+x212113_g_Custom	= { {id="Ğã ğánh bÕi Nghiêm BÕch H±",num=1} }
 x212113_g_IsMissionOkFail = 0
 
 x212113_g_RadioItemBonus={{id=10412072 ,num=1},{id=10403056,num=1}}

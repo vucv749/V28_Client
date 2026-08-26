@@ -1,32 +1,32 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x998394_g_ScriptId = 998394
 
---Íê³ÉÈÎÎñNPCÊôĞÔ
-x998394_g_Position_X=155  --Ìæ´ú
-x998394_g_Position_Z=100 --Ìæ´ú
+--hoàn thành nhi®m vø NPCthuµc tính
+x998394_g_Position_X=155  --??
+x998394_g_Position_Z=100 --??
 x998394_g_SceneID=9
-x998394_g_AccomplishNPC_Name="Ïô·å" --Ìæ´ú
+x998394_g_AccomplishNPC_Name="Tiêu Phong" --??
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x998394_g_PreMissionName="#{SBJQ_230627_47}"
 x998394_g_PreMissionId = 2225
 x998394_g_MissionId = 2226
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x998394_g_MissionKind = 5
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x998394_g_MissionLevel = 65
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x998394_g_IfMissionElite = 0
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x998394_g_MissionName="#{SBJQ_230627_48}"
 x998394_g_MissionTarget="#{SBJQ_230627_37}"
 x998394_g_IsMissionOkFail=0
-x998394_g_Custom = {{ id = "¸æÖªÏô·åÇ°³¾ÒÑÁË", num = 1}}
+x998394_g_Custom = {{ id = "Cho biªt, báo cho Tiêu Phong trß¾c kia ğã xong", num = 1}}
 x998394_g_ContinueInfo = ""
 x998394_g_MissionComplete = "#{SBJQ_230627_149}"
 

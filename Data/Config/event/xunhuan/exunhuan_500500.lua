@@ -1,44 +1,44 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x500500_g_ScriptId = 500500
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 --g_MissionIdPre =
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x500500_g_MissionId = 700
 
---ÈÎÎñÄ¿±ênpc
-x500500_g_Name	="ºÎÖ´ÖĞ" 
+--nhi®m vø møc tiêu Npc
+x500500_g_Name	="Trong hà ch¤p" 
 
---ÈÎÎñµÀ¾ß±àºÅ
+--nhi®m vø ğÕo cø ğánh s¯
 x500500_g_ItemId = 40002106
 
---ÈÎÎñµÀ¾ßĞèÇóÊıÁ¿
+--nhi®m vø ğÕo cø nhu c¥u s¯ lßşng
 x500500_g_ItemNeedNum = 1
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x500500_g_MissionKind = 1
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x500500_g_MissionLevel = 20
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x500500_g_IfMissionElite = 0
 
---********ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö******
-x500500_g_IsMissionOkFail = 0					--±äÁ¿µÄµÚ0Î»
-x500500_g_DemandItem={{id=40002106,num=1}}		--±äÁ¿µÚ1Î»,ÈÎÎñĞèÒªµÃµ½µÄÎïÆ·
-x500500_g_MissionRound = 3						--Ñ­»·ÈÎÎñµÄÊı¾İË÷Òı£¬ÀïÃæ´æ×ÅÒÑ×öµÄ»·Êı MD_WABAO_HUAN
---**********************************ÒÔÉÏÊÇ¶¯Ì¬****************************
+--********phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng******
+x500500_g_IsMissionOkFail = 0					--????0?
+x500500_g_DemandItem={{id=40002106,num=1}}		--???1?,?????????
+x500500_g_MissionRound = 3						--?????????,????????? MD_WABAO_HUAN
+--**********************************ğã ngoài Th¸ ğµng thái****************************
 
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x500500_g_MissionName="Ñ°±¦"
-x500500_g_MissionInfo="#{M_700_TEXT1}"  --ÈÎÎñÃèÊö
-x500500_g_MissionTarget="ÕÒµ½±¦²Ø½»¸øºÎÖ´ÖĞ"		--ÈÎÎñÄ¿±ê
-x500500_g_ContinueInfo="ÄãÕÒµ½±¦²ØÁËÃ´£¿µã»÷ÈÎÎñµÀ¾ßÖĞµÄÌ½²âÆ÷¾Í¿ÉÒÔÕÒµ½±¦²ØµÄÎ»ÖÃÁË"		--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x500500_g_MissionComplete="¸ÉµÄ²»´í"					--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø vån bän miêu tä
+x500500_g_MissionName="T¥m bäo"
+x500500_g_MissionInfo="#{M_700_TEXT1}"  --????
+x500500_g_MissionTarget="Tìm ğßşc bäo tàng giao cho Hà Ch¤p Trung"		--????
+x500500_g_ContinueInfo="Nhî tìm ğßşc bäo tàng Li­u Ma? Ği¬m Kích nhi®m vø ğÕo cø Trung Ğích dò xét Khí là có th¬ tìm ğßşc bäo tàng Ğích v¸ trí Li­u"		--??????npc??
+x500500_g_MissionComplete="Làm không t°i"					--????npc????
 
 x500500_g_MoneyBonus=100
 x500500_g_ItemBonus={{id=30002001,num=1}}

@@ -3,52 +3,52 @@ x999194_g_ScriptId = 999194
 --kdzz
 x999194_g_KDZZID = 1006000614
 
---»î¶¯µÈ¼¶
+--hoÕt ğµng c¤p b§c
 x999194_g_MissionLevel = 30
 
---Ç°ÖÃÈÎÎñ
+--Ti«n Trí nhi®m vø
 x999194_g_PreMissionId = 2325
 x999194_g_PreMissionName = "#{DSJD_240520_05}"
 
---ºóÖÃÈÎÎñ
+--t× ğÑng sau nhi®m vø
 x999194_g_NextMissionId = 2327
 x999194_g_NextScriptId = 999195
 
---Íê³ÉÈÎÎñNPCÊôĞÔ
+--hoàn thành nhi®m vø NPCthuµc tính
 x999194_g_Position_X=109
 x999194_g_Position_Z=186
 x999194_g_SceneID=1321
-x999194_g_AccomplishNPC_Name="ÖÁ×ğ±¦"
+x999194_g_AccomplishNPC_Name="Chí tôn Bäo"
 x999194_g_AccomplishNPC_Id=52627
 x999194_g_AcceptNPC_Id=52637
 
---ÈÎÎñÊı¾İ
+--nhi®m vø s¯ li®u
 x999194_g_MissionName="#{DSJD_240520_06}"
 x999194_g_MissionId = 2326
 x999194_g_MissionKind = 69
 x999194_g_IfMissionElite = 0
 
---ÈÎÎñ²ÎÊı
-x999194_g_IsMissionOkFail = 0--ÈÎÎñÍê³É±êÖ¾Î»(Ò»¶¨ÒªÎª0)
-x999194_g_ParamCustom = 1--ÈÎÎñ²ÎÊı
+--nhi®m vø tham s¯
+x999194_g_IsMissionOkFail = 0--???????(????0)
+x999194_g_ParamCustom = 1--????
 
-x999194_g_MissionTarget="#{DSJD_240520_121}"--ÈÎÎñÄ¿±ê(ÈÎÎñÃæ°åÖĞÈÎÎñĞÅÏ¢ÏÔÊ¾ÄÚÈİ)
-x999194_g_Custom = {{ id = "ÕÒµ½ÆĞÌáÀÏ×æ£¬½«½ğ¹¿½»»¹", num = 1}}--×Ô¶¨ÒåÍê³ÉÇé¿ö£¬ÄÚÈİ²»ÄÜÊ¹ÓÃ×Öµä£¬·Ö±ğ¶ÔÓ¦missionparamµÄµÚ1Î»ºóÑÓ
+x999194_g_MissionTarget="#{DSJD_240520_121}"--????(?????????????)
+x999194_g_Custom = {{ id = "Tìm ğßşc B° Ğ« Lão T±, Tß¾ng Kim C½ trä lÕi", num = 1}}--???????,????????,????missionparam??1???
 
---npc¾àÀë
+--Npc khoäng cách
 x999194_g_NpcDist = 5
 
---ÈÎÎñµÀ¾ß
+--nhi®m vø ğÕo cø
 x999194_g_BagSpace = 1
 x999194_g_ItemId = 38003200
---µÀ¾ßÌá½»µÄnpc
+--ğÕo cø ğ® trình Ğích Npc
 x999194_g_NpcId=52634
---µÀ¾ßÌá½»²¥·ÅÌØĞ§
+--ğÕo cø ğ® trình truy«n phát tin ğ£c hi®u
 x999194_g_EffectId = 48253
---Ìá½»µÀ¾ß²¥·ÅµÄ¶¯»­
+--ğ® trình ğÕo cø truy«n phát tin Ğích Ğµng HoÕ
 x999194_g_MovieId = 9
 
---½±Àø
+--thß·ng cho
 x999194_g_PrizeNum = 5
 
 

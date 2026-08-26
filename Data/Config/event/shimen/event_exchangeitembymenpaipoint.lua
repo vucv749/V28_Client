@@ -1,14 +1,14 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x229009_g_scriptId = 229009
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x229009_g_ExchangeItem = "¶Ò»»ÎïÆ·"
-x229009_g_ExchangeTitle = "¶Ò»»³ÆºÅ"
-x229009_g_MissionInfo = "ÎªÁË¹ÄÀø¸÷Î»ÃÅÏÂµÜ×Ó½«±¾ÃÅÅÉ·¢Ñï¹â´ó£¬ÎªÊ¦ÌØ×¼±¸ÁËÒ»Ğ©½±Æ·£¬Ê¹ÓÃ#R400#cfff263µãÃÅÅÉ¹±Ï×¶È¼´¿É¶Ò»»¡£"  --ÈÎÎñÃèÊö
+--nhi®m vø vån bän miêu tä
+x229009_g_ExchangeItem = "Ğ±i v§t ph¦m"
+x229009_g_ExchangeTitle = "Ğ±i danh hi®u"
+x229009_g_MissionInfo = "Vì c± vû các v¸ môn hÕ ğ® tØ Tß¾ng b±n môn Phái phát dß½ng quang ğÕi, vi sß Ğ£c chu¦n b¸ Li­u mµt ít ph¥n thß·ng, sØ døng#R400#cfff263Ği¬m môn phái c¯ng hiªn Ğµ có th¬ ğ±i."  --????
 x229009_g_MissionTarget = ""
-x229009_g_ContinueInfo = ""			--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x229009_g_MissionComplete = ""	--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+x229009_g_ContinueInfo = ""			--??????npc??
+x229009_g_MissionComplete = ""	--????npc????
 
 
 --MisDescEnd

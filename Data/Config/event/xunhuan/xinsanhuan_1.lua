@@ -1,44 +1,44 @@
 --MisDescBegin
 
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x050220_g_ScriptId = 050220
 
---½ÇÉ«»îÔ¾Öµ¸±±¾µÄindex
+--vai di­n sinh ğµng Tr¸ bän sao Ğích index
 x050220_g_activePointIndex = 9
 
----- ÈÎÎñºÅ
-x050220_g_MissionId = 1256					--1256 »Æ½ğÖ®Á´--1257 Ğş·ğÖé--1258 ÈÛÑÒÖ®µØ
+---- nhi®m vø Hào
+x050220_g_MissionId = 1256					--1256 ????--1257 ???--1258 ????
 
----- ÉÏÒ»¸öÈÎÎñµÄ ID
+---- Thßşng mµt cái nhi®m vø Ğích ID
 ---- g_MissionIdPre = 1260
 
----- ÈÎÎñÄ¿±ê NPC
-x050220_g_Name = "ºÎÔÃ"
+---- nhi®m vø møc tiêu NPC
+x050220_g_Name = "Hà Duy®t"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x050220_g_MissionKind = 8
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x050220_g_MissionLevel = 10000
 
--- ÈÎÎñÎÄ±¾ÃèÊö
-x050220_g_MissionName = "»Æ½ğÖ®Á´"
-x050220_g_MissionInfo = "    "														-- ÈÎÎñÃèÊö
-x050220_g_MissionTarget = "    #{LLFBM_80918_1}"						-- ÈÎÎñÄ¿±ê
---x050220_g_ContinueInfo = "    ÄãÃÇ×¼±¸ºÃÁË¾ÍÇëÇ°È¥ÖñÁÖÏûÃğºìĞÜÍõ£¡"					-- Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x050220_g_SubmitInfo = "#{LLFB_80816_19}"										-- Ìá½»Ê±µÄ´ğ¸´
-x050220_g_MissionComplete = "#{LLFB_80902_1}"	--Íê³ÉÈÎÎñnpcËµµÄ»°
+-- nhi®m vø vån bän miêu tä
+x050220_g_MissionName = "Kiªm Tr× Yêu Ma"
+x050220_g_MissionInfo = "    "														-- ????
+x050220_g_MissionTarget = "    #{LLFBM_80918_1}"						-- ????
+--x050220_g_ContinueInfo = " các ngß½i chu¦n b¸ t¯t Li­u xin m¶i tiªn ğªn Trúc Lâm tiêu di®t H°ng Hùng Vß½ng! " -- chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
+x050220_g_SubmitInfo = "#{LLFB_80816_19}"										-- ??????
+x050220_g_MissionComplete = "#{LLFB_80902_1}"	--????npc???
 
-x050220_g_IsMissionOkFail = 0														-- 0ºÅË÷Òı£ºµ±Ç°ÈÎÎñÊÇ·ñÍê³É(0Î´Íê³É£»1Íê³É£»2Ê§°Ü)
-x050220_g_IsSmallMonster = 1														-- 1 ºÅË÷Òı£ºÉ±ĞşÀ×ÆÂÍÁ·ËµÄÊıÁ¿
-x050220_g_IsBossNiuQu = 2																-- 2 ºÅË÷Òı£ºÉ±Å£ÇúµÄÊıÁ¿
-x050220_g_IsBossNiuQi = 3																-- 3 ºÅË÷Òı£ºÉ±Å£ÆæµÄÊıÁ¿
-x050220_g_IsBossWang = 4																-- 4 ºÅË÷Òı£ºÉ±ÍõÑÖµÄÊıÁ¿
-x050220_g_IsFindGoods = 5																-- 5 ºÅË÷Òı£ºÊÇ·ñÕÒµ½»Æ½ğÖ®Á´
-x050220_g_Param_sceneid = 6															-- 6ºÅË÷Òı£ºµ±Ç°ÈÎÎñÊı¾İµÄ6Î»ÖÃÉèÖÃÎª³¡¾°ID
+x050220_g_IsMissionOkFail = 0														-- 0???:????????(0???;1??;2??)
+x050220_g_IsSmallMonster = 1														-- 1 ???:?????????
+x050220_g_IsBossNiuQu = 2																-- 2 ???:??????
+x050220_g_IsBossNiuQi = 3																-- 3 ???:??????
+x050220_g_IsBossWang = 4																-- 4 ???:??????
+x050220_g_IsFindGoods = 5																-- 5 ???:????????
+x050220_g_Param_sceneid = 6															-- 6???:???????6???????ID
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,´ÓÈÎÎñ²ÎÊıµÄµÚ1Î»¿ªÊ¼
-x050220_g_Custom	= { {id="ÒÑÉ±ËÀ£º#r  ĞşÀ×ÆÂÍÁ·Ë",num=60},{id="  Å£Çú",num=1},{id="  Å£Ææ",num=1},{id="  ÍõÑÖ",num=1},{id="ÒÑÕÒµ½£º#r  »Æ½ğÖ®Á´",num=1} }
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, Thung nhi®m vø tham s¯ Ğích Ğ® 1V¸ b¡t ğ¥u
+x050220_g_Custom	= { {id="Dî giªt chªt: #r Huy«n Lôi Pha Th± Phï",num=60},{id="  Ngßu Khúc",num=1},{id="  Ngßu C½",num=1},{id="  Vß½ng Diêm",num=1},{id="Dî tìm ğßşc: #r Hoàng Kim Chi Li®m",num=1} }
 
 
 --MisDescEnd

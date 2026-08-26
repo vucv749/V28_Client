@@ -1,97 +1,97 @@
 --MisDescBegin
 x998358_g_ScriptId = 998358
 x998358_g_MissionId = 2215
-x998358_g_MainScriptId = 998354--Ö÷½Å±¾ºÅ
+x998358_g_MainScriptId = 998354--????
 
 --kdzz
 x998358_g_KDZZID = 1006000587
 x998358_g_KDZZSubID = 4
 
---ºóÐøÈÎÎñ
---x998358_g_NextScirptId = 893187--ÏÂÒ»½Å±¾ºÅ
---x998358_g_NextMissionId = 2083--ÏÂÒ»ÈÎÎñºÅ
+--ðªn tiªp sau nhi®m vø
+--x998358_g_NextScirptId = 893187--tiªp theo k¸ch bän g¯c Hào
+--x998358_g_NextMissionId = 2083--tiªp theo nhi®m vø Hào
 
---Íê³ÉÈÎÎñnpc
+--hoàn thành nhi®m vø Npc
 x998358_g_AccomplishInfo = {
 	[MP_SHAOLIN] = {
-				[1] = { npcname = "Ðþ¶É", npcposx = 128, npcposz = 86, npcscene = 9, namestr = "#{XLRW_210725_347}", strlink = "#{XLRW_210725_549}", AnswerStr = "#{WDJJ_230614_682}"},
-				[2] = { npcname = "Ðþ´È", npcposx = 38, npcposz = 98, npcscene = 9, namestr = "#{XLRW_210725_348}", strlink = "#{XLRW_210725_550}", AnswerStr = "#{WDJJ_230614_683}"},
-				[3] = { npcname = "Ðþ¼Å", npcposx = 89, npcposz = 72, npcscene = 9, namestr = "#{XLRW_210725_349}", strlink = "#{XLRW_210725_551}", AnswerStr = "#{WDJJ_230614_684}"},
-				[4] = { npcname = "ÐþÄÑ", npcposx = 91, npcposz = 71, npcscene = 9, namestr = "#{XLRW_210725_350}", strlink = "#{XLRW_210725_552}", AnswerStr = "#{WDJJ_230614_685}"},
-				[5] = { npcname = "ÐþÃð", npcposx = 57, npcposz = 88, npcscene = 9, namestr = "#{XLRW_210725_352}", strlink = "#{XLRW_210725_554}", AnswerStr = "#{WDJJ_230614_686}"},--
-				[6] = { npcname = "ÐþÃù", npcposx = 135, npcposz = 90, npcscene = 9, namestr = "#{XLRW_210725_353}", strlink = "#{XLRW_210725_555}", AnswerStr = "#{WDJJ_230614_687}"},
+				[1] = { npcname = "Huy«n Ðµ", npcposx = 128, npcposz = 86, npcscene = 9, namestr = "#{XLRW_210725_347}", strlink = "#{XLRW_210725_549}", AnswerStr = "#{WDJJ_230614_682}"},
+				[2] = { npcname = "Huy«n T×", npcposx = 38, npcposz = 98, npcscene = 9, namestr = "#{XLRW_210725_348}", strlink = "#{XLRW_210725_550}", AnswerStr = "#{WDJJ_230614_683}"},
+				[3] = { npcname = "Huy«n T¸ch", npcposx = 89, npcposz = 72, npcscene = 9, namestr = "#{XLRW_210725_349}", strlink = "#{XLRW_210725_551}", AnswerStr = "#{WDJJ_230614_684}"},
+				[4] = { npcname = "Huy«n NÕn", npcposx = 91, npcposz = 71, npcscene = 9, namestr = "#{XLRW_210725_350}", strlink = "#{XLRW_210725_552}", AnswerStr = "#{WDJJ_230614_685}"},
+				[5] = { npcname = "Huy«n Di®t", npcposx = 57, npcposz = 88, npcscene = 9, namestr = "#{XLRW_210725_352}", strlink = "#{XLRW_210725_554}", AnswerStr = "#{WDJJ_230614_686}"},--
+				[6] = { npcname = "Huy«n Minh", npcposx = 135, npcposz = 90, npcscene = 9, namestr = "#{XLRW_210725_353}", strlink = "#{XLRW_210725_555}", AnswerStr = "#{WDJJ_230614_687}"},
 				},
 	[MP_MINGJIAO] = {
-				[1] = { npcname = "ÁÖÑÒ", npcposx = 98, npcposz = 105, npcscene = 11, namestr = "#{XLRW_210725_361}", strlink = "#{XLRW_210741_563}", AnswerStr = "#{WDJJ_230614_694}"},
-				[2] = { npcname = "·½°Ù»¨", npcposx = 133, npcposz = 117, npcscene = 11, namestr = "#{XLRW_210725_362}", strlink = "#{XLRW_210741_564}", AnswerStr = "#{WDJJ_230614_695}"},---
-				[3] = { npcname = "·½À°", npcposx = 89, npcposz = 56, npcscene = 11, namestr = "#{XLRW_210725_363}", strlink = "#{XLRW_210741_565}", AnswerStr = "#{WDJJ_230614_696}"},
-				[4] = { npcname = "ÂêÀ­", npcposx = 133, npcposz = 118, npcscene = 11, namestr = "#{XLRW_210725_364}", strlink = "#{XLRW_210741_566}", AnswerStr = "#{WDJJ_230614_697}"},---
-				[5] = { npcname = "·½Ìì¶¨", npcposx = 87, npcposz = 58, npcscene = 11, namestr = "#{XLRW_210725_365}", strlink = "#{XLRW_210741_567}", AnswerStr = "#{WDJJ_230614_698}"},
-				[6] = { npcname = "À÷ÌìÓÓ", npcposx = 66, npcposz = 118, npcscene = 11, namestr = "#{XLRW_210725_366}", strlink = "#{XLRW_210741_568}", AnswerStr = "#{WDJJ_230614_699}"},---
+				[1] = { npcname = "Lâm Nham", npcposx = 98, npcposz = 105, npcscene = 11, namestr = "#{XLRW_210725_361}", strlink = "#{XLRW_210741_563}", AnswerStr = "#{WDJJ_230614_694}"},
+				[2] = { npcname = "Phß½ng Bách Hoa", npcposx = 133, npcposz = 117, npcscene = 11, namestr = "#{XLRW_210725_362}", strlink = "#{XLRW_210741_564}", AnswerStr = "#{WDJJ_230614_695}"},---
+				[3] = { npcname = "Phß½ng LÕp", npcposx = 89, npcposz = 56, npcscene = 11, namestr = "#{XLRW_210725_363}", strlink = "#{XLRW_210741_565}", AnswerStr = "#{WDJJ_230614_696}"},
+				[4] = { npcname = "Mã LÕp", npcposx = 133, npcposz = 118, npcscene = 11, namestr = "#{XLRW_210725_364}", strlink = "#{XLRW_210741_566}", AnswerStr = "#{WDJJ_230614_697}"},---
+				[5] = { npcname = "Phß½ng Thiên Ð¸nh", npcposx = 87, npcposz = 58, npcscene = 11, namestr = "#{XLRW_210725_365}", strlink = "#{XLRW_210741_567}", AnswerStr = "#{WDJJ_230614_698}"},
+				[6] = { npcname = "L® Thiên Hñu", npcposx = 66, npcposz = 118, npcscene = 11, namestr = "#{XLRW_210725_366}", strlink = "#{XLRW_210741_568}", AnswerStr = "#{WDJJ_230614_699}"},---
 				},
 	[MP_GAIBANG] = {
-				[1] = { npcname = "ÞÉÈýÆî", npcposx = 94, npcposz = 99, npcscene = 10, namestr = "#{XLRW_210725_354}", strlink = "#{XLRW_210733_556}", AnswerStr = "#{WDJJ_230614_688}"},
-				[2] = { npcname = "Îâ³¤·ç", npcposx = 114, npcposz = 91, npcscene = 10, namestr = "#{XLRW_210725_355}", strlink = "#{XLRW_210733_557}", AnswerStr = "#{WDJJ_230614_689}"},
-				[3] = { npcname = "ÉÏ¹Ù³¤Óê", npcposx = 131, npcposz = 83, npcscene = 10, namestr = "#{XLRW_210725_356}", strlink = "#{XLRW_210733_558}", AnswerStr = "#{WDJJ_230614_690}"},
-				[4] = { npcname = "ÕÅÈ«Ïé", npcposx = 95, npcposz = 120, npcscene = 10, namestr = "#{XLRW_210725_358}", strlink = "#{XLRW_210733_560}", AnswerStr = "#{WDJJ_230614_691}"},---
-				[5] = { npcname = "ËÎ´È", npcposx = 92, npcposz = 64, npcscene = 10, namestr = "#{XLRW_210725_359}", strlink = "#{XLRW_210733_561}", AnswerStr = "#{WDJJ_230614_692}"},
-				[6] = { npcname = "°×ÊÀ¾µ", npcposx = 89, npcposz = 99, npcscene = 10, namestr = "#{XLRW_210725_360}", strlink = "#{XLRW_210733_562}", AnswerStr = "#{WDJJ_230614_693}"},
+				[1] = { npcname = "H« Tam Kì", npcposx = 94, npcposz = 99, npcscene = 10, namestr = "#{XLRW_210725_354}", strlink = "#{XLRW_210733_556}", AnswerStr = "#{WDJJ_230614_688}"},
+				[2] = { npcname = "Ngô Trß¶ng Phong", npcposx = 114, npcposz = 91, npcscene = 10, namestr = "#{XLRW_210725_355}", strlink = "#{XLRW_210733_557}", AnswerStr = "#{WDJJ_230614_689}"},
+				[3] = { npcname = "Thßþng Quan Trß¶ng Vû", npcposx = 131, npcposz = 83, npcscene = 10, namestr = "#{XLRW_210725_356}", strlink = "#{XLRW_210733_558}", AnswerStr = "#{WDJJ_230614_690}"},
+				[4] = { npcname = "Trß½ng Toàn Tß¶ng", npcposx = 95, npcposz = 120, npcscene = 10, namestr = "#{XLRW_210725_358}", strlink = "#{XLRW_210733_560}", AnswerStr = "#{WDJJ_230614_691}"},---
+				[5] = { npcname = "T¯ng T×", npcposx = 92, npcposz = 64, npcscene = 10, namestr = "#{XLRW_210725_359}", strlink = "#{XLRW_210733_561}", AnswerStr = "#{WDJJ_230614_692}"},
+				[6] = { npcname = "BÕch Thª Kính", npcposx = 89, npcposz = 99, npcscene = 10, namestr = "#{XLRW_210725_360}", strlink = "#{XLRW_210733_562}", AnswerStr = "#{WDJJ_230614_693}"},
 				},
 	[MP_WUDANG] = {
-				[1] = { npcname = "ÕÅÐþËØ", npcposx = 77, npcposz = 85, npcscene = 12, namestr = "#{XLRW_210725_368}", strlink = "#{XLRW_210749_570}", AnswerStr = "#{WDJJ_230614_700}"},
-				[2] = { npcname = "ÓáÔ¶É½", npcposx = 82, npcposz = 85, npcscene = 12, namestr = "#{XLRW_210725_369}", strlink = "#{XLRW_210749_571}", AnswerStr = "#{WDJJ_230614_701}"},
-				[3] = { npcname = "º×ÔÆµÀÈË", npcposx = 44, npcposz = 56, npcscene = 12, namestr = "#{XLRW_210725_370}", strlink = "#{XLRW_210749_572}", AnswerStr = "#{WDJJ_230614_702}"},
-				[4] = { npcname = "ÄªÌ«³å", npcposx = 101, npcposz = 136, npcscene = 12, namestr = "#{XLRW_210725_372}", strlink = "#{XLRW_210749_574}", AnswerStr = "#{WDJJ_230614_703}"},--
-				[5] = { npcname = "ÁÖÁéËØ", npcposx = 58, npcposz = 73, npcscene = 12, namestr = "#{XLRW_210725_373}", strlink = "#{XLRW_210749_575}", AnswerStr = "#{WDJJ_230614_704}"},
-				[6] = { npcname = "ÕÅÖÐÐÐ", npcposx = 78, npcposz = 95, npcscene = 12, namestr = "#{XLRW_210725_374}", strlink = "#{XLRW_210749_576}", AnswerStr = "#{WDJJ_230614_705}"},
+				[1] = { npcname = "Trß½ng Huy«n T¯", npcposx = 77, npcposz = 85, npcscene = 12, namestr = "#{XLRW_210725_368}", strlink = "#{XLRW_210749_570}", AnswerStr = "#{WDJJ_230614_700}"},
+				[2] = { npcname = "Du Vi­n S½n", npcposx = 82, npcposz = 85, npcscene = 12, namestr = "#{XLRW_210725_369}", strlink = "#{XLRW_210749_571}", AnswerStr = "#{WDJJ_230614_701}"},
+				[3] = { npcname = "HÕc Vân ÐÕo Nhân", npcposx = 44, npcposz = 56, npcscene = 12, namestr = "#{XLRW_210725_370}", strlink = "#{XLRW_210749_572}", AnswerStr = "#{WDJJ_230614_702}"},
+				[4] = { npcname = "MÕc Thái Xung", npcposx = 101, npcposz = 136, npcscene = 12, namestr = "#{XLRW_210725_372}", strlink = "#{XLRW_210749_574}", AnswerStr = "#{WDJJ_230614_703}"},--
+				[5] = { npcname = "Lâm Linh T¯", npcposx = 58, npcposz = 73, npcscene = 12, namestr = "#{XLRW_210725_373}", strlink = "#{XLRW_210749_575}", AnswerStr = "#{WDJJ_230614_704}"},
+				[6] = { npcname = "Trß½ng Trung Hành", npcposx = 78, npcposz = 95, npcscene = 12, namestr = "#{XLRW_210725_374}", strlink = "#{XLRW_210749_576}", AnswerStr = "#{WDJJ_230614_705}"},
 				},
 	[MP_EMEI] = {
-				[1] = { npcname = "´ÞÂÌ»ª", npcposx = 98, npcposz = 51, npcscene = 15, namestr = "#{XLRW_210725_389}", strlink = "#{XLRW_210773_591}", AnswerStr = "#{WDJJ_230614_718}"},
-				[2] = { npcname = "ÑîËÄÄï", npcposx = 86, npcposz = 142, npcscene = 15, namestr = "#{XLRW_210725_390}", strlink = "#{XLRW_210773_592}", AnswerStr = "#{WDJJ_230614_719}"},---
-				[3] = { npcname = "ÃÏÇàÇà", npcposx = 96, npcposz = 73, npcscene = 15, namestr = "#{XLRW_210725_392}", strlink = "#{XLRW_210773_594}", AnswerStr = "#{WDJJ_230614_720}"},
-				[4] = { npcname = "ÃÏÁú", npcposx = 95, npcposz = 86, npcscene = 15, namestr = "#{XLRW_210725_393}", strlink = "#{XLRW_210773_595}", AnswerStr = "#{WDJJ_230614_721}"},
-				[5] = { npcname = "Ëï¶þÄï", npcposx = 105, npcposz = 57, npcscene = 15, namestr = "#{XLRW_210725_394}", strlink = "#{XLRW_210773_596}", AnswerStr = "#{WDJJ_230614_722}"},---
-				[6] = { npcname = "ÀîÊ®¶þÄï", npcposx = 96, npcposz = 51, npcscene = 15, namestr = "#{XLRW_210725_395}", strlink = "#{XLRW_210773_597}", AnswerStr = "#{WDJJ_230614_723}"},
+				[1] = { npcname = "Thôi Løc Hoa", npcposx = 98, npcposz = 51, npcscene = 15, namestr = "#{XLRW_210725_389}", strlink = "#{XLRW_210773_591}", AnswerStr = "#{WDJJ_230614_718}"},
+				[2] = { npcname = "Dß½ng TÑ Nß½ng", npcposx = 86, npcposz = 142, npcscene = 15, namestr = "#{XLRW_210725_390}", strlink = "#{XLRW_210773_592}", AnswerStr = "#{WDJJ_230614_719}"},---
+				[3] = { npcname = "MÕnh Thanh Thanh", npcposx = 96, npcposz = 73, npcscene = 15, namestr = "#{XLRW_210725_392}", strlink = "#{XLRW_210773_594}", AnswerStr = "#{WDJJ_230614_720}"},
+				[4] = { npcname = "Mãnh Long", npcposx = 95, npcposz = 86, npcscene = 15, namestr = "#{XLRW_210725_393}", strlink = "#{XLRW_210773_595}", AnswerStr = "#{WDJJ_230614_721}"},
+				[5] = { npcname = "Tôn Nh¸ Nß½ng", npcposx = 105, npcposz = 57, npcscene = 15, namestr = "#{XLRW_210725_394}", strlink = "#{XLRW_210773_596}", AnswerStr = "#{WDJJ_230614_722}"},---
+				[6] = { npcname = "Lý Th§p Nh¸ Nß½ng", npcposx = 96, npcposz = 51, npcscene = 15, namestr = "#{XLRW_210725_395}", strlink = "#{XLRW_210773_597}", AnswerStr = "#{WDJJ_230614_723}"},
 				},
 	[MP_XINGSU] = {
-				[1] = { npcname = "¶¡´ºÇï", npcposx = 142, npcposz = 55, npcscene = 16, namestr = "#{XLRW_210725_396}", strlink = "#{XLRW_210781_598}", AnswerStr = "#{WDJJ_230614_724}"},
-				[2] = { npcname = "º«ÊÀÖÒ", npcposx = 95, npcposz = 75, npcscene = 16, namestr = "#{XLRW_210725_397}", strlink = "#{XLRW_210781_599}", AnswerStr = "#{WDJJ_230614_725}"},
-				[3] = { npcname = "ºìÓñ", npcposx = 128, npcposz = 77, npcscene = 16, namestr = "#{XLRW_210725_398}", strlink = "#{XLRW_210781_600}", AnswerStr = "#{WDJJ_230614_726}"},
-				[4] = { npcname = "³ö³¾×Ó", npcposx = 90, npcposz = 87, npcscene = 16, namestr = "#{XLRW_210725_399}", strlink = "#{XLRW_210781_601}", AnswerStr = "#{WDJJ_230614_727}"},---
-				[5] = { npcname = "Ê©È«", npcposx = 87, npcposz = 70, npcscene = 16, namestr = "#{XLRW_210725_400}", strlink = "#{XLRW_210781_602}", AnswerStr = "#{WDJJ_230614_728}"},
-				[6] = { npcname = "ÍõÑå", npcposx = 96, npcposz = 92, npcscene = 16, namestr = "#{XLRW_210725_402}", strlink = "#{XLRW_210781_604}", AnswerStr = "#{WDJJ_230614_729}"},
+				[1] = { npcname = "Ðinh Xuân Thu", npcposx = 142, npcposz = 55, npcscene = 16, namestr = "#{XLRW_210725_396}", strlink = "#{XLRW_210781_598}", AnswerStr = "#{WDJJ_230614_724}"},
+				[2] = { npcname = "Hàn Thª Trung", npcposx = 95, npcposz = 75, npcscene = 16, namestr = "#{XLRW_210725_397}", strlink = "#{XLRW_210781_599}", AnswerStr = "#{WDJJ_230614_725}"},
+				[3] = { npcname = "H°ng Ng÷c", npcposx = 128, npcposz = 77, npcscene = 16, namestr = "#{XLRW_210725_398}", strlink = "#{XLRW_210781_600}", AnswerStr = "#{WDJJ_230614_726}"},
+				[4] = { npcname = "Xu¤t Tr¥n TØ", npcposx = 90, npcposz = 87, npcscene = 16, namestr = "#{XLRW_210725_399}", strlink = "#{XLRW_210781_601}", AnswerStr = "#{WDJJ_230614_727}"},---
+				[5] = { npcname = "Thi Toàn", npcposx = 87, npcposz = 70, npcscene = 16, namestr = "#{XLRW_210725_400}", strlink = "#{XLRW_210781_602}", AnswerStr = "#{WDJJ_230614_728}"},
+				[6] = { npcname = "Vß½ng NgÕn", npcposx = 96, npcposz = 92, npcscene = 16, namestr = "#{XLRW_210725_402}", strlink = "#{XLRW_210781_604}", AnswerStr = "#{WDJJ_230614_729}"},
 				},
 	[MP_DALI] = {
-				[1] = { npcname = "±¾Òò", npcposx = 96, npcposz = 66, npcscene = 13, namestr = "#{XLRW_210725_375}", strlink = "#{XLRW_210757_577}", AnswerStr = "#{WDJJ_230614_706}"},
-				[2] = { npcname = "±¾¹Û", npcposx = 97, npcposz = 67, npcscene = 13, namestr = "#{XLRW_210725_376}", strlink = "#{XLRW_210757_578}", AnswerStr = "#{WDJJ_230614_707}"},
-				[3] = { npcname = "±¾Ïà", npcposx = 35, npcposz = 86, npcscene = 13, namestr = "#{XLRW_210725_377}", strlink = "#{XLRW_210757_579}", AnswerStr = "#{WDJJ_230614_708}"},
-				[4] = { npcname = "±¾·²", npcposx = 95, npcposz = 88, npcscene = 13, namestr = "#{XLRW_210725_378}", strlink = "#{XLRW_210757_580}", AnswerStr = "#{WDJJ_230614_709}"},
-				[5] = { npcname = "ÆÆàÁ", npcposx = 99, npcposz = 120, npcscene = 13, namestr = "#{XLRW_210725_380}", strlink = "#{XLRW_210757_582}", AnswerStr = "#{WDJJ_230614_710}"},--
-				[6] = { npcname = "Ê¢ÈçÀ¼", npcposx = 152, npcposz = 118, npcscene = 13, namestr = "#{XLRW_210725_381}", strlink = "#{XLRW_210757_583}", AnswerStr = "#{WDJJ_230614_711}"},--
+				[1] = { npcname = "Bän Nhân", npcposx = 96, npcposz = 66, npcscene = 13, namestr = "#{XLRW_210725_375}", strlink = "#{XLRW_210757_577}", AnswerStr = "#{WDJJ_230614_706}"},
+				[2] = { npcname = "Bän Quán", npcposx = 97, npcposz = 67, npcscene = 13, namestr = "#{XLRW_210725_376}", strlink = "#{XLRW_210757_578}", AnswerStr = "#{WDJJ_230614_707}"},
+				[3] = { npcname = "Bän Tß¾ng", npcposx = 35, npcposz = 86, npcscene = 13, namestr = "#{XLRW_210725_377}", strlink = "#{XLRW_210757_579}", AnswerStr = "#{WDJJ_230614_708}"},
+				[4] = { npcname = "Bän Phàm", npcposx = 95, npcposz = 88, npcscene = 13, namestr = "#{XLRW_210725_378}", strlink = "#{XLRW_210757_580}", AnswerStr = "#{WDJJ_230614_709}"},
+				[5] = { npcname = "Phá Sân", npcposx = 99, npcposz = 120, npcscene = 13, namestr = "#{XLRW_210725_380}", strlink = "#{XLRW_210757_582}", AnswerStr = "#{WDJJ_230614_710}"},--
+				[6] = { npcname = "Thành Nhß Lan", npcposx = 152, npcposz = 118, npcscene = 13, namestr = "#{XLRW_210725_381}", strlink = "#{XLRW_210757_583}", AnswerStr = "#{WDJJ_230614_711}"},--
 				},
 	[MP_TIANSHAN] = {
-				[1] = { npcname = "ÎÚÀÏ´ó", npcposx = 90, npcposz = 120, npcscene = 17, namestr = "#{XLRW_210725_404}", strlink = "#{XLRW_210789_606}", AnswerStr = "#{WDJJ_230614_730}"},---
-				[2] = { npcname = "Öñ½£", npcposx = 98, npcposz = 44, npcscene = 17, namestr = "#{XLRW_210725_405}", strlink = "#{XLRW_210789_607}", AnswerStr = "#{WDJJ_230614_731}"},--
-				[3] = { npcname = "À¼½£", npcposx = 88, npcposz = 44, npcscene = 17, namestr = "#{XLRW_210725_406}", strlink = "#{XLRW_210789_608}", AnswerStr = "#{WDJJ_230614_732}"},
-				[4] = { npcname = "Ã·½£", npcposx = 91, npcposz = 44, npcscene = 17, namestr = "#{XLRW_210725_407}", strlink = "#{XLRW_210789_609}", AnswerStr = "#{WDJJ_230614_733}"},
-				[5] = { npcname = "·ûÃôÒÇ", npcposx = 95, npcposz = 60, npcscene = 17, namestr = "#{XLRW_210725_408}", strlink = "#{XLRW_210789_610}", AnswerStr = "#{WDJJ_230614_734}"},
-				[6] = { npcname = "¾Õ½£", npcposx = 101, npcposz = 44, npcscene = 17, namestr = "#{XLRW_210725_409}", strlink = "#{XLRW_210789_611}", AnswerStr = "#{WDJJ_230614_735}"},
+				[1] = { npcname = "Ô Lão ÐÕi", npcposx = 90, npcposz = 120, npcscene = 17, namestr = "#{XLRW_210725_404}", strlink = "#{XLRW_210789_606}", AnswerStr = "#{WDJJ_230614_730}"},---
+				[2] = { npcname = "Trúc Kiªm", npcposx = 98, npcposz = 44, npcscene = 17, namestr = "#{XLRW_210725_405}", strlink = "#{XLRW_210789_607}", AnswerStr = "#{WDJJ_230614_731}"},--
+				[3] = { npcname = "Lan Kiªm", npcposx = 88, npcposz = 44, npcscene = 17, namestr = "#{XLRW_210725_406}", strlink = "#{XLRW_210789_608}", AnswerStr = "#{WDJJ_230614_732}"},
+				[4] = { npcname = "Mai Kiªm", npcposx = 91, npcposz = 44, npcscene = 17, namestr = "#{XLRW_210725_407}", strlink = "#{XLRW_210789_609}", AnswerStr = "#{WDJJ_230614_733}"},
+				[5] = { npcname = "Phù Mçn Nghi", npcposx = 95, npcposz = 60, npcscene = 17, namestr = "#{XLRW_210725_408}", strlink = "#{XLRW_210789_610}", AnswerStr = "#{WDJJ_230614_734}"},
+				[6] = { npcname = "Cúc Kiªm", npcposx = 101, npcposz = 44, npcscene = 17, namestr = "#{XLRW_210725_409}", strlink = "#{XLRW_210789_611}", AnswerStr = "#{WDJJ_230614_735}"},
 				},
 	[MP_XIAOYAO] = {
-				[1] = { npcname = "ËÕÐÇºÓ", npcposx = 125, npcposz = 144, npcscene = 14, namestr = "#{XLRW_210725_382}", strlink = "#{XLRW_210765_584}", AnswerStr = "#{WDJJ_230614_712}"},
-				[2] = { npcname = "¿µ¹ãÁê", npcposx = 125, npcposz = 142, npcscene = 14, namestr = "#{XLRW_210725_383}", strlink = "#{XLRW_210765_585}", AnswerStr = "#{WDJJ_230614_713}"},
-				[3] = { npcname = "Àî¿þÀÜ", npcposx = 69, npcposz = 142, npcscene = 14, namestr = "#{XLRW_210725_384}", strlink = "#{XLRW_210765_586}", AnswerStr = "#{WDJJ_230614_714}"},--
-				[4] = { npcname = "ÇØ¹Û", npcposx = 119, npcposz = 152, npcscene = 14, namestr = "#{XLRW_210725_385}", strlink = "#{XLRW_210765_587}", AnswerStr = "#{WDJJ_230614_715}"},
-				[5] = { npcname = "Ê¯¸ÊÁØ", npcposx = 54, npcposz = 150, npcscene = 14, namestr = "#{XLRW_210725_386}", strlink = "#{XLRW_210765_588}", AnswerStr = "#{WDJJ_230614_716}"},---
-				[6] = { npcname = "·ë°¢Èý", npcposx = 62, npcposz = 68, npcscene = 14, namestr = "#{XLRW_210725_387}", strlink = "#{XLRW_210765_589}", AnswerStr = "#{WDJJ_230614_717}"},
+				[1] = { npcname = "Tô Tinh Hà", npcposx = 125, npcposz = 144, npcscene = 14, namestr = "#{XLRW_210725_382}", strlink = "#{XLRW_210765_584}", AnswerStr = "#{WDJJ_230614_712}"},
+				[2] = { npcname = "Khang Quäng Lång", npcposx = 125, npcposz = 142, npcscene = 14, namestr = "#{XLRW_210725_383}", strlink = "#{XLRW_210765_585}", AnswerStr = "#{WDJJ_230614_713}"},
+				[3] = { npcname = "Lý Khôi L²i", npcposx = 69, npcposz = 142, npcscene = 14, namestr = "#{XLRW_210725_384}", strlink = "#{XLRW_210765_586}", AnswerStr = "#{WDJJ_230614_714}"},--
+				[4] = { npcname = "T¥n Quán", npcposx = 119, npcposz = 152, npcscene = 14, namestr = "#{XLRW_210725_385}", strlink = "#{XLRW_210765_587}", AnswerStr = "#{WDJJ_230614_715}"},
+				[5] = { npcname = "ThÕch Cam Lâm", npcposx = 54, npcposz = 150, npcscene = 14, namestr = "#{XLRW_210725_386}", strlink = "#{XLRW_210765_588}", AnswerStr = "#{WDJJ_230614_716}"},---
+				[6] = { npcname = "Phùng A Tam", npcposx = 62, npcposz = 68, npcscene = 14, namestr = "#{XLRW_210725_387}", strlink = "#{XLRW_210765_589}", AnswerStr = "#{WDJJ_230614_717}"},
 				},
 	[MP_MANTUO] = {
-				[1] = { npcname = "ÌÕÁë", npcposx = 62, npcposz = 191, npcscene = 1283, namestr = "#{XLRW_210725_768}", strlink = "#{XLRW_210725_769}", AnswerStr = "#{WDJJ_230614_736}"},
-				[2] = { npcname = "ÍõË®·ç", npcposx = 186, npcposz = 171, npcscene = 1283, namestr = "#{XLRW_210725_758}", strlink = "#{XLRW_210725_759}", AnswerStr = "#{WDJJ_230614_737}"},
-				[3] = { npcname = "°×Ñ©", npcposx = 141, npcposz = 74, npcscene = 1283, namestr = "#{XLRW_210725_760}", strlink = "#{XLRW_210725_761}", AnswerStr = "#{WDJJ_230614_738}"},
-				[4] = { npcname = "ÍõÓïæÌ", npcposx = 179, npcposz = 79, npcscene = 1283, namestr = "#{XLRW_210725_762}", strlink = "#{XLRW_210725_763}", AnswerStr = "#{WDJJ_230614_739}"},
-				[5] = { npcname = "ÍõÐÇÀË", npcposx = 231, npcposz = 178, npcscene = 1283, namestr = "#{XLRW_210725_764}", strlink = "#{XLRW_210725_765}", AnswerStr = "#{WDJJ_230614_740}"},
-				[6] = { npcname = "Ñô´º", npcposx = 138, npcposz = 73, npcscene = 1283, namestr = "#{XLRW_210725_766}", strlink = "#{XLRW_210725_767}", AnswerStr = "#{WDJJ_230614_741}"},
+				[1] = { npcname = "Ðào Lînh", npcposx = 62, npcposz = 191, npcscene = 1283, namestr = "#{XLRW_210725_768}", strlink = "#{XLRW_210725_769}", AnswerStr = "#{WDJJ_230614_736}"},
+				[2] = { npcname = "Vß½ng ThuÖ Phong", npcposx = 186, npcposz = 171, npcscene = 1283, namestr = "#{XLRW_210725_758}", strlink = "#{XLRW_210725_759}", AnswerStr = "#{WDJJ_230614_737}"},
+				[3] = { npcname = "Tuyªt tr¡ng", npcposx = 141, npcposz = 74, npcscene = 1283, namestr = "#{XLRW_210725_760}", strlink = "#{XLRW_210725_761}", AnswerStr = "#{WDJJ_230614_738}"},
+				[4] = { npcname = "Vß½ng Ngæ Yên", npcposx = 179, npcposz = 79, npcscene = 1283, namestr = "#{XLRW_210725_762}", strlink = "#{XLRW_210725_763}", AnswerStr = "#{WDJJ_230614_739}"},
+				[5] = { npcname = "Vß½ng Tinh Lãng", npcposx = 231, npcposz = 178, npcscene = 1283, namestr = "#{XLRW_210725_764}", strlink = "#{XLRW_210725_765}", AnswerStr = "#{WDJJ_230614_740}"},
+				[6] = { npcname = "Mùa xuân", npcposx = 138, npcposz = 73, npcscene = 1283, namestr = "#{XLRW_210725_766}", strlink = "#{XLRW_210725_767}", AnswerStr = "#{WDJJ_230614_741}"},
 				},
 }
 
@@ -183,30 +183,30 @@ x998358_g_AccomplishInfoStr=
 
 
 
---ÈÎÎñÊý¾Ý
+--nhi®m vø s¯ li®u
 x998358_g_MissionKind = 7
 x998358_g_MissionLevel = 70
 x998358_g_IfMissionElite = 0
 
-x998358_g_IsMissionOkFail = 0--ÈÎÎñÍê³É±êÖ¾Î»(Ò»¶¨ÒªÎª0)
-x998358_g_QuestionIndex = 2--´ðÌâËæ»úË÷Òý
-x998358_g_AnswerIndex = 3--»Øµ½Ë÷Òý
+x998358_g_IsMissionOkFail = 0--???????(????0)
+x998358_g_QuestionIndex = 2--??????
+x998358_g_AnswerIndex = 3--????
 
-x998358_g_MissionName="#{WDJJ_230614_175}"--ÈÎÎñÃû
-x998358_g_MissionInfo="#{WDJJ_230614_176}"--ÈÎÎñÎÄ±¾ÃèÊö£¨ÈÎÎñÁìÈ¡¶Ô°×£©
-x998358_g_MissionComplete="#{WDJJ_230614_178}"--ÈÎÎñÍê³É¶Ô°×
-x998358_g_MissionUnComplete="#{WDJJ_230614_177}"--ÈÎÎñÎ´Íê³É¶Ô°×
-x998358_g_MissionTarget=""--ÈÎÎñÄ¿±ê(ÈÎÎñÃæ°åÖÐÈÎÎñÐÅÏ¢ÏÔÊ¾ÄÚÈÝ)
+x998358_g_MissionName="#{WDJJ_230614_175}"--???
+x998358_g_MissionInfo="#{WDJJ_230614_176}"--??????(??????)
+x998358_g_MissionComplete="#{WDJJ_230614_178}"--??????
+x998358_g_MissionUnComplete="#{WDJJ_230614_177}"--???????
+x998358_g_MissionTarget=""--????(?????????????)
 
---×Ô¶¨ÒåÍê³ÉÇé¿ö£¬ÄÚÈÝ²»ÄÜÊ¹ÓÃ×Öµä£¬·Ö±ð¶ÔÓ¦missionparamµÄµÚ1Î»ºóÑÓ
-x998358_g_Custom = {{id="ÓëÃÅÄÚÇ°±²½»Ì¸",num=1}}
-x998358_g_ParamIndex = 2--ÈÎÎñ²ÎÊý0-Íê³É±ê¼Ç1-Íê³ÉÇé¿ö2-Ëæ»úË÷Òý
+--Tñ ð¸nh nghîa hoàn thành tình hu¯ng, nµi dung không th¬ sØ døng tñ ði¬n, phân bi®t ð¯i Ñng missionparamÐích Ð® 1V¸ H§u Diên
+x998358_g_Custom = {{id="Dß bên trong cánh cØa ti«n b¯i nói chuy®n v¾i nhau",num=1}}
+x998358_g_ParamIndex = 2--????0-????1-????2-????
 
 
---npc¾àÀë
+--Npc khoäng cách
 x998358_g_NpcDist = 5
 
---½±Àø
+--thß·ng cho
 x998358_g_WDPoint_max =3645
 x998358_g_WDPointTotal_max =2970 + 2430 + 3645
 

@@ -1,37 +1,37 @@
 --MisDescBegin
 
--- ½Å±¾ºÅ Í¬Ê±¹ÒÔÚ½ÓÊÜÈÎÎñNPCºÍÌá½»ÈÎÎñNPCÉíÉÏ
+-- k¸ch bän g¯c Hào ğ°ng th¶i b¡t tÕi nh§n nhi®m vø NPCHoà ğ® trình nhi®m vø NPCtrên ngß¶i
 x791103_g_ScriptId 				= 791103
 x791103_g_MainScriptId 			= 791100
 
---Íê³ÉÈÎÎñNPCÊôĞÔ
+--hoàn thành nhi®m vø NPCthuµc tính
 x791103_g_Position_X			= 131
 x791103_g_Position_Z			= 135
 x791103_g_SceneID				= 2
-x791103_g_AccomplishNPC_Name	= "ĞéÇå"
+x791103_g_AccomplishNPC_Name	= "Hß Thanh"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x791103_g_MissionId 			= 2230
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x791103_g_MissionKind 			= 65
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x791103_g_MissionLevel 			= 30
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x791103_g_IfMissionElite 		= 0
 
--- ÈÎÎñÃû
--- SBYR_230707_22	Éñ±ønpc1½×¶ÎÈÎÎñ
+-- nhi®m vø Danh
+-- SBYR_230707_22	th¥n binh Npc 1giai ğoÕn nhi®m vø
 x791103_g_MissionName						= "#{SBYR_230707_28}"
--- ÈÎÎñÄ¿±ê
+-- nhi®m vø møc tiêu
 x791103_g_MissionTarget						= "#{SBYR_230707_174}"	
--- ÈÎÎñ²ÎÊı 0ºÅÇ±¹æÔòÖ»ÄÜÓÃ×÷±ê¼ÇÈÎÎñÊÇ·ñÍê³É£¬»á×Ô¶¯Ó°Ïì¿Í»§¶ËÈÎÎñÁĞ±íÊÇ·ñÏÔÊ¾ÒÑÍê³É
+-- nhi®m vø tham s¯ 0Hào Ti«m quy t¡c chï có th¬ dùng làm d¤u hi®u nhi®m vø hay không hoàn thành, Hµi tñ ğµng änh hß·ng hµ khách Ğoan nhi®m vø Li®t Bi¬u hay không bi¬u hi®n Dî hoàn thành
 x791103_g_IsMissionOkFail					= 0
-x791103_g_Custom 							= {{ id = "ÒÑ·Ö±æ·ÂÃ°ÖÆÆ·", num = 3}, } 
+x791103_g_Custom 							= {{ id = "Dî nh§n giä mÕo chª ph¦m", num = 3}, } 
 x791103_g_ContinueInfo 						= ""
--- Íê³ÉÈÎÎñµÄNPC¶Ô»°
+-- hoàn thành nhi®m vø Ğích NPCğ¯i thoÕi
 x791103_g_MissionComplete 					= "#{}"
 
 -- x791103_g_MoneyJZBonus 						= 0

@@ -1,41 +1,41 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200080_g_ScriptId = 200080
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x200080_g_Position_X=62.9422
 x200080_g_Position_Z=35.9417
 x200080_g_SceneID=2
-x200080_g_AccomplishNPC_Name="¶ÎÕı´¾"
+x200080_g_AccomplishNPC_Name="Ğoàn Chính Thu¥n"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200080_g_MissionId = 1
 
---Ç°ĞøÈÎÎñ
+--Ti«n Tøc nhi®m vø
 x200080_g_PreMissionId = 3
 
---Ä¿±êNPC
-x200080_g_Name	="¶ÎÕı´¾"
+--møc tiêu NPC
+x200080_g_Name	="Ğoàn Chính Thu¥n"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200080_g_MissionKind = 51
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200080_g_MissionLevel = 20
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200080_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x200080_g_MissionName="Ë­¼Ò×ÓµÜË­¼ÒÔº"
+--nhi®m vø Danh
+x200080_g_MissionName="Ğèn nhà ai n¤y sáng"
 x200080_g_MissionInfo="#{Mis_juqing_0001}"
 x200080_g_MissionTarget="#{Mis_juqing_Tar_0001}"
-x200080_g_MissionComplete="  $N£¬ÄãÖÕÓÚÀ´ÁË£¬ÎÒµÈÄãºÃ¾ÃÁË¡£"
+x200080_g_MissionComplete="  $N, cu¯i cùng ngß½i ğã t¾i, ta tìm ngß½i quá lâu"
 
 x200080_g_MoneyJZBonus=11
 x200080_g_exp=2800
 
-x200080_g_Custom	= { {id="ÒÑÕÒµ½¶ÎÕı´¾",num=1} }
+x200080_g_Custom	= { {id="Ğã tìm ğßşc Ğoàn Chính Thu¥n",num=1} }
 x200080_g_IsMissionOkFail = 0
 
 

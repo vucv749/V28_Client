@@ -1,20 +1,20 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x890273_g_ScriptId = 890273
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x890273_g_MissionId = 2241
---ÈÎÎñ¹éÀà
-x890273_g_MissionKind = 9 --Òıµ¼ÈÎÎñ ÀàĞÍ£º9 Â·¾¶£º\Client\Config\MissionKind.txt
---ÈÎÎñµÈ¼¶
+--nhi®m vø phân loÕi
+x890273_g_MissionKind = 9 --???? ??:9 ??:\Client\Config\MissionKind.txt
+--nhi®m vø c¤p b§c
 x890273_g_MissionLevel = 65
---ÈÎÎñÃû
+--nhi®m vø Danh
 x890273_g_MissionName = "#{SQYD_230802_14}"
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x890273_g_MissionTarget = "#{SQYD_230802_32}"
---±ê¼Ç³É¹¦ÊÇÄÄºÅÎ» ÕâÀï±ê¼ÇµÄÊÇ0ºÅÎ»
+--d¤u hi®u thành công Th¸ Ná Hào V¸ n½i này d¤u hi®u chính là 0Hào V¸
 x890273_g_IsMissionOkFail = 0
--- ÈÎÎñÍê³ÉÇé¿ö,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x890273_g_Custom = { { id = "Ñ°É¨µØÉ®ÎÊÑ¯³¤ºŞµ¶", num = 1 } }
+-- nhi®m vø hoàn thành tình hu¯ng, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x890273_g_Custom = { { id = "T¥m Täo Ğ¸a Tång höi ı Trß¶ng H§n Ğao", num = 1 } }
 --x890273_g_ItemBonus={id=38002948, num=1}
 
 --MisDescEnd

@@ -1,52 +1,52 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x210231_g_ScriptId  = 210231
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x210231_g_Position_X=275.2234
 x210231_g_Position_Z=49.2906
 x210231_g_SceneID=2
-x210231_g_AccomplishNPC_Name="»ÆÃ¼É®"
+x210231_g_AccomplishNPC_Name="Hoàng Mi Tång"
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x210231_g_MissionIdPre = 710
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x210231_g_MissionId = 711
 
---Ä¿±êNPC
-x210231_g_Name	="»ÆÃ¼É®"
+--møc tiêu NPC
+x210231_g_Name	="Hoàng Mi Tång"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x210231_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x210231_g_MissionLevel = 9
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x210231_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x210231_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+--nhi®m vø hay không ğã hoàn thành
+x210231_g_IsMissionOkFail = 0		--????0?
 
---ÈÎÎñĞèÒªÉ±ËÀµÄ¹Ö
-x210231_g_DemandKill ={{id=703,num=5}}		--±äÁ¿µÚ1Î»
+--nhi®m vø c¥n giªt chªt Ğích Quái
+x210231_g_DemandKill ={{id=703,num=5}}		--???1?
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x210231_g_MissionName="Ğ¡Ä¾ÈËÏï"
-x210231_g_MissionInfo="  Ê©Ö÷£¬ÕâĞ¡Ä¾ÈËÏïËäÈ»±È²»µÃÉÙÁÖËÂÄ¾ÈËÏï£¬µ«Àï±ßµÄ¹ÖÎïÒ²ÊÇæçÓÂÒì³£¡£ÇëÊ©Ö÷ĞŞÁ¶Ê±Á¿Á¦¶øĞĞ¡£#r  Ê©Ö÷Ö»ÒªÉ±ËÀ5Ö»Ä¾Í·ÈË£¬¾ÍÍê³ÉÁËÕâ´ÎĞŞÁ¶¡£Ò»´ÎÃ»ÓĞ´òÍêÒ²²»Òª½ô£¬Ê©Ö÷¿ÉÒÔ·´¸´³öÈëÄ¾ÈËÏï£¬Ö±µ½Íê³ÉÎªÖ¹¡£" --ÈÎÎñÃèÊö
-x210231_g_MissionTarget="ÕÒ#R»ÆÃ¼É®#W#{_INFOAIM275,49,2,»ÆÃ¼É®}½øÈëĞ¡Ä¾ÈËÏï£¬ÔÚ#GĞ¡Ä¾ÈËÏï#WÖĞÉ±ËÀ5Ö»#RÄ¾Í·ÈË#W£¬È»ºó»Øµ½#R»ÆÃ¼É®#W#{_INFOAIM275,49,2,»ÆÃ¼É®}ÄÇÀï¡£#b#G£¨ÇëÓÃ×ó¼üµã»÷´øÏÂ»®ÏßµÄ×ø±ê£¬°ïÖúÄúÕÒµ½¸ÃNPC£©#l"	--ÈÎÎñÄ¿±ê
-x210231_g_ContinueInfo="ÄãÒÑ¾­É±ËÀÁË5¸öÄ¾Í·ÈËÁËÂğ£¿"	--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x210231_g_MissionComplete="  Ê©Ö÷µÄĞŞÁ¶·Ç³£³É¹¦£¬Æ¬¿Ì²»¼û£¬Îä¹¦¾«½øÁË²»ÉÙ°¡¡£"	--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
-x210231_g_SignPost = {x = 275, z = 50, tip = "»ÆÃ¼É®"}
---ÈÎÎñ½±Àø
+--nhi®m vø vån bän miêu tä
+x210231_g_MissionName="Ti¬u Mµc Nhân HÕng"
+x210231_g_MissionInfo="Thí chü, Giá Ti¬u Mµc Nhân HÕng tuy r¢ng Tï không ğßşc Thiªu Lâm Tñ Mµc Nhân HÕng, Ğãn bên trong Ğích quái v§t cûng là dûng mãnh d¸ thß¶ng. Thïnh thí chü tu luy®n Th¶i lßşng sÑc mà ği. #r thí chü chï c¥n giªt TØ 5Chích Mµc Ğ¥u Nhân, Tñu hoàn thành Li­u l¥n này tu luy®n. Mµt l¥n không có ğánh Hoàn cûng không quan tr÷ng h½n, thí chü có th¬ l£p lÕi xu¤t nh§p Mµc Nhân HÕng, thÆng ğªn hoàn thành m¾i thôi." --????
+x210231_g_MissionTarget="Träo#RHOàng Mi Tång#W#{_INFOAIM275, 49, 2, Hoàng Mi Tång}tiªn vào Ti¬u Mµc Nhân HÕng, TÕi#GTi¬u Mµc Nhân HÕng#WTrung giªt chªt 5Chích#RMµc Ğ¥u Nhân#W, sAu ğó tr· lÕi#RHoàng Mi Tång#W#{_INFOAIM275, 49, 2, Hoàng Mi Tång}n½i ğó. #b#G(Thïnh Døng Tä Ki®n Ği¬m Kích b®nh bÕch ğ¾i phác h÷a Ğích t÷a ğµ, trş giúp Nhçm tìm ğßşc Cai NPC)#l"	--????
+x210231_g_ContinueInfo="Nhî ğã giªt chªt Li­u 5Cá Mµc Ğ¥u Nhân Li­u Ma?"	--??????npc??
+x210231_g_MissionComplete="Thí chü Ğích tu luy®n phi thß¶ng thành công, mµt lát không th¤y, võ công tinh tiªn Li­u không ít A."	--????npc????
+x210231_g_SignPost = {x = 275, z = 50, tip = "Hoàng Mi Tång"}
+--nhi®m vø thß·ng cho
 x210231_g_MoneyBonus=200
 --x210231_g_ItemBonus={{id=40002108,num=1},{id=30101001,num=5}}
 
-x210231_g_DemandTrueKill ={{name="Ä¾Í·ÈË",num=5}}
+x210231_g_DemandTrueKill ={{name="Mµc Ğ¥u Nhân",num=5}}
 
 
 --MisDescEnd

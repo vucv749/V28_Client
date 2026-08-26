@@ -1,41 +1,41 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200012_g_ScriptId = 200012
 
---¸±±¾Ãû³Æ
-x200012_g_CopySceneName="Ñà×ÓÎë"
+--bän sao tên
+x200012_g_CopySceneName="Yªn TØ ‘"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200012_g_MissionId = 11
 
---Ç°ĞøÈÎÎñºÅ
+--Ti«n Tøc nhi®m vø Hào
 x200012_g_PreMissionId = 10
 
---Ä¿±êNPC
-x200012_g_Name = "ÍõÓïæÌ"
+--møc tiêu NPC
+x200012_g_Name = "Vß½ng Ngæ Yên"
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200012_g_IfMissionElite = 1
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200012_g_MissionLevel = 30
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200012_g_MissionKind = 48
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x200012_g_MissionName="¶ÀÕ½Ë«ĞÛ"
+--nhi®m vø vån bän miêu tä
+x200012_g_MissionName="Ğµc chiªn song hùng"
 x200012_g_MissionInfo="#{Mis_juqing_0011}"
-x200012_g_MissionTarget="#{Mis_juqing_Tar_0011}"	--ÈÎÎñÄ¿±ê
-x200012_g_MissionComplete="  Ì«ºÃÁË£¬ÄÇĞ©»µÈËÒ»¶¨»áÏÅÅÜµÄ£¬ÎÒÃÇ°²È«ÁË¡£"	--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
-x200012_g_MissionContinue="  ÄãÒÑ¾­´ò°ÜË¾ÂíÁÖºÍÒ¦²®µ±£¬ÄÃµ½À×¹«ºäºÍÎå»¢¶ÏÃÅµ¶ÁËÂğ£¿"
+x200012_g_MissionTarget="#{Mis_juqing_Tar_0011}"	--????
+x200012_g_MissionComplete="Th§t t¯t quá, này ngß¶i x¤u nh¤t ğ¸nh Hµi Hách Bào Ğích, chúng ta an toàn Li­u."	--????npc????
+x200012_g_MissionContinue="  Ngß½i ğã ğánh bÕi ğßşc Tß Mã Lâm và Ğào Bách Ğß½ng, ğã ğßşc Lôi Công Oanh và Ngû H± ĞoÕn Môn Ğao chßa?"
 
 x200012_g_MoneyJZBonus=8910
 x200012_g_exp=9600
 
 x200012_g_RadioItemBonus={{id=10415001 ,num=1},{id=10415002,num=1},{id=10415003,num=1}}
 
-x200012_g_DemandItem={{id=40001002,num=1},{id=40001003,num=1}}		--´Ó±³°üÖĞ¼ÆËã
+x200012_g_DemandItem={{id=40001002,num=1},{id=40001003,num=1}}		--??????
 
 
 --MisDescEnd

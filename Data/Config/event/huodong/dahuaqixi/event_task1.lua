@@ -2,24 +2,24 @@
 x999411_g_ScriptId	= 999411
 x999411_g_NextScriptId = 999412
 x999411_g_MainScriptId = 999406
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x999411_g_MissionId = 2317	
 x999411_g_Position_X = 159
 x999411_g_Position_Z = 109
 x999411_g_SceneID = 0
---½ÓÈÎÎñNPC
-x999411_g_AccomplishNPC_Name = "ÆĞÌáÀÏ×æ"--ÂåÑô ÆĞÌáÀÏ×æ(159 109)
+--tiªp nh§n chÑc vø Vø NPC
+x999411_g_AccomplishNPC_Name = "B° Ğ« Lão T±"--?? ????(159 109)
 x999411_g_Name	=
 {
-	[1] = "½ğ´ó¼á",		--Î÷ºş£¨141,48£©
-	[2] = "ÌÒØ²Ø²",		--¶ıº££¨191,269£©
-	[3] = "ÖÜÎŞÎ·",		--ÑãÄÏ£¨242,73£©
+	[1] = "Kim ĞÕi Kiên",		--??(141,48)
+	[2] = "Ğào Yêu Yêu",		--??(191,269)
+	[3] = "Châu Vô Uı",		--??(242,73)
 }
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x999411_g_MissionKind = 70
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x999411_g_IfMissionElite = 0
---ÈÎÎñÃû
+--nhi®m vø Danh
 x999411_g_MissionName="#{DHYR_240515_21}"    
 
 x999411_g_MissionInfo="#{DHYR_240515_30}"		
@@ -27,8 +27,8 @@ x999411_g_MissionInfo="#{DHYR_240515_30}"
 x999411_g_MissionTarget="#{DHYR_240515_34}"
 x999411_g_MissionContinue="#{DHYR_240515_32}"
 x999411_g_MissionComplete ="#{DHYR_240515_33}"
-x999411_g_Custom = {id="´òÌ½ÏûÏ¢",num=1}
---ÈÎÎñµÈ¼¶
+x999411_g_Custom = {id="Do Thám tin tÑc",num=1}
+--nhi®m vø c¤p b§c
 x999411_g_MissionLevel = 30
 
 --MisDescEnd

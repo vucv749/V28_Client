@@ -1,34 +1,34 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x212103_g_ScriptId = 212103
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x212103_g_MissionId = 602
 
---ÈÎÎñÄ¿±ênpc
-x212103_g_Name	="Ô²ÔÂ´å´å³¤Ö£Ğş" 
+--nhi®m vø møc tiêu Npc
+x212103_g_Name	="Viên Nguy®t Thôn Thôn Trß·ng Tr¸nh Huy«n" 
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x212103_g_MissionKind = 37
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x212103_g_MissionLevel = 55
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x212103_g_IfMissionElite = 0
 
---******ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö******
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x212103_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
+--******phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng******
+--nhi®m vø hay không ğã hoàn thành
+x212103_g_IsMissionOkFail = 0		--????0?
 
---******ÒÔÉÏÊÇ¶¯Ì¬*****
+--******ğã ngoài Th¸ ğµng thái*****
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x212103_g_MissionName="¾øÍûÖ®µØ"
+--nhi®m vø vån bän miêu tä
+x212103_g_MissionName="Vùng ğ¤t tuy®t v÷ng"
 x212103_g_MissionInfo="#{Lua_Shilin_001}"
-x212103_g_MissionTarget="ÌıÖ£Ğş#{_INFOAIM182,163,26,Ö£Ğş}½²ËûµÄ¹ÊÊÂ¡£"
+x212103_g_MissionTarget="Nghe câu chuy®n Tr¸nh Huy«n k¬ #{_INFOAIM182,163,26,Tr¸nh Huy«n}."
 x212103_g_ContinueInfo="....."
-x212103_g_MissionComplete="ÎÒµÄ¹ÊÊÂ½²ÍêÁË£¬ÄãºÃºÃ¿¼ÂÇÒ»ÏÂ°É¡£"
+x212103_g_MissionComplete="Chuy®n cüa ta ğã k¬ xong, ngß½i hãy suy nghî ği"
 
 x212103_g_MoneyJZBonus=21000
 x212103_g_Exp = 6000

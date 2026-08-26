@@ -1,79 +1,79 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x890001_g_ScriptId	= 890001
 
---Ç°ĞøÈÎÎñºÅ
+--Ti«n Tøc nhi®m vø Hào
 x890001_g_MissionIdPre 	= 750
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x890001_g_MissionId		= 751
---ÏÂÒ»¸öÈÎÎñµÄID
+--kª tiªp nhi®m vø Ğích ID
 x890001_g_MissionIdNext	= 752
 
---ÏÂÒ»¸öÈÎÎñµÄScriptId
+--kª tiªp nhi®m vø Ğích ScriptId
 x890001_g_NextScriptId	= 890002
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x890001_g_MissionKind		= 4
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x890001_g_MissionLevel		= 45
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x890001_g_IfMissionElite	= 0
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x890001_g_IsMissionOkFail	= 0		--ÈÎÎñ²ÎÊıµÄµÚ0Î»
+--nhi®m vø hay không ğã hoàn thành
+x890001_g_IsMissionOkFail	= 0		--??????0?
 
---ÈÎÎñÎÄ±¾ÃèÊö
+--nhi®m vø vån bän miêu tä
 x890001_g_MissionName		= "#{TSXF_090408_05}"
---ÈÎÎñÃèÊö
+--nhi®m vø miêu tä
 x890001_g_MissionInfo_1		= "#{TSXF_090408_19}"
 x890001_g_MissionInfo_2		= "#{TSXF_090408_38}"
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x890001_g_MissionTarget		= "%f"
---ÓÃÀ´±£´æ×Ö·û´®¸ñÊ½»¯µÄÊı¾İ
+--dùng ğ¬ bäo t°n tñ phù Xuyªn cách thÑc Hoá Ğích s¯ li®u
 x890001_g_FormatList = {
 								"#{TSXF_090408_35}#Y%s#W#{TSXF_090408_36}#{TSXF_090408_14}#Y%s#W#{TSXF_090408_15}",
 							}
 
---¸ñÊ½×Ö·û´®ÖĞµÄË÷Òı, ±íÊ¾´Ó4¿ªÊ¼,ºó¶àÉÙÎ»ÊÓSetMissionByIndex(...)µÄ¶àÉÙ¶ø¶¨
+--cách thÑc tñ phù Xuyªn Trung Ğích hß¾ng dçn tra cÑu, tö vë Thung 4b¡t ğ¥u, H§u nhi«u ít V¸ Th¸ SetMissionByIndex(. . . )Ğích nhi«u ít Nhi Ğ¸nh
 x890001_g_StrForePart=4
 --x890001_g_ShimenPet_Index = 1
 
 x890001_g_StrList = {
-						"ÁúÊ÷ĞÄ¾­",
-						"ÁÒÑæ´ó·¨",
-						"¿Øº×¹¦",
-						"Ì«¼«È­·¨",
-						"¾ı×Ó½£·¨",
-						"Ê¥Ë®¾­",
-						"¶Î¼Ò½£·¨",
-						"ÌìÉ½ÕÛÃ·ÊÖ",
-						"µ¤ÇàÒı",
-						"»Û·½#{_INFOAIM96,82,9,»Û·½}",
-						"ÁÖÑÒ#{_INFOAIM98,105,11,ÁÖÑÒ}",
-						"ºéÍ¨#{_INFOAIM92,77,10,ºéÍ¨}",
-						"ÕÅÖĞĞĞ#{_INFOAIM78,95,12,ÕÅÖĞĞĞ}",
-						"ÃÏÁú#{_INFOAIM96,86,15,ÃÏÁú}",
-						"ÍõÑå#{_INFOAIM96,92,16,ÍõÑå}",
-						"±¾·²#{_INFOAIM96,88,13,±¾·²}",
-						"·ûÃôÒÇ#{_INFOAIM95,60,17,·ûÃôÒÇ}",
-						"ÇØ¹Û#{_INFOAIM119,152,14,ÇØ¹Û}",
-						"ÀÅçğ¾Éµä",                      --newmenpai
-						"Íõ°²¸è#{_INFOAIM129,106,592,Íõ°²¸è}", 
+						"Long Thø Tâm Kinh",
+						"Li®t Di®m ĞÕi pháp",
+						"Kh¯ng HÕc Công",
+						"Thái Cñc Quy«n Pháp",
+						"Quân TØ Kiªm Pháp",
+						"Thánh Thüy Kinh",
+						"Ğoàn Gia Kiªm Pháp",
+						"Thiên S½n Chiªt Mai Thü",
+						"Ğan Thanh Dçn",
+						"Tu® Phß½ng#{_INFOAIM96, 82, 9, Tu® Phß½ng}",
+						"Lâm Nham#{_INFOAIM98, 105, 11, Lâm Nham}",
+						"H°ng Thông#{_INFOAIM92, 77, 10, H°ng Thông}",
+						"Trß½ng Trung Hành#{_INFOAIM78, 95, 12, Trß½ng Trung Hành}",
+						"MÕnh Long#{_INFOAIM96, 86, 15, MÕnh Long}",
+						"Vß½ng NgÕn#{_INFOAIM96, 92, 16, Vß½ng NgÕn}",
+						"B±n Phàm#{_INFOAIM96, 88, 13, B±n Phàm}",
+						"Phù Mçn Nghi#{_INFOAIM95, 60, 17, Phù Mçn Nghi}",
+						"T¥n Quan#{_INFOAIM119, 152, 14, T¥n Quan}",
+						"Lang Gia Cñu Ği¬n",                      --newmenpai
+						"Vß½ng An Ca#{_INFOAIM129, 106, 592, Vß½ng An Ca}", 
 						}
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
 x890001_g_ContinueInfo_1	= "#{TSXF_090408_12}"
 x890001_g_ContinueInfo_2	= "#{TSXF_090408_13}"
---Íê³ÉÈÎÎñnpcËµµÄ»°
+--hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
 x890001_g_MissionComplete_1	= "#{TSXF_090408_12}"
 x890001_g_MissionComplete_2	= "#{TSXF_090408_17}"
 x890001_g_MissionComplete_3	= "#{TSXF_090408_41}"
---¿ÉÒÔÍê³ÉµÄ»·Êı
+--có th¬ hoàn thành Ğích Hoàn S±
 x890001_g_MaxRound	= 1
---ĞÄ·¨µÈ¼¶ÒªÇó
+--tâm pháp c¤p b§c yêu c¥u
 x890001_g_MissionXinFa	= 35	
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x890001_g_Custom	= { {id="ÒÑÁ·µ½35¼¶",num=1} }
---½±Àø
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x890001_g_Custom	= { {id="Dî luy®n ğªn C¤p 35",num=1} }
+--thß·ng cho
 x890001_g_MoneyBonus		=	70000
 x890001_g_ItemBonus={id=30505148, num=1}
 

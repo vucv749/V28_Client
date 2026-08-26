@@ -1,45 +1,45 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x893259_g_ScriptId = 893259
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ                 £¨ÁÙÊ±×ø±ê£©
+--nh§n nhi®m vø NPCthuµc tính (lâm th¶i t÷a ğµ)
 x893259_g_Position_X=129
 x893259_g_Position_Z=106
 x893259_g_SceneID=1283
-x893259_g_AccomplishNPC_Name="Íõ°²¸è"
+x893259_g_AccomplishNPC_Name="Vß½ng An Ca"
 
---Ç°ÌáÈÎÎñ
+--ği«u ki®n tiên quyªt nhi®m vø
 --g_MissionIdPre =
 
---ÈÎÎñÄ¿±ênpc
-x893259_g_Name	= "Íõ°²¸è"
+--nhi®m vø møc tiêu Npc
+x893259_g_Name	= "Vß½ng An Ca"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x893259_g_MissionId = 2126
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x893259_g_MissionKind = 61
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x893259_g_MissionLevel = 10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x893259_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x893259_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+--nhi®m vø hay không ğã hoàn thành
+x893259_g_IsMissionOkFail = 0		--????0?
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñ±äÁ¿µÚÒ»Î»ÓÃÀ´´æ´¢Ëæ»úµÃµ½µÄ½Å±¾ºÅ
+--nhi®m vø lßşng biªn ğ±i ğ® nh¤t v¸ dùng ğ¬ t°n træ TuÏ C½ nh§n ğßşc Ğích k¸ch bän g¯c Hào
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x893259_g_MissionName="Ê¦ÃÅÈÎÎñ"
-x893259_g_MissionInfo=""  --ÈÎÎñÃèÊö
+--nhi®m vø vån bän miêu tä
+x893259_g_MissionName="Nhi®m vø Sß Môn"
+x893259_g_MissionInfo=""  --????
 x893259_g_MissionTarget = "%f"
-x893259_g_ContinueInfo="¸ÉµÃ²»´í"		--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x893259_g_MissionComplete="ÎÒ½»¸øÄãµÄÊÂÇéÒÑ¾­×öÍêÁËÂğ£¿"					--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+x893259_g_ContinueInfo="Làm ğßşc không t°i"		--??????npc??
+x893259_g_MissionComplete="Vi®c ta giao ğã hoàn thành chßa?"					--????npc????
 x893259_g_MissionRound=17
 x893259_g_DoubleExp = 48
 x893259_g_AccomplishCircumstance = 1
@@ -49,40 +49,40 @@ x893259_g_Parameter_Kill_AllRandom={{id=7,numa=3,numb=3,bytenuma=0,bytenumb=1}}
 x893259_g_Parameter_Item_IDRandom={{id=6,num=5}}
 x893259_g_NpcIdIndicator={{key=2,npcIdIndex=5},{key=9,npcIdIndex=7}}
 
---ÓÃÀ´±£´æ×Ö·û´®¸ñÊ½»¯µÄÊı¾İ
+--dùng ğ¬ bäo t°n tñ phù Xuyªn cách thÑc Hoá Ğích s¯ li®u
 x893259_g_FormatList = {
-								"ºÃ¾ÃÃ»ÓĞ¼ûµ½#R%n#WÁË£¬ºÜÊÇÏëÄî°¡¡£Õâ¸ö#G%s#WÊÇÎÒµÄÒ»µãĞÄÒâ£¬ÇëÄã°ÑËüËÍ¹ıÈ¥°É¡£#r  #GĞ¡ÌáÊ¾£º#W#r  Äã¿ÉÒÔÔÚÂüÍÓÉ½×¯ÕÒµ½#RÓÄ²İ#W#{_INFOAIM143,159,592,ÓÄ²İ}£¬ÇëËı°ÑÄãËÍÍù¸÷´ó³ÇÊĞ¡£#{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
-								"ÎÒµÄ#G%i#WÔõÃ´²»¼ûÁË£¿Èç¹ûÄãÄÜ°ïÎÒÕÒ»ØÀ´£¬ÎÒÊÇ²»»á¿÷´ıÄãµÄ¡£#r  #GĞ¡ÌáÊ¾£º#W#r   Äã¿ÉÒÔÔÚÂüÍÓÉ½×¯ÕÒµ½#RÓÄ²İ#W#{_INFOAIM143,159,592,ÓÄ²İ}£¬ÇëËı°ÑÄãËÍÍù¸÷´ó³ÇÊĞ¡£#{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
-								"#G%n#WÎª·Ç×÷´õ£¬ÎÒÓĞĞÄÈ¥½ÌÑµÒ»ÏÂ£¬¿ÉÏ§Ã»ÓĞÊ±¼ä£¬ÄãÄÜ´úÀÍÂğ£¿#r  #GĞ¡ÌáÊ¾£º#W#r  Äã¿ÉÒÔÔÚÂüÍÓÉ½×¯ÕÒµ½#RÓÄ²İ#W#{_INFOAIM143,159,592,ÓÄ²İ}£¬ÇëËı°ÑÄãËÍÍù¸÷´ó³ÇÊĞ¡£#{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
-								"ÇëÄãÊ¹ÓÃ#Y%s#W£¬ÔÚ#G%s#WµÄ#G%s#W¸½½ü½øĞĞ²¥ÖÖ¡£#r  #GĞ¡ÌáÊ¾£º#W#r  µ±ÄãÀ´µ½½øĞĞ²¥ÖÖµÄµØµã¸½½üÊ±£¬Äã¿ÉÒÔ°´#GAlt+A#W¿ÉÒÔ´ò¿ªÎïÆ·À¸£¬µã»÷#G¡°ÈÎÎñ¡±#WÒ³Ãæ¾Í¿ÉÒÔ´ò¿ªÈÎÎñÎïÆ·À¸£¬ÓÒ¼üµã»÷#Y»¨ÖÖ#W£¬¾Í¿ÉÒÔÍê³É²¥ÈöÁË¡£#{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
-								"ÇëÄãÈ¥ÕÒµ½#R%s#W£¬ Ëû»á´øÄãÈ¥±¾ÅÉ#G%s#WµÄ·ÅÖÃ´¦¡£#r  #GĞ¡ÌáÊ¾£º#W#r  Íõµşä¸¾ÍÔÚÂüÍÓÉ½×¯#{_INFOAIM30,197,592,Íõµşä¸}¡£#{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
-								"ÇëÄã°ïÎÒ×¥Ò»Ö»#G%p#WÀ´¡£#B#r  #GĞ¡ÌáÊ¾£º#W#r  #GÂüÍÓÉ½×¯µÄÓÄ²İ#{_INFOAIM143,159,592,ÓÄ²İ}#W¿ÉÒÔËÍÄãÈ¥ĞşÎäµº£¬¶øĞşÎäµºÓĞÒ»ÌõĞ¡Â·Í¨ÍùÊ¥ÊŞÉ½¡£Äã¿ÉÒÔÔÚĞşÎäµº»òÕßÊ¥ÊŞÉ½ÉÏ²¶×½ÎÒĞèÒªµÄÕäÊŞ¡£#{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
-								"ÇëÄãÔÚÂüÍÓÉ½×¯ËÄ´¦¿´¿´£¬°ïÎÒÕÒÀ´5¸ö#G%s#W¡£#r  #GĞ¡ÌáÊ¾£º#W#r  Äã¿ÉÒÔÔÚÆÁÄ»ÓÒÉÏ½ÇµÄĞ¡µØÍ¼ÉÏÕÒµ½»ÆÉ«µÄÖ¸Ê¾µã¡£#{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
-								"Çë¸ø#R%s#WËÍÈ¥Ò»¸ö#G%i#W°É£¬ÊÂ³ÉÖ®ºó£¬ÎÒ»á¸øÄã±¨³êµÄ£¡#r  #GĞ¡ÌáÊ¾£º#W#r  ÑÏÂèÂè¾ÍÔÚÂüÍÓÉ½×¯#{_INFOAIM228,196,592,ÑÏÂèÂè}¡£#r  Áø·ö·ç¾ÍÔÚÂüÍÓÉ½×¯#{_INFOAIM125,195,592,Áø·ö·ç}¡£#r  ¹ØÉ½ÔÂ¾ÍÔÚÂüÍÓÉ½×¯#{_INFOAIM210,158,592,¹ØÉ½ÔÂ}¡£#{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
-								"È¥É±ËÀ#G%s%s#W¸ö#G%n#W¡£#{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
+								"Ğã lâu không có nhìn th¤y#R%N#WLi­u, r¤t là tß·ng ni®m A. Này#G%s#Wlà cüa ta mµt chút tâm ı, m¶i ngß½i b¡t nó T¯ng quá khÑ Ba. #r #GTi¬u nêu lên: #W#r Nhî có th¬ TÕi MÕn Ğà S½n Trang tìm ğßşc#RU Thäo#W#{_INFOAIM143, 159, 592, U Thäo}, Thïnh Tha ğem ngß½i T¯ng Vãng Các thành ph¯ l¾n. #{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
+								"Cüa ta#G%I#Wnhß thª nào không th¤y Li­u? Nªu Nhî Nång giúp ta tìm tr· v«, ta s¨ không bÕc ğãi ngß½i Ğích. #r #GTi¬u nêu lên: #W#r Nhî có th¬ TÕi MÕn Ğà S½n Trang tìm ğßşc#RU Thäo#W#{_INFOAIM143, 159, 592, U Thäo}, Thïnh Tha ğem ngß½i T¯ng Vãng Các thành ph¯ l¾n. #{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
+								"#G%N#Wlàm x¢ng làm b§y, ta có Tâm KhÑ giáo hu¤n mµt chút, ğáng tiªc không có th¶i gian, Nhî có th¬ thay Lao Ma? #r #GTi¬u nêu lên: #W#r Nhî có th¬ TÕi MÕn Ğà S½n Trang tìm ğßşc#RU Thäo#W#{_INFOAIM143, 159, 592, U Thäo}, Thïnh Tha ğem ngß½i T¯ng Vãng Các thành ph¯ l¾n. #{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
+								"M¶i ngß½i sØ døng#Y%S#W, T?i#G%s#WĞích#G%s#Wg¥n ğây tiªn hành gieo. #r #GTi¬u nêu lên: #W#r Ğang các hÕ t¾i Ğáo tiªn hành gieo Ğích ğ¸a ği¬m g¥n ğây Th¶i, Nhî có th¬ Án#GAlt+A#Wcó th¬ Tá Khai v§t ph¦m Lan, Ği¬m Kích#G'nhi®m vø'#WDi®p Di®n là có th¬ Tá Khai nhi®m vø v§t ph¦m Lan, Hæu Ki®n Ği¬m Kích#YHoa Xung#W, là có th¬ hoàn thành gieo r¡c Li­u. #{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
+								"M¶i ngß½i ği tìm Ğáo#R%S#W, THa Hµi mang ngß½i KhÑ b±n phái#G%s#WĞích ğ¬ ğ£t XØ. #r #GTi¬u nêu lên: #W#r Vß½ng Ği®p Quyên ngay tÕi MÕn Ğà S½n Trang#{_INFOAIM30, 197, 592, Vß½ng Ği®p Quyên}. #{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
+								"M¶i ngß½i giúp ta Träo Nh¤t Chích#G%P#WLai. #B#r #GTi¬u nêu lên: #W#r #GMÕn Ğà S½n Trang Ğích U Thäo#{_INFOAIM143, 159, 592, U Thäo}#Wcó th¬ T¯ng ngß½i ği Huy«n Võ Ğäo, Nhi Huy«n Võ Ğäo Hæu mµt cái ğß¶ng nhö ği thông Thánh Thú S½n. Nhî có th¬ TÕi Huy«n Võ Ğäo ho£c là Thánh Thú S½n Thßşng b¡t giæ Ngã c¥n Ğích Trân Thú. #{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
+								"M¶i ngß½i TÕi MÕn Ğà S½n Trang chung quanh nhìn xem, giúp ta Träo Lai 5Cá#G%S#W. #r #GTi¬u nêu lên: #W#r Nhî có th¬ TÕi màn hình Hæu Thßşng Giác Ğích Ti¬u trên bän ğ° tìm ğßşc màu vàng Ğích chï th¸ Ği¬m. #{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
+								"Thïnh C¤p#R%S#Wğßa ği mµt cái#G%i#WBa, Sñ Thành lúc sau, ta s¨ cho ngß½i báo thù! #r #GTi¬u nêu lên: #W#r Nghiêm mø mø ngay tÕi MÕn Ğà S½n Trang#{_INFOAIM228, 196, 592, Nghiêm mø mø}. #r Li­u Phù Phong ngay tÕi MÕn Ğà S½n Trang#{_INFOAIM125, 195, 592, Li­u Phù Phong}. #r Quan S½n Nguy®t ngay tÕi MÕn Ğà S½n Trang#{_INFOAIM210, 158, 592, Quan S½n Nguy®t}. #{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
+								"KhÑ giªt chªt#G%S%s#WCá#G%n#W. #{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
 								}
 
 
---¸ñÊ½×Ö·û´®ÖĞµÄË÷Òı, ±íÊ¾´Ó4¿ªÊ¼,ºó¶àÉÙÎ»ÊÓSetMissionByIndex(...)µÄ¶àÉÙ¶ø¶¨
+--cách thÑc tñ phù Xuyªn Trung Ğích hß¾ng dçn tra cÑu, tö vë Thung 4b¡t ğ¥u, H§u nhi«u ít V¸ Th¸ SetMissionByIndex(. . . )Ğích nhi«u ít Nhi Ğ¸nh
 x893259_g_StrForePart=4
 x893259_g_ShimenPet_Index = 1
 
 x893259_g_StrList = {
-						"»¨ÖÖ",
-						"³ĞÂ¶ÌÃ",
-						"Á÷·¼µé",
-						"ÀÅ‹ÖÓì",
-						"×¤ÔÆÇÙÌ¨",
-						"Íõµşä¸",
-						"ğ©ÔÂÖŞ¸±±¾",
-						"ÏãÁÏ",
-						"ÇíÓñÓÍÖ¬",
-						"ÇÙÄ¾",
-						"ÑÏÂèÂè",
-						"Áø·ö·ç",
-						"¹ØÉ½ÔÂ",
-						"Ò°Éú²ñÃ¨",
-						"»¨Ìï",
+						"Hoa Xung",
+						"Th×a Lµ Ğß¶ng",
+						"Lßu danh Ği®n",
+						"Lang hoàn Dæ",
+						"Mây tø C¥m Ğài",
+						"Vß½ng Ği®p Quyên",
+						"Trång sáng Châu bän sao",
+						"Hß½ng li®u",
+						"QuÏnh Ng÷c d¥u tr½n",
+						"C¥m Mµc",
+						"Nghiêm mø mø",
+						"Li­u Phù Phong",
+						"Quan S½n Nguy®t",
+						"Sài Miêu Dã Sinh",
+						"Hoa Ği«n",
 						"0",
 						"1",
 						"2",

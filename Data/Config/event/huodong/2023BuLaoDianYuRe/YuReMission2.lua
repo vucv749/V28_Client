@@ -1,47 +1,47 @@
 --MisDescBegin
 x890144_g_ScriptId = 890144
 x890144_g_MissionId = 2152
-x890144_g_MainScriptId = 890152--Ö÷½Å±¾ºÅ
+x890144_g_MainScriptId = 890152--????
 
 --kdzz
 x890144_g_KDZZID = 1006000563
 x890144_g_KDZZSubID = 2
 
---½ÓÈÎÎñnpc
-x890144_g_AcceptNPC_Name="ÉñÃØÅ®×Ó"--½ÓÈÎÎñµÄnpc»òÕßnpcÁĞ±í
+--tiªp nh§n chÑc vø Vø Npc
+x890144_g_AcceptNPC_Name="Th¥n bí næ tØ"--????npc??npc??
 
---½»ÈÎÎñnpc
-x890144_g_Position_X=220--Íê³ÉÈÎÎñNPCÊôĞÔ
+--Giao nhi®m vø Npc
+x890144_g_Position_X=220--????NPC??
 x890144_g_Position_Z=91
 x890144_g_SceneID=1298
-x890144_g_AccomplishNPC_Name="ÉñÃØÅ®×Ó"
+x890144_g_AccomplishNPC_Name="Th¥n bí næ tØ"
 
---ÈÎÎñÊı¾İ
+--nhi®m vø s¯ li®u
 x890144_g_MissionKind = 9
 x890144_g_MissionLevel = 30
 x890144_g_IfMissionElite = 0
-x890144_g_IsMissionOkFail = 0--ÈÎÎñÍê³É±êÖ¾Î»(Ò»¶¨ÒªÎª0)
+x890144_g_IsMissionOkFail = 0--???????(????0)
 
-x890144_g_MissionName="#{CCYR_221220_60}"--ÈÎÎñÃû
-x890144_g_MissionInfo="#{CCYR_221220_50}"--ÈÎÎñÎÄ±¾ÃèÊö£¨ÈÎÎñÁìÈ¡¶Ô°×£©
-x890144_g_MissionComplete="#{CCYR_221220_52}"--ÈÎÎñÍê³É¶Ô°×
-x890144_g_MissionTarget="#{CCYR_221220_54}"--ÈÎÎñÄ¿±ê(ÈÎÎñÃæ°åÖĞÈÎÎñĞÅÏ¢ÏÔÊ¾ÄÚÈİ)
+x890144_g_MissionName="#{CCYR_221220_60}"--???
+x890144_g_MissionInfo="#{CCYR_221220_50}"--??????(??????)
+x890144_g_MissionComplete="#{CCYR_221220_52}"--??????
+x890144_g_MissionTarget="#{CCYR_221220_54}"--????(?????????????)
 
---×Ô¶¨ÒåÍê³ÉÇé¿ö£¬ÄÚÈİ²»ÄÜÊ¹ÓÃ×Öµä£¬·Ö±ğ¶ÔÓ¦missionparamµÄµÚ1Î»ºóÑÓ
-x890144_g_Custom = {{id="²É¼¯³¤´ºÓñÅß",num=5}}
+--Tñ ğ¸nh nghîa hoàn thành tình hu¯ng, nµi dung không th¬ sØ døng tñ ği¬n, phân bi®t ğ¯i Ñng missionparamĞích Ğ® 1V¸ H§u Diên
+x890144_g_Custom = {{id="Thu th§p Trß¶ng Xuân Ng÷c Phôi",num=5}}
 
---npc¾àÀë
+--Npc khoäng cách
 x890144_g_NpcDist = 5
 
---ĞèÒªµÀ¾ß
+--c¥n ğÕo cø
 x890144_g_NeedItemId = 38002785
 x890144_g_NeedItemNum = 5
 
---ÈÎÎñµÀ¾ß
+--nhi®m vø ğÕo cø
 x890144_g_TaskItemId = 38002786
 x890144_g_TaskItemNum = 1
 
---½±ÀøµãÊı
+--thß·ng cho ğªm
 x890144_g_PointNum =1
 
 

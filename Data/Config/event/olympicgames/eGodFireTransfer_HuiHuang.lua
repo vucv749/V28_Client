@@ -1,46 +1,46 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x808101_g_ScriptId	= 808101
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x808101_g_Position_X=111.0545
 x808101_g_Position_Z=211.7807
 x808101_g_SceneID=0
-x808101_g_AccomplishNPC_Name="ÑàÇà"
+x808101_g_AccomplishNPC_Name="Yªn Thanh"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x808101_g_MissionId			= 1007
---ÏÂÒ»¸öÈÎÎñµÄID
+--kª tiªp nhi®m vø Ğích ID
 x808101_g_MissionIdNext	= 1008
---ÈÎÎñÄ¿±êËùÔÚ³¡¾°
+--nhi®m vø møc tiêu ch², n½i trß¶ng cänh
 x808101_g_AcceptNPC_SceneID	=	24
---ÈÎÎñÄ¿±ênpc
-x808101_g_Name 					= "µ¶Ò¢"
---ÈÎÎñ¹éÀà
+--nhi®m vø møc tiêu Npc
+x808101_g_Name 					= "Ğao Nghiêu"
+--nhi®m vø phân loÕi
 x808101_g_MissionKind			= 13
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x808101_g_MissionLevel		= 10
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x808101_g_IfMissionElite	= 0
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x808101_g_IsMissionOkFail	= 0		--ÈÎÎñ²ÎÊıµÄµÚ0Î»
+--nhi®m vø hay không ğã hoàn thành
+x808101_g_IsMissionOkFail	= 0		--??????0?
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x808101_g_MissionName			= "»Ô»ÍµÄÊ¥»ğ"
---ÈÎÎñÃèÊö
+--nhi®m vø vån bän miêu tä
+x808101_g_MissionName			= "Huy hoàng Ğích Thánh Hoä"
+--nhi®m vø miêu tä
 x808101_g_MissionInfo			= "#{XSHCD_20080418_026}"
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x808101_g_MissionTarget		= "#{XSHCD_20080418_048}"
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
 x808101_g_ContinueInfo		= "#{XSHCD_20080418_027}"
---Íê³ÉÈÎÎñnpcËµµÄ»°
+--hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
 x808101_g_MissionComplete	= "#{XSHCD_20080418_028}"
---Ã¿´Î»î¶¯¿ÉÒÔÍê³ÉµÄ´ÎÊı
+--m²i l¥n hoÕt ğµng có th¬ hoàn thành Ğích s¯ l¥n
 x808101_g_MaxRound	= 3
---¿ØÖÆ½Å±¾
+--kh¯ng chª k¸ch bän g¯c
 x808101_g_ControlScript		= 001066
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x808101_g_Custom	= { {id="ÒÑ½«»ğ¾æ½»¸øÂåÑôµÄÑàÇà",num=1} }
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x808101_g_Custom	= { {id="Ğã xem Hoä Cñ giao cho LÕc Dß½ng Ğích Yªn Thanh",num=1} }
 
 --MisDescEnd

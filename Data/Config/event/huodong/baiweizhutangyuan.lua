@@ -1,32 +1,32 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x890634_g_ScriptId = 890634
 
---Íê³ÉÈÎÎñNPCÊôĞÔ
+--hoàn thành nhi®m vø NPCthuµc tính
 x890634_g_Position_X=110
 x890634_g_Position_Z=159
 x890634_g_SceneID=2
-x890634_g_AccomplishNPC_Name="¶Å×ÓÌÚ"
+x890634_g_AccomplishNPC_Name="Ğ² TØ Ğ¢ng"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x890634_g_MissionId = 1337
 
---Ä¿±êNPC
-x890634_g_Name	="¶Å×ÓÌÚ"
+--møc tiêu NPC
+x890634_g_Name	="Ğ² TØ Ğ¢ng"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x890634_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x890634_g_MissionLevel = 10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x890634_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x890634_g_MissionName="°ÙÎ¶ÖóÔªÏü"
+--nhi®m vø Danh
+x890634_g_MissionName="Bánh trôi tråm v¸"
 x890634_g_MissionTarget="#{BWZYX_131111_25}"
 x890634_g_IsMissionOkFail=0
-x890634_g_Custom = {{ id = "ÖóÔªÏü", num = 3}}
+x890634_g_Custom = {{ id = "N¤u Bánh Trôi", num = 3}}
 
 --MisDescEnd

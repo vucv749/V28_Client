@@ -1,19 +1,19 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200037_g_ScriptId = 200037
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200037_g_MissionId = 31
 
---Ä¿±êNPC
-x200037_g_Name = "Ïô·å"
+--møc tiêu NPC
+x200037_g_Name = "Tiêu Phong"
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x200037_g_MissionName="½ğ¸êµ´¿Ü÷é±ø"
+--nhi®m vø vån bän miêu tä
+x200037_g_MissionName="Kim Qua Ğãng Kh¤u Ngao Binh"
 x200037_g_MissionInfo="#{Mis_juqing_0031}"
-x200037_g_MissionTarget="#{Mis_juqing_Tar_0031}"	--ÈÎÎñÄ¿±ê
-x200037_g_MissionComplete="    $N£¬ÕâÒ»ÏÂÅÑ¾ü¾üĞÄÒÑ¾­»ÁÉ¢ÁË£¬²»Òª×Å¼±£¬ÎÒÃÇ²½²½ÎªÓª£¬°ÑÅÑÂÒ³¹µ×Æ½Ï¢¡£"	--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
-x200037_g_MissionContinue="  ³şÍõÒÑ¾­±»É±£¬»ÊÌ«ÊåÒ²ÒÑ¾­ÔÚÎÒÃÇÊÖÖĞÁË¡£"
+x200037_g_MissionTarget="#{Mis_juqing_Tar_0031}"	--????
+x200037_g_MissionComplete="$N, l¥n này phän quân quân tâm ğã tan rä Li­u, không nên g¤p gáp, chúng ta th§n tr÷ng, Bä phän loÕn hoàn toàn bình ±n."	--????npc????
+x200037_g_MissionContinue="  S· Vß½ng ğã b¸ di®t, Hoàng Thái Thúc cûng ğã r½i vào tay chúng ta"
 
 x200037_g_MoneyJZBonus=39600
 x200037_g_exp=34000

@@ -1,41 +1,41 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x212110_g_ScriptId = 212110
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x212110_g_MissionId = 561
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x212110_g_MissionKind = 33
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x212110_g_MissionLevel = 88
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x212110_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x212110_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+--nhi®m vø hay không ğã hoàn thành
+x212110_g_IsMissionOkFail = 0		--????0?
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñĞèÒªµÃµ½µÄÎïÆ·
---x212110_g_DemandItem={{id=40002112,num=1}}		--±äÁ¿µÚ1Î»
+--nhi®m vø c¥n nh§n ğßşc Ğích v§t ph¦m
+--x212110_g_DemandItem={{id=40002112, num=1}} --lßşng biªn ğ±i Ğ® 1V¸
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x212110_g_MissionName="×½ÃÔ²Ø"
+--nhi®m vø vån bän miêu tä
+x212110_g_MissionName="Tr¯n tìm"
 x212110_g_MissionInfo="#{Lua_changbai_001}"
-x212110_g_MissionTarget="  #G³¤°×É½ÍêÑÕ²¿#WµÄÍêÑÕØ£Êõ#{_INFOAIM118,107,22,ÍêÑÕØ£Êõ}ÈÃÄãÕÒµ½#RÍêÑÕÕ³Ã»ºÈ#W#{_INFOAIM147,120,22,ÍêÑÕÕ³Ã»ºÈ}¡¢#RÍêÑÕÎÓÀë²»#W#{_INFOAIM166,94,22,ÍêÑÕÎÓÀë²»}¡¢#RÍêÑÕ¶ïÀï¶ä#W#{_INFOAIM178,113,22,ÍêÑÕ¶ïÀï¶ä}¡£"
-x212110_g_ContinueInfo="  ÄãÕÒµ½ÎÒµÄ¸ç¸çÃÇÁËÂğ£¿"
-x212110_g_MissionComplete="  ÄãºÃÀ÷º¦°¡£¬ÕâÃ´¿ì¾ÍÕÒµ½ËûÃÇÁË£¡ÎªÊ²Ã´ÎÒ×ÜÊÇÕÒ²»µ½ÄØ£¿ÄÑµÀÎÒÊÇ±¿Ğ¡º¢Âğ£¿"
+x212110_g_MissionTarget="#GTRß¶ng BÕch S½n Hoàn Nhan Bµ#WĞích Hoàn Nhan Ngµt Thu§t#{_INFOAIM118, 107, 22, Hoàn Nhan Ngµt Thu§t}cho ngß½i tìm ğßşc#RHoàn Nhan Niêm Mµt Hát#W#{_INFOAIM147, 120, 22, Hoàn Nhan Niêm Mµt Hát}, #RHoàn Nhan Oát Li B¤t#W#{_INFOAIM166, 94, 22, Hoàn Nhan Oát Li B¤t}, #RHoàn Nhan Ngoa Lı Ğoá#W#{_INFOAIM178, 113, 22, Hoàn Nhan Ngoa Lı Ğoá}."
+x212110_g_ContinueInfo="  Ngß½i tìm th¤y các ca ca cüa ta r°i sao?"
+x212110_g_MissionComplete="  Ngß½i quä là lşi hÕi, tìm th¤y h÷ nhanh ğªn v§y. Ta luôn không tìm ra, l¨ nào ta là 1 ğÑa trë ng¯c?"
 
---½±Àø
+--thß·ng cho
 x212110_g_MoneyBonus=54500
 x212110_g_Exp = 36000
 --x212110_g_ItemBonus={{id=30004020,num=1}}
 
-x212110_g_Custom	= { {id="ÒÑÕÒµ½ÍêÑÕÕ³Ã»ºÈ",num=1},{id="ÒÑÕÒµ½ÍêÑÕÎÓÀë²»",num=1},{id="ÒÑÕÒµ½ÍêÑÕ¶ïÀï¶ä",num=1} }
+x212110_g_Custom	= { {id="Ğã tìm th¤y Niêm Mµt Hát cüa bµ lÕc Hoàn Nhan",num=1},{id="Ğã tìm th¤y Cát Ly B¤t cüa bµ lÕc Hoàn Nhan",num=1},{id="Ğã tìm th¤y Ngoa Ly Ğóa cüa bµ lÕc Hoàn Nhan",num=1} }
 x212110_g_IsMissionOkFail = 0
 
 

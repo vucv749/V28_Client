@@ -1,43 +1,43 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200056_g_ScriptId = 200056
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200056_g_MissionId = 45
 
---Ç°ĞøÈÎÎñºÅ
+--Ti«n Tøc nhi®m vø Hào
 x200056_g_PreMissionId = 44
 
---Ä¿±êNPC
-x200056_g_Name	="ĞéÖñ"
+--møc tiêu NPC
+x200056_g_Name	="Hß Trúc"
 
 -- 
-x200056_g_Name1 = "ÀîÇåÂ¶"
+x200056_g_Name1 = "Lı Thanh Lµ"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200056_g_MissionKind = 49
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200056_g_MissionLevel = 70
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200056_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x200056_g_MissionName="Ò»ÉúÓĞÄã"
---ÈÎÎñÃèÊö
+--nhi®m vø Danh
+x200056_g_MissionName="Bên Nhau Tr÷n Ğ¶i"
+--nhi®m vø miêu tä
 x200056_g_MissionInfo="#{Mis_juqing_0045}"
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x200056_g_MissionTarget="#{Mis_juqing_Tar_0045}"		
---Ìá½»Ê±npcµÄ»°
-x200056_g_MissionComplete="  Ğ»Ğ»Äã£¬$N¡£ÎÒºÍÃÎÀÉÒÔºó¾ÍÔÚÕâÀïĞÒ¸£µÄÉú»îÏÂÈ¥ÁË¡£"		
+--ğ® trình Th¶i Npc trong l¶i nói
+x200056_g_MissionComplete="  Cám ½n huynh, $N. Muµi và Mµng Lang sau này s¨ s¯ng hÕnh phúc · ğây"		
 
 x200056_g_MoneyBonus=48600
 x200056_g_exp=86400
 
 x200056_g_RadioItemBonus={{id=10423016 ,num=1},{id=10423017,num=1},{id=10423018,num=1},{id=10423019,num=1}}
 
-x200056_g_Custom	= { {id="ÒÑ»¤ËÍĞéÖñ",num=1} }
+x200056_g_Custom	= { {id="Ğã hµ t¯ng Hß Trúc",num=1} }
 
 
 --MisDescEnd

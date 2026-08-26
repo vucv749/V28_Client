@@ -1,42 +1,42 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x212115_g_ScriptId = 212115
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x212115_g_MissionId = 639
---Ç°ĞøÈÎÎñºÅ
+--Ti«n Tøc nhi®m vø Hào
 x212115_g_PreMissionId = 638
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x212115_g_MissionKind = 40
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x212115_g_MissionLevel = 98
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x212115_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x212115_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+--nhi®m vø hay không ğã hoàn thành
+x212115_g_IsMissionOkFail = 0		--????0?
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñĞèÒªµÃµ½µÄÎïÆ·
---x212115_g_DemandItem={{id=40002112,num=1}}		--±äÁ¿µÚ1Î»
+--nhi®m vø c¥n nh§n ğßşc Ğích v§t ph¦m
+--x212115_g_DemandItem={{id=40002112, num=1}} --lßşng biªn ğ±i Ğ® 1V¸
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x212115_g_MissionName="ÓÂ´³º®ÓñËş"
+--nhi®m vø vån bän miêu tä
+x212115_g_MissionName="Dûng cäm xông vào Hàn Ng÷c Tháp"
 x212115_g_MissionInfo="#{Mis_H_Miaojiang_1050003}"
-x212115_g_MissionTarget="  »¤ËÍ°¢ÓêµÄÁé»ê#{_INFOAIM182,264,29,°¢Óê}È¥º®ÓñËş½ÅÏÂ£¬ÕÒµ½º®ÓñËşµÄÊØ»¤Õß°¢»áÄÏ#{_INFOAIM92,266,29,°¢»áÄÏ}¡£"
-x212115_g_MissionComplete="  Ã»ÓĞÓÃµÄ£¬º®ÓñËşµÄÄ§Á¦Ô¶Ô¶²»ÊÇÄãÃÇÄÜ¹»ÏëÏóµÄ¡£Àë¿ª°É£¬·²ÈË¡£ÄãÃÇ¸ù±¾¶¼²»ÄÜ½øÈëº®ÓñËş¡£#r  °¡£¬Õâ¸öĞ¡¹ÃÄï£¬ËıÔõÃ´½øÈ¥ÁË£¿¿ì³öÀ´°¡£¡"
+x212115_g_MissionTarget="Hµ t¯ng A Vû Ğích Linh H°n#{_INFOAIM182, 264, 29, A Vû}KhÑ Hàn Ng÷c Ğáp dß¾i chân, tìm ğßşc Hàn Ng÷c Ğáp Ğích Thü Hµ Giä A Hµi Nam#{_INFOAIM92, 266, 29, A Hµi Nam}."
+x212115_g_MissionComplete="  Không sao, ma lñc cüa Hàn Ng÷c Tháp vînh vi­n không nhß các ngß½i tß·ng. Hãy ği ği, lû phàm nhân. Các ngß½i không th¬ vào ğßşc Hàn Ng÷c Tháp. #r#r´, kë phàm nhân kia, vào b¢ng cách nào thª? Mau ra ngay"
 
---½±Àø
+--thß·ng cho
 x212115_g_MoneyBonus=16000
 x212115_g_Exp = 30000
 --x212115_g_ItemBonus={{id=10122010,num=1}}
 
-x212115_g_Custom	= { {id="ÒÑ»¤ËÍ°¢ÓêµÄÁé»ê",num=1} }
+x212115_g_Custom	= { {id="Dî hµ t¯ng A Vû Ğích Linh H°n",num=1} }
 
 x212115_g_RadioItemBonus={{id=10413081 ,num=1},{id=10411086,num=1},{id=10412078,num=1}}
 

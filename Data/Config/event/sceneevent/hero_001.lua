@@ -1,39 +1,39 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x212128_g_ScriptId = 212128
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x212128_g_Position_X=222
 x212128_g_Position_Z=102
 x212128_g_SceneID=2
-x212128_g_AccomplishNPC_Name="ÉòÀ¨"
+x212128_g_AccomplishNPC_Name="Th¦m Quát"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x212128_g_MissionId = 250
 
---Ä¿±êNPC
-x212128_g_Name	="ÉòÀ¨"
+--møc tiêu NPC
+x212128_g_Name	="Th¦m Quát"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x212128_g_MissionKind = 55
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x212128_g_MissionLevel = 75
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x212128_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x212128_g_MissionName="Ó¢ĞÛ²»ÅÂÔ¶Õ÷ÄÑ"
+--nhi®m vø Danh
+x212128_g_MissionName="Anh hùng không sş vi­n chinh khó"
 x212128_g_MissionInfo="#{Mis_75_desc_001}"
-x212128_g_MissionTarget="    ÔÚ´óÀí³ÇÕÒµ½ÉòÀ¨#{_INFOAIM222,103,2,ÉòÀ¨}¡£"
---x212128_g_MissionContinue="  ÉúÃüÈç¹ûÄÜ¹»ÖØÀ´Ò»´Î£¬ÎÒ»áÔõÃ´Ñ¡ÔñÄØ£¿¼ÈÈ»ÕæÊµºÍĞé»ÃÎŞ´Ó·Ö±æ£¬ÎªºÎ²»Ìı´ÓĞÄÁéµÄÕÙ»½×ö³ö¾ñÔñÄØ¡£"
-x212128_g_MissionComplete="  ²©ÀÀÌìÏÂÈºÊé£¬Ì¤±éÎåºşËÄº££¬ÊÇÎÒ±ÏÉúµÄ×·Çó¡£¹ÅÍù½ñÀ´Ö»ÓĞÖÇÕß²ÅÄÜ³ÉÎªÓ¢ĞÛ¡£"
+x212128_g_MissionTarget="TÕi Thành ĞÕi Lı tìm ğßşc Th¦m Quát#{_INFOAIM222, 103, 2, Th¦m Quát}."
+--x212128_g_MissionContinue=" sinh m®nh nªu có th¬ Trùng Lai mµt l¥n, ta s¨ nhß thª nào lña ch÷n Ni? Nªu chân th§t Hoà hß äo không th¬ nào nh§n, vì sao không nghe Thung tâm linh Ğích g÷i v« làm ra lña ch÷n Ni. "
+x212128_g_MissionComplete="  Ğ÷c ğßşc hªt sách trên thiên hÕ, ği hªt 5 châu 4 b¬ là sñ theo ğu±i cüa ğ¶i ta. T× xßa ğªn nay chï có ngß¶i tri thÑc m¾i tr· thành anh hùng."
 
 x212128_g_MoneyBonus=5000
 x212128_g_exp=50000
 
-x212128_g_Custom	= { {id="ÒÑÕÒµ½ÉòÀ¨",num=1} }
+x212128_g_Custom	= { {id="Ğã tìm th¤y Th¦m Quát",num=1} }
 x212128_g_IsMissionOkFail = 0
 
 

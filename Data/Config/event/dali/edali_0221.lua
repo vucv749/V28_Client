@@ -1,46 +1,46 @@
 --MisDescBegin
 
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x210221_g_ScriptId = 210221
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x210221_g_Position_X=265
 x210221_g_Position_Z=129
 x210221_g_SceneID=2
-x210221_g_AccomplishNPC_Name="ÔÆÆ®Æ®"
+x210221_g_AccomplishNPC_Name="Vân Phiêu Phiêu"
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x210221_g_MissionIdPre = 700
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x210221_g_MissionId = 701
 
---ÈÎÎñÄ¿±ênpc
-x210221_g_Name	="ÔÆÆ®Æ®"
+--nhi®m vø møc tiêu Npc
+x210221_g_Name	="Vân Phiêu Phiêu"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x210221_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x210221_g_MissionLevel = 7
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x210221_g_IfMissionElite = 0
 
---********ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö******
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x210221_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
---**********************************ÒÔÉÏÊÇ¶¯Ì¬****************************
+--********phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng******
+--nhi®m vø hay không ğã hoàn thành
+x210221_g_IsMissionOkFail = 0		--????0?
+--**********************************ğã ngoài Th¸ ğµng thái****************************
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x210221_g_MissionName="×½×¡ÕäÊŞÀ²"
-x210221_g_MissionInfo="#{event_dali_0029}"  --ÈÎÎñÃèÊö
-x210221_g_MissionTarget="#{event_dali_0030}"		--ÈÎÎñÄ¿±ê
-x210221_g_ContinueInfo="ÄãÒÑ¾­×½µ½Ğ¡Ñ¼×ÓÁË£¿"		--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x210221_g_MissionComplete="#{event_dali_0031}"					--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
-x210221_g_SignPost = {x = 275, z = 50, tip = "»ÆÃ¼É®"}
+--nhi®m vø vån bän miêu tä
+x210221_g_MissionName="B¡t ğßşc trân thú r°i"
+x210221_g_MissionInfo="#{event_dali_0029}"  --????
+x210221_g_MissionTarget="#{event_dali_0030}"		--????
+x210221_g_ContinueInfo="Nhî ğã b¡t ğßşc Ti¬u v¸ chªt Li­u?"		--??????npc??
+x210221_g_MissionComplete="#{event_dali_0031}"					--????npc????
+x210221_g_SignPost = {x = 275, z = 50, tip = "Hoàng Mi Tång"}
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 x210221_g_MoneyBonus=20
 
 

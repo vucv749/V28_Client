@@ -1,41 +1,41 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x212102_g_ScriptId = 212102
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x212102_g_MissionId = 536
 
---Ä¿±êNPC
-x212102_g_Name	="Â³Æ½"
+--møc tiêu NPC
+x212102_g_Name	="L² Bình"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x212102_g_MissionKind = 30
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x212102_g_MissionLevel = 48
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x212102_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x212102_g_MissionName="³ÏÒâµÄ¿¼Ñé"
---ÈÎÎñÃèÊö
+--nhi®m vø Danh
+x212102_g_MissionName="ThØ thách lòng thành"
+--nhi®m vø miêu tä
 x212102_g_MissionInfo="#{Lua_yanbei_0001}"
---ÈÎÎñÄ¿±ê
-x212102_g_MissionTarget="  Ñã±±µÄÂ³Æ½#{_INFOAIM271,49,19,Â³Æ½}ÒªÇóÄãÕ½Ê¤Ğ¡ÅÖ¡£Ğ¡ĞÄ£¬Ö»ÒªÂ³Æ½Ò»ÉùÁîÏÂ£¬#RĞ¡ÅÖ#W¾Í»á³öÏÖ¡£"	
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x212102_g_ContinueInfo="  ÄãÒÑ¾­´ò°ÜĞ¡ÅÖÁËÂğ£¿"
---Ìá½»Ê±npcµÄ»°
-x212102_g_MissionComplete="  Èç´ËºÃµÄÉíÊÖÕæÊÇÉÙ¼û°¡£¬¿´À´£¬´«ÎÅ¶¼ÊÇÕæµÄ£¬ÄãµÄÈ·ÊÇÑã±±µÄÓ¢ĞÛ¡£"		
+--nhi®m vø møc tiêu
+x212102_g_MissionTarget="  L² Bình · NhÕn B¡c #{_INFOAIM271,49,19,L² Bình} yêu c¤u các hÕ chiªn th¡ng Ti¬u Phán. C¦n th§n ğ¤y, chï c¥n L² Bình ra l®nh mµt câu, #RTI¬u Phán#W s¨ xu¤t hi®n ngay."	
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
+x212102_g_ContinueInfo="  Ngß½i ğã ğánh bÕi Ti¬u Phán chßa?"
+--ğ® trình Th¶i Npc trong l¶i nói
+x212102_g_MissionComplete="  Thân thü giöi thª này quä hiªm g£p. Xem ra ğúng nhß l¶i ğ°n. Các hÕ chính là anh hùng cüa NhÕn B¡c"		
 
 x212102_g_MoneyJZBonus=4750
 x212102_g_exp=19800
 
 --x212102_g_ItemBonus={{id=30102003, num=2}}
 
-x212102_g_szMonsterName = "Ğ¡ÅÖ"
+x212102_g_szMonsterName = "Ti¬u Phán"
 
-x212102_g_Custom	= { {id="ÒÑÉ±ËÀĞ¡ÅÖ",num=1} }
+x212102_g_Custom	= { {id="Ğã ğánh bÕi Ti¬u Phán",num=1} }
 x212102_g_IsMissionOkFail = 0
 
 x212102_g_RadioItemBonus={{id=10420068 ,num=1},{id=10421068,num=1}}

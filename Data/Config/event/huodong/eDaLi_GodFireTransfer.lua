@@ -1,44 +1,44 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x808082_g_ScriptId	= 808082
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x808082_g_Position_X=54.9700
 x808082_g_Position_Z=192.5128
 x808082_g_SceneID=2
 x808082_g_AccomplishNPC_Name="ÍõÈôÓí"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x808082_g_MissionId			= 1000
---ÏÂÒ»¸öÈÎÎñµÄID
+--kª tiªp nhi®m vø Ğích ID
 x808082_g_MissionIdNext	= 1000
---ÈÎÎñÄ¿±ênpc
+--nhi®m vø møc tiêu Npc
 x808082_g_Name 					= "ÍõÈôÓí"
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x808082_g_MissionKind			= 13
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x808082_g_MissionLevel		= 20
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x808082_g_IfMissionElite	= 0
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x808082_g_IsMissionOkFail	= 0		--ÈÎÎñ²ÎÊıµÄµÚ0Î»
+--nhi®m vø hay không ğã hoàn thành
+x808082_g_IsMissionOkFail	= 0		--??????0?
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x808082_g_MissionName			= "¹êÍÃÈüÅÜÈÎÎñ"
---ÈÎÎñÃèÊö
+--nhi®m vø vån bän miêu tä
+x808082_g_MissionName			= "Nhi®m vø Rùa-Thö thi chÕy"
+--nhi®m vø miêu tä
 x808082_g_MissionInfo			= "#{GodFire_Info_001}"
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x808082_g_MissionTarget		= "#{GodFire_Info_006}"
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
 x808082_g_ContinueInfo		= "#{GodFire_Info_007}"
---Íê³ÉÈÎÎñnpcËµµÄ»°
+--hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
 x808082_g_MissionComplete	= "#{GodFire_Info_008}"
---Ã¿´Î¹êÍÃÈüÅÜ»î¶¯ĞèÒª´ò¿¨µÄ³ÇÊĞ×ÜÊı
+--m²i l¥n Quân Th¯ thi chÕy hoÕt ğµng c¥n Tá Ca Ğích thành th¸ t±ng s¯
 x808082_g_MaxRound	= 3
---¿ØÖÆ½Å±¾
+--kh¯ng chª k¸ch bän g¯c
 x808082_g_ControlScript		= 001066
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,·Ö±ğÕ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1,2,3,4Î»
-x808082_g_Custom	= { {id="ÒÑÓëÂåÑôµÄÕÔÃ÷³Ï¶Ô»°",num=1}, {id="ÒÑÓëËÕÖİµÄÂ½Ê¿ï£¶Ô»°",num=1}, {id="ÒÑÓë´óÀíµÄÍõÈôÓí¶Ô»°",num=1}, {id="ÒÑµãÈ¼È«²¿¿×Ã÷µÆ",num=24} }
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, phân bi®t chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1, 2, 3, 4V¸
+x808082_g_Custom	= { {id="Ğã cùng LÕc Dß½ng Tri®u Minh Thành ğ¯i thoÕi",num=1}, {id="Ğã cùng Tô Châu Løc Sî Tranh ğ¯i thoÕi",num=1}, {id="Ğã cùng ĞÕi Lı Vß½ng Nhßşc Vû ğ¯i thoÕi",num=1}, {id="Ğã châm toàn bµ ğèn Kh±ng Minh",num=24} }
 
 --MisDescEnd

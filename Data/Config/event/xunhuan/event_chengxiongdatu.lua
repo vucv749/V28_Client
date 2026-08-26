@@ -1,48 +1,48 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x229020_g_ScriptId = 229020
 
---Ç°ÌáÈÎÎñ
+--ği«u ki®n tiên quyªt nhi®m vø
 --g_MissionIdPre =
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x229020_g_MissionId = 1200
 
---ÈÎÎñÄ¿±ênpc
-x229020_g_Name	= "Îâ«d"
+--nhi®m vø møc tiêu Npc
+x229020_g_Name	= "Ngô Gi¾i"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x229020_g_MissionKind = 1
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x229020_g_MissionLevel = 10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x229020_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x229020_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+--nhi®m vø hay không ğã hoàn thành
+x229020_g_IsMissionOkFail = 0		--????0?
 
---ÈÎÎñĞèÒªÉ±ËÀµÄ¹Ö
-x229020_g_DemandKill ={{id=3500,num=1}}		--±äÁ¿µÚ1Î»
+--nhi®m vø c¥n giªt chªt Ğích Quái
+x229020_g_DemandKill ={{id=3500,num=1}}		--???1?
 
-x229020_g_DemandTrueKill ={{name="¶ñ¹÷",num=1}}
+x229020_g_DemandTrueKill ={{name="Ác côn",num=1}}
 
---ÈÎÎñĞèÒªµÃµ½µÄÎïÆ·
---g_DemandItem={{id=20309001,num=1},{id=20309005,num=1}}		--´Ó±³°üÖĞ¼ÆËã
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--nhi®m vø c¥n nh§n ğßşc Ğích v§t ph¦m
+--g_DemandItem={{id=20309001, num=1}, {id=20309005, num=1}} --Thung tay nãi trúng kª Toán
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñ±äÁ¿µÚÒ»Î»ÓÃÀ´´æ´¢Ëæ»úµÃµ½µÄ½Å±¾ºÅ
+--nhi®m vø lßşng biªn ğ±i ğ® nh¤t v¸ dùng ğ¬ t°n træ TuÏ C½ nh§n ğßşc Ğích k¸ch bän g¯c Hào
 
---ÈÎÎñÎÄ±¾ÃèÊö
+--nhi®m vø vån bän miêu tä
 x229020_g_MissionName="#{CXDT_090304_01}"
-x229020_g_MissionInfo="#{CXDT_090304_02}"  --ÈÎÎñÃèÊö
+x229020_g_MissionInfo="#{CXDT_090304_02}"  --????
 x229020_g_MissionTarget = "#{CXDT_090304_03}"
-x229020_g_ContinueInfo="#{CXDT_090304_04}"		--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x229020_g_MissionComplete="#{CXDT_090304_05}"					--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+x229020_g_ContinueInfo="#{CXDT_090304_04}"		--??????npc??
+x229020_g_MissionComplete="#{CXDT_090304_05}"					--????npc????
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 x229020_g_MissionItem={{id=40004000,num=1}}
 
 x229020_g_MissionRound = 49

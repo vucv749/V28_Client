@@ -1,30 +1,30 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x220900_g_ScriptId = 220900
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x220900_g_MissionId = 1064
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 --g_MissionIdPre = 
 
---Ä¿±êNPC
-x220900_g_Name	="»Û·½"
+--møc tiêu NPC
+x220900_g_Name	="Tu® Phß½ng"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x220900_g_MissionKind = 20
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x220900_g_MissionLevel = 10
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x220900_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x220900_g_MissionName="ÎªÊ¦ÃÅ¶øÕ½"
+--nhi®m vø Danh
+x220900_g_MissionName="Chiªn ğ¤u vì sß môn"
 x220900_g_MissionInfo="#{event_shaolin_0001}"
-x220900_g_MissionTarget="    ÔÚÉÙÁÖËÂÕÒµ½»Û·½#{_INFOAIM96,82,9,»Û·½}¡£"
-x220900_g_MissionComplete="  ÄãÊÇĞÂÀ´µÄÍ¬ÃÅ°É£¬ÄãÀ´µÃÌ«ºÃÁË£¬ÎÒÕâÀïÓĞºÜ¶àÊÂÇéĞèÒªÄã°ïÃ¦ÄØ¡£"
+x220900_g_MissionTarget="    — Thiªu Lâm Tñ tìm Tu® Phß½ng #{_INFOAIM96,82,9, Tu® Phß½ng}."
+x220900_g_MissionComplete="  Các hÕ là ğ°ng môn m¾i ğªn phäi không. Các hÕ làm tuy®t l¡m. Ta · ğây có nhi«u vi®c c¥n các hÕ giúp ğŞ"
 x220900_g_MoneyJZBonus=800
 
 

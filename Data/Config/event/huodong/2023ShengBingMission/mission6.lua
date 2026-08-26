@@ -1,32 +1,32 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x998393_g_ScriptId = 998393
 
---Íê³ÉÈÎÎñNPCÊôĞÔ
-x998393_g_Position_X=156  --Ìæ´ú
-x998393_g_Position_Z=102 --Ìæ´ú
+--hoàn thành nhi®m vø NPCthuµc tính
+x998393_g_Position_X=156  --??
+x998393_g_Position_Z=102 --??
 x998393_g_SceneID=9
-x998393_g_AccomplishNPC_Name="É¨µØÉ®" --Ìæ´ú
+x998393_g_AccomplishNPC_Name="Täo Ğ¸a Tång" --??
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x998393_g_PreMissionName="#{SBJQ_230627_46}"
 x998393_g_PreMissionId = 2224
 x998393_g_MissionId = 2225
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x998393_g_MissionKind = 5
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x998393_g_MissionLevel = 65
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x998393_g_IfMissionElite = 0
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x998393_g_MissionName="#{SBJQ_230627_47}"
 x998393_g_MissionTarget="#{SBJQ_230627_34}"
 x998393_g_IsMissionOkFail=0
-x998393_g_Custom = {{ id = "ÏòÉÙÁÖËÂÏôÔ¶É½Ñ¯ÎÊÈë¶¨Ò»ÊÂ", num = 1},{ id = "ºóÔÙÑ°ÉÙÁÖËÂÉ¨µØÉ®", num = 1}}
+x998393_g_Custom = {{ id = "Hß¾ng Thiªu Lâm Tñ Tiêu Vi­n S½n höi nh§p ğ¸nh mµt chuy®n", num = 1},{ id = "H§u Tái T¥m Thiªu Lâm Tñ Täo Ğ¸a Tång", num = 1}}
 x998393_g_ContinueInfo = ""
 x998393_g_MissionComplete = "#{SBJQ_230627_20}"
 

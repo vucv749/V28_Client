@@ -1,44 +1,44 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x500503_g_ScriptId	= 500503
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x500503_g_Position_X=266.2833
 x500503_g_Position_Z=140.0340
 x500503_g_SceneID=1
-x500503_g_AccomplishNPC_Name="Å·Ò±×Ó"
+x500503_g_AccomplishNPC_Name="Âu Dã TØ"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x500503_g_MissionId			= 420
---ÏÂÒ»¸öÈÎÎñµÄID
+--kª tiªp nhi®m vø Ğích ID
 x500503_g_MissionIdNext	= 420
---ÈÎÎñÄ¿±ênpc
-x500503_g_Name			= "Å·Ò±×Ó"
---ÈÎÎñ¹éÀà
+--nhi®m vø møc tiêu Npc
+x500503_g_Name			= "Âu Dã TØ"
+--nhi®m vø phân loÕi
 x500503_g_MissionKind			= 55
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x500503_g_MissionLevel		= 10000
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x500503_g_IfMissionElite	= 0
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x500503_g_IsMissionOkFail	= 0		--±äÁ¿µÄµÚ0Î»
---ÈÎÎñĞèÒªÉ±ËÀµÄ¹Ö
---±£Ö¤¿ÉÒÔ¸ù¾İµÈ¼¶¶¯Ì¬µÄ±ä»»É±¹ÖÊıÁ¿
-x500503_g_RandomCustom = {{ id = "ÒÑÉ±ËÀ¹ÖÎï", numNeeded = 3, numComplete = 1 }}
+--nhi®m vø hay không ğã hoàn thành
+x500503_g_IsMissionOkFail	= 0		--????0?
+--nhi®m vø c¥n giªt chªt Ğích Quái
+--cam ğoan có th¬ cån cÑ c¤p b§c ğµng thái Ğích biªn hóa giªt quái s¯ lßşng
+x500503_g_RandomCustom = {{ id = "Ğã ğánh bÕi quái v§t", numNeeded = 3, numComplete = 1 }}
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x500503_g_MissionName			= "ÑªÔ¡Éñ±ø"
---ÈÎÎñÃèÊö
-x500503_g_MissionInfo			= "ÉñÆ÷ÖıÔì"
---ÈÎÎñÄ¿±ê
+--nhi®m vø vån bän miêu tä
+x500503_g_MissionName			= "Huyªt Døc Th¥n Binh"
+--nhi®m vø miêu tä
+x500503_g_MissionInfo			= "Ğúc th¥n khí"
+--nhi®m vø møc tiêu
 x500503_g_MissionTarget		= "#{XYSB_20070928_010}"
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
 x500503_g_ContinueInfo		= "#{XYSB_20070928_009}"
---Íê³ÉÈÎÎñnpcËµµÄ»°
-x500503_g_MissionComplete	= "ÎÒ½»¸øÄãµÄÊÂÇéÒÑ¾­×öÍêÁËÂğ£¿"
---»·ÊıÉÏÏŞ
+--hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
+x500503_g_MissionComplete	= "Vi®c ta giao ğã hoàn thành chßa?"
+--Hoàn S± hÕn mÑc cao nh¤t
 x500503_g_MaxRound	= 0
---¿ØÖÆ½Å±¾
+--kh¯ng chª k¸ch bän g¯c
 x500503_g_ControlScript		= 001066
 
 --MisDescEnd

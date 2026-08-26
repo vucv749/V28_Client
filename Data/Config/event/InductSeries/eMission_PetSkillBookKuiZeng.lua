@@ -1,39 +1,39 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x500624_g_ScriptId = 500624
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x500624_g_Position_X=182.4375
 x500624_g_Position_Z=157.3685
 x500624_g_SceneID=0
-x500624_g_AccomplishNPC_Name="ÔÆÃìÃì"
+x500624_g_AccomplishNPC_Name="Vân Diêu Diêu"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x500624_g_MissionId = 1190
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 --g_MissionIdPre =
 
---Ä¿±êNPC
-x500624_g_Name	="ÔÆÃìÃì"
+--møc tiêu NPC
+x500624_g_Name	="Vân Diêu Diêu"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x500624_g_MissionKind = 11
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x500624_g_MissionLevel = 45
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x500624_g_IfMissionElite = 0
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x500624_g_MissionName="#{YDXF_XML_4}"
 x500624_g_MissionTarget="#{YDXF_091229_22}"
-x500624_g_SignPost = {x = 182, z = 157, tip = "ÔÆÃìÃì"}
+x500624_g_SignPost = {x = 182, z = 157, tip = "Vân Diêu Diêu"}
 x500624_g_ItemBonus={{id=30402010 ,num=1},{id=30402017,num=1}}--,{id=10104000,num=1}
 
-x500624_g_Custom	= { {id="ÒÑÕÒµ½ÔÆÃìÃì",num=1} }
-x500624_g_IsMissionOkFail = 1		--±äÁ¿µÄµÚ0Î»
+x500624_g_Custom	= { {id="Ğã tìm ğßşc Vân Diêu Diêu",num=1} }
+x500624_g_IsMissionOkFail = 1		--????0?
 
 
 --MisDescEnd

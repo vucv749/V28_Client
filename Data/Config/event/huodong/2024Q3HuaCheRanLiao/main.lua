@@ -1,32 +1,32 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x999416_g_ScriptId	= 999416
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x999416_g_MissionId			= 2278
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x999416_g_MissionKind		= 3
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x999416_g_MissionLevel		= 30
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x999416_g_IfMissionElite	= 0
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x999416_g_IsMissionOkFail	= 0		--ÈÎÎñ²ÎÊıµÄµÚ0Î»
+--nhi®m vø hay không ğã hoàn thành
+x999416_g_IsMissionOkFail	= 0		--??????0?
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x999416_g_MissionName			= "#{YHWH_240614_2}"
---ÈÎÎñÃèÊö£¨ÈÎÎñÁìÈ¡¶Ô°×£©
+--nhi®m vø miêu tä(nhi®m vø lînh ğ¯i bÕch)
 x999416_g_MissionInfo			= "#{YHWH_240614_7}"
---ÈÎÎñÍê³É¶Ô°×
+--nhi®m vø hoàn thành ğ¯i bÕch
 x999416_g_MissionComplete		= "#{YHWH_240614_72}"
---ÈÎÎñÎ´Íê³É¶Ô°×
+--nhi®m vø chßa xong thành ğôi BÕch
 x999416_g_MissionUnComplete		= "#{YHWH_240614_20}"
 
---ÈÎÎñÄ¿±ê(ÈÎÎñÃæ°åÖĞÈÎÎñĞÅÏ¢ÏÔÊ¾ÄÚÈİ)
+--nhi®m vø møc tiêu(nhi®m vø Di®n Bän Trung nhi®m vø tin tÑc bi¬u hi®n nµi dung)
 x999416_g_MissionTarget			= "#{YHWH_240614_19}"
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x999416_g_Custom	= {{id="ÏòÁúĞ¡ÃÃÌá½»»·±£ÄÜÔ´",num=1} }
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x999416_g_Custom	= {{id="Hß¾ng Long Ti¬u Muµi ğ® trình bäo v® môi trß¶ng ngu°n sinh lñc",num=1} }
 
 --MisDescEnd

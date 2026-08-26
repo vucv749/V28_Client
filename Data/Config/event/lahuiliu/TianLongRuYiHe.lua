@@ -1,36 +1,36 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x809313_g_ScriptId	= 809313
---¸±±¾Ãû³Æ
+--bän sao tên
 x809313_g_CopySceneName	= ""
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x809313_g_MissionId			= 1173
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x809313_g_MissionIdPre	= 0
---Ä¿±êNPC
+--møc tiêu NPC
 x809313_g_Name					= ""
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x809313_g_IfMissionElite= 1
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x809313_g_MissionLevel	= 10000
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x809313_g_MissionKind		= 1
---ÈÎÎñÎÄ±¾ÃèÊö
+--nhi®m vø vån bän miêu tä
 x809313_g_MissionName			= "#{QNG_XML_8}"
---ÈÎÎñÃèÊö
+--nhi®m vø miêu tä
 x809313_g_MissionInfo			= ""		-- "#{QNG_090716_03}"
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x809313_g_MissionTarget		= "#{QNG_090716_18}"
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
 x809313_g_ContinueInfo		= "#{QNG_090716_19}"
---Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--hoàn thành nhi®m vø Npc nói chuy®n trong l¶i nói
 x809313_g_MissionComplete	= "#{QNG_090716_19}"
 
---½ÇÉ«Mission±äÁ¿ËµÃ÷
-x809313_g_Param_IsMissionOkFail	= 0						--0ºÅ£ºµ±Ç°ÈÎÎñÊÇ·ñÍê³É(0Î´Íê³É£»1Íê³É)
-x809313_g_Param_ItemGetCount		= 1						--1ºÅ£ºÎïÆ·»ñµÃ¸öÊı
+--vai di­n Missionlßşng biªn ğ±i thuyªt minh
+x809313_g_Param_IsMissionOkFail	= 0						--0?:????????(0???;1??)
+x809313_g_Param_ItemGetCount		= 1						--1?:??????
 
---ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x809313_g_Custom							= { {id="ÒÑÕÒµ½ÈçÒâºØ",num=1}}
+--nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x809313_g_Custom							= { {id="Ğã tìm ğßşc Nhß İ HÕ",num=1}}
 
 --MisDescEnd

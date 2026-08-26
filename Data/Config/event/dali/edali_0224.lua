@@ -1,50 +1,50 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x210224_g_ScriptId = 210224
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x210224_g_Position_X=160.0895
 x210224_g_Position_Z=156.9309
 x210224_g_SceneID=2
-x210224_g_AccomplishNPC_Name="ÕÔÌìÊ¦"
+x210224_g_AccomplishNPC_Name="Tri®u Thiên Sß"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x210224_g_MissionId = 704
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 --g_MissionIdPre =
 
---Ä¿±êNPC
-x210224_g_Name	="ÕÔÌìÊ¦"
+--møc tiêu NPC
+x210224_g_Name	="Tri®u Thiên Sß"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x210224_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x210224_g_MissionLevel = 8
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x210224_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x210224_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+--nhi®m vø hay không ğã hoàn thành
+x210224_g_IsMissionOkFail = 0		--????0?
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x210224_g_MissionName="È¥¿´¿´²¼¸æ"
+--nhi®m vø vån bän miêu tä
+x210224_g_MissionName="Ği xem b¯ cáo"
 x210224_g_MissionInfo="#{event_dali_0034}"
-x210224_g_MissionTarget="ÔÄ¶Á#G´óÀí»Ê¹¬ÃÅ¿Ú#WµÄ#R²¼¸æÅÆ#W#{_INFOAIM148,40,2,-1}£¬È»ºó»Ø#G´óÀí³ÇÎå»ªÌ³#WÕÒ#RÕÔÌìÊ¦#W#{_INFOAIM160,157,2,ÕÔÌìÊ¦}¡£#b#G£¨ÇëÓÃ×ó¼üµã»÷´øÏÂ»®ÏßµÄ×ø±ê£¬°ïÖúÄúÕÒµ½¸ÃNPC£©#l"
-x210224_g_ContinueInfo="  ÄãÒÑ¾­¿´¹ı#Y²¼¸æÅÆ#WÁËÂğ£¿"
-x210224_g_MissionComplete="  ÄãÒÑ¾­¿´¹ı#Y²¼¸æÅÆ#WÁË°É£¿ÕâÑùµÄ»µÈË£¬Ò»¶¨ÒªÑÏ¼Ó³Í´¦¡£"
-x210224_g_SignPost = {x = 148, z = 40, tip = "²¼¸æÅÆ"}
---ÈÎÎñ½±Àø
+x210224_g_MissionTarget="Ğ÷c#GĞ?i Lı hoàng cung cØa#WĞích#Rb¯ cáo Bài#W#{_INFOAIM148, 40, 2, -1}, sau ğó H°i#GThành ĞÕi Lı Ngû Hoa Ğàn#WTräo#RTri®u Thiên Sß#W#{_INFOAIM160, 157, 2, Tri®u Thiên Sß}. #b#G(Thïnh Døng Tä Ki®n Ği¬m Kích b®nh bÕch ğ¾i phác h÷a Ğích t÷a ğµ, trş giúp Nhçm tìm ğßşc Cai NPC)#l"
+x210224_g_ContinueInfo="  Ngß½i ğã xem #YbÄng cáo th¸#W chßa?"
+x210224_g_MissionComplete="  Ngß½i ğã xem #YbÄng cáo th¸ #Wchßa? Lû ngß¶i x¤u nhß v§y, nh¤t ğ¸nh phäi tr×ng tr¸ nghiêm kh¡c"
+x210224_g_SignPost = {x = 148, z = 40, tip = "Bäng cáo th¸"}
+--nhi®m vø thß·ng cho
 x210224_g_MoneyBonus=100
 --g_ItemBonus={{id=40002108,num=1}}
 
-x210224_g_Custom	= { {id="ÒÑÔÄ¶Á¹«¸æÅÆ",num=1} }
-x210224_g_IsMissionOkFail = 1		--±äÁ¿µÄµÚ0Î»
+x210224_g_Custom	= { {id="Ğã ğ÷c bäng cáo th¸",num=1} }
+x210224_g_IsMissionOkFail = 1		--????0?
 
 
 --MisDescEnd

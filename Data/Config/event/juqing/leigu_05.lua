@@ -1,8 +1,8 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200044_g_ScriptId = 200044
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200044_g_MissionId = 37
 
 

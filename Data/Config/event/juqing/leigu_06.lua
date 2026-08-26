@@ -1,38 +1,38 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200045_g_ScriptId = 200045
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200045_g_MissionId = 37
 
---Ç°ĞøÈÎÎñºÅ
+--Ti«n Tøc nhi®m vø Hào
 x200045_g_PreMissionId = 36
 
---Ä¿±êNPC
-x200045_g_Name = "ËÕĞÇºÓ"
+--møc tiêu NPC
+x200045_g_Name = "Tô Tinh Hà"
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200045_g_IfMissionElite = 1
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200045_g_MissionLevel = 60
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200045_g_MissionKind = 53
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x200045_g_MissionName="¹ØÃÅ×½Ôô"
+--nhi®m vø vån bän miêu tä
+x200045_g_MissionName="Ğóng cØa b¡t trµm"
 x200045_g_MissionInfo="#{Mis_juqing_0037}"
-x200045_g_MissionTarget="#{Mis_juqing_Tar_0037}"	--ÈÎÎñÄ¿±ê
+x200045_g_MissionTarget="#{Mis_juqing_Tar_0037}"	--????
 x200045_g_MissionContinue="  #{TM_20080313_08}"
-x200045_g_MissionComplete="  #{TM_20080313_09}"	--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+x200045_g_MissionComplete="  #{TM_20080313_09}"	--????npc????
 
 x200045_g_MoneyBonus=45000
 x200045_g_exp=100000
 
 x200045_g_RadioItemBonus={{id=10414016 ,num=1},{id=10415012,num=1},{id=10422011,num=1},{id=10423015,num=1}}
 
-x200045_g_Custom	= { {id="ÒÑ´ò°Ü¶¡´ºÇï",num=1} }
+x200045_g_Custom	= { {id="Ğã ğánh bÕi Ğinh Xuân Thu",num=1} }
 x200045_g_IsMissionOkFail = 0
 
 

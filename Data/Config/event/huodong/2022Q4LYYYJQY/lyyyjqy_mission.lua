@@ -1,31 +1,31 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x810125_g_ScriptId	= 810125
 
 x810125_g_KDZZID = 1001000214
 x810125_g_SubKDZZID = 0
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x810125_g_MissionId			= 2117
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x810125_g_MissionKind			= 3
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x810125_g_MissionLevel		= 30
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x810125_g_IfMissionElite	= 0
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x810125_g_IsMissionOkFail	= 0		--ÈÎÎñ²ÎÊıµÄµÚ0Î»
+--nhi®m vø hay không ğã hoàn thành
+x810125_g_IsMissionOkFail	= 0		--??????0?
 
---ÈÎÎñÎÄ±¾ÃèÊö
+--nhi®m vø vån bän miêu tä
 x810125_g_MissionName			= "#{QRWH_221115_03}"
---ÈÎÎñÃèÊö
+--nhi®m vø miêu tä
 x810125_g_MissionInfo			= ""
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x810125_g_MissionTarget		= "#{QRWH_221115_29}"
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x810125_g_Custom	= { {id="Ê¹ÓÃÁµÓï²Ê¼ã×°°ç6´ÎÃµ¹å»¨´Ô",num=6} }
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x810125_g_Custom	= { {id="SØ døng Luyªn Ngæ Thái Tiên giä dÕng 6ThÑ Mai Quª Hoa Tùng",num=6} }
 
 
 --MisDescEnd

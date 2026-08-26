@@ -1,30 +1,30 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x890185_g_ScriptId = 890185
 
---Íê³ÉÈÎÎñNPCÊôĞÔ
-x890185_g_Position_X=37	--Ìæ´ú
-x890185_g_Position_Z=119	--Ìæ´ú
-x890185_g_SceneID=1293	--Ìæ´ú
-x890185_g_AccomplishNPC_Name="½­ĞĞÔÆ"	--Ìæ´ú
+--hoàn thành nhi®m vø NPCthuµc tính
+x890185_g_Position_X=37	--??
+x890185_g_Position_Z=119	--??
+x890185_g_SceneID=1293	--??
+x890185_g_AccomplishNPC_Name="Giang Hành Vân"	--??
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x890185_g_MissionId = 2143
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x890185_g_MissionKind = 64
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x890185_g_MissionLevel = 85 --10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x890185_g_IfMissionElite = 0
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x890185_g_MissionName="#{BLCC_20221214_275}"
 x890185_g_MissionTarget="#{BLCC_20221214_146}"
 x890185_g_IsMissionOkFail=0
-x890185_g_Custom = {{id = "´òÌıÈî·ãÃß½ü¿ö", num = 1},{id = "·ÅÏÂÖñµÆ", num = 1}} --Ìæ´ú
+x890185_g_Custom = {{id = "Höi thåm Nguy­n Phong Miên tình hình g¥n ğây", num = 1},{id = "Buông Trúc Ğång", num = 1}} --??
 x890185_g_ContinueInfo = ""
 x890185_g_MissionComplete = "#{BLCC_20221214_145}"
 

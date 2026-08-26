@@ -1,36 +1,36 @@
 --MisDescBegin
 
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x228904_g_ScriptId = 228904
 
--- Ä¿±ê NPC
+-- møc tiêu NPC
 x228904_g_Position_X = 217
 x228904_g_Position_Z = 255
 x228904_g_SceneID = 2
-x228904_g_AccomplishNPC_Name = "ÍõÉØ"
+x228904_g_AccomplishNPC_Name = "Vß½ng Thi«u"
 
--- ÈÎÎñºÅ
+-- nhi®m vø Hào
 x228904_g_MissionId = 949
 
--- Ç°ĞøÈÎÎñ
+-- Ti«n Tøc nhi®m vø
 x228904_g_PreMissionId = 948
 
--- ½ÓÊÜÈÎÎñ NPC ÊôĞÔ
-x228904_g_Name = "ÍõÉØ"
+-- nh§n nhi®m vø NPC thuµc tính
+x228904_g_Name = "Vß½ng Thi«u"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x228904_g_MissionKind = 28
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x228904_g_MissionLevel = 30
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x228904_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x228904_g_MissionName = "ÓÎÉ½ÍæË®"
+--nhi®m vø Danh
+x228904_g_MissionName = "Li­u Ám Hoa Minh-Du s½n ngoÕn thüy"
 x228904_g_MissionInfo = "#{TIANSHAN_SKILL_06}"
-x228904_g_MissionTarget = "    °Ñ5¸ö½ğ±Ò½»¸ø´óÀí³ÇĞŞÎÄÌ¨#WµÄ#RÍõÉØ#W#{_INFOAIM217,255,2,ÍõÉØ}¡£"
+x228904_g_MissionTarget = "    Mang 5 vàng ğªn Tu Vån Ğài · thành ĞÕi Lı#W Giao cho #RVß½ng Thi«u #W#{_INFOAIM217,255,2, Vß½ng Thi«u}."
 x228904_g_MissionContinue = "#{TIANSHAN_SKILL_07}"
 x228904_g_MissionComplete = "#{TIANSHAN_SKILL_08}"
 
@@ -39,8 +39,8 @@ x228904_g_MoneyCost = 50000
 x228904_g_MoneyBonus = 1000
 x228904_g_exp = 2000
 
-x228904_g_IsMissionOkFail = 0					-- ÊÇ·ñÍê³ÉÈÎÎñµÄ±ê¼ÇÎ»
-x228904_g_IsFindTarget = 1						-- ÊÇ·ñÕÒµ½ÍõÉØ±ê¼ÇÎ»
+x228904_g_IsMissionOkFail = 0					-- ??????????
+x228904_g_IsFindTarget = 1						-- ?????????
 
 
 --MisDescEnd

@@ -1,35 +1,35 @@
 --MisDescBegin
 
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x050009_g_ScriptId = 050009
 
--- ÈÎÎñºÅ
+-- nhi®m vø Hào
 x050009_g_MissionId = 395					-- 395 - 399
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x050009_g_MissionIdNext = 396
 
--- ÈÎÎñÄ¿±ênpc
-x050009_g_Name = "ÔÀ³£Ô²"
+-- nhi®m vø møc tiêu Npc
+x050009_g_Name = "NhÕc Thß¶ng Viên"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x050009_g_MissionKind = 3
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x050009_g_MissionLevel = 10000
 
--- ÈÎÎñÎÄ±¾ÃèÊö
-x050009_g_MissionName = "ÖĞÇïÈÎÎñ"
-x050009_g_MissionInfo = "    µ«ÌıÎÅ½­ºş´«ÑÔ£¬½üÈÕÒ»ÅúÒ»Æ·ÌÃµÄ¸ßÊÖÓû³ËÖĞÇï¼Ñ½Ú" ..
-				"Ö®¼Ê£¬´ó¾Ù½ø¹¥ÎÒ´óËÎ£¬´Ë¿ÌÒÑ±»ÑîÎÄ¹ã½«¾üµÄ´ó¾ü·âËøÔÚ" ..
-				"¶Ø»Í£¬Äã¿ÉÔ¸ÒâÎª¹ú¶øÕ½£¿"								-- ÈÎÎñÃèÊö
+-- nhi®m vø vån bän miêu tä
+x050009_g_MissionName = "Nhi®m vø trung thu"
+x050009_g_MissionInfo = "    Nghe giang h° ğ°n r¢ng, g¥n ğây có mµt s¯ cao thü nh¤t ph¦m ğß¶ng s¨ t¾i dñ l­ trung thu" ..
+				"T¤n công ĞÕi T¯ng ta, lúc ğó ğã b¸ tß¾ng quân Dß½ng Vån Quäng phong töa tÕi" ..
+				"Ğµi Hoàng, Nhî có b¢ng lòng hay không vì nß¾c Nhi Chiªn?"								-- ????
 
-x050009_g_MissionTarget = "    ÏÖÔÚËÙÈ¥¶Ø»Í£¨252£¬144£©ÑîÎÄ¹ã½«¾üÄÇÀïĞ­ÖúËûµÖµ²Ò»Æ·ÌÃ¸ßÊÖµÄ½ø¹¥¡£"	-- ÈÎÎñÄ¿±ê
+x050009_g_MissionTarget = "Hi®n tÕi nhanh ği Ğµi Hoàng(252, 144) Dß½ng Vån Quäng tß¾ng quân n½i ğó hi®p trş Tha ngån cän Nh¤t Ph¦m Ğß¶ng cao thü Ğích tiªn công."	-- ????
 
-x050009_g_ContinueInfo = "    "				-- Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x050009_g_MissionComplete = ""				-- Íê³ÉÈÎÎñnpcËµµÄ»°
+x050009_g_ContinueInfo = "    "				-- ??????npc??
+x050009_g_MissionComplete = ""				-- ????npc???
 
--- ÈÎÎñ½±Àø
+-- nhi®m vø thß·ng cho
 
 
 --MisDescEnd

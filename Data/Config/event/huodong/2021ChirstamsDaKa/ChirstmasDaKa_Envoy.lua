@@ -1,36 +1,36 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x892940_g_ScriptId	= 892940
 
 x892940_g_KDZZID =1001000173
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x892940_g_MissionId			= 2049
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x892940_g_MissionKind			= 3
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x892940_g_MissionLevel		= 30
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x892940_g_IfMissionElite	= 0
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x892940_g_IsMissionOkFail	= 0		--ÈÎÎñ²ÎÊıµÄµÚ0Î»
+--nhi®m vø hay không ğã hoàn thành
+x892940_g_IsMissionOkFail	= 0		--??????0?
 
---ÈÎÎñÎÄ±¾ÃèÊö
+--nhi®m vø vån bän miêu tä
 x892940_g_MissionName			= "#{SDXYX_20211104_108}"
---ÈÎÎñÃèÊö
+--nhi®m vø miêu tä
 x892940_g_MissionInfo			= "#{SDXYX_20211104_112}"
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x892940_g_MissionTarget		= "#{SDXYX_20211104_36}"
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
 x892940_g_ContinueInfo		= ""
---Íê³ÉÈÎÎñnpcËµµÄ»°
+--hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
 x892940_g_MissionComplete	= ""
 
 
---MissionParam(0.Íê³É×´Ì¬ 2.½ÓÈÎÎñÊ±¼ä 3. »¨·ÑÊ±¼ä 4.×÷ÎªÍ³¼ÆÊ±¼äµÄÈËµÄguid£¬5.½ÓÈÎÎñÈÕÆÚ)
+--MissionParam(0. Hoàn thành trÕng thái 2. Tiªp nh§n chÑc vø Vø th¶i gian 3. Tiêu phí th¶i gian 4. Làm công tác th¯ng kê th¶i gian Ğích Nhân Ğích guid, 5. Tiªp nh§n chÑc vø Vø ngày)
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x892940_g_Custom	= { {id="½«ËùÓĞĞ¡ÌÇ¹û½»¸øÊ¥µ®ÀÏÈË",num=1} }
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x892940_g_Custom	= { {id="Tß¾ng t¤t cä Ti¬u Ğß¶ng Quä giao cho Ông Già Noel",num=1} }
 
 --MisDescEnd

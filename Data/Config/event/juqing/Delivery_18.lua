@@ -1,42 +1,42 @@
 --MisDescBegin
 
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200088_g_ScriptId = 200088
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200088_g_MissionId = 18
 
---Ç°ĞøÈÎÎñ
+--Ti«n Tøc nhi®m vø
 x200088_g_PreMissionId = 17
 
---Ä¿±êNPC
-x200088_g_Name	="Ğì¾ªÀ×"
+--møc tiêu NPC
+x200088_g_Name	="T× Kinh Lôi"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200088_g_MissionKind = 47
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200088_g_MissionLevel = 40
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x200088_g_Position_X=210.2844
 x200088_g_Position_Z=201.6758
 x200088_g_SceneID=0
-x200088_g_AccomplishNPC_Name="Ğì¾ªÀ×"
+x200088_g_AccomplishNPC_Name="T× Kinh Lôi"
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200088_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x200088_g_MissionName="¹²Í¬½øÍË"
+--nhi®m vø Danh
+x200088_g_MissionName="Cùng Tiªn Cùng Lùi"
 x200088_g_MissionInfo="#{Mis_juqing_0018}"
 x200088_g_MissionTarget="#{Mis_juqing_Tar_0018}"
-x200088_g_MissionComplete="  Ïë²»µ½ÕòÄÏÍõ¾¹ÖÃÃñ×å´óÒåÓÚ²»¹Ë£¬ÕæÊÇÁîÈËÍ´ĞÄ°¡¡£"
+x200088_g_MissionComplete="  Th§t không ng¶ Ch¤n Nam Vß½ng lÕi không màng ğªn ğÕi nghîa dân tµc, th§t khiªn ngß¶i ta ğau lòng"
 
 x200088_g_MoneyJZBonus=5940
 x200088_g_exp=5400
 
-x200088_g_Custom	= { {id="ÒÑÕÒµ½Ğì¾ªÀ×",num=1} }
+x200088_g_Custom	= { {id="Ğã tìm ğßşc T× Kinh Lôi",num=1} }
 x200088_g_IsMissionOkFail = 0
 
 

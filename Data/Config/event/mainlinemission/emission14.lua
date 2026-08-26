@@ -1,43 +1,43 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x890167_g_ScriptId = 890167
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x890167_g_MissionId = 2174
 
---½»ÈÎÎñnpc
-x890167_g_Position_X=63--Íê³ÉÈÎÎñNPCÊôĞÔ
+--Giao nhi®m vø Npc
+x890167_g_Position_X=63--????NPC??
 x890167_g_Position_Z=53
 x890167_g_SceneID=1292
-x890167_g_AccomplishNPC_Name="Ä«Öª³î"
+x890167_g_AccomplishNPC_Name="M£c Tri S¥u"
 
---ÈÎÎñNPCÊôĞÔ
-x890167_g_AcceptNpcInfo	= {name="Èî·ãÃß", sceneId=1294}	--ÊÆÁ¦3
+--nhi®m vø NPCthuµc tính
+x890167_g_AcceptNpcInfo	= {name="Nguy­n Phong Miên", sceneId=1294}	--??3
 
---Ç°ÖÃÈÎÎñ
+--Ti«n Trí nhi®m vø
 x890167_g_PreMissionId = 2173
-x890167_g_PreMissionName="#{ZXJQ_221225_239}" --Ö÷ÏßÈÎÎñ13£º·¢¿ñµÄÒ°ÊŞ
+x890167_g_PreMissionName="#{ZXJQ_221225_239}" --????13:?????
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x890167_g_MissionKind = 9
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x890167_g_MissionLevel = 85
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x890167_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x890167_g_MissionName="#{ZXJQ_221225_253}" --Ö÷ÏßÈÎÎñ14£ºµ÷²é°×Ïªºş
-x890167_g_MissionTarget="#{ZXJQ_221225_260}" --Ç°Íù°×Ïªºş£¨XX£¬YY£©¡¢£¨XX£¬YY£©´¦£¬Ê¹ÓÃµ÷²éµÀ¾ß½øĞĞµ÷²é¡£
+--nhi®m vø Danh
+x890167_g_MissionName="#{ZXJQ_221225_253}" --????14:?????
+x890167_g_MissionTarget="#{ZXJQ_221225_260}" --?????(XX,YY)?(XX,YY)?,???????????
 x890167_g_IsMissionOkFail=0
-x890167_g_Custom1 = {{id = "µ÷²é²´·ç¼ÀÌ³", num = 1}} 
-x890167_g_Custom2 = {{id = "µ÷²éÄ«ğ°", num = 1}} 
-x890167_g_Custom3 = {{id = "·Å·ÉÊñÄÏĞÅ¸ë", num = 1}} 
-x890167_g_Custom4 = {{id = "·Å·É·ãÁÖĞÅ¸ë", num = 1}} 
+x890167_g_Custom1 = {{id = "Ği«u tra BÕc Phong tª ğàn", num = 1}} 
+x890167_g_Custom2 = {{id = "Ği«u tra M£c Diên", num = 1}} 
+x890167_g_Custom3 = {{id = "Cho phép c¤t cánh Thøc Nam b° câu ğßa tin", num = 1}} 
+x890167_g_Custom4 = {{id = "Cho phép c¤t cánh Phong Lâm b° câu ğßa tin", num = 1}} 
 x890167_g_ContinueInfo = ""
-x890167_g_MissionComplete = "#{ZXJQ_221225_266}" --ĞÒºÃÓĞÉÙÏÀµÄ·É¸ë´«Êé£¡
+x890167_g_MissionComplete = "#{ZXJQ_221225_266}" --??????????!
 
-x890167_g_AccomplishNpcInfo	= {name="Ä«Öª³î", sceneId=1292}
+x890167_g_AccomplishNpcInfo	= {name="M£c Tri S¥u", sceneId=1292}
 
 --MisDescEnd

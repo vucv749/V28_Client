@@ -1,41 +1,41 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200021_g_ScriptId = 200021
 
---¸±±¾Ãû³Æ
-x200021_g_CopySceneName="¾ÛÏÍ×¯"
+--bän sao tên
+x200021_g_CopySceneName="Tø Hi«n Trang"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200021_g_MissionId = 21
 
---Ç°ĞøÈÎÎñ
+--Ti«n Tøc nhi®m vø
 x200021_g_PreMissionId = 20
 
---Ä¿±êNPC
-x200021_g_Name = "ÇÇ·å"
+--møc tiêu NPC
+x200021_g_Name = "Ki«u Phong"
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200021_g_IfMissionElite = 1
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200021_g_MissionLevel = 40
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200021_g_MissionKind = 47
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x200021_g_MissionName="¶¥ÌìÁ¢µØ"
+--nhi®m vø vån bän miêu tä
+x200021_g_MissionName="Ğïnh thiên l§p ğ¸a"
 x200021_g_MissionInfo="#{Mis_juqing_0021}"
-x200021_g_MissionTarget="#{Mis_juqing_Tar_0021}"	--ÈÎÎñÄ¿±ê
-x200021_g_MissionComplete="  $N£¬ÄãµÄ°ïÖú£¬ÇÇÄ³¸Ğ¼¤²»¾¡¡£ÄÇÃ÷ÌìÒ»Ôç£¬ÎÒÃÇ¾ÍÔÚÂåÑô³Ç¶«ÃÅÏà¼û£¡"	--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
-x200021_g_MissionContinue="  ÄãÒÑ¾­´ò°Ü±«Ç§Áé¡¢ÆîÁù¡¢ÏòÍûº£ËûÃÇÈı¸öÈËÁËÂğ£¿"
+x200021_g_MissionTarget="#{Mis_juqing_Tar_0021}"	--????
+x200021_g_MissionComplete="$N, cüa ngß½i trş giúp, Ki«u M² vô cùng cäm kích. Na Sáng S¾m Ngày Mai, chúng ta ngay tÕi LÕc Dß½ng Thành Ğông Môn g£p lÕi!"	--????npc????
+x200021_g_MissionContinue="  Các\\u0020hÕ ğã ğánh bÕi Bào Thiên Linh, KÏ Løc, Hß¾ng V÷ng Häi ba ngß¶i h÷ chßa?"
 
 x200021_g_MoneyJZBonus=8910
 x200021_g_exp=9600
 
 x200021_g_RadioItemBonus={{id=10422004 ,num=1},{id=10422005,num=1},{id=10422006,num=1}}
 
-x200021_g_Custom	= { {id="ÒÑ´ò°Ü±«Ç§Áé",num=1},{id="ÒÑ´ò°ÜÆîÁù",num=1},{id="ÒÑ´ò°ÜÏòÍûº£",num=1}, }
+x200021_g_Custom	= { {id="Ğã ğánh bÕi Bào Thiên Linh",num=1},{id="Ğã ğánh bÕi KÏ Løc",num=1},{id="Ğã ğánh bÕi Hß¾ng V÷ng Häi",num=1}, }
 x200021_g_IsMissionOkFail = 0
 
 

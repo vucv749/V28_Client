@@ -1,36 +1,36 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x600049_g_ScriptId	= 600049
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x600049_g_Position_X=147
 x600049_g_Position_Z=96
---ÈÎÎñ½»¸¶npc
-x600049_g_AccomplishNPC_Name="Ù¡Ü½ÈØ"
---ÈÎÎñºÅ
+--nhi®m vø giao phó Npc
+x600049_g_AccomplishNPC_Name="Ğông Phù Dung"
+--nhi®m vø Hào
 x600049_g_MissionId			  = 1142
---ÈÎÎñÄ¿±ênpc
-x600049_g_Name 					  = "Ù¡Ü½ÈØ"
---ÈÎÎñ¹éÀà
-x600049_g_MissionKind			= 50 --Íæ¼Ò³ÇÊĞ
---ÈÎÎñµÈ¼¶
+--nhi®m vø møc tiêu Npc
+x600049_g_Name 					  = "Ğông Phù Dung"
+--nhi®m vø phân loÕi
+x600049_g_MissionKind			= 50 --????
+--nhi®m vø c¤p b§c
 x600049_g_MissionLevel		= 10000
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x600049_g_IfMissionElite	= 0
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x600049_g_IsMissionOkFail	= 0		--ÈÎÎñ²ÎÊıµÄµÚ0Î»
---ÈÎÎñÎÄ±¾ÃèÊö
-x600049_g_MissionName			= "Ö§Ô®³¯Í¢£ºÆßÒ¶Á«ÈÎÎñ"
---ÈÎÎñÃèÊö
+--nhi®m vø hay không ğã hoàn thành
+x600049_g_IsMissionOkFail	= 0		--??????0?
+--nhi®m vø vån bän miêu tä
+x600049_g_MissionName			= "Chi Vi®n Tri«u Ğình: Nhi®m vø Th¤t Di®p Liên"
+--nhi®m vø miêu tä
 x600049_g_MissionInfo			= ""
---ÈÎÎñÄ¿±ê
-x600049_g_MissionTarget		= "    ÊÕ¼¯Ò»Åú#YÆßÒ¶Á«#W¡£Äã¿Éµ½#G½£¸ó°×Ã©Áë#W»ò#GÎŞÁ¿É½ÌÒ»¨Ì¶#WÄÇÕÒµ½¡£ÇëÓÚ½ÓÊÜÈÎÎñµ±ÈÕ20:00Ç°Íê³É²¢½»¸¶¡£"
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+--nhi®m vø møc tiêu
+x600049_g_MissionTarget		= "    Thu th§p mµt s¯ #YTH¤t Di®p Liên#W. Chúng có th¬ tìm · #GKiªm Các BÕch Mao Lînh#W ho£c #GVô Lßşng S½n Ğào Hoa Ğàm#W. HÕn chót là trß¾c 20:00 gi¶ cùng ngày nh§n nhi®m vø."
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
 x600049_g_ContinueInfo		= ""
---Íê³ÉÈÎÎñnpcËµµÄ»°
+--hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
 x600049_g_MissionComplete	= ""
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x600049_g_Custom	= { {id="ÒÑÕÒµ½£ºÆßÒ¶Á«",num=1} }
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x600049_g_Custom	= { {id="Ğã tìm th¤y: Th¤t Di®p Liên",num=1} }
 
 --MisDescEnd

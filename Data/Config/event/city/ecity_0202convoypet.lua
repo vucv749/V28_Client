@@ -1,57 +1,57 @@
 --MisDescBegin
 
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x600009_g_ScriptId = 600009
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x600009_g_MissionId = 1106
 
---Ä¿±êNPC
-x600009_g_Name = "ÖìÊÀÓÑ"
+--møc tiêu NPC
+x600009_g_Name = "Chu Thª Hæu"
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x600009_g_MissionLevel = 10000
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x600009_g_MissionKind = 50
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x600009_g_IfMissionElite = 0
 
---********ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö******
---½ÇÉ«Mission±äÁ¿ËµÃ÷
-x600009_g_IsMissionOkFail			=0	--0 ÈÎÎñÍê³É±ê¼Ç
-x600009_g_MissionParam_SubId		=1	--1 ×ÓÈÎÎñ½Å±¾ºÅ´æ·ÅÎ»ÖÃ
-x600009_g_Param_sceneid				=2	--2ºÅ£ºµ±Ç°¸±±¾ÈÎÎñµÄ³¡¾°ºÅ
+--********phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng******
+--vai di­n Missionlßşng biªn ğ±i thuyªt minh
+x600009_g_IsMissionOkFail			=0	--0 ??????
+x600009_g_MissionParam_SubId		=1	--1 ??????????
+x600009_g_Param_sceneid				=2	--2?:??????????
 
---Ñ­»·ÈÎÎñµÄÊı¾İË÷Òı£¬ÀïÃæ´æ×ÅÒÑ×öµÄ»·Êı
+--tu¥n hoàn nhi®m vø Ğích s¯ li®u hß¾ng dçn tra cÑu, bên trong T°n Trß¾c Dî T¯ Ğích Hoàn S±
 x600009_g_MissionRound = 40
---**********************************ÒÔÉÏÊÇ¶¯Ì¬****************************
+--**********************************ğã ngoài Th¸ ğµng thái****************************
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x600009_g_MissionName = "·¢Õ¹ÈÎÎñ"
-x600009_g_MissionInfo = ""													--ÈÎÎñÃèÊö
-x600009_g_MissionTarget = "    »¤ËÍ %n µ½ %s%s ¸½½ü¡£#r#{BHRW_091224_1}"	--ÈÎÎñÄ¿±ê
-x600009_g_ContinueInfo = "    ÄãµÄÈÎÎñ»¹Ã»ÓĞÍê³ÉÃ´£¿"						--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x600009_g_SubmitInfo = "    ÊÂÇé½øÕ¹µÃÈçºÎ£¿"								--Íê³ÉÎ´Ìá½»Ê±µÄnpc¶Ô»°
-x600009_g_MissionComplete = "    ¸ÉµÃ²»´í£¬ÉõºÃÉõºÃ¡£"						--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø vån bän miêu tä
+x600009_g_MissionName = "Nhi®m vø phát tri¬n"
+x600009_g_MissionInfo = ""													--????
+x600009_g_MissionTarget = "Hµ t¯ng %n Ğáo %s%s g¥n ğây. #r#{BHRW_091224_1}"	--????
+x600009_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"						--??????npc??
+x600009_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"								--???????npc??
+x600009_g_MissionComplete = "Làm ğßşc không t°i, r¤t t¯t r¤t t¯t."						--????npc????
 
 x600009_g_StrForePart = 3
 
-x600009_g_FamilyNameStart = 0												-- x600009_g_StrList ÖĞµÄĞÕµÄÆğÊ¼Î»ÖÃ
-x600009_g_FamilyNameCount = 13												-- x600009_g_StrList ÖĞµÄĞÕµÄÊıÁ¿
-x600009_g_StrList = { [0] = "ÖÜ", [1] = "ÕÔ", [2] = "Ñî", [3] = "º«", [4] = "ÁÖ", [5] = "¹ù", [6] = "ÃÏ",
-			  [7] = "³£", [8] = "Îâ", [9] = "´Ş", [10] = "½ğ", [11] = "Ñ¦", [12] = "¹Ø",
-			  [13] = "Ñà", [14] = "æÃ", [15] = "ÁØ", [16] = "ÇÙ", [17] = "Ù»", [18] = "è¯",
-			  [19] = "ÇÉÇÉ", [20] = "İºİº", [21] = "Ë¼Ë¼", [22] = "Ó¡¶ù", [23] = "ÔÂ¶ù",
-			  [24] = "Ñ©¶ù", [25] = "Íğ¶ù",
+x600009_g_FamilyNameStart = 0												-- x600009_g_StrList ????????
+x600009_g_FamilyNameCount = 13												-- x600009_g_StrList ??????
+x600009_g_StrList = { [0] = "Châu", [1] = "Tri®u", [2] = "Dß½ng", [3] = "Hàn", [4] = "Lâm", [5] = "Quách", [6] = "MÕnh",
+			  [7] = "Thß¶ng", [8] = "Ngô", [9] = "Thôi", [10] = "Kim", [11] = "Tiªt", [12] = "Quan",
+			  [13] = "Yªn", [14] = "Ğình", [15] = "Lâm", [16] = "C¥m", [17] = "Sänh", [18] = "Toàn",
+			  [19] = "Xäo Xäo", [20] = "İºİº", [21] = "Tß Tß", [22] = "„n Nhi", [23] = "Nguy®t Nhi",
+			  [24] = "Tuyªt Nhi", [25] = "Uy¬n Nhi",
 }
 
--- Í¨ÓÃ³ÇÊĞÈÎÎñ½Å±¾
+-- thông døng thành th¸ nhi®m vø k¸ch bän g¯c
 x600009_g_CityMissionScript = 600001
 x600009_g_DevelopmentScript = 600007
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 
 
 --MisDescEnd

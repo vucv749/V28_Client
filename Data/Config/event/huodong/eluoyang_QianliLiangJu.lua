@@ -1,38 +1,38 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x809322_g_ScriptId = 809322
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x809322_g_MissionId = 1193
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x809322_g_MissionKind = 11
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x809322_g_MissionLevel = 30
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x809322_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x809322_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+--nhi®m vø hay không ğã hoàn thành
+x809322_g_IsMissionOkFail = 0		--????0?
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x809322_g_MissionName="Ç§ÀïÁ¼¾Ô"
+--nhi®m vø vån bän miêu tä
+x809322_g_MissionName="Thiên Lı Lß½ng Câu"
 x809322_g_MissionInfo="#{LYGL_100107_11}"
-x809322_g_MissionTarget="  ½«¡°#Y²®ÀÖÃúÅÆ#W¡±½»¸ø¶ÓÓÑË«ÈË×é¶ÓÕÒµ½#GÂåÑô#{_INFOAIM136,180,0,ÌïæçÃù}#RÌïæçÃù#W»»È¡×øÆï½±Àø¡£#r#GĞ¡ÌáÊ¾£º½«·Ç°ó¶¨µÄ¡°²®ÀÖÃúÅÆ¡±½»¸ø¶ÓÓÑ£¬×é¶ÓÇ°È¥Íê³ÉÈÎÎñ¡£"
-x809322_g_ContinueInfo="  ÄãÕÒÎÒÓĞÊ²Ã´ÊÂÇéÂğ£¿"
-x809322_g_MissionComplete="  ÄãÕÒÎÒÓĞÊ²Ã´ÊÂÇéÂğ£¿"
+x809322_g_MissionTarget="Tß¾ng'#YBÁc LÕc Minh Bài#W'giao cho Ğµi Hæu Song Nhân t± ğµi tìm ğßşc#GLÕc Dß½ng#{_INFOAIM136, 180, 0, Ği«n Kiêu Minh}#RĞi«n Kiêu Minh#Wğ±i l¤y t÷a kÜ thß·ng cho. #r#GTi¬u nêu lên: Tß¾ng Phi Bäng Ğ¸nh Ğích'Bác LÕc Minh Bài'giao cho Ğµi Hæu, t± ğµi tiªn ğªn hoàn thành nhi®m vø."
+x809322_g_ContinueInfo="  Các hÕ tìm ta có vi®c gì?"
+x809322_g_MissionComplete="  Các hÕ tìm ta có vi®c gì?"
 
---ÊÕ»õÈË
-x809322_g_Name = "ÌïæçÃù"
+--Thu Hoá Nhân
+x809322_g_Name = "Ği«n Kiêu Minh"
 
 x809322_g_RadioItemBonus={{id=10141209,num=1},{id=10141210,num=1},{id=10141211,num=1},{id=10141212,num=1}}
 
-x809322_g_Custom = { {id="ÒÑ»ñµÃ²®ÀÖÃúÅÆ",num=1} }
+x809322_g_Custom = { {id="Ğã ğÕt ğßşc Bá LÕc Minh Bài",num=1} }
 
 --MisDescEnd

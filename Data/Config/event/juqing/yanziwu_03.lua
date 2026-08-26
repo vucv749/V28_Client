@@ -1,46 +1,46 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200013_g_ScriptId = 200013
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200013_g_MissionId = 12
 
---Ç°ĞøÈÎÎñºÅ
+--Ti«n Tøc nhi®m vø Hào
 x200013_g_PreMissionId = 11
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 --g_MissionIdPre = 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x200013_g_Position_X=129
 x200013_g_Position_Z=77
 x200013_g_SceneID=1
-x200013_g_AccomplishNPC_Name="Ä½Èİ¸´"
+x200013_g_AccomplishNPC_Name="Mµ Dung Phøc"
 
---Ä¿±êNPC
-x200013_g_Name	="Ä½Èİ¸´"
+--møc tiêu NPC
+x200013_g_Name	="Mµ Dung Phøc"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200013_g_MissionKind = 48
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200013_g_MissionLevel = 30
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200013_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x200013_g_MissionName="Ò¹³¤ÃÎ¶à"
+--nhi®m vø Danh
+x200013_g_MissionName="Ğêm dài l¡m mµng"
 x200013_g_MissionInfo="#{Mis_juqing_0012}"
 x200013_g_MissionTarget="#{Mis_juqing_Tar_0012}"
-x200013_g_MissionContinue="  ÄãÕÒÎÒÓĞÊ²Ã´ÊÂÇéÂğ£¿"
-x200013_g_MissionComplete="  ÊÇ±íÃÃÈÃÄã¸øÎÒ´øµÄĞÅÂğ£¿ËûÃÇÏÖÔÚÊÇ²»ÊÇÒÑ¾­Æ½°²ÎŞÊÂÁË£¿ÎÒÏÈ¿´¿´ĞÅ¡£"
+x200013_g_MissionContinue="  Các hÕ tìm ta có vi®c gì?"
+x200013_g_MissionComplete="  Có phäi bi¬u muµi sai ngß½i mang thß t¾i cho ta? H÷ vçn bình an vô sñ chÑ? Ğ¬ ta xem thß trß¾c"
 
 x200013_g_MoneyJZBonus=8910
 x200013_g_exp=8000
 
 x200013_g_DemandItem={{id=40001004,num=1}}
 
---x200013_g_Custom	= { {id="ÒÑÕÒµ½Ä½Èİ¸´",num=1} }
+--x200013_g_Custom	= {{id="Dî tìm ğßşc Mµ Dung Phøc", num=1}}
 x200013_g_IsMissionOkFail = 0
 
 --MisDescEnd

@@ -5,52 +5,52 @@ x999191_g_CopyScriptId = 999205
 --kdzz
 x999191_g_KDZZID = 1006000614
 
---»î¶¯µÈ¼¶
+--hoÕt ğµng c¤p b§c
 x999191_g_MissionLevel = 30
 
---Ç°ÖÃÈÎÎñ
+--Ti«n Trí nhi®m vø
 x999191_g_PreMissionId = 2322
 x999191_g_PreMissionName = "#{DSJD_240520_02}"
 
---ºóÖÃÈÎÎñ
+--t× ğÑng sau nhi®m vø
 x999191_g_NextMissionId = 2324
 x999191_g_NextScriptId = 999192
 
---Íê³ÉÈÎÎñNPCÊôĞÔ
+--hoàn thành nhi®m vø NPCthuµc tính
 x999191_g_Position_X=107
 x999191_g_Position_Z=103
 x999191_g_SceneID=1320
-x999191_g_AccomplishNPC_Name="ÖÁ×ğ±¦"
+x999191_g_AccomplishNPC_Name="Chí tôn Bäo"
 x999191_g_AccomplishNPC_Id=52627
 
---ÈÎÎñÊı¾İ
+--nhi®m vø s¯ li®u
 x999191_g_MissionName="#{DSJD_240520_03}"
 x999191_g_MissionId = 2323
 x999191_g_MissionKind = 69
 x999191_g_IfMissionElite = 0
 
---ÈÎÎñ²ÎÊı
-x999191_g_IsMissionOkFail = 0--ÈÎÎñÍê³É±êÖ¾Î»(Ò»¶¨ÒªÎª0)
-x999191_g_ParamCustom1 = 1--ÈÎÎñ²ÎÊı1
-x999191_g_ParamCustom2 = 2--ÈÎÎñ²ÎÊı2
-x999191_g_ParamCustom3 = 3--ÈÎÎñ½×¶Î
+--nhi®m vø tham s¯
+x999191_g_IsMissionOkFail = 0--???????(????0)
+x999191_g_ParamCustom1 = 1--????1
+x999191_g_ParamCustom2 = 2--????2
+x999191_g_ParamCustom3 = 3--????
 
-x999191_g_MissionTarget="#{DSJD_240520_89}"--ÈÎÎñÄ¿±ê(ÈÎÎñÃæ°åÖĞÈÎÎñĞÅÏ¢ÏÔÊ¾ÄÚÈİ)
-x999191_g_Custom = {{ id = "¹ÛĞÄ", num = 1},{ id = "Ã÷Çé", num = 1}}--×Ô¶¨ÒåÍê³ÉÇé¿ö£¬ÄÚÈİ²»ÄÜÊ¹ÓÃ×Öµä£¬·Ö±ğ¶ÔÓ¦missionparamµÄµÚ1Î»ºóÑÓ
+x999191_g_MissionTarget="#{DSJD_240520_89}"--????(?????????????)
+x999191_g_Custom = {{ id = "Quan Tâm", num = 1},{ id = "Minh Tình", num = 1}}--???????,????????,????missionparam??1???
 
---npc¾àÀë
+--Npc khoäng cách
 x999191_g_NpcDist = 5
 
---ÈÎÎñµÀ¾ß±³°ü¿ÕÎ»
+--nhi®m vø ğÕo cø tay nãi không v¸
 x999191_g_BagSpace = 1
 x999191_g_ItemId = 38003195
 
---´«³öÎ»ÖÃ
-x999191_g_OutScene			= 1320	--´«³ö¸±±¾µÄ³¡¾°
-x999191_g_Out_X					= 109			--´«³ö¸±±¾µÄÎ»ÖÃX
-x999191_g_Out_Z					= 103			--´«³ö¸±±¾µÄÎ»ÖÃZ
+--truy«n ra v¸ trí
+x999191_g_OutScene			= 1320	--???????
+x999191_g_Out_X					= 109			--???????X
+x999191_g_Out_Z					= 103			--???????Z
 
---½±Àø
+--thß·ng cho
 x999191_g_PrizeNum = 20
 
 

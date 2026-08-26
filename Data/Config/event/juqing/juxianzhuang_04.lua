@@ -1,5 +1,5 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200023_g_ScriptId = 200023
 
 

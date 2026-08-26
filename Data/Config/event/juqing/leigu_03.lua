@@ -1,41 +1,41 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200042_g_ScriptId = 200042
 
---¸±±¾Ãû³Æ
-x200042_g_CopySceneName="ÀŞ¹ÄÉ½"
+--bän sao tên
+x200042_g_CopySceneName="Lôi C± S½n"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200042_g_MissionId = 35
 
---Ç°ĞøÈÎÎñ
+--Ti«n Tøc nhi®m vø
 x200042_g_PreMissionId = 34
 
---Ä¿±êNPC
-x200042_g_Name = "ËÕĞÇºÓ"
+--møc tiêu NPC
+x200042_g_Name = "Tô Tinh Hà"
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200042_g_IfMissionElite = 1
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200042_g_MissionLevel = 60
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200042_g_MissionKind = 53
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x200042_g_MissionName="ÊäÓ®³É°ÜË­ÈËËã"
+--nhi®m vø vån bän miêu tä
+x200042_g_MissionName="Thua th¡ng thành bÕi ai biªt ğßşc"
 x200042_g_MissionInfo="#{Mis_juqing_0035}"
-x200042_g_MissionTarget="#{Mis_juqing_Tar_0035}"	--ÈÎÎñÄ¿±ê
-x200042_g_MissionComplete="  Ïë²»µ½ÕâĞ¡ºÍÉĞ¾ÓÈ»½â¿ªÁËÕäççÆå¾Ö£¡ËÕĞÇºÓ¸Ğ¼¤²»¾¡¡£¶¡´ºÇïÎ´ÄÜµÃ³Ñ£¬ÕâÀïÓĞÄãµÄÒ»°ë¹¦ÀÍ¡£"	--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
-x200042_g_MissionContinue="  Ã»Ïëµ½£¬Ã»Ïëµ½¡­¡­ÕâÅÌÆå¾ÓÈ»»á×ß³ÉÕâÑù¡­¡­"
+x200042_g_MissionTarget="#{Mis_juqing_Tar_0035}"	--????
+x200042_g_MissionComplete="Không ng¶ Giá Ti¬u Hoà Thßşng cß nhiên giäi khai Trân Lung KÏ Cøc! Tô Tinh Hà vô cùng cäm kích. Ğinh Xuân Thu không th¬ thñc hi®n ğßşc, n½i này có cüa ngß½i mµt nØa công lao."	--????npc????
+x200042_g_MissionContinue="  Th§t không ng¶, không ng¶... Bàn c¶ này lÕi ği thành thª này.."
 
 x200042_g_MoneyBonus=21600
 x200042_g_exp=60000
 
 x200042_g_RadioItemBonus={{id=10414013 ,num=1},{id=10414014,num=1},{id=10414015,num=1}}
 
-x200042_g_Custom	= { {id="ÒÑ±£»¤ĞéÖñ",num=1} }
+x200042_g_Custom	= { {id="Ğã bäo hµ Hß Trúc",num=1} }
 x200042_g_IsMissionOkFail = 0
 
 

@@ -1,54 +1,54 @@
 --MisDescBegin
 
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x600014_g_ScriptId = 600014
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x600014_g_MissionId = 1107
 
---Ä¿±êNPC
-x600014_g_Name = "¹¶Ğ´"
+--møc tiêu NPC
+x600014_g_Name = "C¦u Tä"
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x600014_g_MissionLevel = 10000
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x600014_g_MissionKind = 50
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x600014_g_IfMissionElite = 0
 
---********ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö******
---½ÇÉ«Mission±äÁ¿ËµÃ÷
-x600014_g_IsMissionOkFail			=0	--0 ÈÎÎñÍê³É±ê¼Ç
-x600014_g_MissionParam_SubId		=1	--1 ×ÓÈÎÎñ½Å±¾ºÅ´æ·ÅÎ»ÖÃ
-x600014_g_MissionParam_KillNumber	=2	--2 ĞèÒªÏûÃğµÄ¹ÖÎïÊıÁ¿
-x600014_g_Param_sceneid				=3	--3ºÅ£ºµ±Ç°¸±±¾ÈÎÎñµÄ³¡¾°ºÅ
-x600014_g_Param_teamid				=4	--4ºÅ£º½Ó¸±±¾ÈÎÎñÊ±ºòµÄ¶ÓÎéºÅ
-x600014_g_Param_killcount			=5	--5ºÅ£ºÉ±ËÀÈÎÎñ¹ÖµÄÊıÁ¿
-x600014_g_Param_time				=6	--6ºÅ£ºÍê³É¸±±¾ËùÓÃÊ±¼ä(µ¥Î»£ºÃë)
---6ºÅ£ºÎ´ÓÃ
---7ºÅ£ºÎ´ÓÃ
+--********phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng******
+--vai di­n Missionlßşng biªn ğ±i thuyªt minh
+x600014_g_IsMissionOkFail			=0	--0 ??????
+x600014_g_MissionParam_SubId		=1	--1 ??????????
+x600014_g_MissionParam_KillNumber	=2	--2 ?????????
+x600014_g_Param_sceneid				=3	--3?:??????????
+x600014_g_Param_teamid				=4	--4?:???????????
+x600014_g_Param_killcount			=5	--5?:????????
+x600014_g_Param_time				=6	--6?:????????(??:?)
+--6Hào: Không dùng
+--7Hào: Không dùng
 
---Ñ­»·ÈÎÎñµÄÊı¾İË÷Òı£¬ÀïÃæ´æ×ÅÒÑ×öµÄ»·Êı
+--tu¥n hoàn nhi®m vø Ğích s¯ li®u hß¾ng dçn tra cÑu, bên trong T°n Trß¾c Dî T¯ Ğích Hoàn S±
 x600014_g_MissionRound = 42
---**********************************ÒÔÉÏÊÇ¶¯Ì¬****************************
+--**********************************ğã ngoài Th¸ ğµng thái****************************
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x600014_g_MissionName = "¿Æ¼¼ÈÎÎñ"
-x600014_g_MissionInfo = ""													--ÈÎÎñÃèÊö
-x600014_g_MissionTarget = "    ÏûÃğÊé·¿ÖĞËùÓĞó¼¹Ö¡£#r#{BHRW_091224_1}"		--ÈÎÎñÄ¿±ê
-x600014_g_ContinueInfo = "    ÄãµÄÈÎÎñ»¹Ã»ÓĞÍê³ÉÃ´£¿"						--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x600014_g_SubmitInfo = "    ÊÂÇé½øÕ¹µÃÈçºÎ£¿"								--Íê³ÉÎ´Ìá½»Ê±µÄnpc¶Ô»°
-x600014_g_MissionComplete = "    ¸ÉµÃ²»´í£¬ÉõºÃÉõºÃ¡£"						--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø vån bän miêu tä
+x600014_g_MissionName = "Nhi®m vø kÛ thu§t"
+x600014_g_MissionInfo = ""													--????
+x600014_g_MissionTarget = "Tiêu di®t thß phòng Trung t¤t cä Ğ¯ Quái. #r#{BHRW_091224_1}"		--????
+x600014_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"						--??????npc??
+x600014_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"								--???????npc??
+x600014_g_MissionComplete = "Làm ğßşc không t°i, r¤t t¯t r¤t t¯t."						--????npc????
 
 x600014_g_Parameter_Kill_CountRandom = { { id = 300475, numNeeded = 2, numKilled = 5 } }
 
--- Í¨ÓÃ³ÇÊĞÈÎÎñ½Å±¾
+-- thông døng thành th¸ nhi®m vø k¸ch bän g¯c
 x600014_g_CityMissionScript = 600001
 x600014_g_SciTechScript = 600012
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 
 
 --MisDescEnd

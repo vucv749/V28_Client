@@ -1,44 +1,44 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x230012_g_ScriptId = 230012
 
---Ç°ÌáÈÎÎñ
+--ği«u ki®n tiên quyªt nhi®m vø
 --g_MissionIdPre =
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x230012_g_MissionId = 4011
 
---ÈÎÎñÄ¿±ênpc
-x230012_g_Name	="ÖÇÇå´óÊ¦"
+--nhi®m vø møc tiêu Npc
+x230012_g_Name	="Trí Thanh ĞÕi Sß"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x230012_g_MissionKind = 1
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x230012_g_MissionLevel = 10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x230012_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x230012_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+--nhi®m vø hay không ğã hoàn thành
+x230012_g_IsMissionOkFail = 0		--????0?
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñ±äÁ¿µÚÒ»Î»ÓÃÀ´´æ´¢Ëæ»úµÃµ½µÄ½Å±¾ºÅ
+--nhi®m vø lßşng biªn ğ±i ğ® nh¤t v¸ dùng ğ¬ t°n træ TuÏ C½ nh§n ğßşc Ğích k¸ch bän g¯c Hào
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x230012_g_MissionName="°×ÂíËÂĞŞĞĞ"
-x230012_g_MissionInfo="#{event_xunhuan_0003}"  --ÈÎÎñÃèÊö
-x230012_g_MissionTarget="#{event_xunhuan_0004}"		--ÈÎÎñÄ¿±ê
-x230012_g_ContinueInfo="°¢ÃÖÍÓ·ğ...#rÉÙÏÀ¿É·ñ´òÍ¨ÁËÕäççÆå¾Ö£¿"		--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x230012_g_MissionComplete="ÉÆÔÕÉÆÔÕ£¬ÉÙÏÀÎªÈËºÀË¬£¬¹Ø°®°ÙĞÕ£¬ÈÕºó±ØÓĞÒ»·¬×÷Îª¡£"					--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø vån bän miêu tä
+x230012_g_MissionName="Tu hành BÕch Mã Tñ"
+x230012_g_MissionInfo="#{event_xunhuan_0003}"  --????
+x230012_g_MissionTarget="#{event_xunhuan_0004}"		--????
+x230012_g_ContinueInfo="A Di Ğà Ph§t. . . #rthiªu hi®p có không ğä thông Li­u Trân Lung KÏ Cøc?"		--??????npc??
+x230012_g_MissionComplete="Thi®n tai thi®n tai, thiªu hi®p thái ğµ làm ngß¶i hào säng, quan ái dân chúng, ngày sau t¤t có mµt phen làm."					--????npc????
 
---¿ØÖÆ½Å±¾
+--kh¯ng chª k¸ch bän g¯c
 x230012_g_ControlScript=230000
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 
 
 

@@ -1,41 +1,41 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200015_g_ScriptId = 200015
 
---¸±±¾Ãû³Æ
-x200015_g_CopySceneName="Ñà×ÓÎë"
+--bän sao tên
+x200015_g_CopySceneName="Yªn TØ ‘"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200015_g_MissionId = 14
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200015_g_PreMissionId = 13
 
---Ä¿±êNPC
-x200015_g_Name = "ÍõÓïæÌ"
+--møc tiêu NPC
+x200015_g_Name = "Vß½ng Ngæ Yên"
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200015_g_IfMissionElite = 1
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200015_g_MissionLevel = 30
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200015_g_MissionKind = 48
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x200015_g_MissionName="Ö¸µãÈººÀÏ·"
+--nhi®m vø vån bän miêu tä
+x200015_g_MissionName="Chï Ği¬m Qu¥n Hào"
 x200015_g_MissionInfo="#{Mis_juqing_0014}"
-x200015_g_MissionTarget="#{Mis_juqing_Tar_0014}"	--ÈÎÎñÄ¿±ê
-x200015_g_MissionComplete="  $N£¬ÄãµÄ¾ÈÃüÖ®¶÷£¬ËûÈÕ¶¨µ±±¨»¹¡£Ö»ÊÇ£¬ÎÒÏÖÔÚÉíÖĞ¾ç¶¾¡­¡­²»ÖªµÀÊÇ·ñ»¹ÓĞ»ú»á»Ø±¨´óÏÀ¡­¡­"	--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
-x200015_g_MissionContinue="  ÄãÒÑ¾­°ïÖú¶Î¹«×Ó´òÍËÄÇĞ©Î÷ÏÄÎäÊ¿ÁËÂğ£¿"
+x200015_g_MissionTarget="#{Mis_juqing_Tar_0014}"	--????
+x200015_g_MissionComplete="$N, cüa ngß½i ân cÑu mÕng, ngày khác ±n thöa Báo Hoàn. Chính là, Ngã hi®n tÕi Thân Trung k¸ch ğµc……không biªt hay không còn có c½ hµi h°i báo ğÕi hi®p……"	--????npc????
+x200015_g_MissionContinue="  Ngß½i ğã giúp Ğoàn công tØ ğánh lui các võ sî Tây HÕ sao?"
 
 x200015_g_MoneyJZBonus=23760
 x200015_g_exp=22000
 
 x200015_g_RadioItemBonus={{id=10423005,num=1},{id=10423006,num=1},{id=10423007,num=1}}
 
-x200015_g_Custom	= { {id="ÒÑÉ±ËÀ»Æºú×Ó",num=1} ,{id="ÒÑÉ±ËÀ»ÒÅÛ¿Í",num=1},{id="ÒÑÉ±ËÀ»¢×¦ÃÅµÜ×Ó",num=1},{id="ÒÑÉ±ËÀò°÷×ÎäÊ¿",num=1},{id="ÒÑÉ±ËÀË¤½Ç¸ßÊÖ",num=1}}
+x200015_g_Custom	= { {id="Dî giªt chªt Hoàng râu",num=1} ,{id="Dî giªt chªt áo bào tro Khách",num=1},{id="Dî giªt chªt H± Träo Môn ğ® tØ",num=1},{id="Dî giªt chªt râu quai nón võ sî",num=1},{id="Dî giªt chªt Su¤t Giác cao thü",num=1}}
 
 
 --MisDescEnd

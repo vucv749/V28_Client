@@ -1,37 +1,37 @@
 --MisDescBegin
 
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x401010_g_ScriptId = 401010
 
---¸±±¾Ãû³Æ
-x401010_g_CopySceneName="Ä¾ÈËÏï"
+--bän sao tên
+x401010_g_CopySceneName="Mµc Nhân HÕng"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x401010_g_MissionId = 1054
 
---Ä¿±êNPC
-x401010_g_Name = "Ä¾ÈË"
+--møc tiêu NPC
+x401010_g_Name = "Mµc Nhân"
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x401010_g_IfMissionElite = 1
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x401010_g_MissionKind = 1
 
---********ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö******
---Ñ­»·ÈÎÎñµÄÊı¾İË÷Òı£¬ÀïÃæ´æ×ÅÒÑ×öµÄ»·Êı MD_MURENXIANG_HUAN
+--********phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng******
+--tu¥n hoàn nhi®m vø Ğích s¯ li®u hß¾ng dçn tra cÑu, bên trong T°n Trß¾c Dî T¯ Ğích Hoàn S± MD_MURENXIANG_HUAN
 x401010_g_MissionRound = 9
---**********************************ÒÔÉÏÊÇ¶¯Ì¬****************************
+--**********************************ğã ngoài Th¸ ğµng thái****************************
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x401010_g_MissionName="Ä¾ÈËÏï"
-x401010_g_MissionInfo="É±ËÀÈ«²¿¹ÖÎï£¬Ò»¸ö²»Áô£¡"  --ÈÎÎñÃèÊö
-x401010_g_MissionTarget="É±ËÀÈ«²¿¹ÖÎï"	--ÈÎÎñÄ¿±ê
-x401010_g_ContinueInfo="ÄãÒª¼ÌĞøÅ¬Á¦°¡£¡"	--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x401010_g_MissionComplete="Ğ»Ğ»°¡£¬°³ÃÇÖÕÓÚ¸Ò³öÃÅÁË"	--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø vån bän miêu tä
+x401010_g_MissionName="Mµc Nhân HÕng"
+x401010_g_MissionInfo="Giªt chªt toàn bµ quái v§t, mµt cái b¤t lßu!"  --????
+x401010_g_MissionTarget="Giªt chªt toàn bµ quái v§t"	--????
+x401010_g_ContinueInfo="Nhî Yêu tiªp tøc c¯ g¡ng A!"	--??????npc??
+x401010_g_MissionComplete="Cám ½n A, Y¬m Môn r¯t cøc Cäm xu¤t môn Li­u"	--????npc????
 
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 x401010_g_MoneyBonus=8888
 
 

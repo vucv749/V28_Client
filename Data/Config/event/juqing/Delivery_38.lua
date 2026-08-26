@@ -1,33 +1,33 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200095_g_ScriptId = 200095
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x200095_g_Position_X=113.5541
 x200095_g_Position_Z=63.7330
 x200095_g_SceneID=0
-x200095_g_AccomplishNPC_Name="ºÕÁ¬ÌúÊ÷"
+x200095_g_AccomplishNPC_Name="Hách Liên Thiªt Thø"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200095_g_MissionId = 38
 
---Ç°ĞøÈÎÎñ
+--Ti«n Tøc nhi®m vø
 x200095_g_PreMissionId = 37
 
---Ä¿±êNPC
-x200095_g_Name	="ºÕÁ¬ÌúÊ÷"
+--møc tiêu NPC
+x200095_g_Name	="Hách Liên Thiªt Thø"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200095_g_MissionKind = 49
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200095_g_MissionLevel = 70
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200095_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x200095_g_MissionName="Íò¹úõí¾Ï½õ±êÈü"
+--nhi®m vø Danh
+x200095_g_MissionName="Hµi Thi Túc C¥u"
 x200095_g_MissionInfo="#{Mis_juqing_0038}"
 x200095_g_MissionTarget="#{Mis_juqing_Tar_0038}"
 x200095_g_MissionComplete="  #{TM_20080313_05}"
@@ -35,7 +35,7 @@ x200095_g_MissionComplete="  #{TM_20080313_05}"
 x200095_g_MoneyBonus=10800
 x200095_g_exp=21600
 
-x200095_g_Custom	= { {id="ÒÑÕÒµ½ºÕÁ¬ÌúÊ÷",num=1} }
+x200095_g_Custom	= { {id="Ğã tìm ğßşc Liên Thiªt Thø",num=1} }
 x200095_g_IsMissionOkFail = 0
 
 

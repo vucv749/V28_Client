@@ -2,28 +2,28 @@
 
 x250553_g_ScriptId = 250553
 
---Íê³ÉÈÎÎñNPCĞÅÏ¢£¨Ğ¡µØÍ¼ºÍµØÍ¼ÏÔÊ¾ÓÃ£©
+--hoàn thành nhi®m vø NPCtin tÑc(Ti¬u bän ğ° Hoà bän ğ° bi¬u hi®n Døng)
 x250553_g_Position_X = 166
 x250553_g_Position_Z = 112
 x250553_g_SceneID = 0
-x250553_g_AccomplishNPC_Name= "·ëÊ°Óğ"
+x250553_g_AccomplishNPC_Name= "Phùng Th§p Vû"
 
---ÈÎÎñÄ¿±ênpc
-x250553_g_Name = "·ëÊ°Óğ"
---ÈÎÎñºÅ
+--nhi®m vø møc tiêu Npc
+x250553_g_Name = "Phùng Th§p Vû"
+--nhi®m vø Hào
 x250553_g_MissionId = 2218
---ÈÎÎñÃû
-x250553_g_MissionName = "#{ZNWB_230625_04}" --¹²Òä½­ºş¹ıÍùÊ±£¨ÍÚ¹Å¶­£©
--- ÈÎÎñÈÕÖ¾ÖĞµÄÃèÊö
+--nhi®m vø Danh
+x250553_g_MissionName = "#{ZNWB_230625_04}" --???????(???)
+-- nhi®m vø nh§t kı Trung Ğích miêu tä
 x250553_g_MissionTarget = "#{ZNWB_230625_49}"
---ÈÎÎñÀàĞÍ£¨¶ÔÓ¦Client/Config/MissionKind.txt£©
+--nhi®m vø loÕi hình(ğ¯i Ñng Client/Config/MissionKind. Txt)
 x250553_g_MissionKind = 11
---ÈÎÎñµÈ¼¶£¨10000ÎªµÈ¼¶×ÔÊÊÓ¦, ÆäËûÎª¾ßÌåµÈ¼¶£©
+--nhi®m vø c¤p b§c(10000Vi c¤p b§c thanh thän ¿ng, m£t khác Vi cø th¬ c¤p b§c)
 x250553_g_MissionLevel = 10000
---ÈÎÎñÍê³É±êÖ¾Î»£¨Ò»¶¨ÒªÓÃÈÎÎñ²ÎÊı0£©
+--nhi®m vø hoàn thành d¤u hi®u V¸(nh¤t ğ¸nh phäi Døng nhi®m vø tham s¯ 0)
 x250553_g_IsMissionOkFail = 0
---ÈÎÎñÈÕÖ¾ÏÔÊ¾µÄÍê³ÉÇé¿ö£¨Ê¹ÓÃÈÎÎñ²ÎÊı1£©
-x250553_g_Custom = { {id="¾ÉÎïÊıÁ¿", num=1} }
+--nhi®m vø nh§t kı bi¬u hi®n Ğích hoàn thành tình hu¯ng(sØ døng nhi®m vø tham s¯ 1)
+x250553_g_Custom = { {id="V§t cû s¯ lßşng", num=1} }
 
 
 --MisDescEnd

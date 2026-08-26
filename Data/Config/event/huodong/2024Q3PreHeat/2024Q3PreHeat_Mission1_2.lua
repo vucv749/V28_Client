@@ -1,32 +1,32 @@
 --MisDescBegin
--- ½Å±¾ºÅ Í¬Ê±¹ÒÔÚ½ÓÊÜÈÎÎñNPCºÍÌá½»ÈÎÎñNPCÉíÉÏ
+-- k¸ch bän g¯c Hào ğ°ng th¶i b¡t tÕi nh§n nhi®m vø NPCHoà ğ® trình nhi®m vø NPCtrên ngß¶i
 x999432_g_ScriptId 				= 999432
 x999432_g_MissionMainScriptId 	= 999430
 x999432_g_MainScriptId 			= 999429
---ÈÎÎñºÅ(ÕÒ²ß»®Òª)
+--nhi®m vø Hào(Träo bày ra Yêu)
 x999432_g_MissionId 			= 2341
---ÈÎÎñÀàĞÍ(ÕÒ²ß»®Òª£¬¶ÔÓ¦Client/Config/MissionKind.txt)
+--nhi®m vø loÕi hình(Träo bày ra Yêu, ğ¯i Ñng Client/Config/MissionKind. Txt)
 x999432_g_MissionKind 			= 71
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x999432_g_MissionLevel 			= 30
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x999432_g_IfMissionElite 		= 0
 
--- ÈÎÎñÃû
+-- nhi®m vø Danh
 x999432_g_MissionName						= "#{ERYR_240701_223}"
--- ÈÎÎñÄ¿±ê
+-- nhi®m vø møc tiêu
 x999432_g_MissionTarget						= "#{ERYR_240701_227}"	
--- ÈÎÎñ²ÎÊı 0ºÅÇ±¹æÔòÖ»ÄÜÓÃ×÷±ê¼ÇÈÎÎñÊÇ·ñÍê³É£¬»á×Ô¶¯Ó°Ïì¿Í»§¶ËÈÎÎñÁĞ±íÊÇ·ñÏÔÊ¾ÒÑÍê³É
+-- nhi®m vø tham s¯ 0Hào Ti«m quy t¡c chï có th¬ dùng làm d¤u hi®u nhi®m vø hay không hoàn thành, Hµi tñ ğµng änh hß·ng hµ khách Ğoan nhi®m vø Li®t Bi¬u hay không bi¬u hi®n Dî hoàn thành
 x999432_g_IsMissionOkFail					= 0
---ÈÎÎñÍê³ÉÇé¿öÖĞÏÔÊ¾£¬¸ù¾İÀà±ğÀ´Ê¹ÓÃ
---Íê³ÉÈÎÎñĞèÒªÎïÆ·µÄÀàĞÍ£¨Ñ°Îï½Å±¾£©,id¼ûCommonItem.txt
+--nhi®m vø hoàn thành tình hu¯ng Trung bi¬u hi®n, cån cÑ LoÕi Bi®t ğ¯i xØ Døng
+--hoàn thành nhi®m vø c¥n v§t ph¦m Ğích loÕi hình(T¥m V§t k¸ch bän g¯c), idKiªn CommonItem. Txt
 --x890227_g_DemandItem 					= {{id=20309001, num=1}, {id=20309005, num=1}}
---ÈÎÎñĞèÒªÉ±µÄ¹ÖÎï£¨É±¹ÖÈÎÎñ£©£¬id¼ûMonsterAttrExTable.txt
+--nhi®m vø c¥n giªt quái v§t(giªt quái nhi®m vø), idKiªn MonsterAttrExTable. Txt
 --x890227_g_DemandKill 					= {id=779, num=8}
---×Ô¶¨ÒåÍê³ÉÇé¿ö£¬ÄÚÈİ²»ÄÜÊ¹ÓÃ×Öµä£¬·Ö±ğ¶ÔÓ¦missionparamµÄµÚ1Î»ºóÑÓ
-x999432_g_Custom							= {{ id = "Ì½²éÏßË÷", num = 6},{ id = "ÊáÀí°¸Çé", num = 1}} 
--- x999432_g_ClueNum 						= {{ id = "Ì½²éÏßË÷", num = 6}}		 --µÚ1Î»±äÁ¿ 
--- x999432_g_IsIntergration					= {{ id = "ÊáÀí°¸Çé", num = 1}}	 -- µÚ2Î»±äÁ¿ 
+--Tñ ğ¸nh nghîa hoàn thành tình hu¯ng, nµi dung không th¬ sØ døng tñ ği¬n, phân bi®t ğ¯i Ñng missionparamĞích Ğ® 1V¸ H§u Diên
+x999432_g_Custom							= {{ id = "Tra xét manh m¯i", num = 6},{ id = "Chäi vu¯t sşi vu án", num = 1}} 
+-- x999432_g_ClueNum = {{id = "tra xét manh m¯i", num = 6}} --Ğ® 1V¸ lßşng biªn ğ±i
+-- x999432_g_IsIntergration = {{id = "chäi vu¯t sşi vu án", num = 1}} -- Ğ® 2V¸ lßşng biªn ğ±i
 x999432_g_ContinueInfo 						= ""
 
 -- x999432_g_MoneyJZBonus 					= 0

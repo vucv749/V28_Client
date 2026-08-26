@@ -1,52 +1,52 @@
 --MisDescBegin
 
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x228903_g_ScriptId = 228903
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x228903_g_MissionId = 947
 
--- Ç°ĞøÈÎÎñ
+-- Ti«n Tøc nhi®m vø
 x228903_g_PreMissionId = 946
 
--- Ä¿±ê NPC
+-- møc tiêu NPC
 x228903_g_Position_X = 262
 x228903_g_Position_Z = 46
 x228903_g_SceneID = 18
-x228903_g_AccomplishNPC_Name = "ÖÖÊÀºâ"
+x228903_g_AccomplishNPC_Name = "Chüng Thª Hoành"
 
---Ä¿±êNPC
-x228903_g_Name = "ÖÖÊÀºâ"
+--møc tiêu NPC
+x228903_g_Name = "Chüng Thª Hoành"
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x228903_g_MissionLevel = 30
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x228903_g_MissionKind = 28
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x228903_g_IfMissionElite = 0
 
---********ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö******
---½ÇÉ«Mission±äÁ¿ËµÃ÷
-x228903_g_IsMissionOkFail			=0	--0 ÈÎÎñÍê³É±ê¼Ç
-x228903_g_DemandKill				= { { id = 540, num = 1 }, { id = 541, num = 4 } }		--±äÁ¿µÚ1Î»
-x228903_g_Param_QinNumber			=1	--1 ĞèÒªÉ±ËÀÇØ²®¹âÊıÁ¿
-x228903_g_Param_LubaNumber			=2	--2 ĞèÒªÏûÃğµÄÇØ¼ÒÕ¯Â·°ÔÊıÁ¿
-x228903_g_MonsterList				= { [x228903_g_Param_QinNumber] = { "ÇØ²®¹â", 1 }, [x228903_g_Param_LubaNumber] = { "ÇØ¼ÒÕ¯Â·°Ô", 4 } }
-x228903_g_Param_sceneid				=3	--3ºÅ£ºµ±Ç°¸±±¾ÈÎÎñµÄ³¡¾°ºÅ
-x228903_g_Param_teamid				=4	--4ºÅ£º½Ó¸±±¾ÈÎÎñÊ±ºòµÄ¶ÓÎéºÅ
+--********phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng******
+--vai di­n Missionlßşng biªn ğ±i thuyªt minh
+x228903_g_IsMissionOkFail			=0	--0 ??????
+x228903_g_DemandKill				= { { id = 540, num = 1 }, { id = 541, num = 4 } }		--???1?
+x228903_g_Param_QinNumber			=1	--1 ?????????
+x228903_g_Param_LubaNumber			=2	--2 ????????????
+x228903_g_MonsterList				= { [x228903_g_Param_QinNumber] = { "T¥n Bá Quang", 1 }, [x228903_g_Param_LubaNumber] = { "T¥n gia trÕi lµ bá", 4 } }
+x228903_g_Param_sceneid				=3	--3?:??????????
+x228903_g_Param_teamid				=4	--4?:???????????
 
---**********************************ÒÔÉÏÊÇ¶¯Ì¬****************************
+--**********************************ğã ngoài Th¸ ğµng thái****************************
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x228903_g_MissionName = "¾ÍµØÕı·¨"
-x228903_g_MissionInfo = "#{TIANSHAN_SKILL_03}"													--ÈÎÎñÃèÊö
-x228903_g_MissionTarget = "    #GÑãÃÅ¹Ø#WµÄ#RÖÖÊÀºâ#W#{_INFOAIM263,46,18,ÖÖÊÀºâ}ÒªÄãÔÚÑãÃÅ¹ØÌ«ÊØ¸®ÖĞÉ±ËÀÇØ²®¹âºÍËÄÃûÇØ¼ÒÕ¯Â·°Ô¡£"		--ÈÎÎñÄ¿±ê
-x228903_g_ContinueInfo = "#{TIANSHAN_SKILL_04}"								--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x228903_g_MissionComplete = "#{TIANSHAN_SKILL_05}"							--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø vån bän miêu tä
+x228903_g_MissionName = "Li­u Ám Hoa Minh-L§p tÑc thø lı"
+x228903_g_MissionInfo = "#{TIANSHAN_SKILL_03}"													--????
+x228903_g_MissionTarget = "#GNHÕn Môn Quan#WĞích#RXung Thª Hành#W#{_INFOAIM263, 46, 18, Xung Thª Hành}Yêu Nhî TÕi NhÕn Môn Quan Thái Thú trong phü giªt chªt T¥n Bác Quang Hoà b¯n gã T¥n Gia TrÕi Lµ Bá."		--????
+x228903_g_ContinueInfo = "#{TIANSHAN_SKILL_04}"								--??????npc??
+x228903_g_MissionComplete = "#{TIANSHAN_SKILL_05}"							--????npc????
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 x228903_g_MoneyBonus = 1000
 x228903_g_exp = 2000
 

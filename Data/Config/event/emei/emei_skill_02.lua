@@ -1,37 +1,37 @@
 --MisDescBegin
 
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x212117_g_ScriptId = 212117
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x212117_g_Position_X=217
 x212117_g_Position_Z=255
 x212117_g_SceneID=2
-x212117_g_AccomplishNPC_Name="ÍõÉØ"
+x212117_g_AccomplishNPC_Name="Vß½ng Thi«u"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x212117_g_MissionId = 923
 
---Ç°ĞøÈÎÎñ
+--Ti«n Tøc nhi®m vø
 x212117_g_PreMissionId = 922
 
---Ä¿±êNPC
-x212117_g_Name	="ÍõÉØ"
+--møc tiêu NPC
+x212117_g_Name	="Vß½ng Thi«u"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x212117_g_MissionKind = 26
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x212117_g_MissionLevel = 20
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x212117_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x212117_g_MissionName="¾¡µãÈËÊÂ"
+--nhi®m vø Danh
+x212117_g_MissionName="Kim Châm Ğµ Kiªp-V§n døng tñ nhiên"
 x212117_g_MissionInfo="#{emei_skill_mis_06}"
-x212117_g_MissionTarget="  °Ñ#G5¸ö½ğ±Ò#W½»¸ø´óÀí³ÇĞŞÎÄÌ¨#WµÄ#RÍõÉØ#W#{_INFOAIM217,255,2,ÍõÉØ}¡£"
-x212117_g_MissionContinue="  Äã¾ö¶¨ÒªÑ§Ï°¡°½ğÕë¶É½Ù¡±ÁËÂğ£¿"
+x212117_g_MissionTarget="  Mang nµp #G5 vàng#W giao cho thành ĞÕi Lı Tu Vån Ğài#W cho #RVß½ng Thi«u #W#{_INFOAIM217,255,2, Vß½ng Thi«u}."
+x212117_g_MissionContinue="  Các hÕ quyªt ğ¸nh h÷c Kim châm ğµ kiªp sao?"
 x212117_g_MissionComplete="#{emei_skill_mis_07}"
 
 x212117_g_MoneyBonus=2000

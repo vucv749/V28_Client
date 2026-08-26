@@ -1,48 +1,48 @@
 --MisDescBegin
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x600024_g_ScriptId = 600024
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x600024_g_MissionId = 1110
 
---ÈÎÎñÄ¿±ênpc
-x600024_g_Name = "Ù¡Ü½ÈØ"
+--nhi®m vø møc tiêu Npc
+x600024_g_Name = "Ğông Phù Dung"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x600024_g_MissionKind = 50
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x600024_g_MissionLevel = 10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x600024_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
-x600024_g_IsMissionOkFail = 0							-- ÈÎÎñÍê³É±ê¼Ç
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+x600024_g_IsMissionOkFail = 0							-- ??????
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñ±äÁ¿µÚÒ»Î»ÓÃÀ´´æ´¢Ëæ»úµÃµ½µÄ½Å±¾ºÅ
+--nhi®m vø lßşng biªn ğ±i ğ® nh¤t v¸ dùng ğ¬ t°n træ TuÏ C½ nh§n ğßşc Ğích k¸ch bän g¯c Hào
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x600024_g_MissionName = "À©ÕÅÈÎÎñ"
-x600024_g_MissionInfo = "    ½ñÌìÎÒÏëÒª %s ÁË£¬È¥°ïÎÒÕÒÀ´°É£¡"			--ÈÎÎñÃèÊö
-x600024_g_MissionTarget = "    ½«½á½»ĞÅ¸ø%n¡£#r#{BHRW_091224_1}"		--ÈÎÎñÄ¿±ê
-x600024_g_ContinueInfo = "    ÄãµÄÈÎÎñ»¹Ã»ÓĞÍê³ÉÃ´£¿"					--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x600024_g_SubmitInfo = "    ÊÂÇé½øÕ¹µÃÈçºÎ£¿"							--Íê³ÉÎ´Ìá½»Ê±µÄnpc¶Ô»°
-x600024_g_MissionComplete = "    ²»´í²»´í£¬ÕâÏÂ±¾°ïµÄÃûÆøÓÖÔÚ½­ºşÉÏÌá¸ßÁË²»ÉÙ¡£"		--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø vån bän miêu tä
+x600024_g_MissionName = "Nhi®m vø khuªch trß½ng"
+x600024_g_MissionInfo = "Hôm nay ta nghî Yêu %s Li­u, ği giúp Ngã Träo ğªn ğây ği!"			--????
+x600024_g_MissionTarget = "Tß¾ng Kªt Giao Tín C¤p%n. #r#{BHRW_091224_1}"		--????
+x600024_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"					--??????npc??
+x600024_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"							--???????npc??
+x600024_g_MissionComplete = "Không t°i không t°i, cái này bän bang Ğích danh khí Hñu TÕi trên giang h° ğ« cao Li­u không ít."		--????npc????
 
 x600024_g_StrForePart = 5
-x600024_g_NPCOffset = 30												-- Suppose to 30, ±íÀïµÚ¼¸ÁĞ NPC µÄÆ«ÒÆÁ¿
-x600024_g_NPCOffsetEx	= 255 										--±íÀïµÚ¼¸ÁĞ NPC µÄÆ«ÒÆÁ¿À©³ä modi:lby20071126
+x600024_g_NPCOffset = 30												-- Suppose to 30, ????? NPC ????
+x600024_g_NPCOffsetEx	= 255 										--????? NPC ?????? modi:lby20071126
 
 x600024_g_MissionRound = 55
 
--- Í¨ÓÃ³ÇÊĞÈÎÎñ½Å±¾
+-- thông døng thành th¸ nhi®m vø k¸ch bän g¯c
 x600024_g_CityMissionScript = 600001
 x600024_g_ExpandScript = 600023
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 
 
 --MisDescEnd

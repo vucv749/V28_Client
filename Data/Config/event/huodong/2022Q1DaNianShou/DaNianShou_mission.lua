@@ -1,33 +1,33 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x892993_g_ScriptId = 892993
 
---Íê³ÉÈÎÎñNPCÊôĞÔ
-x892993_g_Position_X=185  --Ìæ´ú
-x892993_g_Position_Z=124 --Ìæ´ú
+--hoàn thành nhi®m vø NPCthuµc tính
+x892993_g_Position_X=185  --??
+x892993_g_Position_Z=124 --??
 x892993_g_SceneID=2
-x892993_g_AccomplishNPC_Name="¶ÎÁè·ç"
+x892993_g_AccomplishNPC_Name="ĞoÕn Lång Phong"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x892993_g_MissionId = 2180
 
---Ä¿±êNPC
-x892993_g_Name	="¶ÎÁè·ç"
+--møc tiêu NPC
+x892993_g_Name	="ĞoÕn Lång Phong"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x892993_g_MissionKind = 3
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x892993_g_MissionLevel = 30
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x892993_g_IfMissionElite = 0
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x892993_g_MissionName="#{DNS_211124_02}"
 x892993_g_MissionTarget="#{DNS_211124_35}"
 x892993_g_IsMissionOkFail=0
-x892993_g_Custom = {{ id = "ÒÑ»÷É±×÷ËîÄêÊŞ", num = 1}}
+x892993_g_Custom = {{ id = "Dî ğánh chªt qu¤y phá Niên Thú", num = 1}}
 x892993_g_ContinueInfo = ""
 x892993_g_MissionComplete = "#{YXDHYD_20210207_26}"
 x892993_g_ItemBonus={{id=38002475,num=1}}

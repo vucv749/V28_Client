@@ -1,37 +1,37 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x212107_g_ScriptId = 212107
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x212107_g_MissionId = 552
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x212107_g_MissionKind = 32
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x212107_g_MissionLevel = 75
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x212107_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x212107_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
-x212107_g_Custom	= { {id="ÒÑ¾­µãÈ¼¸ÉÀÇ·à",num=1} }
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+--nhi®m vø hay không ğã hoàn thành
+x212107_g_IsMissionOkFail = 0		--????0?
+x212107_g_Custom	= { {id="Ğã ğ¯t phân sói khô",num=1} }
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñĞèÒªµÃµ½µÄÎïÆ·
---x212107_g_DemandItem={{id=40002112,num=1}}		--±äÁ¿µÚ1Î»
+--nhi®m vø c¥n nh§n ğßşc Ğích v§t ph¦m
+--x212107_g_DemandItem={{id=40002112, num=1}} --lßşng biªn ğ±i Ğ® 1V¸
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x212107_g_MissionName="Çı¸ÏºÚ·ä"
+--nhi®m vø vån bän miêu tä
+x212107_g_MissionName="Ğu±i H¡c Phong"
 x212107_g_MissionInfo="#{Lua_liaoxi_001}"
-x212107_g_MissionTarget="  É±ËÀ#R°×ÀÇÍõ#W#{_INFOAIM161,268,21,-1}£¬µÃµ½¸ÉÀÇ·à¡£ÓÃ»ğÕÛ×ÓµãÈ¼¸ÉÀÇ·à£¬Çı¸ÏºÚ·ä£¬È»ºó»Øµ½#G¹ãÄşÕò#W£¬Ïò#R²®ÑÕ#W#{_INFOAIM164,199,21,²®ÑÕ}±¨¸æÄãµÄ·¢ÏÖ¡£"
-x212107_g_ContinueInfo="  ÄãÒÑ¾­Çı¸ÏÍêºÚ·äÁËÂğ£¿"
-x212107_g_MissionComplete="  ÄêÇáÈË£¬ÄãÕæÊÇÎÒÃÇµÄ¾ÈĞÇ°¡£¡ÎÒ´ú±íËùÓĞµÄ×åÈË¸ĞĞ»ÄãµÄ°ïÖú£¡ÎÒÃÇÓÀÔ¶¶¼²»»áÍü¼ÇÄãµÄ¡£"
+x212107_g_MissionTarget="  Di®t #RB?ch Lang Vß½ng #W#{_INFOAIM161,268,21,-1}, ğÕt ğßşc Can Lang Ph¥n. Dùng lØa ğ¯t Can Lan Ph¥n, ğu±i hªt H¡c Phong, sau ğó quay lÕi #GQuäng Vinh Tr¤n#W tìm #RBá Nhan #W#{_INFOAIM164,199,21,Bá Nhan} báo cáo phát hi®n cüa mình."
+x212107_g_ContinueInfo="  Ngß½i ğã ğu±i H¡c Phong ği chßa?"
+x212107_g_MissionComplete="  Ngß¶i trë tu±i, ngß½i chính là cÑu tinh cüa chúng ta. Thay m£t t¤t cä tµc nhân ta, ta xin cäm tÕ sñ giúp ğŞ cüa các hÕ. Chúng ta s¨ mãi không quên"
 
---½±Àø
+--thß·ng cho
 x212107_g_MoneyBonus=49800
 x212107_g_Exp = 45000
 --x212107_g_ItemBonus={{id=30003007,num=5}}

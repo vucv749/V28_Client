@@ -1,50 +1,50 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x890055_g_ScriptId	= 890055
 
 --KDZZ
 x890055_g_KDZZID = 2021080021
 x890055_g_SubKDZZID = 1
 
---»î¶¯Ê±¼ä
+--hoÕt ğµng th¶i gian
 x890055_g_StartDate = 20230202
 x890055_g_EndDate = 20230215
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x890055_g_MissionId = 2119
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x890055_g_MissionKind = 3
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x890055_g_MissionLevel = 30
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x890055_g_IfMissionElite = 0
 
---ÈÎÎñ²ÎÊı
-x890055_g_MissionParam_OkFail = 0--µÚ0Î» ±ê¼ÇÈÎÎñÍê³É
-x890055_g_MissionParam_Index = 1--µÚ1Î» ±ê¼ÇËæ»ú·½°¸
-x890055_g_MissionParam_Num1 = 2--µÚ2Î» ±ê¼ÇÌá½»ÊıÁ¿-³È
-x890055_g_MissionParam_Num2 = 3--µÚ3Î» ±ê¼ÇÌá½»ÊıÁ¿-×Ï
-x890055_g_MissionParam_Num3 = 4--µÚ4Î» ±ê¼ÇÌá½»ÊıÁ¿-ÂÌ
+--nhi®m vø tham s¯
+x890055_g_MissionParam_OkFail = 0--?0? ??????
+x890055_g_MissionParam_Index = 1--?1? ??????
+x890055_g_MissionParam_Num1 = 2--?2? ??????-?
+x890055_g_MissionParam_Num2 = 3--?3? ??????-?
+x890055_g_MissionParam_Num3 = 4--?4? ??????-?
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x890055_g_MissionName = "#{QRDK_221123_01}"
 
---ÈÎÎñÃèÊö
+--nhi®m vø miêu tä
 x890055_g_MissionInfo = "#{QRDK_221123_05}"
 
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x890055_g_MissionTarget = ""
 
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
 x890055_g_ContinueInfo = "#{QRDK_221123_37}"
 
---Íê³ÉÈÎÎñnpcËµµÄ»°
+--hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
 x890055_g_MissionComplete = "#{QRDK_221123_32}"
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i
 x890055_g_Custom = {}
 
 --MisDescEnd

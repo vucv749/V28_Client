@@ -1,38 +1,38 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x809323_g_ScriptId = 809323
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x809323_g_MissionId = 1194
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x809323_g_MissionKind = 11
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x809323_g_MissionLevel = 30
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x809323_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x809323_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+--nhi®m vø hay không ğã hoàn thành
+x809323_g_IsMissionOkFail = 0		--????0?
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñĞèÒªµÃµ½µÄÎïÆ·
---x809323_g_DemandItem={{id=40002071,num=1}}		--±äÁ¿µÚ1Î»
+--nhi®m vø c¥n nh§n ğßşc Ğích v§t ph¦m
+--x809323_g_DemandItem={{id=40002071, num=1}} --lßşng biªn ğ±i Ğ® 1V¸
 
---ÈÎÎñÎÄ±¾ÃèÊö
+--nhi®m vø vån bän miêu tä
 x809323_g_MissionName="#{LYGL_100107_15}"
 x809323_g_MissionInfo="#{LYGL_100107_16}"
 x809323_g_MissionTarget="#{LYGL_100107_32}"
 x809323_g_ContinueInfo="#{TM_20080313_08}"
 x809323_g_MissionComplete="#{TM_20080313_08}"
 
---ÊÕ»õÈË
-x809323_g_Name = "¹ùÌìĞÅ"
+--Thu Hoá Nhân
+x809323_g_Name = "Quách Thiên Tín"
 
-x809323_g_Custom = { {id="ÒÑÊÕ¼¯¡°ÓÂÆø¡±",num=10} }
+x809323_g_Custom = { {id="Ğã thu th§p [Dûng khí]",num=10} }
 
 --MisDescEnd

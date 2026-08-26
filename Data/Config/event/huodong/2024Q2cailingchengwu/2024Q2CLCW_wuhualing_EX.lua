@@ -1,19 +1,19 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x890361_g_ScriptId                = 890361
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x890361_g_MissionId               = 2270 --
---ÈÎÎñ¹éÀà
-x890361_g_MissionKind             = 3 -- Â·¾¶£º\Client\Config\MissionKind.txt
---ÈÎÎñµÈ¼¶
+--nhi®m vø phân loÕi
+x890361_g_MissionKind             = 3 -- ??:\Client\Config\MissionKind.txt
+--nhi®m vø c¤p b§c
 x890361_g_MissionLevel            = 30
---ÈÎÎñÃû
+--nhi®m vø Danh
 x890361_g_MissionName             = "#{CLCW_240328_26}"
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x890361_g_MissionTarget           = "#{CLCW_240328_27}"
---±ê¼Ç³É¹¦ÊÇÄÄºÅÎ» ÕâÀï±ê¼ÇµÄÊÇ0ºÅÎ»
+--d¤u hi®u thành công Th¸ Ná Hào V¸ n½i này d¤u hi®u chính là 0Hào V¸
 x890361_g_IsMissionOkFail         = 0
--- ÈÎÎñÍê³ÉÇé¿ö,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x890361_g_Custom                  = { { id = "²É¼¯ÖÁÉÙ10µãÁéÆø", num = 1 } }
+-- nhi®m vø hoàn thành tình hu¯ng, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x890361_g_Custom                  = { { id = "Thu th§p ít nh¤t 10Ği¬m Linh Khí", num = 1 } }
 
 --MisDescEnd

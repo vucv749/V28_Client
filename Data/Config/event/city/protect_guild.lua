@@ -1,41 +1,41 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x805042_g_ScriptId	= 805042
---¸±±¾Ãû³Æ
-x805042_g_CopySceneName	= "±£»¤°ïÅÉ×¤µØ"
---ÈÎÎñºÅ
+--bän sao tên
+x805042_g_CopySceneName	= "Bäo hµ bang phái trú ğ¸a"
+--nhi®m vø Hào
 x805042_g_MissionId			= 1120
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x805042_g_MissionIdPre	= 0
---Ä¿±êNPC
-x805042_g_Name					= "±£»¤°ïÅÉ×¤µØ"
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--møc tiêu NPC
+x805042_g_Name					= "Bäo hµ bang phái trú ğ¸a"
+--hay không Th¸ tinh anh nhi®m vø
 x805042_g_IfMissionElite= 0
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x805042_g_MissionLevel	= 10000
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x805042_g_MissionKind		= 1
---ÈÎÎñÎÄ±¾ÃèÊö
-x805042_g_MissionName			= "±£»¤°ïÅÉ×¤µØ"
---ÈÎÎñÃèÊö
+--nhi®m vø vån bän miêu tä
+x805042_g_MissionName			= "Bäo hµ bang phái trú ğ¸a"
+--nhi®m vø miêu tä
 x805042_g_MissionInfo			= "  "
---ÈÎÎñÄ¿±ê
-x805042_g_MissionTarget		= "  É±ËÀËùÓĞµÄ¹ÖÎï¼´¿ÉÍê³ÉÈÎÎñ¡£"
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+--nhi®m vø møc tiêu
+x805042_g_MissionTarget		= "  Di®t hªt quái v§t li«n có th¬ hoàn t¤t nhi®m vø"
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
 x805042_g_ContinueInfo		= "  "
---Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--hoàn thành nhi®m vø Npc nói chuy®n trong l¶i nói
 x805042_g_MissionComplete	= "  "
 
 
---**********************************ÒÔÉÏÊÇ¶¯Ì¬****************************
---½ÇÉ«Mission±äÁ¿ËµÃ÷
-x805042_g_Param_IsMissionOkFail	= 0						--0ºÅ£ºµ±Ç°ÈÎÎñÊÇ·ñÍê³É(0Î´Íê³É£»1Íê³É)
-x805042_g_Param_killmonstercount	= 1					--1ºÅ£ºÉ±ËÀÈÎÎñĞ¡¹ÖµÄÊıÁ¿
-x805042_g_Param_killbosscount	= 2							--2ºÅ£ºÉ±ËÀÈÎÎñboss¹ÖµÄÊıÁ¿
-x805042_g_Param_sceneid		= 3									--3ºÅ£ºµ±Ç°¸±±¾ÈÎÎñµÄ³¡¾°ºÅ
-x805042_g_Param_teamid		= 4									--4ºÅ£º½Ó¸±±¾ÈÎÎñÊ±ºòµÄ¶ÓÎéºÅ
-x805042_g_Param_time			= 5									--5ºÅ£ºÍê³É¸±±¾ËùÓÃÊ±¼ä(µ¥Î»£ºÃë)
-																							--6ºÅ£º¾ßÌå¸±±¾ÊÂ¼ş½Å±¾Õ¼ÓÃ
-																							--7ºÅ£º¾ßÌå¸±±¾ÊÂ¼ş½Å±¾Õ¼ÓÃ
+--**********************************ğã ngoài Th¸ ğµng thái****************************
+--vai di­n Missionlßşng biªn ğ±i thuyªt minh
+x805042_g_Param_IsMissionOkFail	= 0						--0?:????????(0???;1??)
+x805042_g_Param_killmonstercount	= 1					--1?:?????????
+x805042_g_Param_killbosscount	= 2							--2?:????boss????
+x805042_g_Param_sceneid		= 3									--3?:??????????
+x805042_g_Param_teamid		= 4									--4?:???????????
+x805042_g_Param_time			= 5									--5?:????????(??:?)
+--6Hào: Cø th¬ bän sao sñ ki®n k¸ch bän g¯c chiªm døng
+--7Hào: Cø th¬ bän sao sñ ki®n k¸ch bän g¯c chiªm døng
 
 --MisDescEnd

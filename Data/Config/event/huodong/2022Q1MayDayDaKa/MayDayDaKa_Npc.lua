@@ -1,21 +1,21 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x893122_g_ScriptId	= 893122
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x893122_g_MissionId = 2075
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x893122_g_MissionKind = 3
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x893122_g_MissionLevel = 30
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x893122_g_IfMissionElite = 0
 
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É(0.Íê³É×´Ì¬ 1.6µã¼¤»î 2.×ø±êidx 3.ÂÒĞò 4.½ÓÈÎÎñÊ±¼ä 5.½ÓÈÎÎñÈÕÆÚ 6.»¨·ÑÊ±¼ä)
-x893122_g_MissionParam_OkFail = 0		--ÈÎÎñ²ÎÊıµÄµÚ0Î»
+--nhi®m vø hay không ğã hoàn thành(0. Hoàn thành trÕng thái 1. 6Ği¬m kích hoÕt 2. T÷a ğµ idx 3. LoÕn Tñ 4. Tiªp nh§n chÑc vø Vø th¶i gian 5. Tiªp nh§n chÑc vø Vø ngày 6. Tiêu phí th¶i gian)
+x893122_g_MissionParam_OkFail = 0		--??????0?
 x893122_g_MissionParam_Param = 1
 x893122_g_MissionParam_PosIdx = 2
 x893122_g_MissionParam_PosList = 3
@@ -23,21 +23,21 @@ x893122_g_MissionParam_StartTime = 4
 x893122_g_MissionParam_FinishTime = 5
 x893122_g_MissionParam_IsPosOK = 6
 
---ÈÎÎñÎÄ±¾ÃèÊö
+--nhi®m vø vån bän miêu tä
 x893122_g_MissionName = "#{FYH_220407_04}"
 
 x893122_g_MissionInfo = "#{FYH_220407_34}"
 
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x893122_g_MissionTarget = "#{FYH_220407_34}"
 
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
 x893122_g_ContinueInfo = ""
 
---Íê³ÉÈÎÎñnpcËµµÄ»°
+--hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
 x893122_g_MissionComplete = ""
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ
-x893122_g_Custom = { {id="ÒÑÍê³ÉÈ«²¿ÑÌ»¨È¼·Å", num=1} }
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i
+x893122_g_Custom = { {id="Dî hoàn thành toàn bµ pháo hoa châm ngòi", num=1} }
 
 --MisDescEnd

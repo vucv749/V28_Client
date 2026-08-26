@@ -1,51 +1,51 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x210209_g_ScriptId = 210209
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x210209_g_MissionId = 449
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x210209_g_MissionKind = 13
 
---ÈÎÎñµÀ¾ß±àºÅ
+--nhi®m vø ğÕo cø ğánh s¯
 x210209_g_ItemId = 40002108
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x210209_g_MissionLevel = 1
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x210209_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x210209_g_MissionName="Ñ§Ï°¼¼ÄÜ"
-x210209_g_MissionInfo="  È¥ÕÒÊ®´óÃÅÅÉµÄµÜ×ÓÑ§Ï°Ò»Ïî¼¼ÄÜ"
-x210209_g_MissionTarget="Ñ§Ï°¼¼ÄÜ¡£"
-x210209_g_MissionComplete="  ¼ÈÈ»ÄãÄÃÀ´ÁËÍÆ¼öĞÅ£¬ÄÇÎÒ¾Í½Ì¸øÄãÒ»ÏîĞÂÊÖ¼¼ÄÜ£¬ÒªºÃºÃÑ§Ï°£¬¶à¶àÁ·Ï°²Å¿ÉÒÔ¡£"
-x210209_g_Name_0="ÕÔÌìÊ¦"
+--nhi®m vø Danh
+x210209_g_MissionName="KÛ nång h÷c t§p"
+x210209_g_MissionInfo="Ği tìm Th§p ğÕi môn phái ğ® tØ H÷c T§p mµt kÛ nång"
+x210209_g_MissionTarget="H÷c T§p kÛ nång."
+x210209_g_MissionComplete="Ngß½i ğã Nã ğªn ğây thß gi¾i thi®u, ta ğây s¨ dÕy cho ngß½i hÕng nh¤t kÛ nång tân thü, hãy h÷c t§p chåm chï, luy®n t§p nhi«u h½n m¾i có th¬."
+x210209_g_Name_0="Tri®u Thiên Sß"
 
 --hzp 2009-2-18 begin<<
---x210209_g_Name_1="»ÛÒ×"
---x210209_g_Name_2="Ê¯±¦"
---x210209_g_Name_3="¼òÄş"
---x210209_g_Name_4="ÕÅ»ñ"
---x210209_g_Name_5="Â·ÈıÄï"
---x210209_g_Name_6="º£·ç×Ó"
---x210209_g_Name_7="ÆÆÌ°"
---x210209_g_Name_8="³ÌÇàËª"
---x210209_g_Name_9="å£Ì¨×ÓÓğ"
+--x210209_g_Name_1="Tu® D¸ch"
+--x210209_g_Name_2="ThÕch Bäo"
+--x210209_g_Name_3="Giän Ninh"
+--x210209_g_Name_4="Trß½ng HoÕch"
+--x210209_g_Name_5="Lµ Tam Nß½ng"
+--x210209_g_Name_6="Häi Phong TØ"
+--x210209_g_Name_7="Phá Tham"
+--x210209_g_Name_8="Trình Thanh Sß½ng"
+--x210209_g_Name_9="ĞÕm Ğài TØ Vû"
 
 x210209_g_XinShouJiNeng = {
-{name="»ÛÒ×",			skill="Ñ§Ï°Íâ¹¦»¤Ìå"},
-{name="Ê¯±¦",			skill="Ñ§Ï°·ÜÁ¦´ò»÷"},
-{name="¼òÄş",			skill="Ñ§Ï°Òªº¦¹¥»÷"},
-{name="ÕÅ»ñ",			skill="Ñ§Ï°ÄÚ¾¢¹¥»÷"},
-{name="Â·ÈıÄï",		skill="Ñ§Ï°³õ¼¶ÖÎÁÆ"},
-{name="º£·ç×Ó",		skill="Ñ§Ï°ÄÚ¹¦»¤Ìå"},
-{name="ÆÆÌ°",			skill="Ñ§Ï°ÆÆÕÀ¹¥»÷"},
-{name="³ÌÇàËª",		skill="Ñ§Ï°³õ¼¶Òş¶İ"},
-{name="å£Ì¨×ÓÓğ",	skill="Ñ§Ï°È¼ÉÕÏİÚå"},
-{name="ÍõÏªÔÆ",	  skill="Ñ§Ï°Ãü»ê»¤Ìå"},
+{name="Tu® D¸ch",			skill="H÷c T§p NgoÕi Công Hµ Th¬"},
+{name="ThÕch Bäo",			skill="H÷c T§p Ph¤n Lñc Tá Kích"},
+{name="Giän Ninh",			skill="H÷c T§p Yêu HÕi Công Kích"},
+{name="Trß½ng HoÕch",			skill="H÷c Nµi Kình Công Kích"},
+{name="Lµ Tam Nß½ng",		skill="H÷c T§p S½ C¤p Tr¸ Li®u"},
+{name="Häi Phong TØ",		skill="H÷c T§p Nµi Công Hµ Th¬"},
+{name="Phá Tham",			skill="H÷c T§p Phá Ği®n Công Kích"},
+{name="Trình Thanh Sß½ng",		skill="H÷c S½ C¤p †n Ğµn"},
+{name="Ğàm Ğài TØ Vû",	skill="H÷c T§p Nhiên Thiêu HÕm Tïnh"},
+{name="Vß½ng Khê Vân",	  skill="H÷c T§p M®nh H°n hµ th¬"},
 }
 -->>end
 

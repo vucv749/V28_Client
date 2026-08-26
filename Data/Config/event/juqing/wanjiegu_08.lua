@@ -1,40 +1,40 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200008_g_ScriptId = 200008
 
---¸±±¾Ãû³Æ
-x200008_g_CopySceneName="Íò½Ù¹È"
+--bän sao tên
+x200008_g_CopySceneName="VÕn Kiªp C¯c"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200008_g_MissionId = 8
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200008_g_PreMissionId = 7
 
---Ä¿±êNPC
-x200008_g_Name = "¶ÎÕıÃ÷"
+--møc tiêu NPC
+x200008_g_Name = "Ğoàn Chính Minh"
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200008_g_IfMissionElite = 1
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200008_g_MissionKind = 51
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200008_g_MissionLevel = 20
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x200008_g_MissionName="»¢Ğ¥ÁúÒ÷"
+--nhi®m vø vån bän miêu tä
+x200008_g_MissionName="H± khiªu long ngâm"
 x200008_g_MissionInfo="#{Mis_juqing_0008}"
 x200008_g_MissionTarget="#{Mis_juqing_Tar_0008}"
-x200008_g_MissionComplete="  Ì«ºÃÁË£¬¶àĞ»ÄãµÄ°ïÃ¦£¬ÒÔºó´óÀí¹ú¶¼»áÊÓÄãÎª¹ó±ö£¬ÓÃ×î¸ßµÄÀñ½ÚÕĞ´ıÄã£¡"
-x200008_g_MissionContinue="  ÄãÒÑ¾­¾È³öÓş¶ùÁËÂğ£¿"
+x200008_g_MissionComplete="  T¯t quá, ğa tÕ ½n giúp ğŞ, t× nay ĞÕi Lı Qu¯c coi ngß½i nhß quı khách, dùng l­ tiªt cao nh¤t tr÷ng ğãi ngß½i!"
+x200008_g_MissionContinue="  Ngß½i ğã cÑu ğßşc Dñ Nhi chßa?"
 
 x200008_g_MoneyJZBonus=4092
 x200008_g_exp=24000
 
 x200008_g_RadioItemBonus={{id=10423001 ,num=1},{id=10423002,num=1},{id=10423003,num=1},{id=10423004,num=1}}
 
-x200008_g_Custom	= { {id="ÒÑ¾È³ö¶ÎÓş",num=1} }
+x200008_g_Custom	= { {id="Ğã cÑu thoát Ğoàn Dñ",num=1} }
 
 
 --MisDescEnd

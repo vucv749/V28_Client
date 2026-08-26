@@ -1,42 +1,42 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x212119_g_ScriptId = 212119
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x212119_g_Position_X=208
 x212119_g_Position_Z=62
 x212119_g_SceneID=31
-x212119_g_AccomplishNPC_Name="·¨Äî"
+x212119_g_AccomplishNPC_Name="Pháp Ni®m"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x212119_g_MissionId = 929
 
---Ä¿±êNPC
-x212119_g_Name	="·¨Äî"
+--møc tiêu NPC
+x212119_g_Name	="Pháp Ni®m"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x212119_g_MissionKind = 42
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x212119_g_MissionLevel = 36
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x212119_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x212119_g_MissionName="Ôø¾­³Õ¿ñÉÙÄêÊ±"
+--nhi®m vø Danh
+x212119_g_MissionName="Tu±i trë nông n±i"
 x212119_g_MissionInfo="#{Mis_30_60_desc_004}"
-x212119_g_MissionTarget="    °ÑÎÌ¼¾Ö®µÄâã»ÚĞÅËÍ¸øÁúÈª½ğÉ½ËÂµÄ·¨Äî#{_INFOAIM207,63,31,·¨Äî}¡£"
-x212119_g_MissionContinue="  ÉúÃüÈç¹ûÄÜ¹»ÖØÀ´Ò»´Î£¬ÎÒ»áÔõÃ´Ñ¡ÔñÄØ£¿¼ÈÈ»ÕæÊµºÍĞé»ÃÎŞ´Ó·Ö±æ£¬ÎªºÎ²»Ìı´ÓĞÄÁéµÄÕÙ»½×ö³ö¾ñÔñÄØ¡£"
-x212119_g_MissionComplete="  ÈËÉú¼¸¾­³Á¸¡Ö®ºó£¬ÄÇĞ©³¾ÊÀ¼äµÄÉ½ÃËº£ÊÄ¡¢¹¦ÃûÀûÂ»¶¼²»¹ıÊÇ¹ıÑÛÑÌÔÆ£¬ºÎ±ØÔÙÌá£¡¾ÍÈÃËüÃÇ¶¼Ëæ·ç¶øÈ¥°É£¡"
+x212119_g_MissionTarget="    Mang thß h¯i l²i cüa Ông Quı Chi ğªn Long Tuy«n Kim S½n Tñ giao cho Pháp Ni®m #{_INFOAIM207,63,31,Pháp Ni®m}."
+x212119_g_MissionContinue="  Nªu có th¬ làm lÕi l¥n næa, ta s¨ ch÷n thª nào ğây? Ğã biªt sñ th§t và hß äo khó phân bi®t, sao không lña ch÷n theo tiªng g÷i cüa linh h°n"
+x212119_g_MissionComplete="  Träi qua nhæng thång tr¥m cüa cuµc ğ¶i, nhæng thÑ công danh lşi lµc có ğáng là gì, hãy ğ¬ nó bay theo làn gió!"
 
 x212119_g_MoneyJZBonus=5000
 x212119_g_exp=9000
 
-x212119_g_Custom	= { {id="ÒÑµÃµ½ÎÌ¼¾Ö®µÄâã»ÚĞÅ",num=1} }
+x212119_g_Custom	= { {id="Ğã l¤y ğßşc thß h¯i l²i cüa Ông Quı Chi",num=1} }
 x212119_g_IsMissionOkFail = 0
 
-x212119_g_MisItemId = 40004418 --ÎÌ¼¾Ö®µÄâã»ÚĞÅ
+x212119_g_MisItemId = 40004418 --???????
 
 
 --MisDescEnd

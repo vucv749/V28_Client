@@ -1,33 +1,33 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x893179_g_ScriptId	= 893179
 
 x893179_g_KDZZID = 1001000191
 x893179_g_SubKDZZID = 0
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x893179_g_MissionId			= 2103
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x893179_g_MissionKind			= 3
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x893179_g_MissionLevel		= 30
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x893179_g_IfMissionElite	= 0
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x893179_g_IsMissionOkFail	= 0		--ÈÎÎñ²ÎÊıµÄµÚ0Î»
+--nhi®m vø hay không ğã hoàn thành
+x893179_g_IsMissionOkFail	= 0		--??????0?
 
---ÈÎÎñÎÄ±¾ÃèÊö
+--nhi®m vø vån bän miêu tä
 x893179_g_MissionName			= "#{XRDK_220428_416}"
---ÈÎÎñÃèÊö
+--nhi®m vø miêu tä
 x893179_g_MissionInfo			= ""
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x893179_g_MissionTarget		= "#{XRDK_220428_301}"
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
---Íê³ÉÈÎÎñnpcËµµÄ»°
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
+--hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
 
 
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x893179_g_Custom	= { {id="½«¼ÒÊé½»¸øÕÅÁÚÖÚ",num=1} }
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x893179_g_Custom	= { {id="Tß¾ng thß nhà giao cho Trß½ng Lân Chúng",num=1} }
 
 --MisDescEnd

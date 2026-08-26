@@ -1,46 +1,46 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x893253_g_ScriptId	= 893253
---¸±±¾Ãû³Æ
-x893253_g_CopySceneName	= "ÂüÍÓÉ½×¯"
---ÈÎÎñºÅ
+--bän sao tên
+x893253_g_CopySceneName	= "MÕn Ğà S½n Trang"
+--nhi®m vø Hào
 x893253_g_MissionId			= 1250
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x893253_g_MissionIdPre	= 0
---Ä¿±êNPC
-x893253_g_Name					= "ÍµÏ®ÃÅÅÉ"
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--møc tiêu NPC
+x893253_g_Name					= "Ğánh Lén Môn Phái"
+--hay không Th¸ tinh anh nhi®m vø
 x893253_g_IfMissionElite= 1
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x893253_g_MissionLevel	= 10000
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x893253_g_MissionKind		= 1
---ÈÎÎñÎÄ±¾ÃèÊö
-x893253_g_MissionName			= "ÍµÏ®ÃÅÅÉ"
---ÈÎÎñÃèÊö
+--nhi®m vø vån bän miêu tä
+x893253_g_MissionName			= "Ğánh Lén Môn Phái"
+--nhi®m vø miêu tä
 x893253_g_MissionInfo			= "  "
---ÈÎÎñÄ¿±ê
-x893253_g_MissionTarget		= "  É±ËÀËùÓĞµÄ¹ÖÎï¼´¿ÉÍê³ÉÈÎÎñ¡£"
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+--nhi®m vø møc tiêu
+x893253_g_MissionTarget		= "  Di®t hªt quái v§t li«n có th¬ hoàn t¤t nhi®m vø"
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
 x893253_g_ContinueInfo		= "  "
---Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--hoàn thành nhi®m vø Npc nói chuy®n trong l¶i nói
 x893253_g_MissionComplete	= "  "
 
---½ÇÉ«»îÔ¾Öµ¸±±¾µÄindex
+--vai di­n sinh ğµng Tr¸ bän sao Ğích index
 x893253_g_activePointIndex = 3
 
---********ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö******
---Ñ­»·ÈÎÎñµÄÊı¾İË÷Òı£¬ÀïÃæ´æ×ÅÒÑ×öµÄ»·Êı MD_SHUILAO_HUAN
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
---**********************************ÒÔÉÏÊÇ¶¯Ì¬****************************
---½ÇÉ«Mission±äÁ¿ËµÃ÷
-x893253_g_Param_IsMissionOkFail	= 0						--0ºÅ£ºµ±Ç°ÈÎÎñÊÇ·ñÍê³É(0Î´Íê³É£»1Íê³É)
-x893253_g_Param_killmonstercount	= 1					--1ºÅ£ºÉ±ËÀÈÎÎñĞ¡¹ÖµÄÊıÁ¿
-x893253_g_Param_killbosscount	= 2							--2ºÅ£ºÉ±ËÀÈÎÎñboss¹ÖµÄÊıÁ¿
-x893253_g_Param_sceneid		= 3									--3ºÅ£ºµ±Ç°¸±±¾ÈÎÎñµÄ³¡¾°ºÅ
-x893253_g_Param_teamid		= 4									--4ºÅ£º½Ó¸±±¾ÈÎÎñÊ±ºòµÄ¶ÓÎéºÅ
-x893253_g_Param_time			= 5									--5ºÅ£ºÍê³É¸±±¾ËùÓÃÊ±¼ä(µ¥Î»£ºÃë)
-																							--6ºÅ£º¾ßÌå¸±±¾ÊÂ¼ş½Å±¾Õ¼ÓÃ
-																							--7ºÅ£º¾ßÌå¸±±¾ÊÂ¼ş½Å±¾Õ¼ÓÃ
+--********phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng******
+--tu¥n hoàn nhi®m vø Ğích s¯ li®u hß¾ng dçn tra cÑu, bên trong T°n Trß¾c Dî T¯ Ğích Hoàn S± MD_SHUILAO_HUAN
+--nhi®m vø hay không ğã hoàn thành
+--**********************************ğã ngoài Th¸ ğµng thái****************************
+--vai di­n Missionlßşng biªn ğ±i thuyªt minh
+x893253_g_Param_IsMissionOkFail	= 0						--0?:????????(0???;1??)
+x893253_g_Param_killmonstercount	= 1					--1?:?????????
+x893253_g_Param_killbosscount	= 2							--2?:????boss????
+x893253_g_Param_sceneid		= 3									--3?:??????????
+x893253_g_Param_teamid		= 4									--4?:???????????
+x893253_g_Param_time			= 5									--5?:????????(??:?)
+--6Hào: Cø th¬ bän sao sñ ki®n k¸ch bän g¯c chiªm døng
+--7Hào: Cø th¬ bän sao sñ ki®n k¸ch bän g¯c chiªm døng
 
 --MisDescEnd

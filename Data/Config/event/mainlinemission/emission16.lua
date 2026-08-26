@@ -1,40 +1,40 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x890169_g_ScriptId = 890169
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x890169_g_MissionId = 2176
 
---½»ÈÎÎñnpc
-x890169_g_Position_X=63--Íê³ÉÈÎÎñNPCÊôĞÔ
+--Giao nhi®m vø Npc
+x890169_g_Position_X=63--????NPC??
 x890169_g_Position_Z=53
 x890169_g_SceneID=1292
-x890169_g_AccomplishNPC_Name="Ä«Öª³î"
+x890169_g_AccomplishNPC_Name="M£c Tri S¥u"
 
---ÈÎÎñNPCÊôĞÔ
-x890169_g_AcceptNpcInfo = {name="Ä«Öª³î"  , sceneId=1292}
+--nhi®m vø NPCthuµc tính
+x890169_g_AcceptNpcInfo = {name="M£c Tri S¥u"  , sceneId=1292}
 
---Ç°ÖÃÈÎÎñ
+--Ti«n Trí nhi®m vø
 x890169_g_PreMissionId = 2175
-x890169_g_PreMissionName="#{ZXJQ_221225_268}" ----Ö÷ÏßÈÎÎñ15£º»÷É±¿şÀÜº¢Í¯
+x890169_g_PreMissionName="#{ZXJQ_221225_268}" ----????15:??????
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x890169_g_MissionKind = 9
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x890169_g_MissionLevel = 85
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x890169_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x890169_g_MissionName="#{ZXJQ_221225_284}" --Ö÷ÏßÈÎÎñ16£º¸³ÁéµÄÕæÏà
-x890169_g_MissionTarget="#{ZXJQ_221225_291}" --½«¿şÀÜº¢Í¯ÉÏµôÂäµÄÃÜÎÄÄÃ¸øÅ®Ò»£¬²¢ÓëÆä¶Ô»°¡£
+--nhi®m vø Danh
+x890169_g_MissionName="#{ZXJQ_221225_284}" --????16:?????
+x890169_g_MissionTarget="#{ZXJQ_221225_291}" --???????????????,??????
 x890169_g_IsMissionOkFail=0
-x890169_g_Custom = {{id = "ÓëÄ«Öª³î¶Ô»°", num = 1}} --Ìæ´ú
+x890169_g_Custom = {{id = "Dß M£c Tri S¥u ğ¯i thoÕi", num = 1}} --??
 x890169_g_ContinueInfo = ""
-x890169_g_MissionComplete = "#{ZXJQ_221225_299}" --ÊÅÕßÒÑÊÅ£¬²»¿É»Ø×ª¡£
+x890169_g_MissionComplete = "#{ZXJQ_221225_299}" --????,?????
 
-x890169_g_AccomplishNpcInfo	= {name="Ä«Öª³î", sceneId=1292}
+x890169_g_AccomplishNpcInfo	= {name="M£c Tri S¥u", sceneId=1292}
 
 --MisDescEnd

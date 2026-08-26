@@ -1,40 +1,40 @@
 --MisDescBegin
 x998356_g_ScriptId = 998356
 x998356_g_MissionId = 2213
-x998356_g_MainScriptId = 998354--Ö÷½Å±¾ºÅ
+x998356_g_MainScriptId = 998354--????
 
 --kdzz
 x998356_g_KDZZID = 1006000587
 x998356_g_KDZZSubID = 2
 
 
---ºóĞøÈÎÎñ
---x998356_g_NextScirptId = 893187--ÏÂÒ»½Å±¾ºÅ
---x998356_g_NextMissionId = 2083--ÏÂÒ»ÈÎÎñºÅ
+--ğªn tiªp sau nhi®m vø
+--x998356_g_NextScirptId = 893187--tiªp theo k¸ch bän g¯c Hào
+--x998356_g_NextMissionId = 2083--tiªp theo nhi®m vø Hào
 
---ÈÎÎñÊı¾İ
+--nhi®m vø s¯ li®u
 x998356_g_MissionKind = 7
 x998356_g_MissionLevel = 70
 x998356_g_IfMissionElite = 0
 
-x998356_g_IsMissionOkFail = 0--ÈÎÎñÍê³É±êÖ¾Î»(Ò»¶¨ÒªÎª0)
+x998356_g_IsMissionOkFail = 0--???????(????0)
 
 
-x998356_g_MissionName="#{WDJJ_230614_62}"--ÈÎÎñÃû
-x998356_g_MissionInfo="#{WDJJ_230614_63}"--ÈÎÎñÎÄ±¾ÃèÊö£¨ÈÎÎñÁìÈ¡¶Ô°×£©
-x998356_g_MissionComplete="#{WDJJ_230614_65}"--ÈÎÎñÍê³É¶Ô°×
-x998356_g_MissionUnComplete="#{WDJJ_230614_64}"--ÈÎÎñÎ´Íê³É¶Ô°×
-x998356_g_MissionTarget=""--ÈÎÎñÄ¿±ê(ÈÎÎñÃæ°åÖĞÈÎÎñĞÅÏ¢ÏÔÊ¾ÄÚÈİ)
+x998356_g_MissionName="#{WDJJ_230614_62}"--???
+x998356_g_MissionInfo="#{WDJJ_230614_63}"--??????(??????)
+x998356_g_MissionComplete="#{WDJJ_230614_65}"--??????
+x998356_g_MissionUnComplete="#{WDJJ_230614_64}"--???????
+x998356_g_MissionTarget=""--????(?????????????)
 
---×Ô¶¨ÒåÍê³ÉÇé¿ö£¬ÄÚÈİ²»ÄÜÊ¹ÓÃ×Öµä£¬·Ö±ğ¶ÔÓ¦missionparamµÄµÚ1Î»ºóÑÓ
-x998356_g_Custom = {{id="»÷°Ü¹±ÔºÄÚÈ«²¿µÄÌ°¹Ù¼°×¦ÑÀ",num=1}}
---x998356_g_Custom	= { {id="µÃµ½ÒªÔùÓëĞ¡ÆòØ¤µÄÎïÆ·",num=1},{id="ÔùËÍÂøÍ·¸øĞ¡ÆòØ¤",num=1},{id="ÔùËÍÒÂ·ş¸øĞ¡ÆòØ¤",num=1},{id="ÔùËÍ³úÍ·¸øĞ¡ÆòØ¤",num=1} }
-x998356_g_ParamIndex = 2--ÈÎÎñ²ÎÊı0-Íê³É±ê¼Ç1-Íê³ÉÇé¿ö2-Ëæ»úË÷Òı
+--Tñ ğ¸nh nghîa hoàn thành tình hu¯ng, nµi dung không th¬ sØ døng tñ ği¬n, phân bi®t ğ¯i Ñng missionparamĞích Ğ® 1V¸ H§u Diên
+x998356_g_Custom = {{id="Ğánh bÕi trß¶ng thi Nµi toàn bµ Ğích tham quan C§p nanh vu¯t",num=1}}
+--x998356_g_Custom	= {{id="nh§n ğßşc Yêu T£ng Dß Ti¬u Kh¤t Cái Ğích v§t ph¦m", num=1}, {id="ğßa t£ng Man Ğ¥u C¤p Ti¬u Kh¤t Cái", num=1}, {id="ğßa t£ng Y Phøc C¤p Ti¬u Kh¤t Cái", num=1}, {id="ğßa t£ng S× Ğ¥u C¤p Ti¬u Kh¤t Cái", num=1}}
+x998356_g_ParamIndex = 2--????0-????1-????2-????
 
---npc¾àÀë
+--Npc khoäng cách
 x998356_g_NpcDist = 5
 
---½±Àø
+--thß·ng cho
 x998356_g_WDPoint_max =3645
 x998356_g_WDPointTotal_max =2970 + 2430 + 3645
 

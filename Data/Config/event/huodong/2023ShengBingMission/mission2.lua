@@ -1,32 +1,32 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x998389_g_ScriptId = 998389
 
---Íê³ÉÈÎÎñNPCÊôĞÔ
-x998389_g_Position_X=277  --Ìæ´ú
-x998389_g_Position_Z=151 --Ìæ´ú
+--hoàn thành nhi®m vø NPCthuµc tính
+x998389_g_Position_X=277  --??
+x998389_g_Position_Z=151 --??
 x998389_g_SceneID=3
-x998389_g_AccomplishNPC_Name="Ïô·å" --Ìæ´ú
+x998389_g_AccomplishNPC_Name="Tiêu Phong" --??
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x998389_g_PreMissionName="#{SBJQ_230627_41}"
 x998389_g_PreMissionId = 2220
 x998389_g_MissionId = 2221
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x998389_g_MissionKind = 5
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x998389_g_MissionLevel = 65
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x998389_g_IfMissionElite = 0
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x998389_g_MissionName="#{SBJQ_230627_43}"
 x998389_g_MissionTarget="#{SBJQ_230627_22}"
 x998389_g_IsMissionOkFail=0
-x998389_g_Custom = {{ id = "Ê¹ÓÃ²Áµ¶Ö¯²¼²ÁÊÃ³¤ºŞµ¶", num = 1},{ id = "Í»ÆÆÃÔ»ÃÃÎ¾³", num = 1}}
+x998389_g_Custom = {{ id = "SØ døng Sát Ğao canh cØi chà lau Trß¶ng H§n Ğao", num = 1},{ id = "Ğµt phá Mê äo mµng Cänh", num = 1}}
 x998389_g_ContinueInfo = ""
 x998389_g_MissionComplete = "#{SBJQ_230627_100}"
 

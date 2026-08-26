@@ -1,37 +1,37 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200031_g_ScriptId = 200031
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200031_g_MissionId = 27
 
 x200031_g_Name=""
 
---Ç°ĞøÈÎÎñ
+--Ti«n Tøc nhi®m vø
 x200031_g_PreMissionId = 26
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200031_g_MissionKind = 52
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200031_g_MissionLevel = 50
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200031_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x200031_g_MissionName="ÌìÊ±²»ÈçµØÀû"
+--nhi®m vø Danh
+x200031_g_MissionName="Thiên th¶i không b¢ng ğ¸a lşi"
 x200031_g_MissionInfo="#{Mis_juqing_0027}"
 x200031_g_MissionTarget="#{Mis_juqing_Tar_0027}"
-x200031_g_MissionComplete="  ÓĞÁËÕâµÚÒ»ÊÖµÄµĞÇé£¬ÎÒÃÇ¾Í¿ÉÒÔÆÚ´ıÅÑ¾ü·¸´íÎóÁË¡£"
-x200031_g_MissionContinue="  ÄãÒÑ¾­Ì½Ë÷µ½»ÊÌ«ÊåÓùÕÊ¡¢³şÍõ´óÓª¡¢²ÔÃ£É½×óÉ½µÀ£¬²ÔÃ£É½ÓÒÉ½µÀµÄÇé¿öÁËÂğ£¿"
+x200031_g_MissionComplete="  Có trong tay tình báo này, chúng ta chï có th¬ ch¶ ğşi quân phän loÕn phÕm sai l¥m"
+x200031_g_MissionContinue="  Ngß½i ğã thåm dò ngân kh¯ riêng Hoàng Thái Thúc, ğÕi doanh S· Vß½ng, ğß¶ng núi Thß½ng Mang bên trái, ğß¶ng núi Thß½ng Mang bên phäi chßa?"
 
 x200031_g_MoneyJZBonus=17820
 x200031_g_exp=19920
 
 x200031_g_RadioItemBonus={{id=10414009 ,num=1},{id=10414010,num=1},{id=10414011,num=1},{id=10414012,num=1}}
 
-x200031_g_Custom	= { {id="ÒÑ¾­Ì½Ë÷³şÍõ´óÓª",num=1}, {id="ÒÑ¾­Ì½Ë÷»ÊÌ«ÊåÓùÕÊ",num=1}, {id="ÒÑ¾­Ì½Ë÷²ÔÃ£É½¶«É½µÀ",num=1}, {id="ÒÑ¾­Ì½Ë÷²ÔÃ£É½Î÷É½µÀ",num=1} }
+x200031_g_Custom	= { {id="Ğã løc soát S· Vß½ng ğÕi doanh",num=1}, {id="Ğã løc soát ngân kh¯ riêng cüa Hoàng TháiThúc",num=1}, {id="Ğã løc soát ğß¶ng phía Ğông núi Thß½ng Mang",num=1}, {id="Ğã løc soát ğß¶ng phía Tây núi Thß½ng Mang",num=1} }
 
 
 --MisDescEnd

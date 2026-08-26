@@ -1,32 +1,32 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x998539_g_ScriptId = 998539
 x998539_g_GameScriptId = 998535
 
---Íê³ÉÈÎÎñNPCÊôĞÔ
+--hoàn thành nhi®m vø NPCthuµc tính
 x998539_g_Position_X=153
 x998539_g_Position_Z=105
 x998539_g_SceneID=0
-x998539_g_AccomplishNPC_Name="ôæôæ"
+x998539_g_AccomplishNPC_Name="Chï có"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x998539_g_MissionId = 2247
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x998539_g_MissionKind = 3
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x998539_g_MissionLevel = 30
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x998539_g_IfMissionElite = 0
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x998539_g_MissionName="#{QRGW_231120_27}"
 x998539_g_MissionTarget="#{QRGW_231120_28}"
 x998539_g_IsMissionOkFail=0
 x998539_g_SuccCount=1
-x998539_g_Custom = {{ id = "ÓëÖª¼ºÍê³É¹²Îè", num = 1}} --Ìæ´ú
+x998539_g_Custom = {{ id = "Dß tri kÖ hoàn thành cùng múa", num = 1}} --??
 x998539_g_ContinueInfo = "#{QRGW_231120_77}"
 x998539_g_MissionComplete = "#{QRGW_231120_30}"
 

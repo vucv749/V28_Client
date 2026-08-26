@@ -1,19 +1,19 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x998474_g_ScriptId = 998474
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x998474_g_MissionId = 2217 
---ÈÎÎñ¹éÀà
-x998474_g_MissionKind = 3 --Òıµ¼ÈÎÎñ ÀàĞÍ£º9 Â·¾¶£º\Client\Config\MissionKind.txt
---ÈÎÎñµÈ¼¶
+--nhi®m vø phân loÕi
+x998474_g_MissionKind = 3 --???? ??:9 ??:\Client\Config\MissionKind.txt
+--nhi®m vø c¤p b§c
 x998474_g_MissionLevel = 30
---ÈÎÎñÃû
+--nhi®m vø Danh
 x998474_g_MissionName="#{ZNTD_230720_117}"
---ÈÎÎñÄ¿±ê
---x998474_g_MissionTarget="" --QuestLog.luaÖĞÌØĞ´ÁËÈÎÎñÈÕÖ¾ÖĞµÄÈÎÎñÄ¿±ê£¨QuestLog_TianDeng_isTeam£©£¬½Å±¾ÖĞ¿É²»ÌîĞ´g_MissionTarget
---±ê¼Ç³É¹¦ÊÇÄÄºÅÎ» ÕâÀï±ê¼ÇµÄÊÇ0ºÅÎ»
+--nhi®m vø møc tiêu
+--x998474_g_MissionTarget="" --QuestLog. LuaTrung ğ£c tä Li­u nhi®m vø nh§t kı Trung Ğích nhi®m vø møc tiêu(QuestLog_TianDeng_isTeam), k¸ch bän g¯c Trung cûng không ği«n g_MissionTarget
+--d¤u hi®u thành công Th¸ Ná Hào V¸ n½i này d¤u hi®u chính là 0Hào V¸
 x998474_g_IsMissionOkFail=0
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x998474_g_Custom = { {id="»¨µÆ·Å·É",num=1} } 
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x998474_g_Custom = { {id="Hoa ğång cho phép c¤t cánh",num=1} } 
 
 --MisDescEnd

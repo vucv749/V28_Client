@@ -1,10 +1,10 @@
 --MisDescBegin
 
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x050059_g_ScriptId = 050059
 
--- ÈÎÎñÎÄ±¾ÃèÊö
-x050059_g_MissionName = "ÃÅÅÉÄê»õ´ó²É¹º"
+-- nhi®m vø vån bän miêu tä
+x050059_g_MissionName = "Mua nhi«u quà Tªt môn phái"
 
 
 

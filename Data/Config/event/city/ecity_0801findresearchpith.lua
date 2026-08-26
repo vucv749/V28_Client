@@ -1,55 +1,55 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x600041_g_ScriptId			= 600041
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x600041_g_MissionId			= 1113
---Ä¿±êNPC
-x600041_g_Name				= "Ö£ÎŞÃû"
---ÈÎÎñµÈ¼¶
+--møc tiêu NPC
+x600041_g_Name				= "Tr¸nh Vô Danh"
+--nhi®m vø c¤p b§c
 x600041_g_MissionLevel		= 10000
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x600041_g_MissionKind		= 50
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x600041_g_IfMissionElite	= 0
 
---********ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö******
---½ÇÉ«Mission±äÁ¿ËµÃ÷
-x600041_g_IsMissionOkFail			= 0	--0 ÈÎÎñÍê³É±ê¼Ç
-x600041_g_MissionParam_SubId		= 1	--1 ×ÓÈÎÎñ½Å±¾ºÅ´æ·ÅÎ»ÖÃ
-x600041_g_MissionParam_Phase		= 2	--2 ½×¶ÎºÅ ´ËºÅÓÃÓÚÇø·Öµ±Ç°ÈÎÎñUIµÄÃèÊöĞÅÏ¢
-x600041_g_MissionParam_NpcId		= 3	--3 ÈÎÎñ NPC µÄ NPCId ºÅ
-x600041_g_MissionParam_ItemId		= 4	--4 ÈÎÎñÎïÆ·µÄ±àºÅ
-x600041_g_MissionParam_MonsterId	= 5	--5 ÈÎÎñ Monster µÄ NPCId ºÅ
-x600041_g_MissionParam_IsCarrier	= 6	--6 ÊÇ·ñÓĞËÍĞÅÈÎÎñ
---Ñ­»·ÈÎÎñµÄÊı¾İË÷Òı£¬ÀïÃæ´æ×ÅÒÑ×öµÄ»·Êı
+--********phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng******
+--vai di­n Missionlßşng biªn ğ±i thuyªt minh
+x600041_g_IsMissionOkFail			= 0	--0 ??????
+x600041_g_MissionParam_SubId		= 1	--1 ??????????
+x600041_g_MissionParam_Phase		= 2	--2 ??? ??????????UI?????
+x600041_g_MissionParam_NpcId		= 3	--3 ?? NPC ? NPCId ?
+x600041_g_MissionParam_ItemId		= 4	--4 ???????
+x600041_g_MissionParam_MonsterId	= 5	--5 ?? Monster ? NPCId ?
+x600041_g_MissionParam_IsCarrier	= 6	--6 ???????
+--tu¥n hoàn nhi®m vø Ğích s¯ li®u hß¾ng dçn tra cÑu, bên trong T°n Trß¾c Dî T¯ Ğích Hoàn S±
 x600041_g_MissionRound					= 61
---**********************************ÒÔÉÏÊÇ¶¯Ì¬****************************
+--**********************************ğã ngoài Th¸ ğµng thái****************************
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x600041_g_MissionName			= "ÑĞ¾¿ÈÎÎñ"
-x600041_g_MissionInfo			= "³ÇÊĞÄÚÕş£­ÑĞ¾¿ÈÎÎñ"									--ÈÎÎñÃèÊö
-x600041_g_MissionTarget			= "%f"													--ÈÎÎñÄ¿±ê
-x600041_g_ContinueInfo			= "    ÄãµÄÈÎÎñ»¹Ã»ÓĞÍê³ÉÃ´£¿"							--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x600041_g_SubmitInfo			= "    ÊÂÇé½øÕ¹µÃÈçºÎ£¿"								--Íê³ÉÎ´Ìá½»Ê±µÄnpc¶Ô»°
-x600041_g_MissionComplete		= "    ÉõºÃÉõºÃ£¬ÑĞ¾¿½ø¶ÈÓÖ¼Ó¿ìÁË²»ÉÙ¡£"				--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø vån bän miêu tä
+x600041_g_MissionName			= "Nghiên cÑu nhi®m vø"
+x600041_g_MissionInfo			= "Thành th¸ nµi chính-nghiên cÑu nhi®m vø"									--????
+x600041_g_MissionTarget			= "%f"													--????
+x600041_g_ContinueInfo			= "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"							--??????npc??
+x600041_g_SubmitInfo			= "    Sñ tình tiªn tri¬n nhß thª nào r°i?"								--???????npc??
+x600041_g_MissionComplete		= "R¤t t¯t r¤t t¯t, nghiên cÑu tiªn ğµ Hñu nhanh h½n Li­u không ít."				--????npc????
 
 x600041_g_Parameter_Item_IDRandom = { { id = 4, num = 1 } }
 
 x600041_g_StrForePart			= 2
 
---ÓÃÀ´±£´æ×Ö·û´®¸ñÊ½»¯µÄÊı¾İ
+--dùng ğ¬ bäo t°n tñ phù Xuyªn cách thÑc Hoá Ğích s¯ li®u
 x600041_g_FormatList			= {
 	"",
-	"    ÃÜĞÅÔ»£º³ÊÎáÓÑ¹ó°ïÊ×Áì£¬ËùËÍÀ´µÄ%2iÒÑÊÕµ½£¬¹ºÈëÖ®ÒøÁ½Ëæºó·îÉÏ¡£Îáµ±¾²ºò´ó¼İÀ´È¡¡£ÓÑ£º%1n¶ÙÊ×¡£#r#{BHRW_091224_1}",	--1 ÊÕÌõÊéĞÅ
-	"    ÕÒµ½%3n¶á»Ø%2i¡£#r#{BHRW_091224_1}",																				--2 Ñ°ÕÒÑĞ¾¿ÒªÊõ
-	"    ½«%2i½»»¹¸ø°ï»á´ó×Ü¹Ü¡£#r#{BHRW_091224_1}"																			--3 ËÍ»¹
+	"M§t Tín Viªt: Trình Ngô Hæu Quı Bang thü lînh, S· ğßa t¾i%2iDî thu ğßşc, C¤u Nh§p Chi ngân lßşng theo sau dâng. Ngô Ğang T¸nh H§u ğÕi giá t¾i l¤y. Hæu: %1nkh¤u ğ¥u. #r#{BHRW_091224_1}",	--1 ????
+	"Tìm ğßşc%3nğoÕt lÕi%2i. #r#{BHRW_091224_1}",																				--2 ??????
+	"Tß¾ng%2iträ lÕi C¤p bang hµi ĞÕi t±ng quän. #r#{BHRW_091224_1}"																			--3 ??
 }
 
---Í¨ÓÃ³ÇÊĞÈÎÎñ½Å±¾
+--thông døng thành th¸ nhi®m vø k¸ch bän g¯c
 x600041_g_CityMissionScript	= 600001
 x600041_g_ConstructionScript= 600040
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 
 
 --MisDescEnd

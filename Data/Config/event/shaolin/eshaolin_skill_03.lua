@@ -1,5 +1,5 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x212142_g_ScriptId = 212142
 
 x212142_g_MissionId = 964

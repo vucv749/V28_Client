@@ -1,52 +1,52 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x210201_g_ScriptId = 210201
 
 x210201_g_Position_X=110.0841
 x210201_g_Position_Z=158.7671
 x210201_g_SceneID=2
-x210201_g_AccomplishNPC_Name="¶Å×ÓÌÚ"
+x210201_g_AccomplishNPC_Name="Ğ² TØ Ğ¢ng"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x210201_g_MissionId = 441
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x210201_g_MissionIdPre = 440
 
---Ä¿±êNPC
-x210201_g_Name	="¶Å×ÓÌÚ"
+--møc tiêu NPC
+x210201_g_Name	="Ğ² TØ Ğ¢ng"
 
---ÈÎÎñµÀ¾ß±àºÅ
+--nhi®m vø ğÕo cø ğánh s¯
 x210201_g_ItemId = 40002110
 
---ÈÎÎñµÀ¾ßĞèÇóÊıÁ¿
+--nhi®m vø ğÕo cø nhu c¥u s¯ lßşng
 x210201_g_ItemNeedNum = 1
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x210201_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x210201_g_MissionLevel = 1
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x210201_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x210201_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+--nhi®m vø hay không ğã hoàn thành
+x210201_g_IsMissionOkFail = 0		--????0?
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñÃû
-x210201_g_MissionName="µÚÒ»´ÎËÍ»õ"
+--nhi®m vø Danh
+x210201_g_MissionName="L¥n ğ¥u giao hàng"
 x210201_g_MissionInfo="#{event_dali_0003}"
-x210201_g_MissionTarget="°Ñ#YÒ»Ïä³ø¾ß#WËÍ¸ø#G´óÀí³ÇÎ÷±ßÎ÷´ó½Ö#Y¾Æµê#WµÄÀÏ°å#R¶Å×ÓÌÚ#W#{_INFOAIM110,159,2,¶Å×ÓÌÚ}¡£#b#G£¨ÇëÓÃ×ó¼üµã»÷´øÏÂ»®ÏßµÄ×ø±ê£¬°ïÖúÄúÕÒµ½¸ÃNPC£©#l"
-x210201_g_MissionComplete="  ÄãÕæÊÇ½âÁËÎÒµÄÈ¼Ã¼Ö®¼±°¡£¬ÎÒÕı¼±ĞèÕâÏä#Y³ø¾ß#WÄØ£¡"
+x210201_g_MissionTarget="Bä#YNH¤t Tß½ng Trù Cø#Wğßa cho#GThành ĞÕi Lı phía tây ğß¶ng l¾n phía Tây#Ykhách sÕn#WĞích lão bän#RĞ² TØ Ğ¢ng#W#{_INFOAIM110, 159, 2, Ğ² TØ Ğ¢ng}. #b#G(Thïnh Døng Tä Ki®n Ği¬m Kích b®nh bÕch ğ¾i phác h÷a Ğích t÷a ğµ, trş giúp Nhçm tìm ğßşc Cai NPC)#l"
+x210201_g_MissionComplete="  Các hÕ th§t hi¬u ğúng c½n nguy c¤p cüa ta, ta ğang c¥n g¤p #YcHiªc rß½ng døng cø n¤u nß¾ng#W này!"
 x210201_g_MoneyBonus=1
-x210201_g_SignPost = {x = 110, z = 159, tip = "¶Å×ÓÌÚ"}
+x210201_g_SignPost = {x = 110, z = 159, tip = "Ğ² TØ Ğ¢ng"}
 
-x210201_g_DemandItem={{id=40002110,num=1}}		--±äÁ¿µÚ1Î»
-x210201_g_IsMissionOkFail = 1		--±äÁ¿µÄµÚ0Î»
+x210201_g_DemandItem={{id=40002110,num=1}}		--???1?
+x210201_g_IsMissionOkFail = 1		--????0?
 
 
 --MisDescEnd

@@ -1,27 +1,27 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x250000_g_ScriptId = 250000
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x250000_g_MissionId = 720
 
 x250000_g_KDZZID = 1005000000
 
---ÈÎÎñÄ¿±ênpc
-x250000_g_Name	="É³ÖŞÀä" 
+--nhi®m vø møc tiêu Npc
+x250000_g_Name	="Sa Châu Lãnh" 
 
---´æ´¢Ëæ»úÊı
-x250000_g_rand = 0					--±äÁ¿µÚ1Î»
+--t°n træ TuÏ C½ S±
+x250000_g_rand = 0					--???1?
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x250000_g_MissionName="ÎÒÒª³öÊÛÕäÊŞ"
-x250000_g_MissionInfo="    Çë°ïÎÒ¼ÒĞ¡½ã²¶×½ÕäÊŞ¡£"  --ÈÎÎñÃèÊö
-x250000_g_MissionTarget="    Íê³ÉÉ³ÖŞÀäµÄÈÎÎñ¡£"		--ÈÎÎñÄ¿±ê
-x250000_g_ContinueInfo="ÈÎÎñ×öÍêÁËÃ´£¿"		--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x250000_g_MissionComplete="Ì«Ğ»Ğ»ÄãÁË£¡"					--Íê³ÉÈÎÎñnpcËµµÄ»°
+--nhi®m vø vån bän miêu tä
+x250000_g_MissionName="Ta mu¯n bán trân thú"
+x250000_g_MissionInfo="Thïnh giúp ta vş con Thß b¡t giæ Trân Thú."  --????
+x250000_g_MissionTarget="Hoàn thành Sa Châu Lãnh Ğích nhi®m vø."		--????
+x250000_g_ContinueInfo="Nhi®m vø làm xong Li­u Ma?"		--??????npc??
+x250000_g_MissionComplete="Th§t cám ½n Nhî Li­u!"					--????npc???
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 
---JOY: ÈÎÎñÃèÊö±êÖ¾ÒÔÇ°È±Ê§.. ÏÖÔÚ¼ÓÈë... ĞèÒª²âÊÔÊÇ·ñ»áÒı½øĞÂµÄÎÊÌâ
+--JOY: Nhi®m vø miêu tä d¤u hi®u trß¾c kia Khuyªt Th¤t. . Hi®n tÕi gia nh§p. . . C¥n thí nghi®m hay không Hµi tiªn cØ Tân Ğích v¤n ğ«
 
 --MisDescEnd

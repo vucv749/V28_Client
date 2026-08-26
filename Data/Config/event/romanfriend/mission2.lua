@@ -1,30 +1,30 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x998313_g_ScriptId = 998313
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x998313_g_MissionId = 2191 
 
---ÈÎÎñ¹éÀà
-x998313_g_MissionKind = 9 --Òıµ¼ÈÎÎñ ÀàĞÍ£º9 Â·¾¶£º\Client\Config\MissionKind.txt
+--nhi®m vø phân loÕi
+x998313_g_MissionKind = 9 --???? ??:9 ??:\Client\Config\MissionKind.txt
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x998313_g_MissionLevel = 30
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 --x998313_g_IfMissionElite = 0
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x998313_g_MissionName="#{QYHY_230330_32}"
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x998313_g_MissionTarget="#{QYHY_230330_33}"
---±ê¼Ç0ºÅÎ»ÎªÍê³ÉÇé¿ö
+--d¤u hi®u 0Hào V¸ Vi hoàn thành tình hu¯ng
 x998313_g_IsMissionOkFail=0
--- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x998313_g_Custom = {{id="ÒÑµŞ½áÖ¿ÓÑ",num=1}}
+-- nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x998313_g_Custom = {{id="Dî kı kªt các\\u0020hÕ thân",num=1}}
 --x998313_g_ContinueInfo = ""
 --x998313_g_MissionComplete = ""
---½»×Ó ÒÔ¼° ¾­Ñé ½±Àø
+--Giao TØ cùng v¾i kinh nghi®m thß·ng cho
 --x998313_g_MoneyJZBonus = 10000
 x998313_g_ExpBonus = 200000
 

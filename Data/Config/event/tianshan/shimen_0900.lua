@@ -1,30 +1,30 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x228900_g_ScriptId = 228900
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x228900_g_MissionId = 1104
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 --g_MissionIdPre = 
 
---Ä¿±êNPC
-x228900_g_Name	="·ûÃôÒÇ"
+--møc tiêu NPC
+x228900_g_Name	="Phù Mçn Nghi"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x228900_g_MissionKind = 28
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x228900_g_MissionLevel = 10
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x228900_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x228900_g_MissionName="ÎªÊ¦ÃÅ¶øÕ½"
+--nhi®m vø Danh
+x228900_g_MissionName="Chiªn ğ¤u vì sß môn"
 x228900_g_MissionInfo="#{event_tianshan_0001}"
-x228900_g_MissionTarget="    ÔÚÁéğÕ¹¬ÕÒµ½·ûÃôÒÇ#{_INFOAIM95,60,17,·ûÃôÒÇ}"
-x228900_g_MissionComplete="  ÄãÊÇĞÂÀ´µÄÍ¬ÃÅ°É£¬ÄãÀ´µÃÌ«ºÃÁË£¬ÎÒÕâÀïÓĞºÜ¶àÊÂÇéĞèÒªÄã°ïÃ¦ÄØ¡£"
+x228900_g_MissionTarget="    Linh ThÑu Cung tìm ğªn Phù Mçn Nghi #{_INFOAIM95,60,17, Phù Mçn Nghi}."
+x228900_g_MissionComplete="  Các hÕ là ğ°ng môn m¾i ğªn phäi không. Các hÕ làm tuy®t l¡m. Ta · ğây có nhi«u vi®c c¥n các hÕ giúp ğŞ"
 x228900_g_MoneyJZBonus=800
 
 

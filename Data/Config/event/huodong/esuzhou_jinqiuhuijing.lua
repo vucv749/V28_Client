@@ -1,41 +1,41 @@
 --MisDescBegin
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x891214_g_ScriptId = 891214
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x891214_g_Position_X = 177
 x891214_g_Position_Z = 179
 x891214_g_SceneID = 1
-x891214_g_AccomplishNPC_Name= "ÕÅÔñ¶Ë"
+x891214_g_AccomplishNPC_Name= "Trß½ng TrÕch Ğoan"
 
---ÈÎÎñºÅ(ÕÒ²ß»®Òª)
+--nhi®m vø Hào(Träo bày ra Yêu)
 x891214_g_MissionId = 2020
 
---ÈÎÎñÄ¿±ênpc
-x891214_g_Name = "ÕÅÔñ¶Ë"
+--nhi®m vø møc tiêu Npc
+x891214_g_Name = "Trß½ng TrÕch Ğoan"
 
---ÈÎÎñ¹éÀà(ÕÒ²ß»®Òª£¬¶ÔÓ¦Client/Config/MissionKind.txt)
+--nhi®m vø phân loÕi(Träo bày ra Yêu, ğ¯i Ñng Client/Config/MissionKind. Txt)
 x891214_g_MissionKind = 3
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x891214_g_MissionLevel = 30
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x891214_g_IfMissionElite = 0
-x891214_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
---ÈÎÎñÃû
-x891214_g_MissionName="½ğÇï»æ¾°"
---ÈÎÎñÃèÊö
-x891214_g_MissionInfo  = " "--´Ë´¦Ğè×¼±¸8¸ö³¡¾°µØµãµÄÃèÊö,9.30-10.7Ã¿ÈÕ¸ø³öÒ»¸öµØµã£¨´ıÍêÉÆ£©¡£ÅÂÊÇÒªĞ´8Ìõ
---ÈÎÎñÄ¿±ê
-x891214_g_MissionTarget="#{JQHJ_20210730_30}"	--Çë¸ù¾İËÕÖİ£¨172£¬179£©ÕÅÔñ¶ËµÄÃèÊö£¬ÕÒµ½ÃÀ¾°ËùÔÚÖ®µØ²¢»æÓÚ¿Õ°×ĞûÖ½ÉÏ¡£
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+x891214_g_IsMissionOkFail = 0		--????0?
+--nhi®m vø Danh
+x891214_g_MissionName="Kim Thu Hµi Cänh"
+--nhi®m vø miêu tä
+x891214_g_MissionInfo  = " "--?????8????????,9.30-10.7????????(???)?????8?
+--nhi®m vø møc tiêu
+x891214_g_MissionTarget="#{JQHJ_20210730_30}"	--?????(172,179)??????,?????????????????
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
 x891214_g_ContinueInfo=" "
---Ìá½»Ê±npcµÄ»°
-x891214_g_MissionComplete="#{JQHJ_20210730_62}"	--ÈÃÎÒ¿´¿´Äã»­µÃÈçºÎ¡­¡­		
+--ğ® trình Th¶i Npc trong l¶i nói
+x891214_g_MissionComplete="#{JQHJ_20210730_62}"	--?????????……		
 
 x891214_g_ItemBonus ={{id=38002412,num=1},}
 
-x891214_g_Custom	= { {id="Ê¹ÓÃ¿Õ°×ĞûÖ½",num=1} }--±äÁ¿µÄµÚ1Î»
+x891214_g_Custom	= { {id="SØ døng ch² tr¯ng Tuyên Chï",num=1} }--????1?
 
 --MisDescEnd

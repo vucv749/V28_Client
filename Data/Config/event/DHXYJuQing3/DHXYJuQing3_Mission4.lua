@@ -3,53 +3,53 @@ x999192_g_ScriptId = 999192
 --kdzz
 x999192_g_KDZZID = 1006000614
 
---»î¶¯µÈ¼¶
+--hoÕt ğµng c¤p b§c
 x999192_g_MissionLevel = 30
 
---Ç°ÖÃÈÎÎñ
+--Ti«n Trí nhi®m vø
 x999192_g_PreMissionId = 2323
 x999192_g_PreMissionName = "#{DSJD_240520_03}"
 
---ºóÖÃÈÎÎñ
+--t× ğÑng sau nhi®m vø
 x999192_g_NextMissionId = 2325
 x999192_g_NextScriptId = 999193
 
---Íê³ÉÈÎÎñNPCÊôĞÔ
+--hoàn thành nhi®m vø NPCthuµc tính
 x999192_g_Position_X=107
 x999192_g_Position_Z=103
 x999192_g_SceneID=1320
-x999192_g_AccomplishNPC_Name="ÖÁ×ğ±¦"
+x999192_g_AccomplishNPC_Name="Chí tôn Bäo"
 x999192_g_AccomplishNPC_Id=52627
 
---ÈÎÎñÊı¾İ
+--nhi®m vø s¯ li®u
 x999192_g_MissionName="#{DSJD_240520_04}"
 x999192_g_MissionId = 2324
 x999192_g_MissionKind = 69
 x999192_g_IfMissionElite = 0
 
---ÈÎÎñ²ÎÊı
-x999192_g_IsMissionOkFail = 0--ÈÎÎñÍê³É±êÖ¾Î»(Ò»¶¨ÒªÎª0)
-x999192_g_ParamCustom1 = 1--ÈÎÎñ²ÎÊı1
-x999192_g_ParamCustom2 = 2--ÈÎÎñ²ÎÊı2
-x999192_g_ParamCustom3 = 3--ÈÎÎñ²ÎÊı3
-x999192_g_ParamCustom4 = 4--ÈÎÎñ²ÎÊı4
-x999192_g_ParamCustom5 = 5--ÈÎÎñ²ÎÊı5
-x999192_g_ParamCustom6 = 6--ÈÎÎñ²ÎÊı6
+--nhi®m vø tham s¯
+x999192_g_IsMissionOkFail = 0--???????(????0)
+x999192_g_ParamCustom1 = 1--????1
+x999192_g_ParamCustom2 = 2--????2
+x999192_g_ParamCustom3 = 3--????3
+x999192_g_ParamCustom4 = 4--????4
+x999192_g_ParamCustom5 = 5--????5
+x999192_g_ParamCustom6 = 6--????6
 
-x999192_g_MissionTarget="#{DSJD_240520_92}"--ÈÎÎñÄ¿±ê(ÈÎÎñÃæ°åÖĞÈÎÎñĞÅÏ¢ÏÔÊ¾ÄÚÈİ)
-x999192_g_Custom = {{ id = "ÕÒµ½Ã«Â¿Ë§Ë§Ã«", num = 1},{ id = "ÕÒµ½ºÚÉ«²¼Ìõ", num = 1},{ id = "ÕÒµ½ÒÅÊ§½ğÁå", num = 1},{ id = "½«Ã«Â¿µÄÃ«½»¸øÖÁ×ğ±¦", num = 1},{ id = "½«ºÚÉ«²¼Ìõ½»¸øÖÁ×ğ±¦", num = 1},{ id = "½«ÒÅÊ§½ğÁå½»¸øÖÁ×ğ±¦", num = 1}}--×Ô¶¨ÒåÍê³ÉÇé¿ö£¬ÄÚÈİ²»ÄÜÊ¹ÓÃ×Öµä£¬·Ö±ğ¶ÔÓ¦missionparamµÄµÚ1Î»ºóÑÓ
+x999192_g_MissionTarget="#{DSJD_240520_92}"--????(?????????????)
+x999192_g_Custom = {{ id = "Tìm ğßşc con l×a Soái Soái Mao", num = 1},{ id = "Tìm ğßşc màu ğen mänh väi", num = 1},{ id = "Tìm ğßşc ğánh r½i Kim Linh", num = 1},{ id = "Tß¾ng con l×a Ğích Mao giao cho chí tôn Bäo", num = 1},{ id = "Tß¾ng màu ğen mänh väi giao cho chí tôn Bäo", num = 1},{ id = "Tß¾ng ğánh r½i Kim Linh giao cho chí tôn Bäo", num = 1}}--???????,????????,????missionparam??1???
 
---npc¾àÀë
+--Npc khoäng cách
 x999192_g_NpcDist = 5
 
---ÈÎÎñµÀ¾ß±³°ü¿ÕÎ»
+--nhi®m vø ğÕo cø tay nãi không v¸
 x999192_g_BagSpace = 1
 x999192_g_ItemId = 38003196
 x999192_g_ItemId1 = 38003197
 x999192_g_ItemId2 = 38003198
 x999192_g_ItemId3 = 38003199
 
---½±Àø
+--thß·ng cho
 x999192_g_PrizeNum = 5
 
 

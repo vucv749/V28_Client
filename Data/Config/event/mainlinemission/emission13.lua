@@ -1,49 +1,49 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x890166_g_ScriptId = 890166
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x890166_g_MissionId = 2173
 
---½»ÈÎÎñnpc
-x890166_g_Position_X=65--Íê³ÉÈÎÎñNPCÊôÐÔ
+--Giao nhi®m vø Npc
+x890166_g_Position_X=65--????NPC??
 x890166_g_Position_Z=52
 x890166_g_SceneID=1294
-x890166_g_AccomplishNPC_Name="Èî·ãÃß"
+x890166_g_AccomplishNPC_Name="Nguy­n Phong Miên"
 
---ÈÎÎñNPCÊôÐÔ
-x890166_g_AcceptNpcInfo_1	= {name="Ä«Öª³î", sceneId=1292}	--ÊÆÁ¦1
-x890166_g_AcceptNpcInfo_2	= {name="½­ÐÐÔÆ", sceneId=1293}	--ÊÆÁ¦2
-x890166_g_AcceptNpcInfo_3	= {name="Èî·ãÃß", sceneId=1294}	--ÊÆÁ¦3
+--nhi®m vø NPCthuµc tính
+x890166_g_AcceptNpcInfo_1	= {name="M£c Tri S¥u", sceneId=1292}	--??1
+x890166_g_AcceptNpcInfo_2	= {name="Giang Hành Vân", sceneId=1293}	--??2
+x890166_g_AcceptNpcInfo_3	= {name="Nguy­n Phong Miên", sceneId=1294}	--??3
 
---Ä¿±êNPC
+--møc tiêu NPC
 x890166_g_AcceptNpcInfo	= {
-	[1] = {name="Ä«Öª³î", sceneId=1292, posx=63, posz=53,  npctext = "#{ZXJQ_221225_228}",},
-	[2] = {name="½­ÐÐÔÆ", sceneId=1293, posx=37, posz=119, npctext = "#{ZXJQ_221225_233}",},
-	[3] = {name="Èî·ãÃß", sceneId=1294, posx=65, posz=52,  npctext = "#{ZXJQ_221225_238}",},
+	[1] = {name="M£c Tri S¥u", sceneId=1292, posx=63, posz=53,  npctext = "#{ZXJQ_221225_228}",},
+	[2] = {name="Giang Hành Vân", sceneId=1293, posx=37, posz=119, npctext = "#{ZXJQ_221225_233}",},
+	[3] = {name="Nguy­n Phong Miên", sceneId=1294, posx=65, posz=52,  npctext = "#{ZXJQ_221225_238}",},
 }
 
---Ç°ÖÃÈÎÎñ
+--Ti«n Trí nhi®m vø
 x890166_g_PreMissionId = 2172
-x890166_g_PreMissionName="#{ZXJQ_221225_216}" --Ö÷ÏßÈÎÎñÊ®¶þ£ºÔÙÌ½³¤´º¹È
+x890166_g_PreMissionName="#{ZXJQ_221225_216}" --??????:?????
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x890166_g_MissionKind = 9
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x890166_g_MissionLevel = 85
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x890166_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x890166_g_MissionName="#{ZXJQ_221225_239}" --Ö÷ÏßÈÎÎñÊ®Èý£º·¢¿ñµÄÒ°ÊÞ
-x890166_g_MissionTarget="#{ZXJQ_221225_246}" --Ç°ÍùÈî·ãÃß´¦£¬»÷É±Éí²àÒ°ÊÞ¡£
+--nhi®m vø Danh
+x890166_g_MissionName="#{ZXJQ_221225_239}" --??????:?????
+x890166_g_MissionTarget="#{ZXJQ_221225_246}" --??????,???????
 x890166_g_IsMissionOkFail=0
-x890166_g_Custom = {{id = "»÷É±ÙÈ¼×»ÒÐÜ", num = 1}} --Ìæ´ú
+x890166_g_Custom = {{id = "Ðánh chªt Y¬n Giáp Khôi Hùng", num = 1}} --??
 x890166_g_ContinueInfo = ""
-x890166_g_MissionComplete = "#{ZXJQ_221225_251}" --ÄãÒÑ¾­ÖªµÀÁË£¿
+x890166_g_MissionComplete = "#{ZXJQ_221225_251}" --???????
 
-x890166_g_AccomplishNpcInfo	= {name="Èî·ãÃß", sceneId=1294}
+x890166_g_AccomplishNpcInfo	= {name="Nguy­n Phong Miên", sceneId=1294}
 
 --MisDescEnd

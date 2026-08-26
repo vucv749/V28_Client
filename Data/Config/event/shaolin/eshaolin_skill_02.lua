@@ -1,39 +1,39 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x212141_g_ScriptId = 212141
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x212141_g_Position_X=262
 x212141_g_Position_Z=46
 x212141_g_SceneID=18
-x212141_g_AccomplishNPC_Name="ÖÖÊÀºâ"
+x212141_g_AccomplishNPC_Name="Chüng Thª Hoành"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x212141_g_MissionId = 964
 
---Ç°ĞøÈÎÎñ
+--Ti«n Tøc nhi®m vø
 x212141_g_PreMissionId = 963
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x212141_g_MissionKind = 20
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x212141_g_MissionLevel = 30
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x212141_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x212141_g_MissionName="À§ÊŞÓÌ¶·"
+--nhi®m vø Danh
+x212141_g_MissionName="Kh¯n Thú ¿u Tú"
 x212141_g_MissionInfo="#{Mis_shaolin_964}"
-x212141_g_MissionTarget="#GÑãÃÅ¹Ø#WµÄ#RÖÖÊÀºâ#W#{_INFOAIM263,46,18,ÖÖÊÀºâ}ÒªÄãÔÚÑãÃÅ¹Ø°üÎ§È¦ÖĞÉ±ËÀ¶şÊ®ÃûÇØ¼ÒÕ¯°Ü±ø¡£"
-x212141_g_MissionContinue="  ÄãÒÑ¾­¸ÉµôËùÓĞµÄÇØ¼ÒÕ¯°Ü±øÁËÂğ£¿"
-x212141_g_MissionComplete="  Õæ²»À¢ÊÇÀÏÊ¦Ö¸µã¹ıµÄÈËÎï£¬$N¹ûÈ»Ãû²»Ğé´«£¡"
+x212141_g_MissionTarget="#GNHÕn Môn Quan#WĞích#RXung Thª Hành#W#{_INFOAIM263, 46, 18, Xung Thª Hành}Yêu Nhî TÕi NhÕn Môn Quan vòng vây Trung giªt chªt hai mß½i Danh T¥n Gia TrÕi BÕi Binh."
+x212141_g_MissionContinue="  Các hÕ ğã di®t hªt T¥n Gia TrÕi bÕi binh chßa?"
+x212141_g_MissionComplete="  Ngß½i ğã không làm b¨ m£t sß phø, $N quä nhiên danh b¤t hß truy«n!"
 
 x212141_g_MoneyBonus=1000
 x212141_g_exp=2000
 
-x212141_g_Custom	= { {id="ÒÑÉ±ËÀÇØ¼ÒÕ¯°Ü±ø",num=20} }
+x212141_g_Custom	= { {id="Ğã ğánh bÕi T¥n Gia TrÕi bÕi binh",num=20} }
 x212141_g_IsMissionOkFail = 0
 
 x212141_g_Menpai = 0

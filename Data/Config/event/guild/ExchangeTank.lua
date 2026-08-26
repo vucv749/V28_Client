@@ -1,51 +1,51 @@
 --MisDescBegin
 
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x600052_g_ScriptId = 600052
 
--- ÈÎÎñÄ¿±ê NPC
-x600052_g_Name = "ÉÏ¹Ù±ù"
-x600052_g_Name2 = "ÉÏ¹ÙÑ©"
+-- nhi®m vø møc tiêu NPC
+x600052_g_Name = "Thßşng Quan Bång"
+x600052_g_Name2 = "Thßşng Quan Tuyªt"
 
---°ïÕ½Êı¾İË÷Òı£¬¶ÔÓ¦³ÌĞòÖĞµÄ enum GUILDWAR_INT_ARRAY
+--Bang Chiªn s¯ li®u hß¾ng dçn tra cÑu, ğ¯i Ñng trình tñ Trung Ğích enum GUILDWAR_INT_ARRAY
 x600052_g_A_LingShiIndex = 2
 x600052_g_B_LingShiIndex = 7
 
-x600052_g_LingShi = {"ÇàÁúÊ¯","°×»¢Ê¯","ÖìÈ¸Ê¯","ĞşÎäÊ¯","ÅÌ¹ÅÊ¯"}		--ÁéÊ¯Ãû×Ö
---x600052_g_LingShiID = {30900051,30900052,30900053,30900054,30900055}	--ÁéÊ¯ID
+x600052_g_LingShi = {"Thanh Long ThÕch","BÕch H± ThÕch","Chu Tß¾c ThÕch","Huy«n Vû ThÕch","Bàn C± ThÕch"}		--????
+--x600052_g_LingShiID = {30900051, 30900052, 30900053, 30900054, 30900055}	--Linh ThÕch ID
 
-x600052_g_GuildPoint_ExchangeTank = 6				--ÇĞ»»Ò»´ÎÕ½³µµÄÊôĞÔ»ñµÃµÄ»ı·Ö¹æÔòË÷Òı£¬±íGuildWarPoint.txtµÄID
+x600052_g_GuildPoint_ExchangeTank = 6				--??????????????????,?GuildWarPoint.txt?ID
 
-x600052_g_WantLingShiNum = 20								--ĞèÇóÁéÊ¯ÊıÄ¿
+x600052_g_WantLingShiNum = 20								--??????
 
-----¸öÈË»ı·ÖÊı¾İË÷Òı£¬¶ÔÓ¦³ÌĞòenum GUILDWAR_INT_INDEX
---x600052_g_Human_ResourceNumIndex = 4					--¸öÈË½»ÄÉ×ÊÔ´¸öÊıË÷Òı
+----cá nhân vi tích phân s¯ li®u hß¾ng dçn tra cÑu, ğ¯i Ñng trình tñ enum GUILDWAR_INT_INDEX
+--x600052_g_Human_ResourceNumIndex = 4 --cá nhân giao nµp tài nguyên Cá S± hß¾ng dçn tra cÑu
 --
 
-x600052_g_TankID = {13334, 13335, 13336, 13337, 13338,	--¿Éµã»÷ò¿ÓÈÕ½³µNPCµÄID
-										13339, 13340, 13341, 13342, 13343}	--¿Éµã»÷Ñ×»ÆÕ½³µNPCµÄID
+x600052_g_TankID = {13334, 13335, 13336, 13337, 13338,	--???????NPC?ID
+										13339, 13340, 13341, 13342, 13343}	--???????NPC?ID
 
-x600052_g_AttrBuff = {31567, 31568, 31569, 31570, 31571,	--ò¿ÓÈÕ½³µbuff
-											31572, 31573, 31574, 31575, 31576}	--Ñ×»ÆÕ½³µbuff
+x600052_g_AttrBuff = {31567, 31568, 31569, 31570, 31571,	--????buff
+											31572, 31573, 31574, 31575, 31576}	--????buff
 
-x600052_g_ImmuneControlBuff = 10474							--NPCÃâÒß¿ØÖÆbuff
+x600052_g_ImmuneControlBuff = 10474							--NPC????buff
 
-x600052_g_A_FirstTankManSelfID = 13						--A°ï±ä»¯³ÉÕ½³µµÄÍæ¼ÒµÄselfidÔÚ32¸ö¸±±¾Êı¾İÖĞµÄË÷Òı
-x600052_g_A_SecondTankManSelfID = 14					--A°ï±ä»¯³ÉÕ½³µµÄÍæ¼ÒµÄselfidÔÚ32¸ö¸±±¾Êı¾İÖĞµÄË÷Òı
-x600052_g_B_FirstTankManSelfID = 15						--B°ï±ä»¯³ÉÕ½³µµÄÍæ¼ÒµÄselfidÔÚ32¸ö¸±±¾Êı¾İÖĞµÄË÷Òı
-x600052_g_B_SecondTankManSelfID = 16					--B°ï±ä»¯³ÉÕ½³µµÄÍæ¼ÒµÄselfidÔÚ32¸ö¸±±¾Êı¾İÖĞµÄË÷Òı
-x600052_g_A_FirstTankBuff = 17								--A°ï±ä»¯³ÉÕ½³µµÄBuffIDÔÚ32¸ö¸±±¾Êı¾İÖĞµÄË÷Òı
-x600052_g_A_SecondTankBuff = 18								--A°ï±ä»¯³ÉÕ½³µµÄBuffIDÔÚ32¸ö¸±±¾Êı¾İÖĞµÄË÷Òı
-x600052_g_B_FirstTankBuff = 19								--B°ï±ä»¯³ÉÕ½³µµÄBuffIDÔÚ32¸ö¸±±¾Êı¾İÖĞµÄË÷Òı
-x600052_g_B_SecondTankBuff = 20								--B°ï±ä»¯³ÉÕ½³µµÄBuffIDÔÚ32¸ö¸±±¾Êı¾İÖĞµÄË÷Òı
-x600052_g_A_FirstTankPos = 21									--A°ï±ä»¯³ÉÕ½³µµÄPosÔÚ32¸ö¸±±¾Êı¾İÖĞµÄË÷Òı
-x600052_g_A_SecondTankPos = 22								--A°ï±ä»¯³ÉÕ½³µµÄPosÔÚ32¸ö¸±±¾Êı¾İÖĞµÄË÷Òı
-x600052_g_B_FirstTankPos = 23									--B°ï±ä»¯³ÉÕ½³µµÄPosÔÚ32¸ö¸±±¾Êı¾İÖĞµÄË÷Òı
-x600052_g_B_SecondTankPos = 24								--B°ï±ä»¯³ÉÕ½³µµÄPosÔÚ32¸ö¸±±¾Êı¾İÖĞµÄË÷Òı
+x600052_g_A_FirstTankManSelfID = 13						--A??????????selfid?32?????????
+x600052_g_A_SecondTankManSelfID = 14					--A??????????selfid?32?????????
+x600052_g_B_FirstTankManSelfID = 15						--B??????????selfid?32?????????
+x600052_g_B_SecondTankManSelfID = 16					--B??????????selfid?32?????????
+x600052_g_A_FirstTankBuff = 17								--A???????BuffID?32?????????
+x600052_g_A_SecondTankBuff = 18								--A???????BuffID?32?????????
+x600052_g_B_FirstTankBuff = 19								--B???????BuffID?32?????????
+x600052_g_B_SecondTankBuff = 20								--B???????BuffID?32?????????
+x600052_g_A_FirstTankPos = 21									--A???????Pos?32?????????
+x600052_g_A_SecondTankPos = 22								--A???????Pos?32?????????
+x600052_g_B_FirstTankPos = 23									--B???????Pos?32?????????
+x600052_g_B_SecondTankPos = 24								--B???????Pos?32?????????
 
-x600052_g_DefaultTankPos = {{47,39},{47,39},{203,215},{203,215}}	--Õ½³µ»ØÓªµÄ×ø±ê
+x600052_g_DefaultTankPos = {{47,39},{47,39},{203,215},{203,215}}	--???????
 
-x600052_g_TankName = {"ÇàÁúÕ½³µ","°×»¢Õ½³µ","ÖìÈ¸Õ½³µ","ĞşÎäÕ½³µ","ÅÌ¹ÅÕ½³µ"}
+x600052_g_TankName = {"Thanh Long Chiªn Xa","BÕch H± Chiªn Xa","Chu Tß¾c Chiªn Xa","Huy«n Vû Chiªn Xa","Bän C± Chiªn Xa"}
 
 x600052_g_Msg = {"#{BHXZ_081103_55}",
 								"#{BHXZ_081103_46}",
@@ -53,7 +53,7 @@ x600052_g_Msg = {"#{BHXZ_081103_55}",
 								"#{BHXZ_081103_50}",
 								"#{BHXZ_081103_52}"}
 
---°ïÕ½¸±±¾½Å±¾
+--Bang Chiªn bän sao k¸ch bän g¯c
 x600052_g_BangzhanScriptId	= 402047
 
 

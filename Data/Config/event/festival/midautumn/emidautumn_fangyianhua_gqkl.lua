@@ -1,30 +1,30 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x050019_g_ScriptId = 050019
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x050019_g_MissionId = 132
 
---Ä¿±êNPC
-x050019_g_Name	="ÁèÕñ"
+--møc tiêu NPC
+x050019_g_Name	="Lång Ch¤n"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x050019_g_MissionKind = 3
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x050019_g_MissionLevel = 10
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x050019_g_IfMissionElite = 0
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x050019_g_MissionName="#{ZQSY_2007912_001}"
 x050019_g_MissionInfo="#{ZQSY_2007912_002}"
 x050019_g_MissionTarget="#{ZQSY_2007912_003}"
 x050019_g_MissionContinue="#{ZQSY_2007912_004}"
 x050019_g_MissionComplete="#{ZQSY_2007912_005}"
 
-x050019_g_Custom	= { {id="ÒÑÈ¼·Å¹úÇì¿ìÀÖ",num=1} }
+x050019_g_Custom	= { {id="Ğã phóng Qu¯c Khánh Vui Vë",num=1} }
 x050019_g_IsMissionOkFail = 0
 
 --MisDescEnd

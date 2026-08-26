@@ -1,42 +1,42 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x210216_g_ScriptId = 210216
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x210216_g_Position_X=160.0895
 x210216_g_Position_Z=156.9309
 x210216_g_SceneID=2
-x210216_g_AccomplishNPC_Name="ÕÔÌìÊ¦"
+x210216_g_AccomplishNPC_Name="Tri®u Thiên Sß"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x210216_g_MissionId = 456
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x210216_g_MissionIdPre = 455
 
---Ä¿±êNPC
-x210216_g_Name	="ÕÔÌìÊ¦"
+--møc tiêu NPC
+x210216_g_Name	="Tri®u Thiên Sß"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x210216_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x210216_g_MissionLevel = 5
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x210216_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x210216_g_MissionName="µÚÎå·âÍÆ¼öĞÅ"
+--nhi®m vø Danh
+x210216_g_MissionName="Lá thß tiªn cØ thÑ 5"
 x210216_g_MissionInfo="#{event_dali_0024}"
-x210216_g_MissionTarget="    »Ø#G´óÀí³ÇÎå»ªÌ³#WÕÒµ½#GÕÔÌìÊ¦#W#{_INFOAIM160,157,2,ÕÔÌìÊ¦}¡£#b#G£¨ÇëÓÃ×ó¼üµã»÷´øÏÂ»®ÏßµÄ×ø±ê£¬°ïÖúÄúÕÒµ½¸ÃNPC£©#l"
-x210216_g_MissionComplete="  ÄãÔ½À´Ô½Ïñ¸ö´óÏÀÁË£¬ÎÒÕæÊÇ¿´ÔÚÑÛÀï£¬Ï²ÔÚĞÄÍ·°¡¡£"
+x210216_g_MissionTarget="H°i#GTHành ĞÕi Lı Ngû Hoa Ğàn#Wtìm ğßşc#GTri®u Thiên Sß#W#{_INFOAIM160, 157, 2, Tri®u Thiên Sß}. #b#G(Thïnh Døng Tä Ki®n Ği¬m Kích b®nh bÕch ğ¾i phác h÷a Ğích t÷a ğµ, trş giúp Nhçm tìm ğßşc Cai NPC)#l"
+x210216_g_MissionComplete="  Các hÕ ngày càng gi¯ng mµt ğÕi hi®p r°i, ta nhìn mà lòng vui thay"
 x210216_g_MoneyBonus=24
-x210216_g_SignPost = {x = 160, z = 156, tip = "ÕÔÌìÊ¦"}
+x210216_g_SignPost = {x = 160, z = 156, tip = "Tri®u Thiên Sß"}
 x210216_g_ItemBonus={{id=40002108,num=1}}
 
-x210216_g_Custom	= { {id="ÒÑÕÒµ½ÕÔÌìÊ¦",num=1} }
-x210216_g_IsMissionOkFail = 1		--±äÁ¿µÄµÚ0Î»
+x210216_g_Custom	= { {id="Tìm th¤y Tri®u Thiên Sß",num=1} }
+x210216_g_IsMissionOkFail = 1		--????0?
 
 
 --MisDescEnd

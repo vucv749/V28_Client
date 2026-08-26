@@ -1,38 +1,38 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x212108_g_ScriptId = 212108
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x212108_g_MissionId = 554
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x212108_g_MissionKind = 32
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x212108_g_MissionLevel = 78
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x212108_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x212108_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+--nhi®m vø hay không ğã hoàn thành
+x212108_g_IsMissionOkFail = 0		--????0?
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñĞèÒªµÃµ½µÄÎïÆ·
---x212108_g_DemandItem={{id=40002112,num=1}}		--±äÁ¿µÚ1Î»
+--nhi®m vø c¥n nh§n ğßşc Ğích v§t ph¦m
+--x212108_g_DemandItem={{id=40002112, num=1}} --lßşng biªn ğ±i Ğ® 1V¸
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x212108_g_MissionName="ÖØ½¨ÄÁ³¡"
+--nhi®m vø vån bän miêu tä
+x212108_g_MissionName="Xây dñng lÕi trang trÕi"
 x212108_g_MissionInfo="#{Lua_liaoxi_002}"
-x212108_g_MissionTarget="  ÕÒµ½10¿éº®Ìú¿óÊ¯ºÍ10¿é½ğ¿óÊ¯£¬ÒÔ¼°10¸ö½ğ±Ò£¬°ÑËûÃÇ½»¸ø#GÁÉÎ÷¹ãÄşÕò#WµÄ#RÒ®ÂÉ½ğ#W#{_INFOAIM170,206,21,Ò®ÂÉ½ğ}¡£"
-x212108_g_ContinueInfo="  ÄãÕÒµ½×ã¹»µÄ²ÄÁÏÁËÂğ£¿"
-x212108_g_MissionComplete="  Ğ»Ğ»ÄãµÄ°ïÖú£¬µÈÄÁ³¡ÖØ½¨£¬ÎÒÒ»¶¨ÓÃ×îĞÂÏÊµÄÑòÄÌºÍ×î¿É¿ÚµÄ¿¾ÈâºÃºÃµÄÕĞ´ıÄã¡£"
+x212108_g_MissionTarget="  Tìm th¤y 10 viên Hàn thiªt khoáng thÕch, 10 viên Kim khoáng thÕch và 10 ğ°ng vàng, hãy trao chúng cho #RGIa Lu§t Kim #W · #GLiêu Tây Quäng Vinh Tr¤n #W#{_INFOAIM170,206,21,Gia Lu§t Kim}."
+x212108_g_ContinueInfo="  Các hÕ ğã tìm ğü nguyên li®u chßa?"
+x212108_g_MissionComplete="  Ğa tÕ ngß½i ğã giúp ğŞ, ğşi khi trÕi chån nuôi ğßşc xây dñng lÕi, nh¤t ğ¸nh ta s¨ ğãi ngß½i món sæa dê tß½i nh¤t và món th¸t nß¾ng th½m ngon nh¤t"
 
-x212108_g_DemandItem={{id=20103004,num=10},{id=20103005,num=10}}		--´Ó±³°üÖĞ¼ÆËã
+x212108_g_DemandItem={{id=20103004,num=10},{id=20103005,num=10}}		--??????
 
---½±Àø
+--thß·ng cho
 x212108_g_MoneyBonus=46000
 x212108_g_Exp = 65000
 --x212108_g_ItemBonus={{id=10401031,num=1}}

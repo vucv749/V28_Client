@@ -1,44 +1,44 @@
 --MisDescBegin
 x893189_g_ScriptId = 893189
 x893189_g_MissionId = 2084
-x893189_g_MainScriptId = 893185--Ö÷½Å±¾ºÅ
+x893189_g_MainScriptId = 893185--????
 
 --kdzz
 x893189_g_KDZZID = 1006000552
 x893189_g_KDZZSubID = 4
 
---·ÅÆúÈÎÎñÖØÖÃ±ê¼Ç
+--vÑt bö nhi®m vø Trùng Trí d¤u hi®u
 x893189_g_LastMissionId = 2092
 
---Ç°ÖÃÈÎÎñ
-x893189_g_PreScirptId = 893189--ÉÏÒ»½Å±¾ºÅ
-x893189_g_PreMissionId = 2083--ÉÏÒ»ÈÎÎñºÅ
+--Ti«n Trí nhi®m vø
+x893189_g_PreScirptId = 893189--?????
+x893189_g_PreMissionId = 2083--?????
 
---½ÓÈÎÎñnpc
-x893189_g_AcceptNPC_Name="°ÙÏşÉú"--½ÓÈÎÎñµÄnpc»òÕßnpcÁĞ±í
+--tiªp nh§n chÑc vø Vø Npc
+x893189_g_AcceptNPC_Name="Bách Hi¬u Sanh"--????npc??npc??
 
---½»ÈÎÎñnpc
-x893189_g_Position_X=150--Íê³ÉÈÎÎñNPCÊôĞÔ
+--Giao nhi®m vø Npc
+x893189_g_Position_X=150--????NPC??
 x893189_g_Position_Z=208
 x893189_g_SceneID=1
 x893189_g_AccomplishNPC_Name=""
 
---ÈÎÎñÊı¾İ
+--nhi®m vø s¯ li®u
 x893189_g_MissionKind = 7
 x893189_g_MissionLevel = 65
 x893189_g_IfMissionElite = 0
-x893189_g_IsMissionOkFail = 0--ÈÎÎñÍê³É±êÖ¾Î»(Ò»¶¨ÒªÎª0)
+x893189_g_IsMissionOkFail = 0--???????(????0)
 
-x893189_g_MissionName="#{ZQSS_220429_168}"--ÈÎÎñÃû
-x893189_g_MissionInfo="#{ZQSS_220429_120}"--ÈÎÎñÎÄ±¾ÃèÊö£¨ÈÎÎñÁìÈ¡¶Ô°×£©
-x893189_g_MissionComplete="#{ZQSS_220429_124}"--ÈÎÎñÍê³É¶Ô°×
-x893189_g_MissionTarget=""--ÈÎÎñÄ¿±ê(ÈÎÎñÃæ°åÖĞÈÎÎñĞÅÏ¢ÏÔÊ¾ÄÚÈİ)
+x893189_g_MissionName="#{ZQSS_220429_168}"--???
+x893189_g_MissionInfo="#{ZQSS_220429_120}"--??????(??????)
+x893189_g_MissionComplete="#{ZQSS_220429_124}"--??????
+x893189_g_MissionTarget=""--????(?????????????)
 
---×Ô¶¨ÒåÍê³ÉÇé¿ö£¬ÄÚÈİ²»ÄÜÊ¹ÓÃ×Öµä£¬·Ö±ğ¶ÔÓ¦missionparamµÄµÚ1Î»ºóÑÓ
-x893189_g_Custom = {{id="ÏòÎäµÀ³¤ÀÏ¸´Ãü",num=1}}
-x893189_g_ParamIndex = 2--ÈÎÎñ²ÎÊı0-Íê³É±ê¼Ç1-Íê³ÉÇé¿ö2-Ëæ»úË÷Òı
+--Tñ ğ¸nh nghîa hoàn thành tình hu¯ng, nµi dung không th¬ sØ døng tñ ği¬n, phân bi®t ğ¯i Ñng missionparamĞích Ğ® 1V¸ H§u Diên
+x893189_g_Custom = {{id="Hß¾ng võ ğÕo trß·ng lão phøc m®nh",num=1}}
+x893189_g_ParamIndex = 2--????0-????1-????2-????
 
---npc¾àÀë
+--Npc khoäng cách
 x893189_g_NpcDist = 5
 
 

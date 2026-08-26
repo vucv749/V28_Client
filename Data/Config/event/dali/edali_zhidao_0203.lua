@@ -1,41 +1,41 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x210203_g_ScriptId = 210203
 
 x210203_g_Position_X=102.8806
 x210203_g_Position_Z=131.8685
 x210203_g_SceneID=2
-x210203_g_AccomplishNPC_Name="Â¬ÈıÆß"
+x210203_g_AccomplishNPC_Name="Lô Tam Th¤t"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x210203_g_MissionId = 443
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x210203_g_MissionIdPre = 442
 
---Ä¿±êNPC
-x210203_g_Name	="Â¬ÈıÆß"
+--møc tiêu NPC
+x210203_g_Name	="Lô Tam Th¤t"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x210203_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x210203_g_MissionLevel = 1
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x210203_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x210203_g_MissionName="µÚÒ»·İÒ©Æ·"
+--nhi®m vø Danh
+x210203_g_MissionName="Ph¥n thu¯c thÑ nh¤t"
 x210203_g_MissionInfo="#{event_dali_0005}"
-x210203_g_MissionTarget="ÔÚ#G´óÀí³ÇÎ÷´ó½Ö#WµÄ#YÒ©µê#WÀïÕÒµ½#RÂ¬ÈıÆß#W#{_INFOAIM103,132,2,Â¬ÈıÆß}¡£#b#G£¨ÇëÓÃ×ó¼üµã»÷´øÏÂ»®ÏßµÄ×ø±ê£¬°ïÖúÄúÕÒµ½¸ÃNPC£©#l"
-x210203_g_MissionComplete="  Ïë²»µ½Äã¶ÔÒ½µÀÓĞÕâÑùÅ¨ºñµÄĞËÈ¤£¬ºÍÄãÁÄÌìÕæÊÇ³©¿ì¡£ÕâĞ©#YÒ©Æ·#WÄãÑ¡Ò»Ñù°É£¬¾Íµ±ÊÇÎÒËÍÄãµÄ¼ûÃæÀñ¡£"
+x210203_g_MissionTarget="TÕi#GTHành ĞÕi Lı ğß¶ng l¾n phía Tây#WĞích#Ydßşc ğiªm#Whãy tìm ğßşc#RLô Tam Th¤t#W#{_INFOAIM103, 132, 2, Lô Tam Th¤t}. #b#G(Thïnh Døng Tä Ki®n Ği¬m Kích b®nh bÕch ğ¾i phác h÷a Ğích t÷a ğµ, trş giúp Nhçm tìm ğßşc Cai NPC)#l"
+x210203_g_MissionComplete="  Không ng¶ các hÕ có hÑng thú sâu s¡c nhß v§y v¾i y ğÕo, ğßşc ğàm ğÕo v¾i các hÕ th§t thoäi mái. Ch² #Yd¿şc ph¦m#W này các hÕ hãy ch÷n l¤y mµt, hãy coi ğó là món quà di®n kiªn ta t£ng các hÕ"
 x210203_g_MoneyBonus=1
-x210203_g_SignPost = {x = 103, z = 133, tip = "Â¬ÈıÆß"}
+x210203_g_SignPost = {x = 103, z = 133, tip = "Lô Tam Th¤t"}
 x210203_g_RadioItemBonus={{id=30001001,num=5},{id=30003001,num=5},{id=30002001,num=5}}
 
-x210203_g_Custom	= { {id="ÒÑÕÒµ½Â¬ÈıÆß",num=1} }
-x210203_g_IsMissionOkFail = 1		--±äÁ¿µÄµÚ0Î»
+x210203_g_Custom	= { {id="Ğã tìm ğßşc Lô Tam Th¤t",num=1} }
+x210203_g_IsMissionOkFail = 1		--????0?
 
 
 --MisDescEnd

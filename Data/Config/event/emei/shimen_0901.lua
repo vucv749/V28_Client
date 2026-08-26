@@ -1,40 +1,40 @@
 --MisDescBegin
 
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x226901_g_ScriptId = 226901
 
---¸±±¾Ãû³Æ
-x226901_g_CopySceneName="ÌÒ»¨Õó"
+--bän sao tên
+x226901_g_CopySceneName="Ğào Hoa Tr§n"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x226901_g_MissionId = 1091
 
---Ä¿±êNPC
+--møc tiêu NPC
 x226901_g_Name = ""
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x226901_g_IfMissionElite = 1
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x226901_g_MissionKind = 26
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x226901_g_MissionLevel = 10000
 
---********ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö******
---Ñ­»·ÈÎÎñµÄÊı¾İË÷Òı£¬ÀïÃæ´æ×ÅÒÑ×öµÄ»·Êı MD_MURENXIANG_HUAN
+--********phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng******
+--tu¥n hoàn nhi®m vø Ğích s¯ li®u hß¾ng dçn tra cÑu, bên trong T°n Trß¾c Dî T¯ Ğích Hoàn S± MD_MURENXIANG_HUAN
 --g_MissionRound =
---**********************************ÒÔÉÏÊÇ¶¯Ì¬****************************
+--**********************************ğã ngoài Th¸ ğµng thái****************************
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x226901_g_MissionName="ÌÒ»¨Õó"
-x226901_g_MissionInfo="#{MPFB_081023_04}"  --ÈÎÎñÃèÊö
-x226901_g_MissionTarget="#{MPFB_081023_05}"	--ÈÎÎñÄ¿±ê
-x226901_g_ContinueInfo="ÄãÒª¼ÌĞøÅ¬Á¦°¡£¡"	--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x226901_g_MissionComplete="Ğ»Ğ»°¡¡£"	--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø vån bän miêu tä
+x226901_g_MissionName="Ğào Hoa Tr§n"
+x226901_g_MissionInfo="#{MPFB_081023_04}"  --????
+x226901_g_MissionTarget="#{MPFB_081023_05}"	--????
+x226901_g_ContinueInfo="Nhî Yêu tiªp tøc c¯ g¡ng A!"	--??????npc??
+x226901_g_MissionComplete="Cám ½n A."	--????npc????
 x226901_g_Parameter_Kill_CountRandom = { { id = 1700076, numNeeded = 6, numKilled = 4 } }
 
---ÈÎÎñ½±Àø
+--nhi®m vø thß·ng cho
 
 
 --MisDescEnd

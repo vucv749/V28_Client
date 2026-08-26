@@ -1,34 +1,34 @@
 --MisDescBegin
 
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x050010_g_ScriptId = 050010
 
--- ÈÎÎñºÅ
+-- nhi®m vø Hào
 x050010_g_MissionId = 396					-- 395 - 399
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x050010_g_MissionIdPre = 395
 
--- ÈÎÎñÄ¿±ênpc
-x050010_g_Name = "ÑîÎÄ¹ã"
+-- nhi®m vø møc tiêu Npc
+x050010_g_Name = "Dß½ng Vån Quäng"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x050010_g_MissionKind = 3
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x050010_g_MissionLevel = 10000
 
--- ÈÎÎñÎÄ±¾ÃèÊö
-x050010_g_MissionName = "»÷É±Ò»Æ·ÌÃ"
-x050010_g_MissionInfo = "    ºÃ£¬È­È­±¨¹úÖ®ĞÄÁîÈËÇÕÅå£¬Õâ¾Í´øÄãÇ°ÍùÕ½Çø¡£"			--ÈÎÎñÃèÊö
-x050010_g_MissionTarget = "    »÷É±À´×ÔÒ»Æ·ÌÃµÄ¸ßÊÖ»òÍ·Ä¿¡£"						-- ÈÎÎñÄ¿±ê
-x050010_g_ContinueInfo = "    ¸óÏÂÉíÉÏËÆºõ²¢Ã»ÓĞÁîÅÆ£¬½»×Ö´ÓºÎÌ¸Æğ£¿"				--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x050010_g_MissionComplete = "    ÉõºÃÉõºÃ£¬Îª¹úĞ§Á¦£¬ÄËÎÒ±²Ó¦ÎªÖ®ÊÂ¡£"				--Íê³ÉÈÎÎñnpcËµµÄ»°
+-- nhi®m vø vån bän miêu tä
+x050010_g_MissionName = "San b¢ng nh¤t ph¦m ğß¶ng"
+x050010_g_MissionInfo = "    T¯t, t¤m lòng t§n trung báo qu¯c th§t ğáng khâm phøc. Gi¶ dçn các hÕ ği thåm chiªn khu"			--????
+x050010_g_MissionTarget = "Ğánh chªt ğªn t× Nh¤t Ph¦m Ğß¶ng Ğích cao thü Ho£c ğ¥u møc."						-- ????
+x050010_g_ContinueInfo = "Các hÕ trên ngß¶i tña h° cûng không có Linh Bài, Giao Tñ t× ğâu nói ğªn?"				--??????npc??
+x050010_g_MissionComplete = "R¤t t¯t r¤t t¯t, vì nß¾c hi®u lñc, Nãi Ngã B¯i ¿ng lâm vào Sñ."				--????npc???
 
-x050010_g_IsMissionOkFail = 0				-- 0ºÅ£ºµ±Ç°ÈÎÎñÊÇ·ñÍê³É(0Î´Íê³É£»1Íê³É)
-x050010_g_Param_sceneid = 1					-- 1ºÅ£ºµ±Ç°¸±±¾ÈÎÎñµÄ³¡¾°ºÅ
+x050010_g_IsMissionOkFail = 0				-- 0?:????????(0???;1??)
+x050010_g_Param_sceneid = 1					-- 1?:??????????
 
--- ÈÎÎñ½±Àø
+-- nhi®m vø thß·ng cho
 
 
 --MisDescEnd

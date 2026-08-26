@@ -1,23 +1,23 @@
 --MisDescBegin
 
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x889265_g_ScriptId = 889265
 x889265_g_KDZZID = 1001000013
-x889265_g_SubKDZZID1 = 1--½»½ÓÈÎÎñ
-x889265_g_SubKDZZID2 = 2--Áì½±Àø
-x889265_g_SubKDZZID3 = 3--ÁìÑ©Çò
+x889265_g_SubKDZZID1 = 1--????
+x889265_g_SubKDZZID2 = 2--???
+x889265_g_SubKDZZID3 = 3--???
 --
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x889265_g_MissionKind = 11
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x889265_g_MissionLevel = 10000
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x889265_g_IfMissionElite = 0
 --
---ÈÎÎñÃû
+--nhi®m vø Danh
 x889265_g_MissionName = "#{XQHLJ_101108_04}"
 --
---»î¶¯±àºÅ
+--hoÕt ğµng ğánh s¯
 x889265_g_MissionId = 1149
 
 --MisDescEnd

@@ -1,35 +1,35 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x891081_g_ScriptId = 891081
 
---Íê³ÉÈÎÎñNPCÊôĞÔ
-x891081_g_Position_X=129  --Ìæ´ú
-x891081_g_Position_Z=107 --Ìæ´ú
+--hoàn thành nhi®m vø NPCthuµc tính
+x891081_g_Position_X=129  --??
+x891081_g_Position_Z=107 --??
 x891081_g_SceneID=1
-x891081_g_AccomplishNPC_Name="ÉòÒ¹Óê"
+x891081_g_AccomplishNPC_Name="Th¦m dÕ vû"
 
---ÈÎÎñºÅ
-x891081_g_PreMissionId = 2000 --Ìæ´ú
-x891081_g_MissionId = 2001 --Ìæ´ú
+--nhi®m vø Hào
+x891081_g_PreMissionId = 2000 --??
+x891081_g_MissionId = 2001 --??
 
---Ä¿±êNPC
-x891081_g_Name	="ÕÔÌìÊ¦"
+--møc tiêu NPC
+x891081_g_Name	="Tri®u Thiên Sß"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x891081_g_MissionKind = 9
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x891081_g_MissionLevel = 80 --10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x891081_g_IfMissionElite = 0
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x891081_g_PreMissionName="#{YXDHYD_20210207_81}"
 x891081_g_MissionName="#{YXDHYD_20210207_82}"
 x891081_g_MissionTarget="#{YXDHYD_20210207_36}"
 x891081_g_IsMissionOkFail=0
-x891081_g_Custom = {{ id = "ÓëËÕÖİÉòÒ¹Óê½»Ì¸", num = 1}} --Ìæ´ú
+x891081_g_Custom = {{ id = "Dß Tô Châu Th¦m dÕ vû nói chuy®n v¾i nhau", num = 1}} --??
 x891081_g_ContinueInfo = "#{YXDHYD_20210207_32}"
 x891081_g_MissionComplete = "#{YXDHYD_20210207_35}"
 

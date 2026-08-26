@@ -1,72 +1,72 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x229010_g_ScriptId = 229010
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x229010_g_MissionId = 1060
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x229010_g_MissionKind = 2
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x229010_g_MissionLevel = 10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x229010_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x229010_g_IsMissionOkFail = 0		--±äÁ¿µÄµÚ0Î»
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
+--nhi®m vø hay không ğã hoàn thành
+x229010_g_IsMissionOkFail = 0		--????0?
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñ±äÁ¿µÚÒ»Î»ÓÃÀ´´æ´¢Ëæ»úµÃµ½µÄ½Å±¾ºÅ
+--nhi®m vø lßşng biªn ğ±i ğ® nh¤t v¸ dùng ğ¬ t°n træ TuÏ C½ nh§n ğßşc Ğích k¸ch bän g¯c Hào
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x229010_g_MissionName="Ê¦ÃÅÈÎÎñ"
-x229010_g_MissionInfo=""  --ÈÎÎñÃèÊö
-x229010_g_MissionTarget = "²»´í... ... ÄãÒ»Ö±Îª±¾ÃÅµÄ·¢Ñï¹â´óÔÚ¾¡ĞÄ¾¡Á¦µÄ×ö×Å¹¤×÷£¬ÎÒÔÙ¶îÍâ¸øÄãÒ»¸öÈÎÎñ°É£¬#G%s#W¸Õ¸øÎÒ·É¸ë´«Êé£¬ËµËûÃÇĞèÒª°ïÃ¦£¬ÄãÈ¥ÕÒÒ»ÏÂ#G%s#WµÄ#Y%s#W£¬Ëû£¨Ëı£©»á°²ÅÅÄãµÄÈÎÎñµÄ¡£#r#{SMRW_090206_01}"
-x229010_g_ContinueInfo="¸ÉµÃ²»´í"		--Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x229010_g_MissionComplete="ÎÒ½»¸øÄãµÄÊÂÇéÒÑ¾­×öÍêÁËÂğ£¿"					--Íê³ÉÈÎÎñnpcËµ»°µÄ»°
+--nhi®m vø vån bän miêu tä
+x229010_g_MissionName="Nhi®m vø Sß Môn"
+x229010_g_MissionInfo=""  --????
+x229010_g_MissionTarget = "Không t°i. . . . . . Nhî vçn Vi b±n môn Ğích phát dß½ng quang ğÕi TÕi t§n tâm hªt sÑc Ğích T¯ Trß¾c công tác, Ngã Tái thêm vào cho ngß½i mµt cái nhi®m vø Ba, #G%S#WCß½ng cho ta dùng b° câu ğßa tin, Thuyªt b÷n h÷ c¥n h² trş, ngß½i ği Träo mµt chút#G%s#WĞích#Y%s#W, THa(Tha) Hµi An Bài nhi®m vø cüa ngß½i Ğích. #r#{SMRW_090206_01}"
+x229010_g_ContinueInfo="Làm ğßşc không t°i"		--??????npc??
+x229010_g_MissionComplete="Vi®c ta giao ğã hoàn thành chßa?"					--????npc????
 x229010_g_MissionRound=17
 
 x229010_g_DoubleExp = 48
 x229010_g_AccomplishCircumstance = 1
 
---¸ñÊ½×Ö·û´®ÖĞµÄË÷Òı, ±íÊ¾´Ó4¿ªÊ¼,ºó¶àÉÙÎ»ÊÓSetMissionByIndex(...)µÄ¶àÉÙ¶ø¶¨
+--cách thÑc tñ phù Xuyªn Trung Ğích hß¾ng dçn tra cÑu, tö vë Thung 4b¡t ğ¥u, H§u nhi«u ít V¸ Th¸ SetMissionByIndex(. . . )Ğích nhi«u ít Nhi Ğ¸nh
 x229010_g_StrForePart=4
 
 x229010_g_StrList = {
-						"Ğş³Î#{_INFOAIM61,61,9,Ğş³Î}",
-						"ËşÁÖ¸±±¾",
-						"±¾Ïà#{_INFOAIM35,86,13,±¾Ïà}",
-						"ÃÏÇàÇà#{_INFOAIM96,73,15,ÃÏÇàÇà}",
-						"·ğÓ¡#{_INFOAIM41,144,10,·ğÓ¡}",
-						"·½À°#{_INFOAIM89,56,11,·½À°}",
-						"¾Õ½£#{_INFOAIM99,45,17,¾Õ½£}",
-						"ÁÖÁéËØ#{_INFOAIM58,73,12,ÁÖÁéËØ}",
-						"·ë°¢Èı#{_INFOAIM62,68,14,·ë°¢Èı}",
-						"ºìÓñ#{_INFOAIM128,78,16,ºìÓñ}", 
-						"Ëşµ×¸±±¾",
-						"ÌÒ»¨Õó¸±±¾",
-						"¾Æ½Ñ¸±±¾",
-						"¹âÃ÷¶´¸±±¾",
-						"ÕÛÃ··å¸±±¾",
-						"ÁéĞÔ·å¸±",
-						"¹Èµ×¸±±¾",
-						"ÎåÉñ¶´¸±±¾", 
-						"ÉÙÁÖ",
-						"ÌìÁú",
-						"¶ëáÒ",
-						"Ø¤°ï",
-						"Ã÷½Ì",
-						"ÌìÉ½",
-						"Îäµ±",
-						"åĞÒ£",
-						"ĞÇËŞ",
-						"Íõµşä¸#{_INFOAIM30,197,592,Íõµşä¸}",
-						"ğ©ÔÂÖŞ¸±±¾", 
-						"ÂüÍÓÉ½×¯",  
+						"Huy«n Tr×ng#{_INFOAIM61, 61, 9, Huy«n Tr×ng}",
+						"Tháp Lâm phø bän",
+						"B±n Tßşng#{_INFOAIM35, 86, 13, B±n Tßşng}",
+						"MÕnh Thanh Thanh#{_INFOAIM96, 73, 15, MÕnh Thanh Thanh}",
+						"Ph§t „n#{_INFOAIM41, 144, 10, Ph§t „n}",
+						"Phß½ng LÕp#{_INFOAIM89, 56, 11, Phß½ng LÕp}",
+						"Cúc Kiªm#{_INFOAIM99, 45, 17, Cúc Kiªm}",
+						"Lâm Linh T¯#{_INFOAIM58, 73, 12, Lâm Linh T¯}",
+						"Phùng A Tam#{_INFOAIM62, 68, 14, Phùng A Tam}",
+						"H°ng Ng÷c#{_INFOAIM128, 78, 16, H°ng Ng÷c}", 
+						"Tháp ğª phø bän",
+						"Ğào Hoa Tr§n phø bän",
+						"Phø bän h¥m rßşu",
+						"Quang Minh ğµng phø bän",
+						"Chiªt Mai Phong phø bän",
+						"Linh Tính Phong phø bän",
+						"C¯c Ğ¸a phø bän",
+						"Ngû Th¥n Ğµng phó bän", 
+						"Thiªu Lâm",
+						"Thiên Long",
+						"?ëáÒ",
+						"Cái Bang",
+						"Minh Giáo",
+						"Thiên S½n",
+						"Võ Ğang",
+						"Tiêu dao",
+						"Tinh Túc",
+						"Vß½ng Ği®p Quyên#{_INFOAIM30, 197, 592, Vß½ng Ği®p Quyên}",
+						"Trång sáng Châu bän sao", 
+						"MÕn Ğà S½n Trang",  
 						}
 						
 

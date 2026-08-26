@@ -1,85 +1,85 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x890000_g_ScriptId	= 890000
 
---Ç°ĞøÈÎÎñºÅ
+--Ti«n Tøc nhi®m vø Hào
 --x890000_g_MissionIdPre
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x890000_g_MissionId		= 750
---ÏÂÒ»¸öÈÎÎñµÄID
+--kª tiªp nhi®m vø Ğích ID
 x890000_g_MissionIdNext	= 751
---ÏÂÒ»¸öÈÎÎñµÄIndex
+--kª tiªp nhi®m vø Ğích Index
 --x890000_g_MissionIndexNext
---ÏÂÒ»¸öÈÎÎñµÄScriptId
+--kª tiªp nhi®m vø Ğích ScriptId
 x890000_g_NextScriptId	= 890001
---ÁìÈ¡ÈÎÎñÄ¿±êËùÔÚ³¡¾°
+--lînh nhi®m vø møc tiêu ch², n½i trß¶ng cänh
 --x890000_g_AcceptNPC_SceneID
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x890000_g_MissionKind		= 4
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x890000_g_MissionLevel		= 45
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x890000_g_IfMissionElite	= 0
 
---ÈÎÎñÎÄ±¾ÃèÊö
+--nhi®m vø vån bän miêu tä
 x890000_g_MissionName		= "#{TSXF_090408_04}"
---ÈÎÎñÃèÊö
+--nhi®m vø miêu tä
 x890000_g_MissionInfo_1		= "#{TSXF_090408_10}"
 x890000_g_MissionInfo_2		= "#{TSXF_090408_11}"
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x890000_g_MissionTarget		= "%f"
 
---ÓÃÀ´±£´æ×Ö·û´®¸ñÊ½»¯µÄÊı¾İ
+--dùng ğ¬ bäo t°n tñ phù Xuyªn cách thÑc Hoá Ğích s¯ li®u
 x890000_g_FormatList = {
 								"#{TSXF_090408_35}#Y%s#W#{TSXF_090408_36}#{TSXF_090408_14}#Y%s#W#{TSXF_090408_15}",
 							}
 
---¸ñÊ½×Ö·û´®ÖĞµÄË÷Òı, ±íÊ¾´Ó4¿ªÊ¼,ºó¶àÉÙÎ»ÊÓSetMissionByIndex(...)µÄ¶àÉÙ¶ø¶¨
+--cách thÑc tñ phù Xuyªn Trung Ğích hß¾ng dçn tra cÑu, tö vë Thung 4b¡t ğ¥u, H§u nhi«u ít V¸ Th¸ SetMissionByIndex(. . . )Ğích nhi«u ít Nhi Ğ¸nh
 x890000_g_StrForePart=4
 --x890000_g_ShimenPet_Index = 1
 
 x890000_g_StrList = {
-						"½ğ¸Õ¾­",
-						"ÆßÉ¥È­",
-						"Ì«×æ³¤È­",
-						"ÒõÑô¾÷",
-						"ÉñÅ®È­·¨",
-						"¸¯Ê¬¹¦",
-						"Ò»ÑôÖ¸Ö¸·¨",
-						"ÁéğÕ¹¦",
-						"°Ù»¨¾­",
-						"»Û·½#{_INFOAIM96,82,9,»Û·½}",
-						"ÁÖÑÒ#{_INFOAIM98,105,11,ÁÖÑÒ}",
-						"ºéÍ¨#{_INFOAIM92,77,10,ºéÍ¨}",
-						"ÕÅÖĞĞĞ#{_INFOAIM78,95,12,ÕÅÖĞĞĞ}",
-						"ÃÏÁú#{_INFOAIM96,86,15,ÃÏÁú}",
-						"ÍõÑå#{_INFOAIM96,92,16,ÍõÑå}",
-						"±¾·²#{_INFOAIM96,88,13,±¾·²}",
-						"·ûÃôÒÇ#{_INFOAIM95,60,17,·ûÃôÒÇ}",
-						"ÇØ¹Û#{_INFOAIM119,152,14,ÇØ¹Û}",
-						"ÀÅ‹ÖÓñ¼ò",                       --newmenpai
-						"Íõ°²¸è#{_INFOAIM129,106,592,Íõ°²¸è}",
+						"Kim Cang Kinh",
+						"Th¤t Táng Quy«n",
+						"Thái T± Trß¶ng Quy«n",
+						"Âm Dß½ng Quyªt",
+						"Th¥n Næ Quy«n Pháp",
+						"Hü Thi Công",
+						"Nh¤t Dß½ng Chï Chï Pháp",
+						"Linh Tñu Công",
+						"Bách Hoa Kinh",
+						"Tu® Phß½ng#{_INFOAIM96, 82, 9, Tu® Phß½ng}",
+						"Lâm Nham#{_INFOAIM98, 105, 11, Lâm Nham}",
+						"H°ng Thông#{_INFOAIM92, 77, 10, H°ng Thông}",
+						"Trß½ng Trung Hành#{_INFOAIM78, 95, 12, Trß½ng Trung Hành}",
+						"MÕnh Long#{_INFOAIM96, 86, 15, MÕnh Long}",
+						"Vß½ng NgÕn#{_INFOAIM96, 92, 16, Vß½ng NgÕn}",
+						"B±n Phàm#{_INFOAIM96, 88, 13, B±n Phàm}",
+						"Phù Mçn Nghi#{_INFOAIM95, 60, 17, Phù Mçn Nghi}",
+						"T¥n Quan#{_INFOAIM119, 152, 14, T¥n Quan}",
+						"Lang hoàn Ng÷c Giän",                       --newmenpai
+						"Vß½ng An Ca#{_INFOAIM129, 106, 592, Vß½ng An Ca}",
 						}
 
 
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
 x890000_g_ContinueInfo_1	= "#{TSXF_090408_12}"
 x890000_g_ContinueInfo_2	= "#{TSXF_090408_13}"
---Íê³ÉÈÎÎñnpcËµµÄ»°
+--hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
 x890000_g_MissionComplete_1	= "#{TSXF_090408_12}"
 x890000_g_MissionComplete_2	= "#{TSXF_090408_17}"
 x890000_g_MissionComplete_3	= "#{TSXF_090408_40}"
---¿ÉÒÔÍê³ÉµÄ»·Êı
+--có th¬ hoàn thành Ğích Hoàn S±
 x890000_g_MaxRound	= 1
---ĞÄ·¨µÈ¼¶ÒªÇó
+--tâm pháp c¤p b§c yêu c¥u
 x890000_g_MissionXinFa	= 35	
---¿ØÖÆ½Å±¾
+--kh¯ng chª k¸ch bän g¯c
 --x890000_g_ControlScript
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x890000_g_IsMissionOkFail	= 0		--ÈÎÎñ²ÎÊıµÄµÚ0Î»  0ºÅË÷Òı£¬µ±Ç°ÈÎÎñÊÇ·ñÍê³É(0Î´Íê³É£»1Íê³É£»)
-x890000_g_Custom	= { {id="ÒÑÁ·µ½35¼¶",num=1} }    -- ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,Õ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
---½±Àø
+--nhi®m vø hay không ğã hoàn thành
+x890000_g_IsMissionOkFail	= 0		--??????0?  0???,????????(0???;1??;)
+x890000_g_Custom	= { {id="Dî luy®n ğªn C¤p 35",num=1} }    -- ??????,??????,????????1?
+--thß·ng cho
 x890000_g_MoneyBonus		=	25000
 x890000_g_ItemBonus={id=30505148, num=1}
 

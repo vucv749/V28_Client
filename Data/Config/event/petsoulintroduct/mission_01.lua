@@ -1,30 +1,30 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x893040_g_ScriptId = 893040
 
---Íê³ÉÈÎÎñNPCÊôĞÔ
+--hoàn thành nhi®m vø NPCthuµc tính
 x893040_g_Position_X=89
 x893040_g_Position_Z=139
 x893040_g_SceneID=1
-x893040_g_AccomplishNPC_Name="ÔÆÉîÉî"
+x893040_g_AccomplishNPC_Name="Vân th§t sâu"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x893040_g_MissionId = 2060
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x893040_g_MissionKind = 9
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x893040_g_MissionLevel = 85 --10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x893040_g_IfMissionElite = 0
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x893040_g_MissionName="#{SHYD_20211227_25}"
 x893040_g_MissionTarget="#{SHYD_20211227_26}"
 x893040_g_IsMissionOkFail=0
-x893040_g_Custom = {{ id = "ÒÑ°İ·ÃÔÆÆ®Æ®", num = 1}, { id = "ÒÑ°İ·ÃÔÆÉîÉî", num = 1}}
+x893040_g_Custom = {{ id = "Dî bái phöng Vân Phiêu Phiêu", num = 1}, { id = "Dî bái phöng Vân th§t sâu", num = 1}}
 x893040_g_ContinueInfo = ""
 x893040_g_MissionComplete = "#{SHYD_20211227_29}"
 

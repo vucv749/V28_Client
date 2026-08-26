@@ -1,39 +1,39 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x200003_g_ScriptId = 200003
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x200003_g_MissionId = 3
 
---Ç°ĞøÈÎÎñºÅ
+--Ti«n Tøc nhi®m vø Hào
 x200003_g_PreMissionId = 2
 
---Ä¿±êNPC
-x200003_g_Name	="ÖÓÁé"
-x200003_g_Name1 ="Íò½Ù¹ÈÊ¯¸Òµ±"
+--møc tiêu NPC
+x200003_g_Name	="Chung Linh"
+x200003_g_Name1 ="VÕn Kiªp C¯c ThÕch Cäm Ğß½ng"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x200003_g_MissionKind = 51
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x200003_g_MissionLevel = 20
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x200003_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x200003_g_MissionName="Î¢Ğ¦Ö®ÂÃ"
---ÈÎÎñÃèÊö
+--nhi®m vø Danh
+x200003_g_MissionName="Vi Tiªu Chi Læ"
+--nhi®m vø miêu tä
 x200003_g_MissionInfo="#{Mis_juqing_0003}"
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x200003_g_MissionTarget="#{Mis_juqing_Tar_0003}"		
---Ìá½»Ê±npcµÄ»°
-x200003_g_MissionComplete="  <ÄãÔÚÕâ×ùÃÜ²»Í¸·çµÄÊ¯ÎİµÄÇ°±ßÕÒµ½Ò»¸öÊ¯¸Òµ±£¬´ÓÊ¯¸Òµ±ÅÔ±ßµÄ·ìÏ¶Àï¿ÉÒÔÌıµ½¶ÎÓşµÄÉùÒô¡£>"		
+--ğ® trình Th¶i Npc trong l¶i nói
+x200003_g_MissionComplete="  <— phía trß¾c ThÕch ¯c Kín không chút gió này, các hÕ s¨ tìm th¤y mµt ThÕch Cäm Ğß½ng, T× khe h· bên cÕnh ThÕch Cäm Ğß½ng có th¬ nghe th¤y âm thanh cüa Ğoàn Dñ. >"		
 
 x200003_g_MoneyJZBonus=110
 x200003_g_exp=5600
 
-x200003_g_Custom	= { {id="ÒÑ»¤ËÍÖÓÁé",num=1} }
+x200003_g_Custom	= { {id="Ğã hµ t¯ng Chung Linh",num=1} }
 
 
 --MisDescEnd

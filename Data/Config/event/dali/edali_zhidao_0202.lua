@@ -1,53 +1,53 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x210202_g_ScriptId = 210202
 
 x210202_g_Position_X=110.0841
 x210202_g_Position_Z=158.7671
 x210202_g_SceneID=2
-x210202_g_AccomplishNPC_Name="¶Å×ÓÌÚ"
+x210202_g_AccomplishNPC_Name="Ğ² TØ Ğ¢ng"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x210202_g_MissionId = 442
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x210202_g_MissionIdPre = 441
 
---Ä¿±êNPC
-x210202_g_Name	="¶Å×ÓÌÚ"
+--møc tiêu NPC
+x210202_g_Name	="Ğ² TØ Ğ¢ng"
 
---ÈÎÎñµÀ¾ß±àºÅ
+--nhi®m vø ğÕo cø ğánh s¯
 x210202_g_ItemId = 30101001
 
---ÈÎÎñµÀ¾ßĞèÇóÊıÁ¿
+--nhi®m vø ğÕo cø nhu c¥u s¯ lßşng
 x210202_g_ItemNeedNum = 1
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x210202_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x210202_g_MissionLevel = 1
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x210202_g_IfMissionElite = 0
 
---ÏÂÃæ¼¸ÏîÊÇ¶¯Ì¬ÏÔÊ¾µÄÄÚÈİ£¬ÓÃÓÚÔÚÈÎÎñÁĞ±íÖĞ¶¯Ì¬ÏÔÊ¾ÈÎÎñÇé¿ö**********************
+--phía dß¾i Ki HÕng Th¸ ğµng thái bi¬u hi®n Ğích nµi dung, dùng cho TÕi nhi®m vø Li®t Bi¬u Trung ğµng thái bi¬u hi®n nhi®m vø tình hu¯ng**********************
 
---ÒÔÉÏÊÇ¶¯Ì¬**************************************************************
+--ğã ngoài Th¸ ğµng thái**************************************************************
 
---ÈÎÎñĞèÒªµÃµ½µÄÎïÆ·
-x210202_g_DemandItem={{id=30101001,num=1}}		--±äÁ¿µÚ1Î»
-x210202_g_IsMissionOkFail = 1		--±äÁ¿µÄµÚ0Î»
+--nhi®m vø c¥n nh§n ğßşc Ğích v§t ph¦m
+x210202_g_DemandItem={{id=30101001,num=1}}		--???1?
+x210202_g_IsMissionOkFail = 1		--????0?
 
---ÈÎÎñÃû
-x210202_g_MissionName="µÚÒ»¸öÂøÍ·"
+--nhi®m vø Danh
+x210202_g_MissionName="Cái bánh bao thÑ nh¤t"
 x210202_g_MissionInfo_1="  #R"
 x210202_g_MissionInfo_2="#{event_dali_0004}"
 x210202_g_MissionTarget="#{xinshou_002}"
-x210202_g_MissionContinue="ÄãÒÑ¾­°Ñ#YÂøÍ·#W×ö³öÀ´ÁËÂğ£¿"
-x210202_g_MissionComplete="  àÅ£¬×öµÃ²»´í¡£¿´À´ÄãµÄÅëâ¿Ìì¸³¿É²»ÊÇÒ»°ãµÄ¸ß°¡¡£"
+x210202_g_MissionContinue="Các hÕ ğã làm #YbÁnh bao#W xong chßa?"
+x210202_g_MissionComplete="  Chà, xem ra tài nång n¤u nß¾ng cüa các hÕ không chï · mÑc bình thß¶ng"
 x210202_g_MoneyBonus=1
-x210202_g_SignPost = {x = 110, z = 159, tip = "¶Å×ÓÌÚ"}
+x210202_g_SignPost = {x = 110, z = 159, tip = "Ğ² TØ Ğ¢ng"}
 x210202_g_RadioItemBonus={{id=30304030 ,num=1},{id=30304031,num=1}}
 
 --MisDescEnd

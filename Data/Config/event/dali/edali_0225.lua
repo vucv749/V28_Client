@@ -1,41 +1,41 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x210225_g_ScriptId = 210225
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x210225_g_Position_X=214.8831
 x210225_g_Position_Z=283.8709
 x210225_g_SceneID=2
-x210225_g_AccomplishNPC_Name="¶ÎÑÓÇì"
+x210225_g_AccomplishNPC_Name="Ğoàn Diên Khánh"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x210225_g_MissionId = 705
 
---ÉÏÒ»¸öÈÎÎñµÄID
+--Thßşng mµt cái nhi®m vø Ğích ID
 x210225_g_MissionIdPre = 704
 
---Ä¿±êNPC
-x210225_g_Name	="¶ÎÑÓÇì"
+--møc tiêu NPC
+x210225_g_Name	="Ğoàn Diên Khánh"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x210225_g_MissionKind = 13
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x210225_g_MissionLevel = 9
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x210225_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x210225_g_MissionName="¶ÎÑÓÇì"
+--nhi®m vø Danh
+x210225_g_MissionName="Ğoàn Diên Khánh"
 x210225_g_MissionInfo="#{event_dali_0035}"
-x210225_g_MissionTarget="ÔÚ#G´óÀí³Ç¶«ÄÏ·½µÄÓñ¶ıÏï#WÕÒµ½#R¶ÎÑÓÇì#W#{_INFOAIM215,284,2,¶ÎÑÓÇì}¡£#b#G£¨ÇëÓÃ×ó¼üµã»÷´øÏÂ»®ÏßµÄ×ø±ê£¬°ïÖúÄúÕÒµ½¸ÃNPC£©#l"
+x210225_g_MissionTarget="TÕi#GTHành ĞÕi Lı phía ğông nam Ğích Ng÷c Nh¸ HÕng#Wtìm ğßşc#RĞoàn Duyên Khánh#W#{_INFOAIM215, 284, 2, Ğoàn Duyên Khánh}. #b#G(Thïnh Døng Tä Ki®n Ği¬m Kích b®nh bÕch ğ¾i phác h÷a Ğích t÷a ğµ, trş giúp Nhçm tìm ğßşc Cai NPC)#l"
 x210225_g_MissionComplete="#{event_dali_0036}"
 x210225_g_MoneyBonus=72
-x210225_g_SignPost = {x = 215, z = 284, tip = "¶ÎÑÓÇì"}
+x210225_g_SignPost = {x = 215, z = 284, tip = "Ğoàn Diên Khánh"}
 
-x210225_g_Custom	= { {id="ÒÑÕÒµ½¶ÎÑÓÇì",num=1} }
-x210225_g_IsMissionOkFail = 1		--±äÁ¿µÄµÚ0Î»
+x210225_g_Custom	= { {id="Ğã tìm ğßşc Ğoàn Diên Khánh",num=1} }
+x210225_g_IsMissionOkFail = 1		--????0?
 
 
 --MisDescEnd

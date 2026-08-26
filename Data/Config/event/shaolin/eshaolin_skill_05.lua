@@ -1,38 +1,38 @@
 --MisDescBegin
 
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x212144_g_ScriptId = 212144
 
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x212144_g_Position_X=217
 x212144_g_Position_Z=255
 x212144_g_SceneID=2
-x212144_g_AccomplishNPC_Name="ÍõÉØ"
+x212144_g_AccomplishNPC_Name="Vß½ng Thi«u"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x212144_g_MissionId = 966
 
---Ç°ĞøÈÎÎñ
+--Ti«n Tøc nhi®m vø
 x212144_g_PreMissionId = 965
 
---Ä¿±êNPC
-x212144_g_Name	="ÍõÉØ"
+--møc tiêu NPC
+x212144_g_Name	="Vß½ng Thi«u"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x212144_g_MissionKind = 20
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x212144_g_MissionLevel = 30
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x212144_g_IfMissionElite = 0
 
---ÈÎÎñÃû
-x212144_g_MissionName="Ãğ´Ë³¯Ê³"
+--nhi®m vø Danh
+x212144_g_MissionName="Di®t ThØ Tri«u Thñc"
 x212144_g_MissionInfo="#{Mis_shaolin_966}"
-x212144_g_MissionTarget="  °Ñ5¸ö½ğ±Ò½»¸ø´óÀí³ÇĞŞÎÄÌ¨#WµÄ#RÍõÉØ#W#{_INFOAIM217,255,2,ÍõÉØ}¡£"
-x212144_g_MissionContinue="  Äã¾ö¶¨ÒªÑ§Ï°¡°Ãğ´Ë³¯Ê³¡±ÁËÂğ£¿"
-x212144_g_MissionComplete="  ¿´ºÃÁË£¬ÕâÒ»ÕĞ¾Í´«¸øÄãÁË£¬ÒÔºóÒªºÃºÃÊ¹ÓÃ¡£"
+x212144_g_MissionTarget="  Mang 5 vàng ğªn Tu Vån Ğài · thành ĞÕi Lı#W Giao cho #RVß½ng Thi«u #W#{_INFOAIM217,255,2, Vß½ng Thi«u}."
+x212144_g_MissionContinue="  Các hÕ quyªt ğ¸nh mu¯n h÷c kÛ nång Di®t ThØ Tri«u Thñc không?"
+x212144_g_MissionComplete="  Nhìn kî ğây, chiêu này s¨ truy«n cho ngß½i, sau này phäi sØ døng cho t¯t nhé."
 
 x212144_g_MoneyBonus=1000
 x212144_g_exp=2000

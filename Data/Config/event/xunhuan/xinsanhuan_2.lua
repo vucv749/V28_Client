@@ -1,37 +1,37 @@
 --MisDescBegin
 
--- ½Å±¾ºÅ
+-- k¸ch bän g¯c Hào
 x050221_g_ScriptId = 050221
 
---½ÇÉ«»îÔ¾Öµ¸±±¾µÄindex
+--vai di­n sinh ğµng Tr¸ bän sao Ğích index
 x050221_g_activePointIndex = 10
 
--- ÈÎÎñºÅ
-x050221_g_MissionId = 1257					--1256 »Æ½ğÖ®Á´--1257 Ğş·ğÖé--1258 ÈÛÑÒÖ®µØ
+-- nhi®m vø Hào
+x050221_g_MissionId = 1257					--1256 ????--1257 ???--1258 ????
 
--- ÈÎÎñÄ¿±ê NPC
-x050221_g_Name = "Áõ¶Ü"
+-- nhi®m vø møc tiêu NPC
+x050221_g_Name = "Lßu My"
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x050221_g_MissionKind = 8
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x050221_g_MissionLevel = 10000
 
--- ÈÎÎñÎÄ±¾ÃèÊö
-x050221_g_MissionName = "Ğş·ğÖé"
-x050221_g_MissionInfo = "    "														-- ÈÎÎñÃèÊö
-x050221_g_MissionTarget = "    #{LLFBM_80918_2}"						-- ÈÎÎñÄ¿±ê
---x050221_g_ContinueInfo = "    ÄãÃÇ×¼±¸ºÃÁË¾ÍÇëÇ°È¥ÖñÁÖÏûÃğºìĞÜÍõ£¡"					-- Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
-x050221_g_SubmitInfo = "#{LLFB_80816_43}"										-- Ìá½»Ê±µÄ´ğ¸´
-x050221_g_MissionComplete = "#{LLFB_80902_2}"	--Íê³ÉÈÎÎñnpcËµµÄ»°
+-- nhi®m vø vån bän miêu tä
+x050221_g_MissionName = "Huy«n Ph§t Châu"
+x050221_g_MissionInfo = "    "														-- ????
+x050221_g_MissionTarget = "    #{LLFBM_80918_2}"						-- ????
+--x050221_g_ContinueInfo = " các ngß½i chu¦n b¸ t¯t Li­u xin m¶i tiªn ğªn Trúc Lâm tiêu di®t H°ng Hùng Vß½ng! " -- chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
+x050221_g_SubmitInfo = "#{LLFB_80816_43}"										-- ??????
+x050221_g_MissionComplete = "#{LLFB_80902_2}"	--????npc???
 
-x050221_g_IsMissionOkFail = 0														-- 0 ºÅË÷Òı£ºµ±Ç°ÈÎÎñÊÇ·ñÍê³É(0Î´Íê³É£»1Íê³É£»2Ê§°Ü)
-x050221_g_IsBossYaoWang = 1															-- 1 ºÅË÷Òı£ºÉ±bossºé¼¬ÑıÍõµÄÊıÁ¿
-x050221_g_IsFindGoods = 2																-- 2 ºÅË÷Òı£ºÊÇ·ñÕÒµ½Ğş·ğÖé
-x050221_g_Param_sceneid = 3															-- 3 ºÅË÷Òı£ºµ±Ç°ÈÎÎñÊı¾İµÄ3Î»ÖÃÉèÖÃÎª³¡¾°ID
+x050221_g_IsMissionOkFail = 0														-- 0 ???:????????(0???;1??;2??)
+x050221_g_IsBossYaoWang = 1															-- 1 ???:?boss???????
+x050221_g_IsFindGoods = 2																-- 2 ???:???????
+x050221_g_Param_sceneid = 3															-- 3 ???:???????3???????ID
 
-x050221_g_Custom	= { {id="ÒÑÉ±ËÀ£º#r  ºé¼¬ÑıÍõ",num=1},{id="ÒÑÕÒµ½£º#r  Ğş·ğÖé",num=1} }
+x050221_g_Custom	= { {id="Ğã ğánh bÕi: #r H°ng Cúc Yêu Vß½ng",num=1},{id="Ğã tìm th¤y: #r Huy«n Ph§t Châu",num=1} }
 
 
 --MisDescEnd

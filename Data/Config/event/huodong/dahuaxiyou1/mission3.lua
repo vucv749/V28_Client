@@ -1,41 +1,41 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x999117_g_ScriptId = 999117
 
---Íê³ÉÈÎÎñNPCÊôĞÔ Ë®Á±¶´£¨XXX£¬YYY£©ÖÁ×ğ±¦
+--hoàn thành nhi®m vø NPCthuµc tính Thüy Liêm Ğµng(XXX, YYY) chí tôn Bäo
 x999117_g_Position_X=156
 x999117_g_Position_Z=45
 x999117_g_SceneID=1320
-x999117_g_AccomplishNPC_Name="³ÁË¼µÄÖÁ×ğ±¦"
+x999117_g_AccomplishNPC_Name="Tr¥m tß Ğích chí tôn Bäo"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x999117_g_PreMissionId = 2305
 x999117_g_MissionId = 2306
 
---½ÓÈÎÎñNPC ´äÔÆÉ½£¨XXX£¬YYY£©Îò¿Õ²ĞÄî
-x999117_g_Name1	="Îò¿Õ²ĞÄî"
+--tiªp nh§n chÑc vø Vø NPC Thúy Vân S½n(XXX, YYY) Ngµ Không Tàn Ni®m
+x999117_g_Name1	="Ngµ Không Tàn Ni®m"
 x999117_g_SID1 = 1319
 x999117_g_Pos_X1 = 52
 x999117_g_Pos_Z1 = 188
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x999117_g_MissionKind = 69
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x999117_g_MissionLevel = 30 --10000
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x999117_g_IfMissionElite = 0
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x999117_g_MissionName="#{DHJDY_240521_81}"
 x999117_g_MissionTarget="#{DHJDY_240521_86}"
 x999117_g_IsMissionOkFail=0
-x999117_g_Custom = {{ id = "ÕÒµ½³ÁË¼µÄÖÁ×ğ±¦", num = 1}}
+x999117_g_Custom = {{ id = "Tìm ğßşc tr¥m tß Ğích chí tôn Bäo", num = 1}}
 x999117_g_ContinueInfo = ""
 x999117_g_MissionComplete = "#{DHJDY_240521_85}"
 
---x999117_g_MoneyJZBonus = 10000 --Ìæ´ú
---x999117_g_ExpBonus = 100000 --Ìæ´ú
+--x999117_g_MoneyJZBonus = 10000 --thay thª
+--x999117_g_ExpBonus = 100000 --thay thª
 
 --MisDescEnd

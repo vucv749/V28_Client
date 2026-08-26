@@ -1,31 +1,31 @@
 --MisDescBegin
---ĞÂ°æ±¾Òıµ¼ÈÎÎñÉè¼Æ
---½Å±¾ºÅ
+--Tân bän cû dçn ğß¶ng nhi®m vø thiªt kª
+--k¸ch bän g¯c Hào
 x998793_g_ScriptId = 998793
 
 x998793_g_Position_X=150
 x998793_g_Position_Z=208
 x998793_g_SceneID=1
-x998793_g_AccomplishNPC_Name="°ÙÏşÉú"
+x998793_g_AccomplishNPC_Name="Bách Hi¬u Sanh"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x998793_g_MissionId = 2269
 x998793_g_PreMissionId = 2268
 
---ÈÎÎñ¹éÀà
+--nhi®m vø phân loÕi
 x998793_g_MissionKind = 9
 
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x998793_g_MissionLevel = 50
 
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x998793_g_IfMissionElite = 0
 
---ÈÎÎñÃû
+--nhi®m vø Danh
 x998793_g_MissionName = "#{QEYD_240402_33}"
 x998793_g_MissionTarget = "#{QEYD_240402_34}"
 x998793_g_IsMissionOkFail = 0
-x998793_g_Custom = {{ id = "Â¼Èë½ø½×µñÎÆ¡¤ÉÏÆª", num = 1},{ id = "Â¼Èë½ø½×µñÎÆ¡¤ÏÂÆª", num = 1}}
+x998793_g_Custom = {{ id = "Løc Nh§p tiªn giai Ğiêu Vån·Thßşng Thiên", num = 1},{ id = "Løc Nh§p tiªn giai Ğiêu Vån·HÕ Thiên", num = 1}}
 x998793_g_ContinueInfo = "#{QEYD_240402_126}"
 x998793_g_MissionComplete = "#{QEYD_240402_128}"
 

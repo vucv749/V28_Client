@@ -1,73 +1,73 @@
 --MisDescBegin
---½Å±¾ºÅ
+--k¸ch bän g¯c Hào
 x808010_g_ScriptId	= 808010
---½ÓÊÜÈÎÎñNPCÊôĞÔ
+--nh§n nhi®m vø NPCthuµc tính
 x808010_g_Position_X=47.0185
 x808010_g_Position_Z=62.9575
 x808010_g_SceneID=0
-x808010_g_AccomplishNPC_Name="ÔÂÀÏ"
+x808010_g_AccomplishNPC_Name="Nguy®t Lão"
 
---ÈÎÎñºÅ
+--nhi®m vø Hào
 x808010_g_MissionId			= 1144
 
---ÈÎÎñÄ¿±ênpc
-x808010_g_Name 					= "ÔÂÀÏ"
---ÈÎÎñ¹éÀà
+--nhi®m vø møc tiêu Npc
+x808010_g_Name 					= "Nguy®t Lão"
+--nhi®m vø phân loÕi
 x808010_g_MissionKind			= 11
---ÈÎÎñµÈ¼¶
+--nhi®m vø c¤p b§c
 x808010_g_MissionLevel		= 10000
---ÊÇ·ñÊÇ¾«Ó¢ÈÎÎñ
+--hay không Th¸ tinh anh nhi®m vø
 x808010_g_IfMissionElite	= 0
---ÈÎÎñÊÇ·ñÒÑ¾­Íê³É
-x808010_g_IsMissionOkFail	= 0		--ÈÎÎñ²ÎÊıµÄµÚ0Î»
+--nhi®m vø hay không ğã hoàn thành
+x808010_g_IsMissionOkFail	= 0		--??????0?
 
---ÈÎÎñÎÄ±¾ÃèÊö
-x808010_g_MissionName			= "ÓÀºã×ê½ä"
---ÈÎÎñÃèÊö
+--nhi®m vø vån bän miêu tä
+x808010_g_MissionName			= "Vînh H¢ng Toàn Gi¾i"
+--nhi®m vø miêu tä
 x808010_g_MissionInfo			= ""
---ÈÎÎñÄ¿±ê
+--nhi®m vø møc tiêu
 x808010_g_MissionTarget		= "%f"
---Î´Íê³ÉÈÎÎñµÄnpc¶Ô»°
+--chßa xong Thành nhi®m vø Ğích Npc ğ¯i thoÕi
 x808010_g_ContinueInfo		= ""
---Íê³ÉÈÎÎñnpcËµµÄ»°
+--hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
 x808010_g_MissionComplete	= ""
 
 x808010_g_StrForePart = 4
 
---ÓÃÀ´±£´æ×Ö·û´®¸ñÊ½»¯µÄÊı¾İ
-x808010_g_FormatList = {"Çë·òÆŞÁ½ÈË×é¶ÓÇ°Íù%s£¬%s£¬%s£¬ÓÃÔÂÀÏ¸øµÄºùÂ«ÊÕ¼¯Ò»Ğ©ÏÉÁéÖ®Æø»ØÀ´¡£",}
+--dùng ğ¬ bäo t°n tñ phù Xuyªn cách thÑc Hoá Ğích s¯ li®u
+x808010_g_FormatList = {"Ğµi phu thê 2 ngß¶i hãy ğªn %s, %s, %s, thu th§p Tiên Linh Khí b¢ng H° Lô Nguy®t Lão r°i hãy mang v« ğây.",}
 
---×î´ó×ÊÖÊÊı
+--l¾n nh¤t tß ch¤t S±
 x808010_g_MaxZizhiType= 6
 
 x808010_g_StrList = {
-	"ÎŞÁ¿É½µÄ°×Ô³Ê¯Õó#{_INFOAIM53,264,6,}",
-	"½£¸óµÄ½£ÃÅµş´ä#{_INFOAIM130,135,7,}",
-	"¶Ø»ÍµÄå«º£Çó·ğ#{_INFOAIM260,260,8,}",
-	"¾µºşµÄÓñ´øÁÙ·ç#{_INFOAIM39,261,5,}",
-	"Ì«ºşµÄÎèé¿¸èÌ¨#{_INFOAIM160,252,4,}",
-	"áÔÉ½µÄ½­É½¶à½¿#{_INFOAIM275,85,3,}",
-	"Î÷ºşµÄÒ»Íû»¢ÅÜ#{_INFOAIM170,235,30,}",
-	"¶ıº£µÄ°Ùô´ÕùÁ÷#{_INFOAIM260,270,24,}",
-	"ÑãÄÏµÄ·ãÇÅÏ¦ÕÕ#{_INFOAIM150,250,18,}",
-	"ÁúÈªµÄ·ÉÁ÷Ö±ÏÂ#{_INFOAIM270,280,31,}",
-	"²ÔÉ½µÄËÆË®Äê»ª#{_INFOAIM258,73,25,}",
-	"Ñã±±µÄ±ÚÁ¢Ç§Øğ#{_INFOAIM283,179,19,}",
-	"ÎäÒÄµÄÑÌËø¶şÇÇ#{_INFOAIM54,182,32,}",
-	"Ê¯ÁÖµÄ·åÂÍÈë¾Û#{_INFOAIM195,53,26,}",
-	"²İÔ­µÄÀÇÍõÊ¯Õó#{_INFOAIM143,254,20,}",
-	"Ã·ÁëµÄÃ·Áë·ğ¹â#{_INFOAIM284,82,33,}",
-	"ÓñÏªµÄÇàÃ¼Èç¶¹#{_INFOAIM268,116,27,}",
-	"ÁÉÎ÷µÄ°½°üÏà»á#{_INFOAIM277,117,21,}",
-	"ÄÏº£µÄÌìÄÏÒ»Öù#{_INFOAIM61,225,34,}",
-	"»ÆÁú¸®µÄÌì³ØÑ©¾°#{_INFOAIM289,66,23,}",
+	"BÕch Viên ThÕch Tr§n · Vô Lßşng S½n#{_INFOAIM53,264,6,}",
+	"Kiªm Môn Ği®p Thúy · Kiªm Các#{_INFOAIM130,135,7,}",
+	"Hãn Häi C¥u Ph§t · Ğôn Hoàng #{_INFOAIM260,260,8,}",
+	"Ng÷c Ğ¾i Lâm Phong · Kính H° #{_INFOAIM39,261,5,}",
+	"Vû TÕ Ca Ğài · Thái H° #{_INFOAIM160,252,4,}",
+	"Giang S½n Ğa Ki«u · Tung S½n #{_INFOAIM275,85,3,}",
+	"Nh¤t V÷ng H± Bào · Tây H° #{_INFOAIM170,235,30,}",
+	"Bách Khä Tranh Lßu · Nhî Häi #{_INFOAIM260,270,24,}",
+	"Phong Ki«u T¸ch Chiªu · NhÕn Nam #{_INFOAIM150,250,18,}",
+	"Phi Lßu Trñc HÕ · Long Tuy«n #{_INFOAIM270,280,31,}",
+	"Tñ Thüy Niên Hoa · Thß½ng S½n #{_INFOAIM258,73,25,}",
+	"Bích L§p Thiên Nhçn · NhÕn B¡c #{_INFOAIM283,179,19,}",
+	"Yên Toä Nh¸ Ki«u · Võ Di #{_INFOAIM54,182,32,}",
+	"Phong Loan Nh§p Tø · ThÕch Lâm #{_INFOAIM195,53,26,}",
+	"Lang Vß½ng ThÕch Tr§n · Thäo Nguyên #{_INFOAIM143,254,20,}",
+	"Mai Lînh Ph§t Quang · Mai Lînh #{_INFOAIM284,82,33,}",
+	"Thanh My Nhß Ğ§u · Ng÷c Khê #{_INFOAIM268,116,27,}",
+	"NgÕo Bao Tß½ng Hµi · Liêu Tây #{_INFOAIM277,117,21,}",
+	"Thiên Nam Nh¤t Trø · Nam Vñc #{_INFOAIM61,225,34,}",
+	"Thiên Trì Tuyªt Cänh · Hoàng long Phü#{_INFOAIM289,66,23,}",
 }
 
 x808010_g_MaxRound	= 3
---¿ØÖÆ½Å±¾
+--kh¯ng chª k¸ch bän g¯c
 x808010_g_ControlScript		= 808010
 
---ÈÎÎñÍê³ÉÇé¿ö,ÄÚÈİ¶¯Ì¬Ë¢ĞÂ,·Ö±ğÕ¼ÓÃÈÎÎñ²ÎÊıµÄµÚ1Î»
-x808010_g_Custom	= { {id="ÒÑÊÕ¼¯ÏÉÁéÖ®Æø",num=3}}
+--nhi®m vø hoàn thành tình hu¯ng, nµi dung ğµng thái näy sinh cái m¾i, phân bi®t chiªm døng nhi®m vø tham s¯ Ğích Ğ® 1V¸
+x808010_g_Custom	= { {id="Ğã thu ğßşc Tiên Linh Khí",num=3}}
 
 --MisDescEnd
