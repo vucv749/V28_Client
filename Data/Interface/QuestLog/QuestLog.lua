@@ -280,10 +280,10 @@ function QuestLog_MissionOutlineClicked()
     --strNpcPos = "£¨"..PosX.."£¬"..PosY.."£©"
 
     if strScene and strScene ~= "" then
-			QuestLog_Desc:AddTextElement("Nhi®m vø ch², n½i Ð¸a:"..strScene.."  "..strNpcPos )
+			QuestLog_Desc:AddTextElement("V¸ trí: "..strScene.."  "..strNpcPos )
     end
-    QuestLog_Desc:AddTextElement("Nhi®m vø tuyên b¯ Nhân:"..strNpcName )
-    QuestLog_Desc:AddTextElement("Nhi®m vø c¤p b§c:"..tostring(MissionLevel) )
+    QuestLog_Desc:AddTextElement("NPC: "..strNpcName )
+    QuestLog_Desc:AddTextElement("C¤p: "..tostring(MissionLevel) )
 
 
 end
@@ -375,9 +375,9 @@ function QuestLog_UpdateListbox()
 		               end
 						if(Mission_Variable >0) then
 							if(Mission_Variable == 1) then
-								strOKFail = "Hoàn thành";
+								strOKFail = "Xong";
 							elseif(Mission_Variable == 2) then
-								strOKFail = "Thành công";
+								strOKFail = "Thua";
 							end
 						end
 
@@ -406,7 +406,7 @@ function QuestLog_UpdateListbox()
 						local nMissionTrackType = DataPool:GetPlayerMissionTrackType(i-1);
 						local nIsMissionTrackOpen = DataPool:IsMissionTrackOpen(i-1);
 						if (nIsMissionTrackOpen > 0 and nMissionTrackType > 0) then
-							Constitutes = {"   v" .. nMissionLevel .." " .. strInfo .. " " .. strOKFail,i-1,color,nMissionLevel}
+							Constitutes = {"   *" .. nMissionLevel .." " .. strInfo .. " " .. strOKFail,i-1,color,nMissionLevel}
 						else
 							Constitutes = {"     " .. nMissionLevel .." " .. strInfo .. " " .. strOKFail,i-1,color,nMissionLevel}
 						end
@@ -459,7 +459,7 @@ function QuestLog_UpdateListbox()
 	end
 
 	if(k<1) then
-		QuestLog_Listbox:AddItem("Không có gì nhi®m vø.",0);
+		QuestLog_Listbox:AddItem("Không có nhi®m vø",0);
 	end
 	QuestLog_Listbox : SetItemSelectByItemID(Current_Select);
 	QuestLog_Amount : SetText( k .. "/" .. nMissionNum);
@@ -568,7 +568,7 @@ end
 		strReplace = strReplace .. strDesc
 		strDesc = strReplace
 		QuestLog_TargetMission : SetText("#gFF0FA0" ..strInfo);
-		QuestLog_Desc:AddTextElement("#YnHi®m vø møc tiêu: #W")
+		QuestLog_Desc:AddTextElement("#GMøc tiêu: #W")
 		QuestLog_Desc:AddTextElement("" .. strDesc);
 		-- PushDebugMessage("strDesc:"..strDesc)
 --		QuestLog_Desc:AddTextElement("" .. strReplace);
@@ -820,7 +820,7 @@ end
 			local IsDouble = DataPool:GetPlayerMission_DataRound(nDoubleExp);
 
 			if IsDouble > 0 then
-				DoubleExp_Text = "#BÐA Bµi thß·ng cho"
+				DoubleExp_Text = "#B Thß·ng nhi«u l¥n"
 				QuestLog_Desc:AddTextElement(DoubleExp_Text);
 			end
 		end
@@ -860,34 +860,34 @@ end
 					nHour = math.floor(nTotalTime/60000/60)
 					nMinute = math.floor((math.mod(nTotalTime,60000*60))/60000)
 					nSecond = math.floor((math.mod(nTotalTime,60000))/1000)
-					strTotalTime = nHour .. "Gi¶"..nMinute.."Phút"..nSecond.."Sao"
+					strTotalTime = nHour .. " gi¶"..nMinute.." phút "..nSecond.." giây"
 				elseif(nTotalTime >= 60000) then
 					nMinute = nTotalTime/60000;
-					strTotalTime = nMinute .. "Phút"
+					strTotalTime = nMinute .. " phút "
 					nSecond = (nTotalTime - nMinute * 60000)/1000;
-					strTotalTime = strTotalTime .. nSecond .."Sao"
+					strTotalTime = strTotalTime .. nSecond .." giây"
 				elseif(nTotalTime >= 1000) then
-					strTotalTime = nTotalTime/1000 .."Sao"
+					strTotalTime = nTotalTime/1000 .." giây"
 				end
 
         if(nRemainTime >= 60000*60) then
 					nHour = math.floor(nRemainTime/60000/60)
 					nMinute = math.floor((math.mod(nRemainTime,60000*60))/60000)
 					nSecond = math.floor((math.mod(nRemainTime,60000))/1000)
-					strRemainTime = nHour .. "Gi¶"..nMinute.."Phút"..nSecond.."Sao"
+					strRemainTime = nHour .. " gi¶"..nMinute.." phút "..nSecond.." giây"
 				elseif(nRemainTime >= 60000) then
 					nMinute = math.floor(nRemainTime/60000);
-					strRemainTime = nMinute .. "Phút"
+					strRemainTime = nMinute .. " phút "
 					nSecond = math.floor((nRemainTime - nMinute * 60000)/1000);
-					strRemainTime = strRemainTime .. nSecond .."Sao"
+					strRemainTime = strRemainTime .. nSecond .." giây"
 				elseif(nRemainTime >= 1000) then
-					strRemainTime = math.floor(nRemainTime/1000) .."Sao"
+					strRemainTime = math.floor(nRemainTime/1000) .." giây"
 				else
-					strRemainTime = "0Sao"
+					strRemainTime = "0 giây"
 				end
 
 --				QuestLog_Desc:AddTextElement("Ê£ÓàÊ±¼ä£º " .. strRemainTime .."/".. strTotalTime);
-				QuestLog_Desc:AddTextElement("Còn th×a th¶i gian:" .. strRemainTime );
+				QuestLog_Desc:AddTextElement("Còn:  " .. strRemainTime );
 --				AxTrace(0,0, "Ê±¼ä [" .. nSelIndex .."] = " .. strRemainTime .. " param_index = "..MissionParam_Index);
 			end
 		end
@@ -900,7 +900,7 @@ end
 			Mission_Variable = DataPool:GetPlayerMission_DataRound(nRound);
 
 			if(Mission_Variable >= 0) then
-				QuestLog_Desc:AddTextElement("#r#YnHi®m vø trß¾c m£t Hoàn S±: #W"..Mission_Variable);
+				QuestLog_Desc:AddTextElement("#r#YS¯ vòng hi®n tÕi: #W"..Mission_Variable);
 				bShowByMD = 1;
 			end
 		end
@@ -911,7 +911,7 @@ end
 			if (Mission_Variable == 229024) then
 				Mission_Variable = DataPool:GetPlayerMission_Variable(nSelIndex, 5);
 				if(Mission_Variable >= 0) then
-					QuestLog_Desc:AddTextElement("#r#YnHi®m vø trß¾c m£t Hoàn S±: #W"..Mission_Variable);
+					QuestLog_Desc:AddTextElement("#r#YS¯ vòng hi®n tÕi: #W"..Mission_Variable);
 				end
 			end
 		end
@@ -932,7 +932,7 @@ end
 		end
 		QuestLog_Desc:AddTextElement(" ");
 		if( DataPool:GetPlayerMission_Display(nSelIndex,5) <= 0 ) then
-			QuestLog_Desc:AddTextElement("#YhOàn thành tình hu¯ng: #W")
+			QuestLog_Desc:AddTextElement("#YTiªn ðµ: #W")
 		end
 
 	--´ó»°Î÷ÓÎµÚÒ»½×¶ÎÖ÷Ïß¾çÇé-ypl
@@ -1153,7 +1153,7 @@ end
 		local nDemandKillNum,Kill_Random_Type = DataPool:GetPlayerMissionDemandKill_Num(nSelIndex);
 		if( nDemandKillNum > 0 ) then
 --			QuestLog_Desc:AddTextElement(" ");
-			QuestLog_Desc:AddTextElement("Dî giªt chªt:");
+			QuestLog_Desc:AddTextElement("Ðã di®t: ");
 		end
 
 		for i=1, nDemandKillNum do
@@ -1164,7 +1164,7 @@ end
 			AxTrace(0, 0, "nNPCName:" .. nNPCName);
 			AxTrace(0, 0, "num:" .. nNum);
 
-			QuestLog_Desc:AddTextElement(nNPCName .. ":"..Mission_Variable.. " / " .. nNum);
+			QuestLog_Desc:AddTextElement(nNPCName .. " : "..Mission_Variable.. " / " .. nNum);
 			AxTrace(0,0, "NPC [" .. nSelIndex .."] =" ..MissionParam_Index );
 		end
 
@@ -1173,10 +1173,10 @@ end
 		if( nDemandNum > 0 ) then
 --			QuestLog_Desc:AddTextElement(" ");
 			if(Item_Random_Type == -100) then
-				QuestLog_Desc:AddTextElement("Dî ð® trình:");
+				QuestLog_Desc:AddTextElement("Ðã giao: ");
 				Item_Random_Type = 0
 			else
-				QuestLog_Desc:AddTextElement("Dî nh§n ðßþc:");
+				QuestLog_Desc:AddTextElement("Nh§n: ");
 			end
 		end
 
@@ -1204,7 +1204,7 @@ end
 			if Mission_Variable2 > 0 then
 				Mission_Variable = nNum
 			end
-			QuestLog_Desc:AddTextElement(szName .. ":" .. Mission_Variable .. " / " .. nNum);
+			QuestLog_Desc:AddTextElement(szName .. " : " .. Mission_Variable .. " / " .. nNum);
 		end
 
 -----------------------------------------------------------------------------------
@@ -1225,7 +1225,7 @@ end
 			if nNum == 0 then
 				QuestLog_Desc:AddTextElement(strCustom);
 			else
-				QuestLog_Desc:AddTextElement(strCustom .. ":".. Mission_Variable .. " / " .. nNum);
+				QuestLog_Desc:AddTextElement(strCustom .. " : ".. Mission_Variable .. " / " .. nNum);
 			end
 		end
 
@@ -1242,7 +1242,7 @@ end
 		if nNeedNum == 0 then
 			QuestLog_Desc:AddTextElement(strCustom);
 		else
-			QuestLog_Desc:AddTextElement(strCustom .. ":".. nCompleteNum .. " / " .. nNeedNum);
+			QuestLog_Desc:AddTextElement(strCustom .. " : ".. nCompleteNum .. " / " .. nNeedNum);
 		end
 	end
 ----------------------------------------------------------------------------------
@@ -1251,7 +1251,7 @@ end
 		local nBonusNum = DataPool:GetPlayerMissionBonus_Num();
 
 		if( nBonusNum > 0 ) then
-			QuestLog_Desc:AddTextElement("#YtHß·ng cho: #W");
+			QuestLog_Desc:AddTextElement("#GThß·ng: #W");
 		end
 		local nRadio = 1;
 		local nRand = 1;
@@ -1313,7 +1313,7 @@ end
 			elseif(strType == "itemrand") then
 				if (nRand == 1) then
 					nRand = 0;
-					QuestLog_Desc:AddTextElement("TuÏ C½ thß·ng cho v§t ph¦m:");
+					QuestLog_Desc:AddTextElement("Thß·ng ngçu nhiên: ");
 					local ActionID = DataPool:EnumPlayerMission_ItemAction(nItemID);
 					QuestLog_Desc:AddActionElement(ActionID, nNum, 0);
 				end
@@ -1324,7 +1324,7 @@ end
 				bBeingRadio = 1;
 				if (nRadio == 1) then
 					nRadio = 0;
-					QuestLog_Desc:AddTextElement("TÕi hÕ Li®t v§t ph¦m trúng tuy¬n TrÕch hÕng nh¤t làm thß·ng cho");
+					QuestLog_Desc:AddTextElement("Ch÷n ph¥n thß·ng");
 				end
 				AxTrace(0, 0, "nItemID:" .. nItemID);
 				local ActionID = DataPool:EnumPlayerMission_ItemAction(nItemID);
@@ -1430,13 +1430,13 @@ function QuestLog_TrackButtonState()
 	elseif (nCanTrack > 0 and MissionKind ~= 10) then
 		local nTrackOpen = DataPool:IsMissionTrackOpen(nSelIndex);
 		if (nTrackOpen > 0) then
-			QuestLog_Refuse:SetText("Hüy bö truy tung");
+			QuestLog_Refuse:SetText("Hüy theo dõi");
 		else
-			QuestLog_Refuse:SetText("B¡t ð¥u truy tung");
+			QuestLog_Refuse:SetText("Theo dõi");
 		end
 		QuestLog_Refuse:Enable();
 	else
-		QuestLog_Refuse:SetText("Không th¬ truy tung");
+		QuestLog_Refuse:SetText("Không th¬ theo");
 		QuestLog_Refuse:Disable();
 	end
 end
@@ -1539,12 +1539,12 @@ end
 
 
 function QuestLog_Complete_petsoul_per1(nMissionIndex)
-		local str = "Ðánh bÕi"
+		local str = "    Di®t"
 		local monstername = 
 		{
-			[49816] = "Tàn Thú u h°n",
+			[49816] = "Tàn Thú U H°n",
 			[49817] = "Tàn Thú Tà Phách",
-			[49818] = "Tàn Thú ºa ThÑc",
+			[49818] = "Tàn Thú Ác ThÑc",
 		}
 		
 		local index = DataPool:GetPlayerMission_Variable( nMissionIndex, 1 ) 
@@ -1560,7 +1560,7 @@ function QuestLog_Complete_petsoul_per1(nMissionIndex)
 end
 
 function QuestLog_Complete_petsoul_per2(nMissionIndex)
-	local str = "Nh§n ðßþc tr÷ng ðÕi tin tÑc:"
+	local str = "    Nh§n tin quan tr÷ng:"
 
 	
 	local index = DataPool:GetPlayerMission_Variable( nMissionIndex, 0 ) 
@@ -1581,15 +1581,15 @@ function QuestLog_GetXunBaoLeFanTianTarget( nMissionIndex )
 	{
 		-- Ë ÖÝ	ÂëÍ·£¨238£¬81£©¡¢ÎÄÃí£¨90£¬81£©¡¢Å·Ò±×Ó£¨266£¬138£©
 		[1] = {
-			[1] = {SceneID = 1, PosX = 238, PosZ = 81,	SceneName = "Tô Châu",	SubName = "Bªn tàu"},
-			[2] = {SceneID = 1, PosX = 90,	PosZ = 81,	SceneName = "Tô Châu",	SubName = "Vån miªu"},
+			[1] = {SceneID = 1, PosX = 238, PosZ = 81,	SceneName = "Tô Châu",	SubName = "Bªn Cäng"},
+			[2] = {SceneID = 1, PosX = 90,	PosZ = 81,	SceneName = "Tô Châu",	SubName = "Miªu Tñ"},
 			[3] = {SceneID = 1, PosX = 266, PosZ = 138,	SceneName = "Tô Châu",	SubName = "Âu Dã TØ"},
 		},	
 		-- ÂåÑô	ÎäÆ÷µê£¨209£¬154£©¡¢ÔÂÀÏ£¨48£¬62£©¡¢ïÚ¾Ö£¨84£¬118£©	
 		[2] = {	
-			[1] = {SceneID = 0, PosX = 209, PosZ = 154,	SceneName = "LÕc Dß½ng",	SubName = "Vû khí ðiªm"},
+			[1] = {SceneID = 0, PosX = 209, PosZ = 154,	SceneName = "LÕc Dß½ng",	SubName = "Ti®m Vû Khí"},
 			[2] = {SceneID = 0, PosX = 48,	PosZ = 62,	SceneName = "LÕc Dß½ng",	SubName = "Nguy®t Lão"},
-			[3] = {SceneID = 0, PosX = 84, 	PosZ = 118,	SceneName = "LÕc Dß½ng",	SubName = "Tiêu cøc"},
+			[3] = {SceneID = 0, PosX = 84, 	PosZ = 118,	SceneName = "LÕc Dß½ng",	SubName = "Tiêu Cøc"},
 		},	
 		-- ´óÀí	Íû²ÔÌ¨£¨240,56£©¡¢Îå»ªÌ³£¨160,169£©¡¢ÔÆÆ®Æ®£¨264,128£©	
 		[3] = {	
@@ -1634,17 +1634,17 @@ end
 function QuestLog_GetTarget_2017YXJCDM( nSelIndex )
 	local Lanterns_Info =
 	{
-		{LanterID = 1, 	LanternDataID = "LÕc Th¥n Mçu Ðan Ðång Lung", PosX = 175, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },
-		{LanterID = 2, 	LanternDataID = "Phong Hoa Tuyªt Nguy®t Ðång Lung", PosX = 171, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },
+		{LanterID = 1, 	LanternDataID = "Ðèn L°ng LÕc Th¥n Mçu Ð½n", PosX = 175, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },
+		{LanterID = 2, 	LanternDataID = "Tuyªt Nguy®t Ðång Lung", PosX = 171, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },
 		{LanterID = 3, 	LanternDataID = "Khúc Vi®n Phong Hà Ðång Lung", PosX = 171, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
-		{LanterID = 4, 	LanternDataID = "Vân Thê Trúc Kính Ðång Lung", PosX = 175, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
-		{LanterID = 5, 	LanternDataID = "Mai ‘ Xuân Täo Ðång Lung", PosX = 179, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
-		{LanterID = 6, 	LanternDataID = "Ði®n ng÷c QuÏnh Lâu Ðång Lung", PosX = 183, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
-		{LanterID = 7, LanternDataID = "Nß¾c chäy hoa ðào Ðång Lung", PosX = 187, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
-		{LanterID = 8, LanternDataID = "Tam Ðài Vân ThuÖ Ðång Lung", PosX = 191, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },	
-		{LanterID = 9, LanternDataID = "Quanh h° Tinh Vû Ðång Lung", PosX = 195, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },	
-		{LanterID = 10, LanternDataID = "Li­u Lãng Vån Oanh Ðång Lung", PosX = 195, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },	
-		{LanterID = 11, LanternDataID = "Hoa Cäng Quan Ngß Ðång Lung", PosX = 191, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },		
+		{LanterID = 4, 	LanternDataID = "Ðèn L°ng Vân Thê Trúc Kính", PosX = 175, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
+		{LanterID = 5, 	LanternDataID = "Ðèn L°ng Mai ? Xuân Täo", PosX = 179, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
+		{LanterID = 6, 	LanternDataID = "Ðèn L°ng Ng÷c Vû QuÏnh Lâu", PosX = 183, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
+		{LanterID = 7, LanternDataID = "Ðèn L°ng Lßu Thüy Ðào Hoa", PosX = 187, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
+		{LanterID = 8, LanternDataID = "Ðèn L°ng Tam Ðài Vân Thüy", PosX = 191, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },	
+		{LanterID = 9, LanternDataID = "Ðèn L°ng H° Tân Tinh Vû", PosX = 195, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },	
+		{LanterID = 10, LanternDataID = "Ðèn L°ng Li­u Lãng Vån Oanh", PosX = 195, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },	
+		{LanterID = 11, LanternDataID = "Ðèn L°ng Hoa Cäng Quan Ngß", PosX = 191, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },		
 	}
 	
 	local index = DataPool:GetPlayerMission_Variable( nSelIndex, 1 ) + 1
@@ -1672,17 +1672,17 @@ function QuestLog_GetTrack_2017YXJCDM( nSelIndex )
 
 	local Lanterns_Info =
 	{
-		{LanterID = 1, 	LanternDataID = "LÕc Th¥n Mçu Ðan Ðång Lung", PosX = 175, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },
-		{LanterID = 2, 	LanternDataID = "Phong Hoa Tuyªt Nguy®t Ðång Lung", PosX = 171, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },
+		{LanterID = 1, 	LanternDataID = "Ðèn L°ng LÕc Th¥n Mçu Ð½n", PosX = 175, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },
+		{LanterID = 2, 	LanternDataID = "Tuyªt Nguy®t Ðång Lung", PosX = 171, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },
 		{LanterID = 3, 	LanternDataID = "Khúc Vi®n Phong Hà Ðång Lung", PosX = 171, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
-		{LanterID = 4, 	LanternDataID = "Vân Thê Trúc Kính Ðång Lung", PosX = 175, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
-		{LanterID = 5, 	LanternDataID = "Mai ‘ Xuân Täo Ðång Lung", PosX = 179, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
-		{LanterID = 6, 	LanternDataID = "Ði®n ng÷c QuÏnh Lâu Ðång Lung", PosX = 183, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
-		{LanterID = 7, LanternDataID = "Nß¾c chäy hoa ðào Ðång Lung", PosX = 187, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
-		{LanterID = 8, LanternDataID = "Tam Ðài Vân ThuÖ Ðång Lung", PosX = 191, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },	
-		{LanterID = 9, LanternDataID = "Quanh h° Tinh Vû Ðång Lung", PosX = 195, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },	
-		{LanterID = 10, LanternDataID = "Li­u Lãng Vån Oanh Ðång Lung", PosX = 195, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },	
-		{LanterID = 11, LanternDataID = "Hoa Cäng Quan Ngß Ðång Lung", PosX = 191, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },	
+		{LanterID = 4, 	LanternDataID = "Ðèn L°ng Vân Thê Trúc Kính", PosX = 175, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
+		{LanterID = 5, 	LanternDataID = "Ðèn L°ng Mai ? Xuân Täo", PosX = 179, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
+		{LanterID = 6, 	LanternDataID = "Ðèn L°ng Ng÷c Vû QuÏnh Lâu", PosX = 183, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
+		{LanterID = 7, LanternDataID = "Ðèn L°ng Lßu Thüy Ðào Hoa", PosX = 187, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
+		{LanterID = 8, LanternDataID = "Ðèn L°ng Tam Ðài Vân Thüy", PosX = 191, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },	
+		{LanterID = 9, LanternDataID = "Ðèn L°ng H° Tân Tinh Vû", PosX = 195, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },	
+		{LanterID = 10, LanternDataID = "Ðèn L°ng Li­u Lãng Vån Oanh", PosX = 195, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },	
+		{LanterID = 11, LanternDataID = "Ðèn L°ng Hoa Cäng Quan Ngß", PosX = 191, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },	
 	}
 	
 	local index = DataPool:GetPlayerMission_Variable( nSelIndex, 1 ) + 1
@@ -3926,9 +3926,9 @@ function QuestLog_GetXiuLianMission4_FubenNameStr( nIndex )--??4--????npc
 end
 function QuestLog_GetXiuLianMission4_NameStr( nIndex )--??4-BOSS?? ????
 	local npcList = {		
-		[1] =	{		MonsterName = "Xích Ð°ng ti¬u t¯t", BossName = "Dã n² lñc thñc hi®n", 	},
-		[2] =	{		MonsterName = "Mì QuÖ Nhân", BossName = "Thân Ð°",  },	
-		[3] =	{		MonsterName = "Eo nhö Nam Dõng", BossName = "H°ng Th¤t Nß½ng",  },
+		[1] =	{		MonsterName = "Xích Ð°ng Ti¬u T¯t", BossName = "Dã Lñc Hành", 	},
+		[2] =	{		MonsterName = "Tß¾c Di®n QuÖ Nhân", BossName = "Thân Ð°",  },	
+		[3] =	{		MonsterName = "Tßþng Nam Eo Thon", BossName = "H°ng Th¤t Nß½ng",  },
 	}
 	local tNpc = npcList[nIndex]
 	if tNpc ~= nil then
@@ -3984,16 +3984,17 @@ function QuestLog_GetTrack_XiuLianMission4( nMissionIndex )
 end
 function QuestLog_GetXiuLianMission5_NameStr( nIndex )--??5--????npc??+?? ????
 	local npcList = {		
-		[0] = { MonsterName = "Thiªu Lâm tàn änh", NPCName = "#{XLRW_210725_76}", mpname="#{XLRW_210725_43}", },--??
-		[1] = { MonsterName = "Minh Giáo tàn änh", NPCName = "#{XLRW_210725_80}", mpname="#{XLRW_210725_38}", },--??
-		[2] = { MonsterName = "Cái Bang tàn änh", NPCName = "#{XLRW_210725_78}", mpname="#{XLRW_210725_39}", },--??
-		[3] = { MonsterName = "Võ Ðang tàn änh", NPCName = "#{XLRW_210725_82}", mpname="#{XLRW_210725_40}", },--??
-		[4] = { MonsterName = "Nga Mi tàn änh", NPCName = "#{XLRW_210725_88}", mpname="#{XLRW_210725_35}", },--??
-		[5] = { MonsterName = "Tinh Túc tàn änh", NPCName = "#{XLRW_210725_90}", mpname="#{XLRW_210725_41}", },--??
-		[6] = { MonsterName = "Thiên Long tàn änh", NPCName = "#{XLRW_210725_84}", mpname="#{XLRW_210725_42}", },--??
-		[7] = { MonsterName = "Thiên S½n tàn änh", NPCName = "#{XLRW_210725_92}", mpname="#{XLRW_210725_36}", },--??
-		[8] = { MonsterName = "Tiêu dao tàn änh", NPCName = "#{XLRW_210725_86}", mpname="#{XLRW_210725_37}", },--??
-		[10] = { MonsterName = "MÕn Ðà tàn änh", NPCName = "#{XLRW_210725_755}", mpname="#{XLRW_210725_741}", },--??
+		[0] = { MonsterName = "Thiªu Lâm Tàn Änh", NPCName = "#{XLRW_210725_76}", mpname="#{XLRW_210725_43}", },--ÉÙÁÖ
+		[1] = { MonsterName = "Minh Giáo Tàn Änh", NPCName = "#{XLRW_210725_80}", mpname="#{XLRW_210725_38}", },--Ã÷½Ì
+		[2] = { MonsterName = "Cái Bang Tàn Änh", NPCName = "#{XLRW_210725_78}", mpname="#{XLRW_210725_39}", },--Ø¤°ï
+		[3] = { MonsterName = "Võ Ðang Tàn Änh", NPCName = "#{XLRW_210725_82}", mpname="#{XLRW_210725_40}", },--Îäµ±
+		[4] = { MonsterName = "Nga Mi Tàn Änh", NPCName = "#{XLRW_210725_88}", mpname="#{XLRW_210725_35}", },--¶ëáÒ
+		[5] = { MonsterName = "Tinh Túc Tàn Änh", NPCName = "#{XLRW_210725_90}", mpname="#{XLRW_210725_41}", },--ÐÇËÞ
+		[6] = { MonsterName = "Thiên Long Tàn Änh", NPCName = "#{XLRW_210725_84}", mpname="#{XLRW_210725_42}", },--ÌìÁú
+		[7] = { MonsterName = "Thiên S½n Tàn Änh", NPCName = "#{XLRW_210725_92}", mpname="#{XLRW_210725_36}", },--ÌìÉ½
+		[8] = { MonsterName = "Tiêu Dao Tàn Änh", NPCName = "#{XLRW_210725_86}", mpname="#{XLRW_210725_37}", },--åÐÒ£
+		[10] = { MonsterName = "MÕn Ðà Tàn Änh", NPCName = "#{XLRW_210725_755}", mpname="#{XLRW_210725_741}", },--ÂüÍÓ
+		[11] = { MonsterName = "Ác Nhân C¯c Tàn Änh", NPCName = "#{XLRW_210725_793}", mpname="#{XLRW_210725_780}", },--¶ñÈË¹È
 	}
 	local tNpc = npcList[nIndex]
 	if tNpc ~= nil then
@@ -4047,7 +4048,7 @@ function QuestLog_GetXiuLianMission6_TargetNpcStr( menpaiid, nIndex )--??6--??np
 				[1] = { npcname = "Huy«n Ðµ", namestr = "#{XLRW_210725_347}", strlink = "#{XLRW_210725_549}"}, 
 				[2] = { npcname = "Huy«n T×", namestr = "#{XLRW_210725_348}", strlink = "#{XLRW_210725_550}"}, 
 				[3] = { npcname = "Huy«n T¸ch", namestr = "#{XLRW_210725_349}", strlink = "#{XLRW_210725_551}"}, 
-				[4] = { npcname = "Huy«n NÕn", namestr = "#{XLRW_210725_350}", strlink = "#{XLRW_210725_552}"}, 
+				[4] = { npcname = "Huy«n Nan", namestr = "#{XLRW_210725_350}", strlink = "#{XLRW_210725_552}"}, 
 				[5] = { npcname = "Huy«n Di®t", namestr = "#{XLRW_210725_352}", strlink = "#{XLRW_210725_554}"}, 
 				[6] = { npcname = "Huy«n Minh", namestr = "#{XLRW_210725_353}", strlink = "#{XLRW_210725_555}"}, 
 				},
@@ -4057,7 +4058,7 @@ function QuestLog_GetXiuLianMission6_TargetNpcStr( menpaiid, nIndex )--??6--??np
 				[3] = { npcname = "Phß½ng LÕp", namestr = "#{XLRW_210725_363}", strlink = "#{XLRW_210741_565}"}, 
 				[4] = { npcname = "Mã LÕp", namestr = "#{XLRW_210725_364}", strlink = "#{XLRW_210741_566}"}, 
 				[5] = { npcname = "Phß½ng Thiên Ð¸nh", namestr = "#{XLRW_210725_365}", strlink = "#{XLRW_210741_567}"}, 
-				[6] = { npcname = "L® Thiên Hñu", namestr = "#{XLRW_210725_366}", strlink = "#{XLRW_210741_568}"}, 
+				[6] = { npcname = "Lþi Thiên Hæu", namestr = "#{XLRW_210725_366}", strlink = "#{XLRW_210741_568}"}, 
 				},
 		[2] = {
 				[1] = { npcname = "H« Tam Kì", namestr = "#{XLRW_210725_354}", strlink = "#{XLRW_210733_556}"}, 
@@ -4097,7 +4098,7 @@ function QuestLog_GetXiuLianMission6_TargetNpcStr( menpaiid, nIndex )--??6--??np
 				[3] = { npcname = "Bän Tß¾ng", namestr = "#{XLRW_210725_377}", strlink = "#{XLRW_210757_579}"}, 
 				[4] = { npcname = "Bän Phàm", namestr = "#{XLRW_210725_378}", strlink = "#{XLRW_210757_580}"}, 
 				[5] = { npcname = "Phá Sân", namestr = "#{XLRW_210725_380}", strlink = "#{XLRW_210757_582}"}, 
-				[6] = { npcname = "Thành Nhß Lan", namestr = "#{XLRW_210725_381}", strlink = "#{XLRW_210757_583}"}, 
+				[6] = { npcname = "Th¸nh Nhß Lan", namestr = "#{XLRW_210725_381}", strlink = "#{XLRW_210757_583}"}, 
 				},
 		[7] = {
 				[1] = { npcname = "Ô Lão ÐÕi", namestr = "#{XLRW_210725_404}", strlink = "#{XLRW_210789_606}"}, 
@@ -4112,13 +4113,13 @@ function QuestLog_GetXiuLianMission6_TargetNpcStr( menpaiid, nIndex )--??6--??np
 				[2] = { npcname = "Khang Quäng Lång", namestr = "#{XLRW_210725_383}", strlink = "#{XLRW_210765_585}"}, 
 				[3] = { npcname = "Lý Khôi L²i", namestr = "#{XLRW_210725_384}", strlink = "#{XLRW_210765_586}"}, 
 				[4] = { npcname = "T¥n Quán", namestr = "#{XLRW_210725_385}", strlink = "#{XLRW_210765_587}"}, 
-				[5] = { npcname = "ThÕch Cam Lâm", namestr = "#{XLRW_210725_386}", strlink = "#{XLRW_210765_588}"}, 
+				[5] = { npcname = "ThÕch Cam Sß½ng", namestr = "#{XLRW_210725_386}", strlink = "#{XLRW_210765_588}"}, 
 				[6] = { npcname = "Phùng A Tam", namestr = "#{XLRW_210725_387}", strlink = "#{XLRW_210765_589}"}, 
 				},
 		[10] = {
 				[1] = { npcname = "Ðào Lînh", namestr = "#{XLRW_210725_768}", strlink = "#{XLRW_210725_769}"},
-				[2] = { npcname = "Vß½ng ThuÖ Phong", namestr = "#{XLRW_210725_758}", strlink = "#{XLRW_210725_759}"},
-				[3] = { npcname = "Tuyªt tr¡ng", namestr = "#{XLRW_210725_760}", strlink = "#{XLRW_210725_761}"},
+				[2] = { npcname = "Vß½ng Thüy Phong", namestr = "#{XLRW_210725_758}", strlink = "#{XLRW_210725_759}"},
+				[3] = { npcname = "BÕch Tuyªt", namestr = "#{XLRW_210725_760}", strlink = "#{XLRW_210725_761}"},
 				[4] = { npcname = "Vß½ng Ngæ Yên", namestr = "#{XLRW_210725_762}", strlink = "#{XLRW_210725_763}"},
 				[5] = { npcname = "Vß½ng Tinh Lãng", namestr = "#{XLRW_210725_764}", strlink = "#{XLRW_210725_765}"},
 				[6] = { npcname = "Mùa xuân", namestr = "#{XLRW_210725_766}", strlink = "#{XLRW_210725_767}"},

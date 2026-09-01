@@ -30,7 +30,7 @@ function QuitRelative_OnEvent(event)
 			this:Show();
 			QuitRelative_OK_Button:Hide();
 			QuitRelative_Cancel_Button:Hide();
-			QuitRelative_Text:SetText("Ðang · r¶i khöi trò ch½i. . .");
+			QuitRelative_Text:SetText("Ðang thoát...");
 			QuitRelativeSelectUpdateRect();
 			QuitRelative_Status=1;
 		elseif(arg0 == "AskReconnect") then
@@ -42,19 +42,19 @@ function QuitRelative_OnEvent(event)
 			QuitRelative_OK_Button:Enable();
 			QuitRelative_Cancel_Button:Show();
 			QuitRelative_Cancel_Button:Enable();
-			QuitRelative_Text:SetText("Ki-mô-nô Vø Khí Ðích liên tiªp B¸ ngån ra, hay không nªm thØ mµt l¥n næa liên tiªp?");
+			QuitRelative_Text:SetText("M¤t kªt n¯i v¾i máy chü, có kªt n¯i lÕi bình thß¶ng không?");
 			QuitRelativeSelectUpdateRect();
 			QuitRelative_Status=2;
 		elseif(arg0 == "EnterScene") then
 			if(this:IsVisible()) then
-				QuitRelative_Text:SetText("Liên tiªp thành công, ðang · mµt l¥n næa tiªn vào trß¶ng cänh. . .");
+				QuitRelative_Text:SetText("Kªt n¯i thành công, b¡t ð¥u vào trò ch½i...");
 				QuitRelative_Status=4;
 			end
 		elseif(arg0 == "ConnFailed") then
 			this:Show();
 			QuitRelative_OK_Button:Disable();
 			QuitRelative_Cancel_Button:Enable();
-			QuitRelative_Text:SetText("Liên tiªp th¤t bÕi, sai l¥m nguyên nhân: #r" .. arg1);
+			QuitRelative_Text:SetText("Kªt n¯i th¤t bÕi, l²i: #r" .. arg1);
 			QuitRelative_Status=5;
 		end
 		
@@ -68,7 +68,7 @@ function QuitRelative_OK_Clicked()
 		--½øÈë¶ÏÏßÖØÁ¬
 		QuitRelative_OK_Button:Hide();
 		QuitRelative_Cancel_Button:Enable();
-		QuitRelative_Text:SetText("Ðang · mµt l¥n næa liên tiªp phøc vø Khí. . .");
+		QuitRelative_Text:SetText("Ðang kªt n¯i máy chü...");
 		QuitRelativeSelectUpdateRect();
 		QuitRelative_Status=3;
 		EnterReconnect(true);
