@@ -1,0 +1,93 @@
+sampler2D texColor : register(s0);
+
+struct VS_INPUT
+{
+	float4 Position : POSITION0;
+	float3 Normal	: NORMAL0;
+	float2 Texcoord : TEXCOORD0;
+};
+
+struct VS_OUTPUT
+{
+	float4 Position : POSITION0;
+	float4 Color : COLOR0;
+	float2 Texcoord : TEXCOORD0;
+};
+
+float4 WaveGrass(float4 offset, float4 interactivePos, float4 vertexPos, float4 propertyParam)
+{	
+	//求交互点与顶点间的距离
+	float2 vectorDistance = vertexPos.xz - interactivePos.xz;
+	float distance = vectorDistance.x * vectorDistance.x + vectorDistance.y * vectorDistance.y;
+	distance = sqrt(distance);
+	//如果两点间的距离大于MAX_DISTANCE,则顶点不需要特殊处理
+	if( distance > propertyParam.x )
+	{
+		return offset;
+	}
+	else
+	{
+		float sin = vectorDistance.y / distance;
+		float cos = vectorDistance.x / distance;
+		float moveDistance = propertyParam.x - distance;
+		float interactiveOffsetX = moveDistance * cos * propertyParam.y;
+		float interactiveOffsetZ = moveDistance * sin * propertyParam.z;
+		offset.x += interactiveOffsetX;
+		offset.z += interactiveOffsetZ;
+		return offset;
+	}
+}
+
+VS_OUTPUT mainVS(VS_INPUT In,
+uniform float4x4 WorldViewProj,
+uniform float4x4 World,
+uniform float4x4 WorldView,
+uniform float4 offset,
+uniform float4 interactivePos,
+uniform float4 propertyParam,
+uniform float3 LightAmbient,
+uniform float3 LightDiffuse,
+uniform float3 LightDir,
+uniform float3 LightSpecular,
+uniform float  Shininess,
+uniform float3 MaterialAmbient,
+uniform float3 MaterialDiffuse,
+uniform float3 MaterialSpecular)
+{
+	VS_OUTPUT Out = (VS_OUTPUT)0;
+	//计算顶点动画
+	float4 factor = float4(1,1,1,1) - In.Position.wwww;
+	float4 vertexPosWorld = mul(World, float4(In.Position.xyz, 1.0f));
+	float4 waveOffset = WaveGrass(offset, interactivePos, vertexPosWorld, propertyParam);
+	In.Position = In.Position + factor * waveOffset;
+	Out.Position = mul(WorldViewProj, float4(In.Position.xyz, 1.0f));
+	//计算光照
+	//Ambient
+	float3 ambient = LightAmbient * MaterialAmbient;
+	//Diffuse
+	float4 normal = mul(WorldView, float4(In.Normal.xyz, 0));
+	normal = normalize(normal);
+	float3 lightDir = normalize(-LightDir);
+	float3 diffuse = MaterialDiffuse * LightDiffuse * abs(dot(normal.xyz, lightDir));
+	//specular
+	float3 specular;
+	float4 eyePosition = mul(WorldView, float4(In.Position.xyz, 1.0f));
+	float3 HalfDir = normalize(lightDir - eyePosition.xyz);
+	specular = pow(max(dot(normal, HalfDir), 0), Shininess) * LightSpecular * MaterialSpecular;
+	if(diffuse.r <= 0) specular = 0;
+	//emissive
+	float3 emissive = float3(0.2, 0.2, 0.2);
+  float3 finalColour = ambient + diffuse + specular + emissive;
+	Out.Color.xyz = finalColour;
+	Out.Color.w = 1;
+	Out.Texcoord = In.Texcoord;
+	return Out;
+}
+
+float4 mainPS(VS_OUTPUT In) : COLOR 
+{
+	float4 Color = tex2D(texColor, In.Texcoord);
+  float3 texColor = Color.rgb;
+  float3 finalColour = In.Color.rgb * texColor;
+  return float4(finalColour, Color.a);
+}
