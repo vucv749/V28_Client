@@ -70,13 +70,13 @@ function AcceptBox_OnEvent(event)
 
 	if ( event == "MSGBOX_ACCEPTDUEL" ) then
 	AxTrace( 0, 0, "AcceptBox_OnEvent MSGBOX_ACCEPTDUEL" )
-			AcceptBox_PageHeader_Name:SetText("#gFF0FA0quyªt ð¤u xác nh§n");
+			AcceptBox_PageHeader_Name:SetText("#gFF0FA0Xác nh§n quyªt ð¤u");
 	    local Name = tostring( arg0 )
 	    local GUID = tostring( arg1 )
 	    PVPFLAG.DuelName = Name
 	    PVPFLAG.DuelGUID = GUID
 	    g_FrameInfo = PVPFLAG.ACCEPTDUEL;	    
-	    local MsgText = "#c0000FF"..Name.."#W".."Hß¾ng Nhçm ðßa ra#cFF0000quyªt ð¤u#W, NHçm có ð°ng ý hay không? #rchú ý: TÕi quyªt ð¤u Trung tØ vong s¨ Hæu tr×ng phÕt."
+	    local MsgText = "#c0000FF"..Name.."#W".."GØi yêu c¥u #cFF0000quyªt ð¤u#W, ð°ng ý?#rChú ý: Khi quyªt ð¤u tr÷ng thß½ng s¨ b¸ tr×ng phÕt."
 	    AcceptBox_Text:SetText( MsgText )
 	    this:Show();		
 	end
