@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Scene formatVersion="0.1.1" name="ceshiyong">
+
+  <Author>Genva Xie</Author>
+
+  <Copyright>Sohu-inc</Copyright>
+
+  <Description>This is a template scene file for fairy editor</Description>
+
+  <Terrain filename="ceshiyong.Terrain"/>
+
+  <Object name="#FairyEnviroment" type="Enviroment">
+    <Property name="ambient" value="1 1 1"/>
+  </Object>
+
+  <Object name="#FairyMainLightOne" type="Light">
+    <Property name="type" value="directional"/>
+    <Property name="diffuse" value="0.6 0.6 0.6"/>
+    <Property name="specular" value="0.3 0.3 0.3"/>
+    <Property name="direction" value="-1 -1 -1"/>
+  </Object>
+
+  <Object name="#FairyMainLightTwo" type="Light">
+    <Property name="type" value="directional"/>
+    <Property name="diffuse" value="0.1 0.1 0.1"/>
+    <Property name="direction" value="1 -1 -1"/>
+  </Object>
+
+  <Object name="#FairySkyDome" type="SkyDome">
+    <Property name="material" value="CloudySky"/>
+  </Object>
+
+  <Object name="#FairySceneConfig" type="SceneConfig">
+    <Property name="SetCamDisCullDepth" value="5000"/>
+    <Property name="SetCamDisCullParam" value="14"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新大理/新大理当铺建筑.mesh"/>
+    <Property name="position" value="251.813 0 5773.09"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新大理/新大理城墙角楼.mesh"/>
+    <Property name="position" value="169.909 0 -5370.81"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新大理/新大理皇城大门角楼.mesh"/>
+    <Property name="position" value="211.127 0 185.674"/>
+  </Object>
+
+</Scene>

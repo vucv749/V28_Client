@@ -1,0 +1,720 @@
+material Terrain/OneLayerColorMap
+{
+    // fragment program, for compatible with other material
+
+    technique
+    {
+        pass
+        {        
+        		vertex_program_ref Terrain/OneLayerColormap_vs
+						{
+						}
+		        fragment_program_ref Terrain/OneLayerColorMap_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+                tex_coord_set 0
+            }
+            
+            texture_unit
+            {                        
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+        }
+    }
+    
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}
+
+material Terrain/OneLayerColorMapAlphaBlendUpper
+{
+	 // fragment program, for compatible with other material
+
+    technique
+    {
+        pass
+        {        
+        		vertex_program_ref Terrain/OneLayerColormap_vs
+						{
+						}
+		        fragment_program_ref Terrain/OneLayerColorMapAlphaBlendUpper_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+                tex_coord_set 0
+            }
+            
+            texture_unit
+            {                        
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+        }
+    }
+    
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}
+
+material Terrain/TwoLayerColorMap
+{
+    // fragment program for DirectX only, test on GeForce FX 5700LE, performance boost %5
+
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerColormap_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerColorMap_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+        }
+    }
+    
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}
+
+material Terrain/TwoLayerColorMapAlphaBlend
+{
+    // fragment program for DirectX only, test on GeForce FX 5700LE, performance boost %5
+
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerColormap_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerColorMapAlphaBlend_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+        }
+    }
+    
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}
+
+material Terrain/TwoLayerColorMapAlphaBlendUpper
+{
+    // fragment program for DirectX only, test on GeForce FX 5700LE, performance boost %5
+
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerColormap_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerColorMapAlphaBlendUpper_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+        }
+    }
+    
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}
+
+material Terrain/TwoLayerColorMapAlphaBlendBottom
+{
+    // fragment program for DirectX only, test on GeForce FX 5700LE, performance boost %5
+
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerColormap_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerColorMapAlphaBlendBottom_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+        }
+    }
+    
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}
+
+material Terrain/OneLayerLightmapColorMap
+{
+    // fragment program, never tested
+
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/OneLayerLightmapColormap_vs
+						{
+						}
+            fragment_program_ref Terrain/OneLayerLightmapColorMap_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <lightmap>
+                texture <lightmap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 2
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+        }
+    }
+    
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}
+
+material Terrain/OneLayerLightmapColorMapAlphaBlendUpper
+{
+    // fragment program, never tested
+
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/OneLayerLightmapColormap_vs
+						{
+						}
+            fragment_program_ref Terrain/OneLayerLightmapColorMapAlphaBlendUpper_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <lightmap>
+                texture <lightmap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 2
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+        }
+    }
+    
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}
+
+
+material Terrain/TwoLayerLightmapColorMap
+{
+    // fragment program, never tested
+
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerLightmapColormap_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerLightmapColorMap_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+
+            texture_unit
+            {
+                texture_alias <lightmap>
+                texture <lightmap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 2
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+        }
+    }
+    
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}
+
+material Terrain/TwoLayerLightmapColorMapAlphaBlend
+{
+    // fragment program, never tested
+
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerLightmapColormap_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerLightmapColorMapAlphaBlend_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+
+            texture_unit
+            {
+                texture_alias <lightmap>
+                texture <lightmap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 2
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+        }
+    }
+
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}
+
+material Terrain/TwoLayerLightmapColorMapAlphaBlendUpper
+{
+    // fragment program, never tested
+
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerLightmapColormap_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerLightmapColorMapAlphaBlendUpper_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+
+            texture_unit
+            {
+                texture_alias <lightmap>
+                texture <lightmap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 2
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+        }
+    }
+
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}
+
+material Terrain/TwoLayerLightmapColorMapAlphaBlendBottom
+{
+    // fragment program, never tested
+
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerLightmapColormap_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerLightmapColorMapAlphaBlendBottom_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+
+            texture_unit
+            {
+                texture_alias <lightmap>
+                texture <lightmap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 2
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+        }
+    }
+    
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}

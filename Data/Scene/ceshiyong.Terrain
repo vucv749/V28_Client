@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Terrain name="ceshiyong" tileSize="32" xsize="256" zsize="256">
+
+  <scale x="100" y="100" z="100"/>
+
+  <heightmap filename="ceshiyong.Heightmap" type="standard"/>
+
+  <gridInfo filename="ceshiyong.GridInfo" type="standard"/>
+
+  <textures>
+    <texture filename="新大理/新大理方砖.tga" type="image"/>
+    <texture filename="新大理/新大理拈花寺01.tga" type="image"/>
+  </textures>
+
+  <pixmaps>
+    <pixmap bottom="0.25" left="0" right="0.25" textureId="0" top="0"/>
+    <pixmap bottom="0.5" left="0" right="0.25" textureId="0" top="0.25"/>
+    <pixmap bottom="0.25" left="0.25" right="0.5" textureId="0" top="0"/>
+    <pixmap bottom="0.5" left="0.25" right="0.5" textureId="0" top="0.25"/>
+    <pixmap bottom="0.25" left="0" right="0.25" textureId="1" top="0"/>
+    <pixmap bottom="0.5" left="0" right="0.25" textureId="1" top="0.25"/>
+    <pixmap bottom="0.5" left="0.25" right="0.5" textureId="1" top="0.25"/>
+  </pixmaps>
+
+  <materials>
+    <template material="Terrain/OneLayer" name="OneLayer"/>
+    <template material="Terrain/OneLayerLightmap" name="OneLayerLightmap"/>
+    <template material="Terrain/TwoLayer" name="TwoLayer"/>
+    <template material="Terrain/TwoLayerLightmap" name="TwoLayerLightmap"/>
+    <fog_replacement exp="Terrain/OneLayer_ps%fog_exp" exp2="Terrain/OneLayer_ps%fog_exp2" linear="Terrain/OneLayer_ps%fog_linear" none="Terrain/OneLayer_ps"/>
+    <fog_replacement exp="Terrain/TwoLayer_ps%fog_exp" exp2="Terrain/TwoLayer_ps%fog_exp2" linear="Terrain/TwoLayer_ps%fog_linear" none="Terrain/TwoLayer_ps"/>
+    <fog_replacement exp="Terrain/OneLayerLightmap_ps%fog_exp" exp2="Terrain/OneLayerLightmap_ps%fog_exp2" linear="Terrain/OneLayerLightmap_ps%fog_linear" none="Terrain/OneLayerLightmap_ps"/>
+    <fog_replacement exp="Terrain/TwoLayerLightmap_ps%fog_exp" exp2="Terrain/TwoLayerLightmap_ps%fog_exp2" linear="Terrain/TwoLayerLightmap_ps%fog_linear" none="Terrain/TwoLayerLightmap_ps"/>
+  </materials>
+
+</Terrain>

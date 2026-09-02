@@ -1,0 +1,105 @@
+<EnScene version="1.0">
+    <EnSky>
+        <SkyDome>
+            <texture>DKYH_color.tga</texture>
+            <hight>-1168</hight>
+            <mieAmount>0.01</mieAmount>
+            <vertexHeightEffect>1</vertexHeightEffect>
+            <sunHeightEffect>1</sunHeightEffect>
+            <power>1</power>
+        </SkyDome>
+        <SkyClouds>
+            <SkyCloudsLayer>
+                <name>xin_zhengding_top001</name>
+                <layer>7</layer>
+                <turnoverMesh>false</turnoverMesh>
+                <skyCloudHeight>89</skyCloudHeight>
+                <meshname>enskycloud.mesh</meshname>
+                <texturename>xin_zhengding_top001.png</texturename>
+                <rotangle>0</rotangle>
+                <textureTile>5 5 0 0</textureTile>
+                <scatteringStrength>0.12</scatteringStrength>
+                <scatteringPower>12.95</scatteringPower>
+                <rimStrength>0.12</rimStrength>
+                <rimPower>4.57</rimPower>
+                <rimDetectPower>3</rimDetectPower>
+                <rimDetectWidth>0.12</rimDetectWidth>
+                <TimeNodesInfo>
+                    <TimeNode time="0" fog="-0.94" alpha="0.14" cloudspeed="0.3" ambientBlend="0" />
+                </TimeNodesInfo>
+            </SkyCloudsLayer>
+        </SkyClouds>
+        <SkyRingClouds>
+            <RingCloudsLayer>
+                <name>CWMD_beijing_yun01</name>
+                <layer>14</layer>
+                <meshname>ringcloud.mesh</meshname>
+                <turnoverMesh>false</turnoverMesh>
+                <texturename>CWMD_beijing_yun01.png</texturename>
+                <CloudHeight>-28</CloudHeight>
+                <CloudScale>1.7</CloudScale>
+                <TextureRepeat>3</TextureRepeat>
+                <CloudOffset>251</CloudOffset>
+                <parallax>0.005</parallax>
+                <scatteringStrength>0.12</scatteringStrength>
+                <scatteringPower>1</scatteringPower>
+                <rimStrength>0.38</rimStrength>
+                <rimPower>4.57</rimPower>
+                <rimDetectPower>3</rimDetectPower>
+                <rimDetectWidth>0.12</rimDetectWidth>
+                <TimeNodesInfo>
+                    <TimeNode time="0" fogblend="-0.7" ambientBlend="0.89" alpha="0.39" rollspeed="0" verticalSpeed="0" fadeRange="0.27" />
+                </TimeNodesInfo>
+            </RingCloudsLayer>
+            <RingCloudsLayer>
+                <name>gc_qyw_jinyun</name>
+                <layer>16</layer>
+                <meshname>ringcloud.mesh</meshname>
+                <turnoverMesh>false</turnoverMesh>
+                <texturename>gc_qyw_jinyun.png</texturename>
+                <CloudHeight>7</CloudHeight>
+                <CloudScale>1</CloudScale>
+                <TextureRepeat>7</TextureRepeat>
+                <CloudOffset>360</CloudOffset>
+                <parallax>0.005</parallax>
+                <scatteringStrength>0.12</scatteringStrength>
+                <scatteringPower>1</scatteringPower>
+                <rimStrength>0.38</rimStrength>
+                <rimPower>4.57</rimPower>
+                <rimDetectPower>3</rimDetectPower>
+                <rimDetectWidth>0.12</rimDetectWidth>
+                <TimeNodesInfo>
+                    <TimeNode time="0" fogblend="1" ambientBlend="0.05" alpha="0.66" rollspeed="-0.7" verticalSpeed="0" fadeRange="0.51" />
+                </TimeNodesInfo>
+            </RingCloudsLayer>
+            <RingCloudsLayer>
+                <name>guigu_xingkong</name>
+                <layer>11</layer>
+                <meshname>ringcloud.mesh</meshname>
+                <turnoverMesh>false</turnoverMesh>
+                <texturename>guigu_xingkong.jpg</texturename>
+                <CloudHeight>55</CloudHeight>
+                <CloudScale>2.3</CloudScale>
+                <TextureRepeat>7</TextureRepeat>
+                <CloudOffset>0</CloudOffset>
+                <parallax>0.005</parallax>
+                <scatteringStrength>0.12</scatteringStrength>
+                <scatteringPower>1</scatteringPower>
+                <rimStrength>0.38</rimStrength>
+                <rimPower>4.57</rimPower>
+                <rimDetectPower>3</rimDetectPower>
+                <rimDetectWidth>0.12</rimDetectWidth>
+                <TimeNodesInfo>
+                    <TimeNode time="0" fogblend="-0.08" ambientBlend="1" alpha="1" rollspeed="0" verticalSpeed="0" fadeRange="0.34" />
+                </TimeNodesInfo>
+            </RingCloudsLayer>
+        </SkyRingClouds>
+        <Star Enable="false" StarCount="2000" Radius="10000" Intensity="1" Size="10" FlickerSpeed="0.2" StartColour="0.5 0.5 0.5 0.5" EndColour="1 1 1 1" starfix="false" />
+        <Moon Enable="true" moon_tex_name="png_moon_01.dds" scale="5" moonOrient="210" moonAngle="12" moonUpTime="8.28435" moonDownTime="8.52755" moonfix="true" />
+        <Sun Enable="false" sun_tex_name="sun.dds" useSunFlare="true" sunflare_tex_name="fx_flare_trees.dds" scale="10" sunOrient="0" sunAngle="50" sunUpTime="6" sunDownTime="18" intensityStep="0.1" sunfix="false" lensFlare_settings_name="LensFlare.lensflare" useLensFlare="false" />
+        <Ocean Enable="false" OceanVisible="0" />
+        <LightAndFog>
+            <EnvKey time="0" ambient="0.576471 0.513726 0.501961" pbr_ambient="0.5 0.5 0.5" shadow_strength="1" pbr_shadow_strength="1" fog="0.576471 0.517647 0.505882" fog_near_distance="0" fog_far_distance="0" light_one="0.54902 0.666667 0.74902" light_one_specular="0.0431373 0.0666667 0.101961" light_one_direction="0 0 0" light_one_intensity="1" light_two="0.129412 0.129412 0.258824" light_two_specular="0.176471 0.219608 0.192157" light_two_direction="0 0 0" light_two_intensity="1" warm_color="0 0 0" cold_color="0 0 0" enhance_constrast="0 0 0" overlay_image="0 0 0" radial_blur="0 0" light_specular_intensity="0" actor_light_one="0.615686 0.576471 0.94902" actor_light_one_intensity="1" actor_light_two="0.2 0.247059 0.529412" actor_light_two_intensity="1" actor_light_ambient="0.109804 0.34902 0.411765" selectactor_light="0.5 0.5 0.5" height_fog_enabled="false" height_fog_param="0 0 0 0|0 0 0 0|0|0|0|0|0|0|0|0" skyDomeAmbientColor="1 1 1" skyDomeAmbientColorStrength="1" />
+        </LightAndFog>
+    </EnSky>
+</EnScene>

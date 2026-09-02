@@ -1,0 +1,84 @@
+<EnScene version="1.0">
+    <EnSky>
+        <SkyDome>
+            <texture>HJ_Normal_qing001_top002.dds</texture>
+            <hight>-1141</hight>
+            <mieAmount>0.01</mieAmount>
+            <vertexHeightEffect>1</vertexHeightEffect>
+            <sunHeightEffect>1</sunHeightEffect>
+            <power>1</power>
+        </SkyDome>
+        <SkyClouds>
+            <SkyCloudsLayer>
+                <name>top01</name>
+                <layer>0</layer>
+                <turnoverMesh>true</turnoverMesh>
+                <skyCloudHeight>-300</skyCloudHeight>
+                <meshname>enskycloud.mesh</meshname>
+                <texturename>taoyuanzhiyi_down001.png</texturename>
+                <rotangle>-3.08923</rotangle>
+                <textureTile>0 0 0 0</textureTile>
+                <scatteringStrength>0.12</scatteringStrength>
+                <scatteringPower>12.95</scatteringPower>
+                <rimStrength>0.12</rimStrength>
+                <rimPower>4.57</rimPower>
+                <rimDetectPower>3</rimDetectPower>
+                <rimDetectWidth>0.12</rimDetectWidth>
+                <TimeNodesInfo>
+                    <TimeNode time="0" fog="0.08" alpha="1" cloudspeed="0.1" ambientBlend="0" />
+                </TimeNodesInfo>
+            </SkyCloudsLayer>
+        </SkyClouds>
+        <SkyRingClouds>
+            <RingCloudsLayer>
+                <name>beijingyun</name>
+                <layer>0</layer>
+                <meshname>ringcloud.mesh</meshname>
+                <turnoverMesh>false</turnoverMesh>
+                <texturename>宋辽大战-云2.png</texturename>
+                <CloudHeight>-44</CloudHeight>
+                <CloudScale>2.4</CloudScale>
+                <TextureRepeat>3</TextureRepeat>
+                <CloudOffset>195</CloudOffset>
+                <parallax>0.005</parallax>
+                <scatteringStrength>0.12</scatteringStrength>
+                <scatteringPower>1</scatteringPower>
+                <rimStrength>0.38</rimStrength>
+                <rimPower>4.57</rimPower>
+                <rimDetectPower>3</rimDetectPower>
+                <rimDetectWidth>0.12</rimDetectWidth>
+                <TimeNodesInfo>
+                    <TimeNode time="0" fogblend="-0.76" ambientBlend="0.36" alpha="0.36" rollspeed="0" verticalSpeed="0" fadeRange="0" />
+                </TimeNodesInfo>
+            </RingCloudsLayer>
+            <RingCloudsLayer>
+                <name>qianjjingyun</name>
+                <layer>20</layer>
+                <meshname>ringcloud.mesh</meshname>
+                <turnoverMesh>false</turnoverMesh>
+                <texturename>宋辽大战-远山.png</texturename>
+                <CloudHeight>-49</CloudHeight>
+                <CloudScale>1.1</CloudScale>
+                <TextureRepeat>5</TextureRepeat>
+                <CloudOffset>360</CloudOffset>
+                <parallax>0.005</parallax>
+                <scatteringStrength>0.12</scatteringStrength>
+                <scatteringPower>1</scatteringPower>
+                <rimStrength>0.38</rimStrength>
+                <rimPower>4.57</rimPower>
+                <rimDetectPower>3</rimDetectPower>
+                <rimDetectWidth>0.12</rimDetectWidth>
+                <TimeNodesInfo>
+                    <TimeNode time="0" fogblend="-0.32" ambientBlend="0.3" alpha="1" rollspeed="0" verticalSpeed="0" fadeRange="0.11" />
+                </TimeNodesInfo>
+            </RingCloudsLayer>
+        </SkyRingClouds>
+        <Star Enable="false" StarCount="2000" Radius="10000" Intensity="1" Size="10" FlickerSpeed="0.2" StartColour="0.5 0.5 0.5 0.5" EndColour="1 1 1 1" starfix="false" />
+        <Moon Enable="false" moon_tex_name="png_moon_03.dds" scale="5" moonOrient="0" moonAngle="30" moonUpTime="18" moonDownTime="6" moonfix="false" />
+        <Sun Enable="false" sun_tex_name="sun.dds" useSunFlare="true" sunflare_tex_name="fx_flare_trees.dds" scale="10" sunOrient="0" sunAngle="50" sunUpTime="6" sunDownTime="18" intensityStep="0.1" sunfix="false" />
+        <Ocean Enable="false" OceanVisible="0" />
+        <LightAndFog>
+            <EnvKey time="0" ambient="0.403922 0.592157 0.866667" pbr_ambient="0.5 0.5 0.5" shadow_strength="1" pbr_shadow_strength="1" fog="0.447059 0.619608 0.87451" fog_near_distance="10000" fog_far_distance="22000" light_one="0.666667 0.447059 0.133333" light_one_specular="0.1372 0.26068 0.49" light_one_direction="0 0 0" light_one_intensity="1" light_two="0.54 0.292131 0.185902" light_two_specular="0.192157 0.211765 0.439216" light_two_direction="0 0 0" light_two_intensity="1" warm_color="0 0 0" cold_color="0 0 0" enhance_constrast="0 0 0" overlay_image="0 0 0" radial_blur="0 0" light_specular_intensity="0" actor_light_one="0.94902 0.756863 0.482353" actor_light_one_intensity="1" actor_light_two="0.203922 0.156863 0.647059" actor_light_two_intensity="1" actor_light_ambient="0.537255 0.67451 0.756863" selectactor_light="0.5 0.5 0.5" />
+        </LightAndFog>
+    </EnSky>
+</EnScene>

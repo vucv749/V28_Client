@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Scene formatVersion="0.1.1" name="city0">
+
+  <Terrain filename="city0.Terrain"/>
+
+  <SkySphere enabled="true" filename="city0.skysphere" objectname="#FairySkySphere"/>
+
+  <Object name="#FairyEnviroment" type="Enviroment">
+    <Property name="ambient" value="0.192157 0.301961 0.4"/>
+    <Property name="background" value="0.313726 0.360784 0.380392"/>
+    <Property name="fog.mode" value="linear"/>
+    <Property name="fog.colour" value="0.282353 0.337255 0.356863"/>
+    <Property name="fog.linear start" value="2500"/>
+    <Property name="fog.linear end" value="8000"/>
+  </Object>
+
+  <Object name="#FairyMainLightOne" type="Light">
+    <Property name="type" value="directional"/>
+    <Property name="diffuse" value="0.584314 0.639216 0.466667"/>
+    <Property name="specular" value="0.337255 0.321569 0.34902"/>
+    <Property name="direction" value="-1 -1 -1"/>
+  </Object>
+
+  <Object name="#FairyMainLightTwo" type="Light">
+    <Property name="type" value="directional"/>
+    <Property name="diffuse" value="0.121569 0.254902 0.686275"/>
+    <Property name="direction" value="1 -1 -1"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0物品/饭桌.mesh"/>
+    <Property name="position" value="-211.501 0 -1911.62"/>
+  </Object>
+
+  <Object name="#FairySkySphere" type="SkySphere">
+    <Property name="enabled" value="true"/>
+  </Object>
+
+</Scene>

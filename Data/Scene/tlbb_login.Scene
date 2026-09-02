@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Scene formatVersion="0.1.1" name="tlbb_login">
+
+  <Terrain filename="tlbb_login.Terrain"/>
+
+  <Object name="#FairyEnviroment" type="Enviroment"/>
+
+  <Object name="#FairyMainLightOne" type="Light">
+    <Property name="type" value="directional"/>
+    <Property name="specular" value="0.3 0.3 0.3"/>
+    <Property name="direction" value="-1 -1 -1"/>
+  </Object>
+
+  <Object name="#FairyMainLightTwo" type="Light">
+    <Property name="type" value="directional"/>
+    <Property name="diffuse" value="0.1 0.1 0.1"/>
+    <Property name="direction" value="1 -1 -1"/>
+  </Object>
+
+  <Object name="#FairySkyDome" type="SkyDome">
+    <Property name="material" value="CloudySky"/>
+  </Object>
+
+  <Object name="#FairySceneConfig" type="SceneConfig">
+    <Property name="SetCamDisCullDepth" value="5000"/>
+    <Property name="SetCamDisCullParam" value="14"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2登陆界面/tlbb_login.mesh"/>
+    <Property name="position" value="297 7.00012 194.161"/>
+    <Property name="orientation" value="0.706996 0.707099 -0.00311521 0.0031011"/>
+    <Property name="scale" value="2.587 3.2 3.45"/>
+  </Object>
+
+</Scene>

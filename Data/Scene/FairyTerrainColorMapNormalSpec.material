@@ -1,0 +1,1463 @@
+material Terrain/OneLayerColorMapNormalSpec
+{
+    // fragment program, for compatible with other material
+
+    technique
+    {
+        pass
+        {        
+        		vertex_program_ref Terrain/OneLayerColormapNormalSpec_vs
+						{
+						}
+		        fragment_program_ref Terrain/OneLayerColorMapNormalSpec_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+                tex_coord_set 0
+            }
+            
+            texture_unit
+            {                        
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+
+						texture_unit
+				    {
+								texture_alias <normalspec0>
+			          texture <normalspec0>
+								tex_coord_set 0
+								sampler_index 6
+				    }
+        }
+    }
+
+    technique
+    {
+    		lod_index 1
+        pass
+        {        
+        		vertex_program_ref Terrain/OneLayerColormap_vs
+						{
+						}
+		        fragment_program_ref Terrain/OneLayerColorMapLut_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+                tex_coord_set 0
+            }
+            
+            texture_unit
+            {                        
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+            
+            texture_unit
+            {                        
+                texture luttex.png
+                tex_address_mode clamp
+                filtering none
+                sampler_index 4
+            }
+        }
+    }
+    
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}
+
+material Terrain/OneLayerColorMapAlphaBlendUpperNormalSpec
+{
+	 // fragment program, for compatible with other material
+
+    technique
+    {
+        pass
+        {        
+        		vertex_program_ref Terrain/OneLayerColormapNormalSpec_vs
+						{
+						}
+		        fragment_program_ref Terrain/OneLayerColorMapAlphaBlendUpperNormalSpec_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+                tex_coord_set 0
+            }
+            
+            texture_unit
+            {                        
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+
+				    texture_unit
+				    {
+								texture_alias <normalspec0>
+			          texture <normalspec0>
+								tex_coord_set 0
+								sampler_index 6
+				    }
+		    }
+    }
+
+    technique
+    {
+        lod_index 1
+        pass
+        {        
+        		vertex_program_ref Terrain/OneLayerColormap_vs
+						{
+						}
+		        fragment_program_ref Terrain/OneLayerColorMapAlphaBlendUpperLut_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+                tex_coord_set 0
+            }
+            
+            texture_unit
+            {                        
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+            
+            texture_unit
+            {                        
+                texture luttex.png
+                tex_address_mode clamp
+                filtering none
+                sampler_index 4
+            }
+        }
+    }
+    
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}
+
+material Terrain/TwoLayerColorMapNormalSpec
+{
+    // fragment program for DirectX only, test on GeForce FX 5700LE, performance boost %5
+
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerColormapNormalSpec_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerColorMapNormalSpec_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+
+						texture_unit
+				    {
+								texture_alias <normalspec0>
+			          texture <normalspec0>
+								tex_coord_set 0
+								sampler_index 6
+				    }
+				    
+				    texture_unit
+				    {
+								texture_alias <normalspec1>
+			          texture <normalspec1>
+								tex_coord_set 1
+								sampler_index 7
+				    }
+        }
+    }
+
+    technique
+    {
+        lod_index 1
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerColormap_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerColorMapLut_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+            
+            texture_unit
+            {                        
+                texture luttex.png
+                tex_address_mode clamp
+                filtering none
+                sampler_index 4
+            }
+        }
+    }
+    
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}
+
+material Terrain/TwoLayerColorMapAlphaBlendNormalSpec
+{
+    // fragment program for DirectX only, test on GeForce FX 5700LE, performance boost %5
+
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerColormapNormalSpec_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerColorMapAlphaBlendNormalSpec_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+            
+						texture_unit
+				    {
+								texture_alias <normalspec0>
+			          texture <normalspec0>
+								tex_coord_set 0
+								sampler_index 6
+				    }
+				    
+				    texture_unit
+				    {
+								texture_alias <normalspec1>
+			          texture <normalspec1>
+								tex_coord_set 1
+								sampler_index 7
+				    }
+        }
+    }
+
+    technique
+    {
+        lod_index 1
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerColormap_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerColorMapAlphaBlendLut_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+            
+            texture_unit
+            {                        
+                texture luttex.png
+                tex_address_mode clamp
+                filtering none
+                sampler_index 4
+            }
+        }
+    }
+    
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}
+
+material Terrain/TwoLayerColorMapAlphaBlendUpperNormalSpec
+{
+    // fragment program for DirectX only, test on GeForce FX 5700LE, performance boost %5
+
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerColormapNormalSpec_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerColorMapAlphaBlendUpperNormalSpec_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+            
+						texture_unit
+				    {
+								texture_alias <normalspec0>
+			          texture <normalspec0>
+								tex_coord_set 0
+								sampler_index 6
+				    }
+				    
+				    texture_unit
+				    {
+								texture_alias <normalspec1>
+			          texture <normalspec1>
+								tex_coord_set 1
+								sampler_index 7
+				    }
+        }
+    }
+
+    technique
+    {
+        lod_index 1
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerColormap_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerColorMapAlphaBlendUpperLut_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+            
+            texture_unit
+            {                        
+                texture luttex.png
+                tex_address_mode clamp
+                filtering none
+                sampler_index 4
+            }
+        }
+    }
+    
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}
+
+material Terrain/TwoLayerColorMapAlphaBlendBottomNormalSpec
+{
+    // fragment program for DirectX only, test on GeForce FX 5700LE, performance boost %5
+
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerColormapNormalSpec_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerColorMapAlphaBlendBottomNormalSpec_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+            
+            texture_unit
+				    {
+								texture_alias <normalspec0>
+			          texture <normalspec0>
+								tex_coord_set 0
+								sampler_index 6
+				    }
+				    
+				    texture_unit
+				    {
+								texture_alias <normalspec1>
+			          texture <normalspec1>
+								tex_coord_set 1
+								sampler_index 7
+				    }
+
+        }
+    }
+
+    technique
+    {
+        lod_index 1
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerColormap_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerColorMapAlphaBlendBottomLut_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+            
+            texture_unit
+            {                        
+                texture luttex.png
+                tex_address_mode clamp
+                filtering none
+                sampler_index 4
+            }
+        }
+    }
+    
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}
+
+material Terrain/OneLayerLightmapColorMapNormalSpec
+{
+    // fragment program, never tested
+
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/OneLayerLightmapColormapNormalSpec_vs
+						{
+						}
+            fragment_program_ref Terrain/OneLayerLightmapColorMapNormalSpec_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <lightmap>
+                texture <lightmap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 2
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+            
+            texture_unit
+				    {
+								texture_alias <normalspec0>
+			          texture <normalspec0>
+								tex_coord_set 0
+								sampler_index 6
+				    }
+        }
+    }
+
+    technique
+    {
+        lod_index 1
+        pass
+        {
+        		vertex_program_ref Terrain/OneLayerLightmapColormap_vs
+						{
+						}
+            fragment_program_ref Terrain/OneLayerLightmapColorMapLut_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <lightmap>
+                texture <lightmap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 2
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+            
+            texture_unit
+            {                        
+                texture luttex.png
+                tex_address_mode clamp
+                filtering none
+                sampler_index 4
+            }
+        }
+    }
+    
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}
+
+material Terrain/OneLayerLightmapColorMapAlphaBlendUpperNormalSpec
+{
+    // fragment program, never tested
+
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/OneLayerLightmapColormapNormalSpec_vs
+						{
+						}
+            fragment_program_ref Terrain/OneLayerLightmapColorMapAlphaBlendUpperNormalSpec_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <lightmap>
+                texture <lightmap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 2
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+            
+            texture_unit
+				    {
+								texture_alias <normalspec0>
+			          texture <normalspec0>
+								tex_coord_set 0
+								sampler_index 6
+				    }
+				    
+        }
+    }
+
+    technique
+    {
+        lod_index 1
+        pass
+        {
+        		vertex_program_ref Terrain/OneLayerLightmapColormap_vs
+						{
+						}
+            fragment_program_ref Terrain/OneLayerLightmapColorMapAlphaBlendUpperLut_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <lightmap>
+                texture <lightmap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 2
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+            
+            texture_unit
+            {                        
+                texture luttex.png
+                tex_address_mode clamp
+                filtering none
+                sampler_index 4
+            }
+        }
+    }
+    
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}
+
+
+material Terrain/TwoLayerLightmapColorMapNormalSpec
+{
+    // fragment program, never tested
+
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerLightmapColormapNormalSpec_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerLightmapColorMapNormalSpec_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+
+            texture_unit
+            {
+                texture_alias <lightmap>
+                texture <lightmap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 2
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+            
+            texture_unit
+				    {
+								texture_alias <normalspec0>
+			          texture <normalspec0>
+								tex_coord_set 0
+								sampler_index 6
+				    }
+				    
+				    texture_unit
+				    {
+								texture_alias <normalspec1>
+			          texture <normalspec1>
+								tex_coord_set 1
+								sampler_index 7
+				    }
+
+        }
+    }
+
+    technique
+    {
+        lod_index 1
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerLightmapColormap_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerLightmapColorMapLut_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+
+            texture_unit
+            {
+                texture_alias <lightmap>
+                texture <lightmap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 2
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+            
+            texture_unit
+            {                        
+                texture luttex.png
+                tex_address_mode clamp
+                filtering none
+                sampler_index 4
+            }
+        }
+    }
+    
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}
+
+material Terrain/TwoLayerLightmapColorMapAlphaBlendNormalSpec
+{
+    // fragment program, never tested
+
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerLightmapColormapNormalSpec_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerLightmapColorMapAlphaBlendNormalSpec_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+
+            texture_unit
+            {
+                texture_alias <lightmap>
+                texture <lightmap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 2
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+            
+            texture_unit
+				    {
+								texture_alias <normalspec0>
+			          texture <normalspec0>
+								tex_coord_set 0
+								sampler_index 6
+				    }
+				    
+				    texture_unit
+				    {
+								texture_alias <normalspec1>
+			          texture <normalspec1>
+								tex_coord_set 1
+								sampler_index 7
+				    }
+
+        }
+    }
+
+    technique
+    {
+        lod_index 1
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerLightmapColormap_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerLightmapColorMapAlphaBlendLut_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+
+            texture_unit
+            {
+                texture_alias <lightmap>
+                texture <lightmap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 2
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+            
+            texture_unit
+            {                        
+                texture luttex.png
+                tex_address_mode clamp
+                filtering none
+                sampler_index 4
+            }
+        }
+    }
+    
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}
+
+material Terrain/TwoLayerLightmapColorMapAlphaBlendUpperNormalSpec
+{
+    // fragment program, never tested
+
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerLightmapColormapNormalSpec_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerLightmapColorMapAlphaBlendUpperNormalSpec_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+
+            texture_unit
+            {
+                texture_alias <lightmap>
+                texture <lightmap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 2
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+            
+            texture_unit
+				    {
+								texture_alias <normalspec0>
+			          texture <normalspec0>
+								tex_coord_set 0
+								sampler_index 6
+				    }
+				    
+				    texture_unit
+				    {
+								texture_alias <normalspec1>
+			          texture <normalspec1>
+								tex_coord_set 1
+								sampler_index 7
+				    }
+
+        }
+    }
+
+    technique
+    {
+        lod_index 1
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerLightmapColormap_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerLightmapColorMapAlphaBlendUpperLut_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+
+            texture_unit
+            {
+                texture_alias <lightmap>
+                texture <lightmap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 2
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+            
+            texture_unit
+            {                        
+                texture luttex.png
+                tex_address_mode clamp
+                filtering none
+                sampler_index 4
+            }
+        }
+    }
+    
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}
+
+material Terrain/TwoLayerLightmapColorMapAlphaBlendBottomNormalSpec
+{
+    // fragment program, never tested
+
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerLightmapColormapNormalSpec_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerLightmapColorMapAlphaBlendBottomNormalSpec_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+
+            texture_unit
+            {
+                texture_alias <lightmap>
+                texture <lightmap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 2
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+            
+            texture_unit
+				    {
+								texture_alias <normalspec0>
+			          texture <normalspec0>
+								tex_coord_set 0
+								sampler_index 6
+				    }
+				    
+				    texture_unit
+				    {
+								texture_alias <normalspec1>
+			          texture <normalspec1>
+								tex_coord_set 1
+								sampler_index 7
+				    }
+
+        }
+    }
+
+    technique
+    {
+        lod_index 1
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerLightmapColormap_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerLightmapColorMapAlphaBlendBottomLut_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+
+            texture_unit
+            {
+                texture_alias <lightmap>
+                texture <lightmap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 2
+            }
+            
+            texture_unit
+            {
+                texture_alias <colorMap>
+                texture <colorMap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 3
+            }
+            
+            texture_unit
+            {                        
+                texture luttex.png
+                tex_address_mode clamp
+                filtering none
+                sampler_index 4
+            }
+        }
+    }
+
+    
+    technique
+		{
+			scheme Depth
+			pass
+			{
+				fog_override true none
+
+				vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+				{
+				}
+				fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+				{
+				}
+			}
+		}
+}

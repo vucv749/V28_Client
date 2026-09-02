@@ -1,0 +1,85 @@
+<EnScene version="1.0">
+    <EnSky>
+        <SkyDome>
+            <texture>DLZB_tianlong001_color.jpg</texture>
+            <hight>-91</hight>
+            <mieAmount>0.01</mieAmount>
+            <vertexHeightEffect>1</vertexHeightEffect>
+            <sunHeightEffect>1</sunHeightEffect>
+            <power>1</power>
+        </SkyDome>
+        <SkyClouds />
+        <SkyRingClouds>
+            <RingCloudsLayer>
+                <name>1</name>
+                <layer>2</layer>
+                <meshname>ringcloud.mesh</meshname>
+                <turnoverMesh>false</turnoverMesh>
+                <texturename>fengmingnew_side001.png</texturename>
+                <CloudHeight>-57</CloudHeight>
+                <CloudScale>2</CloudScale>
+                <TextureRepeat>4</TextureRepeat>
+                <CloudOffset>39</CloudOffset>
+                <parallax>0</parallax>
+                <scatteringStrength>0.12</scatteringStrength>
+                <scatteringPower>1</scatteringPower>
+                <rimStrength>0.38</rimStrength>
+                <rimPower>4.57</rimPower>
+                <rimDetectPower>3</rimDetectPower>
+                <rimDetectWidth>0.12</rimDetectWidth>
+                <TimeNodesInfo>
+                    <TimeNode time="0" fogblend="-0.36" ambientBlend="0.64" alpha="1" rollspeed="0" verticalSpeed="0" fadeRange="0.51" />
+                </TimeNodesInfo>
+            </RingCloudsLayer>
+            <RingCloudsLayer>
+                <name>2</name>
+                <layer>1</layer>
+                <meshname>ringcloud.mesh</meshname>
+                <turnoverMesh>false</turnoverMesh>
+                <texturename>tga_Normal_qing001_side001.dds</texturename>
+                <CloudHeight>0</CloudHeight>
+                <CloudScale>1</CloudScale>
+                <TextureRepeat>3</TextureRepeat>
+                <CloudOffset>0</CloudOffset>
+                <parallax>0.005</parallax>
+                <scatteringStrength>0.12</scatteringStrength>
+                <scatteringPower>1</scatteringPower>
+                <rimStrength>0.38</rimStrength>
+                <rimPower>4.57</rimPower>
+                <rimDetectPower>3</rimDetectPower>
+                <rimDetectWidth>0.12</rimDetectWidth>
+                <TimeNodesInfo>
+                    <TimeNode time="0" fogblend="-0.5" ambientBlend="1" alpha="0.3" rollspeed="0" verticalSpeed="0" fadeRange="0" />
+                </TimeNodesInfo>
+            </RingCloudsLayer>
+            <RingCloudsLayer>
+                <name>beijing</name>
+                <layer>0</layer>
+                <meshname>ringcloud.mesh</meshname>
+                <turnoverMesh>false</turnoverMesh>
+                <texturename>DLZB_tianlong001_color.jpg</texturename>
+                <CloudHeight>-135</CloudHeight>
+                <CloudScale>10</CloudScale>
+                <TextureRepeat>3</TextureRepeat>
+                <CloudOffset>0</CloudOffset>
+                <parallax>0.005</parallax>
+                <scatteringStrength>0.12</scatteringStrength>
+                <scatteringPower>1</scatteringPower>
+                <rimStrength>0.38</rimStrength>
+                <rimPower>4.57</rimPower>
+                <rimDetectPower>3</rimDetectPower>
+                <rimDetectWidth>0.12</rimDetectWidth>
+                <TimeNodesInfo>
+                    <TimeNode time="0" fogblend="-0.5" ambientBlend="0.85" alpha="1" rollspeed="0" verticalSpeed="0" fadeRange="0" />
+                </TimeNodesInfo>
+            </RingCloudsLayer>
+        </SkyRingClouds>
+        <Star Enable="false" StarCount="2000" Radius="10000" Intensity="1" Size="10" FlickerSpeed="0.2" StartColour="0.5 0.5 0.5 0.5" EndColour="1 1 1 1" starfix="false" />
+        <Moon Enable="false" moon_tex_name="png_moon_03.dds" scale="5" moonOrient="0" moonAngle="30" moonUpTime="18" moonDownTime="6" moonfix="false" />
+        <Sun Enable="false" sun_tex_name="sun.dds" useSunFlare="true" sunflare_tex_name="fx_flare_trees.dds" scale="10" sunOrient="0" sunAngle="50" sunUpTime="6" sunDownTime="18" intensityStep="0.1" sunfix="false" lensFlare_settings_name="LensFlare.lensflare" useLensFlare="false" />
+        <Ocean Enable="false" OceanVisible="0" />
+        <LightAndFog>
+            <EnvKey time="0" ambient="0.32 0.181493 0.1504" pbr_ambient="0.74902 0.545098 0.239216" shadow_strength="1" pbr_shadow_strength="1" fog="0.43 0.208765 0.1591" fog_near_distance="2500" fog_far_distance="12000" light_one="0.4 0.304 0.304" light_one_specular="0.22 0.10714 0.1012" light_one_direction="0 0 0" light_one_intensity="1" light_two="0.045 0.09 0.08625" light_two_specular="0.28 0.224747 0.1764" light_two_direction="0 0 0" light_two_intensity="1" warm_color="0 0 0" cold_color="0 0 0" enhance_constrast="0 0 0" overlay_image="0 0 0" radial_blur="0 0" light_specular_intensity="0" actor_light_one="0.588235 0.364706 0.215686" actor_light_one_intensity="1" actor_light_two="0.54902 0.482353 0.466667" actor_light_two_intensity="1" actor_light_ambient="0.439216 0.419608 0.509804" selectactor_light="0.5 0.5 0.5" height_fog_enabled="false" height_fog_param="0 0 0 0|0 0 0 0|0|0|0|0|0|0|0|0" skyDomeAmbientColor="1 1 1" skyDomeAmbientColorStrength="1" />
+        </LightAndFog>
+    </EnSky>
+</EnScene>

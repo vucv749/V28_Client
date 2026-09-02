@@ -1,0 +1,43 @@
+<EnScene version="1.0">
+    <EnSky>
+        <SkyDome>
+            <texture>HJ_Normal_qing001_top002.dds</texture>
+            <hight>1624</hight>
+            <mieAmount>0.01</mieAmount>
+            <vertexHeightEffect>1</vertexHeightEffect>
+            <sunHeightEffect>1</sunHeightEffect>
+            <power>1</power>
+        </SkyDome>
+        <SkyClouds />
+        <SkyRingClouds>
+            <RingCloudsLayer>
+                <name>1</name>
+                <layer>1</layer>
+                <meshname>ringcloud.mesh</meshname>
+                <turnoverMesh>false</turnoverMesh>
+                <texturename>SYSZbaitian01.jpg</texturename>
+                <CloudHeight>-25</CloudHeight>
+                <CloudScale>1</CloudScale>
+                <TextureRepeat>6</TextureRepeat>
+                <CloudOffset>32</CloudOffset>
+                <parallax>0.004</parallax>
+                <scatteringStrength>0.06</scatteringStrength>
+                <scatteringPower>0.63</scatteringPower>
+                <rimStrength>0.06</rimStrength>
+                <rimPower>0</rimPower>
+                <rimDetectPower>0</rimDetectPower>
+                <rimDetectWidth>0</rimDetectWidth>
+                <TimeNodesInfo>
+                    <TimeNode time="0" fogblend="-0.7" ambientBlend="0" alpha="0.71" rollspeed="0" verticalSpeed="0" fadeRange="0.51" />
+                </TimeNodesInfo>
+            </RingCloudsLayer>
+        </SkyRingClouds>
+        <Star Enable="false" StarCount="2000" Radius="10000" Intensity="1" Size="10" FlickerSpeed="0.2" StartColour="0.5 0.5 0.5 0.5" EndColour="1 1 1 1" starfix="false" />
+        <Moon Enable="false" moon_tex_name="png_moon_03.dds" scale="5" moonOrient="0" moonAngle="30" moonUpTime="18" moonDownTime="6" moonfix="false" />
+        <Sun Enable="false" sun_tex_name="sun.dds" useSunFlare="true" sunflare_tex_name="fx_flare_trees.dds" scale="10" sunOrient="0" sunAngle="50" sunUpTime="6" sunDownTime="18" intensityStep="0.1" sunfix="false" />
+        <Ocean Enable="false" OceanVisible="0" />
+        <LightAndFog>
+            <EnvKey time="0" ambient="0.466667 0.694118 0.831373" pbr_ambient="0.494118 0.494118 0.494118" shadow_strength="1" pbr_shadow_strength="1" fog="0.186 0.558 0.93" fog_near_distance="2500" fog_far_distance="15000" light_one="0.960784 0.933333 0.878431" light_one_specular="0.270325 0.2145 0.33" light_one_direction="0 0 0" light_one_intensity="1" light_two="0.18 0.145 0.25" light_two_specular="0.184314 0.313726 0.486275" light_two_direction="0 0 0" light_two_intensity="1" warm_color="0 0 0" cold_color="0 0 0" enhance_constrast="0 0 0" overlay_image="0 0 0" radial_blur="0 0" light_specular_intensity="0" actor_light_one="0.431373 0.627451 0.819608" actor_light_one_intensity="1" actor_light_two="0.54902 0.482353 0.466667" actor_light_two_intensity="1" actor_light_ambient="0.439216 0.419608 0.509804" selectactor_light="0.5 0.5 0.5" />
+        </LightAndFog>
+    </EnSky>
+</EnScene>

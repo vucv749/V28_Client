@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Scene formatVersion="0.1.1" name="mantuofb_3">
+
+  <Author>Genva Xie</Author>
+
+  <Copyright>Sohu-inc</Copyright>
+
+  <Description>This is a template scene file for fairy editor</Description>
+
+  <Terrain filename="mantuofb_3.Terrain"/>
+
+  <Object name="#FairyEnviroment" type="Enviroment">
+    <Property name="ambient" value="0.6992 0.76 0.76"/>
+    <Property name="fog.mode" value="linear"/>
+    <Property name="fog.colour" value="0.294 0.621409 0.98"/>
+    <Property name="fog.linear start" value="3000"/>
+    <Property name="fog.linear end" value="18000"/>
+  </Object>
+
+  <Object name="#FairyMainLightOne" type="Light">
+    <Property name="type" value="directional"/>
+    <Property name="diffuse" value="0.988235 0.901595 0.790588"/>
+    <Property name="specular" value="0.0627451 0.611765 0.847059"/>
+    <Property name="direction" value="0.176963 -0.484282 0.436688"/>
+    <Property name="cast shadows" value="true"/>
+  </Object>
+
+  <Object name="#FairyMainLightTwo" type="Light">
+    <Property name="type" value="directional"/>
+    <Property name="diffuse" value="0.219608 0.313726 0.521569"/>
+    <Property name="specular" value="0.0901961 0.258824 0.509804"/>
+    <Property name="direction" value="-0.231441 -0.39701 -0.49513"/>
+  </Object>
+
+  <Object name="#FairySceneConfig" type="SceneConfig">
+    <Property name="SetCamDisCullDepth" value="5000"/>
+    <Property name="SetCamDisCullParam" value="14"/>
+  </Object>
+
+  <Object name="#FairyEnScene" type="EnScene">
+    <Property name="config_file" value="mantuofb_3.EnScene"/>
+    <Property name="enabled" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="还施水阁/还施水阁_小船02.mesh"/>
+    <Property name="position" value="3506.03 62.7244 2585.27"/>
+    <Property name="orientation" value="0.947649 -0.0333712 0.316153 -0.0297132"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_封边山石01.mesh"/>
+    <Property name="position" value="2913.61 260.428 -8802.98"/>
+    <Property name="orientation" value="0.999253 0 -0.0377166 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_封边山石02.mesh"/>
+    <Property name="position" value="-2875.77 402.766 -6110.8"/>
+    <Property name="orientation" value="0.974859 0 -0.222757 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_封边山石03.mesh"/>
+    <Property name="position" value="3289.54 -173.464 -6182.17"/>
+    <Property name="orientation" value="-0.799391 0 0.600769 0"/>
+    <Property name="scale" value="0.769231 0.641026 0.769231"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_封边山石02.mesh"/>
+    <Property name="position" value="6253.33 -84.5494 -9744.07"/>
+    <Property name="orientation" value="0.533263 0 0.845921 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="还施水阁/公共小山石02.mesh"/>
+    <Property name="position" value="-3403.24 518.722 -2206"/>
+    <Property name="orientation" value="0.862077 0 0.506776 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="还施水阁/公共小山石03.mesh"/>
+    <Property name="position" value="-2211.69 223.807 -2986.28"/>
+    <Property name="orientation" value="0.999952 0 0.00957782 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小战场山石02.mesh"/>
+    <Property name="position" value="2435.9 153.768 -3905.12"/>
+    <Property name="orientation" value="-0.70934 0 0.704852 0"/>
+    <Property name="scale" value="2.08333 2.08333 2.08333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_封边山石01.mesh"/>
+    <Property name="position" value="-5088.06 -304.061 -8678.21"/>
+    <Property name="orientation" value="0.242759 0 -0.970028 0"/>
+    <Property name="scale" value="1 0.833333 1"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_封边山石03.mesh"/>
+    <Property name="position" value="-4338.15 -330.407 -4425.68"/>
+    <Property name="orientation" value="0.76056 -0.0377889 0.646997 -0.0374973"/>
+    <Property name="scale" value="0.769231 0.549451 0.769231"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水月山庄/新山石_远景山石_02.mesh"/>
+    <Property name="position" value="996.587 46.5938 -12146.9"/>
+    <Property name="orientation" value="0.992698 0 -0.120595 0"/>
+    <Property name="scale" value="2.04 2.04 2.04"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水月山庄/新山石_远景山石_02.mesh"/>
+    <Property name="position" value="-2300 143.075 -10100"/>
+    <Property name="orientation" value="0.988201 0 0.153106 0"/>
+    <Property name="scale" value="2.04 2.04 2.04"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/远景山体03.mesh"/>
+    <Property name="position" value="67.4814 16.3691 -10703.4"/>
+    <Property name="orientation" value="0.0247062 0 0.999692 0"/>
+    <Property name="scale" value="1 0.833333 1"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_封边山石02.mesh"/>
+    <Property name="position" value="-6765.12 -1152.12 -5734.06"/>
+    <Property name="orientation" value="0.918033 0 -0.3965 0"/>
+    <Property name="scale" value="0.9 0.9 0.9"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="华山论剑/华山论剑_大山石02.mesh"/>
+    <Property name="position" value="5324.46 -712.145 -6039.9"/>
+    <Property name="orientation" value="0.705851 0 -0.708348 0"/>
+    <Property name="scale" value="1.34506 1.34506 1.34506"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小战场小山石01.mesh"/>
+    <Property name="position" value="-1533.74 599.04 -3366.93"/>
+    <Property name="orientation" value="0.999438 0 0.0335276 0"/>
+    <Property name="scale" value="1.8 1.8 1.8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小战场小山石02.mesh"/>
+    <Property name="position" value="3869.31 967.376 -1541.88"/>
+    <Property name="orientation" value="0.625122 0 -0.780526 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小战场小山石03.mesh"/>
+    <Property name="position" value="1130.53 180.559 -5442.75"/>
+    <Property name="orientation" value="0.959402 0 -0.28204 0"/>
+    <Property name="scale" value="3.74 3.74 3.74"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小战场山石01.mesh"/>
+    <Property name="position" value="4764.11 -134.191 321.535"/>
+    <Property name="orientation" value="0.396498 0 0.918029 0"/>
+    <Property name="scale" value="1.96 1.96 1.96"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小战场山石02.mesh"/>
+    <Property name="position" value="5020.3 732.018 -1270.56"/>
+    <Property name="orientation" value="0.742357 0 0.670004 0"/>
+    <Property name="scale" value="2 2 2"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_布景山石01.mesh"/>
+    <Property name="position" value="4811.86 -530.37 -3693.27"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_布景山石02.mesh"/>
+    <Property name="position" value="6093.53 -624.742 130.625"/>
+    <Property name="orientation" value="0.994397 0 -0.105699 0"/>
+    <Property name="scale" value="1.6 1.6 1.6"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_布景山石02.mesh"/>
+    <Property name="position" value="3743.46 601.752 -4166.01"/>
+    <Property name="orientation" value="0.999103 0 -0.0423461 0"/>
+    <Property name="scale" value="1.5 1.5 1.5"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/远景山体03.mesh"/>
+    <Property name="position" value="613.71 -1282.72 3800"/>
+    <Property name="orientation" value="0.0247062 0 0.999692 0"/>
+    <Property name="scale" value="3.2 0.362319 3.2"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_布景山石02.mesh"/>
+    <Property name="position" value="-3963.08 -532.826 -3287.3"/>
+    <Property name="orientation" value="0.606192 0 0.795315 0"/>
+    <Property name="scale" value="1.6 1.6 1.6"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_布景山石01.mesh"/>
+    <Property name="position" value="-3282.78 192.273 -3732.81"/>
+    <Property name="orientation" value="0.915212 0 -0.402971 0"/>
+    <Property name="scale" value="0.909091 0.909091 0.909091"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_布景山石02.mesh"/>
+    <Property name="position" value="-2086.68 139.385 -3790.99"/>
+    <Property name="orientation" value="0.96787 0 -0.251429 0"/>
+    <Property name="scale" value="1.32231 1.32231 1.32231"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_布景山石02.mesh"/>
+    <Property name="position" value="-5796.59 -818.931 -2180.36"/>
+    <Property name="orientation" value="-0.297238 0 0.954795 0"/>
+    <Property name="scale" value="1.32231 1.32231 1.32231"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄_粉色山茶树04.mesh"/>
+    <Property name="position" value="3329.67 1677.88 -3779.92"/>
+    <Property name="orientation" value="0.929217 0.149941 -0.318965 0.110962"/>
+    <Property name="scale" value="0.909091 0.909091 0.909091"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄_粉色山茶树02.mesh"/>
+    <Property name="position" value="3676.6 965.058 -1844.25"/>
+    <Property name="orientation" value="-0.811078 -0.0135697 0.583075 0.0445605"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄_粉色山茶树03.mesh"/>
+    <Property name="position" value="2227.33 1513.82 -4019.5"/>
+    <Property name="orientation" value="0.97831 0.155174 0.0769608 0.113605"/>
+    <Property name="scale" value="0.714286 0.714286 0.714286"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄_小白色山茶树04.mesh"/>
+    <Property name="position" value="2965.31 848.966 -1049.22"/>
+    <Property name="orientation" value="0.987714 0.00117792 0.155678 0.0134766"/>
+    <Property name="scale" value="0.770751 0.770751 0.770751"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄_小白色山茶树04.mesh"/>
+    <Property name="position" value="-1351.78 562.13 -2854.3"/>
+    <Property name="orientation" value="0.524915 0.018081 0.849431 0.0509755"/>
+    <Property name="scale" value="0.638392 0.638392 0.638392"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄_粉色山茶树04.mesh"/>
+    <Property name="position" value="-5967.53 115.912 -1531.76"/>
+    <Property name="orientation" value="-0.16397 0.0358813 0.985398 -0.0282774"/>
+    <Property name="scale" value="0.828402 0.828402 0.828402"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄_粉色山茶树04.mesh"/>
+    <Property name="position" value="3887.17 991.711 -567.222"/>
+    <Property name="orientation" value="0.844469 -0.00284574 -0.53556 -0.00529646"/>
+    <Property name="scale" value="0.8 0.8 0.8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄_粉色山茶树02.mesh"/>
+    <Property name="position" value="5359.73 1210.35 -288.798"/>
+    <Property name="orientation" value="0.514163 0.313751 0.770277 -0.20943"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/HJ_序章_红树03.mesh"/>
+    <Property name="position" value="2548.39 2218.3 -6449.33"/>
+    <Property name="orientation" value="-0.198677 0.212706 -0.951779 -0.0969173"/>
+    <Property name="scale" value="1.2 1.2 1.2"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小战场小山石01.mesh"/>
+    <Property name="position" value="-610.551 352.051 -4560.58"/>
+    <Property name="orientation" value="0.96848 -0.155734 0.194289 -0.00633129"/>
+    <Property name="scale" value="2.34 2.34 2.34"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小战场小山石01.mesh"/>
+    <Property name="position" value="3152.63 693.355 -2870.29"/>
+    <Property name="orientation" value="0.940185 -0.0339813 -0.322616 0.103963"/>
+    <Property name="scale" value="1.8 1.8 1.8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小战场小山石03.mesh"/>
+    <Property name="position" value="2074.35 485.342 -2885.21"/>
+    <Property name="orientation" value="0.963181 0.0208872 -0.261352 0.0594527"/>
+    <Property name="scale" value="1.96842 2.36211 1.96842"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/HJ_序章_红树04.mesh"/>
+    <Property name="position" value="3869.7 1470.78 -6177.93"/>
+    <Property name="orientation" value="0.951532 0.0880927 0.294505 0.00927649"/>
+    <Property name="scale" value="1.42857 1.42857 1.42857"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/HJ_序章_红树03.mesh"/>
+    <Property name="position" value="-1246.3 1012.47 -4905.52"/>
+    <Property name="orientation" value="0.980504 -0.110985 0.120843 -0.107913"/>
+    <Property name="scale" value="1.2 1.2 1.2"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/HJ_序章_红树04.mesh"/>
+    <Property name="position" value="-4705.32 1010.55 -4385.37"/>
+    <Property name="orientation" value="0.978753 0.154488 0.0710768 0.114536"/>
+    <Property name="scale" value="0.714286 0.714286 0.714286"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄_小白色山茶树01.mesh"/>
+    <Property name="position" value="-996.823 491.716 -2347.85"/>
+    <Property name="orientation" value="0.137064 0.0315919 -0.990055 0.000684359"/>
+    <Property name="scale" value="0.751316 0.751316 0.751316"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/新树木_普通树12.mesh"/>
+    <Property name="position" value="1224.57 536.053 -5806.2"/>
+    <Property name="orientation" value="0.912113 0 -0.409938 0"/>
+    <Property name="scale" value="1.3 1.3 1.3"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/新树木_普通树13.mesh"/>
+    <Property name="position" value="-3854.61 2069.23 -4961.45"/>
+    <Property name="orientation" value="0.97093 -0.0112903 -0.210449 -0.11343"/>
+    <Property name="scale" value="1.09091 1.09091 1.09091"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/新树木_普通树12.mesh"/>
+    <Property name="position" value="-4424.55 -56.1906 -3842.03"/>
+    <Property name="orientation" value="0.247809 -0.000530613 -0.967988 0.0397619"/>
+    <Property name="scale" value="1.5 1.5 1.5"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/新树木_普通树13.mesh"/>
+    <Property name="position" value="4773.19 2972.03 -6396.66"/>
+    <Property name="orientation" value="0.964198 0.0369067 -0.00694179 0.262463"/>
+    <Property name="scale" value="1.09091 1.09091 1.09091"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小战场石堆01.mesh"/>
+    <Property name="position" value="-2890.17 556.757 -2375.17"/>
+    <Property name="orientation" value="0.992595 0 0.121455 0"/>
+    <Property name="scale" value="0.711765 0.711765 0.711765"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小战场石堆02.mesh"/>
+    <Property name="position" value="-1859.2 553.061 -1278.64"/>
+    <Property name="orientation" value="0.889438 0 0.457029 0"/>
+    <Property name="scale" value="0.641025 0.641025 0.641025"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小战场石堆03.mesh"/>
+    <Property name="position" value="-1597.6 565.806 -2642.27"/>
+    <Property name="orientation" value="0.944727 0.0605774 0.320668 0.031443"/>
+    <Property name="scale" value="0.757576 0.757576 0.757576"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小战场石堆01.mesh"/>
+    <Property name="position" value="595.74 240.859 -4882.73"/>
+    <Property name="orientation" value="0.228391 0.0149775 0.973289 -0.01751"/>
+    <Property name="scale" value="0.925294 0.925294 0.925294"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小战场小山石01.mesh"/>
+    <Property name="position" value="326.65 116.546 -5890.58"/>
+    <Property name="orientation" value="0.810782 -0.108996 -0.554205 -0.153631"/>
+    <Property name="scale" value="2.34 2.34 2.34"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="擂鼓山/擂鼓山_石台阶01.mesh"/>
+    <Property name="position" value="-812.674 217.551 -1651.41"/>
+    <Property name="orientation" value="0.958606 0.0112215 0.284491 0.00345351"/>
+    <Property name="scale" value="1.1 0.757576 1.1"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="cj_天下_树枝透光_光束"/>
+    <Property name="position" value="172.357 1742.3 -5761.27"/>
+    <Property name="orientation" value="0.854513 -0.507109 0.0998188 0.0518362"/>
+    <Property name="scale" value="7.5 7.5 7.5"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="cj_天下_树枝透光_光点2A"/>
+    <Property name="position" value="472.357 1142.3 -4361.27"/>
+    <Property name="orientation" value="0.854513 -0.507109 0.0998188 0.0518362"/>
+    <Property name="scale" value="7 7 7"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="cj_天下会武_云01"/>
+    <Property name="position" value="385.083 773.008 -4188.38"/>
+    <Property name="orientation" value="0.986754 0 -0.16221 0"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="cj_天下会武_云01"/>
+    <Property name="position" value="-5200 477.419 -2800"/>
+    <Property name="orientation" value="0.997676 0 -0.0680812 0"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="cj_天下会武_云01"/>
+    <Property name="position" value="2725.43 2391.4 -5031.02"/>
+    <Property name="orientation" value="0.980363 0 -0.197177 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="八星战场/八星战场_小战场石台01.mesh"/>
+    <Property name="position" value="-2102.88 159.762 -993.178"/>
+    <Property name="scale" value="0.4 0.4 0.4"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="八星战场/八星战场_小战场石台02.mesh"/>
+    <Property name="position" value="-1752.09 159.6 -1174.92"/>
+    <Property name="orientation" value="0.947541 0 0.319623 0"/>
+    <Property name="scale" value="0.4 0.4 0.4"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="八星战场/八星战场_小战场石台03.mesh"/>
+    <Property name="position" value="-1325.46 150.672 -1503.63"/>
+    <Property name="orientation" value="0.981577 0 0.19106 0"/>
+    <Property name="scale" value="0.4 0.4 0.4"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="八星战场/八星战场_小战场石台04.mesh"/>
+    <Property name="position" value="-1545.72 156.065 -1386.4"/>
+    <Property name="orientation" value="0.831924 0 0.554886 0"/>
+    <Property name="scale" value="0.4 0.4 0.4"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="八星战场/八星战场_小战场石台01.mesh"/>
+    <Property name="position" value="-951.612 335.486 -5483.51"/>
+    <Property name="orientation" value="0.929433 0 0.368978 0"/>
+    <Property name="scale" value="1.4 1.4 1.4"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_布景山石01.mesh"/>
+    <Property name="position" value="-1745.58 402.438 -4123.16"/>
+    <Property name="orientation" value="0.987839 0 -0.15546 0"/>
+    <Property name="scale" value="1 0.909091 1"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/新树木_普通树13.mesh"/>
+    <Property name="position" value="-480.901 583.082 -7145.39"/>
+    <Property name="orientation" value="-0.182556 0.143255 0.972461 0.0206983"/>
+    <Property name="scale" value="1.09091 1.09091 1.09091"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="八星战场/八星战场_小战场石台04.mesh"/>
+    <Property name="position" value="-2500 160.6 -1042.63"/>
+    <Property name="orientation" value="0.014787 0 0.999886 0"/>
+    <Property name="scale" value="0.4 0.4 0.4"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="八星战场/八星战场_小战场石台01.mesh"/>
+    <Property name="position" value="-2917.17 157.039 -1074.59"/>
+    <Property name="orientation" value="0.956582 0 -0.291464 0"/>
+    <Property name="scale" value="0.4 0.4 0.4"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="八星战场/八星战场_小战场石台02.mesh"/>
+    <Property name="position" value="-3213.25 167.387 -1345.6"/>
+    <Property name="orientation" value="0.918758 0 -0.394789 0"/>
+    <Property name="scale" value="0.4 0.4 0.4"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小战场石堆03.mesh"/>
+    <Property name="position" value="-2679.51 550.011 -1267.36"/>
+    <Property name="orientation" value="0.484742 1.15327e-006 -0.874654 2.86321e-006"/>
+    <Property name="scale" value="0.641026 0.641026 0.641026"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="还施水阁/公共小山石03.mesh"/>
+    <Property name="position" value="-3502.55 -188.826 -1944.34"/>
+    <Property name="orientation" value="0.714091 0.056318 0.688827 0.111395"/>
+  </Object>
+
+  <Object type="TerrainLiquid">
+    <Property name="material" value="PBRScene_Water"/>
+    <Property name="replaceMaterial" value="huwaterlv"/>
+    <Property name="mesh name" value="还施水阁/还施水阁_水片.mesh"/>
+    <Property name="position" value="201.289 62.578 5057.79"/>
+    <Property name="scale" value="10 10 10"/>
+    <Property name="subdivision" value="2"/>
+    <Property name="texture rotate" value="6.5"/>
+    <Property name="texture scale" value="50"/>
+    <Property name="texture scale for mesh water low level" value="30"/>
+    <Property name="texture depth" value="10"/>
+    <Property name="depth texture layer.enable" value="true"/>
+    <Property name="depth texture layer.height adjust" value="2000"/>
+    <Property name="ShaderParams.Water Fog Color" value="0.101961 0.576471 0.658824 1"/>
+    <Property name="ShaderParams.Water Fog Density" value="80"/>
+    <Property name="ShaderParams.uvScale" value="0.1 0.2"/>
+    <Property name="ShaderParams.Wave Speed" value="3"/>
+    <Property name="ShaderParams.Big Waves Scale" value="0.5"/>
+    <Property name="ShaderParams.Small Waves Scale" value="0.3"/>
+    <Property name="ShaderParams.Reflection Amount" value="0.5"/>
+    <Property name="ShaderParams.Transparency Ratio" value="0.3"/>
+    <Property name="ShaderParams.SunShine Pow" value="400"/>
+    <Property name="ShaderParams.Sun Multiplier" value="0.3"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苏州/铁锤2.mesh"/>
+    <Property name="position" value="-2871.38 663.057 -2239.52"/>
+    <Property name="orientation" value="-0.0933352 0.0996944 0.69735 0.703593"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苏州/铁锤1.mesh"/>
+    <Property name="position" value="-2732.08 666.047 -2337.95"/>
+    <Property name="orientation" value="0.615114 -0.632462 -0.291486 -0.369674"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小战场小山石02.mesh"/>
+    <Property name="position" value="-2137.68 148.143 -481.077"/>
+    <Property name="orientation" value="0.9672 0 -0.254017 0"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小战场小山石02.mesh"/>
+    <Property name="position" value="-2480.38 169.732 -852.012"/>
+    <Property name="orientation" value="0.997214 0.0675899 -0.0228005 0.0215386"/>
+    <Property name="scale" value="0.392157 0.392157 0.392157"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="八星战场/八星战场_小战场石台02.mesh"/>
+    <Property name="position" value="3878.76 124.438 -32.9956"/>
+    <Property name="orientation" value="0.948813 0 -0.315829 0"/>
+    <Property name="scale" value="0.8 0.8 0.8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="八星战场/八星战场_小战场石台01.mesh"/>
+    <Property name="position" value="3358.52 125.382 -601.543"/>
+    <Property name="orientation" value="0.982657 0 -0.185429 0"/>
+    <Property name="scale" value="0.8 0.8 0.8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="八星战场/八星战场_小战场石台04.mesh"/>
+    <Property name="position" value="2619.85 162.976 -988.842"/>
+    <Property name="orientation" value="0.980563 0 -0.196193 0"/>
+    <Property name="scale" value="0.7 0.7 0.7"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="八星战场/八星战场_小战场石台03.mesh"/>
+    <Property name="position" value="2048.08 204.071 -1183.06"/>
+    <Property name="orientation" value="0.936816 -0.0501735 -0.34571 0.0185154"/>
+    <Property name="scale" value="0.572 0.572 0.572"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小战场小山石02.mesh"/>
+    <Property name="position" value="2193 688.945 -1348.25"/>
+    <Property name="orientation" value="0.940907 0 -0.338666 0"/>
+    <Property name="scale" value="0.476191 0.476191 0.476191"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小战场小山石01.mesh"/>
+    <Property name="position" value="1530.06 219.889 -1257.42"/>
+    <Property name="orientation" value="0.930674 0 -0.365849 0"/>
+    <Property name="scale" value="1.2 1.2 1.2"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小战场小山石02.mesh"/>
+    <Property name="position" value="-1072.04 210.434 -1313.8"/>
+    <Property name="orientation" value="0.962547 0.040931 -0.254532 0.0839374"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小战场小山石03.mesh"/>
+    <Property name="position" value="-3451.29 108.486 -1117.14"/>
+    <Property name="orientation" value="0.852895 0.00472412 -0.522021 0.00569528"/>
+    <Property name="scale" value="1.19511 1.43414 1.19511"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小战场小山石01.mesh"/>
+    <Property name="position" value="3916.33 64.1438 622.31"/>
+    <Property name="orientation" value="0.863183 -0.0231859 -0.503668 -0.0264506"/>
+    <Property name="scale" value="1.2 1.2 1.2"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小战场小山石02.mesh"/>
+    <Property name="position" value="1625.7 410.555 -3120.31"/>
+    <Property name="orientation" value="0.901226 0.0230215 -0.414356 0.124751"/>
+    <Property name="scale" value="0.8 0.8 0.8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/新灌木小花_01.mesh"/>
+    <Property name="position" value="2818.65 843.61 -1016.89"/>
+    <Property name="orientation" value="0.999971 0 -0.00744798 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/灌木大灌木07.mesh"/>
+    <Property name="position" value="4090.25 880.591 -194.31"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/灌木小灌木03.mesh"/>
+    <Property name="position" value="2406.62 807.605 -1319.77"/>
+    <Property name="orientation" value="0.995801 -0.00108132 -0.0118674 0.0907346"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/灌木藤蔓01.mesh"/>
+    <Property name="position" value="1906.89 491.278 -2834.11"/>
+    <Property name="orientation" value="0.90473 0.00255572 -0.424223 0.0386358"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/灌木藤蔓01.mesh"/>
+    <Property name="position" value="2559.23 670.296 -2974.03"/>
+    <Property name="orientation" value="0.959974 0.0325353 -0.258214 0.103536"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/新灌木小花_01.mesh"/>
+    <Property name="position" value="3500 914.41 -700"/>
+    <Property name="orientation" value="0.88784 0 -0.460151 0"/>
+    <Property name="scale" value="1.1 1.1 1.1"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/新灌木小花_01.mesh"/>
+    <Property name="position" value="3815.31 920.416 -349.331"/>
+    <Property name="orientation" value="0.801228 0.0383078 0.592644 0.0730537"/>
+    <Property name="scale" value="1.1 1.1 1.1"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/灌木大灌木07.mesh"/>
+    <Property name="position" value="3200 865.261 -864.535"/>
+    <Property name="orientation" value="0.0988973 0 -0.995097 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/灌木藤蔓01.mesh"/>
+    <Property name="position" value="1671.19 402.362 -1303.27"/>
+    <Property name="orientation" value="0.974491 -0.0397669 0.142768 0.168522"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/灌木小灌木03.mesh"/>
+    <Property name="position" value="2218.29 200.841 -755.307"/>
+    <Property name="orientation" value="0.848442 -0.110239 -0.517118 -0.0240196"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/灌木小灌木03.mesh"/>
+    <Property name="position" value="-1304.7 159.505 -1233.74"/>
+    <Property name="orientation" value="0.956544 -0.0457083 -0.287069 0.0228023"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/灌木小灌木03.mesh"/>
+    <Property name="position" value="-1706.34 146.56 -891.633"/>
+    <Property name="orientation" value="0.936488 0.0308659 0.338749 0.0853301"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/灌木藤蔓01.mesh"/>
+    <Property name="position" value="-1226.76 332.538 -1485.67"/>
+    <Property name="orientation" value="0.91102 0.00217499 0.374231 0.173137"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/新灌木小花_01.mesh"/>
+    <Property name="position" value="-1141.56 526.936 -2212.91"/>
+    <Property name="orientation" value="0.749194 0 -0.66235 0"/>
+    <Property name="scale" value="0.846154 0.846154 0.846154"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/灌木大灌木07.mesh"/>
+    <Property name="position" value="-1624.87 527.403 -1422.48"/>
+    <Property name="orientation" value="-0.000744733 0 -0.999998 0"/>
+    <Property name="scale" value="0.769231 0.769231 0.769231"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/新灌木小花_01.mesh"/>
+    <Property name="position" value="3727.87 938.455 -501.485"/>
+    <Property name="orientation" value="0.976443 0 0.215773 0"/>
+    <Property name="scale" value="1.1 1.1 1.1"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/灌木小灌木03.mesh"/>
+    <Property name="position" value="-2658.78 541.883 -1036.42"/>
+    <Property name="orientation" value="0.0934675 0.0070944 0.995528 0.0114446"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/灌木小灌木03.mesh"/>
+    <Property name="position" value="-3169.36 535.069 -1376.67"/>
+    <Property name="orientation" value="0.91841 -0.0142135 -0.388796 0.0717332"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/新灌木小花_01.mesh"/>
+    <Property name="position" value="-1998.35 547.094 -1115.75"/>
+    <Property name="orientation" value="0.749194 0 -0.66235 0"/>
+    <Property name="scale" value="0.564103 0.564103 0.564103"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="langhua02"/>
+    <Property name="position" value="1754.52 86.3717 3785.15"/>
+    <Property name="orientation" value="0.0233123 0 -0.999725 0"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="langhua"/>
+    <Property name="position" value="3933.34 98.581 2417.91"/>
+    <Property name="orientation" value="-0.571706 0 0.820455 0"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="langhua"/>
+    <Property name="position" value="-1409.76 83.3742 3100"/>
+    <Property name="orientation" value="0.197798 0 0.980238 0"/>
+    <Property name="scale" value="1.5 1.5 1.5"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="langhua02"/>
+    <Property name="position" value="-3350.34 97.4774 2247.26"/>
+    <Property name="orientation" value="0.386948 0 0.922097 0"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="langhua"/>
+    <Property name="position" value="-330.775 70.0845 3702.17"/>
+    <Property name="orientation" value="0.012015 0 0.999922 0"/>
+    <Property name="scale" value="1.3 1.3 1.3"/>
+  </Object>
+
+  <Object type="Model">
+    <Property name="model name" value="小动物/螃蟹.model"/>
+    <Property name="position" value="2200 76.1219 3200"/>
+    <Property name="orientation" value="0.999191 0 0.0401835 0"/>
+    <Property name="animation level" value="100"/>
+  </Object>
+
+  <Object type="Model">
+    <Property name="model name" value="小动物/飞鸟.model"/>
+    <Property name="position" value="2479.58 126.518 3081.94"/>
+    <Property name="orientation" value="0.99877 0 0.0495574 0"/>
+    <Property name="animation level" value="100"/>
+  </Object>
+
+  <Object type="Model">
+    <Property name="model name" value="小动物/飞鸟.model"/>
+    <Property name="position" value="-2600 140.295 1686.43"/>
+    <Property name="orientation" value="0.999859 0 -0.0165254 0"/>
+    <Property name="animation level" value="100"/>
+  </Object>
+
+  <Object type="Model">
+    <Property name="model name" value="小动物/螃蟹.model"/>
+    <Property name="position" value="-800 67.5098 3422.8"/>
+    <Property name="orientation" value="0.653776 0 0.756686 0"/>
+    <Property name="animation level" value="100"/>
+  </Object>
+
+  <Object type="Model">
+    <Property name="model name" value="小动物/螃蟹.model"/>
+    <Property name="position" value="-3800 102.89 700"/>
+    <Property name="orientation" value="0.999191 0 0.0401835 0"/>
+    <Property name="animation level" value="100"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/灌木小灌木03.mesh"/>
+    <Property name="position" value="511.812 262.015 -3227.06"/>
+    <Property name="orientation" value="0.92053 -0.068311 -0.384075 0.0208429"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/灌木小灌木03.mesh"/>
+    <Property name="position" value="-1353.66 575.064 -2816.67"/>
+    <Property name="orientation" value="0.853212 -0.0226216 -0.520855 -0.0146082"/>
+    <Property name="scale" value="0.694444 0.694444 0.694444"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/新灌木小花_01.mesh"/>
+    <Property name="position" value="-3322.77 137.694 -572.264"/>
+    <Property name="orientation" value="0.749194 0 -0.66235 0"/>
+    <Property name="scale" value="0.846154 0.846154 0.846154"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/灌木大灌木07.mesh"/>
+    <Property name="position" value="-3107.73 98.1301 -691.809"/>
+    <Property name="orientation" value="-0.859995 0 -0.510288 0"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/新灌木小花_01.mesh"/>
+    <Property name="position" value="-2819.04 143.024 -810.263"/>
+    <Property name="orientation" value="0.716601 0 -0.697479 0"/>
+    <Property name="scale" value="0.846154 0.846154 0.846154"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄_粉色山茶树01.mesh"/>
+    <Property name="position" value="-3512.55 125.532 -622.568"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄_粉色山茶树03.mesh"/>
+    <Property name="position" value="-3877.81 113.726 -1818.47"/>
+    <Property name="orientation" value="0.835669 0.0106131 0.494117 0.239562"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄_粉色山茶树04.mesh"/>
+    <Property name="position" value="546.153 280.942 -3313.82"/>
+    <Property name="orientation" value="0.090899 0 0.995861 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄_粉色山茶树04.mesh"/>
+    <Property name="position" value="-2955.2 599.427 -3005.41"/>
+    <Property name="orientation" value="0.920535 0.0287868 0.387621 0.0392307"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_石头工具台01.mesh"/>
+    <Property name="position" value="-2762.37 563.183 -2356.05"/>
+    <Property name="orientation" value="-0.909405 0 -0.415909 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_石头工具台02.mesh"/>
+    <Property name="position" value="-2292.41 114.979 -407.058"/>
+    <Property name="orientation" value="0.922238 0 0.386621 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_石头工具台04.mesh"/>
+    <Property name="position" value="-2100 136.382 -500"/>
+    <Property name="scale" value="1.6 1.6 1.6"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_石头工具台03.mesh"/>
+    <Property name="position" value="-2040.03 154.77 -329.778"/>
+    <Property name="orientation" value="0.849883 0 0.526971 0"/>
+    <Property name="scale" value="1.3 1.3 1.3"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_皓月石01.mesh"/>
+    <Property name="position" value="-2000 332.377 -500"/>
+    <Property name="orientation" value="0.94646 0 0 -0.322821"/>
+    <Property name="scale" value="1.1 1.1 1.1"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_皓月石01.mesh"/>
+    <Property name="position" value="-2676.85 239.063 250.308"/>
+    <Property name="orientation" value="0.987249 0 0 -0.159184"/>
+    <Property name="scale" value="1.65 1.65 1.65"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄_曲水石头03.mesh"/>
+    <Property name="position" value="-2548.52 96.8176 244.045"/>
+    <Property name="orientation" value="0.991905 -1.49759e-006 0.126963 -7.53169e-007"/>
+    <Property name="scale" value="1.4 1.4 1.4"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_皓月石03.mesh"/>
+    <Property name="position" value="-2400 156.946 300"/>
+    <Property name="orientation" value="0.88384 -0.467776 0.00168046 -0.00317521"/>
+    <Property name="scale" value="1.7 1.7 1.7"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_皓月石02.mesh"/>
+    <Property name="position" value="-2500 148.756 426.521"/>
+    <Property name="scale" value="1.5 1.5 1.5"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_皓月石01.mesh"/>
+    <Property name="position" value="-2900 249.799 180.876"/>
+    <Property name="orientation" value="0.649277 0.552317 0.380982 -0.358105"/>
+    <Property name="scale" value="2.31 2.31 2.31"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄_封边石堆一01.mesh"/>
+    <Property name="position" value="-3200 109.595 -200"/>
+    <Property name="orientation" value="0.943461 0 0.331485 0"/>
+    <Property name="scale" value="1 0.625 1"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_皓月石03.mesh"/>
+    <Property name="position" value="-3278.04 158.924 38.1312"/>
+    <Property name="orientation" value="0.176438 -0.32999 -0.908642 -0.185333"/>
+    <Property name="scale" value="1.7 1.7 1.7"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_皓月石01.mesh"/>
+    <Property name="position" value="-3300 233.595 -200"/>
+    <Property name="orientation" value="0.850643 0.461568 0.13195 -0.214366"/>
+    <Property name="scale" value="2.31 2.31 2.31"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_皓月石01.mesh"/>
+    <Property name="position" value="-3346.55 235.838 -12.6776"/>
+    <Property name="orientation" value="0.984442 0.0119976 -0.0744089 -0.158731"/>
+    <Property name="scale" value="2.145 2.145 2.145"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_皓月石02.mesh"/>
+    <Property name="position" value="-3400 263.381 -187.879"/>
+    <Property name="scale" value="1.5 1.5 1.5"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_皓月石01.mesh"/>
+    <Property name="position" value="-2800 106.644 -300"/>
+    <Property name="orientation" value="0.346254 -0.149072 0.924538 -0.05583"/>
+    <Property name="scale" value="3.6465 3.6465 3.6465"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_皓月石01.mesh"/>
+    <Property name="position" value="-2700 133.451 -300"/>
+    <Property name="orientation" value="0.985516 -0.00942997 0.0584855 -0.158904"/>
+    <Property name="scale" value="2.02583 2.02583 2.02583"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_皓月石01.mesh"/>
+    <Property name="position" value="-2760.53 87.9987 -295.334"/>
+    <Property name="orientation" value="0.850643 0.461568 0.13195 -0.214366"/>
+    <Property name="scale" value="2.31 2.31 2.31"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_石头工具台02.mesh"/>
+    <Property name="position" value="-2752.53 88.045 -272.784"/>
+    <Property name="orientation" value="0.917305 0 0.398186 0"/>
+    <Property name="scale" value="0.769231 0.769231 0.769231"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄_封边石堆一01.mesh"/>
+    <Property name="position" value="-3139.7 548.709 -1800"/>
+    <Property name="orientation" value="0.77584 0 0.630931 0"/>
+    <Property name="scale" value="0.625 0.390625 0.625"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_皓月石01.mesh"/>
+    <Property name="position" value="-3239.7 619.802 -1800"/>
+    <Property name="orientation" value="0.755946 0.361917 0.411764 -0.35779"/>
+    <Property name="scale" value="1.44375 1.44375 1.44375"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_皓月石02.mesh"/>
+    <Property name="position" value="-3151.35 640.597 -1787.88"/>
+    <Property name="orientation" value="0.941118 0 0.338079 0"/>
+    <Property name="scale" value="0.9375 0.9375 0.9375"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_皓月石01.mesh"/>
+    <Property name="position" value="-3131.05 583.161 -1612.68"/>
+    <Property name="orientation" value="0.951632 -0.0423725 0.262791 -0.153441"/>
+    <Property name="scale" value="1.34063 1.34063 1.34063"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_石头工具台04.mesh"/>
+    <Property name="position" value="-1499.13 568.775 -2643.91"/>
+    <Property name="orientation" value="0.971173 0 0.238377 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_石头工具台03.mesh"/>
+    <Property name="position" value="-1594.9 545.786 -2604.91"/>
+    <Property name="orientation" value="0.958986 0 -0.283456 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_石头工具台05.mesh"/>
+    <Property name="position" value="-2367.28 567.186 -2642.97"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_皓月石02.mesh"/>
+    <Property name="position" value="-2400 585.635 -2634.42"/>
+    <Property name="scale" value="0.625 0.625 0.625"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_皓月石01.mesh"/>
+    <Property name="position" value="-2259.06 568.658 -2700"/>
+    <Property name="orientation" value="0.606086 0 0.795399 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_皓月石03.mesh"/>
+    <Property name="position" value="-2734.56 747.405 -2453.8"/>
+    <Property name="orientation" value="0.748053 0.663639 0 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄_封边石堆一01.mesh"/>
+    <Property name="position" value="3232.74 91.9681 -215.573"/>
+    <Property name="orientation" value="0.423398 0 0.905944 0"/>
+    <Property name="scale" value="1.4 0.875 1.4"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_皓月石01.mesh"/>
+    <Property name="position" value="3132.08 246.339 -334.434"/>
+    <Property name="orientation" value="0.875018 0.00519661 -0.165585 0.454868"/>
+    <Property name="scale" value="3.52393 3.52393 3.52393"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_皓月石02.mesh"/>
+    <Property name="position" value="3358.57 304.386 -134.039"/>
+    <Property name="orientation" value="0.699767 0 0.714373 0"/>
+    <Property name="scale" value="2.25 2.25 2.25"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_皓月石01.mesh"/>
+    <Property name="position" value="3329.34 291.446 -216.795"/>
+    <Property name="orientation" value="0.45577 0.61783 -0.601456 -0.220938"/>
+    <Property name="scale" value="3.696 3.696 3.696"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="曼陀山庄/曼陀山庄皓月洲副本_石头工具台05.mesh"/>
+    <Property name="position" value="-2900 563.011 -1500"/>
+  </Object>
+
+</Scene>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Scene formatVersion="0.1.1" name="tlbb2_login">
+
+  <Terrain filename="tlbb2_login.Terrain"/>
+
+  <Object name="#FairyEnviroment" type="Enviroment"/>
+
+  <Object name="#FairyMainLightOne" type="Light">
+    <Property name="type" value="directional"/>
+    <Property name="diffuse" value="0.6 0.6 0.6"/>
+    <Property name="specular" value="0.3 0.3 0.3"/>
+    <Property name="direction" value="-1 -1 -1"/>
+  </Object>
+
+  <Object name="#FairyMainLightTwo" type="Light">
+    <Property name="type" value="directional"/>
+    <Property name="diffuse" value="0.1 0.1 0.1"/>
+    <Property name="direction" value="1 -1 -1"/>
+  </Object>
+
+  <Object name="#FairySkyDome" type="SkyDome">
+    <Property name="material" value="CloudySky"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2登陆界面/登陆界面天空.mesh"/>
+    <Property name="position" value="300 0.00012207 198.161"/>
+    <Property name="scale" value="3.2 3.2 3.2"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2登陆界面/登陆界面前景城墙.mesh"/>
+    <Property name="position" value="300 0 268.51"/>
+    <Property name="scale" value="3.1 3.1 3.1"/>
+  </Object>
+
+  <Object type="Effect">
+    <Property name="effect name" value="天龙2登陆界面_雾"/>
+    <Property name="position" value="-1200 0 286"/>
+  </Object>
+
+  <Object type="Effect">
+    <Property name="effect name" value="天龙2登陆界面_小风01"/>
+    <Property name="position" value="998 112 276"/>
+  </Object>
+
+  <Object type="Effect">
+    <Property name="effect name" value="天龙2登陆界面_小风"/>
+    <Property name="position" value="733 277 276"/>
+  </Object>
+
+  <Object type="Effect">
+    <Property name="effect name" value="天龙2登陆界面_风沙"/>
+    <Property name="position" value="1800 0 277"/>
+  </Object>
+
+  <Object type="Effect">
+    <Property name="effect name" value="天龙2登陆界面_掉渣"/>
+    <Property name="position" value="1415 1241 277"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2登陆界面/登陆界面远云.mesh"/>
+    <Property name="position" value="300 600 195"/>
+    <Property name="scale" value="8 8 8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2登陆界面/登陆界面近云.mesh"/>
+    <Property name="position" value="300 1300 196"/>
+    <Property name="scale" value="8 8 8"/>
+  </Object>
+
+  <Object type="Effect">
+    <Property name="effect name" value="天龙2登陆界面_飞鸟"/>
+    <Property name="position" value="1400 1200 247"/>
+  </Object>
+
+  <Object type="Effect">
+    <Property name="effect name" value="天龙2登陆界面_火把"/>
+    <Property name="position" value="1117 549 282"/>
+  </Object>
+
+  <Object type="Effect">
+    <Property name="effect name" value="天龙2登陆界面_云_01"/>
+    <Property name="position" value="-1500 600 345"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2登陆界面/登陆界面前景石头.mesh"/>
+    <Property name="position" value="-665.726 0 455.34"/>
+    <Property name="scale" value="3.21429 3.21429 3.21429"/>
+  </Object>
+
+  <Object type="Effect">
+    <Property name="effect name" value="天龙2登陆界面_雾01"/>
+    <Property name="position" value="-164 703 278"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2登陆界面/登陆界面前景废墟.mesh"/>
+    <Property name="position" value="299 3 279"/>
+    <Property name="scale" value="3.1 3.1 3.1"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2登陆界面/登陆界面前景城门.mesh"/>
+    <Property name="position" value="300 0 269"/>
+    <Property name="scale" value="3.1 3.1 3.1"/>
+  </Object>
+
+</Scene>

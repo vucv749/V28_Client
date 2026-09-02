@@ -1,0 +1,197 @@
+material Terrain/OneLayer
+{
+    // fragment program, for compatible with other material
+
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/OneLayer_vs
+						{
+						}
+            fragment_program_ref Terrain/OneLayer_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+        }
+    }
+
+    	technique
+	{
+		scheme Depth
+		pass
+		{
+			fog_override true none
+
+			vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+			{
+			}
+			fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+			{
+			}
+		}
+	}
+}
+
+material Terrain/TwoLayer
+{
+    // fragment program for DirectX only, test on GeForce FX 5700LE, performance boost %5
+
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayer_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayer_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+        }
+    }
+
+    	technique
+	{
+		scheme Depth
+		pass
+		{
+			fog_override true none
+
+			vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+			{
+			}
+			fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+			{
+			}
+		}
+	}
+}
+
+material Terrain/OneLayerLightmap
+{
+    // fragment program, never tested
+
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/OneLayerLightmap_vs
+						{
+						}
+            fragment_program_ref Terrain/OneLayerLightmap_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <lightmap>
+                texture <lightmap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 2
+            }
+        }
+    }
+
+    	technique
+	{
+		scheme Depth
+		pass
+		{
+			fog_override true none
+
+			vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+			{
+			}
+			fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+			{
+			}
+		}
+	}
+}
+
+material Terrain/TwoLayerLightmap
+{
+    // fragment program, never tested
+
+    	technique
+	{
+		scheme Depth
+		pass
+		{
+			fog_override true none
+
+			vertex_program_ref CartoonEffect/VS/DrawDepth_NoTex
+			{
+			}
+			fragment_program_ref CartoonEffect/PS/DrawDepth_NoTex
+			{
+			}
+		}
+	}
+	
+    technique
+    {
+        pass
+        {
+        		vertex_program_ref Terrain/TwoLayerLightmap_vs
+						{
+						}
+            fragment_program_ref Terrain/TwoLayerLightmap_ps
+            {
+            }
+
+            texture_unit
+            {
+                texture_alias <layer0>
+                texture <layer0>
+                //tex_address_mode wrap
+            }
+
+            texture_unit
+            {
+                texture_alias <layer1>
+                texture <layer1>
+                //tex_address_mode wrap
+                tex_coord_set 1
+            }
+
+            texture_unit
+            {
+                texture_alias <lightmap>
+                texture <lightmap>
+                tex_address_mode clamp
+                tex_coord_set 7
+                sampler_index 2
+            }
+        }
+    }
+}

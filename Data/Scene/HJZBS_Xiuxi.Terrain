@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Terrain name="HJZBS_Xiuxi" tileSize="32" xsize="256" zsize="256">
+
+  <scale x="100" y="100" z="100"/>
+
+  <heightmap filename="HJZBS_Xiuxi.Heightmap" type="standard"/>
+
+  <gridInfo filename="HJZBS_Xiuxi.GridInfo" type="standard"/>
+
+  <lightmap filename="HJZBS_Xiuxi.lightmap.png" type="image"/>
+
+  <useColorMap useColorMap="true"/>
+
+  <colorMap filename="HJZBS_XiuxiColor.tga"/>
+
+  <useColorMapAlphaBlend useColorMapAlphaBlend="true"/>
+
+  <textures>
+    <texture filename="曼陀山庄/曼陀山庄_地砖03.jpg" type="image"/>
+  </textures>
+
+  <pixmaps>
+    <pixmap bottom="0.25" left="0" right="0.25" textureId="0" top="0"/>
+    <pixmap bottom="0.5" left="0" right="0.25" textureId="0" top="0.25"/>
+    <pixmap bottom="0.75" left="0" right="0.25" textureId="0" top="0.5"/>
+    <pixmap bottom="1" left="0" right="0.25" textureId="0" top="0.75"/>
+    <pixmap bottom="0.25" left="0.25" right="0.5" textureId="0" top="0"/>
+    <pixmap bottom="0.5" left="0.25" right="0.5" textureId="0" top="0.25"/>
+    <pixmap bottom="0.75" left="0.25" right="0.5" textureId="0" top="0.5"/>
+    <pixmap bottom="1" left="0.25" right="0.5" textureId="0" top="0.75"/>
+    <pixmap bottom="0.25" left="0.5" right="0.75" textureId="0" top="0"/>
+    <pixmap bottom="0.5" left="0.5" right="0.75" textureId="0" top="0.25"/>
+    <pixmap bottom="0.75" left="0.5" right="0.75" textureId="0" top="0.5"/>
+    <pixmap bottom="1" left="0.5" right="0.75" textureId="0" top="0.75"/>
+    <pixmap bottom="0.25" left="0.75" right="1" textureId="0" top="0"/>
+    <pixmap bottom="0.5" left="0.75" right="1" textureId="0" top="0.25"/>
+    <pixmap bottom="0.75" left="0.75" right="1" textureId="0" top="0.5"/>
+    <pixmap bottom="1" left="0.75" right="1" textureId="0" top="0.75"/>
+  </pixmaps>
+
+  <materials>
+    <template material="Terrain/OneLayerColorMap" name="OneLayer"/>
+    <template material="Terrain/OneLayerLightmapColorMap" name="OneLayerLightmap"/>
+    <template material="Terrain/TwoLayerColorMapAlphaBlendBottom" name="TwoLayer"/>
+    <template material="Terrain/TwoLayerLightmapColorMapAlphaBlendBottom" name="TwoLayerLightmap"/>
+    <fog_replacement exp="Terrain/OneLayer_ps%fog_exp" exp2="Terrain/OneLayer_ps%fog_exp2" linear="Terrain/OneLayer_ps%fog_linear" none="Terrain/OneLayer_ps"/>
+    <fog_replacement exp="Terrain/TwoLayer_ps%fog_exp" exp2="Terrain/TwoLayer_ps%fog_exp2" linear="Terrain/TwoLayer_ps%fog_linear" none="Terrain/TwoLayer_ps"/>
+    <fog_replacement exp="Terrain/OneLayerLightmap_ps%fog_exp" exp2="Terrain/OneLayerLightmap_ps%fog_exp2" linear="Terrain/OneLayerLightmap_ps%fog_linear" none="Terrain/OneLayerLightmap_ps"/>
+    <fog_replacement exp="Terrain/TwoLayerLightmap_ps%fog_exp" exp2="Terrain/TwoLayerLightmap_ps%fog_exp2" linear="Terrain/TwoLayerLightmap_ps%fog_linear" none="Terrain/TwoLayerLightmap_ps"/>
+  </materials>
+
+</Terrain>

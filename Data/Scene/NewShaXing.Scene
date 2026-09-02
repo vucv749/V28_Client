@@ -1,0 +1,1959 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Scene formatVersion="0.1.1" name="NewShaXing">
+
+  <Author>Genva Xie</Author>
+
+  <Copyright>Sohu-inc</Copyright>
+
+  <Description>This is a template scene file for fairy editor</Description>
+
+  <Terrain filename="NewShaXing.Terrain"/>
+
+  <Object name="#FairyEnviroment" type="Enviroment">
+    <Property name="ambient" value="0.521569 0.556863 0.686275"/>
+    <Property name="fog.mode" value="linear"/>
+    <Property name="fog.colour" value="0.419608 0.564706 0.87451"/>
+    <Property name="fog.linear start" value="3000"/>
+    <Property name="fog.linear end" value="19000"/>
+    <Property name="weather.particle system name" value="snow"/>
+  </Object>
+
+  <Object name="#FairyMainLightOne" type="Light">
+    <Property name="type" value="directional"/>
+    <Property name="diffuse" value="0.913726 0.894118 0.803922"/>
+    <Property name="specular" value="0.34902 0.364706 0.419608"/>
+    <Property name="direction" value="-1 -1 -1"/>
+    <Property name="cast shadows" value="true"/>
+  </Object>
+
+  <Object name="#FairyMainLightTwo" type="Light">
+    <Property name="type" value="directional"/>
+    <Property name="diffuse" value="0.247059 0.27451 0.321569"/>
+    <Property name="specular" value="0.184314 0.192157 0.211765"/>
+    <Property name="direction" value="1 -1 -1"/>
+  </Object>
+
+  <Object name="#FairySceneConfig" type="SceneConfig">
+    <Property name="SetCamDisCullDepth" value="5000"/>
+    <Property name="SetCamDisCullParam" value="14"/>
+  </Object>
+
+  <Object name="#FairyEnScene" type="EnScene">
+    <Property name="config_file" value="NewShaXing.EnScene"/>
+    <Property name="enabled" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新雁门关/新雁门关_远山01.mesh"/>
+    <Property name="position" value="-7559.77 -4537.45 -13433"/>
+    <Property name="orientation" value="-0.915132 0 -0.403154 0"/>
+    <Property name="scale" value="0.923077 0.923077 0.923077"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/通用物件_雾凇树03.mesh"/>
+    <Property name="position" value="-1494.95 -14.3191 787.547"/>
+    <Property name="orientation" value="0.986548 0.102962 0.0976077 -0.0811814"/>
+    <Property name="scale" value="0.769231 0.769231 0.769231"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/通用物件_雾凇树04.mesh"/>
+    <Property name="position" value="-3924.14 -3.9703 -2355.07"/>
+    <Property name="orientation" value="-0.788314 0 0.615269 0"/>
+    <Property name="scale" value="0.625 0.625 0.625"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/通用物件_雾凇树04.mesh"/>
+    <Property name="position" value="1912.02 59.9687 302.946"/>
+    <Property name="orientation" value="-0.95186 0 -0.306533 0"/>
+    <Property name="scale" value="0.75 0.75 0.75"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树01.mesh"/>
+    <Property name="position" value="3136.7 -1399.31 516"/>
+    <Property name="orientation" value="0.780531 -0.0221225 -0.613068 -0.120111"/>
+    <Property name="scale" value="1.4 1.4 1.4"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树02.mesh"/>
+    <Property name="position" value="2550.23 -1734.97 992.384"/>
+    <Property name="orientation" value="0.999427 0 -0.0338207 0"/>
+    <Property name="scale" value="1.5 1.5 1.5"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树02.mesh"/>
+    <Property name="position" value="3579.41 -359.313 -4533.17"/>
+    <Property name="orientation" value="0.569784 0.1049 0.810795 -0.0833589"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新雁门关/新雁门关_远山01.mesh"/>
+    <Property name="position" value="-14147.7 -4757.83 -6447.05"/>
+    <Property name="orientation" value="-0.849749 0 -0.527186 0"/>
+    <Property name="scale" value="0.923077 0.923077 0.923077"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树02.mesh"/>
+    <Property name="position" value="-2445.02 -3862.62 2633.16"/>
+    <Property name="orientation" value="-0.0529568 0 -0.998594 0"/>
+    <Property name="scale" value="1.3 1.3 1.3"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树01.mesh"/>
+    <Property name="position" value="-3182.74 -3615.71 1931.63"/>
+    <Property name="orientation" value="0.585972 0 -0.81033 0"/>
+    <Property name="scale" value="2.1 2.1 2.1"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树01.mesh"/>
+    <Property name="position" value="-5428.19 -3671.69 200"/>
+    <Property name="orientation" value="0.996124 0 -0.0879272 0"/>
+    <Property name="scale" value="2.1 2.1 2.1"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_银杏树01.mesh"/>
+    <Property name="position" value="-915.493 -1306.16 3109.86"/>
+    <Property name="orientation" value="0.773752 0.0504203 -0.624306 0.0948894"/>
+    <Property name="scale" value="1.3 1.3 1.3"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_银杏树02.mesh"/>
+    <Property name="position" value="-1000.18 -1957.46 2211.67"/>
+    <Property name="orientation" value="0.721636 0.043949 -0.690664 0.0171102"/>
+    <Property name="scale" value="1.56 1.56 1.56"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_银杏树02.mesh"/>
+    <Property name="position" value="2058.73 -1793.23 1570.43"/>
+    <Property name="orientation" value="-0.742844 0 -0.669463 0"/>
+    <Property name="scale" value="1.3 1.3 1.3"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_银杏树03.mesh"/>
+    <Property name="position" value="1420.23 -1249.57 2311.63"/>
+    <Property name="orientation" value="-0.479337 -0.0395653 -0.873284 -0.0776625"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_银杏树02.mesh"/>
+    <Property name="position" value="-1961.34 -2050.49 1734.96"/>
+    <Property name="orientation" value="0.635945 0 -0.771733 0"/>
+    <Property name="scale" value="1.2 1.2 1.2"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_银杏树03.mesh"/>
+    <Property name="position" value="5257.28 -1772.79 -3000"/>
+    <Property name="orientation" value="0.0963392 0.0688468 -0.985751 0.119399"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_银杏树03.mesh"/>
+    <Property name="position" value="1717.69 -2892.96 3111.68"/>
+    <Property name="orientation" value="0.999989 0 -0.00461555 0"/>
+    <Property name="scale" value="1.68 1.68 1.68"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/至尊战场_小枫树01.mesh"/>
+    <Property name="position" value="2394.81 -2611.94 2832.73"/>
+    <Property name="orientation" value="0.96605 0 0.258346 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水月山庄/新山石_远景山石_02.mesh"/>
+    <Property name="position" value="-5559.77 -5748.91 25581.8"/>
+    <Property name="scale" value="2.1 2.1 2.1"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水月山庄/新山石_远景山石_03.mesh"/>
+    <Property name="position" value="-2993.78 -5617.54 25583.5"/>
+    <Property name="scale" value="2.2 2.2 2.2"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水月山庄/新山石_远景山石_02.mesh"/>
+    <Property name="position" value="7393.32 -8057.82 19100"/>
+    <Property name="orientation" value="-0.15764 0 0.987495 0"/>
+    <Property name="scale" value="2.52 2.52 2.52"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/至尊战场_银杏树06.mesh"/>
+    <Property name="position" value="4599.61 -2850.86 -1878.41"/>
+    <Property name="orientation" value="0.610056 -0.0916013 -0.785474 -0.0496056"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/至尊战场_小枫树01.mesh"/>
+    <Property name="position" value="5577.05 -2104.36 -2409.09"/>
+    <Property name="orientation" value="0.365337 0.0582398 -0.928288 0.0375893"/>
+    <Property name="scale" value="1.3 1.3 1.3"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/至尊战场_银杏树03.mesh"/>
+    <Property name="position" value="4112.81 -4313.27 690.025"/>
+    <Property name="orientation" value="0.948052 0 0.318114 0"/>
+    <Property name="scale" value="1.68 1.68 1.68"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/至尊战场_银杏树03.mesh"/>
+    <Property name="position" value="4400 -5997.45 -1725.01"/>
+    <Property name="orientation" value="0.894947 0 -0.446173 0"/>
+    <Property name="scale" value="1.68 1.68 1.68"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树02.mesh"/>
+    <Property name="position" value="839.066 -503.277 4101.68"/>
+    <Property name="orientation" value="-0.347497 0 0.937679 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新雁门关/新雁门关_远山01.mesh"/>
+    <Property name="position" value="11392.6 -6832.67 -28802.5"/>
+    <Property name="orientation" value="0.799564 0 -0.600565 0"/>
+    <Property name="scale" value="1.18681 1.18681 1.18681"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/至尊战场_银杏树06.mesh"/>
+    <Property name="position" value="4441.75 -3098.68 -3500"/>
+    <Property name="orientation" value="0.610056 -0.0916013 -0.785474 -0.0496056"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树01.mesh"/>
+    <Property name="position" value="3912.77 -948.528 -3699.93"/>
+    <Property name="orientation" value="-0.342492 -0.0609061 -0.937305 -0.0213855"/>
+    <Property name="scale" value="1.7 1.7 1.7"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树03.mesh"/>
+    <Property name="position" value="-1370.23 -2415.81 3240.87"/>
+    <Property name="orientation" value="0.427502 0 -0.904015 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树03.mesh"/>
+    <Property name="position" value="-2999.87 -1846.14 1715.09"/>
+    <Property name="orientation" value="0.748809 0.116085 -0.626567 -0.182261"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/通用物件_雾凇树01.mesh"/>
+    <Property name="position" value="2925.35 -36.1847 -3105.76"/>
+    <Property name="orientation" value="0.996847 0 -0.0793025 0"/>
+    <Property name="transparency switch" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/通用物件_雾凇树02.mesh"/>
+    <Property name="position" value="-3179.47 -493.433 -3521.95"/>
+    <Property name="orientation" value="0.905616 0 0.424084 0"/>
+    <Property name="scale" value="0.769231 0.769231 0.769231"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/通用物件_雾凇树03.mesh"/>
+    <Property name="position" value="-3438.95 -250.861 -3184.1"/>
+    <Property name="orientation" value="-0.40022 0.0387436 0.913569 0.0609808"/>
+    <Property name="scale" value="1.4 1.4 1.4"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_银杏树03.mesh"/>
+    <Property name="position" value="4645 -2108.67 200"/>
+    <Property name="orientation" value="-0.349395 -0.0835041 -0.929702 -0.0813348"/>
+    <Property name="scale" value="1.82 1.51667 1.82"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_银杏树03.mesh"/>
+    <Property name="position" value="5287.98 -2542.24 -2462.42"/>
+    <Property name="orientation" value="0.549472 -0.114819 -0.827348 0.0201226"/>
+    <Property name="scale" value="1.82 1.51667 1.82"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树01.mesh"/>
+    <Property name="position" value="3055.67 -1025.08 -257.128"/>
+    <Property name="orientation" value="-0.874116 -0.0454875 0.480337 0.0559071"/>
+    <Property name="scale" value="1.9 1.9 1.9"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树01.mesh"/>
+    <Property name="position" value="4186.38 -1134.31 -1013.75"/>
+    <Property name="orientation" value="0.853082 -0.107383 0.510588 0.00387159"/>
+    <Property name="scale" value="1.5 1.5 1.5"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树01.mesh"/>
+    <Property name="position" value="3194.51 -1147.27 -2636.48"/>
+    <Property name="orientation" value="0.795866 -0.0446222 -0.547413 -0.25483"/>
+    <Property name="scale" value="1.5 1.5 1.5"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树02.mesh"/>
+    <Property name="position" value="3328.55 -857.404 -1281.15"/>
+    <Property name="orientation" value="0.862933 0 -0.505318 0"/>
+    <Property name="scale" value="1.3 1.3 1.3"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新雁门关/新雁门关_红榆树01.mesh"/>
+    <Property name="position" value="4100 -3370.76 -4398.13"/>
+    <Property name="orientation" value="0.924391 0 -0.381444 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新雁门关/新雁门关_红榆树01.mesh"/>
+    <Property name="position" value="4015.04 -3052.94 2756.2"/>
+    <Property name="orientation" value="0.974843 -0.035639 0.205601 0.078315"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树01.mesh"/>
+    <Property name="position" value="4908.31 -815.311 -4688.24"/>
+    <Property name="orientation" value="0.257366 0.229236 -0.936612 0.0629905"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_银杏树03.mesh"/>
+    <Property name="position" value="4700 -1885.1 2400"/>
+    <Property name="orientation" value="0.245733 0.219534 -0.918699 0.21776"/>
+    <Property name="scale" value="1.68039 1.07718 1.68039"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_银杏树03.mesh"/>
+    <Property name="position" value="-5204.99 -3125.09 -1300"/>
+    <Property name="orientation" value="0.724464 0.112568 -0.67515 -0.0815845"/>
+    <Property name="scale" value="1.68039 1.07718 1.68039"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树03.mesh"/>
+    <Property name="position" value="3507.29 -2567.53 3105.03"/>
+    <Property name="orientation" value="-0.385772 0 -0.922594 0"/>
+    <Property name="scale" value="1.3 1.3 1.3"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_银杏树02.mesh"/>
+    <Property name="position" value="-3385.12 -2240.49 213.061"/>
+    <Property name="orientation" value="0.923454 0.245227 -0.288667 -0.0613943"/>
+    <Property name="scale" value="1.3 1.3 1.3"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_银杏树01.mesh"/>
+    <Property name="position" value="-3828.99 -2496.42 -372.105"/>
+    <Property name="orientation" value="0.204299 0.0171611 0.973893 0.0974196"/>
+    <Property name="scale" value="1.79487 1.79487 1.79487"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_银杏树02.mesh"/>
+    <Property name="position" value="3057.67 -2576.57 900"/>
+    <Property name="orientation" value="-0.812674 -0.110697 0.571863 -0.0166207"/>
+    <Property name="scale" value="1.53846 1.53846 1.53846"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_枫树03.mesh"/>
+    <Property name="position" value="1593.52 -1628.91 7333.81"/>
+    <Property name="orientation" value="-0.730057 0.0624541 -0.673004 -0.100876"/>
+    <Property name="scale" value="2.31773 1.98662 2.31773"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新雁门关/新雁门关_红枫树01.mesh"/>
+    <Property name="position" value="-1859.51 -1852.97 6989.5"/>
+    <Property name="orientation" value="-0.676479 0 0.73645 0"/>
+    <Property name="scale" value="1.2 1.2 1.2"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树03.mesh"/>
+    <Property name="position" value="-1072.02 -1097.33 4605"/>
+    <Property name="orientation" value="-0.765031 0 -0.643978 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新雁门关/新雁门关_红枫树01.mesh"/>
+    <Property name="position" value="-3818.21 -1853.53 5545.63"/>
+    <Property name="orientation" value="0.220424 0 -0.975393 0"/>
+    <Property name="scale" value="1.2 1.2 1.2"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石01.mesh"/>
+    <Property name="position" value="-993 -2540.71 944.98"/>
+    <Property name="orientation" value="-0.999907 0 0.0137206 0"/>
+    <Property name="scale" value="1.6 1.6 1.6"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石03.mesh"/>
+    <Property name="position" value="-4055.4 -1431.59 -1116.39"/>
+    <Property name="orientation" value="0.801655 0 -0.597789 0"/>
+    <Property name="scale" value="1.2 1.2 1.2"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石05.mesh"/>
+    <Property name="position" value="-2559.6 -1576.53 793.944"/>
+    <Property name="orientation" value="0.871784 0 0.489898 0"/>
+    <Property name="scale" value="1.73333 1.73333 1.73333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石04.mesh"/>
+    <Property name="position" value="-1400 -1376.18 1301.02"/>
+    <Property name="orientation" value="0.997361 0 -0.0726444 0"/>
+    <Property name="scale" value="1.2 1.2 1.2"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石04.mesh"/>
+    <Property name="position" value="-3237.74 -1350.06 -44.2676"/>
+    <Property name="orientation" value="0.734917 0 -0.678163 0"/>
+    <Property name="scale" value="1.2 1.2 1.2"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石04.mesh"/>
+    <Property name="position" value="-3287.09 -1332.31 -2782.68"/>
+    <Property name="orientation" value="0.0786868 0 -0.996905 0"/>
+    <Property name="scale" value="1.2 1.2 1.2"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石03.mesh"/>
+    <Property name="position" value="2424.26 -1385.6 759.279"/>
+    <Property name="orientation" value="0.90193 0 0.431878 0"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石05.mesh"/>
+    <Property name="position" value="1548.33 -1707.32 1046.75"/>
+    <Property name="orientation" value="0.725151 0 0.688597 0"/>
+    <Property name="scale" value="1.73333 1.73333 1.73333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石04.mesh"/>
+    <Property name="position" value="1659.11 -1281.16 1100"/>
+    <Property name="orientation" value="0.999809 0 -0.0196907 0"/>
+    <Property name="scale" value="1.2 1.2 1.2"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石05.mesh"/>
+    <Property name="position" value="2144.5 -1440.88 577.361"/>
+    <Property name="orientation" value="0.335094 0 0.942186 0"/>
+    <Property name="scale" value="1.56 1.56 1.56"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石05.mesh"/>
+    <Property name="position" value="-3333.79 -1762.3 -22.5854"/>
+    <Property name="orientation" value="0.952636 0 0.304115 0"/>
+    <Property name="scale" value="1.56 1.56 1.56"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石04.mesh"/>
+    <Property name="position" value="2825.47 -1275.3 -1302.83"/>
+    <Property name="orientation" value="0.755121 0 0.655591 0"/>
+    <Property name="scale" value="1.2 1.2 1.2"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石03.mesh"/>
+    <Property name="position" value="2694.12 -1283.35 -2661.92"/>
+    <Property name="orientation" value="0.76301 0 0.646389 0"/>
+    <Property name="scale" value="1.2 1.2 1.2"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石05.mesh"/>
+    <Property name="position" value="-2630.53 -2492.88 897.161"/>
+    <Property name="orientation" value="0.899256 0 0.437424 0"/>
+    <Property name="scale" value="1.8 1.8 1.8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石02.mesh"/>
+    <Property name="position" value="-505.901 -1794.16 2098.82"/>
+    <Property name="orientation" value="0.646941 0 0.762535 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石04.mesh"/>
+    <Property name="position" value="-633.736 -1410.05 1928.42"/>
+    <Property name="orientation" value="0.703311 0 -0.710882 0"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石04.mesh"/>
+    <Property name="position" value="1019.07 -1551.57 1751.18"/>
+    <Property name="orientation" value="0.715242 0.126835 0.681682 0.0875061"/>
+    <Property name="scale" value="1 1 0.909091"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石05.mesh"/>
+    <Property name="position" value="-3697.79 -2808.17 -1417.03"/>
+    <Property name="orientation" value="0.999906 0 0.0137648 0"/>
+    <Property name="scale" value="2.88 2.88 2.88"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石05.mesh"/>
+    <Property name="position" value="-770.834 -1397.07 2893.99"/>
+    <Property name="orientation" value="0.996355 -0.0107843 -0.0624234 -0.0570783"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石阶.mesh"/>
+    <Property name="position" value="36.7528 -847.982 4479.74"/>
+    <Property name="orientation" value="0.99976 0 -0.0219127 0"/>
+    <Property name="scale" value="1 1 0.909091"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石阶.mesh"/>
+    <Property name="position" value="157.734 -482.984 1228.16"/>
+    <Property name="scale" value="1 1.36364 1"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_巨石01.mesh"/>
+    <Property name="position" value="-1287.04 -1711.58 -4792.1"/>
+    <Property name="orientation" value="0.992567 -0.0125702 -0.0153017 0.120065"/>
+    <Property name="scale" value="1.2 1.2 1.2"/>
+    <Property name="transparency switch" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_巨石01.mesh"/>
+    <Property name="position" value="-2094.8 -129.099 -4403.11"/>
+    <Property name="orientation" value="-0.0910097 0.120721 0.988504 -0.000351214"/>
+    <Property name="scale" value="1.2 1.2 1.2"/>
+    <Property name="transparency switch" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_巨石01.mesh"/>
+    <Property name="position" value="35.7606 -516.736 -6228.29"/>
+    <Property name="orientation" value="0.879727 0.0462108 0.459909 0.111528"/>
+    <Property name="scale" value="1.56 1.56 1.56"/>
+    <Property name="transparency switch" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_巨石01.mesh"/>
+    <Property name="position" value="-1662.31 -200.906 -4965.84"/>
+    <Property name="orientation" value="-0.7774 -0.0663814 -0.617309 -0.100832"/>
+    <Property name="scale" value="1.2 1.2 1.2"/>
+    <Property name="transparency switch" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_巨石01.mesh"/>
+    <Property name="position" value="1311.64 1304.98 -7702.57"/>
+    <Property name="orientation" value="-0.130685 -0.117787 -0.984043 -0.0264546"/>
+    <Property name="scale" value="1.32 1.32 1.32"/>
+    <Property name="transparency switch" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_巨石01.mesh"/>
+    <Property name="position" value="2161.67 -1599.88 -5644.98"/>
+    <Property name="orientation" value="0.0538184 -0.120649 -0.991225 -0.00418316"/>
+    <Property name="scale" value="1.2 1.2 1.2"/>
+    <Property name="transparency switch" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_巨石01.mesh"/>
+    <Property name="position" value="-1591.6 402.681 -4666.35"/>
+    <Property name="orientation" value="0.136419 0.117631 0.983265 0.0271407"/>
+    <Property name="scale" value="0.8 0.8 0.8"/>
+    <Property name="transparency switch" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_巨石01.mesh"/>
+    <Property name="position" value="473.816 589.873 -5270.61"/>
+    <Property name="orientation" value="-0.98507 -0.00422415 -0.122677 -0.120647"/>
+    <Property name="scale" value="1.2 1.2 1.2"/>
+    <Property name="transparency switch" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石板01.mesh"/>
+    <Property name="position" value="1940.42 -29.8984 -3069.65"/>
+    <Property name="orientation" value="0.937901 0.0173151 -0.346127 0.015406"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石板05.mesh"/>
+    <Property name="position" value="1976.91 16.6382 224.149"/>
+    <Property name="orientation" value="0.42658 0 -0.904449 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石板03.mesh"/>
+    <Property name="position" value="-2448.08 -8.1308 -4200.24"/>
+    <Property name="orientation" value="0.457635 -0.0282475 0.888572 0.0145481"/>
+    <Property name="scale" value="1.4 1.4 1.4"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_巨石01.mesh"/>
+    <Property name="position" value="1186.94 536.222 -4871.33"/>
+    <Property name="orientation" value="0.132118 0.117747 0.983845 0.0266263"/>
+    <Property name="transparency switch" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_巨石01.mesh"/>
+    <Property name="position" value="1998.93 -1578.4 -5588.1"/>
+    <Property name="orientation" value="-0.771277 -0.0673721 -0.624942 -0.100173"/>
+    <Property name="scale" value="1.32 1.32 1.32"/>
+    <Property name="transparency switch" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_巨石01.mesh"/>
+    <Property name="position" value="1564.75 396.081 -6180.67"/>
+    <Property name="orientation" value="-0.0999614 -0.118554 -0.987638 -0.0227718"/>
+    <Property name="scale" value="1.68 1.68 1.68"/>
+    <Property name="transparency switch" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_巨石01.mesh"/>
+    <Property name="position" value="1775.9 -6.04535 -5303.74"/>
+    <Property name="orientation" value="-0.357679 -0.108306 -0.926004 -0.0533238"/>
+    <Property name="transparency switch" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新雁门关/新雁门关_远山01.mesh"/>
+    <Property name="position" value="22000 -3604.3 1600"/>
+    <Property name="orientation" value="0.993617 0 0.112791 0"/>
+    <Property name="scale" value="0.923077 0.923077 0.923077"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新雁门关/新雁门关_远山01.mesh"/>
+    <Property name="position" value="13700 -4909.5 13500"/>
+    <Property name="orientation" value="0.421122 0 -0.907 0"/>
+    <Property name="scale" value="0.923077 0.923077 0.923077"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新雁门关/新雁门关_远山01.mesh"/>
+    <Property name="position" value="-18700 -3412.08 1500"/>
+    <Property name="orientation" value="-0.662763 0 0.748827 0"/>
+    <Property name="scale" value="0.923077 0.615385 0.923077"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石阶.mesh"/>
+    <Property name="position" value="89.2721 -1182.78 6769.98"/>
+    <Property name="orientation" value="1 0 -0.000552758 0"/>
+    <Property name="scale" value="1 1 0.769231"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石01.mesh"/>
+    <Property name="position" value="256.348 -2249.22 7833.87"/>
+    <Property name="orientation" value="0.903901 0.00705351 -0.427669 -0.00333728"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石02.mesh"/>
+    <Property name="position" value="361.943 -2183.3 8632.4"/>
+    <Property name="orientation" value="0.628976 0 0.777424 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石01.mesh"/>
+    <Property name="position" value="-3622.94 24.9112 -2333.55"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_巨石01.mesh"/>
+    <Property name="position" value="705.167 -1832.04 6228.73"/>
+    <Property name="orientation" value="0.701412 0 -0.712754 0"/>
+    <Property name="transparency switch" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/通用物件_雾凇树03.mesh"/>
+    <Property name="position" value="-2630.11 0.614199 69.1042"/>
+    <Property name="orientation" value="0.584541 0 0.811364 0"/>
+    <Property name="scale" value="1.125 1.125 1.125"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/通用物件_雾凇树03.mesh"/>
+    <Property name="position" value="3451.2 5.54924 -3164.18"/>
+    <Property name="orientation" value="0.563906 0 0.825837 0"/>
+    <Property name="scale" value="0.75 0.75 0.75"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/通用物件_雾凇树02.mesh"/>
+    <Property name="position" value="6800 -306.327 -1687.53"/>
+    <Property name="orientation" value="-0.779413 0 0.626508 0"/>
+    <Property name="scale" value="0.75 0.75 0.75"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石板05.mesh"/>
+    <Property name="position" value="-507.284 -467.888 1794.27"/>
+    <Property name="orientation" value="-0.0832373 0 0.99653 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石01.mesh"/>
+    <Property name="position" value="689.581 -289.312 1396.68"/>
+    <Property name="orientation" value="0.963128 0 -0.269046 0"/>
+    <Property name="scale" value="1.5 1.5 1.5"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪松树杆.mesh"/>
+    <Property name="position" value="-2268.99 48.216 545.677"/>
+    <Property name="orientation" value="0.905725 0 0.423869 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石板05.mesh"/>
+    <Property name="position" value="2900.13 157.329 -3614.46"/>
+    <Property name="orientation" value="0.964195 0 -0.265195 0"/>
+  </Object>
+
+  <Object type="Model">
+    <Property name="model name" value="小动物/飞鸟.model"/>
+    <Property name="position" value="1887.91 92.7735 -1329.67"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_石塔01.mesh"/>
+    <Property name="position" value="-2898.05 8.90763 -1469.93"/>
+    <Property name="scale" value="0.434783 0.434783 0.434783"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_石塔02.mesh"/>
+    <Property name="position" value="-2881.31 -0.405449 -2043.97"/>
+    <Property name="orientation" value="0.979243 0 0.202691 0"/>
+    <Property name="scale" value="0.362319 0.362319 0.362319"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_石塔04.mesh"/>
+    <Property name="position" value="-2538.84 12.2281 -787.068"/>
+    <Property name="orientation" value="0.985851 0 0.167624 0"/>
+    <Property name="scale" value="0.714286 0.714286 0.714286"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪松01.mesh"/>
+    <Property name="position" value="5646.07 925.53 -4706.62"/>
+    <Property name="orientation" value="0.98768 -0.0271528 -0.067125 0.138734"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪松01.mesh"/>
+    <Property name="position" value="5430.14 235.896 -6192.47"/>
+    <Property name="orientation" value="0.865969 -0.0094294 -0.499967 -0.00687973"/>
+    <Property name="scale" value="0.769231 0.769231 0.769231"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪松02.mesh"/>
+    <Property name="position" value="6250.52 493.758 -3581.05"/>
+    <Property name="orientation" value="0.887653 0.132443 0.439646 0.0353573"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪松02.mesh"/>
+    <Property name="position" value="6379.68 -141.845 -2707.34"/>
+    <Property name="orientation" value="0.518972 -0.041367 0.851472 0.0629407"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪松02.mesh"/>
+    <Property name="position" value="-6200 -2430.73 1439.19"/>
+    <Property name="orientation" value="0.781726 -0.0767851 0.616831 0.050388"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪松01.mesh"/>
+    <Property name="position" value="-5682.52 -2552.13 1196.25"/>
+    <Property name="orientation" value="0.996243 -0.0866021 0 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪松01.mesh"/>
+    <Property name="position" value="-5792.85 -1793.42 2200"/>
+    <Property name="orientation" value="0.996243 -0.0866021 0 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪松01.mesh"/>
+    <Property name="position" value="5784.01 -535.029 -2230.42"/>
+    <Property name="orientation" value="0.997152 -0.00831415 -0.0118263 0.074029"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪松02.mesh"/>
+    <Property name="position" value="6063.73 24.7853 4454.76"/>
+    <Property name="orientation" value="0.980344 0.0877163 0.075223 -0.159915"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪松02.mesh"/>
+    <Property name="position" value="5183.1 23.2336 4269.24"/>
+    <Property name="orientation" value="0.897534 0.0115277 -0.433908 0.0776276"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪松02.mesh"/>
+    <Property name="position" value="4979.9 -200.459 6300"/>
+    <Property name="orientation" value="0.985474 0.0534595 0.15061 0.0574545"/>
+    <Property name="scale" value="0.714286 0.714286 0.714286"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪松02.mesh"/>
+    <Property name="position" value="5885.57 -485.114 -2728.11"/>
+    <Property name="orientation" value="0.27039 0.0468911 -0.960264 0.0508993"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石05.mesh"/>
+    <Property name="position" value="-4434.86 -1392.79 -2000"/>
+    <Property name="orientation" value="0.994276 -0.0040407 -0.0726937 -0.0782062"/>
+    <Property name="scale" value="1.56 1.56 1.56"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_商道牌坊.mesh"/>
+    <Property name="position" value="132.697 -483.37 2913.36"/>
+    <Property name="scale" value="1.1 1.1 1.1"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_天龙寺佛塔01.mesh"/>
+    <Property name="position" value="-529.719 -2585.25 17943.8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_天龙寺大雄宝殿01.mesh"/>
+    <Property name="position" value="952.15 -2412.8 15582.3"/>
+    <Property name="orientation" value="-1.86265e-007 0 1 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_天龙寺曲型长廊隔断01.mesh"/>
+    <Property name="position" value="2960.61 -2434.42 15517.2"/>
+    <Property name="orientation" value="-4.47035e-008 0 1 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_天龙寺曲型长廊隔断01.mesh"/>
+    <Property name="position" value="-1021.11 -2411.26 15981.1"/>
+    <Property name="orientation" value="-1 0 -2.98023e-008 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_天龙拼接墙01.mesh"/>
+    <Property name="position" value="500 -2867.35 12901.3"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_天龙拼接墙01.mesh"/>
+    <Property name="position" value="100 -2867.35 12901.3"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_天龙拼接墙01.mesh"/>
+    <Property name="position" value="97.4912 -2447.54 12901.3"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_天龙拼接墙03.mesh"/>
+    <Property name="position" value="-300.509 -2448.58 12902.3"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_天龙拼接墙01.mesh"/>
+    <Property name="position" value="-300.509 -2448.58 13298.3"/>
+    <Property name="orientation" value="0.707107 0 0.707107 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石02.mesh"/>
+    <Property name="position" value="1500 -9946.38 15800"/>
+    <Property name="orientation" value="0.525379 0 0.850868 0"/>
+    <Property name="scale" value="7.7 7.7 7.7"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石01.mesh"/>
+    <Property name="position" value="257.478 -2459.65 9593.03"/>
+    <Property name="orientation" value="-0.655039 0.00131703 -0.755554 0.00769122"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新雁门关/新雁门关_红榆树01.mesh"/>
+    <Property name="position" value="-571.712 -1759.7 7275.22"/>
+    <Property name="orientation" value="-0.171757 0 -0.98514 0"/>
+    <Property name="scale" value="0.769231 0.769231 0.769231"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石01.mesh"/>
+    <Property name="position" value="506.688 -2608.92 10492.6"/>
+    <Property name="orientation" value="-0.998644 -0.00525252 0.0514634 0.00577064"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石02.mesh"/>
+    <Property name="position" value="434.23 -2690 11224.2"/>
+    <Property name="orientation" value="0.525379 0 0.850868 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/至尊战场_小枫树01.mesh"/>
+    <Property name="position" value="1043.41 -4843.31 20500"/>
+    <Property name="orientation" value="0.0668553 -0.0554086 0.990584 0.105769"/>
+    <Property name="scale" value="4.80769 4.80769 4.80769"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石05.mesh"/>
+    <Property name="position" value="467.233 -609.998 3898.9"/>
+    <Property name="orientation" value="0.357245 -0.0103542 0.930466 -0.0806213"/>
+    <Property name="scale" value="3.42 3.42 3.42"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石板05.mesh"/>
+    <Property name="position" value="832.296 -537.313 3915.3"/>
+    <Property name="orientation" value="0.903438 0 -0.428722 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石板05.mesh"/>
+    <Property name="position" value="-472.197 -527.598 3200"/>
+    <Property name="orientation" value="0.824581 0 -0.565744 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石06.mesh"/>
+    <Property name="position" value="748.987 -486.233 4129.27"/>
+    <Property name="orientation" value="-0.893972 0 -0.448125 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石板05.mesh"/>
+    <Property name="position" value="600 -534.917 2698"/>
+    <Property name="orientation" value="0.976465 0.0186986 0.206037 0.0609583"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石04.mesh"/>
+    <Property name="position" value="535.142 -478.397 2625.12"/>
+    <Property name="orientation" value="0.285093 0 -0.9585 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石板05.mesh"/>
+    <Property name="position" value="2592.5 -4.97776 -2523.21"/>
+    <Property name="orientation" value="0.990434 -0.132498 -0.00510994 0.0381973"/>
+    <Property name="scale" value="1.5 1.5 1.5"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪松02.mesh"/>
+    <Property name="position" value="5600 -125.516 23.2589"/>
+    <Property name="orientation" value="-0.251732 0.183557 -0.949945 -0.0232075"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪松02.mesh"/>
+    <Property name="position" value="6255.74 105.888 1030.65"/>
+    <Property name="orientation" value="0.172131 0.0598419 -0.982173 -0.0461638"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪松01.mesh"/>
+    <Property name="position" value="6230.16 222.417 345.401"/>
+    <Property name="orientation" value="0.985007 -0.0189097 -0.155593 0.0720543"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪松01.mesh"/>
+    <Property name="position" value="3900 -127.347 5400"/>
+    <Property name="orientation" value="0.987839 -0.088756 -0.127338 -0.00877995"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪松01.mesh"/>
+    <Property name="position" value="5800 97.3906 4002.87"/>
+    <Property name="orientation" value="0.649312 -0.0248794 -0.760108 -0.000821266"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪松01.mesh"/>
+    <Property name="position" value="3000 404.816 5900"/>
+    <Property name="orientation" value="0.618033 -0.147384 -0.772089 -0.0134517"/>
+    <Property name="scale" value="0.769231 0.769231 0.769231"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪松02.mesh"/>
+    <Property name="position" value="6000 255.866 2700"/>
+    <Property name="orientation" value="0.995844 0.0605563 -0.0676121 0.0073418"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪松02.mesh"/>
+    <Property name="position" value="3800 73.1025 6100"/>
+    <Property name="orientation" value="0.894502 0.117831 0.426712 -0.0623943"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_天龙寺前殿佛陀02.mesh"/>
+    <Property name="position" value="899.867 -2452.9 13700"/>
+    <Property name="orientation" value="-0.00326896 0 -0.999996 0"/>
+    <Property name="scale" value="0.588235 0.588235 0.588235"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_石塔01.mesh"/>
+    <Property name="position" value="-3500 56.4832 -1132.33"/>
+    <Property name="scale" value="0.334448 0.334448 0.334448"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_石塔01.mesh"/>
+    <Property name="position" value="-3600 37.4676 -2000"/>
+    <Property name="orientation" value="0.855488 0 -0.517822 0"/>
+    <Property name="scale" value="0.334448 0.334448 0.334448"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_石窟门.mesh"/>
+    <Property name="position" value="188.937 1.80585 -4295.99"/>
+    <Property name="orientation" value="0.999322 0 0.0368072 0"/>
+    <Property name="scale" value="0.423077 0.423077 0.423077"/>
+    <Property name="transparency switch" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_石窟01.mesh"/>
+    <Property name="position" value="-1342.04 -5.97437 -3912.46"/>
+    <Property name="orientation" value="0.987124 0 0.159956 0"/>
+    <Property name="scale" value="0.438596 0.438596 0.438596"/>
+    <Property name="transparency switch" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石板01.mesh"/>
+    <Property name="position" value="1220.38 2.08117 -5530.4"/>
+    <Property name="orientation" value="0.994772 0 -0.102121 0"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_巨石01.mesh"/>
+    <Property name="position" value="577.094 -485.855 -7272.08"/>
+    <Property name="orientation" value="-0.807449 0.0786653 0.577453 -0.0915725"/>
+    <Property name="scale" value="1.76 1.76 1.76"/>
+    <Property name="transparency switch" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_巨石01.mesh"/>
+    <Property name="position" value="-2094.07 -994.692 -5000"/>
+    <Property name="orientation" value="0.917468 0.0360087 0.379049 0.115226"/>
+    <Property name="scale" value="2 2 2"/>
+    <Property name="transparency switch" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_巨石01.mesh"/>
+    <Property name="position" value="-377.449 -539.98 -5444.64"/>
+    <Property name="orientation" value="0.180218 -0.120192 -0.976188 0.0112901"/>
+    <Property name="scale" value="1.2 1.2 1.2"/>
+    <Property name="transparency switch" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_巨石02.mesh"/>
+    <Property name="position" value="-217.602 119.499 -5900"/>
+    <Property name="orientation" value="0.396155 0.071411 0.914978 0.0277825"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_巨石02.mesh"/>
+    <Property name="position" value="-1298.41 -527.099 -5102.35"/>
+    <Property name="orientation" value="0.281333 -0.0726476 -0.956544 0.0243665"/>
+    <Property name="scale" value="1.1 1.1 1.1"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_巨石01.mesh"/>
+    <Property name="position" value="-911.677 -1121.8 -5049.52"/>
+    <Property name="orientation" value="-0.983016 -0.00612684 -0.138201 -0.120565"/>
+    <Property name="scale" value="1.56 1.56 1.56"/>
+    <Property name="transparency switch" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/至尊战场_银杏树04.mesh"/>
+    <Property name="position" value="2014.35 -4064.07 2300.26"/>
+    <Property name="orientation" value="0.725449 0 0.688274 0"/>
+    <Property name="scale" value="4 4 4"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树03.mesh"/>
+    <Property name="position" value="3292.74 -1983.73 810.92"/>
+    <Property name="orientation" value="-0.843722 0 0.536777 0"/>
+    <Property name="scale" value="1.1 1.1 1.1"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_银杏树02.mesh"/>
+    <Property name="position" value="-1484.4 -2085.3 4745.05"/>
+    <Property name="orientation" value="0.720826 -0.0144197 0.691097 -0.0507769"/>
+    <Property name="scale" value="1.28205 1.28205 1.28205"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_巨石01.mesh"/>
+    <Property name="position" value="2700.63 -1725.25 -5300"/>
+    <Property name="orientation" value="-0.993284 0.0167071 0.0441425 -0.105632"/>
+    <Property name="scale" value="1.76 1.76 1.76"/>
+    <Property name="transparency switch" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树02.mesh"/>
+    <Property name="position" value="-1064.4 751.689 -4422.54"/>
+    <Property name="orientation" value="0.976147 0 0.21711 0"/>
+    <Property name="transparency switch" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_天龙拼接墙03.mesh"/>
+    <Property name="position" value="2065.14 -2446.96 12899.5"/>
+    <Property name="orientation" value="0.707107 0 -0.707107 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_天龙拼接墙01.mesh"/>
+    <Property name="position" value="1672.84 -2446.96 12899.6"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_天龙拼接墙01.mesh"/>
+    <Property name="position" value="1272.84 -2446.96 12899.6"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_天龙拼接墙01.mesh"/>
+    <Property name="position" value="472.842 -2446.96 12899.6"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石板05.mesh"/>
+    <Property name="position" value="1330.64 17.907 -3855.85"/>
+    <Property name="orientation" value="0.998602 0 0.0528538 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树02.mesh"/>
+    <Property name="position" value="2064.88 29.7322 -3608.55"/>
+    <Property name="orientation" value="-0.143483 0 0.989651 0"/>
+    <Property name="scale" value="1.4 1.4 1.4"/>
+    <Property name="transparency switch" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="至尊战场/至尊战场_小枫树02.mesh"/>
+    <Property name="position" value="469.657 -1413.99 9200"/>
+    <Property name="orientation" value="-0.144856 0 0.989453 0"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="huangsha_白"/>
+    <Property name="position" value="400 101.441 -1200"/>
+    <Property name="orientation" value="0.729255 0 -0.684241 0"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="snow_小"/>
+    <Property name="position" value="1130.47 760.923 -4403.28"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="snow_小"/>
+    <Property name="position" value="369.45 219.836 3005.85"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石04.mesh"/>
+    <Property name="position" value="1365.06 85.3724 466.927"/>
+    <Property name="orientation" value="0.159979 -0.0546644 -0.985576 -0.00768773"/>
+    <Property name="scale" value="2 2 2"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石板05.mesh"/>
+    <Property name="position" value="1301.71 19.9453 331.598"/>
+    <Property name="orientation" value="0.882633 0 -0.470062 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石板04.mesh"/>
+    <Property name="position" value="-1712.97 42.7262 620.16"/>
+    <Property name="orientation" value="-0.515635 -0.0272508 -0.85605 -0.0236346"/>
+    <Property name="scale" value="0.416667 0.416667 0.416667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_银杏树02.mesh"/>
+    <Property name="position" value="-1600 9654.1 1500"/>
+    <Property name="orientation" value="0.721636 0.043949 -0.690664 0.0171102"/>
+    <Property name="scale" value="1.56 1.56 1.56"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_银杏树02.mesh"/>
+    <Property name="position" value="-1169.67 -2724.21 1969.31"/>
+    <Property name="orientation" value="0.819563 0.0470962 0.57011 0.0327614"/>
+    <Property name="scale" value="1.4 1.4 1.4"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_榆树02.mesh"/>
+    <Property name="position" value="4936.29 -1427.3 -3618.31"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_榆树02.mesh"/>
+    <Property name="position" value="3910.04 -810.622 -6031.59"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_榆树01.mesh"/>
+    <Property name="position" value="-4331.63 -2566 -1349.4"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_榆树01.mesh"/>
+    <Property name="position" value="-5917.23 -2653.14 -727.414"/>
+    <Property name="orientation" value="0.428422 0 0.903579 0"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="huangsha_白"/>
+    <Property name="position" value="100 -796.678 6100"/>
+    <Property name="orientation" value="0.729255 0 -0.684241 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石05.mesh"/>
+    <Property name="position" value="2432.13 104.317 -1094.05"/>
+    <Property name="scale" value="1.7 1.7 1.7"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石04.mesh"/>
+    <Property name="position" value="-532.19 18.7875 -3612.31"/>
+    <Property name="orientation" value="0.988688 -2.87313e-007 0.149983 7.82311e-008"/>
+    <Property name="scale" value="4.8 4.8 4.8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石04.mesh"/>
+    <Property name="position" value="-2984.38 21 -1154.62"/>
+    <Property name="orientation" value="0.988047 0 0.154148 0"/>
+    <Property name="scale" value="1.4 1.4 1.4"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石05.mesh"/>
+    <Property name="position" value="-2314.87 41.9226 -202.789"/>
+    <Property name="orientation" value="0.813934 -0.0684396 -0.571575 0.0782584"/>
+    <Property name="scale" value="2.8 2.8 2.8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石05.mesh"/>
+    <Property name="position" value="-1200.15 40.462 336.569"/>
+    <Property name="orientation" value="0.881293 -0.093401 0.460664 -0.048822"/>
+    <Property name="scale" value="1.7 1.7 1.7"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石05.mesh"/>
+    <Property name="position" value="-85.3269 -475.853 2760.39"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石04.mesh"/>
+    <Property name="position" value="475.232 -480.735 2681.16"/>
+    <Property name="orientation" value="0.967038 0 -0.254625 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石06.mesh"/>
+    <Property name="position" value="1385.5 78.4337 595.71"/>
+    <Property name="orientation" value="-0.321844 0.167557 -0.929101 0.0714161"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石04.mesh"/>
+    <Property name="position" value="2615.44 -280.772 -175.001"/>
+    <Property name="orientation" value="0.793638 -0.00219047 -0.607072 0.0399244"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石05.mesh"/>
+    <Property name="position" value="2106.65 109.455 -2281.75"/>
+    <Property name="orientation" value="0.997282 0.0162997 -0.0259633 0.0669935"/>
+    <Property name="scale" value="2.8 2.8 2.8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石05.mesh"/>
+    <Property name="position" value="-1562.2 48.5466 300"/>
+    <Property name="orientation" value="0.983405 0 0.181425 0"/>
+    <Property name="scale" value="3.74 3.74 3.74"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石05.mesh"/>
+    <Property name="position" value="-244.23 -475 3177.25"/>
+    <Property name="orientation" value="0.952574 0 -0.304308 0"/>
+    <Property name="scale" value="1.7 1.7 1.7"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石04.mesh"/>
+    <Property name="position" value="-1297.62 42.1296 311.843"/>
+    <Property name="orientation" value="0.90617 0.00412265 -0.422475 -0.0188684"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石05.mesh"/>
+    <Property name="position" value="2507.08 123.143 -2377.9"/>
+    <Property name="orientation" value="0.961101 0 -0.276199 0"/>
+    <Property name="scale" value="1.6 1.6 1.6"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪松01.mesh"/>
+    <Property name="position" value="-4093.46 -378.434 4480.01"/>
+    <Property name="orientation" value="0.867065 0 -0.498196 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪松01.mesh"/>
+    <Property name="position" value="-3422.59 -607.25 4900"/>
+    <Property name="orientation" value="0.679841 -0.0590977 -0.728229 -0.063304"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木04.mesh"/>
+    <Property name="position" value="-2062.44 10.9978 -3469.33"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木04.mesh"/>
+    <Property name="position" value="-892.051 19.98 -4317.67"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木03.mesh"/>
+    <Property name="position" value="-2900.48 0.472504 -1666.11"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木03.mesh"/>
+    <Property name="position" value="-2472.29 78.2081 213.262"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木04.mesh"/>
+    <Property name="position" value="-1360.12 49.154 717.553"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木04.mesh"/>
+    <Property name="position" value="1438.02 41.0877 358.146"/>
+    <Property name="orientation" value="0.984543 -0.175136 0 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木03.mesh"/>
+    <Property name="position" value="1675.71 32.4628 217.983"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木05.mesh"/>
+    <Property name="position" value="678.41 -320.265 1601.64"/>
+    <Property name="orientation" value="0.935549 0 -0.353193 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木05.mesh"/>
+    <Property name="position" value="-428.026 -619.196 4558.16"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木05.mesh"/>
+    <Property name="position" value="-1910.07 37.3414 -3845.93"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木03.mesh"/>
+    <Property name="position" value="-1933.34 62.6439 363.612"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木02.mesh"/>
+    <Property name="position" value="-1188.23 56.2552 732.207"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木05.mesh"/>
+    <Property name="position" value="-604.177 -502.802 1887.73"/>
+    <Property name="orientation" value="0.978836 0 0.204644 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木02.mesh"/>
+    <Property name="position" value="604.08 -475 2562.89"/>
+    <Property name="orientation" value="0.877132 0 0.480248 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木01.mesh"/>
+    <Property name="position" value="2509.19 88.955 -1063.56"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木01.mesh"/>
+    <Property name="position" value="-2278.02 61.0382 -112.604"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木01.mesh"/>
+    <Property name="position" value="-1630.17 57.8548 283.72"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木01.mesh"/>
+    <Property name="position" value="1326.96 82.1628 598.105"/>
+    <Property name="orientation" value="0.993614 0 0.112828 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_封边石04.mesh"/>
+    <Property name="position" value="2517.97 -1291.9 74.9336"/>
+    <Property name="orientation" value="0.848893 0 0.528555 0"/>
+    <Property name="scale" value="1.2 1.2 1.2"/>
+    <Property name="lockHeight" value="false"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石05.mesh"/>
+    <Property name="position" value="1709.94 26.6094 178.967"/>
+    <Property name="orientation" value="-0.0440621 0 -0.999028 0"/>
+    <Property name="scale" value="2.8 2.8 2.8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木04.mesh"/>
+    <Property name="position" value="-1200 52.7817 600"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石板03.mesh"/>
+    <Property name="position" value="1759.15 1.0611 -592.199"/>
+    <Property name="orientation" value="0.620875 0 -0.78391 0"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/通用物件_雾凇树03.mesh"/>
+    <Property name="position" value="1954.68 45.6954 -1198"/>
+    <Property name="orientation" value="0.48128 0 0.876566 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_银杏树03.mesh"/>
+    <Property name="position" value="-3600 -283.772 -500"/>
+    <Property name="orientation" value="-0.955764 -0.0249562 -0.25627 -0.142143"/>
+    <Property name="scale" value="0.923077 0.923077 0.923077"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树01.mesh"/>
+    <Property name="position" value="-4478.28 -762.456 -1600"/>
+    <Property name="orientation" value="0.992721 0.00726098 -0.0876269 0.0822592"/>
+    <Property name="scale" value="1.4 1.4 1.4"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木03.mesh"/>
+    <Property name="position" value="-1400 11.9959 -3514.42"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木02.mesh"/>
+    <Property name="position" value="-1400 15.8217 -3500"/>
+  </Object>
+
+  <Object name="NewShaXing_merge_1_1.mesh" type="StaticEntity">
+    <Property name="mesh name" value="NewShaXing/NewShaXing_merge_1_1.mesh"/>
+    <Property name="position" value="-2308.32 8.40408 -1401.85"/>
+    <Property name="lockHeight" value="false"/>
+  </Object>
+
+  <Object name="NewShaXing_merge_2_1.mesh" type="StaticEntity">
+    <Property name="mesh name" value="NewShaXing/NewShaXing_merge_2_1.mesh"/>
+    <Property name="position" value="2420.12 108.663 -1034.86"/>
+  </Object>
+
+  <Object name="NewShaXing_merge_1_2.mesh" type="StaticEntity">
+    <Property name="mesh name" value="NewShaXing/NewShaXing_merge_1_2.mesh"/>
+    <Property name="position" value="-1967.77 2.07055 445.993"/>
+  </Object>
+
+  <Object name="NewShaXing_merge_2_2.mesh" type="StaticEntity">
+    <Property name="mesh name" value="NewShaXing/NewShaXing_merge_2_2.mesh"/>
+    <Property name="position" value="1763.09 103.943 491.333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木04.mesh"/>
+    <Property name="position" value="1800 52.7703 333.514"/>
+    <Property name="orientation" value="0.982679 -0.174805 0.0605529 0.0107715"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木04.mesh"/>
+    <Property name="position" value="1759.82 40.1998 -151.743"/>
+    <Property name="orientation" value="0.883435 -0.15715 0.43459 0.0773073"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_银杏树01.mesh"/>
+    <Property name="position" value="-811.429 -1945.56 3009.81"/>
+    <Property name="orientation" value="0.18062 -0.0235317 -0.977665 0.104845"/>
+    <Property name="scale" value="1.3 1.3 1.3"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木03.mesh"/>
+    <Property name="position" value="1996 33.7661 -932.526"/>
+    <Property name="orientation" value="-0.225592 0 -0.974223 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木04.mesh"/>
+    <Property name="position" value="1669.62 13.2977 -2566.32"/>
+    <Property name="orientation" value="0.972749 -0.127231 0.128323 0.145265"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木04.mesh"/>
+    <Property name="position" value="1859.48 53.6627 -1457.61"/>
+    <Property name="orientation" value="0.994609 -0.0619715 -0.0241858 0.0795206"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木04.mesh"/>
+    <Property name="position" value="-2657.71 -12.5601 -2158.7"/>
+    <Property name="orientation" value="0.962949 -0.0377275 0.250125 0.0934914"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木04.mesh"/>
+    <Property name="position" value="-2048.43 30.5306 -2478.96"/>
+    <Property name="orientation" value="0.990103 -0.0517835 0.0976064 0.0865012"/>
+    <Property name="scale" value="0.476191 0.476191 0.476191"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石板05.mesh"/>
+    <Property name="position" value="1626.15 1.87162 -137.487"/>
+    <Property name="orientation" value="0.787909 0 -0.615791 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石04.mesh"/>
+    <Property name="position" value="2065.97 43.7752 -1075.2"/>
+    <Property name="orientation" value="-0.45109 -0.0215464 0.892193 -0.0068651"/>
+    <Property name="scale" value="3 3 3"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木03.mesh"/>
+    <Property name="position" value="1234.97 14.6593 2.73485"/>
+    <Property name="scale" value="0.857143 0.857143 0.857143"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树01.mesh"/>
+    <Property name="position" value="3736.48 -1299.13 -3400"/>
+    <Property name="orientation" value="-0.8075 0.0462178 0.579996 0.0970054"/>
+    <Property name="scale" value="1.5 1.5 1.5"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树01.mesh"/>
+    <Property name="position" value="4100 -1845.66 -3060.38"/>
+    <Property name="orientation" value="-0.8075 0.0462178 0.579996 0.0970054"/>
+    <Property name="scale" value="1.5 1.5 1.5"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木04.mesh"/>
+    <Property name="position" value="1800 91.6293 -3700"/>
+    <Property name="orientation" value="0.994609 -0.0619715 -0.0241858 0.0795206"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新树木/苍山_枫树01.mesh"/>
+    <Property name="position" value="-3600 -3824.3 825.386"/>
+    <Property name="orientation" value="0.999328 0 -0.036581 0"/>
+    <Property name="scale" value="2.1 2.1 2.1"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石02.mesh"/>
+    <Property name="position" value="1608.85 86.745 517.987"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石06.mesh"/>
+    <Property name="position" value="2293.55 125.385 -2465.16"/>
+    <Property name="orientation" value="0.994909 -0.100777 0 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石06.mesh"/>
+    <Property name="position" value="-2860.81 12.2237 -1970.66"/>
+    <Property name="orientation" value="0.998678 0 -0.0514295 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石06.mesh"/>
+    <Property name="position" value="1836.74 76.6469 -1226.47"/>
+    <Property name="orientation" value="0.966317 0 0.257357 0"/>
+    <Property name="scale" value="1.6 1.6 1.6"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石04.mesh"/>
+    <Property name="position" value="-2752.72 21 -1406.22"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木01.mesh"/>
+    <Property name="position" value="-2935.07 17.0822 -1323.43"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石05.mesh"/>
+    <Property name="position" value="-2830.2 20.1942 -1324.15"/>
+    <Property name="scale" value="1.7 1.7 1.7"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石06.mesh"/>
+    <Property name="position" value="-2998.35 19.2456 -1342.77"/>
+    <Property name="orientation" value="0.998433 0 -0.0559625 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石04.mesh"/>
+    <Property name="position" value="1769.37 51.4781 -893.807"/>
+    <Property name="orientation" value="0.529327 -0.0399097 -0.847291 0.0182195"/>
+    <Property name="scale" value="1.8 1.8 1.8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石04.mesh"/>
+    <Property name="position" value="-2023.15 30.3835 -2439.45"/>
+    <Property name="orientation" value="0.804055 0.0328711 0.593151 0.024249"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石04.mesh"/>
+    <Property name="position" value="-2500 32.217 -661.347"/>
+    <Property name="orientation" value="-0.0920926 -0.0427907 -0.99479 -0.00967915"/>
+    <Property name="scale" value="1.8 1.8 1.8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石04.mesh"/>
+    <Property name="position" value="-1406.89 60.664 644.507"/>
+    <Property name="orientation" value="0.339179 0.0162886 -0.940526 -0.0103776"/>
+    <Property name="scale" value="1.6 1.6 1.6"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石04.mesh"/>
+    <Property name="position" value="2000 85.6757 -1450.59"/>
+    <Property name="orientation" value="0.0298228 0.0187085 -0.99937 -0.00479658"/>
+    <Property name="scale" value="1.82 1.82 1.82"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木01.mesh"/>
+    <Property name="position" value="2000 84.1571 -1509.78"/>
+    <Property name="orientation" value="0.911566 0 -0.411156 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木01.mesh"/>
+    <Property name="position" value="1438.89 30.9407 -247.155"/>
+    <Property name="orientation" value="0.983282 0 0.182087 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木01.mesh"/>
+    <Property name="position" value="1600 97.2188 400"/>
+    <Property name="orientation" value="0.83637 0 -0.548162 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木01.mesh"/>
+    <Property name="position" value="-2767.66 8.08346 -1979.84"/>
+    <Property name="orientation" value="0.675287 0 0.737555 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石板03.mesh"/>
+    <Property name="position" value="-782.846 22.6583 629.7"/>
+    <Property name="orientation" value="0.986663 0 0.162788 0"/>
+    <Property name="scale" value="0.763636 0.763636 0.763636"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石04.mesh"/>
+    <Property name="position" value="-263.734 21.2701 640.187"/>
+    <Property name="orientation" value="0.0374592 -0.0424344 -0.992999 -0.103699"/>
+    <Property name="scale" value="2 2 2"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石06.mesh"/>
+    <Property name="position" value="-313.063 15.4589 566.318"/>
+    <Property name="orientation" value="0.975315 0 -0.220825 0"/>
+    <Property name="scale" value="1.4 1.4 1.4"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木01.mesh"/>
+    <Property name="position" value="-436.552 65.2732 450.06"/>
+    <Property name="orientation" value="0.678897 0 0.734233 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木04.mesh"/>
+    <Property name="position" value="-371.919 33.5528 547.105"/>
+    <Property name="orientation" value="0.971411 -0.1728 -0.160272 -0.0285101"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪山石05.mesh"/>
+    <Property name="position" value="-900 52.9698 354.731"/>
+    <Property name="orientation" value="-0.586271 0 -0.810118 0"/>
+    <Property name="scale" value="5.236 5.236 5.236"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木01.mesh"/>
+    <Property name="position" value="-700 50.3746 287.364"/>
+    <Property name="orientation" value="0.496985 0 -0.86776 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木01.mesh"/>
+    <Property name="position" value="-2252.7 23.1206 -2430.09"/>
+    <Property name="orientation" value="0.99793 0 -0.0643182 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木04.mesh"/>
+    <Property name="position" value="-746.227 60.1667 900"/>
+    <Property name="orientation" value="0.886327 -0.0822616 -0.440432 -0.116948"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石板02.mesh"/>
+    <Property name="position" value="974.627 70.4063 534.593"/>
+    <Property name="orientation" value="0.142159 0 -0.989845 0"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木04.mesh"/>
+    <Property name="position" value="782.352 11.5539 921.499"/>
+    <Property name="orientation" value="0.494688 -0.00382925 -0.857228 -0.142931"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木04.mesh"/>
+    <Property name="position" value="-2488.38 50.0617 103.334"/>
+    <Property name="orientation" value="0.998954 0 -0.0457183 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木01.mesh"/>
+    <Property name="position" value="500 37.3106 500"/>
+    <Property name="orientation" value="0.983282 0 0.182087 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木01.mesh"/>
+    <Property name="position" value="500 -475 2721.38"/>
+    <Property name="orientation" value="0.998778 0 0.0494036 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_亭子.mesh"/>
+    <Property name="position" value="-1760.21 17.1664 -190.441"/>
+    <Property name="orientation" value="0.359969 0 0.932963 0"/>
+    <Property name="scale" value="0.8 0.8 0.8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="长白山/长白山草堆.mesh"/>
+    <Property name="position" value="2174.83 46.3437 -418.918"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="长白山/长白山草堆.mesh"/>
+    <Property name="position" value="2000 58.9473 -2100"/>
+    <Property name="orientation" value="0.581431 0 -0.813596 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石板03.mesh"/>
+    <Property name="position" value="1996.14 122.232 -3007.43"/>
+    <Property name="orientation" value="-0.404298 0 -0.914628 0"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石板03.mesh"/>
+    <Property name="position" value="-1971.51 24.893 -3000"/>
+    <Property name="orientation" value="-0.810686 0 -0.585483 0"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="长白山/长白山草堆.mesh"/>
+    <Property name="position" value="-1200 20.9952 100"/>
+    <Property name="orientation" value="0.581431 0 -0.813596 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石板05.mesh"/>
+    <Property name="position" value="-899.893 18.8829 -3620.56"/>
+    <Property name="orientation" value="0.978097 -8.3819e-008 0.208153 5.21541e-008"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_雪石板05.mesh"/>
+    <Property name="position" value="-1700 16.0542 -2900"/>
+    <Property name="orientation" value="0.497197 -7.52812e-008 -0.867639 -6.38626e-008"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木04.mesh"/>
+    <Property name="position" value="-1929.84 39.1687 -2652.91"/>
+    <Property name="orientation" value="0.989024 0.117214 0.0643259 -0.0628317"/>
+    <Property name="scale" value="0.904763 0.904763 0.904763"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="新灌木/苍山_灌木04.mesh"/>
+    <Property name="position" value="-1880.22 49.8169 -2670.27"/>
+    <Property name="orientation" value="0.952862 0.176306 -0.0593241 -0.239669"/>
+    <Property name="scale" value="0.565477 0.565477 0.565477"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_石塔02.mesh"/>
+    <Property name="position" value="-2300 -62.1533 -1600"/>
+    <Property name="orientation" value="0.775338 0 -0.631548 0"/>
+    <Property name="scale" value="0.362319 0.362319 0.362319"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苍山/苍山_石塔01.mesh"/>
+    <Property name="position" value="-2399.93 10.6547 -2300"/>
+    <Property name="scale" value="0.310559 0.310559 0.310559"/>
+  </Object>
+
+</Scene>

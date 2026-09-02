@@ -1,0 +1,3049 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Scene formatVersion="0.1.1" name="tl2xuanren">
+
+  <Author>Genva Xie</Author>
+
+  <Copyright>Sohu-inc</Copyright>
+
+  <Description>This is a template scene file for fairy editor</Description>
+
+  <Terrain filename="tl2xuanren.Terrain"/>
+
+  <SkySphere enabled="true" filename="tl2xuanren.skysphere" objectname="#FairySkySphere"/>
+
+  <Object name="#FairyEnviroment" type="Enviroment">
+    <Property name="ambient" value="0.27451 0.34902 0.34902"/>
+    <Property name="background" value="0.556863 0.556863 1"/>
+    <Property name="fog.mode" value="linear"/>
+    <Property name="fog.colour" value="0.556863 0.556863 1"/>
+    <Property name="fog.linear start" value="2000"/>
+    <Property name="fog.linear end" value="7000"/>
+  </Object>
+
+  <Object name="#FairyMainLightOne" type="Light">
+    <Property name="type" value="directional"/>
+    <Property name="diffuse" value="1 0.886275 0.666667"/>
+    <Property name="specular" value="0.811765 0.776471 0.913726"/>
+    <Property name="direction" value="-1 -2 -1"/>
+    <Property name="cast shadows" value="true"/>
+  </Object>
+
+  <Object name="#FairyMainLightTwo" type="Light">
+    <Property name="type" value="directional"/>
+    <Property name="diffuse" value="0.156863 0.411765 0.67451"/>
+    <Property name="specular" value="0.811765 0.776471 0.913726"/>
+    <Property name="direction" value="1 -1 -1"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="yun"/>
+    <Property name="position" value="1700 700 -2000"/>
+    <Property name="orientation" value="0.999996 -0.00269896 0 0"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="yun"/>
+    <Property name="position" value="1900 200 -3100"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木02.mesh"/>
+    <Property name="position" value="674.209 700 -844.126"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="yun"/>
+    <Property name="position" value="4800 200 1700"/>
+    <Property name="orientation" value="0.999996 -0.00269896 0 0"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="pubushuihua_02"/>
+    <Property name="position" value="1830.83 600 3521.37"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="pubushuihua_02"/>
+    <Property name="position" value="2289.47 657 3714.02"/>
+    <Property name="orientation" value="-0.0276869 0 0.999616 0"/>
+    <Property name="scale" value="1 0.47373 1"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="yun"/>
+    <Property name="position" value="4700 100 -1200"/>
+    <Property name="orientation" value="0.999996 -0.00269896 0 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="2039.51 608.644 1326.31"/>
+    <Property name="scale" value="0.784312 0.784312 0.784312"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="yun"/>
+    <Property name="position" value="4700 600 -300"/>
+    <Property name="orientation" value="0.999996 -0.00269896 0 0"/>
+  </Object>
+
+  <Object type="TerrainLiquid">
+    <Property name="material" value="haihuwater"/>
+    <Property name="position" value="1700 682.068 3200"/>
+    <Property name="texture scale" value="0.3"/>
+    <Property name="depth texture layer.enable" value="true"/>
+    <Property name="depth texture layer.height scale" value="0.004"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="yun"/>
+    <Property name="position" value="-300 600 4200"/>
+    <Property name="orientation" value="0.999996 -0.00269896 0 0"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="yun"/>
+    <Property name="position" value="5200 400 900"/>
+    <Property name="orientation" value="0.999996 -0.00269896 0 0"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="yun"/>
+    <Property name="position" value="-2100 200 4400"/>
+    <Property name="orientation" value="0.999996 -0.00269896 0 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="187.257 778.842 2548.8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-112.742 700 3964.77"/>
+    <Property name="scale" value="0.6 0.6 0.6"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模树01.mesh"/>
+    <Property name="position" value="1047.15 479.362 -1837.08"/>
+    <Property name="orientation" value="-0.981409 0 -0.191938 0"/>
+    <Property name="scale" value="0.541126 0.541126 0.541126"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="1689.78 1018.1 4800"/>
+    <Property name="orientation" value="0.999705 0 -0.0242655 0"/>
+    <Property name="scale" value="0.555556 1 0.555556"/>
+  </Object>
+
+  <Object type="TerrainLiquid">
+    <Property name="material" value="haihuwater"/>
+    <Property name="position" value="3500 70.299 400"/>
+    <Property name="texture scale" value="0.3"/>
+    <Property name="depth texture layer.enable" value="true"/>
+    <Property name="depth texture layer.height scale" value="0.004"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="900 343.734 -4100"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="1300 307.999 -4200"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="2400 258.493 -4200"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="1500 557.806 -4600"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="1800 313.163 -4300"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="3890.13 298.105 -3028.72"/>
+    <Property name="orientation" value="0.994172 0 0.10781 0"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="3400 338.666 -3500"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="4000 406.329 -3700"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="4300 470.26 -3700"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="4600 464.094 -3300"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="4100 369.361 -3200"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模树02.mesh"/>
+    <Property name="position" value="1765.43 676.864 1171.91"/>
+    <Property name="orientation" value="-0.824146 0.0446617 -0.564508 0.010951"/>
+    <Property name="scale" value="0.954419 0.954419 0.954419"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="2350.86 568.608 3816.61"/>
+    <Property name="orientation" value="0.999993 0 -0.00381476 0"/>
+    <Property name="scale" value="0.666667 0.692308 0.526316"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="1600 525.25 3695.49"/>
+    <Property name="orientation" value="0.999026 0 -0.0441092 0"/>
+    <Property name="scale" value="0.666667 0.692308 0.526316"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="1900 525.174 3706.86"/>
+    <Property name="orientation" value="0.999026 0 -0.0441092 0"/>
+    <Property name="scale" value="0.666667 0.692308 0.526316"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="2600 1138.31 4779.95"/>
+    <Property name="orientation" value="0.96516 0 0.261659 0"/>
+    <Property name="scale" value="0.555556 1 0.555556"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="1315.46 943.36 4743.58"/>
+    <Property name="orientation" value="0.999194 0 -0.040129 0"/>
+    <Property name="scale" value="0.555556 1 0.555556"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-4556.94 1330.41 4900"/>
+    <Property name="orientation" value="0.885818 0 -0.464033 0"/>
+    <Property name="scale" value="0.555556 0.909091 0.555556"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-3935.45 376.031 3411.89"/>
+    <Property name="orientation" value="0.992911 0 -0.118852 0"/>
+    <Property name="scale" value="0.555556 1 0.555556"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="-1400 359.557 -3800"/>
+    <Property name="orientation" value="0.854555 0 -0.519361 0"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="-1100 421.599 -4300"/>
+    <Property name="scale" value="1.02564 1.02564 1.02564"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="-1100 327.317 -3800"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模树03.mesh"/>
+    <Property name="position" value="893.716 706.77 -753.512"/>
+    <Property name="orientation" value="0.396921 0 0.917854 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模树02.mesh"/>
+    <Property name="position" value="886.652 832.598 3316.2"/>
+    <Property name="orientation" value="0.928789 -0.053685 0.249452 -0.26881"/>
+    <Property name="scale" value="1.0725 1.0725 1.0725"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="400 716.105 2700"/>
+    <Property name="scale" value="1.4 1.4 1.4"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="2480.35 582.995 3711.98"/>
+    <Property name="orientation" value="0.995983 0 0.089565 0"/>
+    <Property name="scale" value="0.370371 0.692308 0.526316"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模树01.mesh"/>
+    <Property name="position" value="2563.35 100.135 -2.34115"/>
+    <Property name="orientation" value="0.991339 0.0552729 -0.113942 0.0348581"/>
+    <Property name="scale" value="0.546328 0.546328 0.546328"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="2247.5 216.336 259.011"/>
+    <Property name="orientation" value="0.989108 0 0.147193 0"/>
+    <Property name="scale" value="0.701753 0.701753 0.701753"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木02.mesh"/>
+    <Property name="position" value="2100 141.174 -1200"/>
+    <Property name="scale" value="1.28 1.28 1.28"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="1900 165.124 -987.459"/>
+    <Property name="orientation" value="0.643742 0 0.765243 0"/>
+    <Property name="scale" value="0.701753 0.701753 0.701753"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="717.823 683.346 -71.7026"/>
+    <Property name="orientation" value="0.999376 0 -0.0353179 0"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-1700 404.499 74.1865"/>
+    <Property name="orientation" value="0.997396 -0.00490579 0.0161903 -0.0701062"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木02.mesh"/>
+    <Property name="position" value="2000 458.619 -1500"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="2216.35 153.636 -1024.36"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模树01.mesh"/>
+    <Property name="position" value="2242.94 310.961 -1500"/>
+    <Property name="orientation" value="0.0954553 0 0.995437 0"/>
+    <Property name="scale" value="0.582751 0.582751 0.582751"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模树01.mesh"/>
+    <Property name="position" value="1600 585.09 -1600"/>
+    <Property name="orientation" value="0.34984 0 0.936811 0"/>
+    <Property name="scale" value="0.582751 0.582751 0.582751"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="2300 175.723 -800"/>
+    <Property name="orientation" value="0.973236 0 0.229807 0"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="2200 118.961 123.858"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="2000 228.812 -900"/>
+    <Property name="scale" value="0.701753 0.701753 0.701753"/>
+  </Object>
+
+  <Object type="Model">
+    <Property name="model name" value="苗疆/水车.model"/>
+    <Property name="position" value="1566.01 -8.13479 250.443"/>
+    <Property name="orientation" value="0.88106 0 0.473006 0"/>
+  </Object>
+
+  <Object type="Model">
+    <Property name="model name" value="苗疆/水车.model"/>
+    <Property name="position" value="3617.45 -69.4112 -1306.98"/>
+    <Property name="orientation" value="0.590044 0 0.807374 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="533.36 460.295 566.225"/>
+    <Property name="orientation" value="0.967835 0 -0.251587 0"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-3500 82.4696 2246.79"/>
+    <Property name="orientation" value="0.932096 0 -0.362209 0"/>
+    <Property name="scale" value="0.555556 0.526316 0.555556"/>
+  </Object>
+
+  <Object type="TerrainLiquid">
+    <Property name="material" value="haihuwater"/>
+    <Property name="position" value="-2100 545.089 3900"/>
+    <Property name="depth texture layer.enable" value="true"/>
+    <Property name="depth texture layer.height scale" value="0.004"/>
+  </Object>
+
+  <Object type="TerrainLiquid">
+    <Property name="material" value="haihuwater"/>
+    <Property name="position" value="-4400 1330.53 4600"/>
+    <Property name="depth texture layer.enable" value="true"/>
+    <Property name="depth texture layer.height scale" value="0.004"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-3235.33 1216.15 5002.44"/>
+    <Property name="orientation" value="0.998206 0 -0.0598882 0"/>
+    <Property name="scale" value="0.555556 1 0.555556"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-3224.2 786.683 3515.08"/>
+    <Property name="orientation" value="0.994386 0 -0.105846 0"/>
+    <Property name="scale" value="0.194932 0.6 0.326798"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-4157.04 564.402 3472.38"/>
+    <Property name="orientation" value="0.998406 0 0.0565286 0"/>
+    <Property name="scale" value="0.194932 0.84 0.326798"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-3300 -25.1556 2100"/>
+    <Property name="orientation" value="0.99052 0 -0.137398 0"/>
+    <Property name="scale" value="0.194932 0.6 0.326798"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="0 740.558 2300"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="577.857 684.144 118.28"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-500 611.848 400"/>
+    <Property name="orientation" value="0.985504 0 0.16965 0"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="800 527.632 -4100"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="1000 561.69 -4200"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="900 954.24 -4600"/>
+    <Property name="scale" value="0.952379 0.952379 0.952379"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="1244.95 1060.9 -5100"/>
+    <Property name="scale" value="0.952379 0.952379 0.952379"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="629.237 1562.2 3933.59"/>
+    <Property name="orientation" value="0.982113 -0.188061 -0.00175711 -0.00917617"/>
+    <Property name="scale" value="1.53333 1.53333 1.53333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="-500 748.129 4600"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-1100 207.239 -600"/>
+    <Property name="orientation" value="0.826239 0 0.563321 0"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="2004.3 1012.29 4816.59"/>
+    <Property name="orientation" value="0.996481 0 0.0838139 0"/>
+    <Property name="scale" value="0.555556 1 0.555556"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="1664.69 688.271 1296.57"/>
+    <Property name="orientation" value="0.977152 0.0203299 -0.202602 0.0609592"/>
+    <Property name="scale" value="0.717949 0.717949 0.717949"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="2700 673.063 3600"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="3200 1413.41 3900"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="2822.15 590.274 3590.46"/>
+    <Property name="orientation" value="0.976285 0 0.216491 0"/>
+    <Property name="scale" value="0.370371 0.692308 0.526316"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模树01.mesh"/>
+    <Property name="position" value="3001.18 879.61 2865.64"/>
+    <Property name="orientation" value="-0.444918 0 0.895573 0"/>
+    <Property name="scale" value="0.909091 0.909091 0.909091"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="406.216 655.317 1852.03"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="3600 129.169 -2100"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="4200 309.793 -2500"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="476.186 -241.997 -3812.49"/>
+    <Property name="orientation" value="0.124742 0 0.992191 0"/>
+    <Property name="scale" value="0.198611 0.695139 0.198611"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="443.256 387.375 -4161.11"/>
+    <Property name="orientation" value="-0.45074 0 0.892658 0"/>
+    <Property name="scale" value="0.11683 0.408905 0.11683"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="2400 861.992 -4800"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="2000 347.69 -4200"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="400 312.891 -1400"/>
+    <Property name="orientation" value="0.826239 0 0.563321 0"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-4743.08 1331.17 4704.35"/>
+    <Property name="orientation" value="0.885818 0 -0.464033 0"/>
+    <Property name="scale" value="0.555556 0.909091 0.555556"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-4823.88 1309.55 4383.78"/>
+    <Property name="orientation" value="0.865984 0 -0.500073 0"/>
+    <Property name="scale" value="0.555556 0.909091 0.555556"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2选人场景远景树01.mesh"/>
+    <Property name="position" value="3700 315.636 -3300"/>
+    <Property name="orientation" value="0.857833 0 -0.513927 0"/>
+    <Property name="scale" value="0.44 0.44 0.44"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="3498.61 -211.481 2064.81"/>
+    <Property name="orientation" value="0.974602 0 0.223941 0"/>
+    <Property name="scale" value="0.152778 0.534722 0.290278"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模树02.mesh"/>
+    <Property name="position" value="-4130.84 344.405 1909.94"/>
+    <Property name="orientation" value="-0.629872 -0.0137751 -0.765543 0.130456"/>
+    <Property name="scale" value="0.615385 0.615385 0.615385"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-4580.06 1435.09 3622.26"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-3173.1 399.821 3387.12"/>
+    <Property name="orientation" value="0.973002 0 -0.230802 0"/>
+    <Property name="scale" value="0.194932 0.5 0.326798"/>
+  </Object>
+
+  <Object name="#FairySkySphere" type="SkySphere">
+    <Property name="enabled" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-3830.49 822.66 3500"/>
+    <Property name="orientation" value="0.943449 0 -0.33153 0"/>
+    <Property name="scale" value="0.194932 0.6 0.326798"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木04.mesh"/>
+    <Property name="position" value="-2846.35 723.077 2345.5"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木04.mesh"/>
+    <Property name="position" value="-3071.84 1008.25 3673.2"/>
+    <Property name="orientation" value="0.989017 -0.0960591 0.0367195 -0.106176"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木04.mesh"/>
+    <Property name="position" value="-1520.14 615.963 859.805"/>
+    <Property name="orientation" value="0.733123 0 0.680096 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模小红枫树.mesh"/>
+    <Property name="position" value="-2717 368.429 923.03"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模树01.mesh"/>
+    <Property name="position" value="-915.799 261.137 -999.466"/>
+    <Property name="orientation" value="-0.571633 0.0302496 -0.819786 0.0165337"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木04.mesh"/>
+    <Property name="position" value="-1400 724.485 600"/>
+    <Property name="orientation" value="0.922563 0 -0.385846 0"/>
+    <Property name="scale" value="0.777778 0.777778 0.777778"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-3913.23 820.276 3498.06"/>
+    <Property name="orientation" value="0.951691 0 -0.307068 0"/>
+    <Property name="scale" value="0.194932 0.6 0.326798"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-3700 -70.7986 1400"/>
+    <Property name="orientation" value="0.722242 0 -0.691646 0"/>
+    <Property name="scale" value="0.481483 0.78 0.722223"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-3844.94 -96.4226 1600"/>
+    <Property name="orientation" value="0.69051 0 -0.723328 0"/>
+    <Property name="scale" value="0.253412 0.78 0.424837"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-3652.41 90.0568 2024.18"/>
+    <Property name="orientation" value="0.872639 0 -0.488365 0"/>
+    <Property name="scale" value="0.555556 0.526316 0.555556"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-5132.97 1638.6 4727.15"/>
+    <Property name="orientation" value="0.865984 0 -0.500073 0"/>
+    <Property name="scale" value="0.555556 0.909091 0.555556"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苏州/苏州大桥1.mesh"/>
+    <Property name="position" value="-2741.18 484.315 1753.71"/>
+    <Property name="orientation" value="0.831456 0 -0.55559 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-3575.54 789.434 3500"/>
+    <Property name="orientation" value="0.982671 0 -0.185377 0"/>
+    <Property name="scale" value="0.292398 0.6 0.326798"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-1800 145.189 1800"/>
+    <Property name="orientation" value="0.757005 -0.0488312 0.651339 -0.0177731"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-3795.41 -91.9561 1755.56"/>
+    <Property name="orientation" value="0.691946 0.0274537 -0.720981 0.0255386"/>
+    <Property name="scale" value="0.4308 0.78 0.807191"/>
+  </Object>
+
+  <Object type="TerrainLiquid">
+    <Property name="material" value="haihuwater"/>
+    <Property name="position" value="-3000 528.557 2900"/>
+    <Property name="texture scale" value="0.3"/>
+    <Property name="depth texture layer.enable" value="true"/>
+    <Property name="depth texture layer.height scale" value="0.004"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模树04.mesh"/>
+    <Property name="position" value="-3237.27 1101.06 4000"/>
+    <Property name="orientation" value="0.191913 0 0.98141 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模树05.mesh"/>
+    <Property name="position" value="-4300 1219.28 3606.28"/>
+    <Property name="orientation" value="0.321532 0 0.946897 0"/>
+    <Property name="scale" value="0.8 0.8 0.8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模树05.mesh"/>
+    <Property name="position" value="-5000 2009.31 3600"/>
+    <Property name="orientation" value="-0.888964 0 0.457972 0"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模树05.mesh"/>
+    <Property name="position" value="-3100 1583.08 4900"/>
+    <Property name="orientation" value="0.999774 0 -0.0211937 0"/>
+    <Property name="scale" value="0.8 0.8 0.8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模树04.mesh"/>
+    <Property name="position" value="-4978.73 1326.45 3300"/>
+    <Property name="orientation" value="0.0870251 0 0.996206 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木04.mesh"/>
+    <Property name="position" value="-3462.95 1387.83 3700"/>
+    <Property name="orientation" value="0.981656 0 0.19066 0"/>
+    <Property name="scale" value="0.555556 0.555556 0.555556"/>
+  </Object>
+
+  <Object type="Model">
+    <Property name="model name" value="苗疆/水车.model"/>
+    <Property name="position" value="-836.663 357.47 4100"/>
+    <Property name="orientation" value="-0.707062 0.0367254 0.704694 -0.0459732"/>
+    <Property name="scale" value="1.59091 1.59091 1.59091"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木04.mesh"/>
+    <Property name="position" value="-1327.3 1214.61 4700"/>
+    <Property name="orientation" value="0.993412 -0.0979656 0.0312797 -0.0505962"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木04.mesh"/>
+    <Property name="position" value="-1700 1393.69 4700"/>
+    <Property name="orientation" value="0.993412 -0.0979656 0.0312797 -0.0505962"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木04.mesh"/>
+    <Property name="position" value="-1400 683.515 4300"/>
+    <Property name="orientation" value="0.993412 -0.0979656 0.0312797 -0.0505962"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-2019.06 744.461 4800"/>
+    <Property name="orientation" value="0.999593 0 0.028461 0"/>
+    <Property name="scale" value="0.555556 1 0.555556"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模小红枫树.mesh"/>
+    <Property name="position" value="-2626.44 1262.49 4900"/>
+    <Property name="orientation" value="0.884537 0 0.466468 0"/>
+    <Property name="scale" value="0.631313 0.631313 0.631313"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模小红枫树.mesh"/>
+    <Property name="position" value="-2800 972.929 4600"/>
+    <Property name="orientation" value="0.884537 0 0.466468 0"/>
+    <Property name="scale" value="0.631313 0.631313 0.631313"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模小红枫树.mesh"/>
+    <Property name="position" value="-1500 744.14 4500"/>
+    <Property name="orientation" value="0.824945 0 0.565211 0"/>
+    <Property name="scale" value="0.631313 0.631313 0.631313"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-2128.77 361.987 4500"/>
+    <Property name="orientation" value="0.987431 -0.0180803 -0.156902 0.00529223"/>
+    <Property name="scale" value="0.555556 1 0.555556"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木04.mesh"/>
+    <Property name="position" value="-1137.3 524.746 4500"/>
+    <Property name="orientation" value="0.951134 0 0.30878 0"/>
+    <Property name="scale" value="1.6 1.6 1.6"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-1235.3 1233.61 4900"/>
+    <Property name="scale" value="0.666667 1 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木04.mesh"/>
+    <Property name="position" value="-1200 1407.94 5000"/>
+    <Property name="orientation" value="0.993412 -0.0979656 0.0312797 -0.0505962"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木04.mesh"/>
+    <Property name="position" value="-2300 1361.14 5000"/>
+    <Property name="orientation" value="0.993412 -0.0979656 0.0312797 -0.0505962"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-3177.69 393.28 3349.48"/>
+    <Property name="orientation" value="0.896598 0 -0.44285 0"/>
+    <Property name="scale" value="0.194932 0.5 0.326798"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-3389.23 445.101 3193.67"/>
+    <Property name="orientation" value="0.981005 0 -0.193984 0"/>
+    <Property name="scale" value="0.194932 0.5 0.326798"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-3527.56 892.167 3600"/>
+    <Property name="orientation" value="0.977791 0 -0.209592 0"/>
+    <Property name="scale" value="0.48733 0.5 0.326798"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="760.162 720.857 -528.726"/>
+    <Property name="orientation" value="0.971845 0 -0.23562 0"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="800 412.889 -1900"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="2700 606.696 3711.13"/>
+    <Property name="orientation" value="0.98046 0 0.196725 0"/>
+    <Property name="scale" value="0.629631 0.692308 0.631579"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="3000 1221.53 3700"/>
+    <Property name="orientation" value="0.966887 0 0.255205 0"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="3066.42 1148.76 3672.52"/>
+    <Property name="scale" value="1.06667 1.06667 1.06667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="2400 795.748 2300"/>
+    <Property name="orientation" value="0.920491 0 0.390764 0"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="1347.69 606.818 2139.72"/>
+    <Property name="orientation" value="0.984283 0.150424 0.0895879 -0.0231148"/>
+    <Property name="scale" value="1.08333 1.08333 1.08333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="2153.31 770.086 3362.4"/>
+    <Property name="orientation" value="0.821923 -0.0358672 -0.568397 -0.00904537"/>
+    <Property name="scale" value="0.747863 0.747863 0.747863"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="2100 794.96 3600"/>
+    <Property name="orientation" value="0.977431 0.139313 -0.158704 -0.00589726"/>
+    <Property name="scale" value="0.914473 0.914473 0.914473"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="3600 -136.746 38.6754"/>
+    <Property name="orientation" value="0.505295 0 0.862946 0"/>
+    <Property name="scale" value="0.233586 0.538462 0.453334"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="-91.9418 659.783 2035.15"/>
+    <Property name="orientation" value="0.0829754 0 0.996552 0"/>
+    <Property name="scale" value="0.384615 0.384615 0.384615"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="8.39753 651.059 2029.17"/>
+    <Property name="orientation" value="0.0829754 0 0.996552 0"/>
+    <Property name="scale" value="0.538461 0.538461 0.538461"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="-58.2537 626.54 2000"/>
+    <Property name="orientation" value="-0.355143 0 0.934813 0"/>
+    <Property name="scale" value="0.538461 0.538461 0.538461"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="553.638 604.72 2106.86"/>
+    <Property name="orientation" value="0.198113 0 0.980179 0"/>
+    <Property name="scale" value="0.538461 0.538461 0.538461"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="700 596.523 2600"/>
+    <Property name="orientation" value="-0.0327189 0 0.999464 0"/>
+    <Property name="scale" value="0.538461 0.538461 0.538461"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="332.225 684.401 1600"/>
+    <Property name="orientation" value="-0.421858 0 0.906662 0"/>
+    <Property name="scale" value="0.336538 0.336538 0.336538"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="300 621.164 1700"/>
+    <Property name="orientation" value="-0.495634 0 0.868531 0"/>
+    <Property name="scale" value="0.336538 0.336538 0.336538"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="238.505 625.442 1800"/>
+    <Property name="orientation" value="-0.486863 0 0.873478 0"/>
+    <Property name="scale" value="0.336538 0.336538 0.336538"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="2400 776.115 2187.23"/>
+    <Property name="orientation" value="0.867292 -0.150707 0.474433 -0.00234526"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="yun"/>
+    <Property name="position" value="-1800 340 3300"/>
+    <Property name="orientation" value="0.999996 -0.00269896 0 0"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="pubushuihua_02"/>
+    <Property name="position" value="-3700 574.107 1900"/>
+    <Property name="orientation" value="0.330958 0 0.943645 0"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="pubushuihua_03"/>
+    <Property name="position" value="-3929.83 598.103 1678.63"/>
+    <Property name="orientation" value="-0.142994 0 0.989723 0"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="pubushuihua_02"/>
+    <Property name="position" value="2164.41 1218.52 3794.18"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="5200 1766.91 -2100"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="5200 1519.57 -2300"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="yezi"/>
+    <Property name="position" value="-1201.45 724.485 423.059"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="yezi01"/>
+    <Property name="position" value="-3080.54 1499.6 4575.52"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="yezi01"/>
+    <Property name="position" value="-1706.96 1254.19 4612.44"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木02.mesh"/>
+    <Property name="position" value="-2600 304.683 1244.25"/>
+    <Property name="orientation" value="0.982281 0.184921 0.0304267 0.001979"/>
+    <Property name="scale" value="1.2 1.2 1.2"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木02.mesh"/>
+    <Property name="position" value="-2700 198.904 1400"/>
+    <Property name="orientation" value="0.792334 0.279744 0.537106 0.0739575"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木02.mesh"/>
+    <Property name="position" value="-3600 1425.01 3700"/>
+    <Property name="orientation" value="0.713815 -0.0625289 0.696921 0.0294544"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木02.mesh"/>
+    <Property name="position" value="-1300 714.672 1200"/>
+    <Property name="orientation" value="0.713815 -0.0625289 0.696921 0.0294544"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2选人场景大建筑.mesh"/>
+    <Property name="position" value="-2082.71 633.461 3699.86"/>
+    <Property name="orientation" value="-0.0314109 0 0.999506 0"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+    <Property name="receive shadows" value="true"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2选人台子.mesh"/>
+    <Property name="position" value="1089.39 707.996 1640.83"/>
+    <Property name="orientation" value="0.913267 0 0.407359 0"/>
+    <Property name="receive shadows" value="true"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2选人台子龙.mesh"/>
+    <Property name="position" value="846.668 721.911 1846.68"/>
+    <Property name="orientation" value="0.971871 0 0.235511 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2选人台子龙身.mesh"/>
+    <Property name="position" value="1407.92 678.215 1736.91"/>
+    <Property name="orientation" value="0.116576 0 0.993182 0"/>
+    <Property name="scale" value="1.56 1.56 1.56"/>
+    <Property name="receive shadows" value="true"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2选人台子.mesh"/>
+    <Property name="position" value="-828.47 724.485 1298.47"/>
+    <Property name="orientation" value="0.891237 0 -0.453534 0"/>
+    <Property name="receive shadows" value="true"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2选人台子龙.mesh"/>
+    <Property name="position" value="-989.968 731.628 1033.22"/>
+    <Property name="orientation" value="0.719146 0 -0.694858 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2选人台子龙身.mesh"/>
+    <Property name="position" value="-1006.69 709.771 1515.54"/>
+    <Property name="orientation" value="0.938637 0 0.344904 0"/>
+    <Property name="scale" value="1.3 1.3 1.3"/>
+    <Property name="receive shadows" value="true"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2选人台子龙身.mesh"/>
+    <Property name="position" value="-522.681 716.045 1247.13"/>
+    <Property name="orientation" value="-0.116923 0 0.99314 0"/>
+    <Property name="scale" value="0.928572 0.928572 0.928572"/>
+    <Property name="receive shadows" value="true"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2选人台子.mesh"/>
+    <Property name="position" value="113.149 699.032 -388.436"/>
+    <Property name="orientation" value="0.84379 0 -0.536671 0"/>
+    <Property name="receive shadows" value="true"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2选人台子龙.mesh"/>
+    <Property name="position" value="416.618 690.767 -267.608"/>
+    <Property name="orientation" value="-0.218277 0 -0.975886 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2选人台子龙身.mesh"/>
+    <Property name="position" value="-67.0379 691.709 -109.64"/>
+    <Property name="orientation" value="0.86025 0 0.509868 0"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+    <Property name="receive shadows" value="true"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2选人台子龙身.mesh"/>
+    <Property name="position" value="78.6888 707.332 -628.473"/>
+    <Property name="orientation" value="0.756637 0 -0.653832 0"/>
+    <Property name="scale" value="1.3 1.3 1.3"/>
+  </Object>
+
+  <Object type="Light">
+    <Property name="diffuse" value="0.92549 0.580392 0.392157"/>
+    <Property name="position" value="-100 1219.95 700"/>
+    <Property name="range" value="500"/>
+    <Property name="attenuation.linear" value="0.001"/>
+    <Property name="attenuation.quadric" value="1e-005"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="7.84921 586.322 1387.83"/>
+    <Property name="orientation" value="-0.1029 0 0.994691 0"/>
+    <Property name="scale" value="0.538461 0.538461 0.538461"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木02.mesh"/>
+    <Property name="position" value="-200 724.485 1570.41"/>
+    <Property name="orientation" value="0.219642 -0.0734032 0.971317 -0.0540477"/>
+    <Property name="scale" value="0.764705 0.764705 0.764705"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模树05.mesh"/>
+    <Property name="position" value="-1266.81 708.387 647.421"/>
+    <Property name="orientation" value="0.745481 0 0.666524 0"/>
+    <Property name="scale" value="0.8 0.8 0.8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木02.mesh"/>
+    <Property name="position" value="-274.556 810.857 2500"/>
+    <Property name="orientation" value="0.391447 -0.0696786 0.90966 -0.120176"/>
+    <Property name="scale" value="1.3 1.3 1.3"/>
+  </Object>
+
+  <Object type="Projector">
+    <Property name="texture name" value="天龙树影01.jpg"/>
+    <Property name="projector size" value="1000"/>
+    <Property name="show frustum" value="false"/>
+    <Property name="u wave" value="true"/>
+    <Property name="v wave" value="true"/>
+    <Property name="wave frequency" value="0.2"/>
+    <Property name="position" value="-773.485 1124.48 782.388"/>
+    <Property name="orientation" value="0.831 0 0.556273 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-629.459 656.551 -804.725"/>
+    <Property name="orientation" value="-0.0267262 0.0034323 0.998959 0.0367969"/>
+  </Object>
+
+  <Object type="Projector">
+    <Property name="texture name" value="天龙树影01.jpg"/>
+    <Property name="projector size" value="1000"/>
+    <Property name="show frustum" value="false"/>
+    <Property name="u wave" value="true"/>
+    <Property name="v wave" value="true"/>
+    <Property name="wave frequency" value="0.2"/>
+    <Property name="position" value="400 906.21 -600"/>
+    <Property name="orientation" value="0.831 0 0.556273 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模树04.mesh"/>
+    <Property name="position" value="-1195.7 375.661 3400"/>
+    <Property name="orientation" value="-0.992049 0.0781032 0.0853273 0.0496095"/>
+    <Property name="scale" value="0.769231 0.769231 0.769231"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木04.mesh"/>
+    <Property name="position" value="-800 661.31 2700"/>
+    <Property name="orientation" value="0.953089 0.0050551 0.260851 -0.153472"/>
+    <Property name="scale" value="1.18462 1.18462 1.18462"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模树05.mesh"/>
+    <Property name="position" value="-1497.16 1208.28 4734.85"/>
+    <Property name="orientation" value="0.912056 -0.112527 -0.377835 -0.112822"/>
+    <Property name="scale" value="0.615385 0.615385 0.615385"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草4.mesh"/>
+    <Property name="position" value="-809.164 701.634 900.991"/>
+    <Property name="orientation" value="0.679366 0 0.7338 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草4.mesh"/>
+    <Property name="position" value="-559.375 681.099 957.871"/>
+    <Property name="orientation" value="0.377226 0 0.92612 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木02.mesh"/>
+    <Property name="position" value="-125.716 724.485 1402.65"/>
+    <Property name="orientation" value="0.626251 -0.0419644 0.77428 -0.0809207"/>
+    <Property name="scale" value="0.87395 0.87395 0.87395"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木02.mesh"/>
+    <Property name="position" value="-632.902 659.332 2600"/>
+    <Property name="orientation" value="0.53868 -0.134239 0.824726 -0.107898"/>
+    <Property name="scale" value="0.994118 0.994118 0.994118"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木02.mesh"/>
+    <Property name="position" value="-1429.22 613.102 3500"/>
+    <Property name="orientation" value="0.5814 0.0125534 0.813473 -0.00926955"/>
+    <Property name="scale" value="0.909091 0.909091 0.909091"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草4.mesh"/>
+    <Property name="position" value="-400 668.587 100"/>
+    <Property name="orientation" value="0.168648 0 0.985677 0"/>
+  </Object>
+
+  <Object type="Effect">
+    <Property name="effect name" value="天龙2选人台蓝_龙珠"/>
+    <Property name="position" value="856.507 877.996 1776.11"/>
+  </Object>
+
+  <Object type="Effect">
+    <Property name="effect name" value="天龙2选人台蓝"/>
+    <Property name="position" value="1113.27 733.996 1630.35"/>
+  </Object>
+
+  <Object type="Effect">
+    <Property name="effect name" value="天龙2选人台橙_龙珠"/>
+    <Property name="position" value="-935.871 887.485 1074.59"/>
+  </Object>
+
+  <Object type="Effect">
+    <Property name="effect name" value="天龙2选人台橙"/>
+    <Property name="position" value="-824.383 751.485 1322.85"/>
+  </Object>
+
+  <Object type="Effect">
+    <Property name="effect name" value="天龙2选人台绿_龙珠"/>
+    <Property name="position" value="355.198 852.514 -226.423"/>
+  </Object>
+
+  <Object type="Effect">
+    <Property name="effect name" value="天龙2选人台绿"/>
+    <Property name="position" value="109.459 722.973 -356.6"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草4.mesh"/>
+    <Property name="position" value="972.996 665.039 1179.24"/>
+    <Property name="orientation" value="-0.250416 0 0.96814 0"/>
+  </Object>
+
+  <Object type="Projector">
+    <Property name="texture name" value="天龙树影01.jpg"/>
+    <Property name="projector size" value="1000"/>
+    <Property name="show frustum" value="false"/>
+    <Property name="u wave" value="true"/>
+    <Property name="v wave" value="true"/>
+    <Property name="wave frequency" value="0.2"/>
+    <Property name="position" value="1500 1008 1300"/>
+    <Property name="orientation" value="0.831 0 0.556273 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="2796.54 874.44 2681.15"/>
+    <Property name="orientation" value="0.996273 -0.0201697 -0.0837885 0.00411228"/>
+    <Property name="scale" value="0.866667 0.866667 0.866667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2选人台子龙身.mesh"/>
+    <Property name="position" value="990.936 694.693 1319.28"/>
+    <Property name="orientation" value="0.878583 0 -0.477588 0"/>
+    <Property name="scale" value="1.14086 1.14086 1.14086"/>
+    <Property name="receive shadows" value="true"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="3026.46 1130.93 3300"/>
+    <Property name="orientation" value="0.925548 0 0 0.378633"/>
+    <Property name="scale" value="0.733334 0.733334 0.733334"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="1909.55 752.371 2123.24"/>
+    <Property name="orientation" value="0.813341 -0.0871033 -0.572187 -0.0590951"/>
+    <Property name="scale" value="1.01961 1.01961 1.01961"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="2687.59 845.454 2711.87"/>
+    <Property name="orientation" value="-0.872909 -0.0130519 0.48766 -0.00681107"/>
+    <Property name="scale" value="1.13334 1.13334 1.13334"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模树03.mesh"/>
+    <Property name="position" value="3100 350.116 2332.44"/>
+    <Property name="orientation" value="-0.490349 0.0981337 0.865844 -0.0157291"/>
+    <Property name="scale" value="0.714286 0.714286 0.714286"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木02.mesh"/>
+    <Property name="position" value="-2125.75 572.501 2240.54"/>
+    <Property name="orientation" value="0.485574 -0.0276056 0.857515 -0.167725"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木04.mesh"/>
+    <Property name="position" value="-2331.82 513.567 2010.71"/>
+    <Property name="orientation" value="0.977344 -0.199792 0.0694366 -0.00805997"/>
+    <Property name="scale" value="0.909091 0.909091 0.909091"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木04.mesh"/>
+    <Property name="position" value="-3300 838.596 3300"/>
+    <Property name="orientation" value="0.962565 -0.217501 0.0214597 -0.160326"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木02.mesh"/>
+    <Property name="position" value="-600 714.456 1900"/>
+    <Property name="orientation" value="0.983909 -0.00723876 0.178523 0.00249769"/>
+    <Property name="scale" value="0.909091 0.909091 0.909091"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2创建石01.mesh"/>
+    <Property name="position" value="922.694 673.832 2854.61"/>
+    <Property name="orientation" value="0.4256 0 -0.904911 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2创建石01.mesh"/>
+    <Property name="position" value="-600 679.595 0"/>
+    <Property name="orientation" value="0.940409 0 0.340046 0"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+    <Property name="receive shadows" value="true"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2创建石01.mesh"/>
+    <Property name="position" value="-627.194 706.107 233.305"/>
+    <Property name="orientation" value="0.724468 0 -0.689309 0"/>
+    <Property name="scale" value="0.520833 0.520833 0.520833"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2创建石01.mesh"/>
+    <Property name="position" value="686.1 704.193 -300"/>
+    <Property name="orientation" value="0.298234 0 -0.954493 0"/>
+    <Property name="scale" value="0.78125 0.78125 0.78125"/>
+    <Property name="receive shadows" value="true"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2创建石01.mesh"/>
+    <Property name="position" value="200 709.227 600"/>
+    <Property name="orientation" value="0.996622 0 0.0821322 0"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2创建石01.mesh"/>
+    <Property name="position" value="605.901 711.797 -200"/>
+    <Property name="orientation" value="0.649231 0 -0.760592 0"/>
+    <Property name="scale" value="0.462963 0.462963 0.462963"/>
+    <Property name="receive shadows" value="true"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草4.mesh"/>
+    <Property name="position" value="-668.205 697.734 300"/>
+    <Property name="orientation" value="0.0413369 0 0.999144 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草4.mesh"/>
+    <Property name="position" value="531.083 709.019 -136.217"/>
+    <Property name="orientation" value="-0.993558 -0.00552709 -0.0984923 0.0557555"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草4.mesh"/>
+    <Property name="position" value="357.723 688.66 -157.06"/>
+    <Property name="orientation" value="-0.983428 -0.00134813 -0.172411 0.0560125"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草4.mesh"/>
+    <Property name="position" value="1400 694.646 1100"/>
+    <Property name="orientation" value="-0.916615 0.00870351 0.399329 0.0166973"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2创建石01.mesh"/>
+    <Property name="position" value="-900 722.557 1900"/>
+    <Property name="orientation" value="0.768851 0 0.639428 0"/>
+    <Property name="scale" value="0.641025 0.641025 0.641025"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2创建石01.mesh"/>
+    <Property name="position" value="228.765 721.163 885.746"/>
+    <Property name="orientation" value="0.999637 0 0.0269638 0"/>
+    <Property name="scale" value="0.490196 0.490196 0.490196"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-3127.54 442.041 3440.48"/>
+    <Property name="orientation" value="0.945128 0 -0.326705 0"/>
+    <Property name="scale" value="0.194932 0.5 0.326798"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2创建石01.mesh"/>
+    <Property name="position" value="-2158.42 645.082 2905.4"/>
+    <Property name="orientation" value="0.873371 0 0.487055 0"/>
+    <Property name="scale" value="0.462963 0.462963 0.462963"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木02.mesh"/>
+    <Property name="position" value="-3200 688.646 3266.49"/>
+    <Property name="orientation" value="0.227641 0.110829 0.962202 -0.100364"/>
+    <Property name="scale" value="0.994118 0.994118 0.994118"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木02.mesh"/>
+    <Property name="position" value="-1979.41 618.226 3044.91"/>
+    <Property name="orientation" value="0.249563 -0.0243155 0.968018 0.0087694"/>
+    <Property name="scale" value="1.32549 1.32549 1.32549"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2创建石01.mesh"/>
+    <Property name="position" value="-594.809 681.234 -565.958"/>
+    <Property name="orientation" value="0.937336 0 -0.348428 0"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+    <Property name="receive shadows" value="true"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模树05.mesh"/>
+    <Property name="position" value="-2900 1128.44 4600"/>
+    <Property name="orientation" value="-0.50069 0.0233549 0.865307 0.000140561"/>
+    <Property name="scale" value="0.8 0.8 0.8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-800 1589.03 5300"/>
+    <Property name="orientation" value="0.932484 -0.283065 -0.220183 0.043208"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-1300 1897.98 5200"/>
+    <Property name="orientation" value="0.932484 -0.283065 -0.220183 0.043208"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木02.mesh"/>
+    <Property name="position" value="-504.404 934.719 4900"/>
+    <Property name="orientation" value="0.489011 -0.072752 0.869217 -0.00666619"/>
+    <Property name="scale" value="2 2 2"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-300 1133.18 4900"/>
+    <Property name="orientation" value="0.932484 -0.283065 -0.220183 0.043208"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="1900 1924.74 4800"/>
+    <Property name="orientation" value="0.985572 -0.149095 -0.0067196 0.0798288"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="2200 1124.21 3838.57"/>
+    <Property name="orientation" value="0.985572 -0.149095 -0.0067196 0.0798288"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="2659.5 1303.61 3789.37"/>
+    <Property name="orientation" value="0.909802 -0.0889057 0.393641 0.0969619"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="300 632.228 1092.07"/>
+    <Property name="orientation" value="0.99032 0.0057863 -0.110498 -0.0838031"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="3000 480.068 2300"/>
+    <Property name="orientation" value="0.924262 -0.131917 -0.356799 0.0321309"/>
+    <Property name="scale" value="0.8 0.8 0.8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2创建石01.mesh"/>
+    <Property name="position" value="1600 627.264 2588.64"/>
+    <Property name="orientation" value="-0.164584 0 -0.986363 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="163.416 905.019 -5400"/>
+    <Property name="orientation" value="0.977314 0.0585875 -0.198997 -0.0427227"/>
+    <Property name="scale" value="0.933334 0.933334 0.933334"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-369.881 888.237 -4362.99"/>
+    <Property name="orientation" value="0.969799 0.105317 -0.141742 0.168256"/>
+    <Property name="scale" value="0.598291 0.598291 0.598291"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="1800 1568.25 -5400"/>
+    <Property name="orientation" value="0.978173 0.0696451 -0.195402 0.0121021"/>
+    <Property name="scale" value="0.933334 0.933334 0.933334"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="1600 1519 -5200"/>
+    <Property name="orientation" value="0.955211 0.0403045 0.284654 0.0701537"/>
+    <Property name="scale" value="0.933334 0.933334 0.933334"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="242.698 660.631 -4300"/>
+    <Property name="orientation" value="0.875704 0.0699993 0.475558 0.0456826"/>
+    <Property name="scale" value="0.933334 0.933334 0.933334"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="3800 370.907 -200"/>
+    <Property name="orientation" value="0.993734 0.0402441 -0.101882 0.0221965"/>
+    <Property name="scale" value="1.06667 1.06667 1.06667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="4000 354.367 100"/>
+    <Property name="orientation" value="0.704384 0.135176 -0.680481 0.150052"/>
+    <Property name="scale" value="0.888892 0.888892 0.888892"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="3700 354.984 -900"/>
+    <Property name="orientation" value="0.994172 0 0.10781 0"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="4200 313.559 -2100"/>
+    <Property name="orientation" value="0.704384 0.135176 -0.680481 0.150052"/>
+    <Property name="scale" value="0.888892 0.888892 0.888892"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="4162.24 333.022 -1778.1"/>
+    <Property name="orientation" value="0.987852 0 -0.155397 0"/>
+    <Property name="scale" value="0.733334 0.733334 0.733334"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="4800 865.288 -200"/>
+    <Property name="orientation" value="0.97736 0 0 0.211581"/>
+    <Property name="scale" value="1.06667 1.06667 1.06667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="4400 474.168 -238.842"/>
+    <Property name="orientation" value="0.704384 0.135176 -0.680481 0.150052"/>
+    <Property name="scale" value="0.683763 0.683763 0.683763"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="4400 198.506 1800"/>
+    <Property name="orientation" value="0.698493 -0.155011 0.646064 0.265858"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木02.mesh"/>
+    <Property name="position" value="4140.35 173.621 2000"/>
+    <Property name="orientation" value="0.722006 -0.0490036 0.689224 0.0359086"/>
+    <Property name="scale" value="1.07696 1.07696 1.07696"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="3700 260.571 2100"/>
+    <Property name="orientation" value="0.994498 0.088503 -0.00496652 0.0558082"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="-526.799 330.26 -3300"/>
+    <Property name="orientation" value="0.991167 0.0930182 0.0814807 0.0479055"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木04.mesh"/>
+    <Property name="position" value="-2600 375.975 628.09"/>
+    <Property name="orientation" value="0.998987 0 0 -0.0449933"/>
+    <Property name="scale" value="1.7 1.7 1.7"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木02.mesh"/>
+    <Property name="position" value="-2800 411.43 200"/>
+    <Property name="orientation" value="0.993773 -0.00861809 0.0684868 0.0874691"/>
+    <Property name="scale" value="2.04 2.04 2.04"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="2828.72 791.289 3325.94"/>
+    <Property name="orientation" value="0.655899 -0.163974 0.736146 -0.0316375"/>
+    <Property name="scale" value="1.03889 1.03889 1.03889"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="1400 763.895 3500"/>
+    <Property name="orientation" value="0.0302876 -0.0802565 0.9931 0.0799799"/>
+    <Property name="scale" value="1.24667 1.24667 1.24667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木04.mesh"/>
+    <Property name="position" value="-3100 1326.1 4300"/>
+    <Property name="orientation" value="-0.0952978 0.060486 0.991993 -0.0566674"/>
+    <Property name="scale" value="1.5 1.5 1.5"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木02.mesh"/>
+    <Property name="position" value="-576.882 704.985 455.747"/>
+    <Property name="orientation" value="0.215657 -0.0128773 0.976311 0.0122516"/>
+    <Property name="scale" value="0.917647 0.917647 0.917647"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-3800 605.566 2000"/>
+    <Property name="orientation" value="0.746234 0.0471159 0.651465 -0.128481"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-3476.78 33.5425 1900"/>
+    <Property name="orientation" value="0.0505496 0.0415524 0.99779 0.0114419"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-3400 458.434 2300"/>
+    <Property name="orientation" value="0.380831 0.0175572 0.924418 -0.0103365"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-400 752.53 3200"/>
+    <Property name="orientation" value="0.388236 -0.0973719 0.91076 -0.101521"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-81.837 930.338 2700"/>
+    <Property name="orientation" value="0.388539 -0.100104 0.910463 -0.100356"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="900 866.611 3040.36"/>
+    <Property name="orientation" value="0.388539 -0.100104 0.910463 -0.100356"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物02.mesh"/>
+    <Property name="position" value="393.41 697.033 -1.15291"/>
+    <Property name="orientation" value="0.96183 -0.00185613 0.271536 0.0338447"/>
+    <Property name="scale" value="0.47619 0.47619 0.47619"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物02.mesh"/>
+    <Property name="position" value="470.801 697.576 -124.769"/>
+    <Property name="orientation" value="0.691558 0 0.72232 0"/>
+    <Property name="scale" value="0.47619 0.47619 0.47619"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草4.mesh"/>
+    <Property name="position" value="100 695.67 731.703"/>
+    <Property name="orientation" value="0.0121232 -0.052933 0.998524 0.000642665"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物02.mesh"/>
+    <Property name="position" value="-268.306 711.87 1500"/>
+    <Property name="orientation" value="0.954428 0 0.298439 0"/>
+    <Property name="scale" value="0.47619 0.47619 0.47619"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物01.mesh"/>
+    <Property name="position" value="-632.021 715.514 953.723"/>
+    <Property name="orientation" value="0.935872 0 -0.352337 0"/>
+    <Property name="scale" value="0.555556 0.555556 0.555556"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物01.mesh"/>
+    <Property name="position" value="-680.509 721.104 900"/>
+    <Property name="orientation" value="0.856109 0 0.516795 0"/>
+    <Property name="scale" value="0.555556 0.555556 0.555556"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物02.mesh"/>
+    <Property name="position" value="1281.08 676.669 1053.61"/>
+    <Property name="orientation" value="0.636047 0 0.771651 0"/>
+    <Property name="scale" value="0.588235 0.588235 0.588235"/>
+    <Property name="receive shadows" value="true"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物03.mesh"/>
+    <Property name="position" value="602.186 703.179 1836.98"/>
+    <Property name="orientation" value="0.886609 -0.013339 0.461618 0.0256197"/>
+    <Property name="scale" value="0.769231 0.769231 0.769231"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="400 330.102 -4100"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-210.71 -205.05 -3295.38"/>
+    <Property name="orientation" value="-0.165066 0 0.986291 0"/>
+    <Property name="scale" value="0.151879 0.531576 0.151879"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-245.01 54.0258 -3467.18"/>
+    <Property name="orientation" value="-0.419263 0 0.907872 0"/>
+    <Property name="scale" value="0.11683 0.408905 0.11683"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-2800 627.558 3700"/>
+    <Property name="orientation" value="0.977534 0.0680279 -0.197756 -0.026309"/>
+    <Property name="scale" value="0.933334 0.933334 0.933334"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物02.mesh"/>
+    <Property name="position" value="-400 702.471 300"/>
+    <Property name="orientation" value="0.882759 0 0.469824 0"/>
+    <Property name="scale" value="0.47619 0.47619 0.47619"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="4761.62 1046.1 -2400"/>
+    <Property name="orientation" value="0.972306 0.0397268 0.22873 -0.0269235"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-3200 598.5 3100"/>
+    <Property name="orientation" value="0.380831 0.0175572 0.924418 -0.0103365"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物02.mesh"/>
+    <Property name="position" value="-300 717.576 1370.84"/>
+    <Property name="orientation" value="0.800186 -0.0280594 -0.584837 0.129899"/>
+    <Property name="scale" value="0.47619 0.47619 0.47619"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物02.mesh"/>
+    <Property name="position" value="500 709.524 1100"/>
+    <Property name="orientation" value="0.882759 0 0.469824 0"/>
+    <Property name="scale" value="0.47619 0.47619 0.47619"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="1878.6 742.014 1117.97"/>
+    <Property name="scale" value="0.933334 0.933334 0.933334"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-1700 578.14 2100"/>
+    <Property name="orientation" value="0.374165 0.00688193 0.915923 -0.145034"/>
+    <Property name="scale" value="0.846154 0.846154 0.846154"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物02.mesh"/>
+    <Property name="position" value="-998.805 714.082 1908.28"/>
+    <Property name="orientation" value="0.921286 -0.0838712 0.362145 -0.114234"/>
+    <Property name="scale" value="0.47619 0.47619 0.47619"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="yun"/>
+    <Property name="position" value="-3000 492.322 3200"/>
+    <Property name="orientation" value="0.999996 -0.00269896 0 0"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="yun"/>
+    <Property name="position" value="-3800 464.962 3100"/>
+    <Property name="orientation" value="0.999996 -0.00269896 0 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="2146.5 197.23 -3844.59"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="3000 185.844 -3400"/>
+    <Property name="orientation" value="0.9061 0 0.423063 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物02.mesh"/>
+    <Property name="position" value="500 692.501 1700"/>
+    <Property name="orientation" value="0.954326 -0.0114174 0.296274 0.0367766"/>
+    <Property name="scale" value="0.588235 0.588235 0.588235"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物01.mesh"/>
+    <Property name="position" value="-561.63 725.874 820.35"/>
+    <Property name="orientation" value="0.924524 0 -0.381124 0"/>
+    <Property name="scale" value="0.427351 0.427351 0.427351"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/高模树04.mesh"/>
+    <Property name="position" value="-1958.42 609.366 3233.9"/>
+    <Property name="orientation" value="-0.537995 0.080301 -0.837856 -0.045967"/>
+    <Property name="scale" value="0.591716 0.591716 0.591716"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物02.mesh"/>
+    <Property name="position" value="1371.14 684.774 1100"/>
+    <Property name="orientation" value="0.871741 0 0.489967 0"/>
+    <Property name="scale" value="0.490196 0.490196 0.490196"/>
+    <Property name="receive shadows" value="true"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="3900 277.177 -2500"/>
+    <Property name="orientation" value="0.314504 0.0664411 -0.946458 -0.0298171"/>
+    <Property name="scale" value="0.888892 0.888892 0.888892"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="4300 375.936 -1240.85"/>
+    <Property name="orientation" value="0.987852 0 -0.155397 0"/>
+    <Property name="scale" value="0.806667 0.806667 0.806667"/>
+  </Object>
+
+  <Object type="Projector">
+    <Property name="texture name" value="天龙树影01.jpg"/>
+    <Property name="projector size" value="1000"/>
+    <Property name="show frustum" value="false"/>
+    <Property name="u wave" value="true"/>
+    <Property name="v wave" value="true"/>
+    <Property name="wave frequency" value="0.2"/>
+    <Property name="position" value="-698 990.77 -500"/>
+    <Property name="orientation" value="0.831 0 0.556273 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="苏州/塔1.mesh"/>
+    <Property name="position" value="-2500 645.082 2800"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-1001.9 714.484 2149.15"/>
+    <Property name="orientation" value="0.810331 -0.0173754 0.574856 -0.112229"/>
+    <Property name="scale" value="0.769231 0.769231 0.769231"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物02.mesh"/>
+    <Property name="position" value="-1326.59 711.81 2308.88"/>
+    <Property name="orientation" value="0.99829 0 0.0584437 0"/>
+    <Property name="scale" value="0.3663 0.3663 0.3663"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="洛阳/洛阳门石.mesh"/>
+    <Property name="position" value="-1828.67 645.082 3294.88"/>
+    <Property name="orientation" value="0.707107 0 -0.707107 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="洛阳/洛阳门石.mesh"/>
+    <Property name="position" value="-2170.44 645.082 3305.24"/>
+    <Property name="orientation" value="0.707107 0 -0.707107 0"/>
+  </Object>
+
+  <Object type="Light">
+    <Property name="diffuse" value="0.92549 0.580392 0.392157"/>
+    <Property name="position" value="-2100 1445.08 3400"/>
+    <Property name="range" value="500"/>
+    <Property name="attenuation.linear" value="0.001"/>
+    <Property name="attenuation.quadric" value="1e-005"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-700 663.384 -800"/>
+    <Property name="orientation" value="0.827828 -0.000996322 0.560877 0.0107776"/>
+    <Property name="scale" value="0.785714 0.785714 0.785714"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物01.mesh"/>
+    <Property name="position" value="858.668 685.801 1067.23"/>
+    <Property name="orientation" value="0.967085 -0.215445 0.0551707 -0.123637"/>
+    <Property name="scale" value="0.503664 0.503664 0.503664"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物01.mesh"/>
+    <Property name="position" value="826.066 655.99 1094.47"/>
+    <Property name="orientation" value="-0.37798 -0.0762938 0.906839 -0.170155"/>
+    <Property name="scale" value="0.648148 0.648148 0.648148"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="2300 728.185 2700"/>
+    <Property name="orientation" value="0.947655 -0.117393 0.296633 0.0133724"/>
+    <Property name="scale" value="0.958971 0.958971 0.958971"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物02.mesh"/>
+    <Property name="position" value="500 673.373 1152.93"/>
+    <Property name="orientation" value="0.105456 -0.0887437 0.984569 0.107822"/>
+    <Property name="scale" value="0.47619 0.47619 0.47619"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu5.mesh"/>
+    <Property name="position" value="1757.67 626.296 3322.48"/>
+    <Property name="orientation" value="-0.0818384 0 -0.996645 0"/>
+    <Property name="scale" value="0.833333 1 0.714286"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物02.mesh"/>
+    <Property name="position" value="1562.65 679.248 1900"/>
+    <Property name="orientation" value="0.919092 -0.103721 -0.366062 -0.10252"/>
+    <Property name="scale" value="0.588235 0.588235 0.588235"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物03.mesh"/>
+    <Property name="position" value="-400 653.856 -800"/>
+    <Property name="orientation" value="-0.489068 -0.202588 0.848038 -0.0246498"/>
+    <Property name="scale" value="0.839161 0.839161 0.839161"/>
+    <Property name="receive shadows" value="true"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物02.mesh"/>
+    <Property name="position" value="-391.959 660.559 -674.188"/>
+    <Property name="orientation" value="0.901259 0.0650276 -0.416537 -0.100037"/>
+    <Property name="scale" value="0.619048 0.619048 0.619048"/>
+    <Property name="receive shadows" value="true"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物02.mesh"/>
+    <Property name="position" value="-395.136 684.736 -657.948"/>
+    <Property name="orientation" value="0.367856 -0.104457 0.922827 0.0464763"/>
+    <Property name="scale" value="0.40293 0.40293 0.40293"/>
+    <Property name="receive shadows" value="true"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物01.mesh"/>
+    <Property name="position" value="-334.356 689.852 287.745"/>
+    <Property name="orientation" value="0.997993 0 -0.0633027 0"/>
+    <Property name="scale" value="0.555556 0.555556 0.555556"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物01.mesh"/>
+    <Property name="position" value="-400 684.16 172.901"/>
+    <Property name="orientation" value="0.83139 0 0.555688 0"/>
+    <Property name="scale" value="0.505051 0.505051 0.505051"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2创建石01.mesh"/>
+    <Property name="position" value="-557.973 687.721 -387.586"/>
+    <Property name="orientation" value="0.857808 0 0.513971 0"/>
+    <Property name="scale" value="0.493096 0.493096 0.493096"/>
+    <Property name="receive shadows" value="true"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="大理植物/大叶兰花.mesh"/>
+    <Property name="position" value="-400 682.421 100"/>
+    <Property name="orientation" value="0.7837 0.0716155 0.616747 -0.0176354"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="大理植物/大叶兰花.mesh"/>
+    <Property name="position" value="-318.805 694.82 460.169"/>
+    <Property name="orientation" value="-0.483725 -0.00150354 0.874486 -0.0358503"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="大理植物/大叶兰花.mesh"/>
+    <Property name="position" value="219.452 721.183 457.383"/>
+    <Property name="orientation" value="-0.714824 -0.00248289 0.698875 -0.0244494"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="大理植物/大叶兰花.mesh"/>
+    <Property name="position" value="-283.941 695.168 149.595"/>
+    <Property name="orientation" value="-0.634406 0.042142 0.771358 -0.0276221"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物02.mesh"/>
+    <Property name="position" value="-199.222 675.405 349.71"/>
+    <Property name="orientation" value="0.802717 0.148901 0.57523 -0.0508296"/>
+    <Property name="scale" value="0.47619 0.47619 0.47619"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物02.mesh"/>
+    <Property name="position" value="-271.77 686.132 210.324"/>
+    <Property name="orientation" value="-0.180899 0.0824763 0.972707 0.119639"/>
+    <Property name="scale" value="0.47619 0.47619 0.47619"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="大理植物/大叶兰花.mesh"/>
+    <Property name="position" value="-1200 724.485 900"/>
+    <Property name="orientation" value="-0.996792 -0.0581013 -0.055075 0.000876413"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草4.mesh"/>
+    <Property name="position" value="1326.95 674.832 1933.7"/>
+    <Property name="orientation" value="-0.282601 -0.043856 0.958149 -0.0129351"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="1100 648.923 2900"/>
+    <Property name="orientation" value="-0.421858 0 0.906662 0"/>
+    <Property name="scale" value="0.476191 0.476191 0.476191"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="1400 621.003 3300"/>
+    <Property name="orientation" value="-0.421858 0 0.906662 0"/>
+    <Property name="scale" value="0.476191 0.476191 0.476191"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="1951.54 548.662 3162.83"/>
+    <Property name="orientation" value="-0.408718 0 0.91266 0"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="1947.24 551.542 2648.01"/>
+    <Property name="orientation" value="0.796963 0 0.604026 0"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="800 618.717 2600"/>
+    <Property name="orientation" value="0.894636 0 0.446793 0"/>
+    <Property name="scale" value="0.476191 0.476191 0.476191"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物02.mesh"/>
+    <Property name="position" value="1524.11 687.009 2100"/>
+    <Property name="orientation" value="0.965038 -0.0227776 -0.24525 -0.0896279"/>
+    <Property name="scale" value="0.396825 0.396825 0.396825"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物02.mesh"/>
+    <Property name="position" value="1427.22 693.361 2000"/>
+    <Property name="orientation" value="0.666411 -0.169874 0.688525 0.230155"/>
+    <Property name="scale" value="0.56746 0.56746 0.56746"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物02.mesh"/>
+    <Property name="position" value="1497.14 655.934 2054.11"/>
+    <Property name="orientation" value="0.829489 -0.182819 0.524381 -0.0596028"/>
+    <Property name="scale" value="0.686274 0.686274 0.686274"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="586.91 659.375 993.786"/>
+    <Property name="orientation" value="0.972966 -0.0220532 0.22792 -0.0301034"/>
+    <Property name="scale" value="0.69514 0.69514 0.69514"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="247.264 706.671 789.808"/>
+    <Property name="orientation" value="0.99458 -0.0136436 -0.10048 0.0229892"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="1600 710.847 844.741"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="1500 689.792 900"/>
+    <Property name="orientation" value="0.941328 0 0.337492 0"/>
+    <Property name="scale" value="0.8 0.8 0.8"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="pubushuihua_03"/>
+    <Property name="position" value="1500 666.465 3400"/>
+    <Property name="orientation" value="-0.225239 0 -0.974301 0"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="pubushuihua_02"/>
+    <Property name="position" value="1500 667.373 3400"/>
+    <Property name="orientation" value="-0.184404 0 -0.982849 0"/>
+    <Property name="scale" value="1.5 1 1"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草4.mesh"/>
+    <Property name="position" value="764.272 703.072 1715.07"/>
+    <Property name="orientation" value="-0.601441 0 0.798918 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草4.mesh"/>
+    <Property name="position" value="1411.84 701.045 1506.95"/>
+    <Property name="orientation" value="-0.533781 -0.0758371 0.84041 -0.0551143"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="1700 586.81 2600"/>
+    <Property name="orientation" value="0.796963 0 0.604026 0"/>
+    <Property name="scale" value="0.555556 0.555556 0.555556"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="pubushuihua_02"/>
+    <Property name="position" value="2500 600.645 3400"/>
+    <Property name="orientation" value="-0.0530364 0 -0.998591 0"/>
+    <Property name="scale" value="1.5 1 1"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="pubushuihua_03"/>
+    <Property name="position" value="2500 599.737 3400"/>
+    <Property name="orientation" value="-0.0946425 0 -0.995509 0"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="pubushuihua_03"/>
+    <Property name="position" value="1900 651.266 3400"/>
+    <Property name="orientation" value="-0.225239 0 -0.974301 0"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="pubushuihua_02"/>
+    <Property name="position" value="1900 652.174 3400"/>
+    <Property name="orientation" value="-0.184404 0 -0.982849 0"/>
+    <Property name="scale" value="1.5 1 1"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="pubushuihua_03"/>
+    <Property name="position" value="2700 664.523 3300"/>
+    <Property name="orientation" value="-0.225239 0 -0.974301 0"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="pubushuihua_02"/>
+    <Property name="position" value="2700 665.431 3300"/>
+    <Property name="orientation" value="-0.184404 0 -0.982849 0"/>
+    <Property name="scale" value="1.5 1 1"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2创建石01.mesh"/>
+    <Property name="position" value="2390.08 620.888 3101.06"/>
+    <Property name="orientation" value="0.693996 0 -0.719978 0"/>
+    <Property name="scale" value="1 1 0.5"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-200 659.945 -762.993"/>
+    <Property name="orientation" value="0.942239 0.015227 0.332709 0.0355151"/>
+    <Property name="scale" value="0.8 0.8 0.8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="310.385 609.643 -900"/>
+    <Property name="orientation" value="0.967524 -0.0268373 -0.246922 -0.0469594"/>
+    <Property name="scale" value="0.8 0.8 0.8"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="2000 595.529 1991.03"/>
+    <Property name="orientation" value="0.873994 -0.0756939 0.479405 0.0240087"/>
+    <Property name="scale" value="0.871792 0.871792 0.871792"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="-700 597.874 2300"/>
+    <Property name="orientation" value="0.21069 0 0.977552 0"/>
+    <Property name="scale" value="0.448718 0.448718 0.448718"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="-600 618.133 2400"/>
+    <Property name="orientation" value="0.238838 0 0.971058 0"/>
+    <Property name="scale" value="0.448718 0.448718 0.448718"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="-700 624.985 2200"/>
+    <Property name="orientation" value="0.262143 0 0.965028 0"/>
+    <Property name="scale" value="0.448718 0.448718 0.448718"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="-241.655 617.889 2075.52"/>
+    <Property name="orientation" value="0.262143 0 0.965028 0"/>
+    <Property name="scale" value="0.538461 0.538461 0.538461"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="128.574 570.272 1413.52"/>
+    <Property name="orientation" value="0.367184 0 0.930147 0"/>
+    <Property name="scale" value="0.538461 0.538461 0.538461"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="1108.33 578.428 2157.13"/>
+    <Property name="orientation" value="-0.313168 0 0.949698 0"/>
+    <Property name="scale" value="0.448718 0.448718 0.448718"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="900 599.885 2530.71"/>
+    <Property name="orientation" value="-0.186246 0 0.982503 0"/>
+    <Property name="scale" value="0.48951 0.48951 0.48951"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="1800 604.885 2500"/>
+    <Property name="orientation" value="-0.346134 0 0.938185 0"/>
+    <Property name="scale" value="0.445009 0.445009 0.445009"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="2300 602.58 2900"/>
+    <Property name="orientation" value="-0.0621177 0 0.998069 0"/>
+    <Property name="scale" value="0.538461 0.538461 0.538461"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="2075.12 596.551 3100"/>
+    <Property name="orientation" value="-0.129201 0 0.991619 0"/>
+    <Property name="scale" value="0.538461 0.538461 0.538461"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="0灌木/草8.mesh"/>
+    <Property name="position" value="1500 538.145 3261.22"/>
+    <Property name="orientation" value="-0.408718 0 0.91266 0"/>
+    <Property name="scale" value="0.512821 0.512821 0.512821"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="2176.74 737.33 3506.52"/>
+    <Property name="orientation" value="0.966887 0 0.255205 0"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-441.701 1662.79 -5454.88"/>
+    <Property name="orientation" value="0.926636 0.319962 -0.177484 -0.0864307"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-324.332 1714.71 -5600"/>
+    <Property name="orientation" value="0.982364 0.167404 0.075888 -0.0342995"/>
+    <Property name="scale" value="0.933334 0.933334 0.933334"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-98.662 1151.65 -4300"/>
+    <Property name="orientation" value="0.983008 0.052012 -0.168459 -0.0511159"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="488.051 1436.11 -5700"/>
+    <Property name="orientation" value="0.978087 0.171963 0.0648974 -0.0977892"/>
+    <Property name="scale" value="0.933334 0.933334 0.933334"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-262.027 1552.09 -5400"/>
+    <Property name="orientation" value="0.755107 0.120238 -0.632355 -0.124436"/>
+    <Property name="scale" value="0.777778 0.777778 0.777778"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="700 1607.57 -5900"/>
+    <Property name="orientation" value="0.998766 0.00123157 -0.0338819 -0.0363041"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-1.86584 1074.63 -4400"/>
+    <Property name="orientation" value="0.952043 0.014372 -0.197357 -0.233366"/>
+    <Property name="scale" value="0.502062 0.502062 0.502062"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="小动物/小动物鹤.mesh"/>
+    <Property name="position" value="1708.25 707.996 979.94"/>
+  </Object>
+
+  <Object type="Model">
+    <Property name="model name" value="小动物/鱼群03.model"/>
+    <Property name="position" value="150.378 587.961 1622.06"/>
+  </Object>
+
+  <Object type="Model">
+    <Property name="model name" value="小动物/鱼群03.model"/>
+    <Property name="position" value="1148.09 629.114 2447.87"/>
+  </Object>
+
+  <Object type="Model">
+    <Property name="model name" value="小动物/鱼群03.model"/>
+    <Property name="position" value="972.292 635.967 2357.21"/>
+    <Property name="orientation" value="0.802527 0 -0.596616 0"/>
+  </Object>
+
+  <Object type="Model">
+    <Property name="model name" value="小动物/螃蟹.model"/>
+    <Property name="position" value="-684.771 725.123 1609.6"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="-471.88 675.896 651.738"/>
+    <Property name="orientation" value="0.956772 0.0200507 -0.278442 -0.0815745"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="-100 696.456 1143.96"/>
+    <Property name="orientation" value="0.334906 -0.0802362 0.938499 -0.0248714"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="大理植物/锦竹.mesh"/>
+    <Property name="position" value="-148.465 663.854 1300"/>
+    <Property name="orientation" value="0.0326777 0 0.999466 0"/>
+    <Property name="scale" value="0.769231 0.769231 0.769231"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="-500 671.471 -100"/>
+    <Property name="orientation" value="0.925953 -0.0343017 0.368178 -0.0766801"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-893.384 705.932 1758.05"/>
+    <Property name="orientation" value="0.304697 0.00562285 0.952272 0.0175086"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-1282.59 676.839 1000"/>
+    <Property name="orientation" value="0.992335 0.0244207 -0.12011 -0.0158186"/>
+    <Property name="scale" value="0.777778 0.777778 0.777778"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="大理植物/锦竹.mesh"/>
+    <Property name="position" value="-900 751.411 1700"/>
+    <Property name="orientation" value="0.0152776 0 0.999883 0"/>
+    <Property name="scale" value="0.493097 0.493097 0.493097"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物02.mesh"/>
+    <Property name="position" value="-100 742.371 1100"/>
+    <Property name="orientation" value="0.50376 -0.125767 -0.842476 0.143656"/>
+    <Property name="scale" value="0.47619 0.47619 0.47619"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="519.309 672.291 -675.326"/>
+    <Property name="orientation" value="0.989925 0.0717252 -0.120741 0.0180363"/>
+    <Property name="scale" value="0.933334 0.933334 0.933334"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景选人台植物02.mesh"/>
+    <Property name="position" value="300 706.207 -724.954"/>
+    <Property name="orientation" value="0.860686 0.306903 -0.397597 -0.0833932"/>
+    <Property name="scale" value="0.476191 0.476191 0.476191"/>
+    <Property name="receive shadows" value="true"/>
+    <Property name="receive decals" value="true"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-28.7969 661.486 -800"/>
+    <Property name="orientation" value="0.942072 0.0504575 0.330528 0.0265538"/>
+    <Property name="scale" value="0.571429 0.571429 0.571429"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="400 695.76 401.478"/>
+    <Property name="orientation" value="0.00189885 -0.0839345 0.996464 0.00338243"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="1000 471.132 900"/>
+    <Property name="orientation" value="0.779994 -0.0550031 0.620124 -0.0634909"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-57.9175 684.858 624.836"/>
+    <Property name="orientation" value="0.737692 0.00804904 0.674608 0.0254925"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="1039.71 290.094 -3500"/>
+    <Property name="scale" value="0.952379 0.952379 0.952379"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2选人场景亭子.mesh"/>
+    <Property name="position" value="-193.572 1231.58 -4266.93"/>
+    <Property name="orientation" value="-0.257609 -0.000154598 0.966251 4.0142e-005"/>
+    <Property name="scale" value="0.234962 0.234962 0.234962"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-300 985.808 -4094.02"/>
+    <Property name="orientation" value="0.983008 0.052012 -0.168459 -0.0511159"/>
+    <Property name="scale" value="0.777778 0.777778 0.777778"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-338.194 1119.1 -5300"/>
+    <Property name="orientation" value="0.946203 -0.00323148 0.323557 0.00158494"/>
+    <Property name="scale" value="0.933334 0.933334 0.933334"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="664.55 766.875 -4300"/>
+    <Property name="orientation" value="0.997771 0 0 0.066731"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="504.549 824.243 -5600"/>
+    <Property name="orientation" value="0.983897 0.0557155 -0.167271 -0.0294184"/>
+    <Property name="scale" value="0.717949 0.717949 0.717949"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="173.291 487.697 -4100"/>
+    <Property name="orientation" value="0.977225 0.166937 -0.0957198 0.0894465"/>
+    <Property name="scale" value="0.933334 0.933334 0.933334"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-195.484 468.337 -3500"/>
+    <Property name="orientation" value="0.982101 0.165397 -0.080765 0.0399802"/>
+    <Property name="scale" value="0.648149 0.648149 0.648149"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="413.211 396.264 -4102.7"/>
+    <Property name="orientation" value="-0.374069 0 0.927403 0"/>
+    <Property name="scale" value="0.198611 0.408905 0.11683"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="916.656 1017.6 -5100"/>
+    <Property name="orientation" value="0.977314 0.0585875 -0.198997 -0.0427227"/>
+    <Property name="scale" value="0.933334 0.933334 0.933334"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="400 826.51 -5600"/>
+    <Property name="orientation" value="0.875704 0.0699993 0.475558 0.0456826"/>
+    <Property name="scale" value="0.933334 0.933334 0.933334"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="caihong"/>
+    <Property name="position" value="290.047 348.006 -3869.54"/>
+    <Property name="orientation" value="0.998908 0 -0.0467329 0"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="yun"/>
+    <Property name="position" value="200 291.076 -3800"/>
+    <Property name="orientation" value="0.999996 -0.00269896 0 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-26.2654 360.969 -3400"/>
+    <Property name="orientation" value="0.909549 0.0857037 0.402923 0.0550578"/>
+    <Property name="scale" value="0.598291 0.598291 0.598291"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2选人场景远景树01.mesh"/>
+    <Property name="position" value="400 591.983 -5100"/>
+    <Property name="orientation" value="0.996483 -0.0338413 0.0724953 0.0247062"/>
+    <Property name="scale" value="0.304741 0.304741 0.304741"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-2.68059 571.575 -2178.39"/>
+    <Property name="orientation" value="0.806093 0.0450436 0.589768 -0.0190121"/>
+    <Property name="scale" value="0.717949 0.717949 0.717949"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="170.307 547.516 -2342.42"/>
+    <Property name="orientation" value="-0.994311 -0.0019823 0.0655028 0.0839792"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="-300 80.0365 -3200"/>
+    <Property name="orientation" value="-0.994311 -0.0019823 0.0655028 0.0839792"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="421.241 20.8827 -3552.45"/>
+    <Property name="orientation" value="-0.995793 0.000456534 0.0366094 0.0840013"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-100 535.951 -3800"/>
+    <Property name="orientation" value="0.453634 0.0238962 0.890412 0.0285525"/>
+    <Property name="scale" value="0.777778 0.777778 0.777778"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="264.324 2.20737 -3757.6"/>
+    <Property name="orientation" value="-0.322365 0 0.946619 0"/>
+    <Property name="scale" value="0.110339 0.408905 0.246641"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="172.906 337.61 -3700"/>
+    <Property name="orientation" value="0.985469 0.0182222 -0.15822 -0.0590638"/>
+    <Property name="scale" value="0.598291 0.598291 0.598291"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="yun"/>
+    <Property name="position" value="200 837.114 -4400"/>
+    <Property name="orientation" value="0.999996 -0.00269896 0 0"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="yun"/>
+    <Property name="position" value="-200 586.592 -3200"/>
+    <Property name="orientation" value="0.999996 -0.00269896 0 0"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="-83.7945 447.275 -2101.38"/>
+    <Property name="orientation" value="-0.159513 0.0410887 0.982452 -0.0875008"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-400 528.839 -3700"/>
+    <Property name="orientation" value="0.98401 0.0832521 -0.155729 0.0233323"/>
+    <Property name="scale" value="0.598291 0.598291 0.598291"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="0 569.657 -3587.72"/>
+    <Property name="orientation" value="0.0385326 0.0336653 0.998565 0.0159034"/>
+    <Property name="scale" value="0.777778 0.777778 0.777778"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="-300 1023.59 -3994.02"/>
+    <Property name="orientation" value="-0.159513 0.0410887 0.982452 -0.0875008"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="-44.0564 1087.39 -4100"/>
+    <Property name="orientation" value="-0.99178 -0.0848293 -0.0847 -0.0447613"/>
+    <Property name="scale" value="0.694444 0.694444 0.694444"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="-800 355.76 -4400"/>
+    <Property name="orientation" value="0.395388 0 0.918514 0"/>
+    <Property name="scale" value="1.02564 1.02564 1.02564"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="-600 806.585 -4809.97"/>
+    <Property name="orientation" value="0.983008 0.052012 -0.168459 -0.0511159"/>
+    <Property name="scale" value="0.777778 0.777778 0.777778"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木02.mesh"/>
+    <Property name="position" value="-2050.6 612.673 2869.62"/>
+    <Property name="orientation" value="0.485574 -0.0276056 0.857515 -0.167725"/>
+    <Property name="scale" value="0.634919 0.634919 0.634919"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="2900 444.809 2200"/>
+    <Property name="orientation" value="0.977502 -0.0544339 -0.202017 0.0268424"/>
+    <Property name="scale" value="0.717949 0.717949 0.717949"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="-472.313 591.48 -3800"/>
+    <Property name="orientation" value="-0.307556 -0.0742204 -0.946684 0.0607529"/>
+    <Property name="scale" value="0.902777 0.902777 0.902777"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="4300 836.412 -900"/>
+    <Property name="orientation" value="0.704384 0.135176 -0.680481 0.150052"/>
+    <Property name="scale" value="0.888892 0.888892 0.888892"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="4600 372.519 -420.871"/>
+    <Property name="orientation" value="0.191412 0 0.981509 0"/>
+    <Property name="scale" value="0.233586 0.538462 0.453334"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="4313.47 797.727 -500"/>
+    <Property name="scale" value="0.740739 0.740739 0.740739"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="4400 902.494 -700"/>
+    <Property name="scale" value="0.952379 0.952379 0.952379"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="5000 1077.02 -600"/>
+    <Property name="scale" value="1.33333 1.33333 1.33333"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2选人场景亭子.mesh"/>
+    <Property name="position" value="4603.87 1038.37 -700"/>
+    <Property name="orientation" value="-0.642355 0 0.766409 0"/>
+    <Property name="scale" value="0.37594 0.37594 0.37594"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="4682.01 997.591 -600"/>
+    <Property name="scale" value="0.740739 0.740739 0.740739"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="4800 608.279 1167.77"/>
+    <Property name="orientation" value="0.814411 -0.0404246 0.562765 0.135637"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="5000 637.092 1766.55"/>
+    <Property name="orientation" value="0.679435 -0.197291 0.634432 0.311355"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="4939.54 654.993 2270"/>
+    <Property name="orientation" value="0.677973 -0.196574 0.635994 0.311808"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="4800 618.182 1978.57"/>
+    <Property name="orientation" value="0.190434 -0.0886333 0.977412 0.0234202"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/天龙2选人场景远景树01.mesh"/>
+    <Property name="position" value="4900 566.936 1700"/>
+    <Property name="orientation" value="0.642124 0.127179 -0.747487 0.11293"/>
+    <Property name="scale" value="0.498666 0.498666 0.498666"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木01.mesh"/>
+    <Property name="position" value="2200 353.204 -1400"/>
+    <Property name="orientation" value="0.988417 0.0134718 -0.132732 -0.0723388"/>
+    <Property name="scale" value="0.666667 0.666667 0.666667"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="大理植物/锦竹.mesh"/>
+    <Property name="position" value="-958.662 751.971 584.548"/>
+    <Property name="orientation" value="0.936906 0 0.349581 0"/>
+    <Property name="scale" value="0.769231 0.769231 0.769231"/>
+  </Object>
+
+  <Object type="ParticleSystem">
+    <Property name="particle system name" value="yezi01"/>
+    <Property name="position" value="-3815.83 1456.79 3688.34"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="水瀑布/pubu2.mesh"/>
+    <Property name="position" value="-3253.45 967.998 3777.42"/>
+    <Property name="orientation" value="0.873295 0 -0.487193 0"/>
+    <Property name="scale" value="0.194932 0.416667 0.326798"/>
+  </Object>
+
+  <Object type="StaticEntity">
+    <Property name="mesh name" value="天龙2创建场景/选人场景灌木03.mesh"/>
+    <Property name="position" value="-4600 190.984 -1861.54"/>
+    <Property name="orientation" value="0.984048 -0.0167066 0.156821 -0.0823245"/>
+    <Property name="scale" value="0.833333 0.833333 0.833333"/>
+  </Object>
+
+</Scene>
